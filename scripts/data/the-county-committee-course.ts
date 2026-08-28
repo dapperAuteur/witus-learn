@@ -1433,6 +1433,821 @@ U.S. Commission on Civil Rights. (1982, February). *The decline of Black farming
       },
     },
     // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — The count
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "operated-is-not-owned",
+      title: "9 · Operated is not owned, and the census never asked",
+      section: "Section 3 · The count",
+      body: `WARRANT-01 refused to print any acreage figure for Black-owned farmland, because the two figures in circulation measure different things and nobody had opened the volume. **This course opened it.** Here is what the 1920 Census of Agriculture actually contains, and the answer is more interesting than either circulating number.
+
+**First, the counts that are exactly right.** In the *Fourteenth Census of the United States Taken in the Year 1920, Volume V: Agriculture*, chapter V, **Table 4 at page 298** gives farm operators by race and tenure. The row for **Negroes**, which is the census's own label and is used here as the census used it, reads:
+
+| 1920 | |
+| --- | --- |
+| Total | 925,708 |
+| Owners | 218,612 |
+| Managers | 2,026 |
+| Tenants | 705,070 |
+
+Those three sum to the total exactly. **Table 5 on the same page** gives the acreage: **41,432,182 acres** of all land in farms, of which 27,928,900 acres were improved, with land and buildings valued at $2,257,645,325. So the famous "925,708" and the federal "41.4 million acres" are both correct, both from page 298, and both about **Negro** operators.
+
+**Second, the trap, and it has caught a great many people.** The 1920 census ran **two different racial universes in two different chapters**. Chapter IV counts **"colored"** farmers, which the volume defines as Negro plus Indian plus Japanese plus Chinese: **949,889 operators on 44,944,521 acres**. Chapter V counts **Negroes** alone: 925,708 on 41,432,182. The volume explains why the two diverge, at page 187: "The colored farmers in the South are practically all Negroes, while those in the Mountain and Pacific Divisions are practically all Indians or Asiatics."
+
+**Negroes were 97.5 per cent of colored operators but only 92.2 per cent of colored acreage.** So 925,708 and 44.9 million acres do not belong in the same sentence, and neither do 949,889 and 41.4 million.
+
+**Third, and this is the finding.** **Acres owned was never collected.** Not withheld, not lost. Never asked. The enumerator's General Farm Schedule is reproduced at Volume V, Appendix A, page 911, and it captures tenure as four yes-or-no questions ("Do you own all of this farm?", "Do you rent from others part but not all of this farm?", "Do you rent from others all of this farm?", "Do you operate this farm for others as a hired manager?") and acreage exactly once, split only by **use**: total acres, improved, woodland, other unimproved.
+
+**So a part owner reported one acreage covering the land he owned and the land he rented in, with no way to separate them.** The word "owned" appears once more on the schedule, in the encumbrance question, and that asks for **dollars of debt**, not acres.
+
+**What can honestly be said, then.** For **colored** farmers the published tenure table, chapter IV **Table 1 at page 189**, brackets it:
+
+- **Floor, 14,005,208 acres**, the row labelled "Owning entire farm", every acre of which is owned by definition.
+- **Ceiling, 16,704,192 acres**, all land in owner-operated farms, which overstates ownership by whatever part of the part owners' 2,698,984 acres was rented in.
+
+**That bracket, fourteen to sixteen point seven million acres, is where the circulating "14 to 16 million acres" comes from.** It is a **colored** figure, its top end is an acknowledged overstatement, and it is routinely quoted beside the **Negro** operator count of 925,708. **Those two numbers are from different universes.**
+
+**For Negroes specifically, Volume V publishes no owner acreage at all.** The nearest figure comes from the next census: Charles E. Hall's *The Negro Farmer in the United States* (1933), **Table 26 at page 40**, which back-reports 1920 as owners 13,948,512 acres, tenants 27,077,582 and managers 406,088, summing exactly to 41,432,182.
+
+**And Hall shows you the error being made, on his own page.** His section heading reads "Loss of owned land". His sentences underneath read "the land (acres) **in farms operated by** Negro owners" and "**the land operated by owners** decreased from 13,948,512 acres in 1920 to 11,198,893 in 1930". **The heading says owned; the sentences say operated by owners.** Those are not the same quantity, because a part owner's farm includes rented ground. **13,948,512 is a ceiling on Black-owned acreage in 1920, not a measurement of it**, and the slippage that turned it into an ownership figure is visible in the source itself.
+
+**Why any of this matters, in one sentence.** In 1920, 705,070 of 925,708 Black farm operators were **tenants**. Seventy-six per cent of them worked land they did not own. **A figure about land operated is therefore mostly a figure about other people's land**, and using it to describe Black landownership erases the exact distinction that makes the history what it is.
+
+:::reveal How many Black farm operators and how many acres did the 1920 census report, and where? ||| 925,708 operators and 41,432,182 acres, both in Volume V, chapter V, Tables 4 and 5 at page 298, for the category the census labelled Negroes.
+
+:::reveal Why can acres owned not be derived from the 1920 census? ||| Because the schedule asked tenure as yes-or-no questions and acreage only once, split by land use, so a part owner's owned and rented acres were never separated.
+
+:::reveal What is the difference between the colored and the Negro figures in the 1920 census? ||| Colored means Negro plus Indian plus Japanese plus Chinese, at 949,889 operators on 44,944,521 acres; Negro alone is 925,708 on 41,432,182.
+
+## Vocabulary
+- **Land operated**: all acreage in a farm a person runs, whether they own it, rent it or manage it for somebody else.
+- **Land owned**: acreage to which a person holds title, which the 1920 agricultural schedule never asked anyone to report.
+- **Full owner and part owner**: in the census's own printed rows, "Owning entire farm" and "Hiring additional land", the second of which mixes owned with rented ground.
+- **Cropper**: in the census's own definition, a share tenant whose work animals are furnished by the landlord.
+- **Racial universe**: which categories a table's race label actually includes, which differed between chapters of the same 1920 volume.
+
+## Sources
+Hall, C. E. (1933). *The Negro farmer in the United States* (Fifteenth Census of the United States: 1930, Census of Agriculture). U.S. Government Printing Office. https://usa.ipums.org/usa/resources/voliii/pubdocs/1930/Other/26618684ch1.pdf
+
+U.S. Bureau of the Census. (1922). *Fourteenth census of the United States taken in the year 1920, Volume V: Agriculture, general report and analytical tables* (Chapter IV, Farm statistics by color and tenure of farmer). U.S. Government Printing Office. https://www2.census.gov/library/publications/decennial/1920/volume-5/06229676v5ch03.pdf
+
+U.S. Bureau of the Census. (1922). *Fourteenth census of the United States taken in the year 1920, Volume V: Agriculture, general report and analytical tables* (Chapter V, Farm statistics by race, nativity, and sex of farmer). U.S. Government Printing Office. https://www2.census.gov/library/publications/decennial/1920/volume-5/06229676v5ch04.pdf
+
+U.S. Bureau of the Census. (1922). *Fourteenth census of the United States taken in the year 1920, Volume V: Agriculture, general report and analytical tables* (Appendix A, the general farm schedule). U.S. Government Printing Office. https://www2.census.gov/library/publications/decennial/1920/volume-5/06229676v5ch09.pdf`,
+    },
+    {
+      slug: "what-the-census-counts",
+      title: "10 · The unit changed, so the series broke",
+      section: "Section 3 · The count",
+      body: `You now have a solid 1920 number. Before you compare it to anything, you have to know that **the census changed what it was counting**, more than once, and that most published comparisons of Black farming across a century quietly compare two different units.
+
+**Until 2002, one farm had one operator.** Look at the 1997 Census of Agriculture, Volume 1, Geographic Area Series, Part 51, **Table 37 at page 525**, titled "Operators by Selected Racial Groups: 1997 and 1992". For BLACK, United States, it reports **18,451** for 1997 and 18,816 for 1992, on 2,384,868 acres. **The table's only columns are farms and land in farms.** There is no separate operator column, because there was nothing to separate: one operator per farm meant the operator count and the farm count were the same number.
+
+**In 2002 that stopped.** The 2002 census, **Table 42 at page 552**, carries a footnote that changes everything downstream: "Data were collected for a maximum of three operators per farm." That year the United States row shows **30,605 farms** and **36,370 Black operators**, of which 22,384 farms reported one operator and 8,221 reported more than one. **The moment farms and operators stop being the same number, every series that ran through 1997 breaks.**
+
+**In 2017 the word changed too, and the maximum rose again.** "Operator" became "producer", and the 2022 census collected demographic information for **up to four producers per farm**. The 2022 Table 52 headnote says so, and Appendix B at page B-16 repeats it: "Demographic and other information were collected for up to four producers per farm. This may be fewer than the total number of producers on some farms." Respondents were also asked to mark one or more race categories, which is why a Black-alone count and a Black-alone-or-in-combination count both exist.
+
+**So the 2022 census yields three defensible numbers for the same subject:**
+
+| Measure, 2022 | Figure |
+| --- | --- |
+| Black producers, alone or in combination | 46,738 |
+| Black producers, alone | 41,807 |
+| Farms with a Black producer | 32,653 |
+| Acres operated | 5,323,654 |
+| Average farm size | 163 acres |
+
+**The commonly quoted "about 32,700" is the farm count**, not the producer count, and if you see it described as a count of Black farmers you have found a conflation.
+
+**How big is the definitional effect?** In 2022 there were 3,374,044 producers on 1,900,487 farms, about 1.78 producers per farm nationally, and NASS reports that the share of farms reporting more than one decision maker rose from 54 per cent in 2017 to 60 per cent in 2022. **A count of people is now roughly one and three quarter times a count of farms**, for reasons that have nothing to do with anybody starting to farm.
+
+**Here is the rule that follows, and it is the whole lesson.** **Compare farms to farms.**
+
+- 1920: **925,710** Black-operated farms, per the Commission on Civil Rights' own Table 1.1, or **925,708** operators per the census table you read in Lesson 9. The two federal documents differ by two, which is worth knowing and changes nothing.
+- 2022: **32,653** farms with a Black producer.
+- That is a decline of about **96.5 per cent**.
+
+**Now watch what happens if you use the wrong unit.** Comparing 925,710 farms to 46,738 *producers* gives about 94.9 per cent, which **understates** the loss by comparing people at the end against farms at the beginning. The more careless comparison is the more comforting one, which is usually how this goes.
+
+**And here is the comparison you must never make.** 1997 reports 18,451 and 2022 reports 32,653. **That is not a recovery.** Most of the apparent rise is definitional and methodological: the unit changed from operator to producer, the per-farm maximum went from one to three to four, and the census also began adjusting for coverage. The 2002 census restated the 1997 **total** farm count from 1,911,859 to 2,215,876, a rise of 15.9 per cent, without a single new farm existing. **A number that goes up because the ruler changed has not gone up.**
+
+**The Commission saw this coming in 1982.** Its own footnote warns that comparability across census years is "problematic due to changes in the census definition of a farm", and its Appendix A tabulates every one of those definitions from 1900 to 1978. The problem is old, it is documented by the agencies themselves, and it is still the most common error in this subject.
+
+:::reveal Why were the operator count and the farm count the same number in the 1997 census? ||| Because the census collected one operator per farm, so the 1997 table has columns only for farms and land in farms.
+
+:::reveal What changed in 2002, and what did it break? ||| Data were collected for up to three operators per farm, so farms and operators stopped being the same number and every series running through 1997 broke.
+
+:::reveal Which 2022 figure should be compared against the 1920 farm count, and what is the result? ||| The 32,653 farms with a Black producer, which against about 925,710 farms in 1920 is a decline of roughly 96.5 per cent.
+
+## Vocabulary
+- **Operator**: the census's pre-2017 term for the person running a farm, counted one per farm until 2002 and up to three afterwards.
+- **Producer**: the census's current term for a person involved in decision making on a farm, collected for up to four per farm.
+- **Alone or in combination**: a race count that includes people who marked more than one category, which is larger than the alone count for the same group.
+- **Coverage adjustment**: a statistical correction for farms the enumeration missed, which raised the restated 1997 national farm count by 15.9 per cent without any new farm existing.
+- **Unit break**: the point in a statistical series where what is being counted changes, after which the earlier and later figures are not comparable without adjustment.
+
+## Sources
+U.S. Commission on Civil Rights. (1982, February). *The decline of Black farming in America*. U.S. Government Printing Office. https://www.usccr.gov/files/historical/1982/82-018.pdf
+
+U.S. Department of Agriculture, National Agricultural Statistics Service. (1999). *1997 census of agriculture, Volume 1, Geographic area series, Part 51, Table 37: Operators by selected racial groups*. https://www.nass.usda.gov/AgCensus/archive/files/1997-United_States-State_Data-1605-Table-37.pdf
+
+U.S. Department of Agriculture, National Agricultural Statistics Service. (2004). *2002 census of agriculture, Table 42: Black or African American operators*. https://www.nass.usda.gov/AgCensus/archive/files/2002-United_States-StateData-Table-42.pdf
+
+U.S. Department of Agriculture, National Agricultural Statistics Service. (2024). *2022 census of agriculture highlights: Black producers* (ACH22-10). https://www.nass.usda.gov/Publications/Highlights/2024/Census22_HL_BlackProducers.pdf
+
+U.S. Department of Agriculture, National Agricultural Statistics Service. (2024). *2022 census of agriculture, Volume 1, Chapter 1, Appendix B: General explanation and census of agriculture report form*. https://www.nass.usda.gov/Publications/AgCensus/2022/Full_Report/Volume_1,_Chapter_1_US/usappxb.pdf`,
+    },
+    {
+      slug: "the-1982-prediction",
+      title: "11 · A federal prediction, and how to grade it",
+      section: "Section 3 · The count",
+      body: `In 1982 the Commission on Civil Rights made a forecast. You now have everything you need to grade it, and grading it properly is harder and more useful than either cheering or dismissing it.
+
+**The prediction, verbatim, from page 176:**
+
+> "almost 94 percent of the farms operated by blacks have been lost since 1920, and at the current rate of loss there will be fewer than 10,000 black farmers in the United States at the end of the next decade." (U.S. Commission on Civil Rights, 1982, p. 176)
+
+Its Findings restate it: "If the rate of black land loss continues unabated, there will be fewer than 10,000 black farmers at the end of the next decade" (p. 181). And page 2 puts it more starkly still: "At this rate of loss, there will be virtually no blacks operating farms in this country by the end of the next decade."
+
+**Step one: find out what the prediction actually says.** Three phrases need pinning down before any grading is possible.
+
+**"The current rate of loss."** The sentence immediately before supplies it: the decline of Black-operated farms over the preceding decade had been 57 per cent, which the Commission notes was two and a half times the rate for white-operated farms. So the forecast compounds a **57 per cent loss per decade**.
+
+**"Fewer than 10,000 black farmers."** Farms or people? The Commission's own baseline is farms: 57,271 farms operated by Black people in 1978, cited to the 1978 Census of Agriculture, volume I, part 51, page 209. **Read the prediction in farms**, because that is the unit the rate was computed in.
+
+**"The end of the next decade."** **The report never says which year.** The phrase appears three times and is defined nowhere. That is not a quibble, because the arithmetic depends on it: 57,271 falling 57 per cent gives about 24,455 after one decade and about 10,442 after two. **"Fewer than 10,000" is reached only after roughly two decades**, which points at the end of the 1990s rather than 1990. **That is an inference from the report's own numbers, not a statement the report makes**, and it should be labelled that way every time it is used.
+
+**Step two: get the outcome figures, in the right unit.**
+
+- **1997 Census of Agriculture: 18,451.** One operator per farm that year, so this is simultaneously a farm count and an operator count.
+- **2022 Census of Agriculture: 32,653 farms** with a Black producer, or 46,738 producers, or 41,807 Black-alone producers, depending which question you are asking.
+
+**Step three: grade it.**
+
+**Read against 1990, the prediction is wrong**, and not marginally. The arithmetic would have implied roughly 24,000 farms, and nothing near 10,000 was reached.
+
+**Read against the end of the 1990s, the prediction is still wrong, but in an interesting way.** The 1997 count of 18,451 is well above 10,000. The forecast overshot by nearly double. **A 57 per cent decadal rate did not continue**, and the honest thing to say is that the Commission's own conditional was doing real work: it wrote "at the current rate of loss", and the rate changed.
+
+**Read against 2022, the prediction is wrong in the opposite direction**, because the reported figure went **up**, and Lesson 10 explains why that rise is mostly the ruler moving rather than the world.
+
+**Step four, and this is where a careless reader stops too early.** "The prediction was wrong" is not the same as "the loss was not real". Both of these are true at once:
+
+- **Black farming did not disappear by 2000**, and a straight-line extrapolation of a decadal rate was the wrong tool for a bounded population that cannot fall below zero and is composed of people making decisions.
+- **The loss the Commission was describing was real and enormous.** From about 925,710 farms in 1920 to 32,653 in 2022 is a fall of roughly 96.5 per cent, and the white-operated farm count fell by 56.4 per cent over the 1920 to 1978 stretch the Commission measured. **The disparity in the rates is the finding; the extrapolation was the error.**
+
+**Step five: what would make a better forecast, and it is worth being concrete.** A rate that decays rather than compounding, because the operations most exposed leave first. A stated floor. A stated definition of the unit. A named target year. And a note on the census definitions, which the Commission itself supplied and its own forecast then ignored.
+
+**Your exercise, and it takes about twenty minutes.** Pick your own state. Find its Black farm operator count in the 1997 census and its Black-producer and Black-operated-farm counts in the 2022 census. Compute the change. Then write one sentence saying what your number means and one sentence saying what it does not, naming the unit in both. **If you cannot write the second sentence, you do not yet have the first.**
+
+:::reveal What decadal rate of loss was the Commission's 1982 forecast built on? ||| Fifty-seven per cent, the decline in Black-operated farms over the preceding decade, which it noted was two and a half times the white rate.
+
+:::reveal Does the report say which year "the end of the next decade" means? ||| No. The phrase is used three times and defined nowhere, so any target year attached to it is an inference and must be labelled as one.
+
+:::reveal How can the prediction be wrong while the loss it described is real? ||| Because a compounding straight-line extrapolation was the wrong tool, while the underlying fall from about 925,710 farms in 1920 to 32,653 in 2022 is roughly 96.5 per cent.
+
+## Vocabulary
+- **Extrapolation**: projecting a past rate forward, which assumes the rate is a property of the world rather than of the period it was measured in.
+- **Conditional forecast**: a prediction stated as depending on something continuing, which is falsified only if that thing continued and the outcome still differed.
+- **Baseline**: the starting figure a forecast compounds from, here 57,271 Black-operated farms in 1978.
+- **Rate decay**: the tendency of a decline to slow as the most exposed cases leave first, which a constant-rate projection cannot represent.
+- **Grading a prediction**: establishing the unit, the rate, and the target date before asking whether the outcome matched, since a prediction with an undefined date cannot be graded at all.
+
+## Sources
+U.S. Commission on Civil Rights. (1982, February). *The decline of Black farming in America*. U.S. Government Printing Office. https://www.usccr.gov/files/historical/1982/82-018.pdf
+
+U.S. Department of Agriculture, National Agricultural Statistics Service. (1999). *1997 census of agriculture, Volume 1, Geographic area series, Part 51, Table 37: Operators by selected racial groups*. https://www.nass.usda.gov/AgCensus/archive/files/1997-United_States-State_Data-1605-Table-37.pdf
+
+U.S. Department of Agriculture, National Agricultural Statistics Service. (2024). *2022 census of agriculture highlights: Black producers* (ACH22-10). https://www.nass.usda.gov/Publications/Highlights/2024/Census22_HL_BlackProducers.pdf`,
+    },
+    {
+      slug: "quiz-the-count",
+      title: "12 · Knowledge check: the count",
+      section: "Section 3 · The count",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How many Black farm operators did the 1920 census report?",
+            options: ["925,708", "949,889, which is instead the count of colored farm operators in the same census", "893,370, which is instead the corresponding figure reported for the year 1910", "705,070, which is instead the number of those operators who were tenants"],
+            correctIndex: 0,
+            explanation: "Volume V, chapter V, Table 4 at page 298 gives 925,708 for the category the census labelled Negroes.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "In which table and page does the 1920 operator count appear?",
+            options: ["Table 4, page 298", "Table 1, page 189, which instead carries the colored tenure and acreage breakdown", "Table 26, page 40, which appears in a publication of the following census", "Table 37, page 525, which belongs to the 1997 census of agriculture"],
+            correctIndex: 0,
+            explanation: "Chapter V of Volume V carries Table 4 on operators by race and tenure at page 298, repeated at Table 16, page 311.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How many acres did Black farm operators operate in 1920?",
+            options: ["41,432,182", "44,944,521, which is instead the acreage operated by colored farmers as a whole", "27,928,900, which is instead the improved acreage within those same farms", "16,704,192, which is instead the land in colored owner-operated farms"],
+            correctIndex: 0,
+            explanation: "Table 5 at page 298 gives 41,432,182 acres of all land in farms for Negro operators.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How does the 1920 census define the category colored?",
+            options: ["Negro plus Indian plus Japanese plus Chinese", "Any operator not counted as native-born white of native parentage", "Negro operators in the southern states only, excluding the rest of the country", "Any operator whose farm was located in a county with a segregated school system"],
+            correctIndex: 0,
+            explanation: "Chapter IV counts colored farmers as that combination, which is why its totals exceed the Negro-only figures in chapter V.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How many colored farm operators did the 1920 census report?",
+            options: ["949,889", "925,708, which is instead the count for the Negro category alone", "218,612, which is instead the number of Negro operators who were owners", "233,222, which is instead the number of colored owner-operators"],
+            correctIndex: 0,
+            explanation: "Chapter IV reports 949,889 colored operators on 44,944,521 acres, against 925,708 Negro operators on 41,432,182 acres.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What proportion of colored operators and of colored acreage were Negro?",
+            options: ["97.5 per cent of operators and 92.2 per cent of acreage", "Exactly the same share of each, so the two categories are interchangeable", "92.2 per cent of operators and 97.5 per cent of acreage, the reverse of the figures given", "About four fifths of both, with the remainder made up of Indian operators"],
+            correctIndex: 0,
+            explanation: "The share differs between the two measures, which is why mixing a Negro operator count with a colored acreage figure produces an incoherent statement.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What explanation does Volume V give for the divergence between the two categories?",
+            options: ["Colored operators outside the South were largely Indian or Asian", "Negro operators were undercounted in the Mountain and Pacific divisions", "The two chapters were compiled from different enumeration years", "Colored included tenants while Negro was restricted to owners and managers"],
+            correctIndex: 0,
+            explanation: "Page 187 states that colored farmers in the South are practically all Negroes while those in the Mountain and Pacific divisions are practically all Indians or Asiatics.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How many of the 925,708 Black farm operators in 1920 were tenants?",
+            options: ["705,070", "218,612, which is instead the number recorded as owners in the same table", "2,026, which is instead the number recorded as managers in the same table", "514,870, which is instead the colored share-tenant count from a different chapter"],
+            correctIndex: 0,
+            explanation: "Table 4 gives owners 218,612, managers 2,026 and tenants 705,070, which sum exactly to the total.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What share of Black farm operators in 1920 worked land they did not own?",
+            options: ["About seventy-six per cent", "About a quarter, since owners outnumbered tenants in most southern states", "About half, evenly split between owners and tenants across the country", "About ninety-five per cent, counting managers alongside tenants"],
+            correctIndex: 0,
+            explanation: "705,070 tenants out of 925,708 operators is 76.2 per cent, which is why an acreage-operated figure is mostly a figure about other people's land.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Why can the 1920 census not tell you how many acres Black farmers owned?",
+            options: ["The question was never asked", "The returns for owned acreage were destroyed in a fire before publication", "The Bureau published owned acreage only for white operators", "The figure exists but sits in an unpublished appendix held by the National Archives"],
+            correctIndex: 0,
+            explanation: "The general farm schedule asked tenure as yes-or-no questions and acreage once, divided only by land use.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How did the 1920 general farm schedule capture tenure?",
+            options: ["As four yes-or-no questions", "As a single acreage figure for owned land and another for rented land", "As a percentage of the farm the operator held in fee simple", "As a copy of the recorded deed attached to the enumerator's return"],
+            correctIndex: 0,
+            explanation: "The schedule asked whether the operator owned all of the farm, rented part but not all, rented all, or operated it as a hired manager.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How did the 1920 schedule divide the farm's acreage?",
+            options: ["By land use", "By ownership, separating owned acres from rented acres", "By crop, listing acreage under each commodity grown", "By tenure class, matching the four tenure questions"],
+            correctIndex: 0,
+            explanation: "It captured total acres, improved land, woodland and other unimproved land, which is a use split rather than an ownership split.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Where does the word owned appear on the 1920 schedule besides the tenure questions?",
+            options: ["In the encumbrance question, asking for dollars of debt", "In the acreage question, asking for owned acres separately", "In the improved land question, asking which improvements the operator owned", "It appears nowhere else on the schedule at all"],
+            correctIndex: 0,
+            explanation: "The farm encumbrance inquiry asks for the total debt on land in the farm owned by the operator, which is a dollar figure rather than an acreage.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Why can a part owner's acreage not be treated as owned land?",
+            options: ["It mixes owned ground with land rented in", "Because a part owner reports only the rented portion of the farm", "Because part owners were excluded from the acreage tables entirely", "Because the census counted part owners as tenants rather than as owners"],
+            correctIndex: 0,
+            explanation: "A part owner reported one acreage covering both owned and rented land, with no way to separate them.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What is the floor of the colored ownership bracket, and what row does it come from?",
+            options: ["14,005,208 acres, the Owning entire farm row", "16,704,192 acres, all land in colored owner-operated farms", "2,698,984 acres, the Hiring additional land row for part owners", "27,764,650 acres, all land in colored tenant-operated farms"],
+            correctIndex: 0,
+            explanation: "Every acre in the Owning entire farm row is owned by definition, so it is a floor rather than an estimate.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What is the ceiling of the colored ownership bracket?",
+            options: ["16,704,192 acres", "14,005,208 acres, which is instead the floor drawn from the full-owner row", "44,944,521 acres, which is all land operated by colored farmers of every tenure", "13,948,512 acres, which is a Negro figure from a later census publication"],
+            correctIndex: 0,
+            explanation: "All land in owner-operated farms overstates ownership by whatever part of the part owners' 2,698,984 acres was rented in.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Where does the circulating figure of 14 to 16 million acres come from?",
+            options: ["The colored ownership bracket", "The Negro owner-operated acreage reported for 1920 in the 1930 census", "An estimate published by the Commission on Civil Rights in 1982", "The improved acreage within Black-operated farms in the 1920 census"],
+            correctIndex: 0,
+            explanation: "It is the span from the colored full-owner floor to the colored owner-operated ceiling, and its upper end is an acknowledged overstatement.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What is wrong with quoting 925,708 Black farmers alongside 15 million acres owned?",
+            options: ["The two figures come from different racial universes", "The acreage figure is for 1930 rather than for 1920", "The operator count includes managers, whom the acreage figure excludes", "The acreage figure counts improved land only, not all land in farms"],
+            correctIndex: 0,
+            explanation: "925,708 is a Negro operator count while the 14 to 16 million bracket is a colored acreage bracket, and it is a ceiling on operated-by-owners land rather than a measurement of ownership.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Which publication back-reports Negro owner acreage for 1920?",
+            options: ["Hall's The Negro Farmer in the United States", "Volume V of the Fourteenth Census, in its chapter on race and tenure", "The Commission on Civil Rights report of February 1982", "The 1978 Census of Agriculture, volume I, part 51"],
+            correctIndex: 0,
+            explanation: "Charles E. Hall's 1933 publication of the 1930 census carries Table 26 at page 40, which gives 1920 alongside 1930.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What figure does Hall's Table 26 give for 1920 Negro owners?",
+            options: ["13,948,512 acres", "11,198,893 acres, which is instead the corresponding figure for 1930", "27,077,582 acres, which is instead the figure for tenants in the same year", "41,432,182 acres, which is instead the total across all three tenure classes"],
+            correctIndex: 0,
+            explanation: "Owners 13,948,512, tenants 27,077,582 and managers 406,088 sum exactly to the 41,432,182 total from the 1920 volume.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Why is 13,948,512 a ceiling rather than a measurement of Black-owned acreage?",
+            options: ["It counts land in farms operated by owners", "Because it was estimated rather than enumerated by the Census Bureau", "Because it excludes land owned by people who were not farming it", "Because it was published thirteen years after the census it describes"],
+            correctIndex: 0,
+            explanation: "A part owner's farm includes rented ground, and no full-owner and part-owner split for Negroes was ever published.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What slippage is visible on Hall's own page?",
+            options: ["His heading says owned and his sentences say operated by owners", "His table reports acres and his text reports farms", "His figures are for the South while his heading claims the whole country", "His percentages do not sum to one hundred across the tenure classes"],
+            correctIndex: 0,
+            explanation: "The section heading reads Loss of owned land while the sentences beneath say the land in farms operated by Negro owners, which is a different quantity.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How does the census itself define a cropper?",
+            options: ["A share tenant whose work animals the landlord furnishes", "Any tenant paying rent in a fixed quantity of the crop rather than in cash", "An owner who hires additional land from a neighbouring proprietor", "A farm labourer paid wages rather than a share of the harvest"],
+            correctIndex: 0,
+            explanation: "Volume V distinguishes share tenants, who furnish their own work animals, from croppers, whose animals are furnished by the landlord.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What labels does the census print for full and part owners in its tables?",
+            options: ["Owning entire farm and Hiring additional land", "Full owners and part owners, matching the terms used in the prose", "Fee simple holders and mixed tenure operators", "Proprietors and lessees, following the terminology of the period"],
+            correctIndex: 0,
+            explanation: "The prose uses full owner and part owner while the printed rows read Owning entire farm and Hiring additional land.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What is a standing renter, in the census's own definition?",
+            options: ["A tenant paying a stated amount of farm products", "A tenant paying cash rent fixed per acre of crop land", "A tenant who has occupied the same farm for more than ten years", "A tenant whose landlord furnishes both animals and implements"],
+            correctIndex: 0,
+            explanation: "The definition gives the example of three bales of cotton or five hundred bushels of corn for the use of the farm.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How many operators per farm did the 1997 census collect?",
+            options: ["One", "Three, matching the maximum the following census would adopt", "Four, matching the current maximum for producers", "As many as the farm reported, with no ceiling"],
+            correctIndex: 0,
+            explanation: "That is why the 1997 table has columns only for farms and land in farms, with no separate operator column.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What did the 1997 census report for Black operators in the United States?",
+            options: ["18,451", "18,816, which is instead the figure the same table reports for 1992", "30,605, which is instead the number of Black-operated farms in 2002", "32,653, which is instead the number of Black-operated farms in 2022"],
+            correctIndex: 0,
+            explanation: "Table 37 at page 525 gives 18,451 for 1997 on 2,384,868 acres, against 18,816 in 1992.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "Why are the 1997 farm count and operator count the same number?",
+            options: ["One operator was counted per farm", "Because every Black-operated farm that year reported exactly one owner of record", "Because the census suppressed the operator column for confidentiality reasons", "Because the two were reconciled by a later coverage adjustment"],
+            correctIndex: 0,
+            explanation: "With one operator per farm there was nothing to separate, so the table carries no distinct operator column.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What footnote did the 2002 census carry that broke the series?",
+            options: ["Data were collected for a maximum of three operators per farm", "Farms with sales below ten thousand dollars were excluded from the count", "Race was recorded by enumerator observation rather than by self-identification", "Operators of rented land were counted separately from owners for the first time"],
+            correctIndex: 0,
+            explanation: "Once a farm could report more than one operator, farms and operators stopped being the same number.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What did the 2002 census report for Black-operated farms and Black operators?",
+            options: ["30,605 farms and 36,370 operators", "36,370 farms and 30,605 operators, the reverse of the figures reported", "30,605 of each, since the two figures still coincided that year", "22,384 farms and 8,221 operators, which are instead the single and multiple counts"],
+            correctIndex: 0,
+            explanation: "22,384 farms reported one operator and 8,221 reported more than one, which is what separates the two totals.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What replaced the term operator, and when?",
+            options: ["Producer, from 2017", "Principal operator, from 2002 onwards in every published table", "Decision maker, from 2012 onwards in the highlights publications", "Proprietor, from 1997 onwards in the geographic area series"],
+            correctIndex: 0,
+            explanation: "The 2017 census adopted producer, and the 2022 census collects demographic information for up to four producers per farm.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "How many producers per farm does the 2022 census collect information for?",
+            options: ["Up to four", "Up to three, unchanged from the maximum adopted in 2002", "Exactly one, restoring the pre-2002 convention", "As many as the farm reports, with no upper limit"],
+            correctIndex: 0,
+            explanation: "The Table 52 headnote and Appendix B at page B-16 both state a maximum of four producers per farm.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "How many Black producers did the 2022 census count, alone or in combination?",
+            options: ["46,738", "41,807, which is instead the count of Black-alone producers", "32,653, which is instead the number of farms with a Black producer", "48,697, which is instead the corresponding figure for 2017"],
+            correctIndex: 0,
+            explanation: "The alone-or-in-combination count is 46,738 and the alone count is 41,807, because respondents may mark more than one race.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "How many farms had a Black producer in 2022?",
+            options: ["32,653", "46,738, which is instead the count of Black producers on those farms", "41,807, which is instead the count of Black-alone producers", "5,323,654, which is instead the acreage those farms operated"],
+            correctIndex: 0,
+            explanation: "The commonly quoted figure of about 32,700 is this farm count, not a count of farmers.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "How many acres did Black producers operate in 2022, and at what average farm size?",
+            options: ["5,323,654 acres, averaging 163 acres", "41,432,182 acres, averaging 45 acres, matching the 1920 figures", "2,384,868 acres, averaging 129 acres, matching the 1997 figures", "3,836,339 acres, averaging 125 acres, matching the 2002 figures"],
+            correctIndex: 0,
+            explanation: "The 2022 highlights publication reports 5,323,654 acres and an average of 163 acres per farm.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "Why do a Black-alone and a Black-in-combination count both exist?",
+            options: ["Respondents may mark more than one race category", "Because the census counts owners and tenants under separate racial headings", "Because the alone count excludes producers who are not the principal operator", "Because the combination count includes producers on farms with no Black owner"],
+            correctIndex: 0,
+            explanation: "The report form asks respondents to mark one or more race categories, which produces the two figures.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "How many producers and farms did the 2022 census count nationally?",
+            options: ["3,374,044 producers on 1,900,487 farms", "1,900,487 producers on 3,374,044 farms, the reverse of the figures given", "2,042,220 producers on 2,042,220 farms, which are the 2017 farm totals", "1,911,859 producers on 2,215,876 farms, which are the two 1997 restatements"],
+            correctIndex: 0,
+            explanation: "That is about 1.78 producers per farm, which is the size of the definitional effect nationally.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "How did the share of farms reporting more than one decision maker change between 2017 and 2022?",
+            options: ["From 54 to 60 per cent", "From 60 to 54 per cent, as consolidation reduced multi-operator farms", "From 30 to 45 per cent, following the change from operator to producer", "It did not change, because the collection maximum stayed at four"],
+            correctIndex: 0,
+            explanation: "The producer highlights publication reports the rise from 54 per cent to 60 per cent.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "Which comparison does the lesson say to make across a century?",
+            options: ["Farms to farms", "Producers to operators, since both count people running a farm", "Acres to acres, since acreage definitions never changed", "Whichever pair produces the larger measured change"],
+            correctIndex: 0,
+            explanation: "Comparing about 925,710 farms in 1920 to 32,653 farms in 2022 gives a decline of roughly 96.5 per cent.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What is the decline from 1920 to 2022, measured farm to farm?",
+            options: ["About 96.5 per cent", "About 94.9 per cent, which is what a farms-to-producers comparison gives", "About 93.8 per cent, which is the 1920 to 1978 figure the Commission printed", "About 56.4 per cent, which is the corresponding white-operated farm decline"],
+            correctIndex: 0,
+            explanation: "About 925,710 farms in 1920 against 32,653 in 2022 is a fall of roughly 96.5 per cent.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What happens if you compare 1920 farms against 2022 producers?",
+            options: ["The loss is understated", "The loss is overstated, because producers are fewer than farms", "The two are equivalent, since both count people who run farms", "The comparison is impossible, since the census publishes no producer total"],
+            correctIndex: 0,
+            explanation: "That comparison gives about 94.9 per cent, which is smaller than the farm-to-farm figure because people at the end are matched against farms at the beginning.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "Why is the rise from 18,451 in 1997 to 32,653 in 2022 not a recovery?",
+            options: ["The unit and the method both changed", "Because the 2022 figure includes producers who do not farm full time", "Because 1997 was an unusually low year within an otherwise stable series", "Because the 2022 figure counts acres rather than farms"],
+            correctIndex: 0,
+            explanation: "The unit moved from operator to producer, the per-farm maximum went from one to three to four, and coverage adjustment was introduced.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "By how much did the 2002 census restate the 1997 national farm count?",
+            options: ["Up 15.9 per cent", "Down 15.9 per cent, after removing farms that had ceased operating", "Up 57 per cent, matching the Commission's decadal rate of loss", "It did not restate it, because coverage adjustment applies only from 2017"],
+            correctIndex: 0,
+            explanation: "The total moved from 1,911,859 to 2,215,876 without a single new farm existing, which is a change in the ruler.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What did the Commission's own footnote say about comparability across census years?",
+            options: ["It is problematic because the definition of a farm changed", "It is straightforward, since the Census Bureau publishes adjusted series", "It applies only to acreage figures and not to operator counts", "It affects the southern states but not the country as a whole"],
+            correctIndex: 0,
+            explanation: "The report warns of the problem and tabulates every farm definition from 1900 to 1978 in its own appendix.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What does the phrase unit break describe?",
+            options: ["The point where what is counted changes", "A gap in a series caused by a census being cancelled", "The year a statistical agency changes its publication format", "The difference between a preliminary and a final published figure"],
+            correctIndex: 0,
+            explanation: "After a unit break the earlier and later figures are not comparable without adjustment, which is what 2002 did to this series.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What is a coverage adjustment?",
+            options: ["A correction for farms the enumeration missed", "A correction for farms that reported more than one operator", "A reweighting of the sample to match the resident population", "A revision applied when a state boundary changes between censuses"],
+            correctIndex: 0,
+            explanation: "It raised the restated 1997 national farm count by 15.9 per cent without any new farm coming into existence.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What did the Commission on Civil Rights predict in 1982?",
+            options: ["Fewer than 10,000 Black farmers by the end of the next decade", "That Black farm numbers would stabilise once the county committees were reformed", "That white-operated farm numbers would fall faster than Black-operated ones", "That the census would stop publishing operator counts by race entirely"],
+            correctIndex: 0,
+            explanation: "The report says that at the current rate of loss there will be fewer than 10,000 Black farmers at the end of the next decade.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "What rate of loss was the 1982 forecast built on?",
+            options: ["Fifty-seven per cent per decade", "Thirty-nine point eight per cent per year, matching the committee membership decline", "Ninety-four per cent, the total loss the report measured since 1920", "Fifty-six point four per cent, which is the corresponding white-operated farm decline"],
+            correctIndex: 0,
+            explanation: "The sentence before the prediction gives the preceding decade's decline in Black-operated farms as 57 per cent.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "How did that rate compare with the white rate, according to the Commission?",
+            options: ["Two and a half times as fast", "Roughly the same, which is what made the finding unremarkable", "Half as fast, which the report attributed to smaller starting numbers", "Ten times as fast, which the report described as unprecedented"],
+            correctIndex: 0,
+            explanation: "The report describes the Black rate of decline as two and a half times that for white-operated farms.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "What baseline figure does the forecast compound from?",
+            options: ["57,271 Black-operated farms in 1978", "925,710 Black-operated farms in 1920, the peak the report identifies", "18,451 Black operators in 1997, from the census after the forecast", "10,000 Black farmers, which is the forecast's own endpoint"],
+            correctIndex: 0,
+            explanation: "The Commission cites 57,271 farms from the 1978 Census of Agriculture, volume I, part 51, page 209.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Which unit should the prediction be read in?",
+            options: ["Farms", "Producers, matching the current census terminology", "Acres, since the report described land loss rather than farm loss", "Households, since the report counted families rather than operations"],
+            correctIndex: 0,
+            explanation: "The Commission's baseline of 57,271 is a farm count and the rate was computed in farms, so the forecast is a forecast about farms.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Does the report define which year the end of the next decade means?",
+            options: ["No", "Yes, it names 1990 explicitly in the Findings section", "Yes, it names 1999 in the chapter that carries the forecast", "Yes, it names the year of the next decennial census of agriculture"],
+            correctIndex: 0,
+            explanation: "The phrase appears three times and is defined nowhere, so any year attached to it is an inference.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Applying the 57 per cent rate once to the 1978 baseline gives what?",
+            options: ["About 24,455", "About 10,442, which requires the rate to be applied twice", "About 32,653, which is the actual 2022 farm count", "About 18,451, which is the actual 1997 operator count"],
+            correctIndex: 0,
+            explanation: "57,271 falling 57 per cent gives roughly 24,455 after one decade, which is well above the forecast threshold.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Applying the rate twice gives what, and what does that imply about the target date?",
+            options: ["About 10,442, implying the end of the 1990s", "About 24,455, implying the end of the 1980s", "About 3,000, implying the middle of the 1990s", "About 32,000, implying no threshold was ever crossed"],
+            correctIndex: 0,
+            explanation: "Fewer than 10,000 is reached only after roughly two decades, which is an inference from the report's numbers rather than a statement it makes.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "How does the prediction fare against the 1997 census count?",
+            options: ["It overshot by nearly double", "It was almost exactly right, within a few hundred farms", "It undershot, because the actual count fell below 10,000", "It cannot be assessed, because 1997 published no racial breakdown"],
+            correctIndex: 0,
+            explanation: "The 1997 count of 18,451 is well above the 10,000 threshold, so a 57 per cent decadal rate did not continue.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "What work is the Commission's phrase at the current rate of loss doing?",
+            options: ["It makes the forecast conditional", "It identifies the census year the baseline was drawn from", "It restricts the forecast to the nine states in the committee table", "It signals that the figure is an estimate rather than an enumeration"],
+            correctIndex: 0,
+            explanation: "A conditional forecast is falsified only if the condition held and the outcome still differed, and here the rate itself changed.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Why was a compounding straight-line extrapolation the wrong tool here?",
+            options: ["The population is bounded and made of people deciding", "Because the census stopped publishing the series it depended on", "Because compounding rates always understate decline in agriculture", "Because the 1978 baseline was later revised upward by the Bureau"],
+            correctIndex: 0,
+            explanation: "A count that cannot fall below zero, composed of people making choices, does not decline at a constant proportional rate.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "What is true at the same time as the prediction being wrong?",
+            options: ["The loss it described was real and enormous", "The Commission's underlying data were fabricated", "The white-operated farm count fell faster over the same period", "The census definitions were stable throughout the period measured"],
+            correctIndex: 0,
+            explanation: "About 925,710 farms in 1920 to 32,653 in 2022 is roughly a 96.5 per cent fall, against a 56.4 per cent decline for white-operated farms over the stretch the Commission measured.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Which is the finding and which is the error, in the Commission's forecast?",
+            options: ["The disparity is the finding, the extrapolation is the error", "The extrapolation is the finding, the disparity is the error", "Both are errors, since the underlying figures were not comparable", "Both are findings, since the outcome eventually matched the forecast"],
+            correctIndex: 0,
+            explanation: "The rate gap between Black-operated and white-operated farm losses is the real result; projecting it forward as a constant was the mistake.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Which of these would improve a forecast of this kind?",
+            options: ["A rate that decays rather than compounding", "A larger starting baseline drawn from an earlier census year", "A prediction stated in acres rather than in farms or operators", "A shorter horizon that avoids naming any threshold at all"],
+            correctIndex: 0,
+            explanation: "The lesson lists a decaying rate, a stated floor, a defined unit, a named target year and a note on the census definitions.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "What does the exercise at the end of the lesson ask a learner to produce?",
+            options: ["One sentence on what the number means and one on what it does not", "A projection of their state's Black farm count for the next decade", "A comparison of their state against the national average for 2022", "A list of the county committees operating in their state today"],
+            correctIndex: 0,
+            explanation: "The unit must be named in both sentences, and a learner who cannot write the second does not yet have the first.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "What does the report's page 2 version of the prediction say?",
+            options: ["Virtually no Black people operating farms", "Fewer than 25,000 Black farmers by the end of the next decade", "That the decline would halt once federal credit programmes were reformed", "That the census would no longer be able to measure the population"],
+            correctIndex: 0,
+            explanation: "Page 2 states that at this rate of loss there will be virtually no Black people operating farms in the country by the end of the next decade.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Which census does the Commission cite for its 57,271 figure?",
+            options: ["The 1978 Census of Agriculture, volume I, part 51", "The 1974 Census of Agriculture, volume II, part 3", "The 1920 Census of Agriculture, Volume V, chapter V", "The 1997 Census of Agriculture, volume 1, part 51"],
+            correctIndex: 0,
+            explanation: "Footnote 1 cites the 1978 Census of Agriculture, volume I, part 51, page 209.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "How does the Commission's 1920 farm figure compare with the census table?",
+            options: ["It differs by two", "It differs by about twenty-four thousand, because it uses the colored category", "It matches exactly, since both come from the same published table", "It cannot be compared, since the Commission gives only a percentage"],
+            correctIndex: 0,
+            explanation: "The Commission's Table 1.1 prints 925,710 while the 1920 census table gives 925,708, a difference that changes nothing and is worth knowing.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What is the correct description of a source that rounds 925,710 to 926,000?",
+            options: ["A secondary figure, and the report cites one for it", "An error, since the census figure ends in eight rather than ten", "A coverage adjustment applied to the original enumeration", "A count of colored rather than Negro operators"],
+            correctIndex: 0,
+            explanation: "The Commission's rounded 926,000 is footnoted to Calvin L. Beale rather than to the census, while its own Table 1.1 prints 925,710.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What did the Commission report as the white-operated farm decline from 1920 to 1978?",
+            options: ["56.4 per cent", "93.8 per cent, which is instead the corresponding Black-operated decline", "57 per cent, which is instead the Black decline over the preceding decade alone", "96.5 per cent, which is instead the Black decline measured to 2022"],
+            correctIndex: 0,
+            explanation: "The report gives almost 94 per cent for Black-operated farms against 56.4 per cent for white-operated farms over the same period.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Why is naming the unit the first step in grading any prediction?",
+            options: ["A prediction in farms cannot be graded against a count of people", "Because the unit determines which agency published the outcome data", "Because a forecast is falsified only if the unit changed during the period", "Because the census assigns a different confidence interval to each unit"],
+            correctIndex: 0,
+            explanation: "The forecast was computed in farms, so grading it against a producer count would test something the Commission never said.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "What should be said about any target year attached to the 1982 forecast?",
+            options: ["It is an inference and must be labelled as one", "It is 1990, which the report states in its Findings", "It is 1999, which the report states in its opening chapter", "It cannot be inferred at all from the figures the report provides"],
+            correctIndex: 0,
+            explanation: "The report never names a year, and the two-decade reading comes from applying the report's own rate to its own baseline.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "What is the 2017 Black producer count, for comparison with 2022?",
+            options: ["48,697", "46,738, which is instead the corresponding 2022 figure", "35,470, which is instead the number of Black-operated farms in 2017", "41,807, which is instead the Black-alone producer count in 2022"],
+            correctIndex: 0,
+            explanation: "Black producers fell from 48,697 in 2017 to 46,738 in 2022, a decline of 4.0 per cent.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "How many Black-operated farms did the 2017 census count?",
+            options: ["35,470", "32,653, which is instead the corresponding figure for 2022", "48,697, which is instead the count of Black producers in 2017", "30,605, which is instead the count of Black-operated farms in 2002"],
+            correctIndex: 0,
+            explanation: "Black-operated farms fell from 35,470 in 2017 to 32,653 in 2022, a decline of 7.9 per cent.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "How did the Black-operated farm decline from 2017 to 2022 compare with the national one?",
+            options: ["Faster, at 7.9 per cent against 6.9 per cent", "Slower, at 6.9 per cent against 7.9 per cent nationally", "Identical, since both series fell by the same proportion", "In the opposite direction, since Black-operated farms increased"],
+            correctIndex: 0,
+            explanation: "All United States farms fell 6.9 per cent while Black-operated farms fell 7.9 per cent over the same five years.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What is the best summary of what Lesson 9 established?",
+            options: ["The operated figure is exact and the owned figure was never collected", "Both the operated and the owned figures are exact and published", "Neither figure can be established from any federal publication", "The owned figure is exact and the operated figure must be estimated"],
+            correctIndex: 0,
+            explanation: "41,432,182 acres operated is printed at page 298; acres owned was never asked on the schedule and can only be bracketed or ceilinged.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Which sentence about 1920 Black farming is safe to make?",
+            options: ["Most Black farm operators worked land they did not own", "Black farmers owned about fifteen million acres in that year", "Black operators owned three quarters of the land they farmed", "Black and colored operator counts are interchangeable in that census"],
+            correctIndex: 0,
+            explanation: "705,070 of 925,708 operators were tenants, which is 76 per cent, and the ownership acreage was never collected.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Why does the operated against owned distinction matter to this course specifically?",
+            options: ["A tenant's land can be lost without any sale by the family", "Because federal loan eligibility depends on the acreage a farmer owns", "Because the census refused to publish tenure data by race after 1920", "Because tenants were ineligible for every federal farm programme"],
+            correctIndex: 0,
+            explanation: "Operated acreage is mostly other people's land, so a figure about it describes something different from the landholding Section 4 is about.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What did the 1920 census report as the value of Negro-operated land and buildings?",
+            options: ["$2,257,645,325", "$648,760,084, which is instead the value of colored owner-operated land and buildings", "$1,058,577,198, which is instead the total relief paid in a later settlement", "$2,200,000,000, which is instead a later congressional appropriation"],
+            correctIndex: 0,
+            explanation: "Table 5 at page 298 gives the value alongside the acreage and improved acreage figures.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Where is the 1920 operator count repeated, besides Table 4?",
+            options: ["Table 16, page 311", "Table 1, page 189, in the chapter on color and tenure", "Table 26, page 40, in the following census publication", "Nowhere, since the volume prints each figure only once"],
+            correctIndex: 0,
+            explanation: "Table 16 gives colored farm operators by race and tenure by divisions and states, and its United States row matches Table 4 exactly.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Which is the correct order of maximum operators or producers per farm?",
+            options: ["One, then three, then four", "Four, then three, then one, as the census tightened its definition", "One, then two, then four, with a doubling at each revision", "Three throughout, from the first census of agriculture to the present"],
+            correctIndex: 0,
+            explanation: "One operator per farm until 2002, a maximum of three from 2002, and up to four producers from 2017.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What does about 1.78 producers per farm imply for any people-to-farms comparison?",
+            options: ["A count of people is now well above a count of farms", "A count of people is now below a count of farms nationally", "The two counts are close enough to be treated as interchangeable", "The ratio applies only to farms with more than one decision maker"],
+            correctIndex: 0,
+            explanation: "3,374,044 producers on 1,900,487 farms means a producer count runs roughly one and three quarter times the farm count.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "Which is a fair description of the 1997 to 2022 apparent rise?",
+            options: ["Mostly the ruler moving", "Entirely genuine growth in Black farm operations", "A statistical error the Census Bureau has since corrected", "The result of a coverage adjustment applied only to Black operators"],
+            correctIndex: 0,
+            explanation: "The unit changed, the per-farm maximum rose twice, and coverage adjustment was introduced, so a number that went up because the ruler changed has not gone up.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "Which document tabulates every census farm definition from 1900 to 1978?",
+            options: ["Appendix A of the Commission's 1982 report", "Appendix B of the 2022 census, volume 1, chapter 1", "Appendix A of the 1920 census, Volume V", "Table 37 of the 1997 census, part 51"],
+            correctIndex: 0,
+            explanation: "The Commission tabulated the definitions itself and warned in a footnote that comparability across years is problematic.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What is the most common error in this subject, according to Lesson 10?",
+            options: ["Comparing figures across a unit break", "Using the colored category instead of the Negro category for 1920", "Quoting acreage figures without adjusting them for inflation", "Relying on secondary sources instead of the census volumes"],
+            correctIndex: 0,
+            explanation: "The problem is old, documented by the agencies themselves, and still the most common error in comparisons of Black farming across a century.",
+            sourceLessonSlug: "what-the-census-counts",
+          },
+          {
+            prompt: "What did the Commission's Findings say about the prediction?",
+            options: ["If the rate continues unabated, fewer than 10,000 remain", "That the prediction should be treated as an upper bound rather than a forecast", "That the rate had already begun to slow by the time of publication", "That the census would need to change its definitions to measure the outcome"],
+            correctIndex: 0,
+            explanation: "The Findings restate the forecast in conditional form, matching the chapter text's at the current rate of loss.",
+            sourceLessonSlug: "the-1982-prediction",
+          },
+          {
+            prompt: "Which combination correctly describes what this course prints about 1920 acreage?",
+            options: ["Operated exactly, owned as a ceiling with the source's own slippage shown", "Both operated and owned exactly, from the same census table", "Neither, following the refusal WARRANT-01 made on the same question", "Owned exactly, with the operated figure left as an estimate"],
+            correctIndex: 0,
+            explanation: "41,432,182 acres operated is printed at page 298, and 13,948,512 is described as a ceiling because Hall's own sentences say operated by owners.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How much improved land did Black-operated farms contain in 1920?",
+            options: ["27,928,900 acres", "41,432,182 acres, which is instead all land in those farms", "29,298,441 acres, which is instead the colored improved acreage", "14,005,208 acres, which is instead the colored full-owner acreage"],
+            correctIndex: 0,
+            explanation: "Table 5 at page 298 reports improved land alongside all land in farms and the value of land and buildings.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How many colored operators were recorded as managers in 1920?",
+            options: ["2,226", "2,026, which is instead the number of Negro managers in the same year", "233,222, which is instead the number of colored owner-operators", "714,441, which is instead the number of colored tenants"],
+            correctIndex: 0,
+            explanation: "The colored figures in chapter IV run slightly above the Negro figures in chapter V for every tenure class.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "How did the number of Black farm operators change between 1910 and 1920?",
+            options: ["It rose, from 893,370 to 925,708", "It fell, from 925,708 to 893,370, which is the reverse of the reported movement", "It was unchanged, since the census used the same figure for both years", "It cannot be compared, since the 1910 census used the colored category only"],
+            correctIndex: 0,
+            explanation: "Table 4 prints both years, and the increase of 32,338 operators is confirmed by Hall's own prose in the following census.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "Which tenure class fell between 1910 and 1920 among Black operators?",
+            options: ["Owners, from 218,972 to 218,612", "Tenants, from 705,070 to 672,964, a fall of more than thirty thousand", "Managers, from 2,026 to 1,434 over the same decade", "None of them, since every class rose over the decade"],
+            correctIndex: 0,
+            explanation: "Owners fell by 360 while tenants rose by 32,106 and managers by 592, which is why the total rose while ownership did not.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+          {
+            prompt: "What does the 1910 to 1920 tenure movement suggest about the peak year?",
+            options: ["The peak in operators was not a peak in ownership", "Ownership grew faster than tenancy across the decade", "The census changed its tenure definitions between the two years", "Managers accounted for most of the increase in operators"],
+            correctIndex: 0,
+            explanation: "The record number of operators in 1920 was reached through an increase in tenants while the number of owners slightly declined.",
+            sourceLessonSlug: "operated-is-not-owned",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
     // SECTION 4 — Title
     // ══════════════════════════════════════════════════════════════════════
     {
