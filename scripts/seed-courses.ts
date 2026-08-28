@@ -231,6 +231,7 @@ import { THE_NAME_ON_THE_DOOR_COURSE } from "./data/the-name-on-the-door-course"
 import { WRITTEN_BY_HIMSELF_COURSE } from "./data/written-by-himself-course";
 import { THE_MATCH_COURSE } from "./data/the-match-course";
 import { TERRITORIES_COURSE } from "./data/territories-course";
+import { THE_COUNTY_COMMITTEE_COURSE } from "./data/the-county-committee-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2252,6 +2253,49 @@ async function main() {
       slug: "territories-and-representation",
       course: TERRITORIES_COURSE,
       category: "Civics",
+    },
+    // WARRANT-02 · The County Committee (Civics). The sibling of THE MATCH, from the same brief
+    // (plans/future-courses/land-and-schools/2026-08-27-01), section 8, Course C. WARRANT-01 met
+    // the series mechanism as a FUNDING FORMULA; this is its second form, the same federal
+    // government met as a LENDER, delivering national money through a gate three neighbours stand
+    // at. Tier 0. NO migration - pnpm seed:courses.
+    //
+    // IT CLOSES WARRANT-01'S FIRST TWO REFUSALS BY OPENING THE VOLUME, which is exactly what that
+    // course's ledger said would have to happen. The 1920 census tables were rendered and read page
+    // by page (they carry no text layer): 925,708 Negro farm operators on 41,432,182 acres, Vol. V
+    // ch. V Tables 4 and 5 p. 298, with the tenure split summing exactly and three quarters of
+    // operators being TENANTS. And the finding nobody had: ACRES OWNED WAS NEVER COLLECTED. The
+    // enumerator's schedule at Vol. V Appendix A p. 911 asks tenure as yes/no questions and acreage
+    // once, split only by land USE. So the circulating "14 to 16 million acres" is the COLORED
+    // bracket (colored = Negro + Indian + Japanese + Chinese) printed beside a NEGRO operator count,
+    // and the 13,948,512 Negro figure back-reported in Hall (1933) is a ceiling on land OPERATED BY
+    // owners. Hall's own heading says "Loss of owned land" while his sentences say "operated by
+    // owners", so the error is traceable to the source rather than to later drift.
+    //
+    // THE BRIEF'S HARD GATE ON PIGFORD FRAUD IS CLEARED RATHER THAN DUCKED. The rule was that the
+    // allegation appears only with a named source, a named venue, named evidence and named
+    // rebuttals, or the course says nothing. All four are on the record: Rep. Steve King's special
+    // order of 29 November 2010 at 156 Cong. Rec. H7635-41 (with Rep. Bachmann's separate remarks
+    // correctly attributed to her), Sharon LaFraniere's New York Times investigation of 25 April
+    // 2013, the three kinds of evidence sorted, and rebuttals from Vilsack, Schneider, Boyd and
+    // West by name. The load-bearing distinction is between what GAO-13-69R FOUND (control
+    // weaknesses that COULD expose the process to risk; 150 claims tested with no exceptions; an
+    // express statement that it did NOT examine claimant fraud; the Ombudsman receiving fraud
+    // complaints only about fraud committed AGAINST claimants) and what it did not find.
+    //
+    // TWO SOURCE-INTERNAL CONTRADICTIONS ARE TAUGHT RATHER THAN SMOOTHED, as in WARRANT-01: USCCR
+    // prints Tennessee's committee loss as 83.3 in its table and chapter and 93.3 in its Findings,
+    // across two printings, and the table's arithmetic settles it; and CRS RS20430's narrative and
+    // its Table 1 differ by one claim on different as-of dates.
+    {
+      slug: "the-county-committee",
+      course: THE_COUNTY_COMMITTEE_COURSE,
+      category: "Civics",
+      seriesSlug: "land-warrant",
+      seriesTitle: "The Land Warrant",
+      seriesOrder: 2,
+      seriesCode: "WARRANT",
+      seriesPosition: "02",
     },
   ]) {
     await seedAuthoredCourse(db, {

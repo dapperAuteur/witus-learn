@@ -406,9 +406,9 @@ export const JURISDICTION: JurisdictionFile = {
         {
           code: "USH.4.7",
           text: "Explain the long-term effects of the Second New Deal, including its effects on agriculture, labor, social welfare, and banking. (E)",
-          claimIds: ["history.wagner-act"],
+          claimIds: ["history.wagner-act", "history.federal-farm-programs-and-local-administration"],
           coverage: "partial",
-          note: "Partial: the LABOR effect — the Wagner Act, what it created, and precisely who it excluded — is taught in depth, including its long-term consequences. The standard's other three areas (agriculture, social welfare, banking) are not taught.",
+          note: "Partial: two of the standard's four areas. The LABOR effect — the Wagner Act, what it created, and precisely who it excluded — is taught in depth, including its long-term consequences. The AGRICULTURE effect is taught through one Second New Deal instrument specifically: section 8(b) of the Soil Conservation and Domestic Allotment Act of 1935, which created the state, county and community committees that administer federal farm programs, and whose long-term effect is that those committees still run conservation and price-support programs today, still elected by producers, at 16 U.S.C. § 590h(b)(5). The standard's remaining two areas, social welfare and banking, are not taught.",
         },
         {
           code: "USH.7.1",

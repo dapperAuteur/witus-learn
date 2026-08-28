@@ -2605,6 +2605,29 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
   {
+    id: "history.federal-farm-programs-and-local-administration",
+    claim:
+      "Teaches how federal farm credit, disaster, price-support and conservation programs are delivered through county-level committees, how landownership passes and is lost under state partition law, and the census record of Black farm and land loss with the litigation that followed.",
+    courseSlugs: ["the-county-committee"],
+    lessons: [
+      // The delivery structure created by the Soil Conservation and Domestic Allotment Act of 1935
+      // and still in force: 16 U.S.C. 590h(b)(5)'s appointed state committees and ELECTED county
+      // committees, set beside the separately-constituted FmHA credit committees abolished in 1994.
+      "3 · Two committee systems, and why that is confusing on purpose",
+      // The county committee read as an instrument, from the U.S. Commission on Civil Rights (1982):
+      // three residents of the county, at least two of them farmers, determining both eligibility
+      // and the limits of credit, seated by nomination and appointment rather than by election.
+      "5 · Three people in the county",
+      // State property law as the other mechanism: intestacy, tenancy in common, and the fact that
+      // any one co-tenant may force the partition sale of an entire parcel.
+      "14 · Any one co-tenant can force the sale of everything",
+      // How a uniform state act changes the enforcement of those property rights: notice, an
+      // appraisal that forbids the fractional discount, a right of first refusal, and an
+      // open-market sale, plus the federal provisions that reference it.
+      "15 · A model statute, four protections, and a federal preference",
+    ],
+  },
+  {
     id: "history.harlem-renaissance-black-press",
     claim: "Teaches the Harlem Renaissance, the New Negro, and the Black press as an engine of the Migration.",
     courseSlugs: ["great-migration"],

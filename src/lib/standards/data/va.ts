@@ -344,9 +344,14 @@ export const JURISDICTION: JurisdictionFile = {
         {
           code: "GOVT.14c",
           text: "evaluating government’s establishment and maintenance of the rules and institutions in which markets operate, including the establishment and enforcement of property rights, contracts, consumer rights, labor-management relations, environmental protection, and competition in the marketplace",
-          claimIds: ["history.wagner-act", "history.gilded-age-labor", "bvc.sugar-program-trade-barriers"],
+          claimIds: [
+            "history.wagner-act",
+            "history.gilded-age-labor",
+            "bvc.sugar-program-trade-barriers",
+            "history.federal-farm-programs-and-local-administration",
+          ],
           coverage: "partial",
-          note: "Partial: labor-management relations (the Wagner Act's regime and who it excluded, the Gilded-Age fight that led there) and market rules (the sugar program) are worked; property rights, contracts, consumer rights, and environmental protection are not.",
+          note: "Partial: labor-management relations (the Wagner Act's regime and who it excluded, the Gilded-Age fight that led there) and market rules (the sugar program) are worked, and PROPERTY RIGHTS are now worked from the enforcement side: how land held in common passes under intestate succession, why any single co-tenant may force the partition sale of a whole parcel, and how a uniform state act changes that enforcement through notice, an appraisal that forbids the fractional-interest discount, a co-tenant right of first refusal, and a court-supervised open-market sale. Contracts, consumer rights, and environmental protection are not taught.",
         },
         {
           code: "GOVT.14g",
