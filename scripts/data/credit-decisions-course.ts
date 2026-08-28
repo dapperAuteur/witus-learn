@@ -2504,5 +2504,603 @@ Farm Service Agency. (1996, April 15). Farm Service Agency county committees; Fa
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Getting it wrong, and getting it fixed
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-dispute-and-the-clock",
+      title: "17 · The dispute, and the clock it starts",
+      section: "Section 5 · Getting it wrong, and getting it fixed",
+      body: `A file with a wrong line in it is a decision with a wrong input. The statute's answer is a procedure with deadlines, and the deadlines are the part worth memorising.
+
+**The core duty.** The FCRA says:
+
+> "if the completeness or accuracy of any item of information contained in a consumer's file at a consumer reporting agency is disputed by the consumer and the consumer notifies the agency directly, or indirectly through a reseller, of such dispute, the agency shall, free of charge, conduct a reasonable reinvestigation to determine whether the disputed information is inaccurate and record the current status of the disputed information, or delete the item from the file in accordance with paragraph (5), before the end of the 30-day period beginning on the date on which the agency receives the notice of the dispute" (15 U.S.C. § 1681i, n.d.)
+
+**Six things in that sentence, and each is a lever.**
+
+**"Completeness or accuracy."** Not only errors. An item that is technically true and materially incomplete is disputable on the statute's own terms.
+
+**"Any item of information."** Not only adverse items, and not only accounts.
+
+**"The consumer notifies the agency."** The duty is triggered by notice from you. Nothing happens on its own.
+
+**"Free of charge."** The reinvestigation costs you nothing, and the statute says so rather than leaving it to be negotiated.
+
+**"A reasonable reinvestigation."** A standard, not a formality. What counts as reasonable is judged against what a reasonable investigation would have found.
+
+**"Before the end of the 30-day period beginning on the date on which the agency receives the notice."** The clock starts on receipt, so the date you can prove the agency received your notice is the date that matters.
+
+**The second clock, which is faster.** The agency does not investigate alone:
+
+> "Before the expiration of the 5-business-day period beginning on the date on which a consumer reporting agency receives notice of a dispute from any consumer or a reseller in accordance with paragraph (1), the agency shall provide notification of the dispute to any person who provided any item of information in dispute, at the address and in the manner established with the person." (15 U.S.C. § 1681i, n.d.)
+
+**That is the whole mechanism in one sentence.** Your dispute with the agency reaches the furnisher, within five business days, whether or not you ever contacted the furnisher yourself. The next lesson is about what the furnisher then owes.
+
+**What happens at the end.** If the item is found inaccurate or incomplete, or cannot be verified:
+
+> "If, after any reinvestigation under paragraph (1) of any information disputed by a consumer, an item of the information is found to be inaccurate or incomplete or cannot be verified, the consumer reporting agency shall—(i) promptly delete that item of information from the file of the consumer, or modify that item of information, as appropriate" (15 U.S.C. § 1681i, n.d.)
+
+**Read "cannot be verified" carefully.** The item does not have to be proved false. If the reinvestigation cannot verify it, the same consequence follows. And the agency must then give the consumer written notice of the results, including a revised report, a description of the procedure used on request, the right to add a statement of dispute to the file, and the right to request that notice of the deletion or change be sent to certain parties (15 U.S.C. § 1681i, n.d.).
+
+:::reveal How long does a consumer reporting agency have to complete a reinvestigation, and when does the clock start? ||| Thirty days, beginning on the date the agency receives the notice of the dispute.
+
+:::reveal Within how long must the agency notify the party that supplied the disputed item? ||| Five business days from receipt of the dispute.
+
+:::reveal What are the three findings that require an agency to delete or modify an item? ||| That it is inaccurate, that it is incomplete, or that it cannot be verified.
+
+## Vocabulary
+- **Reinvestigation**: the reasonable, free investigation the FCRA requires an agency to conduct into a disputed item within thirty days of receiving notice.
+- **Completeness or accuracy**: the two grounds of dispute the statute names, so a technically true but materially incomplete item is disputable.
+- **Cannot be verified**: the third outcome that triggers deletion or modification, which does not require the consumer to prove the item false.
+- **Statement of dispute**: the consumer's own account of the disagreement, which the statute allows to be added to the file after a reinvestigation.
+
+## Sources
+15 U.S.C. § 1681i. (n.d.). *Procedure in case of disputed accuracy*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681i
+
+15 U.S.C. § 1681m. (n.d.). *Requirements on users of consumer reports*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681m`,
+    },
+    {
+      slug: "the-furnisher-has-duties-too",
+      title: "18 · The furnisher has duties too, and that is the leverage",
+      section: "Section 5 · Getting it wrong, and getting it fixed",
+      body: `The common mistake is to think of a dispute as an argument with the agency. It is not. It is a procedure that reaches the company that put the item there.
+
+**What the furnisher owes on notice of a dispute.** The FCRA sets out the duty in five parts:
+
+> "(A) conduct an investigation with respect to the disputed information; (B) review all relevant information provided by the consumer reporting agency pursuant to section 1681i(a)(2) of this title; (C) report the results of the investigation to the consumer reporting agency" (15 U.S.C. § 1681s-2, n.d.)
+
+and, where the investigation finds the item incomplete or inaccurate, the furnisher must report that finding to the other nationwide agencies as well, and:
+
+> "promptly modify that item of information; delete that item of information; or permanently block the reporting of that item of information." (15 U.S.C. § 1681s-2, n.d.)
+
+**Three consequences that change how you would go about this.**
+
+**First, one dispute moves two institutions.** You file with the agency; the agency notifies the furnisher inside five business days; the furnisher must investigate and report back. You do not have to run two separate processes to get two parties working.
+
+**Second, a finding travels.** If the furnisher's investigation shows the item incomplete or inaccurate, the duty is to tell the nationwide agencies, not only the one that asked. The whole point of that provision is that a corrected item should not survive at the other agencies simply because nobody wrote to them.
+
+**Third, the furnisher's three remedies are named.** Modify, delete, or permanently block. Not "annotate", not "review at the next cycle".
+
+**And the upstream duty from Section 2 still applies.** A furnisher may not report information it knows or has reasonable cause to believe is inaccurate (15 U.S.C. § 1681s-2, n.d.). So a furnisher that has already investigated and found an item wrong is in a different position from one that has never looked.
+
+**Why this is called leverage.** The agency did not create the item and, in most cases, has no independent knowledge of it. The furnisher does. A dispute filed with the agency is the mechanism that compels the party with the knowledge to look, on a clock, and to report what it found. **That is a structural advantage the consumer has, and almost nobody uses it deliberately.**
+
+**One thing this course will not tell you.** It will not tell you how to word a dispute, what to include, or when disputing is a good idea in your situation. Those are decisions about your record and your circumstances, and they belong to you. **This course is information about how the procedure works, not advice about whether to use it.** What it can tell you is that the procedure has deadlines, that the deadlines run from receipt, and that the consequences of an unverifiable item are the same as those of a false one.
+
+:::reveal Which three things must a furnisher do on receiving notice of a dispute from an agency? ||| Investigate the disputed information, review all relevant information the agency provided, and report the results back to the agency.
+
+:::reveal What must a furnisher do if its investigation finds an item incomplete or inaccurate? ||| Report that to the nationwide agencies, and promptly modify, delete, or permanently block the reporting of the item.
+
+:::reveal Why is a dispute filed with the agency described as leverage? ||| Because it compels the furnisher, which is the party with the actual knowledge of the item, to investigate on a clock and report back.
+
+## Vocabulary
+- **Furnisher investigation**: the inquiry a furnisher must conduct once an agency notifies it of a consumer dispute, distinct from the agency's own reinvestigation.
+- **Permanent block**: one of the three remedies the statute names for a furnisher whose investigation finds an item inaccurate, incomplete or unverifiable.
+- **Travelling finding**: the requirement that a furnisher report an incomplete or inaccurate finding to the nationwide agencies rather than only to the one that raised the dispute.
+- **Upstream duty**: the separate prohibition on furnishing information the furnisher knows or has reasonable cause to believe is inaccurate.
+
+## Sources
+15 U.S.C. § 1681s-2. (n.d.). *Responsibilities of furnishers of information to consumer reporting agencies*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681s-2
+
+15 U.S.C. § 1681i. (n.d.). *Procedure in case of disputed accuracy*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681i`,
+    },
+    {
+      slug: "getting-your-own-file",
+      title: "19 · Getting your own file, and the site the regulation does not name",
+      section: "Section 5 · Getting it wrong, and getting it fixed",
+      body: `None of the previous two lessons is usable until you have the document. The statute gives you a floor, and the floor is worth knowing exactly.
+
+**The statutory floor.** The FCRA says:
+
+> "All consumer reporting agencies described in subsections (p) and (w) of section 1681a of this title shall make all disclosures pursuant to section 1681g of this title once during any 12-month period upon request of the consumer and without charge to the consumer." (15 U.S.C. § 1681j, n.d.)
+
+**Once during any 12-month period, from each such agency, without charge.** That is the guarantee. It is a floor, not a ceiling: nothing in it prevents an agency from offering more, and the free copy that follows an adverse action, from Section 4, is a separate entitlement with its own 60-day clock.
+
+**How you are supposed to ask.** Regulation V requires the nationwide agencies to build a shared front door:
+
+> "All nationwide consumer reporting agencies shall jointly design, fund, implement, maintain, and operate a centralized source" (12 CFR § 1022.136, n.d.)
+
+whose purpose is:
+
+> "to enable consumers to make a single request to obtain annual file disclosures from all nationwide consumer reporting agencies, as required under section 612(a) of the FCRA" (12 CFR § 1022.136, n.d.)
+
+and which must:
+
+> "Enable consumers to request annual file disclosures by any of the following request methods, at the consumers' option: (i) A single, dedicated Web site, (ii) A single, dedicated toll-free telephone number; and (iii) Mail directed to a single address" (12 CFR § 1022.136, n.d.)
+
+**Here is the detail almost every explanation of this gets wrong.** The regulation requires a single dedicated website and a single dedicated toll-free number. **It does not print the address of either.** So the URL is not in the rule, and anyone who tells you it is has not read the rule.
+
+**Where the address actually comes from.** It comes from the agencies that administer and explain the statute. The Consumer Financial Protection Bureau's own consumer page, "How do I get a free copy of my credit reports?", names it, saying to visit **AnnualCreditReport.com** or call **(877) 322-8228**, and describing the entitlement as one free copy of your credit report each year from each of the three major consumer reporting companies (Consumer Financial Protection Bureau, 2023). **That page carries its own last-reviewed date of 28 August 2023, and this course read it on 28 August 2026.** Both dates are printed here on purpose, because a page reviewed three years before you read it is a page to re-check rather than a page to trust blindly.
+
+**The same page also says something this course will repeat rather than resolve.** It notes that you may be able to view reports more often than the statutory floor. That is a company practice, not a statutory right, and company practices change without notice. **The floor is the thing to rely on. Anything above it is a bonus that may or may not be there when you look.**
+
+**And the disclaimer, said again where it belongs.** This lesson tells you what the law guarantees and where the federal agency that explains the law says to go. **It does not tell you what to do with the document, whether to dispute anything in it, or how to manage your finances.** This course gives no financial advice, and the free non-commercial routes named here are named because they are the ones a federal agency publishes, not because this course is recommending a service.
+
+:::reveal What is the FCRA's statutory floor for free file disclosures? ||| Once during any 12-month period, on request, without charge, from each nationwide agency and each nationwide specialty agency.
+
+:::reveal What does Regulation V require the nationwide agencies to build, and what does the rule NOT contain? ||| A jointly funded centralized source reachable by a single website, a single toll-free number and a single mailing address. The rule does not print the address of any of them.
+
+:::reveal Why does this lesson print two separate dates for the CFPB page? ||| Because the page's own last-reviewed date and the date this course read it are different facts, and a reader needs both to judge how stale the page may be.
+
+## Vocabulary
+- **Free annual file disclosure**: the FCRA entitlement to all section 1681g disclosures once in any 12-month period, on request, without charge.
+- **Centralized source**: the jointly designed, funded and operated front door Regulation V requires the nationwide agencies to provide, reachable by website, toll-free number or mail.
+- **Statutory floor**: the minimum the law guarantees, as distinct from whatever a company happens to be offering at the moment you look.
+- **Nationwide specialty consumer reporting agency**: the further category at section 1681a(w) that the free-disclosure duty also reaches, alongside the nationwide agencies.
+
+## Sources
+15 U.S.C. § 1681j. (n.d.). *Charges for certain disclosures*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681j
+
+12 CFR § 1022.136. (n.d.). *Centralized source for requesting annual file disclosures from nationwide consumer reporting agencies*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1022.136
+
+Consumer Financial Protection Bureau. (2023, August 28). *How do I get a free copy of my credit reports?* https://www.consumerfinance.gov/ask-cfpb/how-do-i-get-a-copy-of-my-credit-reports-en-5/`,
+    },
+    {
+      slug: "quiz-the-dispute",
+      title: "20 · Knowledge check: getting it wrong, and getting it fixed",
+      section: "Section 5 · Getting it wrong, and getting it fixed",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How long does a consumer reporting agency have to complete a reinvestigation of a disputed item?",
+            options: ["30 days", "Five business days, which is the period for notifying the party that supplied the item", "Sixty days, matching the window in which a free copy may be claimed after adverse action", "Ninety days, which the statute extends to one hundred and twenty for public record items"],
+            correctIndex: 0,
+            explanation: "The period runs to the end of the 30-day period beginning on the date the agency receives the notice of dispute.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "From what event does the FCRA's reinvestigation clock begin?",
+            options: ["Receipt of the notice", "The date the consumer posted the dispute, as shown by the postmark on the envelope", "The date the disputed item was first furnished to the agency by the creditor", "The date the agency completes its own preliminary review of the consumer's file"],
+            correctIndex: 0,
+            explanation: "The statute measures from the date on which the agency receives the notice of the dispute, which is why provable receipt matters.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What does the FCRA say the reinvestigation must cost the consumer?",
+            options: ["Nothing", "A reasonable fee, which the agency may set and must publish in advance", "Nothing for the first dispute in any year and a fee for each dispute after that", "The cost of obtaining the file, which the agency may deduct from the free disclosure"],
+            correctIndex: 0,
+            explanation: "The statute says free of charge, rather than leaving the point to be negotiated.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "On what two grounds may a consumer dispute an item under section 1681i?",
+            options: ["Completeness or accuracy", "Age or origin, meaning items too old to report or supplied by an unauthorised party", "Relevance or materiality, meaning items that did not affect the decision complained of", "Ownership or authorship, meaning items belonging to another consumer entirely"],
+            correctIndex: 0,
+            explanation: "The statute reaches the completeness or accuracy of any item of information in the consumer's file.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Why does the completeness ground matter separately from the accuracy ground?",
+            options: ["A true item can be incomplete", "Because incompleteness is judged by the agency and accuracy by the furnisher", "Because an incomplete item carries a shorter reporting period than an inaccurate one", "Because only completeness disputes require notification of the furnisher"],
+            correctIndex: 0,
+            explanation: "An item that is technically true and materially incomplete is disputable on the statute's own terms.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Which items may a consumer dispute under the statute?",
+            options: ["Any item in the file", "Only adverse items, since a favourable item cannot injure the consumer's interests", "Only account items, since public records must be corrected at the courthouse instead", "Only items furnished within the preceding twenty-four months"],
+            correctIndex: 0,
+            explanation: "The provision reaches any item of information contained in a consumer's file, not only adverse items and not only accounts.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What standard does the FCRA set for the agency's investigation?",
+            options: ["A reasonable reinvestigation", "A complete audit of every item in the consumer's file, conducted by an independent party", "A confirmation from the furnisher that the item as reported matches the furnisher's records", "A review of the documentation the consumer supplies, and nothing further"],
+            correctIndex: 0,
+            explanation: "It is a standard rather than a formality, judged against what a reasonable investigation would have found.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Within what period must an agency notify the party that supplied a disputed item?",
+            options: ["Five business days", "Thirty days, the same period allowed for completing the reinvestigation itself", "Ten calendar days, measured from the date the consumer's notice was posted", "Immediately, since the statute sets no period and requires notice on receipt"],
+            correctIndex: 0,
+            explanation: "The period runs from the date the agency receives notice of the dispute, and the notice goes to the address and in the manner established with that person.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Must a consumer contact the furnisher separately for the furnisher to be put on notice?",
+            options: ["No", "Yes, because the agency's duty is limited to reviewing its own records for the item", "Yes, unless the furnisher is a nationwide bank supervised by a federal regulator", "Yes, and the consumer must supply proof of that contact to the agency within ten days"],
+            correctIndex: 0,
+            explanation: "The agency must notify any person who provided any item of information in dispute, within five business days.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Which three findings require an agency to delete or modify an item after reinvestigation?",
+            options: ["Inaccurate, incomplete, or unverifiable", "Disputed, adverse, or older than the applicable reporting period for its category", "Furnished in error, furnished twice, or furnished by an unregistered furnisher", "Proved false, admitted false, or withdrawn by the furnisher on request"],
+            correctIndex: 0,
+            explanation: "If the item is found inaccurate or incomplete, or cannot be verified, the agency must promptly delete or modify it as appropriate.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What is the significance of the phrase cannot be verified?",
+            options: ["No proof of falsity is needed", "It applies only to items drawn from public records rather than from furnishers", "It permits the agency to leave the item in place with a notation of the dispute", "It extends the reinvestigation period by a further thirty days automatically"],
+            correctIndex: 0,
+            explanation: "An unverifiable item carries the same consequence as a false one, which is a materially different starting position for the consumer.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Which of these must the agency's written notice of results include, on request?",
+            options: ["A description of the procedure used", "The name of the employee who conducted the reinvestigation of the disputed item", "A copy of every document the furnisher supplied during the investigation", "An estimate of the effect the change will have on the consumer's credit score"],
+            correctIndex: 0,
+            explanation: "The notice covers completion, a revised report, a description of the procedure on request, the right to add a statement of dispute, and the right to request notifications.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What is a statement of dispute, in the FCRA's scheme?",
+            options: ["The consumer's own account, added to the file", "A formal complaint filed with the federal agency that supervises the furnisher", "A certification by the agency that the item has been investigated and verified", "A notice the furnisher must send to every other agency holding the same item"],
+            correctIndex: 0,
+            explanation: "The statute gives the consumer the right to add it to the file after a reinvestigation.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "How may a consumer notify an agency of a dispute, under the statute's own words?",
+            options: ["Directly, or through a reseller", "Only in writing, by mail, to the address the agency publishes for that purpose", "Only through the creditor that furnished the item to the agency originally", "Only through the federal agency that supervises the consumer reporting agency"],
+            correctIndex: 0,
+            explanation: "The provision reaches a consumer who notifies the agency directly, or indirectly through a reseller.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What does the lesson say a file with a wrong line in it amounts to?",
+            options: ["A decision with a wrong input", "A violation of the furnisher's duty that entitles the consumer to statutory damages", "An item the agency must delete without conducting any investigation at all", "A permissible-purpose breach by whoever obtained the report containing it"],
+            correctIndex: 0,
+            explanation: "Which is why the correction procedure is the load-bearing remedy in the whole scheme.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What triggers the agency's reinvestigation duty?",
+            options: ["Notice from the consumer", "The agency's own periodic audit of the files it maintains on consumers", "A request from the creditor that most recently obtained the consumer's report", "The expiry of the reporting period applicable to the item in question"],
+            correctIndex: 0,
+            explanation: "Nothing happens on its own; the duty is triggered by the consumer notifying the agency.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Which three duties does the FCRA impose on a furnisher notified of a dispute?",
+            options: ["Investigate, review, report back", "Delete, notify the consumer, and refund any fees the consumer has paid", "Suspend reporting, notify its regulator, and await instructions from the agency", "Contact the consumer, obtain documentation, and re-furnish the item as corrected"],
+            correctIndex: 0,
+            explanation: "Conduct an investigation, review all relevant information the agency provided, and report the results of the investigation to the agency.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "What information must a furnisher review as part of its investigation?",
+            options: ["What the agency provided", "Only its own internal records relating to the account in question", "Only the documentation the consumer attached to the original dispute", "Only the information the item's original creditor supplied when the account was opened"],
+            correctIndex: 0,
+            explanation: "The statute requires review of all relevant information provided by the consumer reporting agency under section 1681i(a)(2).",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "What are the three remedies a furnisher must apply when its investigation finds an item wrong?",
+            options: ["Modify, delete, or permanently block", "Annotate, suspend, or re-verify at the next monthly reporting cycle", "Refund, apologise, or refer the matter to its own compliance department", "Notify the consumer, notify the agency, or notify the federal supervisor"],
+            correctIndex: 0,
+            explanation: "The statute names promptly modify, delete, or permanently block the reporting of that item of information.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "Where must a furnisher report a finding that an item is incomplete or inaccurate?",
+            options: ["To the nationwide agencies", "Only to the agency that raised the dispute with the furnisher in the first place", "To the federal agency that supervises the furnisher's lending operations", "To the consumer directly, in writing, within five business days of the finding"],
+            correctIndex: 0,
+            explanation: "The point of that provision is that a corrected item should not survive elsewhere simply because nobody wrote to the other agencies.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "What is the common mistake the lesson identifies about disputes?",
+            options: ["Treating it as an argument with the agency", "Believing a dispute must be filed within thirty days of the item first appearing", "Believing a dispute freezes the item so that no user may see it while it is open", "Believing a dispute must be accompanied by documentary proof to be effective"],
+            correctIndex: 0,
+            explanation: "It is a procedure that reaches the company that put the item there, which is where the knowledge sits.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "How many institutions does one dispute set to work, in the lesson's account?",
+            options: ["Two", "One, since the agency conducts the entire reinvestigation using its own records", "Three, because the federal supervisor must also review the disputed item", "Four, counting the agency, the furnisher, the supervisor and the model developer"],
+            correctIndex: 0,
+            explanation: "You file with the agency, and the agency's five-business-day notice pulls the furnisher in.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "Why does the lesson call the dispute procedure a structural advantage?",
+            options: ["It compels the knowledgeable party to look", "Because the statute presumes a disputed item to be inaccurate until verified", "Because the consumer may recover a statutory penalty for every day of delay", "Because the agency must suppress the item from all users while the dispute is open"],
+            correctIndex: 0,
+            explanation: "The agency mostly has no independent knowledge of the item; the furnisher does, and the procedure makes it look on a clock.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "How does the upstream furnishing duty interact with the dispute duty?",
+            options: ["A furnisher that has looked cannot claim ignorance", "The two duties are alternatives, and a furnisher may elect which one to comply with", "The upstream duty is suspended for any item that is the subject of a live dispute", "The upstream duty applies only to items furnished after the dispute is resolved"],
+            correctIndex: 0,
+            explanation: "A furnisher that has investigated and found an item wrong is in a different position from one that has never looked.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "Which of these will this course NOT tell a reader about disputes?",
+            options: ["Whether to file one", "The period within which an agency must complete its reinvestigation", "The date from which the reinvestigation period is measured under the statute", "The consequence when a disputed item cannot be verified by the investigation"],
+            correctIndex: 0,
+            explanation: "How to word a dispute, what to include, and whether to file are decisions about a reader's own record and circumstances.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "How does the lesson describe the difference between what it offers and advice?",
+            options: ["How the procedure works, not whether to use it", "Federal rules rather than State rules, which vary too much to summarise", "Written rules rather than industry practice, which is not published anywhere", "Current rules rather than historical ones, which have changed repeatedly"],
+            correctIndex: 0,
+            explanation: "It is information about a mechanism, and the decision to use the mechanism belongs to the reader.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "What is the FCRA's floor for free file disclosures from a nationwide agency?",
+            options: ["Once in any 12-month period", "Twice in any calendar year, once in each half of the year on written request", "Once in any 24-month period, unless the consumer has been refused credit", "Unlimited, provided each request is made in writing and separately signed"],
+            correctIndex: 0,
+            explanation: "The statute requires all section 1681g disclosures once during any 12-month period on request and without charge.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "Which categories of agency does the free annual disclosure duty reach?",
+            options: ["Nationwide and nationwide specialty agencies", "Every consumer reporting agency of any size operating anywhere in the country", "Only the three largest agencies, as designated annually by the supervising body", "Only agencies that have furnished a report about the consumer in the past year"],
+            correctIndex: 0,
+            explanation: "The provision names agencies described in subsections (p) and (w) of section 1681a.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "Is the annual free disclosure a floor or a ceiling?",
+            options: ["A floor", "A ceiling, so an agency that offers more than one free copy violates the statute", "Neither, since the number is set by each agency's own published terms of service", "A ceiling for nationwide agencies and a floor for nationwide specialty agencies"],
+            correctIndex: 0,
+            explanation: "Nothing in it prevents an agency from offering more, and the post-adverse-action free copy is a separate entitlement.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "What does Regulation V require the nationwide agencies to build together?",
+            options: ["A centralized source", "A shared database in which all three agencies maintain a single consumer file", "A joint dispute-resolution board with an independent chair appointed by the Bureau", "A published register of every user that has obtained a report in the past year"],
+            correctIndex: 0,
+            explanation: "They must jointly design, fund, implement, maintain and operate it.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "What is the stated purpose of the centralized source?",
+            options: ["A single request reaching all of them", "To let consumers compare the three files side by side in one document", "To let the agencies verify a consumer's identity before releasing any file", "To let a creditor obtain all three reports in one transaction at one price"],
+            correctIndex: 0,
+            explanation: "The rule says it is to enable consumers to make a single request to obtain annual file disclosures from all nationwide consumer reporting agencies.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "Which three request methods must the centralized source support?",
+            options: ["A website, a toll-free number, and mail", "A website, an email address, and an in-person appointment at a branch office", "A toll-free number, a mobile application, and a request through the consumer's bank", "Mail, fax, and a request submitted through a creditor the consumer holds an account with"],
+            correctIndex: 0,
+            explanation: "A single dedicated website, a single dedicated toll-free telephone number, and mail directed to a single address, at the consumer's option.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "What does 12 CFR 1022.136 NOT contain, which most explanations of it assume?",
+            options: ["The website address", "Any requirement that the source be free to use for the consumer requesting a file", "Any obligation on the agencies to fund the source jointly rather than separately", "Any reference to the FCRA provision the source exists to implement"],
+            correctIndex: 0,
+            explanation: "The rule requires a single dedicated website and toll-free number without printing the address of either.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "Where does this course say the actual address comes from?",
+            options: ["The agency that explains the statute", "The consumer reporting agencies' own terms of service, published on their websites", "The Federal Register notice in which the centralized source was first authorised", "The adverse action notice, which must name the site whenever a report was used"],
+            correctIndex: 0,
+            explanation: "The lesson takes it from the Consumer Financial Protection Bureau's own consumer page and dates the reading.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "Which two dates does the lesson print for the CFPB page, and why?",
+            options: ["Its review date and the date it was read", "Its publication date and the date the statute it explains was last amended", "The date of the rule and the date the centralized source began operating", "The date of the last dispute and the date the reinvestigation was completed"],
+            correctIndex: 0,
+            explanation: "A page reviewed three years before you read it is a page to re-check rather than to trust blindly, and both facts are needed to see that.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "The CFPB page notes that reports may be viewable more often than the floor. How does this course treat that?",
+            options: ["As practice, not a right", "As a statutory entitlement the agencies may not lawfully withdraw once offered", "As a rule change that supersedes the twelve-month period in the statute", "As an error on the page, since the statute permits only one free copy a year"],
+            correctIndex: 0,
+            explanation: "Company practices change without notice, so the floor is the thing to rely on and anything above it is a bonus.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "What does the disclaimer in this lesson say about the free routes it names?",
+            options: ["Named because a federal agency publishes them", "Named because they are cheaper than the commercial alternatives available", "Named because the statute requires an educational publisher to identify them", "Named because the course has evaluated them against the commercial services"],
+            correctIndex: 0,
+            explanation: "They are named as the routes a federal agency publishes, not as a recommendation of any service.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "How does the free copy after adverse action relate to the annual free disclosure?",
+            options: ["It is a separate entitlement", "It replaces the annual disclosure for that twelve-month period once claimed", "It is the same entitlement, claimable early where a decision has gone against you", "It is available only to consumers who have not already used the annual disclosure"],
+            correctIndex: 0,
+            explanation: "It has its own 60-day clock under section 1681j, as the adverse action notice itself has to state.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "Why does the lesson say none of the dispute material is usable until you have the document?",
+            options: ["You cannot dispute what you cannot read", "Because the statute requires a copy of the file to accompany every dispute filed", "Because the agency will not accept a dispute from a consumer who has not paid a fee", "Because the reinvestigation clock does not start until the file has been disclosed"],
+            correctIndex: 0,
+            explanation: "The correction procedure operates on specific items, and the items are in the file.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "Which section of the FCRA does the centralized source implement, per the regulation's own words?",
+            options: ["Section 612(a)", "Section 611, the reinvestigation provision codified at 15 U.S.C. 1681i", "Section 615, the user duties provision codified at 15 U.S.C. 1681m", "Section 604, the permissible purposes provision codified at 15 U.S.C. 1681b"],
+            correctIndex: 0,
+            explanation: "The rule states the purpose is to enable a single request as required under section 612(a) of the FCRA, which is codified at 15 U.S.C. 1681j.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "What is the toll-free number the CFPB page names for the centralized source?",
+            options: ["(877) 322-8228", "(800) 685-1111, the number the largest nationwide agency publishes for consumers", "(888) 397-3742, the number published for disputes rather than for file requests", "The number is not published by any federal agency and must be obtained from the site"],
+            correctIndex: 0,
+            explanation: "The CFPB page names both the website and that number, and this course records reading the page on 28 August 2026.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "How does the CFPB page describe the annual entitlement, in the words this course quotes?",
+            options: ["One free copy each year from each of three companies", "Three free copies each year, claimable from any of the nationwide agencies", "One free copy each year, shared across all three nationwide agencies together", "Unlimited free copies, subject to identity verification at each request"],
+            correctIndex: 0,
+            explanation: "The page describes a right to request one free copy of your credit report each year from each of the three major consumer reporting companies.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "In the lesson's framing, what is the relationship between a statutory floor and a company practice?",
+            options: ["One is reliable, one may vanish", "The practice controls, because it is what the consumer actually encounters", "The floor controls, and any practice above it is unlawful under the statute", "They are the same thing, since the agencies write the rules they operate under"],
+            correctIndex: 0,
+            explanation: "The floor is what the law guarantees; anything above it is a bonus that may or may not be there when you look.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "What is a reseller, in the context of the FCRA's dispute provision?",
+            options: ["An indirect route for the consumer's notice", "A furnisher that supplies items to more than one nationwide agency at once", "A creditor that buys a report and then sells its decision to another lender", "A model developer that licenses its scoring system to multiple agencies"],
+            correctIndex: 0,
+            explanation: "The statute lets a consumer notify the agency directly, or indirectly through a reseller.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What does the agency have to send the consumer once a reinvestigation is complete?",
+            options: ["Written notice of the results", "An oral summary, with written confirmation only if the consumer requests it", "A certificate of accuracy signed by an officer of the consumer reporting agency", "A copy of the furnisher's investigation file, including its internal correspondence"],
+            correctIndex: 0,
+            explanation: "The notice includes a statement of completion and a revised consumer report, among the other listed items.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Which right does the FCRA give a consumer about notifying others after a change?",
+            options: ["To request notification of the change", "To require every user of the report to reconsider its decision within thirty days", "To have the agency publish a correction in a general circulation newspaper", "To have the furnisher write directly to the consumer confirming the deletion"],
+            correctIndex: 0,
+            explanation: "The results notice must include the right to request notifications under subsection (d) of the section.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "Section 5's three lessons take the reader through which sequence?",
+            options: ["Get the file, dispute the item, reach the furnisher", "Contact the creditor, appeal the decision, complain to the supervisor", "Request the score, compare the models, choose the most favourable one", "Read the notice, request the reasons, apply again on better terms"],
+            correctIndex: 0,
+            explanation: "The document comes first, because the correction procedure operates on specific items in it.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "What does the lesson mean when it says the deadlines are the part worth memorising?",
+            options: ["They convert a right into a date", "They limit how long a consumer may wait before filing any dispute at all", "They set the period after which an unverified item must be treated as accurate", "They determine which of the nationwide agencies has to answer the dispute first"],
+            correctIndex: 0,
+            explanation: "Thirty days for the reinvestigation from receipt, and five business days for the notice to the furnisher, are the two checkable facts in the whole procedure.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What does the furnisher's duty on receipt of a dispute have that the agency's own duty does not?",
+            options: ["Direct knowledge of the item", "A statutory deadline expressed in business days rather than in calendar days", "An obligation to communicate its findings directly to the consumer in writing", "A right to charge the consumer a reasonable fee for the investigation performed"],
+            correctIndex: 0,
+            explanation: "The furnisher created the item, which is why the procedure that compels it to look is the leverage in the scheme.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "What does the lesson say about running two separate processes against agency and furnisher?",
+            options: ["You do not have to", "You must, because the two statutes create entirely separate procedures", "You may not, because a duplicate dispute is treated as frivolous by the agency", "You should, because the furnisher's deadline is shorter than the agency's"],
+            correctIndex: 0,
+            explanation: "One dispute moves two institutions, because the agency's five-business-day notice pulls the furnisher in.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "Which of these describes the FCRA's treatment of an item the agency simply cannot check?",
+            options: ["Same outcome as a false item", "It stays in the file with a notation that verification was attempted and failed", "It is suppressed for six months and then restored if nobody objects again", "It is referred to the federal supervisor for a determination on the merits"],
+            correctIndex: 0,
+            explanation: "Inaccurate, incomplete or unverifiable all lead to prompt deletion or modification as appropriate.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "How does Section 5 relate to Section 4, in the course's structure?",
+            options: ["The notice names these two steps", "It substitutes a different remedy for the one the adverse action notice describes", "It applies only where no adverse action notice was received by the consumer", "It repeats Section 4's material from the consumer reporting agency's perspective"],
+            correctIndex: 0,
+            explanation: "The FCRA's adverse action duties require the user to name the free copy on a 60-day clock and the dispute right, which are exactly these lessons.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "In the lesson's phrase, what does the statute give a consumer about free file access?",
+            options: ["A floor worth knowing exactly", "A schedule of fees the agencies may charge for each additional copy requested", "A discretion the agencies exercise according to their own published policies", "A right that expires if it is not exercised within the calendar year it arises"],
+            correctIndex: 0,
+            explanation: "Once in any twelve-month period, on request, without charge, from each covered agency.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "Why does the lesson describe the regulation's silence about the URL as a detail worth stating?",
+            options: ["It shows who is actually the source", "It shows the rule is out of date and awaiting amendment by the supervising agency", "It shows the agencies may change the address without any regulatory approval at all", "It shows the centralized source is voluntary rather than legally required"],
+            correctIndex: 0,
+            explanation: "The address comes from the agency that administers and explains the statute, not from the rule, which is a fact about provenance.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "What does the FCRA require the agency to record about a disputed item if it is not deleted?",
+            options: ["Its current status", "The number of times the consumer has disputed the same item previously", "The identity of the furnisher that verified the item during the reinvestigation", "The date on which the item will next be eligible for automatic removal"],
+            correctIndex: 0,
+            explanation: "The duty is to determine whether the information is inaccurate and record the current status of the disputed information, or delete it.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "How does a furnisher's duty differ from the agency's duty in what it must produce?",
+            options: ["It reports results to the agency", "It reports results to the consumer, who then forwards them to the agency", "It reports results to its federal supervisor, which notifies the agency", "It reports results to the other furnishers holding the same account"],
+            correctIndex: 0,
+            explanation: "The statute requires it to report the results of the investigation to the consumer reporting agency that raised the dispute.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "What does the lesson say almost nobody does with the dispute procedure?",
+            options: ["Use it deliberately", "File it within the statutory period after receiving an adverse action notice", "Address it to the furnisher rather than to the consumer reporting agency", "Attach documentary evidence sufficient to satisfy a reasonable investigation"],
+            correctIndex: 0,
+            explanation: "It is a structural advantage the consumer already has, and the lesson's point is that it is under-used rather than unavailable.",
+            sourceLessonSlug: "the-furnisher-has-duties-too",
+          },
+          {
+            prompt: "Which of the following is NOT one of the levers the lesson identifies in the reinvestigation sentence?",
+            options: ["A right to compensation", "The words free of charge, which put the cost of the reinvestigation on the agency", "The words completeness or accuracy, which reach more than outright errors", "The thirty-day period, which begins on the date the agency receives the notice"],
+            correctIndex: 0,
+            explanation: "The lesson names six levers in the sentence and compensation is not among them; the section creates a procedure rather than a payment.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "To what address must an agency send its notice of a dispute to a furnisher?",
+            options: ["The one established with that person", "The furnisher's registered office as shown in the records of its State of incorporation", "The address printed on the consumer's most recent statement from that furnisher", "Any address the consumer supplies with the dispute, which the agency must use"],
+            correctIndex: 0,
+            explanation: "The statute requires notification at the address and in the manner established with the person supplying the information.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What does the lesson say about who the free routes in Section 5 belong to?",
+            options: ["Non-commercial and federally published", "Commercial services the course has reviewed and found acceptable for the purpose", "Services the consumer reporting agencies operate under contract with the government", "Services the course recommends over their paid equivalents for most readers"],
+            correctIndex: 0,
+            explanation: "They are named because a federal agency publishes them, which is a statement about provenance rather than a recommendation.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+          {
+            prompt: "Why does the lesson insist that an unverifiable item is a materially different starting position for a consumer?",
+            options: ["The burden is not to prove falsity", "Because the agency must pay damages where an item cannot be verified in time", "Because the furnisher forfeits its right to re-report the item at a later date", "Because the consumer may then obtain a second free copy outside the annual floor"],
+            correctIndex: 0,
+            explanation: "The statute treats inaccurate, incomplete and unverifiable alike, so the consumer does not have to prove a negative.",
+            sourceLessonSlug: "the-dispute-and-the-clock",
+          },
+          {
+            prompt: "What does the phrase jointly design, fund, implement, maintain, and operate tell you about the centralized source?",
+            options: ["It is a shared obligation", "It is operated by the federal supervisor with the agencies contributing funding", "It is optional, since a joint obligation cannot be enforced against any one agency", "It is a private venture the agencies may discontinue on notice to the Bureau"],
+            correctIndex: 0,
+            explanation: "The rule places every one of those verbs on all nationwide consumer reporting agencies together.",
+            sourceLessonSlug: "getting-your-own-file",
+          },
+        ],
+      },
+    },
   ],
 };
