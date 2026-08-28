@@ -2498,6 +2498,161 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The National Agricultural Library, for USDA's Equal Opportunity Report series",
     ],
   },
+
+  // ── MONEY-01 · Credit, and the Decisions Made About You ───────────────────────────────────────
+  //
+  // This course generates more of these than any other in the catalog, and that is correct rather
+  // than a smell. Its statutory spine is stable; the things layered on top of it (which score models
+  // are in use, what the agencies currently offer above the statutory floor, which body administers
+  // which rule this month) all move, and the course's rule is to teach the floor and the method and
+  // to DATE every refusal in the lesson. Each check below corresponds to a dated refusal a reader
+  // can see on the page, not to a hedge buried in a code comment.
+  {
+    key: "credit-score-models-in-use",
+    course: "credit-decisions",
+    lesson: "there-is-no-single-score",
+    quote:
+      "this course makes no claim about which score models are in general use or which the mortgage market requires",
+    title: "Which credit score models are in general use, and which does the mortgage market require?",
+    severity: "medium",
+    question:
+      "As of the date you check, which credit-scoring model families and version numbers are in general use by consumer lenders, and which model or models does the federal housing regulator currently require or permit for conforming mortgage origination? Give the version strings exactly as the publishers and the regulator print them.",
+    claim:
+      "The course states, dated 28 August 2026, that it makes NO claim about this. It teaches only what the statute guarantees (that a score is a modelled prediction, that models are plural and versioned, and the four things an agency must disclose with one) and tells the reader to read the current picture from the model publishers and the relevant federal housing regulator, with the date attached.",
+    stakes:
+      "Nothing in the course is wrong today, because it deliberately asserts nothing here. The stakes run the other way: a learner who wants the current picture is sent off-site, and a dated answer would let the lesson say more without becoming a table that goes stale silently. It also decides whether MONEY-06 (housing) can teach the mortgage-model requirement at all.",
+    needs: [
+      "The model family names and version strings as the publishers themselves print them",
+      "The federal housing regulator's own current statement about which models are required or permitted for conforming origination, quoted",
+      "The URL of each primary source and the date you read it",
+      "Whether any of it is under an announced transition with a future effective date",
+    ],
+    where: [
+      "The model publishers' own product pages, not a comparison site or a lender's blog",
+      "The Federal Housing Finance Agency's own announcements and its credit-score pages",
+      "The Federal Register, for any rule or notice carrying an effective date",
+    ],
+  },
+  {
+    key: "credit-agency-footing",
+    course: "credit-decisions",
+    lesson: "who-writes-the-rules",
+    quote:
+      "It will not describe any agency's authorities, funding, staffing or enforcement posture in the present tense",
+    title: "Which federal body currently administers and enforces the FCRA, ECOA and TILA rules?",
+    severity: "high",
+    question:
+      "As of the date you check, which federal body is issuing, supervising and enforcing 12 CFR part 1002 (Regulation B), part 1022 (Regulation V) and part 1026 (Regulation Z) for consumer creditors, and are any of those parts stayed, redesignated or transferred? Name the body and quote the source that says so.",
+    claim:
+      "The course refuses to describe the agency layer in the present tense. It states only that the statutes and regulations it quotes were in force and readable on 28 August 2026, and teaches instead that the statute and regulation layers hold still while the agency layer does not. That refusal is itself the lesson, and it is dated in the text.",
+    stakes:
+      "This is the load-bearing sourcing decision for the whole MONEY series, not one lesson. The course is built on 15 U.S.C. and 12 CFR precisely because an agency's footing was contested through 2025 and 2026. If a part has been redesignated or a rule stayed, the CITATIONS change even though the rights do not, and every later course in the series inherits the same citations. A wrong part number sends an educator to a rule that is not there.",
+    needs: [
+      "The issuing body named on each of the three CFR parts, as eCFR currently prints it",
+      "Whether any part number has been redesignated, and if so the Federal Register document that did it",
+      "Whether the consumer complaint database the recourse material refers to is still operating, and under whom",
+      "The date you checked each item",
+    ],
+    where: [
+      "eCFR, for the current authority note on parts 1002, 1022 and 1026",
+      "The Federal Register, for any redesignation or stay",
+      "The agency's own site, read for what it says about itself rather than for commentary",
+    ],
+  },
+  {
+    key: "medical-debt-on-consumer-reports",
+    course: "credit-decisions",
+    lesson: "what-may-appear-and-for-how-long",
+    quote: "this course states the statutory text and nothing about the current practice",
+    title: "What medical debt currently appears on consumer reports, and under what rule?",
+    severity: "medium",
+    question:
+      "As of the date you check, what is the current position on medical debt in consumer reports: what does 15 U.S.C. 1681c permit, what rule if any restricts it further, is that rule in force or stayed, and what do the nationwide agencies say their own policies are?",
+    claim:
+      "The course quotes 15 U.S.C. 1681c(a)(6) verbatim on the naming of a medical information furnisher, then says explicitly, dated 28 August 2026, that whether particular medical debts appear at all has moved repeatedly through both voluntary industry changes and rulemaking, and that it therefore states the statutory text and nothing about current practice.",
+    stakes:
+      "Medical debt is the most common surprise item in a consumer file and the one a learner is most likely to be looking for. The lesson is honest but thin, and a dated answer would let it say something useful. It also directly affects MONEY-03, which is scheduled to carry medical debt as its strongest original material.",
+    needs: [
+      "Whether any rule restricting medical debt in consumer reports is currently in force, stayed or vacated, with the Federal Register or court document that settles it",
+      "Each nationwide agency's own published policy statement, quoted, with its date",
+      "The date you read each one",
+    ],
+    where: [
+      "The Federal Register and the relevant court docket, for the rule's status",
+      "Each nationwide consumer reporting agency's own policy page, not a news summary",
+      "15 U.S.C. 1681c on uscode.house.gov, to confirm the statute itself has not moved",
+    ],
+  },
+  {
+    key: "free-report-frequency-above-the-floor",
+    course: "credit-decisions",
+    lesson: "getting-your-own-file",
+    quote:
+      "The floor is the thing to rely on. Anything above it is a bonus that may or may not be there when you look.",
+    title: "What do the nationwide agencies currently offer above the one-per-12-months statutory floor?",
+    severity: "low",
+    question:
+      "As of the date you check, how often do the nationwide agencies actually make a file disclosure available through the centralized source, and is that a permanent published policy or a rolling offer? Also confirm the centralized source's current web address and toll-free number from a federal source.",
+    claim:
+      "The course teaches the statutory floor at 15 U.S.C. 1681j(a)(1)(A) as the reliable fact, notes that the CFPB page it cites says a consumer may be able to view reports more often, and treats that as company practice rather than a right. It cites the CFPB page with BOTH the page's own last-reviewed date of 28 August 2023 and the date this course read it, 28 August 2026.",
+    stakes:
+      "Low, because the course relies only on the floor and says so. But the cited CFPB page was three years past its own review date when it was read, and the lesson turns on the fact that 12 CFR 1022.136 requires a centralized source WITHOUT naming its address. If the address the federal source publishes ever changes, the lesson's one non-statutory fact changes with it.",
+    needs: [
+      "The centralized source's current web address and toll-free number, from a federal agency page, quoted with that page's own date",
+      "What the centralized source itself currently states about frequency",
+      "Whether the CFPB page cited in the lesson has been re-reviewed since 28 August 2023",
+    ],
+    where: [
+      "The federal consumer-facing pages that name the centralized source",
+      "The centralized source's own published terms",
+      "12 CFR 1022.136 on eCFR, to confirm the rule still does not name an address",
+    ],
+  },
+  {
+    key: "il-social-science-2022-edition",
+    course: "credit-decisions",
+    title:
+      "Illinois: did the 2022-23 Social Science edition renumber the SS.CV, SS.EC, SS.G, SS.H and SS.IS codes too?",
+    severity: "high",
+    question:
+      "In ISBE's current Illinois Learning Standards for Social Science (adopted for implementation 2022-2023, document updated 05/05/2025), do the high-school Civics (SS.CV), Economics (SS.EC), Geography (SS.G), History (SS.H) and Inquiry (SS.IS) codes still read as they do in the 2017 printing, or were they renumbered and rewritten the way the Financial Literacy sub-strand was?",
+    claim:
+      "src/lib/standards/data/il.ts now carries TWO editions at once. Its Financial Literacy framework was re-fetched on 2026-08-28 from the current document and uses SS.9-12.EC.FL codes. Every other Illinois framework in that file still cites the 2017 PDF and its SS.EC.1.9-12 style codes, and was not re-read this pass.",
+    stakes:
+      "A live risk of showing an Illinois educator a code that no longer exists, which the standards rule treats as worse than showing none. The Financial Literacy strand was renumbered, extended from six standards to nine, and had every standard rewritten, so there is direct evidence the same revision touched other strands. Until this is settled the Illinois file is internally inconsistent about which edition it speaks for.",
+    needs: [
+      "For each of SS.CV, SS.EC, SS.G, SS.H and SS.IS: whether the code format changed, and whether the verbatim text of the specific codes claimed in il.ts changed",
+      "The exact code and text of any claimed standard that moved, so the entries can be corrected rather than deleted",
+      "The current document's own version string and the date you read it",
+    ],
+    where: [
+      "https://www.isbe.net/Documents/IL-Social-Science-Standards.pdf, the file ISBE currently links",
+      "ISBE's social science standards landing page, for the authoritative current document",
+      "The 2017 printing at isbe.net/Documents/SS-Standards-9-12.pdf, for the side-by-side comparison",
+    ],
+  },
+  {
+    key: "wv-2520-4-2025-renumbering",
+    course: "credit-decisions",
+    title: "West Virginia: did the 2025 Policy 2520.4 amendment move the SS.C codes this repo already claims?",
+    severity: "high",
+    question:
+      "Under W. Va. 126CSR44D as filed July 8, 2024 and effective July 1, 2025, do the Civics course standards this repo claims (SS.C.1, SS.C.5, SS.C.13, SS.C.17, SS.C.20, SS.C.26 and the rest in src/lib/standards/data/wv.ts) still carry those code numbers and that verbatim text?",
+    claim:
+      "wv.ts now carries two editions at once. Its new Appendix A Personal Finance framework was read on 2026-08-28 from the rule effective 2025-07-01. Every SS.C entry above it was transcribed on 2026-07-19 from the 2016 document, which the current rule expressly amends and repeals.",
+    stakes:
+      "Higher than the Illinois case, because West Virginia's renumbering is PROVEN rather than suspected: the current rule runs the Civics course to SS.C.37 only, SS.C.38 and SS.C.39 no longer exist, and SS.C.30 and SS.C.31 now mean economics standards about business climate and the evolution of currency rather than personal finance. If the lower-numbered codes moved too, this repo is showing West Virginia educators standards under the wrong numbers, which is exactly the failure the standards rule exists to prevent.",
+    needs: [
+      "For each SS.C code claimed in wv.ts: the code and verbatim text as the current rule prints them",
+      "Confirmation of where the Civics course's standards now start and end",
+      "Whether the ten Appendix A personal-finance items have since moved again to 126CSR44M, the CTE policy, as the rule anticipates",
+    ],
+    where: [
+      "https://wveis.k12.wv.us/wvboe/policies/policy.php?p=2520.4 — the PDF there is an image-only scan; the same viewer serves a machine-readable DOCX at that URL with the alt parameter set to 1",
+      "The West Virginia Secretary of State's CSR reader, for the filed rule and its history",
+      "126CSR44M, for whether the personal-finance standards have landed there yet",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
