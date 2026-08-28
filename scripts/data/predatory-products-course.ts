@@ -681,6 +681,183 @@ Every figure in this lesson is arithmetic performed on numbers chosen as example
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The small-dollar loan, and where the cost lives
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "what-the-transaction-actually-is",
+      title: "5 · What the transaction actually is, in a state that licenses it",
+      section: "Section 2 · The small-dollar loan, and where the cost lives",
+      body: `A payday loan is not, legally speaking, usually called a payday loan. In Florida it is a **deferred presentment transaction**, and the name is a description: you write a cheque today, the licensee holds it, and presentment is deferred to an agreed date.
+
+**Reading one state's statute in full is worth more than reading a summary of all fifty**, because the summary loses the machinery and the machinery is the lesson. Florida's is Fla. Stat. § 560.404, read on **28 August 2026**, and it is unusually detailed.
+
+**The shape of the transaction.** The agreement must be written and signed, and executed on the day the money is handed over. The written agreement must state the provider's name and address, the date, the amount of the cheque, the length of the deferment period, the last day of that period, and a clear description of the payment obligation (Fla. Stat. § 560.404, 2025).
+
+**The three numbers that define the price.**
+- **The amount.** The face amount of the cheque may not exceed 500 dollars for a non-instalment transaction, exclusive of fees; for an instalment transaction, 1,000 dollars.
+- **The fee.** A provider "may not charge fees that exceed 10 percent of the currency or payment instrument provided" on a non-instalment transaction, and 8 percent of the outstanding balance biweekly on an instalment one. A separate verification fee is authorised by cross-reference, and the percentage caps may not be applied to it.
+- **The term.** The agreement "may not be for a term longer than 31 days or fewer than 7 days" for a non-instalment transaction.
+
+**Now do the arithmetic from Section 1 on the statute's own ceiling, not on an invented figure.** Ten percent for a 14-day term is a periodic rate of 0.10 across a period that repeats about 26.07 times in a year. That is roughly **261 percent a year** before the verification fee. At the shortest permitted term of 7 days it is 0.10 times about 52.1, roughly **521 percent**. **Same statutory cap, double the annualized figure, because the term halved.** That is the Section 1 point arriving with a real number attached.
+
+**The statute also does things a summary would never tell you.** Fees are earned at origination for a transaction paid off in 31 days or less, but an instalment transaction's fees are earned by a simple interest calculation. Prepayment penalties are prohibited. The provider must hand over the full amount of the cheque less only the permitted fees. And the agreement may not contain a hold harmless clause, a confession of judgment, a wage assignment, a waiver of claims and defences, or a waiver of any provision of the part.
+
+**And one line that connects this course to the last one.** Subsection (13) requires the provider to comply with the Regulation Z disclosure requirements at 12 CFR part 1026 and to hand the borrower a copy when the transaction is initiated. So the annual percentage rate is on the paperwork by federal law, and MONEY-01 taught you what it is. **The number you just computed by hand should be sitting on the form.**
+
+None of this describes a national rule. Florida licenses this transaction; the next lesson but one shows a state where making the same loan is a felony.
+
+:::reveal What is Florida's statutory name for a payday loan? ||| A deferred presentment transaction.
+
+:::reveal What are the fee cap and the permitted term range for a Florida non-instalment deferred presentment transaction? ||| Fees may not exceed 10 percent of the amount provided, and the term may be no longer than 31 days and no fewer than 7.
+
+:::reveal Why does the same 10 percent cap annualize to roughly 261 percent over 14 days and roughly 521 percent over 7? ||| Because the shorter period repeats about twice as many times in a year, and the annual rate is the periodic rate times the number of periods.
+
+## Vocabulary
+- **Deferred presentment transaction**: Florida's statutory name for the transaction in which a licensee accepts a cheque and agrees to defer presenting it for payment until a stated date.
+- **Face amount**: the amount written on the borrower's cheque, which Florida caps at 500 dollars for a non-instalment transaction exclusive of the permitted fees.
+- **Earned at origination**: the rule that the fee on a short deferred presentment transaction belongs to the provider when the loan is made rather than accruing over the term.
+- **Verification fee**: a separate charge authorised by cross-reference in Fla. Stat. 560.404(6)(b), to which the percentage fee caps do not apply.
+
+## Sources
+Fla. Stat. § 560.404. (2025). *Requirements for deferred presentment transactions*. The Florida Senate. https://www.flsenate.gov/Laws/Statutes/2025/560.404
+
+15 U.S.C. § 1606. (n.d.). *Determination of annual percentage rate*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1606`,
+    },
+    {
+      slug: "the-rollover-is-the-product",
+      title: "6 · The first loan is not where the money is",
+      section: "Section 2 · The small-dollar loan, and where the cost lives",
+      body: `A single two-week loan repaid on the due date costs the fee, once. That transaction is not the business, and the business knows it.
+
+**The cost lives in the renewal.** A loan that is not repaid at the end of the term is refinanced into a new one for another fee, and the balance that produced the fee never falls. This is the mechanism the entire small-dollar market runs on, and you do not have to take a critic's word for it, because two federal courts have described it in their own words.
+
+**The Supreme Court, in a case about remedies, described the mechanism in one sentence.** In *AMG Capital Management, LLC v. FTC*, decided 22 April 2021, the Court set out what the district court had found about the defendants' payday lending:
+
+> "The companies' written explanations seemed to say that customers could normally repay a loan by making a single payment... But in fine print the explanations said that the loan would be automatically renewed unless the customer took affirmative steps to opt out." (*AMG Capital Management, LLC v. FTC*, 2021)
+
+**Read what the default is doing there.** Repayment is the exception you have to ask for. Renewal is what happens if you do nothing.
+
+**The criminal case against the same operator supplies the arithmetic**, and it is the sharpest number in this course. On 13 October 2017, after a five-week trial in the Southern District of New York, a jury found Scott Tucker and Timothy Muir **guilty on all 14 counts**, including racketeering, wire fraud, money laundering and Truth in Lending Act offences. Tucker was sentenced on 5 January 2018 to 200 months in prison, Muir to 84 (U.S. Attorney's Office, S.D.N.Y., 2018).
+
+The Department of Justice's account of what the jury heard is worth reading slowly. The paperwork carried a proper Truth in Lending Act disclosure box. For a 500 dollar loan, that box stated a finance charge of **150 dollars** and a total of payments of **650 dollars**. The repayment schedule was then structured so that each payday the lender withdrew the entire interest payment due and **left the principal untouched**, repeating payday after payday, applying nothing to principal until at least the fifth payday. On the government's figures, for that same 500 dollar borrower the finance charge was in fact **1,425 dollars**, and the total of payments **1,925 dollars** (U.S. Attorney's Office, S.D.N.Y., 2018).
+
+**650 disclosed. 1,925 taken. Same loan, same borrower, same box.** The gap is not the interest rate. The gap is the renewal.
+
+**Which is why the ban is the tell.** Section 1 read 10 U.S.C. § 987(e) as a description of the market: the first practice on that list is extending new credit to roll over or refinance existing credit from the same creditor. Florida's statute does the same thing for everybody in the state. A provider "may not engage in the rollover of a deferred presentment agreement", may not redeem, extend or consolidate one with the proceeds of another, and may not lend to somebody who already has an outstanding transaction with any provider or terminated one within the previous 24 hours, which is checked against a statewide database (Fla. Stat. § 560.404, 2025). Florida also requires a 60-day grace period, at no additional charge, for a borrower who says in person that they cannot repay.
+
+**A rule against a practice is evidence that the practice existed.** Three separate legislatures wrote the same prohibition, which is a stronger statement about how the product works than any figure a critic could offer.
+
+:::reveal In the Supreme Court's description, what happened if a borrower did nothing at the end of the term? ||| The loan was automatically renewed. Repayment in a single payment required taking affirmative steps to opt out.
+
+:::reveal What did the jury in the Southern District of New York find on 13 October 2017? ||| That Tucker and Muir were guilty on all 14 counts, including racketeering, wire fraud, money laundering and Truth in Lending Act offences.
+
+:::reveal On the government's figures, what was the disclosed total of payments on a 500 dollar loan, and what was actually taken? ||| 650 dollars was disclosed; 1,925 dollars was the actual total, with a finance charge of 1,425 rather than 150.
+
+:::reveal What does Florida's rollover ban tell you about the market it was written for? ||| That the practice existed and was worth prohibiting, which is a stronger statement about how the product works than an outside estimate.
+
+## Vocabulary
+- **Rollover**: refinancing an unpaid short-term loan into a new one for a further fee, so that a new charge is earned while the principal balance does not fall.
+- **Interest-only withdrawal**: the repayment structure the Tucker jury heard described, in which each scheduled debit took the whole periodic charge and applied nothing to principal.
+- **Total of payments**: the Truth in Lending Act disclosure stating what the borrower will pay in all, which the government proved had been understated in that case.
+- **Grace period**: Florida's requirement of a 60-day extension at no additional charge for a borrower who states in person that they cannot repay.
+
+## Sources
+AMG Capital Management, LLC v. Federal Trade Commission, 593 U.S. 67. (2021). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/supremecourt/text/19-508
+
+Fla. Stat. § 560.404. (2025). *Requirements for deferred presentment transactions*. The Florida Senate. https://www.flsenate.gov/Laws/Statutes/2025/560.404
+
+United States Attorney's Office, Southern District of New York. (2018, January 5). *Scott Tucker sentenced to more than 16 years in prison for running $3.5 billion unlawful internet payday lending enterprise*. U.S. Department of Justice. https://www.justice.gov/usao-sdny/pr/scott-tucker-sentenced-more-16-years-prison-running-35-billion-unlawful-internet-payday`,
+    },
+    {
+      slug: "find-your-states-rule",
+      title: "7 · Two states, opposite answers, and how to find yours",
+      section: "Section 2 · The small-dollar loan, and where the cost lives",
+      body: `The last two lessons were about Florida. Cross into New York and the same transaction is a felony.
+
+**New York Penal Law § 190.40**, criminal usury in the second degree, read on **28 August 2026**:
+
+> "A person is guilty of criminal usury in the second degree when, not being authorized or permitted by law to do so, he knowingly charges, takes or receives any money or other property as interest on the loan or forebearance of any money or other property, at a rate exceeding twenty-five per centum per annum or the equivalent rate for a longer or shorter period." (N.Y. Penal Law § 190.40, n.d.)
+
+It is a class E felony. **Notice the drafting.** The statute says "or the equivalent rate for a longer or shorter period", which is the Section 1 annualization written into criminal law. A fourteen-day charge cannot escape a per-annum ceiling by pointing at its own term, because the ceiling is defined to follow it.
+
+**So: 10 percent for 14 days is a licensed transaction in Florida and, absent an authorisation, criminal in New York.** Both statements are true right now. Neither is the national position, because there is no national position.
+
+**This is exactly why this course prints no table.** A table would have to be maintained across 51 jurisdictions, would go stale silently, and would be believed anyway. What travels is the method.
+
+**How to find the rule that governs you, in four steps.**
+
+1. **Name the transaction the way your state names it.** Deferred presentment, deferred deposit, small loan, short-term loan, payday loan, title pledge, title pawn, consumer instalment loan. The statute is filed under the state's own noun, not under yours.
+2. **Go to the state's own code, not to a summary.** Every state publishes its statutes free. Search the code for the noun, and for the chapter that licenses the lender.
+3. **Read four things**, because they are the four that decide the price: the **maximum amount**, the **maximum fee or rate**, the **permitted term**, and **whether renewal is allowed**. Florida's answers are 500 dollars, 10 percent, 7 to 31 days, and no. Those four answers are the product.
+4. **Then find the licensing regulator**, which is usually a department of financial institutions, banking, or financial regulation. It publishes a licence lookup. **A lender that is not on it is not licensed**, which changes what you are dealing with entirely, and it is checkable in about a minute.
+
+**One more question worth asking, because it explains an internet offer.** If your state's ceiling is low and you are being offered a loan anyway, ask what law the lender says applies. The Tucker case turned on precisely that: the enterprise arranged for tribes to appear as owners so that state enforcement would meet a sovereign immunity claim, and the Department of Justice's account records that several state courts dismissed enforcement actions on that basis before the jury found the arrangement was a fiction (U.S. Attorney's Office, S.D.N.Y., 2018). **Which law applies is a real question with a real answer, and it is the first one to ask about an offer that your state appears to forbid.**
+
+:::reveal What does New York Penal Law 190.40 make criminal, and at what rate? ||| Knowingly charging, taking or receiving interest above twenty-five per centum per annum, or the equivalent rate for a longer or shorter period, without authorisation.
+
+:::reveal Why does the phrase or the equivalent rate for a longer or shorter period matter? ||| Because it writes annualization into the criminal statute, so a short-term charge cannot escape a per-annum ceiling by pointing at its own term.
+
+:::reveal What are the four features of a state's rule that decide the price of a small-dollar loan? ||| The maximum amount, the maximum fee or rate, the permitted term, and whether renewal is allowed.
+
+:::reveal What question should you ask about an offer your own state appears to forbid? ||| Which law the lender says applies, and whether the lender holds a licence from your state's regulator.
+
+## Vocabulary
+- **Criminal usury**: charging interest above a rate that a state's penal law makes a crime, as distinct from a rate that is merely unenforceable.
+- **The equivalent rate for a longer or shorter period**: New York's statutory phrase that applies its per-annum ceiling to a charge stated over any other term.
+- **Licence lookup**: the public register a state financial regulator publishes, on which a licensed lender appears and an unlicensed one does not.
+- **Choice of law**: the question of which jurisdiction's rules govern a transaction, which is the first thing to establish about an offer your own state appears to forbid.
+
+## Sources
+N.Y. Penal Law § 190.40. (n.d.). *Criminal usury in the second degree*. The New York State Senate. https://www.nysenate.gov/legislation/laws/PEN/190.40
+
+Fla. Stat. § 560.404. (2025). *Requirements for deferred presentment transactions*. The Florida Senate. https://www.flsenate.gov/Laws/Statutes/2025/560.404
+
+United States Attorney's Office, Southern District of New York. (2018, January 5). *Scott Tucker sentenced to more than 16 years in prison for running $3.5 billion unlawful internet payday lending enterprise*. U.S. Department of Justice. https://www.justice.gov/usao-sdny/pr/scott-tucker-sentenced-more-16-years-prison-running-35-billion-unlawful-internet-payday`,
+    },
+    {
+      slug: "the-title-loan-and-the-car",
+      title: "8 · The same arithmetic, with the car attached",
+      section: "Section 2 · The small-dollar loan, and where the cost lives",
+      body: `Add collateral to a small-dollar loan and two things change. The price usually falls a little. The consequence of not paying changes completely.
+
+**A vehicle title loan is a short-term loan secured by the title to a car the borrower already owns outright or nearly so.** Section 1 established why that is a different transaction from a car loan: 32 CFR § 232.3(f) excludes credit that finances the purchase of the vehicle securing it, and a title loan finances nothing. It converts a car you own into cash, and pledges the car.
+
+**Two states, again, and the gap between them is enormous.**
+
+**Virginia** licenses motor vehicle title lending and, under Va. Code § 6.2-2216, "Authorized fees and charges", a licensee may charge only a listed set of items. Interest is capped at **a simple annual rate not to exceed 36 percent**. A monthly maintenance fee is limited to the lesser of 8 percent of the original loan amount or 15 dollars, and it may not be added to the interest-bearing balance. A returned payment fee is capped at 25 dollars, a late charge at 20, and the costs of repossession and sale at 5 percent of the original loan. Interest stops accruing when the vehicle is repossessed, or 60 days after default, unless the borrower conceals the vehicle. The borrower is not liable for vehicle storage fees (Va. Code § 6.2-2216, n.d.). **That is the same 36 percent figure Congress chose for servicemembers**, applied by one state to everybody.
+
+**Georgia** reaches the transaction through its pawnbroker statute instead, and the numbers are different by an order of magnitude. Under O.C.G.A. § 44-12-131, all pawn transactions run for 30-day periods and may be extended for further 30-day periods. During the first 90 days a pawnbroker may charge, for each 30-day period, interest and pawnshop charges "which together equal no more than 25 percent of the principal amount advanced". Beyond 90 days the per-period ceiling falls to 12.5 percent. The statute also forbids leasing the vehicle back to the pledgor during the transaction, and provides for the pawnbroker to take possession of the vehicle on default (O.C.G.A. § 44-12-131, n.d.).
+
+**Do the Section 1 conversion on that ceiling.** Twenty-five percent for a 30-day period, over roughly 12.17 such periods, is about **304 percent a year** for the first 90 days. Twelve and a half percent per period is about **152 percent** after that. Set beside Virginia's 36 percent simple annual, on the same collateral, for the same purpose. **Neither state is doing anything hidden. They made different choices, and both wrote them down.**
+
+**Now the part the arithmetic does not capture.** With an unsecured loan the worst case is a debt, a lawsuit, and a mark on a consumer report. With a title loan the worst case is that the car goes. Georgia's statute contemplates the pawnbroker taking possession without court involvement where that can be done peacefully. Virginia's caps the cost of repossession and sale and stops the interest clock at it, which is a rule about repossession rather than a rule against it. **For a household whose income depends on driving to work, the vehicle is not collateral in the ordinary sense: it is the thing that produces the money the loan is repaid from.**
+
+That is the whole reason 10 U.S.C. § 987(e) forbids taking a vehicle title as security from a covered servicemember. Congress did not cap the price of that transaction. It removed the security.
+
+:::reveal What distinguishes a vehicle title loan from a car loan? ||| A title loan is secured by a vehicle the borrower already owns; it finances nothing, and the purchase-money exclusion at 32 CFR 232.3(f) does not reach it.
+
+:::reveal What interest ceiling does Va. Code 6.2-2216 place on a motor vehicle title loan? ||| A simple annual rate not to exceed 36 percent, plus a short closed list of other permitted charges.
+
+:::reveal What does O.C.G.A. 44-12-131 permit a pawnbroker to charge for each 30-day period during the first 90 days? ||| Interest and pawnshop charges together equal to no more than 25 percent of the principal amount advanced.
+
+:::reveal Why is a car a different kind of collateral for many borrowers? ||| Because it produces the income the loan is repaid from, so losing it removes the means of repayment rather than merely settling the debt.
+
+## Vocabulary
+- **Vehicle title loan**: short-term credit secured by the certificate of title to a vehicle the borrower already owns, rather than by a vehicle the credit is buying.
+- **Pawn transaction**: Georgia's statutory frame for the same economic transaction, run in 30-day periods with its own ceiling on interest and pawnshop charges.
+- **Maintenance fee**: Virginia's separately capped monthly charge, limited to the lesser of 8 percent of the original loan or 15 dollars and excluded from the interest-bearing balance.
+- **Repossession**: taking the secured vehicle on default, which Georgia's statute contemplates without court involvement where it can be done peacefully.
+
+## Sources
+Va. Code § 6.2-2216. (n.d.). *Authorized fees and charges*. Virginia Law, Virginia General Assembly. https://law.lis.virginia.gov/vacode/title6.2/chapter22/section6.2-2216/
+
+O.C.G.A. § 44-12-131. (n.d.). *Duration of pawn transactions; lease-back of motor vehicles prohibited; taking possession of motor vehicles; restrictions on interest, fees, or charges*. Onecle. https://law.onecle.com/georgia/title-44/44-12-131.html
+
+32 CFR § 232.3. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/32/232.3
+
+10 U.S.C. § 987. (n.d.). *Terms of consumer credit extended to members and dependents: limitations*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/10/987`,
+    },
   ],
 };
 
