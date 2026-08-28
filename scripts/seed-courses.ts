@@ -232,6 +232,8 @@ import { WRITTEN_BY_HIMSELF_COURSE } from "./data/written-by-himself-course";
 import { THE_MATCH_COURSE } from "./data/the-match-course";
 import { TERRITORIES_COURSE } from "./data/territories-course";
 import { THE_COUNTY_COMMITTEE_COURSE } from "./data/the-county-committee-course";
+import { CREDIT_DECISIONS_COURSE } from "./data/credit-decisions-course";
+import { BANKING_AND_THE_UNBANKED_COURSE } from "./data/banking-and-the-unbanked-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2295,6 +2297,92 @@ async function main() {
       seriesTitle: "The Land Warrant",
       seriesOrder: 2,
       seriesCode: "WARRANT",
+      seriesPosition: "02",
+    },
+    // MONEY-01 · Credit, and the Decisions Made About You (Money & Property). Source brief:
+    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md, sections 4.2, 7, 10.
+    // FIRST COURSE OF A NEW SERIES, `personal-money`, code MONEY. Tier 0. NO migration - pnpm
+    // seed:courses.
+    //
+    // WHY THIS EXISTS AT ALL, IN ONE FACT: nineteen of the fifty-one jurisdictions in
+    // src/lib/standards/data/ carry a `notClaimed` entry whose stated reason is that this catalog
+    // teaches no personal finance, and `notClaimed` is published to teachers as loudly as the
+    // claims. Texas's read "It also does no personal-finance instruction", so a Texas teacher
+    // searching this app for a personal-finance resource was told, in the app's own words, that it
+    // had none. This course is the first answer to that, and the standards work in the same branch
+    // is half its point.
+    //
+    // THE SERIES, DECLARED HERE SO A LATER AUTHOR INHERITS IT RATHER THAN INVENTS IT:
+    //   MONEY-01  Credit, and the Decisions Made About You  (this course)
+    //   MONEY-02  Banking, and Who Has No Bank              deposit insurance, fees, substitutes
+    //   MONEY-03  Debt, and What a Collector Must Prove     validation, student loans, medical debt
+    //   MONEY-04  Predatory Products, Priced                the fee-to-APR conversion, the MLA cap
+    //   MONEY-05  Filing Your Own Taxes                     domestic only, hands off to abroad
+    //   MONEY-06  Housing: the Lease and the Loan Estimate  the standardized federal forms
+    //   MONEY-07  Retirement and Investing Accounts         highest advice risk, so it ships last
+    //   MONEY-99  Read Your Own Record                      the series capstone, taken last
+    // STARTS AT 01, NOT 00, for two reasons and the second is the real one. Rule 8 of
+    // check-series-codes fails a lone `00` because it implies courses that do not exist. And a `00`
+    // promises a METHOD course, which `who-has-the-power` and `what-a-business-entity-is` already
+    // are; a third would be filler with a badge on it. WARRANT solved this identically.
+    // THE PREFIX IS `MONEY` BECAUSE `CREDIT` IS TAKEN, and the collision is semantic before it is
+    // mechanical: `CREDIT` belongs to "Credit: Who Gets Named", a series about ATTRIBUTION and the
+    // patent record, so `CREDIT-03` beside `CREDIT-01` would tell a learner that a credit-report
+    // course is about who gets named on a patent. Guard rule 7 would refuse the duplicate prefix
+    // in any case.
+    //
+    // NOT ADVICE, AND THAT IS ENFORCED IN PROSE RATHER THAN ONLY IN A REGISTRY. `cert-disclaimer.ts`
+    // does not generalise here: its one sentence is about affiliation with a named certifying body,
+    // and this course names none. It needs to disclaim ADVICE, which is a different speech act, so
+    // it follows the `surplus-funds-basics` posture instead and says it in prose in three separate
+    // lessons (Section 1 lesson 1, Section 5 lesson 3, and the capstone), dates every figure IN the
+    // lesson, and publishes no summary table of anything that moves.
+    {
+      slug: "credit-decisions",
+      course: CREDIT_DECISIONS_COURSE,
+      category: "Money & Property",
+      seriesSlug: "personal-money",
+      seriesTitle: "Your Money, and Who Decides",
+      seriesOrder: 1,
+      seriesCode: "MONEY",
+      seriesPosition: "01",
+    },
+    // MONEY-02 · "Banking, and Who Has No Bank" (Money & Property). Second course in the
+    // `personal-money` series ("Your Money, and Who Decides"), from
+    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.4. Tier 0.
+    // NO migration - pnpm seed:courses.
+    //
+    // THE CATALOG HAD NO PERSONAL FINANCE AT ALL, and it said so about itself: nineteen of the
+    // fifty-one mapped jurisdictions carried a `notClaimed` entry whose stated reason was that this
+    // catalog teaches no personal finance. This course converts five of those rejections into
+    // claims (WV SS.C.38, GA SSEPF3 and SSEPF9, IL SS.EC.FL.2 and .4, TX 113.49(c)(6), WY SS12.3.4),
+    // each rewritten as SUPERSEDED rather than deleted.
+    //
+    // THE SPINE: an account is a product with a price and two gates, and both fall hardest on the
+    // smallest balances. The identity gate is 31 CFR 1020.220, which names four items and does NOT
+    // name a driver's license or a Social Security number. The second gate is the one nobody knows
+    // exists: ChexSystems and Early Warning Services are consumer reporting agencies under the Fair
+    // Credit Reporting Act, so a denied applicant holds federal rights (name of the agency, a free
+    // copy, a dispute) that the denial letter is required to tell them about.
+    //
+    // THE ALTERNATIVE-SERVICES ECONOMY IS THE SUBJECT, NOT A FOOTNOTE. Money orders, check cashing,
+    // prepaid cards and payment apps are taught as a priced market entered for reasons the FDIC
+    // itself collected, with the fee schedules dated. Credit reports and scores belong to MONEY-01
+    // and are not taught here; the credit union as an ENTITY belongs to Cooperatives.
+    //
+    // EVERY EXTERNAL FIGURE WAS READ ON 2026-08-28 AND CARRIES THAT DATE IN THE LESSON. The anchor
+    // is the 2023 FDIC National Survey (published November 2024), which is the most recent PUBLISHED
+    // edition: the survey is biennial, released in the fall of even-numbered years, and the 2025
+    // report was not out when this shipped. The course says so. The CFPB's 2024 overdraft rule is
+    // taught as NULLIFIED by Public Law 119-10 (9 May 2025), never in the present tense.
+    {
+      slug: "banking-and-the-unbanked",
+      course: BANKING_AND_THE_UNBANKED_COURSE,
+      category: "Money & Property",
+      seriesSlug: "personal-money",
+      seriesTitle: "Your Money, and Who Decides",
+      seriesOrder: 2,
+      seriesCode: "MONEY",
       seriesPosition: "02",
     },
   ]) {

@@ -32,6 +32,9 @@
 // its column geometry and every benchmark verified to read as clean, sensible English before use.
 // Wyoming's tribal-sovereignty sub-benchmarks (the .a codes, e.g. SS12.1.1.a, SS12.1.5.a) and the
 // culture standard are published in notClaimed — this catalog does not teach them.
+// RE-FETCHED 2026-08-28 from the same WDE PDF when MONEY-02, Banking and Who Has No Bank, made
+// SS12.3.4 claimable. That benchmark had been rejected with the words "the catalog teaches no
+// financial literacy"; the rejection is rewritten as superseded rather than deleted.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { COMMON_CORE_ELA } from "../shared/common-core-ela";
@@ -73,7 +76,8 @@ export const JURISDICTION: JurisdictionFile = {
       name: "Wyoming Social Studies Content and Performance Standards",
       publisher: "Wyoming Department of Education (WDE)",
       version: "2014 with 2018 Additions · High School (Grade 12) band",
-      fetchedOn: "2026-07-19",
+      // Re-fetched 2026-08-28 from the same WDE PDF when SS12.3.4 was added.
+      fetchedOn: "2026-08-28",
       sourceUrl: WY_SS,
       adoption:
         "Wyoming's bespoke K-12 social-studies document. High-school benchmarks are coded SS12.<standard>.<benchmark> under the “Upon Graduation / Grade 12” column of a four-column grade-band table. Six content standards: (1) Citizenship, Government, and Democracy; (2) Culture and Cultural Diversity; (3) Production, Distribution, and Consumption; (4) Time, Continuity, and Change; (5) People, Places, and Environments; (6) Technology, Literacy, and Global Connections. SS12.1.5 (structures of both the U.S. and Wyoming Constitutions) is the Wyoming flagship's home. The document's Wind River / tribal-sovereignty sub-benchmarks (the .a codes) and its Culture standard are not taught by this catalog and are published in notClaimed.",
@@ -149,6 +153,22 @@ export const JURISDICTION: JurisdictionFile = {
           claimIds: ["bvc.value-chain-earnings", "bvc.commodity-trap"],
           coverage: "partial",
           note: "Partial: global economic interdependence is the series' spine — who captures value along global commodity chains, and why producing regions stay poor (the commodity trap). The technology-as-driver half the standard leads with is not the focus.",
+        },
+        // SS12.3.4 is NOT here. It sits in its own framework below, with its own fetch date; see
+        // the comment there for why.
+        // — Added 2026-08-28 when MONEY-02 shipped. This benchmark was rejected outright in the July
+        //   2026 pass with the words "the catalog teaches no financial literacy", which was true
+        //   then; the notClaimed entry now records the supersession rather than being deleted.
+        {
+          code: "SS12.3.4",
+          text: "Explain how financial and government institutions make economic decisions (e.g., banking, investment, credit, regulation, and debt).",
+          claimIds: [
+            "money.consumer-deposit-accounts",
+            "money.consumer-financial-protection-mechanisms",
+            "money.unbanked-and-alternative-services",
+          ],
+          coverage: "partial",
+          note: "Partial, and it is the banking-and-regulation half of Wyoming's own illustrative list. HOW A FINANCIAL INSTITUTION DECIDES is taught as a mechanism rather than as a description: the identity rule it must satisfy before opening an account (31 CFR 1020.220), the deposit-screening report it consults and the federal statute that governs that report, and the fee structure it sets and must disclose. HOW A GOVERNMENT INSTITUTION DECIDES is taught from three worked cases: the FDIC and the NCUA on insurance, the CFPB writing the overdraft opt-in and prepaid disclosure rules, and Congress nullifying an agency rule under the Congressional Review Act, which is a decision about banking made by a body that is not a bank. Investment, credit and debt, the other three examples Wyoming names, are not taught here.",
         },
         // — Standard 4: Time, Continuity, and Change (History) —
         {
@@ -241,6 +261,51 @@ export const JURISDICTION: JurisdictionFile = {
         },
       ],
     },
+
+    // ── Standard 3 benchmark SS12.3.4, re-read 2026-08-28 ──────────────────
+    //
+    // WHY THIS IS ITS OWN FRAMEWORK AND NOT ANOTHER ENTRY IN wy-social-studies. Same document, same
+    // page, different DAY. The framework above was transcribed 2026-07-19 and this benchmark on
+    // 2026-08-28, when MONEY-01 (`credit-decisions`) made it claimable. `fetchedOn` is rendered to
+    // teachers as provenance, so folding this entry into the framework above would force a choice
+    // between backdating a fetch that did not happen and restamping thirty entries nobody re-read.
+    //
+    // THIS SUPERSEDES A REJECTION. SS12.3.4 previously sat in this file's notClaimed list, with the
+    // stated reason "the catalog teaches no financial literacy". That reason has stopped being
+    // true. The rejection below is rewritten rather than deleted.
+    //
+    // AND IT IS `partial`, NOT `full`, ON ONE WORD. The benchmark's own verb clause — explain how
+    // financial and government institutions make economic decisions — is what MONEY-01 is, end to
+    // end. Of the five parenthetical examples it teaches banking, credit, regulation and debt.
+    // It does NOT teach investment, and the honest call is to say so on the entry rather than to
+    // treat an "e.g." list as decorative. A teacher reading this should know which of the five they
+    // will still have to cover.
+    {
+      id: "wy-social-studies-financial-institutions",
+      subject: "Social Studies",
+      name: "Wyoming Social Studies Content and Performance Standards — Standard 3 benchmark SS12.3.4",
+      publisher: "Wyoming Department of Education (WDE)",
+      version: "2014 with 2018 Additions · High School (Grade 12) band",
+      fetchedOn: "2026-08-28",
+      sourceUrl: WY_SS,
+      adoption:
+        "Wyoming's Social Studies Content Standard 3, Production, Distribution, and Consumption, asks that students \"describe the influence of economic factors on societies and make decisions based on economic principles\". Its Upon Graduation benchmark SS12.3.4 is the only standard in any of the nine jurisdictions re-read this pass whose subject is institutional decision-making rather than personal money management, which is why it is the closest fit in the set for MONEY-01 (`credit-decisions`). Wyoming prints no indicators under the benchmark; the alphanumeric strings beside it in the table cell are cross-references to Wyoming's own ELA and Civics standards. Re-read 2026-08-28 from the WDE PDF; WDE's review cycle for social studies is scheduled for 2026-2027 and this set remains in effect until a replacement is adopted.",
+      standards: [
+        {
+          code: "SS12.3.4",
+          text: "Explain how financial and government institutions make economic decisions (e.g., banking, investment, credit, regulation, and debt).",
+          claimIds: [
+            "money.adverse-action-notice",
+            "money.credit-discrimination-and-recourse",
+            "money.how-financial-rules-are-made",
+            "money.credit-score-as-model",
+            "money.who-may-read-the-file",
+          ],
+          coverage: "partial",
+          note: "Partial on one word, and it is worth being precise about which. The benchmark's own clause, explaining how financial and government institutions make economic decisions, is exactly what the course teaches: how a lender reaches a credit decision, what data feeds it, which government institutions set the rules (the Fair Credit Reporting Act, the Equal Credit Opportunity Act with Regulation B, and the Truth in Lending Act), and what recourse the decision carries. Of the benchmark's five parenthetical examples the course teaches banking, credit, regulation and debt. It does not teach INVESTMENT, at all, which is a deliberate exclusion and the reason this is not scored as full coverage.",
+        },
+      ],
+    },
   ],
 
   // Standards we CONSIDERED AND REJECTED — published as loudly as the claims.
@@ -267,7 +332,11 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "The economics and history benchmarks we checked and rejected.",
-      body: "SS12.3.4 (how financial and government institutions make economic decisions — banking, investment, credit, regulation, debt; the catalog teaches no financial literacy), SS12.3.5 (how values and beliefs influence micro/macroeconomic decisions), and SS12.4.3 (given a current event, critique the actors and hypothesize how it would have played out in another country — not this catalog's method) are not genuinely taught, so we do not claim them.",
+      body: "SS12.3.5 (how values and beliefs influence micro/macroeconomic decisions) and SS12.4.3 (given a current event, critique the actors and hypothesize how it would have played out in another country — not this catalog's method) are not genuinely taught, so we do not claim them. SS12.3.4 used to sit in this list too; see the entry below.",
+    },
+    {
+      heading: "SS12.3.4 — this rejection has been superseded, as a partial.",
+      body: "Until 2026-08-28 this list rejected SS12.3.4 with the reason that the catalog teaches no financial literacy. It now teaches one course of it, MONEY-01, on how a consumer credit decision is made, and SS12.3.4 is claimed above as a partial. The benchmark's own clause about how financial and government institutions make economic decisions is met in full; four of its five parenthetical examples are taught (banking, credit, regulation, debt) and the fifth, investment, is not taught at all and will not be until MONEY-07 ships. We record that as partial rather than full because a teacher planning against this benchmark needs to know which fifth of it they still have to cover, and because treating an \"e.g.\" list as decorative is how a claim gets quietly widened. SS12.3.5 remains rejected on its own terms: the ECOA prohibited-bases material and the redlining history in the catalog do show beliefs shaping who received credit, but the course does not deliver that as a micro-and-macroeconomic decision framework, and macroeconomics is an explicit exclusion.",
     },
     {
       heading: "SS12.5.3 and SS12.6.3 — sense of place, and digital production.",

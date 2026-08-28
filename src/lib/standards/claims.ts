@@ -4880,6 +4880,208 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "9 · Error, uncertainty, and how precise to be",
     ],
   },
+
+  // ══ MONEY-01 · Credit, and the Decisions Made About You ══════════════════════
+  //
+  // THE POINT OF THESE CLAIMS, STATED ONCE. Nineteen jurisdiction files in data/ carried a
+  // `notClaimed` entry whose stated reason was that this catalog teaches no personal finance, and
+  // notClaimed is published to teachers exactly as loudly as a claim. These are the first entries
+  // that make any of those rejections answerable.
+  //
+  // THEY ARE DELIBERATELY NARROW, and the narrowness is the honest part. `credit-decisions` teaches
+  // the consumer-credit DECISION: the file, who may read it, the score as a modelled prediction, the
+  // adverse action notice, the dispute, and the annual percentage rate. It teaches NO budgeting, NO
+  // saving plan, NO investing, NO insurance, NO taxes, NO careers, and NO macroeconomics. Every
+  // state's personal-finance strand bundles credit together with exactly those excluded topics, so
+  // most of those codes are honestly `partial` and several are honestly not claimed at all. Do not
+  // widen one of these claims to make a state's strand look fuller: the leaf codes are what fit.
+  {
+    id: "money.consumer-report-contents",
+    claim:
+      "Teaches what a consumer report is in statute, what may appear in it and for how long, and who supplies the items.",
+    courseSlugs: ["credit-decisions"],
+    lessons: [
+      // The FCRA's own definitions of "consumer report", "consumer reporting agency" and the
+      // nationwide agency, read for what they include and who is paying for them.
+      "3 · The lender is not reading you, it is reading a file",
+      // 15 U.S.C. 1681c(a) in full: ten years, seven years, the catch-all, and the fact that each
+      // period runs from a stated event rather than from today. Plus the furnisher accuracy duty.
+      "5 · What may appear in the file, and for how long",
+    ],
+  },
+  {
+    id: "money.who-may-read-the-file",
+    claim:
+      "Teaches the closed statutory list of circumstances under which a consumer report may be furnished, and to whom.",
+    courseSlugs: ["credit-decisions"],
+    lessons: [
+      // 15 U.S.C. 1681b(a) quoted, including the four words that close it, and the point that
+      // lenders, employers and insurers are three separately listed purposes.
+      "6 · Who is allowed to look, and the four words that end the list",
+    ],
+  },
+  {
+    id: "money.credit-score-as-model",
+    claim:
+      "Teaches that a credit score is a statutorily defined statistical prediction rather than a measurement, that models are plural, and what must be disclosed with one.",
+    courseSlugs: ["credit-decisions"],
+    lessons: [
+      // The 15 U.S.C. 1681g(f)(2)(A) definition taken apart clause by clause.
+      "9 · A score is a prediction, and the statute says so",
+      // Why the disclosure regime only makes sense in a world of many models, and why this course
+      // prints no model names or version numbers.
+      "10 · There is no such thing as your credit score",
+      // The four key factors, capped, and why they are the actionable half.
+      "11 · The four reasons beside the number are the useful part",
+    ],
+  },
+  {
+    id: "money.adverse-action-notice",
+    claim:
+      "Teaches the adverse action notice field by field, including the requirement that reasons be specific and state the principal reasons.",
+    courseSlugs: ["credit-decisions"],
+    lessons: [
+      // 12 CFR 1002.9(a)(2) counted item by item, and 1002.9(b)(2), which names a bare reference to
+      // internal standards or a failed score cutoff as INSUFFICIENT.
+      "13 · Read your own adverse action notice",
+      // The FCRA half at 15 U.S.C. 1681m(a): the score, the agency's details, the disclaimer, and
+      // the free-copy and dispute rights. Plus the risk-based pricing notice.
+      "14 · The second notice on the same page",
+    ],
+  },
+  {
+    id: "money.credit-discrimination-and-recourse",
+    claim:
+      "Teaches the bases on which a creditor may not discriminate in any aspect of a credit transaction, and how a stated reason makes that prohibition testable.",
+    courseSlugs: ["credit-decisions"],
+    lessons: [
+      // 15 U.S.C. 1691(a) and 12 CFR 1002.2(z) verbatim, set beside the federal farm credit gate
+      // that had to publish its eligibility standard in statute.
+      "15 · A gate that has to state a standard",
+    ],
+  },
+  {
+    id: "money.borrower-rights-dispute",
+    claim:
+      "Teaches a borrower's rights over the record a credit decision is made from: obtaining it, disputing it, and the deadlines both carry.",
+    courseSlugs: ["credit-decisions"],
+    lessons: [
+      // 15 U.S.C. 1681i(a): completeness or accuracy, free of charge, 30 days from receipt, 5
+      // business days to the furnisher, and the equal treatment of unverifiable and false.
+      "17 · The dispute, and the clock it starts",
+      // 15 U.S.C. 1681s-2(b)(1): investigate, review, report back, and the three named remedies.
+      "18 · The furnisher has duties too, and that is the leverage",
+      // 15 U.S.C. 1681j(a)(1)(A) and 12 CFR 1022.136, including the fact that the rule requires a
+      // centralized source without naming its address.
+      "19 · Getting your own file, and the site the regulation does not name",
+    ],
+  },
+  {
+    id: "money.cost-of-credit-apr",
+    claim:
+      "Teaches the annual percentage rate as the disclosed standardized number that makes two credit offers comparable, with the statutory computation worked.",
+    courseSlugs: ["credit-decisions"],
+    lessons: [
+      // TILA's "compare more readily" purpose, the open-end formula at 15 U.S.C. 1606(a)(2) worked
+      // arithmetically, and the actuarial method named for the closed-end case.
+      "21 · The number that exists so two offers can be compared",
+    ],
+  },
+  {
+    id: "money.credit-access-constraint",
+    claim:
+      "Teaches how the timing of income against obligations creates the need for credit, and how a thin or absent file constrains access regardless of conduct.",
+    courseSlugs: ["credit-decisions"],
+    lessons: [
+      // Cash-flow timing as the ordinary failure, taught as a structural mismatch rather than as a
+      // spending fault, and explicitly NOT as budgeting instruction.
+      "1 · Before it is about scores, it is about a calendar",
+      // Credit invisibility: a model with no data declines rather than approves, and a payment
+      // history with no reporting channel produces no record.
+      "7 · The file that does not exist",
+    ],
+  },
+  {
+    id: "money.how-financial-rules-are-made",
+    claim:
+      "Teaches the statute, regulation and agency layers behind consumer credit rules, and how to check any claim about those rights against the primary source.",
+    courseSlugs: ["credit-decisions"],
+    lessons: [
+      // Which layer a claim comes from, and why this course dates the agency layer rather than
+      // describing it.
+      "22 · Three layers, and only two of them hold still",
+      // The capstone, which runs the whole mechanism once on the learner's own record.
+      "23 · Capstone: read your own record",
+    ],
+  },
+  // ══ Personal money (MONEY series) ═══════════════════════════════════════════
+  // The catalog said of itself, in nineteen jurisdiction files, that it taught no personal
+  // finance. These three claims are the first that make that sentence false, and every one of
+  // them was checked against the lesson bodies rather than the titles.
+  {
+    id: "money.consumer-deposit-accounts",
+    claim:
+      "Works a consumer deposit account from its own rules: what a deposit is, how federal deposit and share insurance is counted, and what an account costs.",
+    courseSlugs: ["banking-and-the-unbanked"],
+    lessons: [
+      // The deposit contract, the three-way insurance count (per depositor, per institution, per
+      // ownership category), the insured and not-insured product lists, and automatic coverage.
+      "1 · What a deposit account actually is",
+      // Truth in Savings 12 CFR 1030.4: disclosures before opening and on request, and the
+      // conditions under which a fee may be imposed. Minimum balance read as a price.
+      "3 · The fee schedule is a document you can demand",
+      // Regulation E 12 CFR 1005.17(b), the four-step opt-in and the transactions it does not cover.
+      "13 · Overdraft is a mechanism, and it has an on switch",
+      // The two prices of one account, and the Bank On National Account Standards as a published
+      // low-cost structure to compare against.
+      "15 · Why the cost lands where it does, and what an alternative looks like",
+    ],
+  },
+  {
+    id: "money.unbanked-and-alternative-services",
+    claim:
+      "Measures who has no bank account and why from the FDIC's own survey, and prices the nonbank services that substitute for one.",
+    courseSlugs: ["banking-and-the-unbanked"],
+    lessons: [
+      // The instrument itself: biennial, CPS supplement, and the unbanked/underbanked/fully banked
+      // definitions taught before any rate is quoted.
+      "5 · The survey that counts them, and what it counts",
+      // Figure 1.8, both columns: cited and main reasons in households' own words.
+      "6 · The reasons, in their own words",
+      // Table 1.1 and Figure 1.2: income, education, disability, race and ethnicity, and the
+      // report's finding that gaps persist at every income level.
+      "7 · The distribution is not random",
+      // Money orders and check cashing priced from USPS's own fee page and a state regulator's cap.
+      "17 · Money orders and check cashing, priced",
+      // Prepaid accounts and nonbank payment apps, with the Regulation E short form disclosure.
+      "18 · Prepaid cards and payment apps, and the disclosure on the packet",
+      // The comparison itself: predictability, availability and minimum balance, done in same units.
+      "19 · Why a reasonable person chooses the substitute",
+      // Distance as a measured fact, and teller-first access by income and education.
+      "21 · The bank desert, and who a branch closure is for",
+    ],
+  },
+  {
+    id: "money.consumer-financial-protection-mechanisms",
+    claim:
+      "Teaches the federal rules governing a consumer's dealings with a financial institution, and the recourse each one provides.",
+    courseSlugs: ["banking-and-the-unbanked"],
+    lessons: [
+      // 31 CFR 1020.220: what a bank must collect before opening, and what the rule does not say.
+      "2 · The first gate: four pieces of information",
+      // The FCRA definitions that make a deposit-screening company a consumer reporting agency.
+      "9 · The second gate: a report about you that you have never seen",
+      // 15 U.S.C. 1681m(a), and why Regulation B's statement of principal reasons does not attach
+      // to a deposit-account denial.
+      "10 · The letter that has to tell you who was consulted",
+      // 15 U.S.C. 1681j free file disclosure and 1681i reinvestigation, with their limits.
+      "11 · Getting the file, and what a dispute actually does",
+      // Public Law 119-10 and 5 U.S.C. 801(b)(2): what a disapproved rule leaves behind.
+      "14 · The rule that was made, and then unmade",
+      // The method: five documents somebody is required to produce, plus the CFPB complaint route.
+      "23 · Read your own account: what this course leaves you able to do",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

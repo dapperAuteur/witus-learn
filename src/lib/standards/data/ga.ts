@@ -363,11 +363,11 @@ export const JURISDICTION: JurisdictionFile = {
       name: "Georgia Standards of Excellence — Economics/Business/Free Enterprise",
       publisher: "Georgia Department of Education",
       version: "GSE · Approved June 9, 2016 · Updated November 2, 2023",
-      fetchedOn: "2026-07-17",
+      fetchedOn: "2026-08-28",
       sourceUrl:
         "https://lor2.gadoe.org/gadoe/file/718cd76e-7ea7-44a8-95bf-fd4047eb9cea/1/Social-Studies-Personal%20Finance-and-Economics-Georgia-Standards.pdf",
       adoption:
-        "Georgia's economics course (Fundamentals SSEF, Microeconomics SSEMI, Macroeconomics SSEMA, International SSEIN, Personal Finance SSEPF). Most of the course is macro and personal finance this catalog does not teach; the international-trade and economic-systems standards are where the commodity curriculum lands.",
+        "Georgia's economics course (Fundamentals SSEF, Microeconomics SSEMI, Macroeconomics SSEMA, International SSEIN, Personal Finance SSEPF), course code 45.061, effective from the 2022-2023 school year. The international-trade and economic-systems standards are where the commodity curriculum lands. Two Personal Finance standards were added on 2026-08-28 when the banking course shipped; the SSEPF domain is no longer rejected wholesale, and notClaimed records which eight of the ten remain unclaimed. Re-fetched 2026-08-28 directly from the canonical lor2.gadoe.org PDF, which resolved this pass where it had refused connections in July 2026, so this framework's text is now transcribed from Georgia's own copy rather than a district mirror.",
       standards: [
         {
           code: "SSEIN1",
@@ -389,6 +389,26 @@ export const JURISDICTION: JurisdictionFile = {
           claimIds: ["bvc.price-elasticity-demand"],
           coverage: "partial",
           note: "Partial: taught through real commodity markets — a supply shock moving world coffee prices and why inelastic demand absorbs the spike. It is not a general supply-and-demand-graph unit.",
+        },
+        // — Personal Finance, re-fetched 2026-08-28 when MONEY-02 shipped. The SSEPF domain was
+        //   rejected wholesale until then; two of its ten standards are now genuinely reachable and
+        //   the notClaimed entry records the supersession rather than being deleted.
+        {
+          code: "SSEPF3",
+          text: "Explain how the financial system channels funds from savers to investors.",
+          claimIds: ["money.consumer-deposit-accounts", "money.unbanked-and-alternative-services"],
+          coverage: "partial",
+          note: "Partial, and element-specific. Element (b), comparing services offered by different financial institutions, is taught for banks, credit unions and the nonbank market (check cashers, money-transfer companies, prepaid issuers), priced from published fee schedules and a state regulator's cap; payday and title-pawn lenders are named in the standard and are not taught here. Element (c), comparing cash, debit cards, prepaid cards and mobile payment apps, is taught in full, with the Regulation E prepaid disclosure and the FDIC's usage data on how each is actually used; credit cards are not. The standard's headline about channelling funds from savers to investors, and elements (a), (d) and (e), are not taught.",
+        },
+        {
+          code: "SSEPF9",
+          text: "Explain ways consumers are protected by rules and regulations.",
+          claimIds: [
+            "money.consumer-financial-protection-mechanisms",
+            "money.consumer-deposit-accounts",
+          ],
+          coverage: "partial",
+          note: "Partial. Element (a), how government agencies offer protection in banking, is taught directly and from the rules themselves: the FDIC and the NCUA on deposit and share insurance, and the CFPB's regulations on account disclosure (12 CFR 1030.4), overdraft consent (12 CFR 1005.17) and prepaid disclosure (12 CFR 1005.18). Element (b) is partly met, through the CFPB complaint route and its published response times; the Better Business Bureau and direct-to-business methods the standard names are not compared. Element (c) is met for the Fair Credit Reporting Act only, worked from the statute through account screening, the adverse-action notice and the dispute right; the Truth in Lending Act, the Fair Debt Collection Practices Act, the Equal Housing Act and Dodd-Frank are not taught. Investing and borrowing protection, which element (a) also names, is left to later courses.",
         },
       ],
     },
@@ -459,8 +479,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "SSCG2 (the political-philosophy genealogy — the Magna Carta through Hobbes, Locke, Rousseau, and Montesquieu, as named texts), SSCG9 (the impeachment and removal process), and SSCG11 (the federal bureaucracy, its departments and agencies, and the Cabinet) are not genuinely taught, so we do not claim them.",
     },
     {
-      heading: "Economics — the personal-finance course, macroeconomics, and the market-structure standards.",
-      body: "The personal-finance standards (SSEPF1-10), macroeconomics (SSEMA1-3 — GDP, the Federal Reserve, fiscal policy), the microeconomic circular-flow and market-structure standards (SSEMI1, SSEMI3), the scarcity and rational-decision standards (SSEF1, SSEF2, SSEF4), and the exchange-rate standard (SSEIN2) were checked and are not taught. We claim the international-trade and economic-systems standards where the lessons land.",
+      heading: "Economics — most of the personal-finance course, macroeconomics, and the market-structure standards.",
+      body: "This entry used to reject the whole personal-finance domain, SSEPF1-10, on the ground that the catalog taught none of it. That changed on 2026-08-28 and the correction is recorded here rather than deleted: SSEPF3 (comparing financial institutions, and comparing cash, debit, prepaid and mobile payment) and SSEPF9 (how consumers are protected by rules and regulations) are now claimed, partially, and supersede the blanket rejection. The other eight remain unclaimed and are named so the gap stays visible: SSEPF1 (major life decisions), SSEPF2 (income and budgeting), SSEPF4 (interest rates), SSEPF5 (taxes), SSEPF6 (credit), SSEPF7 (insurance), SSEPF8 (how earnings are determined), and SSEPF10 (identity theft). Unchanged: macroeconomics (SSEMA1-3 — GDP, the Federal Reserve, fiscal policy), the microeconomic circular-flow and market-structure standards (SSEMI1, SSEMI3), the scarcity and rational-decision standards (SSEF1, SSEF2, SSEF4), and the exchange-rate standard (SSEIN2) were checked and are not taught. We claim the international-trade and economic-systems standards where the lessons land.",
     },
     {
       heading: "World and U.S. history beyond the mapped standards.",

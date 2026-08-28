@@ -1,5 +1,9 @@
 // Authored self-study course: a doctoral-EQUIVALENT Education Leadership program
-// modeled on Harvard's Ed.L.D., built from the education-leader study-partner
+// Built from the education-leader study-partner material. NOTE, 2026-08-28: this course used to
+// call itself a Doctoral Equivalent modeled on a named university's Ed.L.D. programme. Both claims
+// are gone. No relationship or endorsement exists, the reading list is the substance, and a degree
+// designation belongs to the body that grants it. Citing a named institution's PUBLISHED LECTURE as
+// a source is untouched and stays: citing is not claiming a relationship.
 // conversation (content/education-leader/). Doctoral rigor means primary-source
 // reading + committee-style hard questions, NOT a cheerleader. Cited per the BVC
 // citation standard. Committed so it survives a fresh clone; seeded on Learn.WitUS.
@@ -7,9 +11,9 @@
 import type { AuthoredCourse } from "./authored-course";
 
 export const EDUCATION_LEADER_COURSE: AuthoredCourse = {
-  title: "Education Leadership: A Self-Study Doctoral Equivalent (Ed.L.D.)",
+  title: "Education Leadership: A Self-Study Program at Doctoral Rigor",
   description:
-    "A rigorous, self-directed program modeled on the Harvard Doctor of Education Leadership (Ed.L.D.). You read the primary sources behind the idea of learning beyond schools (Illich, Klinenberg, Ito), study the real places that have built it, stress-test the public-finance case, and then defend your own design against the questions a dissertation committee would actually ask. The goal is not praise; it is an argument strong enough to survive city councils, unions, and skeptics.",
+    "A rigorous, self-directed program in education leadership. You read the primary sources behind the idea of learning beyond schools (Illich, Klinenberg, Ito), study the real places that have built it, stress-test the public-finance case, and then defend your own design against the questions a dissertation committee would actually ask. The goal is not praise; it is an argument strong enough to survive city councils, unions, and skeptics.",
   lessons: [
     {
       slug: "orientation",

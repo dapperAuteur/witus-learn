@@ -411,6 +411,57 @@ export const JURISDICTION: JurisdictionFile = {
       ],
     },
 
+    // ── Grade 12 Economics — Key Idea 12.E1, personal finance ─────────────
+    //
+    // TWO THINGS ARE DIFFERENT HERE FROM ny-ss-econ ABOVE, AND BOTH ARE DELIBERATE.
+    //
+    // 1. THE SOURCE URL IS A DIFFERENT FILE, and it is the one NYSED currently links. The framework
+    //    above cites `ss-framework-9-12.pdf`, which is the Revised January 2015 printing. NYSED's
+    //    own social studies page now links `framework-9-12-with-2017-updates.pdf`, Revised February
+    //    2017, and that is what was read for this entry. The 12.E1 text is BYTE-IDENTICAL between
+    //    the two printings; the 2017 update did not touch this Key Idea. The 2015 citation above is
+    //    therefore not wrong about its own entries, but a later editor re-fetching this file should
+    //    use the 2017 URL and should expect the older path to be the stale one.
+    // 2. IT HAS ITS OWN fetchedOn. This Key Idea was read 2026-08-28; the framework above was read
+    //    2026-07-17. `fetchedOn` is rendered to teachers as provenance, so restamping thirty
+    //    entries nobody re-read would be a lie about the cheapest thing in the file to check.
+    //
+    // THIS SUPERSEDES A REJECTION, PARTLY. This file's notClaimed entry said budgeting, credit and
+    // investment "were checked against the Grade 12 Economics framework and are not genuinely
+    // taught". Credit now is. Budgeting and investment still are not, and the rewritten rejection
+    // below says exactly that.
+    //
+    // ONE OF FIVE CODES, AND NOT THE KEY IDEA ITSELF. New York prints 12.E1 with four conceptual
+    // understandings, 12.E1a through 12.E1d. Only 12.E1c is claimed. The Key Idea's own sentence
+    // promises budgeting and investment strategies, so claiming it at Key Idea level would promise
+    // a teacher two things this catalog does not deliver.
+    {
+      id: "ny-ss-econ-personal-finance",
+      subject: "Social Studies",
+      name: "New York State K-12 Social Studies Framework — Grade 12 Economics, Key Idea 12.E1",
+      publisher: "New York State Education Department (NYSED) / Board of Regents",
+      version: "Grades 9-12 Framework · Revised February 2017",
+      fetchedOn: "2026-08-28",
+      sourceUrl:
+        "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/framework-9-12-with-2017-updates.pdf",
+      adoption:
+        "New York's Grade 12 Economics course carries its personal-finance content in Key Idea 12.E1, INDIVIDUAL RESPONSIBILITY AND THE ECONOMY, with four conceptual understandings beneath it. The framework prints no separate content-specification bullets under these, unlike some of the Grade 9-11 Key Ideas. MONEY-01 (`credit-decisions`) reaches one of the four, 12.E1c, which is the credit-and-interest understanding; the other three are goal-setting and budgeting, investment risk and return, and inflation and exchange rates, none of which this catalog teaches. Read 2026-08-28 from the February 2017 printing NYSED currently links.",
+      standards: [
+        {
+          code: "12.E1c",
+          text: "Managing personal finance effectively requires an understanding of the forms and purposes of financial credit, the effects of personal debt, the role and impact of interest, and the distinction between nominal and real returns. Predatory lending practices target and affect those who are least informed and can least afford such practices. Interest rates reflect perceived risk, so maintaining a healthy credit rating lowers the cost of borrowing.",
+          claimIds: [
+            "money.cost-of-credit-apr",
+            "money.credit-score-as-model",
+            "money.consumer-report-contents",
+            "money.credit-access-constraint",
+          ],
+          coverage: "partial",
+          note: "Partial, and unusually deep where it lands. The understanding's last sentence, that interest rates reflect perceived risk, is the course's whole spine taught from the statutes: how perceived risk is assembled from a consumer report, how a scoring model turns that file into a prediction, and how the resulting price is disclosed under the risk-based pricing rule at 12 CFR 1022.72. The purposes of credit and the role of interest are taught through the annual percentage rate. Two parts are NOT covered: the distinction between nominal and real returns, which is inflation-adjusted return and an explicit exclusion, and predatory lending practices, which this course does not teach and which MONEY-04 will.",
+        },
+      ],
+    },
+
     // ── Literacy in History/Social Studies, Science, and Technical Subjects (Grades 11-12) ──
     {
       id: "ny-ela",
@@ -499,8 +550,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "Two entire courses teach the Great Migration and the American labor movement, but New York's framework distributes their content across Key Ideas about their eras (11.4a's Reconstruction, 11.5b's Progressive-Era reform, 11.6c's WWI effects, 11.10a's civil-rights movement, and the economics standard 12.E3b) rather than giving either its own standard. We map only where the framework names their people and events, and we mark those partial. The catalog's depth on both exceeds what any one New York Key Idea asks.",
     },
     {
-      heading: "Personal finance and macroeconomic measurement (Economics 12.E1, 12.E4a-c).",
-      body: "Budgeting, credit, investment, inflation, GDP/GNP/CPI, and fiscal and monetary policy were checked against the Grade 12 Economics framework and are not genuinely taught by these courses. We claim only the labor-market, market-mechanics, and trade-policy standards the catalog actually reaches.",
+      heading: "Personal finance and macroeconomic measurement (Economics 12.E1, 12.E4a-c) — the credit half has been superseded.",
+      body: "Until 2026-08-28 this entry said budgeting, credit, investment, inflation, GDP/GNP/CPI, and fiscal and monetary policy were all checked and not genuinely taught. Credit is now taught, in MONEY-01, and 12.E1c is claimed above as a partial with its two gaps named on the entry. The rest of this rejection stands and the reasons are specific. 12.E1b is goal-setting, budgeting for anticipated saving and spending, and the risk and reward of financial investments; the course gives no financial advice and teaches no planning or investing, so claiming it would misdescribe what a teacher receives. 12.E1d is inflation and currency fluctuation, an explicit exclusion. 12.E1a asks students to weigh opportunities, resources, preferences and ethics in economic decisions; the course teaches the resource-and-timing constraint but develops neither preferences nor ethics as the understanding asks, so it is left unclaimed rather than stretched. The Key Idea 12.E1 itself is deliberately not claimed at Key Idea level, because its own sentence promises budgeting and investment strategies this catalog does not deliver. 12.E4a-c, macroeconomic measurement and fiscal and monetary policy, remain wholly outside the catalog. Note also, for whoever re-fetches this file: NYSED currently links the February 2017 printing of the framework rather than the January 2015 file the other Grade 12 economics entries cite, and the 12.E1 text is identical between the two.",
     },
     {
       heading: "The rest of the Grade 11 U.S. History framework.",
