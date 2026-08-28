@@ -1358,5 +1358,685 @@ The level payment that pays this to zero in 360 months is about **1,199.10**. No
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — Two forms you can hold
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "what-starts-the-clock",
+      title: "9 · Six pieces of information, and the clock they start",
+      section: "Section 3 · Two forms you can hold",
+      body: `Everything in this section runs off one defined word. Until you have made an **application**, a lender owes you no form at all. The moment you have, a clock starts and it is short.
+
+**The definition, in the regulation's own words.** Regulation Z gives a general meaning first: "Application means the submission of a consumer's financial information for the purposes of obtaining an extension of credit" (12 CFR § 1026.2, n.d.). Then, for the transactions this course is about, it gets specific. For a transaction subject to the Loan Estimate and Closing Disclosure rules, "an application consists of the submission of the consumer's name, the consumer's income, the consumer's social security number to obtain a credit report, the property address, an estimate of the value of the property, and the mortgage loan amount sought" (12 CFR § 1026.2, n.d.).
+
+**Count them. Six.** Name, income, social security number to obtain a credit report, property address, an estimate of the property's value, and the loan amount sought. That is the whole list.
+
+**This is the most useful single fact in the section**, and almost nobody is told it. A conversation in which you have supplied all six of those things is an application, whatever anyone calls it, and it triggers a duty. A conversation in which one of them is missing is not, and no form is owed. If you want the form, supply the six. If you are not ready for the clock to start, know which one you are holding back and why.
+
+**Then the duty.** In a closed-end consumer credit transaction secured by real property, other than a reverse mortgage, "the creditor shall provide the consumer with good faith estimates of the disclosures in § 1026.37" (12 CFR § 1026.19, n.d.). Note the phrase **good faith estimates**, because the next lesson but one turns on exactly how much good faith is measured in dollars.
+
+**Deadline one, the front end.** The creditor "shall deliver or place in the mail the disclosures required under paragraph (e)(1)(i) of this section not later than the third business day after the creditor receives the consumer's application, as defined in § 1026.2(a)(3)" (12 CFR § 1026.19, n.d.).
+
+**Deadline two, the back end.** Except in a stated case, the creditor "shall deliver or place in the mail the disclosures required under paragraph (e)(1)(i) of this section not later than the seventh business day before consummation of the transaction" (12 CFR § 1026.19, n.d.).
+
+**Read those two together, because they do different jobs.** The first one means you cannot be strung along: three business days after the six items are in, the estimate is owed. The second means you cannot be handed the estimate at the door: it must be out at least seven business days before the transaction is consummated, so there is time to read it and time to go and get another one.
+
+**Consummation is a defined moment, not the day you move in.** Regulation B, in the closely related rule about appraisals, defines it: "The term 'consummation' means the time that a consumer becomes contractually obligated on a closed-end credit transaction" (12 CFR § 1002.14, n.d.). It is the moment of obligation on the loan.
+
+**Why the six-item definition matters more than it looks.** Before these rules, "application" was whatever a lender said it was, so the duty to disclose could be postponed indefinitely by declining to call a conversation an application. Defining the term by a closed list of six items takes that discretion away. It is the same move MONEY-01 taught in another statute, where rights attach to a defined term rather than to a feeling, and it is worth recognising as a pattern: **when a consumer protection depends on a word, look for the definition, because that is where the protection is either real or hollow.**
+
+**One practical consequence.** Asking three lenders what they would charge produces three conversations. Giving three lenders the six items produces three Loan Estimates, on the same federally prescribed form, in the same units.
+
+:::reveal What six items make an application for a transaction subject to these rules? ||| Name, income, social security number to obtain a credit report, property address, an estimate of the property's value, and the mortgage loan amount sought.
+
+:::reveal How long does a creditor have to deliver or mail the Loan Estimate? ||| Not later than the third business day after the creditor receives the consumer's application, as the regulation defines it.
+
+:::reveal What is consummation, in the regulation's own definition? ||| The time that a consumer becomes contractually obligated on a closed-end credit transaction.
+
+## Vocabulary
+- **Application**: for these transactions, a closed list of six submitted items, which is what turns a conversation into a duty to disclose.
+- **Good faith estimate**: the standard the Loan Estimate is held to, measured later in dollars by the tolerance rules rather than by intention.
+- **Consummation**: the moment the consumer becomes contractually obligated on the loan, which is the anchor for the disclosure deadlines.
+- **Business day**: the unit both Loan Estimate deadlines are counted in, which is why a calendar week is the wrong way to plan around them.
+
+## Sources
+12 CFR § 1026.2. (n.d.). *Definitions and rules of construction*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.2
+
+12 CFR § 1026.19. (n.d.). *Certain mortgage and variable-rate transactions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.19
+
+12 CFR § 1002.14. (n.d.). *Rules on providing appraisals and other valuations*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1002.14`,
+    },
+    {
+      slug: "reading-the-loan-estimate",
+      title: "10 · Reading the Loan Estimate, box by box",
+      section: "Section 3 · Two forms you can hold",
+      body: `The Loan Estimate is not a letter and it is not a marketing document. It is a form whose contents are prescribed paragraph by paragraph in federal regulation, which is exactly what makes two of them comparable.
+
+**The structure, in the regulation's own headings.** Section 1026.37 requires, in order: General information, Loan terms, Projected payments, Costs at closing, Web site reference, Closing cost details covering loan costs, Closing cost details covering other costs, Calculating cash to close, an Adjustable payment table, an Adjustable interest rate table, Contact information, Comparisons, Other considerations, a Signature statement, and rules on the Form of disclosures (12 CFR § 1026.37, n.d.).
+
+**That list is worth reading twice**, because it tells you what a lender is not allowed to leave out. A quote scribbled on a business card has no Comparisons table and no Calculating cash to close. It is not a worse version of this form. It is a different kind of object.
+
+**The Loan terms table is the top of the form**, and the regulation prescribes both what goes in it and the label each item carries. It requires a separate table under the heading "Loan Terms", containing:
+
+- **Loan amount**, which is "The total amount the consumer will borrow, as reflected by the face amount of the note, labeled 'Loan Amount.'"
+- **Interest rate**, which is "The interest rate that will be applicable to the transaction at consummation, labeled 'Interest Rate.'"
+- **Principal and interest payment**, which is "The initial periodic payment amount that will be due under the terms of the legal obligation, labeled 'Principal & Interest,'"
+- **Prepayment penalty**, which is "A statement of whether the transaction includes a prepayment penalty, labeled 'Prepayment Penalty.'"
+- **Balloon payment**, which is "A statement of whether the transaction includes a balloon payment, labeled 'Balloon Payment.'" (12 CFR § 1026.37, n.d.)
+
+**Two of those five are yes-or-no questions**, and they are the two people forget to ask. A prepayment penalty decides whether the extra-to-principal idea from the last section is available to you at all. A balloon payment decides whether the schedule you have been shown actually retires the debt, or whether a large sum falls due at the end of it. The form asks both, on your behalf, every time.
+
+**The regulation also requires disclosure of adjustments after consummation** for the loan amount, the interest rate and the principal and interest payment (12 CFR § 1026.37, n.d.). So "does this number change later" is a question the form is built to answer rather than one you have to think to ask.
+
+**Projected payments is the box that answers a different question.** The regulation frames it around the events that force a new figure to be shown: the initial periodic payment or range of payments is disclosed as one thing, and then certain events "require the disclosure of additional separate periodic payments or ranges of payments" (12 CFR § 1026.37, n.d.). In plain terms, if the payment is going to change, the form has to show you the changed one too, rather than showing the low starting figure alone.
+
+**Costs at closing, and the two cost sections behind it.** The form carries a Costs at closing summary, and behind it two itemised sections: loan costs, the charges connected to getting the loan, and other costs, the charges connected to the transaction and the property. Calculating cash to close then reconciles all of it into the amount you would need to bring. And then Comparisons, which the previous lesson took apart.
+
+**How to use the form, in one move.** Lay two of them side by side and read them in the regulation's own order. Because the boxes are prescribed, the same number is in the same place on both, and any difference between two offers is visible rather than argued about. That is the entire design, and it is why Section 1 quoted two statutes that both say comparison is the point.
+
+:::reveal Which two Loan Terms items are yes-or-no statements the form makes on your behalf? ||| Whether the transaction includes a prepayment penalty, and whether it includes a balloon payment.
+
+:::reveal What does the regulation say the loan amount is, in its own words? ||| The total amount the consumer will borrow, as reflected by the face amount of the note, labeled Loan Amount.
+
+:::reveal What forces the Projected payments box to show more than one figure? ||| Certain events require the disclosure of additional separate periodic payments or ranges of payments, so a payment that changes has to be shown as changed.
+
+## Vocabulary
+- **Loan Terms table**: the prescribed top table of the Loan Estimate, carrying the loan amount, interest rate, principal and interest payment, prepayment penalty and balloon payment under labels the regulation dictates.
+- **Prepayment penalty**: a charge for paying ahead of schedule, which the form must state the presence or absence of, and which decides whether paying extra to principal is available.
+- **Balloon payment**: a large amount falling due at the end of a schedule that has not retired the debt, which the form must also state the presence or absence of.
+- **Projected payments**: the box that must show additional payments or ranges where an event will change the periodic payment during the loan.
+- **Loan costs and other costs**: the two itemised closing cost sections, separating charges for getting the loan from charges tied to the transaction and the property.
+
+## Sources
+12 CFR § 1026.37. (n.d.). *Content of disclosures for certain mortgage transactions (Loan Estimate)*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.37
+
+15 U.S.C. § 1601. (n.d.). *Congressional findings and declaration of purpose*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1601`,
+    },
+    {
+      slug: "the-closing-disclosure-and-the-tolerances",
+      title: "11 · The Closing Disclosure, and the rules that make an estimate mean something",
+      section: "Section 3 · Two forms you can hold",
+      body: `An estimate nobody is held to is a sales document. What turns the Loan Estimate into a promise is a set of rules about how far the final numbers may move.
+
+**First, the final form itself.** In a transaction subject to the Loan Estimate rule, "the creditor shall provide the consumer with the disclosures required under § 1026.38 reflecting the actual terms of the transaction" (12 CFR § 1026.19, n.d.). Its contents are prescribed the same way, running through General information, Loan terms, Projected payments, Costs at closing, an alternative cash-to-close table, loan costs, other costs, closing cost totals, Calculating cash to close, summaries of the borrower's and the seller's transactions, Loan disclosures, an adjustable payment table, an adjustable interest rate table, Loan calculations, other disclosures, a questions notice, contact information, a signature statement, and rules on the form of disclosures (12 CFR § 1026.38, n.d.).
+
+**Second, the time to read it.** With stated exceptions, the creditor "shall ensure that the consumer receives the disclosures required under paragraph (f)(1)(i) of this section no later than three business days before consummation" (12 CFR § 1026.19, n.d.). Not delivered by. **Received** by. Three business days before the moment you become contractually obligated.
+
+**That waiting period is the single most consumer-protective mechanism in the section**, because the alternative is reading forty numbers for the first time in a room where everyone else is waiting for you to sign.
+
+**Third, and this is the part that makes the estimate binding: good faith is measured in dollars.** The general rule is strict. "An estimated closing cost disclosed pursuant to paragraph (e) of this section is in good faith if the charge paid by or imposed on the consumer does not exceed the amount originally disclosed under paragraph (e)(1)(i) of this section", subject to the exceptions that follow (12 CFR § 1026.19, n.d.). **Read that plainly: for those charges, the estimate is a ceiling.** Not a guess, not an indication. A ceiling.
+
+**Fourth, the ten percent exception, and note what it costs the lender to use it.** A different rule applies to certain third-party charges. "An estimate of a charge for a third-party service or a recording fee is in good faith if: (A) The aggregate amount of charges for third-party services and recording fees paid by or imposed on the consumer does not exceed the aggregate amount of such charges disclosed under paragraph (e)(1)(i) of this section by more than 10 percent; (B) The charge for the third-party service is not paid to the creditor or an affiliate of the creditor; and (C) The creditor permits the consumer to shop for the third-party service" (12 CFR § 1026.19, n.d.).
+
+**All three conditions, not one.** The looser ten percent standard is available only where the money is not going to the creditor or its affiliate and where the consumer was allowed to shop. A charge paid to the creditor's own affiliate does not get the ten percent room. That is a rule about self-dealing wearing the clothes of a rule about estimates.
+
+**Fifth, the statute underneath all of it.** RESPA makes the underlying conduct unlawful rather than merely disclosable. "No person shall give and no person shall accept any fee, kickback, or thing of value pursuant to any agreement or understanding, oral or otherwise, that business incident to or a part of a real estate settlement service involving a federally related mortgage loan shall be referred to any person" (12 U.S.C. § 2607, n.d.). And separately, no person shall give or accept "any portion, split, or percentage of any charge made or received for the rendering of a real estate settlement service ... other than for services actually performed" (12 U.S.C. § 2607, n.d.). The section carries a criminal penalty: a violator "shall be fined not more than $10,000 or imprisoned for not more than one year, or both" (12 U.S.C. § 2607, n.d.).
+
+**Put the section together and the design is visible.** Six items start a clock. Three business days later a form arrives whose contents are dictated line by line. Certain of its numbers are a ceiling; others may move by a stated percentage only if the money goes somewhere independent. Three business days before you are obligated, a second prescribed form arrives with the actual terms. **Every one of those is a rule you can check.**
+
+:::reveal How long before consummation must the consumer RECEIVE the Closing Disclosure? ||| No later than three business days before consummation, and the rule is about receipt rather than delivery.
+
+:::reveal For the charges under the general rule, what is the disclosed estimate? ||| A ceiling. The charge paid is in good faith only if it does not exceed the amount originally disclosed.
+
+:::reveal What three conditions must all be met for the ten percent tolerance to apply? ||| The aggregate does not exceed the disclosed aggregate by more than ten percent, the charge is not paid to the creditor or an affiliate, and the consumer was permitted to shop.
+
+## Vocabulary
+- **Closing Disclosure**: the prescribed final form reflecting the actual terms of the transaction, whose twenty required parts mirror the Loan Estimate's structure.
+- **Three-business-day rule**: the requirement that the consumer receive the Closing Disclosure at least three business days before consummation, which is about receipt and not delivery.
+- **Zero tolerance**: the general good faith rule under which a disclosed closing cost may not be exceeded at all.
+- **Ten percent tolerance**: the looser aggregate standard for third-party services and recording fees, available only where the money does not go to the creditor or an affiliate and the consumer could shop.
+- **Unearned fee**: a portion, split or percentage of a settlement service charge given or accepted other than for services actually performed, which RESPA makes unlawful.
+
+## Sources
+12 CFR § 1026.19. (n.d.). *Certain mortgage and variable-rate transactions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.19
+
+12 CFR § 1026.38. (n.d.). *Content of disclosures for certain mortgage transactions (Closing Disclosure)*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.38
+
+12 U.S.C. § 2607. (n.d.). *Prohibition against kickbacks and unearned fees*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/12/2607`,
+    },
+    {
+      slug: "quiz-the-forms",
+      title: "12 · Knowledge check: two forms you can hold",
+      section: "Section 3 · Two forms you can hold",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Until a consumer has made an application, what does a lender owe them?",
+            options: ["No form at all", "A written quotation of the rate available on the day of the enquiry", "A Loan Estimate, since the duty attaches to any request for pricing", "A statement of the charges the lender imposes on every borrower"],
+            correctIndex: 0,
+            explanation: "Everything in this section runs off that defined word, and the moment an application exists a short clock starts.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What is Regulation Z's general definition of an application?",
+            options: ["Submission of financial information for credit", "A signed request on a form the creditor supplies for that purpose", "An enquiry recorded by the creditor and reported to a consumer reporting agency", "A commitment by the consumer to proceed with the transaction if approved"],
+            correctIndex: 0,
+            explanation: "The general definition is the submission of a consumer's financial information for the purposes of obtaining an extension of credit.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "How many items make an application for a transaction subject to these rules?",
+            options: ["Six", "Four, since the property address and value are treated as one item", "Nine, once the creditor's own verification requirements are counted", "Whatever number the creditor's written policy specifies for that product"],
+            correctIndex: 0,
+            explanation: "The regulation lists them in a closed set, which is what takes the discretion away from the creditor.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "Which of these is on the regulation's list of application items?",
+            options: ["An estimate of the property's value", "A signed purchase contract for the property being financed", "Two years of federal income tax returns for every borrower", "Proof that the consumer holds the funds needed to close"],
+            correctIndex: 0,
+            explanation: "The six are name, income, social security number to obtain a credit report, property address, an estimate of value, and the loan amount sought.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "Why does the regulation mention the consumer's social security number specifically?",
+            options: ["To obtain a credit report", "To confirm the consumer's identity under anti-money-laundering rules", "To report the resulting loan to the federal mortgage data collection", "To determine whether the consumer is eligible for a government programme"],
+            correctIndex: 0,
+            explanation: "The list names it as the consumer's social security number to obtain a credit report, which links this section to MONEY-01.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What is true of a conversation in which all six items have been supplied?",
+            options: ["It is an application", "It is an application only if the creditor calls it one in writing", "It is a pre-qualification, which carries no disclosure obligation", "It is an application only where the consumer has paid an application fee"],
+            correctIndex: 0,
+            explanation: "It triggers the duty whatever anyone calls it, which is why the closed list is the most useful fact in the section.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What does the course advise a reader to know if they are not ready for the clock to start?",
+            options: ["Which item they are holding back", "Which lender is most likely to approve the application quickly", "How many business days remain before the offer they hold expires", "What the creditor's internal policy says about incomplete submissions"],
+            correctIndex: 0,
+            explanation: "If you want the form, supply the six; if you are not ready, know which one is missing and why.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What must the creditor provide in a closed-end transaction secured by real property?",
+            options: ["Good faith estimates of the disclosures", "A binding commitment to lend on the terms shown in the estimate", "A written statement of the reasons any application would be refused", "A comparison of its own offer against those of two competing lenders"],
+            correctIndex: 0,
+            explanation: "The regulation excepts a reverse mortgage, and the phrase good faith is measured in dollars by the tolerance rules.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "By when must the Loan Estimate be delivered or placed in the mail?",
+            options: ["The third business day after application", "Within seven calendar days of the consumer's first enquiry about pricing", "At the same time the creditor orders an appraisal of the subject property", "Before the consumer signs a purchase contract for the property"],
+            correctIndex: 0,
+            explanation: "The clock runs from the creditor's receipt of the application as the regulation defines that term.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What is the second Loan Estimate deadline?",
+            options: ["The seventh business day before consummation", "Thirty days before the scheduled date of the closing", "The same day the Closing Disclosure is delivered to the consumer", "The last business day of the month in which the application was made"],
+            correctIndex: 0,
+            explanation: "The rule states an exception, but the general position is that the estimate must be out at least that far in advance.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What does the seven-business-day deadline protect?",
+            options: ["Time to read and to shop", "The creditor's right to withdraw an offer before consummation", "The consumer's ability to cancel after the transaction has closed", "The seller's interest in a timely completion of the sale"],
+            correctIndex: 0,
+            explanation: "It means the estimate cannot be handed over at the door, so there is time to read it and to go and get another one.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What does the three-business-day deadline for the Loan Estimate protect?",
+            options: ["Against being strung along", "Against a creditor changing the rate after an application is filed", "Against a settlement agent adding charges the creditor never quoted", "Against a consumer applying to more than one lender at the same time"],
+            correctIndex: 0,
+            explanation: "Three business days after the six items are in, the estimate is owed, whatever the creditor would prefer.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What is consummation, in the regulation's definition?",
+            options: ["When the consumer becomes contractually obligated", "The date the consumer takes physical possession of the property", "The day the deed is recorded in the county land records", "The moment the creditor disburses the loan proceeds to the seller"],
+            correctIndex: 0,
+            explanation: "It is the moment of obligation on the loan, and it is not the day anyone moves in.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "Before these rules, what determined whether a conversation was an application?",
+            options: ["Whatever the lender said", "A federal register of applications maintained by each creditor", "The point at which a consumer report was obtained by the lender", "Whether a fee had been collected from the consumer in advance"],
+            correctIndex: 0,
+            explanation: "That is why defining the term by a closed list of six items takes the discretion away.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What pattern does this lesson tell a learner to recognise?",
+            options: ["Look for the definition", "Assume a longer statute offers stronger protection than a shorter one", "Treat agency guidance as equal in force to the regulation it interprets", "Expect a consumer right to be enforced by the agency rather than the consumer"],
+            correctIndex: 0,
+            explanation: "When a consumer protection depends on a word, the definition is where the protection is either real or hollow.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "Which earlier course made the same move with a defined term?",
+            options: ["MONEY-01", "MONEY-05, which defines a filing status for a domestic tax return", "WARRANT-02, which defines eligibility for a federal farm credit programme", "MONEY-02, which defines the identity documents a bank must collect"],
+            correctIndex: 0,
+            explanation: "There, rights attached to a defined term rather than to the feeling of having been turned down.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "In what unit are both Loan Estimate deadlines counted?",
+            options: ["Business days", "Calendar weeks running from the date of the application", "Banking days, excluding any day a federal reserve bank is closed", "Working hours, measured against the creditor's published office schedule"],
+            correctIndex: 0,
+            explanation: "Which is why a calendar week is the wrong way to plan around them.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What kind of transaction does the Loan Estimate rule exclude by name?",
+            options: ["A reverse mortgage", "A loan secured by a second lien on the consumer's dwelling", "A loan made by a creditor that originates fewer than ten loans a year", "A transaction in which the consumer pays cash for part of the price"],
+            correctIndex: 0,
+            explanation: "The rule covers closed-end consumer credit secured by real property or a cooperative unit, other than a reverse mortgage.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What does giving three lenders the six items produce?",
+            options: ["Three Loan Estimates", "Three credit enquiries and no obligation on any lender to respond", "Three verbal quotations that may each be withdrawn without notice", "One estimate, since only the first lender to receive them owes a form"],
+            correctIndex: 0,
+            explanation: "On the same federally prescribed form, in the same units, which is what makes them comparable at all.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What does the Loan Estimate's prescribed content make possible?",
+            options: ["Comparison", "A binding rate lock for the period the estimate remains open", "A guarantee that the final charges will match the estimate exactly", "A right to withdraw from the purchase contract without forfeiting a deposit"],
+            correctIndex: 0,
+            explanation: "It is a form whose contents are prescribed paragraph by paragraph, which is exactly what makes two of them comparable.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "Which of these is one of the regulation's own top-level headings for the Loan Estimate?",
+            options: ["Calculating cash to close", "Summary of seller's transaction, which reconciles the seller's side", "Escrow account disclosure, which projects the first year of escrow", "Servicing transfer notice, which names the party collecting payments"],
+            correctIndex: 0,
+            explanation: "The prescribed order also includes General information, Loan terms, Projected payments, Costs at closing and Comparisons.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "How does the course describe a quote scribbled on a business card?",
+            options: ["A different kind of object", "A Loan Estimate in substance, though not in the prescribed format", "An enforceable offer, provided the lender signed and dated it", "A preliminary disclosure that the regulation permits before application"],
+            correctIndex: 0,
+            explanation: "It has no Comparisons table and no Calculating cash to close, so it is not a worse version of the form.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What does the regulation say the loan amount is?",
+            options: ["The face amount of the note", "The purchase price of the property less the consumer's down payment", "The amount the creditor expects to disburse at the closing table", "The appraised value multiplied by the creditor's maximum lending ratio"],
+            correctIndex: 0,
+            explanation: "It is the total amount the consumer will borrow, as reflected by the face amount of the note, labeled Loan Amount.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "Which interest rate must the Loan Terms table state?",
+            options: ["The rate applicable at consummation", "The rate the creditor advertised on the day the application was made", "The highest rate the loan could reach over the whole of its term", "The average rate the creditor charged on similar loans that month"],
+            correctIndex: 0,
+            explanation: "The regulation requires the rate that will be applicable to the transaction at consummation, labeled Interest Rate.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What does the Principal and Interest line show?",
+            options: ["The initial periodic payment", "The total of principal and interest over the whole loan term", "The share of the payment that reduces the balance in the first year", "The payment including escrowed property tax and insurance amounts"],
+            correctIndex: 0,
+            explanation: "The regulation requires the initial periodic payment amount due under the terms of the legal obligation.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What does the form say about a prepayment penalty?",
+            options: ["Whether the transaction includes one", "How much it would cost to repay the loan in full after five years", "That the consumer may waive it by initialling the relevant line", "That it applies to any payment made before its scheduled due date"],
+            correctIndex: 0,
+            explanation: "It is a statement of whether the transaction includes a prepayment penalty, labeled Prepayment Penalty.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What does the form say about a balloon payment?",
+            options: ["Whether the transaction includes one", "The exact date on which the final large payment would fall due", "Whether the creditor will refinance the balance when it comes due", "How the balloon amount compares with the original loan amount"],
+            correctIndex: 0,
+            explanation: "It is a statement of whether the transaction includes a balloon payment, labeled Balloon Payment.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "Which two Loan Terms items does the course call the ones people forget to ask about?",
+            options: ["Prepayment penalty and balloon payment", "The interest rate and the initial principal and interest payment", "The loan amount and the total of the costs due at closing", "The adjustable payment table and the adjustable interest rate table"],
+            correctIndex: 0,
+            explanation: "They are yes-or-no questions, and the form asks both on the consumer's behalf every time.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "Why does a prepayment penalty matter to the previous section's arithmetic?",
+            options: ["It decides whether paying extra is available", "It raises the interest rate applied to the outstanding balance", "It shortens the term the amortisation schedule is calculated over", "It converts the loan from an amortising loan to an interest-only loan"],
+            correctIndex: 0,
+            explanation: "Applying an extra amount to principal lowers every later interest figure, but only where the loan permits it.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "Why does a balloon payment matter?",
+            options: ["The schedule may not retire the debt", "It increases the periodic payment throughout the loan term", "It is charged only where the borrower repays the loan early", "It requires the creditor to re-appraise the property before maturity"],
+            correctIndex: 0,
+            explanation: "A large sum can fall due at the end of a schedule the consumer thought was paying the loan off.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "Which three figures must the form address for adjustments after consummation?",
+            options: ["Loan amount, interest rate, payment", "Loan costs, other costs, and the total cash to close", "The appraised value, the purchase price, and the down payment", "Escrow, property tax, and the homeowner's insurance premium"],
+            correctIndex: 0,
+            explanation: "So the question of whether a number changes later is one the form is built to answer rather than one a consumer must think to ask.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What triggers additional entries in the Projected payments box?",
+            options: ["Events that change the payment", "The creditor's decision to include an escrow account with the loan", "The consumer's request for a longer term than the creditor offered", "A change in the property's assessed value during the loan term"],
+            correctIndex: 0,
+            explanation: "Certain events require disclosure of additional separate periodic payments or ranges of payments, so a rising payment must be shown.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "In plain terms, what does the Projected payments rule stop a lender doing?",
+            options: ["Showing only the low starting figure", "Charging escrow amounts that were not disclosed in advance", "Adjusting the interest rate without notifying the consumer first", "Selling the loan to a servicer before the first payment is due"],
+            correctIndex: 0,
+            explanation: "If the payment is going to change, the form has to show the changed one as well.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What distinguishes loan costs from other costs on the form?",
+            options: ["Getting the loan against the transaction", "Charges paid to the creditor against charges paid to third parties", "Charges the consumer may shop for against charges that are fixed", "Charges due at closing against charges collected over the loan term"],
+            correctIndex: 0,
+            explanation: "Loan costs are the charges connected to getting the loan; other costs are tied to the transaction and the property.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What does Calculating cash to close do?",
+            options: ["Reconciles the amount to bring", "States the balance that will remain after five years of payments", "Lists every party who will receive money from the transaction", "Compares the creditor's charges against a published market average"],
+            correctIndex: 0,
+            explanation: "It brings the cost sections together into the amount the consumer would actually need at the closing.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What is the course's one-move instruction for using the form?",
+            options: ["Lay two side by side", "Read the Comparisons table before anything else on the document", "Take the estimate to a settlement agent for an independent review", "Ask the creditor to explain each box before signing the acknowledgment"],
+            correctIndex: 0,
+            explanation: "Because the boxes are prescribed, the same number sits in the same place on both, so any difference is visible rather than argued about.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What must the creditor provide under the Closing Disclosure rule?",
+            options: ["Disclosures reflecting the actual terms", "A revised estimate whenever any quoted charge has changed", "A written explanation of any figure that differs from the estimate", "A statement of the consumer's right to rescind the transaction"],
+            correctIndex: 0,
+            explanation: "The rule requires the disclosures under section 1026.38 reflecting the actual terms of the transaction.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "Which of these is one of the Closing Disclosure's prescribed parts?",
+            options: ["Loan calculations", "Comparisons, which ranks this loan against competing offers", "Web site reference, which directs the consumer to a federal database", "Appraisal summary, which states the value the appraiser reported"],
+            correctIndex: 0,
+            explanation: "The prescribed parts also include Loan disclosures, a questions notice, closing cost totals and summaries of each side's transaction.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What does the three-business-day rule require, precisely?",
+            options: ["Receipt, not delivery", "Delivery, whether or not the consumer actually receives it", "A signed acknowledgment returned to the creditor before closing", "That the consumer waive the period in writing if closing sooner"],
+            correctIndex: 0,
+            explanation: "The creditor must ensure the consumer receives the disclosures no later than three business days before consummation.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "Why does the course call the waiting period the most consumer-protective mechanism in the section?",
+            options: ["Reading forty numbers under pressure", "Because it allows the consumer to cancel the loan without penalty", "Because it gives the creditor time to correct any tolerance violation", "Because it is the only rule in the section a court will enforce directly"],
+            correctIndex: 0,
+            explanation: "The alternative is reading them for the first time in a room where everyone else is waiting for a signature.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "Under the general good faith rule, what is a disclosed closing cost?",
+            options: ["A ceiling", "An indication that the creditor may revise at any time before closing", "An average of the charges the creditor imposed on similar transactions", "A figure the consumer may challenge only after the transaction closes"],
+            correctIndex: 0,
+            explanation: "It is in good faith only if the charge paid does not exceed the amount originally disclosed, subject to the stated exceptions.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What does the course say turns the Loan Estimate from a sales document into a promise?",
+            options: ["Rules about how far numbers may move", "The consumer's signature on the acknowledgment at the foot of the form", "The requirement that the creditor deliver it within three business days", "The obligation to provide a second, final form before consummation"],
+            correctIndex: 0,
+            explanation: "An estimate nobody is held to is a sales document; the tolerance rules are what hold the creditor to it.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "Which charges get the ten percent standard rather than the strict one?",
+            options: ["Third-party services and recording fees", "Every charge the creditor itself imposes for originating the loan", "Property tax and homeowner's insurance collected into an escrow account", "Any charge the consumer agreed to in the purchase contract"],
+            correctIndex: 0,
+            explanation: "And the standard is aggregate, so the comparison is between totals rather than line by line.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "How many conditions must be met for the ten percent tolerance to apply?",
+            options: ["Three", "One, that the aggregate does not exceed the disclosed aggregate by ten percent", "Two, an aggregate limit and the consumer's written consent to shop", "Four, adding a requirement that the creditor document its selection"],
+            correctIndex: 0,
+            explanation: "All three, not one: the aggregate limit, the money not going to the creditor or an affiliate, and the consumer being permitted to shop.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What happens to a charge paid to the creditor's own affiliate?",
+            options: ["It does not get the ten percent room", "It is exempt from both tolerance standards under the regulation", "It may exceed the estimate by up to twenty percent in the aggregate", "It must be refunded in full if it exceeds the amount disclosed"],
+            correctIndex: 0,
+            explanation: "The looser standard is available only where the charge is not paid to the creditor or an affiliate, which the course calls a rule about self-dealing.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What does the ten percent standard compare?",
+            options: ["Aggregate against aggregate", "Each individual charge against the figure disclosed for that charge", "The final total against the average charged by comparable creditors", "The creditor's charges against the third parties' published rate cards"],
+            correctIndex: 0,
+            explanation: "The rule speaks of the aggregate amount of charges for third-party services and recording fees.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What does RESPA say about a fee paid for referring settlement business?",
+            options: ["No person shall give or accept it", "It must be disclosed on the Closing Disclosure as a loan cost", "It is permitted where the referring party performs some service", "It is capped at ten percent of the charge for the service referred"],
+            correctIndex: 0,
+            explanation: "The prohibition covers any fee, kickback or thing of value given pursuant to any agreement or understanding, oral or otherwise.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What does RESPA say about splitting a settlement service charge?",
+            options: ["Only for services actually performed", "Only where both parties are licensed in the state of the transaction", "Only where the split is disclosed to the consumer before closing", "Only where the total charge does not exceed the customary amount"],
+            correctIndex: 0,
+            explanation: "No person shall give or accept any portion, split or percentage of such a charge other than for services actually performed.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What penalty does RESPA attach to a violation of that section?",
+            options: ["A fine, imprisonment, or both", "A civil penalty assessed by the supervising banking regulator", "Rescission of the loan at the consumer's option within three years", "Forfeiture of the creditor's right to collect interest on the loan"],
+            correctIndex: 0,
+            explanation: "The statute states a fine of not more than $10,000 or imprisonment for not more than one year, or both.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What is the course's summary of the section's design?",
+            options: ["Rules a consumer can check", "Guidance a regulator publishes and periodically revises", "A voluntary code the mortgage industry agreed to follow", "A set of defaults the parties may vary by written agreement"],
+            correctIndex: 0,
+            explanation: "Six items start a clock, a prescribed form follows, certain numbers are a ceiling, and a second prescribed form arrives before obligation.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What phrase in the Loan Estimate rule does the tolerance section later measure?",
+            options: ["Good faith", "Actual terms of the transaction as finally agreed by the parties", "Reasonably available information known to the creditor at the time", "The creditor's best estimate given the information then in its possession"],
+            correctIndex: 0,
+            explanation: "The regulation requires good faith estimates, and the tolerance rules turn that phrase into dollars.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "Which document reflects the actual terms rather than an estimate?",
+            options: ["The Closing Disclosure", "The Loan Estimate, once the creditor has verified the application", "The promissory note, which restates the disclosures in binding form", "The security instrument recorded with the county after consummation"],
+            correctIndex: 0,
+            explanation: "The Loan Estimate carries good faith estimates; the Closing Disclosure reflects what the transaction actually is.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "Why does the course say a lender who missed one of these rules has missed something written down?",
+            options: ["Each is a checkable rule", "Because a regulator publishes a list of every violation each quarter", "Because the consumer's signature acknowledges that each rule was met", "Because the settlement agent certifies compliance at the closing table"],
+            correctIndex: 0,
+            explanation: "The deadlines, the prescribed contents and the tolerances are all in the text, so compliance is verifiable rather than a matter of trust.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What does the Closing Disclosure's alternative cash-to-close table exist for?",
+            options: ["Transactions without a seller", "Loans where the consumer pays no closing costs at all", "Transactions in which the creditor is also the settlement agent", "Loans that will be sold into the secondary market after closing"],
+            correctIndex: 0,
+            explanation: "It appears in the regulation's list alongside the standard Calculating cash to close table.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "Whose transactions do the Closing Disclosure's two summary tables cover?",
+            options: ["The borrower's and the seller's", "The creditor's and the settlement agent's", "The appraiser's and the title insurer's", "The buyer's agent's and the listing agent's"],
+            correctIndex: 0,
+            explanation: "They are separate prescribed parts of the form, which is why the document reconciles both sides of the sale.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What does the course mean by saying the section's forms report in the same units?",
+            options: ["The same figures in the same places", "Both are expressed in whole dollars rather than in percentages", "Both are prepared by the same party under the same regulation", "Both must be signed by the consumer before the loan can close"],
+            correctIndex: 0,
+            explanation: "That is what makes the estimate and the final document comparable to each other as well as to a rival offer.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "In the tolerance rules, what does permitting the consumer to shop actually buy the creditor?",
+            options: ["Access to the looser standard", "An exemption from the requirement to disclose the charge at all", "The right to substitute its own affiliate for the provider chosen", "A longer period before the Closing Disclosure must be received"],
+            correctIndex: 0,
+            explanation: "It is one of the three conditions, alongside the aggregate limit and the money not going to the creditor or an affiliate.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What is the course's description of a rule that gives looser treatment only to independent charges?",
+            options: ["A rule about self-dealing", "A rule about the accuracy of third-party price quotations", "A rule about the creditor's obligation to verify its own estimates", "A rule about which party bears the cost of a delayed settlement"],
+            correctIndex: 0,
+            explanation: "It wears the clothes of a rule about estimates, but the affiliate condition is what it is really doing.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "How does the Closing Disclosure's structure relate to the Loan Estimate's?",
+            options: ["It mirrors it", "It replaces it with an entirely different set of categories", "It condenses it into a single table of final figures", "It omits the cost detail, which appears only on the estimate"],
+            correctIndex: 0,
+            explanation: "Both run through general information, loan terms, projected payments, costs at closing and the cost detail, which is what keeps them comparable.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What does the course say an estimate nobody is held to amounts to?",
+            options: ["A sales document", "A binding offer that the creditor may withdraw only for cause", "A regulatory filing with no consequence for the consumer either way", "A projection whose accuracy the settlement agent is required to verify"],
+            correctIndex: 0,
+            explanation: "The tolerance rules are precisely what stop the Loan Estimate from being one.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "Which part of the Closing Disclosure carries the questions notice?",
+            options: ["Its own prescribed part", "A footnote to the Loan calculations table on the final page", "The signature statement, immediately above the consumer's signature", "The contact information table, alongside the creditor's details"],
+            correctIndex: 0,
+            explanation: "The regulation lists a questions notice among the form's separately prescribed parts.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What kind of loan does the Loan Estimate rule cover?",
+            options: ["Closed-end credit secured by real property", "Any consumer loan of more than one hundred thousand dollars", "Open-end credit lines secured by the consumer's principal dwelling", "Loans made by federally insured depository institutions only"],
+            correctIndex: 0,
+            explanation: "The rule also reaches a cooperative unit, and it excepts a reverse mortgage by name.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What does the course say about a lender who calls a six-item submission something other than an application?",
+            options: ["The duty attaches anyway", "The duty is suspended until the lender records it as an application", "The consumer must object in writing to start the disclosure clock", "The submission converts to an application only on the lender's approval"],
+            correctIndex: 0,
+            explanation: "It is an application whatever anyone calls it, which is the whole point of defining the term by a closed list.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "Which two questions does the Loan Terms table answer with a yes or a no?",
+            options: ["Prepayment penalty and balloon payment", "Whether the loan is assumable and whether it may be refinanced", "Whether escrow is required and whether taxes are included", "Whether the rate is fixed and whether the term exceeds thirty years"],
+            correctIndex: 0,
+            explanation: "The regulation requires a statement of whether the transaction includes each of them, under those exact labels.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What is the Loan Estimate, in the course's characterisation?",
+            options: ["A form with prescribed contents", "A letter of intent the creditor may revise at will before closing", "A marketing document the creditor designs to present its offer well", "A summary the settlement agent prepares from the creditor's file"],
+            correctIndex: 0,
+            explanation: "Its contents are prescribed paragraph by paragraph in federal regulation, which is what makes two of them comparable.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What does the course say is the entire design of the disclosure regime?",
+            options: ["Differences become visible", "Creditors are required to compete on price rather than on service", "Consumers are given a right to cancel after reviewing the documents", "Regulators can audit every transaction against a standard template"],
+            correctIndex: 0,
+            explanation: "Because the boxes are prescribed, the same number sits in the same place on both forms, so a difference is seen rather than argued about.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "Which statutes did Section 1 quote to explain why comparison is the point?",
+            options: ["TILA and RESPA", "The Fair Housing Act and the Equal Credit Opportunity Act", "The Home Mortgage Disclosure Act and Title XI of FIRREA", "The Fair Credit Reporting Act and the Truth in Savings Act"],
+            correctIndex: 0,
+            explanation: "Both statutes name disclosure and comparison among their own stated purposes.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "In the regulation's prescribed order, what follows Costs at closing on the Loan Estimate?",
+            options: ["Web site reference", "Comparisons, which ranks the loan against competing offers", "Contact information for the creditor and the loan officer", "Other considerations, including the appraisal and assumption terms"],
+            correctIndex: 0,
+            explanation: "The order then runs through the two closing cost detail sections and Calculating cash to close.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What does the course say a consumer holds back when they are not ready to apply?",
+            options: ["One of the six items", "Their consent to a credit report being obtained by the creditor", "The signed authorisation the creditor needs to order an appraisal", "Their agreement to the creditor's published schedule of charges"],
+            correctIndex: 0,
+            explanation: "A conversation missing one of the six is not an application, and no form is owed on it.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What is the relationship between the six-item list and the creditor's discretion?",
+            options: ["The list removes it", "The list is a minimum the creditor may add to by policy", "The list applies only where the creditor has adopted it in writing", "The list is advisory, and a creditor may define application differently"],
+            correctIndex: 0,
+            explanation: "Before the definition, the duty to disclose could be postponed by declining to call a conversation an application.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What does the Closing Disclosure rule require the creditor to ensure?",
+            options: ["That the consumer receives it in time", "That the consumer signs it before the transaction may be consummated", "That the figures match the Loan Estimate in every material respect", "That a settlement agent explains each entry to the consumer"],
+            correctIndex: 0,
+            explanation: "The obligation is framed as ensuring receipt no later than three business days before consummation.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What makes RESPA's kickback rule different from a disclosure rule?",
+            options: ["It makes the conduct unlawful", "It requires the payment to be shown on the Closing Disclosure", "It caps the payment at a percentage of the underlying charge", "It applies only where the consumer objects before consummation"],
+            correctIndex: 0,
+            explanation: "The statute prohibits giving or accepting the fee at all, and attaches a criminal penalty rather than a disclosure duty.",
+            sourceLessonSlug: "the-closing-disclosure-and-the-tolerances",
+          },
+          {
+            prompt: "What does the course say is the most useful single fact in this section?",
+            options: ["The six-item definition", "The three-business-day rule for receiving the Closing Disclosure", "The ten percent aggregate tolerance for third-party services", "The criminal penalty attached to an unearned settlement fee"],
+            correctIndex: 0,
+            explanation: "Almost nobody is told it, and it is what decides whether a lender owes a form at all.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "Which document does the regulation say the Loan Estimate carries good faith estimates of?",
+            options: ["The disclosures in section 1026.37", "The final settlement statement prepared by the settlement agent", "The promissory note the consumer will sign at consummation", "The appraisal report the creditor obtains on the subject property"],
+            correctIndex: 0,
+            explanation: "Section 1026.37 is the provision that prescribes the Loan Estimate's contents box by box.",
+            sourceLessonSlug: "what-starts-the-clock",
+          },
+          {
+            prompt: "What label does the regulation require beside the initial periodic payment?",
+            options: ["Principal and Interest", "Monthly Payment, stated to the nearest whole dollar", "Total Payment, including escrowed tax and insurance amounts", "Scheduled Payment, as calculated at the time of application"],
+            correctIndex: 0,
+            explanation: "The regulation prescribes both the content and the label for every item in the Loan Terms table.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+          {
+            prompt: "What does the course say about the order in which two Loan Estimates should be read?",
+            options: ["The regulation's own order", "Starting from the total cash to close and working backwards", "Whichever order the creditor's loan officer recommends", "Alphabetically by the name of each charge listed on the form"],
+            correctIndex: 0,
+            explanation: "Reading them in the prescribed order is what puts the same number in the same place on both documents.",
+            sourceLessonSlug: "reading-the-loan-estimate",
+          },
+        ],
+      },
+    },
   ],
 };
