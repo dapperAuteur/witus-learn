@@ -3335,5 +3335,710 @@ Consumer Financial Protection Bureau. (2024). *Quality control standards for aut
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — The Act, the covenant, and the map
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-act-and-what-it-forbids",
+      title: "21 · One sentence of policy, and the list underneath it",
+      section: "Section 6 · The Act, the covenant, and the map",
+      body: `The Fair Housing Act opens with a sentence short enough to memorise. "It is the policy of the United States to provide, within constitutional limitations, for fair housing throughout the United States" (42 U.S.C. § 3601, n.d.).
+
+**Twenty-three words, and then the operative sections do the work.** The Act makes it unlawful, subject to stated exemptions, "To refuse to sell or rent after the making of a bona fide offer, or to refuse to negotiate for the sale or rental of, or otherwise make unavailable or deny, a dwelling to any person because of race, color, religion, sex, familial status, or national origin" (42 U.S.C. § 3604, n.d.).
+
+**Read the middle clause.** "Or otherwise make unavailable or deny" is doing something the first two clauses do not. A refusal is easy to describe; making a dwelling unavailable by some other route is the general case, and the statute reaches it without requiring anyone to have said no out loud.
+
+**The second prohibition is about terms rather than access.** It is unlawful "To discriminate against any person in the terms, conditions, or privileges of sale or rental of a dwelling, or in the provision of services or facilities in connection therewith" on the same bases (42 U.S.C. § 3604, n.d.). A tenancy granted on worse terms is covered; so are the services and facilities that come with it.
+
+**The third is about what gets said in public**, and it is unusual because no transaction has to fail for it to be violated. The Act prohibits notices, statements and advertisements about the sale or rental of a dwelling "that indicates any preference, limitation, or discrimination based on race, color, religion, sex, handicap, familial status, or national origin" (42 U.S.C. § 3604, n.d.). **A published preference is itself the violation**, which is why the wording of a listing matters and why this clause has a longer documentary trail than almost anything else in the Act.
+
+**Beside the Act sits the Equal Credit Opportunity Act**, which MONEY-01 taught in detail and which does the same job on the credit side of the transaction. It is unlawful for any creditor "to discriminate against any applicant, with respect to any aspect of a credit transaction" on the basis of "race, color, religion, national origin, sex or marital status, or age (provided the applicant has the capacity to contract)", because income derives from a public assistance program, or because the applicant exercised a right under the chapter in good faith (15 U.S.C. § 1691, n.d.).
+
+**Two statutes, two lists, and they are not identical.** ECOA names marital status, age and public assistance income; the Fair Housing Act's real estate provisions name handicap and familial status. **Anyone reasoning about a housing credit decision is inside both**, and the practical consequence is that the two Acts have to be read together rather than one being treated as a summary of the other.
+
+**Then recourse, and the numbers to remember are deadlines.** An aggrieved person may, "not later than one year after an alleged discriminatory housing practice has occurred or terminated, file a complaint with the Secretary" (42 U.S.C. § 3610, n.d.). Separately, an aggrieved person "may commence a civil action in an appropriate United States district court or State court not later than 2 years after the occurrence or the termination of an alleged discriminatory housing practice" (42 U.S.C. § 3613, n.d.).
+
+**One year to the agency route. Two years to court.** In a civil action a court "may award to the plaintiff actual and punitive damages", and may grant injunctive and other relief as it deems appropriate (42 U.S.C. § 3613, n.d.).
+
+**This course does not tell anyone to file anything**, and it is not legal advice. What it does is what Section 1 promised: name the deadline, because a deadline nobody knows about is a right that expires quietly. **In this Act, as in the tenancy statutes in Section 1, the clock is the part most often lost.**
+
+:::reveal What does the Fair Housing Act's declaration of policy say, in full? ||| It is the policy of the United States to provide, within constitutional limitations, for fair housing throughout the United States.
+
+:::reveal Why does the phrase "or otherwise make unavailable or deny" matter? ||| It reaches the general case, so a dwelling made unavailable by some other route is covered without anyone having refused out loud.
+
+:::reveal What are the two deadlines the Act sets for an aggrieved person? ||| One year to file a complaint with the Secretary, and two years to commence a civil action in a district or state court.
+
+## Vocabulary
+- **Declaration of policy**: the Act's one-sentence opening, which states the aim and leaves the operative prohibitions to the sections that follow.
+- **Otherwise make unavailable or deny**: the general clause reaching conduct that puts a dwelling out of reach without an express refusal.
+- **Discriminatory advertising**: the prohibition on notices, statements and advertisements indicating a preference, limitation or discrimination, which is violated without any transaction failing.
+- **Aggrieved person**: the party the Act permits to file with the Secretary within one year, or to bring a civil action within two.
+
+## Sources
+42 U.S.C. § 3601. (n.d.). *Declaration of policy*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/42/3601
+
+42 U.S.C. § 3604. (n.d.). *Discrimination in the sale or rental of housing and other prohibited practices*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/42/3604
+
+42 U.S.C. § 3610. (n.d.). *Administrative enforcement; preliminary matters*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/42/3610
+
+42 U.S.C. § 3613. (n.d.). *Enforcement by private persons*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/42/3613
+
+15 U.S.C. § 1691. (n.d.). *Scope of prohibition*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1691`,
+    },
+    {
+      slug: "the-covenant-is-still-in-the-file",
+      title: "22 · The covenant is still in the file, and a statute says what to do about it",
+      section: "Section 6 · The Act, the covenant, and the map",
+      body: `Section 2 said the security instrument gets recorded in a public register of interests in a specific parcel. Here is what else is in that register.
+
+**A racially restrictive covenant is a private agreement written into the chain of title**, restricting who may own or occupy a parcel. They were drafted by subdividers and neighbourhood associations, recorded like any other instrument, and they are not a rumour: they are documents, with dates and page numbers, in county recorders' offices.
+
+**What the Supreme Court did, and what it deliberately did not do.** In *Shelley v. Kraemer*, decided 3 May 1948, the Court held that "the restrictive agreements standing alone cannot be regarded as a violation of any rights guaranteed to petitioners by the Fourteenth Amendment" (Shelley v. Kraemer, 1948). But where state courts enforced them, the Court said, "We have no doubt that there has been state action in these cases in the full and complete sense of the phrase" (Shelley v. Kraemer, 1948).
+
+**Hold both halves, because the pairing is the whole point.** The agreements were left standing as private documents. What became unavailable was **judicial enforcement**, because a court putting the state's power behind the covenant is the state acting. That is a precise, limited holding, and it explains something people find baffling seventy years later: **the covenants did not vanish in 1948, because the decision did not erase them. It disarmed them.**
+
+**Which is why they are still there to be counted.** The University of Arizona's **Mapping Racist Covenants** project, led by Jason R. Jurjevich of the School of Geography, Development and Environment with collaborators Chris Kollen, Yoga Korgaonkar, Liz Wilshin and Arden Holloway, and funded by a 2022 Mellon Borderlands grant from the University Libraries, "tells the story of racist covenants in Tucson" and "explores the geography of racial covenants across Tucson neighborhoods and subdivisions, focusing on those enacted between 1912-1968" (Mapping Racist Covenants, n.d.). Its published deliverable is an interactive web map, and it pairs the covenant geography with race and ethnicity data from the 1930, 1960 and 2020 decennial censuses (Mapping Racist Covenants, n.d.).
+
+**Read what that project actually is, methodologically.** It is not an argument. It is a systematic reading of recorded documents for hundreds of subdivisions in one city, published with its scope and its dates stated. **That is the same evidentiary standard this catalog applies to itself**, and it is why this course cites a university mapping project rather than a summary of one.
+
+**And now the part almost nobody knows: in at least one state, there is a statute telling an owner exactly what to do.** Arizona's Uniform Unlawful Restrictions in Land Records Act sits at Title 33, Chapter 4, Article 7, sections 33-531 through 33-539, with sections titled Short title, Definitions, Amendment by owner, Amendment by association of owners, Requirements and limitations of amendment, Optional form for amendment by owner, Duty and liability of recorder, Uniformity of application and construction, and its relation to the federal electronic signatures statute (Ariz. Rev. Stat. tit. 33, n.d.).
+
+**Arizona defines the target.** An unlawful restriction is "a prohibition, restriction, covenant or condition in a document that interferes with or restricts the transfer, use or occupancy of real property on the basis of race, color, religion, national origin, sex, familial status or disability in violation of state or federal law" (A.R.S. § 33-532, n.d.).
+
+**And it gives the owner an instrument.** Except where the association provision applies, "an owner of real property subject to an unlawful restriction may submit to the recorder for recordation in the land records of the county in which the property is located an amendment to remove the unlawful restriction, but only as to the owner's property" (A.R.S. § 33-533, n.d.).
+
+**Separately, Arizona puts a disclaimer into the record at the state's own initiative.** Its real estate statute provides that the commissioner "shall execute and record in the office of the county recorder in each county in this state a document that disclaims the validity and enforceability of certain restrictions and covenants" (A.R.S. § 32-2107.01, n.d.).
+
+**Three moves, and they answer three different questions.** A court decision made the covenants unenforceable. A recorded state disclaimer says so in the register itself. An owner-amendment statute lets an individual strike it from their own parcel. **None of the three is a substitute for the others**, and Arizona is one state: whether your state has any equivalent is a question for your state's code, asked the same way Section 1 taught.
+
+**Where the catalog has already told this story from the other side.** *What They Built* teaches Black business districts capitalising themselves when banks would not lend, including the building and loan association as the instrument that did it. This course is the paperwork end of the same history: the same exclusion, read out of the documents that recorded it.
+
+:::reveal What did Shelley v. Kraemer hold about the restrictive agreements themselves? ||| That standing alone they cannot be regarded as a violation of any rights guaranteed by the Fourteenth Amendment.
+
+:::reveal What did the Court hold was state action? ||| Enforcement of the agreements by the state courts, which the Court said was state action in the full and complete sense of the phrase.
+
+:::reveal What does Arizona's owner-amendment statute allow, and how far does it reach? ||| An owner may record an amendment removing an unlawful restriction, but only as to the owner's own property.
+
+## Vocabulary
+- **Racially restrictive covenant**: a private agreement recorded in the chain of title restricting who may own or occupy a parcel, drafted by subdividers and neighbourhood associations.
+- **State action**: the constitutional concept Shelley turned on, under which judicial enforcement of a private agreement is the state acting.
+- **Unlawful restriction**: Arizona's statutory definition of a recorded prohibition, restriction, covenant or condition interfering with transfer, use or occupancy on a protected basis in violation of law.
+- **Amendment by owner**: the recorded instrument an Arizona owner may submit to strike an unlawful restriction, effective only as to that owner's property.
+- **Recorded disclaimer**: the document Arizona's real estate commissioner must record in every county disclaiming the validity and enforceability of certain restrictions and covenants.
+
+## Sources
+Shelley v. Kraemer, 334 U.S. 1 (1948). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/supremecourt/text/334/1
+
+Mapping Racist Covenants. (n.d.). *Mapping Racist Covenants*. University of Arizona School of Geography, Development and Environment. https://mappingracistcovenants.org/
+
+Arizona Revised Statutes § 33-532. (n.d.). *Definitions*. Arizona State Legislature. https://www.azleg.gov/ars/33/00532.htm
+
+Arizona Revised Statutes § 33-533. (n.d.). *Amendment by owner*. Arizona State Legislature. https://www.azleg.gov/ars/33/00533.htm
+
+Arizona Revised Statutes § 32-2107.01. (n.d.). *Recorded disclaimer of unlawful restrictions*. Arizona State Legislature. https://www.azleg.gov/ars/32/02107-01.htm`,
+    },
+    {
+      slug: "read-one-document-about-your-own-housing",
+      title: "23 · Capstone: the finding Congress wrote down, and one document of your own",
+      section: "Section 6 · The Act, the covenant, and the map",
+      body: `There is one more primary document, and it is the strongest thing in this course, because it is not an allegation. It is a finding of fact that Congress enacted into the United States Code.
+
+**The Home Mortgage Disclosure Act opens with it.** "The Congress finds that some depository institutions have sometimes contributed to the decline of certain geographic areas by their failure pursuant to their chartering responsibilities to provide adequate home financing to qualified applicants on reasonable terms and conditions" (12 U.S.C. § 2801, n.d.).
+
+**Read it as what it is.** Not a study, not a claim by an advocate, not a characterisation by this course. A legislature wrote down that lending institutions had contributed to the decline of geographic areas by failing to lend to qualified applicants, and then built a disclosure regime on top of that finding.
+
+**And the purpose clause says who the data is for.** The Act's purpose is "to provide the citizens and public officials of the United States with sufficient information to enable them to determine whether depository institutions are filling their obligations to serve the housing needs of the communities and neighborhoods in which they are located", and to assist public officials in determining the distribution of public sector investments (12 U.S.C. § 2801, n.d.).
+
+**Citizens is the first word in that list.** The data exists so ordinary people can check, which makes this the rare case where a course can say "and you can go and look" without hand-waving.
+
+**Three courses in this catalog already carry the history this statute is about**, and this is the paperwork end of all three. *What They Built* has the institutions Black communities built when the lending was not available. *The County Committee* has a federal credit gate with a statutory eligibility standard administered by neighbours, which is the shape of every gate in this course one level up. *Financing Without Access* has the procedure: ask which door was closed, what pool replaced it, and who bears the risk. **This course adds the modern document to each of them.**
+
+**The capstone, and it runs on your own material.** Get one real document about your own housing and read it against this course. Choose whichever one you actually have.
+
+**If you rent:** your lease. Find the four things Section 1 named for your state, not Arizona's: the deposit cap, the labelling rule for nonrefundable charges, the deadline for returning money, and the remedy. Then read your lease against them and write down every term that is a choice rather than a restatement of law.
+
+**If you have a mortgage:** your Closing Disclosure. Find Loan Calculations. Write down the total of payments, the annual percentage rate and the total interest percentage, and check the last one against what you would have computed from Section 2's four steps. Then find the seller's summary if the sale had one, and note what leaving cost the other party.
+
+**If you are neither:** your county recorder's index. Look up any parcel and read what is recorded against it. In Tucson, compare it with the Mapping Racist Covenants map. Anywhere else, ask the same question the project asked: what is in the chain of title, and who put it there.
+
+**Write one page, under three headings.** What the document says. What it left to law rather than deciding itself. **And what you could not verify.** That third heading is the discipline this catalog applies to its own sources, and it is the one worth keeping.
+
+**What you will have at the end.** Not a decision, and not an answer to whether you should rent or buy. **This course still gives no financial advice and still refuses that question**, for the same reason it refused it in lesson 1: the answer depends on your income, your household, your work, your health and how long you expect to stay, and no course knows any of that. What you will have is the mechanism, the deadlines, the arithmetic, the documents you are entitled to, and the knowledge of exactly which statute answers each remaining question. **That is a different thing from advice, and in this domain it is worth considerably more.**
+
+:::reveal What did Congress find and enact in the Home Mortgage Disclosure Act's opening section? ||| That some depository institutions have sometimes contributed to the decline of certain geographic areas by failing to provide adequate home financing to qualified applicants on reasonable terms.
+
+:::reveal Who does HMDA's purpose clause name first as the audience for the information? ||| Citizens, alongside public officials, so ordinary people can determine whether institutions are serving their communities' housing needs.
+
+:::reveal What are the three headings of the capstone's one-page write-up? ||| What the document says, what it left to law, and what you could not verify.
+
+## Vocabulary
+- **Congressional finding**: a statement of fact enacted in the text of a statute, which is why HMDA's opening is evidence rather than an allegation.
+- **Public data**: information a statute requires to be produced so that citizens and officials can check institutional behaviour for themselves.
+- **Chain of title**: the sequence of recorded instruments affecting a parcel, which is where both a lender's interest and any surviving covenant appear.
+- **Capstone document**: whichever real housing document a learner actually holds, read against the course rather than against a summary of it.
+
+## Sources
+12 U.S.C. § 2801. (n.d.). *Congressional findings and declaration of purpose*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/12/2801
+
+Mapping Racist Covenants. (n.d.). *Mapping Racist Covenants*. University of Arizona School of Geography, Development and Environment. https://mappingracistcovenants.org/`,
+    },
+    {
+      slug: "quiz-the-map",
+      title: "24 · Knowledge check: the Act, the covenant, and the map",
+      section: "Section 6 · The Act, the covenant, and the map",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What does the Fair Housing Act's declaration of policy state?",
+            options: ["Fair housing throughout the United States", "That every citizen has an enforceable right to adequate shelter", "That the Secretary shall set national standards for residential leases", "That federal funds may not be used for segregated housing programmes"],
+            correctIndex: 0,
+            explanation: "The full sentence adds the qualifier within constitutional limitations, and the operative sections do the work.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "Which clause of the sale-or-rental prohibition reaches the general case?",
+            options: ["Otherwise make unavailable or deny", "Refuse to sell or rent after a bona fide offer", "Refuse to negotiate for the sale or rental of a dwelling", "Discriminate in the terms, conditions or privileges of a rental"],
+            correctIndex: 0,
+            explanation: "It reaches conduct putting a dwelling out of reach without anyone having refused out loud.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What triggers the first prohibition's refusal-to-sell clause?",
+            options: ["A bona fide offer", "A signed purchase contract between the parties", "An application accompanied by proof of financing", "A written request for a showing of the property"],
+            correctIndex: 0,
+            explanation: "The statute makes it unlawful to refuse to sell or rent after the making of a bona fide offer, on the listed bases.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What does the second prohibition cover, beyond access?",
+            options: ["Terms, conditions, privileges, services and facilities", "The price at which a dwelling may be advertised for sale", "The order in which applications must be considered by a landlord", "The identity of the settlement agent used to close a transaction"],
+            correctIndex: 0,
+            explanation: "A tenancy granted on worse terms is covered, and so are the services and facilities provided in connection with it.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What makes the advertising prohibition unusual?",
+            options: ["No transaction has to fail", "It applies only to advertisements placed in print media", "It requires the Secretary to approve listing language in advance", "It is enforced by the states rather than by the federal government"],
+            correctIndex: 0,
+            explanation: "A published preference is itself the violation, which is why the wording of a listing matters.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What does the advertising provision prohibit a notice from indicating?",
+            options: ["A preference, limitation, or discrimination", "A price above the property's most recent appraised value", "A requirement that applicants provide a credit report", "A restriction on the number of occupants per bedroom"],
+            correctIndex: 0,
+            explanation: "The prohibition runs on the statute's listed protected bases, and it applies to notices, statements and advertisements alike.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What does ECOA make unlawful for a creditor?",
+            options: ["Discriminating in any aspect of a credit transaction", "Refusing an application without a written statement of reasons", "Charging different rates to applicants with different credit scores", "Obtaining a consumer report without the applicant's written consent"],
+            correctIndex: 0,
+            explanation: "The phrase any aspect is what makes the prohibition reach beyond the approval decision itself.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "Which basis appears in ECOA's list but not in the Fair Housing Act's?",
+            options: ["Marital status", "Familial status, which covers households with children", "Handicap, which covers applicants with a disability", "National origin, which covers applicants born abroad"],
+            correctIndex: 0,
+            explanation: "ECOA also names age and income from a public assistance program; the Fair Housing Act names handicap and familial status.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What does ECOA say about income from a public assistance program?",
+            options: ["A creditor may not discriminate because of it", "It must be counted at half its value in underwriting", "It may be excluded where the program has a fixed end date", "It must be verified directly with the administering agency"],
+            correctIndex: 0,
+            explanation: "The prohibition covers discrimination because all or part of the applicant's income derives from any public assistance program.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What does ECOA protect an applicant who has exercised a right under the chapter?",
+            options: ["Against discrimination for having done so in good faith", "Against any adverse action for a period of twelve months", "Against the creditor obtaining a further consumer report", "Against the transaction being reported to a credit bureau"],
+            correctIndex: 0,
+            explanation: "It is the third paragraph of the prohibition, alongside the protected bases and public assistance income.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What does the course say follows from the two statutes' lists not being identical?",
+            options: ["They must be read together", "The broader list controls wherever the two overlap", "The later statute supersedes the earlier one in housing cases", "Only one of them can apply to any given transaction"],
+            correctIndex: 0,
+            explanation: "Anyone reasoning about a housing credit decision is inside both, so neither is a summary of the other.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "How long does an aggrieved person have to file a complaint with the Secretary?",
+            options: ["One year", "Two years, matching the deadline for a civil action", "Ninety days from the date the practice was discovered", "Six months, extendable on a showing of good cause"],
+            correctIndex: 0,
+            explanation: "The period runs from the date the alleged discriminatory housing practice occurred or terminated.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "How long does an aggrieved person have to commence a civil action?",
+            options: ["Two years", "One year, the same period as the administrative complaint", "Three years, matching the general federal limitation period", "Five years, or ten where the practice was concealed"],
+            correctIndex: 0,
+            explanation: "The action may be brought in an appropriate United States district court or a state court.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What may a court award to a plaintiff in such a civil action?",
+            options: ["Actual and punitive damages", "A statutory penalty fixed by the Secretary each year", "Restitution limited to the amount of any rent overpaid", "Criminal penalties against the party found to have discriminated"],
+            correctIndex: 0,
+            explanation: "The court may also grant injunctive and other relief as it deems appropriate, subject to the section's own limits.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "Why does the course name these deadlines at all?",
+            options: ["A deadline nobody knows expires quietly", "Because the course recommends filing within the shorter period", "Because a complaint filed late is transferred to the state agency", "Because the deadlines determine which court has jurisdiction"],
+            correctIndex: 0,
+            explanation: "The course does not tell anyone to file anything; naming the clock is what Section 1 promised to do everywhere.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What does the course say is most often lost, in this Act as in the tenancy statutes?",
+            options: ["The clock", "The written notice the other side was required to send", "The identity of the party actually responsible for the conduct", "The documentary record of what was said during the transaction"],
+            correctIndex: 0,
+            explanation: "It is the same observation Section 1 made about tenant remedies, applied to a federal statute.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What is a racially restrictive covenant?",
+            options: ["A recorded private agreement in the chain of title", "A zoning ordinance adopted by a municipal government", "A lending policy adopted by a federally chartered institution", "An underwriting rule published by a secondary market purchaser"],
+            correctIndex: 0,
+            explanation: "They were drafted by subdividers and neighbourhood associations, recorded like any other instrument, and they are documents with dates and page numbers.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "When was Shelley v. Kraemer decided?",
+            options: ["3 May 1948", "11 April 1968, when the Fair Housing Act was enacted", "17 May 1954, alongside the school desegregation ruling", "1 October 1925, when the covenants first reached the Court"],
+            correctIndex: 0,
+            explanation: "The decision addressed judicial enforcement of restrictive agreements under the Fourteenth Amendment.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What did the Court hold about the restrictive agreements standing alone?",
+            options: ["They violated no Fourteenth Amendment right", "They were void from the moment they were recorded", "They were enforceable between the original parties only", "They violated the Fourteenth Amendment on their face"],
+            correctIndex: 0,
+            explanation: "The Court's holding was that standing alone they could not be regarded as a violation of any right guaranteed to the petitioners.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What did the Court say about the state courts' enforcement?",
+            options: ["It was state action", "It was a matter of private contract law only", "It required a further finding of discriminatory intent", "It was permissible where the parties had agreed in advance"],
+            correctIndex: 0,
+            explanation: "The Court said there had been state action in these cases in the full and complete sense of the phrase.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What did Shelley do to the covenants, in the course's phrasing?",
+            options: ["Disarmed them", "Erased them from every county land record", "Converted them into enforceable zoning restrictions", "Left them fully enforceable between private parties"],
+            correctIndex: 0,
+            explanation: "The decision did not erase them, which is exactly why they are still in the records to be counted.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Why does the course say people find the covenants' survival baffling?",
+            options: ["They assume the decision erased them", "Because recorded documents are normally destroyed after fifty years", "Because the Fair Housing Act required counties to remove them", "Because the covenants were never recorded in the first place"],
+            correctIndex: 0,
+            explanation: "The holding was precise and limited: what became unavailable was judicial enforcement, not the documents themselves.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Which institution runs the Mapping Racist Covenants project?",
+            options: ["The University of Arizona", "The National Archives and Records Administration", "The Department of Housing and Urban Development", "The Pima County Recorder's own historical office"],
+            correctIndex: 0,
+            explanation: "It is led from the School of Geography, Development and Environment and funded by a 2022 Mellon Borderlands grant from the University Libraries.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Which city does the Mapping Racist Covenants project cover?",
+            options: ["Tucson", "Phoenix, together with its surrounding municipalities", "Baltimore, where the earliest covenants were recorded", "Chicago, where the Supreme Court case originated"],
+            correctIndex: 0,
+            explanation: "It explores the geography of racial covenants across Tucson neighborhoods and subdivisions.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What date range does the project state for the covenants it studies?",
+            options: ["1912 to 1968", "1948 to 1988, from Shelley to the Act's amendment", "1900 to 1930, the peak decades of subdivision", "1968 to the present, after the Fair Housing Act"],
+            correctIndex: 0,
+            explanation: "The project states that it focuses on covenants enacted between those years.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Which census years does the project pair with its covenant geography?",
+            options: ["1930, 1960 and 2020", "1910, 1950 and 2010, at forty-year intervals", "Every decennial census from 1900 to the present", "1940 and 2020 only, being the first and last available"],
+            correctIndex: 0,
+            explanation: "The map includes race and ethnicity data from those decennial censuses alongside the covenant boundaries.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "How does the course describe the project methodologically?",
+            options: ["A systematic reading of recorded documents", "An argument supported by selected historical examples", "A statistical model estimating where covenants were likely used", "An oral history assembled from interviews with long-term residents"],
+            correctIndex: 0,
+            explanation: "It is published with its scope and its dates stated, which is the same evidentiary standard the catalog applies to itself.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Why does the course cite the mapping project rather than a summary of it?",
+            options: ["The project states its own scope and dates", "Because summaries are protected by copyright and cannot be quoted", "Because the project is the only source that mentions Tucson at all", "Because a university source is automatically preferred to a news one"],
+            correctIndex: 0,
+            explanation: "The catalog's own standard is to cite what states its scope and can be checked, rather than a characterisation of it.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Where does Arizona put its Uniform Unlawful Restrictions in Land Records Act?",
+            options: ["Title 33, Chapter 4, Article 7", "Title 33, Chapter 10, with the landlord and tenant provisions", "Title 32, Chapter 20, with the real estate licensing statutes", "Title 41, Chapter 9, with the civil rights enforcement provisions"],
+            correctIndex: 0,
+            explanation: "It runs from section 33-531 through 33-539, beginning with a short title and definitions.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "How does Arizona define an unlawful restriction?",
+            options: ["A recorded restriction on a protected basis violating law", "Any covenant recorded before the Fair Housing Act took effect", "Any restriction a county recorder has flagged for review", "Any provision a court has declined to enforce in a prior case"],
+            correctIndex: 0,
+            explanation: "The definition names prohibitions, restrictions, covenants or conditions interfering with transfer, use or occupancy on the listed bases.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Which protected bases does Arizona's definition of an unlawful restriction list?",
+            options: ["Race, color, religion, national origin, sex, familial status, disability", "Race and color only, matching the original covenants' language", "Race, religion and national origin, following the state constitution", "Every basis named in the Fair Housing Act plus source of income"],
+            correctIndex: 0,
+            explanation: "The definition requires that the restriction interfere with transfer, use or occupancy on one of those bases in violation of state or federal law.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What may an Arizona owner submit to the recorder?",
+            options: ["An amendment removing the unlawful restriction", "A petition asking a court to strike the covenant from the record", "A sworn statement that the covenant was never enforced", "A request that the county destroy the original recorded instrument"],
+            correctIndex: 0,
+            explanation: "It is recorded in the land records of the county where the property is located, and the statute excepts property governed by the association provision.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "How far does an owner's amendment reach?",
+            options: ["Only as to the owner's property", "To every parcel in the subdivision the covenant covered", "To every parcel the same subdivider originally developed", "To the whole county once the recorder accepts the filing"],
+            correctIndex: 0,
+            explanation: "The statute says so expressly, which is why a separate provision exists for amendment by an association of owners.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Which Arizona section covers amendment by an association of owners?",
+            options: ["33-534", "33-533, the same section that covers owners generally", "33-537, which addresses the recorder's duty and liability", "33-539, which addresses electronic signatures"],
+            correctIndex: 0,
+            explanation: "The article's sections run through short title, definitions, the two amendment routes, requirements and limitations, an optional form, and the recorder's duty.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What must Arizona's real estate commissioner execute and record?",
+            options: ["A disclaimer of validity and enforceability", "A list of every subdivision containing a racist covenant", "A certificate confirming each parcel's current ownership", "An annual report on discriminatory practices in the state"],
+            correctIndex: 0,
+            explanation: "The statute requires it to be recorded in the office of the county recorder in each county in the state.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "How many distinct moves does the course say Arizona's three provisions represent?",
+            options: ["Three, answering different questions", "One, repeated in three different statutes", "Two, a court remedy and an administrative remedy", "Four, once the Fair Housing Act is counted alongside them"],
+            correctIndex: 0,
+            explanation: "A court decision made covenants unenforceable, a recorded disclaimer says so in the register, and an owner may strike it from their own parcel.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What does the course say about whether these Arizona provisions apply elsewhere?",
+            options: ["It is a question for your own state's code", "They apply nationally, because the act is uniform", "They apply in any state that has adopted a uniform act", "They apply wherever a covenant was recorded before 1968"],
+            correctIndex: 0,
+            explanation: "Arizona is one state, and the question is asked the same way Section 1 taught for tenancy law.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Which catalog course does this lesson name as telling the same history from the other side?",
+            options: ["What They Built", "Banking and the Unbanked, on households with no deposit account", "Credit Decisions, on the record a lender reads before deciding", "Surplus Funds Basics, on money left after a forced sale"],
+            correctIndex: 0,
+            explanation: "It teaches Black business districts capitalising themselves when banks would not lend, including the building and loan association.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "How does this course describe its own relationship to that history?",
+            options: ["The paperwork end of it", "A fuller retelling with additional primary sources", "A correction of several claims made in the earlier course", "An unrelated treatment that happens to share a subject"],
+            correctIndex: 0,
+            explanation: "The same exclusion, read out of the documents that recorded it, rather than re-narrated.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What kind of statement is the Home Mortgage Disclosure Act's opening?",
+            options: ["A congressional finding", "A preamble with no operative legal effect", "A summary of testimony given at committee hearings", "A regulation issued by the supervising federal agency"],
+            correctIndex: 0,
+            explanation: "It is a statement of fact enacted into the United States Code, which is why the course calls it evidence rather than allegation.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What did Congress find that some depository institutions had contributed to?",
+            options: ["The decline of certain geographic areas", "A shortage of housing units in fast-growing metropolitan areas", "An increase in the cost of settlement services for consumers", "A reduction in the value of loans held in the secondary market"],
+            correctIndex: 0,
+            explanation: "By their failure, pursuant to their chartering responsibilities, to provide adequate home financing to qualified applicants on reasonable terms.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "To whom did Congress say the institutions had failed to provide financing?",
+            options: ["Qualified applicants", "Applicants in areas designated as underserved", "First-time buyers with limited savings for a down payment", "Applicants whose income derived from public assistance"],
+            correctIndex: 0,
+            explanation: "The finding turns on qualified applicants and reasonable terms and conditions, which is what makes it a finding about the lender.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "Who does HMDA's purpose clause name first as the audience for the information?",
+            options: ["Citizens", "Federal banking regulators supervising the institutions", "Public officials responsible for local investment decisions", "The institutions themselves, for their own compliance reviews"],
+            correctIndex: 0,
+            explanation: "Citizens and public officials, so ordinary people can determine whether institutions are serving their communities' housing needs.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What does the purpose clause say the information should let people determine?",
+            options: ["Whether institutions are serving their communities", "Whether a particular application was refused unlawfully", "Whether interest rates are consistent across neighbourhoods", "Whether appraisals reflect a property's true market value"],
+            correctIndex: 0,
+            explanation: "It also assists public officials in determining the distribution of public sector investments.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "Why does the course say HMDA lets it avoid hand-waving?",
+            options: ["Readers can go and look", "Because the statute names the institutions that were at fault", "Because the data is delivered directly to affected households", "Because the agency publishes a finding on every application"],
+            correctIndex: 0,
+            explanation: "The data exists so ordinary people can check, which is a rare property for a claim in this domain.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "Which three catalog courses does the capstone name as carrying the history?",
+            options: ["What They Built, The County Committee, Financing Without Access", "Credit Decisions, Banking and the Unbanked, Surplus Funds Basics", "The Great Migration, Baltimore Chain, Cooperatives", "Know Your Rights, Media Literacy, Business Governance"],
+            correctIndex: 0,
+            explanation: "This course adds the modern document to each of them rather than re-narrating what they already teach.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What procedure does Financing Without Access supply, according to the capstone?",
+            options: ["Which door closed, what replaced it, who bears the risk", "How to compute an annual percentage rate from a flat fee", "How to locate the statute governing a residential tenancy", "How to read a consumer report and dispute an inaccurate item"],
+            correctIndex: 0,
+            explanation: "It is the reading procedure the catalog applies to any exclusion, and this course applies it to housing documents.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "If a learner rents, which document does the capstone ask for?",
+            options: ["Their lease", "Their most recent rent receipt and bank statement", "The landlord's certificate of occupancy for the building", "A copy of the state's landlord and tenant statute"],
+            correctIndex: 0,
+            explanation: "Read against the four things Section 1 named, found for the learner's own state rather than for Arizona.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What does the capstone ask a renter to write down after reading their lease?",
+            options: ["Every term that is a choice, not law", "The total rent payable over the remaining term", "The name and address of the property's legal owner", "The date on which the tenancy may next be terminated"],
+            correctIndex: 0,
+            explanation: "Knowing which terms merely restate law is what makes the rest of the document readable.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "If a learner has a mortgage, which table does the capstone send them to?",
+            options: ["Loan Calculations", "Calculating cash to close on the Loan Estimate", "Projected payments on the Closing Disclosure", "The summary of the borrower's transaction"],
+            correctIndex: 0,
+            explanation: "It carries the total of payments, the annual percentage rate and the total interest percentage.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What does the capstone ask a mortgage holder to check the total interest percentage against?",
+            options: ["Their own four-step calculation", "The figure quoted on the original Loan Estimate", "The average for loans of the same size and term", "The interest rate stated in the promissory note"],
+            correctIndex: 0,
+            explanation: "Section 2's four steps produce the same figure, which is what turns the form from jargon into arithmetic already done.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "If a learner neither rents nor owns, what does the capstone send them to?",
+            options: ["Their county recorder's index", "A published national dataset of housing transactions", "The Fair Housing Act's text and its implementing regulations", "A lender's published schedule of rates and closing costs"],
+            correctIndex: 0,
+            explanation: "Look up any parcel and read what is recorded against it, asking what is in the chain of title and who put it there.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What comparison does the capstone suggest for a learner in Tucson?",
+            options: ["The recorder's index against the covenants map", "Two Loan Estimates from competing local lenders", "The county assessment against the appraiser's valuation", "The state statute against the city's own ordinance"],
+            correctIndex: 0,
+            explanation: "Anywhere else, the same question the project asked still applies to the chain of title.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What is the third heading of the capstone's one-page write-up?",
+            options: ["What you could not verify", "What you intend to do about the document", "What the other party is likely to argue", "What the document is worth in dollar terms"],
+            correctIndex: 0,
+            explanation: "It is the discipline the catalog applies to its own sources, and the course says it is the heading worth keeping.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What are the first two headings of the capstone write-up?",
+            options: ["What it says, and what it left to law", "What it costs, and what it saves over the horizon", "Who wrote it, and when it was recorded or delivered", "What is accurate, and what should be disputed"],
+            correctIndex: 0,
+            explanation: "The third heading, what you could not verify, is the one the course singles out as the discipline to keep.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What does the capstone say a learner will NOT have at the end?",
+            options: ["A decision about renting or buying", "A record of the deadlines each statute sets", "A completed reading of one of their own documents", "An understanding of which statute answers each question"],
+            correctIndex: 0,
+            explanation: "The course still gives no financial advice and still refuses that question for the reason it gave in lesson 1.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "Why does the course refuse the rent-or-buy question at the very end, as at the start?",
+            options: ["It depends on facts the course lacks", "Because answering it would require a professional licence", "Because the arithmetic cannot be completed without a rate", "Because the answer changes too quickly to be worth printing"],
+            correctIndex: 0,
+            explanation: "Income, household, work, health and expected length of stay, none of which a course knows about any reader.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What does the capstone say the learner will have instead?",
+            options: ["The mechanism, the deadlines, and the documents", "A ranked shortlist of the lenders worth approaching", "A projection of housing costs over the next ten years", "An assessment of whether their own lease is enforceable"],
+            correctIndex: 0,
+            explanation: "Plus the arithmetic and the knowledge of exactly which statute answers each remaining question.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "How does the course value that outcome against advice?",
+            options: ["Worth considerably more in this domain", "Roughly equivalent, since both lead to the same decision", "Less useful, but the only thing the course may lawfully give", "Interchangeable, provided the learner does the reading"],
+            correctIndex: 0,
+            explanation: "It is a different thing from advice, and the course says so in the final paragraph.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "How does the course describe the county land record in the capstone vocabulary?",
+            options: ["The chain of title", "A private register maintained by the title insurers", "A federal database of encumbrances on residential property", "A summary of transactions compiled from lender reports"],
+            correctIndex: 0,
+            explanation: "It is where both a lender's interest and any surviving covenant appear, which is why Section 2 and Section 6 meet there.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "Which shape does the capstone say The County Committee supplies?",
+            options: ["A gate with a statutory standard, run by neighbours", "A method for pricing a loan against its stated fees", "A record of the districts Black communities built", "A procedure for disputing an inaccurate consumer report"],
+            correctIndex: 0,
+            explanation: "It is the shape of every gate in this course, taught one level up in a federal credit programme.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What does the course say about the difference between a study and HMDA's opening?",
+            options: ["A legislature enacted it", "A study carries more evidentiary weight in litigation", "There is no difference, since both describe the same conduct", "The opening is an agency characterisation rather than a statute"],
+            correctIndex: 0,
+            explanation: "It is not a claim by an advocate or a characterisation by this course; it is text in the United States Code.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What did Congress build on top of the finding in HMDA's opening?",
+            options: ["A disclosure regime", "A federal insurance fund for underserved areas", "A cap on the interest rates chartered institutions may charge", "A licensing requirement for appraisers working in those areas"],
+            correctIndex: 0,
+            explanation: "The purpose clause explains who the resulting information is for, naming citizens and public officials.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "Which register does Section 2 and Section 6 both send a learner to?",
+            options: ["The county land record", "The state's consumer protection database", "The federal register of mortgage originations", "The lender's own file on the transaction"],
+            correctIndex: 0,
+            explanation: "A security instrument is recorded there, and so is a surviving covenant, which is why the course ends where it does.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Who drafted the covenants the course describes?",
+            options: ["Subdividers and neighbourhood associations", "County recorders, as a condition of accepting a plat", "State legislatures, in statutes later held unconstitutional", "Federal housing agencies, as a condition of insuring a loan"],
+            correctIndex: 0,
+            explanation: "They were then recorded like any other instrument, which is why they survive as documents with dates and page numbers.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What does the course call the Arizona statute's optional form provision?",
+            options: ["One of the article's nine sections", "A model the recorder must accept without alteration", "A requirement that every amendment use identical wording", "A federal template adopted by every state that enacted the act"],
+            correctIndex: 0,
+            explanation: "The article runs 33-531 to 33-539 and includes an optional form for amendment by owner among its sections.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Which section of the Arizona article addresses the recorder?",
+            options: ["Duty and liability of recorder", "Requirements and limitations of amendment", "Uniformity of application and construction", "Relation to the electronic signatures statute"],
+            correctIndex: 0,
+            explanation: "It sits among the article's nine sections, after the two amendment routes and the requirements provision.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "How does the course characterise the relationship between the three Arizona provisions?",
+            options: ["None substitutes for the others", "The owner amendment supersedes the commissioner's disclaimer", "The disclaimer makes the owner amendment legally unnecessary", "The court decision made both statutory provisions redundant"],
+            correctIndex: 0,
+            explanation: "They answer three different questions: enforceability, what the register says, and what an individual owner may do.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "Which protected bases does the Fair Housing Act's sale-or-rental prohibition list?",
+            options: ["Race, color, religion, sex, familial status, national origin", "Race and color only, as originally enacted in 1866", "Race, color, religion, national origin, marital status, age", "Every basis in the Equal Credit Opportunity Act's own list"],
+            correctIndex: 0,
+            explanation: "The advertising clause is stated with handicap included, which is one reason the two Acts have to be read as written.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What does the course say about the length of the Act's policy declaration?",
+            options: ["Short enough to memorise", "Longer than any other section of the statute", "Deliberately vague so that courts could develop it", "Written to be read alongside the implementing regulations"],
+            correctIndex: 0,
+            explanation: "Twenty-three words, after which the operative sections do the work.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "Which document does the capstone say each learner should choose?",
+            options: ["Whichever one they actually have", "The one that best demonstrates a violation of the Act", "The most recent one issued to them by a financial institution", "The one their state statute requires them to retain"],
+            correctIndex: 0,
+            explanation: "A lease, a Closing Disclosure, or a county recorder's index entry, read against the course rather than against a summary.",
+            sourceLessonSlug: "read-one-document-about-your-own-housing",
+          },
+          {
+            prompt: "What qualifier does the Fair Housing Act's declaration of policy contain?",
+            options: ["Within constitutional limitations", "Subject to appropriations made by the Congress", "To the extent consistent with state property law", "Except where a state has enacted its own equivalent"],
+            correctIndex: 0,
+            explanation: "The sentence is twenty-three words long, and the operative prohibitions follow in later sections.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "Which of these does the Act's second prohibition expressly name alongside terms and conditions?",
+            options: ["Services or facilities", "Advertising and promotional materials", "The identity of the prospective occupants", "The financing offered in connection with the sale"],
+            correctIndex: 0,
+            explanation: "Discrimination in the provision of services or facilities in connection with a sale or rental is covered by the same clause.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What does ECOA's phrase \"any aspect of a credit transaction\" do?",
+            options: ["Reaches beyond the approval decision", "Limits the prohibition to the decision to extend credit", "Confines the statute to closed-end consumer transactions", "Applies the prohibition only to applications made in writing"],
+            correctIndex: 0,
+            explanation: "It is why MONEY-01 could teach the statement of reasons as part of the same prohibition.",
+            sourceLessonSlug: "the-act-and-what-it-forbids",
+          },
+          {
+            prompt: "What is Arizona's article on unlawful restrictions called?",
+            options: ["Uniform Unlawful Restrictions in Land Records Act", "Arizona Residential Landlord and Tenant Act", "Recorded Disclaimer of Unlawful Restrictions Act", "Arizona Fair Housing and Land Records Act"],
+            correctIndex: 0,
+            explanation: "It sits at Title 33, Chapter 4, Article 7, sections 33-531 through 33-539.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What must a restriction do to fall within Arizona's definition?",
+            options: ["Interfere with transfer, use or occupancy", "Have been recorded before the Fair Housing Act's enactment", "Be enforceable under the terms of the original subdivision plat", "Apply to more than one parcel within the same subdivision"],
+            correctIndex: 0,
+            explanation: "On a listed protected basis, and in violation of state or federal law.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "In which counties must Arizona's commissioner record the disclaimer?",
+            options: ["Each county in the state", "Only the counties containing a major metropolitan area", "Only counties in which an unlawful restriction has been identified", "Only Pima County, where the mapping project was conducted"],
+            correctIndex: 0,
+            explanation: "The statute directs the commissioner to execute and record the document in the office of the county recorder in each county.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+          {
+            prompt: "What does the course say the covenants are, as against a rumour?",
+            options: ["Documents with dates and page numbers", "Practices reconstructed from oral histories of the period", "Policies inferred from the pattern of who lived where", "Allegations that historians continue to debate today"],
+            correctIndex: 0,
+            explanation: "They sit in county recorders' offices, which is what makes a systematic reading of them possible at all.",
+            sourceLessonSlug: "the-covenant-is-still-in-the-file",
+          },
+        ],
+      },
+    },
   ],
 };
