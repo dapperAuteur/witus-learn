@@ -513,26 +513,6 @@ export const JURISDICTION: JurisdictionFile = {
     // NEW 2026-08-28. This whole course was rejected in the July 2026 pass with the sentence
     // "It also does no personal-finance instruction", which was true then. One student expectation
     // is now genuinely taught, so the framework exists rather than the course being unrepresented.
-    {
-      id: "tx-personal-financial-literacy",
-      subject: "Social Studies",
-      name: "TEKS for Social Studies — Personal Financial Literacy (§113.49)",
-      publisher: "Texas Education Agency (TEA) / State Board of Education (SBOE)",
-      version: "One-Half Credit · Adopted 2016 (19 TAC ch. 113, subch. C · August 2024 update)",
-      fetchedOn: "2026-08-28",
-      sourceUrl: SS_SUBCH_C,
-      adoption:
-        "Texas's standalone Personal Financial Literacy elective, recommended for Grades 10-12 and taught in the social studies department. Its fifteen knowledge-and-skills statements run from goal setting through credit, insurance, estate planning and paying for college, and this catalog reaches one of them. Texas states its own reading rule at §113.49(b)(7): statements containing the word \"including\" reference content that must be mastered, while those containing \"such as\" are illustrative examples. The claim below relies on that rule. Codes are Texas's own TEKS, transcribed verbatim.",
-      standards: [
-        {
-          code: "§113.49(c)(4)(C)",
-          text: "compare total costs of alternative methods of payment such as rent-to-own, store credit, installment agreements, cash, bank credit card, and debit card; and",
-          claimIds: ["money.unbanked-and-alternative-services", "money.consumer-deposit-accounts"],
-          coverage: "partial",
-          note: "Partial, and the partiality is about which methods rather than about the skill. Comparing the TOTAL cost of alternative methods of payment is the whole of the banking course's fifth section, done from published prices: a postal money order fee schedule, a state regulator's check-casher fee cap, a prepaid account's pre-acquisition short form, and the account disclosures a depository institution must provide. Because §113.49(b)(7) makes a \"such as\" list illustrative, the comparison need not use Texas's examples, and it does not: cash and debit card are covered, and prepaid cards, nonbank payment apps, money orders and check cashing stand in for the rest. Rent-to-own, store credit, installment agreements and bank credit cards are NOT taught here and belong to later courses in the same series.",
-        },
-      ],
-    },
 
     // ── Personal Financial Literacy §113.49 (Adopted 2016) ─────────────────
     //
@@ -571,6 +551,13 @@ export const JURISDICTION: JurisdictionFile = {
       adoption:
         "Texas's standalone half-credit Personal Financial Literacy course, filed in social studies at Chapter 113 alongside Economics and US Government, and distinct from the §113.76 Personal Financial Literacy and Economics course adopted in 2022 (a student may not receive credit for both). Its sixteen knowledge-and-skills statements run from earning and spending through saving and investing, credit and borrowing, insuring and protecting, and paying for postsecondary education. MONEY-01 (`credit-decisions`) meets the credit-worthiness statement (c)(9) and part of (c)(10)(A), and none of the rest. Transcribed verbatim 2026-08-28 from the TEA \"currently in effect\" social studies Subchapter C PDF, whose page footer reads \"High School §113.C. — August 2024 Update\".",
       standards: [
+        {
+          code: "§113.49(c)(4)(C)",
+          text: "compare total costs of alternative methods of payment such as rent-to-own, store credit, installment agreements, cash, bank credit card, and debit card; and",
+          claimIds: ["money.unbanked-and-alternative-services", "money.consumer-deposit-accounts"],
+          coverage: "partial",
+          note: "Partial, and the partiality is about which methods rather than about the skill. Comparing the TOTAL cost of alternative methods of payment is the whole of the banking course's fifth section, done from published prices: a postal money order fee schedule, a state regulator's check-casher fee cap, a prepaid account's pre-acquisition short form, and the account disclosures a depository institution must provide. Because §113.49(b)(7) makes a \"such as\" list illustrative, the comparison need not use Texas's examples, and it does not: cash and debit card are covered, and prepaid cards, nonbank payment apps, money orders and check cashing stand in for the rest. Rent-to-own, store credit, installment agreements and bank credit cards are NOT taught here and belong to later courses in the same series.",
+        },
         {
           code: "§113.49(c)(9)(B)",
           text: "describe how to access and interpret a sample credit report and score;",
