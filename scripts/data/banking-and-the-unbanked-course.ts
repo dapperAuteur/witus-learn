@@ -2510,5 +2510,663 @@ Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national sur
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — The substitute market, priced
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "money-orders-and-check-cashing",
+      title: "17 · Money orders and check cashing, priced",
+      section: "Section 5 · The substitute market, priced",
+      body: `A household without an account still has to pay rent and still has to turn a paycheck into money. There is a market that does both, and this lesson prices it.
+
+**A money order is a prepaid paper instrument.** You hand over cash plus a fee and receive a document the payee can deposit or cash. It does what a check does for somebody who has no checking account, and unlike a personal check it cannot bounce, because it was funded before it was issued.
+
+**The United States Postal Service publishes its price, which makes it the best worked example available.** Read on **28 August 2026**, USPS listed domestic money order fees of **$2.65** for amounts from $0.01 to $500.00 and **$3.75** for $500.01 to $1,000.00, with a maximum of "$1,000 in a single order anywhere in the United States", plus a postal military money order at $0.85 (USPS, 2026).
+
+**Now check cashing, which is the other half.** A check casher converts a check into cash immediately, for a fee, usually charged as a **percentage of the check** rather than as a flat amount. The difference in structure matters: a money order fee is fixed and a check-cashing fee scales with the money.
+
+**Check-cashing fees are governed by state law, and this course will not print a fifty-state table.** Rates change, they are set by different bodies in different states, and a table with one stale row is worse than no table. Instead, learn the method: **find your own state's check-casher licensing law and the regulator that administers it**, then read the current maximum from that regulator's own publication.
+
+**Here is that method executed once, so it is concrete.** In New York, the Department of Financial Services sets the maximum under **Part 400.11 of the Superintendent's Regulations**. Its industry letter of **30 January 2023**, effective **18 January 2023**, set the maximum a licensed check casher may charge at **1.5 percent** of a check issued by a federal or state government agency for public assistance, Social Security, unemployment, retirement, veterans' benefits, emergency relief, housing assistance or a tax refund, and at **$1 or 2.2 percent of the amount, whichever is greater**, for all other checks (NYSDFS, 2023).
+
+**Read the structure of that rule rather than the numbers.** New York set two rates, and it set the lower one on government benefit checks specifically. Somebody decided that a benefit payment should not be cashed on the same terms as a payroll check, and wrote it into a regulation. Whether your state does anything similar is exactly the question the method above answers.
+
+**How much are these services used, and by whom?** From the FDIC's 2023 survey, read **28 August 2026**: **8.0 percent** of all households used nonbank money orders and **2.7 percent** used nonbank check cashing. Both fell by more than half over the decade, from **18.2 percent** and **6.9 percent** in 2013. Nonbank money transfer services were used by **6.6 percent** of households in 2023 (FDIC, 2024).
+
+**And the use is concentrated, which is the finding.** All three services remained far more common among unbanked households than banked ones. Among unbanked households that used them, "more than nine in ten" used money orders to pay bills, "three in four" who used check cashing cashed a check from work, retirement, or a government agency, and about half who used money transfer services did so to pay bills (FDIC, 2024).
+
+**That is not discretionary spending.** It is rent, utilities and wages, moving through a paid channel because the free one is closed.
+
+:::reveal Why can a money order not bounce? ||| It is funded before it is issued, so the money is already there when the payee presents it.
+
+:::reveal What is the structural difference between a money order fee and a check-cashing fee? ||| A money order fee is a fixed amount; a check-cashing fee is usually a percentage, so it scales with the size of the check.
+
+:::reveal Why does this course refuse to print a fifty-state table of check-cashing caps? ||| Rates change and are set by different bodies in different states, so a table with one stale row is worse than no table. The method for finding your own state's rule does not go stale.
+
+## Vocabulary
+- **Money order**: a prepaid paper instrument, funded at purchase, that serves the function of a check for someone without a checking account.
+- **Check casher**: a licensed nonbank business that converts a check to cash immediately for a fee, generally charged as a percentage of the check.
+- **Percentage fee**: a charge that scales with the amount, which is why the cost of check cashing rises with the size of the paycheck.
+- **State licensing law**: the level at which check-casher fee maximums are set, which is why the transferable skill is finding your state's rule rather than memorising a national number.
+- **Concentrated use**: the survey finding that these services are used far more by unbanked households, and used for bills and income rather than discretionary spending.
+
+## Sources
+United States Postal Service. (2026). *Money orders*. https://www.usps.com/shop/money-orders.htm
+
+New York State Department of Financial Services. (2023, January 30). *Industry letter: Maximum check casher fee*. https://www.dfs.ny.gov/industry_guidance/industry_letters/il20230130_max_check_casher_fee
+
+Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national survey of unbanked and underbanked households* (Section 4). https://www.fdic.gov/household-survey`,
+    },
+    {
+      slug: "prepaid-cards-and-payment-apps",
+      title: "18 · Prepaid cards and payment apps, and the disclosure on the packet",
+      section: "Section 5 · The substitute market, priced",
+      body: `Paper is not the only substitute. Two electronic ones matter more every year, and one of them has its own disclosure rule that works exactly like the account disclosures in Section 1.
+
+**A prepaid account holds money you load onto it and spend from a card.** It is not a deposit account at a bank you are a customer of, and it is not a credit product. It sits in its own regulatory category.
+
+**Regulation E gives that category a pre-acquisition disclosure, at 12 CFR 1005.18(b).** A financial institution "shall provide the disclosures required by paragraph (b) of this section **before a consumer acquires a prepaid account**". The **short form** disclosure must state a defined list of fees: the **periodic fee** (monthly or annual), the **per purchase fee**, **two ATM withdrawal fees** (in network and out of network), the **cash reload fee**, **two ATM balance inquiry fees** (in network and out of network), **customer service fees** (automated and live agent), and any **inactivity fee** with the conditions that trigger it.
+
+**And there is a retail rule that is the whole point of the design.** Where a card is sold in a store, the long form may follow acquisition only if the short form "is provided on or are visible through an outward-facing, external surface" of the packaging. In other words: on the outside of the packet, before you buy it.
+
+**Compare that with Section 1 and the shape of this course becomes visible.** A bank account's price is in a document you can request under Truth in Savings. A prepaid account's price is on the outside of the box under Regulation E. Both are the same instruction: **the price is published before you commit, and reading it is your move.**
+
+**Insurance is where prepaid gets genuinely more complicated, so this course states it carefully.** Deposit insurance covers deposits at insured banks. The FDIC's own deposit insurance FAQ, read **28 August 2026**, says that "Prepaid cards that are registered with the card issuer are insured when certain FDIC requirements are met" (FDIC, 2024). Note the two conditions in that sentence. Registered with the issuer, and certain requirements met. This is not the automatic coverage a bank deposit gets in Section 1, and whether it applies to a particular card is a fact about that card's programme rather than about prepaid cards in general.
+
+**Now the payment apps**, which the FDIC surveys separately as **nonbank online payment services** with an account feature that stores money. The survey named PayPal, Venmo and Cash App as examples and deliberately excluded Zelle, which moves money between existing bank accounts rather than storing it.
+
+**The usage split is the finding, and it is sharp.** Among households that used online payment services in 2023, **60.8 percent** of unbanked ones used them to pay bills against **24.5 percent** of banked ones; **34.3 percent** against 12.3 percent used them to receive income; and **40.9 percent** against 14.2 percent used them to save or keep money safe. Altogether, **71.5 percent** of unbanked households with online payment services used them for at least one of those three core transactions, against **33.5 percent** of banked households (FDIC, 2024).
+
+**Prepaid cards show the same pattern, harder.** Among unbanked households with prepaid cards, **73.9 percent** paid bills with them against 28.3 percent of banked households, **59.0 percent** received income against 28.6 percent, and **44.8 percent** saved or kept money safe against 19.2 percent. **90.7 percent** used them for at least one core transaction, against 46.0 percent of banked households (FDIC, 2024).
+
+**Read those two paragraphs as one sentence.** For a banked household these tools are conveniences layered on top of an account. For an unbanked household they are the account: the thing wages arrive in, bills are paid from, and money is kept in. Same product, entirely different job.
+
+:::reveal When must a prepaid account's short form disclosure be provided? ||| Before the consumer acquires the account, and for a card sold at retail it must be on or visible through the outside of the packaging.
+
+:::reveal Name three fees the short form disclosure must state. ||| The periodic fee, the per purchase fee, and the cash reload fee, alongside ATM withdrawal and balance inquiry fees, customer service fees and any inactivity fee.
+
+:::reveal Why is prepaid card insurance not the same as deposit insurance on a bank account? ||| The FDIC says such cards are insured when registered with the issuer and when certain requirements are met, which makes it conditional on the programme rather than automatic.
+
+## Vocabulary
+- **Prepaid account**: a product holding funds loaded by the consumer and spent from a card, regulated in its own category rather than as a deposit or a credit product.
+- **Short form disclosure**: the pre-acquisition fee summary Regulation E requires, which for a retail card must appear on or through the outside of the packaging.
+- **Cash reload fee**: one of the fees the short form must state, charged when a consumer adds money to the card.
+- **Nonbank online payment service**: the FDIC's category for an app with an account feature that stores money, distinct from a service that only moves money between bank accounts.
+- **Core transaction**: the survey's grouping of paying bills, receiving income, and saving or keeping money safe, which is how it measures whether a tool is doing an account's job.
+
+## Sources
+Consumer Financial Protection Bureau. (n.d.). *12 CFR 1005.18 - Requirements for financial institutions offering prepaid accounts*. https://www.consumerfinance.gov/rules-policy/regulations/1005/18/
+
+Federal Deposit Insurance Corporation. (2024, April 1). *Deposit insurance FAQs*. https://www.fdic.gov/resources/deposit-insurance/faq/
+
+Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national survey of unbanked and underbanked households* (Section 3 and Figures ES.7-ES.8). https://www.fdic.gov/household-survey`,
+    },
+    {
+      slug: "why-someone-chooses-the-substitute",
+      title: "19 · Why a reasonable person chooses the substitute",
+      section: "Section 5 · The substitute market, priced",
+      body: `The lazy version of this subject says people use check cashers because they do not know better. The survey says something else, and the arithmetic supports it.
+
+**Start with what the household is actually comparing.** Not "a bank account" against "a check casher" in the abstract. A specific, priced transaction against another specific, priced transaction, under a constraint the household did not choose.
+
+**Three properties decide it, and only one of them is price.**
+
+**One: is the cost knowable in advance?** A check-cashing fee is a posted percentage. You can compute it before you hand over the check. A money order fee is a number on a wall. An overdraft fee is knowable in amount and **unknowable in occurrence**, because whether it happens depends on posting order and on when a deposit clears. Section 2 found that **29.3 percent** of unbanked households cited fees being too unpredictable, separately from the **30.7 percent** citing fees being too high (FDIC, 2024).
+
+**Two: when is the money available?** A check casher hands over cash now. A deposit may be subject to a hold. For a household paying rent tomorrow, "now" and "in three days" are not two prices of the same thing. They are two different products.
+
+**Three: is there a minimum?** A check casher has no balance requirement. Section 2's most cited reason for having no account was not having enough money to meet a minimum balance, at **42.3 percent**.
+
+**Now do the arithmetic, as a method rather than as an answer.** To compare any two ways of moving money, convert both to the same units: **what does it cost to turn this amount into usable money, this week?**
+
+- A New York check casher, under the maximum in effect since 18 January 2023, may charge **2.2 percent** on a non-government check, or **1.5 percent** on a listed government payment. On a $600 payroll check that is up to $13.20; on a $600 benefit payment, up to $9.00.
+- A USPS money order to pay a bill cost **$2.65** for amounts up to $500 when read on **28 August 2026**.
+- A bank account's monthly maintenance fee, if not waived, is whatever that institution's account disclosures say, plus any per-item overdraft fees actually incurred that month.
+
+**The comparison is not close in either direction, and that is the point.** For a household with a stable balance the account is free and the check casher is expensive. For a household whose balance touches zero most months, the account can cost more than the posted percentage, and it costs it unpredictably. **Both households are doing the same arithmetic and getting different answers, because they are pricing different risk.**
+
+**This is why the course refuses to tell you which to use.** Which is cheaper depends on your own numbers: your fee schedule, your balance pattern, your pay timing, and your state's cap. The transferable skill is that you can now obtain all four, from documents somebody is required to give you.
+
+**One more finding that makes the whole picture honest.** The substitute market is shrinking, fast. Money order use across all households fell from 18.2 percent in 2013 to 8.0 percent in 2023, and check cashing from 6.9 percent to 2.7 percent (FDIC, 2024). Whatever is happening, it is not a story about a growing shadow economy. It is a story about a shrinking one, alongside an unbanked rate that halved between 2011 and 2023.
+
+**And a finding that keeps it from being triumphant.** **66.2 percent** of unbanked households in 2023 were cash only, using neither a prepaid card nor an online payment service. For them the substitute market is not a choice between products. It is the only counter that is open.
+
+:::reveal Name the three properties, besides price, that decide between an account and a substitute. ||| Whether the cost is knowable in advance, when the money becomes available, and whether there is a minimum balance.
+
+:::reveal Why do two households doing the same arithmetic reach opposite answers? ||| They are pricing different risk: one has a stable balance so the account is free, the other touches zero and faces unpredictable per-item fees.
+
+:::reveal What happened to the use of money orders and check cashing between 2013 and 2023? ||| Both fell by more than half across all households, from 18.2 to 8.0 percent and from 6.9 to 2.7 percent.
+
+## Vocabulary
+- **Knowable in advance**: the property a posted percentage has and an overdraft fee lacks, since occurrence depends on posting order and deposit timing.
+- **Availability**: when funds can actually be spent, which makes immediate cash and a held deposit two different products rather than two prices.
+- **Same-units comparison**: the method of pricing any two ways of moving money by asking what it costs to turn this amount into usable money this week.
+- **Pricing different risk**: the reason a stable-balance household and a zero-balance household reach opposite conclusions from identical arithmetic.
+- **The only counter open**: the position of a cash-only household, for which the substitute market is not a comparison at all.
+
+## Sources
+Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national survey of unbanked and underbanked households*. https://www.fdic.gov/household-survey
+
+New York State Department of Financial Services. (2023, January 30). *Industry letter: Maximum check casher fee*. https://www.dfs.ny.gov/industry_guidance/industry_letters/il20230130_max_check_casher_fee
+
+United States Postal Service. (2026). *Money orders*. https://www.usps.com/shop/money-orders.htm`,
+    },
+    {
+      slug: "quiz-the-substitute-market",
+      title: "20 · Knowledge check: the substitute market",
+      section: "Section 5 · The substitute market, priced",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is a money order?",
+            options: ["A prepaid paper instrument", "A short-term loan against a paycheck that has not yet been deposited", "A transfer of funds between two accounts at insured depository institutions", "A guarantee by a bank that a personal check will clear on presentation"],
+            correctIndex: 0,
+            explanation: "It is funded at purchase, so it does what a check does for someone with no checking account.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Why can a money order not bounce?",
+            options: ["It is funded before it is issued", "Because federal law requires the issuer to guarantee payment regardless of funding", "Because the payee's bank advances the funds and recovers them from the issuer later", "Because the purchaser's account is frozen for the amount until the order is presented"],
+            correctIndex: 0,
+            explanation: "The money is already there when the payee presents it, which is the structural difference from a personal check.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What did USPS list as its domestic money order fee for amounts up to $500, read on 28 August 2026?",
+            options: ["$2.65", "$3.75, which was the fee for amounts between $500.01 and $1,000.00", "$0.85, which was the fee for a postal military money order", "$2.35, which is the cap in the Bank On National Account Standards"],
+            correctIndex: 0,
+            explanation: "The fee is dated in the lesson because USPS sets it and it can change.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What is the maximum amount of a single USPS domestic money order?",
+            options: ["$1,000", "$500, above which the purchaser must buy two separate orders at the higher fee", "$250,000, matching the standard maximum deposit insurance amount", "$3,000, above which the purchaser must present government identification"],
+            correctIndex: 0,
+            explanation: "USPS states that a customer may send up to $1,000 in a single order anywhere in the United States.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "How is a check-cashing fee usually structured?",
+            options: ["As a percentage of the check", "As a flat amount that does not vary with the size of the check presented", "As a monthly subscription that covers unlimited checks within a stated period", "As a deduction taken by the check's issuer before the check is written"],
+            correctIndex: 0,
+            explanation: "That is the structural difference from a money order, whose fee is a fixed amount.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "At what level of government are check-casher fee maximums set?",
+            options: ["State", "Federal, through a Consumer Financial Protection Bureau regulation applying nationwide", "Municipal, through licensing ordinances adopted by individual cities and counties", "None, since check cashers set their fees entirely at their own discretion"],
+            correctIndex: 0,
+            explanation: "That is why the transferable skill is finding your own state's licensing law and regulator rather than memorising a national number.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Why does this course refuse to publish a fifty-state table of check-cashing caps?",
+            options: ["A table with one stale row is worse than none", "Because the caps are confidential and are not published by state regulators", "Because only a handful of states regulate check cashing at all, making a table pointless", "Because the Consumer Financial Protection Bureau already publishes an authoritative one"],
+            correctIndex: 0,
+            explanation: "Rates change and are set by different bodies in different states, so the method for finding your own state's rule is what does not go stale.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Which body sets the maximum check casher fee in New York?",
+            options: ["The Department of Financial Services", "The Federal Reserve Bank of New York, under its supervisory authority over state members", "The New York State Legislature, which sets the rate directly in statute each year", "The Consumer Financial Protection Bureau, under a state-specific enforcement agreement"],
+            correctIndex: 0,
+            explanation: "It sets the maximum under Part 400.11 of the Superintendent's Regulations and publishes it in an industry letter.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What rate did New York set for a listed government assistance check, effective 18 January 2023?",
+            options: ["1.5 percent", "2.2 percent, which is the rate applying to all other checks, drafts and money orders", "$1 flat, regardless of the amount of the government payment being cashed", "2.65 percent, matching the USPS money order fee for amounts up to $500"],
+            correctIndex: 0,
+            explanation: "The lower rate applies to federal or state payments including public assistance, Social Security, unemployment, retirement, veterans' benefits, emergency relief, housing assistance and tax refunds.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What rate did New York set for all other checks?",
+            options: ["$1 or 2.2 percent, whichever is greater", "1.5 percent, matching the rate applied to government assistance payments", "A flat $5 regardless of the amount of the check being presented", "No maximum at all, leaving the rate to the licensee's own discretion"],
+            correctIndex: 0,
+            explanation: "The greater-of structure means a very small check carries a minimum charge while a larger one is priced on the percentage.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What is the teachable point about New York setting TWO rates?",
+            options: ["A benefit check was priced differently on purpose", "That the state was unable to agree on a single rate and split the difference", "That the two rates apply in different counties of the state", "That the lower rate is a temporary measure that expires each year"],
+            correctIndex: 0,
+            explanation: "Somebody decided a benefit payment should not be cashed on the same terms as a payroll check and wrote that into a regulation.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What share of all U.S. households used nonbank money orders in 2023?",
+            options: ["8.0 percent", "18.2 percent, which was the figure for 2013 rather than for 2023", "2.7 percent, which was the figure for nonbank check cashing in the same year", "6.6 percent, which was the figure for nonbank money transfer services"],
+            correctIndex: 0,
+            explanation: "The use of money orders across all households fell from 18.2 percent in 2013 to 8.0 percent in 2023.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What share of all U.S. households used nonbank check cashing in 2023?",
+            options: ["2.7 percent", "6.9 percent, which was the figure for 2013 rather than for 2023", "8.0 percent, which was the figure for nonbank money orders in the same year", "4.2 percent, which was the unbanked rate rather than a check cashing figure"],
+            correctIndex: 0,
+            explanation: "It fell from 6.9 percent in 2013, so the decline over the decade was more than half.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What share of all households used nonbank money transfer services in 2023?",
+            options: ["6.6 percent", "7.0 percent, which was the figure for 2021 rather than for 2023", "2.7 percent, which was the figure for nonbank check cashing", "18.2 percent, which was the money order figure for 2013"],
+            correctIndex: 0,
+            explanation: "The FDIC named Western Union, MoneyGram, Walmart Money Center and Ria as examples of the companies in this category.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Among unbanked households using money orders, what did more than nine in ten use them for?",
+            options: ["Paying bills", "Sending money to family or friends within the United States", "Making purchases from merchants that do not accept cash payment", "Building savings by holding uncashed orders as a store of value"],
+            correctIndex: 0,
+            explanation: "The concentration on bills is what makes this spending non-discretionary: it is rent and utilities moving through a paid channel.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Among unbanked households using check cashing, what did three in four cash?",
+            options: ["A check from work, retirement or a government agency", "A personal check written by a family member or a friend", "A refund check issued by a merchant after a returned purchase", "An insurance settlement check paid after a claim was approved"],
+            correctIndex: 0,
+            explanation: "That is income rather than a discretionary transaction, which is the finding the lesson draws from it.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What is a prepaid account, in the regulatory sense?",
+            options: ["Its own category, neither deposit nor credit", "A deposit account at an insured bank held under a different marketing name", "A form of revolving credit repaid by loading funds onto the card", "A savings product exempt from Regulation E and from Truth in Savings"],
+            correctIndex: 0,
+            explanation: "It holds funds the consumer loads and spends from a card, and Regulation E gives it a disclosure regime of its own.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "Which regulation requires a pre-acquisition disclosure for prepaid accounts?",
+            options: ["12 CFR 1005.18", "12 CFR 1030.4, which requires deposit account disclosures before opening and on request", "12 CFR 1005.17, which requires an opt-in before certain overdraft fees may be charged", "15 U.S.C. 1681j, which entitles a consumer to a free annual file disclosure"],
+            correctIndex: 0,
+            explanation: "It states that the institution shall provide the required disclosures before a consumer acquires a prepaid account.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "When must a prepaid short form disclosure be provided?",
+            options: ["Before the consumer acquires the account", "Within thirty days of the first load of funds onto the card", "At the time of the first transaction made with the card", "Only if the consumer requests it in writing from the issuer"],
+            correctIndex: 0,
+            explanation: "For a card sold at retail, it must be on or visible through an outward-facing external surface of the packaging.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "Which of these fees must the prepaid short form disclosure state?",
+            options: ["The cash reload fee", "The interest rate applied to funds held on the card for more than thirty days", "The issuer's cost of processing each transaction made at a point of sale", "The fee the merchant pays to accept the card at a point of sale terminal"],
+            correctIndex: 0,
+            explanation: "The list also covers the periodic fee, the per purchase fee, in-network and out-of-network ATM withdrawal and balance inquiry fees, customer service fees, and any inactivity fee.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "How many ATM withdrawal fees must the short form state?",
+            options: ["Two", "One, being the highest of the fees the issuer charges at any machine", "Four, covering domestic and international machines in and out of network", "None, since ATM fees are set by the machine's operator rather than by the issuer"],
+            correctIndex: 0,
+            explanation: "An in-network fee and an out-of-network fee, and the same pairing applies to ATM balance inquiries.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What must accompany the inactivity fee on the short form?",
+            options: ["The conditions that trigger it", "The number of consumers charged it in the preceding calendar year", "A comparison with the inactivity fee charged on a deposit account", "A statement that the fee may be waived on request to customer service"],
+            correctIndex: 0,
+            explanation: "Naming the trigger is what makes the fee predictable rather than a surprise on a dormant card.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "For a prepaid card sold in a store, where must the short form appear?",
+            options: ["On or visible through the outside of the packaging", "In the terms and conditions leaflet sealed inside the package", "On the retailer's shelf label rather than on the product itself", "On the issuer's website, with a reference printed on the receipt"],
+            correctIndex: 0,
+            explanation: "That is the condition on which the long form may follow acquisition rather than precede it.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What single instruction do Truth in Savings and the prepaid short form share?",
+            options: ["The price is published before you commit", "The regulator sets a maximum fee that the product may not exceed", "The institution must review the disclosure aloud with the consumer", "The consumer may cancel within three business days of acquiring the product"],
+            correctIndex: 0,
+            explanation: "One puts the price in a document you can request, the other puts it on the outside of the box, and both make reading it the consumer's move.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What does the FDIC's deposit insurance FAQ say about prepaid cards?",
+            options: ["Insured when registered and certain requirements are met", "Never insured, since a prepaid card is not a deposit at an insured institution", "Always insured to the same limit as a checking account at the issuing bank", "Insured only for balances above the standard maximum deposit insurance amount"],
+            correctIndex: 0,
+            explanation: "The two conditions in that sentence are what make prepaid coverage a fact about a particular programme rather than about prepaid cards in general.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "How does prepaid card coverage differ from coverage on a bank deposit?",
+            options: ["It is conditional rather than automatic", "It is provided by the card network rather than by a federal insurance fund", "It applies only to funds loaded by an employer or a government agency", "It is capped at a lower amount than the standard maximum deposit insurance amount"],
+            correctIndex: 0,
+            explanation: "Section 1 established that deposit coverage is automatic and requires no application; prepaid coverage depends on registration and on requirements being met.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "Which service did the FDIC deliberately EXCLUDE from its nonbank online payment services question?",
+            options: ["Zelle", "PayPal, which moves money between merchants rather than between individuals", "Venmo, which the survey classes as a prepaid account instead", "Cash App, which the survey counts under nonbank money transfer services"],
+            correctIndex: 0,
+            explanation: "The category is defined by an account feature that stores money, and Zelle moves money between existing bank accounts rather than storing it.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "Among households using online payment services, what share of UNBANKED ones used them to pay bills?",
+            options: ["60.8 percent", "24.5 percent, which was the figure for banked households rather than unbanked ones", "73.9 percent, which was the prepaid card figure rather than the payment app figure", "71.5 percent, which was the share using them for at least one core transaction"],
+            correctIndex: 0,
+            explanation: "The comparison against 24.5 percent of banked households is the point: the same tool is doing a different job.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What share of unbanked households with online payment services used them for at least one core transaction?",
+            options: ["71.5 percent", "33.5 percent, which was the figure for banked households rather than unbanked ones", "90.7 percent, which was the equivalent figure for prepaid cards", "60.8 percent, which was the share using them specifically to pay bills"],
+            correctIndex: 0,
+            explanation: "More than twice the 33.5 percent among banked households with the same tools.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "Among unbanked households with prepaid cards, what share used them to pay bills?",
+            options: ["73.9 percent", "28.3 percent, which was the figure for banked households with prepaid cards", "59.0 percent, which was the share using them to receive income", "44.8 percent, which was the share using them to save or keep money safe"],
+            correctIndex: 0,
+            explanation: "Against 28.3 percent of banked households, which is the sharpest of the three core-transaction gaps.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What share of unbanked households with prepaid cards used them for at least one core transaction?",
+            options: ["90.7 percent", "46.0 percent, which was the figure for banked households with prepaid cards", "71.5 percent, which was the equivalent figure for online payment services", "73.9 percent, which was the share using them specifically to pay bills"],
+            correctIndex: 0,
+            explanation: "Almost twice the 46.0 percent among banked households, which is why the lesson says the card is the account rather than an addition to one.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "Which three transactions does the FDIC group as core?",
+            options: ["Paying bills, receiving income, saving or keeping money safe", "Making purchases in person, making purchases online, and sending money to friends", "Cashing checks, buying money orders, and sending international remittances", "Depositing cash, withdrawing cash, and checking an account balance"],
+            correctIndex: 0,
+            explanation: "They are the transactions an account normally does, which is how the survey measures whether another tool is standing in for one.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What is the single-sentence reading of the prepaid and payment-app usage gaps?",
+            options: ["For unbanked households the tool IS the account", "Unbanked households use these tools less often because they lack smartphones", "Banked households use these tools more intensively than unbanked ones do", "The two groups use the tools identically once income is held constant"],
+            correctIndex: 0,
+            explanation: "For a banked household they are conveniences layered on an account; for an unbanked one they are where wages arrive, bills are paid, and money is kept.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "Which explanation for using a check casher does this course reject?",
+            options: ["That people do not know better", "That immediate availability of cash can be worth paying for", "That a posted percentage is easier to forecast than an overdraft fee", "That a check casher imposes no minimum balance requirement"],
+            correctIndex: 0,
+            explanation: "The survey and the arithmetic both support a reasoned comparison under a constraint the household did not choose.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "Which of these is one of the three properties, besides price, that decides the comparison?",
+            options: ["Whether the cost is knowable in advance", "Whether the provider is insured by the FDIC or by the NCUA", "Whether the transaction is reported to a consumer reporting agency", "Whether the household has previously held a deposit account"],
+            correctIndex: 0,
+            explanation: "The other two are when the money becomes available, and whether there is a minimum balance.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "In what sense is an overdraft fee unknowable?",
+            options: ["Its occurrence, not its amount", "Its amount, since institutions may change it without notifying the account holder", "Both amount and occurrence, since neither is disclosed anywhere in advance", "Neither, since Truth in Savings makes it fully predictable for every household"],
+            correctIndex: 0,
+            explanation: "The amount is disclosed, but whether it happens depends on posting order and on when a deposit clears.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "Why are immediate cash and a held deposit described as two different products?",
+            options: ["Timing changes what the money can do", "Because a held deposit earns interest while cash does not", "Because a held deposit is insured and cash in hand is not", "Because only one of them is subject to a percentage fee"],
+            correctIndex: 0,
+            explanation: "For a household paying rent tomorrow, now and in three days are not two prices of the same thing.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "What is the same-units question this lesson teaches for comparing two ways of moving money?",
+            options: ["What does it cost to make this amount usable this week", "Which provider is regulated by the more senior federal agency", "Which option has been in business longer in the local area", "Which option reports positive activity to a consumer reporting agency"],
+            correctIndex: 0,
+            explanation: "Converting both options to the same units is the method; the answer depends on the learner's own numbers.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "Under New York's maximum, what could a check casher charge on a $600 payroll check?",
+            options: ["Up to $13.20", "Up to $9.00, which is the figure for a listed government payment of the same size", "Exactly $1.00, which is the minimum charge under the greater-of rule", "Up to $2.65, matching the USPS money order fee for amounts up to $500"],
+            correctIndex: 0,
+            explanation: "2.2 percent of $600 is $13.20, and the greater-of rule means the percentage rather than the $1 minimum applies at that size.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "Under the same maximum, what could a check casher charge on a $600 listed government payment?",
+            options: ["Up to $9.00", "Up to $13.20, which is the figure for a non-government check of the same size", "Nothing, since government payments are exempt from check cashing fees entirely", "Up to $3.75, matching the USPS fee for money orders above $500"],
+            correctIndex: 0,
+            explanation: "1.5 percent of $600 is $9.00, and the lower rate applies to the listed categories of federal and state payments.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "Why do a stable-balance household and a zero-balance household reach opposite conclusions?",
+            options: ["They are pricing different risk", "One has access to a bank branch and the other does not", "One is subject to the check-cashing cap and the other is not", "One reads its account disclosures and the other does not"],
+            correctIndex: 0,
+            explanation: "For the first the account is free and the check casher is expensive; for the second the account can cost more, unpredictably.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "Why does this course decline to say which option is cheaper?",
+            options: ["It depends on the learner's own numbers", "Because the relevant fee schedules are confidential and cannot be obtained", "Because federal law prohibits comparing regulated and unregulated products", "Because the comparison changes too often to be worth attempting at all"],
+            correctIndex: 0,
+            explanation: "Fee schedule, balance pattern, pay timing and state cap are all individual, and all four are obtainable from documents somebody is required to provide.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "What is happening to the size of the substitute market?",
+            options: ["It is shrinking", "It is growing rapidly as more households leave the banking system", "It is stable, having changed by less than a percentage point since 2013", "It cannot be measured, since nonbank providers file no reports"],
+            correctIndex: 0,
+            explanation: "Money order use across all households fell from 18.2 to 8.0 percent and check cashing from 6.9 to 2.7 percent between 2013 and 2023.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "What finding keeps the shrinking-market story from being triumphant?",
+            options: ["Two thirds of unbanked households are cash only", "That the unbanked rate rose between 2021 and 2023 in every income band", "That check cashing fees rose faster than inflation over the same decade", "That prepaid card use among banked households grew over the same period"],
+            correctIndex: 0,
+            explanation: "66.2 percent of unbanked households used neither prepaid cards nor online payment services, so for them the substitute market is the only counter open.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "What constraint frames the comparison the household is actually making?",
+            options: ["One it did not choose", "A budget it set for itself at the start of the month", "A preference for cash over electronic payment methods", "A requirement imposed by its employer about how wages are received"],
+            correctIndex: 0,
+            explanation: "The comparison is between two specific priced transactions under conditions the household controls neither end of.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "Which survey figure supports the point about minimum balances in this comparison?",
+            options: ["42.3 percent", "29.3 percent, which is the share citing that fees are too unpredictable", "66.2 percent, which is the cash-only share of unbanked households", "8.0 percent, which is the share of all households using nonbank money orders"],
+            correctIndex: 0,
+            explanation: "It was the most cited reason for having no account, and a check casher imposes no balance requirement at all.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "What was the USPS fee for a money order between $500.01 and $1,000.00, read on 28 August 2026?",
+            options: ["$3.75", "$2.65, which was the fee for amounts up to $500.00", "$0.85, which was the fee for a postal military money order", "$1.00, which is the minimum charge under New York's check cashing rule"],
+            correctIndex: 0,
+            explanation: "The two-band structure means a single order above $500 costs more than the lower band's flat fee.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What did USPS list as the fee for a postal military money order?",
+            options: ["$0.85", "$2.65, which was the standard domestic fee for amounts up to $500.00", "$3.75, which was the standard domestic fee for larger amounts", "$1.50, matching New York's rate on government assistance checks"],
+            correctIndex: 0,
+            explanation: "It is a separate product with its own published fee, read on 28 August 2026.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Why does the lesson call money order and check cashing spending non-discretionary?",
+            options: ["It is rent, utilities and wages", "Because households are legally required to use licensed providers for these transactions", "Because the fees are deducted automatically before the household receives the funds", "Because the survey counts only transactions a household reported as unavoidable"],
+            correctIndex: 0,
+            explanation: "More than nine in ten unbanked money order users paid bills with them, and three in four check cashing users were cashing income.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Which two things does the substitute market do for a household without an account?",
+            options: ["Pay bills and turn a check into money", "Extend credit and report positive payment history to a bureau", "Insure deposits and provide overdraft protection on stored funds", "Screen applicants and furnish information to reporting agencies"],
+            correctIndex: 0,
+            explanation: "A money order does what a check does, and a check casher does what a deposit and a withdrawal do together.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Among unbanked households using money transfer services, what did about half use them for?",
+            options: ["Paying bills", "Sending international remittances to family outside the United States", "Receiving wages from an employer that does not offer direct deposit", "Buying money orders to pay a landlord who does not accept cash"],
+            correctIndex: 0,
+            explanation: "The pattern matches money orders and check cashing: the services are being used for core household transactions rather than for occasional transfers.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Among unbanked households with prepaid cards, what share used them to receive income?",
+            options: ["59.0 percent", "28.6 percent, which was the figure for banked households with prepaid cards", "73.9 percent, which was the share using them to pay bills", "44.8 percent, which was the share using them to save or keep money safe"],
+            correctIndex: 0,
+            explanation: "Against 28.6 percent of banked households, which is a smaller gap than the bill-paying one but still a doubling.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "Among unbanked households with prepaid cards, what share used them to save or keep money safe?",
+            options: ["44.8 percent", "19.2 percent, which was the figure for banked households with prepaid cards", "40.9 percent, which was the equivalent figure for online payment services", "90.7 percent, which was the share using them for at least one core transaction"],
+            correctIndex: 0,
+            explanation: "A card being used as a place to keep money is the clearest sign that it is standing in for a deposit account.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "Among unbanked households with online payment services, what share used them to receive income?",
+            options: ["34.3 percent", "12.3 percent, which was the figure for banked households with the same services", "60.8 percent, which was the share using them to pay bills", "40.9 percent, which was the share using them to save or keep money safe"],
+            correctIndex: 0,
+            explanation: "Against 12.3 percent of banked households, so nearly three times the rate.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What is the regulatory point of putting a fee summary on the outside of a package?",
+            options: ["The price is readable before purchase", "Retailers are required to stock only cards whose fees fall below a federal cap", "The issuer may then omit the long form disclosure from the package entirely", "The consumer may return the card for a refund within thirty days of purchase"],
+            correctIndex: 0,
+            explanation: "It is the retail analogue of Truth in Savings making account disclosures available on request before an account is opened.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What does the greater-of structure in New York's rule do to a very small check?",
+            options: ["It applies a minimum charge", "It exempts the check from any fee at all below a stated threshold", "It applies the government assistance rate regardless of who issued the check", "It requires the check casher to refuse the transaction entirely"],
+            correctIndex: 0,
+            explanation: "The rule reads $1 or 2.2 percent, whichever is greater, so below about $45 the flat dollar governs.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Which of these is the transferable skill this section teaches?",
+            options: ["Finding your own state's rule", "Memorising the maximum check cashing fee in each of the fifty states", "Identifying which nonbank providers are insured by the FDIC", "Predicting the direction of nonbank service usage over the coming decade"],
+            correctIndex: 0,
+            explanation: "The method executed once on New York is the pattern; the numbers themselves are dated and belong to a regulator.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What does 'the only counter that is open' describe?",
+            options: ["The position of a cash-only household", "A branch that remains after every other bank in a census tract has closed", "The single window at a check casher that handles government payments", "The final free-disclosure route available after an adverse action notice"],
+            correctIndex: 0,
+            explanation: "For a household using neither prepaid cards nor payment apps, the substitute market is not a comparison between products at all.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "Which four documents does the lesson say a learner can now obtain to run the comparison?",
+            options: ["Fee schedule, balance pattern, pay timing, state cap", "Credit report, credit score, adverse action notice, dispute result", "Account agreement, deposit insurance certificate, call report, survey report", "Short form disclosure, long form disclosure, packaging, receipt"],
+            correctIndex: 0,
+            explanation: "Each comes from a document somebody is required to provide, which is what turns the arithmetic from a guess into a calculation.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "How does the lesson describe what the survey says about the reasoning of unbanked households?",
+            options: ["They are comparing priced transactions", "They are unaware that bank accounts exist in their area", "They prefer cash for reasons unrelated to cost or timing", "They are barred by federal rule from opening an account"],
+            correctIndex: 0,
+            explanation: "The reasons households gave in Section 2 describe price, predictability and access rather than ignorance.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "What happened to prepaid card use among BANKED households by 2023?",
+            options: ["It stood at 5.2 percent", "It rose sharply to 32.8 percent, matching the earlier unbanked figure", "It fell to zero as payment apps replaced physical cards entirely", "It matched the unbanked rate for the first time since the survey began"],
+            correctIndex: 0,
+            explanation: "Down from 5.7 percent in 2021, a much smaller proportional fall than among unbanked households.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "Why does a percentage fee behave differently from a flat fee as amounts grow?",
+            options: ["It scales with the money", "It falls as a share of the amount because of volume discounts", "It is capped by federal regulation once the amount exceeds $1,000", "It converts automatically to a flat fee above a stated threshold"],
+            correctIndex: 0,
+            explanation: "A $2.65 money order fee is the same on any amount up to $500, while a 2.2 percent check cashing fee doubles when the check doubles.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Which section of this course is the direct companion to the prepaid short form disclosure?",
+            options: ["The Truth in Savings account disclosures", "The Customer Identification Program rule's four data elements", "The Fair Credit Reporting Act's adverse action notice", "The Congressional Review Act's bar on reissuing a disapproved rule"],
+            correctIndex: 0,
+            explanation: "Both regimes publish the price before the consumer commits, one on request and one on the outside of the packaging.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What did the lesson say about whether the substitute market is a shadow economy in growth?",
+            options: ["It is not, it is shrinking", "It is, and its growth explains the decline in the unbanked rate", "The survey cannot tell, because nonbank providers are not required to report", "It grew until 2019 and has been flat since then"],
+            correctIndex: 0,
+            explanation: "Use of money orders and check cashing more than halved between 2013 and 2023 alongside an unbanked rate that halved between 2011 and 2023.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "Which category does a check casher fall into for regulatory purposes?",
+            options: ["A state-licensed nonbank business", "An insured depository institution supervised by the FDIC", "A consumer reporting agency under the Fair Credit Reporting Act", "A prepaid account issuer subject to Regulation E disclosures"],
+            correctIndex: 0,
+            explanation: "That is why its maximum fee is set by a state regulator rather than by a federal one.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What makes a posted percentage easier to live with than an overdraft fee, for some households?",
+            options: ["You can compute it before you hand over the check", "It is always smaller in absolute terms than an overdraft fee would be", "It is refundable if the household deposits the funds within thirty days", "It is capped by federal regulation while overdraft fees are not"],
+            correctIndex: 0,
+            explanation: "The predictability is the property, not the size, which is why the survey asked about high fees and unpredictable fees separately.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "What was New York's regulatory authority for the check casher fee maximum?",
+            options: ["Part 400.11 of the Superintendent's Regulations", "Regulation E at 12 CFR part 1005, as applied to nonbank providers", "Section 400 of the federal Truth in Savings Act, as amended", "The Consumer Financial Protection Bureau's supervisory designation for large participants"],
+            correctIndex: 0,
+            explanation: "The Department of Financial Services published the resulting maximum in an industry letter dated 30 January 2023.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What did the lesson identify as the reason a free channel gets replaced by a paid one?",
+            options: ["The free one is closed to that household", "The paid one offers rewards the free one does not", "The paid one is more heavily regulated and therefore safer", "The household prefers to keep its transactions off any electronic record"],
+            correctIndex: 0,
+            explanation: "Rent, utilities and wages move through a paid channel because the household has no account for them to move through.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "Which unbanked group used prepaid cards more in 2023?",
+            options: ["Those previously banked", "Those that had never been banked, at 26.5 percent against 17.2 percent", "Neither, since the survey found no difference between the two groups", "Those in the highest income band among unbanked households"],
+            correctIndex: 0,
+            explanation: "Previously banked unbanked households used prepaid cards at 26.5 percent against 17.2 percent among never-banked ones.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "How does the FDIC define the nonbank online payment service category?",
+            options: ["An account feature that stores money", "Any application that allows a consumer to send money to another person", "Any service operated by a company that is not an insured depository institution", "Any payment made from a mobile telephone rather than from a card"],
+            correctIndex: 0,
+            explanation: "The stored-money feature is why Zelle, which moves funds between existing bank accounts, was excluded from the question.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What is the correct way to describe the safety of funds on a particular prepaid card?",
+            options: ["A fact about that card's programme", "Identical to a bank deposit, since the funds sit at an insured institution either way", "Never insured, since the card is not issued by an insured depository institution", "Guaranteed by the card network under its own protection scheme"],
+            correctIndex: 0,
+            explanation: "The FDIC's conditional language, registered with the issuer and certain requirements met, makes coverage specific to the programme rather than general to prepaid cards.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What does this section add to the account-versus-substitute argument that opinion cannot?",
+            options: ["Published prices from both sides", "A ruling by a federal court on which option consumers must be offered", "A survey of consumer satisfaction with each type of provider", "An estimate of each provider's profit margin on a typical transaction"],
+            correctIndex: 0,
+            explanation: "USPS publishes its fee, New York publishes its cap, Truth in Savings requires the account disclosures, and Regulation E puts prepaid fees on the packet.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+        ],
+      },
+    },
   ],
 };
