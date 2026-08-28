@@ -3612,6 +3612,197 @@ Federal Trade Commission. (2025, March 10). *New FTC data show a big jump in rep
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — The record, the enforcement, and who is targeted
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-alert-the-freeze-and-the-block",
+      title: "23 · Three tools in the Fair Credit Reporting Act, and what each one does",
+      section: "Section 6 · The record, the enforcement, and who is targeted",
+      body: `Identity theft is the case where somebody borrows in your name, so the damage lands in the file MONEY-01 taught you to read. The Fair Credit Reporting Act gives you three distinct tools for that file, they do different things, and people routinely reach for the wrong one.
+
+**One: the initial fraud alert.** Under 15 U.S.C. § 1681c-1(a)(1), a consumer who asserts a good faith suspicion of fraud or identity theft may ask a nationwide agency to place a fraud alert in the file, and the agency must include it "for a period of not less than 1 year", and refer the request to the other nationwide agencies (15 U.S.C. § 1681c-1, n.d.). **One call, three files, one year.** It is a flag telling users of the report to take extra care in verifying identity. It does not stop anybody from pulling the file.
+
+**Two: the extended alert.** Under subsection (b), a consumer who submits an **identity theft report** gets an alert "during the 7-year period beginning on the date of such request", and is excluded from prescreened credit and insurance solicitation lists "during the 5-year period" (15 U.S.C. § 1681c-1, n.d.). **Seven years on the alert, five years off the marketing lists**, and the price of admission is the identity theft report rather than a suspicion.
+
+**Three: the security freeze, which is the one that actually blocks.** Subsection (i) defines it as "a restriction that prohibits a consumer reporting agency from disclosing the contents of a consumer report" to a third party without the consumer's express authorisation. The timings are specific: the agency must place it within **1 business day** of a request made by telephone or online, and **3 business days** for one made by post; it must lift it within **1 hour** of a telephone or online request, and 3 business days for a postal one. And it is **free of charge**, to place and to remove (15 U.S.C. § 1681c-1, n.d.).
+
+**Read the one-hour figure, because it removes the usual objection.** A freeze is often refused on the grounds that it would be inconvenient when credit is genuinely needed. The statute sets the lift at an hour by telephone or online. **Whether to use one is your decision and this course does not make it for you**, but the inconvenience should be priced accurately rather than assumed.
+
+**Four: the block, which is the repair rather than the prevention.** Under 15 U.S.C. § 1681c-2(a), an agency "shall block the reporting of any information in the file of a consumer that the consumer identifies as information that resulted from an alleged identity theft", within **4 business days** of receiving four things: appropriate proof of identity, a copy of an identity theft report, identification of the information, and a statement that the information does not relate to any transaction the consumer authorised (15 U.S.C. § 1681c-2, n.d.).
+
+**Notice the fourth item, because it is the same distinction Section 5 turned on.** The statement is that the transaction was not authorised by you. **The block is the file-side twin of the Regulation E definition**, and it fails for the same reason in the same case: a debt you were deceived into incurring yourself is a debt you authorised.
+
+**Where the identity theft report comes from.** The Federal Trade Commission operates IdentityTheft.gov for exactly this purpose, and it is federal, free and non-commercial. The FTC reports that in 2024 more than 1.1 million identity theft reports came through that site (Federal Trade Commission, 2025).
+
+:::reveal How long must an initial fraud alert stay in a file, and what does a consumer need to get one? ||| Not less than 1 year, on an assertion in good faith of suspected fraud or identity theft.
+
+:::reveal What does an extended fraud alert require, and how long does it last? ||| An identity theft report, and it lasts 7 years, with 5 years of exclusion from prescreened solicitation lists.
+
+:::reveal How quickly must a security freeze be lifted on a telephone or online request, and what may it cost? ||| Within 1 hour, and it is free of charge to place and to remove.
+
+:::reveal What four things must a consumer supply before an agency must block information under 15 U.S.C. 1681c-2? ||| Proof of identity, a copy of an identity theft report, identification of the information, and a statement that it does not relate to any transaction the consumer authorised.
+
+## Vocabulary
+- **Initial fraud alert**: a one-call flag lasting at least a year, referred to the other nationwide agencies, that asks users of the report to verify identity more carefully.
+- **Extended fraud alert**: a seven-year alert requiring an identity theft report, carrying five years of exclusion from prescreened solicitation lists.
+- **Security freeze**: the restriction prohibiting an agency from disclosing the contents of a report to a third party, free to place and to lift, with statutory timings.
+- **Identity theft report**: the document that unlocks the extended alert and the block, obtainable free through the FTC's own site.
+- **Block**: the four-business-day removal of information resulting from an alleged identity theft, on receipt of the four items the statute lists.
+
+## Sources
+15 U.S.C. § 1681c-1. (n.d.). *Identity theft prevention; fraud alerts and active duty alerts*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681c-1
+
+15 U.S.C. § 1681c-2. (n.d.). *Block of information resulting from identity theft*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1681c-2
+
+Federal Trade Commission. (2025, March 10). *New FTC data show a big jump in reported losses to fraud to $12.5 billion in 2024*. https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024`,
+    },
+    {
+      slug: "reading-an-enforcement-action",
+      title: "24 · Complaint, order, verdict: three documents that are not the same thing",
+      section: "Section 6 · The record, the enforcement, and who is targeted",
+      body: `Public enforcement records are the best evidence this course has about how these markets actually behave. They are also the easiest thing in the world to misread, because a headline treats all three postures identically and they are not remotely the same.
+
+**One: the complaint, which is an allegation.** The agency that files them says so in its own boilerplate, printed at the foot of every press release:
+
+> "The Commission files a complaint when it has 'reason to believe' that the named defendants are violating or are about to violate the law and it appears to the Commission that a proceeding is in the public interest." (Federal Trade Commission, 2020)
+
+**Reason to believe.** That is the filing standard, not a finding, not proof, and not an admission by anybody. Everything a complaint says about what a company did is what the government contends it can show.
+
+**Two: the settlement, which resolves without proving.** The same note continues: "Stipulated final orders have the force of law when approved and signed by the District Court judge" (Federal Trade Commission, 2020). **Force of law and finding of fact are different things.** A stipulated order binds the defendant's future conduct and often moves money, and it does that without any court deciding whether the allegations were true. That is why the Progressive Leasing and Harris Jewelry matters in this course are always described as what the Commission alleged.
+
+**Three: the judgment or the verdict, which is a finding.** In *United States v. Tucker and Muir*, a jury in the Southern District of New York, after a five-week trial, found both defendants guilty on all 14 counts on 13 October 2017, and the court imposed sentences on 5 January 2018 (U.S. Attorney's Office, S.D.N.Y., 2018). **That is a finding beyond reasonable doubt by a jury**, which is why this course is willing to state the 650-against-1,925 arithmetic from that case as what happened, and unwilling to state anything from a complaint the same way.
+
+**A fourth thing worth knowing: a decision can be about remedy rather than conduct.** In *AMG Capital Management, LLC v. FTC*, decided 22 April 2021, the Supreme Court held that section 13(b) of the FTC Act "does not authorize the Commission to seek, or a court to award, equitable monetary relief such as restitution or disgorgement" (*AMG Capital Management, LLC v. FTC*, 2021). **That holding says nothing about whether the lending was deceptive.** It says what the Commission may ask a court for under that section. A reader who takes it as vindication of the conduct, or as a finding against it, has misread it in opposite directions.
+
+**So the three questions to ask of any enforcement document you are handed.**
+
+1. **Who is speaking?** An agency contending, parties agreeing, or a court or jury deciding.
+2. **What was decided, if anything?** Conduct, remedy, procedure, or nothing at all yet.
+3. **Is there an admission?** Settlements commonly contain none, and a settlement without an admission is not evidence that the conduct occurred.
+
+**This is not pedantry and it is not softness toward defendants.** It is the same discipline the rest of the course applies to a statute: read the document for what it actually says. **An allegation reported as a fact damages the credibility of the entire body of enforcement evidence**, including the parts that were proved to a jury.
+
+:::reveal On what standard does the FTC say it files a complaint? ||| Reason to believe that the named defendants are violating or are about to violate the law, and that a proceeding appears to be in the public interest.
+
+:::reveal What gives a stipulated final order the force of law, and what does it not establish? ||| Approval and signature by the District Court judge. It does not establish that the allegations were true.
+
+:::reveal What did the Supreme Court hold in AMG Capital Management v. FTC? ||| That section 13(b) does not authorize the Commission to seek, or a court to award, equitable monetary relief such as restitution or disgorgement.
+
+:::reveal What are the three questions to ask of an enforcement document? ||| Who is speaking, what was decided if anything, and whether there is an admission.
+
+## Vocabulary
+- **Complaint**: a pleading filed on a reason-to-believe standard, stating what the government contends rather than what has been established.
+- **Stipulated final order**: a settlement that has the force of law once a judge approves and signs it, and that commonly contains no admission.
+- **Verdict**: a finding by a jury, which is why a fact established at trial can be stated as what happened.
+- **Holding on remedy**: a decision about what relief a court may award, which settles nothing about whether the underlying conduct occurred.
+
+## Sources
+Federal Trade Commission. (2020, April 20). *Rent-to-own payment plan company Progressive Leasing will pay $175 million to settle FTC charges it deceived consumers about pricing*. https://www.ftc.gov/news-events/news/press-releases/2020/04/rent-own-payment-plan-company-progressive-leasing-will-pay-175-million-settle-ftc-charges-it
+
+AMG Capital Management, LLC v. Federal Trade Commission, 593 U.S. 67. (2021). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/supremecourt/text/19-508
+
+United States Attorney's Office, Southern District of New York. (2018, January 5). *Scott Tucker sentenced to more than 16 years in prison for running $3.5 billion unlawful internet payday lending enterprise*. U.S. Department of Justice. https://www.justice.gov/usao-sdny/pr/scott-tucker-sentenced-more-16-years-prison-running-35-billion-unlawful-internet-payday`,
+    },
+    {
+      slug: "who-is-targeted-from-the-record",
+      title: "25 · Who is targeted, taken from the record rather than asserted",
+      section: "Section 6 · The record, the enforcement, and who is targeted",
+      body: `It is easy to say these products target vulnerable people. It is also unfalsifiable as stated, which makes it worth nothing. The public record supports something better: specific defendants, specific conduct, specific populations, with the posture of each document on its face.
+
+**One: Congress named a class in statute.** The Military Lending Act, from Section 1, is the least deniable evidence in the whole subject. Congress did not cap the price of small-dollar credit generally. It capped it at 36 percent for covered servicemembers and their dependents, forbade taking a vehicle title or a post-dated cheque from them as security, and forbade rolling their debt over with new credit from the same creditor (10 U.S.C. § 987, n.d.). **A legislature does not write a targeted protection for a population it does not believe is targeted.**
+
+**Two: an enforcement action naming that same population.** On 20 July 2022 the Federal Trade Commission and a group of 18 states sued the national jewellery retailer Harris Jewelry. **The complaint alleged**, and these remain allegations, that the company deceptively claimed financing purchases through it would raise servicemembers' credit scores, misrepresented that its protection plans were not optional or were required, and added those plans to purchases without consumers' consent. The complaint also charged a violation of the Military Lending Act, **the FTC's first action under that Act** (Federal Trade Commission, 2022).
+
+Under a **proposed order** with the FTC and the multistate group, the company was to stop collection of millions of dollars of debt, provide approximately 10.9 million dollars in refunds for purchased protection plans, provide refunds for overpayments, **assist with deletion of negative credit entries** relating to the debt, and complete its shutdown and dissolve once the obligations were met (Federal Trade Commission, 2022).
+
+**Read the third remedy against the first allegation.** The claim alleged was that the financing would raise credit scores. The remedy required assistance in deleting negative entries. **That pairing is the whole shape of the harm**, and it connects this course directly to MONEY-01: the file is where the damage from a consumer credit product ends up.
+
+**Three: a case where the targeting is a matter of geography and legality.** In the Tucker prosecution the loans went, on the government's account, to more than 4.5 million people in all 50 states, including more than 250,000 in New York, **many of them in states whose laws expressly forbade lending at those rates** (U.S. Attorney's Office, S.D.N.Y., 2018). Section 2 lesson 3 quoted New York's criminal usury statute. The enterprise's response to state enforcement was the sovereign immunity arrangement the jury found was a fiction. **A product structured to reach borrowers in states that prohibited it is targeting, and it was proved to a jury rather than asserted.**
+
+**And now the data, with its own publisher's caution attached.** The FTC's Consumer Sentinel Network Data Book aggregates consumer reports of fraud and identity theft. The 2024 edition, published in March 2025, was the most recent listed on the Commission's own report index when this course was written on **28 August 2026**. It reports 6.5 million consumer reports received during 2024, fraud reports from 2.6 million consumers, more than 1.1 million identity theft reports through IdentityTheft.gov, and more than 12.5 billion dollars in reported fraud losses (Federal Trade Commission, 2024; Federal Trade Commission, 2025).
+
+**Here is the caution, in the FTC's own words, and it is why this lesson leads with enforcement rather than with figures:** "The Sentinel Data Book is based on unverified reports filed by consumers. The data is not based on a consumer survey" (Federal Trade Commission, 2024).
+
+**That sentence disqualifies a whole class of conclusion.** Reports measure who reported, which is shaped by who knows the site exists, who has the time, who trusts a federal agency with their details, and who speaks English. **It is not a measure of who is defrauded.** MONEY-02 uses a probability survey with published methodology when it needs a population figure, precisely because that is a different instrument. Use the Sentinel data for what it is: a large record of what people told the government, useful for direction and for comparison over time, and not a census of harm.
+
+:::reveal What is the least deniable evidence that servicemembers are targeted? ||| That Congress wrote a protection specifically for them, capping the rate and forbidding particular loan terms.
+
+:::reveal What was notable about the Harris Jewelry complaint in enforcement history? ||| It was the FTC's first action under the Military Lending Act, brought with 18 states.
+
+:::reveal What did the proposed Harris Jewelry order require in relation to consumer files? ||| Assistance with the deletion of negative credit entries pertaining to the debt.
+
+:::reveal What does the FTC say about the basis of the Sentinel Data Book? ||| That it is based on unverified reports filed by consumers, and is not based on a consumer survey.
+
+## Vocabulary
+- **Targeting**: directing a product at an identified population, evidenced here by statute, by pleaded allegations, and by conduct proved at trial.
+- **Multistate action**: an enforcement matter brought jointly by a federal agency and a group of state attorneys general.
+- **Consumer Sentinel Network**: the FTC's database of consumer reports of fraud and identity theft, drawn from consumers and from other agencies and organisations.
+- **Unverified report**: a report accepted as filed and not checked, which is why the Data Book measures reporting rather than prevalence.
+- **Probability survey**: the different instrument MONEY-02 uses when a population figure is needed, with published methodology and a defined sample.
+
+## Sources
+10 U.S.C. § 987. (n.d.). *Terms of consumer credit extended to members and dependents: limitations*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/10/987
+
+Federal Trade Commission. (2022, July 20). *FTC and 18 states sue to stop Harris Jewelry from cheating military families with illegal financing and sales tactics*. https://www.ftc.gov/news-events/news/press-releases/2022/07/ftc-18-states-sue-stop-harris-jewelry-cheating-military-families-illegal-financing-sales-tactics
+
+Federal Trade Commission. (2024). *Consumer Sentinel Network Data Book 2024*. https://www.ftc.gov/reports/consumer-sentinel-network-data-book-2024
+
+Federal Trade Commission. (2025, March 10). *New FTC data show a big jump in reported losses to fraud to $12.5 billion in 2024*. https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024
+
+United States Attorney's Office, Southern District of New York. (2018, January 5). *Scott Tucker sentenced to more than 16 years in prison for running $3.5 billion unlawful internet payday lending enterprise*. U.S. Department of Justice. https://www.justice.gov/usao-sdny/pr/scott-tucker-sentenced-more-16-years-prison-running-35-billion-unlawful-internet-payday`,
+    },
+    {
+      slug: "capstone-price-one-and-check-one",
+      title: "26 · Capstone: price one product, check one rule, read one document",
+      section: "Section 6 · The record, the enforcement, and who is targeted",
+      body: `Everything in this course is a procedure, and a procedure you have not run is a thing you have read about. This capstone runs all three of them once, on material you choose.
+
+**Before anything else, the third and last statement of the same thing.** This course gives **no financial advice**. It has not told you to use or avoid any product, has named no lender or seller as good or bad, and does not know your income, your obligations, your household or what a missed payment would cost you. Every figure in it carries a date because figures move, and it teaches methods rather than tables because tables go stale silently. **What you produce below is a description of how a product and a rule work, not a decision.** The decision is yours and it always was.
+
+**Part one: price one product.** Pick any product in this course that is offered where you live: a small-dollar loan, a title loan, a rent-to-own agreement, a refund advance, or the overdraft on an account you already hold. Find its real, current terms, from a real document rather than from an advertisement.
+
+Then produce four lines:
+1. **The amount**, and what is actually received.
+2. **The charge**, in dollars, including every separate fee named in the paperwork.
+3. **The term**, in days, and what happens at the end of it.
+4. **The comparison figure.** For credit, the annualized rate from 15 U.S.C. § 1606(a)(2): the charge over the amount, times 365 over the term in days. For rent-to-own, the multiple: total to ownership over cash price. **If the paperwork already states an annual percentage rate, compute yours anyway and compare the two.** A difference is not proof of anything, and it is always worth understanding.
+
+**Part two: check one rule, in your own state.** Take the same product and run the four-step method: the state's own noun, the state's own published code, the four features that decide the price, and the licensing regulator's public register.
+
+Write down five things: the statute's citation, the maximum amount, the maximum fee or rate, the permitted term, and whether renewal is allowed. Then **look the seller up on the regulator's register and record whether it appears.** Finish with the date you checked, because a rule you checked without dating is a rule you will misquote in a year.
+
+**Part three: read one document you already have.** Find your own deposit account's fee schedule and answer three questions from it: the overdraft or non-sufficient-funds fee, **how many can be charged in a single day**, and whether a sustained-overdraft charge applies. Then answer two more from Section 5, from the account agreement or the institution's published error-resolution information: **how you give notice of an unauthorized transfer**, and **the deadline for doing so**.
+
+**Part four, and it takes one minute: the sentence.** Write the one-sentence test from Section 5 somewhere you will find it again.
+
+> If somebody other than me moved the money without my authority, a federal procedure with deadlines applies and the institution has to prove it was authorized. If I moved it myself because I was deceived, that procedure does not apply, and what I am asking for is a courtesy rather than a right.
+
+**Then read it once more and note what it does not say.** It does not say the second case is your fault. It says the rules are different, and knowing which case you are in tells you what to ask for, how fast, and of whom. **That is the whole course: a document, a rule, and arithmetic you can do yourself.**
+
+**What you should have at the end.** One product priced in your own hand. One statute located, quoted and dated. One seller checked against a public register. Five facts from documents your own institution is required to give you. And a sentence that will be true long after every figure in this course has moved.
+
+:::reveal What four lines make up the pricing exercise? ||| The amount received, the charge in dollars including every fee, the term in days, and the comparison figure.
+
+:::reveal What five things does the rule-checking exercise record? ||| The statute's citation, the maximum amount, the maximum fee or rate, the permitted term, and whether renewal is allowed.
+
+:::reveal Which three questions does the capstone ask of your own fee schedule? ||| The overdraft or non-sufficient-funds fee, how many may be charged in a single day, and whether a sustained-overdraft charge applies.
+
+:::reveal What does the capstone's one-sentence test not say? ||| That being deceived into moving the money yourself is your fault. It says only that the rules are different.
+
+## Vocabulary
+- **Comparison figure**: the annualized rate for credit, or the multiple for a lease-purchase, whichever the product's structure makes computable.
+- **The four-step method**: naming the transaction as the state names it, reading the state's own code, extracting the four price features, and checking the licensing register.
+- **Sustained overdraft charge**: the additional fee some institutions assess while a balance remains negative, and one of the three fee-schedule facts to record.
+- **The one-sentence test**: the capstone's portable statement of the Regulation E line, written to remain true after the figures in this course have moved.
+
+## Sources
+15 U.S.C. § 1606. (n.d.). *Determination of annual percentage rate*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1606
+
+12 CFR § 1005.2. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.2
+
+12 CFR § 1005.11. (n.d.). *Procedures for resolving errors*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.11`,
+    },
   ],
 };
 
