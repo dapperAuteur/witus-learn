@@ -704,5 +704,659 @@ Arizona Revised Statutes § 33-1368. (n.d.). *Noncompliance with rental agreemen
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The loan itself, and the arithmetic nobody shows you
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-note-and-the-security-instrument",
+      title: "5 · A mortgage is two documents, and only one of them is the loan",
+      section: "Section 2 · The loan itself, and the arithmetic nobody shows you",
+      body: `In ordinary speech, "the mortgage" means the loan. In the paperwork it means something else, and the difference is worth ten minutes of anyone's life.
+
+**Document one is the promissory note.** It is the promise to repay: how much was borrowed, at what rate, over what term, in what payments, and what happens if a payment is late. It is a debt instrument, and it would work as one even if no property existed.
+
+**Document two is the security instrument**, called a mortgage in some states and a deed of trust in others. It does not lend anything. It pledges the property as security for the note, and it sets out what the lender may do if the note is not paid. That is the document the word "mortgage" technically names.
+
+**The second document gets recorded, and that is why this course ends in a land record.** A security instrument is filed with the county recorder so that the lender's interest appears in the public chain of title for that parcel. The land record is not a filing cabinet at a bank. It is a public register of who has what interest in a specific piece of ground, and everything in Section 6 lives in the same place.
+
+**Both halves are state law, and states genuinely differ.** Arizona is the course's labelled example again, and it carries both forms in separate chapters: mortgages at Title 33, Chapter 6, and deeds of trust at Title 33, Chapter 6.1 (Ariz. Rev. Stat. tit. 33, n.d.). Which instrument is used, and what a lender must do before a forced sale, are questions with fifty-one answers. **This course states no national rule about foreclosure**, for exactly the reason it stated none about eviction. Find the chapter of your own state's code that names the instrument on your paperwork, and read the sections about default in it.
+
+**What the term does.** The term is the number of years the scheduled payments run. A longer term produces a smaller payment on the same amount borrowed, and a larger total of interest, because interest accrues on the balance for longer. That is not a trick and it is not a scandal. It is the same trade priced two ways, and the next lesson makes it visible.
+
+**Escrow, and why Congress mentioned it by name.** Many loans collect an additional amount each month toward property tax and insurance, held by the servicer and paid out when those bills come due. Congress did not invent that arrangement, but it did name it in RESPA's own purposes, which include "a reduction in the amounts home buyers are required to place in escrow accounts established to insure the payment of real estate taxes and insurance" (12 U.S.C. § 2601, n.d.). A statute that lists reducing escrow among its purposes is a statute telling you the practice was a problem.
+
+**A sentence worth holding on to.** A payment that includes tax and insurance is not the same object as a payment that does not, so two quoted payments are not comparable until you know which components each one contains. That is not a small point. It is the single most common way two offers get compared wrongly, and the federal forms in Section 3 exist partly to stop it.
+
+**Where the catalog has been here before.** *The County Committee* (WARRANT-02) teaches a federal credit gate applied locally: a statutory eligibility standard, administered by people, with a written record of who was let through. A mortgage underwriting decision has the same shape one level down, with a private gate and a different set of documents. And *Surplus Funds Basics*, in the Asset Recovery series, picks up the thread at the other end, after a forced sale has happened and money is left over. This course does not cover that ground; it points at it.
+
+:::reveal What are the two documents in a mortgage transaction, and which one is the loan? ||| The promissory note, which is the promise to repay and is the loan, and the security instrument, which pledges the property.
+
+:::reveal Why does a security instrument end up in a county land record? ||| Because it is recorded so the lender's interest appears in the public chain of title for that parcel, which is the same register the covenants in Section 6 sit in.
+
+:::reveal What did Congress name among RESPA's own purposes in relation to escrow? ||| A reduction in the amounts home buyers are required to place in escrow accounts established to insure the payment of real estate taxes and insurance.
+
+## Vocabulary
+- **Promissory note**: the debt instrument itself, stating the amount borrowed, the rate, the term and the payments, and enforceable as a promise to repay whether or not property is involved.
+- **Security instrument**: the separate document, called a mortgage or a deed of trust depending on the state, that pledges the property as security for the note and states what the lender may do on default.
+- **Recording**: filing a document with the county recorder so that the interest it creates appears in the public chain of title for the parcel.
+- **Escrow**: an amount collected with the periodic payment and held by the servicer to pay property tax and insurance when those bills fall due.
+- **Term**: the number of years the scheduled payments run, which trades the size of the payment against the total interest paid.
+
+## Sources
+12 U.S.C. § 2601. (n.d.). *Congressional findings and purpose*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/12/2601
+
+Arizona Revised Statutes, tit. 33. (n.d.). *Property* [chapter listing: ch. 6, Mortgages; ch. 6.1, Deeds of Trust]. Arizona State Legislature. https://www.azleg.gov/arsDetail/?title=33`,
+    },
+    {
+      slug: "amortisation-is-the-whole-trick",
+      title: "6 · Amortisation, and why the early payments are almost all interest",
+      section: "Section 2 · The loan itself, and the arithmetic nobody shows you",
+      body: `People are told that early mortgage payments are mostly interest and are almost never shown why. The why is four lines of arithmetic, and once you have it you never need anyone's table again.
+
+**The rule that generates everything.** An amortising loan takes a level payment and splits it in the same way every period:
+
+1. **Interest** = the balance still owed, times the periodic rate.
+2. **Principal** = the payment, minus that interest.
+3. **New balance** = the old balance, minus that principal.
+4. Repeat.
+
+That is the whole mechanism. There is no fifth step.
+
+**Why the early payments are mostly interest falls straight out of step one.** Interest is charged on the balance, the balance is at its largest at the very beginning, so the interest slice is at its largest at the very beginning. Nobody decided this and no lender chose it. It is what happens when you charge interest on a declining balance and hold the payment constant.
+
+**A worked example, with the rate labelled as a hypothetical.** This course prints no market rate, so take a round number chosen because it makes the arithmetic checkable by hand: borrow 200,000 over 30 years at a **hypothetical** 6 percent a year. Six percent a year is 0.5 percent a month, so the periodic rate is 0.005 and there are 360 payments.
+
+The level payment that pays this to zero in 360 months is about **1,199.10**. Now run the four steps for month one:
+
+- Interest = 200,000 x 0.005 = **1,000.00**
+- Principal = 1,199.10 minus 1,000.00 = **199.10**
+- New balance = **199,800.90**
+
+**In the first month, about 83 percent of the payment is interest.** Not because anything unfair happened, but because 200,000 was outstanding for that month.
+
+**Now run it forward five years.** After 60 payments the balance is about **186,108**. So over those five years:
+
+- Paid in: 60 x 1,199.10 = about **71,946**
+- Debt reduced by: 200,000 minus 186,108 = about **13,892**
+- Interest: about **58,054**
+
+**Roughly nineteen cents of every dollar paid in the first five years reduced the debt.** Hold that number, because Section 4's comparison turns on it and because the federal form in the next lesson is required to print something very close to it.
+
+**And over the whole term**, 360 payments of about 1,199.10 come to about **431,676** on 200,000 borrowed, so about **231,676** is interest. That is a little more than the amount borrowed, at a hypothetical 6 percent over 30 years.
+
+**Two things follow, and neither is advice.** First, the term is not a neutral choice: it moves the payment one way and the total interest the other, and both effects are computable before anyone signs anything. Second, an extra amount applied to principal reduces the balance that every future interest calculation runs on, which is why prepayment is treated as a term worth disclosing rather than a courtesy. Whether a particular loan permits it, and on what conditions, is stated on the form you are about to meet.
+
+**Do this once by hand.** Take any amount, any hypothetical rate, and any term, and run the four steps for three months on paper. It takes five minutes, and it permanently ends the question of whether a payment schedule someone showed you is plausible.
+
+:::reveal What are the four steps that generate an amortisation schedule? ||| Interest equals balance times the periodic rate, principal equals payment minus interest, new balance equals old balance minus principal, then repeat.
+
+:::reveal Why is the interest share largest at the start of the loan? ||| Because interest is charged on the balance outstanding, and the balance is at its largest at the beginning.
+
+:::reveal In the course's hypothetical, roughly what share of the first five years of payments actually reduced the debt? ||| About nineteen percent, since about 13,892 of about 71,946 paid in went to principal.
+
+## Vocabulary
+- **Amortisation**: the process by which a level payment pays a loan to zero over its term, with the split between interest and principal shifting every period.
+- **Periodic rate**: the annual rate divided by the number of payments in a year, which is the number actually multiplied by the balance to produce one period's interest.
+- **Principal**: the part of a payment that reduces the amount owed, which is whatever is left after that period's interest is taken.
+- **Prepayment**: an amount paid beyond the scheduled payment and applied to principal, which lowers the balance every later interest calculation runs on.
+
+## Sources
+15 U.S.C. § 1601. (n.d.). *Congressional findings and declaration of purpose*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1601
+
+12 CFR § 1026.37. (n.d.). *Content of disclosures for certain mortgage transactions (Loan Estimate)*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.37`,
+    },
+    {
+      slug: "the-numbers-the-form-must-print",
+      title: "7 · The three numbers the form is required to print, and what each one means",
+      section: "Section 2 · The loan itself, and the arithmetic nobody shows you",
+      body: `The last lesson worked out by hand what a loan costs. Federal regulation requires a lender to print very nearly the same thing on a form, in a table whose heading is an instruction.
+
+**The table is called Comparisons**, and Regulation Z requires it "under the heading 'Comparisons' along with the statement 'Use these measures to compare this loan with other loans'" (12 CFR § 1026.37, n.d.). A regulator wrote the sentence telling you what the box is for.
+
+**Number one: In 5 Years.** The rule requires two figures. The first is "The total principal, interest, mortgage insurance, and loan costs scheduled to be paid through the end of the 60th month after the due date of the first periodic payment, expressed as a dollar amount, along with the statement 'Total you will have paid in principal, interest, mortgage insurance, and loan costs'". The second is "The principal scheduled to be paid through the end of the 60th month after the due date of the first periodic payment, expressed as a dollar amount, along with the statement 'Principal you will have paid off.'" (12 CFR § 1026.37, n.d.).
+
+**Those two figures are the previous lesson, printed.** Total paid in, and how much of it reduced the debt. A learner who ran the four steps by hand already knows why the second number is so much smaller than the first, and is therefore not surprised by a form that most people find demoralising and cannot explain.
+
+**Number two: the annual percentage rate, with a sentence attached that ends an argument.** The regulation requires "The 'Annual Percentage Rate,' using that term and the abbreviation 'APR' and expressed as a percentage, and the following statement: 'Your costs over the loan term expressed as a rate. This is not your interest rate.'" (12 CFR § 1026.37, n.d.).
+
+**Read the last four words again.** The form itself tells you the APR is not the interest rate. The interest rate is what generates the interest line in the amortisation arithmetic. The APR expresses the cost of the loan, including certain charges, as a rate, so that two offers with different fee structures can be ranked against each other. Two loans can carry the same interest rate and different APRs, and the difference is the charges.
+
+**Number three: the total interest percentage.** The regulation requires "The total amount of interest that the consumer will pay over the life of the loan, expressed as a percentage of the amount of credit extended, using the term 'Total Interest Percentage,' the abbreviation 'TIP,' and the statement 'The total amount of interest that you will pay over the loan term as a percentage of your loan amount.'" (12 CFR § 1026.37, n.d.).
+
+**This is the most quietly devastating number on the form**, and it is the previous lesson's last paragraph turned into one figure. In the hypothetical worked there, about 231,676 of interest on 200,000 borrowed is a total interest percentage of about 116 percent. Nothing is hidden and nothing is unusual. It is simply what a long term at a positive rate produces, stated once, in a unit anyone can compare.
+
+**The same numbers reappear at the end.** The Closing Disclosure carries a "Loan Calculations" table (12 CFR § 1026.38, n.d.), which includes the total of payments, described as what the consumer will have paid after making all payments of principal, interest, mortgage insurance and loan costs as scheduled, alongside the annual percentage rate and the total interest percentage. So the estimate and the final document report in the same units, which is exactly what makes them comparable to each other as well as to a rival offer.
+
+**Why any of this exists.** Because the Truth in Lending Act says its purpose is "to assure a meaningful disclosure of credit terms so that the consumer will be able to compare more readily the various credit terms available to him and avoid the uninformed use of credit" (15 U.S.C. § 1601, n.d.). Every box named above is that sentence turned into a printing requirement.
+
+:::reveal What sentence does Regulation Z require to appear with the Comparisons heading? ||| Use these measures to compare this loan with other loans.
+
+:::reveal What statement must the form print next to the annual percentage rate? ||| Your costs over the loan term expressed as a rate. This is not your interest rate.
+
+:::reveal What does the total interest percentage express, in the regulation's own words? ||| The total amount of interest you will pay over the loan term as a percentage of your loan amount.
+
+## Vocabulary
+- **Comparisons table**: the Loan Estimate box that Regulation Z requires under a heading telling the consumer to use its measures to compare this loan with other loans.
+- **In 5 Years**: the pair of figures showing the total scheduled to be paid through the sixtieth month and how much of that will have paid off principal.
+- **Annual percentage rate**: the cost of the loan over its term expressed as a rate, which the form itself states is not the interest rate.
+- **Total interest percentage**: the total interest over the life of the loan expressed as a percentage of the amount borrowed, abbreviated TIP on the form.
+- **Loan Calculations**: the Closing Disclosure table that repeats the total of payments, the annual percentage rate and the total interest percentage on the final document.
+
+## Sources
+12 CFR § 1026.37. (n.d.). *Content of disclosures for certain mortgage transactions (Loan Estimate)*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.37
+
+12 CFR § 1026.38. (n.d.). *Content of disclosures for certain mortgage transactions (Closing Disclosure)*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.38
+
+15 U.S.C. § 1601. (n.d.). *Congressional findings and declaration of purpose*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1601`,
+    },
+    {
+      slug: "quiz-the-loan",
+      title: "8 · Knowledge check: the loan itself, and the arithmetic",
+      section: "Section 2 · The loan itself, and the arithmetic nobody shows you",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "In the paperwork, which document is the loan?",
+            options: ["The promissory note", "The security instrument, which pledges the property to the lender", "The deed, which conveys title from the seller to the buyer at closing", "The Closing Disclosure, which states the actual terms of the transaction"],
+            correctIndex: 0,
+            explanation: "It states how much was borrowed, at what rate, over what term, in what payments, and would work as a debt even with no property involved.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What does the security instrument actually do?",
+            options: ["Pledges the property", "Lends the money the borrower uses to purchase the property", "Transfers legal title to the lender until the final payment is made", "Guarantees that the property is worth at least the amount borrowed"],
+            correctIndex: 0,
+            explanation: "It secures the note and sets out what the lender may do if the note is not paid; it lends nothing itself.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "Which two names does the course give for the security instrument, depending on the state?",
+            options: ["Mortgage or deed of trust", "Promissory note or loan agreement, depending on the lender's own forms", "Warranty deed or quitclaim deed, depending on what the seller conveys", "Title policy or abstract of title, depending on how the state proves ownership"],
+            correctIndex: 0,
+            explanation: "Which instrument is used, and what a lender must do before a forced sale, are questions with fifty-one answers.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "Why does a security instrument get recorded?",
+            options: ["So the lender's interest is public", "So the county can assess property tax against the correct owner each year", "So the borrower can prove to an insurer that the property is encumbered", "So a later buyer is relieved of any obligation the previous owner incurred"],
+            correctIndex: 0,
+            explanation: "Recording puts the lender's interest in the public chain of title for that parcel, which is the same register the covenants in Section 6 sit in.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What is a county land record, as this course describes it?",
+            options: ["A public register of interests", "A private archive maintained by the title insurance industry for its members", "A federal database of every residential mortgage originated in the United States", "A list of properties on which taxes are delinquent, published once each year"],
+            correctIndex: 0,
+            explanation: "It records who has what interest in a specific piece of ground, which is why the course ends there rather than in a bank's files.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "Where does Arizona put mortgages and deeds of trust in its statutes?",
+            options: ["Title 33, chapters 6 and 6.1", "Title 44, chapters 2 and 3, alongside the consumer transaction provisions", "Title 6, chapters 8 and 9, with the rules governing banks and lenders", "Title 12, chapters 5 and 6, with the general provisions on civil procedure"],
+            correctIndex: 0,
+            explanation: "Arizona carries both forms in separate chapters, which is one reason the course uses it as its labelled worked example.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What national rule does this course state about foreclosure?",
+            options: ["None", "That a lender must obtain a court judgment before any forced sale may occur", "That a borrower always has a statutory right to reinstate the loan before sale", "That a lender must offer a loan modification before commencing any proceeding"],
+            correctIndex: 0,
+            explanation: "The course states none, for the same reason it states none about eviction: this is state law and the variation is real.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What does the course tell a reader to do about default rules in their own state?",
+            options: ["Read their own state's chapter", "Assume the Arizona provisions apply unless a lender says otherwise", "Rely on the summary in the loan documents the lender provides at closing", "Wait for a servicer to explain the process after a payment has been missed"],
+            correctIndex: 0,
+            explanation: "Find the chapter that names the instrument on your own paperwork, and read the sections about default in it.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What does a longer term do to the payment and to total interest?",
+            options: ["Lowers one, raises the other", "Lowers both, because the lender spreads its costs over more periods", "Raises both, because a longer commitment carries a higher periodic rate", "Leaves both unchanged, because the total borrowed has not changed at all"],
+            correctIndex: 0,
+            explanation: "A longer term produces a smaller payment on the same amount borrowed and a larger total of interest, since interest accrues for longer.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "How does the course characterise the trade between term and total interest?",
+            options: ["The same trade priced two ways", "A defect in the amortisation formula that regulators have not yet corrected", "A charge the lender adds to compensate for the risk of a longer commitment", "An artefact of escrow, which grows with the number of years the loan runs"],
+            correctIndex: 0,
+            explanation: "It is not a trick and not a scandal; it is what happens when interest accrues on a balance for a longer period.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What is escrow, in the sense this lesson uses?",
+            options: ["Money collected for tax and insurance", "A holding account for the buyer's deposit until the sale closes", "A reserve the lender keeps against the possibility of a missed payment", "A fund set aside by the county to cover unpaid assessments on a parcel"],
+            correctIndex: 0,
+            explanation: "It is collected with the periodic payment, held by the servicer, and paid out when the tax and insurance bills fall due.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What did Congress list among RESPA's own purposes in relation to escrow?",
+            options: ["A reduction in the amounts required", "A requirement that escrow be held in an interest-bearing account", "A prohibition on any lender collecting escrow from a first-time buyer", "A cap of two months of tax and insurance on any federally related loan"],
+            correctIndex: 0,
+            explanation: "A statute that lists reducing escrow among its purposes is a statute telling you the practice was a problem.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "Why does the course say two quoted monthly payments may not be comparable?",
+            options: ["They may contain different components", "Because lenders are permitted to quote payments net of any prepayment credit", "Because a payment quoted before an application is not required to be accurate", "Because servicers recalculate the payment every year regardless of the terms"],
+            correctIndex: 0,
+            explanation: "A payment that includes tax and insurance is not the same object as one that does not, which is the most common way two offers get compared wrongly.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "Which shipped catalog course does this lesson name as the federal credit gate applied locally?",
+            options: ["The County Committee", "What They Built, on Black business districts and the building and loan", "Financing Without Access, on fraternal societies and rotating savings", "Banking and the Unbanked, on deposit accounts and the households without one"],
+            correctIndex: 0,
+            explanation: "WARRANT-02 teaches a statutory eligibility standard administered by people, with a written record of who was let through.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "How does the course relate a mortgage underwriting decision to the county committee?",
+            options: ["Same shape, private gate", "Identical process, since both are governed by the same federal statute", "Opposite shapes, because underwriting has no written eligibility standard", "Unrelated, because farm credit and residential credit share no common structure"],
+            correctIndex: 0,
+            explanation: "It is the same shape one level down: an eligibility standard, a decider, and a documentary record of the decision.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "Which course does this lesson name as picking up the thread after a forced sale?",
+            options: ["Surplus Funds Basics", "Cooperatives, which teaches the credit union among other co-operative forms", "Credit Decisions, which teaches the consumer report an underwriter reads", "The Great Migration, which teaches the movement out of the rural South"],
+            correctIndex: 0,
+            explanation: "It sits in the Asset Recovery series and deals with money left over after a sale; this course points at it rather than covering it.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "In ordinary speech, what does the word mortgage usually mean?",
+            options: ["The loan", "The security instrument recorded against the parcel", "The monthly payment a borrower makes to the servicer", "The lien priority a lender holds relative to other creditors"],
+            correctIndex: 0,
+            explanation: "In the paperwork it names the security instrument instead, and the course says the difference is worth ten minutes of anyone's life.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What would still be true of a promissory note if no property existed?",
+            options: ["It would still be a debt", "It would be unenforceable for want of consideration", "It would convert automatically into an unsecured personal loan agreement", "It would need to be recorded with the county before it could be collected"],
+            correctIndex: 0,
+            explanation: "The note is a debt instrument in its own right; the security instrument is what attaches the property to it.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What is the first step of the amortisation rule?",
+            options: ["Interest equals balance times rate", "Payment equals principal divided by the number of periods remaining", "Balance equals the original amount less the total of all payments made", "Principal equals the payment multiplied by the periodic rate for that month"],
+            correctIndex: 0,
+            explanation: "The periodic rate is the annual rate divided by the number of payments in a year, and it multiplies the balance still owed.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "How is the principal portion of a payment calculated?",
+            options: ["Payment minus interest", "Balance multiplied by the periodic rate for that month", "The original amount borrowed divided by the number of payments", "A fixed share of the payment set by the lender at origination"],
+            correctIndex: 0,
+            explanation: "Whatever is left after that period's interest is taken is what reduces the amount owed.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "How many steps does the course say the amortisation mechanism has?",
+            options: ["Four", "Seven, one for each component of a fully escrowed monthly payment", "Two, because interest and principal are computed from a single formula", "Twelve, because the schedule must be recalculated once in every month of the year"],
+            correctIndex: 0,
+            explanation: "Interest, principal, new balance, repeat. The course says there is no fifth step.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "Why are the early payments mostly interest?",
+            options: ["The balance is largest then", "Because lenders front-load their charges into the first years of the loan", "Because regulation requires interest to be collected before any principal", "Because the periodic rate is set higher during the first sixty payments"],
+            correctIndex: 0,
+            explanation: "Nobody decided it: it is what happens when interest is charged on a declining balance while the payment is held constant.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "What does the course say about the 6 percent rate in its worked example?",
+            options: ["It is a hypothetical", "It is the average rate on a thirty-year loan at the date of writing", "It is the maximum rate permitted on a federally related mortgage loan", "It is the rate the Loan Estimate uses in the model form the regulation prints"],
+            correctIndex: 0,
+            explanation: "The course prints no market rate, and this round number was chosen because 0.5 percent a month makes the arithmetic checkable by hand.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "In the worked example, what is the periodic rate?",
+            options: ["0.005", "0.06, applied once at the end of each calendar year of the loan", "0.5, since the rate is stated as a percentage rather than a decimal", "0.0005, because the annual rate is divided across three hundred sixty payments"],
+            correctIndex: 0,
+            explanation: "Six percent a year is 0.5 percent a month, and there are 360 payments over the thirty-year term.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "In the worked example, what is the first month's interest on 200,000?",
+            options: ["1,000", "1,199.10, which is the whole of the first scheduled payment", "199.10, with the balance of the payment reducing the amount owed", "12,000, because interest for the first year is collected at the outset"],
+            correctIndex: 0,
+            explanation: "200,000 multiplied by 0.005 is 1,000, which is why so little of the first payment reduces the debt.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "In the worked example, roughly what share of the first payment is interest?",
+            options: ["About 83 percent", "About 50 percent, split evenly between interest and principal", "About 17 percent, with the rest going straight to reduce the balance", "About 100 percent, since no principal is repaid in the first twelve months"],
+            correctIndex: 0,
+            explanation: "About 1,000 of a payment of about 1,199.10 is interest, because 200,000 was outstanding for that month.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "In the worked example, what is the approximate balance after five years?",
+            options: ["About 186,108", "About 128,054, once sixty scheduled payments have been applied in full", "About 199,801, because only the first month's principal has been credited", "About 71,946, which is the total of the payments made over those five years"],
+            correctIndex: 0,
+            explanation: "Sixty payments of about 1,199.10 reduced a 200,000 balance by only about 13,892.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "In the worked example, roughly how much of the first five years of payments reduced the debt?",
+            options: ["About 19 percent", "About 81 percent, with the remainder covering the interest charged", "About half, since the split reaches parity around the fifth year", "About 3 percent, because the balance barely moves in the first decade"],
+            correctIndex: 0,
+            explanation: "About 13,892 of about 71,946 paid in went to principal, and the rest, about 58,054, was interest.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "In the worked example, what is the approximate total of all 360 payments?",
+            options: ["About 431,676", "About 231,676, which is the interest charged over the full term", "About 200,000, since an amortising loan repays exactly what was borrowed", "About 359,730, because the final payment is smaller than the others"],
+            correctIndex: 0,
+            explanation: "360 payments of about 1,199.10 on 200,000 borrowed leaves about 231,676 of interest.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "In the worked example, roughly how does total interest compare with the amount borrowed?",
+            options: ["A little more", "A little less, because principal is repaid throughout the term", "About one quarter, which is typical of a long amortising loan", "Roughly triple, because interest compounds monthly over thirty years"],
+            correctIndex: 0,
+            explanation: "About 231,676 of interest on 200,000 borrowed, at a hypothetical 6 percent over thirty years.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "What does an extra amount applied to principal do?",
+            options: ["Lowers every later interest figure", "Shortens the term without changing the total interest that will be paid", "Entitles the borrower to a proportionate refund of the interest already paid", "Suspends the requirement to make the next scheduled payment on its due date"],
+            correctIndex: 0,
+            explanation: "It reduces the balance that every future interest calculation runs on, which is why prepayment is a term worth disclosing.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "Where does the course say a borrower finds out whether a loan permits prepayment?",
+            options: ["On the form", "In the county land record where the security instrument was filed", "From the servicer, after the loan has been transferred for the first time", "In the state statute governing the security instrument used in that state"],
+            correctIndex: 0,
+            explanation: "Whether a prepayment penalty applies is one of the items the Loan Estimate's Loan Terms table has to state.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "What exercise does the lesson ask a learner to do once, by hand?",
+            options: ["Run three months of a schedule", "Compute the annual percentage rate from the statutory formula", "Compare three lenders' quoted payments on a single sheet of paper", "Reconstruct the total interest percentage from a completed Closing Disclosure"],
+            correctIndex: 0,
+            explanation: "It takes about five minutes, and it permanently ends the question of whether a payment schedule someone showed you is plausible.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "What is the periodic rate, as this lesson defines it?",
+            options: ["Annual rate divided by payments per year", "The rate a lender charges on the amount still outstanding at the end of the term", "The annual percentage rate reduced by the charges included in its computation", "The rate at which the payment itself increases from one year to the next"],
+            correctIndex: 0,
+            explanation: "It is the number actually multiplied by the balance to produce one period's interest.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "According to the lesson, who decided that early payments are mostly interest?",
+            options: ["Nobody", "Congress, when it enacted the Truth in Lending Act's disclosure rules", "The lender, which sets the split between interest and principal at closing", "The servicer, which applies payments in the order stated in the note"],
+            correctIndex: 0,
+            explanation: "It falls out of charging interest on a declining balance while holding the payment constant, and no lender chose it.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "What is the third step of the amortisation rule?",
+            options: ["New balance equals old less principal", "New payment equals old payment plus the accrued interest not yet collected", "New rate equals the old rate adjusted for the index published that month", "New term equals the remaining periods less the number of payments made"],
+            correctIndex: 0,
+            explanation: "Then the rule repeats, and the course insists there is no fifth step to the mechanism.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "What heading does Regulation Z require over the Loan Estimate's comparison table?",
+            options: ["Comparisons", "Additional Disclosures, which collects the loan's remaining required statements", "Loan Costs, which itemises the charges the creditor imposes at origination", "Projected Payments, which shows how the payment changes over the loan's life"],
+            correctIndex: 0,
+            explanation: "The regulation also requires the statement telling the consumer to use these measures to compare this loan with other loans.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What statement must accompany the Comparisons heading?",
+            options: ["Use these measures to compare", "This estimate is not a commitment to lend on the terms shown", "Your lender may change these figures at any time before closing", "These numbers assume you make every payment on its scheduled due date"],
+            correctIndex: 0,
+            explanation: "A regulator wrote the sentence telling the consumer what the box is for, which is the course's point about the whole form.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "How many figures does the In 5 Years disclosure require?",
+            options: ["Two", "One, the total the consumer will have paid by the sixtieth month", "Four, covering principal, interest, mortgage insurance and loan costs separately", "Five, one for each year of the period the disclosure covers"],
+            correctIndex: 0,
+            explanation: "A total paid in through the sixtieth month, and the principal that will have been paid off by then.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "Through which month does the In 5 Years disclosure measure?",
+            options: ["The sixtieth", "The seventy-second, which is six years after the first scheduled payment", "The last month of the fifth calendar year in which the loan is outstanding", "The month in which the balance first falls below the original amount borrowed"],
+            correctIndex: 0,
+            explanation: "The regulation counts through the end of the 60th month after the due date of the first periodic payment.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "Which items does the In 5 Years total include, by the regulation's own list?",
+            options: ["Principal, interest, mortgage insurance, loan costs", "Principal and interest only, since other charges vary with the property", "Every settlement charge the consumer paid at or before consummation", "The escrowed property tax and insurance, plus principal and interest"],
+            correctIndex: 0,
+            explanation: "The form pairs that total with the principal the consumer will have paid off by the same point.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What does the course say the In 5 Years box is, in relation to the amortisation lesson?",
+            options: ["That lesson, printed", "A separate calculation that regulators derived from a different formula", "A projection that applies only to loans with an adjustable interest rate", "An estimate the lender may revise once the property has been appraised"],
+            correctIndex: 0,
+            explanation: "A learner who ran the four steps by hand already knows why the second figure is so much smaller than the first.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What sentence must the form print beside the annual percentage rate?",
+            options: ["This is not your interest rate", "This rate is guaranteed for sixty days from the date of this estimate", "This rate may increase if the property appraises below the purchase price", "This rate includes every charge you will pay in connection with the loan"],
+            correctIndex: 0,
+            explanation: "The full statement calls the APR the consumer's costs over the loan term expressed as a rate, and then says it is not the interest rate.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What does the annual percentage rate express?",
+            options: ["Cost over the term, as a rate", "The share of each payment that goes to interest in the first year", "The proportion of the property's value the lender is willing to finance", "The premium a borrower pays above the rate offered to the safest applicants"],
+            correctIndex: 0,
+            explanation: "Including certain charges, so two offers with different fee structures can be ranked against each other.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "Can two loans carry the same interest rate and different annual percentage rates?",
+            options: ["Yes, the charges differ", "No, because the annual percentage rate is derived from the interest rate alone", "Only where one loan is adjustable and the other carries a fixed rate", "Only where the two loans have different terms measured in years"],
+            correctIndex: 0,
+            explanation: "That is exactly why the APR exists as a separate figure and why the form says it is not the interest rate.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "Which figure generates the interest line in the amortisation arithmetic?",
+            options: ["The interest rate", "The annual percentage rate, once the loan costs are added to the balance", "The total interest percentage, divided by the number of payments remaining", "The total of payments, spread evenly across the months of the loan term"],
+            correctIndex: 0,
+            explanation: "The APR expresses cost as a rate for comparison; the interest rate is what multiplies the balance each period.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What does the total interest percentage state?",
+            options: ["Interest as a share of the amount borrowed", "The share of the first sixty payments that consists of interest", "The rate at which unpaid interest is added back to the loan balance", "The proportion of the lender's revenue that comes from interest rather than fees"],
+            correctIndex: 0,
+            explanation: "The regulation requires the term, the abbreviation TIP, and a statement describing it as interest over the loan term as a percentage of the loan amount.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "In the course's hypothetical, roughly what is the total interest percentage?",
+            options: ["About 116 percent", "About 16 percent, because interest is spread over three hundred sixty months", "About 54 percent, matching the interest share of the first five years of payments", "About 6 percent, which is the annual rate the worked example assumed"],
+            correctIndex: 0,
+            explanation: "About 231,676 of interest on 200,000 borrowed, which the course says is nothing hidden and nothing unusual.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "Which table on the Closing Disclosure repeats these figures?",
+            options: ["Loan Calculations", "Summary of Borrower's Transaction, which reconciles the amounts paid", "Calculating Cash to Close, which compares the estimate against the final", "Projected Payments, which shows how the payment changes over the term"],
+            correctIndex: 0,
+            explanation: "It carries the total of payments alongside the annual percentage rate and the total interest percentage.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What does the Closing Disclosure's total of payments represent?",
+            options: ["Everything paid if all payments are made", "The amount still outstanding after the sixtieth scheduled payment", "The sum of the settlement charges collected at or before consummation", "The cash the consumer must bring to the closing table on the day"],
+            correctIndex: 0,
+            explanation: "It is what the consumer will have paid after making all payments of principal, interest, mortgage insurance and loan costs as scheduled.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "Why does it matter that the estimate and the final document report in the same units?",
+            options: ["They stay comparable", "Because the regulation requires the two documents to state identical figures", "Because a difference between them entitles the consumer to cancel the loan", "Because the servicer uses the difference to set the first escrow analysis"],
+            correctIndex: 0,
+            explanation: "It makes them comparable to each other as well as to a rival offer, which is the whole design of the disclosure regime.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "According to this lesson, what are all of these printing requirements an expression of?",
+            options: ["TILA's stated purpose", "An industry agreement reached with the federal banking regulators", "A settlement of litigation brought against several national lenders", "A model form drafted by the states and later adopted by Congress"],
+            correctIndex: 0,
+            explanation: "The statute's purpose is meaningful disclosure so a consumer can compare more readily and avoid the uninformed use of credit.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What does the course call the total interest percentage?",
+            options: ["The quietly devastating number", "The only figure on the form a lender is permitted to estimate", "A number that applies only to loans with a term longer than fifteen years", "A calculation the consumer must request, since it is not printed by default"],
+            correctIndex: 0,
+            explanation: "It converts total interest into a share of what was borrowed, in a unit anyone can compare.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What does the second In 5 Years figure tell the consumer?",
+            options: ["Principal paid off", "The balance that will remain outstanding at that point", "The interest that will have accrued by the sixtieth month", "The equity the property will have gained through appreciation"],
+            correctIndex: 0,
+            explanation: "The regulation requires the statement Principal you will have paid off beside that dollar amount.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "Why does the course say a learner who did the arithmetic is not demoralised by the In 5 Years box?",
+            options: ["They already know why", "Because the box is optional and may be omitted from the estimate", "Because their own calculation would produce a much more favourable figure", "Because the regulation lets a lender exclude loan costs from that total"],
+            correctIndex: 0,
+            explanation: "Most people find the figure demoralising and cannot explain it; running the four steps by hand supplies the explanation.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "Which of these does the course say is hidden in a total interest percentage of about 116 percent?",
+            options: ["Nothing", "A charge the lender adds outside the interest rate disclosed", "An assumption that the borrower will refinance before the term ends", "A servicing fee that is collected annually and never separately stated"],
+            correctIndex: 0,
+            explanation: "It is what a long term at a positive rate produces, stated once in a comparable unit.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What is the practical use of the Comparisons table, in one phrase?",
+            options: ["Ranking offers", "Calculating the cash a buyer must bring to closing", "Confirming that the appraised value supports the purchase price", "Recording the lender's interest in the county land records"],
+            correctIndex: 0,
+            explanation: "The regulation's own heading statement tells the consumer to use these measures to compare this loan with other loans.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "Who wrote the sentence on the form telling a consumer what the Comparisons box is for?",
+            options: ["A regulator", "The lender's compliance department, following an industry template", "The consumer's own settlement agent, as part of the closing package", "A trade association that publishes model forms for its member lenders"],
+            correctIndex: 0,
+            explanation: "Regulation Z prescribes the heading and the statement that goes with it, which is the course's point about the whole document.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What unit does the total interest percentage put interest into?",
+            options: ["A share of the loan amount", "Dollars per month over the first five years of the loan", "A rate per year, comparable with the disclosed interest rate", "A ratio of interest to the property's appraised market value"],
+            correctIndex: 0,
+            explanation: "Expressing it as a percentage of the amount borrowed is what makes it comparable across two offers of different sizes.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "Which of these does a promissory note state?",
+            options: ["Amount, rate, term, payments", "The legal description of the parcel offered as security", "The lender's remedies if the borrower fails to pay on time", "The county in which the instrument must be recorded"],
+            correctIndex: 0,
+            explanation: "It also states what happens if a payment is late, and it is the loan itself rather than the pledge of the property.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What does the course say a land record is not?",
+            options: ["A filing cabinet at a bank", "A public register of interests in a specific parcel of ground", "A document a lender is required to record after making a loan", "A register that a member of the public is entitled to search"],
+            correctIndex: 0,
+            explanation: "It is a public register of who has what interest in a specific piece of ground, which is why Section 6 lives in the same place.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "Why does the course refuse to state a national foreclosure rule?",
+            options: ["It is state law", "Because foreclosure procedures are set by each lender's own servicing manual", "Because the rules were suspended and have not yet been fully reinstated", "Because federal regulation preempts state procedure only for insured loans"],
+            correctIndex: 0,
+            explanation: "The same reason it states no national rule about eviction, and the variation between states is real rather than cosmetic.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What does the course say a statute listing escrow reduction among its purposes tells you?",
+            options: ["The practice was a problem", "That escrow accounts are prohibited on federally related mortgage loans", "That Congress intended lenders to stop collecting tax and insurance entirely", "That the amount held in escrow is capped at one year of anticipated charges"],
+            correctIndex: 0,
+            explanation: "Congress did not invent the arrangement, but it named reducing the amounts required among RESPA's four stated purposes.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What does the course say is the most common way two mortgage offers get compared wrongly?",
+            options: ["Different payment components", "Comparing the annual percentage rate rather than the interest rate", "Comparing loans of different terms without adjusting for the number of years", "Comparing an estimate against a final disclosure rather than two estimates"],
+            correctIndex: 0,
+            explanation: "A payment that includes tax and insurance is not the same object as one that does not, and the federal forms exist partly to stop that error.",
+            sourceLessonSlug: "the-note-and-the-security-instrument",
+          },
+          {
+            prompt: "What is the second step of the amortisation rule?",
+            options: ["Principal equals payment minus interest", "Interest equals the payment multiplied by the periodic rate", "Balance equals the payment divided by the number of periods left", "Payment equals the balance divided by the remaining term in months"],
+            correctIndex: 0,
+            explanation: "The interest is taken first, and whatever remains of the payment is what reduces the amount owed.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "In the worked example, what is the approximate level payment?",
+            options: ["1,199.10", "1,000.00, which is the interest charged in the first month", "555.56, being 200,000 divided by the 360 scheduled payments", "1,666.67, so that the loan repays in full within twenty years"],
+            correctIndex: 0,
+            explanation: "That is the payment that amortises 200,000 to zero over 360 months at a hypothetical 0.5 percent a month.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "In the worked example, what is the balance after the first payment?",
+            options: ["199,800.90", "199,000.00, once the first month's interest has been credited", "198,800.90, because two months of principal are applied at the outset", "200,000.00, since the first payment consists entirely of interest"],
+            correctIndex: 0,
+            explanation: "The first payment reduced the balance by about 199.10, because about 1,000.00 of it went to interest.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "In the worked example, roughly how much interest was paid over the first five years?",
+            options: ["About 58,054", "About 13,892, with the remainder reducing the outstanding balance", "About 71,946, being the whole of the payments made in that period", "About 231,676, which is the interest charged across the entire term"],
+            correctIndex: 0,
+            explanation: "About 71,946 was paid in and about 13,892 of it reduced the debt, leaving the rest as interest.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "Why did the course pick a rate that works out to half a percent a month?",
+            options: ["The arithmetic checks by hand", "Because it matches the rate used in the model form the regulation prints", "Because half a percent is the lowest rate a lender may lawfully charge", "Because monthly compounding is only permitted at rates below one percent"],
+            correctIndex: 0,
+            explanation: "The course prints no market rate, and a round hypothetical lets a reader verify every figure with a pen.",
+            sourceLessonSlug: "amortisation-is-the-whole-trick",
+          },
+          {
+            prompt: "Which figure on the Loan Estimate answers the amortisation lesson most directly?",
+            options: ["In 5 Years", "Costs at Closing, which totals the charges due at consummation", "The Loan Terms table, which states the amount borrowed and the rate", "Calculating Cash to Close, which reconciles the estimate against the final"],
+            correctIndex: 0,
+            explanation: "It prints the total paid through the sixtieth month beside the principal that will have been paid off by then.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+          {
+            prompt: "What must accompany the total interest percentage on the form, besides the figure?",
+            options: ["The term, the abbreviation, and a statement", "A comparison against the average for loans of that size and term", "A signature line confirming the consumer has read and understood it", "A footnote naming the index against which the figure was calculated"],
+            correctIndex: 0,
+            explanation: "The regulation requires the words Total Interest Percentage, the abbreviation TIP, and the sentence describing what the figure means.",
+            sourceLessonSlug: "the-numbers-the-form-must-print",
+          },
+        ],
+      },
+    },
   ],
 };
