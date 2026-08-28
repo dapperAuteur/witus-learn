@@ -212,7 +212,7 @@ export const JURISDICTION: JurisdictionFile = {
       fetchedOn: "2026-07-19",
       sourceUrl: ND_SS_SOURCE,
       adoption:
-        "North Dakota's Economics standards (adopted August 2019) are its own. The commodity curriculum reaches the trade, price, government-role, and economic-systems benchmarks below; North Dakota's own state-owned bank and mill give the 'role of government in a market economy' benchmark a distinctive local case. The remaining Economics benchmarks (scarcity and factors of production, market institutions, macroeconomic measures, and the full Personal Finance strand E.6_12.7) are rejected in notClaimed. Transcribed verbatim from the NDDPI Social Studies Content Standards.",
+        "North Dakota's Economics standards (adopted August 2019) are its own. The commodity curriculum reaches the trade, price, government-role, and economic-systems benchmarks below; North Dakota's own state-owned bank and mill give the 'role of government in a market economy' benchmark a distinctive local case. The remaining Economics benchmarks (scarcity and factors of production, market institutions, macroeconomic measures, and four of the five Personal Finance benchmarks under E.6_12.7) are rejected in notClaimed; E.6_12.7.4 is claimed as a partial in its own framework below, which carries its own fetch date. Transcribed verbatim from the NDDPI Social Studies Content Standards.",
       standards: [
         {
           code: "E.6_12.6.1",
@@ -256,6 +256,58 @@ export const JURISDICTION: JurisdictionFile = {
           claimIds: ["bvc.traditional-vs-market-economies"],
           coverage: "partial",
           note: "Partial: the catalog contrasts traditional (reciprocity) economies against market economies directly and at length, and how each shapes a people's lives. The command/centrally-planned-versus-market contrast the benchmark's guiding topics center on (communism, socialism, capitalism) is not the comparison taught.",
+        },
+      ],
+    },
+
+    // ── Social Studies — 6-12 Economics, the Personal Finance strand ───────
+    //
+    // ITS OWN FRAMEWORK, FOR THE SAME REASON AS EVERY OTHER STATE IN THIS PASS: `fetchedOn` is
+    // provenance rendered to teachers, this benchmark was read 2026-08-28, and nd-econ above was
+    // read 2026-07-19. Folding it in would force a choice between backdating a fetch or restamping
+    // entries nobody re-read.
+    //
+    // THIS SUPERSEDES A REJECTION. nd-econ's own adoption note and this file's notClaimed both said
+    // "the full Personal Finance strand E.6_12.7" was not taught. One of its five benchmarks now is,
+    // in part. Both are rewritten rather than left to contradict the data.
+    //
+    // ONE BENCHMARK OF FIVE, AND NOT THE STRAND. E.6_12.7 reads "Evaluate the elements of
+    // responsible personal finance", and its five benchmarks are careers, taxes, financial goals,
+    // credit and debt, and debt-avoidance strategies. Four of the five are squarely outside this
+    // catalog. Claiming the strand statement would promise a teacher the whole of responsible
+    // personal finance, which is exactly the widening the standards rule forbids.
+    //
+    // TWO TRANSCRIPTION NOTES, BOTH THE PUBLISHER'S AND BOTH PRESERVED.
+    //   · The ♦ printed on every code in this strand is the document's own marker for content
+    //     required by North Dakota Century Code 15.1-21. Following this file's existing convention
+    //     (see the header note on C.6_12.1.3), it is described here rather than appended to the
+    //     verbatim text, because it is a document annotation and not part of the sentence.
+    //   · The strand's guiding-topics column for E.6_12.7.5 reads "FICA score". FICA is the payroll
+    //     tax statute; the intended term is almost certainly FICO. That is a typo in North Dakota's
+    //     published standard, not in this transcription. It is recorded here rather than quoted,
+    //     because guiding topics are explicitly non-required and we claim against benchmark text.
+    {
+      id: "nd-econ-personal-finance",
+      subject: "Social Studies",
+      name: "North Dakota Social Studies Content Standards — 6-12 Economics, Personal Finance (E.6_12.7)",
+      publisher: ND_SS_PUBLISHER,
+      version: `${ND_SS_VERSION} · 6-12 Economics, Personal Finance strand (E.6_12.7)`,
+      fetchedOn: "2026-08-28",
+      sourceUrl: ND_SS_SOURCE,
+      adoption:
+        "North Dakota's Economics strand E.6_12.7, \"Evaluate the elements of responsible personal finance\", is required content under North Dakota Century Code 15.1-21 and is marked as such with a ♦ in the published document. Its five benchmarks cover career choices and standard of living, taxes, short- and long-term financial goals, the cost and benefits of credit and debt with the rights and responsibilities of borrowers, and strategies to avoid and manage debt. MONEY-01 (`credit-decisions`) reaches part of one of them, the borrower-rights half of E.6_12.7.4, and none of the other four. The document's guiding-topics column is explicitly non-required (\"While not required, the writing committee feels that these are essential topics\"), so coverage here is judged against benchmark text alone. Read 2026-08-28 from the NDDPI file currently served, Revision 7 of 2023-11-30.",
+      standards: [
+        {
+          code: "E.6_12.7.4",
+          text: "Analyze the cost and benefits of different types of credit and debt, and the rights and responsibilities of borrowers.",
+          claimIds: [
+            "money.borrower-rights-dispute",
+            "money.adverse-action-notice",
+            "money.who-may-read-the-file",
+            "money.cost-of-credit-apr",
+          ],
+          coverage: "partial",
+          note: "Partial, and lopsided in a way a teacher should know about before planning against it. The benchmark's second clause, the rights of borrowers, is taught in far more depth than the benchmark asks: permissible purpose under 15 U.S.C. 1681b, the adverse action notice and its specific-principal-reasons requirement under ECOA and Regulation B, the dispute and reinvestigation right under 1681i, furnisher duties under 1681s-2, and the free file disclosure under 1681j. The cost side is taught through the annual percentage rate with the statutory computation worked. NOT covered: the benefits comparison, the systematic survey of different TYPES of credit and debt, compound against simple interest, and borrower RESPONSIBILITIES, which are much thinner here than borrower rights.",
         },
       ],
     },
@@ -471,7 +523,11 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "Economics — the scarcity, institutions, macroeconomics, and Personal Finance strands.",
-      body: "Beyond the trade, price, government-role, and economic-systems benchmarks claimed above, the Economics strand's other standards are not the substance of this catalog's commodity history and are left unclaimed: C-adjacent E.6_12.1 (scarcity, opportunity cost, and the factors of production), E.6_12.3.1/E.6_12.3.2 (the formal law of supply and demand, and perfect versus imperfect competition), E.6_12.4.1/E.6_12.4.3 (the stock market and financial institutions; the functions of money), E.6_12.5 (macroeconomic measurements — GDP, inflation, unemployment), and the entire Personal Finance strand E.6_12.7 (career and standard of living, taxes, budgeting, credit and debt) — a ♦ NDCC 15.1-21 strand this catalog does not teach.",
+      body: "Beyond the trade, price, government-role, and economic-systems benchmarks claimed above, the Economics strand's other standards are not the substance of this catalog's commodity history and are left unclaimed: C-adjacent E.6_12.1 (scarcity, opportunity cost, and the factors of production), E.6_12.3.1/E.6_12.3.2 (the formal law of supply and demand, and perfect versus imperfect competition), E.6_12.4.1/E.6_12.4.3 (the stock market and financial institutions; the functions of money), and E.6_12.5 (macroeconomic measurements — GDP, inflation, unemployment). The Personal Finance strand used to be rejected here in full; see the entry below.",
+    },
+    {
+      heading: "Personal Finance (E.6_12.7) — this rejection has been superseded, for one benchmark.",
+      body: "Until 2026-08-28 this list rejected the entire ♦ NDCC 15.1-21 Personal Finance strand with the reason that the catalog does not teach it, and that was accurate. MONEY-01 now teaches how a consumer credit decision is made, and E.6_12.7.4 is claimed above as a partial, with the borrower-rights half taught in more depth than the benchmark asks and the cost side taught through the annual percentage rate. Its uncovered parts are named on the entry: the benefits comparison, the survey of types of credit and debt, compound against simple interest, and borrower responsibilities. The other four benchmarks are still not claimed and the reasons are specific rather than general. E.6_12.7.1 is career choices and standard of living, and E.6_12.7.2 is taxes; neither is in this catalog. E.6_12.7.3 asks students to develop short- and long-term financial goals, and E.6_12.7.5 asks them to develop strategies to avoid and manage debt; both are planning and behaviour, and MONEY-01 states in three separate lessons that it gives no financial advice, so claiming either would misdescribe what a teacher receives. E.6_12.7.5's guiding topics do name credit scores, which the course teaches at length, but guiding topics are the document's own explicitly non-required column and the benchmark's verb is not taught, so it is left unclaimed rather than stretched. The strand statement E.6_12.7 itself is deliberately not claimed, because \"evaluate the elements of responsible personal finance\" promises a teacher the whole subject.",
     },
     {
       heading: "Geography — the geographic-tools and region/culture benchmarks.",
