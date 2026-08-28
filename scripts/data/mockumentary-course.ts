@@ -60,8 +60,8 @@ export const MOCKUMENTARY_COURSE: AuthoredCourse = {
 :::reveal What is the one hard requirement that separates a mockumentary from a hoax? ||| That the audience must be able to know it is fiction. Not necessarily immediately and not necessarily from the first frame, but knowable: the frame has to exist somewhere a viewer can reach it. The difference is not tone, intent or quality, which is why a well-meaning piece with no discoverable frame is still a hoax, and a savage satire with a clear one is not.
 
 ## Sources
-- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press.
-- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press.`,
+- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press. https://lccn.loc.gov/2001055895
+- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press. https://doi.org/10.2307/j.ctt2005t6j`,
     },
     {
       slug: "mock-persuasion-grammar",
@@ -107,8 +107,8 @@ export const MOCKUMENTARY_COURSE: AuthoredCourse = {
 :::reveal What does the course mean by "a thing that looks unproduced was produced to look unproduced", and what follows for documentary? ||| That every signal of authenticity, including shaky framing, missed focus, boom dips and a subject acknowledging the crew, is a technique before it is evidence, so any of them can be manufactured deliberately. What follows is that roughness is worthless as grounds for believing a documentary: if that is your evidence of truthfulness you have none. The real grounds are sourcing, disclosure, method and accountability, all of which are unfilmable and none of which any camera move can fake.
 
 ## Sources
-- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press.
-- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press.`,
+- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press. https://lccn.loc.gov/2001055895
+- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press. https://doi.org/10.2307/j.ctt2005t6j`,
     },
     {
       slug: "mock-comedy-and-satire",
@@ -138,8 +138,8 @@ Every great mockumentary character runs on this. **They believe they are being d
 :::reveal What is the comic engine of the mockumentary form, and what is the specific structural trap that comes with it? ||| The gap between a character's self-presentation and the reality the camera observes: documentary promises we see people as they are, fiction lets you build someone whose self-account is wrong, and the cut between the talking head and the contradicting material does the joke without a line being written. The trap is that a gap is a joke generator rather than a story, so the form produces pieces with excellent bits and no change, where the character ends exactly who they began. The fix is to make the gap narrow or cost something, which is why the funniest mockumentaries often end sadly.
 
 ## Sources
-- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press.
-- Mittell, J. (2015). *Complex TV: The poetics of contemporary television storytelling*. New York University Press.`,
+- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press. https://lccn.loc.gov/2001055895
+- Mittell, J. (2015). *Complex TV: The poetics of contemporary television storytelling*. New York University Press. https://doi.org/10.18574/nyu/9780814744963.001.0001`,
     },
     {
       slug: "mock-quiz-1",
@@ -321,8 +321,8 @@ Every great mockumentary character runs on this. **They believe they are being d
 :::reveal Why is layering the frame the modern practical answer, and what fact makes it necessary? ||| Because your piece will be excerpted and the excerpt will lose the frame: a forty-second cut stripped of titles, credits, platform and context is indistinguishable from a document, and that is the default fate of anything that travels rather than a rare accident. Layering means labeling outside the work, framing inside it early, and escalating within, so the piece survives losing any single layer. A piece whose only frame is tone is one screenshot away from being evidence of something that never happened.
 
 ## Sources
-- Pooley, J., & Socolow, M. (2013, October 28). The myth of the War of the Worlds panic. *Slate*.
-- Schwartz, A. B. (2015). *Broadcast hysteria: Orson Welles's War of the Worlds and the art of fake news*. Hill and Wang.`,
+- Pooley, J., & Socolow, M. (2013, October 28). The myth of the War of the Worlds panic. *Slate*. https://slate.com/culture/2013/10/orson-welles-war-of-the-worlds-panic-myth-the-infamous-radio-broadcast-did-not-cause-a-nationwide-hysteria.html
+- Schwartz, A. B. (2015). *Broadcast hysteria: Orson Welles's War of the Worlds and the art of fake news*. Hill and Wang. https://lccn.loc.gov/2014040510`,
     },
     {
       slug: "mock-when-it-breaks",
@@ -357,8 +357,8 @@ Every great mockumentary character runs on this. **They believe they are being d
 :::reveal Where exactly is the line between satire and fraud, and what does NOT determine it? ||| The line is whether the audience was given a real chance to know, and whether you benefited from them not knowing. Satire with a discoverable frame is legitimate however sharp it is and however many people missed it; fiction designed so the audience cannot know is a hoax; a hoax you profit from, or that induces someone to act to their detriment, is fraud. What does not determine it: tone, craft quality, whether anyone was actually deceived, and your private intent, none of which are available to the person watching.
 
 ## Sources
-- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press.
-- Society of Professional Journalists. (2014). *SPJ code of ethics*. Society of Professional Journalists.`,
+- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press. https://lccn.loc.gov/2001055895
+- Society of Professional Journalists. (2014). *SPJ code of ethics*. Society of Professional Journalists. https://www.spj.org/spj-code-of-ethics/`,
     },
     {
       slug: "mock-synthetic-media",
@@ -393,8 +393,8 @@ Every great mockumentary character runs on this. **They believe they are being d
 :::reveal What is the liar's dividend, and why does it obligate a maker of convincing fakes? ||| It is the second-order effect of plausible synthetic media: as fakes become credible, real footage becomes deniable, so anyone caught on camera can claim it was generated and the claim is no longer absurd. The damage is not only that false things get believed but that true things can be dismissed. It obligates makers because contributing convincing fakes to the environment feeds that deniability whatever the maker's intent, which is why disclosure, refusing to synthesise a real person without consent, and publishing your method are obligations rather than courtesies.
 
 ## Sources
-- Chesney, R., & Citron, D. (2019). Deep fakes: A looming challenge for privacy, democracy, and national security. *California Law Review, 107*(6), 1753-1820.
-- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press.`,
+- Chesney, R., & Citron, D. (2019). Deep fakes: A looming challenge for privacy, democracy, and national security. *California Law Review, 107*(6), 1753-1820. https://www.californialawreview.org/print/deep-fakes-a-looming-challenge-for-privacy-democracy-and-national-security
+- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press. https://lccn.loc.gov/2001055895`,
     },
     {
       slug: "mock-quiz-2",
@@ -591,11 +591,11 @@ Every great mockumentary character runs on this. **They believe they are being d
 :::reveal Without looking back, state the series' central idea in one sentence and name the four grounds for believing a documentary. ||| Know what you are permitted to invent, and tell the audience where you stand: the permission ladder runs from fiction, which may invent freely, through performed work that may shape, to journalism that may select and arrange but never invent, to documentation that records rather than shapes. The four grounds for believing a documentary are sourcing, disclosure, method and accountability, none of which appears in the footage, which is exactly why roughness proves nothing and why synthetic media does not remove them.
 
 ## Sources
-- Chesney, R., & Citron, D. (2019). Deep fakes: A looming challenge for privacy, democracy, and national security. *California Law Review, 107*(6), 1753-1820.
-- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press.
-- Pooley, J., & Socolow, M. (2013, October 28). The myth of the War of the Worlds panic. *Slate*.
-- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press.
-- Schwartz, A. B. (2015). *Broadcast hysteria: Orson Welles's War of the Worlds and the art of fake news*. Hill and Wang.`,
+- Chesney, R., & Citron, D. (2019). Deep fakes: A looming challenge for privacy, democracy, and national security. *California Law Review, 107*(6), 1753-1820. https://www.californialawreview.org/print/deep-fakes-a-looming-challenge-for-privacy-democracy-and-national-security
+- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press. https://doi.org/10.2307/j.ctt2005t6j
+- Pooley, J., & Socolow, M. (2013, October 28). The myth of the War of the Worlds panic. *Slate*. https://slate.com/culture/2013/10/orson-welles-war-of-the-worlds-panic-myth-the-infamous-radio-broadcast-did-not-cause-a-nationwide-hysteria.html
+- Roscoe, J., & Hight, C. (2001). *Faking it: Mock-documentary and the subversion of factuality*. Manchester University Press. https://lccn.loc.gov/2001055895
+- Schwartz, A. B. (2015). *Broadcast hysteria: Orson Welles's War of the Worlds and the art of fake news*. Hill and Wang. https://lccn.loc.gov/2014040510`,
     },
   ],
 };
