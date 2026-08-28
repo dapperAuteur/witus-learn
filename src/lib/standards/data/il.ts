@@ -346,6 +346,66 @@ export const JURISDICTION: JurisdictionFile = {
         },
       ],
     },
+
+    // ── Financial Literacy (SS.9-12.EC.FL), the CURRENT edition ────────────
+    //
+    // ⚠️ THE CODES IN THIS FILE'S OLD REJECTION WERE FROM A RETIRED EDITION, AND THAT IS THE
+    // FINDING WORTH THE MOST HERE. Until 2026-08-28 this file's notClaimed named a "six-standard
+    // Financial Literacy sub-strand ... SS.EC.FL.1-6". Those codes are the 2017 printing
+    // (isbe.net/Documents/SS-Standards-9-12.pdf, footer "1 May 2017"), which the other frameworks in
+    // this file still cite for their own entries. ISBE's CURRENT document — the one linked from its
+    // standards page, adopted for implementation in 2022-2023 and updated 05/05/2025 — renumbered
+    // the strand to SS.9-12.EC.FL.<n>, EXTENDED it from six standards to nine, rewrote the text of
+    // every one, and marks FL.6 "No standard." So `SS.EC.FL.1-6.9-12` no longer exists as a live
+    // code set, and a rejection naming it was citing a retired edition to teachers.
+    //
+    // ONLY THE FL STRAND IS RE-FETCHED HERE. The rest of this file's Illinois entries still cite the
+    // 2017 document and were not re-read this pass; whether the SS.CV, SS.EC, SS.G, SS.H and SS.IS
+    // codes also moved in the current edition is a REAL open question and it is filed as a research
+    // check (`il-social-science-2022-edition`) rather than silently assumed either way. Fixing the
+    // whole file is a separate job from shipping this course, and guessing is worse than flagging.
+    //
+    // TWO OF NINE, BOTH PARTIAL, NO FULL. Illinois's current FL strand is written around individual
+    // circumstance, structural constraint and disparate impact, which suits this course better than
+    // most states' strands do; but every one of its standards bundles that framing with budgeting,
+    // saving, investing, inflation or policy analysis the course does not teach. There is no honest
+    // full claim in it.
+    //
+    // TRANSCRIPTION NOTE, PRESERVED. ISBE's published PDF prints FL.2's code as "S.9-12.EC.FL.2",
+    // with a single S, for that one code alone. It is a typo in the state's document. We do not
+    // claim FL.2, so the malformed code does not appear below; it is recorded here so a later
+    // editor who meets it in the PDF knows it was seen.
+    {
+      id: "il-financial-literacy",
+      subject: "Social Studies",
+      name: "Illinois Learning Standards for Social Science — Financial Literacy, High School (SS.9-12.EC.FL)",
+      publisher: "Illinois State Board of Education (ISBE)",
+      version: "Illinois Learning Standards for Social Science (adopted for implementation 2022-2023; document updated 05/05/2025)",
+      fetchedOn: "2026-08-28",
+      sourceUrl: "https://www.isbe.net/Documents/IL-Social-Science-Standards.pdf",
+      adoption:
+        "Illinois files financial literacy as a sub-strand of high-school Economics. Its CURRENT edition, which supersedes the 2017 SS.EC.FL.1-6 codes the rest of this file's rejection used to cite, runs SS.9-12.EC.FL.1 through .9, with FL.6 printed as \"No standard.\" The strand is distinctive in the set: it repeatedly asks about factors outside an individual's control, access to capital, and the disparate impact of banking, credit and mortgage-lending policy, which is closer to what MONEY-01 (`credit-decisions`) teaches than any other state's personal-finance strand. Even so, every standard pairs that framing with budgeting, saving, investing, inflation or forward-looking policy analysis the course does not deliver, so both claims below are partial and there is no full one. Transcribed verbatim 2026-08-28 from the document ISBE currently links.",
+      standards: [
+        {
+          code: "SS.9-12.EC.FL.9",
+          text: "Evaluate the disparate impact of government and private business policies related to banking, credit, and mortgage lending in one's own and others' contexts while using current economic indicators to analyze or propose future policies.",
+          claimIds: [
+            "money.credit-discrimination-and-recourse",
+            "money.credit-access-constraint",
+            "money.who-may-read-the-file",
+          ],
+          coverage: "partial",
+          note: "Partial, and the strongest fit in the Illinois strand. Disparate impact in credit is core content: the Equal Credit Opportunity Act's prohibited bases and their reach over any aspect of a credit transaction, why a required statement of specific reasons is what makes that prohibition testable at all, how a thin or absent file forecloses access regardless of conduct, and the catalog's own history of a federal credit gate operated by neighbours under a character test. NOT covered: the second half of the standard, which asks students to use current economic indicators to analyze or propose future policies. That is macroeconomic and policy-design work this course does not do, and mortgage lending specifically is scheduled for MONEY-06.",
+        },
+        {
+          code: "SS.9-12.EC.FL.4",
+          text: "Analyze costs and benefits of different credit and payment options for goods and services, the role of lenders and interest, and the impact of each on individuals and multiple communities.",
+          claimIds: ["money.cost-of-credit-apr", "money.adverse-action-notice", "money.credit-access-constraint"],
+          coverage: "partial",
+          note: "Partial. The role of lenders is the course's subject: how a lender reaches a credit decision, what it must disclose about that decision, and what recourse follows. Interest and cost are taught through the annual percentage rate as the standardized figure the Truth in Lending Act requires so two offers can be ranked, with the statutory computation worked. The impact on multiple communities is reached through the exclusion history the catalog already carries. NOT covered: the breadth the standard asks for, a survey of DIFFERENT credit and PAYMENT options, which this course does not attempt and MONEY-02 and MONEY-04 will.",
+        },
+      ],
+    },
   ],
 
   // Standards we CONSIDERED AND REJECTED — published as loudly as the claims.
@@ -359,8 +419,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "Illinois adopted the NGSS verbatim (January 2014) as its science standards, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
     },
     {
-      heading: "Financial Literacy (SS.EC.FL) — nothing.",
-      body: "Illinois's Economics strand carries a six-standard Financial Literacy sub-strand (income strategies, budgeting, interest and inflation, credit, investing, insurance). This catalog teaches no personal finance, so it claims none of SS.EC.FL.1-6.",
+      heading: "Financial Literacy — this rejection has been superseded, and its codes were also out of date.",
+      body: "Until 2026-08-28 this entry said Illinois's Economics strand carried a six-standard Financial Literacy sub-strand and that the catalog claimed none of SS.EC.FL.1-6. Two things were wrong with that by then. First, the catalog now teaches one personal-finance course, MONEY-01, on how a consumer credit decision is made. Second, and more seriously, SS.EC.FL.1-6 are the codes of the 2017 printing; ISBE's current document, adopted for implementation in 2022-2023, renumbered the strand to SS.9-12.EC.FL, extended it from six standards to nine, rewrote the text of every one, and prints FL.6 as \"No standard.\" Two of the nine are claimed above, SS.9-12.EC.FL.9 and SS.9-12.EC.FL.4, both as partials with their gaps named. The other seven are not claimed. FL.3 is time, interest rates and inflation over a saving lifetime, and FL.5 is diversified investment risk and return; both are outside this catalog. FL.1 (costs and benefits subject to factors outside one's control) and FL.7 (cognitive biases, environmental influences and access to resources in financial decision-making) each contain a clause the course genuinely teaches, the structural constraint on access, but each also asks for a decision-making method the course does not deliver, so they are left unclaimed rather than stretched to a thin partial. FL.2 is information-gathering, planning and budgeting; the course teaches the first and refuses the other two, since it gives no financial advice. FL.8 is risk disposition and opportunity recognition, which the course does not teach at all. FL.6 has no standard to claim. ONE OPEN QUESTION, FILED RATHER THAN GUESSED: only the FL strand was re-fetched this pass, so the SS.CV, SS.EC, SS.G, SS.H and SS.IS codes elsewhere in this file still cite the 2017 document and may have moved in the same revision. That is recorded as a research check rather than assumed either way.",
     },
     {
       heading: "The Illinois Civics flagship's Illinois-specific structure has no Illinois code to cite.",

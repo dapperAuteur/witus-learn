@@ -480,6 +480,85 @@ export const JURISDICTION: JurisdictionFile = {
       ],
     },
 
+    // ── Personal Financial Literacy §113.49 (Adopted 2016) ─────────────────
+    //
+    // WHICH SECTION IS ACTUALLY IN EFFECT, because this is easy to get wrong and the file used to
+    // imply otherwise. TWO Texas personal-finance courses sit side by side in Subchapter C and both
+    // are currently in effect:
+    //   · §113.49 Personal Financial Literacy (One-Half Credit), Adopted 2016. Source line:
+    //     "The provisions of this §113.49 adopted to be effective August 22, 2016, 41 TexReg 2491."
+    //   · §113.76 Personal Financial Literacy and Economics (One-Half Credit). Source line:
+    //     "The provisions of this §113.76 adopted to be effective August 1, 2022, 47 TexReg 4511."
+    // §113.76(b) provides that a student may not be awarded credit for both. We map §113.49 only,
+    // because that is the section this file's rejection named and the one we transcribed; §113.76
+    // has NOT been fetched and carries no claim (fetch-or-do-not-cite). Note also that the
+    // "effective August 1, 2024, 48 TexReg 842" adoption line belongs to §113.31, not to §113.49.
+    //
+    // THIS SUPERSEDES A REJECTION. Until 2026-08-28 this file said the catalog "does no
+    // personal-finance instruction", so neither §113.49 nor the §113.31 personal-finance strands
+    // were claimed. MONEY-01 (`credit-decisions`) changes that for exactly one knowledge-and-skills
+    // statement, (c)(9), which is about credit worthiness and the credit report. The rejection is
+    // rewritten below rather than deleted.
+    //
+    // TWO OF SIXTEEN STATEMENTS, AND THAT RATIO IS THE HONEST PART. §113.49 is overwhelmingly a
+    // saving, investing, insurance, retirement and college-financing course: (c)(1) through (c)(8),
+    // (c)(11) through (c)(16) are budgeting, paychecks, consumption decisions, saving strategies,
+    // investment options, retirement, risk, insurance, fraud, estate planning and paying for
+    // college, none of which this catalog teaches. The two courses intersect at (c)(9) and at one
+    // sub-expectation of (c)(10). Do not widen these to make the coverage look fuller.
+    {
+      id: "tx-personal-financial-literacy",
+      subject: "Social Studies",
+      name: "TEKS for Social Studies — Personal Financial Literacy (§113.49)",
+      publisher: "Texas Education Agency (TEA) / State Board of Education (SBOE)",
+      version: "One-Half Credit · Adopted 2016 · effective August 22, 2016, 41 TexReg 2491 (19 TAC ch. 113, subch. C)",
+      fetchedOn: "2026-08-28",
+      sourceUrl: SS_SUBCH_C,
+      adoption:
+        "Texas's standalone half-credit Personal Financial Literacy course, filed in social studies at Chapter 113 alongside Economics and US Government, and distinct from the §113.76 Personal Financial Literacy and Economics course adopted in 2022 (a student may not receive credit for both). Its sixteen knowledge-and-skills statements run from earning and spending through saving and investing, credit and borrowing, insuring and protecting, and paying for postsecondary education. MONEY-01 (`credit-decisions`) meets the credit-worthiness statement (c)(9) and part of (c)(10)(A), and none of the rest. Transcribed verbatim 2026-08-28 from the TEA \"currently in effect\" social studies Subchapter C PDF, whose page footer reads \"High School §113.C. — August 2024 Update\".",
+      standards: [
+        {
+          code: "§113.49(c)(9)(B)",
+          text: "describe how to access and interpret a sample credit report and score;",
+          claimIds: [
+            "money.consumer-report-contents",
+            "money.credit-score-as-model",
+            "money.borrower-rights-dispute",
+          ],
+          coverage: "full",
+          note: "Full, on both verbs. Access is the statutory free file disclosure at 15 U.S.C. 1681j and the centralized source Regulation V requires, taught to the floor rather than to a vendor's current offer. Interpretation is the whole middle of the course: what a consumer report is in the FCRA's own definition, what may appear in it and for how long under 1681c(a), and what a score is, which the statute defines as a modelled prediction rather than a measurement, disclosed with its range, its date, its provider and up to four key factors.",
+        },
+        {
+          code: "§113.49(c)(9)(C)",
+          text: "describe the importance of monitoring credit reports regularly and addressing mistakes;",
+          claimIds: ["money.borrower-rights-dispute", "money.adverse-action-notice"],
+          coverage: "full",
+          note: "Full. Addressing mistakes is taught as the statutory procedure rather than as general advice: the dispute and reinvestigation duty at 15 U.S.C. 1681i, with its thirty-day clock running from receipt and its five-business-day notice to the furnisher; the furnisher's own investigation duty at 1681s-2(b); and the rule that an item which cannot be verified is deleted on the same terms as one proved false. Monitoring is the free annual disclosure, plus the additional free copy an adverse action notice must tell a consumer about.",
+        },
+        {
+          code: "§113.49(c)(9)(A)",
+          text: "discuss how character, capacity, and collateral can adversely or positively impact an individual's credit rating and the ability to obtain credit;",
+          claimIds: ["money.credit-score-as-model", "money.credit-access-constraint"],
+          coverage: "partial",
+          note: "Partial. The course teaches at length what data actually feeds a credit rating and how it reaches a score, and it treats capacity as the timing constraint that drives borrowing in the first place. It does not use the three-Cs framing by name, and it does not teach collateral at all, which is a secured-lending concept the course does not reach. A teacher expecting the traditional three-Cs vocabulary will not find it here.",
+        },
+        {
+          code: "§113.49(c)(9)(E)",
+          text: "appraise the impact of borrowing decisions on credit score, including consequences of poor credit management and bankruptcy.",
+          claimIds: ["money.consumer-report-contents", "money.credit-score-as-model"],
+          coverage: "partial",
+          note: "Partial. The course covers what adverse items are, how long each may be reported under 15 U.S.C. 1681c(a) including the ten-year period for a case under title 11, and how the file feeds the model. It refuses the rest of the standard on principle: it promises no outcome in points and gives no borrowing strategy, because it prints no claim that any step will move any future score. So the mechanism is taught and the appraisal of decisions is not.",
+        },
+        {
+          code: "§113.49(c)(10)(A)",
+          text: "examine the components of the cost of borrowing, including annual percentage rate (APR), fixed versus variable interest, length of term, grace period, and additional fees such as late payment, cash advance, and prepayment penalties;",
+          claimIds: ["money.cost-of-credit-apr"],
+          coverage: "partial",
+          note: "Partial, and precisely on the first named component. The annual percentage rate is taught from the Truth in Lending Act's own purpose (disclosure so a consumer can compare more readily) and computed from the statutory open-end formula at 15 U.S.C. 1606(a)(2), with the closed-end actuarial method named. The rest of the standard's list — fixed against variable interest, length of term, grace period, and the fee taxonomy — is not taught here and is scheduled for MONEY-04.",
+        },
+      ],
+    },
+
     // ── English Language Arts and Reading, English II §110.37 (Adopted 2017) ─
     {
       id: "tx-ela-english-ii",
@@ -636,11 +715,15 @@ export const JURISDICTION: JurisdictionFile = {
   notClaimed: [
     {
       heading: "Mathematics and Personal Financial Literacy — nothing.",
-      body: "This catalog does no mathematics instruction, so it meets no Texas mathematics TEKS. It also does no personal-finance instruction, so the Personal Financial Literacy strands of Economics (§113.31(d)(15)-(20)) and the standalone Personal Financial Literacy course (§113.49) are not claimed.",
+      body: "This catalog does no mathematics instruction, so it meets no Texas mathematics TEKS. The personal-finance half of this entry has been superseded; see the entry below.",
     },
     {
       heading: "Science — Texas is NOT an NGSS state, and we did not fetch its science TEKS.",
       body: "Texas writes its own science TEKS (19 TAC Chapter 112), not the Next Generation Science Standards. This catalog has no laboratory work, investigations, or modelling, and we did not fetch the Texas science standards this pass. Our rule is fetch-or-don't-cite, so Texas gets no science claim — unlike Arizona, where we fetched the document and found two Earth-science partials.",
+    },
+    {
+      heading: "Personal Financial Literacy (§113.49, §113.31(d)(15)-(20)) — this rejection has been superseded, in part.",
+      body: "Until 2026-08-28 this file told a Texas teacher, in the catalog's own words, that it did no personal-finance instruction at all, and that neither §113.49 nor the Economics personal-finance strands were claimed. That was accurate then and is not now. MONEY-01 teaches how a consumer credit decision is made, from the Fair Credit Reporting Act, the Equal Credit Opportunity Act and Regulation B, and five §113.49 standards are claimed above: (c)(9)(B) and (c)(9)(C) in full, (c)(9)(A), (c)(9)(E) and (c)(10)(A) in part, each with its limit stated on its own entry. What remains unclaimed is most of the course, and the reasons are specific. Knowledge and skills statements (c)(1) through (c)(3) are financial goals, income statements, budgets, balance sheets and paycheck components; (c)(4) is consumption decisions including renting against buying and payment methods; (c)(5) through (c)(7) are saving, investing and retirement; (c)(8) is a survey of credit sources and types, which the course does not attempt; (c)(11) and (c)(12) are risk management and insurance; (c)(13) is fraud, scams and identity theft; (c)(14) is estate planning; and (c)(15) and (c)(16) are postsecondary education costs and how to pay for them. None of that is taught here, and the course states in three separate lessons that it gives no financial advice, so a budgeting or investing claim would misdescribe it. Inside Economics, the §113.31(d)(15)-(20) personal-finance strands remain unclaimed for the same reason: (d)(15) is business ownership forms, (d)(16) is financial institutions and capital formation, (d)(17) is investing and checking accounts, (d)(18) is credit-card debt, bankruptcy and insurance decisions, (d)(19) is renting against buying a home, and (d)(20) is paying for college. Two of the strand's sub-expectations, (d)(17)(E) on the responsibilities and obligations of borrowing and (d)(17)(F) on understanding one's credit score, come closest, and they were read and declined: (F) pairs understanding with developing strategies to become a low-risk borrower, which is exactly the advice this course refuses to give, and (E) asks for the obligations rather than their consequences. A separate section, §113.76 Personal Financial Literacy and Economics, was adopted effective August 1, 2022 and is also currently in effect; it has not been fetched and carries no claim, per fetch-or-do-not-cite.",
     },
     {
       heading: "Grade 7 Texas History (§113.20) — where the flagship's fullest home lives, not yet fetched.",
