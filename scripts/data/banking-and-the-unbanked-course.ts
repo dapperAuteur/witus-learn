@@ -1286,5 +1286,637 @@ Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national sur
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — The second gate: the report behind a denial
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "a-report-you-did-not-know-existed",
+      title: "9 · The second gate: a report about you that you have never seen",
+      section: "Section 3 · The second gate: the report behind a denial",
+      body: `Section 2 ended on a number: **12.3 percent** of unbanked households cited "problems with past banking or credit history" as a reason for having no account (FDIC, 2024). That reason describes something being done to a person rather than something they chose. This section is about the machinery behind it.
+
+**When you apply for a checking account, the bank usually pulls a report.** Not, in most cases, the credit report you have heard of. A separate one, from a company that keeps a file on how your previous deposit accounts ended. The Consumer Financial Protection Bureau describes the category plainly: banks and credit unions "use deposit account and payments screening to help decide whether to offer you a checking or savings account, or to accept your personal checks" (CFPB, 2025).
+
+**And the CFPB names the two companies.** "Banks and credit unions supply this type of information to checking account reporting companies, such as Chex Systems and Early Warning Services" (CFPB, 2024).
+
+**Read the direction of that sentence.** Banks **supply** the information. The file is assembled out of what your previous institutions reported: an account closed with a negative balance, an unpaid overdraft, suspected fraud. The bank that closed your account is the source, and the next bank is the reader.
+
+**Now the legal move that makes this section possible.** A company like this is a **consumer reporting agency** under the Fair Credit Reporting Act, and that is not a matter of opinion. The statute defines the term at **15 U.S.C. 1681a(f)** as "any person which, for monetary fees, dues, or on a cooperative nonprofit basis, regularly engages in whole or in part in the practice of assembling or evaluating consumer credit information or other information on consumers for the purpose of furnishing consumer reports to third parties."
+
+**Note the four words "or other information".** The definition was written wide on purpose. It does not say credit. A company assembling information about closed deposit accounts, and selling it to banks deciding whether to open one, is squarely inside it.
+
+**A consumer report, in turn, is defined at 15 U.S.C. 1681a(d)** as a communication by a consumer reporting agency "bearing on a consumer's credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics, or mode of living" that is used or expected to be used as a factor in establishing eligibility for credit, insurance, employment or another authorised purpose.
+
+**And the FCRA has a named category for exactly this kind of company.** At **15 U.S.C. 1681a(x)** a "nationwide specialty consumer reporting agency" is one that compiles and maintains files on consumers nationwide relating to "(1) medical records or payments; (2) residential or tenant history; (3) **check writing history**; (4) employment history; or (5) insurance claims."
+
+**Category three is the one that matters here.** Congress wrote a specialty-agency category into the statute, and check writing history is in it by name. So the report a bank pulls before opening your account is not in some gap in the law. It is inside a statute whose whole purpose is to give the person being reported on a set of rights.
+
+**Which is the point of this section.** Almost nobody knows the report exists. Rather more people have been turned down because of it. Very few have read it. The next two lessons are what the law says you may do about that.
+
+:::reveal Where does the information in a checking-account screening file come from? ||| From banks and credit unions themselves, which report how a customer's previous accounts ended.
+
+:::reveal Which words in the definition at 15 U.S.C. 1681a(f) make it reach beyond credit? ||| The phrase "or other information on consumers", which is why an agency assembling deposit-account histories is a consumer reporting agency.
+
+:::reveal Which of the five nationwide specialty categories at 1681a(x) covers checking-account screening? ||| Check writing history, the third of the five listed.
+
+## Vocabulary
+- **Deposit account screening**: the practice, in the CFPB's own words, of using a report to decide whether to offer someone a checking or savings account.
+- **Consumer reporting agency**: the FCRA's category at 15 U.S.C. 1681a(f), defined to cover any person regularly assembling credit "or other information" on consumers to furnish reports to third parties.
+- **Consumer report**: a communication from such an agency bearing on a consumer's credit worthiness, character, general reputation, personal characteristics or mode of living, used as a factor in an eligibility decision.
+- **Nationwide specialty consumer reporting agency**: the FCRA's category at 1681a(x), whose five subjects include check writing history.
+- **Furnisher**: the institution that reports information into a file, which for deposit screening is the bank or credit union that held the previous account.
+
+## Sources
+15 U.S.C. § 1681a. (n.d.). *Definitions; rules of construction*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section1681a&num=0&edition=prelim
+
+Consumer Financial Protection Bureau. (2024, December 18). *I was denied a checking account because of a report. What can I do?* https://www.consumerfinance.gov/ask-cfpb/i-was-denied-a-checking-account-because-of-a-report-what-can-i-do-en-1113/
+
+Consumer Financial Protection Bureau. (2025, March 13). *List of consumer reporting companies*. https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/consumer-reporting-companies/companies-list/`,
+    },
+    {
+      slug: "the-adverse-action-notice",
+      title: "10 · The letter that has to tell you who was consulted",
+      section: "Section 3 · The second gate: the report behind a denial",
+      body: `A bank turns down your application. What is it required to tell you?
+
+**The governing provision is 15 U.S.C. 1681m(a)**, headed as the duties of users of consumer reports taking adverse action. If a person takes adverse action "based in whole or in part on any information contained in a consumer report", that person must:
+
+- provide the consumer with notice of the adverse action;
+- provide "the name, address, and telephone number of the consumer reporting agency" that furnished the report;
+- provide a statement that the consumer reporting agency "did not make the decision to take the adverse action and is unable to provide the consumer the specific reasons why the adverse action was taken"; and
+- provide notice of the consumer's right to obtain a free copy of the consumer report from that agency, and the right "to dispute with the consumer reporting agency the accuracy or completeness of any information in a consumer report".
+
+**The CFPB states the application to this exact case.** "If declined for a new checking or deposit account, the bank must provide you with an 'adverse action' notice that includes the name and contact information of the screening company from which the bank got the report. You can contact the reporting company and request a free copy of the report" (CFPB, 2025).
+
+**Now hold two sentences from that list side by side, because together they are the whole design.** The bank must name the agency. The agency did not make the decision and cannot tell you why it went the way it did. So the notice does two things at once: it points you at the file, and it tells you the file's keeper is not the decision-maker. You are being handed a thread, not an answer.
+
+**And here is a distinction this catalog will not let you miss, because it is where a careful person goes wrong.** You may have heard that a denied applicant is entitled to be told **the principal reasons** for the denial. That right is real, and it comes from the Equal Credit Opportunity Act through **Regulation B**. But Regulation B defines adverse action at **12 CFR 1002.2(c)** as, among other things, "a refusal to grant credit in substantially the amount or on substantially the terms requested in an application", and it defines an application at **1002.2(f)** as "an oral or written request for an extension of credit".
+
+**A checking account is not an extension of credit.** So the Regulation B statement of principal reasons does **not** attach to a deposit-account denial. What attaches is the FCRA notice above, which names the agency and points you to the file, and which does not oblige anybody to explain the decision itself.
+
+**That is a real difference and it is worth sitting with.** The same person can be refused two things on the same afternoon and hold two different sets of rights. Refused a loan, they are entitled to reasons. Refused a checking account, they are entitled to a pointer. Both of those are choices Congress made, and neither is an accident of drafting.
+
+**The practical instruction, then, is narrow and useful.** If you are declined, do not argue with the branch. Read the notice for the name of the reporting company. That name is the only thing in the letter that leads anywhere, and getting it is your statutory right.
+
+:::reveal What three things must a notice under 15 U.S.C. 1681m(a) tell a consumer? ||| Who the reporting agency was, that the agency did not make the decision and cannot give the specific reasons, and that the consumer may get a free copy of the report and dispute it.
+
+:::reveal Why does the Regulation B right to be told the principal reasons not apply to a checking-account denial? ||| Because Regulation B defines an application as a request for an extension of credit, and a deposit account is not credit.
+
+:::reveal What is the single most useful item in an account-denial letter? ||| The name and contact details of the screening company, because that is the only line in it that leads to a document you can read and dispute.
+
+## Vocabulary
+- **Adverse action notice**: the notice a user of a consumer report must give under 15 U.S.C. 1681m(a) when it acts against a consumer based in whole or in part on that report.
+- **The disclaimer of reasons**: the required statement that the reporting agency did not make the decision and cannot say why it was made, which is what makes the notice a pointer rather than an explanation.
+- **Regulation B**: the Equal Credit Opportunity Act's implementing rule at 12 CFR part 1002, whose adverse-action machinery turns on a request for an extension of credit.
+- **Extension of credit**: the trigger for Regulation B, and the reason a deposit-account refusal does not carry the statement of principal reasons.
+- **A thread, not an answer**: the way to read an account-denial letter, since its value lies in the name of the agency rather than in any explanation of the decision.
+
+## Sources
+15 U.S.C. § 1681m. (n.d.). *Requirements on users of consumer reports*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section1681m&num=0&edition=prelim
+
+Consumer Financial Protection Bureau. (n.d.). *12 CFR 1002.2 - Definitions*. https://www.consumerfinance.gov/rules-policy/regulations/1002/2/
+
+Consumer Financial Protection Bureau. (2025, March 13). *List of consumer reporting companies*. https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/consumer-reporting-companies/companies-list/`,
+    },
+    {
+      slug: "getting-and-fixing-your-file",
+      title: "11 · Getting the file, and what a dispute actually does",
+      section: "Section 3 · The second gate: the report behind a denial",
+      body: `You do not have to be denied anything to read your own file. The statute gives two separate routes, and knowing both is the useful part.
+
+**Route one, the annual disclosure.** At **15 U.S.C. 1681j(a)(1)(A)**, a nationwide consumer reporting agency and a nationwide specialty consumer reporting agency "shall make all disclosures pursuant to section 1681g of this title once during any 12-month period upon request of the consumer and without charge to the consumer." One free file disclosure per agency per twelve months, for the asking, with no denial required. ChexSystems states the same right on its own consumer page: "Under the Fair Credit Reporting Act (FCRA), you are entitled to a free copy of your consumer disclosure report, upon your request, at a minimum once every 12 months", requestable through its consumer portal, by telephone, or by post (ChexSystems, 2026).
+
+**Route two, the sixty-day window.** At **15 U.S.C. 1681j(b)**, a consumer who has received an adverse-action notification may request a free disclosure within **60 days** of it. The CFPB puts the two routes together for this exact case: "Nationwide checking account reporting companies must provide you with one free annual report per year, upon request" and "You also have the right to request a free report if you have received an 'adverse action' notice" (CFPB, 2024).
+
+**Section 1681j(c) adds three more free-disclosure triggers** for a consumer who certifies they are unemployed and seeking employment within 60 days, are receiving public welfare assistance, or believe their file contains inaccurate information due to fraud.
+
+**Now the dispute, which is the part people get wrong.** Under **15 U.S.C. 1681i(a)(1)(A)**, when a consumer disputes the completeness or accuracy of an item and notifies the agency directly, the agency must "conduct a reasonable reinvestigation to determine whether the disputed information is inaccurate and record the current status of the disputed information, or delete the item", generally within **30 days** of receiving the notice, extendable by up to 15 days if the consumer supplies relevant information during that period.
+
+**And the outcome rule, at 1681i(a)(5)(A):** if an item is "found to be inaccurate or incomplete or cannot be verified", the agency "shall promptly delete that item of information from the file of the consumer, or modify that item". Under **1681i(a)(6)** the agency must then give written notice of the results, generally within five business days of completing the reinvestigation.
+
+**Read "or cannot be verified" carefully, because it is doing real work.** The burden is not on you to prove the entry false. If the agency cannot verify it, the item goes. That is the single most useful clause in the section.
+
+**What a dispute does not do.** It does not oblige any bank to open an account for you. It does not remove an entry that is true. And it does not settle the underlying debt: if you owe a former institution money, correcting the file is a separate act from paying it. A dispute is a mechanism for **accuracy**, not for outcomes.
+
+**What this course does not know, and says so.** ChexSystems publishes how to request a disclosure but the pages read on **28 August 2026** did not state how long an item stays in a file, and the two CFPB pages read the same day are not fully consistent about which companies sit in the deposit-screening category: the agency's Ask CFPB answer names Chex Systems and Early Warning Services, while its published list of consumer reporting companies, last updated 13 March 2025, showed one company under bank account screening. Both are stated here as read, with their dates, rather than smoothed into a single confident sentence. A source check is filed for each.
+
+:::reveal How often may you get a free file disclosure from a nationwide specialty consumer reporting agency? ||| Once during any 12-month period on request, at no charge, under 15 U.S.C. 1681j(a)(1)(A).
+
+:::reveal How long does an agency generally have to complete a reinvestigation of a disputed item? ||| Thirty days from receiving the notice, extendable by up to fifteen more if the consumer supplies relevant information within that period.
+
+:::reveal What happens to a disputed item the agency cannot verify? ||| It must be promptly deleted or modified. The consumer does not have to prove it false.
+
+## Vocabulary
+- **File disclosure**: the consumer's own copy of what an agency holds about them, available free once every twelve months under 15 U.S.C. 1681j(a).
+- **The sixty-day window**: the separate free-disclosure right that opens when a consumer receives an adverse-action notification.
+- **Reinvestigation**: the agency's duty under 1681i(a)(1)(A) to check a disputed item, generally within thirty days.
+- **Cannot be verified**: the clause that requires deletion of an item the agency is unable to confirm, which is what puts the burden on the agency rather than the consumer.
+- **Accuracy, not outcome**: what a dispute is for, since correcting a file obliges no bank to open an account and settles no debt.
+
+## Sources
+15 U.S.C. § 1681i. (n.d.). *Procedure in case of disputed accuracy*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section1681i&num=0&edition=prelim
+
+15 U.S.C. § 1681j. (n.d.). *Charges for certain disclosures*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section1681j&num=0&edition=prelim
+
+ChexSystems. (2026). *Request a consumer disclosure*. https://www.chexsystems.com/request-reports/consumer-disclosure
+
+Consumer Financial Protection Bureau. (2024, December 18). *I was denied a checking account because of a report. What can I do?* https://www.consumerfinance.gov/ask-cfpb/i-was-denied-a-checking-account-because-of-a-report-what-can-i-do-en-1113/`,
+    },
+    {
+      slug: "quiz-the-second-gate",
+      title: "12 · Knowledge check: the screening report and your rights",
+      section: "Section 3 · The second gate: the report behind a denial",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Which survey finding does this section set out to explain?",
+            options: ["Problems with past banking or credit history", "That 42.3 percent of unbanked households could not meet a minimum balance requirement", "That 51.2 percent of unbanked households were not at all interested in having an account", "That 66.2 percent of unbanked households used neither prepaid cards nor payment apps"],
+            correctIndex: 0,
+            explanation: "12.3 percent of unbanked households cited it, and unlike most items on the list it describes a denial rather than a choice.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "When someone applies for a checking account, what does the bank usually pull?",
+            options: ["A deposit account screening report", "The same credit report a mortgage lender would order, from one of the three nationwide bureaus", "A record from the FDIC showing every insured account the applicant has ever held", "A tax transcript from the Internal Revenue Service confirming reported income"],
+            correctIndex: 0,
+            explanation: "It is a separate report from a company that keeps a file on how a person's previous deposit accounts ended.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Who supplies the information in a checking-account screening file?",
+            options: ["Banks and credit unions", "The applicant, through the disclosures made on the account application form itself", "Merchants who accepted the applicant's checks and were not paid on presentation", "State banking regulators, from the complaint records they maintain on consumers"],
+            correctIndex: 0,
+            explanation: "The CFPB states that banks and credit unions supply this type of information, so the institution that closed an account is the source and the next institution is the reader.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Which two companies does the CFPB name as checking account reporting companies?",
+            options: ["Chex Systems and Early Warning Services", "Equifax and TransUnion, the two largest of the three nationwide credit reporting bureaus", "Fannie Mae and Freddie Mac, the two government-sponsored enterprises in housing finance", "FICO and VantageScore, the two publishers of consumer credit scoring models"],
+            correctIndex: 0,
+            explanation: "The CFPB names them in its answer about being denied a checking account, read on 28 August 2026.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Which statutory section defines a consumer reporting agency?",
+            options: ["15 U.S.C. 1681a(f)", "15 U.S.C. 1681m(a), which sets what a user of a report must tell a consumer after adverse action", "15 U.S.C. 1681i(a), which governs reinvestigation of a disputed item in a consumer file", "12 CFR 1002.2(c), which defines adverse action for the purposes of Regulation B"],
+            correctIndex: 0,
+            explanation: "The definition covers any person regularly assembling consumer credit information or other information on consumers to furnish reports to third parties.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Which words in the consumer-reporting-agency definition make it reach beyond credit?",
+            options: ["Or other information", "For monetary fees, dues, or on a cooperative nonprofit basis, which covers every possible business model", "Uses any means or facility of interstate commerce, which covers any company with a website", "Regularly engages in whole or in part, which covers a company doing this as a sideline"],
+            correctIndex: 0,
+            explanation: "The definition reads credit information or other information on consumers, which is why a deposit-account history file falls inside it.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "What does 15 U.S.C. 1681a(d) define?",
+            options: ["A consumer report", "A consumer reporting agency, being the company that assembles and furnishes the information", "A nationwide specialty consumer reporting agency and its five subject categories", "The duties of a person taking adverse action based on information in a consumer report"],
+            correctIndex: 0,
+            explanation: "It covers a communication bearing on credit worthiness, character, general reputation, personal characteristics or mode of living, used as a factor in an eligibility decision.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "How many subject categories does the nationwide specialty consumer reporting agency definition list?",
+            options: ["Five", "Three, being medical records or payments, employment history, and insurance claims", "Two, being check writing history and residential or tenant history", "Eight, matching the eight nonbank financial services in the FDIC's underbanked definition"],
+            correctIndex: 0,
+            explanation: "Medical records or payments, residential or tenant history, check writing history, employment history, and insurance claims.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Which specialty category covers checking-account screening?",
+            options: ["Check writing history", "Employment history, since a bank verifies where an applicant works before opening an account", "Residential or tenant history, since a bank must confirm the applicant's stated address", "Insurance claims, since a deposit account is insured by the FDIC against institution failure"],
+            correctIndex: 0,
+            explanation: "It is the third of the five categories named at 15 U.S.C. 1681a(x).",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "What follows from a screening company being a consumer reporting agency under the FCRA?",
+            options: ["The consumer gets statutory rights", "The company must obtain written permission from the consumer before assembling any file", "The company is supervised directly by the FDIC as an insured depository institution", "The company must delete every negative entry after twelve months have elapsed"],
+            correctIndex: 0,
+            explanation: "The whole purpose of the statute is to give the person being reported on a set of rights, which is what the rest of this section teaches.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "What kinds of entries end up in a deposit-screening file?",
+            options: ["Accounts closed with a negative balance", "The applicant's monthly income and every deposit made into a previous account", "The applicant's credit score as calculated by the three nationwide credit bureaus", "The applicant's complete transaction history at every institution over seven years"],
+            correctIndex: 0,
+            explanation: "Unpaid overdrafts, accounts closed owing money and suspected fraud are the kinds of things previous institutions report.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "In the CFPB's description, what is deposit account screening used to decide?",
+            options: ["Whether to offer an account", "How large a monthly maintenance fee to charge a particular applicant for an account", "Whether an applicant qualifies for federal deposit insurance on the account", "How much overdraft coverage to extend on the account once it is opened"],
+            correctIndex: 0,
+            explanation: "The CFPB says institutions use it to help decide whether to offer a checking or savings account, or to accept personal checks and electronic funds transfer payments.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Which provision governs what a user of a consumer report must tell a consumer after adverse action?",
+            options: ["15 U.S.C. 1681m(a)", "15 U.S.C. 1681j(a), which sets the free annual file disclosure a consumer may request", "15 U.S.C. 1681a(x), which defines a nationwide specialty consumer reporting agency", "15 U.S.C. 1681i(a), which requires reinvestigation of an item the consumer disputes"],
+            correctIndex: 0,
+            explanation: "It applies when adverse action is taken based in whole or in part on information contained in a consumer report.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "What must an adverse action notice under 1681m(a) tell the consumer about the reporting agency?",
+            options: ["Its name, address and telephone number", "The exact date on which the agency assembled the file the institution relied upon", "The identity of every institution that has furnished information into the file", "The fee the institution paid to obtain the report from that agency"],
+            correctIndex: 0,
+            explanation: "Naming the agency is what turns the letter into a pointer to a document the consumer can actually obtain.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "What statement about the reporting agency must the notice contain?",
+            options: ["That it did not make the decision", "That it verified the accuracy of every item in the file before furnishing the report", "That it is supervised by the Consumer Financial Protection Bureau under federal law", "That it will remove any item the consumer objects to within thirty days of a request"],
+            correctIndex: 0,
+            explanation: "The statute requires a statement that the agency did not make the decision and is unable to provide the specific reasons why the adverse action was taken.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Which two rights must the adverse action notice tell the consumer they have?",
+            options: ["A free copy and a dispute", "A second review by the institution and an appeal to the institution's federal regulator", "An explanation of the principal reasons and a right to reapply after ninety days", "Compensation for the application fee and a referral to another insured institution"],
+            correctIndex: 0,
+            explanation: "The right to obtain a free copy of the report from the agency, and the right to dispute the accuracy or completeness of any information in it.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Why does the lesson call the adverse action notice a thread rather than an answer?",
+            options: ["It points at a file, not a reason", "Because the notice arrives weeks after the decision, by which time the file has already changed", "Because the notice is optional and many institutions choose not to send one at all", "Because the notice names the decision-maker but withholds the name of the reporting agency"],
+            correctIndex: 0,
+            explanation: "It must name the agency and must also say the agency cannot give the specific reasons, so it hands over a lead rather than an explanation.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Which regulation carries the right to be told the principal reasons for a denial?",
+            options: ["Regulation B", "Regulation E, which governs electronic fund transfers and the overdraft opt-in", "Regulation DD, which governs the account disclosures a depository institution must provide", "Regulation V, which governs the accuracy of information furnished to consumer reporting agencies"],
+            correctIndex: 0,
+            explanation: "It implements the Equal Credit Opportunity Act, and its adverse-action machinery is built around applications for credit.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "How does 12 CFR 1002.2(f) define an application?",
+            options: ["A request for an extension of credit", "Any completed form submitted to a financial institution seeking a product or service", "A written request for any consumer financial product offered by a covered institution", "A request for credit or for a deposit account, whichever the consumer submits first"],
+            correctIndex: 0,
+            explanation: "It reads as an oral or written request for an extension of credit made in accordance with the creditor's procedures for that type of credit.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Why does the Regulation B statement of principal reasons not attach to a checking-account denial?",
+            options: ["A checking account is not credit", "Because Regulation B applies only to institutions above a stated asset threshold", "Because the applicant may reapply at any time, which removes the need for a statement", "Because the FCRA notice replaces it whenever a consumer report was used in the decision"],
+            correctIndex: 0,
+            explanation: "Regulation B's adverse action turns on a refusal to grant credit in response to an application, and an application is defined as a request for an extension of credit.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "A person is refused a loan and a checking account on the same afternoon. What differs?",
+            options: ["Only the loan carries a right to reasons", "Only the account carries a right to be told which reporting agency was consulted", "Neither carries any notice obligation, since both are discretionary business decisions", "Both carry identical rights, since the Fair Credit Reporting Act governs each equally"],
+            correctIndex: 0,
+            explanation: "Both may carry the FCRA notice naming the agency, but only the credit refusal carries Regulation B's statement of principal reasons.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "What does the lesson tell a declined applicant to do first?",
+            options: ["Read the notice for the agency's name", "Ask the branch manager to override the decision and reopen the application on the spot", "File a complaint with the institution's federal regulator before requesting any document", "Apply immediately at three other institutions to establish a pattern of refusals"],
+            correctIndex: 0,
+            explanation: "That name is the only line in the letter that leads to a document, and supplying it is the institution's statutory obligation.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Under 1681m(a), what triggers the notice obligation?",
+            options: ["Adverse action based on a consumer report", "Any denial of an application, whether or not a consumer report played any part in it", "A denial that the institution's own compliance department classifies as discriminatory", "A written request from the consumer within sixty days of the decision"],
+            correctIndex: 0,
+            explanation: "The section applies when adverse action is taken based in whole or in part on information contained in a consumer report.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Which section gives a consumer a free file disclosure once every twelve months?",
+            options: ["15 U.S.C. 1681j(a)(1)(A)", "15 U.S.C. 1681i(a)(5)(A), which requires deletion of an item that cannot be verified", "15 U.S.C. 1681m(a), which sets out the contents of an adverse action notice", "15 U.S.C. 1681a(x), which lists the five nationwide specialty categories"],
+            correctIndex: 0,
+            explanation: "It applies to nationwide agencies and nationwide specialty agencies, once during any 12-month period, upon request and without charge.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Must a consumer be denied something before requesting a free annual file disclosure?",
+            options: ["No", "Yes, the free disclosure opens only after an adverse action notice has been received", "Yes, unless the consumer is currently unemployed and seeking work within sixty days", "Yes, and the request must be made within sixty days of the denial to be free"],
+            correctIndex: 0,
+            explanation: "The annual disclosure is available for the asking. The sixty-day window after an adverse action is a separate, additional right.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "How long does the sixty-day free-disclosure window run from?",
+            options: ["The adverse action notification", "The date the consumer's account was closed by the previous institution", "The date the reporting agency last received information from a furnisher", "The date of the consumer's most recent annual free file disclosure request"],
+            correctIndex: 0,
+            explanation: "Section 1681j(b) opens a free disclosure to a consumer who requests it within 60 days of receiving notification that a rating may be adversely affected.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Which of these is a free-disclosure trigger under 15 U.S.C. 1681j(c)?",
+            options: ["Receiving public welfare assistance", "Holding an account at an institution that has closed a branch within the past year", "Having been refused an account by more than one institution in a calendar year", "Having lived at the same address for fewer than twelve months"],
+            correctIndex: 0,
+            explanation: "The section also covers a consumer unemployed and seeking employment within 60 days, and one who believes the file contains fraud-related inaccuracies.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Which section requires an agency to reinvestigate a disputed item?",
+            options: ["15 U.S.C. 1681i(a)(1)(A)", "15 U.S.C. 1681j(a)(1)(A), which entitles a consumer to one free disclosure every twelve months", "15 U.S.C. 1681m(a), which governs what a user must say after taking adverse action", "12 CFR 1030.4(b)(4), which requires disclosure of the conditions under which a fee applies"],
+            correctIndex: 0,
+            explanation: "The duty is triggered when the consumer disputes the completeness or accuracy of an item and notifies the agency.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What must a reinvestigation determine or do?",
+            options: ["Check the item or delete it", "Contact every institution the consumer has ever banked with to confirm the entry", "Refer the dispute to the Consumer Financial Protection Bureau for a written determination", "Suspend furnishing of the entire file until the consumer withdraws the dispute"],
+            correctIndex: 0,
+            explanation: "The agency must conduct a reasonable reinvestigation, record the current status of the disputed information, or delete the item.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "How long does an agency generally have to complete a reinvestigation?",
+            options: ["Thirty days", "Sixty days, matching the window in which a free disclosure may be requested after adverse action", "Five business days, matching the deadline for notifying the consumer of the results", "Twelve months, matching the interval between free annual file disclosures"],
+            correctIndex: 0,
+            explanation: "The period runs from the date the agency receives the notice, and may be extended by up to fifteen additional days in one stated circumstance.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What extends the reinvestigation period by up to fifteen days?",
+            options: ["Relevant information from the consumer", "A request from the furnishing institution for additional time to research the entry", "The agency receiving more than one dispute from the same consumer in a single month", "A determination by the agency that the disputed item is frivolous or irrelevant"],
+            correctIndex: 0,
+            explanation: "The extension applies when the agency receives relevant information from the consumer during the original thirty-day period.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What must happen to an item that is found inaccurate, incomplete, or that cannot be verified?",
+            options: ["It must be promptly deleted or modified", "It must be flagged as disputed and retained in the file for the remainder of its reporting period", "It must be referred to the furnisher, which then decides whether to keep or remove it", "It must be replaced with a statement supplied by the consumer describing the dispute"],
+            correctIndex: 0,
+            explanation: "Section 1681i(a)(5)(A) says the agency shall promptly delete the item from the consumer's file or modify it.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Why does the phrase 'cannot be verified' matter so much?",
+            options: ["The burden is on the agency", "Because it lets a consumer remove any entry simply by disputing it in writing", "Because it applies only to items furnished by an institution that has since failed", "Because it converts the thirty-day period into an indefinite one while verification is attempted"],
+            correctIndex: 0,
+            explanation: "The consumer does not have to prove the entry false; if the agency cannot verify it, the item goes.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "How soon must the agency give written notice of the results of a reinvestigation?",
+            options: ["Within five business days of completing it", "Within thirty days of receiving the consumer's original notice of the dispute", "Within sixty days, matching the adverse-action free-disclosure window", "Within fifteen days of any extension granted during the reinvestigation"],
+            correctIndex: 0,
+            explanation: "Section 1681i(a)(6) also requires a revised report, a description of the procedure on request, and notice that the consumer may add a statement of dispute.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What does a successful dispute NOT do?",
+            options: ["Oblige a bank to open an account", "Remove an inaccurate entry from the consumer's file at the reporting agency", "Trigger written notice of the results to the consumer within five business days", "Require the agency to record the current status of the disputed information"],
+            correctIndex: 0,
+            explanation: "A dispute is a mechanism for accuracy. No bank is required to offer an account to anyone, whatever the file says.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Does correcting a file settle a debt owed to a former institution?",
+            options: ["No", "Yes, deletion of the entry extinguishes the underlying obligation as a matter of law", "Yes, provided the consumer disputes within sixty days of the account being closed", "Yes for an overdraft balance and no for a balance arising from suspected fraud"],
+            correctIndex: 0,
+            explanation: "Correcting what is reported and paying what is owed are separate acts, and the FCRA governs only the first.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What does this course say it could NOT establish from ChexSystems' own pages?",
+            options: ["How long an item stays in a file", "Whether the company is a consumer reporting agency under the Fair Credit Reporting Act", "How a consumer may request a copy of their own consumer disclosure report", "Whether the free annual disclosure is available without an adverse action notice"],
+            correctIndex: 0,
+            explanation: "The retention period was not stated on the pages read on 28 August 2026, so the course leaves it open and files a source check instead of guessing.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What inconsistency between two CFPB pages does the lesson report rather than smooth over?",
+            options: ["Which companies sit in the screening category", "Whether a free annual report is available to consumers who have not been denied an account", "Whether an adverse action notice must name the reporting company at all", "Whether a checking account application counts as an application for credit"],
+            correctIndex: 0,
+            explanation: "The Ask CFPB answer names Chex Systems and Early Warning Services while the published list, last updated 13 March 2025, showed one company under bank account screening.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "How does ChexSystems itself describe the consumer's right to a copy of the file?",
+            options: ["Free at least once every 12 months on request", "Available for a fee set by the company and published on its consumer disclosure page", "Available only to consumers who supply a copy of an adverse action notice", "Available once in any consumer's lifetime, after which a charge applies"],
+            correctIndex: 0,
+            explanation: "The company cites the Fair Credit Reporting Act as the basis, matching 15 U.S.C. 1681j(a)(1)(A).",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Which routes does ChexSystems publish for requesting a disclosure?",
+            options: ["Online, by telephone, or by post", "Only in person at a branch of the institution that denied the application", "Only through the consumer's own bank, which must forward the request", "Only by written request accompanied by a notarised statement of identity"],
+            correctIndex: 0,
+            explanation: "Its consumer disclosure page lists a consumer portal, a telephone number, and a mailed form with authentication documents, read on 28 August 2026.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What is a furnisher, in the deposit-screening context?",
+            options: ["The institution that reports into the file", "The company that assembles the file and sells reports to banks and credit unions", "The consumer, who supplies information about themselves on an account application", "The regulator that supervises the reporting company under federal law"],
+            correctIndex: 0,
+            explanation: "The bank or credit union that held the previous account is the source of the entry, and the next institution is the reader.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Why does the lesson say the report is not sitting in a gap in the law?",
+            options: ["The FCRA names its category by statute", "Because the CFPB supervises every checking account reporting company as a large participant", "Because state banking law fills any space the federal statute leaves uncovered", "Because the companies voluntarily agreed to follow the credit-reporting rules"],
+            correctIndex: 0,
+            explanation: "Check writing history is one of the five subjects Congress wrote into the nationwide specialty agency definition.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "The definition of a consumer report includes information bearing on what, besides credit standing?",
+            options: ["Character and general reputation", "The consumer's employment status at the moment the report is furnished to the user", "The consumer's account balances at every institution the agency has data from", "The consumer's tax filings for the three years preceding the request"],
+            correctIndex: 0,
+            explanation: "The section names credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics, and mode of living.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Which of these is one of the five nationwide specialty subjects?",
+            options: ["Residential or tenant history", "Bank account balances held across all federally insured depository institutions", "Retail purchase history compiled from merchant loyalty programmes nationwide", "Utility payment history reported by regulated gas and electric suppliers"],
+            correctIndex: 0,
+            explanation: "The five are medical records or payments, residential or tenant history, check writing history, employment history, and insurance claims.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "What is the practical relationship between the two gates in this course?",
+            options: ["Identity decides if, screening decides whether", "Both are governed by the same federal rule and are enforced by the same agency", "Screening runs first and identity verification only if the screening report is clean", "Clearing either one obliges the institution to open the account"],
+            correctIndex: 0,
+            explanation: "The Customer Identification Program rule governs whether an account can be opened at all; the screening report informs whether the institution will open one.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Under 1681j(a)(1)(A), how is the free disclosure obtained?",
+            options: ["Upon request of the consumer", "Automatically, mailed by the agency to every consumer once each calendar year", "Through the consumer's bank, which must order it on the customer's behalf", "By purchasing it and applying for a refund from the agency within thirty days"],
+            correctIndex: 0,
+            explanation: "The section says the agency shall make the disclosures once during any 12-month period upon request and without charge.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Which disclosures does 1681j(a)(1)(A) require the agency to make free of charge?",
+            options: ["Those under section 1681g", "Only the portion of the file relating to accounts closed within the past twelve months", "A summary of the file rather than the file itself, which remains available for a fee", "Only the identity of the institutions that have obtained the report in the past year"],
+            correctIndex: 0,
+            explanation: "The section cross-refers to 1681g, which is the general disclosure-to-consumers provision of the statute.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What is the honest limit of what a dispute can achieve?",
+            options: ["Accuracy, not outcomes", "Removal of any entry the consumer considers unfair to their circumstances", "An explanation from the bank of the specific reasons for the original denial", "A requirement that the previous institution reopen the closed account"],
+            correctIndex: 0,
+            explanation: "It does not remove a true entry, does not oblige a bank to open an account, and does not settle any underlying debt.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Why does the course print both CFPB pages with their dates rather than choosing one?",
+            options: ["Because they disagree and both were read", "Because federal agencies require every reproduced page to carry a retrieval date", "Because one page is the official rule and the other is unofficial guidance", "Because the two pages describe different states and neither applies nationally"],
+            correctIndex: 0,
+            explanation: "Smoothing a source-internal disagreement into one confident sentence is exactly what this catalog refuses to do, so both are stated as read with a source check filed.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "A consumer wants to see their screening file before applying anywhere. Can they?",
+            options: ["Yes, under the annual free disclosure", "No, the file is released only to institutions with a permissible purpose for obtaining it", "No, unless they have been denied an account within the preceding sixty days", "Only if their previous account was closed with a zero or positive balance"],
+            correctIndex: 0,
+            explanation: "The annual free file disclosure requires no denial and no reason, which makes reading the file before applying entirely possible.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Which document does the adverse action notice send a consumer toward?",
+            options: ["Their own file at the reporting agency", "The institution's written lending policy, which explains how applications are evaluated", "The Consumer Financial Protection Bureau's list of consumer reporting companies", "The account disclosures the institution would have provided had the account been opened"],
+            correctIndex: 0,
+            explanation: "The notice names the agency and states the consumer's right to a free copy of the report and to dispute what is in it.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "How does 12 CFR 1002.2(c) define adverse action, in relevant part?",
+            options: ["A refusal to grant credit as requested", "Any decision that leaves an applicant worse off than before the application was made", "The closure of an existing deposit account without the account holder's consent", "The reporting of a negative entry to a consumer reporting agency by a furnisher"],
+            correctIndex: 0,
+            explanation: "The definition speaks of a refusal to grant credit in substantially the amount or on substantially the terms requested in an application, unless the creditor makes a counteroffer.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Which of these is NOT required by 15 U.S.C. 1681m(a)?",
+            options: ["The specific reasons for the decision", "Notice of the adverse action itself, given orally, in writing or electronically", "The name, address and telephone number of the consumer reporting agency", "Notice of the right to dispute the accuracy or completeness of information in the report"],
+            correctIndex: 0,
+            explanation: "The statute requires the opposite: a statement that the agency cannot provide the specific reasons why the adverse action was taken.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "What is the design purpose of naming the agency in the notice?",
+            options: ["So the consumer can obtain the file", "So the consumer can complain about the agency to its federal supervisor", "So the consumer can require the agency to explain the institution's decision", "So the consumer can apply directly to the agency for a second opinion"],
+            correctIndex: 0,
+            explanation: "The notice hands over the one piece of information that leads to a document the consumer can read, dispute and correct.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Why does this course treat the deposit-screening report and the credit report as different subjects?",
+            options: ["They are different files from different companies", "Because only one of them is governed by the Fair Credit Reporting Act", "Because a deposit screening report contains no information about the consumer's identity", "Because credit reports are supplied by banks and screening reports are supplied by merchants"],
+            correctIndex: 0,
+            explanation: "Credit reports and scores are the subject of the credit course in this series; the file behind an account denial is a separate one held by a specialty agency.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "What does the survey item about past banking history tell you that the other items do not?",
+            options: ["That someone was refused", "That the household chose to avoid banks for reasons of privacy or trust", "That the household could not meet a minimum balance requirement at any institution", "That the household lives too far from a branch to open an account in person"],
+            correctIndex: 0,
+            explanation: "It describes something done to a household rather than a decision it made, which is why the machinery behind it deserves a section.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Who assembles a deposit screening file, in the FCRA's terms?",
+            options: ["A consumer reporting agency", "A furnisher, which is the institution that reports the underlying entries", "A user, which is the institution that obtains and relies on the report", "A reseller, which redistributes files assembled by the nationwide credit bureaus"],
+            correctIndex: 0,
+            explanation: "Furnishers report into the file, users obtain it, and the agency in the middle assembles and sells it.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "What does the phrase 'based in whole or in part' do in 1681m(a)?",
+            options: ["It catches partial reliance on the report", "It limits the duty to decisions made entirely on the basis of the consumer report", "It allows the user to choose whether the notice is required in any given case", "It requires the user to state what proportion of the decision rested on the report"],
+            correctIndex: 0,
+            explanation: "A report that was one factor among several still triggers the notice, which is why the duty is hard for a user to avoid.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Which right does a consumer hold whether or not they were ever denied anything?",
+            options: ["The free annual file disclosure", "The right to be told the principal reasons for a decision under Regulation B", "The right to a reinvestigation completed within five business days", "The right to have a bank open an account once the file is corrected"],
+            correctIndex: 0,
+            explanation: "Section 1681j(a)(1)(A) is available on request, once in any twelve-month period, with no denial required.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "How does a consumer start a reinvestigation?",
+            options: ["By notifying the agency of the dispute", "By notifying the bank that furnished the entry and asking it to withdraw the report", "By filing a complaint with the Consumer Financial Protection Bureau's complaint database", "By requesting the free annual file disclosure and marking the disputed entry on it"],
+            correctIndex: 0,
+            explanation: "The duty at 1681i(a)(1)(A) is triggered when the consumer notifies the agency directly, or indirectly through a reseller.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What may a consumer add to a file after an unsuccessful dispute?",
+            options: ["A statement of dispute", "A copy of the adverse action notice they received from the denying institution", "A certification from a licensed accountant that the entry is inaccurate", "A request that the entry be suppressed for a period of twelve months"],
+            correctIndex: 0,
+            explanation: "Section 1681i(a)(6) requires the agency to notify the consumer that they may add a statement of dispute to the file.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What is the practical difference between the annual disclosure and the sixty-day window?",
+            options: ["One needs no denial, the other follows one", "One is free and the other is charged at a fee set by the agency", "One covers the whole file and the other covers only the disputed entries", "One applies to credit bureaus and the other to specialty agencies"],
+            correctIndex: 0,
+            explanation: "The annual right at 1681j(a) requires nothing more than a request; the right at 1681j(b) opens on receiving an adverse-action notification.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "This section's central claim about the screening system is best summarised how?",
+            options: ["It is a legal file with a legal remedy", "It is an informal industry list with no statutory footing and no consumer recourse", "It is maintained by federal regulators rather than by private companies", "It is identical to the credit report and can be obtained from the same source"],
+            correctIndex: 0,
+            explanation: "Being a consumer reporting agency brings the notice duty, the free disclosure and the reinvestigation duty with it.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "What does the reinvestigation duty require the agency to do about status?",
+            options: ["Record the current status of the item", "Publish a correction to every user who obtained the report in the previous year", "Freeze the file until the dispute is resolved and refuse all requests for it", "Substitute the consumer's own account of events for the furnisher's entry"],
+            correctIndex: 0,
+            explanation: "The section says the agency must determine whether the information is inaccurate and record the current status of the disputed information, or delete the item.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Which sentence best captures why almost nobody exercises these rights?",
+            options: ["Most people do not know the report exists", "Most people are told the rights are unavailable to deposit account applicants", "Most people are charged a fee that makes the annual disclosure impractical", "Most people are required to hire an attorney before an agency will respond"],
+            correctIndex: 0,
+            explanation: "Rather more people have been turned down because of it than have ever read it, which is the gap this section is written to close.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "What relationship does the notice describe between the reporting agency and the decision?",
+            options: ["The agency did not make it", "The agency made it on behalf of the institution using an automated model", "The agency and the institution made it jointly under a shared underwriting policy", "The agency reviewed and approved the institution's decision before it was communicated"],
+            correctIndex: 0,
+            explanation: "The required statement says the agency did not make the decision and is unable to provide the specific reasons why it was taken.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Why is the CFPB's Ask CFPB answer cited with its review date in this course?",
+            options: ["Agency guidance can change", "Because the answer contradicts the statute and the date shows which came first", "Because the CFPB requires a review date whenever its guidance is quoted", "Because the answer applies only to consumers in states that adopted it"],
+            correctIndex: 0,
+            explanation: "It was last reviewed 18 December 2024 and read on 28 August 2026, and this course dates every external source rather than presenting guidance as timeless.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What does the CFPB say checking account reporting companies must do with a consumer's dispute?",
+            options: ["Investigate it and correct inaccurate information", "Forward it to the institution that furnished the entry and take no further action", "Suspend the entry from the file until the consumer withdraws the dispute in writing", "Charge a research fee before beginning any review of the disputed information"],
+            correctIndex: 0,
+            explanation: "The CFPB's answer matches the statutory duty at 15 U.S.C. 1681i, which requires a reasonable reinvestigation and deletion or modification of what cannot be verified.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Which body of law is doing the work in this whole section?",
+            options: ["The Fair Credit Reporting Act", "The Equal Credit Opportunity Act, whose adverse-action machinery turns on requests for credit", "The Truth in Savings Act, which governs the disclosure of deposit account fees", "The Electronic Fund Transfer Act, which governs overdraft opt-in and prepaid disclosures"],
+            correctIndex: 0,
+            explanation: "The definitions, the notice duty, the free disclosure and the reinvestigation duty are all sections of 15 U.S.C. 1681.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+        ],
+      },
+    },
   ],
 };
