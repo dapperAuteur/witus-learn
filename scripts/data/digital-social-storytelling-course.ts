@@ -61,8 +61,8 @@ export const DIGITAL_SOCIAL_STORYTELLING_COURSE: AuthoredCourse = {
 :::reveal Why does this course call the short attention budget a constraint rather than a lower standard? ||| Because a formal limit is not a degradation: a sonnet is not a degraded poem, and the short-form drama course made the same argument, that constraint forces structure because there is no room to be vague. The audience's freedom to leave at no cost removes every place a maker could have been slack, which is a harder discipline than a committed audience imposes rather than an easier one. The corollary is that these techniques are responses to a real constraint, so using them where the constraint is absent turns them into tics.
 
 ## Sources
-- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press.
-- Bordwell, D., & Thompson, K. (2020). *Film art: An introduction* (12th ed.). McGraw-Hill.`,
+- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press. https://lccn.loc.gov/2012028526
+- Bordwell, D., & Thompson, K. (2020). *Film art: An introduction* (12th ed.). McGraw-Hill. https://lccn.loc.gov/2018039565`,
     },
     {
       slug: "ds-cold-open-and-loop",
@@ -103,8 +103,8 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 :::reveal What is a productive loop, and how does it differ from a false one? ||| A productive loop is an ending that gives the viewer information which changes what the opening meant, so a rewatch is a genuinely different experience: it is withholding used across the join between end and beginning, and it is the most sophisticated move the form has. A false loop withholds the payoff so the viewer must rewatch to catch it at all, which buys a second view at the cost of trust, and audiences have learned to recognize the manoeuvre. The first rewards the rewatch; the second requires it.
 
 ## Sources
-- Bordwell, D., & Thompson, K. (2020). *Film art: An introduction* (12th ed.). McGraw-Hill.
-- World Wide Web Consortium. (2023). *Web content accessibility guidelines (WCAG) 2.2*. W3C.`,
+- Bordwell, D., & Thompson, K. (2020). *Film art: An introduction* (12th ed.). McGraw-Hill. https://lccn.loc.gov/2018039565
+- World Wide Web Consortium. (2023). *Web content accessibility guidelines (WCAG) 2.2*. W3C. https://www.w3.org/TR/WCAG22/`,
     },
     {
       slug: "ds-algorithmic-middle",
@@ -133,8 +133,8 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 :::reveal What does it mean to say the metrics measure the system's objective rather than your work's quality? ||| That the number you are shown is the optimiser's scorecard for its own goal, usually engagement of some kind, and your goal overlaps with that partially and never completely. So a piece that reached few people may be the best thing you made, and this is a measurement fact rather than consolation. The practical consequence is noticing when you start optimising against your own point: a story about ambivalence tends to perform worse than one about certainty, which is a real structural pressure toward certainty rather than a conspiracy.
 
 ## Sources
-- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press.
-- Gillespie, T. (2018). *Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media*. Yale University Press.`,
+- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press. https://lccn.loc.gov/2012028526
+- Gillespie, T. (2018). *Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media*. Yale University Press. https://doi.org/10.12987/9780300235029`,
     },
     {
       slug: "ds-quiz-1",
@@ -317,8 +317,8 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 :::reveal Why is the hybrid shape "nearly always right" for a distributed series? ||| Because the recommendation system will show a stranger part seven with no idea part one exists, so a pure serial pays a real cost for depending on order, while a pure anthology gives a committed follower nothing to accumulate. The hybrid makes each part self-contained so a cold viewer gets a whole thing, and carries an accumulating story so a returning viewer is rewarded for staying. It costs more to write, which is the whole reason people avoid it.
 
 ## Sources
-- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press.
-- Mittell, J. (2015). *Complex TV: The poetics of contemporary television storytelling*. New York University Press.`,
+- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press. https://lccn.loc.gov/2012028526
+- Mittell, J. (2015). *Complex TV: The poetics of contemporary television storytelling*. New York University Press. https://doi.org/10.18574/nyu/9780814744963.001.0001`,
     },
     {
       slug: "ds-comments-as-text",
@@ -353,8 +353,8 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 :::reveal Why does this course treat the comment section as part of the text rather than as a reaction to it? ||| Because it is permanently attached, visible to everyone who arrives later, and frequently read before the work itself, so a viewer who reads three comments first genuinely watches a different piece. That makes it a design surface: you decide before publishing what response you want, since a piece ending on a real question gets answers and one ending on a verdict gets argument. It also carries a responsibility, because if the work is about a real identifiable person, the comment section is something you brought to their door.
 
 ## Sources
-- Gillespie, T. (2018). *Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media*. Yale University Press.
-- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press.`,
+- Gillespie, T. (2018). *Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media*. Yale University Press. https://doi.org/10.12987/9780300235029
+- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press. https://lccn.loc.gov/2012028526`,
     },
     {
       slug: "ds-ethics-of-spread",
@@ -387,8 +387,8 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 :::reveal What is the corrections asymmetry in this form, and what practice does it require? ||| A correction never travels as far as the claim: the original reached a hundred thousand people selected by a recommendation system, while the correction reaches only the fraction who follow you, so the error stays in circulation unattached to it indefinitely. The practice is front-loaded: check before publishing to a higher standard than the form's norms, and then correct in the ORIGINAL where the platform allows it, by editing the caption or replacing the file, because that is the only move that reaches anyone arriving later. Post the separate correction as well, and never quietly delete.
 
 ## Sources
-- Society of Professional Journalists. (2014). *SPJ code of ethics*. Society of Professional Journalists.
-- Gillespie, T. (2018). *Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media*. Yale University Press.`,
+- Society of Professional Journalists. (2014). *SPJ code of ethics*. Society of Professional Journalists. https://www.spj.org/spj-code-of-ethics/
+- Gillespie, T. (2018). *Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media*. Yale University Press. https://doi.org/10.12987/9780300235029`,
     },
     {
       slug: "ds-what-survives",
@@ -422,8 +422,8 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 :::reveal List what a maker actually owns, and the strategic rule that follows. ||| The files, kept as full-quality masters off the platform and backed up; a way to reach the audience that you control, most durably an email list or your own site; the craft, which transfers between platforms; and the relationships with people who will look for you. Everything else, including the account, the followers, the hosted archive and the reach, is a revocable license whose terms can change without your agreement. The rule: treat every platform as rented distribution and never as your archive, and make work that means something outside its container.
 
 ## Sources
-- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press.
-- Gillespie, T. (2018). *Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media*. Yale University Press.`,
+- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press. https://lccn.loc.gov/2012028526
+- Gillespie, T. (2018). *Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media*. Yale University Press. https://doi.org/10.12987/9780300235029`,
     },
     {
       slug: "ds-quiz-2",
@@ -622,12 +622,12 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
 :::reveal Without looking back, name the one durable fact about metrics and the one durable strategic answer. ||| Metrics measure the platform's objective rather than your work's quality, because the system optimises for engagement of some kind and your goals overlap with that partially and never completely; a piece that reached few people may be the best thing you made, which is a measurement fact rather than consolation. The durable strategic answer is to build something that survives the middle: masters you keep, a way to reach your audience that no platform controls, craft that transfers, and work that means something outside its container.
 
 ## Sources
-- Bordwell, D., & Thompson, K. (2020). *Film art: An introduction* (12th ed.). McGraw-Hill.
-- Gillespie, T. (2018). *Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media*. Yale University Press.
-- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press.
-- Mittell, J. (2015). *Complex TV: The poetics of contemporary television storytelling*. New York University Press.
-- Society of Professional Journalists. (2014). *SPJ code of ethics*. Society of Professional Journalists.
-- World Wide Web Consortium. (2023). *Web content accessibility guidelines (WCAG) 2.2*. W3C.`,
+- Bordwell, D., & Thompson, K. (2020). *Film art: An introduction* (12th ed.). McGraw-Hill. https://lccn.loc.gov/2018039565
+- Gillespie, T. (2018). *Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media*. Yale University Press. https://doi.org/10.12987/9780300235029
+- Jenkins, H., Ford, S., & Green, J. (2013). *Spreadable media: Creating value and meaning in a networked culture*. New York University Press. https://lccn.loc.gov/2012028526
+- Mittell, J. (2015). *Complex TV: The poetics of contemporary television storytelling*. New York University Press. https://doi.org/10.18574/nyu/9780814744963.001.0001
+- Society of Professional Journalists. (2014). *SPJ code of ethics*. Society of Professional Journalists. https://www.spj.org/spj-code-of-ethics/
+- World Wide Web Consortium. (2023). *Web content accessibility guidelines (WCAG) 2.2*. W3C. https://www.w3.org/TR/WCAG22/`,
     },
   ],
 };
