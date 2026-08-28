@@ -2435,6 +2435,605 @@ Board of Governors of the Federal Reserve System. (n.d.). *About the FedNow Serv
             explanation: "Each transaction is processed and settled individually in near real time, at any hour on any day.",
             sourceLessonSlug: "instant-and-irrevocable",
           },
+          {
+            prompt: "Why does the availability schedule exist at all, on this section's reading?",
+            options: ["Because a deposited credit is provisional", "Because banks need time to verify the identity of the person making a deposit", "Because the Federal Reserve settles check items only once in each business day", "Because the depositary bank must obtain the drawer's consent before crediting"],
+            correctIndex: 0,
+            explanation: "The bank is collecting the item as the customer's agent, so a rule is needed to say how long it may wait before letting the customer use the advance.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "Which of these correctly describes a bank's position when it accepts a check for deposit?",
+            options: ["It is collecting, not buying", "It has purchased the instrument and bears the whole risk that it is dishonoured", "It has guaranteed the amount to the depositor irrespective of what follows", "It has settled with the paying bank before the credit reaches the account"],
+            correctIndex: 0,
+            explanation: "U.C.C. 4-201(a) makes the bank an agent or sub-agent of the item's owner until settlement is or becomes final.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Pay frequency, and the dates you do not set
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "four-different-years",
+      title: "17 · Weekly, biweekly, semimonthly, monthly: four different years",
+      section: "Section 5 · Pay frequency, and the dates you do not set",
+      body: `Ask how many times a year somebody is paid and you get four different answers, and two of them are routinely confused with each other.
+
+**The counts.** Weekly is **52** paydays. Biweekly is **26**. Semimonthly is **24**. Monthly is **12**. Nothing here is contested and nothing here needs a citation: it is arithmetic, and it is the most load-bearing arithmetic in this course.
+
+**Biweekly and semimonthly are not the same thing.** Both are loosely called "twice a month" and they differ by two paychecks a year. **Biweekly** means every fourteen days, so it is anchored to a weekday: 26 times 14 is 364, which is why a biweekly payday falls on the same day of the week forever and drifts one calendar day earlier each year, two after a leap day. **Semimonthly** means twice within each calendar month, so it is anchored to dates: the fifteenth and the last day, say, or the first and the sixteenth.
+
+**Three consequences follow, and they are the whole reason this lesson exists.**
+
+**First, the three-paycheck month.** Twenty-six paychecks spread across twelve months averages a little over two per month, so a biweekly schedule produces **two months each year with three paydays** and ten with two. Semimonthly never does: twenty-four across twelve is exactly two, every month, forever. The three-paycheck month is not extra money. The annual total is the same number divided into more pieces, and the only thing that has changed is which dates the pieces land on.
+
+**Second, a monthly bill does not line up with a fortnightly wage.** Rent, a loan payment and a subscription are usually **12** events a year. A biweekly wage is **26**. Twenty-six does not divide evenly into twelve, so the number of paydays standing between one rent day and the next is not constant: sometimes two, sometimes three. **The relationship changes every month, by design, without anyone deciding anything.** Under a semimonthly schedule it does not change at all, because both the wage and the bill are anchored to dates.
+
+**Third, the two schedules break in opposite ways.** A semimonthly payday is a **date**, so it lands on Saturdays, Sundays and holidays regularly, and something has to happen when it does. A biweekly payday is a **weekday**, so it never lands on a weekend, but it walks steadily around the month, so its distance from a bill due on the first is never the same twice in a row.
+
+**Work one through, to make it concrete rather than abstract.** Take a bill due on the first of each month and a biweekly payday falling on Friday the 3rd of January. The next paydays are the 17th and the 31st of January, then the 14th and 28th of February. So the February bill has one payday between it and the January bill's payday, and by spring the pattern has shifted again. Nothing is wrong. Fourteen and thirty are simply not compatible numbers, and no amount of planning makes them compatible.
+
+**What this course does with that, and what it refuses to do.** It refuses to tell you what to do about it, because **this course gives no financial advice** and does not know your obligations. What it does is give you the map: count your paydays for the next twelve months from your own schedule, count your dated obligations, and look at where the two lists sit relative to each other. That is a piece of arithmetic anybody can do once and reuse for a year, and Section 6 turns it into an exercise.
+
+:::reveal How many paydays a year are weekly, biweekly, semimonthly and monthly schedules? ||| 52, 26, 24 and 12.
+
+:::reveal Why does a biweekly schedule produce two three-paycheck months a year and a semimonthly schedule none? ||| Because 26 paydays across 12 months averages slightly more than two per month, while 24 across 12 is exactly two every month.
+
+:::reveal Why does the number of paydays between one rent day and the next change under a biweekly schedule? ||| Because a fortnightly wage is 26 events a year and a monthly bill is 12, and 26 does not divide evenly into 12.
+
+## Vocabulary
+- **Biweekly**: paid every fourteen days, which is 26 times a year and anchored to a weekday.
+- **Semimonthly**: paid twice within each calendar month, which is 24 times a year and anchored to dates.
+- **Three-paycheck month**: a month containing three biweekly paydays, produced by the calendar rather than by extra pay.
+- **Pay period**: the span of work a given payment covers, which is not the same thing as the date the payment arrives.
+
+## Sources
+Cal. Lab. Code § 204. (n.d.). *Payment of wages*. California Legislative Information, California Legislature. https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=204
+
+29 CFR § 778.106. (n.d.). *Time of payment*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/29/778.106`,
+    },
+    {
+      slug: "who-decides-how-often",
+      title: "18 · Who decides how often you are paid",
+      section: "Section 5 · Pay frequency, and the dates you do not set",
+      body: `The number in the last lesson is not yours to choose, and it is usually not your employer's to choose freely either.
+
+**Federal law assumes a regular pay day and does not set its frequency.** The wage-and-hour regulations put it this way, in a passage about overtime:
+
+> "There is no requirement in the Act that overtime compensation be paid weekly. The general rule is that overtime compensation earned in a particular workweek must be paid on the regular pay day for the period in which such workweek ends." (29 CFR § 778.106, n.d.)
+
+**Read what that sentence takes for granted.** It regulates payment **relative to** a regular pay day, which means it presumes one exists and says nothing about how often it comes around. The frequency question is answered somewhere else, and that somewhere is your state.
+
+**California, as one worked example.** The Labor Code says wages earned by any person in any employment "are due and payable twice during each calendar month, on days designated in advance by the employer as the regular paydays" (Cal. Lab. Code § 204, n.d.). Then it fixes windows: labour performed between the 1st and the 15th is payable between the 16th and the 26th of that month, and labour between the 16th and the last day is payable between the 1st and the 10th of the following month. Certain salaried executive, administrative and professional employees covered by federal law may instead be paid monthly, on or before the 26th, if the whole month's compensation is paid then (Cal. Lab. Code § 204, n.d.).
+
+**New York, as a second, because the two states answer differently.**
+
+> "A manual worker shall be paid weekly and not later than seven calendar days after the end of the week in which the wages are earned" (N.Y. Lab. Law § 191, n.d.)
+
+> "A clerical and other worker shall be paid the wages earned in accordance with the agreed terms of employment, but not less frequently than semi-monthly" (N.Y. Lab. Law § 191, n.d.)
+
+**Notice what actually decides your frequency in New York: a category.** Manual worker and clerical and other worker are classifications, and which one you are in is a legal question about the job rather than a term either party negotiated. **That is the single most transferable point in this lesson.** In several states the answer to "how often must I be paid" begins with "what kind of worker are you", and the statute is where that is settled.
+
+**Now look at what both statutes really regulate, which is a lag.** New York's manual-worker rule caps the distance between the end of the week worked and the payment at **seven calendar days**. California's windows allow up to roughly eleven days between the close of a half-month and the payday for it. **A pay period and a payday are two different things**, and the gap between them is a timing fact with a number attached, written in a statute you can open.
+
+**And the method, because this course prints no fifty-state table.** Payday statutes differ in every direction: which frequency, which categories, how long the lag, what happens on a holiday, and what the penalty is. A table of fifty answers would be wrong somewhere within a year of publication and would go on being read anyway. So: **find your own state's payday statute, read the frequency, read the category it applies to, and read the maximum lag.** Those three facts are what feed the map in Section 6, and they come from one document.
+
+:::reveal Does federal wage-and-hour law set how often an employee must be paid? ||| No. It regulates payment relative to a regular pay day and presumes one exists; frequency is set by state law.
+
+:::reveal In New York, what decides whether an employee is paid weekly or semi-monthly? ||| The worker's statutory category. A manual worker is paid weekly, and a clerical and other worker not less frequently than semi-monthly.
+
+:::reveal What three facts should you take from your own state's payday statute? ||| The required frequency, the category of worker it applies to, and the maximum lag between the end of the pay period and the payday.
+
+## Vocabulary
+- **Regular pay day**: the recurring date federal wage regulations assume exists and measure other duties against.
+- **Payday statute**: the state law that fixes how often, and how soon after the work, wages must be paid.
+- **Worker category**: a statutory classification, such as manual worker, that can decide which pay frequency applies.
+- **Pay lag**: the interval between the end of a pay period and the payday for it, which several state statutes cap explicitly.
+
+## Sources
+29 CFR § 778.106. (n.d.). *Time of payment*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/29/778.106
+
+Cal. Lab. Code § 204. (n.d.). *Payment of wages*. California Legislative Information, California Legislature. https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=204
+
+N.Y. Lab. Law § 191. (n.d.). *Frequency of payments*. The New York State Senate. https://www.nysenate.gov/legislation/laws/LAB/191`,
+    },
+    {
+      slug: "when-a-benefit-arrives",
+      title: "19 · When a benefit arrives is a rule, not a courtesy",
+      section: "Section 5 · Pay frequency, and the dates you do not set",
+      body: `For millions of households the largest regular arrival is not a wage. It is a benefit payment, and its date is set by a published regulation you can read in two minutes.
+
+**The rule, in the regulation's own words.**
+
+> "Insured individuals born on the 1st through the 10th of the month will be paid on the second Wednesday of each month. Insured individuals born on the 11th through the 20th of the month will be paid on the third Wednesday of each month. Insured individuals born after the 20th of the month will be paid on the fourth Wednesday of each month." (20 CFR § 404.1807, n.d.)
+
+**A date of birth decides a payment date.** Not a queue, not a processing order, not how early anyone applied. Three brackets, three Wednesdays, published in the Code of Federal Regulations, applying every month.
+
+**And the second half handles the calendar.**
+
+> "If the day regularly scheduled for the delivery of your benefit payment falls on a Saturday, Sunday, or Federal legal holiday, you will be paid on the first preceding day that is not a Saturday, Sunday, or Federal legal holiday." (20 CFR § 404.1807, n.d.)
+
+**The first preceding day.** The payment moves **earlier**, not later, which is the opposite of what most people assume a calendar collision does.
+
+**Now put that beside Section 1, because the two rules use different holiday lists.** This regulation says "Federal legal holiday", and the federal holidays are the eleven listed in the holiday statute, Juneteenth among them (5 U.S.C. § 6103, n.d.). Regulation CC, by contrast, counts business days against its own list of ten named dates that does not include June 19 (12 CFR § 229.2, n.d.). **Same calendar, two rules, two lists.** A June 19 that falls on a Wednesday therefore moves a benefit payment to the preceding day under one rule while still counting as a business day under the other. That is not a contradiction; it is two documents doing different jobs, and it is why the course keeps insisting you read the definition rather than the word.
+
+**The point of this lesson is not the schedule. It is the property the schedule has.** A payment date fixed by a published rule and a birth date is **computable a year in advance** by anybody, with no phone call and no account access. Very few dates in an ordinary household's month have that property. Most arrivals depend on somebody else's processing, and most obligations depend on a due date somebody else chose.
+
+**So the practical move is small and it is not advice.** Take the arrivals you can compute (a benefit date under a published rule, a semimonthly payday anchored to fixed dates, a biweekly payday anchored to a weekday) and separate them from the arrivals you cannot (an item still being collected, a variable commission, a reimbursement). **The first list is a calendar. The second is a forecast.** Treating a forecast as a calendar is where most timing trouble starts, and telling them apart costs nothing.
+
+**One honest limit.** This lesson quotes one regulation about one programme's monthly payment day. Other programmes, other agencies and state-administered benefits have their own rules, and this course has not read them and will not guess at them. **The transferable skill is knowing that a published rule probably exists and going to find it**, which is the same move as finding your payday statute and your bank's availability policy.
+
+:::reveal Under 20 CFR 404.1807, what decides which Wednesday a monthly benefit is paid on? ||| The day of the month of the birth date: the 1st through the 10th, the 11th through the 20th, or after the 20th.
+
+:::reveal What happens when a scheduled benefit delivery day falls on a Saturday, Sunday or Federal legal holiday? ||| Payment moves to the first preceding day that is not one of those.
+
+:::reveal What distinguishes the arrivals you can compute from the ones you cannot? ||| A computable arrival is fixed by a published rule or a fixed date, and everything else is a forecast rather than a calendar.
+
+## Vocabulary
+- **Monthly payment day**: the scheduled delivery date for a monthly benefit, assigned by birth-date bracket to one of three Wednesdays.
+- **First preceding day**: the substitution rule that moves a payment earlier when its scheduled day falls on a weekend or Federal legal holiday.
+- **Federal legal holiday**: the eleven days named in 5 U.S.C. 6103(a), which is a different list from Regulation CC's ten named dates.
+- **Computable arrival**: a payment whose date can be worked out in advance from a published rule, as distinct from a forecast.
+
+## Sources
+20 CFR § 404.1807. (n.d.). *Monthly payment day*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/20/404.1807
+
+5 U.S.C. § 6103. (n.d.). *Holidays*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/5/6103
+
+12 CFR § 229.2. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.2`,
+    },
+    {
+      slug: "quiz-pay-frequency",
+      title: "20 · Knowledge check: pay frequency and benefit dates",
+      section: "Section 5 · Pay frequency, and the dates you do not set",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How many paydays a year does a biweekly schedule produce?",
+            options: ["26", "24, the same as a semimonthly schedule paying twice within each calendar month", "52, because a payment falls in every week of the year on the same weekday", "12, because the payments average out to one for each month of the year"],
+            correctIndex: 0,
+            explanation: "Every fourteen days across a 365-day year gives 26, and 26 times 14 is 364, which is why the payday keeps its weekday.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "How many paydays a year does a semimonthly schedule produce?",
+            options: ["24", "26, the same as a schedule that pays once every fourteen days throughout the year", "52, because there are two payments in each of the twenty-six fortnights", "48, because four of the twelve months contain an additional payment date"],
+            correctIndex: 0,
+            explanation: "Twice within each calendar month is exactly two a month, every month, which is twenty-four across the year.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "By how many paychecks a year do biweekly and semimonthly schedules differ?",
+            options: ["Two", "None, because both are commonly described as paying an employee twice a month", "Four, because a biweekly schedule adds one extra payday in each quarter", "Twenty-six, because one schedule pays fortnightly and the other pays monthly"],
+            correctIndex: 0,
+            explanation: "Twenty-six against twenty-four. The same annual pay is simply divided into a different number of pieces.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "What is a biweekly payday anchored to?",
+            options: ["A weekday", "A calendar date, such as the fifteenth and the last day of each month", "The employer's month-end accounting close for the preceding pay period", "The first business day following the end of each fourteen-day pay period"],
+            correctIndex: 0,
+            explanation: "Every fourteen days is two whole weeks, so the payday keeps its day of the week and drifts one calendar day earlier each year.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "What is a semimonthly payday anchored to?",
+            options: ["Dates", "A weekday, so that the payment never falls on a Saturday or a Sunday", "The number of hours worked since the previous payment was issued", "The date the employer receives its own receipts for the period in question"],
+            correctIndex: 0,
+            explanation: "Twice within each calendar month means fixed dates, such as the fifteenth and the last day, which is why such a payday lands on weekends regularly.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "How many three-paycheck months does a biweekly schedule produce in a year?",
+            options: ["Two", "None, because a fortnightly schedule always produces exactly two paydays a month", "Four, one in each quarter, because twenty-six divides evenly into four groups", "Six, because half the months of the year contain an extra payment date"],
+            correctIndex: 0,
+            explanation: "Twenty-six across twelve months averages a little over two per month, so two months carry three paydays and ten carry two.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "How many three-paycheck months does a semimonthly schedule produce?",
+            options: ["None", "Two, matching the pattern that a fortnightly payment schedule produces each year", "One, in the month that contains an extra calendar day beyond the usual thirty", "Three, in each of the months that contain thirty-one days rather than thirty"],
+            correctIndex: 0,
+            explanation: "Twenty-four across twelve is exactly two, every month, forever.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "What does the course say a three-paycheck month actually is?",
+            options: ["The same total in more pieces", "Additional compensation the employer provides twice in each calendar year", "A correction for the two months in which only one payment was made", "Evidence that the employer has changed the pay frequency during the year"],
+            correctIndex: 0,
+            explanation: "The annual total is unchanged. Only the dates the pieces land on have changed.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "Why does the number of paydays between one rent day and the next vary on a biweekly schedule?",
+            options: ["26 does not divide evenly into 12", "Because rent is due on a different day of the week in each calendar month", "Because employers adjust the payday when a month contains thirty-one days", "Because the availability schedule delays some deposits by an extra business day"],
+            correctIndex: 0,
+            explanation: "A fortnightly wage is 26 events a year and a monthly bill is 12, so the relationship changes every month without anyone deciding anything.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "In what way do the two schedules break in opposite directions?",
+            options: ["One hits weekends, the other drifts through the month", "One produces three-paycheck months and the other produces three-bill months", "One is set by state law and the other is set by the employer's own policy", "One is anchored to the pay period and the other to the date wages are earned"],
+            correctIndex: 0,
+            explanation: "A semimonthly payday is a date, so it lands on weekends and holidays; a biweekly payday is a weekday, so it walks around the month instead.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "In the worked example, a biweekly payday falls on Friday the 3rd of January. What are the next two paydays?",
+            options: ["The 17th and the 31st", "The 15th and the 31st, because a fortnightly schedule tracks the middle and the end", "The 10th and the 17th, because a fortnightly schedule pays every seven days", "The 1st and the 15th of February, because the pattern resets each calendar month"],
+            correctIndex: 0,
+            explanation: "Fourteen days after the 3rd is the 17th and fourteen days after that is the 31st, after which the pattern continues into February.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "What does the course say about the incompatibility of fourteen and thirty?",
+            options: ["No amount of planning makes them compatible", "It disappears in months containing exactly twenty-eight days rather than thirty", "It can be corrected by asking an employer to move the payday to a fixed date", "It is the reason state payday statutes require semimonthly rather than fortnightly pay"],
+            correctIndex: 0,
+            explanation: "The numbers are simply not compatible, which is why the course frames the situation as a map to draw rather than a problem to fix.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "What exercise does the pay-frequency lesson set instead of giving advice?",
+            options: ["Count your paydays and your dated obligations", "Choose the pay frequency that produces the fewest gaps for your obligations", "Negotiate with your employer for a payday closer to your largest monthly bill", "Move each dated obligation to the day immediately following a payday"],
+            correctIndex: 0,
+            explanation: "Count both lists for the next twelve months and look at where they sit relative to each other. Section 6 turns that into the exercise.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "Does federal wage-and-hour law set how often an employee must be paid?",
+            options: ["No", "Yes, it requires payment at least semimonthly for all covered non-exempt employees", "Yes, it requires weekly payment for any employee who works overtime hours", "Only for employees whose wages are paid by direct deposit rather than by check"],
+            correctIndex: 0,
+            explanation: "The regulations presume a regular pay day exists and measure other duties against it, leaving frequency to state law.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "What does 29 CFR 778.106 say about when overtime compensation must be paid?",
+            options: ["On the regular pay day for the period", "Within seven calendar days of the end of the workweek in which it was earned", "Weekly, separately from the employee's ordinary wages for the same period", "On the last business day of the month in which the overtime was worked"],
+            correctIndex: 0,
+            explanation: "The general rule is that overtime earned in a particular workweek must be paid on the regular pay day for the period in which that workweek ends.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "What does the federal overtime-timing rule take for granted?",
+            options: ["That a regular pay day exists", "That every employer pays its employees at least once in each calendar week", "That the employee has agreed in writing to the frequency of payment", "That the state in which the work is performed has no payday statute"],
+            correctIndex: 0,
+            explanation: "It regulates payment relative to a regular pay day and says nothing about how often that day comes around.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Under California Labor Code section 204, how often are wages generally due?",
+            options: ["Twice during each calendar month", "Every fourteen days, on a weekday designated in advance by the employer", "Weekly, within seven calendar days of the end of the week worked", "Monthly, on or before the twenty-sixth day of the month in every case"],
+            correctIndex: 0,
+            explanation: "The statute requires payment twice during each calendar month, on days designated in advance by the employer as the regular paydays.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Under California Labor Code section 204, when is labour performed between the 1st and the 15th payable?",
+            options: ["Between the 16th and the 26th", "Between the 1st and the 10th of the following calendar month, after the period closes", "On the last day of the same month in which the labour was actually performed", "Within seven calendar days of the end of the half-month in which it was earned"],
+            correctIndex: 0,
+            explanation: "Labour between the 16th and the last day is payable between the 1st and the 10th of the following month.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Which employees may California allow to be paid monthly on or before the 26th?",
+            options: ["Certain salaried executive, administrative and professional employees", "Any employee who agrees in writing to a monthly rather than a semimonthly schedule", "Any employee whose entire compensation is paid by electronic direct deposit", "Any employee working fewer than twenty hours in each week of the month"],
+            correctIndex: 0,
+            explanation: "The exception applies to those covered employees where the whole month's compensation is paid on or before the 26th.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Under New York Labor Law section 191, how often must a manual worker be paid?",
+            options: ["Weekly", "Semi-monthly, on days designated in advance by the employer as regular paydays", "Every fourteen days, in line with the schedule most employers use nationally", "Monthly, provided the payment is made within seven days of the month's end"],
+            correctIndex: 0,
+            explanation: "A manual worker shall be paid weekly and not later than seven calendar days after the end of the week in which the wages are earned.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Under New York Labor Law section 191, how often must a clerical and other worker be paid?",
+            options: ["Not less frequently than semi-monthly", "Weekly, and not later than seven calendar days after the week the wages were earned", "Every fourteen days, on a weekday the employer designates in advance", "Monthly, in accordance with whatever terms of employment the parties agreed"],
+            correctIndex: 0,
+            explanation: "The statute says wages are paid in accordance with the agreed terms of employment, but not less frequently than semi-monthly.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "What decides which New York frequency rule applies to a given employee?",
+            options: ["The worker's statutory category", "The frequency the employer and the employee agreed to when the job was offered", "The number of hours the employee works in a typical calendar week", "Whether the employee is paid by check or by electronic direct deposit"],
+            correctIndex: 0,
+            explanation: "Manual worker and clerical and other worker are classifications, and which one applies is a legal question about the job rather than a negotiated term.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "What does the course call the single most transferable point of the payday-statute lesson?",
+            options: ["Frequency can turn on a worker category", "That every state requires payment at least twice in each calendar month", "That federal law overrides a state payday statute wherever the two conflict", "That an employer may set any frequency it discloses in advance in writing"],
+            correctIndex: 0,
+            explanation: "In several states the answer to how often you must be paid begins with what kind of worker you are, and the statute settles that.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "What do both worked payday statutes actually regulate, beyond frequency?",
+            options: ["A lag", "The minimum wage payable for each hour worked during the pay period", "The method by which wages must be delivered to the employee", "The number of hours an employee may work before a payment becomes due"],
+            correctIndex: 0,
+            explanation: "New York caps the manual-worker lag at seven calendar days and California's windows allow roughly eleven days after a half-month closes.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "What is the distinction the lesson draws between a pay period and a payday?",
+            options: ["One is the work covered, the other is the date paid", "One is set by state law and the other is set by the employer's own policy", "One applies to hourly employees and the other to salaried employees", "One is measured in calendar days and the other in business days"],
+            correctIndex: 0,
+            explanation: "The gap between them is a timing fact with a number attached, written in a statute anyone can open.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Why does this course print no fifty-state table of payday rules?",
+            options: ["It would be wrong somewhere within a year", "Because state payday statutes are not published in a form that can be quoted", "Because federal law preempts state payday statutes for most covered employers", "Because most states have adopted the same model payday statute already"],
+            correctIndex: 0,
+            explanation: "The statutes differ in frequency, categories, lag, holiday treatment and penalty, and a stale table goes on being read anyway.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Which three facts does the course tell you to take from your own state's payday statute?",
+            options: ["Frequency, category, maximum lag", "Minimum wage, overtime multiplier, and the deadline for a final paycheck", "The employer's registration number, the filing deadline, and the penalty schedule", "The definition of a business day, the cut-off hour, and the availability period"],
+            correctIndex: 0,
+            explanation: "Those three come from one document and are what feed the mapping exercise in Section 6.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Under 20 CFR 404.1807, when is an insured individual born on the 5th of a month paid?",
+            options: ["The second Wednesday", "The third Wednesday, which covers birth dates in the middle third of the month", "The fourth Wednesday, which covers birth dates after the twentieth", "The first Wednesday, which covers birth dates in the first ten days"],
+            correctIndex: 0,
+            explanation: "Those born on the 1st through the 10th are paid on the second Wednesday of each month.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "Under 20 CFR 404.1807, when is an insured individual born on the 15th of a month paid?",
+            options: ["The third Wednesday", "The second Wednesday, which covers birth dates in the first ten days of the month", "The fourth Wednesday, which covers birth dates falling after the twentieth", "The first Wednesday, because the middle bracket begins earlier in the month"],
+            correctIndex: 0,
+            explanation: "Those born on the 11th through the 20th are paid on the third Wednesday of each month.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "Under 20 CFR 404.1807, when is an insured individual born on the 27th of a month paid?",
+            options: ["The fourth Wednesday", "The second Wednesday, because the last bracket wraps back to the start of the month", "The third Wednesday, which covers every birth date from the eleventh onward", "The last banking day of the month, whatever day of the week that happens to be"],
+            correctIndex: 0,
+            explanation: "Those born after the 20th are paid on the fourth Wednesday of each month.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "What decides the payment date under that regulation?",
+            options: ["A date of birth", "The order in which applications for benefits were received by the agency", "The state in which the beneficiary resided when the claim was first approved", "The day of the month on which the first benefit payment was originally made"],
+            correctIndex: 0,
+            explanation: "Three brackets of birth dates map to three Wednesdays, published in the Code of Federal Regulations and applying every month.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "What happens if the scheduled delivery day falls on a Saturday, Sunday or Federal legal holiday?",
+            options: ["Payment moves to the first preceding day", "Payment moves to the next following day that is not one of those three", "Payment is made on the same day, since electronic delivery is unaffected", "Payment is deferred to the corresponding Wednesday of the following month"],
+            correctIndex: 0,
+            explanation: "The regulation says the first preceding day that is not a Saturday, Sunday or Federal legal holiday, so the payment moves earlier.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "Which direction does the substitution rule move a benefit payment?",
+            options: ["Earlier", "Later, to the first following weekday that is not a Federal legal holiday", "Either way, at the discretion of the agency administering the programme", "It does not move it, because payments are delivered on weekends as well"],
+            correctIndex: 0,
+            explanation: "That is the opposite of what most people assume a calendar collision does.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "Which holiday list does the benefit-payment regulation use?",
+            options: ["The Federal legal holidays", "Regulation CC's list of ten named dates excluded from business days", "A list published annually by the agency administering the benefit programme", "The holidays observed by the Federal Reserve Banks for settlement purposes"],
+            correctIndex: 0,
+            explanation: "It refers to a Federal legal holiday, and those are the eleven listed in 5 U.S.C. 6103(a), Juneteenth among them.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "What does the comparison of the two holiday lists show?",
+            options: ["Two rules, two lists, one calendar", "That the benefit regulation is inconsistent with the funds-availability regulation", "That Regulation CC must be read as incorporating the federal holiday statute", "That a Federal legal holiday can never be a business day under any federal rule"],
+            correctIndex: 0,
+            explanation: "A Wednesday June 19 moves a benefit payment earlier under one rule while still counting as a business day under the other, because the documents do different jobs.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "What property of the benefit-payment schedule does the lesson say is the actual point?",
+            options: ["It is computable a year ahead", "It guarantees that funds will be available on the morning of the payment day", "It gives the beneficiary a right to demand payment on an earlier date", "It applies identically to every federal and state benefit programme"],
+            correctIndex: 0,
+            explanation: "A date fixed by a published rule and a birth date can be worked out by anybody, with no phone call and no account access.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "How does the lesson divide a household's expected arrivals?",
+            options: ["Calendar against forecast", "Wages against benefits, because the two are governed by different bodies of law", "Electronic against paper, because the two clear on different schedules", "Recurring against one-off, because only recurring arrivals can be planned"],
+            correctIndex: 0,
+            explanation: "Arrivals fixed by a published rule or a fixed date are a calendar; everything else is a forecast, and treating a forecast as a calendar is where timing trouble starts.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "Which of these does the lesson class as a forecast rather than a calendar?",
+            options: ["A variable commission", "A semimonthly payday anchored to the fifteenth and the last day of the month", "A benefit payment date assigned by a published regulation and a birth date", "A biweekly payday anchored to a fixed weekday every fourteen days"],
+            correctIndex: 0,
+            explanation: "A commission, a reimbursement and an item still being collected all depend on somebody else's processing.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "What limit does the benefit lesson state about its own scope?",
+            options: ["It quotes one regulation about one programme", "It applies to every federal benefit but not to state-administered programmes", "It describes the schedule as it stood before the most recent statutory amendment", "It covers monthly payments only, and says nothing about how a payment is delivered"],
+            correctIndex: 0,
+            explanation: "Other programmes and agencies have their own rules, and the course has not read them and will not guess at them.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "What does the lesson say is the transferable skill from the benefit-date rule?",
+            options: ["Knowing a published rule probably exists", "Memorising the three birth-date brackets and the Wednesday each one maps to", "Calculating the availability period for a benefit payment once it is deposited", "Comparing the benefit schedule with the employer's own payroll calendar"],
+            correctIndex: 0,
+            explanation: "It is the same move as finding a payday statute or a bank's availability policy: go and find the document.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "How many paydays a year does a weekly schedule produce?",
+            options: ["52", "26, because a weekly schedule pays on alternate weeks through the year", "48, because four weeks in each of twelve months gives forty-eight payments", "24, matching the count produced by a semimonthly payment schedule"],
+            correctIndex: 0,
+            explanation: "One payment in each week of the year. The four counts in this lesson are 52, 26, 24 and 12.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "How many paydays a year does a monthly schedule produce?",
+            options: ["12", "24, because a monthly schedule pays twice in each calendar month by convention", "13, because a year contains thirteen four-week periods rather than twelve months", "26, because monthly and fortnightly schedules produce the same annual count"],
+            correctIndex: 0,
+            explanation: "One payment in each calendar month. It is the fourth of the four counts and the least common of them.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "Why does a biweekly payday keep the same day of the week forever?",
+            options: ["Fourteen days is two whole weeks", "Because employers are required by statute to designate a fixed weekday in advance", "Because payroll systems round the payment date to the nearest banking day", "Because a fortnight is defined in wage regulations as a fixed weekday interval"],
+            correctIndex: 0,
+            explanation: "Twenty-six times fourteen is 364, which is why the payday drifts one calendar day earlier each year and two after a leap day.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "Which pay schedule regularly puts a payday on a Saturday or a Sunday?",
+            options: ["Semimonthly", "Biweekly, because a fortnightly cycle passes through every day of the week", "Weekly, because the payday advances by one day in each successive week", "None of them, because payroll systems always move a payday to a weekday"],
+            correctIndex: 0,
+            explanation: "A semimonthly payday is a date, so it lands on weekends and holidays regularly and something has to happen when it does.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "What does the course refuse to tell a reader in the pay-frequency lesson?",
+            options: ["What to do about the mismatch", "How many paydays each of the four schedules produces in a year", "Which day of the week a fortnightly payday will fall on next year", "How a state payday statute defines the categories of worker it covers"],
+            correctIndex: 0,
+            explanation: "The course gives no financial advice and does not know a reader's obligations. It gives the map and the arithmetic.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "Which document answers the question of how often you must be paid?",
+            options: ["A state payday statute", "The federal wage-and-hour regulations, which fix a minimum national frequency", "The employer's payroll policy, which may set any frequency it chooses", "The account agreement with the bank that receives the direct deposit"],
+            correctIndex: 0,
+            explanation: "Federal law presumes a regular pay day and leaves frequency to the states, which answer differently from one another.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "New York caps the lag for a manual worker at how long?",
+            options: ["Seven calendar days", "Eleven days, matching the outer limit of California's semimonthly payment windows", "Fourteen days, matching the interval between two fortnightly paydays", "Thirty calendar days from the end of the month in which the work was performed"],
+            correctIndex: 0,
+            explanation: "Payment is due weekly and not later than seven calendar days after the end of the week in which the wages are earned.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Which of these is an accurate description of California's semimonthly windows?",
+            options: ["Roughly eleven days after a half-month closes", "Payment on the last calendar day of the half-month in which the work was done", "Payment within seven calendar days of the end of each half-month period", "Payment on the first banking day following the close of each half-month"],
+            correctIndex: 0,
+            explanation: "The 1st through the 15th is payable between the 16th and the 26th, and the 16th through the last day between the 1st and the 10th of the next month.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "What is the effect of a payday statute naming categories of worker?",
+            options: ["Classification decides the frequency", "The employer may choose whichever category produces the most convenient schedule", "The employee may elect a category when accepting the offer of employment", "The categories apply only to employees exempt from federal overtime rules"],
+            correctIndex: 0,
+            explanation: "Which category a job falls into is a legal question about the job, not a term either party negotiated.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "How does the course describe the relationship between the benefit rule and Section 1's counting rules?",
+            options: ["Different documents doing different jobs", "A contradiction that one of the two rules will eventually have to resolve", "An indication that the benefit regulation takes precedence over Regulation CC", "Proof that federal holidays are counted identically across all federal rules"],
+            correctIndex: 0,
+            explanation: "The benefit rule uses the eleven Federal legal holidays and Regulation CC uses its own ten named dates, and both are correct within their own texts.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "Which of these is a computable arrival, on the lesson's definition?",
+            options: ["A benefit date under a published rule", "A reimbursement expected once an employer approves a submitted expense claim", "A check deposit whose availability depends on whether an exception is invoked", "A commission that varies with the volume of sales closed in the period"],
+            correctIndex: 0,
+            explanation: "A computable arrival is fixed by a published rule or a fixed date; the others depend on somebody else's processing.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "Why does the course call the confusion of a forecast with a calendar expensive?",
+            options: ["It is where most timing trouble starts", "Because a forecast is always later than the calendar date it was mistaken for", "Because a bank may charge a fee for relying on an estimated arrival date", "Because a forecast cannot be recorded on a payment map at all"],
+            correctIndex: 0,
+            explanation: "Telling the two apart costs nothing and prevents planning around an arrival nobody has promised on a date.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "What does the pay-frequency lesson say needs no citation?",
+            options: ["The four annual counts", "The category of worker that a state payday statute assigns to a given job", "The window within which California requires a half-month's wages to be paid", "The rule that moves a benefit payment when it falls on a weekend"],
+            correctIndex: 0,
+            explanation: "Fifty-two, twenty-six, twenty-four and twelve are arithmetic, and it is the most load-bearing arithmetic in the course.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "A worker is paid biweekly and rent is due on the first. What does the course say about the number of paydays between successive rent days?",
+            options: ["It is not constant", "It is always two, because a fortnightly schedule produces two paydays a month", "It is always three, because a month is longer than two fourteen-day periods", "It depends on whether the bank treats the payday as a business day"],
+            correctIndex: 0,
+            explanation: "Sometimes two and sometimes three, and the relationship changes every month by design without anyone deciding anything.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "What does the course say a semimonthly schedule does to the payday-to-bill relationship?",
+            options: ["It does not change it", "It changes it every month, because dates fall on different weekdays each time", "It changes it twice a year, in the months containing an extra payday", "It changes it whenever the bill's due date falls on a weekend or holiday"],
+            correctIndex: 0,
+            explanation: "Both the wage and the bill are anchored to dates, so the relationship between them stays fixed.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "Which of these best describes what a payday statute is, in this course's terms?",
+            options: ["A mechanism with a number in it", "A voluntary standard that most employers within a state have agreed to follow", "A federal rule administered separately by each state's labour department", "A summary of the terms an employer must include in an employment contract"],
+            correctIndex: 0,
+            explanation: "It has a frequency, a category and a lag, all stated in a document a person can open, which is exactly why timing is teachable and budgeting is not.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "How does a benefit-payment schedule differ from most arrivals in a household's month?",
+            options: ["It does not depend on anyone's processing", "It arrives on the same weekday as the recipient's biweekly payroll deposit", "It is guaranteed to be available for withdrawal on the day it is delivered", "It may be moved at the recipient's request to a more convenient date"],
+            correctIndex: 0,
+            explanation: "Most arrivals depend on somebody else's processing and most obligations on a due date somebody else chose. A published rule plus a birth date is neither.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "Which two anchors does this section identify for a payday?",
+            options: ["A weekday or a date", "A pay period or a bank's cut-off hour for receiving deposits", "A statute or an employer's internal payroll policy document", "A calendar month or a fourteen-day accounting cycle"],
+            correctIndex: 0,
+            explanation: "Biweekly is anchored to a weekday and semimonthly to dates, and every consequence in the lesson follows from that difference.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "What must a semimonthly payroll system have a rule for that a biweekly one does not?",
+            options: ["A payday landing on a weekend", "A month in which three paydays fall rather than the usual two", "A pay period that begins and ends on different days of the week", "A payday that drifts one calendar day earlier in each successive year"],
+            correctIndex: 0,
+            explanation: "A date-anchored payday lands on Saturdays, Sundays and holidays regularly, so something has to happen when it does.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "Which of these does the course treat as the durable half of what it says about pay frequency?",
+            options: ["The arithmetic", "The proportion of employers nationally that use each of the four schedules", "The list of states that require weekly payment for manual workers", "The typical lag between a pay period and a payday across the country"],
+            correctIndex: 0,
+            explanation: "The counts are arithmetic and do not go stale, while statutes and distributions do, which is why the course teaches where to find those instead.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "What is a pay period, as this section uses the term?",
+            options: ["The span of work a payment covers", "The interval between the date a payment is issued and the date it clears the bank", "The number of days a state statute allows before wages become legally overdue", "The calendar month in which an employee's wages are reported for tax purposes"],
+            correctIndex: 0,
+            explanation: "It is not the same thing as the date the payment arrives, and the gap between the two is what the payday statutes cap.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "Which of these is the clearest reason a benefit payment date is easier to plan around than a wage?",
+            options: ["It is published as a rule", "It is always larger than a wage payment and therefore easier to track", "It is delivered by a rail that settles instantly on any day of the year", "It is exempt from the availability schedule that applies to deposits generally"],
+            correctIndex: 0,
+            explanation: "A regulation plus a birth date can be computed by anybody a year ahead, with no phone call and no account access.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "Why does the course pair the California and New York statutes rather than quoting one?",
+            options: ["They answer the same question differently", "Because the two states together cover a majority of the national workforce", "Because federal law requires every other state to follow one of the two models", "Because both were enacted in the same year and use identical definitions"],
+            correctIndex: 0,
+            explanation: "One fixes windows around half-months for everyone; the other fixes frequency by worker category. Seeing both is what shows there is no national answer.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
         ],
       },
     },
