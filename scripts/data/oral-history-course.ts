@@ -57,8 +57,8 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 :::reveal Why does the field say narrator rather than subject or interviewee? ||| Because a subject is something you study and an interviewee is somebody answering your questions, while a narrator is the author of the account. The word is a standing reminder that the story belongs to the person telling it and that you are its custodian rather than its owner. It also changes practice: it is the reason the interview follows what they have rather than a list you brought, and the reason the deed of gift is a transfer from them rather than a formality you collect.
 
 ## Sources
-- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press.
-- Oral History Association. (2018). *OHA principles and best practices*. Oral History Association.`,
+- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press. https://lccn.loc.gov/2014028835
+- Oral History Association. (2018). *OHA principles and best practices*. Oral History Association. https://oralhistory.org/principles-and-best-practices-revised-2018/`,
     },
     {
       slug: "oh-memory-as-evidence",
@@ -97,8 +97,8 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 :::reveal A narrator dates an event four years later than the documented record. What do you do in the room, and where does the discrepancy go? ||| In the room: do not argue, ask neutrally at most once ("I have seen that dated differently, do you remember it as spring or autumn?"), and record the answer exactly as they give it. The discrepancy goes in the metadata, where a future user will find it, rather than into the recording or into nowhere. The reason is the Trastulli case: a memory relocated to the moment that made sense to the community is evidence about what that community understood its history to be, and correcting it in the room would have destroyed the finding.
 
 ## Sources
-- Portelli, A. (1991). *The death of Luigi Trastulli and other stories: Form and meaning in oral history*. State University of New York Press.
-- Yow, V. R. (2015). *Recording oral history: A guide for the humanities and social sciences* (3rd ed.). Rowman & Littlefield.`,
+- Portelli, A. (1991). *The death of Luigi Trastulli and other stories: Form and meaning in oral history*. State University of New York Press. https://sunypress.edu/Books/T/The-Death-of-Luigi-Trastulli-and-Other-Stories
+- Yow, V. R. (2015). *Recording oral history: A guide for the humanities and social sciences* (3rd ed.). Rowman & Littlefield. https://lccn.loc.gov/2014029701`,
     },
     {
       slug: "oh-before-the-interview",
@@ -132,8 +132,8 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 :::reveal What is "the question you have not earned", and what does the idea imply about interview length? ||| A question about grief, failure or shame that cannot be asked at minute four but can be asked at minute ninety, because the permission to ask it is built by the intervening time. It implies that an oral history has to be long, and that the hard material belongs late in the session rather than early: an interviewer who front-loads the difficult questions is asking for a rehearsed answer, or for the session to end.
 
 ## Sources
-- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press.
-- Yow, V. R. (2015). *Recording oral history: A guide for the humanities and social sciences* (3rd ed.). Rowman & Littlefield.`,
+- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press. https://lccn.loc.gov/2014028835
+- Yow, V. R. (2015). *Recording oral history: A guide for the humanities and social sciences* (3rd ed.). Rowman & Littlefield. https://lccn.loc.gov/2014029701`,
     },
     {
       slug: "oh-quiz-1",
@@ -320,8 +320,8 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 :::reveal Why does the closing question "is there anything I did not ask about?" reliably produce surprising material? ||| Because the interview has been shaped by the interviewer's topic list, which was built from the context they researched rather than from the narrator's own sense of their life. The closing question is the only moment the narrator is invited to supply the frame instead of the answer, and by that point ninety minutes of talking has both loosened them and reminded them what they came to say. The practical rule is to ask it every time and then wait rather than treating it as a courtesy on the way out.
 
 ## Sources
-- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press.
-- Yow, V. R. (2015). *Recording oral history: A guide for the humanities and social sciences* (3rd ed.). Rowman & Littlefield.`,
+- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press. https://lccn.loc.gov/2014028835
+- Yow, V. R. (2015). *Recording oral history: A guide for the humanities and social sciences* (3rd ed.). Rowman & Littlefield. https://lccn.loc.gov/2014029701`,
     },
     {
       slug: "oh-recording-and-metadata",
@@ -359,8 +359,8 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 :::reveal Name the two things that matter most for a usable recording, and the metadata item most often skipped. ||| A microphone near the narrator's mouth and a quiet room; microphone placement outweighs every other technical choice, so a phone at a foot beats an expensive recorder across the room. The most-skipped metadata item is the time-stamped topic log, which is what makes a two-hour recording usable to someone who will not listen to the whole thing, and therefore what decides whether the interview is ever actually used.
 
 ## Sources
-- Oral History Association. (2018). *OHA principles and best practices*. Oral History Association.
-- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press.`,
+- Oral History Association. (2018). *OHA principles and best practices*. Oral History Association. https://oralhistory.org/principles-and-best-practices-revised-2018/
+- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press. https://lccn.loc.gov/2014028835`,
     },
     {
       slug: "oh-ethics-and-consent",
@@ -395,8 +395,8 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 :::reveal A narrator signed a deed of gift in 2010 for a project that deposited recordings with a local historical society. In 2026 the project wants to publish them online in full. What does the course say? ||| Go back and ask. The 2010 consent was given on the strength of what they were told, and a narrator picturing a reading room has not consented to a search result: online reach and permanence are the specific things people have no model for. It is the same consent-as-a-process rule the documentary course states, and it reaches further here because oral histories are designed to last decades, so the gap between what was described and what is now proposed can be a generation wide.
 
 ## Sources
-- Oral History Association. (2018). *OHA principles and best practices*. Oral History Association.
-- Yow, V. R. (2015). *Recording oral history: A guide for the humanities and social sciences* (3rd ed.). Rowman & Littlefield.`,
+- Oral History Association. (2018). *OHA principles and best practices*. Oral History Association. https://oralhistory.org/principles-and-best-practices-revised-2018/
+- Yow, V. R. (2015). *Recording oral history: A guide for the humanities and social sciences* (3rd ed.). Rowman & Littlefield. https://lccn.loc.gov/2014029701`,
     },
     {
       slug: "oh-transcription",
@@ -430,8 +430,8 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 :::reveal Why does this course recommend never standardising a narrator's grammar or dialect, and what is the general rule about transcript versus audio? ||| Because rewriting how someone speaks into how you think they should have spoken erases the person, and it falls disproportionately on working-class and minority-language narrators, which makes it the most patronising thing an oral historian can do. The general rule is that a transcript is a derivative and a finding aid: where transcript and audio disagree, the audio is the record, and that should be stated in the front matter so a future user knows which object they are citing.
 
 ## Sources
-- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press.
-- Oral History Association. (2018). *OHA principles and best practices*. Oral History Association.`,
+- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press. https://lccn.loc.gov/2014028835
+- Oral History Association. (2018). *OHA principles and best practices*. Oral History Association. https://oralhistory.org/principles-and-best-practices-revised-2018/`,
     },
     {
       slug: "oh-quiz-2",
@@ -630,10 +630,10 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
 :::reveal Without looking back, state the Trastulli finding and the practice it produces. ||| Terni workers remembered Luigi Trastulli dying at the 1953 mass layoffs rather than the 1949 demonstration where he was actually killed, because the layoffs were where his death made sense in the community's own history; Portelli argued the error was the most valuable thing in the recording. The practice: do not argue in the room, ask a neutral clarifying question at most once, record the account exactly as given, and put the divergence in the metadata where a future user will find it rather than in the recording or in nowhere.
 
 ## Sources
-- Oral History Association. (2018). *OHA principles and best practices*. Oral History Association.
-- Portelli, A. (1991). *The death of Luigi Trastulli and other stories: Form and meaning in oral history*. State University of New York Press.
-- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press.
-- Yow, V. R. (2015). *Recording oral history: A guide for the humanities and social sciences* (3rd ed.). Rowman & Littlefield.`,
+- Oral History Association. (2018). *OHA principles and best practices*. Oral History Association. https://oralhistory.org/principles-and-best-practices-revised-2018/
+- Portelli, A. (1991). *The death of Luigi Trastulli and other stories: Form and meaning in oral history*. State University of New York Press. https://sunypress.edu/Books/T/The-Death-of-Luigi-Trastulli-and-Other-Stories
+- Ritchie, D. A. (2015). *Doing oral history* (3rd ed.). Oxford University Press. https://lccn.loc.gov/2014028835
+- Yow, V. R. (2015). *Recording oral history: A guide for the humanities and social sciences* (3rd ed.). Rowman & Littlefield. https://lccn.loc.gov/2014029701`,
     },
   ],
 };
