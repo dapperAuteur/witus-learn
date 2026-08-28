@@ -3168,5 +3168,1032 @@ United States Postal Service. (2026). *Money orders*. https://www.usps.com/shop/
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — Distance, saving, and reading your own account
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-bank-desert",
+      title: "21 · The bank desert, and who a branch closure is for",
+      section: "Section 6 · Distance, saving, and reading your own account",
+      body: `Sixteen point three percent of unbanked households in 2023 cited inconvenient bank locations as a reason (FDIC, 2024). That is a geographic fact, and geography can be measured.
+
+**The Federal Reserve system publishes the measurement.** The Banking Deserts Dashboard, hosted by Fed Communities, defines a **banking desert** as "a census tract without a bank branch located within it or within a certain radius from its population center". The radius depends on the kind of community: **2 miles for urban, 5 miles for suburban, 10 miles for rural** (Barca & Flynn, 2025).
+
+**And it defines a second category, which is the more useful one.** A **potential banking desert** is "a census tract that can become a banking desert if one bank branch closes."
+
+**Sit with that definition for a moment.** It describes a place where the entire physical banking infrastructure is one branch, and where a routine business decision at a distant head office removes it. Nobody in that tract is consulted, and nobody there did anything to cause it.
+
+**The counts, read on 28 August 2026:** "12.3 million Americans currently live in areas defined as banking deserts. Another 11.1 million Americans live in potential banking deserts" (Barca & Flynn, 2025). The dashboard carries tract-level data from 2019 to 2025.
+
+**Now the objection, which deserves a real answer.** Does a branch matter, when banking is on a phone? The FDIC's own access data says it depends entirely on who you are. In 2023, **15.1 percent** of banked households used a bank teller as their primary method of account access, and **48.3 percent** used mobile banking. But split by income: teller-first was **27.4 percent** among households earning under $15,000 and **8.2 percent** among those earning at least $75,000. Split by education, teller-first was **32.4 percent** among households without a high school diploma and **8.8 percent** among households with a college degree (FDIC, 2024).
+
+**So the branch is used most by exactly the households the rest of this course has been about.** A closure is close to costless for a household that has not been inside one in three years, and it is a real loss for a household that uses the counter. The average is not the experience.
+
+**Two more things the definition teaches, and they generalise.**
+
+**First, a threshold defines a finding.** Change 10 miles to 15 for rural tracts and the number of deserts falls. The definition is a choice, it is published, and you can read it. That is the same lesson Section 4 drew from the CFPB's $1 billion call-report threshold.
+
+**Second, the potential-desert count is a forecast made from a structure rather than from a trend.** It does not predict that branches will close. It says how much of the map is one decision away from having none. That is a different and more honest kind of claim than a projection.
+
+**And a boundary.** Distance is only half of access. A tract with three branches and an unbanked rate of twenty percent is not solved by a fourth. Everything in Sections 1, 3 and 4 still applies inside a place with plenty of branches.
+
+:::reveal How does the Fed Communities dashboard define a banking desert? ||| A census tract with no bank branch in it or within a set radius of its population center: 2 miles urban, 5 suburban, 10 rural.
+
+:::reveal What is a potential banking desert? ||| A tract that becomes a banking desert if one bank branch closes.
+
+:::reveal Why does a branch closure land unevenly? ||| Teller-first access ran 27.4 percent among households under $15,000 in income against 8.2 percent among those at $75,000 or more, so the counter is used most by the households with the least.
+
+## Vocabulary
+- **Banking desert**: a census tract with no bank branch within a distance threshold set by community type, as defined by the Fed Communities dashboard.
+- **Potential banking desert**: a tract one branch closure away from being a desert, which measures fragility rather than predicting a trend.
+- **Population center**: the point in a tract from which the distance to the nearest branch is measured.
+- **Primary method of account access**: the FDIC's measure of how a banked household mainly reaches its account, which splits sharply by income and education.
+- **A threshold defines a finding**: the general lesson, since changing the mileage rule changes the count without anything on the ground moving.
+
+## Sources
+Barca, A., & Flynn, C. (2025, January 15). *The last bank branch standing*. Fed Communities. https://fedcommunities.org/the-last-bank-branch-standing/
+
+Fed Communities. (2025). *Banking deserts dashboard*. https://fedcommunities.org/data/banking-deserts-dashboard/
+
+Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national survey of unbanked and underbanked households* (Table 2.2). https://www.fdic.gov/household-survey`,
+    },
+    {
+      slug: "saving-is-a-distribution",
+      title: "22 · Saving is a distribution, not a character trait",
+      section: "Section 6 · Distance, saving, and reading your own account",
+      body: `Every course like this one is expected to end with advice about saving. This one ends with a measurement instead, because the measurement is more useful and it is the only thing here that is not somebody's opinion.
+
+**The instrument is the Federal Reserve's Survey of Household Economics and Decisionmaking**, published annually as *Economic Well-Being of U.S. Households*. The most recent edition when this lesson was written was the **2025 report, published in May 2026**, from a survey fielded in **October 2025** (Board of Governors, 2026).
+
+**Its best-known question is a hypothetical about a small emergency.** Faced with a hypothetical **$400** expense, respondents are asked how they would pay for it. The report groups **cash, savings, and a credit card paid off at the next statement** together as "cash or its equivalent".
+
+**The 2025 findings, read on 28 August 2026:**
+
+- **63 percent** of adults said they would cover a $400 emergency expense **exclusively** using cash or its equivalent, unchanged from 2024.
+- **12 percent** said they would be **unable to pay the expense by any method**.
+- **70 percent** said they could pay an expense of at least **$500** using only current savings (Board of Governors, 2026).
+
+**Read the 63 and the 12 as two different facts, because they are.** The 63 percent is about method: most adults would reach for money they already have. The 12 percent is about capacity: for roughly one adult in eight, a four-hundred-dollar problem has no solution at all, by any route, including borrowing.
+
+**Now the sentence this whole lesson exists to make possible.** "Just save an emergency fund" is not instruction. It is a description of an outcome, offered to people sorted by whether they can reach it. A household paying the fees from Sections 4 and 5 is spending the emergency fund it is being told to build, on the machinery of not having one.
+
+**And that connection is not rhetorical, it is the sequence from Section 4.** Rent due on the first, pay on the fifth, a per-item fee for the gap. A cushion prevents the fee. The fee prevents the cushion. Which end of that loop a household starts on is mostly not a decision it made.
+
+**What is actually teachable here, and it is not advice.** Two things.
+
+**One: know the difference between having money and having access to it on a given day.** A balance in a savings account you can move today and a paycheck arriving on Friday are not the same asset for a bill due on Wednesday. Everything in Section 5 was about that difference being worth money.
+
+**Two: the survey question is a good one to run on yourself, privately.** Not to feel a particular way about the answer, but because it converts a vague worry into a number and a method. What would I use, and how fast can I get it?
+
+${NOT_ADVICE}
+
+**This course will not tell you how much to save, over what period, or in what.** It will tell you that where you sit in that distribution is a fact about a system with fee structures, timing rules and gates in it, all of which you have now read.
+
+:::reveal What counts as "cash or its equivalent" in the SHED question? ||| Cash, savings, or a credit card paid off at the next statement.
+
+:::reveal What share of adults said they would be unable to pay a $400 emergency expense by any method? ||| 12 percent, in the survey fielded in October 2025 and published in May 2026.
+
+:::reveal Why is "just save an emergency fund" not instruction? ||| It describes an outcome rather than a method, and the fee structures in this course spend the cushion that would prevent them.
+
+## Vocabulary
+- **Survey of Household Economics and Decisionmaking**: the Federal Reserve's annual household survey, published as Economic Well-Being of U.S. Households.
+- **Cash or its equivalent**: the survey's grouping of cash, savings, and a credit card paid off at the next statement.
+- **Unable by any method**: the survey category for adults who could not cover the hypothetical expense at all, including by borrowing.
+- **Access on a given day**: the distinction between holding money and being able to spend it before a bill is due, which is what the substitute market charges for.
+- **The loop**: the relationship in which a cushion prevents fees and fees prevent a cushion, so which end a household starts on is largely not a choice.
+
+## Sources
+Board of Governors of the Federal Reserve System. (2026, May). *Economic well-being of U.S. households in 2025*. https://www.federalreserve.gov/consumerscommunities/shed.htm
+
+Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national survey of unbanked and underbanked households*. https://www.fdic.gov/household-survey`,
+    },
+    {
+      slug: "read-your-own-account",
+      title: "23 · Read your own account: what this course leaves you able to do",
+      section: "Section 6 · Distance, saving, and reading your own account",
+      body: `Everything in this course was a document somebody is required to produce. Here is the list, in the order you would actually use it.
+
+**One. Get the price before you buy.** Under **12 CFR 1030.4(a)(2)** you may ask any depository institution for its account disclosures without opening anything. Do it at two, and compare four lines: the monthly maintenance fee, every stated way to waive it, the overdraft and non-sufficient-funds fee, and how many of those may be charged in one day.
+
+**Two. Find out whether you are opted in.** Under **12 CFR 1005.17(b)** an institution needed your affirmative consent before charging an overdraft fee on an **ATM or one-time debit card** transaction, and its confirmation had to tell you the consent can be revoked. Check which way yours is set. Remember the boundary from Section 4: checks, automated clearing house payments and recurring card payments were never inside that rule, so the setting does not cover them.
+
+**Three. Read your own screening file before anyone else does.** Under **15 U.S.C. 1681j(a)(1)(A)** you may obtain a free file disclosure from a nationwide specialty consumer reporting agency **once every twelve months, on request**, with no denial and no reason required. Do it before you apply somewhere, not after.
+
+**Four. If you are declined, the letter is the useful part.** Under **15 U.S.C. 1681m(a)** it must name the reporting agency, must say that agency did not make the decision, and must tell you about your right to a free copy and to dispute. Under **1681j(b)** you then have **60 days** to request that copy free. Under **1681i** a dispute triggers a reinvestigation, generally within 30 days, and anything the agency cannot verify must be deleted or modified.
+
+**Five. Price any substitute in the same units.** Find your state's check-casher rule from your own state regulator, read the provider's posted fee, and ask the Section 5 question: what does it cost to make this amount usable this week? Compare that with what your own account actually charged you last month, from your statement rather than from memory.
+
+**And one place to complain, free.** The Consumer Financial Protection Bureau accepts complaints about checking and savings accounts, prepaid cards, credit reporting and personal consumer reports, and money transfers. Its own page, read on **28 August 2026** and last modified 15 July 2026, says companies "generally respond in 15 days", with a final response in 60 days in some cases (CFPB, 2026). Complaints are published in a public database with your identifying details removed.
+
+**What not to do, and this one is worth saying plainly.** Nobody needs to be paid to obtain or dispute your screening file. The disclosure is free by statute and the dispute is free by statute. A company charging to do either is charging you for a form.
+
+${NOT_ADVICE}
+
+**Where this course ends and others begin.** Credit reports, credit scores and the decision to lend belong to the credit course in this series, and this one deliberately did not teach them. **Cooperatives** teaches the credit union as an entity. **Financing Without Access** teaches what people built when the capital system excluded them, which is the historical version of this whole subject. **Banking & Money When You Live Abroad** owns the non-resident case.
+
+**The three questions to carry away, which work on a product this course never mentioned.** Who decides, and from what document? What does it cost, and can I read that before I commit? And when it goes against me, what am I entitled to be told?
+
+:::reveal Which regulation lets you obtain account disclosures without opening an account? ||| 12 CFR 1030.4(a)(2), which requires a depository institution to provide them upon request.
+
+:::reveal How long after an adverse action notification do you have to request a free report? ||| Sixty days, under 15 U.S.C. 1681j(b).
+
+:::reveal Why should nobody be paid to dispute a screening file for you? ||| The file disclosure and the dispute are both free by statute, so the charge is for filling in a form.
+
+## Vocabulary
+- **Disclosure on request**: the Truth in Savings right that makes the price of an account readable before any commitment.
+- **Opt-in status**: whether a consumer has consented to overdraft coverage on ATM and one-time debit card transactions, and a setting the confirmation said could be revoked.
+- **Pre-application file check**: obtaining your own screening disclosure before applying anywhere, using the annual free right rather than waiting for a denial.
+- **The sixty-day window**: the period after an adverse action notification in which a free report may be requested.
+- **The three questions**: who decides and from what document, what it costs and whether that is readable in advance, and what you are entitled to be told when the answer is no.
+
+## Sources
+Consumer Financial Protection Bureau. (2026, July 15). *Submit a complaint*. https://www.consumerfinance.gov/complaint/
+
+Consumer Financial Protection Bureau. (n.d.). *12 CFR 1030.4 - Account disclosures*. https://www.consumerfinance.gov/rules-policy/regulations/1030/4/
+
+15 U.S.C. § 1681j. (n.d.). *Charges for certain disclosures*. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section1681j&num=0&edition=prelim`,
+    },
+    {
+      slug: "quiz-distance-saving-and-reading",
+      title: "24 · Knowledge check: distance, saving, and the method",
+      section: "Section 6 · Distance, saving, and reading your own account",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How is a banking desert defined by the Fed Communities dashboard?",
+            options: ["A tract with no branch within a set radius", "A county in which the total number of bank branches has fallen over five years", "A neighbourhood where the unbanked rate exceeds the national average by ten points", "An area in which no institution offers a certified low-cost transaction account"],
+            correctIndex: 0,
+            explanation: "The measure is a census tract with no branch in it or within a distance of its population center, and the distance depends on community type.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What radius applies to an urban tract in that definition?",
+            options: ["2 miles", "5 miles, which is the threshold applied to suburban tracts rather than urban ones", "10 miles, which is the threshold applied to rural tracts", "1 mile, matching the walking distance the dashboard treats as reasonable"],
+            correctIndex: 0,
+            explanation: "The thresholds are 2 miles urban, 5 miles suburban and 10 miles rural.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What radius applies to a rural tract?",
+            options: ["10 miles", "2 miles, which is the threshold used for urban tracts", "5 miles, which is the threshold used for suburban tracts", "25 miles, reflecting the greater distances typical of rural counties"],
+            correctIndex: 0,
+            explanation: "The threshold rises with the kind of community, from 2 miles urban through 5 suburban to 10 rural.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What is a potential banking desert?",
+            options: ["A tract one branch closure away from being one", "A tract whose only branch has announced a closure date within the coming year", "A tract that was a banking desert in a previous year and may become one again", "A tract with branches but with an unbanked rate above the national average"],
+            correctIndex: 0,
+            explanation: "It measures how much of the map has its entire physical banking infrastructure resting on a single branch.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "How many Americans did the dashboard report living in banking deserts?",
+            options: ["12.3 million", "11.1 million, which was the figure for potential banking deserts rather than actual ones", "5.6 million, which was the number of unbanked households in the FDIC's 2023 survey", "23.4 million, which is the sum of the two categories rather than either one"],
+            correctIndex: 0,
+            explanation: "Another 11.1 million lived in potential banking deserts, according to the same article read on 28 August 2026.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "How many Americans did it report living in potential banking deserts?",
+            options: ["11.1 million", "12.3 million, which was the figure for actual banking deserts", "19.0 million, which was the number of underbanked households in the FDIC survey", "2.8 million, matching the cash-only unbanked share of all households"],
+            correctIndex: 0,
+            explanation: "The two counts are reported separately because they measure different things: absence and fragility.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What share of unbanked households cited inconvenient bank locations in 2023?",
+            options: ["16.3 percent", "2.5 percent, which was that item's main-reason share rather than its cited share", "33.9 percent, which was the share citing that avoiding a bank gives more privacy", "12.3 percent, which was the share citing problems with past banking or credit history"],
+            correctIndex: 0,
+            explanation: "It is the survey item that makes geography a measurable part of this subject.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What share of banked households used a bank teller as their primary access method in 2023?",
+            options: ["15.1 percent", "48.3 percent, which was the share using mobile banking as their primary method", "27.4 percent, which was the teller-first share among households earning under $15,000", "21.0 percent, which was the teller-first share in 2019 rather than in 2023"],
+            correctIndex: 0,
+            explanation: "Mobile banking was the primary method for 48.3 percent, but the teller share splits sharply by income and education.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "How did teller-first access split by income in 2023?",
+            options: ["27.4 percent under $15,000 against 8.2 percent at $75,000 or more", "8.2 percent under $15,000 against 27.4 percent at $75,000 or more, the reverse relationship", "It did not split, running close to 15 percent in every income band", "It could not be measured, since the survey asks about access only of unbanked households"],
+            correctIndex: 0,
+            explanation: "The counter is used most by the households with the least, which is what makes a branch closure land unevenly.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "How did teller-first access split by education in 2023?",
+            options: ["32.4 percent with no high school diploma against 8.8 percent with a college degree", "8.8 percent with no high school diploma against 32.4 percent with a college degree", "It ran at about 15 percent across every level of educational attainment", "It was not reported, since the survey groups education with income in one table"],
+            correctIndex: 0,
+            explanation: "The same direction as the income split, which is why the average access figure describes almost nobody's experience.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What is the honest answer to 'does a branch matter when banking is on a phone'?",
+            options: ["It depends who you are", "No, since mobile banking is now the primary access method for most households", "Yes, since federal regulation requires certain transactions to be conducted in person", "The question cannot be answered because the FDIC does not measure access methods"],
+            correctIndex: 0,
+            explanation: "A closure is near costless for a household that never visits one and a real loss for a household that uses the counter.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What happens to the desert count if the rural threshold moves from 10 miles to 15?",
+            options: ["The count falls", "The count rises, since a wider radius captures more tracts as deserts", "Nothing, since the rural threshold applies to too few tracts to matter", "The count becomes undefined, since the dashboard fixes the thresholds in its methodology"],
+            correctIndex: 0,
+            explanation: "A wider radius means more tracts have a branch inside it, which is the general lesson that a published threshold defines a finding.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "Which earlier finding does the threshold lesson echo?",
+            options: ["The CFPB's $1 billion call-report threshold", "The FDIC's definition of an underbanked household as using one of eight services", "The Regulation E boundary covering only ATM and one-time debit card transactions", "The 60-day window for a free report after an adverse action notice"],
+            correctIndex: 0,
+            explanation: "In both cases a reporting or measurement rule, published and readable, determines what the resulting number can possibly include.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "Why is the potential-desert count described as a forecast from structure rather than from a trend?",
+            options: ["It says how fragile the map is, not what will happen", "Because it projects branch closures using the rate observed over the previous five years", "Because it counts tracts where a closure has already been announced by an institution", "Because it is recalculated each quarter as institutions file their branch reports"],
+            correctIndex: 0,
+            explanation: "It does not predict that branches will close; it counts how much of the map is one decision away from having none.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What boundary does the lesson put on the distance finding?",
+            options: ["Distance is only half of access", "Distance explains the entire gap between banked and unbanked households", "Distance matters only in rural tracts, where the threshold is widest", "Distance is measured from the tract boundary rather than its population center"],
+            correctIndex: 0,
+            explanation: "A tract with three branches and a high unbanked rate is not solved by a fourth, and the fee, identity and screening mechanisms still apply there.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "Which survey does the saving lesson use?",
+            options: ["The Federal Reserve's SHED", "The FDIC National Survey of Unbanked and Underbanked Households", "The Census Bureau's Survey of Income and Program Participation", "The CFPB's Consumer Complaint Database, aggregated by product category"],
+            correctIndex: 0,
+            explanation: "The Survey of Household Economics and Decisionmaking, published annually as Economic Well-Being of U.S. Households.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "Which edition of that survey does this course quote, and when was it published?",
+            options: ["The 2025 report, published May 2026", "The 2023 report, published November 2024, which is the FDIC survey rather than the Federal Reserve one", "The 2019 report, the last edition before the pandemic changed the series", "The 2026 report, published in August 2026 alongside the Quarterly Banking Profile"],
+            correctIndex: 0,
+            explanation: "The survey behind it was fielded in October 2025, and the edition is named because a newer wave supersedes these figures.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What hypothetical expense does the survey's best-known question use?",
+            options: ["$400", "$1,000, the maximum amount of a single USPS domestic money order", "$500, which is the amount used in the separate question about current savings", "$250,000, matching the standard maximum deposit insurance amount"],
+            correctIndex: 0,
+            explanation: "Respondents are asked how they would pay for it, and the report groups the answers into cash or its equivalent and everything else.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What does the survey group as 'cash or its equivalent'?",
+            options: ["Cash, savings, or a card paid off next statement", "Cash and savings only, since any use of credit falls outside the category", "Any payment method that does not require borrowing from a friend or family member", "Cash, savings, a personal loan, and a payday advance against the next paycheck"],
+            correctIndex: 0,
+            explanation: "Including a credit card paid off at the next statement is what makes it about method rather than about avoiding credit.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What share of adults said they would cover a $400 emergency expense exclusively with cash or its equivalent?",
+            options: ["63 percent", "70 percent, which was the share able to cover at least $500 using only current savings", "12 percent, which was the share unable to pay the expense by any method", "37 percent, which is the remainder rather than a figure the report states directly"],
+            correctIndex: 0,
+            explanation: "The report notes the figure was unchanged from 2024.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What share said they would be unable to pay the $400 expense by any method?",
+            options: ["12 percent", "63 percent, which is the share that would cover it with cash or its equivalent", "37 percent, being everyone who would not use cash or its equivalent", "30 percent, matching the share of unbanked households citing high bank fees"],
+            correctIndex: 0,
+            explanation: "That figure is about capacity rather than method: for roughly one adult in eight there is no route at all, including borrowing.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What share said they could pay an expense of at least $500 using only current savings?",
+            options: ["70 percent", "63 percent, which is the cash-or-equivalent figure for the $400 question", "12 percent, which is the share unable to pay $400 by any method", "48 percent, matching the share using mobile banking as their primary access method"],
+            correctIndex: 0,
+            explanation: "It is a separate question from the $400 one and is answered from savings alone rather than from cash or its equivalent.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What is the difference between the 63 percent figure and the 12 percent figure?",
+            options: ["Method versus capacity", "Two different survey years reported side by side for comparison", "One counts households and the other counts individual adults", "One is from the Federal Reserve and the other from the FDIC"],
+            correctIndex: 0,
+            explanation: "The first says how most adults would pay; the second says how many could not pay at all by any route.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "Why does the lesson say 'just save an emergency fund' is not instruction?",
+            options: ["It describes an outcome, not a method", "Because the Federal Reserve advises against holding savings in a deposit account", "Because emergency funds are only useful to households above a certain income", "Because the survey shows most adults already hold one"],
+            correctIndex: 0,
+            explanation: "It is offered to people already sorted by whether they can reach it, and the fees in this course spend the cushion that would prevent them.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What is the loop the lesson names between fees and savings?",
+            options: ["A cushion prevents fees and fees prevent a cushion", "Higher savings attract higher account fees, which reduce savings again", "Fees are refunded once savings exceed the institution's stated threshold", "Savings are held in a separate account that is exempt from all fees"],
+            correctIndex: 0,
+            explanation: "Which end of that loop a household starts on is mostly not a decision it made, which is the sequence Section 4 established.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "Which distinction does the lesson call teachable, as opposed to advisory?",
+            options: ["Having money versus having access to it today", "The correct number of months of expenses a household should hold", "The best type of account in which to keep an emergency fund", "The order in which debts should be repaid from available savings"],
+            correctIndex: 0,
+            explanation: "A balance you can move today and a paycheck arriving Friday are not the same asset for a bill due Wednesday, which is what Section 5 priced.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What does the lesson suggest doing with the survey question itself?",
+            options: ["Run it on yourself, privately", "Compare your answer publicly against the national figure to gauge progress", "Use it to decide which account type to open at your institution", "Submit it to the Federal Reserve so your response is counted in the next wave"],
+            correctIndex: 0,
+            explanation: "It converts a vague worry into a number and a method: what would I use, and how fast can I get it?",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What does this course refuse to say about saving?",
+            options: ["How much, over what period, or in what", "That where a household sits in the distribution is a fact about a system", "That access on a given day differs from holding money", "That the survey question is worth running on yourself"],
+            correctIndex: 0,
+            explanation: "Those are individual financial decisions, and the not-advice rule is stated in prose in three separate lessons of this course.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "Which regulation lets you obtain account disclosures without opening an account?",
+            options: ["12 CFR 1030.4(a)(2)", "12 CFR 1005.17(b), which governs the overdraft opt-in for certain transactions", "15 U.S.C. 1681j(a)(1)(A), which entitles you to a free annual file disclosure", "12 CFR 1005.18(b), which requires a short form disclosure before acquiring a prepaid account"],
+            correctIndex: 0,
+            explanation: "It requires a depository institution to provide account disclosures to a consumer upon request.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which four lines does the closing lesson tell you to compare between two disclosures?",
+            options: ["Maintenance fee, waivers, overdraft fee, daily count", "Interest rate, minimum balance, branch count, ATM network size", "Deposit insurance limit, ownership categories, opening deposit, statement frequency", "Screening company used, identification required, opt-in default, posting order"],
+            correctIndex: 0,
+            explanation: "The monthly maintenance fee, every stated way to waive it, the overdraft and non-sufficient-funds fee, and how many may be charged in a day.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What does the closing lesson tell you to check about your own overdraft setting?",
+            options: ["Which way it is set, and that it is revocable", "Whether the institution has ever charged you a fee you did not expect", "Whether the institution's fee exceeds the level in the disapproved 2024 rule", "Whether the setting also covers checks and automated clearing house payments"],
+            correctIndex: 0,
+            explanation: "The confirmation of an opt-in had to state the right to revoke, and the setting never covered checks, ACH or recurring card payments in the first place.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "When does the lesson say to read your own screening file?",
+            options: ["Before you apply somewhere", "Only after an application has been declined and a notice received", "Every sixty days, to keep the free-disclosure window open", "After opening an account, to confirm the institution reported it correctly"],
+            correctIndex: 0,
+            explanation: "The annual free disclosure requires no denial and no reason, so nothing stops a consumer reading it first.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "How long does a consumer have to request a free report after an adverse action notification?",
+            options: ["Sixty days", "Thirty days, matching the period for a reinvestigation of a disputed item", "Twelve months, matching the interval between free annual disclosures", "Five business days, matching the deadline for notice of reinvestigation results"],
+            correctIndex: 0,
+            explanation: "The right sits at 15 U.S.C. 1681j(b), separate from the annual free disclosure at 1681j(a).",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What does the closing lesson say about paying a company to fix a screening file?",
+            options: ["Do not, both steps are free by statute", "Do so only if the company is licensed by your state's financial regulator", "Do so only after the agency has refused to reinvestigate the disputed entry", "Do so if the fee is less than the check-cashing cost of one month's paycheck"],
+            correctIndex: 0,
+            explanation: "The file disclosure and the dispute are both free, so a company charging for either is charging for a form.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which products does the CFPB accept complaints about, per its own page?",
+            options: ["Checking and savings accounts, prepaid cards, and credit reporting", "Only mortgages and student loans, which are its exclusive supervisory areas", "Only products offered by institutions with more than $10 billion in assets", "Only products regulated by state banking departments rather than federal agencies"],
+            correctIndex: 0,
+            explanation: "Its list also includes credit cards, debt collection, money transfers, payday and personal loans, and vehicle loans or leases.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "In what timeframe does the CFPB say companies generally respond to a complaint?",
+            options: ["Fifteen days", "Sixty days in every case, with no shorter period stated anywhere on the page", "Thirty days, matching the reinvestigation period under the Fair Credit Reporting Act", "Five business days, matching the notice period after a reinvestigation concludes"],
+            correctIndex: 0,
+            explanation: "In some cases the company reports its response is in progress and gives a final response in 60 days.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What happens to a submitted complaint after the company responds?",
+            options: ["It is published in a public database", "It is forwarded to the institution's federal regulator for enforcement action", "It is destroyed once the consumer confirms the response was satisfactory", "It is used to calculate the institution's deposit insurance assessment rate"],
+            correctIndex: 0,
+            explanation: "The published record has the consumer's identifying details removed, and the consumer is given an opportunity to review the response.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which subject does this course deliberately leave to the credit course in the series?",
+            options: ["Credit reports and scores", "The identity requirements for opening a deposit account", "The overdraft opt-in and the transactions it covers", "The definition of an unbanked household in the FDIC survey"],
+            correctIndex: 0,
+            explanation: "This course teaches the account and the file behind an account denial, which is a different file from a different company.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which course teaches what people built when the capital system excluded them?",
+            options: ["Financing Without Access", "Cooperatives, which teaches the credit union and other co-op forms as entities", "Banking & Money When You Live Abroad, which covers the non-resident account case", "Surplus Funds Basics, which covers tax sale surplus recovery"],
+            correctIndex: 0,
+            explanation: "It covers fraternal benefit societies, building and loan associations, rotating savings associations and finance without interest.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which course owns the non-resident and overseas banking case?",
+            options: ["Banking & Money When You Live Abroad", "Cooperatives, which teaches the credit union as a member-owned financial cooperative", "Financing Without Access, which teaches historical substitute institutions", "This course, which covers domestic and international account access together"],
+            correctIndex: 0,
+            explanation: "This course is deliberately domestic, and the boundary is stated so neither course re-teaches the other.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What are the three questions the course tells you to carry away?",
+            options: ["Who decides, what it costs, what you are told when refused", "How much, how soon, and at what rate of interest", "Which bank, which account, and how much to deposit", "Which agency, which regulation, and which fiscal year"],
+            correctIndex: 0,
+            explanation: "They ask about structure rather than about a particular product, so they work on something this course never mentioned.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What single property did every mechanism in this course share?",
+            options: ["Each was a document somebody must produce", "Each was enforced by the same federal agency", "Each applied only to institutions above a stated asset threshold", "Each was created by the same statute in the same year"],
+            correctIndex: 0,
+            explanation: "Account disclosures, an opt-in confirmation, a file disclosure and an adverse action notice are all documents a rule obliges somebody to hand over.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What does the lesson say to compare a substitute transaction against?",
+            options: ["What your own account actually charged last month", "The national average fee published by the FDIC in its household survey", "The maximum permitted under your state's check-casher regulation alone", "The Bank On National Account Standards' cap on a monthly maintenance fee"],
+            correctIndex: 0,
+            explanation: "From the statement rather than from memory, which turns the comparison into arithmetic instead of an impression.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Where does the lesson tell you to find your state's check-casher rule?",
+            options: ["Your own state regulator", "The Consumer Financial Protection Bureau's national list of state fee caps", "The FDIC's household survey appendix tables", "The provider's own website, which must publish the state maximum"],
+            correctIndex: 0,
+            explanation: "The method rather than a table is the point, because the table would carry a stale row the day after it was printed.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which course does this one point to for the credit union as an entity?",
+            options: ["Cooperatives", "Financing Without Access, which covers the building and loan association", "Banking & Money When You Live Abroad, which covers foreign account rules", "The credit course in this series, which covers credit reports and scores"],
+            correctIndex: 0,
+            explanation: "It teaches one member one vote, the field of membership and the dual identity of a member, and this course does not repeat it.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What kind of claim is a potential-desert count, compared with a projection?",
+            options: ["More honest, because it measures structure", "Less useful, because it does not say when a closure will happen", "Identical, since both estimate the future number of banking deserts", "Unverifiable, since branch closures are not reported to any regulator"],
+            correctIndex: 0,
+            explanation: "It states how much of the map is one decision away from having no branch, rather than predicting that the decision will be made.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "Which years of tract-level data does the banking deserts dashboard carry?",
+            options: ["2019 to 2025", "2009 to 2023, matching the span of the FDIC household survey", "2013 to 2023, matching the decade over which money order use halved", "Only the most recent year, since earlier data is removed on each update"],
+            correctIndex: 0,
+            explanation: "The span is what allows a reader to see how a tract moved between categories rather than only where it sits now.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "Why does the closing lesson say the denial letter is 'the useful part'?",
+            options: ["It names the agency and your rights", "Because it states the specific reasons the institution refused the application", "Because it entitles the applicant to reapply at the same institution immediately", "Because it must include the institution's own written lending policy"],
+            correctIndex: 0,
+            explanation: "Under 15 U.S.C. 1681m(a) it must name the reporting agency, disclaim that agency's role in the decision, and state the free-copy and dispute rights.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What does the survey's $400 question convert a worry into?",
+            options: ["A number and a method", "A recommendation about how much to hold in savings", "A comparison against the household's own income band", "A prediction about whether an emergency will occur"],
+            correctIndex: 0,
+            explanation: "What would I use, and how fast can I get it, is a question with an answer rather than a feeling.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "Which two Section 4 facts does the saving lesson connect to the emergency-fund loop?",
+            options: ["The timing gap and the per-item fee", "The Congressional Review Act and the disapproved 2024 rule", "The call-report threshold and the excluded credit unions", "The Bank On standards and their prohibition on overdraft fees"],
+            correctIndex: 0,
+            explanation: "Rent due on the first, pay on the fifth, and a fee for the gap, which is exactly the cushion the household is told to build.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "When was the CFPB complaint page last modified, as read for this course?",
+            options: ["15 July 2026", "18 December 2024, which is the review date on the CFPB's checking account denial answer", "13 March 2025, which is the update date on its list of consumer reporting companies", "24 April 2024, which is the date of its overdraft revenue data spotlight"],
+            correctIndex: 0,
+            explanation: "The date is recorded because agency guidance and agency status both change, and this course dates every external source it uses.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which of these is NOT one of the five steps in the closing method?",
+            options: ["Open an account at a certified low-cost institution", "Obtain account disclosures from two institutions and compare four lines", "Check and, if you wish, revoke your overdraft opt-in setting", "Request your free annual screening file disclosure before applying anywhere"],
+            correctIndex: 0,
+            explanation: "Naming an account to open would be advice, which this course states in three separate lessons that it does not give.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What does the lesson say a household's position in the saving distribution is a fact about?",
+            options: ["A system with fee structures, timing rules and gates", "The household's own discipline over the preceding several years", "The interest rate environment at the time the household began saving", "The number of bank branches within ten miles of the household"],
+            correctIndex: 0,
+            explanation: "All three of those have been read directly in this course, which is what makes the sentence a conclusion rather than a slogan.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "Which figure did the SHED report describe as unchanged from the previous year?",
+            options: ["The 63 percent covering $400 with cash or its equivalent", "The 12 percent unable to pay by any method, which rose sharply", "The 70 percent able to cover $500 from savings, which had not been asked before", "The share of adults holding a bank account, which the survey measures annually"],
+            correctIndex: 0,
+            explanation: "Stability in that headline figure is itself a finding, and it is why the lesson treats the distribution as structural.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What did the lesson say a tract with three branches and a high unbanked rate needs?",
+            options: ["Not a fourth branch", "A wider distance threshold in the dashboard's methodology", "Reclassification from urban to suburban for measurement purposes", "Removal from the potential banking desert category"],
+            correctIndex: 0,
+            explanation: "The fee structures, the identity rule and the screening gate all still operate inside a place with plenty of branches.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "Which institution-side fact makes the branch closure decision look routine from the inside?",
+            options: ["It is a business decision made elsewhere", "It requires approval from the census tract's own residents", "It must be published in the Federal Register ninety days in advance", "It triggers an automatic review by the Consumer Financial Protection Bureau"],
+            correctIndex: 0,
+            explanation: "Nobody in the affected tract is consulted and nobody there caused it, which is what the potential-desert definition captures.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What was the primary mobile banking share among banked households in 2023?",
+            options: ["48.3 percent", "15.1 percent, which was the share using a bank teller as their primary method", "34.0 percent, which was the mobile share in 2019 rather than in 2023", "27.4 percent, which was the teller share among the lowest income band"],
+            correctIndex: 0,
+            explanation: "Mobile banking is the most common primary method overall, which is precisely why the teller split by income is the more informative figure.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What does the closing lesson tell you to read your last month's fees from?",
+            options: ["Your statement", "Your recollection of the transactions you remember making", "The institution's published schedule of standard fees", "The FDIC's survey estimate of average household fees"],
+            correctIndex: 0,
+            explanation: "The comparison only works on actual charges, and the statement is the document that records them.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which of these is a free right under the Fair Credit Reporting Act that this course repeatedly returns to?",
+            options: ["A file disclosure once every twelve months", "An explanation from the institution of why an application was refused", "A guarantee that an account will be opened once a file is corrected", "A cap on the fee an institution may charge for a deposit account"],
+            correctIndex: 0,
+            explanation: "It requires no denial and no reason, which makes reading your own file before applying entirely possible.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Why does this course end with a method rather than with a recommendation?",
+            options: ["The right answer depends on numbers only you have", "Because the relevant rules change too often for any recommendation to survive", "Because federal law prohibits educational material from making recommendations", "Because the FDIC survey does not collect the data a recommendation would need"],
+            correctIndex: 0,
+            explanation: "Fee schedule, balance pattern, pay timing and state cap are all individual, and the course's contribution is that all four are obtainable.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What did the lesson say about running the SHED question on yourself?",
+            options: ["Do it to get a number, not a feeling", "Do it and compare the result with your income band's published average", "Do it annually and record the trend for your own financial planning", "Do it only after building the emergency fund the survey describes"],
+            correctIndex: 0,
+            explanation: "The purpose is converting a vague worry into what would I use and how fast can I get it.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "Which two figures show the substitute market and the unbanked rate moving in the same direction?",
+            options: ["Money order use halving and the unbanked rate halving", "Prepaid card use rising and the unbanked rate rising alongside it", "Branch counts falling and the underbanked rate falling with them", "Overdraft revenue falling and the cash-only share falling with it"],
+            correctIndex: 0,
+            explanation: "Money order use fell from 18.2 to 8.0 percent between 2013 and 2023, and the unbanked rate fell by almost half between 2011 and 2023.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What does the phrase 'the average is not the experience' refer to in this section?",
+            options: ["Teller use by income and education", "The national unbanked rate compared with state-level rates", "The mean overdraft fee compared with the median one", "The distance to the nearest branch compared with the tract's population center"],
+            correctIndex: 0,
+            explanation: "A 15.1 percent national teller share hides a range from 8.2 to 32.4 percent depending on income and education.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What is the not-advice boundary this course states three separate times in prose?",
+            options: ["It describes documents and rules, not what to do with your money", "It gives general guidance but declines to name specific institutions", "It applies only to households below a stated income threshold", "It defers every financial question to a licensed professional without explanation"],
+            correctIndex: 0,
+            explanation: "Lesson 1, the fee lesson, the overdraft lesson and the closing lessons each carry it, because a learner deep in a course never saw the landing page.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "From what point in a tract is the distance to the nearest branch measured?",
+            options: ["Its population center", "Its geographic centroid, regardless of where residents actually live", "Its nearest boundary to the neighbouring tract holding a branch", "The address of its largest employer, as recorded by the Census Bureau"],
+            correctIndex: 0,
+            explanation: "Measuring from the population center rather than the geographic middle is another published methodological choice that shapes the count.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What is the second step in the closing method, after obtaining account disclosures?",
+            options: ["Find out whether you are opted in", "File a complaint with the Consumer Financial Protection Bureau", "Price a substitute transaction against your own statement", "Request a free file disclosure from a screening agency"],
+            correctIndex: 0,
+            explanation: "The opt-in governs ATM and one-time debit card overdraft fees, and the confirmation had to tell you the consent is revocable.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which two survey figures does the saving lesson keep apart on purpose?",
+            options: ["63 percent and 12 percent", "63 percent and 70 percent, which both concern the $400 question", "12 percent and 70 percent, which are drawn from different survey years", "70 percent and 37 percent, which together account for all adults"],
+            correctIndex: 0,
+            explanation: "One is about method, how most adults would pay; the other is about capacity, how many could not pay at all.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What does the closing lesson say about complaints being published?",
+            options: ["Identifying details are removed", "They are published in full including the complainant's name and address", "They are published only if the company fails to respond within sixty days", "They are never published, and are held confidentially by the agency"],
+            correctIndex: 0,
+            explanation: "The consumer is also given an opportunity to review the company's response before the record is finalised.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+        ],
+      },
+    },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // FINAL ASSESSMENT
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "final-assessment",
+      title: "25 · Final assessment",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        questions: [
+          {
+            prompt: "What does a bank customer hold after making a deposit?",
+            options: ["A claim on the bank", "Legal title to the specific currency notes handed over at the counter", "An equity interest in the institution proportional to the balance held", "A federally issued instrument redeemable at any other insured institution"],
+            correctIndex: 0,
+            explanation: "The money becomes the bank's, which is why deposit insurance exists and why a bank failure matters to a depositor.",
+            sourceLessonSlug: "the-deposit-contract",
+          },
+          {
+            prompt: "Deposit insurance is counted along which three axes?",
+            options: ["Per depositor, per institution, per ownership category", "Per account, per calendar year, per branch of the institution", "Per household, per state of residence, per deposit product type", "Per depositor, per deposit product, per federal supervisory agency"],
+            correctIndex: 0,
+            explanation: "The structure is the durable part; the dollar cap is dated in the lesson because it can change.",
+            sourceLessonSlug: "the-deposit-contract",
+          },
+          {
+            prompt: "Why are Treasury securities outside deposit insurance?",
+            options: ["Insurance covers the institution failing", "Because the Treasury issues its own separate guarantee for consumer holders", "Because their term exceeds the maximum the insurance fund may cover", "Because they are held in book-entry rather than certificated form"],
+            correctIndex: 0,
+            explanation: "It is insurance on the promise rather than on the outcome, which is why an extremely safe asset can sit outside it.",
+            sourceLessonSlug: "the-deposit-contract",
+          },
+          {
+            prompt: "What four items must a bank collect before opening an account under 31 CFR 1020.220?",
+            options: ["Name, date of birth, address, identification number", "Name, employer, income, and the source of the opening deposit", "Name, photograph, signature, and two personal references", "Name, prior banking history, credit score, and intended account use"],
+            correctIndex: 0,
+            explanation: "The date-of-birth element is qualified as applying to an individual, and the identification number for a U.S. person must be a taxpayer identification number.",
+            sourceLessonSlug: "the-identity-gate",
+          },
+          {
+            prompt: "Does the federal identity rule require a driver's licence?",
+            options: ["No", "Yes, for any applicant who is a U.S. person opening a consumer account", "Yes, unless the applicant produces a valid United States passport instead", "Yes for in-branch applications and no for those submitted online"],
+            correctIndex: 0,
+            explanation: "It requires an identification number, which for a U.S. person means a taxpayer identification number, a category including an ITIN.",
+            sourceLessonSlug: "the-identity-gate",
+          },
+          {
+            prompt: "Under Truth in Savings, when may a consumer obtain account disclosures?",
+            options: ["Before opening, and on request", "Only after the account has been opened and funded", "Only during the institution's published account-opening hours", "Only if the consumer has been declined elsewhere within sixty days"],
+            correctIndex: 0,
+            explanation: "12 CFR 1030.4(a)(1) and (a)(2) together are what make comparing two documents possible.",
+            sourceLessonSlug: "the-fee-schedule-is-a-document",
+          },
+          {
+            prompt: "What does 12 CFR 1030.4(b)(4) require beyond the amount of a fee?",
+            options: ["The conditions under which it may be imposed", "The institution's revenue from that fee category in the previous year", "The number of consumers charged that fee in the previous statement cycle", "A comparison with the same fee at competing institutions in the same county"],
+            correctIndex: 0,
+            explanation: "The conditions are where a balance waiver lives, which is what turns a stated fee into an actual price for a household.",
+            sourceLessonSlug: "the-fee-schedule-is-a-document",
+          },
+          {
+            prompt: "In what sense is a minimum balance a price?",
+            options: ["It sells one account at two prices", "It is the smallest deposit federal regulation permits an institution to accept", "It is a reserve the institution must hold against the account", "It is the level below which the institution must close the account"],
+            correctIndex: 0,
+            explanation: "The sorting variable is how much money the customer has, so the fee lands on the households least able to absorb it.",
+            sourceLessonSlug: "the-fee-schedule-is-a-document",
+          },
+          {
+            prompt: "How is the FDIC household survey fielded?",
+            options: ["As a Current Population Survey supplement", "As a standalone mail survey sent to every insured institution's customers", "As an online panel maintained by the FDIC's own research division", "As a telephone survey of households that have recently closed an account"],
+            correctIndex: 0,
+            explanation: "It has run biennially since 2009 with the Census Bureau, and reached almost 30,000 households in June 2023.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "What was the unbanked rate in 2023, and how many households does it represent?",
+            options: ["4.2 percent, about 5.6 million", "14.2 percent, about 19.0 million, which are the underbanked figures", "8.2 percent, about 10 million, which was the 2011 peak", "81.6 percent, about 109.1 million, which are the fully banked figures"],
+            correctIndex: 0,
+            explanation: "The change from 4.5 percent in 2021 was not statistically significant, but the fall from 8.2 percent in 2011 was almost half.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "What makes a household underbanked rather than unbanked?",
+            options: ["It has an account and used a nonbank service", "Its balance fell below the institution's minimum during the year", "It holds an account at a credit union rather than at a bank", "It uses mobile banking rather than a branch to reach its account"],
+            correctIndex: 0,
+            explanation: "The definition names eight services: three transaction services and five alternatives to mainstream credit.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "Why is the underbanked rate easy to misuse?",
+            options: ["It measures behaviour, not hardship", "It is published only as a range rather than as a single figure", "It counts individuals rather than households, unlike the unbanked rate", "It excludes households in the lowest income band from its denominator"],
+            correctIndex: 0,
+            explanation: "One international remittance from a perfectly good account puts a household in the category.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "Which reason for having no account was cited most often in 2023?",
+            options: ["Not enough money for a minimum balance", "A general distrust of banks, cited by more households than any other reason", "The inconvenience of bank locations after a decade of branch closures", "A lack of the personal identification required to open an account"],
+            correctIndex: 0,
+            explanation: "42.3 percent cited it and 23.3 percent gave it as their main reason, both the largest on the chart.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What share gave a fee or minimum-balance reason as their MAIN reason in 2023?",
+            options: ["33.4 percent", "42.3 percent, which is the cited share for the minimum balance item alone", "23.3 percent, which is the main-reason share for the minimum balance item alone", "29.2 percent, which is the same grouped figure for 2021"],
+            correctIndex: 0,
+            explanation: "It combines fees too high at 8.9, fees too unpredictable at 1.2, and minimum balance at 23.3.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "Why does the survey ask separately about fees being high and fees being unpredictable?",
+            options: ["They are different problems", "Because the FDIC needs two figures to compute the grouped main-reason share", "Because unpredictable fees are charged only by institutions above a size threshold", "Because the two items were introduced in different survey waves"],
+            correctIndex: 0,
+            explanation: "They got different answers, 30.7 and 29.3 percent, and predictability is what makes a posted fee attractive by comparison.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "How large is the unbanked gap between the lowest and highest income bands?",
+            options: ["21.8 percent against 0.7 percent", "10.6 percent against 1.9 percent, which is the Black and White comparison", "19.7 percent against 0.8 percent, which is the education comparison", "11.2 percent against 3.7 percent, which is the disability comparison"],
+            correctIndex: 0,
+            explanation: "Roughly a thirtyfold difference, which is why a 4.2 percent national rate describes almost nobody.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "Does income explain the whole gap by race and ethnicity?",
+            options: ["No, the gap is present at every income level", "Yes, the gap closes entirely once income is held constant", "The report declines to analyse it because the sample is too small", "Yes for Hispanic households and no for Black households"],
+            correctIndex: 0,
+            explanation: "In the $50,000 to $75,000 band the rates were 3.5 and 4.5 percent against 0.8 percent for White households.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What does 'cash only' mean in the FDIC survey?",
+            options: ["Unbanked and using no prepaid card or payment app", "Receiving all income in physical currency rather than by deposit", "Paying every bill in person rather than by mail or transfer", "Holding an account but never using electronic access to it"],
+            correctIndex: 0,
+            explanation: "It described 66.2 percent of unbanked households and 2.8 percent of all households in 2023.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "Which statutory definition makes a checking-account screening company a consumer reporting agency?",
+            options: ["15 U.S.C. 1681a(f)", "12 CFR 1002.2(c), which defines adverse action for Regulation B purposes", "15 U.S.C. 1681m(a), which sets the duties of users of consumer reports", "31 CFR 1020.220, which sets the identity requirements for opening an account"],
+            correctIndex: 0,
+            explanation: "It covers a person regularly assembling credit information or OTHER information on consumers to furnish reports to third parties.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Which of the five nationwide specialty categories covers deposit screening?",
+            options: ["Check writing history", "Employment history, since a bank confirms where an applicant works", "Residential or tenant history, since a bank confirms the applicant's address", "Insurance claims, since deposits are insured against institution failure"],
+            correctIndex: 0,
+            explanation: "It is the third of the five subjects listed at 15 U.S.C. 1681a(x).",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "Who supplies the entries in a deposit screening file?",
+            options: ["Banks and credit unions", "The applicant, on the account application form", "Merchants who were not paid on a presented check", "State regulators, from their consumer complaint records"],
+            correctIndex: 0,
+            explanation: "The institution that closed an account is the source, and the next institution is the reader.",
+            sourceLessonSlug: "a-report-you-did-not-know-existed",
+          },
+          {
+            prompt: "What must an adverse action notice under 15 U.S.C. 1681m(a) contain?",
+            options: ["The reporting agency's name and contact details", "The specific reasons the institution refused the application", "A copy of the consumer report the institution relied upon", "The institution's written policy for evaluating applications"],
+            correctIndex: 0,
+            explanation: "It must also state that the agency did not make the decision and cannot give the specific reasons, and set out the free-copy and dispute rights.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "Why does the Regulation B right to principal reasons not apply to a checking-account denial?",
+            options: ["A checking account is not credit", "Because Regulation B applies only to institutions above an asset threshold", "Because the applicant may simply reapply at another institution", "Because the Fair Credit Reporting Act notice displaces it in every case"],
+            correctIndex: 0,
+            explanation: "12 CFR 1002.2(f) defines an application as a request for an extension of credit, and the adverse-action definition follows from that.",
+            sourceLessonSlug: "the-adverse-action-notice",
+          },
+          {
+            prompt: "How often may a consumer obtain a free file disclosure from a nationwide specialty agency?",
+            options: ["Once every twelve months on request", "Only after receiving an adverse action notice within the past sixty days", "Once, after which the agency may charge a reasonable fee", "Four times a year, once in each calendar quarter"],
+            correctIndex: 0,
+            explanation: "15 U.S.C. 1681j(a)(1)(A) requires no denial and no reason, which is why reading the file before applying is possible.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What happens to a disputed item the agency cannot verify?",
+            options: ["It must be promptly deleted or modified", "It is retained but flagged as disputed for the rest of its reporting period", "It is referred to the furnisher, which decides whether to keep it", "It is replaced by a statement written by the consumer"],
+            correctIndex: 0,
+            explanation: "15 U.S.C. 1681i(a)(5)(A) puts the burden on the agency rather than on the consumer to prove the entry false.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "How long does a reinvestigation generally take?",
+            options: ["Thirty days", "Sixty days, matching the free-report window after an adverse action", "Five business days, matching the notice-of-results deadline", "Twelve months, matching the interval between free disclosures"],
+            correctIndex: 0,
+            explanation: "It is extendable by up to fifteen days if the consumer supplies relevant information during that period.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "What does a successful dispute NOT achieve?",
+            options: ["An account being opened for you", "Deletion or modification of an item that cannot be verified", "Written notice of the results within five business days", "A record of the current status of the disputed information"],
+            correctIndex: 0,
+            explanation: "A dispute is a mechanism for accuracy; no institution is obliged to offer an account whatever the file says.",
+            sourceLessonSlug: "getting-and-fixing-your-file",
+          },
+          {
+            prompt: "Which transactions does the Regulation E overdraft opt-in cover?",
+            options: ["ATM and one-time debit card transactions", "Every transaction capable of overdrawing a consumer account", "Paper checks and automated clearing house payments only", "Recurring debit card payments set up in advance with a merchant"],
+            correctIndex: 0,
+            explanation: "Checks, ACH payments and recurring card payments were never inside the rule, which is how a consumer who declined can still be charged.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "What must an institution do before charging an overdraft fee on a covered transaction?",
+            options: ["Obtain affirmative consent after a segregated notice", "Notify the consumer within three business days of the first fee", "Verify that the consumer's balance was above zero on the preceding day", "Provide a written estimate of the fees likely to be charged in a year"],
+            correctIndex: 0,
+            explanation: "Four steps: a segregated notice, a reasonable opportunity to consent, the consent, and written confirmation stating the right to revoke.",
+            sourceLessonSlug: "overdraft-is-a-mechanism",
+          },
+          {
+            prompt: "What happened to the CFPB's December 2024 overdraft rule?",
+            options: ["Congress disapproved it in May 2025", "It took effect on 1 October 2025 as originally scheduled", "A federal court vacated it as exceeding the agency's authority", "The agency withdrew it before any resolution was introduced"],
+            correctIndex: 0,
+            explanation: "Public Law 119-10, approved 9 May 2025, nullified it under the Congressional Review Act.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What does 5 U.S.C. 801(b)(2) bar after a disapproval?",
+            options: ["Reissuing the rule in substantially the same form", "Any enforcement action based on conduct before the disapproval", "Publication of the rule's text in the Code of Federal Regulations", "Further rulemaking by the agency for the remainder of that Congress"],
+            correctIndex: 0,
+            explanation: "A substantially similar new rule is barred too, absent a law enacted after the joint resolution specifically authorising it.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "Why is the CFPB's $5.83 billion overdraft revenue figure a floor?",
+            options: ["It excludes small banks and all credit unions", "It counts only fees charged in the final quarter of the reporting year", "It counts only fees that consumers successfully disputed and recovered", "It is stated in nominal rather than inflation-adjusted terms"],
+            correctIndex: 0,
+            explanation: "Banks with $1 billion or less in assets do not report the item separately, so the reporting threshold defines what the total can include.",
+            sourceLessonSlug: "the-rule-that-was-repealed",
+          },
+          {
+            prompt: "What creates the day on which overdraft fees are charged, in this course's account?",
+            options: ["Timing", "Overspending measured across the whole month", "A failure to reconcile the account against its statement", "An institution reordering transactions in violation of Regulation E"],
+            correctIndex: 0,
+            explanation: "Rent on the first and pay on the fifth is a sequence the household controls neither end of, and a cushion is what prevents it.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What status do the Bank On National Account Standards have?",
+            options: ["A voluntary certification from a nonprofit", "A federal regulation binding on insured depository institutions", "A model state law adopted in a majority of states", "A condition of federal deposit insurance for low-balance accounts"],
+            correctIndex: 0,
+            explanation: "They are published by the Cities for Financial Empowerment Fund, and an account is certified only if the institution applies.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What do the Bank On standards say about overdraft and non-sufficient funds fees?",
+            options: ["None", "Capped at $5 per item, matching the disapproved 2024 federal rule", "Permitted where the consumer has opted in under Regulation E", "Permitted once per statement cycle and reversible on request"],
+            correctIndex: 0,
+            explanation: "The standards also prohibit activation, closure, dormancy, inactivity and low balance fees.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What do the standards recommend about account-opening documentation?",
+            options: ["Accept ITINs and government-issued IDs", "Require two forms of state or federally issued photographic identification", "Waive identification for applicants referred by a community organisation", "Accept a utility bill in place of any government-issued document"],
+            correctIndex: 0,
+            explanation: "It asks institutions to stop requiring more than the federal identity rule does, since that rule never barred an ITIN.",
+            sourceLessonSlug: "why-the-cost-lands-on-a-low-balance",
+          },
+          {
+            prompt: "What is the structural difference between a money order fee and a check-cashing fee?",
+            options: ["Fixed amount versus percentage", "One is federally capped and the other is set by the provider", "One is charged to the payee and the other to the purchaser", "One is refundable and the other is not"],
+            correctIndex: 0,
+            explanation: "A percentage fee scales with the size of the check, which a flat money order fee does not.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "At what level are check-casher fee maximums set?",
+            options: ["State", "Federal, by a single nationwide Consumer Financial Protection Bureau rule", "Municipal, through city and county licensing ordinances", "Nowhere, since check cashers set fees at their own discretion"],
+            correctIndex: 0,
+            explanation: "That is why the transferable skill is finding your own state's regulator rather than memorising a national number.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "What is notable about New York setting two different check-cashing rates?",
+            options: ["Government benefit checks were priced lower on purpose", "The two rates apply in different regions of the state", "The lower rate is temporary and expires each January", "The rates apply to check cashers and to banks respectively"],
+            correctIndex: 0,
+            explanation: "1.5 percent on listed government payments against $1 or 2.2 percent, whichever is greater, on everything else.",
+            sourceLessonSlug: "money-orders-and-check-cashing",
+          },
+          {
+            prompt: "When must a prepaid short form disclosure reach the consumer?",
+            options: ["Before the account is acquired", "Within thirty days of the first load of funds", "At the time of the first purchase made with the card", "Only if the consumer requests it in writing"],
+            correctIndex: 0,
+            explanation: "For a retail card it must be on or visible through an outward-facing external surface of the packaging.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "How does the FDIC describe insurance on a prepaid card?",
+            options: ["Insured when registered and requirements are met", "Insured automatically, on the same terms as a checking account", "Never insured, because a card is not a deposit", "Insured only for funds loaded by an employer or a government agency"],
+            correctIndex: 0,
+            explanation: "The two conditions make it a fact about a particular programme rather than about prepaid cards generally.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "For unbanked households, what job are prepaid cards and payment apps doing?",
+            options: ["The job of an account", "A convenience layered on top of an existing deposit account", "A savings vehicle held alongside a checking account", "A credit product used when an account cannot be opened"],
+            correctIndex: 0,
+            explanation: "90.7 percent of unbanked households with prepaid cards used them for at least one core transaction, against 46.0 percent of banked households.",
+            sourceLessonSlug: "prepaid-cards-and-payment-apps",
+          },
+          {
+            prompt: "What three properties besides price decide between an account and a substitute?",
+            options: ["Predictability, availability, minimum balance", "Interest rate, insurance coverage, branch proximity", "Regulator, licensing status, complaint volume", "Statement format, card network, mobile app quality"],
+            correctIndex: 0,
+            explanation: "Whether the cost is knowable in advance, when the money can actually be spent, and whether any balance is required.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "Why do two households reach opposite conclusions from the same arithmetic?",
+            options: ["They are pricing different risk", "One has access to a branch and the other does not", "One reads its account disclosures and the other does not", "One is subject to a state fee cap and the other is not"],
+            correctIndex: 0,
+            explanation: "A stable balance makes the account free; a balance touching zero makes it expensive and unpredictably so.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "What is happening to the size of the substitute market?",
+            options: ["It is shrinking", "It is growing as households leave the banking system", "It is flat, having changed little since 2013", "It cannot be measured from any published source"],
+            correctIndex: 0,
+            explanation: "Money order use fell from 18.2 to 8.0 percent and check cashing from 6.9 to 2.7 percent of all households between 2013 and 2023.",
+            sourceLessonSlug: "why-someone-chooses-the-substitute",
+          },
+          {
+            prompt: "How is a banking desert defined?",
+            options: ["A tract with no branch within a set radius", "A county whose branch count has fallen for five consecutive years", "An area where no institution offers a certified low-cost account", "A neighbourhood whose unbanked rate is above the national average"],
+            correctIndex: 0,
+            explanation: "Two miles urban, five suburban and ten rural, measured from the tract's population center.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "Why does a branch closure land unevenly across households?",
+            options: ["Teller use is concentrated at low incomes", "Because closures are announced only in higher-income areas", "Because mobile banking is unavailable in rural census tracts", "Because federal rules require in-person visits for certain transactions"],
+            correctIndex: 0,
+            explanation: "Teller-first access ran 27.4 percent among households under $15,000 against 8.2 percent at $75,000 or more in 2023.",
+            sourceLessonSlug: "the-bank-desert",
+          },
+          {
+            prompt: "What share of adults said they could not pay a $400 emergency expense by any method?",
+            options: ["12 percent", "63 percent, the share that would cover it with cash or its equivalent", "70 percent, the share able to cover $500 from savings alone", "37 percent, the remainder rather than a figure the report states"],
+            correctIndex: 0,
+            explanation: "From the Federal Reserve's 2025 SHED report, published May 2026 from a survey fielded in October 2025.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "Why is 'just save an emergency fund' not instruction?",
+            options: ["It names an outcome rather than a method", "Because the Federal Reserve recommends against holding cash savings", "Because most adults already hold one, according to the survey", "Because emergency funds are taxed differently from other savings"],
+            correctIndex: 0,
+            explanation: "The fee structures in this course spend the cushion the advice assumes, so which end of the loop a household starts on is largely not its choice.",
+            sourceLessonSlug: "saving-is-a-distribution",
+          },
+          {
+            prompt: "What three questions does the course tell a learner to carry away?",
+            options: ["Who decides, what it costs, what you are told when refused", "Which bank, which account, and how much to deposit", "How much, how soon, and at what rate", "Which agency, which regulation, which fiscal year"],
+            correctIndex: 0,
+            explanation: "They are about structure, so they work on a product this course never mentioned.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What does the course say about paying someone to dispute a screening file?",
+            options: ["Both the file and the dispute are free by statute", "It is worthwhile if the company is licensed in your state", "It is necessary once an agency has refused a first dispute", "It is the only route available to a consumer who was denied an account"],
+            correctIndex: 0,
+            explanation: "A company charging for either is charging for a form the consumer could submit themselves.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "What single property did every mechanism in this course share?",
+            options: ["Each is a document somebody must produce", "Each is enforced by the Consumer Financial Protection Bureau", "Each applies only to institutions above an asset threshold", "Each was created by the same statute in the same year"],
+            correctIndex: 0,
+            explanation: "Account disclosures, an opt-in confirmation, a file disclosure and an adverse action notice are all required hand-overs.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which subject does this course leave to the credit course in its series?",
+            options: ["Credit reports and scores", "The identity rule for opening a deposit account", "Deposit insurance and its ownership categories", "The overdraft opt-in and the transactions it covers"],
+            correctIndex: 0,
+            explanation: "This course teaches the account and the separate specialty file behind an account denial.",
+            sourceLessonSlug: "read-your-own-account",
+          },
+          {
+            prompt: "Which edition of the FDIC survey does this course quote, and why does it say so?",
+            options: ["The 2023 edition, because a newer wave supersedes it", "The 2025 edition, because it is the newest wave ever published", "The 2021 edition, because the 2023 questions were not comparable", "Whichever edition is current, since the figures are updated automatically"],
+            correctIndex: 0,
+            explanation: "The survey is biennial, published in the fall of even-numbered years, and a stale rate presented as current is the failure this domain punishes.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+        ],
+      },
+    },
   ],
 };
