@@ -682,5 +682,609 @@ Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national sur
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — Who has no account, and why they say so
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-survey-that-counts",
+      title: "5 · The survey that counts them, and what it counts",
+      section: "Section 2 · Who has no account, and why they say so",
+      body: `Most claims about the unbanked come from somebody's guess. This course uses a federal survey instead, and the first job is to know what that survey actually measures.
+
+**The instrument is the FDIC National Survey of Unbanked and Underbanked Households.** It has run **biennially since 2009**, in partnership with the U.S. Census Bureau, and it is fielded as a supplement to the Current Population Survey. The most recent survey was conducted in **June 2023**, "collecting responses from almost 30,000 households", and its report was published in **November 2024** (FDIC, 2024).
+
+**Which edition you are reading matters, so this course names it.** The FDIC's own guidance is that "A new survey report is released every two years, in the fall of even-numbered years." The **2023 report is the most recent published edition as of 28 August 2026**, when this lesson was written. A 2025 survey has been fielded. When its report appears, the figures below are the previous wave, and you should read the new one rather than trusting these.
+
+**Three categories, and they are defined precisely.** From the report itself:
+
+- **Unbanked**: "no one in the household had a checking or savings account at a bank or credit union." In 2023 that was **4.2 percent of U.S. households, about 5.6 million households**.
+- **Underbanked**: the household **had** an account "but in the past 12 months had used at least one of eight nonbank financial services", being three transaction services (nonbank money orders, check cashing, international remittances) and five alternatives to mainstream credit (rent-to-own, payday, pawn shop, auto title, and tax refund anticipation loans). In 2023 that was **14.2 percent, about 19.0 million households**.
+- **Fully banked**: had an account and used none of those eight. In 2023, **81.6 percent, about 109.1 million households** (FDIC, 2024).
+
+**Read the underbanked definition again, because it is easy to misuse.** Underbanked is not a measure of hardship or of being poorly served. It is defined by **behaviour**: a household that has a perfectly good account and sent one international remittance last year is counted underbanked. That is a defensible definition and it is not the one most people assume, so quoting the 14.2 percent without the definition attached is how a true number becomes a false claim.
+
+**One methodological note the report makes itself, and it matters.** The 2023 underbanked and fully banked rates "are not directly comparable to those in 2021 because the question on tax refund anticipation loans was broadened". Excluding those loans, the report says, the underbanked rate would have been 13.6 percent in 2021 and 12.7 percent in 2023 (FDIC, 2024).
+
+**That footnote is a lesson in itself.** A survey that changes a question changes its own series, and the honest ones say so in a footnote most readers skip. When you see a rate move, check whether the question moved first.
+
+**The long trend, which is the least quoted finding.** The unbanked rate was **8.2 percent in 2011**, its highest since the survey began, and **4.2 percent in 2023**. It fell by almost half, corresponding to an additional 5.3 million banked households. About two thirds of that decline was associated with changes in households' socioeconomic circumstances, particularly rising income and education (FDIC, 2024).
+
+:::reveal Who fields the FDIC household survey, and how often? ||| The FDIC with the U.S. Census Bureau, biennially since 2009, as a supplement to the Current Population Survey.
+
+:::reveal What makes a household underbanked rather than unbanked? ||| It has a checking or savings account but used at least one of eight named nonbank financial services in the past 12 months.
+
+:::reveal Why can the 2023 underbanked rate not be compared directly with 2021? ||| The tax refund anticipation loan question was broadened, so the series changed with the question. The report says so in its own footnote.
+
+## Vocabulary
+- **Unbanked household**: one in which no member holds a checking or savings account at a bank or credit union.
+- **Underbanked household**: one that holds an account but used at least one of eight named nonbank financial services in the past year, a definition about behaviour rather than about hardship.
+- **Fully banked household**: one that holds an account and used none of the eight nonbank services.
+- **Current Population Survey supplement**: the vehicle the FDIC survey rides on, which is what gives it a nationally representative sample of nearly 30,000 households.
+- **Series break**: what happens when a survey changes a question, making the new wave not directly comparable with the old one.
+
+## Sources
+Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national survey of unbanked and underbanked households*. https://www.fdic.gov/household-survey
+
+Federal Deposit Insurance Corporation. (n.d.). *Household survey: Frequently asked questions*. https://www.fdic.gov/household-survey/frequently-asked-questions`,
+    },
+    {
+      slug: "the-reasons-in-their-own-words",
+      title: "6 · The reasons, in their own words",
+      section: "Section 2 · Who has no account, and why they say so",
+      body: `This is the part of the survey that makes speculation unnecessary. The FDIC asks unbanked households why, from a fixed list, and publishes what they say.
+
+**How the question is actually built** matters for reading the answers. The survey instrument (question UB55) reads each reason and records yes or no, so a household can select several. Then a second question (UB60) is asked only of households that selected more than one, and it asks for **the main reason**. So each reason has two numbers: how many **cited** it, which can total well over 100 percent, and how many gave it as **the** reason, which totals 100.
+
+**The 2023 results, read from Figure 1.8 on 28 August 2026** (cited, then main):
+
+| Reason | Cited | Main |
+|---|---|---|
+| Don't have enough money to meet minimum balance requirements | 42.3% | 23.3% |
+| Don't trust banks | 36.0% | 15.7% |
+| Avoiding a bank gives more privacy | 33.9% | 5.1% |
+| Bank account fees are too high | 30.7% | 8.9% |
+| Bank account fees are too unpredictable | 29.3% | 1.2% |
+| Banks do not offer needed products and services | 20.0% | 1.7% |
+| Bank locations are inconvenient | 16.3% | 2.5% |
+| Don't have personal identification required to open an account | 13.0% | 5.1% |
+| Problems with past banking or credit history | 12.3% | 3.4% |
+| Other reason | 22.0% | 18.1% |
+| Did not select a reason | 15.0% | 15.0% |
+
+**The headline finding is about money, not attitude.** The most cited reason and the most cited main reason are the same one, and it is a balance requirement. The FDIC also groups the three fee-and-balance reasons together and reports that **33.4 percent** of unbanked households gave one of them as their main reason (FDIC, 2024). One third of the unbanked population names the price of the product.
+
+**The second finding is that unpredictability is separate from expense.** "Fees are too high" and "fees are too unpredictable" are different questions and got different answers: 30.7 percent and 29.3 percent cited. Read those together and you get a household saying the problem is not only that the account costs money, it is that it cannot forecast what it will cost. That distinction returns in Section 5, because it is the strongest reason a rational person prefers a fee printed on a wall.
+
+**The third finding is the one this course builds a whole section on.** **12.3 percent** cited "problems with past banking or credit history", and **3.4 percent** gave it as their main reason. That reason describes a **denial**, and behind a denial there is a report, and behind that report there is a federal statute nobody told them about. That is Section 3.
+
+**And the survey also asks whether they want one.** In 2023, 11.5 percent of unbanked households were very interested in having an account, 17.6 percent somewhat interested, 19.7 percent not very, and 51.2 percent not at all (FDIC, 2024). Interest is far higher among households that were banked recently: among those who had held an account in the past 12 months, **63.7 percent** were very or somewhat interested, against **25.7 percent** of those whose account was longer ago.
+
+**One honest caution about the "Other reason" line.** It was cited by 22.0 percent and was the main reason for 18.1 percent, which is the second-largest main-reason share on the chart. A fixed list of nine reasons does not exhaust the world, and this course does not pretend the nine are the whole answer.
+
+:::reveal Why do the cited percentages in Figure 1.8 add to more than 100? ||| Because the survey reads each reason separately and a household can say yes to several. Only the main-reason column adds to 100.
+
+:::reveal What share of unbanked households in 2023 gave a fee or minimum-balance reason as their MAIN reason? ||| 33.4 percent, combining fees too high, fees too unpredictable, and not enough money for a minimum balance.
+
+:::reveal Which reason points at a denial rather than a choice, and how often was it cited? ||| Problems with past banking or credit history, cited by 12.3 percent and the main reason for 3.4 percent.
+
+## Vocabulary
+- **Cited reason**: any reason a household said applied, from a read-aloud list, which is why the cited column can exceed 100 percent.
+- **Main reason**: the single reason a household picked when it had selected more than one, which is why that column totals exactly 100 percent.
+- **Fee-and-balance group**: the FDIC's own grouping of fees too high, fees too unpredictable, and insufficient money for a minimum balance, given as the main reason by 33.4 percent in 2023.
+- **Unpredictability**: a distinct survey item from expense, and the one that explains a preference for a posted fee over a variable one.
+- **Interest in having an account**: a separate survey question, which found the strongest interest among households that had held an account within the past year.
+
+## Sources
+Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national survey of unbanked and underbanked households* (Figures 1.7-1.9, Table 1.4, Appendix 3). https://www.fdic.gov/household-survey`,
+    },
+    {
+      slug: "the-distribution-is-not-random",
+      title: "7 · The distribution is not random",
+      section: "Section 2 · Who has no account, and why they say so",
+      body: `A national rate of 4.2 percent sounds like a rounding error. It is not distributed like one.
+
+**By income, the spread is the widest in the table.** Unbanked rates by family income in 2023, from Table 1.1, read on **28 August 2026** (FDIC, 2024):
+
+| Family income | Unbanked |
+|---|---|
+| Less than $15,000 | 21.8% |
+| $15,000 to $30,000 | 9.0% |
+| $30,000 to $50,000 | 4.5% |
+| $50,000 to $75,000 | 1.8% |
+| At least $75,000 | 0.7% |
+
+**That is roughly a thirtyfold difference between the bottom band and the top.** More than one household in five in the lowest income band has no account at all. Hold that against the most cited reason from the previous lesson, which was not having enough money to meet a minimum balance, and the two findings explain each other without anyone needing a theory.
+
+**By education**, 19.7 percent of households without a high school diploma were unbanked, against 0.8 percent of households with a college degree.
+
+**By disability status**, the unbanked rate among working-age households with a disability was **11.2 percent**, against **3.7 percent** of working-age households without one, so three times as high. That gap has narrowed sharply: the same figure was 16.2 percent in 2019.
+
+**By race and ethnicity**, 2023 rates were **Black 10.6 percent**, **Hispanic 9.5 percent**, **American Indian or Alaska Native 12.2 percent**, **Native Hawaiian or Other Pacific Islander 4.8 percent**, **Asian 2.0 percent**, and **White 1.9 percent** (FDIC, 2024).
+
+**The obvious objection is the right one, and the survey answers it.** Are those gaps just income in disguise? No. The report states that differences between Black and White households and between Hispanic and White households "were present at every income level", and prints the table that shows it. Among households earning between $50,000 and $75,000, the unbanked rate was 3.5 percent for Black households and 4.5 percent for Hispanic households, against **0.8 percent** for White households. In the lowest income band the same comparison runs 35.1 percent and 28.2 percent against 13.2 percent.
+
+**One number in the table moved sharply and the report says why it is uncertain.** The unbanked rate among American Indian or Alaska Native households rose from 6.9 percent in 2021 to 12.2 percent in 2023, having fallen from 16.3 percent in 2019. The report notes that the sample for this group is small, which is a warning to read a single wave carefully rather than a reason to ignore it.
+
+**Two more distinctions worth carrying forward.** First, **47.4 percent** of unbanked households in 2023 had been banked before and **52.6 percent** had never been banked, so the unbanked population is roughly half people who lost an account. Second, **66.2 percent** of unbanked households were **cash only**, using neither a prepaid card nor a nonbank online payment service, which is **2.8 percent of all U.S. households**.
+
+**Being cash only is the sharpest version of the problem.** Every mechanism the rest of this course describes, the fee schedule, the prepaid disclosure, the payment app, assumes some access to the payments system. A cash-only household is outside all of it.
+
+:::reveal How large is the gap in unbanked rates between the lowest and highest income bands? ||| 21.8 percent against 0.7 percent in 2023, roughly a thirtyfold difference.
+
+:::reveal Does income explain the whole gap by race and ethnicity? ||| No. The FDIC reports the differences were present at every income level, with 3.5 and 4.5 percent against 0.8 percent even in the $50,000 to $75,000 band.
+
+:::reveal What does cash only mean, and how common was it in 2023? ||| An unbanked household using neither prepaid cards nor nonbank online payment services: 66.2 percent of unbanked households and 2.8 percent of all households.
+
+## Vocabulary
+- **Cash only**: an unbanked household that uses neither prepaid cards nor nonbank online payment services, and so sits outside the electronic payments system entirely.
+- **Working-age household with a disability**: an FDIC survey category whose unbanked rate ran three times that of working-age households without a disability in 2023.
+- **Previously banked**: an unbanked household in which someone once held an account, roughly half of the unbanked population in 2023.
+- **Present at every income level**: the report's own phrase for gaps by race and ethnicity that persist after income is held constant.
+- **Small sample caution**: the report's warning attached to the American Indian or Alaska Native series, which is a reason to read one wave carefully rather than to discard it.
+
+## Sources
+Federal Deposit Insurance Corporation. (2024, November). *2023 FDIC national survey of unbanked and underbanked households* (Table 1.1, Figure 1.2, Table 1.3). https://www.fdic.gov/household-survey`,
+    },
+    {
+      slug: "quiz-who-has-no-account",
+      title: "8 · Knowledge check: the count, the reasons, the distribution",
+      section: "Section 2 · Who has no account, and why they say so",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "Which agency runs the national survey this course uses as its evidence spine?",
+            options: ["The FDIC", "The Consumer Financial Protection Bureau, which took over household financial surveys under the Dodd-Frank Act", "The Federal Reserve Board, which fields it alongside its own annual household economics survey", "The National Credit Union Administration, which surveys both bank and credit union members"],
+            correctIndex: 0,
+            explanation: "The FDIC runs it in partnership with the U.S. Census Bureau, as a supplement to the Current Population Survey.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "How often is the FDIC household survey conducted?",
+            options: ["Every two years", "Every year, in June, with results published the following spring by the Census Bureau", "Every five years, aligned to the decennial census and its intercensal update", "Continuously, with a rolling twelve-month sample published each calendar quarter"],
+            correctIndex: 0,
+            explanation: "It has run biennially since 2009, and the FDIC states that a new report is released in the fall of even-numbered years.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "Which survey is the FDIC household survey fielded as a supplement to?",
+            options: ["The Current Population Survey", "The American Community Survey, which the Census Bureau fields continuously across every county", "The Survey of Consumer Finances, which the Federal Reserve fields every three years", "The Survey of Income and Program Participation, which follows the same households over several years"],
+            correctIndex: 0,
+            explanation: "Riding on the CPS is what gives it a nationally representative sample, close to 30,000 households in 2023.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "When was the survey behind this course's figures actually conducted, and when was its report published?",
+            options: ["Fielded June 2023, published November 2024", "Fielded June 2025 and published November 2025, making it the newest wave available anywhere", "Fielded January 2024 and published the following June alongside the Quarterly Banking Profile", "Fielded across all of 2023 and published in stages through 2025 as each chapter was completed"],
+            correctIndex: 0,
+            explanation: "It was the most recent published edition when this course was written on 28 August 2026, and the course says so rather than implying it is the newest possible.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "How does the survey define an unbanked household?",
+            options: ["Nobody in it has a checking or savings account", "Nobody in it has used a bank branch or an automated teller machine in the past twelve months", "Its account balance fell below the institution's stated minimum at some point in the year", "It relies on nonbank services for more than half of its monthly financial transactions"],
+            correctIndex: 0,
+            explanation: "The definition is about holding an account at a bank or credit union, not about how the household transacts.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "What was the unbanked rate in 2023?",
+            options: ["4.2 percent", "14.2 percent, which was the underbanked rate rather than the unbanked one", "8.2 percent, which was the 2011 figure and the highest since the survey began", "2.8 percent, which was the share of all households that were cash-only unbanked"],
+            correctIndex: 0,
+            explanation: "About 5.6 million households, and the change from 4.5 percent in 2021 was not statistically significant.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "How does the survey define an underbanked household?",
+            options: ["It has an account and used a nonbank service", "It has an account whose balance is too low to avoid the institution's monthly maintenance fee", "It has an account at a credit union rather than at a bank insured by the FDIC", "It has an account that was opened within the past twelve months after a period without one"],
+            correctIndex: 0,
+            explanation: "It holds a checking or savings account and used at least one of eight named nonbank financial services in the past 12 months.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "How many nonbank financial services does the underbanked definition count?",
+            options: ["Eight", "Three, being nonbank money orders, check cashing, and international remittances", "Five, being rent-to-own and payday, pawn shop, auto title and tax refund anticipation loans", "Twelve, adding prepaid cards and nonbank online payment services to the ten credit and transaction items"],
+            correctIndex: 0,
+            explanation: "Three transaction services and five alternatives to mainstream credit, which together make eight.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "Which of these is one of the three TRANSACTION services in the underbanked definition?",
+            options: ["Nonbank money orders", "Payday loans, which are one of the five credit alternatives rather than a transaction service", "Rent-to-own services, which the survey groups with the credit alternatives", "Prepaid cards, which the survey asks about separately and does not count in the definition"],
+            correctIndex: 0,
+            explanation: "The three are nonbank money orders, check cashing, and international remittances.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "Which of these is one of the five CREDIT alternatives in the underbanked definition?",
+            options: ["Auto title loans", "International remittances, which the survey counts as one of the three transaction services", "Nonbank check cashing, which is also grouped with the transaction services", "Nonbank online payment services, which the survey measures but excludes from the definition"],
+            correctIndex: 0,
+            explanation: "The five are rent-to-own services and payday, pawn shop, auto title, and tax refund anticipation loans.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "What was the underbanked rate in 2023?",
+            options: ["14.2 percent", "4.2 percent, which was the unbanked rate representing about 5.6 million households", "81.6 percent, which was the share of households that were fully banked in the same year", "12.7 percent, which is what the rate would have been excluding tax refund anticipation loans"],
+            correctIndex: 0,
+            explanation: "About 19.0 million households, against 81.6 percent fully banked and 4.2 percent unbanked.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "Why is quoting the underbanked rate without its definition misleading?",
+            options: ["It is defined by behaviour, not hardship", "Because the FDIC publishes a different underbanked rate for each state and no single national figure exists", "Because the rate counts only households below the federal poverty line rather than all households", "Because the rate is an estimate with a margin of error the FDIC declines to publish"],
+            correctIndex: 0,
+            explanation: "A household with a perfectly good account that sent one international remittance last year counts as underbanked.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "Why does the report say the 2023 underbanked rate is not directly comparable with 2021?",
+            options: ["A survey question was broadened", "Because the sample size fell below the threshold the Census Bureau requires for a national estimate", "Because the survey moved from a telephone instrument to an online one between the two waves", "Because the 2021 wave was fielded during a period when branch access was restricted"],
+            correctIndex: 0,
+            explanation: "The tax refund anticipation loan question was broadened, and the report gives 13.6 percent for 2021 and 12.7 percent for 2023 on the older basis.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "What is the general lesson of that footnote about comparability?",
+            options: ["Check whether the question moved", "Assume any change of more than one percentage point reflects a real change in household behaviour", "Treat every survey series as broken unless the publisher explicitly certifies it as continuous", "Use only the first and last waves of any series, since intermediate waves are not comparable"],
+            correctIndex: 0,
+            explanation: "A survey that changes a question changes its own series, and honest publishers put that in a footnote most readers skip.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "What was the highest unbanked rate recorded since the survey began, and in which year?",
+            options: ["8.2 percent in 2011", "7.6 percent in 2009, the first year the survey was conducted by the FDIC", "6.5 percent in 2017, the peak after the recovery from the financial crisis stalled", "5.4 percent in 2019, the last pre-pandemic reading before the rate fell sharply"],
+            correctIndex: 0,
+            explanation: "Between 2011 and 2023 the rate fell by almost half, corresponding to an additional 5.3 million banked households.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "What did the report associate with about two thirds of the decline in the unbanked rate since 2011?",
+            options: ["Changes in socioeconomic circumstances", "The introduction of mobile banking apps by the largest insured depository institutions", "The expansion of federal deposit insurance coverage to a higher per-depositor amount", "A regulatory requirement that banks offer a low-cost account to every applicant"],
+            correctIndex: 0,
+            explanation: "Particularly rising income and educational attainment, though a statistically significant remainder persisted after those were accounted for.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "About how many households responded to the 2023 survey?",
+            options: ["Almost 30,000", "About 5,600, matching the number of unbanked households the survey estimated nationally", "Roughly 128 million, being every banked household in the United States", "About 2,000, the standard sample for a nationally representative federal supplement"],
+            correctIndex: 0,
+            explanation: "The report states that the survey was conducted in June 2023, collecting responses from almost 30,000 households.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "How does the survey collect reasons for not having an account?",
+            options: ["Yes or no to each item on a read list", "As an open-ended question recorded verbatim and coded afterwards by Census Bureau staff", "By asking the household to rank all nine reasons from most to least important", "By asking only the single most important reason, with no multiple-selection question at all"],
+            correctIndex: 0,
+            explanation: "Question UB55 reads each reason and records yes or no, and a follow-up asks for the main reason only of households that selected more than one.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "Why can the cited-reason percentages total more than 100?",
+            options: ["A household can select several", "Because the survey weights each household more than once when it belongs to multiple demographic groups", "Because the figures are reported separately for banked and unbanked households and then added", "Because the percentages are of adults rather than of households, and a household holds several adults"],
+            correctIndex: 0,
+            explanation: "Only the main-reason column totals 100 percent, because a household picks exactly one there.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "Which reason was cited by the largest share of unbanked households in 2023?",
+            options: ["Not enough money for a minimum balance", "Avoiding a bank gives more privacy, which was cited by a third of unbanked households", "Bank account fees are too unpredictable, which the survey asks about separately from fee levels", "Problems with past banking or credit history, which describes a denial rather than a choice"],
+            correctIndex: 0,
+            explanation: "42.3 percent cited it, and it was also the most cited main reason at 23.3 percent.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What share gave distrust of banks as their MAIN reason in 2023?",
+            options: ["15.7 percent", "36.0 percent, which was the share that cited distrust as a reason rather than as the main one", "23.3 percent, which was the main-reason share for the minimum balance item", "33.9 percent, which was the share citing that avoiding a bank gives more privacy"],
+            correctIndex: 0,
+            explanation: "Distrust was the second-most cited main reason, after not having enough money for a minimum balance.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What share of unbanked households gave a fee or minimum-balance reason as their main reason?",
+            options: ["33.4 percent", "42.3 percent, which is the share citing the minimum balance item alone as a reason", "29.2 percent, which is the same grouped figure for 2021 rather than for 2023", "23.3 percent, which is the minimum balance item's main-reason share on its own"],
+            correctIndex: 0,
+            explanation: "The FDIC groups fees too high, fees too unpredictable, and insufficient money for a minimum balance, and reports 33.4 percent in 2023.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "Which two fee-related items does the survey ask about separately?",
+            options: ["Fees too high and fees too unpredictable", "Monthly maintenance fees and overdraft fees, which households are asked to rank against each other", "Fees charged by banks and fees charged by check cashers, for a direct cost comparison", "Fees on checking accounts and fees on savings accounts, since the two products price differently"],
+            correctIndex: 0,
+            explanation: "They got different answers, 30.7 percent and 29.3 percent cited, which is why level and predictability are separate problems.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What does the separation between expense and unpredictability explain later in this course?",
+            options: ["Why a posted fee can be preferred", "Why the FDIC groups the two items together when reporting main reasons in its own tables", "Why the survey's underbanked definition excludes prepaid cards and payment apps", "Why the unbanked rate fell by almost half between 2011 and 2023"],
+            correctIndex: 0,
+            explanation: "A household that cannot forecast what an account will cost has a real reason to prefer a fee it can see in advance, which is the substitute market's core appeal.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What share cited problems with past banking or credit history in 2023?",
+            options: ["12.3 percent", "13.0 percent, which was the share citing a lack of the required personal identification", "3.4 percent, which was that item's main-reason share rather than its cited share", "22.0 percent, which was the share citing some other reason not on the list"],
+            correctIndex: 0,
+            explanation: "3.4 percent gave it as their main reason, and it is the item that points at a denial rather than a decision.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "Why does this course build a whole section on the past-banking-history reason?",
+            options: ["Behind a denial there is a report", "Because it was the most cited reason of the nine and therefore the most important quantitatively", "Because the FDIC treats it as the only reason that can be resolved by the household itself", "Because it is the only reason the survey asks about that has changed materially since 2019"],
+            correctIndex: 0,
+            explanation: "The report is a consumer report under federal law, which gives a denied applicant rights they almost never know they hold.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What proportion of unbanked households said they were not at all interested in having an account in 2023?",
+            options: ["51.2 percent", "17.6 percent, which was the share that said they were somewhat interested rather than uninterested", "11.5 percent, which was the share that said they were very interested", "19.7 percent, which was the share that said they were not very interested"],
+            correctIndex: 0,
+            explanation: "The four categories in 2023 were 11.5, 17.6, 19.7 and 51.2 percent, and the uninterested share has fallen across recent waves.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "Interest in having an account was highest among which unbanked households?",
+            options: ["Those banked within the past 12 months", "Those that had never held an account, since they had no prior experience to discourage them", "Those aged 65 or older, who were most likely to want a place to receive benefit payments", "Those in the highest income band, who had the least difficulty meeting a minimum balance"],
+            correctIndex: 0,
+            explanation: "63.7 percent of them were very or somewhat interested, against 25.7 percent whose account was longer ago.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What caution does the lesson attach to the 'Other reason' line?",
+            options: ["A nine-item list is not the world", "That the FDIC excludes it from the main-reason column, so it cannot be compared with the named items", "That households selecting it were disproportionately in the highest income bands", "That it was cited by fewer than one per cent of unbanked households and can be ignored"],
+            correctIndex: 0,
+            explanation: "It was cited by 22.0 percent and was the main reason for 18.1 percent, the second-largest main-reason share on the chart.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What was the unbanked rate among households with family income below $15,000 in 2023?",
+            options: ["21.8 percent", "9.0 percent, which was the rate in the $15,000 to $30,000 income band", "19.7 percent, which was the rate among households without a high school diploma", "35.1 percent, which was the rate for Black households in that same lowest income band"],
+            correctIndex: 0,
+            explanation: "More than one household in five in the lowest band had no account, against 0.7 percent in the highest.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What was the unbanked rate among households with family income of at least $75,000?",
+            options: ["0.7 percent", "1.8 percent, which was the rate in the $50,000 to $75,000 income band immediately below it", "4.2 percent, which was the national rate across all income bands combined", "0.8 percent, which was the rate among households holding a college degree"],
+            correctIndex: 0,
+            explanation: "Roughly a thirtyfold difference against the lowest band, which is why a 4.2 percent national rate is a poor description of the distribution.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "How do the income table and the reasons table explain each other?",
+            options: ["The top reason is a balance requirement", "The top reason is distrust, which the income table shows is concentrated among wealthier households", "The income table shows the rate is flat, which means the stated reasons must be pretextual", "The income table measures households and the reasons table measures adults, so neither is comparable"],
+            correctIndex: 0,
+            explanation: "The most cited reason for having no account is not having enough money to meet a minimum balance, and the unbanked rate is more than twenty times higher in the lowest income band than in the highest.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What was the unbanked rate among households without a high school diploma in 2023?",
+            options: ["19.7 percent", "0.8 percent, which was the rate among households holding a college degree", "6.5 percent, which was the rate among households whose highest attainment was a high school diploma", "3.0 percent, which was the rate among households with some college but no degree"],
+            correctIndex: 0,
+            explanation: "The education gradient runs from 19.7 percent to 0.8 percent between the lowest and highest attainment groups.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What was the unbanked rate among working-age households with a disability in 2023?",
+            options: ["11.2 percent", "16.2 percent, which was the same measure in 2019 before the rate fell sharply", "3.7 percent, which was the rate among working-age households without a disability", "12.2 percent, which was the rate among American Indian or Alaska Native households"],
+            correctIndex: 0,
+            explanation: "That is three times the 3.7 percent rate among working-age households without a disability, and down from 16.2 percent in 2019.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What was the unbanked rate among Black households in 2023?",
+            options: ["10.6 percent", "13.8 percent, which was the rate among Black households in 2019 rather than in 2023", "9.5 percent, which was the rate among Hispanic households in the same year", "1.9 percent, which was the rate among White households in the same year"],
+            correctIndex: 0,
+            explanation: "Down from 13.8 percent in 2019, and still several times the 1.9 percent rate among White households.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What was the unbanked rate among White households in 2023?",
+            options: ["1.9 percent", "2.0 percent, which was the rate among Asian households in the same year", "4.8 percent, which was the rate among Native Hawaiian or Other Pacific Islander households", "4.2 percent, which was the national rate across all groups combined"],
+            correctIndex: 0,
+            explanation: "It is the baseline against which the report describes rates among Black, Hispanic and American Indian or Alaska Native households as several times higher.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "Does income account for the whole gap in unbanked rates by race and ethnicity?",
+            options: ["No", "Yes, the report finds the gaps disappear entirely once income is held constant", "The report declines to test it, because income and race cannot be separated in the survey design", "Yes for Hispanic households and no for Black households, according to the report's own analysis"],
+            correctIndex: 0,
+            explanation: "The report states the differences were present at every income level, and prints the table that shows it.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "In the $50,000 to $75,000 income band, what was the unbanked rate for White households?",
+            options: ["0.8 percent", "3.5 percent, which was the rate for Black households in the same income band", "4.5 percent, which was the rate for Hispanic households in the same income band", "1.8 percent, which was the overall rate for that income band across all groups"],
+            correctIndex: 0,
+            explanation: "Against 3.5 percent for Black households and 4.5 percent for Hispanic households in the same band, which is the report's evidence that the gap is not income alone.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "Which group's unbanked rate rose sharply between 2021 and 2023 with a small-sample caution attached?",
+            options: ["American Indian or Alaska Native households", "Households without a high school diploma, whose rate rose from 19.2 to 19.7 percent over the same period", "Working-age households with a disability, whose rate had fallen from 16.2 percent in 2019", "Households in the $30,000 to $50,000 income band, whose rate rose from 4.0 to 4.5 percent"],
+            correctIndex: 0,
+            explanation: "It rose from 6.9 percent in 2021 to 12.2 percent in 2023 after falling from 16.3 percent in 2019, and the report warns that the sample is small.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What does a small-sample caution mean for reading a single wave of a survey?",
+            options: ["Read it carefully rather than discard it", "Discard the estimate entirely, since a small sample produces no usable information", "Substitute the previous wave's figure until three consecutive waves agree with each other", "Treat the estimate as exact, since the publisher would not print a figure it could not stand behind"],
+            correctIndex: 0,
+            explanation: "The report prints the figure and prints the warning, which is the honest way to handle a group whose sample cannot support a confident single-wave reading.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What share of unbanked households in 2023 had been banked at some point in the past?",
+            options: ["47.4 percent", "66.2 percent, which was the share of unbanked households that were cash only", "52.6 percent, which was the share that had never been banked rather than the share that had", "63.7 percent, which was the interest figure among households banked within the past year"],
+            correctIndex: 0,
+            explanation: "So roughly half the unbanked population consists of people who lost an account rather than never having had one.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What does the survey mean by a cash-only unbanked household?",
+            options: ["It uses neither prepaid cards nor payment apps", "It holds no account and receives all of its income in physical currency rather than by deposit", "It pays every bill in person at a counter rather than by mail or electronic transfer", "It has closed its account within the past twelve months and not yet opened another"],
+            correctIndex: 0,
+            explanation: "The FDIC infers that such households rely primarily on cash and paper instruments such as nonbank money orders.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What share of unbanked households were cash only in 2023?",
+            options: ["66.2 percent", "2.8 percent, which is the cash-only unbanked share of ALL households rather than of unbanked ones", "33.8 percent, which is the share relying on prepaid cards or nonbank online payment services", "47.4 percent, which is the share of unbanked households that had previously been banked"],
+            correctIndex: 0,
+            explanation: "As a share of all U.S. households, cash-only unbanked was 2.8 percent.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "Why does the lesson call the cash-only household the sharpest version of the problem?",
+            options: ["It is outside the payments system entirely", "Because it pays the highest total fees of any household category the survey measures", "Because it is the only category the FDIC declines to publish demographic breakdowns for", "Because it is growing faster than any other category across recent survey waves"],
+            correctIndex: 0,
+            explanation: "Every mechanism the rest of the course describes, from a fee schedule to a prepaid disclosure, assumes some access to electronic payments.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What was the fully banked share of U.S. households in 2023?",
+            options: ["81.6 percent", "95.8 percent, which was the banked share including underbanked households", "85.8 percent, being the sum of the fully banked and unbanked shares", "14.2 percent, which was the underbanked share rather than the fully banked one"],
+            correctIndex: 0,
+            explanation: "About 109.1 million households held an account and used none of the eight nonbank services.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "About how many U.S. households were unbanked in 2023?",
+            options: ["5.6 million", "19.0 million, which was the number of underbanked households rather than unbanked ones", "128.0 million, which was the number of banked households in the same year", "109.1 million, which was the number of fully banked households"],
+            correctIndex: 0,
+            explanation: "4.2 percent of households, against about 128.0 million banked households.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "About how many U.S. households were underbanked in 2023?",
+            options: ["19.0 million", "5.6 million, which was the number of unbanked households in the same year", "30,000, which was the number of households that responded to the survey", "5.3 million, which was the increase in banked households between 2011 and 2023"],
+            correctIndex: 0,
+            explanation: "14.2 percent of households, holding an account and using at least one of the eight nonbank services.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "Which survey question asks for the single main reason a household has no account?",
+            options: ["UB60", "UB55, which reads each reason in turn and records a yes or no answer for each one", "UB50, which asks how interested the household is in having a bank account", "UB10, which asks whether anyone in the household has ever held a bank account"],
+            correctIndex: 0,
+            explanation: "It is asked only of households that selected more than one reason at UB55, which is why the main-reason column sums to 100.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What share cited that bank locations are inconvenient in 2023?",
+            options: ["16.3 percent", "33.9 percent, which was the share citing that avoiding a bank gives more privacy", "20.0 percent, which was the share saying banks do not offer needed products and services", "29.3 percent, which was the share saying bank account fees are too unpredictable"],
+            correctIndex: 0,
+            explanation: "It was the main reason for 2.5 percent, and it is the reason that connects to the bank-desert material later in the course.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What share cited that avoiding a bank gives more privacy in 2023?",
+            options: ["33.9 percent", "36.0 percent, which was the share citing a general distrust of banks", "30.7 percent, which was the share citing that bank account fees are too high", "5.1 percent, which was that item's main-reason share rather than its cited share"],
+            correctIndex: 0,
+            explanation: "It was the third most cited reason, though only 5.1 percent gave it as their main one.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What is the difference between the cited column and the main column in Figure 1.8?",
+            options: ["One allows several answers, one allows one", "One reports unbanked households and the other reports all households in the survey", "One is weighted to the national population and the other reports raw response counts", "One covers 2023 and the other covers the previous wave for comparison"],
+            correctIndex: 0,
+            explanation: "Cited comes from a yes-or-no read of each item; main comes from a single choice among the items already selected.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "What was the unbanked rate for Hispanic households in 2023?",
+            options: ["9.5 percent", "12.2 percent, which was the rate among Hispanic households in 2019 rather than in 2023", "10.6 percent, which was the rate among Black households in the same year", "2.0 percent, which was the rate among Asian households in the same year"],
+            correctIndex: 0,
+            explanation: "Down from 12.2 percent in 2019, and still several times the White rate of 1.9 percent.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "In the lowest income band, how did the unbanked rate for Black households compare with White households?",
+            options: ["35.1 percent against 13.2 percent", "21.8 percent against 0.7 percent, which is the overall comparison between income bands", "10.6 percent against 1.9 percent, which is the overall comparison across all income levels", "3.5 percent against 0.8 percent, which is the comparison in the $50,000 to $75,000 band"],
+            correctIndex: 0,
+            explanation: "Hispanic households were at 28.2 percent in the same band, which is what the report means by the gap being present at every income level.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "Why does the lesson open by saying a 4.2 percent rate 'sounds like a rounding error'?",
+            options: ["Because it is not distributed like one", "Because the FDIC itself describes the change from 2021 as not statistically significant", "Because a national rate below five per cent falls inside the survey's stated margin of error", "Because the rate has fallen in every wave since the survey began in 2009"],
+            correctIndex: 0,
+            explanation: "A small national average hides a range running from 0.7 percent to 21.8 percent by income alone.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What proportion of unbanked households had NEVER been banked in 2023?",
+            options: ["52.6 percent", "47.4 percent, which was the share that had previously held an account", "66.2 percent, which was the cash-only share of unbanked households", "51.2 percent, which was the share not at all interested in having an account"],
+            correctIndex: 0,
+            explanation: "The split has moved slowly: 49.6 percent never banked in 2019 and 51.2 percent in 2021.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What does the survey's design allow it to do that speculation cannot?",
+            options: ["Publish the reasons households give", "Track the same households across successive survey waves to measure individual transitions", "Establish the cause of each household's decision through follow-up interviews", "Measure the fees each unbanked household would pay if it opened an account"],
+            correctIndex: 0,
+            explanation: "The stated reasons come from the households themselves, from a fixed list, published with both a cited and a main share.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "Which of these is NOT one of the three categories the survey sorts households into?",
+            options: ["Overbanked", "Unbanked, meaning nobody in the household holds a checking or savings account", "Underbanked, meaning the household holds an account and used a named nonbank service", "Fully banked, meaning the household holds an account and used none of the eight services"],
+            correctIndex: 0,
+            explanation: "The three are unbanked, underbanked and fully banked, and together they account for every household in the survey.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "Why does this course name the edition of the survey it is quoting?",
+            options: ["A newer wave supersedes these figures", "Because the FDIC requires the edition to be cited whenever any figure is reproduced", "Because earlier editions used a different definition of a household than the 2023 one", "Because the report is republished each quarter with revised estimates"],
+            correctIndex: 0,
+            explanation: "The survey is biennial, a 2025 wave has been fielded, and a stale rate presented as current is exactly the failure this domain punishes.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "What did the report say about the change in the unbanked rate between 2021 and 2023?",
+            options: ["It was not statistically significant", "It was the largest two-year decline the survey has recorded since it began in 2009", "It reversed a decade of improvement and returned the rate to its 2011 level", "It could not be measured because the underlying question had been rewritten"],
+            correctIndex: 0,
+            explanation: "The rate moved from 4.5 percent to 4.2 percent, and the report says the difference over that period was not statistically significant.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "What did the banked share of U.S. households come to in 2023?",
+            options: ["95.8 percent", "81.6 percent, which counts only the fully banked and excludes underbanked households", "85.8 percent, which is the fully banked share plus the unbanked share", "4.2 percent, which is the unbanked share rather than the banked one"],
+            correctIndex: 0,
+            explanation: "About 128.0 million households had at least one member holding a checking or savings account at a bank.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+          {
+            prompt: "Which two survey findings, read together, make a theory about the unbanked unnecessary?",
+            options: ["The top reason and the income gradient", "The interest question and the never-banked share, which together measure demand for accounts", "The underbanked definition and the cash-only share, which measure use of nonbank services", "The trend since 2011 and the education gradient, which measure change over time"],
+            correctIndex: 0,
+            explanation: "Households name a minimum balance more often than anything else, and the unbanked rate is more than twenty times higher in the lowest income band than in the highest.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What was the unbanked rate for households earning $15,000 to $30,000 in 2023?",
+            options: ["9.0 percent", "21.8 percent, which was the rate in the band below it, under $15,000 of family income", "4.5 percent, which was the rate in the band above it, $30,000 to $50,000", "10.4 percent, which was the rate for this band in 2019 rather than in 2023"],
+            correctIndex: 0,
+            explanation: "The gradient runs 21.8, 9.0, 4.5, 1.8 and 0.7 percent across the five bands the FDIC publishes.",
+            sourceLessonSlug: "the-distribution-is-not-random",
+          },
+          {
+            prompt: "What share cited that banks do not offer needed products and services in 2023?",
+            options: ["20.0 percent", "16.3 percent, which was the share citing inconvenient bank locations", "29.3 percent, which was the share citing that fees are too unpredictable", "1.7 percent, which was that item's main-reason share rather than its cited share"],
+            correctIndex: 0,
+            explanation: "Only 1.7 percent gave it as their main reason, which is a wide gap between a complaint and a decisive one.",
+            sourceLessonSlug: "the-reasons-in-their-own-words",
+          },
+          {
+            prompt: "By how much did the unbanked rate change between 2011 and 2023?",
+            options: ["It fell by almost half", "It roughly doubled, from 4.2 percent to 8.2 percent over the twelve-year period", "It stayed within half a percentage point across every wave in that period", "It fell to zero in three of the intervening waves before recovering"],
+            correctIndex: 0,
+            explanation: "From 8.2 percent in 2011 to 4.2 percent in 2023, corresponding to an additional 5.3 million banked households.",
+            sourceLessonSlug: "the-survey-that-counts",
+          },
+        ],
+      },
+    },
   ],
 };
