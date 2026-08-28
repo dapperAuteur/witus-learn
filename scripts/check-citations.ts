@@ -38,6 +38,14 @@ const NO_CITATIONS_EXPECTED: Record<string, string> = {
   // has sources, then re-run `pnpm gen:citations`.
   "how-to-create-a-course": "CONTENT GAP, no sources block in any lesson, needs authoring",
   spanish: "CONTENT GAP, no sources block in any lesson, needs authoring",
+  // NOT a content gap, and NOT an exemption. WARRANT-02 carries a `## Sources` block on every one
+  // of its eighteen teaching lessons. It is staged ahead of generation because BAM asked for the
+  // slug to be in STAGED_COURSES in the same branch that ships the course, and `pnpm gen:citations`
+  // reads the DATABASE rather than scripts/data, so it cannot run until the course is seeded.
+  // SELF-CLEARING: run `pnpm seed:courses` then `pnpm gen:citations`, and the staleness check below
+  // will print this slug under "Good news" and tell you to delete this line. Delete it then.
+  "the-county-committee":
+    "PENDING GENERATION, staged before seeding; run pnpm seed:courses then pnpm gen:citations and delete this line",
 };
 
 /** Flip at stage 5, when the whole library is staged. */

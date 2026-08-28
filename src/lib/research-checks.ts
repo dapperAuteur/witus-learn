@@ -2224,32 +2224,6 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
   },
   {
-    key: "match-black-farmland-owned-vs-operated-1920",
-    course: "the-match",
-    lesson: "what-this-course-refused",
-    quote:
-      "This course has not read the underlying census table for either, so it prints neither as its own claim",
-    title: "What are the 1920 census figures for Black-operated and Black-owned farmland, from the table?",
-    severity: "high",
-    question:
-      "Read the 1920 Census of Agriculture directly and record two separate figures: acres in farms OPERATED by Black farmers, and acres OWNED by Black farmers, each with the volume, table and page. A figure of 41.4 million acres operated circulates attributed to USDA's Economic Research Service, and a figure of roughly 15 million acres circulates as an ownership figure. Neither has been read off a census table here.",
-    claim:
-      "Lesson 22 names both circulating figures, says they measure different things, and refuses to print either as the course's own claim. No acreage figure appears anywhere else in the course.",
-    stakes:
-      "High, and it blocks WARRANT-02. The operated-against-owned distinction is the whole story of Black land loss, and the farm-programs course cannot be written until both numbers are read off a table rather than inherited. Printing the wrong unit would be a substantive error an agricultural historian would correct in public.",
-    needs: [
-      "Acres operated by Black farmers in 1920, with volume, table and page",
-      "Acres owned by Black farmers in 1920, with volume, table and page",
-      "The census's own definition of operator in 1920, and how it differs from the producer definition used in recent censuses",
-      "The ERS chart's underlying table reference for the 41.4 million acre figure",
-    ],
-    where: [
-      "The Cornell University agcensus digital archive, which hosts the historical Census of Agriculture volumes",
-      "USDA Economic Research Service chart notes for the 2022 Census of Agriculture",
-      "USDA NASS methodology documentation on the operator and producer definitions",
-    ],
-  },
-  {
     key: "match-1994-endowment-mechanism",
     course: "the-match",
     lesson: "three-tiers-in-one-row",
@@ -2393,6 +2367,135 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     where: [
       "rules.house.gov, for the rules of the current Congress",
       "govinfo.gov, for the House Rules and Manual (HMAN) of the current Congress and for the rules resolution as engrossed",
+    ],
+  },
+  // ── The County Committee (WARRANT-02) ─────────────────────────────────────────────────────────
+  {
+    key: "county-uphpa-current-adoption-count",
+    course: "the-county-committee",
+    lesson: "the-uniform-act-and-the-farm-number",
+    quote:
+      "here is what this course will not tell you: how many states have adopted it today",
+    title: "How many jurisdictions have enacted the Uniform Partition of Heirs Property Act today?",
+    severity: "high",
+    question:
+      "What is the CURRENT number of jurisdictions that have enacted the Uniform Partition of Heirs Property Act, as the Uniform Law Commission itself states it, and which ones are they? The Commission publishes its enactment map inside an embedded Power BI dashboard that returns nothing to an automated fetch, and its own server-rendered catalog page carries the act description with no count at all. Published secondary counts disagree and count different things: one legal-profession update gives 22 states plus DC and the U.S. Virgin Islands for 2024 and 24 plus DC and USVI for 2025, and a conservation body gives 26 states enacting the act OR a substantially similar law, which sweeps in states that extended similar protections to ALL partition actions rather than adopting the uniform act.",
+    claim:
+      "Lesson 15 states the four protections from the act's own text and then refuses to print any adoption count, tells the learner to read it from the Commission with the date they read it, and to check their own state's code. Nowhere in the course is a number given.",
+    stakes:
+      "High, and it is the single most useful practical fact in Section 4. Whether the notice, the undiscounted appraisal and the co-tenant right of first refusal protect a particular family depends entirely on whether that family's state has enacted the act. A learner who assumes their state has it, and does not, will be surprised at the worst possible moment. A stale number presented as current would also be an authoritative-values violation, since this value belongs to the Uniform Law Commission.",
+    needs: [
+      "The count as the Uniform Law Commission itself states it, read in a browser from its Partition of Heirs Property Act community page",
+      "The date it was read, which travels with the number",
+      "The list of enacting jurisdictions if the dashboard exposes one",
+      "Whether the Commission counts territories and the District of Columbia inside its headline number",
+      "The first enacting state and year, which no source consulted could supply",
+    ],
+    where: [
+      "uniformlaws.org, the Partition of Heirs Property Act community page, opened in a real browser so the embedded dashboard renders",
+      "The Commission's Legislative Counsel, who is named on the act's catalog page",
+      "Your own state legislature's code search, for the enacting section number",
+    ],
+  },
+  {
+    key: "county-dfap-appropriated-versus-paid",
+    course: "the-county-committee",
+    lesson: "the-race-neutral-rewrite",
+    quote:
+      "this course found no document itemising the difference, so it does not print one",
+    title: "What accounts for the gap between the $2.2bn appropriated and the ~$2bn USDA reported paying?",
+    severity: "medium",
+    question:
+      "Congress appropriated $2,200,000,000 at ARPA section 1006(e) as amended by IRA section 22007, and USDA announced awards totalling about $2 billion to over 43,000 recipients on 31 July 2024. What accounts for the roughly $200 million difference, line by line? The statute appropriates for the programme 'including the cost of any financial assistance' and requires delivery 'through 1 or more qualified nongovernmental entities', and a separate subsection appropriates $24,000,000 for USDA's own administrative costs, so the likely answer is payments to the third-party administrators out of the same appropriation. No document stating that was located.",
+    claim:
+      "Lesson 22 prints $2.2 billion appropriated and about $2 billion in awards, states the statutory reason the two can differ, and explicitly declines to print any breakdown of the difference.",
+    stakes:
+      "Medium. The two figures are both correct and both circulate, and a reader who meets them without the explanation reasonably concludes that $200 million went missing. The honest answer is probably mundane, and having it would let the lesson say so in one sentence instead of leaving a gap a bad-faith reader can fill.",
+    needs: [
+      "A USDA or Office of Management and Budget document breaking out programme delivery costs against awards for the Discrimination Financial Assistance Program",
+      "Whether any of the $2.2 billion remained unobligated when awards closed, and what happens to it before 30 September 2031",
+      "The names of the qualified nongovernmental entities that administered the programme, and what they were paid",
+    ],
+    where: [
+      "usda.gov and farmers.gov, which return HTTP 403 to automated fetch but resolve in a browser",
+      "USASpending.gov, which should carry the obligations under the Treasury Account for this appropriation",
+      "The Discrimination Financial Assistance Program FOIA page, which USDA maintains",
+    ],
+  },
+  {
+    key: "county-arpa-1005-amount-disbursed",
+    course: "the-county-committee",
+    lesson: "the-race-neutral-rewrite",
+    quote:
+      "This course found no official document reporting any section 1005 debt relief actually disbursed",
+    title: "Was any ARPA section 1005 debt relief ever paid out before the repeal?",
+    severity: "medium",
+    question:
+      "Did USDA disburse any farm loan debt relief under section 1005 of the American Rescue Plan Act between its enactment on 11 March 2021 and its repeal on 16 August 2022, and if so, how much and to how many borrowers? The litigation record makes zero the expected answer, since a temporary restraining order issued on 10 June 2021 and a nationwide preliminary injunction on 23 June 2021, but an expected answer is not a documented one.",
+    claim:
+      "Lesson 22 says the programme was frozen from the outset and stayed frozen until repeal, and that this course found no official document reporting any amount disbursed. It prints no figure, including no zero.",
+    stakes:
+      "Medium. Saying 'no money moved' is a strong claim and the course currently reaches it by inference from the injunction dates rather than from a disbursement record. If some payments went out in the weeks before the first order, the lesson's summary is wrong in a way a reader with the payment file could correct in public.",
+    needs: [
+      "A USDA, GAO or Congressional Budget Office statement of amounts obligated or disbursed under ARPA section 1005",
+      "If the answer is zero, a document that says so, rather than the absence of a document saying otherwise",
+      "Whether any borrower received a payment between 11 March and 10 June 2021",
+    ],
+    where: [
+      "USASpending.gov, for obligations against the section 1005 appropriation",
+      "GAO's reporting on American Rescue Plan implementation",
+      "The government's own filings in Wynn, Miller, Faust and Holman, which had to describe the programme's status",
+    ],
+  },
+  {
+    key: "county-pigford-fraud-audit-or-prosecution",
+    course: "the-county-committee",
+    lesson: "the-criticism-in-both-directions",
+    quote:
+      "This course searched for a substantiating audit or prosecution and did not find one, which is not the same sentence as \"none exists\"",
+    title: "Has any audit, inspector general report or prosecution ever substantiated Pigford claim fraud?",
+    severity: "high",
+    question:
+      "Did the USDA Office of Inspector General ever publish an audit making findings of fraud in the Pigford or Pigford II claims processes, and has the Department of Justice ever charged or convicted anyone for defrauding either settlement? CRS records that OIG conducted ongoing monitoring and added auditing to the claims review process, and OIG budget justifications for FY2013 and FY2014 request funds to apply statistical sampling to Pigford II improper payments, but no resulting published report was located. GAO-13-69R examined internal controls, expressly did not examine claimant fraud, tested 150 claims and found no exceptions.",
+    claim:
+      "Lesson 21 states that no government audit, inspector general report or prosecution that this course could locate ever found the settlements to be characterised by fraud, and says explicitly that 'not found' is not the same sentence as 'does not exist'.",
+    stakes:
+      "High, and it is the load-bearing sentence of the section that clears the brief's hard gate. The lesson reproduces a named fraud allegation precisely because it can also name the rebuttals and the audit findings, and the closing sentence is what keeps the treatment honest in both directions. If a substantiating report or a prosecution exists and this course says it searched and found none, the course is wrong on the one point where being wrong is least acceptable. If the search can be closed as genuinely exhaustive, the hedge can be tightened into a statement.",
+    needs: [
+      "Whether USDA OIG ever published an audit of Pigford or Pigford II claim validity, with the report number and date if so",
+      "Whether the improper-payment sampling work requested in the OIG FY2013 and FY2014 budget justifications was ever performed and reported",
+      "Any federal indictment, information, plea or conviction for fraud against either settlement",
+      "Whether the roughly 3,180 claims flagged for potential fraud concerns as of 23 October 2012 were ever adjudicated, and with what outcome",
+    ],
+    where: [
+      "usda.gov/oig, the Office of Inspector General's audit report index",
+      "justice.gov press releases, and PACER for the District of Columbia and the districts where claimants were concentrated",
+      "The claims administrator's later reports to the district court in In re Black Farmers Discrimination Litigation",
+    ],
+  },
+  {
+    key: "county-usccr-1982-printings-erratum",
+    course: "the-county-committee",
+    lesson: "who-sat-on-it",
+    quote:
+      "the report contradicts itself about Tennessee, in print, and there are two printings",
+    title: "Is there an erratum establishing which USCCR 1982 printing carries the correction?",
+    severity: "low",
+    question:
+      "Did the U.S. Commission on Civil Rights ever publish an erratum, corrigendum or revised-edition notice for The Decline of Black Farming in America (February 1982)? Two settings exist. The February 1982 typescript, held by ERIC as ED222604 and by the Thurgood Marshall Law Library, prints Tennessee in Table 4.1 as 33 to 2 with a change of 93.3 per cent, which does not compute. A Government Printing Office setting carrying 1983 signature marks, which is the copy usccr.gov hosts, prints the same row as 12 to 2 with 83.3 per cent, and its chapter text at page 94 says 83.3, but its Findings at page 188 still say 93.3.",
+    claim:
+      "Lesson 6 uses 83.3, shows that 12 to 2 is an exact 83.33 per cent fall, states that the report's Findings still print 93.3, and describes the two printings without asserting which is authoritative or why the correction reached some parts of the document and not others.",
+    stakes:
+      "Low for the figure, which the arithmetic settles, and genuinely useful for the lesson, which is about how to handle a source that disagrees with itself. Establishing that a correction was issued, and that it was applied to the table and the chapter but not to the findings, would turn a careful description into a documented one.",
+    needs: [
+      "Any Commission erratum, corrigendum or reprint notice for this report",
+      "Confirmation of the printing dates of the two settings, since the 1983 dating currently rests on GPO signature marks rather than on a title page",
+      "Whether the underlying source, USDA's Equal Opportunity Report: USDA Programs, 1980, at pages 53 and 73 to 76, shows Tennessee as 12 or as 33 for 1979",
+    ],
+    where: [
+      "The Commission's own publications office and its historical publications index at usccr.gov",
+      "The Thurgood Marshall Law Library's USCCR digital archive, which holds the February 1982 setting",
+      "The National Agricultural Library, for USDA's Equal Opportunity Report series",
     ],
   },
 ];

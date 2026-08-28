@@ -158,6 +158,77 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   the ground that no course taught this material; that rejection is now recorded as superseded rather
   than deleted. C6.1.3 stays partial because it also names tribal governments, which this course
   declines to teach. Deliberately **not** in \`STAGED_COURSES\` yet, matching The Match.
+- 🔧 **The County Committee** (\`content/warrant-02-county-committee\`, **Civics**, **WARRANT-02**;
+  NO migration, **re-run \`pnpm seed:courses\`**). The second course in the \`land-warrant\` series
+  and the sibling of The Match, from the same research file, section 8, Course C. WARRANT-01 met the
+  series mechanism as a FUNDING FORMULA. This is its second form: **a federal benefit delivered
+  through a local gate**, the same federal government met as a LENDER rather than as a school.
+  **It opens before any of it is about race, with a calendar.** A farmer spends in spring and is paid
+  in autumn, so a loan that arrives late is a loan that was denied, and every mechanism after that is
+  one that can spend time. Then the statutory test that changes what a refusal means: to borrow from
+  USDA an applicant must be **unable to obtain sufficient credit elsewhere** (7 U.S.C. 1922 and
+  1941), so the federal farm lender is by law the lender of last resort and a denial ends the search
+  instead of redirecting it. Then the confusion that trips up careful people: **two committee systems
+  sat in every county with almost the same name**, and only one of them was ever elected. The 1935
+  Soil Conservation and Domestic Allotment Act's committees are elected by producers (16 U.S.C.
+  590h(b)(5)); the Farmers Home Administration's credit committees were nominated by county
+  supervisors and appointed by state directors, and **61 Fed. Reg. 16461 (15 April 1996)** records
+  that section 227 of P.L. 103-354 abolished them, moved their eligibility work to the elected
+  committees, and dropped a statutory eligibility test asking whether an applicant had **"the
+  character, industry, and ability"** to farm.
+  **It closes WARRANT-01's first two refusals by opening the volume, which is exactly what that
+  course's ledger said would have to happen.** The 1920 census volumes carry no text layer and were
+  rendered and read page by page. Vol. V ch. V Tables 4 and 5, p. 298: **925,708 Negro farm
+  operators on 41,432,182 acres**, with owners 218,612, managers 2,026 and tenants 705,070 summing
+  exactly, so **three quarters of Black farm operators worked land they did not own**. And the
+  finding nobody had: **acres owned was never collected.** The enumerator's General Farm Schedule at
+  Vol. V Appendix A p. 911 asks tenure as four yes-or-no questions and acreage once, split only by
+  land USE. So the circulating "14 to 16 million acres" is the **colored** bracket (colored = Negro
+  plus Indian plus Japanese plus Chinese, a different population) printed beside a **Negro** operator
+  count, and the 13,948,512 figure back-reported in Hall (1933) is a **ceiling on land operated by
+  owners**. Hall's own section heading reads "Loss of owned land" while his sentences beneath read
+  "the land operated by owners", so the error is traceable to the source rather than to later drift.
+  The research check \`match-black-farmland-owned-vs-operated-1920\` is **deleted as closed**, and
+  The Match's ledger lesson now says what the sibling found.
+  **The brief's hard gate on the Pigford fraud allegation is cleared rather than ducked.** The rule
+  was that the allegation appears only with a named source, a named venue, named evidence and named
+  rebuttals, or the course says nothing. All four are on the record, so all four are stated: Rep.
+  Steve King's special order of 29 November 2010 at **156 Cong. Rec. H7635-41** (public domain, with
+  Rep. Bachmann's separate remarks correctly attributed to her rather than to him), Sharon
+  LaFraniere's New York Times investigation of 25 April 2013, the three kinds of evidence sorted, and
+  rebuttals from Vilsack, Prof. Susan A. Schneider, John W. Boyd Jr. and Tony West by name. The
+  load-bearing move is the distinction between what **GAO-13-69R found** (a control design that
+  generally provides reasonable assurance, with weaknesses that COULD expose the process to risk; 150
+  claims tested with no exceptions; an express statement that it did **not** examine claimant fraud;
+  and the court's own Ombudsman receiving fraud complaints only about fraud committed **against**
+  claimants) and what no audit found. The lesson says the search found nothing and that **"not found"
+  is not the same sentence as "does not exist"**.
+  **Two source-internal contradictions taught rather than smoothed, as in WARRANT-01.** USCCR (1982)
+  prints Tennessee's one-year committee loss as **83.3** in its table and chapter and **93.3** in its
+  Findings, across two printings, and 12 to 2 settles it arithmetically. CRS RS20430's narrative and
+  its own Table 1 differ by one claim on different as-of dates. **And two pieces of original
+  arithmetic:** the five lines of the Pigford Track A table sum exactly to the printed
+  \\$1,015,727,495, and the residual against the \\$1,058,577,198 overall total implies roughly
+  \\$412,000 per prevailing Track B claimant, labelled an inference because CRS prints no Track B
+  total.
+  **Tested and refused, eight of them, with a ledger lesson that prints all eight:** any bare 1920
+  owned-acreage figure, a current count of states adopting the Uniform Partition of Heirs Property
+  Act (the Uniform Law Commission publishes it only inside a dashboard, and the secondary counts
+  disagree and count different things), any disbursement figure for ARPA section 1005, an itemisation
+  of the \\$2.2bn-against-\\$2bn gap in the successor programme, any claim that an audit substantiated
+  Pigford fraud, the 93.3 per cent Tennessee figure except as a stated contradiction, any inference
+  about intent from committee composition, and any characterisation of how a court would have ruled
+  on section 1005, which was **repealed rather than litigated to judgment**. Five open questions
+  filed in \`src/lib/research-checks.ts\`.
+  6 sections, 18 teaching lessons, 6 section quizzes (75/74/88/81/76/91 serving 5) and a 50-question
+  final serving 10, for **535 pooled questions**, 54 reveal cards, and **zero findings** from
+  \`pnpm audit:course the-county-committee --spec\`. Standards: a new content claim,
+  \`history.federal-farm-programs-and-local-administration\`, referenced from **Indiana's USH.4.7**
+  (the Second New Deal's long-term effects on agriculture, which the 1935 Act's still-running
+  committee system genuinely supplies) and **Virginia's GOVT.14c** (government's establishment and
+  enforcement of property rights, which Section 4 now supplies from the enforcement side). Unlike The
+  Match, this one **is** added to \`STAGED_COURSES\` in \`src/lib/citations.ts\` at BAM's request;
+  \`pnpm gen:citations\` reads the DATABASE, so it runs after the course is seeded, not before.
 - 🔧 **The Match** (\`content/the-match-1890-institutions\`, **Civics**, **WARRANT-01**; NO migration,
   **re-run \`pnpm seed:courses\`**). The first course in a NEW series, from the research file
   \`plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md\`, which

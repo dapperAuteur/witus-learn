@@ -109,6 +109,15 @@ export const STAGED_COURSES: string[] = [
   "deep-time-and-the-dinosaur-renaissance",
   "wrong-for-good-reasons",
   "writing-the-world",
+  // WARRANT-02. Staged because its whole argument rests on documents a reader can open: statutes on
+  // uscode.house.gov, a Federal Register notice, two scanned census volumes read page by page, a
+  // civil rights commission report that contradicts itself, CRS and GAO reports, filed court orders,
+  // and one paywalled newspaper investigation whose byline, headline and date were confirmed through
+  // an archived capture. A verifier should check that each source EXISTS, still resolves, and says
+  // what the lesson says it says. Two known traps for whoever takes this on: the New York Times URL
+  // returns 403 to automated fetch but resolves in a browser, and Cornell's agcensus archive, which
+  // older writing on this subject cites, is retired and now redirects to USDA NASS.
+  "the-county-committee",
 ];
 
 export const CITATIONS: Citation[] = STAGED_CITATIONS;
