@@ -2686,5 +2686,654 @@ The level payment that pays this to zero in 360 months is about **1,199.10**. No
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Valuation, and the decision made about the property
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "what-an-appraisal-is-for",
+      title: "17 · What an appraisal is, and who it is actually for",
+      section: "Section 5 · Valuation, and the decision made about the property",
+      body: `Every decision so far has been made about you. This one is made about the property, and it can stop a transaction that your side of the paperwork had already cleared.
+
+**What an appraisal is, in a federal regulation's own words.** HUD's fair housing rule defines it as "an estimate or opinion of the value of a specified residential real property made in a business context in connection with the sale, rental, financing or refinancing of a dwelling or in connection with any activity that otherwise affects the availability of a residential real estate-related transaction, whether the appraisal is oral or written, or transmitted formally or informally" (24 CFR § 100.135, n.d.).
+
+**Read the first six words again. An estimate or opinion.** Not a measurement, not a fact, and not a price. It is a professional judgement about what a specific property is worth, produced by a person applying a method to a set of comparable sales they selected. **That is the same lesson MONEY-01 taught about a credit score**, which the statute there defines as a prediction from a statistical tool rather than a measurement of a person. The catalog keeps meeting this shape: a number that looks like a fact and is a judgement wearing a fact's clothes.
+
+**Regulation B has its own broader term.** For the appraisal rules, "the term 'valuation' means any estimate of the value of a dwelling developed in connection with an application for credit" (12 CFR § 1002.14, n.d.). Broader, because it reaches beyond the traditional appraisal report to any estimate of value developed for the application, which matters when part of the work is done by software rather than by a person.
+
+**Why the lender wants one at all, from the statute that requires it.** Title XI of FIRREA states its purpose plainly: to provide "that Federal financial and public policy interests in real estate related transactions will be protected by requiring that real estate appraisals utilized in connection with federally related transactions are performed in writing, in accordance with uniform standards, by individuals whose competency has been demonstrated and whose professional conduct will be subject to effective supervision" (12 U.S.C. § 3331, n.d.).
+
+**Four requirements in one sentence**, and they are worth counting: in writing, to uniform standards, by someone whose competence has been demonstrated, and under effective supervision. **That is a system built because the alternative failed**, and it tells you what to check when a valuation looks wrong: was it written, against what standard, by whom, and who supervises them.
+
+**Who the appraiser works for.** In a purchase transaction the appraisal is ordered in connection with the lender's decision, because the lender is deciding how much to lend against this specific collateral. The buyer often pays for it. **Paying for a report and being its audience are different things**, and holding both ideas at once is the point of the next lesson, which is about the copy you are entitled to.
+
+**What happens when the value comes in below the price.** The lender is lending against the property, so a lower valuation generally means a lower amount the lender will advance, which leaves a gap somebody has to fill: a larger payment from the buyer, a renegotiated price, a second opinion, or no transaction. This course does not tell you which of those to pursue. It tells you that the number driving all of it is an opinion, produced under a standard, by a named person, in a document you are entitled to read.
+
+**And that is why this section exists in a personal finance course at all.** A learner who understands the Loan Estimate and nothing about valuation can still be told, three weeks in, that the deal has changed for a reason they have no way to examine. The next two lessons close that gap, first with a right and then with a law.
+
+:::reveal What does HUD's regulation say an appraisal is, in its first six words? ||| An estimate or opinion of the value of a specified residential real property.
+
+:::reveal What four things does Title XI of FIRREA require of appraisals in federally related transactions? ||| That they be in writing, in accordance with uniform standards, by individuals whose competency has been demonstrated, and subject to effective supervision.
+
+:::reveal How does Regulation B's definition of a valuation differ from the traditional appraisal? ||| It reaches any estimate of the value of a dwelling developed in connection with an application for credit, which is broader than one appraisal report.
+
+## Vocabulary
+- **Appraisal**: an estimate or opinion of the value of a specified residential property made in a business context in connection with a sale, rental, financing or refinancing, whether oral or written.
+- **Valuation**: Regulation B's broader term for any estimate of the value of a dwelling developed in connection with an application for credit.
+- **Uniform standards**: the requirement, stated in Title XI, that appraisals in federally related transactions be performed to a common standard rather than to each appraiser's own method.
+- **Comparable sales**: the other transactions an appraiser selects and adjusts in order to reach an opinion, which is where the judgement in a valuation actually lives.
+
+## Sources
+24 CFR § 100.135. (n.d.). *Unlawful practices in the selling, brokering, or appraising of residential real property*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/24/100.135
+
+12 CFR § 1002.14. (n.d.). *Rules on providing appraisals and other valuations*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1002.14
+
+12 U.S.C. § 3331. (n.d.). *Purpose*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/12/3331`,
+    },
+    {
+      slug: "your-copy-of-the-valuation",
+      title: "18 · The copy you are entitled to, and the clock on it",
+      section: "Section 5 · Valuation, and the decision made about the property",
+      body: `There is a rule about appraisals that a great many people who have bought a home have never heard, and it is one of the shortest and clearest consumer rights in this whole course.
+
+**The right itself.** Regulation B provides that "A creditor shall provide an applicant a copy of all appraisals and other written valuations developed in connection with an application for credit that is to be secured by a first lien on a dwelling" (12 CFR § 1002.14, n.d.).
+
+**Count the scope words. All. And other written valuations.** Not the appraisal, not on request, not a summary. Every appraisal and every other written valuation developed in connection with the application.
+
+**The timing.** The rule continues: "A creditor shall provide a copy of each such appraisal or other written valuation promptly upon completion, or three business days prior to consummation of the transaction (for closed-end credit) or account opening (for open-end credit), whichever is earlier" (12 CFR § 1002.14, n.d.). **Whichever is earlier** is the part that does the work. It is not a right to receive the report at the closing table. It is a right to receive it promptly when it exists, and in any case with time to read it.
+
+**A waiver exists, and knowing that is part of knowing the right.** The rule provides that "An applicant may waive the timing requirement in this paragraph (a)(1) and agree to receive any copy at or before consummation or account opening, except where otherwise prohibited by law" (12 CFR § 1002.14, n.d.). What may be waived is the **timing**, not the copy. Anyone asked to sign a waiver should at least know which of those two things they are being asked to give up.
+
+**You are also told the right exists, in writing, early.** The rule requires that a creditor "mail or deliver to an applicant, not later than the third business day after the creditor receives an application for credit that is to be secured by a first lien on a dwelling, a notice in writing of the applicant's right to receive a copy of all written appraisals developed in connection with the application" (12 CFR § 1002.14, n.d.). **Three business days again**, running from the same defined application that starts the Loan Estimate clock in Section 3. The two rights arrive together, by design.
+
+**And it is free.** The rule states that "A creditor shall not charge an applicant for providing a copy of appraisals and other written valuations as required under this section, but may require applicants to pay a reasonable fee to reimburse the creditor for the cost of the appraisal or other written valuation unless otherwise provided by law" (12 CFR § 1002.14, n.d.). **Two different charges, and the distinction is exact.** Paying for the appraisal to be done is permitted. Charging you to hand you the copy is not.
+
+**What the copy is actually for.** It names the person who formed the opinion, states the method, and lists the comparable sales they chose and the adjustments they made. That is the whole substance of the judgement, and it is checkable in a way the conclusion alone is not. Were the comparables in the same area. Were they recent. Were they similar in size, condition and age. Was anything about the property described in a way that does not match what is there.
+
+**Which is what makes a reconsideration of value possible at all.** A lender's process for reviewing a valuation runs on specifics: this comparable is in a different market, that one sold in a condition the subject property is not in, this square footage is wrong. **A request that says the number feels low is not a request; a request that names three comparables and a factual error is one.** The document is what supplies the second kind, which is why the right to receive it promptly is worth more than it sounds.
+
+:::reveal What must a creditor provide an applicant under Regulation B's appraisal rule? ||| A copy of all appraisals and other written valuations developed in connection with an application for credit secured by a first lien on a dwelling.
+
+:::reveal What may an applicant waive, and what may they not? ||| The timing requirement may be waived so the copy comes at or before consummation. The copy itself is not what is being waived.
+
+:::reveal What may a creditor charge for, and what may it not charge for? ||| It may require a reasonable fee to reimburse the cost of the appraisal, and it may not charge for providing the copy.
+
+## Vocabulary
+- **Copy of all written valuations**: the Regulation B right covering every appraisal and other written valuation developed in connection with an application secured by a first lien on a dwelling.
+- **Promptly upon completion**: the timing standard, applied alongside a three-business-day-before-consummation backstop, whichever comes earlier.
+- **Timing waiver**: what an applicant may agree to give up, which is when the copy arrives rather than whether it arrives at all.
+- **Reconsideration of value**: a lender's review of a valuation, which runs on named comparables and factual errors rather than on an impression that the number is low.
+
+## Sources
+12 CFR § 1002.14. (n.d.). *Rules on providing appraisals and other valuations*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1002.14`,
+    },
+    {
+      slug: "valuation-is-a-covered-transaction",
+      title: "19 · Appraising is written into the statute, and so is the exception",
+      section: "Section 5 · Valuation, and the decision made about the property",
+      body: `Housing discrimination law does not stop at who may buy. Congress wrote valuation into the statute by name, and it wrote a carve-out beside it, and reading both is how you understand what a claim in this area actually has to prove.
+
+**The prohibition.** The Fair Housing Act provides that "It shall be unlawful for any person or other entity whose business includes engaging in residential real estate-related transactions to discriminate against any person in making available such a transaction, or in the terms or conditions of such a transaction, because of race, color, religion, sex, handicap, familial status, or national origin" (42 U.S.C. § 3605, n.d.).
+
+**Then the statute defines the covered transaction, and the second half is the one to notice.** The term includes "(1) The making or purchasing of loans or providing other financial assistance (A) for purchasing, constructing, improving, repairing, or maintaining a dwelling; or (B) secured by residential real estate" and "(2) The selling, brokering, or appraising of residential real property" (42 U.S.C. § 3605, n.d.).
+
+**Appraising is in the statute, by name, as its own numbered clause.** Not as an interpretation, not as agency guidance that could be withdrawn. It is written into the Act.
+
+**HUD's regulation says the same thing at the operational level**, making it unlawful "for any person or other entity whose business includes engaging in the selling, brokering or appraising of residential real property to discriminate against any person in making available such services, or in the performance of such services", on the same protected bases (24 CFR § 100.135, n.d.). And it names practices that are covered, including "Using an appraisal of residential real property in connection with the sale, rental, or financing of any dwelling where the person knows or reasonably should know that the appraisal improperly takes into consideration race, color, religion, sex, handicap, familial status, or national origin" (24 CFR § 100.135, n.d.).
+
+**Read that carefully, because it reaches past the appraiser.** The person who USES an appraisal they know or reasonably should know is tainted is within the rule. Responsibility does not stop with whoever wrote the report.
+
+**Now the exception, which is where honest teaching earns its keep.** The Act also provides that "Nothing in this subchapter prohibits a person engaged in the business of furnishing appraisals of real property to take into consideration factors other than race, color, religion, national origin, sex, handicap, or familial status" (42 U.S.C. § 3605, n.d.), and HUD's rule carries a parallel sentence (24 CFR § 100.135, n.d.).
+
+**That clause is not a loophole and it is not nothing.** It says what a valuation is allowed to be: an opinion built on other factors. **The whole legal question in an appraisal case is therefore which factors were actually operating**, which is precisely why the previous lesson's right to the document matters so much. A conclusion cannot be examined. A list of comparables and adjustments can.
+
+**The newest layer is about software rather than people.** Six federal agencies adopted a rule imposing quality control standards on automated valuation models used in certain credit decisions and securitization determinations, published at 89 Fed. Reg. 64538 on 7 August 2024 and effective 1 October 2025 (Consumer Financial Protection Bureau, 2024). Its quality control factors require institutions to adopt policies designed to "ensure a high level of confidence in the estimates produced by AVMs", to "protect against the manipulation of data", to "seek to avoid conflicts of interest", to "require random sample testing and reviews", and to "comply with applicable nondiscrimination laws" (Consumer Financial Protection Bureau, 2024).
+
+**The fifth factor is the one to hold.** A nondiscrimination requirement written into a model's quality control standards says something the rest of this section has been building toward: **the law follows the decision, not the decider.** When part of a valuation moved from a person to a model, the obligation moved with it.
+
+**One honesty note, stated rather than hidden.** A federal interagency task force published an action plan on appraisal bias in 2022 which this course would ordinarily cite. As of 28 August 2026 its published web host did not resolve, so the course does not cite an address it could not open. That is filed as an open source check rather than papered over, because a dead link presented as a source is worse than a gap.
+
+:::reveal Which clause of the Fair Housing Act's definition covers valuation? ||| The definition of a residential real estate-related transaction includes the selling, brokering, or appraising of residential real property.
+
+:::reveal Who besides the appraiser can fall within HUD's rule? ||| A person who uses an appraisal they know or reasonably should know improperly takes a protected characteristic into consideration.
+
+:::reveal What is the fifth quality control factor in the automated valuation model rule? ||| That the models comply with applicable nondiscrimination laws.
+
+## Vocabulary
+- **Residential real estate-related transaction**: the Fair Housing Act's defined term, which expressly includes the selling, brokering or appraising of residential real property as well as lending secured by it.
+- **Other factors**: the statutory clause permitting an appraiser to take into account factors other than the protected characteristics, which frames the legal question as which factors were operating.
+- **Knows or reasonably should know**: the standard by which HUD's rule reaches the user of a tainted appraisal and not only its author.
+- **Automated valuation model**: software producing an estimate of value, brought under interagency quality control standards including a nondiscrimination factor effective 1 October 2025.
+
+## Sources
+42 U.S.C. § 3605. (n.d.). *Discrimination in residential real estate-related transactions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/42/3605
+
+24 CFR § 100.135. (n.d.). *Unlawful practices in the selling, brokering, or appraising of residential real property*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/24/100.135
+
+Consumer Financial Protection Bureau. (2024). *Quality control standards for automated valuation models* [Final rule, 89 Fed. Reg. 64538, Aug. 7, 2024; effective Oct. 1, 2025]. https://www.consumerfinance.gov/rules-policy/final-rules/quality-control-standards-for-automated-valuation-models/`,
+    },
+    {
+      slug: "quiz-valuation",
+      title: "20 · Knowledge check: valuation, and the decision about the property",
+      section: "Section 5 · Valuation, and the decision made about the property",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is the appraisal decision made about?",
+            options: ["The property", "The applicant's income and employment history", "The lender's exposure across its whole loan portfolio", "The seller's willingness to accept a lower purchase price"],
+            correctIndex: 0,
+            explanation: "It can stop a transaction that the applicant's side of the paperwork had already cleared.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "How does HUD's regulation define an appraisal, in its opening words?",
+            options: ["An estimate or opinion of value", "A determination of the price at which a property must be sold", "A measurement of a dwelling's replacement cost for insurance purposes", "A statement of the assessed value the county has placed on a parcel"],
+            correctIndex: 0,
+            explanation: "The definition covers appraisals made in a business context, whether oral or written and however transmitted.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "Which transactions does HUD's appraisal definition connect to?",
+            options: ["Sale, rental, financing or refinancing", "Only a purchase financed by a federally insured lender", "Only a sale in which a licensed broker represents a party", "Only a transaction reported under the mortgage data rules"],
+            correctIndex: 0,
+            explanation: "It also reaches any activity that otherwise affects the availability of a residential real estate-related transaction.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "Does HUD's definition of an appraisal require the appraisal to be written?",
+            options: ["No, oral is covered", "Yes, only written reports fall within the definition", "Only where the transaction is financed by a regulated lender", "Only where the appraiser holds a state-issued certification"],
+            correctIndex: 0,
+            explanation: "The definition covers an appraisal whether it is oral or written, and whether transmitted formally or informally.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "What does the course say an appraisal is not?",
+            options: ["A measurement", "A judgement formed by a person applying a method", "An opinion about what a specific property is worth", "A document produced in connection with a lending decision"],
+            correctIndex: 0,
+            explanation: "It is a professional judgement produced by applying a method to a set of comparable sales the appraiser selected.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "Which earlier course taught the same shape about a different number?",
+            options: ["MONEY-01, on the credit score", "MONEY-02, on the identity documents a bank must collect", "WARRANT-02, on the eligibility test in a federal credit statute", "MONEY-04, on converting a flat fee into an annual percentage rate"],
+            correctIndex: 0,
+            explanation: "There the statute defines a score as a prediction from a statistical tool rather than a measurement of a person.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "How does the course describe a number that looks like a fact but is a judgement?",
+            options: ["A judgement in a fact's clothes", "An estimate that regulation requires to be labelled as such", "A figure that must be disclosed with its confidence interval", "A conclusion the consumer may require the author to justify"],
+            correctIndex: 0,
+            explanation: "The catalog keeps meeting the shape, in the credit score and now in the valuation.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "How does Regulation B define a valuation?",
+            options: ["Any estimate of a dwelling's value for an application", "A written appraisal report prepared by a certified appraiser", "The value a lender assigns to collateral after its own review", "The price at which comparable properties recently changed hands"],
+            correctIndex: 0,
+            explanation: "It is broader than the traditional appraisal report, which matters when part of the work is done by software.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "What does Title XI of FIRREA state as its purpose?",
+            options: ["Protecting federal and public policy interests", "Setting a national schedule of fees appraisers may charge", "Guaranteeing that appraisals match the agreed purchase price", "Requiring lenders to obtain two independent appraisals per loan"],
+            correctIndex: 0,
+            explanation: "It does so by requiring appraisals in federally related transactions to meet four stated conditions.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "How many requirements does Title XI's purpose sentence contain?",
+            options: ["Four", "Two, that the appraisal be written and independently reviewed", "Six, adding a timing rule and a fee limit to the other four", "One, that the appraiser be licensed in the state of the property"],
+            correctIndex: 0,
+            explanation: "In writing, to uniform standards, by someone whose competence has been demonstrated, and under effective supervision.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "Which of these is one of Title XI's four requirements?",
+            options: ["Effective supervision", "Delivery to the applicant within three business days", "Agreement between two independently prepared reports", "Approval by the lender's own internal review committee"],
+            correctIndex: 0,
+            explanation: "The others are that the appraisal be in writing, to uniform standards, and by someone of demonstrated competency.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "What does the course say those four requirements tell you to check?",
+            options: ["Written, standard, whom, supervisor", "Price, condition, location, and the age of the building", "Rate, term, payment, and the total interest percentage", "Income, assets, credit, and the size of the down payment"],
+            correctIndex: 0,
+            explanation: "It is a system built because the alternative failed, so the requirements double as a checklist when a valuation looks wrong.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "In a purchase transaction, in connection with whose decision is the appraisal ordered?",
+            options: ["The lender's", "The buyer's, since the buyer commonly pays for it", "The seller's, who must establish a defensible asking price", "The county's, which uses it to set the annual assessment"],
+            correctIndex: 0,
+            explanation: "The lender is deciding how much to lend against that specific collateral, even though the buyer often pays for the report.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "What distinction does the lesson draw about paying for a report?",
+            options: ["Paying and being its audience differ", "Paying for it transfers ownership of the document", "Paying for it entitles the payer to select the appraiser", "Paying for it makes the report binding on the lender"],
+            correctIndex: 0,
+            explanation: "Holding both ideas at once is the point of the following lesson, which is about the copy the applicant is entitled to.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "What generally follows when a valuation comes in below the agreed price?",
+            options: ["A gap somebody has to fill", "The lender must lend the full amount anyway", "The sale is void by operation of federal regulation", "The appraiser is required to revise the report upward"],
+            correctIndex: 0,
+            explanation: "A larger payment, a renegotiated price, a second opinion, or no transaction; the course does not say which to pursue.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "Why does the course say this section belongs in a personal finance course?",
+            options: ["Otherwise the deal changes unexaminably", "Because valuation is the largest single cost in the transaction", "Because the appraisal determines the interest rate the lender offers", "Because a buyer may choose the appraiser once the offer is accepted"],
+            correctIndex: 0,
+            explanation: "A learner who knows the Loan Estimate and nothing about valuation can be told weeks in that the deal has changed for a reason they cannot examine.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "What must a creditor provide under Regulation B's appraisal rule?",
+            options: ["A copy of all written valuations", "A summary of the appraiser's conclusion on request", "The appraisal report only, and only after consummation", "An explanation of any figure the applicant disputes in writing"],
+            correctIndex: 0,
+            explanation: "The rule reaches every appraisal and other written valuation developed in connection with the application.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "Which applications does the copy right attach to?",
+            options: ["Credit secured by a first lien on a dwelling", "Any application for consumer credit of any kind", "Applications for credit secured by any real property", "Applications where the property is the applicant's residence"],
+            correctIndex: 0,
+            explanation: "The scope words in the rule are all appraisals and other written valuations developed in connection with such an application.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What is the timing standard for providing the copy?",
+            options: ["Promptly upon completion, or three days before, whichever is earlier", "At the closing table, along with the other transaction documents", "Within thirty days of the applicant making a written request", "At the same time the Closing Disclosure is delivered"],
+            correctIndex: 0,
+            explanation: "Whichever is earlier is the part that does the work, because it is not a right to receive the report at the closing.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What does the whichever-is-earlier language prevent?",
+            options: ["Receiving it only at the closing", "The creditor charging for the copy it provides", "An applicant waiving any part of the requirement", "The creditor omitting a valuation prepared by software"],
+            correctIndex: 0,
+            explanation: "It is a right to receive the document promptly when it exists, and in any case with time to read it.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What may an applicant waive under the rule?",
+            options: ["The timing requirement", "The right to receive any copy at all", "The requirement that the valuation be in writing", "The creditor's obligation to notify them of the right"],
+            correctIndex: 0,
+            explanation: "They may agree to receive any copy at or before consummation or account opening, except where otherwise prohibited by law.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "Why does the course say knowing about the waiver is part of knowing the right?",
+            options: ["So a signer knows what is being given up", "Because the waiver must be notarised to be effective", "Because a waiver cancels the notice requirement as well", "Because a waived right cannot be reinstated later"],
+            correctIndex: 0,
+            explanation: "What may be waived is when the copy arrives, not whether it arrives at all.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "When must the creditor notify the applicant in writing of the copy right?",
+            options: ["Not later than the third business day after application", "At the time the appraisal is ordered from the appraiser", "Within seven business days before consummation", "At the same time the copy itself is delivered"],
+            correctIndex: 0,
+            explanation: "It runs from the same defined application that starts the Loan Estimate clock in Section 3, so the two rights arrive together.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What does the notice have to tell the applicant?",
+            options: ["That they may receive copies of all written appraisals", "The estimated value the appraiser is expected to reach", "The fee the creditor will charge for the appraisal", "The identity of the appraiser the creditor has engaged"],
+            correctIndex: 0,
+            explanation: "It is a written notice of the applicant's right to receive a copy of all written appraisals developed in connection with the application.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What may a creditor NOT charge for?",
+            options: ["Providing the copy", "The cost of having the appraisal performed", "The cost of a second appraisal the applicant requests", "The cost of reviewing a reconsideration of value request"],
+            correctIndex: 0,
+            explanation: "It may require a reasonable fee to reimburse the cost of the appraisal or other written valuation, but not for handing over the copy.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What may a creditor charge a reasonable fee for?",
+            options: ["Reimbursing the cost of the appraisal", "Delivering the copy by a method the applicant chooses", "Explaining the appraiser's methodology to the applicant", "Storing the valuation in the applicant's loan file"],
+            correctIndex: 0,
+            explanation: "Unless otherwise provided by law, which is a different charge from charging for the copy itself.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What does the copy contain that makes the judgement checkable?",
+            options: ["Comparables and adjustments", "The lender's internal risk rating for the transaction", "The seller's original purchase price for the property", "The county's assessed value for the current tax year"],
+            correctIndex: 0,
+            explanation: "It also names the person who formed the opinion and states the method, which the conclusion alone does not.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "Which of these does the lesson suggest checking in a valuation?",
+            options: ["Whether the comparables were recent", "Whether the appraiser's fee was reasonable", "Whether the lender approved the report internally", "Whether the buyer agreed with the conclusion reached"],
+            correctIndex: 0,
+            explanation: "Also whether they were in the same area, similar in size, condition and age, and whether the description matches the property.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What does the course say a reconsideration request runs on?",
+            options: ["Specifics", "The applicant's willingness to escalate to a supervisor", "The strength of the applicant's relationship with the lender", "The difference between the valuation and the purchase price"],
+            correctIndex: 0,
+            explanation: "This comparable is in a different market, that one sold in a different condition, this square footage is wrong.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What does the course say about a request that the number feels low?",
+            options: ["It is not a request", "It is sufficient where the gap exceeds ten percent", "It must be answered within three business days", "It shifts the burden onto the appraiser to justify the figure"],
+            correctIndex: 0,
+            explanation: "A request that names three comparables and a factual error is one, and the document is what supplies that kind.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "Under the Fair Housing Act, who is covered by the residential real estate-related transactions prohibition?",
+            options: ["Any person whose business includes such transactions", "Only federally insured depository institutions and their affiliates", "Only lenders originating more than a threshold number of loans", "Only parties who advertise their services to the general public"],
+            correctIndex: 0,
+            explanation: "The prohibition covers discrimination in making a transaction available and in its terms or conditions.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What does the second numbered clause of the covered-transaction definition name?",
+            options: ["Selling, brokering, or appraising", "Insuring, servicing, or securitising residential loans", "Advertising, listing, or showing residential property", "Surveying, inspecting, or certifying residential dwellings"],
+            correctIndex: 0,
+            explanation: "Appraising is in the statute by name as its own numbered clause, not as agency interpretation.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What does the first numbered clause of that definition cover?",
+            options: ["Making or purchasing loans and other financial assistance", "The listing and marketing of residential property for sale", "The management of rental property on an owner's behalf", "The construction of new dwellings for sale to the public"],
+            correctIndex: 0,
+            explanation: "For purchasing, constructing, improving, repairing or maintaining a dwelling, or secured by residential real estate.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "Why does the course emphasise that appraising is in the statute?",
+            options: ["It is not withdrawable guidance", "Because the statute sets the penalties for a violation", "Because agencies cannot issue regulations on the subject", "Because it means every appraisal must be federally reviewed"],
+            correctIndex: 0,
+            explanation: "It is written into the Act rather than resting on an interpretation that an agency could later change.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What does HUD's regulation make unlawful for those in the appraising business?",
+            options: ["Discriminating in making or performing services", "Charging different fees in different neighbourhoods", "Declining an assignment outside their area of competence", "Using automated tools without disclosing them to the applicant"],
+            correctIndex: 0,
+            explanation: "It reaches both making the services available and the performance of those services, on the listed protected bases.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "Which practice does HUD's rule name as unlawful besides producing a tainted appraisal?",
+            options: ["Using one you should know is tainted", "Ordering an appraisal from an out-of-area appraiser", "Failing to provide the applicant with a copy of the report", "Relying on an automated model rather than a human appraiser"],
+            correctIndex: 0,
+            explanation: "The standard is that the person knows or reasonably should know the appraisal improperly takes a protected characteristic into consideration.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What does the knows-or-reasonably-should-know standard mean for responsibility?",
+            options: ["It does not stop with the author", "It applies only where the user commissioned the report", "It requires actual knowledge rather than constructive knowledge", "It shifts liability entirely from the user to the appraiser"],
+            correctIndex: 0,
+            explanation: "The person who uses a tainted appraisal is within the rule as well as the person who wrote it.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What does the Fair Housing Act say an appraiser may take into consideration?",
+            options: ["Factors other than the protected characteristics", "Any factor at all, provided the method is applied consistently", "Neighbourhood composition, where it affects marketability", "Only the physical characteristics of the property itself"],
+            correctIndex: 0,
+            explanation: "HUD's regulation carries a parallel sentence, and the course calls the clause neither a loophole nor nothing.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What does that exception clause tell you a valuation is allowed to be?",
+            options: ["An opinion built on other factors", "A conclusion the appraiser need not justify", "A figure immune from challenge once delivered", "An estimate binding on every party to the transaction"],
+            correctIndex: 0,
+            explanation: "Which is why the whole legal question becomes which factors were actually operating in the particular case.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "Why does the previous lesson's right matter so much to an appraisal claim?",
+            options: ["A conclusion cannot be examined", "Because the copy is admissible where the report is not", "Because receiving the copy starts the limitation period running", "Because a claim requires the applicant to have paid for the report"],
+            correctIndex: 0,
+            explanation: "A list of comparables and adjustments can be examined, and that is what the copy supplies.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "How many federal agencies adopted the automated valuation model rule?",
+            options: ["Six", "Two, the prudential regulator and the housing finance agency", "One, acting on authority delegated by the other regulators", "Twelve, one for each federal reserve district in the system"],
+            correctIndex: 0,
+            explanation: "It was published at 89 Fed. Reg. 64538 on 7 August 2024 and took effect on 1 October 2025.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "When did the automated valuation model rule take effect?",
+            options: ["1 October 2025", "7 August 2024, the date of publication in the Federal Register", "1 January 2026, at the start of the following calendar year", "Immediately on adoption, with a two-year compliance period"],
+            correctIndex: 0,
+            explanation: "The course dates it because a rule's effective date is a fact that a reader may need to check against a later change.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "Which of these is one of the rule's quality control factors?",
+            options: ["Protect against the manipulation of data", "Publish the model's source code for public inspection", "Obtain a human appraiser's confirmation of every estimate", "Limit the model's use to properties above a stated value"],
+            correctIndex: 0,
+            explanation: "The others require high confidence in estimates, avoiding conflicts of interest, random sample testing and reviews, and nondiscrimination compliance.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What does the fifth quality control factor require?",
+            options: ["Compliance with nondiscrimination laws", "Annual certification by an independent auditor", "Disclosure of the model's confidence interval to consumers", "Retention of every estimate for a period of five years"],
+            correctIndex: 0,
+            explanation: "A nondiscrimination requirement written into a model's quality control standards is the section's point in one clause.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What principle does the course draw from the fifth factor?",
+            options: ["The law follows the decision", "Software is held to a lower standard than a person", "Automation removes a lender's responsibility for the outcome", "A model may be used only where no appraiser is available"],
+            correctIndex: 0,
+            explanation: "When part of a valuation moved from a person to a model, the obligation moved with it.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "Which uses does the automated valuation model rule reach?",
+            options: ["Certain credit decisions and securitization determinations", "Every estimate of value produced by any software tool", "Only valuations used by federally insured depository institutions", "Only refinancing transactions on a consumer's principal dwelling"],
+            correctIndex: 0,
+            explanation: "The rule imposes quality control standards on the models used in those determinations.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "Why does the course decline to cite a 2022 federal action plan on appraisal bias?",
+            options: ["Its web host did not resolve", "Because it was withdrawn by the agencies that issued it", "Because it is guidance rather than a statute or regulation", "Because its findings were superseded by the later rule"],
+            correctIndex: 0,
+            explanation: "As of 28 August 2026 the published address would not open, and a dead link presented as a source is worse than a gap.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What did the course do instead of citing that unavailable document?",
+            options: ["Filed an open source check", "Cited a secondary account of the plan's contents", "Reconstructed its conclusions from the agencies' later rule", "Omitted the subject of appraisal bias from the section"],
+            correctIndex: 0,
+            explanation: "The course says so in the lesson rather than papering over the gap.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What does the course say a system built to four requirements implies?",
+            options: ["The alternative failed", "The requirements are aspirational rather than binding", "Compliance is verified by the appraiser's own trade body", "The standard applies only to federally insured transactions"],
+            correctIndex: 0,
+            explanation: "Which is why the four requirements double as a checklist when a valuation looks wrong.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "Where does the judgement in a valuation actually live, according to the vocabulary?",
+            options: ["In the comparables and adjustments", "In the appraiser's licence and certification status", "In the lender's decision to accept or reject the report", "In the county's published record of recent sale prices"],
+            correctIndex: 0,
+            explanation: "Those are the other transactions the appraiser selected and adjusted in order to reach an opinion.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "What does the course say about the number driving a renegotiation after a low valuation?",
+            options: ["It is an opinion in a readable document", "It is a market fact the parties cannot dispute", "It is fixed by regulation once the report is delivered", "It is set by the lender rather than by the appraiser"],
+            correctIndex: 0,
+            explanation: "Produced under a standard, by a named person, in a document the applicant is entitled to read.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "Which two rights does the course say arrive together by design?",
+            options: ["The Loan Estimate and the valuation notice", "The Closing Disclosure and the appraisal copy", "The right to shop and the right to a reconsideration", "The tolerance protections and the three-business-day rule"],
+            correctIndex: 0,
+            explanation: "Both run from the same defined application, and both are counted in three business days.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "How does the course characterise the copy right?",
+            options: ["Among the shortest and clearest in the course", "A right that applies only on the applicant's written request", "A protection available only to first-time buyers of a residence", "An obligation the creditor may satisfy with an oral summary"],
+            correctIndex: 0,
+            explanation: "And one that a great many people who have bought a home have never heard of.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "Which scope word in the copy rule does the course tell learners to count?",
+            options: ["All", "Prompt, which sets the timing standard for delivery", "Reasonable, which limits the fee a creditor may charge", "Written, which excludes any oral estimate of value"],
+            correctIndex: 0,
+            explanation: "All appraisals and other written valuations, rather than the appraisal, on request, or a summary.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What kind of estimate does Regulation B's valuation definition capture that a report might not?",
+            options: ["One produced by software", "One prepared for the seller rather than the lender", "One made after the transaction has already closed", "One relating to a property other than the subject dwelling"],
+            correctIndex: 0,
+            explanation: "The definition reaches any estimate of the value of a dwelling developed in connection with the application.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "What does the Fair Housing Act prohibit in relation to the terms of a covered transaction?",
+            options: ["Discrimination in those terms or conditions", "Any variation in terms between two similar applicants", "Charging a higher rate than the lender's published schedule", "Imposing conditions that the applicant did not agree to"],
+            correctIndex: 0,
+            explanation: "The prohibition covers both making the transaction available and its terms or conditions, on the listed bases.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "How does the course describe the exception clause for other factors?",
+            options: ["Not a loophole and not nothing", "A defence available only to certified appraisers", "A provision that has since been repealed by amendment", "A rule that applies only to commercial property valuations"],
+            correctIndex: 0,
+            explanation: "It states what a valuation is allowed to be, and thereby frames the legal question as which factors were operating.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What does the course say a dead link presented as a source is?",
+            options: ["Worse than a gap", "Acceptable where the document once existed", "A citation that later readers can restore themselves", "Equivalent to citing the agency that published it"],
+            correctIndex: 0,
+            explanation: "So the course names the problem in the lesson and files an open check rather than citing an address it could not open.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "Which document names the person who formed the opinion of value?",
+            options: ["The valuation copy", "The Closing Disclosure's loan calculations table", "The security instrument recorded with the county", "The purchase contract signed by the parties"],
+            correctIndex: 0,
+            explanation: "It also states the method and lists the comparables and adjustments, which is the substance of the judgement.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What is the relationship between the copy right and a reconsideration of value?",
+            options: ["The copy makes a specific request possible", "The copy must be requested as part of a reconsideration", "A reconsideration must be filed before the copy is provided", "The two are governed by entirely unrelated regulations"],
+            correctIndex: 0,
+            explanation: "A reconsideration runs on named comparables and factual errors, which only the document supplies.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "Which protected bases does the Fair Housing Act's real estate transactions provision list?",
+            options: ["Race, color, religion, sex, handicap, familial status, national origin", "Race, color and national origin only, as in the original 1968 Act", "Age, income, occupation and length of residence in the area", "Marital status, source of income and immigration status"],
+            correctIndex: 0,
+            explanation: "The same list appears in HUD's parallel regulation on selling, brokering and appraising.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What did the course say a lower valuation generally means for the lender's advance?",
+            options: ["A lower amount advanced", "An identical advance, with a higher interest rate applied", "A requirement that the seller finance the difference", "A suspension of the transaction pending a second report"],
+            correctIndex: 0,
+            explanation: "The lender is lending against the property, which is what creates the gap somebody has to fill.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "Does the course tell a reader how to respond to a low valuation?",
+            options: ["No", "Yes, it recommends requesting a reconsideration first", "Yes, it recommends renegotiating the purchase price", "Yes, it recommends commissioning a second appraisal"],
+            correctIndex: 0,
+            explanation: "It says the number driving the decision is an opinion in a document the applicant is entitled to read, and stops there.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "What does the automated valuation model rule impose on institutions?",
+            options: ["Policies, practices, procedures and control systems", "A licence requirement for every model in production use", "A prohibition on using models for first-lien transactions", "A duty to disclose model outputs to applicants on request"],
+            correctIndex: 0,
+            explanation: "Designed to meet the five stated quality control factors, including compliance with applicable nondiscrimination laws.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "Which quality control factor addresses the independence of the valuation?",
+            options: ["Seek to avoid conflicts of interest", "Ensure a high level of confidence in the estimates", "Require random sample testing and reviews", "Comply with applicable nondiscrimination laws"],
+            correctIndex: 0,
+            explanation: "It sits alongside data manipulation, confidence, testing and nondiscrimination in the rule's list of factors.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "Which quality control factor is about checking the model's output after the fact?",
+            options: ["Random sample testing and reviews", "Protection against the manipulation of data", "Avoidance of conflicts of interest in the process", "A high level of confidence in the estimates produced"],
+            correctIndex: 0,
+            explanation: "The rule requires institutions to adopt policies designed to require that testing and those reviews.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What was the Federal Register citation for the automated valuation model rule?",
+            options: ["89 Fed. Reg. 64538", "12 CFR 1002.14, published in the same volume", "24 CFR 100.135, as amended in the same year", "42 U.S.C. 3605, as codified after the 1988 amendments"],
+            correctIndex: 0,
+            explanation: "Published 7 August 2024, with an effective date of 1 October 2025.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+          {
+            prompt: "What does HUD's appraisal definition say about how the appraisal is transmitted?",
+            options: ["Formally or informally, both covered", "Only a formally transmitted written report is covered", "Only transmission to the lender brings it within the rule", "Transmission is irrelevant, because only the conclusion matters"],
+            correctIndex: 0,
+            explanation: "The definition covers an appraisal whether oral or written, and whether transmitted formally or informally.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "Whose competency does Title XI require to have been demonstrated?",
+            options: ["The individuals performing the appraisal", "The lender's staff reviewing the completed report", "The supervisor overseeing the appraiser's practice", "The regulator approving the uniform standards"],
+            correctIndex: 0,
+            explanation: "The purpose sentence pairs demonstrated competency with professional conduct subject to effective supervision.",
+            sourceLessonSlug: "what-an-appraisal-is-for",
+          },
+          {
+            prompt: "Which right does the course say arrives with the notice of the copy right?",
+            options: ["The Loan Estimate", "The Closing Disclosure's three-business-day waiting period", "The right to shop for third-party settlement services", "The right to a reconsideration of a completed valuation"],
+            correctIndex: 0,
+            explanation: "Both run from the same defined application, and both are counted in three business days.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What phrase in the copy rule tells you it is not a right to the report at closing?",
+            options: ["Whichever is earlier", "Promptly upon completion, standing alone", "Except where otherwise prohibited by law", "A reasonable fee to reimburse the creditor"],
+            correctIndex: 0,
+            explanation: "The rule pairs prompt delivery on completion with a three-business-day backstop and takes the earlier of the two.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "Which two things does the course distinguish in the fee provision?",
+            options: ["Paying for the work and paying for the copy", "A reasonable fee and an unreasonable fee", "A fee charged before and after consummation", "A fee for a first appraisal and one for a second"],
+            correctIndex: 0,
+            explanation: "Paying for the appraisal to be done is permitted; charging the applicant for the copy is not.",
+            sourceLessonSlug: "your-copy-of-the-valuation",
+          },
+          {
+            prompt: "What does the course say the exception clause makes the legal question in an appraisal case?",
+            options: ["Which factors were operating", "Whether the appraiser held a valid certification", "Whether the lender relied on the report in its decision", "Whether the valuation matched the agreed purchase price"],
+            correctIndex: 0,
+            explanation: "Which is why a document listing comparables and adjustments matters more than a conclusion standing alone.",
+            sourceLessonSlug: "valuation-is-a-covered-transaction",
+          },
+        ],
+      },
+    },
   ],
 };
