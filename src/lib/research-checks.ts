@@ -2498,6 +2498,170 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The National Agricultural Library, for USDA's Equal Opportunity Report series",
     ],
   },
+
+  // ── Banking, and Who Has No Bank (MONEY-02) ───────────────────────────────────────────────────
+  // Six checks, which is more than any other single course in the catalog and is CORRECT rather
+  // than a smell: this domain runs on figures that reset, agency rules whose status has moved, and
+  // one private company's published policy. Every one of them corresponds to a sentence in a lesson
+  // that hedges, and none of them may be silently firmed up.
+  {
+    key: "banking-fdic-2025-survey-edition",
+    course: "banking-and-the-unbanked",
+    lesson: "the-survey-that-counts",
+    quote:
+      "The 2023 report is the most recent published edition as of 28 August 2026",
+    title: "Has the 2025 FDIC National Survey of Unbanked and Underbanked Households been published?",
+    severity: "high",
+    question:
+      "Has the FDIC published the report of the 2025 wave of its National Survey of Unbanked and Underbanked Households, and if so what are its headline figures? The survey is biennial, the FDIC's own FAQ says a new report is released 'every two years, in the fall of even-numbered years', the 2025 wave was fielded in June 2025, and the 2023 report appeared on 14 November 2024. So a 2025 report was expected in the autumn of 2026, which is after this course was written. Every rate, reason and demographic split in Section 2 comes from the 2023 report and is superseded the day the 2025 one appears.",
+    claim:
+      "Section 2 names the edition it uses in three separate lessons, states that the 2023 report was the most recent PUBLISHED edition on 28 August 2026, says a 2025 survey has been fielded, and tells the reader to read the new one rather than trusting these figures once it exists. Every figure carries its read date.",
+    stakes:
+      "High, and it is the single largest maintenance item in the course. Twelve lessons and roughly a hundred quiz questions rest on 2023 figures: the 4.2 and 14.2 per cent rates, Figure 1.8's cited and main reasons, Table 1.1's income and demographic splits, and the money order, check cashing, prepaid and payment app usage series. A stale survey figure presented as current is exactly the failure this domain punishes, and the FDIC's own report is the only thing that can update it.",
+    needs: [
+      "Whether the 2025 report has been published, and its exact title and publication date",
+      "The unbanked, underbanked and fully banked rates and household counts",
+      "Figure 1.8's successor: the cited and main reasons for not having an account, both columns",
+      "Table 1.1's successor: unbanked rates by income, education, age, disability status, race and ethnicity",
+      "Whether any question changed between the 2023 and 2025 waves, which would break the series the way the tax-refund-anticipation-loan question did between 2021 and 2023",
+    ],
+    where: [
+      "fdic.gov/household-survey, the survey's own landing page",
+      "The FDIC newsroom press release, which is how the 2023 edition was announced",
+      "fdic.gov/household-survey/household-survey-archives, which lists every prior edition",
+    ],
+  },
+  {
+    key: "banking-chexsystems-retention-period",
+    course: "banking-and-the-unbanked",
+    lesson: "getting-and-fixing-your-file",
+    quote:
+      "the pages read on 28 August 2026 did not state how long an item stays in a file",
+    title: "How long does ChexSystems keep an item in a consumer file, and by what authority?",
+    severity: "medium",
+    question:
+      "For how long does ChexSystems retain a reported item in a consumer's file, does Early Warning Services use the same period, and is that period set by the Fair Credit Reporting Act, by the company's own policy, or by both? The FCRA's general obsolescence rule at 15 U.S.C. 1681c bars most adverse items after seven years, but a deposit-screening company's own published retention policy may be shorter, and a widely repeated figure of five years was not found on the company's own pages by this course.",
+    claim:
+      "Lesson 11 states plainly that the ChexSystems pages read on 28 August 2026 did not state a retention period, and prints no number at all. The lesson teaches the disclosure right, the dispute right and the deletion rule instead.",
+    stakes:
+      "Medium, and it is the first question a person who has been denied an account asks. Knowing whether an entry disappears in five years or seven changes whether waiting is a strategy at all. A wrong number here would be worse than the current silence, because a learner would plan around it.",
+    needs: [
+      "The retention period as ChexSystems itself states it, with the page it appears on and the date read",
+      "The same for Early Warning Services",
+      "Whether the period is the company's policy or a statutory obsolescence limit under 15 U.S.C. 1681c",
+      "Whether the period differs by kind of entry, for example an unpaid balance against a suspected-fraud flag",
+    ],
+    where: [
+      "chexsystems.com, its consumer disclosure and frequently-asked-questions pages, opened in a browser",
+      "The Early Warning Services consumer site",
+      "15 U.S.C. 1681c on uscode.house.gov, for the statutory obsolescence periods",
+      "The CFPB's Ask CFPB answers on checking account reporting",
+    ],
+  },
+  {
+    key: "banking-cfpb-screening-company-list",
+    course: "banking-and-the-unbanked",
+    lesson: "getting-and-fixing-your-file",
+    quote:
+      "its published list of consumer reporting companies, last updated 13 March 2025, showed one company under bank account screening",
+    title: "Which companies does the CFPB currently list under deposit account and payments screening?",
+    severity: "medium",
+    question:
+      "The CFPB's Ask CFPB answer on being denied a checking account, last reviewed 18 December 2024, names 'Chex Systems and Early Warning Services'. The CFPB's own List of Consumer Reporting Companies, last updated 13 March 2025, showed a single company under bank account screening when it was read on 28 August 2026. Which is current, and is the shorter list a deliberate narrowing of the published list, an artefact of how the page renders, or a lapse in maintenance? The question matters because the list is the document a consumer is pointed at to find out who holds a file on them.",
+    claim:
+      "Lesson 11 prints both CFPB pages with their own dates, states that they are not fully consistent, and declines to resolve the disagreement into a single confident sentence. Lesson 9 cites the Ask CFPB answer for the two company names because that is the page that names them.",
+    stakes:
+      "Medium. A consumer following the published list to find the company holding their file could miss the two companies the agency itself names elsewhere. Smoothing this into one sentence would hide a real inconsistency in a federal consumer resource, which this catalog's rule forbids.",
+    needs: [
+      "The full current contents of the bank account screening section of the CFPB's List of Consumer Reporting Companies, read in a browser rather than by automated fetch",
+      "The list's own last-updated date at the time of reading",
+      "Whether the CFPB publishes an explanation of what qualifies a company for inclusion",
+      "Whether the Ask CFPB answer still names Chex Systems and Early Warning Services",
+    ],
+    where: [
+      "consumerfinance.gov/consumer-tools/credit-reports-and-scores/consumer-reporting-companies/companies-list/",
+      "The downloadable PDF version of the same list, which the CFPB has published in past years",
+      "consumerfinance.gov/ask-cfpb, the checking-account-denial answer",
+    ],
+  },
+  {
+    key: "banking-cfpb-institutional-status",
+    course: "banking-and-the-unbanked",
+    lesson: "the-rule-that-was-repealed",
+    quote:
+      "the CFPB's own regulation pages, which were live and current when this course was written",
+    title: "What is the current institutional status of the CFPB, and are the rules this course cites still in force?",
+    severity: "high",
+    question:
+      "Are 12 CFR 1005.17 (the overdraft opt-in), 12 CFR 1005.18 (the prepaid pre-acquisition disclosure), 12 CFR 1030.4 (Truth in Savings account disclosures) and 12 CFR 1002.2 (Regulation B definitions) still in force as published by the Bureau, and is the CFPB still the issuing agency for each? The agency's authorities, staffing and rulemaking have been publicly contested, and this course leans on four of its regulations plus its complaint process and two of its consumer pages. The regulations themselves implement statutes (the Electronic Fund Transfer Act, the Truth in Savings Act, the Equal Credit Opportunity Act) that do not move when an agency does, but the part numbers, the hosting and the complaint route all could.",
+    claim:
+      "Every CFPB page cited was read on 28 August 2026 and carries its own last-modified or last-reviewed date in the lesson: the regulation pages, the complaint page (modified 15 July 2026), the checking-account answer (reviewed 18 December 2024) and the consumer reporting companies list (updated 13 March 2025). The course states the 2024 overdraft rule as NULLIFIED by Public Law 119-10 rather than describing it in the present tense.",
+    stakes:
+      "High for the sourcing strategy rather than for any single sentence. If the Bureau's regulation pages stop being maintained or the complaint route changes, the course's citations should move to eCFR and govinfo for the regulation text and name a different complaint route, and the closing lesson's fifth step would need rewriting. The statutory citations (15 U.S.C. 1681, 31 CFR 1020.220, 5 U.S.C. 801) are unaffected either way.",
+    needs: [
+      "Whether each of the four CFR parts cited is still current and still attributed to the Bureau, checked on eCFR rather than on the Bureau's own site",
+      "Whether the CFPB complaint process is still accepting and routing complaints, and its current published response timeframes",
+      "Whether any part number has been redesignated to another agency",
+      "A fallback complaint or enforcement route to name if the CFPB one is unavailable, for example the FTC, a prudential regulator, or a state attorney general",
+    ],
+    where: [
+      "ecfr.gov, for parts 1002, 1005 and 1030 of title 12, which is the authoritative text",
+      "federalregister.gov, for any redesignation or transfer notice",
+      "consumerfinance.gov itself, read in a browser with its last-modified dates recorded",
+    ],
+  },
+  {
+    key: "banking-ny-check-casher-current-maximum",
+    course: "banking-and-the-unbanked",
+    lesson: "money-orders-and-check-cashing",
+    quote:
+      "Its industry letter of 30 January 2023, effective 18 January 2023",
+    title: "Is the January 2023 New York check casher fee maximum still the current one?",
+    severity: "medium",
+    question:
+      "Has the New York Department of Financial Services issued a maximum check casher fee superseding the one in its industry letter of 30 January 2023 (effective 18 January 2023: 1.5 per cent on listed government payments, and $1 or 2.2 per cent whichever is greater on all other checks)? The Department published annual maximum-fee letters for many years and then adopted a revised, data-driven methodology under Part 400.11 in January 2023. Whether that methodology produces a new published maximum each year, and whether one has issued since, was not established from the Department's own site by this course.",
+    claim:
+      "Lesson 17 prints the 2023 rates with both the letter's date and its effective date, names Part 400.11 as the authority, and frames New York as one worked example of a METHOD rather than as a national or current number. Lesson 19 uses those rates in an arithmetic example that carries the same dates.",
+    stakes:
+      "Medium. New York is the course's only worked state example, and the whole point of using it is to show a learner what a real published cap looks like before sending them to their own regulator. A superseded rate presented with a 2023 date is not dishonest, but a current one would be better teaching, and the arithmetic example in lesson 19 would need updating with it.",
+    needs: [
+      "Whether an industry letter later than 30 January 2023 sets a maximum check casher fee, and its date and effective date",
+      "The current percentages for government assistance checks and for all other checks",
+      "Whether the Part 400.11 methodology recalculates the maximum annually or only on the Department's initiative",
+      "Whether the greater-of structure ($1 or the percentage) survives in the current letter",
+    ],
+    where: [
+      "dfs.ny.gov, the industry letters index, which lists the maximum check casher fee letters by year",
+      "dfs.ny.gov, the check casher licensing pages",
+      "Part 400.11 of the Superintendent's Regulations itself",
+    ],
+  },
+  {
+    key: "banking-prepaid-pass-through-insurance-conditions",
+    course: "banking-and-the-unbanked",
+    lesson: "prepaid-cards-and-payment-apps",
+    quote:
+      "Prepaid cards that are registered with the card issuer are insured when certain FDIC requirements are met",
+    title: "What are the 'certain FDIC requirements' that make funds on a prepaid card insured?",
+    severity: "medium",
+    question:
+      "The FDIC's deposit insurance FAQ, read 28 August 2026 and last updated 1 April 2024, says prepaid cards registered with the issuer are insured 'when certain FDIC requirements are met'. What are those requirements, stated by the FDIC? The expected answer involves pass-through coverage of funds held by a third party in a custodial capacity at an insured bank, and the recordkeeping and disclosure conditions attached to it, but this course did not find the FDIC stating those conditions in terms a consumer could check against a particular card.",
+    claim:
+      "Lesson 18 quotes the FDIC's conditional sentence exactly, points out that it contains two conditions, and says that whether coverage applies to a particular card is a fact about that card's programme rather than about prepaid cards in general. It asserts nothing about pass-through coverage or its conditions.",
+    stakes:
+      "Medium, and it is the most consequential unresolved item for a learner who is using a prepaid card as their account. The FDIC data quoted in the same lesson shows 44.8 per cent of unbanked prepaid users keeping money on the card, so whether that money is insured, and how a holder can tell, is a live question for a real population rather than a technicality.",
+    needs: [
+      "The FDIC's own statement of the requirements, from Your Insured Deposits or an FDIC advisory rather than from the FAQ summary",
+      "What a consumer can look at on or with a card to tell whether the conditions are met",
+      "Whether registration with the issuer is itself one of the requirements or a separate precondition",
+      "Whether the same analysis applies to funds stored in a nonbank online payment service account, which the survey treats as a distinct product",
+    ],
+    where: [
+      "fdic.gov, the Your Insured Deposits brochure and the deposit insurance FAQ",
+      "12 CFR part 330, for the FDIC's own coverage rules, read on ecfr.gov",
+      "Any FDIC advisory or financial institution letter on prepaid and payment app balances",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
