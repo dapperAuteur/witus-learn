@@ -5082,6 +5082,150 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "23 · Read your own account: what this course leaves you able to do",
     ],
   },
+  // ══ MONEY-04 · Predatory Products, Priced ═══════════════════════════════════
+  //
+  // WHY THESE ARE SEPARATE FROM THE MONEY-01 AND MONEY-02 CLAIMS ABOVE. Every state's
+  // personal-finance strand asks for three things this catalog did not have until this course: a
+  // SURVEY of high-cost credit products by name, the FRAUD half of the savvy-consumer standards,
+  // and IDENTITY THEFT. MONEY-01 and MONEY-02 said so on their own entries, repeatedly, naming
+  // MONEY-04 as where those would arrive. These claims are what makes those notes true, and each
+  // one is scoped to exactly what the lessons do.
+  //
+  // THEY ARE STILL NARROW, AND SEVERAL STANDARDS THEY TOUCH REMAIN `partial` OR UNCLAIMED. The
+  // course prices products and teaches recourse. It teaches NO budgeting, NO saving, NO investing,
+  // NO insurance, NO taxes and NO scam TAXONOMY: it does not survey phishing, pyramid schemes,
+  // advance-fee scams, skimming or data breaches, so any standard whose subject is that taxonomy is
+  // refused rather than stretched. Texas §113.49(c)(13)(B) and Georgia SSEPF10(a) and (d) are the
+  // clearest examples and both are named in their states' notClaimed entries.
+  {
+    id: "money.cost-of-credit-fee-conversion",
+    claim:
+      "Converts a quoted flat fee into the standardized annual rate the Truth in Lending Act exists to supply, and works the conversion on real statutory ceilings rather than on invented numbers.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // TILA's own purpose at 15 U.S.C. 1601(a), then the open-end computation at 1606(a)(2)
+      // written out as two steps, and the point that shortening the term is what makes a modest
+      // fee produce a large rate.
+      "2 · A fee is a rate, and the law already told you why",
+      // The same arithmetic run on Florida's own 10 percent cap over its own 7-to-31-day term
+      // range, producing roughly 261 percent and roughly 521 percent from one statutory ceiling.
+      "5 · What the transaction actually is, in a state that licenses it",
+      // Run again on Georgia's 25 percent per 30-day pawn ceiling against Virginia's 36 percent
+      // simple annual, on the same collateral.
+      "8 · The same arithmetic, with the car attached",
+    ],
+  },
+  {
+    id: "money.high-cost-credit-products",
+    claim:
+      "Surveys the high-cost small-dollar market product by product and prices each from the statute that licenses it: payday lending, vehicle title lending, rent-to-own, refund advances and overdraft.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // Deferred presentment read in full from Fla. Stat. 560.404: amount, fee, term, what the
+      // agreement must state, what it may not contain, and when the fee is earned.
+      "5 · What the transaction actually is, in a state that licenses it",
+      // The renewal, from the Supreme Court's description of the fine-print auto-renewal and the
+      // Southern District of New York jury's findings on what a 500 dollar loan actually cost.
+      "6 · The first loan is not where the money is",
+      // Vehicle title lending under Va. Code 6.2-2216 and O.C.G.A. 44-12-131, with what changes
+      // when the collateral is the thing that produces the income repaying the loan.
+      "8 · The same arithmetic, with the car attached",
+      // Rent-to-own priced as total of payments against cash price.
+      "10 · Two numbers, and the only comparison that matters",
+      // Refund advances (credit, with a rate) against refund transfers (not credit at all).
+      "15 · Two products, and only one of them is a loan",
+      // Overdraft priced as a flat fee on a tiny amount over a few days, and why that is regressive.
+      "16 · Overdraft, priced the way this course prices everything else",
+    ],
+  },
+  {
+    id: "money.rent-to-own-total-of-payments",
+    claim:
+      "Compares a rent-to-own total of payments against the cash price, and explains from Regulation Z's own definition why no annual percentage rate appears on the agreement.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // Conn. Gen. Stat. 42-240, 42-241 and 42-248: the definitions, the ten-point boldface
+      // disclosure of cash price, rent-to-own price and the difference, and the cap that vests
+      // ownership once half the payments made equal the cash price.
+      "10 · Two numbers, and the only comparison that matters",
+      // 12 CFR 1026.2(a)(16)'s two-part credit-sale test, and why a terminable lease fails the
+      // agreement-to-pay element. Plus the multiple as the comparison figure that needs no rate.
+      "11 · Why there is no rate on the page",
+      // Disclosed against visible, and the four-line method for pricing any offer by hand.
+      "12 · Where the total hides, and what a regulator found",
+    ],
+  },
+  {
+    id: "money.state-lending-rules-method",
+    claim:
+      "Teaches how to find and read the state statute and licensing register that govern a small-dollar or lease-purchase transaction, using two states whose statutes reach opposite answers.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // N.Y. Penal Law 190.40 against Fla. Stat. 560.404, then the four-step method: the state's
+      // own noun, the state's own code, the four features that set the price, the licence lookup.
+      "7 · Two states, opposite answers, and how to find yours",
+      // The same method applied to a rental-purchase act, with its own four features.
+      "12 · Where the total hides, and what a regulator found",
+      // The capstone runs it once on a product the learner chooses, dated.
+      "26 · Capstone: price one product, check one rule, read one document",
+    ],
+  },
+  {
+    id: "money.protected-class-rate-cap",
+    claim:
+      "Teaches the federal rate ceiling Congress enacted for one named class of borrowers, the charges its wider rate measure sweeps in, and the loan terms it forbids outright.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // 10 U.S.C. 987(b), (e) and (i)(1) and 32 CFR 232.3(f) and 232.4(b)-(c), read as a statement
+      // about who the law decided to protect rather than as a moral judgement about a product.
+      "3 · Congress capped this rate for one class of people",
+      // The same statute read beside the FTC's first enforcement action under it.
+      "25 · Who is targeted, taken from the record rather than asserted",
+    ],
+  },
+  {
+    id: "money.unauthorized-transfer-recourse",
+    claim:
+      "Teaches the statutory line between a transfer taken without the consumer's authority and one the consumer was deceived into making, and the error-resolution rights that attach only to the first.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // 12 CFR 1005.2(m) quoted with its three exclusions, plus the official interpretations on a
+      // furnished device and on a device obtained through fraud or robbery.
+      "18 · Unauthorized is a defined word, and everything depends on it",
+      // 15 U.S.C. 1693g(b) on the burden of proof, 12 CFR 1005.6's tiers and 60-day statement rule,
+      // and 1005.11's 10-business-day and 45-day clocks with provisional credit.
+      "19 · What the institution owes you when the definition is met",
+      // Why an induced authorisation falls outside the definition, and what remains when it does.
+      "20 · When you pressed send, the machine does not start",
+      // The same loss under four rulebooks: credit card, electronic fund transfer, wire, cash.
+      "21 · The same loss under four different rulebooks",
+    ],
+  },
+  {
+    id: "money.identity-theft-remedies",
+    claim:
+      "Teaches the Fair Credit Reporting Act's identity-theft tools and what each one does: the initial and extended fraud alerts, the security freeze, and the block, with their statutory timings.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // 15 U.S.C. 1681c-1(a), (b) and (i) and 1681c-2(a), with the free-of-charge freeze, the
+      // one-hour lift, the four-business-day block and the four items the consumer must supply.
+      "23 · Three tools in the Fair Credit Reporting Act, and what each one does",
+    ],
+  },
+  {
+    id: "money.reading-enforcement-records",
+    claim:
+      "Teaches how to read a public consumer-protection enforcement record, distinguishing a complaint from a settlement from a finding, and what each can and cannot support.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // The FTC's own boilerplate on reason to believe and on stipulated final orders, a jury
+      // verdict, and a Supreme Court holding that decides remedy rather than conduct.
+      "24 · Complaint, order, verdict: three documents that are not the same thing",
+      // The same discipline applied to the question of who is targeted, plus the FTC's own caution
+      // that its Sentinel data rests on unverified reports and is not a survey.
+      "25 · Who is targeted, taken from the record rather than asserted",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

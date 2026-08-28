@@ -534,12 +534,14 @@ export const JURISDICTION: JurisdictionFile = {
     // statement, (c)(9), which is about credit worthiness and the credit report. The rejection is
     // rewritten below rather than deleted.
     //
-    // TWO OF SIXTEEN STATEMENTS, AND THAT RATIO IS THE HONEST PART. §113.49 is overwhelmingly a
-    // saving, investing, insurance, retirement and college-financing course: (c)(1) through (c)(8),
-    // (c)(11) through (c)(16) are budgeting, paychecks, consumption decisions, saving strategies,
-    // investment options, retirement, risk, insurance, fraud, estate planning and paying for
-    // college, none of which this catalog teaches. The two courses intersect at (c)(9) and at one
-    // sub-expectation of (c)(10). Do not widen these to make the coverage look fuller.
+    // FIVE OF SIXTEEN STATEMENTS, AND THAT RATIO IS THE HONEST PART. §113.49 is overwhelmingly a
+    // saving, investing, insurance, retirement and college-financing course: (c)(1) through (c)(3),
+    // (c)(5) through (c)(7), (c)(11), (c)(12), (c)(14), (c)(15) and (c)(16) are budgeting,
+    // paychecks, saving strategies, investment options, retirement, risk, insurance, estate
+    // planning and paying for college, none of which this catalog teaches. The catalog intersects
+    // §113.49 at (c)(4), (c)(8), (c)(9), (c)(10) and (c)(13), and at sub-expectation level within
+    // each. Do not widen these to make the coverage look fuller; (c)(13)(B) in particular was read
+    // and declined on 2026-08-28 because it asks for a taxonomy of schemes nothing here surveys.
     {
       id: "tx-personal-financial-literacy",
       subject: "Social Studies",
@@ -549,14 +551,19 @@ export const JURISDICTION: JurisdictionFile = {
       fetchedOn: "2026-08-28",
       sourceUrl: SS_SUBCH_C,
       adoption:
-        "Texas's standalone half-credit Personal Financial Literacy course, filed in social studies at Chapter 113 alongside Economics and US Government, and distinct from the §113.76 Personal Financial Literacy and Economics course adopted in 2022 (a student may not receive credit for both). Its sixteen knowledge-and-skills statements run from earning and spending through saving and investing, credit and borrowing, insuring and protecting, and paying for postsecondary education. MONEY-01 (`credit-decisions`) meets the credit-worthiness statement (c)(9) and part of (c)(10)(A), and none of the rest. Transcribed verbatim 2026-08-28 from the TEA \"currently in effect\" social studies Subchapter C PDF, whose page footer reads \"High School §113.C. — August 2024 Update\".",
+        "Texas's standalone half-credit Personal Financial Literacy course, filed in social studies at Chapter 113 alongside Economics and US Government, and distinct from the §113.76 Personal Financial Literacy and Economics course adopted in 2022 (a student may not receive credit for both). Its sixteen knowledge-and-skills statements run from earning and spending through saving and investing, credit and borrowing, insuring and protecting, and paying for postsecondary education. Three courses reach it. MONEY-01 (`credit-decisions`) meets the credit-worthiness statement (c)(9) and part of (c)(10)(A); MONEY-02 (`banking-and-the-unbanked`) meets part of (c)(4)(C); and MONEY-04 (`predatory-products`) adds (c)(8)(A) on payday and title lending as sources of credit, (c)(13)(A) on reducing identity-theft risk and (c)(13)(C) on researching and reporting fraud, and materially deepens (c)(4)(C) and (c)(10)(A). Nothing else in the course is claimed. Transcribed verbatim from the TEA \"currently in effect\" social studies Subchapter C PDF, whose page footer reads \"High School §113.C. — August 2024 Update\"; the §113.49 statements were transcribed on 2026-08-28, and the (c)(8) and (c)(13) text was read from the same PDF on the same day when MONEY-04 shipped.",
       standards: [
         {
           code: "§113.49(c)(4)(C)",
           text: "compare total costs of alternative methods of payment such as rent-to-own, store credit, installment agreements, cash, bank credit card, and debit card; and",
-          claimIds: ["money.unbanked-and-alternative-services", "money.consumer-deposit-accounts"],
+          claimIds: [
+            "money.unbanked-and-alternative-services",
+            "money.consumer-deposit-accounts",
+            "money.rent-to-own-total-of-payments",
+            "money.high-cost-credit-products",
+          ],
           coverage: "partial",
-          note: "Partial, and the partiality is about which methods rather than about the skill. Comparing the TOTAL cost of alternative methods of payment is the whole of the banking course's fifth section, done from published prices: a postal money order fee schedule, a state regulator's check-casher fee cap, a prepaid account's pre-acquisition short form, and the account disclosures a depository institution must provide. Because §113.49(b)(7) makes a \"such as\" list illustrative, the comparison need not use Texas's examples, and it does not: cash and debit card are covered, and prepaid cards, nonbank payment apps, money orders and check cashing stand in for the rest. Rent-to-own, store credit, installment agreements and bank credit cards are NOT taught here and belong to later courses in the same series.",
+          note: "Partial, and the partiality is about which methods rather than about the skill. Comparing the TOTAL cost of alternative methods of payment is the whole of the banking course's fifth section, done from published prices: a postal money order fee schedule, a state regulator's check-casher fee cap, a prepaid account's pre-acquisition short form, and the account disclosures a depository institution must provide. Because §113.49(b)(7) makes a \"such as\" list illustrative, the comparison need not use Texas's examples. UPDATED 2026-08-28 WHEN MONEY-04 SHIPPED: rent-to-own, which this entry previously named as not taught, is now taught directly and is the sharpest total-cost comparison in the catalog, from Conn. Gen. Stat. 42-240 and 42-241 (cash price, rent-to-own price, and their difference required in ten-point boldface) and 12 CFR 1026.2(a)(16) (why no annual percentage rate is disclosed on such an agreement at all). Cash, debit card, prepaid cards, nonbank payment apps, money orders and check cashing were already covered. STILL NOT TAUGHT: store credit, installment agreements and bank credit cards.",
         },
         {
           code: "§113.49(c)(9)(B)",
@@ -593,9 +600,45 @@ export const JURISDICTION: JurisdictionFile = {
         {
           code: "§113.49(c)(10)(A)",
           text: "examine the components of the cost of borrowing, including annual percentage rate (APR), fixed versus variable interest, length of term, grace period, and additional fees such as late payment, cash advance, and prepayment penalties;",
-          claimIds: ["money.cost-of-credit-apr"],
+          claimIds: [
+            "money.cost-of-credit-apr",
+            "money.cost-of-credit-fee-conversion",
+            "money.high-cost-credit-products",
+          ],
           coverage: "partial",
-          note: "Partial, and precisely on the first named component. The annual percentage rate is taught from the Truth in Lending Act's own purpose (disclosure so a consumer can compare more readily) and computed from the statutory open-end formula at 15 U.S.C. 1606(a)(2), with the closed-end actuarial method named. The rest of the standard's list — fixed against variable interest, length of term, grace period, and the fee taxonomy — is not taught here and is scheduled for MONEY-04.",
+          note: "Partial, and it got substantially fuller on 2026-08-28 when MONEY-04 shipped; this entry previously covered only the first named component and said the rest was scheduled. COVERED NOW: the annual percentage rate, from the Truth in Lending Act's own purpose and computed from the statutory open-end formula at 15 U.S.C. 1606(a)(2), with the closed-end actuarial method named. LENGTH OF TERM, which is the second thing this standard asks for, is now taught as the variable that decides the price, worked twice on real statutory ceilings: one Florida fee cap annualizes to roughly 261 percent over fourteen days and roughly 521 percent over seven, and one Georgia pawn ceiling to roughly 304 percent over thirty-day periods. ADDITIONAL FEES are taught from the statutes that enumerate them, including a deferred presentment verification fee, a title-lender monthly maintenance fee, returned-payment and late charges, repossession and sale costs, and an overdraft fee with its daily maximum and any sustained-overdraft charge. PREPAYMENT PENALTIES are taught, and taught as prohibited in the two lending statutes the course reads in full. STILL NOT TAUGHT: fixed against variable interest, and the credit-card grace period, neither of which appears anywhere in this catalog.",
+        },
+        // — Added 2026-08-28 when MONEY-04 (`predatory-products`) shipped. Until then §113.49
+        //   carried nothing on credit SOURCES, on fraud, or on identity theft, and the notClaimed
+        //   entry below said so in those words. Three sub-expectations are now genuinely reachable.
+        //   (c)(13)(B) is deliberately NOT claimed: it asks for a taxonomy of schemes (investment,
+        //   pyramid, phishing, check cashing, home renovation) that the course does not survey, and
+        //   claiming the parent statement to reach the two halves it does teach would be exactly
+        //   the widening this module forbids.
+        {
+          code: "§113.49(c)(8)(A)",
+          text: "compare and contrast sources of credit such as banks, merchants, peer-to-peer, payday loans, and title loans;",
+          claimIds: [
+            "money.high-cost-credit-products",
+            "money.cost-of-credit-fee-conversion",
+            "money.state-lending-rules-method",
+          ],
+          coverage: "partial",
+          note: "Partial, and specifically on two of the five sources Texas names. PAYDAY LOANS and TITLE LOANS are the subject of a whole section, compared against each other and against the state rules that price them: Fla. Stat. 560.404 for deferred presentment (amount, fee, term, rollover ban, statewide one-at-a-time database), N.Y. Penal Law 190.40 for a state that makes the same charge a felony, and Va. Code 6.2-2216 against O.C.G.A. 44-12-131 for two states that price title lending an order of magnitude apart. The comparison is done in one unit throughout, using the annual rate computed by the 15 U.S.C. 1606(a)(2) method. NOT TAUGHT: banks, merchants and peer-to-peer as sources of credit, so a teacher planning against this expectation gets two of the five and the method for pricing any of them.",
+        },
+        {
+          code: "§113.49(c)(13)(A)",
+          text: "identify ways to protect personal information and reduce risk of identity theft;",
+          claimIds: ["money.identity-theft-remedies", "money.unauthorized-transfer-recourse"],
+          coverage: "partial",
+          note: "Partial, and the split is between rules and habits. What the course teaches thoroughly is the statutory apparatus: the initial fraud alert and the extended alert at 15 U.S.C. 1681c-1(a) and (b), the security freeze at 1681c-1(i) with its one-business-day placement, one-hour lift and no charge, and the four-business-day block at 1681c-2 with the four items a consumer must supply. It also teaches what an access device is under 12 CFR 1005.2(a), which is broader than a card and covers a code, a login and a one-time passcode, and it teaches the procedural rule that defeats an impersonation call. NOT TAUGHT: general information-hygiene practice, which is what much of this expectation is usually taken to mean.",
+        },
+        {
+          code: "§113.49(c)(13)(C)",
+          text: "demonstrate an understanding of how to use consumer protection agencies such as the Better Business Bureau, Consumer Financial Protection Board, or the Texas State Securities Board to research and report fraud.",
+          claimIds: ["money.reading-enforcement-records", "money.state-lending-rules-method"],
+          coverage: "partial",
+          note: "Partial, and honest about which agencies. Because §113.49(b)(7) makes a \"such as\" list illustrative, the skill need not be practised on Texas's three examples, and it is not: none of the three is used. RESEARCH is taught against the bodies that publish the records, and taught as a reading skill rather than as a referral: a state financial regulator's public licence register, which settles in about a minute whether a lender is licensed at all, and the Federal Trade Commission's own enforcement releases, read with the Commission's boilerplate on what a complaint and a stipulated final order each are so that an allegation is never taken for a finding. REPORTING is taught for identity theft, through the FTC's IdentityTheft.gov, which is where the identity theft report the FCRA remedies require comes from. NOT TAUGHT: the Better Business Bureau, the Consumer Financial Protection Bureau's complaint route (which MONEY-02 carries), and the Texas State Securities Board, and the course teaches no securities or investment content of any kind.",
         },
       ],
     },
@@ -768,7 +811,7 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "Personal Financial Literacy (§113.49, §113.31(d)(15)-(20)) — this rejection has been superseded, in part.",
-      body: "Until 2026-08-28 this file told a Texas teacher, in the catalog's own words, that it did no personal-finance instruction at all, and that neither §113.49 nor the Economics personal-finance strands were claimed. That was accurate then and is not now. MONEY-01 teaches how a consumer credit decision is made, from the Fair Credit Reporting Act, the Equal Credit Opportunity Act and Regulation B, and five §113.49 standards are claimed above: (c)(9)(B) and (c)(9)(C) in full, (c)(9)(A), (c)(9)(E) and (c)(10)(A) in part, each with its limit stated on its own entry. What remains unclaimed is most of the course, and the reasons are specific. Knowledge and skills statements (c)(1) through (c)(3) are financial goals, income statements, budgets, balance sheets and paycheck components; (c)(4) is consumption decisions including renting against buying and payment methods; (c)(5) through (c)(7) are saving, investing and retirement; (c)(8) is a survey of credit sources and types, which the course does not attempt; (c)(11) and (c)(12) are risk management and insurance; (c)(13) is fraud, scams and identity theft; (c)(14) is estate planning; and (c)(15) and (c)(16) are postsecondary education costs and how to pay for them. None of that is taught here, and the course states in three separate lessons that it gives no financial advice, so a budgeting or investing claim would misdescribe it. Inside Economics, the §113.31(d)(15)-(20) personal-finance strands remain unclaimed for the same reason: (d)(15) is business ownership forms, (d)(16) is financial institutions and capital formation, (d)(17) is investing and checking accounts, (d)(18) is credit-card debt, bankruptcy and insurance decisions, (d)(19) is renting against buying a home, and (d)(20) is paying for college. Two of the strand's sub-expectations, (d)(17)(E) on the responsibilities and obligations of borrowing and (d)(17)(F) on understanding one's credit score, come closest, and they were read and declined: (F) pairs understanding with developing strategies to become a low-risk borrower, which is exactly the advice this course refuses to give, and (E) asks for the obligations rather than their consequences. A separate section, §113.76 Personal Financial Literacy and Economics, was adopted effective August 1, 2022 and is also currently in effect; it has not been fetched and carries no claim, per fetch-or-do-not-cite.",
+      body: "Until 2026-08-28 this file told a Texas teacher, in the catalog's own words, that it did no personal-finance instruction at all, and that neither §113.49 nor the Economics personal-finance strands were claimed. That was accurate then and is not now, and this entry has been superseded twice on the same day rather than deleted. FIRST, MONEY-01 (the consumer credit decision, from the Fair Credit Reporting Act, the Equal Credit Opportunity Act and Regulation B) brought (c)(9)(B) and (c)(9)(C) in full and (c)(9)(A), (c)(9)(E) and (c)(10)(A) in part, and MONEY-02 (deposit accounts and the nonbank substitutes) brought (c)(4)(C) in part. SECOND, MONEY-04 (high-cost products, and the line federal law draws around fraud) added (c)(8)(A), (c)(13)(A) and (c)(13)(C), all partial, and made (c)(4)(C) and (c)(10)(A) substantially fuller. So the sentence about fraud and identity theft that this entry used to carry is no longer true and has been removed from the list below. What remains unclaimed is still most of the course, and the reasons are specific. Knowledge and skills statements (c)(1) through (c)(3) are financial goals, income statements, budgets, balance sheets and paycheck components; the rest of (c)(4) is consumption decisions including renting against buying; (c)(5) through (c)(7) are saving, investing and retirement; (c)(8)(B) and (c)(8)(C) are types of credit and the impact of credit decisions on a budget and a net worth statement; (c)(11) and (c)(12) are risk management and insurance; (c)(13)(B) is a taxonomy of schemes and scams (investment, pyramid, phishing, check cashing, home renovation) that this course does not survey and will not claim by widening its neighbours; (c)(14) is estate planning; and (c)(15) and (c)(16) are postsecondary education costs and how to pay for them. None of that is taught here, and the courses state in prose that they give no financial advice, so a budgeting or investing claim would misdescribe them. Inside Economics, the §113.31(d)(15)-(20) personal-finance strands remain unclaimed for the same reason: (d)(15) is business ownership forms, (d)(16) is financial institutions and capital formation, (d)(17) is investing and checking accounts, (d)(18) is credit-card debt, bankruptcy and insurance decisions, (d)(19) is renting against buying a home, and (d)(20) is paying for college. Two of the strand's sub-expectations, (d)(17)(E) on the responsibilities and obligations of borrowing and (d)(17)(F) on understanding one's credit score, come closest, and they were read and declined: (F) pairs understanding with developing strategies to become a low-risk borrower, which is exactly the advice these courses refuse to give, and (E) asks for the obligations rather than their consequences. A separate section, §113.76 Personal Financial Literacy and Economics, was adopted effective August 1, 2022 and is also currently in effect; it has not been fetched and carries no claim, per fetch-or-do-not-cite.",
     },
     {
       heading: "Grade 7 Texas History (§113.20) — where the flagship's fullest home lives, not yet fetched.",
