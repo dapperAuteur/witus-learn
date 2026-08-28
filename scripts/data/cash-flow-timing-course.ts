@@ -3037,6 +3037,997 @@ N.Y. Lab. Law § 191. (n.d.). *Frequency of payments*. The New York State Senate
         ],
       },
     },
-    // APPEND-HERE
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — Mapping it, and what recourse exists
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "build-the-map",
+      title: "21 · Build the map: the dates in, the dates out, and the gap",
+      section: "Section 6 · Mapping it, and what recourse exists",
+      body: `Everything in the first five sections was somebody else's rule. This lesson turns them into one page about you.
+
+**Say the boundary again before starting, because it matters most here. This course gives no financial advice.** What follows is not a plan, a budget or a recommendation. It is a way of writing down what is already true, so that things you were guessing about become things you can look up. **The map does not tell you what to do. It converts unknowns into knowns**, and what you do afterwards is yours.
+
+**Step one: list the arrivals, and beside each one write the rule that fixes its date.** A wage has two rules behind it, the employer's schedule and the state payday statute that constrains it, and Section 5 told you which three facts to take from the statute. A benefit under a published payment-day rule has one. A deposit you make yourself has none until you make it, at which point Section 2 applies.
+
+**Step two: list the obligations, and beside each one write who chose the date.** Almost every one was chosen by somebody else: a lease, a loan, a subscription, a utility cycle. That is worth writing down explicitly, because it is the fact that makes the gap structural rather than personal.
+
+**Step three: for each arrival, write the date it becomes usable, not the date it lands.** These differ, and Section 2 is how you tell. A payroll direct deposit is an ACH credit, so the next-day rule for electronic payments reaches it. A check you deposit runs on the schedule that fits its category, adjusted for the cut-off hour and the place of deposit. **Write the usable date**, because that is the one an obligation can actually be met from.
+
+**Step four: for each outgoing, write which of the three moments you can see, and whether a window exists.** A preauthorized electronic debit has a stop-payment window of at least three business days before the scheduled date, and a varying amount carries a ten-day notice (12 CFR § 1005.10, n.d.). A card authorisation and its later posting are two dates. An instant payment has no window at all. **A window is a fact about the rail, and it is knowable before you send.**
+
+**Step five: mark where a usable date falls after an obligation date.** That is the gap, and now it has a length in days, a cause you can name, and in some cases a rule attached to it. A gap caused by a cut-off hour is a different object from a gap caused by a pay lag, which is a different object again from a gap caused by twenty-six not dividing into twelve.
+
+**What the map is good for, stated without overclaiming.** It answers questions of the form "when", and it answers them from documents rather than from memory. It does not create money and it does not resolve a shortfall. **A timing map and a shortfall are different problems**, and the most useful thing this course can do is let you see which one you have, because the second one is not something a schedule can fix.
+
+**Do it once and it lasts about a year.** Payday anchors, benefit payment days and statutory frequencies do not change often. Availability policies and cut-off hours do change, and Section 6's next lesson names the rule that requires your bank to tell you before they do.
+
+:::reveal What does the map do, and what does it explicitly not do? ||| It converts unknowns into knowns by writing down dates from documents. It does not tell you what to do and does not resolve a shortfall.
+
+:::reveal For each arrival, which date does the map record? ||| The date the money becomes usable, not the date it lands, because that is the date an obligation can actually be met from.
+
+:::reveal What is the difference between a timing map and a shortfall? ||| A timing map answers when. A shortfall is an amount problem, and no schedule fixes it.
+
+## Vocabulary
+- **Usable date**: the date deposited money may actually be spent, as distinct from the date it reached the bank.
+- **Obligation date**: a payment date chosen by another party, such as a lease, a loan or a utility cycle.
+- **Window**: the interval, if any, during which a scheduled payment can still be stopped.
+- **Structural gap**: a shortfall in timing produced by two schedules set independently, rather than by any decision the account holder made.
+
+## Sources
+12 CFR § 1005.10. (n.d.). *Preauthorized transfers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.10
+
+12 CFR § 229.12. (n.d.). *Availability schedule*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.12`,
+    },
+    {
+      slug: "violation-or-just-the-rule",
+      title: "22 · What is a violation, and what is merely the rule",
+      section: "Section 6 · Mapping it, and what recourse exists",
+      body: `Two things can both feel unfair and only one of them is a breach of anything. Telling them apart decides where a complaint goes and whether it goes anywhere.
+
+**Where money coming in is concerned, there is a duty, a document and a remedy.**
+
+**The document first.** A bank must give a specific availability policy disclosure describing when funds deposited in an account are available for withdrawal, and its content is prescribed: a summary of the policy, the categories of deposit that cause delay and when each becomes available, a description of the exceptions in the exceptions section, the case-by-case delay policy, and how to tell a proprietary machine from a nonproprietary one where that matters (12 CFR § 229.16, n.d.).
+
+**And here is the sentence people do not know.** A bank must provide the disclosure "to any person, upon oral or written request" (12 CFR § 229.18, n.d.). **Any person.** You need not hold an account to read a bank's availability policy before opening one.
+
+**Changes are noticed too.** A bank must send notice to consumer accountholders at least **thirty days before** implementing a change to its availability policy, except that a change which expedites availability may be disclosed not later than thirty days **after** it takes effect (12 CFR § 229.18, n.d.). Slower needs warning; faster does not.
+
+**Now the fee rule, which is the sharpest consumer-facing sentence in Regulation CC.** A bank that delays availability on a case-by-case basis and does not give the depositor written notice at the time of deposit:
+
+> "shall not assess any fees for any subsequent overdrafts (including use of a line of credit) or return of checks or other debits to the account, if—(i) The overdraft or return of the check or other debit would not have occurred except for the fact that the deposited funds were delayed . . . and (ii) The deposited check was paid by the paying bank." (12 CFR § 229.16, n.d.)
+
+**Read both conditions.** The delay has to be the but-for cause, and the check has to have actually been good. Where both hold and the notice was missing, the fees are not to be assessed.
+
+**And there is a liability provision, with numbers.** A bank that fails to comply with a requirement of the funds-availability subpart is liable for any actual damage sustained, plus, in an individual action, "not less than $125 nor greater than $1,350"; in a class action the total is capped at "the lesser of $672,950 or 1 percent of the net worth of the bank involved"; plus costs and a reasonable attorney's fee in a successful action (12 CFR § 229.21, n.d.). Read on 28 August 2026, and these are among the amounts the five-year adjustment moves. **An action must be brought within one year of the occurrence of the violation** (12 CFR § 229.21, n.d.).
+
+**Now the other side, and the contrast is the lesson.** Posting order has no schedule, no notice, no stated reason and no analogous remedy. The commercial code permits any order (U.C.C. § 4-303, n.d.). So a person unhappy about sequencing is not describing a breach of the availability rules, and filing it as one leads nowhere.
+
+**What exists instead is measurement.** Truth in Savings requires a periodic statement to separately disclose the total dollar amount of fees imposed for paying overdrafts, using the term "Total Overdraft Fees", and the total for returning items unpaid, for the statement period **and** the calendar year to date (12 CFR § 1030.11, n.d.). That is a number, produced by rule, on a document you already receive.
+
+**So the operative question is always: which rule was engaged?** A late availability is a schedule question with a remedy. A missing exception notice is a notice question with a fee consequence. A sequencing outcome is a measurement question and a comparison between institutions. **Naming the right one is the whole skill**, and it is the last thing this course teaches before the capstone. **None of this is legal advice and none of it is financial advice**; it is where the rules are, so a person can read them and decide for themselves.
+
+:::reveal Who may request a bank's specific availability policy disclosure? ||| Any person, on oral or written request, whether or not they hold an account there.
+
+:::reveal What two conditions must hold before the missing-notice fee rule bites? ||| The overdraft or return would not have occurred but for the delay, and the deposited check was paid by the paying bank.
+
+:::reveal How long does a person have to bring an action for a funds-availability violation? ||| One year after the date of the occurrence of the violation.
+
+## Vocabulary
+- **Specific availability policy disclosure**: the prescribed document describing when a bank makes deposits available, which any person may request.
+- **Case-by-case delay**: a bank holding funds longer than its stated policy in a particular instance, which triggers a written-notice duty.
+- **Statutory damages**: the fixed range a court may award for a violation independent of proven loss, adjusted on the same five-year cycle as the thresholds.
+- **Total Overdraft Fees**: the term Truth in Savings requires on a periodic statement for the total of fees imposed for paying overdrafts.
+
+## Sources
+12 CFR § 229.16. (n.d.). *Specific availability policy disclosure*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.16
+
+12 CFR § 229.18. (n.d.). *Additional disclosure requirements*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.18
+
+12 CFR § 229.21. (n.d.). *Civil liability*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.21
+
+12 CFR § 1030.11. (n.d.). *Additional disclosure requirements for overdraft services*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1030.11
+
+U.C.C. § 4-303. (n.d.). *When items subject to notice, stop-payment order, legal process, or setoff; order in which items may be charged or certified*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/ucc/4/4-303`,
+    },
+    {
+      slug: "read-your-own-calendar",
+      title: "23 · Capstone: read your own calendar",
+      section: "Section 6 · Mapping it, and what recourse exists",
+      body: `Every course in this series ends by having you run its machinery once, on your own record. Here is this one's.
+
+**Before anything else, the boundary, for the third and last time. This course is not financial advice and this capstone is not a plan.** Nothing below tells you what to spend, what to pay first, how much to hold back, which bank or payroll schedule to prefer, or whether to complain about anything. It is a document-gathering exercise. What you conclude from the documents is yours.
+
+**Collect five documents. Each one is named, and each one has a rule behind it.**
+
+**One. Your bank's specific availability policy disclosure.** Ask for it. The regulation requires a bank to provide it "to any person, upon oral or written request" (12 CFR § 229.18, n.d.). Read out of it: the cut-off hour, which categories of deposit are delayed and for how long, and how the bank describes its case-by-case delays.
+
+**Two. Your account agreement's balance definitions.** Regulation CC's own definition of available funds refers to uses permitted "under the bank's account agreement or policies" (12 CFR § 229.2, n.d.), so the meaning of available balance and ledger balance lives there. Find both and note which one your app displays.
+
+**Three. Your state's payday statute.** Section 5 named the three facts to extract: the required frequency, the category of worker it applies to, and the maximum lag between the end of a pay period and the payday.
+
+**Four. Your own pay calendar for the next twelve months.** If you are paid biweekly, one anchor date generates the whole year at fourteen-day intervals, and you will find your two three-paycheck months. If semimonthly, write the two dates and mark every one that falls on a weekend. If you receive a benefit under a published payment-day rule, compute those dates too and apply the preceding-day substitution (20 CFR § 404.1807, n.d.).
+
+**Five. Your most recent periodic statement, for two lines.** The total labelled "Total Overdraft Fees" and the total for returned items, both of which Truth in Savings requires for the statement period and the calendar year to date (12 CFR § 1030.11, n.d.). Also list your preauthorized debits and the date each is scheduled.
+
+**Then answer five questions in writing.** What is my bank's cut-off hour, and how many of my deposits arrive after it? For each recurring arrival, on what date does it become usable rather than merely land? For each recurring obligation, how many days separate it from the nearest preceding usable date? Which of my outgoing payments still has a stop-payment window, and how long is it? And, for the year ahead, in which months does an obligation fall before any usable arrival?
+
+**What you will have at the end.** Not a budget, not a plan and not a recommendation, because this course does not make those. **A calendar built from primary documents**, in which every date is traceable to a rule you have read, and in which the gaps are visible in advance rather than discovered afterwards.
+
+**And one habit to keep after the course ends.** When a date surprises you, ask which document set it. In this domain the answer is nearly always a specific one: a definition of business day, a cut-off hour, an availability category, a posting sequence, a statutory pay lag, or a published payment day. **A surprise you can name is a surprise that can only happen to you once.**
+
+:::reveal Which rule lets you obtain a bank's availability policy disclosure before you are a customer? ||| The additional-disclosure rule, which requires a bank to provide it to any person on oral or written request.
+
+:::reveal Which two totals does Truth in Savings require on a periodic statement, and over what periods? ||| Total overdraft fees and total returned-item fees, for the statement period and the calendar year to date.
+
+:::reveal What is the habit the capstone asks you to keep after the course? ||| When a date surprises you, ask which document set it, because in this domain the answer is nearly always one specific rule.
+
+## Vocabulary
+- **Anchor date**: one known payday from which an entire biweekly year can be generated at fourteen-day intervals.
+- **Document-gathering exercise**: a capstone that produces a record from primary sources rather than a plan or a recommendation.
+- **Traceable date**: a date on a personal calendar that can be tied back to a specific rule the learner has read.
+
+## Sources
+12 CFR § 229.18. (n.d.). *Additional disclosure requirements*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.18
+
+12 CFR § 229.2. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.2
+
+12 CFR § 1030.11. (n.d.). *Additional disclosure requirements for overdraft services*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1030.11
+
+20 CFR § 404.1807. (n.d.). *Monthly payment day*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/20/404.1807`,
+    },
+    {
+      slug: "quiz-mapping-and-recourse",
+      title: "24 · Knowledge check: the map, and what recourse exists",
+      section: "Section 6 · Mapping it, and what recourse exists",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What does the mapping lesson say the map does?",
+            options: ["Converts unknowns into knowns", "Produces a spending plan for the twelve months following the exercise", "Identifies which of a household's obligations should be paid first each month", "Calculates the size of the buffer a household needs to avoid an overdraft"],
+            correctIndex: 0,
+            explanation: "It writes down what is already true so guesses become things that can be looked up. What a person does afterwards is theirs.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "In step one of the map, what goes beside each arrival?",
+            options: ["The rule that fixes its date", "The amount expected, rounded to the nearest whole dollar for comparison", "The institution that will receive it and the account number it will land in", "The number of days it has been late in each of the preceding twelve months"],
+            correctIndex: 0,
+            explanation: "A wage has two rules behind it, the employer's schedule and the state payday statute; a benefit under a published payment-day rule has one.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "In step two, what does the map record beside each obligation?",
+            options: ["Who chose the date", "Whether the obligation is fixed or variable in amount from month to month", "Which payment rail the obligation will travel on when it is paid", "The penalty the creditor charges when the payment arrives after the due date"],
+            correctIndex: 0,
+            explanation: "Almost every obligation date was chosen by somebody else, and writing that down is what makes the gap structural rather than personal.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "In step three, which date does the map record for each arrival?",
+            options: ["The date it becomes usable", "The date the payer initiated it from their own account at their own bank", "The date it appears on the periodic statement the bank issues each cycle", "The date the depositary bank receives credit for the funds from another bank"],
+            correctIndex: 0,
+            explanation: "The landing date and the usable date differ, and only the usable date is one an obligation can be met from.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "In step four, what does the map record for each outgoing payment?",
+            options: ["Which moments are visible and whether a window exists", "The identity of the payee and the contract term that created the obligation", "The fee the institution charges for sending the payment on that rail", "Whether the payment is larger than the minimum availability amount"],
+            correctIndex: 0,
+            explanation: "A preauthorized debit has a stop-payment window of at least three business days; a card authorisation and its posting are two dates; an instant payment has no window.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "What does step five of the map identify?",
+            options: ["A usable date falling after an obligation date", "The total of all obligations falling due in each calendar month of the year", "The months in which three biweekly paydays fall rather than two", "The proportion of income committed to fixed rather than variable obligations"],
+            correctIndex: 0,
+            explanation: "That is the gap, and it then has a length in days, a nameable cause, and in some cases a rule attached to it.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "Which three causes of a gap does the mapping lesson distinguish?",
+            options: ["A cut-off hour, a pay lag, and an arithmetic mismatch", "A bank error, a payroll error, and a creditor error in the same month", "An overdraft, a returned item, and a fee charged against the account", "A holiday, a weekend, and a scheduled maintenance window at the bank"],
+            correctIndex: 0,
+            explanation: "A gap caused by a cut-off hour is a different object from a pay lag, which is different again from twenty-six not dividing into twelve.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "What distinction does the mapping lesson call the most useful thing the course can offer?",
+            options: ["A timing map against a shortfall", "A wage against a benefit as a source of a household's regular income", "A federal rule against a state rule where the two govern the same account", "An electronic payment against a paper item under the availability schedule"],
+            correctIndex: 0,
+            explanation: "A timing map answers when. A shortfall is an amount problem, and no schedule fixes it.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "How long does the mapping lesson say the map lasts?",
+            options: ["About a year", "One statement cycle, after which every figure in it must be recalculated", "Indefinitely, because the rules it is built from do not change at all", "Thirty calendar days, matching the notice period for an availability change"],
+            correctIndex: 0,
+            explanation: "Payday anchors, benefit payment days and statutory frequencies change rarely, while availability policies and cut-off hours can change with notice.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "Which payment does the map record as having no stop-payment window?",
+            options: ["An instant payment", "A preauthorized electronic debit scheduled for a date more than a week ahead", "A card transaction authorised at a merchant and posted several days later", "A check deposited at a branch before the bank's stated cut-off hour"],
+            correctIndex: 0,
+            explanation: "A payment that settles as it is sent leaves no interval for a stop-payment right to operate inside.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "What must a specific availability policy disclosure contain, among other things?",
+            options: ["Which deposits are delayed and for how long", "The name of the bank's primary federal supervisor and its examination schedule", "The total fees the bank collected for paying overdrafts in the preceding year", "The routing numbers of every Federal Reserve Bank the institution uses"],
+            correctIndex: 0,
+            explanation: "It must give a summary of the policy, the delaying categories and when each becomes available, the exceptions, the case-by-case policy, and how to identify a nonproprietary machine.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Who may request a bank's specific availability policy disclosure?",
+            options: ["Any person", "Any accountholder, but only in writing and only once in each calendar year", "Any consumer who has already made a deposit at the institution", "Any person who has been given written notice of an exception hold"],
+            correctIndex: 0,
+            explanation: "The regulation requires the bank to provide it to any person upon oral or written request, so a prospective customer may read it before opening anything.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "How much notice must a bank give before implementing a change that delays availability?",
+            options: ["At least thirty days before", "At least ten days before, matching the varying-amount notice under Regulation E", "At least three business days before, matching the stop-payment notice period", "None, provided the change is reflected in the next periodic statement"],
+            correctIndex: 0,
+            explanation: "A change that expedites availability may instead be disclosed not later than thirty days after it takes effect. Slower needs warning; faster does not.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "When may a change to an availability policy be disclosed after the fact?",
+            options: ["When it expedites availability", "When the institution has fewer than a stated number of consumer accounts", "When the change applies only to deposits made at automated teller machines", "When the change is required by an amendment to the underlying statute"],
+            correctIndex: 0,
+            explanation: "A change that speeds up availability may be disclosed not later than thirty days after implementation, unlike one that delays it.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Under 12 CFR 229.16(c)(3), what may a bank NOT do if it delays availability case by case without written notice at the time of deposit?",
+            options: ["Assess subsequent overdraft or return fees", "Invoke any of the six exceptions against that customer for six months", "Report the resulting overdraft to a deposit-screening consumer reporting agency", "Charge the customer for providing a copy of its availability policy disclosure"],
+            correctIndex: 0,
+            explanation: "The prohibition covers fees for subsequent overdrafts, including use of a line of credit, and for the return of checks or other debits.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "What is the first of the two conditions in the missing-notice fee rule?",
+            options: ["The delay was the but-for cause", "The customer disputed the hold in writing within thirty calendar days", "The deposit exceeded the large-deposit threshold on that banking day", "The bank had invoked the same exception against the account previously"],
+            correctIndex: 0,
+            explanation: "The overdraft or return must not have occurred except for the fact that the deposited funds were delayed.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "What is the second condition in the missing-notice fee rule?",
+            options: ["The deposited check was paid by the paying bank", "The customer had no other funds available in any account at the institution", "The delay exceeded the reasonable period defined in the exceptions section", "The bank had given the customer a written exception notice within one day"],
+            correctIndex: 0,
+            explanation: "The check has to have actually been good. Where both conditions hold and the notice was missing, the fees are not to be assessed.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "What is the statutory damages range in an individual action under 12 CFR 229.21(a), as read on 28 August 2026?",
+            options: ["Not less than $125 nor greater than $1,350", "Not less than $100 nor greater than $1,000, adjusted annually for inflation", "Not less than $275 nor greater than $6,725, matching the availability thresholds", "There is no statutory range, so only actual damages may be recovered"],
+            correctIndex: 0,
+            explanation: "Actual damages are recoverable in addition, and these amounts are among those the five-year adjustment moves.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "What is the class-action cap under 12 CFR 229.21(a), as read on 28 August 2026?",
+            options: ["The lesser of $672,950 or 1 percent of net worth", "Ten times the individual statutory maximum multiplied by the number of members", "One percent of the bank's total deposits as reported in its most recent call report", "There is no cap, because class recovery is limited only by proven actual damages"],
+            correctIndex: 0,
+            explanation: "The total recovery in any class action or series of class actions arising out of the same failure by the same depositary bank is capped at the lesser of the two.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "What else may a successful plaintiff recover under 12 CFR 229.21(a)?",
+            options: ["Costs and a reasonable attorney's fee", "Treble damages where the failure to comply was found to be wilful", "A refund of every fee the account was charged in the preceding twelve months", "An order requiring the bank to change its availability policy for all customers"],
+            correctIndex: 0,
+            explanation: "In a successful action the costs of the action, together with a reasonable attorney's fee as determined by the court.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "How long does a person have to bring an action under the funds-availability rules?",
+            options: ["One year", "Three years from the date the customer discovered the violation had occurred", "Six years, matching the general limitation period for contract actions", "Thirty days from the date the funds were finally made available"],
+            correctIndex: 0,
+            explanation: "The action must be brought within one year after the date of the occurrence of the violation involved.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "What does posting order come with, compared with the availability rules?",
+            options: ["No schedule, notice, reason or remedy", "A written notice requirement identical to the one for exception holds", "A civil liability provision with the same statutory damages range", "A thirty-day advance notice requirement before the sequence may change"],
+            correctIndex: 0,
+            explanation: "The commercial code permits any order, so a complaint about sequencing is not a complaint about a breach of the availability rules.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "What exists instead of a remedy for posting order?",
+            options: ["Measurement on the statement", "A supervisory hotline operated by the institution's primary federal regulator", "An arbitration clause required by the commercial code in every account agreement", "A right to demand the bank recalculate the day's items in a different sequence"],
+            correctIndex: 0,
+            explanation: "Truth in Savings requires the totals on a periodic statement, which is a number produced by rule on a document already received.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Which two totals does 12 CFR 1030.11(a) require on a periodic statement?",
+            options: ["Total overdraft fees and returned-item fees", "Total deposits received and total withdrawals paid during the statement period", "Total interest accrued and total interest paid during the calendar year to date", "Total items presented and total items returned unpaid by the paying bank"],
+            correctIndex: 0,
+            explanation: "The first must use the term Total Overdraft Fees, and both must be given for the statement period and the calendar year to date.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Over what two periods must those totals be given?",
+            options: ["The statement period and the calendar year to date", "The statement period and the twelve months preceding the statement date", "The calendar year to date and the same period in the preceding year", "The statement period only, unless the customer requests a longer history"],
+            correctIndex: 0,
+            explanation: "That pairing is what makes the number usable as a running measure rather than a single-month snapshot.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "What does the recourse lesson say the whole skill is?",
+            options: ["Naming which rule was engaged", "Calculating the exact amount of statutory damages available for a violation", "Deciding whether to complain to the institution or to its federal supervisor", "Determining whether the bank acted in good faith when it applied a hold"],
+            correctIndex: 0,
+            explanation: "A late availability, a missing exception notice and a sequencing outcome are three different questions with three different destinations.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Which of these is the first document the capstone asks you to collect?",
+            options: ["The specific availability policy disclosure", "The most recent periodic statement for the account you use most often", "The state payday statute that governs your own category of employment", "A twelve-month pay calendar generated from a single known anchor date"],
+            correctIndex: 0,
+            explanation: "Ask for it: the regulation requires a bank to provide it to any person on oral or written request.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What three things does the capstone tell you to read out of the availability policy disclosure?",
+            options: ["Cut-off hour, delayed categories, case-by-case policy", "Routing number, account number, and the branch at which the account was opened", "Interest rate, minimum balance, and the monthly maintenance fee for the account", "Deposit insurance coverage, ownership categories, and the per-institution limit"],
+            correctIndex: 0,
+            explanation: "Those three are what feed the usable-date column of the map.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "Why does the capstone send you to your account agreement for balance definitions?",
+            options: ["Regulation CC refers back to it", "Because the agreement supersedes the federal availability schedule for that account", "Because the bank may not disclose those definitions in any other document", "Because the definitions differ between the paper and the electronic statement"],
+            correctIndex: 0,
+            explanation: "The federal definition of available funds refers to uses permitted under the bank's account agreement or policies, so that is where the balance terms live.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What does the capstone ask you to note about the balance definitions?",
+            options: ["Which one the app displays", "Which one the bank uses to calculate interest at the end of the cycle", "Which one appears first in the account agreement's definitions section", "Which one the bank is required to report to a consumer reporting agency"],
+            correctIndex: 0,
+            explanation: "Available balance and ledger balance are not the same, and knowing which one is on the screen is the point of the exercise.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "How does the capstone tell a biweekly worker to generate a year of paydays?",
+            options: ["From one anchor date at fourteen-day intervals", "By listing the fifteenth and the last day of every month in the year", "By asking the employer for a written calendar, since it cannot be computed", "By counting backward from the last payday of the following calendar year"],
+            correctIndex: 0,
+            explanation: "One anchor generates the whole year, and doing so reveals the two three-paycheck months.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What does the capstone tell a semimonthly worker to mark?",
+            options: ["Every payday falling on a weekend", "Every month in which three paydays fall rather than the usual two", "Every payday that falls more than eleven days after the pay period closes", "Every payday on which the employer's own bank is closed for a holiday"],
+            correctIndex: 0,
+            explanation: "A date-anchored payday lands on weekends regularly, which is exactly where a substitution rule has to operate.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "Which substitution rule does the capstone tell you to apply to computed benefit dates?",
+            options: ["The preceding-day rule", "The next-business-day rule used for funds availability under Regulation CC", "The three-business-day rule used for stopping a preauthorized transfer", "The thirty-day rule used for notice of a change in availability policy"],
+            correctIndex: 0,
+            explanation: "If the scheduled delivery day falls on a Saturday, Sunday or Federal legal holiday, payment moves to the first preceding day that is none of those.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "Which two lines does the capstone want from a periodic statement?",
+            options: ["The overdraft and returned-item totals", "The opening balance and the closing balance for the statement period", "The interest paid and the annual percentage yield earned on the account", "The number of items presented and the number returned unpaid"],
+            correctIndex: 0,
+            explanation: "Truth in Savings requires both totals for the statement period and the calendar year to date.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "Which of the capstone's five written questions concerns the cut-off hour?",
+            options: ["How many of my deposits arrive after it", "Whether the bank is permitted to set the hour at the time it has chosen", "Whether the hour differs between a branch and an automated teller machine", "Whether the hour has changed since the account was originally opened"],
+            correctIndex: 0,
+            explanation: "The question pairs the disclosed hour with the learner's own deposit habits, which is what turns a policy term into a personal fact.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What does the capstone say you will have at the end?",
+            options: ["A calendar built from primary documents", "A budget covering the twelve months following the exercise", "A written complaint ready to send to the institution's supervisor", "A recommendation about which pay frequency to request from an employer"],
+            correctIndex: 0,
+            explanation: "Every date is traceable to a rule the learner has read, and the gaps are visible in advance rather than discovered afterwards.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What habit does the capstone ask you to keep after the course ends?",
+            options: ["Ask which document set a surprising date", "Request a fresh availability policy disclosure at the start of each quarter", "Recalculate the entire map after every statement cycle without exception", "Compare your institution's overdraft totals against a published national figure"],
+            correctIndex: 0,
+            explanation: "In this domain the answer is nearly always specific: a definition, a cut-off hour, an availability category, a posting sequence, a pay lag, or a published payment day.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "How does the capstone describe a surprise you can name?",
+            options: ["One that can only happen once", "One that entitles the accountholder to a refund of any resulting fee", "One that the bank must explain in writing within one business day", "One that must be reported to the institution's federal supervisor"],
+            correctIndex: 0,
+            explanation: "Naming the document that set the date is what converts a recurring surprise into a known rule.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "How many times does this course state in prose that it gives no financial advice?",
+            options: ["Three", "Once, in the description shown on the course landing page before enrolment", "Twice, in the opening lesson and again in the final assessment introduction", "It does not state it in prose at all, relying on a registry entry instead"],
+            correctIndex: 0,
+            explanation: "The opening lesson, the mapping lesson and the capstone each say it, because a learner deep in the course never saw the landing page.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What does the capstone explicitly refuse to tell a reader?",
+            options: ["What to pay first", "Which rule requires a bank to provide its availability policy on request", "How to compute a benefit payment date from a published regulation", "Where the definitions of available balance and ledger balance are found"],
+            correctIndex: 0,
+            explanation: "It tells nobody what to spend, what to pay first, how much to hold back, or which schedule to prefer. It is a document-gathering exercise.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "Which question does the map answer, in the course's own words?",
+            options: ["Questions of the form \"when\"", "Questions about whether a household is spending beyond its means", "Questions about which institution offers the fastest availability schedule", "Questions about how large an emergency reserve a household should hold"],
+            correctIndex: 0,
+            explanation: "It answers them from documents rather than from memory, and it does not create money or resolve a shortfall.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "Why does the mapping lesson insist the obligation dates be attributed to whoever chose them?",
+            options: ["It makes the gap structural rather than personal", "It establishes which creditor may be asked to move a due date first", "It determines which state's law governs the obligation in question", "It decides whether the payment may be stopped under Regulation E"],
+            correctIndex: 0,
+            explanation: "A lease, a loan, a subscription and a utility cycle were all dated by somebody else, and writing that down is the point.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "Which arrival does the mapping lesson say has no governing rule until you act?",
+            options: ["A deposit you make yourself", "A wage paid on the employer's regular payday under a state statute", "A benefit paid under a published monthly payment-day regulation", "A preauthorized credit arriving at least once every sixty days"],
+            correctIndex: 0,
+            explanation: "It has none until the deposit is made, at which point the availability schedule applies to it.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "Which rail does the map treat as having two dates rather than one?",
+            options: ["A card payment", "A cash payment handed directly from one person to another", "An instant payment settled on a gross basis at any hour of the day", "A benefit payment delivered under a published monthly payment-day rule"],
+            correctIndex: 0,
+            explanation: "A card authorisation and its later posting are two separate dates on two separate records.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "Which of these is a question the availability rules answer with a remedy attached?",
+            options: ["Funds released later than the schedule allows", "Items charged to an account in an order the customer did not expect", "A payday falling on a different date from one month to the next", "A benefit payment moving to an earlier day because of a holiday"],
+            correctIndex: 0,
+            explanation: "A schedule breach engages the civil liability provision. Sequencing engages measurement instead.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Which rule requires a notice on preprinted deposit slips?",
+            options: ["The additional-disclosure section of Regulation CC", "The specific availability policy disclosure section of Regulation CC", "The exceptions section, which governs written notice of an exception hold", "Truth in Savings, which governs the disclosure of fees on statements"],
+            correctIndex: 0,
+            explanation: "The same section carries the deposit-slip notice, the posted notice where employees receive consumer deposits, the ATM notices, the request right and the change-notice rule.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Where does a person unhappy about a sequencing outcome NOT get anywhere, according to this section?",
+            options: ["Filing it as an availability breach", "Reading the totals disclosed on their own periodic statement", "Comparing institutions before deciding where to hold an account", "Finding their own state's enactment of the commercial code"],
+            correctIndex: 0,
+            explanation: "The commercial code permits any order, so a sequencing complaint is not a complaint about a breach of the availability rules.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "What is the effect of the availability rules having a duty, a document and a remedy?",
+            options: ["A complaint has somewhere to go", "A bank must obtain a customer's consent before applying any hold at all", "A customer may recover the fees charged on any account in any circumstance", "A schedule may not be changed once it has been disclosed to a customer"],
+            correctIndex: 0,
+            explanation: "That three-part shape is what the course told you to look for in the very first lesson of Section 2.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Which of these does the map ask you to write for each recurring obligation?",
+            options: ["Days from the nearest preceding usable date", "The interest rate the creditor charges on a payment made after the due date", "Whether the creditor accepts payment by more than one payment rail", "The proportion of monthly income the obligation represents"],
+            correctIndex: 0,
+            explanation: "That is one of the five written questions in the capstone, and it is the number the whole map exists to produce.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "How many documents does the capstone ask you to collect?",
+            options: ["Five", "Three, being the availability policy, the payday statute and the pay calendar", "Seven, one for each rail identified in the section on payment methods", "Two, being the account agreement and the most recent periodic statement"],
+            correctIndex: 0,
+            explanation: "The availability policy disclosure, the account agreement's balance definitions, the state payday statute, a twelve-month pay calendar, and a periodic statement.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "How many written questions does the capstone ask you to answer?",
+            options: ["Five", "Three, one for each of the three moments a payment passes through", "Ten, one for each named category in the availability schedule", "One, being whether any obligation falls before a usable arrival"],
+            correctIndex: 0,
+            explanation: "They cover the cut-off hour, usable dates, days of separation, stop-payment windows, and the months where an obligation precedes any usable arrival.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "Which of the capstone's documents comes from a legislature rather than a bank or an employer?",
+            options: ["The state payday statute", "The specific availability policy disclosure required of every depositary bank", "The account agreement containing the definitions of the balance terms", "The periodic statement showing the overdraft and returned-item totals"],
+            correctIndex: 0,
+            explanation: "Section 5 named the three facts to extract from it: the frequency, the worker category, and the maximum lag.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What does the recourse lesson say about legal advice?",
+            options: ["It gives none", "It gives it only in relation to the civil liability provision in Regulation CC", "It gives it wherever a statutory damages figure has been stated with a date", "It gives it through the complaint routes named at the end of the lesson"],
+            correctIndex: 0,
+            explanation: "The lesson states where the rules are so a person can read them and decide for themselves, and disclaims both legal and financial advice.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Which figure in the civil liability provision is subject to the same five-year adjustment as the availability thresholds?",
+            options: ["The statutory damages amounts", "The one-year period for bringing an action after the violation occurred", "The requirement to award costs and a reasonable attorney's fee", "The percentage of net worth that caps a class action recovery"],
+            correctIndex: 0,
+            explanation: "The dollar amounts under the chapter are adjusted on the statute's five-year cycle, which is why the course dates them.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "What does the course say a person can do with a bank's availability policy before opening an account?",
+            options: ["Read it", "Negotiate the cut-off hour that will apply to their own deposits", "Require the bank to waive the exceptions section for their account", "Obtain a written guarantee of next-day availability for every deposit"],
+            correctIndex: 0,
+            explanation: "The disclosure must be provided to any person upon oral or written request, which makes it a comparison tool rather than only a customer document.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Which of these is the correct pairing of a problem with its rule?",
+            options: ["A missing exception notice and a fee consequence", "A sequencing outcome and the civil liability provision in Regulation CC", "A pay lag and the availability schedule for check deposits", "A benefit payment date and the commercial code's posting-order rule"],
+            correctIndex: 0,
+            explanation: "A late availability is a schedule question with a remedy, a missing notice is a notice question with a fee consequence, and sequencing is a measurement question.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Why does the capstone ask for the preauthorized debits and their scheduled dates?",
+            options: ["They are the payments with a window", "They are the only payments a bank is required to disclose on a statement", "They are the payments to which the availability schedule directly applies", "They are the payments most likely to be charged in an unexpected order"],
+            correctIndex: 0,
+            explanation: "A preauthorized electronic transfer carries the three-business-day stop-payment right and the ten-day varying-amount notice, which no other listed rail does.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What does the mapping lesson say about creating money?",
+            options: ["The map does not", "The map does so by identifying fees that can be recovered from the bank", "The map does so by moving obligations to dates that follow a usable arrival", "The map does so by shortening the interval before deposits become available"],
+            correctIndex: 0,
+            explanation: "It answers questions of the form when, from documents. It does not create money and it does not resolve a shortfall.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "Which section of this course does the map's third step draw on?",
+            options: ["The availability schedule", "The section on posting order and the arithmetic of insufficient balances", "The section on pay frequency and the four annual payday counts", "The section on the rails and the two questions that predict the rules"],
+            correctIndex: 0,
+            explanation: "Turning a landing date into a usable date is exactly what the schedule, the cut-off hour and the deposit location decide.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "What does the recourse lesson identify as the sharpest consumer-facing sentence in Regulation CC?",
+            options: ["The missing-notice fee rule", "The definition of a business day as ten named dates and the weekends", "The requirement that a bank provide its policy to any person on request", "The requirement that a change delaying availability be noticed in advance"],
+            correctIndex: 0,
+            explanation: "A case-by-case delay without written notice at the time of deposit bars fees for the overdrafts and returns the delay caused, where the check was good.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Which of these best describes what the course leaves a learner able to do?",
+            options: ["Trace a date to the rule that set it", "Predict the exact balance an account will hold on any future date", "Recover fees charged on an account in any month the balance ran short", "Choose the institution with the shortest availability schedule nationally"],
+            correctIndex: 0,
+            explanation: "That is the capstone's stated product: a calendar in which every date is traceable to a rule the learner has read.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "Which document does the capstone say sets the meaning of the balance shown in a banking app?",
+            options: ["The account agreement", "Regulation CC's definitions section, which fixes the term for every institution", "The specific availability policy disclosure required on request", "The periodic statement, which restates the definitions each cycle"],
+            correctIndex: 0,
+            explanation: "Regulation CC's own definition of available funds refers to uses permitted under the bank's account agreement or policies.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What is the relationship between the two lists a map produces?",
+            options: ["Arrivals against obligations", "Fees charged against fees refunded during the same statement period", "Federal rules against state rules governing the same transaction", "Payments sent against payments received on each of the six rails"],
+            correctIndex: 0,
+            explanation: "Every arrival carries a usable date and every obligation carries a date somebody else chose, and the gaps are where the two lists collide.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "Which of these does the course say changes often enough to need re-checking?",
+            options: ["Availability policies and cut-off hours", "Statutory pay frequencies and the categories of worker they apply to", "The arithmetic that gives 52, 26, 24 and 12 paydays a year", "The birth-date brackets that assign a monthly benefit payment day"],
+            correctIndex: 0,
+            explanation: "That is why the same section names the rule requiring thirty days' notice before a change that delays availability.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "What kind of exercise does the capstone say it is?",
+            options: ["Document-gathering", "Budget-building, using the learner's own income and expenses for the year", "Complaint-drafting, using the civil liability provision as its framework", "Institution-comparison, ranking banks by the length of their hold periods"],
+            correctIndex: 0,
+            explanation: "What a learner concludes from the documents is theirs; the course produces the documents and the questions, not the conclusion.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "Which of the five capstone questions is about the rails rather than about dates in and out?",
+            options: ["Which payments still have a stop window", "How many of my deposits arrive after my bank's disclosed cut-off hour", "On what date does each recurring arrival become usable rather than land", "In which months does an obligation fall before any usable arrival"],
+            correctIndex: 0,
+            explanation: "A window is a property of the rail carrying the payment, and its length is knowable before the payment is sent.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What does the recourse lesson say a complaint about sequencing is NOT?",
+            options: ["A breach of the availability rules", "A matter a person can measure from their own periodic statement", "A consequence of a permission written into state commercial law", "A question about which institution to hold an account with"],
+            correctIndex: 0,
+            explanation: "Filing a sequencing complaint as an availability breach leads nowhere, because the commercial code permits any order.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // FINAL ASSESSMENT
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "final-cash-flow-timing",
+      title: "25 · Final assessment",
+      section: "Final assessment",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        questions: [
+          {
+            prompt: "What is the spine of this course, in one sentence?",
+            options: ["Money arrives and leaves on dates set by rules", "Households overspend in predictable ways that a budget can be built to correct", "Banks profit from delay, and every rule in this area exists to enable that", "Payment timing is unpredictable, so a large cash buffer is the only defence"],
+            correctIndex: 0,
+            explanation: "The gap between the two is a mechanism rather than a character flaw, and every rule that produces it is public.",
+            sourceLessonSlug: "the-gap-is-the-subject",
+          },
+          {
+            prompt: "Why does this course teach timing instead of budgeting?",
+            options: ["Timing has a mechanism, a decision-maker and recourse", "Timing is easier to assess with multiple-choice questions than budgeting is", "Budgeting is covered by the first course in this series and would be duplicated", "Budgeting requires personal financial data that a self-paced course cannot collect"],
+            correctIndex: 0,
+            explanation: "Budgeting has none of the three, so forcing this catalog's read-the-rule method onto it would manufacture a grievance nobody can check.",
+            sourceLessonSlug: "the-gap-is-the-subject",
+          },
+          {
+            prompt: "How does Regulation CC define a business day?",
+            options: ["A calendar day other than weekends and ten named dates", "Any day on which the depositary bank is open to the public for business", "Any day on which the Federal Reserve settles payments between institutions", "Any twenty-four-hour period beginning at the bank's disclosed cut-off hour"],
+            correctIndex: 0,
+            explanation: "The definition enumerates dates rather than referring to the federal holiday statute, which is why the two lists have diverged.",
+            sourceLessonSlug: "business-day-banking-day",
+          },
+          {
+            prompt: "How does Regulation CC define a banking day?",
+            options: ["The part of a business day a bank is open", "Any calendar day on which a bank's electronic channels can accept a deposit", "Any weekday, whether or not the institution's offices are open to the public", "The period between one cut-off hour and the next at the same institution"],
+            correctIndex: 0,
+            explanation: "It is that part of any business day on which an office is open to the public for carrying on substantially all of its banking functions.",
+            sourceLessonSlug: "business-day-banking-day",
+          },
+          {
+            prompt: "Which holiday appears in 5 U.S.C. 6103(a) but not in Regulation CC's list of excluded dates, as checked on 28 August 2026?",
+            options: ["Juneteenth", "Labor Day, which the regulation names as the first Monday in September", "Memorial Day, which the regulation names as the last Monday in May", "Christmas Day, which the regulation names by its calendar date"],
+            correctIndex: 0,
+            explanation: "Eleven holidays in the statute, ten named dates in the regulation, and June 19 is the one in the first list and not the second.",
+            sourceLessonSlug: "business-day-banking-day",
+          },
+          {
+            prompt: "What is the earliest cut-off hour a bank may set at a staffed facility?",
+            options: ["2:00 p.m.", "12:00 noon, which is the floor that applies to automated teller machines", "5:00 p.m., which is the deadline for making the cash-withdrawal amount available", "There is no floor, because a bank sets its own hours of business"],
+            correctIndex: 0,
+            explanation: "A bank may set a later hour but not an earlier one at a staffed facility. The floor for machines and off-premise facilities is noon.",
+            sourceLessonSlug: "the-cut-off-hour",
+          },
+          {
+            prompt: "When are funds deposited at an off-premise ATM emptied twice a week or less considered deposited?",
+            options: ["On the day they are removed", "On the day the deposit is made, as shown on the receipt the machine issues", "On the second business day after the deposit is physically made at the machine", "On the day the bank's item-processing department images the deposited items"],
+            correctIndex: 0,
+            explanation: "The rule applies to a machine not on, or within fifty feet of, the premises, and it moves the deposit date to the collection run.",
+            sourceLessonSlug: "the-cut-off-hour",
+          },
+          {
+            prompt: "What did Congress legislate when it created the funds-availability schedule?",
+            options: ["A ceiling on delay, a disclosure, and a liability", "A requirement that all deposits be made available on the day of receipt", "A federal fund to compensate customers whose deposits were held too long", "A uniform hold period identical for every deposit type and every institution"],
+            correctIndex: 0,
+            explanation: "That three-part shape recurs across consumer-money rules and is worth looking for whenever a new one is encountered.",
+            sourceLessonSlug: "why-a-schedule-exists",
+          },
+          {
+            prompt: "How often are the Act's dollar amounts adjusted, and to what multiple are they rounded?",
+            options: ["Every five years, to the nearest $25", "Every year, to the nearest $100, using the preceding year's price index", "Every ten years, to the nearest $50, following the decennial census", "Whenever the implementing agencies choose, to the nearest whole dollar"],
+            correctIndex: 0,
+            explanation: "The adjustment uses the Consumer Price Index for Urban Wage Earners and Clerical Workers, as published by the Bureau of Labor Statistics.",
+            sourceLessonSlug: "why-a-schedule-exists",
+          },
+          {
+            prompt: "As read on 28 August 2026, what was the minimum amount of a day's check deposits available on the next business day?",
+            options: ["$275", "$225, the amount that applied before the adjustment effective 1 July 2025", "$550, which is the amount that must be available for cash by five in the afternoon", "$400, the figure that appears in the text of the statute rather than the regulation"],
+            correctIndex: 0,
+            explanation: "It is the lesser of that amount or the aggregate deposited that banking day, and the course dates it because it will move again.",
+            sourceLessonSlug: "why-a-schedule-exists",
+          },
+          {
+            prompt: "Why does the nonlocal check category catch nothing today?",
+            options: ["Check processing consolidated to one region", "Because the category was repealed by statute in 2010 along with its schedule", "Because banks agreed collectively to treat every check as a local check", "Because electronic presentment makes a paying bank's location unknowable"],
+            correctIndex: 0,
+            explanation: "The Reserve Banks cut their paper check-processing offices from forty-five in 2003 to a single office in 2010, so all checks are local to each other.",
+            sourceLessonSlug: "why-a-schedule-exists",
+          },
+          {
+            prompt: "How does Regulation CC define an electronic payment?",
+            options: ["A wire transfer or an ACH credit transfer", "Any transfer initiated through an electronic terminal, telephone or computer", "Any payment that moves without a paper instrument passing between banks", "Any transfer settling on the same calendar day it was originated"],
+            correctIndex: 0,
+            explanation: "The definition is narrow, so a payroll direct deposit is inside it and a card refund or a recurring debit is not.",
+            sourceLessonSlug: "next-day-and-second-day",
+          },
+          {
+            prompt: "When must cash deposited in person to a bank employee be available?",
+            options: ["The business day after the banking day", "The second business day after the banking day, as for a machine deposit", "The same banking day, because currency needs no collection from another bank", "The fifth business day, so the bank can verify and count the currency"],
+            correctIndex: 0,
+            explanation: "Cash deposited any other way gets the second business day, so handing it to a person is a legally different act.",
+            sourceLessonSlug: "next-day-and-second-day",
+          },
+          {
+            prompt: "When must funds from a local check be available under the general schedule?",
+            options: ["The second business day", "The next business day, the same as for a Treasury check or a cashier's check", "The fifth business day, the same as for a deposit at a nonproprietary machine", "The ninth business day, which is the schedule's outer limit for any deposit"],
+            correctIndex: 0,
+            explanation: "Next-day availability is reserved for the categories listed in the next-day section plus the minimum availability amount.",
+            sourceLessonSlug: "next-day-and-second-day",
+          },
+          {
+            prompt: "When must a bank begin accruing interest on an interest-bearing deposit?",
+            options: ["When it receives credit for the funds", "When the funds become available for withdrawal by the customer", "On the first day of the statement cycle following the deposit", "On the second business day after the banking day of deposit"],
+            correctIndex: 0,
+            explanation: "Interest accrual and availability are different clocks, so money can be earning before it is spendable.",
+            sourceLessonSlug: "next-day-and-second-day",
+          },
+          {
+            prompt: "How many named exceptions to the availability schedule does Regulation CC provide?",
+            options: ["Six", "Three, covering new accounts, large deposits and emergency conditions", "Nine, one for each business day the regulation permits a hold to run", "Twelve, one for each Federal Reserve district's own hold policy"],
+            correctIndex: 0,
+            explanation: "New accounts, large deposits, redeposited checks, repeated overdrafts, reasonable cause to doubt collectibility, and emergency conditions.",
+            sourceLessonSlug: "six-exceptions-and-a-notice",
+          },
+          {
+            prompt: "What must a written exception notice state?",
+            options: ["The reason and when funds will be available", "The name of the officer authorising the hold and the date of that decision", "The identity of the paying bank and the expected date of its settlement", "The customer's average balance over the preceding six statement cycles"],
+            correctIndex: 0,
+            explanation: "It must give an account identifier, the deposit date, the amount delayed, the reason for the exception, and the time period until availability.",
+            sourceLessonSlug: "six-exceptions-and-a-notice",
+          },
+          {
+            prompt: "What counts as repeated overdrafts for the exception, as read on 28 August 2026?",
+            options: ["Six in six months, or two of $6,725 or more", "Any three overdrafts occurring within a single statement cycle on the account", "Any overdraft at all, since the exception is available at the bank's discretion", "Ten overdrafts in twelve months, each returned unpaid rather than honoured"],
+            correctIndex: 0,
+            explanation: "The exception then lasts for six months after the last such overdraft, and posting order affects the count that opens it.",
+            sourceLessonSlug: "six-exceptions-and-a-notice",
+          },
+          {
+            prompt: "What does U.C.C. 4-303(b) permit?",
+            options: ["Charging items in any order", "Refusing to pay any item once the balance has reached zero for the day", "Holding a deposited item for as long as the bank considers commercially prudent", "Selecting which of a customer's accounts an item will be charged against"],
+            correctIndex: 0,
+            explanation: "Subject to subsection (a), items may be accepted, paid, certified, or charged to the indicated account of its customer in any order.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "In the worked example, four payments of $80, $15, $12 and $8 hit a $100 balance. What changes with the order?",
+            options: ["How many items are short", "The total charged to the account by the end of the banking day", "Which of the four payments the bank chooses to return unpaid", "Whether the account qualifies for the large-deposit exception"],
+            correctIndex: 0,
+            explanation: "One item is short smallest first and three are short largest first, while the closing balance is negative fifteen dollars either way.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "Is the Uniform Commercial Code federal law?",
+            options: ["No, states enact it", "Yes, Congress enacted it and it applies uniformly in every state", "Yes, it is a regulation issued jointly by the federal banking agencies", "No, it is a voluntary code that binds only the institutions adopting it"],
+            correctIndex: 0,
+            explanation: "The operative posting-order rule for any given account is that state's own enactment of Article 4, even where the words match.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "What are the three moments a payment leaving an account passes through?",
+            options: ["Authorisation, posting, settlement", "Deposit, presentment, and return by the paying bank's midnight deadline", "Availability, finality, and the accrual of interest on the balance", "Origination, batching, and the opening of the next settlement window"],
+            correctIndex: 0,
+            explanation: "A payment can be authorised on one day, posted on another and settled later still, each on a different record.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "Which of the three moments does posting order operate on?",
+            options: ["Posting", "Authorisation, when the bank decides which requests to approve", "Settlement, when funds move between the two institutions", "All three equally, because the sequence is applied at every stage"],
+            correctIndex: 0,
+            explanation: "Posting is the bank charging the item to the account, which is where the any-order permission bites.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "What three options does Regulation E give an institution for telling a consumer about a recurring credit?",
+            options: ["Positive notice, negative notice, or a telephone line", "A written statement, an email alert, or a message in the mobile application", "A quarterly summary, an annual summary, or notice on request in writing", "Immediate notice, next-day notice, or notice at the end of the statement cycle"],
+            correctIndex: 0,
+            explanation: "Positive and negative notice both run within two business days, and the telephone number must be disclosed on the initial disclosures and each statement.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "How may a preauthorized electronic fund transfer from a consumer's account be authorised?",
+            options: ["By a signed or similarly authenticated writing", "By any oral instruction the consumer gives the payee over the telephone", "By a course of dealing after three prior transfers of a similar amount", "By the consumer failing to object within ten days of the payee's request"],
+            correctIndex: 0,
+            explanation: "Regulation E permits no other form of authorization for a transfer from a consumer's account.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "How far ahead must a consumer act to stop a preauthorized transfer?",
+            options: ["At least three business days", "At least ten days, matching the varying-amount notice in the same section", "At least fourteen days, matching the written-confirmation window", "At any time before the transfer has actually settled between the banks"],
+            correctIndex: 0,
+            explanation: "Notice may be oral or in writing, and the institution may then require written confirmation within fourteen days if it says so.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "How much notice is owed when a preauthorized transfer will vary in amount?",
+            options: ["At least ten days", "At least three business days, the same as the stop-payment period", "At least one full statement cycle before the transfer is scheduled", "None, provided the amount stays within the account's available balance"],
+            correctIndex: 0,
+            explanation: "The designated payee or the financial institution must send written notice of the amount and date at least ten days before the scheduled transfer.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "Which rail is a payroll direct deposit?",
+            options: ["An ACH credit", "An ACH debit, because the employee's bank pulls the wages in", "A wire transfer, because the employer orders payment of a fixed amount", "An instant payment, because wages must be usable on the stated payday"],
+            correctIndex: 0,
+            explanation: "The payer's side pushes the money, which is what puts it inside Regulation CC's definition of an electronic payment.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Where does Regulation CC say the rules for the automated clearing house come from?",
+            options: ["An operating circular or an association's rules", "The Code of Federal Regulations, in the same part as the availability schedule", "The Uniform Commercial Code as enacted in the originating bank's state", "A joint rulemaking by the federal banking agencies on a five-year cycle"],
+            correctIndex: 0,
+            explanation: "Those documents are not statutes and are not published in the CFR, which is why the consumer protections come from Regulation E instead.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "What two questions does the course say predict which rules apply to a payment?",
+            options: ["Push or pull, collect or pay", "How large it is, and whether both parties bank at the same institution", "Which weekday it falls on, and whether that day is a federal holiday", "Whether it recurs, and whether the payee is a business or an individual"],
+            correctIndex: 0,
+            explanation: "Answering both predicts the applicable rules without memorising speeds, which matters because speeds change and categories do not.",
+            sourceLessonSlug: "six-rails-six-clocks",
+          },
+          {
+            prompt: "Under U.C.C. 4-201(a), what is a collecting bank's settlement for a deposited item before it becomes final?",
+            options: ["Provisional", "Final, because the credit has already been posted to the customer's account", "Conditional on the customer maintaining a positive balance until settlement", "Irrevocable once the availability period stated in the schedule has expired"],
+            correctIndex: 0,
+            explanation: "The bank is an agent or sub-agent of the item's owner, so the credit is a placeholder pending an event that has not happened.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "What may a bank do under U.C.C. 4-214(a) if a deposited item is not finally paid?",
+            options: ["Revoke, charge back, or obtain refund", "Report the customer to a screening agency and close the account immediately", "Extend the availability hold indefinitely until the item is eventually paid", "Recover the amount only from the drawer, never from its own customer"],
+            correctIndex: 0,
+            explanation: "The right is conditioned on returning the item or notifying the customer by the midnight deadline or within a reasonable time after learning the facts.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "What does the course call the most expensive confusion it addresses?",
+            options: ["Availability against finality", "Business day against banking day when counting an availability period", "ACH credit against ACH debit when identifying which rail applies", "Semimonthly against biweekly when counting a year of paydays"],
+            correctIndex: 0,
+            explanation: "Regulation CC says when money may be used and the commercial code says when it is yours to keep, and the second answer can come later.",
+            sourceLessonSlug: "provisional-until-it-is-not",
+          },
+          {
+            prompt: "How long is the instant payment service's business day?",
+            options: ["Twenty-four hours, every day", "The same as Regulation CC's, excluding weekends and ten named dates", "From the opening of the funds service each weekday until its close", "From one cut-off hour to the next at the participating institution"],
+            correctIndex: 0,
+            explanation: "The operator's own description records a 24-hour business day each day of the week, including weekends and holidays, read on 28 August 2026.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "What is the trade the instant payment lesson identifies?",
+            options: ["Speed against the ability to change your mind", "Cost against reliability, because faster rails carry higher sending fees", "Privacy against convenience, because faster payments carry more data", "Availability against interest, because faster funds accrue interest later"],
+            correctIndex: 0,
+            explanation: "A stop-payment right needs an interval between agreeing to a payment and its happening, and instant settlement removes the interval.",
+            sourceLessonSlug: "instant-and-irrevocable",
+          },
+          {
+            prompt: "How many paydays a year do biweekly and semimonthly schedules produce?",
+            options: ["26 and 24", "24 and 26, with the fortnightly schedule producing the smaller count", "26 and 26, since both schedules pay approximately twice each month", "52 and 24, since a fortnightly schedule pays in every week of the year"],
+            correctIndex: 0,
+            explanation: "Biweekly is every fourteen days and anchored to a weekday; semimonthly is twice within each calendar month and anchored to dates.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "Why does a biweekly schedule produce two three-paycheck months a year?",
+            options: ["26 across 12 months averages over two", "Because two months each year contain a fifth occurrence of the payday weekday", "Because employers add an extra payment in the months containing 31 days", "Because a fortnightly cycle skips a payment in two months and doubles in two"],
+            correctIndex: 0,
+            explanation: "Semimonthly never does, because twenty-four across twelve is exactly two every month, and the annual total is unchanged either way.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "What does the course say a three-paycheck month is?",
+            options: ["The same total in more pieces", "Extra compensation the employer provides twice each calendar year", "A correction for two earlier months that contained only one payday", "Evidence that the employer changed the pay frequency mid-year"],
+            correctIndex: 0,
+            explanation: "Only the dates the pieces land on have changed, and the course draws no conclusion about what to do with that.",
+            sourceLessonSlug: "four-different-years",
+          },
+          {
+            prompt: "Does federal wage-and-hour law set how often an employee must be paid?",
+            options: ["No", "Yes, it requires at least semimonthly payment for covered non-exempt employees", "Yes, it requires weekly payment for any employee working overtime hours", "Only for employees paid by direct deposit rather than by paper check"],
+            correctIndex: 0,
+            explanation: "The regulations presume a regular pay day exists and measure other duties against it, leaving frequency to state law.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Under New York Labor Law section 191, how often must a manual worker be paid?",
+            options: ["Weekly, within seven calendar days", "Semi-monthly, on days the employer designates in advance as regular paydays", "Every fourteen days, in line with the most common national schedule", "Monthly, provided payment falls within ten days of the month's end"],
+            correctIndex: 0,
+            explanation: "A clerical and other worker, by contrast, is paid on the agreed terms but not less frequently than semi-monthly.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "What three facts does the course tell you to take from your own state's payday statute?",
+            options: ["Frequency, worker category, maximum lag", "Minimum wage, overtime multiplier, and final-paycheck deadline", "The penalty, the filing deadline, and the enforcing agency's address", "The definition of a business day, the cut-off hour, and the hold period"],
+            correctIndex: 0,
+            explanation: "Those three come from one document and feed the mapping exercise, which is why the course prints no fifty-state table.",
+            sourceLessonSlug: "who-decides-how-often",
+          },
+          {
+            prompt: "Under 20 CFR 404.1807, what decides the Wednesday on which a monthly benefit is paid?",
+            options: ["The day of the month of a birth date", "The date on which the application for benefits was originally approved", "The state in which the beneficiary was residing when entitlement began", "The order in which payments are processed by the paying agency each month"],
+            correctIndex: 0,
+            explanation: "The 1st through the 10th maps to the second Wednesday, the 11th through the 20th to the third, and after the 20th to the fourth.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "What happens when a scheduled benefit delivery day falls on a weekend or Federal legal holiday?",
+            options: ["Payment moves to the first preceding day", "Payment moves to the next following weekday that is not a holiday", "Payment is delivered on the day itself, since delivery is electronic", "Payment is combined with the following month's scheduled delivery"],
+            correctIndex: 0,
+            explanation: "The payment moves earlier, which is the opposite of what most people assume a calendar collision does.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "What property makes a benefit payment date unusual among a household's arrivals?",
+            options: ["It can be computed a year ahead", "It is guaranteed to be available for withdrawal on the day it is delivered", "It is exempt from the availability schedule that applies to other deposits", "It may be moved to a different day at the recipient's written request"],
+            correctIndex: 0,
+            explanation: "A published rule plus a birth date needs no phone call and no account access, which separates a calendar from a forecast.",
+            sourceLessonSlug: "when-a-benefit-arrives",
+          },
+          {
+            prompt: "What does the mapping lesson say the map does not do?",
+            options: ["Resolve a shortfall", "Record the date on which each recurring arrival becomes usable", "Identify which outgoing payments still have a stop-payment window", "Attribute each obligation date to the party that chose it"],
+            correctIndex: 0,
+            explanation: "A timing map and a shortfall are different problems, and no schedule fixes the second one.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "Which date does the map record for each arrival?",
+            options: ["The usable date", "The date the payer initiated the payment from their own account", "The date the item appears on the next periodic statement", "The date the depositary bank receives credit from the paying bank"],
+            correctIndex: 0,
+            explanation: "The landing date and the usable date differ, and only the usable date is one an obligation can actually be met from.",
+            sourceLessonSlug: "build-the-map",
+          },
+          {
+            prompt: "Who may request a bank's specific availability policy disclosure?",
+            options: ["Any person", "Any accountholder, in writing, once in each calendar year", "Any consumer who has already made a deposit at that institution", "Any person who has received a written notice of an exception hold"],
+            correctIndex: 0,
+            explanation: "The rule requires the bank to provide it to any person upon oral or written request, which makes it a comparison tool before opening an account.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "Under 12 CFR 229.16(c)(3), what follows a case-by-case delay with no written notice at the time of deposit?",
+            options: ["No fees for the resulting overdrafts or returns", "The bank must credit the account with the full deposit immediately", "The bank must give thirty days' notice before applying any further hold", "The customer may recover statutory damages without proving any loss"],
+            correctIndex: 0,
+            explanation: "The bar applies where the overdraft or return would not have occurred but for the delay and the deposited check was paid by the paying bank.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "How long does a person have to bring an action for a funds-availability violation?",
+            options: ["One year", "Three years from the date the customer discovered the violation", "Six years, matching the general limitation period for contract claims", "Thirty days from the date the funds were finally made available"],
+            correctIndex: 0,
+            explanation: "The period runs from the date of the occurrence of the violation involved, alongside statutory damages, actual damages, costs and fees.",
+            sourceLessonSlug: "violation-or-just-the-rule",
+          },
+          {
+            prompt: "How many documents does the capstone ask a learner to collect, and what is the product?",
+            options: ["Five documents, and a calendar built from them", "Three documents, and a monthly budget covering the coming year", "Seven documents, and a written complaint to the institution's supervisor", "Two documents, and a ranking of institutions by hold length"],
+            correctIndex: 0,
+            explanation: "Every date on the resulting calendar is traceable to a rule the learner has read, and the gaps become visible in advance.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+          {
+            prompt: "What habit does the course ask a learner to keep after it ends?",
+            options: ["Ask which document set a surprising date", "Recalculate the whole map after every statement cycle", "Request a new availability policy disclosure each quarter", "Compare their fee totals against a published national average"],
+            correctIndex: 0,
+            explanation: "The answer is nearly always a specific rule: a definition, a cut-off hour, an availability category, a posting sequence, a pay lag, or a published payment day.",
+            sourceLessonSlug: "read-your-own-calendar",
+          },
+        ],
+      },
+    },
   ],
 };

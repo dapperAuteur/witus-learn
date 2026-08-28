@@ -234,6 +234,7 @@ import { TERRITORIES_COURSE } from "./data/territories-course";
 import { THE_COUNTY_COMMITTEE_COURSE } from "./data/the-county-committee-course";
 import { CREDIT_DECISIONS_COURSE } from "./data/credit-decisions-course";
 import { BANKING_AND_THE_UNBANKED_COURSE } from "./data/banking-and-the-unbanked-course";
+import { CASH_FLOW_TIMING_COURSE } from "./data/cash-flow-timing-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2384,6 +2385,51 @@ async function main() {
       seriesOrder: 2,
       seriesCode: "MONEY",
       seriesPosition: "02",
+    },
+    // MONEY-03 · "Cash Flow, and When the Money Actually Moves" (Money & Property). Third course
+    // in the `personal-money` series ("Your Money, and Who Decides"), from
+    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.1. Tier 0.
+    // NO migration - pnpm seed:courses.
+    //
+    // WHY THIS SUBJECT AND NOT BUDGETING, WHICH IS THE DECISION WORTH RECORDING. The research brief
+    // concluded that budgeting is a SECTION and never a course, because it has no mechanism, no
+    // decision-maker and no recourse, so this catalog's read-the-rule method has nothing to bite on
+    // and forcing it would fabricate a grievance. BAM asked for cash-flow TIMING instead, and timing
+    // has all three: a federal schedule for when a deposit becomes usable (12 U.S.C. 4001 et seq.
+    // and 12 CFR part 229, with six named exceptions, five-field written notices and a civil
+    // liability provision), a state commercial-code permission for the order money leaves in
+    // (U.C.C. 4-303(b), "in any order"), and state payday statutes for how often you are paid
+    // (federal law sets a regular pay day at 29 CFR 778.106 and does not set its frequency).
+    //
+    // THE COURSE TEACHES NO BUDGETING TECHNIQUE AT ALL. No envelope method, no percentage split, no
+    // advice about what to spend, what to pay first, how large a buffer to hold or which pay
+    // frequency to prefer. It says so in PROSE in three places per the `surplus-funds-basics`
+    // posture: Section 1 lesson 1, Section 6 lesson 1, and the capstone. `cert-disclaimer.ts` does
+    // not cover this, because its one sentence is about affiliation with a named certifying body.
+    //
+    // BOUNDARIES AGAINST THE TWO SIBLINGS, WHICH IS WHERE A TIMING COURSE WOULD OTHERWISE DUPLICATE.
+    // The consumer report, the score, the adverse action notice and the dispute belong to MONEY-01.
+    // Deposit insurance, the identity gate, the fee schedule, the overdraft OPT-IN and the
+    // substitute market belong to MONEY-02. This course touches overdraft only where posting ORDER
+    // decides how many of them a fixed set of payments produces, which is the one thing MONEY-02
+    // leaves open, and it re-teaches no fee rule.
+    //
+    // EVERY EXTERNAL FIGURE WAS READ ON 2026-08-28 AND CARRIES THAT DATE IN THE LESSON. The
+    // Regulation CC thresholds in force from 1 July 2025 ($275 minimum availability, $550 cash
+    // withdrawal, $6,725 large deposit and new account) and the 229.21 statutory damages ($125 to
+    // $1,350 individual, the lesser of $672,950 or 1 percent of net worth for a class) are taught
+    // as figures the statute's own five-year adjustment clause at 12 U.S.C. 4006(f) will move
+    // again, never as facts to memorise. The course prints no fifty-state payday table and no
+    // national cut-off hour, and sends the learner to the primary document in both cases.
+    {
+      slug: "cash-flow-timing",
+      course: CASH_FLOW_TIMING_COURSE,
+      category: "Money & Property",
+      seriesSlug: "personal-money",
+      seriesTitle: "Your Money, and Who Decides",
+      seriesOrder: 3,
+      seriesCode: "MONEY",
+      seriesPosition: "03",
     },
   ]) {
     await seedAuthoredCourse(db, {
