@@ -2137,6 +2137,128 @@ Conn. Gen. Stat. ch. 743i, §§ 42-240 to 42-248. (n.d.). *Consumer rent-to-own 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — Attached to money already coming to you
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "a-refund-is-money-already-owed",
+      title: "14 · A refund is a debt the government already owes you",
+      section: "Section 4 · Attached to money already coming to you",
+      body: `A tax refund is not a prize and it is not a windfall. It is the return of an overpayment: money that was yours, withheld from your pay across the year, and repaid because more was taken than was owed.
+
+**The statute is unambiguous about what it is.** Under 26 U.S.C. § 6402(a) the Secretary may credit an overpayment "against any liability in respect of an internal revenue tax" and "shall refund any balance" to the person who made it (26 U.S.C. § 6402, n.d.). **Shall refund.** It is a debt, and the creditor is you.
+
+**That single fact reframes every product in this section.** A loan made against a refund is a loan against money the government is already required to pay you. The lender is not taking a credit risk on whether the money exists. It is taking a risk on timing and on whether the return is correct. The product is not access to money you do not have; it is **access to money you do have, sooner**.
+
+**And federal law fixes how much sooner, for some filers and not others.** 26 U.S.C. § 6402(m) says that no credit or refund of an overpayment for a taxable year "shall be made before the 15th day of the second month following" the close of that year, where the return claims the child tax credit by reason of section 24(d) or the earned income credit under section 32 (26 U.S.C. § 6402, n.d.).
+
+**Read that carefully, because it is the mechanism of the whole section.** The hold does not apply to every filer. It applies to returns claiming two specific credits, and those two credits are refundable credits aimed at working households with lower incomes. So federal law itself holds the refund of the filers who are, by the design of the credits, least able to wait for it, and holds nobody else's. **The hold is not a scandal; it is an anti-fraud measure with a stated purpose.** But its effect on the market is not in dispute: it creates a defined window, in a defined population, in which a large and certain sum of money is coming and has not arrived.
+
+**A product that fills a defined gap for a defined population is not an accident of the market. It is a response to a statute.** Section 1's borrowed procedure applies exactly: the door that closed is the calendar, the pool that replaced it is a lender advancing against a receivable it can verify, and the risk it bears is small because the debtor is the United States Treasury.
+
+**Which is why the price is the only interesting question**, and why the next lesson does nothing but price it. A product whose credit risk is genuinely low, sold into a window created by statute, to a population identified by statute, should be cheap. Whether any particular offer is cheap is arithmetic, and you already know the arithmetic.
+
+**One thing to hold on to, though, before the arithmetic.** The reason a household takes an advance on money coming in three weeks is almost never ignorance of the price. It is that something is due this week. Section 1 said this and it bears repeating here: the FDIC's own survey of why households use nonbank services collects reasons, not excuses, and timing is the most ordinary reason there is.
+
+:::reveal What does 26 U.S.C. 6402(a) say the Secretary shall do with the balance of an overpayment? ||| Refund it, after crediting it against any liability in respect of an internal revenue tax.
+
+:::reveal What date does 26 U.S.C. 6402(m) fix, and for which returns? ||| The 15th day of the second month after the close of the taxable year, for returns claiming the refundable child tax credit under section 24(d) or the earned income credit under section 32.
+
+:::reveal Why does the hold matter for the market in refund products? ||| It creates a defined window, in a defined population, in which a large and certain sum is coming and has not arrived.
+
+:::reveal What risk does a lender advancing against a refund actually bear? ||| Timing, and whether the return is correct. It is not bearing the risk that the money does not exist, because the debtor is the Treasury.
+
+## Vocabulary
+- **Overpayment**: tax paid in excess of the liability, which 26 U.S.C. 6402(a) requires to be credited and then refunded.
+- **Refundable credit**: a credit that can produce a payment to the filer rather than only reducing tax owed, of which section 24(d) and section 32 are the two named in 6402(m).
+- **The statutory hold**: the rule at 26 U.S.C. 6402(m) delaying refunds on returns claiming those two credits until a fixed date.
+- **Advance against a receivable**: lending against a sum a third party is already obliged to pay, which is what a refund-related loan is.
+
+## Sources
+26 U.S.C. § 6402. (n.d.). *Authority to make credits or refunds*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6402`,
+    },
+    {
+      slug: "the-refund-loan-and-the-transfer",
+      title: "15 · Two products, and only one of them is a loan",
+      section: "Section 4 · Attached to money already coming to you",
+      body: `Two things are commonly sold alongside tax preparation, they are easily confused, and only one is credit. Telling them apart is most of the lesson.
+
+**The first is a loan against the refund.** The filer borrows now, and the loan is repaid out of the refund when it arrives. It is credit: there is an amount, a term, and a charge, so Regulation Z reaches it and there is an annual percentage rate to read. **Section 1's arithmetic applies without modification.** A charge of C on an advance of A repaid in D days is a periodic rate of C divided by A, multiplied by 365 divided by D. A 60 dollar charge on a 600 dollar advance repaid in 21 days is 0.10 times about 17.4, which is roughly **174 percent a year**. Those are illustrative figures chosen to show the shape, not any offer in the market.
+
+**Notice what makes that figure large, because it is not the size of the charge.** Ten percent of the advance is not an outrageous number by itself. It is large **because the term is three weeks**, and the term is three weeks because the money was always going to arrive in three weeks. **A short term is what turns a modest charge into a large rate, and this is the product where the term is shortest and most certain.**
+
+**The second product is not a loan at all**, and this is the one people get wrong. Under a refund transfer, sometimes sold as a refund anticipation cheque, no money is advanced. A temporary bank account is opened, the refund is directed into it, the preparation fee and the transfer fee are deducted, and the remainder is passed to the filer. **Nothing has been lent.** What has been sold is the ability to pay the preparation fee out of the refund instead of out of pocket at the time of filing.
+
+**So the honest description of a refund transfer is a fee for deferring another fee**, and its cost cannot be expressed as an annual percentage rate, because there is no principal and no credit. The comparison is simpler and starker: what does the transfer cost, and what would preparation have cost if paid directly? **That is a subtraction, and it is the only question the product raises.**
+
+**Which makes the free routes the load-bearing comparison, and they are named, federal, and non-commercial.**
+
+- **IRS Free File**, at IRS.gov, offers guided tax software free for filers within an adjusted gross income threshold (89,000 dollars on the page read on **28 August 2026**), plus Free File Fillable Forms with no income limit at all (Internal Revenue Service, n.d.-a). The IRS's own page warns that you must start at IRS.gov, because going directly to a partner's commercial site does not get you the free program.
+- **And the Free File program bans the product this lesson is about.** Among the benefits the IRS lists: "No upselling of additional services or hidden fees permitted. Selling of bank products, such as a refund anticipation loan (RAL), audit protection or other services are prohibited" (Internal Revenue Service, n.d.-a). **The tax authority names the product by name and excludes it from its own free channel.**
+- **VITA and TCE** provide free preparation by IRS-certified volunteers, with a quality review of every return before filing. VITA generally serves filers making 69,000 dollars or less, and TCE particularly serves people aged 60 and over, both figures read on **28 August 2026**. The IRS publishes a locator tool and a telephone number for finding a site (Internal Revenue Service, n.d.-b).
+
+**Three questions, then, and they settle both products.** What is the charge, in dollars? How many days earlier does the money arrive? And what would the same preparation have cost through a free channel? **A product that buys three weeks is worth what three weeks is worth to you, which is a question about your household and not about the product.**
+
+:::reveal What is the difference between a refund-related loan and a refund transfer? ||| The loan advances money and is repaid from the refund; the transfer advances nothing and simply lets the preparation fee be deducted from the refund.
+
+:::reveal Why can a refund transfer's cost not be expressed as an annual percentage rate? ||| Because no money is lent, so there is no principal and no credit for a rate to be computed on.
+
+:::reveal What does the IRS Free File program say about selling refund anticipation loans? ||| That the selling of bank products such as a refund anticipation loan, audit protection or other services is prohibited within the program.
+
+:::reveal What makes a modest charge on a refund advance produce a large annualized rate? ||| The shortness of the term, because the money was always going to arrive within a few weeks.
+
+## Vocabulary
+- **Refund anticipation loan**: credit advanced against an expected tax refund and repaid from it, which the IRS Free File program names and prohibits within its own channel.
+- **Refund transfer**: an arrangement in which a temporary account receives the refund so fees can be deducted from it, which advances no money and is therefore not credit.
+- **Fee deferral**: the accurate description of what a refund transfer sells, namely the ability to pay a preparation fee later out of the refund.
+- **Free File Fillable Forms**: the IRS option with no income limit, distinct from the guided software that carries an adjusted gross income threshold.
+- **VITA and TCE**: the IRS volunteer preparation programs, with a quality review of every return, serving filers by income and, for TCE, particularly those aged 60 and over.
+
+## Sources
+Internal Revenue Service. (n.d.-a). *IRS Free File: Do your taxes for free*. https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free
+
+Internal Revenue Service. (n.d.-b). *Free tax return preparation for qualifying taxpayers*. https://www.irs.gov/individuals/free-tax-return-preparation-for-qualifying-taxpayers
+
+15 U.S.C. § 1606. (n.d.). *Determination of annual percentage rate*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1606`,
+    },
+    {
+      slug: "overdraft-priced-as-credit",
+      title: "16 · Overdraft, priced the way this course prices everything else",
+      section: "Section 4 · Attached to money already coming to you",
+      body: `An overdraft is a very small loan, made without an application, for a very short time, at a fee. Price it the way you price everything else in this course and it is usually the most expensive credit a household ever uses.
+
+**MONEY-02 already taught the rule, and this lesson does not repeat it.** That course works through 12 CFR § 1005.17, the Regulation E provision under which a financial institution may not assess a fee for paying an ATM or one-time debit card overdraft unless it has given a segregated written notice, provided a reasonable opportunity to consent, obtained the consumer's affirmative consent, and confirmed that consent in writing (12 CFR § 1005.17, n.d.). It also teaches which transactions the opt-in rule does not cover, and it teaches the 2024 rule that Congress nullified in 2025, because describing that rule in the present tense would be wrong. **Go and read it there.** What this lesson adds is the price.
+
+**The conversion, on the same two steps.** An overdraft fee is a finance charge in everything but statutory name: it is the cost of having money you did not have, for the days until the account is brought positive. So the periodic rate is the fee divided by the amount overdrawn, and the multiplier is 365 divided by the number of days before the deposit lands.
+
+**Worked, with figures chosen as an illustration and not as anybody's fee schedule.** A 30 dollar fee on a 20 dollar shortfall repaid in 3 days is a periodic rate of 1.5, multiplied by about 121.7 three-day periods in a year. The product is enormous, and quoting it as a percentage stops being informative. **That is itself the finding.** The annualization tool that lets you rank a card against a payday loan breaks down here, because the fee is flat and the amount is tiny, and the honest statement is simpler: **the fee is larger than the transaction.**
+
+**Which is the real comparison, and it needs no rate at all.** For a flat fee, the cost as a share of the amount falls as the amount rises. Thirty dollars on a 200 dollar overdraft is 15 percent of it. Thirty dollars on a 5 dollar coffee is six times the coffee. **A flat fee is a regressive price: it costs the most, proportionally, on the smallest transactions**, which is the same structural point MONEY-02 makes about a monthly fee waived above a balance threshold. Both fall hardest on the smallest balances, and neither does so by anybody's malice.
+
+**This is not advice, and here is the second of the three places this course says so plainly.** This lesson does not tell you to opt in or to opt out, does not say whether an overdraft is better or worse than any alternative, and does not know what happens in your household if a payment is declined. Being declined has costs too: a returned payment fee from the party you were paying, a late charge, a service disconnected, a journey not made. **Those are real and this course cannot weigh them for you.** What it can do is make sure the fee is a number you have looked at rather than a number that happened to you.
+
+**Three things to find, and all three are on a document your institution must give you.** MONEY-02 teaches that the fee schedule is a document you can demand. On it: the overdraft or non-sufficient-funds fee, **how many such fees may be charged in a single day**, and whether the institution charges a further sustained-overdraft fee if the balance stays negative. The daily maximum is the one people never look up, and it is the one that turns a single bad morning into a multiple.
+
+:::reveal What does this lesson add to MONEY-02's treatment of overdraft? ||| The price. MONEY-02 teaches the opt-in rule and the rule that was nullified; this lesson runs the course's conversion on the fee.
+
+:::reveal Why does annualizing an overdraft fee stop being informative? ||| Because the fee is flat and the amount is tiny, so the percentage becomes enormous. The honest statement is that the fee is larger than the transaction.
+
+:::reveal Why is a flat fee a regressive price? ||| Because its cost as a share of the amount falls as the amount rises, so it costs the most proportionally on the smallest transactions.
+
+:::reveal What are the three things to find on an institution's fee schedule about overdraft? ||| The fee itself, how many may be charged in a single day, and whether a sustained-overdraft fee applies if the balance stays negative.
+
+## Vocabulary
+- **Overdraft service**: the arrangement, defined in 12 CFR 1005.17, under which an institution pays a transaction that overdraws an account and assesses a fee for doing so.
+- **Opt-in**: the four-step affirmative consent Regulation E requires before an ATM or one-time debit card overdraft fee may be assessed.
+- **Flat fee**: a charge of a fixed amount regardless of the transaction size, which is proportionally most expensive on the smallest transactions.
+- **Sustained overdraft fee**: an additional charge some institutions assess when a balance remains negative for a stated number of days.
+- **Daily maximum**: the number of overdraft or non-sufficient-funds fees an institution may charge in one day, which is the figure that turns a single incident into a multiple.
+
+## Sources
+12 CFR § 1005.17. (n.d.). *Requirements for overdraft services*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.17
+
+15 U.S.C. § 1606. (n.d.). *Determination of annual percentage rate*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/1606`,
+    },
   ],
 };
 
