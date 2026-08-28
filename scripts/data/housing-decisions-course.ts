@@ -4041,7 +4041,7 @@ Mapping Racist Covenants. (n.d.). *Mapping Racist Covenants*. University of Ariz
       },
     },
     // ══════════════════════════════════════════════════════════════════════
-    // FINAL ASSESSMENT — 45 questions, serving 10, passing 80
+    // FINAL ASSESSMENT — 46 questions, serving 10, passing 80
     // ══════════════════════════════════════════════════════════════════════
     {
       slug: "final-housing-decisions",
