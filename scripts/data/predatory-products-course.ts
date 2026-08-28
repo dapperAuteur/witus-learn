@@ -1500,6 +1500,134 @@ O.C.G.A. § 44-12-131. (n.d.). *Duration of pawn transactions; lease-back of mot
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — Rent-to-own: the total against the price
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "total-of-payments-against-cash-price",
+      title: "10 · Two numbers, and the only comparison that matters",
+      section: "Section 3 · Rent-to-own: the total against the price",
+      body: `A sofa has a price. It also has a total. Rent-to-own is the market where those two numbers are furthest apart, and the whole analysis is putting them side by side.
+
+**The vocabulary first, in a statute's own words.** Connecticut defines **cash price** as "the price at which a lessor in the ordinary course of business would in good faith offer the property for cash on the date of the rent-to-own agreement" (Conn. Gen. Stat. § 42-240, n.d.). That is what the item costs if you walk in and pay for it. The other number is the **rent-to-own price**: the total number of payments and the total amount of those payments necessary to acquire ownership.
+
+**Two numbers, one subtraction.** The difference between them is the price of the arrangement, and it is the only figure in this transaction worth arguing about.
+
+**Connecticut requires both numbers and the subtraction, in a size you can read.** Conn. Gen. Stat. § 42-241, headed "Written agreement. Information which must be disclosed", lists the items that must appear before the lessee signs. Among them are the cash price, the rent-to-own price, and, as its own line, "The difference between the cash price and the rent-to-own price". All three of those figures must appear **in at least ten-point boldface type** (Conn. Gen. Stat. § 42-241, n.d.). The type-size rule is the tell: a legislature that has to specify the point size has seen the alternative.
+
+**Connecticut also caps the total, and does it in an unusual way.** Section 42-248 is headed "Limit on total rental payments. Lessee to acquire ownership when fifty per cent of all rental payments made by lessee equals cash price of rented property. Termination of agreement." Its operative sentence is:
+
+> "When fifty per cent of all rental payments made by a lessee equals the cash price of the property disclosed to the lessee in the rent-to-own agreement, the lessee shall own the rented property and the rent-to-own agreement shall terminate." (Conn. Gen. Stat. § 42-248, n.d.)
+
+**Read what that does.** It does not forbid a high total. It makes ownership vest automatically once half of what has been paid equals the cash price, which is the same thing as saying the total may not exceed twice the cash price, expressed as a mechanism rather than as a prohibition. **A cap you have to enforce is worth less than a cap that transfers the title by operation of law.**
+
+**The figures are Connecticut's, read on 28 August 2026, and they are not national.** Other states set different ceilings, and some set none. The next lesson explains why the federal comparison rule does not fill the gap.
+
+**And the market has been the subject of a federal enforcement action about exactly this arithmetic.** On 20 April 2020 the Federal Trade Commission filed a complaint and a proposed stipulated final order against Progressive Leasing in the Northern District of Georgia. **The Commission alleged**, and this is an allegation rather than a finding, that consumers were told the payment plans were "same as cash" or "no interest", and that consumers instead "paid more than the sticker price, and frequently paid approximately twice the sticker price if they made all scheduled payments under the plans" (Federal Trade Commission, 2020). The FTC's own note on the release states the standard: "The Commission files a complaint when it has 'reason to believe' that the named defendants are violating or are about to violate the law", and "Stipulated final orders have the force of law when approved and signed by the District Court judge" (Federal Trade Commission, 2020). Section 6 lesson 2 teaches how to read that distinction generally.
+
+:::reveal What are the two numbers a rent-to-own comparison turns on? ||| The cash price and the rent-to-own price, which is the total of the payments needed to acquire ownership.
+
+:::reveal How does Connecticut define cash price? ||| The price at which a lessor in the ordinary course of business would in good faith offer the property for cash on the date of the rent-to-own agreement.
+
+:::reveal What does Conn. Gen. Stat. 42-248 do when fifty per cent of the payments made equals the cash price? ||| Ownership vests in the lessee and the agreement terminates, which caps the total at twice the cash price by operation of law.
+
+:::reveal In the Progressive Leasing matter, was the claim that consumers frequently paid about twice the sticker price a finding or an allegation? ||| An allegation. It was pleaded in a complaint the Commission files when it has reason to believe the law is being violated.
+
+## Vocabulary
+- **Cash price**: what the item costs paid for outright, defined in Connecticut as the price the lessor would in good faith offer for cash on the date of the agreement.
+- **Rent-to-own price**: the total number and total amount of the payments needed to acquire ownership, which Connecticut requires to be disclosed beside the cash price.
+- **The difference**: the price of the arrangement itself, which Connecticut requires to be printed as its own line in at least ten-point boldface type.
+- **Automatic vesting**: Connecticut's mechanism by which title passes and the agreement ends once half the payments made equal the cash price, rather than leaving the cap to be enforced afterwards.
+
+## Sources
+Conn. Gen. Stat. ch. 743i, §§ 42-240 to 42-248. (n.d.). *Consumer rent-to-own agreements*. Connecticut General Assembly. https://www.cga.ct.gov/2023/pub/chap_743i.htm
+
+Federal Trade Commission. (2020, April 20). *Rent-to-own payment plan company Progressive Leasing will pay $175 million to settle FTC charges it deceived consumers about pricing*. https://www.ftc.gov/news-events/news/press-releases/2020/04/rent-own-payment-plan-company-progressive-leasing-will-pay-175-million-settle-ftc-charges-it`,
+    },
+    {
+      slug: "why-no-annual-rate-appears",
+      title: "11 · Why there is no rate on the page",
+      section: "Section 3 · Rent-to-own: the total against the price",
+      body: `Look at a rent-to-own agreement and you will not find an annual percentage rate. That is not an oversight, and it is not usually a violation. **The comparison rule Section 1 taught does not reach this transaction**, and the reason is a definition.
+
+**Regulation Z applies to credit.** Its definition of a **credit sale** at 12 CFR § 1026.2(a)(16) covers an ordinary sale on credit, and then reaches further, to a bailment or lease. The test has two parts, and both have to be satisfied. The customer must agree "to pay as compensation for use a sum substantially equivalent to, or in excess of, the total value" of the property and any services involved, **and** the customer must either become the owner on completing the payments or have the option to become the owner for no further consideration or for nominal consideration (12 CFR § 1026.2, n.d.).
+
+**Rent-to-own agreements are ordinarily written so that the first part is not satisfied.** They are structured as terminable leases: the customer rents for a period, may renew, and may return the item and walk away at any point without owing the remaining payments. If you may stop at any time, you have not agreed to pay a sum substantially equivalent to the total value. You have agreed to this period, and then to decide again.
+
+**So the transaction sits outside Regulation Z**, which means no finance charge, no total of payments in a federal disclosure box, and **no annual percentage rate**. Nothing has been withheld. The rule was written around a promise to pay, and this contract is drafted not to contain one.
+
+**Notice that the customer genuinely does get something for that.** The right to return the item is real, and for a household that expects its income to be interrupted it is worth having. A credit sale you cannot pay leaves you with a debt, a possible judgment, and an entry in the file MONEY-01 taught you to read. A terminable lease you cannot pay leaves you without the sofa. **Those are different risks, and a person who prefers the second one is making a choice rather than a mistake.** What it costs is the difference between the two numbers in the last lesson.
+
+**The states filled the gap themselves, and the fact that they had to is the proof.** The whole point of a rental-purchase act is to require, under state law, the disclosures that Regulation Z would have required if the transaction were credit: the cash price, the total to ownership, the difference, the number and amount of payments. Connecticut's statute exists because the federal one does not apply. **When you find a state statute doing a federal statute's job, you have found a product that was designed to sit outside the federal one.**
+
+**Which leaves the arithmetic to you, and it is easy arithmetic.** Number of payments, times the amount of each payment, plus anything due at signing and any charge for the option to purchase, equals the total to ownership. Set that against the cash price. Divide the total by the cash price and you have the multiple: 1.9 times, 2.3 times, whatever it is. **That multiple is the number to compare between offers**, and it needs no statute to compute.
+
+One thing to check on the page while you are there: almost every rental-purchase statute requires an **early purchase option**, and its formula is where the difference between two otherwise similar offers usually hides.
+
+:::reveal What two things must both be true for a lease to be a credit sale under 12 CFR 1026.2(a)(16)? ||| The customer must agree to pay a sum substantially equivalent to or greater than the total value, and must become or be able to become the owner for no or nominal further consideration.
+
+:::reveal Which part of that test does a terminable rent-to-own lease avoid? ||| The agreement to pay, because the customer may return the item at any time and owes nothing further.
+
+:::reveal What does the existence of state rental-purchase acts tell you? ||| That the product sits outside the federal disclosure rule, so the states legislated the disclosures themselves.
+
+:::reveal What single figure lets you compare two rent-to-own offers without any statute? ||| The multiple: the total to ownership divided by the cash price.
+
+## Vocabulary
+- **Credit sale**: the Regulation Z category at 12 CFR 1026.2(a)(16) that reaches some leases, and whose two-part test a terminable rental-purchase agreement is drafted to fail.
+- **Terminable lease**: an agreement the customer may end at any time by returning the property, which is why no promise to pay the full value exists.
+- **Rental-purchase act**: a state statute requiring, under state law, the disclosures the federal credit rules would have required if the transaction were credit.
+- **Early purchase option**: the formula for buying the item outright before the end of the payment schedule, and the term where two similar offers most often differ.
+- **The multiple**: the total to ownership divided by the cash price, which is this course's comparison figure where no annual percentage rate exists.
+
+## Sources
+12 CFR § 1026.2. (n.d.). *Definitions and rules of construction*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.2
+
+Conn. Gen. Stat. ch. 743i, §§ 42-240 to 42-248. (n.d.). *Consumer rent-to-own agreements*. Connecticut General Assembly. https://www.cga.ct.gov/2023/pub/chap_743i.htm`,
+    },
+    {
+      slug: "where-the-total-hides",
+      title: "12 · Where the total hides, and what a regulator found",
+      section: "Section 3 · Rent-to-own: the total against the price",
+      body: `A number that is disclosed and a number that is visible are not the same number. That gap is the subject of this lesson, and a federal complaint describes it precisely.
+
+**What the Commission alleged.** In the Progressive Leasing matter, filed 20 April 2020 in the Northern District of Georgia, the FTC's complaint alleged that when consumers were presented with the terms of the offers, they were shown the cash price of the item along with the cost of the initial payment and each periodic payment. **To see the full cost of the plan, the complaint alleged, consumers had to click a dropdown arrow next to the words "Additional Lease Details"** (Federal Trade Commission, 2020).
+
+**Read the structure of that allegation, because it is the general case.** Every figure the consumer needed was in the flow. The cash price was there. The payment amount was there. The one number that is the whole comparison, the total to ownership, was behind an interaction. **A disclosure that requires a deliberate act to reveal is disclosed and invisible at once**, which is exactly the difference between the arithmetic being available and the arithmetic being done.
+
+**Posture, stated plainly, because this course does not blur it.** That is an allegation in a complaint, not a judicial finding of fact. The Commission's own note on the release says it "files a complaint when it has 'reason to believe' that the named defendants are violating or are about to violate the law and it appears to the Commission that a proceeding is in the public interest" (Federal Trade Commission, 2020). The matter was resolved by a proposed stipulated final order under which the company was to pay 175 million dollars for consumer refunds, to stop misrepresenting the cost, terms or nature of the plans, **to clearly and conspicuously disclose the total cost to own when marketing them**, to obtain express informed consent before charging, and to monitor the retailers offering its plans. The Commission's vote to authorise the filing was 3 to 2. The release also records that the company was aware of consumer confusion, with more than 15,000 complaints received in one 15-month period, according to the FTC.
+
+**The remedy is the most instructive part of the document**, because it names what was missing: the total cost to own, clearly and conspicuously. That is the same number Connecticut's statute puts in ten-point boldface, and the same number the last lesson told you to compute yourself.
+
+**So here is the method, and it is four lines on the back of the agreement.**
+
+1. **Find the cash price.** If it is not on the page, ask for the price to buy the item outright today, and write down the answer.
+2. **Find the payment amount and how many payments reach ownership.** Multiply.
+3. **Add everything else**: anything due at signing, delivery, any required fee, any charge in the early purchase formula if you intend to use it.
+4. **Divide the total by the cash price.** You now have the multiple, which is comparable across any two offers and needs no rate.
+
+**And find your own state's rental-purchase act by name**, using the same four-step method Section 2 gave for lending: the state's own noun (rent-to-own, rental-purchase, lease-purchase), the state's own published code, then the four features that decide the price. For a rental-purchase act the four are: **what must be disclosed, whether the total is capped, what the early purchase option must cost, and what happens on a missed payment.**
+
+**None of this tells you whether to sign.** That is your decision about your own household, and this course does not know your household. What it can do is make sure that when you decide, both numbers are in front of you.
+
+:::reveal In the FTC's complaint, what did a consumer have to do to see the full cost of the plan? ||| Click a dropdown arrow next to the words Additional Lease Details.
+
+:::reveal What is the difference between a number being disclosed and a number being visible? ||| A disclosure that requires a deliberate act to reveal is present in the flow and absent from the decision.
+
+:::reveal What did the proposed stipulated final order require the company to disclose when marketing its plans? ||| The total cost to own the product, clearly and conspicuously.
+
+:::reveal What four features decide the price under a state rental-purchase act? ||| What must be disclosed, whether the total is capped, what the early purchase option costs, and what happens on a missed payment.
+
+## Vocabulary
+- **Total cost to own**: the figure the proposed order required to be disclosed clearly and conspicuously, and the same figure Connecticut prints in boldface.
+- **Stipulated final order**: a settlement that, in the Commission's own words, has the force of law when approved and signed by the District Court judge.
+- **Reason to believe**: the standard on which the Commission files a complaint, which is why a complaint is an allegation rather than a finding.
+- **Clearly and conspicuously**: the standard the order applied to the total cost, and the answer to a disclosure that sits behind an interaction.
+
+## Sources
+Federal Trade Commission. (2020, April 20). *Rent-to-own payment plan company Progressive Leasing will pay $175 million to settle FTC charges it deceived consumers about pricing*. https://www.ftc.gov/news-events/news/press-releases/2020/04/rent-own-payment-plan-company-progressive-leasing-will-pay-175-million-settle-ftc-charges-it
+
+Conn. Gen. Stat. ch. 743i, §§ 42-240 to 42-248. (n.d.). *Consumer rent-to-own agreements*. Connecticut General Assembly. https://www.cga.ct.gov/2023/pub/chap_743i.htm`,
+    },
   ],
 };
 
