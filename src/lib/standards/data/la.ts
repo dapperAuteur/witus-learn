@@ -296,6 +296,49 @@ export const JURISDICTION: JurisdictionFile = {
         },
       ],
     },
+
+    // ── High School Civics — C.14, personal financial literacy ─────────────
+    //
+    // ITS OWN FRAMEWORK, WITH ITS OWN fetchedOn, for the reason every state in this pass uses: the
+    // framework above was read 2026-07-18 and this expectation on 2026-08-28, when MONEY-01
+    // (`credit-decisions`) made any of C.14 claimable. `fetchedOn` is rendered to teachers as
+    // provenance, so restamping entries nobody re-read would corrupt the cheapest fact in the file.
+    //
+    // THIS SUPERSEDES A REJECTION. This file's notClaimed said "all of C.14 (personal financial
+    // literacy)" was not genuinely taught. One of its five sub-parts now is, in part.
+    //
+    // ONE SUB-PART, PARTIAL, AND EXPRESSLY NOT THE C.14 STEM. Louisiana's C.14 stem reads "Apply
+    // economic principles to make sound personal financial decisions, including in regards to
+    // income, money management, spending and credit, and savings and investing." Of those five
+    // named domains this course teaches exactly one, spending and credit. Claiming the stem would
+    // promise a Louisiana teacher four things they would not get, which is precisely the widening
+    // the standards rule forbids. Louisiana produced NO full claim anywhere in C.14, and that is the
+    // honest result rather than a gap in the analysis.
+    {
+      id: "la-civics-personal-finance",
+      subject: "Social Studies",
+      name: "Louisiana Student Standards for Social Studies — High School Civics, C.14",
+      publisher: "Louisiana Department of Education (LDOE)",
+      version: "2022 K-12 Louisiana Student Standards for Social Studies (document footer: Updated 7/10/2026)",
+      fetchedOn: "2026-08-28",
+      sourceUrl: LA_SS_SOURCE,
+      adoption:
+        "Louisiana files personal financial literacy inside its required High School Civics course, as standard C.14 with five lettered sub-parts running from career earning potential through applying financial data, the benefits and risks of credit, comparing financial services across institutions, and creating a budget. MONEY-01 (`credit-decisions`) reaches part of C.14.c and none of the rest, so Louisiana carries one partial claim and no full one. Re-read 2026-08-28 from the LDOE PDF, whose footer at that date read \"Updated 7/10/2026\" — the freshest publisher document of the nine jurisdictions re-fetched this pass.",
+      standards: [
+        {
+          code: "C.14.c",
+          text: "Explain the benefits and risks of using credit and examine the various uses.",
+          claimIds: [
+            "money.cost-of-credit-apr",
+            "money.credit-access-constraint",
+            "money.consumer-report-contents",
+            "money.adverse-action-notice",
+          ],
+          coverage: "partial",
+          note: "Partial, on the standard's trailing clause. Benefits and risks are squarely taught: the benefit is the timing gap credit is bought to close, and the risks are what the course spends most of its length on, namely the record a decision is made from, how long each adverse item may be reported, what a scoring model does with the file, and what a refusal must disclose. NOT covered: examining the VARIOUS USES of credit. The course does not survey mortgage, auto, card or installment products, and those belong to MONEY-04 and MONEY-06. A teacher planning against C.14.c gets the benefits-and-risks half and will have to supply the product survey.",
+        },
+      ],
+    },
   ],
 
   // Standards we CONSIDERED AND REJECTED — published as loudly as the claims.
@@ -314,7 +357,7 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "Civics expectations we checked and do NOT claim.",
-      body: "C.8.b/c/e/f (comparing systems of government, the Enlightenment philosophers, ratification debates, and natural-rights theory), C.9.d (the executive branch's Cabinet, executive orders, and the 'bully pulpit'), C.9.g/h (constructionist interpretation by name; how governments raise and allocate revenue), C.10.d (equal protection and due process doctrine), C.11.c/g/h/i/j (political parties and interest groups; gerrymandering and turnout; the media's effect on politics — our media-literacy work is consumer protection, not political-media analysis; Louisiana's congressional redistricting), C.12.a/c/e (the policy-fields survey; U.S. interactions with other nations; post-WWII international law), C.13.a/c/e/f (Adam Smith and the invisible hand; government-regulation perspectives; market structures and factors of production), and all of C.14 (personal financial literacy) are not genuinely taught by these courses, so we do not claim them.",
+      body: "C.8.b/c/e/f (comparing systems of government, the Enlightenment philosophers, ratification debates, and natural-rights theory), C.9.d (the executive branch's Cabinet, executive orders, and the 'bully pulpit'), C.9.g/h (constructionist interpretation by name; how governments raise and allocate revenue), C.10.d (equal protection and due process doctrine), C.11.c/g/h/i/j (political parties and interest groups; gerrymandering and turnout; the media's effect on politics — our media-literacy work is consumer protection, not political-media analysis; Louisiana's congressional redistricting), C.12.a/c/e (the policy-fields survey; U.S. interactions with other nations; post-WWII international law), and C.13.a/c/e/f (Adam Smith and the invisible hand; government-regulation perspectives; market structures and factors of production) are not genuinely taught by these courses, so we do not claim them. All of C.14 used to be rejected here too; see the entry below.",
     },
   ],
 };

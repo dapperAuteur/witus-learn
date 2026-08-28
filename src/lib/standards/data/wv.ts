@@ -12,9 +12,13 @@
 //   · Social studies — BESPOKE. West Virginia's College- and Career-Readiness Standards for Social
 //     Studies (WVBE Policy 2520.4) are West Virginia's own. The Civics course — a "culminating U.S.
 //     Studies class" and the state's civics capstone — carries standards coded SS.C.1 through SS.C.43
-//     across Civics (SS.C.1-22), Economics (SS.C.23-29), Personal Finance (SS.C.30-39), and Geography
-//     (SS.C.40-43). We map the Civics and two Economics standards the catalog genuinely reaches; the
-//     rest are rejected in notClaimed. Codes are cited exactly as printed (SS.C.1, SS.C.13, etc.).
+//     across Civics, Economics, Personal Finance and Geography, AS THAT DOCUMENT NUMBERED THEM IN
+//     2016. ⚠️ The numbering has since changed: the rule effective July 1, 2025 runs the Civics
+//     course to SS.C.37 only, re-uses SS.C.30-31 for ECONOMICS and SS.C.32-37 for GEOGRAPHY, and
+//     moves the ten Personal Finance standards to Appendix A as unprefixed items 1-10. See the
+//     Appendix A framework below, which is the only part of this file re-fetched under the current
+//     rule; the SS.C entries here still cite the 2016 document and are flagged in a research check.
+//     Codes are cited exactly as printed (SS.C.1, SS.C.13, etc.).
 //   · ELA — BESPOKE, NOT aliased. West Virginia adopted the Common Core in 2010 but REPEALED it in
 //     2015 (WVBE re-authored the standards; the "Next Generation" name was dropped and the CCSS
 //     numbering abandoned). West Virginia's English Language Arts standards now use West Virginia's
@@ -263,6 +267,80 @@ export const JURISDICTION: JurisdictionFile = {
       ],
     },
 
+    // ── Policy 2520.4 Appendix A — Personal Finance (effective July 1, 2025) ──
+    //
+    // ⚠️ THE BIGGEST CORRECTION IN THIS PASS, AND IT IS NOT ABOUT THIS COURSE. This file's header
+    // and its notClaimed both said West Virginia's Civics course carries a Personal Finance strand
+    // at SS.C.30 through SS.C.39, and that the catalog met none of it. Under the CURRENT rule that
+    // is not merely stale, it is WRONG in a way that would mislead a teacher:
+    //   · The current Civics course runs SS.C.1 through SS.C.37 ONLY. SS.C.38 and SS.C.39 do not
+    //     exist anywhere in the rule.
+    //   · SS.C.30 and SS.C.31 are now ECONOMICS standards ("Identify economic influences that impact
+    //     business climate on the local, regional, and global level" and "Track the evolution of
+    //     currency throughout history to facilitate the exchange of goods and services"), and
+    //     SS.C.32 through SS.C.37 are GEOGRAPHY. So a claim or a rejection filed against SS.C.30
+    //     today points at a completely different subject than it did.
+    //   · The ten personal-finance standards were MOVED to Appendix A of the rule and renumbered
+    //     1 through 10 with no code prefix at all.
+    // The governing instrument is W. Va. 126CSR44D (Policy 2520.4), filed July 8, 2024 and EFFECTIVE
+    // JULY 1, 2025, which by its own terms amends and repeals the June 9, 2016 version this file's
+    // other entries were transcribed from. The rule explains the move: "A personal finance
+    // graduation requirement, Personal Finance (CTE course code 1451), became effective with the
+    // 2024-2025 freshman cohort. ... Until counties implement a stand-alone Personal Finance course,
+    // counties must embed the Personal Finance standards found in Appendix A into Civics and/or Dual
+    // Credit/AP® Government and Politics."
+    //
+    // WHAT THIS FRAMEWORK DOES AND DOES NOT FIX. It maps the two Appendix A items MONEY-01
+    // (`credit-decisions`) genuinely reaches, and it corrects the record about where personal
+    // finance now lives. It does NOT re-verify the SS.C civics and economics entries above, which
+    // still cite the 2016 document; whether their codes and text survived the 2025 amendment is a
+    // real open question and it is filed as a research check (`wv-2520-4-2025-renumbering`) rather
+    // than assumed. The superseded 2016 text of SS.C.30-39 could not be obtained from West
+    // Virginia's own publisher at all (the Secretary of State's CSR reader returns only the 2009
+    // predecessor), so NO text is transcribed under those retired codes, per fetch-or-do-not-cite.
+    //
+    // THE CODE FIELD IS A CONSTRUCTED LOCATOR, AND THAT IS DELIBERATE. The publisher numbers these
+    // items "1." through "10." with NO code prefix, so there is no code as printed to transcribe.
+    // A bare "7" would be meaningless to a teacher and would collide with any future numbering, so
+    // the locator names the appendix. The TEXT below is verbatim; only the locator is ours.
+    //
+    // SOURCE FORMAT NOTE. The PDF at the policy URL is a 59-page SCAN with no text layer. The
+    // verbatim text below was transcribed from the machine-readable DOCX the same WVBE policy
+    // viewer serves at that URL with `&alt=1`. Same policy, same words, readable encoding.
+    {
+      id: "wv-personal-finance-appendix-a",
+      subject: "Social Studies",
+      name: "West Virginia College- and Career-Readiness Standards for Social Studies — Appendix A, Personal Finance",
+      publisher: WV_SS_PUBLISHER,
+      version:
+        "W. Va. 126CSR44D, WVBE Policy 2520.4 · filed July 8, 2024, effective July 1, 2025 · Appendix A, Personal Finance (items 1-10)",
+      fetchedOn: "2026-08-28",
+      sourceUrl: "https://wveis.k12.wv.us/wvboe/policies/policy.php?p=2520.4",
+      adoption:
+        "West Virginia moved its ten personal-finance standards out of the Civics course's numbered sequence and into Appendix A of Policy 2520.4, where they are printed as items 1 through 10 with no code prefix. The rule requires counties to embed them into Civics and/or Dual Credit and AP Government and Politics until a stand-alone Personal Finance course (CTE course code 1451, a graduation requirement from the 2024-2025 freshman cohort) is implemented; their permanent home will be the CTE policy, 126CSR44M. Of the ten, MONEY-01 (`credit-decisions`) reaches part of two: item 7 on consumer debt, through the annual percentage rate that makes offers comparable, and item 8's consumer-rights half. The other eight are postsecondary cost, income and lifestyle, careers, workforce preparedness, bankruptcy, taxes, banking services, and investing and insurance, none of which this catalog teaches.",
+      standards: [
+        {
+          code: "Appendix A, item 7",
+          text: "Examine the advantages and disadvantages of different types of consumer debt to make sound financial decisions (e.g., home loans, credit card debt, automobile loans, pay-day loans, and rent-to-own).",
+          claimIds: ["money.cost-of-credit-apr", "money.credit-access-constraint"],
+          coverage: "partial",
+          note: "Partial, and narrowly. The course supplies the tool this standard needs, which is the annual percentage rate as the standardized figure the Truth in Lending Act requires so two offers stated in different units can be ranked, with the statutory computation worked so a learner can perform it. It does NOT survey the debt products the standard enumerates: home loans, credit cards, automobile loans, payday loans and rent-to-own are the subjects of MONEY-04 and MONEY-06, not of this course. A teacher planning against item 7 gets the comparison method and none of the product catalog.",
+        },
+        {
+          code: "Appendix A, item 8",
+          text: "Develop the knowledge and practices of a savvy consumer who knows consumer rights and responsibilities, can identify and avoid fraudulent practices and guard against identify theft.",
+          claimIds: [
+            "money.borrower-rights-dispute",
+            "money.adverse-action-notice",
+            "money.credit-discrimination-and-recourse",
+            "money.who-may-read-the-file",
+          ],
+          coverage: "partial",
+          note: "Partial on a clean split. The consumer-rights half is the course's core and is taught from the statutes rather than as general awareness: who may lawfully obtain your file under 15 U.S.C. 1681b, what a refusal must tell you under ECOA and Regulation B, the dispute and reinvestigation right under 1681i with its deadlines, the furnisher's own duties under 1681s-2, and the free annual file disclosure under 1681j. The course teaches NOTHING about identifying and avoiding fraudulent practices or guarding against identity theft, which is the standard's second half. (West Virginia's published text reads \"identify theft\"; the intended term is plainly identity theft, and the typo is the publisher's, transcribed here as printed.)",
+        },
+      ],
+    },
+
     // ── WV College- and Career-Readiness Standards for English Language Arts — Grade 11 ──
     {
       id: "wv-ela-11",
@@ -341,8 +419,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "Standards the catalog's civics does not genuinely teach are not claimed: SS.C.4 (collaboratively build a model to defend the American Republic — a classroom performance task), SS.C.16 (the evolution and function of the two-party system), SS.C.18 (the impact of special interest groups on public policy), and SS.C.21 (cooperation, competition, and conflict among nations — the United Nations, international treaties, terrorism). The catalog's civics is domestic structure, rights, and participation, so these are left unclaimed.",
     },
     {
-      heading: "Personal Finance (SS.C.30-39) — nothing.",
-      body: "West Virginia's Civics course carries a full Personal Finance strand (postsecondary cost, income and budgeting, workforce preparedness, bankruptcy, taxes, consumer debt, banking, and investing/insurance). This catalog teaches none of it, so it meets none of these standards.",
+      heading: "Personal Finance — this rejection has been superseded, and its codes no longer mean what it said.",
+      body: "Until 2026-08-28 this entry said West Virginia's Civics course carried a full Personal Finance strand at SS.C.30-39 and that the catalog met none of it. Both halves needed correcting. On the codes: under W. Va. 126CSR44D as filed July 8, 2024 and effective July 1, 2025, the Civics course runs SS.C.1 through SS.C.37 only, SS.C.38 and SS.C.39 do not exist, SS.C.30 and SS.C.31 are now ECONOMICS standards and SS.C.32-37 are GEOGRAPHY, and the ten personal-finance standards were moved to Appendix A of the rule and renumbered 1 through 10 with no code prefix. A rejection filed against SS.C.30 today would point at a standard about business climate, not about money management. On the substance: the catalog now teaches one personal-finance course, MONEY-01, and two Appendix A items are claimed above as partials, item 7 through the annual percentage rate and item 8 on its consumer-rights half, each with its gap named. The other eight are still not claimed and the reasons are specific. Items 1 through 4 are postsecondary cost, income and lifestyle against education, career expectations, and workforce preparedness including resumes and mock interviews; item 5 is bankruptcy; item 6 is completing income tax forms; item 9 is banking services and account fees; item 10 is investing and insurance. None of that is in this catalog, and MONEY-01 states in three separate lessons that it gives no financial advice, so a budgeting or investing claim would misdescribe it. TWO THINGS THIS PASS COULD NOT SETTLE, recorded rather than assumed: the superseded 2016 text of SS.C.30-39 could not be obtained from West Virginia's own publisher, so nothing is transcribed under those retired codes; and whether the SS.C civics and economics codes claimed elsewhere in this file also moved in the 2025 amendment has not been re-verified and is filed as a research check."
     },
     {
       heading: "Geography (SS.C.40-43) — checked, thin overlap, not claimed.",
