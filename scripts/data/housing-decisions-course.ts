@@ -2038,5 +2038,653 @@ The level payment that pays this to zero in 360 months is about **1,199.10**. No
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — The comparison, done honestly
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "why-throwing-money-away-is-not-an-analysis",
+      title: "13 · What each payment actually buys",
+      section: "Section 4 · The comparison, done honestly",
+      body: `The claim that renting throws money away contains two assumptions and states neither. It assumes a rent payment buys nothing, and it assumes a mortgage payment buys an asset. Both are wrong as stated, and the second is wrong in a way that is measurable.
+
+**What a rent payment buys.** Occupancy for the term, and something people undercount: the transfer of a list of risks to somebody else. The landlord carries the cost of a failed roof, the water heater, the assessment increase, the vacancy when the building is half empty, and the cost of selling the building when it is time. A tenant's exposure to all of that is capped at the rent and the term. That is not nothing. It is an insurance-shaped good, and it is priced into the rent.
+
+**What a mortgage payment buys.** Occupancy, plus one component that accrues to you, plus exposure to the price of the asset in both directions. The component that accrues to you is the **principal**, and Section 2 measured it in a labelled hypothetical: over the first five years of a thirty-year loan at 6 percent, about 13,892 of about 71,946 paid in reduced the debt. **About 81 cents of every dollar of those payments did not buy an ownership stake.**
+
+**And the payment is not the whole outlay.** An owner also pays property tax, insurance the lender requires, maintenance, and in many cases association dues. None of those buys an ownership stake either. They are the price of holding the asset, in the same way rent is the price of occupying somebody else's.
+
+**So the honest ledger has three columns, not two.** What each side pays. What part of it accrues to the payer. And what risks each side is carrying. The one-line claim collapses all three into a slogan.
+
+**The form already quantifies the argument.** The In 5 Years box on the Loan Estimate prints the total to be paid through the sixtieth month beside "Principal you will have paid off" (12 CFR § 1026.37, n.d.). Whoever wrote that requirement understood exactly which comparison people were failing to make, and put both numbers on the same line so the ratio is unavoidable.
+
+**Two other slogans die the same way.** "Buy as soon as you can afford it" is a conclusion. "Renting is cheaper" is a conclusion. Neither states a horizon, an assumption about prices, or an accounting for transaction costs, so neither is checkable, so neither is an analysis.
+
+**Here is the honest statement of the position.** For some households, at some prices, over some horizons, buying is clearly better arithmetic. For others, renting is. The result turns on inputs including the price, the rent, the rate, the horizon, what happens to prices, what else the money could do, and what you would otherwise spend on transaction costs. **This course does not know any of those for you, so it will not tell you which side wins, and any source that answers the question without asking for those inputs is selling something.**
+
+**What the course gives you instead** is the list of the inputs, the arithmetic that combines them, and the places where each number comes from a document rather than from a guess. Two lessons from now you will have run the comparison yourself, with your own assumptions written down where you can change one and watch the answer move.
+
+**A note on the emotional half, since pretending it is absent is its own dishonesty.** Owning and renting differ in things arithmetic does not capture: control over the space, security of tenure, the freedom to leave, the obligation to maintain, and what a household wants its next ten years to look like. Those are real and they are yours. The point of doing the arithmetic properly is not to override them. It is so that when you choose, you know what the choice costs, rather than discovering it in year three.
+
+:::reveal What two unstated assumptions does the throwing-money-away claim rest on? ||| That a rent payment buys nothing, and that a mortgage payment buys an asset. Both are wrong as stated.
+
+:::reveal Besides occupancy, what does a rent payment buy? ||| The transfer of risks to the landlord: the failed roof, the assessment increase, the vacancy, and the cost of selling the building.
+
+:::reveal Which single component of a mortgage payment accrues to the payer? ||| The principal. In the course's hypothetical, about 81 cents of every dollar paid in the first five years did not buy an ownership stake.
+
+## Vocabulary
+- **Principal reduction**: the only part of a mortgage payment that accrues to the borrower as an ownership stake, and the smaller part for most of a long loan's life.
+- **Cost of holding**: property tax, insurance, maintenance and association dues, which an owner pays and which buy no ownership stake.
+- **Risk transfer**: the insurance-shaped good a tenant buys, capping their exposure to maintenance, assessments, vacancy and the cost of sale at the rent and the term.
+- **Slogan**: a conclusion with no horizon, no price assumption and no accounting for transaction costs, which is therefore not checkable and not an analysis.
+
+## Sources
+12 CFR § 1026.37. (n.d.). *Content of disclosures for certain mortgage transactions (Loan Estimate)*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.37`,
+    },
+    {
+      slug: "the-costs-of-getting-in-and-out",
+      title: "14 · The costs of getting in, and the costs of getting out",
+      section: "Section 4 · The comparison, done honestly",
+      body: `Transaction costs are the part of this comparison that slogans never count, and they are the reason the horizon matters more than almost anything else.
+
+**Getting in, and one distinction worth being precise about.** A down payment is **not** a cost. It is a transfer of your money into the asset, and you still have it, in a less liquid form. The closing costs are a different animal: they are spent. The Closing Disclosure itemises them in prescribed sections, running through loan costs, other costs, closing cost totals and Calculating cash to close (12 CFR § 1026.38, n.d.). That form is the honest inventory, and it exists in your file whether or not you read it.
+
+**Getting out is the half people forget entirely.** Selling a property normally involves a broker's commission, transfer or recording charges, and any costs the seller agrees to cover. The Closing Disclosure carries a separate prescribed "Summary of seller's transaction" (12 CFR § 1026.38, n.d.), which means the seller's side of a sale is itemised on the same form, in the same units, by the same regulation. **If you want to know what leaving costs, look at the seller's column on somebody's Closing Disclosure**, because that is a real document rather than an estimate from an article.
+
+**Now put the two together and the horizon appears on its own.** Getting-in costs and getting-out costs are paid once each, no matter how long you stay. Spread over two years they are enormous per year. Spread over fifteen they are small. That single fact does more work in a rent-against-buy comparison than the interest rate does, and it is why any comparison that does not state a horizon is not a comparison.
+
+**The tax code agrees, and says so with a number.** The exclusion of gain on the sale of a principal residence applies where, "during the 5-year period ending on the date of the sale or exchange, such property has been owned and used by the taxpayer as the taxpayer's principal residence for periods aggregating 2 years or more" (26 U.S.C. § 121, n.d.). The excluded amount "shall not exceed $250,000" (26 U.S.C. § 121, n.d.), and a joint return applies that paragraph "by substituting '$500,000' for '$250,000'" where the section's conditions are met (26 U.S.C. § 121, n.d.).
+
+**Those figures were read on 28 August 2026 and are dated for a reason.** Tax provisions are amended, and a number in an article you read once is not evidence about the year you are actually in. **The durable part is the shape**: a rule that keys on two years out of five is itself telling you these decisions are counted in years, and that a short stay is a different transaction from a long one.
+
+**Renting has transaction costs too**, and honesty requires counting them rather than treating them as zero. A deposit is a transfer rather than a cost, on the same reasoning as a down payment, but application charges, any nonrefundable fee the state permits to be labelled as such, moving costs, and the risk of a rent change at renewal all belong in the ledger. They are smaller than a sale's costs and they recur more often, which is a genuinely different shape, not a smaller version of the same shape.
+
+**What this lesson leaves you able to do.** Take any comparison anyone shows you and ask three questions. Over how many years. What did you assume about the price at the end. Did you count what it costs to get out. **A comparison that cannot answer all three is a slogan with arithmetic attached to it**, which is more persuasive than a slogan and no more true.
+
+:::reveal Why is a down payment not a cost in this comparison? ||| Because it is a transfer of your money into the asset rather than money spent. Closing costs, by contrast, are spent.
+
+:::reveal Where can a learner see what selling actually costs, in prescribed form? ||| In the Summary of seller's transaction, which the Closing Disclosure regulation requires as its own separate part.
+
+:::reveal What does the two-of-five-years condition in the gain exclusion tell you about the decision? ||| That these decisions are counted in years, and that a short stay is a different transaction from a long one.
+
+## Vocabulary
+- **Transaction cost**: an amount spent to enter or leave a housing arrangement, paid once regardless of how long the arrangement lasts, which is why it interacts with the horizon.
+- **Down payment**: a transfer of the buyer's money into the asset rather than an expense, which is why the comparison treats it differently from closing costs.
+- **Summary of seller's transaction**: the prescribed Closing Disclosure part that itemises the seller's side of a sale, which is where the cost of getting out is visible.
+- **Exclusion of gain**: the tax provision permitting a stated amount of gain on a principal residence to be excluded where an ownership and use condition measured in years is met.
+
+## Sources
+12 CFR § 1026.38. (n.d.). *Content of disclosures for certain mortgage transactions (Closing Disclosure)*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.38
+
+26 U.S.C. § 121. (n.d.). *Exclusion of gain from sale of principal residence*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/121`,
+    },
+    {
+      slug: "build-the-comparison-yourself",
+      title: "15 · Build the comparison yourself, and change one assumption at a time",
+      section: "Section 4 · The comparison, done honestly",
+      body: `Here is the whole comparison, as a procedure. It has seven lines, it fits on one page, and every input is either a document or a stated assumption.
+
+**1. Fix the horizon, in years, and write down why.** Three years because of a job. Ten years because of a school. Whatever it is, the number is a decision and it belongs at the top of the page, not implied at the bottom.
+
+**2. The renting column.** Rent over the horizon, plus renter's insurance, plus the moving costs at each end, plus an assumption about how the rent changes. **Write the assumption down.** A comparison that quietly holds rent flat for ten years has made a forecast without admitting it.
+
+**3. The owning column, from the form.** Total paid over the horizon, minus the principal paid off. The Loan Estimate gives both figures directly for a five-year horizon in the In 5 Years box, and Section 2's four steps produce them for any other horizon in a few minutes.
+
+**4. Add the owner's holding costs.** Property tax, the insurance the lender requires, maintenance, and association dues if any. Every one of these is a real outlay that buys no ownership stake, and every one of them is knowable from a document: the county's assessment, an insurance quotation, the association's own schedule.
+
+**5. Add the transaction costs at both ends of the owning column**, from the previous lesson. Once in, once out.
+
+**6. Credit the owning column with what you would hold at the end**, which means stating what you assume the property is worth then. **This is the assumption people hide.** If you assume prices rise steadily, say so; the comparison is now a forecast and should be labelled one. Then subtract what leaving costs, because you do not receive the sale price, you receive the sale price less the cost of selling.
+
+**7. Charge the owning column for the down payment's opportunity cost**, or charge the renting column for what a renter does with the same money. Either convention works; using neither is what puts a thumb on the scale.
+
+**Then do the only step that makes the whole thing honest: change one assumption at a time.** Move the horizon by two years. Move the price assumption to flat. Move the rent growth. If the answer flips on a single plausible change, you have not found an answer, you have found a coin toss with a spreadsheet around it. **Whoever chooses the assumptions chooses the result**, and that is precisely why this course will not choose them for you.
+
+**The tax question, taught as conditional because it is conditional.** The Internal Revenue Code disallows personal interest generally: "no deduction shall be allowed under this chapter for personal interest paid or accrued during the taxable year" (26 U.S.C. § 163, n.d.). It then excepts "any qualified residence interest", which it defines as interest on acquisition indebtedness or home equity indebtedness with respect to a qualified residence (26 U.S.C. § 163, n.d.). The amount treated as acquisition indebtedness is capped: the section states that it "shall not exceed $1,000,000 ($500,000 in the case of a married individual filing a separate return)", and a further paragraph substitutes $750,000 and $375,000 for taxable years beginning after 2017 (26 U.S.C. § 163, n.d.). **Read on 28 August 2026, and dated because this provision has been amended more than once.**
+
+**Three things follow, and they are the durable part.** A deduction is worth something only to a taxpayer who itemises rather than taking the standard deduction. A deduction reduces taxable income and not tax, so its value is roughly the deduction times the marginal rate, not the deduction. And the cap means the benefit does not scale indefinitely with the size of the loan. **Anyone who tells you the interest is effectively discounted by the deduction has skipped all three conditions.**
+
+**And the third statement of the course's position, said here in full.** This course gives no financial advice and will not tell you whether to rent or to buy. It has now given you the mechanism, the documents, the arithmetic and the assumptions. The choice is yours, it depends on facts about your life the course does not have, and anybody who answers it for a stranger is guessing.
+
+:::reveal What is the first line of the comparison, and why does it go first? ||| The horizon in years, with the reason written down, because every transaction cost and every forecast is measured against it.
+
+:::reveal Which assumption does the course say people hide? ||| What the property is assumed to be worth at the end of the horizon, which turns the comparison into a forecast that should be labelled one.
+
+:::reveal What are the three conditions on the value of a mortgage interest deduction? ||| The taxpayer must itemise, it reduces taxable income rather than tax so its value is roughly the marginal rate times the deduction, and acquisition indebtedness is capped.
+
+## Vocabulary
+- **Sensitivity**: changing one assumption at a time to see whether the result flips, which is the step that separates an answer from a coin toss with a spreadsheet around it.
+- **Opportunity cost**: what the money used for a down payment would otherwise have done, charged to one column or the other so that neither side gets a free input.
+- **Qualified residence interest**: the statutory exception to the general disallowance of personal interest, defined by reference to acquisition indebtedness and home equity indebtedness on a qualified residence.
+- **Acquisition indebtedness cap**: the statutory ceiling on the debt whose interest may qualify, which is why the deduction's benefit does not scale indefinitely with loan size.
+- **Itemising**: claiming actual deductions instead of the standard deduction, without which a deduction changes a taxpayer's bill by nothing at all.
+
+## Sources
+26 U.S.C. § 163. (n.d.). *Interest*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/163
+
+12 CFR § 1026.37. (n.d.). *Content of disclosures for certain mortgage transactions (Loan Estimate)*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1026.37`,
+    },
+    {
+      slug: "quiz-the-comparison",
+      title: "16 · Knowledge check: the comparison, done honestly",
+      section: "Section 4 · The comparison, done honestly",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How many unstated assumptions does the throwing-money-away claim rest on?",
+            options: ["Two", "None, because the claim is a description rather than an argument", "Four, one for each component of an ordinary monthly housing payment", "One, that property prices rise faster than rents over any long period"],
+            correctIndex: 0,
+            explanation: "That a rent payment buys nothing, and that a mortgage payment buys an asset. Both are wrong as stated.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "Besides occupancy, what does the course say a rent payment buys?",
+            options: ["A transfer of risks", "A claim on part of the building's appreciation over the term", "A right to renew the tenancy on the same terms indefinitely", "A share of the landlord's property tax savings each year"],
+            correctIndex: 0,
+            explanation: "The landlord carries the failed roof, the assessment increase, the vacancy, and the cost of selling the building.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "How does the course characterise the risk transfer a tenant buys?",
+            options: ["An insurance-shaped good", "A subsidy the landlord provides in exchange for a longer term", "A concession that only applies in states with strong tenant statutes", "A benefit that disappears once the tenancy runs beyond twelve months"],
+            correctIndex: 0,
+            explanation: "It caps the tenant's exposure at the rent and the term, and it is priced into the rent rather than given away.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "Which single component of a mortgage payment accrues to the borrower?",
+            options: ["Principal", "Interest, which is credited against the property's value each year", "Escrow, which is refunded in full when the loan is paid off", "Mortgage insurance, which protects the borrower's equity stake"],
+            correctIndex: 0,
+            explanation: "In the course's hypothetical, about 13,892 of about 71,946 paid over five years reduced the debt.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "In the course's hypothetical, roughly how much of the first five years of payments bought no ownership stake?",
+            options: ["About 81 cents in the dollar", "About 19 cents in the dollar, with the rest reducing the balance", "All of it, because principal is not credited until the sixth year", "None of it, because every payment reduces the amount outstanding"],
+            correctIndex: 0,
+            explanation: "About 58,054 of about 71,946 was interest, at a labelled hypothetical 6 percent over a thirty-year term.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "Which of these does the course say buys no ownership stake for an owner?",
+            options: ["Property tax", "The principal portion of the scheduled monthly payment", "The down payment transferred into the asset at closing", "The proceeds received when the property is eventually sold"],
+            correctIndex: 0,
+            explanation: "Insurance, maintenance and association dues sit in the same category: the price of holding the asset.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "How many columns does the course say an honest ledger has?",
+            options: ["Three", "Two, one for renting and one for owning over the same period", "Five, one for each major category of housing expenditure", "One, since every payment for housing is ultimately the same kind of outlay"],
+            correctIndex: 0,
+            explanation: "What each side pays, what part of it accrues to the payer, and what risks each side carries.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "What does the In 5 Years box put on the same line?",
+            options: ["Total paid and principal paid off", "The interest rate and the annual percentage rate for the loan", "The estimate and the final figure once the loan has closed", "The scheduled payment and the escrowed tax and insurance"],
+            correctIndex: 0,
+            explanation: "Whoever wrote the requirement understood which comparison people were failing to make, and made the ratio unavoidable.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "Why does the course call \"renting is cheaper\" a slogan rather than an analysis?",
+            options: ["It states no horizon or assumptions", "Because rent is set by a landlord rather than by a market", "Because the comparison depends on tax treatment the speaker cannot know", "Because rents and prices move together, so neither can be cheaper for long"],
+            correctIndex: 0,
+            explanation: "It states no horizon, no price assumption and no accounting for transaction costs, so it is not checkable.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "What does the course say about a source that answers the rent-or-buy question without asking for inputs?",
+            options: ["It is selling something", "It is applying a standard rule of thumb accepted across the industry", "It is relying on the federal disclosure forms, which supply every input", "It is using a national average, which is accurate for most households"],
+            correctIndex: 0,
+            explanation: "The result turns on the price, the rent, the rate, the horizon, price movements, opportunity cost and transaction costs.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "What is the course's honest statement about which side wins?",
+            options: ["It depends on the inputs", "Buying wins over any horizon longer than three years", "Renting wins wherever rents are below the equivalent payment", "Neither wins, because the two are equivalent once tax is accounted for"],
+            correctIndex: 0,
+            explanation: "For some households at some prices over some horizons buying is clearly better arithmetic, and for others renting is.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "Why does the lesson discuss the non-arithmetic side of the choice?",
+            options: ["Pretending it is absent is dishonest", "Because control and security of tenure can be priced precisely", "Because lenders are required to consider them in underwriting", "Because a comparison is invalid unless every factor is quantified"],
+            correctIndex: 0,
+            explanation: "Control, security of tenure, the freedom to leave and the obligation to maintain are real, and the arithmetic exists to price the choice rather than override it.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "What does the course say the point of doing the arithmetic properly is?",
+            options: ["Knowing what the choice costs", "Producing a single defensible answer for any household", "Persuading a lender that the transaction makes financial sense", "Establishing which option a reasonable person would choose"],
+            correctIndex: 0,
+            explanation: "So that the cost is known when the choice is made rather than discovered in year three.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "Why is a down payment not a cost in this comparison?",
+            options: ["It is a transfer into the asset", "Because it is refunded when the property is eventually sold", "Because the lender rather than the buyer supplies it at closing", "Because it is deductible against the gain realised on a later sale"],
+            correctIndex: 0,
+            explanation: "You still have it, in a less liquid form. Closing costs, by contrast, are spent.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "Where are getting-in costs itemised in prescribed form?",
+            options: ["On the Closing Disclosure", "In the purchase contract signed by the buyer and the seller", "In the county land records where the deed is eventually filed", "On the appraisal report the creditor obtains before consummation"],
+            correctIndex: 0,
+            explanation: "Its prescribed sections run through loan costs, other costs, closing cost totals and Calculating cash to close.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "Which part of the Closing Disclosure shows what selling costs?",
+            options: ["Summary of seller's transaction", "Loan calculations, which totals what the borrower will pay", "Calculating cash to close, which reconciles the buyer's funds", "Projected payments, which shows how the payment changes"],
+            correctIndex: 0,
+            explanation: "The seller's side of a sale is itemised on the same form, in the same units, by the same regulation.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "What does the course say to look at if you want to know what leaving costs?",
+            options: ["The seller's column on a real disclosure", "A published national average for real estate commissions", "The listing agreement a seller signs with a broker", "The property's most recent county assessment notice"],
+            correctIndex: 0,
+            explanation: "It is a real document rather than an estimate from an article, and the regulation prescribes what goes in it.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "How do transaction costs interact with the horizon?",
+            options: ["Once each, spread over the years", "They recur annually, so they scale with the length of stay", "They fall as the balance is repaid, because the lender charges less", "They are unaffected by the horizon, which is why it can be ignored"],
+            correctIndex: 0,
+            explanation: "Spread over two years they are enormous per year; spread over fifteen they are small.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "What does the course say does more work in the comparison than the interest rate?",
+            options: ["The horizon", "The size of the down payment placed at closing", "The property's assessed value for local tax purposes", "The presence or absence of an association fee"],
+            correctIndex: 0,
+            explanation: "Because getting-in and getting-out costs are paid once each and then spread across the years of the stay.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "What condition does the gain exclusion place on ownership and use?",
+            options: ["Two years within the last five", "Continuous occupation for the whole of the five-year period", "Ownership for at least ten years before the date of sale", "Use as a principal residence at the moment of sale only"],
+            correctIndex: 0,
+            explanation: "The statute speaks of periods aggregating two years or more during the five-year period ending on the date of the sale.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "What amount does the gain exclusion cap the excluded gain at, on a single return?",
+            options: ["250,000 dollars", "500,000 dollars, which is halved for a married individual filing separately", "The lesser of the gain or the original purchase price of the residence", "Whatever gain remains after subtracting the cost of selling the property"],
+            correctIndex: 0,
+            explanation: "The statute states that the excluded amount shall not exceed that figure, and it was read on 28 August 2026.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "What does the statute substitute for a joint return meeting its conditions?",
+            options: ["500,000 dollars", "750,000 dollars, matching the acquisition indebtedness cap", "No cap at all, provided both spouses meet the use requirement", "An amount indexed each year to a published cost-of-living measure"],
+            correctIndex: 0,
+            explanation: "It applies the paragraph by substituting the larger figure where the section's stated conditions are met.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "Why does the course date the tax figures it quotes?",
+            options: ["Provisions get amended", "Because the statute requires publishers to date any quoted figure", "Because a figure without a date cannot be relied on in a tax return", "Because the amounts are recalculated by the agency every quarter"],
+            correctIndex: 0,
+            explanation: "A number in an article you read once is not evidence about the year you are actually in.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "What does the course call the durable part of the gain exclusion?",
+            options: ["The shape", "The two dollar figures, which have not changed since enactment", "The requirement that the property be sold rather than exchanged", "The fact that it applies only to taxpayers who itemise deductions"],
+            correctIndex: 0,
+            explanation: "A rule keyed on two years out of five is telling you these decisions are counted in years.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "How does the course treat a rental security deposit in this ledger?",
+            options: ["As a transfer, not a cost", "As a cost, because it is rarely returned in full", "As a cost, because it earns no interest for the tenant", "As neither, because it never appears on any prescribed form"],
+            correctIndex: 0,
+            explanation: "On the same reasoning as a down payment, though application charges, permitted nonrefundable fees and moving costs do belong in the ledger.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "How does the course describe the shape of a renter's transaction costs?",
+            options: ["Smaller and more frequent", "Larger, because moving is more expensive than selling", "Identical to an owner's, only expressed in different units", "Absent, since a tenant pays nothing to enter or leave a tenancy"],
+            correctIndex: 0,
+            explanation: "That is a genuinely different shape rather than a smaller version of the same one.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "Which three questions does the course say to ask of any comparison you are shown?",
+            options: ["Horizon, price assumption, exit costs", "Rate, term, and the size of the required down payment", "Location, condition, and the age of the building's systems", "Income, credit, and the amount of savings held in reserve"],
+            correctIndex: 0,
+            explanation: "A comparison that cannot answer all three is a slogan with arithmetic attached to it.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "What does the course say about a slogan with arithmetic attached?",
+            options: ["More persuasive, no more true", "It is acceptable where the arithmetic is correctly performed", "It becomes an analysis once a horizon is stated anywhere in it", "It is worse than a plain slogan because it takes longer to check"],
+            correctIndex: 0,
+            explanation: "Adding numbers to an unstated assumption does not turn it into a checkable claim.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "How many lines does the course's comparison procedure have?",
+            options: ["Seven", "Three, one for renting, one for owning, and one for the difference", "Twelve, one for each category the Closing Disclosure itemises", "As many as the household's circumstances happen to require"],
+            correctIndex: 0,
+            explanation: "It fits on one page, and every input is either a document or a stated assumption.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What goes at the top of the comparison page?",
+            options: ["The horizon and the reason for it", "The purchase price of the property under consideration", "The interest rate quoted on the most recent Loan Estimate", "The household's total income for the current calendar year"],
+            correctIndex: 0,
+            explanation: "The number is a decision, and it belongs at the top rather than implied at the bottom.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What must the renting column state besides rent, insurance and moving costs?",
+            options: ["An assumption about rent changes", "The landlord's expected return on the property over the period", "The market rent for comparable properties in adjoining areas", "The deposit, treated as an expense rather than a transfer"],
+            correctIndex: 0,
+            explanation: "A comparison that quietly holds rent flat for ten years has made a forecast without admitting it.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "Which two figures does the owning column start from?",
+            options: ["Total paid, minus principal paid off", "The purchase price, minus the down payment made at closing", "The annual percentage rate, times the number of years in the horizon", "The scheduled payment, times twelve months times the horizon"],
+            correctIndex: 0,
+            explanation: "The In 5 Years box supplies both directly for a five-year horizon, and Section 2's four steps produce them for any other.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "Which of these does step four add to the owning column?",
+            options: ["Tax, insurance, maintenance, dues", "The interest already counted in the total paid figure", "The principal, since it is part of the total outlay", "The opportunity cost of the down payment amount"],
+            correctIndex: 0,
+            explanation: "Each is a real outlay that buys no ownership stake and each is knowable from a document.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "Where does the course say an owner's holding costs can be found?",
+            options: ["Documents, not guesses", "A national average published by a federal housing agency", "The lender's underwriting file, which estimates each of them", "The purchase contract, which allocates them between the parties"],
+            correctIndex: 0,
+            explanation: "The county's assessment, an insurance quotation, and the association's own schedule of dues.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "Which assumption does the course say people hide?",
+            options: ["The property's value at the end", "The rate of return on money not spent on a down payment", "The number of years the household expects to stay", "The maintenance cost of the property over the horizon"],
+            correctIndex: 0,
+            explanation: "If you assume prices rise steadily, say so, because the comparison is now a forecast and should be labelled one.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What must be subtracted from the credit for the property's end value?",
+            options: ["The cost of selling", "The remaining balance on the loan at that date", "The tax on the gain realised from the disposal", "The transaction costs paid when the property was bought"],
+            correctIndex: 0,
+            explanation: "You do not receive the sale price, you receive the sale price less what leaving costs.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does step seven require?",
+            options: ["Accounting for opportunity cost", "Adjusting both columns for expected inflation over the horizon", "Deducting the mortgage interest from the owning column entirely", "Adding a margin of safety to whichever column looks more expensive"],
+            correctIndex: 0,
+            explanation: "Charge the owning column for the down payment's alternative use, or charge the renting column for what a renter does with the same money.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does using neither opportunity-cost convention do?",
+            options: ["Puts a thumb on the scale", "Simplifies the comparison without affecting the result", "Understates the owning column by the amount of the down payment", "Makes the comparison conform to the way lenders present it"],
+            correctIndex: 0,
+            explanation: "Either convention works; leaving the input out of both columns is what biases the answer.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What is the step the course says makes the whole thing honest?",
+            options: ["Changing one assumption at a time", "Having a second person check the arithmetic independently", "Running the comparison for three separate properties at once", "Repeating the calculation using the lender's own worksheet"],
+            correctIndex: 0,
+            explanation: "Move the horizon, move the price assumption, move the rent growth, and see whether the answer survives.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What has a learner found if the answer flips on a single plausible change?",
+            options: ["A coin toss with a spreadsheet around it", "An error in the arithmetic that should be located and corrected", "Evidence that the horizon chosen was too short to be meaningful", "Proof that the two options are genuinely equivalent in value"],
+            correctIndex: 0,
+            explanation: "Whoever chooses the assumptions chooses the result, which is why the course refuses to choose them for anyone.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does the Internal Revenue Code say about personal interest generally?",
+            options: ["No deduction is allowed", "It is deductible up to a stated annual ceiling", "It is deductible only where the taxpayer itemises deductions", "It is deductible at half the taxpayer's marginal rate"],
+            correctIndex: 0,
+            explanation: "The general rule disallows it, and qualified residence interest is stated as an exception to that disallowance.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "How does the statute define qualified residence interest?",
+            options: ["Interest on acquisition or home equity indebtedness", "Interest on any loan secured by real property of any kind", "Interest paid to a federally insured lender on a first-lien loan", "Interest on the portion of a loan used to improve the residence"],
+            correctIndex: 0,
+            explanation: "With respect to a qualified residence of the taxpayer, which is what carves it out of the general disallowance.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What cap does the section state on acquisition indebtedness before the later substitution?",
+            options: ["1,000,000 dollars", "750,000 dollars for every filing status without exception", "500,000 dollars, doubled for taxpayers filing a joint return", "No cap, provided the debt was incurred to acquire the residence"],
+            correctIndex: 0,
+            explanation: "The section states that figure, with 500,000 dollars for a married individual filing a separate return.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does the later paragraph substitute for taxable years beginning after 2017?",
+            options: ["750,000 and 375,000 dollars", "500,000 and 250,000 dollars across all filing statuses", "1,000,000 and 500,000 dollars, restoring the earlier figures", "An amount indexed annually to a published inflation measure"],
+            correctIndex: 0,
+            explanation: "The course read the section on 28 August 2026 and dates it, because this provision has been amended more than once.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "To whom is a deduction worth nothing at all?",
+            options: ["A taxpayer taking the standard deduction", "A taxpayer whose loan exceeds the acquisition indebtedness cap", "A taxpayer who bought the property in the current calendar year", "A taxpayer who rents part of the residence to another household"],
+            correctIndex: 0,
+            explanation: "A deduction is worth something only to a taxpayer who itemises rather than taking the standard deduction.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does a deduction reduce?",
+            options: ["Taxable income", "Tax, dollar for dollar, in the year the interest is paid", "The loan balance on which interest is charged the following year", "The gain that must be recognised when the property is sold"],
+            correctIndex: 0,
+            explanation: "So its value is roughly the deduction times the marginal rate, not the deduction itself.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What has someone skipped if they say interest is effectively discounted by the deduction?",
+            options: ["All three conditions", "The requirement that the loan be secured by a first lien", "The distinction between the interest rate and the annual percentage rate", "The fact that interest is charged on a declining balance over time"],
+            correctIndex: 0,
+            explanation: "Itemising, the difference between reducing income and reducing tax, and the cap on acquisition indebtedness.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What is the course's third and final statement of its own position?",
+            options: ["No advice, and no answer to rent or buy", "A recommendation to buy wherever the horizon exceeds seven years", "A recommendation to rent until the comparison favours buying twice over", "A suggestion that a reader consult the lender who quoted the best rate"],
+            correctIndex: 0,
+            explanation: "It gives the mechanism, the documents, the arithmetic and the assumptions, and says the choice depends on facts it does not have.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does the course say about anybody who answers the rent-or-buy question for a stranger?",
+            options: ["They are guessing", "They are applying an accepted professional standard", "They are relying on the federal forms rather than on judgment", "They are correct roughly as often as the arithmetic would predict"],
+            correctIndex: 0,
+            explanation: "The choice depends on facts about a household's life that no course and no stranger has.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "Which document supplies both owning-column figures for a five-year horizon?",
+            options: ["The Loan Estimate", "The Closing Disclosure's summary of the seller's transaction", "The promissory note signed at consummation", "The county assessment notice for the property"],
+            correctIndex: 0,
+            explanation: "Its In 5 Years box prints the total to be paid through the sixtieth month beside the principal paid off.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does the course say a comparison becomes once it assumes prices rise steadily?",
+            options: ["A forecast", "An estimate governed by the good faith tolerance rules", "A projection the lender is required to verify before closing", "An analysis, since the assumption makes the arithmetic complete"],
+            correctIndex: 0,
+            explanation: "And it should be labelled one, so a reader knows which part of the result is a prediction.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "Why does the course insist the horizon's reason be written down?",
+            options: ["It is a decision, not a default", "Because lenders require a stated intended period of occupancy", "Because the tax exclusion depends on the reason for the move", "Because a stated reason makes the arithmetic legally binding"],
+            correctIndex: 0,
+            explanation: "Three years because of a job or ten because of a school are different premises, and the premise drives the result.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does the course say about the emotional factors in the choice?",
+            options: ["They are real and they are yours", "They should be excluded so the comparison stays objective", "They can be converted into dollars using a standard adjustment", "They matter only where the arithmetic produces a close result"],
+            correctIndex: 0,
+            explanation: "The arithmetic exists to price the choice rather than to override control, security of tenure or the freedom to leave.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "Which risk does the course list as one the landlord carries?",
+            options: ["Vacancy", "The tenant's own moving costs at the end of the term", "The renter's insurance premium on the tenant's belongings", "The tenant's liability for damage beyond ordinary wear"],
+            correctIndex: 0,
+            explanation: "Alongside the failed roof, the assessment increase, and the cost of selling the building.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "What is the second thing an honest ledger records for each side?",
+            options: ["What accrues to the payer", "How the payment compares with the local market average", "Whether the payment is fixed or variable over the horizon", "Which party is legally obliged to make the payment"],
+            correctIndex: 0,
+            explanation: "The three columns are what each side pays, what part accrues to the payer, and what risks each side carries.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "What does the course say a buy-as-soon-as-you-can-afford-it rule is?",
+            options: ["A conclusion", "A reasonable default for households with a long horizon", "An analysis, since affordability is itself a computed quantity", "A rule of thumb supported by the federal disclosure regime"],
+            correctIndex: 0,
+            explanation: "Like its opposite, it states no horizon, no price assumption and no accounting for transaction costs.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "Which costs does the course say slogans never count?",
+            options: ["Transaction costs", "The interest charged over the life of the loan", "The property tax assessed by the county each year", "The insurance a lender requires the owner to carry"],
+            correctIndex: 0,
+            explanation: "They are the reason the horizon matters more than almost anything else in the comparison.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "How does the course describe the Closing Disclosure's list of getting-in costs?",
+            options: ["The honest inventory", "An estimate the settlement agent may revise after closing", "A summary that omits any charge paid outside the closing", "A schedule the consumer prepares and the creditor verifies"],
+            correctIndex: 0,
+            explanation: "It exists in the consumer's file whether or not they read it, and its sections are prescribed by regulation.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "Which of these belongs in a renter's transaction cost ledger?",
+            options: ["Moving costs", "The deposit, which is a transfer rather than a cost", "The landlord's cost of re-letting the unit after departure", "The property tax the landlord pays on the building each year"],
+            correctIndex: 0,
+            explanation: "Application charges, any permitted nonrefundable fee, and the risk of a rent change at renewal belong there too.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "What does the course say about spreading transaction costs over two years?",
+            options: ["They are enormous per year", "They are unchanged, because the total is what matters", "They are small, because the amounts are fixed at closing", "They are recovered in full through the gain exclusion"],
+            correctIndex: 0,
+            explanation: "Spread over fifteen years the same costs are small, which is why any comparison without a horizon is not a comparison.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "What does the course say a short stay is, relative to a long one?",
+            options: ["A different transaction", "The same transaction measured over fewer periods", "A better transaction, because less interest accrues overall", "An equivalent transaction once the gain exclusion is applied"],
+            correctIndex: 0,
+            explanation: "The gain exclusion's two-of-five-years condition is itself telling you these decisions are counted in years.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "Which step of the procedure covers the transaction costs at both ends?",
+            options: ["Step five", "Step one, alongside the choice of the horizon", "Step seven, together with the opportunity cost charge", "Step two, in the renting column where moving costs appear"],
+            correctIndex: 0,
+            explanation: "Once in and once out, added to the owning column from the previous lesson's inventory.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does the course say about holding rent flat across a ten-year comparison?",
+            options: ["It is an unadmitted forecast", "It is the conservative assumption and therefore the safe one", "It is required, because future rent cannot be known in advance", "It is acceptable where the lease term covers the whole horizon"],
+            correctIndex: 0,
+            explanation: "The assumption about rent changes has to be written down alongside every other assumption in the comparison.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does the course promise the learner will have after this section?",
+            options: ["A comparison they ran themselves", "A recommendation tailored to their own circumstances", "A projection prepared using the lender's own software", "A guarantee that the result will hold over the horizon"],
+            correctIndex: 0,
+            explanation: "With their own assumptions written down where one can be changed and the answer watched.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "In the comparison, what does the owning column receive credit for at the end of the horizon?",
+            options: ["The property's assumed value", "The total principal repaid over the whole of the horizon", "The interest deducted against taxable income each year", "The transaction costs incurred when the property was bought"],
+            correctIndex: 0,
+            explanation: "Less what leaving costs, and with the assumption behind the value stated rather than implied.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "How does the course describe the acquisition indebtedness cap's effect?",
+            options: ["The benefit does not scale indefinitely", "The deduction is denied entirely above the stated amount", "The interest rate is capped on any loan above the threshold", "The taxpayer must itemise once the loan exceeds the cap"],
+            correctIndex: 0,
+            explanation: "It is one of the three conditions people skip when they describe interest as effectively discounted.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What kind of input is every line of the comparison procedure?",
+            options: ["A document or a stated assumption", "An estimate supplied by a lender or a broker", "A figure drawn from published national averages", "A projection generated by an amortisation calculator"],
+            correctIndex: 0,
+            explanation: "That is what makes the procedure checkable by somebody else, which a slogan never is.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "Why does the course say a tenant's exposure is capped?",
+            options: ["At the rent and the term", "At the amount of the security deposit held by the landlord", "At the value of the tenant's own belongings in the unit", "At the notice period the state statute requires for termination"],
+            correctIndex: 0,
+            explanation: "That cap is the insurance-shaped good the rent is paying for, and it is priced in rather than given away.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+          {
+            prompt: "Which sentence best states the course's rule about assumptions?",
+            options: ["Whoever chooses them chooses the answer", "They should be set to the most likely value available", "They should be omitted where they cannot be verified", "They should match the ones the lender used in underwriting"],
+            correctIndex: 0,
+            explanation: "Which is exactly why the course supplies the procedure and refuses to supply the inputs.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does the course say the down payment is, in a less liquid form?",
+            options: ["Still yours", "Spent, in the same way closing costs are spent", "The lender's, until the loan has been repaid in full", "A charge the seller receives as part of the purchase price"],
+            correctIndex: 0,
+            explanation: "It is a transfer into the asset, which is why the comparison treats it differently from closing costs.",
+            sourceLessonSlug: "the-costs-of-getting-in-and-out",
+          },
+          {
+            prompt: "What does step three of the procedure draw on for a horizon other than five years?",
+            options: ["Section 2's four steps", "The lender's own projection prepared at underwriting", "The Closing Disclosure's Loan calculations table", "A published amortisation table for the relevant term"],
+            correctIndex: 0,
+            explanation: "Interest, principal, new balance, repeat, which produces the total paid and principal repaid for any horizon in a few minutes.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "Which of these does the course name as a knowable source for an owner's insurance cost?",
+            options: ["An insurance quotation", "The lender's estimate on the Loan Estimate form", "The county's most recent assessment of the property", "The seller's disclosure of what they paid last year"],
+            correctIndex: 0,
+            explanation: "The county's assessment supplies the tax figure and the association's own schedule supplies the dues.",
+            sourceLessonSlug: "build-the-comparison-yourself",
+          },
+          {
+            prompt: "What does the course say about exposure to the price of the asset for an owner?",
+            options: ["It runs in both directions", "It is limited to the amount of the down payment made", "It begins only once the loan has been repaid in full", "It is transferred to the lender by the security instrument"],
+            correctIndex: 0,
+            explanation: "A mortgage payment buys occupancy, principal reduction, and exposure to the asset's price up and down alike.",
+            sourceLessonSlug: "why-throwing-money-away-is-not-an-analysis",
+          },
+        ],
+      },
+    },
   ],
 };
