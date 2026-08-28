@@ -3259,6 +3259,154 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "irs.gov, for the current filing season's refund timing guidance",
     ],
   },
+  // ── MONEY-06 · housing-decisions ────────────────────────────────────────────
+  // Six checks. Every one of them is a hedge that is IN the lessons, in prose, with a date beside
+  // it, because this course refuses to print anything on an annual or contested cycle without one.
+  {
+    key: "housing-pave-action-plan-host",
+    course: "housing-decisions",
+    lesson: "valuation-is-a-covered-transaction",
+    quote:
+      "As of 28 August 2026 its published web host did not resolve, so the course does not cite an address it could not open.",
+    title: "Where does the 2022 federal appraisal-bias action plan now live, if anywhere?",
+    severity: "medium",
+    question:
+      "The Interagency Task Force on Property Appraisal and Valuation Equity published an action plan in March 2022 at a hud.gov subdomain. As of the date you check, does that subdomain resolve, has the document moved to a permanent archive with a stable address, and is the task force itself still constituted? Give the address you actually opened and the date you opened it.",
+    claim:
+      "The lesson says, in prose and with the date attached, that the plan exists, that its published host did not resolve on 28 August 2026, and that the course therefore cites the statutes, HUD's regulation and the 2024 interagency automated valuation model rule instead. It cites no address for the plan at all.",
+    stakes:
+      "This is the strongest secondary evidence in the section on valuation and the only place the course reaches for a document rather than a statute. If the plan is retrievable at a stable address, the lesson gains a real federal finding about the extent of appraisal bias; if it is genuinely gone, the lesson's refusal is the right answer and should be left as it stands. Either way a dead link must never be printed.",
+    needs: [
+      "Whether the original address resolves, and what it returns",
+      "A stable archived or relocated copy, if one exists, with the exact URL you opened",
+      "Whether the task force is currently constituted, from a federal source rather than commentary",
+      "The date you checked",
+    ],
+    where: [
+      "The federal agency sites named as task force members, for a relocated copy",
+      "A permanent web archive, for a byte-faithful snapshot of the original address",
+      "The Federal Register, for anything that established or dissolved the task force",
+    ],
+  },
+  {
+    key: "housing-mortgage-interest-cap-current",
+    course: "housing-decisions",
+    lesson: "build-the-comparison-yourself",
+    quote: "Read on 28 August 2026, and dated because this provision has been amended more than once.",
+    title: "What is the acquisition indebtedness cap in 26 U.S.C. 163(h) for the current tax year?",
+    severity: "high",
+    question:
+      "As of the date you check, what does 26 U.S.C. 163(h)(3) currently provide: what is the acquisition indebtedness limitation, does the substitution for taxable years beginning after 2017 still apply, does it carry a sunset, and is home equity indebtedness currently deductible? Quote the current statutory text and give the date you read it.",
+    claim:
+      "The lesson quotes 163(h)(1) disallowing personal interest, 163(h)(3)(A) defining qualified residence interest, 163(h)(3)(B)(ii)'s 1,000,000 and 500,000 figures, and the paragraph substituting 750,000 and 375,000 for taxable years beginning after 2017, all read on 28 August 2026 and dated in the lesson. It teaches the deduction as strictly conditional (itemising, income rather than tax, and the cap) and never as a discount on the interest rate.",
+    stakes:
+      "High, because this is the one place in the course where a wrong figure would change a household's arithmetic rather than merely their vocabulary. The provision has been amended more than once and has carried sunset language in the past. The durable teaching (three conditions, not a discount) survives any change; the numbers do not.",
+    needs: [
+      "The current text of 26 U.S.C. 163(h)(3)(B)(ii) and of any paragraph substituting different figures",
+      "Whether any substitution carries an expiry, and the statute or public law that set it",
+      "Whether home equity indebtedness is currently within the definition",
+      "The date you read the section",
+    ],
+    where: [
+      "uscode.house.gov, for the current text with its amendment notes",
+      "The public law that last amended section 163, for any effective and sunset dates",
+    ],
+  },
+  {
+    key: "housing-section-121-exclusion-current",
+    course: "housing-decisions",
+    lesson: "the-costs-of-getting-in-and-out",
+    quote: "Those figures were read on 28 August 2026 and are dated for a reason.",
+    title: "Are the 26 U.S.C. 121 exclusion amounts and the two-of-five-years test still as quoted?",
+    severity: "medium",
+    question:
+      "As of the date you check, does 26 U.S.C. 121 still cap the excluded gain at 250,000 dollars with 500,000 dollars substituted on a qualifying joint return, and does subsection (a) still require ownership and use as a principal residence for periods aggregating two years or more within the five-year period ending on the date of sale? Quote the current text and give the date.",
+    claim:
+      "The lesson quotes 121(a), 121(b)(1) and 121(b)(2)(A) verbatim as read on 28 August 2026, and then says the durable part is the SHAPE rather than the figures: a rule keyed on two years out of five is telling you these decisions are counted in years.",
+    stakes:
+      "Medium. The lesson's argument survives a change to the dollar figures because it leans on the holding-period condition, but a stale number quoted verbatim from a statute is still a wrong number in a teacher's hands, and this one is used to justify the whole treatment of the horizon.",
+    needs: [
+      "The current text of 26 U.S.C. 121(a), (b)(1) and (b)(2)(A)",
+      "Whether the amounts are indexed or fixed",
+      "The date you read the section",
+    ],
+    where: [
+      "uscode.house.gov, for the current text with amendment notes",
+      "The IRS publication for the relevant year, only to confirm the statutory figures, never as the primary citation",
+    ],
+  },
+  {
+    key: "housing-avm-rule-status",
+    course: "housing-decisions",
+    lesson: "valuation-is-a-covered-transaction",
+    quote:
+      "published at 89 Fed. Reg. 64538 on 7 August 2024 and effective 1 October 2025",
+    title: "Is the interagency automated valuation model rule in force as published, and where is it codified?",
+    severity: "medium",
+    question:
+      "As of the date you check, is the quality control standards rule for automated valuation models in force as published at 89 Fed. Reg. 64538, has its effective date moved, has it been stayed or amended, and what CFR section does each of the six agencies codify it at? Name the sections and the date you checked.",
+    claim:
+      "The lesson states the Federal Register citation, the 7 August 2024 publication date, the 1 October 2025 effective date, the six adopting agencies, and quotes the five quality control factors including the nondiscrimination factor, all read from the Bureau's own final rule page on 28 August 2026. It gives no CFR section for the rule, because it did not confirm one.",
+    stakes:
+      "The nondiscrimination quality control factor is the load-bearing point of the lesson's last third: it is the evidence that the obligation followed the decision when the decision moved from a person to a model. A stayed or amended rule would not change the lesson's argument, but it would change what the course is telling an educator is currently in force, and the course states an effective date in the past tense.",
+    needs: [
+      "The rule's current status, from the Federal Register or the adopting agencies",
+      "The CFR section each agency codified it at",
+      "Whether the effective date was changed after publication",
+      "The date you checked",
+    ],
+    where: [
+      "The Federal Register document itself, for the codification table",
+      "Each adopting agency's own rule page, read for what it says rather than for commentary",
+    ],
+  },
+  {
+    key: "housing-arizona-tenancy-currency",
+    course: "housing-decisions",
+    lesson: "the-deposit-and-the-clock",
+    quote:
+      "What is true in Arizona is not true in your state unless your state says so.",
+    title: "Are A.R.S. 33-1321 and 33-1368 still as quoted, and has the Act been amended since?",
+    severity: "medium",
+    question:
+      "As of the date you check, does A.R.S. 33-1321 still cap security at one and one-half month's rent, still provide that a fee not designated nonrefundable is refundable, and still allow fourteen days excluding weekends and legal holidays for the itemized list? Does A.R.S. 33-1368 still set five days for both the health-and-safety notice and the nonpayment notice? Quote the current text and give the date.",
+    claim:
+      "The lessons quote both sections verbatim as read on the Arizona State Legislature's own site on 28 August 2026, and label Arizona throughout as ONE state used as a worked example rather than as a national rule. The transferable teaching is a four-question shape (cap, labelling, deadline, remedy) that survives any amendment to the numbers.",
+    stakes:
+      "Arizona is the only state whose tenancy figures this course prints, and it prints them as quotations. A learner in Arizona would rely on them directly. The course's method survives an amendment; the quoted numbers do not, and a quotation that no longer matches the statute is the worst kind of error because it looks authoritative.",
+    needs: [
+      "The current text of A.R.S. 33-1321 subsections A, B, C and D",
+      "The current text of A.R.S. 33-1368 subsections A and B",
+      "Any session law amending either since 2026-08-28",
+      "The date you read each section",
+    ],
+    where: [
+      "azleg.gov, the legislature's own current text of Title 33 chapter 10",
+      "The Arizona session laws, for any amendment adopted after the fetch date",
+    ],
+  },
+  {
+    key: "housing-georgia-gse-version-line",
+    course: "housing-decisions",
+    // No lesson: this hedge lives in src/lib/standards/data/ga.ts, not in a lesson body.
+    title: "Which edition date is correct for the Georgia Personal Finance and Economics standards?",
+    severity: "low",
+    question:
+      "The PDF at the GaDOE lor2 address this catalog cites carries a page footer reading \"December 9, 2021\" and a course header reading \"Course Code: 45.061 effective beginning the 2022-2023 school year\". This repo's framework `version` string additionally says \"Approved June 9, 2016 · Updated November 2, 2023\", which is not printed on the document. Which is the edition a Georgia teacher is answerable to, and where is that stated?",
+    claim:
+      "The Georgia framework's `version` is left exactly as the earlier pass recorded it, and the discrepancy is written into a comment above the SSEPF1 entry rather than resolved by guessing. Nothing in the catalog asserts an approval or update date that the document itself shows.",
+    stakes:
+      "Low for a learner and real for a teacher: the version line is provenance rendered on the standards finder, and a date that is not on the document is the sort of small wrongness this module exists to prevent. It affects every Georgia claim in the file, not only the housing one.",
+    needs: [
+      "The edition date GaDOE itself publishes for course 45.061 on its standards page",
+      "Whether the lor2 PDF is the current file that page links to",
+      "The date you checked",
+    ],
+    where: [
+      "The GaDOE social studies standards page, read for what it links and what it calls the edition",
+      "The lor2 PDF's own footer and header, which is what this repo transcribed",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
