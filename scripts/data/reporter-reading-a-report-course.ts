@@ -62,7 +62,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Design statement**: the publisher's account of what the report is meant to do, which predicts its structure.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 2 and 3.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 2 and 3. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "secondary-not-primary",
@@ -95,7 +95,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Selection**: the compiler's choice of which indicators appear, which is editorial and is the fair thing to question.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Page 82.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Page 82. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "report-anatomy",
@@ -128,7 +128,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Report map**: a one-page note of where the definitions, endnotes, methodology, and each relevant table sit.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 3, 4, 26, and 27.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 3, 4, 26, and 27. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "quiz-what-kind-of-document",
@@ -850,7 +850,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Ask the publisher**: the routine step of emailing a compiler to ask which table produced a summary sentence.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Page 7.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Page 7. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "locating-the-table",
@@ -885,7 +885,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Untraceable figure**: a number whose underlying table you cannot locate, which is reportable only once the publisher identifies it.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 7, 53, 58, and 59.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 7, 53, 58, and 59. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "denominators-and-direction",
@@ -918,7 +918,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Disambiguating figure**: a second number that separates two explanations of the first, often printed on the same page.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 29, 60, and 83.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 29, 60, and 83. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "quiz-summary-against-tables",
@@ -1638,7 +1638,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Recommended ratio**: a threshold set by a professional association, reportable as a shortfall only when the association is named.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 78, 79, 80, 81, and 82.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 78, 79, 80, 81, and 82. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "chasing-the-endnote",
@@ -1669,7 +1669,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Remove**: each step between original research and your sentence, at which qualifiers are lost.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 75 and 76.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 75 and 76. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "vintage-and-comparability",
@@ -1700,7 +1700,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Comparability**: whether two figures share population, timeframe, and definition closely enough to be set side by side.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Page 83.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Page 83. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "quiz-definitions-endnotes-vintage",
@@ -2448,7 +2448,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Symmetrical error**: using a self-disclosed limitation to dismiss the document, which the disclosure explicitly warns against.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Page 27.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Page 27. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "qualitative-and-quantitative",
@@ -2481,7 +2481,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **Composite character**: an invented individual assembled from several accounts, which this catalog does not permit.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Page 7.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Page 7. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "writing-from-a-report",
@@ -2514,7 +2514,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
 - **What I could not confirm**: the published note of unresolved questions, carried through the whole Reporter track.
 
 ## Sources
-- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 7 and 27.`,
+- Indiana Youth Institute. (2025). *2025 Indiana girl report: A profile of Indiana girls* (1st ed.). Pages 7 and 27. https://girlcoalitionindiana.org/wp-content/uploads/2025/10/Indiana-Girl-Report-2025.pdf`,
     },
     {
       slug: "quiz-limits-and-writing",
