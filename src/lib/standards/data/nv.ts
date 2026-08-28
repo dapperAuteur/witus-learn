@@ -328,6 +328,65 @@ export const JURISDICTION: JurisdictionFile = {
         },
       ],
     },
+    // ── NVACS for Social Studies — Grades 9-12 Financial Literacy (2018) ──────
+    //
+    // THIS FRAMEWORK SUPERSEDES A REJECTION. Until MONEY-01 (`credit-decisions`) shipped, this
+    // file's notClaimed entry read "all of SS.9-12.FL" among the standards "not genuinely taught".
+    // That was true and is no longer. The rejection is rewritten below rather than deleted, per the
+    // house pattern, so a teacher can see that a gap was closed rather than quietly edited away.
+    //
+    // ONLY THREE OF THIRTEEN ARE CLAIMED, and only one at full coverage. Nevada's FL strand runs
+    // FL.1 to FL.13 and covers taxes, savings planning, identity theft, investing, insurance,
+    // careers, and Nevada-specific postsecondary financing programmes, none of which this catalog
+    // teaches. FL.6 is the exception and it is an unusually exact fit: it names the credit report,
+    // its use by lenders, employers and insurers (which is permissible purpose), and the borrower's
+    // access and rights, which is the course's entire spine.
+    //
+    // TRANSCRIPTION NOTE, PRESERVED DELIBERATELY. Nevada's published document prints FL.7's code as
+    // "SS.912.FL.7", without the hyphen every other code in the strand carries. That is a typo in
+    // the state's own document. We do not claim FL.7, so the malformed code does not appear below;
+    // it is recorded here so a later editor who finds it in the PDF knows it was seen and is not a
+    // transcription error of ours. Nevada also prints a spaced hyphen, not a dash, in FL.4, FL.5
+    // and FL.9 ("a personal financial plan - including a savings plan"); transcribed as printed.
+    {
+      id: "nv-financial-literacy",
+      subject: "Social Studies",
+      name: "Nevada Academic Content Standards for Social Studies — Grades 9-12 Financial Literacy",
+      publisher: "Nevada Department of Education (NDE) / Nevada State Board of Education",
+      version: "Nevada Academic Content Standards for Social Studies, Revised September 2018 · Grades 9-12 Financial Literacy",
+      fetchedOn: "2026-08-28",
+      sourceUrl: NV_SS,
+      adoption:
+        "Nevada files financial literacy inside social studies as its own Grades 9-12 strand, coded SS.9-12.FL.<n>, with content themes running from financial decision-making through savings and spending, credit and debt, insurance and investing, and college and career preparedness. MONEY-01 (`credit-decisions`) teaches the credit-and-debt theme's reporting half and nothing else in the strand, so exactly one standard is claimed in full and two in part. Transcribed verbatim 2026-08-28 from the NDE Social Studies standards PDF currently linked from the department's social studies page; the department's site has been rebuilt since the 2026-07-19 pass and the older upload path no longer serves the file.",
+      standards: [
+        {
+          code: "SS.9-12.FL.6",
+          text: "Explain the purpose of a credit report, how that report is used by lenders, employers and insurers, and the borrower's access, rights, and responsibilities related to a credit report.",
+          claimIds: [
+            "money.consumer-report-contents",
+            "money.who-may-read-the-file",
+            "money.borrower-rights-dispute",
+            "money.adverse-action-notice",
+          ],
+          coverage: "full",
+          note: "Full, and clause for clause. Purpose and contents of a consumer report come from the FCRA's own definition and its reporting-period limits at 15 U.S.C. 1681c(a); use by lenders, employers and insurers is exactly the permissible-purpose list at 1681b(a), which names those three separately; access is the free annual file disclosure at 1681j; and rights are the dispute and reinvestigation duty at 1681i, the furnisher duties at 1681s-2, and the adverse action notice under ECOA and Regulation B.",
+        },
+        {
+          code: "SS.9-12.FL.3",
+          text: "Locate and evaluate financial information from various sources.",
+          claimIds: ["money.borrower-rights-dispute", "money.credit-score-as-model"],
+          coverage: "partial",
+          note: "Partial. The course teaches locating and evaluating ONE class of financial information thoroughly: obtaining your own consumer file through the statutory free disclosure, reading what the score disclosure must contain, and checking every claim about those rights against the statute rather than against a summary. It does not reach other source types — investment, insurance, or deposit-account disclosures — so the standard's word \"various\" is only partly met.",
+        },
+        {
+          code: "SS.9-12.FL.5",
+          text: "Analyze the costs and benefits of different types of credit and debt - including how to avoid and resolve debt problems.",
+          claimIds: ["money.cost-of-credit-apr", "money.credit-access-constraint"],
+          coverage: "partial",
+          note: "Partial. The cost side is taught precisely, as the annual percentage rate that TILA requires so two offers can be ranked, with the statutory computation worked; the benefit side is the course's opening premise, the timing gap that credit closes. Not covered: the survey of different TYPES of credit and debt, and how to avoid and resolve debt problems, which is behavioural debt management the course deliberately does not teach and which MONEY-03 will carry.",
+        },
+      ],
+    },
   ],
 
   // Standards we CONSIDERED AND REJECTED — published as loudly as the claims.
@@ -350,7 +409,11 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "The disciplinary-skill and civic-disposition standards we checked and rejected.",
-      body: "The disciplinary-skill standards that ask students to construct compelling/supporting questions, construct and present their own arguments, participate in rigorous academic discussions, and take deliberative action (SS.9-12.CE.1, .2, .4, .6-.12, and their US/WH equivalents) are procedures the courses exercise but do not deliver as a unit. On the content side, the Civics & Economics standards on political identity and ideology, founding-document interpretation over time, international relations, gerrymandering and redistricting, political behavior of population centers, immigration's effect on politics, and comparative political systems (SS.9-12.CE.13, .15-.17, .20, .21, .25, .26, .34, .37-.42), and the National Economy / Financial Literacy standards (SS.9-12.CE.45-.50, all of SS.9-12.FL) are not genuinely taught, so we do not claim them.",
+      body: "The disciplinary-skill standards that ask students to construct compelling/supporting questions, construct and present their own arguments, participate in rigorous academic discussions, and take deliberative action (SS.9-12.CE.1, .2, .4, .6-.12, and their US/WH equivalents) are procedures the courses exercise but do not deliver as a unit. On the content side, the Civics & Economics standards on political identity and ideology, founding-document interpretation over time, international relations, gerrymandering and redistricting, political behavior of population centers, immigration's effect on politics, and comparative political systems (SS.9-12.CE.13, .15-.17, .20, .21, .25, .26, .34, .37-.42) and the National Economy standards (SS.9-12.CE.45-.50) are not genuinely taught, so we do not claim them.",
+    },
+    {
+      heading: "Financial Literacy (SS.9-12.FL) — this rejection has been superseded, in part.",
+      body: "Until 2026-08-28 this list said all of SS.9-12.FL was not genuinely taught, and that was accurate: the catalog had no personal-finance instruction at all. It now has one course, MONEY-01, on how a consumer credit decision is made, and three of the strand's thirteen standards are claimed above — SS.9-12.FL.6 in full, SS.9-12.FL.3 and SS.9-12.FL.5 in part, each with its limit stated on the entry. The other ten are still not claimed and the reasons are specific rather than general. SS.9-12.FL.2 is taxes and SS.9-12.FL.11 through .13 are careers and Nevada's own postsecondary financing programmes, none of which this catalog teaches. SS.9-12.FL.4 is developing a personal financial plan and a savings plan, and SS.9-12.FL.1 is developing financial goals; the course teaches how institutions decide, and it gives no financial advice and no planning instruction, so claiming a goal-setting or budgeting standard would misdescribe it. SS.9-12.FL.8 is identity theft and fraud, SS.9-12.FL.9 is investing and securities, and SS.9-12.FL.10 is insurance, three domains the course does not enter. SS.912.FL.7, whose code Nevada prints without the hyphen the rest of the strand carries, asks for a comparison of loan types with attention to compounding frequency, which the course does not teach either. Two of those gaps are on the roadmap rather than out of scope: MONEY-03 covers debt and collections and MONEY-04 covers predatory products, and this entry will shrink again when they ship.",
     },
     {
       heading: "Most World History & Geography and U.S. History standards.",

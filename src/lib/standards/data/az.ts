@@ -289,6 +289,57 @@ export const JURISDICTION: JurisdictionFile = {
       ],
     },
 
+    // ── History and Social Science — the HS.E1 financial-literacy anchor ───
+    //
+    // WHY THIS IS A SEPARATE FRAMEWORK FROM az-hss ABOVE, given it is the same document. The two
+    // carry different `fetchedOn` dates and that difference is the point: az-hss was transcribed on
+    // 2026-07-16 and this anchor on 2026-08-28, when MONEY-01 (`credit-decisions`) made any of E1
+    // claimable for the first time. Folding these entries into az-hss would either backdate a
+    // fetch that did not happen then, or restamp a hundred entries nobody re-read.
+    //
+    // THIS SUPERSEDES A REJECTION. This file's notClaimed entry previously listed "all of HS.E1
+    // (financial literacy)" among the anchors the courses do not genuinely teach. One of the five
+    // is now taught, one is partly taught, and the rejection below is rewritten rather than
+    // deleted so a teacher can see the gap closing.
+    //
+    // FETCH ROUTE, RECORDED BECAUSE IT IS NOT THE OBVIOUS ONE. azed.gov sits behind a bot challenge
+    // that returns 403 to scripted requests on every path, including the standards landing page.
+    // The text below was transcribed from the Internet Archive's byte-faithful snapshot of the
+    // exact azed.gov URL recorded as sourceUrl, which is the address a human reviewer can open in a
+    // browser and which az-hss already cites. Same document, same bytes, different route in.
+    {
+      id: "az-hss-financial-literacy",
+      subject: "Social Studies",
+      name: "Arizona History and Social Science Standards — High School Economics, anchor E1",
+      publisher: "Arizona Department of Education (ADE)",
+      version: "2018 · modified 8/23/19",
+      fetchedOn: "2026-08-28",
+      sourceUrl:
+        "https://www.azed.gov/sites/default/files/2023/03/2018%20History%20and%20Social%20Science%20Standards%20_Update8.23.19.pdf",
+      adoption:
+        "Arizona's high-school Economics anchor E1 reads, in the document's own words, \"A financially literate individual understands how to manage income, spending, and investment.\" Arizona requires all twenty-one anchor standards to be taught by graduation, and LEAs build courses from them, so an anchor can be met across several courses. MONEY-01 (`credit-decisions`) reaches the spending-and-credit third of that anchor and neither of the other two: it teaches no income management and no investing. So one of the five E1 codes is claimed in full, one in part, and three not at all.",
+      standards: [
+        {
+          code: "HS.E1.3",
+          text: "Evaluate the cost and benefits of using credit.",
+          claimIds: [
+            "money.cost-of-credit-apr",
+            "money.credit-access-constraint",
+            "money.adverse-action-notice",
+          ],
+          coverage: "full",
+          note: "Full, because this standard is scoped to credit alone with no budgeting, investing or insurance clause attached to stretch over. Cost is taught as the annual percentage rate that the Truth in Lending Act requires precisely so two offers can be ranked, with the statutory open-end computation worked arithmetically. Benefit is the course's opening premise, the timing gap between when money is owed and when it arrives, which is what credit is bought to close. The risks that come with the benefit are the rest of the course: what the file records, who may read it, and what a refusal has to say.",
+        },
+        {
+          code: "HS.E1.1",
+          text: "Evaluate how and why people make choices to improve their economic well-being.",
+          claimIds: ["money.credit-access-constraint", "money.how-financial-rules-are-made"],
+          coverage: "partial",
+          note: "Partial. The course evaluates one such choice in real depth — seeking credit, the timing constraint that drives it, and the institutional machinery that decides whether it is available and at what price — and it treats the constraint as structural rather than as a failure of judgement. It does not treat economic-well-being choices generally, and it deliberately gives no advice about what any individual should choose, so the standard's evaluative breadth is only partly met.",
+        },
+      ],
+    },
+
     // ── ELA Grades 9-10 (2016) — Arizona's own codes, NOT Common Core ──────
     {
       id: "az-ela-910",
@@ -514,7 +565,11 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "Most of the Civics and Economics anchors we checked.",
-      body: "HS.C1.1-C1.4 (civic virtues and deliberative processes as named content), HS.C2.2, HS.C3.3 (parties, interest groups, and media's impact on institutions — our media-literacy course is consumer protection, not political media analysis), HS.C3.4 (international order), HS.C4.4-C4.7 (public-policy decision analysis and in-classroom deliberation), all of HS.E1 (financial literacy), HS.E2 (scarcity and incentives as named concepts), HS.E3.1/E3.3/E3.4, HS.E4 (the domestic economy, fiscal and monetary policy), and HS.E5.2/E5.4 — the courses do not genuinely teach these, so we do not claim them.",
+      body: "HS.C1.1-C1.4 (civic virtues and deliberative processes as named content), HS.C2.2, HS.C3.3 (parties, interest groups, and media's impact on institutions — our media-literacy course is consumer protection, not political media analysis), HS.C3.4 (international order), HS.C4.4-C4.7 (public-policy decision analysis and in-classroom deliberation), HS.E2 (scarcity and incentives as named concepts), HS.E3.1/E3.3/E3.4, HS.E4 (the domestic economy, fiscal and monetary policy), and HS.E5.2/E5.4 — the courses do not genuinely teach these, so we do not claim them. HS.E1 used to be listed here in full and is not any longer; see the entry below.",
+    },
+    {
+      heading: "HS.E1 (financial literacy) — this rejection has been superseded, in part.",
+      body: "Until 2026-08-28 this list said all of HS.E1 was not genuinely taught, and at the time that was the honest answer: the catalog did no personal-finance instruction of any kind. It now carries MONEY-01, on how a consumer credit decision is made, what data feeds it, who is allowed to look, and what recourse exists. Two of the anchor's five standards are claimed above, HS.E1.3 in full and HS.E1.1 in part, each with its limit stated on the entry. The remaining three are still not claimed, and the reasons are specific rather than general. HS.E1.2 asks students to analyze the factors that influence budgeting and saving choices; the course teaches how institutions decide about a borrower and it deliberately gives no financial advice and no planning instruction, so claiming a budgeting standard would misdescribe what a teacher would actually get. HS.E1.4 is a comparison of types of investment and HS.E1.5 is insurance and personal financial risk, and the course enters neither domain. Arizona's own E1 anchor statement names income, spending and investment; the course reaches the spending third and does not pretend to the other two.",
     },
     {
       heading: "Arizona's Economics anchors have no economic-systems standard.",
