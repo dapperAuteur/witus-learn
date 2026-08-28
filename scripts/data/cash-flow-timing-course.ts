@@ -608,6 +608,69 @@ Office of the Federal Register. (2024). *Code of Federal Regulations, title 12, 
             explanation: "The depositary bank is where the deposit is made, as distinct from the bank the item is drawn on.",
             sourceLessonSlug: "the-cut-off-hour",
           },
+          {
+            prompt: "What does the opening lesson say about the rules this course relies on?",
+            options: ["They are public and mostly short", "They are held by the institutions that apply them and released only on written request", "They are technical enough that a reader needs professional help to interpret any of them", "They are revised so frequently that only the current month's version is worth reading"],
+            correctIndex: 0,
+            explanation: "The course's promise is that the rules are free, written down and mostly short, which is what makes putting them in a learner's hands possible.",
+            sourceLessonSlug: "the-gap-is-the-subject",
+          },
+          {
+            prompt: "Which of these does the course say it will NOT recommend?",
+            options: ["A buffer size", "The section of the regulation that defines when funds are considered deposited", "The method for counting business days between a deposit and its availability", "The document a bank must supply on request describing its availability policy"],
+            correctIndex: 0,
+            explanation: "The course recommends no provider, no pay frequency, no buffer size and no order of payment, because those are decisions about a life.",
+            sourceLessonSlug: "the-gap-is-the-subject",
+          },
+          {
+            prompt: "How does the course describe the relationship between the two days in \"rent on the first, pay on the third\"?",
+            options: ["Two calendars set by different parties", "A single schedule that the employer and the landlord negotiated with each other", "An accident of the calendar that disappears in months with thirty-one days", "A term of the lease that the tenant agreed to when the agreement was signed"],
+            correctIndex: 0,
+            explanation: "Two days every month is not a fact about character. It is two calendars set under different rules, and both sets of rules are public.",
+            sourceLessonSlug: "the-gap-is-the-subject",
+          },
+          {
+            prompt: "Which of these is true of a bank office open only part of a business day?",
+            options: ["The open part is the banking day", "The whole calendar day is a banking day once the office opens for any purpose at all", "No banking day occurs unless the office is open for its full posted hours", "The banking day is fixed by the Federal Reserve rather than by the office's hours"],
+            correctIndex: 0,
+            explanation: "A banking day is that part of a business day on which an office is open to the public for carrying on substantially all of its banking functions.",
+            sourceLessonSlug: "business-day-banking-day",
+          },
+          {
+            prompt: "Where does the availability count begin, once the deposit's date is settled?",
+            options: ["The banking day of deposit", "The calendar day printed on the receipt the customer received at the time of deposit", "The business day on which the paying bank first receives the item for payment", "The day the depositary bank receives credit for the funds from another institution"],
+            correctIndex: 0,
+            explanation: "Deadlines are counted in business days from the banking day of deposit, which is why the cut-off hour and the deposit location matter first.",
+            sourceLessonSlug: "business-day-banking-day",
+          },
+          {
+            prompt: "How does 5 U.S.C. 6103(b)(1) treat a holiday falling on a Saturday, for employees whose basic workweek is Monday through Friday?",
+            options: ["The preceding Friday is the holiday", "The following Monday becomes the legal public holiday for those employees instead", "The holiday is observed on the Saturday itself with no substitution of any weekday", "The employee may select either the preceding Friday or the following Monday"],
+            correctIndex: 0,
+            explanation: "Instead of a holiday that occurs on a Saturday, the Friday immediately before is a legal public holiday for those employees.",
+            sourceLessonSlug: "business-day-banking-day",
+          },
+          {
+            prompt: "What kind of facility does the deposit-timing rule treat the same way as a night depository?",
+            options: ["A lock box", "A staffed teller window at a branch of the depositary bank itself", "An automated teller machine located inside the bank's own lobby", "A contractual branch operated by another institution on the bank's behalf"],
+            correctIndex: 0,
+            explanation: "Funds deposited to a night depository, lock box, or similar facility are considered deposited on the day the deposit is removed from it.",
+            sourceLessonSlug: "the-cut-off-hour",
+          },
+          {
+            prompt: "Which fact about an off-premise machine triggers the removal-day deposit rule?",
+            options: ["Funds are removed twice a week or less", "The machine is operated by a company other than an insured depository institution", "The machine accepts cash but not checks from the customers who use it", "The machine is located more than one mile from the nearest branch of the bank"],
+            correctIndex: 0,
+            explanation: "The rule applies where the machine is not on, or within fifty feet of, the premises and funds are normally removed not more than twice each week.",
+            sourceLessonSlug: "the-cut-off-hour",
+          },
+          {
+            prompt: "What does the course say is the first useful thing it does?",
+            options: ["Tell two kinds of late apart", "Calculate the exact number of days a bank may hold any particular deposit", "Identify which federal agency supervises a given depository institution", "Rank the payment methods available to a household by their total cost"],
+            correctIndex: 0,
+            explanation: "A bill paid late for want of cleared funds and a bill unpaid for want of money look identical on a statement and are not the same problem.",
+            sourceLessonSlug: "the-gap-is-the-subject",
+          },
         ],
       },
     },
@@ -1149,6 +1212,660 @@ That is the floor under every ordinary check deposit: whatever else is held, tha
             correctIndex: 0,
             explanation: "The nonproprietary category, carrying the fifth-business-day schedule, is the machine the depositary bank neither owns nor operates and which is not on or near its premises.",
             sourceLessonSlug: "next-day-and-second-day",
+          },
+          {
+            prompt: "Which of these was the state of the law before the Expedited Funds Availability Act?",
+            options: ["No federal answer to when a deposit could be spent", "A uniform two-business-day schedule applied by every federally insured institution", "A rule set district by district in Federal Reserve operating circulars", "A requirement that deposits be available the moment the bank received them"],
+            correctIndex: 0,
+            explanation: "A bank held a deposit for as long as it judged prudent, and the judgement was entirely its own.",
+            sourceLessonSlug: "why-a-schedule-exists",
+          },
+          {
+            prompt: "Where do the currently operative funds-availability dollar amounts appear?",
+            options: ["In Regulation CC", "In the text of the Expedited Funds Availability Act, which is amended every five years", "In an annual notice each bank publishes describing its own availability thresholds", "In the operating circular of the Federal Reserve Bank serving the depositary bank"],
+            correctIndex: 0,
+            explanation: "The statute prints older figures and instructs that the amounts be adjusted; the adjusted amounts sit in the implementing regulation.",
+            sourceLessonSlug: "why-a-schedule-exists",
+          },
+          {
+            prompt: "Which of these deposits gets next-business-day availability under 12 CFR 229.10(c)?",
+            options: ["A Federal Reserve Bank check", "A check drawn on a commercial bank in the same city as the depositary bank", "A money order issued by a nonbank money transmitter licensed in the state", "A check drawn on a foreign bank and payable through a domestic correspondent"],
+            correctIndex: 0,
+            explanation: "Federal Reserve Bank and Federal Home Loan Bank checks are named alongside Treasury checks, Postal Service money orders, and state and local government checks.",
+            sourceLessonSlug: "next-day-and-second-day",
+          },
+          {
+            prompt: "What does the phrase \"on-us check\" describe in the next-day availability list?",
+            options: ["A check drawn on the same bank", "A check the bank has already presented once and had returned unpaid by the drawee", "A check the depositary bank has agreed in advance to guarantee for the customer", "A check drawn by the bank itself in favour of one of its own customers"],
+            correctIndex: 0,
+            explanation: "A check drawn on the same bank at which the deposit is made needs no collection from another institution, which is why it sits in the next-day list.",
+            sourceLessonSlug: "next-day-and-second-day",
+          },
+          {
+            prompt: "Why is a card refund NOT covered by the next-day rule for electronic payments?",
+            options: ["It is neither a wire nor an ACH credit", "Because refunds are treated as reversals of an earlier charge rather than as deposits", "Because the availability rules exclude any transaction initiated by a merchant", "Because a refund is credited by the card network rather than by the depositary bank"],
+            correctIndex: 0,
+            explanation: "Regulation CC defines an electronic payment narrowly, as a wire transfer or an ACH credit transfer, so the phrase does not reach everything that is electronic.",
+            sourceLessonSlug: "next-day-and-second-day",
+          },
+          {
+            prompt: "What must a bank do before the excess above the new-account threshold becomes available?",
+            options: ["Wait no longer than the ninth business day", "Obtain the customer's written acknowledgement that the funds are being held", "Verify the deposit with the paying institution and record the response in writing", "Apply the large-deposit exception separately to each check in the deposit"],
+            correctIndex: 0,
+            explanation: "During the first thirty calendar days the ordinary schedule applies to the first $6,725, and the excess must be available not later than the ninth business day.",
+            sourceLessonSlug: "six-exceptions-and-a-notice",
+          },
+          {
+            prompt: "Which two exceptions share the same dollar threshold?",
+            options: ["New accounts and large deposits", "Redeposited checks and reasonable cause to doubt collectibility, at the same figure", "Emergency conditions and repeated overdrafts, both measured on a single banking day", "Large deposits and emergency conditions, both measured against the account's balance"],
+            correctIndex: 0,
+            explanation: "As read on 28 August 2026 both used $6,725, which is also one of the two counts in the repeated-overdraft test.",
+            sourceLessonSlug: "six-exceptions-and-a-notice",
+          },
+          {
+            prompt: "What does the exception notice have to say about timing?",
+            options: ["When the funds will be available", "How many business days the bank has spent attempting to collect the item so far", "Whether the customer may appeal the hold to the bank's primary federal supervisor", "The cut-off hour that applied on the banking day the deposit was received"],
+            correctIndex: 0,
+            explanation: "The notice must state the time period within which the funds will be available for withdrawal, alongside the reason and the amount delayed.",
+            sourceLessonSlug: "six-exceptions-and-a-notice",
+          },
+          {
+            prompt: "What is the reasonable-period extension for deposits at a nonproprietary machine?",
+            options: ["Six business days", "One business day, the same as for a check drawn on the depositary bank itself", "Five business days, the same as for checks on the general availability schedule", "There is no defined extension, so the bank may set a period it considers reasonable"],
+            correctIndex: 0,
+            explanation: "The regulation defines the extension in days by deposit category, and the nonproprietary machine category carries the longest of the three.",
+            sourceLessonSlug: "six-exceptions-and-a-notice",
+          },
+          {
+            prompt: "Which fact about the availability schedule makes the exception notice worth reading closely?",
+            options: ["It names a category you can check", "It sets the fee the bank may charge for holding the funds beyond the standard period", "It transfers the risk of the item being returned unpaid from the bank to the customer", "It waives the customer's right to bring an action for a violation of the schedule"],
+            correctIndex: 0,
+            explanation: "The reason stated on the notice is one of six named categories, and a named category can be compared against the regulation's own text.",
+            sourceLessonSlug: "six-exceptions-and-a-notice",
+          },
+          {
+            prompt: "How does the course describe the relationship between the availability schedule and a bank's own policy?",
+            options: ["The schedule is a ceiling on delay", "The schedule is a floor, so a bank must hold funds at least that long before releasing", "The schedule applies only where the bank has not published a policy of its own", "The schedule and the bank's policy apply alternately, whichever is longer"],
+            correctIndex: 0,
+            explanation: "Congress legislated a maximum delay rather than a required one, so a faster policy is permitted and a slower one is not.",
+            sourceLessonSlug: "why-a-schedule-exists",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — When money leaves: order, not just amount
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "any-order-convenient",
+      title: "9 · Nobody promised you an order",
+      section: "Section 3 · When money leaves: order, not just amount",
+      body: `Section 2 was a federal schedule with named exceptions, written notices and a civil remedy. This section is one sentence of state law, and it points the other way.
+
+**The sentence.** Article 4 of the Uniform Commercial Code governs bank deposits and collections. Its section on the order of items says:
+
+> "Subject to subsection (a), items may be accepted, paid, certified, or charged to the indicated account of its customer in any order." (U.C.C. § 4-303, n.d.)
+
+**In any order.** Not lowest first, not in the sequence you made them, not in the order they arrived. Subsection (a) is about something else entirely: it fixes the moment after which a stop-payment order, a notice, legal process or a setoff comes too late to change the bank's right or duty to pay an item (U.C.C. § 4-303, n.d.). Nothing in either subsection promises you a sequence.
+
+**One point of method before the arithmetic.** The Uniform Commercial Code is not federal law. It is a model code, enacted state by state, so the operative rule for you is your own state's enactment of Article 4. The section number is usually the same and the words usually are too, but the citation that governs your account is a state statute. **Finding it is the exercise**, and it is the same move this catalog teaches everywhere: read the document that governs the decision rather than a summary of what it usually says.
+
+**Now the arithmetic, which is the whole point of this lesson.** Take an account holding $100 at the start of a day, and four payments that all reach the bank the same day: $80, $15, $12 and $8. Together they come to $115, so the account is going to end the day $15 short whatever happens. That much is fixed. What is not fixed is how many individual items are short when they are charged.
+
+**Smallest first.** Charge $8 and the balance is $92. Charge $12 and it is $80. Charge $15 and it is $65. Charge $80 and the balance goes to negative $15. **One item is charged against an insufficient balance.**
+
+**Largest first.** Charge $80 and the balance is $20. Charge $15 and it is $5. Charge $12 and the balance goes to negative $7. Charge $8 and it goes to negative $15. **Three items are charged against an insufficient balance.**
+
+**Same day. Same four payments. Same closing balance. One shortfall or three.** Nothing about your conduct differs between the two columns. What differs is a sequencing decision made inside a computer, and the code says the bank may make it in any order.
+
+**Two things this lesson is not doing.** It is not accusing any bank of anything: the arithmetic shows what the permission makes possible, not what any institution does, and where the count matters, what matters is your own statement rather than a general claim. And it is not telling you what to do about it. **This course gives no financial advice**, so it will not tell you to pay in a particular sequence or to hold a particular buffer.
+
+**What it does give you is a countable fact.** The number of items charged against an insufficient balance is a number, it appears on your statement, and Section 6 shows you the rule that requires it to be totalled there. A number you can read is worth more than a suspicion you cannot.
+
+**And carry this back to Section 2.** The repeated-overdraft exception counts occurrences. Order changes the count. Two rules that live in different bodies of law, written decades apart, meet on your account.
+
+:::reveal What does U.C.C. 4-303(b) permit a bank to do with a day's items? ||| Accept, pay, certify or charge them to the customer's account in any order.
+
+:::reveal In the worked example, how many items are charged against an insufficient balance smallest first, and how many largest first? ||| One smallest first, and three largest first, from the same four payments against the same opening balance.
+
+:::reveal Why is the operative posting-order rule a state statute rather than a federal one? ||| Because the Uniform Commercial Code is a model code enacted state by state, so your state's enactment of Article 4 is what governs your account.
+
+## Vocabulary
+- **Posting order**: the sequence in which a bank charges a day's items against an account, which the commercial code leaves to the bank.
+- **Item**: in Article 4, an instrument or a promise or order to pay money handled by a bank for collection or payment.
+- **Uniform Commercial Code**: a model code adopted state by state, so its sections are uniform in wording and state law in force.
+- **Insufficient balance**: the condition in which an item is charged against an account that does not hold enough to cover it, the count of which depends on order.
+
+## Sources
+U.C.C. § 4-303. (n.d.). *When items subject to notice, stop-payment order, legal process, or setoff; order in which items may be charged or certified*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/ucc/4/4-303
+
+12 CFR § 1030.11. (n.d.). *Additional disclosure requirements for overdraft services*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1030.11`,
+    },
+    {
+      slug: "authorized-posted-settled",
+      title: "10 · Authorised, posted, settled: three different moments",
+      section: "Section 3 · When money leaves: order, not just amount",
+      body: `A card is tapped and an app says the money is gone. Often it is not gone. Something else has happened, and the difference between the two is a large part of why balances surprise people.
+
+**Start from what the availability rules mean by available.** Regulation CC defines it as:
+
+> "available for all uses generally permitted to the customer for actually and finally collected funds under the bank's account agreement or policies, such as for payment of checks drawn on the account, certification of checks drawn on the account, electronic payments, withdrawals by cash, and transfers between accounts." (12 CFR § 229.2, n.d.)
+
+**Read the phrase "under the bank's account agreement or policies".** Even the federal definition hands part of the answer back to a document your bank wrote. That is a signpost: the words **available balance** and **ledger balance** are defined in your own account agreement, they are not the same as each other, and the app on your phone shows one of them.
+
+**Three moments, in the order they usually occur.** An **authorisation** is a check that funds exist and a reservation against them; it is not the transfer. **Posting** is the bank charging the item to your account, which is the moment the order in the last lesson decides. **Settlement** is the money actually moving between the institutions. A payment can be authorised on Friday, posted on Monday and settled later still, and every one of those is a different date on a different record.
+
+**This is not a defect and it is not a secret.** It is how a system built to work when the two parties bank in different places has to work. But it means a balance is an answer to a question, and the question matters: money you may spend right now, money charged so far, or money finally moved.
+
+**A right that exists precisely because arrival is invisible.** When someone sends preauthorized transfers **to** your account at least once every sixty days, Regulation E requires your institution to do one of three things: give oral or written notice within two business days after the transfer occurs, give notice within two business days of the scheduled date that it did **not** occur, or provide a readily available telephone line you may call to find out, with the number disclosed on the initial account disclosures and on each periodic statement (12 CFR § 1005.10, n.d.). The institution need not do it if the payor gives you positive notice itself (12 CFR § 1005.10, n.d.).
+
+**Notice which one your bank chose, because it is a choice.** If your bank picked the telephone line, then nobody is going to tell you your pay did not arrive. You have a number to call, and knowing that is the whole benefit of reading the rule.
+
+**Put the three moments together with Section 2 and you have the real picture.** Money coming in has an availability date set by a federal schedule. Money going out has an authorisation date, a posting date and a settlement date, only one of which the commercial code speaks to. The gap this course is about is the distance between the availability date on one side and the posting date on the other, and both are knowable in advance.
+
+:::reveal What three moments does this lesson distinguish for a payment leaving an account? ||| Authorisation, posting, and settlement.
+
+:::reveal Which of Regulation CC's definitions hands part of the meaning of "available" back to the bank's own document? ||| The definition of available for withdrawal, which refers to uses permitted under the bank's account agreement or policies.
+
+:::reveal What three options does Regulation E give an institution for telling you about a recurring credit to your account? ||| Positive notice within two business days, negative notice within two business days of the scheduled date, or a readily available telephone line disclosed on the statements.
+
+## Vocabulary
+- **Authorisation**: a check that funds exist and a reservation against them, which is not itself a transfer of money.
+- **Available balance**: the figure the bank treats as spendable now, defined in the account agreement and usually lower than the ledger balance.
+- **Ledger balance**: the balance of items actually charged and credited so far, without regard to reservations.
+- **Settlement**: the moment funds actually move between institutions, which may be later than posting.
+- **Preauthorized transfer**: a transfer to or from an account arranged in advance to recur, which carries its own notice rules.
+
+## Sources
+12 CFR § 229.2. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.2
+
+12 CFR § 1005.10. (n.d.). *Preauthorized transfers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.10`,
+    },
+    {
+      slug: "the-stop-payment-clock",
+      title: "11 · The transfer you scheduled, and the three days you have to stop it",
+      section: "Section 3 · When money leaves: order, not just amount",
+      body: `A recurring payment is a payment you agreed to once and will make many times. The rules about it are almost entirely rules about **when**.
+
+**First, how one is created.** Regulation E is short and unambiguous:
+
+> "Preauthorized electronic fund transfers from a consumer's account may be authorized only by a writing signed or similarly authenticated by the consumer." (12 CFR § 1005.10, n.d.)
+
+A writing, signed or similarly authenticated. Not a phone call, not an implication from a prior course of dealing.
+
+**Second, and this is the timing right worth memorising, how one is stopped.** A consumer may stop a preauthorized transfer by notifying the institution orally or in writing **at least three business days before the scheduled date** of the transfer (12 CFR § 1005.10, n.d.). The institution may require written confirmation within **fourteen days** of an oral notice, and if it does, it must tell you so and say where to send it (12 CFR § 1005.10, n.d.).
+
+**Three business days, counted the way Section 1 taught you to count.** This is where the two halves of the course meet. Business days exclude weekends and the named dates. A transfer scheduled for a Monday therefore needs notice by the preceding Wednesday, because Thursday, Friday and Monday are the three business days in between only if no excluded date intervenes; if the Monday is one of the named dates, the arithmetic moves again. **A right measured in business days is a right you have to compute, not a right you can estimate.**
+
+**Third, the notice you are owed when the amount moves.**
+
+> "When a preauthorized electronic fund transfer from the consumer's account will vary in amount from the previous transfer under the same authorization or from the preauthorized amount, the designated payee or the financial institution shall send the consumer written notice of the amount and date of the transfer at least 10 days before the scheduled date of transfer." (12 CFR § 1005.10, n.d.)
+
+**Ten days, and read who owes it: the payee or the institution.** The rule also lets an institution offer you the option of being notified only when a transfer falls outside a range you specified, or differs from the most recent one by more than an agreed amount (12 CFR § 1005.10, n.d.).
+
+**Why these three rules belong in a course about timing rather than a course about rights.** Because each one converts a vague worry into a date. "Can I stop it?" becomes "is today at least three business days before the scheduled date?" "Will it be bigger this month?" becomes "did the ten-day notice arrive?" A date can be checked against a calendar. A worry cannot.
+
+**One boundary, stated plainly.** These are rules about **electronic** fund transfers from a consumer account. A paper check you wrote is stopped under different law, and Section 6 comes back to the question of which rule governs which instrument. Getting that wrong is the commonest way a real right turns out not to apply.
+
+:::reveal How may a preauthorized electronic fund transfer from a consumer's account be authorised? ||| Only by a writing signed or similarly authenticated by the consumer.
+
+:::reveal How far before the scheduled date must a consumer notify the institution to stop a preauthorized transfer? ||| At least three business days.
+
+:::reveal How much advance written notice is owed when a preauthorized transfer will vary in amount? ||| At least ten days before the scheduled date, from either the designated payee or the financial institution.
+
+## Vocabulary
+- **Preauthorized electronic fund transfer**: a recurring transfer from a consumer account, which may be authorised only by a signed or similarly authenticated writing.
+- **Stop-payment notice**: the consumer's instruction to halt a scheduled transfer, effective if given at least three business days ahead.
+- **Written confirmation**: the follow-up an institution may require within fourteen days of an oral stop-payment notice, if it tells the consumer of the requirement.
+- **Varying-amount notice**: the ten-day advance written notice owed when a recurring transfer will differ from the previous or preauthorized amount.
+
+## Sources
+12 CFR § 1005.10. (n.d.). *Preauthorized transfers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/1005.10
+
+12 CFR § 229.2. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/12/229.2`,
+    },
+    {
+      slug: "quiz-when-money-leaves",
+      title: "12 · Knowledge check: when money leaves",
+      section: "Section 3 · When money leaves: order, not just amount",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What does U.C.C. 4-303(b) say about the sequence in which a bank charges items?",
+            options: ["Any order", "Items must be charged from smallest to largest so the fewest items are returned unpaid", "Items must be charged in the sequence the customer authorised them during the day", "Items must be charged in the sequence they were received by the bank from other banks"],
+            correctIndex: 0,
+            explanation: "Subject to subsection (a), items may be accepted, paid, certified, or charged to the indicated account of its customer in any order.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "What is U.C.C. 4-303(a) actually about?",
+            options: ["When a notice comes too late", "The sequence in which a bank must apply deposits before it applies withdrawals", "The maximum fee a bank may charge for an item paid against an insufficient balance", "The obligation of a paying bank to return an unpaid item by a stated deadline"],
+            correctIndex: 0,
+            explanation: "It fixes the moment after which a stop-payment order, notice, legal process or setoff comes too late to change the bank's right or duty to pay an item.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "Is the Uniform Commercial Code federal law?",
+            options: ["No, it is enacted state by state", "Yes, it was enacted by Congress and applies uniformly in every state and territory", "Yes, it is a federal regulation issued jointly by the banking agencies", "No, it is a voluntary industry standard that binds only its signatory institutions"],
+            correctIndex: 0,
+            explanation: "It is a model code, so the operative rule for a given account is that state's enactment of Article 4, even where the wording is identical.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "In the worked example, an account holds $100 and four payments of $80, $15, $12 and $8 arrive the same day. What is the closing balance?",
+            options: ["Negative $15", "Negative $7, because only the last two items exceed the funds remaining in the account", "Zero, because the bank returns whichever items the balance cannot cover that day", "Positive $5, because the largest item is returned rather than paid from the account"],
+            correctIndex: 0,
+            explanation: "The four payments total $115 against a $100 balance, so the day ends $15 short whatever order is used. Order changes the count of short items, not the total.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "In that example, how many items are charged against an insufficient balance when the smallest is charged first?",
+            options: ["One", "Two, because the balance runs out midway through the sequence of four payments", "Three, the same as when the largest item is charged before the others", "Four, because the total of the day's items exceeds the opening balance"],
+            correctIndex: 0,
+            explanation: "Charging $8, then $12, then $15 leaves $65, so only the $80 item meets an insufficient balance.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "In that example, how many items are charged against an insufficient balance when the largest is charged first?",
+            options: ["Three", "One, the same as when the smallest item is charged before the others", "Two, because the balance covers the first two payments and not the remaining pair", "None, because the bank must return the largest item before charging the smaller ones"],
+            correctIndex: 0,
+            explanation: "Charging $80 leaves $20 and charging $15 leaves $5, so the $12 and the $8 both meet an insufficient balance along with the item that overdrew it.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "What does the worked example demonstrate?",
+            options: ["Order changes the count", "That banks in every state are required to charge the largest item of the day first", "That the total charged to an account depends on the sequence the bank chooses", "That an overdrawn account always produces exactly one insufficient-balance item"],
+            correctIndex: 0,
+            explanation: "Same day, same payments, same closing balance, but one shortfall or three depending on a sequencing decision made inside a computer.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "What does the posting-order lesson explicitly say it is NOT doing?",
+            options: ["Accusing any bank", "Explaining how the commercial code treats a stop-payment order that arrives too late", "Showing what a permission in the commercial code makes arithmetically possible", "Connecting the count of overdrafts to the exception in the availability rules"],
+            correctIndex: 0,
+            explanation: "The arithmetic shows what the permission makes possible, not what any institution does. What matters in a real case is a person's own statement.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "Why does the lesson call the number of insufficient-balance items a countable fact?",
+            options: ["It appears on the statement", "Because the bank must report it to a consumer reporting agency once a year", "Because the commercial code requires the bank to disclose it before charging any item", "Because a customer may demand it be recalculated using a different posting order"],
+            correctIndex: 0,
+            explanation: "A number a person can read on their own statement is worth more than a suspicion they cannot check.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "Which rule from Section 2 does posting order connect to?",
+            options: ["The repeated-overdraft exception", "The new-account exception, which applies for thirty calendar days after opening", "The large-deposit exception, which is measured on the aggregate for one banking day", "The emergency-conditions exception, which covers an interruption of communications"],
+            correctIndex: 0,
+            explanation: "That exception counts occurrences, and order changes the count, so two rules written decades apart in different bodies of law meet on one account.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "What is an item, in the sense Article 4 uses the word?",
+            options: ["An instrument or order handled by a bank", "Any electronic message a bank sends to another bank during a settlement window", "Any charge a merchant submits to a card network for authorisation and later settlement", "Any entry a bank makes in its own general ledger at the close of a banking day"],
+            correctIndex: 0,
+            explanation: "Article 4 governs bank deposits and collections, and its items are the instruments and orders to pay that banks handle for collection or payment.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "What is the exercise this lesson sets around the commercial code?",
+            options: ["Find your own state's enactment", "Compare the code with the equivalent provision in Regulation CC's availability schedule", "Calculate the fee a bank may charge under the code for each insufficient item", "Determine which Federal Reserve district publishes the code for your region"],
+            correctIndex: 0,
+            explanation: "The section number and words are usually the same everywhere, but the citation governing a given account is a state statute.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "How does Regulation CC define funds that are available for withdrawal?",
+            options: ["Available for uses permitted for collected funds", "Available for cash withdrawal only, at any branch of the depositary bank during posted hours", "Available at the moment the depositary bank receives credit from the paying bank", "Available for any purpose except the payment of a check drawn on the same account"],
+            correctIndex: 0,
+            explanation: "The definition lists paying checks, certifying checks, electronic payments, cash withdrawals and transfers between accounts, under the bank's account agreement or policies.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "What does the phrase \"under the bank's account agreement or policies\" in that definition signal?",
+            options: ["Part of the answer is in the bank's own document", "That the bank may override the federal availability schedule by contract with the customer", "That the federal definition applies only to accounts opened after the rule took effect", "That a customer must consent in writing before any funds are treated as available"],
+            correctIndex: 0,
+            explanation: "Even the federal definition hands part of the meaning back to a document the bank wrote, which is where available balance and ledger balance are defined.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "What is an authorisation, as this lesson distinguishes it?",
+            options: ["A check that funds exist, and a reservation", "The moment the bank charges an item against the customer's account balance", "The moment funds actually move between the two institutions involved", "The written consent a consumer gives before a recurring transfer may begin"],
+            correctIndex: 0,
+            explanation: "An authorisation is not the transfer. Posting is the charge, and settlement is the money actually moving.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "Which of the three moments is the one that posting order decides?",
+            options: ["Posting", "Authorisation, because the bank chooses which requests to approve during the day", "Settlement, because the bank chooses when to send funds to the other institution", "None of them, because order is fixed by the availability schedule in Regulation CC"],
+            correctIndex: 0,
+            explanation: "Posting is the bank charging the item to the account, and that is the moment the commercial code's any-order permission operates on.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "Why does the lesson say the three-moment structure is not a defect?",
+            options: ["The parties bank in different places", "Because the delay lets the bank earn interest on funds before they are transferred out", "Because federal law requires a minimum interval between authorisation and settlement", "Because customers asked for a reservation system when debit cards were introduced"],
+            correctIndex: 0,
+            explanation: "It is how a system built to work when the payer and payee bank at different institutions has to work, but it means a balance answers a specific question.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "How often must preauthorized credits arrive before Regulation E's notice rule applies?",
+            options: ["At least once every sixty days", "At least once every calendar month, counted from the first day of the month", "At least twice in any statement cycle, whatever the length of that cycle is", "At least once every fourteen days, matching the written-confirmation window"],
+            correctIndex: 0,
+            explanation: "The rule attaches when a person initiates preauthorized electronic fund transfers to a consumer's account at least once every sixty days.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "Which of these is one of the three options Regulation E gives an institution for that notice?",
+            options: ["A readily available telephone line", "A written statement mailed within thirty days of the end of the statement cycle", "An electronic alert sent to every address the customer has ever registered", "A quarterly summary listing every recurring credit received during the quarter"],
+            correctIndex: 0,
+            explanation: "The three are positive notice within two business days, negative notice within two business days of the scheduled date, or a telephone line disclosed on the statements.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "Within how long must positive notice of a preauthorized credit be given, if the institution chooses that option?",
+            options: ["Two business days after the transfer", "Ten days before the scheduled date of the transfer to the consumer's account", "Three business days after the end of the statement cycle in which it occurred", "Fourteen days after the consumer asks whether the transfer has arrived"],
+            correctIndex: 0,
+            explanation: "Positive notice is oral or written notice of the transfer within two business days after it occurs.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "What is negative notice under that rule?",
+            options: ["Notice that the transfer did not occur", "Notice that the transfer occurred but in a smaller amount than the consumer expected", "Notice that the institution has declined to accept further transfers from that payor", "Notice that the consumer's authorization for the transfer has expired by its terms"],
+            correctIndex: 0,
+            explanation: "It is oral or written notice, within two business days of the date the transfer was scheduled to occur, that it did not occur.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "When need an institution not provide any of the three notices?",
+            options: ["When the payor gives positive notice itself", "When the consumer has enrolled in electronic rather than paper periodic statements", "When the transfer is smaller than the minimum availability amount in Regulation CC", "When the transfer arrives on a day that is not a business day under Regulation CC"],
+            correctIndex: 0,
+            explanation: "A financial institution need not provide notice of a transfer if the payor gives the consumer positive notice that the transfer has been initiated.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "What does the lesson say is the practical consequence if your bank chose the telephone-line option?",
+            options: ["Nobody will tell you the pay did not arrive", "The bank must call you within two business days of every scheduled transfer date", "The bank must waive any fee charged while the expected credit was outstanding", "The bank must send a written confirmation of every credit within fourteen days"],
+            correctIndex: 0,
+            explanation: "You have a number to call rather than an alert, and knowing which option the institution picked is the benefit of reading the rule.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "Where is the telephone number required to be disclosed under that option?",
+            options: ["On the initial disclosures and each periodic statement", "On a sign posted at every branch where the institution accepts consumer deposits", "In the annual privacy notice the institution sends to every accountholder", "On the back of every debit card the institution issues to a consumer"],
+            correctIndex: 0,
+            explanation: "The rule requires the number to be disclosed on the initial disclosure of account terms and on each periodic statement.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "How may a preauthorized electronic fund transfer FROM a consumer's account be authorised?",
+            options: ["By a signed or similarly authenticated writing", "By any oral instruction the consumer gives to the payee during a recorded telephone call", "By a course of dealing in which the consumer has permitted three prior transfers", "By the consumer's failure to object within ten days of the payee's first request"],
+            correctIndex: 0,
+            explanation: "Regulation E says such transfers may be authorized only by a writing signed or similarly authenticated by the consumer.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "How far ahead must a consumer notify the institution to stop a preauthorized transfer?",
+            options: ["At least three business days before", "At least ten days before the scheduled date, matching the varying-amount notice period", "At least fourteen days before, matching the written-confirmation window in the rule", "At any time before the transfer settles, however close to the scheduled date that is"],
+            correctIndex: 0,
+            explanation: "The consumer may notify the institution orally or in writing at least three business days before the scheduled date of the transfer.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "May a stop-payment notice under that rule be given orally?",
+            options: ["Yes", "No, the rule requires a signed writing exactly as the original authorization does", "Only if the consumer has previously registered a telephone number with the institution", "Only if the transfer is larger than the amount stated in the original authorization"],
+            correctIndex: 0,
+            explanation: "Notice may be oral or in writing, though the institution may then require written confirmation within fourteen days.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "Within how long may an institution require written confirmation of an oral stop-payment notice?",
+            options: ["Fourteen days", "Three business days, the same period as the notice itself must be given in", "Thirty calendar days from the date the transfer was scheduled to occur", "Ten days, the same period as the notice of a varying amount requires"],
+            correctIndex: 0,
+            explanation: "The institution may require written confirmation within fourteen days of an oral notice, and must inform the consumer of the requirement.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "What must an institution do if it intends to require written confirmation?",
+            options: ["Tell the consumer of the requirement", "Obtain the consumer's agreement in writing at the time the account is opened", "File a copy of the oral notice with the payee within two business days", "Suspend the transfer until the written confirmation has actually been received"],
+            correctIndex: 0,
+            explanation: "The rule conditions the requirement on the institution informing the consumer of it and saying where the confirmation should be sent.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "How much advance written notice is owed when a preauthorized transfer will vary in amount?",
+            options: ["At least ten days", "At least three business days, matching the stop-payment notice period in the same rule", "At least fourteen days, matching the written-confirmation period in the same rule", "At least one full statement cycle before the transfer is scheduled to occur"],
+            correctIndex: 0,
+            explanation: "Written notice of the amount and date must be sent at least ten days before the scheduled date of transfer.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "Who owes the varying-amount notice?",
+            options: ["The payee or the institution", "The consumer, who must inform the institution of any expected change in amount", "The Federal Reserve, which distributes the notice through the clearing system", "Only the institution, since the payee has no direct relationship with the consumer"],
+            correctIndex: 0,
+            explanation: "The rule says the designated payee or the financial institution shall send the consumer written notice.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "What option may an institution offer instead of a notice for every varying transfer?",
+            options: ["Notice only outside a specified range", "Notice only for transfers that exceed the minimum availability amount in Regulation CC", "Notice only once each calendar quarter summarising the transfers in that quarter", "Notice only when the consumer requests it in writing before the scheduled date"],
+            correctIndex: 0,
+            explanation: "The consumer may elect to receive notice only when a transfer falls outside a specified range, or differs from the most recent one by more than an agreed amount.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "Why does the lesson say the three-business-day right must be computed rather than estimated?",
+            options: ["Business days exclude weekends and named dates", "Because the institution may extend the period by one day at its own discretion", "Because the count runs from the date the payee sends the file rather than the transfer date", "Because different states count business days differently under their own statutes"],
+            correctIndex: 0,
+            explanation: "A right measured in business days changes with the calendar, so a transfer scheduled near a weekend or an excluded date needs the arithmetic done.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "What does this lesson say each of the three Regulation E rules converts a worry into?",
+            options: ["A date", "A dollar figure that appears on the next periodic statement the institution sends", "A complaint that may be filed with the institution's primary federal supervisor", "A contractual term that the consumer may renegotiate with the payee directly"],
+            correctIndex: 0,
+            explanation: "Can I stop it becomes is today at least three business days before the scheduled date, and a date can be checked against a calendar.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "What boundary does the stop-payment lesson state plainly?",
+            options: ["These rules cover electronic transfers", "These rules cover only transfers larger than the minimum availability amount", "These rules cover only accounts opened within the preceding thirty calendar days", "These rules cover only transfers between accounts at two different institutions"],
+            correctIndex: 0,
+            explanation: "A paper check is stopped under different law, and mistaking which rule governs which instrument is the commonest way a real right turns out not to apply.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "Which pair of ideas from earlier in the course meet in the three-business-day rule?",
+            options: ["Counting business days and a consumer right", "The availability schedule and the six exceptions that can extend a hold", "The cut-off hour and the deposit-timing rule for a night depository", "The interest-accrual clock and the definition of a nonproprietary machine"],
+            correctIndex: 0,
+            explanation: "Section 1 taught how business days are counted, and this rule is a right measured in them.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "Which statement about the two halves of this course is accurate?",
+            options: ["Money in has one schedule and money out has another", "Both directions are governed by Regulation CC, which covers deposits and withdrawals", "Both directions are governed by state commercial law rather than by federal rules", "Money out is governed by a federal schedule and money in by state commercial law"],
+            correctIndex: 0,
+            explanation: "Money coming in has an availability date set by a federal schedule; money going out has authorisation, posting and settlement dates, only one of which the commercial code addresses.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "In the worked example, what is fixed regardless of posting order?",
+            options: ["The closing balance", "The number of items charged against an insufficient balance during the day", "Which of the four payments the bank chooses to return unpaid to the payee", "Whether the account qualifies for the repeated-overdraft exception in future"],
+            correctIndex: 0,
+            explanation: "The four payments total more than the balance, so the day ends short by the same amount however they are sequenced.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "How does this section describe the direction Article 4 points, compared with Regulation CC?",
+            options: ["The other way", "The same way, since both set a maximum period and require a written notice", "Toward the customer, since the commercial code fixes a protective sequence", "Toward the Federal Reserve, which sets posting order for every member bank"],
+            correctIndex: 0,
+            explanation: "Regulation CC is a federal schedule with exceptions, notices and a remedy. Article 4's posting-order provision is a permission with none of those attached.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "A payment is authorised on a Friday and charged to the account on the following Monday. What is the Monday event called?",
+            options: ["Posting", "Settlement, because the money has by then moved between the two institutions", "Authorisation, because the reservation against the balance is renewed each day", "Availability, because the funds become usable to the payee on that date"],
+            correctIndex: 0,
+            explanation: "Posting is the bank charging the item to the account, which may be days after the authorisation and before final settlement.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "Which two terms does the lesson say are defined in your own account agreement and are not the same as each other?",
+            options: ["Available balance and ledger balance", "Business day and banking day, which Regulation CC defines rather than the bank", "Posting and settlement, which the commercial code defines for every institution", "Item and instrument, which Article 4 defines identically across every state"],
+            correctIndex: 0,
+            explanation: "The app on a phone shows one of them, and the federal definition of available for withdrawal explicitly refers back to the bank's own agreement or policies.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "What is the gap this course is about, stated in terms of the three moments?",
+            options: ["Availability on one side, posting on the other", "Authorisation on one side and settlement on the other, within the same transaction", "The interval between the statement closing date and the payment due date", "The interval between the cut-off hour and the opening of the next banking day"],
+            correctIndex: 0,
+            explanation: "Both are knowable in advance, which is what makes the gap something a person can map rather than something that simply happens to them.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "Which section of Regulation E carries the preauthorized transfer rules?",
+            options: ["Section 1005.10", "Section 1005.17, which governs the overdraft service opt-in for one-time debit transactions", "Section 1005.18, which governs disclosures for prepaid accounts before acquisition", "Section 1005.11, which governs the resolution of errors reported by a consumer"],
+            correctIndex: 0,
+            explanation: "12 CFR 1005.10 covers both preauthorized transfers to and from a consumer's account.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "Which rule requires overdraft and returned-item fee totals to be shown on a periodic statement?",
+            options: ["Regulation DD, at 12 CFR 1030.11", "Regulation CC, at 12 CFR 229.16, which requires the availability policy disclosure", "Regulation E, at 12 CFR 1005.10, which governs preauthorized transfers to an account", "Article 4 of the Uniform Commercial Code, as enacted in each individual state"],
+            correctIndex: 0,
+            explanation: "The rule requires separate totals using the term Total Overdraft Fees, and a total for returned items, for the statement period and calendar year to date.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "A consumer wants to stop a preauthorized transfer scheduled for a Monday that is not an excluded date. By which day must notice be given, counting only business days?",
+            options: ["The preceding Wednesday", "The preceding Friday, because Saturday and Sunday count toward the three-day period", "The preceding Thursday, because the day of the transfer itself counts as one day", "The same Monday, provided the notice is given before the institution's cut-off hour"],
+            correctIndex: 0,
+            explanation: "Thursday, Friday and Monday are not three intervening business days, so notice by Wednesday is what the arithmetic gives when no excluded date intervenes.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "What kind of rule is the varying-amount notice measured in?",
+            options: ["Days, not business days", "Business days, counted the same way as the stop-payment period in the same section", "Banking days, counted from the last day the institution was open to the public", "Statement cycles, counted from the closing date printed on the periodic statement"],
+            correctIndex: 0,
+            explanation: "The stop-payment right is three business days and the varying-amount notice is ten days, so the two are counted differently and should not be conflated.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "What does the phrase \"signed or similarly authenticated\" in the authorization rule allow for?",
+            options: ["A form of writing beyond ink on paper", "An oral agreement recorded by the payee and retained for the life of the arrangement", "A course of dealing established by three or more prior transfers of the same amount", "An authorization given by anyone with access to the consumer's account credentials"],
+            correctIndex: 0,
+            explanation: "The rule still requires a writing, but it does not confine authentication to a handwritten signature.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "How does the lesson describe a balance figure?",
+            options: ["An answer to a question", "A single authoritative number that every party to a payment sees identically", "A projection of what the account will hold once every pending item has settled", "A figure the bank must recalculate whenever a customer requests it in writing"],
+            correctIndex: 0,
+            explanation: "Money you may spend now, money charged so far, and money finally moved are three different questions with three different answers.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "Which of these does the commercial code's posting-order provision NOT come with?",
+            options: ["A written notice to the customer", "A permission for the bank to charge items in the sequence it finds convenient", "A companion subsection about when a stop-payment order arrives too late", "A place in state law rather than in the federal availability regulation"],
+            correctIndex: 0,
+            explanation: "Unlike an exception hold under Regulation CC, a sequencing decision carries no notice requirement and no stated reason.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "What does the course say a person should rely on rather than a general claim about posting order?",
+            options: ["Their own statement", "A published ranking of institutions by the number of overdraft fees they charge", "A supervisory report describing the practices examiners have observed recently", "An estimate produced by applying the largest-first sequence to a typical month"],
+            correctIndex: 0,
+            explanation: "The arithmetic shows what the permission makes possible; what happened on a particular account is a matter of that account's record.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "Which of these is the correct order of the three moments as they usually occur?",
+            options: ["Authorisation, posting, settlement", "Settlement, authorisation, posting, because funds must move before an item can be charged", "Posting, authorisation, settlement, because the bank charges the item before approving it", "Authorisation, settlement, posting, because the account is charged only after funds move"],
+            correctIndex: 0,
+            explanation: "A payment can be authorised on one day, posted on another and settled later still, each recorded on a different record.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "In Regulation CC's definition, which of these is named as a use that available funds must support?",
+            options: ["Certification of checks drawn on the account", "Purchase of a certificate of deposit at the same institution on the same banking day", "Transfer to an account at another institution by a preauthorized recurring debit", "Payment of a fee assessed by the bank against the account for a returned item"],
+            correctIndex: 0,
+            explanation: "The definition names payment of checks, certification of checks, electronic payments, withdrawals by cash, and transfers between accounts.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "What makes the three-business-day stop-payment right a timing rule rather than only a consumer right?",
+            options: ["Its operation depends entirely on a date", "It applies only to transfers that recur on a fixed date each calendar month", "It may be exercised only during the institution's posted business hours", "It expires three business days after the transfer has already been charged"],
+            correctIndex: 0,
+            explanation: "Whether the right is available at all is decided by counting, which is why the course places it beside the availability schedule rather than in a rights chapter.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "Why does the course teach the preauthorized-credit notice rule in a lesson about money leaving?",
+            options: ["Arrival is otherwise invisible", "Because the rule governs the order in which recurring credits are posted to an account", "Because the same three-business-day period applies to credits and to debits alike", "Because a credit that fails to arrive is treated as a debit under Regulation E"],
+            correctIndex: 0,
+            explanation: "Knowing the state of an account requires knowing what has arrived, and the rule exists precisely because that arrival is not otherwise announced.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "Which body of law would govern stopping a paper check you wrote?",
+            options: ["Not Regulation E", "Regulation E, which covers every instruction a consumer gives to stop a payment", "Regulation CC, which governs the collection of checks between banks", "Regulation DD, which governs the disclosure of fees on periodic statements"],
+            correctIndex: 0,
+            explanation: "Regulation E's stop-payment rule is about preauthorized electronic fund transfers. A paper check is stopped under different law.",
+            sourceLessonSlug: "the-stop-payment-clock",
+          },
+          {
+            prompt: "What does the lesson suggest you should notice about your own institution's choice among the three credit-notice options?",
+            options: ["That it was a choice", "That the institution must obtain the consumer's written consent before selecting one", "That the institution must use the same option for every account it holds nationally", "That the option may be changed only at the start of a new calendar year"],
+            correctIndex: 0,
+            explanation: "The rule offers three ways of satisfying the same duty, and which one a bank picked determines whether anyone tells you a credit failed to arrive.",
+            sourceLessonSlug: "authorized-posted-settled",
+          },
+          {
+            prompt: "A bank charges four items on one day and two of them meet an insufficient balance. What does the course say this tells you on its own?",
+            options: ["Very little without the order", "That the bank used the largest-first sequence when it charged the day's items", "That the account holder authorised more payments than the balance could support", "That the availability schedule delayed a deposit that should have been credited"],
+            correctIndex: 0,
+            explanation: "The count depends on sequence as well as on the payments themselves, so the number is only interpretable once the order is known.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "Which of these does the course treat as the durable layer in this section?",
+            options: ["The statute and the regulation", "The supervisory expectations that examiners apply to institutions during examinations", "The practices that most large institutions follow when sequencing a day's items", "The published guidance that agencies issue about overdraft programmes generally"],
+            correctIndex: 0,
+            explanation: "The course cites the commercial code and the federal regulations, and dates anything it says about a body's current footing.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "What is the relationship between the total charged to an account in a day and the posting order?",
+            options: ["The total is unchanged by the order", "The total rises when the largest item is charged first because more items are short", "The total falls when the smallest item is charged first because fewer items are short", "The total depends on whether the bank charges deposits before withdrawals"],
+            correctIndex: 0,
+            explanation: "Order changes how many items meet an insufficient balance. It does not change the sum of the payments themselves.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "Which of these is the clearest statement of what this section adds to Section 2?",
+            options: ["Amount is not the only variable", "Deposits and withdrawals are governed by the same federal availability schedule", "The exceptions in Regulation CC apply equally to items charged against an account", "The cut-off hour determines the sequence in which a day's items are charged"],
+            correctIndex: 0,
+            explanation: "Section 2 was about when funds arrive. This section shows that on the way out, sequence matters as much as sum.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "What does Article 4 of the Uniform Commercial Code govern?",
+            options: ["Bank deposits and collections", "The disclosure of fees on the periodic statement a bank sends its customers", "The insurance of deposits held at a federally insured depository institution", "The order in which a consumer must pay competing creditors from one account"],
+            correctIndex: 0,
+            explanation: "Its posting-order provision sits inside that subject, which is why the rule is state commercial law rather than a federal consumer regulation.",
+            sourceLessonSlug: "any-order-convenient",
+          },
+          {
+            prompt: "Which of these is the safest summary of what a stop-payment right requires you to know?",
+            options: ["The scheduled date and today's date", "The amount of the transfer and the identity of the originating institution", "The account agreement's definition of available balance and ledger balance", "The cut-off hour the institution has set for receiving deposits at a branch"],
+            correctIndex: 0,
+            explanation: "The right turns on whether today is at least three business days before the scheduled date, which is a calculation from two dates.",
+            sourceLessonSlug: "the-stop-payment-clock",
           },
         ],
       },
