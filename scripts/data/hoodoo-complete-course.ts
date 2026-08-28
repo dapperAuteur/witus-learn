@@ -60,10 +60,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal State the two kinds of sources this course uses and how it treats each; then name the single most important distinction to keep straight (hint: it is not "Voodoo"). ||| Hoodoo is an African American folk practice (conjure, rootwork). Vodou (Haitian) and Vodun (West African) are organized religions with deities, priesthoods, and liturgy. They are related but distinct. Scholarship (historians, anthropologists, folklorists, and the Hyatt field record) carries the factual and historical claims. Practitioner literature shows what practice looks like from inside and is cited as practitioner perspective, not settled fact.
 
 ## Sources
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
-- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
-- Anderson, J. E. (2005). *Conjure in African American society*. Louisiana State University Press.
-- Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. (Field documentation; reference.)`,
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315
+- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press. https://doi.org/10.5406/illinois/9780252037290.001.0001
+- Anderson, J. E. (2005). *Conjure in African American society*. Louisiana State University Press. https://lccn.loc.gov/2005004333
+- Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. https://lccn.loc.gov/71012434 (Field documentation; reference.)`,
     },
 
     // ── Section 2: African roots (deeper) ────────────────────────────────
@@ -91,10 +91,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal Define *nkisi/minkisi* and explain, in two or three sentences, how it relates to the mojo bag. Then name one West African contribution distinct from the Kongo thread. ||| A nkisi is a Kongo consecrated container (a bag, bundle, or figure) packed with medicines (bilongo) and animated to heal, protect, judge, or bind. The Hoodoo mojo bag is widely read as its descendant.
 
 ## Sources
-- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
-- Raboteau, A. J. (1978). *Slave religion: The "invisible institution" in the antebellum South*. Oxford University Press.
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
-- Anderson, J. E. (2005). *Conjure in African American society*. Louisiana State University Press.`,
+- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press. https://doi.org/10.5406/illinois/9780252037290.001.0001
+- Raboteau, A. J. (1978). *Slave religion: The "invisible institution" in the antebellum South*. Oxford University Press. https://lccn.loc.gov/78007275
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315
+- Anderson, J. E. (2005). *Conjure in African American society*. Louisiana State University Press. https://lccn.loc.gov/2005004333`,
       recallContent: [
         {
           prompt:
@@ -134,9 +134,9 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal List three roles the conjure/root doctor filled, and give two distinct ways conjure connected to resistance. Then note the "complicated figure" point in one sentence. ||| Often healer, herbalist, midwife, counselor, and spiritual specialist at once. With little access to white medicine, communities relied on this figure for births, illness, injury, and trouble, which gave real authority. Enslavers feared poisoning and conjure, which the enslaved could sometimes turn to advantage; belief in spiritual protection could embolden revolt (as with Gullah Jack in the 1822 Denmark Vesey conspiracy); and simply keeping an African-derived spiritual life alive was itself defiance.
 
 ## Sources
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
-- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
-- Anderson, J. E. (2005). *Conjure in African American society*. Louisiana State University Press.`,
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315
+- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press. https://doi.org/10.5406/illinois/9780252037290.001.0001
+- Anderson, J. E. (2005). *Conjure in African American society*. Louisiana State University Press. https://lccn.loc.gov/2005004333`,
       recallContent: [
         {
           prompt:
@@ -173,9 +173,9 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal Explain how practitioners historically reconciled Hoodoo with Christianity, why Moses is read as a "conjurer," and how you'd treat a book's Psalm-by-Psalm correspondence table (as fact, or as one lineage's system?). ||| Hoodoo was a companion to the church, not a rival. The same person might worship on Sunday and consult a root doctor on Monday and see no contradiction, since both reached for spiritual power to meet life's troubles. As one lineage's system, not fixed doctrine. Scripture in practice is real and old, but the detailed verse-by-verse tables are later systematizations that vary from book to book, so read them as practitioner perspective.
 
 ## Sources
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
-- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
-- Yronwode, C. (2002). *Hoodoo herb and root magic* / *Hoodoo rootwork correspondence course*. Lucky Mojo Curio Co. (Practitioner perspective.)`,
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315
+- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press. https://doi.org/10.5406/illinois/9780252037290.001.0001
+- Yronwode, C. (2002). *Hoodoo herb and root magic* / *Hoodoo rootwork correspondence course*. Lucky Mojo Curio Co. https://www.luckymojo.com/hoodooherbmagic.html and https://www.luckymojo.com/curriculum.html (Practitioner perspective.)`,
       recallContent: [
         {
           prompt:
@@ -216,11 +216,11 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal Name three roots/herbs with their traditional associations, define a "personal concern," and state two categories of item on this list that carry a safety or legal flag (and why). ||| A personal concern is something of the target such as hair, nail parings, a name on paper, a photograph, or a footprint. The belief is that a connection to the person carries the working, which anthropologists call contagious or sympathetic magic.
 
 ## Sources
-- Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. (Public domain.)
-- Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. (Field documentation; reference.)
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
-- Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press.
-- Yronwode, C. (2002). *Hoodoo herb and root magic*. Lucky Mojo Curio Co. (Practitioner perspective.)`,
+- Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. https://archive.org/details/folkbeliefsofsou00puck (Public domain.)
+- Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. https://lccn.loc.gov/71012434 (Field documentation; reference.)
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315
+- Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press. https://lccn.loc.gov/00009886
+- Yronwode, C. (2002). *Hoodoo herb and root magic*. Lucky Mojo Curio Co. https://www.luckymojo.com/hoodooherbmagic.html (Practitioner perspective.)`,
       recallContent: [
         {
           prompt:
@@ -263,11 +263,11 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal Match each to its aim: mojo hand, honey jar, uncrossing, red-brick-dust wash, foot-track work, crossroads. Then identify which two families this lesson treats as **history/ethics only**, and why. ||| It sets a person's name-paper in honey or sugar with a candle to sweeten how someone regards you, for love, family peace, a boss, or a court. The logic is sympathetic: as this is sweet, so let their feeling be sweet. Baths, washes, smoke, and egg cleansings remove a crossed condition, bad luck, or unnatural illness. Its aim is relief, which is why it is the least controversial. Note that unnatural illness is a cultural category, not a medical diagnosis.
 
 ## Sources
-- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
-- Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. (Field documentation; reference.)
-- Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. (Public domain.)
-- Yronwode, C. (2002). *Hoodoo herb and root magic*. Lucky Mojo Curio Co. (Practitioner perspective.)
-- Moise, H. S. (2018). *Working conjure: A guide to Hoodoo folk magic*. Weiser. (Practitioner perspective.)`,
+- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press. https://doi.org/10.5406/illinois/9780252037290.001.0001
+- Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. https://lccn.loc.gov/71012434 (Field documentation; reference.)
+- Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. https://archive.org/details/folkbeliefsofsou00puck (Public domain.)
+- Yronwode, C. (2002). *Hoodoo herb and root magic*. Lucky Mojo Curio Co. https://www.luckymojo.com/hoodooherbmagic.html (Practitioner perspective.)
+- Moise, H. S. (2018). *Working conjure: A guide to Hoodoo folk magic*. Weiser. https://redwheelweiser.com/book/working-conjure-9781578636273/ (Practitioner perspective.)`,
       recallContent: [
         {
           prompt:
@@ -306,10 +306,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal Name three divination methods used in conjure, explain what "reading before acting" accomplishes, and state the flag about "natural vs. unnatural" trouble in one sentence. ||| Divination reads the situation and the unseen before any work, setting the whole working. A central question is whether the trouble is natural (needing a doctor, lawyer, or conversation) or unnatural (a crossed condition).
 
 ## Sources
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
-- Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. (Public domain.)
-- Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. (Field documentation; reference.)
-- Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press.`,
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315
+- Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. https://archive.org/details/folkbeliefsofsou00puck (Public domain.)
+- Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. https://lccn.loc.gov/71012434 (Field documentation; reference.)
+- Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press. https://lccn.loc.gov/00009886`,
       recallContent: [
         {
           prompt:
@@ -349,9 +349,9 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal Contrast the Low Country/Gullah and the Delta as Hoodoo homelands, and explain what the Great Migration did to the tradition. Then state Hazzard-Donald's "old system vs. marketeered" distinction in one sentence. ||| Relatively isolated Sea Island communities, descended largely from rice-culture West and Central Africans, preserved unusually strong African retentions in language (Gullah creole), foodways, and spiritual life. It was home to legendary root doctors like Dr. Buzzard. It carried Hoodoo into cities like Chicago, Detroit, and New York, where it met the cash economy and mail order (fueling spiritual-supply shops and catalogs), gave rise to Spiritual churches blending conjure with Catholic and Protestant elements, and took on urban concerns.
 
 ## Sources
-- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
-- Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press.
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.`,
+- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press. https://doi.org/10.5406/illinois/9780252037290.001.0001
+- Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press. https://lccn.loc.gov/00009886
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315`,
       recallContent: [
         {
           prompt:
@@ -386,10 +386,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal Summarize Long's finding about who ran the spiritual-supply business, define "appropriation" in this context, and name the live practitioner debate (who may practice/teach) without claiming to resolve it. ||| That a folk practice met mass production, and that many manufacturers and shop owners were not part of the tradition, often white or immigrant businessmen profiting from a Black practice. Commercialization both preserved knowledge and diluted it. Practitioners argue openly over who may practice and teach, over initiatory versus open transmission, and over commercialization. Voices like Starr Casas emphasize family and African American lineage and the Christian core, while teachers like Sherry Shone and Denise Alvarado frame a more open approach.
 
 ## Sources
-- Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press.
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
-- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
-- Casas, S. (2017). *Old style conjure: Hoodoo, rootwork, & folk magic*. Weiser. (Practitioner perspective.)`,
+- Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press. https://lccn.loc.gov/00009886
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315
+- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press. https://doi.org/10.5406/illinois/9780252037290.001.0001
+- Casas, S. (2017). *Old style conjure: Hoodoo, rootwork, & folk magic*. Weiser. https://lccn.loc.gov/2017023662 (Practitioner perspective.)`,
       recallContent: [
         {
           prompt:
@@ -432,11 +432,11 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal Give two reasons the Hyatt corpus must be read critically, explain why Hurston's vantage differs from Hyatt's, and state the two questions to ask of every claim. ||| A white outsider paid Black informants for their knowledge in the Jim Crow South, which shaped what was shared, withheld, or exaggerated, and how it was framed. It also captured contradictory practices, so it shows the tradition's breadth and variety, not a single correct doctrine. First, who is speaking and with what authority: a historian documenting what people did, or a practitioner teaching what they do? Second, is this fact, interpretation, or one lineage's system?
 
 ## Sources
-- Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. (Field documentation; reference.)
-- Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. (Public domain.)
-- Hurston, Z. N. (1935). *Mules and men*. J. B. Lippincott. (Ethnographic account.)
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
-- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.`,
+- Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. https://lccn.loc.gov/71012434 (Field documentation; reference.)
+- Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. https://archive.org/details/folkbeliefsofsou00puck (Public domain.)
+- Hurston, Z. N. (1935). *Mules and men*. J. B. Lippincott. https://lccn.loc.gov/35018525 (Ethnographic account.)
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315
+- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press. https://doi.org/10.5406/illinois/9780252037290.001.0001`,
       recallContent: [
         {
           prompt:
@@ -471,9 +471,9 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal Give one specific example of Hoodoo in the blues (song + the conjure item it names) and two writers who documented or drew on the tradition. Then note how the crossroads legend both uses and distorts the older Kongo idea. ||| Muddy Waters' 'Hoochie Coochie Man' name-checks the mojo, the John the Conqueror root, and the seventh son. The Robert Johnson crossroads legend draws on the Hoodoo (ultimately Kongo) idea of the crossroads as a place of spiritual power, but distorts it by adding a Christian devil the older tradition did not require. Zora Neale Hurston (Mules and Men) documented it firsthand and wove it through her fiction. Charles Chesnutt (The Conjure Woman), Ishmael Reed (Mumbo Jumbo and 'Neo-HooDoo'), Toni Morrison, and Gloria Naylor (Mama Day) drew on it.
 
 ## Sources
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
-- Hurston, Z. N. (1935). *Mules and men*. J. B. Lippincott. (Ethnographic account.)
-- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.`,
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315
+- Hurston, Z. N. (1935). *Mules and men*. J. B. Lippincott. https://lccn.loc.gov/35018525 (Ethnographic account.)
+- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press. https://doi.org/10.5406/illinois/9780252037290.001.0001`,
       recallContent: [
         {
           prompt:
@@ -514,10 +514,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 :::reveal State the first ethic (origin/credit), the autonomy principle, and one legal-or-safety flag; then explain, in a sentence, why "Hoodoo is not Voodoo" is an **ethical** point and not just a factual one. ||| The first ethic is to honor the tradition's African American origins and credit them rather than appropriate (the respectful posture is to listen and credit). The autonomy principle is that the tradition's own communities and practitioners have the right to define and transmit their practice. A legal-or-safety flag: some materials (certain herbs and roots) or acts framed as harming another carry real health or legal risk. "Hoodoo is not Voodoo" is ethical, not just factual, because conflating them erases a distinct people's history and dignity and spreads a harmful stereotype.
 
 ## Sources
-- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
-- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
-- Anderson, J. E. (2005). *Conjure in African American society*. Louisiana State University Press.
-- Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press.`,
+- Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press. https://lccn.loc.gov/2002151315
+- Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press. https://doi.org/10.5406/illinois/9780252037290.001.0001
+- Anderson, J. E. (2005). *Conjure in African American society*. Louisiana State University Press. https://lccn.loc.gov/2005004333
+- Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press. https://lccn.loc.gov/00009886`,
       recallContent: [
         {
           prompt:
