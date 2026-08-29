@@ -97,7 +97,7 @@ export const STAGED_COURSES: string[] = [
   "coffee",
   "faa-part-107",
   "green-book-how-to-read-a-route",
-  "harvard-ed-l-d",
+  "education-leadership-doctoral-rigor",
   "how-to-create-a-course",
   "langgraph-triage-agent",
   "nasm-cpt",

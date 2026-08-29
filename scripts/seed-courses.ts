@@ -312,7 +312,7 @@ async function main() {
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
-    slug: "harvard-ed-l-d",
+    slug: "education-leadership-doctoral-rigor",
     course: EDUCATION_LEADER_COURSE,
     category: "Education Leadership",
     navigationMode: "linear",
