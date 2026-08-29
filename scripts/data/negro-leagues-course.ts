@@ -2036,5 +2036,94 @@ A reader finishes your piece knowing something specific about a business they ha
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 7 · Outside the league
+    //
+    // Added after the course shipped, from plans/future-courses/2026-08-28-17-hbcus-and-the-negro-
+    // leagues.md. BAM asked four questions the original six sections did not answer: where the
+    // players came from, whether clubs played Black college teams, whether they played abroad, and
+    // whether they played major leaguers. Half of the answer is a NEGATIVE finding, which is why the
+    // section belongs in this course rather than in a new one: the popular "HBCUs were a farm
+    // system" story has no located document behind its three mechanism claims, and saying so is the
+    // same move `nl-abcs` already makes about the Walker company.
+    //
+    // NOTHING HERE MAY MAKE TWO SHIPPED DISTRACTORS READ AS TRUE, and neither was edited:
+    //   * "Because Black colleges absorbed all the available talent" (nl-final, why football built
+    //     no league) stays FALSE: the sourced reason is small gates, no white exhibitions, integrated
+    //     minors and no control of venues.
+    //   * "College conferences in all three, run out of the HBCUs" (nl-quiz-the-bill, the parallel
+    //     institution in golf, tennis and boxing) stays FALSE: those were the UGA, the ATA and a
+    //     colored championship in boxing.
+    // The findings below make both MORE clearly wrong, not less: Morgan State fielded no baseball
+    // team at all, and the Black college's revenue and identity sport was football.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "nl-college-and-club",
+      title: "26 · The college and the club",
+      section: "Section 7 · Outside the league",
+      body: `Six sections in, you have read this league as a firm. This one asks four questions that all sit outside the league table: where the players came from, whether the clubs ever played Black college teams, whether there was money outside the United States, and what happened when they played major leaguers. **Two of the four answers are negative findings, and a negative finding is still an answer.**
+
+**The claim to test first.** You will read in several places that historically Black colleges were a de facto farm system for the Negro Leagues: that clubs recruited on the campuses, held spring training there, and played exhibition games against college teams. **Take that apart, because one part of this subject is well documented and the other produced no document at all.**
+
+**Start with the correction that unlocks the whole misreading.** In this period a Black college was frequently a K-through-college institution, and in the segregated South it was often the only place a Black child could get a SECONDARY education. Bill Foster filled out a document for the Hall of Fame recording that he attended Alcorn for **"four years in elementary school, four years in high school, and four years in college"** (Kern, 2019). He made the college baseball team at **13**. Buck O'Neil went to **Edward Waters College** in Jacksonville because Sarasota High School would not admit him; his grandmother's words in the SABR biography are "John, you can't go to Sarasota High School. Sarasota High School is not for black kids." He left with **a high school diploma and two years of college** (LeMoine, n.d.). **So "he went to an HBCU" is, in a large share of these biographies, a fact about Jim Crow schooling rather than a fact about baseball recruiting.**
+
+**Four pairs that meet this course's standard**, which is that one named source records the college and the club in the same document.
+- **Bill Foster**, Alcorn A&M, **BS in agricultural education in 1933**, ten years into his professional career, and **dean of men and baseball coach at Alcorn from 1960** until his death on the campus on **16 September 1978** (Kern, 2019). **The one complete round trip in the whole set.**
+- **Hilton Smith**, enrolled at **Prairie View A&M** after high school and pitched for the university team, **left after two years** for professional ball, reached the Kansas City Monarchs in **1937** (National Baseball Hall of Fame, n.d.).
+- **Joe Black**, a **partial FOOTBALL scholarship** at Morgan State College from **September 1942**, graduated in **1950 at 26** in psychology and physical education (Dreier, n.d.).
+- **Buck O'Neil**, Edward Waters, above.
+
+**Now read the Joe Black case again, because it is the best documented of the four and it cuts against the recruiting claim outright.** The same biography states that **"Although Morgan State did not have a baseball team, Black was still a three-sport athlete in college"**, and that Elite Giants business manager **Vernon Green** signed him after overhearing him boast that he was as good as the players on the field, then arranged a tryout (Dreier, n.d.). **A leading HBCU in a Negro League city fielded no baseball team, and the club found its pitcher in the crowd.** That does not disprove campus recruiting. It means campus recruiting cannot be asserted.
+
+**What IS documented is property, and property is this course's subject.** The New Georgia Encyclopedia: "When at home the Black Crackers played at Ponce de Leon Ballpark, home of the Atlanta Crackers, while the white team was away on road trips. **Other times they played at Morehouse College and Morris Brown College**" (Darnell, n.d.). Heaphy supplies the landlord's arithmetic from the other side: Crackers general manager **Frank Reynolds** "realized that he could lease the ballpark to the black ballclub when the Crackers went on the road and thereby increase the Crackers' profits," and she records that "many of the early ball players joined the club from the local colleges, including Morris Brown and Morehouse," naming Gabby Kemp, Red Hadley and Don Reeves (Heaphy, 2010). **Lesson 9 taught that a Black club usually rented from the white club that had refused it the locker rooms. Atlanta supplies the second landlord: when the white park was unavailable, the fallback was a Black college.** And notice what two of those three men played at Morris Brown. **Football.**
+
+**The sharpest evidence in this lesson is about a rule.** Two Hall of Famers played professionally under false names. SABR records that **Larry Doby** "began playing second base under the assumed name of Larry Walker in the Negro Leagues for the Newark Eagles" (McMurray, n.d.), and that **Monte Irvin** "played under the assumed name of Jimmy Nelson to preserve his amateur status, allowing him to continue to play high-school and college ball" (Hogan, n.d.). **Irvin's biography states the reason. Doby's records the alias and does not, and this course will not supply a motive its source withholds.** **A pseudonym is the signature of a rule being broken.** So the absence of documented games between clubs and college teams may be a FINDING rather than a gap: a man playing under his own name in a scheduled game is visible to his conference in a way a summer alias is not.
+
+**What that reasoning still needs is one specific document.** Oriard's history of the amateur code records that "regular students who earned expense money by playing summer baseball were deemed to violate the amateur code," and that "Playing summer baseball for expense money could get you banned from college football" (Oriard, 2012). **But Oriard is describing the NCAA and the white colleges, and Black colleges were not NCAA members in this period.** The CIAA, founded at Hampton Institute in 1912 and already in this course at lesson 20, wrote its own rules, as did the SIAC and the SWAC. **Their eligibility articles between 1912 and 1950 would settle whether the missing games are a rule or a gap, and this course has not read them.** Until it has, the paragraph above is a hypothesis with good supporting evidence, and it is labelled as one.
+
+**Three things this lesson refuses to state, on exactly the grounds lesson 23 sets out.**
+1. **"About 40 percent of Negro League players were college educated."** That is an estimate by **Bob Kendrick, president of the Negro Leagues Baseball Museum**, reported in *Diverse: Issues In Higher Education*. No published methodology, roster count or study appears with it anywhere, and the comparison usually printed beside it, "less than 5 percent" of white major leaguers, has no source at all. The article returns HTTP 403 to this course's fetching and was **not read here**, so even its wording is second hand. **Same class of figure as the unfootnoted "$100,000 a year" this course already refuses, and it gets the same treatment: name who says it, never print it as a count.**
+2. **Organised campus recruiting.** No scout's report, no club correspondence with a college, and no newspaper account of a signing off a campus was located.
+3. **Spring training on HBCU campuses.** The documented record points somewhere else: **Hot Springs, Arkansas.** The Monarchs trained there in 1927 and 1928, the Memphis Red Sox in 1927, the Homestead Grays in 1930 and 1931, and the Crawfords in 1932 and again in 1935 at Fogel Field, leaving by bus for barnstorming games in Memphis on **13 and 14 April 1935**. **No campus site and no college opponent appears in that account** (Blaeuer, 2020).
+
+**The synthesis, in two sentences you can carry.** The correlation between Negro Leaguers and Black colleges is real and it is documented player by player. **The causal story attached to it, that the colleges fed the leagues, is the part the evidence does not carry**, and where the two games touched they were regulated and often adversarial, which is why men used false names.
+
+:::reveal What does Bill Foster's own Hall of Fame document say about his years at Alcorn, and why does it change how you read every other name on a list like this? ||| That he attended for four years in elementary school, four years in high school and four years in college. In this period a Black college was frequently a K-through-college institution, so "he went to an HBCU" is often a fact about segregated schooling rather than about baseball recruiting.
+
+:::reveal Why is Joe Black the strongest case against organised campus recruiting? ||| Because SABR states Morgan State had no baseball team while he was there, and Elite Giants business manager Vernon Green signed him after overhearing him boasting in the stands, not after seeing him on a campus diamond.
+
+:::reveal What is documented about Black colleges and the Atlanta Black Crackers, and why does it belong in a course about firms? ||| That the club played home games at Morehouse and Morris Brown, renting Ponce de Leon Park only when the white Crackers were on the road. It is a real-estate fact: when the white landlord was unavailable, the fallback landlord was a Black college.
+
+:::reveal What do the assumed names of Larry Doby and Monte Irvin suggest, and what document would settle the argument? ||| That the amateur rule was real enough to evade, so the missing club-versus-college games may be evidence rather than a gap. The CIAA, SIAC and SWAC eligibility articles from 1912 to 1950 would settle whether a Black college conference wrote and enforced that rule.
+
+:::reveal Why does this course refuse the "about 40 percent college educated" figure? ||| Because it is an estimate by the president of the Negro Leagues Baseball Museum with no published methodology, roster count or study named anywhere, and its companion figure for white major leaguers has no source at all. Same class of number as the unfootnoted "$100,000 a year" the course already refuses.
+
+## Vocabulary
+- **Farm system**: an organized pipeline that develops players for a professional club, which is the claim this lesson tests and does not find documented for Black colleges.
+- **Preparatory department**: the elementary and secondary school run inside a college, which is what a great many "attended an HBCU" biographies from this era are describing.
+- **Amateur code**: the rule set that stripped a college athlete's eligibility for taking pay, and the rule the assumed names were evading.
+- **Negative finding**: a documented absence, such as no located game between a Negro League club and a Black college team, reported as a result rather than softened into a suggestion.
+
+## Sources
+Blaeuer, M. (2020, August 1). *Spring training for the 1935 Pittsburgh Crawfords*. Society for American Baseball Research. https://sabr.org/research/article/spring-training-for-the-1935-pittsburgh-crawfords/
+
+Darnell, T. (n.d.). *Atlanta Black Crackers*. New Georgia Encyclopedia. https://www.georgiaencyclopedia.org/articles/sports-outdoor-recreation/atlanta-black-crackers/
+
+Dreier, P. (n.d.). *Joe Black*. SABR BioProject. https://sabr.org/bioproj/person/joe-black/
+
+Heaphy, L. (2010). The Atlanta Black Crackers. *The National Pastime: Baseball in the Peach State*. Society for American Baseball Research. https://sabr.org/journal/article/the-atlanta-black-crackers/
+
+Hogan, L. (n.d.). *Monte Irvin*. SABR BioProject. https://sabr.org/bioproj/person/monte-irvin/
+
+Kern, T. (2019, December 9). *Bill Foster*. SABR BioProject. https://sabr.org/bioproj/person/bill-foster/
+
+LeMoine, B. (n.d.). *Buck O'Neil*. SABR BioProject. https://sabr.org/bioproj/person/buck-oneil/
+
+McMurray, J. (n.d.). *Larry Doby*. SABR BioProject. https://sabr.org/bioproj/person/larry-doby/
+
+National Baseball Hall of Fame. (n.d.). *Hilton Smith*. https://baseballhall.org/hall-of-famers/smith-hilton
+
+Oriard, M. (2012). NCAA academic reform: History, context and challenges. *Journal of Intercollegiate Sport, 5*(1), 4-18. https://journals.ku.edu/jis/article/view/10054`,
+    },
   ],
 };
