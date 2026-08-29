@@ -236,6 +236,7 @@ import { CREDIT_DECISIONS_COURSE } from "./data/credit-decisions-course";
 import { BANKING_AND_THE_UNBANKED_COURSE } from "./data/banking-and-the-unbanked-course";
 import { CASH_FLOW_TIMING_COURSE } from "./data/cash-flow-timing-course";
 import { PREDATORY_PRODUCTS_COURSE } from "./data/predatory-products-course";
+import { HOUSING_DECISIONS_COURSE } from "./data/housing-decisions-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2472,6 +2473,45 @@ async function main() {
       seriesOrder: 4,
       seriesCode: "MONEY",
       seriesPosition: "04",
+    },
+    // MONEY-06 · "Housing: the Lease, the Loan Estimate, and the Map" (Money & Property). Sixth
+    // course in the `personal-money` series ("Your Money, and Who Decides"), from
+    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.9. Tier 0.
+    // NO migration - pnpm seed:courses.
+    //
+    // THE SPINE: a housing decision is a choice between two contracts, and almost every term that
+    // matters is already written on a document somebody is required to give you. The course teaches
+    // the lease, the note, the Loan Estimate, the Closing Disclosure, the appraisal and the recorded
+    // covenant. IT NEVER TELLS ANYONE WHETHER TO RENT OR BUY, and it says so in prose in three
+    // separate lessons rather than only on a landing page.
+    //
+    // THE TWO FEDERAL FORMS ARE THE TEACHABLE OBJECT, exactly as the adverse action notice was for
+    // MONEY-01: the Loan Estimate (12 CFR 1026.37) delivered within three business days of an
+    // "application", which Regulation Z defines as six specific items, and the Closing Disclosure
+    // (12 CFR 1026.38) received at least three business days before consummation, with the good
+    // faith tolerances at 1026.19(e)(3) deciding which quoted costs may move.
+    //
+    // RENTING IS STATE LAW AND THE COURSE REFUSES A NATIONAL RULE. Section 1 teaches the method for
+    // finding the governing statute and demonstrates it on ONE labelled state, Arizona (A.R.S.
+    // 33-1321 and 33-1368), chosen because Section 6 returns to Arizona for the land records.
+    //
+    // THE HISTORY LINKS RATHER THAN RE-NARRATES. `what-they-built`, `the-county-committee` and
+    // `financing-without-access` already carry the exclusion history; this course's own contribution
+    // is the surviving MODERN document, the racially restrictive covenant still sitting in a county
+    // land record, read beside Shelley v. Kraemer (1948), the University of Arizona's Mapping Racist
+    // Covenants project, and the Arizona statute that says what an owner may record to strike one.
+    //
+    // EVERY PRIMARY DOCUMENT WAS FETCHED AND READ ON 2026-08-28. No interest rate is printed, no
+    // current programme figure is asserted, and the arithmetic uses a labelled hypothetical.
+    {
+      slug: "housing-decisions",
+      course: HOUSING_DECISIONS_COURSE,
+      category: "Money & Property",
+      seriesSlug: "personal-money",
+      seriesTitle: "Your Money, and Who Decides",
+      seriesOrder: 6,
+      seriesCode: "MONEY",
+      seriesPosition: "06",
     },
   ]) {
     await seedAuthoredCourse(db, {

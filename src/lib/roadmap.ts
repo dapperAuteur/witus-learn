@@ -1704,6 +1704,67 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   three of which ask for a taxonomy of schemes this course does not survey. **Six research checks
   filed**, four of them on state statutes and federal parts that move.
   Deliberately **not** in \`STAGED_COURSES\` yet.
+- 🔧 **Housing: the Lease, the Loan Estimate, and the Map** (\`content/money-06-housing\`,
+  **Money & Property**, **MONEY-06**; NO migration, **re-run \`pnpm seed:courses\`**). The sixth
+  course in the \`personal-money\` series ("Your Money, and Who Decides"), from
+  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.9. MONEY-01 and
+  MONEY-02 are on main; MONEY-03 and MONEY-04 are being authored in parallel.
+  **The spine: a housing decision is a choice between two contracts, and almost every term that
+  matters is already written on a document somebody is legally required to hand you.** The course
+  **refuses to say whether to rent or to buy**, in prose, in three separate lessons, because that
+  answer depends on a household's income, work, health and expected length of stay. It teaches the
+  comparison and its inputs instead.
+  **"Renting is throwing money away" is taken apart as a conclusion with no arithmetic attached.**
+  Section 4 builds the comparison as a seven-line procedure in which every input is either a
+  document or a stated assumption, counts the transaction costs at BOTH ends (which is what makes
+  the horizon the load-bearing variable rather than the interest rate), and ends on the step that
+  makes the whole thing honest: change one assumption at a time, and if the answer flips you have
+  found a coin toss with a spreadsheet around it.
+  **The anchor is federally mandated paper the learner can hold, exactly as MONEY-01 used the
+  adverse action notice.** Regulation Z defines an "application" as a CLOSED LIST OF SIX items
+  (12 CFR 1026.2(a)(3)(ii)), which is what turns a conversation into a duty: three business days
+  later the Loan Estimate is owed, and it must be out seven business days before consummation. The
+  Closing Disclosure must be RECEIVED, not merely sent, three business days before the consumer is
+  obligated. The disclosed closing costs are a CEILING, and the looser ten percent aggregate
+  standard applies only where the money is not going to the creditor or an affiliate and the
+  consumer could shop, which is a rule about self-dealing wearing the clothes of a rule about
+  estimates. Section 2 first makes the learner run an amortisation schedule BY HAND on a labelled
+  hypothetical rate, so that the form's In 5 Years, APR and Total Interest Percentage boxes land as
+  arithmetic they have already done. **No market interest rate is printed anywhere in the course.**
+  **Renting is taught as state law and no national rule is stated**, per the \`surplus-funds-basics\`
+  posture. Section 1 teaches a four-question method for finding the governing statute and works it
+  on ONE labelled state, Arizona (A.R.S. 33-1321 on deposits, 33-1368 on the five-day notices),
+  chosen so that Section 6 can return to the same state's land records.
+  **The last third is why this course belongs in THIS catalog and could not be lifted from a generic
+  home-buying guide.** Appraising is written into the Fair Housing Act's own definition of a covered
+  transaction at 42 U.S.C. 3605(b)(2), HUD's rule at 24 CFR 100.135(d) reaches the person who USES a
+  valuation they should know is tainted, and 12 CFR 1002.14 gives every applicant a free copy of ALL
+  written valuations promptly on completion. Then the covenant: **Shelley v. Kraemer (3 May 1948)
+  disarmed the covenants without erasing them**, which is exactly why the University of Arizona's
+  **Mapping Racist Covenants** project can still count them across Tucson subdivisions enacted
+  1912-1968, and why Arizona's Uniform Unlawful Restrictions in Land Records Act (A.R.S. 33-533)
+  gives an owner an instrument to strike one from their own parcel. The capstone runs on
+  **12 U.S.C. 2801(a)**, which is not an allegation but a FINDING Congress enacted: that some
+  depository institutions contributed to the decline of certain geographic areas by failing to lend
+  to qualified applicants. \`what-they-built\`, \`the-county-committee\` and
+  \`financing-without-access\` are cross-linked BY NAME in the lessons, and the course links rather
+  than re-narrates their history.
+  **Standards: three more rejections converted, no new framework created.** Texas
+  §113.31(d)(19)(A) and §113.49(c)(4)(A) in FULL (both ask a student to evaluate the costs and
+  benefits of renting against buying), §113.31(d)(19)(B) partial, Illinois SS.9-12.EC.FL.9's
+  mortgage-lending clause filled (a hand-off MONEY-01's own note had written down), and Georgia
+  SSEPF1 added with SSEPF9's element (c) growing from one named statute to three. Every code lands
+  in a framework already on main, which is the collision the previous bundle had to fix by hand.
+  **Two candidates were read and REFUSED** and are recorded in \`notClaimed\`: Texas §113.51's
+  African American Studies standards, which name fair housing inside a "such as" list spanning a
+  much longer arc, and §113.76(c)(6)(G), which was read in the same PDF but belongs to a pass that
+  transcribes that whole course.
+  6 sections, 18 teaching lessons, 6 section quizzes (70/71/76/73/73/78 serving 5) and a
+  46-question final serving 10, for **487 pooled questions**, 54 reveal cards, and **zero findings**
+  from \`pnpm audit:course housing-decisions --spec\`. Every primary document was fetched and read
+  on 2026-08-28. **Six research checks filed**, including one that exists because the 2022 federal
+  appraisal-bias action plan's published host did not resolve: the lesson says so and cites nothing
+  rather than printing a dead link. Deliberately **not** in \`STAGED_COURSES\` yet.
 - 🔧 **Banking, and Who Has No Bank** (\`content/money-02-banking\`, **Money & Property**,
   **MONEY-02**; NO migration, **re-run \`pnpm seed:courses\`**). The second course in a NEW series,
   \`personal-money\` ("Your Money, and Who Decides"), from
