@@ -2125,5 +2125,50 @@ National Baseball Hall of Fame. (n.d.). *Hilton Smith*. https://baseballhall.org
 
 Oriard, M. (2012). NCAA academic reform: History, context and challenges. *Journal of Intercollegiate Sport, 5*(1), 4-18. https://journals.ku.edu/jis/article/view/10054`,
     },
+    {
+      slug: "nl-one-paper-two-leagues",
+      title: "27 · One newspaper, two leagues",
+      section: "Section 7 · Outside the league",
+      body: `Lesson 11 established that the Black press was infrastructure rather than a spectator: four Black sportswriters drafted the 1920 constitution, *Pittsburgh Courier* writer **Rollo Wilson was made league commissioner in 1934**, the second Negro National League was announced in the *Courier*'s year-end 1932 edition by a writer who then became its secretary, and **Cum Posey's father was one of the original investors in the *Courier*** (Bauer, 2022; Goldman, 2021). **Go back and reread that if you need to. This lesson adds the half that would not fit, and it is the half that answers the question this section opened with.**
+
+**In the same years, the same newspaper company was doing the same job for a completely different sport.**
+
+**The college game's authority was a newspaper.** The *Courier* **selected its first Black college football national champion after the 1920 season and its first All-America team in 1925**. The selections were made by the paper's own sportswriters, a roster that over the years included **Wendell Smith, Chester Washington and Bill Nunn**, and they were **carried into major African American newspapers across the country through the Associated Negro Press**. **Each January the *Courier* held a banquet in Pittsburgh to honor the All-America team**, and that annual ceremony **ran until 1979** (College Football Hall of Fame, 2016).
+
+**Now put the two columns beside each other and read what they add up to.** In the same decades, one Black-owned newspaper company **named the college game's national champion and its All-Americans**, and **supplied the professional league its commissioner, printed its founding announcement, and counted a founding owner's father among the paper's own investors.** There was no NCAA that would admit Black colleges and no commissioner's office with money behind it. **So the closest thing either game had to a governing body was a newspaper, and it was the same newspaper.**
+
+**Read that as a business, because that is what this course does.** A national championship is a **product**. It sells papers in December and January, it fills a banquet hall in Pittsburgh every year for more than fifty years, and it makes the paper the institution both games have to be covered by. **The *Courier* built a franchise out of adjudication, and the input cost was a column.** Compare that with the ballclubs in Section 3, which had to rent a stadium from a landlord who had refused them the locker rooms in order to earn anything at all. **The paper owned its means of production and the ballclubs did not**, and that is most of why the paper outlasted the leagues.
+
+**Two limits, and this course states limits before it states conclusions.**
+
+**Limit one: this is shared GOVERNANCE, not a pipeline.** One institution adjudicating both games is not one institution feeding players to the other. Lesson 26 is where the pipeline claim died, and nothing here revives it. **A newspaper that names your champion has no roster, no scouts and no contract with anybody.**
+
+**Limit two, and it is the sharper one: notice which college sport the *Courier* was governing.** It ran an annual national championship and an All-America team in **football**. No comparable annual selection in Black college **baseball** appears in that account. **That absence is evidence about which sport the colleges were actually selling**, and it arrives at the same place lesson 19 reached from the other direction: football was the Black college's revenue and identity sport, and the Negro Leagues' recruits from Morris Brown had played it.
+
+**And the conflict of interest doubles.** Lesson 11 said plainly that a course presenting the Black press purely as a watchdog is teaching something false, because the same men wrote the league's constitution, announced it, chose its all-stars by printing ballots, reported its results, and in two cases ran it. **Add the college game and the same firm is now reporting on, adjudicating and profiting from two sports at once.** That is not a scandal to expose. **It is what institution building looks like when a community has to supply every function itself**, and Section 5 already showed you the same press turning on the Black owners during integration.
+
+:::reveal What did the Pittsburgh Courier do for Black college football, and from when? ||| It selected the Black college football national champion beginning after the 1920 season and an All-America team from 1925, chose by its own sportswriters, distributed nationally through the Associated Negro Press, and honored each January at a banquet in Pittsburgh that ran until 1979.
+
+:::reveal State the connection between the two games in one sentence, without overclaiming it. ||| One Black-owned newspaper was the closest thing to a governing body that either game had: it named the college champion and All-Americans while supplying the professional league its commissioner, its founding announcement and part of its founding capital.
+
+:::reveal Why does this lesson insist the Courier connection is not a pipeline? ||| Because adjudicating two games is not feeding players from one to the other. A newspaper that names a champion has no roster, no scouts and no contract with any player, so nothing here revives the farm-system claim lesson 26 tested and found undocumented.
+
+:::reveal What does the Courier's silence in Black college baseball tell you? ||| That football, not baseball, was the Black college's revenue and identity sport. The paper ran an annual championship and an All-America team in football and no comparable annual baseball selection appears beside them.
+
+:::reveal Read the Courier as a firm. What did it own that the ballclubs did not? ||| Its means of production. A championship it printed itself cost a column and filled a banquet hall for over fifty years, while a ballclub had to rent a stadium from a landlord who had refused it the locker rooms before it could earn anything.
+
+## Vocabulary
+- **De facto governing body**: an institution that performs a governing function without holding the office, which is what the Courier did for two games at once.
+- **Adjudication as product**: selling the act of deciding, in this case a championship and an All-America team that sold papers and filled an annual banquet.
+- **Associated Negro Press**: the wire service that carried the Courier's selections into Black newspapers nationally, which is what turned one paper's opinion into a national standard.
+- **Conflict of interest**: reporting on an institution you also govern and profit from, which the Courier did in both the college game and the professional one.
+
+## Sources
+Bauer, J. (2022). We are the ship, all else the sea: The founding of the Negro National League. Society for American Baseball Research. https://sabr.org/research/article/we-are-the-ship-all-else-the-sea-the-founding-of-the-negro-national-league/
+
+College Football Hall of Fame. (2016, February 25). *HBCU All-America teams and national champions*. https://www.cfbhall.com/news-and-happenings/blog/hbcu-all-america-teams-and-national-champions/
+
+Goldman, D. (2021). 1933-1962: The business meetings of Negro League baseball. Society for American Baseball Research. https://sabr.org/journal/article/1933-1962-the-business-meetings-of-negro-league-baseball/`,
+    },
   ],
 };
