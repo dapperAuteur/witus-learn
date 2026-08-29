@@ -235,6 +235,7 @@ import { THE_COUNTY_COMMITTEE_COURSE } from "./data/the-county-committee-course"
 import { CREDIT_DECISIONS_COURSE } from "./data/credit-decisions-course";
 import { BANKING_AND_THE_UNBANKED_COURSE } from "./data/banking-and-the-unbanked-course";
 import { CASH_FLOW_TIMING_COURSE } from "./data/cash-flow-timing-course";
+import { PREDATORY_PRODUCTS_COURSE } from "./data/predatory-products-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2430,6 +2431,47 @@ async function main() {
       seriesOrder: 3,
       seriesCode: "MONEY",
       seriesPosition: "03",
+    },
+    // MONEY-04 · "Predatory Products, Priced" (Money & Property). Fourth course in the
+    // `personal-money` series ("Your Money, and Who Decides"), from
+    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md §4.10. Tier 0.
+    // NO migration - pnpm seed:courses.
+    //
+    // THE SPINE, AND WHY IT IS NOT AN "AVOID SCAMS" COURSE: a predatory product is NOT a scam. It
+    // is legal, licensed, contractually enforceable, and its price is printed on the page. A scam
+    // is illegal on its face and reaches fraud law; a legal product reaches only arithmetic and the
+    // disclosure rules. Teaching them as one thing leaves a reader unable to price the product they
+    // will actually be offered, and unable to say what recourse they hold when money leaves an
+    // account. Both halves are taught, and the boundary between them is the course.
+    //
+    // THE SINGLE MOST USEFUL THING IN IT, AND THE REASON THE FRAUD HALF EXISTS AT ALL: Regulation E
+    // defines an "unauthorized electronic fund transfer" at 12 CFR 1005.2(m) as one initiated by a
+    // person OTHER THAN the consumer WITHOUT actual authority. The error-resolution clocks at
+    // 1005.11, the liability caps at 1005.6, and the burden of proof on the institution at 15
+    // U.S.C. 1693g(b) all hang on that definition being MET. A transfer the consumer was tricked
+    // into authorising themselves does not meet it, and none of that machinery starts. Same loss,
+    // same person, opposite outcome, and almost nobody knows the line is there.
+    //
+    // NO NATIONAL RATE OR CAP IS PRINTED, because small-dollar lending is state law and the states
+    // disagree completely. The course quotes two real statutes reaching opposite answers (N.Y.
+    // Penal Law 190.40 makes lending above 25 percent per annum a felony; Fla. Stat. 560.404
+    // licenses the same transaction with a 10 percent fee cap, a 7-to-31-day term and a rollover
+    // ban) and teaches the METHOD of finding your own state's rule. Every figure carries its date.
+    //
+    // EVERY ENFORCEMENT ACTION CARRIES ITS POSTURE, and the FTC's own boilerplate defining the
+    // difference is quoted in Section 6. A complaint is an allegation (Progressive Leasing 2020,
+    // Harris Jewelry 2022), a stipulated final order is a settlement, and a jury verdict is a
+    // finding (United States v. Tucker and Muir, 14 counts, 13 October 2017). No allegation is
+    // described as proven fact anywhere in the course.
+    {
+      slug: "predatory-products",
+      course: PREDATORY_PRODUCTS_COURSE,
+      category: "Money & Property",
+      seriesSlug: "personal-money",
+      seriesTitle: "Your Money, and Who Decides",
+      seriesOrder: 4,
+      seriesCode: "MONEY",
+      seriesPosition: "04",
     },
   ]) {
     await seedAuthoredCourse(db, {

@@ -423,9 +423,16 @@ export const JURISDICTION: JurisdictionFile = {
         {
           code: "SS.9-12.EC.FL.4",
           text: "Analyze costs and benefits of different credit and payment options for goods and services, the role of lenders and interest, and the impact of each on individuals and multiple communities.",
-          claimIds: ["money.cost-of-credit-apr", "money.adverse-action-notice", "money.credit-access-constraint"],
+          claimIds: [
+            "money.cost-of-credit-apr",
+            "money.adverse-action-notice",
+            "money.credit-access-constraint",
+            "money.high-cost-credit-products",
+            "money.cost-of-credit-fee-conversion",
+            "money.rent-to-own-total-of-payments",
+          ],
           coverage: "partial",
-          note: "Partial. The role of lenders is the course's subject: how a lender reaches a credit decision, what it must disclose about that decision, and what recourse follows. Interest and cost are taught through the annual percentage rate as the standardized figure the Truth in Lending Act requires so two offers can be ranked, with the statutory computation worked. The impact on multiple communities is reached through the exclusion history the catalog already carries. NOT covered: the breadth the standard asks for, a survey of DIFFERENT credit and PAYMENT options, which this course does not attempt and MONEY-02 and MONEY-04 will.",
+          note: "Partial, and it got fuller on 2026-08-28 when MONEY-04 shipped. The role of lenders is MONEY-01's subject: how a lender reaches a credit decision, what it must disclose, and what recourse follows. Interest and cost are taught through the annual percentage rate as the standardized figure the Truth in Lending Act requires so two offers can be ranked, with the statutory computation worked. THE BREADTH THIS ENTRY PREVIOUSLY SAID WAS MISSING, a survey of DIFFERENT credit options, now exists: payday lending, vehicle title lending, rent-to-own, refund advances and overdraft, each priced from the statute that governs it and each converted into the same unit so they can be set beside one another. The impact on individuals and multiple communities is reached through the exclusion history the catalog already carries and through the enforcement record, which names populations rather than asserting them. NOT covered: a survey of PAYMENT options, which is MONEY-02's rather than this pair's, and credit cards, which nothing in this catalog teaches.",
         },
       ],
     },
