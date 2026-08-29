@@ -626,10 +626,11 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   and \`what-they-built\` reads Black business districts as economies. None of them reads an
   **industry** that way. The civic question: **who owns the game, who collects the gate, and what
   happens to those businesses when the door finally opens?**
-  6 sections, 19 teaching lessons, 6 quizzes, **490 pooled questions**, and it is the first course in
+  7 sections, 23 teaching lessons, 7 quizzes, **591 pooled questions**, and it is the first course in
   the catalog to report **zero findings** from \`pnpm audit:course --spec\`: every teaching section
-  carries a quiz sized to its own word density (74/86/79/81/94 serving 5, plus a 76-question final
-  serving 10), every quiz passes at 80, and no lesson is assessed only outside its own section.
+  carries a quiz sized to its own word density (74/86/79/81/94 serving 5, a 76-question Section 6
+  exam serving 10, and Section 7's 101-question check serving 10), every quiz passes at 80, and no
+  lesson is assessed only outside its own section.
   **The evidence discipline is the course's real subject.** It teaches evidence CLASS, not just
   facts: Overmyer's Yankee Stadium figures come from the Yankees' own cash ledgers and show
   **$114,550 across fifteen years**, which the course stages directly against the endlessly repeated
@@ -654,7 +655,48 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   finding is that in Black professional sport **baseball owned the real estate and football was a
   tenant**: Fritz Pollard lost Dyckman Oval in 1938 when Alex Pompez leased it to a rival.
   Mapped to the three \`catalog.*\` Common Core history-literacy claims (60 standards across 15
-  jurisdictions). **NOT yet in \`STAGED_COURSES\`**, so \`pnpm gen:citations\` is a later step.
+  jurisdictions), re-checked with \`pnpm standards:for\` after Section 7 and all three still true.
+  Now **staged in \`STAGED_COURSES\`**, which it should have been at launch; \`pnpm gen:citations\`
+  runs after the re-seed.
+- ✅ **Negro Leagues Section 7, Outside the league** (\`content/negro-leagues-section-7\`, appended to
+  the shipped course; NO migration, **re-run \`pnpm seed:courses\`, then stage-and-generate
+  citations**). Four teaching lessons and a 101-question check, answering the four questions the
+  original six sections did not: where the players came from, whether clubs played Black college
+  teams, whether there was money abroad, and what happened when they played major leaguers.
+  **Half of the section is a NEGATIVE finding, stated as one.** The popular claim that historically
+  Black colleges were a farm system for the leagues has four sourced player cases behind it (Bill
+  Foster at Alcorn, Hilton Smith at Prairie View, Joe Black at Morgan State, Buck O'Neil at Edward
+  Waters) and **no located document behind any of its three mechanism claims**. The correction that
+  makes the whole thing readable is that an HBCU in this era was frequently K-through-college:
+  Foster's own Hall of Fame questionnaire says **four years in elementary school, four in high
+  school, four in college**, and O'Neil went to Edward Waters because **Sarasota High would not
+  admit him**. The correlation is real and the causal story fails, and the lesson says so.
+  **Refused and taught as refusals:** the unsourced **40 percent college educated** estimate, on the
+  same grounds as the unfootnoted \$100,000 a year; organised campus recruiting; and campus spring
+  training, because the documented record is **Hot Springs, Arkansas**. The strongest counter-evidence
+  is in the lesson rather than a footnote: **Morgan State had no baseball team**, and Joe Black was
+  signed because a business manager **overheard him boasting in the stands**.
+  **What is documented is property and governance.** The Atlanta Black Crackers played home games
+  **at Morehouse and Morris Brown**, renting Ponce de Leon only when the white club was on the road,
+  which extends \`nl-the-ballpark-problem\`. And the connection nobody is teaching: the
+  ***Pittsburgh Courier*** named the Black college football national champion from the 1920 season
+  and its All-America team from 1925, banqueting them each January in Pittsburgh until **1979**,
+  while supplying the NNL its commissioner and counting Cum Posey's father among its own investors.
+  **One newspaper was the closest thing to a governing body either game had.**
+  The international lesson lands the payoff: **the color line was a domestic arrangement.** Cuban
+  benches were fully integrated **from 1900**, 67 Negro Leaguers were in the 1940 Mexican League,
+  and Joe Black's **\$800 a month in Venezuela in 1947** is the checkable pay figure. Stated
+  narrowly on purpose: Mexico paid better than the NEGRO LEAGUES, not better than MLB.
+  The majors lesson teaches why exhibition results cannot settle the quality question: a **cap of
+  three players from one club** after July 1922 made an all-star squad the only legal opponent, and
+  Peterson's **.527** and his **nearly 55 percent** are two denominators from one author, printed as
+  attributed rather than verified because the page carrying them is HTTP 403. **The claim that
+  Landis's limits targeted interracial games is labelled as uncited interpretation, not asserted.**
+  Five new source checks filed at \`/admin/research\`, the biggest being the **CIAA, SIAC and SWAC
+  eligibility articles**: two Hall of Famers used false names (Doby as Larry Walker, Irvin as Jimmy
+  Nelson) to protect eligibility, so the missing club-versus-college games may be evidence rather
+  than a gap, and only a Black college conference's own rules can settle it.
+  No shipped lesson, slug, quiz prompt, option or \`correctIndex\` was touched.
 - ✅ **The Reporter track, all nine courses** (\`content/reporter-track\`, plans/68, Research &
   Reporting; NO migration, **re-run \`pnpm seed:courses\`**). REPORT-00 to REPORT-99, seeded as the
   \`reporter\` series so it gets \`/series/reporter\` and a badge on every card.
