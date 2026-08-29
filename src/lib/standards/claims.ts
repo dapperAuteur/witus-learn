@@ -5082,6 +5082,126 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "23 · Read your own account: what this course leaves you able to do",
     ],
   },
+
+  // ══ MONEY-03 · Cash Flow, and When the Money Actually Moves ══════════════════
+  //
+  // WHAT THESE SIX CLAIMS DO AND DO NOT COVER, STATED ONCE SO NO STATE FILE HAS TO REPEAT IT.
+  // `cash-flow-timing` teaches WHEN money moves and who set the date: the federal funds-availability
+  // schedule, the commercial-code permission that decides posting order, the rails and their
+  // clocks, the arithmetic of the four pay frequencies, the state statutes that fix frequency and
+  // lag, and the published rule that assigns a benefit payment day. It teaches NO BUDGETING
+  // TECHNIQUE OF ANY KIND, by design and on the record: no envelope method, no percentage split, no
+  // advice about what to spend, what to pay first, or how large a buffer to hold. That refusal is
+  // the reason several personal-finance standards that bundle "budgeting" into their stem are
+  // claimed PARTIAL here with the budgeting half expressly disclaimed, and it is why the stem-level
+  // codes of those strands are still not claimed at all. Do not widen one of these to make a
+  // state's personal-finance strand look fuller: budgeting is the largest thing in most of those
+  // strands and this course does not teach it.
+  //
+  // The claims are also deliberately kept to this one course. Several of them are adjacent to
+  // MONEY-02's deposit-account claims, but the lesson evidence lists differ, so they are separate
+  // entries rather than added course slugs on an existing claim.
+  {
+    id: "money.cash-flow-timing",
+    claim:
+      "Teaches why income and obligations fall on dates fixed by different rules, and how to map a household's usable arrival dates against its dated obligations.",
+    courseSlugs: ["cash-flow-timing"],
+    lessons: [
+      // The timing gap taught as a structural mismatch with three nameable mechanisms behind it,
+      // and explicitly NOT as a budgeting or spending failure.
+      "1 · The gap is the subject, and it is not a budgeting failure",
+      // The five-step mapping method: arrivals with the rule that dates each, obligations with the
+      // party that chose each date, usable dates rather than landing dates, windows, and the gaps.
+      "21 · Build the map: the dates in, the dates out, and the gap",
+    ],
+  },
+  {
+    id: "money.funds-availability-schedule",
+    claim:
+      "Works the federal funds-availability schedule from the statute and the regulation: which deposits must be available when, what can move the date of deposit itself, and the six exceptions that extend the schedule.",
+    courseSlugs: ["cash-flow-timing"],
+    lessons: [
+      // 12 CFR 229.2: business day as ten enumerated dates, banking day as the open part of one,
+      // set against the eleven legal public holidays in 5 U.S.C. 6103(a).
+      "2 · Business day, banking day, and the difference that costs money",
+      // 12 CFR 229.19(a): when funds are considered deposited, the 2:00 p.m. and noon cut-off
+      // floors, night depositories, mailed deposits, and the twice-weekly off-premise ATM rule.
+      "3 · The cut-off hour, and the deposit that was not made today",
+      // 12 U.S.C. 4002 and 4006(f): the statutory schedule and the five-year inflation adjustment
+      // that produced the amounts in force from 1 July 2025, each dated in the lesson.
+      "5 · Why there is a schedule at all",
+      // 12 CFR 229.10 and 229.12: cash in person against cash otherwise, the narrow definition of
+      // an electronic payment, the six next-day check categories, the minimum availability amount,
+      // the second-business-day general schedule, and the fifth for a nonproprietary machine.
+      "6 · What must be available tomorrow, and what may wait",
+      // 12 CFR 229.13: the six exceptions, the five-field written notice, and the fact that a
+      // "reasonable period" is itself defined in business days so a hold has an end date.
+      "7 · Six exceptions, and the notice each one owes you",
+    ],
+  },
+  {
+    id: "money.account-reconciliation-and-posting",
+    claim:
+      "Reconciles a deposit account from the rules that produce its numbers: which items have not yet posted, why an available balance differs from a ledger balance, and how posting order decides the count of insufficient-balance items.",
+    courseSlugs: ["cash-flow-timing"],
+    lessons: [
+      // U.C.C. 4-303(b) quoted, and the arithmetic worked: the same four payments against the same
+      // opening balance produce one short item smallest first and three largest first.
+      "9 · Nobody promised you an order",
+      // Authorisation, posting and settlement separated; 12 CFR 229.2's definition of available
+      // funds pointing back at the account agreement, where the two balance terms are defined.
+      "10 · Authorised, posted, settled: three different moments",
+      // U.C.C. 4-201(a) and 4-214(a): the deposited credit is provisional and may be charged back,
+      // so availability and finality are two different questions about the same deposit.
+      "14 · Your deposit is a provisional credit until it is not",
+      // The capstone runs the reconciliation once on the learner's own statement, including the
+      // 12 CFR 1030.11(a) overdraft and returned-item totals and the list of preauthorized debits.
+      "23 · Capstone: read your own calendar",
+    ],
+  },
+  {
+    id: "money.payment-methods-and-clearing",
+    claim:
+      "Distinguishes the payment methods a household uses by how each one clears, which rules govern it, and whether it can still be stopped before it settles.",
+    courseSlugs: ["cash-flow-timing"],
+    lessons: [
+      // 12 CFR 1005.10: authorization only by a signed or similarly authenticated writing, stop
+      // payment at least three business days ahead, and ten days' notice of a varying amount.
+      "11 · The transfer you scheduled, and the three days you have to stop it",
+      // Cash, check, ACH credit, ACH debit, card and wire, sorted by push against pull and by
+      // collect against pay, using Regulation CC's own definitions of each.
+      "13 · Six rails, and six different clocks",
+      // The instant rail's twenty-four-hour business day against Regulation CC's ten named dates,
+      // and the trade that follows: a stop-payment right needs an interval to operate inside.
+      "15 · Instant is a different object, and irrevocability is the price",
+    ],
+  },
+  // NO CLAIM FOR SECTION 5, AND THAT IS A RESULT RATHER THAN AN OVERSIGHT. The course's whole fifth
+  // section is income timing: the arithmetic of the four pay frequencies (52, 26, 24, 12), the state
+  // payday statutes that fix frequency and lag (29 CFR 778.106 sets a regular pay day and not its
+  // frequency; Cal. Lab. Code 204(a) and N.Y. Lab. Law 191 answer differently), and 20 CFR
+  // 404.1807's birth-date brackets for a benefit payment day. A claim was drafted for it and then
+  // DELETED, because none of the three jurisdictions whose personal-finance rejections this course
+  // converts has a standard it genuinely answers. Georgia's SSEPF2(a) is income TYPES, Texas's
+  // §113.49(c)(3) is paycheck COMPONENTS, and Louisiana's C.14.a is earning POTENTIAL; none of the
+  // three is about when income arrives or who sets that date. Attaching the section to any of them
+  // would be the widening the standards rule forbids. If a later pass fetches a jurisdiction whose
+  // strand does name income timing, the claim is easy to write back: the evidence lessons are
+  // "17 · Weekly, biweekly, semimonthly, monthly: four different years", "18 · Who decides how often
+  // you are paid", and "19 · When a benefit arrives is a rule, not a courtesy".
+  {
+    id: "money.deposit-timing-disclosures-and-recourse",
+    claim:
+      "Teaches the disclosures a bank owes about when deposits become available, and the difference between a timing failure that carries a remedy and a bank practice that carries none.",
+    courseSlugs: ["cash-flow-timing"],
+    lessons: [
+      // 12 CFR 229.16 and 229.18: the prescribed availability policy disclosure, the right of ANY
+      // person to request it, the thirty-day notice before a delaying change, the 229.16(c)(3) bar
+      // on fees caused by an unnoticed case-by-case delay, and 229.21's damages and one-year limit,
+      // set against posting order, which carries no schedule, notice, reason or analogous remedy.
+      "22 · What is a violation, and what is merely the rule",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

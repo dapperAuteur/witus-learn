@@ -1555,6 +1555,55 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Cash Flow, and When the Money Actually Moves** (\`content/money-03-cash-flow\`,
+  **Money & Property**, **MONEY-03**; NO migration, **re-run \`pnpm seed:courses\`**). The third
+  course in the \`personal-money\` series ("Your Money, and Who Decides"), from
+  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.1.
+  **The research brief said budgeting is a section and never a course, and it was right**: budgeting
+  has no mechanism, no decision-maker and no recourse, so this catalog's read-the-rule method has
+  nothing to bite on and forcing it would fabricate a grievance. Cash-flow TIMING is the better
+  subject BAM asked for instead, because every part of it is written down: **when money arrives** is
+  the Expedited Funds Availability Act and Regulation CC, **when it leaves** is one sentence of the
+  Uniform Commercial Code, **how often you are paid** is a state statute with a number in it, and
+  **when a benefit arrives** is a published rule keyed to a birth date.
+  **The course teaches no budgeting technique at all**, on the record: no envelope method, no
+  percentage split, no advice about what to spend, what to pay first, or how large a buffer to hold.
+  Not-advice is stated in prose in three separate lessons, per the \`surplus-funds-basics\` posture,
+  because \`cert-disclaimer.ts\` covers affiliation with a certifying body and not advice.
+  **The spine, in the order it is taught.** A **business day** is ten enumerated dates in
+  12 CFR 229.2 and a **banking day** is the open part of one, and the course sets that list beside
+  the eleven legal public holidays of 5 U.S.C. 6103(a) to show that **June 19 is in one and not the
+  other** (checked against the GPO's own CFR text on 2026-08-28). Then the **cut-off hour** floors at
+  229.19(a), 2:00 p.m. staffed and noon at a machine, taught as floors rather than as the answer, so
+  the course prints no national cut-off. Then the schedule itself: 229.10's next-day categories and
+  the minimum availability amount, 229.12's second business day and its fifth for a nonproprietary
+  machine, 229.13's six exceptions and the five-field notice each one owes, and 229.14's separate
+  interest clock. Then **U.C.C. 4-303(b)**, "in any order", worked arithmetically: the same four
+  payments against the same opening balance produce **one** insufficient-balance item smallest first
+  and **three** largest first, which is also the count that opens Regulation CC's repeated-overdraft
+  exception. Then **U.C.C. 4-201(a)**, the sentence that explains the whole availability schedule and
+  is not in Regulation CC: a deposited credit is **provisional**, so the six exceptions read as six
+  reasons to distrust an advance and 4-214(a) supplies the charge-back. Then the rails, sorted by
+  push against pull and collect against pay. Then the arithmetic that surprises people: **52, 26, 24
+  and 12**, with biweekly and semimonthly differing by two paychecks a year and breaking in opposite
+  directions. Then 29 CFR 778.106 presuming a regular pay day without setting its frequency, two
+  worked payday statutes rather than a fifty-state table, and 20 CFR 404.1807's three birth-date
+  brackets with a substitution rule that moves a payment **earlier**.
+  **The recourse lesson is the one that separates a breach from the rule working as written**:
+  229.18(d) requires a bank to give its availability policy to **any person** on request, 229.16(c)(3)
+  bars fees for overdrafts an unnoticed case-by-case delay caused where the check was good, and
+  229.21 carries damages and a one-year limit, while posting order carries no schedule, notice,
+  reason or remedy and is answered with 12 CFR 1030.11(a) measurement instead.
+  **Every external figure was read on 2026-08-28 and carries that date IN the lesson**, including
+  the thresholds in force from 1 July 2025 ($275, $550, $6,725) and the 229.21 damages, all taught
+  as figures 12 U.S.C. 4006(f) will move again. 6 sections, 18 teaching lessons, 6 section quizzes
+  (63/66/62/62/63/67 serving 5) and a 51-question final serving 10, for **434 pooled questions**,
+  54 reveal cards, and **zero findings** from \`pnpm audit:course cash-flow-timing --spec\`.
+  **Three personal-finance rejections converted**, all in frameworks that already existed: TX
+  §113.49(c)(2)(A), GA SSEPF2 (element (e) alone, with Georgia's budgeting stem expressly refused),
+  and LA C.14.b. Each rewritten as superseded rather than deleted, and the LA entry also repairs a
+  dangling "see the entry below" the MONEY-01 pass left pointing at nothing. **Six research checks
+  filed.** Deliberately **not** in \`STAGED_COURSES\` yet.
 - 🔧 **Banking, and Who Has No Bank** (\`content/money-02-banking\`, **Money & Property**,
   **MONEY-02**; NO migration, **re-run \`pnpm seed:courses\`**). The second course in a NEW series,
   \`personal-money\` ("Your Money, and Who Decides"), from
