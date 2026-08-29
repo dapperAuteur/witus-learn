@@ -1555,6 +1555,113 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Cash Flow, and When the Money Actually Moves** (\`content/money-03-cash-flow\`,
+  **Money & Property**, **MONEY-03**; NO migration, **re-run \`pnpm seed:courses\`**). The third
+  course in the \`personal-money\` series ("Your Money, and Who Decides"), from
+  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.1.
+  **The research brief said budgeting is a section and never a course, and it was right**: budgeting
+  has no mechanism, no decision-maker and no recourse, so this catalog's read-the-rule method has
+  nothing to bite on and forcing it would fabricate a grievance. Cash-flow TIMING is the better
+  subject BAM asked for instead, because every part of it is written down: **when money arrives** is
+  the Expedited Funds Availability Act and Regulation CC, **when it leaves** is one sentence of the
+  Uniform Commercial Code, **how often you are paid** is a state statute with a number in it, and
+  **when a benefit arrives** is a published rule keyed to a birth date.
+  **The course teaches no budgeting technique at all**, on the record: no envelope method, no
+  percentage split, no advice about what to spend, what to pay first, or how large a buffer to hold.
+  Not-advice is stated in prose in three separate lessons, per the \`surplus-funds-basics\` posture,
+  because \`cert-disclaimer.ts\` covers affiliation with a certifying body and not advice.
+  **The spine, in the order it is taught.** A **business day** is ten enumerated dates in
+  12 CFR 229.2 and a **banking day** is the open part of one, and the course sets that list beside
+  the eleven legal public holidays of 5 U.S.C. 6103(a) to show that **June 19 is in one and not the
+  other** (checked against the GPO's own CFR text on 2026-08-28). Then the **cut-off hour** floors at
+  229.19(a), 2:00 p.m. staffed and noon at a machine, taught as floors rather than as the answer, so
+  the course prints no national cut-off. Then the schedule itself: 229.10's next-day categories and
+  the minimum availability amount, 229.12's second business day and its fifth for a nonproprietary
+  machine, 229.13's six exceptions and the five-field notice each one owes, and 229.14's separate
+  interest clock. Then **U.C.C. 4-303(b)**, "in any order", worked arithmetically: the same four
+  payments against the same opening balance produce **one** insufficient-balance item smallest first
+  and **three** largest first, which is also the count that opens Regulation CC's repeated-overdraft
+  exception. Then **U.C.C. 4-201(a)**, the sentence that explains the whole availability schedule and
+  is not in Regulation CC: a deposited credit is **provisional**, so the six exceptions read as six
+  reasons to distrust an advance and 4-214(a) supplies the charge-back. Then the rails, sorted by
+  push against pull and collect against pay. Then the arithmetic that surprises people: **52, 26, 24
+  and 12**, with biweekly and semimonthly differing by two paychecks a year and breaking in opposite
+  directions. Then 29 CFR 778.106 presuming a regular pay day without setting its frequency, two
+  worked payday statutes rather than a fifty-state table, and 20 CFR 404.1807's three birth-date
+  brackets with a substitution rule that moves a payment **earlier**.
+  **The recourse lesson is the one that separates a breach from the rule working as written**:
+  229.18(d) requires a bank to give its availability policy to **any person** on request, 229.16(c)(3)
+  bars fees for overdrafts an unnoticed case-by-case delay caused where the check was good, and
+  229.21 carries damages and a one-year limit, while posting order carries no schedule, notice,
+  reason or remedy and is answered with 12 CFR 1030.11(a) measurement instead.
+  **Every external figure was read on 2026-08-28 and carries that date IN the lesson**, including
+  the thresholds in force from 1 July 2025 ($275, $550, $6,725) and the 229.21 damages, all taught
+  as figures 12 U.S.C. 4006(f) will move again. 6 sections, 18 teaching lessons, 6 section quizzes
+  (63/66/62/62/63/67 serving 5) and a 51-question final serving 10, for **434 pooled questions**,
+  54 reveal cards, and **zero findings** from \`pnpm audit:course cash-flow-timing --spec\`.
+  **Three personal-finance rejections converted**, all in frameworks that already existed: TX
+  §113.49(c)(2)(A), GA SSEPF2 (element (e) alone, with Georgia's budgeting stem expressly refused),
+  and LA C.14.b. Each rewritten as superseded rather than deleted, and the LA entry also repairs a
+  dangling "see the entry below" the MONEY-01 pass left pointing at nothing. **Six research checks
+  filed.** Deliberately **not** in \`STAGED_COURSES\` yet.
+- 🔧 **Predatory Products, Priced** (\`content/money-04-predatory-products\`, **Money & Property**,
+  **MONEY-04**; NO migration, **re-run \`pnpm seed:courses\`**). The fourth course in the
+  \`personal-money\` series ("Your Money, and Who Decides"), from
+  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.10.
+  **The spine is a distinction, and it is what keeps this out of generic-avoid-scams territory: a
+  predatory product is NOT a scam. It is legal, licensed, contractually enforceable, and its price
+  is printed on the page.** A scam is illegal on its face and reaches fraud law; a legal product
+  reaches only arithmetic and the disclosure rules. Teaching them as one thing leaves a reader unable
+  to price the product they will actually be offered, and unable to say what recourse they hold when
+  money leaves an account. Both halves are taught and the boundary between them IS the course.
+  **The single most useful thing in it, and the reason the fraud half exists at all: Regulation E
+  defines an "unauthorized electronic fund transfer" at 12 CFR 1005.2(m) as one initiated by a person
+  OTHER THAN the consumer WITHOUT actual authority.** The error-resolution clocks at 1005.11, the
+  liability caps at 1005.6, and the burden of proof on the institution at 15 U.S.C. 1693g(b) all hang
+  on that definition being MET. **A transfer you were tricked into authorising yourself does not meet
+  it, and none of that machinery starts.** Same loss, same victim, opposite rule, and almost nobody
+  knows the line is there. The official interpretations sharpen it in both directions: furnishing your
+  device to someone who then exceeds the authority leaves you fully liable until you notify the
+  institution, while a device obtained from you through fraud or robbery still produces unauthorized
+  transfers. Then the same loss under four rulebooks: credit card (15 U.S.C. 1643 plus the 12 CFR
+  1026.12(c) claims-and-defenses right), electronic fund transfer, wire (excluded outright by 12 CFR
+  1005.3(c)(3)), and cash. The pattern is that the rules are strongest where an intermediary holds the
+  money, which is why the payment method a fraudster insists on is a choice about your remedy.
+  **No national rate or cap is printed anywhere**, because small-dollar lending is state law and the
+  states disagree completely. The course quotes two statutes reaching opposite answers (N.Y. Penal Law
+  190.40 makes the same charge a class E felony; Fla. Stat. 560.404 licenses it with a 10 percent fee
+  cap, a 7-to-31-day term, a rollover ban and a statewide one-at-a-time database) and teaches the
+  four-step method for finding your own state's rule. The arithmetic runs on those real ceilings, so
+  one Florida cap produces about 261 percent over fourteen days and about 521 percent over seven, and
+  Virginia's 36 percent simple annual on a title loan sits beside Georgia's 25 percent per thirty-day
+  pawn period, about 304 percent.
+  **The rollover is taught from two federal courts rather than from assertion.** The Supreme Court in
+  *AMG Capital* describes the fine-print auto-renewal in one sentence; the SDNY jury verdict of 13
+  October 2017 supplies the arithmetic, a TILA box disclosing 650 dollars on a 500 dollar loan against
+  1,925 dollars actually taken. **Every enforcement action carries its posture**, with the FTC's own
+  boilerplate quoted: a complaint is filed on "reason to believe", a stipulated final order has the
+  force of law when a judge signs it and establishes nothing about the allegations, and a verdict is a
+  finding. Progressive Leasing and Harris Jewelry are always "what the Commission alleged". The
+  Sentinel Data Book is used only after quoting the FTC's own caution that it rests on unverified
+  reports and is not a survey, which disqualifies reading it as a census of harm.
+  **No financial advice and no moralising in the other direction either**, said in PROSE in three
+  lessons (Section 1 lesson 1, the overdraft lesson, the capstone), with MONEY-02's work on the FDIC
+  survey as the corrective: the reasons households give for using nonbank services are reasons.
+  6 sections, 21 teaching lessons, 6 section quizzes (68/90/71/72/90/90 serving 5) and a 52-question
+  final serving 10, for **533 pooled questions**, 82 reveal cards, and **zero findings** from
+  \`pnpm audit:course predatory-products --spec\`; always-pick-longest scores 0% on every bank.
+  **Standards: 13 codes across 7 jurisdictions, and the first \`notClaimed\` rejection in the MONEY
+  series converted to FULL.** West Virginia Policy 2520.4 Appendix A item 8, the savvy-consumer
+  standard, was refused by MONEY-02 because the catalog then taught nothing about fraudulent practices
+  or identity theft; all three of its parts now have a course behind them. **Three new codes**, each
+  transcribed verbatim from a document fetched the same day: TX §113.49(c)(8)(A), (c)(13)(A) and
+  (c)(13)(C), and GA SSEPF10. **Eight extensions** to codes MONEY-01 and MONEY-02 had claimed
+  narrowly, each note rewritten to say what changed. **No new framework was created**, deliberately,
+  because the previous bundle produced a duplicate framework id that only the isolation suite caught.
+  **Claims refused and recorded as refused:** TX §113.49(c)(13)(B) and GA SSEPF10(a) and (d), all
+  three of which ask for a taxonomy of schemes this course does not survey. **Six research checks
+  filed**, four of them on state statutes and federal parts that move.
+  Deliberately **not** in \`STAGED_COURSES\` yet.
 - 🔧 **Banking, and Who Has No Bank** (\`content/money-02-banking\`, **Money & Property**,
   **MONEY-02**; NO migration, **re-run \`pnpm seed:courses\`**). The second course in a NEW series,
   \`personal-money\` ("Your Money, and Who Decides"), from

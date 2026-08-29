@@ -5082,6 +5082,270 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "23 · Read your own account: what this course leaves you able to do",
     ],
   },
+
+  // ══ MONEY-03 · Cash Flow, and When the Money Actually Moves ══════════════════
+  //
+  // WHAT THESE SIX CLAIMS DO AND DO NOT COVER, STATED ONCE SO NO STATE FILE HAS TO REPEAT IT.
+  // `cash-flow-timing` teaches WHEN money moves and who set the date: the federal funds-availability
+  // schedule, the commercial-code permission that decides posting order, the rails and their
+  // clocks, the arithmetic of the four pay frequencies, the state statutes that fix frequency and
+  // lag, and the published rule that assigns a benefit payment day. It teaches NO BUDGETING
+  // TECHNIQUE OF ANY KIND, by design and on the record: no envelope method, no percentage split, no
+  // advice about what to spend, what to pay first, or how large a buffer to hold. That refusal is
+  // the reason several personal-finance standards that bundle "budgeting" into their stem are
+  // claimed PARTIAL here with the budgeting half expressly disclaimed, and it is why the stem-level
+  // codes of those strands are still not claimed at all. Do not widen one of these to make a
+  // state's personal-finance strand look fuller: budgeting is the largest thing in most of those
+  // strands and this course does not teach it.
+  //
+  // The claims are also deliberately kept to this one course. Several of them are adjacent to
+  // MONEY-02's deposit-account claims, but the lesson evidence lists differ, so they are separate
+  // entries rather than added course slugs on an existing claim.
+  {
+    id: "money.cash-flow-timing",
+    claim:
+      "Teaches why income and obligations fall on dates fixed by different rules, and how to map a household's usable arrival dates against its dated obligations.",
+    courseSlugs: ["cash-flow-timing"],
+    lessons: [
+      // The timing gap taught as a structural mismatch with three nameable mechanisms behind it,
+      // and explicitly NOT as a budgeting or spending failure.
+      "1 · The gap is the subject, and it is not a budgeting failure",
+      // The five-step mapping method: arrivals with the rule that dates each, obligations with the
+      // party that chose each date, usable dates rather than landing dates, windows, and the gaps.
+      "21 · Build the map: the dates in, the dates out, and the gap",
+    ],
+  },
+  {
+    id: "money.funds-availability-schedule",
+    claim:
+      "Works the federal funds-availability schedule from the statute and the regulation: which deposits must be available when, what can move the date of deposit itself, and the six exceptions that extend the schedule.",
+    courseSlugs: ["cash-flow-timing"],
+    lessons: [
+      // 12 CFR 229.2: business day as ten enumerated dates, banking day as the open part of one,
+      // set against the eleven legal public holidays in 5 U.S.C. 6103(a).
+      "2 · Business day, banking day, and the difference that costs money",
+      // 12 CFR 229.19(a): when funds are considered deposited, the 2:00 p.m. and noon cut-off
+      // floors, night depositories, mailed deposits, and the twice-weekly off-premise ATM rule.
+      "3 · The cut-off hour, and the deposit that was not made today",
+      // 12 U.S.C. 4002 and 4006(f): the statutory schedule and the five-year inflation adjustment
+      // that produced the amounts in force from 1 July 2025, each dated in the lesson.
+      "5 · Why there is a schedule at all",
+      // 12 CFR 229.10 and 229.12: cash in person against cash otherwise, the narrow definition of
+      // an electronic payment, the six next-day check categories, the minimum availability amount,
+      // the second-business-day general schedule, and the fifth for a nonproprietary machine.
+      "6 · What must be available tomorrow, and what may wait",
+      // 12 CFR 229.13: the six exceptions, the five-field written notice, and the fact that a
+      // "reasonable period" is itself defined in business days so a hold has an end date.
+      "7 · Six exceptions, and the notice each one owes you",
+    ],
+  },
+  {
+    id: "money.account-reconciliation-and-posting",
+    claim:
+      "Reconciles a deposit account from the rules that produce its numbers: which items have not yet posted, why an available balance differs from a ledger balance, and how posting order decides the count of insufficient-balance items.",
+    courseSlugs: ["cash-flow-timing"],
+    lessons: [
+      // U.C.C. 4-303(b) quoted, and the arithmetic worked: the same four payments against the same
+      // opening balance produce one short item smallest first and three largest first.
+      "9 · Nobody promised you an order",
+      // Authorisation, posting and settlement separated; 12 CFR 229.2's definition of available
+      // funds pointing back at the account agreement, where the two balance terms are defined.
+      "10 · Authorised, posted, settled: three different moments",
+      // U.C.C. 4-201(a) and 4-214(a): the deposited credit is provisional and may be charged back,
+      // so availability and finality are two different questions about the same deposit.
+      "14 · Your deposit is a provisional credit until it is not",
+      // The capstone runs the reconciliation once on the learner's own statement, including the
+      // 12 CFR 1030.11(a) overdraft and returned-item totals and the list of preauthorized debits.
+      "23 · Capstone: read your own calendar",
+    ],
+  },
+  {
+    id: "money.payment-methods-and-clearing",
+    claim:
+      "Distinguishes the payment methods a household uses by how each one clears, which rules govern it, and whether it can still be stopped before it settles.",
+    courseSlugs: ["cash-flow-timing"],
+    lessons: [
+      // 12 CFR 1005.10: authorization only by a signed or similarly authenticated writing, stop
+      // payment at least three business days ahead, and ten days' notice of a varying amount.
+      "11 · The transfer you scheduled, and the three days you have to stop it",
+      // Cash, check, ACH credit, ACH debit, card and wire, sorted by push against pull and by
+      // collect against pay, using Regulation CC's own definitions of each.
+      "13 · Six rails, and six different clocks",
+      // The instant rail's twenty-four-hour business day against Regulation CC's ten named dates,
+      // and the trade that follows: a stop-payment right needs an interval to operate inside.
+      "15 · Instant is a different object, and irrevocability is the price",
+    ],
+  },
+  // NO CLAIM FOR SECTION 5, AND THAT IS A RESULT RATHER THAN AN OVERSIGHT. The course's whole fifth
+  // section is income timing: the arithmetic of the four pay frequencies (52, 26, 24, 12), the state
+  // payday statutes that fix frequency and lag (29 CFR 778.106 sets a regular pay day and not its
+  // frequency; Cal. Lab. Code 204(a) and N.Y. Lab. Law 191 answer differently), and 20 CFR
+  // 404.1807's birth-date brackets for a benefit payment day. A claim was drafted for it and then
+  // DELETED, because none of the three jurisdictions whose personal-finance rejections this course
+  // converts has a standard it genuinely answers. Georgia's SSEPF2(a) is income TYPES, Texas's
+  // §113.49(c)(3) is paycheck COMPONENTS, and Louisiana's C.14.a is earning POTENTIAL; none of the
+  // three is about when income arrives or who sets that date. Attaching the section to any of them
+  // would be the widening the standards rule forbids. If a later pass fetches a jurisdiction whose
+  // strand does name income timing, the claim is easy to write back: the evidence lessons are
+  // "17 · Weekly, biweekly, semimonthly, monthly: four different years", "18 · Who decides how often
+  // you are paid", and "19 · When a benefit arrives is a rule, not a courtesy".
+  {
+    id: "money.deposit-timing-disclosures-and-recourse",
+    claim:
+      "Teaches the disclosures a bank owes about when deposits become available, and the difference between a timing failure that carries a remedy and a bank practice that carries none.",
+    courseSlugs: ["cash-flow-timing"],
+    lessons: [
+      // 12 CFR 229.16 and 229.18: the prescribed availability policy disclosure, the right of ANY
+      // person to request it, the thirty-day notice before a delaying change, the 229.16(c)(3) bar
+      // on fees caused by an unnoticed case-by-case delay, and 229.21's damages and one-year limit,
+      // set against posting order, which carries no schedule, notice, reason or analogous remedy.
+      "22 · What is a violation, and what is merely the rule",
+    ],
+  },
+  // ══ MONEY-04 · Predatory Products, Priced ═══════════════════════════════════
+  //
+  // WHY THESE ARE SEPARATE FROM THE MONEY-01 AND MONEY-02 CLAIMS ABOVE. Every state's
+  // personal-finance strand asks for three things this catalog did not have until this course: a
+  // SURVEY of high-cost credit products by name, the FRAUD half of the savvy-consumer standards,
+  // and IDENTITY THEFT. MONEY-01 and MONEY-02 said so on their own entries, repeatedly, naming
+  // MONEY-04 as where those would arrive. These claims are what makes those notes true, and each
+  // one is scoped to exactly what the lessons do.
+  //
+  // THEY ARE STILL NARROW, AND SEVERAL STANDARDS THEY TOUCH REMAIN `partial` OR UNCLAIMED. The
+  // course prices products and teaches recourse. It teaches NO budgeting, NO saving, NO investing,
+  // NO insurance, NO taxes and NO scam TAXONOMY: it does not survey phishing, pyramid schemes,
+  // advance-fee scams, skimming or data breaches, so any standard whose subject is that taxonomy is
+  // refused rather than stretched. Texas §113.49(c)(13)(B) and Georgia SSEPF10(a) and (d) are the
+  // clearest examples and both are named in their states' notClaimed entries.
+  {
+    id: "money.cost-of-credit-fee-conversion",
+    claim:
+      "Converts a quoted flat fee into the standardized annual rate the Truth in Lending Act exists to supply, and works the conversion on real statutory ceilings rather than on invented numbers.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // TILA's own purpose at 15 U.S.C. 1601(a), then the open-end computation at 1606(a)(2)
+      // written out as two steps, and the point that shortening the term is what makes a modest
+      // fee produce a large rate.
+      "2 · A fee is a rate, and the law already told you why",
+      // The same arithmetic run on Florida's own 10 percent cap over its own 7-to-31-day term
+      // range, producing roughly 261 percent and roughly 521 percent from one statutory ceiling.
+      "5 · What the transaction actually is, in a state that licenses it",
+      // Run again on Georgia's 25 percent per 30-day pawn ceiling against Virginia's 36 percent
+      // simple annual, on the same collateral.
+      "8 · The same arithmetic, with the car attached",
+    ],
+  },
+  {
+    id: "money.high-cost-credit-products",
+    claim:
+      "Surveys the high-cost small-dollar market product by product and prices each from the statute that licenses it: payday lending, vehicle title lending, rent-to-own, refund advances and overdraft.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // Deferred presentment read in full from Fla. Stat. 560.404: amount, fee, term, what the
+      // agreement must state, what it may not contain, and when the fee is earned.
+      "5 · What the transaction actually is, in a state that licenses it",
+      // The renewal, from the Supreme Court's description of the fine-print auto-renewal and the
+      // Southern District of New York jury's findings on what a 500 dollar loan actually cost.
+      "6 · The first loan is not where the money is",
+      // Vehicle title lending under Va. Code 6.2-2216 and O.C.G.A. 44-12-131, with what changes
+      // when the collateral is the thing that produces the income repaying the loan.
+      "8 · The same arithmetic, with the car attached",
+      // Rent-to-own priced as total of payments against cash price.
+      "10 · Two numbers, and the only comparison that matters",
+      // Refund advances (credit, with a rate) against refund transfers (not credit at all).
+      "15 · Two products, and only one of them is a loan",
+      // Overdraft priced as a flat fee on a tiny amount over a few days, and why that is regressive.
+      "16 · Overdraft, priced the way this course prices everything else",
+    ],
+  },
+  {
+    id: "money.rent-to-own-total-of-payments",
+    claim:
+      "Compares a rent-to-own total of payments against the cash price, and explains from Regulation Z's own definition why no annual percentage rate appears on the agreement.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // Conn. Gen. Stat. 42-240, 42-241 and 42-248: the definitions, the ten-point boldface
+      // disclosure of cash price, rent-to-own price and the difference, and the cap that vests
+      // ownership once half the payments made equal the cash price.
+      "10 · Two numbers, and the only comparison that matters",
+      // 12 CFR 1026.2(a)(16)'s two-part credit-sale test, and why a terminable lease fails the
+      // agreement-to-pay element. Plus the multiple as the comparison figure that needs no rate.
+      "11 · Why there is no rate on the page",
+      // Disclosed against visible, and the four-line method for pricing any offer by hand.
+      "12 · Where the total hides, and what a regulator found",
+    ],
+  },
+  {
+    id: "money.state-lending-rules-method",
+    claim:
+      "Teaches how to find and read the state statute and licensing register that govern a small-dollar or lease-purchase transaction, using two states whose statutes reach opposite answers.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // N.Y. Penal Law 190.40 against Fla. Stat. 560.404, then the four-step method: the state's
+      // own noun, the state's own code, the four features that set the price, the licence lookup.
+      "7 · Two states, opposite answers, and how to find yours",
+      // The same method applied to a rental-purchase act, with its own four features.
+      "12 · Where the total hides, and what a regulator found",
+      // The capstone runs it once on a product the learner chooses, dated.
+      "26 · Capstone: price one product, check one rule, read one document",
+    ],
+  },
+  {
+    id: "money.protected-class-rate-cap",
+    claim:
+      "Teaches the federal rate ceiling Congress enacted for one named class of borrowers, the charges its wider rate measure sweeps in, and the loan terms it forbids outright.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // 10 U.S.C. 987(b), (e) and (i)(1) and 32 CFR 232.3(f) and 232.4(b)-(c), read as a statement
+      // about who the law decided to protect rather than as a moral judgement about a product.
+      "3 · Congress capped this rate for one class of people",
+      // The same statute read beside the FTC's first enforcement action under it.
+      "25 · Who is targeted, taken from the record rather than asserted",
+    ],
+  },
+  {
+    id: "money.unauthorized-transfer-recourse",
+    claim:
+      "Teaches the statutory line between a transfer taken without the consumer's authority and one the consumer was deceived into making, and the error-resolution rights that attach only to the first.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // 12 CFR 1005.2(m) quoted with its three exclusions, plus the official interpretations on a
+      // furnished device and on a device obtained through fraud or robbery.
+      "18 · Unauthorized is a defined word, and everything depends on it",
+      // 15 U.S.C. 1693g(b) on the burden of proof, 12 CFR 1005.6's tiers and 60-day statement rule,
+      // and 1005.11's 10-business-day and 45-day clocks with provisional credit.
+      "19 · What the institution owes you when the definition is met",
+      // Why an induced authorisation falls outside the definition, and what remains when it does.
+      "20 · When you pressed send, the machine does not start",
+      // The same loss under four rulebooks: credit card, electronic fund transfer, wire, cash.
+      "21 · The same loss under four different rulebooks",
+    ],
+  },
+  {
+    id: "money.identity-theft-remedies",
+    claim:
+      "Teaches the Fair Credit Reporting Act's identity-theft tools and what each one does: the initial and extended fraud alerts, the security freeze, and the block, with their statutory timings.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // 15 U.S.C. 1681c-1(a), (b) and (i) and 1681c-2(a), with the free-of-charge freeze, the
+      // one-hour lift, the four-business-day block and the four items the consumer must supply.
+      "23 · Three tools in the Fair Credit Reporting Act, and what each one does",
+    ],
+  },
+  {
+    id: "money.reading-enforcement-records",
+    claim:
+      "Teaches how to read a public consumer-protection enforcement record, distinguishing a complaint from a settlement from a finding, and what each can and cannot support.",
+    courseSlugs: ["predatory-products"],
+    lessons: [
+      // The FTC's own boilerplate on reason to believe and on stipulated final orders, a jury
+      // verdict, and a Supreme Court holding that decides remedy rather than conduct.
+      "24 · Complaint, order, verdict: three documents that are not the same thing",
+      // The same discipline applied to the question of who is targeted, plus the FTC's own caution
+      // that its Sentinel data rests on unverified reports and is not a survey.
+      "25 · Who is targeted, taken from the record rather than asserted",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

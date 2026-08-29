@@ -367,7 +367,7 @@ export const JURISDICTION: JurisdictionFile = {
       sourceUrl:
         "https://lor2.gadoe.org/gadoe/file/718cd76e-7ea7-44a8-95bf-fd4047eb9cea/1/Social-Studies-Personal%20Finance-and-Economics-Georgia-Standards.pdf",
       adoption:
-        "Georgia's economics course (Fundamentals SSEF, Microeconomics SSEMI, Macroeconomics SSEMA, International SSEIN, Personal Finance SSEPF), course code 45.061, effective from the 2022-2023 school year. The international-trade and economic-systems standards are where the commodity curriculum lands. Two Personal Finance standards were added on 2026-08-28 when the banking course shipped; the SSEPF domain is no longer rejected wholesale, and notClaimed records which eight of the ten remain unclaimed. Re-fetched 2026-08-28 directly from the canonical lor2.gadoe.org PDF, which resolved this pass where it had refused connections in July 2026, so this framework's text is now transcribed from Georgia's own copy rather than a district mirror.",
+        "Georgia's economics course (Fundamentals SSEF, Microeconomics SSEMI, Macroeconomics SSEMA, International SSEIN, Personal Finance SSEPF), course code 45.061, effective from the 2022-2023 school year. The international-trade and economic-systems standards are where the commodity curriculum lands. Four Personal Finance standards were added on 2026-08-28: two when the banking course shipped, one (SSEPF2, for its reconciliation element only) when the cash-flow timing course did, and SSEPF10 when MONEY-04 (`predatory-products`) did. The SSEPF domain is no longer rejected wholesale, and notClaimed records which of the ten remain unclaimed. Re-fetched 2026-08-28 directly from the canonical lor2.gadoe.org PDF, which resolved this pass where it had refused connections in July 2026, so this framework's text is now transcribed from Georgia's own copy rather than a district mirror; SSEPF10 was transcribed from the same PDF on the same day.",
       standards: [
         {
           code: "SSEIN1",
@@ -393,6 +393,22 @@ export const JURISDICTION: JurisdictionFile = {
         // — Personal Finance, re-fetched 2026-08-28 when MONEY-02 shipped. The SSEPF domain was
         //   rejected wholesale until then; two of its ten standards are now genuinely reachable and
         //   the notClaimed entry records the supersession rather than being deleted.
+        // — Added 2026-08-28 when MONEY-03 (`cash-flow-timing`) shipped. ONE of SSEPF2's six
+        //   elements, and the standard's own stem is expressly NOT claimed: Georgia frames SSEPF2
+        //   as allocating income "through budgeting", and this catalog teaches no budgeting at all.
+        //   Element (e) is nevertheless an unusually exact fit, because it asks for the mechanism
+        //   (unposted transactions, weekend card activity, monthly auto-pay) rather than the habit.
+        {
+          code: "SSEPF2",
+          text: "Analyze income as a scarce resource that can be allocated effectively through budgeting.",
+          claimIds: [
+            "money.account-reconciliation-and-posting",
+            "money.payment-methods-and-clearing",
+            "money.funds-availability-schedule",
+          ],
+          coverage: "partial",
+          note: "Partial, and a teacher should read this note before planning against it, because ONE of the six elements is met and it is not the one the stem describes. THE STANDARD'S STEM IS NOT CLAIMED: MONEY-03 teaches no budgeting technique of any kind, on the record and in three separate lessons, so allocating income through budgeting is not taught here by anyone. WHAT IS TAUGHT IS ELEMENT (e), reconciling a checking account and accounting for transactions that have not been posted, and it is taught deeper than the element asks. The three examples Georgia names are each worked from their governing rule: a check, through the funds-availability schedule and the fact that a deposited credit is provisional until settlement is final (U.C.C. 4-201(a)); a weekend debit card transaction, through the definition of a business day as ten enumerated dates in 12 CFR 229.2 and through the separation of authorisation, posting and settlement into three dated events; and a monthly auto-pay, through 12 CFR 1005.10, which makes it a preauthorized electronic fund transfer carrying a three-business-day stop-payment window. The element's closing clause, how this helps avoid overdraft fees, is answered with the U.C.C. 4-303(b) permission to charge a day's items in any order, worked arithmetically, plus the 12 CFR 1030.11(a) statement totals that let a learner measure the result. NOT taught: elements (a) income types, (b) the Form 1040, (c) paystub components, (d) budget components and savings, and (f) net worth.",
+        },
         {
           code: "SSEPF3",
           text: "Explain how the financial system channels funds from savers to investors.",
@@ -406,9 +422,24 @@ export const JURISDICTION: JurisdictionFile = {
           claimIds: [
             "money.consumer-financial-protection-mechanisms",
             "money.consumer-deposit-accounts",
+            "money.cost-of-credit-fee-conversion",
+            "money.unauthorized-transfer-recourse",
+            "money.protected-class-rate-cap",
+            "money.state-lending-rules-method",
           ],
           coverage: "partial",
-          note: "Partial. Element (a), how government agencies offer protection in banking, is taught directly and from the rules themselves: the FDIC and the NCUA on deposit and share insurance, and the CFPB's regulations on account disclosure (12 CFR 1030.4), overdraft consent (12 CFR 1005.17) and prepaid disclosure (12 CFR 1005.18). Element (b) is partly met, through the CFPB complaint route and its published response times; the Better Business Bureau and direct-to-business methods the standard names are not compared. Element (c) is met for the Fair Credit Reporting Act only, worked from the statute through account screening, the adverse-action notice and the dispute right; the Truth in Lending Act, the Fair Debt Collection Practices Act, the Equal Housing Act and Dodd-Frank are not taught. Investing and borrowing protection, which element (a) also names, is left to later courses.",
+          note: "Partial, and fuller since 2026-08-28 when MONEY-04 shipped. Element (a), how government agencies offer protection in banking, is taught directly and from the rules themselves: the FDIC and the NCUA on deposit and share insurance, and the regulations on account disclosure (12 CFR 1030.4), overdraft consent (12 CFR 1005.17) and prepaid disclosure (12 CFR 1005.18). BORROWING, which element (a) also names and which this entry previously left to later courses, is now taught: the Truth in Lending Act's disclosure of the annual percentage rate, the Department of Defense's 36 percent ceiling for covered servicemembers at 32 CFR 232.4, and the state licensing and rate statutes that actually govern small-dollar credit, with a public licence register as the check. Element (c) is met for TWO of the five instruments Georgia names, not one: the Fair Credit Reporting Act (through account screening, the adverse-action notice and the dispute right) and now the Truth in Lending Act, whose primary purpose is quoted from 15 U.S.C. 1601(a) and whose annual-rate computation is worked. The Electronic Fund Transfer Act and Regulation E are taught in depth as well, though Georgia's element (c) list is written with \"i.e.\" rather than \"e.g.\" and does not name them. Element (b) is partly met, through the CFPB complaint route and its published response times; the Better Business Bureau and direct-to-business methods the standard names are not compared. NOT TAUGHT: the Fair Debt Collection Practices Act, the Equal Housing Act, Dodd-Frank, and investing protection.",
+        },
+        // — Added 2026-08-28 when MONEY-04 (`predatory-products`) shipped. SSEPF10 was named in the
+        //   notClaimed entry below as one of the eight the catalog did not teach; one of its four
+        //   elements is now taught in depth and a second in part, so it moves out with its limits
+        //   stated. Elements (a) and (d) are refused rather than stretched.
+        {
+          code: "SSEPF10",
+          text: "Explain sources of and protection against identity theft.",
+          claimIds: ["money.identity-theft-remedies", "money.unauthorized-transfer-recourse"],
+          coverage: "partial",
+          note: "Partial, and element by element. ELEMENT (c), the steps to take after becoming a victim, is taught in full and from the statute rather than as a checklist: freezing credit histories is the security freeze at 15 U.S.C. 1681c-1(i), free of charge, placed within one business day and lifted within one hour on a telephone or online request; alerting appropriate officials is the initial fraud alert at 1681c-1(a), which one call places in all three nationwide files for at least a year, the extended alert at 1681c-1(b), and the identity theft report obtained free through the Federal Trade Commission's own site; and the course adds the block at 1681c-2, which removes information resulting from an alleged identity theft within four business days of four named items. Replacement cards and password changes are covered only as the ordinary consequence of the Regulation E notice that ends a consumer's liability. ELEMENT (b) is partly met: monitoring your credit report is taught (MONEY-01 works the free annual file disclosure at 15 U.S.C. 1681j), and the course teaches the procedural rule that defeats a telephone impersonation, but shredding, email attachments, secure networks and social-media management are not taught. NOT TAUGHT AT ALL: element (a), the sources of identity theft as a taxonomy (dumpster diving, skimming, phishing, stealing, data breaches), and element (d), investment scams such as Ponzi schemes, pump and dumps and advance-fee scams. The course teaches no securities content of any kind, and a claim on (d) would be invented.",
         },
       ],
     },
@@ -480,7 +511,7 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "Economics — most of the personal-finance course, macroeconomics, and the market-structure standards.",
-      body: "This entry used to reject the whole personal-finance domain, SSEPF1-10, on the ground that the catalog taught none of it. That changed on 2026-08-28 and the correction is recorded here rather than deleted: SSEPF3 (comparing financial institutions, and comparing cash, debit, prepaid and mobile payment) and SSEPF9 (how consumers are protected by rules and regulations) are now claimed, partially, and supersede the blanket rejection. The other eight remain unclaimed and are named so the gap stays visible: SSEPF1 (major life decisions), SSEPF2 (income and budgeting), SSEPF4 (interest rates), SSEPF5 (taxes), SSEPF6 (credit), SSEPF7 (insurance), SSEPF8 (how earnings are determined), and SSEPF10 (identity theft). Unchanged: macroeconomics (SSEMA1-3 — GDP, the Federal Reserve, fiscal policy), the microeconomic circular-flow and market-structure standards (SSEMI1, SSEMI3), the scarcity and rational-decision standards (SSEF1, SSEF2, SSEF4), and the exchange-rate standard (SSEIN2) were checked and are not taught. We claim the international-trade and economic-systems standards where the lessons land.",
+      body: "This entry used to reject the whole personal-finance domain, SSEPF1-10, on the ground that the catalog taught none of it. That changed on 2026-08-28 and the correction is recorded here rather than deleted: SSEPF3 (comparing financial institutions, and comparing cash, debit, prepaid and mobile payment), SSEPF9 (how consumers are protected by rules and regulations), SSEPF2 (claimed for element (e) alone, reconciling a checking account and accounting for unposted transactions) and SSEPF10 (sources of and protection against identity theft, on element (c) in full and (b) in part, with (a) and (d) expressly refused on its own entry) are now claimed, partially, and supersede the blanket rejection. SSEPF9 also grew the same day, reaching the borrowing half of element (a) and the Truth in Lending Act in element (c). SSEPF2 deserves its caveat here as well as on its own entry: Georgia's stem is about allocating income through BUDGETING, and this catalog teaches no budgeting technique at all, so five of that standard's six elements are not taught and the stem itself is not claimed. The remaining standards stay unclaimed and are named so the gap stays visible: SSEPF1 (major life decisions), SSEPF4 (interest rates), SSEPF5 (taxes), SSEPF6 (credit), SSEPF7 (insurance) and SSEPF8 (investing).",
     },
     {
       heading: "World and U.S. history beyond the mapped standards.",
