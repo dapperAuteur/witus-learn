@@ -2219,5 +2219,61 @@ National Baseball Hall of Fame. (n.d.). *Winters in Cuba*. https://baseballhall.
 
 Staples, B., Jr. (2019, August 2). *Biz Mackey and Japan*. Society for American Baseball Research. https://sabr.org/research/article/biz-mackey-and-japan/`,
     },
+    {
+      slug: "nl-playing-the-majors",
+      title: "29 · Playing the majors, and what the record cannot settle",
+      section: "Section 7 · Outside the league",
+      body: `Sooner or later somebody asks the question this lesson is about: **could they have played in the majors?** The answer people reach for is the exhibition record, because Black clubs and major leaguers really did play each other and somebody kept score. **This lesson teaches why that record cannot settle the question it is always cited to settle, and why it is still powerful evidence for a different one.**
+
+**First, three different things get merged into one claim.**
+1. **Full major-league clubs, playing as themselves.** This happened, and it happened mostly **before 1922**.
+2. **All-star or pickup squads of major leaguers.** This is what most postseason interracial games were **after 1922**, for a reason given below.
+3. **Major leaguers playing under assumed names**, which the sources on barnstorming say also happened.
+**A course must not let the second be read as the first**, and most retellings do exactly that.
+
+**Now the rule, because the rule is what changed the opponent.** The provision Babe Ruth broke was **Article IV, Section 8(b) of the major-league code**: **"Both teams that contest in the world's series are required to disband immediately after its close and the members thereof are forbidden to participate as individuals or as a team in exhibition games during the year in which the world's championship was decided."** SABR records that a barnstorming ban had been codified in the American League in **1910** and extended to both leagues in **1916**, and that on **5 December 1921** Commissioner Landis suspended **Ruth and Bob Meusel from Opening Day to 20 May** and ordered them to return their World Series shares (Flynn, 2019).
+
+**What replaced it in 1922 is the part that matters here.** The Hall of Fame records that the rule Ruth was suspended under **"was removed by July 1922,"** and was replaced with a permission regime: a World Series player needed **the consent of his club president and then the commissioner's permission** to join a tour, **no exhibition play was allowed past 31 October**, and **no more than three players from any one club could play on a single team in an exhibition game** (National Baseball Hall of Fame, n.d.).
+
+**Read that three-player cap as a market rule and the whole picture changes.** A cap of three teammates makes a **club** legally impossible on a barnstorming date and an **all-star squad** the only available form. **So the postwar sentence "a Negro League club beat a major-league team" is almost never what the record shows.** It shows a Black club, playing together all season, against a group of white professionals assembled for the afternoon.
+
+**And here is a motive this course will not assert.** You will read that Landis's limits were adopted **because** Black teams kept beating major-league squads, and that big leaguers were made to advertise themselves as All-Star teams rather than appear under their club names or in club uniforms. **The three-player cap and the 31 October cutoff are documented as general barnstorming rules.** The claim that they were aimed at interracial games is **an interpretation that appears in secondary writing without a citation to Landis's own words**, and this course states the rule, says who reads a motive into it, and stops. The Major League code text and Landis's own office correspondence would settle it, and this course has read neither.
+
+**The numbers, and the reason to ask "out of what" before you use one.** The most quoted figure is Todd Peterson's: **African American clubs went 315-282-20, a .527 record, against big-league teams from 1900 through 1948, drawn from more than 2,000 interracial games.** The same summary also carries a second figure, **nearly 55 percent**, but that one is measured against **the best white batters, pitchers and teams they were allowed to play**, which is a wider population than "big-league teams." **Two numbers, two denominators, one author.** They are routinely blended into "Negro League teams beat major-league teams 55 percent of the time," which is **not what either figure says**. And a third number from the same book reaches you through Leslie Heaphy's review of it: **a 325-314 record in interracial competition from 1885 to 1948**, at page 94, a different span again (Heaphy, 2020).
+
+**Disclosure, in the course's own style.** The page carrying the first two figures **returned HTTP 403 to this course's fetching and the book itself was not read here.** The review was. **So .527 and "nearly 55 percent" are reported as attributed rather than as verified**, and both are filed as a source check. **Notice that this is the same discipline lesson 23 applies to Josh Gibson's home run totals, applied to a number that supports the argument rather than one that undercuts it.**
+
+**Why none of this can answer the quality question. Five reasons, and they compound.**
+1. **After 1922 the white side was usually not a team**, but a squad assembled for the day, with no manager who had worked with it and no season together.
+2. **The stakes were asymmetric.** The Black club's season revenue depended on the gate. The major leaguers were playing an October payday.
+3. **Conditioning and timing differ.** For one side these were end-of-season or off-season dates; for the other they were part of a working year that could pass 200 games.
+4. **The sample is what was ALLOWED to happen**, which is the definition of a non-random sample. What was allowed changed in 1921, changed again in 1922, and changed after that by practice.
+5. **The record is incomplete**, which is Section 6's whole subject and does not stop being true because a number flatters the right side.
+
+**So hold both halves at once, which is the move lesson 1 asked you for.** **The exhibition record is strong evidence that the exclusion was not about quality**, because if it had been about quality somebody would have produced the games showing it and nobody ever did. **And it is not a controlled comparison and cannot be used as one.** Both of those are true, at the same time, about the same games. **An argument that needs the second to be false in order to make the first feel stronger is doing advocacy, and this course is not for that.**
+
+:::reveal What three different opponents get merged into one claim about Negro League clubs playing the majors? ||| Full major-league clubs playing as themselves, mostly before 1922; all-star or pickup squads of major leaguers, which is most of what happened after 1922; and major leaguers appearing under assumed names.
+
+:::reveal What replaced the rule Babe Ruth was suspended under, and which part changed who the opponent was? ||| A permission regime from July 1922: club president's consent then the commissioner's, no exhibition play past 31 October, and no more than three players from any one club on a single exhibition team. The three-player cap made a club impossible and an all-star squad the only legal form.
+
+:::reveal What does this course refuse to assert about Landis's barnstorming limits? ||| That they were adopted because Black teams kept beating major-league squads. The cap and the cutoff are documented as general barnstorming rules; the motive is an interpretation repeated in secondary writing with no citation to Landis's own words.
+
+:::reveal Peterson's .527 and his "nearly 55 percent" are not the same claim. What is the difference? ||| The denominator. The 315-282-20 record is against big-league teams from 1900 to 1948; the "nearly 55 percent" is against the best white batters, pitchers and teams Black clubs were allowed to play, which is a wider population. Blending them produces a sentence neither figure supports.
+
+:::reveal Give the two things that are true at once about the exhibition record. ||| It is strong evidence that exclusion was not about quality, since no games were ever produced showing otherwise, and it is not a controlled comparison, because the opponent was usually a pickup squad, the stakes and conditioning were asymmetric, the sample is what was allowed to happen, and the record is incomplete.
+
+## Vocabulary
+- **Exhibition game**: a game outside any league schedule, which is the only place a Black club and major leaguers could meet, and the category the 1921 and 1922 rules governed.
+- **Denominator**: the population a rate is measured against, which is what separates Peterson's .527 from his "nearly 55 percent" and what a reader has to ask for before quoting either.
+- **Non-random sample**: a set of results produced by a selection process rather than by chance, which is exactly what "the games that were allowed to happen" means.
+- **Attributed versus verified**: a figure reported with its source named but not read directly, which is how this lesson prints .527 and says so.
+
+## Sources
+Flynn, T. S. (2019). Showdown: Babe Ruth's rebellious 1921 barnstorming tour. In *The Babe*. Society for American Baseball Research. https://sabr.org/journal/article/showdown-babe-ruths-rebellious-1921-barnstorming-tour/
+
+Heaphy, L. (2020, July 11). *Review of The Negro Leagues were major leagues* [Review of the book *The Negro Leagues were major leagues: Historians reappraise Black baseball*, by T. Peterson, Ed.]. Sport in American History. https://ussporthistory.com/2020/07/11/review-of-the-negro-leagues-were-major-leagues/
+
+National Baseball Hall of Fame. (n.d.). *At home on the road*. https://baseballhall.org/discover-more/history/barnstorming-tours`,
+    },
   ],
 };
