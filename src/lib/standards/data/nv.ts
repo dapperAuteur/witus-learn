@@ -381,9 +381,15 @@ export const JURISDICTION: JurisdictionFile = {
         {
           code: "SS.9-12.FL.5",
           text: "Analyze the costs and benefits of different types of credit and debt - including how to avoid and resolve debt problems.",
-          claimIds: ["money.cost-of-credit-apr", "money.credit-access-constraint"],
+          claimIds: [
+            "money.cost-of-credit-apr",
+            "money.credit-access-constraint",
+            "money.high-cost-credit-products",
+            "money.cost-of-credit-fee-conversion",
+            "money.rent-to-own-total-of-payments",
+          ],
           coverage: "partial",
-          note: "Partial. The cost side is taught precisely, as the annual percentage rate that TILA requires so two offers can be ranked, with the statutory computation worked; the benefit side is the course's opening premise, the timing gap that credit closes. Not covered: the survey of different TYPES of credit and debt, and how to avoid and resolve debt problems, which is behavioural debt management the course deliberately does not teach and which MONEY-03 will carry.",
+          note: "Partial, and fuller since 2026-08-28 when MONEY-04 shipped. The cost side is taught precisely, as the annual percentage rate that TILA requires so two offers can be ranked, with the statutory computation worked; the benefit side is MONEY-01's opening premise, the timing gap that credit closes. THE SURVEY OF DIFFERENT TYPES OF CREDIT AND DEBT, which this entry previously named as not covered, now exists: payday lending, vehicle title lending, rent-to-own, refund advances and overdraft, each priced from a governing statute and each expressed in the same unit so a learner can rank them. Still NOT covered: how to avoid and resolve debt problems, which is behavioural debt management the courses deliberately do not teach, and which MONEY-03 will carry.",
         },
       ],
     },

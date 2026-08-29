@@ -48,8 +48,8 @@ export const MONODRAMA_PERFORMING_COURSE: AuthoredCourse = {
 :::reveal Name three things a standing, timed, out-loud read reveals that reading on the page cannot. ||| Where you run out of breath, because a sentence that reads well may be unspeakable. Where transitions have no physical logic, because your body has to do something to move between places and standing still just looks like standing still. And how long it actually is, which is always longer than reading in your head suggests. It also exposes which passages bore you and where the writing was being evasive, both of which you feel in your own body before an audience does.
 
 ## Sources
-- Brook, P. (1968). *The empty space*. MacGibbon & Kee.
-- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge.`,
+- Brook, P. (1968). *The empty space*. MacGibbon & Kee. https://lccn.loc.gov/76367365
+- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge. https://lccn.loc.gov/00054874`,
     },
     {
       slug: "mono2-direct-address",
@@ -89,8 +89,8 @@ export const MONODRAMA_PERFORMING_COURSE: AuthoredCourse = {
 :::reveal You have held the fourth wall all evening and want to break it once. Where should it go, and why does the placement matter more than the delivery? ||| At or just after the turn, the moment the change becomes irreversible. The break works because the FORM changes, not because of anything in the line, so its power comes from everything before it having been consistent. Placed early it is just a stylistic inconsistency the audience has to absorb; placed at the turn it makes the audience complicit at exactly the moment the story stops being reversible. And it works once.
 
 ## Sources
-- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge.
-- Johnstone, K. (1979). *Impro: Improvisation and the theatre*. Faber & Faber.`,
+- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge. https://lccn.loc.gov/00054874
+- Johnstone, K. (1979). *Impro: Improvisation and the theatre*. Faber & Faber. https://lccn.loc.gov/87410325`,
     },
     {
       slug: "mono2-one-body-many-places",
@@ -121,9 +121,9 @@ export const MONODRAMA_PERFORMING_COURSE: AuthoredCourse = {
 :::reveal You are performing a conversation between three people. What single technique makes it followable, and what happens if you are inconsistent with it? ||| Give each character a fixed point in space and always turn to that spot when they speak. The audience learns the map within about two exchanges and can then track a multi-person scene performed by one body. If the positions drift, the audience loses the map immediately and the scene becomes incomprehensible, and because they are tracking it unconsciously they will not be able to tell you what went wrong, only that they stopped following.
 
 ## Sources
-- Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books.
-- Brook, P. (1968). *The empty space*. MacGibbon & Kee.
-- Chekhov, M. (1953). *To the actor: On the technique of acting*. Harper & Brothers.`,
+- Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books. https://lccn.loc.gov/93010121
+- Brook, P. (1968). *The empty space*. MacGibbon & Kee. https://lccn.loc.gov/76367365
+- Chekhov, M. (1953). *To the actor: On the technique of acting*. Harper & Brothers. https://lccn.loc.gov/52011680`,
     },
     {
       slug: "mono2-quiz-1",
@@ -299,9 +299,9 @@ That second one is the whole technique. A verb like "to accuse" changes your voi
 :::reveal A section is flat. You understand it and you have rehearsed it. What are the two questions to ask, and which is the more common failure? ||| What do I want here, stated as something another person could give or withhold, and what am I DOING to get it, stated as an active verb. The verb is the more common failure: a performer who has not chosen one defaults to describing, and describing is exactly what flat sounds like. Trying three different verbs on the same lines produces an audible difference immediately, without you having to manage voice, posture or timing directly.
 
 ## Sources
-- Stanislavski, C. (1936). *An actor prepares* (E. R. Hapgood, Trans.). Theatre Arts Books.
-- Chekhov, M. (1953). *To the actor: On the technique of acting*. Harper & Brothers.
-- Johnstone, K. (1979). *Impro: Improvisation and the theatre*. Faber & Faber.`,
+- Stanislavski, C. (1936). *An actor prepares* (E. R. Hapgood, Trans.). Theatre Arts Books. https://lccn.loc.gov/36033384
+- Chekhov, M. (1953). *To the actor: On the technique of acting*. Harper & Brothers. https://lccn.loc.gov/52011680
+- Johnstone, K. (1979). *Impro: Improvisation and the theatre*. Faber & Faber. https://lccn.loc.gov/87410325`,
     },
     {
       slug: "mono2-voice-and-breath",
@@ -331,8 +331,8 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
 :::reveal Why does the course insist you mark breath BEFORE memorising rather than after? ||| Because you memorize the breathing along with the words: the pattern of where you inhale becomes part of the muscle memory of the text. Retrofitting a breath plan afterwards means fighting a habit you have already trained, which is much harder than establishing it correctly the first time. It also matters because adrenaline shortens your breath in performance, so a plan that was never deliberate will collapse exactly when you need it.
 
 ## Sources
-- Linklater, K. (1976). *Freeing the natural voice*. Drama Book Specialists.
-- Berry, C. (1973). *Voice and the actor*. Harrap.`,
+- Linklater, K. (1976). *Freeing the natural voice*. Drama Book Specialists. https://lccn.loc.gov/75028172
+- Berry, C. (1973). *Voice and the actor*. Harrap. https://lccn.loc.gov/73177694`,
     },
     {
       slug: "mono2-memorisation",
@@ -369,8 +369,8 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
 :::reveal A performer goes blank mid-piece. Why does knowing the WANT rescue them where knowing the words does not? ||| Because rote memory is a single sequence: when adrenaline interrupts it, there is no alternative route and nothing underneath. Knowing what the speaker is trying to get at that moment lets you improvise your way forward in your own words and rejoin the text at the next landmark, because you wrote it and can paraphrase it. Words give you one path; intention gives you the whole map.
 
 ## Sources
-- Stanislavski, C. (1936). *An actor prepares* (E. R. Hapgood, Trans.). Theatre Arts Books.
-- Bogart, A., & Landau, T. (2005). *The Viewpoints book: A practical guide to Viewpoints and composition*. Theatre Communications Group.`,
+- Stanislavski, C. (1936). *An actor prepares* (E. R. Hapgood, Trans.). Theatre Arts Books. https://lccn.loc.gov/36033384
+- Bogart, A., & Landau, T. (2005). *The Viewpoints book: A practical guide to Viewpoints and composition*. Theatre Communications Group. https://lccn.loc.gov/2004024021`,
     },
     {
       slug: "mono2-quiz-2",
@@ -546,8 +546,8 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
 :::reveal Why is "I am bored of my own piece at week four" a bad reason to rewrite it? ||| Because staleness is a property of repetition rather than of the material: everything goes flat at week four, and your excitement is the one instrument that has definitely degraded. The reliable tests are structural, whether the wants are still specific and the transitions still connect, and those you can check without trusting your enthusiasm. Rewriting on boredom usually removes the parts you have heard most often, which are frequently the ones doing the most work.
 
 ## Sources
-- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge.
-- Bogart, A., & Landau, T. (2005). *The Viewpoints book: A practical guide to Viewpoints and composition*. Theatre Communications Group.`,
+- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge. https://lccn.loc.gov/00054874
+- Bogart, A., & Landau, T. (2005). *The Viewpoints book: A practical guide to Viewpoints and composition*. Theatre Communications Group. https://lccn.loc.gov/2004024021`,
     },
     {
       slug: "mono2-tech-minimum",
@@ -578,8 +578,8 @@ If you have one usable effect, spend it on the turn.
 :::reveal What is the single question that should govern every technical choice in a touring solo show, and what does it rule out? ||| If it breaks, can you still do the show? It rules out any cue the piece DEPENDS on: a sound that must play for a section to make sense, a lighting state without which a moment does not land, a video the whole ending rests on. Every cue should be an enhancement, because a piece that cannot survive a failed cue is a piece that will one day not happen, and solo shows routinely tour to rooms with no technician.
 
 ## Sources
-- Brook, P. (1968). *The empty space*. MacGibbon & Kee.
-- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge.`,
+- Brook, P. (1968). *The empty space*. MacGibbon & Kee. https://lccn.loc.gov/76367365
+- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge. https://lccn.loc.gov/00054874`,
     },
     {
       slug: "mono2-safety",
@@ -613,8 +613,8 @@ If you have one usable effect, spend it on the turn.
 :::reveal What is the difference between performing a difficult memory and re-living it, and why does audience response make the distinction hard to hold? ||| Performing means remaining in control of the telling: you are describing the day rather than being back inside it. Re-living means the event is happening to you again in front of people, and audiences usually read that as frightening rather than moving. It is hard to hold because audiences respond strongly to visible distress, which creates a feedback loop where the more the piece costs you, the better it can seem to be going, so the incentive runs precisely against your interest.
 
 ## Sources
-- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge.
-- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group.`,
+- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge. https://lccn.loc.gov/00054874
+- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group. https://lccn.loc.gov/98049391`,
     },
     {
       slug: "mono2-capstone",
@@ -672,16 +672,16 @@ If you have one usable effect, spend it on the turn.
 :::reveal Without looking back, give the governing question for technical choices and the governing question for a flat section. ||| For technical choices: if it breaks, can you still do the show? Every cue should enhance rather than carry the piece, because a solo show that depends on a cue will one day not happen. For a flat section: what am I DOING here, stated as an active verb? A performer who has not chosen a verb defaults to describing, and describing is what flat sounds like.
 
 ## Sources
-- Berry, C. (1973). *Voice and the actor*. Harrap.
-- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge.
-- Bogart, A., & Landau, T. (2005). *The Viewpoints book: A practical guide to Viewpoints and composition*. Theatre Communications Group.
-- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group.
-- Brook, P. (1968). *The empty space*. MacGibbon & Kee.
-- Chekhov, M. (1953). *To the actor: On the technique of acting*. Harper & Brothers.
-- Johnstone, K. (1979). *Impro: Improvisation and the theatre*. Faber & Faber.
-- Linklater, K. (1976). *Freeing the natural voice*. Drama Book Specialists.
-- Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books.
-- Stanislavski, C. (1936). *An actor prepares* (E. R. Hapgood, Trans.). Theatre Arts Books.`,
+- Berry, C. (1973). *Voice and the actor*. Harrap. https://lccn.loc.gov/73177694
+- Bogart, A. (2001). *A director prepares: Seven essays on art and theatre*. Routledge. https://lccn.loc.gov/00054874
+- Bogart, A., & Landau, T. (2005). *The Viewpoints book: A practical guide to Viewpoints and composition*. Theatre Communications Group. https://lccn.loc.gov/2004024021
+- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group. https://lccn.loc.gov/98049391
+- Brook, P. (1968). *The empty space*. MacGibbon & Kee. https://lccn.loc.gov/76367365
+- Chekhov, M. (1953). *To the actor: On the technique of acting*. Harper & Brothers. https://lccn.loc.gov/52011680
+- Johnstone, K. (1979). *Impro: Improvisation and the theatre*. Faber & Faber. https://lccn.loc.gov/87410325
+- Linklater, K. (1976). *Freeing the natural voice*. Drama Book Specialists. https://lccn.loc.gov/75028172
+- Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books. https://lccn.loc.gov/93010121
+- Stanislavski, C. (1936). *An actor prepares* (E. R. Hapgood, Trans.). Theatre Arts Books. https://lccn.loc.gov/36033384`,
     },
   ],
 };

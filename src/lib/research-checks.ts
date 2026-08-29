@@ -973,6 +973,135 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "https://baseballhall.org/hall-of-famers/paige-satchel",
     ],
   },
+  // ── Section 7, Outside the league (added 2026-08-29) ──────────────────────────────────────────
+  // Five more hedges, written on purpose, from the HBCU and international research. Two of them are
+  // the highest-value unread documents in the whole subject: a Black college conference's own
+  // eligibility rules, and Landis's own words about why he capped barnstorming teams.
+  {
+    key: "nl-ciaa-eligibility-rules",
+    course: "negro-leagues",
+    lesson: "nl-college-and-club",
+    quote:
+      "Their eligibility articles between 1912 and 1950 would settle whether the missing games are a rule or a gap, and this course has not read them.",
+    title: "Did the CIAA, SIAC or SWAC write and enforce an amateur eligibility rule?",
+    severity: "high",
+    question:
+      "What did the Colored Intercollegiate Athletic Association, the Southern Intercollegiate Athletic Conference and the Southwestern Athletic Conference actually say in their constitutions and eligibility articles, between 1912 and 1950, about a student playing professional baseball?",
+    claim:
+      "The lesson argues that the assumed names Larry Doby and Monte Irvin used are the signature of a rule being broken, so the absence of any documented game between a Negro League club and a Black college team may be a finding rather than a gap. It labels that as a hypothesis, states that Oriard's amateur-code evidence describes the NCAA and white colleges, and says plainly that the Black conferences' own rules have not been read.",
+    stakes:
+      "The single highest-value missing document in this subject. If a Black college conference wrote and enforced an amateur rule, the relationship between the two games was regulated and adversarial exactly where they touched, the missing games become evidence, and the lesson can state its argument instead of hedging it. If no such rule existed, the missing games are a gap in newspaper indexing and the hedge stays permanently. Either answer improves the lesson; guessing would wreck it.",
+    needs: [
+      "The text of the eligibility article on professionalism, with the year it was adopted and any later amendment",
+      "Any recorded enforcement: a player ruled ineligible, a protest, a forfeited game",
+      "Whether the rule distinguished summer baseball for expense money from a signed professional contract, which is the distinction the pseudonyms turn on",
+    ],
+    where: [
+      "Hampton University archives, where the CIAA was founded in 1912, and the CIAA's own records",
+      "Virginia Union and Howard university archives, both charter CIAA members",
+      "The SWAC's centennial materials and its founding minutes, and the SIAC's own records",
+    ],
+  },
+  {
+    key: "nl-forty-percent-college",
+    course: "negro-leagues",
+    lesson: "nl-college-and-club",
+    quote:
+      "No published methodology, roster count or study appears with it anywhere, and the comparison usually printed beside it, less than 5 percent of white major leaguers, has no source at all.",
+    title: "Is there any basis for 'about 40 percent of Negro League players were college educated'?",
+    severity: "medium",
+    question:
+      "Does Bob Kendrick, or the Diverse: Issues In Higher Education article that reports him, name any roster count, study or methodology behind the estimate that about 40 percent of Negro League players were college educated? And where does the companion figure for white major leaguers come from?",
+    claim:
+      "The lesson names Kendrick and the outlet, states that no methodology is published with the figure anywhere, records that the article returns HTTP 403 to automated fetching and was NOT read in full for this course, and refuses to print the number as a count. It treats it as the same class of figure as the unfootnoted $100,000 a year the course already refuses.",
+    stakes:
+      "It is the only quantified claim in the whole HBCU story, so every popular retelling rests on it. If a methodology exists, the lesson should report the number properly and the refusal comes out. If none does, the refusal is the finding and should be stated more sharply than it currently is. Separately, a roster-based count is genuinely doable from Seamheads or the Baseball Reference Negro Leagues register and does not appear to have been published by anyone, which would make it original work worth commissioning.",
+    needs: [
+      "The article read in full, with its author and publication date",
+      "Kendrick's exact words and whether he or the reporter names any basis for 40 percent",
+      "Any source at all for the 'less than 5 percent of white major leaguers' comparison",
+    ],
+    where: [
+      "diverseeducation.com/article/71229/, which 301s to theeduledger.com and returns 403 to automated fetchers but should resolve in a browser",
+      "The Negro Leagues Baseball Museum in Kansas City, directly",
+      "Seamheads' Negro Leagues Database and the Baseball Reference Negro Leagues register, for a roster-based count nobody appears to have run",
+    ],
+  },
+  {
+    key: "nl-landis-barnstorming-motive",
+    course: "negro-leagues",
+    lesson: "nl-playing-the-majors",
+    quote:
+      "The claim that they were aimed at interracial games is an interpretation that appears in secondary writing without a citation to Landis's own words, and this course states the rule, says who reads a motive into it, and stops.",
+    title: "Were the 1922 barnstorming limits aimed at interracial games?",
+    severity: "medium",
+    question:
+      "Is there any document in Kenesaw Mountain Landis's own hand, or in the major-league code itself, showing that the three-player cap, the 31 October cutoff or the All-Star billing requirement were adopted in response to Black clubs beating major-league squads?",
+    claim:
+      "The lesson states the rules as documented general barnstorming rules, sourced to the Hall of Fame, and explicitly declines to assert the motive that secondary writing attaches to them. It names the documents that would settle it.",
+    stakes:
+      "The motive is repeated as fact almost everywhere and it changes the meaning of the whole exhibition record: a rule adopted to hide results is a different object from a rule adopted to protect the World Series brand. Asserting it without a document would be exactly the failure this course teaches students to catch, and refusing it without looking would be lazy.",
+    needs: [
+      "The text of the major-league code provisions as amended in 1922, in full",
+      "Any Landis office correspondence, memorandum or public statement bearing on interracial exhibitions",
+      "The earliest secondary source to attach the motive, and what it cites",
+    ],
+    where: [
+      "The Chicago History Museum, which holds a Kenesaw Mountain Landis collection",
+      "The National Baseball Hall of Fame Giamatti Research Center, for the code text and commissioner's office files",
+      "Contemporaneous coverage in The Sporting News and the Pittsburgh Courier for 1921 and 1922",
+    ],
+  },
+  {
+    key: "nl-wells-courier-interview",
+    course: "negro-leagues",
+    lesson: "nl-market-was-international",
+    quote:
+      "The version that circulates adds a reporter, Wendell Smith, and a year, 1944. The reference this course could open names neither, so the byline and the date are not stated here and are filed as a source check.",
+    title: "Which issue of the Pittsburgh Courier carries the Willie Wells interview?",
+    severity: "medium",
+    question:
+      "What is the exact date, page and byline of the Pittsburgh Courier item in which Willie Wells said he had found freedom and democracy in Mexico, and what is the full unelided quotation?",
+    claim:
+      "The lesson quotes one sentence, attributes it to the Pittsburgh Courier through Eric Enders's encyclopedia entry, and states that the reference it could open names neither the reporter nor the year, so it prints neither. The circulating version credits Wendell Smith in 1944.",
+    stakes:
+      "It is the strongest single piece of testimony in the international lesson: a named player, in a Black-owned paper, in the period, explaining his own employment decision. A course that leans on a quotation this hard should be able to say which issue it came out of. The quotation also circulates at several different lengths, and the versions differ, so the ellipses matter.",
+    needs: [
+      "The issue date and page, and the reporter's byline",
+      "The full quotation as printed, with nothing elided",
+      "Whether the widely quoted line 'Here in Mexico, I am a man' is from the same item",
+    ],
+    where: [
+      "The Pittsburgh Courier for 1944, on microfilm or in ProQuest's Historical Black Newspapers",
+      "The Wendell Smith Papers at the National Baseball Hall of Fame",
+      "Eric Enders, who wrote the encyclopedia entry the course cites",
+    ],
+  },
+  {
+    key: "nl-peterson-interracial-record",
+    course: "negro-leagues",
+    lesson: "nl-playing-the-majors",
+    quote:
+      "The page carrying the first two figures returned HTTP 403 to this course's fetching and the book itself was not read here. The review was. So .527 and nearly 55 percent are reported as attributed rather than as verified.",
+    title: "Verify Peterson's interracial won-lost figures and their two denominators",
+    severity: "medium",
+    question:
+      "In Todd Peterson's work, what exactly is the 315-282-20 record measured against and over what corpus, what is the 'nearly 55 percent' figure measured against, and how does the 325-314 record for 1885 to 1948 that Leslie Heaphy's review reports at page 94 relate to both?",
+    claim:
+      "The lesson prints all three numbers, says they have three different scopes, warns against the blended sentence that circulates, and labels the first two as attributed rather than verified because the page carrying them returns 403 and the book was not read for this course.",
+    stakes:
+      "This is the number the whole 'they were good enough' argument rests on, and the course uses it while telling students that a rate without a denominator is not a fact. Getting the scopes exactly right, from the book itself, is the difference between the lesson modelling the discipline and merely describing it. It also matters that this is a figure that FLATTERS the course's own argument, which is precisely when the discipline is hardest to hold.",
+    needs: [
+      "The 315-282-20 record and its stated opponent population and years, quoted from the source",
+      "The 'nearly 55 percent' figure and its stated population, quoted from the source",
+      "How the appendix defines an interracial game, and what produced the 2,000-plus game corpus",
+    ],
+    where: [
+      "Todd Peterson (Ed.), The Negro Leagues Were Major Leagues: Historians Reappraise Black Baseball (McFarland, 2019), read directly",
+      "baseball-reference.com/articles/negro-leagues-major-leagues-todd-peterson.shtml, which returns 403 to automated fetch but should resolve in a browser",
+      "Leslie Heaphy's review at ussporthistory.com, 11 July 2020, which was read and supplies the 325-314 figure at page 94",
+    ],
+  },
   // ── Who Gets the Credit (Black inventors and attribution) ────────────────────────────────────
   {
     key: "blair-colored-man-notation",
@@ -2814,6 +2943,320 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "fdic.gov, the Your Insured Deposits brochure and the deposit insurance FAQ",
       "12 CFR part 330, for the FDIC's own coverage rules, read on ecfr.gov",
       "Any FDIC advisory or financial institution letter on prepaid and payment app balances",
+    ],
+  },
+
+  // ── MONEY-03 · Cash Flow, and When the Money Actually Moves ────────────────
+  {
+    key: "timing-regcc-business-day-juneteenth",
+    course: "cash-flow-timing",
+    lesson: "business-day-banking-day",
+    quote:
+      "Regulation CC's definition of a business day does not name June 19, so a day on which a bank is closed for Juneteenth is still a business day for counting an availability deadline",
+    title: "Has 12 CFR 229.2's definition of business day been amended to add June 19?",
+    severity: "high",
+    question:
+      "Open the current eCFR text of 12 CFR 229.2 in a browser and read the definition of 'business day' in full. Does its list of excluded dates include June 19, or does it still name only the ten dates (January 1, the third Monday in January, the third Monday in February, the last Monday in May, July 4, the first Monday in September, the second Monday in October, November 11, the fourth Thursday in November, December 25)? If it has been amended, name the Federal Register document that did it and its effective date.",
+    claim:
+      "The course prints the ten-date list verbatim, prints the eleven legal public holidays of 5 U.S.C. 6103(a) verbatim beside it, and states that June 19 is in the second list and not the first, checked on 28 August 2026 against the Government Publishing Office's Code of Federal Regulations title 12 text and a secondary rendering of the same section. It then draws one conclusion and no more: a day a bank is closed for Juneteenth can be a business day for counting while not being a banking day for depositing.",
+    stakes:
+      "High, because the comparison is taught twice and used as the course's headline example of why a defined term must be read rather than assumed. Section 1 builds the counting rules on it and Section 5 returns to it when the benefit-payment rule turns out to use the OTHER list. If the Board has since amended the definition, the striking fact becomes a wrong fact in the one place the course asks a learner to trust a close reading.",
+    needs: [
+      "The current eCFR text of the business-day definition at 12 CFR 229.2, read in a browser, with the date read",
+      "The eCFR 'last amended' date shown on that section",
+      "If amended, the Federal Register citation and effective date of the amendment",
+      "Whether any Board commentary or appendix to part 229 addresses Juneteenth separately",
+    ],
+    where: [
+      "ecfr.gov, title 12, part 229, section 229.2, opened in a browser (automated fetches are refused)",
+      "govinfo.gov, the annual Code of Federal Regulations edition for title 12, for a dated snapshot",
+      "federalregister.gov, searched for amendments to part 229 since 2021",
+    ],
+  },
+  {
+    key: "timing-regcc-threshold-cycle",
+    course: "cash-flow-timing",
+    lesson: "why-a-schedule-exists",
+    quote:
+      "the figures in force from 1 July 2025 were $275 for the minimum amount of a day's check deposits that must be available on the next business day, $550 for the amount that must be available for cash withdrawal, and $6,725 for the large-deposit and new-account thresholds",
+    title: "Are the Regulation CC dollar thresholds and civil-liability amounts still the 2025 figures, and when is the next adjustment?",
+    severity: "high",
+    question:
+      "Confirm, against the current regulation rather than a summary, the four figures this course prints with a date: the minimum availability amount in 12 CFR 229.10(c)(1)(vii), the cash-withdrawal amount in 229.12(d), the large-deposit and new-account threshold in 229.13, and the civil-liability amounts in 229.21(a) ($125 and $1,350 for an individual action, $672,950 for a class). Then find the date the NEXT five-year adjustment under 12 U.S.C. 4006(f) takes effect, and whether a rule making it has already been published.",
+    claim:
+      "The course prints each figure with the words 'as read on 28 August 2026' and teaches the adjustment clause itself as the reason no figure in this area should be memorised. It states that the amounts took effect on 1 July 2025 and names the prior figures ($225, $450, $5,525) so a reader can see the direction of travel.",
+    stakes:
+      "High, and it is a scheduled failure rather than a possible one. The statute guarantees these numbers will move, so the only question is whether the lesson is re-dated before or after they do. An educator planning against a stale threshold is the exact failure the course's own method-not-table rule exists to prevent, and it would be embarrassing for it to happen inside the lesson that teaches the rule.",
+    needs: [
+      "Each of the four figures as the current regulation prints them, with the section number and the date read",
+      "The effective date of the next scheduled adjustment under 12 U.S.C. 4006(f)",
+      "Whether a final rule making that adjustment has been published, and its Federal Register citation",
+      "Whether the civil-liability amounts in 229.21(a) are adjusted on the same cycle as the availability thresholds",
+    ],
+    where: [
+      "ecfr.gov, title 12, part 229, sections 229.10, 229.12, 229.13 and 229.21",
+      "federalregister.gov, searched for 'Availability of Funds and Collection of Checks threshold adjustments'",
+      "The Federal Reserve Board's press releases on Regulation CC threshold adjustments",
+    ],
+  },
+  {
+    key: "timing-ucc-4-303-state-variation",
+    course: "cash-flow-timing",
+    lesson: "any-order-convenient",
+    quote:
+      "the operative rule for you is your own state's enactment of Article 4. The section number is usually the same and the words usually are too",
+    title: "Do any states vary U.C.C. 4-303(b), or otherwise constrain posting order on consumer accounts?",
+    severity: "medium",
+    question:
+      "The course quotes the uniform text of U.C.C. 4-303(b) and tells the learner to find their own state's enactment, on the ground that the words are 'usually' the same. Is that hedge right? Identify whether any state has enacted a non-uniform version of section 4-303, and separately whether any state statute, banking regulation or attorney-general settlement constrains the order in which a bank may post consumer transactions. Name any state that does and quote the provision.",
+    claim:
+      "The course teaches the uniform text as the rule, says explicitly that the code is enacted state by state so the citation that governs an account is a state statute, and sets finding your own state's enactment as the exercise. It surveys no state and publishes no fifty-state table, by the same method-not-table rule it applies to payday statutes.",
+    stakes:
+      "Medium. The uniform text is the right thing to teach and the arithmetic that follows from it is unaffected either way. But 'usually the same' is a hedge, and if even one state has legislated a posting-order constraint for consumer accounts, that is a genuinely important exception a learner in that state should be pointed at rather than left to discover.",
+    needs: [
+      "Whether any state has a non-uniform enactment of section 4-303, and the text if so",
+      "Whether any state statute or banking rule fixes or constrains consumer posting order",
+      "Whether any state attorney-general settlement or consent order does so for a named institution",
+      "The date each item was checked",
+    ],
+    where: [
+      "The Uniform Law Commission's enactment map and state variation notes for U.C.C. Article 4",
+      "Each candidate state's own code, read on the legislature's site rather than a mirror",
+      "State banking department regulations and attorney-general press offices",
+    ],
+  },
+  {
+    key: "timing-pay-frequency-distribution",
+    course: "cash-flow-timing",
+    lesson: "four-different-years",
+    quote:
+      "it is arithmetic, and it is the most load-bearing arithmetic in this course",
+    title: "What is the current published distribution of pay-period lengths among US private establishments?",
+    severity: "low",
+    question:
+      "The Bureau of Labor Statistics publishes a Current Employment Statistics page on the length of pay periods among private establishments, giving the share paid weekly, biweekly, semimonthly and monthly. Retrieve the current figures, the reference period they describe, and the page's own publication or update date, by opening the page in a browser.",
+    claim:
+      "The course publishes NO distribution figure. It teaches the four annual counts (52, 26, 24, 12) as arithmetic, teaches the mechanism behind each schedule, and says nothing about how common any of them is. The omission is deliberate: the BLS page refused automated retrieval when the lesson was written on 28 August 2026, and the fetch-or-do-not-cite rule then forbids the number.",
+    stakes:
+      "Low, and it is an enrichment rather than a correction. Nothing in the course depends on the distribution, and the lesson stands without it. But a dated, cited sentence saying which schedule most people are actually on would make the biweekly-against-semimonthly distinction land harder for a reader trying to work out which one applies to them.",
+    needs: [
+      "The four percentages, with the reference month or period they describe",
+      "The exact title of the BLS page and its publication or last-updated date",
+      "Whether BLS states any caveat about how the figures are collected",
+      "The date you read it",
+    ],
+    where: [
+      "bls.gov/ces/publications/length-pay-period.htm, opened in a browser (automated fetches return 403)",
+      "The BLS Current Employment Statistics methods pages, for how the pay period is captured",
+      "bls.gov/opub/ted, for any Economics Daily article summarising the same data",
+    ],
+  },
+  {
+    key: "timing-ssa-derivative-beneficiary-birth-date",
+    course: "cash-flow-timing",
+    lesson: "when-a-benefit-arrives",
+    quote:
+      "Insured individuals born on the 1st through the 10th of the month will be paid on the second Wednesday of each month",
+    title: "Whose birth date sets the monthly payment day for a spouse's or child's benefit?",
+    severity: "medium",
+    question:
+      "20 CFR 404.1807 assigns a monthly payment day by reference to a date of birth, and the sentences the course quotes speak of 'insured individuals'. For a benefit paid on another person's earnings record (a spouse, a surviving spouse, a child), whose birth date governs: the beneficiary's own, or that of the worker on whose record entitlement is based? Quote the regulatory text or the agency's own published statement that settles it.",
+    claim:
+      "The lesson quotes the three bracket sentences and the weekend-and-holiday substitution sentence verbatim, and stops there. It states the rule as the regulation states it and does not address the derivative-beneficiary case in either direction, because it was not resolved verbatim when the lesson was written on 28 August 2026.",
+    stakes:
+      "Medium, and it lands on exactly the readers this lesson is written for. The point of the lesson is that a benefit date is computable a year ahead by anybody; a reader receiving a spouse's or a child's benefit who computes from the wrong birth date gets a wrong date and, worse, believes the method failed rather than that they applied it wrongly.",
+    needs: [
+      "The full current text of 20 CFR 404.1807, including any paragraph addressing benefits on another person's record",
+      "The agency's own published payment-schedule explanation and which birth date it tells beneficiaries to use",
+      "Whether any category of beneficiary is excluded from the birth-date brackets altogether",
+      "The date you read each source",
+    ],
+    where: [
+      "ecfr.gov, title 20, section 404.1807, opened in a browser",
+      "The Social Security Administration's own published schedule of benefit payment dates",
+      "The agency's programme operations manual, for the internal statement of the same rule",
+    ],
+  },
+  {
+    key: "timing-instant-payment-reach",
+    course: "cash-flow-timing",
+    lesson: "instant-and-irrevocable",
+    quote:
+      "Which institutions offer instant payment, what limits they set, and which competing networks operate alongside the Federal Reserve's service are all things that change",
+    title: "How widely available is instant payment to consumers, and what are the current participation figures?",
+    severity: "low",
+    question:
+      "The lesson uses two cited facts from the operator (the live date and the twenty-four-hour business day) and deliberately asserts nothing about reach. Retrieve, with dates: how many financial institutions currently participate in the Federal Reserve's instant payment service, whether the operator publishes a participant list, and whether it publishes any statement about typical consumer send limits. Note also whether the operator describes any competing private instant network in its own materials.",
+    claim:
+      "The lesson states only that the service went live on 20 July 2023, that it has a twenty-four-hour business day each day of the week including weekends and holidays, and that it settles in near real time on a gross basis, each cited to the operator and dated 28 August 2026. It then tells the learner that participation, limits and hours are a term of their own account documents, and stops.",
+    stakes:
+      "Low. The lesson's teaching point is the trade between settlement speed and the interval a stop-payment right needs, and that argument is unaffected by how many institutions have joined. A participation figure would make the lesson feel current, which is precisely why it needs a date attached before it goes in.",
+    needs: [
+      "The current participant count and whether a public participant list exists",
+      "Any operator statement about consumer send limits or hours of availability",
+      "Whether the operator names competing instant networks in its own published materials",
+      "The date each figure was read",
+    ],
+    where: [
+      "federalreserve.gov/paymentsystems, the instant payment service pages",
+      "The operator's own service pages for financial institutions, including any published participant list",
+      "The Federal Reserve's payments-improvement publications, for dated adoption statements",
+    ],
+  },
+  // ── MONEY-04 · Predatory Products, Priced ─────────────────────────────────────────────────────
+  {
+    key: "predatory-state-lending-rules-current",
+    course: "predatory-products",
+    lesson: "find-your-states-rule",
+    quote:
+      "Both statements are true right now. Neither is the national position, because there is no national position",
+    title: "Are the Florida, New York, Virginia and Georgia lending provisions still as quoted?",
+    severity: "high",
+    question:
+      "As of the date you check, do Fla. Stat. 560.404 (the 10 percent fee cap, the 500 dollar face amount, the 7-to-31-day term, the rollover ban and the 60-day grace period), N.Y. Penal Law 190.40 (criminal usury at twenty-five per centum per annum), Va. Code 6.2-2216 (36 percent simple annual on a motor vehicle title loan and its closed list of other charges) and O.C.G.A. 44-12-131 (25 percent per 30-day period for the first 90 days, 12.5 percent thereafter) still read as this course quotes them, and has any of the four been amended or repealed?",
+    claim:
+      "The course quotes all four verbatim, dates each to 28 August 2026, and uses the Florida and New York pair as its proof that there is no national rule. It prints no national rate or cap anywhere and teaches the method of finding a state's own rule instead, so a change in one of these does not invalidate the method. It does invalidate the specific worked arithmetic in Section 2, which is computed from the Florida and Georgia ceilings.",
+    stakes:
+      "State small-dollar lending statutes are the most amendment-prone material in the entire MONEY series, and this course leans on four of them to teach that the answers differ. A repealed or amended provision quoted as current would be a false statement of law shown to a learner deciding whether an offer in front of them is lawful, which is the most consequential kind of error this catalog can make.",
+    needs: [
+      "For each of the four, whether the section is still in force and whether its text has changed",
+      "The current fee cap, face-amount ceiling, term range and rollover rule in Fla. Stat. 560.404",
+      "The current rate in N.Y. Penal Law 190.40 and its offence grading",
+      "The current rate and permitted-charge list in Va. Code 6.2-2216",
+      "The current per-period ceilings in O.C.G.A. 44-12-131",
+      "The date you read each one",
+    ],
+    where: [
+      "The Florida Senate's own statute pages, flsenate.gov/Laws/Statutes",
+      "The New York State Senate's legislation pages, nysenate.gov/legislation/laws/PEN",
+      "Virginia Law, law.lis.virginia.gov, for title 6.2 chapter 22",
+      "Georgia's published code for title 44 chapter 12, and the Georgia Department of Banking and Finance",
+    ],
+  },
+  {
+    key: "predatory-sentinel-current-edition",
+    course: "predatory-products",
+    lesson: "who-is-targeted-from-the-record",
+    quote:
+      "was the most recent listed on the Commission's own report index when this course was written",
+    title: "Has the FTC published a Consumer Sentinel Network Data Book after the 2024 edition?",
+    severity: "medium",
+    question:
+      "As of the date you check, what is the most recent Consumer Sentinel Network Data Book the FTC lists on its own reports index, and what does that edition say about total reports, fraud reports, identity theft reports through IdentityTheft.gov, total reported losses, and the payment methods behind the largest reported losses? Does it still carry the caution that the data is based on unverified reports and is not a consumer survey?",
+    claim:
+      "The course states that the 2024 edition, published March 2025, was the most recent listed on the Commission's own report index when it was written on 28 August 2026, and it quotes that edition's figures with that date attached. It quotes the FTC's own caution verbatim before using any figure, and it uses the enforcement record rather than the reports as its primary evidence about who is targeted, so a newer edition changes the numbers rather than the argument.",
+    stakes:
+      "A course that names a report as the most recent when a newer one exists looks careless in exactly the place it is asking a reader to be careful about evidence. The figures themselves are secondary here, deliberately, but the claim about which edition is current is checkable and should be right.",
+    needs: [
+      "The most recent Data Book edition and its publication date, from the FTC's own reports index",
+      "That edition's totals for consumer reports, fraud reports, identity theft reports and reported losses",
+      "Whether the payment-method finding about bank transfers and cryptocurrency still holds",
+      "The exact wording of its caution about unverified reports, quoted",
+      "The date you checked",
+    ],
+    where: [
+      "ftc.gov/policy/reports, filtered to Consumer Sentinel Network",
+      "The Data Book PDF itself, for the caution and the figures",
+      "The FTC press release accompanying the current edition",
+    ],
+  },
+  {
+    key: "predatory-irs-free-preparation-thresholds",
+    course: "predatory-products",
+    lesson: "the-refund-loan-and-the-transfer",
+    quote: "89,000 dollars on the page read on **28 August 2026**",
+    title: "What are the current IRS Free File and VITA eligibility figures, and does Free File still ban RAL sales?",
+    severity: "medium",
+    question:
+      "As of the date you check, what adjusted gross income threshold applies to IRS Free File guided tax software, does Free File Fillable Forms still carry no income limit, what income figure does the VITA page state, does TCE still name people aged 60 and over, and does the Free File program still list the selling of bank products such as a refund anticipation loan among its prohibitions?",
+    claim:
+      "The course states 89,000 dollars for guided software and generally 69,000 dollars or less for VITA, both dated 28 August 2026 in the lesson, names TCE as particularly serving people aged 60 and over, and quotes the Free File prohibition on selling bank products such as a refund anticipation loan. The prohibition is the load-bearing citation, because it is the tax authority naming this course's subject and excluding it from its own free channel.",
+    stakes:
+      "The two income figures reset with the filing season, so they will be wrong within a year and the lesson dates them for exactly that reason. The prohibition is the sentence that would matter most if it changed: it is quoted as evidence that the IRS treats the product as something to keep out of a free channel, and the argument in the lesson leans on it.",
+    needs: [
+      "The current guided-software adjusted gross income threshold on the IRS Free File page",
+      "Whether Free File Fillable Forms still has no income limit",
+      "The current VITA income figure and the TCE age description",
+      "Whether the Free File benefits list still names refund anticipation loans among prohibited bank products, quoted",
+      "The date you read each page",
+    ],
+    where: [
+      "irs.gov/filing/irs-free-file-do-your-taxes-for-free",
+      "irs.gov/individuals/free-tax-return-preparation-for-qualifying-taxpayers",
+    ],
+  },
+  {
+    key: "predatory-reg-e-authority-and-parts",
+    course: "predatory-products",
+    lesson: "unauthorized-has-a-definition",
+    quote: "12 CFR part 1005",
+    title: "Is Regulation E still at 12 CFR part 1005, and are 1005.2(m), 1005.6 and 1005.11 unchanged?",
+    severity: "high",
+    question:
+      "As of the date you check, is Regulation E still codified at 12 CFR part 1005 under the same issuing authority, and do 1005.2(m), 1005.3(c), 1005.6, 1005.11 and 1005.17 still read as this course quotes them? Have the official interpretations to 1005.2(m) on a furnished access device and on a device obtained through fraud or robbery been amended? Are the corresponding Regulation Z provisions at 12 CFR 1026.2(a)(16) and 1026.12 unchanged?",
+    claim:
+      "The course quotes all of these verbatim, read on 28 August 2026, and it deliberately does not describe any agency's current footing in the present tense, for the reason MONEY-01 established and filed as its own check. The entire fifth section, which the course calls the most useful thing it teaches, is built on the 1005.2(m) definition and the machinery that attaches to it.",
+    stakes:
+      "Higher than the corresponding MONEY-01 check, because this course does not merely cite these parts, it teaches the difference between two outcomes that turn on a single definition. If a part has been redesignated the citations change even though the rights do not, and a learner sent to a rule that is not there loses the one thing this course was written to give them. If the definition or the commentary has been amended, the central lesson needs rewriting rather than renumbering.",
+    needs: [
+      "The current part number and issuing authority for Regulation E, as eCFR prints it",
+      "The current text of 1005.2(m) with its three exclusions",
+      "The current text of the official interpretations to 1005.2(m), on a furnished device and on fraud or robbery",
+      "The current liability tiers in 1005.6 and clocks in 1005.11",
+      "Whether 12 CFR 1026.2(a)(16) and 1026.12(b) and (c) are unchanged",
+      "The date you read each one",
+    ],
+    where: [
+      "eCFR, for parts 1005 and 1026 and the supplement I interpretations",
+      "The Federal Register, for any redesignation, stay or amendment",
+    ],
+  },
+  {
+    key: "predatory-mla-cap-and-coverage",
+    course: "predatory-products",
+    lesson: "one-class-congress-capped",
+    quote: "may not impose an MAPR greater than 36 percent in connection with an extension of consumer credit",
+    title: "Is the Military Lending Act cap still 36 percent, and is its coverage unchanged?",
+    severity: "medium",
+    question:
+      "As of the date you check, does 10 U.S.C. 987(b) still cap the annual percentage rate at 36 percent for covered borrowers, does 32 CFR 232.4(b) still state the same figure as an MAPR limit, are the charges 232.4(c) sweeps into the MAPR unchanged, and are the exclusions at 232.3(f) (residential mortgages, purchase-money vehicle loans, credit secured by the personal property it finances) unchanged?",
+    claim:
+      "The course quotes the statute and the rule verbatim, read on 28 August 2026, and builds a whole lesson on the fact that Congress capped this price for one named class and not for anyone else. The purchase-money exclusion is load-bearing a second time, in the title-lending lesson, because it is what separates a car loan from a loan against a car already owned.",
+    stakes:
+      "This is the course's sharpest single teaching object and it is quoted three times: in Section 1, in the title-lending lesson, and in the targeting lesson. The figure has been stable, but the Department of Defense rule's coverage has been litigated and interpreted before, and a changed exclusion would make the car-loan-against-title-loan distinction wrong rather than merely stale.",
+    needs: [
+      "The current text of 10 U.S.C. 987(b), (e) and (i)(1)",
+      "The current text of 32 CFR 232.4(b) and the charge list at 232.4(c)",
+      "The current exclusions at 32 CFR 232.3(f), quoted",
+      "The date you read each one",
+    ],
+    where: [
+      "eCFR, for 32 CFR part 232",
+      "The Office of the Law Revision Counsel or Cornell's LII, for 10 U.S.C. 987",
+      "The Federal Register, for any amendment to part 232",
+    ],
+  },
+  {
+    key: "predatory-path-act-refund-hold",
+    course: "predatory-products",
+    lesson: "a-refund-is-money-already-owed",
+    quote: "shall be made before the 15th day of the second month following",
+    title: "Does 26 U.S.C. 6402(m) still hold refunds on returns claiming the section 24(d) and section 32 credits?",
+    severity: "medium",
+    question:
+      "As of the date you check, is 26 U.S.C. 6402(m) still in force with the same date and the same two named credits, and has the IRS published anything that changes when refunds on such returns are actually issued?",
+    claim:
+      "The course quotes the subsection, names the section 24(d) and section 32 credits, and builds the whole refund-products section on the observation that federal law holds the refunds of a defined population and creates a defined window that a product is sold into. It is careful to call the hold an anti-fraud measure with a stated purpose rather than a scandal.",
+    stakes:
+      "If the hold were repealed or narrowed, the section's central mechanism would be describing a market condition that no longer exists, and the lesson's claim that the product responds to a statute rather than to chance would stop being supportable.",
+    needs: [
+      "Whether 26 U.S.C. 6402(m) is still in force and whether its date or its named credits have changed",
+      "Any IRS publication on when refunds claiming those credits are issued in the current filing season",
+      "The date you checked",
+    ],
+    where: [
+      "The Office of the Law Revision Counsel or Cornell's LII, for 26 U.S.C. 6402",
+      "irs.gov, for the current filing season's refund timing guidance",
     ],
   },
 ];
