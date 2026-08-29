@@ -57,8 +57,8 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 :::reveal Why is "choosing a mode" better understood as choosing a promise than as choosing a style? ||| Because each mode tells a viewer, implicitly, what kind of claim the film is making: observational says we are not intervening and you are seeing it as it was, expository says we will tell you what this means, performative says this is the maker's experience rather than a neutral account. Most documentary dishonesty is a broken promise rather than a false statement, such as an observational film that was in fact heavily staged, so the style choice carries an ethical commitment the audience will hold you to.
 
 ## Sources
-- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press.
-- Aufderheide, P. (2007). *Documentary film: A very short introduction*. Oxford University Press.`,
+- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press. https://doi.org/10.2307/j.ctt2005t6j
+- Aufderheide, P. (2007). *Documentary film: A very short introduction*. Oxford University Press. https://lccn.loc.gov/2007018114`,
     },
     {
       slug: "doc-consent-over-time",
@@ -99,8 +99,8 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 :::reveal A participant signed a release in month one. In month fourteen the film's argument has changed and they are now central to it. What does the course say you owe them, and why is the release not the answer? ||| A fresh conversation: explain the film's actual direction now, tell them they have become central, and be specific about permanence and reach. The release is a legal protection rather than an ethical one, and it was given for a project that no longer exists in the form described. Treating consent as a process rather than an event is the practice that closes the gap, and telling them when they become the spine is the moment it matters most, because that is the change nobody could have anticipated at signing.
 
 ## Sources
-- Aufderheide, P., Jaszi, P., & Chandra, M. (2009). *Honest truths: Documentary filmmakers on ethical challenges in their work*. Center for Social Media, American University.
-- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press.`,
+- Aufderheide, P., Jaszi, P., & Chandra, M. (2009). *Honest truths: Documentary filmmakers on ethical challenges in their work*. Center for Social Media, American University. https://cmsimpact.org/resource/honest-truths-documentary-filmmakers-on-ethical-challenges-in-their-work/
+- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press. https://doi.org/10.2307/j.ctt2005t6j`,
     },
     {
       slug: "doc-structure-from-material",
@@ -131,8 +131,8 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 :::reveal Your proposal said the film was about a woman winning a campaign. Two years in, she lost. What are your options, and which is the dishonest one? ||| The honest options are that the film is now about the attempt, the cost, or what losing revealed, all of which are real films with real changes. The dishonest one is keeping the original shape and cutting toward an implied triumph, using a hopeful ending or selective framing to leave the viewer with a false impression while every shot remains genuine. The rule is that you may change what you think the story is; you may not change what happened to fit the plan you arrived with.
 
 ## Sources
-- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press.
-- Rabiger, M. (2015). *Directing the documentary* (6th ed.). Focal Press.`,
+- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press. https://doi.org/10.2307/j.ctt2005t6j
+- Rabiger, M. (2015). *Directing the documentary* (6th ed.). Focal Press. https://lccn.loc.gov/2014011982`,
     },
     {
       slug: "doc-quiz-1",
@@ -317,8 +317,8 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 :::reveal Why is silence after an answer the highest-yield interviewing habit, and why is it hard? ||| Because two or three seconds of silence is intolerable to the person who has just answered, so they fill it, and what they add is usually less rehearsed and more specific than the answer itself. It is hard because it feels rude to the interviewer, whose instinct is to acknowledge or move on, and because the discomfort is felt most sharply by the person who is not the one speaking. Learning to hold it is largely learning to tolerate your own discomfort rather than any technique about questions.
 
 ## Sources
-- Rabiger, M. (2015). *Directing the documentary* (6th ed.). Focal Press.
-- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press.`,
+- Rabiger, M. (2015). *Directing the documentary* (6th ed.). Focal Press. https://lccn.loc.gov/2014011982
+- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press. https://doi.org/10.2307/j.ctt2005t6j`,
     },
     {
       slug: "doc-the-edit",
@@ -353,8 +353,8 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 :::reveal A frankenbite uses only words the person actually said. Why is it indefensible in documentary? ||| Because the sentence assembled is one they never said, so it puts words in a real mouth, which is the line every form in the True track shares. Using genuine fragments does not help: the meaning of a sentence is a property of the whole utterance, so a constructed sentence is a new claim attributed to a real person. It fails the supplying test, and it also fails the second test, since the speaker would not recognize the statement as something they said.
 
 ## Sources
-- Aufderheide, P., Jaszi, P., & Chandra, M. (2009). *Honest truths: Documentary filmmakers on ethical challenges in their work*. Center for Social Media, American University.
-- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press.`,
+- Aufderheide, P., Jaszi, P., & Chandra, M. (2009). *Honest truths: Documentary filmmakers on ethical challenges in their work*. Center for Social Media, American University. https://cmsimpact.org/resource/honest-truths-documentary-filmmakers-on-ethical-challenges-in-their-work/
+- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press. https://doi.org/10.2307/j.ctt2005t6j`,
     },
     {
       slug: "doc-who-its-for",
@@ -386,8 +386,8 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 :::reveal When a funder, a participant and an audience want different things, what question does the course use to weigh them? ||| Who bears the consequences. The funder moves on to the next project and the audience watches and moves on, but the participant continues living in the town where the film is set, among the people who will see it. That asymmetry does not give them an editorial veto, and it does mean their interest weighs more heavily than the other two when the three genuinely conflict, because they are the only party who cannot walk away from the result.
 
 ## Sources
-- Aufderheide, P., Jaszi, P., & Chandra, M. (2009). *Honest truths: Documentary filmmakers on ethical challenges in their work*. Center for Social Media, American University.
-- Aufderheide, P. (2007). *Documentary film: A very short introduction*. Oxford University Press.`,
+- Aufderheide, P., Jaszi, P., & Chandra, M. (2009). *Honest truths: Documentary filmmakers on ethical challenges in their work*. Center for Social Media, American University. https://cmsimpact.org/resource/honest-truths-documentary-filmmakers-on-ethical-challenges-in-their-work/
+- Aufderheide, P. (2007). *Documentary film: A very short introduction*. Oxford University Press. https://lccn.loc.gov/2007018114`,
     },
     {
       slug: "doc-quiz-2",
@@ -584,10 +584,10 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 :::reveal Without looking back, name the two tests for an editing decision and one move that fails both. ||| Am I selecting and arranging, or supplying? And would the participant recognize the person on screen as themselves? The frankenbite fails both: assembling a sentence from words spoken at different times supplies a statement that was never made, and the speaker would not recognize it as something they said. The same pair catches the false chronology, the reaction transplant and the removed qualification, all of which use entirely genuine footage.
 
 ## Sources
-- Aufderheide, P. (2007). *Documentary film: A very short introduction*. Oxford University Press.
-- Aufderheide, P., Jaszi, P., & Chandra, M. (2009). *Honest truths: Documentary filmmakers on ethical challenges in their work*. Center for Social Media, American University.
-- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press.
-- Rabiger, M. (2015). *Directing the documentary* (6th ed.). Focal Press.`,
+- Aufderheide, P. (2007). *Documentary film: A very short introduction*. Oxford University Press. https://lccn.loc.gov/2007018114
+- Aufderheide, P., Jaszi, P., & Chandra, M. (2009). *Honest truths: Documentary filmmakers on ethical challenges in their work*. Center for Social Media, American University. https://cmsimpact.org/resource/honest-truths-documentary-filmmakers-on-ethical-challenges-in-their-work/
+- Nichols, B. (2017). *Introduction to documentary* (3rd ed.). Indiana University Press. https://doi.org/10.2307/j.ctt2005t6j
+- Rabiger, M. (2015). *Directing the documentary* (6th ed.). Focal Press. https://lccn.loc.gov/2014011982`,
     },
   ],
 };

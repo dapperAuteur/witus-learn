@@ -108,8 +108,8 @@ And one more thing worth knowing early, from Thomas Kuhn: the unit that changes 
 :::reveal Which two conclusions does the course close off on day one? ||| That people in the past were stupid, and that nothing can be known. The second is the more tempting error because it arrives dressed as humility.
 
 ## Sources
-- Kuhn, T. S. (1962). *The structure of scientific revolutions*. University of Chicago Press.
-- Popper, K. R. (1959). *The logic of scientific discovery*. Hutchinson. (Original work published 1934)`,
+- Kuhn, T. S. (1962). *The structure of scientific revolutions*. University of Chicago Press. https://lccn.loc.gov/62019621
+- Popper, K. R. (1959). *The logic of scientific discovery*. Hutchinson. https://lccn.loc.gov/59008371 (Original work published 1934)`,
     },
     {
       slug: "nobody-thought-it-was-flat",
@@ -172,10 +172,10 @@ Lesson 4 is about who invented it.
 :::reveal Which question about the far side of the world was genuinely disputed, and why was it a serious question? ||| Whether the antipodes were inhabited and how anyone could have reached them across an unbroken ocean. It is a question about people and travel, not about shape.
 
 ## Sources
-- Aristotle. (1939). *On the heavens* (W. K. C. Guthrie, Trans.). Harvard University Press. (Original work composed c. 350 BCE)
-- Gould, S. J. (1995). *Dinosaur in a haystack: Reflections in natural history*. Harmony Books.
-- Russell, J. B. (1991). *Inventing the flat earth: Columbus and modern historians*. Praeger.
-- Thorndike, L. (Ed. & Trans.). (1949). *The sphere of Sacrobosco and its commentators*. University of Chicago Press. (Original work composed c. 1230)`,
+- Aristotle. (1939). *On the heavens* (W. K. C. Guthrie, Trans.). Harvard University Press. https://www.loebclassics.com/view/LCL338/1939/volume.xml (Original work composed c. 350 BCE)
+- Gould, S. J. (1995). *Dinosaur in a haystack: Reflections in natural history*. Harmony Books. https://lccn.loc.gov/95051333
+- Russell, J. B. (1991). *Inventing the flat earth: Columbus and modern historians*. Praeger. https://lccn.loc.gov/91000067
+- Thorndike, L. (Ed. & Trans.). (1949). *The sphere of Sacrobosco and its commentators*. University of Chicago Press. https://lccn.loc.gov/49007256 (Original work composed c. 1230)`,
       recallContent: [
         {
           prompt: "State the question this course is built on, and say what a real answer to it must contain.",
@@ -244,8 +244,8 @@ Which is lesson 7. A wrong number, once it has an authority's name on it, can tr
 :::reveal Why should the roundness of his numbers make you slightly uneasy? ||| Because 5,000 stades and one fiftieth of a circle are the numbers of a worked classroom example. His own book is lost, and the method reaches us through a teacher retelling it much later.
 
 ## Sources
-- Cleomedes. (2004). *Cleomedes' lectures on astronomy: A translation of The heavens* (A. C. Bowen & R. B. Todd, Trans.). University of California Press. (Original work composed c. 100-300 CE)
-- Dutka, J. (1993). Eratosthenes' measurement of the Earth reconsidered. *Archive for History of Exact Sciences, 46*(1), 55-66.`,
+- Cleomedes. (2004). *Cleomedes' lectures on astronomy: A translation of The heavens* (A. C. Bowen & R. B. Todd, Trans.). University of California Press. https://doi.org/10.1525/california/9780520233256.001.0001 (Original work composed c. 100-300 CE)
+- Dutka, J. (1993). Eratosthenes' measurement of the Earth reconsidered. *Archive for History of Exact Sciences, 46*(1), 55-66. https://doi.org/10.1007/BF00387726`,
       recallContent: [
         {
           prompt: "Name one piece of evidence ancient and medieval writers used to argue the earth is a sphere.",
@@ -487,9 +487,9 @@ The objection is not there.
 :::reveal Besides Irving, who else helped launch the flat-earth story, and when? ||| Antoine-Jean Letronne, in an influential 1834 essay arguing that the Church Fathers had held a flat earth.
 
 ## Sources
-- Irving, W. (1828). *A history of the life and voyages of Christopher Columbus*. John Murray.
-- Letronne, A. J. (1834). Des opinions cosmographiques des Peres de l'Eglise. *Revue des Deux Mondes*.
-- Russell, J. B. (1991). *Inventing the flat earth: Columbus and modern historians*. Praeger.`,
+- Irving, W. (1828). *A history of the life and voyages of Christopher Columbus*. John Murray. https://archive.org/details/historyoflifevoy01irvi
+- Letronne, A. J. (1834). Des opinions cosmographiques des Peres de l'Eglise. *Revue des Deux Mondes*. https://fr.wikisource.org/wiki/Cosmographie
+- Russell, J. B. (1991). *Inventing the flat earth: Columbus and modern historians*. Praeger. https://lccn.loc.gov/91000067`,
       recallContent: [
         {
           prompt: "Name one piece of evidence that the earth's sphericity was taught continuously in Europe.",
@@ -557,10 +557,10 @@ What it does mean is this: **when a claim about the past is unusually well suite
 :::reveal What should you do when a claim about the past is unusually convenient for one side of a live argument? ||| Go and look at the sources it rests on. Convenience is a reason to check a claim, not a reason to dismiss it.
 
 ## Sources
-- Draper, J. W. (1874). *History of the conflict between religion and science*. D. Appleton.
-- Lindberg, D. C., & Numbers, R. L. (Eds.). (1986). *God and nature: Historical essays on the encounter between Christianity and science*. University of California Press.
-- Numbers, R. L. (Ed.). (2009). *Galileo goes to jail and other myths about science and religion*. Harvard University Press.
-- White, A. D. (1896). *A history of the warfare of science with theology in Christendom* (Vols. 1-2). D. Appleton.`,
+- Draper, J. W. (1874). *History of the conflict between religion and science*. D. Appleton. https://archive.org/details/historyconflict05drapgoog
+- Lindberg, D. C., & Numbers, R. L. (Eds.). (1986). *God and nature: Historical essays on the encounter between Christianity and science*. University of California Press. https://lccn.loc.gov/85007548
+- Numbers, R. L. (Ed.). (2009). *Galileo goes to jail and other myths about science and religion*. Harvard University Press. https://lccn.loc.gov/2008041250
+- White, A. D. (1896). *A history of the warfare of science with theology in Christendom* (Vols. 1-2). D. Appleton. https://archive.org/details/cu31924022599330`,
       recallContent: [
         {
           prompt: "What did Washington Irving add to the Columbus story in 1828, and what was actually at issue?",
@@ -648,8 +648,8 @@ That means a myth in a textbook is not a permanent fixture. It is **maintained**
 :::reveal What is wrong with "it is believed that" as a hedge? ||| It deletes the actor. Ask who believes it, put them back in the sentence, and an atmosphere becomes a claim someone can check.
 
 ## Sources
-- FitzGerald, F. (1979). *America revised: History schoolbooks in the twentieth century*. Little, Brown.
-- Russell, J. B. (1991). *Inventing the flat earth: Columbus and modern historians*. Praeger.`,
+- FitzGerald, F. (1979). *America revised: History schoolbooks in the twentieth century*. Little, Brown. https://lccn.loc.gov/79016555
+- Russell, J. B. (1991). *Inventing the flat earth: Columbus and modern historians*. Praeger. https://lccn.loc.gov/91000067`,
       recallContent: [
         {
           prompt: "What frame did Draper and White supply, and what was each of them arguing against?",
@@ -716,9 +716,9 @@ The voyages that followed had consequences for the people already living in the 
 :::reveal What is the tell that someone is selecting evidence rather than weighing it? ||| Every uncertainty resolves in the direction they already wanted. Each individual choice survives an audit, so the pattern is the only thing that shows it.
 
 ## Sources
-- Morison, S. E. (1942). *Admiral of the ocean sea: A life of Christopher Columbus*. Little, Brown.
-- Phillips, W. D., & Phillips, C. R. (1992). *The worlds of Christopher Columbus*. Cambridge University Press.
-- Russell, J. B. (1991). *Inventing the flat earth: Columbus and modern historians*. Praeger.`,
+- Morison, S. E. (1942). *Admiral of the ocean sea: A life of Christopher Columbus*. Little, Brown. https://lccn.loc.gov/42005477
+- Phillips, W. D., & Phillips, C. R. (1992). *The worlds of Christopher Columbus*. Cambridge University Press. https://lccn.loc.gov/91018790
+- Russell, J. B. (1991). *Inventing the flat earth: Columbus and modern historians*. Praeger. https://lccn.loc.gov/91000067`,
       recallContent: [
         {
           prompt: "Name the three rungs of the source ladder and the step where chains usually break.",
@@ -964,9 +964,9 @@ The astronomy proper, what each model predicted, the phases of Venus, the moons 
 :::reveal When was the parallax objection finally answered by observation, and why does the date matter? ||| In 1838, by Bessel's measurement of 61 Cygni, nearly three centuries after Copernicus published. The argument was settled long before that, so something else changed minds.
 
 ## Sources
-- Bessel, F. W. (1838). On the parallax of 61 Cygni. *Monthly Notices of the Royal Astronomical Society, 4*(17), 152-161.
-- Graney, C. M. (2015). *Setting aside all authority: Giovanni Battista Riccioli and the science against Copernicus in the age of Galileo*. University of Notre Dame Press.
-- Kuhn, T. S. (1957). *The Copernican revolution: Planetary astronomy in the development of Western thought*. Harvard University Press.`,
+- Bessel, F. W. (1838). On the parallax of 61 Cygni. *Monthly Notices of the Royal Astronomical Society, 4*(17), 152-161. https://doi.org/10.1093/mnras/4.17.152
+- Graney, C. M. (2015). *Setting aside all authority: Giovanni Battista Riccioli and the science against Copernicus in the age of Galileo*. University of Notre Dame Press. https://doi.org/10.2307/j.ctvpj7g68
+- Kuhn, T. S. (1957). *The Copernican revolution: Planetary astronomy in the development of Western thought*. Harvard University Press. https://lccn.loc.gov/57007612`,
       recallContent: [
         {
           prompt: "What were Columbus and his examiners actually arguing about, and who had the better of it?",
@@ -1031,9 +1031,9 @@ That is worth sitting with, because it is at odds with how almost everybody imag
 :::reveal According to Planck, how does a new scientific truth actually win? ||| Not by convincing its opponents, but because they eventually die and a new generation grows up already familiar with the new idea.
 
 ## Sources
-- Kuhn, T. S. (1957). *The Copernican revolution: Planetary astronomy in the development of Western thought*. Harvard University Press.
-- Newton, I. (1999). *The Principia: Mathematical principles of natural philosophy* (I. B. Cohen & A. Whitman, Trans.). University of California Press. (Original work published 1687)
-- Planck, M. (1949). *Scientific autobiography and other papers* (F. Gaynor, Trans.). Philosophical Library.`,
+- Kuhn, T. S. (1957). *The Copernican revolution: Planetary astronomy in the development of Western thought*. Harvard University Press. https://lccn.loc.gov/57007612
+- Newton, I. (1999). *The Principia: Mathematical principles of natural philosophy* (I. B. Cohen & A. Whitman, Trans.). University of California Press. https://lccn.loc.gov/99010278 (Original work published 1687)
+- Planck, M. (1949). *Scientific autobiography and other papers* (F. Gaynor, Trans.). Philosophical Library. https://lccn.loc.gov/49011086`,
       recallContent: [
         {
           prompt: "Why was the absence of detectable stellar parallax a strong objection to a moving earth?",
@@ -1100,10 +1100,10 @@ Historians of chemistry have argued at length that phlogiston was a productive r
 :::reveal What ended each theory, and what do the two endings have in common? ||| A measurement the theory could not absorb, plus a rival offering a specific mechanism. Weight gained on calcination in one case, an identified organism and a water route in the other.
 
 ## Sources
-- Chadwick, E. (1842). *Report on the sanitary condition of the labouring population of Great Britain*. W. Clowes and Sons.
-- Chang, H. (2012). *Is water H2O? Evidence, realism and pluralism*. Springer.
-- Halliday, S. (2001). Death and miasma in Victorian London: An obstinate belief. *BMJ, 323*(7327), 1469-1471.
-- Snow, J. (1855). *On the mode of communication of cholera* (2nd ed.). John Churchill.`,
+- Chadwick, E. (1842). *Report on the sanitary condition of the labouring population of Great Britain*. W. Clowes and Sons. https://archive.org/details/b21307313
+- Chang, H. (2012). *Is water H2O? Evidence, realism and pluralism*. Springer. https://doi.org/10.1007/978-94-007-3932-1
+- Halliday, S. (2001). Death and miasma in Victorian London: An obstinate belief. *BMJ, 323*(7327), 1469-1471. https://doi.org/10.1136/bmj.323.7327.1469
+- Snow, J. (1855). *On the mode of communication of cholera* (2nd ed.). John Churchill. https://archive.org/details/b28985266`,
       recallContent: [
         {
           prompt: "Name the thing that retired the objection that we would feel the earth move, and say why it is not astronomy.",
@@ -1178,10 +1178,10 @@ Lesson 12 is about what changed it. Lesson 13 is about what you are not allowed 
 :::reveal Why is "everyone rejected Wegener" false, and where was support strongest? ||| Du Toit supported him from the southern rocks and Holmes proposed mantle convection around 1930. Rejection was strongest where the supporting evidence was hardest to go and look at.
 
 ## Sources
-- Holmes, A. (1931). Radioactivity and earth movements. *Transactions of the Geological Society of Glasgow, 18*(3), 559-606.
-- Jeffreys, H. (1924). *The earth: Its origin, history and physical constitution*. Cambridge University Press.
-- Oreskes, N. (1999). *The rejection of continental drift: Theory and method in American earth science*. Oxford University Press.
-- Wegener, A. (1966). *The origin of continents and oceans* (J. Biram, Trans.). Dover. (Original work published 1929)`,
+- Holmes, A. (1931). Radioactivity and earth movements. *Transactions of the Geological Society of Glasgow, 18*(3), 559-606. https://doi.org/10.1144/transglas.18.3.559
+- Jeffreys, H. (1924). *The earth: Its origin, history and physical constitution*. Cambridge University Press. https://lccn.loc.gov/25000340
+- Oreskes, N. (1999). *The rejection of continental drift: Theory and method in American earth science*. Oxford University Press. https://doi.org/10.1093/oso/9780195117325.001.0001
+- Wegener, A. (1966). *The origin of continents and oceans* (J. Biram, Trans.). Dover. https://lccn.loc.gov/66028270 (Original work published 1929)`,
       recallContent: [
         {
           prompt: "Why was the miasma theory a reasonable inference, and what good did it do anyway?",
@@ -1252,10 +1252,10 @@ That is the shape to demand of any currently rejected claim: not sympathy, and n
 :::reveal How was Jeffreys's mechanism objection finally answered? ||| It was met, not ignored. The continents do not plow through the ocean floor; the floor itself spreads from the ridges and carries them.
 
 ## Sources
-- Felt, H. (2012). *Soundings: The story of the remarkable woman who mapped the ocean floor*. Henry Holt.
-- Glen, W. (1982). *The road to Jaramillo: Critical years of the revolution in earth science*. Stanford University Press.
-- Hess, H. H. (1962). History of ocean basins. In A. E. J. Engel, H. L. James, & B. F. Leonard (Eds.), *Petrologic studies: A volume in honor of A. F. Buddington* (pp. 599-620). Geological Society of America.
-- Vine, F. J., & Matthews, D. H. (1963). Magnetic anomalies over oceanic ridges. *Nature, 199*(4897), 947-949.`,
+- Felt, H. (2012). *Soundings: The story of the remarkable woman who mapped the ocean floor*. Henry Holt. https://lccn.loc.gov/2011044178
+- Glen, W. (1982). *The road to Jaramillo: Critical years of the revolution in earth science*. Stanford University Press. https://lccn.loc.gov/80051647
+- Hess, H. H. (1962). History of ocean basins. In A. E. J. Engel, H. L. James, & B. F. Leonard (Eds.), *Petrologic studies: A volume in honor of A. F. Buddington* (pp. 599-620). Geological Society of America. https://doi.org/10.1130/petrologic.1962.599
+- Vine, F. J., & Matthews, D. H. (1963). Magnetic anomalies over oceanic ridges. *Nature, 199*(4897), 947-949. https://doi.org/10.1038/199947a0`,
       recallContent: [
         {
           prompt: "Name three of Wegener's independent lines of evidence.",
@@ -1342,10 +1342,10 @@ The three questions are for sorting claims. They are not for sorting people, and
 :::reveal Give the three questions to ask about any embattled claim. ||| What independent evidence would support it and has anyone looked, what does it predict that its rival does not, and what would its holder accept as a refutation.
 
 ## Sources
-- Finocchiaro, M. A. (1989). *The Galileo affair: A documentary history*. University of California Press.
-- Numbers, R. L. (Ed.). (2009). *Galileo goes to jail and other myths about science and religion*. Harvard University Press.
-- Oreskes, N. (1999). *The rejection of continental drift: Theory and method in American earth science*. Oxford University Press.
-- Sagan, C. (1979). *Broca's brain: Reflections on the romance of science*. Random House.`,
+- Finocchiaro, M. A. (1989). *The Galileo affair: A documentary history*. University of California Press. https://lccn.loc.gov/88031503
+- Numbers, R. L. (Ed.). (2009). *Galileo goes to jail and other myths about science and religion*. Harvard University Press. https://lccn.loc.gov/2008041250
+- Oreskes, N. (1999). *The rejection of continental drift: Theory and method in American earth science*. Oxford University Press. https://doi.org/10.1093/oso/9780195117325.001.0001
+- Sagan, C. (1979). *Broca's brain: Reflections on the romance of science*. Random House. https://lccn.loc.gov/78021810`,
       recallContent: [
         {
           prompt: "Where did the evidence that settled continental drift come from, and who gathered it?",
@@ -1591,10 +1591,10 @@ Whether forty-one years counts as a system that corrects itself is the question 
 :::reveal What did the fraud cost besides wasted effort? ||| It made a genuine find harder to accept. Dart's 1925 Taung child contradicted the brain-first picture Piltdown supported and was held at arm's length for years.
 
 ## Sources
-- Dart, R. A. (1925). Australopithecus africanus: The man-ape of South Africa. *Nature, 115*(2884), 195-199.
-- De Groote, I., et al. (2016). New genetic and morphological evidence suggests a single hoaxer created Piltdown man. *Royal Society Open Science, 3*(8), 160328.
-- Spencer, F. (1990). *Piltdown: A scientific forgery*. Oxford University Press.
-- Weiner, J. S., Oakley, K. P., & Le Gros Clark, W. E. (1953). The solution of the Piltdown problem. *Bulletin of the British Museum (Natural History), Geology, 2*(3), 139-146.`,
+- Dart, R. A. (1925). Australopithecus africanus: The man-ape of South Africa. *Nature, 115*(2884), 195-199. https://doi.org/10.1038/115195a0
+- De Groote, I., et al. (2016). New genetic and morphological evidence suggests a single hoaxer created Piltdown man. *Royal Society Open Science, 3*(8), 160328. https://doi.org/10.1098/rsos.160328
+- Spencer, F. (1990). *Piltdown: A scientific forgery*. Oxford University Press. https://lccn.loc.gov/90007688
+- Weiner, J. S., Oakley, K. P., & Le Gros Clark, W. E. (1953). The solution of the Piltdown problem. *Bulletin of the British Museum (Natural History), Geology, 2*(3), 139-146. https://doi.org/10.5962/p.313845`,
       recallContent: [
         {
           prompt: "Why is being rejected not evidence that a claim is correct?",
@@ -1659,10 +1659,10 @@ This catalog has courses on whose accounts of the past were preserved and whose 
 :::reveal Why does the course apply its own scepticism to the suppressed-genius story? ||| Because that story shape attracts embellishment like any other. The usual account of Barbara McClintock as ignored and ridiculed has been substantially complicated by historians working from her correspondence and citation record.
 
 ## Sources
-- Comfort, N. C. (2001). *The tangled field: Barbara McClintock's search for the patterns of genetic control*. Harvard University Press.
-- Felt, H. (2012). *Soundings: The story of the remarkable woman who mapped the ocean floor*. Henry Holt.
-- Nuland, S. B. (2003). *The doctors' plague: Germs, childbed fever, and the strange story of Ignac Semmelweis*. W. W. Norton.
-- Oreskes, N. (1999). *The rejection of continental drift: Theory and method in American earth science*. Oxford University Press.`,
+- Comfort, N. C. (2001). *The tangled field: Barbara McClintock's search for the patterns of genetic control*. Harvard University Press. https://lccn.loc.gov/00069712
+- Felt, H. (2012). *Soundings: The story of the remarkable woman who mapped the ocean floor*. Henry Holt. https://lccn.loc.gov/2011044178
+- Nuland, S. B. (2003). *The doctors' plague: Germs, childbed fever, and the strange story of Ignac Semmelweis*. W. W. Norton. https://lccn.loc.gov/2003011412
+- Oreskes, N. (1999). *The rejection of continental drift: Theory and method in American earth science*. Oxford University Press. https://doi.org/10.1093/oso/9780195117325.001.0001`,
       recallContent: [
         {
           prompt: "Why did the Piltdown forgery last four decades?",
@@ -1730,11 +1730,11 @@ Astrology has no replication crisis. Neither does any other body of claims that 
 :::reveal Why is a published replication crisis evidence for a field rather than against it? ||| Because it is the field measuring its own error rate in public and arguing about how to fix it. A field that never reports an error is not more reliable, only less observable.
 
 ## Sources
-- Ioannidis, J. P. A. (2005). Why most published research findings are false. *PLoS Medicine, 2*(8), e124.
-- Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. *Science, 349*(6251), aac4716.
-- Oreskes, N. (2019). *Why trust science?* Princeton University Press.
-- Rosenthal, R. (1979). The file drawer problem and tolerance for null results. *Psychological Bulletin, 86*(3), 638-641.
-- Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. *Psychological Science, 22*(11), 1359-1366.`,
+- Ioannidis, J. P. A. (2005). Why most published research findings are false. *PLoS Medicine, 2*(8), e124. https://doi.org/10.1371/journal.pmed.0020124
+- Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. *Science, 349*(6251), aac4716. https://doi.org/10.1126/science.aac4716
+- Oreskes, N. (2019). *Why trust science?* Princeton University Press. https://lccn.loc.gov/2019937193
+- Rosenthal, R. (1979). The file drawer problem and tolerance for null results. *Psychological Bulletin, 86*(3), 638-641. https://doi.org/10.1037/0033-2909.86.3.638
+- Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. *Psychological Science, 22*(11), 1359-1366. https://doi.org/10.1177/0956797611417632`,
       recallContent: [
         {
           prompt: "Why is gatekeeping in a field not in itself a scandal, and what is the real question?",
@@ -1820,9 +1820,9 @@ This course does not have a position to offer you on any live curriculum dispute
 :::reveal Why does this mechanism matter to a course about myths in textbooks? ||| Because a correction reaches a classroom through the revision and adoption machinery or it does not reach one at all.
 
 ## Sources
-- Every Student Succeeds Act, Pub. L. No. 114-95, 129 Stat. 1802 (2015).
-- FitzGerald, F. (1979). *America revised: History schoolbooks in the twentieth century*. Little, Brown.
-- General Education Provisions Act, 20 U.S.C. § 1232a.
+- Every Student Succeeds Act, Pub. L. No. 114-95, 129 Stat. 1802 (2015). https://www.govinfo.gov/app/details/PLAW-114publ95
+- FitzGerald, F. (1979). *America revised: History schoolbooks in the twentieth century*. Little, Brown. https://lccn.loc.gov/79016555
+- General Education Provisions Act, 20 U.S.C. § 1232a. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title20-section1232a&num=0&edition=prelim
 - Bagley-Keene Open Meeting Act, Cal. Gov't Code § 11120 et seq.
 - Texas Open Meetings Act, Tex. Gov't Code ch. 551.`,
       recallContent: [

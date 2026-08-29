@@ -60,8 +60,8 @@ What is left is the story and one person telling it. If the story does not work,
 :::reveal Why does this course argue that a solo piece is a better place to LEARN structure than a fully cast play? ||| Because a cast gives you places to hide a weak story: dialogue can bury exposition, a second character can carry the want, a subplot can change the subject, and stage business can cover a sagging passage. A monodrama removes all of those at once, so a structural weakness has nothing in front of it. The story either holds an audience alone or it does not, and that makes the form diagnostic rather than merely difficult.
 
 ## Sources
-- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group.
-- Brook, P. (1968). *The empty space*. MacGibbon & Kee.`,
+- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group. https://lccn.loc.gov/98049391
+- Brook, P. (1968). *The empty space*. MacGibbon & Kee. https://lccn.loc.gov/76367365`,
     },
     {
       slug: "mono-the-six-terms",
@@ -93,9 +93,9 @@ What is left is the story and one person telling it. If the story does not work,
 :::reveal A drafted piece opens with a woman describing the summer her mother died and ends with her still describing it, movingly. Diagnose it using the six terms. ||| It probably has no CHANGE, which makes it an anecdote rather than a story however well written it is. The test: what is different at the end from the beginning? If the answer is only that the audience now knows more, the change belongs to the audience rather than to the owner. The fix is to find what the summer changed in her (what she stopped believing, started admitting, or could no longer do) and make that the spine, with the death as the circumstance rather than the subject.
 
 ## Sources
-- Aristotle. (1996). *Poetics* (M. Heath, Trans.). Penguin. (Original work composed ca. 335 BCE)
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
-- Egri, L. (1946). *The art of dramatic writing*. Simon & Schuster.`,
+- Aristotle. (1996). *Poetics* (M. Heath, Trans.). Penguin. https://lccn.loc.gov/97138026 (Original work composed ca. 335 BCE)
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333
+- Egri, L. (1946). *The art of dramatic writing*. Simon & Schuster. https://archive.org/details/artofdramaticwri00egririch`,
     },
     {
       slug: "mono-the-forms",
@@ -123,10 +123,10 @@ What is left is the story and one person telling it. If the story does not work,
 :::reveal Your material ranges over twenty years and needs the speaker to comment on their younger self. Which form fits, and what does it obligate you to do? ||| Direct address, because a dramatic monologue has to motivate everything from the present situation and would fight a twenty-year range. What it obligates you to do is decide who the audience IS to the speaker: direct address without a defined listener drifts into lecture. Krapp's Last Tape solves the same problem differently, by making a tape recorder the second presence, which is worth studying if you want the range without breaking the fourth wall.
 
 ## Sources
-- Beckett, S. (1958). *Krapp's last tape*. Faber & Faber.
-- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group.
-- Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books.
-- Wright, D. (2004). *I am my own wife*. Faber & Faber.`,
+- Beckett, S. (1958). *Krapp's last tape*. Faber & Faber. https://archive.org/details/krappslasttapeem00beck
+- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group. https://lccn.loc.gov/98049391
+- Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books. https://lccn.loc.gov/93010121
+- Wright, D. (2004). *I am my own wife*. Faber & Faber. https://lccn.loc.gov/2003021583`,
     },
     {
       slug: "mono-quiz-1",
@@ -312,7 +312,7 @@ Your speaker is talking. **To whom?** Not in the abstract. In the room, tonight,
 
 ## Sources
 - Macmillan, D., with Donahoe, J. (2015). *Every brilliant thing*. Oberon Books.
-- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group.`,
+- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group. https://lccn.loc.gov/98049391`,
     },
     {
       slug: "mono-truth-and-permission",
@@ -346,9 +346,9 @@ Questions worth answering before you draft, not after:
 :::reveal A vivid scene in your draft shows your father at his worst. It is true and it is the best writing in the piece. What is the test? ||| Whether it is necessary to the change. True and vivid is not sufficient: everything on stage has to earn its place against what the piece is actually about, and real material gets no exemption from that. If the scene carries the change, it stays and you accept what it costs. If it is there because it is strong writing about a real person at their worst, it is doing you a favor and doing him harm, and it goes.
 
 ## Sources
-- Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books.
-- Wright, D. (2004). *I am my own wife*. Faber & Faber.
-- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group.`,
+- Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books. https://lccn.loc.gov/93010121
+- Wright, D. (2004). *I am my own wife*. Faber & Faber. https://lccn.loc.gov/2003021583
+- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group. https://lccn.loc.gov/98049391`,
     },
     {
       slug: "mono-place-and-time",
@@ -373,8 +373,8 @@ Questions worth answering before you draft, not after:
 :::reveal Your piece moves between a hospital corridor and a childhood kitchen, repeatedly. What must you decide, and what happens if you do not? ||| You must fix one consistent signal for the move (a tense shift, a repeated phrase, a carried object) and use it every single time. If the signal varies, the audience stops trusting it and stops trying to track where they are, at which point they wait politely rather than follow. The second decision is what each location is FOR: if the kitchen only supplies atmosphere and carries no part of the change, it is spending time the change needs.
 
 ## Sources
-- Brook, P. (1968). *The empty space*. MacGibbon & Kee.
-- Beckett, S. (1958). *Krapp's last tape*. Faber & Faber.`,
+- Brook, P. (1968). *The empty space*. MacGibbon & Kee. https://lccn.loc.gov/76367365
+- Beckett, S. (1958). *Krapp's last tape*. Faber & Faber. https://archive.org/details/krappslasttapeem00beck`,
     },
     {
       slug: "mono-scene-and-summary",
@@ -401,8 +401,8 @@ That happens when the speaker's account contains evidence against itself. A deta
 :::reveal How do you write a speaker the audience can see through, without the speaker ever admitting anything? ||| Put the evidence in their own account and let them fail to notice it: a detail reported flatly that contradicts their claim, an insistence repeated more often than a secure person would need to, a subject they consistently route around. It has to be planted early enough and clearly enough that the audience can look back and see it was always there. Unreliability the audience cannot detect is not unreliability, it is only a story the writer privately knows is false.
 
 ## Sources
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
-- Beckett, S. (1958). *Krapp's last tape*. Faber & Faber.`,
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333
+- Beckett, S. (1958). *Krapp's last tape*. Faber & Faber. https://archive.org/details/krappslasttapeem00beck`,
     },
     {
       slug: "mono-quiz-2",
@@ -587,8 +587,8 @@ That happens when the speaker's account contains evidence against itself. A deta
 :::reveal Your piece uses a list as its organising pretext and audiences say it is charming but they drift. Diagnose it. ||| The list is probably carrying the piece on its own, with no change running underneath it. A list gives you freedom of movement and a natural relationship with the audience, and it is not a story: nothing about item nine makes an audience need item ten. The fix is to find what is changing in the owner ACROSS the list and make the items reveal it in an order that only works that way, so the sequence becomes necessary rather than pleasant.
 
 ## Sources
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
-- Beckett, S. (1958). *Krapp's last tape*. Faber & Faber.
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333
+- Beckett, S. (1958). *Krapp's last tape*. Faber & Faber. https://archive.org/details/krappslasttapeem00beck
 - Macmillan, D., with Donahoe, J. (2015). *Every brilliant thing*. Oberon Books.`,
     },
     {
@@ -620,8 +620,8 @@ The practical test: **mark every point in your draft where the texture changes.*
 :::reveal Why is "the small action" often the strongest available ending for a solo piece? ||| Because it makes the change physical and lets the audience arrive at the meaning themselves. The speaker does one thing they could not have done at the start (makes the call, sits down, throws it away), and the audience understands what it costs without being told. It avoids both failure modes at once: it is not merely stopping, because something happens, and it is not explaining, because nothing is stated.
 
 ## Sources
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
-- Brook, P. (1968). *The empty space*. MacGibbon & Kee.`,
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333
+- Brook, P. (1968). *The empty space*. MacGibbon & Kee. https://lccn.loc.gov/76367365`,
     },
     {
       slug: "mono-revision",
@@ -646,8 +646,8 @@ The practical test: **mark every point in your draft where the texture changes.*
 :::reveal Why does the revision order put sentences last, and what specifically goes wrong if you do them first? ||| Because polishing produces attachment. A passage you have made beautiful is much harder to cut, so if you do sentence work before structural work, you build sunk cost into exactly the material that structural revision would remove. You then find yourself defending a scene because the writing is good rather than because it carries the change, which is the same "it really happened" error in a different costume.
 
 ## Sources
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
-- Egri, L. (1946). *The art of dramatic writing*. Simon & Schuster.`,
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333
+- Egri, L. (1946). *The art of dramatic writing*. Simon & Schuster. https://archive.org/details/artofdramaticwri00egririch`,
     },
     {
       slug: "mono-drill",
@@ -798,15 +798,15 @@ The practical test: **mark every point in your draft where the texture changes.*
 :::reveal Without looking back, name the six terms and give the one-sentence test for the first one. ||| The change, the owner, want and obstacle, withholding, scene and summary, and the turn. The test for the change: what is different at the end from the beginning? If the only thing that changed is that the audience now knows more, the change belongs to them rather than to the owner, and what you have is an anecdote rather than a story.
 
 ## Sources
-- Aristotle. (1996). *Poetics* (M. Heath, Trans.). Penguin. (Original work composed ca. 335 BCE)
-- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press.
-- Beckett, S. (1958). *Krapp's last tape*. Faber & Faber.
-- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group.
-- Brook, P. (1968). *The empty space*. MacGibbon & Kee.
-- Egri, L. (1946). *The art of dramatic writing*. Simon & Schuster.
+- Aristotle. (1996). *Poetics* (M. Heath, Trans.). Penguin. https://lccn.loc.gov/97138026 (Original work composed ca. 335 BCE)
+- Ball, D. (1983). *Backwards and forwards: A technical manual for reading plays*. Southern Illinois University Press. https://lccn.loc.gov/82019333
+- Beckett, S. (1958). *Krapp's last tape*. Faber & Faber. https://archive.org/details/krappslasttapeem00beck
+- Bonney, J. (Ed.). (2000). *Extreme exposure: An anthology of solo performance texts from the twentieth century*. Theatre Communications Group. https://lccn.loc.gov/98049391
+- Brook, P. (1968). *The empty space*. MacGibbon & Kee. https://lccn.loc.gov/76367365
+- Egri, L. (1946). *The art of dramatic writing*. Simon & Schuster. https://archive.org/details/artofdramaticwri00egririch
 - Macmillan, D., with Donahoe, J. (2015). *Every brilliant thing*. Oberon Books.
-- Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books.
-- Wright, D. (2004). *I am my own wife*. Faber & Faber.`,
+- Smith, A. D. (1993). *Fires in the mirror: Crown Heights, Brooklyn and other identities*. Anchor Books. https://lccn.loc.gov/93010121
+- Wright, D. (2004). *I am my own wife*. Faber & Faber. https://lccn.loc.gov/2003021583`,
     },
   ],
 };
