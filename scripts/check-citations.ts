@@ -46,6 +46,14 @@ const NO_CITATIONS_EXPECTED: Record<string, string> = {
   // will print this slug under "Good news" and tell you to delete this line. Delete it then.
   "the-county-committee":
     "PENDING GENERATION, staged before seeding; run pnpm seed:courses then pnpm gen:citations and delete this line",
+  // Same situation as WARRANT-02 above, for the same mechanical reason. `negro-leagues` shipped and
+  // was never staged, which is the defect Section 7's research surfaced. It carries a `## Sources`
+  // block on nearly every teaching lesson, including four new ones, but `pnpm gen:citations` reads
+  // the DATABASE, so it cannot run until the course is re-seeded with Section 7 in it.
+  // SELF-CLEARING: run `pnpm seed:courses` then `pnpm gen:citations`, and the staleness check below
+  // will print this slug under "Good news" and tell you to delete this line. Delete it then.
+  "negro-leagues":
+    "PENDING GENERATION, staged in the same branch as Section 7; run pnpm seed:courses then pnpm gen:citations and delete this line",
 };
 
 /** Flip at stage 5, when the whole library is staged. */

@@ -124,6 +124,18 @@ export const STAGED_COURSES: string[] = [
   // returns 403 to automated fetch but resolves in a browser, and Cornell's agcensus archive, which
   // older writing on this subject cites, is retired and now redirects to USDA NASS.
   "the-county-committee",
+  // The Negro Leagues: Who Owned the Game. Staged late and it should not have been: the course
+  // shipped without ever joining this list, which the citation-verification rule requires of every
+  // course when it ships. Caught while adding Section 7 (Outside the league), whose whole subject is
+  // the difference between a cited claim and a repeated one, so shipping it with unchecked sources
+  // would be self-undermining. Its `## Sources` blocks carry SABR biographies and research articles,
+  // Hall of Fame pages, the New Georgia Encyclopedia, Seamheads, a peer-reviewed journal article and
+  // a book review. Three things a verifier should expect and NOT treat as errors: the course
+  // deliberately cites CONTESTED accounts (four incompatible versions of Rube Foster's cut, two
+  // databases disagreeing on the single-season batting record, three different won-lost records for
+  // interracial play from one book), it names figures it refuses to state, and Section 7 reports two
+  // Peterson figures as attributed rather than verified because the page carrying them returns 403.
+  "negro-leagues",
 ];
 
 export const CITATIONS: Citation[] = STAGED_CITATIONS;

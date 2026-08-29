@@ -973,6 +973,135 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "https://baseballhall.org/hall-of-famers/paige-satchel",
     ],
   },
+  // ── Section 7, Outside the league (added 2026-08-29) ──────────────────────────────────────────
+  // Five more hedges, written on purpose, from the HBCU and international research. Two of them are
+  // the highest-value unread documents in the whole subject: a Black college conference's own
+  // eligibility rules, and Landis's own words about why he capped barnstorming teams.
+  {
+    key: "nl-ciaa-eligibility-rules",
+    course: "negro-leagues",
+    lesson: "nl-college-and-club",
+    quote:
+      "Their eligibility articles between 1912 and 1950 would settle whether the missing games are a rule or a gap, and this course has not read them.",
+    title: "Did the CIAA, SIAC or SWAC write and enforce an amateur eligibility rule?",
+    severity: "high",
+    question:
+      "What did the Colored Intercollegiate Athletic Association, the Southern Intercollegiate Athletic Conference and the Southwestern Athletic Conference actually say in their constitutions and eligibility articles, between 1912 and 1950, about a student playing professional baseball?",
+    claim:
+      "The lesson argues that the assumed names Larry Doby and Monte Irvin used are the signature of a rule being broken, so the absence of any documented game between a Negro League club and a Black college team may be a finding rather than a gap. It labels that as a hypothesis, states that Oriard's amateur-code evidence describes the NCAA and white colleges, and says plainly that the Black conferences' own rules have not been read.",
+    stakes:
+      "The single highest-value missing document in this subject. If a Black college conference wrote and enforced an amateur rule, the relationship between the two games was regulated and adversarial exactly where they touched, the missing games become evidence, and the lesson can state its argument instead of hedging it. If no such rule existed, the missing games are a gap in newspaper indexing and the hedge stays permanently. Either answer improves the lesson; guessing would wreck it.",
+    needs: [
+      "The text of the eligibility article on professionalism, with the year it was adopted and any later amendment",
+      "Any recorded enforcement: a player ruled ineligible, a protest, a forfeited game",
+      "Whether the rule distinguished summer baseball for expense money from a signed professional contract, which is the distinction the pseudonyms turn on",
+    ],
+    where: [
+      "Hampton University archives, where the CIAA was founded in 1912, and the CIAA's own records",
+      "Virginia Union and Howard university archives, both charter CIAA members",
+      "The SWAC's centennial materials and its founding minutes, and the SIAC's own records",
+    ],
+  },
+  {
+    key: "nl-forty-percent-college",
+    course: "negro-leagues",
+    lesson: "nl-college-and-club",
+    quote:
+      "No published methodology, roster count or study appears with it anywhere, and the comparison usually printed beside it, less than 5 percent of white major leaguers, has no source at all.",
+    title: "Is there any basis for 'about 40 percent of Negro League players were college educated'?",
+    severity: "medium",
+    question:
+      "Does Bob Kendrick, or the Diverse: Issues In Higher Education article that reports him, name any roster count, study or methodology behind the estimate that about 40 percent of Negro League players were college educated? And where does the companion figure for white major leaguers come from?",
+    claim:
+      "The lesson names Kendrick and the outlet, states that no methodology is published with the figure anywhere, records that the article returns HTTP 403 to automated fetching and was NOT read in full for this course, and refuses to print the number as a count. It treats it as the same class of figure as the unfootnoted $100,000 a year the course already refuses.",
+    stakes:
+      "It is the only quantified claim in the whole HBCU story, so every popular retelling rests on it. If a methodology exists, the lesson should report the number properly and the refusal comes out. If none does, the refusal is the finding and should be stated more sharply than it currently is. Separately, a roster-based count is genuinely doable from Seamheads or the Baseball Reference Negro Leagues register and does not appear to have been published by anyone, which would make it original work worth commissioning.",
+    needs: [
+      "The article read in full, with its author and publication date",
+      "Kendrick's exact words and whether he or the reporter names any basis for 40 percent",
+      "Any source at all for the 'less than 5 percent of white major leaguers' comparison",
+    ],
+    where: [
+      "diverseeducation.com/article/71229/, which 301s to theeduledger.com and returns 403 to automated fetchers but should resolve in a browser",
+      "The Negro Leagues Baseball Museum in Kansas City, directly",
+      "Seamheads' Negro Leagues Database and the Baseball Reference Negro Leagues register, for a roster-based count nobody appears to have run",
+    ],
+  },
+  {
+    key: "nl-landis-barnstorming-motive",
+    course: "negro-leagues",
+    lesson: "nl-playing-the-majors",
+    quote:
+      "The claim that they were aimed at interracial games is an interpretation that appears in secondary writing without a citation to Landis's own words, and this course states the rule, says who reads a motive into it, and stops.",
+    title: "Were the 1922 barnstorming limits aimed at interracial games?",
+    severity: "medium",
+    question:
+      "Is there any document in Kenesaw Mountain Landis's own hand, or in the major-league code itself, showing that the three-player cap, the 31 October cutoff or the All-Star billing requirement were adopted in response to Black clubs beating major-league squads?",
+    claim:
+      "The lesson states the rules as documented general barnstorming rules, sourced to the Hall of Fame, and explicitly declines to assert the motive that secondary writing attaches to them. It names the documents that would settle it.",
+    stakes:
+      "The motive is repeated as fact almost everywhere and it changes the meaning of the whole exhibition record: a rule adopted to hide results is a different object from a rule adopted to protect the World Series brand. Asserting it without a document would be exactly the failure this course teaches students to catch, and refusing it without looking would be lazy.",
+    needs: [
+      "The text of the major-league code provisions as amended in 1922, in full",
+      "Any Landis office correspondence, memorandum or public statement bearing on interracial exhibitions",
+      "The earliest secondary source to attach the motive, and what it cites",
+    ],
+    where: [
+      "The Chicago History Museum, which holds a Kenesaw Mountain Landis collection",
+      "The National Baseball Hall of Fame Giamatti Research Center, for the code text and commissioner's office files",
+      "Contemporaneous coverage in The Sporting News and the Pittsburgh Courier for 1921 and 1922",
+    ],
+  },
+  {
+    key: "nl-wells-courier-interview",
+    course: "negro-leagues",
+    lesson: "nl-market-was-international",
+    quote:
+      "The version that circulates adds a reporter, Wendell Smith, and a year, 1944. The reference this course could open names neither, so the byline and the date are not stated here and are filed as a source check.",
+    title: "Which issue of the Pittsburgh Courier carries the Willie Wells interview?",
+    severity: "medium",
+    question:
+      "What is the exact date, page and byline of the Pittsburgh Courier item in which Willie Wells said he had found freedom and democracy in Mexico, and what is the full unelided quotation?",
+    claim:
+      "The lesson quotes one sentence, attributes it to the Pittsburgh Courier through Eric Enders's encyclopedia entry, and states that the reference it could open names neither the reporter nor the year, so it prints neither. The circulating version credits Wendell Smith in 1944.",
+    stakes:
+      "It is the strongest single piece of testimony in the international lesson: a named player, in a Black-owned paper, in the period, explaining his own employment decision. A course that leans on a quotation this hard should be able to say which issue it came out of. The quotation also circulates at several different lengths, and the versions differ, so the ellipses matter.",
+    needs: [
+      "The issue date and page, and the reporter's byline",
+      "The full quotation as printed, with nothing elided",
+      "Whether the widely quoted line 'Here in Mexico, I am a man' is from the same item",
+    ],
+    where: [
+      "The Pittsburgh Courier for 1944, on microfilm or in ProQuest's Historical Black Newspapers",
+      "The Wendell Smith Papers at the National Baseball Hall of Fame",
+      "Eric Enders, who wrote the encyclopedia entry the course cites",
+    ],
+  },
+  {
+    key: "nl-peterson-interracial-record",
+    course: "negro-leagues",
+    lesson: "nl-playing-the-majors",
+    quote:
+      "The page carrying the first two figures returned HTTP 403 to this course's fetching and the book itself was not read here. The review was. So .527 and nearly 55 percent are reported as attributed rather than as verified.",
+    title: "Verify Peterson's interracial won-lost figures and their two denominators",
+    severity: "medium",
+    question:
+      "In Todd Peterson's work, what exactly is the 315-282-20 record measured against and over what corpus, what is the 'nearly 55 percent' figure measured against, and how does the 325-314 record for 1885 to 1948 that Leslie Heaphy's review reports at page 94 relate to both?",
+    claim:
+      "The lesson prints all three numbers, says they have three different scopes, warns against the blended sentence that circulates, and labels the first two as attributed rather than verified because the page carrying them returns 403 and the book was not read for this course.",
+    stakes:
+      "This is the number the whole 'they were good enough' argument rests on, and the course uses it while telling students that a rate without a denominator is not a fact. Getting the scopes exactly right, from the book itself, is the difference between the lesson modelling the discipline and merely describing it. It also matters that this is a figure that FLATTERS the course's own argument, which is precisely when the discipline is hardest to hold.",
+    needs: [
+      "The 315-282-20 record and its stated opponent population and years, quoted from the source",
+      "The 'nearly 55 percent' figure and its stated population, quoted from the source",
+      "How the appendix defines an interracial game, and what produced the 2,000-plus game corpus",
+    ],
+    where: [
+      "Todd Peterson (Ed.), The Negro Leagues Were Major Leagues: Historians Reappraise Black Baseball (McFarland, 2019), read directly",
+      "baseball-reference.com/articles/negro-leagues-major-leagues-todd-peterson.shtml, which returns 403 to automated fetch but should resolve in a browser",
+      "Leslie Heaphy's review at ussporthistory.com, 11 July 2020, which was read and supplies the 325-314 figure at page 94",
+    ],
+  },
   // ── Who Gets the Credit (Black inventors and attribution) ────────────────────────────────────
   {
     key: "blair-colored-man-notation",

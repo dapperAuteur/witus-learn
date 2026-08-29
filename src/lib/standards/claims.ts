@@ -4123,7 +4123,12 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "what-they-built",
       // Integrates league constitutions, ballpark leases, newspaper business pages, museum and
       // Hall of Fame institutional records and MLB's own 2020/2024 statements into one account of
-      // the Negro Leagues as firms, and names which parts of the record do not survive.
+      // the Negro Leagues as firms, and names which parts of the record do not survive. Section 7
+      // (added 2026-08-29) is the same integration on a contested question: SABR biographies, Hall
+      // of Fame pages, a state encyclopedia, a database announcement, a peer-reviewed journal
+      // article and a book review, read against each other, with the discrepancies named rather
+      // than smoothed (two SABR bios treat the same pseudonym differently; one author's own work
+      // yields three different won-lost records over three different spans).
       "negro-leagues",
       // Labor series
       "labor-brazil",
@@ -4324,9 +4329,13 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "how-the-tools-travelled",
       "exported-how-others-studied-american-race-law",
       "what-they-built",
-      // Lesson 17 works the "Josh Gibson hit 800 home runs" / "Satchel Paige won 2,000 games"
+      // Lesson 23 works the "Josh Gibson hit 800 home runs" / "Satchel Paige won 2,000 games"
       // family of figures as claims to downgrade, and holds the contested parts of the 2024
-      // statistical merge (sample size, which games count, the era cutoffs) as contested.
+      // statistical merge (sample size, which games count, the era cutoffs) as contested. Section 7
+      // (added 2026-08-29) applies the same test twice more, and the second time to a figure that
+      // supports the course's own argument: lesson 26 refuses the unsourced "40 percent college
+      // educated" estimate, and lesson 29 separates one author's .527 from his "nearly 55 percent"
+      // by their denominators instead of blending them.
       "negro-leagues",
       "afrocentricity",
       "training-the-colonizer",
@@ -4487,7 +4496,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "the-schoolhouse-network",
       "where-we-rested",
       "what-they-built",
-      // Lesson 18 is a graded research capstone: one ballclub, ballpark or transaction, documented
+      // Lesson 24 is a graded research capstone: one ballclub, ballpark or transaction, documented
       // from newspapers, National Register nominations, city directories and team records, written
       // up with citations and a required paragraph on what could not be established.
       "negro-leagues",
