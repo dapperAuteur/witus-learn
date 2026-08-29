@@ -2170,5 +2170,54 @@ College Football Hall of Fame. (2016, February 25). *HBCU All-America teams and 
 
 Goldman, D. (2021). 1933-1962: The business meetings of Negro League baseball. Society for American Baseball Research. https://sabr.org/journal/article/1933-1962-the-business-meetings-of-negro-league-baseball/`,
     },
+    {
+      slug: "nl-market-was-international",
+      title: "28 · The market was international",
+      section: "Section 7 · Outside the league",
+      body: `Every lesson so far has treated the color line as the boundary of the market. **It was not a boundary. It was a domestic arrangement, and this lesson is about what happened at the border.**
+
+**Mexico, and it is the best-evidenced case.** Veracruz owner **Jorge Pasquel** took control of the Mexican League in **1940**, six years before the raids on Major League Baseball that made his name in American writing. Seamheads, announcing its Mexican League data, states it plainly: **"A total of 67 players that either had or would later play in the Negro Leagues played in the 1940 Mexican League, which was almost 1/3 of all the league players"** (Johnson, 2019). **Read the evidence class as well as the number**, because that is the habit Section 6 was for: the figure is a count out of a database, and the database names its own source, Pedro Cisneros's *Mexican League Encyclopedia*, compiled into electronic form by Frank Hamilton. **A number with a stated corpus behind it is a different object from an estimate, and this course treats them differently.**
+
+**Why they went, in a player's own words, printed at the time.** **Willie Wells**, one of the men who left, told the ***Pittsburgh Courier***: **"One of the main reasons I came back to Mexico is because I've found freedom and democracy here, something I never found in the United States"** (Enders, n.d.). **Hold on to what kind of source that is.** It is not a historian's summary of how players felt. It is a player, named, speaking to a Black-owned newspaper, in the period, about his own employment decision. **That is the strongest single piece of testimony in this section.** The version that circulates adds a reporter, Wendell Smith, and a year, 1944. **The reference this course could open names neither**, so the byline and the date are not stated here and are filed as a source check.
+
+**And the honest limit on the pay claim, which is the part that gets repeated wrong.** What the record supports is that Mexico paid better **than the Negro Leagues**. It does not support "better than the major leagues," and this course prints no comparison it did not open. **Say it the narrow way or it is false.**
+
+**Venezuela, and here is a dated figure you can actually check.** Joe Black left Morgan State in his junior year, in the autumn of 1947, **to pitch for Magallanes in the Venezuelan winter league for $800 a month** (Dreier, n.d.). **A named player, a named club, a named month, a named amount.** Set that beside the East-West All-Star Game in lesson 11, where the commonly repeated $50 or $100 player payment has no locatable source at all. **This is what the difference between a documented figure and a repeated one looks like inside a single course.**
+
+**Cuba, which is the structurally important one and the reason this lesson exists.** The National Baseball Hall of Fame states that **"Cuban teams fully integrated their benches beginning in 1900 after the Spanish-American War."** Negro League stars including **Ray Brown, Ray Dandridge, Josh Gibson and Willie Wells** played in the Cuban winter league in the 1930s; by the late 1940s and 1950s the same rosters carried **Monte Irvin and Don Newcombe** alongside young Cuban stars and American prospects including future Hall of Famers **Jim Bunning, Tommy Lasorda and Brooks Robinson** (National Baseball Hall of Fame, n.d.). **So Black and white professionals shared a clubhouse ninety miles from Florida for half a century while the American major leagues said it could not be done.**
+
+**That is the payoff of the whole lesson, and it is one sentence: the color line was a UNITED STATES arrangement.** Not a fact about the sport, not a fact about the players, and not a fact about the paying public in general. **A domestic business rule, enforced in one country, that other countries in the same labor market simply did not have.** Every argument you were ever given about why integration was impractical has to survive that, and none of them does.
+
+**The Pacific, briefly, because the record there is thinner and the course says so.** The **Philadelphia Royal Giants** toured Japan in **1927 and 1932-33** and competed across Hawaii, Japan, Korea, China and the Philippines, led by **Biz Mackey** with Andy Cooper, Rap Dixon and Frank Duncan. Japanese baseball historian **Kazuo Sayama** concluded that without those visits professional baseball in Japan would not have emerged as early as **1936**, describing the Negro Leaguers as a "shock absorber" that let Japanese players build confidence instead of being discouraged by dismissive major leaguers (Staples, 2019). **Won-lost records for those tours circulate widely and are not printed here**, because the accounts this course could open do not carry them.
+
+**Now connect it back to the balance sheet, because an international market is a business fact before it is a moral one.** A club whose players can earn more abroad has a **labor cost problem** and a **retention problem** at exactly the moment it is also fighting for the gate at home. Newark lost Wells, and Wells said in print why. The same pull thinned rosters across the leagues in 1940 and 1941. **A league that cannot match an outside bid does not lose an argument, it loses an asset**, which is precisely the mechanism Section 5 showed you in 1947, running in the same direction and with a bigger bidder.
+
+:::reveal How many Negro Leaguers played in the 1940 Mexican League, and why does the way that number was produced matter? ||| 67, almost a third of everyone in the league, per Seamheads. It is a count out of a database that names its own corpus, Pedro Cisneros's Mexican League Encyclopedia, so it is a different class of evidence from an estimate with no methodology.
+
+:::reveal Quote Willie Wells on Mexico, and say what kind of source it is. ||| "One of the main reasons I came back to Mexico is because I've found freedom and democracy here, something I never found in the United States." It is a named player speaking to a Black-owned newspaper in the period about his own employment decision, not a historian summarizing how players felt.
+
+:::reveal State the pay finding for Mexico in the narrow form the record supports. ||| That Mexico paid better than the Negro Leagues. It does not support "better than the major leagues," and stating it the wide way makes it false.
+
+:::reveal What does the Hall of Fame say about Cuban benches, and what does that establish? ||| That Cuban teams fully integrated their benches beginning in 1900 after the Spanish-American War. It establishes that the color line was a United States arrangement rather than a fact about the sport, since Black and white professionals shared rosters ninety miles away for half a century.
+
+:::reveal Read the international market as a balance-sheet problem for a Negro League club. ||| It is a labor cost and retention problem. A club whose stars can earn more abroad loses assets rather than arguments, at the same moment it is fighting for the gate at home, which is the same mechanism integration ran in 1947 with a bigger bidder.
+
+## Vocabulary
+- **Winter league**: an off-season professional league, in this era mostly Caribbean and Latin American, where Negro Leaguers could earn a second salary and often did.
+- **Labor market**: the whole set of employers competing for the same players, which in this case crossed at least four national borders while the major leagues pretended it did not.
+- **Retention problem**: what a club has when a rival can outbid it for its own roster, which Mexico created in 1940 and 1941.
+- **Domestic arrangement**: a rule enforced inside one country only, which is what the color line turns out to have been once you look at Cuban rosters from 1900.
+
+## Sources
+Dreier, P. (n.d.). *Joe Black*. SABR BioProject. https://sabr.org/bioproj/person/joe-black/
+
+Enders, E. (n.d.). Wells, Willie James. In *Scribner encyclopedia of American lives, thematic series: Sports figures*. Encyclopedia.com. https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/wells-willie-james
+
+Johnson, K. (2019, October 11). *The Mexican leagues are here!* Seamheads. https://seamheads.com/blog/2019/10/11/the-mexican-leagues-are-here/
+
+National Baseball Hall of Fame. (n.d.). *Winters in Cuba*. https://baseballhall.org/discover/hall-of-famers-played-in-cuban-winter-league
+
+Staples, B., Jr. (2019, August 2). *Biz Mackey and Japan*. Society for American Baseball Research. https://sabr.org/research/article/biz-mackey-and-japan/`,
+    },
   ],
 };
