@@ -3772,6 +3772,91 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The Texas Administrative Code as published by the Secretary of State",
     ],
   },
+  {
+    key: "pan-africanism-uneca-afcfta-start-of-trading",
+    course: "pan-africanism",
+    title: "Which UNECA publication is \"AfCFTA: Start of trading\"?",
+    severity: "medium",
+    question:
+      "What is the exact UNECA publication the course cites as \"AfCFTA: Start of trading\" (2021): its full title, its document number if it has one, and a URL on uneca.org or repository.uneca.org that serves it? If no such publication exists, what should the entry cite instead for the 1 January 2021 start of trading?",
+    claim:
+      "The bibliography lists \"United Nations Economic Commission for Africa. (2021). AfCFTA: Start of trading. UNECA.\" It is the only entry in the course carrying no identifier that ought to have one: every other institutional source resolved to an au.int, UN or peaceau.org document during the 2026-08-30 bibliography pass.",
+    stakes:
+      "Medium. The lesson uses it for the date trading formally opened under the AfCFTA, which is a checkable fact with an obvious primary source (the AU Assembly decision of 5 December 2020, and the agreement itself). A reader who tries to follow the citation finds nothing at uneca.org under that title, which reads as a fabricated source even though the underlying fact is not in doubt.",
+    needs: [
+      "The publication's exact title and URL, or confirmation that no UNECA publication by that name exists",
+      "If it does not exist, the primary source the entry should name instead, with a URL",
+    ],
+    where: [
+      "repository.uneca.org, the UNECA institutional repository",
+      "uneca.org publications listing for 2020 and 2021",
+      "The AU Assembly 13th Extraordinary Session decision approving 1 January 2021, on au.int",
+    ],
+  },
+  {
+    key: "pan-africanism-selassie-1936-league-record",
+    course: "pan-africanism",
+    title: "The League of Nations record for Haile Selassie's 1936 appeal",
+    severity: "low",
+    question:
+      "What is the League of Nations Official Journal citation (special supplement number, session, date and page) for Haile Selassie's 1936 address to the Assembly, and does the League's own record print the English text the course quotes?",
+    claim:
+      "The entry reads \"Selassie, H. (1936, June). Appeal to the League of Nations [Address]. League of Nations, Geneva. (Delivered in Amharic; quoted in its standard English rendering.)\" The 2026-08-30 bibliography pass could attach only a secondary full-text source, because the UN Library Geneva League of Nations holdings would not serve an automated request.",
+    stakes:
+      "Low for the argument and real for the sourcing rule. The course already tells the reader the English is a rendering rather than the delivered words, which is the honest half. The missing half is the record itself: an official-journal citation would let a reader see which English text the League entered, and that is exactly the kind of claim the catalog promises is checkable.",
+    needs: [
+      "The Official Journal special supplement number and pages for the Assembly session at which the appeal was delivered",
+      "The exact date of delivery as the League recorded it",
+      "Whether the League printed English matches the wording the lesson quotes, and a stable URL if a digitised copy has one",
+    ],
+    where: [
+      "The UN Library and Archives Geneva, League of Nations Official Journal collection",
+      "libraryresources.unog.ch, League of Nations documents",
+    ],
+  },
+  {
+    key: "mesoamerica-arqueologia-mexicana-148-authorship",
+    course: "precolumbian-mesoamerica",
+    title: "Who wrote the Huei Tzompantli article in Arqueologia Mexicana 148?",
+    severity: "medium",
+    question:
+      "Should this entry read \"Matos Moctezuma, E., Barrera Rodriguez, R., & Vazquez Vallin, L. (2017). El Huei Tzompantli de Tenochtitlan. Arqueologia Mexicana, 25(148), 52-57\"? The journal's own citation block on the article page gives exactly those three authors and pages 52-57, so both the author list and the page range in the course look wrong. Or does issue 148 also carry a separate Matos Moctezuma and Lopez Lujan piece at 60-67?",
+    claim:
+      "The bibliography reads \"Matos Moctezuma, E., & Lopez Lujan, L. (2017). El Huei Tzompantli de Tenochtitlan. Arqueologia Mexicana, 25(148), 60-67.\" On 2026-08-30 the article page at arqueologiamexicana.mx under that exact title printed the publisher's own citation as Matos Moctezuma, Barrera Rodriguez and Vazquez Vallin, pages 52-57. No identifier was attached rather than link a reader to an article the entry does not describe.",
+    stakes:
+      "Medium. Issue 148 is a themed issue on tzompantlis and may well contain more than one article, so the course may be citing a real second piece. But an author list that does not match the work is the kind of error an educator checking sources finds first, and it is the only entry in this course whose authorship is in doubt.",
+    needs: [
+      "The table of contents for Arqueologia Mexicana 25(148), with authors and page ranges",
+      "Whether any article by Matos Moctezuma and Lopez Lujan appears in that issue at all, and at what pages",
+      "The corrected entry, in full, so the bibliography can be rewritten and given the article URL",
+    ],
+    where: [
+      "arqueologiamexicana.mx, the issue 148 contents page",
+      "The Templo Mayor Project publication list",
+    ],
+  },
+  {
+    key: "mesoamerica-inah-tzompantli-codice-citations",
+    course: "precolumbian-mesoamerica",
+    title: "Pin the 2017 INAH tzompantli source to an actual INAH document",
+    severity: "medium",
+    question:
+      "Which INAH document is the course citing as the 2017 Programa de Arqueologia Urbana reporting on the Huei Tzompantli? Give the bulletin number or report title, its date, and a URL on inah.gob.mx. If the reporting the lessons rely on is actually the 2015 discovery bulletin or a later one, the entry's year should change to match.",
+    claim:
+      "The bibliography has \"Instituto Nacional de Antropologia e Historia. (2017). Huei Tzompantli de Tenochtitlan [excavation reporting, Programa de Arqueologia Urbana]. INAH.\" It describes an INAH communication rather than naming one, and no INAH item dated 2017 could be found during the 2026-08-30 bibliography pass: inah.gob.mx refuses automated requests, and a Wayback sweep of the bulletins for 2016 to 2018 surfaced only the 2015 discovery bulletin. Its sibling entry, the 2018 codex authentication, WAS resolved in that pass and now carries the INAH bulletin URL.",
+    stakes:
+      "Medium. This is the evidence behind what the lessons say about the scale of Mexica skull display, which is exactly the claim a sceptical reader will want to follow to its source. A source described but not named cannot be checked at all.",
+    needs: [
+      "The INAH bulletin number or report title, its date, and a URL",
+      "Whether the excavation reporting the lessons rely on is dated 2017 at all, and the correct year if not",
+      "The date you read it",
+    ],
+    where: [
+      "inah.gob.mx boletines, opened in a browser",
+      "The Programa de Arqueologia Urbana publications and the Proyecto Templo Mayor reports",
+      "lugares.inah.gob.mx node 5907, INAH's own undated page for the Huei Tzompantli",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
