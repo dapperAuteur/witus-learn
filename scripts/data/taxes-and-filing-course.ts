@@ -1556,7 +1556,7 @@ Elzayn, H., Smith, E., Hertz, T., Ramesh, A., Fisher, R., Ho, D. E., & Goldin, J
 
 **26 U.S.C. § 24(a)** allows a credit for each qualifying child "an amount equal to 1,000 dollars" (26 U.S.C. § 24, n.d.). **§ 24(d)(1)** makes part of it refundable, computed as the lesser of the credit determined without regard to the subsection, or the increase produced by raising "the limitation under section 26(a)" by, among other things, 15 percent of the taxpayer's earned income above a stated floor.
 
-**The amount actually in force is not 1,000 dollars.** It has been set for years at a time by temporary amendments layered over subsection (a), and the refundable portion has its own separately-legislated figure. **So even opening the Code and reading the operative sentence gives you a number that is not the answer.**
+**The amount actually in force is not 1,000 dollars, and the Code says so several subsections later.** Read on 29 August 2026, **§ 24(h)(2)** directs that for taxable years beginning after 31 December 2017 "Subsection (a) shall be applied by substituting '2,200 dollars' for '1,000 dollars'" (26 U.S.C. § 24, n.d.). The refundable portion has its own separately-legislated figure again. **So opening the Code and reading the operative sentence gives you a number that is not the answer, and you only find that out by reading on.**
 
 **This is the sharpest possible demonstration of the course's central rule.** If the statute's own text can be stale, a summary table in a lesson has no chance at all. The method is:
 
@@ -1571,7 +1571,7 @@ Elzayn, H., Smith, E., Hertz, T., Ramesh, A., Fisher, R., Ho, D. E., & Goldin, J
 
 :::reveal Which four items does the section 6695(g) preparer penalty cover? ||| Head of household status, and the credits under sections 24, 25A(a)(1) and 32.
 
-:::reveal Why is the figure printed in 26 U.S.C. 24(a) not the amount in force? ||| Because temporary amendments have set the operative amount for years at a time, which is why even the Code's own text has to be checked against the current year.
+:::reveal Why is the figure printed in 26 U.S.C. 24(a) not the amount in force? ||| Because subsection (h)(2) substitutes a different figure for taxable years after 2017, so even the Code's own operative sentence has to be read against its later subsections and against the current year.
 
 ## Vocabulary
 - **Disallowance period**: the span of taxable years in 32(k)(1)(B) during which no earned income credit is allowed following a final determination of fraud or of reckless disregard.
@@ -2063,6 +2063,27 @@ Elzayn, H., Smith, E., Hertz, T., Ramesh, A., Fisher, R., Ho, D. E., & Goldin, J
             correctIndex: 0,
             explanation: "Anyone quoting one of them should name the tax year beside it.",
             sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "Which subsection of section 24 substitutes a different amount for the one in subsection (a)?",
+            options: ["Subsection (h)(2)", "Subsection (d)(1), which makes part of the credit refundable", "Subsection (a) itself, through a proviso at the end of it", "Section 26(a), which caps the nonrefundable personal credits"],
+            correctIndex: 0,
+            explanation: "For taxable years beginning after 31 December 2017, it directs that subsection (a) be applied by substituting a larger figure.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What does the section 24 example show about reading a Code section?",
+            options: ["The operative sentence may be overridden later on", "That every amount in the Code is adjusted for inflation", "That an operative sentence is always the current rule", "That amounts appear only in regulations rather than statutes"],
+            correctIndex: 0,
+            explanation: "You find out that the printed amount is not the answer only by reading on to the later subsections.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "From what date does the section 24(h)(2) substitution apply?",
+            options: ["Taxable years beginning after 31 December 2017", "Taxable years beginning after the enactment of the Code", "The filing season that opened on 26 January 2026", "Any year in which a revenue procedure so provides"],
+            correctIndex: 0,
+            explanation: "The lesson records the date it read the subsection, because the substituted figure has itself been legislated more than once.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
           },
         ],
       },
