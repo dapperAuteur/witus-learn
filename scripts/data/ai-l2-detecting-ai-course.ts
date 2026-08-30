@@ -1545,6 +1545,469 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
               "Most misinformation spreads because people reshare emotionally charged content faster than they verify. Slowing down to check the origin breaks the chain.",
             sourceLessonSlug: "before-you-share",
           },
+          // ── Pool expansion, 2026-08-30 ────────────────────────────────────────────────────
+          // The final is the course's terminal assessment AND the "Putting it together" section
+          // quiz, so it is sized as the final: 40+ pooled, 10 served. It shipped pooling exactly
+          // 10, which meant every learner met the identical ten questions in the identical order
+          // of draw and a retake was the same exam. The questions below take it to 45 and close
+          // the two practice lessons, which were taught and never assessed anywhere.
+          // Correct options are written SHORT and distractors long and specific on purpose
+          // (check-longest-option); the qualifier lives in `explanation`, which nothing measures.
+          {
+            prompt: "Which formats does Lesson 1 say synthetic media now spans?",
+            options: [
+              "Text, images, audio, and video",
+              "Images and video, since text and audio are too cheap to be worth faking",
+              "Every format except a live video call, which still needs rendering time",
+              "Photorealistic images only, because the other formats fall outside the term",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fake articles, reviews and personas; photorealistic images of events that never happened; voice clones; and face-swapped or fully generated video, including live on a call.",
+            sourceLessonSlug: "what-is-synthetic-media",
+          },
+          {
+            prompt: "Which of these does Lesson 1 list under synthetic TEXT?",
+            options: [
+              "A cloned voice built from a few seconds of a person's recorded speech",
+              "A lip-synced clip of a public figure reading a statement they never gave",
+              "Fake reviews and invented personas",
+              "A photorealistic image of a protest that never actually took place",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The lesson lists articles, reviews, comments, emails and entire fake personas, produced instantly and at scale. The other three are its audio, video and image examples.",
+            sourceLessonSlug: "what-is-synthetic-media",
+          },
+          {
+            prompt: "How much recorded audio does Lesson 1 say a voice clone needs?",
+            options: [
+              "About an hour of studio-quality speech recorded from the target",
+              "A few seconds",
+              "Enough takes to cover the person's full range of emotional delivery",
+              "Roughly ten minutes of continuous, unedited natural conversation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Which means anyone who has ever posted a video with their own voice in it is already a candidate. It is why Lesson 6's callback rule matters to ordinary families.",
+            sourceLessonSlug: "what-is-synthetic-media",
+          },
+          {
+            prompt: "Which classic giveaway does Lesson 2 say current top image models have largely solved?",
+            options: [
+              "Shadows that fall in directions the scene's light source cannot explain",
+              "Reflections that show a different scene from the one actually in frame",
+              "Hands and teeth",
+              "Backgrounds that repeat the same object at strict regular intervals",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The lesson names those two specifically. Every visible tell is a bug the next model is trained to fix, so a tip tied to one flaw ships with an expiration date.",
+            sourceLessonSlug: "why-spot-the-artifact-fails",
+          },
+          {
+            prompt: "What does Lesson 2 say about artifact tells even before generators improved?",
+            options: [
+              "They were never reliable",
+              "They worked on images but never transferred to audio or to video",
+              "They needed a trained forensic examiner to be applied correctly",
+              "They stayed accurate until platforms began compressing every upload",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Real photos have weird lighting and odd hands too, and some fakes never had the flaw, so artifact-spotting produced both false alarms and false confidence from the start.",
+            sourceLessonSlug: "why-spot-the-artifact-fails",
+          },
+          {
+            prompt: "Why does Lesson 2 say artifact-hunting fails in practice even when a tell is real?",
+            options: [
+              "A phone screen renders the artifacts too small for anyone to notice",
+              "Platforms crop each upload, removing the region that holds the tell",
+              "Most people have never been shown what any of the artifacts look like",
+              "It does not scale to a real feed",
+            ],
+            correctIndex: 3,
+            explanation:
+              "You can study one image closely, but you scroll past hundreds. The method loses to volume before it ever loses to the next generation of models.",
+            sourceLessonSlug: "why-spot-the-artifact-fails",
+          },
+          {
+            prompt: "What does the first of the three provenance questions ask?",
+            options: [
+              "Who made it",
+              "How many independent outlets have already published the same footage",
+              "Whether the file still carries the camera and date fields from EXIF",
+              "Whether the platform attached an AI-generated label at upload time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Is there a named, accountable source who stakes a reputation on it, or did it surface from an anonymous account? Then: where did it come from, and who else confirms it.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "In the second provenance question, which version of a clip are you trying to reach?",
+            options: [
+              "The highest-resolution copy that any account has posted so far",
+              "The copy posted by whichever account has the most followers",
+              "The earliest one",
+              "The version a fact-checking outlet has already annotated for readers",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Memes and clips get re-cropped, re-captioned and stripped of context as they spread, so the earliest version usually carries the context every later repost lost.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "What does \"lateral reading\" mean in Stanford's Civic Online Reasoning research?",
+            options: [
+              "Reading a page twice, once for its claims and once for its tone",
+              "Opening new tabs to check the source",
+              "Comparing two versions of the same article side by side on one screen",
+              "Judging a page's layout and design quality before reading any of its text",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rather than staying on a suspicious page and judging it by how slick it looks, which the research calls vertical reading, you leave and see what trusted others say about it.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "Why does provenance still work on a deepfake with no visible flaws at all?",
+            options: [
+              "A flawless render still leaves a statistical trace a detector can recover",
+              "Generators embed a removal-proof watermark in every file they produce",
+              "It still has an origin",
+              "A perfect fake takes long enough to build that reporting always outruns it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "And it still fails to be corroborated by independent reporting. Provenance depends on no defect in the media, which is exactly why it does not expire with the next model.",
+            sourceLessonSlug: "provenance-and-lateral-reading",
+          },
+          {
+            prompt: "How does C2PA itself describe Content Credentials?",
+            options: [
+              "A digital signature only a licensed camera manufacturer can apply",
+              "A nutrition label",
+              "A central registry storing every published file for later verification",
+              "A score from zero to one hundred rating how likely a file is to be genuine",
+            ],
+            correctIndex: 1,
+            explanation:
+              "For digital content: a tamper-evident record of who or what created the media, whether AI was involved, and what edits were made. The CR marker is how you open that history.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "What does Lesson 4 say can erase a Content Credential on its way to you?",
+            options: [
+              "An edit made in software built by a company outside the C2PA coalition",
+              "Viewing the file on a device whose browser cannot render the CR marker",
+              "A screenshot or a re-upload",
+              "Publishing the file more than a year after the credential was written",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Credentials only help when the tool that made the media added them, they survive the trip, and the platform you view on displays them. A metadata-stripping upload breaks the middle one.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "What is SynthID?",
+            options: [
+              "An imperceptible watermark",
+              "A browser extension that flags posts from accounts known to use AI tools",
+              "A public database of every image Google's models have ever generated",
+              "A file format that refuses to open unless its provenance record is intact",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Google DeepMind embeds it directly into AI-generated images, audio, video and text, so the content can later be identified as AI-made.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "Which modifications is SynthID designed to survive?",
+            options: [
+              "Every modification, including a deliberate attack aimed at removing it",
+              "Only the exact edits the originating Google model applied itself",
+              "No modification at all, since the watermark sits in the file's metadata",
+              "Cropping, filters, and compression",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Added noise too. Designed to survive is not the same as impossible to remove: heavy editing or a deliberate attack can degrade or strip it, and it only flags tools that use SynthID.",
+            sourceLessonSlug: "content-credentials-c2pa",
+          },
+          {
+            prompt: "How many frames of a suspect video does Lesson 5 say you should reverse-search?",
+            options: [
+              "Only the opening frame, which carries the file's original timestamp",
+              "A few",
+              "Every frame, because one missed frame invalidates the whole check",
+              "The final frame, where re-encoding artifacts accumulate most visibly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Search several frames rather than one, because any single frame can be misleading on its own.",
+            sourceLessonSlug: "reverse-image-and-metadata",
+          },
+          {
+            prompt: "How should you treat EXIF metadata that is present and intact?",
+            options: [
+              "As proof of time and place, since the camera writes those fields itself",
+              "As irrelevant, because editing software rewrites every field on save",
+              "As a clue",
+              "As a verdict whenever it agrees with the caption the post carries",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It can corroborate or contradict a story, but it is fragile and forgeable: platforms strip it, editors rewrite it, timestamps can be faked. Corroborate it with lateral reading.",
+            sourceLessonSlug: "reverse-image-and-metadata",
+          },
+          {
+            prompt: "What does missing metadata usually mean?",
+            options: [
+              "The platform removed it",
+              "The file was generated rather than captured by a physical camera",
+              "Someone edited the image and deliberately erased the evidence of it",
+              "The image predates the metadata standards it would otherwise carry",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most social platforms strip metadata on upload, so its absence is not evidence of anything at all.",
+            sourceLessonSlug: "reverse-image-and-metadata",
+          },
+          {
+            prompt: "Which FBI alert warns that criminals use generative AI to make financial fraud more believable?",
+            options: [
+              "The IC3 annual Internet Crime Report, published every spring",
+              "IC3 alert I-120324",
+              "A joint FBI and NIST advisory on media-forensics evaluation methods",
+              "The FTC rule on impersonation of government agencies and businesses",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Internet Crime Complaint Center's public alert names AI-generated text, images and cloned audio as the tools making these schemes more believable and harder to catch.",
+            sourceLessonSlug: "voice-clone-and-video-scams",
+          },
+          {
+            prompt: "What makes a family code word work?",
+            options: [
+              "It is long enough that a caller under pressure would stumble over it",
+              "It has never appeared online",
+              "It is filed with the bank so a transfer is held until someone gives it",
+              "It is rotated monthly so an old recording cannot simply be replayed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "So not a pet's name or a street, either of which is guessable from social media. In a real emergency the real person can say it and a scammer cannot.",
+            sourceLessonSlug: "voice-clone-and-video-scams",
+          },
+          {
+            prompt: "Why is manufactured urgency part of the scam rather than a side effect of it?",
+            options: [
+              "It pushes the victim past the daily limit their bank would apply",
+              "It keeps the call short enough to stay under what a carrier records",
+              "It stops you calling back",
+              "It makes the victim more likely to hear the voice as familiar",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Panic and secrecy, the do-not-tell-anyone line, exist to stop you making that callback. A real emergency survives a two-minute verification.",
+            sourceLessonSlug: "voice-clone-and-video-scams",
+          },
+          {
+            prompt: "What does Lesson 6 require at work before an urgent transfer requested on a call is approved?",
+            options: [
+              "Out-of-band confirmation",
+              "A recording of the call, filed for the finance team to review later",
+              "Two colleagues on the same video call who both recognize the requester",
+              "A written follow-up sent from the address the requester called from",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A separate, known channel, no matter how convincing the voice or the face on the call. Confirming inside the channel the attacker already controls confirms nothing.",
+            sourceLessonSlug: "voice-clone-and-video-scams",
+          },
+          {
+            prompt: "What does WITNESS warn may be the larger long-term danger of synthetic media?",
+            options: [
+              "That generated video gets cheap enough to flood every platform at once",
+              "That detection tools get adopted faster than they can be tested",
+              "That courts admit synthetic evidence before a standard exists to check it",
+              "That we disbelieve the truth",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Not that we will believe fakes, but that we will dismiss authentic evidence, eroding shared reality until nothing at all can be trusted.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "According to Lesson 7, what does a claim that footage is a deepfake require?",
+            options: [
+              "A detector score above whatever threshold the platform publishes",
+              "Evidence",
+              "A denial from the person who appears in the footage in question",
+              "The original file, since a re-uploaded copy cannot be examined",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Dismissing real footage as fake is a claim needing support, exactly as calling something real is. It's-probably-a-deepfake is not a free pass.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "What does Lesson 7 offer in place of reflexive cynicism?",
+            options: [
+              "Calibrated trust",
+              "A default of believing whatever an established outlet has published",
+              "A rule of waiting a week before forming any view on a viral clip",
+              "A preference for text sources, on the grounds that they are harder to fake",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Skepticism without nihilism. I am not sure yet is a verification step, not a verdict, and corroboration can confirm something genuine as readily as it exposes a fake.",
+            sourceLessonSlug: "the-liars-dividend",
+          },
+          {
+            prompt: "What is step one of the newsroom verification workflow?",
+            options: [
+              "Run the file through two detectors and compare their confidence scores",
+              "Ask the platform to confirm which account uploaded the file first",
+              "Find the earliest version",
+              "Check whether the file carries a Content Credential before anything else",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Reverse-image-search frames, search keywords and dates, trace the post upstream. The earliest copy usually carries the real context that later reposts stripped away.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "What does the newsroom workflow treat as a major red flag about an uploader?",
+            options: [
+              "They cannot be identified",
+              "They posted from an account created within the past twelve months",
+              "They have not replied to other outlets asking about the same footage",
+              "They uploaded the clip to several platforms within the same hour",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Step two is to identify and contact the source. An uploader who will not or cannot be identified is the workflow's named red flag.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "Checking whether shadows, signage and license plates match the claimed time and place is what kind of check?",
+            options: [
+              "Artifact-hunting, since it looks for flaws the generator left in frame",
+              "A metadata check, since it leans on the file's recorded location fields",
+              "A lateral read, since it compares the clip against a published source",
+              "Cross-checking against reality",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Internal consistency against the world, not artifact-hunting: it works even on a flawless render, because the render still has to agree with weather, language and landmarks.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "How does the newsroom workflow treat a detector score or a watermark result?",
+            options: [
+              "As the deciding input, once two separate tools agree with each other",
+              "As evidence to weigh",
+              "As grounds to publish whenever the score clears ninety-five percent",
+              "As unusable, given that detectors collapse on real-world content",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Tools are inputs and judgment is held; they are never the final word. Detectors really do collapse on real content, which is a reason to weigh them carefully, not to discard them.",
+            sourceLessonSlug: "how-newsrooms-verify",
+          },
+          {
+            prompt: "What does Lesson 9 name as the carrier that makes misinformation spread?",
+            options: [
+              "Recommendation systems that promote whatever is newest on a platform",
+              "The speed at which generated media can now be produced and posted",
+              "Strong emotion",
+              "A shortage of fact-checkers against the volume of daily uploads",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Outrage, fear and you-have-to-see-this are engineered to bypass judgment, so a strong reaction is the cue to slow down rather than to share.",
+            sourceLessonSlug: "before-you-share",
+          },
+          {
+            prompt: "The 30-second checklist warns about the liar's dividend in reverse. What is that mistake?",
+            options: [
+              "Declaring something fake without checking",
+              "Sharing a clip with a caption saying that it might well be fake",
+              "Refusing to share anything until a major outlet has published it first",
+              "Waiting for a platform to attach an AI label before believing anything",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The checklist runs in both directions: do not share what you cannot verify, and do not call something fake without checking it either.",
+            sourceLessonSlug: "before-you-share",
+          },
+          {
+            prompt: "The provenance practice drill asks for one word: establishing where media came from, who made it, and how it reached you. What is it?",
+            options: [
+              "Forensics, the frame-by-frame examination of a file for signs of editing",
+              "Attribution, the credit line a platform prints beneath a reposted image",
+              "Provenance",
+              "Chain of custody, the signed log an evidence handler keeps for a court",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It survives every new model because it does not depend on a flaw in the media, which is the whole reason the drill leads with it.",
+            sourceLessonSlug: "practice-provenance",
+          },
+          {
+            prompt: "The provenance drill closes on an urgent call in your relative's exact voice. What does it tell you to do?",
+            options: [
+              "Ask them to repeat the request slowly and listen for glitches in the audio",
+              "Call back on a number you already have",
+              "Transfer a small sum first, so the receiving account can be traced later",
+              "Stay on the line and put security questions to the caller before paying",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A voice clone cannot answer the real person's actual phone. The FBI recommends the callback plus a pre-agreed family code word.",
+            sourceLessonSlug: "practice-provenance",
+          },
+          {
+            prompt: "In the tools-and-traps drill, what does the C2PA standard attach to a file?",
+            options: [
+              "An encrypted copy of the original image, held for later comparison",
+              "A tamper-evident nutrition label",
+              "A permanent identifier that every platform is required to display",
+              "A score estimating how much of the file a generative model produced",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Who made it, whether AI was used, what edits were made. A strong signal when present, though a screenshot or a metadata-stripping upload can erase it.",
+            sourceLessonSlug: "practice-tools-and-traps",
+          },
+          {
+            prompt: "The tools-and-traps drill asks true or false: media carrying no credential and no watermark is proven real. Which is it?",
+            options: [
+              "True, because a generator would have embedded one at the moment of creation",
+              "True, but only for a file that came straight off a camera with no editing",
+              "False",
+              "It depends on whether the platform strips metadata when a file is uploaded",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Most media carries no provenance signal at all, so absence proves nothing in either direction. Corroborate instead.",
+            sourceLessonSlug: "practice-tools-and-traps",
+          },
+          {
+            prompt: "In the tools-and-traps drill, which formats does SynthID watermark?",
+            options: [
+              "Images, audio, video, and text",
+              "Images only, since the other formats leave no room for a hidden signal",
+              "Video and audio, the two formats most often used in impersonation scams",
+              "Any format at all, including files produced by other companies' tools",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Google DeepMind's watermark is imperceptible and covers all four. It resists common edits but is not impossible to remove, and it only flags tools that use it.",
+            sourceLessonSlug: "practice-tools-and-traps",
+          },
         ],
       },
     },
