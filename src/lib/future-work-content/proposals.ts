@@ -15,6 +15,13 @@ export interface ProposalDoc {
 
 export const PROPOSAL_DOCS: ProposalDoc[] = [
   {
+    key: "Black-inventors",
+    title: "Black inventors",
+    summary: "research Black inventors/innovators/discoveries and highlight those that had their ideas stolen or not credited",
+    body: `research Black inventors/innovators/discoveries and highlight those that had their ideas stolen or not credited`,
+    provenance: "plans/future-courses/Black-inventors.md",
+  },
+  {
     key: "Claude Certified Architect - Foundations, Prepare for and pass the exam - freeCodeCamp",
     title: "Claude Certified Architect   Foundations, Prepare for and pass the exam   freeCodeCamp",
     summary: "CLAUDE CERTIFIED ARCHITECT - FOUNDATIONS, PREPARE FOR AND PASS THE EXAM! - FREECODECAMP.ORG (128K).MP3",
@@ -6505,406 +6512,17 @@ Connect with human support oK, great so there it did and it transferred it to a 
     provenance: "plans/future-courses/Claude Certified Architect - Foundations, Prepare for and pass the exam - freeCodeCamp.md",
   },
   {
-    key: "africa-precolonial-track-proposal",
-    title: "Precolonial Africa, course track proposal",
-    summary: "A proposed \"Africa Before Colonization\" track: one built anchor course plus seven follow-on",
-    body: `# Precolonial Africa, course track proposal
+    key: "ai-my-journey",
+    title: "Ai my journey",
+    summary: "review the history of building tools. and lets have a conversation about what we learned working together and share stumbles, failures, learnings, best…",
+    body: `review the history of building tools. and lets have a conversation about what we learned working together and share stumbles, failures, learnings, best practices, guard rails created to help us succeed.
 
-A proposed **"Africa Before Colonization"** track: one built anchor course plus seven follow-on
-courses, each going survey-to-depth on a region or method the anchor could only give one or two
-lessons. From BAM's note (\`plans/future-courses/world.md\`): "Africa before colonization", sibling
-queue entries (Pan-Africanism, Afrocentricity, Central America Pre-Columbian, Asia pre-colonization)
-are separate courses on parallel branches, and this track deliberately does NOT overlap them: this
-track is the precolonial documented record; Pan-Africanism/Afrocentricity are modern intellectual
-and political movements ABOUT that record.
-
-**Nothing below is built.** These are proposals, pick which to author, and in what order.
-
----
-
-## The anchor (built, \`content/africa-precolonial\`)
-
-**Africa Before Colonization: The Documented Record** (Culture & History), 7 sections, 16 teaching
-lessons, 7 quizzes (15-16-question banks), 1 exercise. Opens with the claim in the deniers' own
-words (Hegel 1837; Trevor-Roper 1965, both verified) and answers it with the record: Kush/25th
-Dynasty, Aksum, Ghana→Mali→Songhai + Timbuktu, Great Zimbabwe (with Rhodesia's documented 1970
-censorship), the Swahili coast, Benin (with the 1897 looting), Ethiopia (Lalibela → Adwa). African
-participation in slavery and the slave trades is taught plainly; romantic overcorrection is taught
-as a trap equal to erasure; every shaky beloved claim (Mansa Musa's "richest ever," the 1076
-Almoravid "sack," Sankore "university," manuscript counts, the Ark) is hedged or refused on the
-record.
-
-**The anchor's reusable analytical spine is the five-part audit + two guard rails.** Every course in
-this track should use it as its skeleton so the track compounds:
-
-1. **Which people?** 2. **Which place?** 3. **Which century?** 4. **Which sources?**
-5. **Do independent lines converge?** Guard rails: **refuse erasure, refuse romance.**
-
-Cross-links: the **Mansa Gold** research (Ghana cocoa/coffee; \`plans/future-courses/mansa-gold/\`,
-surfaced at \`/admin/future\`) pairs naturally with any West-Africa follow-on and with the
-Documentarian program's Ghana case study. The Great Migration and Hoodoo courses are downstream
-diaspora companions.
-
----
-
-## Selection criteria
-
-A follow-on earns a slot only if it teaches something the anchor could not: either a **regional
-literature deep enough for its own sections** (the anchor gave Kush two lessons; the literature
-supports twenty) or a **transferable method** (the "How We Know" course). The test is the same as
-the workers-rights track: does removing it leave a hole?
-
----
-
-## The seven follow-on courses
-
-### 1. Kush & Aksum: The Nile Beyond Egypt
-**Uniquely teaches:** the deepest time depth in the track (Kerma c. 2500 BCE → Aksum's 7th-c. CE
-decline); a full treatment of the 25th Dynasty (Piye's stela as a readable primary source in
-translation), Meroë (Kandakes, the Rome war, ironworking), and Aksum (coin sequence as a datable
-king list; Ezana's inscriptions; Adulis and the Periplus). The undeciphered-Meroitic thread is a
-standing "how evidence works" lesson.
-**Sourcing strength:** excellent. Welsby, Phillipson, Munro-Hay, Bonnet's Kerma reports, the
-British Museum and Sudanese corpus, UNESCO GHA vol. II. Coins and inscriptions are primary sources
-students can see.
-**What's hard:** chronology conventions differ between references (regnal dates vary by decades);
-Sudan's current conflict makes site-status claims perishable, date everything. Avoid the
-"Black pharaohs" framing wars by teaching the naming debate itself.
-
-### 2. The West African Empires: Ghana, Mali, Songhai
-**Uniquely teaches:** state administration in the Arabic sources read closely (al-Bakri's customs
-schedule, al-Umari's Cairo interviews, Ibn Battuta's Mali as a full primary-source lesson in
-Levtzion & Hopkins); the Sundiata epic taught WITH Vansina's rules; Songhai's provincial
-administration under Askia Muhammad; Tondibi and the historiography of collapse. The Mansa Musa
-source-audit from the anchor expands into a full unit.
-**Sourcing strength:** the best documentary base in the track (Levtzion & Hopkins; Gomez's
-*African Dominion* as the modern spine; Hunwick's Tarikh al-Sudan).
-**What's hard:** popular myth pressure is highest here (net-worth figures, "Abubakari II crossed
-the Atlantic", teach as unsupported); Koumbi Saleh's identification is debated; the
-Ghana-modern-Ghana naming trap needs constant policing.
-
-### 3. Great Zimbabwe & the Southern States
-**Uniquely teaches:** an archaeology-first course (the only track member where texts are marginal):
-Mapungubwe → Great Zimbabwe → Khami/Mutapa sequence; drystone building technique; the
-gold-and-cattle economy; and the FULL denial-and-censorship file (Mauch → Bent → Ancient Ruins Ltd
-→ Hall → Randall-MacIver → Caton-Thompson → Rhodesia 1970 → Garlake) as a documented case study in
-politicized archaeology, the strongest single "evidence vs ideology" unit the platform could own.
-**Sourcing strength:** strong and citable (Garlake, Pikirayi, Caton-Thompson's own report, Huffman
-with his critics, UNESCO). The censorship chapter is unusually well documented (Pikirayi 2012).
-**What's hard:** population and trade-volume figures are all estimates, hedge everything;
-Mapungubwe's gold rhino involves South African heritage politics; texts are so thin that lessons
-must teach FROM material evidence, which is harder to write engagingly (lean on the anchor's
-convergence lesson).
-
-### 4. The Swahili Coast: Kilwa and the Indian Ocean World
-**Uniquely teaches:** Africa in world-trade history: monsoon economics, coinage (Kilwa's mint),
-Shanga/Kilwa excavation sequences as the refutation of the "Arab colony" claim, Ibn Battuta's 1331
-eyewitness, Zheng He's fleets from the Ming end, and the Portuguese rupture (1498-1505) as the
-hinge into the colonial era. Natural map-content course (\`mapContent\` support already exists).
-**Sourcing strength:** good: Horton & Middleton, Kusimba, LaViolette, the Periplus for deep
-background, Gibb's Ibn Battuta, UNESCO Kilwa documentation.
-**What's hard:** the Kilwa Chronicle's two divergent versions demand careful handling (also an
-opportunity, it IS the methods lesson); Swahili identity is a live modern debate (coastal
-communities' own histories vs archaeological narratives); Zanzibar-era slave-trade history must be
-kept distinct in period from the medieval trade to avoid flattening.
-
-### 5. Benin, Ife & the Forest Kingdoms
-**Uniquely teaches:** art as historical record (Ife naturalism, the Benin plaque corpus as a court
-archive in brass, the casters' guild continuity); the manilla economy and the 2023 isotope study as
-a "follow the metal" methods unit; Benin's 16th-c. slave-export embargo and later participation, the track's most concrete case of an African state setting trade terms; the 1897 expedition,
-dispersal, and the live restitution ledger (dated). Oyo, Dahomey and Asante as the political
-context of the forest belt.
-**Sourcing strength:** strong: Ryder's *Benin and the Europeans* (from the Portuguese/Dutch
-records), Blier on Ife, Hicks and the British Museum's own statements for 1897 and after,
-Skowronek et al. 2023.
-**What's hard:** restitution moves monthly, every status line needs an as-of date; loot counts
-have no complete inventory (ranges only); Dahomey's slave-trade centrality must be taught at the
-anchor's honesty standard without letting it swallow the art-historical spine.
-
-### 6. Ethiopia: The Unconquered Highland
-**Uniquely teaches:** the longest continuous statehood story in the track (Aksum → Zagwe/Lalibela
-→ Solomonic restoration → Gondar → Adwa), the Ge'ez manuscript tradition (Garima Gospels,
-radiocarbon-dated) as Africa's deepest insider written record, the Kebra Nagast as legitimating
-TRADITION taught as such, and Adwa 1896 as diplomatic history (Wuchale's Article 17 as a
-translation-criticism lesson). The "never colonized" formulation taught precisely, WITH 1936-41.
-**Sourcing strength:** excellent: Phillipson, Munro-Hay, Marcus, Jonas's *Battle of Adwa*, Bausi on
-the manuscripts, UNESCO (Lalibela 1978, Aksum 1980).
-**What's hard:** the Ark and Solomonic traditions are identity-bearing for living communities, teach as tradition without either endorsing or sneering; modern Ethiopian/Eritrean politics
-(Tigray war; heritage sites in conflict zones) makes site-status claims perishable; church
-chronology vs archaeological phasing at Lalibela must stay visibly separate.
-
-### 7. How We Know: The Historian's Toolkit (Africa Edition)
-**Uniquely teaches:** the track's methods capstone, expanding anchor Section 6 into a full course:
-source criticism on the Arabic corpus (translation comparison exercises), Vansina's oral-tradition
-method with recorded epic excerpts, radiocarbon + stratigraphy walkthroughs (Jenne-jeno, Igbo-Ukwu
-as case studies), historical linguistics (Bantu expansion), archival survivorship (what burned,
-what was looted, what was never written), and a final "audit a viral claim" capstone exercise.
-This is the platform's most TRANSFERABLE course, it generalizes to every history track WitUS ever
-builds (the anchor's five-part audit becomes a reusable cross-course tool).
-**Sourcing strength:** excellent and stable (Vansina 1985, Ehret 2016, Levtzion & Hopkins, the GHA
-methodology volume I, published site reports).
-**What's hard:** methods courses risk dryness, every unit must run on a concrete African case the
-learner already met in the track; exercise design (translation comparison, claim audits) is more
-build-intensive than narrative lessons.
-
----
-
-## Recommended build order + reasoning
-
-1. **The West African Empires**, highest learner demand (Mansa Musa is the track's celebrity),
-   best documentary base, and the anchor's most compressed section (three empires in one lesson
-   block). The myth-pressure is exactly where the platform's hedging house style shines.
-2. **Great Zimbabwe & the Southern States**, the strongest thesis course (evidence vs ideology,
-   with the censorship file), and zero overlap with anything else on the platform. Pairs with #1
-   to cover both a text-rich and a text-poor methodology.
-3. **How We Know (Africa Edition)**, build third, once two deep regional courses exist for its
-   case studies to point back into; it then multiplies the value of everything after it, and its
-   audit tooling gets reused by every later WitUS history course.
-4. **Benin, Ife & the Forest Kingdoms**, the restitution news cycle keeps it current; the
-   honesty-standard slavery treatment is already modeled by the anchor; art-as-record extends the
-   platform's "documents aren't the only evidence" argument.
-5. **Ethiopia**, rich, stable sourcing; strongest continuity story; benefits from the methods
-   course existing first (tradition-vs-record framing is its spine).
-6. **The Swahili Coast**, excellent map-course potential; slots after Ethiopia so the Indian
-   Ocean context (Aksum → Adulis → Kilwa) reads as one arc.
-7. **Kush & Aksum**, last not because it is weakest but because the anchor already covers it
-   proportionally best (two full lessons), and Sudan's conflict makes fieldwork-fresh sourcing
-   hardest right now; by building last it can absorb whatever the war has done to site status.
-
-**Track-wide rules** (inherited from the anchor, non-negotiable): the five-part audit as skeleton;
-APA 7 + \`## Sources\` per teaching lesson; every shaky beloved claim labeled contested/estimated or
-refused; African participation in slavery taught plainly wherever it touches a course's period;
-never flatten "Africa", name people, place, period; quiz banks ~15 with \`explanation\` +
-\`sourceLessonSlug\` on every question.`,
-    provenance: "plans/future-courses/africa-precolonial-track-proposal.md",
-  },
-  {
-    key: "afrocentricity-track-proposal",
-    title: "Afrocentricity, course track proposal",
-    summary: "A proposed \"Afrocentricity\" track: one built anchor course plus a set of deep-dive courses, each",
-    body: `# Afrocentricity, course track proposal
-
-A proposed **"Afrocentricity"** track: one built anchor course plus a set of deep-dive courses, each
-taking one strand the anchor teaches as a single section and expanding it into a full, primary-source
-course. The track's unifying deliverable is **not** "here is the truth about Afrocentricity", it is a
-transferable skill: **how to evaluate a contested academic paradigm** that is part legitimate corrective
-and part overcorrection.
-
-The design rule the whole track inherits from the anchor is non-negotiable and load-bearing:
-
-> **Teach it as its proponents define it · present the strongest claims from their own books · present
-> the substantive academic criticism from the critics' own books · attribute every contested claim to
-> who makes it · assert in the course's own voice only what is genuinely settled · declare no winner on
-> live debates · distinguish rigorous scholarship from pop-myth · never invent a citation or a quote.**
-
-**Nothing below is built.** These are proposals, pick which to author, and in what order. Several
-require BAM's explicit editorial sign-off before authoring begins (flagged per course).
-
----
-
-## The anchor (built, \`content/afrocentricity\`)
-
-**Afrocentricity: How to Evaluate a Contested Paradigm** (Culture & History, slug \`afrocentricity\`), 6 sections, 15 teaching lessons, 6 quizzes (15-question banks, above the 10-question attempt cap so
-retries rotate; 90 questions total), for high school students. Registered in \`scripts/seed-courses.ts\`;
-no migration, \`pnpm seed:courses\`.
-
-- **S1, What Afrocentricity Is (and Isn't):** Asante's own definition (centering African agency); the
-  *real* Eurocentric erasure (Hegel, Trevor-Roper) that makes the corrective legitimate; the two
-  founders (Diop = the founding historical claim, Asante = the named method).
-- **S2, The Kemet Question:** Diop's evidence-based case (melanin tests, *Kemet*, Herodotus,
-  linguistics, the 1974 UNESCO Cairo symposium), the mainstream Egyptological response ("race" is a
-  modern category; *Kemet* = "the Black **Land**," i.e. soil), and the 2017 ancient-DNA study
-  (Schuenemann et al.) taught **dated and with its limits stated**. **No winner declared.**
-- **S3, Black Athena and Stolen Legacy:** Bernal's Ancient/Aryan Model challenge; Lefkowitz's
-  response across her two 1996 books (\`Not Out of Africa\`; \`Black Athena Revisited\`, co-ed. Rogers)
-  plus Bernal's 2001 reply, the concede/don't-concede split reported, **no winner**; George G. M.
-  James's *Stolen Legacy* taught as failing on specifics (the Library of Alexandria postdates
-  Aristotle) **without erasing** the documented Egypt→Greece influence.
-- **S4, Rigorous Scholarship vs. Pop-Myth:** the melanin pseudoscience (Welsing; Jeffries's "Sun
-  People / Ice People") named as a distinct pop strand, shown to be pseudoscience **and** a mirror of
-  the racism the tradition opposed, with the point that Afrocentrism's **own** critics (Howe, Ortiz de
-  Montellano) draw the same line, so naming it is not partisan.
-- **S5, The Critics, and the Answers:** Howe (empirical), Appiah (essentialism), Gilroy
-  (anti-purity, from the **left**, not all critics are conservatives), each steelmanned from their
-  own books, then the proponents' strongest reply to each, with honest scorekeeping.
-- **S6, How to Evaluate a Contested Paradigm:** the six-move toolkit (steelman → separate the levels
-  of claim → attribute → check sourcing + date live science → corrective-or-overcorrection → refuse
-  the false binary), applied end-to-end to Afrocentricity **and** to an unrelated claim to prove the
-  skill transfers.
-
-**The anchor's real payload is a reusable analytical spine, "the six moves" (S6).** Every deep-dive
-course in this track should be built on that spine, so the track compounds instead of being six
-unrelated arguments. A student who has done the anchor plus any two deep-dive courses should be able to
-walk into a paradigm they have never studied and produce a defensible first-pass evaluation.
-
-The anchor is also the natural home for BAM's source note
-\`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\` (move it to \`completed/\` once the anchor
-ships).
-
----
-
-## Selection criteria (why these six, and not others)
-
-A deep-dive course earns a slot only if it teaches something **the anchor's single section on it could
-not**, more primary text, a fuller cast, a live sub-debate the section had to compress. The test is
-not "is it important"; it is "does the extra depth change what a student can *do*."
-
-Every course also has a **contestedness rating** and a **public-risk rating**, because two different
-things make a course hard:
-
-- **Contestedness** = how divided the scholarship is (does the course have to declare no winner?).
-- **Public risk** = how likely the course is to be weaponized, misread, or to defame a living person, independent of how well it is sourced. A course can be superbly sourced *and* high public risk (a
-  whole course on "was Egypt Black" is the type case).
-
-The safe/sign-off split below is driven mostly by **public risk**, not by sourcing, every course here
-is sourceable from material already in print.
-
----
-
-## The proposed deep-dive courses
-
-### SAFE TO BUILD (author with the anchor's method; no reviewer, no sign-off needed)
-
-#### 1. Diop and the Origins of the Paradigm
-**Teaches uniquely (beyond S1's founders lesson):** the full intellectual biography of the argument, Diop's training in Paris, the rejected then re-submitted doctoral thesis, *Nations nègres et culture*
-(1954), the two English books (*The African Origin of Civilization*, 1974; *Civilization or Barbarism*,
-1991), Obenga's linguistic work, and the **reception history** (why the 1974 UNESCO symposium mattered,
-and how the "Black hypothesis" was argued *and answered* in the room). It teaches how a paradigm is
-*born*, one scholar, one grievance, a body of evidence, and a fight for a hearing.
-**Sourcing strength:** strong. Diop's own translated books; the UNESCO *General History of Africa* Vol.
-II and the 1974 symposium proceedings; standard biographical scholarship.
-**Contestedness:** high (Diop's specific claims are contested), but the course teaches the *arguments
-and their reception*, not a verdict, so it stays inside the no-winner rule comfortably.
-**Public risk:** low-to-moderate. It is a history-of-scholarship course; it does not have to re-litigate
-Egypt's "race" in its own voice.
-
-#### 2. Black Athena: Anatomy of a Scholarly Fight
-**Teaches uniquely (beyond S3):** the exchange at full length, Bernal's three volumes (1987, 1991,
-2006) taken model-by-model; the specialist essays in *Black Athena Revisited* engaged individually;
-Bernal's *Black Athena Writes Back* (2001) reply; and the **independent** "orientalizing" scholarship
-(Burkert, 1992; West, 1997) that shows where the field actually moved. The payload is a rare, fully
-in-print case study of **how a discipline argues with itself over years**, and how "largely wrong in
-the particulars, right about the big thing" can both be true.
-**Sourcing strength:** excellent. Everything is published and in print, on both sides.
-**Contestedness:** high on specifics, but the concede/don't-concede split is now well-documented, the
-course reports it rather than adjudicating.
-**Public risk:** low. This is an academic-historiography fight; the participants published to be argued
-with. Keep it about the scholarship, not about "who was really Black."
-
-#### 3. The Critics: Howe, Appiah, Gilroy (and the Answers)
-**Teaches uniquely (beyond S5):** each critic given a full treatment from their own book, Howe's
-*Afrocentrism* (1998) on the empirical record; Appiah's *In My Father's House* (1992) on racial
-essence; Gilroy's *The Black Atlantic* (1993) on routes-over-roots, plus the proponents' developed
-replies, plus the **internal-to-Black-studies** critics the anchor only gestured at (e.g. Clarence
-Walker, *We Can't Go Home Again*, 2001; Wilson Jeremiah Moses, *Afrotopia*, 1998). The point students
-carry away: **critique of a paradigm is not the same as opposition to its cause**, Gilroy and Appiah
-are anti-racist critics, and that is the most misunderstood fact in the whole debate.
-**Sourcing strength:** excellent; all in print.
-**Contestedness:** these are live philosophical disagreements, perfect no-winner material.
-**Public risk:** low-to-moderate. Handled as steelmanned scholarship it is defensible; the only risk is
-a reader mistaking "we teach the critics" for "we endorse the critics," which the framing must prevent.
-
-### NEEDS BAM'S EDITORIAL SIGN-OFF BEFORE AUTHORING
-
-#### 4. The Kemet Debate (deep): Was Ancient Egypt a Black African Civilization?
-**Teaches uniquely (beyond S2):** the whole evidentiary landscape, the classical testimony in full
-(Herodotus 2.104 in context, Diodorus, the debates over translation), the physical-anthropology
-history, the *Kemet*/*Deshret* philology, Nubia and the Nile-Valley population continuum, and the
-**post-2017 ancient-DNA literature** as it continues to develop (each study dated and bounded).
-**Sourcing strength:** strong on all sides, but this is precisely the problem.
-**Contestedness:** maximal.
-**Public risk: HIGH, this is the single highest-risk course in the track.** A whole course (vs. one
-carefully bounded section) on "was Egypt Black?" is a lightning rod that **both** sides will try to
-weaponize as a verdict no matter how scrupulously it declares none. **Why sign-off:** BAM should
-approve the *scope and framing* (how much aDNA; how the "race is a modern category" move is weighted;
-whether it ships published or gated) before a line is written. It is buildable and would be excellent, but it must be a deliberate editorial decision, not a default.
-
-#### 5. Scholarship vs. Pop-Myth: How to Tell Rigor From Pseudoscience
-**Teaches uniquely (beyond S4):** the full anatomy of the pop-myth strand as a *case study in
-pseudoscience detection*, melanin theory, "Sun People / Ice People," and the ancient-astronaut-adjacent
-claims, set against the rigorous scholarship, using the build-tests as the through-line. Genuinely
-valuable as a media-literacy course.
-**Sourcing strength:** good (Ortiz de Montellano, 1993; Howe, 1998; Moses, 1998; the primary pop texts).
-**Contestedness:** low on the science (the pseudoscience really is pseudoscience), but that is the
-risk.
-**Public risk: HIGH.** A whole course that names **living or recently-living people** (e.g. Leonard
-Jeffries) as purveyors of pseudoscience is defamation-adjacent and racially charged in a way one
-carefully-worded section is not. **Why sign-off:** BAM should approve the naming policy (name
-individuals, or critique claims without naming?), the tone, and legal comfort before authoring. The
-*idea* is safe; the *execution* around named living people is not automatically safe.
-
-#### 6. Afrocentric Education and the Curriculum Debates
-**Teaches uniquely:** the applied, contemporary fight, the Portland African-American Baseline Essays
-(1987), New York State's "A Curriculum of Inclusion" (1989), Asa Hilliard's role, the multiculturalism
-wars of the 1990s, and how all of it rhymes with **today's** curriculum battles. The most
-present-tense, most "relevant to a student's own school" course in the track.
-**Sourcing strength:** good, but **needs a careful verification pass**, the curriculum documents and
-their reception are real and locatable, but the retellings are highly polarized, so each claim must be
-sourced to a primary document and dated.
-**Contestedness:** high, and **entangled with live present-day politics** (it maps directly onto current
-curriculum/CRT fights).
-**Public risk: HIGH.** This is the course most likely to be read as a stance on a current political
-fight. **Why sign-off:** BAM should decide whether the platform wants a course adjacent to today's
-curriculum wars at all, and if so, approve the framing that keeps it historical and non-partisan.
-
----
-
-## Recommended build order, and why
-
-**1 → Diop and the Origins. 2 → Black Athena. 3 → The Critics.** *(then, only with sign-off)*
-**4 → Scholarship vs. Pop-Myth. 5 → The Kemet Debate. 6 → Afrocentric Education.**
-
-The reasoning:
-
-- **Start with the three SAFE courses**, because they establish the track's credibility on
-  fully-in-print, low-public-risk material and let the anchor's no-winner method prove itself at course
-  length before anything higher-risk is attempted. **Diop first** (it is the origin story everything
-  else refers back to), then **Black Athena** (a self-contained academic fight with a clean concede/
-  don't-concede structure), then **The Critics** (which only fully lands once a student has seen the
-  paradigm defended at length).
-- **Then, and only with BAM's sign-off, the three high-public-risk courses.** Among them,
-  **Scholarship vs. Pop-Myth before The Kemet Debate**, because the pseudoscience-detection skill is the
-  cleaner build and inoculates the student against the pop version *before* the hardest course asks them
-  to weigh contested real scholarship. **The Kemet Debate is the capstone**, it should be attempted
-  last, when the method is proven and the framing has been signed off, because it is the one most likely
-  to be misread as a verdict. **Afrocentric Education** is last of all, or deferred indefinitely,
-  because its entanglement with present-day politics is the hardest editorial call in the set.
-
-**Track sequencing for the learner** is different from the build order. As a learning path:
-**Afrocentricity** (the anchor and the six moves) → any deep-dive courses in any order → **The Kemet
-Debate last**, because "the hardest contested question, weighed without a verdict" is the right final
-test before a student goes and evaluates a paradigm of their own.
-
----
-
-## What BAM would need to build the sign-off courses responsibly
-
-1. **An editorial decision on the three high-public-risk courses' *scope and framing***, not their
-   sourcing (all are sourceable), but how far each goes, whether it ships published or gated, and how
-   the most inflammatory move in each is weighted. The anchor already models the discipline; these
-   courses raise the stakes from one section to a whole course.
-2. **A naming policy for the pop-myth course**, name individuals as purveyors of specific claims, or
-   critique the claims without naming living people? This is a legal-comfort and tone decision, not a
-   research one.
-3. **A verification pass for the curriculum course**, every claim about the Portland Baseline Essays,
-   the New York task force, and the 1990s multiculturalism debates sourced to a primary document and
-   dated, because the retellings are polarized.
-4. **Nothing else.** The three SAFE courses need no permissions, no reviewer, and no sign-off, only
-   authoring time. That is the argument for starting there.
-
----
-
-## Cross-links
-
-- Anchor course: \`scripts/data/afrocentricity-course.ts\` (branch \`content/afrocentricity\`).
-- Registration: \`scripts/seed-courses.ts\` (import + Culture & History entry), verified.
-- Category: **Culture & History** (the anchor ships there). If the track grows past ~4 courses, consider
-  promoting it to its own learning path within Culture & History.
-- Source note: \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\` (Asante bio, the anchor is
-  its home; move to \`completed/\` once the anchor ships).
-- Model for this proposal: \`plans/future-courses/workers-rights-track-proposal.md\` (the built-anchor +
-  waves + safe/needs-care structure this file mirrors).`,
-    provenance: "plans/future-courses/afrocentricity-track-proposal.md",
+interview me about my experience with other tools
+after the review
+conversation
+then an outline
+then another review`,
+    provenance: "plans/future-courses/ai-my-journey.md",
   },
   {
     key: "bvc-sommelier",
@@ -7334,111 +6952,6 @@ it'll be part of elementary mba`,
     provenance: "plans/future-courses/economics.md",
   },
   {
-    key: "elementary-mba",
-    title: "Elementary mba",
-    summary: "I created a curriculum for children when I was in grad school to get my mba teaching the students what I was learning to get my mba.",
-    body: `I created a curriculum for children when I was in grad school to get my mba teaching the students what I was learning to get my mba.
-I want to revise and improve the curriculum
-I want to model it on the curriculum and the best mba programs in the world
-
-inspiration:
-- mit economics
-
-who to model after for marketing, supply chain, statistics, etc`,
-    provenance: "plans/future-courses/elementary-mba.md",
-  },
-  {
-    key: "explore-map-and-entities",
-    title: "The explore surface: a course map, a timeline panel, and cross-course entities",
-    summary: "Three asks answered as one surface, because all three let a learner ask a question the app cannot",
-    body: `# The explore surface: a course map, a timeline panel, and cross-course entities
-
-Three asks answered as one surface, because all three let a learner ask a question the app cannot
-answer today: show me how this all connects. Seventeen courses now share people, statutes and places,
-and the only way to discover that is to take all of them.
-
-THE MAP. Reuse the existing map lesson renderer (Natural Earth projection, markers with lat/lng plus
-lines and polygons) rather than building anything new. The one missing piece is that courses have no
-coordinates: add a course_places table (course_id, lat, lng, label, role) rather than lat/lng columns
-on courses, because a course is often about several places and one point would lie. Most route-series
-courses already have a map lesson whose markers ARE those coordinates, so the data largely exists and
-simply is not queryable. The category/track toggle should be a lens, not a filter: by category colours
-pins by subject; by track colours by learning path AND DRAWS THE PATH ORDER AS CONNECTING LINES, which
-is where the map earns its keep, since a path is inherently a route and nobody has drawn one yet.
-Wanderlearn destination pins are a third, independent layer; getting that list is the one external
-dependency, the same blocker as the outstanding tour URLs.
-
-THE TIMELINE PANEL, three ideas, refined now that it must sit beside the map so the two drive each
-other. (1) A brushed timeline: drag a range and the pins filter, with two stacked bands, what was
-built above and what was done below. It answers the parallel-history problem and the diffusion
-question with one control. Largest cost, biggest payoff. (2) An event rail: a scrollable dated list
-beside the map, hover to highlight a pin. Mostly layout over existing data; the right first shipment.
-(3) An era stepper: named periods as tabs that re-centre the map. Most teachable for a classroom and
-it forces a useful editorial decision about periodisation. Ship 2, then 1, then 3.
-
-CROSS-COURSE ENTITIES, the most valuable idea here. Berman v. Parker appears in the DC course, the
-capstone, and by implication in Indiana Avenue; Milliken runs through three courses; the Housing Act
-of 1949 sits under half the catalogue, and none of it is visible. Model it as entities (person, case,
-law, place, event, organization) joined to courses and lessons. Surface it as an entity page listing
-every course that touches it, as its own result type in search, as a quiet "also discussed in" line on
-lesson pages, and as an entity index at /teach so a teacher can ask what else covers the same case.
-Populate it by extracting from the Sources blocks the courses already carry plus an author-declared
-field going forward, NOT by hand-tagging seventeen courses. The capstone's connection graph is
-already a hand-built entity map to seed from.
-
-Every new table is tenant-scoped and by-id reads 404 across tenants. No entity page ships without its
-citations. Full plan: plans/45-explore-map-timeline-and-entities.md.
-
-DECIDED 2026-07-24: build all three timeline ideas, plus a rotating globe. Both asks have better
-answers than building three separate things.
-
-THE GLOBE IS A PROJECTION SWAP, not a new component. Verified against installed packages rather than
-assumed: d3-geo 3.1.1 is already a dependency and exports geoOrthographic with .rotate(), geoPath is
-projection-agnostic so the existing renderer draws a globe by changing one line, and geoDistance,
-geoCircle and geoGraticule are all present, which covers the sphere outline, the graticule, and the
-test for culling pins on the far side. world-atlas topojson is already loaded. No new dependency.
-MapLessonContent gains a projection prop; flat Natural Earth stays the default for LESSON maps, where
-a static printable image is right, and the globe is for the explore page where exploring is the point.
-Drag rotates, wheel zooms, and it all runs on data already in the browser so it still works offline.
-
-Accessibility is the real cost and is not optional: a flat-view toggle, keyboard rotation and zoom,
-and the pin list rendered as real text beside the globe. That text list is also the no-JS and offline
-fallback, and it doubles as the event rail.
-
-Zoom should control pin DENSITY, not dot size: far out, one pin per place cluster with a count; mid,
-one pin per course primary place; close in, every place a course touches plus tour pins. That is why
-course_places carries a role: it is the level-of-detail key.
-
-ALL THREE TIMELINES WITHOUT CLUTTER, because they are ONE control at three zooms, mirroring what zoom
-does to the map. Era stepper is the coarse grip (continent view), the brushed range is the medium grip
-(country view), the event rail is the fine grip (street view). They compose: clicking an era sets the
-brush, the brush filters the rail, the rail highlights pins. One instrument, three grips, not three
-features. The app then has ONE mental model on both axes: zoom out for the shape, zoom in for the
-detail. Space is the globe, time is the panel, and learning one teaches the other.
-
-Progressive disclosure keeps it calm: default is globe at continent zoom, era chips, collapsed rail,
-so only two controls are visible. Zooming or clicking an era densifies pins and fills the rail.
-Expanding the rail reveals the brush. The brush is never the first thing a newcomer meets.`,
-    provenance: "plans/future-courses/explore-map-and-entities.md",
-  },
-  {
-    key: "faa-part107",
-    title: "Faa part107",
-    summary: "I noticed the FAA part 107 course didnt have standards for any state. Is that because it wasn't checked or because it didnt meet any standards?",
-    body: `I noticed the FAA part 107 course didnt have standards for any state. Is that because it wasn't checked or because it didnt meet any standards?
-I'd like to show standards on all the courses. Especially the fitness and health courses.`,
-    provenance: "plans/future-courses/faa-part107.md",
-  },
-  {
-    key: "green-book",
-    title: "Green book",
-    summary: "Green Book",
-    body: `Green Book
-
-create a set of courses designed to use the 360 tour of WanderLearn. First is about the Green Book used by US citizens of African descent to safely travel thru the US after winning their freedom. Goal, map locations in the book and capture media (audio, video, text, etc) about the locations, past, present, future plans for the locations. Teach US History , State and Local History of those locations. Teach architecture, civics, planning, city and community planning, taxes, politics. Teach English Language Arts and creative writing by reading about the spaces . What other stories may be told about paths that people have traveled? For instance the Chitlin Circuit, other underground, and above ground routes, Route 66, etc. Make a list of potential places/routes. Put them into themes. Propose creation order. Can they be done as learning paths, preferably more than one learning path`,
-    provenance: "plans/future-courses/green-book.md",
-  },
-  {
     key: "guides-for-a-hostile-geography",
     title: "Guides for a Hostile Geography: Green Book analogues worldwide",
     summary: "Are there Green Book type tools elsewhere in the world? Yes, and comparing them separates the",
@@ -7469,208 +6982,6 @@ needing no new engineering. Full plan: plans/44-parallel-history-and-timelines.m
     provenance: "plans/future-courses/guides-for-a-hostile-geography.md",
   },
   {
-    key: "history-of-unions",
-    title: "History of unions",
-    summary: "create a course on the history of history-of-unions",
-    body: `create a course on the history of history-of-unions
-in the US and abroad
-create a track of courses that covers workers rights globally, with courses on different countries showing a diverse spectrum of how nations/states interact with labor`,
-    provenance: "plans/future-courses/history-of-unions.md",
-  },
-  {
-    key: "home-school-pricing-research",
-    title: "Home-School Live BVC Pricing, Market Research (July 2026)",
-    summary: "_Companion to `home-school-pricing.md` (the existing one-pager, tiers ~$20/$60/$150). This file is",
-    body: `# Home-School Live BVC Pricing, Market Research (July 2026)
-
-_Companion to \`home-school-pricing.md\` (the existing one-pager, tiers ~$20/$60/$150). This file is
-the evidence base for that pager's numbers. Local research note, not for publication._
-
----
-
-## 1. Comparables table
-
-| Offering | What you get | Price | Per-unit basis | Source |
-|---|---|---|---|---|
-| **Outschool, group live class (guideline rate)** | Teacher-set live class, any format except 1:1 | **$17-21** per learner per hour (one-time/ongoing/short-course bands all cluster here; semester 8+ wk programs $18-20) | per student, per class-hour | [teach.outschool.com/insights/pricing](https://teach.outschool.com/insights/pricing/) |
-| **Outschool, 1:1 tutoring (guideline rate)** | Private live tutoring | **$45-60/hr** (≤30 min sessions run $60-64/hr) | per student, per hour | [teach.outschool.com/insights/pricing](https://teach.outschool.com/insights/pricing/) |
-| **Outschool, monthly membership (buyer side)** | Credit bundle a parent buys, spent on live/self-paced classes | **$40/mo** (~1 live class/wk) · $70/mo (~2/wk) · $120/mo (~3/wk) · $240/mo (~4/wk) | per student, per month | [brighterly.com/blog/outschool-pricing](https://brighterly.com/blog/outschool-pricing/) |
-| **Outschool, 1:1 tutoring (market/actual)** | Private tutoring, promo-inclusive | $15-118 per lesson (national comparison: $25-80/hr) | per lesson | [brighterly.com/blog/outschool-pricing](https://brighterly.com/blog/outschool-pricing/) |
-| **Prenda microschool, direct-pay** | Platform fee + a "guide" (facilitator) fee, full weekday microschool, not a single subject | **$219.90/mo** platform fee alone; guide fee typically $3,500-4,000/yr (~$290-333/mo) → **~$475-517/mo total** per student | per student, per month | [help.prenda.com, Financial Policies](https://help.prenda.com/knowledge/prenda-financial-policies-direct-pay-microschools) |
-| **Primer microschool** | Full micro-private-school seat; heavily state-scholarship-funded | **$0, $3,200/yr** out-of-pocket depending on state/income (many families pay $0 via ESA/scholarship) | per student, per year | [primer.com/tuition](https://primer.com/tuition) |
-| **Sora Schools** (full-time accredited online private school, grades 6-12, ceiling reference, not a single-subject comparable) | Full course load, not enrichment | **$17,900/yr** full tuition; flexible-tuition band **$7,500, $16,000/yr** | per student, per year | [soraschools.com/tuition-and-affordability](https://soraschools.com/tuition-and-affordability) |
-| **Small-group / online tutoring, general market** | Live tutoring, subject-dependent | **$20-60/hr** online average; by grade: K-2 $25-45, 3-5 $30-55, 6-8 $40-65, 9-12 $50-100/hr | per student, per hour | [brighterly.com/blog/tutoring-rates-per-hour](https://brighterly.com/blog/tutoring-rates-per-hour/) |
-| **Homeschool co-op membership (typical)** | Parent-taught or paid-instructor classes, in-person hub | **$500, $3,000+/yr** all-in tuition; separately, registration $25-150/family, semester fee $70-140, building fee $125-350 | per family (+ per-class add-ons) | [numaschool.com, co-op fees](https://numaschool.com/learn/glossary/co-op-membership-fees), [tshanywhere.org, co-op tuition guide](https://www.tshanywhere.org/post/co-op-homeschool-tuition-fees-guide) |
-| **Real 2026-27 co-op examples** | Registration/membership only (classes billed separately) | Joy Homeschool Co-op **$115/family**; TEACH (Tri-Cities) **$45/family**; Ignite Homeschool Co-op **$150/student** (2026-27) | per family or per student | [joyhomeschool.org](https://www.joyhomeschool.org/), [teachtricities.com](https://www.teachtricities.com/tn/teach/index.cfm), [ignitehomeschoolcoop.org](https://www.ignitehomeschoolcoop.org/registration/fees-tuition) |
-| **Maven** (adult cohort-based courses, ceiling reference for "live cohort" premium, not a kids' comparable) | Multi-week live cohort with expert instructor, projects, community | **$500, $3,000/cohort** (avg ~$500; typical band $800, $2,500) | per person, per cohort/course | [maven.com/resources/course-price-and-length](https://maven.com/resources/course-price-and-length), [help.maven.com, pricing your course](https://help.maven.com/en/articles/6732396-pricing-your-course) |
-| **Woke Homeschooling** (Black-history-adjacent, self-paced only, no live component) | Downloadable U.S.-history curriculum | Grades 3-7: **$50**; high-school (2 parts): **$60 each**, one-time purchase, not recurring | per curriculum, one-time | [wokehomeschooling.com](https://wokehomeschooling.com/) |
-| **Gilder Lehrman Institute, self-paced African American History courses** | Lecture-based self-paced course w/ primary sources, quizzes | **$29.99** (affiliate-school network) / **$39.99** (general public) | per course, one-time | [gilderlehrman.org, self-paced courses](https://www.gilderlehrman.org/history-resources/curriculum/3-self-paced-courses-african-american-history) |
-| **Cultural Roots Homeschool Co-Op** (Richmond, VA, culturally centered, closest live positioning to BVC) | Weekly à la carte classes centered on Black/Brown/Indigenous history & culture | **No public price found**, site frames participation via tax-deductible "Patron" donations, not a listed tuition/class fee | unknown | [culturalrootsco-op.com](https://culturalrootsco-op.com/), **could not source a hard number** |
-| **National Black Home Educators (NBHE)** | Support/resource network, co-op-formation help | No live-class pricing published (membership/resource-network model) | n/a | [nbhe.net](https://www.nbhe.net/), **could not source a hard number** |
-
----
-
-## 2. Synthesis, going rate by delivery model
-
-**(a) Async/recorded access only.** There's no clean like-for-like: Outschool doesn't sell a pure
-self-paced subscription, and the closest culturally-specific analogs (Woke Homeschooling, Gilder
-Lehrman) are **one-time** purchases at **$30, $60**, not recurring. The nearest recurring proxy is a
-co-op's per-family registration/semester fee amortized monthly (~$10-30/mo-equivalent). A recurring
-$20-25/mo for ongoing access + quizzes + certificate + a monthly live group Q&A is defensible and, if
-anything, priced conservatively against Outschool's cheapest bundle ($40/mo, which already includes
-one weekly *live* class).
-
-**(b) Weekly live group class.** Outschool's own guideline rate ($17-21/learner/hr) implies **~$68-84/
-month** for one weekly 1-hour class billed à la carte; Outschool's packaged membership compresses
-that to $40-70/mo because popular repeat classes are discounted inside the credit system. So the
-real-world range for "weekly live group class" is **$60-90/month per student**, with $60-70/mo as the
-most common lived price once bundled.
-
-**(c) Live + small-group + parent reporting/light 1:1.** This sits between a large-group live class
-and true 1:1 tutoring. Small-group tutoring commands a discount off solo rates (one source cites
-~70% lower cost than 1:1 for similar gains) but is still meaningfully above a big-group class, figure **$100-200/month** per student for a weekly small-group session, before adding the reporting
-layer. Full 1:1 tutoring ($45-118/hr) and full-time microschool tuition ($475-1,500+/mo) sit well
-above this and confirm there's plenty of headroom, a $150/mo "guided" tier is nowhere near the
-ceiling this market will bear.
-
-**Ceiling reference:** Families who've already looked at Prenda (~$475-517/mo), Sora ($1,492/mo
-equivalent), or private tutoring ($45+/hr) will not blink at $150/mo for one subject's live +
-guided offering, it reads as a small fraction of a full alternative-schooling budget.
-
----
-
-## 3. Recommended 3 tiers for BVC home-school
-
-All tiers priced **per student, per month** (matches Outschool's dominant convention and avoids the
-per-family ambiguity co-ops have, see risk note below). Season equivalents assume a ~10-12-week
-Season 1 run.
-
-| | **Explorer (Low)** | **Cohort (Mid), ⭐ ANCHOR** | **Guided (High)** |
-|---|---|---|---|
-| **Price** | **$20-25/student/mo** | **$60/student/mo** (~$150-180/season) | **$150/student/mo** (~$750/season) |
-| **Positioned against** | Priced under Outschool's cheapest live bundle ($40/mo); above one-time self-paced curricula ($30-60) because it's recurring + monthly live | Sits exactly inside the Outschool weekly-live-class real-world range ($60-90/mo) | Below small-group-tutoring-plus-reporting ($100-200+/mo) and far below 1:1 tutoring or microschool tuition |
-| **What's included** | Self-paced Season 1 course + Commodity Map; quizzes + certificate; **monthly** live group Q&A | Everything in Explorer + **weekly** live class (cohort-sized group) via \`/live\`; quick-check assignments | Everything in Cohort + **weekly small-group live** (capped roster) + full capstone project with feedback + parent progress reports (attendance/grades via the upcoming Family view) |
-| **What Learn.WitUS already delivers** | Recorded course, quizzes, certificate | + cohorts, \`/live\` | + \`/live\` small-group cap, + Family view (in progress) is the differentiator no comparable at this price offers |
-
-**Anchor the Mid tier.** $60/mo is the best-evidenced number in this set, it's not an estimate, it's
-where Outschool's own guideline rate and its packaged membership price converge. Lead pricing
-conversations with Cohort, then show Explorer as "try it first" and Guided as "if you want feedback
-and reporting."
-
----
-
-## 4. Validation note
-
-**Ask the parent:**
-1. *"How many kids total (your child + classmates), and would a per-child monthly price work, or
-   would you rather I quote one flat price for the whole group?"*, tests per-student vs. per-family
-   pricing tolerance and locks the group size before quoting.
-2. *"What have you paid (or budgeted) for a comparable class, an Outschool course, a co-op class, or
-   a tutor, for a similar subject?"*, anchors to her actual revealed willingness-to-pay instead of
-   market averages, and surfaces whether she's benchmarking against $40/mo Outschool bundles (cohort
-   tier will look pricier) or $500-3,000/yr co-op tuition (cohort tier will look cheap).
-
-**Pricing risks:**
-- **Per-family vs. per-child.** Co-ops mostly price per-family; Outschool prices per-child. If the
-  "classmates" are a fixed small group (not open enrollment), a flat group rate (e.g., "$X/week for
-  up to 6 kids") may land better than strict per-seat pricing, decide before quoting.
-- **Sibling / group discount.** Comparable co-ops routinely stack registration + semester + per-class
-  fees; a simple 10-15% discount for 3+ students from one family (or one classmate group) is
-  standard practice and should be pre-built into the quote, not negotiated ad hoc.
-- **Free trial.** Outschool gives new users 40 free credits (~1 class); co-ops often waive the first
-  session. A free first live session lowers the parent's risk and matches category norms.
-- **Anchoring mismatch.** If she's already compared BVC to Outschool's $40/mo entry tier rather than
-  the $60-90/mo real weekly-live rate, the Cohort tier may need the "here's what a weekly live class
-  actually costs elsewhere" framing from §2(b) above.
-
----
-
-## 5. Verdict on the existing $20 / $60 / $150 one-pager
-
-| Tier | Existing price | Evidence says | Recommendation |
-|---|---|---|---|
-| **Explorer** | ~$20/mo | Slightly under Outschool's cheapest live bundle ($40/mo) and in line with amortized co-op registration fees; no direct pure-async comparable to test against | **Keep, or nudge to $25/mo.** Evidence does not support lowering. |
-| **Cohort** | ~$60/mo (~$150/season) | Matches the real-world weekly-live-class range ($60-90/mo) almost exactly | **Keep as-is, this is the best-supported number in the set.** |
-| **Guided** | ~$150/mo (~$750/season) | Below the $100-200+/mo small-group-plus-reporting comparable band's upper end, and far below 1:1 tutoring/microschool ceilings | **Keep. There is headroom to test higher ($175-200/mo) if the parent reporting/Family-view feature lands as a strong differentiator, but $150 is defensible today.** |
-
----
-
-## Numbers I could NOT source (flagged, not invented)
-
-- **Cultural Roots Homeschool Co-Op** (Richmond, VA), the single closest live, culturally-centered
-  comparable to BVC, publishes no tuition/class price; site framing is donation/"Patron"-based.
-- **National Black Home Educators**, resource/support network, no live-class pricing model found.
-- **Outschool actual realized multi-week-course total price**, only the per-hour guideline rate and
-  a rough illustrative example ($50 for a 4-week series) were found; Outschool doesn't publish an
-  aggregate average because every teacher sets their own price.
-- **Sora Schools single-subject/enrichment add-on pricing**, only full-enrollment annual tuition was
-  found; no per-course or drop-in rate.`,
-    provenance: "plans/future-courses/home-school-pricing-research.md",
-  },
-  {
-    key: "home-school-pricing",
-    title: "Live BVC Classes for Homeschoolers, one-pager",
-    summary: "_Send-ready draft. Also as a print-to-PDF page: `home-school-pricing.html` (open → Cmd/Ctrl-P → Save as PDF)._",
-    body: `# Live BVC Classes for Homeschoolers, one-pager
-
-_Send-ready draft. Also as a print-to-PDF page: \`home-school-pricing.html\` (open → Cmd/Ctrl-P → Save as PDF)._
-
----
-
-## Live Better Vice Club, taught by Brand Anthony McDonald
-**On Learn.WitUS.Online, cited, media-rich lessons + a live class with the instructor.**
-
-Your student joins **Better Vice Club: Season 1**, the story of how everyday commodities (coffee, tea,
-chocolate, sugar, and more) shaped world history, geography, and culture, on an interactive **Commodity
-Map**. Self-paced lessons at home, plus **live sessions** with me for discussion, questions, and projects.
-
-**How it works:** each student gets a free login, enrolls in the class, works through the lessons at home,
-and joins the scheduled **live class** (video + Q&A). Progress, quizzes, and a certificate are built in.
-
----
-
-### Three ways to join
-
-| | **Explorer** | **Cohort** ⭐ | **Guided** |
-|---|---|---|---|
-| **Best for** | Independent learners | A homeschool class/co-op | Students who want feedback |
-| **Self-paced Season-1 course + map** | ✓ | ✓ | ✓ |
-| **Live class with the instructor** | Monthly group Q&A | **Weekly live class** | **Weekly small-group live** |
-| **Quizzes + certificate** | ✓ | ✓ | ✓ |
-| **Graded assignments / project feedback** |, | Quick-check | **Full capstone + feedback** |
-| **Parent progress dashboard** (grades + attendance) |, |, | ✓ |
-| **Price (per student)** | **$20/mo** | **$60/mo** _(or $150/season)_ | **$150/mo** _(or $750/season)_ |
-
-_**First live session is free.** **Sibling/classmate discount:** 10-15% off for 3+ students from one
-family or group. Larger co-ops (5+): ask about a group rate._
-
----
-
-### Why families like it
-- **Cited & honest**, every claim ties to a real source (APA), so it meets homeschool-portfolio standards.
-- **One story, many subjects**, history, geography, economics, and culture in one thread.
-- **Interactive**, the Commodity Map lets kids explore where each story begins.
-- **A real teacher**, live time with the instructor, not just videos.
-
-### Getting started
-1. I set up your class group and send each student a login.
-2. Students enroll and start Season 1 at their own pace.
-3. We hold the first live session and set a weekly time.
-
-**Contact:** _[your email / booking link]_ · **Learn.WitUS.Online**
-
----
-
-_Notes (internal): pricing validated against 2026 comparables (\`home-school-pricing-research.md\`), Outschool live ~$17-21/learner-hr & $40-240/mo bundles, co-ops $45-150/family, microschools as the
-ceiling. **$60 Cohort is the best-anchored tier** (matches the real weekly-live rate); Guided has
-headroom to test $175-200. Live now runs **in-app**: the app hosts the course, Commodity Map,
-**live class + live chat + "who's here" roster**, recordings (ViLoud embed), quizzes, certificates,
-and the **parent Family view** (a linked parent sees their own child's progress, grades, and
-attendance, powers the Guided tier's progress dashboard). Kid-friendly avatar+PIN login is available
-for young students without email._`,
-    provenance: "plans/future-courses/home-school-pricing.md",
-  },
-  {
     key: "jim-crow-export",
     title: "How South Africa and Nazi Germany learned from US Jim Crow",
     summary: "NEEDS BAM SIGN-OFF BEFORE AUTHORING. The most sensitive topic in the route series.",
@@ -7692,6 +7003,41 @@ the US city courses already established, presents Germany then South Africa, tea
 the analogy explicitly, and never equates outcomes. Companion to the shipped Pan-Africanism and
 Afrocentricity courses (this is the legal-technique thread). Full plan: plans/43-jim-crow-export.md.`,
     provenance: "plans/future-courses/jim-crow-export.md",
+  },
+  {
+    key: "massacres-and-erasures-proposal",
+    title: "Course proposal: massacres and erasures (from BAM's 2026-08-10 lesson feedback)",
+    summary: "Source: lesson_feedback row on Green Book lesson 9 (2026-08-10): \"create a course for the",
+    body: `# Course proposal: massacres and erasures (from BAM's 2026-08-10 lesson feedback)
+
+**Source:** lesson_feedback row on Green Book lesson 9 (2026-08-10): "create a course for the
+massacres against the different cultures, communities, ethnic groups, etc." Filed here per the
+feedback sweep; row marked reviewed.
+
+**Fit:** sits squarely in the Culture & History track beside \`great-migration\`,
+\`green-book-how-to-read-a-route\`, \`exported-how-others-studied-american-race-law\`, and
+\`training-the-colonizer\`. The catalog's citation discipline is the differentiator: this subject
+is drowning in both denial and exaggeration, and a course whose every claim carries a checkable
+primary source is exactly what the standards-shopping educator market lacks.
+
+**Care flags (decide before authoring):**
+- Scope decision first: US-focused (Tulsa 1921, Wilmington 1898, Elaine 1919, Rosewood 1923,
+  Sand Creek, Wounded Knee, Colfax...) vs. comparative/global. A US course pairs naturally with
+  the state-civics and Green Book audiences; global widens the research burden enormously.
+- The "erasure" half is the pedagogical spine: how events left the record (destroyed archives,
+  suppressed reporting, renamed places) and how historians recovered them, that framing teaches
+  method, not just grief, and it matches the how-we-know house style (wrong-for-good-reasons,
+  how-to-research).
+- Age banding: likely grades 9-12 like Here Be Dragons; contents warrant plain content notes,
+  never gore. No images without the full media-rights + review pipeline.
+- Tribal massacres intersect the tribal-content care rules (teach that/whose/why; lead with
+  nations' own words; see the tribal-nations-governance conventions).
+- Standards: strong Common Core literacy + inquiry mappings (RH.11-12.8, WHST.11-12.7/8 pattern
+  used by the history courses).
+
+**Next step:** BAM picks scope (US vs comparative) and a working title; then outline per the
+plan-65 Phase 4 ship checklist.`,
+    provenance: "plans/future-courses/massacres-and-erasures-proposal.md",
   },
   {
     key: "metro-paths",
@@ -7906,255 +7252,11 @@ tiers) · \`plans/37-green-book-route-courses.md\` (themes and paths).`,
     provenance: "plans/future-courses/metro-paths.md",
   },
   {
-    key: "pan-africanism-track-proposal",
-    title: "Pan-Africanism, course track proposal",
-    summary: "A proposed \"Pan-Africanism\" track: one built anchor course plus eight follow-on courses, each",
-    body: `# Pan-Africanism, course track proposal
-
-A proposed **"Pan-Africanism"** track: one built anchor course plus eight follow-on courses, each
-taking a section of the anchor and giving it the room it deserves. From BAM's direction: each
-World-History topic becomes a SERIES, the anchor is the movement's overview/entry point; the
-follow-ons go deep.
-
-**Nothing below is built except the anchor.** These are proposals, pick which to author, and in
-what order.
-
----
-
-## The anchor (built, \`content/pan-africanism\`)
-
-**Pan-Africanism: The Idea, the Movement, the Reckoning** (Culture & History), 6 sections,
-16 teaching lessons, 6 quizzes (15-question banks, 90 questions). The full arc: 19th-century roots
-(Cuffe vs the ACS, Ethiopianism, Blyden) → Williams's 1900 London conference → Du Bois's
-Congresses and Manchester 1945 → Garvey and Du Bois taught honestly (both halves of the trial;
-the feud's structural questions) → Nkrumah, Ghana 1957, OAU 1963 → AU 2002 → Négritude and
-Rastafari (symbol vs fact) → the reckoning (five structural tensions; the strongmen named with
-hedged numbers).
-
-**The anchor's real payload is a reusable audit method**, every course in this track should keep
-it, so the track compounds instead of being eight disconnected biographies:
-
-1. **Quotes: verbatim-verified or explicitly flagged, never reconstructed.** (The anchor's
-   set pieces: the "Look to Africa" prophecy that appears in none of Garvey's located writings;
-   Nkrumah's midnight-speech transcription variance; Soyinka's variously-worded tigritude quip.)
-2. **Contested numbers taught as contested, with the range and the source named.** (UNIA
-   membership; Amin's dead; Camp Boiro's dead.)
-3. **Two documented truths held at once, neither canceling.** (Garvey's ambition AND his
-   conviction; Nkrumah's liberation AND his prisons; the OAU's liberation wars AND its silence.)
-4. **Symbol and fact in separate ledgers, both read.** (Ethiopia; the black star; the
-   red-black-green.)
-
-A student who has done the anchor plus any three follow-ons should be able to pick up any new
-pan-African claim, a viral quote, a membership figure, a hero narrative, and audit it unassisted.
-
-**Cross-links, not duplication.** Two sibling anchors are already shipped and the track must not
-re-teach them: **Africa Before Colonization: The Documented Record**
-(\`scripts/data/africa-before-colonization-course.ts\`, the deep history the movement invoked:
-Kush, Aksum, Mali, Great Zimbabwe, Adwa, and the "how we know" toolkit) and **Afrocentricity: How
-to Evaluate a Contested Paradigm** (\`scripts/data/afrocentricity-course.ts\`, the Diop/Asante
-scholarly paradigm debate). Every follow-on that touches deep history or the Kemet debate points
-at those courses instead of duplicating them.
-
----
-
-## The follow-ons (proposed, in recommended build order)
-
-### 1. The Pan-African Congresses, 1900-1945 (and 1974/2014)
-**Teaches uniquely:** the movement's institutional spine as a *documents course*, the 1900
-Address, the 1919/1921/1923/1927 resolutions, Padmore's 1947 Manchester report read as primary
-sources, plus the post-independence congresses the anchor skips (Dar es Salaam 1974, Accra 2014)
-where the diaspora/continent power balance visibly inverts. The anchor gives the arc; this course
-teaches students to *read the resolutions themselves* and watch the demands escalate decade by
-decade, the single best primary-source close-reading exercise the whole track offers.
-**Sourcing strength:** excellent, the strongest in the track. The congress documents are
-published (Padmore's *Colonial and Coloured Unity* is in print; the 1919-27 resolutions are
-reprinted in Du Bois collections and in Adi & Sherwood's *The 1945 Manchester Pan-African Congress
-Revisited*, which includes delegate lists and session minutes). No translation needed.
-**What's contested:** attendance figures and delegate counts for 1921-27 vary by source (report
-ranges); how much causal weight Manchester deserves for decolonization (historians differ, supply the doctrine-network-nerve framing, not sole causation); the status of the 1974 and 2014
-congresses as "real" successors is argued inside the movement itself.
-
-### 2. Garvey and the UNIA: Rise, Fall, Afterlives
-**Teaches uniquely:** the largest Black mass movement ever built, at full depth, the UNIA's
-actual business operations and organizational machinery (Negro Factories Corporation, the
-divisions system, Liberty Hall), the complete Black Star Line record from ship purchase to
-suspension, the trial transcript, Amy Ashwood AND Amy Jacques Garvey as principals rather than
-footnotes, and the afterlives (Rastafari, the Nation of Islam's debts to Garveyism, Ghana's black
-star, hip-hop's Garvey revivals). The anchor's two lessons become a full forensic case study in
-holding "real offense" and "targeted prosecution" simultaneously.
-**Sourcing strength:** excellent, Hill's *Marcus Garvey and UNIA Papers* (multi-volume,
-documentary) is the gold standard; Grant (2008) and Cronon (1955) give narrative spine; the FBI
-files (Hoover's 1919 memo) are published. The trial record exists.
-**What's contested:** membership numbers (claims to six million vs far lower paid-member counts, teach as the anchor does); how to weigh the KKK meeting (strategy vs betrayal, present the
-documented reactions, don't adjudicate motive); posthumous exoneration campaigns (a US pardon
-push exists in recent years, date any claim about its status; verify before asserting anything
-happened).
-
-### 3. Du Bois: The Long Arc (1868-1963)
-**Teaches uniquely:** the one biography that spans the entire movement, 1900 London to Accra
-1963 in a single life. Full treatment of what the anchor compresses: the Talented Tenth and its
-later self-revision, *The Crisis* years, the congress diplomacy, the 1951 indictment and passport
-war, the late Marxist turn and CPUSA membership at 93, the Encyclopedia Africana, Ghanaian
-citizenship. Also the honest ledger: his elitism (self-admitted), the Garvey feud's conduct, his
-documented late defenses of Stalin, the course must not sand its own subject smooth.
-**Sourcing strength:** excellent, Lewis's two-volume Pulitzer biography, Du Bois's three
-autobiographies (which contradict each other in documented ways, itself a teachable
-source-criticism exercise), the complete Crisis archive online.
-**What's contested:** interpretation of the late-Soviet alignment (naïveté, conviction, or
-despair, attribute readings to their holders); the Washington-Du Bois debate's fairness to
-Washington; whether his renunciation of America was final or contextual.
-
-### 4. Nkrumah and the Union That Wasn't: Ghana, the OAU, and the AU
-**Teaches uniquely:** the state-power chapter at full depth, CPP organizing and Positive Action
-as a decolonization method; Ghana as pan-African HQ (Padmore's office, the 1958 conferences,
-support for liberation movements); the Congo crisis and Lumumba (the anchor's one-line mention
-becomes a full lesson: the murder, the 2001 Belgian inquiry and 2002 apology); Casablanca vs
-Monrovia in documents; the OAU's actual mechanics; the AU's architecture (Article 4(h), PSC,
-AfCFTA) with the text-vs-practice audit run properly. And the PDA/one-party/coup file, complete.
-**Sourcing strength:** strong, Nkrumah's own books (autobiography 1957, *Africa Must Unite*
-1963), Birmingham and Biney on the biography, Meredith for the debit column, OAU/AU treaty texts
-free online, the Belgian parliamentary inquiry on Lumumba published.
-**What's contested:** Nkrumah's overthrow (CIA involvement is argued, documented declassified
-material exists but is partial; state what the documents show and stop); responsibility
-apportionment for the Congo crisis; AU effectiveness claims (date everything, the institution is
-a moving target; the anchor's audit frame transfers directly).
-
-### 5. Négritude and the Black Atlantic of Letters
-**Teaches uniquely:** the cultural-movement chapter as a literature course, actual close reading
-of the *Cahier*, *Pigments*, Senghor's poems and prose, *Discourse on Colonialism*, and the
-Nardal-salon/Harlem-Renaissance transmission (Hughes, McKay's *Banjo*) in both directions. Then
-the full critique sequence (Sartre's praise-burial, Fanon's museum warning, Soyinka's tigritude,
-the créolité generation's later break with Césaire) as a live intellectual debate students can
-join rather than a settled verdict. Présence Africaine, the 1956/1959 congresses, Dakar 1966 and
-FESTAC '77 as institutional history.
-**Sourcing strength:** strong, the primary texts are all in good English translations; Kesteloot,
-Sharpley-Whiting, and Wilder are solid scholarship. One caveat: some Nardal-circle material and
-*L'Étudiant noir* itself are French-only, a translation pass is required for primary-source
-lessons beyond the canonical texts.
-**What's contested:** what négritude *is* (Senghor's essentialism vs Césaire's solidarity reading, the founders themselves diverge; teach the divergence); Senghor's presidency (the Dia case);
-Soyinka-quip wording (paraphrase, as the anchor does); how much the Harlem Renaissance "caused"
-négritude (influence documented, arithmetic not, avoid overclaiming).
-
-### 6. Rastafari and Ethiopia: The Symbol and the State
-**Teaches uniquely:** the anchor's best lesson expanded into the track's methods course, symbol-vs-fact at book length. Early Rastafari (Howell, Pinnacle, colonial persecution, the 1960
-UWI report and the 1961 mission to Africa), Ethiopia the actual state (Adwa's afterlife, the
-1935-41 occupation and diaspora mobilization, Selassie's absolutism and the 1942 abolition,
-the Derg), Shashamane and repatriation as lived practice, Grounation 1966, and the globalization
-via reggae. The Garvey-prophecy audit and the 1937 "great coward" essay get full primary-source
-treatment.
-**Sourcing strength:** strong on both halves, Chevannes, Edmonds, and Hill (1983) on Rastafari;
-Zewde on Ethiopia; Garvey's *Black Man* essays are locatable. The UWI 1960 report is published.
-**What's contested:** Selassie's death circumstances (contested, teach as the anchor does);
-Shashamane grant details (dates/acreage vary, hedge); insider/outsider tension in teaching a
-living faith respectfully while auditing its founding claims (the platform's Hoodoo posture, a
-knowledgeable-reviewer pass before publishing, is the right model here; this is the one
-follow-on that may warrant holding from publication pending review).
-
-### 7. The Diaspora and the Continent: Who Speaks for Africa?
-**Teaches uniquely:** the track's through-line tension as its own subject, the only course that
-is an *argument map* rather than a chronology. Emigration debates (1817 Philadelphia through
-Delany), the congress-era diaspora leadership, the 1958 inversion (continental leaders take the
-wheel), Malcolm X and the OAU, the AU's "sixth region" designation and its practical emptiness,
-dual citizenship and Ghana's Year of Return (2019) / Beyond the Return, diaspora remittances vs
-representation, and Afro-descendant movements in Latin America (the track's chance to break the
-US-centric frame, Colombia, Brazil, the Garifuna).
-**Sourcing strength:** moderate, the historical halves are well-sourced from the same corpus as
-courses 1-4; the contemporary half (Year of Return figures, sixth-region mechanics, remittance
-data) needs primary AU documents and dated statistics, and Latin American Afro-descendant
-material is thinner in English.
-**What's contested:** almost everything contemporary, Year of Return economic-impact figures are
-government claims (attribute); "sixth region" status is aspirational text vs practice; who counts
-as diaspora (the AU definition vs lived identities). Build AFTER the historical courses so the
-audit method is second nature.
-
-### 8. After Independence: The Strongmen, the Critics, and the Reckoning
-**Teaches uniquely:** Section 6 of the anchor at full depth, the hardest and most valuable
-course in the track. Case files: Nkrumah's Ghana (PDA, Danquah, the 1964 referendum, the coup),
-Touré's Guinea (1958 heroism → Camp Boiro → Diallo Telli), Amin's OAU chairmanship, Mobutu's
-authenticité, Mengistu (the Derg as Ethiopia's own reckoning), Mugabe's liberation-credential
-shield. Against each file, the dissident tradition that named it: Soyinka, Ngũgĩ, Achebe's
-essays, the survivors' memoirs, the lawyers and oppositions. The course's thesis is the anchor's
-rule 3: honesty about the strongmen IS the pan-African tradition, its dissident half.
-**Sourcing strength:** adequate but demanding, Meredith and Schmidt are solid; Amnesty/ICJ
-reports exist for Amin; Camp Boiro documentation leans on survivor memoirs (French) and needs
-careful attribution. Every number in this course must carry a source and a range.
-**What's contested:** nearly every death toll (present ranges, attribute); CIA/foreign-hand
-claims in the coups (document what's declassified, refuse the rest); Mugabe and Mengistu remain
-politically live in their countries, date claims, attribute judgments, and expect strong
-learner reactions. **Build LAST: it inherits the audit method from every course before it, and a
-celebration-conditioned audience needs the earlier courses first.**
-
----
-
-## Two deliberate omissions, so the reasoning is on the record
-
-- **A standalone "Kemet/ancient-origins" course.** The Diop/Asante material and the "was ancient
-  Egypt Black?" debate are already taught, with a no-winner-declared posture, in the shipped
-  **Afrocentricity** anchor, and the deep precolonial record is in **Africa Before Colonization**.
-  A third course here would duplicate, not deepen. Cross-link instead.
-- **A "Pan-Africanism today" news course.** AfCFTA implementation, AU reform, and
-  sixth-region politics move faster than course maintenance; the contemporary material lives as
-  dated lessons inside courses 4 and 7 rather than as a standalone that rots. Revisit if the AU
-  undergoes a structural change worth a course.
-
----
-
-## Recommended build order, and why
-
-**1 → The Congresses. 2 → Garvey & the UNIA. 3 → Du Bois. 4 → Nkrumah & OAU→AU. 5 → Négritude.
-6 → Rastafari & Ethiopia. 7 → Diaspora vs Continent. 8 → After Independence.**
-
-The reasoning:
-
-- **Start with the Congresses** because it is the best-sourced course in the track (published
-  primary documents, no translation, no living-politics risk) and it teaches the close-reading
-  habit every later course leans on. Cheapest credibility, highest method-transfer.
-- **Garvey second, Du Bois third**, the two biographies extend the anchor's most gripping
-  section while the sourcing is still gold-standard (Hill's Papers; Lewis's biography). Garvey
-  before Du Bois because the UNIA course is the bigger draw and its forensic both-halves
-  structure is the track's signature move.
-- **Nkrumah fourth** completes the political spine to the present-day AU while the treaty texts
-  and the audit frame are fresh.
-- **Négritude fifth and Rastafari sixth** widen from politics to culture once the political
-  chronology is fixed; Rastafari waits for its reviewer arrangement (see above).
-- **Diaspora-vs-continent seventh** because it is an argument map across everything prior, it
-  reads as review-plus-extension if built late, and as confusion if built early.
-- **After Independence last**, for the same reason the workers-rights track holds China and the
-  Gulf to the end: it is where a sourcing failure would be most damaging, and it lands hardest
-  on an audience that has already learned to hold two truths at once.
-
-**Track sequencing for the learner** matches the build order, with one swap: a learner who wants
-culture first can take Négritude/Rastafari immediately after the anchor without loss, the
-political courses don't depend on them.
-
----
-
-## What BAM would need to build these responsibly
-
-1. **Nothing external for courses 1-5**, published sources and authoring time only. That is the
-   argument for starting there.
-2. **A Rastafari reviewer** (course 6), the platform's existing Hoodoo posture applied again: a
-   knowledgeable member of the tradition reads before publishing.
-3. **A translation pass** for French material: *L'Étudiant noir* and Nardal-circle primary
-   sources (course 5), Camp Boiro survivor memoirs (course 8).
-4. **A dated-claims regime for courses 4 and 7** (AU mechanics, Year of Return, AfCFTA status):
-   every contemporary assertion carries its as-of date, per the anchor's method.
-
----
-
-## Cross-links
-
-- Anchor course: \`scripts/data/pan-africanism-course.ts\` (branch \`content/pan-africanism\`).
-- Shipped sibling anchors (cross-link, never duplicate):
-  \`scripts/data/africa-before-colonization-course.ts\` (deep history; its own track proposal at
-  \`plans/future-courses/africa-precolonial-track-proposal.md\`) and
-  \`scripts/data/afrocentricity-course.ts\` (the paradigm debate; proposal at
-  \`plans/future-courses/afrocentricity-track-proposal.md\`).
-- Category: **Culture & History** (the anchor ships there). If the World-History series grows,
-  consider a "World History" grouping with per-topic tracks, this is the second topic after the
-  precolonial-Africa track to follow the anchor+series pattern.
-- Seed task: \`plans/user-tasks/107-seed-pan-africanism.md\`.`,
-    provenance: "plans/future-courses/pan-africanism-track-proposal.md",
+    key: "moors",
+    title: "Moors",
+    summary: "tell the history of the Moors and their impact on the world",
+    body: `tell the history of the Moors and their impact on the world`,
+    provenance: "plans/future-courses/moors.md",
   },
   {
     key: "parallel-history",
@@ -8189,872 +7291,6 @@ shows co-occurrence; the prose must not editorialise it into balance.
 
 Full plan: plans/44-parallel-history-and-timelines.md.`,
     provenance: "plans/future-courses/parallel-history.md",
-  },
-  {
-    key: "precolonial-asia-track-proposal",
-    title: "Asia Before European Colonization, course track proposal",
-    summary: "A proposed precolonial-Asia track: one built anchor course plus eight follow-on courses, each",
-    body: `# Asia Before European Colonization, course track proposal
-
-A proposed **precolonial-Asia track**: one built anchor course plus eight follow-on courses, each
-going deep where the anchor deliberately stays at orientation depth. From BAM's \`world.md\` queue,
-sibling to the Africa-precolonial track (\`africa-precolonial-track-proposal.md\`), and built on the
-same editorial spine: every claim names a civilization, a period, and a region; every number is
-attributed; hedges are explicit; the romance trap is treated as equal to the erasure trap.
-
-**Nothing below is built.** These are proposals, pick which to author, and in what order.
-
----
-
-## The anchor (built, \`content/precolonial-asia\`)
-
-**Asia Before European Colonization: The Center of Gravity** (Culture & History), 7 sections,
-17 teaching lessons, 7 quizzes (15-question banks), 1 exercise. Deliberately an ORIENTATION course:
-the zone map (South, East, Southeast, Central, West Asia), when each civilization flourished, the
-connective tissue (Silk Roads land + sea, the Baghdad translation movement, the Mongols), a
-dedicated no-utopia section (caste, nobi, temple bondage, the Indian Ocean slave trade, intra-Asian
-conquest), and the Great Divergence taught as a live debate.
-
-**The anchor's real payload is a reusable audit**, *who says it, in what kind of source, about
-which people, where, when, and does anything independent converge?*, plus four standing rules
-every follow-on course should inherit:
-
-1. **Never flatten.** No "Asia did X"; name the civilization, period, and region.
-2. **Attribute every number.** Maddison's shares, Hartwell's tonnage, Palais's nobi percentage, estimates carry their author's name and their error bars.
-3. **Hedge the beloved claims.** The Indus script is undeciphered (and may not encode language);
-   the House of Wisdom is thinly evidenced; Genji is "often called" the first novel; chronicle
-   death tolls are expressions of catastrophe, not counts.
-4. **No utopia, no waiting room.** Hierarchy, slavery, and conquest are taught plainly; "European
-   colonization" is dated precisely (enclaves 1510-1571; territorial rule from Plassey 1757) and
-   is an escalation, not the arrival of domination.
-
-The anchor cross-links the shipped **Africa Before Colonization** anchor (same method, sibling
-track) and should cross-link each follow-on as it ships.
-
----
-
-## Selection criteria (why these eight, and not others)
-
-A course earns a slot only if it teaches something **no other course in the track can teach**, and
-the set has to cover the anchor's whole map, not just the famous empires. The test is "does
-removing it leave a hole," and the holes each one fills:
-
-| What the track must cover | Course that anchors it |
-|---|---|
-| Deep time + the founding evidence problems (undeciphered script, text-vs-archaeology) | Ancient India |
-| The premodern economic frontier at its peak | Imperial China (Tang-Song) |
-| West Asia IS Asia; the transmission engine | Islamic Golden Age |
-| The connective tissue as its own subject; source-criticism at its best | Silk Roads |
-| Empire at maximum scale; steppe perspective; both cartoons refused | Mongol Empire |
-| The zone every survey skips; maritime/monsoon logic; how empires get forgotten | SE-Asian maritime empires |
-| Selective borrowing; states that were never colonized by Europe | Japan & Korea |
-| The capstone debate; how economic history is actually argued | The Great Divergence |
-
-Deliberate omissions, so the reasoning is on the record:
-
-- **A dedicated Central Asia / steppe course.** Genuinely tempting (Sogdians, Turkic khaganates,
-  Timur), but its best material is already load-bearing inside Silk Roads and Mongol Empire, and
-  splitting it would spread thin sourcing thinner. **Fold it into those two; revisit if the track
-  proves out.**
-- **A dedicated Southeast Asia mainland course (Pagan, Ayutthaya, Dai Viet).** Real hole, but the
-  maritime-empires course must ship first and can carry Dai Viet's resistance story (Ming
-  occupation 1407-27) meanwhile. **Build as a second SE-Asia course only if the first performs.**
-- **Persia/Iran as its own course.** The Safavids and earlier Persian empires deserve one, but the
-  Islamic Golden Age course carries the Persian intellectual world, and the anchor's scope was
-  "before European colonization," where Iran's story (never formally colonized, heavily
-  interfered with) rhymes with the Japan/Korea/Siam lesson. **Optional later.**
-
----
-
-## Wave 1, build first (best sourcing, widest reuse)
-
-### 1. Ancient India: From the Indus Cities to the Guptas
-**Teaches uniquely:** the evidence problems that make deep-time history honest, an entire
-civilization known only through archaeology (Indus, script undeciphered, with the
-Farmer/Sproat/Witzel vs. Parpola dispute taught as live), the text-vs-archaeology gap for the
-Vedic period, why "Aryan invasion" died and what the migration evidence actually says (incl. the
-aDNA studies, dated and hedged), Ashoka as the first ruler whose own words survive, and the full
-zero/place-value chain the anchor could only sketch (Aryabhata → Brahmagupta → Gwalior; Bakhshali
-contested per Plofker et al. 2017).
-**Sourcing:** excellent, Kenoyer, Possehl, Thapar (2002; 2012), Plofker (2009), the edicts in
-translation (Dhammika), UNESCO site documentation.
-**Hard parts:** the Indus script and Indo-Aryan migration questions are politically charged in
-present-day India (Hindutva historiography claims both). The course must teach the evidence and
-name the dispute without adjudicating modern politics, same posture as the Afrocentricity course.
-Caste's ancient history must be taught between the two myths (neither eternal essence nor British
-invention, per Bayly 1999).
-
-### 2. Imperial China: Tang and Song
-**Teaches uniquely:** the premodern economic frontier in full, the Song "medieval economic
-revolution" (Elvin) with its primary sources (Shen Kuo 1088, Wujing Zongyao 1044, Zhu Yu, jiaozi),
-Tang cosmopolitanism (Chang'an, Dunhuang, the 781 stele), the examination system's reality vs.
-its "meritocracy" myth, and the honest ledger (Chanyuan tribute 1005, the 1127 fall of the north,
-foot binding's spread).
-**Sourcing:** excellent, Ebrey, Benn, Elvin, Hartwell (1962), Kuhn, the British Library's
-Dunhuang collections, primary texts in translation.
-**Hard parts:** resisting the "four great inventions" listicle frame (each invention needs its
-primary source and its wrinkle, movable type was real but woodblock stayed dominant); keeping
-Tang/Song distinct instead of blurring into "medieval China"; the An Lushan census-collapse
-number (36M "dead") must be taught as the anchor teaches it, a lesson in what registers count.
-
-### 3. The Islamic Golden Age: Baghdad and the Translation Movement
-**Teaches uniquely:** West Asia as Asia, and the transmission engine that moved Indian numerals
-and Greek philosophy into and through the Arabic world (al-Khwarizmi, Ibn Sina, Ibn al-Haytham,
-al-Biruni). The methodological centerpiece is the **House of Wisdom hedge**: the documented wonder
-is the two-century, society-wide movement (Gutas 1998), not one inflated building, a perfect
-whole-course case study in how institutions harden into myth.
-**Sourcing:** excellent, Gutas, Saliba (2007), Pormann & Savage-Smith (2007), primary texts in
-translation.
-**Hard parts:** the "golden age then eternal decline" frame is itself contested (Saliba) and must
-be taught as such; the era's religious politics (which caliphs patronized what, the mihna) need
-care; and the course must not become a "Muslims invented everything" listicle, same discipline as
-the inventions rule in the China course, with the transmission chain (credit the origin AND the
-messenger) as the standing pattern.
-
----
-
-## Wave 2, build second (the connective tissue, after the nodes exist)
-
-### 4. The Silk Roads: Land, Sea, and the Traffic in Ideas
-**Teaches uniquely:** connection as a subject in its own right, and the best source-criticism
-material in the whole track: Richthofen's 1877 coinage, Hansen's documents-first revision (most
-overland trade was local; the great cargo was religions and technologies), the Sogdian letters,
-the Belitung wreck as industrial-scale maritime proof, the Talas-751 paper story as legend vs. the
-documented mills, and plague transmission along the unified routes.
-**Sourcing:** excellent, Hansen (2012; 2020), Whitfield, Frankopan, UNESCO's 2014 corridor
-listing, museum collections (British Library Dunhuang, Asian Civilisations Museum Belitung).
-**Hard parts:** the romance pressure is enormous (the Silk Road is the most romanticized topic in
-world history); Frankopan's "axis of world history" framing should be taught as an attributed
-argument, not recited. Build AFTER China + Islamic Golden Age so the endpoints exist.
-
-### 5. The Mongol Empire: Destruction and Connection
-**Teaches uniquely:** empire at maximum scale seen from the steppe rather than from its victims'
-capitals only, and the track's hardest both-cartoons-refused problem. Chronicle death tolls read
-as expressions of catastrophe, not counts; the yam, censuses, spared artisans, and technology
-transfer taught as equally documented; Marco Polo with his hedges; the successor khanates and the
-Timurid→Mughal afterlife.
-**Sourcing:** good, Morgan (2007), Jackson (2017), May, the Secret History of the Mongols in
-scholarly translation (de Rachewiltz), Rashid al-Din in translation.
-**Hard parts:** popular sources are polluted in both directions (Weatherford's rehabilitation is
-as distorting as the barbarian cartoon); the Secret History is court literature and must be
-genre-labeled like the Nagarakretagama; atrocity numbers will tempt every quiz author toward
-false precision, the bank must test the METHOD (how to read chronicle figures), not fake counts.
-
-### 6. The Maritime Empires of Southeast Asia
-**Teaches uniquely:** the zone every survey skips, at full depth: Srivijaya (and the
-Coedès-1918 reassembly as the track's best "how history gets forgotten" case), Borobudur and the
-Sailendras, Angkor as engineered landscape (Evans 2007/2013 lidar; Zhou Daguan; Buckley's
-droughts), Majapahit and the panegyric problem, Malacca and the monsoon entrepôt logic, the Maluku
-spice monopoly, and mainland resistance (Dai Viet expelling the Ming, 1427) until a dedicated
-mainland course exists.
-**Sourcing:** good but more specialist, Coedès (1968), Hall (2011), Lockard, Coe (2003), Zhou
-Daguan (Harris trans.), the PNAS papers, UNESCO documentation.
-**Hard parts:** chronology is inscription-dependent and genuinely uncertain in places (say so);
-"Indianization" is a contested frame (older scholarship overstated Indian agency; newer work
-stresses local agency in borrowing, teach the historiography); modern nationalisms (Indonesian,
-Malaysian, Cambodian, Thai) all claim these empires, so keep the naming precise and the politics
-out.
-
----
-
-## Wave 3, build last (the capstones)
-
-### 7. Japan and Korea: Borrowing, Refusing, Never Colonized (by Europe)
-**Teaches uniquely:** selective adaptation as a strategy, two states in constant conversation
-with China that engineered their own courts, scripts, and institutions (Heian court culture and
-women's literature; the 700-year shogunal dual structure; Goryeo's Jikji and the Tripitaka
-Koreana; Sejong's Hangul as the world's best-documented script invention), and the fact that
-neither was ever a European colony, which completes the anchor's precision about what "European
-colonization" was and wasn't. Ends with the Imjin War and Japan's 1910 annexation of Korea: the
-last pre-1945 colonizer of a major Asian nation was Asian.
-**Sourcing:** excellent, Totman, Seth, Palais (1996) for nobi, Swope (2009) for Imjin, UNESCO
-Memory of the World (Jikji), the Hunminjeongeum itself.
-**Hard parts:** Japan-Korea history is a live diplomatic wound (textbook wars, colonial-era
-disputes); the course must date claims, attribute estimates (nobi shares, Imjin casualties), and
-adjudicate nothing. Sakoku must be taught as managed trade, not the sealed-country myth. The
-"often called the first novel" hedge on Genji is non-negotiable.
-
-### 8. The Great Divergence: When and Why "the West" Pulled Ahead
-**Teaches uniquely:** the capstone, how economic history is actually argued. Pomeranz (2000) at
-full depth (the like-with-like method, the ecological bottleneck, coal + colonies), the named
-pushback (Broadberry/Guan/Li 2018; Allen's wage series with the rice-vs-wheat basket problem),
-Maddison and the Maddison Project as method (how you reconstruct GDP for 1700, and why the error
-bars are wide), Frank's ReOrient and Abu-Lughod's 13th-century world system, and the
-colonialism-and-deindustrialization debates (Bengal's textiles) taught with the causation
-disputes named. **No winner declared**, the deliverable is the student's ability to read a
-contested quantitative literature.
-**Sourcing:** excellent and entirely in print, the debate IS the reading list.
-**Hard parts:** this is the track's most intellectually demanding course and assumes the anchor
-plus ideally the China course; numbers will tempt false precision at every turn (the course
-should teach the Maddison Project's revision history as content, not embarrassment); it must not
-collapse into either "the West cheated" or "the West earned it", both are slogans, and the
-scholarship is better than both.
-
----
-
-## Recommended build order, and why
-
-**1 → Ancient India. 2 → Imperial China (Tang-Song). 3 → Islamic Golden Age. 4 → Silk Roads.
-5 → Mongol Empire. 6 → SE-Asian maritime empires. 7 → Japan & Korea. 8 → The Great Divergence.**
-
-- **Start with Ancient India and China** because they are the best-sourced, they deepen the
-  anchor's two longest sections, and each teaches a method module the rest reuse (India: evidence
-  problems and charged historiography; China: primary-sourced invention claims and register-vs-
-  reality numbers).
-- **Islamic Golden Age third**, because it is the transmission hub the two connective-tissue
-  courses need in place.
-- **Silk Roads and Mongols in the middle**, they connect nodes, so the nodes should exist first;
-  each also leans on the other (the Pax runs on the roads; the roads' unification is Mongol).
-- **SE Asia sixth** rather than earlier only because its sourcing is the most specialist; its
-  content is the track's most distinctive and it must not be cut.
-- **Japan & Korea seventh** as the counter-case course (never colonized by Europe; colonizer in
-  1910), landing hardest once the student has the whole map.
-- **The Great Divergence last, always.** It is the anchor's Section 7 grown into a full course,
-  and it only works after the student has seen the economies it argues about.
-
-**Learner sequencing** differs from build order: anchor first, then any of 1-7 in any order, then
-**The Great Divergence last**, because "how do we even know who was richer?" is the right final
-question before a student re-reads every confident claim they have ever heard about why the
-modern world looks the way it does.
-
----
-
-## What BAM would need to build these responsibly
-
-1. **A standing editorial rule for politically live historiography** (Indus/Aryan questions in
-   Indian politics; Japan-Korea colonial disputes; modern nationalist claims on SE-Asian empires):
-   *teach the evidence, name the dispute, date every claim, adjudicate nothing.* The anchor and
-   the Afrocentricity course already model this, a proven pattern in this repo.
-2. **Translation-dependence awareness**: the primary sources for Mongols (Persian, Chinese),
-   SE Asia (Old Malay, Khmer, Chinese), and Korea/Japan are used in scholarly translation; cite
-   the translation used, as the anchor does (Harris's Zhou Daguan, de Rachewiltz's Secret
-   History).
-3. **No reviewer requirements** for Waves 1-2 (unlike the workers-rights track's South Africa
-   course), the contested material here is historiographical, not living-community-sensitive.
-   Japan & Korea (Wave 3) would benefit from a sensitivity read on the Imjin/1910 lessons.
-4. **Nothing else.** Every course above is buildable from published scholarship already cited in
-   the anchor's bibliographies. That is the argument for this track: the anchor did the source
-   auditing once, and the follow-ons inherit it.
-
----
-
-## Cross-links
-
-- Anchor course: \`scripts/data/asia-before-european-colonization-course.ts\` (branch
-  \`content/precolonial-asia\`, slug \`asia-before-european-colonization\`, Culture & History).
-- Sibling track: \`africa-precolonial-track-proposal.md\` (anchor shipped), same method, and the
-  two anchors should cross-reference each other's "two traps" / "no utopia" lessons.
-- Seed task: \`plans/user-tasks/110-seed-precolonial-asia.md\`.
-- Category: **Culture & History**. If the track grows past ~4 courses, consider a "World Before
-  Colonization" learning path pairing it with the Africa track.
-- Source note: BAM's \`plans/future-courses/world.md\` queue (original ask).`,
-    provenance: "plans/future-courses/precolonial-asia-track-proposal.md",
-  },
-  {
-    key: "precolumbian-mesoamerica-track-proposal",
-    title: "Pre-Columbian Mesoamerica, course track proposal",
-    summary: "A proposed Pre-Columbian Mesoamerica track: one built anchor course plus seven follow-on",
-    body: `# Pre-Columbian Mesoamerica, course track proposal
-
-A proposed **Pre-Columbian Mesoamerica** track: one built anchor course plus seven follow-on
-courses that go deep where the anchor goes wide. The anchor surveys the whole region and installs
-the method; each follow-on earns its slot only if it teaches something no other course in the
-track can.
-
-**Nothing below is built except the anchor.** These are proposals, pick which to author, and in
-what order.
-
----
-
-## The anchor (built, \`content/precolumbian-mesoamerica\`)
-
-**Pre-Columbian Mesoamerica: Cities, Calendars, and the People Who Are Still Here** (Culture &
-History), 7 sections, 17 teaching lessons, 7 quizzes (15-question banks; 105 questions), 1
-exercise. Olmec (mother-vs-sister as a live debate) → Aguada Fénix → Teotihuacan (the humility
-lesson: builders/language unknown) → the Maya (script, zero, Long Count; 2012 = Tortuguero
-Monument 6, a period ending, not a prophecy; the Classic collapse specific AND debated; they did
-not vanish) → the Mexica (Tenochtitlan, Triple Alliance, chinampas; sacrifice honest, the Huei
-Tzompantli real, the 80,400 refused) → Oaxaca/Purépecha + Central America beyond Mexico → the
-conquest per Restall + the demographic catastrophe as a range → "how we know" (Landa's 1562
-burning + ~4 codices, Knorozov→Coe decipherment, PACUNAM LiDAR) → "They are still here."
-
-**The anchor's real payload is a reusable audit, five moves the whole track should reuse:**
-
-1. **Name the people, place, and period** (never "ancient Mexico did X").
-2. **Ranges, not false precision** (population, sacrifice counts, dates).
-3. **Contested = say so, with a name on each side** (mother culture, collapse causes, Quetzalcoatl).
-4. **Ask what evidence class a claim stands on**, their texts / hostile witnesses / excavation /
-   instruments, and what would change it.
-5. **Present tense matters**: descendants are alive; "vanished" is a harm, not a flourish.
-
-A student who has done the anchor plus any two follow-ons should be able to hear a claim about any
-ancient civilization, Mesoamerican or not, and run the audit unprompted.
-
----
-
-## Selection criteria (why these seven, and not others)
-
-A course earns a slot only if removing it leaves a hole the anchor cannot cover in one lesson. The
-test is depth the anchor had to compress:
-
-| What the anchor could only gesture at | Course that carries it |
-|---|---|
-| 3,000 years of Maya history compressed into 3 lessons | **The Maya** (deep) |
-| The Mexica state, economy, daily life, and their own literature | **The Aztec/Mexica** |
-| The Classic-era central-Mexican world beyond one city profile | **Teotihuacan & the Classic cities** |
-| Formative Mesoamerica before and beside the Olmec | **The Olmec & early Mesoamerica** |
-| The intellectual systems as systems, not highlights | **Writing, calendars & astronomy** |
-| The conquest as a full course with the sources read closely | **The Conquest & its myths** |
-| The living peoples, the anchor's final lesson, expanded to a course | **Indigenous Central America today** |
-
-Two deliberate omissions, so the reasoning is on the record:
-
-- **The Inca / South America.** Constantly requested alongside Mesoamerica, but it is a different
-  culture area with different sources (khipu, no deciphered script, Spanish chronicles), it
-  deserves its own track, not a bolt-on course that would blur exactly the culture-area concept the
-  anchor teaches.
-- **A "Mesoamerican mythology" course.** The gods sell, but decontextualized mythology is the
-  spectacle trap with better production values. Religion is taught inside each culture course
-  (Fifth Sun in the Mexica course, the Hero Twins in the Maya course) where it stays anchored to
-  sources and practices.
-
----
-
-## Wave 1, build first (highest teaching value per unit of sourcing pain)
-
-### 1. The Maya: Three Thousand Years, *the deep course*
-**Teaches uniquely:** the full arc the anchor compressed: Preclassic origins (Aguada Fénix, El
-Mirador) → Classic city-states with the Tikal/Calakmul geopolitics told campaign by campaign from
-the inscriptions → Terminal Classic transformations → Postclassic Chichén Itzá/Mayapán → the
-colonial centuries (Landa, the Caste War) → the 20th-century genocide and today's language
-movement. The only course where students read translated primary Maya texts at length (stelae,
-the Popol Vuh, the Books of Chilam Balam).
-**Why it earns a slot:** the Maya are the best-documented Indigenous civilization in the hemisphere, the one place the track can do *history from Indigenous written sources*, which is the skill
-nothing else teaches.
-**Hard parts:** scope discipline (this could swallow the track); the temptation to teach only the
-Classic. Sourcing is excellent: Martin & Grube, Coe & Houston, Christenson's *Popol Vuh*, Restall's
-*Maya Conquistador* for the colonial Maya voice.
-
-### 2. The Aztec/Mexica: An Empire in One Century
-**Teaches uniquely:** a complete anatomy of one Indigenous state: Mexica history from migration to
-1521 told primarily from Nahua sources (Codex Mendoza, Florentine Codex, the annals tradition,
-Nahuatl poetry); the economy (markets, pochteca, tribute, chinampas); law, education, gender, and
-slavery in Mexica society; religion including sacrifice with the anchor's honesty at full depth;
-and the historiography problem, almost everything we "know" passed through colonial filters, so
-the course doubles as a lab in reading filtered sources.
-**Why it earns a slot:** the anchor gave the Mexica three lessons; the sources could sustain thirty.
-This is also where Townsend's *Fifth Sun* approach, Aztec history from Nahuatl annals, can be
-taught as a method.
-**Hard parts:** the sacrifice material must keep the anchor's calibration (real, audited, neither
-lurid nor laundered). Sourcing is superb and mostly in English translation: Smith, Berdan,
-Townsend, León-Portilla, Sahagún (Anderson & Dibble), Durán.
-
-### 3. The Conquest & Its Myths
-**Teaches uniquely:** the anchor's Section 6 as a full source-critical course: Cortés's letters,
-Díaz, and the Nahua accounts (Lockhart's *We People Here*, the Florentine Codex Book 12, the
-Lienzo de Tlaxcala) read **against each other**, myth by myth through Restall; then the forgotten
-sequels, the Purépecha submission and Tarascan colonial deal, Alvarado in Guatemala, the Mixtón
-war, northern resistance, and Nojpetén 1697. Ends with the demographic-catastrophe debate taught
-as a numbers-literacy unit (Cook & Borah vs. Henige, *Numbers from Nowhere*).
-**Why it earns a slot:** it is the track's methods-capstone, the one course whose whole subject is
-"how do you know what happened when every source is motivated?" That skill transfers to reading
-the news.
-**Hard parts:** none severe; the literature is rich and the debates are mapped. Keep the
-Quetzalcoatl-myth treatment labeled contested, as the anchor does.
-
----
-
-## Wave 2, build second (widens the track; needs more care)
-
-### 4. Teotihuacan & the Classic Cities of Central Mexico
-**Teaches uniquely:** urbanism as a subject, what a city *is*, taught from the hemisphere's most
-startling one: Millon's mapping project, apartment-compound life, the multiethnic barrios, the
-obsidian economy, the state-without-portraits governance debate (kings vs. collective rule), the
-378 entrada and Teotihuacan's Maya shadow, the fall, and the afterlife of the ruins (Aztec
-pilgrimage → Porfirian excavation → the 1960s reconstruction the modern visitor actually sees,
-taught honestly as reconstruction). Extends to Cholula, Cacaxtla, Xochicalco, and Tula, and the
-"Toltec problem" (history vs. Aztec political mythology) as a named debate.
-**Why it earns a slot:** the anchor's humility lesson at course length: an entire course where the
-honest answer to central questions is "unknown, and here is how we'd find out", the best
-epistemology training in the track.
-**Hard parts:** the unknowns must stay load-bearing, not padding; the Toltec historiography is
-genuinely confusing and needs careful staging. Sourcing: Cowgill, Manzanilla, Sugiyama, Nichols;
-all major claims have recent syntheses.
-
-### 5. Writing, Calendars & Astronomy: Mesoamerican Science
-**Teaches uniquely:** the intellectual systems as systems: how the script actually works (students
-learn to sound out real glyphs, the track's only hands-on decipherment unit), bar-and-dot
-arithmetic and the zero, the tzolk'in/haab/Long Count machinery (students compute a Long Count
-date), the Dresden Venus table as applied mathematics, Mixtec and Aztec pictorial systems as a
-*different solution* to recording, and the decipherment story at full length (Knorozov,
-Proskouriakoff, Schele, Stuart, with Thompson as the authority-vs-evidence case study).
-**Why it earns a slot:** it converts the anchor's most-cited wonders from trivia into working
-knowledge, and it is the track's STEM crossover, usable in a math or astronomy classroom.
-**Hard parts:** difficulty calibration (real glyph exercises need careful scaffolding); the
-correlation-constant debate should be taught, not hidden. Sourcing: Coe & Van Stone (*Reading the
-Maya Glyphs*), Aveni, Stuart, Boone (*Stories in Red and Black*).
-
-### 6. The Olmec & Early Mesoamerica: Before the Famous Names
-**Teaches uniquely:** how civilizations *start*, the Archaic-to-Formative transition: maize
-domestication as a millennia-long Indigenous science project, village-to-city dynamics, San
-Lorenzo and La Venta in depth, the mother/sister debate with the actual evidence (sourcing
-studies, iconography) laid out for students to weigh, Aguada Fénix and the collective-labor
-argument, early Oaxaca (San José Mogote → Monte Albán's founding), and the "firsts race"
-(writing, calendar, kingship) as a case study in how new instruments keep moving the answers.
-**Why it earns a slot:** it is the track's origins course and its best "science in motion" course, the one where students watch a debate move in real time (the 2020-2021 LiDAR papers postdate most
-textbooks).
-**Hard parts:** the evidence is more technical (radiocarbon, sourcing chemistry) and the narrative
-thinner than the later courses; needs strong visual material. Sourcing: Diehl, Pool, Flannery &
-Marcus, the Inomata papers.
-
----
-
-## Wave 3, build with a reviewer (present-tense stakes)
-
-### 7. Indigenous Central America Today
-**Teaches uniquely:** the anchor's closing lesson as a full course, and the only course in the
-track set mainly after 1900: the Maya movement in Guatemala (the civil war and CEH findings taught
-carefully; the language academies; Maya epigraphers reading their ancestors' script), Yucatec and
-Chiapas Mexico (including the Zapatista autonomy experiment, taught neutrally and dated), the
-comarca systems of Panama (Guna Yala's 1925 revolution and its self-government), the Ngäbe, Bribri,
-Miskito, and Lenca presents, land and water defense (Berta Cáceres; the documented risks to
-defenders), language revitalization and Indigenous media, and repatriation/heritage politics (who
-owns the codices? the museum question).
-**Why it earns a slot:** without it the track performs the exact erasure the anchor names, teaching
-seven courses of past tense and calling it respect. It is also the course most likely to matter to
-a learner's civic life (heritage law, Indigenous rights, development conflicts are live issues).
-**Hard parts, and this is Wave 3 on purpose:** the subject is living politics. The CEH/genocide
-material, Zapatismo, and defender killings must be taught dated, attributed, and adjudicating
-nothing beyond what commissions and courts found. **Recommendation: build it with a reviewer from
-or close to the communities covered**, the same posture the repo takes on the Hoodoo courses, and privilege Indigenous-authored sources (community media, the language academies' own
-publications, Menchú and her critics both on the record).
-
----
-
-## Recommended build order, and why
-
-**1 → The Maya. 2 → The Aztec/Mexica. 3 → The Conquest & Its Myths. 4 → Teotihuacan & the Classic
-cities. 5 → Writing, Calendars & Astronomy. 6 → The Olmec & early Mesoamerica. 7 → Indigenous
-Central America today.**
-
-- **Maya and Mexica first**: they carry the most learner demand, the best sources, and each deepens
-  the anchor's two biggest sections. Either can ship independently.
-- **The Conquest third**, once both protagonist courses exist, it reads their sources against each
-  other, so it lands hardest with them in place.
-- **Teotihuacan and Writing/Calendars** in the middle: methods courses that reward students who
-  already have the survey; the glyph course can also be marketed standalone to math/astro teachers.
-- **Olmec sixth**: richest in method, thinnest in narrative, better once learners are invested.
-- **Indigenous Central America last not because it matters least but because it must be built
-  right**: with a reviewer, with Indigenous-authored sources, once the track's editorial pattern is
-  proven. If a reviewer materializes earlier, move it earlier.
-
-**Learner sequencing** differs from build order: anchor → any culture course → the Conquest →
-Indigenous Central America today as the intended finish, so every learner ends in the present
-tense, exactly as the anchor does.
-
----
-
-## What BAM would need to build these responsibly
-
-1. **Nothing external for Waves 1-2**, the sources are published, mostly in English translation,
-   and the debates are mapped. Authoring time only.
-2. **A reviewer for course 7** (Indigenous Central America today), community-connected, per the
-   Hoodoo precedent.
-3. **Visual assets** matter more here than in most tracks (maps, site plans, glyph charts). Public-
-   domain and Creative Commons material exists (INAH, museum open-access programs, FAMSI/Mesoweb
-   drawings) but needs a licensing pass before lessons embed images.
-4. **A standing editorial rule inherited from the anchor**: ranges not false precision; contested
-   claims named on both sides; sacrifice and conquest neither sensationalized nor erased; the
-   present tense of the peoples stated in every course, not just course 7.
-
----
-
-## Cross-links
-
-- Anchor course: \`scripts/data/precolumbian-mesoamerica-course.ts\` (branch
-  \`content/precolumbian-mesoamerica\`; seed task \`plans/user-tasks/109-seed-precolumbian-mesoamerica.md\`).
-- Method siblings: \`africa-before-colonization\` (the documented-record pattern this anchor
-  follows), \`afrocentricity\` (evaluating contested paradigms, the mother-culture and Kemet
-  debates rhyme), \`great-migration\` (Culture & History mapping conventions).
-- Category: **Culture & History** (the anchor ships there). If the track grows past ~4 courses,
-  consider a learning path ("The Americas Before 1492") pairing it with any future Andes/North
-  America tracks.`,
-    provenance: "plans/future-courses/precolumbian-mesoamerica-track-proposal.md",
-  },
-  {
-    key: "teacher-pay-teachers",
-    title: "Teacher pay teachers",
-    summary: "I want to put some of the courses on teachers pay teachers to promote Learn.WitUS.Online and the other courses here.",
-    body: `I want to put some of the courses on teachers pay teachers to promote Learn.WitUS.Online and the other courses here.
-- show me your proposed list of courses to put on teachers pay teachers 
-- which courses do you propose would be best to use to sell courses and inform teachers about the other courses to get them to come here to buy more?
-
-- then create content packets for those courses for me to put on teachers pay teachers`,
-    provenance: "plans/future-courses/teacher-pay-teachers.md",
-  },
-  {
-    key: "teachers-pay-teachers-proposal",
-    title: "Teachers Pay Teachers strategy, proposal",
-    summary: "Status: proposal for BAM review · 2026-07-17",
-    body: `# Teachers Pay Teachers strategy, proposal
-
-**Status:** proposal for BAM review · 2026-07-17
-**Source note:** \`plans/future-courses/teacher-pay-teachers.md\` (BAM: "put some of the courses on
-teachers pay teachers to promote Learn.WitUS.Online and the other courses here")
-**Packets built:** \`plans/future-courses/tpt-packets/\` (4 upload-ready packets, see §6)
-**Operator task:** \`plans/user-tasks/122-tpt-launch.md\`
-
----
-
-## 1. How TpT actually works (verified 2026-07-17)
-
-**Seller tiers & fees** (TpT help center, "Seller Fees and Payout Rates" / "What membership types
-are available", surfaced via web search 2026-07-17):
-
-| | Basic Seller | Premium Seller |
-| --- | --- | --- |
-| Cost | $29 one-time | $59.95/year |
-| Payout | 55% of list price | 80% of list price |
-| Per-resource fee | $0.30 per resource sold | $0 on items ≥ $3; $0.15 on items under $3 |
-
-Premium pays for itself at roughly 25 sales of a $3 item. **Recommendation: start Premium**, the
-55% Basic rate makes every price band below unattractive, and the under-$3 fee is why the paid lead
-magnet below is priced at exactly $3, not $2.
-
-**Two structural rules that shape the plan:**
-- **A new seller's first posted resource must be free.** That's not a growth hack, it's a platform
-  requirement, so the free lead magnet is product #1 by necessity as well as strategy.
-- **TpT sets a minimum price for paid items** (shown on the upload page; confirm at upload).
-
-**What sells:** self-contained, printable/PDF classroom material, full units, worksheet packs with
-answer keys, sub plans, test prep, bell ringers, primary-source analysis sets. Teachers search by
-**grade band + subject + specific topic** ("Great Migration unit 8th grade", "Constitution
-worksheets high school", "Indiana government") and, for the serious buyers, **by standard code**, which is exactly the search our \`/standards\` work was built to win.
-
-**Who buys:** classroom teachers spending their own money or small school allotments,
-homeschool parents (a large and underserved TpT segment, our catalog's actual design center), and
-CTE/elective teachers hunting niche content (drone/aviation, media literacy, financial literacy).
-
-## 2. The linking policy, what is actually allowed (verified, with provenance)
-
-This is the load-bearing compliance question, verified against TpT's own help-center text.
-help.teacherspayteachers.com 403s our tooling, so the articles were retrieved via the Wayback
-Machine (same method the standards work uses for in.gov/azed.gov), fetched 2026-07-17:
-
-- **"Guidelines around utilizing other sites"** (article 360044219551, updated 2024-09-09;
-  snapshot 2025-10-09): *"Don't link to stores outside of TPT or advertise stores outside of TPT
-  from TPT. (Another variation of this: Don't push folks who have come to you through TPT to other
-  places to buy outside of TPT.)"* Also: **keep prices consistent** if the same resource is offered
-  on other platforms.
-- **"Seller Guidelines"** (article 360042579132; snapshot 2020-11-26): *"Don't direct Users to
-  alternative sales channels. TpT should not be used as a way to drive traffic to another website
-  or business. You may not include hyperlinks to alternative sales channels such as another online
-  marketplace or e-commerce site where your resources can be purchased."* And: *"You may not
-  require the purchase, subscription, or registration of an account with any other websites or
-  services to access your full resource."*
-- **"Can I sell subscriptions to my website on TPT?"** (article 360042199912; snapshot
-  2024-02-28): *"Subscriptions to external websites are not permitted."*
-- **"Can I offer resources that are hosted on a third party site?"** (article 360042199032;
-  snapshot 2024-02-22): third-party hosting is allowed for >4GB files, streaming, and online
-  courses, but buyers may not be required to create an account on the third-party system, and:
-  *"You can include your TPT store and credits/copyright information in the file as well."*
-- **"Is it ok to include hyperlinks or QR codes to other websites in my resources?"** (article
-  360043004671, surfaced via web search 2026-07-17): hyperlinks/QR codes **to content that
-  supplements the resource** (a blog post, an article, a video on the publisher's own site) are
-  acceptable; the seller is responsible for keeping links live.
-
-(Local copies of the retrieved policy pages are in the session scratchpad: \`tpt-other-sites.html\`,
-\`tpt-seller-guidelines.html\`, \`tpt-3p.html\`, \`tpt-subs.html\`.)
-
-**What this means in practice:**
-
-| Compliant ✅ | Prohibited 🚫 |
-| --- | --- |
-| Credits/copyright/attribution page inside the PDF naming Learn.WitUS.Online as the source curriculum | "Buy the full course at learn.witus.online" anywhere on TpT |
-| APA 7 citations and a \`## Sources\` bibliography (some references naturally live at learn.witus.online) | Hyperlinks to any page whose job is to sell (course sales pages, pricing pages) |
-| Links to **free supplemental content** that genuinely supports the printed lesson (the free \`/standards\` finder, the free Great Migration interactive map), provided those pages are verifiably accessible without login | Requiring a Learn.WitUS account to use any part of the packet |
-| Brand identity: store name, logo, "From the Learn.WitUS.Online cited-curriculum catalog" tagline on covers and in descriptions | Selling Learn.WitUS subscriptions or course access through TpT listings |
-| Same-or-higher pricing elsewhere for the same PDF | Selling the identical packet cheaper on learn.witus.online |
-
-**The funnel is therefore the brand, not a hyperlink.** A teacher who trusts the packet googles
-the name on its cover. The packets are engineered for exactly that: the differentiators (verified
-standards with exact codes, every claim cited, no AI tells, answer keys that explain) are visible
-on every page, and the attribution page says *who we are* without saying *go buy*. Free
-supplemental links (standards finder, interactive map) land the teacher on Learn.WitUS legitimately, as supplements to what they already bought, which is precisely what TpT's hyperlink guidance
-permits.
-
-**One deliberate safety margin:** the packets sold on TpT are **print adaptations**, not the
-courses themselves. The interactive courses (reveals, rotating 15-question quiz banks, progress
-tracking) remain a *different product* that exists only on Learn.WitUS. That keeps the
-price-consistency rule from ever binding course pricing, and it gives the teacher a real reason to
-visit: the thing on the website is not the thing they already own, it's the living version of it.
-
-## 3. Proposed product list
-
-### Tier A, lead magnets (free or $3)
-
-**A1 · Wish · Outcome · Obstacle · Plan, research-based goal-setting (FREE)**, *packet built*
-- **Why it sells:** goal-setting/SEL printables are evergreen TpT staples (advisory, New Year,
-  September). Ours is the only one whose every claim carries a DOI, and whose honest hook
-  ("visualizing success makes you less likely to get it, here's the trial evidence") is a
-  pattern-interrupt in a category full of vision-board fluff. First-resource-must-be-free rule
-  makes this product #1 regardless.
-- **Search terms:** goal setting worksheet, SEL high school, executive function, if-then planning,
-  new year goals, advisory activities, research-based goal setting, growth mindset alternative.
-- **Grade band:** 8-12 + adult ed. **Price:** FREE.
-- **Standards:** Indiana Health & Wellness HS.6.2 and HS.6.3 (both **full**, verified). Only IN is
-  live-verified for this course; say nothing beyond that.
-- **Funnels toward:** the WOOP course, Learning How to Learn, the Study Skills category; shows off
-  the citation discipline to the broadest possible teacher audience.
-
-**A2 · US Constitution mini-unit ($3)**, *packet built*
-- **Why it sells:** Constitution Day (Sept 17) is a compliance event, federally funded schools
-  must program on the Constitution that week, and teachers buy ready-made mini-units for it every
-  August/September. Ours quotes the document verbatim, cites the National Archives transcript, and
-  ships a 10-question quiz keyed to lessons.
-- **Search terms:** Constitution Day activity, US Constitution unit, Bill of Rights worksheet,
-  three branches of government, checks and balances, civics test prep, government sub plan.
-- **Grade band:** 8-12 (readable at 7). **Price:** $3 (at the no-fee threshold).
-- **Standards:** IN USG.1.3 (full), USG.2.1/2.3/3.2/3.6 (partial, the packet says exactly which
-  halves). Only IN live-verified.
-- **Funnels toward:** the whole Civics catalog, 12+ general civics courses and the 50-state
-  series. The natural next purchase is the buyer's own state's civics unit.
-
-### Tier B, catalog products ($5-10 each)
-
-**B1 · The 50-state civics series as 50 individual listings ($6-8 each)**, *Indiana packet built
-as the template*
-- **Why it sells:** this is the strategic centerpiece. "State government unit" is a required topic
-  in nearly every state's middle/high-school civics sequence, and TpT search is starved for
-  state-specific material beyond the big states. 50 listings each targeting one state's teachers =
-  50 doors into the same storefront, each with zero national competition on specificity ("Indiana's
-  simple-majority veto override", "merit selection + retention").
-- **Search terms (per state):** "<state> government unit", "<state> civics", "<state> constitution
-  worksheet", "<state> studies", plus state-specific hooks (Indiana: Crawford v. Marion County,
-  township government).
-- **Grade band:** 6-12. **Price:** $6-8.
-- **Standards, the honest line:** ONLY Indiana's listing may cite standards today (live in
-  \`src/lib/standards/data/in.ts\`). Arizona and Arkansas are mapped on the un-merged
-  \`feat/standards-az-ar\` branch (user-task 115), their listings can cite codes **after BAM merges
-  it**. The other 47 states' listings ship with NO standards claims and a truthful line: "Standards
-  alignment for <state> is in progress, see our verified-alignment methodology." Never imply more.
-- **Funnels toward:** neighboring-state units, the general civics courses, and the live \`/standards\`
-  finder (free, supplemental, compliant to link).
-- **Effort note:** with the Indiana packet as template, each additional state is a content-swap, not
-  a redesign, realistic at ~2-3 hours per state from the existing course files.
-
-**B2 · The Great Migration unit ($8-10)**, *packet built*
-- **Why it sells:** Black History Month (February) is TpT's single biggest social-studies buying
-  season, and most Great Migration material there is thin (a reading + questions). Ours is a
-  12-lesson unit with primary-source pointers to real archives (Schomburg, National Archives,
-  Mapping Inequality), a capstone project menu, and a built-in media-literacy lesson (the
-  Philadelphia "500%" claim checked against the census numbers it fails). List by early January for
-  February discovery.
-- **Search terms:** Great Migration unit, Black History Month high school, Harlem Renaissance,
-  Jim Crow lesson, primary source analysis, redlining lesson, African American history.
-- **Grade band:** 6-12 + homeschool. **Price:** $8-10.
-- **Standards:** IN USH.2.5, 3.4, 3.6, 7.1, 10.2 (all **partial**, the packet quotes each
-  coverage note verbatim; the honesty is the differentiator). Arkansas's African-American History
-  course standards are mapped on the pending AZ/AR branch, add after merge.
-- **Funnels toward:** the free interactive migration map on Learn.WitUS (compliant supplemental
-  link), Africa Before Colonization, History of Unions, the Civics catalog.
-
-**B3 · History of Unions, labor-history primary-source unit ($8-12)**
-- **Why it sells:** labor history is chronically under-served on TpT; the course's honest angles
-  (Haymarket taught as an unresolved dispute, the Wagner Act's deliberate exclusions, unions' own
-  colour bar, Randolph→Memphis) give an AP US History / US History teacher exactly the
-  document-based nuance the exam rewards.
-- **Search terms:** labor history unit, Gilded Age labor movement, Haymarket, Triangle fire,
-  Wagner Act, APUSH period 6, labor unions lesson.
-- **Grade band:** 9-12. **Price:** $8-12 (29 lessons; could split into two volumes).
-- **Standards:** IN USH.2.4, 3.4, 4.7, 9.1 + WH.6.6/6.10 (all partial, notes quoted).
-- **Funnels toward:** Know Your Rights at Work, the six country labor courses, Great Migration.
-
-**B4 · "Reading a source against the record": the PGA's Caucasian-only clause ($3-4)**
-- **Why it sells:** a self-contained one-lesson primary-source-audit exercise from the Golf
-  course, students read the actual January 1962 *Golfdom* trade-magazine report of the repeal
-  (free scan, MSU Turfgrass Information Center) and discover the industry's own account names none
-  of the men who forced the change (Sifford, Spiller, Rhodes, Mosk). Media literacy + Black history
-  + sports hook in one printable period. Cheap, sharp, extremely shareable.
-- **Search terms:** primary source analysis, media literacy history, sports history, Black History
-  Month activity, historiography lesson, critical thinking history.
-- **Grade band:** 8-12. **Price:** $3-4.
-- **Funnels toward:** Golf course, media-literacy courses, Great Migration.
-
-**B5 · FAA Part 107 ground-school study packs ($5-8)**
-- **Why it sells:** drone/aviation CTE programs are growing fast and TpT's Part 107 shelf is
-  nearly empty; the repo already carries a large Part 107 quiz bank (\`faa-part-107-quizzes.ts\`) to
-  adapt into printable practice tests with explained answer keys. CTE teachers buy per-program, not
-  per-classroom, less price sensitivity.
-- **Search terms:** drone curriculum, FAA Part 107 test prep, UAS ground school, aviation CTE,
-  remote pilot practice test.
-- **Grade band:** 9-12 CTE + adult. **Price:** $5-8 per pack (regulations / weather / airspace /
-  operations packs). **Standards:** none claimed (FAA ACS-referenced instead, that's the aligned
-  authority for this content).
-- **Funnels toward:** the FAA Part 107 course with its rotating quiz banks, the strongest "the
-  online version does something paper can't" pitch in the catalog.
-
-**B6 · Media-literacy pair: Spotting Misleading Marketing / Detecting AI ($5-7 each)**
-- **Why it sells:** AI-detection and media-literacy lessons are among 2025-26's fastest-growing
-  TpT searches; ours are cited to C2PA/NIST/FTC rather than vibes, and IN ELA 9-10.CC.8 /
-  11-12.CC.8 are **full-coverage** verified claims.
-- **Grade band:** 9-12. **Price:** $5-7. **Funnels toward:** the AI Literacy ladder.
-
-### Tier C, premium bundles ($15-35)
-
-Standard TpT practice: bundle at ~25-30% off the sum of parts, list only after the parts exist.
-- **C1 · Civics Complete**, Constitution mini-unit + a state unit + Voting & Elections + How a
-  Bill Becomes Law ($15-20).
-- **C2 · Black History Month mega-bundle**, Great Migration + Golfdom lesson + (later) Africa
-  Before Colonization adaptation ($18-25).
-- **C3 · Labor History bundle**, History of Unions volumes + Know Your Rights at Work ($20-25).
-- **C4 · Study Skills starter**, Learning How to Learn adaptation + the free WOOP printable's
-  paid big-sibling (full 24-lesson adaptation) ($12-15).
-
-## 4. The honest constraints
-
-1. **Standards claims: 2 states live, 2 pending, 47 absent.** Indiana (\`in.ts\`) and D.C. (\`dc.ts\`,
-   Commodity-Map-only, irrelevant to these packets) are in main. Arizona + Arkansas are complete
-   but sit on un-merged \`feat/standards-az-ar\` (user-task 115). Every packet's standards page names
-   Indiana only, links the free \`/standards\` finder for currency, and says the coverage grade
-   (full/partial) out loud, including the partial-coverage notes verbatim. **No packet may imply
-   alignment beyond the mapped states.** (D.C.'s civics/history mapping hasn't been done at all, \`dc.ts\` says so, so D.C. is not cited in these packets either.)
-2. **TpT license vs. ownership.** BAM keeps copyright; TpT takes a non-exclusive license to host
-   and sell. Buyers get a single-classroom license (TpT's standard); the packets' attribution page
-   states the license plainly. Because the packets are derivative print adaptations, the courses
-   themselves are never licensed to TpT.
-3. **Price consistency cuts both ways.** The same PDFs must never appear cheaper on
-   learn.witus.online (or anywhere). Simplest compliant posture: the PDFs are TpT-exclusive; the
-   website sells the interactive courses, which are a different product.
-4. **Link liveness is a seller obligation.** Any URL inside a PDF (archives.gov sources, the
-   /standards finder, the migration map) must stay live or TpT can refund + deactivate the product.
-   The supplemental Learn.WitUS links must be verified publicly accessible **without login** before
-   upload, flagged in task 122.
-5. **Effort per packet:** the four built packets averaged 7-9 markdown files each; converting to
-   branded PDF (fonts, cover art, TpT preview images) is BAM-side work, est. 2-4 hours per packet
-   the first time, less once a template exists.
-6. **Needs BAM (task 122):** seller account + $59.95 Premium, storefront branding (name, banner,
-   logo, bio), final pricing sign-off, PDF conversion/branding, public-accessibility check on the
-   two supplemental URLs, and the AZ/AR merge decision before any AZ/AR standards claims go live.
-
-## 5. Recommended launch order (first 5)
-
-1. **WOOP goal-setting printable (FREE)**, required first-free-product; broadest audience;
-   plants the "every claim has a DOI" brand flag; September advisory season.
-2. **US Constitution mini-unit ($3)**, Constitution Day (Sept 17) buying wave starts in August;
-   cheap enough for impulse purchase + review velocity; feeds every other civics listing.
-3. **Indiana Civics unit ($7)**, the standards-verified flagship and the template for the other
-   49; Indiana teachers searching "Indiana government unit" find near-zero competition; proves the
-   state-by-state model before scaling it.
-4. **Great Migration unit ($9)**, the premium anchor; listed early (fall) so reviews accumulate
-   before the January-February Black History Month surge.
-5. **Golfdom primary-source lesson ($3-4)**, fast to build (one lesson already written), sharp
-   hook, low price → review velocity; cross-promotes both the media-literacy and Black-history
-   shelves and rides the Great Migration unit's February traffic.
-
-Then: the AZ + AR civics units the moment task 115 merges (their standards pages are the launch
-asset), FAA packs, History of Unions volumes, and the first bundles.
-
-## 6. What was built this pass
-
-Four upload-ready packet folders under \`plans/future-courses/tpt-packets/\`, each containing cover
-copy, teacher guide, print-adapted student reader (reveals → worksheet Q&A with separate answer
-keys), quiz worksheet + key, the state standards page, a compliant attribution/pointer page, and a
-paste-ready TpT listing (description + keywords):
-
-- \`woop-goal-setting-printable/\` (free lead magnet)
-- \`us-constitution-mini-unit/\` ($3 lead magnet)
-- \`indiana-civics-unit/\` ($7 catalog flagship / 50-state template)
-- \`great-migration-unit/\` ($9 premium anchor)
-
-All content is adapted from the shipped course files (\`scripts/data/*.ts\`); nothing was invented.
-Citations and \`## Sources\` sections carry over intact, that is the brand.
-
-## Sources
-
-- TPT Help Center. (2024, September 9). *Guidelines around utilizing other sites* (art. 360044219551). Retrieved via Wayback Machine snapshot 2025-10-09, fetched 2026-07-17. https://help.teacherspayteachers.com/hc/en-us/articles/360044219551
-- TPT Help Center. (2020, May 13). *Seller Guidelines* (art. 360042579132). Retrieved via Wayback Machine snapshot 2020-11-26, fetched 2026-07-17. https://help.teacherspayteachers.com/hc/en-us/articles/360042579132
-- TPT Help Center. (2023, June 14). *Can I offer resources that are hosted on a third party site?* (art. 360042199032). Retrieved via Wayback Machine snapshot 2024-02-22, fetched 2026-07-17. https://help.teacherspayteachers.com/hc/en-us/articles/360042199032
-- TPT Help Center. (2022, August 1). *Can I sell subscriptions to my website on TPT?* (art. 360042199912). Retrieved via Wayback Machine snapshot 2024-02-28, fetched 2026-07-17. https://help.teacherspayteachers.com/hc/en-us/articles/360042199912
-- TPT Help Center. (n.d.). *Is it ok to include hyperlinks or QR codes to other websites in my resources?* (art. 360043004671). Surfaced via web search 2026-07-17. https://help.teacherspayteachers.com/hc/en-us/articles/360043004671
-- TPT Help Center. (n.d.). *Seller Fees and Payout Rates*; *What membership types are available?*; *How do I sell on TPT?* Surfaced via web search 2026-07-17. https://help.teacherspayteachers.com/`,
-    provenance: "plans/future-courses/teachers-pay-teachers-proposal.md",
-  },
-  {
-    key: "training-the-colonizer",
-    title: "Training the colonizer",
-    summary: "Training the colonizer",
-    body: `Training the colonizer
-what did the people stolen during the Atlantic Slave trade teach their enslavers?
-- how to plant the crops
-- build
-- etcs
-
-another course about how multiple civilizations tried to introduce europeans to soap and regular bathing`,
-    provenance: "plans/future-courses/training-the-colonizer.md",
-  },
-  {
-    key: "travel-abroad-proposal",
-    title: "Travel & Living Abroad, course track proposal (from the US)",
-    summary: "A new \"Travel & Living Abroad\" category. Two courses are building now; the rest are proposals, pick which to author. All cited from authoritative gov…",
-    body: `# Travel & Living Abroad, course track proposal (from the US)
-
-A new **"Travel & Living Abroad"** category. Two courses are building now; the rest are proposals, pick which to author. All cited from authoritative gov sources (travel.state.gov, CDC, CBP, IRS,
-USCIS, SSA), all stressing "verify current rules/fees at the official source" since these change.
-
-## Building now
-1. **How to Get a U.S. Passport**, book vs. **card** (dedicated section: card is land/sea only, NOT
-   international air), first-time (DS-11) vs. renewal (DS-82), documents, fees, expedited, minors,
-   lost/stolen, the 6-month-validity rule. _(travel.state.gov)_
-2. **Travel Visas 101**, how to figure out and get a visa for any destination as a US traveler:
-   visa-free / visa-on-arrival / e-visa / embassy, Schengen + **ETIAS**, documents, a repeatable
-   research checklist. _(travel.state.gov country pages, EU/ETIAS, embassy sites)_
-
-## Proposed, Short trips & tourism (traveling FROM the US)
-3. **International Travel Basics**, the whole pre-trip checklist tying passport + visa + insurance +
-   health + money + **STEP enrollment** (Smart Traveler) + itinerary together. The "start here" hub.
-4. **Travel Health & Safety**, CDC destination vaccines & health notices, travel insurance, staying
-   safe, what to do in an emergency abroad (embassy/consulate help). _(CDC Travelers' Health, State Dept)_
-5. **Money Abroad**, currency, cards vs. cash, foreign-transaction & ATM fees, avoiding scams,
-   notifying your bank. _(CFPB, FTC)_
-6. **Flying Internationally & Coming Home**, airports/customs, **CBP re-entry**, **Global Entry /
-   TSA PreCheck / Trusted Traveler**, and **what you can (and can't) bring back** (duty, ag/food rules).
-   _(CBP, TSA)_
-7. **Culture & Language Ready**, cultural etiquette, basic language prep, respectful travel. (Pairs
-   with the existing Languages atlas + language courses.)
-
-## Proposed, Moving & living abroad (long-term)
-8. **Moving Abroad 101**, the big decisions: tourist stay vs. **residency** vs. citizenship, types of
-   long-stay/retirement/work visas, choosing a country, the realistic timeline & costs. The hub course.
-9. **Working Abroad & Digital-Nomad Visas**, work permits, employer sponsorship, the wave of
-   **remote-work/digital-nomad visas**, and what they do/don't allow.
-10. **Taxes for Americans Abroad**, the big one: the US taxes citizens on **worldwide income** even
-    abroad. Covers the **Foreign Earned Income Exclusion**, **FBAR**, **FATCA**, foreign tax credit,
-    filing deadlines. High-value, high-anxiety topic. _(IRS, cite carefully; "consult a tax pro.")_
-11. **Banking & Money When You Live Abroad**, how **FATCA** affects opening foreign accounts,
-    keeping US accounts, transferring money, currency risk. _(IRS/Treasury, CFPB)_
-12. **Healthcare Abroad**, international/expat health insurance, how care differs, Medicare doesn't
-    travel, planning for prescriptions & emergencies.
-13. **Retiring Abroad**, **Social Security payments while overseas** (SSA), residency/retirement
-    visas, taxes + healthcare for retirees, cost-of-living. _(SSA, State Dept)_
-14. **Studying Abroad**, programs, student visas, safety, credit transfer, funding.
-15. **Dual Citizenship & Renunciation basics**, what dual citizenship is, how the US treats it, and
-    the (rare, serious) renunciation process. _(State Dept)_
-16. **Shipping & Logistics of an International Move**, movers vs. ship-it-yourself, customs on your
-    goods, pets, what to sell/store, mail forwarding & voting from abroad.
-
-## Recommended sequencing
-- **Now:** Passport + Visas (building).
-- **Next (short-trip pillar):** #3 International Travel Basics (the hub) + #6 Flying & Coming Home
-  (Global Entry / customs), highest everyday demand.
-- **Then (moving pillar):** #8 Moving Abroad 101 (hub) + #10 Taxes for Americans Abroad (the topic
-  people most fear getting wrong).
-- The rest as demand shows.
-
-## Note
-The tax/legal/immigration courses must be firmly framed as **educational, not professional advice**
-(the new site-wide disclaimer already covers this) and point to IRS/USCIS/a licensed professional.`,
-    provenance: "plans/future-courses/travel-abroad-proposal.md",
   },
   {
     key: "types-of-business-path",
@@ -9227,352 +7463,6 @@ Full plan: plans/44-parallel-history-and-timelines.md.`,
     provenance: "plans/future-courses/visual-timelines.md",
   },
   {
-    key: "workers-rights-track-proposal",
-    title: "Workers' Rights Around the World, course track proposal",
-    summary: "A proposed \"Workers' Rights\" track: one built anchor course plus a set of country courses chosen",
-    body: `# Workers' Rights Around the World, course track proposal
-
-A proposed **"Workers' Rights"** track: one built anchor course plus a set of country courses chosen
-to span a genuinely diverse spectrum of how states interact with labor, not a tour of rich
-democracies. From BAM's note (\`plans/future-courses/history-of-unions.md\`):
-
-> "create a track of courses that covers workers rights globally, with courses on different countries
-> showing a diverse spectrum of how nations/states interact with labor"
-
-**Nothing below is built.** These are proposals, pick which to author, and in what order.
-
----
-
-## The anchor (built, \`content/history-of-unions\`)
-
-**The History of Unions: America and the World** (Culture & History), 7 sections, 22 teaching
-lessons, 7 quizzes, 1 exercise. The full US arc (Knights/AFL → Haymarket → Homestead/Pullman →
-Triangle → Wagner Act → CIO → Taft-Hartley → Randolph/Memphis → PATCO → the BLS density series),
-told with the parts a comfortable course skips (the NLRA's agricultural/domestic carve-out, unions'
-own record of racial and gender exclusion, the corruption chapters). Then one lesson each on six
-national models, and the ILO.
-
-**The anchor's real payload is a reusable analytical spine, "the four questions."** Every course in
-this track should use it as its skeleton, so the track compounds instead of being twelve unrelated
-country tours:
-
-1. **Who is allowed to organise?**
-2. **Who is excluded?**
-3. **Who bargains with whom, and at what level?**
-4. **What happens to you if you try?**
-
-A student who has done the anchor plus any three country courses should be able to walk into a
-country they have never studied and produce a defensible first-pass answer to all four.
-
-A companion course, **Know Your Rights at Work** (\`content/know-your-rights-at-work\`, parallel
-branch), covers *your rights on the job today*. The anchor cross-links to it; the country courses
-should too. The division of labour is: **that one = what do I do on Monday. This track = how did
-this get built, and why is it different over there.**
-
----
-
-## Selection criteria (why these countries, and not others)
-
-A country earns a slot only if it teaches something **no other course in the track can teach**. The
-test is not "is it important", it is "does removing it leave a hole in the spectrum."
-
-The spectrum this track is trying to cover, end to end:
-
-| Position on the spectrum | Country that anchors it |
-|---|---|
-| Workers **in the boardroom**, by statute | Germany |
-| Unions run the **welfare plumbing**; the wage floor is a contract, not a law | Sweden / Denmark |
-| The union as **liberation movement**, and then as part of the government | South Africa |
-| The union as the thing that **brought down the state** | Poland |
-| Most workers have **no employer at all** to bargain with | India |
-| Unions **chartered and funded by the state**, and then defunded overnight | Brazil |
-| The union as a **tool of the employer** (the protection contract), and rights enforced through a **trade deal** | Mexico |
-| A labor system **deliberately engineered to atomise bargaining** | Chile |
-| Rights won *with* democracy, and then policed with **damages suits against individual strikers** | South Korea |
-| Your real employer is a **brand on another continent** | Bangladesh |
-| The union **is an arm of the party-state** | China |
-| Workers with **almost no rights at all** | The Gulf (Qatar / UAE / Saudi Arabia) |
-
-Two deliberate omissions, so the reasoning is on the record:
-
-- **The UK.** Voluntarism, the 1984-85 miners' strike, the 2016 Trade Union Act, the 2023
-  minimum-service-levels law. Genuinely interesting, but it overlaps the US course heavily (common
-  law, adversarial, declining density) and would spend a slot without widening the spectrum. **Build
-  it only if a UK audience materialises.**
-- **France.** The very low density / very high coverage gap is the most vivid illustration of
-  Question 3 anywhere on earth, but it is *already* the punchline of the Germany course, and
-  France's own union landscape (multiple competing confederations, extension by ministerial decree)
-  is more confusing than instructive for a first pass. **Fold the France contrast into Germany;
-  don't build the course.**
-
----
-
-## Wave 1, build first (highest teaching value per unit of sourcing pain)
-
-These four are the backbone. Each is well-sourced from official/primary material, each anchors a
-distinct end of the spectrum, and none requires a subject-matter reviewer to ship responsibly.
-
-### 1. Germany, *Workers on the Board*
-**Teaches uniquely:** that a country can have roughly the same union **membership** rate as the US
-(14.1%, 2024) and roughly **five times** the bargaining **coverage** (~49-50%), and that the
-difference is a design choice, not a cultural one. Board-level co-determination (Co-determination
-Act 1976: half the supervisory board of a >2,000-employee company) and the **dual channel** (works
-councils are statutory bodies elected by *all* employees, and are not the union).
-**Why it earns a slot:** it is the strongest available refutation of "unions vs. companies" as the
-only possible frame. Nothing else in the track shows workers with a structural, permanent, legal
-seat.
-**Hard parts:** the two-tier board is genuinely confusing to an American student, this course needs
-real diagrams. And the honest version must include the **casting-vote catch** (parity of seats, not
-of power) and the insider/outsider critique (co-determination is argued to protect permanent staff
-at the expense of everyone else). Sourcing is excellent: statutes in English at
-\`gesetze-im-internet.de\`, ETUI's \`worker-participation.eu\`, Hans-Böckler-Stiftung, OECD/AIAS.
-
-### 2. Sweden & Denmark, *The Wage Floor That Isn't a Law*
-**Teaches uniquely:** the **Ghent system** (unemployment insurance administered by union-affiliated
-funds → density around 65%), **sectoral bargaining**, and the fact that neither country has a
-statutory national minimum wage, because the floor is a contract. Plus Danish **flexicurity**: easy
-dismissal, generous benefit, active retraining, a bargain most Americans have never heard proposed.
-**Why it earns a slot:** it detonates the assumption that a legal protection must be a *law*. It also
-teaches the track's best methodological habit, *look for the plumbing before you reach for the
-culture*.
-**Hard parts:** it must tell the **erosion** story (private unemployment funds that don't require
-membership; decades of decline from a higher peak; pressure from the EU Adequate Minimum Wages
-Directive 2022/2041) or it is a tourism brochure. Also: Sweden and Denmark differ enough that the
-course has to teach both, not blur them into "Scandinavia."
-
-### 3. Poland, *Solidarność: When a Union Brought Down a State*
-**Teaches uniquely:** that in a one-party state, "who may organise?" **is** "who governs?" The 21
-Demands (demand #1 was the right to form free unions, not pay), the Gdańsk Agreement (31 Aug 1980),
-roughly 10 million members, martial law (13 Dec 1981), the Round Table, June 1989.
-**Why it earns a slot:** it is the most dramatic and most *teachable* proof of the anchor's thesis,
-and it puts a trade union at the centre of the biggest geopolitical story of the late 20th century, which most students have never been told.
-**Hard parts:** **the present tense is a minefield.** The 1980-89 history is superbly sourced (UNESCO
-Memory of the World holds the 21 Demands; the European Solidarity Centre in Gdańsk has a vast open
-archive; the Institute of National Remembrance). But today's NSZZ "Solidarność" is a politically
-aligned organization very different from the 1980 movement, and **Lech Wałęsa's own record is
-fiercely contested in Polish politics**, including long-running allegations about a 1970s
-security-service file. **Recommendation: build the course on 1980-89, state explicitly that the
-movement's contemporary legacy is contested in Poland today, and do not adjudicate Wałęsa's file.**
-Say so in the course, in one honest paragraph. That is the whole fix.
-
-### 4. Mexico, *The Protection Contract, and the Trade Deal That Came for It*
-**Teaches uniquely:** a **third kind of union object** the anchor only gestures at, the union that
-is a **tool of the employer**. Mexico's "protection contracts" were collective agreements signed
-between a company and a friendly or phantom union, sometimes before a single worker was hired, which
-then legally blocked any real union from organising. Then: the **2019 labour reform** (personal,
-free, direct, secret votes to legitimise existing contracts) and the **USMCA Rapid Response Labor
-Mechanism** (in force 2020), under which the United States can impose tariffs **on one specific
-factory** for denying freedom of association.
-**Why it earns a slot:** the RRM is the only concrete, working, *enforceable* international labor
-mechanism in the whole track, the answer to the anchor's bleak ILO lesson ("the floor is made of
-paper"). And the protection contract teaches a student to ask *whose union is it?* rather than *is
-there a union?*
-**Hard parts:** none that are severe. Sourcing is good and public: the Ley Federal del Trabajo as
-amended (2019), the USMCA text, and USTR's **published list of RRM cases**, which is a gift,
-because students can read the actual disputes. Keep it neutral on US-Mexico trade politics; teach
-the mechanism, not the trade war.
-
----
-
-## Wave 2, build second (widens the spectrum; needs more care)
-
-### 5. India, *When Most Workers Have No Employer*
-**Teaches uniquely, and this may be the single most important course in the track.** The
-overwhelming majority of India's workforce is **informal**: no contract, no employer of record,
-frequently no identifiable legal employer at all. Every concept in the anchor course, the election,
-the contract, the grievance procedure, the duty to bargain, assumes an *employer*. **India is where
-that assumption breaks.** It teaches SEWA (the Self-Employed Women's Association, founded 1972), a
-union of self-employed women, which is a genuinely different institutional invention, and general
-strikes that mobilise tens of millions.
-**Why it earns a slot:** it is the course that stops a student from thinking "worker = employee." It
-is also, bluntly, the world's largest workforce, and its absence from the track would be
-embarrassing.
-**Hard parts:** **the statistics are genuinely contested**, informality is defined differently by
-different bodies and the headline percentage swings accordingly. The course must name its definition
-and its source rather than quoting a number. The 2019-20 **Labour Codes** (consolidating dozens of
-statutes) are politically contested and their implementation has been staggered, do not state their
-status as settled; date it. Sources: ILO India, the Periodic Labour Force Survey, the Codes' text on
-\`india.gov.in\`, SEWA's own materials.
-
-### 6. South Korea, *Democracy, the Chaebol, and the Lawsuit as a Weapon*
-**Teaches uniquely:** rights won *alongside* democracy (the 1987 Great Workers' Struggle), the
-**regular/irregular dual labour market** inside the chaebol conglomerates, and a repression mechanism
-students will not have seen anywhere else, **civil damages suits and provisional seizure of assets
-brought against individual strikers**, which can financially destroy a worker without ever
-criminalising the strike. Great hook: **Korea ratified ILO Conventions 87 and 98 only in 2021**, a
-rich, democratic OECD member that took until the 2020s to sign the freedom-of-association floor.
-**Why it earns a slot:** it is the track's sharpest version of **Question 4** *inside a wealthy
-democracy*, which is exactly where American students assume Question 4 is boring.
-**Hard parts:** contested domestic politics (the "yellow envelope" bill limiting damages suits has
-been passed, vetoed and re-fought, date any claim about its status). Sourcing is otherwise good:
-ILO NORMLEX, OECD, the KCTU and FKTU, Korean labour statutes.
-
-### 7. Brazil, *State-Chartered Unions, a Union-Made President, and the 2017 Rupture*
-**Teaches uniquely:** **corporatism**, a system in which unions are chartered by the state, granted
-monopoly representation of a category in a territory, and funded by a **compulsory union tax**
-deducted from workers whether or not they joined (the 1943 CLT structure). Then the "new unionism"
-of the ABC metalworkers, which produced a president. Then **Law 13.467/2017**, which abolished the
-compulsory tax and cut union finances off at the knees more or less overnight. Also: Brazil has a
-dedicated **labour judiciary**, which almost no student has ever heard of.
-**Why it earns a slot:** it is a controlled experiment nobody could have designed. *What happens to
-unions that were funded by the state, when the state stops funding them?* Brazil answers it.
-**Hard parts:** **political heat.** Lula is a current/recent head of state and Brazilian politics is
-brutally polarised. The course must be scrupulously neutral, stick to the statute and the numbers,
-and date everything. Sourcing is fine (CLT, Law 13.467/2017, ILO, IBGE).
-
-### 8. Chile, *A Labor System Designed to Be Weak*
-**Teaches uniquely:** the **1979 Plan Laboral**, a labour code written under a military dictatorship
-which deliberately **fragmented bargaining to the individual firm**, permitted competing unions
-inside one workplace, and constrained the right to strike. This is the clearest documented case
-anywhere of a labour system *engineered*, on purpose, to atomise worker power, and it survived the
-return to democracy largely intact, which is the more interesting half of the story.
-**Why it earns a slot:** every other course shows institutions that *evolved*. Chile shows one that
-was **designed**, by named people, with a stated goal. It turns Question 3 from a description into an
-accusation, and it is the perfect final lesson before a student re-reads their own country's law.
-**Hard parts:** Pinochet-era history is contested and painful; the course must handle the
-dictatorship soberly and cite carefully. Sourcing is adequate (the Código del Trabajo, ILO, OECD,
-Chilean scholarship) but much of the best material is in Spanish, a translation pass is required.
-
----
-
-## Wave 3, build last (hardest to source; the state may be hostile)
-
-These three complete the spectrum and are the ones the track *needs* in order not to be a tour of
-comfortable countries. They are also the ones most likely to produce a credibility failure if built
-carelessly. **Do not build these until the method is proven on Waves 1-2.**
-
-### 9. China, *The Union That Is the State*
-**Teaches uniquely:** the sharpest possible form of **Question 1**. The ACFTU is the world's largest
-union organization and a genuinely different *object*: unions operate under Party leadership by
-statute, a workplace union must affiliate upward, and forming one requires higher-level approval. The
-right to strike was in the 1975 and 1978 constitutions and was **removed in 1982**.
-**Why it earns a slot:** without it, "union" reads as a fixed unit across countries. It isn't.
-**What makes it hard, and this is a *specific* difficulty worth understanding:** the **law is easy**
-and the **practice is hard**. The statutes are public and officially translated (\`npc.gov.cn\`), so
-the legal structure is unarguable and can be taught from primary sources with total confidence. What
-cannot be sourced cleanly is *what actually happens*: strike frequency, detentions of labour NGO
-staff, conditions. The standard open dataset was **China Labour Bulletin's strike map**, and CLB, a
-Hong Kong-based advocacy organization, **wound down its operations in 2023**, which leaves a real
-and worsening evidence gap. The state is hostile to independent research on exactly this question.
-**What BAM would need:** a hard editorial rule, *build the course from the statute and from ILO
-supervisory-body findings; state explicitly what cannot be verified; do not launder advocacy claims
-as fact; do not caricature (the ACFTU does administer real welfare and legal aid); date everything.*
-Done that way this course is defensible and genuinely excellent. Done the other way it is a
-liability.
-
-### 10. The Gulf, *Kafala: The Workers Who Build the Cities* (Qatar / UAE / Saudi Arabia)
-**Teaches uniquely:** the near-zero end of the spectrum, and the exact same *mechanism* as the NLRA's
-1935 farm/domestic carve-out, a class of worker defined **by law** as outside the protections
-everyone else gets, doing the hardest and most dangerous work. Qatar's 2020 reforms (Law No. 17,
-minimum wage; Law No. 19, removing the No-Objection Certificate) are **real** and must be taught as
-real; and migrant workers still **may not form or join trade unions**, which must also be taught.
-**Why it earns a slot:** because a workers'-rights track that stops at countries with unions has not
-described the world.
-**What makes it hard:** the two failure modes are the promotional version (recite the 2020 laws,
-stop) and the atrocity version (recite abuses, ignore that the law changed). **Both are propaganda.**
-Independent research access is limited, official statistics are thin, and *every* available source, including the ILO's own Qatar office, which operates inside a formal joint programme with the
-government and is therefore both authoritative and diplomatically constrained, is motivated.
-Migrant-worker death-toll figures in particular are contested and have been misreported by major
-outlets.
-**What BAM would need:** a rule that **every claim carries the statute + the ILO + at least one
-independent monitor**, that contested figures are presented *as contested, with the range and the
-dispute named*, and that nothing is asserted undated. Also: do not erase migrant workers' agency, wildcat strikes happen and are documented.
-
-### 11. Bangladesh, *Rana Plaza and the Brand on Another Continent*
-**Teaches uniquely:** what Question 3 means when **your real employer is a logo in another country**.
-The Rana Plaza collapse (24 April 2013; more than 1,100 garment workers killed) and what followed:
-the **Accord on Fire and Building Safety in Bangladesh**, a *legally binding* agreement between
-global brands and global unions, enforceable through arbitration. That is one of the most important
-labour-governance experiments of this century and it is essentially invisible to American students,
-who are wearing its output.
-**Why it earns a slot:** it is the course with the shortest distance between the syllabus and the
-student's own shirt. It also answers the ILO lesson's despair with something that actually binds, not a treaty, but a contract.
-**What makes it hard:** the **Bangladeshi state has been hostile to garment-union organising**, union registration is difficult, and organisers have been dismissed, blacklisted and assaulted (well
-documented). The Accord's status has been repeatedly renegotiated and litigated, so any claim about
-its current form must be dated. Sourcing is otherwise good: ILO, Better Work, the Accord's own
-published inspection reports, the brands' own disclosures.
-
----
-
-## Optional / later
-
-- **Nigeria (or Kenya)**, African labour *outside* South Africa. The Nigeria Labour Congress
-  repeatedly calls general strikes that shut the country (fuel-subsidy disputes), so a union
-  federation functions as de facto political opposition, a thing American students never see.
-  Sourcing is moderate; informal-sector statistics are weak. Good candidate if the track continues.
-- **The UK** and **France**, see "deliberate omissions" above.
-- **South Africa** is listed in the spectrum table and *should* be built, see the reviewer caveat in
-  "What BAM would need." It sits between Wave 1 and Wave 2 on difficulty: the archives are excellent
-  (South African History Online, the O'Malley/Nelson Mandela Foundation archives, the Labour
-  Relations Act, the 2015 Marikana Commission report), but the post-1994 ANC alliance and Marikana
-  are live, litigated, domestically contested politics. **Build it in Wave 2, with a reviewer.**
-
----
-
-## Recommended build order, and why
-
-**1 → Germany. 2 → Sweden & Denmark. 3 → Mexico. 4 → Poland. 5 → India. 6 → South Africa.
-7 → South Korea. 8 → Brazil. 9 → Chile. 10 → Bangladesh. 11 → China. 12 → The Gulf.**
-
-The reasoning:
-
-- **Start with Germany and the Nordics** because they are the *easiest to source* and the *hardest to
-  argue with*. They establish the track's credibility with primary-source material and near-zero
-  political risk, and they teach the two habits the whole track depends on (*bargaining level
-  explains coverage*; *look for the plumbing before the culture*).
-- **Then Mexico**, early and deliberately, because the USMCA Rapid Response mechanism is the track's
-  one piece of good news, and because it inoculates the student against the assumption that "a union
-  exists" means "workers have a union."
-- **Then Poland**, once the student has the vocabulary, Solidarity lands far harder *after* you know
-  what a normal union is, because the point is what it wasn't.
-- **India, South Africa, Korea, Brazil, Chile** widen the spectrum in the middle. India in particular
-  should come before the Wave-3 courses, because "most workers have no employer" is the concept that
-  makes the Gulf course legible rather than merely shocking.
-- **Bangladesh, China and the Gulf go last** because they are the three where a sourcing failure
-  would be most damaging, and because by then the method, statute first, dated claims, named
-  disputes, motivated sources read against each other, will be established and repeatable.
-
-**Track sequencing for the learner** is a different order from the build order. As a learning path:
-*Know Your Rights at Work* (present-tense, practical) → **History of Unions** (the anchor and the
-four questions) → any country courses in any order → **Chile last**, because "a labour system
-designed to be weak" is the right final thought before a student goes and re-reads their own
-country's statute.
-
----
-
-## What BAM would need to build the hard ones responsibly
-
-1. **A standing editorial rule for hostile-state and contested courses**, applied identically to
-   China, the Gulf and Bangladesh:
-   *statute or official text first · every claim dated · contested figures presented as contested,
-   with the range and the dispute named · no advocacy claim laundered as fact · at least one
-   independent monitor cited alongside any official source, and vice versa.*
-   The anchor course already models this (Haymarket's bomb-thrower, Hoffa, the NLRA exclusion's
-   motive, the Qatar reforms), it is a proven pattern in this repo, not a new invention.
-2. **A South African reviewer for the COSATU course** (Marikana is still litigated and the ANC
-   alliance is a live domestic fight), the same posture the repo already takes on the Hoodoo
-   courses, which are held from publishing pending review by a knowledgeable member of the tradition.
-3. **Translation capacity** for the Chile course (Spanish) and, to a lesser degree, Brazil
-   (Portuguese) and Korea. Primary sources exist; they are not in English.
-4. **A decision about the China course's evidence gap**, with China Labour Bulletin wound down since
-   2023, there is no longer a good open dataset on Chinese strikes. Either build the course from the
-   statute alone and *say so in the course*, or don't build it.
-5. **Nothing else.** Waves 1 and 2 need no permissions, no reviewers (except South Africa), and no
-   vendor, only authoring time. That is the argument for starting there.
-
----
-
-## Cross-links
-
-- Anchor course: \`scripts/data/history-of-unions-course.ts\` (branch \`content/history-of-unions\`).
-- Companion: **Know Your Rights at Work** (branch \`content/know-your-rights-at-work\`).
-- Category: **Culture & History** (the anchor ships there). If the track grows past ~4 courses,
-  consider promoting it to its own **"Workers & Rights"** category with a learning path.
-- Source note: \`plans/future-courses/history-of-unions.md\` (BAM's original ask, move to
-  \`completed/\` once the anchor ships).`,
-    provenance: "plans/future-courses/workers-rights-track-proposal.md",
-  },
-  {
     key: "world",
     title: "World",
     summary: "courses on:",
@@ -9594,36 +7484,26 @@ export interface SubdirDoc extends ProposalDoc {
 
 export const SUBDIR_DOCS: SubdirDoc[] = [
   {
-    key: "360-camera-services-360-sites-tools",
-    title: "360 sites tools",
-    group: "360 Camera Services",
-    summary: "list of online tools that use 360 media",
-    body: `list of online tools that use 360 media
-- Vimeo 360
-- https://www.momento360.com/
-- youtube
-- facebook
-- geofencing sites
-
-
-geofencing and 360 media:
-
-Yes, there are apps in the geocaching and location-based treasure hunting space that use 360-degree imagery, 3D spatial technology, or virtual media. While traditional geocaching centers heavily around finding physical containers outdoors, developers use immersive media to enhance navigation, allow virtual placements, or offer digital scavenger hunts.Geocaching Apps Using 360° or Immersive MediaGeooh GO: This premium Android geocaching app is unique because it uses Google’s experimental 3D map tiles. It allows you to "fly" into a cache location, tilt, and completely rotate a photorealistic 3D world view around the cache spot to study the landscape before you arrive.GeoHunt360: Available on iOS and Google Play, this app focuses on digital "geotags". Instead of physical boxes, users hunt for virtual drops. Once you walk within 100 feet of a location, you can unlock full videos, panoramic images, audio clues, and text left behind by other creators.Adventure Lab by Geocaching: Created by the official creators of Geocaching, this app handles virtual, story-driven scavenger hunts. While it doesn't have a native 360-degree camera engine built in, creators frequently link to custom YouTube 360° videos, 360° photo spheres, or street-view media as part of the clues you must examine to answer location-based riddles.A Common Misconception: "The 360 Challenge"If you see the term "360" on geocaching forums like Reddit, it usually refers to The 360-Degree Matrix Challenge rather than a media format. This is a popular statistical gameplay goal where players try to find at least one geocache in every single one of the 360 compass degrees radiating outward from their home coordinates.Are you looking for an app that lets you create your own 360-degree treasure hunt, or are you hoping to use VR/360 tools to preview a physical cache location before hiking out?
-
-If you want to build your own 360-degree treasure hunt, the best approach depends on whether you want a purely digital, virtual-reality style search (played from a couch) or a hybrid real-world game where players walk to physical coordinates and unlock 360-degree media.The software options are divided below by how they handle the 360-degree experience.1. Purely Virtual 360° Hunts (Digital "Escape Rooms")These platforms let you upload spherical 360° photos (shot on a 360 camera or a panoramic phone app) and turn them into an interactive game board. You can hide invisible clickable "hotspots" over objects that trigger riddles, open locks, or hand out clues to the next 360° room.Kuula: This is a leading virtual tour builder that features a highly gamified editor. “PRO and Business plans include features such as: Unlimited tours, Labels, Custom hotspots, Background audio, Interactive cards, Floor plans...” as noted by Kuula. You can easily make an interactive 360° puzzle game by hiding keys or text boxes inside the panorama.Panoee: If you are on a budget, this is an excellent choice. It is a “free virtual tour platform... with premium features to support users” like high-quality panoramas and customization tools. It gives you enough storage to string together multiple panoramic scenes into a scavenger hunt.CloudPano: A web platform that allows you to “create 360 virtual tours by uploading 360 photos and media” while customizing them by “adding hotspots and info spots”. It is highly interactive and viewers can navigate through floor plans or thumbnails to find items.2. Location-Based Real-World Hunts (GPS + 360 Media)If you want players to walk outside to real locations using their smartphones, these platforms let you build the logic of the game, and you can embed your 360° media right into the stops.PlayTours: This web-based scavenger hunt app builder is explicitly built to be “Infinitely Extensible” allowing creators to “Embed anything you can find online, Google documents, 360 virtual walks, crossword & jigsaw puzzles, etc.” Players open a URL in their web browser (no app download required) and navigate via GPS to coordinates to unlock your embedded 360° tasks.GeoHunt360: This is a mobile-first app designed specifically for user-generated treasure drops. As a creator, you can pin a virtual box to a location, and “Share images, videos, audio, QR codes, or text as hidden surprises for others to find” once they walk within 100 feet of your coordinates.Actionbound: A robust mobile app builder for creating custom real-world paths and timeline mysteries. It features an extensive "Bound Creator" toolset including “GPS locations, directions, maps, compass, pictures, videos, quizzes, missions...” While it handles multimedia seamlessly, you will need to host your 360-degree panorama links via a web URL for players to click during their missions.Would you prefer to design a game that players can complete entirely on a computer or phone from home, or are you planning a game where people physically explore a park or neighborhood?`,
-    provenance: "plans/future-courses/360-camera-services/02-360-sites-tools.md",
-  },
-  {
-    key: "360-camera-services-list-of-services-and-how-to",
-    title: "list of services and how to",
-    group: "360 Camera Services",
-    summary: "360-camera-services/list-of-services-and-how-to.md",
-    body: `360-camera-services/list-of-services-and-how-to.md
-
-- commercial and residential real estate tours
-- geocaching
-- geocaching games`,
-    provenance: "plans/future-courses/360-camera-services/list-of-services-and-how-to.md",
+    key: "acting-acting",
+    title: "acting",
+    group: "Acting",
+    summary: "let's research how an acting course could be effectively taught in this tool",
+    body: `let's research how an acting course could be effectively taught in this tool
+should cover different mediums of acting:
+- stage
+- tv
+- film
+- mobile device
+- short form
+- commercials
+- drama
+- comedy
+- physical
+- different camera shots (close ups, full body, etc)
+- narration
+- just the face
+- theater`,
+    provenance: "plans/future-courses/acting/acting.md",
   },
   {
     key: "acting-voice-acting",
@@ -9717,6 +7597,253 @@ What is Closing Credits?
 🤝 Life long peers, and friends. Many of our students network together in our private community.
 🍀 Engineered luck. Start putting yourself in the right place, and then the right time will come.`,
     provenance: "plans/future-courses/acting/voice-acting.md",
+  },
+  {
+    key: "culture-connections-to-the-catalog",
+    title: "How the \"Here Be Dragons\" series connects to the rest of the catalog",
+    group: "Culture",
+    summary: "Status: discussion doc, nothing built. Companion to `dinosaurs-dragons-giants.md`.",
+    body: `# How the "Here Be Dragons" series connects to the rest of the catalog
+
+**Status:** discussion doc, nothing built. Companion to \`dinosaurs-dragons-giants.md\`.
+**Written:** 2026-08-08.
+
+**Decisions already made (BAM, 2026-08-08):**
+
+| # | Question | Decision |
+|---|---|---|
+| 1 | Audience | **Homeschool / teacher market, grades 9-12.** Claims the CCSS ELA 11-12 anchors already fetched in \`src/lib/standards/shared/common-core-ela.ts\`. |
+| 2 | Category | **Culture & History** (existing). Keeps the proposed Science & Math category decision independent. |
+| 3 | Shape | **4 courses + a dedicated ELA capstone**, with ELA also woven as a recurring lesson slot in courses 1-4. |
+| 4 | Media | **Images + the \`map\` lesson build.** |
+
+> **Every course slug below was read from \`scripts/seed-courses.ts\` on 2026-08-08, not remembered.**
+> The five new slugs are proposals and do not exist yet.
+
+---
+
+## 1. Why this series is a connector, not a novelty
+
+The catalog already teaches one method in fourteen dialects: *who made this claim, what did they
+have, who benefited, what got revised.* The route series does it with clearance orders, BVC does it
+with value chains, the precolonial courses do it with whose account survived.
+
+This series does it with **the physical world itself**, and that makes it the only course family
+that can plausibly sit next to almost every other one. Its subject is not dinosaurs. Its subject is
+**how a claim about reality gets made, believed, written down, and retired**, which is the thing
+every other course in the catalog is quietly also about.
+
+That is the argument for building it. It is also the constraint: if a lesson here does not teach the
+method, it is trivia, and it should be cut.
+
+---
+
+## 2. The trap, stated once, because it governs every connection below
+
+The naive version of this series, *"people thought the world was flat, then we got smart"*, is
+**factually wrong** and would be the single most damaging thing this catalog could publish, because
+its whole trust signal is that it checks claims.
+
+Educated Europeans knew the Earth was round continuously from antiquity. The medieval-flat-earth
+story is a **19th-century construction**: Washington Irving fabricated the Salamanca council scene in
+his 1828 Columbus biography, and Draper (1874) and White (1896) hardened it into the "warfare between
+science and religion" narrative most adults absorbed in school. Columbus's real error was the Earth's
+**circumference**, and his critics were right that the ocean was too wide.
+
+So the series' actual thesis is the inverse of the naive one:
+
+> **People were usually reasoning well from what they had. The interesting question is what they had,
+> who they'd let speak, and what it took to change their minds, including ours.**
+
+Every bridge in §4 is a bridge to *that*, not to "dinosaurs are cool."
+
+---
+
+## 3. The connection taxonomy, use the app's real edge types
+
+The app already models course-to-course connection four ways. Author into the existing machinery
+rather than inventing a fifth.
+
+| Edge | Where it lives | Enforced? | Use it for |
+|---|---|---|---|
+| **Required prerequisite** | \`course_prerequisites\` (\`enforcement: 'required'\`) | Blocks enrollment | Almost never here. This series should gate nothing. |
+| **Recommended prerequisite** | \`course_prerequisites\` (\`enforcement: 'recommended'\`) | Advisory | Ordering *within* the series, and 2-3 genuine "read that first" links out. |
+| **Cross-course entity** | \`src/lib/entities.ts\` → entity page + search | Curated, hand-written note per edge | **The main instrument.** Each edge carries one line of "what THIS course does with it." |
+| **CYOA / semantic** | pgvector lesson embeddings, \`matchLessonsGlobal\` | Automatic, tenant-filtered | Free. Costs nothing to author; also cannot be trusted to find the *interesting* link. |
+
+**The entity registry is where the real work goes.** It currently holds 13 entities
+(\`src/lib/entities.ts\`), all from the route series, cases, laws, and places. This series would be the
+first to add **concepts and methods** as entities, which is the higher-value kind, because a concept
+edge links courses that share no place or period.
+
+---
+
+## 4. Course-by-course connections
+
+Proposed slugs are marked ⟡ (do not exist yet).
+
+### 4.1 ⟡ \`monsters-at-the-edge-of-the-map\`, what people drew where they had not been
+
+| Connects to | Edge | The actual connection |
+|---|---|---|
+| \`training-the-colonizer\` | **entity** + recommended | The load-bearing one. The "monstrous races" device (Pliny → Mandeville) is the same rhetorical move, aimed at real people. This course shows the device on parchment; that one shows it in policy. |
+| \`africa-before-colonization\` | **entity** | The blank interior of Africa on European maps was a claim, not an absence, and that course has the record of what was actually there. |
+| \`asia-before-european-colonization\` | **entity** | Same instrument, different margin. |
+| \`precolumbian-mesoamerica\` | **entity** | Same. |
+| \`afrocentricity\` | thematic | Who is placed at the center of a map is an argument. That course names the argument. |
+| \`river-finding-your-way\` | **entity** (concept: *navigation vs. depiction*) | A chart you steer by and a map you argue with are different objects. This is the cleanest concrete bridge into the river series. |
+| \`oral-history\` | thematic | The knowledge that never got drawn was usually spoken. |
+
+### 4.2 ⟡ \`giants-dragons-and-the-bones\`, fossils before paleontology existed
+
+| Connects to | Edge | The actual connection |
+|---|---|---|
+| \`spotting-misleading-marketing\` | **entity** (*the Cardiff Giant*) + recommended | A manufactured hoax, ticketed, then counterfeited by Barnum. A 19th-century case study that lands the same lesson as a modern ad teardown. Strongest single bridge in the series. |
+| \`africa-before-colonization\` / \`asia-before-european-colonization\` | **entity** | Chinese "dragon bones" in materia medica, and fossil knowledge held long before European naming. "Discovery" is a word with an owner. |
+| \`oral-history\` | **entity** (concept: *a record that was never written*) | Indigenous accounts of fossil beds are the test case for what counts as a source. |
+| \`how-to-research\` | recommended | This course is where a learner first needs to tell a primary from a secondary from a story. |
+| \`river-the-wabash-headwaters\` | thematic | Strata and what a riverbank exposes. |
+
+### 4.3 ⟡ \`deep-time-and-the-dinosaur-renaissance\`, the picture kept changing *after* science arrived
+
+| Connects to | Edge | The actual connection |
+|---|---|---|
+| \`river-what-an-expedition-is\` | **recommended** | Field method: what an expedition brings back, and what it leaves behind. Strong, and it earns the Rivers category a real inbound link. |
+| \`river-the-dead-zone\` | **entity** (concept: *reading a system from its sediment*) | Same evidentiary move, 200 million years apart. |
+| \`learning-how-to-learn\` | **entity** (concept: *belief revision*) | The Dinosaur Renaissance is the best available worked example of a field changing its mind on evidence. |
+| \`ai-l5-researching\` | thematic | The Bone Wars is what happens when the incentive is to publish first, not to be right. |
+| \`documentary\` | thematic | Every dinosaur documentary you have seen encodes a picture that has since been revised. |
+
+### 4.4 ⟡ \`wrong-for-good-reasons\`, the epistemology payload
+
+| Connects to | Edge | The actual connection |
+|---|---|---|
+| \`ai-l2-detecting-ai\` | **entity** (concept: *what would change my mind?*) | The transferable tool, in the two places it matters most. |
+| \`spotting-misleading-marketing\` | **entity** | The flat-earth myth was manufactured to sell a story about religion and science. That is a marketing teardown with a 150-year runway. |
+| \`us-civics-101\` / \`state-civics-*\` | **entity** (concept: *who decides what gets taught*) | Curriculum fights are a civics topic. **See the caution in §7, this bridge is real but must be handled without picking a side on a live culture-war issue.** |
+| \`how-to-research\` | **recommended** | Piltdown is what a fraud survives on: it fit what people expected. |
+| \`learning-how-to-learn\` | **entity** | Where the course's method gets a name. |
+| \`afrocentricity\` / \`pan-africanism\` | **entity** (concept: *who gets believed*) | Wegener was dismissed for being a meteorologist. The catalog already has the harder version of that story. |
+
+### 4.5 ⟡ \`writing-the-world\`, the ELA capstone
+
+This one is a hub. It is also the cheapest standards win in the series, because it reinforces
+alignments that **already exist** in \`src/lib/standards/shared/common-core-ela.ts\`.
+
+| Connects to | Edge | The actual connection |
+|---|---|---|
+| \`news-storytelling\` | **recommended** | "Consistent with" in a paper becomes "PROVES" in a headline. Trace one back. |
+| \`digital-social-storytelling\` | thematic | The fifth genre: the same discovery as a viral post. |
+| \`oral-history\` | **recommended** | Genre and voice, from the other direction. |
+| \`documentary\` / \`civic-documentation\` | thematic | Both are "how you write down what you saw" courses. |
+| \`training-the-colonizer\` | **entity** (concept: *the missing actor / passive voice*) | The catalog's existing whose-voice work. This course generalizes it from atrocity to description. |
+| \`how-to-research\` | **recommended** | Citation as a genre convention with a purpose. |
+
+**Standards this capstone can claim** (all already fetched, none require new publisher work):
+\`CCSS.ELA-Literacy.RH.11-12.6\` (differing points of view on the same event), \`.8\` (corroborate or
+challenge premises), \`.9\` (integrate sources, note discrepancies), \`RI.11-12.6\` (author's purpose
+where rhetoric is effective), \`WHST.11-12.7\` and \`.8\` (sustained research, assess source limits,
+cite). The graded \`assignment\` lesson is what makes the WHST claims honest, without a submitted
+artifact, they are aspirational.
+
+---
+
+## 5. What this series should ADD to the shared cross-course surfaces
+
+Because these are the places connections actually become visible to a learner.
+
+**New entities for \`src/lib/entities.ts\`**, the first *concept* entities in the registry:
+
+| Slug | Kind | Why it earns a page |
+|---|---|---|
+| \`what-would-change-my-mind\` | concept | Appears in 4 of the 5 new courses plus \`learning-how-to-learn\`, \`how-to-research\`, \`ai-l2-detecting-ai\`. |
+| \`who-gets-believed\` | concept | Anning, Wegener, and the catalog's existing whose-voice courses. The strongest concept edge available. |
+| \`the-missing-actor\` | concept | Passive voice as a claim. Links the ELA capstone to \`training-the-colonizer\` and BVC. |
+| \`discovery-as-a-word\` | concept | Links all three precolonial courses to courses 1 and 2. |
+| \`the-cardiff-giant\` | event | Concrete, dated, ticketed, counterfeited. Links to \`spotting-misleading-marketing\`. |
+| \`the-bone-wars\` | event | Incentives corrupting a record. |
+
+Note the registry's own rule: an entity with fewer than two of the **tenant's published** courses is
+hidden for that tenant. Concept entities are safer than place entities here, because a white-label
+school that licenses only two of these courses still sees a live edge.
+
+**New \`CATALOG_TIMELINE\` events** (\`src/lib/catalog-timeline.ts\`), that file is currently one lane
+pair (\`ruling\` / \`policy\`) built for the route series. This series needs a different pair, and that is
+a small, real change to discuss: **\`claim\` vs. \`evidence\`**. The gap between the two lanes *is* the
+series' thesis, and the existing two-track \`:::timeline\` in \`what-they-built-course.ts\` already proves
+the rendering works.
+
+**New \`GLOBE_PINS\`** (\`src/lib/globe-pins.ts\`), Claverack NY, Cardiff NY, Lyme Regis, Zhoukoudian,
+Como Bluff, Chicxulub. Each pin carries a \`year\`, which drives the globe's year brush for free.
+
+---
+
+## 6. What this series must NOT duplicate
+
+The proposed Science & Math track's course 2,
+\`plans/future-courses/sciences/outlines/02-how-we-know-whats-out-there.md\`, covers geocentrism →
+heliocentrism. **\`wrong-for-good-reasons\` overlaps it directly.**
+
+Proposed split, to settle before either is authored:
+
+- **The science course owns the astronomy**, parallax, phases of Venus, the instruments, what the
+  models actually predicted.
+- **This course owns the epistemology and the myth-making**, why geocentrism was *good* reasoning,
+  how the flat-earth story was manufactured in the 1800s, and what that tells you about any story
+  you inherit about people who came before you.
+
+Written that way they are complementary and should be **mutual recommended prerequisites**. Written
+carelessly they are the same course twice, and the catalog looks padded.
+
+---
+
+## 7. Honest cautions
+
+1. **Every "may have inspired" claim needs a source or a check.** Mayor's griffin/*Protoceratops*
+   thesis is genuinely contested in the literature, and the dragon-bone → Zhoukoudian chain is the
+   kind of story that gets repeated because it is good, not because it is nailed down. Both belong in
+   \`src/lib/research-checks.ts\` if a primary source cannot be reached. A course about holding claims
+   at arm's length that fumbles its own fun claim is self-refuting.
+2. **The civics bridge (§4.4) is live ground.** "Who decides what gets taught" is a real and teachable
+   civics question, how a state adopts standards, how a board reviews texts, who may comment. It is
+   *not* an invitation to litigate evolution in schools. Teach the **mechanism**, cite the process,
+   and let the mechanism be the lesson. If that cannot be done cleanly, cut the bridge; the series
+   does not need it.
+3. **No condescension, ever, including toward the religious.** Mather reasoned carefully from the
+   sources he trusted. So did the geocentrists. The course is worthless the moment it starts winking.
+4. **Grades 9-12 means the images carry weight, and the catalog has never used one.** Zero courses in
+   \`scripts/data/\` currently embed an inline image; \`src/components/markdown.tsx:56\` renders \`<img>\`
+   but offers no \`<figure>\`, caption, or attribution slot. This series would be **setting that
+   convention**, see the note in \`plans/57\`.
+
+---
+
+## 8. Open questions, ALL DECIDED 2026-08-08 (BAM)
+
+1. **Series title** → **"Here Be Dragons"**, for now. Myth-busted in lesson 1 of course 1.
+2. **Lesson count** → **full depth**, catalog norm. 88 lessons across the five courses.
+3. **Order** → **courses before the graph** (\`plans/57\`). And the science track's
+   \`02-how-we-know-whats-out-there\` does **not** need to be built first: \`wrong-for-good-reasons\`
+   ships on the §6 split without waiting on it. The two become mutual recommended prerequisites
+   whenever the science course lands.
+4. **Image convention** → **this series defines it.** See \`plans/58\` §3.
+
+**The build plan is \`plans/58-here-be-dragons-series.md\`.**`,
+    provenance: "plans/future-courses/culture/01-connections-to-the-catalog.md",
+  },
+  {
+    key: "culture-dinosaurs-dragons-giants",
+    title: "dinosaurs dragons giants",
+    group: "Culture",
+    summary: "I'd like to create a course series that investigates how humans understanding of their world has evovled.",
+    body: `I'd like to create a course series that investigates how humans understanding of their world has evovled.
+from flat earth, dragons, giants to dinosaurs, round earth, etc.
+I'd like to connect it to other courses. 
+I think there could be some fun English Language Arts lessons about how we write about our world.
+
+read:
+https://www.history.com/articles/fossils-interpretations-ancient-beliefs`,
+    provenance: "plans/future-courses/culture/dinosaurs-dragons-giants.md",
   },
   {
     key: "documentary-documenters-course-outline",
@@ -9893,20 +8020,12 @@ Once Civic Documentation exists, the True track continues:
     provenance: "plans/future-courses/documentary/01-list-of-documentary.md",
   },
   {
-    key: "drone-services-list-of-services-and-how-to",
-    title: "list of services and how to",
-    group: "Drone Services",
-    summary: "drone-services/list-of-services-and-how-to.md",
-    body: `drone-services/list-of-services-and-how-to.md
-
-- solar industry
-- roof inspections
-- accessor
-- construction
-- thermal sampling/testing
-- movie/tv show/corp videos
-- stadium`,
-    provenance: "plans/future-courses/drone-services/list-of-services-and-how-to.md",
+    key: "geneology-how-to-do-geneology-for-self-for-community",
+    title: "how to do geneology for self for community",
+    group: "Geneology",
+    summary: "Ive started building my family tree. As a person of African decent in the US, Ive faced many hurdles with records. build a course to help me face these…",
+    body: `Ive started building my family tree. As a person of African decent in the US, Ive faced many hurdles with records. build a course to help me face these challenges, anticipate new challenges and overcome them all.`,
+    provenance: "plans/future-courses/geneology/how-to-do-geneology-for-self-for-community.md",
   },
   {
     key: "he-did-the-work-list-of-men-that-did-the-work",
@@ -9932,6 +8051,112 @@ Molefi Kete Asante (/əˈsænteɪ/ ə-SAN-tay; born Arthur Lee Smith Jr.; August
 
 Asante advocates for Afrocentricity.[7][8] He is the author of more than 90 books and the founding editor of the Journal of Black Studies.[9][10] He is the father of author and filmmaker M. K. Asante.`,
     provenance: "plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md",
+  },
+  {
+    key: "health-certified-wellness-coach",
+    title: "certified wellness coach",
+    group: "Health",
+    summary: "I want to create a bundle/path that's comparable to the NASM certified wellness coach and other top tier certifications for myself to help me on my…",
+    body: `I want to create a bundle/path that's comparable to the NASM certified wellness coach and other top tier certifications for myself to help me on my centenarian journey to complement the cpt, cnc, ces, and mba certifications and degrees I have.
+
+here's link to NASM landing page:
+https://www.nasm.org/products/certified-wellness-coach
+---
+**Program plan (approved 2026-08-19):** \`plans/67-well-series-program.md\` (PDF beside it:
+\`plans/certified-wellness-coach-program.pdf\`). Research prompts: \`health/prompts.md\`; paste
+exports into \`health/dossiers/\`. Your task: \`plans/user-tasks/264-run-well-deep-research.md\`.
+Add YOUR wants below this line; they shape the WELL-99 capstone.`,
+    provenance: "plans/future-courses/health/certified-wellness-coach.md",
+  },
+  {
+    key: "health-prompts",
+    title: "WELL research prompts (paste-ready)",
+    group: "Health",
+    summary: "Copy the preamble, then ONE pillar prompt, into Perplexity (all eight) and optionally Gemini Deep Research (pillars 1, 2, 8). Save each full export into the…",
+    body: `# WELL research prompts (paste-ready)
+
+Copy the preamble, then ONE pillar prompt, into Perplexity (all eight) and optionally Gemini Deep Research (pillars 1, 2, 8). Save each full export into the matching file under dossiers/, section 1, with tool + date.
+
+## Preamble
+
+
+> You are researching for a university-rigor wellness-coaching curriculum written for a student
+> who already holds NASM CPT, CNC and CES certifications, so skip fitness and nutrition basics.
+> For every factual claim: give the PRIMARY source (peer-reviewed paper, official guideline, or
+> certifying body's own document) with a working URL, publication year, and where applicable the
+> effect size or dose-response. Separate SETTLED findings from CONTESTED ones and say who
+> contests them. Prefer meta-analyses, position stands, and official guidelines over blogs or
+> news. List every source at the end with URLs. Flag anything you could not source as unsourced
+> rather than asserting it.
+
+
+## Prompts
+
+
+1. **Orientation & scope.** "Map the wellness-coaching credential landscape: NBHWC board
+   certification (its published coaching competencies and program-approval requirements), NASM
+   CWC, ACE Health Coach, and ACLM lifestyle-medicine coaching. For each: governing body, scope
+   of practice, what it permits versus excludes, referral obligations. Include each body's own
+   scope-of-practice documents and any state-law constraints on coaching versus licensed
+   practice (dietetics, therapy)."
+2. **Coaching psychology.** "The evidence base for health-behavior-change coaching: the
+   transtheoretical model, self-determination theory, motivational interviewing (Miller and
+   Rollnick, canonical edition), habit formation (Lally and successors), implementation
+   intentions and WOOP (Gollwitzer, Oettingen), goal-setting theory, and coaching-outcome RCTs
+   and meta-analyses in health settings. Which techniques have replicated effects and which are
+   practitioner lore?"
+3. **Movement coaching.** "Evidence on coaching movement BEHAVIOR, not exercise science: the WHO
+   2020 physical-activity guidelines, sedentary-behavior evidence, step-count dose-response
+   meta-analyses, adherence interventions that actually work, and NEAT. What does the evidence
+   say changes long-term activity behavior?"
+4. **Nutrition coaching.** "Evidence on coaching EATING behavior within a non-prescriptive
+   scope: adherence-versus-diet-composition findings, food-environment effects, weight-neutral
+   versus weight-loss framings with their evidence and critiques, motivational approaches in
+   dietary RCTs, and the legal scope boundary with registered dietetics by jurisdiction."
+5. **Recovery & stress.** "Physical recovery and stress physiology for coaches: HRV as a
+   recovery and stress marker (validity and limits), allostatic load, deload and rest evidence,
+   breathwork RCTs with effect sizes, sauna and cold-exposure evidence graded honestly including
+   what is overclaimed, and stress-management interventions with measured outcomes."
+6. **Sleep.** "Sleep science for coaches: AASM and NSF duration guidelines and their evidence,
+   sleep architecture and circadian biology fundamentals, which sleep-hygiene components
+   actually have data, CBT-I effectiveness and why it is clinician scope, shift-work findings,
+   consumer sleep-tracker validity studies, and sleep-mortality dose-response."
+7. **Mental & emotional well-being.** "For a NON-therapist coach: stress and emotion-regulation
+   science, mindfulness and meditation meta-analyses with honest effect sizes and criticisms,
+   social connection and loneliness health outcomes (Holt-Lunstad and successors), PERMA and
+   well-being models and their evidence status, the coach-versus-therapist boundary literature,
+   and crisis-referral best practice (988 and equivalents)."
+8. **Longevity capstone.** "The centenarian and longevity evidence base: the hallmarks of aging
+   (Lopez-Otin and updates), VO2max, strength and muscle mass versus all-cause mortality
+   meta-analyses, sleep and social-connection mortality data, Blue Zones claims AND the
+   demographic critiques (Newman on age-record fraud), caloric restriction and fasting in
+   humans as it honestly stands, supplement claims sorted into strong, weak and no evidence,
+   and what actually replicates across cohorts."
+
+9. **Movement dose, intensity, and novel motor learning versus longevity** (dossier
+   \`08-movement-longevity\`; findings may seed a new WELL-07 course, decided after reading).
+   "Structure your answer as five separate sections, each with its OWN research and results; do
+   not blend them.
+   (1) Activity-minute dose-response: weekly moderate-to-vigorous activity minutes versus
+   all-cause mortality and healthspan, from accelerometer-based and self-report cohort
+   meta-analyses: the shape of the curve, the minimum effective dose, the 150-to-300-minute
+   guideline anchors, and where returns diminish or plateau.
+   (2) Intensity: moderate versus vigorous minutes at matched volume; vigorous-minute
+   dose-response; and VILPA, vigorous intermittent lifestyle physical activity: the cohort
+   findings on brief vigorous bouts scattered through ordinary days.
+   (3) Consumer wearable metrics, kept separate from the research metrics: how Garmin intensity
+   minutes, Apple exercise-ring minutes, and Fitbit active-zone minutes are computed; their
+   validation studies against accelerometry or heart-rate criteria; and how faithfully each maps
+   onto guideline MVPA and the mortality curves from sections 1 and 2.
+   (4) Learning NEW movements, as three fully independent sub-sections, each with its own
+   evidence and its own results: (4a) novel motor-skill learning, coordination training, and
+   dance versus cognitive aging and dementia risk; (4b) balance, agility, and novel-skill
+   training versus falls and functional independence in aging; (4c) movement variety and novelty
+   versus all-cause mortality DIRECTLY, beyond total dose, stating plainly if this literature is
+   thin or absent.
+   (5) Coaching translation: which findings above are strong enough to set client targets by,
+   and which remain contested."`,
+    provenance: "plans/future-courses/health/prompts.md",
   },
   {
     key: "mansa-gold-interview-prep",
@@ -11620,248 +9845,840 @@ Vigneri, M., & Holmes, R. (2009). *When being more productive still doesn't pay:
     provenance: "plans/future-courses/mansa-gold/03-women-in-cocoa-and-coffee.md",
   },
   {
-    key: "marketing-ebook-ai-course-creation",
-    title: "Building Courses With AI Without Embarrassing Yourself",
-    group: "Marketing",
-    summary: "A Learn.WitUS field guide. Draft for review.",
-    body: `# Building Courses With AI Without Embarrassing Yourself
+    key: "outdoors-kayaking-notes",
+    title: "kayaking notes",
+    group: "Outdoors",
+    summary: "I have a friend that's kayaking from Indiana to the Gulf of Mexico. I want to help them document it and promote it. Im a teacher and I want to create…",
+    body: `I have a friend that's kayaking from Indiana to the Gulf of Mexico. I want to help them document it and promote it. Im a teacher and I want to create lessons teaching high school students the skills they'll use on the trip and how they relate to the curriculum. I'll teach math, science, English, geography, social studies, economics, and other lessons . They'll camp, cook food, forage, hunt, etc on the trip. What am I missing and help me come of with a list of activities I can do in the class room and list of activities they'll actually do.
 
-### A working method from the people who had to fix it the hard way
+You’re already hitting a lot of rich curriculum connections; the big things to deliberately add are safety/navigation, environmental science and stewardship, fitness/nutrition, documentation/media, and reflection/SEL so the trip becomes a full “expedition” learning arc rather than just an adventure. Below is a structured list of classroom activities paired with what your friend can actually do on the river so students see the real‑world application. [susted](http://www.susted.com/wordpress/content/river-journey-art-led-place-based-experiential-environmental-education_2016_01/)
 
-*A Learn.WitUS field guide. Draft for review.*
+***
+
+## Big-picture framing
+
+You can treat this as an “expedition curriculum” similar to river-journey and Earth Systems Journey frameworks, where students follow a river from source to sea and connect ecology, economy, and community through hands-on and story-driven work. That aligns well with your existing cross-disciplinary commodity curriculum approach and accessible, story-led teaching style for teens. [horizons.govt](https://www.horizons.govt.nz/HRC/media/Media/Environmental%20Ed/River-Journey-Generic.pdf)
+
+Think of the class as the “expedition planning and mission control team” and your friend as the field researcher whose data, stories, and decisions feed back into the lessons. [nps](https://www.nps.gov/teachers/classrooms/big-river-journey.htm)
+
+***
+
+## What you might be missing
+
+Here are domains/skills to intentionally weave in:
+
+- **Safety & risk management**: PFDs, hypothermia, heat, lightning, river hazards (strainers, dams), trip plans, emergency communication. [govinfo](https://www.govinfo.gov/content/pkg/GOVPUB-D103-PURL-gpo53856/pdf/GOVPUB-D103-PURL-gpo53856.pdf)
+- **Navigation & logistics**: Reading river charts/maps, understanding “source to sea,” ports and locks, campsite selection, resupply planning. [gyanpankh](https://gyanpankh.com/journey-of-a-river/)
+- **Environmental science & stewardship**: Water quality, erosion and deposition, pollution sources, habitat and biodiversity, “leave no trace.” [horizons.govt](https://www.horizons.govt.nz/HRC/media/Media/Environmental%20Ed/River-Journey-Generic.pdf)
+- **Fitness & nutrition**: Training plan for paddling, energy expenditure, macronutrient needs over multiple days, sleep and recovery.
+- **Economics & civics**: River-based industries, benefits of living near water, trade along rivers, public vs private land, environmental policy. [growtoschool.co](https://www.growtoschool.co.uk/wp-content/uploads/2023/04/river-lesson-plans0323.pdf)
+- **Media, storytelling & data**: Travel journals, photos, social media, basic data logging (distance, speed, weather, wildlife) and simple analysis. [susted](http://www.susted.com/wordpress/content/river-journey-art-led-place-based-experiential-environmental-education_2016_01/)
+- **Social-emotional learning (SEL)**: Goal-setting, perseverance, teamwork, dealing with uncertainty and discomfort (storms, delays, mishaps). [middleweb](https://www.middleweb.com/18363/take-us-river/)
+
+***
+
+## Classroom activities by subject
+
+Use this as a menu; you don’t have to do everything. Each item is something you can run in class, often modeled on existing river-journey activities.
+
+| Subject | Classroom activity | How it connects to the trip |
+| --- | --- | --- |
+| Math | Have students estimate total trip distance and days using typical daily paddling ranges, then calculate average speed, daily mileage, and “buffer days” for weather or rest. [gyanpankh](https://gyanpankh.com/journey-of-a-river/) | Your friend records actual daily distance and time; students compare planned vs actual and discuss sources of error (wind, current, fatigue). |
+| Math | Build a simple budget: gear, food, permits, transport to start/end, contingency funds; track cost per mile and per day. [growtoschool.co](https://www.growtoschool.co.uk/wp-content/uploads/2023/04/river-lesson-plans0323.pdf) | Your friend keeps a real expense log; students analyze where the budget blew up or came in under. |
+| Science (Earth) | Run a sand/soil tray river simulation (tilt tray, pour water, watch erosion, meanders, deposition). Students modify slope, add “dams,” and predict outcomes. [scribd](https://www.scribd.com/document/935150337/Expereiential-Leanring) | Your friend photographs real river features (meanders, sandbars, cut banks) and notes where erosion/deposition are obvious. Students match their models to photos. |
+| Science (Environmental) | “Story of a River” pollution demo: start with a clear tub of water and add soil, plastic, “chemicals” as you narrate different land uses along a river. [riverdetectives.net](https://www.riverdetectives.net.au/wp-content/uploads/2017/03/RD-Manual-Story-of-a-River-Teachers-Section-APPROVED.pdf) | Your friend reports or films observable pollution (trash, industrial sites) and “clean” stretches; students discuss upstream sources and solutions. |
+| Science (Water quality) | Teach simple water-quality concepts (turbidity, pH, temperature); simulate testing with classroom kits or data from a local stream. [horizons.govt](https://www.horizons.govt.nz/HRC/media/Media/Environmental%20Ed/River-Journey-Generic.pdf) | If feasible, your friend uses a basic test kit a few times and sends results; students graph changes along the route. |
+| Geography | Use “source to sea” style lessons: students map the major rivers from Indiana down to the Gulf, mark confluences, dams, ports, cities, and ecoregions. [gyanpankh](https://gyanpankh.com/journey-of-a-river/) | Your friend shares GPS locations and photos; students update a big wall map in real time, tracking progress and features. |
+| Geography | Create physical or chalk “model rivers” on the school grounds or on a tarp/shower curtain, labeling source, tributaries, meanders, mouth, estuary. [growtoschool.co](https://www.growtoschool.co.uk/wp-content/uploads/2023/04/river-lesson-plans0323.pdf) | Students compare their models to satellite imagery/screenshots from your friend’s route. |
+| Social studies / history | Study river-centered civilizations and settlements: why towns, ports, and industries cluster along rivers; include Indigenous histories of key river regions. [growtoschool.co](https://www.growtoschool.co.uk/wp-content/uploads/2023/04/river-lesson-plans0323.pdf) | Your friend records impressions of different river towns and any history markers; students connect those to their research on culture and land use. |
+| Social studies / civics | Debate river management: dams, levees, floodplains, conservation vs development; hold a mock town meeting about building a new riverside facility. [nps](https://www.nps.gov/teachers/classrooms/big-river-journey.htm) | Your friend notes dams, levees, industries encountered; students role-play stakeholders (paddler, farmer, barge operator, wildlife advocate). |
+| Economics | Analyze “benefits of living near water” and river-based occupations (shipping, tourism, fishing, agriculture); connect to trade along major rivers. [growtoschool.co](https://www.growtoschool.co.uk/wp-content/uploads/2023/04/river-lesson-plans0323.pdf) | Your friend interviews or observes local businesses, marinas, anglers; students categorize them and infer economic dependence on the river. |
+| English / ELA | Have students keep a “River Diary” or travel journal from your friend’s perspective, from their own imagined perspective, or from the river’s voice. [susted](http://www.susted.com/wordpress/content/river-journey-art-led-place-based-experiential-environmental-education_2016_01/) | Your friend keeps an actual daily journal or audio notes; students compare their imagined entries to real ones and revise. |
+| English / ELA | Creative writing: “I Am a River” story or poem; write from the point of view of a fish, farmer, barge captain, or kayaker. [gyanpankh](https://gyanpankh.com/journey-of-a-river/) | Students later incorporate real trip events (storms, wildlife encounters) into second drafts, learning to revise with new information. |
+| English / ELA | Media literacy: analyze outdoor brand ads or expedition blogs; then students script short, ethical social media posts promoting the trip and river stewardship. [gyanpankh](https://gyanpankh.com/journey-of-a-river/) | Your friend films short clips on prompts students create; students edit captions/posts and reflect on responsible storytelling. |
+| PE / Health | Co-design a paddling training plan: cardio, strength (especially shoulders/core), mobility, recovery days; connect to heart rate zones and RPE. | Your friend shares snippets of their training and daily exertion (how hard each day felt); students compare plan vs reality. |
+| PE / Health | Nutrition planning: build a daily meal plan for high-output paddling days (macros, hydration, electrolytes) using simple, packable foods. | Your friend logs what they actually eat; students analyze gaps and propose healthier, more sustainable options. |
+| Science / Health | Discuss sleep, circadian rhythm, and recovery in outdoor settings; plan camp routines that support long-term performance. [middleweb](https://www.middleweb.com/18363/take-us-river/) | Your friend describes real camp routines and fatigue; students suggest evidence-based adjustments. |
+| Tech / Data / AI | Have students design a simple “expedition dashboard”: tables/graphs for distance, speed, weather, wildlife sightings, and moods. [susted](http://www.susted.com/wordpress/content/river-journey-art-led-place-based-experiential-environmental-education_2016_01/) | Your friend sends periodic data points; students update dashboards and look for patterns (e.g., speed vs wind, mood vs weather). |
+| Tech / Media | Storyboarding and shot lists: students plan what kinds of photos/video clips to capture (gear, camp, cooking, rapids, towns, wildlife). [susted](http://www.susted.com/wordpress/content/river-journey-art-led-place-based-experiential-environmental-education_2016_01/) | Your friend uses these shot lists; students later assemble a short documentary or highlight reel. |
+| Safety & planning | Use “Preparing for an Expedition” style activities: split class into teams (food, equipment, safety, transportation) and create checklists and contingency plans. [govinfo](https://www.govinfo.gov/content/pkg/GOVPUB-D103-PURL-gpo53856/pdf/GOVPUB-D103-PURL-gpo53856.pdf) | Students’ plans become a pre-trip checklist for your friend; any forgotten item becomes a powerful lesson. |
+| Safety & river skills | Run an “Imaginary River Trip” in the classroom: yarn boats, mock gear, scripted rapids and camp decisions, emphasizing cooperation and listening. [nps](https://www.nps.gov/teachers/classrooms/imaginary-river-trip.htm) | Students compare their imaginary decisions with actual choices your friend reports after challenging days. |
+| Art / Music | Create river collages, maps, and sensory art inspired by “River Journey” and “The River” packs (blue fabric, sounds, textures). Include a class “River Festival” of songs and stories. [gyanpankh](https://gyanpankh.com/journey-of-a-river/) | Your friend sends ambient audio or photos; students integrate them into art or a small river-themed exhibition. |
+| SEL / advisory | Use a “River of Learning” sketch: students choose a personal goal and draw their learning journey as a river with obstacles (dams), helpers (tributaries), and discoveries. [naturalcurriculum.co](https://www.naturalcurriculum.co.uk/new-class-activities/lesson-2/river-of-learning/) | They periodically update the sketch and compare with your friend’s progress and setbacks, discussing perseverance and adaptation. |
+
+***
+
+## Likely on-trip activities (for your friend)
+
+Here’s a realistic list of things your friend will actually do, which you can mirror or reference in class. Many align with how river journeys and rafting trips are used for experiential learning and stewardship. [nps](https://www.nps.gov/teachers/classrooms/big-river-journey.htm)
+
+- **Daily paddling and navigation**: Reading the river, choosing lines in current, avoiding hazards, scouting tricky sections. [middleweb](https://www.middleweb.com/18363/take-us-river/)
+- **Camp setup and breakdown**: Selecting safe sites, pitching shelter, organizing gear to stay dry, breaking camp efficiently. [middleweb](https://www.middleweb.com/18363/take-us-river/)
+- **Cooking and food management**: Planning and cooking simple meals on stoves or fires, managing food storage against wildlife and spoilage. [growtoschool.co](https://www.growtoschool.co.uk/wp-content/uploads/2023/04/river-lesson-plans0323.pdf)
+- **Water procurement and treatment**: Gathering river or other water sources, filtering/boiling as needed, managing hydration in heat. [horizons.govt](https://www.horizons.govt.nz/HRC/media/Media/Environmental%20Ed/River-Journey-Generic.pdf)
+- **Foraging and possibly hunting**: Identifying edible plants/animals where legal and safe, following regulations and ethical guidelines; balancing with packed food. [nps](https://www.nps.gov/teachers/classrooms/big-river-journey.htm)
+- **Safety routines**: Wearing PFD, monitoring weather, avoiding lightning and high flows, practicing self-rescue or assisted rescue in case of capsize. [nps](https://www.nps.gov/teachers/classrooms/imaginary-river-trip.htm)
+- **Route and logistics decisions**: Adjusting daily plan based on current, wind, fatigue, and resupply points; coordinating local transport when needed. [waterwayguide](https://www.waterwayguide.com/)
+- **Environmental observation and stewardship**: Noticing wildlife, vegetation zones, erosion, pollution; doing ad-hoc litter clean-ups in camps or rest spots. [riverdetectives.net](https://www.riverdetectives.net.au/wp-content/uploads/2017/03/RD-Manual-Story-of-a-River-Teachers-Section-APPROVED.pdf)
+- **Interaction with communities**: Stopping in towns, buying supplies, meeting locals, hearing stories about floods, industries, and river culture. [growtoschool.co](https://www.growtoschool.co.uk/wp-content/uploads/2023/04/river-lesson-plans0323.pdf)
+- **Journaling and media capture**: Writing daily reflections, recording short videos or audio logs, taking photos of notable places, people, and wildlife. [gyanpankh](https://gyanpankh.com/journey-of-a-river/)
+- **Self-care and recovery**: Managing soreness, minor injuries, sleep quality, mental ups and downs, and motivation over many days. [middleweb](https://www.middleweb.com/18363/take-us-river/)
+
+You can build explicit links by giving your friend simple “student-driven prompts” (e.g., “today, film your camp kitchen and tell us one thing you would change next time”) and then letting students analyze and respond to that material. [bamboozletheatre.co](https://bamboozletheatre.co.uk/wp-content/uploads/2023/03/The-River-Teachers-Companion-Pack.pdf)
+
+***
+
+## Classroom vs on-trip: pairing them clearly
+
+To make the connections obvious for high schoolers, you might:
+
+- Maintain a big classroom wall map and data board that you update whenever your friend sends location or log entries. [nps](https://www.nps.gov/teachers/classrooms/big-river-journey.htm)
+- Create “expedition roles” for students (navigation officer, quartermaster, communications/media, science lead, historian, economist) and let each role own related classroom tasks and questions for your friend. [govinfo](https://www.govinfo.gov/content/pkg/GOVPUB-D103-PURL-gpo53856/pdf/GOVPUB-D103-PURL-gpo53856.pdf)
+- Run pre-trip simulations (imaginary river trip, pollution story, sand-tray river) and then re-run or revisit them with real trip data and stories to compare expectations vs reality. [scribd](https://www.scribd.com/document/935150337/Expereiential-Leanring)
+
+If you’d like, next step I can help you turn this into a multi-week unit outline (episode-by-episode), with specific lesson objectives and simple assessment ideas that match your 6th-10th grade readability and cross-disciplinary style.
+
+turn this into a multi-week unit outline (episode-by-episode), with specific lesson objectives and simple assessment ideas that match your 6th-12th grade readability and cross-disciplinary style
+
+Here’s a 6‑week, 12‑episode “expedition” unit that you can flex shorter or longer depending on how long your friend is on the river. Each episode has simple objectives and low‑lift assessments that fit a 6th-12th grade range and your cross‑disciplinary style. [nps](https://www.nps.gov/teachers/classrooms/big-river-journey.htm)
+
+***
+
+## Unit overview
+
+- **Big idea**: Follow a real kayak journey from Indiana to the Gulf as an expedition, connecting river science, geography, history, economics, health, and storytelling. [kingswoodoxford](https://www.kingswoodoxford.org/news/river-of-learning/)
+- **Core products**: Expedition journal, river map & data dashboard, mini labs/demos, and a final story (video, podcast, or written narrative) answering “What story is the river telling?”. [susted](http://www.susted.com/wordpress/content/river-journey-art-led-place-based-experiential-environmental-education_2016_01/)
+- **Ongoing assessment**: Short reflection entries, exit tickets, and simple rubrics for participation, thinking, and communication rather than heavy tests. [ece.gov.nt](https://www.ece.gov.nt.ca/sites/ece/files/resources/big_river-teacher_guide_nwt_2021_english_version.pdf)
+
+You can sync episodes with real updates from your friend; if the trip slips, you still have a coherent classroom arc.
+
+***
+
+## Week 1, Expedition launch & route planning
+
+### Episode 1, Meet the river expedition
+
+**Focus**: Why this journey matters; what an expedition is.  
+**Subjects**: Social studies, English, SEL.
+
+- **Objectives (student‑friendly)**  
+  - Understand the basic plan: kayaking from Indiana to the Gulf and what that means in distance and time. [fw.ky](https://fw.ky.gov/education/documents/brtg3.pdf)
+  - Identify what makes something an “expedition” instead of just a trip (planning, data, purpose, story). [kingswoodoxford](https://www.kingswoodoxford.org/news/river-of-learning/)
+
+- **Classroom activities**  
+  - Show a simple slide or map of the planned route; ask students what questions they have about the journey and the rivers. [fw.ky](https://fw.ky.gov/education/documents/brtg3.pdf)
+  - Read a short “river journey” excerpt or article and discuss how the author turns a trip into a story. [susted](http://www.susted.com/wordpress/content/river-journey-art-led-place-based-experiential-environmental-education_2016_01/)
+
+- **Assessments**  
+  - Exit ticket: “One thing that excites me and one thing that worries me about a river expedition.”  
+  - Quick written response: “What would make this expedition meaningful to you or your community?”
+
+***
+
+### Episode 2, Map the route: source to sea
+
+**Focus**: Geography of rivers from headwaters to mouth.  
+**Subjects**: Geography, math, science.
+
+- **Objectives**  
+  - Locate major rivers and confluences from Indiana to the Gulf on a map. [fw.ky](https://fw.ky.gov/education/documents/brtg3.pdf)
+  - Describe basic river features: source, tributary, meander, floodplain, delta, mouth. [gyanpankh](https://gyanpankh.com/journey-of-a-river/)
+
+- **Classroom activities**  
+  - Large wall map: students trace a likely route (e.g., local rivers → Ohio → Mississippi → Gulf), marking towns, dams, and major bends. [nps](https://www.nps.gov/teachers/classrooms/distance-learning-opportunities.htm)
+  - Mini “journey of a river” lesson: students draw a simple diagram showing a river’s path from hills to sea. [twinkl](https://www.twinkl.com/resource/t3-g-18-raging-rivers-lesson-pack)
+
+- **Assessments**  
+  - Map check: students label at least five key places along the route and one feature (meander, delta, etc.) at each. [fw.ky](https://fw.ky.gov/education/documents/brtg3.pdf)
+  - Short matching quiz: terms (source, tributary, mouth) to simple definitions, written in plain language.
+
+***
+
+## Week 2, River science: water, erosion, and watersheds
+
+### Episode 3, Story of a watershed
+
+**Focus**: Where water comes from and where it goes.  
+**Subjects**: Science, geography, environmental studies.
+
+- **Objectives**  
+  - Explain that a watershed is all the land where water drains into the same river. [extension.usu](https://extension.usu.edu/utahnatureexplorers/lesson-plans/watersheds)
+  - Identify the classroom’s local watershed and connect it mentally to the route toward the Gulf. [fw.ky](https://fw.ky.gov/education/documents/brtg3.pdf)
+
+- **Classroom activities**  
+  - Simple watershed model on butcher paper or in a tray: students add hills, streams, and a main river, then “rain” with spray bottles to see flow patterns. [riverdetectives.net](https://www.riverdetectives.net.au/wp-content/uploads/2017/03/RD-Manual-Story-of-a-River-Teachers-Section-APPROVED.pdf)
+  - Use a state map to trace how water from your school area could reach the Gulf of Mexico. [fw.ky](https://fw.ky.gov/education/documents/brtg3.pdf)
+
+- **Assessments**  
+  - Students draw their own mini watershed sketch with arrows showing flow to a river.  
+  - 3‑question exit ticket: “What is a watershed? Why does it matter for this kayak trip? How does our school fit into one?” [riverdetectives.net](https://www.riverdetectives.net.au/wp-content/uploads/2017/03/RD-Manual-Story-of-a-River-Teachers-Section-APPROVED.pdf)
+
+***
+
+### Episode 4, Erosion, deposition, and river landforms
+
+**Focus**: How rivers shape the land.  
+**Subjects**: Science, geography, math.
+
+- **Objectives**  
+  - Describe erosion (wearing away), transport, and deposition (dropping off) in simple language. [teachwire](https://www.teachwire.net/teaching-resources/ks3-geography-lesson-plan-put-river-processes-and-land-formations-into-real-life-context/)
+  - Recognize features like sandbars, cut banks, and point bars from photos and simple diagrams. [growtoschool.co](https://www.growtoschool.co.uk/wp-content/uploads/2023/04/river-lesson-plans0323.pdf)
+
+- **Classroom activities**  
+  - Sand/soil tray lab: tilt a tray, pour water, and watch channels form; change slope or add obstacles and predict the effect. [scribd](https://www.scribd.com/document/935150337/Expereiential-Leanring)
+  - Compare tray patterns to photos of real river meanders and bars from online river-journey resources or your friend’s images later. [nps](https://www.nps.gov/teachers/classrooms/big-river-journey.htm)
+
+- **Assessments**  
+  - Lab sheet: students sketch their tray and label where erosion and deposition happened. [scribd](https://www.scribd.com/document/935150337/Expereiential-Leanring)
+  - Short written explanation: “How might erosion and sandbars change the kayak route and campsite choices?”
+
+***
+
+## Week 3, People, history, and economics along the river
+
+### Episode 5, Packing for a river trip (economics)
+
+**Focus**: Scarcity, trade‑offs, and decision-making.  
+**Subjects**: Economics, math, life skills.
+
+- **Objectives**  
+  - Explain scarcity using the idea that gear, money, and space on a kayak are limited. [downloads.journalofeconomicsteaching](http://downloads.journalofeconomicsteaching.org/2024/2024-10AppendixA.pdf)
+  - Make and defend choices about what to pack using simple economic reasoning (needs vs wants, opportunity cost). [downloads.journalofeconomicsteaching](http://downloads.journalofeconomicsteaching.org/2024/2024-10AppendixA.pdf)
+
+- **Classroom activities**  
+  - Use “Packing for a River Trip” style activity: students get a list of gear and a fixed “space” or budget and must choose what to take. [downloads.journalofeconomicsteaching](http://downloads.journalofeconomicsteaching.org/2024/2024-10AppendixA.pdf)
+  - Class debrief: groups explain why they packed certain items and what trade-offs they made.
+
+- **Assessments**  
+  - Completed packing plan grid or list with short rationales for three key items (“I chose X because…”). [downloads.journalofeconomicsteaching](http://downloads.journalofeconomicsteaching.org/2024/2024-10AppendixA.pdf)
+  - Reflection: “One thing I would sacrifice and one thing I would never sacrifice on this trip, and why.”
+
+***
+
+### Episode 6, Rivers, towns, and trade
+
+**Focus**: How rivers support communities and economies.  
+**Subjects**: Social studies, economics, geography.
+
+- **Objectives**  
+  - Describe at least three ways towns use rivers (shipping, recreation, fishing, farming, industry). [nps](https://www.nps.gov/teachers/classrooms/distance-learning-opportunities.htm)
+  - Explain one benefit and one challenge of living near a river (jobs, floods, pollution). [fw.ky](https://fw.ky.gov/education/documents/brtg3.pdf)
+
+- **Classroom activities**  
+  - Case study of a river town (could be somewhere on your friend’s route or from Mississippi/Connecticut River examples): read a short article and mark on the class map. [nps](https://www.nps.gov/teachers/classrooms/big-river-journey.htm)
+  - Simple role‑play: barge operator, farmer, kayaker, wildlife advocate each explain what they want from the river. [fw.ky](https://fw.ky.gov/education/documents/brtg3.pdf)
+
+- **Assessments**  
+  - “River town snapshot”: a one‑page profile (drawing + bullet points) showing who lives there, what they do, and how the river affects them. [nps](https://www.nps.gov/teachers/classrooms/big-river-journey.htm)
+  - Exit ticket: “How does this kayak journey depend on river towns?”
+
+***
+
+## Week 4, Safety, health, and fitness
+
+### Episode 7, Risk & safety on the river
+
+**Focus**: Hazards and safety planning.  
+**Subjects**: Science, health, social studies.
+
+- **Objectives**  
+  - Identify key river hazards: strong current, strainers (fallen trees), dams, lightning, hypothermia/heat. [nps](https://www.nps.gov/teachers/classrooms/imaginary-river-trip.htm)
+  - Explain why safety gear (PFD, whistle, helmet, first aid kit) and a trip plan are needed. [clearinghouse.starnetlibraries](https://clearinghouse.starnetlibraries.org/167-we-are-water)
+
+- **Classroom activities**  
+  - “Imaginary River Trip” adapted for older students: students sit in “boats” and you narrate scenarios, pausing for them to choose safety responses. [clearinghouse.starnetlibraries](https://clearinghouse.starnetlibraries.org/earth-science/612-imaginary-river-trip.html)
+  - Groups design a simple safety checklist for your friend before launch (weather check, gear check, communication plan). [govinfo](https://www.govinfo.gov/content/pkg/GOVPUB-D103-PURL-gpo53856/pdf/GOVPUB-D103-PURL-gpo53856.pdf)
+
+- **Assessments**  
+  - Safety checklist turned in as a practical artifact; you can send a combined version to your friend.  
+  - Short scenario quiz: “What would you do if…?” multiple-choice or simple written responses.
+
+***
+
+### Episode 8, Training, food, and recovery
+
+**Focus**: Physical preparation and on-trip health.  
+**Subjects**: Health, PE, science.
+
+- **Objectives**  
+  - Outline a basic training plan for paddling days using simple terms (cardio, strength, stretching).
+  - Plan a simple daily menu that supports long paddling days (balanced meals, hydration).
+
+- **Classroom activities**  
+  - Students design a 1‑week training schedule for your friend with activities they know (walking, push‑ups, mobility drills), keeping language simple.
+  - Nutrition activity: choose packable foods and build a day’s meals, then discuss what’s missing (e.g., fresh produce, electrolytes).
+
+- **Assessments**  
+  - Training plan: graded on clarity and realism, not perfection (can be checklist or table).  
+  - Food log comparison later: students compare their plan to what your friend actually eats and write a short critique.
+
+***
+
+## Week 5, Data, mapping, and media
+
+### Episode 9, Expedition data dashboard
+
+**Focus**: Numbers and patterns from the journey.  
+**Subjects**: Math, science, tech.
+
+- **Objectives**  
+  - Record simple daily data from the expedition: distance, time, weather, mood. [naturalcurriculum.co](https://www.naturalcurriculum.co.uk/new-class-activities/lesson-2/river-of-learning/)
+  - Create a basic graph or table to show change over time (distance vs day, mood vs weather). [nps](https://www.nps.gov/teachers/classrooms/distance-learning-opportunities.htm)
+
+- **Classroom activities**  
+  - Build a class spreadsheet or paper chart; each update from your friend becomes a new row: date, river section, distance, hours paddled, short note. [nps](https://www.nps.gov/teachers/classrooms/distance-learning-opportunities.htm)
+  - Students make one graph (bar or line) from the data and interpret what they see in plain language. [nps](https://www.nps.gov/teachers/classrooms/distance-learning-opportunities.htm)
+
+- **Assessments**  
+  - Graph with caption: “What this graph shows about the journey so far.”  
+  - Exit ticket: “One pattern I noticed and one question I have about the data.”
+
+***
+
+### Episode 10, Journals and storyboards
+
+**Focus**: Turning experience into story.  
+**Subjects**: English, media, art.
+
+- **Objectives**  
+  - Write clear journal entries from different perspectives (kayaker, river, town resident). [gyanpankh](https://gyanpankh.com/journey-of-a-river/)
+  - Plan a simple storyboard for a short video or podcast episode about one part of the journey. [bamboozletheatre.co](https://bamboozletheatre.co.uk/wp-content/uploads/2023/03/The-River-Teachers-Companion-Pack.pdf)
+
+- **Classroom activities**  
+  - Students keep a “mirrored journal”: they write as if they are on the river, then later compare with your friend’s real notes or clips. [kingswoodoxford](https://www.kingswoodoxford.org/news/river-of-learning/)
+  - Storyboarding session: pick a specific day or theme (first big storm, quiet sunrise, meeting locals) and sketch 6-8 frames or podcast beats. [bamboozletheatre.co](https://bamboozletheatre.co.uk/wp-content/uploads/2023/03/The-River-Teachers-Companion-Pack.pdf)
+
+- **Assessments**  
+  - Rubric for journal entries focusing on clarity, detail, and connection to river concepts, not fancy vocabulary.  
+  - Completed storyboard that could realistically be filmed or recorded by your friend or by the class.
+
+***
+
+## Week 6, Synthesis & final projects
+
+### Episode 11, What story is the river telling?
+
+**Focus**: Integrating science, history, economics, and personal experience.  
+**Subjects**: English, social studies, science.
+
+- **Objectives**  
+  - Summarize what students have learned about the river’s physical, ecological, and human stories. [kingswoodoxford](https://www.kingswoodoxford.org/news/river-of-learning/)
+  - Choose a medium (writing, audio, video, art) to express the river’s story in their own words. [kingswoodoxford](https://www.kingswoodoxford.org/news/river-of-learning/)
+
+- **Classroom activities**  
+  - Small-group discussion: “How has this river shaped land, towns, and people, including our kayaker?” using prompts drawn from earlier episodes. [kingswoodoxford](https://www.kingswoodoxford.org/news/river-of-learning/)
+  - Students plan their final piece: outline, script, or art plan with a clear message (e.g., “Our river is powerful and fragile”). [kingswoodoxford](https://www.kingswoodoxford.org/news/river-of-learning/)
+
+- **Assessments**  
+  - Draft + teacher or peer feedback using a simple checklist (clear main idea, at least three specific details, connection to trip).  
+  - Short self‑assessment: students rate how confident they feel about understanding rivers and why.
+
+***
+
+### Episode 12, Expedition showcase
+
+**Focus**: Sharing learning with an audience.  
+**Subjects**: All, plus public speaking.
+
+- **Objectives**  
+  - Present their river story or data project to peers, families, or online audience. [kingswoodoxford](https://www.kingswoodoxford.org/news/river-of-learning/)
+  - Reflect on how real‑world journeys can deepen classroom learning and vice versa. [nps](https://www.nps.gov/teachers/classrooms/distance-learning-opportunities.htm)
+
+- **Classroom activities**  
+  - Host a “River Night” or in‑class showcase: maps, graphs, journals, art, and final videos/podcasts are displayed or performed. [kingswoodoxford](https://www.kingswoodoxford.org/news/river-of-learning/)
+  - If possible, live call or recorded message from your friend reflecting on the trip and responding to student questions.
+
+- **Assessments**  
+  - Simple presentation rubric: eye contact or audio clarity, organization, and connection to unit themes.  
+  - Final reflection: “What did I learn about rivers, and what did I learn about myself?”
+
+***
+
+## How to adapt for 6th-12th grade
+
+- For younger or lower‑level readers, keep texts short, use visuals, and focus on concrete examples and simple sentence structures. [ece.gov.nt](https://www.ece.gov.nt.ca/sites/ece/files/resources/big_river-teacher_guide_nwt_2021_english_version.pdf)
+- For older or more advanced students, deepen the same episodes with more complex texts (e.g., historical documents, policy debates, longer data sets) while keeping the objectives clear and language direct. [teachwire](https://www.teachwire.net/teaching-resources/ks3-geography-lesson-plan-put-river-processes-and-land-formations-into-real-life-context/)
+
+If you’d like, I can next help you turn this into a slide-based “episode bible” for your course-one slide per episode with objectives, activities, and prompts ready to teach.
+
+Please review the course authoring docs attached. This is what I use to guide me when building lessons, curriculum. Use it. How does that change your outline and what you created so far?
+
+It mostly changes *how* we write and assess each episode, not the big arc itself: the 6‑week structure still works, but each “episode” should become one tight, audio‑first lesson with a single can‑do outcome, built around recall, a concrete hook, plain language teaching, and a short application check. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/a2314817-983b-447d-a423-c345aceb7b02/GUIDE-01-course-authoring-guide.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=b7gSRhumGFZ%2FODjBVEMXW4A33Ww%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+Below is how I’d adapt what we have so far to your authoring standards.
+
+***
+
+## High-level changes to the unit
+
+**1. One clear can‑do per episode**  
+Your guides push “sharp learning outcomes (one can‑do per lesson)” and “one concept, one can‑do goal, about eight minutes.” That means: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+- Treat each **episode** as a single concept: e.g., “Read a river map and trace a route from Indiana to the Gulf” rather than a grab‑bag of skills.  
+- Where an episode tried to do two unrelated things (e.g., watershed + erosion), we split it into two short lessons or mark one as a follow‑up.
+
+**2. Audio‑first scripting and plain language**  
+Every episode becomes a script that can stand alone as audio: short sentences, concrete words, no “as you can see,” and no rare words when a common word works. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/a2314817-983b-447d-a423-c345aceb7b02/GUIDE-01-course-authoring-guide.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=b7gSRhumGFZ%2FODjBVEMXW4A33Ww%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+- We keep the existing activities, but the *lesson script* now follows your \`[RECALL] → [HOOK] → [TEACH] → [PICTURE] → [ON THE TEST] → [CHECK] → Key Takeaways\` pattern. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/a2314817-983b-447d-a423-c345aceb7b02/GUIDE-01-course-authoring-guide.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=b7gSRhumGFZ%2FODjBVEMXW4A33Ww%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+- Visuals (maps, trays, figures) are referenced in words and optionally in a companion figure lesson, not assumed on screen. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/a2314817-983b-447d-a423-c345aceb7b02/GUIDE-01-course-authoring-guide.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=b7gSRhumGFZ%2FODjBVEMXW4A33Ww%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+**3. Retrieval at open and close, plus more low‑stakes checks**  
+You want retrieval practice as the “default mechanic,” with low‑stakes, frequent checks and explanations of wrong answers. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+- Each episode opens with 1-2 quick recall questions about the *previous* episode and ends with 1-2 short “check” questions tied to the key takeaways.  
+- Assessments I suggested (exit tickets, mini quizzes, small products) become structured retrieval prompts, not just reflections. We explicitly explain why correct answers are right and why the common wrong ideas are wrong. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+**4. Concrete hooks and stories tied to the core**  
+Your guides stress “find the core,” “concrete before abstract,” and “one vivid, real example that sets up the idea.” [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+- Each episode now has a single, concrete, story‑driven hook: a short scene from your friend’s trip, an imagined hazard, or a real river town scenario, rather than a diffuse intro.  
+- The hook is always tied directly to the one can‑do outcome (“By the end, you can…”), so students know why it matters.
+
+**5. Scenario-based and “evaluate-then-decide” assessments**  
+Instead of only traditional quizzes, we fold in your “scenario challenge: evaluate then decide” pattern, even at a light level. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+- For safety, planning, economics, and civics episodes, checks become short scenarios: “Here is the situation. First, evaluate it. Then, decide what you would do.”  
+- Rubrics stay simple but separate evaluation (did they see the key factors?) from decision (did they choose a reasonable action?). [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+**6. Spacing, interleaving, and reviews**  
+Your evidence-based guide emphasizes spaced review, interleaving, and cumulative touch‑backs. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+- Once per week, we insert a short “review” mini‑episode that resurfaces 1-2 facts from each earlier module (e.g., recall watershed when doing town economics, recall safety when doing training). [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+- Quizzes and checks can mix topics lightly, so students see patterns across science, geography, and economics rather than in silos.
+
+***
+
+## Updated unit spine and questions
+
+Your course-design guide wants the whole unit framed as questions it answers and “state the unity in one sentence.” [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+- **Unit spine (one sentence)**:  
+  “How does a river journey from Indiana to the Gulf shape land, communities, and the people who travel it?”
+
+- **Module‑level questions** (one per week):  
+  - Week 1: “Where does our water go, and what makes this a true expedition?”  
+  - Week 2: “How do rivers shape land and collect everything we put on the ground?”  
+  - Week 3: “How do rivers support towns, jobs, and hard choices about resources?”  
+  - Week 4: “How do you keep a human body safe, fueled, and ready for a long river push?”  
+  - Week 5: “What can data and journals tell us about a journey we are not on?”  
+  - Week 6: “What story is this river telling us, and how do we tell it back?”
+
+Each episode’s single can‑do outcome answers part of its module question, which keeps the unit coherent.
+
+***
+
+## Episode pattern (how a typical lesson changes)
+
+Here is how one episode would look once you apply your script template. I will adapt your **Episode 2, Map the route: source to sea** as an example.
+
+### Revised Episode 2, Map the route: source to sea
+
+- **Goal (can‑do)**:  
+  “After this lesson, you can trace a kayak route from Indiana to the Gulf of Mexico on a simple map and point out the major rivers on the way.”
+
+**[RECALL]**  
+- “Last time, you heard the big plan for the expedition. Two quick questions.  
+  1. What is one reason this trip counts as an ‘expedition,’ not just a vacation?  
+  2. What is one question you still have about the journey?”
+
+(Beat for thinking and answers, modeling retrieval.) [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/a2314817-983b-447d-a423-c345aceb7b02/GUIDE-01-course-authoring-guide.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=b7gSRhumGFZ%2FODjBVEMXW4A33Ww%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+**[HOOK]**  
+- Short story: “Imagine you wake up in a tent in Indiana, walk to the river, and push your kayak into the water. You know the Gulf is far away, but right now all you see is one bend in front of you. How do you know you are even pointed the right way?”
+
+**[TEACH]**  
+- Plain-English explanation first: river as a path downhill, then the official terms “source” and “mouth” in parentheses once, then back to plain words. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/a2314817-983b-447d-a423-c345aceb7b02/GUIDE-01-course-authoring-guide.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=b7gSRhumGFZ%2FODjBVEMXW4A33Ww%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+- Step‑by‑step: start in Indiana, follow the first river on the map to a bigger river, then to the Mississippi, then to the Gulf. One new idea at a time. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+**[PICTURE]**  
+- Word picture of the map: “Picture a tree. Indiana is on one of the branches. The Mississippi is the trunk. The Gulf is the ground where the trunk ends.”  
+- You can also show an actual map as a companion figure lesson, but the audio paints it in words. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/a2314817-983b-447d-a423-c345aceb7b02/GUIDE-01-course-authoring-guide.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=b7gSRhumGFZ%2FODjBVEMXW4A33Ww%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+**[ON THE TEST]**  
+- “If this showed up on a quiz, it might sound like: ‘Which path takes you from Indiana to the Gulf of Mexico by river?’ The trap answers might jump to an ocean too early or skip the Mississippi. We will practice spotting that.”
+
+**[CHECK]**  
+- Two quick questions:  
+  1. “Name two rivers our kayaker will probably travel on between Indiana and the Gulf.”  
+  2. “Point on your paper map from Indiana to the Gulf in one smooth line. What are the big ‘jumps’ between rivers you had to make?”  
+- Then short explanations: why those rivers matter, what common mistakes look like.
+
+**Key Takeaways**  
+- One bullet per core idea, three to five bullets max, written in plain language; these map directly to quiz items, per your rule. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/a2314817-983b-447d-a423-c345aceb7b02/GUIDE-01-course-authoring-guide.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=b7gSRhumGFZ%2FODjBVEMXW4A33Ww%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+Assessments I described before (map labeling, short written explanations) plug into \`[CHECK]\` and the quiz that follows this episode.
+
+***
+
+## Other concrete tweaks to the outline
+
+**1. Split combined concepts into separate micro-lessons**
+
+Where the old outline grouped:
+
+- “Watershed” and “erosion/deposition” into one week,  
+- “Risk & safety” and “Training/food” all under one umbrella,
+
+you will want:
+
+- One lesson: “Define a watershed and show how water from our school reaches the Gulf.”  
+- One lesson: “Show how a river erodes and deposits material using a tray model.”  
+- One lesson: “Name three river hazards and describe one safe response to each.”  
+- One lesson: “Draft a simple training and food plan for a long paddling day.”
+
+Each is about an eight‑minute audio script with its own recall and check. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/a2314817-983b-447d-a423-c345aceb7b02/GUIDE-01-course-authoring-guide.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=b7gSRhumGFZ%2FODjBVEMXW4A33Ww%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+**2. Make all assessments application‑first**
+
+For example:
+
+- **Packing for a river trip** becomes a formal “evaluate‑then‑decide” scenario: students see a gear list and constraints, then must first evaluate (What is essential? What is optional?) before deciding what to pack, with a simple rubric. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+- **Safety episode** uses short case vignettes: “The forecast changes to thunderstorms at 3 p.m. and you are still five miles from camp. What are your options? Which one is safest and why?” [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+**3. Build in cumulative review points**
+
+At the end of each week, add a brief review lesson:
+
+- “After this lesson, you can name one thing you learned about watersheds, one thing about erosion, and one thing about how towns use rivers.”  
+- This hits your “cumulative reviews resurface one or two facts from each earlier module” checklist item. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/63ea04a5-3d96-4d17-b8e2-c14087fea5f2/GUIDE-03-evidence-based-course-design.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=zlvCysOy17V7lZ7SX84pU3cO9co%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+***
+
+## What stays the same
+
+- Cross‑disciplinary scope (math, science, English, geography, social studies, economics) and the overall 6‑week arc still fit your framework.  
+- The big classroom vs on‑trip activity pairings still work; we are mostly tightening outcomes, sequencing, and assessment patterns to match your authoring guide. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/49392625/a2314817-983b-447d-a423-c345aceb7b02/GUIDE-01-course-authoring-guide.md?AWSAccessKeyId=ASIA2F3EMEYE4HMDG4SI&Signature=b7gSRhumGFZ%2FODjBVEMXW4A33Ww%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEF8aCXVzLWVhc3QtMSJHMEUCIHzY2GbmSJS7babvxbdER%2BXuovHCKY1DBBAh6UxGXGTtAiEAjlff%2F0rAYykcYW%2BZ%2FV%2FtNjnIYjHz1ZKwpHt4hk7kVa4q8wQIKBABGgw2OTk3NTMzMDk3MDUiDJu%2FoK1ZHp%2BLjej9OSrQBNc2YdBPaQw%2BGbFA8Rbm9HMDkb3Sxma%2F4qxRpGPfZ8XraBWcNThnr4wEZGkpZuNxRFA80Z481yGbTbFbVtD3a0MZAKERtu%2F8Lt6vJ7WYcvb07l%2B9Rc2XonYLGEpgf8LIRmcXfL6XZ8F6M6eqHKHRiQAPxEhaq6Wk%2FCXoIuChi8Vtm05oTIfa5gCTbXTP7dpPWKstgm6V%2FABo76B%2Fk%2F42%2BWRx1L4vGMWiZI21L8lDAas%2FLtbd8CVjEBZ%2BeVLE8knS9Xb1fciydDKWJZHs%2Fk%2Bl6ZQeWal6erMS1d89mlNWd7ERAajGpSxCs2y5LqmxiUg0Kn6nFwhbpALF9Oq4%2B2nAEV6wRCiX7GJYeAbr%2BmNL9wnRi1eVlcre7x7K818ydMo74Jr9O1NyTwLlMDkWp4ViL02GzjczvhhjIsaFJzDU4XS7NU4HLVg2u7wJvPShAGLuMbyLEfNSTAfqMFVCT0W9N3SRCxHxxHSGYXQM7hOk0MJb7qQMN%2Fysa2UJj5OQPgfiqmWUJbYqNICVfsnk5slwHQ3ORYocE2rP41MsrrO8KDnG6yC1tk96%2FU2J%2Fdqv0eeFSGgRLdDHyNv5PBHQYjAaruxODdAg7gjFsZg7rIjpAYGEkEgYTjPfxYQ1uByWsksZdmfjChnuIWDFpArwJVTn2JFg4X1eEb7adOIcP9UJOsDxI9vzqbQqIw%2FI3AVYLkzvxabr2WQOVhw5yon0Cmu4Fgjmcq%2BNBfsZDPXSEuxSRle%2FoyHUDDnriDnLzQIerKKR4iXPFobm1%2FwojHfiPxnE7rkwqZPN0wY6mAG1mt0oNHaCl2LFk8%2BW7VqNOmWWCfUDgeVJpYfnihcoR10rDOMgV%2BpD7K%2BByQ%2Fk4YRgpG4svnlXpBk8sqw4tU82kbyn63GcBYtEjO0U5AEpiJWJs6LOo2xt66AmLrE7ZdsYxzILDolGZ4opV2nUY4dQ003llVR6XitF85VJA1tleog67LvJ%2FYzIIQ0apGGdSPQ9%2FkdpJ9TPbg%3D%3D&Expires=1785943932)
+
+If you want, the next step can be: I take the full 12‑episode outline and rewrite all episodes into your exact script template (title, Goal, [RECALL]/[HOOK]/[TEACH]/[PICTURE]/[ON THE TEST]/[CHECK]/Key Takeaways), ready to drop into your LMS as text lessons.`,
+    provenance: "plans/future-courses/outdoors/kayaking-notes.md",
+  },
+  {
+    key: "outdoors-kayaking",
+    title: "kayaking",
+    group: "Outdoors",
+    summary: "working with a group that's kayaking from Indiana to Gulf of Mexico.",
+    body: `working with a group that's kayaking from Indiana to Gulf of Mexico.`,
+    provenance: "plans/future-courses/outdoors/kayaking.md",
+  },
+  {
+    key: "outdoors-river-expedition-field-collection-guide",
+    title: "River Expedition Field Collection Guide",
+    group: "Outdoors",
+    summary: "For the paddling team · Indiana to the Gulf of Mexico · Spring",
+    body: `# River Expedition Field Collection Guide
+
+**For the paddling team · Indiana to the Gulf of Mexico · Spring**
+
+This is the list of things worth bringing back, what each one is worth, what each one costs you, and
+how to capture it so it is actually usable. It exists because a curriculum can only teach what you
+manage to send home.
+
+**Read this once before you launch and once at your first resupply. Nothing else.**
 
 ---
 
-## Who this is for
+## How to read the scores
 
-You can now produce a forty-lesson course in an afternoon. That is genuinely new, and it is not the
-hard part.
+Every item is scored on two five-point scales.
 
-The hard part is that the same tool which makes production nearly free makes **trust nearly
-worthless**. When anyone can generate a syllabus, a syllabus proves nothing. When anyone can generate
-a citation, a citation proves nothing either. What is scarce now is not content. It is the ability to
-say, credibly, that what you wrote is true.
+**VALUE**, how much curriculum it unlocks.
+\`5\` = a whole lesson depends on it · \`3\` = enriches several lessons · \`1\` = nice to have.
 
-This guide is the method one catalogue uses to make that claim. It is not theory. Every rule in it
-exists because something went wrong first, and the failures are named.
+**EFFORT**, what it costs you on a hard day.
+\`1\` = you barely notice · \`3\` = a deliberate ten minutes · \`5\` = it reshapes your day.
 
----
+**RATIO** is value divided by effort. **Anything at 2.0 or above, do without thinking about it.**
 
-## Part 1: The four ways AI-built courses fail
+### The one rule that matters more than any item on this list
 
-Not "AI is unreliable." Specific, recurring, and each with a specific fix.
+**On a bad day, do Tier 1 and nothing else.** A team that burns out on documentation in week two
+sends nothing for the remaining ten weeks. Consistency beats ambition every single time. Six weeks of
+a boring daily number is worth more to us than one spectacular film and then silence.
 
-### 1. The citation that does not exist
+### The second rule: connectivity will not cooperate
 
-The famous one, and the least interesting, because everybody already fears it. A model will produce a
-plausible author, a plausible journal, a plausible year, and a DOI that resolves to nothing.
-
-**But the version that actually gets published is subtler.** The source exists. The author is real.
-The paper is real. It simply does not say what the lesson claims it says. No link checker catches
-that. No spell check catches it. A reader who trusts you never catches it, which is the problem.
-
-### 2. The quiz that can be passed without reading
-
-Two tells, and they are mechanical.
-
-**Position.** An author writes the correct answer first and pads three distractors after it. Do that
-across a bank and a learner can score full marks by clicking the first option every time, having read
-nothing.
-
-**Length.** More insidious, and it survives shuffling. The correct answer is the one the author cared
-about, so it collects the qualifier, the date and the "because" clause, while the distractors stay
-short. The learner clicks the longest option and passes.
-
-We measured this. One freshly written bank scored **88 percent** for the strategy "always pick the
-longest option, never read the question." Another scored 72. These were written carefully, by
-someone trying not to do it.
-
-**Why it matters beyond the quiz:** every dashboard average, every completion statistic, every claim
-about learning outcomes is computed from those scores. A quiz that measures test-taking rather than
-learning does not just fail the learner. It corrupts everything downstream that cites it.
-
-### 3. The hedge that ships forever
-
-You write: *"Verify the current rules before relying on this."*
-
-That sentence is honest. It is also completely unactionable. Nobody keeps a list of them. Nothing
-records whether anyone ever looked. The hedge ships to learners, and it is still there two years
-later, in a lesson that has been read three thousand times.
-
-The failure is not the hedge. Hedging is correct when you are uncertain. The failure is that the
-hedge has nowhere to go.
-
-### 4. The claim that rots
-
-You align a course to an academic standard, or you state a fee cap, or you cite a statute. All true
-on the day you wrote it.
-
-Then you cut a lesson. The standard you claimed is now evidenced by nothing. Or the statute is
-amended. Or the programme closes. **Nothing in your process notices**, because the course still
-builds, the links still resolve, and the page still renders.
-
-A wrong standard shown to a teacher is worse than a missing one. A stale statute shown to someone
-starting a business can put them on the wrong side of a consumer protection law.
+Signal on the Lower Mississippi is unreliable and there are long stretches with none. **Assume you
+are batching everything to a resupply town.** Capture locally, back up locally, upload when you can.
+Nothing in the curriculum is built to require a nightly upload.
 
 ---
 
-## Part 2: The method
+## Tier 1, do these every single day
 
-### Rule 1: Automate production, never automate judgment
+| # | What | Value | Effort | Ratio |
+|---|---|---|---|---|
+| 1 | GPS track or one position ping | 5 | 1 | **5.0** |
+| 2 | The daily numbers | 5 | 1 | **5.0** |
+| 3 | A 30-second audio note | 5 | 1 | **5.0** |
+| 4 | One photo to a prompt | 4 | 1 | **4.0** |
+| 5 | One trash count at camp | 3 | 1 | **3.0** |
 
-The split that works:
+### 1 · GPS track or position ping, value 5, effort 1
 
-| Give to the machine | Keep for a person |
-| --- | --- |
-| Drafting prose from an outline | Deciding what the course claims |
-| Restructuring, tightening, reformatting | Deciding whether a source supports a claim |
-| Generating distractors for a question | Deciding whether the question is worth asking |
-| Finding candidate sources | Reading them |
-| Catching mechanical defects at scale | Deciding what counts as a defect |
+**Why it is first.** It drives the live map students follow, the planned-versus-actual distance
+lesson, and the placement of every 360 stop later. If you do one thing, do this.
 
-The line is not "hard versus easy." It is **reversible versus not**. A badly worded paragraph is
-fixed in a minute by anyone who notices. A fabricated citation is repeated by learners for years and
-is fixed by nobody, because nobody knows it is there.
+**How to do it right**
+- One fix at camp each night is enough. A full day track is better, not required.
+- **Record the position even on a day you go nowhere.** A zero-mile day is data, and it is the
+  honest part of the story.
+- Note the time zone once and then never change how you write it.
+- A satellite messenger beats a phone here, it works where there is no signal, which is most of it.
 
-### Rule 2: Make correctness structural, not remembered
+**The mistake to avoid:** sending a place *name* instead of coordinates. Names are ambiguous;
+coordinates are not.
 
-Any rule that depends on remembering will be broken the week you are busy. The fix is to make the
-correct thing the *easy* thing and the incorrect thing *fail loudly*.
+### 2 · The daily numbers, value 5, effort 1
 
-In practice that means automated guards that run on every build. Not as bureaucracy: as the thing
-that catches you.
+**Capture, in one line, in the same order every day:**
+\`date · miles · hours on water · wind (direction + rough speed) · air temp · water temp · weather\`
 
-**The guards that earn their keep**, in rough order of how much they have caught:
+**How to do it right**
+- **Same format every day, even when a field is blank.** Write \`, \` rather than skipping it. A
+  consistent line is a dataset; an inconsistent one is a chore for somebody later.
+- Estimates are fine. Say they are estimates.
+- Write it before you eat, not after. Nobody writes it after.
 
-- **Answer-position balance.** Fails a bank that parks most correct answers at one index without
-  shuffling.
-- **Answer-length balance.** Scores the "always pick the longest" strategy and fails a bank where it
-  beats guessing by a wide margin. This is the one that catches careful authors.
-- **Widget fit.** Fails an explanation that names a screen position ("the first option is wrong")
-  when options are shuffled, and a typed fill-in whose only accepted answer is a bare number, which
-  is closed-set recall that multiple choice tests better.
-- **Self-check integrity.** Fails a check-yourself card that is malformed, has a placeholder answer,
-  or whose answer restates the question. Each of those renders as dead prose and silently grades
-  nothing, so the failure is invisible in the app.
-- **Coverage ratchets.** Every course must either carry a standards alignment or an explicit one-line
-  reason it has none. Same for citations. The list of exceptions may shrink and may not grow
-  casually.
+**The mistake to avoid:** filling in a number you did not measure. A blank is data. A guess dressed
+as a measurement is the one thing that makes the whole log untrustworthy.
 
-**The ratchet is the important shape.** A guard that fails 35 existing problems gets switched off
-within a week. A guard that grandfathers what exists, refuses to let it get worse, and fails anything
-NEW makes the decision explicit at the moment a course ships. Map it, or say in one line why not.
+### 3 · A 30-second audio note, value 5, effort 1
 
-### Rule 3: Writing a citation is not verifying it
+**Why audio and not video.** It survives rain, low battery and exhaustion. It records what you
+actually thought, not what you performed. And this catalog's lessons are audio-first, so it drops
+straight in.
 
-This is the rule that costs the most and matters the most.
+**How to do it right**
+- Talk into the phone at arm's length, back to the wind. Wind noise is the only thing that ruins it.
+- Say the date and where you are first. Every time.
+- **Answer one question: what happened today that you did not expect?**
+- Do not re-record. The first take is the honest one.
 
-**The author is the worst person to check their own sources.** They already believe them. They wrote
-the sentence because they thought it was true, and re-reading it confirms exactly that.
+### 4 · One photo to a prompt, value 4, effort 1
 
-So verification is a separate act, done by a different person, against three questions:
+One frame a day, answering a prompt we send ahead. Rotating prompts: *today's water · today's
+horizon · what surprised you · what is man-made here · what you ate.*
 
-1. Does the source exist?
-2. Does the link still resolve?
-3. **Does it actually say what the lesson claims it says?**
+**How to do it right**
+- Hold the phone level and shoot landscape.
+- **Include something for scale**, a paddle, a boot, a hand.
+- Say the date and place in the caption. Photos lose their metadata in transit constantly.
 
-An automated checker answers the first two. Only a person answers the third, and the third is where
-the real failures live.
+### 5 · Trash count at camp, value 3, effort 1
 
-**And nothing may be closed without evidence.** A citation marked verified with nothing written
-behind it is worse than one left unchecked, because it stops the next person from ever looking. The
-rule is: say what you found, or leave it open.
+**Count, do not collect.** Pick a stretch of shoreline about twenty paces long, count visible pieces
+of human debris, write the number. Two minutes.
 
-### Rule 4: Give every hedge somewhere to go
-
-When you write a sentence you cannot resolve, file it as a check, with:
-
-- the precise question,
-- **what the lesson currently claims**, so the stakes are visible,
-- what would settle it,
-- and where to look.
-
-Then it is a queue rather than a confession. Somebody answers it, the lesson gets fixed, the check is
-deleted. The list shrinking is the progress bar.
-
-The distinction worth preserving is between **two separate lists**:
-
-- **Every citation in the catalogue.** Large, mostly fine, mechanical to check.
-- **The handful of things nobody could confirm.** Small, needs judgment.
-
-Merge them and the ten that matter are buried under six hundred that are probably fine.
-
-### Rule 5: Say what you cannot do
-
-The most persuasive thing a course can contain is an honest limit.
-
-State plainly what the course is not, what it does not certify, and what it could not verify. Mark a
-figure as researched-on-a-date so a reader knows what to re-check. Where a fact is reported rather
-than confirmed, say so **in the lesson**, not in a footnote nobody reads.
-
-This feels like weakening your product. It is the opposite. In a market where anyone can generate
-confident prose, **confidence is free and calibration is expensive.** A course that tells you where it
-is unsure is making a claim that a generated course cannot cheaply imitate.
+**How to do it right**
+- **Same twenty paces of effort every night**, so the numbers compare.
+- Note the type of the three most common items.
+- Over 1,100 miles this becomes a real dataset about where trash concentrates. One count is nothing;
+  sixty counts is a finding.
 
 ---
 
-## Part 3: What this costs
+## Tier 2, do these when the day is going well
 
-Honestly, because a guide that pretends rigour is free is doing the thing it warns against.
+| # | What | Value | Effort | Ratio |
+|---|---|---|---|---|
+| 6 | Failure documentation | 5 | 2 | **2.5** |
+| 7 | 360 photospheres at named stops | 5 | 2 | **2.5** |
+| 8 | Short interviews with river people | 5 | 3 | 1.7 |
+| 9 | Water readings | 4 | 2 | 2.0 |
+| 10 | Infrastructure photos | 4 | 2 | 2.0 |
+| 11 | The decision log | 4 | 2 | 2.0 |
 
-**It is slower.** Not at drafting, which is fast. At everything after: verification, the guard
-failures you have to fix, the questions that come back unanswered.
+### 6 · Failure documentation, value 5, effort 2
 
-**It fails your own work in public.** The length guard failed a bank the author was proud of. The
-citation extractor reported zero sources for three courses that plainly had them, which turned out to
-be the extractor's fault, and finding that took an afternoon. This happens constantly and it is the
-system working.
+**This is the most valuable thing on the entire list and the one nobody sends unprompted.** Gear that
+broke. A plan that fell apart. A day you misjudged the weather, the water, the distance or each
+other. A resupply you got wrong.
 
-**Some of it cannot be finished by you.** Some facts need a phone call to a county clerk, a
-paywalled statute, or a trade body that answers email. Those wait. A course that waits is better than
-a course that guesses.
+**How to do it right**
+- Record it the same day, while you are still annoyed. A week later it becomes an anecdote and loses
+  everything useful.
+- **What did you believe that turned out to be wrong?** That sentence is the lesson.
+- You are not being graded. Every course built on this teaches judgement, and judgement is only
+  teachable from real mistakes. A trip where nothing went wrong teaches nothing.
 
-**What you get:** a course you can defend line by line, to a teacher, a regulator, or a learner who
-noticed something. And the ability to say, with evidence rather than assertion, that a person checked
-this.
+### 7 · 360 photospheres at named stops, value 5, effort 2
+
+At the places on the list in §"Key spots" below.
+
+**How to do it right**
+- **Tripod or a solid flat surface.** Handheld 360 is unusable.
+- Stand still, arms down, and step out of frame if the camera allows a timer.
+- **Shoot at the height a person's eyes would be.** Chest height reads as wrong to a viewer and
+  nobody can say why.
+- Note the coordinates and which direction is north.
+- Overcast is your friend. Hard sun blows the sky and blackens the shade.
+- **A 360 earns its place in five situations, and only five**: you are inside a space nobody can
+  otherwise enter · the surroundings in every direction are the story · the thing itself is gone and
+  the emptiness is the point · you are in a doorway, on a bridge, at a border · the terrain explains
+  a decision. If none of those apply, take a photograph instead. Most places do not need a 360.
+
+### 8 · Short interviews with river people, value 5, effort 3
+
+Lock operators. Marina staff. Deckhands. Someone in a river town who has watched it flood.
+
+**How to do it right**
+- **Ask permission on the recording, out loud, before anything else.** "Is it okay if I record this
+  and it gets used in a class?" Then let them answer on tape. Written consent if you can; recorded
+  consent if you cannot. **If they say no, that is the end of it**, do not use it, do not quote it.
+- Get their name and how they want to be identified. Some will not want their name used. Honour that.
+- **Ask what they have seen change.** It is the question that opens people up, and it is the one with
+  historical value.
+- Shut up after you ask. The silence does the work.
+- Never promise them a specific thing about how it will be used.
+
+### 9 · Water readings, value 4, effort 2
+
+Temperature, and turbidity by Secchi disk, at a fixed interval, say every fifty miles.
+
+**How to do it right**
+- **Same method, same time of day, every time.** A consistent crude measurement beats an inconsistent
+  precise one.
+- Record where you took it, in coordinates.
+- Take it from flowing water away from your own stirred-up sediment.
+- A Secchi disk is a weighted white disc on a marked line; the depth at which it disappears is your
+  number. It costs almost nothing and students immediately understand it.
+
+### 10 · Infrastructure photos, value 4, effort 2
+
+Locks, wing dams, levees, revetment, barge tows, outfalls, bridges, terminals.
+
+**Why:** almost no curriculum has decent primary imagery of the engineered river, and this is a
+1,100-mile transect of it.
+
+**How to do it right**
+- Photograph from a safe distance. **Do not approach a lock, a dam or a tow to get a shot.**
+- One wide frame for context, one closer frame for the detail.
+- Note what it is if you know. "Some kind of dam" is still useful.
+
+### 11 · The decision log, value 4, effort 2
+
+Once a day, one entry: **what you chose, what you rejected, and what it cost you.**
+
+Push on or stop. This bank or that one. Portage or paddle. Buy it here or wait.
+
+**Why it is worth the effort:** this is the only record of *judgement under uncertainty*, and it is
+the raw material for the courses on adversity, risk and resource management. Nothing else on the list
+captures it.
 
 ---
 
-## Part 4: A checklist you can steal
+## Tier 3, plan these before you launch, or they will not happen
 
-Before a course ships:
+| # | What | Value | Effort | Ratio |
+|---|---|---|---|---|
+| 12 | Scheduled live streams | 4 | 3 | 1.3 |
+| 13 | iNaturalist observations | 4 | 2 | 2.0 |
+| 14 | Fiction written from the river | 4 | 3 | 1.3 |
+| 15 | Resupply and expense log | 3 | 2 | 1.5 |
+| 16 | Ambient sound recordings | 3 | 1 | 3.0 |
 
-- [ ] Every factual claim has a source, cited inline, with a bibliography.
-- [ ] Every source has been opened by a person who was not the author.
-- [ ] Every figure that could change carries the date it was checked.
-- [ ] No quiz bank can be beaten by clicking the longest or the first option.
-- [ ] Every quiz question says why the answer is right and points at the lesson that teaches it.
-- [ ] Every self-check actually grades something.
-- [ ] Every hedge has a filed question behind it.
-- [ ] The course states plainly what it is not and what it does not certify.
-- [ ] Somebody other than the author has read it end to end.
+### 12 · Scheduled live streams, value 4, effort 3
 
-If you cannot tick the second line, you do not have a verified course. You have a draft with
-footnotes.
+**Scheduled beats always-on.** Three or four announced moments across the whole trip, a lock
+passage, the confluence at Cairo, the launch, the landing, are achievable and give students an
+event to gather around. A continuous stream is a battery and bandwidth problem you will abandon in
+week one.
+
+**How to do it right**
+- Announce the window a few days ahead so it can be built into a lesson. **Give yourself a two-hour
+  window, not a time.** You do not control the river.
+- Say where you are and what we are looking at within the first fifteen seconds.
+- Assume it fails. Record locally at the same time so there is something either way.
+
+### 13 · iNaturalist observations, value 4, effort 2
+
+Photograph a plant, bird, fish or track and log it. It becomes a permanent public record with a
+verifiable date and place, which is what turns snapshots into citizen science.
+
+**How to do it right**
+- **You do not need to know what it is.** That is the point of the platform.
+- Get the whole organism plus one detail shot.
+- Log it even if it is common. Common things at a known place and date are the data.
+
+### 14 · Fiction written from the river, value 4, effort 3
+
+You said you want to send both fiction and non-fiction. **That is an unusual asset and worth
+protecting.**
+
+**How to do it right**
+- **Write the factual log entry first, then the fiction, and keep them separate files.** A factual
+  entry and an imagined one from the same place on the same day is a ready-made lesson on the
+  difference between the two, and it only works if we can tell which is which.
+- Label every fiction file \`FICTION\` in the filename. Not once, every time.
+- Do not fictionalise a real named person you met.
+
+### 15 · Resupply and expense log, value 3, effort 2
+
+What you bought, where, what it cost. Honest numbers including the ones that went wrong.
+
+### 16 · Ambient sound, value 3, effort 1
+
+Sixty seconds, phone still, no talking. Dawn. A passing tow. Rain on the tent. The lock gates.
+
+**Why it scores well:** the lessons are audio-first, so ambient sound is directly usable rather than
+decorative. High ratio, and easy to forget.
 
 ---
 
-## Where Learn.WitUS fits
+## Key spots to document
 
-Everything above is implemented, not aspirational. The guards run on every build. The two
-verification lists are pages in the app. Invited reviewers can verify a course's citations without
-being given the keys to anything else, and neither list can be closed without writing down what was
-found.
+Prioritised. If the trip compresses, protect the ones marked **critical**.
 
-That is the argument, and it is deliberately checkable rather than asserted: **the platform makes the
-honest thing structural.** Not because rigour is a feature people ask for, but because in a market
-where content is free, the only thing left worth selling is whether it is true.
+| Place | Why it matters | Capture |
+|---|---|---|
+| **The launch point** | The "before" frame the whole series opens on | 360 · photo · audio |
+| Wabash River, first days | Headwaters character; small-river scale before it all changes | photo · audio |
+| **Wabash-Ohio confluence** | Where a small river becomes a big one. Scale change is visible | **critical** · 360 · photo |
+| **Ohio River crossing, Indiana-Kentucky shore to shore** | **The freedom line.** People crossed this water north to be free; you are going the other way. The single most important frame of the trip | **critical** · 360 both banks · audio reflection |
+| Madison, Indiana | Underground Railroad crossing point and network hub | 360 · photo · interview if possible |
+| New Albany / Louisville area | The Falls of the Ohio; a crossing point and a navigation obstacle | photo · infrastructure |
+| **Any lock passage** | Nothing else shows the engineered river so plainly | **critical** · video from a safe distance · audio of the gates |
+| **Cairo, Illinois, Ohio meets Mississippi** | The hinge of the whole route: two rivers, and a town with its own hard history | **critical** · 360 · photo · audio |
+| First Lower Mississippi camp | The river changes character completely below Cairo | 360 · audio |
+| A wing dam / revetment stretch | The river as a managed machine | photo |
+| A working river town | Economy, resupply, people | interview · photo |
+| **Natchez, Mississippi** | A principal market of the domestic slave trade. "Sold down the river" means this water and these ports | **critical** · 360 · photo |
+| Baton Rouge industrial corridor | Where the river's economy is most visible | photo · infrastructure |
+| **New Orleans** | The largest slave market in the country, and the last city on the river | **critical** · 360 · photo |
+| **The Gulf, the end** | The arrival, and the water the whole watershed drains into | **critical** · 360 · photo · audio |
+
+### On the historical stops specifically
+
+Some of these places carry a history of people being bought, sold and separated, and of people
+risking their lives to cross a river to be free. **Document them plainly.** No staging, no dramatic
+posing, no performance of feeling. A steady frame of the actual place, the coordinates, the date, and
+if you want, a quiet audio note about what it was like to be there. The record does the work. Anything
+more gets in its way.
 
 ---
 
-*Draft for BAM's review. No statistics, testimonials, prices or efficacy claims appear in this
-document, and none should be added: the argument works because it is checkable, and inventing a
-number to strengthen it would refute it.*`,
-    provenance: "plans/future-courses/marketing/00-ebook-ai-course-creation.md",
+## Practical notes
+
+- **Back up at every resupply.** Two copies, two places. A single dropped phone should not cost the
+  whole trip.
+- **One naming convention, agreed before you launch**, e.g. \`YYYY-MM-DD_place_type_01\`. Rename nothing
+  later.
+- **Charge order when power is short:** satellite messenger, then phone, then camera. In that order,
+  every time.
+- **Consent is not retroactive.** If you did not get it on the day, we cannot use it.
+- **Nothing on this list is worth an injury or a citation.** Skip any item rather than approach a tow,
+  a lock, a dam, private property or a stranger who does not want to talk. There is no shot on this
+  list that is worth a bad outcome.
+
+## Questions for the team before launch
+
+1. What is the planned launch date and the rough schedule?
+2. Which of these can you realistically commit to daily?
+3. What gear do you already have, 360 camera, satellite messenger, water thermometer?
+4. Who on the team owns documentation, so it is somebody's actual job rather than everybody's
+   afterthought?`,
+    provenance: "plans/future-courses/outdoors/river-expedition-field-collection-guide.md",
   },
   {
     key: "real-estate-surplus-funds-brief",
@@ -12704,6 +11521,761 @@ How the Process WorksPriority Payouts: The auction money first pays off the prim
 
 You can do this nationally. There are no laws limiting your search to your own state. Because public records are open to everyone, you can look for surplus funds and contact homeowners in any of the 50 states.If you plan to scale this into a nationwide business, you must follow the distinct legal guidelines established by each state and county.1. Evaluate State Law VariationsWhile you can research any state from your computer, the rules for contacting owners and collecting fees change drastically at state lines.Asset Recovery Caps: Many states strictly limit how much money an asset finder can charge a homeowner. For example, some states cap your fee at 10% of the recovered funds, while others ban finder fees entirely for the first 24 months after a sale.Licensing Mandates: Certain states require you to hold a Private Investigator (PI) license, a real estate license, or a registered notary commission to legally act as a third-party finder.Strict Expiration Windows: The timeline to claim money varies heavily by location. Some counties hold funds for only 90 days before moving them to the state, while others give owners up to 5 years to file a claim.2. Follow a National BlueprintTo manage a nationwide search efficiently without leaving your home, organize your workflow by utilizing online tools.Target Digitized Counties: Start your search in larger, highly populated metropolitan counties. These areas are much more likely to publish updated surplus spreadsheets and auction results directly on their county clerk or treasurer websites.Utilize Skip Tracing Tools: Former homeowners who lost their properties often move immediately. You will need online skip-tracing software to cross-reference public data, track down their new addresses, and find valid phone numbers or email addresses.Draft Location-Specific Agreements: Never use a single, generic contract for every client. If you are charging a fee to help them file, ensure your contingency fee agreement is custom-tailored to comply with the exact consumer protection laws of the homeowner's state.`,
     provenance: "plans/future-courses/real-estate/surplus-funds-basics.md",
+  },
+  {
+    key: "reporter-learn-to-be-a-reporter",
+    title: "learn to be a reporter",
+    group: "Reporter",
+    summary: "start with this job description:",
+    body: `start with this job description:
+https://www.freepressindiana.org/jobs/women-girls-reporter
+
+more info on women in Indiana
+https://inwomensfoundation.org/
+
+https://girlcoalitionindiana.org/report/
+
+https://visitindiana.in.gov/blog/post/these-30-famous-women-from-indiana-history-have-helped-define-the-hoosier-state/`,
+    provenance: "plans/future-courses/reporter/learn-to-be-a-reporter.md",
+  },
+  {
+    key: "researcher-researcher-course",
+    title: "researcher course",
+    group: "Researcher",
+    summary: "course to teach allow practice of the skill of researching.",
+    body: `course to teach allow practice of the skill of researching.
+let's discuss
+it should help sttudents that take the documentary track use both in the profession and documentaries they make`,
+    provenance: "plans/future-courses/researcher/researcher-course.md",
+  },
+  {
+    key: "sciences-what-can-we-teach-with-this-app",
+    title: "what can we teach with this app",
+    group: "Sciences",
+    summary: "sciences/01-what-can-we-teach-with-this-app.md",
+    body: `sciences/01-what-can-we-teach-with-this-app.md
+
+My niece, high school student, wants to study astrophysics. I want to learn it to talk to her about it.
+Can we teach it in the app's current state?
+What math and sciences can be taught and learned in the app's current state?
+
+I'd like to start with teaching math and sciences that compliment existing courses.
+
+- also an opportunity to talk about she/he did the work portion
+- kayak course
+- Ghana trip beach clean up to track rain, trash removal, their correlation (getting figures from Ghana municiple member soon. remind me to provide), fuel/time to travel, recipes for commodities, ets
+- can chemistry, physics, aeronautics, engineering (mechanical, electrical, work done with arduinos (I have a few and a bunch of components)) be taught here`,
+    provenance: "plans/future-courses/sciences/01-what-can-we-teach-with-this-app.md",
+  },
+  {
+    key: "sciences-science-and-math-track-proposal",
+    title: "Science & Math, track proposal and production schedule",
+    group: "Sciences",
+    summary: "Status: proposal, nothing built. Answers the questions in `01-what-can-we-teach-with-this-app.md`.",
+    body: `# Science & Math, track proposal and production schedule
+
+**Status:** proposal, nothing built. Answers the questions in \`01-what-can-we-teach-with-this-app.md\`.
+**Written:** 2026-08-07. **Revised:** 2026-08-07 after BAM's second pass.
+
+> ## 📍 Read this first, what changed on the revision, and where the detail now lives
+>
+> | Doc | What's in it |
+> |---|---|
+> | \`03-standards-source-text.md\` | **NGSS HS-ESS1 and Common Core Math, fetched VERBATIM** from the publishers, with which codes each course may and may not claim |
+> | \`04-new-subjects-wave-assignment.md\` | Answers "can chemistry, physics, aeronautics, engineering/Arduino be taught here", and which wave each lands in |
+> | \`outlines/01-how-to-read-a-number.md\` | Full lesson-by-lesson outline |
+> | \`outlines/02-how-we-know-whats-out-there.md\` | Full lesson-by-lesson outline |
+> | \`outlines/03-the-river-and-the-watershed.md\` | Full lesson-by-lesson outline |
+> | \`outlines/04-intro-to-citizen-science.md\` | Full lesson-by-lesson outline |
+>
+> **Decisions applied from BAM's second pass:**
+> 1. **Ghana beach cleanup is DEFERRED** until the data arrives. Operator task **242** files the
+>    reminder. The *method* half survives as Wave 1's "Intro to Citizen Science," which is not
+>    blocked by it.
+> 2. **The Harvard Computers is no longer a standalone course.** It is now lesson 8 of Course 2,
+>    which is what §4.5's own "chapter, not course" test predicted.
+> 3. **Wave 1 is the four courses BAM named**, plus a fifth candidate (Arduino) that turned out to
+>    need no platform work, see \`04-new-subjects-wave-assignment.md\`.
+> 4. **The 14 calendar errors are fixed.** See the applied-note at the top of
+>    \`../she-did-the-work/00-course-proposals.md\`; three items need BAM, not Claude.
+> 5. **Standards are fetched, not remembered.** Every code in \`03-\` is verbatim from the publisher.
+>    HS-ESS2 was **not** fetched and Course 3 needs it before its standards entry is written.
+
+## Decisions already made (BAM, 2026-08-07)
+
+| # | Question | Decision |
+|---|---|---|
+| 1 | Who is the learner | **BAM now.** Then niece + family + friends by invite. Then open to all users. |
+| 2 | Conceptual enough? | **Yes for now.** Start with what the app can already teach. |
+| 3 | Add math rendering? | **Not now.** Plan it (§7), build it later. |
+| 4 | Numeric grading? | **Discuss later.** This doc must say *which wave* forces the decision. → §5. |
+| 5 | Standards | **Common Core Math + NGSS HS-ESS1.** |
+| 6 | Category | **New Science & Math category.** |
+| 7 | Figures | **Discuss later,** when the courses that need them are built. |
+| 8 | Scope | **Full track proposal + projected release schedule, all four bridges.** |
+
+Plus three additions BAM made to \`01-…\` after the first pass, all of which changed the plan:
+**She/He Did the Work**, the **kayak course**, and the **Ghana beach cleanup** (rain vs. trash
+removal, correlation, fuel/time, commodity recipes). The Ghana one is the most important thing in
+this document, see §4.6.
+
+---
+
+## 1. The one-paragraph version
+
+The catalog can teach **epistemological science** today with zero platform work: how we know what
+we know, how a measurement is made, how a claim is tested, what the evidence actually supports.
+That is not a consolation prize, it is the same thing this catalog already does with history, and
+it is the *correct* on-ramp for an adult who wants to hold a real conversation with a high-school
+astrophysics student. What it cannot do today is grade a number. So the track splits into three
+waves: **Wave 1 needs no code**, **Wave 2 needs math rendering**, **Wave 3 needs numeric grading.**
+Ten courses, four bridges into the existing catalog, projected Sept 2026 → Jul 2027.
+
+## 2. The learner arc changes what we build first
+
+BAM is the learner now, and that is a real constraint, not a placeholder. A course built for one
+adult who wants context is **shorter, denser, and more willing to say "here is the open question"**
+than a course built for a 16-year-old who needs to pass something. Build for BAM first; the
+high-school framing is added in Wave 2 when the math arrives and the niece is invited.
+
+Practical consequence: **Wave 1 courses do not need to be gradeable to be useful.** Lean on
+\`:::reveal\` self-checks and MCQ that test comprehension of an argument, not recall of a constant.
+
+## 3. The capability line, stated once
+
+Verified against the code on 2026-08-07:
+
+| Capability | State | Where |
+|---|---|---|
+| Prose, tables, images, links | ✅ | [markdown.tsx](src/components/markdown.tsx), \`remark-gfm\` |
+| Multiple choice, shuffled, pooled | ✅ | [quiz.ts](src/lib/quiz.ts) |
+| Typed word answers, accent/case-forgiving | ✅ | [exercise.ts](src/lib/exercise.ts#L48-L53) |
+| Click-to-reveal self-check with recall tracking | ✅ | \`:::reveal\` in [lesson-body.tsx](src/components/lesson-body.tsx#L84-L95) |
+| Timelines, maps, instructor-graded assignments | ✅ | \`:::timeline\`, \`map\`/\`assignment\` lesson types |
+| **Equations / math notation** | ❌ | no \`remark-math\`, no KaTeX. Plain text + Unicode only. |
+| **Numeric answers with tolerance / units / sig-figs** | ❌ | string equality; \`9.8\` ≠ \`9.81\` ≠ \`9.8 m/s²\` |
+| **Plots, graphs, interactive sims** | ❌ | static images only (Cloudinary is wired) |
+
+One trap worth naming now: [check-assessment-fit.ts](scripts/check-assessment-fit.ts)'s
+\`closed-set-fill-in\` rule **fails** any typed item whose answers are all bare digits, unless the
+author sets \`computedAnswer: true\`. That is exactly right for a civics date and exactly wrong for a
+physics catalog. Wave 3 has to teach that guard the difference; see §5.
+
+## 4. The bridges
+
+Six, not four, BAM's notes added two. Each is judged the same way the
+[She Did the Work proposal](plans/future-courses/she-did-the-work/00-course-proposals.md) judges its
+subjects: **does it hand the learner a transferable system, or a story?**
+
+### 4.1 Civics → statistics and data literacy
+
+**34 civics courses** and no course on how to read the numbers they all quote. This is the highest
+value-per-effort item in the entire track and it needs zero platform work, because reading a number
+critically is prose-and-argument work, not computation work.
+
+Complements \`spotting-misleading-marketing\`, \`how-to-research\`, \`voting-elections-101\`,
+\`us-state-local-government\`. Content: polls and margin of error, rates vs. counts vs. per-capita,
+census and apportionment, redistricting arithmetic, index numbers, base-rate errors, and the chart
+crimes that show up in campaign material.
+
+→ **Course 1, "How to Read a Number."** Carries a course alone.
+
+### 4.2 Rivers & Expeditions + the kayak trip → earth and water science
+
+Eleven river courses already exist, and one of them is **already a science course wearing a history
+coat**: \`river-the-dead-zone\` is described in [claims.ts](src/lib/standards/claims.ts#L4001-L4004)
+as integrating "the four-step hypoxia mechanism, nutrient-source data and the task force's history."
+It is mapped **only** to Common Core ELA literacy strands today. That is a real finding: **the
+fastest standards win in this whole plan is mapping NGSS onto science content the catalog already
+shipped**, before authoring a single new lesson.
+
+The kayak trip (Indiana → Gulf, \`outdoors/kayaking-notes.md\`) is the live case study, structurally
+identical to how the Ghana trip anchors the Documentarian program in
+[roadmap.ts](src/lib/roadmap.ts#L1065-L1070). The trip supplies real data; the course supplies the
+method. Note the route is the *same river system* the eleven river courses already walk, this is
+one track, not two.
+
+→ **Course 3, "The River and the Watershed."** Carries a course alone.
+
+### 4.3 FAA Part 107 → physics of flight and weather
+
+Existing FAA content (\`seed-faa.ts\`, \`faa-part107.md\`) gives this bridge a built-in audience with a
+built-in reason to care. But be honest about it: **density altitude and mass-and-balance are
+calculations.** Teaching them without letting the learner produce a number is teaching *about* them.
+So this bridge is deliberately **not** in Wave 1, even though it's tempting.
+
+→ **Course 6, "Why Things Fly, and Why Weather Decides."** Wave 2.
+
+### 4.4 Celestial navigation → astronomy → astrophysics (the one BAM actually asked for)
+
+\`river-finding-your-way\` already teaches navigation and is already mapped in
+[claims.ts](src/lib/standards/claims.ts#L4196). The bridge writes itself: **finding yourself by the
+sky → what the sky is → how we measure something we can never touch.**
+
+Course 2 is the distance ladder as a detective story, parallax, then Cepheids, then Type Ia
+supernovae, then redshift, with spectroscopy, stellar life cycles, and the HR diagram. Every link
+in that chain is an argument about evidence, which is this catalog's native genre. **It requires no
+equations at all**, and it is genuinely the version of astronomy most likely to let BAM hold a real
+conversation with his niece, because the thing a physics student rarely gets taught is *why anyone
+believes the numbers*.
+
+The math version is a separate, later course. Do not merge them.
+
+→ **Course 2, "How We Know What's Out There"** (Wave 1) and **Course 7, "Astrophysics: Running the
+Numbers"** (Wave 2/3).
+
+### 4.5 She/He Did the Work → the people who did the science
+
+Applying that track's own test, *system, or story?*, my judgment is that **almost none of these
+figures carries a standalone science course, and pretending otherwise produces thin biographies**
+(exactly the failure mode that document already warns about). They are chapters inside Courses 2
+and 3, where the science is the transferable system and the life is the evidence:
+
+| Figure | Where they belong | Why |
+|---|---|---|
+| **Henrietta Swan Leavitt** | Course 2, distance-ladder lesson | The period-luminosity relation *is* the rung. Not a cameo, the method is hers. |
+| **Cecilia Payne-Gaposchkin** | Course 2, spectroscopy | "Stars are mostly hydrogen," and what happened to her when she said so. |
+| **Vera Rubin** | Course 2, closing lesson | Rotation curves → dark matter. The best "the evidence forced it" story in the subject. |
+| **Annie Jump Cannon + the Harvard Computers** | see below | Classification built on underpaid women's labor. |
+| **Katherine Johnson, Dorothy Vaughan, Mary Jackson** | Course 2 or 8 | Computation as work. Ties to the labor track. |
+| **Benjamin Banneker** | Course 2, celestial-navigation lesson | Almanac + DC survey. Bridges to \`the-presidents-house\` and the Afrocentricity track. |
+
+**One exception carries a course alone: the Harvard Computers.** A course about how modern stellar
+classification was built out of cheap, credited-late women's labor is simultaneously real astronomy,
+real labor history, and squarely this catalog's identity. It is the only figure-driven science course
+I'd greenlight.
+
+→ **Course 4, "The Harvard Computers."**
+
+⚠️ **Fact-check warning, and it is not optional.** The She Did the Work audit found **14 factual
+errors** in a social calendar. Science biography is worse, not better, Banneker in particular
+carries thick, widely-repeated mythology (the "rebuilt the DC plan from memory" story is contested
+and probably false). **Every biographical claim in Courses 2 and 4 goes through
+\`src/lib/research-checks.ts\` before it ships,** and any hedge that survives stays on \`/admin/research\`
+until it's settled.
+
+### 4.6 Ghana beach cleanup → doing science with your own data
+
+**This is the best idea in BAM's notes and it should probably be the flagship of the whole track.**
+
+Every other course here teaches science that someone else did. This one has the learner *do it*:
+collect rainfall and trash-removal data, log it, chart it, and then discover the actual lesson, that a rain-vs-trash correlation is probably confounded by fuel prices, tide, holiday traffic, or
+who showed up that day. Correlation-is-not-causation taught with numbers you gathered yourself is a
+different educational object from correlation-is-not-causation taught from a textbook.
+
+It plugs into infrastructure that already exists:
+
+- **Field Log** ([field-log-templates.ts](src/lib/field-log-templates.ts)), needs one new template,
+  \`citizen-science-study\`, on the Plan → Source → Capture → Verify → Publish spine.
+- **The Documentarian program**, which already names the Ghana trip as its live case study.
+- **The BVC Commodity Map**, Ghana is cocoa, and \`bvc-sommelier-chocolate-course.ts\` already ships.
+  "Recipes for commodities" and "fuel/time to travel" are commodity-chain data, which is the
+  signature surface of this platform, not a detour from it.
+
+Split it in two, because the method half needs no code and the data half needs Wave 3:
+
+→ **Course 5, "Designing a Study You Can Trust"** (Wave 1, method, confounders, study design,
+all prose and reveals) and **Course 9, "Your Own Data"** (Wave 3, graded charts and correlation).
+
+---
+
+## 5. The waves, and the exact answer to "which wave requires numeric grading"
+
+**Wave 1 (5 courses) requires no platform work at all.**
+
+**Wave 2 requires math rendering only.** Courses 6 and 7 need to *display* formulas, the inverse
+square law, Kepler's third, Wien's displacement, Stefan-Boltzmann, the density-altitude relation.
+The learner reads and interprets them; nobody is graded on producing a number. KaTeX alone unblocks
+this wave. Plan in §7.
+
+**Wave 3 requires numeric grading with tolerance and units.** Courses 8, 9 and 10 are the ones where
+the learner computes and gets marked. This is the wave that forces the decision BAM deferred, and
+it's the harder change of the two, because it isn't just a checker:
+
+1. \`ExerciseItem\` needs \`tolerance\`, \`unit\`, and significant-figure handling.
+2. \`checkExerciseAnswer\` needs a numeric path, and \`"close"\` finally means something real
+   (right method, wrong rounding) instead of an accent difference.
+3. [check-assessment-fit.ts](scripts/check-assessment-fit.ts)'s \`closed-set-fill-in\` rule has to
+   distinguish "a year the learner memorised" from "a value the learner computed." \`computedAnswer:
+   true\` on every item is the wrong answer, that's allowlisting the guard into uselessness, which
+   CLAUDE.md explicitly warns against.
+
+**So: Wave 3 is the decision point, and it lands ~Apr 2027.** Nothing before it is blocked.
+
+## 6. The ten courses
+
+**Revised 2026-08-07.** Ten courses, all in the new Science & Math category.
+
+| # | Course | Bridges from | Wave | Outline |
+|---|---|---|---|---|
+| 1 | How to Read a Number | 34 civics courses | 1 | ✅ \`outlines/01-\` |
+| 2 | How We Know What's Out There | \`river-finding-your-way\` | 1 | ✅ \`outlines/02-\` |
+| 3 | The River and the Watershed | 11 river courses, kayak trip | 1 | ✅ \`outlines/03-\` |
+| 4 | Intro to Citizen Science | Field Log, Documentarian | 1 | ✅ \`outlines/04-\` |
+| 5 | Make It Sense Something (Arduino) | new bridge, BAM's own hardware | 1 † | \`04-new-subjects\` |
+| 6 | Why Things Fly, and Why Weather Decides | FAA Part 107 | 2 |, |
+| 7 | Astrophysics: Running the Numbers | Course 2 | 2 |, |
+| 8 | Why Things React (chemistry) | BVC Sommelier series | 2 |, |
+| 9 | Scale, Light and Distance (graded) | Course 7 | 3 |, |
+| 10 | Your Own Data | Course 4 + Ghana trip | 3 ‡ |, |
+| 11 | Navigation Math | Courses 2, 3, 6; Banneker | 3 |, |
+
+† Recommended for Wave 1 but **authored last**, so its logger capstone can point at a citizen-science
+study the learner already designed. Open question for BAM in \`04-new-subjects-wave-assignment.md\`.
+‡ **Blocked on operator task 242** (the Ghana figures), by BAM's own call. Its design cannot be
+fixed until the data exists, because what the data contains decides what can honestly be taught.
+
+**Dropped as a standalone course:** *The Harvard Computers*, now lesson 8 of Course 2.
+**Not built:** a general conceptual-physics survey. It would pass the Wave 1 test technically but
+has no bridge into the existing catalog, which is this track's whole thesis. The physics that *does*
+bridge is already scheduled as Courses 6, 7 and 11.
+
+Course 11 remains the payoff: celestial-navigation computation is the one page where the river
+track, the FAA track, the astronomy track and the Banneker thread all land together.
+
+Course 10 is the payoff course, celestial navigation computation is the single point where the
+river track, the FAA track, the astronomy track and the Banneker thread all land on the same page.
+
+## 7. Production schedule
+
+**Assumption to correct:** ~2 weeks of authoring per course at this catalog's citation standard,
+one course in flight at a time, standards work interleaved. If that's wrong, every date below
+shifts proportionally, tell me and I'll re-cut it.
+
+| Window | Ships | Platform / standards work alongside |
+|---|---|---|
+| **Sep 2026** | Category + standards foundation, **no courses** | New \`Science & Math\` category (seed row, no migration). \`Mathematics\` added to the \`Subject\` union in [types.ts](src/lib/standards/types.ts#L17-L23). Write \`shared/common-core-math.ts\` and the HS-ESS1 extension **from the verbatim text already fetched into \`03-\`**. **Map NGSS onto the existing river science**, the free win from §4.2, and while there, verify the over-broad \`river-the-dead-zone\` claim flagged in \`outlines/03-\`. |
+| **Oct 2026** | **C1** How to Read a Number · **C2** How We Know What's Out There | Fetch **HS-ESS2** (still outstanding). **Figures decision forced early**, C2 lesson 7 cannot ship without an HR diagram, which is a month sooner than the first draft assumed. C2's five research checks filed and cleared. |
+| **Nov 2026** | **C3** The River and the Watershed | HS-ESS2 mapping written. |
+| **Dec 2026** | **C4** Intro to Citizen Science · **C5** Arduino (optional) | New Field Log template \`citizen-science-study\`, the only platform work in Wave 1. **Invite niece + family.** |
+| **Jan 2027** | *(no course)* | **Math-rendering branch** ships (§8). |
+| **Feb-Mar 2027** | **C6** Why Things Fly · **C7** Astrophysics: Running the Numbers · **C8** Why Things React | NGSS HS-PS2 mapping. |
+| **Apr 2027** | *(no course)* | **Numeric-grading branch** + the assessment-fit guard change. The deferred Q4 decision. |
+| **May-Jul 2027** | **C9** Scale, Light and Distance · **C10** Your Own Data · **C11** Navigation Math | C10 depends on task 242 landing. **Open to all users.** |
+
+**One schedule change worth flagging:** the figures decision (BAM's deferred Q7) moves from Feb 2027
+to **Oct 2026**, because Course 2 needs an HR diagram and a real spectrum in Wave 1. Recommendation
+unchanged, public-domain NASA/ESO/NOIRLab/USGS imagery, cited, with real alt text, but it needs
+answering three months earlier than the first draft assumed.
+
+Two things deliberately sit on the critical path early: the **category** (courses can't be filed
+without it) and the **free NGSS mapping of existing river content** (proves the standards approach
+before ten courses depend on it).
+
+## 8. Platform plan, math rendering (build in Jan 2027, not now)
+
+**Change:** add \`remark-math\` + \`rehype-katex\` to [markdown.tsx](src/components/markdown.tsx).
+
+**The real decision is security, not the dependency.** That file currently passes no \`rehypePlugins\`
+and no \`rehype-raw\`, so authored markdown can never inject HTML, a deliberate choice, stated in its
+own header comment. \`rehype-katex\` emits HTML. The mitigation:
+
+- The HTML comes from **KaTeX's renderer**, not from author text, the author writes \`$…$\`. That's a
+  meaningfully narrower surface than \`rehype-raw\`.
+- Set \`trust: false\` (the default, blocks \`\\href\`, \`\\htmlData\`, \`\\includegraphics\`), \`strict: true\`,
+  and a \`maxExpand\` cap so a macro bomb can't hang the render.
+- Add a \`rehype-sanitize\` pass with a KaTeX-aware schema behind it, so the posture stays
+  "nothing unsanitised reaches the DOM."
+- Set \`output: "htmlAndMathml"\` so screen readers get MathML. Non-negotiable under the page-quality
+  accessibility rule; an equation rendered as visual-only spans is an equation blind learners can't
+  read.
+
+**Assets:** KaTeX ships its own fonts. Self-host under \`public/\` or import from the package, **never a CDN** (the fonts must not depend on an external host). Load the stylesheet on lesson
+routes only, not globally.
+
+**Tests:** \`tests/\` already covers markdown rendering (\`faa-lesson-markdown.test.ts\` is the pattern).
+Add cases for inline vs. display math, a malformed expression rendering as visible text rather than
+throwing, and an assertion that raw HTML in a lesson body is still inert afterward.
+
+**Docs-sync:** STYLE_GUIDE gets an authoring section on when to write math (and when prose is
+better), README gets the dependency note.
+
+**Estimate:** one branch, ~1 day. The security review is the slow part, not the integration.
+
+## 9. Standards plan
+
+Both frameworks BAM chose are genuine fits, but they are honest in different ways.
+
+**Common Core Math**, \`src/lib/standards/shared/common-core-math.ts\`, following the
+\`common-core-ela.ts\` pattern exactly (verbatim text, \`sourceUrl\`, \`fetchedOn\`, adopted by states via
+\`adoptions\`). The initial mapping should be **narrow and real**, roughly six to ten standards:
+
+- **HSN-Q (Quantities)**, using units to understand problems, choosing accuracy appropriate to the
+  limits of measurement. Near-perfect fit for Courses 1, 2 and 5, **and it needs no computation**,
+  so Wave 1 can claim it honestly.
+- **HSS-ID / HSS-IC**, interpreting data, distinguishing correlation from causation, drawing
+  inferences. Courses 1, 5 and 9. The correlation-vs-causation standard is precisely what Course 9
+  teaches with Ghana data.
+
+**NGSS HS-ESS1 (Space Systems)**, extend \`shared/ngss.ts\`, whose \`version\` field currently reads
+"HS-ESS3 Earth and Human Activity" and will need restructuring to hold more than one DCI.
+
+⚠️ **Carry the existing honesty note forward.** The current HS-ESS3-1 entry says plainly: *"This is
+NOT a science course, it has no laboratory work, no investigations and no scientific modelling…
+this contributes to it, it does not discharge it."* Courses 2 and 4 must carry the same caveat, they are evidence-and-argument courses, not three-dimensional NGSS performances. **Course 9 is the
+first course in this catalog's history that could honestly claim the investigation dimension**,
+because the learner collects real data. That is worth stating as a milestone rather than quietly
+widening earlier claims to reach it.
+
+**Every code in this document is from memory and must be fetched verbatim from the publisher, with a
+\`fetchedOn\` date, before it lands in \`src/lib/standards/\`.** Nothing here is authoritative.
+
+## 10. Open, and deliberately deferred
+
+1. **Figures** (BAM's Q7), forced by Feb 2027. My recommendation: public-domain NASA/ESO/USGS
+   imagery, which is plentiful, properly citable, and fits the citation rule cleanly. Original
+   diagrams only where nothing suitable exists.
+2. **Numeric grading shape** (Q4), forced by Apr 2027. §5 lists the three things it touches.
+3. **Course 5 vs. the Documentarian program**, both teach study design and both use Field Log and
+   the Ghana trip. Before authoring Course 5, check it isn't duplicating
+   \`plans/future/12-documentarian-program.md\`. It may belong *inside* that family.
+4. **Does "Science & Math" split later?** One category now. Revisit past ~12 courses.
+
+## 11. Operator tasks
+
+- **242, Get the Ghana beach-cleanup figures.** Filed 2026-08-07. Blocks Course 10 only; all of
+  Wave 1 proceeds regardless.
+- Two more when the work starts: the **Sept category seed** (a prod \`seed:*\` re-run, not a
+  migration) and the **Jan math-rendering branch** merge. Neither requires a \`db:migrate:prod\`.
+
+## References
+
+- Common Core State Standards Initiative. (n.d.). *Mathematics standards.* https://www.thecorestandards.org/Math/
+- NGSS Lead States. (n.d.). *HS-ESS1 Earth's Place in the Universe.* https://www.nextgenscience.org/dci-arrangement/hs-ess1-earths-place-universe
+- NGSS Lead States. (n.d.). *HS-ESS3 Earth and Human Activity.* https://www.nextgenscience.org/dci-arrangement/hs-ess3-earth-and-human-activity
+- KaTeX. (n.d.). *Security and the \`trust\` option.* https://katex.org/docs/options.html`,
+    provenance: "plans/future-courses/sciences/02-science-and-math-track-proposal.md",
+  },
+  {
+    key: "sciences-standards-source-text",
+    title: "Standards source text, fetched verbatim, 2026-08-07",
+    group: "Sciences",
+    summary: "Why this file exists. `src/lib/standards/` requires verbatim standard text with a `sourceUrl`",
+    body: `# Standards source text, fetched verbatim, 2026-08-07
+
+**Why this file exists.** \`src/lib/standards/\` requires verbatim standard text with a \`sourceUrl\`
+and a \`fetchedOn\` date. This is the raw material for \`shared/common-core-math.ts\` and the HS-ESS1
+extension to \`shared/ngss.ts\`. **Nothing here is paraphrased.** Where I could not fetch, it says so.
+
+⚠️ **www.thecorestandards.org now returns HTTP 403 to automated fetches** (it did not on 2026-07-13,
+the \`fetchedOn\` date in \`common-core-ela.ts\`). The math text below came from the **official CCSSI
+PDF**, which redirects to \`corestandards.org\` and serves normally:
+\`https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf\`. Use that URL as
+\`sourceUrl\` for the math framework, not the HTML page, the HTML page will fail the next re-check.
+
+---
+
+## NGSS, HS-ESS1 Earth's Place in the Universe
+
+**Source:** https://www.nextgenscience.org/dci-arrangement/hs-ess1-earths-place-universe
+**Fetched:** 2026-08-07
+
+| Code | Verbatim performance expectation |
+|---|---|
+| HS-ESS1-1 | Develop a model based on evidence to illustrate the life span of the sun and the role of nuclear fusion in the sun's core to release energy that eventually reaches Earth in the form of radiation. |
+| HS-ESS1-2 | Construct an explanation of the Big Bang theory based on astronomical evidence of light spectra, motion of distant galaxies, and composition of matter in the universe. |
+| HS-ESS1-3 | Communicate scientific ideas about the way stars, over their life cycle, produce elements. |
+| HS-ESS1-4 | Use mathematical or computational representations to predict the motion of orbiting objects in the solar system. |
+| HS-ESS1-5 | Evaluate evidence of the past and current movements of continental and oceanic crust and the theory of plate tectonics to explain the ages of crustal rocks. |
+| HS-ESS1-6 | Apply scientific reasoning and evidence from ancient Earth materials, meteorites, and other planetary surfaces to construct an account of Earth's formation and early history. |
+
+**Which of these Course 2 can honestly claim** (see \`outlines/02-how-we-know-whats-out-there.md\`):
+
+- **HS-ESS1-2, \`full\` on the content dimension.** The verbatim text names "light spectra, motion of
+  distant galaxies, and composition of matter", that is literally lessons 5, 11 and 13 of the course.
+  The strongest science alignment in the catalog to date.
+- **HS-ESS1-3, \`full\` on the content dimension.** Lesson 13 is exactly this sentence.
+- **HS-ESS1-1, \`partial\`.** The course teaches fusion and the Sun's life span, but "develop a model"
+  is a performance the course does not require.
+- **HS-ESS1-4, DO NOT CLAIM.** "Use mathematical or computational representations" is precisely
+  what Wave 1 cannot do. It becomes claimable when Course 10 (Navigation Math) ships in Wave 3.
+- **HS-ESS1-5, HS-ESS1-6, not taught.** Do not claim.
+
+⚠️ **Carry the existing honesty note forward.** The HS-ESS3-1 entry already in \`ngss.ts\` says: *"This
+is NOT a science course, it has no laboratory work, no investigations and no scientific modelling…
+this contributes to it, it does not discharge it."* Courses 2 and 3 need the same note. NGSS
+performance expectations are three-dimensional (practice × crosscutting concept × core idea) and a
+reading-and-argument course delivers the core idea, not the performance. Saying otherwise to a
+teacher is the "wrong standard is worse than a missing one" failure CLAUDE.md names.
+
+## NGSS, HS-ESS2 Earth's Systems
+
+**NOT FETCHED.** Course 3 (The River and the Watershed) needs this and I did not pull it. Fetch from
+\`https://www.nextgenscience.org/dci-arrangement/hs-ess2-earths-systems\` before authoring the
+standards entry. Likely relevant: HS-ESS2-2 (feedbacks), HS-ESS2-5 (water's properties and its
+effects on Earth materials/surface processes). **Do not write those codes into the repo from memory.**
+
+---
+
+## Common Core Mathematics
+
+**Source:** Common Core State Standards Initiative, *Common Core State Standards for Mathematics*
+(PDF), https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf
+**Fetched:** 2026-08-07 · pp. 60, 81-82
+
+**Code format note.** The PDF prints domain codes in short form (\`N-Q\`, \`S-ID\`, \`S-IC\`) with numbered
+standards beneath a cluster heading. The CCSSI's own dot-notation for the same standards is
+\`CCSS.Math.Content.HSN-Q.A.1\`, \`CCSS.Math.Content.HSS-ID.C.9\`, etc. \`common-core-ela.ts\` uses the
+dot-notation form (\`CCSS.ELA-Literacy.RH.11-12.6\`), so **match that**, but the \`text\` must be the
+verbatim string below, and the cluster heading is worth keeping in the \`note\`.
+
+### Number and Quantity → Quantities (N-Q), p. 60
+
+Cluster: *Reason quantitatively and use units to solve problems.*
+
+| # | Verbatim |
+|---|---|
+| N-Q.1 | Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays. |
+| N-Q.2 | Define appropriate quantities for the purpose of descriptive modeling. |
+| N-Q.3 | Choose a level of accuracy appropriate to limitations on measurement when reporting quantities. |
+
+**N-Q.3 is the sleeper.** "Choose a level of accuracy appropriate to limitations on measurement when
+reporting quantities" is a *judgment*, not a computation, so a Wave 1 course can claim it honestly.
+It is the spine of Course 4 lesson 9 and Course 2 lesson 3.
+
+### Statistics and Probability → Interpreting Categorical and Quantitative Data (S-ID), p. 81
+
+| # | Verbatim |
+|---|---|
+| S-ID.1 | Represent data with plots on the real number line (dot plots, histograms, and box plots). |
+| S-ID.2 | Use statistics appropriate to the shape of the data distribution to compare center (median, mean) and spread (interquartile range, standard deviation) of two or more different data sets. |
+| S-ID.3 | Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points (outliers). |
+| S-ID.4 | Use the mean and standard deviation of a data set to fit it to a normal distribution and to estimate population percentages. Recognize that there are data sets for which such a procedure is not appropriate. Use calculators, spreadsheets, and tables to estimate areas under the normal curve. |
+| S-ID.5 | Summarize categorical data for two categories in two-way frequency tables. Interpret relative frequencies in the context of the data (including joint, marginal, and conditional relative frequencies). Recognize possible associations and trends in the data. |
+| S-ID.6 | Represent data on two quantitative variables on a scatter plot, and describe how the variables are related. (a) Fit a function to the data; use functions fitted to data to solve problems in the context of the data. (b) Informally assess the fit of a function by plotting and analyzing residuals. (c) Fit a linear function for a scatter plot that suggests a linear association. |
+| S-ID.7 | Interpret the slope (rate of change) and the intercept (constant term) of a linear model in the context of the data. |
+| S-ID.8 | Compute (using technology) and interpret the correlation coefficient of a linear fit. |
+| S-ID.9 | Distinguish between correlation and causation. |
+
+**Wave discipline.** S-ID.1.4.6 and .8 all require the learner to *produce* something, a plot, a
+fit, a coefficient. **Wave 1 cannot claim them.** Wave 1 can claim **S-ID.3.5.7 and .9**, which
+are interpretation. S-ID.9 in particular is a single verbatim sentence, "Distinguish between
+correlation and causation", and Course 4 is built around it.
+
+### Statistics and Probability → Making Inferences and Justifying Conclusions (S-IC), pp. 81-82
+
+| # | Verbatim |
+|---|---|
+| S-IC.1 | Understand statistics as a process for making inferences about population parameters based on a random sample from that population. |
+| S-IC.2 | Decide if a specified model is consistent with results from a given data-generating process, e.g., using simulation. |
+| S-IC.3 | Recognize the purposes of and differences among sample surveys, experiments, and observational studies; explain how randomization relates to each. |
+| S-IC.4 | Use data from a sample survey to estimate a population mean or proportion; develop a margin of error through the use of simulation models for random sampling. |
+| S-IC.5 | Use data from a randomized experiment to compare two treatments; use simulations to decide if differences between parameters are significant. |
+| S-IC.6 | Evaluate reports based on data. |
+
+**S-IC.3 and S-IC.6 are the two best fits in the entire framework for this catalog.** "Recognize the
+purposes of and differences among sample surveys, experiments, and observational studies" is Course
+4 lesson 1. "Evaluate reports based on data" is Course 1 in its entirety, and it is the *only*
+math standard I have found that a source-critical reading course can claim at \`full\` coverage
+without stretching a single word.
+
+S-IC.4 is \`partial\` at best for Course 1: it teaches what a margin of error *is* and what it does
+not cover, but "develop a margin of error through the use of simulation models" is Wave 3 work.
+
+---
+
+## What to do with this file
+
+1. Write \`src/lib/standards/shared/common-core-math.ts\` from the tables above, adding
+   \`Mathematics\` to the \`Subject\` union in \`src/lib/standards/types.ts\`.
+2. Extend \`shared/ngss.ts\` with HS-ESS1. Its \`version\` field currently reads
+   "HS-ESS3 Earth and Human Activity" and must be restructured to hold more than one DCI.
+3. Fetch HS-ESS2 before Course 3's standards entry is written.
+4. Add \`adoptions\` entries per state. Common Core Math adoption is **not** identical to Common Core
+   ELA adoption, several states repealed or rebranded one and not the other. Indiana repealed its
+   Common Core adoption in 2014 and is already handled as a non-adopter for ELA in \`data/in.ts\`;
+   **verify each state's math status separately rather than copying the ELA adoption list.**`,
+    provenance: "plans/future-courses/sciences/03-standards-source-text.md",
+  },
+  {
+    key: "sciences-new-subjects-wave-assignment",
+    title: "Can chemistry, physics, aeronautics and engineering be taught here?, wave assignment",
+    group: "Sciences",
+    summary: "Answers line 12 of `01-what-can-we-teach-with-this-app.md`, and the standing question \"can any of",
+    body: `# Can chemistry, physics, aeronautics and engineering be taught here?, wave assignment
+
+Answers line 12 of \`01-what-can-we-teach-with-this-app.md\`, and the standing question *"can any of
+the ideas added to the doc be added to Wave 1? If not, what wave?"* Written 2026-08-07.
+
+## Short answer
+
+| Subject | Wave | Why |
+|---|---|---|
+| **Engineering, electrical, incl. Arduino** | **1** ✅ | Graded by what you BUILT, not by a number the app must check |
+| Engineering, mechanical | 2 | Statics and materials want equations on screen |
+| Chemistry, conceptual | 2 | Chemistry without a balanced equation is thin |
+| Chemistry, stoichiometry | 3 | Every answer is a computed number with a unit |
+| Physics, conceptual | 2 | Buildable in Wave 1, but no bridge to existing content yet |
+| Physics, computational | 3 | Graded computation, by definition |
+| **Aeronautics** | 2 | Already scheduled as Course 6; density altitude and W&B are calculations |
+
+And the previously-added ideas, resolved:
+
+| Idea | Where it landed |
+|---|---|
+| She/He Did the Work | **Wave 1**, as lessons inside Course 2 (Banneker, Payne, the Harvard Computers, Leavitt, Rubin), not as its own course |
+| Kayak course | **Wave 1**, Course 3, with the trip as case study |
+| Ghana beach cleanup | **Deferred** by BAM pending data (operator task 242). The *method* half ships in Wave 1 as Course 4 |
+
+---
+
+## The surprise: Arduino belongs in Wave 1
+
+I expected hardware to be the hardest thing on the list. It is the easiest, and the reason is
+structural rather than lucky.
+
+**Everything blocked in this app is blocked at grading.** No math rendering means no equations on
+screen; no numeric checker means no graded calculations. **Neither constraint touches a hardware
+project**, because a hardware project is graded on *what the learner built*. The \`assignment\` lesson
+type already accepts a submission and returns an instructor grade out of 100 plus written feedback
+([assignment-submit.tsx](src/components/assignment-submit.tsx)). That is the correct grading
+instrument for "wire this circuit and make the LED respond to light," and it needs no platform work.
+
+Three more things make it unusually strong:
+
+1. **BAM already owns the boards and components.** Every lesson can be built and photographed for
+   real before it ships. Nothing is aspirational, which is not true of most course proposals.
+2. **It feeds Course 4 directly.** A sensor logging to an SD card *is* a citizen-science instrument.
+   A learner who finishes both can design a study and then build the thing that collects the data, and that combination is genuinely rare in free or cheap online courses.
+3. **The catalog has a vocational lane already** (\`knot-tying\`, \`off-grid-survival\`,
+   \`cybersecurity-get-the-job\`), so a build-it course is not a foreign object here.
+
+### The one real limitation, stated honestly
+
+The submission box takes **text only**, no file upload. Learners submit a written description plus a
+link to a photo or repository. That is workable and worth designing around from lesson 1 (ask for a
+description of what happened *and* a link), but it is a genuine rough edge: "photograph your circuit"
+is a natural instruction the app cannot natively accept. **Verify against the submission API before
+authoring**; if adding an image URL field turns out to be cheap, it is the highest-value small
+platform change in this document.
+
+### Proposed course, "Make It Sense Something"
+
+Wave 1, ~12 lessons, category Science & Math. Sequence: circuits and safety → what a microcontroller
+actually is → your first output → your first input → analog vs. digital, and what a 10-bit reading
+means → a sensor that measures something real (temperature, light, moisture) → calibration, which is
+the lesson most Arduino courses skip and the one that connects to Course 4 lesson 9 → logging data
+over time → power and enclosures for something left outside → debugging as a discipline → **capstone:
+build a logger, run it for a week, report what it measured and what you'd distrust.**
+
+That capstone is the point. It ends where Course 4 begins.
+
+⚠️ **Safety:** mains voltage never appears. Low-voltage DC only, with a stated scope in lesson 1.
+Battery and LiPo handling gets an explicit warning. This is the one course in the track where bad
+instructions can hurt someone.
+
+---
+
+## Chemistry, split at the equation
+
+**Conceptual chemistry is nearly Wave 1 and I'd still hold it for Wave 2.** Unicode handles formulas
+(H₂O, CO₂, Ca²⁺) fine. What it does not handle well is a *balanced equation with state symbols and a
+reaction arrow*, and a chemistry course that avoids balanced equations to fit a renderer is a
+chemistry course teaching around a hole. One month of waiting for KaTeX buys a course that isn't
+apologising for itself.
+
+- **Wave 2, "Why Things React":** periodic trends, why bonds form, states and phase changes,
+  acids and bases, energy in reactions, oxidation as a concept. Reads equations, doesn't balance
+  them for a grade.
+- **Wave 3, stoichiometry, molarity, gas laws, titration:** every answer is a computed number with
+  a unit and a tolerance. This is the single clearest argument for building numeric grading properly
+  rather than approximating it, because "0.0500 M" and "0.05 M" and "5.00 × 10⁻² M" are the same
+  answer and string equality marks two of them wrong.
+
+**Bridge:** chemistry's natural hook into this catalog is the **BVC Sommelier series**, fermentation,
+extraction, roasting, and the Maillard reaction are chemistry with a paying audience already attached
+(\`bvc-sommelier-wine\`, \`-coffee\`, \`-chocolate\`). That is a better front door than a general survey.
+
+## Physics, buildable in Wave 1, but don't
+
+A conceptual physics course could ship in Wave 1 on the same terms as Course 2. I'd still say no,
+for one reason: **it has no bridge.** Every course in Wave 1 earns its place by making 34 civics
+courses, 11 river courses, or an existing navigation lesson more valuable. A general physics survey
+sits beside the catalog rather than inside it, and this track's whole thesis is that science courses
+here should complement what exists.
+
+The physics that *does* have a bridge is already scheduled: flight (Course 6, FAA), orbital motion
+(Course 7, astronomy), and river hydraulics (Course 3). Build the bridges; skip the survey.
+
+## Aeronautics, unchanged, Wave 2
+
+Already Course 6. The reason it isn't Wave 1 hasn't changed: density altitude and mass-and-balance
+are calculations, and teaching them without letting the learner produce a number is teaching *about*
+them. It also has the best claim on **NGSS HS-PS2** in the whole track.
+
+---
+
+## What this does to the schedule
+
+Wave 1 goes from four courses to **five**, and the added one needs no platform work:
+
+| Wave 1 | Course | Platform work |
+|---|---|---|
+| 1 | How to Read a Number | none |
+| 2 | How We Know What's Out There | none (figures needed) |
+| 3 | The River and the Watershed | none |
+| 4 | Intro to Citizen Science | one Field Log template |
+| **5** | **Make It Sense Something (Arduino)** | none, unless the submission-image field is added |
+
+Wave 2 gains "Why Things React"; Wave 3 gains chemistry computation. Neither changes the critical
+path, because both sit behind platform work that was already scheduled.
+
+## One open question for BAM
+
+**Does the Arduino course go in Wave 1, or does it wait?** Arguments both ways: it's the most
+*fun* course in the track and the only one where BAM builds the thing himself, which is a real
+motivation advantage for the learner-is-BAM stage. Against: it's the least connected to the
+astrophysics goal that started this, and Wave 1 is already four courses.
+
+My recommendation: **yes, but last**, author it after Course 4, so the logger capstone can point at
+a citizen-science study the learner has already designed.`,
+    provenance: "plans/future-courses/sciences/04-new-subjects-wave-assignment.md",
+  },
+  {
+    key: "sciences-math",
+    title: "math",
+    group: "Sciences",
+    summary: "everything is addition",
+    body: `everything is addition
+I want to create a course that shows that after learning distributive and communative properties of math, we can find that all problems are addition math problems when broken down to smaller pieces.`,
+    provenance: "plans/future-courses/sciences/math.md",
+  },
+  {
+    key: "sports-courses-negro-leagues",
+    title: "negro leagues",
+    group: "Sports Courses",
+    summary: "tell story of Negro Leagues.",
+    body: `tell story of Negro Leagues.
+start with baseball and branch out to other sports
+could be a compliment or branch from stories of Indianapolis and Indianapolis IN and Madame CJ Walker
+---
+NOTE (2026-08-22): BAM asked to add POLO to the sports-course list. Not started, deliberately.`,
+    provenance: "plans/future-courses/sports-courses/negro-leagues.md",
+  },
+  {
+    key: "sports-courses-polo",
+    title: "Polo (proposed, NOT started)",
+    group: "Sports Courses",
+    summary: "Added: 2026-08-22, at BAM's request. Status: placeholder. Do not begin authoring until BAM",
+    body: `# Polo (proposed, NOT started)
+
+**Added:** 2026-08-22, at BAM's request. **Status:** placeholder. Do not begin authoring until BAM
+says so.
+
+Sits with the existing sports courses (golf, tennis, croquet, pickleball, lacrosse, football), which
+share a pattern worth keeping: teach the game honestly, and treat who was admitted to it as part of
+the subject rather than an afterthought.
+
+Angles worth researching when this starts, none verified yet:
+- The game's route into the United States and who could afford to play it.
+- Club membership as a gatekeeping mechanism, which is the same civic question \`two-racetracks\` asks
+  about Indianapolis and \`gym-color-line\` asks about facilities.
+- Work Point Charlie and the Black polo players who are not in the popular account.
+- The horse economy: grooms, breeders, and the labor that the sport's image leaves out.
+- Where it is played now, and by whom, versus the picture people carry of it.
+
+Nothing above should enter a lesson without a primary source, per the usual rule.`,
+    provenance: "plans/future-courses/sports-courses/polo.md",
   },
   {
     key: "storytelling-storytelling-curriculum",
