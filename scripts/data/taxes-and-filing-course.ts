@@ -783,5 +783,637 @@ If the year's withholding came to less than the tax, the return shows a balance 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The return is a document you sign
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "who-has-to-file-and-who-should",
+      title: "4 · Who has to file, and who files anyway",
+      section: "Section 2 · The return is a document you sign",
+      body: `The requirement to file is one sentence long, and the sentence does not contain a number.
+
+**26 U.S.C. § 6012(a)(1)(A)** begins: "Every individual having for the taxable year gross income which equals or exceeds the exemption amount" shall make a return, subject to the exceptions the rest of the paragraph sets out (26 U.S.C. § 6012, n.d.).
+
+**Read what it points at rather than what it says.** The threshold is not written into the statute as a figure. It is defined by reference to another amount, and the practical thresholds a filer actually uses, which vary by filing status and age, are published each year. **So there is no correct number to memorise here, and this course will not print one.** The place to look is the current year's Form 1040 instructions and the current revision of IRS Publication 17, which is free, comprehensive, and reissued annually. Name the revision year whenever you quote it.
+
+**And the deadline is in the Code.** Under **26 U.S.C. § 6072(a)**, returns made on the basis of the calendar year "shall be filed on or before the 15th day of April following the close" of that year (26 U.S.C. § 6072, n.d.).
+
+## The people who are not required to file, and should
+
+Here is the asymmetry that matters most in this whole course.
+
+**A refundable credit is paid through the refund machinery, and the refund machinery starts with a return.** Section 6401(b)(1) turns excess refundable credits into an overpayment; section 6402(a) requires the Secretary to refund an overpayment. Neither can happen if nothing was filed, because there is no computed overpayment to refund.
+
+**The same is true of your own withheld money.** Chapter 24 withholding is credited under section 31(a)(1) against the tax the return computes. No return, no computation, no credit, no refund. The money stays where it is.
+
+**So a person whose gross income is below the filing threshold can be owed money and receive none of it by doing nothing.** That is not a trick and it is not hidden. It follows from the plumbing.
+
+## And the money expires
+
+**26 U.S.C. § 6511(a)** sets the outside limit: a claim for credit or refund of an overpayment "shall be filed by the taxpayer within 3 years from the time the return was filed or 2 years from the time the tax was paid, whichever of such periods expires the later, or if no return was filed by the taxpayer, within 2 years from the time the tax was paid" (26 U.S.C. § 6511, n.d.).
+
+**Withholding counts as tax paid.** So for someone who never filed, the second branch is the operative one, and it is short.
+
+## What this course does not cover
+
+**This is the domestic case only.** A United States person living abroad meets a different set of rules: the exclusion for foreign earned income, the credit for foreign taxes, and separate information reporting on foreign accounts. **None of that is taught here.** The catalog's *Taxes for Americans Abroad* course is where that material lives, and it is the handoff this course makes rather than summarising a subject it has not built.
+
+**Nor does this lesson tell you whether to file.** It tells you what the statute requires, what the refund plumbing needs in order to run, and how long the window stays open. What you do with your own facts is yours.
+
+:::reveal What does 26 U.S.C. 6012(a)(1)(A) use in place of a dollar figure? ||| A reference to the exemption amount, with the practical thresholds published annually.
+
+:::reveal Why can a person below the filing threshold still be owed money they never receive? ||| Because a refund requires a computed overpayment, and there is no computation without a return.
+
+:::reveal Under 6511(a), how long does someone who never filed have to claim a refund? ||| Two years from the time the tax was paid.
+
+## Vocabulary
+- **Gross income**: the starting measure the filing requirement is written against, before deductions of any kind.
+- **Filing threshold**: the level of gross income at which section 6012 requires a return, expressed in the statute by reference rather than as a printed figure.
+- **Publication 17**: the IRS's free, comprehensive, annually revised guide for individuals, and the right place to look up a current threshold with its year named.
+- **Limitation period**: the outside time within which an act must be done, here the section 6511(a) window for claiming a refund.
+
+## Sources
+26 U.S.C. § 6012. (n.d.). *Persons required to make returns of income*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6012
+
+26 U.S.C. § 6072. (n.d.). *Time for filing income tax returns*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6072
+
+26 U.S.C. § 6511. (n.d.). *Limitations on credit or refund*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6511`,
+    },
+    {
+      slug: "under-penalties-of-perjury",
+      title: "5 · You sign it under penalties of perjury, and that starts two clocks",
+      section: "Section 2 · The return is a document you sign",
+      body: `A return is not a form. It is a sworn statement, and one sentence of the Code makes it one.
+
+**26 U.S.C. § 6065** reads, in its entirety: "Except as otherwise provided by the Secretary, any return, declaration, statement, or other document required to be made under any provision of the internal revenue laws or regulations shall contain or be verified by a written declaration that it is made under the penalties of perjury" (26 U.S.C. § 6065, n.d.).
+
+**That is why the signature block says what it says**, and it is why signing a return is a different act from filling in a form. **26 U.S.C. § 7206(1)** makes it a felony to wilfully make and subscribe any return "which contains or is verified by a written declaration that it is made under the penalties of perjury, and which he does not believe to be true and correct as to every material matter" (26 U.S.C. § 7206, n.d.).
+
+## Two penalties, and they run at different speeds
+
+Most people collapse "did not file" and "did not pay" into one idea. The Code does not.
+
+**Failure to file, 26 U.S.C. § 6651(a)(1):** unless the failure is "due to reasonable cause and not due to willful neglect," there is added to the tax "5 percent of the amount of such tax if the failure is for not more than 1 month, with an additional 5 percent for each additional month or fraction thereof during which such failure continues, not exceeding 25 percent in the aggregate" (26 U.S.C. § 6651, n.d.).
+
+**Failure to pay, 26 U.S.C. § 6651(a)(2):** the same structure, the same reasonable-cause escape, and **0.5 percent** per month rather than 5 percent.
+
+**Ten to one.** The penalty for not filing accrues ten times as fast as the penalty for not paying. Those are two different positions with two different prices, and the Code has already told you which one it treats as worse.
+
+**Both carry the same escape clause**, and it is a real one: reasonable cause and not wilful neglect. What counts is a body of law of its own, and this course does not attempt it.
+
+## Filing starts a clock. Not filing means the clock never starts.
+
+This is the most under-appreciated consequence of the signature.
+
+**26 U.S.C. § 6501(a)**: except as otherwise provided, tax "shall be assessed within 3 years after the return was filed" (26 U.S.C. § 6501, n.d.).
+
+**§ 6501(e)(1)(A)** extends that to **6 years** where the taxpayer omits from gross income an amount properly includible that is in excess of 25 percent of the gross income stated in the return.
+
+**§ 6501(c)(1)**: in the case of "a false or fraudulent return with the intent to evade tax," the tax may be assessed "at any time."
+
+**§ 6501(c)(3)**: in the case of failure to file a return, the tax may be assessed "at any time."
+
+**Set those four side by side and the shape appears.** The three-year period is not a right the taxpayer holds by default. It is something a filed return produces. A person who does not file has not bought silence; they have removed the deadline that would have ended the matter.
+
+**And section 6511(a), from the previous lesson, is the mirror on the taxpayer's side.** Filing starts the clock in both directions.
+
+:::reveal What does 26 U.S.C. 6065 require of any return required under the internal revenue laws? ||| That it contain or be verified by a written declaration made under the penalties of perjury.
+
+:::reveal How much faster does the failure-to-file penalty accrue than the failure-to-pay penalty? ||| Ten times: 5 percent a month against 0.5 percent, each capped at 25 percent in the aggregate.
+
+:::reveal What is the assessment period where no return was filed at all? ||| There is none. Under 6501(c)(3) the tax may be assessed at any time.
+
+## Vocabulary
+- **Verification**: the written declaration under penalties of perjury that section 6065 requires on a return, which converts a form into a sworn statement.
+- **Assessment**: the formal recording of a tax liability, which section 6501 confines to a period measured from the filing of the return.
+- **Reasonable cause**: the statutory escape from both section 6651 penalties, available where the failure was not due to wilful neglect.
+- **Substantial omission**: the section 6501(e)(1)(A) trigger, an omission of more than 25 percent of the gross income stated in the return, which doubles the assessment period.
+
+## Sources
+26 U.S.C. § 6065. (n.d.). *Verification of returns*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6065
+
+26 U.S.C. § 6501. (n.d.). *Limitations on assessment and collection*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6501
+
+26 U.S.C. § 6651. (n.d.). *Failure to file tax return or to pay tax*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6651
+
+26 U.S.C. § 7206. (n.d.). *Fraud and false statements*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/7206`,
+    },
+    {
+      slug: "filing-status-is-a-legal-fact",
+      title: "6 · Filing status is a legal fact, not a preference",
+      section: "Section 2 · The return is a document you sign",
+      body: `Filing status is presented to most people as a menu. It is a determination, and the Code makes it on a date.
+
+**26 U.S.C. § 7703(a)**: "the determination of whether an individual is married shall be made as of the close of his taxable year; except that if his spouse dies during his taxable year such determination shall be made as of the time of such death" (26 U.S.C. § 7703, n.d.).
+
+**One day decides twelve months.** A marriage on 31 December and a marriage on 2 January produce different filing statuses for the year just ended, and nothing about the intervening conduct changes that.
+
+## The rule for people living apart
+
+**§ 7703(b)** treats a married individual as not married where three things hold together: the individual maintains as a home a household that is for more than half the taxable year the principal place of abode of a child for whom a dependency deduction is allowable, furnishes over half the cost of maintaining that household, and, "during the last 6 months of the taxable year, such individual's spouse is not a member of such household" (26 U.S.C. § 7703, n.d.).
+
+**Three conditions, joined by "and."** Two out of three is not the rule.
+
+## Head of household is written as a closed test
+
+**26 U.S.C. § 2(b)(1)** is unusually blunt: an individual is a head of a household "if, and only if," the individual is not married at the close of the taxable year, is not a surviving spouse as defined in subsection (a), and maintains as a home a household which constitutes for more than one-half of the taxable year the principal place of abode of a qualifying child or other qualifying person (26 U.S.C. § 2, n.d.). The paragraph then adds its own definition of maintaining: an individual maintains a household "only if over half of the cost of maintaining the household during the taxable year is furnished by such individual."
+
+**"If, and only if" is drafting that leaves nothing to preference.** So is a definition of "maintains" written into the same paragraph.
+
+## The joint return, and the sentence people sign without reading
+
+**26 U.S.C. § 6013(a)** allows a married couple to make a single return jointly "even though one of the spouses has neither gross income nor deductions" (26 U.S.C. § 6013, n.d.).
+
+Then **§ 6013(d)(3)**: "if a joint return is made, the tax shall be computed on the aggregate income and the liability with respect to the tax shall be joint and several" (26 U.S.C. § 6013, n.d.).
+
+**Joint and several means each spouse is liable for the whole tax, not for half of it.** Collection may proceed against either one for the entire amount, and it does not matter which of them earned the income, which of them prepared the return, or whether the marriage still exists when the bill arrives. That is a legal consequence of a signature, and almost nobody is told about it at the moment they sign.
+
+**Relief from it exists and is a separate procedure.** Section 6015 provides routes for a spouse to be relieved of joint liability in defined circumstances, each with its own conditions and its own deadlines. **This course names the section and stops there**, because whether any of it applies to a particular person is exactly the individualised question it refuses to answer.
+
+## And status moves the numbers, which is why no numbers appear here
+
+Filing status selects the rate schedule and the basic standard deduction, and both are adjusted annually. **So the amounts are deliberately absent from this lesson.** Look them up in the current year's instructions or Publication 17, and write the year down beside whatever you find.
+
+:::reveal On what date does 26 U.S.C. 7703(a) determine whether an individual is married? ||| As of the close of the taxable year, or the time of death where a spouse dies during it.
+
+:::reveal What does joint and several liability under 6013(d)(3) mean for each spouse? ||| Each is liable for the whole tax, and collection may proceed against either for the entire amount.
+
+:::reveal What phrase does 26 U.S.C. 2(b)(1) use to introduce the head of household test? ||| If, and only if, which is drafting that admits no preference.
+
+## Vocabulary
+- **Filing status**: the category the Code assigns a filer, determined by facts on a stated date rather than chosen, which selects the rate schedule and the basic standard deduction.
+- **Joint and several liability**: the rule at 6013(d)(3) making each spouse on a joint return liable for the entire tax rather than a share of it.
+- **Head of household**: the status defined at 2(b)(1) by a closed test, including a household-maintenance requirement the same paragraph defines.
+- **Section 6015 relief**: the separate statutory procedure by which a spouse may be relieved of joint liability, named here and not advised on.
+
+## Sources
+26 U.S.C. § 2. (n.d.). *Definitions and special rules*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/2
+
+26 U.S.C. § 6013. (n.d.). *Joint returns of income tax by husband and wife*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6013
+
+26 U.S.C. § 6015. (n.d.). *Relief from joint and several liability on joint return*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6015
+
+26 U.S.C. § 7703. (n.d.). *Determination of marital status*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/7703`,
+    },
+    {
+      slug: "quiz-the-return",
+      title: "Section 2 review · Filing, the signature, and status",
+      section: "Section 2 · The return is a document you sign",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What does 26 U.S.C. 6012(a)(1)(A) use in place of a dollar figure?",
+            options: ["A reference to the exemption amount", "A table of thresholds broken down by filing status and age", "A percentage of the median household income for the taxable year", "The standard deduction stated in section 63 of the same subtitle"],
+            correctIndex: 0,
+            explanation: "The practical thresholds are published annually, which is why the course prints none of them.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Which measure of income does the filing requirement in 6012(a)(1)(A) use?",
+            options: ["Gross income", "Adjusted gross income, after the deductions allowed above the line", "Taxable income, after the standard deduction has been subtracted", "Net earnings from self-employment, computed under chapter 2"],
+            correctIndex: 0,
+            explanation: "It is the starting measure, before deductions of any kind.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Where does the lesson send a reader for the current filing threshold?",
+            options: ["This year's instructions and Publication 17", "The text of section 6012 itself, which states the figures directly", "The withholding tables the Secretary issues to employers each year", "A summary table maintained by the course and revised each January"],
+            correctIndex: 0,
+            explanation: "Publication 17 is free, comprehensive and reissued annually, and the revision year should be named whenever it is quoted.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Under 26 U.S.C. 6072(a), when must a calendar-year return be filed?",
+            options: ["On or before 15 April", "Within ninety days of the close of the calendar year", "On or before the last day of the third month following year end", "By a date the Secretary sets each year in a revenue procedure"],
+            correctIndex: 0,
+            explanation: "The statute says on or before the 15th day of April following the close of the calendar year.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Why can a person below the filing threshold still be owed money and receive none of it?",
+            options: ["A refund needs a computed overpayment", "Because refundable credits are only paid to filers who owe tax", "Because withholding below the threshold is refunded automatically", "Because the Secretary pays such refunds only on a written request"],
+            correctIndex: 0,
+            explanation: "Section 6401(b)(1) and 6402(a) both run on a computed overpayment, and there is no computation without a return.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "What happens to chapter 24 withholding if no return is ever filed?",
+            options: ["It is never credited", "It is refunded automatically after the limitation period expires", "It is transferred to the following year as an estimated tax payment", "It is credited against the chapter 21 taxes withheld on the same wages"],
+            correctIndex: 0,
+            explanation: "Section 31(a)(1) credits it against the tax the return computes, so with no return there is no credit and no refund.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Under 26 U.S.C. 6511(a), what is the general period for claiming a refund?",
+            options: ["Three years from filing, or two from payment", "Six years from the close of the taxable year in every case", "Ten years from the date the Secretary assessed the tax at issue", "Until the assessment period under section 6501 has closed"],
+            correctIndex: 0,
+            explanation: "Whichever of those two periods expires the later, which is why the filing date matters to the taxpayer as well.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Under 6511(a), how long does someone who never filed have to claim a refund?",
+            options: ["Two years from payment", "Three years from the close of the taxable year in question", "Until the Secretary issues a notice of deficiency for that year", "Indefinitely, since no return means no limitation period has begun"],
+            correctIndex: 0,
+            explanation: "Where no return was filed, the second branch of the sentence is the operative one and it is the shorter of the two.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Why does withholding matter to the section 6511(a) clock for a non-filer?",
+            options: ["Withholding counts as tax paid", "Because withholding suspends the limitation period until a return arrives", "Because an employer's remittance restarts the period each pay period", "Because chapter 24 amounts are excluded from the definition of payment"],
+            correctIndex: 0,
+            explanation: "That is what makes the two-years-from-payment branch the operative limit for someone who never filed.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Which case does this course expressly not cover?",
+            options: ["Filing from abroad", "The consequences of signing a return under penalties of perjury", "The federal withholding taken from an ordinary domestic paycheck", "The limitation period for claiming a refund of overpaid tax"],
+            correctIndex: 0,
+            explanation: "The exclusion for foreign earned income, the foreign tax credit and foreign account reporting belong to the catalog's Taxes for Americans Abroad course.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Which catalog course does this lesson hand the foreign case to?",
+            options: ["Taxes for Americans Abroad", "Banking Abroad, which covers accounts held outside the United States", "Moving Abroad 101, which covers residence and the practicalities of a move", "Healthcare Abroad, which covers coverage outside the United States"],
+            correctIndex: 0,
+            explanation: "The course names the handoff rather than summarising a subject it has not built.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Does this lesson tell a reader whether to file?",
+            options: ["No", "Yes, whenever any tax was withheld during the year", "Yes, whenever gross income falls below the published threshold", "Only where the reader expects to claim a refundable credit"],
+            correctIndex: 0,
+            explanation: "It states what the statute requires, what the refund plumbing needs, and how long the window stays open.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "What is Publication 17?",
+            options: ["The IRS's free annual guide for individuals", "The regulation prescribing the employee's withholding certificate", "The statutory table of filing thresholds enacted by Congress", "The annual revenue procedure adjusting each inflation-indexed amount"],
+            correctIndex: 0,
+            explanation: "It is comprehensive and reissued annually, which is why the lesson insists on naming the revision year.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "What does 26 U.S.C. 6065 require of a return?",
+            options: ["A declaration under penalties of perjury", "A signature witnessed by a person authorised to administer oaths", "A statement of the preparer's identifying number alongside the filer's", "An acknowledgement that the Secretary may examine the return later"],
+            correctIndex: 0,
+            explanation: "It must contain or be verified by a written declaration that it is made under the penalties of perjury.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "Which documents does section 6065 reach?",
+            options: ["Any return, declaration, statement or document required", "Only the annual individual income tax return itself", "Only documents a paid preparer signs on a filer's behalf", "Only returns filed electronically rather than on paper"],
+            correctIndex: 0,
+            explanation: "The sentence covers anything required to be made under any provision of the internal revenue laws or regulations.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What does 26 U.S.C. 7206(1) make criminal?",
+            options: ["Signing a return you do not believe true", "Failing to file a return by the date section 6072 prescribes", "Understating tax by any amount, whatever the filer's state of mind", "Refusing to produce records when an examination has been opened"],
+            correctIndex: 0,
+            explanation: "It requires wilfully making and subscribing a document verified under penalties of perjury and not believed true as to every material matter.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What is the section 6651(a)(1) failure-to-file penalty rate?",
+            options: ["5 percent a month, capped at 25 percent", "1 percent a month, with no aggregate limit stated in the statute", "10 percent of the tax, imposed once whatever the length of delay", "0.5 percent a month, matching the failure-to-pay penalty exactly"],
+            correctIndex: 0,
+            explanation: "Five percent for the first month or fraction, five more for each additional month, not exceeding 25 percent in the aggregate.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What is the section 6651(a)(2) failure-to-pay penalty rate?",
+            options: ["0.5 percent a month", "5 percent a month, the same rate as the failure to file", "2 percent a month, compounded from the date the tax was due", "An amount the Secretary sets by revenue procedure for each year"],
+            correctIndex: 0,
+            explanation: "Same structure and same 25 percent aggregate cap, at one tenth the rate of the failure-to-file penalty.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What is the escape clause both section 6651 penalties carry?",
+            options: ["Reasonable cause, not wilful neglect", "A first-time waiver available once in any five-year period", "A hardship exception based on the filer's household income", "An automatic abatement where the tax is paid within thirty days"],
+            correctIndex: 0,
+            explanation: "Both paragraphs begin unless it is shown that such failure is due to reasonable cause and not due to willful neglect.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What is the ratio between the two section 6651 penalties?",
+            options: ["Ten to one", "Two to one, with the failure to pay the more expensive of the two", "One to one, since both accrue at the same monthly percentage rate", "Five to one, reflecting the difference in their aggregate caps"],
+            correctIndex: 0,
+            explanation: "Five percent a month against half a percent, which is the Code telling you which position it treats as worse.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What is the general assessment period under 26 U.S.C. 6501(a)?",
+            options: ["Three years after the return was filed", "Three years after the close of the taxable year in question", "Six years after the tax was paid by withholding or otherwise", "Ten years after the Secretary records the liability on the account"],
+            correctIndex: 0,
+            explanation: "The period runs from the filing of the return, which is why filing is what starts it.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What does 26 U.S.C. 6501(e)(1)(A) extend the assessment period to?",
+            options: ["Six years", "Four years, where the return understates the tax by any amount", "Eight years, where the omission relates to a foreign source of income", "Twelve years, where the omission is discovered on examination"],
+            correctIndex: 0,
+            explanation: "It applies where the taxpayer omits an amount in excess of 25 percent of the gross income stated in the return.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What triggers the six-year assessment period?",
+            options: ["Omitting over 25 percent of stated gross income", "Any understatement of tax exceeding one thousand dollars", "A return prepared by someone other than the taxpayer", "A refund claim filed after the ordinary period has closed"],
+            correctIndex: 0,
+            explanation: "The measure is gross income stated in the return, not the tax and not the deductions claimed.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What is the assessment period for a false or fraudulent return under 6501(c)(1)?",
+            options: ["There is none", "Six years, the same as a substantial omission of income", "Ten years, running from the date the fraud was discovered", "Three years, but only where the taxpayer filed on time"],
+            correctIndex: 0,
+            explanation: "Where the return is false or fraudulent with the intent to evade tax, the tax may be assessed at any time.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What is the assessment period where no return was filed at all?",
+            options: ["There is none", "Two years from the date the tax was paid by withholding", "Three years from the deadline the return should have met", "Six years, on the theory that all income was omitted"],
+            correctIndex: 0,
+            explanation: "Section 6501(c)(3) allows assessment at any time, so a non-filer has removed the deadline rather than bought silence.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What does the lesson call the three-year assessment period?",
+            options: ["Something a filed return produces", "A constitutional protection independent of any filing", "A grace period the Secretary grants at the taxpayer's request", "A limit that runs from the close of the taxable year regardless"],
+            correctIndex: 0,
+            explanation: "It is not a default entitlement, which is why the four subsections read together change the meaning of not filing.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What makes a return a sworn statement rather than a form?",
+            options: ["Section 6065", "The presence of a paid preparer's signature alongside the filer's", "The requirement in section 6072 that it be filed by a fixed date", "The Secretary's authority under section 7602 to examine it later"],
+            correctIndex: 0,
+            explanation: "One sentence requiring a written declaration under penalties of perjury is what converts the document.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "On what date does 26 U.S.C. 7703(a) determine whether an individual is married?",
+            options: ["The close of the taxable year", "The date the return for that year is actually filed", "The first day of the taxable year to which the return relates", "The date the Secretary receives the withholding certificate"],
+            correctIndex: 0,
+            explanation: "The one exception is where a spouse dies during the year, in which case the determination is made at the time of death.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What is the exception to the close-of-year rule in 7703(a)?",
+            options: ["Death of a spouse during the year", "Separation under a written agreement signed before July", "A change of residence to a different state during the year", "The filing of a joint return for the immediately preceding year"],
+            correctIndex: 0,
+            explanation: "In that case the determination is made as of the time of the death rather than at year end.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "How many conditions must hold together for the 7703(b) living-apart rule?",
+            options: ["Three", "Two, being the household test and the six-month absence test", "Four, adding a requirement that a decree of separation be in force", "One, being that the spouses maintained separate residences"],
+            correctIndex: 0,
+            explanation: "A household that is a child's principal place of abode for over half the year, over half the maintenance cost furnished, and the spouse absent for the last six months.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What must be true of the spouse during the last six months under 7703(b)?",
+            options: ["Not a member of the household", "Contributing less than half the household's maintenance cost", "Living in a different state from the individual claiming the rule", "Filing a separate return for the same taxable year in question"],
+            correctIndex: 0,
+            explanation: "The statute names the last six months of the taxable year specifically, alongside the two other conditions.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What phrase does 26 U.S.C. 2(b)(1) use to introduce the head of household test?",
+            options: ["If, and only if", "To the extent that the Secretary may by regulation provide", "Where the individual so elects on a timely filed return", "Notwithstanding any other provision of this subtitle"],
+            correctIndex: 0,
+            explanation: "It is drafting that admits no preference, and the same paragraph then defines what maintaining a household means.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What share of the household's cost must a head of household furnish under 2(b)(1)?",
+            options: ["Over half", "At least a quarter, measured across the whole taxable year", "The entire cost, with no contribution from any other person", "Whatever share exceeds the qualifying child's own contribution"],
+            correctIndex: 0,
+            explanation: "The paragraph says an individual maintains a household only if over half of the cost is furnished by that individual.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "For how much of the year must the household be a qualifying child's principal place of abode?",
+            options: ["More than one-half", "The entire taxable year without any interruption", "At least three months, whether or not consecutive", "The last six months of the taxable year specifically"],
+            correctIndex: 0,
+            explanation: "Section 2(b)(1) uses more than one-half of the taxable year for the abode test.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What does 26 U.S.C. 6013(a) permit even where one spouse has no income?",
+            options: ["A single joint return", "A transfer of the other spouse's deductions to the earning spouse", "An exemption from the requirement to sign under penalties of perjury", "A separate computation of tax on each spouse's own income"],
+            correctIndex: 0,
+            explanation: "The subsection says so expressly, even though one of the spouses has neither gross income nor deductions.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What does 26 U.S.C. 6013(d)(3) say about liability on a joint return?",
+            options: ["It is joint and several", "It is divided in proportion to each spouse's share of the income", "It attaches only to the spouse who signed the return first", "It falls on the spouse whose name appears first on the form"],
+            correctIndex: 0,
+            explanation: "The tax is computed on the aggregate income and the liability is joint and several.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What does joint and several liability mean for each spouse?",
+            options: ["Each is liable for the whole tax", "Each is liable for the portion attributable to their own income", "Each is liable only while the marriage continues to exist", "Each is liable up to the value of jointly held property"],
+            correctIndex: 0,
+            explanation: "Collection may proceed against either spouse for the entire amount, whoever earned the income or prepared the return.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "Which section provides relief from joint and several liability?",
+            options: ["Section 6015", "Section 6013(b), which permits a joint return to be amended", "Section 6511, which sets the period for claiming a refund", "Section 7703, which determines an individual's marital status"],
+            correctIndex: 0,
+            explanation: "It supplies routes with their own conditions and deadlines, which the course names without advising on.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "Why does this lesson print no rate schedule or standard deduction amount?",
+            options: ["Both are adjusted annually", "Because they are set by the states rather than by federal law", "Because they depend on facts the filer supplies on the certificate", "Because the Code no longer states either figure in any section"],
+            correctIndex: 0,
+            explanation: "Filing status selects them, and the lesson sends a reader to the current instructions with the year written down.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What does filing status select, according to the lesson?",
+            options: ["The rate schedule and the standard deduction", "The chapter of the Code under which wages are withheld upon", "The limitation period for assessing tax on the year's return", "The date by which a calendar-year return must be filed"],
+            correctIndex: 0,
+            explanation: "Both are adjusted annually, which is why the lesson refuses to print either.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "How does the lesson describe the difference a single day can make to filing status?",
+            options: ["One day decides twelve months", "The status is prorated across the portion of the year affected", "The change takes effect from the following taxable year onward", "The filer elects which of the two statuses to apply for that year"],
+            correctIndex: 0,
+            explanation: "Because 7703(a) fixes the determination at the close of the taxable year, nothing about the intervening conduct changes it.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What does the lesson say about the moment a joint return is signed?",
+            options: ["Almost nobody is told about the liability", "The signature is witnessed by a person authorised to take oaths", "The Secretary confirms each spouse's consent before processing it", "Each spouse signs a separate acknowledgement of their own share"],
+            correctIndex: 0,
+            explanation: "Joint and several liability is a legal consequence of that signature, and it survives the marriage.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "Which condition of the 7703(b) rule concerns a child?",
+            options: ["The household is the child's principal abode", "The child must be under the age of seventeen at year end", "The child must have earned income below the filing threshold", "The child must be claimed on the other spouse's return instead"],
+            correctIndex: 0,
+            explanation: "For more than half the taxable year, and for a child for whom a dependency deduction is allowable.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "Why does the course stop after naming section 6015?",
+            options: ["Whether it applies is individualised", "Because the section was repealed and replaced by section 6013(e)", "Because relief is granted automatically once a divorce is final", "Because the catalog treats liability questions as out of scope"],
+            correctIndex: 0,
+            explanation: "That is exactly the kind of question the course refuses to answer about a particular person's facts.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What is a limitation period, as the course uses the term?",
+            options: ["The outside time for doing an act", "A cap on the amount of tax that may be assessed for a year", "A restriction on which credits may be claimed on a late return", "A ceiling on the penalties that may accrue under section 6651"],
+            correctIndex: 0,
+            explanation: "Section 6511(a) is the taxpayer's version and section 6501 is the government's.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "What is verification, in the sense section 6065 uses it?",
+            options: ["The declaration under penalties of perjury", "A check performed by the Secretary before a refund is issued", "A confirmation from the employer that the wages reported are correct", "An audit conducted before a return is accepted for processing"],
+            correctIndex: 0,
+            explanation: "It is what converts a form into a sworn statement and brings section 7206(1) into play.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What is assessment, as section 6501 uses the term?",
+            options: ["The formal recording of a liability", "The examination of a return for accuracy and completeness", "The collection of tax from a taxpayer's wages or bank account", "The computation a taxpayer performs when preparing a return"],
+            correctIndex: 0,
+            explanation: "Section 6501 confines it to a period measured from the filing of the return, subject to its own exceptions.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "Does the course attempt to explain what counts as reasonable cause?",
+            options: ["No", "Yes, through a list of the circumstances the Secretary accepts", "Yes, by reference to the penalty abatement rules in section 6404", "Only for the failure-to-file penalty and not the failure to pay"],
+            correctIndex: 0,
+            explanation: "It says the escape is real and that what counts is a body of law of its own that the course does not attempt.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What does the lesson say about a marriage on 31 December compared with one on 2 January?",
+            options: ["They produce different statuses for the year ended", "They produce the same status, since the years are adjacent", "The later date governs, because status follows the filing date", "The filer may choose between them on a timely filed return"],
+            correctIndex: 0,
+            explanation: "Section 7703(a) fixes the determination at the close of the taxable year, so the one-day gap crosses a boundary.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What must a head of household not be, under 2(b)(1), besides unmarried?",
+            options: ["A surviving spouse", "A person who filed jointly in the preceding taxable year", "A person claimed as a dependent on any other return", "A person whose qualifying child has any gross income"],
+            correctIndex: 0,
+            explanation: "The test excludes a surviving spouse as defined in section 2(a) before reaching the household conditions.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "How does the lesson characterise filing status as it is usually presented?",
+            options: ["As a menu, when it is a determination", "As a determination, when it is genuinely a free choice", "As an election the filer makes once and cannot later change", "As a matter of state law rather than of the Internal Revenue Code"],
+            correctIndex: 0,
+            explanation: "The Code makes the determination on a date, using tests written as closed conditions.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What are the maximum fine and prison term the lesson attributes to a section 7206 conviction for an individual?",
+            options: ["A fine and up to three years", "A fine only, with no possibility of a custodial sentence", "Up to one year, which makes the offence a misdemeanour", "Up to ten years, with a mandatory minimum on a first offence"],
+            correctIndex: 0,
+            explanation: "The offence is a felony, and the statute also allows the costs of prosecution to be imposed.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What does the course say the refund plumbing needs before it can run?",
+            options: ["A return", "A written claim on a form the Secretary prescribes", "An examination confirming the amounts the filer reported", "A certificate from the employer showing the tax withheld"],
+            correctIndex: 0,
+            explanation: "Sections 6401(b)(1) and 6402(a) both operate on a computed overpayment, and the computation comes from the return.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Which two statutory clocks does the lesson say filing starts?",
+            options: ["Assessment and refund", "Collection and examination, which run from the same date", "Penalty accrual and interest, which stop once a return arrives", "Withholding and estimated payments, which reset each January"],
+            correctIndex: 0,
+            explanation: "Section 6501 measures the government's period from the filed return and section 6511(a) measures the taxpayer's from the same event.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What does 6501(e)(1)(A) measure the 25 percent against?",
+            options: ["Gross income stated in the return", "The tax shown as due on the face of the return", "The total of deductions claimed for the taxable year", "The refund the taxpayer claimed for that same year"],
+            correctIndex: 0,
+            explanation: "The omitted amount must exceed 25 percent of the gross income stated, which is a comparison to the return rather than to the tax.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What does the lesson say a non-filer has NOT bought?",
+            options: ["Silence", "Any protection against the failure-to-pay penalty", "The right to claim a refund under section 6511(a)", "An extension of the ordinary filing deadline in section 6072"],
+            correctIndex: 0,
+            explanation: "Under 6501(c)(3) the tax may be assessed at any time, so what has been removed is the deadline that would have ended the matter.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What kind of income measure does the lesson say gross income is?",
+            options: ["The starting measure, before deductions", "The measure remaining after the standard deduction is taken", "The measure the withholding tables use to compute each payment", "The measure used to determine eligibility for a refundable credit"],
+            correctIndex: 0,
+            explanation: "That is why the section 6012 filing requirement is written against it rather than against taxable income.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Which three foreign-case topics does the lesson name as outside its scope?",
+            options: ["Foreign earned income, foreign tax credit, account reporting", "Estate tax, gift tax, and generation-skipping transfer tax", "Payroll tax, self-employment tax, and the additional Medicare tax", "State income tax, local income tax, and property tax"],
+            correctIndex: 0,
+            explanation: "All three belong to the catalog's course on taxes for Americans abroad rather than to this one.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "What does the lesson say is not a trick and not hidden?",
+            options: ["That doing nothing can forfeit money owed", "That the filing threshold changes with each taxable year", "That withholding is computed from a certificate the filer signs", "That a joint return makes both spouses liable for the whole tax"],
+            correctIndex: 0,
+            explanation: "It follows from the plumbing: no return, no computed overpayment, no refund.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+          {
+            prompt: "Which is worse in the Code's own pricing, not filing or not paying?",
+            options: ["Not filing", "Not paying, because the balance itself continues to grow", "Neither, because the two penalties accrue at identical rates", "It depends on whether the Secretary examines the return"],
+            correctIndex: 0,
+            explanation: "Five percent a month against half a percent a month is the Code stating its own priority.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What is a substantial omission, as the lesson defines it?",
+            options: ["Over 25 percent of stated gross income", "Any omission the Secretary discovers on examination", "An understatement of more than five thousand dollars of tax", "A failure to report income from any source outside the country"],
+            correctIndex: 0,
+            explanation: "It is the section 6501(e)(1)(A) trigger that doubles the ordinary three-year assessment period.",
+            sourceLessonSlug: "under-penalties-of-perjury",
+          },
+          {
+            prompt: "What does the lesson call the head of household definition of maintaining a household?",
+            options: ["Written into the same paragraph", "Left entirely to the Secretary's regulations to supply", "Borrowed from the definition used in section 7703(b)", "Determined by the state law where the household is located"],
+            correctIndex: 0,
+            explanation: "Section 2(b)(1) supplies its own over-half-the-cost test rather than leaving the word undefined.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "Does the marriage still have to exist when a joint tax bill arrives?",
+            options: ["No", "Yes, or the liability lapses as to both spouses", "Yes, unless a decree expressly preserves the liability", "Only where the return was filed during the marriage"],
+            correctIndex: 0,
+            explanation: "Joint and several liability does not depend on the marriage continuing, on who earned the income, or on who prepared the return.",
+            sourceLessonSlug: "filing-status-is-a-legal-fact",
+          },
+          {
+            prompt: "What does 26 U.S.C. 6072(a) govern?",
+            options: ["When a return must be filed", "Who is required to make a return of income", "How long the Secretary has to assess the tax shown", "Whether a return must be verified under penalties of perjury"],
+            correctIndex: 0,
+            explanation: "It fixes 15 April for calendar-year returns, separately from the section 6012 question of who must file at all.",
+            sourceLessonSlug: "who-has-to-file-and-who-should",
+          },
+        ],
+      },
+    },
   ],
 };
