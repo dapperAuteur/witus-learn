@@ -32,6 +32,12 @@ import { STAGED_CITATIONS } from "../src/lib/citation-content/citations";
 
 /** Staged courses that legitimately have no citations. Keep this short and justified. */
 const NO_CITATIONS_EXPECTED: Record<string, string> = {
+  // PENDING REGENERATION, not a content gap and not an exemption. The course carries a full
+  // bibliography; it was renamed from `harvard-ed-l-d` on 2026-08-28 to stop the slug implying
+  // a relationship with a university that does not exist. gen:citations reads the DATABASE, so
+  // the registry still files those citations under the OLD slug until the course is re-seeded
+  // and regenerated. Delete this line at that point; check:citations will tell you when.
+  "education-leadership-doctoral-rigor": "PENDING REGENERATION after the rename and re-seed",
   // Confirmed by generation on 2026-08-03: no `## Sources` block anywhere in the course.
   // These are CONTENT GAPS rather than exemptions, and they are recorded here so the build stays
   // green while they are fixed rather than being quietly forgotten. Remove the line once the course

@@ -5456,6 +5456,242 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "23 · Capstone: the finding Congress wrote down, and one document of your own",
     ],
   },
+
+  // ══ MONEY-05 · Taxes, and the Money Taken Before You See It ══════════════════
+  //
+  // FOUR CLAIMS, AND THE NUMBER IS DELIBERATE. Every state personal-finance framework that names
+  // taxes at all names something narrow: a paycheck standard, an effect-on-income standard, or a
+  // complete-the-forms standard. Splitting the course into four narrow claims lets each state map
+  // the part it actually asks for. A single broad "teaches taxes" claim would have to be described
+  // as partial everywhere and would promise a teacher a filing tutorial, which this course is not.
+  //
+  // WHAT THIS COURSE DOES NOT TEACH, recorded here so no later editor stretches one of these. It
+  // teaches NO budgeting, NO saving or investing, NO insurance, NO careers or income planning, and
+  // NO macroeconomics or tax policy. It does not survey types of tax (sales, property, capital
+  // gains, estate) and does not teach progressive against regressive as a taxonomy, which is why
+  // Georgia's SSEPF5 is refused on its own entry rather than claimed thinly. It does not walk a
+  // Form 1040 line by line, and it teaches no state or local tax at all. It also gives NO ADVICE
+  // and says so in three separate lessons, which matters wherever a standard asks a student to
+  // decide something rather than to read it.
+  {
+    id: "money.payroll-tax-withholding",
+    claim:
+      "Teaches which federal taxes an employer deducts from wages, which chapter of the Code imposes each and which of them is credited back at filing, and works gross pay to net pay from a pay statement.",
+    courseSlugs: ["taxes-and-filing"],
+    lessons: [
+      // 26 U.S.C. 3402(a)(1) (the employer's duty), 3101 (the separate chapter 21 tax on the same
+      // statement), and 31(a)(1), which credits chapter 24 withholding and nothing else. Gross to
+      // net worked on a labelled hypothetical statement, with the classification as the lesson.
+      "1 · The money is taken before you ever see it",
+      // The certificate the employee furnishes under 3402(f)(2), the form the regulation prescribes
+      // at 26 CFR 31.3402(f)(5)-1(a), and the 3402(n) exemption and its two conditions.
+      "2 · The withholding certificate is the one dial you hold",
+      // Why over-withholding and a balance due are both arithmetic rather than moral facts, from
+      // 6402(a) and 6401(b)(1).
+      "3 · A refund is not a gift, and a balance due is not a fine",
+      // The capstone has the learner classify every line of their own pay statement and reconcile
+      // gross to net by hand.
+      "18 · Capstone: read your own paperwork, and look one thing up properly",
+    ],
+  },
+  {
+    id: "money.income-tax-return-and-filing-status",
+    claim:
+      "Teaches what a federal income tax return legally is, who must file one and by when, what signing it under penalties of perjury commits, and how filing status is determined and what a joint return makes each spouse liable for.",
+    courseSlugs: ["taxes-and-filing"],
+    lessons: [
+      // 6012(a)(1)(A) written against the exemption amount rather than a figure, 6072(a)'s date,
+      // and why a filer below the threshold can be owed money and receive none of it.
+      "4 · Who has to file, and who files anyway",
+      // 6065 quoted in full, 7206(1), the two 6651 penalties at ten to one, and the four assessment
+      // clocks in 6501 that make filing the act which starts them.
+      "5 · You sign it under penalties of perjury, and that starts two clocks",
+      // 7703(a) and (b), 2(b)(1)'s closed test, and 6013(d)(3)'s joint and several liability.
+      "6 · Filing status is a legal fact, not a preference",
+      // The capstone determines the learner's own status from the statute rather than from software.
+      "18 · Capstone: read your own paperwork, and look one thing up properly",
+    ],
+  },
+  {
+    id: "money.refundable-credits-and-refund-timing",
+    claim:
+      "Teaches the difference between a deduction, a non-refundable credit and a refundable credit from the statute that defines it, the earned income credit's structure and eligibility, and the statutory date and offsets that decide when and whether a refund arrives.",
+    courseSlugs: ["taxes-and-filing"],
+    lessons: [
+      // 6401(b)(1) as the definition of refundable, worked on the same figure both ways.
+      "7 · The distinction that decides whether a credit can pay you",
+      // 32(a)(1), (c)(2)(A), (c)(1)(A)(ii), (c)(3)(A) and (j), taught for shape rather than figures.
+      "8 · The earned income credit, and what it is actually for",
+      // 32(k)(1)(B)'s ten-year and two-year bars, 6695(g)'s preparer penalty, and 24(a) as proof
+      // that even the Code's printed amount is not the amount in force.
+      "9 · What a disallowed claim costs, and who else is on the hook",
+      // 6402(m) clause by clause, with the PATH Act section that added it and its stated purpose.
+      "10 · A date Congress wrote for two credits and nobody else",
+      // Why the two credits named in that sentence reach households with earnings at the lower end.
+      "11 · Who the hold lands on, by the design of the credits",
+      // 6402(c), (d)(1), (e)(1) and (f), and the priority order the section sets out.
+      "12 · The refund can be reduced before it ever reaches you",
+    ],
+  },
+  {
+    id: "money.taxpayer-rights-and-free-tax-help",
+    claim:
+      "Teaches the free, non-commercial routes to federal tax preparation and to representation, what instrument governs each and how to check which are open in a given year, and the rights and deadlines a taxpayer holds once an examination begins.",
+    courseSlugs: ["taxes-and-filing"],
+    lessons: [
+      // Free File as a memorandum of understanding whose income limit is a percentile, with two
+      // dated readings of the same moving number.
+      "13 · Free File is a contract, and the number in it moves",
+      // VITA and TCE, the 7526A matching grant program, and the 7526 low-income taxpayer clinics as
+      // representation rather than preparation.
+      "14 · The volunteer programs, and the statute behind them",
+      // Direct File, quoted from Treasury's dated report to Congress, and the method of checking the
+      // agency's own pages before each season rather than trusting a list.
+      "15 · The government built one itself, and then suspended it",
+      // 7602(a)'s authority, 6212(a)'s certified letter, 6213(a)'s ninety days from mailing, and the
+      // ten rights enumerated at 7803(a)(3), including the right to retain representation.
+      "16 · An examination is a procedure with a clock and a list of rights",
+    ],
+  },
+  // ══ MONEY-07 · Retirement: the Plan, the Fee Disclosure, and the Floor ══════
+  //
+  // READ THIS BEFORE MAPPING ANY STATE STANDARD ONTO THESE. Every state framework in this module
+  // files retirement inside a "saving and investing" strand, and this course teaches NO INVESTING.
+  // It names no fund, no product, no provider and no allocation; it states no savings rate; it
+  // projects no return; and it teaches nothing about risk, return, diversification, stocks, bonds,
+  // mutual funds, certificates of deposit or speculative instruments. It also teaches no budgeting,
+  // no insurance, no estate planning, no careers and no retirement-cost estimation.
+  //
+  // What it DOES teach is the machinery around the account: whether an employer offers one at all,
+  // what the plan document decides, what a regulation requires the plan to disclose about cost, how
+  // the tax timing works and where the annual figures come from, how a Social Security benefit is
+  // computed, and who is legally required to act in a participant's interest. So a state standard
+  // that asks a student to "evaluate risk and return of various investment options" is NOT backed
+  // by any claim below, and a standard that asks them to "identify and explain sources of income
+  // during retirement" is backed in full. Keeping those two apart is the whole discipline here.
+  {
+    id: "money.retirement-plan-access",
+    claim:
+      "Measures who has an employer-sponsored retirement plan available at all, separating access, participation and take-up from the federal survey that reports each.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // Access, participation and the take-up rate defined and then filled in from the March 2025
+      // National Compensation Survey: 72 and 53 percent overall, 49 and 23 in the lowest-paid
+      // quarter of private-sector occupations against 91 and 80 in the highest.
+      "2 · Access, participation, and the difference between them",
+      // The 2022 Survey of Consumer Finances read against that gradient: 54.3 percent of households
+      // with any retirement account, and the Federal Reserve's own note on wealth by race.
+      "23 · Capstone: read your own record, and the gap it sits inside",
+    ],
+  },
+  {
+    id: "money.retirement-plan-terms",
+    claim:
+      "Reads an employer plan from its governing document: what the match is, how vesting works, and what happens to each part of the account when a participant leaves.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // Defined benefit against individual account, 29 U.S.C. 1104(a)(1)(D) making the document
+      // binding on the fiduciaries, and 1024(b)(4) plus 1132(c)(1) making it obtainable.
+      "3 · The plan document governs, and you may ask for it in writing",
+      // The match as compensation with a condition rather than a return, 26 U.S.C. 401(k)(2)(C) and
+      // 411(a)(1) on nonforfeitability, and 411(d)(6)(A)'s anti-cutback rule.
+      "5 · The match is compensation with a condition, not a return",
+      // 29 U.S.C. 1053(a)(2): the three-year cliff and the 2-to-6 graded table for an individual
+      // account plan, the five-year cliff and 3-to-7 table for a defined benefit plan.
+      "6 · Vesting is a retention device, and the statute caps how long it can run",
+      // Forfeiture, 26 U.S.C. 401(k)(2)(B)'s closed list of distribution events, 401(a)(31)(A) and
+      // (B) on the direct transfer and the automatic rollover, 411(a)(11)(A) and 72(t).
+      "7 · What leaving does, and the four things that can happen next",
+    ],
+  },
+  {
+    id: "money.retirement-account-costs",
+    claim:
+      "Teaches the participant fee disclosure a regulation requires, and works the arithmetic of a percentage-of-assets cost as a labelled hypothetical.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // 29 CFR 2550.404a-5(a), (c)(1), (c)(2) and (c)(3): the disclosure as a fiduciary act, its
+      // annual calendar, and the separation of administrative from individual expenses.
+      "9 · The fee disclosure is a document somebody is required to hand you",
+      // The at-least-quarterly statement of amounts ACTUALLY charged, the expense ratio required
+      // both as a percentage and as dollars per 1,000, and the rule's own compounding sentence.
+      "10 · What you actually paid, and the sentence the rule makes them print",
+      // The arithmetic, with growth stripped out entirely so no rate is implied, and the second of
+      // the course's three prose refusals of advice.
+      "11 · A hypothetical, and why it is not a projection",
+    ],
+  },
+  {
+    id: "money.retirement-tax-timing",
+    claim:
+      "Teaches traditional and Roth treatment as a question about when income is taxed, and teaches the method by which an annual contribution figure is produced rather than the figure.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // 26 U.S.C. 219(a) against 408A(a), (b), (c)(1) and (d)(1), with (d)(2)(A) and (d)(2)(B) as
+      // two independent conditions on a qualified distribution.
+      "13 · Traditional and Roth are a question about when, not what",
+      // 26 U.S.C. 219(g)(1) and (g)(5): the active-participant reduction, which makes an employer's
+      // decision an input into the tax treatment of an individual's own account.
+      "14 · Your employer's decision reaches into your own account",
+      // 402(g)(1)(B) and (g)(4), 219(b)(5)(A) and (b)(5)(C): a base amount, an adjustment mechanism
+      // with a base period and a rounding rule, and an annual notice. Plus 26 U.S.C. 414A.
+      "15 · Where the annual numbers actually come from",
+    ],
+  },
+  {
+    id: "money.social-security-benefit",
+    claim:
+      "Works how a Social Security retirement benefit is computed, from insured status and the earnings record through indexing, the benefit computation years and the three-band formula.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // 42 U.S.C. 414(a) on fully insured status, and 405(c)(1)(B), (c)(4) and (c)(5) on the time
+      // limitation of three years, three months and fifteen days, with 20 CFR 404.822.
+      "17 · Coverage, and the record that becomes conclusive",
+      // 42 U.S.C. 415(b)(3)(A) indexing, 415(b)(2)(A)'s reduction of elapsed years by five, 20 CFR
+      // 404.211's divisor, and 415(a)(1)(A)'s 90, 32 and 15 percent bands.
+      "18 · How the benefit is actually computed, in four steps",
+      // 42 U.S.C. 416(l)(1) and (l)(2): the five-clause retirement age table and the fixed early
+      // retirement age, with the reliance distribution from CRS R47341.
+      "19 · Retirement age is in the statute, and it moved",
+    ],
+  },
+  {
+    id: "money.retirement-income-sources",
+    claim:
+      "Identifies and explains the sources of income in retirement: Social Security, an individual's own accounts, and an employer-sponsored plan, and how each one is produced.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // The employer-sponsored source, and the fact that it exists only where an employer offers it.
+      "2 · Access, participation, and the difference between them",
+      // The employer-sponsored source read from its own document: what the employer contributes,
+      // when it becomes the participant's, and what leaves with the job.
+      "5 · The match is compensation with a condition, not a return",
+      // The individual source: the deduction, Roth treatment, and the active-participant rule that
+      // ties the individual account back to whether an employer plan exists.
+      "13 · Traditional and Roth are a question about when, not what",
+      "14 · Your employer's decision reaches into your own account",
+      // The Social Security source, computed from statute, and the published distribution of how
+      // much of an aged household's income it actually supplies.
+      "18 · How the benefit is actually computed, in four steps",
+      "19 · Retirement age is in the statute, and it moved",
+    ],
+  },
+  {
+    id: "money.who-owes-a-duty-of-loyalty",
+    claim:
+      "Teaches which people advising a saver are legally required to act in that saver's interest, from the statutory definitions and rules that impose the duty, and where the free public records are.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // 29 U.S.C. 1002(21)(A)'s functional definition, including indirect compensation, and
+      // 1104(a)(1)(A) through (D) quoted in full.
+      "21 · Fiduciary is not a compliment, it is a definition",
+      // 15 U.S.C. 80b-6 read through SEC v. Capital Gains Research Bureau (1963), against
+      // 17 CFR 240.15l-1, plus Form CRS at 17 CFR 275.204-5 and the two free lookup records.
+      "22 · The same conversation, two different legal seats",
+      // The capstone's last step: check a registration record before taking advice.
+      "23 · Capstone: read your own record, and the gap it sits inside",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

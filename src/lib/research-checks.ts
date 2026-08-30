@@ -3407,6 +3407,351 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The lor2 PDF's own footer and header, which is what this repo transcribed",
     ],
   },
+  // ── MONEY-05 · Taxes, and the Money Taken Before You See It ───────────────────────────────────
+  //
+  // FIVE OF THESE SIX ARE SCHEDULED RATHER THAN SPECULATIVE, in the sense MONEY-03's Regulation CC
+  // threshold check established: the underlying figure is guaranteed to move on a stated cycle, so
+  // the only question is whether the lesson is re-dated before or after it does. Tax is the worst
+  // domain in the catalog for this, because almost every number resets by revenue procedure in the
+  // autumn for the following year, and because two of the three free-filing routes moved during the
+  // eighteen months before the course was written. Every figure in the course already carries its
+  // date and its source in the lesson, so nothing here is currently WRONG; these exist so the
+  // re-dating happens on purpose.
+  {
+    key: "taxes-annual-figures-cycle",
+    course: "taxes-and-filing",
+    lesson: "when-a-credit-is-disallowed",
+    quote:
+      "The amount actually in force is not 1,000 dollars. It has been set for years at a time by temporary amendments layered over subsection (a), and the refundable portion has its own separately-legislated figure.",
+    title: "ANNUAL: which revenue procedure sets this year's brackets, standard deduction and credit amounts?",
+    severity: "high",
+    question:
+      "For the tax year now being filed, find the IRS revenue procedure that sets the inflation-adjusted amounts and note its number and date. Then record four things from it or from the current revision of Publication 17: the basic standard deduction by filing status, the section 24 child tax credit amount actually in force and its refundable ceiling, the section 32 earned income credit maximum and its investment-income limit, and the section 6012 filing thresholds by status and age.",
+    claim:
+      "The course prints NONE of these figures and says so repeatedly. It teaches the method instead: find the current Publication 17 and note its year, find the annual revenue procedure and cite it by number, write the tax year beside every figure, and re-check anything older than one filing season. Section 3 lesson 3 uses 26 U.S.C. 24(a)'s printed 1,000 dollars as proof that even the Code's own operative sentence can be stale.",
+    stakes:
+      "Nothing in the course is wrong today, because it deliberately asserts none of these numbers. The stakes run the other way: a teacher or a learner who wants a worked example with real figures has to leave the course to get one, and the answers here would let the lessons demonstrate the method ON a real current figure instead of only describing it. This is also the check that proves the method works, so answering it once is worth more than the figures themselves.",
+    needs: [
+      "The revenue procedure number, its date, and the tax year it governs",
+      "The revision year printed on the cover of the current Publication 17",
+      "The section 24 amount actually in force, and whether it still differs from the 1,000 dollars printed in subsection (a)",
+      "The section 32 maximum credit and investment-income limit for that year",
+    ],
+    where: [
+      "irs.gov, searched for the annual inflation adjustments revenue procedure for the tax year",
+      "IRS Publication 17 for the tax year, downloaded from irs.gov rather than a mirror",
+      "uscode.house.gov or law.cornell.edu for 26 U.S.C. 24 and 32, to see whether the printed text has caught up",
+    ],
+  },
+  {
+    key: "taxes-direct-file-status",
+    course: "taxes-and-filing",
+    lesson: "direct-file-and-what-happened",
+    quote:
+      "What this course will not do is state a present-tense status for the program on the day you happen to be reading. Two documents on two dates are evidence about those dates.",
+    title: "Is Direct File available for the filing season now open, and did the supplemental report appear?",
+    severity: "high",
+    question:
+      "As of the date you check: does the IRS publish a Direct File option for the filing season now open, and what does the agency's own page or filing-season news release say? Separately, has Treasury published the supplemental report on the future of free tax filing that Step 4 of its 2 October 2025 report promised, and has the Free Filing Modernization Summit it proposed been convened?",
+    claim:
+      "The lesson quotes Treasury's Report on the Replacement of Direct File (2 October 2025), including its Step 2 sentence suspending the program, and records that the IRS release opening the 2026 filing season on 26 January 2026 names Free File and the volunteer programs and does not mention Direct File. It states no present-tense status and draws no conclusion about any later date.",
+    stakes:
+      "High, and it is the reason the lesson is written the way it is. A free filing route was designed, launched in twelve states, expanded to twenty-five, used for 296,531 accepted returns, evaluated in a report to Congress and suspended inside about eighteen months. A course that asserted its status would be wrong within a year. If the program has returned, been replaced, or been formally ended by statute, the lesson can say so with a date instead of teaching only the method for checking.",
+    needs: [
+      "What the IRS's own filing pages say about Direct File, quoted, with the date read and the page's own review date",
+      "Whether Treasury's supplemental report on the future of free tax filing has been published, and its date",
+      "Whether the Free Filing Modernization Summit was convened, and what it produced",
+      "Any statute enacted after Public Law 119-21 that speaks to a government-run filing service",
+    ],
+    where: [
+      "irs.gov filing pages and the newsroom release opening the current filing season",
+      "home.treasury.gov, searched for the supplemental report on free tax filing",
+      "congress.gov, for any enactment after Public Law 119-21 section 70607",
+    ],
+  },
+  {
+    key: "taxes-free-file-limit-cycle",
+    course: "taxes-and-filing",
+    lesson: "free-file-is-a-contract",
+    quote:
+      "Neither figure is the answer to your question, because your question is about a filing season neither of them may cover.",
+    title: "ANNUAL: what is the current Free File income limit, and is the ninth memorandum still in force?",
+    severity: "high",
+    question:
+      "For the filing season now open, what adjusted gross income limit does the IRS Free File page state for the guided software, and what is the page's own review date? Separately, is the Ninth Memorandum of Understanding between the IRS and Free File, Inc. still in force, and does Article 3.1 still express the annual limit as a target of making approximately 70 percent of taxpayers eligible?",
+    claim:
+      "The lesson gives two dated readings of one moving number: Treasury records an adjusted gross income limit of 84,000 dollars for tax year 2024, and the IRS Free File page read on 29 August 2026 (agency review date 12 June 2026) states 89,000 dollars or less. It teaches that the limit is derived from a percentile in a private contract rather than from a statute, and that the memorandum was extended by an amendment dated 30 April 2024 to run to 31 October 2029.",
+    stakes:
+      "High, and scheduled rather than possible. The limit is contractually recalculated every year, so the only question is whether the lesson is re-dated before or after it moves. The 70 percent mechanism is the more important half: if the memorandum has been renegotiated on a different basis, the lesson's central teaching point about why the number moves stops being true, and a learner sent to reason about a percentile would be reasoning about the wrong thing.",
+    needs: [
+      "The current adjusted gross income limit for Free File guided software, with the page's review date and the date you read it",
+      "Whether the ninth memorandum, as amended 30 April 2024, is still the operative agreement",
+      "Whether Article 3.1 still frames the limit as an approximately 70 percent eligibility target",
+      "Whether Free File, Inc. is still the IRS's counterparty",
+    ],
+    where: [
+      "irs.gov/filing/irs-free-file-do-your-taxes-for-free, read in a browser with the review date noted",
+      "irs.gov/pub/irs-efile, for the memorandum of understanding and any later addendum",
+      "home.treasury.gov, for any report describing a renegotiated arrangement",
+    ],
+  },
+  {
+    key: "taxes-vita-threshold-cycle",
+    course: "taxes-and-filing",
+    lesson: "the-volunteer-programs",
+    quote:
+      "Two figures, two dates, one moving number, and the same method as the last lesson: read the agency's page and write down when you read it.",
+    title: "ANNUAL: what is the current VITA income threshold, and are the program scale figures still right?",
+    severity: "medium",
+    question:
+      "For the filing season now open, what adjusted gross income figure does the IRS state for VITA eligibility, and what is the page's review date? Are the TCE age criterion and the scope exclusions unchanged? And has Treasury or the IRS published newer counts of partner organizations, volunteers, sites, eligible tax units and returns prepared than the tax year 2024 figures the lesson uses?",
+    claim:
+      "The lesson gives the VITA threshold twice with dates: 67,000 dollars for tax year 2024 from Treasury's report, and 69,000 dollars or less from the IRS page read on 29 August 2026 with an agency review date of 12 August 2026. Its scale figures are all attributed to Treasury's October 2025 report: nearly 3,100 partner organizations, more than 76,000 volunteers, more than 5,600 VITA sites and more than 3,900 TCE sites, and approximately 67 million tax units eligible for VITA against about 1.6 million returns filed as of 1 August 2025.",
+    stakes:
+      "Medium, and the eligibility-against-use gap is the part worth keeping current. The lesson's strongest claim is that roughly 67 million eligible tax units produced about 1.6 million returns, and that the constraint is therefore capacity and awareness rather than eligibility. If a newer edition changes that ratio materially, the argument changes with it, and the argument is what a teacher will carry away from the lesson.",
+    needs: [
+      "The current VITA adjusted gross income figure, with the page's review date and the date you read it",
+      "Whether the TCE age-60 priority and the named scope exclusions are unchanged",
+      "Any newer published counts of sites, volunteers, eligible tax units and returns prepared",
+      "Whether the section 7526A matching grant program's funding has changed materially",
+    ],
+    where: [
+      "irs.gov/individuals/free-tax-return-preparation-for-qualifying-taxpayers, read in a browser",
+      "home.treasury.gov, for any later report carrying updated program figures",
+      "irs.gov newsroom, for the annual VITA and TCE grant award announcement",
+    ],
+  },
+  {
+    key: "taxes-path-practical-refund-date",
+    course: "taxes-and-filing",
+    lesson: "the-fifteenth-day-of-the-second-month",
+    quote:
+      "The practical date is published fresh each year, it sits weeks after the statutory floor, and quoting last year's is exactly the mistake this course exists to prevent.",
+    title: "ANNUAL: what date has the IRS published for EITC and ACTC refunds this filing season?",
+    severity: "medium",
+    question:
+      "For the filing season now open, what date does the IRS publish for when most earned income credit and additional child tax credit refunds will be available, and in which news release does it appear? Confirm also that 26 U.S.C. 6402(m) is unamended and still names section 24 by reason of subsection (d) and section 32, and that the IRS still states the hold reaches the entire refund.",
+    claim:
+      "The lesson quotes 6402(m) in full, explains that the formula produces 15 February for a calendar-year filer, and separately records that for the 2026 filing season, opened 26 January 2026, the IRS expected most affected refunds to be available by 2 March 2026 for direct-deposit filers with no other issues, citing release IR-2026-12. It states in terms that the statutory floor is not the practical date.",
+    stakes:
+      "Medium. The statutory sentence is durable and is the load-bearing half of the lesson; the practical date is the half that expires. A stale practical date would not make the mechanism wrong, but it would put a wrong number in front of exactly the households the lesson is about, and those are the households for whom a two-week difference is a real one.",
+    needs: [
+      "The date the IRS published for affected refunds this season, quoted, with the release number and date",
+      "Confirmation that 26 U.S.C. 6402(m) has not been amended, and its current text",
+      "Whether the IRS still states that the hold applies to the entire refund",
+      "The date the current filing season opened",
+    ],
+    where: [
+      "irs.gov newsroom, the release opening the current filing season",
+      "The IRS page on when to expect a refund if the earned income or additional child tax credit was claimed",
+      "law.cornell.edu or uscode.house.gov for the current text of 26 U.S.C. 6402",
+    ],
+  },
+  {
+    key: "taxes-audit-data-currency",
+    course: "taxes-and-filing",
+    lesson: "the-disparity-and-the-method",
+    quote:
+      "Those are figures for stated tax years, from a stated dataset, in a dated report. They are not a claim about the current filing season, and this course does not make one.",
+    title: "Have newer audit-rate figures or a follow-up to the GAO equity recommendations been published?",
+    severity: "medium",
+    question:
+      "Has the Government Accountability Office, the Treasury Inspector General for Tax Administration, or the IRS Data Book published individual audit-rate figures more recent than the tax year 2010 to 2019 series in GAO-22-104960? And what is the implementation status of the six recommendations in GAO-24-106126, in particular the one asking the IRS to calculate the no-change rate without default audits?",
+    claim:
+      "Section 6 uses GAO-22-104960 (May 2022) for the audit-rate trend, stating the dataset and the tax years, and GAO-24-106126 (April 2024) for the mechanism, including the 78 percent figure GAO attributes to the academic study, the no-change rate including default audits, the officials' statement about differential response rates, the sex-varying risk scores dating from 2001, and the six recommendations the IRS agreed to. The published study is cited as Elzayn et al. (2025), Quarterly Journal of Economics 140(1), 113-163, with the 2023 working paper cited for the abstract and the methodology.",
+    stakes:
+      "Medium, and it is about the closing argument rather than about a figure. The lesson's point is that a metric choice produced a measured disparity and that GAO recommended changing the metric. If those recommendations have been implemented, the lesson can end on what changed rather than on what was recommended, which is a materially better ending and a more useful one for a teacher. If newer audit-rate data exists, the trend figures should be re-dated rather than left at 2019.",
+    needs: [
+      "Any GAO, TIGTA or IRS Data Book publication with individual audit rates by income later than tax year 2019",
+      "The recommendation status page for GAO-24-106126, with the date read",
+      "Whether the IRS has published a change to how the no-change rate is calculated",
+      "Whether the Dependent Database risk scores GAO said dated from 2001 have been updated",
+    ],
+    where: [
+      "gao.gov/products/gao-24-106126, which carries a recommendations status section",
+      "gao.gov, searched for later reports on individual audit rates",
+      "irs.gov, the annual Data Book examination coverage tables",
+      "treasury.gov/tigta, for reports on refundable credit examinations",
+    ],
+  },
+  // ── MONEY-07 · retirement-accounts ──────────────────────────────────────────
+  // Seven checks. FIVE OF THEM ARE ANNUAL-CYCLE CHECKS and should be treated as a standing calendar
+  // rather than as one-off questions: the contribution figures, the survey editions and the
+  // inflation-adjusted penalty all reset on their own schedules, and this course was written to
+  // print a method rather than a table precisely so that a stale answer degrades a date rather than
+  // a rule. Mark the annual ones as recurring the way MONEY-03 filed the Regulation CC threshold.
+  {
+    key: "retirement-annual-contribution-figures",
+    course: "retirement-accounts",
+    lesson: "a-base-amount-and-an-adjustment",
+    quote:
+      "The operative figures are published each year by the tax authority in an annual notice, alongside the phase-out ranges from the previous lesson.",
+    title: "ANNUAL: what are this year's elective deferral, catch-up, IRA and phase-out figures?",
+    severity: "high",
+    question:
+      "For the current tax year, what are the operative elective deferral limit, the age 50 catch-up amount, the individual retirement contribution deductible amount and its catch-up, and the active-participant deduction phase-out ranges by filing situation? Name the annual notice or revenue procedure that sets them, by number, and give the date you read it.",
+    claim:
+      "The course prints NO current figure. It prints only the statutory base amounts (26 U.S.C. 402(g)(1)(B)'s 15,000, 219(b)(5)(A)'s 5,000 and the 1,000 catch-up), labels each as a base rather than a limit, and teaches the adjustment mechanism (base period, index, rounding to the next lowest multiple of 500 or the lower multiple of 100) plus the instruction to read the year's published notice.",
+    stakes:
+      "This is the check that has to be re-run every year for as long as the course exists, and the course was designed so that leaving it open costs nothing: no lesson depends on a current figure. The stake is the opposite one. If a later editor ever decides to help by printing this year's numbers, the course acquires the exact defect the method was written to avoid, and this entry is the record of why it does not.",
+    needs: [
+      "The number of the annual notice or revenue procedure for the year in question",
+      "Each operative figure as that document prints it",
+      "Confirmation that the statutory base amounts and rounding rules quoted in the lesson are unchanged",
+      "The date you read the notice",
+    ],
+    where: [
+      "The tax authority's own annual notice on cost-of-living adjustments for pension plans",
+      "26 U.S.C. 402(g) and 219(b)(5) on the Legal Information Institute, for the base amounts",
+    ],
+  },
+  {
+    key: "retirement-erisa-penalty-inflation-adjusted",
+    course: "retirement-accounts",
+    lesson: "the-plan-document-governs",
+    quote:
+      "the 100 dollars is the figure printed in the statute; federal civil penalties of this kind are adjusted for inflation on their own schedule, so the operative daily maximum is higher than the printed one and must be looked up rather than assumed",
+    title: "ANNUAL: what is the current inflation-adjusted daily maximum under ERISA section 502(c)(1)?",
+    severity: "medium",
+    question:
+      "What is the current maximum daily amount a court may impose under 29 U.S.C. 1132(c)(1) for an administrator's failure to furnish requested documents, as adjusted under the Federal Civil Penalties Inflation Adjustment Act? Give the regulation or notice that states it, the effective date, and the date you read it.",
+    claim:
+      "The lesson quotes the statute's printed figure of up to 100 dollars a day, says in the same paragraph that the operative maximum is higher because penalties of this kind are inflation-adjusted, and dates the reading to 29 August 2026. It asserts no adjusted figure.",
+    stakes:
+      "Medium. A learner who quotes the printed 100 dollars to a plan administrator is understating their own position, and a learner who quotes a stale adjusted figure is asserting a number that has moved. The lesson currently does neither, which is safe but incomplete: filling this in makes the paragraph genuinely useful rather than merely honest.",
+    needs: [
+      "The current adjusted daily maximum, as printed by the adjusting authority",
+      "The regulation or annual adjustment notice that sets it, cited by number",
+      "The effective date of the current figure, and the date you read it",
+    ],
+    where: [
+      "29 CFR part 2575, the civil penalty adjustment regulation for this title",
+      "The annual civil penalty inflation adjustment notice published in the Federal Register",
+    ],
+  },
+  {
+    key: "retirement-cashout-thresholds-current",
+    course: "retirement-accounts",
+    lesson: "what-leaving-does",
+    quote:
+      "Both figures are printed in the statute and were read on 29 August 2026; both have been changed by legislation before, so check them before relying on either.",
+    title: "Are the 7,000 and 1,000 dollar mandatory-distribution thresholds still current?",
+    severity: "medium",
+    question:
+      "Do 26 U.S.C. 411(a)(11)(A) and 401(a)(31)(B) still print 7,000 dollars as the consent threshold and 1,000 dollars as the automatic-transfer trigger, and does either carry an indexing provision that has produced a different operative figure? Quote the current text and give the date you read it.",
+    claim:
+      "The lesson states that a plan may distribute without consent where the present value does not exceed 7,000 dollars, that a mandatory distribution above 1,000 dollars must be transferred to an individual retirement plan of a designated trustee, and that both figures are statutory, dated 29 August 2026, and previously amended.",
+    stakes:
+      "Medium, and it is the one place in Section 2 where a wrong number changes what happens to somebody's money rather than their vocabulary. The consent threshold decides whether a plan can push a former employee's balance out of the plan at all, and the transfer trigger decides whether what leaves is a cheque or an account.",
+    needs: [
+      "The current text of both provisions, quoted, with the dollar figures as printed",
+      "Whether either figure is indexed, and if so the operative amount for the current year",
+      "The public law behind the most recent change to either, and the date you read the sections",
+    ],
+    where: [
+      "26 U.S.C. 411(a)(11) and 401(a)(31)(B) on the United States Code site or the Legal Information Institute",
+      "The tax authority's annual cost-of-living notice, if either figure turns out to be indexed",
+    ],
+  },
+  {
+    key: "retirement-ncs-current-edition",
+    course: "retirement-accounts",
+    lesson: "who-has-a-plan-at-all",
+    quote:
+      "Those figures are from March 2025 and were published on 18 March 2026. Check the current release before you repeat them.",
+    title: "ANNUAL: what does the newest employee benefits survey say about access and participation?",
+    severity: "high",
+    question:
+      "What are the most recently published access, participation and take-up figures for private-sector workers overall, by wage quartile, by full-time and part-time status, and by establishment size? Give the survey reference month, the publication date, and the exact figures as published.",
+    claim:
+      "The course reports 72 percent access and 53 percent participation for private-sector workers in March 2025, with 49 and 23 percent in the lowest-paid quarter of occupations against 91 and 80 in the highest, 47 and 23 for part-time workers against 81 and 62 for full-time, and 55 and 38 at establishments under 50 workers against 90 and 76 at those with 500 or more. It attributes them to a Congressional Research Service reading of the March 2025 National Compensation Survey published 18 March 2026, and says in the lesson to check the current release.",
+    stakes:
+      "High, because these figures are the spine of the whole course rather than an illustration. Section 1 uses them to establish that access is a fact about employment, Section 4's automatic enrollment lesson refers back to the take-up gap, and the capstone sets them against the wealth distribution. A stale set does not break the argument, since the gradient is structural, but it does date the course visibly.",
+    needs: [
+      "The reference month and publication date of the newest release",
+      "Access and participation overall and for each of the four breakdowns the lesson quotes",
+      "Whether the publishing body's own definitions of access, participation and take-up have changed",
+      "The date you read it",
+    ],
+    where: [
+      "The Bureau of Labor Statistics employee benefits pages and the news release for the newest reference month",
+      "The Congressional Research Service's recurring product on worker participation in employer-sponsored pensions",
+    ],
+  },
+  {
+    key: "retirement-scf-2025-edition",
+    course: "retirement-accounts",
+    lesson: "read-your-own-record",
+    quote:
+      "Analysing the 2022 Survey of Consumer Finances, the Congressional Research Service reported that 54.3 percent of U.S. households had retirement account assets",
+    title: "Has the 2025 Survey of Consumer Finances been published, and does it move these figures?",
+    severity: "medium",
+    question:
+      "Has the Federal Reserve published results from the 2025 Survey of Consumer Finances? If so, what are the current figures for the share of families holding any retirement account, the distribution of balances, and median wealth by race and ethnicity, and what are the exact titles and publication dates of the documents reporting them?",
+    claim:
+      "The capstone cites the 2022 survey throughout: 54.3 percent of households with retirement account assets, ownership by age band, the four balance ranges, and the Federal Reserve note reporting median White family wealth of 285,000 dollars against a typical Black family's 44,900 (about 15 percent) and a typical Hispanic family at about 20 percent. Every figure is labelled as 2022 and the survey's publication date is named.",
+    stakes:
+      "Medium. The survey is triennial, so a 2025 edition supersedes every figure in the capstone at once. The teaching point, that the account gap and the wealth gap are one story about employment, does not depend on the vintage, but a course that shows a teacher four-year-old numbers next to a claim about the present is doing the thing this catalog dates figures to avoid.",
+    needs: [
+      "Whether a 2025 edition exists, and its publication date and exact title",
+      "The share of families holding any retirement account in the newest edition",
+      "The median wealth figures by race and ethnicity in the newest edition, with the document that reports them",
+      "The date you checked",
+    ],
+    where: [
+      "The Federal Reserve's Survey of Consumer Finances index page",
+      "The Federal Reserve Bulletin article reporting changes in U.S. family finances for the newest survey pair",
+      "Congressional Research Service products analysing retirement account balances from the newest survey",
+    ],
+  },
+  {
+    key: "retirement-social-security-reliance-primary",
+    course: "retirement-accounts",
+    lesson: "retirement-age-and-the-floor",
+    quote:
+      "That analysis uses data reflecting income received in calendar year 2019 and was updated on 5 August 2025.",
+    title: "Is there a newer primary-source measure of how much of aged income Social Security supplies?",
+    severity: "medium",
+    question:
+      "What is the most recent published measure, from the Social Security Administration's own research or from a comparable federal source, of the share of people aged 65 and older receiving Social Security income and the share relying on it for 90 percent or more of household income, broken down by income quintile? Give the publication, its date, and the survey and year the figures come from.",
+    claim:
+      "The lesson reports approximately 92 percent of individuals aged 65 and older receiving household income from Social Security, about 29.5 percent of aggregate income for that population, and 61.5 percent of the bottom household income quintile relying on it for 90 percent or more, all from a Congressional Research Service analysis of Health and Retirement Study data for calendar year 2019, updated 5 August 2025. The lesson names both the data year and the update date.",
+    stakes:
+      "Medium, and there is a sourcing point behind it as well as a currency one. The Social Security Administration publishes its own recurring analysis of income of the aged, and this course cites a congressional analysis of a different survey instead, because the agency's site would not serve its pages to the tool used to write the course. A primary-source figure would be the better citation for the same claim even if the number does not move.",
+    needs: [
+      "The agency's own current publication on income of the aged population, by exact title and date",
+      "The receipt rate and the 90-percent-reliance rate as that publication states them, with the survey and year",
+      "Whether the agency's figures differ materially from the congressional analysis the lesson currently cites",
+      "The date you read it",
+    ],
+    where: [
+      "The Social Security Administration's Office of Retirement and Disability Policy research publications",
+      "The agency's annual statistical supplement",
+      "Congressional Research Service products on income for the population ages 65 and older, for comparison",
+    ],
+  },
+  {
+    key: "retirement-tx-teks-transcription-source",
+    course: "retirement-accounts",
+    title: "Texas: reconcile the two copies of 19 TAC 113.49(c)(6) and (c)(7)",
+    severity: "medium",
+    question:
+      "Does the Texas Education Agency's own currently-in-effect Chapter 113 Subchapter C PDF print 113.49(c)(6)(A) and (c)(7)(B) in exactly the words this repo has transcribed, and what is the page footer date on the copy you open? If the wording differs at all, quote the agency's text.",
+    claim:
+      "Both codes were transcribed on 2026-08-29 from the Legal Information Institute's copy of 19 Tex. Admin. Code § 113.49, because the TEA PDF at this framework's sourceUrl was re-downloaded the same day and its text layer would not extract. The framework's fetchedOn was deliberately LEFT at 2026-08-28 rather than stamped with the newer date, and a comment above both entries records exactly this. Every other entry in that framework came from the TEA PDF.",
+    stakes:
+      "Medium, and it is a provenance problem rather than a substance one. The standards module's rule is fetch-or-do-not-cite from the publisher, and two of the entries in the Texas personal financial literacy framework now come from a secondary copy of the same rule. A teacher reading a verbatim standard is entitled to know it is the publisher's text, and either confirming the wording or correcting it closes the only gap of its kind in this file.",
+    needs: [
+      "The two provisions as the TEA document prints them, quoted",
+      "The page footer date on the TEA PDF you opened, and its URL",
+      "Whether the TEA text differs from the transcription in any respect, including punctuation",
+      "The date you checked, so the framework's fetchedOn can be updated honestly",
+    ],
+    where: [
+      "The TEA currently-in-effect Chapter 113 Subchapter C PDF, opened in a reader rather than extracted",
+      "The Texas Administrative Code as published by the Secretary of State",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

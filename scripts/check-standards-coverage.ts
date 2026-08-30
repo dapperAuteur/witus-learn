@@ -38,7 +38,7 @@ import { allAlignedCourseSlugs } from "../src/lib/standards/index";
  * mappings (economics, US/world history, geography, civics) remain worthwhile follow-up work, but
  * the courses are no longer unaligned. */
 const BACKLOG: Record<string, string> = {
-  "harvard-ed-l-d":
+  "education-leadership-doctoral-rigor":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
   "know-your-rights-at-work":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
