@@ -2384,6 +2384,579 @@ That procedure gives you a number. It does not tell you whether the number is ac
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Social Security, the floor under the whole thing
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "coverage-and-the-earnings-record",
+      title: "17 · Coverage, and the record that becomes conclusive",
+      section: "Section 5 · Social Security, the floor under the whole thing",
+      body: `Everything so far in this course has been optional for an employer and optional for you. Social Security is neither, and that is the first thing to understand about it.
+
+**Insured status is a count, and the statute does the counting.** A "fully insured individual" is one who had at least one quarter of coverage for each calendar year elapsing after 1950, or after the year they turned 21 if later, and before the year they died or turned 62, with a minimum of 6 quarters in any case; **or** who had "40 quarters of coverage" (42 U.S.C. § 414, n.d.). That second route is the one most people are describing when they talk about forty quarters, or ten years of work. It is a floor on eligibility, not a measure of the benefit.
+
+**There is a second status with a different count.** A "currently insured individual" is one with at least six quarters of coverage during the thirteen-quarter period ending with the quarter in which they died, became entitled to old-age insurance benefits, or most recently became entitled to disability insurance benefits (42 U.S.C. § 414, n.d.). The two statuses do different jobs, and confusing them is a common error.
+
+**Now the part almost nobody knows, and it is the reason this lesson exists.** Your earnings record is not permanently open to correction. The statute defines a "time limitation" as "a period of three years, three months, and fifteen days" (42 U.S.C. § 405, n.d.). After that period has expired for a given year, the agency's records of the amounts of wages paid to and self-employment income derived by an individual during any period in that year "shall be conclusive for the purposes of this subchapter", subject to changes made under the following paragraph (42 U.S.C. § 405, n.d.).
+
+**Read the word conclusive.** It does not mean hard to change. It means that after the period runs, the record is the fact, and an employer's failure to report your wages correctly can become the legally operative version of your working life.
+
+**The exceptions are real but they are a list.** After the time limitation expires the agency may still change or delete an entry, or include an omitted item, but "only" in the circumstances the statute then enumerates (42 U.S.C. § 405, n.d.). The regulation works several of those through, including conforming the record to a tax return: for wages, the agency may correct its records to agree with the return; for self-employment income, a return filed before the deadline may support a correction, while one filed after it may support only a reduction or removal rather than an increase (20 CFR § 404.822, n.d.).
+
+**The action item is small and the consequence is not.** Check your earnings record. Every year of covered work you did that is missing from it is a year the benefit formula in the next lesson will treat as a year you earned nothing, and after three years, three months and fifteen days you are arguing against a record the statute calls conclusive rather than against a clerical error. This course names no service and sells nothing; the record is yours and the agency that keeps it is where you get it.
+
+:::reveal What are the two routes to fully insured status? ||| A quarter of coverage for each elapsed year after 1950 or after age 21 with a minimum of six, or 40 quarters of coverage.
+
+:::reveal How long is the statutory time limitation for correcting an earnings record? ||| Three years, three months, and fifteen days.
+
+:::reveal What does the statute say the agency's records become after that period expires? ||| Conclusive, subject only to the enumerated circumstances in which a change may still be made.
+
+## Vocabulary
+- **Quarter of coverage**: the unit the statute counts to decide insured status, earned through covered work rather than through any application.
+- **Fully insured individual**: someone meeting either the elapsed-years count or the 40-quarter count, which is the eligibility floor rather than a measure of benefit size.
+- **Currently insured individual**: someone with at least six quarters of coverage in the thirteen-quarter period ending on a stated event, a separate status doing a different job.
+- **Time limitation**: the period of three years, three months and fifteen days after which the agency's earnings records for a year become conclusive.
+- **Conclusive record**: a record the statute treats as the fact, changeable afterwards only in the enumerated circumstances.
+
+## Sources
+42 U.S.C. § 405. (n.d.). *Evidence, procedure, and certification for payments*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/42/405
+
+42 U.S.C. § 414. (n.d.). *Insured status for purposes of old-age and survivors insurance benefits*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/42/414
+
+20 CFR § 404.822. (n.d.). *Correction of the record of your earnings after the time limit ends*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/20/404.822`,
+    },
+    {
+      slug: "how-the-benefit-is-computed",
+      title: "18 · How the benefit is actually computed, in four steps",
+      section: "Section 5 · Social Security, the floor under the whole thing",
+      body: `The computation is not a mystery and it is not a black box. It is four steps, each of them written down.
+
+**Step one: index the earnings.** Earnings from earlier years are not used at their face value. Each computation base year's wages and self-employment income are deemed equal to that year's amount multiplied by a quotient: the national average wage index for the second calendar year preceding the year of the triggering event, divided by the national average wage index for the computation base year (42 U.S.C. § 415, n.d.). The regulation describes the same operation as multiplying the actual year-by-year dollar amounts by the quotients found for each of those years (20 CFR § 404.211, n.d.). The effect is that a dollar earned decades ago is restated in the wage terms of the year the benefit is being computed against.
+
+**Step two: choose the years that count.** The regulation defines computation base years as all years after 1950 up to but not including the year of entitlement, and then says that for benefit computation years "we use the years with the highest amounts of earnings after indexing" (20 CFR § 404.211, n.d.). How many years is set by statute: the number of benefit computation years equals the number of elapsed years reduced, for old-age insurance benefits, "by 5 years" (42 U.S.C. § 415, n.d.). For a worker whose elapsed years run from age 22 through 61, dropping the five lowest indexed years leaves 35. That is where the familiar thirty-five-year figure comes from. It is a derived number, not a slogan.
+
+**Step three: divide by months.** The indexed amounts for the benefit computation years are added, and the total is divided by the number of months in those years (20 CFR § 404.211, n.d.). The result is the **average indexed monthly earnings**, usually written AIME.
+
+**Step four: apply a three-band formula, and notice its shape.** The primary insurance amount is "90 percent" of the AIME up to a first threshold, plus "32 percent" of the AIME above that threshold and up to a second, plus "15 percent" of the AIME above the second (42 U.S.C. § 415, n.d.). The regulation adds that the dollar amounts in the formula receive automatic annual increases tracking wage growth, that the formula applying to you is the one for the year you reach 62, become disabled or die, whichever is first, and that new formulas are published in the Federal Register (20 CFR § 404.212, n.d.).
+
+**Those three percentages are the whole political and mathematical character of the program.** The first band replaces 90 cents of every dollar. The last replaces 15. That is a progressive replacement rate written into a statute: the program returns proportionally more of the earnings of a low earner than of a high earner. You do not have to like it or dislike it to need to know it, because it is what makes the benefit behave the way it does at the bottom of the earnings distribution, and it is why the thresholds themselves are the numbers that get argued about.
+
+**The two things you should never carry in your head.** The threshold dollar figures, because they are adjusted every year, and any specific benefit amount, because it falls out of your own indexed record. This course prints neither. What it gives you is the procedure, so that you can read your own statement and see which step produced which line.
+
+:::reveal What does indexing do to earnings from earlier years? ||| It restates them in the wage terms of the year the benefit is computed against, using a ratio of national average wage indices.
+
+:::reveal Where does the familiar thirty-five-year figure come from? ||| It is derived: the number of benefit computation years is the number of elapsed years reduced by five, and the highest indexed years are the ones used.
+
+:::reveal What are the three percentages in the primary insurance amount formula? ||| 90 percent of the first band, 32 percent of the second, and 15 percent of the amount above that.
+
+## Vocabulary
+- **Indexing**: restating an earlier year's earnings using the ratio of national average wage indices, so old and recent earnings are expressed in comparable terms.
+- **Computation base year**: any year after 1950 up to but not including the year of entitlement, from which the benefit computation years are selected.
+- **Benefit computation year**: one of the highest indexed earning years, counted as the elapsed years reduced by five for an old-age benefit.
+- **Average indexed monthly earnings**: the total indexed earnings of the benefit computation years divided by the number of months in those years.
+- **Primary insurance amount**: the figure produced by applying the three-band formula to the average indexed monthly earnings.
+
+## Sources
+20 CFR § 404.211. (n.d.). *Computing your average indexed monthly earnings*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/20/404.211
+
+20 CFR § 404.212. (n.d.). *Computing your primary insurance amount from your average indexed monthly earnings*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/20/404.212
+
+42 U.S.C. § 415. (n.d.). *Computation of primary insurance amount*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/42/415`,
+    },
+    {
+      slug: "retirement-age-and-the-floor",
+      title: "19 · Retirement age is in the statute, and it moved",
+      section: "Section 5 · Social Security, the floor under the whole thing",
+      body: `Two ages do different jobs, both of them are written into the statute rather than set by an agency, and one of them has been changing on a schedule Congress wrote decades in advance.
+
+**Early retirement age is fixed.** The statute defines it as "age 62 in the case of an old-age, wife's, or husband's insurance benefit, and age 60 in the case of a widow's or widower's insurance benefit" (42 U.S.C. § 416, n.d.).
+
+**Retirement age is a table, and reading it is the lesson.** The statute defines the term by cohort:
+
+- 65 for an individual attaining early retirement age before January 1, 2000.
+- 65 plus an age increase factor for someone attaining early retirement age after December 31, 1999 and before January 1, 2005.
+- 66 for someone attaining early retirement age after December 31, 2004 and before January 1, 2017.
+- 66 plus an age increase factor for someone attaining early retirement age after December 31, 2016 and before January 1, 2022.
+- 67 for someone attaining early retirement age after December 31, 2021 (42 U.S.C. § 416, n.d.).
+
+**Notice the design.** The change was legislated to phase in across cohorts over decades, with two flat plateaus and two ramps. Anyone whose retirement age is 67 has had that fact fixed in statute since long before they thought about it. This is a rare case where the number a person needs is genuinely stable, because the last step has already arrived: the final clause has no further increase after it.
+
+**Why this matters here rather than as trivia.** Every other rule in this course is about an account somebody chooses to offer. This one is about a program that reaches almost everyone who works in covered employment, computed by a formula you can read, payable for life, and indexed. Whatever a household does or does not have in an account, this is the layer underneath.
+
+**And for a large share of people it is not a layer, it is the structure.** Analysing survey data on people aged 65 and older, the Congressional Research Service reported that approximately 92 percent of individuals aged 65 and older received household income from Social Security, and that Social Security was the most common source of income among the aged in 2019, representing approximately 29.5 percent of aggregate income for that population (Congressional Research Service, 2025). The distribution inside that average is the finding that matters: "61.5% of aged individuals in the bottom 20% of the household income distribution rely on Social Security for 90% or more of household income in 2019, compared with almost none of those in the top two household income quintiles" (Congressional Research Service, 2025). That analysis uses data reflecting income received in calendar year 2019 and was updated on 5 August 2025.
+
+**Set that beside Section 1 and the shape of the whole course appears.** The workers least likely to have a plan available at work are the workers most likely to reach 65 with Social Security as nearly all of their income. The two facts are not a coincidence and they are not separate subjects. They are the same fact seen at two ends of a working life.
+
+:::reveal What is early retirement age for an old-age insurance benefit? ||| Age 62, with age 60 applying instead to a widow's or widower's insurance benefit.
+
+:::reveal What is the retirement age for an individual attaining early retirement age after December 31, 2021? ||| 67, and the statute provides no further increase after that step.
+
+:::reveal What share of aged individuals in the bottom fifth of the income distribution relied on Social Security for 90 percent or more of household income in 2019? ||| 61.5 percent, against almost none of those in the top two quintiles.
+
+## Vocabulary
+- **Early retirement age**: age 62 for an old-age, wife's or husband's insurance benefit, and age 60 for a widow's or widower's benefit, fixed by statute.
+- **Retirement age**: the age defined by a statutory table keyed to the year an individual attains early retirement age, running from 65 to 67 across cohorts.
+- **Age increase factor**: the statutory device that phases retirement age upward by months across the two transition cohorts rather than in a single step.
+- **Aggregate income**: the total income of a population, used here to express how large a share of the income of people aged 65 and older comes from one source.
+
+## Sources
+42 U.S.C. § 416. (n.d.). *Additional definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/42/416
+
+Congressional Research Service. (2025, August 5). *Income for the population ages 65 and older: Evidence from the Health and Retirement Study (HRS)* (R47341). https://www.everycrsreport.com/reports/R47341.html`,
+    },
+    {
+      slug: "quiz-social-security",
+      title: "20 · Knowledge check: coverage, the computation, and the floor",
+      section: "Section 5 · Social Security, the floor under the whole thing",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How does Social Security differ from everything else taught so far in this course?",
+            options: ["It is not optional for an employer", "It is administered by the same agency that supervises employee benefit plans", "It is funded by contributions the participant elects to defer from each paycheck", "It pays a benefit determined by the assets held in an account in the worker's name"],
+            correctIndex: 0,
+            explanation: "Every other arrangement in the course exists because an employer chose to offer it. Covered employment is not a choice of that kind.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "Which is the second route to fully insured status in the statute?",
+            options: ["40 quarters of coverage", "Ten consecutive years of employment with the same covered employer", "Six quarters of coverage within the thirteen quarters before entitlement", "Attaining the retirement age defined for the individual's own birth cohort"],
+            correctIndex: 0,
+            explanation: "The statute states either an elapsed-years count with a minimum of six quarters, or 40 quarters of coverage.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "In the elapsed-years route to fully insured status, from which year does counting begin?",
+            options: ["After 1950, or after age 21 if later", "After the first year in which the individual earned any wages at all", "After the year the individual attains early retirement age under the statute", "After 1935, the year the underlying programme was first established"],
+            correctIndex: 0,
+            explanation: "The count covers each calendar year elapsing after 1950, or after the year the individual attained age 21 if that is later.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "What is the minimum number of quarters under the elapsed-years route?",
+            options: ["Six", "Forty, matching the alternative route stated in the same subsection", "Thirteen, matching the period used for currently insured status", "One for each year elapsed, with no floor applying in any circumstance"],
+            correctIndex: 0,
+            explanation: "The statute says in no case shall an individual be fully insured unless they have at least 6 quarters of coverage.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "What does fully insured status actually establish?",
+            options: ["Eligibility, not benefit size", "The dollar amount of the monthly benefit the individual will receive", "The age at which the individual becomes entitled to claim a benefit", "The share of a household's income the benefit will eventually replace"],
+            correctIndex: 0,
+            explanation: "It is a floor on eligibility. The size of the benefit falls out of the earnings record and the formula.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "What is a currently insured individual?",
+            options: ["Six quarters in thirteen", "Anyone who has accumulated forty quarters of coverage over a lifetime", "A person receiving an old-age insurance benefit in the current month", "A worker whose employer is currently reporting wages to the agency"],
+            correctIndex: 0,
+            explanation: "The status requires at least six quarters of coverage during the thirteen-quarter period ending with a stated event.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "How long is the statutory time limitation for a year's earnings record?",
+            options: ["Three years, three months, and fifteen days", "Three full calendar years counted from the end of the year in question", "Seven years, matching the general reporting period for adverse credit items", "Ten years, matching the period covered by forty quarters of coverage"],
+            correctIndex: 0,
+            explanation: "The statute defines the term time limitation as exactly that period.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "What happens to the agency's records once the time limitation expires?",
+            options: ["They become conclusive", "They are deleted and reconstructed from the employer's own payroll files", "They are frozen until the individual applies for a benefit and requests review", "They are transferred to the tax authority, which then maintains them instead"],
+            correctIndex: 0,
+            explanation: "The records of wages paid and self-employment income derived in that year become conclusive for the purposes of the subchapter.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "What does the lesson say the word conclusive actually means here?",
+            options: ["The record becomes the fact", "That a correction requires a hearing before an administrative law judge", "That the record may still be amended freely on the individual's request", "That the record is presumed accurate unless the employer disputes it"],
+            correctIndex: 0,
+            explanation: "An employer's failure to report your wages correctly can become the legally operative version of your working life.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "May the agency change a record after the time limitation has expired?",
+            options: ["Only in enumerated circumstances", "No, the record is permanently closed once the period has run its course", "Yes, on request from the individual at any time and for any reason", "Yes, but only where the change reduces rather than increases the earnings"],
+            correctIndex: 0,
+            explanation: "The statute permits a change, deletion or inclusion after the limitation, but only in the circumstances it then lists.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "Under the regulation, what may a self-employment return filed after the deadline support?",
+            options: ["A reduction or removal", "An increase in the recorded self-employment income for that year", "A conversion of recorded wages into self-employment income instead", "A complete reconstruction of the record for every year in question"],
+            correctIndex: 0,
+            explanation: "A return filed after the deadline may support only a reduction or removal, not an increase.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "For wages, what does the regulation permit the agency to do?",
+            options: ["Conform its records to the return", "Accept the individual's own written statement of what they were paid", "Recompute the earnings using the national average wage index instead", "Substitute the average of the surrounding years for a missing year"],
+            correctIndex: 0,
+            explanation: "The agency may correct its records to agree with the amounts reported on a tax return.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "How will the benefit formula treat a year of covered work that is missing from your record?",
+            options: ["As a year you earned nothing", "As an average of the years immediately before and after the gap", "As a year excluded from the count of benefit computation years", "As a year requiring the agency to contact the employer for evidence"],
+            correctIndex: 0,
+            explanation: "That is why checking the record matters, and why doing it late means arguing against a record the statute calls conclusive.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "Does this course recommend a service for checking your earnings record?",
+            options: ["No", "Yes, it names a paid monitoring service used by most participants", "Yes, it directs readers to the recordkeeper that administers their plan", "Yes, it recommends asking a registered investment adviser to obtain it"],
+            correctIndex: 0,
+            explanation: "The record is yours and the agency that keeps it is where you get it. The course names no service and sells nothing.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "What is a quarter of coverage?",
+            options: ["The unit insured status is counted in", "A three-month period during which an individual received a benefit payment", "The interval at which the agency updates an individual's earnings record", "The portion of a year in which an employer must report wages to the agency"],
+            correctIndex: 0,
+            explanation: "It is earned through covered work rather than through any application, and the statute counts it to decide insured status.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "What is the first step of the benefit computation?",
+            options: ["Indexing the earnings", "Selecting the highest thirty-five years of nominal earnings on the record", "Dividing total lifetime earnings by the number of months worked", "Applying the three-band percentage formula to total career earnings"],
+            correctIndex: 0,
+            explanation: "Earlier years' earnings are restated using a ratio of national average wage indices before anything else happens.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What is the numerator of the indexing quotient?",
+            options: ["The wage index two years before the event", "The wage index for the computation base year being indexed", "The consumer price index for the year the benefit is first paid", "The average of the wage indices across the individual's whole career"],
+            correctIndex: 0,
+            explanation: "It is the national average wage index for the second calendar year preceding the year of the triggering event.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What is the denominator of that quotient?",
+            options: ["The wage index for the base year", "The wage index for the second year preceding the triggering event", "The number of months in the individual's benefit computation years", "The consumer price index for the year the earnings were received"],
+            correctIndex: 0,
+            explanation: "Dividing by the national average wage index for the computation base year is what restates old earnings in current wage terms.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What is the effect of indexing?",
+            options: ["Old earnings restated in current wage terms", "Removal of the years in which the individual earned the least income", "Conversion of monthly earnings figures into an annual equivalent", "Adjustment of the benefit for inflation after payments have begun"],
+            correctIndex: 0,
+            explanation: "A dollar earned decades ago is expressed in the wage terms of the year the benefit is computed against.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What are computation base years, in the regulation's definition?",
+            options: ["Years after 1950 up to entitlement", "The thirty-five years in which the individual earned the most money", "The years in which the individual had at least one quarter of coverage", "The thirteen quarters preceding the individual's entitlement to benefits"],
+            correctIndex: 0,
+            explanation: "They run from after 1950 up to but not including the year of entitlement, and through the year of death in some cases.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "Which years are used as benefit computation years?",
+            options: ["The highest after indexing", "The most recent years worked before the individual claims a benefit", "The years in which the individual was employed by a covered employer", "The years in which the individual's earnings exceeded the taxable maximum"],
+            correctIndex: 0,
+            explanation: "The regulation says the years with the highest amounts of earnings after indexing are used.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "By how many years does the statute reduce the elapsed years for an old-age insurance benefit?",
+            options: ["Five", "Ten, so that the count corresponds to forty quarters of coverage", "Three, matching the number of years in the record time limitation", "None, since every elapsed year is counted in the benefit computation"],
+            correctIndex: 0,
+            explanation: "The number of benefit computation years equals the number of elapsed years reduced by 5 years for an old-age benefit.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "Where does the familiar thirty-five-year figure actually come from?",
+            options: ["It is derived", "It is stated as a fixed number in the text of the governing statute", "It is set each year by the agency and published in the Federal Register", "It is the number of quarters of coverage required for insured status"],
+            correctIndex: 0,
+            explanation: "Elapsed years from age 22 through 61 less the five lowest indexed years leaves 35, so the number falls out of the rule.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "In the third step, what are the indexed totals divided by?",
+            options: ["The months in those years", "The number of benefit computation years used in the calculation", "The national average wage index for the year of entitlement", "The number of quarters of coverage the individual has earned"],
+            correctIndex: 0,
+            explanation: "Dividing the summed indexed amounts by the number of months in the benefit computation years produces the average indexed monthly earnings.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What does that division produce?",
+            options: ["Average indexed monthly earnings", "The primary insurance amount payable at the individual's retirement age", "The individual's replacement rate expressed as a share of final salary", "The taxable wage base against which contributions are computed"],
+            correctIndex: 0,
+            explanation: "The AIME is the input the three-band formula then operates on.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What percentage does the formula apply to the first band of average indexed monthly earnings?",
+            options: ["90 percent", "32 percent, which is the percentage applied to the middle band instead", "15 percent, which is the percentage applied to the highest band instead", "100 percent, since the first band is intended to be replaced in full"],
+            correctIndex: 0,
+            explanation: "The primary insurance amount is 90 percent of the first band, 32 percent of the second, and 15 percent of the amount above it.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What percentage applies to the middle band?",
+            options: ["32 percent", "90 percent, which applies to the first band of earnings instead", "15 percent, which applies to the band above the second threshold", "50 percent, which is the midpoint between the other two percentages"],
+            correctIndex: 0,
+            explanation: "The three percentages are 90, then 32, then 15, applied to successive bands of the AIME.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What percentage applies above the second threshold?",
+            options: ["15 percent", "32 percent, which applies between the first and second thresholds", "90 percent, which applies to the first band of average indexed earnings", "Zero, because earnings above the second threshold are disregarded entirely"],
+            correctIndex: 0,
+            explanation: "Fifteen percent of the AIME above the second threshold is the last term of the formula.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What do those three percentages establish about the programme?",
+            options: ["A progressive replacement rate", "That the benefit is proportional to lifetime earnings at every level", "That high earners receive a larger share of their earnings than low earners", "That the formula was designed to track the consumer price index over time"],
+            correctIndex: 0,
+            explanation: "The programme returns proportionally more of a low earner's earnings than a high earner's, which is written into the statute.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "Which formula applies to a given individual?",
+            options: ["The one for the year of the first event", "The one in force in the year the individual first claims a benefit", "The one published in the Federal Register during the year of retirement", "Whichever of the published formulas produces the larger benefit amount"],
+            correctIndex: 0,
+            explanation: "The regulation keys it to the year the individual reaches age 62, becomes disabled, or dies, whichever occurs first.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What happens to the dollar amounts inside the formula over time?",
+            options: ["They are adjusted annually", "They are fixed until Congress amends the underlying statute again", "They are recomputed for each individual from their own earnings record", "They are replaced by percentages once an individual claims a benefit"],
+            correctIndex: 0,
+            explanation: "The regulation says the dollar amounts receive automatic annual increases matching wage growth, with new formulas published in the Federal Register.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "Which two things does this lesson tell you never to carry in your head?",
+            options: ["The thresholds and any benefit amount", "The three percentages and the number of benefit computation years", "The indexing quotient and the definition of a computation base year", "The retirement age table and the definition of early retirement age"],
+            correctIndex: 0,
+            explanation: "The thresholds are adjusted every year and a benefit amount falls out of an individual's own indexed record.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What does the lesson give you instead of those figures?",
+            options: ["The procedure", "A worked example using the current year's published thresholds", "A table of typical benefit amounts by lifetime earnings level", "An estimate of the share of income the benefit is likely to replace"],
+            correctIndex: 0,
+            explanation: "Knowing the four steps lets you read your own statement and see which step produced which line.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What is early retirement age for an old-age insurance benefit?",
+            options: ["62", "60, which the statute assigns to a widow's or widower's benefit instead", "65, which is the retirement age for the earliest cohort in the table", "67, which is the retirement age for the most recent cohort in the table"],
+            correctIndex: 0,
+            explanation: "The statute sets 62 for an old-age, wife's, or husband's insurance benefit, and 60 for a widow's or widower's benefit.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "Which benefit carries an early retirement age of 60?",
+            options: ["A widow's or widower's benefit", "An old-age insurance benefit claimed by an individual worker", "A wife's or husband's insurance benefit claimed on a spouse's record", "A disability insurance benefit claimed before the retirement age"],
+            correctIndex: 0,
+            explanation: "The statute names age 60 for a widow's or widower's insurance benefit and age 62 for the other three.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "What is the retirement age for someone attaining early retirement age before January 1, 2000?",
+            options: ["65", "66, which applies to a later cohort in the statutory table", "67, which applies to the most recent cohort in the statutory table", "62, which is the early retirement age rather than the retirement age"],
+            correctIndex: 0,
+            explanation: "The first clause of the table sets 65 years of age for that cohort.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "What is the retirement age for someone attaining early retirement age between 2005 and 2016?",
+            options: ["66", "65, which applies to individuals attaining early retirement age before 2000", "67, which applies to individuals attaining early retirement age after 2021", "66 plus an age increase factor, which applies to the 2017 to 2021 cohort"],
+            correctIndex: 0,
+            explanation: "The table sets a flat 66 for anyone attaining early retirement age after December 31, 2004 and before January 1, 2017.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "What is the retirement age for someone attaining early retirement age after December 31, 2021?",
+            options: ["67", "66, which applies to the cohort attaining early retirement age from 2005", "65 plus an age increase factor, which applies to the 2000 to 2004 cohort", "68, since the statute continues to increase the age in later cohorts"],
+            correctIndex: 0,
+            explanation: "The last clause sets 67 and provides no further increase after it.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "What does the age increase factor do in the two transition cohorts?",
+            options: ["Adds months to the base age", "Reduces the benefit payable to individuals in those cohorts", "Changes the early retirement age from 62 to a later starting point", "Sets the number of benefit computation years used in the formula"],
+            correctIndex: 0,
+            explanation: "It phases the retirement age upward in months rather than in a single step, producing two ramps between two plateaus.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "What is unusual about this particular statutory number, compared with the others in this course?",
+            options: ["It is genuinely stable", "It is republished by the agency each year in the Federal Register", "It is set by a plan document rather than by the governing statute", "It is adjusted for cost of living using a base period and a rounding rule"],
+            correctIndex: 0,
+            explanation: "The last step has already arrived and there is no further increase after it, so the reader's number is fixed.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "Why does this lesson say Social Security belongs in a course otherwise about accounts?",
+            options: ["It is the layer underneath", "Because it is administered by the same agency that supervises pension plans", "Because participants may roll a workplace balance into it after leaving a job", "Because the benefit is credited to an individual account in the worker's name"],
+            correctIndex: 0,
+            explanation: "It reaches almost everyone in covered employment, is computed by a readable formula, is payable for life, and is indexed.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "What share of individuals aged 65 and older received household income from Social Security?",
+            options: ["About 92 percent", "About 61.5 percent, which is a figure about the lowest income quintile", "About 29.5 percent, which is a share of aggregate income rather than people", "About 53 percent, which is the private-sector plan participation rate"],
+            correctIndex: 0,
+            explanation: "The Congressional Research Service reported approximately 92 percent, analysing survey data for calendar year 2019.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "What share of aggregate income for people aged 65 and older did Social Security represent in 2019?",
+            options: ["About 29.5 percent", "About 92 percent, which is the share of people receiving any such income", "About 61.5 percent, which is a figure about the bottom income quintile", "About 15 percent, which is the top band percentage in the benefit formula"],
+            correctIndex: 0,
+            explanation: "It was the most common source of income among the aged and about 29.5 percent of aggregate income for that population.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "In the bottom fifth of the household income distribution, what share relied on Social Security for 90 percent or more of income?",
+            options: ["61.5 percent", "92 percent, which is the share receiving any income from the programme", "29.5 percent, which is its share of aggregate income for the whole group", "Almost none, which is the figure for the top two income quintiles"],
+            correctIndex: 0,
+            explanation: "The same analysis found almost none of those in the top two household income quintiles relied on it to that degree.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "What year's income does the analysis cited in this lesson reflect?",
+            options: ["2019", "2025, the year the analysis itself was most recently updated", "2022, the year of the most recent Survey of Consumer Finances", "2026, the year the statutes in this course were read and dated"],
+            correctIndex: 0,
+            explanation: "The report uses data reflecting income received in calendar year 2019 and was updated on 5 August 2025.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "What connection does the lesson draw between Section 1 and Section 5?",
+            options: ["Same fact at two ends of a working life", "That both concern arrangements an employer chooses whether to offer", "That both are governed by the same statute and the same federal agency", "That both use a base amount adjusted by a published cost-of-living formula"],
+            correctIndex: 0,
+            explanation: "The workers least likely to have a plan at work are the most likely to reach 65 with Social Security as nearly all of their income.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "Which feature of the benefit does the lesson name alongside being computed by a readable formula?",
+            options: ["Payable for life and indexed", "Convertible into a lump sum on application to the agency", "Transferable to a surviving employer plan on a trustee-to-trustee basis", "Adjustable by the participant among a menu of investment alternatives"],
+            correctIndex: 0,
+            explanation: "That combination is what makes it the layer underneath whatever a household does or does not hold in an account.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "How was the change in retirement age designed to take effect?",
+            options: ["Across cohorts over decades", "In a single step applying to everyone in the year of enactment", "By annual adjustment published each year in the Federal Register", "At the discretion of the agency once its funding position required it"],
+            correctIndex: 0,
+            explanation: "The table has two flat plateaus and two ramps, so anyone whose retirement age is 67 has had that fact fixed since long before they thought about it.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "Who sets the two ages this lesson describes?",
+            options: ["The statute", "The agency, through rules published in the Federal Register", "The individual, by electing a claiming age on their application", "The employer, through terms written into the plan document"],
+            correctIndex: 0,
+            explanation: "Both are written into the statute rather than left to administrative discretion.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "What is aggregate income, in the sense the lesson uses it?",
+            options: ["The total income of a population", "The income of one household summed across all of its sources", "The income remaining after taxes and mandatory deductions are taken", "The income an individual receives from a single programme in one year"],
+            correctIndex: 0,
+            explanation: "It is used to express how large a share of the income of everyone aged 65 and older comes from one source.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+          {
+            prompt: "Which two statuses does the coverage lesson warn are commonly confused?",
+            options: ["Fully insured and currently insured", "Fully insured and the retirement age defined by the statutory table", "Currently insured and being an active participant in an employer plan", "Insured status and the number of benefit computation years used"],
+            correctIndex: 0,
+            explanation: "They use different counts over different periods and do different jobs in the statute.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "The thirteen-quarter period for currently insured status ends with which kind of moment?",
+            options: ["A stated event", "The end of the calendar year in which the quarters were earned", "The quarter in which the individual last worked in covered employment", "The quarter in which the individual attains early retirement age"],
+            correctIndex: 0,
+            explanation: "It ends with the quarter of death, of entitlement to old-age benefits, or of most recent entitlement to disability benefits.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "Why does the earnings-record lesson say the action item is small and the consequence is not?",
+            options: ["Checking is easy and the record hardens", "Because corrections require an appeal that takes several years to resolve", "Because the agency charges a fee for each year of the record it reviews", "Because employers must be sued individually for each unreported quarter"],
+            correctIndex: 0,
+            explanation: "After the time limitation you are arguing against a record the statute calls conclusive rather than against a clerical error.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "How many steps does the computation lesson break the benefit calculation into?",
+            options: ["Four", "Three, one for each percentage band in the primary insurance formula", "Two, one for indexing the earnings and one for applying the formula", "Five, one for each of the years dropped from the elapsed-year count"],
+            correctIndex: 0,
+            explanation: "Index the earnings, choose the years, divide by months, and apply the three-band formula.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "Where are new benefit formulas published?",
+            options: ["The Federal Register", "The annual notice issued by the tax authority alongside the limits", "The summary plan description furnished by each participant's employer", "The comparative chart required by the participant fee disclosure rule"],
+            correctIndex: 0,
+            explanation: "The regulation says new formulas are published there and applied as soon as they become available.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What is a benefit computation year?",
+            options: ["One of the highest indexed years used", "Any year in which the individual earned at least one quarter of coverage", "The year in which the individual first becomes entitled to a benefit", "A year in which the individual's earnings reached the taxable maximum"],
+            correctIndex: 0,
+            explanation: "The count is the elapsed years reduced by five for an old-age benefit, and the years chosen are the highest after indexing.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "Why does the lesson call the three percentages the character of the programme?",
+            options: ["They fix how much of each dollar returns", "Because they are the only part of the formula that has never been amended", "Because they determine which cohort's retirement age applies to a worker", "Because they set the thresholds at which each band of earnings begins"],
+            correctIndex: 0,
+            explanation: "Ninety cents of the first dollars and fifteen of the last is a progressive replacement rate written into a statute.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "Which part of the formula gets argued about, according to the lesson?",
+            options: ["The thresholds", "The three percentages, which are revisited by Congress each session", "The indexing quotient, which the agency recomputes for each claimant", "The number of elapsed years, which varies by state of employment"],
+            correctIndex: 0,
+            explanation: "The percentages describe the shape and the thresholds decide where each band begins, which is why the thresholds are the contested numbers.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "How does the course describe the benefit computation overall?",
+            options: ["Not a black box", "A proprietary calculation the agency does not publish in detail", "An estimate the agency revises each year as wage data are collected", "A projection that depends on assumptions about future employment"],
+            correctIndex: 0,
+            explanation: "It is four steps, each of them written down in a statute or a regulation a reader can open.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What is the practical use of knowing the four steps?",
+            options: ["Reading your own statement", "Computing the exact benefit you will receive at retirement age", "Predicting how the thresholds will move in the coming several years", "Deciding whether to claim a benefit early or to defer claiming it"],
+            correctIndex: 0,
+            explanation: "You can see which step produced which line, which is what the course offers in place of a number.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "Which document does the regulation say the agency may use to correct a wage record?",
+            options: ["A tax return", "A letter from the employer confirming what the individual was paid", "The individual's own bank statements for the year in question", "A statement of account produced by the plan's own recordkeeper"],
+            correctIndex: 0,
+            explanation: "The regulation permits the agency to correct its records to agree with the amounts reported on a return.",
+            sourceLessonSlug: "coverage-and-the-earnings-record",
+          },
+          {
+            prompt: "Which of these is NOT one of the four steps of the benefit computation?",
+            options: ["Applying a cost-of-living increase to past earnings", "Restating earlier years' earnings using a ratio of wage indices", "Selecting the highest indexed years as benefit computation years", "Dividing the indexed total by the months in those years"],
+            correctIndex: 0,
+            explanation: "Indexing uses wage indices rather than a price adjustment, and the four steps are index, select, divide, and apply the formula.",
+            sourceLessonSlug: "how-the-benefit-is-computed",
+          },
+          {
+            prompt: "What does the statute call the period the retirement age table is keyed to?",
+            options: ["Attaining early retirement age", "The year of the individual's application for an old-age benefit", "The year in which the individual last worked in covered employment", "The taxable year in which the individual's earnings record closes"],
+            correctIndex: 0,
+            explanation: "Each clause of the table describes an individual who attains early retirement age within a stated window.",
+            sourceLessonSlug: "retirement-age-and-the-floor",
+          },
+        ],
+      },
+    },
   ],
 };
 
