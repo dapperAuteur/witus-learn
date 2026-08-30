@@ -2689,5 +2689,658 @@ Where a joint return's refund is reduced for a debt belonging to only one of the
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Free filing, and who actually gets it
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "free-file-is-a-contract",
+      title: "13 · Free File is a contract, and the number in it moves",
+      section: "Section 5 · Free filing, and who actually gets it",
+      body: `Almost everything people believe about free tax filing is wrong in the same way: they think it is a government program with a rule. **The main one is a contract between the government and a trade body, and the eligibility number in it is not a number at all.**
+
+## What Free File actually is
+
+Treasury's own report to Congress describes it precisely: "The Free File program is a public-private partnership between the IRS and Free File, Inc. (FFI), a tax-exempt section 501(c)(4) social welfare organization," first launched for the 2003 filing season, whose stated objective is to expand electronic filing and extend online preparation to economically disadvantaged and underserved populations at no cost to individual taxpayers or to the Treasury (U.S. Department of the Treasury, 2025, p. 5). Free File, Inc. is the successor to the Free File Alliance.
+
+**The terms are in a memorandum of understanding between the IRS and FFI**, not in the Internal Revenue Code. The report notes that the Ninth memorandum was extended by an amendment dated 30 April 2024 to run to 31 October 2029, and that when the arrangement was created in 2002 the Department of Justice's Antitrust Division reviewed it and indicated it had no intention of challenging it at that time, implying that material changes in structure or operations should be re-examined for antitrust compliance (U.S. Department of the Treasury, 2025, pp. 5-6).
+
+## The eligibility number is a percentile
+
+Here is the sentence to carry out of this lesson. Treasury writes that the memorandum "sets an annual income limit intended to make approximately 70 percent of taxpayers eligible to use Free File to file their federal income tax return," citing Article 3.1 of the memorandum (U.S. Department of the Treasury, 2025, p. 6).
+
+**So the threshold is not a policy figure and it is not a statutory one. It is derived from a share of the filing population, in a private contract, recalculated annually.** That is a mechanism, and a mechanism you can reason about. It also guarantees the number moves every year, which is exactly why no course should print it as a fact.
+
+**Two dated readings make the point.** Treasury records that "For tax year 2024, the AGI limit was 84,000 dollars" (U.S. Department of the Treasury, 2025, p. 6). The IRS's own Free File page, read on 29 August 2026 and last reviewed by the agency on 12 June 2026, states an adjusted gross income of 89,000 dollars or less for the guided software (Internal Revenue Service, 2026f).
+
+**Neither figure is the answer to your question**, because your question is about a filing season neither of them may cover. The method is to open the agency's own page, read the number there, and write down the date you read it.
+
+## The three things people get wrong about it
+
+**First, there are two products, not one.** The guided software has the income limit. **Free File Fillable Forms** has none: the IRS page describes it as available for any income level, with online forms the filer selects, form instructions as the only guidance, and limited calculations (Internal Revenue Service, 2026f). It is a typewriter, not an adviser, and it is federal only.
+
+**Second, each provider sets its own narrower criteria.** Treasury records that participating providers may impose additional criteria such as age limits, military status or lower income limits, but that collectively they must make at least one federal return option available to every eligible taxpayer (U.S. Department of the Treasury, 2025, p. 6).
+
+**Third, state returns are a separate question.** Treasury notes that state coverage is required only in states participating in a State Free File Program, and that where offered, income limits or scope restrictions may be more restrictive than the federal ones, which is one reason taxpayers perceive that Free File is not truly free (U.S. Department of the Treasury, 2025, pp. 6-7).
+
+:::reveal What kind of instrument sets the Free File eligibility limit? ||| A memorandum of understanding between the IRS and Free File, Inc., not a statute.
+
+:::reveal What is the Free File income limit actually derived from? ||| A share of the filing population: Article 3.1 sets an annual limit intended to make approximately 70 percent of taxpayers eligible.
+
+:::reveal What is the income limit for Free File Fillable Forms? ||| There is none. It is available at any income level, with form instructions as its only guidance.
+
+## Vocabulary
+- **Public-private partnership**: the structure of Free File, in which commercial providers supply the software and the terms sit in a contract rather than in the Code.
+- **Memorandum of understanding**: the agreement between the IRS and Free File, Inc. that governs the program, including the annual income limit.
+- **Free File Fillable Forms**: the no-income-limit, federal-only option that supplies electronic forms and form instructions rather than guided preparation.
+- **State Free File Program**: the separate arrangement under which some states are covered, on terms that may be narrower than the federal ones.
+
+## Sources
+Internal Revenue Service. (2026f). *IRS Free File: Do your taxes for free*. https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free
+
+U.S. Department of the Treasury. (2025). *Report on the replacement of Direct File: Report to Congress*. https://home.treasury.gov/system/files/131/Report-Replacement-of-Direct-File-2025.pdf`,
+    },
+    {
+      slug: "the-volunteer-programs",
+      title: "14 · The volunteer programs, and the statute behind them",
+      section: "Section 5 · Free filing, and who actually gets it",
+      body: `The other free route is older than the software, it is staffed by trained people rather than by a form, and it is the one this course would point at if it were allowed to point at anything.
+
+## Where they came from
+
+Treasury's report records that the Volunteer Income Tax Assistance program was "established as an outgrowth of the Tax Reform Act of 1969 (Public Law 91-172)" and that Tax Counseling for the Elderly started in 1978, providing free tax help tailored to seniors with priority given to taxpayers aged 60 and older, including counselling on pensions and retirement issues (U.S. Department of the Treasury, 2025, p. 4).
+
+**The grant program that funds VITA partners is in the Code.** The Taxpayer First Act of 2019 (Public Law 116-25) made it permanent, codified at **26 U.S.C. § 7526A**, whose subsection (a) directs that "The Secretary shall establish a Community Volunteer Income Tax Assistance Matching Grant Program" (26 U.S.C. § 7526A, n.d.; U.S. Department of the Treasury, 2025, p. 4 n.16). Grants are matched dollar for dollar by the recipient program.
+
+## How large it is, and the number that matters
+
+As of Treasury's October 2025 report: the two programs together involve nearly **3,100 partner organizations** and more than **76,000 IRS-trained and certified volunteers**, many of them retirees, students or community members. VITA operates at more than **5,600 sites** and TCE at more than **3,900**, typically in community centres, libraries, schools, churches and senior centres (U.S. Department of the Treasury, 2025, pp. 4-5).
+
+**Now the figure worth carrying out of this lesson.** For tax year 2024, Treasury estimated that approximately **67 million tax units were eligible for VITA**, and that **1.6 million returns** were filed through the program as of 1 August 2025 (U.S. Department of the Treasury, 2025, p. 4). For TCE, approximately 22 million eligible and 1.2 million returns filed.
+
+**Sixty-seven million eligible, one point six million served.** Whatever is limiting this program, it is not eligibility. It is capacity, awareness, and the fact that a site with volunteer hours is a physical thing with a queue.
+
+## The limits, stated plainly
+
+**There is an income test and it moves.** Treasury records a VITA adjusted gross income threshold of **67,000 dollars for tax year 2024** (U.S. Department of the Treasury, 2025, p. 4). The IRS's own page, read on 29 August 2026 and last reviewed by the agency on 12 August 2026, describes VITA as serving people who generally make 69,000 dollars or less, persons with disabilities, and limited English speaking taxpayers (Internal Revenue Service, 2026g). **Two figures, two dates, one moving number, and the same method as the last lesson: read the agency's page and write down when you read it.**
+
+**There is a scope limit.** Treasury notes that services vary by site with volunteer training and capacity, and that some situations, such as certain self-employment income, capital gains and losses, and children's unearned income, are generally outside the scope of what a site will prepare (U.S. Department of the Treasury, 2025, p. 4).
+
+**And there is a quality floor.** The IRS states that "All VITA/TCE volunteers who prepare returns must take and pass tax law training that meets or exceeds IRS standards," and Treasury records that a reviewer checks a volunteer-prepared return before it is finalised (Internal Revenue Service, 2026g; U.S. Department of the Treasury, 2025, p. 5 n.19).
+
+## Preparation is not representation
+
+One more distinction, because people conflate them and they are different services with different statutes.
+
+**26 U.S.C. § 7526** authorises grants for **low-income taxpayer clinics**, which are a different thing from a preparation site. A qualified clinic charges no more than nominal fees and either represents low-income taxpayers in controversies with the Internal Revenue Service or runs programs informing individuals for whom English is a second language about their rights and responsibilities (26 U.S.C. § 7526, n.d.).
+
+**Preparation happens before a return is filed. Representation happens after something has gone wrong with one.** Section 6 of this course is about the second situation, and the clinics are the free route into it.
+
+:::reveal Which statute made the VITA matching grant program permanent, and where is it codified? ||| The Taxpayer First Act of 2019, codified at 26 U.S.C. 7526A.
+
+:::reveal What do the VITA eligibility and participation figures for tax year 2024 suggest is limiting the program? ||| Not eligibility: roughly 67 million tax units were eligible and about 1.6 million returns were filed through it.
+
+:::reveal What is the difference between a VITA site and a low-income taxpayer clinic? ||| A site prepares a return before it is filed; a clinic under 26 U.S.C. 7526 represents taxpayers in controversies afterwards.
+
+## Vocabulary
+- **VITA**: the Volunteer Income Tax Assistance program, an outgrowth of the Tax Reform Act of 1969, whose grant funding sits at 26 U.S.C. 7526A.
+- **TCE**: Tax Counseling for the Elderly, begun in 1978, with priority for taxpayers aged 60 and older and a focus on pensions and retirement.
+- **Scope limitation**: the rule that a volunteer site prepares only the return types its training and capacity cover, so some situations are turned away.
+- **Low-income taxpayer clinic**: the 26 U.S.C. 7526 institution that represents taxpayers in controversies with the Service, which is representation rather than preparation.
+
+## Sources
+26 U.S.C. § 7526. (n.d.). *Low-income taxpayer clinics*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/7526
+
+26 U.S.C. § 7526A. (n.d.). *Return preparation programs for applicable taxpayers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/7526A
+
+Internal Revenue Service. (2026g). *Free tax return preparation for qualifying taxpayers*. https://www.irs.gov/individuals/free-tax-return-preparation-for-qualifying-taxpayers
+
+U.S. Department of the Treasury. (2025). *Report on the replacement of Direct File: Report to Congress*. https://home.treasury.gov/system/files/131/Report-Replacement-of-Direct-File-2025.pdf`,
+    },
+    {
+      slug: "direct-file-and-what-happened",
+      title: "15 · The government built one itself, and then suspended it",
+      section: "Section 5 · Free filing, and who actually gets it",
+      body: `The third route is the one that shows most clearly why this course refuses to describe a program in the present tense without a date.
+
+## What was built, and how much it was used
+
+Treasury's report to Congress states the facts and the numbers. Direct File let eligible taxpayers file a federal individual return online directly with the IRS at no direct cost to the user. It launched as a pilot for tax year 2023 in **12 states**, at the conclusion of which "a total of 140,803 returns had been filed by users and accepted by the IRS." For tax year 2024 it was available in **25 states**, and as of 20 April 2025 "a total of 296,531 returns had been filed by users and accepted by the IRS" (U.S. Department of the Treasury, 2025, p. 1).
+
+**Then the assessment, in the report's own words:** "Direct File had low overall participation and relatively high costs and burdens on the federal government, compared to other free filing options" (U.S. Department of the Treasury, 2025, p. 1).
+
+## The statute that asked the question
+
+The report exists because Congress required it. Its own cover states that "Section 70607 of Public Law No. 119-21 (the One, Big, Beautiful Bill Act or 'OBBBA') directs the Department of the Treasury to evaluate alternatives to Direct File. This report fulfills this requirement" (U.S. Department of the Treasury, 2025, cover page). The report is dated **2 October 2025**.
+
+## The answer it gave
+
+The report sets out a four-step approach, and its second step is the one that matters here. Under the heading "STEP 2: Suspend the Direct File Program," it states: "The IRS will suspend Direct File pilot program due to the program's high costs, limited participation, and the agency's need to focus resources on other priorities. Benefits intended under Direct File can be achieved more efficiently, and for a broader population, through enhancements to the Free File program" (U.S. Department of the Treasury, 2025, p. 18).
+
+The other three steps are: enhance awareness of Free File and launch a public communications strategy; conduct a formal taxpayer survey using funds available from 1 October 2025 and convene a **Free Filing Modernization Summit** chaired by senior Treasury officials; and define what a "free" return means, collect data from commercial software companies, and prepare a supplemental report (U.S. Department of the Treasury, 2025, pp. 16-19).
+
+## What this course will and will not say
+
+**What is documented:** the report above, dated 2 October 2025, announcing suspension. And the IRS's own news release opening the 2026 filing season on 26 January 2026, which names Free File and the volunteer programs as the free routes and does not mention Direct File (Internal Revenue Service, 2026e).
+
+**What this course will not do is state a present-tense status for the program on the day you happen to be reading.** Two documents on two dates are evidence about those dates. The lesson records both and files a source check rather than asserting a fact about today, which is precisely the discipline the rest of this course applies to a bracket amount.
+
+## The transferable lesson
+
+**A free filing route can be designed, launched, used by hundreds of thousands of people, evaluated in a report to Congress, and suspended, inside about eighteen months.** A course that told you which routes exist would be wrong within a year. A course that tells you where the routes are announced will not be.
+
+**So the method is:** before each filing season, open the IRS's own filing pages, see which routes it names, and note the date. Then check the same pages for the income limits, because those move too, on a different clock, for different reasons.
+
+:::reveal How many returns were filed and accepted through Direct File for tax year 2024, and as at what date? ||| 296,531, as of 20 April 2025, according to Treasury's report to Congress.
+
+:::reveal Which statutory provision required Treasury's report on the replacement of Direct File? ||| Section 70607 of Public Law No. 119-21.
+
+:::reveal Why does this lesson refuse to state a present-tense status for Direct File? ||| Because two dated documents are evidence about those dates, and the program's status changed twice in about eighteen months.
+
+## Vocabulary
+- **Direct File**: the IRS-built option for filing a federal return directly with the agency at no direct cost to the user, piloted for tax year 2023 and expanded for tax year 2024.
+- **Report to Congress**: the document a statute requires an agency to produce, which is a primary source for what the agency said and when it said it.
+- **Suspension**: the step Treasury's October 2025 report announced for the program, distinct from a repeal of any statute.
+- **Free Filing Modernization Summit**: the convening the same report proposed, bringing tax preparation industry leaders together to expand free filing.
+
+## Sources
+Internal Revenue Service. (2026e). *IRS opens 2026 filing season* (IR-2026-12). https://www.irs.gov/newsroom/irs-opens-2026-filing-season
+
+U.S. Department of the Treasury. (2025). *Report on the replacement of Direct File: Report to Congress*. https://home.treasury.gov/system/files/131/Report-Replacement-of-Direct-File-2025.pdf`,
+    },
+    {
+      slug: "quiz-free-filing",
+      title: "Section 5 review · Free File, the volunteer programs, and Direct File",
+      section: "Section 5 · Free filing, and who actually gets it",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What kind of arrangement is IRS Free File?",
+            options: ["A public-private partnership", "A program established by a section of the Internal Revenue Code", "A grant program administered through community partner organizations", "A service operated directly by the Bureau of the Fiscal Service"],
+            correctIndex: 0,
+            explanation: "Treasury describes it as a partnership between the IRS and Free File, Inc., a tax-exempt section 501(c)(4) social welfare organization.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "What is Free File, Inc. the successor to?",
+            options: ["The Free File Alliance", "The Volunteer Income Tax Assistance program partner network", "The Electronic Tax Administration Advisory Committee", "The Taxpayer Advocate Service's outreach panel"],
+            correctIndex: 0,
+            explanation: "Treasury's report records the succession in a footnote to its description of the program.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "For which filing season did Free File first launch?",
+            options: ["2003", "1969, alongside the creation of the volunteer program", "2019, when the Taxpayer First Act was enacted", "2024, when Direct File was expanded to twenty-five states"],
+            correctIndex: 0,
+            explanation: "Its stated objective was to expand electronic filing and extend online preparation to underserved populations at no cost.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "Where are the terms of the Free File program set out?",
+            options: ["In a memorandum of understanding", "In the Internal Revenue Code at section 7526A", "In regulations issued by the Secretary under section 6011", "In an annual revenue procedure published each December"],
+            correctIndex: 0,
+            explanation: "That is why the eligibility limit is a contractual term rather than a statutory one.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "What does Article 3.1 of that memorandum set the annual income limit to achieve?",
+            options: ["Eligibility for about 70 percent of taxpayers", "A limit equal to the median adjusted gross income for the year", "A limit matching the VITA income threshold for the same year", "Eligibility for every taxpayer below the section 6012 threshold"],
+            correctIndex: 0,
+            explanation: "The threshold is derived from a share of the filing population, recalculated annually, which guarantees it moves.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "What AGI limit does Treasury record for Free File in tax year 2024?",
+            options: ["84,000 dollars", "89,000 dollars, which is the figure the IRS page now shows", "67,000 dollars, which is the VITA threshold for the same year", "79,000 dollars, which was the limit before the ninth memorandum"],
+            correctIndex: 0,
+            explanation: "The IRS page read on 29 August 2026 shows a different figure, which is the point: two dated readings of one moving number.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "What AGI figure did the IRS Free File page state when the lesson author read it?",
+            options: ["89,000 dollars or less", "84,000 dollars or less, matching the tax year 2024 limit", "There is no limit for any of the Free File products", "A limit set individually by each participating provider"],
+            correctIndex: 0,
+            explanation: "Read on 29 August 2026, with the agency's own review date of 12 June 2026 recorded beside it.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "What is the income limit for Free File Fillable Forms?",
+            options: ["There is none", "The same limit that applies to the guided software", "A limit half the size of the guided software's threshold", "A limit each participating provider sets for itself"],
+            correctIndex: 0,
+            explanation: "It is available at any income level, with form instructions as its only guidance and limited calculations.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "How does the lesson describe Free File Fillable Forms?",
+            options: ["A typewriter, not an adviser", "Guided preparation with step-by-step interview questions", "A service staffed by trained volunteers at community sites", "A product that also prepares and transmits a state return"],
+            correctIndex: 0,
+            explanation: "It supplies electronic forms and their instructions, and it is federal only.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "May a Free File provider impose criteria narrower than the program's?",
+            options: ["Yes, such as age or military status", "No, every provider must accept every eligible taxpayer", "Only with the written consent of the Secretary each year", "Only where the taxpayer also files a state return through it"],
+            correctIndex: 0,
+            explanation: "Collectively, though, providers must make at least one federal return option available to all eligible taxpayers.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "When is state coverage required under the Free File program?",
+            options: ["Only in states with a State Free File Program", "In every state that imposes an individual income tax", "Wherever the taxpayer's federal return is prepared for free", "Only for taxpayers below the federal adjusted gross income limit"],
+            correctIndex: 0,
+            explanation: "Where offered, its income limits or scope restrictions may be more restrictive than the federal ones.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "What did the Department of Justice's Antitrust Division do in 2002?",
+            options: ["Indicated no intention to challenge the arrangement", "Approved the arrangement permanently and closed the matter", "Required the program to be reopened to non-member providers", "Conditioned the arrangement on an annual income limit"],
+            correctIndex: 0,
+            explanation: "Implying that material changes in structure or operations should be re-examined for antitrust compliance.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "Until when was the ninth memorandum extended?",
+            options: ["31 October 2029", "2 October 2025, the date of the Treasury report", "30 April 2024, the date of the amendment itself", "The end of the 2026 filing season"],
+            correctIndex: 0,
+            explanation: "By an amendment dated 30 April 2024, according to Treasury's report to Congress.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "Which Act was VITA an outgrowth of?",
+            options: ["The Tax Reform Act of 1969", "The Taxpayer First Act of 2019, which made its grants permanent", "The Protecting Americans from Tax Hikes Act of 2015", "The One, Big, Beautiful Bill Act of 2025"],
+            correctIndex: 0,
+            explanation: "Public Law 91-172, according to Treasury's report, with TCE following in 1978.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "Which Act made the VITA matching grant program permanent?",
+            options: ["The Taxpayer First Act of 2019", "The Tax Reform Act of 1969, which created the program itself", "The Consolidated Appropriations Act, 2016, which carried the PATH Act", "The One, Big, Beautiful Bill Act, which addressed free filing generally"],
+            correctIndex: 0,
+            explanation: "Public Law 116-25, codified at 26 U.S.C. 7526A.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "Where is the VITA matching grant program codified?",
+            options: ["26 U.S.C. 7526A", "26 U.S.C. 7526, which authorises low-income taxpayer clinics", "26 U.S.C. 6402, which governs credits and refunds of overpayments", "26 U.S.C. 7803, which sets out the enumerated taxpayer rights"],
+            correctIndex: 0,
+            explanation: "Its subsection (a) directs the Secretary to establish the Community Volunteer Income Tax Assistance Matching Grant Program.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "On what basis are the section 7526A grants matched?",
+            options: ["Dollar for dollar", "At three federal dollars for every dollar raised locally", "At a rate the Secretary sets for each grant recipient", "Only for the first year of a partner organization's operation"],
+            correctIndex: 0,
+            explanation: "A qualified return preparation program must provide matching funds on that basis.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "In what year did the TCE program start?",
+            options: ["1978", "1969, alongside the Act that produced VITA", "2003, the first filing season for Free File", "2019, when the Taxpayer First Act was enacted"],
+            correctIndex: 0,
+            explanation: "It provides free help tailored to seniors, with priority given to taxpayers aged 60 and older.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "Which age group has priority under TCE?",
+            options: ["Taxpayers aged 60 and older", "Taxpayers aged 65 and older, matching the earned income credit ceiling", "Taxpayers who have begun drawing a pension of any kind", "Taxpayers who retired during the taxable year in question"],
+            correctIndex: 0,
+            explanation: "Volunteers often counsel on pensions and retirement issues unique to older taxpayers.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "How many volunteers did Treasury record across the two programs?",
+            options: ["More than 76,000", "About 3,100, matching the number of partner organizations", "More than 5,600, matching the number of VITA sites", "About 1.6 million, matching the returns filed through VITA"],
+            correctIndex: 0,
+            explanation: "IRS-trained and certified, many of them retirees, students or community members.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "How many partner organizations did Treasury record?",
+            options: ["Nearly 3,100", "More than 76,000, which is the volunteer figure instead", "More than 9,500, being the VITA and TCE sites combined", "About 67 million, which is the eligible population figure"],
+            correctIndex: 0,
+            explanation: "Together they run more than 5,600 VITA sites and more than 3,900 TCE sites.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "How many tax units did Treasury estimate were eligible for VITA in tax year 2024?",
+            options: ["About 67 million", "About 22 million, which is the TCE eligibility estimate", "About 1.6 million, which is the number of returns filed", "About 3,100, which is the partner organization count"],
+            correctIndex: 0,
+            explanation: "And about 1.6 million returns were filed through the program as of 1 August 2025.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What does the gap between VITA eligibility and VITA use suggest is limiting the program?",
+            options: ["Capacity and awareness, not eligibility", "The income threshold, which excludes most working households", "The statutory grant formula, which caps the number of sites", "The scope rules, which exclude the most common return types"],
+            correctIndex: 0,
+            explanation: "A site with volunteer hours is a physical thing with a queue, and roughly one eligible household in forty was served.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What VITA income threshold does Treasury record for tax year 2024?",
+            options: ["67,000 dollars", "69,000 dollars, which is the figure the IRS page now shows", "84,000 dollars, which is the Free File limit for the same year", "89,000 dollars, which is the current Free File software limit"],
+            correctIndex: 0,
+            explanation: "The IRS page read on 29 August 2026 describes a different figure, which is why both carry their dates.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "Besides an income test, whom does the IRS page say VITA serves?",
+            options: ["Persons with disabilities and limited English speakers", "Taxpayers claiming the earned income credit in any amount", "Taxpayers who have received a notice of deficiency", "Taxpayers residing outside the United States for part of the year"],
+            correctIndex: 0,
+            explanation: "Read on 29 August 2026, with the agency's own review date of 12 August 2026 recorded beside it.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "Which situations does Treasury name as generally outside VITA scope?",
+            options: ["Some self-employment, capital gains, children's unearned income", "Any return claiming the earned income credit or the child credit", "Any return for a taxpayer over the age of sixty", "Any return that also requires a state filing to be prepared"],
+            correctIndex: 0,
+            explanation: "Services vary by site with volunteer training and capacity, so scope is a site-level fact.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What training standard applies to VITA and TCE volunteers who prepare returns?",
+            options: ["Training that meets or exceeds IRS standards", "A state licence in the jurisdiction where the site operates", "A certification issued by the partner organization itself", "A qualification equivalent to that of a paid preparer"],
+            correctIndex: 0,
+            explanation: "They must take and pass it, and a reviewer checks a volunteer-prepared return before it is finalised.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What does 26 U.S.C. 7526 authorise grants for?",
+            options: ["Low-income taxpayer clinics", "Volunteer preparation sites operated by community partners", "Free electronic filing software supplied by commercial providers", "Outreach campaigns encouraging eligible households to claim credits"],
+            correctIndex: 0,
+            explanation: "A different institution from a preparation site, and a different statute from section 7526A.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What does a qualified low-income taxpayer clinic do?",
+            options: ["Represents taxpayers in controversies, or educates them", "Prepares and transmits returns free of charge before filing", "Issues determinations binding on the Internal Revenue Service", "Administers the matching grants paid to volunteer programs"],
+            correctIndex: 0,
+            explanation: "The statute names representation in controversies and programs informing people for whom English is a second language.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What fee limit applies to a qualified low-income taxpayer clinic?",
+            options: ["No more than nominal fees", "A fee capped at one percent of the amount in controversy", "A sliding scale published annually by the Secretary", "No fee at all under any circumstance whatsoever"],
+            correctIndex: 0,
+            explanation: "Except for reimbursement of actual costs, according to the statutory definition.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What distinction does the lesson draw between preparation and representation?",
+            options: ["Before filing versus after something goes wrong", "Free versus paid, whatever the stage of the matter", "Federal versus state, depending on which return is at issue", "Volunteer-staffed versus software-driven service delivery"],
+            correctIndex: 0,
+            explanation: "Section 6 of the course is about the second situation, and the clinics are the free route into it.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "In how many states was Direct File available for the tax year 2023 pilot?",
+            options: ["12", "25, which was the number for tax year 2024 instead", "50, since it was a federal program available nationwide", "Fewer than 5, because it was limited to a small trial group"],
+            correctIndex: 0,
+            explanation: "A total of 140,803 returns had been filed and accepted by the conclusion of the pilot.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "How many returns were filed and accepted through the tax year 2023 pilot?",
+            options: ["140,803", "296,531, which is the tax year 2024 figure instead", "1.6 million, which is the VITA figure for tax year 2024", "Fewer than 10,000, because the pilot covered twelve states"],
+            correctIndex: 0,
+            explanation: "Treasury's report to Congress states the figure for the conclusion of the pilot program.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "In how many states was Direct File available for tax year 2024?",
+            options: ["25", "12, which was the pilot figure for tax year 2023", "38, following the expansion announced in the report", "All of them, once the pilot had concluded successfully"],
+            correctIndex: 0,
+            explanation: "And 296,531 returns had been filed and accepted as of 20 April 2025.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "How did Treasury's report characterise Direct File's participation and costs?",
+            options: ["Low participation and relatively high costs", "High participation at a cost comparable to other free options", "Low participation at a cost lower than any commercial product", "High participation but a burden falling mainly on the states"],
+            correctIndex: 0,
+            explanation: "Compared to other free filing options, in the report's own words.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "Which provision required Treasury to evaluate alternatives to Direct File?",
+            options: ["Section 70607 of Public Law No. 119-21", "Section 201(b) of the Protecting Americans from Tax Hikes Act", "Section 7526A of the Internal Revenue Code, on matching grants", "Article 3.1 of the memorandum of understanding with Free File, Inc."],
+            correctIndex: 0,
+            explanation: "The report's own cover page states that it fulfils that requirement.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What date does Treasury's report on the replacement of Direct File carry?",
+            options: ["2 October 2025", "26 January 2026, the opening of the following filing season", "4 July 2025, the date the requiring statute was enacted", "20 April 2025, the date of the participation figure it cites"],
+            correctIndex: 0,
+            explanation: "Dating the document is what lets a reader judge how much it says about any later moment.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What does Step 2 of the report announce?",
+            options: ["Suspension of the Direct File program", "Expansion of Direct File to the remaining twenty-five states", "Transfer of Direct File to a commercial software provider", "A statutory repeal of the authority to operate Direct File"],
+            correctIndex: 0,
+            explanation: "Citing high costs, limited participation, and the agency's need to focus resources on other priorities.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "Through what does the report say Direct File's intended benefits can be achieved instead?",
+            options: ["Enhancements to the Free File program", "Expansion of the volunteer preparation sites in every state", "A new grant program administered through community partners", "A direct appropriation to build a replacement filing system"],
+            correctIndex: 0,
+            explanation: "More efficiently and for a broader population, in the report's own words.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What does Step 1 of the report propose?",
+            options: ["Enhancing awareness of Free File", "Suspending the Direct File program immediately", "Convening a summit of tax preparation industry leaders", "Defining what a free return means for data collection"],
+            correctIndex: 0,
+            explanation: "Together with launching a public communications strategy, ahead of the suspension step.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What is the Free Filing Modernization Summit?",
+            options: ["A convening the report proposed, chaired by Treasury", "An annual conference the Internal Revenue Code requires", "A grant competition among volunteer partner organizations", "A panel that sets the Free File income limit each year"],
+            correctIndex: 0,
+            explanation: "It would bring tax preparation industry leaders and experts together to expand free filing.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What does the fourth step of the report require Treasury to define?",
+            options: ["What a free return means", "Which taxpayers are eligible for the volunteer programs", "How the annual Free File income limit is to be calculated", "Which states must participate in a State Free File Program"],
+            correctIndex: 0,
+            explanation: "Alongside collecting data from commercial software companies and preparing a supplemental report.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "Which free routes does the IRS release opening the 2026 filing season name?",
+            options: ["Free File and the volunteer programs", "Direct File, Free File and the volunteer programs together", "Only Free File, with no mention of volunteer preparation", "Only the volunteer programs, since Free File had been suspended"],
+            correctIndex: 0,
+            explanation: "The release does not mention Direct File, which the lesson records as evidence about that date rather than about today.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "Why does the lesson file a source check rather than stating the program's status?",
+            options: ["Two dated documents are evidence about those dates", "Because the agency has not published any document on the subject", "Because a course may not cite a report to Congress as a source", "Because the status is a matter of state rather than federal law"],
+            correctIndex: 0,
+            explanation: "It is the same discipline the rest of the course applies to a bracket amount.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What does the lesson say happened to a free filing route inside about eighteen months?",
+            options: ["Designed, launched, evaluated, and suspended", "Enacted by statute and then repealed by a later Congress", "Transferred from the agency to a private trade association", "Expanded from twelve states to every state in the country"],
+            correctIndex: 0,
+            explanation: "Which is why a course naming the routes would be wrong within a year while one naming where they are announced would not.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What method does the lesson give for the start of each filing season?",
+            options: ["Open the IRS pages and note the date", "Search for news coverage of the previous season's routes", "Ask a commercial preparer which free options remain open", "Rely on the course, which is revised before each season"],
+            correctIndex: 0,
+            explanation: "Then check the same pages for the income limits, because those move too, on a different clock.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What does the lesson say the two moving numbers in this section have in common?",
+            options: ["Both require a reading with a date attached", "Both are set by statute and change only by amendment", "Both are published in the annual revenue procedure", "Both apply to the same population of eligible filers"],
+            correctIndex: 0,
+            explanation: "The Free File limit follows a percentile in a contract and the VITA threshold moves on its own schedule.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What kind of thing does the lesson say a volunteer site is?",
+            options: ["A physical thing with a queue", "A software product available at any hour of the day", "A federal office staffed by agency employees", "A hotline operated by the Taxpayer Advocate Service"],
+            correctIndex: 0,
+            explanation: "Which is part of why sixty-seven million eligible households produced about 1.6 million returns.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What was Direct File's cost to the user, as the report describes it?",
+            options: ["No direct cost", "A flat fee lower than any commercial alternative", "A fee waived only for taxpayers below an income limit", "A cost shared between the taxpayer and the participating state"],
+            correctIndex: 0,
+            explanation: "Eligible taxpayers filed a federal individual return online directly with the IRS at no direct cost.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What does the course say a memorandum of understanding is, relative to the Code?",
+            options: ["A contract rather than a statute", "A regulation with the force of law once published", "An interpretive document binding only on the agency", "A schedule appended to the Internal Revenue Code by reference"],
+            correctIndex: 0,
+            explanation: "Which is why nobody amends a statute when the Free File income limit moves.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "What does the lesson say is wrong with how most people understand free filing?",
+            options: ["They think it is a program with a rule", "They think it is limited to taxpayers claiming credits", "They think it covers state returns in every jurisdiction", "They think it requires an appointment at a volunteer site"],
+            correctIndex: 0,
+            explanation: "The main route is a contract between the government and a trade body, and its eligibility number is a percentile.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "What was the stated objective of the Free File program?",
+            options: ["Expanding electronic filing to underserved populations", "Reducing the number of returns requiring manual processing", "Replacing the volunteer preparation sites with software", "Collecting data on how taxpayers prepare their own returns"],
+            correctIndex: 0,
+            explanation: "At no cost to individual taxpayers or to the Treasury, according to the report's description.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "Why does Treasury say taxpayers sometimes perceive Free File as not truly free?",
+            options: ["State returns may carry a charge", "Because providers require payment before transmitting a return", "Because the income limit excludes most of the filing population", "Because the software collects a fee from any refund produced"],
+            correctIndex: 0,
+            explanation: "State coverage is required only in participating states, and where offered may be narrower than the federal terms.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "How many TCE sites did Treasury record?",
+            options: ["More than 3,900", "More than 5,600, which is the VITA site count instead", "Nearly 3,100, which is the partner organization count", "More than 76,000, which is the volunteer count"],
+            correctIndex: 0,
+            explanation: "Typically in senior centres, libraries and other community locations.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "How many returns were filed through TCE for tax year 2024, per Treasury?",
+            options: ["1.2 million", "1.6 million, which is the VITA figure for the same year", "22 million, which is the TCE eligibility estimate", "296,531, which is the Direct File figure for that year"],
+            correctIndex: 0,
+            explanation: "Against an estimated 22 million eligible tax units, as of 1 August 2025.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What does the course say a lesson naming today's free routes would be within a year?",
+            options: ["Wrong", "Still accurate, since the routes rarely change", "Incomplete but not misleading to a reader", "Unciteable, because no primary source exists"],
+            correctIndex: 0,
+            explanation: "A lesson naming where the routes are announced survives the change; a list of them does not.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What tax-exempt classification does the lesson give Free File, Inc.?",
+            options: ["Section 501(c)(4)", "Section 501(c)(3), the classification for public charities", "Section 527, the classification for political organizations", "Section 501(c)(6), the classification for trade associations"],
+            correctIndex: 0,
+            explanation: "Treasury describes it as a tax-exempt section 501(c)(4) social welfare organization.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "What does the lesson tell a reader to write down alongside a free-filing income figure?",
+            options: ["The date it was read", "The name of the provider that published it", "The section of the Code that authorises the program", "The number of taxpayers eligible under that figure"],
+            correctIndex: 0,
+            explanation: "Neither the tax year 2024 figure nor the current page figure answers a question about a season that neither covers.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "How many Free File products does the lesson say there are?",
+            options: ["Two", "One, with an income limit set annually by contract", "Three, counting the state filing option separately", "As many as there are participating software providers"],
+            correctIndex: 0,
+            explanation: "Guided software with an income limit, and fillable forms with none.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "What guidance does Free File Fillable Forms supply?",
+            options: ["Form instructions", "A full interview covering every credit the filer may claim", "A review by a trained volunteer before the return is filed", "A calculation of every line the return requires"],
+            correctIndex: 0,
+            explanation: "With limited calculations, which is why the lesson calls it a typewriter rather than an adviser.",
+            sourceLessonSlug: "free-file-is-a-contract",
+          },
+          {
+            prompt: "Who is described as staffing the volunteer programs?",
+            options: ["Retirees, students and community members", "Enrolled agents licensed to practise before the Service", "Employees of the Internal Revenue Service on rotation", "Staff of the commercial software companies in the partnership"],
+            correctIndex: 0,
+            explanation: "All of them IRS-trained and certified, with a review step before a return is finalised.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "Where does Treasury say the volunteer sites are typically located?",
+            options: ["Community centres, libraries, schools and churches", "Offices of the Internal Revenue Service in each judicial district", "Branches of the banks that participate in the refund program", "State revenue department offices in each county seat"],
+            correctIndex: 0,
+            explanation: "With TCE typically in senior centres and other community locations.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What does section 7526A(a) direct the Secretary to establish?",
+            options: ["A matching grant program", "A network of federally staffed preparation offices", "A public-private partnership with software providers", "A clinic representing taxpayers in controversies"],
+            correctIndex: 0,
+            explanation: "The Community Volunteer Income Tax Assistance Matching Grant Program, funded dollar for dollar.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "Which income ceiling does the section 7526 clinic definition use?",
+            options: ["250 percent of the poverty level", "The Free File income limit for the same taxable year", "The VITA threshold published by the Service each year", "The filing threshold in section 6012 for the taxpayer's status"],
+            correctIndex: 0,
+            explanation: "With controversies generally not exceeding the amount specified in section 7463.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What does the lesson say Section 6 of the course is about?",
+            options: ["What happens after something goes wrong", "How to choose between the free preparation routes", "The credits a household may claim on a return", "The withholding certificate and the amounts it sets"],
+            correctIndex: 0,
+            explanation: "Which is why the clinics, rather than the preparation sites, are the free route into it.",
+            sourceLessonSlug: "the-volunteer-programs",
+          },
+          {
+            prompt: "What did Treasury's report call its own purpose on its cover page?",
+            options: ["Fulfilling a statutory requirement", "Recommending the permanent expansion of Direct File", "Announcing the terms of a new memorandum of understanding", "Summarising the results of the taxpayer survey it describes"],
+            correctIndex: 0,
+            explanation: "Section 70607 of Public Law No. 119-21 directs Treasury to evaluate alternatives to Direct File, and the report says it fulfils that.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "From what date were the funds for the taxpayer survey available?",
+            options: ["1 October 2025", "2 October 2025, the date the report itself carries", "4 July 2025, the date the requiring statute was enacted", "26 January 2026, the opening of the following season"],
+            correctIndex: 0,
+            explanation: "The report describes a formal survey using funds appropriated by Congress and available beginning on that date.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "How many steps does Treasury's proposed approach contain?",
+            options: ["Four", "Two, being suspension and replacement by Free File", "Six, matching the number of recommendations GAO made", "One, being the immediate suspension of the program"],
+            correctIndex: 0,
+            explanation: "Enhance awareness of Free File, suspend Direct File, survey and engage partners, and define a free return before a supplemental report.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+          {
+            prompt: "What kind of source does the lesson call a report to Congress?",
+            options: ["A primary source for what an agency said and when", "A secondary summary of positions taken elsewhere", "An interpretive rule binding on taxpayers and the agency alike", "A legislative document carrying the force of a statute"],
+            correctIndex: 0,
+            explanation: "Which is why the lesson quotes it with its date rather than paraphrasing its conclusions as current facts.",
+            sourceLessonSlug: "direct-file-and-what-happened",
+          },
+        ],
+      },
+    },
   ],
 };
