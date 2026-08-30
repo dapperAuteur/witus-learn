@@ -4,7 +4,7 @@ import { headers } from "next/headers";
 import { resolveTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { isWitusBrandedHost } from "@/lib/witus-host";
-import { hasDemoLogin } from "@/lib/env";
+import { hasDemoLogin, witusSilentSsoEndpoint } from "@/lib/env";
 import { DEMO_TENANT_SLUG } from "@/db/queries/demo";
 import Link from "next/link";
 import { MagicLinkForm } from "@/components/magic-link-form";
@@ -60,7 +60,15 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
           {showWitusSso ? (
             <div className="mt-4">
               <p className="mb-3 text-center text-xs uppercase tracking-wide text-neutral-400">or</p>
-              <WitusSsoButton />
+              {/* callbackURL carries the deep link through the ecosystem flow (a learner sent
+                  here from a lesson goes back to that lesson). silentCheckUrl is what lets the
+                  button resolve into "Continue as <name>"; it is passed only inside this gate, so a
+                  white-label tenant's browser never learns the IdP exists. */}
+              <WitusSsoButton
+                enabled={showWitusSso}
+                callbackURL={callbackURL}
+                silentCheckUrl={witusSilentSsoEndpoint}
+              />
             </div>
           ) : null}
           {showDemoLogin ? (

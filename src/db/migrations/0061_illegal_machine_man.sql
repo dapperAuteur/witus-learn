@@ -1,0 +1,2 @@
+ALTER TABLE "lesson_notes" ALTER COLUMN "lesson_id" DROP NOT NULL;--> statement-breakpoint
+ALTER TABLE "lesson_notes" ADD CONSTRAINT "lesson_notes_teacher_lesson_chk" CHECK ("lesson_notes"."kind" <> 'teacher' or "lesson_notes"."lesson_id" is not null);

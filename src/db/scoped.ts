@@ -71,6 +71,7 @@ import {
   getLessonBodyText,
   listNoteShares,
   listNotesSharedWithTeacher,
+  listOwnCourseLevelNotes,
   listOwnCourseNotes,
   listOwnLessonNotes,
   listSentTeacherNotes,
@@ -386,6 +387,11 @@ export class ScopedDb {
 
   listOwnCourseNotes(authorId: string, courseId: string) {
     return listOwnCourseNotes(this.tenantId, authorId, courseId);
+  }
+
+  /** The author's own notes ABOUT THE COURSE (no lesson) — the course page's panel. */
+  listOwnCourseLevelNotes(authorId: string, courseId: string) {
+    return listOwnCourseLevelNotes(this.tenantId, authorId, courseId);
   }
 
   createNote(input: Omit<CreateNoteInput, "tenantId">) {

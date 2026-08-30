@@ -574,7 +574,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **The instrument whose own words settle the question: the FHA manual.** If the HOLC map is a picture, the **Federal Housing Administration Underwriting Manual** is a confession, and it is the better-documented instrument because it tells you in federal print exactly what it required. The FHA insured a huge share of the private mortgage market, so its rules shaped where capital flowed nationwide. Its 1938 manual states plainly:
 - "If a neighborhood is to retain stability, it is necessary that properties shall continue to be occupied by the same social and racial classes" (Federal Housing Administration, 1938, section 937).
-- It lists among the "adverse influences" a valuator must guard against the "infiltration of business and industrial uses, lower class occupancy, and inharmonious racial groups" (Federal Housing Administration, 1938, section 937).
+- It lists among the "adverse influences" a valuator must guard against the "infiltration of business and industrial uses, lower class occupancy, and inharmonious racial groups" (Federal Housing Administration, 1938, section 935).
 - And it recommends that deed restrictions include "prohibition of the occupancy of properties except by the race for which they are intended" (Federal Housing Administration, 1938, section 980).
 
 **Read that last line against the last lesson.** The federal government's underwriting manual **recommended the very racial covenants** the Roland Park Company was writing. The instruments are not four separate stories; here the federal instrument endorses the private one in writing. **That is a documented link, not an inferred one**, which is exactly why this course leans on the manual's words rather than on the map's popular reputation.
@@ -583,7 +583,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 ## Sources
 - Aaronson, D., Hartley, D., & Mazumder, B. (2021). The effects of the 1930s HOLC "redlining" maps. *American Economic Journal: Economic Policy, 13*(4), 355-392. https://www.aeaweb.org/articles?id=10.1257/pol.20190414
-- Federal Housing Administration. (1938). *Underwriting manual: Underwriting and valuation procedure under Title II of the National Housing Act*. U.S. Government Printing Office.
+- Federal Housing Administration. (1938). *Underwriting manual: Underwriting and valuation procedure under Title II of the National Housing Act*. U.S. Government Printing Office. https://fraser.stlouisfed.org/title/underwriting-manual-6279/underwriting-manual-602319
 - Hillier, A. E. (2003). Redlining and the Home Owners' Loan Corporation. *Journal of Urban History, 29*(4), 394-420. https://doi.org/10.1177/0096144203029004002
 - Nelson, R. K., Winling, L., Marciano, R., Connolly, N. D. B., et al. (n.d.). *Mapping inequality: Redlining in New Deal America*. Digital Scholarship Lab, University of Richmond. https://dsl.richmond.edu/panorama/redlining/
 - Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,

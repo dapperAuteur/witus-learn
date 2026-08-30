@@ -15,6 +15,7 @@ describe.skipIf(!HAS_DB)("lesson notes are tenant- and author-scoped", () => {
   const authorId = `iso-note-author-${stamp}`;
   const teacherId = `iso-note-teacher-${stamp}`;
   let noteId = "";
+  let courseNoteId = "";
 
   beforeAll(async () => {
     const { db } = await import("@/db/client");
@@ -51,6 +52,15 @@ describe.skipIf(!HAS_DB)("lesson notes are tenant- and author-scoped", () => {
       blockId: "b12345678",
     });
     noteId = note.id;
+    // A COURSE-level note: same table, lesson_id NULL (2026-08-30).
+    const courseNote = await createNote({
+      tenantId: bvcId,
+      courseId,
+      lessonId: null,
+      authorId,
+      body: "isolation test course note",
+    });
+    courseNoteId = courseNote.id;
   });
 
   afterAll(async () => {
@@ -104,6 +114,80 @@ describe.skipIf(!HAS_DB)("lesson notes are tenant- and author-scoped", () => {
     expect(await updateOwnNote(bvcId, teacherId, noteId, "changed")).toBeNull();
     expect(await deleteOwnNote(acmeId, authorId, noteId)).toBe(false);
     expect(await deleteOwnNote(bvcId, teacherId, noteId)).toBe(false);
+  });
+
+  // ── Course-level notes (lesson_id IS NULL) ─────────────────────────────────
+  // Same table, same two-key scoping. These are the cases the feature exists to guarantee: a
+  // course note is invisible to another TENANT and to another USER in the same tenant, and the
+  // lesson panel never picks it up.
+
+  it("lists the author's course-level note in its own tenant", async () => {
+    const { listOwnCourseLevelNotes } = await import("@/db/queries/notes");
+    const rows = await listOwnCourseLevelNotes(bvcId, authorId, courseId);
+    expect(rows.map((r) => r.id)).toContain(courseNoteId);
+    expect(rows.every((r) => r.lessonId === null)).toBe(true);
+  });
+
+  it("hides a course-level note from another tenant", async () => {
+    const { listOwnCourseLevelNotes } = await import("@/db/queries/notes");
+    expect(await listOwnCourseLevelNotes(acmeId, authorId, courseId)).toHaveLength(0);
+  });
+
+  it("hides a course-level note from another user in the SAME tenant", async () => {
+    const { listOwnCourseLevelNotes } = await import("@/db/queries/notes");
+    const rows = await listOwnCourseLevelNotes(bvcId, teacherId, courseId);
+    expect(rows.map((r) => r.id)).not.toContain(courseNoteId);
+  });
+
+  it("keeps a course-level note out of the lesson panel, and a lesson note out of the course panel", async () => {
+    const { listOwnCourseLevelNotes, listOwnLessonNotes } = await import("@/db/queries/notes");
+    const lessonRows = await listOwnLessonNotes(bvcId, authorId, lessonId);
+    expect(lessonRows.map((r) => r.id)).not.toContain(courseNoteId);
+    const courseRows = await listOwnCourseLevelNotes(bvcId, authorId, courseId);
+    expect(courseRows.map((r) => r.id)).not.toContain(noteId);
+  });
+
+  it("includes both kinds in the author's own course-wide list (export and search)", async () => {
+    const { listOwnCourseNotes } = await import("@/db/queries/notes");
+    const ids = (await listOwnCourseNotes(bvcId, authorId, courseId)).map((r) => r.id);
+    expect(ids).toEqual(expect.arrayContaining([noteId, courseNoteId]));
+    expect(await listOwnCourseNotes(acmeId, authorId, courseId)).toHaveLength(0);
+  });
+
+  it("refuses cross-tenant and cross-author updates and deletes of a course-level note", async () => {
+    const { deleteOwnNote, updateOwnNote } = await import("@/db/queries/notes");
+    expect(await updateOwnNote(acmeId, authorId, courseNoteId, "changed")).toBeNull();
+    expect(await updateOwnNote(bvcId, teacherId, courseNoteId, "changed")).toBeNull();
+    expect(await deleteOwnNote(acmeId, authorId, courseNoteId)).toBe(false);
+    expect(await deleteOwnNote(bvcId, teacherId, courseNoteId)).toBe(false);
+  });
+
+  it("refuses a teacher note with no lesson (the DB constraint, not a convention)", async () => {
+    const { db } = await import("@/db/client");
+    const { cohorts, lessonNotes } = await import("@/db/schema");
+    const { eq } = await import("drizzle-orm");
+    // A real cohort, so the AUDIENCE constraint is satisfied and the only thing that can reject
+    // this row is lesson_notes_teacher_lesson_chk: a teacher note is content attached to a
+    // LESSON, never a course-wide announcement (the plans/59 guardrail against an inbox).
+    const [cohort] = await db
+      .insert(cohorts)
+      .values({ tenantId: bvcId, ownerId: teacherId, name: `iso-notes-chk-${stamp}` })
+      .returning();
+    try {
+      await expect(
+        db.insert(lessonNotes).values({
+          tenantId: bvcId,
+          courseId,
+          lessonId: null,
+          authorId: teacherId,
+          kind: "teacher",
+          cohortId: cohort.id,
+          body: "an announcement with nowhere to live",
+        }),
+      ).rejects.toThrow();
+    } finally {
+      await db.delete(cohorts).where(eq(cohorts.id, cohort.id));
+    }
   });
 
   it("scopes teacher notes to cohort membership, honoring recipient narrowing", async () => {

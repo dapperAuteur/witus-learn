@@ -3820,19 +3820,19 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     title: "Who wrote the Huei Tzompantli article in Arqueologia Mexicana 148?",
     severity: "medium",
     question:
-      "Should this entry read \"Matos Moctezuma, E., Barrera Rodriguez, R., & Vazquez Vallin, L. (2017). El Huei Tzompantli de Tenochtitlan. Arqueologia Mexicana, 25(148), 52-57\"? The journal's own citation block on the article page gives exactly those three authors and pages 52-57, so both the author list and the page range in the course look wrong. Or does issue 148 also carry a separate Matos Moctezuma and Lopez Lujan piece at 60-67?",
+      "SETTLED on 2026-08-30, and now waiting only on BAM reading the article. The authorship question is closed: Dialnet's full table of contents for Arqueologia Mexicana 25(148) lists fourteen dossier articles, and NO article by Matos Moctezuma and Lopez Lujan appears in the issue at all. Nothing sits at 60-67 either; that range straddles Chavez Balderas and Vazquez Vallin (58-63) and Mendoza (64-69). The only Huei Tzompantli de Tenochtitlan article is Matos Moctezuma, Barrera Rodriguez and Vazquez Vallin at 52-57. So the course entry was a transcription error on ONE article, not a citation of a different piece. What remains open is whether that article actually supports the lesson's specific claim, which needs the text, and the text is paywalled.",
     claim:
-      "The bibliography reads \"Matos Moctezuma, E., & Lopez Lujan, L. (2017). El Huei Tzompantli de Tenochtitlan. Arqueologia Mexicana, 25(148), 60-67.\" On 2026-08-30 the article page at arqueologiamexicana.mx under that exact title printed the publisher's own citation as Matos Moctezuma, Barrera Rodriguez and Vazquez Vallin, pages 52-57. No identifier was attached rather than link a reader to an article the entry does not describe.",
+      "The bibliography USED to read \"Matos Moctezuma, E., & Lopez Lujan, L. (2017). El Huei Tzompantli de Tenochtitlan. Arqueologia Mexicana, 25(148), 60-67.\" BAM chose on 2026-08-30 to CUT it rather than correct it, so the entry is gone and the tzompantli sentence now cites INAH (2017) alone. RESTORE KIT, one line, once BAM has read the article and confirmed it supports the claim: \"- Matos Moctezuma, E., Barrera Rodriguez, R., & Vazquez Vallin, L. (2017). El Huei Tzompantli de Tenochtitlan. *Arqueologia Mexicana, 25*(148), 52-57.\" Verified independently by Dialnet (dialnet.unirioja.es/servlet/articulo?codigo=6227562, ISSN 0188-8218) and by the magazine's own citation block. Full text is print/digital only: \"Texto completo en la edicion impresa\", buy at tiendadigitales.raices.com.mx.",
     stakes:
-      "Medium. Issue 148 is a themed issue on tzompantlis and may well contain more than one article, so the course may be citing a real second piece. But an author list that does not match the work is the kind of error an educator checking sources finds first, and it is the only entry in this course whose authorship is in doubt.",
+      "Low now, and falling. The misattribution is gone, so nothing wrong is on the page. The cost of leaving it cut is that the tzompantli sentence rests on the INAH entry alone, which has its own open check below, so the best-evidenced claim in the lesson currently has the weakest citation in it. That is the argument for restoring once BAM confirms.",
     needs: [
-      "The table of contents for Arqueologia Mexicana 25(148), with authors and page ranges",
-      "Whether any article by Matos Moctezuma and Lopez Lujan appears in that issue at all, and at what pages",
-      "The corrected entry, in full, so the bibliography can be rewritten and given the article URL",
+      "DONE 2026-08-30: the issue 148 table of contents, with authors and pages (Dialnet)",
+      "DONE 2026-08-30: no Matos Moctezuma and Lopez Lujan article exists in the issue; nothing is at 60-67",
+      "OPEN: BAM to read the article and confirm it supports the excavation claim, then restore the corrected entry",
     ],
     where: [
-      "arqueologiamexicana.mx, the issue 148 contents page",
-      "The Templo Mayor Project publication list",
+      "dialnet.unirioja.es/ejemplar/474860, the full issue 148 table of contents",
+      "tiendadigitales.raices.com.mx, to buy the issue (the text is not online)",
     ],
   },
   {

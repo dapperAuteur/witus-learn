@@ -68,6 +68,14 @@ const SPEC_EXCEPTIONS: Record<string, string> = {
     "BAM, 2026-08-23: sections run 600-726 words, so the floor of 40 binds rather than the density rule. Sized at density; every lesson is assessed. Padding to 40 would be trivia.",
   "how-to-research":
     "BAM, 2026-08-23: sections run 712-869 words, so the floor of 40 binds rather than the density rule. Sized at density; every lesson is assessed. Padding to 40 would be trivia.",
+  // BAM, 2026-08-30, offered except-it / merge-the-sections / write-80-more and chose to except it.
+  // Four sections run 656-722 words, so round(w/35) lands at 19-21, which is what they pool; what
+  // fails them is the floor of 40. Merging the four two-lesson sections into two WOULD have cleared
+  // it arithmetically (1382 words pooling 40 and 1334 pooling 38, both over the 36 threshold), but
+  // that rewrites a course's structure to satisfy a lint number, and the sections are separate
+  // because the material is. Its two practice lessons are assessed and its final pools 45 serving 10.
+  "ai-l2-detecting-ai":
+    "BAM, 2026-08-30: four sections run 656-722 words, so the floor of 40 binds rather than the density rule. Sized at density; every lesson is assessed and the final pools 45. Padding to 40 would be trivia.",
   "off-grid-survival":
     "BAM, 2026-08-23: sections run 546-933 words, so the floor of 40 binds rather than the density rule. Sized at density; every lesson is assessed. Padding to 40 would be trivia.",
   "well-movement-longevity":

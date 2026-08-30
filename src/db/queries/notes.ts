@@ -1,5 +1,5 @@
 import "server-only";
-import { and, desc, eq, exists, ilike, inArray, ne, not, or, sql } from "drizzle-orm";
+import { and, desc, eq, exists, ilike, inArray, isNull, ne, not, or, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   cohortMembers,
@@ -54,7 +54,36 @@ export async function listOwnLessonNotes(
     .orderBy(lessonNotes.createdAt);
 }
 
-/** The author's own notes across a whole course (export, search), newest first. */
+/**
+ * The author's own COURSE-level notes — the ones with no lesson (2026-08-30).
+ *
+ * Deliberately a separate query rather than a flag on listOwnLessonNotes: a course note is a
+ * different surface (the course page), and `lesson_id IS NULL` is the kind of predicate that
+ * silently disappears if it is folded into a shared WHERE clause. Personal-only by construction,
+ * matching the lesson_notes_teacher_lesson_chk constraint.
+ */
+export async function listOwnCourseLevelNotes(
+  tenantId: string,
+  authorId: string,
+  courseId: string,
+): Promise<LessonNote[]> {
+  return db
+    .select()
+    .from(lessonNotes)
+    .where(
+      and(
+        eq(lessonNotes.tenantId, tenantId),
+        eq(lessonNotes.authorId, authorId),
+        eq(lessonNotes.courseId, courseId),
+        isNull(lessonNotes.lessonId),
+        eq(lessonNotes.kind, "personal"),
+      ),
+    )
+    .orderBy(lessonNotes.createdAt);
+}
+
+/** The author's own notes across a whole course, lesson-level AND course-level (export, search),
+ *  newest first. */
 export async function listOwnCourseNotes(
   tenantId: string,
   authorId: string,
@@ -77,7 +106,8 @@ export async function listOwnCourseNotes(
 export interface CreateNoteInput {
   tenantId: string;
   courseId: string;
-  lessonId: string;
+  /** null = a COURSE-level note (no lesson to hang on). Anchor fields must be null with it. */
+  lessonId: string | null;
   authorId: string;
   body: string;
   quote?: string | null;
@@ -86,7 +116,8 @@ export interface CreateNoteInput {
   blockId?: string | null;
 }
 
-/** Create a personal note (lesson-level, or anchored when quote/context/blockId are set). */
+/** Create a personal note: course-level (lessonId null), lesson-level, or anchored to a
+ *  passage when quote/context/blockId are set. */
 export async function createNote(input: CreateNoteInput): Promise<LessonNote> {
   const [row] = await db
     .insert(lessonNotes)
