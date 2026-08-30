@@ -19,9 +19,13 @@
 //     Appendix A framework below, which is the only part of this file re-fetched under the current
 //     rule; the SS.C entries here still cite the 2016 document and are flagged in a research check.
 //     across Civics (SS.C.1-22), Economics (SS.C.23-29), Personal Finance (SS.C.30-39), and Geography
-//     (SS.C.40-43). We map the Civics standards, two Economics standards, and (from 2026-08-28) one
-//     Personal Finance standard the catalog genuinely reaches; the rest are rejected in notClaimed.
-//     Codes are cited exactly as printed (SS.C.1, SS.C.13, etc.).
+//     (SS.C.40-43). We map the Civics standards and two Economics standards from that 2016 numbering;
+//     the rest are rejected in notClaimed. Codes are cited exactly as printed (SS.C.1, SS.C.13, etc.).
+//     ⚠️ NO PERSONAL FINANCE STANDARD IS CLAIMED UNDER AN SS.C CODE, and one briefly was. On
+//     2026-08-28 the banking course's claim was filed as SS.C.38, contradicting the very paragraph
+//     above. The rule was re-fetched on 2026-08-29, it contains SS.C.1 through SS.C.37 and no more,
+//     and the text in question is printed as Appendix A item 9, so the claim was moved there. Every
+//     personal-finance claim in this file now lives in the Appendix A framework.
 //   · ELA — BESPOKE, NOT aliased. West Virginia adopted the Common Core in 2010 but REPEALED it in
 //     2015 (WVBE re-authored the standards; the "Next Generation" name was dropped and the CCSS
 //     numbering abandoned). West Virginia's English Language Arts standards now use West Virginia's
@@ -48,10 +52,11 @@
 // below returned HTTP 404 to automated fetches. The sourceUrl is the canonical WVDE link. Bulleted
 // sub-lists in SS.C.5 and SS.C.17 are transcribed inline with the source's "•" markers; SS.C.5's
 // final "principles" bullet is missing its closing parenthesis in the source and is transcribed as
-// printed (a source typo left untouched). RE-FETCHED 2026-08-28 from the same mirror when SS.C.38
-// was added, which is why the social-studies framework's fetchedOn now carries that date: MONEY-02
-// (Banking, and Who Has No Bank) made the first Personal Finance standard claimable, and the
-// blanket SS.C.30-39 rejection was rewritten as superseded rather than deleted.
+// printed (a source typo left untouched). RE-FETCHED 2026-08-28 from the same mirror, which is why
+// the social-studies framework's fetchedOn carries that date. That pass added an SS.C.38 entry; it
+// was withdrawn on 2026-08-29 and re-filed as Appendix A item 9, because the current rule has no
+// SS.C.38. The mirror was not re-read for the withdrawal, so this framework's fetchedOn is unchanged;
+// what changed is which framework the personal-finance claim sits in.
 // PROVENANCE (ELA): transcribed VERBATIM from the West
 // Virginia English Language Arts Standards, Grades 9-12 (Grade 11 section), retrieved 2026-07-19 from
 // a byte-faithful district mirror (Marion County Schools) of the WVBE Policy 2520.1A standards; the
@@ -271,19 +276,12 @@ export const JURISDICTION: JurisdictionFile = {
           coverage: "partial",
           note: "Partial: the role of government in a market economy is taught through a concrete case — the U.S. sugar program's quotas, price supports, and tariffs — set against the contrast between traditional (reciprocity) and free-market economies. The course does not stage the standard's open debate as an assessed exercise.",
         },
-        // — The first Personal Finance standard this catalog can honestly claim (2026-08-28).
-        //   Until MONEY-02 shipped, the whole SS.C.30-39 strand sat in notClaimed with the words
-        //   "meets none of these standards." That entry is now rewritten as superseded, not deleted.
-        {
-          code: "SS.C.38",
-          text: "Utilize traditional and online banking services as well as examining fees, services and hidden costs of checking, savings, debit cards, Certificates of Deposit, etc.",
-          claimIds: [
-            "money.consumer-deposit-accounts",
-            "money.consumer-financial-protection-mechanisms",
-          ],
-          coverage: "partial",
-          note: "Partial, and the examining half is the strong half. Fees, services and costs of checking and savings accounts are worked from the disclosure rule that requires them (12 CFR 1030.4, before opening and on request, including the conditions under which a fee may be imposed); debit-card overdraft is taught from the Regulation E opt-in and its boundary; certificates of deposit appear as an insured time deposit; and the FDIC's own data on teller against mobile access supplies the traditional-and-online contrast. Two gaps, stated plainly: certificates of deposit are not taught as a savings instrument with a return, and 'utilize' as a hands-on exercise on a live account is beyond a self-paced course, which teaches the documents instead.",
-        },
+        // — SS.C.38 WAS CLAIMED HERE AND HAS BEEN WITHDRAWN (2026-08-29). On 2026-08-28 the
+        //   banking course's claim was filed against a Civics code SS.C.38. The current rule does
+        //   not contain that code: 126CSR44D runs the Civics course to SS.C.37 and stops. The
+        //   claim was not wrong about the STANDARD, only about where it lives, because the text
+        //   filed under SS.C.38 is verbatim Appendix A item 9 of the same rule. It has been re-filed
+        //   there rather than deleted; see the Appendix A framework below and notClaimed.
       ],
     },
 
@@ -327,6 +325,18 @@ export const JURISDICTION: JurisdictionFile = {
     // SOURCE FORMAT NOTE. The PDF at the policy URL is a 59-page SCAN with no text layer. The
     // verbatim text below was transcribed from the machine-readable DOCX the same WVBE policy
     // viewer serves at that URL with `&alt=1`. Same policy, same words, readable encoding.
+    //
+    // ⚠️ A SELF-CONTRADICTION IN THIS FILE, RESOLVED 2026-08-29. This header said in terms that
+    // SS.C.38 and SS.C.39 do not exist, while the Civics framework above carried a claimed SS.C.38
+    // entry with verbatim text. Both were published to teachers, so one of them was wrong. The rule
+    // was RE-FETCHED from the same `&alt=1` Word URL on 2026-08-29 to settle it, and the evidence is
+    // unambiguous in two directions at once. First, the current rule contains exactly thirty-seven
+    // SS.C codes, SS.C.1 through SS.C.37, and no more; there is no SS.C.38 anywhere in it. Second,
+    // the text that had been filed under SS.C.38 ("Utilize traditional and online banking services
+    // ...") is printed verbatim as APPENDIX A ITEM 9. So the standard is real and the catalog does
+    // reach it; only the locator was retired. The entry has been MOVED here as `Appendix A, item 9`
+    // and the Civics framework carries a comment where it used to sit. Nothing was deleted: the
+    // rejection this claim originally superseded stays in notClaimed, now recording both moves.
     {
       id: "wv-personal-finance-appendix-a",
       subject: "Social Studies",
@@ -334,10 +344,10 @@ export const JURISDICTION: JurisdictionFile = {
       publisher: WV_SS_PUBLISHER,
       version:
         "W. Va. 126CSR44D, WVBE Policy 2520.4 · filed July 8, 2024, effective July 1, 2025 · Appendix A, Personal Finance (items 1-10)",
-      fetchedOn: "2026-08-28",
+      fetchedOn: "2026-08-29",
       sourceUrl: "https://wveis.k12.wv.us/wvboe/policies/policy.php?p=2520.4",
       adoption:
-        "West Virginia moved its ten personal-finance standards out of the Civics course's numbered sequence and into Appendix A of Policy 2520.4, where they are printed as items 1 through 10 with no code prefix. The rule requires counties to embed them into Civics and/or Dual Credit and AP Government and Politics until a stand-alone Personal Finance course (CTE course code 1451, a graduation requirement from the 2024-2025 freshman cohort) is implemented; their permanent home will be the CTE policy, 126CSR44M. Of the ten, MONEY-01 (`credit-decisions`) reaches part of two: item 7 on consumer debt, through the annual percentage rate that makes offers comparable, and item 8's consumer-rights half. The other eight are postsecondary cost, income and lifestyle, careers, workforce preparedness, bankruptcy, taxes, banking services, and investing and insurance, none of which this catalog teaches.",
+        "West Virginia moved its ten personal-finance standards out of the Civics course's numbered sequence and into Appendix A of Policy 2520.4, where they are printed as items 1 through 10 with no code prefix. The rule requires counties to embed them into Civics and/or Dual Credit and AP Government and Politics until a stand-alone Personal Finance course (CTE course code 1451, a graduation requirement from the 2024-2025 freshman cohort) is implemented; their permanent home will be the CTE policy, 126CSR44M. Three of the ten are claimed. Item 7, consumer debt, is partial and carries MONEY-01's comparison method plus MONEY-04's pay-day loans and rent-to-own. Item 8, the savvy consumer, is full across all three of its parts. Item 9, banking services, is partial and comes from MONEY-02; it was mistakenly filed in the Civics framework as SS.C.38 until 2026-08-29, a code the current rule does not contain, and re-filing it here is the correction. The other seven are postsecondary cost, income and lifestyle, careers, workforce preparedness, bankruptcy, taxes, and investing and insurance, none of which this catalog teaches.",
       standards: [
         {
           code: "Appendix A, item 7",
@@ -368,6 +378,20 @@ export const JURISDICTION: JurisdictionFile = {
           ],
           coverage: "full",
           note: "FULL as of 2026-08-28, and this entry records the change rather than hiding it: until MONEY-04 shipped it read partial, because the course then said in these words that it taught NOTHING about identifying and avoiding fraudulent practices or guarding against identity theft. Item 8 has three parts and each now has a course behind it. CONSUMER RIGHTS AND RESPONSIBILITIES: MONEY-01, from the statutes rather than as general awareness (who may lawfully obtain your file under 15 U.S.C. 1681b, what a refusal must tell you under ECOA and Regulation B, the dispute and reinvestigation right under 1681i, furnisher duties under 1681s-2, the free annual file disclosure under 1681j). IDENTIFY AND AVOID FRAUDULENT PRACTICES: MONEY-04, taught as a rule rather than as a warning list. The load-bearing lesson is the line Regulation E draws at 12 CFR 1005.2(m), under which a transfer taken without the consumer's authority starts an error-resolution procedure with deadlines and the burden of proof on the institution at 15 U.S.C. 1693g(b), while a transfer the consumer was deceived into making themselves does not. Avoidance is taught procedurally (end the call, dial the number on your own card; check the lender against the state licensing register) and evidentially (how to read a complaint, a stipulated order and a jury verdict without confusing the three). GUARD AGAINST IDENTITY THEFT: MONEY-04 again, from 15 U.S.C. 1681c-1 and 1681c-2, which supply the initial fraud alert, the extended alert, the free security freeze with its one-business-day placement and one-hour lift, and the four-business-day block. What the course still does not do is survey scam TYPES as a taxonomy (phishing, pyramid schemes, skimming, data breaches), because item 8 asks for practices and rights rather than for a catalogue of schemes. (West Virginia's published text reads \"identify theft\"; the intended term is plainly identity theft, and the typo is the publisher's, transcribed here as printed.)",
+        },
+        // — RE-FILED HERE 2026-08-29 from the Civics framework, where it had been claimed as
+        //   SS.C.38. The text is unchanged and is verbatim from the re-fetched rule; only the
+        //   locator moved, because SS.C.38 does not exist under 126CSR44D. See this framework's
+        //   header for the evidence and notClaimed for the record a teacher reads.
+        {
+          code: "Appendix A, item 9",
+          text: "Utilize traditional and online banking services as well as examining fees, services and hidden costs of checking, savings, debit cards, Certificates of Deposit, etc.",
+          claimIds: [
+            "money.consumer-deposit-accounts",
+            "money.consumer-financial-protection-mechanisms",
+          ],
+          coverage: "partial",
+          note: "Partial, and the examining half is the strong half. Fees, services and costs of checking and savings accounts are worked from the disclosure rule that requires them (12 CFR 1030.4, before opening and on request, including the conditions under which a fee may be imposed); debit-card overdraft is taught from the Regulation E opt-in and its boundary; certificates of deposit appear as an insured time deposit; and the FDIC's own data on teller against mobile access supplies the traditional-and-online contrast. Two gaps, stated plainly: certificates of deposit are not taught as a savings instrument with a return, and 'utilize' as a hands-on exercise on a live account is beyond a self-paced course, which teaches the documents instead. PROVENANCE OF THE CODE ITSELF, since it changed: MONEY-02 shipped this claim on 2026-08-28 against a Civics code, SS.C.38, taken from the 2016 numbering. The 2024 rule runs the Civics course to SS.C.37 and prints this standard as Appendix A item 9 instead, so the claim was re-filed here on 2026-08-29 after the rule was re-fetched. Nothing about what the course teaches changed.",
         },
       ],
     },
@@ -451,11 +475,11 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "Personal Finance — this rejection has been superseded, and its codes no longer mean what it said.",
-      body: "Until 2026-08-28 this entry said West Virginia's Civics course carried a full Personal Finance strand at SS.C.30-39 and that the catalog met none of it. Both halves needed correcting. On the codes: under W. Va. 126CSR44D as filed July 8, 2024 and effective July 1, 2025, the Civics course runs SS.C.1 through SS.C.37 only, SS.C.38 and SS.C.39 do not exist, SS.C.30 and SS.C.31 are now ECONOMICS standards and SS.C.32-37 are GEOGRAPHY, and the ten personal-finance standards were moved to Appendix A of the rule and renumbered 1 through 10 with no code prefix. A rejection filed against SS.C.30 today would point at a standard about business climate, not about money management. On the substance: the catalog now teaches one personal-finance course, MONEY-01, and two Appendix A items are claimed above as partials, item 7 through the annual percentage rate and item 8 on its consumer-rights half, each with its gap named. The other eight are still not claimed and the reasons are specific. Items 1 through 4 are postsecondary cost, income and lifestyle against education, career expectations, and workforce preparedness including resumes and mock interviews; item 5 is bankruptcy; item 6 is completing income tax forms; item 9 is banking services and account fees; item 10 is investing and insurance. None of that is in this catalog, and MONEY-01 states in three separate lessons that it gives no financial advice, so a budgeting or investing claim would misdescribe it. TWO THINGS THIS PASS COULD NOT SETTLE, recorded rather than assumed: the superseded 2016 text of SS.C.30-39 could not be obtained from West Virginia's own publisher, so nothing is transcribed under those retired codes; and whether the SS.C civics and economics codes claimed elsewhere in this file also moved in the 2025 amendment has not been re-verified and is filed as a research check."
+      body: "Until 2026-08-28 this entry said West Virginia's Civics course carried a full Personal Finance strand at SS.C.30-39 and that the catalog met none of it. Both halves needed correcting. On the codes: under W. Va. 126CSR44D as filed July 8, 2024 and effective July 1, 2025, the Civics course runs SS.C.1 through SS.C.37 only, SS.C.38 and SS.C.39 do not exist, SS.C.30 and SS.C.31 are now ECONOMICS standards and SS.C.32-37 are GEOGRAPHY, and the ten personal-finance standards were moved to Appendix A of the rule and renumbered 1 through 10 with no code prefix. A rejection filed against SS.C.30 today would point at a standard about business climate, not about money management. On the substance: the catalog now teaches one personal-finance course, MONEY-01, and two Appendix A items are claimed above as partials, item 7 through the annual percentage rate and item 8 on its consumer-rights half, each with its gap named. The other eight are still not claimed and the reasons are specific. Items 1 through 4 are postsecondary cost, income and lifestyle against education, career expectations, and workforce preparedness including resumes and mock interviews; item 5 is bankruptcy; item 6 is completing income tax forms; item 9 is banking services and account fees; item 10 is investing and insurance. None of that is in this catalog, and MONEY-01 states in three separate lessons that it gives no financial advice, so a budgeting or investing claim would misdescribe it. TWO THINGS THIS PASS COULD NOT SETTLE, recorded rather than assumed: the superseded 2016 text of SS.C.30-39 could not be obtained from West Virginia's own publisher, so nothing is transcribed under those retired codes; and whether the SS.C civics and economics codes claimed elsewhere in this file also moved in the 2025 amendment has not been re-verified and is filed as a research check. UPDATED 2026-08-29: this entry's own claim that SS.C.38 does not exist has now been verified against a fresh fetch of the rule, and the contradiction it had with the Civics framework (which carried a claimed SS.C.38 entry) is resolved in this rule's favour. That claim moved to Appendix A item 9, which is where its text is actually printed. The research check on the OTHER SS.C codes stays open and is, if anything, more warranted: the same fetch shows the current SS.C.28 carrying the supply-and-demand text this file files under SS.C.25."
     },
     {
-      heading: "Personal Finance (SS.C.30-39) — one of ten, now that banking is taught.",
-      body: "This entry used to read that the catalog taught none of West Virginia's Personal Finance strand. That is no longer true and the correction is recorded here rather than deleted, so a teacher can see exactly what changed and when. Personal finance now lives in Appendix A of Policy 2520.4, numbered 1 through 10; two of those ten are claimed above. SUPERSEDED AGAIN ON 2026-08-28, when MONEY-04 shipped, and both claimed items moved: Appendix A item 7 (consumer debt) was previously claimed on the annual-percentage-rate comparison method alone and now also carries pay-day loans and rent-to-own, each read from a state statute that governs it, though home loans and credit card debt remain outside it; and Appendix A item 8 (the savvy consumer) moved from partial to FULL, because the identify-and-avoid-fraudulent-practices and guard-against-identity-theft halves this catalog genuinely did not teach are now taught from 12 CFR part 1005 and from 15 U.S.C. 1681c-1 and 1681c-2. The other eight Appendix A items remain unclaimed and are named so the gap stays visible: the cost of postsecondary education, income and lifestyle against education and aid decisions, careers and lifelong earning potential, workforce preparedness, the causes of bankruptcy, completing federal and state income tax forms, banking services, and investing and insurance. Their verbatim text has not been transcribed here, so none of them carries a code entry, per fetch-or-do-not-cite. Later courses in the same series are planned to reach several of them; none is claimed before it is taught.",
+      heading: "Personal Finance (SS.C.30-39) — three of ten, and one claim moved to a code that exists.",
+      body: "This entry used to read that the catalog taught none of West Virginia's Personal Finance strand. That is no longer true and the correction is recorded here rather than deleted, so a teacher can see exactly what changed and when. Personal finance now lives in Appendix A of Policy 2520.4, numbered 1 through 10; two of those ten are claimed above. SUPERSEDED AGAIN ON 2026-08-28, when MONEY-04 shipped, and both claimed items moved: Appendix A item 7 (consumer debt) was previously claimed on the annual-percentage-rate comparison method alone and now also carries pay-day loans and rent-to-own, each read from a state statute that governs it, though home loans and credit card debt remain outside it; and Appendix A item 8 (the savvy consumer) moved from partial to FULL, because the identify-and-avoid-fraudulent-practices and guard-against-identity-theft halves this catalog genuinely did not teach are now taught from 12 CFR part 1005 and from 15 U.S.C. 1681c-1 and 1681c-2. The other eight Appendix A items remain unclaimed and are named so the gap stays visible: the cost of postsecondary education, income and lifestyle against education and aid decisions, careers and lifelong earning potential, workforce preparedness, the causes of bankruptcy, completing federal and state income tax forms, banking services, and investing and insurance. Their verbatim text has not been transcribed here, so none of them carries a code entry, per fetch-or-do-not-cite. Later courses in the same series are planned to reach several of them; none is claimed before it is taught. SUPERSEDED A THIRD TIME ON 2026-08-29, and this one is a correction to our own record rather than to the catalog. Banking services, named just above as unclaimed, WAS claimed on 2026-08-28: MONEY-02 reached it, but the claim was filed in the Civics framework under SS.C.38, a code the current rule does not contain, which left this file asserting in one place that SS.C.38 does not exist and asserting in another that the catalog meets it. Policy 2520.4 was re-fetched from the Word version the WVBE policy viewer serves, since the PDF is a scan with no text layer. It contains thirty-seven SS.C codes and stops, and it prints the banking-services standard as Appendix A item 9. The claim has been moved to that locator unchanged, so three of the ten Appendix A items are now claimed (7 partial, 8 full, 9 partial) and seven are not: postsecondary cost, income and lifestyle, careers, workforce preparedness, bankruptcy, income tax forms, and investing and insurance.",
     },
     {
       heading: "Geography (SS.C.40-43) — checked, thin overlap, not claimed.",

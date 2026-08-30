@@ -1597,6 +1597,37 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Two teacher-facing self-contradictions in the standards data, settled by re-fetching the rule**
+  (\`fix/standards-claims-and-contradictions\`; NO migration, no seed). Both were found by the MONEY-04
+  author, who correctly refused to guess at the fix. Neither is a bug in the app; both are pages a
+  teacher can read where the file disagreed with itself, which under the standards rule is worse than
+  a gap.
+  **West Virginia said in one place that a code does not exist and claimed it in another.** The
+  Appendix A framework's header stated that under the current rule (126CSR44D, filed 8 July 2024,
+  effective 1 July 2025) SS.C.38 and SS.C.39 do not exist, while the Civics framework carried a
+  claimed SS.C.38 entry with verbatim text. **Settled by re-fetching WVBE Policy 2520.4 from the
+  \`&alt=1\` Word URL** (the PDF at the policy URL is a 59-page scan with no text layer), and the
+  evidence points both ways at once: the rule contains exactly thirty-seven SS.C codes and stops, so
+  SS.C.38 is not a code; and the text filed under it is printed verbatim as **Appendix A item 9**. So
+  the standard is real and the catalog does reach it, and only the locator was retired. The claim was
+  **moved, not deleted**, three of the ten Appendix A items are now claimed (7 partial, 8 full,
+  9 partial), and the rejection it originally superseded stays in \`notClaimed\` recording both moves.
+  **Illinois had two Financial Literacy rejections that contradicted each other**, one describing the
+  current \`SS.9-12.EC.FL\` numbering and one asserting a six-standard strand in which FL.6 is
+  insurance and FL.2 is claimed. Merged into one entry that tells the whole history in order, and the
+  merged entry says the uncomfortable part out loud: the Economics framework still carries 2017-coded
+  \`SS.EC.FL.2.9-12\` and \`SS.EC.FL.4.9-12\` entries, so **Illinois currently shows the same teaching
+  twice under two editions of the same strand**. That is deliberately not patched here, because
+  moving those two entries means re-reading the whole 2017-cited half of the file; it belongs to the
+  open research check \`il-social-science-2022-edition\`, which stays open.
+  **A second, independent extraction of the ISBE PDF** reproduced FL.1 through FL.9 and returned both
+  the document's single-S code typo (\`S.9-12.EC.FL.2.\`) and \`SS.9-12.EC.FL.6. No standard.\`
+  character for character, so both are ISBE's quirks and not ours.
+  **Reported and deliberately NOT fixed**, because only the personal-finance strands were re-fetched:
+  West Virginia's SS.C entries outside Appendix A, where the fresh fetch shows the current SS.C.28
+  carrying the supply-and-demand text this file files under SS.C.25; and Illinois's SS.CV, SS.EC,
+  SS.G, SS.H and SS.IS codes, which still cite the 2017 document. Both already have research checks
+  and both stay open.
 - 🔧 **Two housing standards claimed that were fetched and then lost** (\`fix/standards-claims-and-contradictions\`;
   NO migration, no seed). A research sweep on 2026-08-28 fetched Oklahoma's and Pennsylvania's
   housing standards the same day MONEY-06 (\`housing-decisions\`) shipped, but its report never
