@@ -3574,6 +3574,184 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "treasury.gov/tigta, for reports on refundable credit examinations",
     ],
   },
+  // ── MONEY-07 · retirement-accounts ──────────────────────────────────────────
+  // Seven checks. FIVE OF THEM ARE ANNUAL-CYCLE CHECKS and should be treated as a standing calendar
+  // rather than as one-off questions: the contribution figures, the survey editions and the
+  // inflation-adjusted penalty all reset on their own schedules, and this course was written to
+  // print a method rather than a table precisely so that a stale answer degrades a date rather than
+  // a rule. Mark the annual ones as recurring the way MONEY-03 filed the Regulation CC threshold.
+  {
+    key: "retirement-annual-contribution-figures",
+    course: "retirement-accounts",
+    lesson: "a-base-amount-and-an-adjustment",
+    quote:
+      "The operative figures are published each year by the tax authority in an annual notice, alongside the phase-out ranges from the previous lesson.",
+    title: "ANNUAL: what are this year's elective deferral, catch-up, IRA and phase-out figures?",
+    severity: "high",
+    question:
+      "For the current tax year, what are the operative elective deferral limit, the age 50 catch-up amount, the individual retirement contribution deductible amount and its catch-up, and the active-participant deduction phase-out ranges by filing situation? Name the annual notice or revenue procedure that sets them, by number, and give the date you read it.",
+    claim:
+      "The course prints NO current figure. It prints only the statutory base amounts (26 U.S.C. 402(g)(1)(B)'s 15,000, 219(b)(5)(A)'s 5,000 and the 1,000 catch-up), labels each as a base rather than a limit, and teaches the adjustment mechanism (base period, index, rounding to the next lowest multiple of 500 or the lower multiple of 100) plus the instruction to read the year's published notice.",
+    stakes:
+      "This is the check that has to be re-run every year for as long as the course exists, and the course was designed so that leaving it open costs nothing: no lesson depends on a current figure. The stake is the opposite one. If a later editor ever decides to help by printing this year's numbers, the course acquires the exact defect the method was written to avoid, and this entry is the record of why it does not.",
+    needs: [
+      "The number of the annual notice or revenue procedure for the year in question",
+      "Each operative figure as that document prints it",
+      "Confirmation that the statutory base amounts and rounding rules quoted in the lesson are unchanged",
+      "The date you read the notice",
+    ],
+    where: [
+      "The tax authority's own annual notice on cost-of-living adjustments for pension plans",
+      "26 U.S.C. 402(g) and 219(b)(5) on the Legal Information Institute, for the base amounts",
+    ],
+  },
+  {
+    key: "retirement-erisa-penalty-inflation-adjusted",
+    course: "retirement-accounts",
+    lesson: "the-plan-document-governs",
+    quote:
+      "the 100 dollars is the figure printed in the statute; federal civil penalties of this kind are adjusted for inflation on their own schedule, so the operative daily maximum is higher than the printed one and must be looked up rather than assumed",
+    title: "ANNUAL: what is the current inflation-adjusted daily maximum under ERISA section 502(c)(1)?",
+    severity: "medium",
+    question:
+      "What is the current maximum daily amount a court may impose under 29 U.S.C. 1132(c)(1) for an administrator's failure to furnish requested documents, as adjusted under the Federal Civil Penalties Inflation Adjustment Act? Give the regulation or notice that states it, the effective date, and the date you read it.",
+    claim:
+      "The lesson quotes the statute's printed figure of up to 100 dollars a day, says in the same paragraph that the operative maximum is higher because penalties of this kind are inflation-adjusted, and dates the reading to 29 August 2026. It asserts no adjusted figure.",
+    stakes:
+      "Medium. A learner who quotes the printed 100 dollars to a plan administrator is understating their own position, and a learner who quotes a stale adjusted figure is asserting a number that has moved. The lesson currently does neither, which is safe but incomplete: filling this in makes the paragraph genuinely useful rather than merely honest.",
+    needs: [
+      "The current adjusted daily maximum, as printed by the adjusting authority",
+      "The regulation or annual adjustment notice that sets it, cited by number",
+      "The effective date of the current figure, and the date you read it",
+    ],
+    where: [
+      "29 CFR part 2575, the civil penalty adjustment regulation for this title",
+      "The annual civil penalty inflation adjustment notice published in the Federal Register",
+    ],
+  },
+  {
+    key: "retirement-cashout-thresholds-current",
+    course: "retirement-accounts",
+    lesson: "what-leaving-does",
+    quote:
+      "Both figures are printed in the statute and were read on 29 August 2026; both have been changed by legislation before, so check them before relying on either.",
+    title: "Are the 7,000 and 1,000 dollar mandatory-distribution thresholds still current?",
+    severity: "medium",
+    question:
+      "Do 26 U.S.C. 411(a)(11)(A) and 401(a)(31)(B) still print 7,000 dollars as the consent threshold and 1,000 dollars as the automatic-transfer trigger, and does either carry an indexing provision that has produced a different operative figure? Quote the current text and give the date you read it.",
+    claim:
+      "The lesson states that a plan may distribute without consent where the present value does not exceed 7,000 dollars, that a mandatory distribution above 1,000 dollars must be transferred to an individual retirement plan of a designated trustee, and that both figures are statutory, dated 29 August 2026, and previously amended.",
+    stakes:
+      "Medium, and it is the one place in Section 2 where a wrong number changes what happens to somebody's money rather than their vocabulary. The consent threshold decides whether a plan can push a former employee's balance out of the plan at all, and the transfer trigger decides whether what leaves is a cheque or an account.",
+    needs: [
+      "The current text of both provisions, quoted, with the dollar figures as printed",
+      "Whether either figure is indexed, and if so the operative amount for the current year",
+      "The public law behind the most recent change to either, and the date you read the sections",
+    ],
+    where: [
+      "26 U.S.C. 411(a)(11) and 401(a)(31)(B) on the United States Code site or the Legal Information Institute",
+      "The tax authority's annual cost-of-living notice, if either figure turns out to be indexed",
+    ],
+  },
+  {
+    key: "retirement-ncs-current-edition",
+    course: "retirement-accounts",
+    lesson: "who-has-a-plan-at-all",
+    quote:
+      "Those figures are from March 2025 and were published on 18 March 2026. Check the current release before you repeat them.",
+    title: "ANNUAL: what does the newest employee benefits survey say about access and participation?",
+    severity: "high",
+    question:
+      "What are the most recently published access, participation and take-up figures for private-sector workers overall, by wage quartile, by full-time and part-time status, and by establishment size? Give the survey reference month, the publication date, and the exact figures as published.",
+    claim:
+      "The course reports 72 percent access and 53 percent participation for private-sector workers in March 2025, with 49 and 23 percent in the lowest-paid quarter of occupations against 91 and 80 in the highest, 47 and 23 for part-time workers against 81 and 62 for full-time, and 55 and 38 at establishments under 50 workers against 90 and 76 at those with 500 or more. It attributes them to a Congressional Research Service reading of the March 2025 National Compensation Survey published 18 March 2026, and says in the lesson to check the current release.",
+    stakes:
+      "High, because these figures are the spine of the whole course rather than an illustration. Section 1 uses them to establish that access is a fact about employment, Section 4's automatic enrollment lesson refers back to the take-up gap, and the capstone sets them against the wealth distribution. A stale set does not break the argument, since the gradient is structural, but it does date the course visibly.",
+    needs: [
+      "The reference month and publication date of the newest release",
+      "Access and participation overall and for each of the four breakdowns the lesson quotes",
+      "Whether the publishing body's own definitions of access, participation and take-up have changed",
+      "The date you read it",
+    ],
+    where: [
+      "The Bureau of Labor Statistics employee benefits pages and the news release for the newest reference month",
+      "The Congressional Research Service's recurring product on worker participation in employer-sponsored pensions",
+    ],
+  },
+  {
+    key: "retirement-scf-2025-edition",
+    course: "retirement-accounts",
+    lesson: "read-your-own-record",
+    quote:
+      "Analysing the 2022 Survey of Consumer Finances, the Congressional Research Service reported that 54.3 percent of U.S. households had retirement account assets",
+    title: "Has the 2025 Survey of Consumer Finances been published, and does it move these figures?",
+    severity: "medium",
+    question:
+      "Has the Federal Reserve published results from the 2025 Survey of Consumer Finances? If so, what are the current figures for the share of families holding any retirement account, the distribution of balances, and median wealth by race and ethnicity, and what are the exact titles and publication dates of the documents reporting them?",
+    claim:
+      "The capstone cites the 2022 survey throughout: 54.3 percent of households with retirement account assets, ownership by age band, the four balance ranges, and the Federal Reserve note reporting median White family wealth of 285,000 dollars against a typical Black family's 44,900 (about 15 percent) and a typical Hispanic family at about 20 percent. Every figure is labelled as 2022 and the survey's publication date is named.",
+    stakes:
+      "Medium. The survey is triennial, so a 2025 edition supersedes every figure in the capstone at once. The teaching point, that the account gap and the wealth gap are one story about employment, does not depend on the vintage, but a course that shows a teacher four-year-old numbers next to a claim about the present is doing the thing this catalog dates figures to avoid.",
+    needs: [
+      "Whether a 2025 edition exists, and its publication date and exact title",
+      "The share of families holding any retirement account in the newest edition",
+      "The median wealth figures by race and ethnicity in the newest edition, with the document that reports them",
+      "The date you checked",
+    ],
+    where: [
+      "The Federal Reserve's Survey of Consumer Finances index page",
+      "The Federal Reserve Bulletin article reporting changes in U.S. family finances for the newest survey pair",
+      "Congressional Research Service products analysing retirement account balances from the newest survey",
+    ],
+  },
+  {
+    key: "retirement-social-security-reliance-primary",
+    course: "retirement-accounts",
+    lesson: "retirement-age-and-the-floor",
+    quote:
+      "That analysis uses data reflecting income received in calendar year 2019 and was updated on 5 August 2025.",
+    title: "Is there a newer primary-source measure of how much of aged income Social Security supplies?",
+    severity: "medium",
+    question:
+      "What is the most recent published measure, from the Social Security Administration's own research or from a comparable federal source, of the share of people aged 65 and older receiving Social Security income and the share relying on it for 90 percent or more of household income, broken down by income quintile? Give the publication, its date, and the survey and year the figures come from.",
+    claim:
+      "The lesson reports approximately 92 percent of individuals aged 65 and older receiving household income from Social Security, about 29.5 percent of aggregate income for that population, and 61.5 percent of the bottom household income quintile relying on it for 90 percent or more, all from a Congressional Research Service analysis of Health and Retirement Study data for calendar year 2019, updated 5 August 2025. The lesson names both the data year and the update date.",
+    stakes:
+      "Medium, and there is a sourcing point behind it as well as a currency one. The Social Security Administration publishes its own recurring analysis of income of the aged, and this course cites a congressional analysis of a different survey instead, because the agency's site would not serve its pages to the tool used to write the course. A primary-source figure would be the better citation for the same claim even if the number does not move.",
+    needs: [
+      "The agency's own current publication on income of the aged population, by exact title and date",
+      "The receipt rate and the 90-percent-reliance rate as that publication states them, with the survey and year",
+      "Whether the agency's figures differ materially from the congressional analysis the lesson currently cites",
+      "The date you read it",
+    ],
+    where: [
+      "The Social Security Administration's Office of Retirement and Disability Policy research publications",
+      "The agency's annual statistical supplement",
+      "Congressional Research Service products on income for the population ages 65 and older, for comparison",
+    ],
+  },
+  {
+    key: "retirement-tx-teks-transcription-source",
+    course: "retirement-accounts",
+    title: "Texas: reconcile the two copies of 19 TAC 113.49(c)(6) and (c)(7)",
+    severity: "medium",
+    question:
+      "Does the Texas Education Agency's own currently-in-effect Chapter 113 Subchapter C PDF print 113.49(c)(6)(A) and (c)(7)(B) in exactly the words this repo has transcribed, and what is the page footer date on the copy you open? If the wording differs at all, quote the agency's text.",
+    claim:
+      "Both codes were transcribed on 2026-08-29 from the Legal Information Institute's copy of 19 Tex. Admin. Code § 113.49, because the TEA PDF at this framework's sourceUrl was re-downloaded the same day and its text layer would not extract. The framework's fetchedOn was deliberately LEFT at 2026-08-28 rather than stamped with the newer date, and a comment above both entries records exactly this. Every other entry in that framework came from the TEA PDF.",
+    stakes:
+      "Medium, and it is a provenance problem rather than a substance one. The standards module's rule is fetch-or-do-not-cite from the publisher, and two of the entries in the Texas personal financial literacy framework now come from a secondary copy of the same rule. A teacher reading a verbatim standard is entitled to know it is the publisher's text, and either confirming the wording or correcting it closes the only gap of its kind in this file.",
+    needs: [
+      "The two provisions as the TEA document prints them, quoted",
+      "The page footer date on the TEA PDF you opened, and its URL",
+      "Whether the TEA text differs from the transcription in any respect, including punctuation",
+      "The date you checked, so the framework's fetchedOn can be updated honestly",
+    ],
+    where: [
+      "The TEA currently-in-effect Chapter 113 Subchapter C PDF, opened in a reader rather than extracted",
+      "The Texas Administrative Code as published by the Secretary of State",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
