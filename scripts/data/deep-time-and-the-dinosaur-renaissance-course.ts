@@ -74,11 +74,11 @@ That is not a story about stupidity giving way to cleverness. It is a story abou
 :::reveal Kelvin's calculation of the earth's age was sound physics and badly wrong. What was missing? ||| Radioactivity had not been discovered, so his model had no internal heat source. An earth that generates its own heat cools far more slowly than his equation allowed.
 
 ## Sources
-- Buffon, G.-L. L., Comte de. (1778). *Les époques de la nature*. Imprimerie Royale.
-- Burchfield, J. D. (1975). *Lord Kelvin and the age of the earth*. Science History Publications.
-- Patterson, C. (1956). Age of meteorites and the earth. *Geochimica et Cosmochimica Acta, 10*(4), 230-237.
-- Thomson, W. (1864). On the secular cooling of the earth. *Transactions of the Royal Society of Edinburgh, 23*(1), 157-169.
-- Ussher, J. (1650). *Annales Veteris Testamenti, a prima mundi origine deducti*. J. Flesher.`,
+- Buffon, G.-L. L., Comte de. (1778). *Les époques de la nature*. Imprimerie Royale. https://archive.org/details/cihm_48877
+- Burchfield, J. D. (1975). *Lord Kelvin and the age of the earth*. Science History Publications. https://lccn.loc.gov/74005754
+- Patterson, C. (1956). Age of meteorites and the earth. *Geochimica et Cosmochimica Acta, 10*(4), 230-237. https://doi.org/10.1016/0016-7037(56)90036-9
+- Thomson, W. (1864). On the secular cooling of the earth. *Transactions of the Royal Society of Edinburgh, 23*(1), 157-169. https://doi.org/10.1017/s0080456800018512
+- Ussher, J. (1650). *Annales Veteris Testamenti, a prima mundi origine deducti*. J. Flesher. https://archive.org/details/india.history.resource.71707`,
     },
     {
       slug: "steno-and-the-roadcut",
@@ -129,9 +129,9 @@ You are now reading time directly off a surface, which is the trick the next two
 :::reveal State Steno's principle of superposition, and the one about tilted layers. ||| In an undisturbed sequence the lower layer was laid down first. And since sediment settles flat, a layer that is now tilted was tilted after it was deposited.
 
 ## Sources
-- Cutler, A. (2003). *The seashell on the mountaintop*. Dutton.
-- Steno, N. (1667). *Canis carchariae dissectum caput*. Florence.
-- Steno, N. (1669). *De solido intra solidum naturaliter contento dissertationis prodromus*. Florence.`,
+- Cutler, A. (2003). *The seashell on the mountaintop*. Dutton. https://lccn.loc.gov/2003000125
+- Steno, N. (1667). *Canis carchariae dissectum caput*. Florence. https://archive.org/details/nicolaistenonise00sten
+- Steno, N. (1669). *De solido intra solidum naturaliter contento dissertationis prodromus*. Florence. https://archive.org/details/nicolaistenonisd00sten`,
       recallContent: [
         {
           prompt: "Last lesson: why did Kelvin's estimate of the earth's age come out far too short?",
@@ -186,10 +186,10 @@ And the cyclic, steady-state picture that made his case so elegant was also a co
 :::reveal Name one way Hutton's own commitments shaped what he argued. ||| He read the endless cycle as evidence of a world designed to remain fit for life, and his insistence on a directionless steady state was a prior commitment as much as a finding.
 
 ## Sources
-- Gould, S. J. (1987). *Time's arrow, time's cycle: Myth and metaphor in the discovery of geological time*. Harvard University Press.
-- Hutton, J. (1788). Theory of the earth. *Transactions of the Royal Society of Edinburgh, 1*(2), 209-304.
-- Hutton, J. (1795). *Theory of the earth, with proofs and illustrations* (Vols. 1-2). Cadell and Davies.
-- Playfair, J. (1802). *Illustrations of the Huttonian theory of the earth*. Cadell and Davies.`,
+- Gould, S. J. (1987). *Time's arrow, time's cycle: Myth and metaphor in the discovery of geological time*. Harvard University Press. https://lccn.loc.gov/86029485
+- Hutton, J. (1788). Theory of the earth. *Transactions of the Royal Society of Edinburgh, 1*(2), 209-304. https://doi.org/10.1017/s0080456800029227
+- Hutton, J. (1795). *Theory of the earth, with proofs and illustrations* (Vols. 1-2). Cadell and Davies. https://www.gutenberg.org/ebooks/12861
+- Playfair, J. (1802). *Illustrations of the Huttonian theory of the earth*. Cadell and Davies. https://archive.org/details/NHM104643`,
     },
     {
       slug: "william-smiths-map",
@@ -232,10 +232,10 @@ The Geological Society awarded him its first Wollaston Medal in 1831, sixteen ye
 :::reveal What is the careful statement about Smith, Greenough and the 1820 map? ||| Smith was first, the institution did not credit him, and he went to debtors' prison while his work circulated. The stronger claim of deliberate theft is a popular reading that specialists have treated with more caution.
 
 ## Sources
-- Knell, S. J. (2000). *The culture of English geology, 1815-1851*. Ashgate.
+- Knell, S. J. (2000). *The culture of English geology, 1815-1851*. Ashgate. https://lccn.loc.gov/99069176
 - Smith, W. (1815). *A delineation of the strata of England and Wales, with part of Scotland*. John Cary.
-- Torrens, H. S. (2003). *The practice of British geology, 1750-1850*. Ashgate.
-- Winchester, S. (2001). *The map that changed the world: William Smith and the birth of modern geology*. HarperCollins.`,
+- Torrens, H. S. (2003). *The practice of British geology, 1750-1850*. Ashgate. https://lccn.loc.gov/2001046046
+- Winchester, S. (2001). *The map that changed the world: William Smith and the birth of modern geology*. HarperCollins. https://lccn.loc.gov/2001016603`,
       recallContent: [
         {
           prompt: "Last lesson: what did Hutton's Siccar Point surface require, in order of events?",
@@ -462,8 +462,8 @@ The gap between the columns is where you will later find your mistakes, and you 
 :::reveal What is the rule that makes a field notebook a distinct genre? ||| Separate what you observed from what you concluded, visibly, on the page. Memory does not store observation and inference separately; paper can.
 
 ## Sources
-- Grinnell, J. (1910). The methods and uses of a research museum. *Popular Science Monthly, 77*, 163-169.
-- Herman, S. G. (1986). *The naturalist's field journal: A manual for writing based on the Grinnell system*. Buteo Books.`,
+- Grinnell, J. (1910). The methods and uses of a research museum. *Popular Science Monthly, 77*, 163-169. https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_77/August_1910/The_Methods_and_Uses_of_a_Research_Museum
+- Herman, S. G. (1986). *The naturalist's field journal: A manual for writing based on the Grinnell system*. Buteo Books. https://lccn.loc.gov/85073491`,
       recallContent: [
         {
           prompt: "Last lesson: what did William Smith's 1815 map make hard to avoid without arguing it directly?",
@@ -520,10 +520,10 @@ Hugh Torrens, whose 1995 study is the standard corrective, argues that Anning ha
 :::reveal What does Torrens argue has happened to Anning's reputation? ||| That she was mythologised in both directions: first written out of the record, then rewritten as a saint. Both replace a working specialist with an easier story.
 
 ## Sources
-- Buckland, W. (1829). On the discovery of coprolites, or fossil faeces, in the Lias at Lyme Regis. *Transactions of the Geological Society of London, 3*(1), 223-236.
-- Emling, S. (2009). *The fossil hunter: Dinosaurs, evolution, and the woman whose discoveries changed the world*. Palgrave Macmillan.
-- Home, E. (1814). Some account of the fossil remains of an animal more nearly allied to fishes than any of the other classes of animals. *Philosophical Transactions of the Royal Society of London, 104*, 571-577.
-- Torrens, H. (1995). Mary Anning (1799-1847) of Lyme: "the greatest fossilist the world ever knew". *The British Journal for the History of Science, 28*(3), 257-284.`,
+- Buckland, W. (1829). On the discovery of coprolites, or fossil faeces, in the Lias at Lyme Regis. *Transactions of the Geological Society of London, 3*(1), 223-236. https://doi.org/10.1144/transgslb.3.1.223
+- Emling, S. (2009). *The fossil hunter: Dinosaurs, evolution, and the woman whose discoveries changed the world*. Palgrave Macmillan. https://lccn.loc.gov/2009017900
+- Home, E. (1814). Some account of the fossil remains of an animal more nearly allied to fishes than any of the other classes of animals. *Philosophical Transactions of the Royal Society of London, 104*, 571-577. https://doi.org/10.1098/rstl.1814.0029
+- Torrens, H. (1995). Mary Anning (1799-1847) of Lyme: "the greatest fossilist the world ever knew". *The British Journal for the History of Science, 28*(3), 257-284. https://doi.org/10.1017/s0007087400033161`,
     },
     {
       slug: "whose-name-goes-on-the-paper",
@@ -574,10 +574,10 @@ Those are six roles. Sometimes one person filled all six. Usually not, and the g
 :::reveal Name the six roles the course asks you to separate in any story of discovery. ||| Who found it, who prepared it, who described it, who funded it, who published it, and who is named.
 
 ## Sources
-- Buckland, W. (1829). On the discovery of coprolites, or fossil faeces, in the Lias at Lyme Regis. *Transactions of the Geological Society of London, 3*(1), 223-236.
-- Cadbury, D. (2000). *The dinosaur hunters: A story of scientific rivalry and the discovery of the prehistoric world*. Fourth Estate.
-- Torrens, H. (1995). Mary Anning (1799-1847) of Lyme: "the greatest fossilist the world ever knew". *The British Journal for the History of Science, 28*(3), 257-284.
-- Torrens, H. S. (2003). *The practice of British geology, 1750-1850*. Ashgate.`,
+- Buckland, W. (1829). On the discovery of coprolites, or fossil faeces, in the Lias at Lyme Regis. *Transactions of the Geological Society of London, 3*(1), 223-236. https://doi.org/10.1144/transgslb.3.1.223
+- Cadbury, D. (2000). *The dinosaur hunters: A story of scientific rivalry and the discovery of the prehistoric world*. Fourth Estate. https://lccn.loc.gov/2002491534
+- Torrens, H. (1995). Mary Anning (1799-1847) of Lyme: "the greatest fossilist the world ever knew". *The British Journal for the History of Science, 28*(3), 257-284. https://doi.org/10.1017/s0007087400033161
+- Torrens, H. S. (2003). *The practice of British geology, 1750-1850*. Ashgate. https://lccn.loc.gov/2001046046`,
       recallContent: [
         {
           prompt: "Last lesson: name two of the finds Mary Anning made at Lyme Regis, and what each was.",
@@ -638,10 +638,10 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
 :::reveal What argument was Owen using Dinosauria to support, and what happened to it? ||| That the record shows no simple progression from crude to advanced, since these ancient reptiles are structurally more advanced than living ones. The conclusion did not survive, and the group he named still stands.
 
 ## Sources
-- Buckland, W. (1824). Notice on the Megalosaurus or great fossil lizard of Stonesfield. *Transactions of the Geological Society of London, 1*(2), 390-396.
-- Mantell, G. (1825). Notice on the Iguanodon, a newly discovered fossil reptile. *Philosophical Transactions of the Royal Society of London, 115*, 179-186.
-- Owen, R. (1842). Report on British fossil reptiles, part II. *Report of the Eleventh Meeting of the British Association for the Advancement of Science*, 60-204.
-- Rupke, N. A. (1994). *Richard Owen: Victorian naturalist*. Yale University Press.`,
+- Buckland, W. (1824). Notice on the Megalosaurus or great fossil lizard of Stonesfield. *Transactions of the Geological Society of London, 1*(2), 390-396. https://doi.org/10.1144/transgslb.1.2.390
+- Mantell, G. (1825). Notice on the Iguanodon, a newly discovered fossil reptile. *Philosophical Transactions of the Royal Society of London, 115*, 179-186. https://doi.org/10.1098/rstl.1825.0010
+- Owen, R. (1842). Report on British fossil reptiles, part II. *Report of the Eleventh Meeting of the British Association for the Advancement of Science*, 60-204. https://archive.org/details/reportofeleventh42lond
+- Rupke, N. A. (1994). *Richard Owen: Victorian naturalist*. Yale University Press. https://lccn.loc.gov/93005739`,
     },
     {
       slug: "quiz-finding-and-naming",
@@ -862,9 +862,9 @@ They were granted the highest grade of listed status in Britain and have been re
 :::reveal What did the Bernissart find of 1878 provide that 1854 lacked? ||| Dozens of largely complete, articulated Iguanodon skeletons, which made the posture visible and placed the conical bone on the hand rather than the nose.
 
 ## Sources
-- Norman, D. B. (1985). *The illustrated encyclopedia of dinosaurs*. Salamander Books.
-- Owen, R. (1854). *Geology and inhabitants of the ancient world*. Crystal Palace Library.
-- Secord, J. A. (2004). Monsters at the Crystal Palace. In S. de Chadarevian & N. Hopwood (Eds.), *Models: The third dimension of science* (pp. 138-169). Stanford University Press.`,
+- Norman, D. B. (1985). *The illustrated encyclopedia of dinosaurs*. Salamander Books. https://lccn.loc.gov/85010938
+- Owen, R. (1854). *Geology and inhabitants of the ancient world*. Crystal Palace Library. https://archive.org/details/geologyinhabitan00owen
+- Secord, J. A. (2004). Monsters at the Crystal Palace. In S. de Chadarevian & N. Hopwood (Eds.), *Models: The third dimension of science* (pp. 138-169). Stanford University Press. https://doi.org/10.1515/9781503618992-009`,
       recallContent: [
         {
           prompt: "Last lesson: what four things did Owen's act of naming Dinosauria accomplish?",
@@ -927,9 +927,9 @@ Nothing here required anyone to lie. Both men were serious scientists doing real
 :::reveal Why does the course treat the Elasmosaurus skull story with caution? ||| The error is real and documented, but a single origin story is usually the shape a rivalry takes in retelling. Relations soured across the 1870s over collecting grounds, purchases and priority.
 
 ## Sources
-- Jaffe, M. (2000). *The gilded dinosaur: The fossil war between E. D. Cope and O. C. Marsh and the rise of American science*. Crown.
-- Rainger, R. (1991). *An agenda for antiquity: Henry Fairfield Osborn and vertebrate paleontology at the American Museum of Natural History, 1890-1935*. University of Alabama Press.
-- Wallace, D. R. (1999). *The bonehunters' revenge: Dinosaurs, greed, and the greatest scientific feud of the Gilded Age*. Houghton Mifflin.`,
+- Jaffe, M. (2000). *The gilded dinosaur: The fossil war between E. D. Cope and O. C. Marsh and the rise of American science*. Crown. https://lccn.loc.gov/99038510
+- Rainger, R. (1991). *An agenda for antiquity: Henry Fairfield Osborn and vertebrate paleontology at the American Museum of Natural History, 1890-1935*. University of Alabama Press. https://lccn.loc.gov/90025167
+- Wallace, D. R. (1999). *The bonehunters' revenge: Dinosaurs, greed, and the greatest scientific feud of the Gilded Age*. Houghton Mifflin. https://lccn.loc.gov/99031904`,
     },
     {
       slug: "what-the-bone-wars-cost",
@@ -991,8 +991,8 @@ In none of those cases does anybody have to lie. You get the behavior you pay fo
 
 ## Sources
 - McIntosh, J. S., & Berman, D. S. (1975). Description of the palate and lower jaw of the sauropod dinosaur Diplodocus (Reptilia: Saurischia) with remarks on the nature of the skull of Apatosaurus. *Journal of Paleontology, 49*(1), 187-199.
-- Rainger, R. (1991). *An agenda for antiquity: Henry Fairfield Osborn and vertebrate paleontology at the American Museum of Natural History, 1890-1935*. University of Alabama Press.
-- Wallace, D. R. (1999). *The bonehunters' revenge: Dinosaurs, greed, and the greatest scientific feud of the Gilded Age*. Houghton Mifflin.`,
+- Rainger, R. (1991). *An agenda for antiquity: Henry Fairfield Osborn and vertebrate paleontology at the American Museum of Natural History, 1890-1935*. University of Alabama Press. https://lccn.loc.gov/90025167
+- Wallace, D. R. (1999). *The bonehunters' revenge: Dinosaurs, greed, and the greatest scientific feud of the Gilded Age*. Houghton Mifflin. https://lccn.loc.gov/99031904`,
       recallContent: [
         {
           prompt: "Last lesson: what did the Marsh and Cope rivalry reward, and how did it end publicly?",
@@ -1059,10 +1059,10 @@ Learning to see when a dispute is about the world and when it is about the categ
 :::reveal What exactly is being argued about in the Brontosaurus dispute, and what is NOT being argued about? ||| Not the fossils: the anatomy and the relationships are largely agreed. The argument is about where to draw the boundary called genus on a branching tree, which is a question about a ranking convention.
 
 ## Sources
-- Gould, S. J. (1991). *Bully for Brontosaurus: Reflections in natural history*. W. W. Norton.
-- Marsh, O. C. (1879). Notice of new Jurassic reptiles. *American Journal of Science, s3-18*(108), 501-505.
+- Gould, S. J. (1991). *Bully for Brontosaurus: Reflections in natural history*. W. W. Norton. https://lccn.loc.gov/91006916
+- Marsh, O. C. (1879). Notice of new Jurassic reptiles. *American Journal of Science, s3-18*(108), 501-505. https://doi.org/10.2475/ajs.s3-18.108.501
 - Riggs, E. S. (1903). Structure and relationships of opisthocoelian dinosaurs. Part I: Apatosaurus Marsh. *Field Columbian Museum Publication 82, Geological Series, 2*(4), 165-196.
-- Tschopp, E., Mateus, O., & Benson, R. B. J. (2015). A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda). *PeerJ, 3*, e857.`,
+- Tschopp, E., Mateus, O., & Benson, R. B. J. (2015). A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda). *PeerJ, 3*, e857. https://doi.org/10.7717/peerj.857`,
     },
     {
       slug: "quiz-picture-and-incentive",
@@ -1283,9 +1283,9 @@ Those are three independent lines, each cheap to check, all pointing the same wa
 :::reveal What actually keeps a wrong picture alive, on this lesson's account? ||| Coherence. A framework that makes a mass of unrelated facts into one story survives inconvenient facts, and is displaced only by a better framework.
 
 ## Sources
-- Bakker, R. T. (1971). Ecology of the brontosaurs. *Nature, 229*(5281), 172-174.
-- Kermack, K. A. (1951). A note on the habits of sauropods. *Annals and Magazine of Natural History, 4*(45), 830-832.
-- Osborn, H. F. (1916). Skeletal adaptations of Ornitholestes, Struthiomimus, Tyrannosaurus. *Bulletin of the American Museum of Natural History, 35*(43), 733-771.`,
+- Bakker, R. T. (1971). Ecology of the brontosaurs. *Nature, 229*(5281), 172-174. https://doi.org/10.1038/229172a0
+- Kermack, K. A. (1951). A note on the habits of sauropods. *Annals and Magazine of Natural History, 4*(45), 830-832. https://doi.org/10.1080/00222935108654213
+- Osborn, H. F. (1916). Skeletal adaptations of Ornitholestes, Struthiomimus, Tyrannosaurus. *Bulletin of the American Museum of Natural History, 35*(43), 733-771. https://hdl.handle.net/2246/1334`,
       recallContent: [
         {
           prompt: "Last lesson: what exactly is argued about in the Brontosaurus dispute, and what is agreed?",
@@ -1350,11 +1350,11 @@ And the objection that had blocked it for forty years was not stupidity. It was 
 :::reveal What dissolved Heilmann's objection, and what general lesson does the course draw? ||| Clavicles and furculae were found in theropod after theropod. The premise was an absence of evidence rather than evidence of absence, and thin, rarely preserved structures make that inference weakest.
 
 ## Sources
-- Heilmann, G. (1926). *The origin of birds*. Witherby.
-- Huxley, T. H. (1868). On the animals which are most nearly intermediate between birds and reptiles. *Annals and Magazine of Natural History, 4*(2), 66-75.
-- Ostrom, J. H. (1969). Osteology of Deinonychus antirrhopus, an unusual theropod from the Lower Cretaceous of Montana. *Bulletin of the Peabody Museum of Natural History, 30*, 1-165.
-- Ostrom, J. H. (1970). Archaeopteryx: Notice of a "new" specimen. *Science, 170*(3957), 537-538.
-- Ostrom, J. H. (1976). Archaeopteryx and the origin of birds. *Biological Journal of the Linnean Society, 8*(2), 91-182.`,
+- Heilmann, G. (1926). *The origin of birds*. Witherby. https://lccn.loc.gov/26015930
+- Huxley, T. H. (1868). On the animals which are most nearly intermediate between birds and reptiles. *Annals and Magazine of Natural History, 4*(2), 66-75. https://archive.org/details/annalsmagazineof421868lond
+- Ostrom, J. H. (1969). Osteology of Deinonychus antirrhopus, an unusual theropod from the Lower Cretaceous of Montana. *Bulletin of the Peabody Museum of Natural History, 30*, 1-165. https://elischolar.library.yale.edu/peabody_museum_natural_history_bulletin/30/
+- Ostrom, J. H. (1970). Archaeopteryx: Notice of a "new" specimen. *Science, 170*(3957), 537-538. https://doi.org/10.1126/science.170.3957.537
+- Ostrom, J. H. (1976). Archaeopteryx and the origin of birds. *Biological Journal of the Linnean Society, 8*(2), 91-182. https://doi.org/10.1111/j.1095-8312.1976.tb00244.x`,
     },
     {
       slug: "bakker-and-warm-blood",
@@ -1406,10 +1406,10 @@ That is what progress usually looks like. Not one picture swapped for another, b
 
 ## Sources
 - Bakker, R. T. (1968). The superiority of dinosaurs. *Discovery, 3*(2), 11-22.
-- Bakker, R. T. (1972). Anatomical and ecological evidence of endothermy in dinosaurs. *Nature, 238*(5359), 81-85.
-- Bakker, R. T. (1986). *The dinosaur heresies: New theories unlocking the mystery of the dinosaurs and their extinction*. William Morrow.
-- Bakker, R. T., & Galton, P. M. (1974). Dinosaur monophyly and a new class of vertebrates. *Nature, 248*(5444), 168-172.
-- Grady, J. M., Enquist, B. J., Dettweiler-Robinson, E., Wright, N. A., & Smith, F. A. (2014). Evidence for mesothermy in dinosaurs. *Science, 344*(6189), 1268-1272.`,
+- Bakker, R. T. (1972). Anatomical and ecological evidence of endothermy in dinosaurs. *Nature, 238*(5359), 81-85. https://doi.org/10.1038/238081a0
+- Bakker, R. T. (1986). *The dinosaur heresies: New theories unlocking the mystery of the dinosaurs and their extinction*. William Morrow. https://lccn.loc.gov/86012643
+- Bakker, R. T., & Galton, P. M. (1974). Dinosaur monophyly and a new class of vertebrates. *Nature, 248*(5444), 168-172. https://doi.org/10.1038/248168a0
+- Grady, J. M., Enquist, B. J., Dettweiler-Robinson, E., Wright, N. A., & Smith, F. A. (2014). Evidence for mesothermy in dinosaurs. *Science, 344*(6189), 1268-1272. https://doi.org/10.1126/science.1253143`,
       recallContent: [
         {
           prompt: "Last lesson: what about Deinonychus made the old picture untenable?",
@@ -1474,13 +1474,13 @@ That last point closes a loop this course opened in lesson 5. Liaoning fossils a
 :::reveal What are the two lessons of the Archaeoraptor forgery? ||| That the field caught it quickly using its own methods, and that it got as far as it did by going to a press conference instead of peer review, on a specimen bought through the trade with no provenance.
 
 ## Sources
-- Chen, P., Dong, Z., & Zhen, S. (1998). An exceptionally well-preserved theropod dinosaur from the Yixian Formation of China. *Nature, 391*(6663), 147-152.
-- Ji, Q., Currie, P. J., Norell, M. A., & Ji, S. (1998). Two feathered dinosaurs from northeastern China. *Nature, 393*(6687), 753-761.
-- Li, Q., Gao, K.-Q., Vinther, J., Shawkey, M. D., Clarke, J. A., D'Alba, L., Meng, Q., Briggs, D. E. G., & Prum, R. O. (2010). Plumage color patterns of an extinct dinosaur. *Science, 327*(5971), 1369-1372.
-- Lingham-Soliar, T., Feduccia, A., & Wang, X. (2007). A new Chinese specimen indicates that "protofeathers" in the Early Cretaceous theropod dinosaur Sinosauropteryx are degraded collagen fibres. *Proceedings of the Royal Society B, 274*(1620), 1823-1829.
-- Rowe, T., Ketcham, R. A., Denison, C., Colbert, M., Xu, X., & Currie, P. J. (2001). The Archaeoraptor forgery. *Nature, 410*(6828), 539-540.
-- Xu, X., Zhou, Z., Wang, X., Kuang, X., Zhang, F., & Du, X. (2003). Four-winged dinosaurs from China. *Nature, 421*(6921), 335-340.
-- Zhang, F., Kearns, S. L., Orr, P. J., Benton, M. J., Zhou, Z., Johnson, D., Xu, X., & Wang, X. (2010). Fossilized melanosomes and the colour of Cretaceous dinosaurs and birds. *Nature, 463*(7284), 1075-1078.`,
+- Chen, P., Dong, Z., & Zhen, S. (1998). An exceptionally well-preserved theropod dinosaur from the Yixian Formation of China. *Nature, 391*(6663), 147-152. https://doi.org/10.1038/34356
+- Ji, Q., Currie, P. J., Norell, M. A., & Ji, S. (1998). Two feathered dinosaurs from northeastern China. *Nature, 393*(6687), 753-761. https://doi.org/10.1038/31635
+- Li, Q., Gao, K.-Q., Vinther, J., Shawkey, M. D., Clarke, J. A., D'Alba, L., Meng, Q., Briggs, D. E. G., & Prum, R. O. (2010). Plumage color patterns of an extinct dinosaur. *Science, 327*(5971), 1369-1372. https://doi.org/10.1126/science.1186290
+- Lingham-Soliar, T., Feduccia, A., & Wang, X. (2007). A new Chinese specimen indicates that "protofeathers" in the Early Cretaceous theropod dinosaur Sinosauropteryx are degraded collagen fibres. *Proceedings of the Royal Society B, 274*(1620), 1823-1829. https://doi.org/10.1098/rspb.2007.0352
+- Rowe, T., Ketcham, R. A., Denison, C., Colbert, M., Xu, X., & Currie, P. J. (2001). The Archaeoraptor forgery. *Nature, 410*(6828), 539-540. https://doi.org/10.1038/35069145
+- Xu, X., Zhou, Z., Wang, X., Kuang, X., Zhang, F., & Du, X. (2003). Four-winged dinosaurs from China. *Nature, 421*(6921), 335-340. https://doi.org/10.1038/nature01342
+- Zhang, F., Kearns, S. L., Orr, P. J., Benton, M. J., Zhou, Z., Johnson, D., Xu, X., & Wang, X. (2010). Fossilized melanosomes and the colour of Cretaceous dinosaurs and birds. *Nature, 463*(7284), 1075-1078. https://doi.org/10.1038/nature08740`,
     },
     {
       slug: "quiz-the-picture-flips",
@@ -1701,9 +1701,9 @@ Notice what happened there. An observation that appeared to refute the hypothesi
 :::reveal What is the Signor-Lipps effect, and what did it explain? ||| The last fossil of a species is almost never the last individual, because rare things are sampled poorly near the top of their range. So even an instantaneous extinction looks gradual in an incomplete record.
 
 ## Sources
-- Alvarez, L. W., Alvarez, W., Asaro, F., & Michel, H. V. (1980). Extraterrestrial cause for the Cretaceous-Tertiary extinction. *Science, 208*(4448), 1095-1108.
-- Officer, C. B., & Drake, C. L. (1985). Terminal Cretaceous environmental events. *Science, 227*(4691), 1161-1167.
-- Signor, P. W., III, & Lipps, J. H. (1982). Sampling bias, gradual extinction patterns, and catastrophes in the fossil record. In L. T. Silver & P. H. Schultz (Eds.), *Geological implications of impacts of large asteroids and comets on the Earth* (Special Paper 190, pp. 291-296). Geological Society of America.`,
+- Alvarez, L. W., Alvarez, W., Asaro, F., & Michel, H. V. (1980). Extraterrestrial cause for the Cretaceous-Tertiary extinction. *Science, 208*(4448), 1095-1108. https://doi.org/10.1126/science.208.4448.1095
+- Officer, C. B., & Drake, C. L. (1985). Terminal Cretaceous environmental events. *Science, 227*(4691), 1161-1167. https://doi.org/10.1126/science.227.4691.1161
+- Signor, P. W., III, & Lipps, J. H. (1982). Sampling bias, gradual extinction patterns, and catastrophes in the fossil record. In L. T. Silver & P. H. Schultz (Eds.), *Geological implications of impacts of large asteroids and comets on the Earth* (Special Paper 190, pp. 291-296). Geological Society of America. https://doi.org/10.1130/spe190-p291`,
       recallContent: [
         {
           prompt: "Last lesson: what did the Liaoning specimens add to a case that was already strong?",
@@ -1782,13 +1782,13 @@ If you cannot answer that about something you believe, you are not holding a con
 :::reveal What question does the course end on, rather than ending on an answer? ||| What would change my mind, and what evidence would do it. Someone who cannot answer that about a belief is holding a position rather than a conclusion.
 
 ## Sources
-- Hildebrand, A. R., Penfield, G. T., Kring, D. A., Pilkington, M., Camargo Z., A., Jacobsen, S. B., & Boynton, W. V. (1991). Chicxulub crater: A possible Cretaceous/Tertiary boundary impact crater on the Yucatán Peninsula, Mexico. *Geology, 19*(9), 867-871.
-- Keller, G. (2014). Deccan volcanism, the Chicxulub impact, and the end-Cretaceous mass extinction: Coincidence? Cause and effect? In G. Keller & A. C. Kerr (Eds.), *Volcanism, impacts, and mass extinctions: Causes and effects* (Special Paper 505, pp. 57-89). Geological Society of America.
-- Morgan, J. V., Gulick, S. P. S., Bralower, T., Chenot, E., Christeson, G., Claeys, P., ... Zylberman, W. (2016). The formation of peak rings in large impact craters. *Science, 354*(6314), 878-882.
-- Renne, P. R., Deino, A. L., Hilgen, F. J., Kuiper, K. F., Mark, D. F., Mitchell, W. S., III, Morgan, L. E., Mundil, R., & Smit, J. (2013). Time scales of critical events around the Cretaceous-Paleogene boundary. *Science, 339*(6120), 684-687.
-- Schoene, B., Eddy, M. P., Samperton, K. M., Keller, C. B., Keller, G., Adatte, T., & Khadri, S. F. R. (2019). U-Pb constraints on pulsed eruption of the Deccan Traps across the end-Cretaceous mass extinction. *Science, 363*(6429), 862-866.
-- Schulte, P., Alegret, L., Arenillas, I., Arz, J. A., Barton, P. J., Bown, P. R., ... Willumsen, P. S. (2010). The Chicxulub asteroid impact and mass extinction at the Cretaceous-Paleogene boundary. *Science, 327*(5970), 1214-1218.
-- Sprain, C. J., Renne, P. R., Vanderkluysen, L., Pande, K., Self, S., & Mittal, T. (2019). The eruptive tempo of Deccan volcanism in relation to the Cretaceous-Paleogene boundary. *Science, 363*(6429), 866-870.`,
+- Hildebrand, A. R., Penfield, G. T., Kring, D. A., Pilkington, M., Camargo Z., A., Jacobsen, S. B., & Boynton, W. V. (1991). Chicxulub crater: A possible Cretaceous/Tertiary boundary impact crater on the Yucatán Peninsula, Mexico. *Geology, 19*(9), 867-871. https://doi.org/10.1130/0091-7613(1991)019%3C0867:CCAPCT%3E2.3.CO;2
+- Keller, G. (2014). Deccan volcanism, the Chicxulub impact, and the end-Cretaceous mass extinction: Coincidence? Cause and effect? In G. Keller & A. C. Kerr (Eds.), *Volcanism, impacts, and mass extinctions: Causes and effects* (Special Paper 505, pp. 57-89). Geological Society of America. https://doi.org/10.1130/2014.2505(03)
+- Morgan, J. V., Gulick, S. P. S., Bralower, T., Chenot, E., Christeson, G., Claeys, P., ... Zylberman, W. (2016). The formation of peak rings in large impact craters. *Science, 354*(6314), 878-882. https://doi.org/10.1126/science.aah6561
+- Renne, P. R., Deino, A. L., Hilgen, F. J., Kuiper, K. F., Mark, D. F., Mitchell, W. S., III, Morgan, L. E., Mundil, R., & Smit, J. (2013). Time scales of critical events around the Cretaceous-Paleogene boundary. *Science, 339*(6120), 684-687. https://doi.org/10.1126/science.1230492
+- Schoene, B., Eddy, M. P., Samperton, K. M., Keller, C. B., Keller, G., Adatte, T., & Khadri, S. F. R. (2019). U-Pb constraints on pulsed eruption of the Deccan Traps across the end-Cretaceous mass extinction. *Science, 363*(6429), 862-866. https://doi.org/10.1126/science.aau2422
+- Schulte, P., Alegret, L., Arenillas, I., Arz, J. A., Barton, P. J., Bown, P. R., ... Willumsen, P. S. (2010). The Chicxulub asteroid impact and mass extinction at the Cretaceous-Paleogene boundary. *Science, 327*(5970), 1214-1218. https://doi.org/10.1126/science.1177265
+- Sprain, C. J., Renne, P. R., Vanderkluysen, L., Pande, K., Self, S., & Mittal, T. (2019). The eruptive tempo of Deccan volcanism in relation to the Cretaceous-Paleogene boundary. *Science, 363*(6429), 866-870. https://doi.org/10.1126/science.aav1446`,
     },
     {
       slug: "timeline-claim-and-evidence",
@@ -1851,10 +1851,10 @@ Most of the time, the interesting answer is not that someone was foolish. It is 
 :::reveal What does the gap between Riggs in 1903 and the museum label in 1905 illustrate? ||| That publication and circulation are different events. A correction can be in the literature for decades while the institutions that shape public understanding go on using the old name.
 
 ## Sources
-- Alvarez, L. W., Alvarez, W., Asaro, F., & Michel, H. V. (1980). Extraterrestrial cause for the Cretaceous-Tertiary extinction. *Science, 208*(4448), 1095-1108.
-- Hildebrand, A. R., Penfield, G. T., Kring, D. A., Pilkington, M., Camargo Z., A., Jacobsen, S. B., & Boynton, W. V. (1991). Chicxulub crater: A possible Cretaceous/Tertiary boundary impact crater on the Yucatán Peninsula, Mexico. *Geology, 19*(9), 867-871.
+- Alvarez, L. W., Alvarez, W., Asaro, F., & Michel, H. V. (1980). Extraterrestrial cause for the Cretaceous-Tertiary extinction. *Science, 208*(4448), 1095-1108. https://doi.org/10.1126/science.208.4448.1095
+- Hildebrand, A. R., Penfield, G. T., Kring, D. A., Pilkington, M., Camargo Z., A., Jacobsen, S. B., & Boynton, W. V. (1991). Chicxulub crater: A possible Cretaceous/Tertiary boundary impact crater on the Yucatán Peninsula, Mexico. *Geology, 19*(9), 867-871. https://doi.org/10.1130/0091-7613(1991)019%3C0867:CCAPCT%3E2.3.CO;2
 - Riggs, E. S. (1903). Structure and relationships of opisthocoelian dinosaurs. Part I: Apatosaurus Marsh. *Field Columbian Museum Publication 82, Geological Series, 2*(4), 165-196.
-- Steno, N. (1669). *De solido intra solidum naturaliter contento dissertationis prodromus*. Florence.`,
+- Steno, N. (1669). *De solido intra solidum naturaliter contento dissertationis prodromus*. Florence. https://archive.org/details/nicolaistenonisd00sten`,
     },
     {
       slug: "quiz-the-impact",

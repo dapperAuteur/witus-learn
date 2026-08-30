@@ -72,14 +72,14 @@ The method that avoids both traps is the one this course commits to: **evidence,
 :::reveal The course says the "ancient aliens" framing and the "peaceful paradise" framing fail the same way. What is the shared failure? ||| Both erase the real, documented people. Aliens-built-it reassigns engineering that Indigenous people demonstrably did (quarries, tool marks, unfinished monuments, written records) to imaginary outsiders; the romance version deletes the wars, captive-taking, and sacrifice that the peoples themselves recorded. Each replaces evidence with a story someone finds more comfortable.
 
 ## Sources
-- Kirchhoff, P. (1943). Mesoamérica: Sus límites geográficos, composición étnica y caracteres culturales. *Acta Americana, 1*(1), 92-107.
-- Coe, M. D., & Koontz, R. (2013). *Mexico: From the Olmecs to the Aztecs* (7th ed.). Thames & Hudson.
-- Matsuoka, Y., Vigouroux, Y., Goodman, M. M., Sanchez G., J., Buckler, E., & Doebley, J. (2002). A single domestication for maize shown by multilocus microsatellite genotyping. *PNAS, 99*(9), 6080-6084.
-- Piperno, D. R., Ranere, A. J., Holst, I., Iriarte, J., & Dickau, R. (2009). Starch grain and phytolith evidence for early ninth millennium B.P. maize from the Central Balsas River Valley, Mexico. *PNAS, 106*(13), 5019-5024.
-- Houston, S. D. (Ed.). (2004). *The first writing: Script invention as history and process*. Cambridge University Press.
-- Hosler, D. (1994). *The sounds and colors of power: The sacred metallurgical technology of ancient West Mexico*. MIT Press.
-- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell.
-- Feder, K. L. (2020). *Frauds, myths, and mysteries: Science and pseudoscience in archaeology* (10th ed.). Oxford University Press.`,
+- Kirchhoff, P. (1943). Mesoamérica: Sus límites geográficos, composición étnica y caracteres culturales. *Acta Americana, 1*(1), 92-107. http://bdjc.iia.unam.mx/items/show/772
+- Coe, M. D., & Koontz, R. (2013). *Mexico: From the Olmecs to the Aztecs* (7th ed.). Thames & Hudson. https://lccn.loc.gov/2012942987
+- Matsuoka, Y., Vigouroux, Y., Goodman, M. M., Sanchez G., J., Buckler, E., & Doebley, J. (2002). A single domestication for maize shown by multilocus microsatellite genotyping. *PNAS, 99*(9), 6080-6084. https://doi.org/10.1073/pnas.052125199
+- Piperno, D. R., Ranere, A. J., Holst, I., Iriarte, J., & Dickau, R. (2009). Starch grain and phytolith evidence for early ninth millennium B.P. maize from the Central Balsas River Valley, Mexico. *PNAS, 106*(13), 5019-5024. https://doi.org/10.1073/pnas.0812525106
+- Houston, S. D. (Ed.). (2004). *The first writing: Script invention as history and process*. Cambridge University Press. https://lccn.loc.gov/2005296487
+- Hosler, D. (1994). *The sounds and colors of power: The sacred metallurgical technology of ancient West Mexico*. MIT Press. https://lccn.loc.gov/94025455
+- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell. https://lccn.loc.gov/2011029132
+- Feder, K. L. (2020). *Frauds, myths, and mysteries: Science and pseudoscience in archaeology* (10th ed.). Oxford University Press. https://lccn.loc.gov/2019029153`,
     },
     {
       slug: "meso-olmec",
@@ -100,12 +100,12 @@ One more contested artifact belongs in this lesson because it may be the hemisph
 :::reveal State the mother-culture and sister-cultures positions in one sentence each, with a name attached to each side. ||| Mother culture (Coe, Diehl): the core package of Mesoamerican civilization appears first and most fully formed among the Gulf Coast Olmec and radiated outward. Sister cultures (Flannery & Marcus): the Olmec were one precocious sibling among several contemporary regional societies that traded and co-evolved the shared package, no single parent. The evidence is mixed and the debate is live; the course declares no winner.
 
 ## Sources
-- Diehl, R. A. (2004). *The Olmecs: America's first civilization*. Thames & Hudson.
-- Pool, C. A. (2007). *Olmec archaeology and early Mesoamerica*. Cambridge University Press.
-- Flannery, K. V., & Marcus, J. (2000). Formative Mexican chiefdoms and the myth of the "mother culture." *Journal of Anthropological Archaeology, 19*(1), 1-37.
-- Ortiz de Montellano, B., Haslip-Viera, G., & Barbour, W. (1997). They were NOT here before Columbus: Afrocentric hyperdiffusionism in the 1990s. *Ethnohistory, 44*(2), 199-234.
-- Ortíz C., P., & Rodríguez, M. C. (1999). Olmec ritual behavior at El Manatí: A sacred space. In D. C. Grove & R. A. Joyce (Eds.), *Social patterns in pre-Classic Mesoamerica* (pp. 225-254). Dumbarton Oaks.
-- Rodríguez Martínez, M. d. C., Ortíz Ceballos, P., Coe, M. D., Diehl, R. A., Houston, S. D., Taube, K. A., & Delgado Calderón, A. (2006). Oldest writing in the New World. *Science, 313*(5793), 1610-1614.`,
+- Diehl, R. A. (2004). *The Olmecs: America's first civilization*. Thames & Hudson. https://lccn.loc.gov/2004101751
+- Pool, C. A. (2007). *Olmec archaeology and early Mesoamerica*. Cambridge University Press. https://doi.org/10.1017/cbo9781139167147
+- Flannery, K. V., & Marcus, J. (2000). Formative Mexican chiefdoms and the myth of the "mother culture." *Journal of Anthropological Archaeology, 19*(1), 1-37. https://doi.org/10.1006/jaar.1999.0359
+- Ortiz de Montellano, B., Haslip-Viera, G., & Barbour, W. (1997). They were NOT here before Columbus: Afrocentric hyperdiffusionism in the 1990s. *Ethnohistory, 44*(2), 199-234. https://doi.org/10.2307/483368
+- Ortíz C., P., & Rodríguez, M. C. (1999). Olmec ritual behavior at El Manatí: A sacred space. In D. C. Grove & R. A. Joyce (Eds.), *Social patterns in pre-Classic Mesoamerica* (pp. 225-254). Dumbarton Oaks. https://lccn.loc.gov/98025729
+- Rodríguez Martínez, M. d. C., Ortíz Ceballos, P., Coe, M. D., Diehl, R. A., Houston, S. D., Taube, K. A., & Delgado Calderón, A. (2006). Oldest writing in the New World. *Science, 313*(5793), 1610-1614. https://doi.org/10.1126/science.1131492`,
       recallContent: [
         {
           prompt: "Define 'Mesoamerica', what kind of thing is it, roughly where, and who coined the term?",
@@ -145,9 +145,9 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
 :::reveal Aguada Fénix is the largest known construction in the Maya area, yet it argues *against* a simple "great works need great kings" story. How? ||| Excavation so far shows little apparatus of entrenched rulership, no ruler portraits, no royal tombs from the construction era, no palace precinct, so the excavators (Inomata et al.) read it as massive seasonal, collective labor organized without a king. The course flags this as the excavators' published argument from a partially excavated site, not a settled fact.
 
 ## Sources
-- Inomata, T., Triadan, D., Vázquez López, V. A., Fernandez-Diaz, J. C., Omori, T., Méndez Bauer, M. B., García Hernández, M., Beach, T., Cagnato, C., Aoyama, K., & Nasu, H. (2020). Monumental architecture at Aguada Fénix and the rise of Maya civilization. *Nature, 582*, 530-533.
-- Inomata, T., Fernandez-Diaz, J. C., Triadan, D., García Mollinedo, M., Pinzón, F., García Hernández, M., Arévalo, A., Arroyo, A., Marroquín, R., & 12 others. (2021). Origins and spread of formal ceremonial complexes in the Olmec and Maya regions revealed by airborne lidar. *Nature Human Behaviour, 5*, 1487-1501.
-- Canuto, M. A., Estrada-Belli, F., Garrison, T. G., Houston, S. D., Acuña, M. J., Kováč, M., Marken, D., Nondédéo, P., Auld-Thomas, L., & 9 others. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137.`,
+- Inomata, T., Triadan, D., Vázquez López, V. A., Fernandez-Diaz, J. C., Omori, T., Méndez Bauer, M. B., García Hernández, M., Beach, T., Cagnato, C., Aoyama, K., & Nasu, H. (2020). Monumental architecture at Aguada Fénix and the rise of Maya civilization. *Nature, 582*, 530-533. https://doi.org/10.1038/s41586-020-2343-4
+- Inomata, T., Fernandez-Diaz, J. C., Triadan, D., García Mollinedo, M., Pinzón, F., García Hernández, M., Arévalo, A., Arroyo, A., Marroquín, R., & 12 others. (2021). Origins and spread of formal ceremonial complexes in the Olmec and Maya regions revealed by airborne lidar. *Nature Human Behaviour, 5*, 1487-1501. https://doi.org/10.1038/s41562-021-01218-1
+- Canuto, M. A., Estrada-Belli, F., Garrison, T. G., Houston, S. D., Acuña, M. J., Kováč, M., Marken, D., Nondédéo, P., Auld-Thomas, L., & 9 others. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137. https://doi.org/10.1126/science.aau0137`,
       recallContent: [
         {
           prompt: "Why should you hold the name 'Olmec' at arm's length?",
@@ -397,10 +397,10 @@ One more feature must be stated plainly, because this course does not save the u
 :::reveal What made Teotihuacan's housing stock nearly unique in the premodern world? ||| From c. 200 CE most of the population lived in roughly two thousand planned, single-story masonry apartment compounds, multi-family, with patios, drains, plastered and very often mural-painted walls. Solid, decorated, planned housing for ordinary residents at metropolitan scale has few premodern parallels anywhere.
 
 ## Sources
-- Cowgill, G. L. (2015). *Ancient Teotihuacan: Early urbanism in central Mexico*. Cambridge University Press.
-- Millon, R. (1973). *Urbanization at Teotihuacan, Mexico: Vol. 1. The Teotihuacan map*. University of Texas Press.
-- Sugiyama, S. (2005). *Human sacrifice, militarism, and rulership: Materialization of state ideology at the Feathered Serpent Pyramid, Teotihuacan*. Cambridge University Press.
-- Manzanilla, L. R. (2015). Cooperation and tensions in multiethnic corporate societies using Teotihuacan, central Mexico, as a case study. *PNAS, 112*(30), 9210-9215.`,
+- Cowgill, G. L. (2015). *Ancient Teotihuacan: Early urbanism in central Mexico*. Cambridge University Press. https://doi.org/10.1017/cbo9781139046817
+- Millon, R. (1973). *Urbanization at Teotihuacan, Mexico: Vol. 1. The Teotihuacan map*. University of Texas Press. https://lccn.loc.gov/72014176
+- Sugiyama, S. (2005). *Human sacrifice, militarism, and rulership: Materialization of state ideology at the Feathered Serpent Pyramid, Teotihuacan*. Cambridge University Press. https://doi.org/10.1017/cbo9780511489563
+- Manzanilla, L. R. (2015). Cooperation and tensions in multiethnic corporate societies using Teotihuacan, central Mexico, as a case study. *PNAS, 112*(30), 9210-9215. https://doi.org/10.1073/pnas.1419881112`,
       recallContent: [
         {
           prompt: "Give the vital statistics of Aguada Fénix: where, how big, when built, and how it was found.",
@@ -437,11 +437,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
 :::reveal Name the four basic facts about Teotihuacan that remain unknown, and the one clearly dated political event in its history, plus why we know that one. ||| Unknown: its people's identity/ethnicity, their language, the city's real name ("Teotihuacan" is later Nahuatl), and its form of government (no named-ruler image or tomb; kings vs. collective rule is contested). The dated event: the entrada of January 378 CE, Sihyaj K'ahk' arrives at Tikal, the king dies the same day, a Teotihuacan-linked dynasty is installed, known only because the literate Maya recorded it.
 
 ## Sources
-- Cowgill, G. L. (2015). *Ancient Teotihuacan: Early urbanism in central Mexico*. Cambridge University Press.
-- Stuart, D. (2000). "The arrival of strangers": Teotihuacan and Tollan in Classic Maya history. In D. Carrasco, L. Jones, & S. Sessions (Eds.), *Mesoamerica's classic heritage: From Teotihuacan to the Aztecs* (pp. 465-513). University Press of Colorado.
-- Martin, S., & Grube, N. (2008). *Chronicle of the Maya kings and queens: Deciphering the dynasties of the ancient Maya* (2nd ed.). Thames & Hudson.
-- Manzanilla, L. R. (2015). Cooperation and tensions in multiethnic corporate societies using Teotihuacan, central Mexico, as a case study. *PNAS, 112*(30), 9210-9215.
-- Sahagún, B. de. (1950-1982). *Florentine Codex: General history of the things of New Spain* (A. J. O. Anderson & C. E. Dibble, Trans.; Books 1-12). School of American Research / University of Utah. (Original work compiled c. 1545-1590; Book 7 carries the Fifth Sun narrative located at Teotihuacan)`,
+- Cowgill, G. L. (2015). *Ancient Teotihuacan: Early urbanism in central Mexico*. Cambridge University Press. https://doi.org/10.1017/cbo9781139046817
+- Stuart, D. (2000). "The arrival of strangers": Teotihuacan and Tollan in Classic Maya history. In D. Carrasco, L. Jones, & S. Sessions (Eds.), *Mesoamerica's classic heritage: From Teotihuacan to the Aztecs* (pp. 465-513). University Press of Colorado. https://lccn.loc.gov/99011257
+- Martin, S., & Grube, N. (2008). *Chronicle of the Maya kings and queens: Deciphering the dynasties of the ancient Maya* (2nd ed.). Thames & Hudson. https://lccn.loc.gov/2008396649
+- Manzanilla, L. R. (2015). Cooperation and tensions in multiethnic corporate societies using Teotihuacan, central Mexico, as a case study. *PNAS, 112*(30), 9210-9215. https://doi.org/10.1073/pnas.1419881112
+- Sahagún, B. de. (1950-1982). *Florentine Codex: General history of the things of New Spain* (A. J. O. Anderson & C. E. Dibble, Trans.; Books 1-12). School of American Research / University of Utah. https://lccn.loc.gov/51002409 (Original work compiled c. 1545-1590; Book 7 carries the Fifth Sun narrative located at Teotihuacan)`,
       recallContent: [
         {
           prompt: "Give Teotihuacan's scale claims the way the course hedges them: population, rank, and the headline monuments.",
@@ -686,10 +686,10 @@ Hold the scale in your head as one picture: white causeways running between citi
 :::reveal Why is 'Maya empire' wrong, and what did the deciphered texts reveal instead as the Classic period's political structure? ||| There was no single Maya state: dozens of city-states under *k'uhul ajaw* rulers shared a civilization (script, calendar, religion) but never a government. The texts reveal a centuries-long two-superpower rivalry, Tikal vs. Calakmul's snake dynasty, each heading webs of client kings and fighting largely through proxies (Martin & Grube, 2008).
 
 ## Sources
-- Martin, S., & Grube, N. (2008). *Chronicle of the Maya kings and queens: Deciphering the dynasties of the ancient Maya* (2nd ed.). Thames & Hudson.
-- Canuto, M. A., Estrada-Belli, F., Garrison, T. G., Houston, S. D., Acuña, M. J., Kováč, M., Marken, D., Nondédéo, P., Auld-Thomas, L., & 9 others. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137.
-- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson.
-- Ruz Lhuillier, A. (1973). *El Templo de las Inscripciones, Palenque*. Instituto Nacional de Antropología e Historia.`,
+- Martin, S., & Grube, N. (2008). *Chronicle of the Maya kings and queens: Deciphering the dynasties of the ancient Maya* (2nd ed.). Thames & Hudson. https://lccn.loc.gov/2008396649
+- Canuto, M. A., Estrada-Belli, F., Garrison, T. G., Houston, S. D., Acuña, M. J., Kováč, M., Marken, D., Nondédéo, P., Auld-Thomas, L., & 9 others. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137. https://doi.org/10.1126/science.aau0137
+- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson. https://lccn.loc.gov/2022931889
+- Ruz Lhuillier, A. (1973). *El Templo de las Inscripciones, Palenque*. Instituto Nacional de Antropología e Historia. https://lccn.loc.gov/74223480`,
       recallContent: [
         {
           prompt: "What does the name 'Teotihuacan' actually tell us, and what doesn't it?",
@@ -727,10 +727,10 @@ The 2012 affair earns its place in this course as a **specimen**: watch how it w
 :::reveal What is the complete ancient evidence behind the 2012 'Maya apocalypse,' and what does it actually say? ||| One inscription: Tortuguero Monument 6, a 7th-century building-dedication text that ends by projecting forward to the 13th-b'ak'tun period ending of December 2012, a calendar station like an odometer rollover. The passage is damaged, mentions Bolon Yokte' in some connection with the station, and prophesies no ending; other Maya texts (Palenque) schedule dates out to 4772 CE. The apocalypse was projected onto the calendar by moderns (Stuart, 2011).
 
 ## Sources
-- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson.
-- Stuart, D. (2011). *The order of days: The Maya world and the truth about 2012*. Harmony Books.
-- Aveni, A. F. (2001). *Skywatchers: A revised and updated version of Skywatchers of ancient Mexico*. University of Texas Press.
-- Houston, S. D. (Ed.). (2004). *The first writing: Script invention as history and process*. Cambridge University Press.`,
+- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson. https://lccn.loc.gov/2022931889
+- Stuart, D. (2011). *The order of days: The Maya world and the truth about 2012*. Harmony Books. https://lccn.loc.gov/2010028515
+- Aveni, A. F. (2001). *Skywatchers: A revised and updated version of Skywatchers of ancient Mexico*. University of Texas Press. https://lccn.loc.gov/00011974
+- Houston, S. D. (Ed.). (2004). *The first writing: Script invention as history and process*. Cambridge University Press. https://lccn.loc.gov/2005296487`,
       recallContent: [
         {
           prompt: "State the two corrections this lesson opens and closes with.",
@@ -773,12 +773,12 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
 :::reveal Give the 'both halves' of the Classic collapse: what precisely ended, and what the main candidate explanations are. ||| Ended, c. 760-910 CE, in the southern lowlands: the divine-king (k'uhul ajaw) institution, dated monuments cease (Tikal 869, Toniná 909), royal building stops, the great southern cities depopulate over generations. Candidate causes, argued in conjunction: replicated megadrought records (Chichancanab cores, Belize stalagmite), escalating warfare (Petexbatun fortifications), population/environmental overshoot, and the brittleness of divine kingship itself. Meanwhile the north (Chichén Itzá, Mayapán) flourished and Maya polities persisted to the Spanish invasion, institutions collapsed; the people did not vanish.
 
 ## Sources
-- Demarest, A. (2004). *Ancient Maya: The rise and fall of a rainforest civilization*. Cambridge University Press.
-- Hodell, D. A., Curtis, J. H., & Brenner, M. (1995). Possible role of climate in the collapse of Classic Maya civilization. *Nature, 375*, 391-394.
-- Kennett, D. J., Breitenbach, S. F. M., Aquino, V. V., Asmerom, Y., Awe, J., Baldini, J. U. L., Bartlein, P., Culleton, B. J., Ebert, C., & 8 others. (2012). Development and disintegration of Maya political systems in response to climate change. *Science, 338*(6108), 788-791.
-- Martin, S., & Grube, N. (2008). *Chronicle of the Maya kings and queens* (2nd ed.). Thames & Hudson.
-- McAnany, P. A., & Yoffee, N. (Eds.). (2010). *Questioning collapse: Human resilience, ecological vulnerability, and the aftermath of empire*. Cambridge University Press.
-- Canuto, M. A., et al. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137.`,
+- Demarest, A. (2004). *Ancient Maya: The rise and fall of a rainforest civilization*. Cambridge University Press. https://lccn.loc.gov/2005299673
+- Hodell, D. A., Curtis, J. H., & Brenner, M. (1995). Possible role of climate in the collapse of Classic Maya civilization. *Nature, 375*, 391-394. https://doi.org/10.1038/375391a0
+- Kennett, D. J., Breitenbach, S. F. M., Aquino, V. V., Asmerom, Y., Awe, J., Baldini, J. U. L., Bartlein, P., Culleton, B. J., Ebert, C., & 8 others. (2012). Development and disintegration of Maya political systems in response to climate change. *Science, 338*(6108), 788-791. https://doi.org/10.1126/science.1226299
+- Martin, S., & Grube, N. (2008). *Chronicle of the Maya kings and queens* (2nd ed.). Thames & Hudson. https://lccn.loc.gov/2008396649
+- McAnany, P. A., & Yoffee, N. (Eds.). (2010). *Questioning collapse: Human resilience, ecological vulnerability, and the aftermath of empire*. Cambridge University Press. https://doi.org/10.1017/cbo9780511757815
+- Canuto, M. A., et al. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137. https://doi.org/10.1126/science.aau0137`,
       recallContent: [
         {
           prompt: "What kind of writing system is Maya script, and why does that classification matter?",
@@ -1025,11 +1025,11 @@ Two more institutions round out the picture the conquistadors' awe tends to crow
 :::reveal Why does the course call the Spanish descriptions of Tenochtitlan 'hostile witnesses conceding magnificence,' and what caveats does it attach? ||| Cortés and Díaz came to conquer, so their awe (the 60,000-person market claim, the Rome/Constantinople comparison) is testimony against interest, they had motive to praise the prize but none to invent sewers, street-sweepers, and price courts. Caveats: Cortés's figures are his own claims in letters justifying himself to the king, and Díaz wrote decades later as an old man, so the course attributes their numbers rather than asserting them.
 
 ## Sources
-- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell.
-- Cortés, H. (1986). *Letters from Mexico* (A. Pagden, Trans. & Ed.). Yale University Press. (Second letter originally written 1520)
-- Díaz del Castillo, B. (1963). *The conquest of New Spain* (J. M. Cohen, Trans.). Penguin. (Original work published 1632)
-- Sahagún, B. de. (1950-1982). *Florentine Codex: General history of the things of New Spain* (A. J. O. Anderson & C. E. Dibble, Trans.). School of American Research / University of Utah.
-- UNESCO World Heritage Centre. (1987). *Historic Centre of Mexico City and Xochimilco* (World Heritage List No. 412).`,
+- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell. https://lccn.loc.gov/2011029132
+- Cortés, H. (1986). *Letters from Mexico* (A. Pagden, Trans. & Ed.). Yale University Press. https://lccn.loc.gov/86050363 (Second letter originally written 1520)
+- Díaz del Castillo, B. (1963). *The conquest of New Spain* (J. M. Cohen, Trans.). Penguin. https://lccn.loc.gov/63005608 (Original work published 1632)
+- Sahagún, B. de. (1950-1982). *Florentine Codex: General history of the things of New Spain* (A. J. O. Anderson & C. E. Dibble, Trans.). School of American Research / University of Utah. https://lccn.loc.gov/51002409
+- UNESCO World Heritage Centre. (1987). *Historic Centre of Mexico City and Xochimilco* (World Heritage List No. 412). https://whc.unesco.org/en/list/412/`,
       recallContent: [
         {
           prompt: "What are the last dated monuments the lesson cites, and what do they mark?",
@@ -1068,10 +1068,10 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
 :::reveal Why does the course call the Triple Alliance's design 'cheap to run and quick to shatter'? ||| It was hegemonic, not territorial: subject towns kept their rulers, gods, and arms, owing only tribute (the painted lists survive in the Codex Mendoza), with few garrisons, so control cost little but bought obedience, not loyalty. That left the empire ringed with organized, resentful, self-governing peoples, with unconquered Tlaxcala embedded in the middle, pre-assembled coalitions for any coordinator who arrived. In 1519, one did.
 
 ## Sources
-- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell.
-- Berdan, F. F., & Anawalt, P. R. (Eds.). (1992). *The Codex Mendoza* (4 vols.). University of California Press.
-- Hassig, R. (1988). *Aztec warfare: Imperial expansion and political control*. University of Oklahoma Press.
-- León-Portilla, M. (1992). *Fifteen poets of the Aztec world*. University of Oklahoma Press.`,
+- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell. https://lccn.loc.gov/2011029132
+- Berdan, F. F., & Anawalt, P. R. (Eds.). (1992). *The Codex Mendoza* (4 vols.). University of California Press. https://lccn.loc.gov/91015397
+- Hassig, R. (1988). *Aztec warfare: Imperial expansion and political control*. University of Oklahoma Press. https://lccn.loc.gov/87040553
+- León-Portilla, M. (1992). *Fifteen poets of the Aztec world*. University of Oklahoma Press. https://lccn.loc.gov/92007108`,
       recallContent: [
         {
           prompt: "Sort the names: Mexica, Aztec, Nahuatl, Tenochtitlan.",
@@ -1109,12 +1109,12 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
 ## Sources
 - Matos Moctezuma, E., & López Luján, L. (2017). El Huei Tzompantli de Tenochtitlan. *Arqueología Mexicana, 25*(148), 60-67.
 - Instituto Nacional de Antropología e Historia. (2017). *Huei Tzompantli de Tenochtitlan* [excavation reporting, Programa de Arqueología Urbana]. INAH.
-- López Austin, A., & López Luján, L. (2008). Aztec human sacrifice. In E. M. Brumfiel & G. M. Feinman (Eds.), *The Aztec world* (pp. 137-152). Abrams.
-- Sahagún, B. de. (1950-1982). *Florentine Codex* (A. J. O. Anderson & C. E. Dibble, Trans.). School of American Research / University of Utah.
-- Ortiz de Montellano, B. R. (1978). Aztec cannibalism: An ecological necessity? *Science, 200*(4342), 611-617.
-- Restall, M. (2003). *Seven myths of the Spanish conquest*. Oxford University Press.
-- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell.
-- Sugiyama, S. (2005). *Human sacrifice, militarism, and rulership: Materialization of state ideology at the Feathered Serpent Pyramid, Teotihuacan*. Cambridge University Press.`,
+- López Austin, A., & López Luján, L. (2008). Aztec human sacrifice. In E. M. Brumfiel & G. M. Feinman (Eds.), *The Aztec world* (pp. 137-152). Abrams. https://lccn.loc.gov/2007048998
+- Sahagún, B. de. (1950-1982). *Florentine Codex* (A. J. O. Anderson & C. E. Dibble, Trans.). School of American Research / University of Utah. https://lccn.loc.gov/51002409
+- Ortiz de Montellano, B. R. (1978). Aztec cannibalism: An ecological necessity? *Science, 200*(4342), 611-617. https://doi.org/10.1126/science.200.4342.611
+- Restall, M. (2003). *Seven myths of the Spanish conquest*. Oxford University Press. https://doi.org/10.1093/oso/9780195160772.001.0001
+- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell. https://lccn.loc.gov/2011029132
+- Sugiyama, S. (2005). *Human sacrifice, militarism, and rulership: Materialization of state ideology at the Feathered Serpent Pyramid, Teotihuacan*. Cambridge University Press. https://doi.org/10.1017/cbo9780511489563`,
       recallContent: [
         {
           prompt: "Give the Triple Alliance's founding facts and why its age matters.",
@@ -1370,12 +1370,12 @@ The takeaway is structural, not trivia: Mesoamerica was **polycentric to the end
 :::reveal What makes the Purépecha doubly anomalous in Mesoamerica, and what happened when the Aztecs invaded? ||| Their language is an isolate, related to nothing else in Mesoamerica (contested proposals point to South America), and they were the region's leading metallurgists, working copper and bronze into tools and weapons, a technology apparently arrived via South American maritime contact. When Axayacatl invaded in the 1470s, the Purépecha crushed the Aztec army (sources report catastrophic losses, reported, not established), and the Aztecs switched permanently to a fortified frontier.
 
 ## Sources
-- Marcus, J., & Flannery, K. V. (1996). *Zapotec civilization: How urban society evolved in Mexico's Oaxaca Valley*. Thames & Hudson.
-- Boone, E. H. (2000). *Stories in red and black: Pictorial histories of the Aztecs and Mixtecs*. University of Texas Press.
-- Caso, A. (1969). *El tesoro de Monte Albán*. Instituto Nacional de Antropología e Historia.
-- Pollard, H. P. (1993). *Taríacuri's legacy: The prehispanic Tarascan state*. University of Oklahoma Press.
-- Hosler, D. (1994). *The sounds and colors of power: The sacred metallurgical technology of ancient West Mexico*. MIT Press.
-- Houston, S. D. (Ed.). (2004). *The first writing: Script invention as history and process*. Cambridge University Press.`,
+- Marcus, J., & Flannery, K. V. (1996). *Zapotec civilization: How urban society evolved in Mexico's Oaxaca Valley*. Thames & Hudson. https://lccn.loc.gov/95060561
+- Boone, E. H. (2000). *Stories in red and black: Pictorial histories of the Aztecs and Mixtecs*. University of Texas Press. https://lccn.loc.gov/99006214
+- Caso, A. (1969). *El tesoro de Monte Albán*. Instituto Nacional de Antropología e Historia. https://lccn.loc.gov/79523831
+- Pollard, H. P. (1993). *Taríacuri's legacy: The prehispanic Tarascan state*. University of Oklahoma Press. https://lccn.loc.gov/92037080
+- Hosler, D. (1994). *The sounds and colors of power: The sacred metallurgical technology of ancient West Mexico*. MIT Press. https://lccn.loc.gov/94025455
+- Houston, S. D. (Ed.). (2004). *The first writing: Script invention as history and process*. Cambridge University Press. https://lccn.loc.gov/2005296487`,
       recallContent: [
         {
           prompt: "What did the excavations beginning in 2015 on Guatemala Street find, and what question did they close?",
@@ -1411,11 +1411,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
 :::reveal Why is Joya de Cerén 'the corrective' to the rest of the course's evidence base? ||| Because everything else disproportionately shows elites, they built in stone and wrote the books. Cerén, buried by ash c. 600 CE (villagers apparently fled; no bodies found), preserves ordinary farmers' actual lives: wattle-and-daub houses, a sweat bath, gardens, maize fields, manioc beds, painted gourds, commoners living better, with more possessions, than excavators expected. It is the best snapshot anywhere of the majority the record usually erases.
 
 ## Sources
-- Sheets, P. (2006). *The Cerén site: An ancient village buried by volcanic ash in Central America* (2nd ed.). Cengage.
-- UNESCO World Heritage Centre. (1993). *Joya de Cerén archaeological site* (World Heritage List No. 675).
-- UNESCO World Heritage Centre. (2014). *Precolumbian chiefdom settlements with stone spheres of the Diquís* (World Heritage List No. 1453).
-- Hoopes, J. W., & Fonseca Z., O. M. (2003). Goldwork and Chibchan identity: Endogenous change and diffuse unity in the Isthmo-Colombian area. In J. Quilter & J. W. Hoopes (Eds.), *Gold and power in ancient Costa Rica, Panama, and Colombia* (pp. 49-89). Dumbarton Oaks.
-- Quilter, J., & Hoopes, J. W. (Eds.). (2003). *Gold and power in ancient Costa Rica, Panama, and Colombia*. Dumbarton Oaks.`,
+- Sheets, P. (2006). *The Cerén site: An ancient village buried by volcanic ash in Central America* (2nd ed.). Cengage. https://lccn.loc.gov/2005923998
+- UNESCO World Heritage Centre. (1993). *Joya de Cerén archaeological site* (World Heritage List No. 675). https://whc.unesco.org/en/list/675/
+- UNESCO World Heritage Centre. (2014). *Precolumbian chiefdom settlements with stone spheres of the Diquís* (World Heritage List No. 1453). https://whc.unesco.org/en/list/1453/
+- Hoopes, J. W., & Fonseca Z., O. M. (2003). Goldwork and Chibchan identity: Endogenous change and diffuse unity in the Isthmo-Colombian area. In J. Quilter & J. W. Hoopes (Eds.), *Gold and power in ancient Costa Rica, Panama, and Colombia* (pp. 49-89). Dumbarton Oaks. https://lccn.loc.gov/2004299009
+- Quilter, J., & Hoopes, J. W. (Eds.). (2003). *Gold and power in ancient Costa Rica, Panama, and Colombia*. Dumbarton Oaks. https://lccn.loc.gov/2004299009`,
       recallContent: [
         {
           prompt: "What does the 'Danzantes' renaming teach about method?",
@@ -1660,10 +1660,10 @@ The single fact that best breaks the "1521 = the end" reflex is this: **the last
 :::reveal Restall reframes 1521 as 'less a Spanish conquest than a civil war among Mesoamerican powers.' What is the evidence, and what myth does it break? ||| Tens of thousands of Indigenous allies, above all never-conquered, Alliance-hating Tlaxcala, plus Texcocan and other defectors, supplied the armies that did the fighting and the siege of Tenochtitlan; the Lienzo de Tlaxcala and Nahua accounts show them everywhere. It breaks the 'few hundred Spaniards conquered millions' myth: the ~500 Spaniards were one faction's catalytic ally, not lone conquerors (Restall, 2003; Townsend, 2019).
 
 ## Sources
-- Restall, M. (2003). *Seven myths of the Spanish conquest*. Oxford University Press.
-- Townsend, C. (2019). *Fifth sun: A new history of the Aztecs*. Oxford University Press.
-- Jones, G. D. (1998). *The conquest of the last Maya kingdom*. Stanford University Press.
-- Lockhart, J. (Ed. & Trans.). (1993). *We people here: Nahuatl accounts of the conquest of Mexico*. University of California Press.`,
+- Restall, M. (2003). *Seven myths of the Spanish conquest*. Oxford University Press. https://doi.org/10.1093/oso/9780195160772.001.0001
+- Townsend, C. (2019). *Fifth sun: A new history of the Aztecs*. Oxford University Press. https://lccn.loc.gov/2019003623
+- Jones, G. D. (1998). *The conquest of the last Maya kingdom*. Stanford University Press. https://lccn.loc.gov/98016556
+- Lockhart, J. (Ed. & Trans.). (1993). *We people here: Nahuatl accounts of the conquest of Mexico*. University of California Press. https://lccn.loc.gov/91033504`,
       recallContent: [
         {
           prompt: "Describe Mesoamerica's southern boundary the way the course does.",
@@ -1703,11 +1703,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
 :::reveal How does the course require you to state the central-Mexico population collapse, and why is that longer sentence better than 'twenty-five million died'? ||| As a contested range with attribution: central Mexico on the eve of contact is commonly cited around 15-30 million (high reconstructions from Cook & Borah; lower from critics like Rosenblat), falling ~90%, to roughly 1-2 million, within about a century, the dispute turning on how tribute and carrying capacity are modeled. It is better because it is true and it shows where the number comes from and how firm it is; a single confident figure hides the uncertainty and, per the course's first rule, invites easy debunking either way.
 
 ## Sources
-- Cook, N. D. (1998). *Born to die: Disease and New World conquest, 1492-1650*. Cambridge University Press.
-- Denevan, W. M. (Ed.). (1992). *The native population of the Americas in 1492* (2nd ed.). University of Wisconsin Press.
-- Vågene, Å. J., Herbig, A., Campana, M. G., Robles García, N. M., Warinner, C., Sabin, S., Spyrou, M. A., Andrades Valtueña, A., & 9 others. (2018). Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico. *Nature Ecology & Evolution, 2*, 520-528.
-- Koch, A., Brierley, C., Maslin, M. M., & Lewis, S. L. (2019). Earth system impacts of the European arrival and Great Dying in the Americas after 1492. *Quaternary Science Reviews, 207*, 13-36.
-- Restall, M. (2003). *Seven myths of the Spanish conquest*. Oxford University Press.`,
+- Cook, N. D. (1998). *Born to die: Disease and New World conquest, 1492-1650*. Cambridge University Press. https://lccn.loc.gov/97025064
+- Denevan, W. M. (Ed.). (1992). *The native population of the Americas in 1492* (2nd ed.). University of Wisconsin Press. https://lccn.loc.gov/91040042
+- Vågene, Å. J., Herbig, A., Campana, M. G., Robles García, N. M., Warinner, C., Sabin, S., Spyrou, M. A., Andrades Valtueña, A., & 9 others. (2018). Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico. *Nature Ecology & Evolution, 2*, 520-528. https://doi.org/10.1038/s41559-017-0446-6
+- Koch, A., Brierley, C., Maslin, M. M., & Lewis, S. L. (2019). Earth system impacts of the European arrival and Great Dying in the Americas after 1492. *Quaternary Science Reviews, 207*, 13-36. https://doi.org/10.1016/j.quascirev.2018.12.004
+- Restall, M. (2003). *Seven myths of the Spanish conquest*. Oxford University Press. https://doi.org/10.1093/oso/9780195160772.001.0001`,
       recallContent: [
         {
           prompt: "List the four conquest myths this lesson dismantles (per Restall).",
@@ -1952,12 +1952,12 @@ Put the three acts together and you have this course's transferable method for a
 :::reveal What is Landa's paradox, and what did each half of it cost or give? ||| The man who burned the Maya libraries also preserved the decipherment key. His 1562 Maní auto-da-fé (plus other destructions and the climate) left only ~4 pre-conquest Maya codices on Earth, an information catastrophe. But his Relación's garbled 'alphabet', Maya informants writing syllable signs for Spanish letter-names, preserved real sign-sound pairings, which Knorozov used in 1952 as the Rosetta-like evidence that cracked the script.
 
 ## Sources
-- Landa, D. de. (1941). *Landa's Relación de las cosas de Yucatán* (A. M. Tozzer, Trans. & Ed.). Peabody Museum, Harvard University. (Original manuscript c. 1566)
-- Coe, M. D. (1992). *Breaking the Maya code*. Thames & Hudson.
-- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson.
-- Instituto Nacional de Antropología e Historia. (2018). *El Códice Maya de México, auténtico y el más antiguo* [announcement of the technical authentication]. INAH.
-- Canuto, M. A., et al. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137.
-- Proskouriakoff, T. (1960). Historical implications of a pattern of dates at Piedras Negras, Guatemala. *American Antiquity, 25*(4), 454-475.`,
+- Landa, D. de. (1941). *Landa's Relación de las cosas de Yucatán* (A. M. Tozzer, Trans. & Ed.). Peabody Museum, Harvard University. https://lccn.loc.gov/41015387 (Original manuscript c. 1566)
+- Coe, M. D. (1992). *Breaking the Maya code*. Thames & Hudson. https://lccn.loc.gov/91065312
+- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson. https://lccn.loc.gov/2022931889
+- Instituto Nacional de Antropología e Historia. (2018). *El Códice Maya de México, auténtico y el más antiguo* [announcement of the technical authentication]. INAH. https://www.inah.gob.mx/boletines/7497-inah-ratifica-al-codice-maya-de-mexico-antes-llamado-grolier-como-el-manuscrito-autentico-mas-antiguo-de-america
+- Canuto, M. A., et al. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137. https://doi.org/10.1126/science.aau0137
+- Proskouriakoff, T. (1960). Historical implications of a pattern of dates at Piedras Negras, Guatemala. *American Antiquity, 25*(4), 454-475. https://doi.org/10.2307/276633`,
       recallContent: [
         {
           prompt: "State the mechanism-vs-context distinction for the demographic collapse.",
@@ -1997,13 +1997,13 @@ Now connect this lesson to everything before it, because the connection is the p
 :::reveal What specific work does the 'vanished civilization' trope do, and what are the present-tense numbers that refute it? ||| The trope turns living communities into ghosts: it licenses archaeology-without-the-descendants, renders their lands 'empty stages,' underwrote dispossession and assimilation policies premised on extinction, and feeds pseudo-history (a 'vanished' people can be assigned any origin; a living one answers back). Refutation: ~7 million Maya today, ~6 million speakers of ~30 Mayan languages, Maya >40% of Guatemala (2018 census), ~1.65 million Nahuatl speakers (INEGI 2020), daykeepers still running the 260-day count, chinampas still farmed.
 
 ## Sources
-- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson.
-- Instituto Nacional de Estadística y Geografía. (2020). *Censo de Población y Vivienda 2020: Lenguas indígenas*. INEGI.
-- Tedlock, B. (1992). *Time and the highland Maya* (Rev. ed.). University of New Mexico Press.
-- Reed, N. (2001). *The Caste War of Yucatán* (Rev. ed.). Stanford University Press.
-- Comisión para el Esclarecimiento Histórico. (1999). *Guatemala: Memoria del silencio*. CEH / United Nations Office for Project Services.
-- Nobel Foundation. (1992). *The Nobel Peace Prize 1992: Rigoberta Menchú Tum* [press release].
-- Goldman Environmental Foundation. (2015). *Berta Cáceres, 2015 Goldman Prize recipient, South and Central America*.`,
+- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson. https://lccn.loc.gov/2022931889
+- Instituto Nacional de Estadística y Geografía. (2020). *Censo de Población y Vivienda 2020: Lenguas indígenas*. INEGI. https://www.inegi.org.mx/programas/ccpv/2020/
+- Tedlock, B. (1992). *Time and the highland Maya* (Rev. ed.). University of New Mexico Press. https://lccn.loc.gov/91044651
+- Reed, N. (2001). *The Caste War of Yucatán* (Rev. ed.). Stanford University Press. https://lccn.loc.gov/2001020019
+- Comisión para el Esclarecimiento Histórico. (1999). *Guatemala: Memoria del silencio*. CEH / United Nations Office for Project Services. https://lccn.loc.gov/00346093
+- Nobel Foundation. (1992). *The Nobel Peace Prize 1992: Rigoberta Menchú Tum* [press release]. https://www.nobelprize.org/prizes/peace/1992/press-release/
+- Goldman Environmental Foundation. (2015). *Berta Cáceres, 2015 Goldman Prize recipient, South and Central America*. https://www.goldmanprize.org/recipient/berta-caceres/`,
       recallContent: [
         {
           prompt: "Tell the decipherment story in three names and what each contributed.",

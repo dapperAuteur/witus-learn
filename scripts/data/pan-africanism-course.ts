@@ -85,10 +85,10 @@ Almost everyone in this course accepts the first claim. The fights, and there ar
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- Esedebe, P. O. (1994). *Pan-Africanism: The idea and movement, 1776–1991* (2nd ed.). Howard University Press.
-- Geiss, I. (1974). *The Pan-African movement: A history of Pan-Africanism in America, Europe and Africa* (A. Keep, Trans.). Africana Publishing.
-- Sherwood, M. (2011). *Origins of Pan-Africanism: Henry Sylvester Williams, Africa, and the African diaspora*. Routledge.
-- Shepperson, G. (1962). Pan-Africanism and "Pan-Africanism": Some historical notes. *Phylon, 23*(4), 346–358.`,
+- Esedebe, P. O. (1994). *Pan-Africanism: The idea and movement, 1776–1991* (2nd ed.). Howard University Press. https://archive.org/details/panafricanismide0000esed
+- Geiss, I. (1974). *The Pan-African movement: A history of Pan-Africanism in America, Europe and Africa* (A. Keep, Trans.). Africana Publishing. https://archive.org/details/panafricanmoveme0000geis
+- Sherwood, M. (2011). *Origins of Pan-Africanism: Henry Sylvester Williams, Africa, and the African diaspora*. Routledge. https://doi.org/10.4324/9780203840375
+- Shepperson, G. (1962). Pan-Africanism and "Pan-Africanism": Some historical notes. *Phylon, 23*(4), 346–358. https://doi.org/10.2307/274158`,
     },
     {
       slug: "nineteenth-century-roots",
@@ -120,13 +120,13 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- Blyden, E. W. (1887). *Christianity, Islam and the Negro race*. W. B. Whittingham.
-- Delany, M. R. (1852). *The condition, elevation, emigration, and destiny of the colored people of the United States*. Author.
-- Esedebe, P. O. (1994). *Pan-Africanism: The idea and movement, 1776–1991* (2nd ed.). Howard University Press.
-- Garrison, W. L. (1832). *Thoughts on African colonization*. Garrison & Knapp. (Reprints the January 1817 Philadelphia resolutions.)
-- Lynch, H. R. (1967). *Edward Wilmot Blyden: Pan-Negro patriot 1832–1912*. Oxford University Press.
-- Moses, W. J. (1989). *Alexander Crummell: A study of civilization and discontent*. Oxford University Press.
-- Shepperson, G. (1968). Ethiopianism: Past and present. In C. G. Baëta (Ed.), *Christianity in tropical Africa* (pp. 249–264). Oxford University Press.`,
+- Blyden, E. W. (1887). *Christianity, Islam and the Negro race*. W. B. Whittingham. https://archive.org/details/india.history.resource.89219
+- Delany, M. R. (1852). *The condition, elevation, emigration, and destiny of the colored people of the United States*. Author. https://archive.org/details/conditionelevati00dela_0
+- Esedebe, P. O. (1994). *Pan-Africanism: The idea and movement, 1776–1991* (2nd ed.). Howard University Press. https://archive.org/details/panafricanismide0000esed
+- Garrison, W. L. (1832). *Thoughts on African colonization*. Garrison & Knapp. https://archive.org/details/thoughtsonafric00garrgoog (Reprints the January 1817 Philadelphia resolutions.)
+- Lynch, H. R. (1967). *Edward Wilmot Blyden: Pan-Negro patriot 1832–1912*. Oxford University Press. https://lccn.loc.gov/67106354
+- Moses, W. J. (1989). *Alexander Crummell: A study of civilization and discontent*. Oxford University Press. https://lccn.loc.gov/87031493
+- Shepperson, G. (1968). Ethiopianism: Past and present. In C. G. Baëta (Ed.), *Christianity in tropical Africa* (pp. 249–264). Oxford University Press. https://doi.org/10.4324/9781351042826-13`,
     },
     {
       slug: "london-1900",
@@ -158,10 +158,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- Du Bois, W. E. B. (1900). *To the nations of the world* [Address]. Pan-African Conference, London.
-- Geiss, I. (1974). *The Pan-African movement* (A. Keep, Trans.). Africana Publishing.
-- Sherwood, M. (2011). *Origins of Pan-Africanism: Henry Sylvester Williams, Africa, and the African diaspora*. Routledge.
-- Walters, A. (1917). *My life and work*. Fleming H. Revell.`,
+- Du Bois, W. E. B. (1900). *To the nations of the world* [Address]. Pan-African Conference, London. https://www.blackpast.org/african-american-history/1900-w-e-b-du-bois-nations-world/
+- Geiss, I. (1974). *The Pan-African movement* (A. Keep, Trans.). Africana Publishing. https://archive.org/details/panafricanmoveme0000geis
+- Sherwood, M. (2011). *Origins of Pan-Africanism: Henry Sylvester Williams, Africa, and the African diaspora*. Routledge. https://doi.org/10.4324/9780203840375
+- Walters, A. (1917). *My life and work*. Fleming H. Revell. https://docsouth.unc.edu/neh/walters/menu.html`,
     },
     {
       slug: "quiz-the-idea-and-its-roots",
@@ -400,9 +400,9 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- Du Bois, W. E. B. (1940). *Dusk of dawn: An essay toward an autobiography of a race concept*. Harcourt, Brace.
-- Du Bois, W. E. B. (1947). *The world and Africa*. Viking Press.
-- Geiss, I. (1974). *The Pan-African movement* (A. Keep, Trans.). Africana Publishing.`,
+- Du Bois, W. E. B. (1940). *Dusk of dawn: An essay toward an autobiography of a race concept*. Harcourt, Brace. https://lccn.loc.gov/40027643
+- Du Bois, W. E. B. (1947). *The world and Africa*. Viking Press. https://archive.org/details/worldafrica0000webu_o6y7
+- Geiss, I. (1974). *The Pan-African movement* (A. Keep, Trans.). Africana Publishing. https://archive.org/details/panafricanmoveme0000geis`,
     },
     {
       slug: "ethiopia-1935-and-the-london-radicals",
@@ -432,12 +432,12 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- Asante, S. K. B. (1977). *Pan-African protest: West Africa and the Italo-Ethiopian crisis, 1934–1941*. Longman.
-- Barker, A. J. (1968). *The civilizing mission: A history of the Italo-Ethiopian war of 1935–1936*. Dial Press.
-- Hooker, J. R. (1967). *Black revolutionary: George Padmore's path from communism to Pan-Africanism*. Praeger.
-- James, C. L. R. (1969). *A history of Pan-African revolt*. Drum and Spear Press. (Original work published 1938 as *A history of Negro revolt*.)
+- Asante, S. K. B. (1977). *Pan-African protest: West Africa and the Italo-Ethiopian crisis, 1934–1941*. Longman. https://lccn.loc.gov/78312713
+- Barker, A. J. (1968). *The civilizing mission: A history of the Italo-Ethiopian war of 1935–1936*. Dial Press. https://lccn.loc.gov/68023853
+- Hooker, J. R. (1967). *Black revolutionary: George Padmore's path from communism to Pan-Africanism*. Praeger. https://lccn.loc.gov/67022702
+- James, C. L. R. (1969). *A history of Pan-African revolt*. Drum and Spear Press. https://archive.org/details/historyofpanafri0000clrj (Original work published 1938 as *A history of Negro revolt*.)
 - Padmore, G. (1956). *Pan-Africanism or communism? The coming struggle for Africa*. Dennis Dobson.
-- Selassie, H. (1936, June). *Appeal to the League of Nations* [Address]. League of Nations, Geneva. (Delivered in Amharic; quoted in its standard English rendering.)`,
+- Selassie, H. (1936, June). *Appeal to the League of Nations* [Address]. League of Nations, Geneva. https://www.blackpast.org/global-african-history/1936-emperor-haile-selassie-ethiopia-appeal-league-nations/ (Delivered in Amharic; quoted in its standard English rendering.)`,
     },
     {
       slug: "manchester-1945",
@@ -467,8 +467,8 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- Adi, H., & Sherwood, M. (1995). *The 1945 Manchester Pan-African Congress revisited*. New Beacon Books.
-- Nkrumah, K. (1957). *Ghana: The autobiography of Kwame Nkrumah*. Thomas Nelson.
+- Adi, H., & Sherwood, M. (1995). *The 1945 Manchester Pan-African Congress revisited*. New Beacon Books. https://lccn.loc.gov/95204674
+- Nkrumah, K. (1957). *Ghana: The autobiography of Kwame Nkrumah*. Thomas Nelson. https://archive.org/details/autobiographyofk0000unse_i8g3
 - Padmore, G. (Ed.). (1947). *Colonial and coloured unity: A programme of action — History of the Pan-African Congress*. Pan-African Federation.`,
     },
     {
@@ -709,11 +709,11 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 :::reveal Why does the course teach UNIA membership as a contested number, and what comparative claim stands regardless? ||| Garvey claimed millions (figures up to six million circulated by 1923); skeptical historians count far fewer paid members, so no single figure is asserted. What no serious historian disputes: the UNIA was the largest mass movement of Black people the world had yet seen.
 
 ## Sources
-- Cronon, E. D. (1955). *Black Moses: The story of Marcus Garvey and the Universal Negro Improvement Association*. University of Wisconsin Press.
-- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press.
-- Hill, R. A. (Ed.). (1983–1990). *The Marcus Garvey and Universal Negro Improvement Association papers* (Vols. 1–7). University of California Press.
-- Martin, T. (1976). *Race first: The ideological and organizational struggles of Marcus Garvey and the Universal Negro Improvement Association*. Greenwood Press.
-- Universal Negro Improvement Association. (1920, August 13). *Declaration of the rights of the Negro peoples of the world*. New York.`,
+- Cronon, E. D. (1955). *Black Moses: The story of Marcus Garvey and the Universal Negro Improvement Association*. University of Wisconsin Press. https://lccn.loc.gov/54006931
+- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press. https://archive.org/details/negrowithhatrise0000gran
+- Hill, R. A. (Ed.). (1983–1990). *The Marcus Garvey and Universal Negro Improvement Association papers* (Vols. 1–7). University of California Press. https://lccn.loc.gov/82013379
+- Martin, T. (1976). *Race first: The ideological and organizational struggles of Marcus Garvey and the Universal Negro Improvement Association*. Greenwood Press. https://lccn.loc.gov/75016968
+- Universal Negro Improvement Association. (1920, August 13). *Declaration of the rights of the Negro peoples of the world*. New York. https://www.blackpast.org/african-american-history/declaration-rights-negro-peoples-world-1920/`,
     },
     {
       slug: "black-star-line-and-the-fall",
@@ -742,12 +742,12 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 :::reveal The course insists the Garvey trial be taught in two documented halves, what are they? ||| Half one: the Black Star Line's wreckage was real, misleading promotions (the never-acquired Phyllis Wheatley), tens of thousands of poor investors' money gone, genuine mismanagement; the June 1923 single-count mail-fraud conviction was not a fabrication from nothing. Half two: the prosecution was politically sought, Hoover's 'notorious negro agitator' memo predates any alleged crime by four years, informants were planted, and the government hunted the movement's leader. Neither half cancels the other.
 
 ## Sources
-- Cronon, E. D. (1955). *Black Moses: The story of Marcus Garvey and the Universal Negro Improvement Association*. University of Wisconsin Press.
-- Garvey, A. J. (Ed.). (1923–1925). *Philosophy and opinions of Marcus Garvey* (Vols. 1–2). Universal Publishing House.
-- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press.
-- Hill, R. A. (Ed.). (1983–1990). *The Marcus Garvey and Universal Negro Improvement Association papers* (Vols. 1–7). University of California Press.
-- Kornweibel, T., Jr. (1998). *Seeing red: Federal campaigns against Black militancy, 1919–1925*. Indiana University Press.
-- Martin, T. (1976). *Race first*. Greenwood Press.`,
+- Cronon, E. D. (1955). *Black Moses: The story of Marcus Garvey and the Universal Negro Improvement Association*. University of Wisconsin Press. https://lccn.loc.gov/54006931
+- Garvey, A. J. (Ed.). (1923–1925). *Philosophy and opinions of Marcus Garvey* (Vols. 1–2). Universal Publishing House. https://archive.org/details/philosophyopinio01garv
+- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press. https://archive.org/details/negrowithhatrise0000gran
+- Hill, R. A. (Ed.). (1983–1990). *The Marcus Garvey and Universal Negro Improvement Association papers* (Vols. 1–7). University of California Press. https://lccn.loc.gov/82013379
+- Kornweibel, T., Jr. (1998). *Seeing red: Federal campaigns against Black militancy, 1919–1925*. Indiana University Press. https://lccn.loc.gov/97010294
+- Martin, T. (1976). *Race first*. Greenwood Press. https://lccn.loc.gov/75016968`,
     },
     {
       slug: "du-bois-vs-garvey",
@@ -780,11 +780,11 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 :::reveal Beneath the insults, what three strategic questions actually divided Du Bois and Garvey? ||| (1) Integration into multiracial states vs. a separate Black destiny anchored in Africa; (2) organizing credentialed elites vs. organizing the masses; (3) whose money and risk, white philanthropy and NAACP budgets vs. the five-dollar shares of the Black poor. The feud personalized fault lines (class, color, strategy) the movement never stopped arguing.
 
 ## Sources
-- Du Bois, W. E. B. (1920, December–1921, January). Marcus Garvey. *The Crisis, 21*(2–3).
-- Du Bois, W. E. B. (1924, May). A lunatic or a traitor. *The Crisis, 28*(1), 8–9.
-- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press.
-- Hill, R. A. (Ed.). (1983–1990). *The Marcus Garvey and Universal Negro Improvement Association papers* (Vols. 1–7). University of California Press.
-- Lewis, D. L. (2000). *W. E. B. Du Bois: The fight for equality and the American century, 1919–1963*. Henry Holt.`,
+- Du Bois, W. E. B. (1920, December–1921, January). Marcus Garvey. *The Crisis, 21*(2–3). https://archive.org/details/sim_crisis_1920-12_21_2 https://archive.org/details/sim_crisis_1921-01_21_3
+- Du Bois, W. E. B. (1924, May). A lunatic or a traitor. *The Crisis, 28*(1), 8–9. https://archive.org/details/sim_crisis_1924-05_28_1
+- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press. https://archive.org/details/negrowithhatrise0000gran
+- Hill, R. A. (Ed.). (1983–1990). *The Marcus Garvey and Universal Negro Improvement Association papers* (Vols. 1–7). University of California Press. https://lccn.loc.gov/82013379
+- Lewis, D. L. (2000). *W. E. B. Du Bois: The fight for equality and the American century, 1919–1963*. Henry Holt. https://archive.org/details/webduboisfightfo0000lewi_1963`,
     },
     {
       slug: "quiz-garvey-and-du-bois",
@@ -1023,10 +1023,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- Birmingham, D. (1998). *Kwame Nkrumah: The father of African nationalism* (Rev. ed.). Ohio University Press.
-- Legum, C. (1962). *Pan-Africanism: A short political guide*. Frederick A. Praeger.
-- Lewis, D. L. (2000). *W. E. B. Du Bois: The fight for equality and the American century, 1919–1963*. Henry Holt.
-- Nkrumah, K. (1957). *Ghana: The autobiography of Kwame Nkrumah*. Thomas Nelson.`,
+- Birmingham, D. (1998). *Kwame Nkrumah: The father of African nationalism* (Rev. ed.). Ohio University Press. https://lccn.loc.gov/98007888
+- Legum, C. (1962). *Pan-Africanism: A short political guide*. Frederick A. Praeger. https://archive.org/details/panafricanismsho0000legu_r5t0
+- Lewis, D. L. (2000). *W. E. B. Du Bois: The fight for equality and the American century, 1919–1963*. Henry Holt. https://archive.org/details/webduboisfightfo0000lewi_1963
+- Nkrumah, K. (1957). *Ghana: The autobiography of Kwame Nkrumah*. Thomas Nelson. https://archive.org/details/autobiographyofk0000unse_i8g3`,
     },
     {
       slug: "oau-1963",
@@ -1056,12 +1056,12 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- Legum, C. (1962). *Pan-Africanism: A short political guide*. Frederick A. Praeger.
-- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs.
-- Nkrumah, K. (1963a). *Africa must unite*. Heinemann.
+- Legum, C. (1962). *Pan-Africanism: A short political guide*. Frederick A. Praeger. https://archive.org/details/panafricanismsho0000legu_r5t0
+- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs. https://lccn.loc.gov/2005047576
+- Nkrumah, K. (1963a). *Africa must unite*. Heinemann. https://archive.org/details/africamustunite0000kwam
 - Nkrumah, K. (1963b, May 24). *Address to the Conference of African Heads of State and Government* [Speech]. Addis Ababa.
-- Organisation of African Unity. (1963, May 25). *Charter of the Organisation of African Unity*. Addis Ababa.
-- Organisation of African Unity. (1964, July). *Resolution AHG/Res. 16(I): Border disputes among African states*. Cairo.`,
+- Organisation of African Unity. (1963, May 25). *Charter of the Organisation of African Unity*. Addis Ababa. https://au.int/en/treaties/oau-charter-addis-ababa-25-may-1963
+- Organisation of African Unity. (1964, July). *Resolution AHG/Res. 16(I): Border disputes among African states*. Cairo. https://www.peaceau.org/uploads/ahg-res-16-i-en.pdf`,
     },
     {
       slug: "from-oau-to-au",
@@ -1093,12 +1093,12 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- African Union. (2000, July 11). *Constitutive Act of the African Union*. Lomé.
-- African Union. (2003, February 3). *Protocol on amendments to the Constitutive Act of the African Union*. Addis Ababa. (Article 3(q), diaspora participation.)
-- African Union. (2018, March 21). *Agreement establishing the African Continental Free Trade Area*. Kigali.
-- Makinda, S. M., & Okumu, F. W. (2008). *The African Union: Challenges of globalization, security, and governance*. Routledge.
-- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs.
-- Organisation of African Unity. (1999, September 9). *Sirte Declaration*. Sirte.
+- African Union. (2000, July 11). *Constitutive Act of the African Union*. Lomé. https://au.int/en/treaties/constitutive-act-african-union
+- African Union. (2003, February 3). *Protocol on amendments to the Constitutive Act of the African Union*. Addis Ababa. https://au.int/en/treaties/protocol-amendments-constitutive-act-african-union (Article 3(q), diaspora participation.)
+- African Union. (2018, March 21). *Agreement establishing the African Continental Free Trade Area*. Kigali. https://au.int/en/treaties/agreement-establishing-african-continental-free-trade-area
+- Makinda, S. M., & Okumu, F. W. (2008). *The African Union: Challenges of globalization, security, and governance*. Routledge. https://doi.org/10.4324/9780203940112
+- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs. https://lccn.loc.gov/2005047576
+- Organisation of African Unity. (1999, September 9). *Sirte Declaration*. Sirte. https://digitallibrary.un.org/record/368340
 - United Nations Economic Commission for Africa. (2021). *AfCFTA: Start of trading*. UNECA.`,
     },
     {
@@ -1338,17 +1338,17 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- Césaire, A. (2000). *Discourse on colonialism* (J. Pinkham, Trans.). Monthly Review Press. (Original work published 1950)
-- Césaire, A. (2001). *Notebook of a return to the native land* (C. Eshleman & A. Smith, Trans.). Wesleyan University Press. (Original work published 1939)
+- Césaire, A. (2000). *Discourse on colonialism* (J. Pinkham, Trans.). Monthly Review Press. https://archive.org/details/discourseoncolon00cs (Original work published 1950)
+- Césaire, A. (2001). *Notebook of a return to the native land* (C. Eshleman & A. Smith, Trans.). Wesleyan University Press. https://lccn.loc.gov/2001000114 (Original work published 1939)
 - Césaire, A. (1956). *Lettre à Maurice Thorez*. Présence Africaine.
-- Fanon, F. (2008). *Black skin, white masks* (R. Philcox, Trans.). Grove Press. (Original work published 1952)
-- Fanon, F. (2004). *The wretched of the earth* (R. Philcox, Trans.). Grove Press. (Original work published 1961)
-- Jahn, J. (1968). *A history of neo-African literature* (O. Coburn & U. Lehrburger, Trans.). Faber & Faber.
-- Kesteloot, L. (1991). *Black writers in French: A literary history of negritude* (E. C. Kennedy, Trans.). Howard University Press.
-- Meredith, M. (2005). *The fate of Africa*. PublicAffairs.
+- Fanon, F. (2008). *Black skin, white masks* (R. Philcox, Trans.). Grove Press. https://archive.org/details/blackskinwhitema0000fano_j7u6 (Original work published 1952)
+- Fanon, F. (2004). *The wretched of the earth* (R. Philcox, Trans.). Grove Press. https://archive.org/details/wretchedofearthf0000fano (Original work published 1961)
+- Jahn, J. (1968). *A history of neo-African literature* (O. Coburn & U. Lehrburger, Trans.). Faber & Faber. https://archive.org/details/historyofneoafri0000jahn
+- Kesteloot, L. (1991). *Black writers in French: A literary history of negritude* (E. C. Kennedy, Trans.). Howard University Press. https://lccn.loc.gov/91014178
+- Meredith, M. (2005). *The fate of Africa*. PublicAffairs. https://lccn.loc.gov/2005047576
 - Sartre, J.-P. (1948). Orphée noir. In L. S. Senghor (Ed.), *Anthologie de la nouvelle poésie nègre et malgache de langue française*. Presses Universitaires de France.
-- Sharpley-Whiting, T. D. (2002). *Negritude women*. University of Minnesota Press.
-- Soyinka, W. (1976). *Myth, literature and the African world*. Cambridge University Press.`,
+- Sharpley-Whiting, T. D. (2002). *Negritude women*. University of Minnesota Press. https://archive.org/details/negritudewomen00shar
+- Soyinka, W. (1976). *Myth, literature and the African world*. Cambridge University Press. https://lccn.loc.gov/75038184`,
     },
     {
       slug: "rastafari-and-ethiopia",
@@ -1375,13 +1375,13 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 :::reveal What is the double quote-audit at the heart of the Rastafari lesson? ||| (1) The 'Look to Africa, where a black king shall be crowned' prophecy attributed to Garvey appears in none of his located writings, researchers trace 'black king' preaching to others, notably James Morris Webb; (2) the documented record runs the other way: in a 1937 Black Man essay Garvey attacked Selassie as a 'great coward.' The man revered as the movement's prophet publicly savaged the man revered as its God, symbols and facts run on different rails.
 
 ## Sources
-- Chevannes, B. (1994). *Rastafari: Roots and ideology*. Syracuse University Press.
-- Edmonds, E. B. (2012). *Rastafari: A very short introduction*. Oxford University Press.
+- Chevannes, B. (1994). *Rastafari: Roots and ideology*. Syracuse University Press. https://lccn.loc.gov/94018608
+- Edmonds, E. B. (2012). *Rastafari: A very short introduction*. Oxford University Press. https://doi.org/10.1093/actrade/9780199584529.001.0001
 - Garvey, M. (1937). The failure of Haile Selassie as Emperor. *The Black Man* (London).
-- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press.
+- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press. https://archive.org/details/negrowithhatrise0000gran
 - Hill, R. A. (1983). Leonard P. Howell and millenarian visions in early Rastafari. *Jamaica Journal, 16*(1), 24–39.
-- Meredith, M. (2005). *The fate of Africa*. PublicAffairs.
-- Zewde, B. (2001). *A history of modern Ethiopia, 1855–1991* (2nd ed.). Ohio University Press.`,
+- Meredith, M. (2005). *The fate of Africa*. PublicAffairs. https://lccn.loc.gov/2005047576
+- Zewde, B. (2001). *A history of modern Ethiopia, 1855–1991* (2nd ed.). Ohio University Press. https://doi.org/10.7722/tlzn8473`,
     },
     {
       slug: "quiz-the-cultural-movements",
@@ -1620,11 +1620,11 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- Birmingham, D. (1998). *Kwame Nkrumah: The father of African nationalism* (Rev. ed.). Ohio University Press.
-- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs.
-- Schmidt, E. (2007). *Cold War and decolonization in Guinea, 1946–1958*. Ohio University Press.
-- Sharpley-Whiting, T. D. (2002). *Negritude women*. University of Minnesota Press.
-- Wrong, M. (2001). *In the footsteps of Mr. Kurtz: Living on the brink of disaster in Mobutu's Congo*. Fourth Estate.`,
+- Birmingham, D. (1998). *Kwame Nkrumah: The father of African nationalism* (Rev. ed.). Ohio University Press. https://lccn.loc.gov/98007888
+- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs. https://lccn.loc.gov/2005047576
+- Schmidt, E. (2007). *Cold War and decolonization in Guinea, 1946–1958*. Ohio University Press. https://doi.org/10.1353/book.6993
+- Sharpley-Whiting, T. D. (2002). *Negritude women*. University of Minnesota Press. https://archive.org/details/negritudewomen00shar
+- Wrong, M. (2001). *In the footsteps of Mr. Kurtz: Living on the brink of disaster in Mobutu's Congo*. Fourth Estate. https://archive.org/details/infootstepsofmrk0000wron`,
     },
     {
       slug: "what-endures",
@@ -1656,9 +1656,9 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
 
 ## Sources
 - Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
-- African Union. (2018, March 21). *Agreement establishing the African Continental Free Trade Area*. Kigali.
-- Marable, M. (2011). *Malcolm X: A life of reinvention*. Viking.
-- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs.
+- African Union. (2018, March 21). *Agreement establishing the African Continental Free Trade Area*. Kigali. https://au.int/en/treaties/agreement-establishing-african-continental-free-trade-area
+- Marable, M. (2011). *Malcolm X: A life of reinvention*. Viking. https://lccn.loc.gov/2010025768
+- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs. https://lccn.loc.gov/2005047576
 - Padmore, G. (Ed.). (1947). *Colonial and coloured unity: A programme of action — History of the Pan-African Congress*. Pan-African Federation.`,
     },
     {

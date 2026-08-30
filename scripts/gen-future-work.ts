@@ -95,24 +95,42 @@ const header = (from: string) =>
   `// The source notes live in the gitignored \`plans/\` dir, so the content is committed here as\n` +
   `// plain strings: the deployed app imports this module and never reads the filesystem.\n\n`;
 
+/**
+ * Strip the `YYYY-MM-DD-` prefix every note under plans/future-courses/ gained on 2026-08-26.
+ * Item keys are the join column for future_work_notes, so they must survive a file rename.
+ */
+function undatedName(f: string): string {
+  return f.replace(/^\d{4}-\d{2}-\d{2}-/, "");
+}
+
 function main() {
   const dir = sourceDir();
   const sdtw = join(dir, "she-did-the-work");
   mkdirSync(OUT_DIR, { recursive: true });
 
   // ── She Did The Work: the proposal + one seed file per subject ───────────────────────────────
-  const proposal = deDash(readFileSync(join(sdtw, "00-course-proposals.md"), "utf8").trim());
+  // Every note under plans/future-courses/ was renamed to `YYYY-MM-DD-<original>.md` on 2026-08-26.
+  // Strip that prefix BEFORE any name-based logic. Without this the `NN-` index-doc filter below
+  // matches all 32 files (they all begin with a date) and the generator writes ZERO subjects, and
+  // the hardcoded `00-course-proposals.md` read throws ENOENT. Both were live: the committed output
+  // survived only because it was generated before the rename.
+  const undated = undatedName;
+
+  const sdtwFiles = readdirSync(sdtw).filter((f) => f.endsWith(".md"));
+  const proposalFile = sdtwFiles.find((f) => undated(f) === "00-course-proposals.md");
+  if (!proposalFile) throw new Error(`no 00-course-proposals.md in ${sdtw} (date prefix allowed)`);
+  const proposal = deDash(readFileSync(join(sdtw, proposalFile), "utf8").trim());
   // Subject seeds are named after the woman (`abigail-adams.md`). A NUMBER-PREFIXED file is an index
   // or list doc, not a person: `00-course-proposals.md` is read separately above, and a later
   // `01-list-of-women-that-did-the-work.md` was silently emitted as a 30th "subject" whose 88-char
   // body then failed tests/future-work.test.ts. Skipping the whole `NN-` convention rather than just
   // `00-` fixes the class instead of the instance.
-  const subjectFiles = readdirSync(sdtw)
-    .filter((f) => f.endsWith(".md") && !/^\d+-/.test(f))
-    .sort();
+  const subjectFiles = sdtwFiles.filter((f) => !/^\d+-/.test(undated(f))).sort();
 
   const subjects = subjectFiles.map((f) => {
-    const name = f.replace(/\.md$/, "");
+    // Key off the UNDATED name so `abigail-adams` survives the rename. The key is the join column
+    // for future_work_notes; changing it orphans every note filed against it.
+    const name = undated(f).replace(/\.md$/, "");
     const body = deDash(readFileSync(join(sdtw, f), "utf8").trim());
     return { key: slugify(name), name, summary: summarize(body), body };
   });
@@ -148,7 +166,11 @@ function main() {
     // (one does) otherwise writes that dash straight into `key`, `title` and `provenance` in this
     // committed module, and `pnpm lint` fails on every regeneration for a reason that looks like it
     // came from nowhere.
-    const key = deDash(f.replace(/\.md$/, ""));
+    // Strip a leading date prefix the same way the subdir branch below strips `^\d+-`. BAM renamed
+    // every note to `YYYY-MM-DD-<slug>.md` on 2026-08-26; without this, the next regeneration would
+    // rewrite `bvc-sommelier` to `2026-08-02-bvc-sommelier` and silently orphan every
+    // future_work_notes row joined on the old key. The key must survive a rename of its file.
+    const key = deDash(f.replace(/\.md$/, "").replace(/^\d{4}-\d{2}-\d{2}-/, ""));
     // Title: prefer the doc's own H1; fall back to the filename, de-slugged.
     const h1 = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
     const title = h1 ?? key.replace(/-/g, " ").replace(/^\w/, (c) => c.toUpperCase());
@@ -176,9 +198,13 @@ function main() {
     for (const f of files) {
       const body = deDash(readFileSync(join(dir, sub, f), "utf8").trim());
       if (!body) continue;
-      const key = deDash(`${sub}-${f.replace(/\.md$/, "").replace(/^\d+-/, "")}`);
+      // undated() first: `^\d+-` alone eats only the YEAR of `2026-07-13-00-interview-prep.md`,
+      // leaving `mansa-gold-07-13-00-interview-prep` where the committed key is
+      // `mansa-gold-interview-prep`. That drift orphans every future_work_notes row on the old key.
+      const base = undatedName(f).replace(/\.md$/, "").replace(/^\d+-/, "");
+      const key = deDash(`${sub}-${base}`);
       const h1 = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
-      const title = h1 ?? f.replace(/\.md$/, "").replace(/^\d+-/, "").replace(/-/g, " ");
+      const title = h1 ?? base.replace(/-/g, " ");
       const group = sub.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
       out2 += `  {\n    key: ${JSON.stringify(key)},\n    title: ${JSON.stringify(title)},\n    group: ${JSON.stringify(group)},\n    summary: ${JSON.stringify(summarize(body))},\n    body: \`${lit(body)}\`,\n    provenance: ${JSON.stringify(deDash(`plans/future-courses/${sub}/${f}`))},\n  },\n`;
     }

@@ -179,16 +179,26 @@ function generate(doc: DownloadDoc, chrome: string): void {
     generatedOn: doc.revised,
   });
 
-  const tmpHtml = join(tmpdir(), `witus-pdf-${doc.slug}.html`);
-  const outPdf = join(OUT_DIR, `${doc.slug}.pdf`);
+  printPdf(html, doc.slug, join(OUT_DIR, `${doc.slug}.pdf`), chrome);
+}
+
+/** Write `html` to a temp file and drive headless Chrome over it. Shared by the registered-document
+ *  path and the ad-hoc `--file` path below. */
+function printPdf(html: string, label: string, outPdf: string, chrome: string): void {
+  const tmpHtml = join(tmpdir(), `witus-pdf-${label.replace(/[^a-z0-9-]/gi, "-")}.html`);
   writeFileSync(tmpHtml, html);
 
   try {
     execFileSync(
       chrome,
       [
-        "--headless",
+        "--headless=new",
         "--disable-gpu",
+        // An isolated profile. Without it, headless Chrome attaches to the profile of an already
+        // running Chrome and hangs forever instead of printing, which is a very confusing failure
+        // on a machine where the browser is open (i.e. every developer machine).
+        `--user-data-dir=${join(tmpdir(), "witus-pdf-chrome")}`,
+        "--no-first-run",
         // Chrome's own header/footer would print the file:// path and a page number in a font we do
         // not control, on top of the branded ones. Off.
         "--no-pdf-header-footer",
@@ -198,7 +208,7 @@ function generate(doc: DownloadDoc, chrome: string): void {
       { stdio: "pipe" },
     );
   } catch (err) {
-    console.error(`  FAILED   ${doc.slug}:`, err instanceof Error ? err.message : err);
+    console.error(`  FAILED   ${label}:`, err instanceof Error ? err.message : err);
     return;
   } finally {
     try {
@@ -209,10 +219,71 @@ function generate(doc: DownloadDoc, chrome: string): void {
   }
 
   const bytes = readFileSync(outPdf).length;
-  console.log(`  ok       ${doc.slug}.pdf  (${Math.round(bytes / 1024)} KB)`);
+  console.log(`  ok       ${outPdf}  (${Math.round(bytes / 1024)} KB)`);
+}
+
+/**
+ * Render ONE markdown file that is not a registered download.
+ *
+ *   pnpm gen:pdfs --file plans/detroit/00-detroit-360-capture-report.md --title "Detroit"
+ *
+ * WHY THIS EXISTS. `DOWNLOAD_DOCS` is the registry of documents the APP SERVES, and registering a
+ * field brief or a review pack there would put it on the site. Plenty of documents want the same
+ * branded PDF treatment without being published: trip briefs, review packs, anything in `plans/`
+ * that BAM reads away from the editor. The PDF lands beside its source rather than in
+ * public/downloads, precisely so it cannot be mistaken for a shipped download.
+ */
+function generateFile(
+  src: string,
+  chrome: string,
+  title?: string,
+  subtitle?: string,
+  generatedOn?: string,
+): void {
+  if (!existsSync(src)) {
+    console.error(`No such file: ${src}`);
+    process.exit(1);
+  }
+  const md = readFileSync(src, "utf8");
+  // Fall back to the document's own first H1, then to its filename, so --title is optional.
+  const h1 = /^#\s+(.+)$/m.exec(md)?.[1];
+  const base = src.replace(/\.md$/, "");
+  // `generatedOn` is passed rather than read from the clock so a regenerated PDF is byte-stable.
+  // For an ad-hoc file the document's own "**Written:** YYYY-MM-DD" line is the honest date, and
+  // --date overrides it.
+  const written = /\*\*Written:\*\*\s*(\d{4}-\d{2}-\d{2})/.exec(md)?.[1];
+  const html = brandedPdfHtml(renderMarkdown(md), {
+    title: title ?? h1 ?? base.split("/").pop() ?? "Document",
+    subtitle,
+    generatedOn: generatedOn ?? written ?? "",
+  });
+  printPdf(html, base.split("/").pop() ?? "doc", `${base}.pdf`, chrome);
 }
 
 function main() {
+  const argv = process.argv.slice(2);
+  const fileAt = argv.indexOf("--file");
+  if (fileAt !== -1) {
+    const src = argv[fileAt + 1];
+    const titleAt = argv.indexOf("--title");
+    const subAt = argv.indexOf("--subtitle");
+    const dateAt = argv.indexOf("--date");
+    if (!src) {
+      console.error(
+        'Usage: pnpm gen:pdfs --file <path.md> [--title "..."] [--subtitle "..."] [--date YYYY-MM-DD]',
+      );
+      process.exit(1);
+    }
+    generateFile(
+      src,
+      findChrome(),
+      titleAt === -1 ? undefined : argv[titleAt + 1],
+      subAt === -1 ? undefined : argv[subAt + 1],
+      dateAt === -1 ? undefined : argv[dateAt + 1],
+    );
+    return;
+  }
+
   const only = process.argv[2];
   const docs = only ? DOWNLOAD_DOCS.filter((d) => d.slug === only) : DOWNLOAD_DOCS;
   if (docs.length === 0) {

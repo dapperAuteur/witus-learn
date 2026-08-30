@@ -1,4 +1,3 @@
-import { readFileSync } from "node:fs";
 import { allSeedEntries } from "./lib/seed-registry";
 import { allAlignedCourseSlugs } from "../src/lib/standards/index";
 

@@ -19,6 +19,21 @@ carry the fact-checks, and there are a lot of fact-checks.
 
 ---
 
+> ## ✅ APPLIED TO THE CALENDAR, 2026-08-07
+> All 14 errors below, plus the Hobson/Starbucks staleness, are **fixed in
+> \`gemini/witus/plans/social-media/Work_WitUS_SheClockedIn_YearLong_Calendar.md\`.** Each fix carries
+> an inline \`<!-- FACT-CHECK 2026-08-07 -->\` comment naming the error number and what was wrong, so
+> the correction can't be silently reverted by someone reading only the surrounding copy.
+> **Three items need BAM, not Claude:**
+> 1. **Amy Purdy's month placement.** She is Colorado-based, not Flagstaff, which collapses the
+>    premise of her Arizona episode. The month slot was left untouched; pick a resolution.
+> 2. **Jayne Kennedy's Emmy year.** Corrected to "early 1980s"; the exact year still needs a source.
+> 3. **Beth Mowins's 2017 booth partner.** The calendar said Jay Feeley. That was outside this
+>    audit's scope and could not be confirmed, so the name was removed rather than replaced.
+>
+> Duckworth's Character Lab closure and Nelson's unverifiable Time 100 credit **did not appear in
+> the calendar**, they only affect the seed files in this directory, and are still open there.
+
 ## ⚠️ Read this first: the calendar contains 14 factual errors
 
 I had every claim in the calendar independently verified. **Fourteen came back wrong, stale, or
