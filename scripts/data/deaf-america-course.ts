@@ -666,5 +666,768 @@ Stokoe, W. C. (1960). *Sign language structure: An outline of the visual communi
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — Black ASL, the centre of the course
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-schools-that-made-a-variety",
+      title: "3 \u00b7 The schools that made a variety",
+      section: "Section 2 · Black ASL: the schools, the policy split, and what the project found",
+      body: `A language variety is made by who talks to whom, and for Deaf children in the American South that was decided by law.
+
+**The separate schools, and how long they ran.** Beginning in **1869**, seventeen states and the District of Columbia operated separate schools, or separate departments inside existing schools, for Black Deaf children. The last of them opened in **Louisiana in 1938**. *Brown v. Board of Education* was decided in **1954**; most of these schools resisted it, integrating only in the **mid-1960s**, and Louisiana held out until **1978**. Read those dates together: a system that began four years after the Civil War ended was still running, in one state, into the era of the personal computer.
+
+**The policy split, which is the whole mechanism.** The obvious assumption is that the Black schools, being underfunded, gave their students a worse version of the language. The documented history runs the other way, and the reason is a difference in *teaching policy* rather than in money. White schools in this period were in the grip of **oralism**: signing was restricted or forbidden, and children were to be taught to speak and lipread. The Black schools, poorer and offering narrower vocational programmes, **kept teaching in sign, with Deaf instructors** (Lucas et al., 2022).
+
+**So the neglect had a linguistic consequence nobody intended.** The institution that was denied resources was also, by being denied attention, left alone with its language. What the students there received was less of almost everything, and more of one thing: continuous access to a signed language from adults who used it.
+
+**Then integration arrived and the two groups could not easily understand each other.** When the schools merged in the 1960s and 1970s, Black and white Deaf students met varieties that had developed apart for the better part of a century, and the difficulty was documented as a real communication problem, not a matter of accent (Lucas et al., 2022). Whose variety was then treated as the standard, in a school system that had just been forced to admit the students it had excluded, is not a linguistic question.
+
+:::reveal Why did the underfunded Black schools end up preserving more signing rather than less? ||| Because the difference was one of teaching policy, not budget. White schools were practising oralism and restricting signing, while the Black schools continued teaching in sign with Deaf instructors.
+
+:::reveal What happened linguistically when the schools were integrated in the 1960s and 1970s? ||| Two varieties that had developed separately for close to a century were suddenly in one room, and the resulting difficulty was documented as a genuine communication problem rather than a matter of accent.
+
+## Vocabulary
+- **Oralism**: the educational policy of teaching Deaf children to speak and lipread while restricting or forbidding signing.
+- **Variety**: a form of a language associated with a group or region, without the judgement that "dialect" often carries in ordinary speech.
+- **Language policy**: the rules an institution sets about which language may be used in it, which here did more to shape ASL than any linguist did.
+- **Vocational programme**: job-focused training, which is most of what the segregated Black schools were funded to offer.
+
+## Sources
+Lucas, C., Bayley, R., Hill, J. C., & McCaskill, C. (2022). Segregation and desegregation of the Southern schools for the deaf: The relationship between language policy and dialect development. *Language, 98*(4), e173-e198. https://doi.org/10.1353/lan.2022.0027
+McCaskill, C., Lucas, C., Bayley, R., & Hill, J. C. (2011). *The hidden treasure of Black ASL: Its history and structure*. Gallaudet University Press. ISBN 9781563684890`,
+    },
+    {
+      slug: "what-the-black-asl-project-found",
+      title: "4 \u00b7 What the Black ASL Project found, and what it did not claim",
+      section: "Section 2 · Black ASL: the schools, the policy split, and what the project found",
+      body: `Black ASL was used for generations before anyone systematically described it. The description arrived in **2011**.
+
+**The study.** The Black ASL Project began in **2007**, funded by the Spencer Foundation and the National Science Foundation. It interviewed **96 Deaf African American participants** in **six of the seventeen states** that had run segregated schools, in **two age groups**: over 55, and under 35. The two cohorts are the design of the thing. Signers over 55 attended the segregated schools; signers under 35 did not, so the comparison can show what changed after integration rather than merely what differs.
+
+**The central finding, which inverts the usual assumption.** Black signers, older and younger alike, were found to use **more traditional and more standardised forms** than their white counterparts in the same regions. The variety that had been dismissed as broken turned out to have conserved older forms, precisely because its schools had never stopped signing (McCaskill et al., 2011; Lucas et al., 2022).
+
+**What was actually analysed.** The project's published analyses include the use of **two-handed forms** of signs that appear one-handed elsewhere, **role shift**, and the influence of **African American English** on signing. Those are specific, countable features, which is what makes the claim checkable rather than impressionistic.
+
+**Now the part a course should not smooth over: what this evidence can and cannot support.** Six states of seventeen. Ninety-six people. Two age bands with a gap in the middle. That is a real study and a serious one, and it is also a *sample*, so it is honest to say that it establishes the existence and some structure of the variety far better than it establishes a complete grammar or the situation in the eleven states nobody interviewed. Reporting a study's scope is not undermining it. Overstating it is how a finding becomes folklore.
+
+**Why "hidden treasure" is the right phrase and not a flourish.** The variety was in continuous use, in public, for over a century, by people who knew exactly what they were doing with it. It was hidden only from the record, and only because of who was keeping the record. That is this catalog's subject operating on a language.
+
+:::reveal What is the Black ASL Project's central finding about how Black signers sign? ||| That Black signers, both older and younger, use more traditional and more standardised forms than white signers in the same regions, which reverses the assumption that the variety was a degraded one.
+
+:::reveal Why does the course state the study's sample size and state coverage rather than only its conclusions? ||| Because six of seventeen states and 96 participants strongly support the existence and some structure of the variety, but not a complete grammar or the states nobody interviewed, and overstating a finding is how it turns into folklore.
+
+## Vocabulary
+- **Role shift**: a grammatical device in which a signer takes on the perspective of a character, marked by body and eye-gaze shifts rather than by a quotative word.
+- **Two-handed form**: a sign produced with both hands where another variety produces it with one, one of the countable features the project analysed.
+- **Cohort**: an age band sampled deliberately, here over-55 and under-35, so that schooling before or after integration is what separates the groups.
+- **Standardised form**: a form closer to the widely documented citation form of a sign, which the project found more often among Black signers.
+- **African American English**: a rule-governed variety of English whose influence on Black ASL the project examined directly.
+
+## Sources
+McCaskill, C., Lucas, C., Bayley, R., & Hill, J. C. (2011). *The hidden treasure of Black ASL: Its history and structure*. Gallaudet University Press. ISBN 9781563684890
+Lucas, C., Bayley, R., Hill, J. C., & McCaskill, C. (2022). Segregation and desegregation of the Southern schools for the deaf: The relationship between language policy and dialect development. *Language, 98*(4), e173-e198. https://doi.org/10.1353/lan.2022.0027
+University of Pennsylvania, American Sign Language and Deaf Studies. (n.d.). *Dr. Ceil Lucas and Dr. Carolyn McCaskill: "Black ASL: A historical and linguistic overview"* [Lecture announcement]. https://web.sas.upenn.edu/asl-deafstudies/asl-lecture-series/dr-ceil-lucas-and-dr-carolyn-mccaskill-black-asl-a-historical-and-linguistic-overview/`,
+    },
+    {
+      slug: "section-2-quiz",
+      title: "Section 2 quiz \u00b7 Black ASL, the schools and the findings",
+      section: "Section 2 · Black ASL: the schools, the policy split, and what the project found",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "In what year did the first separate school or department for Black Deaf children open?",
+            options: [
+              "1869",
+              "1938, the year the very last such school in the country was established in Louisiana",
+              "1954, the year Brown v. Board of Education was decided by the Supreme Court",
+              "1978, the year the final holdout school in Louisiana was ordered to integrate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1869, four years after the Civil War ended. The other three dates are all real dates in this history, which is why they make good distractors: 1938 is the last opening, 1954 is Brown, and 1978 is Louisiana's integration.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "Which state was the last to integrate its schools for Deaf students?",
+            options: [
+              "Louisiana",
+              "Alabama, which had opened the earliest of the seventeen segregated schools",
+              "Texas, whose Deaf school system was the largest of the segregated group",
+              "Virginia, where the District of Columbia schools were legally administered",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Louisiana held out until 1978, twenty-four years after Brown. The other options name states in the region but none of them was the final holdout.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "Why did the underfunded Black schools preserve more signing than the better-funded white schools?",
+            options: [
+              "The white schools were practising oralism",
+              "The Black schools received targeted federal grants specifically earmarked for sign-language instruction",
+              "The Black schools enrolled far more students, which made speech training impractical to deliver",
+              "The white schools had not yet been introduced to American Sign Language in this period",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The difference was teaching policy, not money: white schools restricted or forbade signing under oralism, while the Black schools kept teaching in sign with Deaf instructors. No such federal grants existed, enrolment was not the driver, and ASL was long established in white schools by then.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "What is oralism?",
+            options: [
+              "Teaching Deaf children to speak and lipread while restricting signing",
+              "A method of teaching sign language by having Deaf adults model signs for hearing parents at home",
+              "The practice of recording Deaf community histories through spoken interviews with hearing interpreters",
+              "A nineteenth-century theory that signed languages descend directly from spoken ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Oralism is the educational policy that children should be taught speech and lipreading, with signing restricted or forbidden. It is the policy that produced the split this section describes.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "What happened linguistically when the schools were integrated?",
+            options: [
+              "Two long-separated varieties met and understanding was genuinely difficult",
+              "The two groups discovered their varieties were identical, since both descended from the same school",
+              "Black ASL disappeared within a single school year once the schools were combined",
+              "Teachers introduced a new constructed sign system to bridge the two groups",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Varieties that had developed apart for close to a century met at once, and the difficulty was documented as a real communication problem rather than an accent. Black ASL did not disappear, and no bridging system was introduced.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "How many participants did the Black ASL Project interview?",
+            options: [
+              "96",
+              "Just over 500, drawn from every state that had operated a segregated school",
+              "Fewer than 20, since the project was designed as a set of in-depth case studies",
+              "Roughly 2,000, using a written questionnaire distributed through Deaf clubs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ninety-six Deaf African American participants. The scale matters in both directions: large enough to be a real study, small enough that the course states it rather than implying a census.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "How many of the seventeen states did the project actually interview in?",
+            options: [
+              "Six",
+              "All seventeen, plus the District of Columbia, so the coverage was complete",
+              "Two, chosen because they had the oldest surviving school records",
+              "Eleven, the states that had integrated before 1970",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six of seventeen. The course prints that because it bounds what the study can support: it establishes the variety's existence and structure well, and says nothing direct about the eleven states nobody visited.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "What was the Black ASL Project's central finding about how Black signers sign?",
+            options: [
+              "They use more traditional and standardised forms",
+              "They use a simplified grammar with fewer non-manual markers than other signers",
+              "They borrow most of their vocabulary directly from British Sign Language",
+              "They sign in English word order because of the vocational school curriculum",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Black signers, older and younger, were found to use more traditional and more standardised forms than white signers in the same regions, which reverses the assumption that the variety was degraded. The other options describe things the project did not find.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "Why were the project's two age groups chosen as over-55 and under-35?",
+            options: [
+              "So schooling before or after integration separates the groups",
+              "Because those were the only age bands for which school enrolment records still survived",
+              "To match the age brackets used by the United States Census for language questions",
+              "Because signers between 35 and 55 were found to have no distinctive features",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The older cohort attended the segregated schools and the younger did not, so the comparison can show what changed after integration rather than merely what differs between individuals.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "Which of these did the Black ASL Project actually analyse as a countable feature?",
+            options: [
+              "Two-handed forms of signs that are one-handed elsewhere",
+              "The average number of words per minute produced by signers when interpreting spoken English",
+              "Whether participants preferred capital-D Deaf or lowercase-d deaf in written self-description",
+              "The proportion of participants who had hearing parents versus Deaf parents",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two-handed forms, role shift, and the influence of African American English are the published analyses. Countable features are what make the claim checkable rather than impressionistic.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "In what year was Black ASL first systematically described in book form?",
+            options: [
+              "2011",
+              "1960, in the same work that established ASL's linguistic status in the academy",
+              "2007, the year the research project began collecting interviews",
+              "2022, when the segregation and desegregation article appeared in Language",
+            ],
+            correctIndex: 0,
+            explanation:
+              "2011, in The Hidden Treasure of Black ASL. 1960 is Stokoe on ASL generally, 2007 is when the project started, and 2022 is the later Language article, so all three are real dates that belong to other events.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "What does the course mean by calling the variety a hidden treasure rather than a lost one?",
+            options: [
+              "It was in continuous public use, hidden only from the record",
+              "It was deliberately concealed by its users to keep it from being suppressed by hearing school authorities",
+              "It survived only in written descriptions kept by teachers at the segregated schools",
+              "It was reconstructed from archival film after falling out of everyday use",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The variety was used continuously and publicly by people who knew what they were doing with it. It was hidden from the record, and only because of who was keeping the record.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+        ],
+      },
+    },
+    {
+      slug: "deaf-america-final",
+      title: "Final assessment \u00b7 Deaf America",
+      section: "Final assessment",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Does this course teach you to sign?",
+            options: [
+              "No, and it says so in its first lesson",
+              "Yes, through written descriptions of handshapes that a learner copies from the page",
+              "Yes, but only the fingerspelled alphabet and a small set of everyday greetings",
+              "Only the non-manual markers, since those can be conveyed without video",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It teaches history, culture, linguistics and law. No lesson asks a learner to produce or copy a sign, and the first lesson states that plainly.",
+            sourceLessonSlug: "standpoint-and-what-this-course-is",
+          },
+          {
+            prompt: "Who wrote this course, and why does the course tell you?",
+            options: [
+              "A hearing author from published sources",
+              "A Deaf co-author team whose members are named in the acknowledgements",
+              "An anonymous committee drawn from several Deaf advocacy organisations",
+              "A hearing author working under the supervision of a Deaf editorial board",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Standpoint is stated rather than implied, so a reader can weigh the account knowing who assembled it and from what.",
+            sourceLessonSlug: "standpoint-and-what-this-course-is",
+          },
+          {
+            prompt: "Why does the course teach no signs rather than including sign video?",
+            options: [
+              "Every usable sign-media dataset bars a paid course",
+              "Video files were judged too large to serve reliably to learners on slow connections",
+              "Sign video was considered but rejected because it distracts from the historical argument",
+              "The course is intended for learners who already sign fluently",
+            ],
+            correctIndex: 0,
+            explanation:
+              "ASL-LEX carves the videos out, WLASL forbids commercial use, and ASL Citizen forbids redistribution. The constraint is licensing, established by reading the licence text.",
+            sourceLessonSlug: "standpoint-and-what-this-course-is",
+          },
+          {
+            prompt: "What kind of language is American Sign Language?",
+            options: [
+              "A natural language with its own grammar",
+              "A manual encoding of English designed to be learned alongside written English",
+              "A universal signed system understood by Deaf people in every country",
+              "A gestural pidgin that developed from hearing people's improvised signs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It arose in a community, is acquired by children from the people around them, changes over time, and has a grammar that is not English grammar. Nothing about it was designed.",
+            sourceLessonSlug: "a-language-not-a-code",
+          },
+          {
+            prompt: "Which 1960 work is credited with establishing ASL's linguistic status in the American academy?",
+            options: [
+              "Stokoe's Sign Language Structure",
+              "The Hidden Treasure of Black ASL, which appeared in the same year under a different title",
+              "The proceedings of the Milan Congress, republished with linguistic commentary",
+              "The first Gallaudet dictionary of American Sign Language idioms",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stokoe analysed signs as combinations of smaller meaningless parts rather than as pictures. Deaf people had used the language for a century and a half by then.",
+            sourceLessonSlug: "a-language-not-a-code",
+          },
+          {
+            prompt: "What is a manual code such as Signed Exact English?",
+            options: [
+              "A constructed system putting English on the hands",
+              "An older regional variety of ASL still used in parts of the American South",
+              "The set of non-manual markers that carry grammar on the face and upper body",
+              "A transcription notation linguists use to write signs down on paper",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It was built deliberately to follow English word order with invented markers for English endings. It is a code for a spoken language, not a language.",
+            sourceLessonSlug: "a-language-not-a-code",
+          },
+          {
+            prompt: "Are ASL and British Sign Language mutually intelligible?",
+            options: [
+              "No, they are separate languages",
+              "Yes, because both developed in English-speaking countries",
+              "Yes for everyday vocabulary, though their grammars differ substantially",
+              "Only in fingerspelling, since both use the same manual alphabet",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A signed language tracks the community that used it, not the spoken language around it. ASL's documented ancestry runs to French Sign Language.",
+            sourceLessonSlug: "a-language-not-a-code",
+          },
+          {
+            prompt: "In ASL, what do brow position, head tilt and eye gaze carry?",
+            options: [
+              "Grammar",
+              "Emphasis only, in the way a speaker's tone of voice adds feeling",
+              "Regional accent, which is how varieties are told apart",
+              "Nothing systematic; they vary freely between individual signers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Non-manual markers mark question forms, topics, negation and adverbial meaning. Reading them as emotional expression throws away the grammatical layer.",
+            sourceLessonSlug: "a-language-not-a-code",
+          },
+          {
+            prompt: "Why does the course report the world count of signed languages as attributed rather than as fact?",
+            options: [
+              "It could not reach the original source",
+              "Because the figure changes every year as new languages are recognised",
+              "Because counting signed languages is forbidden by the World Federation of the Deaf",
+              "Because the count is disputed between two named research groups",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The figure commonly attributed to the World Federation of the Deaf could not be retrieved from the Federation's own current statement, so it is reported as attributed and filed for someone who can reach it.",
+            sourceLessonSlug: "a-language-not-a-code",
+          },
+          {
+            prompt: "Beginning in which year did separate schools for Black Deaf children operate?",
+            options: [
+              "1869",
+              "1938, when the last of the seventeen state systems was finally established",
+              "1954, immediately following the Brown v. Board of Education decision",
+              "1880, the year of the Milan Congress on the education of the deaf",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1869, four years after the Civil War ended. The other dates belong to other events in this same history.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "How many states, plus the District of Columbia, ran separate provision for Black Deaf children?",
+            options: [
+              "Seventeen",
+              "Six, all of them in the Deep South and all documented by the Black ASL Project",
+              "Eleven, corresponding to the states of the former Confederacy",
+              "Twenty-four, including several outside the South",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Seventeen states and DC. Six is the number the Black ASL Project actually interviewed in, which is a different figure and a common confusion.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "Which state integrated its Deaf schools last, and in what year?",
+            options: [
+              "Louisiana, in 1978",
+              "Alabama, in 1965, after a federal court order specific to Deaf education",
+              "Mississippi, in 1970, the last year covered by the project's archival research",
+              "Texas, in 1972, following a state legislative reorganisation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Louisiana held out until 1978, twenty-four years after Brown v. Board of Education was decided in 1954.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "What was the mechanism that left Black schools signing while white schools did not?",
+            options: [
+              "Teaching policy, not funding",
+              "A shortage of speech therapists willing to work in segregated institutions",
+              "Federal desegregation orders that required sign instruction in Black schools",
+              "The absence of any written curriculum in the underfunded schools",
+            ],
+            correctIndex: 0,
+            explanation:
+              "White schools restricted or forbade signing under oralism; the Black schools continued teaching in sign with Deaf instructors. The neglect had a linguistic consequence nobody intended.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "What does oralism describe?",
+            options: [
+              "Teaching speech and lipreading while restricting signing",
+              "The oral transmission of Deaf community history between generations",
+              "A signed system that follows the word order of the spoken language",
+              "The practice of interpreting spoken lectures into sign for Deaf students",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the educational policy that produced the split between the white and Black schools in this period.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "What did integration in the 1960s and 1970s produce linguistically?",
+            options: [
+              "Documented difficulty understanding across the two varieties",
+              "Rapid convergence, with both groups adopting a shared standard within a year",
+              "No measurable effect, since both varieties had remained essentially identical",
+              "A new constructed system introduced by teachers to bridge the gap",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Varieties that had developed apart for close to a century met at once, and the difficulty was recorded as a genuine communication problem rather than an accent.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "When did the Black ASL Project begin collecting interviews?",
+            options: [
+              "2007",
+              "2011, the year its findings were published in book form",
+              "1960, alongside the first linguistic work on ASL generally",
+              "2022, when its segregation and desegregation analysis appeared",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The project began in 2007, funded by the Spencer Foundation and the National Science Foundation, and published in 2011.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "How many Deaf African American participants did the project interview?",
+            options: [
+              "96",
+              "Around 500, sampled proportionally across all seventeen states",
+              "Fewer than 20, since it was designed as a set of case studies",
+              "About 2,000, through a written questionnaire circulated to Deaf clubs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ninety-six participants, in six states, in two age cohorts. The course prints the number because it bounds what the study can support.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "Which two age groups did the project sample, and why?",
+            options: [
+              "Over 55 and under 35, to separate schooling before and after integration",
+              "Under 18 and over 65, to capture the youngest and oldest living signers",
+              "Every decade band from 20 to 80, to trace change continuously",
+              "Only signers over 55, since younger signers were assumed to use mainstream ASL",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The older cohort attended the segregated schools and the younger did not, so the comparison shows what changed after integration rather than what merely differs between individuals.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "What did the project find about the forms Black signers use?",
+            options: [
+              "More traditional and standardised forms",
+              "A simplified grammar with markedly fewer non-manual markers",
+              "Heavy borrowing of vocabulary from British Sign Language",
+              "Consistent use of English word order learned in vocational classes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Older and younger Black signers alike used more traditional and standardised forms than white signers in the same regions, reversing the assumption that the variety was degraded.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "Which feature did the project analyse as countable evidence?",
+            options: [
+              "Two-handed forms of signs that are one-handed elsewhere",
+              "Signing speed measured in signs produced per minute",
+              "Whether participants wrote Deaf with a capital or lowercase d",
+              "The proportion of participants with Deaf rather than hearing parents",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two-handed forms, role shift, and the influence of African American English are the published analyses. Countable features are what make the claim checkable.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "What is role shift?",
+            options: [
+              "Taking on a character's perspective through body and gaze",
+              "Switching between ASL and a manual English code within one conversation",
+              "A teacher and student exchanging positions during signed instruction",
+              "The historical shift of Deaf schools from residential to day programmes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a grammatical device marked by body and eye-gaze shifts rather than by a quotative word, and one of the features the project examined.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "Why does the course state the study's sample size and state coverage?",
+            options: [
+              "Because a sample bounds what a finding can support",
+              "Because the authors required that any citation reproduce their methods section",
+              "Because the study has been challenged and the numbers are disputed",
+              "Because the figures are the study's most surprising result",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six states of seventeen and 96 participants establish the variety's existence and structure well, and say nothing direct about the eleven states nobody visited. Overstating a finding is how it becomes folklore.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "In what year was Black ASL first systematically described in book form?",
+            options: [
+              "2011",
+              "1960, in the work that established ASL's status in the academy",
+              "2007, when the interviews began",
+              "1978, when the last segregated school integrated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "2011, in The Hidden Treasure of Black ASL. The other dates are real dates belonging to other events in this history.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "Why is hidden treasure a precise description rather than a flourish?",
+            options: [
+              "It was used publicly for a century, hidden only from the record",
+              "It was concealed deliberately by signers to protect it from hearing authorities",
+              "It survived only in teachers' written notes at the segregated schools",
+              "It was reconstructed from archival film after falling out of use",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The variety was in continuous public use by people who knew what they were doing with it. It was hidden from the record, and only because of who was keeping the record.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "What is a language variety, as this course uses the word?",
+            options: [
+              "A form of a language tied to a group or region",
+              "A language that has not yet been described by linguists",
+              "A constructed system built from an existing language",
+              "Any form of a language that departs from a written standard",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course prefers variety to dialect because dialect carries a judgement in ordinary speech that the linguistic term does not.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "Which of these is a natural language?",
+            options: [
+              "American Sign Language",
+              "Signed Exact English",
+              "The manual alphabet used for fingerspelling",
+              "Stokoe notation, the system for writing signs on paper",
+            ],
+            correctIndex: 0,
+            explanation:
+              "ASL arose in a community and is acquired by children from those around them. The other three were constructed for a purpose.",
+            sourceLessonSlug: "a-language-not-a-code",
+          },
+          {
+            prompt: "What does the course say about the gap between a thing being true and the academy agreeing?",
+            options: [
+              "It is roughly 140 years in ASL's case",
+              "It is a gap of about twenty years, typical for language research",
+              "It did not occur here, since Deaf educators published early findings themselves",
+              "The course avoids the question as unanswerable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Deaf people had used ASL for a century and a half before Stokoe's 1960 work is credited with establishing its linguistic status in the American academy.",
+            sourceLessonSlug: "a-language-not-a-code",
+          },
+          {
+            prompt: "What did the Black schools offer that the white schools of the period restricted?",
+            options: [
+              "Continuous access to a signed language from adults who used it",
+              "Newer facilities and better-funded vocational equipment",
+              "Formal instruction in written English composition",
+              "Speech therapy delivered by specialist teachers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They were denied resources and, by being denied attention, left alone with their language. That is the mechanism the section describes.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "How does the course handle a contested claim?",
+            options: [
+              "It names the holders of each position",
+              "It reports the majority view and omits the minority one",
+              "It declines to teach contested material at all",
+              "It presents both sides without identifying who holds them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Naming the holders is what lets a reader go and check the argument rather than being handed a verdict the author reached privately.",
+            sourceLessonSlug: "standpoint-and-what-this-course-is",
+          },
+          {
+            prompt: "What does the course require before it will state someone's identity?",
+            options: [
+              "A public self-statement with a citation",
+              "Confirmation from a recognised Deaf organisation",
+              "Agreement between at least three published biographies",
+              "Nothing, since identity is treated as a matter of record",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Deaf identity is an identity claim, and the course applies the same rule it applies elsewhere in this catalog.",
+            sourceLessonSlug: "standpoint-and-what-this-course-is",
+          },
+          {
+            prompt: "Where does the course tell a reader to go to learn ASL?",
+            options: [
+              "To Deaf teachers",
+              "To the sign-media datasets the course consulted for its research",
+              "To the manual codes described in the second lesson",
+              "To the archival film held by the segregated schools",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course does not teach signing, states that in lesson one, and points to Deaf teachers instead.",
+            sourceLessonSlug: "standpoint-and-what-this-course-is",
+          },
+          {
+            prompt: "What happened to signing in white Deaf schools during the segregation era?",
+            options: [
+              "It was restricted or forbidden",
+              "It was formally taught as a second language alongside speech",
+              "It was permitted only outside the classroom, in dormitories",
+              "It was replaced entirely by Signed Exact English",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Oralism held that children should be taught speech and lipreading, and signing was restricted or forbidden as a matter of policy.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "What does the 2022 Language article connect to dialect development?",
+            options: [
+              "Language policy",
+              "Funding levels in the segregated school systems",
+              "Migration patterns of Deaf families after the Second World War",
+              "The introduction of televised sign interpretation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its subject is the relationship between the policy a school set about which language could be used and the variety that resulted.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "Which is true of the seventeen jurisdictions in this history?",
+            options: [
+              "Some ran separate departments rather than separate schools",
+              "All seventeen built entirely separate physical campuses",
+              "All of them integrated within five years of Brown v. Board",
+              "None of them admitted Black Deaf students before 1900",
+            ],
+            correctIndex: 0,
+            explanation:
+              "They operated separate schools or separate departments inside existing schools, and most resisted Brown until the mid-1960s.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "What funded the Black ASL Project?",
+            options: [
+              "The Spencer Foundation and the National Science Foundation",
+              "Gallaudet University's own endowment, with no external grants",
+              "The Department of Education, under a desegregation compliance programme",
+              "A consortium of the six state schools where interviews took place",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both funders are named in the project's own public description of its work.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "Why can the project say something about change over time from a single round of interviews?",
+            options: [
+              "Because it sampled two cohorts schooled either side of integration",
+              "Because it re-interviewed the same participants at five-year intervals",
+              "Because it compared its recordings against archival film from the 1930s",
+              "It cannot; the project describes only the present-day variety",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sampling over-55 and under-35 signers lets the comparison stand in for change across the integration boundary without waiting decades.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "What assumption does the project's central finding overturn?",
+            options: [
+              "That the segregated schools produced a degraded variety",
+              "That Black ASL and mainstream ASL are separate languages",
+              "That signing survived in white schools throughout the period",
+              "That the variety had died out before it could be recorded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The variety dismissed as broken turned out to have conserved older and more standardised forms, precisely because its schools never stopped signing.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "Which pairing correctly matches a date to its event?",
+            options: [
+              "1954, Brown v. Board of Education",
+              "1869, the Milan Congress on the education of the deaf",
+              "1938, the Supreme Court decision requiring school integration",
+              "1978, the founding of the first separate school for Black Deaf children",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Brown was decided in 1954. 1869 is the first separate provision, 1938 is the last school to open, and 1978 is Louisiana's integration.",
+            sourceLessonSlug: "the-schools-that-made-a-variety",
+          },
+          {
+            prompt: "What is African American English, as the project treats it?",
+            options: [
+              "A rule-governed variety of English",
+              "An informal register used only in casual speech",
+              "A creole descended directly from West African languages",
+              "A manual code developed in the segregated Deaf schools",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The project examined its influence on Black ASL directly, which requires treating it as rule-governed rather than as error.",
+            sourceLessonSlug: "what-the-black-asl-project-found",
+          },
+          {
+            prompt: "Why does a signed language descend from a community rather than from the spoken language around it?",
+            options: [
+              "Because it is transmitted between the people who use it",
+              "Because signed languages are designed to be independent of speech",
+              "Because spoken and signed languages use unrelated parts of the brain",
+              "Because national governments assign each community a signed language",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is why ASL's documented ancestry runs to French Sign Language, and why ASL and BSL are not mutually intelligible despite both being used in English-speaking countries.",
+            sourceLessonSlug: "a-language-not-a-code",
+          },
+        ],
+      },
+    },
   ],
 };
