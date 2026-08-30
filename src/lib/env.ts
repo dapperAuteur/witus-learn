@@ -1,4 +1,9 @@
 import { z } from "zod";
+import { silentSsoEndpointFromDiscovery } from "./silent-sso";
+
+/** Mirrors the discovery-URL fallback src/lib/auth.ts already ships; keep the two in step. */
+const WITUS_OIDC_DISCOVERY_FALLBACK =
+  "https://accounts.witus.online/api/idp/.well-known/openid-configuration";
 
 const schema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
@@ -74,6 +79,15 @@ const schema = z.object({
   CRON_SECRET: z.string().min(16).optional(),
   DEMO_VISITOR_PASSWORD: z.string().min(8).optional(),
   DEMO_VISITOR_USER_EMAIL: z.string().email().optional(),
+
+  // Ecosystem SSO (accounts.witus.online). The OIDC client id/secret are read straight from
+  // process.env in src/lib/auth.ts (the provider is only registered when they exist); these two are
+  // validated here because the silent "Continue as ..." check on the login page derives its endpoint
+  // from them. WITUS_SSO_SESSION_URL is the IdP's own session route and always wins when set: that
+  // path is owned by accounts.witus.online, not by this repo, so an explicit value beats a derived
+  // one. See src/lib/silent-sso.ts.
+  WITUS_OIDC_DISCOVERY_URL: z.string().url().optional(),
+  WITUS_SSO_SESSION_URL: z.string().url().optional(),
 
   // Ecosystem integrations (optional; features no-op until set).
   FLASHLEARN_ECO_API_KEY: z.string().optional(),
@@ -197,3 +211,19 @@ export const hasVercelDomains = Boolean(env.VERCEL_API_TOKEN && env.VERCEL_PROJE
 export const hasVercelWildcard = env.VERCEL_WILDCARD_DOMAIN === "true";
 /** Sentry is wired to receive events (a DSN is set). Without it the SDK is inert. */
 export const hasSentry = Boolean(env.SENTRY_DSN || env.NEXT_PUBLIC_SENTRY_DSN);
+
+/**
+ * Where the login page's silent "Continue as ..." check asks the WitUS IdP who the browser is.
+ *
+ * `null` (the feature stays dark) unless the ecosystem OIDC client is actually configured, because
+ * an affordance the visitor cannot complete is worse than no affordance. The URL itself is either
+ * set explicitly or DERIVED from the discovery URL this app already points at, so nothing new about
+ * accounts.witus.online is asserted here. See src/lib/silent-sso.ts for the whole design, and note
+ * the IdP must also allow this origin with credentials or the probe simply answers nothing.
+ */
+export const witusSilentSsoEndpoint: string | null = process.env.WITUS_OIDC_CLIENT_ID
+  ? (env.WITUS_SSO_SESSION_URL ??
+    silentSsoEndpointFromDiscovery(
+      env.WITUS_OIDC_DISCOVERY_URL ?? WITUS_OIDC_DISCOVERY_FALLBACK,
+    ))
+  : null;

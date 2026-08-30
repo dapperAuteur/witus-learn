@@ -21,6 +21,11 @@ import { cohorts } from "./cohorts";
 // where the lesson is. It is not a notification, not an inbox, and it never goes to email. The
 // moment it does, this becomes messaging, with the safeguarding obligations that word carries.
 //
+// Scope (2026-08-30): a note hangs off a LESSON (the common case) or off the COURSE itself when
+// lesson_id is NULL. Both key off stable UUIDs rather than array positions, so a lesson re-seed
+// (`lessons` upserts by (course_id, slug)) never moves or orphans a learner's notes. A course
+// note is always personal — see lesson_notes_teacher_lesson_chk below.
+//
 // Anchoring (plans/61 §2): quote + ~30 chars of context either side + a content-derived block id
 // emitted by the renderer. All nullable — a note with no quote is a lesson-level note. There is
 // deliberately NO orphaned_at column: whether the quoted text still exists in the lesson is
@@ -36,9 +41,20 @@ export const lessonNotes = pgTable(
     courseId: uuid("course_id")
       .notNull()
       .references(() => courses.id, { onDelete: "cascade" }),
-    lessonId: uuid("lesson_id")
-      .notNull()
-      .references(() => lessons.id, { onDelete: "cascade" }),
+    /** The lesson a note is attached to, or NULL for a COURSE-level note (2026-08-30).
+     *
+     *  A learner wants two different things and only one of them was built: a note about the
+     *  passage in front of them, and a note about the course as a whole ("come back to the
+     *  worksheet in section 3", "ask about the 1948 figure"). The second has no lesson to hang
+     *  on, so lesson_id is nullable rather than pointed at a fake lesson row.
+     *
+     *  Both kinds key off the lesson's/course's stable UUID, never an array position, so a
+     *  re-seed (`lessons` upserts by (course_id, slug)) keeps every note where its author put it.
+     *
+     *  A course-level note is always `kind = 'personal'`: a TEACHER note is content attached to a
+     *  lesson, visible where that lesson is (the plans/59 guardrail against becoming an inbox),
+     *  and lesson_notes_teacher_lesson_chk below makes that a database fact, not a convention. */
+    lessonId: uuid("lesson_id").references(() => lessons.id, { onDelete: "cascade" }),
     authorId: text("author_id")
       .notNull()
       .references(() => users.id, { onDelete: "cascade" }),
@@ -70,6 +86,13 @@ export const lessonNotes = pgTable(
     check(
       "lesson_notes_audience_chk",
       sql`(${t.kind} = 'teacher') = (${t.cohortId} is not null)`,
+    ),
+    // A course-level note (lesson_id IS NULL) is personal-only. A teacher note without a lesson
+    // would be an announcement with no place to live, which is the first step toward the inbox
+    // plans/59 rules out; the constraint means no future route can create one by accident.
+    check(
+      "lesson_notes_teacher_lesson_chk",
+      sql`${t.kind} <> 'teacher' or ${t.lessonId} is not null`,
     ),
   ],
 );

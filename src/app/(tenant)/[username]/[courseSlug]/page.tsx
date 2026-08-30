@@ -43,6 +43,7 @@ import { AgeGate } from "@/components/age-gate";
 import { brandName } from "@/lib/branding";
 import { CourseStandards } from "@/components/course-standards";
 import { CourseSearch } from "@/components/course-search";
+import { CourseNotesPanel } from "@/components/course-notes-panel";
 import { ComingSoonCourseFace } from "@/components/coming-soon-course";
 import { UnvettedDisclosure } from "@/components/unvetted-disclosure";
 import { CertAffiliationNotice } from "@/components/cert-affiliation-notice";
@@ -622,6 +623,13 @@ export default async function CourseBySlugPage({ params }: Params) {
           <h2 className="mb-3 text-lg font-semibold">Search this course</h2>
           <CourseSearch courseId={course.id} basePath={base} />
         </section>
+      ) : null}
+
+      {/* Notes about the COURSE as a whole (2026-08-30). Private to the author, always; the
+          per-lesson and per-passage notes live on each lesson page. Gated exactly like the search
+          box above, and the API enforces the same gate server-side rather than trusting this. */}
+      {view.isEnrolled || isEditor || view.isAuditor ? (
+        <CourseNotesPanel courseId={course.id} />
       ) : null}
 
       {/* Offline downloads. The provider is a CLIENT component; the syllabus below is SERVER JSX
