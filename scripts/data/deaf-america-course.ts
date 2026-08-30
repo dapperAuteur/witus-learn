@@ -1313,6 +1313,547 @@ University of Pennsylvania, American Sign Language and Deaf Studies. (n.d.). *Dr
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — The founding, and the congress that tried to undo it
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "hartford-1817",
+      title: "5 \u00b7 Hartford, 1817, and why ASL's ancestry is French",
+      section: "Section 3 · Hartford 1817, Milan 1880, and the century between",
+      body: `Section 1 said ASL's documented ancestry runs to French Sign Language rather than to English. This is where that gets settled.
+
+**The founding.** The **American School for the Deaf** opened in Hartford, Connecticut, on **15 April 1817**, in rooms at Bennett's City Hotel. It was the work of three people: **Thomas Hopkins Gallaudet**, a hearing minister; **Mason Cogswell**, a physician whose daughter Alice was Deaf; and **Laurent Clerc**, a Deaf Frenchman who had been a pupil and then a teacher at the Paris institution. It is the first permanent school for Deaf children in the United States, and the first anywhere in the western hemisphere. The first class had **seven children**, Alice Cogswell among them.
+
+**The detail that explains the language.** Gallaudet had gone to Europe to learn how Deaf children were taught. He returned with Clerc, and on the **fifty-five-day voyage** each taught the other: Clerc taught Gallaudet signs, Gallaudet taught Clerc English. So the language that took root in the first American school arrived in the hands of a Deaf French teacher, and spread outward from Hartford as its graduates founded and staffed schools elsewhere. That is why ASL is related to French Sign Language and not to British Sign Language, even though the United States and Britain share a spoken language. **A signed language descends from the people who taught it, not from the speech in the air around them.**
+
+**Note who Clerc was, precisely.** He was a Deaf teacher, and the school's founding therefore depended on Deaf expertise from the first day. Popular retellings often reduce him to Gallaudet's assistant or misdescribe his profession. The record does not support that reduction, and this course states his role plainly because who is credited with a founding is exactly the kind of thing this catalog watches.
+
+**Public money, early.** The Connecticut General Assembly made the school the **first recipient of state aid to education in America** in **1819**. In **1820** the United States Congress granted it land in the Alabama Territory, which is recorded as the **first instance of federal aid to elementary and secondary special education** in the country. A land grant as the funding instrument should look familiar to anyone who has taken this catalog's courses on the 1862 and 1890 Acts: the same tool, aimed at a different excluded group, four decades earlier.
+
+:::reveal Why is ASL related to French Sign Language rather than British Sign Language? ||| Because the language of the first permanent American school arrived with Laurent Clerc, a Deaf teacher from the Paris institution, and spread from Hartford. A signed language descends from the people who taught it, not from the spoken language around them.
+
+:::reveal What was the funding instrument in the school's 1820 federal grant, and why should it look familiar? ||| A land grant, in the Alabama Territory. It is the same instrument the 1862 and 1890 Acts used for colleges, aimed here at a different excluded group and four decades earlier.
+
+## Vocabulary
+- **American School for the Deaf**: the first permanent school for Deaf children in the United States, opened at Hartford on 15 April 1817.
+- **Laurent Clerc**: the Deaf French teacher who brought the language, and who taught Gallaudet signs on the voyage from Europe.
+- **Land grant**: a grant of public land used as a funding instrument, here in 1820 and later in the Morrill Acts for colleges.
+- **Western hemisphere first**: the school was the first for Deaf children anywhere in the Americas, not only in the United States.
+
+## Sources
+American School for the Deaf. (n.d.). *History and Cogswell Heritage House*. https://www.asd-1817.org/about/history--cogswell-heritage-house
+Connecticut Humanities. (n.d.). *Gallaudet's vision advances deaf education*. Connecticut History. https://connecticuthistory.org/gallaudets-vision-advances-deaf-education/`,
+    },
+    {
+      slug: "milan-1880",
+      title: "6 \u00b7 Milan, 1880, and the century that followed",
+      section: "Section 3 · Hartford 1817, Milan 1880, and the century between",
+      body: `Sixty-three years after Hartford, an international meeting of educators voted to take signing out of Deaf schools.
+
+**The congress.** The **Second International Congress on Education of the Deaf** met in **Milan from 6 to 11 September 1880**. It resolved that oral education was superior to manual education, and it passed a resolution against the use of sign language in schools. The wording most often reproduced declares the "incontestable superiority of speech over signs," and holds that using speech and signs together injures speech, lipreading and precision of ideas, so that the pure oral method should be preferred. **This course has not reached the 1880 proceedings themselves**, so that wording is reported as the widely reproduced text rather than as a verified quotation, exactly as the course treats the count of the world's signed languages.
+
+**Who dissented.** The delegates voting against were the **Americans and one English delegate**. Among the Americans was **Edward Miner Gallaudet** (1837-1917), son of the Hartford founder and president of the college that now bears the family name. **Alexander Graham Bell**, whose reputation elsewhere is as an inventor, was a prominent advocate on the oralist side. Note what the dissent did and did not achieve: it did not carry the vote, and American Deaf education was never converted to oralism as completely as Europe's was.
+
+**What followed.** Schools across Europe and the United States moved toward teaching speech without sign. Deaf teachers, who had been central since Clerc, were pushed out of the classrooms. **This is the policy that Section 2's white Southern schools were practising**, which is what makes the Black schools' continued signing so consequential. Milan is not background to the Black ASL story; it is the mechanism.
+
+**The formal apology, and its date.** At the **21st International Congress on Education of the Deaf, in Vancouver in 2010**, a formal apology was issued for the 1880 resolutions. One hundred and thirty years is how long the record took to be corrected, and the correction did not restore the century of teaching that was lost.
+
+:::reveal What did the Milan congress of 1880 resolve, and who voted against it? ||| That oral education was superior to manual education, with a resolution against sign language in schools. The Americans and one English delegate voted against, including Edward Miner Gallaudet.
+
+:::reveal Why does this course say Milan is the mechanism of the Black ASL story rather than its background? ||| Because oralism is precisely the policy the white Southern schools were practising while the segregated Black schools kept teaching in sign, which is what produced the two varieties.
+
+:::reveal How does the course handle the famous wording of the Milan resolutions? ||| As the widely reproduced text rather than a verified quotation, because it could not reach the 1880 proceedings themselves, the same treatment it gives the count of the world's signed languages.
+
+## Vocabulary
+- **Second International Congress on Education of the Deaf**: the Milan meeting of 6-11 September 1880 whose resolutions turned schools toward oralism.
+- **Edward Miner Gallaudet**: 1837-1917, son of the Hartford founder, college president, and one of the dissenting delegates at Milan.
+- **Pure oral method**: instruction by speech and lipreading alone, which the congress resolved should be preferred.
+- **ICED**: the International Congress on Education of the Deaf, whose 21st meeting in Vancouver in 2010 apologised for the 1880 resolutions.
+
+## Sources
+Rochester Institute of Technology. (n.d.). *Milan Resolution (1880)*. LEAD 306 Leadership in the Deaf Community InfoGuide. https://infoguides.rit.edu/deafleader/milan
+Report of the proceedings of the International Congress on the Education of the Deaf, held at Milan, September 6th-11th, 1880. [Primary source of record; not consulted directly for this lesson.]`,
+    },
+    {
+      slug: "section-3-quiz",
+      title: "Section 3 quiz \u00b7 Hartford, Milan, and the century between",
+      section: "Section 3 · Hartford 1817, Milan 1880, and the century between",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "When did the American School for the Deaf open?",
+            options: [
+              "15 April 1817",
+              "6 September 1880, the opening day of the Milan congress",
+              "1819, when Connecticut awarded it the first state aid to education",
+              "1820, the year of the federal land grant in the Alabama Territory",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It opened on 15 April 1817 in rooms at Bennett's City Hotel in Hartford. The other dates are real dates in this history that belong to other events.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "Who was Laurent Clerc?",
+            options: [
+              "A Deaf French teacher",
+              "A hearing minister who travelled to Europe to study Deaf education",
+              "A physician whose Deaf daughter prompted the school's founding",
+              "An English delegate who dissented at the Milan congress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Clerc was Deaf, had been a pupil and then a teacher at the Paris institution, and brought the language. The other three options describe Gallaudet, Cogswell, and the Milan dissent.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "What happened during the fifty-five-day voyage from Europe?",
+            options: [
+              "Clerc taught Gallaudet signs and Gallaudet taught Clerc English",
+              "Gallaudet drafted the charter that Connecticut would later approve",
+              "Clerc translated the Paris institution's curriculum into English",
+              "The two men recruited the school's first seven students by letter",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each taught the other, which is how the language of the Paris institution reached Hartford.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "Why is ASL related to French Sign Language rather than to British Sign Language?",
+            options: [
+              "Because the language arrived with a Deaf French teacher",
+              "Because British Sign Language had not yet developed in 1817",
+              "Because Britain refused to share its methods with American educators",
+              "Because French was the language of instruction in early American schools",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A signed language descends from the people who taught it, not from the spoken language around them. That is why ASL and BSL are not mutually intelligible despite a shared spoken language.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "How many children were in the school's first class?",
+            options: [
+              "Seven",
+              "Fifty-five, one for each day of the voyage",
+              "Seventeen, the number of states that later ran segregated schools",
+              "Ninety-six, the number later interviewed by the Black ASL Project",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Seven children, Alice Cogswell among them. The other numbers are real figures from elsewhere in this course.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "What was the significance of Connecticut's 1819 grant?",
+            options: [
+              "It was the first state aid to education in America",
+              "It was the first federal aid to special education",
+              "It established the school's charter as a state institution",
+              "It funded the construction of a permanent campus",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The federal land grant of 1820 is the separate first, and the course is careful to keep the two apart.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "What instrument did Congress use to aid the school in 1820?",
+            options: [
+              "A land grant in the Alabama Territory",
+              "An annual cash appropriation from the federal treasury",
+              "A tariff exemption on imported teaching materials",
+              "A charter granting the school degree-awarding powers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A land grant, the same instrument the 1862 and 1890 Morrill Acts later used for colleges, aimed here at a different excluded group four decades earlier.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "Why does the course state Clerc's role precisely?",
+            options: [
+              "Because who is credited with a founding is what this catalog watches",
+              "Because his title was disputed by the school's later historians",
+              "Because he was the only founder whose nationality is recorded",
+              "Because the record of his teaching was lost until recently",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Popular retellings reduce him to an assistant or misdescribe his profession. The school's founding depended on Deaf expertise from the first day.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "What was the first permanent school for Deaf children in the western hemisphere?",
+            options: [
+              "The American School for the Deaf",
+              "The Paris institution where Clerc trained",
+              "The National Deaf-Mute College in Washington",
+              "The school established in Louisiana in 1938",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hartford was the first anywhere in the Americas, not only in the United States.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "When and where did the Second International Congress on Education of the Deaf meet?",
+            options: [
+              "Milan, 6 to 11 September 1880",
+              "Vancouver, in 2010, at its twenty-first meeting",
+              "Hartford, in 1817, at the founding of the American School",
+              "Paris, in 1880, at the institution where Clerc had taught",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Milan, over six days in September 1880. Vancouver 2010 is where the apology was issued.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "What did the Milan congress resolve?",
+            options: [
+              "That oral education was superior to manual education",
+              "That each nation should choose its own method of instruction",
+              "That Deaf teachers should lead instruction in every school",
+              "That sign language should be standardised across Europe",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It resolved for the superiority of speech and passed a resolution against the use of sign language in schools.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "Who voted against the Milan resolutions?",
+            options: [
+              "The Americans and one English delegate",
+              "The French delegation, led by the Paris institution",
+              "A majority of the Deaf delegates present at the congress",
+              "Nobody; the resolutions passed unanimously",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The dissent did not carry the vote, but American Deaf education was never converted to oralism as completely as Europe's was.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "Which dissenting delegate was the son of the Hartford founder?",
+            options: [
+              "Edward Miner Gallaudet",
+              "Thomas Hopkins Gallaudet, who led the manual side at the congress",
+              "Laurent Clerc, returning to Europe as an American delegate",
+              "Mason Cogswell, representing the school he had helped found",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Edward Miner Gallaudet, 1837-1917, was president of the college that now bears the family name. His father Thomas Hopkins Gallaudet died in 1851 and was not at Milan, and Clerc died in 1869.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "Which figure better known as an inventor advocated for the oralist side?",
+            options: [
+              "Alexander Graham Bell",
+              "Thomas Edison, whose own deafness shaped his position",
+              "Samuel Morse, whose code was cited in the debate",
+              "Guglielmo Marconi, representing the Italian hosts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Bell was a prominent advocate of oral methods, a part of his reputation that sits alongside the telephone.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "What happened to Deaf teachers after 1880?",
+            options: [
+              "They were pushed out of classrooms",
+              "They were required to retrain in oral methods and mostly stayed",
+              "They moved into administration in the same schools",
+              "Their numbers grew, since demand for instruction rose",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Deaf teachers had been central since Clerc. Removing sign from the classroom removed them with it.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "How does Milan connect to the Black ASL story?",
+            options: [
+              "Oralism is what the white Southern schools were practising",
+              "Milan's delegates voted specifically on segregated schooling",
+              "The congress funded the first separate Black Deaf schools",
+              "Milan's resolutions were never applied in the United States",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Milan is the mechanism rather than the background: it is the policy the white schools followed while the segregated Black schools kept signing.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "When was a formal apology issued for the Milan resolutions?",
+            options: [
+              "2010, at the twenty-first ICED in Vancouver",
+              "1978, when Louisiana finally integrated its Deaf schools",
+              "1960, when Stokoe's work established ASL's linguistic status",
+              "2011, when Black ASL was first systematically described",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One hundred and thirty years after 1880. The apology did not restore the century of teaching that was lost.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "How does the course treat the famous wording of the Milan resolutions?",
+            options: [
+              "As widely reproduced text, not a verified quotation",
+              "As a verified quotation, checked against the 1880 proceedings",
+              "As a later paraphrase with no basis in the original",
+              "As disputed between two named historians",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course did not reach the 1880 proceedings, so it reports the wording as widely reproduced, the same treatment it gives the count of the world's signed languages.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "What is the pure oral method?",
+            options: [
+              "Instruction by speech and lipreading alone",
+              "Instruction in sign with speech taught as a separate subject",
+              "A method of teaching speech through written English first",
+              "The use of a manual code alongside spoken English",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The congress resolved that it should be preferred, on the grounds that combining speech and signs injured both.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "What does ICED stand for?",
+            options: [
+              "International Congress on Education of the Deaf",
+              "Institute forCed Education of the Deaf",
+              "International Council on English Deafness",
+              "Interstate Conference on Education of the Deaf",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its second meeting was Milan in 1880 and its twenty-first, in Vancouver in 2010, apologised for what the second decided.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "How long passed between the Milan resolutions and the formal apology?",
+            options: [
+              "130 years",
+              "63 years, the span between Hartford and Milan",
+              "55 years, matching the length of the Atlantic voyage",
+              "24 years, the gap between Brown and Louisiana's integration",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1880 to 2010. The other spans are real intervals from elsewhere in this course.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "How many years separated the Hartford founding from the Milan congress?",
+            options: [
+              "63",
+              "130, the span before the formal apology",
+              "24, the delay between Brown and Louisiana's integration",
+              "140, the gap before the academy accepted ASL as a language",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1817 to 1880. Sixty-three years after Deaf expertise founded American Deaf education, an international congress voted to remove it from the classroom.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "What did the American dissent at Milan actually achieve?",
+            options: [
+              "American schools were never converted as completely as Europe's",
+              "It reversed the resolutions at the following congress",
+              "It secured an exemption for schools founded before 1880",
+              "It produced no effect of any kind on later practice",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The dissent did not carry the vote, and the course is careful to say both what it failed to do and what it preserved.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "Which three people founded the American School for the Deaf?",
+            options: [
+              "Gallaudet, Cogswell and Clerc",
+              "Gallaudet, Clerc and Alice Cogswell",
+              "Edward Miner Gallaudet, Clerc and Bell",
+              "Clerc, Cogswell and the Connecticut General Assembly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Thomas Hopkins Gallaudet a hearing minister, Mason Cogswell a physician whose daughter was Deaf, and Laurent Clerc a Deaf French teacher.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "Where did the American School for the Deaf first open its doors?",
+            options: [
+              "Rooms at Bennett's City Hotel in Hartford",
+              "A purpose-built campus funded by the state",
+              "The Paris institution's American annexe",
+              "A church hall donated by Gallaudet's congregation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It began in hotel rooms; the state aid and the land grant came in 1819 and 1820.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "Why does the course connect the 1820 land grant to its own Morrill Act material?",
+            options: [
+              "Because it is the same funding instrument, used earlier",
+              "Because both grants were made in the Alabama Territory",
+              "Because the same congressional committee handled both",
+              "Because the Morrill Acts explicitly cited the 1820 precedent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A land grant aimed at an excluded group, four decades before the 1862 Act, which is the kind of continuity this catalog is built to surface.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "What was Mason Cogswell's connection to the school?",
+            options: [
+              "He was a physician whose daughter Alice was Deaf",
+              "He was the Deaf teacher who brought the language from Paris",
+              "He was the minister who travelled to Europe to study methods",
+              "He was the Connecticut legislator who secured the 1819 grant",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Alice Cogswell was among the seven children in the first class.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "Which statement about Edward Miner Gallaudet is correct?",
+            options: [
+              "He was president of the college now bearing the family name",
+              "He founded the American School for the Deaf in 1817",
+              "He was a Deaf teacher trained at the Paris institution",
+              "He chaired the Milan congress that passed the resolutions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "He lived 1837 to 1917, led the National Deaf-Mute College, and dissented at Milan. His father founded the Hartford school.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "What did the congress claim about combining speech and signs?",
+            options: [
+              "That it injured speech, lipreading and precision of ideas",
+              "That it was acceptable in early years but not in later ones",
+              "That it should be decided school by school",
+              "That it produced better outcomes than either method alone",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That claim is the stated basis for preferring the pure oral method, and it is reported here as the widely reproduced wording.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "What is the relationship between Milan 1880 and Stokoe 1960?",
+            options: [
+              "Eighty years separate the resolution from the academic vindication",
+              "Stokoe presented his findings at the Milan congress",
+              "Stokoe's work was commissioned to answer the Milan resolutions",
+              "They concern different languages and are unrelated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The congress declared signs inferior in 1880; the work conventionally credited with establishing ASL's linguistic status appeared in 1960.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "Why does the course name Bell's role rather than omitting it?",
+            options: [
+              "Because contested figures are taught with their positions named",
+              "Because Bell's involvement is disputed by historians",
+              "Because he later reversed his position publicly",
+              "Because he funded the congress that passed the resolutions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Naming who held a position is what lets a reader check the argument, and it is the rule this course applies throughout.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "Which of these did NOT happen after the Milan congress?",
+            options: [
+              "Deaf teachers were given expanded classroom authority",
+              "Schools across Europe moved toward speech without sign",
+              "Deaf teachers were pushed out of classrooms",
+              "American schools resisted more successfully than European ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The removal of sign from classrooms removed the Deaf teachers who had been central since Clerc; it did not expand their authority.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "What does the 2010 apology tell you about the record?",
+            options: [
+              "It took 130 years to correct and restored nothing lost",
+              "It reversed the resolutions retroactively in law",
+              "It was issued by the Italian government rather than by ICED",
+              "It concluded that the 1880 vote had been procedurally invalid",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The correction came from the twenty-first ICED in Vancouver, and the course is explicit that an apology does not return a century of teaching.",
+            sourceLessonSlug: "milan-1880",
+          },
+          {
+            prompt: "What kind of school was the American School for the Deaf when it opened?",
+            options: [
+              "The first permanent one in the United States",
+              "A temporary experiment that closed within five years",
+              "A branch of the Paris institution",
+              "A private academy admitting only hearing-impaired adults",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the oldest permanent school for Deaf children in the country and the first anywhere in the western hemisphere.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "Which pairing is correct?",
+            options: [
+              "1817 Hartford founding, 1880 Milan congress",
+              "1817 Milan congress, 1880 Hartford founding",
+              "1819 federal land grant, 1820 first state aid",
+              "1860 Stokoe, 1960 Milan congress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hartford opened in 1817 and Milan met in 1880. State aid was 1819 and the federal land grant 1820, in that order.",
+            sourceLessonSlug: "hartford-1817",
+          },
+          {
+            prompt: "How did the language spread beyond Hartford?",
+            options: [
+              "Its graduates founded and staffed schools elsewhere",
+              "The federal government mandated its use in every state",
+              "Clerc travelled to each new school to teach the staff",
+              "Printed sign dictionaries were distributed nationally",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is the ordinary mechanism by which a school variety becomes a national language, and it is why Hartford's French inheritance reached the whole country.",
+            sourceLessonSlug: "hartford-1817",
+          },
+        ],
+      },
+    },
     {
       slug: "deaf-america-final",
       title: "Final assessment \u00b7 Deaf America",
