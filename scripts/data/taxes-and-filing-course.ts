@@ -4115,7 +4115,7 @@ Internal Revenue Service. (2026g). *Free tax return preparation for qualifying t
       },
     },
     // ══════════════════════════════════════════════════════════════════════
-    // FINAL ASSESSMENT — 48 pooled, serving 10, passing 80
+    // FINAL ASSESSMENT — 51 pooled, serving 10, passing 80
     // ══════════════════════════════════════════════════════════════════════
     {
       slug: "final-assessment",
@@ -4169,7 +4169,7 @@ Internal Revenue Service. (2026g). *Free tax return preparation for qualifying t
             sourceLessonSlug: "the-w4-is-the-dial",
           },
           {
-            prompt: "What does 26 U.S.C. 6012(a)(1)(A) use in place of a dollar figure?",
+            prompt: "Against what measure of income is the section 6012 filing requirement written?",
             options: ["A reference to the exemption amount", "A schedule of thresholds by filing status and age", "A percentage of the prior year's median household income", "The basic standard deduction stated in section 63(c)"],
             correctIndex: 0,
             explanation: "Which is why the practical thresholds are published annually rather than printed in a lesson.",
@@ -4253,7 +4253,7 @@ Internal Revenue Service. (2026g). *Free tax return preparation for qualifying t
             sourceLessonSlug: "refundable-or-not",
           },
           {
-            prompt: "On a computed tax of 400, what does a refundable credit of 1,000 produce?",
+            prompt: "What does an unused non-refundable credit become once the tax reaches zero?",
             options: ["Zero tax and a 600 overpayment", "Zero tax and no payment beyond that", "A tax of 600 carried to the following year", "A refund of the full 1,000 whatever the tax was"],
             correctIndex: 0,
             explanation: "The same amount as a non-refundable credit would leave 600 unused and unpaid.",
@@ -4309,7 +4309,7 @@ Internal Revenue Service. (2026g). *Free tax return preparation for qualifying t
             sourceLessonSlug: "when-a-credit-is-disallowed",
           },
           {
-            prompt: "What is the first step of the course's four-step method for a current figure?",
+            prompt: "What does the course say the transferable skill is, rather than a figure?",
             options: ["Find the current Publication 17 and note its year", "Read the operative Code section and copy the amount", "Ask a paid preparer which figure applies this season", "Search for the most recent news report quoting it"],
             correctIndex: 0,
             explanation: "Then the annual revenue procedure by number, the tax year beside the figure, and a re-check each season.",
@@ -4358,7 +4358,7 @@ Internal Revenue Service. (2026g). *Free tax return preparation for qualifying t
             sourceLessonSlug: "the-refund-can-be-taken-first",
           },
           {
-            prompt: "What comes first in the section 6402 priority order?",
+            prompt: "Whose debt does section 6402(a) satisfy before any refund is paid?",
             options: ["The filer's own internal revenue tax", "Past-due support owed by the filer", "Debts referred by any federal agency", "State income tax obligations certified as enforceable"],
             correctIndex: 0,
             explanation: "Then past-due support, federal agency debts, state income tax obligations and unemployment compensation debts.",
@@ -4393,10 +4393,10 @@ Internal Revenue Service. (2026g). *Free tax return preparation for qualifying t
             sourceLessonSlug: "free-file-is-a-contract",
           },
           {
-            prompt: "Where is the VITA matching grant program codified?",
+            prompt: "In which Code section does the VITA matching grant program sit?",
             options: ["26 U.S.C. 7526A", "26 U.S.C. 7526, on low-income taxpayer clinics", "26 U.S.C. 6402, on credits and refunds", "26 U.S.C. 7803, on the enumerated taxpayer rights"],
             correctIndex: 0,
-            explanation: "Made permanent by the Taxpayer First Act of 2019, Public Law 116-25.",
+            explanation: "Made permanent there by the Taxpayer First Act of 2019, Public Law 116-25.",
             sourceLessonSlug: "the-volunteer-programs",
           },
           {
@@ -4463,14 +4463,14 @@ Internal Revenue Service. (2026g). *Free tax return preparation for qualifying t
             sourceLessonSlug: "the-disparity-and-the-method",
           },
           {
-            prompt: "What does GAO say the no-change rate calculation includes?",
+            prompt: "Why does selecting on a low no-change rate select for nonresponse?",
             options: ["Default audits", "Examinations still open at the fiscal year end", "Only examinations closed with an agreed adjustment", "Examinations of returns claiming no refundable credit"],
             correctIndex: 0,
             explanation: "Audits closed as a change because the taxpayer did not respond, so selecting on the metric selects for nonresponse.",
             sourceLessonSlug: "the-disparity-and-the-method",
           },
           {
-            prompt: "What are the three headings of the capstone's one-page note?",
+            prompt: "What does the capstone ask a learner to produce at the end?",
             options: ["What they say, where they disagree, what I could not verify", "What I owe, what I am owed, and what I will claim", "What is accurate, what is inaccurate, what I will amend", "What each document shows, who signed it, and when"],
             correctIndex: 0,
             explanation: "The third is the useful one, because it becomes the list of questions for a preparation site or a clinic.",
