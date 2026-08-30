@@ -1704,6 +1704,60 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   three of which ask for a taxonomy of schemes this course does not survey. **Six research checks
   filed**, four of them on state statutes and federal parts that move.
   Deliberately **not** in \`STAGED_COURSES\` yet.
+- 🔧 **Retirement: the Plan, the Fee Disclosure, and the Floor** (\`content/money-07-retirement\`,
+  **Money & Property**, **MONEY-07**; NO migration, **re-run \`pnpm seed:courses\`**). The seventh
+  course in the \`personal-money\` series ("Your Money, and Who Decides"), from
+  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.6, which named it the
+  highest-advice-risk build in the track. MONEY-01, 02, 03, 04 and 06 are on main; MONEY-05 is being
+  authored in parallel.
+  **The spine: a retirement account is a legal wrapper somebody else decides whether to offer you,
+  and every term that matters is written in a document you are entitled to ask for.** This is
+  explicitly **not a course about how to invest**. It names no fund, product, provider or
+  allocation, states no savings rate, projects no return, and teaches nothing about risk, return or
+  diversification. It says so **in prose in three separate lessons**, per the posture
+  \`surplus-funds-basics\` established and MONEY-01 inherited.
+  **Access is the subject, and the numbers are the argument.** No employer is required to sponsor a
+  plan, so the course separates three things routinely miscalled coverage: access, participation,
+  and take-up. From the March 2025 National Compensation Survey read through CRS IF13185 (18 March
+  2026): 72 percent access and 53 percent participation overall, but **49 and 23 percent in the
+  lowest-paid quarter** of private-sector occupations against **91 and 80 in the highest**, 47 and
+  23 part-time against 81 and 62 full-time.
+  **The teachable document is the participant fee disclosure** (29 CFR 2550.404a-5), the direct
+  descendant of MONEY-01's adverse action notice and MONEY-06's Loan Estimate. It requires each
+  alternative's cost **as a percentage AND as dollars per 1,000 invested**, an at-least-quarterly
+  statement of what was **actually** charged with a description of what it bought, and a sentence
+  the rule puts in the plan's own mouth: that the cumulative effect of fees can substantially reduce
+  an account's growth. The compounding lesson then strips growth out **entirely** so no rate can be
+  implied: 10,000 dollars at 1.00 percent leaves about 9,044 after ten years, at 0.25 percent about
+  9,753, a gap of about 709, labelled a hypothetical in the lesson itself.
+  **Annual figures are taught as a method, never as a table.** 26 U.S.C. 402(g)(1)(B) prints 15,000
+  and 219(b)(5)(A) prints 5,000, each with its own base period and rounding rule, so a figure has
+  three parts of which only the mechanism is stable. **No current limit is printed anywhere.**
+  **Social Security is taught from the statute**, not a brochure: 42 U.S.C. 414(a) on insured
+  status, 405(c) making an earnings record **conclusive** after three years, three months and
+  fifteen days, 20 CFR 404.211 and 42 U.S.C. 415 for indexing, the five dropped years (which is
+  where the familiar thirty-five comes from, **derived** rather than quoted) and the 90/32/15 bands,
+  and 416(l)'s five-clause retirement age table. Then the finding that closes the loop: CRS R47341
+  reports **61.5 percent of the bottom income quintile** relying on Social Security for 90 percent
+  or more of household income, against almost none of the top two.
+  **The last section answers the question almost nobody asks**: ERISA's functional definition of a
+  fiduciary and the four duties quoted in full, against the Advisers Act read through *SEC v.
+  Capital Gains Research Bureau* (1963) and Regulation Best Interest, with Form CRS (whose delivery
+  is triggered by a **rollover recommendation**) and the two free public registration records.
+  6 sections, 18 teaching lessons, 6 section quizzes (62/66/64/63/63/72 serving 5) and a
+  50-question final serving 10, for **440 pooled questions**, 54 reveal cards, and **zero findings**
+  from \`pnpm audit:course retirement-accounts --spec\`. Every primary document was fetched and read
+  on 2026-08-29.
+  **Standards: three rejections converted.** Texas §113.49(c)(7)(B) in **full** (sources of income
+  in retirement: Social Security, individual savings, employer-sponsored plans) and (c)(6)(A) in
+  part; Georgia SSEPF9 **extended** rather than duplicated, filling the "investments" clause of its
+  element (a) that the file itself had listed as not taught; and Ohio Content Statement 18, that
+  file's **first** personal-finance claim, partial on its cost half. **Refused and recorded**:
+  Texas's four develop-a-strategy expectations and Georgia SSEPF3(d), the only state standard naming
+  Roth IRA, 401(k) and 403(b) by name, because it asks for risk, return and diversification.
+  **Seven research checks filed, five of them annual-cycle**, because a course that refuses to print
+  a limit still owes a standing calendar for the year's published one. Deliberately **not** in
+  \`STAGED_COURSES\` yet.
 - 🔧 **Housing: the Lease, the Loan Estimate, and the Map** (\`content/money-06-housing\`,
   **Money & Property**, **MONEY-06**; NO migration, **re-run \`pnpm seed:courses\`**). The sixth
   course in the \`personal-money\` series ("Your Money, and Who Decides"), from
