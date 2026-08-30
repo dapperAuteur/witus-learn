@@ -329,12 +329,30 @@ export const JURISDICTION: JurisdictionFile = {
       name: "Ohio's Learning Standards for Social Studies — Economics and Financial Literacy",
       publisher: "Ohio Department of Education (and Workforce)",
       version: "Adopted February 2018",
-      fetchedOn: "2026-07-17",
+      fetchedOn: "2026-08-29",
       sourceUrl:
         "https://education.ohio.gov/getattachment/Topics/Learning-in-Ohio/Social-Studies/Ohio-s-Learning-Standards-for-Social-Studies/Ohio-s-Learning-Standards-for-Social-Studies_01-2019.pdf.aspx?lang=en-US",
       adoption:
-        "Ohio's economics course, content statements 1..25. Most of the course is personal financial literacy (working, saving, investing, credit, insurance) that this catalog does not teach — but CS 4 gives the reciprocity-versus-market-economies content the economic-systems home Arizona and California lacked, and the trade standards are strong.",
+        "Ohio's economics course, content statements 1..25. Most of the course is personal financial literacy (working, saving, investing, credit, insurance) that this catalog does not teach — but CS 4 gives the reciprocity-versus-market-economies content the economic-systems home Arizona and California lacked, and the trade standards are strong. Re-fetched from the same ODE PDF on 2026-08-29, when MONEY-07 (`retirement-accounts`) shipped and brought this file its FIRST personal-finance claim, CS 18, honestly as a partial: the cost half of that standard is taught in real depth and the investing half is not taught at all.",
       standards: [
+        // — Added 2026-08-29 when MONEY-07 (`retirement-accounts`) shipped. This is the first
+        //   personal-finance claim in the Ohio file, and it is deliberately the ONLY one taken from
+        //   the saving-and-investing topic. CS 16, CS 17 and CS 19 were read in the same PDF on the
+        //   same day and refused: 16 and 17 are about saving building wealth and buffering
+        //   hardship, which is a savings-behaviour claim this catalog does not make, and 19 names
+        //   banks, brokerages and insurance companies providing access to certificates of deposit,
+        //   stocks, bonds and mutual funds, none of which MONEY-07 teaches.
+        {
+          code: "Economics and Financial Literacy · Content Statement 18",
+          text: "Different costs and benefits are associated with saving and investing alternatives.",
+          claimIds: [
+            "money.retirement-account-costs",
+            "money.retirement-tax-timing",
+            "money.retirement-plan-terms",
+          ],
+          coverage: "partial",
+          note: "Partial, and the split runs straight down the middle of the standard's own phrase. THE COST SIDE IS TAUGHT IN DEPTH, and taught from the rule that produces the numbers rather than as a generality: 29 CFR 2550.404a-5 requires a participant-directed plan to disclose each designated alternative's total annual operating expenses BOTH as a percentage and as a dollar amount for each 1,000 dollars invested, to separate plan-wide administrative expenses from individual expenses, to report at least quarterly the dollar amount actually charged with a description of the services it bought, and to state in the plan's own words that the cumulative effect of fees can substantially reduce the growth of a participant's account. The course then works that arithmetic on a labelled hypothetical with growth stripped out entirely, so the shape of a percentage-of-assets cost is visible without any rate of return being implied. THE ALTERNATIVES COMPARED ARE ACCOUNT TYPES, NOT INVESTMENTS: traditional against Roth treatment as a tax-timing trade (26 U.S.C. 219(a) against 408A), an employer plan against an individual account including the active-participant rule at 219(g) that links the two, and the employer match read as compensation carried on a vesting schedule. NOT TAUGHT AT ALL, and a teacher planning the rest of CS 18 must supply it: risk, return, diversification, and every investment product. MONEY-07 says in prose in three separate lessons that it gives no financial advice, names no product or provider, and projects no return.",
+        },
         {
           code: "Economics and Financial Literacy · Content Statement 4",
           text: "Different economic systems (traditional, market, command, and mixed) utilize different methods to allocate limited resources.",
@@ -561,8 +579,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "CS 2 (political parties, interest groups, and the media as civic-involvement channels — our media-literacy work is consumer protection, not political-media analysis), CS 6 (the Federalist and Anti-Federalist Papers framing the ratification debate, as texts), CS 10 (the suffrage amendments as civil-rights extensions, taught as constitutional law), and CS 21 (the Federal Reserve and monetary policy) are not genuinely taught, so we do not claim them.",
     },
     {
-      heading: "Economics — the whole financial-literacy half, and the market-mechanics standards.",
-      body: "Working and earning (CS 11-12), saving and investing (CS 16-19), credit and debt (CS 20-22), risk management and insurance (CS 23-25), the personal-finance planning standards (CS 13-15), the economic-data and market-competition standards (CS 1-3, 6-7) were all checked and are not taught. Ohio's CS 4, by contrast, is the economic-systems standard Arizona and California lacked, and we claim it.",
+      heading: "Economics — the financial-literacy half, superseded in part now that one cost standard is taught.",
+      body: "This entry used to reject the whole financial-literacy half of Ohio's economics course. That changed on 2026-08-29 and the correction is recorded here rather than deleted: CS 18, different costs and benefits associated with saving and investing alternatives, is now claimed as a partial, on its cost half only, and its own entry says exactly what is and is not covered. Everything else in that half stays unclaimed and is named so the gap stays visible. Working and earning (CS 11-12), the personal-finance planning standards (CS 13-15), the rest of saving and investing (CS 16, 17 and 19), credit and debt (CS 20-22), risk management and insurance (CS 23-25), and the economic-data and market-competition standards (CS 1-3, 6-7) were all checked and are not taught. CS 19 is the sharpest refusal of the set: it asks how banks, brokerages and insurance companies provide access to certificates of deposit, stocks, bonds and mutual funds, and this catalog teaches no investment product of any kind. CS 22, consumer protection laws providing financial safeguards, is a genuine candidate that several courses in the personal-money series could back, and it is left unclaimed here only because no pass has yet done that analysis for Ohio; that is a deferral rather than a judgement. Ohio's CS 4, by contrast, is the economic-systems standard Arizona and California lacked, and we claim it.",
     },
     {
       heading: "American History beyond the labor, migration, Prohibition, and New Deal-labor standards.",

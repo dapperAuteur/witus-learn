@@ -5456,6 +5456,146 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "23 · Capstone: the finding Congress wrote down, and one document of your own",
     ],
   },
+
+  // ══ MONEY-07 · Retirement: the Plan, the Fee Disclosure, and the Floor ══════
+  //
+  // READ THIS BEFORE MAPPING ANY STATE STANDARD ONTO THESE. Every state framework in this module
+  // files retirement inside a "saving and investing" strand, and this course teaches NO INVESTING.
+  // It names no fund, no product, no provider and no allocation; it states no savings rate; it
+  // projects no return; and it teaches nothing about risk, return, diversification, stocks, bonds,
+  // mutual funds, certificates of deposit or speculative instruments. It also teaches no budgeting,
+  // no insurance, no estate planning, no careers and no retirement-cost estimation.
+  //
+  // What it DOES teach is the machinery around the account: whether an employer offers one at all,
+  // what the plan document decides, what a regulation requires the plan to disclose about cost, how
+  // the tax timing works and where the annual figures come from, how a Social Security benefit is
+  // computed, and who is legally required to act in a participant's interest. So a state standard
+  // that asks a student to "evaluate risk and return of various investment options" is NOT backed
+  // by any claim below, and a standard that asks them to "identify and explain sources of income
+  // during retirement" is backed in full. Keeping those two apart is the whole discipline here.
+  {
+    id: "money.retirement-plan-access",
+    claim:
+      "Measures who has an employer-sponsored retirement plan available at all, separating access, participation and take-up from the federal survey that reports each.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // Access, participation and the take-up rate defined and then filled in from the March 2025
+      // National Compensation Survey: 72 and 53 percent overall, 49 and 23 in the lowest-paid
+      // quarter of private-sector occupations against 91 and 80 in the highest.
+      "2 · Access, participation, and the difference between them",
+      // The 2022 Survey of Consumer Finances read against that gradient: 54.3 percent of households
+      // with any retirement account, and the Federal Reserve's own note on wealth by race.
+      "23 · Capstone: read your own record, and the gap it sits inside",
+    ],
+  },
+  {
+    id: "money.retirement-plan-terms",
+    claim:
+      "Reads an employer plan from its governing document: what the match is, how vesting works, and what happens to each part of the account when a participant leaves.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // Defined benefit against individual account, 29 U.S.C. 1104(a)(1)(D) making the document
+      // binding on the fiduciaries, and 1024(b)(4) plus 1132(c)(1) making it obtainable.
+      "3 · The plan document governs, and you may ask for it in writing",
+      // The match as compensation with a condition rather than a return, 26 U.S.C. 401(k)(2)(C) and
+      // 411(a)(1) on nonforfeitability, and 411(d)(6)(A)'s anti-cutback rule.
+      "5 · The match is compensation with a condition, not a return",
+      // 29 U.S.C. 1053(a)(2): the three-year cliff and the 2-to-6 graded table for an individual
+      // account plan, the five-year cliff and 3-to-7 table for a defined benefit plan.
+      "6 · Vesting is a retention device, and the statute caps how long it can run",
+      // Forfeiture, 26 U.S.C. 401(k)(2)(B)'s closed list of distribution events, 401(a)(31)(A) and
+      // (B) on the direct transfer and the automatic rollover, 411(a)(11)(A) and 72(t).
+      "7 · What leaving does, and the four things that can happen next",
+    ],
+  },
+  {
+    id: "money.retirement-account-costs",
+    claim:
+      "Teaches the participant fee disclosure a regulation requires, and works the arithmetic of a percentage-of-assets cost as a labelled hypothetical.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // 29 CFR 2550.404a-5(a), (c)(1), (c)(2) and (c)(3): the disclosure as a fiduciary act, its
+      // annual calendar, and the separation of administrative from individual expenses.
+      "9 · The fee disclosure is a document somebody is required to hand you",
+      // The at-least-quarterly statement of amounts ACTUALLY charged, the expense ratio required
+      // both as a percentage and as dollars per 1,000, and the rule's own compounding sentence.
+      "10 · What you actually paid, and the sentence the rule makes them print",
+      // The arithmetic, with growth stripped out entirely so no rate is implied, and the second of
+      // the course's three prose refusals of advice.
+      "11 · A hypothetical, and why it is not a projection",
+    ],
+  },
+  {
+    id: "money.retirement-tax-timing",
+    claim:
+      "Teaches traditional and Roth treatment as a question about when income is taxed, and teaches the method by which an annual contribution figure is produced rather than the figure.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // 26 U.S.C. 219(a) against 408A(a), (b), (c)(1) and (d)(1), with (d)(2)(A) and (d)(2)(B) as
+      // two independent conditions on a qualified distribution.
+      "13 · Traditional and Roth are a question about when, not what",
+      // 26 U.S.C. 219(g)(1) and (g)(5): the active-participant reduction, which makes an employer's
+      // decision an input into the tax treatment of an individual's own account.
+      "14 · Your employer's decision reaches into your own account",
+      // 402(g)(1)(B) and (g)(4), 219(b)(5)(A) and (b)(5)(C): a base amount, an adjustment mechanism
+      // with a base period and a rounding rule, and an annual notice. Plus 26 U.S.C. 414A.
+      "15 · Where the annual numbers actually come from",
+    ],
+  },
+  {
+    id: "money.social-security-benefit",
+    claim:
+      "Works how a Social Security retirement benefit is computed, from insured status and the earnings record through indexing, the benefit computation years and the three-band formula.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // 42 U.S.C. 414(a) on fully insured status, and 405(c)(1)(B), (c)(4) and (c)(5) on the time
+      // limitation of three years, three months and fifteen days, with 20 CFR 404.822.
+      "17 · Coverage, and the record that becomes conclusive",
+      // 42 U.S.C. 415(b)(3)(A) indexing, 415(b)(2)(A)'s reduction of elapsed years by five, 20 CFR
+      // 404.211's divisor, and 415(a)(1)(A)'s 90, 32 and 15 percent bands.
+      "18 · How the benefit is actually computed, in four steps",
+      // 42 U.S.C. 416(l)(1) and (l)(2): the five-clause retirement age table and the fixed early
+      // retirement age, with the reliance distribution from CRS R47341.
+      "19 · Retirement age is in the statute, and it moved",
+    ],
+  },
+  {
+    id: "money.retirement-income-sources",
+    claim:
+      "Identifies and explains the sources of income in retirement: Social Security, an individual's own accounts, and an employer-sponsored plan, and how each one is produced.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // The employer-sponsored source, and the fact that it exists only where an employer offers it.
+      "2 · Access, participation, and the difference between them",
+      // The employer-sponsored source read from its own document: what the employer contributes,
+      // when it becomes the participant's, and what leaves with the job.
+      "5 · The match is compensation with a condition, not a return",
+      // The individual source: the deduction, Roth treatment, and the active-participant rule that
+      // ties the individual account back to whether an employer plan exists.
+      "13 · Traditional and Roth are a question about when, not what",
+      "14 · Your employer's decision reaches into your own account",
+      // The Social Security source, computed from statute, and the published distribution of how
+      // much of an aged household's income it actually supplies.
+      "18 · How the benefit is actually computed, in four steps",
+      "19 · Retirement age is in the statute, and it moved",
+    ],
+  },
+  {
+    id: "money.who-owes-a-duty-of-loyalty",
+    claim:
+      "Teaches which people advising a saver are legally required to act in that saver's interest, from the statutory definitions and rules that impose the duty, and where the free public records are.",
+    courseSlugs: ["retirement-accounts"],
+    lessons: [
+      // 29 U.S.C. 1002(21)(A)'s functional definition, including indirect compensation, and
+      // 1104(a)(1)(A) through (D) quoted in full.
+      "21 · Fiduciary is not a compliment, it is a definition",
+      // 15 U.S.C. 80b-6 read through SEC v. Capital Gains Research Bureau (1963), against
+      // 17 CFR 240.15l-1, plus Form CRS at 17 CFR 275.204-5 and the two free lookup records.
+      "22 · The same conversation, two different legal seats",
+      // The capstone's last step: check a registration record before taking advice.
+      "23 · Capstone: read your own record, and the gap it sits inside",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
