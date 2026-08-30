@@ -2067,5 +2067,627 @@ Elzayn, H., Smith, E., Hertz, T., Ramesh, A., Fisher, R., Ho, D. E., & Goldin, J
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — The date in the statute
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-fifteenth-day-of-the-second-month",
+      title: "10 · A date Congress wrote for two credits and nobody else",
+      section: "Section 4 · The date in the statute",
+      body: `Here is the sentence this whole course was built around.
+
+**26 U.S.C. § 6402(m)**: "No credit or refund of an overpayment for a taxable year shall be made to a taxpayer before the 15th day of the second month following the close of such taxable year if a credit is allowed to such taxpayer under section 24 (by reason of subsection (d) thereof) or 32 for such taxable year" (26 U.S.C. § 6402, n.d.).
+
+**Take it apart clause by clause, because every clause is doing work.**
+
+**"No credit or refund of an overpayment."** Not part of it. The whole overpayment.
+
+**"Before the 15th day of the second month following the close of such taxable year."** The statute does not say February. It states a formula, and for a calendar-year filer the formula produces **15 February**.
+
+**"If a credit is allowed to such taxpayer under section 24 (by reason of subsection (d) thereof) or 32."** Two credits, named. Section 24 by reason of subsection (d) is the refundable portion of the child credit, the one commonly called the additional child tax credit. Section 32 is the earned income credit. **Nothing else is in the sentence.**
+
+## The hold reaches the whole refund, not the credit
+
+This is the part that surprises people, and both the statute and the agency say it plainly. The IRS's own guidance on the change states: "The IRS will hold the entire refund. Under the new law, the IRS cannot release the part of the refund that is not associated with the EITC and ACTC" (Internal Revenue Service, 2026d).
+
+**So a filer whose refund is mostly their own over-withheld wages, with a modest credit on top, waits for all of it.**
+
+## Where the sentence came from, and what it is for
+
+Section 6402(m) was added by **section 201(b) of the Protecting Americans from Tax Hikes Act of 2015**, and the Internal Revenue Manual records the linkage in those terms at IRM 21.4.1.3.1 (Internal Revenue Service, 2023). The IRM also describes the operational side: an account meeting the criteria carries a freeze that releases on 15 February.
+
+**The stated purpose is anti-fraud, and it is specific.** In the agency's own words, the delay "allows additional time to help prevent revenue lost due to identity theft and refund fraud related to fabricated wages and withholdings" (Internal Revenue Service, 2026d).
+
+**Read that beside the other half of the same section of the Act**, which moved forward the date by which employers must file wage statements. The package makes sense as one idea: get the employer's report of what it paid you into the government's hands before the government pays a refund computed from what you said it paid you. **The hold buys a matching window.**
+
+## The statutory floor is not the practical date
+
+The statute sets an earliest date. It does not promise that date.
+
+For the 2026 filing season, opened on 26 January 2026, the IRS said it "expects most refunds for the Earned Income Tax Credit and the Additional Child Tax Credit to be available in bank accounts or on debit cards by March 2, 2026, for taxpayers who chose direct deposit and have no other issues with their returns" (Internal Revenue Service, 2026e).
+
+**That figure carries its season and its source deliberately.** The practical date is published fresh each year, it sits weeks after the statutory floor, and quoting last year's is exactly the mistake this course exists to prevent.
+
+:::reveal What formula does 26 U.S.C. 6402(m) use instead of naming a month? ||| The 15th day of the second month following the close of the taxable year, which for a calendar-year filer is 15 February.
+
+:::reveal Which two credits does 6402(m) name? ||| The credit under section 24 by reason of subsection (d), and the credit under section 32.
+
+:::reveal How much of the refund does the hold reach? ||| All of it, including the part not associated with either credit.
+
+## Vocabulary
+- **The statutory hold**: the rule at 26 U.S.C. 6402(m) that no credit or refund of an overpayment may be made before a stated date where either named credit is allowed.
+- **Additional child tax credit**: the refundable portion of the section 24 credit, which 6402(m) reaches through the words by reason of subsection (d) thereof.
+- **Matching window**: the period the hold creates in which the government can compare an employer's wage report against the wages a return claims.
+- **Statutory floor**: the earliest date a thing may lawfully happen, which is not the same as the date it is expected to happen.
+
+## Sources
+26 U.S.C. § 6402. (n.d.). *Authority to make credits or refunds*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6402
+
+Internal Revenue Service. (2023). *Internal Revenue Manual 21.4.1, Refund research*. https://www.irs.gov/irm/part21/irm_21-004-001r
+
+Internal Revenue Service. (2026d). *New federal tax law may affect some refunds filed in early 2017*. https://www.irs.gov/for-tax-pros/new-federal-tax-law-may-affect-some-refunds-filed-in-early-2017
+
+Internal Revenue Service. (2026e). *IRS opens 2026 filing season* (IR-2026-12). https://www.irs.gov/newsroom/irs-opens-2026-filing-season`,
+    },
+    {
+      slug: "who-the-hold-lands-on",
+      title: "11 · Who the hold lands on, by the design of the credits",
+      section: "Section 4 · The date in the statute",
+      body: `A rule that applies to two named credits applies to whoever claims those two credits. So the question of who waits is answered by reading the credits, not by guessing.
+
+## Both named credits are conditioned on having worked
+
+**Section 32** requires earned income before any credit arises at all. Subsection (c)(2)(A) defines it as employee compensation includible in gross income plus net earnings from self-employment, and the allowance sentence at 32(a)(1) applies a percentage to it.
+
+**Section 24(d)(1)** computes the refundable portion of the child credit from an amount that includes a percentage of the taxpayer's earned income above a stated floor.
+
+**So both credits in section 6402(m) are conditioned on earnings, and both are structured to reach households at the lower end of the earnings distribution.** That is not an inference about who claims them. It is what the sections say.
+
+## Which makes the distributive effect a matter of arithmetic
+
+**The hold delays the refunds of filers who by statutory design have earned income and lower earnings, and delays nobody else's.** A filer with the same size refund arising entirely from over-withholding, claiming neither credit, is outside section 6402(m) completely.
+
+**This course states that as a fact about two statutes read together, and it does not call it a scandal.** The purpose is stated, specific, and about fraud rather than about deservingness. Fabricated wages and withholdings are a real problem and a matching window is a real answer to it.
+
+**What is not in dispute is the effect.** The delay falls on the group least able to absorb it, and the reason is structural rather than accidental: the credits were designed to reach low earners, and the hold was attached to the credits.
+
+## The catalog's own method, applied
+
+The sibling course *Financing Without Access* teaches a procedure for reading any rule of this shape: **ask which door was closed, what pool replaced it, and who bears the risk.**
+
+**Which door was closed:** access to a refund before mid-February, for one defined class of filers.
+
+**What pool replaced it:** a market in products that advance money against a refund not yet paid.
+
+**Who bears the risk:** the filer, in the form of a price.
+
+## And this is where this course stops
+
+**The pricing of that market belongs to the sibling course *Predatory Products, Priced*, and it is already taught there.** Its lesson *A refund is a debt the government already owes you* reads section 6402(a) to show that a lender advancing against a refund is not taking a credit risk on whether the money exists, because the debtor is the Treasury, and then prices the product.
+
+**This course does not repeat that, and deliberately.** The two courses divide the object: MONEY-04 prices the product, and this lesson explains why the window it is priced against exists at all, who is inside it, and what it is for. **If you want the arithmetic of an advance, go and read the other course.**
+
+**And this course does not tell you whether to take one.** That is a decision about a household's calendar and this course does not know it.
+
+:::reveal Why are the two credits named in 6402(m) the ones aimed at lower earners? ||| Because section 32 requires earned income and section 24(d)(1) computes the refundable portion from a percentage of earned income above a floor.
+
+:::reveal What is the stated purpose of the hold, and what is its effect? ||| Preventing fraud from fabricated wages and withholdings, and delaying the refunds of the filers least able to absorb a delay.
+
+:::reveal Which sibling course prices the refund-advance product, and why does this one not? ||| Predatory Products, Priced, which already reads 6402(a) and prices it, so this course explains the window instead of repeating the pricing.
+
+## Vocabulary
+- **Distributive effect**: who a rule actually falls on, which here follows from the eligibility conditions of the two credits the rule names.
+- **Structural rather than accidental**: the sense in which the hold's incidence follows from the design of the credits rather than from chance.
+- **The exclusion procedure**: the catalog's three questions from Financing Without Access, which door was closed, what pool replaced it, and who bears the risk.
+- **Refund advance**: a product that pays money against a refund not yet issued, priced and taught in MONEY-04 rather than here.
+
+## Sources
+26 U.S.C. § 24. (n.d.). *Child tax credit*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/24
+
+26 U.S.C. § 32. (n.d.). *Earned income*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/32
+
+26 U.S.C. § 6402. (n.d.). *Authority to make credits or refunds*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6402
+
+Internal Revenue Service. (2026d). *New federal tax law may affect some refunds filed in early 2017*. https://www.irs.gov/for-tax-pros/new-federal-tax-law-may-affect-some-refunds-filed-in-early-2017`,
+    },
+    {
+      slug: "the-refund-can-be-taken-first",
+      title: "12 · The refund can be reduced before it ever reaches you",
+      section: "Section 4 · The date in the statute",
+      body: `Timing is one risk. Amount is another, and the same section that promises the refund also lists the things that can take it first.
+
+## Four offsets, in the statute, in order
+
+**§ 6402(a)** comes first: the Secretary may credit an overpayment against any liability in respect of an internal revenue tax on the part of the person who made it. **Your own unpaid federal tax has priority over your refund.**
+
+Then the referrals, and each begins the same way, with the Secretary acting on notice from somebody else.
+
+**§ 6402(c)**: the amount to be refunded "shall be reduced by the amount of any past-due support" (26 U.S.C. § 6402, n.d.).
+
+**§ 6402(d)(1)**: "Upon receiving notice from any Federal agency that a named person owes a past-due legally enforceable debt (other than past-due support subject to the provisions of subsection (c)) to such agency," the Secretary shall reduce and pay over (26 U.S.C. § 6402, n.d.).
+
+**§ 6402(e)(1)**: "Upon receiving notice from any State that a named person owes a past-due, legally enforceable State income tax obligation to such State," the same machinery applies (26 U.S.C. § 6402, n.d.).
+
+**§ 6402(f)** does the same for covered unemployment compensation debts.
+
+**And the order is set out in the section**: federal tax first, then past-due support, then federal agency debts, then state income tax obligations, then unemployment compensation debts, with any remaining balance available to be credited against estimated tax under subsection (b) or refunded.
+
+## Why the order matters more than it looks
+
+**The reduction happens before payment.** The money is not paid and then collected back. It never arrives, which means it is never available to be spent, budgeted or borrowed against.
+
+**And the debt belongs to somebody else.** Read the grammar of subsections (d) and (e) again: the Secretary acts "upon receiving notice from" a federal agency or a state. **The Internal Revenue Service is the collector here, not the creditor.** Questions about whether the debt is owed, how much it is, or whether it has been paid belong to the agency or the state that referred it, because that is the party the statute puts the notice duty on.
+
+## The third risk in a refund advance
+
+The sibling course *Predatory Products, Priced* observes that a lender advancing against a refund is not taking a risk on whether the money exists, because the debtor is the Treasury, and that what it bears instead is timing risk and the risk that the return is wrong.
+
+**This section adds a third: the amount can shrink between the return and the payment**, by operation of a statute, for a reason the filer may not have been thinking about. A refund that is offset is still a refund the taxpayer received the benefit of, since a debt of theirs was paid with it. It is simply not money that arrives.
+
+## One thing worth knowing and not advising on
+
+Where a joint return's refund is reduced for a debt belonging to only one of the spouses, a separate procedure exists for the spouse who is not the debtor. **This course names that it exists and stops there**, because whether it applies to a particular household is exactly the individualised question the course refuses. The free preparation programs named in the next section are staffed by people trained to answer it.
+
+:::reveal Under 6402(d)(1) and (e)(1), what starts the offset process? ||| Notice to the Secretary from a federal agency or from a state that a named person owes a past-due, legally enforceable debt.
+
+:::reveal Why does an offset never reach the filer's budget? ||| Because the reduction happens before payment, so the money never arrives to be spent or borrowed against.
+
+:::reveal Who should a filer ask about an offset for a state or agency debt? ||| The agency or state that referred it, because the statute makes that party the one giving notice.
+
+## Vocabulary
+- **Offset**: the statutory reduction of a refund to satisfy a listed debt before the balance is paid.
+- **Past-due support**: the first of the referred categories, reached by 26 U.S.C. 6402(c) ahead of other agency debts.
+- **Referring agency**: the federal agency or state that gives the Secretary notice under 6402(d) or (e), and therefore the party that owns the underlying debt question.
+- **Priority order**: the sequence in which section 6402 applies an overpayment, beginning with the filer's own federal tax.
+
+## Sources
+26 U.S.C. § 6402. (n.d.). *Authority to make credits or refunds*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6402`,
+    },
+    {
+      slug: "quiz-the-hold",
+      title: "Section 4 review · The statutory hold and the offsets",
+      section: "Section 4 · The date in the statute",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What date formula does 26 U.S.C. 6402(m) use?",
+            options: ["The 15th day of the second month after year end", "The last business day of February following the taxable year", "Twenty-one days after the return is accepted for processing", "The first day of the third month following the close of the year"],
+            correctIndex: 0,
+            explanation: "The statute states a formula rather than naming February, and for a calendar-year filer it produces 15 February.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "Which two credits does 26 U.S.C. 6402(m) name?",
+            options: ["Sections 24(d) and 32", "Sections 24 and 25A, the child and education credits together", "Sections 31 and 32, being withholding and the earned income credit", "Every credit enacted in subpart C of part IV of subchapter A"],
+            correctIndex: 0,
+            explanation: "Section 24 by reason of subsection (d), which is the refundable portion, and section 32, the earned income credit.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What does the phrase by reason of subsection (d) thereof identify in section 24?",
+            options: ["The refundable portion of the child credit", "The condition that the child be under a stated age at year end", "The limitation imposed by section 26(a) on the credit's amount", "The inflation adjustment applied to the credit for a given year"],
+            correctIndex: 0,
+            explanation: "That is the part commonly called the additional child tax credit, and it is what brings a return within the hold.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "How much of a refund does the section 6402(m) hold reach?",
+            options: ["All of it", "Only the portion attributable to the two named credits", "Only the portion exceeding the tax computed on the return", "Only the portion arising from chapter 24 withholding on wages"],
+            correctIndex: 0,
+            explanation: "The IRS says it cannot release the part of the refund that is not associated with the two credits.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "Which enactment added section 6402(m) to the Code?",
+            options: ["Section 201(b) of the PATH Act of 2015", "The Taxpayer First Act of 2019, which also made VITA grants permanent", "The Tax Reform Act of 1969, which produced the volunteer programs", "The One, Big, Beautiful Bill Act of 2025, which addressed Direct File"],
+            correctIndex: 0,
+            explanation: "The Internal Revenue Manual records the linkage between that section of the Act and the Code provision.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What is the stated purpose of the hold, in the agency's own words?",
+            options: ["Preventing fraud from fabricated wages", "Spreading the processing workload across the whole filing season", "Reducing the number of returns that require manual examination", "Allowing states time to refer their own income tax obligations"],
+            correctIndex: 0,
+            explanation: "The delay allows additional time to help prevent revenue lost due to identity theft and refund fraud related to fabricated wages and withholdings.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What did the other half of the same section of the PATH Act do?",
+            options: ["Moved employer wage reporting earlier", "Raised the earned income credit for households with three children", "Extended the period for assessing tax on a fraudulent return", "Required the IRS to publish a refund schedule before each season"],
+            correctIndex: 0,
+            explanation: "Reading the two halves together, the hold buys a window in which the employer's report can be matched against the return.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What does the lesson call the period the hold creates?",
+            options: ["A matching window", "A processing backlog the agency clears each February", "A grace period during which a return may be amended freely", "An appeal window in which a filer may contest the credit"],
+            correctIndex: 0,
+            explanation: "It lets the government compare what an employer reported paying against what a return claims before paying a refund.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "Does the statutory date promise when a refund will arrive?",
+            options: ["No, it is an earliest date only", "Yes, refunds subject to it are issued on that date each year", "Yes, provided the filer chose direct deposit for the refund", "Only for returns filed before the season formally opens"],
+            correctIndex: 0,
+            explanation: "The practical date is published fresh each season and sits weeks after the statutory floor.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What date did the IRS give for most affected refunds in the 2026 filing season?",
+            options: ["2 March 2026", "15 February 2026, which is the statutory floor for the year", "26 January 2026, which is the date the season itself opened", "15 April 2026, which is the deadline for filing the return"],
+            correctIndex: 0,
+            explanation: "For taxpayers who chose direct deposit and had no other issues with their returns, according to the release opening that season.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "On what date did the 2026 filing season open?",
+            options: ["26 January 2026", "15 February 2026, when the statutory hold releases", "2 March 2026, the date most affected refunds were expected", "1 January 2026, the first day of the calendar year"],
+            correctIndex: 0,
+            explanation: "The IRS began accepting and processing individual returns for tax year 2025 on that date.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "Which record describes the operational freeze that implements the hold?",
+            options: ["The Internal Revenue Manual", "The annual revenue procedure setting inflation adjustments", "The regulation prescribing the employee's withholding certificate", "The memorandum of understanding governing the Free File program"],
+            correctIndex: 0,
+            explanation: "IRM 21.4.1.3.1 records the linkage to the Act and describes a freeze that releases on 15 February.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What does the phrase no credit or refund of an overpayment tell you about the scope of the hold?",
+            options: ["It reaches the whole overpayment", "It reaches only credits and leaves cash refunds unaffected", "It reaches only the amount above the tax shown on the return", "It reaches only refunds the taxpayer requested by direct deposit"],
+            correctIndex: 0,
+            explanation: "Not part of it, which is why a filer with a modest credit on a large withholding refund waits for all of it.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "Why is the population affected by the hold answerable by reading the credits?",
+            options: ["The rule applies to whoever claims those two", "Because the statute lists the income levels it covers directly", "Because the Secretary publishes the affected population each year", "Because the hold applies only to filers below a stated threshold"],
+            correctIndex: 0,
+            explanation: "A rule attached to two named credits falls on the people the eligibility conditions of those credits reach.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "What do both credits named in 6402(m) have in common?",
+            options: ["Both are conditioned on earned income", "Both require the taxpayer to have a qualifying child", "Both are non-refundable and stop at a zero liability", "Both are claimed on a schedule filed separately from the return"],
+            correctIndex: 0,
+            explanation: "Section 32 requires it outright and 24(d)(1) computes the refundable portion from a percentage of it above a floor.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Who is outside section 6402(m) entirely?",
+            options: ["A filer claiming neither named credit", "A filer whose refund exceeds ten thousand dollars for the year", "A filer who used a paid preparer rather than filing alone", "A filer who requested a paper cheque rather than direct deposit"],
+            correctIndex: 0,
+            explanation: "Even a refund of the same size arising entirely from over-withholding is untouched, which is what makes the incidence structural.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Does this course call the hold a scandal?",
+            options: ["No", "Yes, because it discriminates among filers by income", "Yes, because the fraud rationale has never been published", "Only where the practical date falls more than a month later"],
+            correctIndex: 0,
+            explanation: "The purpose is stated, specific and about fraud, and fabricated wages are a real problem with a real answer.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "What does the course say is not in dispute about the hold?",
+            options: ["Its effect", "Its constitutionality under the taxing power of Congress", "Whether the two credits it names are refundable at all", "Whether the Secretary has discretion to release a refund early"],
+            correctIndex: 0,
+            explanation: "The delay falls on the group least able to absorb it, because the credits were designed to reach low earners and the hold was attached to the credits.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Which sibling course supplies the three-question exclusion procedure?",
+            options: ["Financing Without Access", "Credit, and the Decisions Made About You, which reads the consumer file", "Cash Flow, and When the Money Actually Moves, which reads the calendar", "Banking, and Who Has No Bank, which reads the deposit account"],
+            correctIndex: 0,
+            explanation: "Which door was closed, what pool replaced it, and who bears the risk.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Applying that procedure here, which door was closed?",
+            options: ["Access to a refund before mid-February", "Access to the earned income credit for filers without children", "Access to free preparation for households above an income limit", "Access to an examination file after a determination has been made"],
+            correctIndex: 0,
+            explanation: "And only for the defined class of filers claiming one of the two named credits.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Applying that procedure, what pool replaced the closed door?",
+            options: ["A market in advances against unpaid refunds", "A network of volunteer preparation sites funded by federal grants", "A statutory hardship procedure administered by the Taxpayer Advocate", "A schedule of instalment payments made across the following year"],
+            correctIndex: 0,
+            explanation: "And the risk is borne by the filer, in the form of a price.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Which sibling course prices the refund advance product?",
+            options: ["Predatory Products, Priced", "Housing, which reads the lease and the federal loan disclosures", "Banking, and Who Has No Bank, which reads the fee schedule", "Credit, and the Decisions Made About You, which reads the score"],
+            correctIndex: 0,
+            explanation: "Its lesson on a refund as a debt the government already owes you reads section 6402(a) and works the arithmetic.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Why does this course not re-price the refund advance?",
+            options: ["The sibling course already teaches it", "Because the product is illegal in most states and not worth teaching", "Because the arithmetic depends on figures that reset every January", "Because pricing a product would amount to giving financial advice"],
+            correctIndex: 0,
+            explanation: "The two courses divide the object: one prices the product, and this one explains the window it is priced against.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "What does the sibling course say a refund lender is NOT taking a risk on?",
+            options: ["Whether the money exists", "Whether the filer will repay the advance when the refund lands", "Whether the return will be selected for examination that season", "Whether the statutory hold will be extended by a later Congress"],
+            correctIndex: 0,
+            explanation: "The debtor is the Treasury, so what the lender bears is timing risk and the risk that the return is wrong.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Does this course tell a reader whether to take a refund advance?",
+            options: ["No", "Yes, where the household has no other source of cash", "Yes, where the fee converts to an annual rate below a threshold", "Only where the filer claims one of the two named credits"],
+            correctIndex: 0,
+            explanation: "That is a decision about a household's calendar, which the course does not know.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Which liability does section 6402(a) put ahead of a refund?",
+            options: ["The filer's own federal tax", "Any past-due support the filer owes to a custodial parent", "A debt referred by a federal agency other than the Treasury", "A state income tax obligation certified as legally enforceable"],
+            correctIndex: 0,
+            explanation: "The Secretary may credit the overpayment against any liability in respect of an internal revenue tax before the balance is refunded.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What does 26 U.S.C. 6402(c) reduce a refund by?",
+            options: ["Past-due support", "Any student loan balance in default with the Department of Education", "Any unpaid state sales tax certified by the state's revenue agency", "Any court judgment entered against the filer during the taxable year"],
+            correctIndex: 0,
+            explanation: "It sits ahead of the other referred categories in the section's own order.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What starts the offset process under 6402(d)(1)?",
+            options: ["Notice from a federal agency", "A determination by the Secretary on examining the return", "A request from the taxpayer to apply the refund to a debt", "A judgment obtained by the creditor in a federal district court"],
+            correctIndex: 0,
+            explanation: "Upon receiving notice that a named person owes a past-due legally enforceable debt to that agency.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What kind of debt does 26 U.S.C. 6402(e)(1) reach?",
+            options: ["A past-due state income tax obligation", "Any debt owed to a state agency of whatever description", "A local property tax certified by a county assessor's office", "A state court fine imposed for a violation of state law"],
+            correctIndex: 0,
+            explanation: "The subsection names a past-due, legally enforceable State income tax obligation specifically.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What does 26 U.S.C. 6402(f) cover?",
+            options: ["Covered unemployment compensation debts", "Overpayments of the earned income credit in prior years", "Penalties assessed under section 6651 for a failure to file", "Interest accrued on an unpaid balance from a previous year"],
+            correctIndex: 0,
+            explanation: "It is the last of the four referred categories in the section's priority order.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What comes first in the section 6402 priority order?",
+            options: ["Internal revenue tax", "Past-due support owed by the person who made the overpayment", "Debts referred by a federal agency other than the Treasury", "The credit of any balance against the following year's estimated tax"],
+            correctIndex: 0,
+            explanation: "Then past-due support, then federal agency debts, then state income tax obligations, then unemployment compensation debts.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "Why does the lesson say an offset never reaches a household's budget?",
+            options: ["The reduction happens before payment", "Because the offset is applied to the following year's return", "Because the taxpayer must consent before an offset takes effect", "Because the amount is held in suspense until a claim is filed"],
+            correctIndex: 0,
+            explanation: "The money is not paid and then collected back, so it is never available to be spent, budgeted or borrowed against.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "In an offset for a referred debt, what role does the IRS play?",
+            options: ["Collector, not creditor", "Creditor, since the debt is owed under the Internal Revenue Code", "Adjudicator, since it decides whether the debt is properly owed", "Guarantor, since it undertakes to pay the referring agency in full"],
+            correctIndex: 0,
+            explanation: "The grammar of subsections (d) and (e) has the Secretary acting upon receiving notice from the agency or the state.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "Whom should a filer ask about the amount of a referred debt?",
+            options: ["The agency or state that referred it", "The Internal Revenue Service, which applied the reduction", "The Bureau of the Fiscal Service, which issues refund payments", "The employer whose wage report produced the withholding"],
+            correctIndex: 0,
+            explanation: "The statute places the notice duty on that party, which makes it the one that owns the underlying debt question.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What third risk does this lesson add to a refund advance?",
+            options: ["The amount can shrink before payment", "The statutory hold may be extended after the advance is made", "The lender may withdraw the advance before the refund is issued", "The taxpayer may be barred from claiming the credit in future years"],
+            correctIndex: 0,
+            explanation: "By operation of the offset provisions, for a reason the filer may not have been thinking about.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "Does an offset mean the taxpayer received no benefit?",
+            options: ["No, a debt of theirs was paid", "Yes, the amount is retained permanently by the Treasury", "Yes, unless the taxpayer disputes the offset within thirty days", "It depends on whether the debt was federal or owed to a state"],
+            correctIndex: 0,
+            explanation: "It is simply not money that arrives, which is a different thing from money that is lost.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What does the lesson say exists where a joint refund is offset for one spouse's debt?",
+            options: ["A separate procedure", "An automatic split of the refund between the two spouses", "A bar on offsetting a joint refund for an individual debt", "A right to file separately for the year after the offset occurs"],
+            correctIndex: 0,
+            explanation: "The lesson names that it exists and stops, sending the individualised question to the free preparation programs.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "Where does the lesson send a filer with a question about that separate procedure?",
+            options: ["The free preparation programs", "A commercial preparer specialising in refund offsets", "The federal agency that referred the underlying debt", "The Tax Court, by petition within ninety days of the notice"],
+            correctIndex: 0,
+            explanation: "They are staffed by people trained to answer it, and the course itself refuses individualised questions.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What is an offset, as this course uses the term?",
+            options: ["A statutory reduction of a refund to pay a listed debt", "A penalty imposed for claiming a credit the filer was not entitled to", "A credit of an overpayment against the following year's estimated tax", "An adjustment made by the Secretary after examining a filed return"],
+            correctIndex: 0,
+            explanation: "It happens before the balance is paid, which is what distinguishes it from ordinary collection.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What is a statutory floor, as the course uses the phrase?",
+            options: ["The earliest date something may lawfully happen", "The minimum refund the Secretary is required to issue", "The lowest income at which a return must be filed", "The smallest credit amount the statute will allow"],
+            correctIndex: 0,
+            explanation: "It is not the same as the date the thing is expected to happen, which is why both dates carry sources here.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What does the lesson mean by calling the hold's incidence structural rather than accidental?",
+            options: ["It follows from the design of the credits", "It results from how the agency chooses to schedule processing", "It varies from year to year with the volume of returns filed", "It depends on which state the filer's return was submitted from"],
+            correctIndex: 0,
+            explanation: "The credits were designed to reach low earners, and the hold was attached to the credits.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Which subsection allows a remaining balance to be credited against estimated tax?",
+            options: ["Subsection (b)", "Subsection (m), which fixes the earliest date for payment", "Subsection (c), which reaches past-due support obligations", "Subsection (f), which reaches unemployment compensation debts"],
+            correctIndex: 0,
+            explanation: "It sits at the end of the priority order the section sets out, after the referred categories.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "How does the lesson describe what section 32 requires before any credit arises?",
+            options: ["Earned income", "A qualifying child meeting the section 152(c) definition", "A filing status other than married filing separately", "Investment income below the threshold in subsection (i)"],
+            correctIndex: 0,
+            explanation: "Employee compensation includible in gross income plus net earnings from self-employment, per 32(c)(2)(A).",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "What kind of fact does the course say the hold's distributive effect is?",
+            options: ["A matter of arithmetic", "A contested empirical question researchers disagree about", "An assertion the course makes without a primary source", "A policy judgment on which reasonable people differ"],
+            correctIndex: 0,
+            explanation: "It follows from reading the two credits' eligibility conditions beside the sentence that names them.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "What did the course choose to teach instead of repeating the sibling course's arithmetic?",
+            options: ["Why the window exists and who is in it", "The state licensing rules that govern refund advance lenders", "The conversion of a flat fee into an annual percentage rate", "The enforcement record of the largest refund advance providers"],
+            correctIndex: 0,
+            explanation: "The division of labour is deliberate, and the lesson tells a reader to go and read the other course for the pricing.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "What does the section 6402 order tell you about a filer who owes federal tax and is due a refund?",
+            options: ["The tax is satisfied first", "The refund is paid in full and the tax collected separately", "The refund is held until the tax is paid by other means", "The two amounts are netted only if the filer so elects"],
+            correctIndex: 0,
+            explanation: "Subsection (a) allows the Secretary to credit the overpayment against internal revenue tax before refunding any balance.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What phrase do both 6402(d)(1) and 6402(e)(1) begin with?",
+            options: ["Upon receiving notice", "Notwithstanding any other provision of this section", "At the discretion of the Secretary of the Treasury", "Where the taxpayer has been afforded an opportunity to object"],
+            correctIndex: 0,
+            explanation: "Which is the grammar that makes the Service the collector rather than the creditor.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "What does a filer with a modest credit on a large withholding refund experience under the hold?",
+            options: ["A wait for the entire amount", "A partial payment covering the withholding portion only", "An immediate refund, since the credit portion is the smaller part", "A choice between waiting and forgoing the credit for that year"],
+            correctIndex: 0,
+            explanation: "The IRS says it cannot release the part of the refund not associated with the two credits.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What does the course say about quoting last season's refund date?",
+            options: ["It is exactly the mistake the course prevents", "It is acceptable where the statutory floor has not changed", "It is required, because the practical date rarely moves", "It is safe provided the year is not printed alongside it"],
+            correctIndex: 0,
+            explanation: "The practical date is published fresh each year and sits weeks after the statutory floor.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "How does 24(d)(1) connect the refundable child credit to work?",
+            options: ["Through a percentage of earned income above a floor", "Through a requirement that the child attend school in the year", "Through a limit tied to the tax withheld from the filer's wages", "Through a phase-out that begins at the filing threshold"],
+            correctIndex: 0,
+            explanation: "Which is why both credits named in 6402(m) reach households with earnings at the lower end.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "In the exclusion procedure, who bears the risk created by the hold?",
+            options: ["The filer, in the form of a price", "The lender, which advances money against an uncertain refund", "The Treasury, which pays interest on any delayed refund", "The employer, which must report wages earlier than before"],
+            correctIndex: 0,
+            explanation: "That is the third of the three questions the sibling course teaches for reading any exclusion.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "Which clause of 6402(m) tells you the rule is not about the size of a refund?",
+            options: ["The clause naming two credits", "The clause fixing the fifteenth day of the second month", "The clause referring to a credit or refund of an overpayment", "The clause referring to the close of the taxable year"],
+            correctIndex: 0,
+            explanation: "Eligibility for either named credit is the trigger, so an identical refund without either is untouched.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What does the lesson say about naming February in the statute?",
+            options: ["The statute names no month", "The statute names February and the fifteenth day of it", "The statute names February for calendar-year filers only", "The statute leaves the month to the Secretary to designate"],
+            correctIndex: 0,
+            explanation: "It states a formula, and the formula happens to land on 15 February for a calendar-year filer.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What is the common name for the section 24 credit portion that 6402(m) reaches?",
+            options: ["The additional child tax credit", "The child and dependent care credit for working households", "The credit for other dependents who are not qualifying children", "The adoption credit allowed for qualified adoption expenses"],
+            correctIndex: 0,
+            explanation: "It is the refundable portion, which the statute reaches through the words by reason of subsection (d) thereof.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What kind of fraud does the agency's stated reason for the hold name?",
+            options: ["Fabricated wages and withholdings", "Claims for qualifying children who live in another household", "Returns filed by preparers without an identifying number", "Refunds directed to accounts in another person's name"],
+            correctIndex: 0,
+            explanation: "The delay allows additional time to help prevent revenue lost due to identity theft and refund fraud of that kind.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "What does the course say the package of PATH Act section 201 amounts to as one idea?",
+            options: ["Match the employer's report before paying", "Delay every refund until the season's returns are all filed", "Raise the credits and slow their payment in the same measure", "Transfer verification of wages from the agency to the employer"],
+            correctIndex: 0,
+            explanation: "Earlier wage reporting on one side and a refund hold on the other buy a window in which the two can be compared.",
+            sourceLessonSlug: "the-fifteenth-day-of-the-second-month",
+          },
+          {
+            prompt: "Whose eligibility conditions decide who waits under the hold?",
+            options: ["The two named credits'", "The taxpayer's, as recorded on the withholding certificate", "The referring agency's, where a debt has also been notified", "The preparer's, under the section 6695(g) due diligence rules"],
+            correctIndex: 0,
+            explanation: "A rule attached to two credits falls on whoever those credits reach, which is a matter of reading the sections.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "What does the course say about calling the fraud rationale real?",
+            options: ["Fabricated wages are a real problem", "The rationale has never been published by the agency", "The rationale applies equally to every refund claimed", "The rationale was added after the hold took effect"],
+            correctIndex: 0,
+            explanation: "A matching window is a real answer to it, which is why the lesson states the effect without calling the rule a scandal.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "What does the lesson say a refund lender bears instead of existence risk?",
+            options: ["Timing risk and correctness risk", "Interest rate risk and the risk of an offset by a state", "Credit risk on the filer and the risk of an early repayment", "The risk that the credit will be disallowed in a future year"],
+            correctIndex: 0,
+            explanation: "The debtor is the Treasury, so the money exists; what is uncertain is when it arrives and whether the return is right.",
+            sourceLessonSlug: "who-the-hold-lands-on",
+          },
+          {
+            prompt: "What does the priority order in section 6402 do with any balance left after the offsets?",
+            options: ["Makes it available to credit or refund", "Retains it against the following year's tax automatically", "Returns it to the referring agency for further distribution", "Holds it in suspense until the next return is filed"],
+            correctIndex: 0,
+            explanation: "Subsection (b) allows a credit against estimated tax and subsection (a) requires the remainder to be refunded.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "How does the lesson distinguish money that is offset from money that is lost?",
+            options: ["A debt of the filer's was paid with it", "The amount is refunded in a later taxable year instead", "The offset may be reversed on request within thirty days", "The referring agency returns the excess after collection"],
+            correctIndex: 0,
+            explanation: "It is not money that arrives, which is a different thing from money the filer never had the benefit of.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+          {
+            prompt: "Which two things does the offset section make it worth knowing about a refund?",
+            options: ["It can be late and it can be smaller", "It is guaranteed in amount but not in timing", "It is guaranteed in timing but not in amount", "It is neither guaranteed nor enforceable against the Treasury"],
+            correctIndex: 0,
+            explanation: "Section 6402(m) supplies the timing risk and subsections (c) through (f) supply the amount risk.",
+            sourceLessonSlug: "the-refund-can-be-taken-first",
+          },
+        ],
+      },
+    },
   ],
 };
