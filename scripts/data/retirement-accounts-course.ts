@@ -1815,6 +1815,575 @@ That procedure gives you a number. It does not tell you whether the number is ac
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — Tax timing, and the numbers that reset every year
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "traditional-and-roth-are-a-timing-choice",
+      title: "13 · Traditional and Roth are a question about when, not what",
+      section: "Section 4 · Tax timing, and the numbers that reset every year",
+      body: `People treat traditional and Roth as two products. They are not products. They are two answers to a single question: **when is this money taxed?**
+
+**The traditional side deducts now.** The Code allows an individual "as a deduction an amount equal to the qualified retirement contributions of the individual for the taxable year" (26 U.S.C. § 219, n.d.). Money that is deducted going in is taxed coming out, later, as it is distributed.
+
+**The Roth side does the opposite.** "No deduction shall be allowed under section 219 for a contribution to a Roth IRA" (26 U.S.C. § 408A, n.d.). Nothing is deducted going in. Instead, "[a]ny qualified distribution from a Roth IRA shall not be includible in gross income" (26 U.S.C. § 408A, n.d.). The tax is paid on the way in and the qualifying distribution is not taxed on the way out.
+
+**What a Roth IRA is, in the statute's own terms**, is worth reading because it makes the wrapper point from Lesson 1 concrete. It is "an individual retirement plan ... which is designated ... at the time of establishment of the plan as a Roth IRA" (26 U.S.C. § 408A, n.d.), and otherwise "a Roth IRA shall be treated for purposes of this title in the same manner as an individual retirement plan" (26 U.S.C. § 408A, n.d.). So the difference between the two is a designation and a set of tax consequences. It is not a different kind of asset.
+
+**"Qualified" is doing real work in that sentence.** A distribution is qualified if it is made on or after the individual attains age 59 and a half, to a beneficiary or the estate on or after death, on account of the individual being disabled, or as a qualified special purpose distribution (26 U.S.C. § 408A, n.d.). And there is a second, independent condition: a payment is not a qualified distribution if it is made "within the 5-taxable year period beginning with the first taxable year for which the individual made a contribution to a Roth IRA" (26 U.S.C. § 408A, n.d.). Two hurdles, not one. Clearing the age and missing the period fails, and so does the reverse.
+
+**Why this course refuses to tell you which side to choose.** The honest version of the traditional-against-Roth question is a comparison between a tax rate you face now and a tax rate you will face later. Nobody knows the second one. It depends on your future income, on your future filing situation, and on tax law that has not been written yet. Anyone who tells you confidently which side wins is either making assumptions they have not shown you or selling something. What this course can give you is the mechanism, so that when you read someone's argument you can see which assumption is carrying it.
+
+**One structural point that is often missed.** These are not exclusively an IRA phenomenon. Employer plans commonly permit designated contributions with Roth treatment as well, which means the traditional-or-Roth question and the plan-or-IRA question are two separate axes rather than one. Keeping them separate stops a common confusion in which people believe they must leave a workplace plan to obtain Roth treatment.
+
+**And the point that connects this to Section 1.** All of it presupposes that you have income to defer and, for the workplace version, a plan to defer into. The tax timing question is a real question. It is also a question that never reaches roughly half of the lowest-paid quarter of private-sector workers, because no plan was on offer.
+
+:::reveal What single question do traditional and Roth treatment answer differently? ||| When the money is taxed: deducted now and taxed later, or taxed now and not taxed on a qualified distribution.
+
+:::reveal What are the two independent conditions for a qualified distribution from a Roth IRA? ||| A qualifying event such as age 59 and a half, death, disability or a qualified special purpose distribution, and the 5-taxable-year period.
+
+:::reveal Why does this course refuse to say which treatment is better? ||| Because the comparison turns on a future tax rate that nobody knows, which depends on income, filing situation and law not yet written.
+
+## Vocabulary
+- **Traditional treatment**: the arrangement under which a contribution is deducted in the year made and the distribution is taxed when received.
+- **Roth treatment**: the arrangement under which no deduction is allowed and a qualified distribution is not includible in gross income.
+- **Qualified distribution**: a Roth distribution that satisfies both a qualifying event and the 5-taxable-year period, and only then escapes inclusion in income.
+- **Designation**: the act, at the time the plan is established, that makes an individual retirement plan a Roth IRA rather than an ordinary one.
+- **Tax timing**: the choice between paying tax on money going into an account and paying it on money coming out, which is the whole of the traditional-against-Roth question.
+
+## Sources
+26 U.S.C. § 219. (n.d.). *Retirement savings*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/219
+
+26 U.S.C. § 408A. (n.d.). *Roth IRAs*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/408A`,
+    },
+    {
+      slug: "the-active-participant-rule",
+      title: "14 · Your employer's decision reaches into your own account",
+      section: "Section 4 · Tax timing, and the numbers that reset every year",
+      body: `Here is the rule that makes the access story from Section 1 into a tax rule, and it is the least intuitive provision in this course.
+
+**The deduction for your own IRA contribution can be reduced because of a plan you are in at work.** The Code provides that if, for any part of any plan year ending with or within a taxable year, "an individual or the individual's spouse is an active participant", the dollar limitations on the deduction "shall be reduced (but not below zero)" by an amount computed under the following paragraph (26 U.S.C. § 219, n.d.). That reduction is phased in over an income range, which is the thing everyone calls the phase-out.
+
+**Read what that means slowly.** Two people with identical incomes, identical contributions and identical family situations can get different deductions, and the difference is that one of them works somewhere with a retirement plan. The employer's decision, made for the employer's reasons, changes the tax treatment of an account the employer has nothing to do with.
+
+**And it reaches a spouse.** The statute says "an individual or the individual's spouse", so a household where only one person is covered at work is a household where the rule may reach both. There is separate treatment for the uncovered spouse, which is exactly the kind of detail that must be read for the current year rather than remembered.
+
+**What makes someone an active participant.** The statute defines it by listing the arrangements: participation in a plan described in section 401(a) with a tax-exempt trust, an annuity plan under 403(a), a plan established for its employees by a government or its instrumentality, a 403(b) annuity contract, a simplified employee pension under 408(k), or a simple retirement account under 408(p); or a trust described in 501(c)(18) to which deductible contributions are made (26 U.S.C. § 219, n.d.). Two features of that definition are worth holding on to. First, it is about the arrangement rather than about how much you put in. Second, the determination applies whether or not rights under the plan are forfeitable, so being unvested does not take you out of it.
+
+**Why this belongs in a course about access.** The usual framing of retirement policy is that individual accounts exist so that people without workplace plans have somewhere to save. That framing is half right and this rule is the other half: whether you have a workplace plan is itself an input to how the individual account is taxed. The two systems are not independent, and the connection runs from your employer's choice into your personal return.
+
+**The figures are the part you must not memorise.** Every threshold in this rule is a dollar amount that is adjusted, and the adjustment happens on an annual cycle. This course prints none of them. What it teaches is the shape: there is a reduction, it depends on active-participant status, it depends on filing situation, it is phased across an income range, and it never goes below zero. The next lesson explains where the current year's numbers actually come from.
+
+:::reveal What can reduce the deduction for your own IRA contribution? ||| Being an active participant in an employer arrangement, or having a spouse who is, with the reduction phased across an income range.
+
+:::reveal Does being unvested take you out of active participant status? ||| No. The determination applies whether or not rights under the plan are forfeitable.
+
+:::reveal Why does this rule belong in a course about access? ||| Because whether your employer offers a plan is itself an input into how your own individual account is taxed, so the two systems are not independent.
+
+## Vocabulary
+- **Active participant**: someone participating in one of the employer arrangements the statute lists, determined by the arrangement rather than by the amount contributed.
+- **Phase-out**: the income range across which a deduction is progressively reduced, never below zero, rather than being lost at a single cliff.
+- **Filing situation**: the household and return status that changes which threshold applies, which is why a single remembered number is almost always the wrong one.
+- **Deductible amount**: the statutory ceiling on the deduction before any active-participant reduction is applied to it.
+
+## Sources
+26 U.S.C. § 219. (n.d.). *Retirement savings*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/219`,
+    },
+    {
+      slug: "a-base-amount-and-an-adjustment",
+      title: "15 · Where the annual numbers actually come from",
+      section: "Section 4 · Tax timing, and the numbers that reset every year",
+      body: `This course prints no current contribution limit. That is not caution for its own sake: it is because the limits are built in a way that makes the printed statutory figure and the operative figure two different things, and knowing that is more useful than knowing either number.
+
+**The pattern, in the statute itself.** For elective deferrals, the Code says the deferrals of any individual are included in gross income to the extent they exceed "the applicable dollar amount", and then says "the applicable dollar amount is $15,000" (26 U.S.C. § 402, n.d.). Read alone, that looks like the limit. It is not. The next relevant paragraph directs the Secretary to adjust that 15,000 amount for cost of living, using a base period of the calendar quarter beginning July 1, 2005, and provides that "any increase under this paragraph which is not a multiple of $500 shall be rounded to the next lowest multiple of $500" (26 U.S.C. § 402, n.d.).
+
+**The individual account version has the identical shape.** The deduction may not exceed the lesser of "the deductible amount" or the individual's includible compensation, and the statute then says "[t]he deductible amount is $5,000" (26 U.S.C. § 219, n.d.). A further provision adjusts that amount for cost of living for taxable years beginning after 2008, using calendar year 2007 as the base, again rounding down to a multiple of 500. The catch-up amount for individuals who have reached 50 is stated as 1,000 dollars and is adjusted on its own cycle, using calendar year 2022 as the base and rounding to a lower multiple of 100 (26 U.S.C. § 219, n.d.).
+
+**So there are three things, and only one of them is stable.**
+
+1. **A base amount**, printed in the statute. Stable, quotable, and not the answer.
+2. **An adjustment mechanism**, also in the statute: a base period, an index, and a rounding rule. Stable, and the actual content of the rule.
+3. **This year's number**, published annually. Useful, and out of date the moment it changes.
+
+**Where the third one lives.** The operative figures are published each year by the tax authority in an annual notice, alongside the phase-out ranges from the previous lesson. That notice, for the year you are asking about, is the citation. A blog post, a colleague, or a course written in a previous year is not.
+
+**The habit, stated as a rule you can apply anywhere.** When you meet a dollar figure in tax or benefits law, ask three questions. Is this a base amount or an operative amount? What is the adjustment mechanism? Where is this year's published figure? Any answer that skips the third question is describing a year, not a rule.
+
+**One further mechanism worth knowing, because it changes participation rather than limits.** The Code now conditions qualification on automatic enrollment for certain arrangements: a cash or deferred arrangement is not treated as a qualified arrangement "unless such arrangement meets the automatic enrollment requirements of subsection (b)", and the same applies to a 403(b) annuity purchased under a salary reduction agreement (26 U.S.C. § 414A, n.d.). The requirement is that the arrangement be an eligible automatic contribution arrangement that also allows permissible withdrawals (26 U.S.C. § 414A, n.d.). The section carries its own exceptions, headed for simple plans, for plans or arrangements established before the section's enactment, for governmental and church plans, and for new and small businesses (26 U.S.C. § 414A, n.d.). That section was added by Public Law 117-328, enacted 29 December 2022, and read here on 29 August 2026. The reason it matters to this course is the take-up rate from Section 1: automatic enrollment is a rule aimed squarely at the gap between having a plan and being in one, and it does nothing at all about the gap between having a plan and not.
+
+:::reveal What are the three separate things behind any annual contribution figure? ||| A base amount printed in the statute, an adjustment mechanism with a base period and a rounding rule, and this year's published number.
+
+:::reveal How does the statute round an increase in the elective deferral amount? ||| To the next lowest multiple of 500 dollars.
+
+:::reveal Which gap does automatic enrollment address, and which does it not? ||| It addresses the gap between having a plan and being in one. It does nothing about having no plan at all.
+
+## Vocabulary
+- **Applicable dollar amount**: the statutory base figure for elective deferrals, which the adjustment mechanism converts into the year's operative limit.
+- **Cost-of-living adjustment**: the statutory mechanism that moves a base amount using a named base period, an index, and a rounding rule.
+- **Rounding rule**: the instruction that decides how an adjusted amount is expressed, such as rounding down to the next lowest multiple of 500 dollars.
+- **Eligible automatic contribution arrangement**: the kind of arrangement the automatic enrollment requirement demands, which must also allow permissible withdrawals.
+- **Annual notice**: the yearly publication in which the tax authority states the operative limits and phase-out ranges, and the only correct citation for a current figure.
+
+## Sources
+26 U.S.C. § 219. (n.d.). *Retirement savings*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/219
+
+26 U.S.C. § 402. (n.d.). *Taxability of beneficiary of employees' trust*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/402
+
+26 U.S.C. § 414A. (n.d.). *Requirements related to automatic enrollment*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/414A`,
+    },
+    {
+      slug: "quiz-tax-timing-and-limits",
+      title: "16 · Knowledge check: tax timing, and where the numbers come from",
+      section: "Section 4 · Tax timing, and the numbers that reset every year",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What question do traditional and Roth treatment answer differently?",
+            options: ["When the money is taxed", "Which assets the account is permitted to hold under federal law", "Whether the employer is required to make a matching contribution", "How quickly the employer's contributions become nonforfeitable"],
+            correctIndex: 0,
+            explanation: "They are two answers to a single timing question, not two different kinds of product.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What does the Code allow for a qualified retirement contribution on the traditional side?",
+            options: ["A deduction", "A credit applied directly against the individual's final tax liability", "An exclusion from gross income that also removes the amount from payroll tax", "A deferral of the filing deadline until the contribution has been made"],
+            correctIndex: 0,
+            explanation: "The statute allows a deduction equal to the qualified retirement contributions of the individual for the taxable year.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What does the Code say about a deduction for a contribution to a Roth IRA?",
+            options: ["None is allowed", "It is allowed only for individuals below a stated income threshold", "It is allowed but must be spread across the following five taxable years", "It is allowed at half the rate applying to a traditional contribution"],
+            correctIndex: 0,
+            explanation: "No deduction is allowed under section 219 for a contribution to a Roth IRA, which is the whole of the trade.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What is the treatment of a qualified distribution from a Roth IRA?",
+            options: ["Not includible in gross income", "Includible in gross income at half the individual's marginal rate", "Includible in gross income but exempt from the additional 10 percent tax", "Taxed at the rate that applied in the year the contribution was made"],
+            correctIndex: 0,
+            explanation: "The statute excludes any qualified distribution from a Roth IRA from gross income.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What makes an individual retirement plan a Roth IRA?",
+            options: ["A designation at establishment", "The kind of assets the account holds once it has been opened", "The income level of the individual in the year the account is opened", "A separate registration filed with the tax authority for each account"],
+            correctIndex: 0,
+            explanation: "It is an individual retirement plan designated as a Roth IRA at the time the plan is established, and otherwise treated the same way.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "Which of these is a qualifying event for a qualified Roth distribution?",
+            options: ["Attaining age 59 and a half", "Separating from service with the employer that sponsored the plan", "Reaching the retirement age defined in the Social Security statute", "Completing the plan's vesting schedule for employer contributions"],
+            correctIndex: 0,
+            explanation: "The listed events are age 59 and a half, death, disability, and a qualified special purpose distribution.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What is the second, independent condition for a qualified distribution?",
+            options: ["The 5-taxable-year period", "That the account has been held with the same institution throughout", "That the individual has made a contribution in each intervening year", "That the individual has no other retirement account of any kind"],
+            correctIndex: 0,
+            explanation: "A payment made within the 5-taxable-year period beginning with the first year a contribution was made is not a qualified distribution.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What follows from there being two conditions rather than one?",
+            options: ["Meeting one is not enough", "The individual may choose which of the two conditions to satisfy", "The conditions apply to different accounts held by the same person", "The second condition replaces the first once the individual turns 59"],
+            correctIndex: 0,
+            explanation: "Clearing the age and missing the period fails, and so does the reverse.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "When does the 5-taxable-year period begin?",
+            options: ["With the first contribution year", "On the day the individual attains the age of 59 and a half", "At the start of the calendar year in which the account is opened", "When the individual first takes a distribution from the account"],
+            correctIndex: 0,
+            explanation: "It runs from the first taxable year for which the individual made a contribution to a Roth IRA established for them.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "Why does this course refuse to say which treatment is better?",
+            options: ["Nobody knows the future rate", "Because the tax difference between the two is too small to be material", "Because the choice is fixed by the plan document rather than the participant", "Because federal law prohibits comparing the two treatments in a publication"],
+            correctIndex: 0,
+            explanation: "The comparison is between a rate you face now and a rate you will face later, which depends on income, filing situation, and law not yet written.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What does the lesson say about someone who is confident about which side wins?",
+            options: ["They are assuming or selling", "They have read the statute more carefully than most other commentators", "They are relying on the annual notice published by the tax authority", "They have access to the phase-out ranges that apply in a future year"],
+            correctIndex: 0,
+            explanation: "They are either making assumptions they have not shown you or selling something, and the mechanism lets you see which.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What structural point does the lesson make about Roth treatment and employer plans?",
+            options: ["They are two separate axes", "Roth treatment is available only through an individual retirement account", "An employer plan must offer Roth treatment if it offers traditional treatment", "Roth treatment inside a plan removes the plan's vesting schedule entirely"],
+            correctIndex: 0,
+            explanation: "Employer plans commonly permit designated contributions with Roth treatment, so the traditional-or-Roth question is separate from the plan-or-IRA question.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "Which confusion does keeping those two axes separate prevent?",
+            options: ["Believing you must leave the plan", "Believing that a Roth account cannot receive an employer match at all", "Believing that a designated Roth contribution is not an elective deferral", "Believing that traditional treatment is unavailable inside an employer plan"],
+            correctIndex: 0,
+            explanation: "People commonly believe they must leave a workplace plan to obtain Roth treatment, which the separation of the two questions dispels.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What does the whole tax-timing question presuppose?",
+            options: ["Income to defer", "A vested balance in an employer-sponsored retirement plan", "That the individual has already reached the age of 50 or older", "That the individual's employer offers both treatments in the same plan"],
+            correctIndex: 0,
+            explanation: "It also presupposes a plan to defer into for the workplace version, which never reaches about half of the lowest-paid quarter of private-sector workers.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "How does the statute describe the relationship between a Roth IRA and an ordinary individual retirement plan?",
+            options: ["Treated the same except as provided", "Treated as a wholly separate arrangement with its own body of rules", "Treated as a plan of the employer rather than of the individual holder", "Treated as an annuity contract rather than as an individual retirement plan"],
+            correctIndex: 0,
+            explanation: "Except as the section provides, a Roth IRA is treated for purposes of the title in the same manner as an individual retirement plan.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What can reduce the deduction for a contribution to your own IRA?",
+            options: ["Active participant status", "Holding more than one individual retirement account in the same year", "Receiving an employer matching contribution during the same taxable year", "Making the contribution after the end of the calendar year it relates to"],
+            correctIndex: 0,
+            explanation: "If the individual or the individual's spouse is an active participant, the dollar limitations are reduced, but not below zero.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "How far can the active-participant reduction go?",
+            options: ["Not below zero", "To half of the otherwise applicable deductible amount in any case", "To whatever amount the plan administrator certifies as appropriate", "To the amount of the employer's matching contribution for that year"],
+            correctIndex: 0,
+            explanation: "The statute says the dollar limitations shall be reduced but not below zero.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "Whose participation can trigger the reduction besides your own?",
+            options: ["Your spouse's", "Any dependent claimed on the same return for that taxable year", "Any person living in the same household regardless of relationship", "A former employer with whom the individual still holds an old balance"],
+            correctIndex: 0,
+            explanation: "The statute reads \"an individual or the individual's spouse is an active participant\", so a household with one covered worker may be reached.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "What does the lesson say about the uncovered spouse?",
+            options: ["Separate treatment applies", "The rule ignores them entirely for every taxable year in question", "They must open an account at the same institution as the covered spouse", "They are treated as an active participant in all circumstances regardless"],
+            correctIndex: 0,
+            explanation: "There is separate treatment for the uncovered spouse, which is exactly the kind of detail that has to be read for the current year.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "Two people with identical incomes and contributions get different deductions. What explains it?",
+            options: ["One has a plan at work", "One made the contribution earlier in the calendar year than the other", "One holds their account at a bank and the other at a brokerage firm", "One elected Roth treatment and the other elected traditional treatment"],
+            correctIndex: 0,
+            explanation: "The employer's decision, made for the employer's reasons, changes the tax treatment of an account the employer has nothing to do with.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "How does the statute define active participant?",
+            options: ["By listing arrangements", "By the dollar amount the individual contributed during the taxable year", "By whether the individual's rights under the plan have become vested", "By the number of hours the individual worked for the employer that year"],
+            correctIndex: 0,
+            explanation: "It lists the qualifying arrangements, which is why the test is about the arrangement rather than about the amount put in.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "Which of these appears on the statutory list of qualifying arrangements?",
+            options: ["A section 403(b) annuity contract", "Any brokerage account the individual maintains outside a retirement plan", "A savings account at a federally insured depository institution", "A health savings account maintained alongside a high deductible plan"],
+            correctIndex: 0,
+            explanation: "The list includes 401(a) plans with tax-exempt trusts, 403(a) annuity plans, governmental plans, 403(b) annuity contracts, 408(k) SEPs and 408(p) simple accounts.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "Does being unvested keep you out of active participant status?",
+            options: ["No", "Yes, until the plan's vesting schedule has been completed in full", "Yes, unless the employer has made a contribution in the same year", "Yes, for a cliff schedule but not for a graded schedule"],
+            correctIndex: 0,
+            explanation: "The determination applies whether or not rights under the plan are forfeitable.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "What is a phase-out, in the sense this lesson uses?",
+            options: ["A reduction across an income range", "A schedule under which an employer contribution becomes nonforfeitable", "A period during which no contribution to the account may be made at all", "The gradual closure of a plan after the sponsoring employer withdraws"],
+            correctIndex: 0,
+            explanation: "The deduction is progressively reduced across a range rather than lost at a single cliff, and it never falls below zero.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "What half-truth does this rule correct in the usual framing of retirement policy?",
+            options: ["That the two systems are independent", "That individual accounts are available only to people without a workplace plan", "That employers must offer a plan once they reach a stated number of employees", "That workplace plans and individual accounts are taxed at different rates"],
+            correctIndex: 0,
+            explanation: "Whether you have a workplace plan is itself an input into how the individual account is taxed, so the connection runs from the employer's choice into your return.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "Why does this course print none of the phase-out thresholds?",
+            options: ["They are adjusted annually", "Because they differ from one state to another across the country", "Because plan documents rather than statutes set them for each employer", "Because they apply only to taxpayers above a certain age threshold"],
+            correctIndex: 0,
+            explanation: "The course teaches the shape of the rule and points at where the current year's published figures live.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "Which features of the active-participant rule does the course teach instead of the numbers?",
+            options: ["Its shape", "The historical values of each threshold over the last decade", "The identity of the agency responsible for publishing the figures", "The proportion of taxpayers affected by the reduction each year"],
+            correctIndex: 0,
+            explanation: "There is a reduction, it depends on active-participant status, it depends on filing situation, it is phased across a range, and it never goes below zero.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "What does the statute print as the applicable dollar amount for elective deferrals?",
+            options: ["15,000 dollars", "5,000 dollars, which is the figure printed for the deductible amount", "7,000 dollars, which is the consent threshold for a mandatory distribution", "1,000 dollars, which is the catch-up figure printed for individuals over 50"],
+            correctIndex: 0,
+            explanation: "The statute states the applicable dollar amount as 15,000, and then directs the Secretary to adjust it.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Is that printed figure the limit that applies in a given year?",
+            options: ["No", "Yes, it is fixed until Congress passes a new statute changing it", "Yes, unless the individual is also an active participant in a plan", "Yes, for elective deferrals although not for individual account contributions"],
+            correctIndex: 0,
+            explanation: "It is a base amount, and the adjustment mechanism converts it into the operative figure published each year.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What base period does the statute use for adjusting the elective deferral amount?",
+            options: ["The quarter beginning July 1, 2005", "Calendar year 2007, which is the base for the deductible amount instead", "Calendar year 2022, which is the base for the catch-up amount instead", "The date the individual first became a participant in an employer plan"],
+            correctIndex: 0,
+            explanation: "The provision names the calendar quarter beginning July 1, 2005 as the base period for that adjustment.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "How is an increase in the elective deferral amount rounded?",
+            options: ["Down to a multiple of 500", "Up to the nearest multiple of 500 dollars in every case", "Down to a multiple of 100 dollars, matching the catch-up rule", "To whichever multiple of 1,000 dollars is closest to the computed figure"],
+            correctIndex: 0,
+            explanation: "Any increase not a multiple of 500 is rounded to the next lowest multiple of 500.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What does the statute print as the deductible amount for an individual retirement contribution?",
+            options: ["5,000 dollars", "15,000 dollars, which is the applicable amount for elective deferrals", "1,000 dollars, which is the catch-up figure for individuals over 50", "7,000 dollars, which is the small-balance consent threshold in a plan"],
+            correctIndex: 0,
+            explanation: "The statute says the deductible amount is 5,000 dollars, and then adjusts it for taxable years beginning after 2008.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "The deduction may not exceed the lesser of the deductible amount and what?",
+            options: ["Includible compensation", "The total the individual contributed to every retirement account that year", "The employer's matching contribution made on the individual's behalf", "The amount published in the annual notice for the preceding taxable year"],
+            correctIndex: 0,
+            explanation: "The statutory ceiling is the lesser of the deductible amount or the compensation includible in the individual's gross income for the year.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What base year does the statute use for adjusting the deductible amount?",
+            options: ["Calendar year 2007", "The calendar quarter beginning July 1, 2005, used for elective deferrals", "Calendar year 2022, which is the base used for the catch-up amount", "The year the individual first opened an individual retirement account"],
+            correctIndex: 0,
+            explanation: "The adjustment applies for taxable years beginning after 2008 using calendar year 2007 as the base.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What figure does the statute print for the catch-up contribution for individuals aged 50 and over?",
+            options: ["1,000 dollars", "5,000 dollars, which is the base deductible amount for any individual", "500 dollars, which is the rounding increment rather than an amount", "15,000 dollars, which is the base amount for elective deferrals instead"],
+            correctIndex: 0,
+            explanation: "The catch-up amount is stated as 1,000 dollars and is adjusted on its own cycle.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "How is the catch-up amount rounded when adjusted?",
+            options: ["To a lower multiple of 100", "To a lower multiple of 500, matching the other two adjustments", "Up to the nearest whole dollar in the year the adjustment applies", "To the nearest multiple of 250 dollars in the direction of increase"],
+            correctIndex: 0,
+            explanation: "The catch-up adjustment uses calendar year 2022 as its base and rounds to a lower multiple of 100.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Which of the three things behind an annual figure is described as stable but not the answer?",
+            options: ["The base amount", "This year's published figure, which is correct until it changes", "The adjustment mechanism, which is the actual content of the rule", "The rounding increment, which varies between the different provisions"],
+            correctIndex: 0,
+            explanation: "The base amount is stable and quotable and is not the operative limit for any year.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Which of the three does the lesson call the actual content of the rule?",
+            options: ["The adjustment mechanism", "The base amount, because it is the figure Congress actually enacted", "The published figure, because it is what a taxpayer must comply with", "The phase-out range, because it decides how much of the deduction survives"],
+            correctIndex: 0,
+            explanation: "A base period, an index and a rounding rule are the durable substance, and only the output changes each year.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Where does the operative figure for a given year live?",
+            options: ["In an annual notice", "In the plan document maintained by the participant's own employer", "In the summary the recordkeeper sends with each quarterly statement", "In the statute itself, which is amended by Congress every year"],
+            correctIndex: 0,
+            explanation: "The tax authority publishes the operative figures each year alongside the phase-out ranges, and that notice is the citation.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Which sources does the lesson say are NOT the citation for a current figure?",
+            options: ["A blog post or a colleague", "The annual notice published for the taxable year in question", "The section of the Code that sets the base amount and the adjustment", "The plan's own comparative chart of designated investment alternatives"],
+            correctIndex: 0,
+            explanation: "A blog post, a colleague, or a course written in an earlier year is not the citation. The year's notice is.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What is the third question in the habit the lesson recommends for any dollar figure in tax or benefits law?",
+            options: ["Where is this year's figure", "Who enacted the provision that first introduced the amount", "How many taxpayers the amount applies to in a typical year", "Whether the amount has ever been reduced rather than increased"],
+            correctIndex: 0,
+            explanation: "Ask whether it is a base or an operative amount, what the adjustment mechanism is, and where this year's published figure lives.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What does the lesson say about an answer that skips that third question?",
+            options: ["It describes a year, not a rule", "It is acceptable provided the base amount is quoted accurately", "It will be correct until the next cost-of-living adjustment is announced", "It applies only to taxpayers who are not active participants in a plan"],
+            correctIndex: 0,
+            explanation: "Without the current published figure, the answer is a snapshot of one year rather than a statement of the rule.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What does the automatic enrollment section condition on the enrollment requirement?",
+            options: ["Qualification of the arrangement", "The employer's entitlement to deduct its own contributions to the plan", "The participant's ability to take a distribution after leaving employment", "The plan's obligation to furnish an annual participant fee disclosure"],
+            correctIndex: 0,
+            explanation: "An arrangement is not treated as a qualified cash or deferred arrangement unless it meets the automatic enrollment requirements.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Which other kind of arrangement does the same section reach?",
+            options: ["A 403(b) salary reduction annuity", "A simplified employee pension established by a small business owner", "An individual retirement account opened directly with a financial institution", "A defined benefit plan funded entirely by the sponsoring employer"],
+            correctIndex: 0,
+            explanation: "An annuity contract described in section 403(b) purchased under a salary reduction agreement is covered by the same requirement.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What must an eligible automatic contribution arrangement also allow?",
+            options: ["Permissible withdrawals", "An employer matching contribution of at least a stated percentage", "Immediate vesting of every contribution the employer makes to it", "A participant to opt out only during an annual enrolment window"],
+            correctIndex: 0,
+            explanation: "The requirement is that the arrangement be an eligible automatic contribution arrangement allowing permissible withdrawals as defined by cross-reference.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Which of these is one of the section's own headed exceptions?",
+            options: ["Governmental and church plans", "Plans covering workers in the lowest-paid quarter of occupations", "Plans that already offer designated contributions with Roth treatment", "Plans whose participant fee disclosure is furnished electronically"],
+            correctIndex: 0,
+            explanation: "The exceptions are headed for simple plans, plans established before enactment, governmental and church plans, and new and small businesses.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "When was the automatic enrollment section enacted?",
+            options: ["29 December 2022", "29 August 2026, the date this course read the provision", "18 March 2026, the date of the worker participation report", "1 July 2005, the base period for the elective deferral adjustment"],
+            correctIndex: 0,
+            explanation: "It was added by Public Law 117-328, enacted on that date, and read for this course on 29 August 2026.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Which gap from Section 1 does automatic enrollment address?",
+            options: ["Access to participation", "The gap between having no plan and having one on offer at work", "The gap between the lowest-paid and the highest-paid quarter of occupations", "The gap between an employer's contribution and a participant's own deferral"],
+            correctIndex: 0,
+            explanation: "It aims squarely at the take-up rate, and does nothing about a worker whose employer sponsors no plan at all.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What does automatic enrollment do nothing about?",
+            options: ["Having no plan at all", "The rate at which a participant's contributions are automatically escalated", "The fees a plan charges against the accounts of enrolled participants", "The order in which a participant's contributions are invested by default"],
+            correctIndex: 0,
+            explanation: "The requirement operates on arrangements that exist, so it cannot reach a worker whose employer sponsors none.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "How many separate adjustment cycles does Section 4 identify in the two statutes it reads?",
+            options: ["Three", "One, applied uniformly to every dollar amount in both sections", "Six, one for each dollar figure appearing anywhere in the two sections", "None, because the amounts are fixed until Congress amends them again"],
+            correctIndex: 0,
+            explanation: "The elective deferral amount, the deductible amount, and the catch-up amount each carry their own base period and rounding rule.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What is the practical reason the base amount is worth knowing at all?",
+            options: ["It is stable and quotable", "It is the figure a taxpayer must actually comply with each year", "It is the amount the annual notice publishes without any adjustment", "It is the figure a plan uses to compute its matching contribution"],
+            correctIndex: 0,
+            explanation: "It tells you which provision to read and where the adjustment mechanism attaches, without pretending to be the year's limit.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Why does the lesson call the printed statutory figure and the operative figure two different things?",
+            options: ["An adjustment sits between them", "Because different agencies publish each of the two numbers separately", "Because the statute applies to plans and the notice applies to individuals", "Because one is a ceiling and the other is a floor on the same contribution"],
+            correctIndex: 0,
+            explanation: "The statute prints a base, then directs an adjustment with a base period and a rounding rule, so the two are not the same number.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Which of these does the deduction ceiling NOT depend on?",
+            options: ["The employer's match", "The deductible amount as adjusted for the taxable year in question", "The compensation includible in the individual's gross income that year", "Whether the individual or their spouse is an active participant"],
+            correctIndex: 0,
+            explanation: "The ceiling is the lesser of the deductible amount and includible compensation, then reduced for active-participant status.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "What connects Section 4's tax rules back to Section 1's access finding?",
+            options: ["Both start from whether a plan exists", "Both were read from the same statute on the same date in August 2026", "Both are published in the annual notice issued by the tax authority", "Both apply only to participants in participant-directed individual account plans"],
+            correctIndex: 0,
+            explanation: "The timing choice presupposes a plan and income to defer, and the active-participant rule turns the employer's choice into a tax consequence.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "In what sense is the traditional-against-Roth choice a comparison of two rates?",
+            options: ["One now and one later", "One for the employer and one for the employee on the same contribution", "One inside the plan and one on the individual retirement account", "One on the contribution and one on the earnings the account produces"],
+            correctIndex: 0,
+            explanation: "It compares the rate you face when contributing with the rate you will face when distributing, and only the first is known.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What kind of distribution besides age, death and disability can be qualified?",
+            options: ["A qualified special purpose distribution", "Any distribution taken after the 5-taxable-year period has elapsed", "A distribution taken in the year the individual separates from service", "A distribution rolled directly into another individual retirement plan"],
+            correctIndex: 0,
+            explanation: "The statute's list of qualifying events includes a qualified special purpose distribution alongside the three others.",
+            sourceLessonSlug: "traditional-and-roth-are-a-timing-choice",
+          },
+          {
+            prompt: "What does the phrase \"deductible amount\" refer to in the active-participant rule?",
+            options: ["The ceiling before any reduction", "The amount remaining after the phase-out has been applied in full", "The employer contribution that may be deducted by the business", "The portion of a distribution excluded from the individual's income"],
+            correctIndex: 0,
+            explanation: "It is the statutory ceiling on the deduction, which the active-participant reduction then operates on.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "Why is filing situation part of the shape of the active-participant rule?",
+            options: ["It changes which threshold applies", "It determines whether the individual counts as an active participant", "It decides whether the contribution may be made at all in that year", "It fixes the rounding increment used to adjust the deductible amount"],
+            correctIndex: 0,
+            explanation: "That is why a single remembered number is almost always the wrong one for the reader who remembered it.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "Which trust does the active-participant definition mention alongside the employer arrangements?",
+            options: ["A section 501(c)(18) trust", "A grantor trust established by the individual for estate planning", "The trust holding the assets of any participant-directed account plan", "A charitable remainder trust funded with appreciated employer stock"],
+            correctIndex: 0,
+            explanation: "The definition covers a trust described in section 501(c)(18) to which deductible contributions are made.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "For what period must active-participant status be tested?",
+            options: ["Any part of any plan year", "The whole of the taxable year without any interruption in coverage", "The final quarter of the calendar year in which the contribution is made", "The period beginning when the individual first became eligible to join"],
+            correctIndex: 0,
+            explanation: "The statute reaches any part of any plan year ending with or within the taxable year, so partial-year coverage counts.",
+            sourceLessonSlug: "the-active-participant-rule",
+          },
+          {
+            prompt: "Which statement about the two figures Section 4 quotes from the statutes is accurate?",
+            options: ["Neither is a current limit", "Both are the operative limits published for the current taxable year", "One is a current limit and the other is a base subject to adjustment", "Both were repealed and replaced by the annual notice mechanism"],
+            correctIndex: 0,
+            explanation: "The 15,000 and the 5,000 are both base amounts carrying their own adjustment mechanisms.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Why does this course say knowing the pattern beats knowing either number?",
+            options: ["Only the pattern stays true", "Because the published figure is often reported inaccurately by commentators", "Because the base amount is easier for a general reader to remember", "Because the rounding rule changes more often than the base period does"],
+            correctIndex: 0,
+            explanation: "The base amount and the operative amount are different things, and the mechanism connecting them is what survives every annual change.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+          {
+            prompt: "Which section of this course does the automatic enrollment provision speak to most directly?",
+            options: ["The access and participation section", "The section on fees and the participant disclosure that reports them", "The section on vesting schedules and what happens when you leave", "The section on how a Social Security benefit is actually computed"],
+            correctIndex: 0,
+            explanation: "It is a rule about the take-up rate, which is the ratio Section 1 separated out from access and participation.",
+            sourceLessonSlug: "a-base-amount-and-an-adjustment",
+          },
+        ],
+      },
+    },
   ],
 };
 
