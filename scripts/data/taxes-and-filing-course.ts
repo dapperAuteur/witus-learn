@@ -3342,5 +3342,777 @@ U.S. Department of the Treasury. (2025). *Report on the replacement of Direct Fi
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — Examination, and who gets examined
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "an-examination-is-a-procedure",
+      title: "16 · An examination is a procedure with a clock and a list of rights",
+      section: "Section 6 · Examination, and who gets examined",
+      body: `The word "audit" does most of its work as a threat. In the Code it is a procedure, with an authority behind it, deadlines attached to it, and a list of rights the Commissioner is directed to have employees act in accordance with.
+
+## The authority
+
+**26 U.S.C. § 7602(a)** opens: "For the purpose of ascertaining the correctness of any return, making a return where none has been made, determining the liability of any person for any internal revenue tax ... or collecting any such liability, the Secretary is authorized" to do several things, the first of which is "To examine any books, papers, records, or other data which may be relevant or material to such inquiry" (26 U.S.C. § 7602, n.d.).
+
+**Notice the purposes.** Ascertaining correctness is one of them, and it does not presume a wrong answer. Making a return where none has been made is another, which connects straight back to what an unfiled year leaves open.
+
+## Two shapes, and the difference is who arrives
+
+**A correspondence examination is a letter.** It asks for documents supporting particular items and it is worked by mail. **A field examination involves a person.** The Government Accountability Office reports that examinations of returns claiming the earned income credit "are primarily pre-refund audits and are conducted through correspondence, requiring less time," which IRS officials gave as one reason those examinations continued at scale while others contracted (U.S. Government Accountability Office, 2022).
+
+**Pre-refund matters.** It means the money has not been paid yet, and Section 4 of this course has already explained what a delayed refund does to a household budget.
+
+## The clock
+
+If an examination produces a proposed change, **26 U.S.C. § 6212(a)** authorises the Secretary, on determining a deficiency, to send notice of it "to the taxpayer by certified mail or registered mail" (26 U.S.C. § 6212, n.d.).
+
+Then **26 U.S.C. § 6213(a)**: "Within 90 days, or 150 days if the notice is addressed to a person outside the United States, after the notice of deficiency authorized in section 6212 is mailed (not counting Saturday, Sunday, or a legal holiday in the District of Columbia as the last day), the taxpayer may file a petition with the Tax Court for a redetermination of the deficiency" (26 U.S.C. § 6213, n.d.).
+
+**Ninety days from mailing, not from reading.** That is why the letter is sent by certified or registered mail, and why an address the Service does not have is a genuine problem rather than an inconvenience.
+
+## The rights, enumerated in the statute
+
+**26 U.S.C. § 7803(a)(3)** directs the Commissioner to ensure that employees are familiar with and act in accord with taxpayer rights, and then lists them: the right to be informed; to quality service; to pay no more than the correct amount of tax; to challenge the position of the Internal Revenue Service and be heard; to appeal a decision of the Internal Revenue Service in an independent forum; to finality; to privacy; to confidentiality; to retain representation; and to a fair and just tax system (26 U.S.C. § 7803, n.d.).
+
+**Ten of them, in the United States Code**, which is a different thing from a customer charter. The ninth one, the right to retain representation, is the hinge that connects this section back to the low-income taxpayer clinics in Section 5.
+
+## What the published numbers say about who is examined
+
+The GAO's May 2022 report analysed at least ten years of IRS audit data for individual returns and ten years of summary data on amounts collected, and interviewed officials across the agency's operating and research divisions. Its findings for tax years 2010 to 2019:
+
+- **Audit rates fell for every income level.** On average the rate fell "from 0.9 percent to 0.25 percent," which IRS officials attributed primarily to reduced staffing following decreased funding.
+- **They fell most at the top.** "Audit rates decreased the most for taxpayers with incomes of 200,000 dollars and above," because those examinations are more complex and require staff review.
+- **And the exception is the one to hold onto.** "However, the audit rate for lower-income taxpayers claiming the Earned Income Tax Credit (EITC) was higher than average" (U.S. Government Accountability Office, 2022).
+
+**Those are figures for stated tax years, from a stated dataset, in a dated report.** They are not a claim about the current filing season, and this course does not make one.
+
+:::reveal What is the first thing 26 U.S.C. 7602(a) authorises the Secretary to do? ||| Examine any books, papers, records or other data which may be relevant or material to the inquiry.
+
+:::reveal From what event do the 90 days in 26 U.S.C. 6213(a) run? ||| From the mailing of the notice of deficiency, not from the taxpayer reading it.
+
+:::reveal How did average individual audit rates change from tax year 2010 to tax year 2019? ||| They fell from 0.9 percent to 0.25 percent, and fell most for incomes of 200,000 dollars and above.
+
+## Vocabulary
+- **Examination**: the statutory inquiry authorised by 26 U.S.C. 7602, one of whose stated purposes is ascertaining the correctness of a return rather than presuming it wrong.
+- **Correspondence examination**: an examination worked by mail on particular items, which is how earned income credit claims are primarily handled.
+- **Notice of deficiency**: the certified or registered letter authorised by 6212(a), which starts the 6213(a) petition period.
+- **Pre-refund audit**: one conducted before the refund is paid, so the money is held rather than recovered afterwards.
+
+## Sources
+26 U.S.C. § 6212. (n.d.). *Notice of deficiency*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6212
+
+26 U.S.C. § 6213. (n.d.). *Restrictions applicable to deficiencies; petition to Tax Court*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6213
+
+26 U.S.C. § 7602. (n.d.). *Examination of books and witnesses*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/7602
+
+26 U.S.C. § 7803. (n.d.). *Commissioner of Internal Revenue; other officials*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/7803
+
+U.S. Government Accountability Office. (2022). *Tax compliance: Trends of IRS audit rates and results for individual taxpayers by income* (GAO-22-104960). https://www.gao.gov/products/gao-22-104960`,
+    },
+    {
+      slug: "the-disparity-and-the-method",
+      title: "17 · A disparity nobody could see, and the method that made it visible",
+      section: "Section 6 · Examination, and who gets examined",
+      body: `Start with the problem that makes this lesson interesting: **the Internal Revenue Service does not collect taxpayers' race.**
+
+The Government Accountability Office states the position and the consequence in one sentence: "Even though IRS does not collect information on the race and ethnicity of taxpayers, some audit selection criteria and methods could have different implications for taxpayers depending on their race or ethnicity" (U.S. Government Accountability Office, 2024).
+
+**So how would anyone measure a racial disparity in a system that is formally race-blind?** That question, and not the headline, is what this lesson teaches.
+
+## The study, and what it actually did
+
+Elzayn and colleagues published *Measuring and Mitigating Racial Disparities in Tax Audits* in the *Quarterly Journal of Economics* in 2025, working with anonymised administrative tax data alongside Treasury economists. The abstract of the working paper states the problem and the answer together: "Because neither we nor the IRS observe taxpayer race, we propose and employ a novel partial identification strategy to estimate these differences. Despite race-blind audit selection, we find that Black taxpayers are audited at 2.9 to 4.7 times the rate of non-Black taxpayers" (Elzayn et al., 2023, abstract).
+
+**Three things in that sentence deserve more attention than the multiple.**
+
+**First, race was imputed rather than observed.** The authors used Bayesian Improved First Name Surname Geocoding, which combines first name, surname and geography to produce a probability, drawing on the method of Imai and Khanna and adding first names because later work found them more informative than surnames for identifying Black individuals (Elzayn et al., 2023, section 3.2).
+
+**Second, the imputation was calibrated against real self-reported data.** The authors matched taxpayers to publicly available North Carolina voter registration records, which carry self-reported race because the state required registrants to report it until 1993. The match was by name and address, produced a 47 percent unique match rate, and yielded about 2.5 million matched records (Elzayn et al., 2023, section 4).
+
+**Third, the answer is a range and not a point.** "2.9 to 4.7 times" is what a partial identification strategy produces when the protected characteristic is unobserved. A course that reported a single multiple would be reporting a headline rather than a finding.
+
+## Where the disparity comes from
+
+The abstract is specific: "The main source of the disparity is differing audit rates by race among taxpayers claiming the Earned Income Tax Credit (EITC)" (Elzayn et al., 2023, abstract). GAO puts a figure on it, attributing it to that research: "audits of EITC returns accounted for 78 percent of the overall estimated racial disparity in audit rates" (U.S. Government Accountability Office, 2024).
+
+**And the study identifies which design choices drive it.** Using counterfactual selection models, the authors found that "maximizing the detection of underreported taxes would not lead to Black taxpayers being audited at higher rates," while three choices tend to increase that rate: "(1) designing audit selection algorithms to minimize the 'no-change rate'; (2) targeting erroneously claimed refundable credits rather than total under-reporting; and (3) limiting the share of more complex EITC returns that can be selected for audit" (Elzayn et al., 2023, abstract).
+
+## The no-change rate, and why a metric can do this
+
+GAO explains the first of those three in operational terms, and it is the clearest mechanism in the whole section.
+
+The agency seeks a low no-change rate because it indicates it is auditing non-compliant taxpayers. But the calculation "includes default audits, audits closed as a 'change' because taxpayers did not respond or provided insufficient responses to IRS's notices." And GAO reports: "IRS officials said their recent research found that Black taxpayers are more likely not to respond to IRS correspondence than taxpayers of other races." Default audits may also be more common among lower-income and EITC taxpayers because of difficulties in communicating with the agency, such as being transitory or not having bank accounts. Since past results inform current planning, the agency "could lead to W and I disproportionately selecting the types of returns that have historically resulted in filers' nonresponse rather than in confirmed noncompliance" (U.S. Government Accountability Office, 2024).
+
+**Read that slowly.** A non-response is counted as a success by the metric. Selecting on the metric therefore selects for non-response. Nothing in that chain mentions race, and the outcome is measurably raced.
+
+GAO also found that some risk scores in the automated selection system "vary by sex, which could skew selection, and have not been updated since 2001." It made six recommendations, and reports that the IRS agreed to all of them (U.S. Government Accountability Office, 2024).
+
+## The sentence to carry away
+
+The study's own closing claim is the general one: "Our results highlight how seemingly technocratic choices about algorithmic design can embed important policy values and trade-offs" (Elzayn et al., 2023, abstract).
+
+**This catalog has taught that shape before, from the private side.** MONEY-01 is about a credit decision made by a formally neutral model on a record you did not write, where the law's answer is to require a statement of specific reasons. Here the decider is public, the criteria are formally neutral, and the disparity was produced by choosing a metric. **The lesson is the same in both: neutrality of criteria is not neutrality of outcome, and the way you find out is to read what the system is optimising for.**
+
+:::reveal Why could the IRS's own records not answer the question this study asked? ||| Because the Service does not collect taxpayers' race, so the characteristic was unobserved.
+
+:::reveal What was the imputed race calibrated against, and how well did it match? ||| North Carolina voter registration records carrying self-reported race, matched by name and address at a 47 percent unique match rate, about 2.5 million records.
+
+:::reveal Why is the answer reported as a range rather than a single multiple? ||| Because a partial identification strategy on an unobserved characteristic produces bounds, so 2.9 to 4.7 times is the finding.
+
+## Vocabulary
+- **Partial identification**: an estimation strategy producing a range rather than a point estimate, used here because taxpayer race is not observed.
+- **BIFSG**: Bayesian Improved First Name Surname Geocoding, which combines first name, surname and geography to estimate the probability that a person belongs to a racial group.
+- **No-change rate**: the share of audited returns yielding no additional revenue, used as a performance measure, whose calculation counts an unanswered notice as a change.
+- **Default audit**: an examination closed as a change because the taxpayer did not respond or responded insufficiently.
+
+## Sources
+Elzayn, H., Smith, E., Hertz, T., Ramesh, A., Fisher, R., Ho, D. E., & Goldin, J. (2023). *Measuring and mitigating racial disparities in tax audits*. Stanford Institute for Human-Centered Artificial Intelligence. https://dho.stanford.edu/wp-content/uploads/IRS_Disparities.pdf
+
+Elzayn, H., Smith, E., Hertz, T., Guage, C., Ramesh, A., Fisher, R., Ho, D. E., & Goldin, J. (2025). Measuring and mitigating racial disparities in tax audits. *The Quarterly Journal of Economics*, *140*(1), 113-163. https://academic.oup.com/qje/article-abstract/140/1/113/7778259
+
+U.S. Government Accountability Office. (2024). *Tax enforcement: IRS audit selection processes for returns claiming refundable credits could better address equity* (GAO-24-106126). https://www.gao.gov/products/gao-24-106126`,
+    },
+    {
+      slug: "capstone-read-your-own-paperwork",
+      title: "18 · Capstone: read your own paperwork, and look one thing up properly",
+      section: "Section 6 · Examination, and who gets examined",
+      body: `Everything in this course was chosen because it can be checked against a document. This last lesson asks you to run the whole thing once, on documents that are yours.
+
+**Before you start, the promise this course made in lesson 1 and repeated in lesson 8, said once more because you are about to touch your own paperwork.** This is not tax advice and none of what follows is a recommendation. It does not tell you what to write on a certificate, which status to claim, whether to claim a credit, or whether to file. Every step below is an act of reading, and where a step produces a question about your own facts, the answer is a person: a volunteer preparation site, a low-income taxpayer clinic, or a professional you choose. **This course's job is to make you able to ask the question precisely.**
+
+## Five things to do
+
+**1. Read your own withholding certificate.** Find the one your employer holds, or the last one you submitted. Which steps did you complete, and which did you skip? What filing status does it show? Is it the status the statute would give you on the last day of this year?
+
+**2. Classify every line on one pay statement.** Which subtraction is chapter 24 withholding, credited back to you under section 31(a)(1)? Which is chapter 21 FICA, which is not? Which lines are not taxes at all? Then do the arithmetic by hand: gross, minus each deduction, equals net. If it does not reconcile, you have found a question worth asking.
+
+**3. Determine your filing status from the statute rather than from software.** Read 26 U.S.C. § 7703(a), § 7703(b) and § 2(b)(1) and ask which one describes your facts as of the close of the taxable year. If you would file jointly, read § 6013(d)(3) once more and be sure you know what joint and several means.
+
+**4. Look up exactly one current figure, properly.** Pick the basic standard deduction for your filing status for the current tax year. Find it in the current revision of IRS Publication 17 with the revision year on the cover, or in the annual revenue procedure, cited by number. **Write the tax year and the date you looked it up beside the figure.** That single habit is the most durable thing in this course.
+
+**5. Find today's free routes, with dates.** Open the IRS's own filing pages and record which free preparation routes are named right now and what the income limits are. Write the date you read each page. Compare what you find with what Section 5 records from 29 August 2026, and notice whether anything has moved.
+
+## The deliverable
+
+**One page, three headings**, the same discipline this catalog applies to its own sourcing:
+
+- **What the documents say.** The status on the certificate, the classification of each pay line, the statute that fits your facts, the figure with its year.
+- **Where they disagree.** A certificate that assumes one status while the statute suggests another. A pay statement that does not reconcile. A free-filing limit that has changed since this course recorded it.
+- **What I could not verify.** The honest column, and the useful one, because it becomes the list of questions to take to a preparation site or a clinic.
+
+## What you have at the end
+
+Not a completed return, and not advice. **You have the documents, the disagreements, and the knowledge of exactly which statute answers each remaining question.** You know that the money was taken under chapter 24 and credited back under section 31, that the return you sign is verified under penalties of perjury by section 6065, that filing status is fixed on one day by section 7703, that a credit pays out only if section 6401(b)(1) reaches it, that section 6402(m) holds two credits and nobody else, and that section 6402(c) through (f) can shrink what arrives.
+
+**And you know the habit that outlives every figure in this course:** find the primary document, read the sentence, and write down the date.
+
+:::reveal What is the deliverable of this capstone? ||| A one-page note under three headings: what the documents say, where they disagree, and what could not be verified.
+
+:::reveal Which heading of the note does the lesson call the useful one, and why? ||| What I could not verify, because it becomes the list of questions to take to a preparation site or a clinic.
+
+:::reveal What does this lesson say you have at the end, instead of a completed return? ||| The documents, the disagreements, and the knowledge of which statute answers each remaining question.
+
+## Vocabulary
+- **Reconcile**: to check that a computed total matches the figures it was built from, which is what step 2 asks of a pay statement.
+- **Primary document**: the statute, regulation, publication or agency page a claim can be read out of, as against a summary of one.
+- **Dating a figure**: recording the tax year a figure belongs to and the day it was read, which is what makes it checkable later.
+- **The honest column**: the record of what could not be verified, which the catalog treats as a working list rather than as a failure.
+
+## Sources
+26 U.S.C. § 2. (n.d.). *Definitions and special rules*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/2
+
+26 U.S.C. § 6013. (n.d.). *Joint returns of income tax by husband and wife*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6013
+
+26 U.S.C. § 7703. (n.d.). *Determination of marital status*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/7703
+
+Internal Revenue Service. (2026g). *Free tax return preparation for qualifying taxpayers*. https://www.irs.gov/individuals/free-tax-return-preparation-for-qualifying-taxpayers`,
+    },
+    {
+      slug: "quiz-examination",
+      title: "Section 6 review · Examination, the disparity, and your own paperwork",
+      section: "Section 6 · Examination, and who gets examined",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is the first thing 26 U.S.C. 7602(a) authorises the Secretary to do?",
+            options: ["Examine relevant books, papers and records", "Assess a deficiency without first issuing any written notice", "Seize property to satisfy an unpaid liability under the Code", "Refer a taxpayer's file to the Department of Justice for prosecution"],
+            correctIndex: 0,
+            explanation: "Any data which may be relevant or material to the inquiry, under the purposes the subsection's opening lists.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "Which purpose does 26 U.S.C. 7602(a) name FIRST in its opening?",
+            options: ["Ascertaining the correctness of any return", "Collecting a liability that has already been assessed", "Determining whether a criminal referral should be made", "Establishing the liability of a transferee or fiduciary"],
+            correctIndex: 0,
+            explanation: "It does not presume a wrong answer, which is a different starting point from the popular meaning of the word audit.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "Which section 7602(a) purpose connects to an unfiled year?",
+            options: ["Making a return where none has been made", "Ascertaining the correctness of a return already filed", "Collecting a liability from a transferee of the taxpayer", "Determining the liability of a fiduciary in equity"],
+            correctIndex: 0,
+            explanation: "Read beside 6501(c)(3), which allows assessment at any time where no return was filed.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "What is a correspondence examination?",
+            options: ["One worked by mail on particular items", "One conducted at the taxpayer's home or place of business", "One opened only where a criminal referral has been declined", "One handled entirely by an automated system with no human review"],
+            correctIndex: 0,
+            explanation: "A field examination involves a person, and the two shapes carry very different resource costs.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "How does GAO describe examinations of returns claiming the earned income credit?",
+            options: ["Primarily pre-refund and by correspondence", "Primarily field examinations conducted at the taxpayer's home", "Conducted only after the refund has already been paid out", "Opened at random from among all returns claiming any credit"],
+            correctIndex: 0,
+            explanation: "Requiring less time, which officials gave as a reason those examinations continued at scale.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "Why does pre-refund matter?",
+            options: ["The money has not been paid yet", "The taxpayer may amend the return before it is examined", "The limitation period has not yet started to run", "The preparer rather than the filer answers the inquiry"],
+            correctIndex: 0,
+            explanation: "It is held rather than recovered afterwards, which is the household effect Section 4 already worked through.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "How must a notice of deficiency be sent under 26 U.S.C. 6212(a)?",
+            options: ["By certified or registered mail", "By any method giving the taxpayer actual notice", "By personal service on the taxpayer or an agent", "By electronic delivery to the address on the last return"],
+            correctIndex: 0,
+            explanation: "Which is why an address the Service does not have is a genuine problem rather than an inconvenience.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "How long does 26 U.S.C. 6213(a) give for a Tax Court petition in the ordinary case?",
+            options: ["90 days", "30 days from receipt of the notice of deficiency", "12 months, matching the ordinary appeal period", "3 years, matching the assessment period in section 6501(a)"],
+            correctIndex: 0,
+            explanation: "Or 150 days where the notice is addressed to a person outside the United States.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "From what event does the 6213(a) period run?",
+            options: ["The mailing of the notice", "The taxpayer's receipt of the notice at their address", "The date the examination was formally opened by the Service", "The close of the taxable year the deficiency relates to"],
+            correctIndex: 0,
+            explanation: "Not from reading it, which is what makes the certified or registered mail requirement load-bearing.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "Which days does 6213(a) exclude from being the last day of the period?",
+            options: ["Saturday, Sunday and a District of Columbia legal holiday", "Any day on which the Tax Court is not sitting anywhere", "Any federal holiday observed in the taxpayer's own state", "Any day within the annual filing season for individual returns"],
+            correctIndex: 0,
+            explanation: "The parenthetical is part of the statutory sentence rather than an administrative practice.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "How many taxpayer rights does 26 U.S.C. 7803(a)(3) enumerate?",
+            options: ["Ten", "Five, grouped under a general fairness principle", "Twelve, matching the number in the agency's own charter", "None; the subsection refers to rights elsewhere in the Code"],
+            correctIndex: 0,
+            explanation: "The Commissioner is directed to ensure employees are familiar with and act in accord with them.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "Which enumerated right connects Section 6 back to the low-income taxpayer clinics?",
+            options: ["The right to retain representation", "The right to pay no more than the correct amount of tax", "The right to appeal a decision in an independent forum", "The right to a fair and just tax system"],
+            correctIndex: 0,
+            explanation: "A clinic under 26 U.S.C. 7526 is a free route into exercising it.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "Which of these is one of the enumerated rights in 7803(a)(3)?",
+            options: ["The right to finality", "The right to a jury trial in any tax controversy", "The right to a fixed deadline for any refund payment", "The right to be represented at the government's expense"],
+            correctIndex: 0,
+            explanation: "It sits alongside the rights to privacy, to confidentiality and to retain representation.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "What does the lesson say distinguishes the enumerated rights from a customer charter?",
+            options: ["They are in the United States Code", "They are enforced by an independent ombudsman", "They apply only during a correspondence examination", "They were adopted by the agency rather than by Congress"],
+            correctIndex: 0,
+            explanation: "Section 7803(a)(3) directs the Commissioner to ensure employees act in accord with them.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "What data did GAO analyse for its May 2022 report?",
+            options: ["At least ten years of IRS audit data", "A survey of taxpayers who had been examined that year", "The full text of every notice of deficiency issued in 2019", "Administrative records supplied by commercial preparers"],
+            correctIndex: 0,
+            explanation: "Plus ten years of summary data on amounts collected, with interviews across the agency's operating and research divisions.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "How did the average individual audit rate change from tax year 2010 to 2019?",
+            options: ["From 0.9 percent to 0.25 percent", "From 2.5 percent to 0.9 percent across all income levels", "From 0.25 percent to 0.9 percent as enforcement expanded", "It was unchanged, though its composition shifted by income"],
+            correctIndex: 0,
+            explanation: "IRS officials attributed the decline primarily to reduced staffing following decreased funding.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "For which taxpayers did audit rates decrease the most over that period?",
+            options: ["Those with incomes of 200,000 dollars and above", "Those claiming the earned income credit on a filed return", "Those filing as head of household with a qualifying child", "Those below the section 6012 filing threshold for their status"],
+            correctIndex: 0,
+            explanation: "Those examinations are generally more complex and require staff review, which staffing cuts hit hardest.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "Which group's audit rate did GAO report as higher than average?",
+            options: ["Lower-income taxpayers claiming the EITC", "Taxpayers with business income above one million dollars", "Taxpayers who filed after the section 6072 deadline", "Taxpayers who prepared their own returns without software"],
+            correctIndex: 0,
+            explanation: "Officials explained that those examinations require relatively few resources and prevent ineligible taxpayers from receiving the credit.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "What does the course say about the GAO audit-rate figures?",
+            options: ["They describe stated tax years, not today", "They are updated continuously and always describe the present", "They are estimates the agency disputes in its own publications", "They apply only to returns examined by correspondence"],
+            correctIndex: 0,
+            explanation: "They come from a stated dataset in a dated report, and the course makes no claim about the current season.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "What does the IRS not collect about taxpayers, according to GAO?",
+            options: ["Race and ethnicity", "Filing status, which the return supplies instead", "Occupation, which is asked for only on business returns", "Bank account details, which are optional on every return"],
+            correctIndex: 0,
+            explanation: "Which is what makes measuring a racial disparity in audit selection a methodological problem in the first place.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What did GAO say could still differ by race despite that absence?",
+            options: ["The implications of audit selection criteria", "The statutory rights available during an examination", "The rate at which the agency issues notices of deficiency", "The period within which a taxpayer may petition the Tax Court"],
+            correctIndex: 0,
+            explanation: "Some audit selection criteria and methods could have different implications for taxpayers depending on race or ethnicity.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Where was the study on racial disparities in tax audits published?",
+            options: ["The Quarterly Journal of Economics", "A report to Congress issued by the Treasury Department", "A working paper series with no subsequent peer review", "A Government Accountability Office report of its own"],
+            correctIndex: 0,
+            explanation: "In volume 140, issue 1, pages 113 to 163, in 2025, following a 2023 working paper.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What estimation strategy did the study use?",
+            options: ["Partial identification", "A randomised controlled trial among examined taxpayers", "A regression on self-reported race collected on the return", "A survey of taxpayers who had been selected for examination"],
+            correctIndex: 0,
+            explanation: "Because neither the researchers nor the IRS observe taxpayer race, the method produces bounds rather than a point.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What did the study find about relative audit rates?",
+            options: ["Black taxpayers audited at 2.9 to 4.7 times the rate", "Black taxpayers audited at exactly three times the rate", "No measurable difference once income was controlled for", "Higher rates for non-Black taxpayers at every income level"],
+            correctIndex: 0,
+            explanation: "Despite race-blind audit selection, which is the finding's whole point.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Which imputation method did the study use for race?",
+            options: ["Bayesian Improved First Name Surname Geocoding", "Self-reporting collected through a supplementary questionnaire", "Assignment by the Census tract of the taxpayer's address alone", "Matching against Social Security Administration records"],
+            correctIndex: 0,
+            explanation: "It combines first name, surname and geography, adding first names because later work found them more informative.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Why did the authors add first names to the surname-and-geography method?",
+            options: ["Later work found them more informative", "Because surnames are unavailable in administrative tax data", "Because the Census does not publish surname distributions", "Because geography alone produced probabilities above one"],
+            correctIndex: 0,
+            explanation: "The lesson cites the study's own section describing the choice and the source for it.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Against what did the authors calibrate their imputed race estimates?",
+            options: ["North Carolina voter registration records", "A national survey conducted by the Treasury Department", "Employer wage reports filed for the same taxable year", "Census block group population counts for each address"],
+            correctIndex: 0,
+            explanation: "Those records carry self-reported race because the state required registrants to report it until 1993.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Why do the North Carolina records carry self-reported race?",
+            options: ["The state required it of registrants until 1993", "Federal law requires every state to collect it at registration", "The records were assembled specifically for this research", "The state collects it from driver licensing records instead"],
+            correctIndex: 0,
+            explanation: "Reporting became optional after that year, which is why the source is a historical artefact rather than a current requirement.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What unique match rate did the taxpayer-to-voter record match produce?",
+            options: ["47 percent", "About 90 percent, since name and address are nearly unique", "About 12 percent, which the authors described as a limitation", "100 percent, because the match was performed on identifiers"],
+            correctIndex: 0,
+            explanation: "Yielding about 2.5 million matched records, matched by name and address.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "About how many matched records did the calibration exercise produce?",
+            options: ["About 2.5 million", "About 296,000, matching the Direct File figure", "About 76,000, matching the volunteer figure", "About 140,000, matching the Direct File pilot figure"],
+            correctIndex: 0,
+            explanation: "Which is what allowed the authors to assess the validity of their estimated race probabilities.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Why is the study's answer reported as a range?",
+            options: ["Partial identification produces bounds", "Because the authors reported results for two separate years", "Because the audit rate varied across the states in the sample", "Because the IRS published two conflicting sets of figures"],
+            correctIndex: 0,
+            explanation: "A course reporting a single multiple would be reporting a headline rather than a finding.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What did the study identify as the main source of the disparity?",
+            options: ["Audit rates among EITC claimants", "Differences in the income levels of the two groups compared", "The share of returns prepared by paid preparers in each group", "The rate at which each group petitions the Tax Court"],
+            correctIndex: 0,
+            explanation: "Differing audit rates by race among taxpayers claiming the earned income credit.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What share of the estimated racial disparity did GAO attribute to EITC audits?",
+            options: ["78 percent", "About half, with the remainder spread across other return types", "About 25 percent, which GAO described as a lower bound", "The whole of it, according to the academic study cited"],
+            correctIndex: 0,
+            explanation: "GAO attributes the figure to the academic study rather than asserting it independently.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What did the counterfactual models show about maximising detection of underreported tax?",
+            options: ["It would not raise Black taxpayers' audit rate", "It would raise the disparity beyond the measured range", "It would leave the disparity exactly where it currently is", "It could not be modelled because race is unobserved"],
+            correctIndex: 0,
+            explanation: "Which is why the study points at design choices rather than at an unavoidable trade-off.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Which design choice does the study name FIRST as tending to increase the disparity?",
+            options: ["Minimising the no-change rate", "Targeting the highest-income returns for examination first", "Auditing every return claiming a refundable credit in full", "Selecting returns at random from the whole filing population"],
+            correctIndex: 0,
+            explanation: "Followed by targeting erroneously claimed refundable credits, and limiting the share of complex EITC returns selectable.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What is the second design choice the study names?",
+            options: ["Targeting erroneously claimed refundable credits", "Prioritising returns with the largest dollar refunds claimed", "Excluding returns prepared by volunteers from the selection pool", "Weighting selection toward taxpayers in particular states"],
+            correctIndex: 0,
+            explanation: "Rather than targeting total under-reporting, which the counterfactual models treated differently.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What is the third design choice the study names?",
+            options: ["Limiting the share of complex EITC returns selectable", "Capping the total number of examinations opened each year", "Requiring a supervisor to approve each selection manually", "Excluding returns filed after the statutory deadline"],
+            correctIndex: 0,
+            explanation: "All three are choices about how a selection system is built rather than about who a rule names.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Why does the agency seek a low no-change rate?",
+            options: ["It indicates it is auditing non-compliant taxpayers", "Because a statute caps the share of examinations closing without change", "Because each no-change examination triggers a refund of costs", "Because the rate is published in the annual revenue procedure"],
+            correctIndex: 0,
+            explanation: "The problem GAO identifies is in how the rate is calculated rather than in wanting it low.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What does GAO say the no-change rate calculation includes?",
+            options: ["Default audits", "Examinations still open at the end of the fiscal year", "Examinations of returns claiming no refundable credit", "Only examinations closed with an agreed adjustment"],
+            correctIndex: 0,
+            explanation: "Audits closed as a change because taxpayers did not respond or provided insufficient responses to notices.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What is a default audit?",
+            options: ["One closed as a change for want of a response", "One opened automatically without any human selection step", "One that produces no additional tax and is closed as agreed", "One conducted in the field rather than by correspondence"],
+            correctIndex: 0,
+            explanation: "It counts toward the metric in the same direction as a genuine finding of non-compliance.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What did IRS officials say their own research found about correspondence?",
+            options: ["Black taxpayers are more likely not to respond", "Correspondence examinations resolve faster than field ones", "Response rates are unrelated to any demographic characteristic", "Most taxpayers respond only after a second notice is sent"],
+            correctIndex: 0,
+            explanation: "GAO reports the officials' statement as part of its explanation of how the metric can skew selection.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What other reasons does GAO give for default audits being common among lower-income filers?",
+            options: ["Being transitory or lacking bank accounts", "Filing later in the season than other taxpayers do", "Using volunteer preparers who cannot represent them", "Claiming credits with more complex eligibility rules"],
+            correctIndex: 0,
+            explanation: "Challenges that make communicating successfully with the agency more difficult.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What is the chain GAO describes from past results to future selection?",
+            options: ["Past results inform planning, selecting for nonresponse", "Past results are discarded each year and selection restarts", "Past results are reviewed by an independent body before use", "Past results affect only the number of examinations, not the type"],
+            correctIndex: 0,
+            explanation: "The division could disproportionately select the return types that historically produced nonresponse rather than confirmed noncompliance.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What does the lesson say is remarkable about that chain?",
+            options: ["Nothing in it mentions race", "It was designed deliberately to produce that outcome", "It applies only to returns claiming refundable credits", "It was corrected before the study was published"],
+            correctIndex: 0,
+            explanation: "A non-response is counted as a success by the metric, so selecting on the metric selects for non-response.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What did GAO find about some risk scores in the automated selection system?",
+            options: ["They vary by sex and date from 2001", "They are recalculated before every filing season", "They were removed after the academic study was published", "They are set by statute rather than by the agency"],
+            correctIndex: 0,
+            explanation: "Which GAO said could skew selection, and which it raised among its recommendations.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "How many recommendations did GAO make, and what was the response?",
+            options: ["Six, and the IRS agreed to all of them", "Two, and the IRS disagreed with both of them", "Ten, and the IRS agreed with half of them", "None, because the report was descriptive only"],
+            correctIndex: 0,
+            explanation: "Including calculating the no-change rate without default audits and using additional performance measures.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What is the study's own general conclusion?",
+            options: ["Technocratic design choices can embed policy values", "Race-blind selection guarantees race-neutral outcomes", "Audit selection should be performed manually rather than by system", "Refundable credits should not be examined before payment"],
+            correctIndex: 0,
+            explanation: "Its abstract says such choices can embed important policy values and trade-offs.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Which sibling course does this lesson connect the finding to?",
+            options: ["Credit, and the Decisions Made About You", "Banking, and Who Has No Bank, on the deposit account gate", "Cash Flow, and When the Money Actually Moves, on posting order", "Housing, on the appraisal and the recorded covenant"],
+            correctIndex: 0,
+            explanation: "A formally neutral private model on a record you did not write, answered by a requirement to state specific reasons.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What does the lesson say the two cases have in common?",
+            options: ["Neutral criteria are not neutral outcomes", "Both are governed by the Fair Credit Reporting Act", "Both give the affected person a right to a written explanation", "Both were corrected once the disparity was measured"],
+            correctIndex: 0,
+            explanation: "And the way you find out is to read what the system is optimising for.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What does this course say about giving tax advice in the capstone?",
+            options: ["It gives none, and repeats that before you start", "It gives limited advice once the reader has read the statutes", "It advises on filing status but not on credits", "It advises only where the reader uses a volunteer site"],
+            correctIndex: 0,
+            explanation: "Every step is an act of reading, and a question about your own facts is answered by a person rather than by the course.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "Whom does the capstone name as the answer to a question about your own facts?",
+            options: ["A volunteer site, a clinic, or a chosen professional", "The Internal Revenue Service's automated telephone system", "A commercial software product with a guarantee attached", "The employer that prepared the pay statement in question"],
+            correctIndex: 0,
+            explanation: "The course's job is stated as making you able to ask the question precisely.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "What is the first task of the capstone?",
+            options: ["Read your own withholding certificate", "Compute the credits you may be entitled to claim", "Look up the standard deduction for your filing status", "Find the free preparation routes available today"],
+            correctIndex: 0,
+            explanation: "Which steps were completed, which were skipped, and what filing status it shows.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "What does the second capstone task ask you to do with a pay statement?",
+            options: ["Classify every line and reconcile it by hand", "Compare it against the withholding tables for the year", "Send it to a volunteer site for review before filing", "Recompute the FICA amount using the current wage ceiling"],
+            correctIndex: 0,
+            explanation: "Which line is chapter 24, which is chapter 21, and which is not a tax at all.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "What does the capstone say a pay statement that does not reconcile has produced?",
+            options: ["A question worth asking", "Evidence that the employer failed to withhold correctly", "Grounds for filing an amended return for the year", "A reason to change the withholding certificate immediately"],
+            correctIndex: 0,
+            explanation: "The course stops at the question rather than supplying the answer to it.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "Which three sections does the third capstone task send you to?",
+            options: ["7703(a), 7703(b) and 2(b)(1)", "6012, 6072 and 6511, on filing and its deadlines", "6401, 6402 and 32, on credits and refunds", "7602, 6212 and 6213, on examination and the Tax Court"],
+            correctIndex: 0,
+            explanation: "To determine filing status from the statute rather than from software, as of the close of the taxable year.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "Which additional section does the capstone ask a would-be joint filer to reread?",
+            options: ["6013(d)(3)", "6015, on relief from joint and several liability", "7703(b), on married individuals living apart", "6065, on the declaration under penalties of perjury"],
+            correctIndex: 0,
+            explanation: "So that the reader knows what joint and several means before signing.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "How many current figures does the fourth capstone task ask you to look up?",
+            options: ["One", "Every figure the course chose not to print", "Three, being the deduction, the credit and the threshold", "None, because the course supplies them in an appendix"],
+            correctIndex: 0,
+            explanation: "The basic standard deduction for your status, from Publication 17 with its revision year or the revenue procedure by number.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "What does the capstone call the most durable thing in the course?",
+            options: ["Writing the year and date beside a figure", "Knowing the current standard deduction by heart", "Being able to compute gross to net without help", "Understanding the difference between the two chapters"],
+            correctIndex: 0,
+            explanation: "That single habit outlives every figure a lesson could have printed.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "What does the fifth capstone task ask you to record about free filing routes?",
+            options: ["Which are named and the date you looked", "Which had the best user reviews in the current season", "Which of them a commercial preparer recommends", "Which states participate in a State Free File Program"],
+            correctIndex: 0,
+            explanation: "Then compare with what Section 5 recorded on 29 August 2026 and notice whether anything has moved.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "What are the three headings of the capstone's one-page note?",
+            options: ["What they say, where they disagree, what I could not verify", "What I owe, what I am owed, and what I intend to claim", "What is accurate, what is inaccurate, and what I will amend", "What each document shows, who prepared it, and when it was signed"],
+            correctIndex: 0,
+            explanation: "The same discipline this catalog applies to its own sourcing.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "Which heading does the lesson call the useful one?",
+            options: ["What I could not verify", "What the documents say, since it is the longest section", "Where they disagree, since it identifies errors to correct", "None of them; the note itself is the useful product"],
+            correctIndex: 0,
+            explanation: "It becomes the list of questions to take to a preparation site or a clinic.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "What does the capstone say you have at the end?",
+            options: ["The documents, the disagreements, and the statutes", "A completed return ready for electronic transmission", "A recommendation about your withholding for next year", "A determination of which credits you are entitled to claim"],
+            correctIndex: 0,
+            explanation: "Not a completed return and not advice, which is the distinction the whole course keeps.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "Which habit does the capstone say outlives every figure in the course?",
+            options: ["Find the document, read the sentence, note the date", "Memorise the section numbers for each rule taught", "Compare two commercial products before choosing one", "Recompute the withholding at the start of each year"],
+            correctIndex: 0,
+            explanation: "It is the same method the course applied to the Free File limit, the VITA threshold and the credit amounts.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "Which section does the capstone recall for the perjury declaration?",
+            options: ["Section 6065", "Section 7206, which makes a false subscription a felony", "Section 6651, which imposes the failure-to-file penalty", "Section 6501, which limits the period for assessment"],
+            correctIndex: 0,
+            explanation: "It is what makes the signed return a sworn statement rather than a form.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "Which section does the capstone recall as fixing filing status on one day?",
+            options: ["Section 7703", "Section 2(b)(1), which defines head of household", "Section 6013(a), which permits a joint return", "Section 6072(a), which sets the filing deadline"],
+            correctIndex: 0,
+            explanation: "Determination is made as of the close of the taxable year, or at the time of a spouse's death.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "Which section does the capstone recall as deciding whether a credit can pay out?",
+            options: ["Section 6401(b)(1)", "Section 32(a)(1), which allows the earned income credit", "Section 26(a), which caps the nonrefundable personal credits", "Section 24(d)(1), which computes the refundable child credit"],
+            correctIndex: 0,
+            explanation: "It deems the excess of a subpart C credit over the tax to be an overpayment.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "Which subsections does the capstone recall as able to shrink a refund before it arrives?",
+            options: ["6402(c) through (f)", "6402(m) alone, which fixes the earliest payment date", "6501(a) through (e), which limit the period to assess", "6651(a)(1) and (a)(2), which impose the two penalties"],
+            correctIndex: 0,
+            explanation: "Past-due support, federal agency debts, state income tax obligations and unemployment compensation debts.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "What does the course mean by a primary document?",
+            options: ["The text a claim can be read out of", "Any document a government agency has published", "The most recent version of any summary of the law", "A document held by the taxpayer rather than the agency"],
+            correctIndex: 0,
+            explanation: "As against a summary of one, which is what the capstone asks a reader to prefer.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "What does it mean to reconcile, as the capstone uses the word?",
+            options: ["Check a total against the figures behind it", "Agree a disputed amount with the Internal Revenue Service", "Amend a return to match the employer's wage report", "Resolve a difference between federal and state figures"],
+            correctIndex: 0,
+            explanation: "Which is what step two asks of a pay statement, by hand.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "How does the catalog treat the honest column of unverified items?",
+            options: ["As a working list", "As a failure that disqualifies the rest of the note", "As material to be removed before the note is shared", "As a request for the agency to supply the missing answer"],
+            correctIndex: 0,
+            explanation: "It is the same posture the catalog applies to its own source checks.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "What did the course say a field examination involves that a correspondence one does not?",
+            options: ["A person", "A notice sent by certified or registered mail", "A right to petition the Tax Court within ninety days", "A pre-refund hold on the amount claimed"],
+            correctIndex: 0,
+            explanation: "Which is part of why the two shapes carry very different resource costs.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "What does the lesson say the word audit mostly does in ordinary use?",
+            options: ["Works as a threat", "Describes a criminal referral to the Department of Justice", "Refers to any correspondence received from the agency", "Names the assessment that follows a notice of deficiency"],
+            correctIndex: 0,
+            explanation: "In the Code it is a procedure with an authority, deadlines and an enumerated list of rights.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "What year did the study's working paper version carry?",
+            options: ["2023", "2025, the year of publication in the journal", "2022, the year of the GAO audit-rate report", "2019, the last tax year in the GAO audit-rate series"],
+            correctIndex: 0,
+            explanation: "The journal version followed in 2025, and the lesson cites both.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Which volume and pages carry the published version of the study?",
+            options: ["Volume 140, pages 113 to 163", "Volume 24, pages 1 to 47, in a Treasury working series", "Volume 106, pages 126 to 178, in a GAO report series", "Volume 32, pages 32 to 78, in a law review symposium"],
+            correctIndex: 0,
+            explanation: "In issue 1 of that volume, published in 2025.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What did GAO recommend the agency do with the no-change rate?",
+            options: ["Calculate it without default audits", "Publish it separately for each income band each year", "Replace it entirely with a measure of revenue collected", "Stop using it in planning until the study is replicated"],
+            correctIndex: 0,
+            explanation: "It was among six recommendations, all of which the IRS agreed to.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "Whose economists did the study work alongside?",
+            options: ["Treasury's", "The Government Accountability Office's", "The Congressional Budget Office's", "The Federal Reserve Board's"],
+            correctIndex: 0,
+            explanation: "The research used anonymised administrative tax data, with steps requiring non-anonymised information conducted by Treasury economists.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What does the lesson say the interesting question is, rather than the headline?",
+            options: ["How you measure a disparity in a race-blind system", "Whether the disparity is large enough to matter politically", "Which agency is responsible for correcting the disparity", "How many taxpayers were affected in a single filing season"],
+            correctIndex: 0,
+            explanation: "The method is what makes the finding a finding rather than an assertion.",
+            sourceLessonSlug: "the-disparity-and-the-method",
+          },
+          {
+            prompt: "What does 6213(a) restrict while the petition period runs?",
+            options: ["Assessment of the deficiency", "The taxpayer's ability to amend the return at issue", "The agency's authority to examine other taxable years", "The accrual of interest on the amount in dispute"],
+            correctIndex: 0,
+            explanation: "Which is what makes the ninety-day window a real protection rather than a formality.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "What did IRS officials give as a reason EITC examinations continued at scale?",
+            options: ["They require relatively few resources", "They are required by statute in every filing season", "They are conducted by an outside contractor at no cost", "They produce the largest recommended adjustments per return"],
+            correctIndex: 0,
+            explanation: "Being primarily pre-refund and conducted through correspondence, they require less time.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "What did IRS officials attribute the overall decline in audit rates to?",
+            options: ["Reduced staffing after decreased funding", "A deliberate policy of examining fewer returns each year", "Improved voluntary compliance across every income level", "A change in the statutory period for assessing tax"],
+            correctIndex: 0,
+            explanation: "Which hit the more complex high-income examinations hardest, since those require staff review.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+          {
+            prompt: "What did the capstone say the course's job is?",
+            options: ["To let you ask the question precisely", "To answer the question your documents raise", "To replace the need for a preparation site or clinic", "To supply the current figures for each tax year"],
+            correctIndex: 0,
+            explanation: "Every step is an act of reading, and a question about your own facts is answered by a person.",
+            sourceLessonSlug: "capstone-read-your-own-paperwork",
+          },
+          {
+            prompt: "Which right in 7803(a)(3) speaks to an independent forum?",
+            options: ["The right to appeal a decision", "The right to challenge the position of the Service", "The right to pay no more than the correct amount of tax", "The right to a fair and just tax system"],
+            correctIndex: 0,
+            explanation: "The right to challenge and be heard is listed separately from the right to appeal in an independent forum.",
+            sourceLessonSlug: "an-examination-is-a-procedure",
+          },
+        ],
+      },
+    },
   ],
 };
