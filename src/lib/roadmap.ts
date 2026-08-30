@@ -1597,6 +1597,33 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Two housing standards claimed that were fetched and then lost** (\`fix/standards-claims-and-contradictions\`;
+  NO migration, no seed). A research sweep on 2026-08-28 fetched Oklahoma's and Pennsylvania's
+  housing standards the same day MONEY-06 (\`housing-decisions\`) shipped, but its report never
+  reached the authoring agent, so the course went out claiming Texas, Georgia and Illinois and not
+  these two. **Both documents were re-fetched from the publisher on 2026-08-29 before anything was
+  claimed**, per rule 1: a saved transcription is not a fetch. Both matched the saved text exactly.
+  **Two new frameworks, and neither state had one, which is why they could be created safely.**
+  \`ok-personal-financial-literacy\` (Oklahoma Academic Standards for Personal Financial Literacy,
+  Grades 7-12, 2024, implementing the Passport to Financial Literacy Act of 2007) and
+  \`pa-personal-finance\` (final-form 22 Pa. Code Chapter 4, Appendix F, approved by the State Board
+  on 12 September 2024). Oklahoma files personal finance outside its social studies standards and
+  Pennsylvania had no personal finance standards at all before 2024, so neither state's existing
+  frameworks could have carried these codes.
+  **Three codes. OK PFL.10 partial**, because the standard's own sentence on comparing renting and
+  buying is met end to end while three things its objectives name are not taught: a menu of housing
+  options matched to needs and wants, a lease's grace period, late fees and utilities, and the fixed
+  against adjustable-rate mortgage distinction. **PA 17.3.9-12.J full**, the cleanest housing match
+  in any state's framework, and unusually clean for a structural reason worth recording: the K-2,
+  3-5 and 6-8 cells of that row are each printed "Intentionally blank", so it is a high-school-only
+  expectation with no younger-grade ladder behind it. **PA 17.6.9-12.D partial**, because it pairs
+  home purchases with higher education and this catalog teaches nothing about paying for college;
+  the gap is named in the entry rather than rounded away.
+  **Two rejections rewritten as superseded rather than deleted**, one per state, so a teacher can
+  see what changed: Pennsylvania's old "Personal finance and most of the Economics framework"
+  heading predated Appendix F existing, and Oklahoma had no personal-finance rejection at all
+  because it had no personal-finance framework. Oklahoma's new one names all thirteen unclaimed
+  standards and, more usefully, splits them into not-taught and not-yet-analysed.
 - 🔧 **Cash Flow, and When the Money Actually Moves** (\`content/money-03-cash-flow\`,
   **Money & Property**, **MONEY-03**; NO migration, **re-run \`pnpm seed:courses\`**). The third
   course in the \`personal-money\` series ("Your Money, and Who Decides"), from

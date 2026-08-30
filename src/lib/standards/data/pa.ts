@@ -32,6 +32,11 @@
 //     Secondary standards) remain the standards officially in force (a revision has been discussed
 //     for years but not adopted as of 2026). Codes are Standard.Grade.Indicator (5.3.12.E); the
 //     grade-12 indicators are the high-school anchors, transcribed verbatim.
+//   · Personal finance — BESPOKE, and BRAND NEW. Pennsylvania had no personal finance standards at
+//     all until the State Board approved final-form 22 Pa. Code Chapter 4, Appendix F on
+//     12 September 2024. They are grade-banded K-12, coded 17.<area>.<band>.<letter>, and this file
+//     did not cite them until 2026-08-29. Two grades 9 to 12 expectations are claimed; see that
+//     framework's own header.
 //
 // Provenance: pdesas.org served every document directly (no Wayback needed) — all fetched
 // 2026-07-17:
@@ -40,6 +45,9 @@
 //   · PA Core Writing in History and Social Studies (8.6) — the matching Writing PDF
 //   · Academic Standards for Civics and Government / Economics / Geography / History (Secondary,
 //     June 1, 2009) — static.pdesas.org/content/documents/Academic_Standards_for_<subject>_(Secondary).pdf
+// Provenance (personal finance): the final-form Appendix F PDF the State Board publishes on pa.gov
+// (that framework's sourceUrl), fetched 2026-08-29. Its file metadata carries a Word creation date
+// of 12 September 2024, matching the approval date printed in every page footer.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import type { JurisdictionFile } from "../types";
@@ -355,6 +363,64 @@ export const JURISDICTION: JurisdictionFile = {
         },
       ],
     },
+
+    // ── Academic Standards for Personal Finance (17.x) — NEW REGULATION, 2024 ──
+    //
+    // NEW FRAMEWORK, added 2026-08-29. Pennsylvania's four frameworks above are the 2009 secondary
+    // standards and the PA Core literacy standards. None of them is personal finance, because until
+    // 2024 Pennsylvania had no personal finance standards at all. The State Board approved these on
+    // 12 September 2024 as final-form 22 Pa. Code Chapter 4, Appendix F (Reg. #006-354). Nothing in
+    // this file cited Appendix F before, so no framework id collision is possible here.
+    //
+    // WHY IT WAS MISSED. A research sweep fetched 17.3.9-12.J on 2026-08-28, the day MONEY-06
+    // (`housing-decisions`) shipped, but that sweep's report never reached the authoring agent. The
+    // document was RE-FETCHED FROM pa.gov on 2026-08-29 before this entry was written, per rule 1:
+    // a saved transcription is not a fetch. Both codes below matched the saved text exactly.
+    //
+    // A COVER WORTH RECORDING, because it looks like an error and is not. The cover prints
+    // "January SEPTEMBER 2024" as running text, the struck-through-then-replaced month left visible
+    // in the final form. Every page footer carries "Final-form 22 Pa. Code Chapter 4, Appendix F
+    // (Reg. #006-354) / As approved by the State Board of Education on September 12, 2024", which is
+    // the date cited in `version`.
+    //
+    // WHY 17.3.9-12.J IS AN UNUSUALLY CLEAN CLAIM. The standards are printed as a grade-banded
+    // table, four columns wide: Kindergarten to Grade 2, Grades 3 to 5, Grades 6 to 8, Grades 9 to
+    // 12. In the "Major life purchases" row the first three cells each print "Intentionally blank",
+    // so the housing decision is a HIGH-SCHOOL-ONLY expectation with no younger-grade ladder behind
+    // it. A course that meets it meets the whole of what Pennsylvania asks on this topic.
+    {
+      id: "pa-personal-finance",
+      subject: "Social Studies",
+      name: "Pennsylvania Academic Standards for Personal Finance — Grades 9 to 12 (22 Pa. Code Ch. 4, App. F)",
+      publisher: "Pennsylvania Department of Education / State Board of Education",
+      version:
+        "Final-form 22 Pa. Code Chapter 4, Appendix F (Reg. #006-354) · approved by the State Board of Education September 12, 2024",
+      fetchedOn: "2026-08-29",
+      sourceUrl:
+        "https://www.pa.gov/content/dam/copapwp-pagov/en/stateboard/documents/about-the-board/board-actions/2024/personal%20finance%20standards.pdf",
+      adoption:
+        "Pennsylvania had no personal finance standards until the State Board approved these in September 2024 as Appendix F of 22 Pa. Code Chapter 4, so they sit apart from the 2009 secondary standards mapped elsewhere in this file. Six areas are numbered 17.1 through 17.6: Personal Finance Fundamentals, Income, Spending, Saving and Investing, Risk and Insurance, and Credit. This catalog reaches two of the grades 9 to 12 expectations, both through MONEY-06 (`housing-decisions`). 17.3.9-12.J, the housing decision, is met in full and is the single best fit for this course in any state's framework, since Pennsylvania's own sentence names the three things the course does: comparing renting and buying, counting upfront and ongoing costs, and the process of obtaining a mortgage or a lease. 17.6.9-12.D is claimed as a partial because it pairs home purchases with higher education, and this catalog teaches nothing about paying for college. Everything else in Appendix F is unclaimed and notClaimed names the areas.",
+      standards: [
+        {
+          code: "17.3.9-12.J",
+          text: "Analyze a housing decision, including comparing renting and buying, upfront and ongoing costs, and the process of obtaining a mortgage or a lease.",
+          claimIds: [
+            "money.rent-versus-buy-comparison",
+            "money.mortgage-mechanics-and-disclosures",
+            "money.tenancy-and-the-governing-state-law",
+          ],
+          coverage: "full",
+          note: "Full, and each of the standard's three named components has a section of the course behind it. COMPARING RENTING AND BUYING: built in the same units over a stated horizon, with the slogan version taken apart first (what a rent payment actually buys, including the risk transfer, against the single component of a mortgage payment that accrues to the payer), then rebuilt as a seven-line procedure the learner runs with their own assumptions and a sensitivity step. UPFRONT AND ONGOING COSTS: the upfront side is counted from the Closing Disclosure's own prescribed sections rather than estimated, with the down payment separated from closing costs because it is a transfer into the asset and not a cost; the ongoing side is property tax, lender-required insurance, maintenance and association dues on the owning side against rent and its term on the renting side. THE PROCESS OF OBTAINING A MORTGAGE OR A LEASE: the mortgage side is taught from the rules that time it, including the closed six-item definition of an application at 12 CFR § 1026.2(a)(3)(ii), the Loan Estimate deadlines at § 1026.19(e)(1)(iii), the three-business-day Closing Disclosure receipt rule at § 1026.19(f)(1)(ii)(A) and the good faith tolerances at § 1026.19(e)(3). The standard's verb is analyze rather than decide, which matters here: the course analyses the decision in full and deliberately answers no rent-or-buy question, so it meets the standard as written. On the lease side the course teaches the lease as the governing contract and the method for finding the state statute behind it, worked on one labelled state, rather than a tenant screening and application walkthrough; since Pennsylvania writes the clause disjunctively, the mortgage side carries the obtaining verb on its own.",
+        },
+        {
+          code: "17.6.9-12.D",
+          text: "Analyze the use of loans to finance higher education and home purchases, how they are obtained, and options for paying them back.",
+          claimIds: ["money.mortgage-mechanics-and-disclosures"],
+          coverage: "partial",
+          note: "Partial, and the gap is one of the standard's two purposes rather than one of its verbs. HOME PURCHASES, taught in full: a mortgage separated into the note and the security instrument that secures it, recording, term and escrow named from RESPA's own purposes at 12 U.S.C. § 2601(b)(3). HOW THEY ARE OBTAINED, taught in full: the six pieces of information that constitute an application at 12 CFR § 1026.2(a)(3)(ii) and the clock they start, the Loan Estimate's prescribed contents at § 1026.37 read heading by heading, and the Closing Disclosure with the three-business-day rule and the tolerances that make an estimate mean something. OPTIONS FOR PAYING THEM BACK, taught in part: the four steps that generate an amortisation schedule are run by hand, the term is shown to move the payment one way and the total interest the other, and prepayment is taught as a disclosed term rather than a courtesy, with the prepayment penalty and balloon payment statements the Loan Estimate must print. What the course does NOT teach on that clause is refinancing, or what happens when repayment goes wrong. HIGHER EDUCATION IS THE REAL GAP AND IT IS TOTAL: this catalog teaches nothing about student loans, tuition, aid or repayment plans, so half of what Pennsylvania names here has no course behind it. A teacher planning against 17.6.9-12.D gets the home-purchase half and must supply the education half from elsewhere.",
+        },
+      ],
+    },
   ],
 
   // Standards we CONSIDERED AND REJECTED — published as loudly as the claims.
@@ -380,7 +446,11 @@ export const JURISDICTION: JurisdictionFile = {
       body: "The catalog teaches both in depth. Pennsylvania's 2009 History standards are analytical standards organized by broad categories (“conflict and cooperation,” “continuity and change”) rather than by specific events, so — unlike Washington, D.C., whose standards name them explicitly — there is no Pennsylvania standard that names the Opium Wars or the Haitian Revolution to cite. We claim the world-history content only through the broad 8.4 categories, and mark those partial.",
     },
     {
-      heading: "Personal finance and most of the Economics framework.",
+      heading: "Personal finance — this heading has been superseded, and here is what replaced it.",
+      body: "Until 2026-08-29 the Economics rejection below was headed \"Personal finance and most of the Economics framework\", which was accurate when it was written and is not any more. Two things changed. Pennsylvania now HAS personal finance standards: the State Board approved 22 Pa. Code Chapter 4, Appendix F on 12 September 2024, six areas numbered 17.1 through 17.6, which did not exist when the 2009 Economics framework was mapped. And this catalog now teaches MONEY-06 (`housing-decisions`), which meets 17.3.9-12.J in full and part of 17.6.9-12.D; both are claimed above. The rest of Appendix F is still not claimed, and the areas are named so the gap stays visible: 17.1 Personal Finance Fundamentals (goal setting, decision making, financial institutions), 17.2 Income (careers, wages, benefits, payroll deductions), 17.4 Saving and Investing, 17.5 Risk and Insurance, and the rest of 17.6 Credit beyond the home-loan clause. Within 17.3 Spending, only the Major life purchases housing expectation is claimed; the budgeting, payment method, bill paying, vehicle, sales and property tax and charitable giving expectations are not taught. Courses in the same money series reach some of this and are mapped onto other states' personal-finance frameworks, but Appendix F has not been read against them, so nothing is claimed before it is checked.",
+    },
+    {
+      heading: "Most of the Grade 12 Economics framework.",
       body: "Scarcity and opportunity cost as named concepts (6.1), market competition and economic indicators (6.2.A-C, E, F), public goods and taxation policy (6.3.A, C), and the multinational-corporation and technology standards (6.4.C, D) were checked against the Grade 12 Economics framework and are not genuinely taught by these courses. We claim only the economic-systems, government-in-trade, labor-regulation, comparative-advantage, and supply-and-demand standards the catalog actually reaches.",
     },
     {
