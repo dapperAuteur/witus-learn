@@ -1646,6 +1646,68 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   and LA C.14.b. Each rewritten as superseded rather than deleted, and the LA entry also repairs a
   dangling "see the entry below" the MONEY-01 pass left pointing at nothing. **Six research checks
   filed.** Deliberately **not** in \`STAGED_COURSES\` yet.
+- 🔧 **Taxes, and the Money Taken Before You See It** (\`content/money-05-taxes\`,
+  **Money & Property**, **MONEY-05**; NO migration, **re-run \`pnpm seed:courses\`**). The fifth
+  course in the \`personal-money\` series ("Your Money, and Who Decides"), from
+  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.8. Registered at the
+  END of the seed shorthand loop rather than in numeric position, because MONEY-07 was authored in
+  parallel against the same array.
+  **The spine: the tax system takes your money before you see it, pays some people more than they
+  paid in, and holds exactly those people's money longest.** It is NOT a filing tutorial. The
+  teachable object is **26 U.S.C. 6402(m)**, a sentence that delays the refund of any return
+  claiming the earned income credit or the refundable child credit and nobody else's, where both
+  named credits are by statutory design conditioned on earned income at the lower end. A gate, in
+  statute, with a named affected class, which is the shape \`financing-without-access\` teaches as a
+  procedure and \`the-county-committee\` teaches from the federal side.
+  **The grammar of the withholding statute is the opening move.** 26 U.S.C. 3402(a)(1) puts the duty
+  on the EMPLOYER, not the worker, so the first encounter most people have with the tax system is a
+  subtraction they did not authorise. Two deductions sit on one pay statement under two different
+  chapters, and only chapter 24 is credited back under 26 U.S.C. 31(a)(1), which is the sentence
+  that makes a refund the return of an overpayment rather than a gift. 26 CFR 31.3402(f)(5)-1(a)
+  supplies the small pleasure of a regulation recording its own history: it names Form W-4 and notes
+  that it was previously the Employee's Withholding **Allowance** Certificate.
+  **The hardest rule in the track is the one this course lives under, and it is demonstrated rather
+  than asserted.** Brackets, standard deductions, credit amounts, phase-outs and program income
+  limits all reset annually, so the course asserts none of them; where a figure appears it carries
+  its tax year, its publisher and the date it was read. The demonstration is **26 U.S.C. 24(a)**,
+  whose own printed text says one thousand dollars while the amount in force is set by temporary
+  amendment. If the statute's own operative sentence can be stale, a summary table in a lesson has
+  no chance, which is why the course teaches a four-step lookup method instead.
+  **Free filing turns out not to be a program with a rule.** IRS Free File is a public-private
+  partnership whose terms sit in a memorandum of understanding, and Article 3.1 sets the annual
+  income limit as a target of making **approximately 70 percent of taxpayers eligible**, which is a
+  percentile in a private contract rather than a policy figure. The lesson gives that limit twice
+  with two dates for exactly that reason. VITA is an outgrowth of the Tax Reform Act of 1969 with
+  its matching grants made permanent at 26 U.S.C. 7526A, and the number worth carrying out of it is
+  the gap: roughly **67 million tax units eligible against about 1.6 million returns filed**. Direct
+  File is quoted from Treasury's 2 October 2025 report to Congress, including its Step 2 suspension
+  sentence, and the course states **no present-tense status** for it at all.
+  **The last section is why this belongs in THIS catalog.** The IRS does not collect race, so the
+  audit disparity had to be MEASURED rather than read off: Elzayn et al. (QJE 140(1), 113-163, 2025)
+  imputed race by Bayesian Improved First Name Surname Geocoding and calibrated it against North
+  Carolina voter records carrying self-reported race, at a 47 percent unique match rate over about
+  2.5 million matched records, and partial identification is why the answer is a range, **2.9 to 4.7
+  times**, rather than a headline number. GAO-24-106126 supplies the mechanism, and it is the
+  cleanest one in the series: the no-change rate counts an unanswered notice as a change, so
+  selecting on that metric selects for non-response, and nothing in the chain mentions race.
+  **It gives no tax advice**, said in prose in three separate lessons per the \`surplus-funds-basics\`
+  posture, and it hands the pricing of refund advances to MONEY-04 by name rather than re-narrating
+  a lesson that already exists.
+  **Standards: three rejections converted, no new framework created.** Texas §113.49(c)(3)(B) and
+  (c)(3)(C) in FULL (the taxes deducted from a paycheck, and the gross-to-net calculation), North
+  Dakota E.6_12.7.2 partial, and West Virginia Appendix A item 6 as a deliberately NARROW partial
+  whose note says in terms that the federal form taught is the withholding certificate rather than a
+  Form 1040. WV Appendix A item 8's claimIds were **extended rather than duplicated**, per the
+  rebase that once produced two SSEPF9 entries in Georgia. **Georgia SSEPF5 was read and REFUSED**
+  with its own \`notClaimed\` entry: element (a) names five taxes and this catalog teaches one,
+  element (b) is a taxonomy the course never builds, and the stem reaches spending and saving
+  choices the course will not advise on.
+  6 sections, 18 teaching lessons, 6 section quizzes (74/64/67/62/69/82 serving 5) and a
+  51-question final serving 10, for **469 pooled questions**, 54 reveal cards, and **zero findings**
+  from \`pnpm audit:course taxes-and-filing --spec\`; always-pick-longest scores 0 or 1 percent on
+  every bank. Every primary document was fetched and read on 2026-08-29. **Six research checks
+  filed, five of them on an ANNUAL cadence** because that is what this domain does.
+  Deliberately **not** in \`STAGED_COURSES\` yet.
 - 🔧 **Predatory Products, Priced** (\`content/money-04-predatory-products\`, **Money & Property**,
   **MONEY-04**; NO migration, **re-run \`pnpm seed:courses\`**). The fourth course in the
   \`personal-money\` series ("Your Money, and Who Decides"), from
