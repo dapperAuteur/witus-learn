@@ -242,6 +242,39 @@ unstyled fallback, which is what produced the bare `NEXT_HTTP_ERROR_FALLBACK;403
 Covered by [tests/signed-out-redirect.test.ts](tests/signed-out-redirect.test.ts), which also fails
 the build if any `(tenant)` page reaches for the API-shaped guard again.
 
+## Private courses (`courses.visibility = 'private'`)
+
+A course can be **held back entirely** rather than published unvetted. `visibility: "private"` is an
+**insert-only** option on `seedAuthoredCourse` (like `price`), so the public flip is done once in the
+admin UI and survives every later re-seed. A private course writes `isPublished: false`, so every
+catalog surface filters it out, and `getSpecializations` excludes it explicitly. The **owner can
+still study it end to end** — enroll, quiz and complete all check `canAccessCourse` rather than
+`isPublished` — which is what makes a private course a real course and not a draft. Coverage:
+`tests/isolation/private-course.db.test.ts`.
+
+`publishHoldReason` records **why** in one honest sentence, and it is not decoration: it is the
+difference between "nobody has got to this yet" and "this is deliberately waiting on something".
+
+Two courses ship this way today, both **free by decision** rather than by omission:
+
+- **`deaf-america`** — "Deaf America: Language, Schools, and the Record". Held until a **Deaf
+  co-author** has reviewed it. It teaches history, culture, linguistics and law and **teaches no
+  signs**, because every usable sign-media dataset bars a paid course (ASL-LEX carves the videos
+  out, WLASL forbids commercial use, ASL Citizen forbids redistribution). Black ASL is the centre:
+  from 1869, seventeen states and DC ran separate schools for Black Deaf children, and because those
+  underfunded schools kept teaching in sign while white schools practised oralism, Black signers were
+  later found to use **more** traditional and standardised forms, not fewer.
+- **`blind-and-low-vision-america`** — "Blind and Low-Vision America: The Code, the Schools, and the
+  Record". Held until a **blind co-author or reviewer** has read it, and its credit section is
+  explicitly unfinished. **Braille is a code, not a language**, so this course is not the Deaf course
+  with the nouns swapped: it goes to the War of the Dots, the schools, credit, and the law.
+
+Both state their author's standpoint in lesson one, flag per source whether a Deaf or blind author or
+organisation wrote it, and teach contested claims as contested with the holders named. Neither is in
+`STAGED_COURSES` while private, and both carry a reasoned `BACKLOG` line in the standards ratchet
+rather than a standards claim, because claiming coverage for a course no educator can see would be a
+claim about content that may still change.
+
 ## Vetting and "Coming soon" (`courses.vetted_at`)
 
 `courses.vetted_at` records that the **platform owner** personally reviewed a course against its
