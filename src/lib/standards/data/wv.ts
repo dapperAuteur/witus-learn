@@ -57,6 +57,28 @@
 // was withdrawn on 2026-08-29 and re-filed as Appendix A item 9, because the current rule has no
 // SS.C.38. The mirror was not re-read for the withdrawal, so this framework's fetchedOn is unchanged;
 // what changed is which framework the personal-finance claim sits in.
+//
+// ⚠️ MEASURED 2026-08-29, RECORDED, AND DELIBERATELY NOT ACTED ON. While settling the SS.C.38
+// contradiction, the current rule was in hand, so every SS.C code this file claims was compared
+// against it. The research check `wv-2520-4-2025-renumbering` asks whether the lower-numbered codes
+// moved as well. Fourteen of the twenty did not; six did, and two of those six matter:
+//   · SS.C.25. This file claims it for "Explain how supply and demand affects prices, profits, and
+//     availability of goods and services." Under the current rule that sentence is SS.C.28, and
+//     SS.C.25 is the Fourteenth Amendment equal-protection-and-due-process standard. A West Virginia
+//     teacher checking this claim against the rule in force lands on a different subject entirely.
+//   · SS.C.26. This file claims it for "Debate the role of government in a free-market economy."
+//     That sentence appears NOWHERE in the current rule, and SS.C.26 is now about opportunity costs
+//     and scarcity. The standard was not renumbered; it was removed or rewritten past recognition.
+// The other four are text edits under a stable code: SS.C.1's stem became "Be aware of the
+// importance of informed citizens ..." rather than "Strive to become vigilant, informed citizens
+// ...", SS.C.2 gained "the balance (or relationship) between", SS.C.17's verb moved from Assess to
+// Examine, and SS.C.5's sub-bullets were repunctuated (its missing closing parenthesis is fixed in
+// the current rule). SS.C.3, 6-15, 19, 20 and 22 are unchanged, which includes both of the
+// flagship's homes, SS.C.13 and SS.C.20.
+// This is NOT fixed here on purpose: repairing it means re-transcribing the Civics and Economics
+// entries from the current rule and re-deciding coverage on each, which is a pass of its own. The
+// check stays open and now carries a measurement instead of a suspicion.
+//
 // PROVENANCE (ELA): transcribed VERBATIM from the West
 // Virginia English Language Arts Standards, Grades 9-12 (Grade 11 section), retrieved 2026-07-19 from
 // a byte-faithful district mirror (Marion County Schools) of the WVBE Policy 2520.1A standards; the

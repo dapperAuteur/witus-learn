@@ -36,6 +36,23 @@
 // (Banking, and Who Has No Bank) made two of the six SS.EC.FL Financial Literacy standards
 // claimable for the first time; the old blanket rejection of that sub-strand is rewritten as
 // superseded rather than deleted, and the four still unclaimed are named individually.
+//
+// ⚠️ MEASURED 2026-08-29, RECORDED, AND DELIBERATELY NOT ACTED ON. The research check
+// `il-social-science-2022-edition` asks whether the 2022-23 edition renumbered the other strands the
+// way it renumbered Financial Literacy. It did. The current document was extracted and compared code
+// by code against every SS.<strand>.<n>.9-12 entry in this file, and the result is not ambiguous:
+//   · The current edition prints SS.9-12.<strand>.<n>. The 2017 shape SS.<strand>.<n>.9-12 appears
+//     ZERO times in it. All 25 codes this file claims use the retired shape.
+//   · Of those 25, about ten have their verbatim text still findable in the current document; the
+//     rest were rewritten. Some also MOVED: this file's SS.IS.4.9-12 text is closest to the current
+//     SS.9-12.IS.5, while the current SS.9-12.IS.4 is a different standard about choosing sources.
+//     SS.9-12.CV.1 gained a clause about the marginalisation of multiple groups. SS.9-12.EC.1 and
+//     SS.9-12.H.1 were both rewritten. The Geography strand's numbering has gaps the 2017 one does
+//     not, so its codes cannot be assumed to line up either.
+// This is NOT fixed here on purpose. Correcting it means re-reading every claimed standard against
+// the current text and rewriting each entry's code, text and coverage, which is a pass of its own
+// and not a side effect of a housing-standards fix. The check stays open and now has a measurement
+// in it rather than a suspicion. Do not renumber these codes mechanically: the texts moved too.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { COMMON_CORE_ELA } from "../shared/common-core-ela";
