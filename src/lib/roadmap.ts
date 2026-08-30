@@ -5,6 +5,52 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **"Continue as ..." instead of asking a signed-in visitor to sign in again**
+  (\`fix/decisions-01-02\`, no migration). Signing in on a WitUS-branded host sent you to the WitUS
+  login page even when another tab already had you signed in to a WitUS app. BAM chose **option B**
+  on 2026-08-30: the login form renders immediately as it always did, the question is asked in
+  parallel, and the button becomes **Continue as ⟨name⟩** if an answer arrives. Deliberately not
+  automatic, so the common case (nobody is signed in anywhere) pays no latency at all.
+  **The tenant gate is unchanged and load-bearing.** The check runs only where the button already
+  renders, \`isWitusBrandedHost(host) || tenant.flags.ecosystemSso\`, resolved on the server from the
+  request host. A white-label school's browser is never even told the IdP's URL, because that single
+  request would both reveal the ecosystem exists and tell it someone visited that school. The
+  component repeats the gate as a hard precondition so a future caller who forgets the wrapper gets a
+  dark button rather than a leak.
+  **It asks over CORS rather than redirecting with \`prompt=none\`.** The IdP does support
+  \`prompt=none\`, but that is a navigation: you leave the login page to ask, which is the automatic
+  design that was rejected, and the only way to ask without leaving is a hidden iframe, which
+  Safari's ITP already blocks. The probe carries the IdP's cookie as a third-party cookie, so it
+  answers on Chrome/Edge and answers nothing under Safari ITP or Firefox Total Cookie Protection.
+  **That is the designed degraded state, not a bug**: no answer means no change, and the visitor
+  keeps the exact page they already had. The name it returns is display copy and never a credential;
+  clicking still runs the real OIDC code flow.
+  **Two fixes ride along.** A deep link now survives the ecosystem flow (the button hardcoded
+  \`\${window.location.origin}/\`, so a learner sent here from a lesson landed on the catalog), and a
+  sign-in the IdP declines returns quietly to the login form instead of Better Auth's raw error page,
+  carrying the one-shot \`?sso=tried\` marker that, with a sessionStorage twin written **before** the
+  redirect, is what stops the classic ask/decline/ask loop.
+  **Still open, and needing BAM:** the IdP must allow this app's origins with credentials (a change
+  in the witus.online repo, task 302), and **sign-out is the mirror problem and is not built**.
+  \`authClient.signOut()\` ends only this app's session, so the IdP session survives and the next
+  visit can offer "Continue as" again, which reads as a broken logout.
+- 🔧 **A note can belong to the COURSE, not only to a lesson** (\`fix/decisions-01-02\`,
+  **migration 0061**, run \`pnpm db:migrate:prod\`). Notes shipped attached to a lesson, and a
+  learner has two kinds: "this paragraph is confusing", which belongs to a passage, and "come back
+  to the worksheet in section 3", which belongs to the whole course and previously had to be
+  parked on whichever lesson happened to be open. The course page now carries a **My notes on this
+  course** panel for anyone who can already read the course (enrolled, instructor, invited
+  auditor), gated exactly like the search box beside it and enforced again server-side.
+  **No new table and no new visibility rule**: the same \`lesson_notes\` row with
+  \`lesson_id IS NULL\`, so search, markdown export and tenant scoping are the code that already
+  existed, and the isolation suite covers the new shape in both directions (invisible to another
+  tenant, invisible to another user in the same tenant, and each panel excludes the other's notes).
+  Private with no share control at all, and that is a **database fact**: a teacher note is content
+  attached to a LESSON (the plans/59 guardrail against an inbox), so
+  \`lesson_notes_teacher_lesson_chk\` refuses a teacher note with no lesson rather than trusting
+  every future route to remember. Notes key off stable lesson/course UUIDs, never array positions,
+  so a course re-seed leaves them where their author put them. The export's assembly moved into a
+  pure \`src/lib/notes-export.ts\` and is unit tested.
 - 🔧 **Cross-course links, approved before a learner sees them**
   (\`feat/cross-link-approvals\`, **migration 0060**, run \`pnpm db:migrate:prod\`). \`pnpm cross-links\`
   finds where one course talks about another and does not link to it; whether two courses SHOULD link

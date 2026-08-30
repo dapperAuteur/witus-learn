@@ -364,6 +364,17 @@ rewritten the note is kept and shown as "the text this was attached to has chang
 dropped ([src/lib/annotations.ts](src/lib/annotations.ts) recomputes this at read time — nothing
 is persisted, so restoring the text un-orphans the note).
 
+A note can also belong to the **course** rather than to any one lesson: the course page carries a
+**My notes on this course** panel for anyone who can read the course (enrolled, instructor, or an
+invited auditor), for the notes that have no passage to point at ("come back to the worksheet in
+section 3"). Same table, `lesson_id IS NULL`
+([src/db/schema/notes.ts](src/db/schema/notes.ts)), so course notes are searched, exported and
+tenant-scoped by exactly the same code as lesson notes and no anchoring logic is duplicated. They
+are private with no share control at all, because a teacher note is content attached to a LESSON
+and a database constraint (`lesson_notes_teacher_lesson_chk`) makes that a fact rather than a
+convention. Notes key off stable lesson/course UUIDs, never array positions, so re-seeding a
+course leaves every note where its author put it.
+
 Sharing is deliberately narrow (plans/61): a student shares a single note with a teacher (an
 owner of a cohort they belong to), revocably — never a bulk toggle, never student↔student. A
 teacher attaches a note to a lesson for a cohort or a subset of it (one `audience` model), which
@@ -383,7 +394,10 @@ teaching half follows the signed-in account (so a child being acted as never inh
 All queries live in [src/db/queries/notes.ts](src/db/queries/notes.ts) behind the scoped DAL;
 `tests/isolation/notes.db.test.ts` pins the visibility rules (cross-tenant, cross-author,
 unshared-note, recipient-narrowing, teacher-search, and guardian-view leakage all fail the suite,
-including the one that matters most: a student's personal note never reaches their guardian).
+including the one that matters most: a student's personal note never reaches their guardian, and
+including the course-level notes in both directions). The export's assembly is pure and unit
+tested in [tests/notes-export.test.ts](tests/notes-export.test.ts).
+
 ## In-app recording: audio and video
 
 In-app lesson recording captures **video as well as audio**: 720p front-camera capture with a

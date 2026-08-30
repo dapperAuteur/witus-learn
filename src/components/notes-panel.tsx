@@ -51,6 +51,8 @@ interface NotesResponse {
 
 interface SearchResult {
   id: string;
+  /** null = a COURSE-level note (about the course as a whole, not any one lesson). */
+  lessonId: string | null;
   lessonTitle: string | null;
   lessonSlug: string | null;
   kind: "personal" | "teacher";
@@ -731,7 +733,9 @@ function NoteSearch({
                         {r.lessonTitle ?? "Open lesson"}
                       </Link>
                     ) : (
-                      (r.lessonTitle ?? "")
+                      // A note with no lesson is a COURSE-level note; say so rather than
+                      // rendering a blank where a lesson name would be.
+                      (r.lessonTitle ?? (r.lessonId === null ? "About this course" : ""))
                     )}
                   </p>
                 </li>
