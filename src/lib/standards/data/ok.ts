@@ -15,6 +15,11 @@
 //     tribal-sovereignty lessons have a genuine home. We also map the World History (WH), United
 //     States History (USH), Economics (E), and World Human Geography (WG) courses from the same
 //     document.
+//   · Personal financial literacy — BESPOKE, and a SEPARATE DOCUMENT. Oklahoma does not file
+//     personal finance inside the social studies standards; it publishes the Oklahoma Academic
+//     Standards for Personal Financial Literacy, Grades 7-12 (2024) on its own, implementing the
+//     fourteen areas of instruction the Passport to Financial Literacy Act of 2007 requires. Added
+//     2026-08-29 and mapped at PFL.10 only; see that framework's own header for the whole story.
 //   · ELA / Math — BESPOKE, and DEFERRED this pass. Oklahoma repealed its Common Core adoption in
 //     2014 and writes its own Oklahoma Academic Standards for ELA and Math; our media-literacy,
 //     source-evaluation, and BVC rhetoric work WOULD map to the OAS ELA reading-informational and
@@ -32,12 +37,19 @@
 // the authoritative-values rule). Codes are cited exactly as printed: USG.<strand>.<n>, WH.<n>.<n>,
 // USH.<n>.<n>, E.<n>.<n>, WG.<n>.<n>. Multi-part standards (sub-letters A, B, …) are cited by their
 // parent code with the covered sub-part named in the note.
+// Provenance (personal financial literacy): the 2024 Oklahoma Academic Standards for Personal
+// Financial Literacy were transcribed VERBATIM from OSDE's own published PDF (that framework's
+// sourceUrl), fetched 2026-08-29. Its cover, its running header and its PDF Title field all print
+// the 2024 edition, so no version has to be inferred.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import type { JurisdictionFile } from "../types";
 
 const OK_SS =
   "https://oklahoma.gov/content/dam/ok/en/osde/documents/services/standards-learning/social-studies/Oklahoma-Academic-Standards-for-Social-Studies.pdf";
+
+const OK_PFL =
+  "https://oklahoma.gov/content/dam/ok/en/osde/documents/services/literacy-policy-and-programs/oklahoma-academic-standards/2024-OAS-Personal-Financial-literacy-Standards.pdf";
 
 export const JURISDICTION: JurisdictionFile = {
   state: "OK",
@@ -406,6 +418,55 @@ export const JURISDICTION: JurisdictionFile = {
         },
       ],
     },
+
+    // ── Personal Financial Literacy (PFL) — a SEPARATE Oklahoma document ───
+    //
+    // NEW FRAMEWORK, added 2026-08-29. Oklahoma does not file personal finance inside the social
+    // studies standards mapped above. It publishes a standalone document, the Oklahoma Academic
+    // Standards for Personal Financial Literacy, Grades 7-12, which implements the fourteen areas
+    // of instruction the Passport to Financial Literacy Act of 2007 (70 O.S. § 11-103.6h) requires.
+    // Nothing in this file cited it before, so no framework id collision is possible here.
+    //
+    // WHY IT WAS MISSED. A research sweep fetched PFL.10 on 2026-08-28, the day MONEY-06
+    // (`housing-decisions`) shipped, but that sweep's report never reached the authoring agent, so
+    // the course went out claiming Texas and Illinois housing standards and not Oklahoma's. The
+    // document was RE-FETCHED FROM OSDE on 2026-08-29 before this entry was written, per rule 1:
+    // a saved transcription is not a fetch. The re-fetch matched the saved text exactly, including
+    // the document's own inconsistent code punctuation (PFL.10.1 carries a dot between the strand
+    // and the objective; PFL 10.2 and PFL 10.3 do not, and the same document prints its fourth
+    // standard as "PFL 4."). Codes are transcribed as printed, quirk included.
+    //
+    // ONE STANDARD OF FOURTEEN. PFL.10 is the housing standard and it is the only one this file
+    // claims. The other thirteen are earning income, taxes, banking and financial services,
+    // managing an account, saving and investing, retirement, borrowing, interest and credit cards,
+    // fraud and identity theft, insurance, gambling, bankruptcy and charitable giving. Several sit
+    // close to other courses in the same money series, but this document has not been analysed
+    // against those courses, so none of them is claimed here. See notClaimed.
+    {
+      id: "ok-personal-financial-literacy",
+      subject: "Social Studies",
+      name: "Oklahoma Academic Standards for Personal Financial Literacy (PFL), Grades 7-12",
+      publisher: "Oklahoma State Department of Education (OSDE)",
+      version:
+        "Oklahoma Academic Standards for Personal Financial Literacy · 2024 · Grades 7-12 (Passport to Financial Literacy Act of 2007, 70 O.S. § 11-103.6h)",
+      fetchedOn: "2026-08-29",
+      sourceUrl: OK_PFL,
+      adoption:
+        "Oklahoma requires personal financial literacy of every graduate under the Passport to Financial Literacy Act of 2007, and OSDE publishes the standards for it as their own grades 7-12 document rather than as a strand of the social studies standards mapped elsewhere in this file. Fourteen standards, PFL.1 through PFL.14, cover the fourteen areas of instruction the Act names. This catalog reaches exactly one of them: PFL.10, the renting-versus-buying standard, through MONEY-06 (`housing-decisions`). It is claimed as partial, because the standard's own sentence is met end to end while three specific things its objectives name are not taught: a menu of housing options matched to needs and wants, a lease's grace period, late fees and utilities, and the fixed against adjustable-rate mortgage distinction. The other thirteen standards are not claimed and notClaimed names each one.",
+      standards: [
+        {
+          code: "PFL.10",
+          text: "The student will explain and compare the costs and benefits of renting versus buying a home.",
+          claimIds: [
+            "money.rent-versus-buy-comparison",
+            "money.tenancy-and-the-governing-state-law",
+            "money.mortgage-mechanics-and-disclosures",
+          ],
+          coverage: "partial",
+          note: "Partial, and the partiality sits in the objectives rather than in the standard. PFL.10's own sentence is what MONEY-06's fourth section does end to end: the two payments compared component by component in the same units over a stated horizon, the transaction costs at both ends counted from the Closing Disclosure's own prescribed sections rather than estimated, and a sensitivity step where the learner changes one assumption at a time. OBJECTIVE BY OBJECTIVE, so a teacher planning against this standard knows exactly what arrives. PFL.10.1, the advantages and disadvantages of renting versus buying: the advantages-and-disadvantages half is taught, including the risk transfer a tenant buys and the fact that only the principal component of a mortgage payment accrues to the payer, worked arithmetically rather than asserted. NOT taught is that objective's stated method, comparing how various housing options meet different needs and wants, because the course compares two tenures rather than a menu of housing types and it answers no rent-or-buy question at all. PFL 10.2, the elements and terms of a standard lease agreement: the lease is taught as the governing contract with the state statute supplying every term it leaves out, and the deposit is worked in full from one labelled state's section (A.R.S. § 33-1321 on the cap, on the default that any fee not designated nonrefundable is refundable, and on the fourteen-day itemisation clock, plus § 33-1368 on the five-day notices). Of the five elements Oklahoma names in its parenthetical the course reaches the deposit and the due date; GRACE PERIOD, LATE FEES AND UTILITIES ARE NOT TAUGHT. PFL 10.3, financial considerations when purchasing a place to live: sub-item B is taught in depth, with the down payment separated from the closing costs it is constantly confused with, the escrow account named from RESPA's own purposes at 12 U.S.C. § 2601(b)(3), property taxes and lender-required insurance treated as costs of holding that buy no ownership stake, the prepayment penalty as a term 12 CFR § 1026.37 requires the Loan Estimate to state, and an amortisation table generated by hand rather than shown. SUB-ITEM A IS THE GAP: the course lists no types of lenders and does not teach the fixed against adjustable-rate distinction Oklahoma calls for by name.",
+        },
+      ],
+    },
   ],
 
   // Standards we CONSIDERED AND REJECTED — published as loudly as the claims.
@@ -413,6 +474,10 @@ export const JURISDICTION: JurisdictionFile = {
     {
       heading: "Mathematics — nothing.",
       body: "This catalog does no mathematics instruction, so it meets no Oklahoma Academic Standards mathematics standard.",
+    },
+    {
+      heading: "Personal Financial Literacy — one standard of fourteen, and the other thirteen named.",
+      body: "Oklahoma publishes its personal financial literacy standards as their own grades 7-12 document under the Passport to Financial Literacy Act of 2007, and until 2026-08-29 this file did not cite that document at all. It now claims exactly one of the fourteen standards, PFL.10 on renting versus buying, as a partial, with the three things its objectives ask for and the course does not deliver named in that entry. The other thirteen are not claimed, and the reasons split into two kinds that must not be blurred together. NOT TAUGHT ANYWHERE IN THIS CATALOG: PFL.1 (earning an income and managing it), PFL.2 (local, state and federal taxes), PFL.5 (saving and investing), PFL.6 (planning for retirement), PFL.11 (insurance as risk management), PFL.12 (the financial impact of gambling), PFL.13 (bankruptcy) and PFL.14 (charitable giving). NOT YET ANALYSED, which is a different thing and is said plainly rather than rounded into a claim: PFL.3 (banks and other financial service providers, whose objective PFL 3.3 names banked and unbanked individuals in those words), PFL.4 (managing and reconciling a bank account), PFL.7 (the process and responsibilities of borrowing, whose objective PFL 7.1 sub-item B names mortgages among credit products), PFL.8 (interest, credit cards and online commerce) and PFL.9 (consumer fraud and identity theft). Courses in this catalog's money series teach material in that territory and are mapped onto other states' personal-finance frameworks, but nobody has yet read those courses against Oklahoma's own PFL text, so nothing is claimed against these five. Claiming them on the strength of a family resemblance to another state's standard is exactly the padding this list exists to prevent.",
     },
     {
       heading: "English Language Arts — deferred, not denied (fetch-or-don't-cite).",

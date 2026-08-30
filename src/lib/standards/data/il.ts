@@ -36,6 +36,23 @@
 // (Banking, and Who Has No Bank) made two of the six SS.EC.FL Financial Literacy standards
 // claimable for the first time; the old blanket rejection of that sub-strand is rewritten as
 // superseded rather than deleted, and the four still unclaimed are named individually.
+//
+// ⚠️ MEASURED 2026-08-29, RECORDED, AND DELIBERATELY NOT ACTED ON. The research check
+// `il-social-science-2022-edition` asks whether the 2022-23 edition renumbered the other strands the
+// way it renumbered Financial Literacy. It did. The current document was extracted and compared code
+// by code against every SS.<strand>.<n>.9-12 entry in this file, and the result is not ambiguous:
+//   · The current edition prints SS.9-12.<strand>.<n>. The 2017 shape SS.<strand>.<n>.9-12 appears
+//     ZERO times in it. All 25 codes this file claims use the retired shape.
+//   · Of those 25, about ten have their verbatim text still findable in the current document; the
+//     rest were rewritten. Some also MOVED: this file's SS.IS.4.9-12 text is closest to the current
+//     SS.9-12.IS.5, while the current SS.9-12.IS.4 is a different standard about choosing sources.
+//     SS.9-12.CV.1 gained a clause about the marginalisation of multiple groups. SS.9-12.EC.1 and
+//     SS.9-12.H.1 were both rewritten. The Geography strand's numbering has gaps the 2017 one does
+//     not, so its codes cannot be assumed to line up either.
+// This is NOT fixed here on purpose. Correcting it means re-reading every claimed standard against
+// the current text and rewriting each entry's code, text and coverage, which is a pass of its own
+// and not a side effect of a housing-standards fix. The check stays open and now has a measurement
+// in it rather than a suspicion. Do not renumber these codes mechanically: the texts moved too.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { COMMON_CORE_ELA } from "../shared/common-core-ela";
@@ -245,7 +262,7 @@ export const JURISDICTION: JurisdictionFile = {
       name: "Illinois Learning Standards for Social Science — Economics and Financial Literacy, High School (SS.EC)",
       ...IL_SS_META,
       adoption:
-        "The BVC series supplies the Economics strand through real commodity markets — scarcity and incentives, market regulation, trade, and globalization. Illinois's Financial Literacy sub-strand (SS.EC.FL) was rejected wholesale until 2026-08-28, when the banking course made two of its six standards genuinely reachable; the other four are still not taught and notClaimed names each one.",
+        "The BVC series supplies the Economics strand through real commodity markets — scarcity and incentives, market regulation, trade, and globalization. Illinois's Financial Literacy sub-strand (SS.EC.FL) was rejected wholesale until 2026-08-28, when the banking course made two of its six standards genuinely reachable; the other four are still not taught and notClaimed names each one. READ THE CODES IN THIS FRAMEWORK AS THE 2017 EDITION, because that is what they are: every SS.EC code here, the two SS.EC.FL entries included, is transcribed from the 2017 printing, and ISBE's current document renumbers the Financial Literacy sub-strand to SS.9-12.EC.FL and extends it from six standards to nine. That current strand has its own framework in this file. Re-reading the rest of these Economics codes against the current document is filed as a research check rather than guessed at, and notClaimed sets out exactly what that means for a teacher.",
       standards: [
         {
           code: "SS.EC.1.9-12",
@@ -394,10 +411,14 @@ export const JURISDICTION: JurisdictionFile = {
     // saving, investing, inflation or policy analysis the course does not teach. There is no honest
     // full claim in it.
     //
-    // TRANSCRIPTION NOTE, PRESERVED. ISBE's published PDF prints FL.2's code as "S.9-12.EC.FL.2",
-    // with a single S, for that one code alone. It is a typo in the state's document. We do not
-    // claim FL.2, so the malformed code does not appear below; it is recorded here so a later
-    // editor who meets it in the PDF knows it was seen.
+    // TRANSCRIPTION NOTE, PRESERVED AND NOW CORROBORATED. ISBE's published PDF prints FL.2's code
+    // as "S.9-12.EC.FL.2.", with a single S, for that one code alone. It is a typo in the state's
+    // document. We do not claim FL.2, so the malformed code does not appear below; it is recorded
+    // here so a later editor who meets it in the PDF knows it was seen. A SECOND, INDEPENDENT
+    // EXTRACTION on 2026-08-29 reproduced the whole strand, FL.1 through FL.9, and returned both
+    // that single-S code and "SS.9-12.EC.FL.6. No standard." character for character, so neither is
+    // a reading error on our side. The file's embedded creation date is 2025-05-05, which matches
+    // the "updated 05/05/2025" this framework's `version` records.
     {
       id: "il-financial-literacy",
       subject: "Social Studies",
@@ -451,12 +472,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "Illinois adopted the NGSS verbatim (January 2014) as its science standards, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
     },
     {
-      heading: "Financial Literacy — this rejection has been superseded, and its codes were also out of date.",
-      body: "Until 2026-08-28 this entry said Illinois's Economics strand carried a six-standard Financial Literacy sub-strand and that the catalog claimed none of SS.EC.FL.1-6. Two things were wrong with that by then. First, the catalog now teaches one personal-finance course, MONEY-01, on how a consumer credit decision is made. Second, and more seriously, SS.EC.FL.1-6 are the codes of the 2017 printing; ISBE's current document, adopted for implementation in 2022-2023, renumbered the strand to SS.9-12.EC.FL, extended it from six standards to nine, rewrote the text of every one, and prints FL.6 as \"No standard.\" Two of the nine are claimed above, SS.9-12.EC.FL.9 and SS.9-12.EC.FL.4, both as partials with their gaps named. FL.9's mortgage-lending clause, which the credit course could not reach and which this entry previously deferred to a course that did not yet exist, was filled on 2026-08-28 when MONEY-06 (`housing-decisions`) shipped; the standard stays partial because its economic-indicators half is still not taught. The other seven are not claimed. FL.3 is time, interest rates and inflation over a saving lifetime, and FL.5 is diversified investment risk and return; both are outside this catalog. FL.1 (costs and benefits subject to factors outside one's control) and FL.7 (cognitive biases, environmental influences and access to resources in financial decision-making) each contain a clause the course genuinely teaches, the structural constraint on access, but each also asks for a decision-making method the course does not deliver, so they are left unclaimed rather than stretched to a thin partial. FL.2 is information-gathering, planning and budgeting; the course teaches the first and refuses the other two, since it gives no financial advice. FL.8 is risk disposition and opportunity recognition, which the course does not teach at all. FL.6 has no standard to claim. ONE OPEN QUESTION, FILED RATHER THAN GUESSED: only the FL strand was re-fetched this pass, so the SS.CV, SS.EC, SS.G, SS.H and SS.IS codes elsewhere in this file still cite the 2017 document and may have moved in the same revision. That is recorded as a research check rather than assumed either way.",
-    },
-    {
-      heading: "Financial Literacy (SS.EC.FL) — two of six, now that banking is taught.",
-      body: "This entry used to say the catalog taught no personal finance and claimed none of SS.EC.FL.1-6. That is no longer true, and the correction is recorded here rather than deleted so a teacher can see what changed. As of 2026-08-28, SS.EC.FL.2 (making informed financial decisions by collecting information) and SS.EC.FL.4 (the costs and benefits of payment options) are claimed, partially, and supersede the blanket rejection. Four remain unclaimed and are named so the gap stays visible: SS.EC.FL.1 (strategies to increase income), SS.EC.FL.3 (time, interest rates and inflation on saving), SS.EC.FL.5 (risks and rates of return of diversified investments), and SS.EC.FL.6 (the costs and benefits of insurance). Nothing here claims the budgeting half of FL.2 or the credit and interest halves of FL.4, both of which belong to later courses in the same series and none of which is claimed before it is taught.",
+      heading: "Financial Literacy — one rejection, two editions of codes, and the whole history in order.",
+      body: "Until 2026-08-28 this entry said Illinois's Economics strand carried a six-standard Financial Literacy sub-strand and that the catalog claimed none of SS.EC.FL.1-6. Two things were wrong with that by then. First, the catalog now teaches one personal-finance course, MONEY-01, on how a consumer credit decision is made. Second, and more seriously, SS.EC.FL.1-6 are the codes of the 2017 printing; ISBE's current document, adopted for implementation in 2022-2023, renumbered the strand to SS.9-12.EC.FL, extended it from six standards to nine, rewrote the text of every one, and prints FL.6 as \"No standard.\" Two of the nine are claimed above, SS.9-12.EC.FL.9 and SS.9-12.EC.FL.4, both as partials with their gaps named. FL.9's mortgage-lending clause, which the credit course could not reach and which this entry previously deferred to a course that did not yet exist, was filled on 2026-08-28 when MONEY-06 (`housing-decisions`) shipped; the standard stays partial because its economic-indicators half is still not taught. The other seven are not claimed. FL.3 is time, interest rates and inflation over a saving lifetime, and FL.5 is diversified investment risk and return; both are outside this catalog. FL.1 (costs and benefits subject to factors outside one's control) and FL.7 (cognitive biases, environmental influences and access to resources in financial decision-making) each contain a clause the course genuinely teaches, the structural constraint on access, but each also asks for a decision-making method the course does not deliver, so they are left unclaimed rather than stretched to a thin partial. FL.2 is information-gathering, planning and budgeting; the course teaches the first and refuses the other two, since it gives no financial advice. FL.8 is risk disposition and opportunity recognition, which the course does not teach at all. FL.6 has no standard to claim. ONE OPEN QUESTION, FILED RATHER THAN GUESSED: only the FL strand was re-fetched this pass, so the SS.CV, SS.EC, SS.G, SS.H and SS.IS codes elsewhere in this file still cite the 2017 document and may have moved in the same revision. That is recorded as a research check rather than assumed either way. MERGED 2026-08-29, AND THIS IS THE PART A TEACHER SHOULD READ. Until then a SECOND Financial Literacy rejection sat beside this one and contradicted it. That entry said Illinois's strand has six standards, that SS.EC.FL.6 is insurance, and that SS.EC.FL.2 and SS.EC.FL.4 are claimed. Under the edition ISBE currently publishes none of those three statements holds: the strand has nine standards, FL.6 is printed \"No standard.\", and the two claims made against the current numbering are FL.9 and FL.4, not FL.2 and FL.4. Its substance is folded in here instead of being deleted, because the thing it described is real and is still in this file. The Economics framework above carries entries coded SS.EC.FL.2.9-12 and SS.EC.FL.4.9-12, added on 2026-08-28 when MONEY-02 shipped, and those are 2017 codes, consistent with the rest of that framework and inconsistent with this one. Concretely: FL.2 at 2017 numbering (informed financial decisions by collecting information, planning and budgeting) is claimed as a partial on its collecting-information half alone, and FL.4 at 2017 numbering (the costs and benefits of payment options) is claimed as a partial on its payment half, with credit, lenders and interest expressly left to MONEY-01. The four the old entry named as unclaimed at 2017 numbering, and which stay unclaimed, are FL.1 (strategies to increase income), FL.3 (time, interest rates and inflation on saving), FL.5 (diversified investment risk and return) and FL.6 (the costs and benefits of insurance). SO ILLINOIS CURRENTLY SHOWS THE SAME TEACHING TWICE, UNDER TWO EDITIONS OF THE SAME STRAND, and that is not a state of affairs to leave standing: it belongs to the same open question as the rest of the SS.EC codes, and it is deliberately NOT patched here, because moving those two entries means re-reading the whole 2017-cited half of this file against the current document rather than editing two lines. The research check is the place that job is tracked.",
     },
     {
       heading: "The Illinois Civics flagship's Illinois-specific structure has no Illinois code to cite.",
