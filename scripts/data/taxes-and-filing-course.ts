@@ -1415,5 +1415,657 @@ Filing status selects the rate schedule and the basic standard deduction, and bo
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — Credits, and where the tax system pays out
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "refundable-or-not",
+      title: "7 · The distinction that decides whether a credit can pay you",
+      section: "Section 3 · Credits, and where the tax system pays out",
+      body: `Two words separate a benefit that can put money in a bank account from one that can only ever reduce a bill to zero. They are **refundable** and **non-refundable**, and the difference is written into the Code rather than into a brochure.
+
+## First, a deduction is not a credit
+
+**A deduction reduces the income the tax is computed on. A credit reduces the tax itself.**
+
+Write it as arithmetic. Let the rate applying to the last dollars of a filer's income be **r**. A deduction of **D** reduces the tax by **r times D**. A credit of **C** reduces the tax by **C**.
+
+**Put a labelled hypothetical rate of 10 percent on it.** A deduction of 1,000 saves 100. A credit of 1,000 saves 1,000. The credit is ten times the deduction, for the same headline figure.
+
+**Ten percent is a number chosen to make the arithmetic clean.** It is not a current bracket rate, and this course prints none, because the rate schedule is adjusted annually and a figure written into a lesson outlives its accuracy silently.
+
+## Then, the floor
+
+A **non-refundable** credit can reduce the tax to zero and no further. The Code does this through a limitation: section 24(d)(1)(A) refers in terms to "the limitation under section 26(a)", which is the general cap on the aggregate of the nonrefundable personal credits (26 U.S.C. § 24, n.d.). Below zero, the credit simply stops.
+
+A **refundable** credit does not stop. **26 U.S.C. § 6401(b)(1)** says that where the amount allowable as credits under subpart C, which the section itself labels as relating to refundable credits, exceeds the tax imposed by subtitle A reduced by the credits allowable under subparts A, B, D and G, "the amount of such excess shall be considered an overpayment" (26 U.S.C. § 6401, n.d.).
+
+**That single deeming sentence IS the definition of refundable.** There is nothing else to it. Congress did not build a payment system; it declared an excess to be an overpayment and let the existing refund machinery in section 6402(a) do the rest.
+
+## The same credit amount, two different outcomes
+
+Take a filer whose computed tax for the year is **400**.
+
+**Give them a non-refundable credit of 1,000.** The tax goes to zero. The remaining 600 of credit does nothing at all. It is not carried, it is not paid, it simply is not used.
+
+**Give them a refundable credit of 1,000 instead.** The tax goes to zero and the remaining 600 is deemed an overpayment under 6401(b)(1). Section 6402(a) then requires the Secretary to refund the balance. **Six hundred dollars leaves the Treasury and arrives with the filer.**
+
+**Same headline number, same taxpayer, same year, opposite result.** The only thing that changed was which subpart of the Code the credit sits in.
+
+## Why that is checkable rather than arguable
+
+Whether a credit is refundable is not a matter of opinion or of how generous a program feels. **It is a drafting fact**: either the credit is enacted in subpart C, or it is not. You can look up the section and read where it sits. Section 32, the earned income credit, is there. So is the portion of section 24 that subsection (d) makes refundable, which is why the next two lessons take both apart.
+
+:::reveal What is the difference between a deduction and a credit? ||| A deduction reduces the income the tax is computed on, while a credit reduces the tax itself.
+
+:::reveal Which sentence of the Code is the definition of a refundable credit? ||| 26 U.S.C. 6401(b)(1), which says the excess shall be considered an overpayment.
+
+:::reveal On a computed tax of 400, what does a refundable credit of 1,000 produce that a non-refundable one does not? ||| A 600 overpayment, which section 6402(a) requires to be refunded.
+
+## Vocabulary
+- **Deduction**: an amount subtracted from income before the tax is computed, so its value depends on the rate applying to the last dollars of income.
+- **Credit**: an amount subtracted from the tax itself, so its value is its face amount.
+- **Non-refundable credit**: one limited by section 26(a) to the tax, which can reduce a liability to zero and does nothing beyond that point.
+- **Refundable credit**: one enacted in subpart C, whose excess over the tax section 6401(b)(1) deems an overpayment so that section 6402(a) refunds it.
+
+## Sources
+26 U.S.C. § 24. (n.d.). *Child tax credit*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/24
+
+26 U.S.C. § 6401. (n.d.). *Amounts treated as overpayments*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6401
+
+26 U.S.C. § 6402. (n.d.). *Authority to make credits or refunds*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6402`,
+    },
+    {
+      slug: "the-earned-income-credit",
+      title: "8 · The earned income credit, and what it is actually for",
+      section: "Section 3 · Credits, and where the tax system pays out",
+      body: `This is the place where the tax system stops collecting revenue and starts paying money out, and it is the centre of this course.
+
+**26 U.S.C. § 32(a)(1)**: "In the case of an eligible individual, there shall be allowed as a credit against the tax imposed by this subtitle for the taxable year an amount equal to the credit percentage of so much of the taxpayer's earned income for the taxable year as does not exceed the earned income amount" (26 U.S.C. § 32, n.d.).
+
+**Read the shape rather than the numbers.** A percentage of earnings, up to a ceiling. Below the ceiling the credit rises with every extra dollar earned. At the ceiling it plateaus. Above a further threshold it phases out until it reaches zero. The percentages and the dollar figures sit in section 32(b), and **section 32(j) adjusts the dollar amounts for inflation**, which is the statute telling you in its own text that the numbers are not fixed.
+
+**So this lesson prints none of them.** The current figures live in the year's revenue procedure and in the current revision of IRS Publication 17, and anyone quoting one should name the tax year beside it.
+
+## You must have worked
+
+**§ 32(c)(2)(A)** defines earned income as "wages, salaries, tips, and other employee compensation, but only if such amounts are includible in gross income for the taxable year, plus the amount of the taxpayer's net earnings from self-employment for the taxable year" (26 U.S.C. § 32, n.d.).
+
+**That is the design fact that explains the whole program.** A household with no earned income receives no earned income credit, however low its income is. The credit is not conditioned on need alone; it is conditioned on having earnings for the year, and it grows with them across the first range. It is a wage subsidy written as a tax credit, and its shape follows from that.
+
+**It also means the program excludes people by construction**, which is a fact about the statute rather than a complaint about it. Someone out of work for the whole year, or unable to work, is outside section 32(a)(1) at the first clause.
+
+## Who counts as eligible
+
+Two routes. With a qualifying child, **§ 32(c)(3)(A)** defines the term by reference to section 152(c), determined without regard to one of its paragraphs and without section 152(e).
+
+Without a qualifying child, **§ 32(c)(1)(A)(ii)** sets three conditions together: the individual's "principal place of abode is in the United States for more than one-half of such taxable year"; the individual, or if married either spouse, "has attained age 25 but not attained age 65 before the close of the taxable year"; and the individual is not a dependent for whom a deduction is allowable to another taxpayer for a taxable year beginning in the same calendar year (26 U.S.C. § 32, n.d.).
+
+**An age band, a residence test, and a not-a-dependent test, all three at once.**
+
+## How large the program is
+
+The credit is not a minor provision. The Treasury and academic researchers who studied its administration state the position plainly: "the Earned Income Tax Credit (EITC) has replaced welfare as the largest cash-based safety net program in the United States" (Elzayn et al., 2023, p. 1).
+
+**Hold that beside what you learned in Section 1.** The largest cash safety-net program in the country is delivered through the refund machinery, which means it is delivered once a year, to people who filed a return, after the return is processed. Section 4 of this course is about the date that delivery is allowed to happen.
+
+## What this course will not do
+
+**It will not tell you whether you qualify.** Eligibility turns on relationship, age and residency definitions in section 152, on facts about a household this course does not know, and on figures that change every year. **Getting it wrong in either direction is expensive**, which is exactly why the next lesson exists and why Section 5 names the free, non-commercial places to get help: the volunteer preparation programs, and the IRS's own free publications.
+
+:::reveal What does 26 U.S.C. 32(c)(2)(A) require before any earned income credit is available? ||| Earned income: wages, salaries, tips and other employee compensation includible in gross income, plus net earnings from self-employment.
+
+:::reveal What does section 32(j) tell you about the dollar amounts in the statute? ||| That they are adjusted for inflation, so they are not fixed figures to memorise.
+
+:::reveal What three conditions does 32(c)(1)(A)(ii) impose on an eligible individual with no qualifying child? ||| A principal place of abode in the United States for over half the year, age at least 25 and under 65, and not being another taxpayer's dependent.
+
+## Vocabulary
+- **Earned income**: the statutory measure at 32(c)(2)(A), employee compensation includible in gross income plus net earnings from self-employment, without which no credit arises.
+- **Credit percentage**: the rate applied to earned income up to the earned income amount, set in section 32(b) rather than in the allowance sentence.
+- **Phase-out**: the range above which the credit falls back toward zero as income rises, which is why the credit is largest in the middle rather than at the bottom.
+- **Qualifying child**: defined at 32(c)(3)(A) by reference to section 152(c), with two named modifications.
+
+## Sources
+26 U.S.C. § 32. (n.d.). *Earned income*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/32
+
+Elzayn, H., Smith, E., Hertz, T., Ramesh, A., Fisher, R., Ho, D. E., & Goldin, J. (2023). *Measuring and mitigating racial disparities in tax audits*. Stanford Institute for Human-Centered Artificial Intelligence. https://dho.stanford.edu/wp-content/uploads/IRS_Disparities.pdf`,
+    },
+    {
+      slug: "when-a-credit-is-disallowed",
+      title: "9 · What a disallowed claim costs, and who else is on the hook",
+      section: "Section 3 · Credits, and where the tax system pays out",
+      body: `A credit that can pay money out attracts rules that a credit which only reduces a bill does not. Section 32 carries two of them, and they explain a great deal of what a filer actually experiences.
+
+## The bar on future years
+
+**26 U.S.C. § 32(k)(1)(A)**: "No credit shall be allowed under this section for any taxable year in the disallowance period" (26 U.S.C. § 32, n.d.).
+
+**§ 32(k)(1)(B)** then defines that period: **10 taxable years** after the most recent taxable year for which there was a final determination that the claim "was due to fraud," and **2 taxable years** after the most recent year for which there was a final determination that the claim "was due to reckless or intentional disregard of rules and regulations (but not due to fraud)" (26 U.S.C. § 32, n.d.).
+
+**Notice what that is and is not.** It is not a fine and it is not interest. It is a bar on a future entitlement, running in taxable years rather than in dollars, and it attaches to a determination about the filer's state of mind. Ten years is a long time in a household's life.
+
+## The preparer is on the hook too
+
+**26 U.S.C. § 6695(g)** imposes a penalty on a tax return preparer who fails to comply with due diligence requirements imposed by regulation for determining eligibility to file as a head of household under section 2(b), or eligibility for or the amount of the credits allowable by section 24, section 25A(a)(1) or section 32. The statute sets the penalty at **500 dollars for each such failure**, and subsection (h) adjusts that figure for inflation (26 U.S.C. § 6695, n.d.).
+
+**Read the list.** Head of household status, the child credit, the education credit, and the earned income credit. Those four, and not the rest of the return.
+
+**That is why a preparer asks for documents about a child's residence and school records and gets awkward about it.** The preparer is answering to a penalty of their own on exactly those four items, and it is per failure rather than per return. Knowing that turns an irritating conversation into an explicable one.
+
+## And now the rule this whole course is built on
+
+**26 U.S.C. § 24(a)** allows a credit for each qualifying child "an amount equal to 1,000 dollars" (26 U.S.C. § 24, n.d.). **§ 24(d)(1)** makes part of it refundable, computed as the lesser of the credit determined without regard to the subsection, or the increase produced by raising "the limitation under section 26(a)" by, among other things, 15 percent of the taxpayer's earned income above a stated floor.
+
+**The amount actually in force is not 1,000 dollars.** It has been set for years at a time by temporary amendments layered over subsection (a), and the refundable portion has its own separately-legislated figure. **So even opening the Code and reading the operative sentence gives you a number that is not the answer.**
+
+**This is the sharpest possible demonstration of the course's central rule.** If the statute's own text can be stale, a summary table in a lesson has no chance at all. The method is:
+
+1. Find the current revision of **IRS Publication 17** and note its year on the cover.
+2. Find the **annual revenue procedure** setting the inflation-adjusted amounts for that tax year, and cite it by number.
+3. Write the tax year beside every figure you copy out.
+4. Re-check anything older than one filing season, because the amount will have moved and nothing will announce it.
+
+**That procedure is the transferable skill.** The figure you look up today is worth less than the habit of knowing where to look.
+
+:::reveal What are the two disallowance periods in 26 U.S.C. 32(k)(1)(B)? ||| Ten taxable years after a final determination of fraud, and two after a determination of reckless or intentional disregard of rules and regulations.
+
+:::reveal Which four items does the section 6695(g) preparer penalty cover? ||| Head of household status, and the credits under sections 24, 25A(a)(1) and 32.
+
+:::reveal Why is the figure printed in 26 U.S.C. 24(a) not the amount in force? ||| Because temporary amendments have set the operative amount for years at a time, which is why even the Code's own text has to be checked against the current year.
+
+## Vocabulary
+- **Disallowance period**: the span of taxable years in 32(k)(1)(B) during which no earned income credit is allowed following a final determination of fraud or of reckless disregard.
+- **Due diligence penalty**: the section 6695(g) charge on a preparer, per failure, for the head of household status and three named credits.
+- **Revenue procedure**: the annual IRS document setting the inflation-adjusted figures for a tax year, which is the citable source for any current amount.
+- **Temporary amendment**: a change to a Code section enacted for a limited number of years, which is why the printed text of a section may not state the amount actually in force.
+
+## Sources
+26 U.S.C. § 24. (n.d.). *Child tax credit*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/24
+
+26 U.S.C. § 32. (n.d.). *Earned income*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/32
+
+26 U.S.C. § 6695. (n.d.). *Other assessable penalties with respect to the preparation of tax returns for other persons*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/6695`,
+    },
+    {
+      slug: "quiz-credits",
+      title: "Section 3 review · Refundable credits and the earned income credit",
+      section: "Section 3 · Credits, and where the tax system pays out",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What does a deduction reduce?",
+            options: ["The income the tax is computed on", "The tax itself, dollar for dollar of the amount claimed", "The withholding taken from each pay period during the year", "The refundable portion of any credit claimed on the return"],
+            correctIndex: 0,
+            explanation: "Its value is the rate applying to the last dollars of income multiplied by the deduction.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "What does a credit reduce?",
+            options: ["The tax itself", "The gross income against which the filing threshold is measured", "The adjusted gross income used for the phase-out calculations", "The wages on which the employer must withhold under chapter 24"],
+            correctIndex: 0,
+            explanation: "Its value is its face amount rather than a fraction of it, which is why a credit beats a deduction of the same size.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "At a labelled hypothetical rate of 10 percent, what does a deduction of 1,000 save?",
+            options: ["100", "1,000, because a deduction reduces the tax by its full amount", "900, being the deduction less the rate applied to it", "10, being the rate expressed as a dollar figure"],
+            correctIndex: 0,
+            explanation: "The rate times the deduction, which is one tenth of what a credit of the same size would save.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "Why does the lesson use 10 percent rather than a real bracket rate?",
+            options: ["Real rates are adjusted annually", "Because the Code no longer states any rate in section 1", "Because withholding tables use a flat rate for all wage earners", "Because the arithmetic only works at rates below the lowest bracket"],
+            correctIndex: 0,
+            explanation: "A figure written into a lesson outlives its accuracy silently, which is why the rate is labelled as chosen for clean arithmetic.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "What can a non-refundable credit do at most?",
+            options: ["Reduce the tax to zero", "Produce a payment equal to the unused portion of the credit", "Carry the unused portion forward to the following taxable year", "Offset the chapter 21 taxes withheld on the same year's wages"],
+            correctIndex: 0,
+            explanation: "The limitation under section 26(a) caps the aggregate nonrefundable personal credits at the tax, and below zero the credit stops.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "Which section supplies the limitation that section 24(d)(1)(A) refers to by name?",
+            options: ["Section 26(a)", "Section 32(j), which adjusts the dollar amounts for inflation", "Section 6402(a), which requires the balance to be refunded", "Section 6012(a)(1)(A), which sets the requirement to file at all"],
+            correctIndex: 0,
+            explanation: "It is the general cap on the aggregate of the nonrefundable personal credits.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "Which sentence of the Code is the definition of a refundable credit?",
+            options: ["26 U.S.C. 6401(b)(1)", "26 U.S.C. 6402(a), which requires the balance to be refunded", "26 U.S.C. 32(a)(1), which allows the earned income credit", "26 U.S.C. 31(a)(1), which credits withheld tax against the tax"],
+            correctIndex: 0,
+            explanation: "It says the amount of such excess shall be considered an overpayment, and there is nothing else to the concept.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "On a computed tax of 400, what does a non-refundable credit of 1,000 produce?",
+            options: ["Zero tax and nothing paid out", "Zero tax and a refund of the remaining six hundred dollars", "A negative liability carried into the following taxable year", "A reduction of the withholding required for the following year"],
+            correctIndex: 0,
+            explanation: "The remaining 600 is not carried, not paid, and simply not used.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "On a computed tax of 400, what does a refundable credit of 1,000 produce?",
+            options: ["Zero tax and a 600 overpayment", "Zero tax and no payment, since the credit stops at zero", "A tax of 600, being the credit less the liability", "A deferral of the unused 600 to the next taxable year"],
+            correctIndex: 0,
+            explanation: "Section 6401(b)(1) deems the excess an overpayment and section 6402(a) requires the Secretary to refund the balance.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "What is the only thing that changes between those two outcomes?",
+            options: ["Which subpart the credit sits in", "The amount of tax the filer computed for the taxable year", "The filing status the taxpayer selected on the return", "Whether the taxpayer used a paid preparer or filed alone"],
+            correctIndex: 0,
+            explanation: "Same headline number, same taxpayer, same year, opposite result, decided by a drafting fact.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "Why is refundability checkable rather than arguable?",
+            options: ["It depends on where the credit was enacted", "Because the Secretary publishes a list each year in a notice", "Because a credit is refundable only if the taxpayer elects it", "Because it turns on how generous the program is judged to be"],
+            correctIndex: 0,
+            explanation: "Either the credit is in subpart C or it is not, and you can look up the section and read where it sits.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "What did Congress build in place of a payment system for refundable credits?",
+            options: ["A deeming rule", "A separate disbursement office within the Treasury Department", "An annual appropriation from which the payments are drawn", "A schedule of instalments paid across the following year"],
+            correctIndex: 0,
+            explanation: "It declared the excess to be an overpayment and let the existing section 6402(a) refund machinery do the rest.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "What does 26 U.S.C. 32(a)(1) allow, in its own terms?",
+            options: ["A credit equal to a percentage of earned income", "A deduction equal to the taxpayer's total wages for the year", "A refund of the chapter 24 tax withheld from the taxpayer's pay", "An exemption from the requirement to file a return for the year"],
+            correctIndex: 0,
+            explanation: "The credit percentage of so much of the earned income as does not exceed the earned income amount.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What is the shape of the earned income credit across the income range?",
+            options: ["It rises, plateaus, then phases out", "It falls steadily as income rises from the first dollar earned", "It is a flat amount unaffected by how much the taxpayer earns", "It rises without limit as long as earned income keeps increasing"],
+            correctIndex: 0,
+            explanation: "A percentage of earnings up to a ceiling, a plateau, then a phase-out toward zero.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What does section 32(j) do to the dollar amounts in the statute?",
+            options: ["Adjusts them for inflation", "Freezes them at the level enacted in the original legislation", "Delegates them to the states in which the taxpayer resides", "Reduces them by the amount of any refundable child credit claimed"],
+            correctIndex: 0,
+            explanation: "The statute itself tells you the numbers are not fixed, which is why the lesson prints none of them.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "How does 26 U.S.C. 32(c)(2)(A) define earned income?",
+            options: ["Employee compensation plus self-employment earnings", "Every item includible in gross income for the taxable year", "Adjusted gross income less the standard deduction for the year", "The wages shown on the employer's annual information return only"],
+            correctIndex: 0,
+            explanation: "Wages, salaries, tips and other employee compensation includible in gross income, plus net earnings from self-employment.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What does a household with no earned income receive under section 32?",
+            options: ["Nothing", "A reduced credit calculated from its total household income", "The full credit, since the program is targeted by income level", "A credit carried forward to a year in which it does have earnings"],
+            correctIndex: 0,
+            explanation: "The credit is conditioned on having earnings for the year rather than on need alone, which is the design fact that explains the program.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "How does the lesson describe the earned income credit structurally?",
+            options: ["A wage subsidy written as a tax credit", "A means-tested transfer administered by the state welfare agencies", "A refund of the chapter 21 taxes withheld from a worker's wages", "A deduction against income available only to households with children"],
+            correctIndex: 0,
+            explanation: "It grows with earnings across the first range, which is what makes it a subsidy for work rather than a payment for low income.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "Who falls outside section 32(a)(1) at its first clause?",
+            options: ["Someone with no earnings for the year", "Someone whose income exceeds the published filing threshold", "Someone who filed a return after the section 6072 deadline", "Someone who claimed the credit in the preceding taxable year"],
+            correctIndex: 0,
+            explanation: "That includes a person out of work all year or unable to work, which the lesson states as a fact about the statute.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "How does 26 U.S.C. 32(c)(3)(A) define a qualifying child?",
+            options: ["By reference to section 152(c)", "By listing the relationships that qualify within section 32 itself", "By reference to the dependency rules the states apply locally", "By reference to whoever is claimed on the withholding certificate"],
+            correctIndex: 0,
+            explanation: "Determined without regard to one paragraph of 152(c) and without section 152(e).",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What residence condition does 32(c)(1)(A)(ii) impose on an individual with no qualifying child?",
+            options: ["Abode in the United States over half the year", "Continuous residence in one state for the whole taxable year", "Residence in the United States on the last day of the year", "A principal place of abode within the country for any part of the year"],
+            correctIndex: 0,
+            explanation: "It is one of three conditions the subclause imposes together.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What age band does 32(c)(1)(A)(ii) set for an individual with no qualifying child?",
+            options: ["At least 25 and under 65", "At least 18 and under 70 at the close of the taxable year", "At least 21 and under 60 for the whole of the taxable year", "Any age, provided the individual is not claimed as a dependent"],
+            correctIndex: 0,
+            explanation: "Attained age 25 but not attained age 65 before the close of the taxable year, for the individual or either spouse.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What is the third condition in 32(c)(1)(A)(ii)?",
+            options: ["Not another taxpayer's dependent", "Filing a joint return with a spouse who also has earnings", "Having no investment income of any kind during the year", "Having filed a return in each of the two preceding years"],
+            correctIndex: 0,
+            explanation: "The individual must not be a dependent for whom a deduction is allowable to another taxpayer for a year beginning in the same calendar year.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What do the researchers quoted in the lesson say the earned income credit has become?",
+            options: ["The largest cash-based safety net program", "A minor provision affecting fewer than one household in fifty", "A deduction rather than a credit after the most recent amendments", "A program administered jointly by the Treasury and the states"],
+            correctIndex: 0,
+            explanation: "Elzayn and colleagues write that it has replaced welfare as the largest cash-based safety net program in the United States.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What follows from that program being delivered through the refund machinery?",
+            options: ["It arrives once a year, after a return is processed", "It is paid in equal monthly instalments across the calendar year", "It is administered by the employer through the withholding tables", "It reaches households whether or not they file a return at all"],
+            correctIndex: 0,
+            explanation: "Which is why the date on which that delivery is allowed to happen is the subject of the next section.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "Does this course tell a reader whether they qualify for the earned income credit?",
+            options: ["No", "Yes, through a checklist covering each statutory condition", "Yes, for filers with no qualifying child but not for others", "Only where the reader supplies their filing status and earnings"],
+            correctIndex: 0,
+            explanation: "Eligibility turns on section 152 definitions, on household facts the course does not know, and on figures that change every year.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "Where does the lesson send a reader for free help with eligibility?",
+            options: ["The volunteer programs and IRS publications", "A commercial preparer with a licence in the reader's own state", "The reader's employer, which computes the credit through payroll", "A state revenue department, which administers the federal credit"],
+            correctIndex: 0,
+            explanation: "Section 5 of the course names the free, non-commercial routes rather than any product.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What does 26 U.S.C. 32(k)(1)(A) provide?",
+            options: ["No credit during the disallowance period", "A penalty equal to the credit wrongly claimed in a prior year", "Interest on any credit repaid after a final determination is made", "A requirement to file with a preparer for the following ten years"],
+            correctIndex: 0,
+            explanation: "It is a bar on a future entitlement rather than a monetary charge.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "How long is the disallowance period following a final determination of fraud?",
+            options: ["Ten taxable years", "Three taxable years, matching the ordinary assessment period", "Two taxable years, the same as for reckless disregard", "Indefinitely, until the taxpayer applies for reinstatement"],
+            correctIndex: 0,
+            explanation: "It runs from the most recent taxable year for which the determination was made, in taxable years rather than in dollars.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "How long is the disallowance period for reckless or intentional disregard of rules?",
+            options: ["Two taxable years", "Ten taxable years, the same as for a determination of fraud", "Five taxable years, running from the date the return was filed", "One taxable year, unless the disregard is repeated afterwards"],
+            correctIndex: 0,
+            explanation: "The statute distinguishes it expressly from fraud, using the words but not due to fraud.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What kind of sanction is the disallowance period?",
+            options: ["A bar on a future entitlement", "A fine measured as a percentage of the credit disallowed", "Interest running from the date the improper refund was paid", "A criminal penalty carried by section 7206 of the same title"],
+            correctIndex: 0,
+            explanation: "It runs in taxable years and attaches to a determination about the filer's state of mind.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "Whom does 26 U.S.C. 6695(g) penalise?",
+            options: ["The tax return preparer", "The taxpayer who signed the return under penalties of perjury", "The employer that failed to withhold the correct amount of tax", "The software provider through which the return was transmitted"],
+            correctIndex: 0,
+            explanation: "For failing to meet the due diligence requirements imposed by regulation on four named items.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "Which four items does the section 6695(g) penalty cover?",
+            options: ["Head of household status and three credits", "Every line of the return the preparer signed for the taxpayer", "The filing status, the standard deduction, and two credit claims", "Withholding, estimated payments, and two refundable credits"],
+            correctIndex: 0,
+            explanation: "Head of household eligibility under section 2(b), and the credits under sections 24, 25A(a)(1) and 32.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What amount does the statute set for the section 6695(g) penalty?",
+            options: ["500 dollars for each failure", "A percentage of the credit the preparer wrongly claimed", "1,000 dollars for each return containing any such failure", "An amount the Secretary sets by regulation for each tax year"],
+            correctIndex: 0,
+            explanation: "Subsection (h) then adjusts the figure for inflation, so the amount actually charged is not the printed one.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "Is the section 6695(g) penalty charged per return or per failure?",
+            options: ["Per failure", "Per return, whatever number of failures it contains", "Per taxpayer, across all returns the preparer signs in a year", "Per office, where a firm employs more than one preparer"],
+            correctIndex: 0,
+            explanation: "The statute says for each such failure, which is why a return touching several of the four items carries several exposures.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What does the preparer penalty explain about a preparer's behaviour?",
+            options: ["Why they ask for documents about a child", "Why they charge a fee proportional to the refund produced", "Why they decline to prepare returns claiming refundable credits", "Why they must transmit the return electronically rather than on paper"],
+            correctIndex: 0,
+            explanation: "The preparer is answering to a penalty of their own on exactly those four items, per failure rather than per return.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What amount does 26 U.S.C. 24(a) state on its face?",
+            options: ["1,000 dollars", "2,000 dollars, which is the amount currently in force", "An amount adjusted each year by revenue procedure", "No amount at all, since the figure sits in subsection (d)"],
+            correctIndex: 0,
+            explanation: "The amount actually allowed has been set for years at a time by temporary amendments layered over that subsection.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What does 26 U.S.C. 24(d)(1) do?",
+            options: ["Makes part of the child credit refundable", "Bars the credit for ten years after a determination of fraud", "Adjusts the credit for inflation in each subsequent tax year", "Requires the credit to be claimed on a timely filed return"],
+            correctIndex: 0,
+            explanation: "It is computed as the lesser of two amounts, one of which raises the section 26(a) limitation by a percentage of earned income above a floor.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What does the section 24 example demonstrate about the Code itself?",
+            options: ["Its printed text can be out of date", "That every dollar figure in it is adjusted automatically", "That the Code never states a dollar amount in operative text", "That temporary amendments are published only in regulations"],
+            correctIndex: 0,
+            explanation: "If the statute's own sentence can be stale, a summary table in a lesson has no chance at all.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What is the first step of the course's four-step method for a current figure?",
+            options: ["Find the current Publication 17 and note its year", "Read the operative sentence of the Code section itself", "Ask a paid preparer which figure applies to the filer", "Search for the most recent news report giving the amount"],
+            correctIndex: 0,
+            explanation: "Then the annual revenue procedure cited by number, then writing the tax year beside every figure, then re-checking anything older than a season.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "How often does the method say a copied figure should be re-checked?",
+            options: ["Anything older than one filing season", "Once every five years, when the statute is usually amended", "Only when the taxpayer's own circumstances have changed", "Never, provided the source was a primary document when read"],
+            correctIndex: 0,
+            explanation: "The amount will have moved and nothing will announce it, which is the failure mode this domain punishes hardest.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What does the lesson call the transferable skill?",
+            options: ["Knowing where to look", "Memorising the current year's credit and deduction amounts", "Computing the refundable portion of the child credit by hand", "Reciting the four items the preparer penalty covers"],
+            correctIndex: 0,
+            explanation: "The figure you look up today is worth less than the habit of knowing where to look it up.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "Why do refundable credits attract rules that other credits do not?",
+            options: ["They can pay money out", "Because they are claimed more often than other credits are", "Because they are enacted in a different title of the United States Code", "Because the Secretary has no authority to examine them otherwise"],
+            correctIndex: 0,
+            explanation: "Section 32 carries both a disallowance bar and a preparer due diligence penalty for that reason.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What is a revenue procedure, as this course uses the term?",
+            options: ["The annual IRS document setting adjusted figures", "A regulation issued under a specific Code section by the Secretary", "A court decision resolving a dispute about a taxpayer's liability", "An internal manual governing how examinations are conducted"],
+            correctIndex: 0,
+            explanation: "It is the citable source for any current inflation-adjusted amount, and it should be cited by number.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What is a phase-out?",
+            options: ["The range over which a credit falls toward zero", "The period after which a disallowed credit may be claimed again", "The gradual removal of a credit from the Code by amendment", "The reduction in withholding as the year approaches its end"],
+            correctIndex: 0,
+            explanation: "It is why the earned income credit is largest in the middle of its range rather than at the very bottom.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "Where do the credit percentages for section 32 sit?",
+            options: ["In section 32(b)", "In the allowance sentence at section 32(a)(1) itself", "In the regulations rather than anywhere in the statute", "In the annual revenue procedure and nowhere in the Code"],
+            correctIndex: 0,
+            explanation: "The allowance sentence names the percentage and the earned income amount without stating either figure.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What does the lesson say about the value of a credit compared with a deduction of the same size?",
+            options: ["The credit is worth more", "They are worth the same, since both reduce what is owed", "The deduction is worth more at higher rates of tax", "It depends on whether the filer itemises deductions"],
+            correctIndex: 0,
+            explanation: "The deduction is worth the rate times its amount, while the credit is worth its face amount.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "Which subparts does 6401(b)(1) subtract from the tax before measuring the excess?",
+            options: ["A, B, D and G", "C alone, being the refundable credits themselves", "None, because the comparison is with the tax as computed", "Only those the taxpayer elects to apply first on the return"],
+            correctIndex: 0,
+            explanation: "Subpart C is the one being measured, so the other named subparts reduce the tax it is measured against.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "Which two sections does the lesson name as examples of credits in subpart C?",
+            options: ["Sections 32 and part of 24", "Sections 26 and 63, which cap credits and set deductions", "Sections 31 and 3402, which govern withholding on wages", "Sections 6401 and 6402, which define and refund overpayments"],
+            correctIndex: 0,
+            explanation: "The earned income credit and the portion of the child credit that subsection (d) makes refundable.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "In the lesson's terms, what is a household with earnings across the first range of the credit receiving?",
+            options: ["More credit for each extra dollar earned", "A fixed amount that does not vary with additional earnings", "A smaller credit as earnings increase toward the plateau", "A credit only once earnings pass the phase-out threshold"],
+            correctIndex: 0,
+            explanation: "Below the ceiling the credit rises with earnings, which is the wage-subsidy half of its design.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What does the lesson say about getting eligibility wrong?",
+            options: ["It is expensive in either direction", "It carries no consequence beyond a corrected return", "It matters only where the error understates the credit", "It is handled entirely by the preparer under section 6695"],
+            correctIndex: 0,
+            explanation: "Which is why the disallowance lesson follows it and why the free help routes are named.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What is a temporary amendment, in the sense the lesson uses it?",
+            options: ["A change enacted for a limited number of years", "A regulation the Secretary may withdraw at any time", "A provision suspended pending the outcome of litigation", "An adjustment made automatically by revenue procedure"],
+            correctIndex: 0,
+            explanation: "It is why the printed text of section 24(a) may not state the amount actually in force.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What does the second step of the four-step method require?",
+            options: ["Citing the annual revenue procedure by number", "Reading the operative sentence of the Code section aloud", "Confirming the figure with two independent news sources", "Checking the withholding tables the employer applied"],
+            correctIndex: 0,
+            explanation: "It sets the inflation-adjusted amounts for a tax year, and citing it by number is what makes the figure checkable.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What kind of fact does the lesson say the earned income credit's exclusion of non-earners is?",
+            options: ["A fact about the statute", "A complaint about how the program is administered", "An error in drafting that later amendments corrected", "A rule that varies by state under the Code's savings clause"],
+            correctIndex: 0,
+            explanation: "It follows from the first clause of section 32(a)(1) rather than from anyone's policy view.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What is the earned income amount, in the structure of section 32(a)(1)?",
+            options: ["The ceiling on earnings the percentage applies to", "The minimum earnings required before any credit is allowed", "The total credit a taxpayer may claim in any taxable year", "The threshold above which the credit begins to phase out"],
+            correctIndex: 0,
+            explanation: "The credit is the credit percentage of so much of the earned income as does not exceed that amount.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What did the researchers' phrasing replace, according to the quotation in the lesson?",
+            options: ["Welfare", "The withholding system as the main route for delivering benefits", "The child credit as the largest credit available to households", "State-administered cash assistance in a minority of jurisdictions"],
+            correctIndex: 0,
+            explanation: "The quotation says the credit has replaced welfare as the largest cash-based safety net program in the country.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "Which two modifications does 32(c)(3)(A) make to the section 152(c) definition?",
+            options: ["It disregards one paragraph and section 152(e)", "It adds an age limit and a residency requirement of its own", "It substitutes the head of household test in section 2(b)(1)", "It applies the definition only to children under seventeen"],
+            correctIndex: 0,
+            explanation: "The statute says determined without regard to paragraph (1)(D) of that subsection and without section 152(e).",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "What does the lesson say the section 24 refundable portion is computed as?",
+            options: ["The lesser of two amounts", "A fixed percentage of the total credit for each qualifying child", "The whole credit, once the taxpayer's tax reaches zero", "The excess of the credit over the taxpayer's earned income"],
+            correctIndex: 0,
+            explanation: "One of those amounts raises the section 26(a) limitation by a percentage of earned income above a stated floor.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What does the course say is worth less than the habit it teaches?",
+            options: ["The figure you look up today", "The statutory text of the section you are reading", "The publication year printed on the cover of a guide", "The preparer's own view of which figure applies"],
+            correctIndex: 0,
+            explanation: "The method survives the year; the number does not.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What does an unused non-refundable credit become?",
+            options: ["Nothing", "An overpayment refundable under section 6402(a)", "A carryforward available in the next five taxable years", "A deduction against the following year's gross income"],
+            correctIndex: 0,
+            explanation: "It is not carried, not paid, and simply not used, which is the whole difference the section turns on.",
+            sourceLessonSlug: "refundable-or-not",
+          },
+          {
+            prompt: "How does the lesson describe the section 32 credit's relationship to need?",
+            options: ["It is conditioned on earnings, not need alone", "It rises as household income falls toward zero for the year", "It is available to any household below the filing threshold", "It is calculated from the number of people in the household"],
+            correctIndex: 0,
+            explanation: "The first clause of 32(a)(1) reaches earned income, so a household with none receives none of the credit.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+          {
+            prompt: "Which subsection of section 32 carries the disallowance rules?",
+            options: ["Subsection (k)", "Subsection (j), which adjusts the dollar amounts for inflation", "Subsection (c), which defines an eligible individual and earned income", "Subsection (b), which sets the credit percentages and amounts"],
+            correctIndex: 0,
+            explanation: "Its paragraph (1) states the bar and defines the two disallowance periods.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "Which subsection adjusts the section 6695(g) preparer penalty for inflation?",
+            options: ["Subsection (h)", "Subsection (g) itself, which states the adjustment inline", "Section 32(j), which adjusts the earned income credit amounts", "Section 26(a), which caps the nonrefundable personal credits"],
+            correctIndex: 0,
+            explanation: "So the printed 500 dollars is not the amount actually charged for a current year.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "Which education credit does the section 6695(g) list name?",
+            options: ["The credit under section 25A(a)(1)", "Every education credit allowed anywhere in subchapter A", "The deduction for qualified tuition and related expenses", "The credit for interest paid on a qualified student loan"],
+            correctIndex: 0,
+            explanation: "It sits in the list beside head of household status and the credits under sections 24 and 32.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What does the lesson say a preparer's document requests turn into once the penalty is understood?",
+            options: ["An explicable conversation", "A requirement the taxpayer may decline without consequence", "A sign that the preparer suspects the taxpayer of fraud", "A step the Secretary imposes directly on the taxpayer"],
+            correctIndex: 0,
+            explanation: "The preparer is answering to a per-failure penalty on exactly those four items.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "What is the third step of the course's four-step method?",
+            options: ["Write the tax year beside every figure", "Confirm the figure against a commercial preparation product", "Compare the figure with the amount printed in the Code section", "Ask whether the figure changed in the preceding legislative session"],
+            correctIndex: 0,
+            explanation: "Then re-check anything older than one filing season, because nothing announces the change.",
+            sourceLessonSlug: "when-a-credit-is-disallowed",
+          },
+          {
+            prompt: "Where does the lesson say the earned income credit's current figures live?",
+            options: ["The revenue procedure and Publication 17", "Section 32(a)(1), which states them in its own sentence", "The employer's withholding tables for the year in question", "A schedule the taxpayer completes on the face of the return"],
+            correctIndex: 0,
+            explanation: "Anyone quoting one of them should name the tax year beside it.",
+            sourceLessonSlug: "the-earned-income-credit",
+          },
+        ],
+      },
+    },
   ],
 };
