@@ -1233,6 +1233,588 @@ U.S. Bureau of Labor Statistics. (n.d.). *Employee benefits in the United States
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — Fees compound too, and a regulation requires a document that says so
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-disclosure-that-must-reach-you",
+      title: "9 · The fee disclosure is a document somebody is required to hand you",
+      section: "Section 3 · Fees compound too, and one document has to say so",
+      body: `This series keeps finding the same thing: somewhere behind a money decision there is a document that a rule requires somebody to give you. MONEY-01 found the adverse action notice. MONEY-06 found the Loan Estimate. Here it is the **participant fee disclosure**, and it is required by a regulation whose title tells you exactly what it is for: "Fiduciary requirements for disclosure in participant-directed individual account plans" (29 CFR § 2550.404a-5, n.d.).
+
+**Start with why it is framed as a fiduciary duty.** The rule opens by stating that "the investment of plan assets is a fiduciary act governed by the fiduciary standards of section 404(a)(1)(A) and (B) of the Employee Retirement Income Security Act of 1974" (29 CFR § 2550.404a-5, n.d.). Those are the two duties Section 6 of this course reads in full: acting solely in participants' interest, and acting with prudence. The disclosure exists because a plan that lets you direct your own investments has handed you a decision, and handing someone a decision without the information to make it is not consistent with either duty.
+
+**Who gets it and when.** The plan-related information must be furnished "on or before the date on which a participant or beneficiary can first direct his or her investments and at least annually thereafter" (29 CFR § 2550.404a-5, n.d.). The same timing applies to the investment-related information. So this is not a one-off welcome pack. It is an annual obligation, and if you have not seen one in over a year, that is a question worth asking in writing.
+
+**What the plan-related half contains.** The rule lists, among other things, an explanation of the circumstances under which participants and beneficiaries may give investment instructions, an explanation of any limits the plan places on those instructions, a description of or reference to the plan provisions on voting and tender rights, and an identification of the designated investment alternatives offered under the plan (29 CFR § 2550.404a-5, n.d.). Read that list as a map of the decisions the plan has already made for you, and of the ones it is leaving to you.
+
+**And then the two categories of cost, which are separated on purpose.**
+
+- **Administrative expenses** are the general plan-wide charges: the rule requires an explanation of any fees and expenses for general plan administrative services that may be charged against individual accounts (29 CFR § 2550.404a-5, n.d.).
+- **Individual expenses** are the ones that land on your account and not on your colleague's, because of something you did: the rule requires an explanation of any fees and expenses that may be charged against an individual account on an individual basis (29 CFR § 2550.404a-5, n.d.). Loan processing is the usual example.
+
+**Why the separation matters.** Two people in the same plan with the same balance can pay different amounts, and the reason is in the second category. A cost you triggered is a cost you can sometimes avoid, and a cost the plan spreads across everyone is not. Reading a fee disclosure with those two buckets in mind is most of the skill.
+
+**This course names no fee level as good or bad.** It has no view on what your plan should charge, because that depends on services you have not described to it and alternatives it does not know. What it says is narrower and firmer: the document exists, the rule says what must be in it, and you are entitled to it at least once a year.
+
+:::reveal Which regulation requires the participant fee disclosure, and what is its subject? ||| 29 CFR 2550.404a-5, on fiduciary requirements for disclosure in participant-directed individual account plans.
+
+:::reveal How often must the plan-related information be furnished? ||| On or before the date a participant can first direct investments, and at least annually after that.
+
+:::reveal What is the difference between an administrative expense and an individual expense? ||| An administrative expense is a general plan-wide charge. An individual expense lands on one account because of something that participant did.
+
+## Vocabulary
+- **Participant fee disclosure**: the annual document a participant-directed individual account plan must furnish, setting out plan-related and investment-related information including costs.
+- **Participant-directed plan**: a plan in which participants choose among investment alternatives themselves, which is what triggers the disclosure duty in the first place.
+- **Designated investment alternative**: an investment option the plan makes available for participants to direct money into, which the disclosure must identify.
+- **Administrative expense**: a general plan-wide charge for services such as recordkeeping, which may be charged against individual accounts.
+- **Individual expense**: a charge that lands on one participant's account because of something that participant did, such as processing a loan.
+
+## Sources
+29 CFR § 2550.404a-5. (n.d.). *Fiduciary requirements for disclosure in participant-directed individual account plans*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/29/2550.404a-5
+
+29 U.S.C. § 1104. (n.d.). *Fiduciary duties*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/1104`,
+    },
+    {
+      slug: "what-you-actually-paid",
+      title: "10 · What you actually paid, and the sentence the rule makes them print",
+      section: "Section 3 · Fees compound too, and one document has to say so",
+      body: `A disclosure of what a plan **may** charge is useful. A statement of what it **did** charge is better, and the rule requires both.
+
+**The quarterly statement of dollars.** For administrative expenses, the plan must give participants a statement, at least quarterly, of the dollar amount actually charged to their account during that quarter, along with a description of the services those amounts paid for. The same requirement applies separately to individual expenses actually charged (29 CFR § 2550.404a-5, n.d.). That is the number to look for, because it is not an estimate, not a maximum and not an average. It is what left your account.
+
+**The investment costs, stated two ways on purpose.** For each designated investment alternative, the rule requires disclosure of shareholder-type fees and of total annual operating expenses, expressed both as a percentage and as a dollar amount for each 1,000 dollars invested (29 CFR § 2550.404a-5, n.d.). The second form is there because a percentage is easy to wave away and a dollar figure is not. A cost quoted as a fraction of a percent and the same cost quoted as dollars per thousand are the identical fact, and most people react to them very differently.
+
+**And a sentence the regulation puts in the plan's mouth.** The rule requires "[a] statement that the cumulative effect of fees and expenses can substantially reduce the growth of a participant's or beneficiary's retirement account and that participants and beneficiaries can visit the Employee Benefit Security Administration's Web site for an example demonstrating the long-term effect of fees and expenses" (29 CFR § 2550.404a-5, n.d.).
+
+**Sit with that for a moment, because it is unusual.** A federal regulation requires the plan to tell you, in writing, that its own costs compound against you. This is not an advocate's argument or a critic's claim. It is a warning the rulemaker decided participants were entitled to receive from the plan itself, and it is on the document already in your file.
+
+**Investment-related information also has a shape, not just a content.** The rule requires the investment-related disclosures to be furnished in a comparative format that makes the alternatives easy to set beside one another, with the date of the disclosure shown, and it entitles a participant to further material on request, including prospectuses and financial statements (29 CFR § 2550.404a-5, n.d.). The comparative chart is doing the same job the Loan Estimate does in MONEY-06: a standardized layout exists so that two things can be compared without expertise.
+
+**What to do with all of this, stated as a procedure rather than as advice.**
+
+1. Find the most recent annual disclosure and the most recent quarterly statement.
+2. On the statement, read the dollar amount actually charged, in both categories, and the description of what it bought.
+3. On the annual disclosure, find the comparative chart and read the cost of the alternatives you are actually in, both as a percentage and as dollars per thousand.
+4. Multiply the dollars-per-thousand figure by your balance in thousands. That is the annual investment cost implied by the chart, in the same units as the statement.
+5. If you cannot find either document, ask the plan administrator in writing, and remember from Section 1 that the written request is the one the statute attaches a deadline and a penalty to.
+
+That procedure gives you a number. It does not tell you whether the number is acceptable, because this course does not know what your plan buys with it or what else is available to you.
+
+:::reveal How often must a plan tell you the dollar amount it actually charged your account? ||| At least quarterly, with a description of the services the amounts paid for.
+
+:::reveal In what two forms must an investment alternative's total annual operating expenses be disclosed? ||| As a percentage, and as a dollar amount for each 1,000 dollars invested.
+
+:::reveal What does the regulation require the plan to state about the cumulative effect of fees? ||| That it can substantially reduce the growth of a participant's retirement account, and where an example of the long-term effect can be found.
+
+## Vocabulary
+- **Total annual operating expenses**: the ongoing cost of a designated investment alternative, which the rule requires to be disclosed both as a percentage and as dollars per 1,000 invested.
+- **Shareholder-type fee**: a charge attributable to a participant's own transaction in an investment alternative, disclosed alongside the ongoing operating expenses.
+- **Comparative format**: the layout the rule requires for investment-related disclosures, so alternatives can be set beside one another without expertise.
+- **Quarterly statement**: the at-least-quarterly report of amounts actually charged against a participant's account, distinct from the annual disclosure of amounts that may be charged.
+
+## Sources
+29 CFR § 2550.404a-5. (n.d.). *Fiduciary requirements for disclosure in participant-directed individual account plans*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/29/2550.404a-5`,
+    },
+    {
+      slug: "a-hypothetical-not-a-projection",
+      title: "11 · A hypothetical, and why it is not a projection",
+      section: "Section 3 · Fees compound too, and one document has to say so",
+      body: `The regulation says fees compound. This lesson shows the arithmetic, and it is important to be exact about what the arithmetic is and is not.
+
+**This is a hypothetical. It forecasts nothing.** Every number below is chosen to make a shape visible. No return is assumed, no rate is implied, no fee level is described as appropriate, and nothing here should be read as a statement about what any account will do. **This course gives no financial advice**, and that includes not telling you that any particular fee is too high, or that any particular alternative is cheaper, or that a difference in cost should change what you hold.
+
+**Strip out growth entirely, so that no rate can be smuggled in.** Take a starting balance of 10,000 dollars. Assume an annual cost of 1.00 percent of assets, and assume the account changes for no other reason at all: no contributions, no growth, no losses. Then:
+
+- Year 1: the cost is 100 dollars, and 9,900 remains.
+- Year 2: 1.00 percent of 9,900 is 99, and 9,801 remains.
+- Year 3: 1.00 percent of 9,801 is 98.01, and 9,702.99 remains.
+
+**The pattern is the lesson.** The cost falls in dollars every year while staying constant in percent, because it is a percentage of a shrinking base. That is compounding, running in the direction people do not think about it running. After ten years the balance is 10,000 multiplied by 0.99 ten times, which is about 9,044 dollars. About 956 dollars, or roughly 9.6 percent of the starting balance, has gone to the cost alone, on an account that did nothing.
+
+**Now change one input and nothing else.** Hold everything the same and set the annual cost to 0.25 percent. After ten years the balance is 10,000 multiplied by 0.9975 ten times, which is about 9,753 dollars. The difference between the two costs, over ten years, on a static balance, is about 709 dollars, or roughly 7 percent of where you started.
+
+**What that comparison does and does not establish.** It establishes that a difference of three quarters of one percent a year is not a small difference, because it is applied every year to whatever is left. It establishes nothing whatever about which cost you should be paying, because the two accounts in the example buy nothing at all, and real alternatives differ in what services and what assets they include. A cheaper alternative that is not available in your plan is not an option, and this course does not know your plan.
+
+**Why the regulation's dollars-per-thousand requirement matters here.** The chart from the last lesson gives you the cost of each alternative in dollars per 1,000 invested. Multiply by your balance in thousands and you have the first-year figure of exactly this arithmetic, taken from a document rather than from an assumption. That is the difference between reading your own plan and reading an illustration.
+
+**One more caution, and it is the reason this lesson is placed here rather than earlier.** Cost is one input. The rule itself says so: alongside the fee table it requires a statement that fees and expenses are only one of several factors to consider when making an investment decision. This course teaches the one factor that is written down in a document you are entitled to, and it is silent on the others by design, because the others are advice.
+
+:::reveal Why does this lesson assume no growth at all in its arithmetic? ||| So that no rate of return is implied. The point is the shape of a percentage-of-assets cost, not a forecast.
+
+:::reveal On a 10,000 dollar balance with no growth, what remains after ten years at a 1.00 percent annual cost? ||| About 9,044 dollars, because the balance is multiplied by 0.99 ten times.
+
+:::reveal Does the difference between a 1.00 percent and a 0.25 percent cost tell you which one you should pay? ||| No. The example's accounts buy nothing, real alternatives differ in what they include, and an alternative not offered by your plan is not an option.
+
+## Vocabulary
+- **Asset-based fee**: a charge computed as a percentage of the balance, which therefore recurs every year and applies to whatever is left.
+- **Hypothetical**: an illustration whose numbers are chosen to make a mechanism visible, carrying no claim about what any real account will do.
+- **Compounding**: repeated application of a proportional change to a changing base, which works on costs in the same way it works on balances.
+- **Dollars per 1,000 invested**: the second required form of an investment alternative's cost, which converts a percentage into the units a participant actually feels.
+
+## Sources
+29 CFR § 2550.404a-5. (n.d.). *Fiduciary requirements for disclosure in participant-directed individual account plans*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/29/2550.404a-5`,
+    },
+    {
+      slug: "quiz-fees-and-the-disclosure",
+      title: "12 · Knowledge check: the fee disclosure and what it must say",
+      section: "Section 3 · Fees compound too, and one document has to say so",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "What is the subject of the regulation that requires the participant fee disclosure?",
+            options: ["Fiduciary requirements for disclosure", "Minimum vesting standards for employer contributions to a qualified plan", "Restrictions on the distribution of amounts attributable to elective deferrals", "The computation of average indexed monthly earnings for a retirement benefit"],
+            correctIndex: 0,
+            explanation: "The section is titled fiduciary requirements for disclosure in participant-directed individual account plans.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "How does the rule characterise the investment of plan assets?",
+            options: ["As a fiduciary act", "As a commercial decision left entirely to the sponsoring employer", "As a transaction requiring approval from the supervising federal agency", "As an activity outside the scope of the statute governing pension plans"],
+            correctIndex: 0,
+            explanation: "The rule opens by stating that the investment of plan assets is a fiduciary act governed by the statute's fiduciary standards.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "Which two fiduciary standards does the rule name at its opening?",
+            options: ["Sole interest and prudence", "Diversification and compliance with the plan's own governing documents", "Bonding of fiduciaries and the annual reporting obligation of the plan", "Nondiscrimination in coverage and the minimum participation requirement"],
+            correctIndex: 0,
+            explanation: "It names section 404(a)(1)(A) and (B), which are acting solely in participants' interest and acting with prudence.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "Why does a participant-directed plan owe this disclosure at all?",
+            options: ["It handed you a decision", "Because the plan is required to recommend an investment to each participant", "Because participants would otherwise be unable to make elective deferrals", "Because the supervising agency reviews every plan's investment menu annually"],
+            correctIndex: 0,
+            explanation: "Handing someone a decision without the information to make it is not consistent with acting solely in their interest or with prudence.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "By when must the plan-related information first be furnished?",
+            options: ["Before you can first direct investments", "Within thirty days after the participant makes a written request for it", "At the end of the first plan year in which the participant is enrolled", "Only once the participant's balance exceeds the plan's stated threshold"],
+            correctIndex: 0,
+            explanation: "The rule says on or before the date on which a participant or beneficiary can first direct his or her investments.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "How often must the disclosure be repeated after that?",
+            options: ["At least annually", "At least quarterly, matching the statement of amounts actually charged", "Only when the plan changes its menu of designated investment alternatives", "Only when a participant asks the administrator for it in writing"],
+            correctIndex: 0,
+            explanation: "It is an annual obligation, which is why not having seen one in over a year is a question worth asking in writing.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "Which of these must the plan-related disclosure explain?",
+            options: ["When you may give investment instructions", "Which alternative the plan's fiduciaries believe is best for your circumstances", "What return each designated investment alternative is expected to produce", "How much of your pay the plan recommends that you defer each year"],
+            correctIndex: 0,
+            explanation: "The rule requires an explanation of the circumstances under which participants and beneficiaries may give investment instructions.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "What else must the plan-related disclosure identify?",
+            options: ["The designated investment alternatives", "The names of every fiduciary who has discretion over the plan's assets", "The identity of each participant whose account exceeds a stated balance", "The employer's total matching contribution across the whole workforce"],
+            correctIndex: 0,
+            explanation: "The list includes identification of any designated investment alternatives offered under the plan.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "Which plan provisions must the disclosure describe or reference?",
+            options: ["Voting and tender rights", "The formula the employer uses to compute its matching contribution", "The schedule under which employer contributions become nonforfeitable", "The events on which an amount attributable to a deferral may be distributed"],
+            correctIndex: 0,
+            explanation: "The rule requires a description of or reference to plan provisions relating to the exercise of voting, tender and similar rights.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "What is an administrative expense in the rule's vocabulary?",
+            options: ["A general plan-wide charge", "A charge triggered by one participant's own request to the plan", "A charge levied only on participants who have not yet fully vested", "A charge computed as a percentage of an investment alternative's assets"],
+            correctIndex: 0,
+            explanation: "The rule requires an explanation of any fees and expenses for general plan administrative services that may be charged against individual accounts.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "What is an individual expense?",
+            options: ["A charge you triggered", "A charge every participant pays in equal shares across the plan year", "A charge deducted from the employer's contribution before it is credited", "A charge the plan imposes on participants who direct their own investments"],
+            correctIndex: 0,
+            explanation: "The rule covers fees and expenses that may be charged against an individual account on an individual basis, of which loan processing is the usual example.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "Why does separating the two cost categories matter to a participant?",
+            options: ["One is sometimes avoidable", "Because only one of the two categories has to be disclosed in writing", "Because the plan may waive administrative expenses on written request", "Because individual expenses are always larger than plan-wide charges"],
+            correctIndex: 0,
+            explanation: "A cost you triggered can sometimes be avoided; a cost the plan spreads across everyone cannot, and reading with the two buckets in mind is most of the skill.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "What is the usual example the lesson gives of an individual expense?",
+            options: ["Loan processing", "Recordkeeping for the plan's entire population of participants", "Audit work performed on the plan's annual financial statements", "Legal advice obtained by the sponsor about the plan's compliance"],
+            correctIndex: 0,
+            explanation: "It lands on one account because of something that participant did, which is what distinguishes it from a plan-wide charge.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "Does this course say what a plan should charge?",
+            options: ["No", "Yes, it names a percentage above which a plan is charging too much", "Yes, but only for plans at establishments with fewer than fifty workers", "Yes, it publishes an annual benchmark drawn from the supervising agency"],
+            correctIndex: 0,
+            explanation: "It has no view on the level, because that depends on services and alternatives the course does not know. It says only that the document exists and what must be in it.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "Which earlier course in this series found the adverse action notice?",
+            options: ["MONEY-01", "MONEY-02, which taught deposit accounts and who is left without one", "MONEY-06, which taught the Loan Estimate and the Closing Disclosure", "MONEY-03, which taught the timing of when deposited money becomes usable"],
+            correctIndex: 0,
+            explanation: "The series keeps finding a document a rule requires somebody to give you: the adverse action notice, the Loan Estimate, and now the fee disclosure.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "What is a designated investment alternative?",
+            options: ["An option the plan makes available", "Any security a participant is permitted to buy through a brokerage window", "The single default the plan uses for participants who give no instruction", "An alternative the plan's fiduciaries have certified as suitable for a participant"],
+            correctIndex: 0,
+            explanation: "It is an investment option the plan makes available for participants to direct money into, and the disclosure must identify each one.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "How should a reader interpret the list of plan-related items the rule requires?",
+            options: ["As a map of decisions already made", "As a ranking of the alternatives in order of expected performance", "As a summary of the participant's own contributions during the year", "As a record of every fee the plan charged during the preceding quarter"],
+            correctIndex: 0,
+            explanation: "It shows which decisions the plan has already made for you and which ones it is leaving to you.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "If you have not received a fee disclosure in more than a year, what does the lesson suggest?",
+            options: ["Ask in writing", "Assume the plan has no fees to disclose for that period", "Wait until the plan's next quarterly statement arrives instead", "Contact the supervising agency before approaching the plan itself"],
+            correctIndex: 0,
+            explanation: "The obligation is annual, and Section 1 established that the written request is the one carrying a statutory deadline and penalty.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "Which plans does this disclosure rule apply to?",
+            options: ["Participant-directed individual account plans", "Every defined benefit pension plan maintained by a private employer", "Only plans with more than one hundred participants at the start of a year", "Only plans that offer a matching contribution on employee deferrals"],
+            correctIndex: 0,
+            explanation: "The rule's own title names participant-directed individual account plans, which is what triggers the disclosure duty.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "What does the rule require about limits a plan places on investment instructions?",
+            options: ["They must be explained", "They must be approved by a majority of the plan's participants", "They must be removed within one year of the plan's establishment", "They must be identical across every designated investment alternative"],
+            correctIndex: 0,
+            explanation: "The rule requires an explanation of any specified limitations on such instructions under the terms of the plan.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "Which of the two statutory duties named in the rule concerns care and skill?",
+            options: ["Prudence", "Acting solely in the interest of participants and their beneficiaries", "Diversifying investments so as to minimise the risk of large losses", "Following the documents and instruments governing the plan's operation"],
+            correctIndex: 0,
+            explanation: "The rule names section 404(a)(1)(A) and (B), the exclusive-purpose duty and the prudence duty.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "Two participants in the same plan with the same balance can pay different amounts. Why?",
+            options: ["Individual expenses", "Because the plan applies a different administrative charge to each account", "Because vesting schedules change the fees charged against a balance", "Because the plan reduces charges for participants who have served longer"],
+            correctIndex: 0,
+            explanation: "The second cost category lands on one account and not on another because of something that participant did.",
+            sourceLessonSlug: "the-disclosure-that-must-reach-you",
+          },
+          {
+            prompt: "How often must a plan state the dollar amount actually charged to your account?",
+            options: ["At least quarterly", "At least annually, in the same document as the fee disclosure itself", "Only when a participant requests an accounting from the administrator", "Only in the year a participant separates from service with the employer"],
+            correctIndex: 0,
+            explanation: "The rule requires an at-least-quarterly statement of the dollar amount actually charged, for administrative and individual expenses separately.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "What must accompany that dollar amount on the statement?",
+            options: ["A description of the services", "A projection of the amount that will be charged in the following quarter", "A comparison against what other plans of a similar size typically charge", "A recommendation about how the participant might reduce the amount"],
+            correctIndex: 0,
+            explanation: "The rule pairs the dollar amount with a description of the services to which the amounts relate.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "Why does the lesson single out the quarterly dollar figure?",
+            options: ["It is what left your account", "Because it is the only figure the plan is required to compute accurately", "Because it includes the investment costs the comparative chart omits", "Because it is expressed as a percentage rather than as a dollar amount"],
+            correctIndex: 0,
+            explanation: "It is not an estimate, a maximum or an average, which is exactly what makes it worth finding.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "In what two forms must total annual operating expenses be disclosed?",
+            options: ["A percentage and dollars per 1,000", "A percentage and a projection of the amount over a ten-year horizon", "A dollar amount and a comparison against a published industry average", "A percentage and the total the plan collected across all participants"],
+            correctIndex: 0,
+            explanation: "The rule requires both forms, because a percentage is easy to wave away and a dollar figure is not.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "Why does the rule require the dollars-per-thousand form at all?",
+            options: ["People react to dollars differently", "Because percentages cannot be computed for some investment alternatives", "Because the supervising agency collects the figure in that form annually", "Because a dollar figure is more accurate than the equivalent percentage"],
+            correctIndex: 0,
+            explanation: "The two are the identical fact expressed differently, and most people respond to them very differently.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "What kind of fee does the rule require to be disclosed alongside operating expenses?",
+            options: ["Shareholder-type fees", "The employer's own cost of sponsoring and maintaining the plan", "The commissions paid to any adviser who recommended the alternative", "Any charge the recordkeeper levies for producing a benefit statement"],
+            correctIndex: 0,
+            explanation: "Shareholder-type fees are attributable to a participant's own transaction in an alternative, and are disclosed alongside the ongoing operating expenses.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "What does the rule require the plan to state about the cumulative effect of fees?",
+            options: ["It can substantially reduce growth", "That it is generally smaller than the effect of choosing the wrong asset", "That participants should consult a professional before making a change", "That the plan has negotiated the lowest costs reasonably available to it"],
+            correctIndex: 0,
+            explanation: "The required statement says the cumulative effect can substantially reduce the growth of a participant's or beneficiary's retirement account.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "Where does the required statement tell participants to find an example of the long-term effect?",
+            options: ["An agency website", "The plan's own summary plan description, in the section on expenses", "The quarterly statement issued by the plan's recordkeeper each period", "A publication issued annually by the tax authority alongside the limits"],
+            correctIndex: 0,
+            explanation: "The rule names the Employee Benefit Security Administration's website as the place carrying an example demonstrating the long-term effect.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "What does the lesson find unusual about that required statement?",
+            options: ["The rule puts it in the plan's mouth", "That it appears only in plans with more than one hundred participants", "That it must be repeated on every quarterly statement as well as annually", "That participants may waive it by signing an acknowledgement at enrolment"],
+            correctIndex: 0,
+            explanation: "A federal regulation requires the plan to tell you in writing that its own costs compound against you, which is not an advocate's claim but a rulemaker's decision.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "In what layout must the investment-related information be furnished?",
+            options: ["A comparative format", "A narrative summary written for a reader with no financial training", "A table ordered by the returns each alternative produced last year", "Whatever format the plan's recordkeeper finds most convenient to produce"],
+            correctIndex: 0,
+            explanation: "The comparative chart does the job the Loan Estimate does in MONEY-06: a standardized layout so two things can be compared without expertise.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "What else must appear on the comparative disclosure?",
+            options: ["Its date", "The name of the fiduciary who selected each alternative for the menu", "The number of participants currently invested in each alternative offered", "The employer's opinion of which alternative suits most of its employees"],
+            correctIndex: 0,
+            explanation: "The rule requires the date of the disclosure to be shown, which is what lets a reader tell how current the chart is.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "What further material is a participant entitled to on request?",
+            options: ["Prospectuses and financial statements", "The plan's negotiations with each of the investment providers it uses", "A written opinion on whether a chosen alternative suits the participant", "The account balances of other participants invested in the same option"],
+            correctIndex: 0,
+            explanation: "The rule provides for further investment material on request, including prospectuses and financial statements.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "In the lesson's five-step procedure, what is the first step?",
+            options: ["Find the two documents", "Compute the annual cost implied by the comparative chart's figures", "Compare the plan's costs against the alternatives available elsewhere", "Ask the administrator whether the plan's fees are reasonable in writing"],
+            correctIndex: 0,
+            explanation: "Start with the most recent annual disclosure and the most recent quarterly statement, because the rest of the procedure reads from both.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "In that procedure, how do you convert the chart's figure into an annual cost?",
+            options: ["Multiply by your balance in thousands", "Divide the percentage figure by the number of alternatives on the menu", "Subtract the quarterly statement's total from the annual disclosure's total", "Add the shareholder-type fee to the plan's general administrative charge"],
+            correctIndex: 0,
+            explanation: "The chart gives dollars per 1,000 invested, so multiplying by the balance in thousands puts it in the same units as the statement.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "What does the procedure deliberately stop short of telling you?",
+            options: ["Whether the number is acceptable", "How much the plan charged your account during the previous quarter", "Which of the plan's alternatives carry shareholder-type fees at all", "When the plan is required to furnish the disclosure to participants"],
+            correctIndex: 0,
+            explanation: "The course does not know what the plan buys with the money or what alternatives are open to you, so it gives you the number and stops.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "What should you do if you cannot find either document?",
+            options: ["Ask the administrator in writing", "Estimate the fees from the balance shown on your most recent statement", "Assume the plan charges nothing until a charge appears on a statement", "Report the plan to the agency that supervises employee benefit plans"],
+            correctIndex: 0,
+            explanation: "The written request is the one the statute attaches a thirty-day deadline and a per-day penalty to, as Section 1 established.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "How does the quarterly statement differ from the annual disclosure?",
+            options: ["It reports what was charged", "It covers investment alternatives the annual disclosure leaves out", "It is furnished only to participants who direct their own investments", "It is optional, and a plan may provide it in place of the annual document"],
+            correctIndex: 0,
+            explanation: "The annual disclosure describes what may be charged; the quarterly statement reports what actually was.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "Which MONEY-06 document does the comparative chart resemble in function?",
+            options: ["The Loan Estimate", "The recorded covenant found in a county land record", "The lease, which is governed by state rather than federal law", "The appraisal, which is an opinion of value rather than a price"],
+            correctIndex: 0,
+            explanation: "Both are standardized layouts that exist so two offers can be laid side by side without expertise.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "Which categories does the at-least-quarterly statement cover?",
+            options: ["Administrative and individual expenses", "Only the investment costs of each designated alternative on the menu", "Only charges exceeding a threshold the plan sets in its own document", "Only the amounts the employer paid on the participant's behalf that period"],
+            correctIndex: 0,
+            explanation: "The rule imposes the same at-least-quarterly requirement separately on both categories of amounts actually charged.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "What is a shareholder-type fee attributable to?",
+            options: ["The participant's own transaction", "The plan's overall administration across every participant account", "The employer's decision to add a new alternative to the plan menu", "The recordkeeper's cost of producing the quarterly benefit statement"],
+            correctIndex: 0,
+            explanation: "It arises from what that participant did in the alternative, which is why it is disclosed separately from ongoing operating expenses.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "The lesson says the two forms of the cost figure are what, in relation to each other?",
+            options: ["The identical fact", "Two different charges that a participant must add together", "An estimate and an actual, computed at different times of the year", "A ceiling and a floor between which the real charge is expected to fall"],
+            correctIndex: 0,
+            explanation: "A cost quoted as a fraction of a percent and the same cost quoted as dollars per thousand describe exactly the same thing.",
+            sourceLessonSlug: "what-you-actually-paid",
+          },
+          {
+            prompt: "How does the compounding lesson describe its own arithmetic?",
+            options: ["A hypothetical", "A conservative projection based on published long-run market history", "An illustration approved by the agency that supervises retirement plans", "A worked example of the plan's actual costs over the last ten years"],
+            correctIndex: 0,
+            explanation: "Every number is chosen to make a shape visible, and the lesson says it forecasts nothing.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "Why does the illustration assume no growth in the account at all?",
+            options: ["So no rate is implied", "Because a plan's fees are charged only on the account's original balance", "Because accounts that receive no contributions do not change in value", "Because the regulation forbids using an assumed return in any illustration"],
+            correctIndex: 0,
+            explanation: "Stripping out growth entirely makes it impossible to smuggle in a return the reader might take as a forecast.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "In the illustration, what is the cost in the first year on a 10,000 dollar balance at 1.00 percent?",
+            options: ["100 dollars", "1,000 dollars, which is one tenth of the starting balance shown", "25 dollars, which is the figure for the lower cost used later on", "956 dollars, which is the total cost across the whole ten-year period"],
+            correctIndex: 0,
+            explanation: "One percent of 10,000 is 100, leaving 9,900 at the end of the first year.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "What is left after the second year of that illustration?",
+            options: ["9,801 dollars", "9,900 dollars, which is the balance at the end of the first year", "9,044 dollars, which is the balance after the full ten-year period", "9,753 dollars, which is the ten-year balance at the lower cost level"],
+            correctIndex: 0,
+            explanation: "One percent of 9,900 is 99, so 9,801 remains after the second year.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "What happens to the cost in dollars as the illustration runs?",
+            options: ["It falls each year", "It rises each year, because the charge accumulates against the balance", "It stays at exactly 100 dollars, because the balance is treated as fixed", "It disappears once the balance has fallen below the plan's minimum"],
+            correctIndex: 0,
+            explanation: "The cost stays constant in percent and falls in dollars, because it is a percentage of a shrinking base.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "After ten years at 1.00 percent with no growth, what remains of the 10,000 dollars?",
+            options: ["About 9,044 dollars", "About 9,753 dollars, which is the result at the lower cost level instead", "About 9,000 dollars exactly, since ten years at one percent removes a tenth", "About 8,000 dollars, because the charge compounds at an accelerating rate"],
+            correctIndex: 0,
+            explanation: "The balance is 10,000 multiplied by 0.99 ten times, which is about 9,044.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "Roughly what share of the starting balance has gone to cost after those ten years?",
+            options: ["About 9.6 percent", "About 1 percent, matching the annual charge applied to the account", "About 25 percent, which is the difference between the two cost levels", "About 7 percent, which is the gap between the two illustrated results"],
+            correctIndex: 0,
+            explanation: "About 956 dollars of the original 10,000 is gone, on an account that did nothing else at all.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "Holding everything else the same at 0.25 percent, what remains after ten years?",
+            options: ["About 9,753 dollars", "About 9,044 dollars, which is the result at the higher cost level instead", "About 9,975 dollars, since a quarter of a percent is charged only once", "About 7,500 dollars, because the lower charge applies over a longer term"],
+            correctIndex: 0,
+            explanation: "The balance is 10,000 multiplied by 0.9975 ten times, which is about 9,753.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "What is the difference between the two illustrated results after ten years?",
+            options: ["About 709 dollars", "About 956 dollars, which is the total cost at the higher charge alone", "About 100 dollars, which is the first year's cost at the higher charge", "About 75 dollars a year, which is the annual gap between the two charges"],
+            correctIndex: 0,
+            explanation: "That is roughly 7 percent of the starting balance, on an account assumed to do nothing at all.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "What does that comparison establish?",
+            options: ["A small annual difference is not small", "That the cheaper of the two alternatives is the one a reader should choose", "That accounts charging less than a quarter of a percent perform better", "That fee levels are the most important factor in any investment decision"],
+            correctIndex: 0,
+            explanation: "Three quarters of one percent a year is applied every year to whatever is left, which is what makes the gap grow.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "What does the comparison expressly NOT establish?",
+            options: ["Which cost you should pay", "That a percentage-of-assets charge applies to the remaining balance", "That the cost in dollars falls as the balance falls under a fixed rate", "That the difference between two charges accumulates over a long period"],
+            correctIndex: 0,
+            explanation: "The accounts in the example buy nothing, real alternatives differ in what they include, and an alternative your plan does not offer is not an option.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "How does the lesson connect the illustration back to a real document?",
+            options: ["Dollars per thousand times your balance", "By comparing the plan's charges against a published industry benchmark", "By using the quarterly statement's total in place of the annual figure", "By asking the plan administrator to recompute the arithmetic on request"],
+            correctIndex: 0,
+            explanation: "That produces the first-year figure of exactly this arithmetic, taken from the comparative chart rather than from an assumption.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "What does the rule itself say about fees as a factor in an investment decision?",
+            options: ["They are one of several", "That they are the factor a prudent participant should weigh most heavily", "That they may be disregarded where a plan negotiates on participants' behalf", "That they must be compared against the returns each alternative produced"],
+            correctIndex: 0,
+            explanation: "Alongside the fee table the rule requires a statement that fees and expenses are only one of several factors to consider.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "Why is this course silent about the other factors?",
+            options: ["They are advice", "Because no regulation requires a plan to disclose them to participants", "Because they vary too much between plans for a course to describe them", "Because they are covered in a later course in the same personal money series"],
+            correctIndex: 0,
+            explanation: "The course teaches the factor that is written down in a document you are entitled to, and stops there by design.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "What is an asset-based fee?",
+            options: ["A charge computed on the balance", "A one-time charge levied when a participant first enrols in the plan", "A charge that applies only to amounts contributed by the employer", "A charge assessed against the plan rather than against any account"],
+            correctIndex: 0,
+            explanation: "Because it is a percentage of the balance, it recurs every year and applies to whatever is left.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "In this lesson's sense, what is compounding?",
+            options: ["A proportional change on a changing base", "The addition of investment earnings to an account at the end of each year", "The accumulation of employer contributions across successive plan years", "The doubling of a balance over a period determined by the rate of return"],
+            correctIndex: 0,
+            explanation: "It works on costs in exactly the way it works on balances, which is the entire point of the illustration.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "Where does the third of this course's three prose refusals of advice appear?",
+            options: ["In this compounding lesson", "In the section on Social Security benefit computation and the earnings record", "In the section on vesting schedules and what happens when you leave a job", "Only in the description shown on the course landing page before enrolment"],
+            correctIndex: 0,
+            explanation: "The second of the three appears here, next to the arithmetic, precisely because arithmetic is where a reader is most likely to hear a recommendation.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "Does the lesson say that any particular fee is too high?",
+            options: ["No", "Yes, it names one percent a year as excessive for a workplace plan", "Yes, it says any charge above a quarter of a percent should be avoided", "Yes, but only for participants whose balances exceed 10,000 dollars"],
+            correctIndex: 0,
+            explanation: "It refuses to say that any fee is too high, that any alternative is cheaper, or that a difference in cost should change what you hold.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "Why does the lesson say an alternative not offered by your plan is irrelevant to you?",
+            options: ["It is not an option", "Because the plan would charge an additional fee to make it available", "Because participants may not compare a plan's costs with outside products", "Because the comparative chart is required to omit unavailable alternatives"],
+            correctIndex: 0,
+            explanation: "A cheaper alternative you cannot select changes nothing about your account, and the course does not know your plan's menu.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "What is the third year's balance in the illustration?",
+            options: ["9,702.99 dollars", "9,801 dollars, which is the balance at the end of the second year", "9,900 dollars, which is the balance at the end of the first year", "9,044 dollars, which is the balance at the end of the tenth year"],
+            correctIndex: 0,
+            explanation: "One percent of 9,801 is 98.01, leaving 9,702.99 at the end of the third year.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+          {
+            prompt: "In which direction does the lesson say people usually fail to think about compounding?",
+            options: ["Against them", "Toward them, since most people overestimate how fast a balance grows", "Sideways, since costs and returns cancel out over a long enough period", "Backwards, since a charge levied today reduces last year's balance too"],
+            correctIndex: 0,
+            explanation: "Compounding on a cost runs in the direction people do not think about it running, which is why the illustration strips growth out.",
+            sourceLessonSlug: "a-hypothetical-not-a-projection",
+          },
+        ],
+      },
+    },
   ],
 };
 
