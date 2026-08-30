@@ -73,6 +73,7 @@ export interface ResearchCheck {
 export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "ga-ssepf8-gloss",
+    title: "What does Georgia SSEPF8 actually say?",
     course: "banking-and-the-unbanked",
     severity: "medium",
     claim:
