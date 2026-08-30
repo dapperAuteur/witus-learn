@@ -2957,6 +2957,657 @@ Congressional Research Service. (2025, August 5). *Income for the population age
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — Who is required to act in your interest
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "fiduciary-has-a-definition",
+      title: "21 · Fiduciary is not a compliment, it is a definition",
+      section: "Section 6 · Who is required to act in your interest",
+      body: `The word fiduciary is used in advertising as though it meant trustworthy. In this area it is a legal status with a written definition, and the definition is unusual in a way worth noticing.
+
+**It is functional, not titular.** A person is a fiduciary with respect to a plan "to the extent (i) he exercises any discretionary authority or discretionary control respecting management of such plan or exercises any authority or control respecting management or disposition of its assets, (ii) he renders investment advice for a fee or other compensation, direct or indirect, with respect to any moneys or other property of such plan, or has any authority or responsibility to do so, or (iii) he has any discretionary authority or discretionary responsibility in the administration of such plan" (29 U.S.C. § 1002, n.d.).
+
+**Three things follow from that wording, and each one matters.** First, you become a fiduciary by doing certain things, not by holding a title, so nobody escapes the status by leaving it off a business card. Second, the phrase "to the extent" makes it partial: the same person can be a fiduciary for one function and not for another. Third, clause (ii) reaches indirect compensation, which is the clause that matters most when payment arrives from somewhere other than the person being advised.
+
+**Then the duties, which are worth reading in full because they are short.** A fiduciary must discharge duties "solely in the interest of the participants and beneficiaries" and:
+
+- "(A) for the exclusive purpose of: (i) providing benefits to participants and their beneficiaries; and (ii) defraying reasonable expenses of administering the plan";
+- "(B) with the care, skill, prudence, and diligence under the circumstances then prevailing that a prudent man acting in a like capacity and familiar with such matters would use in the conduct of an enterprise of a like character and with like aims";
+- "(C) by diversifying the investments of the plan so as to minimize the risk of large losses, unless under the circumstances it is clearly prudent not to do so"; and
+- "(D) in accordance with the documents and instruments governing the plan insofar as such documents and instruments are consistent with the provisions of this subchapter and subchapter III" (29 U.S.C. § 1104, n.d.).
+
+**Read the first eight words again.** Solely in the interest of the participants and beneficiaries. Not primarily, not while also considering, not subject to the sponsor's commercial relationships. That word is the whole of the standard, and it is the reason Section 3's fee disclosure exists: the rule that requires it opens by saying the investment of plan assets is a fiduciary act governed by (A) and (B).
+
+**Two things this course is careful not to say.** It does not say that everyone who talks to you about your plan is a fiduciary, because the definition is functional and some of them are not. And it does not say that a fiduciary will always be right, because (B) is a standard of care and process rather than a guarantee of outcome. A prudent process can produce a bad year. What the standard forbids is the other thing: acting for someone else's benefit while advising you.
+
+:::reveal Is fiduciary status conferred by a title? ||| No. The definition is functional: it attaches to the exercise of discretionary authority, control over assets, or rendering investment advice for compensation.
+
+:::reveal What do the first words of the duty provision require? ||| That the fiduciary discharge duties solely in the interest of the participants and beneficiaries.
+
+:::reveal Does the prudence duty guarantee a good outcome? ||| No. It is a standard of care and process, so a prudent process can still produce a bad year.
+
+## Vocabulary
+- **Fiduciary**: a person who, to the extent of certain functions, exercises discretionary authority over a plan, controls its assets, or renders investment advice for compensation.
+- **Discretionary authority**: the power to decide rather than merely to execute, which is one of the triggers for fiduciary status.
+- **Indirect compensation**: payment reaching an adviser from a source other than the person advised, expressly reached by the statutory definition.
+- **Exclusive purpose**: the requirement that a fiduciary act only to provide benefits and to defray reasonable administrative expenses.
+- **Prudent person standard**: the requirement to act with the care, skill, prudence and diligence a prudent person familiar with such matters would use in a like enterprise.
+
+## Sources
+29 U.S.C. § 1002. (n.d.). *Definitions*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/1002
+
+29 U.S.C. § 1104. (n.d.). *Fiduciary duties*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/1104`,
+    },
+    {
+      slug: "two-seats-one-conversation",
+      title: "22 · The same conversation, two different legal seats",
+      section: "Section 6 · Who is required to act in your interest",
+      body: `Outside a plan, the person across the table from you is sitting in one of two seats, and the two are governed by different rules. Almost nobody knows which seat they are looking at, and the difference decides what you are actually receiving.
+
+**Seat one: the investment adviser.** The Investment Advisers Act makes it unlawful for any investment adviser, using the mails or interstate commerce, "to employ any device, scheme, or artifice to defraud any client or prospective client", "to engage in any transaction, practice, or course of business which operates as a fraud or deceit upon any client or prospective client", to act as principal for their own account and knowingly sell to or buy from a client without disclosing the capacity in writing before completion and obtaining consent, or "to engage in any act, practice, or course of business which is fraudulent, deceptive, or manipulative" (15 U.S.C. § 80b-6, n.d.).
+
+**Why those words produce a fiduciary duty is a matter of decided law.** In *SEC v. Capital Gains Research Bureau, Inc.*, 375 U.S. 180, decided 9 December 1963, the Supreme Court described "the delicate fiduciary nature of an investment advisory relationship" and the adviser's obligation of "utmost good faith, and full and fair disclosure of all material facts" (SEC v. Capital Gains Research Bureau, Inc., 1963). That case is why the anti-fraud language above is read as imposing an affirmative duty rather than merely prohibiting lies.
+
+**Seat two: the broker-dealer, governed by its own rule.** Regulation Best Interest provides that a broker, dealer, or associated natural person, "when making a recommendation of any securities transaction or investment strategy involving securities (including account recommendations) to a retail customer, shall act in the best interest of the retail customer at the time the recommendation is made, without placing the financial or other interest of the broker, dealer, or natural person ... ahead of the interest of the retail customer" (17 CFR § 240.15l-1, n.d.). The rule is then built out of four component obligations, headed disclosure, care, conflict of interest, and compliance (17 CFR § 240.15l-1, n.d.).
+
+**Read the two side by side and notice what differs.** The adviser standard, as the Court described it, runs to the relationship. The broker-dealer standard attaches "at the time the recommendation is made" and to recommendations to a retail customer. Both are real obligations; they are not the same obligation, they arise under different law, and this course does not tell you that one kind of firm is better than the other. What it tells you is that the question "which of these am I dealing with" has an answer, and that the answer is written down.
+
+**And there is a document designed to answer it.** A registered investment adviser "must deliver Form CRS ... to each retail investor", before or at the time of entering into an advisory contract, and must post it on its website and deliver a current copy within 30 days on request (17 CFR § 275.204-5, n.d.). One trigger in that rule belongs in a retirement course specifically: an existing client must be given the current Form CRS before or at the time the firm recommends "that the retail investor roll over assets from a retirement account into a new or existing account or investment" (17 CFR § 275.204-5, n.d.). The rulemaker named the rollover conversation, which tells you how consequential it was thought to be.
+
+**Two free public records answer the rest.** The SEC operates a site titled "IAPD - Investment Adviser Public Disclosure", which lets anyone look up registered investment advisers, their backgrounds and their regulatory history, at no cost. FINRA operates BrokerCheck, which its own page describes as a way to find a broker, investment or financial advisor. Neither is a recommendation and neither is being recommended here: they are records, and reading a record before a conversation is the same move this catalog teaches everywhere else.
+
+:::reveal What did the Supreme Court call the investment advisory relationship in 1963? ||| Delicate and fiduciary in nature, carrying an obligation of utmost good faith and full and fair disclosure of all material facts.
+
+:::reveal When does Regulation Best Interest's general obligation attach? ||| At the time a recommendation is made to a retail customer, and it forbids placing the firm's interest ahead of the customer's.
+
+:::reveal Which retirement-specific event triggers delivery of Form CRS to an existing client? ||| A recommendation that the investor roll over assets from a retirement account into a new or existing account or investment.
+
+## Vocabulary
+- **Investment adviser**: a firm or person governed by the Advisers Act, whose anti-fraud provisions have been read since 1963 as imposing an affirmative fiduciary duty.
+- **Broker-dealer**: a firm governed by Regulation Best Interest, which attaches to recommendations made to a retail customer.
+- **Regulation Best Interest**: the rule requiring a broker-dealer not to place its own financial or other interest ahead of a retail customer's when recommending.
+- **Form CRS**: the relationship summary a registered investment adviser must deliver to each retail investor, including before a rollover recommendation to an existing client.
+- **Retail customer**: the category of person whose recommendations trigger the broker-dealer standard, which is why the standard's scope is narrower than a general duty.
+
+## Sources
+15 U.S.C. § 80b-6. (n.d.). *Prohibited transactions by investment advisers*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/15/80b-6
+
+17 CFR § 240.15l-1. (n.d.). *Regulation best interest*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/17/240.15l-1
+
+17 CFR § 275.204-5. (n.d.). *Delivery of Form CRS*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/17/275.204-5
+
+SEC v. Capital Gains Research Bureau, Inc., 375 U.S. 180 (1963). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/supremecourt/text/375/180
+
+U.S. Securities and Exchange Commission. (n.d.). *IAPD - Investment Adviser Public Disclosure*. https://adviserinfo.sec.gov/
+
+Financial Industry Regulatory Authority. (n.d.). *BrokerCheck*. https://brokercheck.finra.org/`,
+    },
+    {
+      slug: "read-your-own-record",
+      title: "23 · Capstone: read your own record, and the gap it sits inside",
+      section: "Section 6 · Who is required to act in your interest",
+      body: `**Said for the third and last time, in prose, as this series requires.** This course gives no financial advice. It has told you nothing about what to hold, how much to save, when to start, which account type to use, whether to roll anything over, or when to claim. It has named no product, no provider and no fee level, and it has projected no return. What it has done is show you where the rules are written and which documents somebody is required to give you. Everything below is a reading exercise, not a plan.
+
+**Five documents, and every one of them exists because a rule says so.**
+
+1. **The plan's governing documents.** Ask the administrator in writing for the latest summary plan description, the latest annual report, and the trust or bargaining agreement. Find the match formula, the vesting schedule, the plan's own definition of a year of service, and the events on which a distribution is permitted (29 U.S.C. § 1024, n.d.).
+2. **The annual participant fee disclosure.** Find the comparative chart. For each alternative you are actually in, read the cost as a percentage and as dollars per 1,000 invested (29 CFR § 2550.404a-5, n.d.).
+3. **The most recent quarterly statement.** Find the dollar amount actually charged to your account, in both the administrative and the individual categories, and the description of what it bought (29 CFR § 2550.404a-5, n.d.).
+4. **Your Social Security earnings record.** Compare it against every year you worked. Anything missing is a year the formula will treat as zero, and after three years, three months and fifteen days you are arguing against a record the statute calls conclusive (42 U.S.C. § 405, n.d.).
+5. **Form CRS, from anyone who advises you.** Ask for it before a conversation rather than after, and remember that a rollover recommendation to an existing client is itself a delivery trigger (17 CFR § 275.204-5, n.d.).
+
+Then check a registration record for free before you take advice, on the SEC's Investment Adviser Public Disclosure site or on FINRA's BrokerCheck. That step costs nothing and takes minutes.
+
+**Now the context those five documents sit inside, because the course would be dishonest without it.** Analysing the 2022 Survey of Consumer Finances, the Congressional Research Service reported that 54.3 percent of U.S. households had retirement account assets, with ownership by age running 49.6 percent for those younger than 35, 61.5 percent at 35 to 44, 62.2 percent at 45 to 54, 57 percent at 55 to 64, and 47 percent at 65 and older (Congressional Research Service, 2025). The same analysis reports that about 30 percent of households had retirement assets greater than zero and up to 100,000 dollars, 15.5 percent above 100,000 and up to 500,000, 4.7 percent above 500,000 and up to 1 million, and 4.6 percent above 1 million (Congressional Research Service, 2025).
+
+**Read the first number against the fifth.** Nearly half of households hold no retirement account at all, and among those that do, the distribution is heavily concentrated. This is the same survey, taken in 2022 and published by the Federal Reserve in October 2023, whose companion analysis reported that median wealth among White families was 285,000 dollars, that "the wealth of the typical Black family ($44,900) was only about 15 percent of the typical White family", and that "[t]he typical Hispanic family similarly held only about 20 percent of the wealth" (Aladangady et al., 2023).
+
+**Put that beside Section 1 and Section 5 and the course closes where it opened.** Access to a workplace plan runs from 49 percent in the lowest-paid quarter of private-sector occupations to 91 percent in the highest. Reliance on Social Security for nearly all of household income runs the other way, 61.5 percent in the bottom income quintile against almost none in the top two. The account gap and the wealth gap are not two separate stories about individual behaviour. They are one story about employment, and it is measured by the federal government, in public, every few years.
+
+**What this course leaves you able to do.** Say what a retirement account is and is not. Find out whether you have access and what the plan document actually promises. Read a fee disclosure and compute what you paid. Explain where an annual limit comes from without repeating a stale number. Describe how a Social Security benefit is computed and why the earnings record matters. And ask, of anyone advising you, which seat they are sitting in, then check the free public record before you answer them.
+
+:::reveal How many documents does the capstone ask you to read, and what do they have in common? ||| Five, and each exists because a statute or a regulation requires somebody to produce it.
+
+:::reveal What share of U.S. households had retirement account assets in the 2022 Survey of Consumer Finances? ||| 54.3 percent, with ownership peaking at 62.2 percent for households aged 45 to 54.
+
+:::reveal What single question does the course want you to ask anyone advising you? ||| Which legal seat they are sitting in, and then check the free public registration record before deciding what their advice is worth.
+
+## Vocabulary
+- **Survey of Consumer Finances**: the Federal Reserve's periodic survey of household finances, the source of the retirement-account ownership and wealth figures in this lesson.
+- **Retirement account assets**: the survey category covering individual retirement accounts and certain employer-sponsored accounts, used here to measure who holds any account at all.
+- **Registration record**: the free public file on an adviser or broker, which can be read before a conversation rather than after it.
+- **Capstone**: the exercise that runs the whole mechanism once, on the learner's own documents, rather than on an example.
+
+## Sources
+17 CFR § 275.204-5. (n.d.). *Delivery of Form CRS*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/17/275.204-5
+
+29 CFR § 2550.404a-5. (n.d.). *Fiduciary requirements for disclosure in participant-directed individual account plans*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/29/2550.404a-5
+
+29 U.S.C. § 1024. (n.d.). *Filing and furnishing of information*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/1024
+
+42 U.S.C. § 405. (n.d.). *Evidence, procedure, and certification for payments*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/42/405
+
+Aladangady, A., Chang, A. C., & Krimmel, J. (2023, October 18). *Greater wealth, greater uncertainty: Changes in racial inequality in the Survey of Consumer Finances* (FEDS Notes). Board of Governors of the Federal Reserve System. https://www.federalreserve.gov/econres/notes/feds-notes/greater-wealth-greater-uncertainty-changes-in-racial-inequality-in-the-survey-of-consumer-finances-20231018.html
+
+Congressional Research Service. (2025, February 26). *Distribution of retirement account balances: Analysis of the 2022 Survey of Consumer Finances* (IF12928). https://www.everycrsreport.com/reports/IF12928.html`,
+    },
+    {
+      slug: "quiz-who-owes-you-a-duty",
+      title: "24 · Knowledge check: fiduciary status, the two seats, and your own record",
+      section: "Section 6 · Who is required to act in your interest",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "How does the statute confer fiduciary status with respect to a plan?",
+            options: ["Functionally", "By the title a person holds within the sponsoring employer's organisation", "By registration with the agency that supervises employee benefit plans", "By written designation in the plan document adopted by the sponsor"],
+            correctIndex: 0,
+            explanation: "The definition attaches to what a person does, so nobody escapes it by leaving the word off a business card.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "Which of these triggers fiduciary status under the definition?",
+            options: ["Discretionary control over plan assets", "Being employed by the company that sponsors the retirement plan", "Holding an account balance in the plan larger than a stated threshold", "Serving on a committee that reviews the plan's annual financial report"],
+            correctIndex: 0,
+            explanation: "Exercising any authority or control respecting management or disposition of the plan's assets is one of the three listed triggers.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "What does the phrase \"to the extent\" do in the definition?",
+            options: ["Makes the status partial", "Limits the definition to plans above a stated number of participants", "Confines the status to persons formally appointed by the plan sponsor", "Restricts the status to decisions made during the plan's own fiscal year"],
+            correctIndex: 0,
+            explanation: "The same person can be a fiduciary for one function and not for another.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "Which clause of the definition reaches indirect compensation?",
+            options: ["The investment advice clause", "The clause covering discretionary authority over plan administration", "The clause covering control over the management of the plan's assets", "The clause requiring compliance with the plan's governing documents"],
+            correctIndex: 0,
+            explanation: "It covers rendering investment advice for a fee or other compensation, direct or indirect, which matters when payment comes from elsewhere.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "In whose interest must a fiduciary discharge their duties?",
+            options: ["Solely the participants and beneficiaries", "Primarily the participants, while also weighing the sponsor's interests", "The plan itself, considered separately from anyone with a claim on it", "The employer, since it bears the cost of establishing and running the plan"],
+            correctIndex: 0,
+            explanation: "The statute says solely, not primarily and not subject to the sponsor's commercial relationships.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "What are the two exclusive purposes named in the duty provision?",
+            options: ["Benefits and reasonable expenses", "Growth of the plan's assets and preservation of the employer's capital", "Compliance with the statute and reporting to the supervising agency", "Diversification of investments and adherence to the plan's documents"],
+            correctIndex: 0,
+            explanation: "Providing benefits to participants and their beneficiaries, and defraying reasonable expenses of administering the plan.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "What standard of conduct does clause (B) impose?",
+            options: ["The prudent person standard", "A guarantee that the plan's investments will not lose value in a year", "An obligation to obtain the highest available return on plan assets", "A duty to follow the recommendations of a registered investment adviser"],
+            correctIndex: 0,
+            explanation: "Care, skill, prudence and diligence such as a prudent person familiar with such matters would use in a like enterprise.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "What does clause (C) require, and with what qualification?",
+            options: ["Diversification, unless clearly prudent not to", "Diversification, in every case and without any exception at all", "Concentration in the plan's default alternative unless a participant objects", "Selection of the lowest-cost alternative available in each asset category"],
+            correctIndex: 0,
+            explanation: "Diversifying so as to minimize the risk of large losses, unless under the circumstances it is clearly prudent not to do so.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "What does clause (D) require, and subject to what limit?",
+            options: ["Following the documents, if lawful", "Following the documents, regardless of whether they comply with the statute", "Amending the documents whenever a participant objects to a term in them", "Filing the documents with the supervising agency before they take effect"],
+            correctIndex: 0,
+            explanation: "A fiduciary must act in accordance with the plan documents insofar as they are consistent with the relevant subchapters.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "Which word in the duty provision does the lesson call the whole of the standard?",
+            options: ["Solely", "Prudence, because it governs how every decision must be reached", "Reasonable, because it limits what expenses the plan may defray", "Diversifying, because it protects participants from concentrated losses"],
+            correctIndex: 0,
+            explanation: "Not primarily, not while also considering, not subject to the sponsor's commercial relationships.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "How does the fee disclosure rule connect to these duties?",
+            options: ["It cites clauses (A) and (B)", "It replaces them for plans that let participants direct their own investments", "It applies only where a fiduciary has failed to follow the plan's documents", "It exempts a fiduciary from the prudence duty for disclosed investments"],
+            correctIndex: 0,
+            explanation: "The rule opens by saying the investment of plan assets is a fiduciary act governed by the exclusive-purpose and prudence standards.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "Does this course say that everyone who discusses your plan with you is a fiduciary?",
+            options: ["No", "Yes, because any discussion of plan assets is a fiduciary act", "Yes, but only where the person is paid directly by the participant", "Yes, once the person has been given access to the plan's documents"],
+            correctIndex: 0,
+            explanation: "The definition is functional, and some people who talk to you about a plan do not perform any of the listed functions.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "Does the prudence duty guarantee that a decision will turn out well?",
+            options: ["No", "Yes, a fiduciary is liable for any loss the plan's investments suffer", "Yes, provided the fiduciary followed the plan's governing documents", "Yes, unless the loss arose from a failure to diversify the investments"],
+            correctIndex: 0,
+            explanation: "It is a standard of care and process, so a prudent process can still produce a bad year.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "What does the standard forbid, as the lesson puts it?",
+            options: ["Advising you for someone else's benefit", "Charging any fee at all against a participant's individual account", "Selecting an investment alternative that later loses value in a year", "Making a decision without first consulting the affected participants"],
+            correctIndex: 0,
+            explanation: "The prohibition is on acting for another's benefit while advising you, not on being wrong.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "How is the word fiduciary commonly misused, according to the lesson?",
+            options: ["As a compliment", "As a description of a plan document rather than of a person", "As a synonym for the agency that supervises employee benefit plans", "As a label for anyone who holds a participant's assets in custody"],
+            correctIndex: 0,
+            explanation: "It is used in advertising as though it meant trustworthy, when in this area it is a legal status with a written definition.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "What is discretionary authority, in the definition's sense?",
+            options: ["The power to decide", "The power to execute instructions given by another person", "The power to review a decision after it has already been made", "The power to draft the plan document before it is adopted"],
+            correctIndex: 0,
+            explanation: "Deciding rather than merely executing is what makes the authority discretionary, and it is one of the triggers for the status.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "Which statute contains the two provisions read in this lesson?",
+            options: ["The employee retirement income statute", "The Investment Advisers Act, which governs firms advising retail investors", "The Internal Revenue Code, which sets the contribution and distribution rules", "The Social Security Act, which sets insured status and the benefit formula"],
+            correctIndex: 0,
+            explanation: "Both the functional definition and the four duties come from the same body of law governing employee benefit plans.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "Which of these is NOT one of the three fiduciary triggers?",
+            options: ["Holding an account in the plan", "Exercising discretionary control over the plan's management", "Rendering investment advice for a fee with respect to plan property", "Having discretionary responsibility in the plan's administration"],
+            correctIndex: 0,
+            explanation: "Being a participant is not a trigger. The three are discretionary management, control over assets or advice for compensation, and administrative discretion.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "What is indirect compensation, in this context?",
+            options: ["Payment from a source other than the client", "Compensation paid in a form other than cash to an adviser", "Compensation deferred until after the advisory relationship ends", "Compensation charged against a plan rather than an individual account"],
+            correctIndex: 0,
+            explanation: "The definition expressly reaches it, which is what makes clause (ii) do work when the payer and the advised person differ.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "The duty provision uses the phrase \"under the circumstances then prevailing\". What does that qualify?",
+            options: ["The care and skill required", "The purposes for which plan expenses may be defrayed", "The requirement to diversify the plan's investment holdings", "The obligation to follow the plan's governing instruments"],
+            correctIndex: 0,
+            explanation: "The prudence standard is judged against the circumstances at the time rather than with hindsight.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "Why does the lesson say nobody escapes fiduciary status by omitting a title?",
+            options: ["The definition looks at conduct", "Because the supervising agency assigns the status on registration", "Because plan documents must name every fiduciary by full legal name", "Because the status attaches to any person paid out of the plan's assets"],
+            correctIndex: 0,
+            explanation: "The status attaches to the exercise of the listed functions, not to what anyone is called.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "What does the exclusive purpose clause say about administrative expenses?",
+            options: ["They must be reasonable", "They may not be charged against participant accounts at all", "They must be borne entirely by the employer that sponsors the plan", "They must be equal for every participant regardless of account size"],
+            correctIndex: 0,
+            explanation: "The clause permits defraying reasonable expenses of administering the plan as one of the two exclusive purposes.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "In the phrase \"a prudent man acting in a like capacity\", what is being compared?",
+            options: ["An enterprise of like character and aims", "The fiduciary's conduct against the plan's own investment results", "The plan's costs against those charged by other plans of similar size", "The fiduciary's decisions against the preferences of the participants"],
+            correctIndex: 0,
+            explanation: "The standard measures conduct against what a prudent person familiar with such matters would do in a like enterprise with like aims.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "How many distinct duties does clause (a)(1) impose after the opening words?",
+            options: ["Four", "Two, covering the exclusive purpose and the prudence standard only", "Six, adding separate duties of loyalty, care and disclosure to the four", "One, since the four lettered items are illustrations of a single duty"],
+            correctIndex: 0,
+            explanation: "Exclusive purpose, prudence, diversification, and following lawful plan documents.",
+            sourceLessonSlug: "fiduciary-has-a-definition",
+          },
+          {
+            prompt: "Under the Advisers Act, what is unlawful for an investment adviser?",
+            options: ["Employing a scheme to defraud a client", "Charging a fee computed as a percentage of a client's total assets", "Recommending a security the adviser also holds in a personal account", "Advising a client who has not signed a written advisory contract"],
+            correctIndex: 0,
+            explanation: "The section makes it unlawful to employ any device, scheme, or artifice to defraud any client or prospective client.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "Whom do the Advisers Act prohibitions protect besides existing clients?",
+            options: ["Prospective clients", "Any person who reads the adviser's published marketing material", "Participants in any employer plan the adviser has been engaged by", "Retail customers of a broker-dealer affiliated with the adviser"],
+            correctIndex: 0,
+            explanation: "The prohibitions run to any client or prospective client, which extends them before a relationship has begun.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "What must an adviser acting as principal do before completing a transaction with a client?",
+            options: ["Disclose the capacity and obtain consent", "File a notice with the securities regulator before the trade settles", "Obtain an independent valuation of the security being bought or sold", "Refund any advisory fee attributable to the period of the transaction"],
+            correctIndex: 0,
+            explanation: "The statute requires written disclosure of the capacity before completion, and the client's consent to the transaction.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "What did the Supreme Court call the investment advisory relationship in 1963?",
+            options: ["Delicate and fiduciary in nature", "A commercial arrangement governed entirely by the parties' contract", "A brokerage relationship subject to the same rules as a securities trade", "An agency relationship terminable at will by either party without notice"],
+            correctIndex: 0,
+            explanation: "The Court described the delicate fiduciary nature of an investment advisory relationship in SEC v. Capital Gains Research Bureau.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "What obligation did that decision describe?",
+            options: ["Utmost good faith and full disclosure", "A duty to obtain the best available price on every transaction", "A duty to register with the securities regulator before advising", "A duty to recommend only the lowest-cost product in each category"],
+            correctIndex: 0,
+            explanation: "The phrase is utmost good faith, and full and fair disclosure of all material facts.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "On what date was SEC v. Capital Gains Research Bureau decided?",
+            options: ["9 December 1963", "29 December 2022, the date the automatic enrollment section was enacted", "18 March 2026, the date of the report on worker participation in pensions", "18 October 2023, the date of the note on wealth in the consumer survey"],
+            correctIndex: 0,
+            explanation: "The decision, reported at 375 U.S. 180, is why the anti-fraud language is read as imposing an affirmative duty.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "Why does that decision matter to the reading of the statute?",
+            options: ["It turns prohibitions into an affirmative duty", "It exempted investment advisers from the prohibitions the statute lists", "It extended the statute to cover brokers as well as investment advisers", "It required advisers to deliver a relationship summary to retail investors"],
+            correctIndex: 0,
+            explanation: "Without it the anti-fraud language would read as merely prohibiting lies rather than requiring disclosure and good faith.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "Whom does Regulation Best Interest's general obligation apply to?",
+            options: ["Brokers and dealers recommending to retail customers", "Investment advisers entering into a contract with any new client", "Plan fiduciaries selecting investment alternatives for a participant menu", "Recordkeepers producing quarterly statements for plan participants"],
+            correctIndex: 0,
+            explanation: "It covers a broker, dealer, or associated natural person making a recommendation of a securities transaction or strategy to a retail customer.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "What does that rule forbid a broker-dealer from doing?",
+            options: ["Placing its interest ahead of the customer's", "Charging a commission on any recommended securities transaction", "Recommending a security issued by an affiliate of the same firm", "Advising a customer who also holds an employer-sponsored plan account"],
+            correctIndex: 0,
+            explanation: "The obligation is to act in the retail customer's best interest without placing the firm's financial or other interest ahead of theirs.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "At what moment does Regulation Best Interest's general obligation attach?",
+            options: ["When the recommendation is made", "Continuously, for as long as the customer's account remains open", "At the point the customer first opens an account with the firm", "When the customer executes the transaction that was recommended"],
+            correctIndex: 0,
+            explanation: "The rule says at the time the recommendation is made, which is one of the ways it differs from the adviser relationship standard.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "How many component obligations is Regulation Best Interest built out of?",
+            options: ["Four", "Two, covering disclosure of conflicts and the exercise of due care", "Six, adding separate obligations of loyalty and of best execution", "One, since the general obligation is not broken down any further"],
+            correctIndex: 0,
+            explanation: "They are headed disclosure, care, conflict of interest, and compliance.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "Which of these is one of those four component obligations?",
+            options: ["Conflict of interest", "Diversification of the customer's holdings across asset categories", "Delivery of the plan's summary description to the retail customer", "Annual disclosure of the customer's account costs in dollar terms"],
+            correctIndex: 0,
+            explanation: "The four headings are disclosure, care, conflict of interest, and compliance.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "What does this course say about which of the two seats is better?",
+            options: ["Nothing", "That an investment adviser is always preferable for retirement advice", "That a broker-dealer is preferable where the customer trades infrequently", "That the choice depends on the size of the customer's account balance"],
+            correctIndex: 0,
+            explanation: "It says only that the question of which one you are dealing with has an answer, and that the answer is written down.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "Who must deliver Form CRS, and to whom?",
+            options: ["A registered adviser, to each retail investor", "A plan administrator, to each participant who can direct investments", "An employer, to each employee eligible to join its retirement plan", "A recordkeeper, to each participant whose account exceeds a threshold"],
+            correctIndex: 0,
+            explanation: "A registered investment adviser must deliver Form CRS to each retail investor, before or at the time of entering an advisory contract.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "Which retirement-specific event triggers delivery to an existing client?",
+            options: ["A rollover recommendation", "The client reaching the age of 59 and a half during the relationship", "The client's separation from service with a plan-sponsoring employer", "The annual anniversary of the advisory contract being entered into"],
+            correctIndex: 0,
+            explanation: "The rule names a recommendation that the retail investor roll over assets from a retirement account into a new or existing account or investment.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "What does the naming of that trigger tell you, according to the lesson?",
+            options: ["The rollover conversation was thought consequential", "That rollovers are prohibited unless a form has been delivered first", "That an adviser may not recommend a rollover to an existing client", "That the rollover decision is governed by the plan rather than the adviser"],
+            correctIndex: 0,
+            explanation: "The rulemaker singled out that conversation, which is a signal about how much turns on it.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "Where else must a registered adviser make Form CRS available?",
+            options: ["On its website", "In the offices of the supervising securities regulator for the region", "In the annual report filed by any plan the adviser has been engaged by", "In the comparative chart the plan furnishes with its fee disclosure"],
+            correctIndex: 0,
+            explanation: "The rule requires the current Form CRS to be posted prominently on the firm's website, in an accessible location and format.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "How quickly must a current Form CRS be delivered on request?",
+            options: ["Within 30 days", "Within 60 days, matching the period for communicating amendments", "Within three business days, matching a closing disclosure deadline", "Within one business day, matching a credit file security freeze"],
+            correctIndex: 0,
+            explanation: "The rule requires delivery of a current Form CRS to each retail investor within 30 days upon request.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "How long does a firm have to communicate amendments to Form CRS to an existing client?",
+            options: ["Within 60 days", "Within 30 days, matching the deadline for delivering it on request", "Within one year, at the anniversary of the advisory contract", "Immediately, before any further advice may lawfully be given"],
+            correctIndex: 0,
+            explanation: "Changes must be communicated within 60 days after the amendments are required to be made, and without charge.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "Does delivering Form CRS satisfy a firm's other disclosure obligations?",
+            options: ["No", "Yes, it replaces every other disclosure required under federal law", "Yes, for as long as the firm also posts the form on its own website", "Yes, provided the firm delivers it before entering into any contract"],
+            correctIndex: 0,
+            explanation: "The rule says compliance with the section does not relieve a firm of other disclosure obligations under federal or state law.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "What is the SEC's free lookup service called?",
+            options: ["Investment Adviser Public Disclosure", "The Central Registration Depository of state securities administrators", "The Employee Benefits Security Administration's plan search facility", "The Federal Register's index of published rules and interpretations"],
+            correctIndex: 0,
+            explanation: "The site titles itself IAPD, Investment Adviser Public Disclosure, and lets anyone look up a registered adviser's background and regulatory history free of charge.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "What is FINRA's public lookup service called?",
+            options: ["BrokerCheck", "The Investment Adviser Public Disclosure system operated by the SEC", "The consumer complaint database maintained by a federal regulator", "The public licence register maintained by each state banking regulator"],
+            correctIndex: 0,
+            explanation: "Its own page describes it as a way to find a broker, investment or financial advisor.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "How does the lesson characterise those two lookup sites?",
+            options: ["Records, not recommendations", "Advisory services that rank firms by the quality of their advice", "Complaint channels for participants who believe they were misled", "Registries that certify a firm as suitable for retirement customers"],
+            correctIndex: 0,
+            explanation: "Neither is a recommendation and neither is being recommended. Reading a record before a conversation is the move this catalog teaches everywhere.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "What is the key structural difference between the two standards, as the lesson frames it?",
+            options: ["One runs to the relationship, one to the recommendation", "One is enforced by a court and the other by an administrative agency", "One applies to retirement accounts and the other to taxable accounts", "One requires registration and the other requires only annual reporting"],
+            correctIndex: 0,
+            explanation: "The adviser standard as the Court described it runs to the relationship; the broker-dealer standard attaches at the time a recommendation is made.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "What is a retail customer, in the context of the broker-dealer rule?",
+            options: ["The category triggering the standard", "Any person holding an account at a registered broker-dealer firm", "A participant in an employer-sponsored individual account plan", "An investor whose account balance falls below a stated threshold"],
+            correctIndex: 0,
+            explanation: "The standard attaches to recommendations made to a retail customer, which is why its scope is narrower than a general duty.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "Which of the Advisers Act prohibitions is the catch-all?",
+            options: ["Fraudulent, deceptive, or manipulative conduct", "Acting as principal without disclosing the capacity in writing", "Employing a device, scheme or artifice to defraud a client", "Engaging in a transaction that operates as a fraud upon a client"],
+            correctIndex: 0,
+            explanation: "The fourth paragraph reaches any act, practice or course of business that is fraudulent, deceptive, or manipulative, with rulemaking authority attached.",
+            sourceLessonSlug: "two-seats-one-conversation",
+          },
+          {
+            prompt: "How is the third and final refusal of advice delivered in this course?",
+            options: ["In prose, in the capstone", "As a footnote appended to the course's list of sources", "As a disclaimer displayed only on the course landing page", "As a warning shown before each quiz in the final two sections"],
+            correctIndex: 0,
+            explanation: "The series requires the refusal in prose in three places, and the capstone carries the third.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "How many documents does the capstone ask a learner to read?",
+            options: ["Five", "Three, covering the plan document, the fee disclosure and the statement", "Seven, adding the annual report and the trust agreement as separate items", "Two, since the plan document and the fee disclosure are the only ones required"],
+            correctIndex: 0,
+            explanation: "The plan's governing documents, the annual fee disclosure, the quarterly statement, the earnings record, and Form CRS.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What do all five capstone documents have in common?",
+            options: ["A rule requires them", "They are all produced by the same employer or its recordkeeper", "They are all published annually in the Federal Register by an agency", "They all require a fee to obtain from the institution that holds them"],
+            correctIndex: 0,
+            explanation: "Each exists because a statute or a regulation obliges somebody to produce it.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which four things does the capstone say to find in the plan's governing documents?",
+            options: ["Match, vesting, year of service, distribution events", "Fees, returns, the recordkeeper's identity, and the plan's total assets", "The employer's contribution history, the auditor, the trustee, the sponsor", "The annual limit, the phase-out range, the catch-up amount, the base year"],
+            correctIndex: 0,
+            explanation: "Those four are the terms Sections 1 and 2 established as the ones that decide what you actually receive.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the capstone ask you to read for each alternative you are actually in?",
+            options: ["The cost, in both required forms", "The return the alternative produced over the preceding ten years", "The number of other participants who have selected the same option", "The fiduciary's written reasons for including it on the plan's menu"],
+            correctIndex: 0,
+            explanation: "As a percentage and as dollars per 1,000 invested, both of which the fee disclosure rule requires.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the capstone say about a year of covered work missing from your earnings record?",
+            options: ["The formula treats it as zero", "The agency reconstructs it from the employer's payroll submissions", "It is excluded from the count of benefit computation years entirely", "It reduces the number of elapsed years used in the computation"],
+            correctIndex: 0,
+            explanation: "And after three years, three months and fifteen days you are arguing against a record the statute calls conclusive.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "When does the capstone say to ask for Form CRS?",
+            options: ["Before the conversation", "After a recommendation has been made and considered", "Only if the firm fails to post it on its own public website", "At the annual anniversary of the advisory relationship"],
+            correctIndex: 0,
+            explanation: "Ask before rather than after, and remember that a rollover recommendation to an existing client is itself a delivery trigger.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What share of U.S. households had retirement account assets in the 2022 survey?",
+            options: ["54.3 percent", "72 percent, which is the private-sector access rate from a different survey", "92 percent, which is the share of people 65 and over receiving benefits", "62.2 percent, which is the ownership rate for households aged 45 to 54"],
+            correctIndex: 0,
+            explanation: "The Congressional Research Service reported that figure from the 2022 Survey of Consumer Finances.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which age band had the highest rate of retirement account ownership in that survey?",
+            options: ["45 to 54", "Younger than 35, at 49.6 percent of households in that age group", "65 and older, at 47 percent of households in that age group", "55 to 64, at 57 percent of households in that age group"],
+            correctIndex: 0,
+            explanation: "Ownership ran 49.6 percent under 35, 61.5 percent at 35 to 44, 62.2 percent at 45 to 54, 57 percent at 55 to 64, and 47 percent at 65 and older.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What share of households in that survey had retirement assets above 1 million dollars?",
+            options: ["4.6 percent", "15.5 percent, which is the share holding between 100,000 and 500,000", "30 percent, which is the share holding up to 100,000 dollars", "54.3 percent, which is the share holding any retirement assets at all"],
+            correctIndex: 0,
+            explanation: "The distribution reported was about 30 percent up to 100,000, 15.5 percent to 500,000, 4.7 percent to 1 million, and 4.6 percent above.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What was median wealth among White families in the 2022 Survey of Consumer Finances?",
+            options: ["285,000 dollars", "44,900 dollars, which is the figure reported for the typical Black family", "536,000 dollars, which is the figure reported for the typical Asian family", "100,000 dollars, which is a boundary in the retirement asset distribution"],
+            correctIndex: 0,
+            explanation: "The Federal Reserve note on the same survey reported that figure alongside the comparisons with other groups.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "The wealth of the typical Black family in that survey was about what share of the typical White family's?",
+            options: ["About 15 percent", "About 20 percent, which is the figure reported for Hispanic families", "About 54 percent, which is the retirement account ownership rate", "About 47 percent, which is the ownership rate for households over 65"],
+            correctIndex: 0,
+            explanation: "The note reports 44,900 dollars, only about 15 percent of the typical White family's wealth.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "And the typical Hispanic family held about what share?",
+            options: ["About 20 percent", "About 15 percent, which is the figure reported for Black families", "About 30 percent, matching the share of households with small balances", "About 62 percent, matching the peak retirement account ownership rate"],
+            correctIndex: 0,
+            explanation: "The note reports that the typical Hispanic family similarly held only about 20 percent of the wealth.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the capstone say the account gap and the wealth gap are?",
+            options: ["One story about employment", "Two independent findings drawn from two unrelated federal surveys", "Evidence that individual saving behaviour differs sharply between groups", "A statistical artefact caused by combining households of different ages"],
+            correctIndex: 0,
+            explanation: "Access runs from 49 to 91 percent by wage quartile and reliance on the floor runs the other way, and both are measured publicly.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which free step does the capstone recommend before taking advice?",
+            options: ["Check a registration record", "Compare the adviser's fees against the plan's own cost disclosure", "Ask the plan administrator to approve the adviser in writing first", "Request a written projection of the outcome the advice would produce"],
+            correctIndex: 0,
+            explanation: "The SEC's Investment Adviser Public Disclosure site and FINRA's BrokerCheck both cost nothing and take minutes.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which of these is on the capstone's list of things the course has NOT told you?",
+            options: ["Whether to roll anything over", "How a Social Security benefit is computed from indexed earnings", "What a plan administrator must furnish on a written request", "How to convert a fee percentage into an annual dollar figure"],
+            correctIndex: 0,
+            explanation: "The refusals cover what to hold, how much to save, when to start, which account type, whether to roll over, and when to claim.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the course say it leaves a learner able to do about an annual limit?",
+            options: ["Explain where it comes from", "State the current year's figure from memory without looking it up", "Predict how the figure will move over the next several years", "Compute the figure directly from the published wage index"],
+            correctIndex: 0,
+            explanation: "Explaining the base amount, the adjustment mechanism and the annual notice beats repeating a stale number.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Which survey is the source of both the retirement-account and the wealth figures in the capstone?",
+            options: ["The Survey of Consumer Finances", "The National Compensation Survey conducted by the labour statistics bureau", "The Health and Retirement Study, which follows the same households over time", "The national survey of unbanked and underbanked households run by the FDIC"],
+            correctIndex: 0,
+            explanation: "Both come from the Federal Reserve's 2022 survey, one through a congressional analysis and one through the Board's own note.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "In which month and year was that survey published by the Federal Reserve?",
+            options: ["October 2023", "February 2025, the date of the congressional analysis of the same data", "August 2025, the date of the analysis of income for people over 65", "March 2026, the date of the report on worker participation in pensions"],
+            correctIndex: 0,
+            explanation: "The 2022 survey was published in October 2023, and the analyses of it carry their own later dates.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What is the final question the course wants a learner to be able to ask?",
+            options: ["Which seat are you sitting in", "What return have you produced for clients like me before", "How much of my pay do you think I ought to be deferring", "Which of the plan's alternatives would you personally choose"],
+            correctIndex: 0,
+            explanation: "Ask which legal seat the adviser occupies, then check the free public record before deciding what the advice is worth.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "Why does the capstone include the survey figures at all?",
+            options: ["The course would be dishonest without them", "Because the figures are required by the standards this course claims", "Because a capstone must include at least one quantitative exercise", "Because the survey is the only free source of retirement account data"],
+            correctIndex: 0,
+            explanation: "A reading exercise about documents would misdescribe the subject without the distribution the documents sit inside.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+          {
+            prompt: "What does the capstone call itself, and what does it say it is not?",
+            options: ["A reading exercise, not a plan", "A financial plan tailored to the learner's own circumstances", "A recommendation about which account type a learner should use", "A projection of the balance a learner can expect at retirement"],
+            correctIndex: 0,
+            explanation: "It shows where the rules are written and which documents somebody must give you, and nothing about what to do with them.",
+            sourceLessonSlug: "read-your-own-record",
+          },
+        ],
+      },
+    },
   ],
 };
 
