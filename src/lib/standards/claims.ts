@@ -5456,6 +5456,103 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "23 · Capstone: the finding Congress wrote down, and one document of your own",
     ],
   },
+
+  // ══ MONEY-05 · Taxes, and the Money Taken Before You See It ══════════════════
+  //
+  // FOUR CLAIMS, AND THE NUMBER IS DELIBERATE. Every state personal-finance framework that names
+  // taxes at all names something narrow: a paycheck standard, an effect-on-income standard, or a
+  // complete-the-forms standard. Splitting the course into four narrow claims lets each state map
+  // the part it actually asks for. A single broad "teaches taxes" claim would have to be described
+  // as partial everywhere and would promise a teacher a filing tutorial, which this course is not.
+  //
+  // WHAT THIS COURSE DOES NOT TEACH, recorded here so no later editor stretches one of these. It
+  // teaches NO budgeting, NO saving or investing, NO insurance, NO careers or income planning, and
+  // NO macroeconomics or tax policy. It does not survey types of tax (sales, property, capital
+  // gains, estate) and does not teach progressive against regressive as a taxonomy, which is why
+  // Georgia's SSEPF5 is refused on its own entry rather than claimed thinly. It does not walk a
+  // Form 1040 line by line, and it teaches no state or local tax at all. It also gives NO ADVICE
+  // and says so in three separate lessons, which matters wherever a standard asks a student to
+  // decide something rather than to read it.
+  {
+    id: "money.payroll-tax-withholding",
+    claim:
+      "Teaches which federal taxes an employer deducts from wages, which chapter of the Code imposes each and which of them is credited back at filing, and works gross pay to net pay from a pay statement.",
+    courseSlugs: ["taxes-and-filing"],
+    lessons: [
+      // 26 U.S.C. 3402(a)(1) (the employer's duty), 3101 (the separate chapter 21 tax on the same
+      // statement), and 31(a)(1), which credits chapter 24 withholding and nothing else. Gross to
+      // net worked on a labelled hypothetical statement, with the classification as the lesson.
+      "1 · The money is taken before you ever see it",
+      // The certificate the employee furnishes under 3402(f)(2), the form the regulation prescribes
+      // at 26 CFR 31.3402(f)(5)-1(a), and the 3402(n) exemption and its two conditions.
+      "2 · The withholding certificate is the one dial you hold",
+      // Why over-withholding and a balance due are both arithmetic rather than moral facts, from
+      // 6402(a) and 6401(b)(1).
+      "3 · A refund is not a gift, and a balance due is not a fine",
+      // The capstone has the learner classify every line of their own pay statement and reconcile
+      // gross to net by hand.
+      "18 · Capstone: read your own paperwork, and look one thing up properly",
+    ],
+  },
+  {
+    id: "money.income-tax-return-and-filing-status",
+    claim:
+      "Teaches what a federal income tax return legally is, who must file one and by when, what signing it under penalties of perjury commits, and how filing status is determined and what a joint return makes each spouse liable for.",
+    courseSlugs: ["taxes-and-filing"],
+    lessons: [
+      // 6012(a)(1)(A) written against the exemption amount rather than a figure, 6072(a)'s date,
+      // and why a filer below the threshold can be owed money and receive none of it.
+      "4 · Who has to file, and who files anyway",
+      // 6065 quoted in full, 7206(1), the two 6651 penalties at ten to one, and the four assessment
+      // clocks in 6501 that make filing the act which starts them.
+      "5 · You sign it under penalties of perjury, and that starts two clocks",
+      // 7703(a) and (b), 2(b)(1)'s closed test, and 6013(d)(3)'s joint and several liability.
+      "6 · Filing status is a legal fact, not a preference",
+      // The capstone determines the learner's own status from the statute rather than from software.
+      "18 · Capstone: read your own paperwork, and look one thing up properly",
+    ],
+  },
+  {
+    id: "money.refundable-credits-and-refund-timing",
+    claim:
+      "Teaches the difference between a deduction, a non-refundable credit and a refundable credit from the statute that defines it, the earned income credit's structure and eligibility, and the statutory date and offsets that decide when and whether a refund arrives.",
+    courseSlugs: ["taxes-and-filing"],
+    lessons: [
+      // 6401(b)(1) as the definition of refundable, worked on the same figure both ways.
+      "7 · The distinction that decides whether a credit can pay you",
+      // 32(a)(1), (c)(2)(A), (c)(1)(A)(ii), (c)(3)(A) and (j), taught for shape rather than figures.
+      "8 · The earned income credit, and what it is actually for",
+      // 32(k)(1)(B)'s ten-year and two-year bars, 6695(g)'s preparer penalty, and 24(a) as proof
+      // that even the Code's printed amount is not the amount in force.
+      "9 · What a disallowed claim costs, and who else is on the hook",
+      // 6402(m) clause by clause, with the PATH Act section that added it and its stated purpose.
+      "10 · A date Congress wrote for two credits and nobody else",
+      // Why the two credits named in that sentence reach households with earnings at the lower end.
+      "11 · Who the hold lands on, by the design of the credits",
+      // 6402(c), (d)(1), (e)(1) and (f), and the priority order the section sets out.
+      "12 · The refund can be reduced before it ever reaches you",
+    ],
+  },
+  {
+    id: "money.taxpayer-rights-and-free-tax-help",
+    claim:
+      "Teaches the free, non-commercial routes to federal tax preparation and to representation, what instrument governs each and how to check which are open in a given year, and the rights and deadlines a taxpayer holds once an examination begins.",
+    courseSlugs: ["taxes-and-filing"],
+    lessons: [
+      // Free File as a memorandum of understanding whose income limit is a percentile, with two
+      // dated readings of the same moving number.
+      "13 · Free File is a contract, and the number in it moves",
+      // VITA and TCE, the 7526A matching grant program, and the 7526 low-income taxpayer clinics as
+      // representation rather than preparation.
+      "14 · The volunteer programs, and the statute behind them",
+      // Direct File, quoted from Treasury's dated report to Congress, and the method of checking the
+      // agency's own pages before each season rather than trusting a list.
+      "15 · The government built one itself, and then suspended it",
+      // 7602(a)'s authority, 6212(a)'s certified letter, 6213(a)'s ninety days from mailing, and the
+      // ten rights enumerated at 7803(a)(3), including the right to retain representation.
+      "16 · An examination is a procedure with a clock and a list of rights",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
