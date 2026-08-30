@@ -16,10 +16,16 @@ import { purgeSensitivePages } from "@/lib/offline";
 // purge BEFORE destroying the session (a purge is a local cache delete, not a request, so it can't
 // be refused mid-way) and it is deliberately awaited: sign-out taking another 20ms is worth it.
 // Public lessons are untouched — signing out must not cost a learner the course they downloaded.
+// GLOBAL SIGN-OUT (BAM, 2026-08-30: "signout signs out of every app"). When `endSessionUrl` is
+// present, sign-out also ends the shared session at accounts.witus.online, so signing out of Learn
+// signs you out of every WitUS app in this browser. The caller resolves it on the SERVER and passes
+// null for any tenant outside the ecosystem: a white-label school's learner must never be
+// redirected to the shared IdP, which would leak the ecosystem exactly as a silent sign-in would.
 export function SignOutButton({
   className,
   menuItem = false,
-}: { className?: string; menuItem?: boolean } = {}) {
+  endSessionUrl = null,
+}: { className?: string; menuItem?: boolean; endSessionUrl?: string | null } = {}) {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
   return (
@@ -35,6 +41,21 @@ export function SignOutButton({
           // here must never trap someone in a session they asked to leave.
           await purgeSensitivePages(null).catch(() => {});
           await authClient.signOut();
+          // ORDER IS THE SAFETY PROPERTY. The local session is already destroyed by the line above,
+          // so if the IdP refuses the logout, is unreachable, or the redirect never completes, the
+          // person is still signed out HERE. Never hand off first and destroy locally afterwards:
+          // that turns any IdP failure into "I clicked sign out and I am still signed in".
+          if (endSessionUrl) {
+            const back = `${window.location.origin}/`;
+            // A full navigation, not router.push: this leaves our origin for the IdP, which then
+            // returns to `back`. post_logout_redirect_uri must be registered for this client in
+            // gemini/witus/lib/identity/clients.ts or the IdP will refuse the redirect and land the
+            // visitor on its own page instead. They are still signed out either way.
+            window.location.assign(
+              `${endSessionUrl}?post_logout_redirect_uri=${encodeURIComponent(back)}`,
+            );
+            return;
+          }
           // Go to a PUBLIC page, do not refresh in place: if you signed out from a gated page
           // (an admin or dashboard route), re-rendering it logged-out would forbidden() into a 403.
           // "/" is the public front door (the landing/catalog), so sign-out always lands somewhere open.
@@ -47,7 +68,7 @@ export function SignOutButton({
         "hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60"
       }
     >
-      {pending ? "Signing out…" : "Sign out"}
+      {pending ? "Signing out…" : endSessionUrl ? "Sign out of WitUS" : "Sign out"}
     </button>
   );
 }

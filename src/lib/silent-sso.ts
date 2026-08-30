@@ -145,6 +145,22 @@ export function withAttemptMarker(path: string): string {
  * explicit WITUS_SSO_SESSION_URL always wins, because the path is owned by that app and not by this
  * one.
  */
+/**
+ * The IdP's RP-initiated logout endpoint, derived from the SAME discovery URL as the probe above
+ * so nothing new about accounts.witus.online is hardcoded (authoritative-values rule).
+ *
+ * BAM chose GLOBAL sign-out on 2026-08-30: "signout signs out of every app". Ending only this
+ * app's session leaves the IdP session alive, and once "Continue as ..." is live that means
+ * signing out and coming back offers to sign you straight back in, which reads as a broken logout.
+ */
+export function endSessionEndpointFromDiscovery(
+  discoveryUrl: string | null | undefined,
+): string | null {
+  const probe = silentSsoEndpointFromDiscovery(discoveryUrl);
+  if (!probe) return null;
+  return probe.replace(/\/get-session$/, "/oauth2/endsession");
+}
+
 export function silentSsoEndpointFromDiscovery(
   discoveryUrl: string | null | undefined,
 ): string | null {
