@@ -237,6 +237,7 @@ import { BANKING_AND_THE_UNBANKED_COURSE } from "./data/banking-and-the-unbanked
 import { CASH_FLOW_TIMING_COURSE } from "./data/cash-flow-timing-course";
 import { PREDATORY_PRODUCTS_COURSE } from "./data/predatory-products-course";
 import { HOUSING_DECISIONS_COURSE } from "./data/housing-decisions-course";
+import { TAXES_AND_FILING_COURSE } from "./data/taxes-and-filing-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2512,6 +2513,54 @@ async function main() {
       seriesOrder: 6,
       seriesCode: "MONEY",
       seriesPosition: "06",
+    },
+    // MONEY-05 · "Taxes, and the Money Taken Before You See It" (Money & Property). Fifth course in
+    // the `personal-money` series ("Your Money, and Who Decides"), from
+    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.8. Tier 0.
+    // NO migration - pnpm seed:courses. Appended at the END of this loop rather than in numeric
+    // position, because MONEY-07 was authored in parallel and both branches edit this array.
+    //
+    // THE SPINE: the tax system takes your money before you see it, pays some people more than
+    // they paid in, and holds exactly those people's money longest. It is NOT a filing tutorial.
+    // The teachable object is 26 U.S.C. 6402(m), a sentence that delays the refund of returns
+    // claiming the earned income credit or the refundable child credit and nobody else's, which is
+    // the catalog's usual shape: a gate, in statute, with a named affected class.
+    //
+    // THE HARDEST RULE IN THE TRACK IS THE ONE THIS COURSE LIVES UNDER. Brackets, standard
+    // deductions, credit amounts, phase-outs and program income limits all reset annually, so the
+    // course asserts none of them as bare fact. Where a figure appears it carries its tax year, its
+    // publisher and the date it was read. The demonstration is 26 U.S.C. 24(a), whose own text says
+    // one thousand dollars while the amount in force is set by temporary amendment: even the Code
+    // section is not the number, and Section 3 teaches exactly that.
+    //
+    // IT GIVES NO TAX ADVICE, said in PROSE in three lessons per the `surplus-funds-basics`
+    // posture (Section 1 lesson 1, Section 3 lesson 2, and the capstone), because this is the most
+    // advice-adjacent course in the series. `cert-disclaimer.ts` does not cover it: its one
+    // sentence is about affiliation with a named certifying body, and this course names none.
+    //
+    // BOUNDARIES. MONEY-04 already prices the refund-advance product against the 6402(m) window in
+    // `a-refund-is-money-already-owed`; this course explains why the window exists and whom it
+    // lands on, then hands the pricing over by name rather than re-narrating it. MONEY-03 owns
+    // funds availability and posting order. `taxes-americans-abroad` owns the foreign case, and
+    // this course is domestic only and says so.
+    //
+    // STANDARDS. It converts three personal-finance rejections into claims: Texas §113.49(c)(3)(B)
+    // and (c)(3)(C) on the taxes deducted from a paycheck and the gross-to-net calculation, and
+    // North Dakota E.6_12.7.2 on the effect of taxes on income. Each `notClaimed` entry it answers
+    // was rewritten as superseded rather than deleted.
+    //
+    // EVERY PRIMARY DOCUMENT WAS FETCHED AND READ ON 2026-08-29, and the program half of the course
+    // (Free File, VITA and TCE, Direct File) carries research checks on an ANNUAL cadence, because
+    // that material is the fastest-moving in the catalog.
+    {
+      slug: "taxes-and-filing",
+      course: TAXES_AND_FILING_COURSE,
+      category: "Money & Property",
+      seriesSlug: "personal-money",
+      seriesTitle: "Your Money, and Who Decides",
+      seriesOrder: 5,
+      seriesCode: "MONEY",
+      seriesPosition: "05",
     },
   ]) {
     await seedAuthoredCourse(db, {
