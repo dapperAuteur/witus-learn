@@ -637,6 +637,602 @@ U.S. Bureau of Labor Statistics. (n.d.). *Employee benefits in the United States
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The match, the vesting schedule, and what leaving does
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-match-is-a-plan-term",
+      title: "5 · The match is compensation with a condition, not a return",
+      section: "Section 2 · The match, the schedule, and what leaving does",
+      body: `An employer match is routinely described as free money. It is not free and it is not a return. It is **compensation**, offered on a condition, and the condition is written in the plan document.
+
+**What a match is.** The plan says that if you defer some of your own pay into the plan, the employer will contribute an amount computed by a formula in the document. The formula is a term of your employment package in the same way a wage rate is. Two employers offering the same salary and different match formulas are offering different total compensation, and the only place the difference is stated precisely is the plan document.
+
+**Why calling it a return is a category error.** A return is what an investment produces. A match is what an employer pays. If the plan's formula produces a contribution when you defer, that contribution is produced by a rule, not by a market, and it happens whatever the assets in the account do. Keeping the two apart matters, because the moment someone describes a match as a guaranteed return they have started comparing a term of employment against an investment outcome, and those are not comparable things.
+
+**One half of the account is yours the instant it exists.** For an arrangement to qualify under the Internal Revenue Code, the plan must provide "that an employee's right to his accrued benefit derived from employer contributions made to the trust pursuant to his election is nonforfeitable" (26 U.S.C. § 401, n.d.). That is the money you elected to defer out of your own pay. The parallel rule for plans generally says a plan satisfies the requirement "if an employee's rights in his accrued benefit derived from his own contributions are nonforfeitable" (26 U.S.C. § 411, n.d.; see also 29 U.S.C. § 1053, n.d.). So the deferrals you make cannot be taken back by anyone, ever, on any schedule.
+
+**The other half can be conditional, and usually is.** Amounts the employer contributes on top may be subject to a vesting schedule. That is the next lesson, and it is the single most misunderstood term in this subject.
+
+**A match can also be changed, but not retroactively.** A sponsor may generally amend a plan going forward, including changing or suspending a match formula for future contributions. What it may not do is reach backwards: a plan fails the qualification requirements "if the accrued benefit of a participant is decreased by an amendment of the plan", subject to narrow exceptions the statute names (26 U.S.C. § 411, n.d.). That is usually called the anti-cutback rule, and it is why the correct mental model of a match is "a term that applies to contributions made while it is in force" rather than "a promise about your career".
+
+**What this lesson does not do.** It does not tell you to defer enough to obtain the whole match, and it will not. Whether you can spare the money at all is a question about your rent, your household and your other obligations, and Section 1 of this series taught that a person in the lowest-paid quarter of private-sector occupations is more likely than not to have no plan on offer in the first place. What this lesson does is make the term legible, so that if you do face the choice you are reading a rule instead of guessing at one.
+
+**The practical move.** The match formula is in the summary plan description, and the summary plan description is one of the documents an administrator must furnish on written request. Read the formula, then read whatever conditions sit next to it: some plans require you to be employed on a particular date for a contribution to be made at all, and that is a term, not a rumour.
+
+:::reveal Why is calling an employer match a guaranteed return a category error? ||| A return is produced by an investment. A match is produced by a rule in the plan document and happens whatever the assets do.
+
+:::reveal Which part of a 401(k) account can never be forfeited? ||| The part derived from the employee's own elected deferrals, which the Code requires to be nonforfeitable.
+
+:::reveal What does the anti-cutback rule prevent a plan amendment from doing? ||| Decreasing a participant's accrued benefit, subject to the narrow exceptions the statute names.
+
+## Vocabulary
+- **Match**: an employer contribution computed by a plan formula and conditioned on the employee deferring some of their own pay, which makes it compensation rather than investment return.
+- **Elective deferral**: pay an employee chooses to have contributed to the plan instead of received, and the part of the account the Code makes nonforfeitable.
+- **Nonforfeitable**: incapable of being lost, so that no schedule, condition or later amendment can take the amount away.
+- **Anti-cutback rule**: the requirement that a plan amendment may not decrease a participant's accrued benefit, which limits amendments to future contributions.
+- **Plan amendment**: a change to the plan document made by the sponsor, generally effective going forward rather than backwards.
+
+## Sources
+26 U.S.C. § 401. (n.d.). *Qualified pension, profit-sharing, and stock bonus plans*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/401
+
+26 U.S.C. § 411. (n.d.). *Minimum vesting standards*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/411
+
+29 U.S.C. § 1053. (n.d.). *Minimum vesting standards*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/1053`,
+    },
+    {
+      slug: "vesting-is-a-retention-device",
+      title: "6 · Vesting is a retention device, and the statute caps how long it can run",
+      section: "Section 2 · The match, the schedule, and what leaving does",
+      body: `Vesting is the answer to one question: when does the employer's contribution stop being conditional and become yours?
+
+**Say what it is for.** A vesting schedule makes part of your compensation contingent on staying. That is its purpose. It is not an administrative formality, it is a retention device, and understanding it that way explains every design choice in it. An employer that wants people to stay three years writes a schedule that pays off at three years.
+
+**Congress capped how long the condition may run**, which is why this is a legal question rather than a matter of employer discretion. For an individual account plan, the statute gives an employer two shapes to choose between, and no others.
+
+- **Cliff.** The plan satisfies the rule "if an employee who has completed at least 3 years of service has a nonforfeitable right to 100 percent of the employee's accrued benefit derived from employer contributions" (29 U.S.C. § 1053, n.d.). Nothing before three years, everything at three.
+- **Graded.** Or the plan uses the table the statute prints: 2 years, 20 percent; 3 years, 40; 4 years, 60; 5 years, 80; 6 or more years, 100 (29 U.S.C. § 1053, n.d.).
+
+**A defined benefit plan gets longer schedules**, which is the clearest place the two plan shapes diverge. There the permitted cliff is at least 5 years of service to 100 percent, and the permitted graded table runs 3 years at 20 percent, 4 at 40, 5 at 60, 6 at 80, and 7 or more at 100 (29 U.S.C. § 1053, n.d.).
+
+**Read the shape of those two tables against each other.** In the individual account graded schedule, half your employer's contributions are conditional until your fourth year. In the defined benefit graded schedule the same halfway point falls a year later. Every one of those numbers is a maximum on the condition, not a requirement: a plan may vest faster, including immediately, and many do. What a plan may not do is run longer.
+
+**None of this touches your own deferrals.** The rule from the last lesson holds throughout: an employee's rights in the accrued benefit derived from their own contributions are nonforfeitable, full stop (29 U.S.C. § 1053, n.d.). A vesting schedule can only ever apply to what the employer put in.
+
+**What "a year of service" means is itself a plan term**, and it is the detail that trips people. Service is generally measured by a period and an hours threshold defined in the plan document rather than by the anniversary of your start date, and a plan may or may not count service before it existed. This is exactly the kind of question the summary plan description answers and a colleague does not.
+
+**Why this matters more than the match percentage.** Two offers with identical match formulas are not identical if one vests immediately and the other has a three-year cliff. The second is offering the same compensation with a condition attached, and the value of the condition depends on something neither you nor the employer knows: how long you will actually be there. The reason this course insists on reading the schedule is not that one shape is better. It is that the schedule is the term that decides whether the compensation you were quoted is compensation you will receive.
+
+:::reveal What is a vesting schedule for? ||| It makes part of your compensation contingent on staying, which is a retention device rather than an administrative formality.
+
+:::reveal What is the longest cliff a statute permits for employer contributions to an individual account plan? ||| Three years of service to 100 percent, after which nothing further may be conditional.
+
+:::reveal Can a vesting schedule ever apply to your own elective deferrals? ||| No. Rights in the accrued benefit derived from an employee's own contributions are nonforfeitable.
+
+## Vocabulary
+- **Vesting**: the point at which an employer contribution stops being conditional and becomes the participant's own, which the statute caps but does not require a plan to delay.
+- **Cliff vesting**: a schedule under which nothing is nonforfeitable until a stated number of years of service, and then all of it is.
+- **Graded vesting**: a schedule under which a stated percentage becomes nonforfeitable each year, following the table the statute prints.
+- **Year of service**: a period and hours threshold defined in the plan document, which is why it is rarely the same thing as an anniversary of a start date.
+- **Accrued benefit**: the amount credited to a participant under the plan, part of which may still be conditional if a vesting schedule applies to employer contributions.
+
+## Sources
+29 U.S.C. § 1053. (n.d.). *Minimum vesting standards*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/1053
+
+26 U.S.C. § 411. (n.d.). *Minimum vesting standards*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/411`,
+    },
+    {
+      slug: "what-leaving-does",
+      title: "7 · What leaving does, and the four things that can happen next",
+      section: "Section 2 · The match, the schedule, and what leaving does",
+      body: `Leaving a job is the moment every term in Section 2 becomes concrete at once. Four separate rules fire, and they fire in a particular order.
+
+**First, the unvested part is forfeited.** Whatever employer contributions had not yet vested under the schedule are gone. Not delayed, not held: gone. That is what the word conditional meant all along, and it is why the schedule was worth reading on the day you joined rather than on the day you left.
+
+**Second, the money becomes distributable, but only on stated events.** The Code does not let a plan hand out elective deferrals whenever it likes. Amounts attributable to those deferrals "may not be distributable to participants or other beneficiaries earlier than" a closed list of events, of which the first is "severance from employment, death, or disability", and which also includes attainment of age 59 and a half in a profit-sharing or stock bonus plan, and hardship (26 U.S.C. § 401, n.d.). Leaving is one of the listed events. Wanting the money is not.
+
+**Third, you have a right to move it without touching it.** If you elect to have an eligible rollover distribution paid directly to an eligible retirement plan and you name that plan, "such distribution shall be made in the form of a direct trustee-to-trustee transfer to the eligible retirement plan so specified" (26 U.S.C. § 401, n.d.). The phrase to hold on to is trustee-to-trustee. The money moves between institutions rather than through your hands, which is the difference between a transfer and a distribution.
+
+**Fourth, and least known: a small balance can be moved without you.** A plan need not keep a small account. If the present value of your nonforfeitable accrued benefit does not exceed 7,000 dollars, the plan may distribute it without your consent; the consent requirement attaches only above that figure (26 U.S.C. § 411, n.d.). And where such a mandatory distribution exceeds 1,000 dollars and you make no election, the plan administrator must transfer it "to an individual retirement plan of a designated trustee or issuer" rather than sending you a cheque (26 U.S.C. § 401, n.d.). Both figures are printed in the statute and were read on 29 August 2026; both have been changed by legislation before, so check them before relying on either.
+
+**That fourth rule is how retirement accounts get lost.** A balance under the threshold leaves with the job, lands in an account at an institution chosen by somebody else, and is remembered by nobody. The defence is administrative rather than financial: know the plan, know the recordkeeper, and keep the address they have for you current.
+
+**And the tax rule that sits behind all of it.** If a taxpayer receives an amount from a qualified retirement plan, the tax "shall be increased by an amount equal to 10 percent of the portion of such amount which is includible in gross income" (26 U.S.C. § 72, n.d.). That is an additional tax on top of ordinary income tax, and the statute then lists exceptions, including distributions made on or after age 59 and a half, on death, on disability, as substantially equal periodic payments, and after separation from service after attaining age 55 (26 U.S.C. § 72, n.d.). This course does not tell you what to do at that fork. It tells you that the fork exists, that the additional tax is a statutory consequence rather than a penalty someone chose to impose on you, and that the exceptions are a list you can read.
+
+:::reveal What happens to unvested employer contributions when you leave? ||| They are forfeited. That is what the vesting condition meant.
+
+:::reveal What is a trustee-to-trustee transfer? ||| A direct movement of an eligible rollover distribution between institutions, so the money never passes through the participant's hands.
+
+:::reveal Above what present value does a plan need your consent before distributing your benefit? ||| 7,000 dollars as the statute prints it, read on 29 August 2026 and worth re-checking.
+
+## Vocabulary
+- **Forfeiture**: the loss of employer contributions that had not vested under the plan's schedule at the moment employment ended.
+- **Severance from employment**: one of the closed list of events on which amounts attributable to elective deferrals may be distributed at all.
+- **Eligible rollover distribution**: a distribution a participant may direct into another eligible retirement plan, which the statute requires to be made as a direct transfer when the participant so elects.
+- **Mandatory distribution**: a small-balance distribution a plan may make without the participant's consent, which above a stated figure must be transferred into an individual retirement plan rather than paid out.
+- **Additional tax**: the 10 percent charge on the includible portion of a distribution from a qualified retirement plan, subject to a list of statutory exceptions.
+
+## Sources
+26 U.S.C. § 72. (n.d.). *Annuities; certain proceeds of endowment and life insurance contracts*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/72
+
+26 U.S.C. § 401. (n.d.). *Qualified pension, profit-sharing, and stock bonus plans*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/401
+
+26 U.S.C. § 411. (n.d.). *Minimum vesting standards*. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/26/411`,
+    },
+    {
+      slug: "quiz-match-vesting-leaving",
+      title: "8 · Knowledge check: the match, the schedule, and what leaving does",
+      section: "Section 2 · The match, the schedule, and what leaving does",
+      quiz: {
+        shuffleOptions: true,
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        questions: [
+          {
+            prompt: "In this course's terms, what is an employer match?",
+            options: ["Compensation with a condition", "A guaranteed rate of return credited to the account each pay period", "An investment the plan's trustee makes on behalf of every participant", "A tax credit the government pays into the account of a saving employee"],
+            correctIndex: 0,
+            explanation: "The condition is deferring some of your own pay, and the formula that computes it is a term of the plan document.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "Where is the match formula stated precisely?",
+            options: ["The plan document", "The offer letter the employer sends before an employee's first day", "The quarterly account statement produced by the plan's recordkeeper", "The annual notice the tax authority publishes for the coming year"],
+            correctIndex: 0,
+            explanation: "The summary plan description carries it, and that summary is one of the documents an administrator must furnish on written request.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "Two employers offer the same salary with different match formulas. What follows?",
+            options: ["They offer different compensation", "The difference is an investment choice rather than a difference in pay", "The formulas must be equalised because federal law requires comparability", "Neither difference matters until the employee has vested under the schedule"],
+            correctIndex: 0,
+            explanation: "The match is part of the package in the same way a wage rate is, and the plan document is where the difference is written down.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "Why is describing a match as a guaranteed return a category error?",
+            options: ["A return comes from an investment", "Because the match is smaller than any return the account is likely to earn", "Because a return is taxed differently from the contribution that produced it", "Because the employer may reclaim the contribution if the market falls"],
+            correctIndex: 0,
+            explanation: "A match is produced by a rule in a document and happens whatever the assets do, so it is not comparable to an investment outcome.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "Which part of a 401(k) account is nonforfeitable from the moment it exists?",
+            options: ["Your own elective deferrals", "The employer's matching contribution, once the formula has been applied", "Any amount rolled in from a previous employer's plan within sixty days", "The portion invested in the plan's default investment alternative"],
+            correctIndex: 0,
+            explanation: "The Code requires the plan to provide that the right to the accrued benefit derived from contributions made pursuant to the employee's election is nonforfeitable.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "What does nonforfeitable mean?",
+            options: ["It cannot be lost", "It may be distributed at any time the participant chooses to request it", "It is exempt from the additional tax that applies to an early distribution", "It is guaranteed by a federal insurance fund up to a stated dollar limit"],
+            correctIndex: 0,
+            explanation: "No schedule, condition or later amendment can take a nonforfeitable amount away.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "Which part of the account may be subject to a vesting schedule?",
+            options: ["The employer's contributions", "The employee's own deferrals, once they exceed the annual dollar limit", "Any earnings the account produces after the first full year of service", "Amounts rolled in from a plan maintained by a different employer"],
+            correctIndex: 0,
+            explanation: "A vesting schedule can only ever apply to what the employer put in, never to what the employee elected to defer.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "May a sponsor change a match formula for future contributions?",
+            options: ["Generally yes", "No, a match formula is fixed for the life of the plan once adopted", "Only with the written consent of a majority of participating employees", "Only where the plan has fewer than one hundred participants in total"],
+            correctIndex: 0,
+            explanation: "A sponsor may generally amend a plan going forward, including changing or suspending a match for future contributions.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "What does the anti-cutback rule forbid?",
+            options: ["Decreasing an accrued benefit by amendment", "Suspending an employer match formula for contributions made in future years", "Changing the investment alternatives a plan makes available to participants", "Adopting a longer vesting schedule for employees hired after the change"],
+            correctIndex: 0,
+            explanation: "A plan is treated as failing the requirements if a participant's accrued benefit is decreased by an amendment, subject to narrow statutory exceptions.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "What is the correct mental model of a match, given the anti-cutback rule?",
+            options: ["A term applying while it is in force", "A promise the employer makes covering the whole of an employee's career", "An investment return the plan is obliged to credit in every future year", "A guarantee enforceable against the employer even after the plan terminates"],
+            correctIndex: 0,
+            explanation: "It applies to contributions made while the formula is in force, and it cannot be reached backwards.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "Does this lesson tell you to defer enough to capture the entire match?",
+            options: ["No", "Yes, because the match is the highest-value term in most plan documents", "Yes, provided the employee has already vested under the plan's schedule", "Yes, but only for employees at establishments with 500 or more workers"],
+            correctIndex: 0,
+            explanation: "Whether a household can spare the money is a fact about rent and obligations that the course does not know, so it makes the term legible instead.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "Which condition do some plans attach to whether a matching contribution is made at all?",
+            options: ["Employment on a stated date", "Completion of the plan's full vesting schedule before any match is credited", "A minimum account balance maintained throughout the whole of the plan year", "Participation in the plan's default investment alternative for that year"],
+            correctIndex: 0,
+            explanation: "Some plans require a participant to be employed on a particular date for the contribution to be made, which is a term rather than a rumour.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "What is an elective deferral?",
+            options: ["Pay contributed instead of received", "An employer contribution the participant elects to have invested a certain way", "A distribution the participant elects to postpone past the normal retirement age", "A transfer the participant elects to make from one plan to another plan"],
+            correctIndex: 0,
+            explanation: "It is pay the employee chooses to have contributed to the plan rather than paid out, and it is the nonforfeitable part of the account.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "What is the single question a vesting schedule answers?",
+            options: ["When the employer's contribution becomes yours", "How much of their own pay an employee is permitted to defer each year", "Which investment alternatives a participant may select from the plan menu", "How soon after leaving a job a participant may take a distribution"],
+            correctIndex: 0,
+            explanation: "It fixes the point at which employer contributions stop being conditional.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "What is a vesting schedule actually for?",
+            options: ["Retention", "Spreading the employer's funding obligation evenly across a working life", "Protecting participants from taking distributions before they are ready", "Complying with a federal requirement that all plans delay full ownership"],
+            correctIndex: 0,
+            explanation: "It makes part of the compensation contingent on staying, and reading it that way explains every design choice in it.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "For an individual account plan, what is the longest permitted cliff?",
+            options: ["Three years of service", "Five years of service, which is the figure applying to defined benefit plans", "Seven years of service, matching the end of the graded table for pensions", "Six years of service, matching the end of the individual account graded table"],
+            correctIndex: 0,
+            explanation: "An employee completing at least 3 years of service must have a nonforfeitable right to 100 percent of the accrued benefit derived from employer contributions.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "In the individual account graded table, what percentage is nonforfeitable at 2 years of service?",
+            options: ["20 percent", "40 percent, which is the figure the table reaches at three years instead", "60 percent, which is the figure the table reaches at four years instead", "Nothing, because graded schedules begin only after three years of service"],
+            correctIndex: 0,
+            explanation: "The statutory table runs 2 years at 20 percent, 3 at 40, 4 at 60, 5 at 80, and 6 or more at 100.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "In that same table, at how many years does 100 percent become nonforfeitable?",
+            options: ["Six", "Seven, matching the end point of the defined benefit graded table", "Three, matching the cliff alternative available to the same plan type", "Five, matching the cliff alternative available to defined benefit plans"],
+            correctIndex: 0,
+            explanation: "The individual account graded table ends at 6 or more years of service at 100 percent.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "For a defined benefit plan, what is the permitted cliff?",
+            options: ["Five years of service", "Three years of service, which is the figure for individual account plans", "Two years of service, which is where the graded table begins to pay out", "Seven years of service, which is where the graded table finishes instead"],
+            correctIndex: 0,
+            explanation: "The defined benefit cliff runs to at least 5 years of service for 100 percent of the accrued benefit derived from employer contributions.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "Where does the defined benefit graded table begin?",
+            options: ["3 years at 20 percent", "2 years at 20 percent, matching the individual account plan table exactly", "4 years at 40 percent, one step later than the individual account table", "5 years at 60 percent, which is where the two tables happen to converge"],
+            correctIndex: 0,
+            explanation: "It runs 3 years at 20 percent, 4 at 40, 5 at 60, 6 at 80, and 7 or more at 100.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "Are the statutory vesting schedules a floor or a ceiling on how long the condition may run?",
+            options: ["A ceiling", "A floor, so a plan may not vest employer contributions any faster than shown", "Both, since the statute requires the plan to use exactly one of the two tables", "Neither, since the schedules are guidance a sponsor may depart from freely"],
+            correctIndex: 0,
+            explanation: "A plan may vest faster, including immediately, and many do. What it may not do is run longer.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "Comparing the two graded tables, when does half of the employer's contribution stop being conditional?",
+            options: ["A year later for a pension", "At the same point, because both tables reach 60 percent at four years", "A year earlier for a pension, since its schedule begins at three years", "Immediately in both, because the halfway point is not a statutory concept"],
+            correctIndex: 0,
+            explanation: "The individual account table passes the halfway mark in the fourth year and the defined benefit table a year later.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "How is a year of service usually determined?",
+            options: ["By a plan term", "By the anniversary of the employee's first day of work at the employer", "By the calendar year in which the employee first made an elective deferral", "By a federal regulation that fixes the same definition for every plan"],
+            correctIndex: 0,
+            explanation: "Service is generally measured by a period and an hours threshold defined in the plan document, which is rarely the same as a start-date anniversary.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "Which document answers whether service before a plan existed counts toward vesting?",
+            options: ["The summary plan description", "The annual notice of adjusted dollar limits published by the tax authority", "The quarterly statement showing what the participant was actually charged", "The statute itself, which fixes the answer identically for every plan"],
+            correctIndex: 0,
+            explanation: "That is a plan term, which is why the lesson sends you to the document rather than to a colleague.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "Two job offers have identical match formulas but different vesting. What does the difference turn on?",
+            options: ["How long you stay", "Which employer contributes to the plan earlier in the calendar year", "Whether the plans use the same recordkeeper to administer the accounts", "Whether the employer contributions are made in cash or in employer stock"],
+            correctIndex: 0,
+            explanation: "The condition's value depends on something neither party knows in advance, which is why the schedule is the term that decides what you actually receive.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "Does this lesson say that one vesting shape is better than the other?",
+            options: ["No", "Yes, cliff vesting is better because it reaches 100 percent in one step", "Yes, graded vesting is better because something is nonforfeitable sooner", "Yes, whichever schedule the larger employer uses is treated as the standard"],
+            correctIndex: 0,
+            explanation: "The point is that the schedule is a term you should read, not that either shape wins.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "Under a three-year cliff, what is nonforfeitable from employer contributions after two years?",
+            options: ["Nothing", "Twenty percent, following the graded table the same statute prints", "Forty percent, since two full years have been completed under the plan", "All of it, because the employee's own deferrals are always nonforfeitable"],
+            correctIndex: 0,
+            explanation: "A cliff pays nothing before the stated point and everything at it, which is what makes it a cliff.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "What happens to unvested employer contributions when you leave a job?",
+            options: ["They are forfeited", "They are held by the plan until the employee returns to the same employer", "They are transferred to an individual retirement plan chosen by the trustee", "They vest automatically, because separation from service completes the schedule"],
+            correctIndex: 0,
+            explanation: "Not delayed and not held: gone. That is what the word conditional meant all along.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Which of these is on the closed statutory list of events allowing distribution of elective deferrals?",
+            options: ["Severance from employment", "A participant's written request made at any time after enrolling", "The plan's decision to change recordkeepers during the plan year", "A drop in the value of the investment alternative the participant selected"],
+            correctIndex: 0,
+            explanation: "The list begins with severance from employment, death, or disability, and wanting the money is not on it.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "In a profit-sharing or stock bonus plan, which age appears on the distribution-events list?",
+            options: ["59 and a half", "55, which appears instead among the exceptions to the additional tax", "62, which is the early retirement age used by the Social Security statute", "67, which is the retirement age for people attaining age 62 after 2021"],
+            correctIndex: 0,
+            explanation: "Attainment of age 59 and a half is one of the listed events for a profit-sharing or stock bonus plan.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "What phrase describes the way an elected rollover must be paid?",
+            options: ["A trustee-to-trustee transfer", "A distribution paid to the participant and redeposited within sixty days", "A cash payment made after the plan withholds the applicable income tax", "A transfer routed through the employer's payroll department each quarter"],
+            correctIndex: 0,
+            explanation: "The money moves between institutions rather than through your hands, which is what distinguishes a transfer from a distribution.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "What must a participant do to trigger the direct transfer requirement?",
+            options: ["Elect it and name the plan", "Wait until the plan's next quarterly processing window has opened", "Obtain the written consent of the employer that sponsored the old plan", "Have completed the plan's vesting schedule in full before separating"],
+            correctIndex: 0,
+            explanation: "The statute applies where the distributee elects to have the distribution paid directly to an eligible retirement plan and specifies which one.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Above what present value does a plan need your consent before distributing your benefit?",
+            options: ["7,000 dollars", "1,000 dollars, which is the figure triggering the automatic transfer instead", "15,000 dollars, which is the elective deferral base printed in the statute", "Any amount at all, because consent is always required before a distribution"],
+            correctIndex: 0,
+            explanation: "The consent requirement attaches where the present value of the nonforfeitable accrued benefit exceeds the printed figure of 7,000 dollars.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Where a mandatory distribution exceeds 1,000 dollars and you make no election, what must the administrator do?",
+            options: ["Transfer it to an individual retirement plan", "Hold the amount in the plan until the participant provides instructions", "Send a cheque to the participant's last address on the payroll record", "Return the amount to the employer as a forfeiture under the plan terms"],
+            correctIndex: 0,
+            explanation: "The statute requires a transfer to an individual retirement plan of a designated trustee or issuer rather than a payment to the participant.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "How does the lesson say retirement accounts get lost?",
+            options: ["A small balance leaves with the job", "Employers routinely fail to report contributions to the supervising agency", "Recordkeepers destroy account records after a fixed number of dormant years", "Plans are permitted to forfeit vested balances that go unclaimed for a decade"],
+            correctIndex: 0,
+            explanation: "It lands at an institution somebody else chose and is remembered by nobody, which is why the defence is administrative.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "What defence does the lesson recommend against losing track of an old account?",
+            options: ["Keep your address current", "Consolidate every old account into whichever plan charges the lowest fee", "Take the distribution in cash so that no institution holds it on your behalf", "Ask the employer to keep the account open until you return to that employer"],
+            correctIndex: 0,
+            explanation: "Know the plan, know the recordkeeper, and keep the address they have for you current. The defence is administrative rather than financial.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "What is the additional tax on the includible portion of a distribution from a qualified retirement plan?",
+            options: ["10 percent", "20 percent, which is the rate at which the plan must withhold income tax", "A rate set annually by the tax authority in the same notice as the limits", "Whatever the participant's marginal income tax rate is in the year received"],
+            correctIndex: 0,
+            explanation: "The statute increases the tax by an amount equal to 10 percent of the portion includible in gross income, and then lists exceptions.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Which of these appears among the statutory exceptions to that additional tax?",
+            options: ["Disability", "Buying a first car, provided the distribution is repaid within five years", "Any distribution taken after the participant has completed vesting in full", "A distribution made in the same calendar year the participant changed jobs"],
+            correctIndex: 0,
+            explanation: "The listed exceptions include age 59 and a half, death, disability, substantially equal periodic payments, and separation from service after age 55.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Which age appears in the separation-from-service exception to the additional tax?",
+            options: ["55", "59 and a half, which is the age used in the general age-based exception", "62, the early retirement age defined in the Social Security statute", "67, the retirement age for individuals attaining age 62 after 2021"],
+            correctIndex: 0,
+            explanation: "The exception covers separation from service after attaining age 55, which is distinct from the age 59 and a half exception.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "How does the lesson characterise the 10 percent charge?",
+            options: ["A statutory consequence", "A penalty a plan administrator chooses to impose on an impatient participant", "A fee the recordkeeper charges for processing an out-of-cycle distribution", "A withholding the employer applies and later refunds after the tax year ends"],
+            correctIndex: 0,
+            explanation: "It is written into the Code rather than chosen by anyone, and the exceptions are a list a reader can check.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Does this lesson tell you what to do with an old account when you leave a job?",
+            options: ["No", "Yes, it recommends rolling the balance into the new employer's plan", "Yes, it recommends leaving the balance where it is to avoid transfer costs", "Yes, it recommends taking the distribution whenever the balance is small"],
+            correctIndex: 0,
+            explanation: "It says the fork exists and that the rules governing each path are readable, and it makes no recommendation.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "When were the two dollar figures in this lesson read from the statute?",
+            options: ["29 August 2026", "18 March 2026, the publication date of the worker participation report", "29 December 2022, the date the automatic enrollment section was enacted", "1 March 2025, the reference month of the employee benefits survey data"],
+            correctIndex: 0,
+            explanation: "Both figures have been changed by legislation before, so the lesson dates them and tells the reader to re-check.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Which of these does the Code NOT list as an event permitting distribution of elective deferrals?",
+            options: ["Wanting the money", "Death of the participant during the course of covered employment", "Disability of the participant as defined by the governing provisions", "Hardship of the employee, subject to the provisions the statute names"],
+            correctIndex: 0,
+            explanation: "The list is closed and includes severance, death, disability, an age threshold in some plans, and hardship. A wish is not on it.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "In what order does the lesson say the four rules fire when you leave a job?",
+            options: ["Forfeiture, distributability, transfer, small balance", "Small balance, transfer, forfeiture, distributability, in the order the plan chooses", "Distributability first, since nothing can be forfeited until a distribution is due", "Transfer first, because the participant's election overrides every other rule"],
+            correctIndex: 0,
+            explanation: "The unvested part is forfeited, the money becomes distributable on a listed event, a direct transfer may be elected, and a small balance may move without you.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "What is a mandatory distribution?",
+            options: ["A small-balance distribution without consent", "A distribution the tax authority requires once a participant reaches a stated age", "A distribution the plan must make whenever a participant changes employers", "A distribution ordered by a court to satisfy a participant's outstanding debts"],
+            correctIndex: 0,
+            explanation: "A plan need not keep a small account, and above a further threshold that distribution must be transferred into an individual retirement plan.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Why does the lesson say the vesting schedule was worth reading on the day you joined?",
+            options: ["Because leaving is when it bites", "Because a schedule read late cannot be challenged under the anti-cutback rule", "Because plans may amend a schedule retroactively once an employee departs", "Because the schedule determines which investment alternatives are available"],
+            correctIndex: 0,
+            explanation: "The forfeiture at separation is the moment the condition becomes concrete, and by then nothing about it can be changed.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Which of these best describes an eligible rollover distribution?",
+            options: ["One a participant may direct elsewhere", "Any distribution a plan makes to a participant who has separated from service", "A distribution that is exempt from income tax because of the participant's age", "A payment the plan makes directly to a participant's bank account each month"],
+            correctIndex: 0,
+            explanation: "It is a distribution the participant may direct into another eligible retirement plan, which the statute then requires to be made as a direct transfer.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Under the mandatory-distribution rules, an eligible plan is one that provides immediate distribution below which present value?",
+            options: ["7,000 dollars", "1,000 dollars, the figure that triggers the automatic transfer to an IRA", "15,000 dollars, the elective deferral base amount printed in the statute", "5,000 dollars, which was the figure before the current text was enacted"],
+            correctIndex: 0,
+            explanation: "The definition turns on immediate distribution of nonforfeitable accrued benefits where the present value does not exceed the printed 7,000 dollars.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Which statement about the employee's own deferrals survives every rule in Section 2?",
+            options: ["They are always nonforfeitable", "They vest on the same schedule the employer chooses for its own contributions", "They may be forfeited if the employee leaves before completing a year of service", "They become nonforfeitable only once the participant reaches age 59 and a half"],
+            correctIndex: 0,
+            explanation: "A vesting schedule reaches only employer contributions, so the deferrals an employee elected are theirs from the moment they are made.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "What is a forfeiture, in the sense this section uses?",
+            options: ["Loss of unvested employer contributions", "A tax charged on a distribution taken before a statutory age is reached", "A fee deducted from the account when a participant transfers to another plan", "The reduction of an accrued benefit by an amendment to the plan document"],
+            correctIndex: 0,
+            explanation: "It is the loss of employer contributions that had not vested under the schedule at the moment employment ended.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Which is the more consequential term when comparing two job offers, according to this section?",
+            options: ["The vesting schedule", "The number of investment alternatives the plan makes available to choose from", "The identity of the recordkeeper that administers the participant's account", "The month of the year in which the employer makes its matching contribution"],
+            correctIndex: 0,
+            explanation: "Identical match formulas are not identical offers if one vests immediately and the other has a three-year cliff.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "May a plan vest employer contributions immediately?",
+            options: ["Yes", "No, the statute requires a minimum of two years before anything vests", "Only for employees hired before the plan document was last amended", "Only in a defined benefit plan, where the employer funds the whole promise"],
+            correctIndex: 0,
+            explanation: "The statutory schedules are maximums on the condition, so a plan may vest faster, including immediately, and many do.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "What is an accrued benefit?",
+            options: ["The amount credited under the plan", "The amount a participant is guaranteed to receive at normal retirement age", "The employer's total contribution to the plan across all participants", "The portion of an account invested in the plan's default alternative"],
+            correctIndex: 0,
+            explanation: "Part of it may still be conditional if a vesting schedule applies to the employer contributions within it.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "Which of these is a plan permitted to do to its match formula?",
+            options: ["Suspend it prospectively", "Recover matching contributions already credited to a participant's account", "Reduce a participant's accrued benefit to fund the following year's match", "Apply a longer vesting schedule to contributions made in previous years"],
+            correctIndex: 0,
+            explanation: "Amendments generally operate forward. The anti-cutback rule blocks a decrease in an accrued benefit already earned.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "Why does this section insist the match is a term of employment rather than an investment feature?",
+            options: ["It is produced by a rule, not a market", "Because the employer may deduct it from taxable income in the year it is made", "Because it is reported on the participant's earnings statement as taxable wages", "Because the plan's trustee selects the assets the contribution is invested in"],
+            correctIndex: 0,
+            explanation: "Treating it as a return invites a comparison between a term of employment and a market outcome, which are not comparable.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "What does Section 1 of this course already establish about the choice a match presents?",
+            options: ["Many workers never face it", "That the choice is identical for every worker in the private sector", "That employers must offer a match once they offer a retirement plan", "That the match rate is set by regulation rather than by the plan sponsor"],
+            correctIndex: 0,
+            explanation: "A worker in the lowest-paid quarter of private-sector occupations is more likely than not to have no plan on offer at all.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "Which document must an administrator furnish that carries the match formula?",
+            options: ["The summary plan description", "The annual report the plan files with the supervising federal agency", "The quarterly statement of fees actually charged against the account", "The trust agreement under which the plan's assets are held and invested"],
+            correctIndex: 0,
+            explanation: "The formula sits in the summary plan description, which is on the statutory list of documents available on written request.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "Under a graded schedule for an individual account plan, what is nonforfeitable at 5 years?",
+            options: ["80 percent", "60 percent, which is the figure the statutory table reaches at four years", "100 percent, which the table reaches only at six or more years of service", "40 percent, which is the figure the statutory table reaches at three years"],
+            correctIndex: 0,
+            explanation: "The table runs 2 years at 20, 3 at 40, 4 at 60, 5 at 80, and 6 or more at 100.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "Under the defined benefit graded schedule, what is nonforfeitable at 6 years?",
+            options: ["80 percent", "100 percent, which that table reaches only at seven or more years", "60 percent, which that table reaches at five years of service instead", "20 percent, which is where that table begins at three years of service"],
+            correctIndex: 0,
+            explanation: "The pension table runs 3 years at 20, 4 at 40, 5 at 60, 6 at 80, and 7 or more at 100.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "What does the lesson mean by saying vesting is a legal question rather than one of employer discretion?",
+            options: ["Congress capped the condition", "Employers must obtain approval before adopting any schedule at all", "Participants may negotiate their own schedule with the plan administrator", "A court sets the schedule whenever a plan document is silent on the point"],
+            correctIndex: 0,
+            explanation: "A sponsor chooses between the shapes the statute permits, and may vest faster, but may not run the condition longer.",
+            sourceLessonSlug: "vesting-is-a-retention-device",
+          },
+          {
+            prompt: "Which of these is NOT protected by the rule about an employee's own contributions?",
+            options: ["The employer's matching contribution", "Amounts the employee elected to defer during the first year of participation", "Amounts the employee elected to defer in a year when no match was made", "Amounts the employee elected to defer immediately before separating from service"],
+            correctIndex: 0,
+            explanation: "The nonforfeitability rule covers the accrued benefit derived from the employee's own contributions; the match is what a schedule may condition.",
+            sourceLessonSlug: "the-match-is-a-plan-term",
+          },
+          {
+            prompt: "What happens to the vesting condition once employment ends?",
+            options: ["It stops running", "It continues until the participant reaches the plan's normal retirement age", "It restarts if the participant is later rehired by any employer in the industry", "It is waived automatically for participants who elect a direct rollover"],
+            correctIndex: 0,
+            explanation: "Whatever had not vested at separation is forfeited, which is why the schedule matters most at the moment of leaving.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Which two figures in Section 2 are printed in the statute and dated in the lesson?",
+            options: ["7,000 and 1,000 dollars", "15,000 and 500 dollars, which govern the elective deferral limit instead", "100 dollars and 30 days, which govern the document request penalty instead", "10 percent and 55, which govern the additional tax and one of its exceptions"],
+            correctIndex: 0,
+            explanation: "Both the consent threshold and the automatic-transfer trigger are printed figures that legislation has changed before.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "What does the lesson say a participant should know about their old plan, beyond the balance?",
+            options: ["Who the recordkeeper is", "Which investment alternative produced the highest return in the last year", "How much the employer contributed to the plan across its entire workforce", "Which federal agency supervised the plan during the participant's service"],
+            correctIndex: 0,
+            explanation: "Know the plan, know the recordkeeper, and keep your address current, because the small-balance rule moves money without you.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "The additional tax applies to which part of a distribution?",
+            options: ["The includible portion", "The entire distribution, whether or not any part of it is taxable income", "Only the portion attributable to employer contributions rather than deferrals", "Only the portion exceeding the annual elective deferral limit for that year"],
+            correctIndex: 0,
+            explanation: "The statute increases the tax by 10 percent of the portion of the amount which is includible in gross income.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+          {
+            prompt: "Which exception to the additional tax involves a payment pattern rather than an event?",
+            options: ["Substantially equal periodic payments", "Death of the employee, which ends the arrangement in any case", "Disability of the employee, which the statute defines by cross-reference", "Separation from service after the employee has attained age 55"],
+            correctIndex: 0,
+            explanation: "The listed exceptions include distributions taken as substantially equal periodic payments over life or life expectancy.",
+            sourceLessonSlug: "what-leaving-does",
+          },
+        ],
+      },
+    },
   ],
 };
 
