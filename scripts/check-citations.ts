@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { allSeedEntries } from "./lib/seed-registry";
 import { STAGED_COURSES } from "../src/lib/citations";
 import { STAGED_CITATIONS } from "../src/lib/citation-content/citations";
 
@@ -32,34 +32,12 @@ import { STAGED_CITATIONS } from "../src/lib/citation-content/citations";
 
 /** Staged courses that legitimately have no citations. Keep this short and justified. */
 const NO_CITATIONS_EXPECTED: Record<string, string> = {
-  // PENDING REGENERATION, not a content gap and not an exemption. The course carries a full
-  // bibliography; it was renamed from `harvard-ed-l-d` on 2026-08-28 to stop the slug implying
-  // a relationship with a university that does not exist. gen:citations reads the DATABASE, so
-  // the registry still files those citations under the OLD slug until the course is re-seeded
-  // and regenerated. Delete this line at that point; check:citations will tell you when.
-  "education-leadership-doctoral-rigor": "PENDING REGENERATION after the rename and re-seed",
   // Confirmed by generation on 2026-08-03: no `## Sources` block anywhere in the course.
   // These are CONTENT GAPS rather than exemptions, and they are recorded here so the build stays
   // green while they are fixed rather than being quietly forgotten. Remove the line once the course
   // has sources, then re-run `pnpm gen:citations`.
   "how-to-create-a-course": "CONTENT GAP, no sources block in any lesson, needs authoring",
   spanish: "CONTENT GAP, no sources block in any lesson, needs authoring",
-  // NOT a content gap, and NOT an exemption. WARRANT-02 carries a `## Sources` block on every one
-  // of its eighteen teaching lessons. It is staged ahead of generation because BAM asked for the
-  // slug to be in STAGED_COURSES in the same branch that ships the course, and `pnpm gen:citations`
-  // reads the DATABASE rather than scripts/data, so it cannot run until the course is seeded.
-  // SELF-CLEARING: run `pnpm seed:courses` then `pnpm gen:citations`, and the staleness check below
-  // will print this slug under "Good news" and tell you to delete this line. Delete it then.
-  "the-county-committee":
-    "PENDING GENERATION, staged before seeding; run pnpm seed:courses then pnpm gen:citations and delete this line",
-  // Same situation as WARRANT-02 above, for the same mechanical reason. `negro-leagues` shipped and
-  // was never staged, which is the defect Section 7's research surfaced. It carries a `## Sources`
-  // block on nearly every teaching lesson, including four new ones, but `pnpm gen:citations` reads
-  // the DATABASE, so it cannot run until the course is re-seeded with Section 7 in it.
-  // SELF-CLEARING: run `pnpm seed:courses` then `pnpm gen:citations`, and the staleness check below
-  // will print this slug under "Good news" and tell you to delete this line. Delete it then.
-  "negro-leagues":
-    "PENDING GENERATION, staged in the same branch as Section 7; run pnpm seed:courses then pnpm gen:citations and delete this line",
 };
 
 /** Flip at stage 5, when the whole library is staged. */
@@ -72,9 +50,11 @@ const emptyStaged = STAGED_COURSES.filter(
   (s) => (counts.get(s) ?? 0) === 0 && !(s in NO_CITATIONS_EXPECTED),
 );
 
-// Registered courses, read the same way check-standards-coverage.ts reads them.
-const seed = readFileSync("scripts/seed-courses.ts", "utf-8");
-const registered = [...new Set([...seed.matchAll(/\{\s*slug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]))];
+// Registered courses, read the same way check-standards-coverage.ts reads them: through the seed
+// registry, which parses every `seedAuthoredCourse` call in every seed script. This used to regex
+// scripts/seed-courses.ts alone, so it saw ~138 of 261 slugs and under-reported "not yet staged"
+// by every course seeded from seed-health.ts and the other seeders.
+const registered = [...new Set(allSeedEntries().map((e) => e.slug))];
 const unstaged = registered.filter((s) => !STAGED_COURSES.includes(s));
 
 console.log(
