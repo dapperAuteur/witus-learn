@@ -1040,6 +1040,22 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   the instructor tools): the AI judges quiz vs exercise vs reveal per lesson, advisory only. Rules
   measured against the catalog before shipping, so the noisy candidates (long free-text answers,
   accept-list size, proper-noun answers) were rejected rather than allowlisted into uselessness.
+- ✅ **AI-course assessments, wave 2A** (\`content/assessment-gaps-wave-2a\`): the three AI-literacy
+  courses shipped with lessons but no graded assessment, so a learner could finish them and be
+  measured on nothing. \`ai-literacy\` gains its final (40 pooled, serving 10, passing at 80),
+  \`ai-l1-advanced-prompting\` three section quizzes with the third doubling as its final, and
+  \`ai-l2-detecting-ai\` four section quizzes plus a final. Tier-0 spec throughout: pools serving 5
+  or 10, \`shuffleOptions\` on by default, and \`explanation\` + \`sourceLessonSlug\` on every question
+  so a wrong answer points at the lesson that teaches it.
+- ✅ **The future-work index survives a file rename** (\`bundle/assessment-and-tooling-2026-08-30\`):
+  \`item_key\` is the join column for \`future_work_notes\`, and the 2026-08-26 date-prefix rename of
+  every planning note had quietly broken the generator that derives those keys, hidden only because
+  the committed output predated the rename. The next \`pnpm gen:future-work\` would have thrown, then
+  emitted **zero** She Did the Work subjects, then renamed every subdirectory key and orphaned every
+  note filed against the old one. One \`undatedName()\` helper, applied before any name-based logic,
+  plus a test forbidding a date prefix in any key. Also fixed alongside it: \`check:citations\` was
+  reading registered courses with a regex over one seed script, so it saw ~138 of 261 and reported
+  the unstaged backlog as 131 when it is 232.
 - 🔜 **Sentry error monitoring** (\`feat/rag-autoindex-and-report-bulk\`, wired, DSN pending → task 208):
   crash-grade signal (real stack traces, grouping, alerting) alongside the existing home-grown admin
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
