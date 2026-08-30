@@ -46,13 +46,18 @@ export function SignOutButton({
           // person is still signed out HERE. Never hand off first and destroy locally afterwards:
           // that turns any IdP failure into "I clicked sign out and I am still signed in".
           if (endSessionUrl) {
+            // Trailing slash is REQUIRED. better-auth exact-matches post_logout_redirect_uri
+            // against the client's registered redirectUrls, and gemini/witus registers
+            // `https://learn.witus.online/` (EcosystemApp.postLogoutPath = "/"). Drop the slash
+            // and the IdP returns invalid_request.
             const back = `${window.location.origin}/`;
             // A full navigation, not router.push: this leaves our origin for the IdP, which then
             // returns to `back`. post_logout_redirect_uri must be registered for this client in
             // gemini/witus/lib/identity/clients.ts or the IdP will refuse the redirect and land the
             // visitor on its own page instead. They are still signed out either way.
+            // `&`, not `?`: endSessionUrl already carries client_id (see src/lib/env.ts).
             window.location.assign(
-              `${endSessionUrl}?post_logout_redirect_uri=${encodeURIComponent(back)}`,
+              `${endSessionUrl}&post_logout_redirect_uri=${encodeURIComponent(back)}`,
             );
             return;
           }
