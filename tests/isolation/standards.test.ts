@@ -279,6 +279,22 @@ describe("standards data integrity — a wrong code could be filed with a state"
     }
   });
 
+
+  // A `notClaimed` item is {heading, body} with NO id, so nothing structural stops two entries
+  // sharing a heading. That is not hypothetical: bundling MONEY-04, MONEY-05 and MONEY-06 left
+  // Georgia with two entries under one heading and CONTRADICTORY bodies, live on main, published
+  // to teachers, and no test could see it. A rejection published twice, saying different things,
+  // is worse than no rejection at all, because a teacher cannot tell which one is current.
+  it("no duplicate notClaimed heading within a jurisdiction", () => {
+    for (const j of JURISDICTION_FILES) {
+      const seen = new Map<string, number>();
+      for (const n of j.notClaimed ?? []) seen.set(n.heading, (seen.get(n.heading) ?? 0) + 1);
+      for (const [heading, count] of seen) {
+        expect(count, `${j.state}: notClaimed heading appears ${count}x: ${heading}`).toBe(1);
+      }
+    }
+  });
+
   it("no duplicate code within a framework", () => {
     const seen = new Set<string>();
     for (const a of ALIGNMENTS) {
