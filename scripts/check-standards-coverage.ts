@@ -133,6 +133,8 @@ const BACKLOG: Record<string, string> = {
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
   "ecs-nutrition":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
+  "blind-and-low-vision-america":
+    "PRIVATE, unmapped on purpose, on the same terms as deaf-america below. Braille history, US disability law and the copyright material genuinely touch US-history, civics and ELA standards, but the course is held private until a blind co-author or reviewer reads it, and claiming standards for a course no educator can see would be a claim about content that may still change. Map it at the public flip.",
   "deaf-america":
     "PRIVATE, unmapped on purpose. Deaf history, linguistics and law genuinely touch US-history and language standards, but the course is held private until a Deaf co-author reviews it, and claiming standards for a course no educator can see would be a claim about content that may still change. Map it at the public flip.",
   "ecs-neuroscience":
