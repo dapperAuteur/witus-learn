@@ -71,6 +71,26 @@ export interface ResearchCheck {
 }
 
 export const RESEARCH_CHECKS: ResearchCheck[] = [
+  {
+    key: "ga-ssepf8-gloss",
+    title: "What does Georgia SSEPF8 actually say?",
+    course: "banking-and-the-unbanked",
+    severity: "medium",
+    claim:
+      "src/lib/standards/data/ga.ts glosses Georgia SSEPF8 as (investing) inside a notClaimed body that is published to teachers.",
+    question:
+      "What does Georgia SSEPF8 actually say? The gloss has flipped between 'how earnings are determined' and 'investing' three times inside merge conflict resolutions, and it is currently 'investing' with no evidence behind it either way.",
+    stakes:
+      "It is UNFALSIFIABLE inside this repo, which is why it survived. SSEPF8 is unclaimed, so fetch-or-do-not-cite means no verbatim text for it exists anywhere in the codebase, and the string SSEPF8 appears EXACTLY ONCE in the whole repository: in that parenthesis, describing itself. Nothing can contradict it, no guard can see it, and it is asserted to Georgia teachers as a reason the catalog does not claim that standard. A wrong gloss makes the refusal read as a refusal of something else.",
+    needs: [
+      "The verbatim text of SSEPF8 from the Georgia Standards of Excellence, Personal Finance and Economics, course code 45.061",
+      "Whether the gloss should be corrected, or dropped entirely since the standard is unclaimed and the parenthetical adds nothing a reader can verify",
+    ],
+    where: [
+      "The canonical GaDOE PDF at lor2.gadoe.org, which resolved for the housing-standards pass on 2026-08-28",
+      "src/lib/standards/data/ga.ts, the notClaimed entry listing the unclaimed SSEPF standards",
+    ],
+  },
   // ── Surplus Funds Basics ──────────────────────────────────────────────────────────────────────
   {
     key: "ga-pay-direct-rule",
