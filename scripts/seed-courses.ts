@@ -237,6 +237,7 @@ import { BANKING_AND_THE_UNBANKED_COURSE } from "./data/banking-and-the-unbanked
 import { CASH_FLOW_TIMING_COURSE } from "./data/cash-flow-timing-course";
 import { PREDATORY_PRODUCTS_COURSE } from "./data/predatory-products-course";
 import { HOUSING_DECISIONS_COURSE } from "./data/housing-decisions-course";
+import { RETIREMENT_ACCOUNTS_COURSE } from "./data/retirement-accounts-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -2512,6 +2513,46 @@ async function main() {
       seriesOrder: 6,
       seriesCode: "MONEY",
       seriesPosition: "06",
+    },
+    // MONEY-07 · "Retirement: the Plan, the Fee Disclosure, and the Floor" (Money & Property).
+    // Seventh course in the `personal-money` series ("Your Money, and Who Decides"), from
+    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.6. Tier 0.
+    // NO migration - pnpm seed:courses.
+    //
+    // THE SPINE: a retirement account is a legal wrapper somebody else decides whether to offer
+    // you, and every term that matters is written in a document you are entitled to ask for. THIS
+    // IS NOT A COURSE ON HOW TO INVEST, and it says so in prose in three separate lessons: no
+    // allocation, no savings rate, no product, no provider, no projected return.
+    //
+    // ACCESS IS THE SUBJECT, which is what makes this a course only this catalog would write. No
+    // employer is required to sponsor a plan, so whether one exists is a fact about the labour
+    // market. Read from the March 2025 National Compensation Survey (CRS IF13185, 18 March 2026):
+    // 72 percent of private-sector workers had access and 53 percent participated, but the
+    // lowest-paid quarter of occupations ran 49 and 23 against the highest-paid quarter's 91 and 80.
+    //
+    // THE TEACHABLE DOCUMENT IS THE PARTICIPANT FEE DISCLOSURE, exactly as the adverse action
+    // notice was for MONEY-01 and the Loan Estimate for MONEY-06: 29 CFR 2550.404a-5 requires each
+    // investment's cost as a percentage AND as a dollar amount per 1,000 invested, a statement at
+    // least quarterly of what was actually charged, and a sentence saying in the rule's own words
+    // that the cumulative effect of fees can substantially reduce the growth of an account.
+    //
+    // ANNUAL FIGURES ARE TAUGHT AS A METHOD, NOT A TABLE. 26 U.S.C. 402(g)(1)(B) fixes a 15,000
+    // base and (g)(4) adjusts it each year to the next lowest multiple of 500; the course teaches
+    // that shape and points at the IRS's annual notice rather than printing a current limit.
+    //
+    // EVERY PRIMARY DOCUMENT WAS FETCHED AND READ ON 2026-08-29: ERISA 29 U.S.C. 1002, 1024, 1053,
+    // 1104 and 1132; 29 CFR 2550.404a-5; 26 U.S.C. 72(t), 219, 401, 402, 408A, 411 and 414A;
+    // 42 U.S.C. 405, 414, 415 and 416 with 20 CFR 404.211, 404.212 and 404.822; 15 U.S.C. 80b-6,
+    // SEC v. Capital Gains Research Bureau (1963), 17 CFR 240.15l-1 and 17 CFR 275.204-5.
+    {
+      slug: "retirement-accounts",
+      course: RETIREMENT_ACCOUNTS_COURSE,
+      category: "Money & Property",
+      seriesSlug: "personal-money",
+      seriesTitle: "Your Money, and Who Decides",
+      seriesOrder: 7,
+      seriesCode: "MONEY",
+      seriesPosition: "07",
     },
   ]) {
     await seedAuthoredCourse(db, {
