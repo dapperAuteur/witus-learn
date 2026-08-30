@@ -23,6 +23,7 @@ export function MobileNav({
   teachItems,
   accountItems,
   signedIn,
+  endSessionUrl = null,
 }: {
   primaryItems: NavItem[];
   showDemo: boolean;
@@ -30,6 +31,8 @@ export function MobileNav({
   teachItems: NavItem[];
   accountItems: NavItem[];
   signedIn: boolean;
+  /** Server-resolved WitUS logout endpoint, or null off the ecosystem. See sign-out-button.tsx. */
+  endSessionUrl?: string | null;
 }) {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -144,7 +147,7 @@ export function MobileNav({
                 renderSection(
                   "Account",
                   accountItems,
-                  <SignOutButton className={`${linkClass} w-full text-left`} />,
+                  <SignOutButton endSessionUrl={endSessionUrl} className={`${linkClass} w-full text-left`} />,
                 )
               ) : (
                 <li className="mt-2 border-t border-neutral-200 pt-2 dark:border-neutral-800">

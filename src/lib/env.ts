@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { silentSsoEndpointFromDiscovery } from "./silent-sso";
+import { endSessionEndpointFromDiscovery, silentSsoEndpointFromDiscovery } from "./silent-sso";
 
 /** Mirrors the discovery-URL fallback src/lib/auth.ts already ships; keep the two in step. */
 const WITUS_OIDC_DISCOVERY_FALLBACK =
@@ -221,6 +221,19 @@ export const hasSentry = Boolean(env.SENTRY_DSN || env.NEXT_PUBLIC_SENTRY_DSN);
  * accounts.witus.online is asserted here. See src/lib/silent-sso.ts for the whole design, and note
  * the IdP must also allow this origin with credentials or the probe simply answers nothing.
  */
+/**
+ * Where sign-out ends the SHARED WitUS session (BAM's decision, 2026-08-30: signing out of one
+ * WitUS app signs you out of all of them).
+ *
+ * Dark under exactly the same condition as the probe: if this app is not a configured ecosystem
+ * OIDC client, there is no shared session to end and sign-out stays purely local. Callers must
+ * ALSO gate on the per-tenant ecosystem flag, because a white-label school's learner must never be
+ * redirected to the shared IdP: that leaks the ecosystem exactly as a silent sign-in would.
+ */
+export const witusEndSessionEndpoint: string | null = process.env.WITUS_OIDC_CLIENT_ID
+  ? endSessionEndpointFromDiscovery(env.WITUS_OIDC_DISCOVERY_URL ?? WITUS_OIDC_DISCOVERY_FALLBACK)
+  : null;
+
 export const witusSilentSsoEndpoint: string | null = process.env.WITUS_OIDC_CLIENT_ID
   ? (env.WITUS_SSO_SESSION_URL ??
     silentSsoEndpointFromDiscovery(

@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { headers } from "next/headers";
+import { isWitusBrandedHost } from "@/lib/witus-host";
+import { witusEndSessionEndpoint } from "@/lib/env";
 import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
@@ -20,6 +23,16 @@ import { StickyHeader } from "./sticky-header";
 // fixed CentOS module nav. Accent color comes from the --accent CSS var set by the
 // tenant layout. Session-aware: Sign in (logged out) ↔ Sign out (logged in).
 export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
+  // GLOBAL SIGN-OUT gate, resolved here on the server and never from anything client-supplied.
+  // Same condition as the sign-IN half on the login page: a white-label school must not be
+  // redirected to the shared IdP on logout any more than on login. `witusEndSessionEndpoint` is
+  // itself null unless this app is a configured ecosystem OIDC client, so both must hold.
+  const hdrs = await headers();
+  const hostHeader = hdrs.get("x-forwarded-host") ?? hdrs.get("host");
+  const endSessionUrl =
+    isWitusBrandedHost(hostHeader) || tenant.flags.ecosystemSso === true
+      ? witusEndSessionEndpoint
+      : null;
   const { flags } = tenant;
   const session = await getSession();
   const owner = session ? await isPlatformOwner(session.user.id) : false;
@@ -186,6 +199,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
                     trailing={
                       <SignOutButton
                         menuItem
+                        endSessionUrl={endSessionUrl}
                         className="block min-h-11 w-full rounded-md px-3 py-2 text-left leading-7 hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:bg-neutral-800"
                       />
                     }
@@ -206,6 +220,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
             {/* Mobile: hamburger drawer, grouped into the same Explore/Teach/Account sections */}
             <div className="md:hidden">
               <MobileNav
+                endSessionUrl={endSessionUrl}
                 primaryItems={primaryItems}
                 showDemo={showDemo}
                 exploreItems={exploreItems}
