@@ -3815,6 +3815,27 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
   },
   {
+    key: "deaf-america-segregation-averages",
+    course: "deaf-america",
+    title: "Where do the 33-year and 72.8-year Black Deaf school averages come from?",
+    severity: "medium",
+    question:
+      "A draft of this course asserted that the white school opened on average 33 years before the Black school, and that desegregation came on average 72.8 years after the Black school opened. Which published source gives those two averages, over which set of states, and measured how? The likeliest home is Bayley, Lucas, McCaskill and Hill's article on segregation and desegregation of the Southern schools for the deaf in the journal Language, which was not accessible when this was written.",
+    claim:
+      "Both figures were REMOVED from the course description on 2026-08-30 rather than shipped unverified, and replaced with facts that were confirmed: seventeen states and DC ran separate schools or departments for Black Deaf children beginning in 1869; the last opened in Louisiana in 1938; most resisted Brown v. Board (1954) until the mid-1960s, Louisiana until 1978. The averages are more striking than what replaced them, so they are worth recovering IF a source actually supports them.",
+    stakes:
+      "Medium. Nothing wrong is on the page now. But a precise-looking average like 72.8 is exactly the kind of number that gets repeated once it appears in a course, and this catalog's whole claim is that a reader can check every figure. Do not restore either number without the source, the state set, and the method.",
+    needs: [
+      "The published source for the 33-year and 72.8-year averages, with page numbers",
+      "Which states each average covers, since 17 states plus DC is not the same set as the six the Black ASL Project interviewed in",
+      "Whether the averages count school FOUNDING dates or department-within-a-school dates, which are different events",
+    ],
+    where: [
+      "Bayley, Lucas, McCaskill & Hill, Language (Cambridge), on segregation and desegregation of the Southern schools for the deaf",
+      "McCaskill, Lucas, Bayley & Hill (2011), The Hidden Treasure of Black ASL, Gallaudet University Press",
+    ],
+  },
+  {
     key: "mesoamerica-arqueologia-mexicana-148-authorship",
     course: "precolumbian-mesoamerica",
     title: "Who wrote the Huei Tzompantli article in Arqueologia Mexicana 148?",

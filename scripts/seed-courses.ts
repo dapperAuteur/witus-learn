@@ -16,6 +16,7 @@ import { DOCUMENTARY_COURSE } from "./data/documentary-course";
 import { ORAL_HISTORY_COURSE } from "./data/oral-history-course";
 import { DIGITAL_SOCIAL_STORYTELLING_COURSE } from "./data/digital-social-storytelling-course";
 import { MOCKUMENTARY_COURSE } from "./data/mockumentary-course";
+import { DEAF_AMERICA_COURSE } from "./data/deaf-america-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -311,6 +312,25 @@ async function main() {
     .insert(schema.courseCategories)
     .values({ tenantId: learnWitus, name: "Education Leadership", sortOrder: 2 })
     .onConflictDoNothing();
+  // DEAF AMERICA — PRIVATE and FREE by BAM's decision, 2026-08-30: he is looking for a Deaf
+  // co-author before this is shown to anyone. `visibility: "private"` is INSERT-ONLY, so the public
+  // flip later is done in the admin UI and survives re-seeds. Free is a decision here, not an
+  // oversight: a course about a community that has been charged for access to its own history
+  // should not be one more toll gate.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "deaf-america",
+    course: DEAF_AMERICA_COURSE,
+    category: "Culture & History",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Held private until a Deaf co-author has reviewed it. A hearing author wrote it from published sources, and the course says so in its first lesson.",
+  });
+
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
