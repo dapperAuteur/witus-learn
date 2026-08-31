@@ -52,6 +52,21 @@ describe("global sign-out", () => {
     expect(button.replace(/\/\/.*$/gm, "")).not.toMatch(/https:\/\//);
   });
 
+  it("sends client_id, which the IdP requires, and joins the query correctly", () => {
+    // Verified by reading better-auth's endSession endpoint, not the OIDC spec: a
+    // post_logout_redirect_uri without a verifiable id_token_hint is rejected with
+    // invalid_request unless client_id is present. We have no id_token in the browser, so the
+    // endpoint carries client_id and the button must append with `&`, not `?`. Getting this
+    // wrong is a 400 that only appears in production.
+    const env = readFileSync("src/lib/env.ts", "utf8");
+    expect(env).toContain("client_id=${encodeURIComponent(clientId)}");
+    const button = readFileSync("src/components/sign-out-button.tsx", "utf8");
+    expect(button).toContain("&post_logout_redirect_uri=");
+    expect(button).not.toContain("?post_logout_redirect_uri=");
+    // Trailing slash: the IdP exact-matches against the registered `https://learn.witus.online/`.
+    expect(button).toContain("`${window.location.origin}/`");
+  });
+
   it("says it signs you out of WitUS, not just this site", () => {
     // Ending five other sessions without saying so reads as a bug the first time someone loses
     // a session in another tab.

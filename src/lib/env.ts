@@ -230,9 +230,21 @@ export const hasSentry = Boolean(env.SENTRY_DSN || env.NEXT_PUBLIC_SENTRY_DSN);
  * ALSO gate on the per-tenant ecosystem flag, because a white-label school's learner must never be
  * redirected to the shared IdP: that leaks the ecosystem exactly as a silent sign-in would.
  */
-export const witusEndSessionEndpoint: string | null = process.env.WITUS_OIDC_CLIENT_ID
-  ? endSessionEndpointFromDiscovery(env.WITUS_OIDC_DISCOVERY_URL ?? WITUS_OIDC_DISCOVERY_FALLBACK)
-  : null;
+export const witusEndSessionEndpoint: string | null = (() => {
+  const clientId = process.env.WITUS_OIDC_CLIENT_ID;
+  if (!clientId) return null;
+  const base = endSessionEndpointFromDiscovery(
+    env.WITUS_OIDC_DISCOVERY_URL ?? WITUS_OIDC_DISCOVERY_FALLBACK,
+  );
+  if (!base) return null;
+  // client_id IS REQUIRED, not optional. better-auth's endSession endpoint rejects a
+  // post_logout_redirect_uri with invalid_request ("client_id is required when using
+  // post_logout_redirect_uri without a valid id_token_hint") unless the request carries either a
+  // verifiable id_token_hint or an explicit client_id. We have no id_token client-side, so we send
+  // client_id. Baked in HERE, on the server, because the sign-out button is a client component and
+  // must not be handed the raw env.
+  return `${base}?client_id=${encodeURIComponent(clientId)}`;
+})();
 
 export const witusSilentSsoEndpoint: string | null = process.env.WITUS_OIDC_CLIENT_ID
   ? (env.WITUS_SSO_SESSION_URL ??

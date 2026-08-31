@@ -3815,6 +3815,27 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
   },
   {
+    key: "deaf-america-segregation-averages",
+    course: "deaf-america",
+    title: "Where do the 33-year and 72.8-year Black Deaf school averages come from?",
+    severity: "medium",
+    question:
+      "A draft of this course asserted that the white school opened on average 33 years before the Black school, and that desegregation came on average 72.8 years after the Black school opened. Which published source gives those two averages, over which set of states, and measured how? The likeliest home is Bayley, Lucas, McCaskill and Hill's article on segregation and desegregation of the Southern schools for the deaf in the journal Language, which was not accessible when this was written.",
+    claim:
+      "Both figures were REMOVED from the course description on 2026-08-30 rather than shipped unverified, and replaced with facts that were confirmed: seventeen states and DC ran separate schools or departments for Black Deaf children beginning in 1869; the last opened in Louisiana in 1938; most resisted Brown v. Board (1954) until the mid-1960s, Louisiana until 1978. The averages are more striking than what replaced them, so they are worth recovering IF a source actually supports them.",
+    stakes:
+      "Medium. Nothing wrong is on the page now. But a precise-looking average like 72.8 is exactly the kind of number that gets repeated once it appears in a course, and this catalog's whole claim is that a reader can check every figure. Do not restore either number without the source, the state set, and the method.",
+    needs: [
+      "The published source for the 33-year and 72.8-year averages, with page numbers",
+      "Which states each average covers, since 17 states plus DC is not the same set as the six the Black ASL Project interviewed in",
+      "Whether the averages count school FOUNDING dates or department-within-a-school dates, which are different events",
+    ],
+    where: [
+      "Bayley, Lucas, McCaskill & Hill, Language (Cambridge), on segregation and desegregation of the Southern schools for the deaf",
+      "McCaskill, Lucas, Bayley & Hill (2011), The Hidden Treasure of Black ASL, Gallaudet University Press",
+    ],
+  },
+  {
     key: "mesoamerica-arqueologia-mexicana-148-authorship",
     course: "precolumbian-mesoamerica",
     title: "Who wrote the Huei Tzompantli article in Arqueologia Mexicana 148?",
@@ -3855,6 +3876,120 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "inah.gob.mx boletines, opened in a browser",
       "The Programa de Arqueologia Urbana publications and the Proyecto Templo Mayor reports",
       "lugares.inah.gob.mx node 5907, INAH's own undated page for the Huei Tzompantli",
+    ],
+  },
+  {
+    key: "blind-nemeth-code-1951-or-1952",
+    course: "blind-and-low-vision-america",
+    lesson: "the-private-code-that-became-a-standard",
+    title: "Was the Nemeth Code adopted in 1951 or 1952, and by what act?",
+    severity: "medium",
+    question:
+      "The American Foundation for the Blind's obituary of Abraham Nemeth (AccessWorld, November 2013, by Deborah Kendrick) says the code has carried his name \"since its adoption in 1951\" and that he presented it one morning in 1951 and it was unanimously adopted that afternoon. Other accounts date the Nemeth Code to 1952, which appears to be when the American Printing House published it. Which body adopted it, on what date, and on what date was it published? Are these two different events or is one of the dates wrong?",
+    claim:
+      "The lesson prints AFB's 1951 adoption account, states in the body that other accounts give 1952 for publication by APH, says the two are probably describing different events, and says the course does not know which. A quiz question tests that this course prints the source it read and files the discrepancy rather than choosing.",
+    stakes:
+      "Medium. Nothing wrong is on the page: the lesson says openly that it does not know. But this course teaches that every date in it is checkable, and a code still in daily use in American mathematics classrooms should have a settled adoption date. The nfb.org interview with Nemeth (nfb.org/history-nemeth-code-interview-dr-abraham-nemeth) is the obvious place to settle it and returned a Cloudflare challenge to this pass.",
+    needs: [
+      "The date the Joint Uniform Braille Committee adopted the code, from its own minutes or proceedings",
+      "The date and imprint of the American Printing House's first published edition",
+      "Whether Nemeth's own account, in the NFB interview or elsewhere, gives one date or both",
+    ],
+    where: [
+      "nfb.org/history-nemeth-code-interview-dr-abraham-nemeth, the NFB's interview with Nemeth (blocked to automated fetching)",
+      "American Printing House for the Blind, publication records for the Nemeth Code",
+      "Braille Authority of North America, for the Joint Uniform Braille Committee's records",
+    ],
+  },
+  {
+    key: "blind-lp-developed-for-talking-books",
+    course: "blind-and-low-vision-america",
+    lesson: "who-is-allowed-to-make-a-copy",
+    title: "Was the long-playing record developed for talking books?",
+    severity: "medium",
+    question:
+      "It is widely said that the long-playing record was worked out for the Talking Books programme in the early 1930s, more than a decade before the commercial LP. The Library of Congress's own NLS history establishes that by 1933 AFB had a durable record cut at 150 grooves to the inch running at 33 and a third revolutions per minute, giving thirty minutes a side, with a 60,000-word book on eight or nine double-faced twelve-inch discs. It does NOT establish that the commercial LP descended from that work. Did it?",
+    claim:
+      "The lesson prints the speed, the groove pitch, the disc count and the date, all from the Library of Congress history, and then says in terms that the course does not assert the causal claim because the source it read establishes the facts and not the causation.",
+    stakes:
+      "Medium, and the upside is real. If it holds up, \"the format the music industry built itself on in 1948 was worked out for blind readers in the 1930s\" is both true and the single best line available to this course. If it does not, cutting it costs nothing, because the copyright-exception story in the same lesson is just as good. What must not happen is the sentence appearing without the evidence.",
+    needs: [
+      "Whether Rubery's The Untold Story of the Talking Book (Harvard University Press, 2016) traces a line from the AFB disc to the commercial LP, with page numbers",
+      "AFB's own institutional records on the development of the talking-book disc and any contact with commercial record manufacturers",
+      "Whether Columbia's 1948 LP development cites or draws on the earlier talking-book work in any documented way",
+    ],
+    where: [
+      "Rubery, M. (2016). The untold story of the talking book. Harvard University Press",
+      "American Foundation for the Blind institutional archives, talking-book development records",
+      "Library of Congress, NLS history, https://www.loc.gov/nls/about/organization/history/",
+    ],
+  },
+  {
+    key: "blind-mainstreaming-and-braille-instruction",
+    course: "blind-and-low-vision-america",
+    lesson: "the-residential-school-and-the-curriculum",
+    title: "Did mainstreaming cause the decline in braille instruction?",
+    severity: "medium",
+    question:
+      "Braille literacy advocates connect the least-restrictive-environment mandate of the 1975 Education for All Handicapped Children Act, and the dispersal of blind students into local districts, directly to a decline in braille instruction, on the argument that a district serving one blind child has no braille teacher and no braille-reading peers. Is there a published study establishing that causal link, as opposed to the correlation? And separately, what does the American Printing House Annual Registry actually measure when it reports a student's reading medium?",
+    claim:
+      "The lesson states the argument, names who makes it, says explicitly that this is an empirical claim about causation that the authoring pass could not settle, and does not assert it. The course also prints NO braille literacy percentage anywhere, because the commonly quoted \"ten per cent of blind children\" figure turns on whether the registry counts primary reading medium or braille ability at all.",
+    stakes:
+      "Medium. Nothing wrong is on the page. But this is the single most repeated claim in braille advocacy and a course that teaches the history of the code will be asked about it. Getting it right also means settling what the registry measures, because the ambiguity in that measurement is the reason both sides of the braille-versus-audio argument can quote the same number.",
+    needs: [
+      "A published study, with citation, establishing causation rather than correlation between placement and braille instruction",
+      "The American Printing House Annual Registry methodology: what \"primary reading medium\" records and who is in the counted population",
+      "Whether the National Federation of the Blind's 2009 report The Braille Literacy Crisis in America gives a traceable citation chain for its ten per cent figure",
+    ],
+    where: [
+      "American Printing House for the Blind, Annual Registry of Legally Blind Students, methodology documentation",
+      "National Federation of the Blind (2009), The Braille Literacy Crisis in America",
+      "Journal of Visual Impairment and Blindness, for placement and literacy outcome studies",
+    ],
+  },
+  {
+    key: "blind-campsie-full-text-not-read",
+    course: "blind-and-low-vision-america",
+    lesson: "the-story-that-was-made-up",
+    title: "Read Campsie's Barbier article in full, and confirm what this course says about it",
+    severity: "low",
+    question:
+      "Does the full text of Campsie, P. (2021), Charles Barbier: A hidden story, Disability Studies Quarterly 41(2), doi 10.18061/dsq.v41i2.7499, support the four findings as this course states them, and does it say what the course says about Pignier (1859) and Pierre Henri (1952)? Also: does it settle the widely repeated claim that the Paris school suppressed braille after Louis Braille's time, with a director banning it and books burned?",
+    claim:
+      "The lesson states the four findings and the two distorting accounts from the article's OWN abstract as indexed by the Directory of Open Access Journals, plus Judy Dixon's independent summary published by the American Council of the Blind. The bibliography says in terms that the full text was not retrievable in this pass, because dsq-sds.org served an automated reader a challenge page. The suppression and book-burning story is NOT taught, and the lesson says why.",
+    stakes:
+      "Low for accuracy and high for the course's own rule. Everything printed comes from the article's abstract or from a summary that quotes it, so the risk of misstatement is small. But this course tells learners that it reads what it cites, and one lesson currently rests on an abstract. Reading the article would either confirm the lesson or improve it, and it is the natural place to settle the suppression story that the lesson refuses to teach.",
+    needs: [
+      "The full text of the article, read, with confirmation of the four findings as stated",
+      "Whether the article treats the post-Braille suppression and book-burning story, and what it concludes",
+      "Whether Braille's own 1829 text acknowledges Barbier, and in what words, since this course prints no such quotation",
+    ],
+    where: [
+      "Disability Studies Quarterly, https://dsq-sds.org/article/view/7499 (served a challenge page to automated fetching on 2026-08-30)",
+      "Association Valentin Hauy museum, Paris, which holds the Barbier papers donated in 2001",
+    ],
+  },
+  {
+    key: "blind-device-credit-archival-work",
+    course: "blind-and-low-vision-america",
+    lesson: "a-method-for-checking-who-is-named",
+    title: "Do the archival work on the device-credit cases this course deliberately did not narrate",
+    severity: "medium",
+    question:
+      "For each of three cases, what do the patent, the acknowledgements, the institutional archive and the press coverage actually establish about the blind people involved? (1) The Optacon, credited to John Linvill and James Bliss: who did the tactile-reading training design, and is that person named anywhere but an acknowledgement? (2) The Perkins Brailler, designed by David Abraham: do the Perkins Archives show blind staff or students shaping key pressure, spacing, noise or reliability? (3) The IBM Screen Reader released in 1984: what was Jesse Wright's role, how did he describe himself, and did Jim Thatcher credit him in his own extensive published accounts?",
+    claim:
+      "The course teaches the METHOD (four records, and what each does and does not establish) and states plainly that it does not narrate these cases because the archival work was not done in this pass, on the ground that naming a case you have not checked is how a grievance becomes folklore. Nothing about any of the three devices is asserted anywhere in the course.",
+    stakes:
+      "Medium, and it is an opportunity rather than a risk. Nothing wrong is on the page. But Section 5 currently rests on two code cases and one counter-case, and the device cases are where the argument would be strongest if it holds. The IBM question matters most: if Thatcher himself credited Wright, this is a case of the PRESS dropping a name rather than a colleague doing it, which is a materially different and more interesting finding.",
+    needs: [
+      "For the Optacon: the 1966 patent, the training-design acknowledgements, and Telesensory or Stanford records naming the blind test subjects and trainers",
+      "For the Perkins Brailler: Perkins Archives memos, minutes and correspondence from the 1941 prototype to the 1951 production run",
+      "For IBM Screen Reader: IBM records and Jim Thatcher's own published accounts, to establish Jesse Wright's role and whether Thatcher credited him",
+    ],
+    where: [
+      "Perkins School for the Blind Archives, Watertown, Massachusetts",
+      "Stanford University archives and the Telesensory Systems corporate record",
+      "Jim Thatcher's published writing on the history of screen readers, and IBM's own records",
     ],
   },
 ];

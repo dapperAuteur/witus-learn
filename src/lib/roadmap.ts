@@ -1102,6 +1102,22 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   plus a test forbidding a date prefix in any key. Also fixed alongside it: \`check:citations\` was
   reading registered courses with a regex over one seed script, so it saw ~138 of 261 and reported
   the unstaged backlog as 131 when it is 232.
+- ✅ **Two accessibility courses, private and free** (\`content/accessibility-courses\`): the first
+  courses to ship under \`visibility: "private"\`, held back deliberately rather than published
+  unvetted. **Deaf America: Language, Schools, and the Record** teaches history, culture, linguistics
+  and law and **teaches no signs**, because every usable sign-media dataset bars a paid course. Black
+  ASL is its centre, and the finding that carries it inverts the obvious story: the segregated Black
+  schools kept teaching in sign while white schools practised oralism, so Black signers were later
+  found to use MORE traditional and standardised forms, not fewer. Milan 1880 is taught as the
+  mechanism of that split rather than as background. **Blind and Low-Vision America: The Code, the
+  Schools, and the Record** is deliberately not the same course with the nouns swapped: braille is a
+  code, not a language, so it goes to the War of the Dots, the schools, credit, and the law. Both
+  state their author's standpoint in lesson one, flag per source whether a Deaf or blind author or
+  organisation wrote it, and teach contested claims as contested with the holders named. Both are
+  **free by decision**, both audit at **zero findings**, and both wait on a co-author before any
+  public flip. What each course REFUSED to print is the part worth keeping: two unverified
+  segregation averages were cut rather than shipped, and the blind course dropped two court cases
+  entirely rather than characterise holdings it could not read.
 - 🔜 **Sentry error monitoring** (\`feat/rag-autoindex-and-report-bulk\`, wired, DSN pending → task 208):
   crash-grade signal (real stack traces, grouping, alerting) alongside the existing home-grown admin
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
