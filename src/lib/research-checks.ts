@@ -3815,6 +3815,62 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
   },
   {
+    key: "compneuro-dayan-abbott-triad",
+    course: "computational-neuroscience-foundations",
+    title: "Does Dayan and Abbott chapter 1 actually name the descriptive/mechanistic/interpretive triad?",
+    severity: "low",
+    question:
+      "Does chapter 1 of Theoretical Neuroscience name those three model types in those words, and is the mapping onto what / how / why theirs or this course's gloss?",
+    claim:
+      "The book is paywalled and only its bibliographic record was fetched. The lesson teaches the triad as a standard framing and attributes it to the book, which is the usual attribution, but the exact wording and the what/how/why mapping were not read from the text.",
+    stakes:
+      "Low. The framing is genuinely standard and no factual claim rests on it. Worth closing because attributing a gloss to an author who did not write it is a small dishonesty that compounds.",
+    needs: ["Chapter 1 of Dayan and Abbott, with the three terms and any mapping quoted as printed"],
+    where: ["Theoretical Neuroscience, MIT Press, ISBN 9780262041997"],
+  },
+  {
+    key: "compneuro-paninski-2004-result",
+    course: "computational-neuroscience-foundations",
+    title: "What exactly does Paninski (2004) prove about the likelihood surface?",
+    severity: "medium",
+    question:
+      "What is the theorem's exact statement, and what is the paper's own condition on the nonlinearity?",
+    claim:
+      "A draft said the log-likelihood is CONCAVE. The abstract is elided by the publisher on every aggregator reached, so that was rewritten to the paper's own weaker claim, a condition on the nonlinearity under which the likelihood has no non-global local maxima, and the weaker wording was propagated through three quiz items.",
+    stakes:
+      "Medium. Concavity and no-local-maxima are different mathematical claims, and a learner who carries the stronger one into their own work will over-trust an optimiser.",
+    needs: ["The theorem as printed, and the condition on the nonlinearity, from the paper itself"],
+    where: ["Neural Computation, Paninski 2004"],
+  },
+  {
+    key: "compneuro-ernst-banks-degraded-vision",
+    course: "computational-neuroscience-foundations",
+    title: "Did Ernst and Banks degrade vision with visual noise, as the lesson describes?",
+    severity: "low",
+    question:
+      "What manipulation did the 2002 experiment actually use to vary visual reliability?",
+    claim:
+      "The fetched abstract confirms statistically optimal integration of visual and haptic information but does NOT confirm the specific visual-noise manipulation the lesson describes.",
+    stakes:
+      "Low. The teaching point, that weighting follows reliability, is confirmed. The experimental detail is the unverified part and should either be sourced or dropped.",
+    needs: ["The methods section, with the manipulation described as printed"],
+    where: ["Nature, Ernst and Banks 2002"],
+  },
+  {
+    key: "compneuro-cunningham-yu-motivation",
+    course: "computational-neuroscience-foundations",
+    title: "Is the trial-averaging motivation for dimensionality reduction stated in Cunningham and Yu?",
+    severity: "low",
+    question:
+      "Does their review state that dimensionality reduction is motivated by the limits of trial averaging, in those terms?",
+    claim:
+      "Only the bibliographic record was fetched. The claim is a standard motivation and is attributed to the review, but the review's own framing was not read.",
+    stakes:
+      "Low, same class as the Dayan and Abbott entry: a standard idea attributed to a specific source without the source having been read.",
+    needs: ["The review's introduction, with its stated motivation quoted"],
+    where: ["Nature Neuroscience, Cunningham and Yu 2014"],
+  },
+  {
     key: "climate-preindustrial-baseline-years",
     course: "computational-climate-tools-foundations",
     title: "Which years define the pre-industrial baseline for assessment purposes?",
