@@ -519,3 +519,5 @@ for each epoch:
 - Kingma, D. P., & Ba, J. (2014). Adam: A method for stochastic optimization. *arXiv*. https://arxiv.org/abs/1412.6980
 - Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep learning*. MIT Press. https://www.deeplearningbook.org/`,
     },
+  ],
+};
