@@ -3815,6 +3815,54 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
   },
   {
+    key: "climate-preindustrial-baseline-years",
+    course: "computational-climate-tools-foundations",
+    title: "Which years define the pre-industrial baseline for assessment purposes?",
+    severity: "medium",
+    question:
+      "What reference period does the assessment literature actually mean by relative to pre-industrial levels? The course states the period is earlier than any of the dataset baselines it names (GISTEMP, HadCRUT5) but deliberately prints NO years.",
+    claim:
+      "The body defining it publishes on ipcc.ch, which returned HTTP 403 to automated retrieval during authoring, and no other source reached in that pass states the definition in its own right. The lesson says so in the text rather than printing a number nobody checked.",
+    stakes:
+      "Medium, and it is the lesson's own point. The whole lesson is about incomplete statements of what a number is measured against, so a course that quoted an unchecked baseline while teaching that would be refuting itself.",
+    needs: [
+      "The assessment report's own statement of the reference period, read from the primary document, with the section quoted",
+      "Then name the years beside the GISTEMP and HadCRUT5 baselines, where the point lands hardest",
+    ],
+    where: ["The assessment report itself, not a summary", "Any agency page that states the period in its own right"],
+  },
+  {
+    key: "climate-enso-contribution-magnitude",
+    course: "computational-climate-tools-foundations",
+    title: "How large is the ENSO contribution to global mean surface temperature?",
+    severity: "low",
+    question:
+      "What is a sourced estimate of how much El Nino or La Nina shifts global mean surface temperature for a year or two, ideally separating the two sides?",
+    claim:
+      "A draft said a few tenths of a degree. No primary source could be retrieved, so THE NUMBER WAS REMOVED from the lesson, the reveal, the vocabulary entry and two quiz questions rather than shipped unsourced. The lesson still teaches that ENSO moves the number without a change in forcing, which is the teachable part.",
+    stakes:
+      "Low as written, since nothing unsourced is on the page. Worth closing because the magnitude is what makes the trend-versus-wiggle lesson concrete.",
+    needs: [
+      "A published estimate of the ENSO contribution to global mean surface temperature, read from the paper or an agency page",
+      "Foster and Rahmstorf on removing ENSO, solar and volcanic signals is the obvious first place to look",
+    ],
+    where: ["Environmental Research Letters", "NOAA or NASA agency pages stating the figure directly"],
+  },
+  {
+    key: "climate-nasem-attribution-confidence-ranking",
+    course: "computational-climate-tools-foundations",
+    title: "What is the National Academies ranking of attribution confidence by event type?",
+    severity: "medium",
+    question:
+      "What does the National Academies 2016 report print as its own summary of attribution confidence by event class? The course teaches that thermodynamic events give the shortest chain of reasoning and circulation-driven events the hardest, but does NOT print the report's ranking.",
+    claim:
+      "nationalacademies.org served only the catalogue summary; the report body containing the figure was not retrieved. The lesson uses the sourced thermodynamic-versus-circulation framing instead and says the ranking is absent.",
+    stakes:
+      "Medium. This is the single most useful thing the attribution lesson is currently missing, and it is exactly the kind of table a learner would want to check a news claim against.",
+    needs: ["The report's summary table of attribution confidence by event type, with classes and confidence levels quoted as printed"],
+    where: ["National Academies of Sciences, Engineering, and Medicine (2016), the report body"],
+  },
+  {
     key: "songs-sung-slant-rhyme-forgiveness",
     course: "writing-poems-and-songs",
     title: "Is a sung slant rhyme really easier to get away with than a written one?",
