@@ -16,6 +16,7 @@ import { DOCUMENTARY_COURSE } from "./data/documentary-course";
 import { ORAL_HISTORY_COURSE } from "./data/oral-history-course";
 import { DIGITAL_SOCIAL_STORYTELLING_COURSE } from "./data/digital-social-storytelling-course";
 import { MOCKUMENTARY_COURSE } from "./data/mockumentary-course";
+import { WRITING_POEMS_AND_SONGS_COURSE } from "./data/writing-poems-and-songs-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -311,6 +312,17 @@ async function main() {
     .insert(schema.courseCategories)
     .values({ tenantId: learnWitus, name: "Education Leadership", sortOrder: 2 })
     .onConflictDoNothing();
+  // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
+  // accessibility courses. It ships UNVETTED, which the catalog already handles honestly.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "writing-poems-and-songs",
+    course: WRITING_POEMS_AND_SONGS_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+  });
+
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,

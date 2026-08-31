@@ -133,6 +133,8 @@ const BACKLOG: Record<string, string> = {
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
   "ecs-nutrition":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
+  "writing-poems-and-songs":
+    "UNMAPPED, and this one is a genuine candidate rather than a permanent excuse. Poetry, figurative language, sound devices and structure all appear in ELA standards, so unlike the vocational entries below this course could carry a real alignment. Not claimed yet because the mapping work has not been done, and a claim an educator can check must be done properly or not at all.",
   "ecs-neuroscience":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
   "bvc-taster-coffee":

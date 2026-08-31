@@ -3815,6 +3815,54 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
   },
   {
+    key: "songs-sung-slant-rhyme-forgiveness",
+    course: "writing-poems-and-songs",
+    title: "Is a sung slant rhyme really easier to get away with than a written one?",
+    severity: "low",
+    question:
+      "Is there a peer-reviewed perception study comparing recognition of perfect versus slant rhyme in SUNG versus SPOKEN delivery? The course claims pitch, duration and the repeated melodic phrase cue the ear that a return happened, so a sung slant rhyme lands where a written one would not.",
+    claim:
+      "The lesson labels this as craft practice gathered from tradition, NOT a measured finding, and says so in the lesson body rather than in a footnote. Nothing was found while writing the course.",
+    stakes:
+      "Low. It is hedged where it appears. Worth settling because it is the kind of claim that hardens into fact through repetition in songwriting books.",
+    needs: [
+      "A perception study on rhyme recognition across sung and spoken delivery",
+      "If none exists, that absence is itself worth recording so nobody searches twice",
+    ],
+    where: ["Music perception journals", "Psychology of music literature"],
+  },
+  {
+    key: "songs-mis-stressing-attention-cost",
+    course: "writing-poems-and-songs",
+    title: "What is the measured cost of setting an unstressed syllable on a strong beat?",
+    severity: "low",
+    question:
+      "Is there published text-setting research measuring a comprehension or recall cost when a lyric places an unstressed syllable on a strong beat? The course claims a listener hears the wrong pronunciation and spends attention repairing the word.",
+    claim:
+      "Hedged in the lesson as craft practice. NOTE: the two Music Theory Online articles this course cites are about FORM, not text setting, so they do not support this claim and are not offered as if they did.",
+    stakes:
+      "Low, and hedged. Worth settling because generative text-setting models exist and may already answer it.",
+    needs: [
+      "Generative textsetting literature, or work on prosodic alignment in sung text",
+      "Any study measuring comprehension or recall against stress alignment",
+    ],
+    where: ["Music Theory Online", "Linguistics of text setting"],
+  },
+  {
+    key: "songs-metro-poem-line-one-punctuation",
+    course: "writing-poems-and-songs",
+    title: "Colon or semicolon at the end of line one of In a Station of the Metro?",
+    severity: "low",
+    question:
+      "Does the April 1913 printing in Poetry 2(1), page 6 end the first line with a colon or a semicolon? The University of Toronto's Representative Poetry Online gives a colon and records the original wide internal spacing; many modern reprints show a semicolon.",
+    claim:
+      "The course follows RPO and CITES RPO explicitly rather than asserting a bare text, so a reader can see which witness is being followed. A page image of the 1913 printing would settle it outright.",
+    stakes:
+      "Low for the argument, which is about the image doing the work rather than about punctuation. But the course quotes both lines, and a quotation should be right.",
+    needs: ["A page image or facsimile of Poetry 2(1), April 1913, page 6"],
+    where: ["Modernist Journals Project", "Poetry magazine archive"],
+  },
+  {
     key: "mesoamerica-arqueologia-mexicana-148-authorship",
     course: "precolumbian-mesoamerica",
     title: "Who wrote the Huei Tzompantli article in Arqueologia Mexicana 148?",
