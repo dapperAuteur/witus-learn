@@ -18,6 +18,7 @@ import { DIGITAL_SOCIAL_STORYTELLING_COURSE } from "./data/digital-social-storyt
 import { MOCKUMENTARY_COURSE } from "./data/mockumentary-course";
 import { DEAF_AMERICA_COURSE } from "./data/deaf-america-course";
 import { BLIND_AND_LOW_VISION_AMERICA_COURSE } from "./data/blind-and-low-vision-america-course";
+import { WRITING_POEMS_AND_SONGS_COURSE } from "./data/writing-poems-and-songs-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -351,6 +352,17 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Held private until a blind co-author or reviewer has read it. A sighted author wrote it from published sources, the course says so in its first lesson, and Section 5 leaves the device-credit archival work explicitly unfinished.",
+  });
+
+  // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
+  // accessibility courses. It ships UNVETTED, which the catalog already handles honestly.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "writing-poems-and-songs",
+    course: WRITING_POEMS_AND_SONGS_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
   });
 
   await seedAuthoredCourse(db, {
