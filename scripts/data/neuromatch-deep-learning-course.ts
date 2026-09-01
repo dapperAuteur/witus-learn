@@ -413,6 +413,630 @@ for each epoch:
             explanation: "A tensor is an array of numbers with a shape, plus a data type and a device, and optionally a record of how it was computed. Tensors have any number of dimensions, not two.",
             sourceLessonSlug: "tensors-and-shapes",
           },
+          {
+            prompt: "What is this course, relative to Neuromatch's own Deep Learning course?",
+            options: [
+              "A companion, not a replacement",
+              "An officially endorsed preparatory track",
+              "A condensed version of the same notebooks",
+              "A faster route to the same certificate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Neuromatch runs full time for weeks with notebooks, pods and projects. This teaches the concepts that make that material followable.",
+            sourceLessonSlug: "scope-and-attribution",
+          },
+          {
+            prompt: "Under which licence does Neuromatch publish its material?",
+            options: [
+              "CC BY 4.0",
+              "CC BY-NC-SA 4.0, barring commercial use",
+              "All rights reserved",
+              "Public domain with no conditions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "There is no NonCommercial clause, which is why adaptation is legitimate given attribution, links to source and licence, and marked modifications.",
+            sourceLessonSlug: "scope-and-attribution",
+          },
+          {
+            prompt: "What must accompany a CC BY 4.0 adaptation?",
+            options: [
+              "Attribution, links to source and licence, and marked modifications",
+              "Only a mention of the original author",
+              "Written permission from the licensor",
+              "A share-alike licence on the derivative",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Share-alike belongs to a different licence and is not required here.",
+            sourceLessonSlug: "scope-and-attribution",
+          },
+          {
+            prompt: "What does this course deliberately leave out?",
+            options: [
+              "Notebooks, datasets, projects and pods",
+              "The mathematics of backpropagation",
+              "Any treatment of optimizers",
+              "The vocabulary of tensors and shapes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those parts need the full-time course structure; what remains is the conceptual scaffolding.",
+            sourceLessonSlug: "scope-and-attribution",
+          },
+          {
+            prompt: "Does Neuromatch review or endorse external uses of its material?",
+            options: [
+              "No, and this course reproduces that wording",
+              "Yes, every adaptation is reviewed",
+              "Only commercial adaptations",
+              "Only those on their own domain",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stating it is part of being honest about what an adaptation is.",
+            sourceLessonSlug: "scope-and-attribution",
+          },
+          {
+            prompt: "How does broadcasting align shapes?",
+            options: [
+              "From the right",
+              "From the left",
+              "By total element count",
+              "By declaration order",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why (64, 10) plus (10,) works and (64, 10) plus (64,) does not.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "A (64, 10) tensor plus a (10,) tensor yields what?",
+            options: [
+              "(64, 10)",
+              "A rank error",
+              "(64, 10, 10)",
+              "(10,)",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The missing leading dimension is treated as 1 and stretched to 64, adding the same bias vector to every row.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "Why does (64, 10) plus (64,) fail?",
+            options: [
+              "Aligning from the right compares 10 against 64",
+              "Ranks must always match",
+              "64 can never broadcast",
+              "The larger operand must come first",
+            ],
+            correctIndex: 0,
+            explanation:
+              "To add one value per row, reshape to (64, 1).",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What makes an unintended broadcast dangerous?",
+            options: [
+              "It returns a wrong answer instead of raising",
+              "It always crashes unhelpfully",
+              "It silently changes dtype",
+              "It moves data to the CPU",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the single most common silent bug in numerical code, and it can survive a whole training run.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What does a dimension of size 1 do under broadcasting?",
+            options: [
+              "Stretches to match",
+              "Raises an error",
+              "Is dropped from the result",
+              "Is treated as zero",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A missing dimension is treated as 1 and behaves identically.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What must two tensors agree on before combining?",
+            options: [
+              "Dtype and device",
+              "Rank only",
+              "Gradient state",
+              "Variable name",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same-device error usually means the model moved to the GPU and the batch did not.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What is the usual training dtype?",
+            options: [
+              "32-bit float",
+              "64-bit integer",
+              "8-bit unsigned integer",
+              "Boolean",
+            ],
+            correctIndex: 0,
+            explanation:
+              "16-bit is used deliberately for speed and memory rather than by default.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "Why not just use NumPy?",
+            options: [
+              "No GPU execution and no automatic differentiation",
+              "NumPy has no shape attribute",
+              "NumPy cannot hold floats",
+              "NumPy is slower at everything",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those two capabilities are the reason a separate tensor library exists.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "How do you add one value per row to a (64, 10) tensor?",
+            options: [
+              "Reshape it to (64, 1)",
+              "Reshape it to (1, 64)",
+              "Transpose the operand",
+              "Match the dtypes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A trailing dimension of 1 stretches across the 10 columns, which is what per-row means.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What does a tensor carry beyond its numbers?",
+            options: [
+              "A shape, dtype, device and a record of its computation",
+              "Only a shape",
+              "Only a device",
+              "Only its gradient",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That computation record is what distinguishes it from a plain array.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What underlies automatic differentiation?",
+            options: [
+              "The chain rule plus bookkeeping",
+              "Finite differences",
+              "Symbolic algebra over source code",
+              "Random parameter search",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Backpropagation is that idea, named earlier, applied to the recorded graph.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "What happens when backward is called twice without zeroing?",
+            options: [
+              "Gradients add together",
+              "An error is raised",
+              "The first set is overwritten",
+              "The graph rebuilds itself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That accumulation is deliberate: it lets you sum over small batches when a large one will not fit in memory.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Why do training loops zero gradients before stepping?",
+            options: [
+              "Because gradients accumulate by default",
+              "Because the optimizer demands a reset flag",
+              "Because the loss would go negative",
+              "Because the graph is freed each pass",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Forgetting produces a wandering loss and no error at all.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "What symptom does forgetting to zero produce?",
+            options: [
+              "A wandering loss with no error",
+              "An immediate shape mismatch",
+              "A device mismatch",
+              "A halt on the first batch",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Silence is what makes it a classic bug rather than an obvious one.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Why does the graph cost memory?",
+            options: [
+              "Intermediates are held until backward runs",
+              "It stores a copy of the dataset",
+              "Gradients are kept at double precision",
+              "Each operation is logged to disk",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why evaluation is wrapped in a no-gradient context.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Why detach a running loss before accumulating it?",
+            options: [
+              "Otherwise the whole history stays alive",
+              "Otherwise it rounds to 16-bit",
+              "Otherwise the optimizer updates it",
+              "Otherwise it cannot be printed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An attached loss keeps every intermediate from every batch reachable, and memory runs out.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Why wrap evaluation in a no-gradient context?",
+            options: [
+              "No backward pass is coming, so the graph is waste",
+              "It would otherwise update weights",
+              "It is required to compute accuracy",
+              "It switches the model to inference dtype",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The saving is memory and bookkeeping; accuracy is unchanged.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "What is held until the backward pass?",
+            options: [
+              "Every intermediate needed for gradients",
+              "Only the final loss",
+              "The optimizer's state",
+              "The whole dataset",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Long evaluation loops without a no-gradient context therefore exhaust memory.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "What is the relationship between backpropagation and the chain rule?",
+            options: [
+              "Backpropagation applies the chain rule with bookkeeping",
+              "They are unrelated",
+              "Backpropagation replaced it",
+              "The chain rule suits only linear models",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The idea predates the name; the bookkeeping is what autograd supplies.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Why is gradient accumulation across small batches useful?",
+            options: [
+              "It simulates a batch too large for memory",
+              "It reduces the epochs needed",
+              "It removes the optimizer",
+              "It prevents overfitting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Since accumulation is the default, this use only requires deferring the zeroing.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Which loop order is correct?",
+            options: [
+              "Zero, forward, loss, backward, step",
+              "Forward, step, backward, zero, loss",
+              "Backward, forward, zero, step, loss",
+              "Loss, zero, step, forward, backward",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Zeroing first stops the previous iteration's gradients contaminating this one.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What is an epoch?",
+            options: [
+              "One pass over the training set",
+              "One parameter update",
+              "One batch",
+              "One evaluation run",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Many batches make an epoch.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What is a batch?",
+            options: [
+              "A subset of examples processed together",
+              "A full pass through the data",
+              "A group of parameters",
+              "A saved checkpoint",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Batching is what makes gradient descent stochastic and keeps memory bounded.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What does learning mean here?",
+            options: [
+              "Adjusting parameters to reduce a loss",
+              "Storing examples for retrieval",
+              "Discovering the architecture",
+              "Adding layers over time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The loss defines better; the optimizer moves the parameters that way.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What does the loss function supply?",
+            options: [
+              "A number saying how wrong the output is",
+              "The gradient directly",
+              "The learning rate",
+              "The batch size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its gradient with respect to the parameters is what backward computes.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What does the optimizer's step do?",
+            options: [
+              "Applies the stored gradients to the parameters",
+              "Computes the gradients",
+              "Zeroes the gradients",
+              "Runs validation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Backward computes them; step applies them.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What happens if backward is never called?",
+            options: [
+              "No gradients exist and step does nothing useful",
+              "The loss cannot be computed",
+              "The graph is never built",
+              "The forward pass errors",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Step would apply nothing, or stale values from an earlier iteration.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "Why teach the training loop before architectures?",
+            options: [
+              "Every architecture uses the same loop",
+              "Architectures matter less",
+              "The loop is harder",
+              "Architectures need CUDA first",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The loop is the invariant; the model inside it is what changes.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What does zeroing gradients NOT reset?",
+            options: [
+              "The optimizer's momentum state",
+              "Accumulated gradients",
+              "Contamination from the last step",
+              "The ability to run backward again",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Momentum persists across steps by design; zeroing touches gradients only.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What is the purpose of the forward pass?",
+            options: [
+              "Compute the output from the input",
+              "Update parameters",
+              "Compute gradients",
+              "Zero accumulated state",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The loss is computed from that output, and backward follows.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What does a device mismatch usually mean?",
+            options: [
+              "One of the two operands was not moved",
+              "A corrupted checkpoint",
+              "An unsupported dtype",
+              "A missing gradient",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Either the model moved and the batch did not, or the reverse. It is bookkeeping, not depth.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What does 16-bit float buy?",
+            options: [
+              "Speed and memory at some numerical cost",
+              "Higher accuracy",
+              "Automatic gradient scaling",
+              "Device independence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a deliberate trade rather than a free upgrade.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "Which of these fails silently?",
+            options: [
+              "An unintended broadcast",
+              "A device mismatch",
+              "A dtype mismatch",
+              "A missing argument",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The other three raise; a broadcast you did not intend returns a plausible number.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "Why does the course teach shapes first?",
+            options: [
+              "Shape is the thing you will fight",
+              "Shapes fix the learning rate",
+              "Shapes cannot change",
+              "Shapes determine the activation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson says exactly that, and the broadcasting rule is why.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What happens to the graph after backward?",
+            options: [
+              "Its intermediates are freed",
+              "It is kept for the next epoch",
+              "It moves to the CPU",
+              "It converts to 16-bit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why a second backward on the same graph needs it explicitly retained.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Why does the course state what it took and changed?",
+            options: [
+              "CC BY requires modifications to be marked",
+              "The licence forbids adaptation",
+              "Neuromatch reviews derivatives",
+              "The material is public domain",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Marking modifications is one of the licence's conditions.",
+            sourceLessonSlug: "scope-and-attribution",
+          },
+          {
+            prompt: "What is the practical value of knowing gradients accumulate?",
+            options: [
+              "It explains a feature and a classic bug at once",
+              "It sets the batch size",
+              "It fixes the learning rate",
+              "It controls dtype",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The feature is large-batch simulation; the bug is a silently wandering loss.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "What does a tensor's shape describe?",
+            options: [
+              "The size along each dimension",
+              "Its numeric type",
+              "Its device",
+              "Whether it tracks gradients",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those other three are separate attributes of the same object.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "Which is NOT a reason for a no-gradient context?",
+            options: [
+              "It improves numerical accuracy",
+              "It saves memory",
+              "No backward pass is coming",
+              "It avoids an unused graph",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Accuracy is unchanged; the benefit is memory and bookkeeping.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "What does the loop's invariance mean for a learner?",
+            options: [
+              "Learn it once and it transfers",
+              "Rewrite it per architecture",
+              "It applies only to small models",
+              "It changes with each optimizer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "What varies between projects is the model inside the loop.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What is the risk of an unintended broadcast in a loss?",
+            options: [
+              "A plausible number that is silently wrong",
+              "An immediate crash",
+              "A device transfer",
+              "Doubled memory",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Because it does not raise, it can reach a written-up result.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What does dtype record?",
+            options: [
+              "The numeric type of the entries",
+              "The device",
+              "The gradient",
+              "The shape",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Typically 32-bit float in training, sometimes 16-bit.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "Why is the training loop called the invariant?",
+            options: [
+              "It stays the same as models change",
+              "It never needs debugging",
+              "It is fixed by the framework",
+              "It cannot be modified",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why it is worth learning carefully once.",
+            sourceLessonSlug: "the-training-loop",
+          },
         ],
       },
     },
@@ -518,6 +1142,1200 @@ for each epoch:
 ## Sources
 - Kingma, D. P., & Ba, J. (2014). Adam: A method for stochastic optimization. *arXiv*. https://arxiv.org/abs/1412.6980
 - Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep learning*. MIT Press. https://www.deeplearningbook.org/`,
+    },
+    {
+      slug: "quiz-linear-to-deep",
+      title: "Section 2 quiz \u00b7 From linear models to deep networks",
+      section: "From linear models to deep networks",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is a linear model, in network terms?",
+            options: [
+              "A one-layer network",
+              "A network with no trainable parameters",
+              "A two-layer network without activations",
+              "A model that cannot be trained by gradient descent",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Seeing it that way makes the step to deeper networks continuous rather than a leap.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "Why start from a linear baseline?",
+            options: [
+              "It is often hard to beat",
+              "It is the only model with a closed-form gradient",
+              "Deeper models cannot be initialised without it",
+              "It needs no loss function",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Without it you cannot say whether the extra complexity bought anything.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "Where does linearity often hide?",
+            options: [
+              "In the features",
+              "In the loss function",
+              "In the optimizer state",
+              "In the batch size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A linear model on well-chosen nonlinear features can be very strong, which is part of why the baseline is hard to beat.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "What do you get by stacking linear layers with no activation between them?",
+            options: [
+              "Another linear model",
+              "A universal approximator",
+              "An untrainable model",
+              "A convolutional network",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The composition of linear maps is linear, which is exactly why a nonlinearity is required for depth to buy anything.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What does the universal approximation theorem assert?",
+            options: [
+              "That a suitable set of weights exists",
+              "That gradient descent will find the weights",
+              "That a shallow network beats a deep one",
+              "That any function needs only ten hidden units",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is an existence result and nothing more.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What does the universal approximation theorem say about the number of hidden units needed?",
+            options: [
+              "Nothing; it may be astronomically many",
+              "That it is bounded by the input dimension",
+              "That two layers always suffice",
+              "That it grows linearly with the data size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is one of two reasons the theorem proves less than it is usually quoted for.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What does the theorem say about whether training will find those weights?",
+            options: [
+              "Nothing at all",
+              "That gradient descent converges to them",
+              "That convergence is guaranteed with enough epochs",
+              "That only second-order methods find them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Existence and findability are different claims, and only the first is proved.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What is the theorem a good reason for?",
+            options: [
+              "Not worrying that MLPs are fundamentally too weak",
+              "Expecting a wide shallow network to work well",
+              "Preferring width over depth",
+              "Skipping the linear baseline",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It rules out a worry about expressive power; it predicts nothing about practice.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "In practice, for the same parameter count, what usually buys more?",
+            options: [
+              "Depth",
+              "Width",
+              "A larger batch size",
+              "A higher learning rate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is the opposite of what a naive reading of the universal approximation theorem suggests.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What is the role of an activation function?",
+            options: [
+              "To introduce nonlinearity between layers",
+              "To normalise the loss",
+              "To schedule the learning rate",
+              "To move tensors between devices",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Without one, any stack of layers collapses to a single linear map.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What is plain stochastic gradient descent?",
+            options: [
+              "A step in the direction of the current batch's gradient",
+              "A step using the full dataset gradient",
+              "A random search over parameters",
+              "A second-order optimisation method",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stochastic refers to using a batch rather than the whole dataset for each estimate.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What does momentum add to plain SGD?",
+            options: [
+              "A running average of past gradients",
+              "A per-parameter learning rate",
+              "A second-order curvature estimate",
+              "An automatic batch size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It damps oscillation across a narrow valley and accelerates along a consistent direction.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What distinguishes Adam from momentum alone?",
+            options: [
+              "It scales each parameter's step by its own gradient history",
+              "It uses the exact Hessian",
+              "It removes the learning rate entirely",
+              "It requires no gradients",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Per-parameter scaling is what makes it forgiving of a badly chosen global learning rate.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What is the honest caveat about Adam?",
+            options: [
+              "A well-tuned SGD can generalise better",
+              "It cannot be used with momentum",
+              "It only works on convolutional networks",
+              "It requires 16-bit precision",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Adam is a strong default, not a strictly better method, and the course says so rather than presenting it as an upgrade.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What does a learning rate schedule do?",
+            options: [
+              "Changes the learning rate over training",
+              "Chooses the batch size adaptively",
+              "Selects which layers to update",
+              "Decides when to stop training",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Typically starting higher to move fast and decreasing to settle.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "How does the course say to actually choose a learning rate?",
+            options: [
+              "Empirically, by trying a range",
+              "By computing it from the batch size",
+              "By copying the value from the original paper",
+              "By setting it to the inverse of the parameter count",
+            ],
+            correctIndex: 0,
+            explanation:
+              "There is no formula that replaces trying it, which is why the advice is procedural rather than numerical.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What is the effect of a learning rate that is far too high?",
+            options: [
+              "The loss diverges or oscillates",
+              "Training becomes slow but stable",
+              "Gradients stop accumulating",
+              "The model silently reverts to linear",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Too low is the mirror failure: it trains, just far too slowly to be useful.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What is the effect of a learning rate that is far too low?",
+            options: [
+              "Training is stable but impractically slow",
+              "The loss diverges",
+              "Gradients are never computed",
+              "The optimizer raises an error",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the less alarming failure and therefore the easier one to waste a week on.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "Why is the linear model called one layer rather than zero?",
+            options: [
+              "It applies one learned affine map",
+              "It has one activation function",
+              "It uses one batch per epoch",
+              "It has one output",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Framing it as a layer is what lets depth be introduced by adding more of the same object.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "What does a strong linear baseline tell you about a deeper model that barely beats it?",
+            options: [
+              "The extra complexity bought little",
+              "That the deeper model is misconfigured",
+              "That the dataset is too small",
+              "That the learning rate is wrong",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That comparison is the reason to build the baseline first rather than last.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "Which claim about the universal approximation theorem is correct?",
+            options: [
+              "It is an existence result",
+              "It is a convergence guarantee",
+              "It bounds the required width",
+              "It applies only to linear models",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The other three are the common misreadings the lesson exists to prevent.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "Why does the lesson call the theorem over-quoted?",
+            options: [
+              "It is used to justify expectations it cannot support",
+              "It has been formally disproved",
+              "It applies only to one activation function",
+              "Its proof is disputed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is true and it is narrow, and the gap between the two is where the misuse happens.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What is an MLP?",
+            options: [
+              "A stack of linear layers with nonlinearities between them",
+              "A single linear map",
+              "A network with no trainable weights",
+              "A convolutional architecture",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Multilayer perceptron: the nonlinearity between layers is what makes the depth meaningful.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What happens to a two-layer network if you remove its activation?",
+            options: [
+              "It collapses to a single linear map",
+              "It becomes untrainable",
+              "It gains expressive power",
+              "Its parameter count doubles",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two linear maps composed are one linear map, which is the whole argument for nonlinearity.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What does per-parameter step scaling help with?",
+            options: [
+              "A poorly chosen global learning rate",
+              "Reducing memory use",
+              "Eliminating the need for batches",
+              "Guaranteeing convergence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is why Adam is forgiving, and forgiveness is not the same as being better.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "Is Adam strictly better than SGD?",
+            options: [
+              "No, a well-tuned SGD can generalise better",
+              "Yes, in every reported benchmark",
+              "Yes, for convolutional networks only",
+              "Only when momentum is disabled",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Presenting it as an upgrade would be the easy and wrong thing to teach.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What does momentum help with in a narrow valley?",
+            options: [
+              "Damping oscillation across the valley",
+              "Increasing the learning rate automatically",
+              "Reducing the parameter count",
+              "Choosing the activation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It also accelerates movement along a direction the gradients keep agreeing on.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What is stochastic about stochastic gradient descent?",
+            options: [
+              "The gradient is estimated from a batch",
+              "The learning rate is randomised",
+              "The parameters are initialised randomly",
+              "The batch order is fixed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Random initialisation is separate; the stochasticity here is in the gradient estimate.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "Why does a schedule usually decrease the learning rate?",
+            options: [
+              "To move fast early and settle later",
+              "To reduce memory use over time",
+              "Because gradients grow during training",
+              "To compensate for accumulating gradients",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Large steps explore; small steps settle. The schedule sequences the two.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What should you do before concluding a deep model is needed?",
+            options: [
+              "Fit and evaluate a linear baseline",
+              "Increase the batch size",
+              "Switch optimizers",
+              "Add a learning rate schedule",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Otherwise a good result is unattributable: you cannot say what produced it.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "What does 'features are where linearity hides' warn against?",
+            options: [
+              "Assuming a linear model is weak because it is linear",
+              "Using nonlinear features at all",
+              "Adding depth to a network",
+              "Normalising the inputs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The model is linear in its parameters, not necessarily in the raw inputs.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "Which is the correct reading of depth versus width in practice?",
+            options: [
+              "Depth usually buys more for the same parameter count",
+              "Width usually buys more",
+              "They are equivalent by the theorem",
+              "Neither matters once the optimizer is tuned",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The universal approximation theorem says nothing about this, which is exactly why practice had to answer it.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What does an activation function NOT do?",
+            options: [
+              "Change the number of parameters",
+              "Introduce nonlinearity",
+              "Affect gradient flow",
+              "Determine the output range of a layer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is applied elementwise to a layer's output and adds no weights of its own.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "Why is the lesson order linear model, then MLP, then optimizers?",
+            options: [
+              "Each step adds one idea to the previous",
+              "Optimizers are the least important",
+              "MLPs cannot be trained without a schedule",
+              "Linear models require the fewest epochs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Depth is the second idea and how to train it is the third, so nothing is introduced twice.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "What is the first thing to try when a loss will not decrease at all?",
+            options: [
+              "The learning rate",
+              "A deeper architecture",
+              "A different activation",
+              "A larger dataset",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the single parameter most likely to be wrong by an order of magnitude, and the cheapest to change.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What does a diverging loss most often indicate?",
+            options: [
+              "The learning rate is too high",
+              "The batch size is too small",
+              "The model lacks capacity",
+              "Gradients were not zeroed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A wandering loss points at zeroing; a diverging one points at the step size.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "Which failure is easier to waste time on?",
+            options: [
+              "A learning rate far too low",
+              "A learning rate far too high",
+              "A dtype mismatch",
+              "A device mismatch",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It looks like training. It just never arrives.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What does the course say about copying hyperparameters from a paper?",
+            options: [
+              "Choose the learning rate empirically instead",
+              "Always copy them exactly",
+              "Copy them and halve the value",
+              "Papers rarely report them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The advice is procedural because no formula replaces trying a range on your own data.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What is the relationship between a batch and the gradient SGD uses?",
+            options: [
+              "The batch supplies the gradient estimate",
+              "The batch determines the learning rate",
+              "The batch is unrelated to the gradient",
+              "The gradient is averaged across epochs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why batch size and gradient noise are linked.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What would make a universal approximation result practically useful?",
+            options: [
+              "A bound on the units needed and a guarantee training finds them",
+              "A proof for deeper networks",
+              "An extension to more activations",
+              "A faster proof technique",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those are precisely the two things it does not provide.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "Why does the lesson insist the theorem is not a reason to prefer shallow networks?",
+            options: [
+              "It says nothing about practical trainability",
+              "It applies only to deep networks",
+              "It was proved for width, not depth",
+              "It has been superseded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Existence at some width says nothing about what trains well at a realistic size.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What is the honest summary of Adam offered by the lesson?",
+            options: [
+              "A strong default worth reaching for first",
+              "The correct choice in all cases",
+              "Obsolete compared with plain SGD",
+              "Only suitable for small models",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A strong default that you should be willing to abandon is a different claim from a best method.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What does adding depth require, that adding width does not?",
+            options: [
+              "Nonlinearity between the layers",
+              "A larger batch size",
+              "A learning rate schedule",
+              "Per-parameter step scaling",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Without it the extra layers collapse and the depth is decorative.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What is the parameter-count comparison the lesson makes?",
+            options: [
+              "Depth versus width at equal parameters",
+              "Adam versus SGD at equal epochs",
+              "Batch size versus learning rate",
+              "Linear versus MLP at equal accuracy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Holding parameters fixed is what makes the depth-versus-width question answerable at all.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What role does the linear baseline play in reporting a result?",
+            options: [
+              "It makes the improvement attributable",
+              "It replaces a validation set",
+              "It sets the learning rate",
+              "It determines the architecture",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An improvement over nothing is not an improvement over anything in particular.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "Which is true of activation functions the lesson surveys?",
+            options: [
+              "They are applied elementwise",
+              "They introduce new trainable weights",
+              "They replace the loss function",
+              "They operate across the batch dimension",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Being elementwise is what keeps them cheap and what makes their gradient behaviour local.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What does the course mean by the practical summary of activations?",
+            options: [
+              "Know their gradient behaviour, not just their shape",
+              "Memorise their formulas",
+              "Always use the newest one",
+              "Choose by output range alone",
+            ],
+            correctIndex: 0,
+            explanation:
+              "How a function behaves in the backward pass is what determines whether a deep stack trains.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "Why can a linear model be described as having no hidden layer?",
+            options: [
+              "Its input maps straight to its output",
+              "It has no parameters to learn",
+              "It uses no loss function",
+              "It cannot be batched",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A hidden layer is one whose output is consumed by another layer rather than being the prediction.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "What is the danger of skipping the baseline?",
+            options: [
+              "You cannot attribute any later gain",
+              "Training will not converge",
+              "Gradients will not accumulate",
+              "The optimizer cannot be chosen",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which turns an experimental result into an anecdote.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "What does the optimizer do with the gradients the backward pass produced?",
+            options: [
+              "Converts them into a parameter update",
+              "Recomputes them more precisely",
+              "Stores them for the next epoch",
+              "Zeroes them automatically",
+            ],
+            correctIndex: 0,
+            explanation:
+              "How that conversion is done is exactly what distinguishes SGD, momentum and Adam.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+        ],
+      },
+    },
+    {
+      slug: "deep-learning-final",
+      title: "Final assessment \u00b7 Deep Learning Foundations",
+      section: "Final assessment",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is this course relative to Neuromatch's own?",
+            options: [
+              "A companion",
+              "A replacement",
+              "An endorsed prep track",
+              "A certificate pathway",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It teaches the concepts that make the full-time material followable, and says so rather than implying equivalence.",
+            sourceLessonSlug: "scope-and-attribution",
+          },
+          {
+            prompt: "Which licence permits this adaptation?",
+            options: [
+              "CC BY 4.0",
+              "CC BY-NC-SA 4.0",
+              "All rights reserved",
+              "Academic use only",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No NonCommercial clause, so adaptation is legitimate given attribution, links and marked modifications.",
+            sourceLessonSlug: "scope-and-attribution",
+          },
+          {
+            prompt: "Which is NOT required by CC BY 4.0?",
+            options: [
+              "Licensing the derivative under the same terms",
+              "Attribution",
+              "A link to the licence",
+              "Marking modifications",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Share-alike belongs to a different licence.",
+            sourceLessonSlug: "scope-and-attribution",
+          },
+          {
+            prompt: "Broadcasting aligns dimensions from which side?",
+            options: [
+              "The right",
+              "The left",
+              "Whichever is longer",
+              "Neither; ranks must match",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why a trailing dimension of 10 pairs with 10, and a leading 64 has nothing to pair with.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "(64, 10) plus (10,) gives what?",
+            options: [
+              "(64, 10)",
+              "An error",
+              "(64, 10, 10)",
+              "(74, 10)",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The absent leading dimension is treated as 1 and stretched to 64.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "(64, 10) plus (64,) does what?",
+            options: [
+              "Fails, because 10 is compared with 64",
+              "Succeeds, giving (64, 10)",
+              "Succeeds, giving (64, 64)",
+              "Succeeds after an implicit transpose",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reshaping to (64, 1) is how you say you meant one value per row.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What is the danger of an unintended broadcast?",
+            options: [
+              "It returns a wrong number rather than raising",
+              "It crashes the process",
+              "It corrupts the dataset",
+              "It changes the device",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That silence is what lets it survive an entire run.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What must match before two tensors combine?",
+            options: [
+              "Dtype and device",
+              "Shape exactly",
+              "Gradient state",
+              "Creation order",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Broadcasting relaxes shape; it does not relax dtype or device.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "Why is a tensor not just an array?",
+            options: [
+              "It has a device and records its own computation",
+              "It holds only floats",
+              "It is always two-dimensional",
+              "It cannot be reshaped",
+            ],
+            correctIndex: 0,
+            explanation:
+              "GPU execution and automatic differentiation are the reasons a separate library exists.",
+            sourceLessonSlug: "tensors-and-shapes",
+          },
+          {
+            prompt: "What mechanism does autograd implement?",
+            options: [
+              "The chain rule with bookkeeping",
+              "Finite differences",
+              "Symbolic differentiation of source",
+              "Random search",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Backpropagation is the same idea under an earlier name.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Calling backward twice without zeroing does what?",
+            options: [
+              "Adds the gradients together",
+              "Raises an error",
+              "Overwrites the first set",
+              "Clears the graph",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Deliberate, because it lets small batches be summed into one effective large batch.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Forgetting to zero gradients produces which symptom?",
+            options: [
+              "A wandering loss and no error",
+              "An immediate exception",
+              "A device mismatch",
+              "A dtype error",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is exactly why it is a classic bug rather than an obvious one.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Why does a no-gradient context save memory?",
+            options: [
+              "No intermediates are retained for a backward pass",
+              "Tensors are stored at lower precision",
+              "The model is moved to the CPU",
+              "The batch size is reduced",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nothing will call backward during evaluation, so the graph is pure cost.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Why detach a running loss?",
+            options: [
+              "An attached loss keeps the whole history alive",
+              "It would otherwise be printed wrongly",
+              "The optimizer would update it",
+              "It would change dtype",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every intermediate from every batch stays reachable otherwise.",
+            sourceLessonSlug: "autograd-and-the-chain-rule",
+          },
+          {
+            prompt: "Which order is correct?",
+            options: [
+              "Zero, forward, loss, backward, step",
+              "Forward, backward, zero, step, loss",
+              "Zero, backward, forward, loss, step",
+              "Loss, forward, zero, backward, step",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Zeroing first is what prevents contamination from the previous iteration.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "An epoch is what?",
+            options: [
+              "One pass over the training set",
+              "One parameter update",
+              "One batch",
+              "One validation run",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A batch is the subset; many batches make the pass.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What does the optimizer's step consume?",
+            options: [
+              "The gradients backward produced",
+              "The raw loss value",
+              "The batch itself",
+              "The learning rate schedule only",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Backward computes them; step turns them into a parameter update.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What does zeroing NOT clear?",
+            options: [
+              "Momentum state",
+              "Accumulated gradients",
+              "Last iteration's contamination",
+              "Anything needed for a fresh backward",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Optimizer state persists by design.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "Why is the training loop taught first?",
+            options: [
+              "It is invariant across architectures",
+              "It is the hardest part",
+              "It must be rewritten per model",
+              "It determines the licence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Learn it once and it transfers; the model inside it is what varies.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "A linear model is a network with how many layers?",
+            options: [
+              "One",
+              "Zero",
+              "Two",
+              "As many as its features",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Framing it as one layer is what makes adding depth continuous rather than a leap.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "Why fit a linear baseline first?",
+            options: [
+              "It makes any later improvement attributable",
+              "It initialises the deeper model",
+              "It is required by the optimizer",
+              "It fixes the batch size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An improvement over nothing is not an improvement over anything in particular.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "Where does linearity often hide?",
+            options: [
+              "In the features",
+              "In the loss",
+              "In the optimizer",
+              "In the dtype",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A model linear in its parameters can be highly nonlinear in the raw inputs.",
+            sourceLessonSlug: "linear-models-as-networks",
+          },
+          {
+            prompt: "Stacking linear layers without activations yields what?",
+            options: [
+              "A single linear model",
+              "A universal approximator",
+              "An untrainable model",
+              "A deeper but equivalent-capacity model",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Composed linear maps are one linear map, which is the entire argument for nonlinearity.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "The universal approximation theorem is what kind of result?",
+            options: [
+              "An existence result",
+              "A convergence guarantee",
+              "A bound on width",
+              "An empirical finding",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It says suitable weights exist and nothing about finding them.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What does the theorem say about the number of hidden units required?",
+            options: [
+              "Nothing; it may be astronomical",
+              "That it is linear in the inputs",
+              "That two layers suffice",
+              "That it shrinks with data size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One of the two reasons it proves less than it is quoted for.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What does the theorem say about gradient descent?",
+            options: [
+              "Nothing",
+              "That it converges",
+              "That it converges given enough epochs",
+              "That it fails for deep networks",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Existence and findability are separate claims.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "At equal parameter count, what usually wins in practice?",
+            options: [
+              "Depth",
+              "Width",
+              "Neither, by the theorem",
+              "It depends only on the optimizer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which the theorem does not predict, and practice had to answer.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What is an activation function for?",
+            options: [
+              "Introducing nonlinearity",
+              "Normalising the loss",
+              "Scheduling the learning rate",
+              "Selecting the device",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is applied elementwise and adds no parameters of its own.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What is stochastic about SGD?",
+            options: [
+              "The gradient is estimated from a batch",
+              "The learning rate varies randomly",
+              "Initialisation is random",
+              "Batches are shuffled",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Random initialisation is a separate thing; the stochasticity is in the estimate.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What does momentum contribute?",
+            options: [
+              "A running average of past gradients",
+              "A per-parameter learning rate",
+              "Curvature information",
+              "An adaptive batch size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It damps oscillation across a valley and accelerates along a consistent direction.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What distinguishes Adam?",
+            options: [
+              "Per-parameter step scaling from gradient history",
+              "Use of the exact Hessian",
+              "No learning rate at all",
+              "Gradient-free updates",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is what makes it forgiving of a badly chosen global rate.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What is the honest caveat about Adam?",
+            options: [
+              "Well-tuned SGD can generalise better",
+              "It cannot use momentum",
+              "It suits only convolutional nets",
+              "It requires 16-bit precision",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A strong default is a different claim from a strictly better method.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What does a learning rate schedule typically do?",
+            options: [
+              "Start higher and decrease",
+              "Start lower and increase",
+              "Hold constant by definition",
+              "Vary with the batch index only",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Large steps explore, small steps settle, and the schedule sequences the two.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "How should a learning rate be chosen?",
+            options: [
+              "Empirically, over a range",
+              "From the parameter count",
+              "By copying the original paper",
+              "From the batch size",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No formula replaces trying it on your own data, which is why the advice is procedural.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "A diverging loss most often means what?",
+            options: [
+              "The learning rate is too high",
+              "Gradients were not zeroed",
+              "The model lacks capacity",
+              "The batch is too small",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A wandering loss points at zeroing; a diverging one points at step size.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "Which failure is easiest to waste a week on?",
+            options: [
+              "A learning rate far too low",
+              "A learning rate far too high",
+              "A device mismatch",
+              "A dtype mismatch",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It looks exactly like training, and simply never arrives.",
+            sourceLessonSlug: "optimizers-and-learning-rates",
+          },
+          {
+            prompt: "What is the correct reading of the universal approximation theorem?",
+            options: [
+              "Reassurance about capacity, not a practical guide",
+              "A recipe for choosing width",
+              "Proof that shallow beats deep",
+              "A convergence theorem",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It rules out a worry about expressive power and predicts nothing about practice.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "What does an MLP require between its layers?",
+            options: [
+              "A nonlinearity",
+              "A learning rate schedule",
+              "A larger batch",
+              "Per-parameter scaling",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Without it the stack collapses and the depth is decorative.",
+            sourceLessonSlug: "mlps-and-activations",
+          },
+          {
+            prompt: "Which pairing is right?",
+            options: [
+              "Backward computes gradients, step applies them",
+              "Step computes gradients, backward applies them",
+              "Zero computes gradients, step clears them",
+              "Forward computes gradients, loss applies them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Confusing the two is what produces loops that train on stale or absent gradients.",
+            sourceLessonSlug: "the-training-loop",
+          },
+          {
+            prompt: "What does this course NOT include?",
+            options: [
+              "Notebooks, datasets, projects and pods",
+              "Tensors and shapes",
+              "Autograd",
+              "Optimizers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Those need the full-time structure, and the course is explicit that it is not that.",
+            sourceLessonSlug: "scope-and-attribution",
+          },
+        ],
+      },
     },
   ],
 };
