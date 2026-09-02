@@ -137,6 +137,20 @@ const BACKLOG: Record<string, string> = {
     "PRIVATE, unmapped on purpose, on the same terms as deaf-america below. Braille history, US disability law and the copyright material genuinely touch US-history, civics and ELA standards, but the course is held private until a blind co-author or reviewer reads it, and claiming standards for a course no educator can see would be a claim about content that may still change. Map it at the public flip.",
   "deaf-america":
     "PRIVATE, unmapped on purpose. Deaf history, linguistics and law genuinely touch US-history and language standards, but the course is held private until a Deaf co-author reviews it, and claiming standards for a course no educator can see would be a claim about content that may still change. Map it at the public flip.",
+  "writing-poems-and-songs":
+    "UNMAPPED, and this one is a genuine candidate rather than a permanent excuse. Poetry, figurative language, sound devices and structure all appear in ELA standards, so unlike the vocational entries below this course could carry a real alignment. Not claimed yet because the mapping work has not been done, and a claim an educator can check must be done properly or not at all.",
+  // The four Neuromatch companion courses (plans/74). PRIVATE study courses at university level:
+  // BAM is working through them for his own knowledge, not teaching them to anyone. Standards are
+  // a promise made to educators shopping a public catalog, and there is no educator here to make it
+  // to. Map them at the public flip if there ever is one.
+  "computational-neuroscience-foundations":
+    "PRIVATE university-level study course. No K-12 standard describes it and no educator can see it. Revisit only at a public flip.",
+  "deep-learning-foundations":
+    "PRIVATE university-level study course. No K-12 standard describes it and no educator can see it. Revisit only at a public flip.",
+  "computational-behaviour-foundations":
+    "PRIVATE university-level study course. No K-12 standard describes it and no educator can see it. Revisit only at a public flip.",
+  "computational-climate-tools-foundations":
+    "PRIVATE university-level study course. Earth and space science standards DO touch climate, so this is the likeliest of the four to carry a real alignment one day, but not while it is private.",
   "ecs-neuroscience":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
   "bvc-taster-coffee":

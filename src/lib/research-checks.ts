@@ -3836,6 +3836,158 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
   },
   {
+    key: "compneuro-dayan-abbott-triad",
+    course: "computational-neuroscience-foundations",
+    title: "Does Dayan and Abbott chapter 1 actually name the descriptive/mechanistic/interpretive triad?",
+    severity: "low",
+    question:
+      "Does chapter 1 of Theoretical Neuroscience name those three model types in those words, and is the mapping onto what / how / why theirs or this course's gloss?",
+    claim:
+      "The book is paywalled and only its bibliographic record was fetched. The lesson teaches the triad as a standard framing and attributes it to the book, which is the usual attribution, but the exact wording and the what/how/why mapping were not read from the text.",
+    stakes:
+      "Low. The framing is genuinely standard and no factual claim rests on it. Worth closing because attributing a gloss to an author who did not write it is a small dishonesty that compounds.",
+    needs: ["Chapter 1 of Dayan and Abbott, with the three terms and any mapping quoted as printed"],
+    where: ["Theoretical Neuroscience, MIT Press, ISBN 9780262041997"],
+  },
+  {
+    key: "compneuro-paninski-2004-result",
+    course: "computational-neuroscience-foundations",
+    title: "What exactly does Paninski (2004) prove about the likelihood surface?",
+    severity: "medium",
+    question:
+      "What is the theorem's exact statement, and what is the paper's own condition on the nonlinearity?",
+    claim:
+      "A draft said the log-likelihood is CONCAVE. The abstract is elided by the publisher on every aggregator reached, so that was rewritten to the paper's own weaker claim, a condition on the nonlinearity under which the likelihood has no non-global local maxima, and the weaker wording was propagated through three quiz items.",
+    stakes:
+      "Medium. Concavity and no-local-maxima are different mathematical claims, and a learner who carries the stronger one into their own work will over-trust an optimiser.",
+    needs: ["The theorem as printed, and the condition on the nonlinearity, from the paper itself"],
+    where: ["Neural Computation, Paninski 2004"],
+  },
+  {
+    key: "compneuro-ernst-banks-degraded-vision",
+    course: "computational-neuroscience-foundations",
+    title: "Did Ernst and Banks degrade vision with visual noise, as the lesson describes?",
+    severity: "low",
+    question:
+      "What manipulation did the 2002 experiment actually use to vary visual reliability?",
+    claim:
+      "The fetched abstract confirms statistically optimal integration of visual and haptic information but does NOT confirm the specific visual-noise manipulation the lesson describes.",
+    stakes:
+      "Low. The teaching point, that weighting follows reliability, is confirmed. The experimental detail is the unverified part and should either be sourced or dropped.",
+    needs: ["The methods section, with the manipulation described as printed"],
+    where: ["Nature, Ernst and Banks 2002"],
+  },
+  {
+    key: "compneuro-cunningham-yu-motivation",
+    course: "computational-neuroscience-foundations",
+    title: "Is the trial-averaging motivation for dimensionality reduction stated in Cunningham and Yu?",
+    severity: "low",
+    question:
+      "Does their review state that dimensionality reduction is motivated by the limits of trial averaging, in those terms?",
+    claim:
+      "Only the bibliographic record was fetched. The claim is a standard motivation and is attributed to the review, but the review's own framing was not read.",
+    stakes:
+      "Low, same class as the Dayan and Abbott entry: a standard idea attributed to a specific source without the source having been read.",
+    needs: ["The review's introduction, with its stated motivation quoted"],
+    where: ["Nature Neuroscience, Cunningham and Yu 2014"],
+  },
+  {
+    key: "climate-preindustrial-baseline-years",
+    course: "computational-climate-tools-foundations",
+    title: "Which years define the pre-industrial baseline for assessment purposes?",
+    severity: "medium",
+    question:
+      "What reference period does the assessment literature actually mean by relative to pre-industrial levels? The course states the period is earlier than any of the dataset baselines it names (GISTEMP, HadCRUT5) but deliberately prints NO years.",
+    claim:
+      "The body defining it publishes on ipcc.ch, which returned HTTP 403 to automated retrieval during authoring, and no other source reached in that pass states the definition in its own right. The lesson says so in the text rather than printing a number nobody checked.",
+    stakes:
+      "Medium, and it is the lesson's own point. The whole lesson is about incomplete statements of what a number is measured against, so a course that quoted an unchecked baseline while teaching that would be refuting itself.",
+    needs: [
+      "The assessment report's own statement of the reference period, read from the primary document, with the section quoted",
+      "Then name the years beside the GISTEMP and HadCRUT5 baselines, where the point lands hardest",
+    ],
+    where: ["The assessment report itself, not a summary", "Any agency page that states the period in its own right"],
+  },
+  {
+    key: "climate-enso-contribution-magnitude",
+    course: "computational-climate-tools-foundations",
+    title: "How large is the ENSO contribution to global mean surface temperature?",
+    severity: "low",
+    question:
+      "What is a sourced estimate of how much El Nino or La Nina shifts global mean surface temperature for a year or two, ideally separating the two sides?",
+    claim:
+      "A draft said a few tenths of a degree. No primary source could be retrieved, so THE NUMBER WAS REMOVED from the lesson, the reveal, the vocabulary entry and two quiz questions rather than shipped unsourced. The lesson still teaches that ENSO moves the number without a change in forcing, which is the teachable part.",
+    stakes:
+      "Low as written, since nothing unsourced is on the page. Worth closing because the magnitude is what makes the trend-versus-wiggle lesson concrete.",
+    needs: [
+      "A published estimate of the ENSO contribution to global mean surface temperature, read from the paper or an agency page",
+      "Foster and Rahmstorf on removing ENSO, solar and volcanic signals is the obvious first place to look",
+    ],
+    where: ["Environmental Research Letters", "NOAA or NASA agency pages stating the figure directly"],
+  },
+  {
+    key: "climate-nasem-attribution-confidence-ranking",
+    course: "computational-climate-tools-foundations",
+    title: "What is the National Academies ranking of attribution confidence by event type?",
+    severity: "medium",
+    question:
+      "What does the National Academies 2016 report print as its own summary of attribution confidence by event class? The course teaches that thermodynamic events give the shortest chain of reasoning and circulation-driven events the hardest, but does NOT print the report's ranking.",
+    claim:
+      "nationalacademies.org served only the catalogue summary; the report body containing the figure was not retrieved. The lesson uses the sourced thermodynamic-versus-circulation framing instead and says the ranking is absent.",
+    stakes:
+      "Medium. This is the single most useful thing the attribution lesson is currently missing, and it is exactly the kind of table a learner would want to check a news claim against.",
+    needs: ["The report's summary table of attribution confidence by event type, with classes and confidence levels quoted as printed"],
+    where: ["National Academies of Sciences, Engineering, and Medicine (2016), the report body"],
+  },
+  {
+    key: "songs-sung-slant-rhyme-forgiveness",
+    course: "writing-poems-and-songs",
+    title: "Is a sung slant rhyme really easier to get away with than a written one?",
+    severity: "low",
+    question:
+      "Is there a peer-reviewed perception study comparing recognition of perfect versus slant rhyme in SUNG versus SPOKEN delivery? The course claims pitch, duration and the repeated melodic phrase cue the ear that a return happened, so a sung slant rhyme lands where a written one would not.",
+    claim:
+      "The lesson labels this as craft practice gathered from tradition, NOT a measured finding, and says so in the lesson body rather than in a footnote. Nothing was found while writing the course.",
+    stakes:
+      "Low. It is hedged where it appears. Worth settling because it is the kind of claim that hardens into fact through repetition in songwriting books.",
+    needs: [
+      "A perception study on rhyme recognition across sung and spoken delivery",
+      "If none exists, that absence is itself worth recording so nobody searches twice",
+    ],
+    where: ["Music perception journals", "Psychology of music literature"],
+  },
+  {
+    key: "songs-mis-stressing-attention-cost",
+    course: "writing-poems-and-songs",
+    title: "What is the measured cost of setting an unstressed syllable on a strong beat?",
+    severity: "low",
+    question:
+      "Is there published text-setting research measuring a comprehension or recall cost when a lyric places an unstressed syllable on a strong beat? The course claims a listener hears the wrong pronunciation and spends attention repairing the word.",
+    claim:
+      "Hedged in the lesson as craft practice. NOTE: the two Music Theory Online articles this course cites are about FORM, not text setting, so they do not support this claim and are not offered as if they did.",
+    stakes:
+      "Low, and hedged. Worth settling because generative text-setting models exist and may already answer it.",
+    needs: [
+      "Generative textsetting literature, or work on prosodic alignment in sung text",
+      "Any study measuring comprehension or recall against stress alignment",
+    ],
+    where: ["Music Theory Online", "Linguistics of text setting"],
+  },
+  {
+    key: "songs-metro-poem-line-one-punctuation",
+    course: "writing-poems-and-songs",
+    title: "Colon or semicolon at the end of line one of In a Station of the Metro?",
+    severity: "low",
+    question:
+      "Does the April 1913 printing in Poetry 2(1), page 6 end the first line with a colon or a semicolon? The University of Toronto's Representative Poetry Online gives a colon and records the original wide internal spacing; many modern reprints show a semicolon.",
+    claim:
+      "The course follows RPO and CITES RPO explicitly rather than asserting a bare text, so a reader can see which witness is being followed. A page image of the 1913 printing would settle it outright.",
+    stakes:
+      "Low for the argument, which is about the image doing the work rather than about punctuation. But the course quotes both lines, and a quotation should be right.",
+    needs: ["A page image or facsimile of Poetry 2(1), April 1913, page 6"],
+    where: ["Modernist Journals Project", "Poetry magazine archive"],
+  },
+  {
     key: "mesoamerica-arqueologia-mexicana-148-authorship",
     course: "precolumbian-mesoamerica",
     title: "Who wrote the Huei Tzompantli article in Arqueologia Mexicana 148?",

@@ -79,6 +79,8 @@
     "seed:languages:prod": "tsx --env-file=.env.prod scripts/seed-languages.ts",
     "seed:map": "tsx --env-file=.env.local scripts/seed-map.ts",
     "seed:map:prod": "tsx --env-file=.env.prod scripts/seed-map.ts",
+    "seed:neuromatch": "tsx --env-file=.env.local scripts/seed-neuromatch.ts",
+    "seed:neuromatch:prod": "tsx --env-file=.env.prod scripts/seed-neuromatch.ts",
     "seed:owner": "tsx --env-file=.env.local scripts/seed-owner.ts",
     "seed:owner:prod": "tsx --env-file=.env.prod scripts/seed-owner.ts",
     "seed:sommelier": "tsx --env-file=.env.local scripts/seed-sommelier.ts",
