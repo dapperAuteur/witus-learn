@@ -5,6 +5,7 @@ import {
   SILENT_AUTH_FAILURES,
   SSO_ATTEMPT_STORAGE_KEY,
   continueAsLabel,
+  endSessionEndpointFromDiscovery,
   hasAttemptMarker,
   isSilentAuthFailure,
   parseSilentSsoIdentity,
@@ -36,7 +37,7 @@ const read = (rel: string) => readFileSync(join(ROOT, rel), "utf-8");
 const stripComments = (src: string) =>
   src.replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
 
-const ENDPOINT = "https://accounts.witus.online/api/idp/get-session";
+const ENDPOINT = "https://accounts.witus.online/api/ecosystem/session";
 
 describe("the tenant gate: the check never fires without it", () => {
   it("refuses on an ineligible tenant no matter what else is true", () => {
@@ -251,10 +252,37 @@ describe("the endpoint is derived, never invented", () => {
         "https://accounts.witus.online/api/idp/.well-known/openid-configuration",
       ),
     ).toBe(ENDPOINT);
-    // An IdP mounted at the root works too.
+    // The probe lives at a FIXED path on the IdP's origin, not under its better-auth basePath,
+    // so an IdP mounted at the root derives the same route.
     expect(
       silentSsoEndpointFromDiscovery("https://id.example.test/.well-known/openid-configuration"),
-    ).toBe("https://id.example.test/get-session");
+    ).toBe("https://id.example.test/api/ecosystem/session");
+  });
+
+  it("never probes better-auth's /get-session, which would expose a session token", () => {
+    // THE POINT OF THIS TEST. /get-session returns { session, user } and `session` carries the
+    // SESSION TOKEN. Pointing a credentialed cross-origin probe at it — which is what this app
+    // did until 2026-09-02 — would mean any ecosystem origin, or an XSS on one, could lift a live
+    // IdP session token. It failed closed only because better-auth sends no CORS headers, which is
+    // luck, not design. If someone "fixes" the probe by re-deriving that path, this fails.
+    for (const discovery of [
+      "https://accounts.witus.online/api/idp/.well-known/openid-configuration",
+      "https://id.example.test/.well-known/openid-configuration",
+    ]) {
+      expect(silentSsoEndpointFromDiscovery(discovery)).not.toContain("get-session");
+    }
+  });
+
+  it("derives the RP-initiated logout endpoint under the IdP's basePath", () => {
+    // Global sign-out (BAM, 2026-08-30). This is the `end_session_endpoint` the live discovery
+    // document advertises, and unlike the probe it DOES live under the better-auth basePath.
+    expect(
+      endSessionEndpointFromDiscovery(
+        "https://accounts.witus.online/api/idp/.well-known/openid-configuration",
+      ),
+    ).toBe("https://accounts.witus.online/api/idp/oauth2/endsession");
+    expect(endSessionEndpointFromDiscovery(null)).toBeNull();
+    expect(endSessionEndpointFromDiscovery("not a url")).toBeNull();
   });
 
   it("returns null rather than guessing when there is nothing to derive from", () => {

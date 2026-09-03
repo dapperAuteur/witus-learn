@@ -242,6 +242,50 @@ unstyled fallback, which is what produced the bare `NEXT_HTTP_ERROR_FALLBACK;403
 Covered by [tests/signed-out-redirect.test.ts](tests/signed-out-redirect.test.ts), which also fails
 the build if any `(tenant)` page reaches for the API-shaped guard again.
 
+## Ecosystem SSO: "Continue as ⟨name⟩" and global sign-out
+
+**Both halves are gated to WitUS-branded surfaces, and that gate is the most important fact here.**
+The condition is `isWitusBrandedHost(host) || tenant.flags.ecosystemSso === true`
+([src/lib/witus-host.ts](src/lib/witus-host.ts)), resolved on the server from the request Host and
+never from anything client-supplied. A white-label school on its own domain (bettervice.club,
+elementarymba.com) gets **no button, no probe, and no IdP redirect on sign-out**: a single request to
+`accounts.witus.online` would both reveal that the ecosystem exists and tell it that someone visited
+that school. `flags.ecosystemSso` is owner-set, never tenant self-serve.
+
+"Sign in with WitUS" is a better-auth `genericOAuth` provider (`providerId: witus`) against the
+ecosystem IdP, registered only when `WITUS_OIDC_CLIENT_ID` is set
+([src/lib/auth.ts](src/lib/auth.ts)) — an unconfigured deploy behaves exactly as it did before.
+
+**"Continue as ⟨name⟩"** — `/login` renders the magic-link form immediately and, in parallel, asks
+the IdP's `/api/ecosystem/session` (CORS, credentialed, 4s timeout) whether this browser already
+holds a WitUS session; if it answers, the button relabels itself. **A blocked, failed, or timed-out
+probe is completely invisible** — no error, no spinner, no layout shift — and that is the designed
+state under Safari ITP and Firefox Total Cookie Protection, where the IdP's cookie never rides along
+as a third-party cookie. The name is display copy from a cross-origin response and **is never a
+credential**: identity is established only by the real OIDC code flow the click starts. A one-shot
+marker (`sessionStorage` + `?sso=tried`, written *before* the redirect, never after) stops a stale
+IdP session from looping the visitor, and the five "the IdP will not finish this without a human"
+error codes return them to `/login` with no error page. Full reasoning:
+[src/lib/silent-sso.ts](src/lib/silent-sso.ts), pinned by
+[tests/silent-sso.test.ts](tests/silent-sso.test.ts).
+
+Until 2026-09-02 the probe pointed at the IdP's better-auth `/get-session`, which emits no CORS
+headers at all, so it answered on *no* browser. `/api/ecosystem/session` is the purpose-built
+replacement: same cookie, but it returns a display label and nothing else. `/get-session` carries the
+session token and must never become readable cross-origin.
+
+**Global sign-out** — signing out of Learn signs you out of every WitUS app in this browser. The
+order is the safety property: offline caches are purged and the **local session destroyed first**,
+then the browser is handed to the IdP's `oauth2/endsession` with `client_id` and a
+`post_logout_redirect_uri` of this app's origin plus `/` (`https://learn.witus.online/` in
+production; the trailing slash is exact-matched by the IdP). An IdP that is unreachable or refuses
+the logout therefore still leaves the learner signed out here.
+
+Env: `WITUS_OIDC_CLIENT_ID` + `WITUS_OIDC_CLIENT_SECRET` (both features stay dark without the id),
+optional `WITUS_OIDC_DISCOVERY_URL` (every IdP URL is derived from it, so `accounts.witus.online` is
+named in exactly one place), and optional `WITUS_SSO_SESSION_URL`, which overrides the probe endpoint
+and always wins — that path is owned by the IdP app, not by this one.
+
 ## Private courses (`courses.visibility = 'private'`)
 
 A course can be **held back entirely** rather than published unvetted. `visibility: "private"` is an
