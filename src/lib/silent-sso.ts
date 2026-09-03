@@ -12,13 +12,19 @@
  * session, and every WitUS client is a trusted client with skipConsent, so a live session returns a
  * code). But `prompt=none` is a NAVIGATION. You leave the login page to ask, which is the automatic
  * design BAM rejected, and the only way to ask without leaving is a hidden iframe, which Safari's
- * ITP already blocks. So option B asks the IdP's own session endpoint over CORS instead, in
- * parallel with a form that has already rendered.
+ * ITP already blocks. So option B asks a dedicated IdP endpoint over CORS instead, in parallel
+ * with a form that has already rendered.
  *
  * WHAT THIS BUYS AND WHAT IT DOES NOT. The probe carries the IdP's cookie as a THIRD-PARTY cookie,
  * so it answers on Chrome/Edge and returns nothing under Safari ITP or Firefox Total Cookie
  * Protection. That is fine and it is the design: a probe that answers nothing renders nothing, and
  * the visitor keeps the exact login page they already had (rule 3, a failed check is invisible).
+ *
+ * CORRECTION, 2026-09-02: until this date the probe answered on NO browser. It pointed at the IdP's
+ * better-auth `/get-session`, which sends no CORS headers at all, so every browser discarded the
+ * response and the degraded state above was the ONLY state. The IdP now serves a purpose-built
+ * `/api/ecosystem/session` for this; see silentSsoEndpointFromDiscovery for why the original target
+ * could not simply have CORS added to it. The Safari/Firefox note above is accurate again now.
  *
  * THE IDENTITY THIS RETURNS IS DISPLAY ONLY. It arrives from a cross-origin response, so it is
  * client-supplied by definition and MUST NEVER authenticate anyone. Clicking "Continue as <name>"
@@ -133,21 +139,33 @@ export function withAttemptMarker(path: string): string {
 }
 
 /**
- * The IdP's session endpoint, derived from the OIDC discovery URL this app is ALREADY configured
- * with, so no new external value is asserted here.
+ * Split a discovery URL into the IdP's origin and its better-auth basePath.
  *
  *   https://accounts.witus.online/api/idp/.well-known/openid-configuration
- *     -> https://accounts.witus.online/api/idp/get-session
+ *     -> { origin: "https://accounts.witus.online", basePath: "/api/idp" }
  *
- * `/get-session` is better-auth's own session route (verified in
- * node_modules/better-auth/dist/api/routes/session.mjs), and accounts.witus.online is a better-auth
- * app mounted at basePath /api/idp (verified in gemini/witus/app/api/idp/[...all]/route.ts). An
- * explicit WITUS_SSO_SESSION_URL always wins, because the path is owned by that app and not by this
- * one.
+ * Everything below derives from this rather than hardcoding accounts.witus.online, so the one
+ * external value this app asserts stays the discovery URL it is already configured with
+ * (authoritative-values rule).
  */
+function splitDiscoveryUrl(
+  discoveryUrl: string | null | undefined,
+): { origin: string; basePath: string } | null {
+  if (!discoveryUrl) return null;
+  let parsed: URL;
+  try {
+    parsed = new URL(discoveryUrl);
+  } catch {
+    return null;
+  }
+  const cut = parsed.pathname.indexOf("/.well-known/");
+  if (cut < 0) return null;
+  return { origin: parsed.origin, basePath: parsed.pathname.slice(0, cut) };
+}
+
 /**
- * The IdP's RP-initiated logout endpoint, derived from the SAME discovery URL as the probe above
- * so nothing new about accounts.witus.online is hardcoded (authoritative-values rule).
+ * The IdP's RP-initiated logout endpoint: `<basePath>/oauth2/endsession`, which is the
+ * `end_session_endpoint` the live discovery document advertises (verified 2026-09-02).
  *
  * BAM chose GLOBAL sign-out on 2026-08-30: "signout signs out of every app". Ending only this
  * app's session leaves the IdP session alive, and once "Continue as ..." is live that means
@@ -156,26 +174,39 @@ export function withAttemptMarker(path: string): string {
 export function endSessionEndpointFromDiscovery(
   discoveryUrl: string | null | undefined,
 ): string | null {
-  const probe = silentSsoEndpointFromDiscovery(discoveryUrl);
-  if (!probe) return null;
-  return probe.replace(/\/get-session$/, "/oauth2/endsession");
+  const parts = splitDiscoveryUrl(discoveryUrl);
+  if (!parts) return null;
+  return `${parts.origin}${parts.basePath}/oauth2/endsession`;
 }
 
+/**
+ * The ecosystem session probe: `<idp-origin>/api/ecosystem/session`.
+ *
+ * NOT `<basePath>/get-session`, which is where this pointed until 2026-09-02 and which could never
+ * have worked. Two independent reasons, both verified rather than reasoned about:
+ *
+ *  1. better-auth's core emits no CORS headers at all (only its MCP plugin does), and the IdP sets
+ *     no `trustedOrigins`. `curl -H "Origin: https://learn.witus.online"` against the live
+ *     `/api/idp/get-session` returns 200 with NO `access-control-allow-origin`, so the browser
+ *     discarded the response on Chrome and Edge too — not just under Safari ITP as the note below
+ *     assumed. The probe has never once answered in production.
+ *  2. It must not be fixed by adding CORS there. `/get-session` returns the full `{ session, user }`
+ *     and `session` carries the SESSION TOKEN, so a credentialed allow-origin on it would let any
+ *     ecosystem origin — or an XSS on any one of them — lift a live IdP session token.
+ *
+ * `/api/ecosystem/session` is the purpose-built replacement in gemini/witus
+ * (app/api/ecosystem/session/route.ts): same cookie, but it answers with a display label and
+ * nothing else, and its allow-origin list is derived from the IdP's own client registry. Its
+ * response shape is `{ signedIn, user: { name } }`, which parseSilentSsoIdentity already reads.
+ *
+ * An explicit WITUS_SSO_SESSION_URL still wins, because the path is owned by that app, not this one.
+ */
 export function silentSsoEndpointFromDiscovery(
   discoveryUrl: string | null | undefined,
 ): string | null {
-  if (!discoveryUrl) return null;
-  let parsed: URL;
-  try {
-    parsed = new URL(discoveryUrl);
-  } catch {
-    return null;
-  }
-  const marker = "/.well-known/";
-  const cut = parsed.pathname.indexOf(marker);
-  if (cut < 0) return null;
-  const base = parsed.pathname.slice(0, cut);
-  return `${parsed.origin}${base}/get-session`;
+  const parts = splitDiscoveryUrl(discoveryUrl);
+  if (!parts) return null;
+  return `${parts.origin}/api/ecosystem/session`;
 }
 
 /**
