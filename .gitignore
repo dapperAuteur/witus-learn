@@ -25,6 +25,8 @@ yarn-error.log*
 .env.local
 .env.*.local
 .env.prod
+# Holds ONLY the dev-database URL for `pnpm test:db`. Never commit it.
+.env.test
 
 # typescript
 *.tsbuildinfo
