@@ -19,6 +19,8 @@ import { MOCKUMENTARY_COURSE } from "./data/mockumentary-course";
 import { DEAF_AMERICA_COURSE } from "./data/deaf-america-course";
 import { BLIND_AND_LOW_VISION_AMERICA_COURSE } from "./data/blind-and-low-vision-america-course";
 import { WRITING_POEMS_AND_SONGS_COURSE } from "./data/writing-poems-and-songs-course";
+import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
+import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -2202,6 +2204,30 @@ async function main() {
     // Fagan Yellin from Jacobs's own letters, settled by a dated article and a dated scholarly
     // edition. That is CREDIT-00 Section 6 with a real case attached.
     // NO migration — pnpm seed:courses.
+    // CREDIT-R1 and CREDIT-C1, from the two series research files. Both teach a MECHANISM rather
+    // than a set of biographies: R1 is who is named on a record and who owns it, C1 is a statute
+    // (choreography was not a copyrightable category at all until the 1976 Act took effect on
+    // 1 January 1978). Lettered tracks beside W1, the same way the plan lays them out.
+    {
+      slug: "who-made-the-record",
+      course: PHOTOGRAPHY_CREDIT_COURSE,
+      category: "Culture & History",
+      seriesSlug: "credit",
+      seriesTitle: "Credit: Who Gets Named",
+      seriesOrder: 6,
+      seriesCode: "CREDIT",
+      seriesPosition: "R1",
+    },
+    {
+      slug: "who-owns-the-steps",
+      course: DANCE_CREDIT_COURSE,
+      category: "Culture & History",
+      seriesSlug: "credit",
+      seriesTitle: "Credit: Who Gets Named",
+      seriesOrder: 7,
+      seriesCode: "CREDIT",
+      seriesPosition: "C1",
+    },
     {
       slug: "written-by-himself",
       course: WRITTEN_BY_HIMSELF_COURSE,
