@@ -3940,6 +3940,27 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     where: ["National Academies of Sciences, Engineering, and Medicine (2016), the report body"],
   },
   {
+    key: "naacp-anti-lynching-without-ida-b-wells",
+    course: "naacp-learned-to-win",
+    title: "Why does the anti-lynching material never name Ida B. Wells?",
+    severity: "high",
+    question:
+      "The course carries 61 references to lynching and 42 to the Dyer bill, and names Ida B. Wells ZERO times. Was that a deliberate scope decision, on the grounds that the course is about five NAACP careers rather than about the anti-lynching movement, or is it an omission? If deliberate, the course should say so; if not, it needs a lesson.",
+    claim:
+      "Verified by grep on 2026-09-07. The course teaches the campaign that Wells' investigative work made possible, including a whole section on the Dyer bill, without naming the person who did that work.",
+    stakes:
+      "HIGH, and higher here than it would be anywhere else in this catalog. This platform exists to teach who gets credit for work. A course about the NAACP's anti-lynching campaign that never names Wells reproduces, in its own structure, exactly the failure it teaches learners to spot. She is also on BAM's own she-did-the-work list, which makes the omission harder to defend as scope.",
+    needs: [
+      "A decision from BAM: scope statement, or a lesson",
+      "If a lesson: Southern Horrors (1892) and A Red Record (1895) read as primary sources, plus her relationship to the NAACP's founding, which was real and contested",
+      "Whether the founding-member question is settled enough to state plainly, since accounts differ on how she was treated at and after the founding",
+    ],
+    where: [
+      "Southern Horrors and A Red Record, both out of copyright and reachable",
+      "The course's own Dyer-bill section, which is where the gap is most visible",
+    ],
+  },
+  {
     key: "songs-sung-slant-rhyme-forgiveness",
     course: "writing-poems-and-songs",
     title: "Is a sung slant rhyme really easier to get away with than a written one?",
