@@ -155,6 +155,8 @@ const BACKLOG: Record<string, string> = {
     "UNMAPPED, and a genuine candidate rather than an excuse. Primary-source analysis, historical argument and visual-arts analysis all appear in ELA and arts standards. Not claimed until the mapping is done properly.",
   "who-owns-the-steps":
     "UNMAPPED, and a genuine candidate. The spine is statutory history, which sits close to civics and US-history standards on how law changes what counts as property. Not claimed until the mapping is done properly.",
+  "the-paper-and-the-prize":
+    "UNMAPPED, and a genuine candidate. Genetics, experimental method and evaluating sources against claims all appear in science and ELA standards. Not claimed until the mapping is done properly.",
   "ecs-neuroscience":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
   "bvc-taster-coffee":

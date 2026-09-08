@@ -21,6 +21,7 @@ import { BLIND_AND_LOW_VISION_AMERICA_COURSE } from "./data/blind-and-low-vision
 import { WRITING_POEMS_AND_SONGS_COURSE } from "./data/writing-poems-and-songs-course";
 import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
 import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
+import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -2227,6 +2228,19 @@ async function main() {
       seriesOrder: 7,
       seriesCode: "CREDIT",
       seriesPosition: "C1",
+    },
+    // CREDIT-S1, the science track. BAM widened the brief on 2026-09-07 from Black subjects to
+    // "members of marginalized communities that didnt get credit for their work", and approved
+    // Lederberg as the first case under it. Note the spelling: his source list writes "Lederburg".
+    {
+      slug: "the-paper-and-the-prize",
+      course: ESTHER_LEDERBERG_COURSE,
+      category: "Culture & History",
+      seriesSlug: "credit",
+      seriesTitle: "Credit: Who Gets Named",
+      seriesOrder: 8,
+      seriesCode: "CREDIT",
+      seriesPosition: "S1",
     },
     {
       slug: "written-by-himself",

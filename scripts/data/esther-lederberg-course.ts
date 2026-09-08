@@ -1506,5 +1506,1086 @@ Wendling, C. C., & Bailey, Z. M. (2025). Pioneer of bacterial genetics: The lega
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — The credit question, taught from two documents
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-paper-and-the-prize",
+      title: "5 \u00b7 Who is on the paper, and who is on the prize",
+      section: "Section 3 · The paper, the prize, and what the record supports",
+      body: `Two documents settle most of what can honestly be said here, and they say different things. Read them in order.
+
+**Document one: the paper.** The technique this course spent two sections on was published as **Lederberg, J., and Lederberg, E. M. (1952). Replica plating and indirect selection of bacterial mutants. *Journal of Bacteriology*, 63(3), 399-406.** Esther Lederberg is a **named co-author**, second of two.
+
+**Say plainly what that rules out.** The common shape of an attribution story is that a woman's name was left off the work. **That is not what happened here, and a course that implied it would be wrong on the primary document.** Her name is on the paper. Anyone can check it, and this course expects you to.
+
+**Document two: the prize.** The 1958 Nobel Prize in Physiology or Medicine was divided. One half went jointly to **George Wells Beadle and Edward Lawrie Tatum**, "for their discovery that genes act by regulating definite chemical events". The other half went to **Joshua Lederberg**, "for his discoveries concerning genetic recombination and the organization of the genetic material of bacteria".
+
+**Now put the two side by side, because that is where the question actually lives.** The prize half names a domain: genetic recombination and the organization of the genetic material of bacteria. The 1952 paper sits inside that domain, and it carries two names. The prize carries one.
+
+**What a Nobel citation is, and is not.** It names individuals, and its rules limit how many. It is not a bibliography and it does not purport to list everyone whose work supported the finding. So the gap between a two-author paper and a one-name prize is **not by itself evidence of anything improper**: it is the ordinary arithmetic of a prize that names people rather than papers.
+
+**Which is exactly why the interesting question is narrower and answerable.** Not "was the prize wrongly awarded", which no document here settles. But: when the technique is described in textbooks, in obituaries, in the ordinary telling, **whose name travels with it?** That is a question about the record after the prize, and it is the question Section 3's second lesson takes up.
+
+:::reveal Is Esther Lederberg a named author on the 1952 replica plating paper? ||| Yes, second of two authors. The story that a woman's name was left off the work does not fit this case, and the course says so from the primary document.
+
+:::reveal Why is the gap between a two-author paper and a one-name prize not by itself evidence of wrongdoing? ||| Because a Nobel citation names individuals under rules that limit how many, and it is not a bibliography. The gap is the ordinary arithmetic of the prize, so the answerable question is what happened to the record afterwards.
+
+## Vocabulary
+- **Co-author**: a named author on a publication, which is a matter of printed record rather than of recollection.
+- **Nobel citation**: the wording that states what a prize was awarded for, and which names individuals rather than listing contributors.
+- **Divided prize**: an award split between laureates, here one half jointly and one half singly.
+- **Primary document**: the paper or the citation itself, as opposed to an account of it.
+
+## Sources
+Lederberg, J., & Lederberg, E. M. (1952). Replica plating and indirect selection of bacterial mutants. *Journal of Bacteriology, 63*(3), 399-406. https://pubmed.ncbi.nlm.nih.gov/14927572/
+The Nobel Prize in Physiology or Medicine 1958. NobelPrize.org. https://www.nobelprize.org/prizes/medicine/1958/summary/`,
+    },
+    {
+      slug: "the-matilda-effect-and-its-limits",
+      title: "6 \u00b7 The Matilda effect, and what this case does and does not prove",
+      section: "Section 3 · The paper, the prize, and what the record supports",
+      body: `There is a named, citable concept for what this course has been circling, and using it precisely is better than using it loudly.
+
+**The Matilda effect** is the historian Margaret Rossiter's term for the systematic under-recognition of women's contributions in science, where credit accrues to more prominent collaborators. It is the counterpart to Robert Merton's **Matthew effect**, in which recognition flows to those who already have it. **Rossiter named the Matilda effect for Matilda Joslyn Gage**, a suffragist who had described the pattern in the nineteenth century, which is itself a small demonstration of the thing.
+
+**Why the concept fits this case better than an accusation would.** The Matilda effect is a claim about a *pattern in the record*, not a claim that any particular committee acted in bad faith. It predicts that when a woman and a more prominent man work together, the ordinary telling will drift toward the man over time, without anyone deciding that it should. That is a claim you can check against later documents rather than a motive you have to assume.
+
+**What this case supports.** A co-authored technique whose author list is available to anyone; a prize half awarded to one of those two authors; and a subsequent record in which the technique is very frequently attached to the more famous name alone. The pattern is the evidence, and it is checkable.
+
+**What this case does NOT support, and the course will not say.** That the prize was wrongly awarded. That the committee acted improperly. That Joshua Lederberg claimed sole authorship of the technique, which the 1952 paper's own author list refutes. **A course that reached for those claims would be doing to the evidence exactly what it accuses the record of doing.**
+
+**The harder point, which is the one worth carrying.** Under-recognition rarely requires anyone to lie. It happens through a thousand ordinary compressions: a textbook sentence with room for one name, an obituary that leads with the prize, a lecture that says "Lederberg" and means one of them. **Each compression is individually defensible and the aggregate is a false record.** That is why the Matilda effect is described as an effect rather than an act.
+
+**And the practical skill.** When you meet an attribution claim, ask what document would settle it, then go and look. Here that was two documents and both were reachable in minutes. Most attribution arguments are lost not because the evidence is missing but because nobody checks.
+
+:::reveal What is the Matilda effect, and whom is it named for? ||| Margaret Rossiter's term for the systematic under-recognition of women's scientific contributions, where credit accrues to more prominent collaborators. It is named for Matilda Joslyn Gage, who described the pattern in the nineteenth century.
+
+:::reveal What does this case NOT establish? ||| That the prize was wrongly awarded, that the committee acted improperly, or that Joshua Lederberg claimed the technique alone, which the 1952 author list refutes.
+
+:::reveal Why is under-recognition described as an effect rather than an act? ||| Because it happens through many individually defensible compressions, a textbook line with room for one name, an obituary that leads with the prize, and the false record is the aggregate rather than anyone's decision.
+
+## Vocabulary
+- **Matilda effect**: Rossiter's term for systematic under-recognition of women's scientific work, credit drifting to prominent collaborators.
+- **Matthew effect**: Merton's counterpart, in which recognition flows toward those who already have it.
+- **Compression**: the ordinary shortening of a story that drops names, defensible each time and cumulative in effect.
+- **Checkable pattern**: a claim about the record that can be tested against documents rather than requiring a motive to be assumed.
+
+## Sources
+Lederberg, J., & Lederberg, E. M. (1952). Replica plating and indirect selection of bacterial mutants. *Journal of Bacteriology, 63*(3), 399-406. https://pubmed.ncbi.nlm.nih.gov/14927572/
+The Nobel Prize in Physiology or Medicine 1958. NobelPrize.org. https://www.nobelprize.org/prizes/medicine/1958/summary/`,
+    },
+    {
+      slug: "section-3-quiz",
+      title: "Section 3 quiz \u00b7 The paper, the prize, and the record",
+      section: "Section 3 · The paper, the prize, and what the record supports",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Is Esther Lederberg a named author on the 1952 replica plating paper?",
+            options: [
+              "Yes, second of two",
+              "No, she is thanked in the acknowledgements",
+              "No, her name was removed before publication",
+              "Only in a later corrected reprint",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The story that a woman's name was left off the work does not fit this case, and the course says so from the printed author list.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "How was the 1958 Nobel Prize in Physiology or Medicine divided?",
+            options: [
+              "Half jointly to Beadle and Tatum, half to Joshua Lederberg",
+              "Equally among three laureates",
+              "Half to Joshua Lederberg and half to Esther Lederberg",
+              "Wholly to Beadle and Tatum",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The citation for Joshua Lederberg's half reads: for his discoveries concerning genetic recombination and the organization of the genetic material of bacteria.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What does a Nobel citation name?",
+            options: [
+              "Individuals, under rules limiting how many",
+              "Every contributor to the finding",
+              "The papers the prize rests on",
+              "The institution where the work was done",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is why it is not a bibliography, and why the gap between a two-author paper and a one-name prize is ordinary arithmetic rather than evidence of wrongdoing.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "Which journal published the replica plating paper?",
+            options: [
+              "Journal of Bacteriology",
+              "Nature",
+              "Science",
+              "Proceedings of the National Academy of Sciences",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Volume 63, issue 3, pages 399 to 406, in March 1952.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What is the answerable question this course substitutes for whether the prize was wrongly awarded?",
+            options: [
+              "Whose name travels with the technique afterwards",
+              "Whether the committee had a quota",
+              "Which author did more of the bench work",
+              "Whether the paper should have had one author",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is a question about the record after the prize, and it can be checked against later documents.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "Why does the course put the paper and the citation side by side?",
+            options: [
+              "The prize half names the domain the paper sits inside",
+              "To show the paper was published later",
+              "To compare their page counts",
+              "Because the citation quotes the paper",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The prize half names genetic recombination and the organization of bacterial genetic material; the 1952 paper sits inside that domain and carries two names.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What is the Matilda effect?",
+            options: [
+              "Systematic under-recognition of women's scientific work",
+              "A rule limiting Nobel laureates to three",
+              "The tendency of prizes to go to older scientists",
+              "A method for allocating authorship order",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Margaret Rossiter's term for credit accruing to more prominent collaborators.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Whom is the Matilda effect named for?",
+            options: [
+              "Matilda Joslyn Gage",
+              "Matilda Rossiter",
+              "Matilda Lederberg",
+              "Matilda Merton",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Gage, a suffragist, had described the pattern in the nineteenth century, which is itself a small demonstration of the thing.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What is the Matthew effect?",
+            options: [
+              "Recognition flowing to those who already have it",
+              "Credit being split evenly among collaborators",
+              "The loss of records after a scientist's death",
+              "The tendency of techniques to be renamed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Merton's concept, and the counterpart the Matilda effect was named against.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Which of these does this case NOT establish?",
+            options: [
+              "That the prize was wrongly awarded",
+              "That the technique was co-authored",
+              "That the prize half went to one of those authors",
+              "That the technique is often attached to one name afterwards",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No document here settles whether the award was wrong, and a course claiming it would be doing to the evidence what it accuses the record of doing.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Why is under-recognition called an effect rather than an act?",
+            options: [
+              "It arises from many individually defensible compressions",
+              "Because it is always accidental",
+              "Because no one is ever responsible",
+              "Because it only happens after death",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A textbook line with room for one name, an obituary leading with the prize: each is defensible and the aggregate is a false record.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What does the Matilda effect claim about?",
+            options: [
+              "A pattern in the record",
+              "The motives of a specific committee",
+              "The relative skill of collaborators",
+              "The fairness of peer review",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A pattern can be checked against documents; a motive has to be assumed, which is why the concept is the more useful tool.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What is the practical skill this section teaches?",
+            options: [
+              "Ask what document would settle the claim, then look",
+              "Assume the more famous name took credit",
+              "Count authors on every paper you read",
+              "Prefer obituaries to primary sources",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both documents in this case were reachable in minutes. Most attribution arguments are lost because nobody checks, not because evidence is missing.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What refutes the idea that Joshua Lederberg claimed the technique alone?",
+            options: [
+              "The 1952 paper's own author list",
+              "The Nobel citation wording",
+              "A later retraction",
+              "Correspondence in an archive",
+            ],
+            correctIndex: 0,
+            explanation:
+              "His name and hers are both printed on it, which is a matter of record rather than recollection.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What kind of claim is a compression, as the lesson uses the term?",
+            options: [
+              "An ordinary shortening that drops a name",
+              "A deliberate falsification",
+              "A statistical correction",
+              "A formal erratum",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each is defensible on its own, which is precisely why the cumulative effect goes unnoticed.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Which pairing is correct?",
+            options: [
+              "Rossiter, Matilda effect; Merton, Matthew effect",
+              "Merton, Matilda effect; Rossiter, Matthew effect",
+              "Both terms are Rossiter's",
+              "Both terms are Merton's",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Rossiter named the Matilda effect explicitly as a counterpart to Merton's Matthew effect.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What did the course spend its first two sections on, before raising credit at all?",
+            options: [
+              "The technique and what it settled",
+              "The Nobel committee's rules",
+              "The Lederberg marriage",
+              "The history of bacteriology",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Teaching the technique first is what lets the attribution question follow from the record instead of from the biography.",
+            sourceLessonSlug: "replica-plating-the-method",
+          },
+          {
+            prompt: "Why does the order of this course matter to its argument?",
+            options: [
+              "The work has to be understood before its credit can be weighed",
+              "Chronology is required by the format",
+              "The quiz depends on it",
+              "Sources are cited in that order",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A reader who does not know what replica plating settled cannot judge what its attribution is worth.",
+            sourceLessonSlug: "what-replica-plating-settled",
+          },
+          {
+            prompt: "Which volume and pages carry the replica plating paper?",
+            options: [
+              "63(3), 399-406",
+              "58(1), 12-24",
+              "71(2), 200-215",
+              "49(4), 501-509",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Journal of Bacteriology, March 1952. The specificity is the point: a reader can go and check it.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What is the author order on that paper?",
+            options: [
+              "Joshua Lederberg then Esther Lederberg",
+              "Esther Lederberg then Joshua Lederberg",
+              "Alphabetical by first name",
+              "No order is given",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She is second of two, which is a fact of the printed record rather than of anyone's memory.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What does the phrase primary document mean here?",
+            options: [
+              "The paper or citation itself, not an account of it",
+              "The earliest source on a topic",
+              "A source held in an archive",
+              "A peer-reviewed source",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The whole method of this section is to go to the document rather than to the retelling.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What would a course be doing if it claimed her name was left off the paper?",
+            options: [
+              "Getting the primary document wrong",
+              "Simplifying acceptably",
+              "Following the standard account",
+              "Protecting her reputation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Her name is printed on it, and the course expects the reader to check.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "Why does the course call the one-name prize ordinary arithmetic?",
+            options: [
+              "A citation names individuals under numeric limits",
+              "Prizes are awarded alphabetically",
+              "Papers always have more authors than prizes",
+              "The committee explained its reasoning",
+            ],
+            correctIndex: 0,
+            explanation:
+              "So the gap alone establishes nothing improper, which is why the course looks at the later record instead.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What domain does Joshua Lederberg's prize half name?",
+            options: [
+              "Genetic recombination and the organization of bacterial genetic material",
+              "Replica plating and indirect selection",
+              "Lambda phage and lysogeny",
+              "Gene regulation of chemical events",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The last of those is Beadle and Tatum's half. The domain named is broad enough to contain the 1952 paper.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What year was the prize awarded?",
+            options: [
+              "1958",
+              "1952",
+              "1946",
+              "1962",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1952 is the replica plating paper; the prize came six years later.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What is the relationship between the 1952 paper and the 1958 citation?",
+            options: [
+              "The paper sits inside the domain the citation names",
+              "The citation quotes the paper",
+              "They are unrelated",
+              "The paper was published because of the prize",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is exactly why placing them side by side is the honest way to raise the credit question.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "Which is a fair summary of what the two documents jointly show?",
+            options: [
+              "A co-authored technique and a prize half naming one author",
+              "A stolen technique",
+              "An uncredited woman",
+              "A disputed authorship",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both documents are public and neither supports the stronger readings.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What did Rossiter name the Matilda effect against?",
+            options: [
+              "Merton's Matthew effect",
+              "The Nobel statutes",
+              "Gage's own theory",
+              "The Journal of Bacteriology",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pairing is deliberate: one describes accumulation of credit, the other its loss.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What does the Matthew effect describe?",
+            options: [
+              "Credit flowing to the already recognised",
+              "Credit being divided by seniority",
+              "Recognition arriving only posthumously",
+              "Prizes going to institutions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Matilda effect is its counterpart and was named as such.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Why does the lesson prefer a pattern claim to a motive claim?",
+            options: [
+              "A pattern can be tested against documents",
+              "Motives are always unknowable",
+              "Patterns are more serious",
+              "Documents rarely record motives",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You do not have to assume anyone acted badly to show that the record drifted.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Which is an example of a compression, as the lesson uses it?",
+            options: [
+              "A textbook sentence with room for one name",
+              "A deliberately falsified citation",
+              "A retracted paper",
+              "An anonymous review",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Each compression is individually defensible, and the aggregate is a false record.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What does the course say most attribution arguments are lost for want of?",
+            options: [
+              "Someone checking",
+              "Better archives",
+              "Legal standing",
+              "Expert testimony",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both documents in this case were reachable in minutes.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Who was Matilda Joslyn Gage?",
+            options: [
+              "A suffragist who described the pattern in the nineteenth century",
+              "A bacteriologist",
+              "A Nobel committee member",
+              "Rossiter's collaborator",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That her own description of the pattern is little remembered is a small demonstration of the pattern.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What does the course refuse to infer from the prize?",
+            options: [
+              "Anything about the committee's conduct",
+              "That the paper had two authors",
+              "That the technique was important",
+              "That the citation names a domain",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No document reached here settles it, so the course does not assert it.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "How does teaching the technique first change the argument?",
+            options: [
+              "The attribution question follows from the work",
+              "It lengthens the course",
+              "It satisfies a standards requirement",
+              "It avoids the marriage entirely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A reader who does not understand replica plating cannot judge what its attribution is worth.",
+            sourceLessonSlug: "what-replica-plating-settled",
+          },
+          {
+            prompt: "What is the trap this course was built to avoid?",
+            options: [
+              "Defining her by her marriage",
+              "Overstating the technique",
+              "Citing only secondary sources",
+              "Naming the Matilda effect",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The organizing question is the record: what she made, and what proximity to a more-credited collaborator did to the visibility of that work.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+        ],
+      },
+    },
+    {
+      slug: "esther-lederberg-final",
+      title: "Final assessment \u00b7 Esther Lederberg",
+      section: "Final assessment",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is replica plating used for?",
+            options: [
+              "Transferring a colony pattern between plates",
+              "Sequencing bacterial genomes, which the 1952 methods could not do at any scale",
+              "Measuring bacterial growth rate",
+              "Staining cell walls",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It reproduces the spatial arrangement of colonies onto fresh media, which is what makes indirect selection possible.",
+            sourceLessonSlug: "replica-plating-the-method",
+          },
+          {
+            prompt: "Is Esther Lederberg named on the 1952 paper?",
+            options: [
+              "Yes, as second author",
+              "No",
+              "Only in the acknowledgements",
+              "Only in a later edition",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The printed author list is the primary document, and it refutes the common shape of the story.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "Who received the other half of the 1958 Nobel Prize?",
+            options: [
+              "Beadle and Tatum, jointly",
+              "Esther Lederberg",
+              "Zinder",
+              "No one; it was a single award",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Their half was for the discovery that genes act by regulating definite chemical events.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What was Joshua Lederberg's half awarded for?",
+            options: [
+              "Recombination and bacterial genetic organization",
+              "Replica plating specifically",
+              "The discovery of lambda phage",
+              "Antibiotic resistance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The citation names a domain rather than a single technique, which is why the paper sits inside it.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What is the Matilda effect named for?",
+            options: [
+              "Matilda Joslyn Gage",
+              "Its discoverer Matilda Rossiter",
+              "A laboratory strain",
+              "The Matthew gospel",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Gage described the pattern in the nineteenth century and then largely dropped out of the telling of it.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Which claim does this course explicitly refuse?",
+            options: [
+              "That the prize was wrongly awarded",
+              "That the paper had two authors",
+              "That the Matilda effect is real",
+              "That the technique mattered",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No document reached here settles it, and asserting it would repeat the failure the course teaches.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What is the counterpart concept to the Matilda effect?",
+            options: [
+              "The Matthew effect",
+              "The Merton correction",
+              "The Gage principle",
+              "The Rossiter rule",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Merton's term for recognition flowing to those who already have it.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Why is a Nobel citation not a bibliography?",
+            options: [
+              "It names individuals under rules limiting how many",
+              "It is written after the fact",
+              "It omits the year",
+              "It is not peer reviewed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "So a one-name prize beside a two-author paper is ordinary arithmetic, not evidence of impropriety.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What does the course teach before it raises credit?",
+            options: [
+              "The technique and what it settled",
+              "The Nobel rules",
+              "Rossiter's biography",
+              "The journal's history",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That order is what keeps the attribution question grounded in the work rather than in the marriage.",
+            sourceLessonSlug: "what-replica-plating-settled",
+          },
+          {
+            prompt: "What is the practical skill the final section leaves you with?",
+            options: [
+              "Ask which document would settle it, then look",
+              "Trust the most cited account",
+              "Count the authors",
+              "Prefer the more famous name",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both documents in this case were reachable in minutes.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "In which journal and year did replica plating appear?",
+            options: [
+              "Journal of Bacteriology, 1952",
+              "Nature, 1958",
+              "Science, 1946",
+              "PNAS, 1951",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Volume 63, issue 3, pages 399 to 406.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What makes the Matilda effect checkable rather than speculative?",
+            options: [
+              "It is a claim about a pattern in the record",
+              "It names a responsible party",
+              "It is supported by committee minutes",
+              "It applies only to Nobel prizes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Patterns can be tested against documents; motives have to be assumed.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What does replica plating transfer between plates?",
+            options: [
+              "The spatial pattern of colonies",
+              "A single purified colony",
+              "Liquid growth medium",
+              "Extracted DNA",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Preserving the arrangement is what makes indirect selection possible.",
+            sourceLessonSlug: "replica-plating-the-method",
+          },
+          {
+            prompt: "What is indirect selection?",
+            options: [
+              "Finding mutants without exposing the originals",
+              "Selecting by colony colour, which requires a chromogenic medium the paper never used",
+              "Choosing colonies at random",
+              "Selecting after sequencing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The replica carries the exposure; the original plate keeps the untouched cells.",
+            sourceLessonSlug: "what-replica-plating-settled",
+          },
+          {
+            prompt: "Which paper introduced replica plating?",
+            options: [
+              "Lederberg and Lederberg, 1952",
+              "Lederberg and Zinder 1952, which is the Salmonella genetic-exchange paper in the same volume",
+              "Beadle and Tatum, 1941",
+              "Lederberg and Tatum, 1946",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Journal of Bacteriology 63(3), 399-406.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What is lambda?",
+            options: [
+              "A bacteriophage Esther Lederberg discovered",
+              "A bacterial strain isolated at Stanford and distributed through the standard collections",
+              "A selection medium",
+              "A plating apparatus",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its discovery opened the study of lysogeny.",
+            sourceLessonSlug: "the-plaques-that-should-not-have-been-there",
+          },
+          {
+            prompt: "What did the plaques indicate?",
+            options: [
+              "Phage activity where none was expected",
+              "Contamination of the medium, which would have shown as growth across the whole plate",
+              "A failed transfer",
+              "Mutant colonies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The observation is the origin of the lambda work.",
+            sourceLessonSlug: "the-plaques-that-should-not-have-been-there",
+          },
+          {
+            prompt: "What is lysogeny?",
+            options: [
+              "A phage persisting rather than lysing at once",
+              "The death of a bacterial colony once the selective agent reaches a threshold concentration",
+              "A method of plating",
+              "A form of genetic recombination",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Lambda made it studyable.",
+            sourceLessonSlug: "what-lambda-made-possible",
+          },
+          {
+            prompt: "Which two documents does Section 3 rest on?",
+            options: [
+              "The 1952 paper and the 1958 Nobel citation",
+              "Two obituaries published decades later in the same specialist journal",
+              "A patent and a paper",
+              "Committee minutes and a letter",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both are public and both were checked rather than recalled.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "Where is Esther Lederberg on the 1952 author list?",
+            options: [
+              "Second of two",
+              "First of two",
+              "Absent",
+              "In the acknowledgements",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That printed fact rules out the most common shape of the story.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "How was the 1958 prize divided?",
+            options: [
+              "Half to Beadle and Tatum, half to Lederberg",
+              "Three equal shares, which is the arrangement the statutes permit but not the one used here",
+              "Two equal shares between the Lederbergs",
+              "Undivided",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The citations for the two halves name different things.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What were Beadle and Tatum cited for?",
+            options: [
+              "That genes act by regulating chemical events",
+              "Genetic recombination in bacteria, which is the wording of the other half of the same prize",
+              "Replica plating",
+              "Lysogeny",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The second of those is Joshua Lederberg's half.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What is a Nobel citation?",
+            options: [
+              "What the prize was awarded for, naming people",
+              "A list of every contributor whose work the committee reviewed before deciding",
+              "A bibliography of the work",
+              "A summary of the field",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its numeric limits are why a one-name prize beside a two-author paper proves nothing on its own.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What question does the course substitute for whether the prize was wrong?",
+            options: [
+              "Whose name travels with the technique afterwards",
+              "Who did more bench work, which no surviving laboratory record settles either way",
+              "Whether the committee was biased",
+              "Whether the paper should have had one author",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That question is answerable from later documents.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What is the Matilda effect?",
+            options: [
+              "Under-recognition of women's scientific work",
+              "A rule of Nobel arithmetic",
+              "A bacterial naming convention",
+              "A method of authorship ordering",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Rossiter's term, with credit accruing to more prominent collaborators.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What is the Matthew effect?",
+            options: [
+              "Recognition flowing to the already recognised",
+              "Recognition arriving late, typically only after a scientist has died",
+              "Credit split by seniority",
+              "Credit assigned by institution",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Merton's concept, and the one Rossiter named hers against.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Whom is the Matilda effect named for?",
+            options: [
+              "Matilda Joslyn Gage",
+              "Margaret Rossiter, who proposed the term rather than being its namesake",
+              "Matilda Lederberg",
+              "Robert Merton",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Gage described the pattern in the nineteenth century.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Why is under-recognition an effect rather than an act?",
+            options: [
+              "It aggregates from many defensible compressions",
+              "It is always accidental, requiring no participants and no decisions at any point",
+              "It requires no participants",
+              "It happens only posthumously",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No one has to decide that the record should drift for it to drift.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "Which claim does the course explicitly decline to make?",
+            options: [
+              "That the prize was wrongly awarded",
+              "That the technique was co-authored",
+              "That the Matilda effect is a real pattern",
+              "That the 1952 paper is checkable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Declining it is what keeps the course from doing to the evidence what it accuses the record of doing.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What refutes the claim that Joshua Lederberg took sole credit for the technique?",
+            options: [
+              "The 1952 author list",
+              "The Nobel citation, which names a domain rather than listing any technique",
+              "A published apology",
+              "An archival letter",
+            ],
+            correctIndex: 0,
+            explanation:
+              "His name and hers are both on it.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What is a compression?",
+            options: [
+              "An ordinary shortening that drops a name",
+              "A deliberate lie told to secure priority over a rival laboratory",
+              "A statistical adjustment",
+              "A formal correction",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Defensible individually, false in aggregate.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What order does this course teach in, and why?",
+            options: [
+              "Technique first, credit second, so the question follows from the work",
+              "Credit first, to frame the technique",
+              "Chronologically by publication",
+              "By source availability",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Understanding what replica plating settled is what makes its attribution worth arguing about.",
+            sourceLessonSlug: "what-replica-plating-settled",
+          },
+          {
+            prompt: "What is the practical skill the course leaves you with?",
+            options: [
+              "Ask which document would settle the claim, then look",
+              "Trust the most-cited version",
+              "Assume the famous name took credit",
+              "Count authors",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most attribution arguments are lost because nobody checks.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What kind of claim can be tested against documents?",
+            options: [
+              "A claim about a pattern in the record",
+              "A claim about a committee's motives",
+              "A claim about someone's intentions",
+              "A claim about what might have happened",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why the Matilda effect is the useful frame here.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What does the course say a Nobel citation is NOT?",
+            options: [
+              "A bibliography",
+              "A public document",
+              "A statement of what was awarded",
+              "Limited in how many it names",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It names individuals under rules, and does not purport to list contributors.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "Which is true of the 1952 paper?",
+            options: [
+              "It is co-authored and publicly checkable",
+              "It was retracted",
+              "It named three authors",
+              "It appeared after the prize",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Public and checkable is the point: the course invites verification rather than asking for trust.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What did the course establish before raising the Nobel at all?",
+            options: [
+              "What the technique was and what it settled",
+              "The Lederbergs' biographies",
+              "The committee's composition",
+              "Rossiter's career",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two full sections of it.",
+            sourceLessonSlug: "replica-plating-the-method",
+          },
+          {
+            prompt: "Why is naming the concept better than making an accusation?",
+            options: [
+              "It states a checkable pattern rather than an assumed motive",
+              "Accusations are legally risky",
+              "Concepts are more persuasive",
+              "It avoids naming anyone",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pattern is the evidence, and it survives without anyone having behaved badly.",
+            sourceLessonSlug: "the-matilda-effect-and-its-limits",
+          },
+          {
+            prompt: "What is the relationship between the two Lederberg papers this course cites?",
+            options: [
+              "Both are primary documents the reader can retrieve",
+              "One supersedes the other",
+              "One retracts the other",
+              "They contradict each other",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Retrievability is what the course's whole method depends on.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+          {
+            prompt: "What would a reader need to check the course's central claim?",
+            options: [
+              "The 1952 author list and the 1958 citation",
+              "Committee correspondence",
+              "An interview with a laureate",
+              "A textbook summary",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both were reachable in minutes when this course was written.",
+            sourceLessonSlug: "the-paper-and-the-prize",
+          },
+        ],
+      },
+    },
   ],
 };
