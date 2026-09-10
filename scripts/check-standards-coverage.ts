@@ -157,6 +157,10 @@ const BACKLOG: Record<string, string> = {
     "UNMAPPED, and a genuine candidate. The spine is statutory history, which sits close to civics and US-history standards on how law changes what counts as property. Not claimed until the mapping is done properly.",
   "the-paper-and-the-prize":
     "UNMAPPED, and a genuine candidate. Genetics, experimental method and evaluating sources against claims all appear in science and ELA standards. Not claimed until the mapping is done properly.",
+  "construction-safety":
+    "PRIVATE study support, not published. Built from 29 CFR 1926 rather than a curriculum, and held for BAM alone while he takes a construction course elsewhere. No educator can see it, so there is nobody to make a standards promise to.",
+  "construction-math":
+    "PRIVATE study support, not published. The mathematics genuinely maps to middle-grades measurement and geometry standards, so this is a real candidate IF it is ever made public. It is not, so no claim is made.",
   "ecs-neuroscience":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
   "bvc-taster-coffee":

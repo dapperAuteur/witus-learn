@@ -16,6 +16,8 @@ import { DOCUMENTARY_COURSE } from "./data/documentary-course";
 import { ORAL_HISTORY_COURSE } from "./data/oral-history-course";
 import { DIGITAL_SOCIAL_STORYTELLING_COURSE } from "./data/digital-social-storytelling-course";
 import { MOCKUMENTARY_COURSE } from "./data/mockumentary-course";
+import { CONSTRUCTION_SAFETY_COURSE } from "./data/construction-safety-course";
+import { CONSTRUCTION_MATH_COURSE } from "./data/construction-math-course";
 import { DEAF_AMERICA_COURSE } from "./data/deaf-america-course";
 import { BLIND_AND_LOW_VISION_AMERICA_COURSE } from "./data/blind-and-low-vision-america-course";
 import { WRITING_POEMS_AND_SONGS_COURSE } from "./data/writing-poems-and-songs-course";
@@ -322,6 +324,45 @@ async function main() {
   // flip later is done in the admin UI and survives re-seeds. Free is a decision here, not an
   // oversight: a course about a community that has been charged for access to its own history
   // should not be one more toll gate.
+  // CONSTRUCTION STUDY SERIES — PRIVATE and FREE, and it must stay that way. BAM is taking the
+  // Construction Training course at John Boner Neighborhood Centers, Indianapolis; these support him
+  // while he does it. They are NOT NCCER courses, satisfy no requirement, earn no credential and
+  // substitute for nothing his instructor does, which lesson 1 of each states in its own words.
+  //
+  // WHY THEY ARE BUILT FROM PUBLIC SOURCES rather than from the NCCER/Pearson books BAM owns:
+  // course data files are TRACKED IN GIT, so `visibility: "private"` protects the app, not the text.
+  // Safety is taught from 29 CFR 1926, which is public domain and is the actual source of the
+  // subject; the maths is taught from first principles with our own examples. Nothing is
+  // paraphrased from the books. See plans/84 and
+  // content/construction/00-READ-ME-FIRST-private-study-only.md.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "construction-safety",
+    course: CONSTRUCTION_SAFETY_COURSE,
+    category: "Science & Math",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study support while BAM takes the Construction Training course at John Boner Neighborhood Centers. Not an NCCER course, not OSHA 10 or 30. The regulation is authoritative, not this.",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "construction-math",
+    course: CONSTRUCTION_MATH_COURSE,
+    category: "Science & Math",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study support while BAM takes the Construction Training course at John Boner Neighborhood Centers. Not an NCCER course and earns no credential.",
+  });
+
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
