@@ -151,6 +151,10 @@ const BACKLOG: Record<string, string> = {
     "PRIVATE university-level study course. No K-12 standard describes it and no educator can see it. Revisit only at a public flip.",
   "computational-climate-tools-foundations":
     "PRIVATE university-level study course. Earth and space science standards DO touch climate, so this is the likeliest of the four to carry a real alignment one day, but not while it is private.",
+  "construction-safety":
+    "PRIVATE study support, not published. Built from 29 CFR 1926 rather than a curriculum, and held for BAM alone while he takes a construction course elsewhere. No educator can see it, so there is nobody to make a standards promise to.",
+  "construction-math":
+    "PRIVATE study support, not published. The mathematics genuinely maps to middle-grades measurement and geometry standards, so this is a real candidate IF it is ever made public. It is not, so no claim is made.",
   "ecs-neuroscience":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
   "bvc-taster-coffee":
