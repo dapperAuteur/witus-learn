@@ -28,7 +28,17 @@ export interface CatalogQuery {
 export async function listCourses(tenantId: string, opts: CatalogQuery = {}): Promise<Course[]> {
   const conds: SQL[] = [eq(courses.tenantId, tenantId)];
   if (!opts.includeUnpublished) conds.push(eq(courses.isPublished, true));
-  if (opts.category) conds.push(eq(courses.category, opts.category));
+  // A course is listed under its primary category AND each of its additional ones
+  // (src/lib/course-categories.ts). Still inside the tenant condition above, so an extra category
+  // named on another brand's course can never pull that course onto this brand's page.
+  if (opts.category) {
+    conds.push(
+      or(
+        eq(courses.category, opts.category),
+        sql`${opts.category} = ANY(${courses.additionalCategories})`,
+      ) as SQL,
+    );
+  }
   if (opts.seriesSlug) conds.push(eq(courses.seriesSlug, opts.seriesSlug));
   if (opts.featured) conds.push(eq(courses.isFeatured, true));
   if (opts.q) {
