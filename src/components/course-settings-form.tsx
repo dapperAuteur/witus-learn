@@ -6,11 +6,14 @@ import { estimatedFee, estimatedNet } from "@/lib/fees";
 import { CROSS_PROMO_PRODUCTS } from "@/lib/ecosystem";
 import { assessPriceChange, type PriceState } from "@/lib/price-change";
 import { PriceChangeConfirm, type PriceChangeItem } from "@/components/price-change-confirm";
+import { MAX_ADDITIONAL_CATEGORIES } from "@/lib/course-categories";
 
 export interface CourseSettings {
   title: string;
   description: string | null;
   category: string | null;
+  /** Extra categories the course also appears under (src/lib/course-categories.ts). */
+  additionalCategories: string[];
   navigationMode: "linear" | "cyoa";
   visibility: "public" | "members" | "scheduled" | "private";
   isPublished: boolean;
@@ -165,6 +168,14 @@ export function CourseSettingsForm({
 
   const field = "min-h-11 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900";
 
+  // The school's categories plus any extra this course already carries (a seeded name may not be in
+  // the category list yet, and it must stay visible so it can be unticked), minus the primary: a
+  // course is never listed twice in one category.
+  const primary = v.category?.trim() ?? "";
+  const extraCategoryOptions = [...new Set([...categories, ...v.additionalCategories])].filter(
+    (name) => name && name !== primary,
+  );
+
   return (
     <form onSubmit={save} className="space-y-4 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <h2 className="font-semibold">Course settings</h2>
@@ -182,7 +193,23 @@ export function CourseSettingsForm({
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label className="text-sm font-medium" htmlFor="cs-cat">Category</label>
-          <input id="cs-cat" list="cs-cat-options" value={v.category ?? ""} onChange={(e) => set("category", e.target.value)} maxLength={120} className={field} placeholder="Pick or type a category" />
+          <input
+            id="cs-cat"
+            list="cs-cat-options"
+            value={v.category ?? ""}
+            onChange={(e) => {
+              set("category", e.target.value);
+              // Promoting an extra to the main category removes it from the extras, the same rule
+              // the server applies, so the form never shows a course listed twice in one category.
+              const next = e.target.value.trim();
+              if (v.additionalCategories.includes(next)) {
+                set("additionalCategories", v.additionalCategories.filter((c) => c !== next));
+              }
+            }}
+            maxLength={120}
+            className={field}
+            placeholder="Pick or type a category"
+          />
           <datalist id="cs-cat-options">
             {categories.map((name) => (
               <option key={name} value={name} />
@@ -206,6 +233,41 @@ export function CourseSettingsForm({
           </select>
         </div>
       </div>
+
+      {extraCategoryOptions.length > 0 ? (
+        <fieldset className="rounded-md border border-neutral-200 p-3 dark:border-neutral-800">
+          <legend className="px-1 text-sm font-medium">Also appears in</legend>
+          <p className="text-xs text-neutral-600 dark:text-neutral-400">
+            Up to {MAX_ADDITIONAL_CATEGORIES} more categories this course is listed under. The
+            Category above stays the main one: it decides where the course sorts and what its share
+            card says.
+          </p>
+          <div className="mt-2 grid gap-x-3 sm:grid-cols-2">
+            {extraCategoryOptions.map((name) => {
+              const checked = v.additionalCategories.includes(name);
+              const atLimit = v.additionalCategories.length >= MAX_ADDITIONAL_CATEGORIES;
+              return (
+                <label key={name} className="flex min-h-11 items-center gap-2 text-sm">
+                  <input
+                    type="checkbox"
+                    checked={checked}
+                    disabled={!checked && atLimit}
+                    onChange={(e) =>
+                      set(
+                        "additionalCategories",
+                        e.target.checked
+                          ? [...v.additionalCategories, name]
+                          : v.additionalCategories.filter((c) => c !== name),
+                      )
+                    }
+                  />
+                  {name}
+                </label>
+              );
+            })}
+          </div>
+        </fieldset>
+      ) : null}
 
       {canAssignInstructor ? (
         <div>
