@@ -155,6 +155,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             title: course.title,
             description: course.description,
             category: course.category,
+            additionalCategories: course.additionalCategories ?? [],
             navigationMode: course.navigationMode as "linear" | "cyoa",
             visibility: course.visibility as "public" | "members" | "scheduled" | "private",
             isPublished: course.isPublished,

@@ -6,6 +6,7 @@ import { reindexCourseEmbeddings } from "@/lib/ai/reindex";
 import { countActiveEnrollments } from "@/db/queries/enrollment";
 import { hasStripe } from "@/lib/env";
 import { assessPriceChange, type PriceType } from "@/lib/price-change";
+import { normalizeAdditionalCategories } from "@/lib/course-categories";
 import {
   deleteCourse,
   ensureUsernameById,
@@ -30,6 +31,9 @@ const PatchSchema = z.object({
   title: z.string().min(1).max(200).optional(),
   description: z.string().max(5000).nullable().optional(),
   category: z.string().max(120).nullable().optional(),
+  // Extra categories the course also appears under. Loose here on purpose: the handler normalises
+  // (trims, dedupes, drops the primary, caps at MAX_ADDITIONAL_CATEGORIES) rather than rejecting.
+  additionalCategories: z.array(z.string().max(120)).max(20).optional(),
   coverImageUrl: z.string().url().nullable().optional(),
   isPublished: z.boolean().optional(),
   visibility: z.enum(["public", "members", "scheduled", "private"]).optional(),
@@ -188,6 +192,19 @@ export async function PATCH(req: Request, { params }: Params) {
   }
   // Stamp publish time on first publish.
   if (patch.isPublished === true && !course.publishedAt) patch.publishedAt = new Date();
+
+  // Additional categories are always stored clean (src/lib/course-categories.ts), measured against
+  // the primary the course will have AFTER this save. Changing only the primary still re-checks the
+  // stored list, because moving the primary onto one of the extras would otherwise list the course
+  // twice in the same category.
+  if ("additionalCategories" in patch || "category" in patch) {
+    const nextPrimary = ("category" in patch ? patch.category : course.category) as string | null;
+    const requested =
+      "additionalCategories" in patch
+        ? (patch.additionalCategories as string[])
+        : course.additionalCategories;
+    patch.additionalCategories = normalizeAdditionalCategories(nextPrimary, requested);
+  }
 
   const updated = await updateCourse(sdb.tenantId, id, patch);
 

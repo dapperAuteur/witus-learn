@@ -319,6 +319,34 @@ organisation wrote it, and teach contested claims as contested with the holders 
 rather than a standards claim, because claiming coverage for a course no educator can see would be a
 claim about content that may still change.
 
+## Course categories (a course may appear in more than one)
+
+A course has **one primary category** (`courses.category`) and **up to five additional ones**
+(`courses.additional_categories`, migration 0062). The catalog's category filter
+(`/courses?category=…`) and the home page's category counts include both, so a course like the Soul
+Train one is found under Careers & Media **and** Culture & History without being duplicated.
+
+**The primary is still the one that decides things.** Curriculum sort order, the social-card
+subtitle, the course graph and the pricing proposal all read the primary only; the additional ones
+only add places the course is found.
+
+**One helper owns what a valid list is:** [src/lib/course-categories.ts](src/lib/course-categories.ts)
+trims names, drops blanks and duplicates, drops the primary itself (so a course is never listed twice
+in one category), and caps the list. The seeder, the settings form and the category admin all go
+through it:
+
+- **Course settings → "Also appears in"** ticks the school's categories. Promoting an extra to the
+  main category removes it from the extras, the same rule the server applies.
+- **Seeding:** `seedAuthoredCourse({ …, additionalCategories: [...] })`, applied on **first insert
+  only**, exactly like `category`, so a re-seed never undoes an owner's edit.
+- **Renaming a category** updates every course that lists it as an extra, and resolves collisions:
+  renaming one extra onto the course's primary, or onto another extra it already has, removes the
+  duplicate instead of keeping it. **Deleting** a category removes it from every list.
+
+The filter stays inside the tenant condition, and
+[tests/isolation/multi-category.db.test.ts](tests/isolation/multi-category.db.test.ts) proves an extra
+category on one brand's course never lists that course on another brand, under every sort order.
+
 ## Vetting and "Coming soon" (`courses.vetted_at`)
 
 `courses.vetted_at` records that the **platform owner** personally reviewed a course against its

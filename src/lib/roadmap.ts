@@ -1118,6 +1118,14 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   public flip. What each course REFUSED to print is the part worth keeping: two unverified
   segregation averages were cut rather than shipped, and the blind course dropped two court cases
   entirely rather than characterise holdings it could not read.
+- ✅ **A course can appear in more than one category** (\`feat/multi-category-courses\`, migration 0062):
+  a course keeps one primary category and may add up to five more, so a course that honestly belongs
+  to two subjects is found under both without being duplicated. The primary still decides curriculum
+  order, the share card and the course graph; the extras only add places the course is found. One
+  helper decides what a valid list is, and the seeder, the course settings form and the category
+  admin all use it, so a course is never listed twice in one category, including after a category
+  rename that would otherwise have collided with its primary. The new filter stays inside the tenant
+  condition, with an isolation test covering every sort order.
 - 🔜 **Sentry error monitoring** (\`feat/rag-autoindex-and-report-bulk\`, wired, DSN pending → task 208):
   crash-grade signal (real stack traces, grouping, alerting) alongside the existing home-grown admin
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
