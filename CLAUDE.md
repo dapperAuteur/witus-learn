@@ -70,6 +70,14 @@ the starting list for research checks. If BAM waives the brief for a particular 
 that course file's header comment so the missing brief reads as a decision, not an oversight. Courses
 already built or in progress before 2026-09-18 are exempt.
 
+**Score every brief with the rubric.** `docs/course-method/course-creation-rubric.md` (local, like the
+rest of `docs/`) turns the seven sections into a decision: eight pass/fail brief gates, six weighted
+criteria that rank subjects by **how well the core claim is documented, not by fame**, a first-match
+table that picks course, lesson, primary-source exercise, research first, or nothing, and the nine
+build gates a finished course must pass. Put one line in section 5, e.g. "Rubric: gates pass;
+B 3/2/3/1/2/2 = 29; form C5". The long-form version with worked examples is the WitUS library ebook
+`gemini/witus/plans/playbook/2026-09-18-course-creation-rubric.md`; the docs/ copy wins if they differ.
+
 ## Standards-coverage rule — a new course declares its standards or says why not
 
 Educators shop on **standards coverage**, so it must not rot. `pnpm lint` runs
