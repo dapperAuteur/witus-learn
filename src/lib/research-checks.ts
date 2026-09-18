@@ -4239,6 +4239,31 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["The spelling in a Presbyterian Hospital or Columbia nursing record"],
     where: ["Presbyterian Hospital (New York) nursing records", "Columbia University archives"],
   },
+  // ── golf-play-know-work, filed 2026-09-18 from a side finding while researching Freedom House ──
+  {
+    key: "golf-greensboro-six-sentence",
+    title: "Greensboro Six: 30 days, or 15?",
+    course: "golf-play-know-work",
+    lesson: "golf-the-courtroom",
+    quote: "They were sentenced to **30 days in jail**, the **statutory maximum**.",
+    severity: "medium",
+    claim:
+      "The lesson says the Greensboro Six, arrested for playing Gillespie Park on 7 December 1955, were sentenced to 30 days in jail, the statutory maximum, and a quiz explanation repeats it.",
+    question:
+      "What sentence did the Greensboro Six actually receive, and what was the statutory maximum? A research agent reported that UNC's DocSouth describes 15-day sentences. That report has NOT been checked.",
+    stakes:
+      "The lesson leans on the sentence being the maximum ('Not a fine. Not a warning. The maximum'). If it was 15 days, or if 30 was not the maximum, the rhetorical point is built on a wrong number, in a lesson that itself corrects other publications' errors about the same case.",
+    needs: [
+      "The sentence as recorded, with its source (court record, contemporary newspaper, or DocSouth's cited source)",
+      "The statutory maximum for the trespass charge in North Carolina in 1955",
+      "Whether the trial sentence differed from a later one on appeal, which could explain both figures",
+    ],
+    where: [
+      "UNC Libraries DocSouth, its pages on the Greensboro golf case",
+      "Greensboro Daily News and Greensboro Record, December 1955 and the trial dates",
+      "The appellate record in the Greensboro Six case, if the sentences were reviewed",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
