@@ -299,7 +299,7 @@ still study it end to end** — enroll, quiz and complete all check `canAccessCo
 `publishHoldReason` records **why** in one honest sentence, and it is not decoration: it is the
 difference between "nobody has got to this yet" and "this is deliberately waiting on something".
 
-Two courses ship this way today, both **free by decision** rather than by omission:
+The first two to ship this way, both **free by decision** rather than by omission:
 
 - **`deaf-america`** — "Deaf America: Language, Schools, and the Record". Held until a **Deaf
   co-author** has reviewed it. It teaches history, culture, linguistics and law and **teaches no
@@ -318,6 +318,17 @@ organisation wrote it, and teach contested claims as contested with the holders 
 `STAGED_COURSES` while private, and both carry a reasoned `BACKLOG` line in the standards ratchet
 rather than a standards claim, because claiming coverage for a course no educator can see would be a
 claim about content that may still change.
+
+**Also private:** **`who-built-the-blood-bank`** ("Who Built the Blood Bank", CREDIT-S2, Charles
+Drew), held **until vetted** by BAM's approval of its brief. It is the Credit series' second science
+course: the blood bank research, *Banked Blood*, Blood for Britain, and the Red Cross program that
+first excluded and then segregated Black donors' blood, built from NLM *Profiles in Science* and six
+digitized documents from the Drew Papers. It corrects four popular claims (invented blood banking,
+first director, resigned in protest, and the death myth, which `who-gets-the-credit` lesson 17
+already teaches, so this course points there instead of re-teaching it). Five open questions are
+filed as research checks rather than guessed. The **construction study series**
+(`construction-safety`, `construction-math`) is private for a different reason: it is BAM's own study
+support, never for publication.
 
 ## Vetting and "Coming soon" (`courses.vetted_at`)
 

@@ -24,6 +24,7 @@ import { WRITING_POEMS_AND_SONGS_COURSE } from "./data/writing-poems-and-songs-c
 import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
 import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
+import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -396,6 +397,31 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Held private until a blind co-author or reviewer has read it. A sighted author wrote it from published sources, the course says so in its first lesson, and Section 5 leaves the device-credit archival work explicitly unfinished.",
+  });
+
+  // CREDIT-S2 · "Who Built the Blood Bank" (Charles Drew). PRIVATE until vetted, by BAM's approval
+  // (2026-09-18) of plans/future-courses/he-did-the-work/2026-09-18-charles-drew-brief.md, "private
+  // until vetted, Culture & History, link to Credit". The CREDIT science track beside S1
+  // (the-paper-and-the-prize). Its own call rather than the CREDIT array because that loop does not
+  // pass visibility. Built from NLM Profiles in Science and six digitized Drew Papers documents; it
+  // does not re-teach the death myth, which who-gets-the-credit lesson 17 already corrects.
+  // NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-built-the-blood-bank",
+    course: DREW_BLOOD_BANK_COURSE,
+    category: "Culture & History",
+    navigationMode: "linear",
+    visibility: "private",
+    publishHoldReason:
+      "Held private until vetted. Built from NLM Profiles in Science and digitized Charles R. Drew Papers documents; its open source checks are filed in research-checks.",
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 9,
+    seriesCode: "CREDIT",
+    seriesPosition: "S2",
+    seriesTrack: "S · Science",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
@@ -2282,6 +2308,7 @@ async function main() {
       seriesOrder: 8,
       seriesCode: "CREDIT",
       seriesPosition: "S1",
+      seriesTrack: "S · Science",
     },
     {
       slug: "written-by-himself",

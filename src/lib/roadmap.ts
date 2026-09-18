@@ -1118,6 +1118,17 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   public flip. What each course REFUSED to print is the part worth keeping: two unverified
   segregation averages were cut rather than shipped, and the blind course dropped two court cases
   entirely rather than characterise holdings it could not read.
+- ✅ **Who Built the Blood Bank: Charles Drew, the Research, and the Record** (\`content/drew-blood-bank\`,
+  CREDIT-S2, **Culture & History**, **private until vetted**): the first course built under the
+  course-brief rule, and the coverage search changed what it is for. \`who-gets-the-credit\` already
+  corrects the death myth, so this course teaches the work: the Presbyterian bank with Scudder,
+  *Banked Blood* (1940), Blood for Britain, and the Red Cross pilot of early 1941, where the NLM record
+  shows Black donors were **excluded first and segregated only after**. Built from NLM *Profiles in
+  Science* and six digitized Drew Papers documents, with quoted passages checked against page images.
+  It corrects four popular claims (invented blood banking, first director, resigned in protest, the
+  death myth) and files five open questions as research checks rather than guessing, including who
+  actually directed that first Red Cross bank. 10 teaching lessons, 5 section quizzes and a final,
+  305 questions; \`pnpm audit:course who-built-the-blood-bank --spec\` reports zero findings.
 - 🔜 **Sentry error monitoring** (\`feat/rag-autoindex-and-report-bulk\`, wired, DSN pending → task 208):
   crash-grade signal (real stack traces, grouping, alerting) alongside the existing home-grown admin
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
