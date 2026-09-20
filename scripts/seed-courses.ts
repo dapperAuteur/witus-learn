@@ -29,6 +29,7 @@ import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-pri
 import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
 import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
 import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
+import { AUTHOR_LINE_AND_FINDING_COURSE } from "./data/the-author-line-and-the-finding-course";
 import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
 import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
@@ -563,6 +564,29 @@ async function main() {
     seriesSlug: "credit",
     seriesTitle: "Credit: Who Gets Named",
     seriesOrder: 12,
+  });
+
+  // "The Author Line and the Finding" (Marthe Gautier, plans/83 E-02). PRIVATE, by BAM's decision of
+  // 2026-09-20 that she gets her own course rather than a section of the prize-citation one. The
+  // reason is the INSTRUMENT: a prize citation is written by the body that gave the award and is
+  // permanent; an ethics opinion is written by a body that gave nothing and says of itself that it
+  // may evolve. A LIVE dispute with a named contesting party, the Fondation Jerome Lejeune, whose
+  // case is stated in its own order and its own words. The course reaches NO verdict and says so.
+  // Abortion politics are named once, from each party's own sentences, and never argued.
+  // NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-author-line-and-the-finding",
+    course: AUTHOR_LINE_AND_FINDING_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Science & Math"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). A live credit dispute with a named contesting party, the Fondation Jerome Lejeune, which publishes its own documents. Built from the Inserm ethics committee's 2014 opinion, the Foundation's three published texts, Inserm's own listing page, and the 1959 and 1969 index records. It reaches no verdict, because the documents it could read do not support one, and it says so.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
