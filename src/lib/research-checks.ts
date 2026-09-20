@@ -4695,6 +4695,289 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "GDZ PPN654655340, the same series as the entries in section 3",
     ],
   },
+  // ── what-the-citation-records (Pert, Robscheit-Robbins), filed 2026-09-20 ──
+  {
+    key: "citation-records-marx-1979-original",
+    title: "Read the 1979 Science news item in print",
+    course: "what-the-citation-records",
+    lesson: "the-argument-in-print",
+    quote:
+      "Its text was read for this course in a reprint posted in 2014 on an interested site.",
+    severity: "medium",
+    claim:
+      "The 1979 Science piece was read in a reprint posted on a site devoted to one of the people in the dispute. Every sentence Garfield quotes from it matches the reprint word for word, which is the corroboration the lesson rests on.",
+    question:
+      "Does the printed Science of 26 January 1979, page 341, match the reprint?",
+    stakes:
+      "Three claims rest on the reprint alone: the grant protocol, the juror's statement, and the refusal to attend the luncheon. If the reprint was edited where Garfield does not quote, those three move from verified to reported.",
+    needs: [
+      "The printed page, read against the reprint",
+    ],
+    where: [
+      "A university library's Science holdings",
+      "Interlibrary loan",
+      "AAAS archive access",
+    ],
+  },
+  {
+    key: "citation-records-lasker-formal-cap",
+    title: "Did the Lasker award carry a formal limit in 1978?",
+    course: "what-the-citation-records",
+    lesson: "caps-and-what-they-explain",
+    quote:
+      "If Garfield is right that the Lasker carried no formal limit, then nothing about the format required the 1978 award to stop at three.",
+    severity: "medium",
+    claim:
+      "That the award had no formal limitation rests on one parenthesis in Garfield (1979). The Foundation's own rules for that period were not read, and the lesson is written conditionally for exactly that reason.",
+    question:
+      "What did the Lasker award rules say about the number of recipients in 1978?",
+    stakes:
+      "The 1934-against-1978 contrast is the point of the lesson. If the award did carry a limit, the contrast collapses and the lesson has to be rewritten.",
+    needs: [
+      "The award rules as they stood in 1978",
+    ],
+    where: [
+      "The Lasker Foundation",
+      "Its annual reports of the period",
+    ],
+  },
+  {
+    key: "citation-records-1934-committee-record",
+    title: "Is there a released 1934 Nobel committee record?",
+    course: "what-the-citation-records",
+    lesson: "what-these-cases-do-not-prove",
+    quote:
+      "No released Nobel committee record for 1934 was found.",
+    severity: "medium",
+    claim:
+      "The course asserts no motive for the 1934 committee. A nomination-archive query returned zero results even for the laureate, which means the query failed rather than that nothing exists.",
+    question:
+      "What does the released record for Physiology or Medicine 1934 contain?",
+    stakes:
+      "A released committee record could confirm or refute the format-cap reading of 1934. Until one is read, the course says only what the published documents say.",
+    needs: [
+      "A working search of the nomination archive for 1934",
+      "Whatever the institute releases for prizes over fifty years old",
+    ],
+    where: [
+      "nobelprize.org nomination archive (its search returns 200 with the wrong page when parameters are ignored)",
+      "Karolinska Institutet archives",
+    ],
+  },
+  {
+    key: "citation-records-lasker-essay-date",
+    title: "When were the Lasker winner essays written?",
+    course: "what-the-citation-records",
+    lesson: "the-1978-award-page-exercise",
+    quote:
+      "The page does not say when the essays themselves were written.",
+    severity: "low",
+    claim:
+      "The award page carries unsigned essays on each winner. Page metadata shows a 2021 posting date, which dates the web page and not the text on it.",
+    question:
+      "When does the Foundation write its winner essays?",
+    stakes:
+      "If the essays are contemporaneous, the contradiction with the acceptance remarks belongs to the same moment; if not, it spans four decades. The lesson is valid either way, but the reading changes.",
+    needs: [
+      "The Foundation's statement of when its essays are written, or a printed 1978 programme carrying the same text",
+    ],
+    where: [
+      "The Lasker Foundation archive",
+      "The 1978 awards programme",
+    ],
+  },
+  {
+    key: "citation-records-corner-and-mcgrayne",
+    title: "Two books read only as transcribed on a university page",
+    course: "what-the-citation-records",
+    lesson: "citation-speech-and-lecture",
+    quote:
+      "Those words are a transcription on a university page, not a book this course has read, and that is how they are used here.",
+    severity: "low",
+    claim:
+      "Two books are quoted only as a university campus-history page transcribes them: one on the division of the prize money, one on the count and her rank. The count is independently re-derived in this course, so nothing depends on the transcription for that.",
+    question:
+      "Do the two books, at the cited pages, say what the transcription says?",
+    stakes:
+      "The prize-money sentence and the rank sentence depend on the transcription alone.",
+    needs: [
+      "The two books, at the cited pages",
+    ],
+    where: [
+      "University libraries",
+      "The University of Rochester's own holdings",
+    ],
+  },
+  {
+    key: "citation-records-robscheit-robbins-dates",
+    title: "Her birth year and doctorate date",
+    course: "what-the-citation-records",
+    lesson: "what-these-cases-do-not-prove",
+    quote:
+      "The sources read for this course say almost nothing about Frieda Robscheit-Robbins beyond her work.",
+    severity: "low",
+    claim:
+      "Sources give two birth years and two doctorate dates. NONE is printed in the course, because none is settled.",
+    question:
+      "What are her birth year and the date of her doctorate?",
+    stakes:
+      "A biography lesson cannot be written until the dates are settled. Until then the thinness is reported as the finding, which is what the course does.",
+    needs: [
+      "A birth record, and the university's own degree conferral record",
+    ],
+    where: [
+      "University of Rochester registrar and archives",
+      "German civil registration",
+    ],
+  },
+
+  // ── whose-name-is-on-the-score (Zitkala-Sa), filed 2026-09-20 ──
+  {
+    key: "sun-dance-half-interest-assignment",
+    title: "Where is the 1913 assignment of an undivided half interest?",
+    course: "whose-name-is-on-the-score",
+    lesson: "an-undivided-half-interest",
+    quote:
+      "Nobody working on this course has seen the document.",
+    severity: "high",
+    claim:
+      "It is known ONLY from one scholar, who reports it was notarized in Uintah County about a month after the premiere and never recorded with the Copyright Office. The lesson refuses to state its date, its terms, or what rights it created.",
+    question:
+      "Where is that instrument, and what does it say?",
+    stakes:
+      "It is the single document that decides whether this is a story about an omission or a story about a refusal, and the whole course is built around not guessing which.",
+    needs: [
+      "The instrument itself, or a reproduction, with its date, parties and terms",
+    ],
+    where: [
+      "The Hanson papers, Brigham Young University",
+      "Uintah County notarial records, 1913",
+    ],
+  },
+  {
+    key: "sun-dance-which-score-names-her",
+    title: "Which manuscript score carries her name?",
+    course: "whose-name-is-on-the-score",
+    lesson: "1935-1938-and-a-shaky-hand",
+    quote:
+      "Nobody working on this course has read the scores at Brigham Young University, so the course does not say which score carries which.",
+    severity: "medium",
+    claim:
+      "A Library of Congress post says her name was left off the vocal score; a scholar transcribes a revised piano-vocal score whose first page names her in a collaboration line. The two statements are probably about different manuscripts, and the lesson prints both rather than choosing.",
+    question:
+      "Which surviving score carries her name, and which does not?",
+    stakes:
+      "The difference between a name removed and a name never added is the course's subject.",
+    needs: [
+      "A title page and act I first page from each surviving score, with shelfmarks",
+    ],
+    where: [
+      "William F. Hanson papers and scores, Brigham Young University",
+    ],
+  },
+  {
+    key: "sun-dance-1912-registration-number",
+    title: "The registration number on the 1912 application card",
+    course: "whose-name-is-on-the-score",
+    lesson: "four-cards-in-one-catalogue",
+    quote:
+      "The class is printed; the number is not.",
+    severity: "medium",
+    claim:
+      "The entry stamp reads to two readers as a Class D number with a handwritten mark after it, and a search of the 1912 catalogue's OCR did not find the entry. NO number is printed anywhere in the course, including as a quiz distractor.",
+    question:
+      "What is the entry number for this work, as the Catalog of Copyright Entries or the Copyright Office index gives it?",
+    stakes:
+      "A wrong number in a course about a registration record would be the exact defect the course teaches learners to catch.",
+    needs: [
+      "The entry number from the catalogue or the office index",
+    ],
+    where: [
+      "Catalog of Copyright Entries, Parts 1 and 3, 1912-1913",
+      "Copyright Office records",
+    ],
+  },
+  {
+    key: "sun-dance-byu-transfer-and-renewal",
+    title: "When was the copyright transferred, and was it renewed?",
+    course: "whose-name-is-on-the-score",
+    lesson: "what-a-correction-can-reach",
+    severity: "medium",
+    claim:
+      "One scholar says he later assigned the copyright to the university, in a clause with no date and no terms, and the course repeats only that. Whether the 1912 registration was renewed in its twenty-eighth year was not searched.",
+    question:
+      "When was the copyright transferred, on what terms, and was the registration ever renewed?",
+    stakes:
+      "Who holds a right, and for how long, is what the closing lesson is about.",
+    needs: [
+      "The transfer instrument or the university's acquisition record",
+      "A renewal search for 1939 and 1940",
+    ],
+    where: [
+      "Brigham Young University special collections",
+      "Catalog of Copyright Entries, renewals",
+    ],
+  },
+  {
+    key: "sun-dance-smith-2001-pages",
+    title: "Page numbers for the 2001 article",
+    course: "whose-name-is-on-the-score",
+    lesson: "four-cards-in-one-catalogue",
+    severity: "low",
+    claim:
+      "Nine references in the course cite the article with its volume and no page range, because the republication actually read carries no pagination. The volume is confirmed twice.",
+    question:
+      "What are the first and last pages of the article in the printed volume?",
+    stakes:
+      "Nine references are incomplete until it is answered. A guessed page range would be worse than a missing one.",
+    needs: [
+      "The first and last page in the printed volume",
+    ],
+    where: [
+      "Project MUSE",
+      "A library holding the print run",
+    ],
+  },
+  {
+    key: "sun-dance-el-paso-herald-page",
+    title: "Read the 1913 newspaper page image directly",
+    course: "whose-name-is-on-the-score",
+    lesson: "what-the-newspapers-said-in-1913",
+    quote:
+      "It is uncorrected machine transcription of a scanned newspaper page, not a reading of the page itself.",
+    severity: "low",
+    claim:
+      "The 1913 notice was read as uncorrected machine transcription of a scanned page, not as the page itself. The transcription spells the collaborator's surname differently from the register, which is why the lesson distrusts the wording.",
+    question:
+      "What does the printed page of 27 December 1913 actually say?",
+    stakes:
+      "The lesson quotes a newspaper against a register. It should quote the page, not a machine's reading of it.",
+    needs: [
+      "The page image read directly, and the sentence transcribed from it",
+    ],
+    where: [
+      "chroniclingamerica.loc.gov, the 27 December 1913 page image",
+    ],
+  },
+  {
+    key: "sun-dance-musical-america-headline",
+    title: "The premiere headline, from the paper itself",
+    course: "whose-name-is-on-the-score",
+    lesson: "what-the-newspapers-said-in-1913",
+    severity: "low",
+    claim:
+      "The headline is quoted only as one scholar quotes it, and the lesson attributes it to her quotation rather than to the paper. The issue itself was not seen.",
+    question:
+      "What did the premiere headline say, in the paper?",
+    stakes:
+      "Low. The lesson already attributes it correctly.",
+    needs: [
+      "The issue and page carrying the premiere coverage",
+    ],
+    where: [
+      "Musical America, 1913 volumes",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

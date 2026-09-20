@@ -28,6 +28,8 @@ import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
 import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-prize-course";
 import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
 import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
+import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
+import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -490,6 +492,53 @@ async function main() {
     seriesSlug: "credit",
     seriesTitle: "Credit: Who Gets Named",
     seriesOrder: 10,
+  });
+
+  // "What the Citation Records" (plans/83 E-05 Candace Pert and E-09 Frieda Robscheit-Robbins).
+  // PRIVATE study, by BAM's approval of both briefs on 2026-09-19. Two cases, not the four the
+  // briefs proposed, because he approved only these two; Karle (E-20) and Gautier (E-02) are on
+  // hold in plans/88. The course is keyed by PRIZE YEAR rather than by case number, so a 1985 or a
+  // 1959 section splices in at its own year with no renumbering. The Lasker 1978 page is its
+  // primary-source exercise, and it stays inside this private course: BAM did not lift the
+  // private-only rule. NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "what-the-citation-records",
+    course: WHAT_THE_CITATION_RECORDS_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Science & Math"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Two prize-credit cases built from published documents: the Lasker Foundation's own 1978 award page, the 1934 Nobel ceremony record and lecture, Garfield's 1979 essay read against page images, and the authorship record re-derived from Crossref and PubMed.",
+  });
+
+  // "Whose Name Is on the Score" (Zitkala-Sa, plans/83 E-06). PRIVATE study, by BAM's approval of
+  // plans/future-courses/uncredited/2026-09-18-zitkala-sa-brief.md on 2026-09-19, built STANDALONE
+  // because Delia Derbyshire was still being researched that day. Sections 1 and 4 are the general
+  // frame and name no second subject, so a Derbyshire section drops in between 3 and 4 without
+  // renaming the course or rewriting a lesson. A6 condition BAM confirmed: the course never
+  // describes the ceremony or the opera's staging of it, and lesson 1 says that is a rule and not a
+  // gap. NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "whose-name-is-on-the-score",
+    course: WHOSE_NAME_ON_THE_SCORE_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Money & Property"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from the copyright registration cards read as images, the 1909 Copyright Act, and published scholarship. If it is ever considered for release it needs a Native reviewer with the authority to change or cut any of it.",
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 11,
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
