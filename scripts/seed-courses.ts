@@ -25,6 +25,7 @@ import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
 import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
+import { THE_MARK_AND_THE_STAR_COURSE } from "./data/the-mark-and-the-star-course";
 import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
 import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
 import { KEEPING_A_HOUSE_COURSE } from "./data/keeping-a-house-course";
@@ -687,6 +688,32 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Private study for BAM (plans/83). A live credit dispute with a named contesting party, the Fondation Jerome Lejeune, which publishes its own documents. Built from the Inserm ethics committee's 2014 opinion, the Foundation's three published texts, Inserm's own listing page, and the 1959 and 1969 index records. It reaches no verdict, because the documents it could read do not support one, and it says so.",
+  });
+
+  // "The Mark and the Star" (Judith Leyster, plans/83 E-07). PRIVATE, by BAM's approval of
+  // 2026-09-21, after he found the 1893 article himself and a reading pass answered both open
+  // questions. The popular story is wrong TWICE and the article proves both: the forged monogram is
+  // on the Crabbe panel, not the litigated Lawrie one (near-pendants, different sizes, different
+  // markets three years apart), and the forgery ALTERED her own mark into Hals's rather than
+  // painting his signature over hers. The other half of the lesson is that she varied her own mark
+  // honestly, so the skill is separating a hand that varies from a hand that tampers.
+  // NO series code. seriesOrder 17: 15 is Keane, 16 is the payroll course. NO migration.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-mark-and-the-star",
+    course: THE_MARK_AND_THE_STAR_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Research & Reporting"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 17,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from Hofstede de Groot's 1893 article read as page images, both instalments, because the OCR disagrees with the page in sixteen places and every monogram facsimile is invisible to the text layer. Four documents it leans on are still unread: the London newspaper report of the 1893 hearing, two 1893 weeklies, and the modern catalogue raisonne.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

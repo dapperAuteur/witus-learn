@@ -159,6 +159,8 @@ const BACKLOG: Record<string, string> = {
     "UNMAPPED, and a genuine candidate. Genetics, experimental method and evaluating sources against claims all appear in science and ELA standards. Not claimed until the mapping is done properly.",
   "who-built-the-blood-bank":
     "PRIVATE until vetted, no series code. A primary-source history course (sourcing, corroboration, chronology, claim against evidence), so a genuine candidate for US-history and ELA standards, mapped at the public flip rather than claimed for a course no educator can see.",
+  "the-mark-and-the-star":
+    "PRIVATE, no series code. Walking a provenance line, counting an author's own claims against later summaries, separating assertion from reservation from suspicion, and reading a page image against a transcription: a strong ELA and history candidate, to be MAPPED at the public flip rather than claimed now.",
   "the-partner-and-the-prize":
     "PRIVATE study, no series code. A document-analysis history course (reading an institutional record, claim against evidence, corroboration), so a genuine candidate for US-history and ELA standards, mapped at the public flip rather than claimed for a course no educator can see.",
   "notes-made-by-mr-george-hunt":
