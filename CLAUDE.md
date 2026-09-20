@@ -38,6 +38,46 @@ handoff, spell out the exact ordered list of new migrations + `pnpm db:migrate:p
 conventions are in the managed block below; durable committed planning lives in `docs/`, e.g.
 `docs/BUILD_PLAN.md`.)
 
+## Course-brief rule — no course is built before its brief is reviewed
+
+**Before any new course file is created under `scripts/data/`, write a brief and get BAM's review.**
+This applies to every new course, private study courses included. It exists because the coverage
+check keeps changing the answer: a subject that looks like a new course is often already a lesson
+somewhere, and building first means finding that out after the work is done.
+
+Put the brief **beside the seed note that prompted it**, date-prefixed:
+`plans/future-courses/<area>/YYYY-MM-DD-<slug>-brief.md`. It has seven sections:
+
+1. **Description** — what a learner will be able to do or understand by the end.
+2. **Outline** — sections and lessons, marked as a draft.
+3. **Fit** — category, series and track, audience, and **public or private**.
+4. **Connections** — the existing courses it links to or overlaps, **found by searching
+   `scripts/data/`**, naming the lesson and not just the course. Say plainly when nothing covers it.
+5. **Course or lesson?** — an explicit recommendation: a whole course, a lesson or section inside a
+   named existing course, or not at all. Give the reason and the alternatives.
+6. **Evidence status** — every factual claim marked **VERIFIED** (read on a source you fetched),
+   **REPORTED** (seen only in search results or secondary summaries) or **UNVERIFIED**, with its
+   source. A brief follows the same fetch-or-do-not-cite discipline as a course: it is what the course
+   gets built from, so an unchecked claim in a brief becomes an unchecked claim in a lesson.
+7. **Questions for BAM.**
+
+**Do the coverage search before writing anything else.** It decides section 5, and section 5 decides
+whether the rest is worth writing. Search the course files, not `src/lib/future-work-content/`, which
+is generated from `plans/future-courses/` and only echoes the backlog back.
+
+**Only BAM approves a brief.** Once approved, author the course; the brief's evidence section becomes
+the starting list for research checks. If BAM waives the brief for a particular course, say so in
+that course file's header comment so the missing brief reads as a decision, not an oversight. Courses
+already built or in progress before 2026-09-18 are exempt.
+
+**Score every brief with the rubric.** `docs/course-method/course-creation-rubric.md` (local, like the
+rest of `docs/`) turns the seven sections into a decision: eight pass/fail brief gates, six weighted
+criteria that rank subjects by **how well the core claim is documented, not by fame**, a first-match
+table that picks course, lesson, primary-source exercise, research first, or nothing, and the nine
+build gates a finished course must pass. Put one line in section 5, e.g. "Rubric: gates pass;
+B 3/2/3/1/2/2 = 29; form C5". The long-form version with worked examples is the WitUS library ebook
+`gemini/witus/plans/playbook/2026-09-18-course-creation-rubric.md`; the docs/ copy wins if they differ.
+
 ## Standards-coverage rule — a new course declares its standards or says why not
 
 Educators shop on **standards coverage**, so it must not rot. `pnpm lint` runs
@@ -222,7 +262,7 @@ hand-written SQL for the Postgres-specific bits (extensions, ivfflat, triggers).
 
 ---
 
-<!-- BEGIN:witus-shared-rules v1 -->
+<!-- BEGIN:witus-shared-rules v3 -->
 <!-- MANAGED BLOCK — do not edit by hand. Source: gemini/witus/docs/shared-rules.md.
      Update the source, then run `node scripts/sync-claude-rules.mjs` in the witus repo. -->
 
@@ -293,6 +333,26 @@ All implementation plans live in `./plans/` as `NN-description-of-plan.md` (two-
 kebab-case, next available number, don't skip). Sub-queues: `./plans/user-tasks/NN-slug.md`
 (operator tasks), `./plans/bugs/`, `./plans/future/`. (`plans/` is typically gitignored.)
 
+**Finding what BAM mentions: search gitignored files.** Most ideas, plans, decisions, and drafts BAM
+refers to live in a `plans/` dir of this repo or another ecosystem repo, and are not tracked by git.
+Default `rg`, `git grep`, `git log -S`, and editor search skip gitignored paths, so they miss every
+`plans/` dir and report a false "nothing found". Search with `rg -uu` (or `rg --no-ignore`, `grep -r`,
+`find`), excluding `node_modules`, `.next`, `.git`, worktrees, and virtualenvs: this repo first, then
+the repos in `gemini/witus/docs/ecosystem-repos.json`. A miss from a git-aware search proves nothing;
+if the gitignore-aware search also misses, say what you searched and ask BAM where it lives.
+Untracked also means unrecoverable: git can't restore an overwritten plan, so read before replacing.
+Full rule: `gemini/witus/CLAUDE.md` §"Plans convention".
+
+## New app ideas — vet before building
+
+Before writing code, creating a repo, or onboarding any new product idea, score it with the WitUS
+app-idea rubric (`gemini/witus/docs/app-idea-vetting-rubric.md`): search gitignored `plans/` for prior
+work, declare the goal with BAM (business / portfolio / community), write the sourced analysis at
+`gemini/witus/plans/NN-<slug>-analysis.md`, apply the gates and weighted scores, and file a user task
+for any validation BAM does outside the editor. Append lessons and outcomes to the rubric's logs;
+gate, weight, and threshold changes need BAM's approval. Full rule: `gemini/witus/CLAUDE.md`
+§"New-product vetting rule".
+
 ## Citation rule
 
 Anything publishable, teachable, or partner-facing (curriculum, teaching-oriented help articles,
@@ -316,4 +376,4 @@ default Neon+Drizzle+pnpm+Vitest stack) are consolidated in `gemini/witus/docs/s
 Read it before writing UI or API code. Two repos are grandfathered on Supabase+Jest and documented
 there as exceptions.
 
-<!-- END:witus-shared-rules v1 -->
+<!-- END:witus-shared-rules v3 -->

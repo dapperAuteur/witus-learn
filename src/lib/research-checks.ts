@@ -4165,6 +4165,105 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Jim Thatcher's published writing on the history of screen readers, and IBM's own records",
     ],
   },
+  // ── who-built-the-blood-bank (CREDIT-S2, Charles Drew), filed 2026-09-18 with the course ──
+  {
+    key: "drew-red-cross-director",
+    title: "Who directed the first American Red Cross blood bank (1941)?",
+    course: "who-built-the-blood-bank",
+    lesson: "four-claims-checked",
+    quote: "The sources this course read do not say who held the director's post, so this course does not guess.",
+    severity: "medium",
+    claim:
+      "Drew was Assistant Director of the first American Red Cross Blood Bank (Presbyterian Hospital, New York), per NLM's Brief chronology. The course corrects the popular 'first director' claim but does not name the director.",
+    question: "Who held the director's post at the first American Red Cross blood bank in 1941, and what document says so?",
+    stakes:
+      "Naming the director would finish the correction of the 'first director' myth. A wrong name would start a new myth in the lesson written to retire one.",
+    needs: ["The director's name and title, with the document that states it"],
+    where: [
+      "Charles R. Drew Papers, Moorland-Spingarn Research Center, Howard University",
+      "Kendrick, Blood Program in World War II (U.S. Army Medical Department), listed on NLM's Further Resources page",
+      "American Red Cross records of the 1941 pilot program",
+    ],
+  },
+  {
+    key: "drew-red-cross-appointment-month",
+    title: "January or February 1941 for Drew's Red Cross appointment?",
+    course: "who-built-the-blood-bank",
+    lesson: "four-claims-checked",
+    quote: "When this course is not quoting, it says early 1941.",
+    severity: "low",
+    claim:
+      "NLM's Biographical overview places the appointment 'When the program ended in January 1941'; NLM's chapter and Brief chronology say February 1941. The course says 'early 1941'.",
+    question: "In which month of 1941 was Drew appointed to the Red Cross pilot program?",
+    stakes: "Low. The course already hedges honestly; a dated document would let it print the month.",
+    needs: ["The date on the appointment letter, or the Red Cross or National Research Council record of it"],
+    where: ["Charles R. Drew Papers (Moorland-Spingarn)", "NLM Profiles in Science item-level records for Drew"],
+  },
+  {
+    key: "drew-1941-symposium-race-remark",
+    title: "What was Drew answering with 'no distinction made concerning race' (June 1941)?",
+    course: "who-built-the-blood-bank",
+    lesson: "excluded-then-segregated",
+    severity: "medium",
+    claim:
+      "The course teaches, from NLM and the Science History Institute, that the Red Cross pilot of early 1941 excluded Black donors. It does not print or rely on the symposium remark.",
+    question:
+      "In the transcript of Drew's comments at the American Human Serum Association symposium of 2 to 3 June 1941 (NLM 101584649X64), he says 'there is no distinction made concerning race' in answer to a question the transcript does not record. Was that about donors, or about pooling plasma regardless of donor race?",
+    stakes: "If it was about donors, the timing of the exclusion in New York needs refining in the lesson.",
+    needs: ["The full symposium proceedings, including the question put to Drew"],
+    where: ["NLM 101584649X64 and its source volume", "American Human Serum Association symposium proceedings, June 1941"],
+  },
+  {
+    key: "drew-barcelona-service-date",
+    title: "Founding date and donor count of the Barcelona blood transfusion service",
+    course: "who-built-the-blood-bank",
+    lesson: "before-drew",
+    severity: "low",
+    claim:
+      "The course prints only '1936' and 'over 9,000 liters', from Drew's dissertation p. 86, whose typescript gives the founding day as 'August 119, 1936' (a typing error) and a donor figure too faint to read with confidence. No day and no donor count are printed.",
+    question: "On what date was the Barcelona Blood Transfusion Service founded, and how many donors did it have?",
+    stakes: "Low. Nothing wrong is printed; the numbers are simply withheld.",
+    needs: ["The founding date and donor figure from a primary account"],
+    where: ["Durán Jordà, 'The Barcelona blood-transfusion service', The Lancet, 1939 (cited in the bibliography of Drew 1944, NLM 101584649X9)"],
+  },
+  {
+    key: "drew-presbyterian-nurse-surname",
+    title: "Stoddart or Stoddard? The nurse at the 1939 Presbyterian blood bank",
+    course: "who-built-the-blood-bank",
+    lesson: "banked-blood",
+    severity: "low",
+    claim:
+      "The full-time nurse at the 1939 Presbyterian bank is typed 'Helen Stoddart' in Banked Blood's staff list (p. 211) and 'Stoddard' in its acknowledgements (p. ii). The course prints both.",
+    question: "How did the nurse spell her surname?",
+    stakes: "Low, but it is a named person the course credits, and crediting her correctly is the course's point.",
+    needs: ["The spelling in a Presbyterian Hospital or Columbia nursing record"],
+    where: ["Presbyterian Hospital (New York) nursing records", "Columbia University archives"],
+  },
+  // ── golf-play-know-work, filed 2026-09-18 from a side finding while researching Freedom House ──
+  {
+    key: "golf-greensboro-six-sentence",
+    title: "Greensboro Six: 30 days, or 15?",
+    course: "golf-play-know-work",
+    lesson: "golf-the-courtroom",
+    quote: "They were sentenced to **30 days in jail**, the **statutory maximum**.",
+    severity: "medium",
+    claim:
+      "The lesson says the Greensboro Six, arrested for playing Gillespie Park on 7 December 1955, were sentenced to 30 days in jail, the statutory maximum, and a quiz explanation repeats it.",
+    question:
+      "What sentence did the Greensboro Six actually receive, and what was the statutory maximum? A research agent reported that UNC's DocSouth describes 15-day sentences. That report has NOT been checked.",
+    stakes:
+      "The lesson leans on the sentence being the maximum ('Not a fine. Not a warning. The maximum'). If it was 15 days, or if 30 was not the maximum, the rhetorical point is built on a wrong number, in a lesson that itself corrects other publications' errors about the same case.",
+    needs: [
+      "The sentence as recorded, with its source (court record, contemporary newspaper, or DocSouth's cited source)",
+      "The statutory maximum for the trespass charge in North Carolina in 1955",
+      "Whether the trial sentence differed from a later one on appeal, which could explain both figures",
+    ],
+    where: [
+      "UNC Libraries DocSouth, its pages on the Greensboro golf case",
+      "Greensboro Daily News and Greensboro Record, December 1955 and the trial dates",
+      "The appellate record in the Greensboro Six case, if the sentences were reviewed",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

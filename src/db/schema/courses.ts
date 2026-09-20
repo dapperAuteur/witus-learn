@@ -52,6 +52,14 @@ export const courses = pgTable(
     description: text("description"),
     coverImageUrl: text("cover_image_url"),
     category: text("category"),
+    // Extra categories the course ALSO appears under (src/lib/course-categories.ts). `category`
+    // stays the primary: it alone decides curriculum sort order, the social-card subtitle, the
+    // course graph and the pricing proposal. Never contains the primary itself. Not null, so every
+    // reader can treat "none" as an empty list rather than guarding for null.
+    additionalCategories: text("additional_categories")
+      .array()
+      .notNull()
+      .default(sql`'{}'::text[]`),
     tags: text("tags").array(),
     // Cross-promotion: 0–3 WitUS ecosystem product slugs (see src/lib/ecosystem.ts) the
     // instructor curates for this course; rendered as a small labeled "Related WitUS tools"

@@ -2,6 +2,7 @@ import { and, eq, sql } from "drizzle-orm";
 import type { NeonDatabase } from "drizzle-orm/neon-serverless";
 import * as schema from "../../src/db/schema";
 import type { AuthoredCourse } from "../data/authored-course";
+import { normalizeAdditionalCategories } from "../../src/lib/course-categories";
 
 // Reusable seeder for any authored course (Ed.L.D., cyber, FAA when it lands, more
 // languages). Upserts the course (refreshing title/description) and its lessons by
@@ -15,6 +16,10 @@ export async function seedAuthoredCourse(
     slug: string;
     course: AuthoredCourse;
     category?: string;
+    /** Extra categories the course ALSO appears under (src/lib/course-categories.ts). Applied on
+     *  FIRST INSERT ONLY, exactly like `category`: after that the owner edits them in course
+     *  settings, and a re-seed must not undo that. Normalised against `category` on the way in. */
+    additionalCategories?: string[];
     navigationMode?: "linear" | "cyoa";
     seasonNumber?: number;
     requiresAgeGate?: boolean;
@@ -101,6 +106,7 @@ export async function seedAuthoredCourse(
         slug,
         description: course.description,
         category,
+        additionalCategories: normalizeAdditionalCategories(category, opts.additionalCategories),
         // A private course is born unpublished (catalog surfaces filter on isPublished alone).
         isPublished: opts.visibility === "private" ? false : true,
         publishedAt: opts.visibility === "private" ? null : new Date(),

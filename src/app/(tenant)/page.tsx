@@ -4,6 +4,7 @@ import { getSession } from "@/lib/session";
 import { getLearnerDashboard, getWeeklyLeaderboard } from "@/db/queries/dashboard";
 import { brandName } from "@/lib/branding";
 import { coursePriceView } from "@/lib/sale-pricing";
+import { courseCategoryNames } from "@/lib/course-categories";
 import { CourseCard } from "@/components/course-card";
 import { ShareButton } from "@/components/share-button";
 import { LearnerDashboardView } from "@/components/learner-dashboard";
@@ -55,7 +56,11 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
   ]);
   const featured = courses.filter((c) => c.isFeatured);
   const countByCategory = new Map<string, number>();
-  for (const c of courses) if (c.category) countByCategory.set(c.category, (countByCategory.get(c.category) ?? 0) + 1);
+  // Counted under every category the course appears in, so each count matches what its catalog
+  // page actually lists (a course in two categories is found on both pages).
+  for (const c of courses) {
+    for (const name of courseCategoryNames(c)) countByCategory.set(name, (countByCategory.get(name) ?? 0) + 1);
+  }
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">

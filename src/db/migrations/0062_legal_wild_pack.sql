@@ -1,0 +1,1 @@
+ALTER TABLE "courses" ADD COLUMN "additional_categories" text[] DEFAULT '{}'::text[] NOT NULL;

@@ -2,6 +2,7 @@ import "server-only";
 import { and, eq, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courseCategories, courses, type CourseCategory } from "@/db/schema";
+import { renameInAdditional } from "@/lib/course-categories";
 
 // Admin CRUD over a tenant's course categories. Renames/deletes reconcile the free-text
 // courses.category field so course chips stay consistent. All tenant-scoped.
@@ -31,6 +32,22 @@ export async function renameCategory(tenantId: string, id: string, newName: stri
     .update(courses)
     .set({ category: newName })
     .where(and(eq(courses.tenantId, tenantId), sql`${courses.category} = ${cat.oldName}`));
+  // And every course that lists it as an ADDITIONAL category. Done row by row through the shared
+  // helper rather than with array_replace, because a rename can collide: renaming B to A on a course
+  // whose primary is already A, or onto another extra it already has, would otherwise leave a
+  // duplicate that double-counts the course. Tenant-scoped like the update above.
+  const listing = await db
+    .select({ id: courses.id, category: courses.category, additional: courses.additionalCategories })
+    .from(courses)
+    .where(and(eq(courses.tenantId, tenantId), sql`${cat.oldName} = ANY(${courses.additionalCategories})`));
+  for (const row of listing) {
+    const next = renameInAdditional(row.category, row.additional, cat.oldName, newName);
+    if (next === null) continue;
+    await db
+      .update(courses)
+      .set({ additionalCategories: next })
+      .where(and(eq(courses.tenantId, tenantId), eq(courses.id, row.id)));
+  }
   return true;
 }
 
@@ -61,5 +78,11 @@ export async function deleteCategory(tenantId: string, id: string): Promise<bool
     .update(courses)
     .set({ category: null })
     .where(and(eq(courses.tenantId, tenantId), sql`${courses.category} = ${cat.name}`));
+  // And drop it from every additional-category list. Removing an entry cannot create a duplicate,
+  // so array_remove is safe here where a rename is not.
+  await db
+    .update(courses)
+    .set({ additionalCategories: sql`array_remove(${courses.additionalCategories}, ${cat.name})` })
+    .where(and(eq(courses.tenantId, tenantId), sql`${cat.name} = ANY(${courses.additionalCategories})`));
   return true;
 }
