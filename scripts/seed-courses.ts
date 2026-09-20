@@ -33,6 +33,7 @@ import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-scor
 import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
 import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
 import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
+import { KEEPING_A_HOUSE_COURSE } from "./data/keeping-a-house-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -615,6 +616,32 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Held private while BAM decides whether the construction series goes public. It reads drawings from two public-release Navy manuals and codes from public adoption rules, reprints no model code text, and states no adoption it could not verify on 2026-09-20.",
+  });
+
+  // "Keeping a House" (H02 of "The House You Live In"). PRIVATE, 2026-09-20. THE SCOPE IS THE POINT:
+  // no public source carries step-by-step domestic repair procedure, so this course is HAZARDS,
+  // CHECKS AND DECISIONS, not how-to, and lesson 1 says so in the course's own voice. Built only
+  // from federal sources (EPA, CPSC, USFA, DOE and the CFR) plus one state adoption rule; nothing
+  // derives from the books in content/construction/. Tier 2, because the subject can kill someone:
+  // it teaches no method for disturbing lead paint, no asbestos handling, no gas work and no
+  // service-panel work, and lesson 19 exists so "I ran the checklist" is never mistaken for "the
+  // house was inspected". NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "keeping-a-house",
+    course: KEEPING_A_HOUSE_COURSE,
+    category: "Money & Property",
+    additionalCategories: ["Science & Math", "Civics"],
+    seriesSlug: "the-house-you-live-in",
+    seriesTitle: "The House You Live In",
+    seriesOrder: 3,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Held private until vetted. A hazards, checks and decisions course on lead, asbestos, radon, carbon monoxide and moisture, built only from EPA, CPSC, USFA, DOE and CFR sources. It teaches no repair procedure and confers no credential, and its open source checks are filed in research-checks.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

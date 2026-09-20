@@ -175,6 +175,8 @@ const BACKLOG: Record<string, string> = {
     "PRIVATE study, no series code. Career pathways and credentials, reading a federal regulation and a local ordinance against each other: a genuine CTE and civics candidate, to be MAPPED at the public flip rather than claimed now. Do not widen an existing claim to fit it.",
   "read-the-plan-and-the-code":
     "PRIVATE study, no series code. Reading a technical drawing, a specification and an administrative rule, plus scale and dimension arithmetic: a real candidate for CTE, mathematics and civics standards, to be MAPPED at the public flip rather than claimed now.",
+  "keeping-a-house":
+    "PRIVATE until vetted, no series code. Reading federal hazard guidance and a regulation, risk comparison with stated denominators, and deciding when an amateur must stop: a real candidate for science, health and civics standards, to be MAPPED at the public flip rather than claimed now.",
   "construction-safety":
     "PRIVATE study support, not published. Built from 29 CFR 1926 rather than a curriculum, and held for BAM alone while he takes a construction course elsewhere. No educator can see it, so there is nobody to make a standards promise to.",
   "construction-math":

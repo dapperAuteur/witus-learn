@@ -5427,6 +5427,160 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "County and city building department pages",
     ],
   },
+  // ── keeping-a-house (H02), filed 2026-09-20 with the course ──
+  {
+    key: "kah-epa-firm-locator-url",
+    title: "Is the certified-firm lookup URL the right one?",
+    course: "keeping-a-house",
+    lesson: "where-to-stop",
+    severity: "medium",
+    claim:
+      "The course prints the lookup address that appeared on the federal page it actually fetched. Two other candidate addresses surfaced in search.",
+    question:
+      "What is the authoritative address for finding a certified firm, as the agency itself publishes it?",
+    stakes:
+      "It is the ONE lookup the course tells a learner to run. An address that has moved sends someone to nothing, or worse, to a lookalike.",
+    needs: [
+      "The agency's own current link to its certified-firm locator",
+    ],
+    where: [
+      "The federal lead programme pages",
+    ],
+  },
+  {
+    key: "kah-radon-chart-vintage",
+    title: "How old is the radon risk chart?",
+    course: "keeping-a-house",
+    lesson: "radon-the-number",
+    severity: "medium",
+    claim:
+      "The risk comparison prints its figures with their denominators and their source years. The document's cover date and the publications list disagree about when it was issued, and the chart's underlying data is older than both.",
+    question:
+      "What is the current edition of that guide, and are the comparison figures still the agency's?",
+    stakes:
+      "A risk chart is the most quotable thing in the course, and stale comparison deaths would be quoted onward.",
+    needs: [
+      "The current edition and its date",
+      "Whether the comparison figures have been updated",
+    ],
+    where: [
+      "The federal radon publications list",
+    ],
+  },
+  {
+    key: "kah-state-licensing-and-adoption",
+    title: "Only one state's rule was read",
+    course: "keeping-a-house",
+    lesson: "where-to-stop",
+    severity: "medium",
+    claim:
+      "The course states, in its own text, that only one state's adoption rule was read, and it names no trade as licensed in any named place.",
+    question:
+      "How do licensing and permit thresholds differ by state for the work this course sends people away from?",
+    stakes:
+      "The course's whole decision rule is what an amateur may do, and that line is drawn by a state and a city, not federally.",
+    needs: [
+      "Several states' licensing and permit rules, with sources",
+    ],
+    where: [
+      "State licensing boards and city building departments",
+    ],
+  },
+  {
+    key: "kah-asbestos-use-dates",
+    title: "No asbestos date range is printed",
+    course: "keeping-a-house",
+    lesson: "before-1978",
+    severity: "medium",
+    claim:
+      "No federal date range for asbestos use was verified, so the course gives NONE and teaches condition rather than vintage.",
+    question:
+      "What date range does the federal record support for asbestos in home building materials?",
+    stakes:
+      "A vintage rule of thumb is what people actually use. Teaching condition instead is safer but leaves a question every learner asks.",
+    needs: [
+      "A federal source stating the period",
+    ],
+    where: [
+      "The federal asbestos programme pages",
+    ],
+  },
+  {
+    key: "kah-hud-rehab-guide",
+    title: "A federal rehabilitation guide that would not load",
+    course: "keeping-a-house",
+    lesson: "what-this-course-refuses",
+    severity: "low",
+    claim:
+      "Nine volumes of a federal rehabilitation guide are REPORTED and nothing in the course cites them: the index and all four volume PDFs returned an empty body.",
+    question:
+      "Are those volumes still published, and what do they cover?",
+    stakes:
+      "Low. They would strengthen the decisions half if they exist in a readable form.",
+    needs: [
+      "The volumes themselves, or confirmation that they are withdrawn",
+    ],
+    where: [
+      "The federal housing research publication library",
+    ],
+  },
+  {
+    key: "kah-healthy-housing-manual",
+    title: "A public-domain manual whose PDF refused",
+    course: "keeping-a-house",
+    lesson: "what-fails-and-the-early-signs",
+    severity: "low",
+    claim:
+      "A public-domain federal healthy-housing manual was confirmed by catalogue record but its PDF returned 403, so no content from it is cited.",
+    question:
+      "What does that manual contain that this course should carry?",
+    stakes:
+      "Low, and the course stands without it.",
+    needs: [
+      "A readable copy of the manual",
+    ],
+    where: [
+      "The federal health agency's publication catalogue",
+    ],
+  },
+  {
+    key: "kah-cpsc-5098-date",
+    title: "A publication cited with no date",
+    course: "keeping-a-house",
+    lesson: "water-is-the-master-variable",
+    severity: "low",
+    claim:
+      "One federal leaflet is cited as undated, because the number in its footer is a printing code rather than a stated date.",
+    question:
+      "What is the publication date of that leaflet?",
+    stakes:
+      "Low, and the citation is honest as it stands.",
+    needs: [
+      "The publication date as the agency states it",
+    ],
+    where: [
+      "The federal consumer safety publications list",
+    ],
+  },
+  {
+    key: "kah-745-86-recordkeeping",
+    title: "A recordkeeping rule cited only through a cross-reference",
+    course: "keeping-a-house",
+    lesson: "where-to-stop",
+    severity: "low",
+    claim:
+      "The recordkeeping requirement is reached only through another section's cross-reference; its own text was not read, so no retention period is stated.",
+    question:
+      "What does that recordkeeping section require, and for how long?",
+    stakes:
+      "Low. The course tells a learner to ask for records, not how long a firm must keep them.",
+    needs: [
+      "The text of that section",
+    ],
+    where: [
+      "The Code of Federal Regulations",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
