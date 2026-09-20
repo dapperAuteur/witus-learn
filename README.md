@@ -352,6 +352,30 @@ filed as research checks rather than guessed. The **construction study series**
 (`construction-safety`, `construction-math`) is private for a different reason: it is BAM's own study
 support, never for publication.
 
+## Local private courses (text that never enters this repository)
+
+A course built from a book BAM owns can be held for his own study but not published, and **pushing to
+GitHub is publishing**. Every course under `scripts/data/` is tracked, so `visibility: "private"`
+protects the app and not the text. That is why the construction courses were built from the federal
+regulation rather than from the books beside them.
+
+`content/private-courses/*.json` is the other way to satisfy it. The files sit inside the gitignored
+`/content/` tree, **nothing tracked imports them**, and `pnpm seed:local-private` seeds them into the
+database. A fresh clone carries the pipeline and not a word of the course.
+
+Three safeguards, enforced rather than remembered:
+
+- **`pnpm lint` runs `check:private-courses`**, which fails on any file there that git tracks, caught
+  at `git add` time rather than after a push, and on any file that is not private, free, and given an
+  honest hold reason. **No allowlist**: there is no version of "this copyrighted course text is fine
+  in the repo" that is true.
+- **The seeder refuses to run** if any of those files is tracked, and names the command that undoes it.
+- **It re-asserts private on every run**, rather than trusting the insert-only default, so a course
+  that somehow became public goes back.
+
+This does not license copying. The rule in `content/private-courses/00-READ-ME-FIRST.md` stands:
+BAM's own synthesis in his own words, citing the book rather than reproducing it.
+
 ## Course categories (a course may appear in more than one)
 
 A course has **one primary category** (`courses.category`) and **up to five additional ones**

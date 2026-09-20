@@ -40,7 +40,7 @@
     "gen:pdfs": "tsx scripts/gen-pdfs.ts",
     "gen:standards": "tsx scripts/gen-standards-index.ts",
     "gen:tpt-bundle-standards": "tsx scripts/gen-tpt-bundle-standards.ts",
-    "lint": "eslint && tsx scripts/check-em-dashes.ts && tsx scripts/check-quiz-balance.ts && tsx scripts/check-longest-option.ts && tsx scripts/check-recall-placement.ts && tsx scripts/check-reveals.ts && tsx scripts/check-figures.ts && tsx scripts/check-assessment-fit.ts && tsx scripts/check-standards-coverage.ts && tsx scripts/check-citations.ts && tsx scripts/check-series-codes.ts && tsx scripts/check-page-reachability.ts",
+    "lint": "eslint && tsx scripts/check-em-dashes.ts && tsx scripts/check-quiz-balance.ts && tsx scripts/check-longest-option.ts && tsx scripts/check-recall-placement.ts && tsx scripts/check-reveals.ts && tsx scripts/check-figures.ts && tsx scripts/check-assessment-fit.ts && tsx scripts/check-standards-coverage.ts && tsx scripts/check-citations.ts && tsx scripts/check-series-codes.ts && tsx scripts/check-page-reachability.ts && tsx scripts/check-private-courses.ts",
     "locate:research-checks": "tsx --env-file=.env.local scripts/locate-research-checks.ts",
     "locate:research-checks:prod": "tsx --env-file=.env.prod scripts/locate-research-checks.ts",
     "rag:index": "tsx --env-file=.env.local scripts/rag-index.ts",
@@ -103,7 +103,10 @@
     "tutorial:video": "node scripts/tutorial-video/compose.mjs",
     "typecheck": "next typegen && tsc --noEmit",
     "verify:observability": "tsx scripts/verify-observability.ts",
-    "test:db": "node --env-file=.env.test ./node_modules/vitest/vitest.mjs run"
+    "test:db": "node --env-file=.env.test ./node_modules/vitest/vitest.mjs run",
+    "check:private-courses": "tsx scripts/check-private-courses.ts",
+    "seed:local-private": "tsx --env-file=.env.local scripts/seed-local-private.ts",
+    "seed:local-private:prod": "tsx --env-file=.env.prod scripts/seed-local-private.ts"
   },
   "dependencies": {
     "@langchain/anthropic": "^1.4.0",
