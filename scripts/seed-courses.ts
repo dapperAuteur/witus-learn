@@ -419,9 +419,10 @@ async function main() {
     seriesSlug: "credit",
     seriesTitle: "Credit: Who Gets Named",
     seriesOrder: 9,
-    seriesCode: "CREDIT",
-    seriesPosition: "S2",
-    seriesTrack: "S · Science",
+    // NO seriesCode/seriesPosition: BAM, 2026-09-19, "private courses don't carry CREDIT codes at
+    // all". A code is a promise to a learner about where to start, and a private course is not in
+    // the series a learner can see, so a code would leave a visible gap in the numbering. It keeps
+    // its series SLUG, which is how the owner finds it. Give it a code at the public flip, if ever.
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
@@ -1513,7 +1514,7 @@ async function main() {
       seriesTitle: "Did the Work",
       seriesOrder: 1,
       seriesCode: "DIDWORK",
-      seriesPosition: "S1",
+      seriesPosition: "SHE1",
       seriesTrack: "She Did the Work",
     },
     // How the NAACP Learned to Win — He Did the Work, wave 1 (plans/65 Phase 4.4, "pair launches
@@ -1535,7 +1536,7 @@ async function main() {
       seriesTitle: "Did the Work",
       seriesOrder: 2,
       seriesCode: "DIDWORK",
-      seriesPosition: "H1",
+      seriesPosition: "HIM1",
       seriesTrack: "He Did the Work",
     },
     // Acting: The Frame, the Stage, and the Read (source note: plans/future-courses/acting/acting.md,
@@ -2116,7 +2117,7 @@ async function main() {
       seriesTitle: "Did the Work",
       seriesOrder: 3,
       seriesCode: "DIDWORK",
-      seriesPosition: "S2",
+      seriesPosition: "SHE2",
       seriesTrack: "She Did the Work",
     },
     // Shirley Graham Wrote the Opera First - She Did the Work, wave 2, DIDWORK-S3. The third course
@@ -2151,7 +2152,7 @@ async function main() {
       seriesTitle: "Did the Work",
       seriesOrder: 4,
       seriesCode: "DIDWORK",
-      seriesPosition: "S3",
+      seriesPosition: "SHE3",
       seriesTrack: "She Did the Work",
     },
     // Who Signs the Print — CREDIT-02, the first DISCIPLINE course in the CREDIT series (source
@@ -2284,7 +2285,8 @@ async function main() {
       seriesTitle: "Credit: Who Gets Named",
       seriesOrder: 6,
       seriesCode: "CREDIT",
-      seriesPosition: "R1",
+      seriesPosition: "REC1",
+      seriesTrack: "REC · The record",
     },
     {
       slug: "who-owns-the-steps",
@@ -2294,7 +2296,8 @@ async function main() {
       seriesTitle: "Credit: Who Gets Named",
       seriesOrder: 7,
       seriesCode: "CREDIT",
-      seriesPosition: "C1",
+      seriesPosition: "CHO1",
+      seriesTrack: "CHO · Choreography",
     },
     // CREDIT-S1, the science track. BAM widened the brief on 2026-09-07 from Black subjects to
     // "members of marginalized communities that didnt get credit for their work", and approved
@@ -2307,8 +2310,8 @@ async function main() {
       seriesTitle: "Credit: Who Gets Named",
       seriesOrder: 8,
       seriesCode: "CREDIT",
-      seriesPosition: "S1",
-      seriesTrack: "S · Science",
+      seriesPosition: "SCI1",
+      seriesTrack: "SCI · Science",
     },
     {
       slug: "written-by-himself",
@@ -2318,8 +2321,8 @@ async function main() {
       seriesTitle: "Credit: Who Gets Named",
       seriesOrder: 5,
       seriesCode: "CREDIT",
-      seriesPosition: "W1",
-      seriesTrack: "W · The written record",
+      seriesPosition: "WRI1",
+      seriesTrack: "WRI · The written record",
     },
     // The Match — WARRANT-01, the FIRST course in a new series (Civics). Source brief:
     // plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md, which
@@ -2945,7 +2948,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 20,
     seriesCode: "STORY",
-    seriesPosition: "P1",
+    seriesPosition: "PER1",
     seriesTrack: "Performed",
   });
 
@@ -2960,7 +2963,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 21,
     seriesCode: "STORY",
-    seriesPosition: "P2",
+    seriesPosition: "PER2",
     seriesTrack: "Performed",
   });
 
@@ -2975,7 +2978,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 22,
     seriesCode: "STORY",
-    seriesPosition: "P3",
+    seriesPosition: "PER3",
     seriesTrack: "Performed",
   });
 
@@ -2990,7 +2993,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 10,
     seriesCode: "STORY",
-    seriesPosition: "T1",
+    seriesPosition: "TRU1",
     seriesTrack: "True",
   });
 
@@ -3027,7 +3030,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 11,
     seriesCode: "STORY",
-    seriesPosition: "T2",
+    seriesPosition: "TRU2",
     seriesTrack: "True",
   });
 
@@ -3042,7 +3045,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 12,
     seriesCode: "STORY",
-    seriesPosition: "T3",
+    seriesPosition: "TRU3",
     seriesTrack: "True",
   });
 
@@ -3060,7 +3063,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 13,
     seriesCode: "STORY",
-    seriesPosition: "T4",
+    seriesPosition: "TRU4",
     seriesTrack: "True",
   });
 
@@ -3079,7 +3082,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 30,
     seriesCode: "STORY",
-    seriesPosition: "D1",
+    seriesPosition: "DIS1",
     seriesTrack: "Distributed",
   });
 
