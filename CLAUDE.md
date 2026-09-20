@@ -226,6 +226,66 @@ there as `*.md` (e.g. `course-experience.md`, `live.md`, `pricing.md`). Treat it
   notes and reference docs (`00-report-and-plan.md`) at the top level.
 A note isn't "done" until its behavior ships and the roadmap (`src/lib/roadmap.ts`) reflects it.
 
+## Source-hosting rule — a learner should be able to OPEN the source, and hosting is publishing
+
+**BAM, 2026-09-20: "upload sources to cloudinary and add to bibliography so students may read sources
+in classes/lessons."** A bibliography a learner cannot follow is a claim they have to take on trust,
+which is the opposite of this catalog's whole argument. So every course's `## Sources` entries should
+lead somewhere a learner can actually read, and `course_sources.pdf_url` exists for a copy we host.
+
+**But uploading to Cloudinary is publishing to a public CDN**, with no login and no tenant scoping, so
+the rights question is decided BEFORE the upload, not after. Classify every source into one of three
+tiers and act on it:
+
+- **Tier A · free to host.** US federal works (17 U.S.C. 105: the CFR, OSHA, EPA, CPSC, the Navy
+  manuals, NLM and FAA material), anything out of copyright (the 1893 *Jahrbuch*, a 1913 newspaper
+  page), and anything under an open licence that permits redistribution (name the licence).
+  **Upload to Cloudinary, put the hosted URL in `pdf_url`, and link it from the bibliography.** Keep
+  the original URL in `url` as well, because a hosted copy with no provenance is worth less.
+- **Tier B · link, never rehost.** Copyrighted but publicly readable: a museum's object page, a
+  journal's open-access PDF, a newspaper's free article, a court opinion on a public host. **Cite it
+  and link it. Do not upload it**, even though it opens freely today.
+- **Tier C · cite only.** Copyrighted and paywalled, or a copy BAM owns: the NCCER and Creative
+  Homeowner books, the drone books, a purchased memoir, a subscription journal. **No link to a copy,
+  no upload, ever.** Name the work so he can go to his own shelf, and quote only what fair use plainly
+  allows.
+
+**Three things that follow, and they are not negotiable:**
+
+1. **A tier is decided per SOURCE, not per course.** A private course may hold Tier A sources it may
+   host; a public course may rest on Tier C sources it may not. The course's own visibility is a
+   different question.
+2. **"It opened freely when I fetched it" is not a licence.** That is the Tier B trap, and it is how a
+   catalog ends up hosting somebody's article.
+3. **Hosting is worse to undo than git.** A CDN URL can be scraped, cached and linked before anyone
+   notices. When in doubt, the answer is Tier B.
+
+**Say WHERE in the source, not just which source** (BAM, 2026-09-20). A link to a 300-page volume is
+barely better than no link: the reader has to re-do the finding. Every citation carries a **locator**,
+and the locator is the thing that makes a bibliography teachable rather than decorative:
+
+- **A book or a journal volume:** the printed page. **And when the scan is paginated differently, give
+  both**, because they usually are. Hofstede de Groot's Leyster article is **printed page 190** and
+  **PDF page 262** of the 1893 volume: a reader sent to "page 190" of the file lands 70 pages short.
+- **A regulation or a code:** the section, never the part. 40 CFR 745.85(a)(3), not "the EPA lead rule".
+- **A court opinion:** the part or the star page, so a reader can find the holding rather than reading
+  twelve pages. *Keane*'s damages holding is **Part VI**.
+- **An archive item:** the repository, the collection, the shelfmark or handle, AND the page or sheet.
+- **A manuscript or a form:** the column or the field, because that is often where the finding is. On
+  the Central Pacific payroll sheet the whole argument sits in **which column a name appears in**.
+- **A recording:** the timestamp.
+- **A hosted PDF (Tier A):** append `#page=N` to the URL where the viewer supports it, and still print
+  the printed page in the citation, since the fragment is a convenience and not a guarantee.
+
+**Cite what you actually read.** If the finding came from the page image and the OCR text disagrees,
+the citation points at the image and the lesson says so. Today's OCR is good enough to mislead and not
+good enough to trust, and a locator is what lets the next reader check which one is right.
+
+**How it lands in a course.** Every lesson already ends with an APA 7 `## Sources` block: that stays.
+What this rule adds is that the entry carries a link a learner can open (Tier A or B), or says plainly
+that it is a book they must obtain (Tier C). `pnpm gen:citations` reads what is seeded, so the hosted
+URL belongs on the seeded source record, not only in the lesson prose.
+
 ## Citation-verification rule — a course joins the checkable list when it ships
 
 Two lists, one purpose: nothing in this catalog stays cited-but-unverified.
