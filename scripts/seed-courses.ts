@@ -30,6 +30,7 @@ import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
 import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
 import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
 import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
+import { WHO_THE_RULE_LEAVES_OUT_COURSE } from "./data/who-the-rule-leaves-out-course";
 import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
@@ -563,6 +564,34 @@ async function main() {
     seriesSlug: "credit",
     seriesTitle: "Credit: Who Gets Named",
     seriesOrder: 12,
+  });
+
+  // "Who the Rule Leaves Out" (Delia Derbyshire E-03, Ruby Payne-Scott E-11, Zitkala-Sa E-06).
+  // PRIVATE. BAM decided on 2026-09-20 to keep her standalone course AND build this three-case one,
+  // and to cross-link them: section 4 here teaches her case as an INSTRUMENT and sends the learner
+  // to whose-name-is-on-the-score for the depth, which it names 8 times in lesson bodies and in 15
+  // quiz questions. The argument is that one rule was written down and quoted back at the woman it
+  // removed, one was never written at all, and one was a public register that recorded a man as
+  // author. Two binding conditions carry over and are stated in the text as RULES: the ceremony and
+  // the staging are never described, and no authorship share is ever asserted. A third rule governs
+  // the BBC half: no lesson says there was a written policy, because nobody has read one.
+  // NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-the-rule-leaves-out",
+    course: WHO_THE_RULE_LEAVES_OUT_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Careers & Media", "Science & Math", "Money & Property"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 14,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study, held for two reasons. The BBC half rests on an absence: no document stating the credit rule has been read, so the course says what the papers say and never that a written policy existed. And section 4 teaches a Native woman's case written by a non-Native author, so it needs a Native reviewer with the authority to change or cut any of it, matching whose-name-is-on-the-score.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

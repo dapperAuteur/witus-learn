@@ -169,6 +169,8 @@ const BACKLOG: Record<string, string> = {
     "PRIVATE study, no series code. Sourcing, corroboration and claim-against-evidence, plus quantitative reasoning about counts and the rules behind them, so a real candidate for ELA and mathematics standards; mapped at the public flip rather than claimed for a course no educator can see.",
   "whose-name-is-on-the-score":
     "PRIVATE study, no series code. A primary-source history course on a registration record and a statute (reading a document, corroboration, what a record does and does not settle), so a real candidate for US-history and ELA standards; mapped at the public flip rather than claimed for a course no educator can see.",
+  "who-the-rule-leaves-out":
+    "PRIVATE, no series code. Three instruments (an employer practice, a statute, a public register) read against each other, plus a lesson on how a claim drifts across four retellings: a real candidate for ELA and US-history standards, to be MAPPED at the public flip rather than claimed now.",
   "who-were-the-computers":
     "PRIVATE study, no series code. Source criticism end to end (attribution versus assertion, caption reading, an absence test, a date that does not check out), so a strong candidate for ELA and US-history standards; mapped at the public flip rather than claimed for a course no educator can see.",
   "construction-safety":
