@@ -6398,6 +6398,146 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The society's journal archive",
     ],
   },
+  // ── who-gets-nominated (Chien-Shiung Wu), filed 2026-09-21 with the course ──
+  {
+    key: "wu-proposed-cobalt-60-method",
+    title: "Did she say she proposed the cobalt-60 method?",
+    course: "who-gets-nominated",
+    lesson: "what-the-record-does-not-show",
+    severity: "high",
+    claim:
+      "Her own 1973 account is attributed to her as a later author quotes it, and never asserted. The course does not claim she proposed the method.",
+    question:
+      "Does her 1973 account state that she proposed the cobalt-60 method, and in what words?",
+    stakes:
+      "It is the document that answers the 1971 committee assessment and the physicist who disqualified himself on the same ground. Its answer changes three lessons.",
+    needs: [
+      "Her 1973 chapter, at its cited pages",
+    ],
+    where: [
+      "Maglich (ed.), Adventures in Experimental Physics, Gamma Volume",
+      "A university library",
+    ],
+  },
+  {
+    key: "nomination-count-66-vs-58",
+    title: "The archive and the committee book give different totals",
+    course: "who-gets-nominated",
+    lesson: "the-archive-and-the-search-you-run-yourself",
+    severity: "medium",
+    claim:
+      "The course prints both figures with their sources and labels the multi-nominee explanation a guess.",
+    question:
+      "Why do the archive's 1957 row count and the published committee figure differ?",
+    stakes:
+      "The course teaches a learner to count an archive themselves. It should be able to explain why two honest counts of the same year differ.",
+    needs: [
+      "The counting rule each source used",
+    ],
+    where: [
+      "The nomination archive's own documentation",
+      "The published history of the committee",
+    ],
+  },
+  {
+    key: "nobel-publication-deadline-rule",
+    title: "Is there a rule that the work must predate the prize year?",
+    course: "who-gets-nominated",
+    lesson: "four-stages-and-which-one-failed",
+    severity: "medium",
+    claim:
+      "A deadline rule is reported by one account and the statute behind it is never stated, so the course reports it as that account's and asserts no rule.",
+    question:
+      "Do the statutes contain such a rule, and in what words?",
+    stakes:
+      "It bears on whether the 1957 timing was a rule or a choice.",
+    needs: [
+      "The relevant statute text",
+    ],
+    where: [
+      "The Nobel Foundation statutes",
+    ],
+  },
+  {
+    key: "kurti-sutton-note-publication",
+    title: "Where did the Kurti and Sutton note appear?",
+    course: "who-gets-nominated",
+    lesson: "who-says-so",
+    severity: "medium",
+    claim:
+      "The note is quoted only as a later author quotes it, and its outlet is unnamed in that source.",
+    question:
+      "In what publication and issue did the note appear?",
+    stakes:
+      "A citation that cannot be followed is a weak link in a course about following citations.",
+    needs: [
+      "The publication, date and page",
+    ],
+    where: [
+      "The author who quotes it",
+      "Physics correspondence of the period",
+    ],
+  },
+  {
+    key: "wu-nn-nominators",
+    title: "Who filed the two anonymised nominations?",
+    course: "who-gets-nominated",
+    lesson: "the-archive-and-the-search-you-run-yourself",
+    severity: "low",
+    claim:
+      "Two of the 23 records name no nominator. Two published sources name one person; the database names nobody, so the course names nobody.",
+    question:
+      "Who filed the two nominations the database records as anonymous?",
+    stakes:
+      "Low. The count stands either way.",
+    needs: [
+      "The archive's own record, or a documented identification",
+    ],
+    where: [
+      "The nomination archive",
+      "The published sources that name a nominator",
+    ],
+  },
+  {
+    key: "wu-institutional-firsts-years",
+    title: "The years of her institutional firsts",
+    course: "who-gets-nominated",
+    lesson: "what-a-later-correction-repairs",
+    severity: "low",
+    claim:
+      "A list of institutional firsts is attributed to one author and their years are not printed, because a guessed source URL returned 404 and no authoritative list was read.",
+    question:
+      "What are the dated institutional firsts, from the institutions themselves?",
+    stakes:
+      "Low, and the course prints none of them rather than guessing.",
+    needs: [
+      "An authoritative dated list",
+    ],
+    where: [
+      "Columbia University",
+      "The National Academy of Sciences",
+      "The American Physical Society",
+    ],
+  },
+  {
+    key: "nas-memoir-nobel-absence",
+    title: "Confirm a zero count from page images",
+    course: "who-gets-nominated",
+    lesson: "who-says-so",
+    severity: "low",
+    claim:
+      "The course reports that a biographical memoir of her never mentions the prize, from a text extraction that is known to drop digits. The memoir's words are used and its numbers are not.",
+    question:
+      "Does the printed memoir mention the prize anywhere?",
+    stakes:
+      "Low, but it is an absence used as evidence, and an absence read from a damaged extraction deserves a page-image check.",
+    needs: [
+      "The memoir read from page images",
+    ],
+    where: [
+      "The academy's biographical memoirs",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

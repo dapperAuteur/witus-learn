@@ -32,6 +32,7 @@ import { HOW_A_HOUSE_STANDS_UP_COURSE } from "./data/how-a-house-stands-up-cours
 import { SOUL_TRAIN_THE_BUSINESS_COURSE } from "./data/soul-train-the-business-course";
 import { WHO_THE_RULE_LEAVES_OUT_COURSE } from "./data/who-the-rule-leaves-out-course";
 import { AUTHOR_LINE_AND_FINDING_COURSE } from "./data/the-author-line-and-the-finding-course";
+import { WHO_GETS_NOMINATED_COURSE } from "./data/who-gets-nominated-course";
 import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-prize-course";
 import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
 import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
@@ -687,6 +688,33 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Private study for BAM (plans/83). A live credit dispute with a named contesting party, the Fondation Jerome Lejeune, which publishes its own documents. Built from the Inserm ethics committee's 2014 opinion, the Foundation's three published texts, Inserm's own listing page, and the 1959 and 1969 index records. It reaches no verdict, because the documents it could read do not support one, and it says so.",
+  });
+
+  // "Who Gets Nominated" (Chien-Shiung Wu, plans/83 E-10). PRIVATE, by BAM's approval of 2026-09-20.
+  // The catalog's STAGE TWO case, and the only one whose deciding document is a COUNT rather than a
+  // wording: she received ZERO nominations for the 1957 prize, and the famous 23 run 1958 to 1974,
+  // after it. So the failure was at the nomination stage, not in the citation. The committee's
+  // reasoning is attributed to the two researchers who first read the 1957 file and is never stated
+  // as a committee decision, and the course never asserts that she was excluded for being a woman.
+  // Its counter-evidence carries equal weight: the presentation speech names her and she is first
+  // author on the paper. seriesOrder 13 fills the gap the credit series had. NO series code.
+  // NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-gets-nominated",
+    course: WHO_GETS_NOMINATED_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Science & Math"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 13,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built archive-first: all 23 nomination records read one at a time, the 1957 list counted row by row, and both banquet speeches and both lectures read in full. It contradicts the popular telling of this case, and the committee's reasoning is attributed to the two researchers who first read the 1957 file rather than stated as a committee decision.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
