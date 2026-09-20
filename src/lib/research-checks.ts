@@ -5697,6 +5697,8 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
     where: [
       "The adopted code for the learner's own jurisdiction",
+    ],
+  },
   // ── soul-train-the-business, filed 2026-09-20 with the course. Every hedge printed in a lesson has one. ──
   {
     key: "jpc-ftc-court-discrepancy",
@@ -6118,6 +6120,8 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     where: [
       "Station logs",
       "Trade listings of 2006",
+    ],
+  },
   // ── who-the-rule-leaves-out, filed 2026-09-20 with the course ──
   {
     key: "bbc-credit-rule-document",
@@ -6255,6 +6259,8 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
     where: [
       "National Archives of Australia",
+    ],
+  },
   // ── the-author-line-and-the-finding (Marthe Gautier), filed 2026-09-20 with the course ──
   {
     key: "gautier-2009-own-account",

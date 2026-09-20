@@ -25,19 +25,19 @@ import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
 import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
-import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-prize-course";
-import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
-import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
-import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
-import { AUTHOR_LINE_AND_FINDING_COURSE } from "./data/the-author-line-and-the-finding-course";
-import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
-import { WHO_THE_RULE_LEAVES_OUT_COURSE } from "./data/who-the-rule-leaves-out-course";
-import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
 import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
 import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
 import { KEEPING_A_HOUSE_COURSE } from "./data/keeping-a-house-course";
 import { HOW_A_HOUSE_STANDS_UP_COURSE } from "./data/how-a-house-stands-up-course";
 import { SOUL_TRAIN_THE_BUSINESS_COURSE } from "./data/soul-train-the-business-course";
+import { WHO_THE_RULE_LEAVES_OUT_COURSE } from "./data/who-the-rule-leaves-out-course";
+import { AUTHOR_LINE_AND_FINDING_COURSE } from "./data/the-author-line-and-the-finding-course";
+import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-prize-course";
+import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
+import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
+import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
+import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
+import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -572,16 +572,6 @@ async function main() {
     seriesOrder: 12,
   });
 
-  // "How the Trades Work" (the journeyman orientation). PRIVATE study, by BAM's choice of option B
-  // on 2026-09-20 from plans/future-courses/construction/2026-09-20-journeyman-curriculum-research.md.
-  // The spine is that the freely available information about entering a trade is WRONG, including
-  // about BAM's own city: Indianapolis licenses master and residential electricians and no
-  // journeyman at all, while Indiana does license a journeyman plumber. Commercial guides assert a
-  // Marion County journeyman exam with two contradictory hour figures for a licence that does not
-  // exist, and the course uses that as its worked wrong answer, attributed and never asserted.
-  // It grants no hours, no credit, no credential and no licence, and says so in lessons 1 and 16.
-  // Category is Careers & Media, NOT "Trade Skills": it teaches no trade skill, and a learner
-  // browsing for hands-on training there would be misdirected. NO series code. NO migration.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -589,51 +579,6 @@ async function main() {
     course: HOW_THE_TRADES_WORK_COURSE,
     category: "Careers & Media",
     additionalCategories: ["Money & Property"],
-  // "Soul Train: Who Paid, Who Owned, Who Got Paid". PRIVATE until vetted, by BAM's instruction of
-  // 2026-09-18 and his five answers of 2026-09-20: the outline is PROVISIONAL pending his review;
-  // Joe Cobb's royalty suit is taught as ALLEGATIONS in an UNRESOLVED case; Don Cornelius's death is
-  // given as a DATE and nothing else; the sponsor's 2025 memoir is cited as HIS ACCOUNT, never
-  // reproduced; and why Soul Unlimited ended stays OPEN until the June 1973 issues are read.
-  // Careers & Media with Culture & History beside it, which is what the multi-category feature was
-  // built for. NO series code. NO migration: pnpm seed:courses.
-  await seedAuthoredCourse(db, {
-    tenantId: learnWitus,
-    instructorId,
-    slug: "soul-train-the-business",
-    course: SOUL_TRAIN_THE_BUSINESS_COURSE,
-    category: "Careers & Media",
-    additionalCategories: ["Culture & History"],
-  // "Who the Rule Leaves Out" (Delia Derbyshire E-03, Ruby Payne-Scott E-11, Zitkala-Sa E-06).
-  // PRIVATE. BAM decided on 2026-09-20 to keep her standalone course AND build this three-case one,
-  // and to cross-link them: section 4 here teaches her case as an INSTRUMENT and sends the learner
-  // to whose-name-is-on-the-score for the depth, which it names 8 times in lesson bodies and in 15
-  // quiz questions. The argument is that one rule was written down and quoted back at the woman it
-  // removed, one was never written at all, and one was a public register that recorded a man as
-  // author. Two binding conditions carry over and are stated in the text as RULES: the ceremony and
-  // the staging are never described, and no authorship share is ever asserted. A third rule governs
-  // the BBC half: no lesson says there was a written policy, because nobody has read one.
-  // "The Author Line and the Finding" (Marthe Gautier, plans/83 E-02). PRIVATE, by BAM's decision of
-  // 2026-09-20 that she gets her own course rather than a section of the prize-citation one. The
-  // reason is the INSTRUMENT: a prize citation is written by the body that gave the award and is
-  // permanent; an ethics opinion is written by a body that gave nothing and says of itself that it
-  // may evolve. A LIVE dispute with a named contesting party, the Fondation Jerome Lejeune, whose
-  // case is stated in its own order and its own words. The course reaches NO verdict and says so.
-  // Abortion politics are named once, from each party's own sentences, and never argued.
-  // NO series code. NO migration: pnpm seed:courses.
-  await seedAuthoredCourse(db, {
-    tenantId: learnWitus,
-    instructorId,
-    slug: "who-the-rule-leaves-out",
-    course: WHO_THE_RULE_LEAVES_OUT_COURSE,
-    category: "Culture & History",
-    additionalCategories: ["Careers & Media", "Science & Math", "Money & Property"],
-    seriesSlug: "credit",
-    seriesTitle: "Credit: Who Gets Named",
-    seriesOrder: 14,
-    slug: "the-author-line-and-the-finding",
-    course: AUTHOR_LINE_AND_FINDING_COURSE,
-    category: "Culture & History",
-    additionalCategories: ["Science & Math"],
     navigationMode: "linear",
     price: 0,
     priceType: "free",
@@ -642,13 +587,6 @@ async function main() {
       "Private study for BAM. Every fee, hour, wage, code edition and examination figure was read on 2026-09-20 and prints that date, and several sit on sponsor and vendor pages that will move. Held private until those research checks are answered and the Indiana worked example has been re-checked against the ordinance and the state agencies.",
   });
 
-  // "Reading the Plan and the Code" (H00 of the series "The House You Live In"). PRIVATE study by
-  // BAM's decision of 2026-09-20. Built from two PUBLIC-RELEASE Navy manuals and from state adoption
-  // rules, and it reprints no model code text: the model codes are closed, so the course teaches a
-  // learner to read their own jurisdiction's ADOPTION RULE, which is free and official. Nothing in
-  // it derives from the books in content/construction/. It answers the hedge construction-math
-  // shipped with, quoting that lesson's deferral sentence and mapping the course onto it.
-  // Series slug but NO series code, per the 2026-09-19 rule. NO migration: pnpm seed:courses.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -667,14 +605,6 @@ async function main() {
       "Held private while BAM decides whether the construction series goes public. It reads drawings from two public-release Navy manuals and codes from public adoption rules, reprints no model code text, and states no adoption it could not verify on 2026-09-20.",
   });
 
-  // "Keeping a House" (H02 of "The House You Live In"). PRIVATE, 2026-09-20. THE SCOPE IS THE POINT:
-  // no public source carries step-by-step domestic repair procedure, so this course is HAZARDS,
-  // CHECKS AND DECISIONS, not how-to, and lesson 1 says so in the course's own voice. Built only
-  // from federal sources (EPA, CPSC, USFA, DOE and the CFR) plus one state adoption rule; nothing
-  // derives from the books in content/construction/. Tier 2, because the subject can kill someone:
-  // it teaches no method for disturbing lead paint, no asbestos handling, no gas work and no
-  // service-panel work, and lesson 19 exists so "I ran the checklist" is never mistaken for "the
-  // house was inspected". NO series code. NO migration: pnpm seed:courses.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -693,14 +623,6 @@ async function main() {
       "Held private until vetted. A hazards, checks and decisions course on lead, asbestos, radon, carbon monoxide and moisture, built only from EPA, CPSC, USFA, DOE and CFR sources. It teaches no repair procedure and confers no credential, and its open source checks are filed in research-checks.",
   });
 
-  // "How a House Stands Up" (H01 of "The House You Live In"). PRIVATE, 2026-09-20. Knowledge, not
-  // skill, and the refusal is the design: NO span, header size, beam size, fastener schedule or
-  // footing dimension anywhere, because a wrong number here can put a wall on somebody. Where a
-  // figure would be the answer, it teaches the SHAPE of the rule and sends the learner to
-  // read-the-plan-and-the-code. Built from public-domain federal sources (the Navy builder manuals,
-  // the Forest Products Laboratory wood handbook, 24 CFR 3280, whose manufactured-home scope is
-  // restated at every citation); nothing derives from the books in content/construction/, which
-  // lesson 3 names once as BAM's own reading. NO series code. NO migration: pnpm seed:courses.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -717,8 +639,53 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Private study. Structure is a subject where a wrong sentence can put a wall on somebody, so this is held while a reader with building experience checks it. It teaches knowledge and not skill, gives no span, header size, beam size or fastener schedule, implies no credential, approves no permit, inspects nothing, and substitutes for no trade program.",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "soul-train-the-business",
+    course: SOUL_TRAIN_THE_BUSINESS_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Culture & History"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
       "Private until vetted. A business history built from 1972 to 1974 trade press, a federal appeals court opinion, government and company releases, an open 2024 federal docket and the sponsor's own 2025 memoir. Three things are open and filed as research checks: why the 1973 rival show ended, the discrepancy between the 1977 opinion and the sponsor's account of the same case, and the outcome of the royalty suit, which lesson 22 states is unresolved and which must be re-checked before any public release.",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-the-rule-leaves-out",
+    course: WHO_THE_RULE_LEAVES_OUT_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Careers & Media", "Science & Math", "Money & Property"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 14,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
       "Private study, held for two reasons. The BBC half rests on an absence: no document stating the credit rule has been read, so the course says what the papers say and never that a written policy existed. And section 4 teaches a Native woman's case written by a non-Native author, so it needs a Native reviewer with the authority to change or cut any of it, matching whose-name-is-on-the-score.",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-author-line-and-the-finding",
+    course: AUTHOR_LINE_AND_FINDING_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Science & Math"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
       "Private study for BAM (plans/83). A live credit dispute with a named contesting party, the Fondation Jerome Lejeune, which publishes its own documents. Built from the Inserm ethics committee's 2014 opinion, the Foundation's three published texts, Inserm's own listing page, and the 1959 and 1969 index records. It reaches no verdict, because the documents it could read do not support one, and it says so.",
   });
 
