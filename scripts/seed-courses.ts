@@ -25,6 +25,12 @@ import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
 import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
+import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-prize-course";
+import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
+import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
+import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
+import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
+import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -419,9 +425,144 @@ async function main() {
     seriesSlug: "credit",
     seriesTitle: "Credit: Who Gets Named",
     seriesOrder: 9,
-    seriesCode: "CREDIT",
-    seriesPosition: "S2",
-    seriesTrack: "S · Science",
+    // NO seriesCode/seriesPosition: BAM, 2026-09-19, "private courses don't carry CREDIT codes at
+    // all". A code is a promise to a learner about where to start, and a private course is not in
+    // the series a learner can see, so a code would leave a visible gap in the numbering. It keeps
+    // its series SLUG, which is how the owner finds it. Give it a code at the public flip, if ever.
+  });
+
+  // "The Partner and the Prize" (Denise Scott Brown). PRIVATE study, plans/83 E-23, by BAM's
+  // approval of plans/future-courses/uncredited/2026-09-18-denise-scott-brown-brief.md on
+  // 2026-09-19. Built STANDALONE rather than as a section of the three-case cluster the brief
+  // proposed, because BAM approved only her of that three, and NOT inside public
+  // `the-name-on-the-door`, because he did not lift the private-only rule. NO series code, per the
+  // same day's decision. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-partner-and-the-prize",
+    course: THE_PARTNER_AND_THE_PRIZE_COURSE,
+    category: "Culture & History",
+    navigationMode: "linear",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from public institutional records: the Pritzker Architecture Prize's own 1991 laureate page, jury citation and laureate list, the 2013 jury letter as reproduced by ArchDaily, the author's own published essay, and the AIA's Gold Medal rule.",
+  });
+
+  // "Notes Made by Mr. George Hunt" (plans/83 E-04). PRIVATE study, by BAM's approval of
+  // plans/future-courses/uncredited/2026-09-18-george-hunt-brief.md on 2026-09-19, under the A6
+  // condition he confirmed: no stories, songs, prayers, hereditary names or ceremonial detail, and
+  // no Kwak'wala personal name printed anywhere. The subject is the CREDIT RECORD (title pages,
+  // archive filing, the named re-attribution work), never the knowledge. NO series code. The hold
+  // names the reviewer it waits on, as the accessibility courses do. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "notes-made-by-mr-george-hunt",
+    course: GEORGE_HUNT_COURSE,
+    category: "Culture & History",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Held private until a Kwakwaka'wakw reader has reviewed it, proposed through the U'mista Cultural Centre, which co-presented The Story Box, with the authority to change or cut any part. Written from public catalogue records, archive pages and published scholarship; it prints no Kwak'wala personal name and no ceremonial detail, and says so in its own text.",
+  });
+
+  // "Who May Teach" (Emmy Noether, plans/83 E-19). PRIVATE study, by BAM's approval of
+  // plans/future-courses/uncredited/2026-09-18-emmy-noether-brief.md on 2026-09-19. Section 6 is
+  // four corrections to the popular version, all settled against the digitised Goettingen
+  // catalogues: six semesters not four years, no 19 November 1915 vote in any source, the ministry
+  // rather than an academic senate, and "gratis" as a fee category printed on Hilbert's own
+  // seminars. FIRST COURSE TO USE additionalCategories (migration 0062): it is history and it is
+  // mathematics, and the primary decides curriculum order. NO series code. NO migration beyond
+  // 0062, which the bundle already carries: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-may-teach",
+    course: WHO_MAY_TEACH_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Science & Math"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from the digitised Goettingen course catalogues on GDZ, read as page images, and from Tollmien and Ihringer. It reproduces no scan, because SUB Goettingen's terms require written permission, and lesson 8 tells the learner why.",
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 10,
+  });
+
+  // "What the Citation Records" (plans/83 E-05 Candace Pert and E-09 Frieda Robscheit-Robbins).
+  // PRIVATE study, by BAM's approval of both briefs on 2026-09-19. Two cases, not the four the
+  // briefs proposed, because he approved only these two; Karle (E-20) and Gautier (E-02) are on
+  // hold in plans/88. The course is keyed by PRIZE YEAR rather than by case number, so a 1985 or a
+  // 1959 section splices in at its own year with no renumbering. The Lasker 1978 page is its
+  // primary-source exercise, and it stays inside this private course: BAM did not lift the
+  // private-only rule. NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "what-the-citation-records",
+    course: WHAT_THE_CITATION_RECORDS_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Science & Math"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Two prize-credit cases built from published documents: the Lasker Foundation's own 1978 award page, the 1934 Nobel ceremony record and lecture, Garfield's 1979 essay read against page images, and the authorship record re-derived from Crossref and PubMed.",
+  });
+
+  // "Whose Name Is on the Score" (Zitkala-Sa, plans/83 E-06). PRIVATE study, by BAM's approval of
+  // plans/future-courses/uncredited/2026-09-18-zitkala-sa-brief.md on 2026-09-19, built STANDALONE
+  // because Delia Derbyshire was still being researched that day. Sections 1 and 4 are the general
+  // frame and name no second subject, so a Derbyshire section drops in between 3 and 4 without
+  // renaming the course or rewriting a lesson. A6 condition BAM confirmed: the course never
+  // describes the ceremony or the opera's staging of it, and lesson 1 says that is a rule and not a
+  // gap. NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "whose-name-is-on-the-score",
+    course: WHOSE_NAME_ON_THE_SCORE_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Money & Property"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from the copyright registration cards read as images, the 1909 Copyright Act, and published scholarship. If it is ever considered for release it needs a Native reviewer with the authority to change or cut any of it.",
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 11,
+  });
+
+  // "Who Were the Computers" (the six ENIAC programmers, plans/83 E-13). PRIVATE study, by BAM's
+  // approval of plans/future-courses/uncredited/2026-09-18-eniac-six-brief.md on 2026-09-19, under
+  // the condition he approved it on: NO lesson states the 1946-caption claim as fact until an
+  // original caption is read. It is attributed to Kathy Kleiman by name everywhere it appears, and
+  // section 4 teaches the gap as a gap. NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-were-the-computers",
+    course: WHO_WERE_THE_COMPUTERS_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["AI & Technology", "Science & Math"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Its central claim, that the 1946 press captions named the men and not the women, is ATTRIBUTED to Kathy Kleiman throughout and asserted nowhere, because no original caption has been read. Built from the Army's own photograph captions, published interviews and institutional records.",
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 12,
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
@@ -1513,7 +1654,7 @@ async function main() {
       seriesTitle: "Did the Work",
       seriesOrder: 1,
       seriesCode: "DIDWORK",
-      seriesPosition: "S1",
+      seriesPosition: "SHE1",
       seriesTrack: "She Did the Work",
     },
     // How the NAACP Learned to Win — He Did the Work, wave 1 (plans/65 Phase 4.4, "pair launches
@@ -1535,7 +1676,7 @@ async function main() {
       seriesTitle: "Did the Work",
       seriesOrder: 2,
       seriesCode: "DIDWORK",
-      seriesPosition: "H1",
+      seriesPosition: "HIM1",
       seriesTrack: "He Did the Work",
     },
     // Acting: The Frame, the Stage, and the Read (source note: plans/future-courses/acting/acting.md,
@@ -2116,7 +2257,7 @@ async function main() {
       seriesTitle: "Did the Work",
       seriesOrder: 3,
       seriesCode: "DIDWORK",
-      seriesPosition: "S2",
+      seriesPosition: "SHE2",
       seriesTrack: "She Did the Work",
     },
     // Shirley Graham Wrote the Opera First - She Did the Work, wave 2, DIDWORK-S3. The third course
@@ -2151,7 +2292,7 @@ async function main() {
       seriesTitle: "Did the Work",
       seriesOrder: 4,
       seriesCode: "DIDWORK",
-      seriesPosition: "S3",
+      seriesPosition: "SHE3",
       seriesTrack: "She Did the Work",
     },
     // Who Signs the Print — CREDIT-02, the first DISCIPLINE course in the CREDIT series (source
@@ -2284,7 +2425,8 @@ async function main() {
       seriesTitle: "Credit: Who Gets Named",
       seriesOrder: 6,
       seriesCode: "CREDIT",
-      seriesPosition: "R1",
+      seriesPosition: "REC1",
+      seriesTrack: "REC · The record",
     },
     {
       slug: "who-owns-the-steps",
@@ -2294,7 +2436,8 @@ async function main() {
       seriesTitle: "Credit: Who Gets Named",
       seriesOrder: 7,
       seriesCode: "CREDIT",
-      seriesPosition: "C1",
+      seriesPosition: "CHO1",
+      seriesTrack: "CHO · Choreography",
     },
     // CREDIT-S1, the science track. BAM widened the brief on 2026-09-07 from Black subjects to
     // "members of marginalized communities that didnt get credit for their work", and approved
@@ -2307,8 +2450,8 @@ async function main() {
       seriesTitle: "Credit: Who Gets Named",
       seriesOrder: 8,
       seriesCode: "CREDIT",
-      seriesPosition: "S1",
-      seriesTrack: "S · Science",
+      seriesPosition: "SCI1",
+      seriesTrack: "SCI · Science",
     },
     {
       slug: "written-by-himself",
@@ -2318,8 +2461,8 @@ async function main() {
       seriesTitle: "Credit: Who Gets Named",
       seriesOrder: 5,
       seriesCode: "CREDIT",
-      seriesPosition: "W1",
-      seriesTrack: "W · The written record",
+      seriesPosition: "WRI1",
+      seriesTrack: "WRI · The written record",
     },
     // The Match — WARRANT-01, the FIRST course in a new series (Civics). Source brief:
     // plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md, which
@@ -2945,7 +3088,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 20,
     seriesCode: "STORY",
-    seriesPosition: "P1",
+    seriesPosition: "PER1",
     seriesTrack: "Performed",
   });
 
@@ -2960,7 +3103,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 21,
     seriesCode: "STORY",
-    seriesPosition: "P2",
+    seriesPosition: "PER2",
     seriesTrack: "Performed",
   });
 
@@ -2975,7 +3118,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 22,
     seriesCode: "STORY",
-    seriesPosition: "P3",
+    seriesPosition: "PER3",
     seriesTrack: "Performed",
   });
 
@@ -2990,7 +3133,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 10,
     seriesCode: "STORY",
-    seriesPosition: "T1",
+    seriesPosition: "TRU1",
     seriesTrack: "True",
   });
 
@@ -3027,7 +3170,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 11,
     seriesCode: "STORY",
-    seriesPosition: "T2",
+    seriesPosition: "TRU2",
     seriesTrack: "True",
   });
 
@@ -3042,7 +3185,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 12,
     seriesCode: "STORY",
-    seriesPosition: "T3",
+    seriesPosition: "TRU3",
     seriesTrack: "True",
   });
 
@@ -3060,7 +3203,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 13,
     seriesCode: "STORY",
-    seriesPosition: "T4",
+    seriesPosition: "TRU4",
     seriesTrack: "True",
   });
 
@@ -3079,7 +3222,7 @@ async function main() {
     seriesTitle: "Storytelling",
     seriesOrder: 30,
     seriesCode: "STORY",
-    seriesPosition: "D1",
+    seriesPosition: "DIS1",
     seriesTrack: "Distributed",
   });
 

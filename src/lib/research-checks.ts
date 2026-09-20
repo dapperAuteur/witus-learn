@@ -1558,7 +1558,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
   },
 
-  // ── The Editor of The Crisis (DIDWORK-S2) ─────────────────────────────────────────────────────
+  // ── The Editor of The Crisis (DIDWORK-SHE2) ─────────────────────────────────────────────────────
   {
     key: "jrf-birthplace",
     course: "the-editor-of-the-crisis",
@@ -1689,7 +1689,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Carolyn Wedin Sylvander (1981), and Deborah E. McDowell's introductions to the Beacon Press reissues",
     ],
   },
-  // ── Shirley Graham Wrote the Opera First (DIDWORK-S3) ─────────────────────────────────────────
+  // ── Shirley Graham Wrote the Opera First (DIDWORK-SHE3) ─────────────────────────────────────────
   // Nine hedges, all of them written into lessons rather than left implicit. The pattern worth
   // noticing: this subject shaved years off her own age in print, so the ordinary trick of
   // preferring the earliest source fails on her, and several of these can only be closed by a
@@ -2219,7 +2219,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "NOMA's national office, which now stewards the directory",
     ],
   },
-  // ── Written by Himself (CREDIT-W1) ────────────────────────────────────────────────────────────
+  // ── Written by Himself (CREDIT-WRI1) ────────────────────────────────────────────────────────────
   {
     key: "wbh-malcolm-x-first-printing-year",
     course: "written-by-himself",
@@ -4165,7 +4165,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Jim Thatcher's published writing on the history of screen readers, and IBM's own records",
     ],
   },
-  // ── who-built-the-blood-bank (CREDIT-S2, Charles Drew), filed 2026-09-18 with the course ──
+  // ── who-built-the-blood-bank (Charles Drew, private, no series code), filed 2026-09-18 with the course ──
   {
     key: "drew-red-cross-director",
     title: "Who directed the first American Red Cross blood bank (1941)?",
@@ -4262,6 +4262,902 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "UNC Libraries DocSouth, its pages on the Greensboro golf case",
       "Greensboro Daily News and Greensboro Record, December 1955 and the trial dates",
       "The appellate record in the Greensboro Six case, if the sentences were reviewed",
+    ],
+  },
+  // ── the-partner-and-the-prize (Denise Scott Brown), filed 2026-09-20 with the course ──
+  {
+    key: "dsb-pritzker-purpose-1991",
+    title: "What did the Pritzker's stated purpose say in 1991?",
+    course: "the-partner-and-the-prize",
+    lesson: "what-a-prize-names",
+    quote:
+      "This course quotes the wording as it stands today and does not claim it is the wording that was in force in 1991, because it did not read the 1991 text.",
+    severity: "medium",
+    claim:
+      "Lessons 3 and 13 quote the CURRENT purpose wording, \"To honor a living architect or architects whose built work demonstrates...\", labelled as current, and use the plural as evidence that the format permits more than one name.",
+    question:
+      "What was the verbatim wording of the prize's purpose statement in force in 1991, and did it then read \"architect or architects\"?",
+    stakes:
+      "The most load-bearing hedge in the course. Section 4 argues the 1991 refusal was not a format problem. If the 1991 wording was singular, that argument weakens and lesson 13 needs rewriting; if it was already plural, the hedge can go.",
+    needs: ["The verbatim purpose sentence as published in or before 1991, with its source and date"],
+    where: [
+      "The Hyatt Foundation's printed materials for 1991",
+      "An archived capture of pritzkerprize.com from the early web",
+      "The prize's published monographs and annual ceremony programmes",
+    ],
+  },
+  {
+    key: "dsb-pritzker-since-2013",
+    title: "Has any Pritzker jury since 2013 acted on the eligibility the letter affirms?",
+    course: "the-partner-and-the-prize",
+    lesson: "total-body-of-built-work",
+    quote:
+      "It did not check the years after 2013 for that purpose, and rather than guess, it files the question as an open one.",
+    severity: "medium",
+    claim:
+      "Lesson 15 states the 2013 letter's offer of continued eligibility and says plainly that this course does not know what became of it.",
+    question: "Has any Pritzker jury since 2013 awarded the prize to a partnership in a way that acts on that eligibility?",
+    stakes: "A learner will ask. Leaving it open is honest; leaving it open forever is a gap.",
+    needs: ["The laureate list read year by year from 2013 forward, with the answer stated either way"],
+    where: ["pritzkerprize.com/laureates"],
+  },
+  {
+    key: "dsb-vsba-firm-name-years",
+    title: "In what years did the firm's name change?",
+    course: "the-partner-and-the-prize",
+    lesson: "three-words-for-one-person",
+    quote:
+      "This course does not print the years in which the firm's name changed, because the archive page that would settle them could not be opened.",
+    severity: "low",
+    claim:
+      "The course says only that the name changed over time, and that The Cultural Landscape Foundation records the practice as formerly known as Venturi, Rauch and Scott Brown.",
+    question: "In what years did the practice become Venturi, Rauch and Scott Brown, and then Venturi, Scott Brown and Associates?",
+    stakes: "Low. Nothing in the argument depends on the dates; they would sharpen lesson 2.",
+    needs: ["The two dates, from a record rather than a search summary"],
+    where: [
+      "The Architectural Archives of the University of Pennsylvania (the page returned 403 on 2026-09-18)",
+      "The firm's own published chronology",
+    ],
+  },
+  {
+    key: "dsb-petition-laureate-signatories",
+    title: "How many Pritzker laureates signed the 2013 petition?",
+    course: "the-partner-and-the-prize",
+    lesson: "the-2013-petition",
+    quote: "A larger figure for laureate signatories circulates in search results; this course prints only the five it read, as of that April date.",
+    severity: "low",
+    claim:
+      "Lesson 9 prints the five laureates Architectural Record named on 9 April 2013 and attaches that date to the figure.",
+    question: "How many Pritzker laureates ultimately signed the 2013 petition, and who were they?",
+    stakes: "Low, but it is the kind of number that gets repeated. A larger count seen only in a search snippet must not enter the lesson.",
+    needs: ["A dated source naming each laureate signatory"],
+    where: ["The petition's own signatory list", "Architectural Record's later coverage", "Architects' Journal coverage of the campaign"],
+  },
+  {
+    key: "dsb-room-at-the-top-printed-text",
+    title: "The \"nook\" garble in the reprint of \"Room at the Top?\"",
+    course: "the-partner-and-the-prize",
+    lesson: "the-information-sheet",
+    quote: "In the reprint read for this course, the sentence continues \"the person who signed the article or the nook\".",
+    severity: "low",
+    claim: "The course quotes up to the unambiguous part, prints the garble openly, and says the word is almost certainly \"book\".",
+    question: "What does the printed text read at that point, in the 1989 Smithsonian Institution Press edition or the 2009 AA Words Four reprint?",
+    stakes: "Low, and the lesson uses the garble deliberately as a fidelity example. Settling it lets the lesson say what the text reads rather than what it probably reads.",
+    needs: ["The sentence as printed, with page number and edition"],
+    where: [
+      "Berkeley and McQuaid (Eds.), Architecture: A Place for Women (1989), pp. 237-246",
+      "AA Words Four: Having Words (2009), pp. 79-89",
+    ],
+  },
+  {
+    key: "dsb-aia-two-person-rule-date",
+    title: "When did the AIA Gold Medal rule change to admit two individuals?",
+    course: "the-partner-and-the-prize",
+    lesson: "a-format-that-holds-two-names",
+    severity: "low",
+    claim:
+      "The course prints the rule and no date for its adoption, matching the treatment in `the-name-on-the-door` lesson 22, because the AIA's page states the rule and not its history.",
+    question: "When was the AIA Gold Medal's eligibility rule changed to admit two individuals?",
+    stakes:
+      "A date would show whether the two-person rule predated or followed the 2016 award, which is the difference between a format that was already open and one that opened.",
+    needs: ["The adoption date, with the AIA document that records it"],
+    where: ["AIA board resolutions", "AIA award programme histories and the institute's archives"],
+  },
+  // ── notes-made-by-mr-george-hunt, filed 2026-09-20 with the course ──
+  {
+    key: "hunt-kwakiutl-texts-title-page",
+    title: "How is George Hunt's credit actually set in type on the Kwakiutl Texts title pages?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "four-rungs-and-two-absences",
+    quote:
+      "Nobody in this course has read the printed title page.",
+    severity: "high",
+    claim:
+      "Four catalogue records and the Bard curators state Hunt is named on the title pages as author or co-author. The course ATTRIBUTES this and never asserts it, and two quiz questions test the distinction.",
+    question:
+      "On the printed title pages of Kwakiutl Texts (1902-1905) and Kwakiutl Texts: Second Series (1906), is Hunt named, in the same size type as Boas or smaller, joined by a conjunction or set on a separate line?",
+    stakes:
+      "The TOP RUNG of the course credit ladder. If the page sets Hunt in smaller type, or omits him from the first series, lesson 2's count of author or co-author on three publications needs revising.",
+    needs: [
+      "The title pages of both series, read as printed",
+    ],
+    where: [
+      "AMNH Digital Library, handles 2246/23 and 2246/22, downloaded in a BROWSER (the API refuses anonymous requests with HTTP 401; HathiTrust, BHL and Gallica returned 403; the first series is not on the Internet Archive)",
+      "BAM's manual link list, task 308",
+    ],
+  },
+  {
+    key: "hunt-note-on-a-broken-promise",
+    title: "Hunt's note accusing Boas of publishing a promised secret",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "who-decides-what-is-published",
+    quote:
+      "Columbia reports such a note, and what Hunt consented to have published is an open question.",
+    severity: "medium",
+    claim:
+      "Columbia's 2023 post reports a note in which Hunt accuses Boas of publishing information he had promised not to make public. The post does not identify the page, and the course builds nothing on it.",
+    question:
+      "In which volume and on which page of the Hunt manuscripts does that note appear, and what does it say?",
+    stakes:
+      "It would be the only evidence in this record where the person being published objects in his own hand while both men were alive.",
+    needs: [
+      "The volume and page, and the wording as written",
+    ],
+    where: [
+      "Columbia University Rare Book and Manuscript Library; ask RBML which volume",
+    ],
+  },
+  {
+    key: "hunt-1929-medal-letter",
+    title: "The January 1929 letter about a medal",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "who-decides-what-is-published",
+    severity: "low",
+    claim:
+      "Columbia's 2023 post quotes a January 1929 letter in which Hunt writes that he thinks Boas should get him a medal for these writings. The letter is at the APS and was not read for this course.",
+    question:
+      "What does the January 1929 letter say, in full, and what is its exact date?",
+    stakes:
+      "Low. It colours how Hunt saw his own standing, and the course reports it as Columbia's report rather than as his words.",
+    needs: [
+      "The letter itself, with its date and full sentence",
+    ],
+    where: [
+      "American Philosophical Society, Hunt and Boas correspondence, indexed at over 1000 pages",
+    ],
+  },
+  {
+    key: "hunt-birth-and-death-dates",
+    title: "1854 to 1933, or 1856 to 1931?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "fort-rupert-and-a-record-that-varies",
+    quote:
+      "The American Philosophical Society gives 1856 to 1931.",
+    severity: "medium",
+    claim:
+      "Bard and the Canadian Encyclopedia give 1854 to 1933; the American Philosophical Society gives 1856 to 1931. The course uses 1854-1933 and names the disagreement in the lesson.",
+    question:
+      "What years do the records give for George Hunt's birth and death?",
+    stakes:
+      "A course about a record that cannot spell a name twice the same way should be able to say when the man lived.",
+    needs: [
+      "A baptismal, census, Hudson's Bay Company post or vital record naming the year",
+    ],
+    where: [
+      "British Columbia vital statistics",
+      "Fort Rupert post records",
+      "The APS authority record for the collection",
+    ],
+  },
+  {
+    key: "columbia-hunt-page-and-volume-count",
+    title: "Nearly 8,000 pages in 14 volumes, or about 8,500 in thirty?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "filed-as-boass-gift",
+    quote:
+      "Two pages from one university, two counts, two volume figures.",
+    severity: "low",
+    claim:
+      "Columbia's RBML post says nearly 8,000 pages in 14 volumes; the same university's 2023 acquisitions list says about 8,500 pages in thirty volumes. The course prints both and teaches the disagreement.",
+    question:
+      "What do the finding aid's own figures say, and what is its call number?",
+    stakes:
+      "Low, and the lesson uses the disagreement deliberately. Settling it would let the course state one figure.",
+    needs: [
+      "The figure in the finding aid itself, and the call number",
+    ],
+    where: [
+      "Columbia RBML finding aid, George Hunt Kwak'wala ethnographic manuscripts",
+    ],
+  },
+  {
+    key: "story-box-umista-dates",
+    title: "When did The Story Box show at U'mista?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "the-story-box",
+    quote:
+      "The dates of the Alert Bay showing are not settled by any source this course read.",
+    severity: "low",
+    claim:
+      "The Bard exhibition page gives 14 February to 7 July 2019 for the New York showing and says the exhibition was also at the U'mista Cultural Centre, without dates. Two secondary records disagree about the Alert Bay run.",
+    question:
+      "What were the dates of The Story Box at the U'mista Cultural Centre in Alert Bay?",
+    stakes:
+      "Low. The course says plainly that its sources do not settle them.",
+    needs: [
+      "The U'mista Cultural Centre's own announcement of its run",
+    ],
+    where: [
+      "U'mista Cultural Centre, Alert Bay",
+      "The Bard Graduate Center exhibition archive",
+    ],
+  },
+  {
+    key: "hunt-600-pages-of-corrections-whereabouts",
+    title: "Where are Hunt's 600 pages of corrections?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "six-hundred-pages-of-corrections",
+    quote:
+      "Whether those six hundred pages were ever printed, and where they are now, is not established by anything read for this course.",
+    severity: "medium",
+    claim:
+      "Bard states that by his death in 1933 Hunt had sent Boas more than 600 pages of corrections and emendations. Nothing fetched says where they are held or whether any were printed.",
+    question:
+      "Where are those pages now, and was any of that work ever published?",
+    stakes:
+      "The course's closing argument is that the correcting never stopped. Knowing whether the corrections were printed is the difference between a record that was fixed and one that was filed.",
+    needs: [
+      "The archival location, and whether the corrections have been or will be published",
+    ],
+    where: [
+      "The Distributed Text project, Bard Graduate Center",
+      "APS CNAIR",
+      "Columbia RBML",
+      "American Museum of Natural History",
+    ],
+  },
+  {
+    key: "hunt-1900-potlatching-case-record",
+    title: "What did the 1900 court actually find?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "the-book-as-evidence",
+    quote:
+      "It does not show what the court found decisive, because nobody in this course has read the court record.",
+    severity: "low",
+    claim:
+      "Bard records that after Hunt's arrest for potlatching, Boas mailed a copy of the 1897 book to a colleague in Victoria to be entered in court, and that Hunt was acquitted. The course says the book was entered and an acquittal followed, never that the book saved him.",
+    question:
+      "What was the charge, and what reason did the court give for the acquittal?",
+    stakes:
+      "Low, and the lesson is built on the gap. A record would let the course say what the book did rather than what followed it.",
+    needs: [
+      "The court record, or a contemporary newspaper report naming the charge and the reason",
+    ],
+    where: [
+      "British Columbia Archives, Victoria",
+      "Victoria and Vancouver newspapers of 1900",
+    ],
+  },
+  // ── who-may-teach (Emmy Noether), filed 2026-09-20 with the course ──
+  {
+    key: "noether-1918-paper-as-habilitation-thesis",
+    title: "Was the 1918 paper Noether's habilitation thesis?",
+    course: "who-may-teach",
+    lesson: "the-paper-of-1918",
+    quote:
+      "None of the sources read for this course says it.",
+    severity: "medium",
+    claim:
+      "Lesson 16 declines the widely repeated claim that the 1918 paper served as her habilitation work, and teaches the dated sequence instead: the paper presented by Klein on 26 July 1918, Einstein to Klein on 27 December 1918, the third application on 18 January 1919, and the trial lecture on 4 June 1919.",
+    question:
+      "What work was submitted with the January 1919 habilitation application?",
+    stakes:
+      "The brief's own outline states the link, so a course that silently drops it looks evasive and one that asserts it teaches an unsourced connection. Settling it either restores a good closing beat or confirms a correction worth publishing.",
+    needs: [
+      "A statement, from the habilitation file or a historian working from it, naming the work submitted with the January 1919 application",
+    ],
+    where: [
+      "Tollmien's 1990 documentary article (its volume and pages are REPORTED only and appear nowhere in the course)",
+      "The Goettingen university archive's habilitation file",
+    ],
+  },
+  {
+    key: "goettingen-catalogue-fee-words",
+    title: "What did gratis, privatim and privatissime mean in the catalogue?",
+    course: "who-may-teach",
+    lesson: "how-to-read-a-catalogue-entry",
+    quote:
+      "This course does not tell you what those categories meant in detail, because none of the sources read for it defines the Goettingen fee words.",
+    severity: "medium",
+    claim:
+      "The course teaches only what it can show: gratis appears on many professors' courses on the same pages, MacTutor renders it as no tuition, and one Noether entry reads privatim instead.",
+    question:
+      "What did the three fee categories mean in a German university course catalogue of the 1910s?",
+    stakes:
+      "The fourth correction in section 6 turns on the fee word not being a statement about the teacher's pay. The argument holds without definitions, but a documented definition would make section 3 teach the format rather than gesture at it.",
+    needs: [
+      "A contemporary definition of the three fee categories, with the source that defines them",
+    ],
+    where: [
+      "The front matter of any volume in GDZ PPN654655340",
+      "Prussian university regulations of the period",
+      "A history of German university teaching practice",
+    ],
+  },
+  {
+    key: "noether-pay-1916-1919",
+    title: "Was Noether paid anything for the teaching of 1916 to 1919?",
+    course: "who-may-teach",
+    lesson: "a-title-without-a-salary",
+    quote:
+      "What Noether was paid, if anything, for the six semesters of teaching between 1916 and 1919 is not settled by anything read for this course.",
+    severity: "medium",
+    claim:
+      "The course refuses both the she-taught-for-free reading of gratis and any claim that she was paid, and says so twice.",
+    question:
+      "What, if anything, was Noether paid for the six semesters of teaching between 1916 and 1919?",
+    stakes:
+      "The popular version's most repeated single detail. A pay record would either confirm the substance of a claim whose usual evidence is wrong, or refute it outright.",
+    needs: [
+      "A university or ministry pay record covering Noether at Goettingen, 1916 to 1919",
+      "Who received the fees for the one privatim entry",
+    ],
+    where: [
+      "The Goettingen university archive, curator's accounts",
+      "Tollmien's 1990 article",
+    ],
+  },
+  {
+    key: "prussian-ministry-change-1917-1919",
+    title: "What changed at the ministry between 1917 and 1919?",
+    course: "who-may-teach",
+    lesson: "einstein-to-klein",
+    quote:
+      "What the sources read for this course do not contain is any document explaining what changed inside the ministry.",
+    severity: "low",
+    claim:
+      "Lesson 12 states the refusal of 5 November 1917 and the statement of no objection of 8 May 1919, and declines to explain the reversal.",
+    question:
+      "What decision or change of policy lies behind the ministry's 1919 answer?",
+    stakes:
+      "The only causal question the course leaves entirely open, and a reader who wants a villain or a hero will fill it in themselves if nobody does.",
+    needs: [
+      "A ministry document, or a historian's account resting on one",
+    ],
+    where: [
+      "Tollmien's 1990 article",
+      "Prussian ministry of education files for 1918 to 1919",
+    ],
+  },
+  {
+    key: "goettingen-catalogue-1919-autumn-scan",
+    title: "Confirm the autumn 1919 catalogue line against the page image",
+    course: "who-may-teach",
+    lesson: "her-own-name-in-the-catalogue",
+    quote:
+      "This one is Tollmien's transcription, not a reading of the page image: the scan for that volume was not opened for this course.",
+    severity: "low",
+    claim:
+      "The course prints the autumn 1919 entry as Tollmien's transcription and marks its evidential level, because that volume's scan was not opened.",
+    question:
+      "What does the Herbstzwischensemester 1919 entry read, as printed on the page image?",
+    stakes:
+      "It is the one line in the course that shows the record correcting itself, and the only catalogue line not read on a scan. Section 3 has already shown Tollmien's transcriptions differing from the images in three places.",
+    needs: [
+      "The page image for the 1919 autumn volume, and the entry as printed",
+    ],
+    where: [
+      "GDZ PPN654655340 for 1919/20 (its manifest returned HTTP 500 on 2026-09-18)",
+      "The library reading room, or gdz@sub.uni-goettingen.de",
+    ],
+  },
+  {
+    key: "noether-1933-removal-document",
+    title: "What document ended Noether's position in 1933?",
+    course: "who-may-teach",
+    lesson: "nineteen-thirty-three",
+    quote:
+      "It does not have the document that ended her position at Goettingen, and it does not quote one.",
+    severity: "low",
+    claim:
+      "Lesson 18 gives the sequence (the civil-service law of 7 April 1933, then emigration in October 1933) as a sequence, and asserts no causal link.",
+    question:
+      "What document ended her position at Goettingen, and what does it say?",
+    stakes:
+      "The course's last section is deliberately thin. If the dismissal document exists and is quotable, the ending can rest on a document like the rest of the course.",
+    needs: [
+      "The dismissal document, or a historian quoting it",
+    ],
+    where: [
+      "The Goettingen university archive",
+      "Tollmien",
+      "Published work on the 1933 dismissals",
+    ],
+  },
+  {
+    key: "goettingen-staff-indexes-1917-1919",
+    title: "Do the other five staff indexes also omit her?",
+    course: "who-may-teach",
+    lesson: "the-index-where-the-name-is-not",
+    quote:
+      "Only the winter 1916/17 index was checked.",
+    severity: "low",
+    claim:
+      "Lesson 10 states the omission for one semester only, the winter of 1916/17, and says so out loud.",
+    question:
+      "Do the staff indexes for the other five semesters carry a Noether entry?",
+    stakes:
+      "Six omissions are a pattern and one is an anecdote. It is also the cheapest check in this list: five page images, already digitised and free to read.",
+    needs: [
+      "The staff index pages for the five remaining semesters, and whether any carries a Noether entry",
+    ],
+    where: [
+      "GDZ PPN654655340, the same series as the entries in section 3",
+    ],
+  },
+  // ── what-the-citation-records (Pert, Robscheit-Robbins), filed 2026-09-20 ──
+  {
+    key: "citation-records-marx-1979-original",
+    title: "Read the 1979 Science news item in print",
+    course: "what-the-citation-records",
+    lesson: "the-argument-in-print",
+    quote:
+      "Its text was read for this course in a reprint posted in 2014 on an interested site.",
+    severity: "medium",
+    claim:
+      "The 1979 Science piece was read in a reprint posted on a site devoted to one of the people in the dispute. Every sentence Garfield quotes from it matches the reprint word for word, which is the corroboration the lesson rests on.",
+    question:
+      "Does the printed Science of 26 January 1979, page 341, match the reprint?",
+    stakes:
+      "Three claims rest on the reprint alone: the grant protocol, the juror's statement, and the refusal to attend the luncheon. If the reprint was edited where Garfield does not quote, those three move from verified to reported.",
+    needs: [
+      "The printed page, read against the reprint",
+    ],
+    where: [
+      "A university library's Science holdings",
+      "Interlibrary loan",
+      "AAAS archive access",
+    ],
+  },
+  {
+    key: "citation-records-lasker-formal-cap",
+    title: "Did the Lasker award carry a formal limit in 1978?",
+    course: "what-the-citation-records",
+    lesson: "caps-and-what-they-explain",
+    quote:
+      "If Garfield is right that the Lasker carried no formal limit, then nothing about the format required the 1978 award to stop at three.",
+    severity: "medium",
+    claim:
+      "That the award had no formal limitation rests on one parenthesis in Garfield (1979). The Foundation's own rules for that period were not read, and the lesson is written conditionally for exactly that reason.",
+    question:
+      "What did the Lasker award rules say about the number of recipients in 1978?",
+    stakes:
+      "The 1934-against-1978 contrast is the point of the lesson. If the award did carry a limit, the contrast collapses and the lesson has to be rewritten.",
+    needs: [
+      "The award rules as they stood in 1978",
+    ],
+    where: [
+      "The Lasker Foundation",
+      "Its annual reports of the period",
+    ],
+  },
+  {
+    key: "citation-records-1934-committee-record",
+    title: "Is there a released 1934 Nobel committee record?",
+    course: "what-the-citation-records",
+    lesson: "what-these-cases-do-not-prove",
+    quote:
+      "No released Nobel committee record for 1934 was found.",
+    severity: "medium",
+    claim:
+      "The course asserts no motive for the 1934 committee. A nomination-archive query returned zero results even for the laureate, which means the query failed rather than that nothing exists.",
+    question:
+      "What does the released record for Physiology or Medicine 1934 contain?",
+    stakes:
+      "A released committee record could confirm or refute the format-cap reading of 1934. Until one is read, the course says only what the published documents say.",
+    needs: [
+      "A working search of the nomination archive for 1934",
+      "Whatever the institute releases for prizes over fifty years old",
+    ],
+    where: [
+      "nobelprize.org nomination archive (its search returns 200 with the wrong page when parameters are ignored)",
+      "Karolinska Institutet archives",
+    ],
+  },
+  {
+    key: "citation-records-lasker-essay-date",
+    title: "When were the Lasker winner essays written?",
+    course: "what-the-citation-records",
+    lesson: "the-1978-award-page-exercise",
+    quote:
+      "The page does not say when the essays themselves were written.",
+    severity: "low",
+    claim:
+      "The award page carries unsigned essays on each winner. Page metadata shows a 2021 posting date, which dates the web page and not the text on it.",
+    question:
+      "When does the Foundation write its winner essays?",
+    stakes:
+      "If the essays are contemporaneous, the contradiction with the acceptance remarks belongs to the same moment; if not, it spans four decades. The lesson is valid either way, but the reading changes.",
+    needs: [
+      "The Foundation's statement of when its essays are written, or a printed 1978 programme carrying the same text",
+    ],
+    where: [
+      "The Lasker Foundation archive",
+      "The 1978 awards programme",
+    ],
+  },
+  {
+    key: "citation-records-corner-and-mcgrayne",
+    title: "Two books read only as transcribed on a university page",
+    course: "what-the-citation-records",
+    lesson: "citation-speech-and-lecture",
+    quote:
+      "Those words are a transcription on a university page, not a book this course has read, and that is how they are used here.",
+    severity: "low",
+    claim:
+      "Two books are quoted only as a university campus-history page transcribes them: one on the division of the prize money, one on the count and her rank. The count is independently re-derived in this course, so nothing depends on the transcription for that.",
+    question:
+      "Do the two books, at the cited pages, say what the transcription says?",
+    stakes:
+      "The prize-money sentence and the rank sentence depend on the transcription alone.",
+    needs: [
+      "The two books, at the cited pages",
+    ],
+    where: [
+      "University libraries",
+      "The University of Rochester's own holdings",
+    ],
+  },
+  {
+    key: "citation-records-robscheit-robbins-dates",
+    title: "Her birth year and doctorate date",
+    course: "what-the-citation-records",
+    lesson: "what-these-cases-do-not-prove",
+    quote:
+      "The sources read for this course say almost nothing about Frieda Robscheit-Robbins beyond her work.",
+    severity: "low",
+    claim:
+      "Sources give two birth years and two doctorate dates. NONE is printed in the course, because none is settled.",
+    question:
+      "What are her birth year and the date of her doctorate?",
+    stakes:
+      "A biography lesson cannot be written until the dates are settled. Until then the thinness is reported as the finding, which is what the course does.",
+    needs: [
+      "A birth record, and the university's own degree conferral record",
+    ],
+    where: [
+      "University of Rochester registrar and archives",
+      "German civil registration",
+    ],
+  },
+
+  // ── whose-name-is-on-the-score (Zitkala-Sa), filed 2026-09-20 ──
+  {
+    key: "sun-dance-half-interest-assignment",
+    title: "Where is the 1913 assignment of an undivided half interest?",
+    course: "whose-name-is-on-the-score",
+    lesson: "an-undivided-half-interest",
+    quote:
+      "Nobody working on this course has seen the document.",
+    severity: "high",
+    claim:
+      "It is known ONLY from one scholar, who reports it was notarized in Uintah County about a month after the premiere and never recorded with the Copyright Office. The lesson refuses to state its date, its terms, or what rights it created.",
+    question:
+      "Where is that instrument, and what does it say?",
+    stakes:
+      "It is the single document that decides whether this is a story about an omission or a story about a refusal, and the whole course is built around not guessing which.",
+    needs: [
+      "The instrument itself, or a reproduction, with its date, parties and terms",
+    ],
+    where: [
+      "The Hanson papers, Brigham Young University",
+      "Uintah County notarial records, 1913",
+    ],
+  },
+  {
+    key: "sun-dance-which-score-names-her",
+    title: "Which manuscript score carries her name?",
+    course: "whose-name-is-on-the-score",
+    lesson: "1935-1938-and-a-shaky-hand",
+    quote:
+      "Nobody working on this course has read the scores at Brigham Young University, so the course does not say which score carries which.",
+    severity: "medium",
+    claim:
+      "A Library of Congress post says her name was left off the vocal score; a scholar transcribes a revised piano-vocal score whose first page names her in a collaboration line. The two statements are probably about different manuscripts, and the lesson prints both rather than choosing.",
+    question:
+      "Which surviving score carries her name, and which does not?",
+    stakes:
+      "The difference between a name removed and a name never added is the course's subject.",
+    needs: [
+      "A title page and act I first page from each surviving score, with shelfmarks",
+    ],
+    where: [
+      "William F. Hanson papers and scores, Brigham Young University",
+    ],
+  },
+  {
+    key: "sun-dance-1912-registration-number",
+    title: "The registration number on the 1912 application card",
+    course: "whose-name-is-on-the-score",
+    lesson: "four-cards-in-one-catalogue",
+    quote:
+      "The class is printed; the number is not.",
+    severity: "medium",
+    claim:
+      "The entry stamp reads to two readers as a Class D number with a handwritten mark after it, and a search of the 1912 catalogue's OCR did not find the entry. NO number is printed anywhere in the course, including as a quiz distractor.",
+    question:
+      "What is the entry number for this work, as the Catalog of Copyright Entries or the Copyright Office index gives it?",
+    stakes:
+      "A wrong number in a course about a registration record would be the exact defect the course teaches learners to catch.",
+    needs: [
+      "The entry number from the catalogue or the office index",
+    ],
+    where: [
+      "Catalog of Copyright Entries, Parts 1 and 3, 1912-1913",
+      "Copyright Office records",
+    ],
+  },
+  {
+    key: "sun-dance-byu-transfer-and-renewal",
+    title: "When was the copyright transferred, and was it renewed?",
+    course: "whose-name-is-on-the-score",
+    lesson: "what-a-correction-can-reach",
+    severity: "medium",
+    claim:
+      "One scholar says he later assigned the copyright to the university, in a clause with no date and no terms, and the course repeats only that. Whether the 1912 registration was renewed in its twenty-eighth year was not searched.",
+    question:
+      "When was the copyright transferred, on what terms, and was the registration ever renewed?",
+    stakes:
+      "Who holds a right, and for how long, is what the closing lesson is about.",
+    needs: [
+      "The transfer instrument or the university's acquisition record",
+      "A renewal search for 1939 and 1940",
+    ],
+    where: [
+      "Brigham Young University special collections",
+      "Catalog of Copyright Entries, renewals",
+    ],
+  },
+  {
+    key: "sun-dance-smith-2001-pages",
+    title: "Page numbers for the 2001 article",
+    course: "whose-name-is-on-the-score",
+    lesson: "four-cards-in-one-catalogue",
+    severity: "low",
+    claim:
+      "Nine references in the course cite the article with its volume and no page range, because the republication actually read carries no pagination. The volume is confirmed twice.",
+    question:
+      "What are the first and last pages of the article in the printed volume?",
+    stakes:
+      "Nine references are incomplete until it is answered. A guessed page range would be worse than a missing one.",
+    needs: [
+      "The first and last page in the printed volume",
+    ],
+    where: [
+      "Project MUSE",
+      "A library holding the print run",
+    ],
+  },
+  {
+    key: "sun-dance-el-paso-herald-page",
+    title: "Read the 1913 newspaper page image directly",
+    course: "whose-name-is-on-the-score",
+    lesson: "what-the-newspapers-said-in-1913",
+    quote:
+      "It is uncorrected machine transcription of a scanned newspaper page, not a reading of the page itself.",
+    severity: "low",
+    claim:
+      "The 1913 notice was read as uncorrected machine transcription of a scanned page, not as the page itself. The transcription spells the collaborator's surname differently from the register, which is why the lesson distrusts the wording.",
+    question:
+      "What does the printed page of 27 December 1913 actually say?",
+    stakes:
+      "The lesson quotes a newspaper against a register. It should quote the page, not a machine's reading of it.",
+    needs: [
+      "The page image read directly, and the sentence transcribed from it",
+    ],
+    where: [
+      "chroniclingamerica.loc.gov, the 27 December 1913 page image",
+    ],
+  },
+  {
+    key: "sun-dance-musical-america-headline",
+    title: "The premiere headline, from the paper itself",
+    course: "whose-name-is-on-the-score",
+    lesson: "what-the-newspapers-said-in-1913",
+    severity: "low",
+    claim:
+      "The headline is quoted only as one scholar quotes it, and the lesson attributes it to her quotation rather than to the paper. The issue itself was not seen.",
+    question:
+      "What did the premiere headline say, in the paper?",
+    stakes:
+      "Low. The lesson already attributes it correctly.",
+    needs: [
+      "The issue and page carrying the premiere coverage",
+    ],
+    where: [
+      "Musical America, 1913 volumes",
+    ],
+  },
+  // ── who-were-the-computers (the six ENIAC programmers), filed 2026-09-20 ──
+  {
+    key: "eniac-1946-caption-original",
+    title: "Read an original 1946 caption from the Army's ENIAC publicity photographs",
+    course: "who-were-the-computers",
+    lesson: "the-document-that-would-settle-it",
+    quote:
+      "The claim is that the 1946 captions named the men and not the women. What would settle it is an original caption, read.",
+    severity: "high",
+    claim:
+      "The course ATTRIBUTES to Kathy Kleiman, in every lesson that touches it, the claim that the 1946 captions named the men and not the women. It asserts it nowhere, which is the condition BAM approved the course on.",
+    question:
+      "Do the original 1946 captions name the men and not the women? Quote at least one caption verbatim, with its date.",
+    stakes:
+      "It is the claim the whole subject rests on. Closing it would move the course's central claim from attributed to documented. NOTE: one caption STRENGTHENS the claim and does not prove it, because the 1946 captions is a generalization over a set, and lesson 12 says so in those words.",
+    needs: [
+      "The verbatim wording of at least one original 1946 caption, its date, the photograph it accompanied, and whether it was an Army caption or a newspaper's",
+    ],
+    where: [
+      "Hagley Museum and Library, Acc. 1825, the Sperry Rand v. Honeywell documents, boxes 9a and 382",
+      "The US Army Research Laboratory technical library, behind the scans at ftp.arl.army.mil",
+      "The Daily Pennsylvanian archive, 4 March 1947",
+      "The New York Times of 15 February 1946",
+    ],
+  },
+  {
+    key: "eniac-demonstration-date",
+    title: "Was the press demonstration on 14 or 15 February 1946?",
+    course: "who-were-the-computers",
+    lesson: "a-date-that-does-not-check-out",
+    quote:
+      "Outside a quotation it writes mid-February 1946.",
+    severity: "medium",
+    claim:
+      "One source gives 15 February 1946; another gives Saturday, 14 February 1946. Checked against the calendar in this pass: 14 February was a Thursday and 15 a Friday, so the second source's day name conflicts with its own date. The course teaches the conflict and writes mid-February in its own voice.",
+    question:
+      "On what date was the ENIAC press demonstration held?",
+    stakes:
+      "A course about checking a record should be able to date the event at its centre.",
+    needs: [
+      "A dated document from the event itself, with the date on its face",
+    ],
+    where: [
+      "The Moore School's invitation or programme",
+      "The Army's press release",
+      "A dated newspaper page reporting the demonstration",
+    ],
+  },
+  {
+    key: "eniac-six-selection",
+    title: "Who chose the six, when, and on what basis?",
+    course: "who-were-the-computers",
+    lesson: "chosen-from-the-computers",
+    quote:
+      "Neither source names who chose, or on what basis.",
+    severity: "medium",
+    claim:
+      "Two sources disagree: one says six were chosen from about 100 human computers, the other that five were randomly selected with a sixth added later. Neither names who chose. The course prints both and refuses the word randomly for want of the paper a procedure leaves.",
+    question:
+      "Who selected the six programmers, on what date, and by what method?",
+    stakes:
+      "Random selection and deliberate selection say opposite things about how the work was valued.",
+    needs: [
+      "A personnel record, memo or project file recording the selection",
+    ],
+    where: [
+      "Moore School project files",
+      "Ballistics Research Laboratory personnel records",
+    ],
+  },
+  {
+    key: "eniac-december-1945-operators",
+    title: "Who configured the machine for the December 1945 run?",
+    course: "who-were-the-computers",
+    lesson: "the-first-problem",
+    severity: "medium",
+    claim:
+      "One source's HEADLINE attributes the first program to the six; its sentences do not name the operators, so the course does not either. The course also prints no project name for that run, because the popular label appears in no source read.",
+    question:
+      "Who set up the machine for the 10 December 1945 run, and did that run have a project designation?",
+    stakes:
+      "It is the first real use of the machine, and the retelling assigns it to the six on the strength of a headline.",
+    needs: [
+      "An operating log, service record or report naming who configured the machine",
+      "Whether the run carried a project designation",
+    ],
+    where: [
+      "Los Alamos and Ballistics Research Laboratory records",
+      "ENIAC service logs",
+      "Moore School project files",
+    ],
+  },
+  {
+    key: "eniac-six-oral-histories",
+    title: "Read the six programmers' own oral histories",
+    course: "who-were-the-computers",
+    lesson: "finding-them",
+    quote:
+      "This course does not quote the six. Their oral histories exist, and nobody building this course has read them.",
+    severity: "medium",
+    claim:
+      "Every description of the six in this course comes from somebody else's account. Lesson 13 says so, and lesson 15 lists the oral histories as unread.",
+    question:
+      "What do the six say, in their own words, about the captions, the demonstration and the work?",
+    stakes:
+      "A course about who gets to speak in a record, assembled entirely from other people's descriptions, has the defect it is teaching about.",
+    needs: [
+      "The oral history transcripts or recordings, with their catalogue identifiers",
+    ],
+    where: [
+      "Computer History Museum oral history collection",
+      "IEEE History Center",
+      "The ENIAC Programmers Project interviews",
+    ],
+  },
+  {
+    key: "eniac-models-remark-variants",
+    title: "Document the retellings that move the museum episode",
+    course: "who-were-the-computers",
+    lesson: "the-models-remark",
+    quote:
+      "This course met those only in search results and did not fetch the pages, so it does not reproduce their details.",
+    severity: "low",
+    claim:
+      "The course teaches the documented drift between the two tellings it fetched, and explicitly refuses to assert further drift from search snippets.",
+    question:
+      "What do the other retellings of the museum episode say, and where do they place it?",
+    stakes:
+      "Low. The lesson already shows drift with two fetched sources and declines to claim more.",
+    needs: [
+      "The fetched text of each retelling, with its publication, author and date",
+    ],
+    where: [
+      "The summary met only as a snippet",
+      "Other secondary retellings",
+      "Kleiman's 2022 book, unread here",
+    ],
+  },
+  {
+    key: "eniac-moore-school-pay-comparison",
+    title: "What were men in comparable posts paid?",
+    course: "who-were-the-computers",
+    lesson: "why-the-job-was-open",
+    quote:
+      "So this course prints no Moore School pay gap.",
+    severity: "low",
+    claim:
+      "One source gives the computers about 1,620 dollars a year. No source read gives men's pay in comparable posts, so the course states the salary, prints no comparison, and says the gap is plausible and undocumented.",
+    question:
+      "What were men in comparable posts at the Moore School or the Ballistics Research Laboratory paid in the same years?",
+    stakes:
+      "Low. The honest sentence is already in the lesson.",
+    needs: [
+      "A payroll or personnel record showing comparable male salaries in the same years",
+    ],
+    where: [
+      "Moore School personnel records",
+      "Ballistics Research Laboratory payroll records",
+    ],
+  },
+  {
+    key: "eniac-documentary-producer-spelling",
+    title: "John or Jon on the documentary's credits?",
+    course: "who-were-the-computers",
+    lesson: "instruments-of-a-correction",
+    quote:
+      "Other retellings spell the first of those Jon.",
+    severity: "low",
+    claim:
+      "One source names the producer with one spelling and other retellings use another. The course prints the one its source uses and flags the variant, per its own rule about spelling a name the way the source you cite spells it.",
+    question:
+      "How is the producer's first name spelled on the film's own credits?",
+    stakes:
+      "Low, and it is the course's own rule applied to itself.",
+    needs: [
+      "The spelling on the film's credits",
+    ],
+    where: [
+      "The documentary's end credits",
+      "The ENIAC Programmers Project site",
     ],
   },
 ];

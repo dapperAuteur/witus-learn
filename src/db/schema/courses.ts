@@ -127,10 +127,12 @@ export const courses = pgTable(
      *  course code (STORY-00) so a learner scanning ANY list — catalog, search, a shared link —
      *  can see which series a course belongs to and where in it they are standing. Deliberately
      *  NOT baked into courses.title: the title feeds OG cards, JSON-LD, search and the citation
-     *  list, and "STORY-T3 · Documentary" would break a search for "Documentary" in all of them. */
+     *  list, and "STORY-TRU3 · Documentary" would break a search for "Documentary" in all of them. */
     seriesCode: text("series_code"),
     /** The part after the dash. Grammar (src/lib/series-code.ts): "00" = start here, "01".."98" =
-     *  a step on a single linear path, "T1"/"P2" = step 1 of track T, step 2 of track P, "99" =
+     *  a step on a single linear path, "TRU1"/"PER2" = step 1 of track TRU, step 2 of track PER
+     *  (a track tag is THREE letters since 2026-09-19; one letter gave every series the same 26
+     *  tags and meant different things in different series), "99" =
      *  capstone, take last. Free text rather than a CHECK constraint so a new series shape never
      *  needs a migration; the grammar is enforced by a guard and the isolation suite instead. */
     seriesPosition: text("series_position"),

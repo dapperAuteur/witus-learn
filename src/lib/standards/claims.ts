@@ -4189,7 +4189,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // differently, lesson 22 reports three dating one portrait differently, and lesson 23 is a
       // ledger of what was verified, what is contested and what was refused.
       "the-name-on-the-door",
-      // Written by Himself (CREDIT-W1) integrates a primary statute (17 U.S.C. 101 and 302(c) on
+      // Written by Himself (CREDIT-WRI1) integrates a primary statute (17 U.S.C. 101 and 302(c) on
       // anonymous works, pseudonymous works and the procedure by which a later-revealed identity
       // changes the copyright term) and the U.S. Copyright Office's own public-records description
       // with seven out-of-copyright PRIMARY TEXTS read directly rather than summarised: the

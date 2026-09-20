@@ -319,7 +319,29 @@ organisation wrote it, and teach contested claims as contested with the holders 
 rather than a standards claim, because claiming coverage for a course no educator can see would be a
 claim about content that may still change.
 
-**Also private:** **`who-built-the-blood-bank`** ("Who Built the Blood Bank", CREDIT-S2, Charles
+**Six more private courses shipped on 2026-09-20**, all from the plans/83 research file, all
+approved brief by brief, all free and **carrying no series code** (a code is a promise to a learner
+about where to start, in a series a private course is not part of):
+
+- **`the-partner-and-the-prize`** (Denise Scott Brown): a prize awarded to one half of a partnership,
+  the petition, and the jury chair's written refusal.
+- **`notes-made-by-mr-george-hunt`**: thousands of pages of ethnography in one man's hand, published
+  under another's name. Held additionally for a Kwakwaka'wakw reader, and it prints **no Kwak'wala
+  personal name at all**, which lesson 4 states as a rule rather than leaving as a gap.
+- **`who-may-teach`** (Emmy Noether): four years of her lectures printed in a university catalogue
+  under another man's name, and four corrections to the popular version of that story.
+- **`what-the-citation-records`** (Candace Pert, Frieda Robscheit-Robbins): what a prize page records
+  and what the documents around it record. Keyed by prize year, so another case splices in without
+  renumbering.
+- **`whose-name-is-on-the-score`** (Zitkala-Šá): a copyright register, an opera, and an assignment
+  that was notarised and never recorded.
+- **`who-were-the-computers`** (the six ENIAC programmers): a job title, and a caption claim the
+  course **attributes rather than asserts**, because no original caption has been read.
+
+Each files its own research checks, so every hedge in a lesson has a question behind it that somebody
+can close. None is in `STAGED_COURSES` while private, and each carries a reasoned `BACKLOG` line.
+
+**Also private:** **`who-built-the-blood-bank`** ("Who Built the Blood Bank", Charles
 Drew), held **until vetted** by BAM's approval of its brief. It is the Credit series' second science
 course: the blood bank research, *Banked Blood*, Blood for Britain, and the Red Cross program that
 first excluded and then segregated Black donors' blood, built from NLM *Profiles in Science* and six
@@ -647,11 +669,21 @@ pnpm check:assessment-fit  # ratchet. The assessment WIDGET fits its content: no
                            #   closed-set fact multiple-choice tests better), no `**Check
                            #   yourself**` question left as prose. `--list` prints every finding.
 pnpm check:standards       # ratchet. Every seeded course declares its standards, or says why not.
-pnpm check:series-codes    # course codes (STORY-00) are legal and do not lie about a series'
-                           #   shape: no duplicate position, no two courses claiming to be the
-                           #   start or the capstone, no lettered track without a track NAME, no
+pnpm check:series-codes    # course codes (STORY-00, STORY-TRU3) are legal and do not lie about a
+                           #   series' shape: no duplicate position, no two courses claiming to be
+                           #   the start or the capstone, no lettered track without a track NAME, no
                            #   prefix shared by two series. NOT a ratchet: codes are new, so
                            #   every code that exists was written under the rule.
+                           #   A TRACK TAG IS THREE LETTERS (TRU, PER, SCI), not one: 2026-09-19.
+                           #   Until then every series shared the same 26 letters and the same
+                           #   letter meant different things in different series ("S" was Science
+                           #   in CREDIT and "She Did the Work" in DIDWORK). The same pass taught
+                           #   the seed registry to read loop-registered entries' series fields;
+                           #   it had been reading them as null, so 23 coded courses were never
+                           #   checked and two shipped a lettered badge with no track name.
+                           #   PRIVATE courses carry NO code at all (BAM, 2026-09-19): a code is a
+                           #   promise about where to start, in a series a private course is not
+                           #   part of.
 pnpm check:page-reachability  # ratchet. No public page is a menu orphan or rides the default OG card.
 ```
 

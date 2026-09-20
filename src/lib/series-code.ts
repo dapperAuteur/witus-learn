@@ -13,8 +13,14 @@
 //
 //   00        Start here. At most one per series, and it is the entry point whatever track follows.
 //   01..98    A step on a single linear path. Most series are this and never need a letter.
-//   T1, P2    Step 1 of track T, step 2 of track P. Tracks run in PARALLEL: any of them may be
-//             taken directly after the 00 course, and none is a prerequisite for another.
+//   TRU1, PER2  Step 1 of track TRU, step 2 of track PER. Tracks run in PARALLEL: any of them may
+//             be taken directly after the 00 course, and none is a prerequisite for another.
+//
+//             A TRACK TAG IS THREE LETTERS (BAM, 2026-09-19). It was one letter until then, which
+//             gave a catalog of this size 26 tags to share across every series and produced tags
+//             nobody could read: "S" meant Science in CREDIT and "She Did the Work" in DIDWORK.
+//             Three letters is a mnemonic a learner can guess from the track name (TRU for True,
+//             SCI for Science) and leaves room for the catalog to keep growing.
 //   99        Capstone. Take last. At most one per series.
 //
 // The parallel-tracks claim is a promise the curriculum has to keep, not just a display convention:
@@ -36,7 +42,7 @@ export type SeriesPosition =
 const START = "00";
 const CAPSTONE = "99";
 const STEP_RE = /^(?:0[1-9]|[1-8][0-9]|9[0-8])$/;
-const TRACK_RE = /^([A-Z])([1-9][0-9]?)$/;
+const TRACK_RE = /^([A-Z]{3})([1-9][0-9]?)$/;
 
 /** Parse a raw `series_position`. Returns null for anything outside the grammar, which is how the
  *  guard and the UI both decide "this is not a code" rather than rendering a broken badge. */
@@ -57,7 +63,7 @@ export function isValidSeriesCode(raw: string | null | undefined): boolean {
   return typeof raw === "string" && /^[A-Z0-9]{2,8}$/.test(raw);
 }
 
-/** The rendered badge, e.g. "STORY-T3". Returns null unless BOTH halves are present and legal, so
+/** The rendered badge, e.g. "STORY-TRU3". Returns null unless BOTH halves are present and legal, so
  *  a half-configured course shows no badge rather than a misleading one. */
 export function formatCourseCode(
   seriesCode: string | null | undefined,
@@ -161,7 +167,7 @@ export function groupSeries<T extends CoursePositioned>(courses: T[]): SeriesGro
   push("path", null, "The path", byKind.get("step"));
 
   // Tracks render in the order the curriculum author intended, which is the lowest series_order in
-  // each track, not alphabetically by letter: letters are mnemonics for the track NAME (T for True,
+  // each track, not alphabetically by tag: tags are mnemonics for the track NAME (TRU for True,
   // P for Performed) and sorting on them would put a series' tracks in an order nobody chose.
   const minOrder = (arr: T[]) =>
     Math.min(...arr.map((c) => c.seriesOrder ?? Number.MAX_SAFE_INTEGER));
