@@ -5581,6 +5581,124 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The Code of Federal Regulations",
     ],
   },
+  // ── how-a-house-stands-up (H01), filed 2026-09-20 with the course ──
+  {
+    key: "house-plate-bearing-inference",
+    title: "An inference the course labels as its own",
+    course: "how-a-house-stands-up",
+    lesson: "wood-and-why-it-moves",
+    severity: "medium",
+    claim:
+      "One lesson reads a stud as bearing along the grain and its plate as bearing across it, drawn from the federal wood handbook's measured properties rather than stated by any source. The lesson says in its own text that this reading is the course's.",
+    question:
+      "Does a published source state the grain orientation of a stud against its plate in these terms?",
+    stakes:
+      "It is the only inference in the course, and it is labelled. If a source states it, the label comes off; if a source contradicts it, the lesson changes.",
+    needs: [
+      "A published statement of the load direction relative to grain for studs and plates",
+    ],
+    where: [
+      "The Forest Products Laboratory wood handbook",
+      "The Navy builder manuals",
+    ],
+  },
+  {
+    key: "house-navedtra-third-party-figures",
+    title: "May the manuals' figures be reproduced?",
+    course: "how-a-house-stands-up",
+    lesson: "the-load-path-roof-to-soil",
+    severity: "medium",
+    claim:
+      "No figure from any source is reproduced or described in detail, because the manuals carry a distribution statement permitting release but their pages may contain approved copyrighted material. The course teaches in prose instead.",
+    question:
+      "Do the manuals contain third-party copyrighted figures, and does the distribution statement cover reproducing them?",
+    stakes:
+      "It decides whether the course can show a drawing, which is what a structure course most wants, and whether the PDFs can be hosted under the new source-hosting rule.",
+    needs: [
+      "The manuals' own statement about copyrighted material within them",
+    ],
+    where: [
+      "The issuing command's publication office",
+      "The manuals' front matter",
+    ],
+  },
+  {
+    key: "house-navedtra-official-host",
+    title: "The manuals were read on third-party hosts",
+    course: "how-a-house-stands-up",
+    lesson: "the-load-path-roof-to-soil",
+    severity: "low",
+    claim:
+      "Both Navy manuals were fetched from third-party mirrors rather than an official host, and the citation says so.",
+    question:
+      "Where does the issuing command publish these manuals now?",
+    stakes:
+      "Low for the content, which carries a distribution statement, but a citation should point at the publisher.",
+    needs: [
+      "The official current location of each manual",
+    ],
+    where: [
+      "The Navy's training publication catalogue",
+    ],
+  },
+  {
+    key: "house-apa-and-bia-reuse-terms",
+    title: "Two trade bodies' documents, unused",
+    course: "how-a-house-stands-up",
+    lesson: "the-layers-on-the-outside",
+    severity: "low",
+    claim:
+      "Two industry technical libraries were not cited, quoted or linked anywhere, because their reuse terms were never established. Brick veneer is taught only from federal sources.",
+    question:
+      "What do those trade bodies permit for their technical documents?",
+    stakes:
+      "Low. They would strengthen the cladding section, which currently rests on one manual and one federal guide.",
+    needs: [
+      "The reuse terms of each body's technical library",
+    ],
+    where: [
+      "The wood panel association",
+      "The brick industry association",
+    ],
+  },
+  {
+    key: "house-fema-p-2178",
+    title: "A federal guide named in the brief but never fetched",
+    course: "how-a-house-stands-up",
+    lesson: "connections-and-what-weather-finds",
+    severity: "low",
+    claim:
+      "A federal publication named in the brief as the source for the connections section was never fetched, so nothing rests on it and it is not cited. That section stands on a federal continuous-load-path guide and a federal code part instead.",
+    question:
+      "What does that publication say about connections and load paths in high-wind areas?",
+    stakes:
+      "Low, and the section stands without it.",
+    needs: [
+      "The publication itself",
+    ],
+    where: [
+      "The federal emergency management agency's library",
+    ],
+  },
+  {
+    key: "house-indiana-under-floor-and-ventilation-minimums",
+    title: "Dimensional minimums the course refuses to print",
+    course: "how-a-house-stands-up",
+    lesson: "ground-footing-foundation-and-floor",
+    severity: "low",
+    claim:
+      "The course prints no crawl-space clearance, no attic ventilation fraction and no drainage-gap dimension, teaching the shape of each rule and sending the learner to the adoption rule instead. This check probably belongs to read-the-plan-and-the-code.",
+    question:
+      "What do those minimums say in a named jurisdiction's adopted code?",
+    stakes:
+      "Low by design: the refusal is the course's safety rule, not a gap.",
+    needs: [
+      "The relevant sections of a named jurisdiction's adopted residential code",
+    ],
+    where: [
+      "The adopted code for the learner's own jurisdiction",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

@@ -34,6 +34,7 @@ import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-cou
 import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
 import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
 import { KEEPING_A_HOUSE_COURSE } from "./data/keeping-a-house-course";
+import { HOW_A_HOUSE_STANDS_UP_COURSE } from "./data/how-a-house-stands-up-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -642,6 +643,32 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Held private until vetted. A hazards, checks and decisions course on lead, asbestos, radon, carbon monoxide and moisture, built only from EPA, CPSC, USFA, DOE and CFR sources. It teaches no repair procedure and confers no credential, and its open source checks are filed in research-checks.",
+  });
+
+  // "How a House Stands Up" (H01 of "The House You Live In"). PRIVATE, 2026-09-20. Knowledge, not
+  // skill, and the refusal is the design: NO span, header size, beam size, fastener schedule or
+  // footing dimension anywhere, because a wrong number here can put a wall on somebody. Where a
+  // figure would be the answer, it teaches the SHAPE of the rule and sends the learner to
+  // read-the-plan-and-the-code. Built from public-domain federal sources (the Navy builder manuals,
+  // the Forest Products Laboratory wood handbook, 24 CFR 3280, whose manufactured-home scope is
+  // restated at every citation); nothing derives from the books in content/construction/, which
+  // lesson 3 names once as BAM's own reading. NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-a-house-stands-up",
+    course: HOW_A_HOUSE_STANDS_UP_COURSE,
+    category: "Science & Math",
+    additionalCategories: ["Money & Property", "Careers & Media"],
+    seriesSlug: "the-house-you-live-in",
+    seriesTitle: "The House You Live In",
+    seriesOrder: 2,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study. Structure is a subject where a wrong sentence can put a wall on somebody, so this is held while a reader with building experience checks it. It teaches knowledge and not skill, gives no span, header size, beam size or fastener schedule, implies no credential, approves no permit, inspects nothing, and substitutes for no trade program.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
