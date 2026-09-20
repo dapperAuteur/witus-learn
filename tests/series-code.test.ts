@@ -25,12 +25,16 @@ describe("parseSeriesPosition", () => {
   it("recognises the four shapes", () => {
     expect(parseSeriesPosition("00")).toEqual({ kind: "start" });
     expect(parseSeriesPosition("07")).toEqual({ kind: "step", step: 7 });
-    expect(parseSeriesPosition("T1")).toEqual({ kind: "track", letter: "T", step: 1 });
+    expect(parseSeriesPosition("TRU1")).toEqual({ kind: "track", letter: "TRU", step: 1 });
+    // Three letters exactly (BAM, 2026-09-19). One letter gave every series in the catalog the same
+    // 26 tags to share, and the same letter meant different things in different series.
+    expect(parseSeriesPosition("T1")).toBeNull();
+    expect(parseSeriesPosition("TRUE1")).toBeNull();
     expect(parseSeriesPosition("99")).toEqual({ kind: "capstone" });
   });
 
   it("is case and whitespace tolerant, because a seed script is hand-typed", () => {
-    expect(parseSeriesPosition(" t2 ")).toEqual({ kind: "track", letter: "T", step: 2 });
+    expect(parseSeriesPosition(" tru2 ")).toEqual({ kind: "track", letter: "TRU", step: 2 });
   });
 
   it("rejects anything outside the grammar rather than guessing", () => {
@@ -54,14 +58,14 @@ describe("isValidSeriesCode", () => {
 
 describe("formatCourseCode", () => {
   it("renders both halves uppercased", () => {
-    expect(formatCourseCode("STORY", "t3")).toBe("STORY-T3");
+    expect(formatCourseCode("STORY", "tru3")).toBe("STORY-TRU3");
   });
 
   it("renders NOTHING when either half is missing or illegal", () => {
     // The point: a half-configured course shows no badge rather than a misleading one. A badge that
     // reads "STORY-" or "undefined-T1" is worse than absence, because it looks like information.
     expect(formatCourseCode("STORY", null)).toBeNull();
-    expect(formatCourseCode(null, "T1")).toBeNull();
+    expect(formatCourseCode(null, "TRU1")).toBeNull();
     expect(formatCourseCode("STORY", "banana")).toBeNull();
     expect(formatCourseCode("storytelling", "01")).toBeNull();
   });
@@ -69,13 +73,13 @@ describe("formatCourseCode", () => {
 
 describe("describePosition", () => {
   it("states the parallel-tracks promise in words, naming the track", () => {
-    const s = describePosition("T2", "True");
+    const s = describePosition("TRU2", "True");
     expect(s).toContain("True track");
     expect(s).toContain("parallel");
   });
 
   it("still says tracks are parallel when the track has no name", () => {
-    expect(describePosition("P1")).toContain("parallel");
+    expect(describePosition("PER1")).toContain("parallel");
   });
 
   it("says nothing for an uncoded course", () => {
@@ -87,10 +91,10 @@ describe("describePosition", () => {
 describe("groupSeries", () => {
   const storytelling = [
     course({ title: "How stories work", seriesPosition: "00", seriesOrder: 1 }),
-    course({ title: "Monodrama I", seriesPosition: "P1", seriesTrack: "Performed", seriesOrder: 20 }),
-    course({ title: "Civic documentation", seriesPosition: "T1", seriesTrack: "True", seriesOrder: 10 }),
-    course({ title: "Documentary", seriesPosition: "T3", seriesTrack: "True", seriesOrder: 12 }),
-    course({ title: "News storytelling", seriesPosition: "T2", seriesTrack: "True", seriesOrder: 11 }),
+    course({ title: "Monodrama I", seriesPosition: "PER1", seriesTrack: "Performed", seriesOrder: 20 }),
+    course({ title: "Civic documentation", seriesPosition: "TRU1", seriesTrack: "True", seriesOrder: 10 }),
+    course({ title: "Documentary", seriesPosition: "TRU3", seriesTrack: "True", seriesOrder: 12 }),
+    course({ title: "News storytelling", seriesPosition: "TRU2", seriesTrack: "True", seriesOrder: 11 }),
     course({ title: "Mockumentary", seriesPosition: "99", seriesOrder: 99 }),
   ];
 

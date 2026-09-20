@@ -478,7 +478,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   \`pnpm audit:course who-signs-the-print --spec\`. Mapped to
   \`catalog.cited-primary-secondary-synthesis\` and \`catalog.test-a-historical-claim\` (CCSS
   RH.11-12.9 and RH.11-12.8). Deliberately **not** in \`STAGED_COURSES\` yet, matching CREDIT-00.
-- 🔧 **Written by Himself** (\`content/credit-ghostwriting\`, Culture & History, **CREDIT-W1**; NO
+- 🔧 **Written by Himself** (\`content/credit-ghostwriting\`, Culture & History, **CREDIT-WRI1**; NO
   migration, **re-run \`pnpm seed:courses\`**). The **first course on the lettered W track** (W · The
   written record) inside the CREDIT series, from
   \`plans/future-courses/2026-08-25-12-black-writers-research.md\` §1, which called ghostwriting the
@@ -583,7 +583,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   RH.11-12.9 and RH.11-12.8, 30 standards across 15 jurisdictions). Deliberately **not** in
   \`STAGED_COURSES\` yet, matching CREDIT-00 and CREDIT-02.
 - ✅ **The Editor of The Crisis** (\`content/didwork-jessie-fauset\`, Culture & History; NO
-  migration, **re-run \`pnpm seed:courses\`**). **DIDWORK-S2**, the second course on the She Did the
+  migration, **re-run \`pnpm seed:courses\`**). **DIDWORK-SHE2**, the second course on the She Did the
   Work track after \`she-took-the-seat\` (S1), and the strongest single evidence case in it.
   **Jessie Redmon Fauset taught as one argument, not as a biography.** She was literary editor of
   *The Crisis* from October 1919 to April 1926, took the first poem Langston Hughes published
@@ -628,7 +628,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   checks** in \`src/lib/research-checks.ts\`. **NOT in \`STAGED_COURSES\`**, so \`pnpm gen:citations\`
   is a later step.
 - 🔧 **Shirley Graham Wrote the Opera First** (\`content/didwork-shirley-graham\`, Culture & History,
-  **DIDWORK-S3**; NO migration, **re-run \`pnpm seed:courses\`**). The third course in the Did the
+  **DIDWORK-SHE3**; NO migration, **re-run \`pnpm seed:courses\`**). The third course in the Did the
   Work series and the first single-subject one, because the defect it corrects is an **ordering**
   defect. Every short account of Shirley Graham Du Bois reaches for the 1951 marriage to W. E. B.
   Du Bois inside its first three sentences, and once that fact is in front, twenty-five years of
@@ -1127,7 +1127,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   rename that would otherwise have collided with its primary. The new filter stays inside the tenant
   condition, with an isolation test covering every sort order.
 - ✅ **Who Built the Blood Bank: Charles Drew, the Research, and the Record** (\`content/drew-blood-bank\`,
-  CREDIT-S2, **Culture & History**, **private until vetted**): the first course built under the
+  **Culture & History**, **private until vetted**, no series code): the first course built under the
   course-brief rule, and the coverage search changed what it is for. \`who-gets-the-credit\` already
   corrects the death myth, so this course teaches the work: the Presbyterian bank with Scudder,
   *Banked Blood* (1940), Blood for Britain, and the Red Cross pilot of early 1941, where the NLM record
@@ -1137,6 +1137,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   death myth) and files five open questions as research checks rather than guessing, including who
   actually directed that first Red Cross bank. 10 teaching lessons, 5 section quizzes and a final,
   305 questions; \`pnpm audit:course who-built-the-blood-bank --spec\` reports zero findings.
+- ✅ **Course-code tracks are three letters, and the guard can finally see them all**
+  (\`chore/series-code-policy-2026-09-19\`): a track tag was one letter, so every series in the
+  catalog shared the same 26 tags and the same letter meant different things in different series
+  ("S" was Science in CREDIT and "She Did the Work" in DIDWORK). Tags are now three letters a learner
+  can guess from the track name: STORY-TRU3, CREDIT-SCI1, DIDWORK-SHE2. The same pass fixed a hole
+  underneath it: the seed registry read a loop-registered course's series fields as null, so
+  \`check:series-codes\` had never seen **23** of the catalog's coded courses, two of which were
+  shipping a lettered badge with **no track name** to explain it. Both are now named. And a
+  **private course carries no code at all**, because a code is a promise about where to start in a
+  series that no learner can see.
 - 🔜 **Sentry error monitoring** (\`feat/rag-autoindex-and-report-bulk\`, wired, DSN pending → task 208):
   crash-grade signal (real stack traces, grouping, alerting) alongside the existing home-grown admin
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
@@ -2186,7 +2196,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   that Documentary requires Monodrama. \`/series/<slug>\` now draws the fork, states the
   parallel-tracks promise in words under each track, and explains how to read a code. The code is a
   **badge, never a title prefix**: the title is also the OG card, the JSON-LD name and the
-  citation-list heading, so \`"STORY-T3 · Documentary"\` would break a search for "Documentary" in
+  citation-list heading, so \`"STORY-TRU3 · Documentary"\` would break a search for "Documentary" in
   all of them. A half-coded series degrades to a plain list rather than to a page missing courses.
 - ✅ **/series, the course-paths front door** (\`feat/storytelling-true-track\`). \`/series/<slug>\`
   could already explain one path, but nothing linked to it and nothing listed the others, so a

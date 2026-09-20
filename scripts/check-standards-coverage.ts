@@ -158,7 +158,7 @@ const BACKLOG: Record<string, string> = {
   "the-paper-and-the-prize":
     "UNMAPPED, and a genuine candidate. Genetics, experimental method and evaluating sources against claims all appear in science and ELA standards. Not claimed until the mapping is done properly.",
   "who-built-the-blood-bank":
-    "PRIVATE until vetted, CREDIT-S2. A primary-source history course (sourcing, corroboration, chronology, claim against evidence), so a genuine candidate for US-history and ELA standards, mapped at the public flip rather than claimed for a course no educator can see.",
+    "PRIVATE until vetted, no series code. A primary-source history course (sourcing, corroboration, chronology, claim against evidence), so a genuine candidate for US-history and ELA standards, mapped at the public flip rather than claimed for a course no educator can see.",
   "construction-safety":
     "PRIVATE study support, not published. Built from 29 CFR 1926 rather than a curriculum, and held for BAM alone while he takes a construction course elsewhere. No educator can see it, so there is nobody to make a standards promise to.",
   "construction-math":

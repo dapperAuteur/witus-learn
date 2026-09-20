@@ -37,6 +37,19 @@ export interface SeedEntry {
   visibility: string | null;
 }
 
+/** Index just past the `}` that closes the `{` at `open`, or -1 when the braces do not balance. */
+function matchBrace(src: string, open: number): number {
+  let depth = 0;
+  for (let i = open; i < src.length; i++) {
+    if (src[i] === "{") depth++;
+    else if (src[i] === "}") {
+      depth--;
+      if (depth === 0) return i + 1;
+    }
+  }
+  return -1;
+}
+
 /** Pull every seedAuthoredCourse({...}) call out of one seed script by brace matching. A regex over
  *  the whole file would run past the end of one call into the next. */
 export function extractSeedEntries(file: string): SeedEntry[] {
@@ -130,18 +143,30 @@ export function extractSeedEntries(file: string): SeedEntry[] {
       const courseConst = i === 0 ? m[2] : m[1];
       if (known.has(slug)) continue;
       known.add(slug);
-      const around = src.slice(m.index ?? 0, (m.index ?? 0) + m[0].length + 120);
+      // Read the WHOLE entry object, not a fixed window. A loop entry carries its series fields
+      // (code, position, track) just like an explicit call, and a 120-character window missed every
+      // one of them: `check-series-codes` therefore never saw the CREDIT series' lettered codes and
+      // could not have caught a bad one. Walk back to the entry's opening brace and forward to its
+      // close, so a loop entry is validated on the same terms as an explicit call.
+      const objStart = src.lastIndexOf("{", m.index ?? 0);
+      const objEnd = objStart >= 0 ? matchBrace(src, objStart) : -1;
+      const around =
+        objStart >= 0 && objEnd > objStart
+          ? src.slice(objStart, objEnd)
+          : src.slice(m.index ?? 0, (m.index ?? 0) + m[0].length + 120);
+      const str = (name: string) =>
+        new RegExp(`${name}:\\s*"([^"]*)"`).exec(around)?.[1] ?? null;
       out.push({
         file,
         slug,
         courseConst,
         modulePath: importOf.get(courseConst) ?? null,
-        category: /category:\s*"([^"]*)"/.exec(around)?.[1] ?? null,
-        seriesSlug: null,
-        seriesCode: null,
-        seriesPosition: null,
-        seriesTrack: null,
-        visibility: null,
+        category: str("category"),
+        seriesSlug: str("seriesSlug"),
+        seriesCode: str("seriesCode"),
+        seriesPosition: str("seriesPosition"),
+        seriesTrack: str("seriesTrack"),
+        visibility: str("visibility"),
       });
     }
   }

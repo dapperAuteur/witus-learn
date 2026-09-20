@@ -319,7 +319,7 @@ organisation wrote it, and teach contested claims as contested with the holders 
 rather than a standards claim, because claiming coverage for a course no educator can see would be a
 claim about content that may still change.
 
-**Also private:** **`who-built-the-blood-bank`** ("Who Built the Blood Bank", CREDIT-S2, Charles
+**Also private:** **`who-built-the-blood-bank`** ("Who Built the Blood Bank", Charles
 Drew), held **until vetted** by BAM's approval of its brief. It is the Credit series' second science
 course: the blood bank research, *Banked Blood*, Blood for Britain, and the Red Cross program that
 first excluded and then segregated Black donors' blood, built from NLM *Profiles in Science* and six
@@ -647,11 +647,21 @@ pnpm check:assessment-fit  # ratchet. The assessment WIDGET fits its content: no
                            #   closed-set fact multiple-choice tests better), no `**Check
                            #   yourself**` question left as prose. `--list` prints every finding.
 pnpm check:standards       # ratchet. Every seeded course declares its standards, or says why not.
-pnpm check:series-codes    # course codes (STORY-00) are legal and do not lie about a series'
-                           #   shape: no duplicate position, no two courses claiming to be the
-                           #   start or the capstone, no lettered track without a track NAME, no
+pnpm check:series-codes    # course codes (STORY-00, STORY-TRU3) are legal and do not lie about a
+                           #   series' shape: no duplicate position, no two courses claiming to be
+                           #   the start or the capstone, no lettered track without a track NAME, no
                            #   prefix shared by two series. NOT a ratchet: codes are new, so
                            #   every code that exists was written under the rule.
+                           #   A TRACK TAG IS THREE LETTERS (TRU, PER, SCI), not one: 2026-09-19.
+                           #   Until then every series shared the same 26 letters and the same
+                           #   letter meant different things in different series ("S" was Science
+                           #   in CREDIT and "She Did the Work" in DIDWORK). The same pass taught
+                           #   the seed registry to read loop-registered entries' series fields;
+                           #   it had been reading them as null, so 23 coded courses were never
+                           #   checked and two shipped a lettered badge with no track name.
+                           #   PRIVATE courses carry NO code at all (BAM, 2026-09-19): a code is a
+                           #   promise about where to start, in a series a private course is not
+                           #   part of.
 pnpm check:page-reachability  # ratchet. No public page is a menu orphan or rides the default OG card.
 ```
 

@@ -1558,7 +1558,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
   },
 
-  // ── The Editor of The Crisis (DIDWORK-S2) ─────────────────────────────────────────────────────
+  // ── The Editor of The Crisis (DIDWORK-SHE2) ─────────────────────────────────────────────────────
   {
     key: "jrf-birthplace",
     course: "the-editor-of-the-crisis",
@@ -1689,7 +1689,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Carolyn Wedin Sylvander (1981), and Deborah E. McDowell's introductions to the Beacon Press reissues",
     ],
   },
-  // ── Shirley Graham Wrote the Opera First (DIDWORK-S3) ─────────────────────────────────────────
+  // ── Shirley Graham Wrote the Opera First (DIDWORK-SHE3) ─────────────────────────────────────────
   // Nine hedges, all of them written into lessons rather than left implicit. The pattern worth
   // noticing: this subject shaved years off her own age in print, so the ordinary trick of
   // preferring the earliest source fails on her, and several of these can only be closed by a
@@ -2219,7 +2219,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "NOMA's national office, which now stewards the directory",
     ],
   },
-  // ── Written by Himself (CREDIT-W1) ────────────────────────────────────────────────────────────
+  // ── Written by Himself (CREDIT-WRI1) ────────────────────────────────────────────────────────────
   {
     key: "wbh-malcolm-x-first-printing-year",
     course: "written-by-himself",
@@ -4165,7 +4165,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Jim Thatcher's published writing on the history of screen readers, and IBM's own records",
     ],
   },
-  // ── who-built-the-blood-bank (CREDIT-S2, Charles Drew), filed 2026-09-18 with the course ──
+  // ── who-built-the-blood-bank (Charles Drew, private, no series code), filed 2026-09-18 with the course ──
   {
     key: "drew-red-cross-director",
     title: "Who directed the first American Red Cross blood bank (1941)?",
