@@ -6255,6 +6255,141 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
     where: [
       "National Archives of Australia",
+  // ── the-author-line-and-the-finding (Marthe Gautier), filed 2026-09-20 with the course ──
+  {
+    key: "gautier-2009-own-account",
+    title: "Her own 2009 account, never read",
+    course: "the-author-line-and-the-finding",
+    lesson: "a-live-dispute",
+    severity: "high",
+    claim:
+      "One side of a live dispute is currently represented in this course only through its opponent's description of it: her own 2009 journal article returned 403 in both research passes and has never been read. The course says so.",
+    question:
+      "What does her own account actually say?",
+    stakes:
+      "The course names the contesting party and states its case in its own words. It cannot do the same for her, which is a real asymmetry in a course about who gets to speak.",
+    needs: [
+      "The article itself, at the cited volume and pages",
+    ],
+    where: [
+      "Medecine/Sciences 2009, 25(3), 311-315, PMID 19361398",
+      "A university library, or interlibrary loan",
+    ],
+  },
+  {
+    key: "inserm-2014-opinion-refetch",
+    title: "The opinion's own PDF is behind a bot challenge",
+    course: "the-author-line-and-the-finding",
+    lesson: "what-an-ethics-committee-did",
+    severity: "medium",
+    claim:
+      "Every French sentence quoted from the 2014 ethics opinion comes from a transcription made in the earlier research pass: the PDF now serves an anti-bot challenge, which was deliberately not defeated. The document's identity, year, language, deposit date and open licence were confirmed first-hand through the repository's API, and the contesting party quotes four of the same sentences back in translation, which is a partial independent check.",
+    question:
+      "Do the quoted sentences match the opinion as published?",
+    stakes:
+      "It is the strongest document in the course, and the course currently quotes it at one remove.",
+    needs: [
+      "The PDF itself, or a library copy, read against the transcription",
+    ],
+    where: [
+      "The Inserm repository record",
+      "Inserm's own listing page",
+    ],
+  },
+  {
+    key: "gautier-turpin-letter-date",
+    title: "A date that contradicts itself inside one document",
+    course: "the-author-line-and-the-finding",
+    lesson: "a-live-dispute",
+    severity: "medium",
+    claim:
+      "The contesting party's own 2018 dossier dates a key letter to 27 October 1958 twice in its body text and to 17 October 1958 in an annex caption. The course prints the disagreement rather than choosing.",
+    question:
+      "What date does the letter itself bear?",
+    stakes:
+      "The letter is one of the contesting party's main exhibits, and its own file gives two dates for it.",
+    needs: [
+      "The letter itself, or a consistent statement of its date",
+    ],
+    where: [
+      "The foundation's published annexes",
+    ],
+  },
+  {
+    key: "gautier-kennedy-prize-1962-record",
+    title: "The 1962 prize record, never fetched",
+    course: "the-author-line-and-the-finding",
+    lesson: "the-honours-that-followed",
+    severity: "medium",
+    claim:
+      "The 1962 prize is taught from secondary accounts; the awarding body's own citation has not been read, and one translated date in the file is ambiguous, so no date is printed.",
+    question:
+      "What does the awarding body's own record say, and on what date?",
+    stakes:
+      "It is one of the honours the course uses to show what recognition followed the paper.",
+    needs: [
+      "The awarding body's citation and date",
+    ],
+    where: [
+      "The foundation that awarded it",
+    ],
+  },
+  {
+    key: "gautier-1959-printed-spelling",
+    title: "The printed page behind the index record",
+    course: "the-author-line-and-the-finding",
+    lesson: "three-names-in-an-order",
+    severity: "medium",
+    claim:
+      "The author order comes from index records; the printed 1959 page is behind a captcha and was not read. A printed-page error and an indexer's error are different failures with different meanings.",
+    question:
+      "How is the author line printed on the page itself?",
+    stakes:
+      "The whole first section reads an author line. It should read the printed one.",
+    needs: [
+      "The printed page, from the 1959 volume",
+    ],
+    where: [
+      "Gallica, or a library holding the volume",
+    ],
+  },
+  {
+    key: "gautier-bordeaux-meeting-date",
+    title: "Early 2014, but which month?",
+    course: "the-author-line-and-the-finding",
+    lesson: "a-live-dispute",
+    severity: "low",
+    claim:
+      "The course says early 2014 because sources give January and February, and one party's sentence dates its own learning of the talk rather than the talk.",
+    question:
+      "On what date was that meeting held?",
+    stakes:
+      "Low, and the lesson already teaches why the sentence does not date the event.",
+    needs: [
+      "A dated record of the meeting",
+    ],
+    where: [
+      "The learned society that held it",
+      "Contemporary press",
+    ],
+  },
+  {
+    key: "lejeune-1969-allan-award-address",
+    title: "A 1969 award address, not open access",
+    course: "the-author-line-and-the-finding",
+    lesson: "the-honours-that-followed",
+    severity: "low",
+    claim:
+      "The 1969 award is verified from the index record with its date and place. The address itself is a scan that is not open access and was not read.",
+    question:
+      "What does the award address say about the 1959 work and who did it?",
+    stakes:
+      "Low, but it is a contemporaneous statement by one of the parties.",
+    needs: [
+      "The published address",
+    ],
+    where: [
+      "The society's journal archive",
     ],
   },
 ];

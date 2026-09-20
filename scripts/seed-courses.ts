@@ -29,6 +29,7 @@ import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-pri
 import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
 import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
 import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
+import { AUTHOR_LINE_AND_FINDING_COURSE } from "./data/the-author-line-and-the-finding-course";
 import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
 import { WHO_THE_RULE_LEAVES_OUT_COURSE } from "./data/who-the-rule-leaves-out-course";
 import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
@@ -611,6 +612,13 @@ async function main() {
   // author. Two binding conditions carry over and are stated in the text as RULES: the ceremony and
   // the staging are never described, and no authorship share is ever asserted. A third rule governs
   // the BBC half: no lesson says there was a written policy, because nobody has read one.
+  // "The Author Line and the Finding" (Marthe Gautier, plans/83 E-02). PRIVATE, by BAM's decision of
+  // 2026-09-20 that she gets her own course rather than a section of the prize-citation one. The
+  // reason is the INSTRUMENT: a prize citation is written by the body that gave the award and is
+  // permanent; an ethics opinion is written by a body that gave nothing and says of itself that it
+  // may evolve. A LIVE dispute with a named contesting party, the Fondation Jerome Lejeune, whose
+  // case is stated in its own order and its own words. The course reaches NO verdict and says so.
+  // Abortion politics are named once, from each party's own sentences, and never argued.
   // NO series code. NO migration: pnpm seed:courses.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
@@ -622,6 +630,10 @@ async function main() {
     seriesSlug: "credit",
     seriesTitle: "Credit: Who Gets Named",
     seriesOrder: 14,
+    slug: "the-author-line-and-the-finding",
+    course: AUTHOR_LINE_AND_FINDING_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Science & Math"],
     navigationMode: "linear",
     price: 0,
     priceType: "free",
@@ -707,6 +719,7 @@ async function main() {
       "Private study. Structure is a subject where a wrong sentence can put a wall on somebody, so this is held while a reader with building experience checks it. It teaches knowledge and not skill, gives no span, header size, beam size or fastener schedule, implies no credential, approves no permit, inspects nothing, and substitutes for no trade program.",
       "Private until vetted. A business history built from 1972 to 1974 trade press, a federal appeals court opinion, government and company releases, an open 2024 federal docket and the sponsor's own 2025 memoir. Three things are open and filed as research checks: why the 1973 rival show ended, the discrepancy between the 1977 opinion and the sponsor's account of the same case, and the outcome of the royalty suit, which lesson 22 states is unresolved and which must be re-checked before any public release.",
       "Private study, held for two reasons. The BBC half rests on an absence: no document stating the credit rule has been read, so the course says what the papers say and never that a written policy existed. And section 4 teaches a Native woman's case written by a non-Native author, so it needs a Native reviewer with the authority to change or cut any of it, matching whose-name-is-on-the-score.",
+      "Private study for BAM (plans/83). A live credit dispute with a named contesting party, the Fondation Jerome Lejeune, which publishes its own documents. Built from the Inserm ethics committee's 2014 opinion, the Foundation's three published texts, Inserm's own listing page, and the 1959 and 1969 index records. It reaches no verdict, because the documents it could read do not support one, and it says so.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
