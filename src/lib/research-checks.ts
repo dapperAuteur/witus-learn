@@ -5160,6 +5160,168 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The ENIAC Programmers Project site",
     ],
   },
+  // ── how-the-trades-work (journeyman orientation), filed 2026-09-20 with the course ──
+  {
+    key: "trades-indiana-nec-edition",
+    title: "Which electrical code edition does Indiana actually enforce now?",
+    course: "how-the-trades-work",
+    lesson: "open-book-and-the-wrong-edition",
+    quote:
+      "One commercial site seen on 20 September 2026 described a pending Indiana adoption of a newer electrical edition; it was not on the Commission's own currently-in-effect table, so this course does not treat it as a fact.",
+    severity: "high",
+    claim:
+      "The lesson teaches that the state rule adopts the 2008 edition, effective 26 August 2009, listed as currently in effect when read on 2026-09-20. One commercial site described a pending adoption of a newer edition; it was not on the commission's own currently-in-effect table, so the course does not treat it as a fact.",
+    question:
+      "Which edition of the electrical code is currently adopted in Indiana, and has a newer one been adopted since 2026-09-20?",
+    stakes:
+      "The single most load-bearing fact in section 7. If a newer edition is adopted, the lesson flips and a learner following it buys the wrong book for an open-book examination.",
+    needs: [
+      "The commission's currently-in-effect rules table, re-read, with the date",
+    ],
+    where: [
+      "The Indiana fire prevention and building safety commission's rules pages",
+    ],
+  },
+  {
+    key: "trades-eti-wage-and-hours",
+    title: "One sponsor's published wages and hours, which will move",
+    course: "how-the-trades-work",
+    lesson: "what-it-pays-and-what-it-costs",
+    quote:
+      "Those are one sponsor's published figures for one trade in one city on one date.",
+    severity: "medium",
+    claim:
+      "An Indianapolis electrical apprenticeship sponsor publishes an apprentice starting wage, a completion minimum, 720 classroom hours and 8,000 on-the-job hours over five terms, and an associate degree at no cost beyond book fees. All read 2026-09-20 and printed with that date.",
+    question:
+      "What are the sponsor's current published wage and hour figures?",
+    stakes:
+      "These are a sponsor's own pages, accurate on the day and certain to move. A stale wage figure in a careers course is exactly the number a learner plans around.",
+    needs: [
+      "The current published figures, re-read, with the date",
+    ],
+    where: [
+      "The Indianapolis electrical training sponsor's apprenticeship pages",
+    ],
+  },
+  {
+    key: "trades-indy-electrical-application-currency",
+    title: "Is the city's electrical licence application current?",
+    course: "how-the-trades-work",
+    lesson: "no-state-electrical-licence",
+    quote:
+      "It also contains a board meeting calendar that ends in 2024.",
+    severity: "medium",
+    claim:
+      "The board's application states that no state electrical licence exists, and sets out the experience requirement, references, a board appearance, and an examination at a 75 percent minimum. The course teaches the ordinance as current and the form as possibly behind it.",
+    question:
+      "What is the current application form, its date, its fees, and the examination vendor?",
+    stakes:
+      "The ordinance is current; the form may not be. Its own meeting calendar ends in 2024, which is the tell the lesson teaches.",
+    needs: [
+      "The current application form, its date, and the examination vendor",
+    ],
+    where: [
+      "The Indianapolis board of electrical examiners, via the city's business and neighborhood services department",
+    ],
+  },
+  {
+    key: "trades-marion-county-exam-bulletin",
+    title: "The county examination bulletin is four years old",
+    course: "how-the-trades-work",
+    lesson: "open-book-and-the-wrong-edition",
+    quote:
+      "from that bulletin dated 1 March 2022",
+    severity: "medium",
+    claim:
+      "The examination fee, question counts, time limits, trade list and the open-book reference rules come from a candidate bulletin dated 1 March 2022, printed with that date.",
+    question:
+      "What does the current candidate information bulletin say, and when was it issued?",
+    stakes:
+      "The open-book reference rules are the most operationally useful content in section 7 and the most likely to have been revised.",
+    needs: [
+      "The current candidate information bulletin and its date",
+    ],
+    where: [
+      "The examination vendor's Indiana candidate information bulletins",
+    ],
+  },
+  {
+    key: "trades-local-pre-apprenticeship-details",
+    title: "The local pre-apprenticeship programme's own details",
+    course: "how-the-trades-work",
+    lesson: "college-pre-apprenticeship-and-readiness",
+    severity: "low",
+    claim:
+      "The course prints NOTHING specific about the pre-apprenticeship programme BAM is in, because the event page returned 404 and the details were only reported. It teaches the federal definition and the quality-element questions instead.",
+    question:
+      "What are the programme's actual hours, length, credentials awarded, and does it hold a pre-apprenticeship designation?",
+    stakes:
+      "BAM is the primary source here, which is why nothing was printed from a secondary one.",
+    needs: [
+      "The programme's own description of its hours, length and credentials",
+    ],
+    where: [
+      "BAM himself",
+      "The John Boner Neighborhood Centers construction training programme",
+    ],
+  },
+  {
+    key: "trades-indiana-exam-vendors",
+    title: "Which vendors administer which Indiana examinations?",
+    course: "how-the-trades-work",
+    lesson: "open-book-and-the-wrong-edition",
+    severity: "low",
+    claim:
+      "The course names only the two vendors it verified and does not assert a third that appeared in search results only.",
+    question:
+      "Which examination vendors administer which trade examinations in Indiana and Marion County?",
+    stakes:
+      "Low. A learner is sent to the authority, which names its own vendor.",
+    needs: [
+      "The authorities' own vendor statements",
+    ],
+    where: [
+      "The city board and the state commission's examination pages",
+    ],
+  },
+  {
+    key: "trades-national-union-programme-structures",
+    title: "National union programme hours, which were not verified",
+    course: "how-the-trades-work",
+    lesson: "the-pipelines",
+    severity: "low",
+    claim:
+      "National figures for the electrical, plumbing and carpentry programmes were UNVERIFIED (pages 404 or local-only), so nothing national is printed. One Indianapolis sponsor's figures are used and labelled as one sponsor's.",
+    question:
+      "What are the national programme structures and hour requirements for the main trade unions?",
+    stakes:
+      "Low, and the course is honest about the gap. National figures would let section 5 compare pipelines rather than describe one.",
+    needs: [
+      "Published national programme standards, with their dates",
+    ],
+    where: [
+      "The national joint apprenticeship bodies for each trade",
+    ],
+  },
+  {
+    key: "trades-ivy-tech-construction-skills-url",
+    title: "A citation that points at a site root",
+    course: "how-the-trades-work",
+    lesson: "college-pre-apprenticeship-and-readiness",
+    severity: "low",
+    claim:
+      "A one-semester community college construction skills programme is described from research notes that recorded the content but not the canonical page, so the reference points at the site root rather than the page.",
+    question:
+      "What is the canonical page for that programme, and do its details still match?",
+    stakes:
+      "An APA entry a reader cannot follow to the page is a weak citation, and this course teaches citation discipline.",
+    needs: [
+      "The canonical programme page URL, and its current details",
+    ],
+    where: [
+      "The college's construction skills programme pages",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

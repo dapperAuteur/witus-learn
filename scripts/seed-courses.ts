@@ -31,6 +31,7 @@ import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
 import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
 import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
 import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
+import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -563,6 +564,31 @@ async function main() {
     seriesSlug: "credit",
     seriesTitle: "Credit: Who Gets Named",
     seriesOrder: 12,
+  });
+
+  // "How the Trades Work" (the journeyman orientation). PRIVATE study, by BAM's choice of option B
+  // on 2026-09-20 from plans/future-courses/construction/2026-09-20-journeyman-curriculum-research.md.
+  // The spine is that the freely available information about entering a trade is WRONG, including
+  // about BAM's own city: Indianapolis licenses master and residential electricians and no
+  // journeyman at all, while Indiana does license a journeyman plumber. Commercial guides assert a
+  // Marion County journeyman exam with two contradictory hour figures for a licence that does not
+  // exist, and the course uses that as its worked wrong answer, attributed and never asserted.
+  // It grants no hours, no credit, no credential and no licence, and says so in lessons 1 and 16.
+  // Category is Careers & Media, NOT "Trade Skills": it teaches no trade skill, and a learner
+  // browsing for hands-on training there would be misdirected. NO series code. NO migration.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-the-trades-work",
+    course: HOW_THE_TRADES_WORK_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Money & Property"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM. Every fee, hour, wage, code edition and examination figure was read on 2026-09-20 and prints that date, and several sit on sponsor and vendor pages that will move. Held private until those research checks are answered and the Indiana worked example has been re-checked against the ordinance and the state agencies.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
