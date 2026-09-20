@@ -163,6 +163,8 @@ const BACKLOG: Record<string, string> = {
     "PRIVATE study, no series code. A document-analysis history course (reading an institutional record, claim against evidence, corroboration), so a genuine candidate for US-history and ELA standards, mapped at the public flip rather than claimed for a course no educator can see.",
   "notes-made-by-mr-george-hunt":
     "PRIVATE until a Kwakwaka'wakw reviewer has read it, no series code. A primary-source history course (title pages, catalogue records, archival provenance), so a real candidate for US-history and ELA standards, mapped at the public flip rather than claimed for a course no educator can see.",
+  "who-may-teach":
+    "PRIVATE study, no series code. A primary-source history course built on printed course catalogues (transcription, corroboration, correcting a popular account), so a real candidate for US-history and ELA standards and for the mathematics it names; mapped at the public flip rather than claimed for a course no educator can see.",
   "construction-safety":
     "PRIVATE study support, not published. Built from 29 CFR 1926 rather than a curriculum, and held for BAM alone while he takes a construction course elsewhere. No educator can see it, so there is nobody to make a standards promise to.",
   "construction-math":

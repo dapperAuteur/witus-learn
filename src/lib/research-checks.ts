@@ -4538,6 +4538,163 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Victoria and Vancouver newspapers of 1900",
     ],
   },
+  // ── who-may-teach (Emmy Noether), filed 2026-09-20 with the course ──
+  {
+    key: "noether-1918-paper-as-habilitation-thesis",
+    title: "Was the 1918 paper Noether's habilitation thesis?",
+    course: "who-may-teach",
+    lesson: "the-paper-of-1918",
+    quote:
+      "None of the sources read for this course says it.",
+    severity: "medium",
+    claim:
+      "Lesson 16 declines the widely repeated claim that the 1918 paper served as her habilitation work, and teaches the dated sequence instead: the paper presented by Klein on 26 July 1918, Einstein to Klein on 27 December 1918, the third application on 18 January 1919, and the trial lecture on 4 June 1919.",
+    question:
+      "What work was submitted with the January 1919 habilitation application?",
+    stakes:
+      "The brief's own outline states the link, so a course that silently drops it looks evasive and one that asserts it teaches an unsourced connection. Settling it either restores a good closing beat or confirms a correction worth publishing.",
+    needs: [
+      "A statement, from the habilitation file or a historian working from it, naming the work submitted with the January 1919 application",
+    ],
+    where: [
+      "Tollmien's 1990 documentary article (its volume and pages are REPORTED only and appear nowhere in the course)",
+      "The Goettingen university archive's habilitation file",
+    ],
+  },
+  {
+    key: "goettingen-catalogue-fee-words",
+    title: "What did gratis, privatim and privatissime mean in the catalogue?",
+    course: "who-may-teach",
+    lesson: "how-to-read-a-catalogue-entry",
+    quote:
+      "This course does not tell you what those categories meant in detail, because none of the sources read for it defines the Goettingen fee words.",
+    severity: "medium",
+    claim:
+      "The course teaches only what it can show: gratis appears on many professors' courses on the same pages, MacTutor renders it as no tuition, and one Noether entry reads privatim instead.",
+    question:
+      "What did the three fee categories mean in a German university course catalogue of the 1910s?",
+    stakes:
+      "The fourth correction in section 6 turns on the fee word not being a statement about the teacher's pay. The argument holds without definitions, but a documented definition would make section 3 teach the format rather than gesture at it.",
+    needs: [
+      "A contemporary definition of the three fee categories, with the source that defines them",
+    ],
+    where: [
+      "The front matter of any volume in GDZ PPN654655340",
+      "Prussian university regulations of the period",
+      "A history of German university teaching practice",
+    ],
+  },
+  {
+    key: "noether-pay-1916-1919",
+    title: "Was Noether paid anything for the teaching of 1916 to 1919?",
+    course: "who-may-teach",
+    lesson: "a-title-without-a-salary",
+    quote:
+      "What Noether was paid, if anything, for the six semesters of teaching between 1916 and 1919 is not settled by anything read for this course.",
+    severity: "medium",
+    claim:
+      "The course refuses both the she-taught-for-free reading of gratis and any claim that she was paid, and says so twice.",
+    question:
+      "What, if anything, was Noether paid for the six semesters of teaching between 1916 and 1919?",
+    stakes:
+      "The popular version's most repeated single detail. A pay record would either confirm the substance of a claim whose usual evidence is wrong, or refute it outright.",
+    needs: [
+      "A university or ministry pay record covering Noether at Goettingen, 1916 to 1919",
+      "Who received the fees for the one privatim entry",
+    ],
+    where: [
+      "The Goettingen university archive, curator's accounts",
+      "Tollmien's 1990 article",
+    ],
+  },
+  {
+    key: "prussian-ministry-change-1917-1919",
+    title: "What changed at the ministry between 1917 and 1919?",
+    course: "who-may-teach",
+    lesson: "einstein-to-klein",
+    quote:
+      "What the sources read for this course do not contain is any document explaining what changed inside the ministry.",
+    severity: "low",
+    claim:
+      "Lesson 12 states the refusal of 5 November 1917 and the statement of no objection of 8 May 1919, and declines to explain the reversal.",
+    question:
+      "What decision or change of policy lies behind the ministry's 1919 answer?",
+    stakes:
+      "The only causal question the course leaves entirely open, and a reader who wants a villain or a hero will fill it in themselves if nobody does.",
+    needs: [
+      "A ministry document, or a historian's account resting on one",
+    ],
+    where: [
+      "Tollmien's 1990 article",
+      "Prussian ministry of education files for 1918 to 1919",
+    ],
+  },
+  {
+    key: "goettingen-catalogue-1919-autumn-scan",
+    title: "Confirm the autumn 1919 catalogue line against the page image",
+    course: "who-may-teach",
+    lesson: "her-own-name-in-the-catalogue",
+    quote:
+      "This one is Tollmien's transcription, not a reading of the page image: the scan for that volume was not opened for this course.",
+    severity: "low",
+    claim:
+      "The course prints the autumn 1919 entry as Tollmien's transcription and marks its evidential level, because that volume's scan was not opened.",
+    question:
+      "What does the Herbstzwischensemester 1919 entry read, as printed on the page image?",
+    stakes:
+      "It is the one line in the course that shows the record correcting itself, and the only catalogue line not read on a scan. Section 3 has already shown Tollmien's transcriptions differing from the images in three places.",
+    needs: [
+      "The page image for the 1919 autumn volume, and the entry as printed",
+    ],
+    where: [
+      "GDZ PPN654655340 for 1919/20 (its manifest returned HTTP 500 on 2026-09-18)",
+      "The library reading room, or gdz@sub.uni-goettingen.de",
+    ],
+  },
+  {
+    key: "noether-1933-removal-document",
+    title: "What document ended Noether's position in 1933?",
+    course: "who-may-teach",
+    lesson: "nineteen-thirty-three",
+    quote:
+      "It does not have the document that ended her position at Goettingen, and it does not quote one.",
+    severity: "low",
+    claim:
+      "Lesson 18 gives the sequence (the civil-service law of 7 April 1933, then emigration in October 1933) as a sequence, and asserts no causal link.",
+    question:
+      "What document ended her position at Goettingen, and what does it say?",
+    stakes:
+      "The course's last section is deliberately thin. If the dismissal document exists and is quotable, the ending can rest on a document like the rest of the course.",
+    needs: [
+      "The dismissal document, or a historian quoting it",
+    ],
+    where: [
+      "The Goettingen university archive",
+      "Tollmien",
+      "Published work on the 1933 dismissals",
+    ],
+  },
+  {
+    key: "goettingen-staff-indexes-1917-1919",
+    title: "Do the other five staff indexes also omit her?",
+    course: "who-may-teach",
+    lesson: "the-index-where-the-name-is-not",
+    quote:
+      "Only the winter 1916/17 index was checked.",
+    severity: "low",
+    claim:
+      "Lesson 10 states the omission for one semester only, the winter of 1916/17, and says so out loud.",
+    question:
+      "Do the staff indexes for the other five semesters carry a Noether entry?",
+    stakes:
+      "Six omissions are a pattern and one is an anecdote. It is also the cheapest check in this list: five page images, already digitised and free to read.",
+    needs: [
+      "The staff index pages for the five remaining semesters, and whether any carries a Noether entry",
+    ],
+    where: [
+      "GDZ PPN654655340, the same series as the entries in section 3",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

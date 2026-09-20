@@ -27,6 +27,7 @@ import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
 import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-prize-course";
 import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
+import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -463,6 +464,32 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Held private until a Kwakwaka'wakw reader has reviewed it, proposed through the U'mista Cultural Centre, which co-presented The Story Box, with the authority to change or cut any part. Written from public catalogue records, archive pages and published scholarship; it prints no Kwak'wala personal name and no ceremonial detail, and says so in its own text.",
+  });
+
+  // "Who May Teach" (Emmy Noether, plans/83 E-19). PRIVATE study, by BAM's approval of
+  // plans/future-courses/uncredited/2026-09-18-emmy-noether-brief.md on 2026-09-19. Section 6 is
+  // four corrections to the popular version, all settled against the digitised Goettingen
+  // catalogues: six semesters not four years, no 19 November 1915 vote in any source, the ministry
+  // rather than an academic senate, and "gratis" as a fee category printed on Hilbert's own
+  // seminars. FIRST COURSE TO USE additionalCategories (migration 0062): it is history and it is
+  // mathematics, and the primary decides curriculum order. NO series code. NO migration beyond
+  // 0062, which the bundle already carries: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-may-teach",
+    course: WHO_MAY_TEACH_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Science & Math"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from the digitised Goettingen course catalogues on GDZ, read as page images, and from Tollmien and Ihringer. It reproduces no scan, because SUB Goettingen's terms require written permission, and lesson 8 tells the learner why.",
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 10,
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
