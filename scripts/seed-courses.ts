@@ -30,6 +30,7 @@ import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
 import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
 import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
 import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
+import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -539,6 +540,29 @@ async function main() {
     seriesSlug: "credit",
     seriesTitle: "Credit: Who Gets Named",
     seriesOrder: 11,
+  });
+
+  // "Who Were the Computers" (the six ENIAC programmers, plans/83 E-13). PRIVATE study, by BAM's
+  // approval of plans/future-courses/uncredited/2026-09-18-eniac-six-brief.md on 2026-09-19, under
+  // the condition he approved it on: NO lesson states the 1946-caption claim as fact until an
+  // original caption is read. It is attributed to Kathy Kleiman by name everywhere it appears, and
+  // section 4 teaches the gap as a gap. NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-were-the-computers",
+    course: WHO_WERE_THE_COMPUTERS_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["AI & Technology", "Science & Math"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Its central claim, that the 1946 press captions named the men and not the women, is ATTRIBUTED to Kathy Kleiman throughout and asserted nowhere, because no original caption has been read. Built from the Army's own photograph captions, published interviews and institutional records.",
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 12,
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

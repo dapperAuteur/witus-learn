@@ -1147,6 +1147,20 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   shipping a lettered badge with **no track name** to explain it. Both are now named. And a
   **private course carries no code at all**, because a code is a promise about where to start in a
   series that no learner can see.
+- ✅ **Six courses from the uncredited-work research** (\`content/uncredited-courses-2026-09-20\`,
+  all **private**, all free, none carrying a series code): Denise Scott Brown
+  (\`the-partner-and-the-prize\`), George Hunt (\`notes-made-by-mr-george-hunt\`), Emmy Noether
+  (\`who-may-teach\`), Candace Pert with Frieda Robscheit-Robbins (\`what-the-citation-records\`),
+  Zitkala-Šá (\`whose-name-is-on-the-score\`) and the six ENIAC programmers
+  (\`who-were-the-computers\`). **Every one went through the course-brief rule first**, and the
+  briefs changed the answers: three subjects became sections of shared courses rather than courses of
+  their own, and five entries in the research file turned out to be **wrong** and are corrected in
+  the courses that replaced them (the Noether story is wrong in four places; the "forged signature"
+  behind the Leyster story is unsupported; Chien-Shiung Wu received **zero** nominations for the
+  prize she is said to have been denied). Two courses are the first to use additional categories.
+  Each course's central open question is filed as a research check rather than guessed, and two
+  courses are held for a community reviewer with the authority to change or cut any part. 125
+  lessons and roughly 2,000 questions between them, every one auditing at zero findings.
 - 🔜 **Sentry error monitoring** (\`feat/rag-autoindex-and-report-bulk\`, wired, DSN pending → task 208):
   crash-grade signal (real stack traces, grouping, alerting) alongside the existing home-grown admin
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;

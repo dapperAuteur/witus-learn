@@ -4978,6 +4978,188 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Musical America, 1913 volumes",
     ],
   },
+  // ── who-were-the-computers (the six ENIAC programmers), filed 2026-09-20 ──
+  {
+    key: "eniac-1946-caption-original",
+    title: "Read an original 1946 caption from the Army's ENIAC publicity photographs",
+    course: "who-were-the-computers",
+    lesson: "the-document-that-would-settle-it",
+    quote:
+      "The claim is that the 1946 captions named the men and not the women. What would settle it is an original caption, read.",
+    severity: "high",
+    claim:
+      "The course ATTRIBUTES to Kathy Kleiman, in every lesson that touches it, the claim that the 1946 captions named the men and not the women. It asserts it nowhere, which is the condition BAM approved the course on.",
+    question:
+      "Do the original 1946 captions name the men and not the women? Quote at least one caption verbatim, with its date.",
+    stakes:
+      "It is the claim the whole subject rests on. Closing it would move the course's central claim from attributed to documented. NOTE: one caption STRENGTHENS the claim and does not prove it, because the 1946 captions is a generalization over a set, and lesson 12 says so in those words.",
+    needs: [
+      "The verbatim wording of at least one original 1946 caption, its date, the photograph it accompanied, and whether it was an Army caption or a newspaper's",
+    ],
+    where: [
+      "Hagley Museum and Library, Acc. 1825, the Sperry Rand v. Honeywell documents, boxes 9a and 382",
+      "The US Army Research Laboratory technical library, behind the scans at ftp.arl.army.mil",
+      "The Daily Pennsylvanian archive, 4 March 1947",
+      "The New York Times of 15 February 1946",
+    ],
+  },
+  {
+    key: "eniac-demonstration-date",
+    title: "Was the press demonstration on 14 or 15 February 1946?",
+    course: "who-were-the-computers",
+    lesson: "a-date-that-does-not-check-out",
+    quote:
+      "Outside a quotation it writes mid-February 1946.",
+    severity: "medium",
+    claim:
+      "One source gives 15 February 1946; another gives Saturday, 14 February 1946. Checked against the calendar in this pass: 14 February was a Thursday and 15 a Friday, so the second source's day name conflicts with its own date. The course teaches the conflict and writes mid-February in its own voice.",
+    question:
+      "On what date was the ENIAC press demonstration held?",
+    stakes:
+      "A course about checking a record should be able to date the event at its centre.",
+    needs: [
+      "A dated document from the event itself, with the date on its face",
+    ],
+    where: [
+      "The Moore School's invitation or programme",
+      "The Army's press release",
+      "A dated newspaper page reporting the demonstration",
+    ],
+  },
+  {
+    key: "eniac-six-selection",
+    title: "Who chose the six, when, and on what basis?",
+    course: "who-were-the-computers",
+    lesson: "chosen-from-the-computers",
+    quote:
+      "Neither source names who chose, or on what basis.",
+    severity: "medium",
+    claim:
+      "Two sources disagree: one says six were chosen from about 100 human computers, the other that five were randomly selected with a sixth added later. Neither names who chose. The course prints both and refuses the word randomly for want of the paper a procedure leaves.",
+    question:
+      "Who selected the six programmers, on what date, and by what method?",
+    stakes:
+      "Random selection and deliberate selection say opposite things about how the work was valued.",
+    needs: [
+      "A personnel record, memo or project file recording the selection",
+    ],
+    where: [
+      "Moore School project files",
+      "Ballistics Research Laboratory personnel records",
+    ],
+  },
+  {
+    key: "eniac-december-1945-operators",
+    title: "Who configured the machine for the December 1945 run?",
+    course: "who-were-the-computers",
+    lesson: "the-first-problem",
+    severity: "medium",
+    claim:
+      "One source's HEADLINE attributes the first program to the six; its sentences do not name the operators, so the course does not either. The course also prints no project name for that run, because the popular label appears in no source read.",
+    question:
+      "Who set up the machine for the 10 December 1945 run, and did that run have a project designation?",
+    stakes:
+      "It is the first real use of the machine, and the retelling assigns it to the six on the strength of a headline.",
+    needs: [
+      "An operating log, service record or report naming who configured the machine",
+      "Whether the run carried a project designation",
+    ],
+    where: [
+      "Los Alamos and Ballistics Research Laboratory records",
+      "ENIAC service logs",
+      "Moore School project files",
+    ],
+  },
+  {
+    key: "eniac-six-oral-histories",
+    title: "Read the six programmers' own oral histories",
+    course: "who-were-the-computers",
+    lesson: "finding-them",
+    quote:
+      "This course does not quote the six. Their oral histories exist, and nobody building this course has read them.",
+    severity: "medium",
+    claim:
+      "Every description of the six in this course comes from somebody else's account. Lesson 13 says so, and lesson 15 lists the oral histories as unread.",
+    question:
+      "What do the six say, in their own words, about the captions, the demonstration and the work?",
+    stakes:
+      "A course about who gets to speak in a record, assembled entirely from other people's descriptions, has the defect it is teaching about.",
+    needs: [
+      "The oral history transcripts or recordings, with their catalogue identifiers",
+    ],
+    where: [
+      "Computer History Museum oral history collection",
+      "IEEE History Center",
+      "The ENIAC Programmers Project interviews",
+    ],
+  },
+  {
+    key: "eniac-models-remark-variants",
+    title: "Document the retellings that move the museum episode",
+    course: "who-were-the-computers",
+    lesson: "the-models-remark",
+    quote:
+      "This course met those only in search results and did not fetch the pages, so it does not reproduce their details.",
+    severity: "low",
+    claim:
+      "The course teaches the documented drift between the two tellings it fetched, and explicitly refuses to assert further drift from search snippets.",
+    question:
+      "What do the other retellings of the museum episode say, and where do they place it?",
+    stakes:
+      "Low. The lesson already shows drift with two fetched sources and declines to claim more.",
+    needs: [
+      "The fetched text of each retelling, with its publication, author and date",
+    ],
+    where: [
+      "The summary met only as a snippet",
+      "Other secondary retellings",
+      "Kleiman's 2022 book, unread here",
+    ],
+  },
+  {
+    key: "eniac-moore-school-pay-comparison",
+    title: "What were men in comparable posts paid?",
+    course: "who-were-the-computers",
+    lesson: "why-the-job-was-open",
+    quote:
+      "So this course prints no Moore School pay gap.",
+    severity: "low",
+    claim:
+      "One source gives the computers about 1,620 dollars a year. No source read gives men's pay in comparable posts, so the course states the salary, prints no comparison, and says the gap is plausible and undocumented.",
+    question:
+      "What were men in comparable posts at the Moore School or the Ballistics Research Laboratory paid in the same years?",
+    stakes:
+      "Low. The honest sentence is already in the lesson.",
+    needs: [
+      "A payroll or personnel record showing comparable male salaries in the same years",
+    ],
+    where: [
+      "Moore School personnel records",
+      "Ballistics Research Laboratory payroll records",
+    ],
+  },
+  {
+    key: "eniac-documentary-producer-spelling",
+    title: "John or Jon on the documentary's credits?",
+    course: "who-were-the-computers",
+    lesson: "instruments-of-a-correction",
+    quote:
+      "Other retellings spell the first of those Jon.",
+    severity: "low",
+    claim:
+      "One source names the producer with one spelling and other retellings use another. The course prints the one its source uses and flags the variant, per its own rule about spelling a name the way the source you cite spells it.",
+    question:
+      "How is the producer's first name spelled on the film's own credits?",
+    stakes:
+      "Low, and it is the course's own rule applied to itself.",
+    needs: [
+      "The spelling on the film's credits",
+    ],
+    where: [
+      "The documentary's end credits",
+      "The ENIAC Programmers Project site",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
