@@ -3,19 +3,34 @@ import type { AuthoredCourse } from "./authored-course";
 // "What the Citation Records: Reading a Prize Page Against the Documents Around It"
 // (Culture & History). Slug to be registered: `what-the-citation-records`.
 //
-// SOURCE BRIEFS, both approved by BAM on 2026-09-19:
-//   plans/future-courses/uncredited/2026-09-18-candace-pert-brief.md
-//   plans/future-courses/uncredited/2026-09-18-robscheit-robbins-brief.md
+// SOURCE BRIEFS, approved by BAM:
+//   plans/future-courses/uncredited/2026-09-18-candace-pert-brief.md          (2026-09-19)
+//   plans/future-courses/uncredited/2026-09-18-robscheit-robbins-brief.md     (2026-09-19)
+//   plans/future-courses/uncredited/2026-09-18-isabella-karle-brief.md        (2026-09-20)
 //
-// BAM'S CHANGE TO THE BRIEFS. They proposed a FOUR-case cluster course, adding Isabella Karle and
-// Marthe Gautier. BAM approved ONLY Pert and Robscheit-Robbins; Karle and Gautier are on hold in
-// plans/88-course-backlog-2026-09-19.md. There is no Karle and no Gautier material in this file.
+// BAM'S CHANGES TO THE BRIEFS. They proposed a FOUR-case cluster course, adding Isabella Karle and
+// Marthe Gautier. On 2026-09-19 BAM approved only Pert and Robscheit-Robbins, and this file was
+// built from those two. On 2026-09-20 he decided to FOLD ISABELLA KARLE IN, as a "1985" section
+// between the 1978 section and the closing section, which is what the shape below was designed for.
+// MARTHE GAUTIER (1959 to 2014) IS STILL ON HOLD in plans/88-course-backlog-2026-09-19.md, and
+// there is no Gautier material in this file.
 //
-// THE SHAPE IS BUILT TO TAKE A THIRD AND FOURTH CASE WITHOUT RENUMBERING ANYTHING.
-// Sections are keyed by the YEAR of the prize, not by a running ordinal, and the framing and
-// closing sections are keyed by the words "Opening" and "Closing". So a later 1985 section or 1959
-// section slots in by year, and no existing section title, lesson title, lesson slug or quiz slug
-// changes. That is why no lesson title carries a running number: a "7 ·" prefix is exactly the
+// WHAT THE 2026-09-20 EDIT TOUCHED OUTSIDE THE NEW SECTION, and why. Nothing was renumbered and no
+// existing lesson slug, quiz slug, question prompt, option, explanation or sourceLessonSlug was
+// changed, because a reworded prompt resets per-question history (questionKey hashes the prompt)
+// and a reordered option rewrites what past learners answered. What did change: the description and
+// this header; the bodies of the two Opening lessons and the three Closing lessons, which counted
+// the cases and would otherwise have been false; and three quiz banks GAINED questions (the final,
+// the Opening quiz and the Closing quiz) so that the pools still clear the density target for the
+// words those lessons now carry. Existing questions that say "two cases cannot show a pattern" were
+// deliberately left verbatim: they stay true of three, since the point is that a handful of cases
+// is too few, and rewriting them would cost every learner their history on those questions.
+//
+// THE SHAPE IS BUILT TO TAKE A THIRD AND FOURTH CASE WITHOUT RENUMBERING ANYTHING, AND THE THIRD
+// HAS NOW BEEN ADDED. Sections are keyed by the YEAR of the prize, not by a running ordinal, and
+// the framing and closing sections are keyed by the words "Opening" and "Closing". The 1985 section
+// slotted in by year on 2026-09-20 and no existing section title, lesson title, lesson slug or quiz
+// slug changed; a 1959 section for Gautier would go in the same way, before the Closing section. That is why no lesson title carries a running number: a "7 ·" prefix is exactly the
 // thing that would have to be rewritten. The registered order of lessons in the array is the
 // course's order, so a new case is spliced in at its chronological position.
 //
@@ -23,14 +38,15 @@ import type { AuthoredCourse } from "./authored-course";
 // carry CREDIT codes, so there is no seriesCode, no seriesPosition and no seriesTrack here or in
 // the proposed registration block at the foot of this file. Category "Culture & History".
 //
-// RESEARCH TIER: 2. Both briefs set Tier 2 because the subject matter is medicine-adjacent history
-// (anaemia therapy, opiate pharmacology). No health advice is given anywhere in the course, and
-// every biomedical sentence is a report of what a 1934 or 1973 document said, never a claim about
-// what anyone should do.
+// RESEARCH TIER: 2. The Pert and Robscheit-Robbins briefs set Tier 2 because the subject matter is
+// medicine-adjacent history (anaemia therapy, opiate pharmacology). No health advice is given
+// anywhere in the course, and every biomedical sentence is a report of what a 1934 or 1973 document
+// said, never a claim about what anyone should do. The Karle brief is Tier 1 and its subject matter
+// is physical science (X-ray crystallography), which adds no health content of any kind.
 //
-// THE SPINE, and it must not be flattened into "two women were robbed":
+// THE SPINE, and it must not be flattened into "three women were robbed":
 // A PRIZE PAGE IS NOT ONE DOCUMENT. It is a citation, an account written by the institution, and
-// the laureate's own words, and in both of these cases those three texts do not agree about who
+// the laureate's own words, and in each of these cases those texts do not agree about who
 // did the identifying. The skill is reading them apart, then reading them against a fourth document
 // the prize-giver does not host: the author line, or the reference list. Taught once, that is a
 // method. Taught as a grievance, it is a list. The closing section exists to keep it the first.
@@ -64,6 +80,35 @@ import type { AuthoredCourse } from "./authored-course";
 //    (Pierce, 2021). A university history page that TRANSCRIBES its sources. Anything taken from it
 //    is attributed as a transcription, because the books themselves were not read.
 //
+// FETCH-OR-DO-NOT-CITE, the 1985 section, all retrieved and read on 2026-09-20 for this edit rather
+// than carried over from the Karle brief:
+//  - J. Karle, "Recovering phase information from intensity data", Nobel lecture, 9 December 1985
+//    (nobelprize.org/uploads/2018/06/karle-lecture.pdf, 37 pages). Downloaded and read in full.
+//    ITS REFERENCE LIST WAS RE-COUNTED HERE, not taken from the brief, and counted from PAGE IMAGES
+//    rendered at 150 dpi (pages 252, 253 and 254 of the printed volume) because the text layer of a
+//    scanned page corrupts initials, which is the thing the count turns on. The counts printed in
+//    the lesson, 98 references, 23 carrying her name, 15 with her first, 11 carrying Hauptman's,
+//    55 carrying both, and 21 matching the literal string "Karle, I. L.", are that count. The two
+//    misprints the lesson teaches, reference 61 "Karle, I." and reference 70 "Karle, and I. L.
+//    Witkop, B.", were confirmed on the rendered page and are in the published lecture itself.
+//  - Nobel Prize Outreach: the 1985 Chemistry summary page, the award ceremony speech by Professor
+//    Ingvar Lindqvist (10 December 1985), and the "Jerome Karle: Biographical" page, whose text is
+//    the autobiography from Les Prix Nobel 1985 (Odelberg, ed., 1986), read down to the sentence
+//    that ends it and distinguished from its 1992 and 2006 addenda. The speech was searched for
+//    "Isabella" and for "Isabel": zero hits in both cases.
+//  - THE PRESS RELEASE OF 16 OCTOBER 1985, which the Karle brief did not have. The Royal Swedish
+//    Academy of Sciences' own announcement, background note included. Its sentence "Isabel Karle's
+//    and M. Woolfson's contributions to the practical utilization of direct methods have been
+//    crucial" was read in the raw HTML as well as the stripped text, and the given name really is
+//    printed "Isabel" there. This is the strongest single document in the section: the awarding
+//    body, naming her, in the announcement of the prize she is not named in.
+//  - National Science and Technology Medals Foundation, "Isabella L. Karle", for the verbatim 1995
+//    National Medal of Science citation, and The Franklin Institute, "Isabella L. Karle", for the
+//    verbatim 1993 Bower Award citation, its longer account, its "Information as of 1995" line and
+//    its list of her other honours including the 1988 Aminoff Prize.
+//  - L. Wang (2017, October 26), "Isabella Karle", Chemical & Engineering News. Fetched and read,
+//    which is why the Hargittai sentences are quoted with attribution rather than left out.
+//
 // WHAT IS DELIBERATELY NOT PRINTED:
 //  - Any motive for any jury. The Lasker deliberations are confidential and no released Nobel
 //    committee record was found, so the course says what the documents say and stops.
@@ -72,23 +117,41 @@ import type { AuthoredCourse } from "./authored-course";
 //  - "21 papers with Whipple". Reproducible under exactly one counting rule and not the others, and
 //    the reference-book entry that states it carries two demonstrable errors. The course teaches
 //    the count WITH its rule, and teaches why that particular number is weak.
-//  - Any family member, spouse, child or descendant of either subject. The Rochester page names
-//    several; none appears here.
+//  - Any child or descendant of any subject. The Rochester page names several, and the 1985 Nobel
+//    autobiography names three daughters; none appears here. The spouse rule has one unavoidable
+//    exception: in the 1985 case the laureate IS her husband, and the sentence the section turns on
+//    is his. The frame rule from the briefs still holds, and the section obeys it: the procedure is
+//    taught before the marriage, and no lesson leads with "the wife who was overlooked".
 //  - Candace Pert's later career and popular writing, and the medical detail Marx reports about
 //    her. Out of scope and not needed by any lesson.
+//  - "Isabella Karle was the first to apply direct methods", which plans/83 asserted and which the
+//    C&EN obituary quotes Hargittai saying. The laureate's own lecture puts the earliest
+//    applications with the U.S. Geological Survey. The course prints the narrower documented claim
+//    and shows the check, rather than repeating the wider one.
+//  - Her own words from the 1987 oral history, including the sentence about an undergraduate prize
+//    committee. The transcript is in copyright and the Karle brief's question 3 to BAM, quote one
+//    sentence with attribution or paraphrase only, HAS NOT BEEN ANSWERED. Nothing is quoted from it
+//    here; the only use made of it is the negative finding that it contains no discussion of the
+//    prize, which the brief verified. When BAM answers, the material is a two-sentence addition.
+//  - "I had enough awards as it was", the remark attributed to her by the Atomic Heritage Foundation
+//    quoting a paywalled 2013 article. Two removes from her, and the article could not be read.
+//  - The wording of the 1988 Aminoff Prize citation. The prize itself is on two fetched pages; its
+//    citation text was only ever seen in search results, so the lesson names the prize and quotes
+//    nothing, and a research check is proposed below.
 //
 // House style, matching drew-blood-bank-course.ts: `section` on every lesson; flush-left
 // single-line `:::reveal q ||| a`; a `## Vocabulary` block of 3 to 6 lesson-specific terms; APA 7
-// `## Sources`; a quiz per teaching section (pool sized to the density target, 53 to 68, serving 5,
-// passing 80, shuffled) plus a final pooling 41 and serving 10, placed LAST; two primary-source
-// exercises, the 1978 award page and the 1934 reference-list count; every question carries
+// `## Sources`; a quiz per teaching section (pool sized to the density target, 58 to 84, serving 5,
+// passing 80, shuffled) plus a final pooling 52 and serving 10, placed LAST; two primary-source
+// exercises, the 1978 award page and the 1934 reference-list count (the 1985 count is taught rather
+// than drilled, because the 1934 exercise already teaches the drill); every question carries
 // `explanation` + `sourceLessonSlug`.
 // Correct options are written SHORT and distractors long and specifically wrong, so
 // check-longest-option passes by construction. No em dashes and no en dashes anywhere.
 export const WHAT_THE_CITATION_RECORDS_COURSE: AuthoredCourse = {
   title: "What the Citation Records: Reading a Prize Page Against the Documents Around It",
   description:
-    "A prize page looks like one document. It is usually three. There is the citation, the short sentence the institution will repeat forever. There is the institution's own account of the work, an essay or a presentation speech. And there are the laureate's own words, acceptance remarks or a lecture, hosted on the same site by the same body. This course works two cases in which those three texts do not agree about who did the work. In 1934 the Nobel presentation speech praised Whipple's experiments and never named Frieda Robscheit-Robbins; two days later Whipple's own Nobel lecture said the method was begun by Dr. Frieda Robscheit-Robbins and the writer, and ten of its twenty-three references carry her name. In 1978 the Lasker Foundation's essay said Solomon Snyder identified the opiate receptor system, and Snyder's acceptance remarks on the same page said Candace Pert identified the opiate receptors in his laboratory. Neither page is a scandal and neither is a verdict. Each is a set of documents that can be read apart, set against a fourth document the prize-giver does not host, and counted. You will count the references yourself rather than take a total on trust, name who contests what and where they said it, and learn where the record stops. The closing section is the point of the course: a method you can carry to the next prize page, and an honest list of what these two cases do not prove.",
+    "A prize page looks like one document. It is usually three. There is the citation, the short sentence the institution will repeat forever. There is the institution's own account of the work, an essay or a presentation speech. And there are the laureate's own words, acceptance remarks or a lecture, hosted on the same site by the same body. This course works three cases in which those three texts do not agree about who did the work. In 1934 the Nobel presentation speech praised Whipple's experiments and never named Frieda Robscheit-Robbins; two days later Whipple's own Nobel lecture said the method was begun by Dr. Frieda Robscheit-Robbins and the writer, and ten of its twenty-three references carry her name. In 1978 the Lasker Foundation's essay said Solomon Snyder identified the opiate receptor system, and Snyder's acceptance remarks on the same page said Candace Pert identified the opiate receptors in his laboratory. In 1985 the Royal Swedish Academy of Sciences called Isabel Karle's contributions to the practical use of direct methods crucial in its own press release, its presentation speech gave the practical gain to recent developments and modern computers, and the laureate's Nobel lecture said the first broadly practical procedure arose mainly from the efforts of Dr. Isabella Karle; the prize was shared by two people, and a Nobel may be shared by three. None of these pages is a scandal and none is a verdict. Each is a set of documents that can be read apart, set against a fourth document the prize-giver does not host, and counted. You will count the references yourself rather than take a total on trust, name who contests what and where they said it, and learn where the record stops. The closing section is the point of the course: a method you can carry to the next prize page, and an honest list of what these three cases do not prove.",
   lessons: [
     // ══════════════════════════════════════════════════════════════════════
     // OPENING — What a prize page is made of
@@ -105,7 +168,7 @@ export const WHAT_THE_CITATION_RECORDS_COURSE: AuthoredCourse = {
 
 **The laureate's own words.** Acceptance remarks, or a lecture. Hosted on the same site, under the same award, but written by the person who received the prize.
 
-Those three can disagree, and on the two pages this course works, they do.
+Those three can disagree, and on the three pages this course works, they do.
 
 **1934.** The Nobel Prize in Physiology or Medicine "was awarded jointly to George Hoyt Whipple, George Richards Minot and William Parry Murphy 'for their discoveries concerning liver therapy in cases of anaemia'", with a prize share of one third each (Nobel Prize Outreach, n.d.-b). At the ceremony on 10 December, Professor I. Holmgren said that "Whipple's experiments were planned exceedingly well and carried out very accurately, and consequently their results can lay claim to absolute reliability" (Nobel Prize Outreach, n.d.-a). Search that speech for the name Robscheit, or for Robbins, and you get nothing. Two days later, in his Nobel lecture on the same site, Whipple wrote: "After the transfer of the anemia colony of dogs from San Francisco to Rochester, New York (1923), Dr. Frieda Robscheit-Robbins and the writer began to use a different type of anemia" (Whipple, 1934).
 
@@ -113,9 +176,11 @@ Those three can disagree, and on the two pages this course works, they do.
 
 One page, one verb, two people doing the identifying.
 
-**The fourth document.** Neither page settles anything on its own, and that is the useful part. What moves a reading forward is a document the prize-giver does not host: the author line of the paper, or the reference list at the foot of the lecture. Both of this course's cases have one, and in both of them it says something the citation does not.
+**1985.** The Nobel Prize in Chemistry went to two people, and a Nobel may be shared by three. The Royal Swedish Academy of Sciences wrote in its own press release that Isabel Karle's contributions to the practical utilization of direct methods had been crucial (Royal Swedish Academy of Sciences, 1985). Its presentation speech at the ceremony credited recent developments and modern computers, and named her not at all (Lindqvist, 1985).
 
-**What this course is not.** It is not a list of thefts. Two cases cannot show a pattern, no jury's reasons are on the record, and the course puts no motive in anyone's mouth. What two cases can do is teach a reading method well enough that you can use it on a prize page nobody has written about.
+**The fourth document.** No one of these pages settles anything on its own, and that is the useful part. What moves a reading forward is a document the prize-giver does not host: the author line of the paper, or the reference list at the foot of the lecture. Each of this course's cases has one, and in each of them it says something the citation does not.
+
+**What this course is not.** It is not a list of thefts. Three cases cannot show a pattern, no jury's reasons are on the record, and the course puts no motive in anyone's mouth. What three cases can do is teach a reading method well enough that you can use it on a prize page nobody has written about.
 
 **Related reading, already built and not repeated here.** The public course *The Paper and the Prize* works an adjacent case, Esther Lederberg, and its lesson 5, "Who is on the paper, and who is on the prize", is the built worked example of setting an author line against a prize. Its lesson 6, "The Matilda effect, and what this case does and does not prove", does for that case what this course's closing section does for these two. Read them. This course does not re-teach either.
 
@@ -132,15 +197,17 @@ One page, one verb, two people doing the identifying.
 
 ## Sources
 Albert and Mary Lasker Foundation. (n.d.). *Opiate receptors and enkephalins: 1978 Albert Lasker Basic Medical Research Award*. https://laskerfoundation.org/winners/opiate-receptors-and-enkephalins/
+Lindqvist, I. (1985). *Award ceremony speech: The Nobel Prize in Chemistry 1985*. Nobel Prize Outreach. https://www.nobelprize.org/prizes/chemistry/1985/ceremony-speech/
 Nobel Prize Outreach. (n.d.-a). *Award ceremony speech: The Nobel Prize in Physiology or Medicine 1934*. https://www.nobelprize.org/prizes/medicine/1934/ceremony-speech/
 Nobel Prize Outreach. (n.d.-b). *The Nobel Prize in Physiology or Medicine 1934*. https://www.nobelprize.org/prizes/medicine/1934/summary/
+Royal Swedish Academy of Sciences. (1985, October 16). *Press release: The 1985 Nobel Prize in chemistry*. Nobel Prize Outreach. https://www.nobelprize.org/prizes/chemistry/1985/press-release/
 Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other factors* [Nobel lecture]. Nobel Foundation. https://www.nobelprize.org/uploads/2018/06/whipple-lecture.pdf`,
     },
     {
       slug: "caps-and-what-they-explain",
       title: "Opening · Format caps, and what they explain",
       section: "Opening · What a prize page is made of",
-      body: `When somebody is left off a prize, the first explanation offered is almost always the format: there were only so many seats. It is a real constraint, and it is worth knowing exactly how much of an omission it can account for, because the answer is different in this course's two cases.
+      body: `When somebody is left off a prize, the first explanation offered is almost always the format: there were only so many seats. It is a real constraint, and it is worth knowing exactly how much of an omission it can account for, because the answer is different in each of this course's three cases.
 
 **The rule, from a named source.** Writing in 1979 about the 1978 Lasker dispute, the citation analyst Eugene Garfield put both halves in one parenthesis: "(Nobels, for example, are limited to three co-winners per year. Lasker awards, however, have no formal limitations.)" (Garfield, 1979). The general rule about Nobel seats is taught in *Who Gets Named*, lesson 1, "Credit is a second event". What matters here is the second half of Garfield's sentence.
 
@@ -148,9 +215,11 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
 
 **1978: there was no such arithmetic.** If Garfield is right that the Lasker carried no formal limit, then nothing about the format required the 1978 award to stop at three. Garfield went further than that. Having worked through four years of citation cluster maps, he concluded that the committee "would have certainly been able to justify naming Goldstein, Simon, and Terenius, as well as the three researchers they recognized", and with Pert added, "we have identified seven scientists who could have appropriately shared the 1978 Lasker or National Institute of Drug Abuse (NIDA) awards" (Garfield, 1979).
 
+**1985: the cap was real and did not bind.** A Nobel Prize may be shared by three. The summary page for the 1985 prize in chemistry lists two laureates at one half each (Nobel Prize Outreach, n.d.-c). The seat existed and nobody sat in it, so no arithmetic decided anything that year.
+
 **What a cap explains, and what it does not.** A cap explains the arithmetic of an omission: how many people could be named at all. It does not explain the choice of who fills the seats, because that choice is made before the cap ever binds. In 1934 the three seats went to Whipple, Minot and Murphy, and the cap says nothing about why the work the citation rewards was described the way it was. In 1978 the cap was not there to do even the arithmetic.
 
-**Why one case cannot teach this.** With only the 1934 case, "there were three seats" is an available and sufficient-looking answer. With only the 1978 case, "prizes have caps" sounds like a general truth. Side by side, the two cases show that the cap is a fact about one award's format rather than a general explanation, and that you have to look up which format you are dealing with before you use it.
+**Why one case cannot teach this.** With only the 1934 case, "there were three seats" is an available and sufficient-looking answer. With only the 1978 case, "prizes have caps" sounds like a general truth. With only the 1985 case, the whole idea of a cap looks like a distraction. Side by side, the three cases show that the cap is a fact about one award's format in one year rather than a general explanation, and that you have to look up which format you are dealing with, and whether it bound, before you use it.
 
 :::reveal What did Garfield write in 1979 about formal limits on the Lasker awards? ||| That Nobels are limited to three co-winners per year, but Lasker awards have no formal limitations.
 
@@ -164,7 +233,8 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
 
 ## Sources
 Garfield, E. (1979). Controversies over opiate receptor research typify problems facing awards committees. *Current Contents*, (20), 5-18. Reprinted in *Essays of an Information Scientist*, 4, 141-155. https://garfield.library.upenn.edu/essays/v4p141y1979-80.pdf
-Nobel Prize Outreach. (n.d.-b). *The Nobel Prize in Physiology or Medicine 1934*. https://www.nobelprize.org/prizes/medicine/1934/summary/`,
+Nobel Prize Outreach. (n.d.-b). *The Nobel Prize in Physiology or Medicine 1934*. https://www.nobelprize.org/prizes/medicine/1934/summary/
+Nobel Prize Outreach. (n.d.-c). *The Nobel Prize in Chemistry 1985*. https://www.nobelprize.org/prizes/chemistry/1985/summary/`,
     },
     {
       slug: "the-1978-award-page-exercise",
@@ -953,6 +1023,71 @@ Albert and Mary Lasker Foundation. (n.d.). *Opiate receptors and enkephalins: 19
             explanation:
               "The exercise works best cold, because answering from the page is the skill being practised.",
             sourceLessonSlug: "the-1978-award-page-exercise",
+          },
+          {
+            prompt: "What did the Royal Swedish Academy of Sciences write about Isabel Karle when it announced the 1985 prize?",
+            options: [
+              "That her contributions had been crucial",
+              "That her work belonged to the applications rather than to the development of the methods",
+              "That she had been considered for a share of the prize and could not be included",
+              "Nothing, which is why this course reads the lecture against the ceremony speech",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The press release of 16 October 1985 says her contributions to the practical utilization of direct methods, and M. Woolfson's, had been crucial.",
+            sourceLessonSlug: "three-documents-on-one-page",
+          },
+          {
+            prompt: "What did the 1985 presentation speech credit for the efficiency of the methods?",
+            options: [
+              "Recent developments and modern computers",
+              "The experimental facility built in the laureate's laboratory in the late 1950s",
+              "The person the Academy's own press release had already called crucial",
+              "The crystallographers who spent the 1960s applying the equations to real data",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The speech names no person for the practical gain, which is the disagreement this case turns on.",
+            sourceLessonSlug: "three-documents-on-one-page",
+          },
+          {
+            prompt: "How many laureates does the summary page list for the 1985 prize in chemistry, and at what share?",
+            options: [
+              "Two, at one half each",
+              "Three, at one third each, the same arithmetic as the 1934 prize in medicine",
+              "Two, at one third each, with the remaining third withheld by the Foundation",
+              "One, with the other half of the award made in a later year to a second laureate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two laureates at one half each, so a third seat existed and was not used.",
+            sourceLessonSlug: "caps-and-what-they-explain",
+          },
+          {
+            prompt: "What does the 1985 case do to the format cap explanation?",
+            options: [
+              "Leaves it with nothing to explain",
+              "Confirms it, because a prize for a method may only ever be shared by two people",
+              "Extends it, since the Nobel limit was reduced from three to two during the 1980s",
+              "Makes it untestable, because the Academy does not publish the size of its shares",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The limit was three and two people were named, so no arithmetic decided anything that year.",
+            sourceLessonSlug: "caps-and-what-they-explain",
+          },
+          {
+            prompt: "In which of this course's cases was a format cap actually binding?",
+            options: [
+              "Only the 1934 prize",
+              "The 1934 and 1985 prizes, both of which were awarded under the Nobel statutes",
+              "The 1978 award, which Garfield says carried a formal limit of three recipients",
+              "All three, which is why the course treats the cap as a general explanation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three laureates at one third each in 1934. The Lasker carried no formal limit, and the 1985 prize left a seat unused.",
+            sourceLessonSlug: "caps-and-what-they-explain",
           },
         ],
       },
@@ -3030,23 +3165,1268 @@ Pollin, W. (1979). Pert and the Lasker Award [Letter]. *Science*, 204(4388), 8.`
       },
     },
     // ══════════════════════════════════════════════════════════════════════
+    // 1985 — The empty third seat
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-phase-problem",
+      title: "1985 · The half the experiment does not measure",
+      section: "1985 · The empty third seat",
+      body: `The science first, as in the other two cases.
+
+A crystal scatters X-rays into thousands of separate beams, and a diffraction experiment records where each beam goes and how strong it is. Jerome Karle's Nobel lecture gives the scale: the collected intensities are "often 5000-10000 in number" and they "comprise the experimental data from which the structure of the crystal of interest is to be elucidated" (Karle, 1985).
+
+**What the experiment does not record.** The Royal Swedish Academy of Sciences put the gap in one sentence when it announced the prize: to fix the positions of the atoms "it is also necessary to know the 'phase' of each deflected ray, that is, how much the waves in the different rays are displaced in relation to each other" (Royal Swedish Academy of Sciences, 1985). Intensities are measured. Phases are not. That missing half is the phase problem, and the presentation speech described what crystallographers did before it was solved: "The crystallographers had to use a trial and error method" (Lindqvist, 1985).
+
+**The two facts a direct method is built on.** Electron density is never negative, because electrons are either there or they are not. And a diffraction experiment yields many times more measurements than there are unknowns, which lets statistical reasoning do work. Between 1950 and 1956 Hauptman and Karle turned those two facts into systems of equations relating the phases to the measured intensities. The citation rewards that.
+
+**What the equations did not come with.** A route from the mathematics to a pile of real data. The lecture names the first procedure that supplied one, the symbolic addition procedure, calls it "the first procedure that had broad practical applications to both centrosymmetric and noncentrosymmetric crystals", and says where it came from: "It arose mainly from the efforts of my wife, Dr. Isabella Karle, to bridge the gap between the mathematics of phase determination and the world of experimental data and practical application" (Karle, 1985).
+
+**What that bridge involved.** About 1956 the laboratory acquired X-ray apparatus, and the lecture records that "Isabella Karle taught herself with the aid of a book written by Martin Buerger how to collect and interpret diffraction photographs". The thousands of intensities collected then were "measured by eye with the use of a calibrated comparison strip", and for many years the centrosymmetric version of the procedure was carried through in that laboratory entirely by hand.
+
+**And the hard half.** In a centrosymmetric crystal the symmetry reduces each phase to a choice between two signs. A noncentrosymmetric crystal offers no such shortcut, and the lecture says the extension of the procedure to that class was made "in the main by the efforts of Isabella Karle" (Karle, 1985). Molecules of biochemical interest mostly fall in the harder class, which is why the extension is the part that reached chemistry.
+
+:::reveal What does a diffraction experiment measure, and what does it leave out? ||| It measures the direction and the intensity of each scattered beam. It does not measure the phases, meaning how far the waves are displaced relative to one another, which a structure calculation also needs.
+
+:::reveal What did the symbolic addition procedure add to the equations? ||| A worked route from the mathematics of phase determination to real experimental data, and the first one with broad practical application to noncentrosymmetric crystals as well as centrosymmetric ones.
+
+## Vocabulary
+- **Phase problem**: the gap between what a diffraction experiment measures, intensities, and what a structure calculation also needs, phases.
+- **Direct method**: a way of getting phases from the measured intensities themselves, rather than assuming a structure and testing it.
+- **Symbolic addition procedure**: the first procedure with broad practical application to both classes of crystal, credited by the lecture mainly to Isabella Karle.
+- **Noncentrosymmetric crystal**: one whose symmetry gives no shortcut to the phases, the harder case, and the class most molecules of biochemical interest fall in.
+
+## Sources
+Karle, J. (1985). *Recovering phase information from intensity data* [Nobel lecture]. Nobel Foundation. https://www.nobelprize.org/uploads/2018/06/karle-lecture.pdf
+Lindqvist, I. (1985). *Award ceremony speech: The Nobel Prize in Chemistry 1985*. Nobel Prize Outreach. https://www.nobelprize.org/prizes/chemistry/1985/ceremony-speech/
+Royal Swedish Academy of Sciences. (1985, October 16). *Press release: The 1985 Nobel Prize in chemistry*. Nobel Prize Outreach. https://www.nobelprize.org/prizes/chemistry/1985/press-release/`,
+    },
+    {
+      slug: "citation-press-release-and-lecture",
+      title: "1985 · The citation, the press release, and the lecture",
+      section: "1985 · The empty third seat",
+      body: `Four documents, one prize, one institution, two months.
+
+**The citation.** "The Nobel Prize in Chemistry 1985 was awarded jointly to Herbert A. Hauptman and Jerome Karle 'for their outstanding achievements in the development of direct methods for the determination of crystal structures'", with a prize share of one half each (Nobel Prize Outreach, n.d.).
+
+**The press release, 16 October 1985.** The Royal Swedish Academy of Sciences announced the prize with a background note, and that note names people the citation does not. It credits D. Harker and J. S. Kasper with an inequality that is a special case of the Hauptman and Karle system, and D. Sayre with anticipating the practical approach. Then this: "Isabel Karle's and M. Woolfson's contributions to the practical utilization of direct methods have been crucial" (Royal Swedish Academy of Sciences, 1985). The awarding body, in its own announcement, calls her contribution crucial. It also prints her given name as Isabel rather than Isabella, which is worth knowing before you search the prize site for her.
+
+**The presentation speech, 10 December 1985.** Professor Ingvar Lindqvist explained the work to the ceremony audience and reached the practical gain by a different route: "Recent developments have shown that they were right and the production of modern computers has strongly contributed to the rapidity and efficiency of their methods. These methods are now so efficient that structure determinations for which the Nobel Prize was awarded in 1964 can today be made by a clever beginner" (Lindqvist, 1985). Search that speech for Isabella, or for Isabel, and you get nothing. The gain belongs to recent developments and to machines.
+
+**The laureate's own words.** The Nobel lecture of 9 December credited the practical procedure to a person, by name, twice, as the last lesson quoted. The autobiography published in the Nobel Foundation's yearbook says it a third time: "Largely through the efforts of Isabella Karle, such a procedure was developed and called the symbolic addition procedure" (Karle, 1986).
+
+**The seat.** A Nobel Prize may be shared by as many as three people. Garfield stated the limit in 1979 while writing about a different dispute: "Nobels, for example, are limited to three co-winners per year" (Garfield, 1979). In 1934 the seats were full, three laureates at one third each, and the arithmetic really did bind. In 1985 two people were named, at one half each. The commonest explanation for an omission, that there was no room, has nothing to say about this prize.
+
+**What that does and does not establish.** It does not establish that anyone should have been named who was not, and no committee record was read for this course, so no motive is asserted for this jury any more than for the other two. What an unused seat does is remove one explanation from the list. A reader of the 1934 case can say the seats were full. A reader of the 1978 case can be told the award carried no formal limit. A reader of this one has a limit, a seat nobody sat in, and a press release from the awarding body calling her contribution crucial.
+
+:::reveal How many people shared the 1985 prize in chemistry, and in what shares? ||| Two, Herbert Hauptman and Jerome Karle, at one half each, although a Nobel Prize may be shared by as many as three.
+
+:::reveal What did the Academy's own press release say about her, and how did it spell her name? ||| That her contributions to the practical utilization of direct methods had been crucial, and it printed her given name as Isabel.
+
+## Vocabulary
+- **Press release**: the announcement an awarding body publishes on the day it decides, a separate and usually longer document than the citation.
+- **Background note**: the explanatory part of that announcement, where an academy may name work and people the citation leaves out.
+- **Co-winner limit**: the largest number of people who may share one prize, three in the Nobel case.
+- **Les Prix Nobel**: the Nobel Foundation's yearbook, which publishes each laureate's autobiography and is the source of the biographical page on the prize site.
+
+## Sources
+Garfield, E. (1979). Controversies over opiate receptor research typify problems facing awards committees. *Current Contents*, (20), 5-18. Reprinted in *Essays of an Information Scientist*, 4, 141-155. https://garfield.library.upenn.edu/essays/v4p141y1979-80.pdf
+Karle, J. (1986). Jerome Karle: Biographical. In W. Odelberg (Ed.), *Les Prix Nobel: The Nobel Prizes 1985*. Nobel Foundation. https://www.nobelprize.org/prizes/chemistry/1985/karle/biographical/
+Lindqvist, I. (1985). *Award ceremony speech: The Nobel Prize in Chemistry 1985*. Nobel Prize Outreach. https://www.nobelprize.org/prizes/chemistry/1985/ceremony-speech/
+Nobel Prize Outreach. (n.d.). *The Nobel Prize in Chemistry 1985*. https://www.nobelprize.org/prizes/chemistry/1985/summary/
+Royal Swedish Academy of Sciences. (1985, October 16). *Press release: The 1985 Nobel Prize in chemistry*. Nobel Prize Outreach. https://www.nobelprize.org/prizes/chemistry/1985/press-release/`,
+    },
+    {
+      slug: "count-the-1985-references",
+      title: "1985 · Ninety-eight references, and a counting rule",
+      section: "1985 · The empty third seat",
+      body: `The 1934 case had a countable document. So does this one. It is longer, the rule matters more, and the answer a search box gives is wrong.
+
+**The document.** Jerome Karle, "Recovering phase information from intensity data", the Nobel lecture of 9 December 1985, free from the Nobel Foundation. Its numbered reference list runs to 98 items across the last three pages. For this course those pages were rendered at 150 dpi and counted by eye from the images, because the machine-read text of a scanned page mangles the smallest part of a name, the initial, which is the part being counted.
+
+**The rule, printed before the count.** A reference carries her name when its author list prints Karle, I. or Karle, I. L. A reference is hers first when that name comes first in the list.
+
+**The count.** Her name is on 23 of the 98: references 12, 13, 14, 24, 32, 36, 37, 55, 56, 57, 58, 61, 62, 64, 70, 71, 72, 73, 74, 76, 78, 79 and 82. She comes first on 15 of those. The co-laureate's name, Hauptman, is on 11: references 15, 18, 20, 21, 22, 23, 27, 35, 55, 90 and 91. Reference 55 is the only one carrying both, and she is first on it.
+
+**What a search box would have said.** Twenty-one. Reference 61 prints her as "Karle, I.", without the second initial, and reference 70 prints "Karle, and I. L. Witkop, B.", with the initials attached to the wrong surname. Both are in the published lecture, and both were confirmed on the rendered page rather than in the text layer. A reader who searches for the string Karle, I. L. gets a smaller number and no warning that it is smaller. The 1934 lecture set the same trap in a different spelling.
+
+**What the count is a count of.** The lecture says of its applications that "the examples will be mainly taken from my laboratory", so the list is largely one laboratory's output over thirty years, chosen by the laureate. That is what makes it worth counting and also what bounds it. Inside a document a laureate wrote about his own work, the person the citation does not name is on nearly a quarter of the references and leads 15 of them.
+
+**What it is not.** It is not a measure of who contributed what to the prize-winning work. Hauptman's collaboration with Jerome Karle was the theory of 1950 to 1956, a narrower and earlier body of work than three decades of applications, so 23 against 11 sets two different things side by side. Garfield's warning from the 1978 case applies without changing a word: numbers like these can indicate that somebody was in a position to make valuable contributions, and they cannot partition the work inside a paper. They cannot partition it inside a laboratory either.
+
+**One reference that ties two sections together.** Reference 76 is a 1983 crystal structure of [Leu5]enkephalin with her first among five authors, and the lecture discusses it beside reference 75, the 1975 *Nature* paper by Hughes, Smith, Kosterlitz and colleagues. That is the enkephalin work the 1978 Lasker citation names. Two of this course's cases are joined by a molecule.
+
+:::reveal Why is the counting rule printed before the count in both of this course's countable documents? ||| Because a total without its rule cannot be reproduced or checked. Here the rule is the difference between an answer of 23 and an answer of 21.
+
+:::reveal What does 23 against 11 not show? ||| It does not divide up the prize-winning work. It counts appearances in one laureate's account of his own laboratory, over stretches of time of very different length.
+
+## Vocabulary
+- **String match**: a search for an exact sequence of characters, which misses a name printed any other way.
+- **Page image**: a rendered picture of a printed page, read by eye when the machine-read text of a scan cannot be trusted.
+- **Initial**: the abbreviated given name in a reference, the smallest part of an author's name and the first thing a scan mangles.
+- **Applications section**: the part of a lecture where a laureate illustrates a method with work, here mainly from his own laboratory, which is what its reference list mostly lists.
+
+## Sources
+Garfield, E. (1979). Controversies over opiate receptor research typify problems facing awards committees. *Current Contents*, (20), 5-18. Reprinted in *Essays of an Information Scientist*, 4, 141-155. https://garfield.library.upenn.edu/essays/v4p141y1979-80.pdf
+Karle, J. (1985). *Recovering phase information from intensity data* [Nobel lecture]. Nobel Foundation. https://www.nobelprize.org/uploads/2018/06/karle-lecture.pdf`,
+    },
+    {
+      slug: "the-correction-as-other-prizes",
+      title: "1985 · The correction came as other prizes",
+      section: "1985 · The empty third seat",
+      body: `No later prize changes a citation. Here is what the later prizes did instead.
+
+**1988, from the same academy.** The Royal Swedish Academy of Sciences, the body that awards the chemistry prize, gave her its Gregori Aminoff Prize for crystallography three years after the ceremony. The Franklin Institute's page for her lists it among her honours, as "the Swedish Royal Academy of Sciences' Aminoff Prize in 1988" (The Franklin Institute, n.d.). The Academy's own record of the citation for that year was not reached for this course, so no wording is quoted for it here.
+
+**1993, the Bower Award.** The Franklin Institute's citation is one line: "For determining three-dimensional structure of molecules with X-ray diffraction." The account beside it goes further than the citation does, crediting "her definitive introduction of the symbolic addition method to reveal molecular structure directly from X-ray studies", and the page marks itself "Information as of 1995" (The Franklin Institute, n.d.).
+
+**1995, the National Medal of Science.** The citation, as the National Science and Technology Medals Foundation records it: "For the development and application of a method for determining essentially equal-atom crystal and molecular structures by x-ray analysis, thereby having a profound effect on the practice of organic and biological chemistry" (National Science and Technology Medals Foundation, n.d.). Read that beside the Nobel autobiography, which dates "the first essentially equal atom noncentrosymmetric crystal structure to be solved by direct phase determination" to 1964 (Karle, 1986). A United States citation gives her, by name, the achievement a Nobel document describes in almost the same words.
+
+**What an honour can and cannot reach.** *Who Gets Named*, lesson 21, "Who corrects a record, and with what", makes the general point, and this is a clean instance of it. Two later citations, both read for this course, name her for the work, and the 1995 one names her for the method itself. The 1985 prize page reads today as it read in 1985, because a citation is not amended and no award body revises another's. A correction of this kind lands next to the record rather than in it.
+
+**What is not in the documents, and the difference matters.** No statement by Jerome Karle that she should have shared the prize was found in his Nobel lecture, in his Nobel autobiography and its two addenda, or in the 1987 oral history for which the two of them were interviewed together (Karle & Karle, 1987). The sentence usually quoted comes from somewhere else. A 2017 obituary in *Chemical and Engineering News* quotes Magdolna Hargittai of Budapest University of Technology and Economics, whom it describes as the author of a book on women scientists: "Jerome was devastated that Isabella was not included in the prize, and many other scientists agreed with him" (Wang, 2017). That is a scholar's account, attributed to her by a magazine, and not the laureate's own words.
+
+**And one claim in the same quotation that does not survive a check.** Hargittai also says "Isabella was the first who applied the method". The laureate's lecture puts the earliest applications elsewhere: "The earliest applications after the publication of the monograph (23) were collaborations with colleagues at the U.S. Geological Survey", and says the investigations based on her experimental work followed (Karle, 1985). The documented claim is narrower, and it is the stronger one for being checkable: the procedure itself, its extension to the harder class of crystals, and the bridge from the mathematics to experimental data.
+
+:::reveal What do the 1993 and 1995 citations do that the 1985 one does not? ||| They name her, for the method. Neither one changes the Nobel citation, because an honour reaches institutional memory and not another body's record.
+
+:::reveal Where does the sentence about the laureate being devastated actually come from? ||| From Magdolna Hargittai, quoted in a 2017 obituary, rather than from anything the laureate himself published.
+
+## Vocabulary
+- **Gregori Aminoff Prize**: the Royal Swedish Academy of Sciences' prize for crystallography, given by the same body that awards the chemistry Nobel.
+- **Bower Award**: the Franklin Institute's science prize, whose page carries both a one-line citation and a longer account of the work.
+- **Institutional memory**: what an institution records and repeats, which a later honour can enter although it cannot alter an earlier citation.
+- **Attribution at one remove**: a sentence a publication reports from somebody other than the person whose view it describes.
+
+## Sources
+Karle, I. L., & Karle, J. (1987). *Oral history interview with Isabella L. Karle and Jerome Karle* [Transcript; interviews conducted 26 February, 15 June and 9 September 1987 by J. J. Bohning and D. Van Keuren]. Science History Institute. https://digital.sciencehistory.org/works/wp988m037
+Karle, J. (1985). *Recovering phase information from intensity data* [Nobel lecture]. Nobel Foundation. https://www.nobelprize.org/uploads/2018/06/karle-lecture.pdf
+Karle, J. (1986). Jerome Karle: Biographical. In W. Odelberg (Ed.), *Les Prix Nobel: The Nobel Prizes 1985*. Nobel Foundation. https://www.nobelprize.org/prizes/chemistry/1985/karle/biographical/
+National Science and Technology Medals Foundation. (n.d.). *Isabella L. Karle*. https://nationalmedals.org/laureate/isabella-l-karle/
+The Franklin Institute. (n.d.). *Isabella L. Karle*. https://www.fi.edu/en/awards/laureates/isabella-l-karle
+Wang, L. (2017, October 26). Isabella Karle. *Chemical and Engineering News*. https://cen.acs.org/articles/95/web/2017/10/Isabelle-Karle-dies-age-95.html`,
+    },
+    {
+      slug: "quiz-1985",
+      title: "1985 quiz · The empty third seat",
+      section: "1985 · The empty third seat",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does a diffraction experiment record about each scattered beam?",
+            options: [
+              "Its direction and its intensity",
+              "Its direction, its intensity and the displacement of its waves relative to the others",
+              "The position of every atom the beam passed through on its way out of the crystal",
+              "The wavelength of the ray before it struck the crystal and after it left again",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Direction and intensity are measured. The phase, the relative displacement of the waves, is not, and that is the gap direct methods close.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "How many intensities does the 1985 Nobel lecture say a scattering pattern often holds?",
+            options: [
+              "Often 5000 to 10000",
+              "Between twenty and forty, one for each set of planes imagined through the crystal",
+              "Several million, which is why the calculation had to wait for modern computers",
+              "Exactly as many as there are atoms in the repeating unit of the crystal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"The collected intensities of scattering (often 5000-10000 in number) are called a scattering pattern or diffraction pattern.\"",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "What is the phase of a deflected ray, as the Academy's announcement defines it?",
+            options: [
+              "How far its waves are displaced",
+              "The angle through which the crystal deflected it away from the incoming direction",
+              "The fraction of the incoming energy that the crystal scattered rather than absorbed",
+              "The time between the ray striking the crystal and the ray reaching the detector",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"How much the waves in the different rays are displaced in relation to each other.\" It is the half the experiment does not measure.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "What, in one line, is the phase problem?",
+            options: [
+              "Intensities are measured, phases are not",
+              "Crystals of biological molecules are too small to give a measurable scattering pattern",
+              "The electron density calculated from a Fourier series can come out negative in places",
+              "The number of unknowns in a structure exceeds the number of measurements available",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A structure calculation needs both. The experiment supplies one of them, which is why structures had to be guessed at and tested.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "How did crystallographers determine structures before direct methods, per the presentation speech?",
+            options: [
+              "By trial and error",
+              "By comparing each new pattern against a published catalogue of known structures",
+              "By growing the same crystal in several solvents and averaging the results obtained",
+              "By measuring the phases directly with a second detector placed behind the crystal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"The crystallographers had to use a trial and error method.\" A structure was assumed, then tested against the data.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "What is the first of the two facts a direct method is built on?",
+            options: [
+              "Electron density is never negative",
+              "Every crystal contains at least one atom heavy enough to anchor the calculation",
+              "The intensity of a scattered beam falls off in proportion to the square of the angle",
+              "The phases of two rays scattered from the same plane are always exactly equal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Electrons are either there or they are not, so the density has a floor, and that floor constrains which phases are possible.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "What is the second fact a direct method is built on?",
+            options: [
+              "There are far more measurements than unknowns",
+              "The atoms in a crystal are arranged in a pattern that repeats in only two dimensions",
+              "A diffraction photograph records the phases faintly, where the intensities are weakest",
+              "Every structure of interest contains fewer than one hundred independent atoms",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Thousands of intensities against a much smaller number of unknowns is what lets statistical reasoning do useful work.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "In which years did Hauptman and Karle publish the work the 1985 citation rewards?",
+            options: [
+              "1950 to 1956",
+              "1963 and 1964, the years of the first applications of the symbolic addition procedure",
+              "1934 to 1938, alongside the Patterson function they later built their equations on",
+              "The whole of the 1970s, once computers could carry the calculations they proposed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The presentation speech dates the series of papers to 1950-56, and the press release dates the foundations to the same years.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "What did the systems of equations not come with?",
+            options: [
+              "A route to real experimental data",
+              "A proof that electron density is positive, which had to wait for a later paper",
+              "Any way of handling crystals whose symmetry reduces each phase to a choice of sign",
+              "A set of measurements large enough for the statistical reasoning they required",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The mathematics existed. What was missing was a procedure that took a laboratory from a pile of measured intensities to a structure.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "What does the 1985 Nobel lecture call the symbolic addition procedure?",
+            options: [
+              "The first broadly practical procedure",
+              "A refinement of the tangent formula that made it usable on larger molecules",
+              "The only procedure that works on crystals containing one heavy atom and many light ones",
+              "The method for which the Nobel Prize in Chemistry was awarded in 1964 to another laureate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"The first procedure that had broad practical applications to both centrosymmetric and noncentrosymmetric crystals.\"",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "Whose efforts does the lecture say the symbolic addition procedure arose mainly from?",
+            options: [
+              "Isabella Karle's",
+              "Herbert Hauptman's, working from the joint probability distributions he had derived",
+              "A team at the U.S. Geological Survey, who applied it to colemanite and meyerhofferite",
+              "M. M. Woolfson's, whose computer programs carried the procedure into other laboratories",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"It arose mainly from the efforts of my wife, Dr. Isabella Karle.\" The laureate writes it himself, in the lecture the Nobel Foundation hosts.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "What gap does the lecture say she bridged?",
+            options: [
+              "Mathematics to experimental data",
+              "The gap between centrosymmetric crystals and the far larger crystals of proteins",
+              "The gap between an X-ray diffraction photograph and a neutron diffraction pattern",
+              "The gap between the speed of the calculation and the speed of the computers available",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"To bridge the gap between the mathematics of phase determination and the world of experimental data and practical application.\"",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "What happened in the laboratory about 1956, per the lecture?",
+            options: [
+              "It acquired X-ray apparatus",
+              "It received the first computer capable of carrying out the phase calculations",
+              "It published the first structure ever solved by the symbolic addition procedure",
+              "It moved from the Naval Research Laboratory to the University of Michigan",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"At about 1956, we acquired apparatus for carrying out X-ray diffraction experiments with crystals.\"",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "How does the lecture say Isabella Karle learned to collect and interpret diffraction photographs?",
+            options: [
+              "She taught herself from a book",
+              "She spent a year at Aberdeen with the group that built the first automatic diffractometer",
+              "She was trained by the co-laureate, who had done experimental work before turning to theory",
+              "She learned it during her doctorate, which had been in experimental crystallography",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"Isabella Karle taught herself with the aid of a book written by Martin Buerger how to collect and interpret diffraction photographs.\"",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "How were the thousands of intensities measured in that period?",
+            options: [
+              "By eye, against a calibrated strip",
+              "By an automatic diffractometer that recorded them after brief human intervention",
+              "By a photoelectric cell that converted each spot on the film into a voltage reading",
+              "By counting individual X-ray photons with a scintillation detector at each angle",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lecture says the thousands of diffraction data collected then were \"measured by eye with the use of a calibrated comparison strip\".",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "How much of the centrosymmetric procedure did that laboratory carry out by hand?",
+            options: [
+              "All of it, for many years",
+              "The final refinement only, once a computer had produced a set of trial phases",
+              "None of it, because the probability measures required machine calculation from the start",
+              "Roughly the first hundred phases, after which the tangent formula was applied by machine",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"For many years, the procedure for centrosymmetric crystals was carried out in our laboratory completely by hand.\" Efficiency was the point of it.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "What does the symmetry of a centrosymmetric crystal do to each phase?",
+            options: [
+              "Reduces it to a choice of sign",
+              "Fixes it exactly, so that no phase determination is needed for that class at all",
+              "Makes it continuous between minus pi and pi, which is the harder case to handle",
+              "Leaves it unknown but makes its intensity twice as strong, and so easier to measure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two possibilities per phase rather than a continuous range, which is why the centrosymmetric case came first.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "Who does the lecture credit with the extension to noncentrosymmetric crystals?",
+            options: [
+              "Isabella Karle, in the main",
+              "Zachariasen, whose procedure the symbolic addition method had features in common with",
+              "Cochran and Douglas, who generated large numbers of sign sets from a Sayre formula",
+              "Hauptman and Karle jointly, in the series of papers published between 1950 and 1956",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"The procedural features of the symbolic addition procedure for centrosymmetric crystals were extended, in the main by the efforts of Isabella Karle.\"",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "Why does the noncentrosymmetric extension matter so much to chemistry?",
+            options: [
+              "Most interesting molecules are in that class",
+              "Only noncentrosymmetric crystals can be grown large enough to give a usable pattern",
+              "Centrosymmetric crystals had already been solved by the method rewarded in 1964",
+              "The extension removed the need to measure intensities by eye on photographic film",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"Noncentrosymmetric crystals are quite common among substances of biochemical interest.\" The harder class is the useful one.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "Which document supplies this lesson's one-sentence definition of a phase?",
+            options: [
+              "The Academy's press release",
+              "The presentation speech given at the ceremony on 10 December 1985",
+              "The biographical note published in the Nobel Foundation's yearbook for 1985",
+              "The citation itself, which defines the term before naming the two laureates",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The background note in the Royal Swedish Academy of Sciences' announcement of 16 October 1985 states the gap in one sentence.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "Who shared the Nobel Prize in Chemistry for 1985?",
+            options: [
+              "Hauptman and Karle",
+              "Hauptman, Karle and Woolfson, the three names the Academy's background note mentions",
+              "Dorothy Hodgkin alone, for the structure determinations the speech refers back to",
+              "Harker and Kasper, for the inequality that the citation calls a special case",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Herbert A. Hauptman and Jerome Karle, \"for their outstanding achievements in the development of direct methods for the determination of crystal structures\".",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What prize share does the 1985 summary page give each laureate?",
+            options: [
+              "One half",
+              "One third, the share printed on the summary page for a prize awarded jointly",
+              "One quarter, with the remainder held by the Foundation against a later correction",
+              "The whole prize to one and an honorary mention to the other, as the page records",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two laureates at one half each. In 1934 there were three at one third each, which is the arithmetic that made the seats full.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What does the 1985 citation credit the two laureates for?",
+            options: [
+              "Developing direct methods",
+              "Determining the structures of penicillin and vitamin B12 by X-ray crystallography",
+              "The practical utilization of direct methods in the determination of natural products",
+              "Building the first computer programs that made automated structure determination routine",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"For their outstanding achievements in the development of direct methods for the determination of crystal structures.\" Development is the word to keep.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "On what date did the Royal Swedish Academy of Sciences announce the 1985 chemistry prize?",
+            options: [
+              "16 October 1985",
+              "10 December 1985, the day of the award ceremony and the presentation speech",
+              "9 December 1985, the day the laureate delivered his Nobel lecture in Stockholm",
+              "1 January 1986, when the yearbook carrying the autobiographies was published",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The press release is dated 16 October 1985, roughly two months before the ceremony, and it is a separate document from the citation.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "Whom does the press release credit with an inequality that is a special case of the laureates' system?",
+            options: [
+              "Harker and Kasper",
+              "Sayre, who the same note says anticipated the practical approach later used",
+              "Rumanova, who developed a systematic method for symmetry relations in the 1950s",
+              "Wilson, whose statistical treatment of intensities the equations were built on",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The background note names D. Harker and J. S. Kasper for the inequality, and D. Sayre separately for anticipating the practical approach.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What does the Academy's background note say about Isabel Karle's contributions?",
+            options: [
+              "That they were crucial",
+              "That they were important but came too late to be considered for the 1985 prize",
+              "That they were the experimental half of a collaboration the citation names in full",
+              "That they belong to the applications rather than to the development of the methods",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"Isabel Karle's and M. Woolfson's contributions to the practical utilization of direct methods have been crucial.\" The awarding body wrote that.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "Whose contributions does the press release name beside hers?",
+            options: [
+              "M. Woolfson's",
+              "Herbert Hauptman's, whose name appears in the citation and in the background note",
+              "Wayne Hendrickson's, for the advances in anomalous dispersion made in the late 1970s",
+              "Martin Buerger's, whose book on diffraction photographs the lecture mentions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The sentence names two people, Isabel Karle and M. Woolfson, for the practical utilization of direct methods.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "How does the press release spell her given name?",
+            options: [
+              "Isabel",
+              "Isabella, exactly as the Nobel lecture and the autobiography both spell it",
+              "I. L. Karle, the form her own papers and the lecture's reference list use",
+              "Isabelle, the spelling later carried by the 2017 obituary's web address",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The announcement prints Isabel. The lecture and the autobiography print Isabella, and a reader searching the site for one spelling misses the other.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "Why is that spelling worth knowing?",
+            options: [
+              "A search for Isabella misses the sentence",
+              "It shows that the Academy was writing about a different person with a similar name",
+              "It is the spelling the citation uses, so it is the one the record will repeat",
+              "It dates the note, because the shorter form was only used before the ceremony",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same trap as the 1934 reference list, in a different document: the name is there and a string search does not find it.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "Who gave the presentation speech at the 1985 ceremony?",
+            options: [
+              "Ingvar Lindqvist",
+              "I. Holmgren, who gave the speech for the prize this course's other Nobel case covers",
+              "Wilhelm Odelberg, the editor of the yearbook in which the speech was reprinted",
+              "Jerome Karle, who spoke for both laureates before delivering his own lecture",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Professor Ingvar Lindqvist of the Royal Academy of Sciences. Holmgren gave the 1934 speech, in the other Nobel case this course works.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What does the presentation speech credit the efficiency of the methods to?",
+            options: [
+              "Recent developments and computers",
+              "The experimental facility built in the laureate's own laboratory in the late 1950s",
+              "The symbolic addition procedure, which it names and describes in a single sentence",
+              "The work of the crystallographers who tested the equations through the 1960s",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"Recent developments have shown that they were right and the production of modern computers has strongly contributed to the rapidity and efficiency of their methods.\"",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What does the presentation speech say a clever beginner can now do?",
+            options: [
+              "The work that won the 1964 prize",
+              "Determine a protein structure in an afternoon, given a modern computer to work with",
+              "Collect and interpret diffraction photographs without any training in crystallography",
+              "Derive the equations relating phases to intensities from the two facts they rest on",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"Structure determinations for which the Nobel Prize was awarded in 1964 can today be made by a clever beginner.\"",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "Does the presentation speech name Isabella Karle?",
+            options: [
+              "No, under either spelling",
+              "Yes, once, in the sentence about the production of modern computers",
+              "Yes, in the closing address to the laureates, where it thanks their collaborators",
+              "It names her laboratory but not her, which is why the course quotes the press release",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The speech was searched for Isabella and for Isabel, and neither occurs. The practical gain is credited to recent developments and machines.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What did the Nobel lecture do one day before the presentation speech?",
+            options: [
+              "Credited the procedure to her by name",
+              "Set out the equations without naming any person who worked on their application",
+              "Answered the Academy's background note by disputing the word crucial in it",
+              "Listed every laboratory then applying direct methods, in order of the dates involved",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lecture of 9 December names her twice for the procedure and its extension. The speech of 10 December names no one for the practical gain.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What does the laureate's Nobel autobiography say about the symbolic addition procedure?",
+            options: [
+              "It was developed largely through her efforts",
+              "It was developed jointly by the two laureates in the years between 1950 and 1956",
+              "It was named by the Royal Swedish Academy of Sciences in its announcement of the prize",
+              "It was superseded by the tangent formula before the prize was awarded in 1985",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"Largely through the efforts of Isabella Karle, such a procedure was developed and called the symbolic addition procedure.\"",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "Where was that autobiography published?",
+            options: [
+              "In the Nobel Foundation's yearbook",
+              "In the journal Acta Crystallographica, alongside the laureate's technical papers",
+              "In the press release of 16 October 1985, under the heading background information",
+              "In the ceremony programme handed to the audience on 10 December 1985",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Les Prix Nobel for 1985, which is the source of the biographical page the prize site hosts.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What is the Nobel co-winner limit, as Garfield stated it in 1979?",
+            options: [
+              "Three",
+              "Two, which is why the 1985 prize could not have been divided any further",
+              "Four, reduced to three by a change in the statutes after the 1978 disputes",
+              "There is none, and the limit people remember belongs to the Lasker awards instead",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"Nobels, for example, are limited to three co-winners per year. Lasker awards, however, have no formal limitations.\"",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "How many of those seats did the 1985 prize use?",
+            options: [
+              "Two",
+              "Three, the same as the 1934 prize this course's other Nobel case covers",
+              "One, with the second half of the prize held over to the following year",
+              "Four, which required a special decision by the Royal Swedish Academy of Sciences",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two laureates at one half each, so a third seat existed and went unused. That is what the format explanation cannot account for.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What does the unused seat establish?",
+            options: [
+              "It removes one explanation",
+              "That the committee considered a third name and rejected it during its deliberations",
+              "That the prize should have been shared three ways, as the background note implies",
+              "That the Nobel statutes were being interpreted more narrowly in 1985 than in 1934",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The commonest answer to an omission, that there was no room, has nothing to say here. It does not establish that anyone should have been named.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What does this course assert about the 1985 jury's reasons?",
+            options: [
+              "Nothing",
+              "That the jury treated development and application as separate kinds of achievement",
+              "That the jury followed the press release, which had already named the crucial contributors",
+              "That the jury was constrained by the same arithmetic that bound the 1934 committee",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No committee record was read for this course, so no motive is asserted for this jury any more than for the other two.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "How many numbered references does the 1985 Nobel lecture carry?",
+            options: [
+              "98",
+              "23, the number that carry the name of the person the citation does not name",
+              "Twenty-three, the same total as the 1934 lecture this course also counts",
+              "More than three hundred, since the lecture surveys the whole field of crystallography",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ninety-eight numbered items across the last three pages, re-counted for this course from the rendered pages.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "How were the lecture's reference pages read for this course?",
+            options: [
+              "As images, at 150 dpi",
+              "By searching the machine-read text layer of the file for each spelling of the name",
+              "From a bibliographic database that indexes the references of every Nobel lecture",
+              "From the brief, whose count was carried across without being checked again",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Rendered at 150 dpi and counted by eye from the images, the same treatment the Garfield essay got in the 1978 section.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "Why were the pages read as images rather than as text?",
+            options: [
+              "A scan mangles initials",
+              "Because the reference list is printed in a typeface no text extractor can recognise",
+              "Because the file is protected against copying, so its text cannot be extracted at all",
+              "Because the count needed the page numbers, which the text layer does not preserve",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The initial is the smallest part of a name and the first thing a scan corrupts, and the initial is exactly what this count turns on.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "How many of the 98 references carry Isabella Karle's name?",
+            options: [
+              "23",
+              "Ten, the count that the 1934 lecture yields under the same counting rule",
+              "Fifty, which is roughly half, since the laboratory was a joint one throughout",
+              "None, which is why the lesson uses the text of the lecture rather than its list",
+            ],
+            correctIndex: 0,
+            explanation:
+              "References 12, 13, 14, 24, 32, 36, 37, 55, 56, 57, 58, 61, 62, 64, 70, 71, 72, 73, 74, 76, 78, 79 and 82.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "On how many of those references does her name come first?",
+            options: [
+              "15",
+              "Two, as in the 1934 lecture, where she is first on references 13 and 14",
+              "All twenty-three, since the laboratory listed authors alphabetically by surname",
+              "None, because the lecture lists its own author first on every reference it cites",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fifteen of the twenty-three, which is the second half of the counting rule this lesson prints before it counts.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "How many references carry the co-laureate's name?",
+            options: [
+              "11",
+              "Twenty-three, the same as hers, which is why the comparison is not informative",
+              "Forty-one, covering the whole of the theoretical work published from 1950 to 1956",
+              "One, the monograph of 1953 that the applications section refers back to",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hauptman's name is on references 15, 18, 20, 21, 22, 23, 27, 35, 55, 90 and 91.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "Which reference carries both her name and the co-laureate's?",
+            options: [
+              "Reference 55",
+              "Reference 23, the 1953 monograph that the applications section refers back to",
+              "Reference 76, the 1983 enkephalin structure with five authors on its line",
+              "None of the ninety-eight, which is the point the lesson makes about the two bodies of work",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reference 55 is Karle, I. L., Hauptman, H., Karle, J. and Wing, A. B. (1958), and she is first on it.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What does a search for the exact string Karle, I. L. return from the reference list?",
+            options: [
+              "21",
+              "23, the same as counting by eye, because the list is set consistently throughout",
+              "15, which is the number of references on which her name comes first in the list",
+              "Nothing, because the list gives full given names rather than initials",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two references print her name some other way, so a string match gives a smaller number and no warning that it is smaller.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "How does reference 61 print her name?",
+            options: [
+              "Karle, I.",
+              "Karle, Isabella L., spelled out in full because the journal required full given names",
+              "I. L. Karle-Lugoski, using the surname she published under before her marriage",
+              "Karle, I. L., exactly as the other twenty-two references print it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Without the second initial. It was confirmed on the rendered page rather than in the text layer, because that is where such a difference gets invented.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What is odd about the author list of reference 70?",
+            options: [
+              "The initials sit on the wrong surname",
+              "It gives two journals and two sets of page numbers for what is really one article",
+              "It lists her twice, once as first author and once at the end of the same line",
+              "It omits the year, so the reference cannot be matched to a published paper",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It prints \"Karle, and I. L. Witkop, B.\" That is in the published lecture, not an artefact of reading it.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "When does the lesson's rule say a reference counts as hers first?",
+            options: [
+              "When her name comes first in the list",
+              "When she is the only author whose surname appears more than once in the list",
+              "When the reference is cited in the applications section rather than the theory",
+              "When the paper was published by a journal of the International Union of Crystallography",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The rule is printed before the count: carries her name means the line prints Karle, I. or Karle, I. L.; hers first means that name leads the list.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What does the lecture say about the examples in its applications section?",
+            options: [
+              "They are mainly from his laboratory",
+              "They were chosen by the Nobel Foundation from papers published in the previous decade",
+              "They are a survey of the field, and deliberately avoid work done in his own group",
+              "They cover only the structures that the symbolic addition procedure could not solve",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"The examples will be mainly taken from my laboratory.\" That sentence tells a reader what the reference list is a list of.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What does that sentence do to the count?",
+            options: [
+              "It bounds what the count can show",
+              "It makes the count useless, since a self-selected list proves nothing about anyone",
+              "It widens the count, because a survey of the field would name more collaborators",
+              "It means the references were chosen by the Academy rather than by the laureate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The list is one laboratory's output over thirty years, chosen by the laureate. That is what makes it worth counting and also what limits it.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What does the comparison of 23 against 11 actually set side by side?",
+            options: [
+              "Two different bodies of work",
+              "Two people's total scientific output over the whole of their working lives",
+              "The theory papers and the applications papers of a single collaboration",
+              "Two counting rules applied to the same set of ninety-eight references",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three decades of applications against the theory of 1950 to 1956, which are not the same size of thing.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What was the co-laureate's collaboration with Jerome Karle?",
+            options: [
+              "The theory of 1950 to 1956",
+              "The applications programme that ran in the laboratory throughout the 1960s",
+              "The experimental X-ray facility built in that laboratory in the late 1950s",
+              "The computer programs that carried direct methods into other laboratories",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is the work the citation rewards, and it is narrower and earlier than the body of work the reference list mostly covers.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What does Garfield's warning say counts like these can indicate?",
+            options: [
+              "That somebody was capable of valuable contributions",
+              "That a named collaborator did most of the work described in the papers counted",
+              "That the awarding committee had all the evidence it needed in front of it",
+              "That the papers counted were more influential than those left out of the list",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 1978 section quotes it: the data cannot prove she made major contributions, but they indicate she was capable of valuable ones.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What can a count like this not do?",
+            options: [
+              "Partition the work inside a paper",
+              "Tell a reader how many references a lecture carries in total",
+              "Show which spelling of a name a particular reference used",
+              "Establish that a name appears on a given numbered reference at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It cannot say who did what inside a paper, and the lesson adds that it cannot partition work inside a laboratory either.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What is reference 76 of the 1985 lecture?",
+            options: [
+              "Her 1983 enkephalin structure",
+              "The 1975 Nature paper by Hughes, Smith, Kosterlitz and their colleagues",
+              "The 1953 monograph on the solution of the phase problem by direct methods",
+              "The first application of the symbolic addition procedure, published in 1963",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A crystal structure of [Leu5]enkephalin, with her first among five authors, discussed beside reference 75 in the conformation section.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What is reference 75, which the lecture discusses beside it?",
+            options: [
+              "The 1975 paper on enkephalin",
+              "A 1971 paper by Goldstein, Lowney and Pal on stereospecific binding in the brain",
+              "The Science paper of 1973 that announced the demonstration of opiate receptors",
+              "The Lasker Foundation's award page for 1978, which the 1978 section works",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hughes, Smith, Kosterlitz, Fothergill, Morgan and Morris in Nature, the enkephalin work the 1978 Lasker citation names.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What joins two of this course's cases, according to this lesson?",
+            options: [
+              "A molecule",
+              "A shared laureate, who appears on the prize pages of both awards",
+              "A single awards committee, which sat on both juries in the years concerned",
+              "A counting rule, which yields the same totals for both reference lists",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Enkephalin: named in the 1978 Lasker citation, and the subject of the structure at reference 76 of the 1985 lecture.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What trap did the 1934 reference list share with this one?",
+            options: [
+              "A name printed a second way",
+              "A reference that cites two articles at once under a single number",
+              "A list too long to count by hand in the time a reader is likely to give it",
+              "An author line that reverses the order the original paper printed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In 1934 it was \"F. S. Robscheit\" without the Robbins. In 1985 it is \"Karle, I.\" without the second initial. Both cost a reader one reference.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "Which prize did she receive in 1988?",
+            options: [
+              "The Gregori Aminoff Prize",
+              "The Bower Award and Prize for Achievement in Science, given by the Franklin Institute",
+              "The National Medal of Science, presented in Chemistry by the president of the day",
+              "The Women in Science and Engineering Lifetime Achievement Award",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Royal Swedish Academy of Sciences' crystallography prize, three years after the Nobel ceremony.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Which body awards the Gregori Aminoff Prize?",
+            options: [
+              "The Royal Swedish Academy of Sciences",
+              "The Karolinska Institutet, which awards the prize in physiology or medicine",
+              "The Nobel Foundation, on the recommendation of the chemistry committee",
+              "The International Union of Crystallography, at its triennial congress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same body that awards the Nobel Prize in Chemistry, which is what makes the 1988 award worth noticing in this case.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Why does the lesson quote no wording for the 1988 citation?",
+            options: [
+              "Its record was not reached",
+              "Because the Academy publishes no citation for that prize in any year",
+              "Because the wording is in Swedish and no published translation exists",
+              "Because the citation names the field rather than the person, and so says nothing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The prize itself is on two pages read for this course. The Academy's own record of the citation was not reached, so nothing is quoted from it.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "What does the Franklin Institute's 1993 citation say?",
+            options: [
+              "For determining molecular structure with X-ray diffraction",
+              "For the definitive introduction of the symbolic addition method to molecular structure",
+              "For the development and application of a method for equal-atom crystal structures",
+              "For outstanding achievements in the development of direct methods for crystal structures",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"For determining three-dimensional structure of molecules with X-ray diffraction.\" The longer phrases belong to the page's account and to other citations.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "What does the Franklin Institute's page credit her with, beyond its own citation?",
+            options: [
+              "Introducing the symbolic addition method",
+              "Establishing the experimental X-ray diffraction facility at the Naval Research Laboratory",
+              "Determining the first noncentrosymmetric structure solved by a direct method",
+              "Sharing the Nobel Prize in Chemistry with her husband and his co-laureate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"Her definitive introduction of the symbolic addition method to reveal molecular structure directly from X-ray studies.\"",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "How does the Franklin Institute page date itself?",
+            options: [
+              "Information as of 1995",
+              "It carries no date at all, which is why the course treats it as undated",
+              "It is dated to the ceremony in 1993, when the Bower Award was presented",
+              "It was posted on 8 April 2021, according to the metadata attached to the page",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The page says so at the foot of its account, which is why its list of her honours stops where it does.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Which award did she receive in 1995?",
+            options: [
+              "The National Medal of Science",
+              "The Bower Award and Prize for Achievement in Science, in the subject of physics",
+              "The Gregori Aminoff Prize of the Royal Swedish Academy of Sciences",
+              "The Lifetime Achievement Award of Women in Science and Engineering",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In Chemistry, and its citation names her for the development and application of a method.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Which phrase does the 1995 citation use for the structures her method determined?",
+            options: [
+              "Essentially equal-atom",
+              "Three-dimensional structure of molecules, the phrase the 1993 citation also uses",
+              "Noncentrosymmetric crystals of substances of biochemical interest",
+              "Crystal structures determined without assumptions or guesses of any kind",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"A method for determining essentially equal-atom crystal and molecular structures by x-ray analysis.\"",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Where else does that phrase appear, in a document the prize-giver hosts?",
+            options: [
+              "In the 1985 Nobel autobiography",
+              "In the citation for the 1985 prize, which uses it of the laureates' achievement",
+              "In the presentation speech, describing what a clever beginner can now do",
+              "In the Academy's press release, in the sentence naming her contributions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It dates \"the first essentially equal atom noncentrosymmetric crystal structure to be solved by direct phase determination\" to 1964.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "What does a later honour reach?",
+            options: [
+              "Institutional memory",
+              "The original citation, which the awarding body amends to record the correction",
+              "The prize page, where the later award is added beneath the citation for that year",
+              "The author lines of the papers, which are reissued with the new credit in place",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Who Gets Named, lesson 21, makes the general point. The 1993 and 1995 citations name her, and neither one touches the 1985 citation.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "How does the 1985 prize page read today?",
+            options: [
+              "As it read in 1985",
+              "With a note recording the later awards she received for the same method",
+              "With her name added to the citation, following the National Medal of Science",
+              "With the presentation speech withdrawn, since the background note contradicts it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A citation is not amended, and no award body revises another's. That is the limit on what any later prize can do.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Which built lesson makes the general point about corrections?",
+            options: [
+              "Who corrects a record, and with what",
+              "Credit is a second event, which sets out the rule about the number of Nobel seats",
+              "Who counts as an author, and who gets thanked, on acknowledgements and indexing",
+              "Rossiter names the second mechanism, on where misplaced credit tends to arrive",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Who Gets Named, lesson 21. The other lessons named are real and do other jobs in that course.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "What was not found in any document the laureate published?",
+            options: [
+              "A claim that she should have shared the prize",
+              "Any mention of her by name in connection with the symbolic addition procedure",
+              "Any account of how the experimental facility in the laboratory was established",
+              "Any reference to the papers on which her name appears as first author",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not in the Nobel lecture, not in the autobiography and its two addenda, and not in the 1987 oral history for which both were interviewed.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Who is the source of the sentence about the laureate being devastated?",
+            options: [
+              "Magdolna Hargittai",
+              "Jerome Karle himself, in the addendum he added to his autobiography in 1992",
+              "Isabella Karle, in the oral history recorded two years after the ceremony",
+              "The Lasker Foundation, in the essay it published about a different award",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A scholar quoted by a magazine in 2017. It is her account, attributed to her by the magazine, and not the laureate's own words.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Which publication carried that quotation?",
+            options: [
+              "Chemical and Engineering News",
+              "Science, in the news report that ran over three months of 1979",
+              "Current Contents, in the essay on awards committees and citation data",
+              "Nature, in the paper that first described the enkephalins in the brain",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its 2017 obituary. The other publications named here belong to the 1978 case and to the science of the two cases.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Which claim in that same quotation does not survive a check against the lecture?",
+            options: [
+              "That she was the first to apply the method",
+              "That her contribution to the success of the direct method was crucial to it",
+              "That the crystallographic community was sceptical about the method for years",
+              "That the joint paper of 1963 became a citation classic in the field",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lecture puts the earliest applications with the U.S. Geological Survey. The course prints the narrower claim the documents support.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Where does the lecture put the earliest applications after the monograph?",
+            options: [
+              "With the U.S. Geological Survey",
+              "In her laboratory, on p,p-dimethoxybenzophenone and a dihydronicotinamide",
+              "At Aberdeen, with the group that later shared the 1978 Lasker award",
+              "In the 1963 paper on cyclohexaglycyl, the first use of symbolic addition",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"The earliest applications after the publication of the monograph were collaborations with colleagues at the U.S. Geological Survey on colemanite and meyerhofferite.\"",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "What is the documented claim the course prints in place of the wider one?",
+            options: [
+              "The procedure, its extension, and the bridge to data",
+              "That she determined every structure solved by direct methods before 1964",
+              "That the awarding committee knew of her work and decided against naming her",
+              "That the method would not have worked at all without the facility she built",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Narrower and checkable in the laureate's own documents, which is why the course prefers it to the sentence people repeat.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "What do the 1993 and 1995 citations have in common that the 1985 one does not?",
+            options: [
+              "They name her",
+              "They were awarded by the body that also awards the Nobel Prize in Chemistry",
+              "They describe the method without naming any person who worked on it",
+              "They were published on the same site as the laureate's own Nobel lecture",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both of the later citations read for this course name her. The one that will be quoted for the next century does not.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "What did the laureate's laboratory have to build before the procedure could be tested?",
+            options: [
+              "An X-ray diffraction facility",
+              "A computer fast enough to carry the phase calculations without human help",
+              "A library of known structures against which each trial solution could be checked",
+              "A supply of crystals large enough to be measured without photographic film",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The autobiography says that in the second half of the 1950s, through her efforts, an experimental X-ray diffraction facility was established in that laboratory.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "Which document does the 1985 section read beside the citation, the presentation speech and the laureate's lecture?",
+            options: [
+              "The Academy's press release",
+              "The nomination letters submitted to the committee in the year before the award",
+              "The minutes of the committee that decided the prize, released after fifty years",
+              "The laureate's papers themselves, which the course reads in place of the prize page",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The announcement of 16 October 1985, with its background note. The autobiography in the yearbook is a fifth document, and it says the same thing the lecture does.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "Which two numbers does the counting rule decide between in the 1985 lecture?",
+            options: [
+              "23 and 21",
+              "10 and 9, the pair the 1934 lecture produces under the same treatment",
+              "98 and 24, the totals for references and for articles respectively",
+              "15 and 11, her first authorships against the co-laureate's appearances",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Counting by eye gives 23. Matching the string Karle, I. L. gives 21, because two references print her name another way.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What kind of correction did the later prizes amount to?",
+            options: [
+              "One that sits beside the record",
+              "A formal amendment agreed between the awarding bodies concerned",
+              "A retraction of the presentation speech by the academy that gave it",
+              "An addition to the author lines of the papers the method produced",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The later citations name her, and none of them touches the 1985 citation, because no award body revises another's.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
     // CLOSING — How to read a prize citation
     // ══════════════════════════════════════════════════════════════════════
     {
       slug: "the-method-in-five-steps",
       title: "Closing · The method, in five steps",
       section: "Closing · How to read a prize citation",
-      body: `The two cases were the material. This is the part you keep.
+      body: `The three cases were the material. This is the part you keep.
 
 **Step 1. Separate the documents, and name who wrote each.** Before reading for content, sort the page. Which text is the citation? Which is the institution talking about the winner? Which is the winner talking? A prize page prints them together and formats them alike, which is exactly what makes a reader treat them as one voice. They are not one voice, and their disagreements are only visible once they are apart.
 
-**Step 2. Find the verb that does the crediting, and see who it attaches to.** In 1978 the verb was "identified", and it attached to two different people in two texts on one page. In 1934 the presentation speech said Whipple's experiments were "planned exceedingly well" while the lecture said the method was begun by two people. The verb is where the credit is actually assigned, and tracking one verb across three documents is faster and more honest than summarising each of them.
+**Step 2. Find the verb that does the crediting, and see who it attaches to.** In 1978 the verb was "identified", and it attached to two different people in two texts on one page. In 1934 the presentation speech said Whipple's experiments were "planned exceedingly well" while the lecture said the method was begun by two people. In 1985 the speech gave the practical gain to recent developments and modern computers, and the lecture gave it to a named person. The verb is where the credit is actually assigned, and tracking one verb across three documents is faster and more honest than summarising each of them.
 
-**Step 3. Bring in the document the prize-giver does not host.** An author line. A reference list. In 1978 it was the author line of a 1973 paper, with the thanked person first. In 1934 it was the reference list of the lecture itself, which the laureate's own footnote defines as a summary of his own contributions. The institution did not write these, so they are not tuned to the citation, and they are usually the fastest way to learn something the page did not intend to say.
+**Step 3. Bring in the document the prize-giver does not host.** An author line. A reference list. In 1978 it was the author line of a 1973 paper, with the thanked person first. In 1934 it was the reference list of the lecture itself, which the laureate's own footnote defines as a summary of his own contributions. In 1985 it was another reference list, 98 items long, from a lecture that says its examples come mainly from one laboratory. The institution did not write these, so they are not tuned to the citation, and they are usually the fastest way to learn something the page did not intend to say.
 
-**Step 4. Count, and print the counting rule beside the count.** Ten of the twenty-three references is a count with a rule attached: anyone can open the lecture and check it in five minutes. Twenty-one papers is a count with no rule attached, and the same six years yield 27, 18 and 22 under three other rules. A total without its rule cannot be checked, and a total that cannot be checked is not evidence, however often it is repeated.
+**Step 4. Count, and print the counting rule beside the count.** Ten of the twenty-three references is a count with a rule attached: anyone can open the lecture and check it in five minutes. Twenty-three of ninety-eight is another, and it drops to twenty-one the moment a search box does the counting, which is why the rule has to say how a name is recognised and not only what is being counted. Twenty-one papers is a count with no rule attached, and the same six years yield 27, 18 and 22 under three other rules. A total without its rule cannot be checked, and a total that cannot be checked is not evidence, however often it is repeated.
 
-**Step 5. Name who contests what, and then stop.** In the 1978 case, Snyder contests one thing, who began the project, and supports another, her sharing the award. A jury member said one thing about the deliberations and nothing else. An award body admitted a different omission on a different award. Each of those is a specific person saying a specific thing in a specific place, and the case is made of them. Where the record stops, the reading stops. "Exactly what influenced the Lasker jury is not known" is a finding, not a gap to be filled in.
+**Step 5. Name who contests what, and then stop.** In the 1978 case, Snyder contests one thing, who began the project, and supports another, her sharing the award. A jury member said one thing about the deliberations and nothing else. An award body admitted a different omission on a different award. In the 1985 case the most repeated sentence about how the laureate felt turns out to belong to a scholar quoted in an obituary, and the course says whose it is. Each of those is a specific person saying a specific thing in a specific place, and the case is made of them. Where the record stops, the reading stops. "Exactly what influenced the Lasker jury is not known" is a finding, not a gap to be filled in.
 
 **A sixth step, unnumbered because it is a habit rather than a move.** Say where each thing came from and how you got it. This course used an interested website for one article and said so. It used a university page's transcription of a book it has not read and said so. It rendered a scanned essay as page images because the machine-read text could not be trusted for quotation, and said so. The reading is only worth as much as the provenance behind it, and a reader who is told the provenance can go and do better.
 
@@ -3061,6 +4441,8 @@ Pollin, W. (1979). Pert and the Lasker Award [Letter]. *Science*, 204(4388), 8.`
 
 ## Sources
 Albert and Mary Lasker Foundation. (n.d.). *Opiate receptors and enkephalins: 1978 Albert Lasker Basic Medical Research Award*. https://laskerfoundation.org/winners/opiate-receptors-and-enkephalins/
+Karle, J. (1985). *Recovering phase information from intensity data* [Nobel lecture]. Nobel Foundation. https://www.nobelprize.org/uploads/2018/06/karle-lecture.pdf
+Lindqvist, I. (1985). *Award ceremony speech: The Nobel Prize in Chemistry 1985*. Nobel Prize Outreach. https://www.nobelprize.org/prizes/chemistry/1985/ceremony-speech/
 Nobel Prize Outreach. (n.d.-a). *Award ceremony speech: The Nobel Prize in Physiology or Medicine 1934*. https://www.nobelprize.org/prizes/medicine/1934/ceremony-speech/
 Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other factors* [Nobel lecture]. Nobel Foundation. https://www.nobelprize.org/uploads/2018/06/whipple-lecture.pdf`,
     },
@@ -3068,23 +4450,23 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
       slug: "what-these-cases-do-not-prove",
       title: "Closing · What these cases do not prove",
       section: "Closing · How to read a prize citation",
-      body: `A course built on two cases owes its reader an explicit list of what those two cases cannot carry. Here it is.
+      body: `A course built on three cases owes its reader an explicit list of what those three cases cannot carry. Here it is.
 
-**They do not prove any jury did anything on purpose.** The Lasker deliberations are confidential, one member said only that one particular issue did not come up, and no released Nobel committee record for 1934 was found. Nothing in this course asserts a motive, and no lesson uses a word like overlooked or passed over as though it described a decision somebody made. The record shows what was published. It does not show what was thought.
+**They do not prove any jury did anything on purpose.** The Lasker deliberations are confidential, one member said only that one particular issue did not come up, and no released Nobel committee record for 1934 or 1985 was found. Nothing in this course asserts a motive, and no lesson uses a word like overlooked or passed over as though it described a decision somebody made. The record shows what was published. It does not show what was thought.
 
-**They do not show that format caps explain omissions.** In 1934 three laureates held three thirds and the arithmetic was binding. In 1978, per Garfield, the award carried no formal limitation at all. One case supports the cap explanation and the other rules it out, which is precisely why one case is not enough to teach it.
+**They do not show that format caps explain omissions.** In 1934 three laureates held three thirds and the arithmetic was binding. In 1978, per Garfield, the award carried no formal limitation at all. In 1985 the limit was three and two people were named. One case supports the cap explanation and the other two rule it out, which is precisely why one case is not enough to teach it.
 
-**They do not establish that either woman discovered anything alone.** For 1978 the multiple discovery point is decisive: three groups published in 1973, the order changes depending on whether you measure submission, publication or first presentation, and Garfield concludes each has a strong claim. For 1934 nothing in the documents assigns the work to one person either, including the sentence that names her, which names two.
+**They do not establish that any of these women discovered anything alone.** For 1978 the multiple discovery point is decisive: three groups published in 1973, the order changes depending on whether you measure submission, publication or first presentation, and Garfield concludes each has a strong claim. For 1934 nothing in the documents assigns the work to one person either, including the sentence that names her, which names two. For 1985 the lecture credits a procedure mainly to one person's efforts while putting the underlying theory with the two laureates and the earliest applications with a government survey, and the course prints all three of those together.
 
 **They do not turn citation counts into proof.** Garfield says so about his own numbers, and then shows the failure mode: a committee using citation data alone would have missed Kosterlitz, who had kept his name off the paper that mattered. A measure that catches one kind of invisible contributor creates another.
 
 **A thank-you is evidence of a thank-you.** Snyder's sentence shows that he said she identified the receptors. It does not by itself establish that she did, and it is not the reason this course takes her contribution seriously. The author line, the citation record and the NIDA admission do that work, and each of them can be checked independently.
 
-**They do not support a villain.** Both laureates behaved better than their citations. Whipple named her twice in his lecture and, per a transcription of Corner's biography, divided his third of the money with her and two technical assistants. Snyder named her in his acceptance remarks, said publicly that she should have shared the award, and telephoned jurors to ask for it. Whatever produced these two omissions, it was not the laureate refusing to acknowledge the person. The mechanism sits above them, in what a citation is built to record.
+**They do not support a villain.** The laureates behaved better than their citations. Whipple named her twice in his lecture and, per a transcription of Corner's biography, divided his third of the money with her and two technical assistants. Snyder named her in his acceptance remarks, said publicly that she should have shared the award, and telephoned jurors to ask for it. Jerome Karle named her in his Nobel lecture and again in his Nobel autobiography, for the procedure and for its extension. Whatever produced these omissions, it was not the laureate refusing to acknowledge the person. The mechanism sits above them, in what a citation is built to record.
 
-**And they do not tell you much about either woman.** The sources read for this course say almost nothing about Frieda Robscheit-Robbins beyond her work. That is the finding, and it is not padded here. The University of Rochester's page does record that she was still an associate in pathology after decades at the institution, that she served as president of the American Society for Experimental Pathology in 1951 and 1952, and that she retired in 1955 (Pierce, 2021). Those sentences are transcriptions on a university page, and they are the whole of what this course claims about her career.
+**And one of them tells you almost nothing about the woman in it.** The sources read for this course say almost nothing about Frieda Robscheit-Robbins beyond her work. That is the finding, and it is not padded here. The University of Rochester's page does record that she was still an associate in pathology after decades at the institution, that she served as president of the American Society for Experimental Pathology in 1951 and 1952, and that she retired in 1955 (Pierce, 2021). Those sentences are transcriptions on a university page, and they are the whole of what this course claims about her career.
 
-**Two cases are not a pattern.** They are two worked examples of a reading method. The method is the transferable part, and the next lesson says where to take it.
+**Three cases are not a pattern.** They are three worked examples of a reading method. The method is the transferable part, and the next lesson says where to take it.
 
 :::reveal Why does this course never say a jury overlooked or passed over anyone? ||| Because those words describe a decision, and no released record shows what either jury decided or why. The course reports what was published and stops.
 
@@ -3113,9 +4495,9 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
 
 **Where to read next in this catalog.** *The Paper and the Prize* works the adjacent case of Esther Lederberg and is public. Its lesson 5, "Who is on the paper, and who is on the prize", is the built worked example of setting an author line against a prize citation, and its lesson 6, "The Matilda effect, and what this case does and does not prove", is the limits lesson for that case. *Who Gets Named* supplies the general apparatus: lesson 1 on credit as a second event and the rule about Nobel seats, lesson 5 on the Matthew effect, lesson 10 on what award data show and do not, and lesson 13 on the difference between an author and an acknowledgement. None of those is repeated here.
 
-**How this course is built, and why.** Its sections are keyed by the year of the prize rather than by a running number, and the framing and closing sections are keyed by the words Opening and Closing. That is deliberate. A course about prize citations should be able to take another citation without renumbering the ones it already has, and a new case slots in at its own year without touching a single existing lesson.
+**How this course is built, and why.** Its sections are keyed by the year of the prize rather than by a running number, and the framing and closing sections are keyed by the words Opening and Closing. That is deliberate. A course about prize citations should be able to take another citation without renumbering the ones it already has, and a new case slots in at its own year without touching a single existing lesson. The design was tested in September 2026, when the 1985 case was added between the 1978 section and this one. No existing lesson slug, section title or quiz name changed.
 
-**One last thing to carry.** The most useful documents in both of these cases were free, short, and published by the institution that gave the prize. The 1978 page takes a minute to read. The 1934 lecture is eight pages. Neither required an archive, a library visit or a subscription. The barrier to checking a prize citation is almost never access. It is the habit of treating a prize page as one document instead of three.
+**One last thing to carry.** The most useful documents in all three of these cases were free, short, and published by the institution that gave the prize. The 1978 page takes a minute to read. The 1934 lecture is eight pages. The 1985 press release is one page, and the reference list that settles the 1985 count sits on the last three pages of a lecture anybody can download. None of them required an archive, a library visit or a subscription. The barrier to checking a prize citation is almost never access. It is the habit of treating a prize page as one document instead of three.
 
 :::reveal What should you do when the method comes back clean on a prize page? ||| Report it. A page whose citation, institutional account and laureate's remarks all credit the same people is a consistent record, and reporting only the inconsistent ones stops being a method.
 
@@ -3128,6 +4510,8 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
 
 ## Sources
 Albert and Mary Lasker Foundation. (n.d.). *Opiate receptors and enkephalins: 1978 Albert Lasker Basic Medical Research Award*. https://laskerfoundation.org/winners/opiate-receptors-and-enkephalins/
+Karle, J. (1985). *Recovering phase information from intensity data* [Nobel lecture]. Nobel Foundation. https://www.nobelprize.org/uploads/2018/06/karle-lecture.pdf
+Royal Swedish Academy of Sciences. (1985, October 16). *Press release: The 1985 Nobel Prize in chemistry*. Nobel Prize Outreach. https://www.nobelprize.org/prizes/chemistry/1985/press-release/
 Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other factors* [Nobel lecture]. Nobel Foundation. https://www.nobelprize.org/uploads/2018/06/whipple-lecture.pdf`,
     },
     {
@@ -3893,6 +5277,110 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
               "Whipple's Nobel lecture and Snyder's acceptance remarks each name her, and each is hosted by the body that gave the prize.",
             sourceLessonSlug: "the-method-in-five-steps",
           },
+          {
+            prompt: "In the 1985 case, what did the presentation speech attach the practical gain to?",
+            options: [
+              "Recent developments and computers",
+              "The laureate's wife, whom the lecture had credited by name the previous day",
+              "The Academy's own press release, which it quotes at length on the same point",
+              "The crystallographers who had criticised the method through the 1950s",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Step 2 in action: one verb, followed across the documents. The lecture gave the same gain to a named person.",
+            sourceLessonSlug: "the-method-in-five-steps",
+          },
+          {
+            prompt: "What played the part of the fourth document in the 1985 case?",
+            options: [
+              "A reference list of 98 items",
+              "The author line of the paper that announced the result, with her name first",
+              "A grant application held by the National Institutes of Health from the year before",
+              "A university history page transcribing a biography the course has not read",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The reference list at the foot of a lecture whose examples, it says, come mainly from one laboratory.",
+            sourceLessonSlug: "the-method-in-five-steps",
+          },
+          {
+            prompt: "What happens to the 1985 count when a search box does the counting?",
+            options: [
+              "It drops to twenty-one",
+              "It rises to ninety-eight, because the string matches the laureate's own name too",
+              "It stays at twenty-three, since the list spells every author's name the same way",
+              "It cannot be done at all, because the file carries no machine-readable text",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two references print her name another way, which is why a counting rule has to say how a name is recognised.",
+            sourceLessonSlug: "the-method-in-five-steps",
+          },
+          {
+            prompt: "How many of this course's three cases support the format cap explanation?",
+            options: [
+              "One",
+              "Two, the 1934 and 1985 prizes, since both were awarded under the Nobel statutes",
+              "All three, which is why the course teaches the cap before anything else",
+              "None, because no awarding body publishes the limits it works under",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1934 alone. The 1978 award carried no formal limit, and the 1985 prize left one of its three seats unused.",
+            sourceLessonSlug: "what-these-cases-do-not-prove",
+          },
+          {
+            prompt: "What did the 1985 laureate do that his citation did not?",
+            options: [
+              "Named her, twice",
+              "Divided the money that came with the prize among the people who had done the work",
+              "Telephoned members of the committee to ask that she be included in the award",
+              "Published a correction in the journal that had carried the original papers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In the Nobel lecture and again in the Nobel autobiography, for the procedure and for its extension. The money and the telephone calls belong to the other two cases.",
+            sourceLessonSlug: "what-these-cases-do-not-prove",
+          },
+          {
+            prompt: "What does this course say three cases amount to?",
+            options: [
+              "Three worked examples",
+              "A pattern strong enough to support a general claim about how juries behave",
+              "A sample large enough to rank the three omissions by seriousness",
+              "A demonstration that the format cap explains most omissions from prizes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three cases are not a pattern. The method is the transferable part, and the next lesson says where to take it.",
+            sourceLessonSlug: "what-these-cases-do-not-prove",
+          },
+          {
+            prompt: "How long is the 1985 press release, as this course describes it?",
+            options: [
+              "One page",
+              "Eight pages, the same length as the 1934 Nobel lecture the course counts",
+              "Thirty-seven pages, including the figures the laureate showed at the ceremony",
+              "Long enough to need a subscription, which is why the course quotes it sparingly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Free, short, and published by the institution that gave the prize, like the most useful document in each of the other two cases.",
+            sourceLessonSlug: "where-the-method-goes-next",
+          },
+          {
+            prompt: "What had to change in this course when the 1985 case was added?",
+            options: [
+              "No existing lesson or quiz name",
+              "Every section title, because the sections are numbered in sequence",
+              "The slugs of the closing lessons, which moved to the end of the course",
+              "The final assessment, whose existing questions were rewritten for three cases",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sections are keyed by the year of the prize, so a new case slots in at its own year. That is what the design was for.",
+            sourceLessonSlug: "where-the-method-goes-next",
+          },
         ],
       },
     },
@@ -4441,6 +5929,149 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
               "She appears only inside the acceptance remarks, among \"the many people who contributed to this area\". The page names her nowhere else.",
             sourceLessonSlug: "the-1978-award-page-exercise",
           },
+          {
+            prompt: "How many people shared the 1985 Nobel Prize in Chemistry, against how many the statutes allow?",
+            options: [
+              "Two of a possible three",
+              "Three of a possible three, so the seats were full as they were in 1934",
+              "Two of a possible two, because a prize for a method may not be split three ways",
+              "One, with the second half awarded to the same laureate in a later year",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hauptman and Karle, at one half each, with a third seat unused. That is why the format explanation has nothing to say about this case.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "Whose efforts does the 1985 Nobel lecture say the symbolic addition procedure arose mainly from?",
+            options: [
+              "Isabella Karle's",
+              "The co-laureate's, in the series of papers published between 1950 and 1956",
+              "A team at the U.S. Geological Survey, who made the earliest applications of all",
+              "The programmers who wrote the software that carried direct methods to other laboratories",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The laureate writes it in the lecture the Nobel Foundation hosts, and repeats it in the autobiography published in the 1985 yearbook.",
+            sourceLessonSlug: "the-phase-problem",
+          },
+          {
+            prompt: "What did the Royal Swedish Academy of Sciences say about her contributions in its own announcement?",
+            options: [
+              "That they had been crucial",
+              "That they belonged to the applications rather than to the development of the methods",
+              "That they had been considered and found insufficient for a share of the prize",
+              "Nothing at all, which is why the course reads the lecture against the speech instead",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"Isabel Karle's and M. Woolfson's contributions to the practical utilization of direct methods have been crucial\", in the press release of 16 October 1985.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "What does the 1985 presentation speech credit the efficiency of the methods to?",
+            options: [
+              "Recent developments and computers",
+              "The experimental facility the laureate's own laboratory built in the late 1950s",
+              "The procedure named in the laureate's lecture the previous day, without naming a person",
+              "The crystallographers who spent the 1960s testing the equations against real data",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Search the speech for Isabella, or for Isabel, and you get nothing. The gain belongs to recent developments and to machines.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "How many of the 98 references in the 1985 Nobel lecture carry her name?",
+            options: [
+              "23",
+              "Ten, the figure the 1934 lecture yields under the same counting rule",
+              "Eleven, which is the number carrying the co-laureate's name instead",
+              "Ninety-eight, since the lecture takes its examples mainly from one laboratory",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Twenty-three carry her name and she is first on fifteen. Hauptman's name is on eleven, and reference 55 is the only one carrying both.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What does a search for the exact string Karle, I. L. return from that reference list?",
+            options: [
+              "21",
+              "23, the same as counting by eye, because the list is set consistently throughout",
+              "98, because the string appears somewhere on every page of the reference list",
+              "15, which is the number of references on which her name comes first",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reference 61 prints \"Karle, I.\" and reference 70 attaches her initials to the wrong surname, so a string match loses two and says nothing about it.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
+          {
+            prompt: "What did the 1995 National Medal of Science citation name her for?",
+            options: [
+              "Developing and applying the method",
+              "Determining the three-dimensional structure of molecules with X-ray diffraction",
+              "Her eminent crystallographic investigations of complicated natural products",
+              "Outstanding achievements in the development of direct methods for crystal structures",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"For the development and application of a method for determining essentially equal-atom crystal and molecular structures by x-ray analysis.\"",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "What can a later prize not do to an earlier citation?",
+            options: [
+              "Amend it",
+              "Be awarded by the same institution that issued the earlier citation",
+              "Name a person the earlier citation left out of its own sentence",
+              "Reach the institutional memory in which the earlier record sits",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 1993 and 1995 citations name her. The 1985 prize page reads as it read in 1985, because no award body revises another's record.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "Which explanation for an omission does the 1985 case remove?",
+            options: [
+              "That there was no room",
+              "That a jury may never be asked to reconsider a decision once it is announced",
+              "That the institution's own documents always agree with one another about the work",
+              "That citation counts can settle who contributed what inside a laboratory",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A Nobel may be shared by three and this one was shared by two, so the arithmetic that bound the 1934 committee did not bind here.",
+            sourceLessonSlug: "citation-press-release-and-lecture",
+          },
+          {
+            prompt: "Where does the often quoted sentence about the 1985 laureate being devastated come from?",
+            options: [
+              "Magdolna Hargittai, quoted in 2017",
+              "The laureate's own addendum to his Nobel autobiography, written in 1992",
+              "The oral history recorded with both of them two years after the ceremony",
+              "The Academy's background note, which names her contributions as crucial",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Magdolna Hargittai, quoted by Chemical and Engineering News. No such statement was found in anything the laureate published.",
+            sourceLessonSlug: "the-correction-as-other-prizes",
+          },
+          {
+            prompt: "What connects the 1978 case to the 1985 case inside the lecture's reference list?",
+            options: [
+              "Enkephalin",
+              "A shared laureate, whose name appears on both prize pages",
+              "A shared awards committee, which sat on both juries in those years",
+              "A shared journal, which published the key paper in each of the two disputes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reference 76 is her 1983 crystal structure of [Leu5]enkephalin, discussed beside reference 75, the 1975 paper the 1978 Lasker citation rewards.",
+            sourceLessonSlug: "count-the-1985-references",
+          },
         ],
       },
     },
@@ -4525,6 +6156,60 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
 //     needs: the Lasker Foundation's award rules as they stood in 1978.
 //     where: the Lasker Foundation; its annual reports of the period.
 //
+// PROPOSED RESEARCH CHECKS ADDED WITH THE 1985 SECTION (2026-09-20). Same shape, same file, and I
+// have not edited src/lib/research-checks.ts here either:
+//
+//  G. key "citation-records-aminoff-1988-citation" · severity low · lesson "the-correction-as-other-prizes"
+//     quote: "The Academy's own record of the citation for that year was not reached for this
+//            course, so no wording is quoted for it here."
+//     claim: That the Royal Swedish Academy of Sciences awarded her the Gregori Aminoff Prize in
+//            1988 rests on two secondary pages, The Franklin Institute's laureate page and the
+//            Science History Institute's honours list. The Academy's own laureate list was fetched
+//            and returned its home page rather than the prize record, and the citation text has
+//            only ever been seen in search results, so the lesson names the prize and quotes
+//            nothing from its citation.
+//     stakes: The lesson's point is that the SAME body that awarded the 1985 prize gave her its
+//            crystallography prize three years later. If the year or the awarding body is wrong,
+//            that paragraph goes. The citation wording would strengthen it and is not load-bearing.
+//     needs: the Academy's own record of the 1988 Gregori Aminoff Prize, with its citation text.
+//     where: kva.se, its prize pages and annual proceedings; the Academy's archive.
+//
+//  H. key "citation-records-karle-oral-history" · severity medium · lesson "the-correction-as-other-prizes"
+//     quote: "No statement by Jerome Karle that she should have shared the prize was found in his
+//            Nobel lecture, in his Nobel autobiography and its two addenda, or in the 1987 oral
+//            history for which the two of them were interviewed together."
+//     claim: The lecture and the autobiography with both addenda were read in full in this pass.
+//            The 94-page oral history was NOT: that half of the sentence rests on the Karle brief's
+//            read of the transcript at the Science History Institute. The transcript is also in
+//            copyright, and BAM has not answered the brief's question 3 about quoting from it.
+//     stakes: A negative claim is only as good as the search behind it. If the transcript does
+//            discuss the prize, the sentence is wrong and the lesson's most careful paragraph is
+//            the one that fails. It would also change what the course can say about her own view.
+//     needs: the transcript read end to end, and BAM's answer on quoting one sentence of it.
+//     where: digital.sciencehistory.org/works/wp988m037; the Science History Institute.
+//
+//  I. key "citation-records-hargittai-first-to-apply" · severity low · lesson "the-correction-as-other-prizes"
+//     quote: "Hargittai also says 'Isabella was the first who applied the method'."
+//     claim: The course sets that sentence against the laureate's lecture, which puts the earliest
+//            applications with the U.S. Geological Survey. Hargittai's fuller argument is in her
+//            book on women scientists, which was not read, and it is possible she means the first
+//            application of the symbolic addition procedure specifically, which the lecture dates
+//            to 1963 and credits to Isabella Karle.
+//     stakes: If the book draws that distinction, the course is correcting a compression rather than
+//            an overstatement, and the paragraph should say so in one clause.
+//     needs: M. Hargittai's book, at the pages covering the Karles.
+//     where: university libraries; the publisher's own edition.
+//
+//  J. key "citation-records-1985-committee-record" · severity medium · lesson "what-these-cases-do-not-prove"
+//     quote: "no released Nobel committee record for 1934 or 1985 was found"
+//     claim: This is the 1985 half of check C. The Nobel nomination archive releases records after
+//            fifty years, so 1985 is not yet open and no committee record can be expected before
+//            2036. Nothing was searched for 1985 in this pass.
+//     stakes: The course asserts no motive for this jury either. A released record is the only thing
+//            that could change that, and it does not exist yet.
+//     needs: the Academy's release schedule, and the nomination archive when 1985 opens.
+//     where: nobelprize.org nomination archive; the Royal Swedish Academy of Sciences.
+//
 // SETTLED IN THIS PASS, so NO check is needed:
 //  - Every Garfield quotation. The brief marked them OCR-only and required a page-image check
 //    before any lesson printed them. Pages 141, 142, 143, 152, 153 and 154 were rendered at 150 dpi
@@ -4540,12 +6225,32 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
 //  - That the 1934 presentation speech does not name her: the speech text was searched for both
 //    spellings and neither occurs.
 //
+// SETTLED IN THE 1985 PASS (2026-09-20), so NO check is needed for these either:
+//  - The whole 1985 count, re-derived from the page images rather than from the brief: 98 numbered
+//    references; 23 carrying her name (12, 13, 14, 24, 32, 36, 37, 55, 56, 57, 58, 61, 62, 64, 70,
+//    71, 72, 73, 74, 76, 78, 79, 82); 15 with her first; 11 carrying Hauptman's (15, 18, 20, 21,
+//    22, 23, 27, 35, 55, 90, 91); reference 55 the only one with both; and 21 matching the literal
+//    string "Karle, I. L.", because reference 61 prints "Karle, I." and reference 70 prints
+//    "Karle, and I. L. Witkop, B.".
+//  - Every sentence quoted from the 1985 lecture, the presentation speech, the press release and
+//    the Nobel autobiography. Each was read on the source page or in the PDF on 2026-09-20, and the
+//    press release sentence was checked in the raw HTML as well, because the spelling "Isabel" is
+//    itself a teaching point and a stripping artefact would have invented it.
+//  - That the 1985 presentation speech names her under neither spelling: searched for "Isabella"
+//    and for "Isabel", zero hits for both.
+//  - The 1993 Bower Award citation, the 1995 National Medal of Science citation, and the C&EN
+//    quotations of Hargittai, all read on the pages that carry them.
+//
 // FOR THE REGISTERING AGENT (outside this file, and I have edited none of these):
 //
-//  REGISTRATION for scripts/seed-courses.ts. NO series fields: BAM decided on 2026-09-19 that a
-//  private course carries no CREDIT code, so there is no seriesSlug, seriesCode, seriesPosition or
-//  seriesTrack. Insert-only fields (price, priceType, visibility, publishHoldReason) are written
-//  once and never rewritten by a re-seed, so they have to be right the first time:
+//  REGISTRATION for scripts/seed-courses.ts. ALREADY DONE: the slug is registered and the course is
+//  seeded, so this block is now a record of what was inserted rather than an instruction. NO series
+//  fields: BAM decided on 2026-09-19 that a private course carries no CREDIT code, so there is no
+//  seriesSlug, seriesCode, seriesPosition or seriesTrack. Insert-only fields (price, priceType,
+//  visibility, publishHoldReason) are written once and never rewritten by a re-seed, which is why
+//  the reason below still says two cases: it was true when the row was inserted, the row cannot be
+//  corrected by re-seeding, and it is an internal hold note rather than anything a learner reads.
+//  If BAM ever wants it accurate it is a one-row UPDATE, not a seed change:
 //
 //    await seedAuthoredCourse(db, {
 //      tenantId: learnWitus,
@@ -4562,6 +6267,15 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
 //        "Private study (plans/83): prize-credit cases for BAM's own review, not for learners. Two cases, Frieda Robscheit-Robbins and Candace Pert, built from briefs BAM approved on 2026-09-19.",
 //    });
 //
+//  The text a fresh insert should carry now, if the row is ever recreated: "Private study
+//  (plans/83): prize-credit cases for BAM's own review, not for learners. Three cases, Frieda
+//  Robscheit-Robbins, Candace Pert and Isabella Karle, built from briefs BAM approved on 2026-09-19
+//  and 2026-09-20."
+//
+//  RE-SEED AFTER THIS EDIT: the 1985 section is new content in an existing course, so the course
+//  has to be re-seeded for it to appear, and `pnpm gen:citations` re-run afterwards because the
+//  citation list is extracted from the DATABASE and not from this file. No migration is involved.
+//
 //  CITATIONS: add `what-the-citation-records` to STAGED_COURSES in src/lib/citations.ts and run
 //  `pnpm gen:citations` once it is seeded. Every teaching lesson carries an APA 7 `## Sources`
 //  block, so `pnpm check:citations` should find a non-zero count.
@@ -4571,14 +6285,21 @@ Whipple, G. H. (1934). *Hemoglobin regeneration as influenced by diet and other 
 //  rule it should be MAPPED in src/lib/standards/ rather than BACKLOGged. Until it is mapped it
 //  needs a BACKLOG line in scripts/check-standards-coverage.ts.
 //
-//  SPEC: `npx tsx scripts/audit-course.ts what-the-citation-records --spec` cannot see the slug
-//  until it is registered, so the targets were computed by hand here. Section body word counts and
-//  their `round(words / 35)` targets are: Opening 2004 words, target 57, pool 53; 1934 2535 words,
-//  target 72, pool 66; 1978 2594 words, target 74, pool 68; Closing 2206 words, target 63, pool 58.
-//  Every section pool clears the 90 percent tolerance, every section serves 5 at a passing score of
-//  80, and the final pools 41 and serves 10.
+//  SPEC, as `npx tsx scripts/audit-course.ts what-the-citation-records --spec` reports it after the
+//  1985 edit (the slug is registered now, so the audit can see it and these are its numbers, not
+//  hand arithmetic). Section body word counts and their `round(words / 35)` targets: Opening 2200
+//  words, target 63, pool 58; 1934 2535 words, target 72, pool 66; 1978 2594 words, target 74, pool
+//  68; 1985 3083 words, target 88, pool 84; Closing 2522 words, target 72, pool 66. Every section
+//  pool clears the 90 percent tolerance, every section serves 5 at a passing score of 80, every
+//  teaching lesson is assessed inside its own section, and the final pools 52 and serves 10. The
+//  Opening and Closing pools grew with their word counts in the same edit, by ADDING questions
+//  about the third case; no existing question was touched.
 //
-//  EXTENDING IT: a third or fourth case (Isabella Karle 1985, Marthe Gautier 1959 to 2014, both on
-//  hold in plans/88) is added as a new section keyed by its year, spliced into the lessons array at
-//  its chronological position, with its own quiz slug of the form `quiz-<year>`. Nothing existing
-//  is renumbered, and the closing section's own lessons and quiz do not move.
+//  EXTENDING IT AGAIN: a fourth case (Marthe Gautier, 1959 to 2014, still on hold in plans/88) is
+//  added as a new section keyed by its year, spliced into the lessons array at its chronological
+//  position, with its own quiz slug of the form `quiz-<year>`. That is exactly how the 1985 section
+//  went in on 2026-09-20, and it cost nothing existing: no renumbering, no slug change, and the
+//  closing section's own lessons and quiz did not move. Budget for the same two follow-ons it did
+//  need, because they are structural rather than optional: the Opening and Closing lesson bodies
+//  count the cases and have to be corrected, and their quiz pools then have to grow to match the
+//  words those lessons carry.
