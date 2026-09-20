@@ -5160,6 +5160,545 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The ENIAC Programmers Project site",
     ],
   },
+  // ── how-the-trades-work (journeyman orientation), filed 2026-09-20 with the course ──
+  {
+    key: "trades-indiana-nec-edition",
+    title: "Which electrical code edition does Indiana actually enforce now?",
+    course: "how-the-trades-work",
+    lesson: "open-book-and-the-wrong-edition",
+    quote:
+      "One commercial site seen on 20 September 2026 described a pending Indiana adoption of a newer electrical edition; it was not on the Commission's own currently-in-effect table, so this course does not treat it as a fact.",
+    severity: "high",
+    claim:
+      "The lesson teaches that the state rule adopts the 2008 edition, effective 26 August 2009, listed as currently in effect when read on 2026-09-20. One commercial site described a pending adoption of a newer edition; it was not on the commission's own currently-in-effect table, so the course does not treat it as a fact.",
+    question:
+      "Which edition of the electrical code is currently adopted in Indiana, and has a newer one been adopted since 2026-09-20?",
+    stakes:
+      "The single most load-bearing fact in section 7. If a newer edition is adopted, the lesson flips and a learner following it buys the wrong book for an open-book examination.",
+    needs: [
+      "The commission's currently-in-effect rules table, re-read, with the date",
+    ],
+    where: [
+      "The Indiana fire prevention and building safety commission's rules pages",
+    ],
+  },
+  {
+    key: "trades-eti-wage-and-hours",
+    title: "One sponsor's published wages and hours, which will move",
+    course: "how-the-trades-work",
+    lesson: "what-it-pays-and-what-it-costs",
+    quote:
+      "Those are one sponsor's published figures for one trade in one city on one date.",
+    severity: "medium",
+    claim:
+      "An Indianapolis electrical apprenticeship sponsor publishes an apprentice starting wage, a completion minimum, 720 classroom hours and 8,000 on-the-job hours over five terms, and an associate degree at no cost beyond book fees. All read 2026-09-20 and printed with that date.",
+    question:
+      "What are the sponsor's current published wage and hour figures?",
+    stakes:
+      "These are a sponsor's own pages, accurate on the day and certain to move. A stale wage figure in a careers course is exactly the number a learner plans around.",
+    needs: [
+      "The current published figures, re-read, with the date",
+    ],
+    where: [
+      "The Indianapolis electrical training sponsor's apprenticeship pages",
+    ],
+  },
+  {
+    key: "trades-indy-electrical-application-currency",
+    title: "Is the city's electrical licence application current?",
+    course: "how-the-trades-work",
+    lesson: "no-state-electrical-licence",
+    quote:
+      "It also contains a board meeting calendar that ends in 2024.",
+    severity: "medium",
+    claim:
+      "The board's application states that no state electrical licence exists, and sets out the experience requirement, references, a board appearance, and an examination at a 75 percent minimum. The course teaches the ordinance as current and the form as possibly behind it.",
+    question:
+      "What is the current application form, its date, its fees, and the examination vendor?",
+    stakes:
+      "The ordinance is current; the form may not be. Its own meeting calendar ends in 2024, which is the tell the lesson teaches.",
+    needs: [
+      "The current application form, its date, and the examination vendor",
+    ],
+    where: [
+      "The Indianapolis board of electrical examiners, via the city's business and neighborhood services department",
+    ],
+  },
+  {
+    key: "trades-marion-county-exam-bulletin",
+    title: "The county examination bulletin is four years old",
+    course: "how-the-trades-work",
+    lesson: "open-book-and-the-wrong-edition",
+    quote:
+      "from that bulletin dated 1 March 2022",
+    severity: "medium",
+    claim:
+      "The examination fee, question counts, time limits, trade list and the open-book reference rules come from a candidate bulletin dated 1 March 2022, printed with that date.",
+    question:
+      "What does the current candidate information bulletin say, and when was it issued?",
+    stakes:
+      "The open-book reference rules are the most operationally useful content in section 7 and the most likely to have been revised.",
+    needs: [
+      "The current candidate information bulletin and its date",
+    ],
+    where: [
+      "The examination vendor's Indiana candidate information bulletins",
+    ],
+  },
+  {
+    key: "trades-local-pre-apprenticeship-details",
+    title: "The local pre-apprenticeship programme's own details",
+    course: "how-the-trades-work",
+    lesson: "college-pre-apprenticeship-and-readiness",
+    severity: "low",
+    claim:
+      "The course prints NOTHING specific about the pre-apprenticeship programme BAM is in, because the event page returned 404 and the details were only reported. It teaches the federal definition and the quality-element questions instead.",
+    question:
+      "What are the programme's actual hours, length, credentials awarded, and does it hold a pre-apprenticeship designation?",
+    stakes:
+      "BAM is the primary source here, which is why nothing was printed from a secondary one.",
+    needs: [
+      "The programme's own description of its hours, length and credentials",
+    ],
+    where: [
+      "BAM himself",
+      "The John Boner Neighborhood Centers construction training programme",
+    ],
+  },
+  {
+    key: "trades-indiana-exam-vendors",
+    title: "Which vendors administer which Indiana examinations?",
+    course: "how-the-trades-work",
+    lesson: "open-book-and-the-wrong-edition",
+    severity: "low",
+    claim:
+      "The course names only the two vendors it verified and does not assert a third that appeared in search results only.",
+    question:
+      "Which examination vendors administer which trade examinations in Indiana and Marion County?",
+    stakes:
+      "Low. A learner is sent to the authority, which names its own vendor.",
+    needs: [
+      "The authorities' own vendor statements",
+    ],
+    where: [
+      "The city board and the state commission's examination pages",
+    ],
+  },
+  {
+    key: "trades-national-union-programme-structures",
+    title: "National union programme hours, which were not verified",
+    course: "how-the-trades-work",
+    lesson: "the-pipelines",
+    severity: "low",
+    claim:
+      "National figures for the electrical, plumbing and carpentry programmes were UNVERIFIED (pages 404 or local-only), so nothing national is printed. One Indianapolis sponsor's figures are used and labelled as one sponsor's.",
+    question:
+      "What are the national programme structures and hour requirements for the main trade unions?",
+    stakes:
+      "Low, and the course is honest about the gap. National figures would let section 5 compare pipelines rather than describe one.",
+    needs: [
+      "Published national programme standards, with their dates",
+    ],
+    where: [
+      "The national joint apprenticeship bodies for each trade",
+    ],
+  },
+  {
+    key: "trades-ivy-tech-construction-skills-url",
+    title: "A citation that points at a site root",
+    course: "how-the-trades-work",
+    lesson: "college-pre-apprenticeship-and-readiness",
+    severity: "low",
+    claim:
+      "A one-semester community college construction skills programme is described from research notes that recorded the content but not the canonical page, so the reference points at the site root rather than the page.",
+    question:
+      "What is the canonical page for that programme, and do its details still match?",
+    stakes:
+      "An APA entry a reader cannot follow to the page is a weak citation, and this course teaches citation discipline.",
+    needs: [
+      "The canonical programme page URL, and its current details",
+    ],
+    where: [
+      "The college's construction skills programme pages",
+    ],
+  },
+  // ── read-the-plan-and-the-code (H00), filed 2026-09-20 with the course ──
+  {
+    key: "indiana-residential-code-current-edition",
+    title: "Is Indiana's residential adoption rule still current?",
+    course: "read-the-plan-and-the-code",
+    lesson: "the-edition-year-is-not-this-year",
+    quote:
+      "The state's own register returned an empty document on 2026-09-20, so this was read on a mirror.",
+    severity: "high",
+    claim:
+      "The course teaches, verified 2026-09-20 on a university mirror of the administrative code, that the state rule adopts the 2018 residential code, first printing, and names the result the 2020 Indiana Residential Code. A reported 2025 readoption review of that article could not be confirmed, because the state's own register is a client-rendered application that returned an empty document on four attempts.",
+    question:
+      "Is that rule still the current one, and what became of the readoption review?",
+    stakes:
+      "The whole course teaches a learner to read the adoption rule for their own address. Its own worked example must not be stale, and this is the example.",
+    needs: [
+      "The rule as the state's own register publishes it, with the date read",
+      "The disposition of the readoption review",
+    ],
+    where: [
+      "The Indiana administrative code on the state register",
+      "The fire prevention and building safety commission",
+    ],
+  },
+  {
+    key: "indiana-electrical-code-1-9",
+    title: "Does a newer Indiana electrical adoption rule exist?",
+    course: "read-the-plan-and-the-code",
+    lesson: "the-edition-year-is-not-this-year",
+    severity: "high",
+    claim:
+      "The course teaches that the newest unrepealed electrical rule adopts the 2008 edition, first printing. Search summaries described a newer rule adopting the 2023 edition as a 2026 Indiana Electrical Code; it could not be confirmed on the state's own register, so the course reports it as reported and makes the lag itself the teaching point.",
+    question:
+      "Does a newer electrical adoption rule exist, and which edition does it adopt?",
+    stakes:
+      "This is the course's sharpest example: the title year and the adopted edition year are different numbers, and neither is this year. If a newer rule exists, the example changes and a learner buys the wrong book.",
+    needs: [
+      "The current electrical adoption rule from the state's own register, with the date read",
+    ],
+    where: [
+      "The Indiana administrative code, article 17",
+      "The fire prevention and building safety commission",
+    ],
+  },
+  {
+    key: "icc-nfpa-free-access-terms",
+    title: "What do the publishers' free-access offerings actually permit?",
+    course: "read-the-plan-and-the-code",
+    lesson: "what-a-code-is-and-who-made-it-law",
+    quote:
+      "Every publisher URL failed on 2026-09-20.",
+    severity: "medium",
+    claim:
+      "The course describes no publisher's free-access terms, because every publisher URL failed on 2026-09-20 (403, 404 or DNS). It tells the learner to read the terms they actually see and treat the course's paragraph as a lead.",
+    question:
+      "What do the two main model-code publishers' free-access offerings permit, in their own words?",
+    stakes:
+      "It decides how much of a code a learner may read without paying, which is the practical question behind the whole course.",
+    needs: [
+      "The terms as published, read from an account",
+    ],
+    where: [
+      "The model code publishers' free-access pages, which need an account BAM would have to create",
+    ],
+  },
+  {
+    key: "adoption-rule-availability-by-state",
+    title: "Do all states publish their adoption rule free?",
+    course: "read-the-plan-and-the-code",
+    lesson: "find-your-own-address",
+    quote:
+      "Only one state's rule was ever read.",
+    severity: "medium",
+    claim:
+      "The course says outright that only one state's adoption rule was ever read, and on a mirror at that. It does not claim the method works everywhere.",
+    question:
+      "Do all fifty states publish their code adoption free and online, and where does the method break?",
+    stakes:
+      "The course's closing exercise sends a learner to their own state. If some states hide the adoption behind a paywall, the exercise needs a fallback.",
+    needs: [
+      "A survey of how several states publish their adoption, with URLs",
+    ],
+    where: [
+      "State administrative codes and building commissions",
+    ],
+  },
+  {
+    key: "inspection-sequence-outside-one-county",
+    title: "Is the inspection sequence the same elsewhere?",
+    course: "read-the-plan-and-the-code",
+    lesson: "the-permit-and-the-inspection-sequence",
+    severity: "low",
+    claim:
+      "The inspection sequence is taught from one county's published list, named as one county's.",
+    question:
+      "How much does the published inspection sequence vary between jurisdictions, and what does an Indiana one look like?",
+    stakes:
+      "Low. The lesson already attributes it. Two or three more lists would let it teach the shape rather than one example.",
+    needs: [
+      "Two or three more published inspection lists, ideally one in Indiana",
+    ],
+    where: [
+      "County and city building department pages",
+    ],
+  },
+  // ── keeping-a-house (H02), filed 2026-09-20 with the course ──
+  {
+    key: "kah-epa-firm-locator-url",
+    title: "Is the certified-firm lookup URL the right one?",
+    course: "keeping-a-house",
+    lesson: "where-to-stop",
+    severity: "medium",
+    claim:
+      "The course prints the lookup address that appeared on the federal page it actually fetched. Two other candidate addresses surfaced in search.",
+    question:
+      "What is the authoritative address for finding a certified firm, as the agency itself publishes it?",
+    stakes:
+      "It is the ONE lookup the course tells a learner to run. An address that has moved sends someone to nothing, or worse, to a lookalike.",
+    needs: [
+      "The agency's own current link to its certified-firm locator",
+    ],
+    where: [
+      "The federal lead programme pages",
+    ],
+  },
+  {
+    key: "kah-radon-chart-vintage",
+    title: "How old is the radon risk chart?",
+    course: "keeping-a-house",
+    lesson: "radon-the-number",
+    severity: "medium",
+    claim:
+      "The risk comparison prints its figures with their denominators and their source years. The document's cover date and the publications list disagree about when it was issued, and the chart's underlying data is older than both.",
+    question:
+      "What is the current edition of that guide, and are the comparison figures still the agency's?",
+    stakes:
+      "A risk chart is the most quotable thing in the course, and stale comparison deaths would be quoted onward.",
+    needs: [
+      "The current edition and its date",
+      "Whether the comparison figures have been updated",
+    ],
+    where: [
+      "The federal radon publications list",
+    ],
+  },
+  {
+    key: "kah-state-licensing-and-adoption",
+    title: "Only one state's rule was read",
+    course: "keeping-a-house",
+    lesson: "where-to-stop",
+    severity: "medium",
+    claim:
+      "The course states, in its own text, that only one state's adoption rule was read, and it names no trade as licensed in any named place.",
+    question:
+      "How do licensing and permit thresholds differ by state for the work this course sends people away from?",
+    stakes:
+      "The course's whole decision rule is what an amateur may do, and that line is drawn by a state and a city, not federally.",
+    needs: [
+      "Several states' licensing and permit rules, with sources",
+    ],
+    where: [
+      "State licensing boards and city building departments",
+    ],
+  },
+  {
+    key: "kah-asbestos-use-dates",
+    title: "No asbestos date range is printed",
+    course: "keeping-a-house",
+    lesson: "before-1978",
+    severity: "medium",
+    claim:
+      "No federal date range for asbestos use was verified, so the course gives NONE and teaches condition rather than vintage.",
+    question:
+      "What date range does the federal record support for asbestos in home building materials?",
+    stakes:
+      "A vintage rule of thumb is what people actually use. Teaching condition instead is safer but leaves a question every learner asks.",
+    needs: [
+      "A federal source stating the period",
+    ],
+    where: [
+      "The federal asbestos programme pages",
+    ],
+  },
+  {
+    key: "kah-hud-rehab-guide",
+    title: "A federal rehabilitation guide that would not load",
+    course: "keeping-a-house",
+    lesson: "what-this-course-refuses",
+    severity: "low",
+    claim:
+      "Nine volumes of a federal rehabilitation guide are REPORTED and nothing in the course cites them: the index and all four volume PDFs returned an empty body.",
+    question:
+      "Are those volumes still published, and what do they cover?",
+    stakes:
+      "Low. They would strengthen the decisions half if they exist in a readable form.",
+    needs: [
+      "The volumes themselves, or confirmation that they are withdrawn",
+    ],
+    where: [
+      "The federal housing research publication library",
+    ],
+  },
+  {
+    key: "kah-healthy-housing-manual",
+    title: "A public-domain manual whose PDF refused",
+    course: "keeping-a-house",
+    lesson: "what-fails-and-the-early-signs",
+    severity: "low",
+    claim:
+      "A public-domain federal healthy-housing manual was confirmed by catalogue record but its PDF returned 403, so no content from it is cited.",
+    question:
+      "What does that manual contain that this course should carry?",
+    stakes:
+      "Low, and the course stands without it.",
+    needs: [
+      "A readable copy of the manual",
+    ],
+    where: [
+      "The federal health agency's publication catalogue",
+    ],
+  },
+  {
+    key: "kah-cpsc-5098-date",
+    title: "A publication cited with no date",
+    course: "keeping-a-house",
+    lesson: "water-is-the-master-variable",
+    severity: "low",
+    claim:
+      "One federal leaflet is cited as undated, because the number in its footer is a printing code rather than a stated date.",
+    question:
+      "What is the publication date of that leaflet?",
+    stakes:
+      "Low, and the citation is honest as it stands.",
+    needs: [
+      "The publication date as the agency states it",
+    ],
+    where: [
+      "The federal consumer safety publications list",
+    ],
+  },
+  {
+    key: "kah-745-86-recordkeeping",
+    title: "A recordkeeping rule cited only through a cross-reference",
+    course: "keeping-a-house",
+    lesson: "where-to-stop",
+    severity: "low",
+    claim:
+      "The recordkeeping requirement is reached only through another section's cross-reference; its own text was not read, so no retention period is stated.",
+    question:
+      "What does that recordkeeping section require, and for how long?",
+    stakes:
+      "Low. The course tells a learner to ask for records, not how long a firm must keep them.",
+    needs: [
+      "The text of that section",
+    ],
+    where: [
+      "The Code of Federal Regulations",
+    ],
+  },
+  // ── how-a-house-stands-up (H01), filed 2026-09-20 with the course ──
+  {
+    key: "house-plate-bearing-inference",
+    title: "An inference the course labels as its own",
+    course: "how-a-house-stands-up",
+    lesson: "wood-and-why-it-moves",
+    severity: "medium",
+    claim:
+      "One lesson reads a stud as bearing along the grain and its plate as bearing across it, drawn from the federal wood handbook's measured properties rather than stated by any source. The lesson says in its own text that this reading is the course's.",
+    question:
+      "Does a published source state the grain orientation of a stud against its plate in these terms?",
+    stakes:
+      "It is the only inference in the course, and it is labelled. If a source states it, the label comes off; if a source contradicts it, the lesson changes.",
+    needs: [
+      "A published statement of the load direction relative to grain for studs and plates",
+    ],
+    where: [
+      "The Forest Products Laboratory wood handbook",
+      "The Navy builder manuals",
+    ],
+  },
+  {
+    key: "house-navedtra-third-party-figures",
+    title: "May the manuals' figures be reproduced?",
+    course: "how-a-house-stands-up",
+    lesson: "the-load-path-roof-to-soil",
+    severity: "medium",
+    claim:
+      "No figure from any source is reproduced or described in detail, because the manuals carry a distribution statement permitting release but their pages may contain approved copyrighted material. The course teaches in prose instead.",
+    question:
+      "Do the manuals contain third-party copyrighted figures, and does the distribution statement cover reproducing them?",
+    stakes:
+      "It decides whether the course can show a drawing, which is what a structure course most wants, and whether the PDFs can be hosted under the new source-hosting rule.",
+    needs: [
+      "The manuals' own statement about copyrighted material within them",
+    ],
+    where: [
+      "The issuing command's publication office",
+      "The manuals' front matter",
+    ],
+  },
+  {
+    key: "house-navedtra-official-host",
+    title: "The manuals were read on third-party hosts",
+    course: "how-a-house-stands-up",
+    lesson: "the-load-path-roof-to-soil",
+    severity: "low",
+    claim:
+      "Both Navy manuals were fetched from third-party mirrors rather than an official host, and the citation says so.",
+    question:
+      "Where does the issuing command publish these manuals now?",
+    stakes:
+      "Low for the content, which carries a distribution statement, but a citation should point at the publisher.",
+    needs: [
+      "The official current location of each manual",
+    ],
+    where: [
+      "The Navy's training publication catalogue",
+    ],
+  },
+  {
+    key: "house-apa-and-bia-reuse-terms",
+    title: "Two trade bodies' documents, unused",
+    course: "how-a-house-stands-up",
+    lesson: "the-layers-on-the-outside",
+    severity: "low",
+    claim:
+      "Two industry technical libraries were not cited, quoted or linked anywhere, because their reuse terms were never established. Brick veneer is taught only from federal sources.",
+    question:
+      "What do those trade bodies permit for their technical documents?",
+    stakes:
+      "Low. They would strengthen the cladding section, which currently rests on one manual and one federal guide.",
+    needs: [
+      "The reuse terms of each body's technical library",
+    ],
+    where: [
+      "The wood panel association",
+      "The brick industry association",
+    ],
+  },
+  {
+    key: "house-fema-p-2178",
+    title: "A federal guide named in the brief but never fetched",
+    course: "how-a-house-stands-up",
+    lesson: "connections-and-what-weather-finds",
+    severity: "low",
+    claim:
+      "A federal publication named in the brief as the source for the connections section was never fetched, so nothing rests on it and it is not cited. That section stands on a federal continuous-load-path guide and a federal code part instead.",
+    question:
+      "What does that publication say about connections and load paths in high-wind areas?",
+    stakes:
+      "Low, and the section stands without it.",
+    needs: [
+      "The publication itself",
+    ],
+    where: [
+      "The federal emergency management agency's library",
+    ],
+  },
+  {
+    key: "house-indiana-under-floor-and-ventilation-minimums",
+    title: "Dimensional minimums the course refuses to print",
+    course: "how-a-house-stands-up",
+    lesson: "ground-footing-foundation-and-floor",
+    severity: "low",
+    claim:
+      "The course prints no crawl-space clearance, no attic ventilation fraction and no drainage-gap dimension, teaching the shape of each rule and sending the learner to the adoption rule instead. This check probably belongs to read-the-plan-and-the-code.",
+    question:
+      "What do those minimums say in a named jurisdiction's adopted code?",
+    stakes:
+      "Low by design: the refusal is the course's safety rule, not a gap.",
+    needs: [
+      "The relevant sections of a named jurisdiction's adopted residential code",
+    ],
+    where: [
+      "The adopted code for the learner's own jurisdiction",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

@@ -31,6 +31,10 @@ import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
 import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
 import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
 import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
+import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
+import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
+import { KEEPING_A_HOUSE_COURSE } from "./data/keeping-a-house-course";
+import { HOW_A_HOUSE_STANDS_UP_COURSE } from "./data/how-a-house-stands-up-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -563,6 +567,108 @@ async function main() {
     seriesSlug: "credit",
     seriesTitle: "Credit: Who Gets Named",
     seriesOrder: 12,
+  });
+
+  // "How the Trades Work" (the journeyman orientation). PRIVATE study, by BAM's choice of option B
+  // on 2026-09-20 from plans/future-courses/construction/2026-09-20-journeyman-curriculum-research.md.
+  // The spine is that the freely available information about entering a trade is WRONG, including
+  // about BAM's own city: Indianapolis licenses master and residential electricians and no
+  // journeyman at all, while Indiana does license a journeyman plumber. Commercial guides assert a
+  // Marion County journeyman exam with two contradictory hour figures for a licence that does not
+  // exist, and the course uses that as its worked wrong answer, attributed and never asserted.
+  // It grants no hours, no credit, no credential and no licence, and says so in lessons 1 and 16.
+  // Category is Careers & Media, NOT "Trade Skills": it teaches no trade skill, and a learner
+  // browsing for hands-on training there would be misdirected. NO series code. NO migration.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-the-trades-work",
+    course: HOW_THE_TRADES_WORK_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Money & Property"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM. Every fee, hour, wage, code edition and examination figure was read on 2026-09-20 and prints that date, and several sit on sponsor and vendor pages that will move. Held private until those research checks are answered and the Indiana worked example has been re-checked against the ordinance and the state agencies.",
+  });
+
+  // "Reading the Plan and the Code" (H00 of the series "The House You Live In"). PRIVATE study by
+  // BAM's decision of 2026-09-20. Built from two PUBLIC-RELEASE Navy manuals and from state adoption
+  // rules, and it reprints no model code text: the model codes are closed, so the course teaches a
+  // learner to read their own jurisdiction's ADOPTION RULE, which is free and official. Nothing in
+  // it derives from the books in content/construction/. It answers the hedge construction-math
+  // shipped with, quoting that lesson's deferral sentence and mapping the course onto it.
+  // Series slug but NO series code, per the 2026-09-19 rule. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "read-the-plan-and-the-code",
+    course: READ_THE_PLAN_AND_THE_CODE_COURSE,
+    category: "Science & Math",
+    additionalCategories: ["Money & Property", "Careers & Media"],
+    seriesSlug: "the-house-you-live-in",
+    seriesTitle: "The House You Live In",
+    seriesOrder: 1,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Held private while BAM decides whether the construction series goes public. It reads drawings from two public-release Navy manuals and codes from public adoption rules, reprints no model code text, and states no adoption it could not verify on 2026-09-20.",
+  });
+
+  // "Keeping a House" (H02 of "The House You Live In"). PRIVATE, 2026-09-20. THE SCOPE IS THE POINT:
+  // no public source carries step-by-step domestic repair procedure, so this course is HAZARDS,
+  // CHECKS AND DECISIONS, not how-to, and lesson 1 says so in the course's own voice. Built only
+  // from federal sources (EPA, CPSC, USFA, DOE and the CFR) plus one state adoption rule; nothing
+  // derives from the books in content/construction/. Tier 2, because the subject can kill someone:
+  // it teaches no method for disturbing lead paint, no asbestos handling, no gas work and no
+  // service-panel work, and lesson 19 exists so "I ran the checklist" is never mistaken for "the
+  // house was inspected". NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "keeping-a-house",
+    course: KEEPING_A_HOUSE_COURSE,
+    category: "Money & Property",
+    additionalCategories: ["Science & Math", "Civics"],
+    seriesSlug: "the-house-you-live-in",
+    seriesTitle: "The House You Live In",
+    seriesOrder: 3,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Held private until vetted. A hazards, checks and decisions course on lead, asbestos, radon, carbon monoxide and moisture, built only from EPA, CPSC, USFA, DOE and CFR sources. It teaches no repair procedure and confers no credential, and its open source checks are filed in research-checks.",
+  });
+
+  // "How a House Stands Up" (H01 of "The House You Live In"). PRIVATE, 2026-09-20. Knowledge, not
+  // skill, and the refusal is the design: NO span, header size, beam size, fastener schedule or
+  // footing dimension anywhere, because a wrong number here can put a wall on somebody. Where a
+  // figure would be the answer, it teaches the SHAPE of the rule and sends the learner to
+  // read-the-plan-and-the-code. Built from public-domain federal sources (the Navy builder manuals,
+  // the Forest Products Laboratory wood handbook, 24 CFR 3280, whose manufactured-home scope is
+  // restated at every citation); nothing derives from the books in content/construction/, which
+  // lesson 3 names once as BAM's own reading. NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-a-house-stands-up",
+    course: HOW_A_HOUSE_STANDS_UP_COURSE,
+    category: "Science & Math",
+    additionalCategories: ["Money & Property", "Careers & Media"],
+    seriesSlug: "the-house-you-live-in",
+    seriesTitle: "The House You Live In",
+    seriesOrder: 2,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study. Structure is a subject where a wrong sentence can put a wall on somebody, so this is held while a reader with building experience checks it. It teaches knowledge and not skill, gives no span, header size, beam size or fastener schedule, implies no credential, approves no permit, inspects nothing, and substitutes for no trade program.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

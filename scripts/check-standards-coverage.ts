@@ -171,6 +171,14 @@ const BACKLOG: Record<string, string> = {
     "PRIVATE study, no series code. A primary-source history course on a registration record and a statute (reading a document, corroboration, what a record does and does not settle), so a real candidate for US-history and ELA standards; mapped at the public flip rather than claimed for a course no educator can see.",
   "who-were-the-computers":
     "PRIVATE study, no series code. Source criticism end to end (attribution versus assertion, caption reading, an absence test, a date that does not check out), so a strong candidate for ELA and US-history standards; mapped at the public flip rather than claimed for a course no educator can see.",
+  "how-the-trades-work":
+    "PRIVATE study, no series code. Career pathways and credentials, reading a federal regulation and a local ordinance against each other: a genuine CTE and civics candidate, to be MAPPED at the public flip rather than claimed now. Do not widen an existing claim to fit it.",
+  "read-the-plan-and-the-code":
+    "PRIVATE study, no series code. Reading a technical drawing, a specification and an administrative rule, plus scale and dimension arithmetic: a real candidate for CTE, mathematics and civics standards, to be MAPPED at the public flip rather than claimed now.",
+  "keeping-a-house":
+    "PRIVATE until vetted, no series code. Reading federal hazard guidance and a regulation, risk comparison with stated denominators, and deciding when an amateur must stop: a real candidate for science, health and civics standards, to be MAPPED at the public flip rather than claimed now.",
+  "how-a-house-stands-up":
+    "PRIVATE, no series code. MAPPING PENDING, not a permanent excuse: load paths, material properties and reading a wall section are physics and technical reading, so it belongs in src/lib/standards/ once someone with building experience has checked the course.",
   "construction-safety":
     "PRIVATE study support, not published. Built from 29 CFR 1926 rather than a curriculum, and held for BAM alone while he takes a construction course elsewhere. No educator can see it, so there is nobody to make a standards promise to.",
   "construction-math":
