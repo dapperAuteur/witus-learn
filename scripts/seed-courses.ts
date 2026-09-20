@@ -25,6 +25,7 @@ import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
 import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
+import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-prize-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -423,6 +424,24 @@ async function main() {
     // all". A code is a promise to a learner about where to start, and a private course is not in
     // the series a learner can see, so a code would leave a visible gap in the numbering. It keeps
     // its series SLUG, which is how the owner finds it. Give it a code at the public flip, if ever.
+  });
+
+  // "The Partner and the Prize" (Denise Scott Brown). PRIVATE study, plans/83 E-23, by BAM's
+  // approval of plans/future-courses/uncredited/2026-09-18-denise-scott-brown-brief.md on
+  // 2026-09-19. Built STANDALONE rather than as a section of the three-case cluster the brief
+  // proposed, because BAM approved only her of that three, and NOT inside public
+  // `the-name-on-the-door`, because he did not lift the private-only rule. NO series code, per the
+  // same day's decision. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-partner-and-the-prize",
+    course: THE_PARTNER_AND_THE_PRIZE_COURSE,
+    category: "Culture & History",
+    navigationMode: "linear",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from public institutional records: the Pritzker Architecture Prize's own 1991 laureate page, jury citation and laureate list, the 2013 jury letter as reproduced by ArchDaily, the author's own published essay, and the AIA's Gold Medal rule.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

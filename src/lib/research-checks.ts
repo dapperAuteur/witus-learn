@@ -4264,6 +4264,105 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The appellate record in the Greensboro Six case, if the sentences were reviewed",
     ],
   },
+  // ── the-partner-and-the-prize (Denise Scott Brown), filed 2026-09-20 with the course ──
+  {
+    key: "dsb-pritzker-purpose-1991",
+    title: "What did the Pritzker's stated purpose say in 1991?",
+    course: "the-partner-and-the-prize",
+    lesson: "what-a-prize-names",
+    quote:
+      "This course quotes the wording as it stands today and does not claim it is the wording that was in force in 1991, because it did not read the 1991 text.",
+    severity: "medium",
+    claim:
+      "Lessons 3 and 13 quote the CURRENT purpose wording, \"To honor a living architect or architects whose built work demonstrates...\", labelled as current, and use the plural as evidence that the format permits more than one name.",
+    question:
+      "What was the verbatim wording of the prize's purpose statement in force in 1991, and did it then read \"architect or architects\"?",
+    stakes:
+      "The most load-bearing hedge in the course. Section 4 argues the 1991 refusal was not a format problem. If the 1991 wording was singular, that argument weakens and lesson 13 needs rewriting; if it was already plural, the hedge can go.",
+    needs: ["The verbatim purpose sentence as published in or before 1991, with its source and date"],
+    where: [
+      "The Hyatt Foundation's printed materials for 1991",
+      "An archived capture of pritzkerprize.com from the early web",
+      "The prize's published monographs and annual ceremony programmes",
+    ],
+  },
+  {
+    key: "dsb-pritzker-since-2013",
+    title: "Has any Pritzker jury since 2013 acted on the eligibility the letter affirms?",
+    course: "the-partner-and-the-prize",
+    lesson: "total-body-of-built-work",
+    quote:
+      "It did not check the years after 2013 for that purpose, and rather than guess, it files the question as an open one.",
+    severity: "medium",
+    claim:
+      "Lesson 15 states the 2013 letter's offer of continued eligibility and says plainly that this course does not know what became of it.",
+    question: "Has any Pritzker jury since 2013 awarded the prize to a partnership in a way that acts on that eligibility?",
+    stakes: "A learner will ask. Leaving it open is honest; leaving it open forever is a gap.",
+    needs: ["The laureate list read year by year from 2013 forward, with the answer stated either way"],
+    where: ["pritzkerprize.com/laureates"],
+  },
+  {
+    key: "dsb-vsba-firm-name-years",
+    title: "In what years did the firm's name change?",
+    course: "the-partner-and-the-prize",
+    lesson: "three-words-for-one-person",
+    quote:
+      "This course does not print the years in which the firm's name changed, because the archive page that would settle them could not be opened.",
+    severity: "low",
+    claim:
+      "The course says only that the name changed over time, and that The Cultural Landscape Foundation records the practice as formerly known as Venturi, Rauch and Scott Brown.",
+    question: "In what years did the practice become Venturi, Rauch and Scott Brown, and then Venturi, Scott Brown and Associates?",
+    stakes: "Low. Nothing in the argument depends on the dates; they would sharpen lesson 2.",
+    needs: ["The two dates, from a record rather than a search summary"],
+    where: [
+      "The Architectural Archives of the University of Pennsylvania (the page returned 403 on 2026-09-18)",
+      "The firm's own published chronology",
+    ],
+  },
+  {
+    key: "dsb-petition-laureate-signatories",
+    title: "How many Pritzker laureates signed the 2013 petition?",
+    course: "the-partner-and-the-prize",
+    lesson: "the-2013-petition",
+    quote: "A larger figure for laureate signatories circulates in search results; this course prints only the five it read, as of that April date.",
+    severity: "low",
+    claim:
+      "Lesson 9 prints the five laureates Architectural Record named on 9 April 2013 and attaches that date to the figure.",
+    question: "How many Pritzker laureates ultimately signed the 2013 petition, and who were they?",
+    stakes: "Low, but it is the kind of number that gets repeated. A larger count seen only in a search snippet must not enter the lesson.",
+    needs: ["A dated source naming each laureate signatory"],
+    where: ["The petition's own signatory list", "Architectural Record's later coverage", "Architects' Journal coverage of the campaign"],
+  },
+  {
+    key: "dsb-room-at-the-top-printed-text",
+    title: "The \"nook\" garble in the reprint of \"Room at the Top?\"",
+    course: "the-partner-and-the-prize",
+    lesson: "the-information-sheet",
+    quote: "In the reprint read for this course, the sentence continues \"the person who signed the article or the nook\".",
+    severity: "low",
+    claim: "The course quotes up to the unambiguous part, prints the garble openly, and says the word is almost certainly \"book\".",
+    question: "What does the printed text read at that point, in the 1989 Smithsonian Institution Press edition or the 2009 AA Words Four reprint?",
+    stakes: "Low, and the lesson uses the garble deliberately as a fidelity example. Settling it lets the lesson say what the text reads rather than what it probably reads.",
+    needs: ["The sentence as printed, with page number and edition"],
+    where: [
+      "Berkeley and McQuaid (Eds.), Architecture: A Place for Women (1989), pp. 237-246",
+      "AA Words Four: Having Words (2009), pp. 79-89",
+    ],
+  },
+  {
+    key: "dsb-aia-two-person-rule-date",
+    title: "When did the AIA Gold Medal rule change to admit two individuals?",
+    course: "the-partner-and-the-prize",
+    lesson: "a-format-that-holds-two-names",
+    severity: "low",
+    claim:
+      "The course prints the rule and no date for its adoption, matching the treatment in `the-name-on-the-door` lesson 22, because the AIA's page states the rule and not its history.",
+    question: "When was the AIA Gold Medal's eligibility rule changed to admit two individuals?",
+    stakes:
+      "A date would show whether the two-person rule predated or followed the 2016 award, which is the difference between a format that was already open and one that opened.",
+    needs: ["The adoption date, with the AIA document that records it"],
+    where: ["AIA board resolutions", "AIA award programme histories and the institute's archives"],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
