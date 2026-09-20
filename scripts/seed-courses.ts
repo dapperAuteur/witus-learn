@@ -25,6 +25,13 @@ import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
 import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
+import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
+import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
+import { KEEPING_A_HOUSE_COURSE } from "./data/keeping-a-house-course";
+import { HOW_A_HOUSE_STANDS_UP_COURSE } from "./data/how-a-house-stands-up-course";
+import { SOUL_TRAIN_THE_BUSINESS_COURSE } from "./data/soul-train-the-business-course";
+import { WHO_THE_RULE_LEAVES_OUT_COURSE } from "./data/who-the-rule-leaves-out-course";
+import { AUTHOR_LINE_AND_FINDING_COURSE } from "./data/the-author-line-and-the-finding-course";
 import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-prize-course";
 import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
 import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
@@ -563,6 +570,123 @@ async function main() {
     seriesSlug: "credit",
     seriesTitle: "Credit: Who Gets Named",
     seriesOrder: 12,
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-the-trades-work",
+    course: HOW_THE_TRADES_WORK_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Money & Property"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM. Every fee, hour, wage, code edition and examination figure was read on 2026-09-20 and prints that date, and several sit on sponsor and vendor pages that will move. Held private until those research checks are answered and the Indiana worked example has been re-checked against the ordinance and the state agencies.",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "read-the-plan-and-the-code",
+    course: READ_THE_PLAN_AND_THE_CODE_COURSE,
+    category: "Science & Math",
+    additionalCategories: ["Money & Property", "Careers & Media"],
+    seriesSlug: "the-house-you-live-in",
+    seriesTitle: "The House You Live In",
+    seriesOrder: 1,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Held private while BAM decides whether the construction series goes public. It reads drawings from two public-release Navy manuals and codes from public adoption rules, reprints no model code text, and states no adoption it could not verify on 2026-09-20.",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "keeping-a-house",
+    course: KEEPING_A_HOUSE_COURSE,
+    category: "Money & Property",
+    additionalCategories: ["Science & Math", "Civics"],
+    seriesSlug: "the-house-you-live-in",
+    seriesTitle: "The House You Live In",
+    seriesOrder: 3,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Held private until vetted. A hazards, checks and decisions course on lead, asbestos, radon, carbon monoxide and moisture, built only from EPA, CPSC, USFA, DOE and CFR sources. It teaches no repair procedure and confers no credential, and its open source checks are filed in research-checks.",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-a-house-stands-up",
+    course: HOW_A_HOUSE_STANDS_UP_COURSE,
+    category: "Science & Math",
+    additionalCategories: ["Money & Property", "Careers & Media"],
+    seriesSlug: "the-house-you-live-in",
+    seriesTitle: "The House You Live In",
+    seriesOrder: 2,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study. Structure is a subject where a wrong sentence can put a wall on somebody, so this is held while a reader with building experience checks it. It teaches knowledge and not skill, gives no span, header size, beam size or fastener schedule, implies no credential, approves no permit, inspects nothing, and substitutes for no trade program.",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "soul-train-the-business",
+    course: SOUL_TRAIN_THE_BUSINESS_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Culture & History"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private until vetted. A business history built from 1972 to 1974 trade press, a federal appeals court opinion, government and company releases, an open 2024 federal docket and the sponsor's own 2025 memoir. Three things are open and filed as research checks: why the 1973 rival show ended, the discrepancy between the 1977 opinion and the sponsor's account of the same case, and the outcome of the royalty suit, which lesson 22 states is unresolved and which must be re-checked before any public release.",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-the-rule-leaves-out",
+    course: WHO_THE_RULE_LEAVES_OUT_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Careers & Media", "Science & Math", "Money & Property"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 14,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study, held for two reasons. The BBC half rests on an absence: no document stating the credit rule has been read, so the course says what the papers say and never that a written policy existed. And section 4 teaches a Native woman's case written by a non-Native author, so it needs a Native reviewer with the authority to change or cut any of it, matching whose-name-is-on-the-score.",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-author-line-and-the-finding",
+    course: AUTHOR_LINE_AND_FINDING_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Science & Math"],
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). A live credit dispute with a named contesting party, the Fondation Jerome Lejeune, which publishes its own documents. Built from the Inserm ethics committee's 2014 opinion, the Foundation's three published texts, Inserm's own listing page, and the 1959 and 1969 index records. It reaches no verdict, because the documents it could read do not support one, and it says so.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

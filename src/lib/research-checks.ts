@@ -5160,6 +5160,1244 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The ENIAC Programmers Project site",
     ],
   },
+  // ── how-the-trades-work (journeyman orientation), filed 2026-09-20 with the course ──
+  {
+    key: "trades-indiana-nec-edition",
+    title: "Which electrical code edition does Indiana actually enforce now?",
+    course: "how-the-trades-work",
+    lesson: "open-book-and-the-wrong-edition",
+    quote:
+      "One commercial site seen on 20 September 2026 described a pending Indiana adoption of a newer electrical edition; it was not on the Commission's own currently-in-effect table, so this course does not treat it as a fact.",
+    severity: "high",
+    claim:
+      "The lesson teaches that the state rule adopts the 2008 edition, effective 26 August 2009, listed as currently in effect when read on 2026-09-20. One commercial site described a pending adoption of a newer edition; it was not on the commission's own currently-in-effect table, so the course does not treat it as a fact.",
+    question:
+      "Which edition of the electrical code is currently adopted in Indiana, and has a newer one been adopted since 2026-09-20?",
+    stakes:
+      "The single most load-bearing fact in section 7. If a newer edition is adopted, the lesson flips and a learner following it buys the wrong book for an open-book examination.",
+    needs: [
+      "The commission's currently-in-effect rules table, re-read, with the date",
+    ],
+    where: [
+      "The Indiana fire prevention and building safety commission's rules pages",
+    ],
+  },
+  {
+    key: "trades-eti-wage-and-hours",
+    title: "One sponsor's published wages and hours, which will move",
+    course: "how-the-trades-work",
+    lesson: "what-it-pays-and-what-it-costs",
+    quote:
+      "Those are one sponsor's published figures for one trade in one city on one date.",
+    severity: "medium",
+    claim:
+      "An Indianapolis electrical apprenticeship sponsor publishes an apprentice starting wage, a completion minimum, 720 classroom hours and 8,000 on-the-job hours over five terms, and an associate degree at no cost beyond book fees. All read 2026-09-20 and printed with that date.",
+    question:
+      "What are the sponsor's current published wage and hour figures?",
+    stakes:
+      "These are a sponsor's own pages, accurate on the day and certain to move. A stale wage figure in a careers course is exactly the number a learner plans around.",
+    needs: [
+      "The current published figures, re-read, with the date",
+    ],
+    where: [
+      "The Indianapolis electrical training sponsor's apprenticeship pages",
+    ],
+  },
+  {
+    key: "trades-indy-electrical-application-currency",
+    title: "Is the city's electrical licence application current?",
+    course: "how-the-trades-work",
+    lesson: "no-state-electrical-licence",
+    quote:
+      "It also contains a board meeting calendar that ends in 2024.",
+    severity: "medium",
+    claim:
+      "The board's application states that no state electrical licence exists, and sets out the experience requirement, references, a board appearance, and an examination at a 75 percent minimum. The course teaches the ordinance as current and the form as possibly behind it.",
+    question:
+      "What is the current application form, its date, its fees, and the examination vendor?",
+    stakes:
+      "The ordinance is current; the form may not be. Its own meeting calendar ends in 2024, which is the tell the lesson teaches.",
+    needs: [
+      "The current application form, its date, and the examination vendor",
+    ],
+    where: [
+      "The Indianapolis board of electrical examiners, via the city's business and neighborhood services department",
+    ],
+  },
+  {
+    key: "trades-marion-county-exam-bulletin",
+    title: "The county examination bulletin is four years old",
+    course: "how-the-trades-work",
+    lesson: "open-book-and-the-wrong-edition",
+    quote:
+      "from that bulletin dated 1 March 2022",
+    severity: "medium",
+    claim:
+      "The examination fee, question counts, time limits, trade list and the open-book reference rules come from a candidate bulletin dated 1 March 2022, printed with that date.",
+    question:
+      "What does the current candidate information bulletin say, and when was it issued?",
+    stakes:
+      "The open-book reference rules are the most operationally useful content in section 7 and the most likely to have been revised.",
+    needs: [
+      "The current candidate information bulletin and its date",
+    ],
+    where: [
+      "The examination vendor's Indiana candidate information bulletins",
+    ],
+  },
+  {
+    key: "trades-local-pre-apprenticeship-details",
+    title: "The local pre-apprenticeship programme's own details",
+    course: "how-the-trades-work",
+    lesson: "college-pre-apprenticeship-and-readiness",
+    severity: "low",
+    claim:
+      "The course prints NOTHING specific about the pre-apprenticeship programme BAM is in, because the event page returned 404 and the details were only reported. It teaches the federal definition and the quality-element questions instead.",
+    question:
+      "What are the programme's actual hours, length, credentials awarded, and does it hold a pre-apprenticeship designation?",
+    stakes:
+      "BAM is the primary source here, which is why nothing was printed from a secondary one.",
+    needs: [
+      "The programme's own description of its hours, length and credentials",
+    ],
+    where: [
+      "BAM himself",
+      "The John Boner Neighborhood Centers construction training programme",
+    ],
+  },
+  {
+    key: "trades-indiana-exam-vendors",
+    title: "Which vendors administer which Indiana examinations?",
+    course: "how-the-trades-work",
+    lesson: "open-book-and-the-wrong-edition",
+    severity: "low",
+    claim:
+      "The course names only the two vendors it verified and does not assert a third that appeared in search results only.",
+    question:
+      "Which examination vendors administer which trade examinations in Indiana and Marion County?",
+    stakes:
+      "Low. A learner is sent to the authority, which names its own vendor.",
+    needs: [
+      "The authorities' own vendor statements",
+    ],
+    where: [
+      "The city board and the state commission's examination pages",
+    ],
+  },
+  {
+    key: "trades-national-union-programme-structures",
+    title: "National union programme hours, which were not verified",
+    course: "how-the-trades-work",
+    lesson: "the-pipelines",
+    severity: "low",
+    claim:
+      "National figures for the electrical, plumbing and carpentry programmes were UNVERIFIED (pages 404 or local-only), so nothing national is printed. One Indianapolis sponsor's figures are used and labelled as one sponsor's.",
+    question:
+      "What are the national programme structures and hour requirements for the main trade unions?",
+    stakes:
+      "Low, and the course is honest about the gap. National figures would let section 5 compare pipelines rather than describe one.",
+    needs: [
+      "Published national programme standards, with their dates",
+    ],
+    where: [
+      "The national joint apprenticeship bodies for each trade",
+    ],
+  },
+  {
+    key: "trades-ivy-tech-construction-skills-url",
+    title: "A citation that points at a site root",
+    course: "how-the-trades-work",
+    lesson: "college-pre-apprenticeship-and-readiness",
+    severity: "low",
+    claim:
+      "A one-semester community college construction skills programme is described from research notes that recorded the content but not the canonical page, so the reference points at the site root rather than the page.",
+    question:
+      "What is the canonical page for that programme, and do its details still match?",
+    stakes:
+      "An APA entry a reader cannot follow to the page is a weak citation, and this course teaches citation discipline.",
+    needs: [
+      "The canonical programme page URL, and its current details",
+    ],
+    where: [
+      "The college's construction skills programme pages",
+    ],
+  },
+  // ── read-the-plan-and-the-code (H00), filed 2026-09-20 with the course ──
+  {
+    key: "indiana-residential-code-current-edition",
+    title: "Is Indiana's residential adoption rule still current?",
+    course: "read-the-plan-and-the-code",
+    lesson: "the-edition-year-is-not-this-year",
+    quote:
+      "The state's own register returned an empty document on 2026-09-20, so this was read on a mirror.",
+    severity: "high",
+    claim:
+      "The course teaches, verified 2026-09-20 on a university mirror of the administrative code, that the state rule adopts the 2018 residential code, first printing, and names the result the 2020 Indiana Residential Code. A reported 2025 readoption review of that article could not be confirmed, because the state's own register is a client-rendered application that returned an empty document on four attempts.",
+    question:
+      "Is that rule still the current one, and what became of the readoption review?",
+    stakes:
+      "The whole course teaches a learner to read the adoption rule for their own address. Its own worked example must not be stale, and this is the example.",
+    needs: [
+      "The rule as the state's own register publishes it, with the date read",
+      "The disposition of the readoption review",
+    ],
+    where: [
+      "The Indiana administrative code on the state register",
+      "The fire prevention and building safety commission",
+    ],
+  },
+  {
+    key: "indiana-electrical-code-1-9",
+    title: "Does a newer Indiana electrical adoption rule exist?",
+    course: "read-the-plan-and-the-code",
+    lesson: "the-edition-year-is-not-this-year",
+    severity: "high",
+    claim:
+      "The course teaches that the newest unrepealed electrical rule adopts the 2008 edition, first printing. Search summaries described a newer rule adopting the 2023 edition as a 2026 Indiana Electrical Code; it could not be confirmed on the state's own register, so the course reports it as reported and makes the lag itself the teaching point.",
+    question:
+      "Does a newer electrical adoption rule exist, and which edition does it adopt?",
+    stakes:
+      "This is the course's sharpest example: the title year and the adopted edition year are different numbers, and neither is this year. If a newer rule exists, the example changes and a learner buys the wrong book.",
+    needs: [
+      "The current electrical adoption rule from the state's own register, with the date read",
+    ],
+    where: [
+      "The Indiana administrative code, article 17",
+      "The fire prevention and building safety commission",
+    ],
+  },
+  {
+    key: "icc-nfpa-free-access-terms",
+    title: "What do the publishers' free-access offerings actually permit?",
+    course: "read-the-plan-and-the-code",
+    lesson: "what-a-code-is-and-who-made-it-law",
+    quote:
+      "Every publisher URL failed on 2026-09-20.",
+    severity: "medium",
+    claim:
+      "The course describes no publisher's free-access terms, because every publisher URL failed on 2026-09-20 (403, 404 or DNS). It tells the learner to read the terms they actually see and treat the course's paragraph as a lead.",
+    question:
+      "What do the two main model-code publishers' free-access offerings permit, in their own words?",
+    stakes:
+      "It decides how much of a code a learner may read without paying, which is the practical question behind the whole course.",
+    needs: [
+      "The terms as published, read from an account",
+    ],
+    where: [
+      "The model code publishers' free-access pages, which need an account BAM would have to create",
+    ],
+  },
+  {
+    key: "adoption-rule-availability-by-state",
+    title: "Do all states publish their adoption rule free?",
+    course: "read-the-plan-and-the-code",
+    lesson: "find-your-own-address",
+    quote:
+      "Only one state's rule was ever read.",
+    severity: "medium",
+    claim:
+      "The course says outright that only one state's adoption rule was ever read, and on a mirror at that. It does not claim the method works everywhere.",
+    question:
+      "Do all fifty states publish their code adoption free and online, and where does the method break?",
+    stakes:
+      "The course's closing exercise sends a learner to their own state. If some states hide the adoption behind a paywall, the exercise needs a fallback.",
+    needs: [
+      "A survey of how several states publish their adoption, with URLs",
+    ],
+    where: [
+      "State administrative codes and building commissions",
+    ],
+  },
+  {
+    key: "inspection-sequence-outside-one-county",
+    title: "Is the inspection sequence the same elsewhere?",
+    course: "read-the-plan-and-the-code",
+    lesson: "the-permit-and-the-inspection-sequence",
+    severity: "low",
+    claim:
+      "The inspection sequence is taught from one county's published list, named as one county's.",
+    question:
+      "How much does the published inspection sequence vary between jurisdictions, and what does an Indiana one look like?",
+    stakes:
+      "Low. The lesson already attributes it. Two or three more lists would let it teach the shape rather than one example.",
+    needs: [
+      "Two or three more published inspection lists, ideally one in Indiana",
+    ],
+    where: [
+      "County and city building department pages",
+    ],
+  },
+  // ── keeping-a-house (H02), filed 2026-09-20 with the course ──
+  {
+    key: "kah-epa-firm-locator-url",
+    title: "Is the certified-firm lookup URL the right one?",
+    course: "keeping-a-house",
+    lesson: "where-to-stop",
+    severity: "medium",
+    claim:
+      "The course prints the lookup address that appeared on the federal page it actually fetched. Two other candidate addresses surfaced in search.",
+    question:
+      "What is the authoritative address for finding a certified firm, as the agency itself publishes it?",
+    stakes:
+      "It is the ONE lookup the course tells a learner to run. An address that has moved sends someone to nothing, or worse, to a lookalike.",
+    needs: [
+      "The agency's own current link to its certified-firm locator",
+    ],
+    where: [
+      "The federal lead programme pages",
+    ],
+  },
+  {
+    key: "kah-radon-chart-vintage",
+    title: "How old is the radon risk chart?",
+    course: "keeping-a-house",
+    lesson: "radon-the-number",
+    severity: "medium",
+    claim:
+      "The risk comparison prints its figures with their denominators and their source years. The document's cover date and the publications list disagree about when it was issued, and the chart's underlying data is older than both.",
+    question:
+      "What is the current edition of that guide, and are the comparison figures still the agency's?",
+    stakes:
+      "A risk chart is the most quotable thing in the course, and stale comparison deaths would be quoted onward.",
+    needs: [
+      "The current edition and its date",
+      "Whether the comparison figures have been updated",
+    ],
+    where: [
+      "The federal radon publications list",
+    ],
+  },
+  {
+    key: "kah-state-licensing-and-adoption",
+    title: "Only one state's rule was read",
+    course: "keeping-a-house",
+    lesson: "where-to-stop",
+    severity: "medium",
+    claim:
+      "The course states, in its own text, that only one state's adoption rule was read, and it names no trade as licensed in any named place.",
+    question:
+      "How do licensing and permit thresholds differ by state for the work this course sends people away from?",
+    stakes:
+      "The course's whole decision rule is what an amateur may do, and that line is drawn by a state and a city, not federally.",
+    needs: [
+      "Several states' licensing and permit rules, with sources",
+    ],
+    where: [
+      "State licensing boards and city building departments",
+    ],
+  },
+  {
+    key: "kah-asbestos-use-dates",
+    title: "No asbestos date range is printed",
+    course: "keeping-a-house",
+    lesson: "before-1978",
+    severity: "medium",
+    claim:
+      "No federal date range for asbestos use was verified, so the course gives NONE and teaches condition rather than vintage.",
+    question:
+      "What date range does the federal record support for asbestos in home building materials?",
+    stakes:
+      "A vintage rule of thumb is what people actually use. Teaching condition instead is safer but leaves a question every learner asks.",
+    needs: [
+      "A federal source stating the period",
+    ],
+    where: [
+      "The federal asbestos programme pages",
+    ],
+  },
+  {
+    key: "kah-hud-rehab-guide",
+    title: "A federal rehabilitation guide that would not load",
+    course: "keeping-a-house",
+    lesson: "what-this-course-refuses",
+    severity: "low",
+    claim:
+      "Nine volumes of a federal rehabilitation guide are REPORTED and nothing in the course cites them: the index and all four volume PDFs returned an empty body.",
+    question:
+      "Are those volumes still published, and what do they cover?",
+    stakes:
+      "Low. They would strengthen the decisions half if they exist in a readable form.",
+    needs: [
+      "The volumes themselves, or confirmation that they are withdrawn",
+    ],
+    where: [
+      "The federal housing research publication library",
+    ],
+  },
+  {
+    key: "kah-healthy-housing-manual",
+    title: "A public-domain manual whose PDF refused",
+    course: "keeping-a-house",
+    lesson: "what-fails-and-the-early-signs",
+    severity: "low",
+    claim:
+      "A public-domain federal healthy-housing manual was confirmed by catalogue record but its PDF returned 403, so no content from it is cited.",
+    question:
+      "What does that manual contain that this course should carry?",
+    stakes:
+      "Low, and the course stands without it.",
+    needs: [
+      "A readable copy of the manual",
+    ],
+    where: [
+      "The federal health agency's publication catalogue",
+    ],
+  },
+  {
+    key: "kah-cpsc-5098-date",
+    title: "A publication cited with no date",
+    course: "keeping-a-house",
+    lesson: "water-is-the-master-variable",
+    severity: "low",
+    claim:
+      "One federal leaflet is cited as undated, because the number in its footer is a printing code rather than a stated date.",
+    question:
+      "What is the publication date of that leaflet?",
+    stakes:
+      "Low, and the citation is honest as it stands.",
+    needs: [
+      "The publication date as the agency states it",
+    ],
+    where: [
+      "The federal consumer safety publications list",
+    ],
+  },
+  {
+    key: "kah-745-86-recordkeeping",
+    title: "A recordkeeping rule cited only through a cross-reference",
+    course: "keeping-a-house",
+    lesson: "where-to-stop",
+    severity: "low",
+    claim:
+      "The recordkeeping requirement is reached only through another section's cross-reference; its own text was not read, so no retention period is stated.",
+    question:
+      "What does that recordkeeping section require, and for how long?",
+    stakes:
+      "Low. The course tells a learner to ask for records, not how long a firm must keep them.",
+    needs: [
+      "The text of that section",
+    ],
+    where: [
+      "The Code of Federal Regulations",
+    ],
+  },
+  // ── how-a-house-stands-up (H01), filed 2026-09-20 with the course ──
+  {
+    key: "house-plate-bearing-inference",
+    title: "An inference the course labels as its own",
+    course: "how-a-house-stands-up",
+    lesson: "wood-and-why-it-moves",
+    severity: "medium",
+    claim:
+      "One lesson reads a stud as bearing along the grain and its plate as bearing across it, drawn from the federal wood handbook's measured properties rather than stated by any source. The lesson says in its own text that this reading is the course's.",
+    question:
+      "Does a published source state the grain orientation of a stud against its plate in these terms?",
+    stakes:
+      "It is the only inference in the course, and it is labelled. If a source states it, the label comes off; if a source contradicts it, the lesson changes.",
+    needs: [
+      "A published statement of the load direction relative to grain for studs and plates",
+    ],
+    where: [
+      "The Forest Products Laboratory wood handbook",
+      "The Navy builder manuals",
+    ],
+  },
+  {
+    key: "house-navedtra-third-party-figures",
+    title: "May the manuals' figures be reproduced?",
+    course: "how-a-house-stands-up",
+    lesson: "the-load-path-roof-to-soil",
+    severity: "medium",
+    claim:
+      "No figure from any source is reproduced or described in detail, because the manuals carry a distribution statement permitting release but their pages may contain approved copyrighted material. The course teaches in prose instead.",
+    question:
+      "Do the manuals contain third-party copyrighted figures, and does the distribution statement cover reproducing them?",
+    stakes:
+      "It decides whether the course can show a drawing, which is what a structure course most wants, and whether the PDFs can be hosted under the new source-hosting rule.",
+    needs: [
+      "The manuals' own statement about copyrighted material within them",
+    ],
+    where: [
+      "The issuing command's publication office",
+      "The manuals' front matter",
+    ],
+  },
+  {
+    key: "house-navedtra-official-host",
+    title: "The manuals were read on third-party hosts",
+    course: "how-a-house-stands-up",
+    lesson: "the-load-path-roof-to-soil",
+    severity: "low",
+    claim:
+      "Both Navy manuals were fetched from third-party mirrors rather than an official host, and the citation says so.",
+    question:
+      "Where does the issuing command publish these manuals now?",
+    stakes:
+      "Low for the content, which carries a distribution statement, but a citation should point at the publisher.",
+    needs: [
+      "The official current location of each manual",
+    ],
+    where: [
+      "The Navy's training publication catalogue",
+    ],
+  },
+  {
+    key: "house-apa-and-bia-reuse-terms",
+    title: "Two trade bodies' documents, unused",
+    course: "how-a-house-stands-up",
+    lesson: "the-layers-on-the-outside",
+    severity: "low",
+    claim:
+      "Two industry technical libraries were not cited, quoted or linked anywhere, because their reuse terms were never established. Brick veneer is taught only from federal sources.",
+    question:
+      "What do those trade bodies permit for their technical documents?",
+    stakes:
+      "Low. They would strengthen the cladding section, which currently rests on one manual and one federal guide.",
+    needs: [
+      "The reuse terms of each body's technical library",
+    ],
+    where: [
+      "The wood panel association",
+      "The brick industry association",
+    ],
+  },
+  {
+    key: "house-fema-p-2178",
+    title: "A federal guide named in the brief but never fetched",
+    course: "how-a-house-stands-up",
+    lesson: "connections-and-what-weather-finds",
+    severity: "low",
+    claim:
+      "A federal publication named in the brief as the source for the connections section was never fetched, so nothing rests on it and it is not cited. That section stands on a federal continuous-load-path guide and a federal code part instead.",
+    question:
+      "What does that publication say about connections and load paths in high-wind areas?",
+    stakes:
+      "Low, and the section stands without it.",
+    needs: [
+      "The publication itself",
+    ],
+    where: [
+      "The federal emergency management agency's library",
+    ],
+  },
+  {
+    key: "house-indiana-under-floor-and-ventilation-minimums",
+    title: "Dimensional minimums the course refuses to print",
+    course: "how-a-house-stands-up",
+    lesson: "ground-footing-foundation-and-floor",
+    severity: "low",
+    claim:
+      "The course prints no crawl-space clearance, no attic ventilation fraction and no drainage-gap dimension, teaching the shape of each rule and sending the learner to the adoption rule instead. This check probably belongs to read-the-plan-and-the-code.",
+    question:
+      "What do those minimums say in a named jurisdiction's adopted code?",
+    stakes:
+      "Low by design: the refusal is the course's safety rule, not a gap.",
+    needs: [
+      "The relevant sections of a named jurisdiction's adopted residential code",
+    ],
+    where: [
+      "The adopted code for the learner's own jurisdiction",
+    ],
+  },
+  // ── soul-train-the-business, filed 2026-09-20 with the course. Every hedge printed in a lesson has one. ──
+  {
+    key: "jpc-ftc-court-discrepancy",
+    title: "The 1977 opinion against the sponsor's account of the same case",
+    course: "soul-train-the-business",
+    lesson: "the-order-and-the-opinion",
+    quote:
+      "The course prints both and chooses neither.",
+    severity: "high",
+    claim:
+      "The published opinion is a Seventh Circuit decision of 16 February 1977: no unilateral right to withdraw, the record too thin on abuse of discretion, enforcement stayed and the case remanded, with a later and less restrictive order against a competitor. The 2025 memoir says Ninth Circuit, sitting in Detroit, decided in the company's favour and required the competitor to carry the same warning, and dates first notice to a broadcast six days AFTER the opinion's date for execution of the consent agreement. The course prints both in a comparison table and chooses neither.",
+    question:
+      "Is the memoir describing a SECOND proceeding, or misremembering this one?",
+    stakes:
+      "This is the course's central document-versus-memory lesson. If a second proceeding exists, the lesson must say so rather than leaving a man's own account looking simply wrong.",
+    needs: [
+      "The commission's docket file",
+      "Any other proceeding between the company and the commission",
+      "The June 1975 network news rundown",
+    ],
+    where: [
+      "Federal Trade Commission docket records",
+      "Seventh Circuit records for 549 F.2d 35",
+      "Broadcast archives",
+    ],
+  },
+  {
+    key: "soul-unlimited-ending",
+    title: "Why the 1973 rival show ended",
+    course: "soul-train-the-business",
+    lesson: "why-it-ended-stays-open",
+    quote:
+      "The programme began on 10 March 1973, drew a trade-press objection in May, and stopped, and this course does not know why.",
+    severity: "high",
+    claim:
+      "The programme began on 10 March 1973, drew a trade-press objection in May, and stopped. The reference work describing the ending cites a magazine issue that was NOT read; the memoir prefaces a boycott account with the words Rumor has it; a 2019 documentary account was not viewed.",
+    question:
+      "Why did the rival show end, and when was its last broadcast?",
+    stakes:
+      "It is the one part of the story the course deliberately leaves open, and BAM is looking for the issues that would close it.",
+    needs: [
+      "The 7 June 1973 magazine issue, read directly",
+      "The June 1973 issues BAM is looking for",
+      "A network schedule or trade listing giving a last broadcast date",
+    ],
+    where: [
+      "Rolling Stone, 7 June 1973",
+      "Jet, June 1973",
+      "Broadcasting and Variety listings",
+    ],
+  },
+  {
+    key: "cobb-v-paramount-outcome",
+    title: "Is the royalty suit still unresolved?",
+    course: "soul-train-the-business",
+    lesson: "the-voice-and-the-open-case",
+    quote:
+      "The outcome is unknown.",
+    severity: "medium",
+    claim:
+      "The docket was read to an entry of 5 January 2026 with no termination shown, and lesson 22 states the case is unresolved and treats the claims as allegations.",
+    question:
+      "What is the current status of the case?",
+    stakes:
+      "The lesson asserts a live fact about a named person's open case. RE-RUN THIS BEFORE ANY PUBLIC RELEASE: an outcome can land at any time, and a course that calls a decided case unresolved is wrong about someone's life.",
+    needs: [
+      "A re-read of the federal docket",
+    ],
+    where: [
+      "The federal court docket for the Northern District of Illinois",
+    ],
+  },
+  {
+    key: "jpc-first-trading-1969",
+    title: "Two firsts, more than a year apart",
+    course: "soul-train-the-business",
+    lesson: "going-public-twice",
+    quote:
+      "A source that says first listed and a source that says first publicly traded may be describing two different days more than a year apart.",
+    severity: "medium",
+    claim:
+      "The memoir dates a first public trading to 10 December 1969 and the exchange listing to January 1971; the contemporary sources corroborate only the 1971 listing. The memoir also names a newspaper article about the listing that was not read.",
+    question:
+      "Was there a public trading in 1969 distinct from the 1971 listing?",
+    stakes:
+      "It reconciles two rival first claims instead of forcing a choice between them, which is the course's method in miniature.",
+    needs: [
+      "The 1969 offering prospectus or a contemporaneous trade report",
+      "The named newspaper article",
+    ],
+    where: [
+      "Company filings",
+      "Financial press of December 1969 and January 1971",
+    ],
+  },
+  {
+    key: "st-barter-terms",
+    title: "Was the show sold to stations on barter terms?",
+    course: "soul-train-the-business",
+    lesson: "what-first-run-syndication-is",
+    quote:
+      "Whether Soul Train was sold to stations on barter terms is not established by any source read for this course.",
+    severity: "medium",
+    claim:
+      "A reference work defines barter syndication, a 1974 trade item refers to compensation offered by the syndicator, and a 1972 item shows two advertisers holding a half-hour each. Consistent with barter, not proof of it.",
+    question:
+      "On what terms was the programme sold to stations?",
+    stakes:
+      "It decides who actually took the money in the arrangement the whole course is about.",
+    needs: [
+      "A station contract, a syndicator's rate card, or a trade report naming the terms",
+    ],
+    where: [
+      "Broadcasting Yearbook 1972 to 1974",
+      "Television/Radio Age",
+      "Station files",
+    ],
+  },
+  {
+    key: "st-syndicator-succession",
+    title: "One firm's name sits on both sides of the deal",
+    course: "soul-train-the-business",
+    lesson: "who-sold-the-time",
+    quote:
+      "Whether Media Affiliates was absorbed, replaced, or simply reported differently is not established by anything read for this course.",
+    severity: "medium",
+    claim:
+      "A 1972 trade item names one syndicator; a 1973 listing names another firm, which is ALSO named elsewhere as the firm the sponsor's original advertising agency merged into.",
+    question:
+      "Was the first syndicator absorbed, replaced, or simply reported differently?",
+    stakes:
+      "If the same firm sat on both sides, the ownership story changes shape.",
+    needs: [
+      "A trade report of the change, or a corporate record",
+    ],
+    where: [
+      "Trade press of 1972 and 1973",
+      "State corporate records",
+    ],
+  },
+  {
+    key: "st-ad-inventory-split",
+    title: "Two incompatible descriptions of the advertising split",
+    course: "soul-train-the-business",
+    lesson: "who-sold-the-time",
+    quote:
+      "These are not obviously the same deal, and no document read here reconciles them.",
+    severity: "medium",
+    claim:
+      "A 1972 trade item describes the sponsor taking the full first half-hour with another advertiser in the second; the memoir describes three minutes each for the sponsor and the host to sell.",
+    question:
+      "How was the advertising inventory actually divided?",
+    stakes:
+      "It is the difference between a sponsor who bought a show and a sponsor who bought spots.",
+    needs: [
+      "The sponsorship contract, a rate card, or a dated trade report of either arrangement",
+    ],
+    where: [
+      "Trade press of 1971 to 1974",
+    ],
+  },
+  {
+    key: "st-launch-market-list",
+    title: "Seven launch markets or nine?",
+    course: "soul-train-the-business",
+    lesson: "october-2-1971",
+    quote:
+      "St. Louis is the one real disagreement. The course names the difference and does not resolve it.",
+    severity: "low",
+    claim:
+      "Two sources give seven cities including San Francisco; the memoir gives nine including Oakland, St. Louis and Chicago. San Francisco and Oakland are one area and Chicago already had the show, so St. Louis is the one real disagreement.",
+    question:
+      "Did the show launch in St. Louis on 2 October 1971?",
+    stakes:
+      "Low, and the lesson names the difference rather than resolving it.",
+    needs: [
+      "A 1971 station line-up, or a St. Louis listing for 2 October 1971",
+    ],
+    where: [
+      "Broadcasting Yearbook 1972",
+      "St. Louis newspaper listings",
+    ],
+  },
+  {
+    key: "st-agency-name",
+    title: "Whose name is in the agency's title?",
+    course: "soul-train-the-business",
+    lesson: "a-second-pilot-in-color",
+    quote:
+      "This course does not pick. It prints both and files the question.",
+    severity: "low",
+    claim:
+      "One trade source names a three-partner firm; the memoir names a four-partner firm and gives a similar name as the account executive. A name that stands in the firm's title in one account is an employee in the other.",
+    question:
+      "What was the agency's name, and who handled the account?",
+    stakes:
+      "Low, and it is a neat example of how a name moves between roles in two tellings.",
+    needs: [
+      "A Chicago agency directory for 1969 to 1971",
+    ],
+    where: [
+      "Standard Directory of Advertising Agencies",
+    ],
+  },
+  {
+    key: "jpc-1970-sales",
+    title: "Two figures for one year's sales",
+    course: "soul-train-the-business",
+    lesson: "going-public-twice",
+    quote:
+      "Somebody's year is off by one, or somebody is measuring a different thing.",
+    severity: "low",
+    claim:
+      "The memoir gives one figure for 1970 sales; a newspaper obituary gives another for the same year.",
+    question:
+      "What were the company's sales in fiscal 1970?",
+    stakes:
+      "Low. Somebody's year is off by one, or somebody is measuring a different thing.",
+    needs: [
+      "The company's own annual report for fiscal 1970 or 1971",
+    ],
+    where: [
+      "Company filings",
+    ],
+  },
+  {
+    key: "jpc-afro-sheen-2000",
+    title: "Which brands travelled in the 2000 divestiture?",
+    course: "soul-train-the-business",
+    lesson: "what-happened-to-the-brands",
+    quote:
+      "Whether Afro Sheen travelled with Ultra Sheen through the 2000 divestiture, and who owns Johnson Products now, are not settled by anything read for this course.",
+    severity: "low",
+    claim:
+      "The course does not state which brands moved together in the divestiture, or who owns the company now.",
+    question:
+      "Which brands were included, and who holds them today?",
+    stakes:
+      "Low. The course says plainly that it does not know.",
+    needs: [
+      "The asset schedule, or the current trademark registrations",
+    ],
+    where: [
+      "Competition authority filings",
+      "Trademark registers",
+    ],
+  },
+  {
+    key: "jpc-pg-2003-route",
+    title: "A corporate route that is reported, not documented",
+    course: "soul-train-the-business",
+    lesson: "what-happened-to-the-brands",
+    quote:
+      "This route is reported rather than documented here.",
+    severity: "low",
+    claim:
+      "A later acquisition route is reported rather than documented here, and the table marks it as reported only.",
+    question:
+      "Did the business pass by that route, and when?",
+    stakes:
+      "Low, and the table already labels it.",
+    needs: [
+      "The acquirer's own filing or a contemporaneous report, fetched and read",
+    ],
+    where: [
+      "Company filings and financial press of 2003",
+    ],
+  },
+  {
+    key: "soul-unlimited-producer",
+    title: "Who was behind the production company?",
+    course: "soul-train-the-business",
+    lesson: "where-the-1973-sources-disagree",
+    quote:
+      "The course does not guess, and files the question.",
+    severity: "low",
+    claim:
+      "Whether the production company was connected to the host is not established, and the course does not guess.",
+    question:
+      "Who owned and ran that production company?",
+    stakes:
+      "Low.",
+    needs: [
+      "A corporate record, or a 1973 credit listing",
+    ],
+    where: [
+      "State corporate records",
+      "1973 broadcast credits",
+    ],
+  },
+  {
+    key: "st-2008-price-and-date",
+    title: "The 2008 sale's price and date",
+    course: "soul-train-the-business",
+    lesson: "the-2008-sale-and-the-library",
+    quote:
+      "The price was not disclosed.",
+    severity: "low",
+    claim:
+      "The price was not disclosed in what was read, and a May 2008 date circulates that the course does not print as fact.",
+    question:
+      "What was the price, and on what date was the sale announced?",
+    stakes:
+      "Low, and the course uses the dated report it actually read.",
+    needs: [
+      "A filing by either party, or a dated announcement",
+    ],
+    where: [
+      "Company filings",
+      "Trade press of 2008",
+    ],
+  },
+  {
+    key: "st-magic-johnson-2016-stake",
+    title: "Did the 2011 investor still hold a stake in 2016?",
+    course: "soul-train-the-business",
+    lesson: "an-investment-is-not-a-sale",
+    quote:
+      "Whether Magic Johnson still held a stake in 2016 is not established by anything read for this course.",
+    severity: "low",
+    claim:
+      "The 2011 transaction was an investment in the parent company, not a sale of the show, which is the correction this lesson exists to make. Whether that investor still held a stake at the 2016 sale is not established.",
+    question:
+      "Who were all the selling parties in 2016?",
+    stakes:
+      "Low, and the lesson's correction stands either way.",
+    needs: [
+      "A parent-company ownership record, or a 2016 report naming every selling party",
+    ],
+    where: [
+      "Company filings",
+      "Trade press of 2016",
+    ],
+  },
+  {
+    key: "st-syndicator-earnings",
+    title: "What the syndicators and the host earned",
+    course: "soul-train-the-business",
+    lesson: "who-else-got-paid",
+    quote:
+      "No source read for this course states what the syndicators earned on the programme.",
+    severity: "low",
+    claim:
+      "No source read states what the syndicators earned on the programme, what the host earned from it, or what a named partner's share was worth.",
+    question:
+      "What did each party actually earn?",
+    stakes:
+      "Low in evidence, high in interest: it is the question the course's title asks.",
+    needs: [
+      "A company filing, a court exhibit, or a trade report",
+    ],
+    where: [
+      "Company filings",
+      "Court exhibits",
+      "Trade press",
+    ],
+  },
+  {
+    key: "quincy-jones-cornelius-partnership",
+    title: "What was that partnership?",
+    course: "soul-train-the-business",
+    lesson: "who-says-it-mattered",
+    quote:
+      "What that partnership was is not established by anything read for this course.",
+    severity: "low",
+    claim:
+      "A partnership is referred to in secondary accounts and its nature is not established here.",
+    question:
+      "What was the venture, and what did it do?",
+    stakes:
+      "Low.",
+    needs: [
+      "A company record or a contemporaneous report naming the venture",
+    ],
+    where: [
+      "State corporate records",
+      "Trade press",
+    ],
+  },
+  {
+    key: "solar-records-founding",
+    title: "A label's founding year and roster",
+    course: "soul-train-the-business",
+    lesson: "the-partner-the-label-and-the-club",
+    quote:
+      "This course does not state them.",
+    severity: "low",
+    claim:
+      "The label's founding year and later roster are reported in secondary summaries rather than established, so the course does not state them.",
+    question:
+      "When was the label founded, and what was its roster?",
+    stakes:
+      "Low.",
+    needs: [
+      "A label discography or a contemporaneous trade report",
+    ],
+    where: [
+      "Trade press",
+      "Label discographies",
+    ],
+  },
+  {
+    key: "st-last-national-episode",
+    title: "The last national broadcast date",
+    course: "soul-train-the-business",
+    lesson: "the-2008-sale-and-the-library",
+    quote:
+      "The course does not print it.",
+    severity: "low",
+    claim:
+      "The course says the programme stayed on air until 2006, per a trade source. A specific last-episode date circulates and is reported only, so the course does not print it.",
+    question:
+      "What was the last national broadcast, and on what date?",
+    stakes:
+      "Low, and the course already states the year it can support.",
+    needs: [
+      "A station log or a trade listing for March 2006",
+    ],
+    where: [
+      "Station logs",
+      "Trade listings of 2006",
+    ],
+  },
+  // ── who-the-rule-leaves-out, filed 2026-09-20 with the course ──
+  {
+    key: "bbc-credit-rule-document",
+    title: "A document stating the BBC credit rule",
+    course: "who-the-rule-leaves-out",
+    lesson: "two-grades-of-paper",
+    severity: "high",
+    claim:
+      "No lesson says the BBC had a written policy forbidding individual credit, because nobody has read one. The course says what the papers say: a 1963 engineering monograph that names no maker, a 1964 internal memo from a head of department who could not get names printed, and the woman's own statement that the BBC would not allow the royalty split. A published history's phrase standard policy is always attributed.",
+    question:
+      "Is there a BBC document that states the credit rule in its own words?",
+    stakes:
+      "It is the one claim the whole Derbyshire half would rest on if it were made, and the course is built around refusing to make it.",
+    needs: [
+      "A BBC file stating the practice, or a scholar quoting one with its reference",
+      "The book page both scholars cite, which nobody in either pass has read",
+    ],
+    where: [
+      "BBC Written Archives Centre, files R97/9/1 and R97/11/1-2",
+      "Niebur, Special Sound, page 102",
+    ],
+  },
+  {
+    key: "payne-scott-own-letter-1950",
+    title: "Her own reply, which the course never quotes",
+    course: "who-the-rule-leaves-out",
+    lesson: "what-the-file-records",
+    severity: "high",
+    claim:
+      "The course quotes the CSIRO Chairman's 1950 letter from the archive's own transcript, and quotes him paraphrasing her. Her own reply has not been read, and the sentence plans/83 attributes to it appears nowhere in this course.",
+    question:
+      "What does her February 1950 reply actually say?",
+    stakes:
+      "plans/83 puts a famous sentence in her mouth that is not on the page anyone has read. Either the item confirms it or the catalogue has been repeating an unsourced quotation.",
+    needs: [
+      "The item itself, read or transcribed",
+    ],
+    where: [
+      "National Archives of Australia, A8520, PH/PAY/002",
+    ],
+  },
+  {
+    key: "dr-who-1963-broadcast-credit",
+    title: "What the 1963 broadcast and listing actually credited",
+    course: "who-the-rule-leaves-out",
+    lesson: "what-a-correction-can-reach",
+    severity: "medium",
+    claim:
+      "The course asserts only the wording of a 1964 BBC information sheet. The broadcast credit and the printed listing of November 1963 were not read: the listings database refused every fetch.",
+    question:
+      "What did the 23 November 1963 broadcast and the printed listing credit?",
+    stakes:
+      "The course's correction argument turns on what was credited at the time versus what was credited later.",
+    needs: [
+      "The printed listing for that date, and the broadcast credit",
+    ],
+    where: [
+      "BBC Genome",
+      "Radio Times archives",
+    ],
+  },
+  {
+    key: "grainer-royalty-request",
+    title: "The royalty offer, from anything but her account",
+    course: "who-the-rule-leaves-out",
+    lesson: "three-tellings-and-a-scene-nobody-saw",
+    severity: "medium",
+    claim:
+      "The offer to share royalties is known only from her own 2000 interview and from retellings of it. No contract, collecting-society record, BBC memo or statement by the composer has been found in two research passes.",
+    question:
+      "Is there any record of the royalty offer other than her account?",
+    stakes:
+      "The lesson teaches how a claim drifts across four retellings. A contemporaneous record would either anchor the story or show the drift began at the source.",
+    needs: [
+      "A contract, a collecting-society record, a BBC memo, or a statement by the composer",
+    ],
+    where: [
+      "BBC Written Archives",
+      "PRS and MCPS records",
+      "The composer's papers",
+    ],
+  },
+  {
+    key: "derbyshire-bbc-joining-date",
+    title: "1960 or 1962?",
+    course: "who-the-rule-leaves-out",
+    lesson: "two-grades-of-paper",
+    severity: "low",
+    claim:
+      "Both dates are true and the course says so: she joined the BBC in 1960 and the Radiophonic Workshop in 1962, per an obituary by a colleague and the university archive respectively.",
+    question:
+      "Do BBC personnel records confirm both dates?",
+    stakes:
+      "Low, and the apparent conflict is already resolved in the text.",
+    needs: [
+      "A personnel record giving both dates",
+    ],
+    where: [
+      "BBC Written Archives Centre",
+    ],
+  },
+  {
+    key: "payne-scott-1951-status",
+    title: "What ended her employment, and when",
+    course: "who-the-rule-leaves-out",
+    lesson: "not-a-stolen-byline",
+    severity: "low",
+    claim:
+      "The course teaches the marriage bar from the Chairman's letter and does not narrate the end of her employment beyond what that file supports.",
+    question:
+      "What do the records say about the end of her CSIRO employment?",
+    stakes:
+      "Low. The course's claim is about the rule, not the departure.",
+    needs: [
+      "The employment file",
+    ],
+    where: [
+      "National Archives of Australia",
+    ],
+  },
+  {
+    key: "payne-scott-security-file-reference",
+    title: "A second file, referenced but unread",
+    course: "who-the-rule-leaves-out",
+    lesson: "what-the-file-records",
+    severity: "low",
+    claim:
+      "A second archival reference is named in secondary accounts and has not been read, so only the dates it is said to cover are mentioned and nothing from its content is asserted.",
+    question:
+      "What does that file contain, and does it bear on the employment rule at all?",
+    stakes:
+      "Low, and the course deliberately does not stray into it.",
+    needs: [
+      "The file itself",
+    ],
+    where: [
+      "National Archives of Australia",
+    ],
+  },
+  // ── the-author-line-and-the-finding (Marthe Gautier), filed 2026-09-20 with the course ──
+  {
+    key: "gautier-2009-own-account",
+    title: "Her own 2009 account, never read",
+    course: "the-author-line-and-the-finding",
+    lesson: "a-live-dispute",
+    severity: "high",
+    claim:
+      "One side of a live dispute is currently represented in this course only through its opponent's description of it: her own 2009 journal article returned 403 in both research passes and has never been read. The course says so.",
+    question:
+      "What does her own account actually say?",
+    stakes:
+      "The course names the contesting party and states its case in its own words. It cannot do the same for her, which is a real asymmetry in a course about who gets to speak.",
+    needs: [
+      "The article itself, at the cited volume and pages",
+    ],
+    where: [
+      "Medecine/Sciences 2009, 25(3), 311-315, PMID 19361398",
+      "A university library, or interlibrary loan",
+    ],
+  },
+  {
+    key: "inserm-2014-opinion-refetch",
+    title: "The opinion's own PDF is behind a bot challenge",
+    course: "the-author-line-and-the-finding",
+    lesson: "what-an-ethics-committee-did",
+    severity: "medium",
+    claim:
+      "Every French sentence quoted from the 2014 ethics opinion comes from a transcription made in the earlier research pass: the PDF now serves an anti-bot challenge, which was deliberately not defeated. The document's identity, year, language, deposit date and open licence were confirmed first-hand through the repository's API, and the contesting party quotes four of the same sentences back in translation, which is a partial independent check.",
+    question:
+      "Do the quoted sentences match the opinion as published?",
+    stakes:
+      "It is the strongest document in the course, and the course currently quotes it at one remove.",
+    needs: [
+      "The PDF itself, or a library copy, read against the transcription",
+    ],
+    where: [
+      "The Inserm repository record",
+      "Inserm's own listing page",
+    ],
+  },
+  {
+    key: "gautier-turpin-letter-date",
+    title: "A date that contradicts itself inside one document",
+    course: "the-author-line-and-the-finding",
+    lesson: "a-live-dispute",
+    severity: "medium",
+    claim:
+      "The contesting party's own 2018 dossier dates a key letter to 27 October 1958 twice in its body text and to 17 October 1958 in an annex caption. The course prints the disagreement rather than choosing.",
+    question:
+      "What date does the letter itself bear?",
+    stakes:
+      "The letter is one of the contesting party's main exhibits, and its own file gives two dates for it.",
+    needs: [
+      "The letter itself, or a consistent statement of its date",
+    ],
+    where: [
+      "The foundation's published annexes",
+    ],
+  },
+  {
+    key: "gautier-kennedy-prize-1962-record",
+    title: "The 1962 prize record, never fetched",
+    course: "the-author-line-and-the-finding",
+    lesson: "the-honours-that-followed",
+    severity: "medium",
+    claim:
+      "The 1962 prize is taught from secondary accounts; the awarding body's own citation has not been read, and one translated date in the file is ambiguous, so no date is printed.",
+    question:
+      "What does the awarding body's own record say, and on what date?",
+    stakes:
+      "It is one of the honours the course uses to show what recognition followed the paper.",
+    needs: [
+      "The awarding body's citation and date",
+    ],
+    where: [
+      "The foundation that awarded it",
+    ],
+  },
+  {
+    key: "gautier-1959-printed-spelling",
+    title: "The printed page behind the index record",
+    course: "the-author-line-and-the-finding",
+    lesson: "three-names-in-an-order",
+    severity: "medium",
+    claim:
+      "The author order comes from index records; the printed 1959 page is behind a captcha and was not read. A printed-page error and an indexer's error are different failures with different meanings.",
+    question:
+      "How is the author line printed on the page itself?",
+    stakes:
+      "The whole first section reads an author line. It should read the printed one.",
+    needs: [
+      "The printed page, from the 1959 volume",
+    ],
+    where: [
+      "Gallica, or a library holding the volume",
+    ],
+  },
+  {
+    key: "gautier-bordeaux-meeting-date",
+    title: "Early 2014, but which month?",
+    course: "the-author-line-and-the-finding",
+    lesson: "a-live-dispute",
+    severity: "low",
+    claim:
+      "The course says early 2014 because sources give January and February, and one party's sentence dates its own learning of the talk rather than the talk.",
+    question:
+      "On what date was that meeting held?",
+    stakes:
+      "Low, and the lesson already teaches why the sentence does not date the event.",
+    needs: [
+      "A dated record of the meeting",
+    ],
+    where: [
+      "The learned society that held it",
+      "Contemporary press",
+    ],
+  },
+  {
+    key: "lejeune-1969-allan-award-address",
+    title: "A 1969 award address, not open access",
+    course: "the-author-line-and-the-finding",
+    lesson: "the-honours-that-followed",
+    severity: "low",
+    claim:
+      "The 1969 award is verified from the index record with its date and place. The address itself is a scan that is not open access and was not read.",
+    question:
+      "What does the award address say about the 1959 work and who did it?",
+    stakes:
+      "Low, but it is a contemporaneous statement by one of the parties.",
+    needs: [
+      "The published address",
+    ],
+    where: [
+      "The society's journal archive",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

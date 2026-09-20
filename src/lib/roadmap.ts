@@ -1161,6 +1161,15 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Each course's central open question is filed as a research check rather than guessed, and two
   courses are held for a community reviewer with the authority to change or cut any part. 125
   lessons and roughly 2,000 questions between them, every one auditing at zero findings.
+- ✅ **Course text that never enters the repository** (\`feat/local-private-courses\`): a course built
+  from a book the owner owns can be held for private study but not published, and pushing to GitHub
+  IS publishing, so \`visibility: "private"\` protected the app and not the text. Such a course now
+  lives in \`content/private-courses/*.json\`, inside the gitignored tree, seeded by
+  \`pnpm seed:local-private\`, with nothing tracked importing it. The safeguard is enforced rather
+  than remembered: a guard in \`pnpm lint\` fails the build on any file there that git tracks,
+  catching a forced \`git add\` before it is ever committed, with **no allowlist**, and the seeder
+  refuses to run at all under the same condition. It does not license copying, and the directory's
+  own README says so.
 - 🔜 **Sentry error monitoring** (\`feat/rag-autoindex-and-report-bulk\`, wired, DSN pending → task 208):
   crash-grade signal (real stack traces, grouping, alerting) alongside the existing home-grown admin
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
