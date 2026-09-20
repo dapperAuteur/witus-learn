@@ -25,6 +25,7 @@ import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
 import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
+import { WHOSE_NAMES_THE_PAYROLL_KEPT_COURSE } from "./data/whose-names-the-payroll-kept-course";
 import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
 import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
 import { KEEPING_A_HOUSE_COURSE } from "./data/keeping-a-house-course";
@@ -687,6 +688,34 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Private study for BAM (plans/83). A live credit dispute with a named contesting party, the Fondation Jerome Lejeune, which publishes its own documents. Built from the Inserm ethics committee's 2014 opinion, the Foundation's three published texts, Inserm's own listing page, and the 1959 and 1969 index records. It reaches no verdict, because the documents it could read do not support one, and it says so.",
+  });
+
+  // "Whose Names the Payroll Kept" (the Central Pacific's Chinese workers, plans/83 E-26). PRIVATE,
+  // by BAM's approval of 2026-09-21, conditional on Crocker's testimony being fetched first, which
+  // it was. Two payroll sheets read as images and the 1876 congressional testimony read from page
+  // images. The spine: a form that cannot hold a person (the NAMES column holds a head man, a firm,
+  // or by 1866 a NUMBER), then the employer explaining it himself under cross-examination, with the
+  // QUESTION first, because every retelling drops it: "Does the same thing obtain with the white
+  // men? No, sir; we get the individual names of the white men." Then the arithmetic: the famous
+  // worker and death totals are a count of head men times an assumed crew, and a weight of bones
+  // divided by an assumed body weight. Unknown, not smaller. The photograph is ONE lesson of
+  // fourteen, placed thirteenth, and says in its own text why. NO series code. NO migration.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "whose-names-the-payroll-kept",
+    course: WHOSE_NAMES_THE_PAYROLL_KEPT_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Research & Reporting"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 16,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from two Central Pacific payroll sheets read as images with shelfmarks and from Crocker's and Strobridge's 1876 congressional testimony read from page images. Still reported rather than read: the 1870 and 1868 newspapers, the 1919 identification of men in the ceremony photograph, a 1928 company bulletin, and the Chinese characters on sheet 102, which are taught as a limit rather than transcribed.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

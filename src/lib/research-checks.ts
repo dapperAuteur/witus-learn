@@ -6398,6 +6398,219 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The society's journal archive",
     ],
   },
+  // ── whose-names-the-payroll-kept (Central Pacific), filed 2026-09-21 with the course ──
+  {
+    key: "cprr-payroll-102-chinese-characters",
+    title: "The Chinese characters on the 1865 sheet",
+    course: "whose-names-the-payroll-kept",
+    lesson: "a-form-that-cannot-hold-a-person",
+    severity: "medium",
+    claim:
+      "About eleven brush characters sit in the signature area of Pay Roll No. 102. Only one, the character for received, could be read responsibly at the available resolution. The course teaches the rest as a limit and transcribes nothing.",
+    question:
+      "What do the characters say, and whose hand wrote them?",
+    stakes:
+      "On a page where every other mark is somebody else's hand, this is the one place the writing may be theirs. A reading would change a lesson, not a sentence.",
+    needs: [
+      "A higher-resolution image, and a reader of 19th-century Chinese business hands",
+    ],
+    where: [
+      "California State Railroad Museum",
+      "A Chinese manuscript specialist",
+    ],
+  },
+  {
+    key: "sacramento-reporter-bones-1870",
+    title: "The 1870 newspaper behind the death toll",
+    course: "whose-names-the-payroll-kept",
+    lesson: "what-the-record-cannot-tell-you",
+    severity: "medium",
+    claim:
+      "The famous death figure derives from a newspaper report of a weight of bones divided by two assumed constants. The newspaper itself was not obtained, and the course teaches the arithmetic rather than the total.",
+    question:
+      "What did the 1870 report actually say, and what did it count?",
+    stakes:
+      "It is the origin of every death number repeated since. A reading would change a lesson.",
+    needs: [
+      "The newspaper issue, read directly",
+    ],
+    where: [
+      "California newspaper archives of 1870",
+    ],
+  },
+  {
+    key: "sisson-wallace-firm-location",
+    title: "Sacramento house or San Francisco firm?",
+    course: "whose-names-the-payroll-kept",
+    lesson: "the-employer-explains-it-himself",
+    severity: "medium",
+    claim:
+      "One account calls the labour-supplying firm a Sacramento supply house; Crocker, testifying in San Francisco, calls it a mercantile firm here. The course asserts neither city and quotes him.",
+    question:
+      "Where was the firm based?",
+    stakes:
+      "It bears on how the labour contracting actually worked and who was near it.",
+    needs: [
+      "A business directory, incorporation record or letterhead",
+    ],
+    where: [
+      "California business directories of the 1860s",
+    ],
+  },
+  {
+    key: "cprr-payroll-102-deduction-column",
+    title: "What the deduction column on the 1865 sheet records",
+    course: "whose-names-the-payroll-kept",
+    lesson: "a-form-that-cannot-hold-a-person",
+    severity: "medium",
+    claim:
+      "The 1866 form prints its deduction heading outright; the 1865 sheet's equivalent column is unlabelled and illegible. Two candidate readings remain, and the testimony's account of per-gang fines makes them no longer equally idle.",
+    question:
+      "What does that column record?",
+    stakes:
+      "Board and fines are different stories about the same money.",
+    needs: [
+      "A clearer image of the column heading, or another sheet of the same printing",
+    ],
+    where: [
+      "California State Railroad Museum",
+      "Stanford's payroll series",
+    ],
+  },
+  {
+    key: "ogden-1919-three-names",
+    title: "The 1919 identification of men in the ceremony photograph",
+    course: "whose-names-the-payroll-kept",
+    lesson: "the-photograph-and-what-it-shows",
+    severity: "medium",
+    claim:
+      "A caption's claim that named Chinese workers were identified in 1919 is printed as the caption's claim and explicitly untraced.",
+    question:
+      "What is the source of that identification, and who made it?",
+    stakes:
+      "The photograph lesson exists to show what a picture cannot settle; an identification with a source behind it would change that.",
+    needs: [
+      "The 1919 source itself",
+    ],
+    where: [
+      "Utah and Union Pacific archives",
+    ],
+  },
+  {
+    key: "cprr-payroll-scans-rights",
+    title: "Can the two payroll scans be hosted?",
+    course: "whose-names-the-payroll-kept",
+    lesson: "a-form-that-cannot-hold-a-person",
+    severity: "low",
+    claim:
+      "The 1865 and 1866 documents are out of copyright, but their SCANS are published by two repositories under rights statements nobody has read, so the course links rather than hosts.",
+    question:
+      "What do those two rights statements permit?",
+    stakes:
+      "It is the cheapest upgrade the course can get: the single most important document becomes hostable.",
+    needs: [
+      "The two repositories' rights statements",
+    ],
+    where: [
+      "California Revealed",
+      "Stanford Digital Repository",
+    ],
+  },
+  {
+    key: "sisson-wallace-and-co-partner",
+    title: "Who was the and Co.?",
+    course: "whose-names-the-payroll-kept",
+    lesson: "the-employer-explains-it-himself",
+    severity: "low",
+    claim:
+      "One modern author names a Crocker relative as the firm's silent partner. That claim is not in the testimony at any of the four pages checked, and it appears nowhere in the course.",
+    question:
+      "Who were the firm's partners?",
+    stakes:
+      "Low for the argument, but it is repeated widely.",
+    needs: [
+      "Partnership or incorporation records",
+    ],
+    where: [
+      "California business records",
+    ],
+  },
+  {
+    key: "cprr-payroll-individual-occupations",
+    title: "Do any sheets list individual occupations?",
+    course: "whose-names-the-payroll-kept",
+    lesson: "a-form-that-cannot-hold-a-person",
+    severity: "low",
+    claim:
+      "A summary suggests some sheets list Chinese workers by individual occupation. The page that would confirm it returned 403, so the claim is unverified and, if true, would qualify the course's central finding.",
+    question:
+      "Do any of the surviving sheets record individual Chinese workers by occupation?",
+    stakes:
+      "It would narrow recorded only as a gang to recorded only as a gang on the sheets we have read.",
+    needs: [
+      "The remaining sheets of the series",
+    ],
+    where: [
+      "Stanford's payroll series, MS 79",
+    ],
+  },
+  {
+    key: "chew-nameless-builders-page-refs",
+    title: "Page references for the 409-sheet study",
+    course: "whose-names-the-payroll-kept",
+    lesson: "what-the-record-cannot-tell-you",
+    severity: "low",
+    claim:
+      "The only person to have read all 409 surviving sheets is quoted through his own online rebuttal rather than his book, which was not obtained.",
+    question:
+      "What do the book's own pages say, and at which pages?",
+    stakes:
+      "Low: the course uses his method rather than his conclusions.",
+    needs: [
+      "The book, at its cited pages",
+    ],
+    where: [
+      "A library copy",
+    ],
+  },
+  {
+    key: "cprr-1867-strike-length",
+    title: "How long the 1867 strike lasted",
+    course: "whose-names-the-payroll-kept",
+    lesson: "the-employer-explains-it-himself",
+    severity: "low",
+    claim:
+      "Crocker's own account makes it about a week; other accounts differ, and the course uses his words.",
+    question:
+      "How long did the strike last, and what ended it?",
+    stakes:
+      "Low, and the course quotes the employer against himself either way.",
+    needs: [
+      "Contemporary reports",
+    ],
+    where: [
+      "California newspapers of June 1867",
+    ],
+  },
+  {
+    key: "cprr-payroll-102-pencil-lines",
+    title: "The pencil marks on sheet 102",
+    course: "whose-names-the-payroll-kept",
+    lesson: "a-form-that-cannot-hold-a-person",
+    severity: "low",
+    claim:
+      "Light pencil rulings and check marks appear beside some blocks and are not interpreted.",
+    question:
+      "Who made those marks, and when?",
+    stakes:
+      "Low, and nothing rests on them.",
+    needs: [
+      "A conservator's or archivist's reading",
+    ],
+    where: [
+      "California State Railroad Museum",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
