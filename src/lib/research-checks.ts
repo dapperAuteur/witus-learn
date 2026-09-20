@@ -5697,6 +5697,427 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
     where: [
       "The adopted code for the learner's own jurisdiction",
+  // ── soul-train-the-business, filed 2026-09-20 with the course. Every hedge printed in a lesson has one. ──
+  {
+    key: "jpc-ftc-court-discrepancy",
+    title: "The 1977 opinion against the sponsor's account of the same case",
+    course: "soul-train-the-business",
+    lesson: "the-order-and-the-opinion",
+    quote:
+      "The course prints both and chooses neither.",
+    severity: "high",
+    claim:
+      "The published opinion is a Seventh Circuit decision of 16 February 1977: no unilateral right to withdraw, the record too thin on abuse of discretion, enforcement stayed and the case remanded, with a later and less restrictive order against a competitor. The 2025 memoir says Ninth Circuit, sitting in Detroit, decided in the company's favour and required the competitor to carry the same warning, and dates first notice to a broadcast six days AFTER the opinion's date for execution of the consent agreement. The course prints both in a comparison table and chooses neither.",
+    question:
+      "Is the memoir describing a SECOND proceeding, or misremembering this one?",
+    stakes:
+      "This is the course's central document-versus-memory lesson. If a second proceeding exists, the lesson must say so rather than leaving a man's own account looking simply wrong.",
+    needs: [
+      "The commission's docket file",
+      "Any other proceeding between the company and the commission",
+      "The June 1975 network news rundown",
+    ],
+    where: [
+      "Federal Trade Commission docket records",
+      "Seventh Circuit records for 549 F.2d 35",
+      "Broadcast archives",
+    ],
+  },
+  {
+    key: "soul-unlimited-ending",
+    title: "Why the 1973 rival show ended",
+    course: "soul-train-the-business",
+    lesson: "why-it-ended-stays-open",
+    quote:
+      "The programme began on 10 March 1973, drew a trade-press objection in May, and stopped, and this course does not know why.",
+    severity: "high",
+    claim:
+      "The programme began on 10 March 1973, drew a trade-press objection in May, and stopped. The reference work describing the ending cites a magazine issue that was NOT read; the memoir prefaces a boycott account with the words Rumor has it; a 2019 documentary account was not viewed.",
+    question:
+      "Why did the rival show end, and when was its last broadcast?",
+    stakes:
+      "It is the one part of the story the course deliberately leaves open, and BAM is looking for the issues that would close it.",
+    needs: [
+      "The 7 June 1973 magazine issue, read directly",
+      "The June 1973 issues BAM is looking for",
+      "A network schedule or trade listing giving a last broadcast date",
+    ],
+    where: [
+      "Rolling Stone, 7 June 1973",
+      "Jet, June 1973",
+      "Broadcasting and Variety listings",
+    ],
+  },
+  {
+    key: "cobb-v-paramount-outcome",
+    title: "Is the royalty suit still unresolved?",
+    course: "soul-train-the-business",
+    lesson: "the-voice-and-the-open-case",
+    quote:
+      "The outcome is unknown.",
+    severity: "medium",
+    claim:
+      "The docket was read to an entry of 5 January 2026 with no termination shown, and lesson 22 states the case is unresolved and treats the claims as allegations.",
+    question:
+      "What is the current status of the case?",
+    stakes:
+      "The lesson asserts a live fact about a named person's open case. RE-RUN THIS BEFORE ANY PUBLIC RELEASE: an outcome can land at any time, and a course that calls a decided case unresolved is wrong about someone's life.",
+    needs: [
+      "A re-read of the federal docket",
+    ],
+    where: [
+      "The federal court docket for the Northern District of Illinois",
+    ],
+  },
+  {
+    key: "jpc-first-trading-1969",
+    title: "Two firsts, more than a year apart",
+    course: "soul-train-the-business",
+    lesson: "going-public-twice",
+    quote:
+      "A source that says first listed and a source that says first publicly traded may be describing two different days more than a year apart.",
+    severity: "medium",
+    claim:
+      "The memoir dates a first public trading to 10 December 1969 and the exchange listing to January 1971; the contemporary sources corroborate only the 1971 listing. The memoir also names a newspaper article about the listing that was not read.",
+    question:
+      "Was there a public trading in 1969 distinct from the 1971 listing?",
+    stakes:
+      "It reconciles two rival first claims instead of forcing a choice between them, which is the course's method in miniature.",
+    needs: [
+      "The 1969 offering prospectus or a contemporaneous trade report",
+      "The named newspaper article",
+    ],
+    where: [
+      "Company filings",
+      "Financial press of December 1969 and January 1971",
+    ],
+  },
+  {
+    key: "st-barter-terms",
+    title: "Was the show sold to stations on barter terms?",
+    course: "soul-train-the-business",
+    lesson: "what-first-run-syndication-is",
+    quote:
+      "Whether Soul Train was sold to stations on barter terms is not established by any source read for this course.",
+    severity: "medium",
+    claim:
+      "A reference work defines barter syndication, a 1974 trade item refers to compensation offered by the syndicator, and a 1972 item shows two advertisers holding a half-hour each. Consistent with barter, not proof of it.",
+    question:
+      "On what terms was the programme sold to stations?",
+    stakes:
+      "It decides who actually took the money in the arrangement the whole course is about.",
+    needs: [
+      "A station contract, a syndicator's rate card, or a trade report naming the terms",
+    ],
+    where: [
+      "Broadcasting Yearbook 1972 to 1974",
+      "Television/Radio Age",
+      "Station files",
+    ],
+  },
+  {
+    key: "st-syndicator-succession",
+    title: "One firm's name sits on both sides of the deal",
+    course: "soul-train-the-business",
+    lesson: "who-sold-the-time",
+    quote:
+      "Whether Media Affiliates was absorbed, replaced, or simply reported differently is not established by anything read for this course.",
+    severity: "medium",
+    claim:
+      "A 1972 trade item names one syndicator; a 1973 listing names another firm, which is ALSO named elsewhere as the firm the sponsor's original advertising agency merged into.",
+    question:
+      "Was the first syndicator absorbed, replaced, or simply reported differently?",
+    stakes:
+      "If the same firm sat on both sides, the ownership story changes shape.",
+    needs: [
+      "A trade report of the change, or a corporate record",
+    ],
+    where: [
+      "Trade press of 1972 and 1973",
+      "State corporate records",
+    ],
+  },
+  {
+    key: "st-ad-inventory-split",
+    title: "Two incompatible descriptions of the advertising split",
+    course: "soul-train-the-business",
+    lesson: "who-sold-the-time",
+    quote:
+      "These are not obviously the same deal, and no document read here reconciles them.",
+    severity: "medium",
+    claim:
+      "A 1972 trade item describes the sponsor taking the full first half-hour with another advertiser in the second; the memoir describes three minutes each for the sponsor and the host to sell.",
+    question:
+      "How was the advertising inventory actually divided?",
+    stakes:
+      "It is the difference between a sponsor who bought a show and a sponsor who bought spots.",
+    needs: [
+      "The sponsorship contract, a rate card, or a dated trade report of either arrangement",
+    ],
+    where: [
+      "Trade press of 1971 to 1974",
+    ],
+  },
+  {
+    key: "st-launch-market-list",
+    title: "Seven launch markets or nine?",
+    course: "soul-train-the-business",
+    lesson: "october-2-1971",
+    quote:
+      "St. Louis is the one real disagreement. The course names the difference and does not resolve it.",
+    severity: "low",
+    claim:
+      "Two sources give seven cities including San Francisco; the memoir gives nine including Oakland, St. Louis and Chicago. San Francisco and Oakland are one area and Chicago already had the show, so St. Louis is the one real disagreement.",
+    question:
+      "Did the show launch in St. Louis on 2 October 1971?",
+    stakes:
+      "Low, and the lesson names the difference rather than resolving it.",
+    needs: [
+      "A 1971 station line-up, or a St. Louis listing for 2 October 1971",
+    ],
+    where: [
+      "Broadcasting Yearbook 1972",
+      "St. Louis newspaper listings",
+    ],
+  },
+  {
+    key: "st-agency-name",
+    title: "Whose name is in the agency's title?",
+    course: "soul-train-the-business",
+    lesson: "a-second-pilot-in-color",
+    quote:
+      "This course does not pick. It prints both and files the question.",
+    severity: "low",
+    claim:
+      "One trade source names a three-partner firm; the memoir names a four-partner firm and gives a similar name as the account executive. A name that stands in the firm's title in one account is an employee in the other.",
+    question:
+      "What was the agency's name, and who handled the account?",
+    stakes:
+      "Low, and it is a neat example of how a name moves between roles in two tellings.",
+    needs: [
+      "A Chicago agency directory for 1969 to 1971",
+    ],
+    where: [
+      "Standard Directory of Advertising Agencies",
+    ],
+  },
+  {
+    key: "jpc-1970-sales",
+    title: "Two figures for one year's sales",
+    course: "soul-train-the-business",
+    lesson: "going-public-twice",
+    quote:
+      "Somebody's year is off by one, or somebody is measuring a different thing.",
+    severity: "low",
+    claim:
+      "The memoir gives one figure for 1970 sales; a newspaper obituary gives another for the same year.",
+    question:
+      "What were the company's sales in fiscal 1970?",
+    stakes:
+      "Low. Somebody's year is off by one, or somebody is measuring a different thing.",
+    needs: [
+      "The company's own annual report for fiscal 1970 or 1971",
+    ],
+    where: [
+      "Company filings",
+    ],
+  },
+  {
+    key: "jpc-afro-sheen-2000",
+    title: "Which brands travelled in the 2000 divestiture?",
+    course: "soul-train-the-business",
+    lesson: "what-happened-to-the-brands",
+    quote:
+      "Whether Afro Sheen travelled with Ultra Sheen through the 2000 divestiture, and who owns Johnson Products now, are not settled by anything read for this course.",
+    severity: "low",
+    claim:
+      "The course does not state which brands moved together in the divestiture, or who owns the company now.",
+    question:
+      "Which brands were included, and who holds them today?",
+    stakes:
+      "Low. The course says plainly that it does not know.",
+    needs: [
+      "The asset schedule, or the current trademark registrations",
+    ],
+    where: [
+      "Competition authority filings",
+      "Trademark registers",
+    ],
+  },
+  {
+    key: "jpc-pg-2003-route",
+    title: "A corporate route that is reported, not documented",
+    course: "soul-train-the-business",
+    lesson: "what-happened-to-the-brands",
+    quote:
+      "This route is reported rather than documented here.",
+    severity: "low",
+    claim:
+      "A later acquisition route is reported rather than documented here, and the table marks it as reported only.",
+    question:
+      "Did the business pass by that route, and when?",
+    stakes:
+      "Low, and the table already labels it.",
+    needs: [
+      "The acquirer's own filing or a contemporaneous report, fetched and read",
+    ],
+    where: [
+      "Company filings and financial press of 2003",
+    ],
+  },
+  {
+    key: "soul-unlimited-producer",
+    title: "Who was behind the production company?",
+    course: "soul-train-the-business",
+    lesson: "where-the-1973-sources-disagree",
+    quote:
+      "The course does not guess, and files the question.",
+    severity: "low",
+    claim:
+      "Whether the production company was connected to the host is not established, and the course does not guess.",
+    question:
+      "Who owned and ran that production company?",
+    stakes:
+      "Low.",
+    needs: [
+      "A corporate record, or a 1973 credit listing",
+    ],
+    where: [
+      "State corporate records",
+      "1973 broadcast credits",
+    ],
+  },
+  {
+    key: "st-2008-price-and-date",
+    title: "The 2008 sale's price and date",
+    course: "soul-train-the-business",
+    lesson: "the-2008-sale-and-the-library",
+    quote:
+      "The price was not disclosed.",
+    severity: "low",
+    claim:
+      "The price was not disclosed in what was read, and a May 2008 date circulates that the course does not print as fact.",
+    question:
+      "What was the price, and on what date was the sale announced?",
+    stakes:
+      "Low, and the course uses the dated report it actually read.",
+    needs: [
+      "A filing by either party, or a dated announcement",
+    ],
+    where: [
+      "Company filings",
+      "Trade press of 2008",
+    ],
+  },
+  {
+    key: "st-magic-johnson-2016-stake",
+    title: "Did the 2011 investor still hold a stake in 2016?",
+    course: "soul-train-the-business",
+    lesson: "an-investment-is-not-a-sale",
+    quote:
+      "Whether Magic Johnson still held a stake in 2016 is not established by anything read for this course.",
+    severity: "low",
+    claim:
+      "The 2011 transaction was an investment in the parent company, not a sale of the show, which is the correction this lesson exists to make. Whether that investor still held a stake at the 2016 sale is not established.",
+    question:
+      "Who were all the selling parties in 2016?",
+    stakes:
+      "Low, and the lesson's correction stands either way.",
+    needs: [
+      "A parent-company ownership record, or a 2016 report naming every selling party",
+    ],
+    where: [
+      "Company filings",
+      "Trade press of 2016",
+    ],
+  },
+  {
+    key: "st-syndicator-earnings",
+    title: "What the syndicators and the host earned",
+    course: "soul-train-the-business",
+    lesson: "who-else-got-paid",
+    quote:
+      "No source read for this course states what the syndicators earned on the programme.",
+    severity: "low",
+    claim:
+      "No source read states what the syndicators earned on the programme, what the host earned from it, or what a named partner's share was worth.",
+    question:
+      "What did each party actually earn?",
+    stakes:
+      "Low in evidence, high in interest: it is the question the course's title asks.",
+    needs: [
+      "A company filing, a court exhibit, or a trade report",
+    ],
+    where: [
+      "Company filings",
+      "Court exhibits",
+      "Trade press",
+    ],
+  },
+  {
+    key: "quincy-jones-cornelius-partnership",
+    title: "What was that partnership?",
+    course: "soul-train-the-business",
+    lesson: "who-says-it-mattered",
+    quote:
+      "What that partnership was is not established by anything read for this course.",
+    severity: "low",
+    claim:
+      "A partnership is referred to in secondary accounts and its nature is not established here.",
+    question:
+      "What was the venture, and what did it do?",
+    stakes:
+      "Low.",
+    needs: [
+      "A company record or a contemporaneous report naming the venture",
+    ],
+    where: [
+      "State corporate records",
+      "Trade press",
+    ],
+  },
+  {
+    key: "solar-records-founding",
+    title: "A label's founding year and roster",
+    course: "soul-train-the-business",
+    lesson: "the-partner-the-label-and-the-club",
+    quote:
+      "This course does not state them.",
+    severity: "low",
+    claim:
+      "The label's founding year and later roster are reported in secondary summaries rather than established, so the course does not state them.",
+    question:
+      "When was the label founded, and what was its roster?",
+    stakes:
+      "Low.",
+    needs: [
+      "A label discography or a contemporaneous trade report",
+    ],
+    where: [
+      "Trade press",
+      "Label discographies",
+    ],
+  },
+  {
+    key: "st-last-national-episode",
+    title: "The last national broadcast date",
+    course: "soul-train-the-business",
+    lesson: "the-2008-sale-and-the-library",
+    quote:
+      "The course does not print it.",
+    severity: "low",
+    claim:
+      "The course says the programme stayed on air until 2006, per a trade source. A specific last-episode date circulates and is reported only, so the course does not print it.",
+    question:
+      "What was the last national broadcast, and on what date?",
+    stakes:
+      "Low, and the course already states the year it can support.",
+    needs: [
+      "A station log or a trade listing for March 2006",
+    ],
+    where: [
+      "Station logs",
+      "Trade listings of 2006",
     ],
   },
 ];

@@ -179,6 +179,8 @@ const BACKLOG: Record<string, string> = {
     "PRIVATE until vetted, no series code. Reading federal hazard guidance and a regulation, risk comparison with stated denominators, and deciding when an amateur must stop: a real candidate for science, health and civics standards, to be MAPPED at the public flip rather than claimed now.",
   "how-a-house-stands-up":
     "PRIVATE, no series code. MAPPING PENDING, not a permanent excuse: load paths, material properties and reading a wall section are physics and technical reading, so it belongs in src/lib/standards/ once someone with building experience has checked the course.",
+  "soul-train-the-business":
+    "PRIVATE until vetted, no series code. Primary-source business history: reading trade press, a court opinion and a memoir against each other, plus ownership, financing and market-share arithmetic. A real candidate for economics, ELA and US-history standards, to be MAPPED at the public flip rather than claimed now.",
   "construction-safety":
     "PRIVATE study support, not published. Built from 29 CFR 1926 rather than a curriculum, and held for BAM alone while he takes a construction course elsewhere. No educator can see it, so there is nobody to make a standards promise to.",
   "construction-math":

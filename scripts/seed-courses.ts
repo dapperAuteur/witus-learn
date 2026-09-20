@@ -35,6 +35,7 @@ import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
 import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
 import { KEEPING_A_HOUSE_COURSE } from "./data/keeping-a-house-course";
 import { HOW_A_HOUSE_STANDS_UP_COURSE } from "./data/how-a-house-stands-up-course";
+import { SOUL_TRAIN_THE_BUSINESS_COURSE } from "./data/soul-train-the-business-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -586,6 +587,20 @@ async function main() {
     course: HOW_THE_TRADES_WORK_COURSE,
     category: "Careers & Media",
     additionalCategories: ["Money & Property"],
+  // "Soul Train: Who Paid, Who Owned, Who Got Paid". PRIVATE until vetted, by BAM's instruction of
+  // 2026-09-18 and his five answers of 2026-09-20: the outline is PROVISIONAL pending his review;
+  // Joe Cobb's royalty suit is taught as ALLEGATIONS in an UNRESOLVED case; Don Cornelius's death is
+  // given as a DATE and nothing else; the sponsor's 2025 memoir is cited as HIS ACCOUNT, never
+  // reproduced; and why Soul Unlimited ended stays OPEN until the June 1973 issues are read.
+  // Careers & Media with Culture & History beside it, which is what the multi-category feature was
+  // built for. NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "soul-train-the-business",
+    course: SOUL_TRAIN_THE_BUSINESS_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Culture & History"],
     navigationMode: "linear",
     price: 0,
     priceType: "free",
@@ -669,6 +684,7 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Private study. Structure is a subject where a wrong sentence can put a wall on somebody, so this is held while a reader with building experience checks it. It teaches knowledge and not skill, gives no span, header size, beam size or fastener schedule, implies no credential, approves no permit, inspects nothing, and substitutes for no trade program.",
+      "Private until vetted. A business history built from 1972 to 1974 trade press, a federal appeals court opinion, government and company releases, an open 2024 federal docket and the sponsor's own 2025 memoir. Three things are open and filed as research checks: why the 1973 rival show ended, the discrepancy between the 1977 opinion and the sponsor's account of the same case, and the outcome of the royalty suit, which lesson 22 states is unresolved and which must be re-checked before any public release.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
