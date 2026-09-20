@@ -6118,6 +6118,143 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     where: [
       "Station logs",
       "Trade listings of 2006",
+  // ── who-the-rule-leaves-out, filed 2026-09-20 with the course ──
+  {
+    key: "bbc-credit-rule-document",
+    title: "A document stating the BBC credit rule",
+    course: "who-the-rule-leaves-out",
+    lesson: "two-grades-of-paper",
+    severity: "high",
+    claim:
+      "No lesson says the BBC had a written policy forbidding individual credit, because nobody has read one. The course says what the papers say: a 1963 engineering monograph that names no maker, a 1964 internal memo from a head of department who could not get names printed, and the woman's own statement that the BBC would not allow the royalty split. A published history's phrase standard policy is always attributed.",
+    question:
+      "Is there a BBC document that states the credit rule in its own words?",
+    stakes:
+      "It is the one claim the whole Derbyshire half would rest on if it were made, and the course is built around refusing to make it.",
+    needs: [
+      "A BBC file stating the practice, or a scholar quoting one with its reference",
+      "The book page both scholars cite, which nobody in either pass has read",
+    ],
+    where: [
+      "BBC Written Archives Centre, files R97/9/1 and R97/11/1-2",
+      "Niebur, Special Sound, page 102",
+    ],
+  },
+  {
+    key: "payne-scott-own-letter-1950",
+    title: "Her own reply, which the course never quotes",
+    course: "who-the-rule-leaves-out",
+    lesson: "what-the-file-records",
+    severity: "high",
+    claim:
+      "The course quotes the CSIRO Chairman's 1950 letter from the archive's own transcript, and quotes him paraphrasing her. Her own reply has not been read, and the sentence plans/83 attributes to it appears nowhere in this course.",
+    question:
+      "What does her February 1950 reply actually say?",
+    stakes:
+      "plans/83 puts a famous sentence in her mouth that is not on the page anyone has read. Either the item confirms it or the catalogue has been repeating an unsourced quotation.",
+    needs: [
+      "The item itself, read or transcribed",
+    ],
+    where: [
+      "National Archives of Australia, A8520, PH/PAY/002",
+    ],
+  },
+  {
+    key: "dr-who-1963-broadcast-credit",
+    title: "What the 1963 broadcast and listing actually credited",
+    course: "who-the-rule-leaves-out",
+    lesson: "what-a-correction-can-reach",
+    severity: "medium",
+    claim:
+      "The course asserts only the wording of a 1964 BBC information sheet. The broadcast credit and the printed listing of November 1963 were not read: the listings database refused every fetch.",
+    question:
+      "What did the 23 November 1963 broadcast and the printed listing credit?",
+    stakes:
+      "The course's correction argument turns on what was credited at the time versus what was credited later.",
+    needs: [
+      "The printed listing for that date, and the broadcast credit",
+    ],
+    where: [
+      "BBC Genome",
+      "Radio Times archives",
+    ],
+  },
+  {
+    key: "grainer-royalty-request",
+    title: "The royalty offer, from anything but her account",
+    course: "who-the-rule-leaves-out",
+    lesson: "three-tellings-and-a-scene-nobody-saw",
+    severity: "medium",
+    claim:
+      "The offer to share royalties is known only from her own 2000 interview and from retellings of it. No contract, collecting-society record, BBC memo or statement by the composer has been found in two research passes.",
+    question:
+      "Is there any record of the royalty offer other than her account?",
+    stakes:
+      "The lesson teaches how a claim drifts across four retellings. A contemporaneous record would either anchor the story or show the drift began at the source.",
+    needs: [
+      "A contract, a collecting-society record, a BBC memo, or a statement by the composer",
+    ],
+    where: [
+      "BBC Written Archives",
+      "PRS and MCPS records",
+      "The composer's papers",
+    ],
+  },
+  {
+    key: "derbyshire-bbc-joining-date",
+    title: "1960 or 1962?",
+    course: "who-the-rule-leaves-out",
+    lesson: "two-grades-of-paper",
+    severity: "low",
+    claim:
+      "Both dates are true and the course says so: she joined the BBC in 1960 and the Radiophonic Workshop in 1962, per an obituary by a colleague and the university archive respectively.",
+    question:
+      "Do BBC personnel records confirm both dates?",
+    stakes:
+      "Low, and the apparent conflict is already resolved in the text.",
+    needs: [
+      "A personnel record giving both dates",
+    ],
+    where: [
+      "BBC Written Archives Centre",
+    ],
+  },
+  {
+    key: "payne-scott-1951-status",
+    title: "What ended her employment, and when",
+    course: "who-the-rule-leaves-out",
+    lesson: "not-a-stolen-byline",
+    severity: "low",
+    claim:
+      "The course teaches the marriage bar from the Chairman's letter and does not narrate the end of her employment beyond what that file supports.",
+    question:
+      "What do the records say about the end of her CSIRO employment?",
+    stakes:
+      "Low. The course's claim is about the rule, not the departure.",
+    needs: [
+      "The employment file",
+    ],
+    where: [
+      "National Archives of Australia",
+    ],
+  },
+  {
+    key: "payne-scott-security-file-reference",
+    title: "A second file, referenced but unread",
+    course: "who-the-rule-leaves-out",
+    lesson: "what-the-file-records",
+    severity: "low",
+    claim:
+      "A second archival reference is named in secondary accounts and has not been read, so only the dates it is said to cover are mentioned and nothing from its content is asserted.",
+    question:
+      "What does that file contain, and does it bear on the employment rule at all?",
+    stakes:
+      "Low, and the course deliberately does not stray into it.",
+    needs: [
+      "The file itself",
+    ],
+    where: [
+      "National Archives of Australia",
     ],
   },
 ];

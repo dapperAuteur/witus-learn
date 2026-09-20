@@ -30,6 +30,7 @@ import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
 import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
 import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
 import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
+import { WHO_THE_RULE_LEAVES_OUT_COURSE } from "./data/who-the-rule-leaves-out-course";
 import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
 import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
 import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
@@ -601,6 +602,26 @@ async function main() {
     course: SOUL_TRAIN_THE_BUSINESS_COURSE,
     category: "Careers & Media",
     additionalCategories: ["Culture & History"],
+  // "Who the Rule Leaves Out" (Delia Derbyshire E-03, Ruby Payne-Scott E-11, Zitkala-Sa E-06).
+  // PRIVATE. BAM decided on 2026-09-20 to keep her standalone course AND build this three-case one,
+  // and to cross-link them: section 4 here teaches her case as an INSTRUMENT and sends the learner
+  // to whose-name-is-on-the-score for the depth, which it names 8 times in lesson bodies and in 15
+  // quiz questions. The argument is that one rule was written down and quoted back at the woman it
+  // removed, one was never written at all, and one was a public register that recorded a man as
+  // author. Two binding conditions carry over and are stated in the text as RULES: the ceremony and
+  // the staging are never described, and no authorship share is ever asserted. A third rule governs
+  // the BBC half: no lesson says there was a written policy, because nobody has read one.
+  // NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-the-rule-leaves-out",
+    course: WHO_THE_RULE_LEAVES_OUT_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Careers & Media", "Science & Math", "Money & Property"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 14,
     navigationMode: "linear",
     price: 0,
     priceType: "free",
@@ -685,6 +706,7 @@ async function main() {
     publishHoldReason:
       "Private study. Structure is a subject where a wrong sentence can put a wall on somebody, so this is held while a reader with building experience checks it. It teaches knowledge and not skill, gives no span, header size, beam size or fastener schedule, implies no credential, approves no permit, inspects nothing, and substitutes for no trade program.",
       "Private until vetted. A business history built from 1972 to 1974 trade press, a federal appeals court opinion, government and company releases, an open 2024 federal docket and the sponsor's own 2025 memoir. Three things are open and filed as research checks: why the 1973 rival show ended, the discrepancy between the 1977 opinion and the sponsor's account of the same case, and the outcome of the royalty suit, which lesson 22 states is unresolved and which must be re-checked before any public release.",
+      "Private study, held for two reasons. The BBC half rests on an absence: no document stating the credit rule has been read, so the course says what the papers say and never that a written policy existed. And section 4 teaches a Native woman's case written by a non-Native author, so it needs a Native reviewer with the authority to change or cut any of it, matching whose-name-is-on-the-score.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two
