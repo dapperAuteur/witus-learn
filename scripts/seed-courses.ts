@@ -32,6 +32,7 @@ import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-recor
 import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
 import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
 import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
+import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -589,6 +590,31 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Private study for BAM. Every fee, hour, wage, code edition and examination figure was read on 2026-09-20 and prints that date, and several sit on sponsor and vendor pages that will move. Held private until those research checks are answered and the Indiana worked example has been re-checked against the ordinance and the state agencies.",
+  });
+
+  // "Reading the Plan and the Code" (H00 of the series "The House You Live In"). PRIVATE study by
+  // BAM's decision of 2026-09-20. Built from two PUBLIC-RELEASE Navy manuals and from state adoption
+  // rules, and it reprints no model code text: the model codes are closed, so the course teaches a
+  // learner to read their own jurisdiction's ADOPTION RULE, which is free and official. Nothing in
+  // it derives from the books in content/construction/. It answers the hedge construction-math
+  // shipped with, quoting that lesson's deferral sentence and mapping the course onto it.
+  // Series slug but NO series code, per the 2026-09-19 rule. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "read-the-plan-and-the-code",
+    course: READ_THE_PLAN_AND_THE_CODE_COURSE,
+    category: "Science & Math",
+    additionalCategories: ["Money & Property", "Careers & Media"],
+    seriesSlug: "the-house-you-live-in",
+    seriesTitle: "The House You Live In",
+    seriesOrder: 1,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Held private while BAM decides whether the construction series goes public. It reads drawings from two public-release Navy manuals and codes from public adoption rules, reprints no model code text, and states no adoption it could not verify on 2026-09-20.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

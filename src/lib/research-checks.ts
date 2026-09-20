@@ -5322,6 +5322,111 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The college's construction skills programme pages",
     ],
   },
+  // ── read-the-plan-and-the-code (H00), filed 2026-09-20 with the course ──
+  {
+    key: "indiana-residential-code-current-edition",
+    title: "Is Indiana's residential adoption rule still current?",
+    course: "read-the-plan-and-the-code",
+    lesson: "the-edition-year-is-not-this-year",
+    quote:
+      "The state's own register returned an empty document on 2026-09-20, so this was read on a mirror.",
+    severity: "high",
+    claim:
+      "The course teaches, verified 2026-09-20 on a university mirror of the administrative code, that the state rule adopts the 2018 residential code, first printing, and names the result the 2020 Indiana Residential Code. A reported 2025 readoption review of that article could not be confirmed, because the state's own register is a client-rendered application that returned an empty document on four attempts.",
+    question:
+      "Is that rule still the current one, and what became of the readoption review?",
+    stakes:
+      "The whole course teaches a learner to read the adoption rule for their own address. Its own worked example must not be stale, and this is the example.",
+    needs: [
+      "The rule as the state's own register publishes it, with the date read",
+      "The disposition of the readoption review",
+    ],
+    where: [
+      "The Indiana administrative code on the state register",
+      "The fire prevention and building safety commission",
+    ],
+  },
+  {
+    key: "indiana-electrical-code-1-9",
+    title: "Does a newer Indiana electrical adoption rule exist?",
+    course: "read-the-plan-and-the-code",
+    lesson: "the-edition-year-is-not-this-year",
+    severity: "high",
+    claim:
+      "The course teaches that the newest unrepealed electrical rule adopts the 2008 edition, first printing. Search summaries described a newer rule adopting the 2023 edition as a 2026 Indiana Electrical Code; it could not be confirmed on the state's own register, so the course reports it as reported and makes the lag itself the teaching point.",
+    question:
+      "Does a newer electrical adoption rule exist, and which edition does it adopt?",
+    stakes:
+      "This is the course's sharpest example: the title year and the adopted edition year are different numbers, and neither is this year. If a newer rule exists, the example changes and a learner buys the wrong book.",
+    needs: [
+      "The current electrical adoption rule from the state's own register, with the date read",
+    ],
+    where: [
+      "The Indiana administrative code, article 17",
+      "The fire prevention and building safety commission",
+    ],
+  },
+  {
+    key: "icc-nfpa-free-access-terms",
+    title: "What do the publishers' free-access offerings actually permit?",
+    course: "read-the-plan-and-the-code",
+    lesson: "what-a-code-is-and-who-made-it-law",
+    quote:
+      "Every publisher URL failed on 2026-09-20.",
+    severity: "medium",
+    claim:
+      "The course describes no publisher's free-access terms, because every publisher URL failed on 2026-09-20 (403, 404 or DNS). It tells the learner to read the terms they actually see and treat the course's paragraph as a lead.",
+    question:
+      "What do the two main model-code publishers' free-access offerings permit, in their own words?",
+    stakes:
+      "It decides how much of a code a learner may read without paying, which is the practical question behind the whole course.",
+    needs: [
+      "The terms as published, read from an account",
+    ],
+    where: [
+      "The model code publishers' free-access pages, which need an account BAM would have to create",
+    ],
+  },
+  {
+    key: "adoption-rule-availability-by-state",
+    title: "Do all states publish their adoption rule free?",
+    course: "read-the-plan-and-the-code",
+    lesson: "find-your-own-address",
+    quote:
+      "Only one state's rule was ever read.",
+    severity: "medium",
+    claim:
+      "The course says outright that only one state's adoption rule was ever read, and on a mirror at that. It does not claim the method works everywhere.",
+    question:
+      "Do all fifty states publish their code adoption free and online, and where does the method break?",
+    stakes:
+      "The course's closing exercise sends a learner to their own state. If some states hide the adoption behind a paywall, the exercise needs a fallback.",
+    needs: [
+      "A survey of how several states publish their adoption, with URLs",
+    ],
+    where: [
+      "State administrative codes and building commissions",
+    ],
+  },
+  {
+    key: "inspection-sequence-outside-one-county",
+    title: "Is the inspection sequence the same elsewhere?",
+    course: "read-the-plan-and-the-code",
+    lesson: "the-permit-and-the-inspection-sequence",
+    severity: "low",
+    claim:
+      "The inspection sequence is taught from one county's published list, named as one county's.",
+    question:
+      "How much does the published inspection sequence vary between jurisdictions, and what does an Indiana one look like?",
+    stakes:
+      "Low. The lesson already attributes it. Two or three more lists would let it teach the shape rather than one example.",
+    needs: [
+      "Two or three more published inspection lists, ideally one in Indiana",
+    ],
+    where: [
+      "County and city building department pages",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
