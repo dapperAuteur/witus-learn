@@ -26,6 +26,7 @@ import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
 import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-prize-course";
+import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -442,6 +443,26 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Private study for BAM (plans/83). Built from public institutional records: the Pritzker Architecture Prize's own 1991 laureate page, jury citation and laureate list, the 2013 jury letter as reproduced by ArchDaily, the author's own published essay, and the AIA's Gold Medal rule.",
+  });
+
+  // "Notes Made by Mr. George Hunt" (plans/83 E-04). PRIVATE study, by BAM's approval of
+  // plans/future-courses/uncredited/2026-09-18-george-hunt-brief.md on 2026-09-19, under the A6
+  // condition he confirmed: no stories, songs, prayers, hereditary names or ceremonial detail, and
+  // no Kwak'wala personal name printed anywhere. The subject is the CREDIT RECORD (title pages,
+  // archive filing, the named re-attribution work), never the knowledge. NO series code. The hold
+  // names the reviewer it waits on, as the accessibility courses do. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "notes-made-by-mr-george-hunt",
+    course: GEORGE_HUNT_COURSE,
+    category: "Culture & History",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Held private until a Kwakwaka'wakw reader has reviewed it, proposed through the U'mista Cultural Centre, which co-presented The Story Box, with the authority to change or cut any part. Written from public catalogue records, archive pages and published scholarship; it prints no Kwak'wala personal name and no ceremonial detail, and says so in its own text.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

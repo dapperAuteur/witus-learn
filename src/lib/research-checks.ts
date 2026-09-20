@@ -4363,6 +4363,181 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["The adoption date, with the AIA document that records it"],
     where: ["AIA board resolutions", "AIA award programme histories and the institute's archives"],
   },
+  // ── notes-made-by-mr-george-hunt, filed 2026-09-20 with the course ──
+  {
+    key: "hunt-kwakiutl-texts-title-page",
+    title: "How is George Hunt's credit actually set in type on the Kwakiutl Texts title pages?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "four-rungs-and-two-absences",
+    quote:
+      "Nobody in this course has read the printed title page.",
+    severity: "high",
+    claim:
+      "Four catalogue records and the Bard curators state Hunt is named on the title pages as author or co-author. The course ATTRIBUTES this and never asserts it, and two quiz questions test the distinction.",
+    question:
+      "On the printed title pages of Kwakiutl Texts (1902-1905) and Kwakiutl Texts: Second Series (1906), is Hunt named, in the same size type as Boas or smaller, joined by a conjunction or set on a separate line?",
+    stakes:
+      "The TOP RUNG of the course credit ladder. If the page sets Hunt in smaller type, or omits him from the first series, lesson 2's count of author or co-author on three publications needs revising.",
+    needs: [
+      "The title pages of both series, read as printed",
+    ],
+    where: [
+      "AMNH Digital Library, handles 2246/23 and 2246/22, downloaded in a BROWSER (the API refuses anonymous requests with HTTP 401; HathiTrust, BHL and Gallica returned 403; the first series is not on the Internet Archive)",
+      "BAM's manual link list, task 308",
+    ],
+  },
+  {
+    key: "hunt-note-on-a-broken-promise",
+    title: "Hunt's note accusing Boas of publishing a promised secret",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "who-decides-what-is-published",
+    quote:
+      "Columbia reports such a note, and what Hunt consented to have published is an open question.",
+    severity: "medium",
+    claim:
+      "Columbia's 2023 post reports a note in which Hunt accuses Boas of publishing information he had promised not to make public. The post does not identify the page, and the course builds nothing on it.",
+    question:
+      "In which volume and on which page of the Hunt manuscripts does that note appear, and what does it say?",
+    stakes:
+      "It would be the only evidence in this record where the person being published objects in his own hand while both men were alive.",
+    needs: [
+      "The volume and page, and the wording as written",
+    ],
+    where: [
+      "Columbia University Rare Book and Manuscript Library; ask RBML which volume",
+    ],
+  },
+  {
+    key: "hunt-1929-medal-letter",
+    title: "The January 1929 letter about a medal",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "who-decides-what-is-published",
+    severity: "low",
+    claim:
+      "Columbia's 2023 post quotes a January 1929 letter in which Hunt writes that he thinks Boas should get him a medal for these writings. The letter is at the APS and was not read for this course.",
+    question:
+      "What does the January 1929 letter say, in full, and what is its exact date?",
+    stakes:
+      "Low. It colours how Hunt saw his own standing, and the course reports it as Columbia's report rather than as his words.",
+    needs: [
+      "The letter itself, with its date and full sentence",
+    ],
+    where: [
+      "American Philosophical Society, Hunt and Boas correspondence, indexed at over 1000 pages",
+    ],
+  },
+  {
+    key: "hunt-birth-and-death-dates",
+    title: "1854 to 1933, or 1856 to 1931?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "fort-rupert-and-a-record-that-varies",
+    quote:
+      "The American Philosophical Society gives 1856 to 1931.",
+    severity: "medium",
+    claim:
+      "Bard and the Canadian Encyclopedia give 1854 to 1933; the American Philosophical Society gives 1856 to 1931. The course uses 1854-1933 and names the disagreement in the lesson.",
+    question:
+      "What years do the records give for George Hunt's birth and death?",
+    stakes:
+      "A course about a record that cannot spell a name twice the same way should be able to say when the man lived.",
+    needs: [
+      "A baptismal, census, Hudson's Bay Company post or vital record naming the year",
+    ],
+    where: [
+      "British Columbia vital statistics",
+      "Fort Rupert post records",
+      "The APS authority record for the collection",
+    ],
+  },
+  {
+    key: "columbia-hunt-page-and-volume-count",
+    title: "Nearly 8,000 pages in 14 volumes, or about 8,500 in thirty?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "filed-as-boass-gift",
+    quote:
+      "Two pages from one university, two counts, two volume figures.",
+    severity: "low",
+    claim:
+      "Columbia's RBML post says nearly 8,000 pages in 14 volumes; the same university's 2023 acquisitions list says about 8,500 pages in thirty volumes. The course prints both and teaches the disagreement.",
+    question:
+      "What do the finding aid's own figures say, and what is its call number?",
+    stakes:
+      "Low, and the lesson uses the disagreement deliberately. Settling it would let the course state one figure.",
+    needs: [
+      "The figure in the finding aid itself, and the call number",
+    ],
+    where: [
+      "Columbia RBML finding aid, George Hunt Kwak'wala ethnographic manuscripts",
+    ],
+  },
+  {
+    key: "story-box-umista-dates",
+    title: "When did The Story Box show at U'mista?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "the-story-box",
+    quote:
+      "The dates of the Alert Bay showing are not settled by any source this course read.",
+    severity: "low",
+    claim:
+      "The Bard exhibition page gives 14 February to 7 July 2019 for the New York showing and says the exhibition was also at the U'mista Cultural Centre, without dates. Two secondary records disagree about the Alert Bay run.",
+    question:
+      "What were the dates of The Story Box at the U'mista Cultural Centre in Alert Bay?",
+    stakes:
+      "Low. The course says plainly that its sources do not settle them.",
+    needs: [
+      "The U'mista Cultural Centre's own announcement of its run",
+    ],
+    where: [
+      "U'mista Cultural Centre, Alert Bay",
+      "The Bard Graduate Center exhibition archive",
+    ],
+  },
+  {
+    key: "hunt-600-pages-of-corrections-whereabouts",
+    title: "Where are Hunt's 600 pages of corrections?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "six-hundred-pages-of-corrections",
+    quote:
+      "Whether those six hundred pages were ever printed, and where they are now, is not established by anything read for this course.",
+    severity: "medium",
+    claim:
+      "Bard states that by his death in 1933 Hunt had sent Boas more than 600 pages of corrections and emendations. Nothing fetched says where they are held or whether any were printed.",
+    question:
+      "Where are those pages now, and was any of that work ever published?",
+    stakes:
+      "The course's closing argument is that the correcting never stopped. Knowing whether the corrections were printed is the difference between a record that was fixed and one that was filed.",
+    needs: [
+      "The archival location, and whether the corrections have been or will be published",
+    ],
+    where: [
+      "The Distributed Text project, Bard Graduate Center",
+      "APS CNAIR",
+      "Columbia RBML",
+      "American Museum of Natural History",
+    ],
+  },
+  {
+    key: "hunt-1900-potlatching-case-record",
+    title: "What did the 1900 court actually find?",
+    course: "notes-made-by-mr-george-hunt",
+    lesson: "the-book-as-evidence",
+    quote:
+      "It does not show what the court found decisive, because nobody in this course has read the court record.",
+    severity: "low",
+    claim:
+      "Bard records that after Hunt's arrest for potlatching, Boas mailed a copy of the 1897 book to a colleague in Victoria to be entered in court, and that Hunt was acquitted. The course says the book was entered and an acquittal followed, never that the book saved him.",
+    question:
+      "What was the charge, and what reason did the court give for the acquittal?",
+    stakes:
+      "Low, and the lesson is built on the gap. A record would let the course say what the book did rather than what followed it.",
+    needs: [
+      "The court record, or a contemporary newspaper report naming the charge and the reason",
+    ],
+    where: [
+      "British Columbia Archives, Victoria",
+      "Victoria and Vancouver newspapers of 1900",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
