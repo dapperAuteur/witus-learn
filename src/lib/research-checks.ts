@@ -6398,6 +6398,182 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The society's journal archive",
     ],
   },
+  // ── the-mark-and-the-star (Judith Leyster), filed 2026-09-21 with the course ──
+  {
+    key: "leyster-times-31-may-1893",
+    title: "The London newspaper report of the 1893 hearing",
+    course: "the-mark-and-the-star",
+    lesson: "may-1893-and-a-name-never-spoken",
+    severity: "medium",
+    claim:
+      "Four lessons lean on the 1893 court hearing, and the newspaper report of it is paywalled and was never obtained. Two other weeklies of the same week may carry the same material and be easier to get.",
+    question:
+      "What did the contemporary report say the court heard, and who said it?",
+    stakes:
+      "The case is a third of the course, and it is currently reconstructed from the article and later accounts rather than from a report of the hearing.",
+    needs: [
+      "The newspaper report of 31 May 1893, or one of the two weeklies of 3 June 1893",
+    ],
+    where: [
+      "The newspaper's own archive",
+      "A library's 1893 periodicals",
+    ],
+  },
+  {
+    key: "leyster-crabbe-panel-identity",
+    title: "Is the tampered panel the one a modern scholar calls a copy?",
+    course: "the-mark-and-the-star",
+    lesson: "the-twin-that-was-tampered-with",
+    severity: "medium",
+    claim:
+      "Neither source says so. The course prints both descriptions side by side, a century apart, and says in the lesson why it will not join them.",
+    question:
+      "Are the 1890 Crabbe panel and the copy described in modern scholarship the same picture?",
+    stakes:
+      "Joining them would be the exact move the course teaches learners to catch, so it stays open until a document connects them.",
+    needs: [
+      "A provenance chain linking the 1890 sale to a picture now located",
+    ],
+    where: [
+      "Sale records after 12 June 1890",
+      "The modern catalogue raisonne",
+    ],
+  },
+  {
+    key: "leyster-crabbe-whereabouts",
+    title: "Where the tampered panel went after 1890",
+    course: "the-mark-and-the-star",
+    lesson: "the-twin-that-was-tampered-with",
+    severity: "medium",
+    claim:
+      "The article says its whereabouts after the June 1890 Paris sale were unknown to him, and nothing since has been read.",
+    question:
+      "Where did the panel go after the 1890 sale?",
+    stakes:
+      "It is what would settle the previous check.",
+    needs: [
+      "Sale and collection records after 1890",
+    ],
+    where: [
+      "Paris sale records",
+      "Provenance databases",
+    ],
+  },
+  {
+    key: "leyster-nga-self-portrait",
+    title: "A museum record that would not load",
+    course: "the-mark-and-the-star",
+    lesson: "always-as-fr-hals",
+    severity: "medium",
+    claim:
+      "A museum record and its sale note were verified in an earlier pass but failed to re-fetch twice during the build, so the course drops them entirely rather than cite a source a learner cannot open.",
+    question:
+      "What does the museum's record say, including its provenance note?",
+    stakes:
+      "It is a clean example of the course's own subject, currently absent because the page would not load.",
+    needs: [
+      "The museum's object record",
+    ],
+    where: [
+      "The gallery's collection pages and open data",
+    ],
+  },
+  {
+    key: "leyster-1642-inventory-match",
+    title: "Has the 1642 inventory entry been matched since?",
+    course: "the-mark-and-the-star",
+    lesson: "his-seven-pictures",
+    severity: "low",
+    claim:
+      "The article discusses a 1642 inventory entry; whether anyone has matched it to a surviving picture since is not established here, and the reproduction is too coarse to judge details.",
+    question:
+      "Has that entry been identified with a known painting?",
+    stakes:
+      "Low. It would add one picture to a list the course already gives as his.",
+    needs: [
+      "Modern scholarship on the inventory",
+    ],
+    where: [
+      "The catalogue raisonne",
+      "Dutch archival scholarship",
+    ],
+  },
+  {
+    key: "leyster-mark-to-pound-1893",
+    title: "The 1893 exchange rate",
+    course: "the-mark-and-the-star",
+    lesson: "may-1893-and-a-name-never-spoken",
+    severity: "low",
+    claim:
+      "The price is given in Mark as the article gives it, and no conversion to sterling is printed, because the rate was not verified.",
+    question:
+      "What was the Mark to pound rate in 1893?",
+    stakes:
+      "Low, and the lesson works in the currency the document uses.",
+    needs: [
+      "A contemporary exchange rate",
+    ],
+    where: [
+      "Financial histories of the period",
+    ],
+  },
+  {
+    key: "leyster-birth-year",
+    title: "Three sources, three birth years",
+    course: "the-mark-and-the-star",
+    lesson: "a-mark-a-star-and-a-hand-that-varied",
+    severity: "low",
+    claim:
+      "Three sources give three answers and no document was read, so the course prints none.",
+    question:
+      "What does the record say?",
+    stakes:
+      "Low. Nothing in the argument depends on it.",
+    needs: [
+      "A baptismal or civil record",
+    ],
+    where: [
+      "Haarlem archives",
+    ],
+  },
+  {
+    key: "leyster-engerth-or-engert",
+    title: "One collector, two spellings, one article",
+    course: "the-mark-and-the-star",
+    lesson: "his-seven-pictures",
+    severity: "low",
+    claim:
+      "The article spells the Vienna collector one way in the main text and another in its addendum. The course prints both and settles neither.",
+    question:
+      "Which spelling is right?",
+    stakes:
+      "Low, and the disagreement is itself a small lesson in reading a printed source.",
+    needs: [
+      "A Vienna collection catalogue of the period",
+    ],
+    where: [
+      "Viennese collection records",
+    ],
+  },
+  {
+    key: "leyster-transposed-plate",
+    title: "Did the journal ever print an erratum?",
+    course: "the-mark-and-the-star",
+    lesson: "the-myth-and-the-correction-corrected",
+    severity: "low",
+    claim:
+      "The article miscites its own plate: the text points to one page and the picture sits on another. No erratum has been looked for.",
+    question:
+      "Did a later issue correct it?",
+    stakes:
+      "Low, and the mistake is used in the course as an example of a founding document's own slip.",
+    needs: [
+      "Later issues of the same volume year",
+    ],
+    where: [
+      "The journal's run",
+    ],
+  },
   // ── whose-names-the-payroll-kept (Central Pacific), filed 2026-09-21 with the course ──
   {
     key: "cprr-payroll-102-chinese-characters",
