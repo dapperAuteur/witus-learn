@@ -6398,6 +6398,160 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The society's journal archive",
     ],
   },
+  // ── painted-in-court (Margaret Keane), filed 2026-09-21 with the course ──
+  {
+    key: "keane-memorandum-official-text",
+    title: "Check every quotation against a court source",
+    course: "painted-in-court",
+    lesson: "what-a-correction-can-reach",
+    severity: "high",
+    claim:
+      "About forty quotations carry this Tier 2 course, and all of them come from a commercial database's reproduction of the memorandum rather than from a court source. Every sentence was matched against that reproduction's own text, and three quoting defects were found and fixed before shipping, but the reproduction itself has not been checked against the court.",
+    question:
+      "Do the quoted sentences match the opinion as the court issued it?",
+    stakes:
+      "It is the deciding document of the whole course. Closing this also makes the text hostable as a federal work, which the reproduction is not.",
+    needs: [
+      "The opinion from a court source, read against the quotations",
+    ],
+    where: [
+      "The Ninth Circuit's own records",
+      "A law library's reporter volumes",
+    ],
+  },
+  {
+    key: "keane-trial-judge-identity",
+    title: "Two documents name two different judges",
+    course: "painted-in-court",
+    lesson: "a-jury-decides-an-appeal-reviews",
+    severity: "medium",
+    claim:
+      "The caption names one judge as presiding; two later accounts name a different judge as granting the directed verdict. The course states that it cannot resolve this.",
+    question:
+      "Which judge presided, and which granted the directed verdict?",
+    stakes:
+      "A course about reading a court record should be able to say who the judge was.",
+    needs: [
+      "The docket, or the trial record",
+    ],
+    where: [
+      "The district court's docket",
+    ],
+  },
+  {
+    key: "keane-declaratory-and-malicious-prosecution",
+    title: "Two claims named once and never resolved",
+    course: "painted-in-court",
+    lesson: "what-a-correction-can-reach",
+    severity: "medium",
+    claim:
+      "The opening paragraph names a declaratory judgment claim and a malicious prosecution claim. Neither is resolved anywhere in the memorandum, and the course does not guess.",
+    question:
+      "What became of those two claims?",
+    stakes:
+      "If a declaratory judgment on authorship was entered, the course's central line, that no court in this record decided who painted the pictures, would need rewriting rather than amending.",
+    needs: [
+      "The judgment, or the docket entries for both claims",
+    ],
+    where: [
+      "The district court's docket",
+    ],
+  },
+  {
+    key: "keane-jury-instructions",
+    title: "The instructions the jury actually got",
+    course: "painted-in-court",
+    lesson: "the-scene-everybody-remembers",
+    severity: "medium",
+    claim:
+      "A lesson hedges on what the jury was instructed, because the instructions have not been read in full.",
+    question:
+      "What did the instructions say on the questions this course discusses?",
+    stakes:
+      "The hedge is load-bearing: what a jury was asked decides what its verdict means.",
+    needs: [
+      "The jury instructions in full",
+    ],
+    where: [
+      "The trial record",
+    ],
+  },
+  {
+    key: "keane-unpublished-citation-rule-today",
+    title: "What the citation rules say now",
+    course: "painted-in-court",
+    lesson: "what-a-correction-can-reach",
+    severity: "low",
+    claim:
+      "The course states only what the 1990 note says about itself, and asserts nothing about today's rules.",
+    question:
+      "What do the circuit's rules now say about citing unpublished dispositions?",
+    stakes:
+      "Low. The lesson's point is about 1990 and stands either way.",
+    needs: [
+      "The current rule",
+    ],
+    where: [
+      "The Ninth Circuit's rules",
+    ],
+  },
+  {
+    key: "keane-1982-prior-proceeding",
+    title: "The proceeding behind the malicious prosecution claim",
+    course: "painted-in-court",
+    lesson: "a-jury-decides-an-appeal-reviews",
+    severity: "low",
+    claim:
+      "The claim rests on an earlier proceeding the memorandum does not describe.",
+    question:
+      "What was that earlier proceeding, and how did it end?",
+    stakes:
+      "Low, and the course does not rely on it.",
+    needs: [
+      "The earlier case's record",
+    ],
+    where: [
+      "Court dockets of the period",
+    ],
+  },
+  {
+    key: "keane-bankruptcy-outcome",
+    title: "What the 1987 bankruptcy decided",
+    course: "painted-in-court",
+    lesson: "what-a-correction-can-reach",
+    severity: "low",
+    claim:
+      "One account reports a 1987 filing, attributed. Two retellings use the bankruptcy to explain where the money went, and the course asserts nothing about its outcome.",
+    question:
+      "What did the bankruptcy proceeding decide, and what happened to the judgment?",
+    stakes:
+      "Low for the course's argument, but it is the usual explanation offered for a judgment that was never collected.",
+    needs: [
+      "The bankruptcy docket",
+    ],
+    where: [
+      "The bankruptcy court's records",
+    ],
+  },
+  {
+    key: "keane-death-date",
+    title: "A date the obituary's read sentences do not give",
+    course: "painted-in-court",
+    lesson: "the-scene-everybody-remembers",
+    severity: "low",
+    claim:
+      "Her age, cause of death and location are attributed to an obituary; the date appears only in search summaries, so the course does not print it.",
+    question:
+      "What is the date?",
+    stakes:
+      "Low, and nothing rests on it.",
+    needs: [
+      "An obituary or record giving the date",
+    ],
+    where: [
+      "The newspaper's own archive",
+    ],
+  },
   // ── who-gets-nominated (Chien-Shiung Wu), filed 2026-09-21 with the course ──
   {
     key: "wu-proposed-cobalt-60-method",

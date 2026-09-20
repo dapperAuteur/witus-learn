@@ -25,6 +25,7 @@ import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
 import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
+import { PAINTED_IN_COURT_COURSE } from "./data/painted-in-court-course";
 import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
 import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
 import { KEEPING_A_HOUSE_COURSE } from "./data/keeping-a-house-course";
@@ -688,6 +689,32 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Private study for BAM (plans/83). A live credit dispute with a named contesting party, the Fondation Jerome Lejeune, which publishes its own documents. Built from the Inserm ethics committee's 2014 opinion, the Foundation's three published texts, Inserm's own listing page, and the 1959 and 1969 index records. It reaches no verdict, because the documents it could read do not support one, and it says so.",
+  });
+
+  // "Painted in Court" (Margaret Keane, plans/83 E-01). PRIVATE, by BAM's approval of 2026-09-21,
+  // built after he found the full Ninth Circuit memorandum himself. It contradicts the popular
+  // telling twice: the four-million-dollar award was VACATED as so grossly excessive that it shocks
+  // the conscience, and the copyright claim in the case was HIS counterclaim against her, which
+  // failed on proof of copying rather than on any finding about authorship. NO court in this record
+  // decided who painted the pictures, and the course says so twice. The courtroom painting
+  // demonstration appears NOWHERE in the twelve-page opinion, which a learner can check.
+  // Tier 2 (law). NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "painted-in-court",
+    course: PAINTED_IN_COURT_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Civics"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 15,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from the full Ninth Circuit memorandum in Keane v. Keane, No. 87-1741, decided 18 January 1990, read part by part. It contradicts the popular telling twice: the four-million-dollar award was vacated as so grossly excessive that it shocks the conscience, and the copyright claim was his counterclaim against her. No court in this record decided who painted the pictures. The opinion was read from a commercial database's reproduction rather than a court source, so every quotation is flagged for checking, and the course tells the learner so in a lesson rather than only in a comment.",
   });
 
   // "Who Gets Nominated" (Chien-Shiung Wu, plans/83 E-10). PRIVATE, by BAM's approval of 2026-09-20.
