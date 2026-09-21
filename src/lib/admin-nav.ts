@@ -57,6 +57,13 @@ export const ADMIN_NAV: AdminNavItem[] = [
     ownerOnly: true,
   },
   { href: "/admin/live", title: "Live", desc: "Schedule and run live sessions.", icon: "🔴", ownerOnly: true },
+  {
+    href: "/admin/teacher-age",
+    title: "Teacher age rule",
+    desc: "Teachers must be adults: the platform-wide switch and per-person exceptions.",
+    icon: "🛡️",
+    ownerOnly: true,
+  },
   { href: "/admin/documentarian", title: "Documentarian", desc: "Course-family build tracker, check off + leave notes.", icon: "🎬", ownerOnly: true },
   { href: "/admin/future", title: "Future classes & features", desc: "Proposed courses + features to review, leave notes Claude reads.", icon: "🔮", ownerOnly: true },
   { href: "/admin/research", title: "Source checks", desc: "Facts needing a primary source Claude cannot reach; answer one and it fixes the lesson.", icon: "🔎", ownerOnly: true },

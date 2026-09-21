@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { forbidden } from "next/navigation";
 import { requireUserPage } from "@/lib/session";
-import { isTenantAdmin } from "@/lib/api";
 import { getScopedDb } from "@/db/scoped";
-import { getCohort, listMembers, listPendingInvites } from "@/db/queries/cohorts";
+import { getCohort, listCohortTeachers, listMembers, listPendingInvites } from "@/db/queries/cohorts";
 import { listPresent } from "@/db/queries/live-chat";
 import { getSiteUrl } from "@/lib/site-url";
 import { CohortRoster } from "@/components/cohort-roster";
+import { canAssignCohortTeachers, canManageCohort } from "@/lib/cohort-access";
+import { CohortTeachers } from "@/components/cohort-teachers";
 
 export async function generateMetadata({
   params,
@@ -30,14 +31,16 @@ export default async function CohortRosterPage({ params }: { params: Promise<{ i
 
   const found = await getCohort(sdb.tenantId, id);
   const cohort = sdb.ownOrNotFound(found);
-  // Any signed-in user manages only their own cohorts; brand admins/owner see any.
-  if (cohort.ownerId !== session.user.id && !(await isTenantAdmin(session, sdb.tenantId))) forbidden();
+  // The creator, an assigned teacher, or a brand admin/owner (src/lib/cohort-access.ts).
+  if (!(await canManageCohort(session, sdb.tenantId, cohort))) forbidden();
 
-  const [members, present, pendingInvites, siteUrl] = await Promise.all([
+  const [members, present, pendingInvites, siteUrl, teachers, canAssign] = await Promise.all([
     listMembers(sdb.tenantId, cohort.id),
     listPresent(sdb.tenantId),
     listPendingInvites(sdb.tenantId, cohort.id),
     getSiteUrl(),
+    listCohortTeachers(sdb.tenantId, cohort.id),
+    canAssignCohortTeachers(session, sdb.tenantId, cohort),
   ]);
   const presentIds = new Set(present.map((p) => p.userId));
 
@@ -69,6 +72,10 @@ export default async function CohortRosterPage({ params }: { params: Promise<{ i
         >
           Printable report (PDF)
         </Link>
+      </div>
+
+      <div className="mt-6">
+        <CohortTeachers cohortId={cohort.id} teachers={teachers} canAssign={canAssign} />
       </div>
 
       <div className="mt-6">

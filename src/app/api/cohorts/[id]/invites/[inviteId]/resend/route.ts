@@ -1,7 +1,8 @@
-import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
+import { apiContext, errorJson, json } from "@/lib/api";
 import { getCohort, refreshInvite } from "@/db/queries/cohorts";
 import { sendCohortInviteEmail } from "@/lib/emails";
 import { getSiteUrl } from "@/lib/site-url";
+import { canManageCohort } from "@/lib/cohort-access";
 
 type Params = { params: Promise<{ id: string; inviteId: string }> };
 
@@ -17,7 +18,7 @@ export async function POST(_req: Request, { params }: Params) {
 
   const cohort = await getCohort(sdb.tenantId, id);
   if (!cohort) return errorJson("Not found", 404);
-  if (cohort.ownerId !== session.user.id && !(await isTenantAdmin(session, sdb.tenantId))) {
+  if (!(await canManageCohort(session, sdb.tenantId, cohort))) {
     return errorJson("Forbidden", 403);
   }
 

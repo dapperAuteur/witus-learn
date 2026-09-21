@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { notFound, forbidden } from "next/navigation";
 import { requireUserPage } from "@/lib/session";
-import { isTenantAdmin } from "@/lib/api";
 import { getScopedDb } from "@/db/scoped";
 import { getCohort } from "@/db/queries/cohorts";
 import { getCohortGradebook } from "@/db/queries/gradebook";
 import { PrintButton } from "@/components/print-button";
 import { GradeAdjust } from "@/components/grade-adjust";
 import { AdjustedMark } from "@/components/adjusted-mark";
+import { canManageCohort } from "@/lib/cohort-access";
 
 export const metadata: Metadata = { title: "Cohort report" };
 
@@ -21,7 +21,7 @@ export default async function CohortReportPage({ params }: { params: Promise<{ i
 
   const cohort = await getCohort(sdb.tenantId, id);
   if (!cohort) notFound();
-  if (cohort.ownerId !== session.user.id && !(await isTenantAdmin(session, sdb.tenantId))) forbidden();
+  if (!(await canManageCohort(session, sdb.tenantId, cohort))) forbidden();
 
   const rows = await getCohortGradebook(sdb.tenantId, id);
 

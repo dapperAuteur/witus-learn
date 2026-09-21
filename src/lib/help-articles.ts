@@ -399,11 +399,17 @@ sessions for the school.`,
     slug: "cohorts",
     title: "Run a private class with Cohorts",
     category: "Live",
-    keywords: ["cohort", "class", "roster", "invite", "home school", "homeschool", "students", "who's here", "presence", "adjust grade", "override", "regrade"],
+    keywords: ["cohort", "class", "roster", "invite", "home school", "homeschool", "students", "who's here", "presence", "adjust grade", "override", "regrade", "teacher", "co-teacher", "assign", "adult", "18"],
     body: `# Cohorts
 
-**/cohorts** lets any signed-in user, not just brand admins, run a private class: the
-home-school use case (a parent asks you to teach their child + classmates live).
+**/cohorts** is where a school's teachers run private classes: the home-school use case (a parent
+asks you to teach their child + classmates live).
+
+**Who can create a class.** Teachers and admins of the school, who have confirmed they are **18 or
+older**. The first time, **/cohorts** asks you to tick "I am 18 or older"; an account that belongs to
+a student (a child profile, a kid login, or someone's linked student) can't. Not a teacher here? Ask
+an admin to create the class and **add you as its teacher**: it then appears on your /cohorts page
+and you run it exactly as its creator would.
 
 1. **Create a class**, give it a name (e.g. "Tuesday homeschool group").
 2. **Invite students by email** from the class's roster page. Each invite is a one-time link; if
@@ -412,7 +418,13 @@ home-school use case (a parent asks you to teach their child + classmates live).
 4. The roster shows **● here** next to any student currently present on /live, so you can see who
    showed up in real time. Remove a student from the roster at any time.
 
-You see only your own classes; brand admins/owner can see any class on the school.
+**Teachers of a class.** The class page lists its **Teachers**: the people who run it and whom its
+families can ask to talk. The class's creator or a school admin can **add a teacher by email** (they
+must be a confirmed adult) or remove one; a class always keeps at least one. The creator can take
+themselves off the list, for example an admin who set a class up for someone else, and still manage
+the class.
+
+You see the classes you created or teach; brand admins/owner can see any class on the school.
 
 ## Adjusting a grade (without rewriting it)
 
