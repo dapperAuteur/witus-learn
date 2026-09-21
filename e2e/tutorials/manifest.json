@@ -81,10 +81,11 @@
     {
       "article": "categories",
       "title": "Organize courses with categories",
+      "spec": "e2e/tutorials/categories.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": false,
       "sideEffects": "none",
-      "status": "todo",
+      "status": "passes",
       "notes": "Signed-out half only: the catalog's category chips at /courses, which is what categories are FOR. The Admin → Categories half (add/rename/delete) mutates the catalog and is not recorded."
     },
     {
@@ -99,10 +100,11 @@
     {
       "article": "vetting-and-coming-soon",
       "title": "Vetting a course, and the \"Coming soon\" page",
+      "spec": "e2e/tutorials/vetting-and-coming-soon.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": false,
       "sideEffects": "none",
-      "status": "todo",
+      "status": "passes",
       "notes": "Records the PUBLIC face only: a Coming-soon course page, the notify-me form and the 'Want to help this course open?' panel, both shown and never submitted (a submission creates a lead and mirrors to the WitUS Inbox). The owner's vetting queue mutates courses and is not recorded. A 7-step narrated script for the owner half already exists in src/lib/tutorial-scripts.ts."
     },
     {
@@ -126,11 +128,12 @@
     {
       "article": "live-sessions",
       "title": "Run a live session",
+      "spec": "e2e/tutorials/live-sessions.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": false,
       "sideEffects": "none",
-      "status": "todo",
-      "notes": "Signed-out half: the public /live page — live now, upcoming, recordings. The Admin → Live half (schedule, go live, end) mutates broadcast state and is not recorded."
+      "status": "passes",
+      "notes": "Signed-out half: the public /live page. PASSES against production 2026-09-21 with no sessions scheduled, so the take shows the page and the sign-in-gated Live chat and no Live now / Upcoming / Recordings sections; the spec logs which sections were on screen. The Admin → Live half (schedule, go live, end) mutates broadcast state and is not recorded."
     },
     {
       "article": "cohorts",
@@ -189,19 +192,21 @@
     {
       "article": "learner-feedback-and-reports",
       "title": "See learner feedback and problem reports",
+      "spec": "e2e/tutorials/learner-feedback-and-reports.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": false,
       "sideEffects": "none",
-      "status": "todo",
+      "status": "passes",
       "notes": "Signed-out half: the site-wide 🐞 Report a problem popover, opened and typed into but NEVER submitted (a submission files a real report and mirrors to the WitUS Inbox). The teacher-side queues (/teach → Curriculum feedback, Admin → Problem reports) show other people's reports and are not recorded."
     },
     {
       "article": "sharing-and-cross-promotion",
       "title": "Sharing, previews, and cross-promotion",
+      "spec": "e2e/tutorials/sharing-and-cross-promotion.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": false,
       "sideEffects": "none",
-      "status": "todo",
+      "status": "passes",
       "notes": "Signed-out: the Share popover on a course page. Copy link is NOT clicked — each channel click POSTs a share count to /api/share, which would inflate the admin dashboard's share signals."
     },
     {
@@ -225,11 +230,12 @@
     {
       "article": "sales-and-promotions",
       "title": "Sales and promotions (no promo code needed)",
+      "spec": "e2e/tutorials/sales-and-promotions.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": false,
       "sideEffects": "none",
-      "status": "todo",
-      "notes": "Signed-out half: the public /sale index — what is running now, starting soon, and ended. The Admin → Sales and promotions half starts and ends real sales and is not recorded."
+      "status": "passes",
+      "notes": "Signed-out half: the public /sale index — what is running now, starting soon, and ended. The Admin half starts and ends real sales and is not recorded. PASSES against production 2026-09-21, but it filmed the EMPTY STATE: no promotion on learn.witus.online carries a slug today, so the clip is only worth keeping once a campaign is live. The spec logs which face it filmed."
     },
     {
       "article": "streaming-and-multistream",
@@ -280,10 +286,11 @@
     {
       "article": "api-keys-and-embedding",
       "title": "Embed your courses in another app (API keys)",
+      "spec": "e2e/tutorials/api-keys-and-embedding.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": false,
       "sideEffects": "none",
-      "status": "todo",
+      "status": "passes",
       "notes": "Signed-out half: the two public paste-anywhere embeds, /embed/card/<id> and /embed/course/<id>. The key half is deliberately NOT recorded — /admin/api-keys shows a full API key exactly once, and a recording of that screen is a leaked credential."
     },
     {
