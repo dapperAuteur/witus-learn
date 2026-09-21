@@ -15,6 +15,9 @@ import { tenants } from "./tenancy";
 //                      phone and an availability note;
 //   contact_overrides  per-person exceptions to those defaults ("this one parent: through the
 //                      school only"), in every combination of the three modes;
+//   contact_cohort_overrides
+//                      a teacher's rule for a whole CLASS ("parents in Tuesday Science may not
+//                      contact me"), between the default and the per-person rule;
 //   contact_pings      "I'd like to talk": a signal, shown in-app first and emailed after 48 hours
 //                      only if the person who asked has not said they've connected.
 //
@@ -81,6 +84,35 @@ export const contactOverrides = pgTable(
 
 export type ContactOverride = typeof contactOverrides.$inferSelect;
 
+// Precedence, most specific first: per-person override > per-class override > default for the
+// asker's role (src/lib/contact.ts, effectiveMode).
+export const contactCohortOverrides = pgTable(
+  "contact_cohort_overrides",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    // The teacher whose rule this is...
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    // ...and the class it covers. Set only by a teacher of that class (PUT /api/contact/cohort-overrides).
+    cohortId: uuid("cohort_id")
+      .notNull()
+      .references(() => cohorts.id, { onDelete: "cascade" }),
+    mode: text("mode").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    unique("contact_cohort_overrides_tenant_user_cohort_uq").on(t.tenantId, t.userId, t.cohortId),
+    check("contact_cohort_overrides_mode_chk", sql`${t.mode} in ${CONTACT_MODE_SQL}`),
+  ],
+);
+
+export type ContactCohortOverride = typeof contactCohortOverrides.$inferSelect;
+
 // A ping names the STUDENT it is about (decided 2026-09-20: both adults see the student's name and a
 // link to their work), but a student is never a party: never the sender, never the recipient, and
 // the check constraints below make that a database fact. There is no body, subject, or message
@@ -107,8 +139,13 @@ export const contactPings = pgTable(
       .references(() => users.id, { onDelete: "cascade" }),
     fromRole: text("from_role").notNull(),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
-    // Set by the person who ASKED, once they have started talking outside the app. Ends the ping.
+    // When the ping ENDED: the asker marked "we've started talking", or (since 2026-09-20, migration
+    // 0065) the person asked closed it. Either way it leaves both pages and the badge, and the
+    // fallback email is never sent. The column keeps its original name so migration 0064 stands.
     connectedAt: timestamp("connected_at", { withTimezone: true }),
+    // Who ended it: the asker or the recipient. Null while active (and on pings ended before 0065).
+    // Never shown to the other person: that would be a "seen" signal, which the no-inbox rule bans.
+    closedBy: text("closed_by").references(() => users.id, { onDelete: "set null" }),
     // Set when the 48-hour fallback email went out (src/app/api/cron/contact-pings). One per ping.
     emailedAt: timestamp("emailed_at", { withTimezone: true }),
   },

@@ -10,6 +10,7 @@ import { CohortRoster } from "@/components/cohort-roster";
 import { canAssignCohortTeachers, canManageCohort } from "@/lib/cohort-access";
 import { CohortTeachers } from "@/components/cohort-teachers";
 import { AdultAttestation } from "@/components/adult-attestation";
+import { ClassContactRule } from "@/components/class-contact-rule";
 import { buildContactCards, type ContactCard } from "@/lib/contact-cards";
 import { brandName } from "@/lib/branding";
 
@@ -37,7 +38,7 @@ export default async function CohortRosterPage({ params }: { params: Promise<{ i
   // The creator, an assigned teacher, or a brand admin/owner (src/lib/cohort-access.ts).
   if (!(await canManageCohort(session, sdb.tenantId, cohort))) forbidden();
 
-  const [members, present, pendingInvites, siteUrl, teachers, canAssign, viewerTeaches, guardianLinks, contactSettings] =
+  const [members, present, pendingInvites, siteUrl, teachers, canAssign, viewerTeaches, guardianLinks, contactSettings, classRule] =
     await Promise.all([
       listMembers(sdb.tenantId, cohort.id),
       listPresent(sdb.tenantId),
@@ -48,6 +49,7 @@ export default async function CohortRosterPage({ params }: { params: Promise<{ i
       isCohortTeacher(sdb.tenantId, cohort.id, session.user.id),
       sdb.listGuardianLinksForCohort(cohort.id),
       sdb.getContactSettings(session.user.id),
+      sdb.getContactCohortOverride(session.user.id, cohort.id),
     ]);
   const presentIds = new Set(present.map((p) => p.userId));
 
@@ -113,6 +115,14 @@ export default async function CohortRosterPage({ params }: { params: Promise<{ i
       {showContact && contact?.viewerStatus === "unattested" && contact.cards.length > 0 ? (
         <div className="mt-6">
           <AdultAttestation purpose="Contacting your students' parents is for adults only. Confirm it once to see how to reach them." />
+        </div>
+      ) : null}
+
+      {/* A teacher's rule for this whole class: e.g. "parents in this class may not contact me".
+          Only for the class's teachers, and only once they are a confirmed adult. */}
+      {showContact && contact?.viewerStatus === "adult" ? (
+        <div className="mt-6">
+          <ClassContactRule cohortId={cohort.id} current={classRule} myDefault={contactSettings.parentsMode} />
         </div>
       ) : null}
 

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { getTableColumns } from "drizzle-orm";
-import { contactOverrides, contactPings, contactSettings } from "@/db/schema/contact";
+import { contactCohortOverrides, contactOverrides, contactPings, contactSettings } from "@/db/schema/contact";
 
 // The no-inbox rule (CLAUDE.md), as a test. Parent/teacher contact is a SIGNAL: a ping has no body,
 // no subject, and no thread. The day someone adds one, moderation, retention and disclosure
@@ -14,6 +14,7 @@ describe("contact tables carry no message", () => {
   it("contact_pings has exactly the columns of a signal", () => {
     expect(columnNames(contactPings)).toEqual(
       [
+        "closed_by",
         "cohort_id",
         "connected_at",
         "created_at",
@@ -30,7 +31,7 @@ describe("contact tables carry no message", () => {
 
   it("no contact table has a message-shaped column", () => {
     const messageish = /(body|message|subject|content|text|reply|thread|comment|read_at|seen_at)/;
-    for (const t of [contactPings, contactOverrides, contactSettings]) {
+    for (const t of [contactPings, contactOverrides, contactCohortOverrides, contactSettings]) {
       expect(columnNames(t).filter((n) => messageish.test(n))).toEqual([]);
     }
   });

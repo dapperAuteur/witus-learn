@@ -55,6 +55,10 @@ export const PUBLIC_ROADMAP: Record<RoadmapStatus, PublicRoadmapItem[]> = {
       body: "Link your child's account and see their progress, scores, and certificates, read-only, and export a gradebook as CSV or PDF.",
     },
     {
+      title: "Reach your child's teacher, without a message thread",
+      body: "Parents and teachers choose how the other side may reach them, per class or per person, and can ask to talk. The conversation happens by email or phone, never in an in-app inbox.",
+    },
+    {
       title: "Sign-in built for kids",
       body: "A child can sign in with an avatar and a PIN, no email required, or study under a profile you manage for them.",
     },

@@ -5,6 +5,22 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Admins can make someone a teacher** (\`feat/admin-teachers\`, no migration). BAM asked 2026-09-20,
+  once classes needed a teacher role to create: until now the instructor role could only be set by a
+  seed script, so a homeschool parent had no in-app way to run their own classes. **Admin → Teachers**
+  (\`/admin/teachers\`, brand admin or owner) lists the school's teachers and admins with their adult
+  status, **makes someone a teacher** by account email (instructor on THIS school only), and **removes**
+  the role (back to learner; classes they already teach stay theirs). Behind the same adult rule as
+  assigning a class teacher; admins are not managed here. Pure rules in \`src/lib/school-teachers.ts\`.
+- ✅ **Contact: the person asked can close a request, and teachers can set a rule for a whole class**
+  (\`feat/contact-close-and-class-rules\`, **migration 0065**, run \`pnpm db:migrate:prod\`). BAM's
+  follow-ups of 2026-09-20. **Close this request** on an incoming request ends it for both people and
+  cancels the 48-hour email; who closed it is recorded (\`contact_pings.closed_by\`) and never shown to
+  the asker, since a "seen" signal is exactly what the no-inbox rule bans. **Parent contact for this
+  class** on a class page lets its teachers set how that class's parents may reach them
+  (\`contact_cohort_overrides\`). Precedence, most specific first: the one-parent rule, then the class
+  rule, then the default; the unit test walks every combination of the three layers in both directions.
+  "First and last name" stays the single full-name field (\`users.name\`), as BAM confirmed.
 - ✅ **Reset the demo account from the admin home** (\`feat/admin-demo-reset-button\`, no migration). BAM
   asked 2026-09-20. A platform-owner-only **Reset demo data now** button in a "Demo account" section
   on \`/admin\` runs the same \`resetDemoData\` as the nightly cron, on demand

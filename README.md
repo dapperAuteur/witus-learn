@@ -610,7 +610,8 @@ Decided by BAM on 2026-09-20 (`plans/app-improvements/messaging-parents-teachers
 **Classes.** Only **adult teachers or admins** create a class (`POST /api/cohorts`: an instructor or
 brand_admin role, or the platform owner, AND the adult rule). A class can have **several teachers**
 (`cohort_teachers`, migration `0063`); its creator or a school admin adds one by email from the class
-page. Every "may run this class" check goes through [src/lib/cohort-access.ts](src/lib/cohort-access.ts).
+page. A school admin makes someone a teacher of the whole school (the instructor role) at
+**`/admin/teachers`**. Every "may run this class" check goes through [src/lib/cohort-access.ts](src/lib/cohort-access.ts).
 
 **"Adult"** is an "I am 18 or older" attestation (`user_profiles.adult_attested_at`) that no
 structural fact contradicts: a managed child, a kid (avatar and PIN) login, or being someone's linked
@@ -623,16 +624,17 @@ in four server-checked steps and kept after revocation. Pure rules:
 student's teacher) can see how to reach each other or ask to be reached; the talking happens by email
 or phone. Each person sets, per school, how the other side may reach them (**show my details**,
 **ask me to get in touch**, or **only through the school**), one default for parents and one for
-teachers, plus **per-person overrides** in any combination. A request ("ping") shows **in the app
+teachers, a **per-class rule** a teacher sets for one class, plus **per-person overrides** in any
+combination (most specific wins: person, then class, then default). A request ("ping") shows **in the app
 first**: a count on Family / Cohorts in the menu, and a card on `/family` or the class roster, naming
-the student and linking to their work. The person who asked marks **"We've started talking"**; if
-they have not after 48 hours, a daily cron (`/api/cron/contact-pings`, `CRON_SECRET`) sends the other
+the student and linking to their work. The person who asked marks **"We've started talking"**, or
+the person asked presses **"Close this request"**; if neither happens within 48 hours, a daily cron (`/api/cron/contact-pings`, `CRON_SECRET`) sends the other
 person **one** email with Reply-To set to the asker. No student is ever a party (check constraints),
 the relationship is recomputed on every read (`tests/isolation/contact.db.test.ts`, including the
 staleness case), the fallback email is not mirrored to the WitUS Inbox, and there is **no inbox**: no
 message body, no thread, no history view (`tests/contact-schema.test.ts`). Rules:
 [src/lib/contact.ts](src/lib/contact.ts); data: [src/db/queries/contact.ts](src/db/queries/contact.ts)
-(migration `0064`).
+(migrations `0064` and `0065`).
 
 ## Self-serve custom domains
 

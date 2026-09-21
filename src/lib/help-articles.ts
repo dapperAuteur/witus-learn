@@ -408,8 +408,8 @@ asks you to teach their child + classmates live).
 **Who can create a class.** Teachers and admins of the school, who have confirmed they are **18 or
 older**. The first time, **/cohorts** asks you to tick "I am 18 or older"; an account that belongs to
 a student (a child profile, a kid login, or someone's linked student) can't. Not a teacher here? Ask
-an admin to create the class and **add you as its teacher**: it then appears on your /cohorts page
-and you run it exactly as its creator would.
+an admin to **make you a teacher** (Admin → Teachers), or to create one class and **add you as its
+teacher**: it then appears on your /cohorts page and you run it exactly as its creator would.
 
 1. **Create a class**, give it a name (e.g. "Tuesday homeschool group").
 2. **Invite students by email** from the class's roster page. Each invite is a one-time link; if
@@ -437,10 +437,35 @@ on their own dashboard. A wrong adjustment is fixed by saving a newer one. Cours
 keep measuring real attempts only.`,
   },
   {
+    slug: "school-teachers",
+    title: "Make someone a teacher of your school",
+    category: "Live",
+    keywords: ["teacher", "instructor", "role", "admin", "add teacher", "remove teacher", "homeschool", "adult", "18"],
+    body: `# Teachers of your school
+
+**Admin → Teachers** (\`/admin/teachers\`) lists everyone who teaches or administers this school, and
+lets a school admin **make someone a teacher**.
+
+A **teacher** of the school can create classes (under **/cohorts**) and write courses (under
+**Teach**), on this school only. Making someone a teacher here never changes their role on any other
+school.
+
+1. Ask the person to **sign in to this school once**, so they have an account.
+2. If the platform requires teachers to be adults (the default), they also tick **"I am 18 or older"**
+   once; the Cohorts page offers it. An account that belongs to a student can't be made a teacher.
+3. On Admin → Teachers, enter their account email and press **Make a teacher**.
+
+**Remove teacher** takes the role away. Classes they already teach stay theirs; they just can't
+create new classes or courses here. Admins are managed separately and can't be removed on this page.
+
+**Just one class?** You don't have to make someone a teacher of the whole school. Create the class
+yourself, then on the class page **add them as its teacher**; they run that class and nothing else.`,
+  },
+  {
     slug: "parent-teacher-contact",
     title: "Contact a teacher or a parent (without messaging)",
     category: "Live",
-    keywords: ["contact", "parent", "teacher", "guardian", "ping", "talk", "email", "phone", "reach", "school", "message", "reply"],
+    keywords: ["contact", "parent", "teacher", "guardian", "ping", "talk", "email", "phone", "reach", "school", "message", "reply", "close", "class rule", "block"],
     body: `# Contact a teacher or a parent
 
 There are **no messages** in this app. Instead, a parent and their child's teacher can see how to
@@ -459,16 +484,22 @@ teachers of your children, the parents of your students) choose one:
   them, and you see their details with the request.
 - **Only through the school**: they can't ask you in the app and are pointed to the school instead.
 
+**Teachers can set a rule for a whole class** from that class's page (**Parent contact for this
+class**): for example, "parents in Tuesday Science may only contact me through the school".
+
 On each person's card you can set a **different rule for that one person**, in any combination (for
-example: parents may see your details, but one particular parent goes through the school).
+example: parents may see your details, but one particular parent goes through the school, or a class
+is closed to parents except one). **The most specific rule wins**: the one-person rule, then the
+class rule, then your default.
 
 **Asking to talk.** Press **Ask ... to get in touch** (or **Let ... know you'd like to talk**) on their
 card. They see a count next to **Family** or **Cohorts** in the menu, and your request on your card,
 with the student's name, a link to the student's work, and how to reach you. Once you have started
-talking, press **We've started talking**. If you haven't within **48 hours**, we email them once
-(checked once a day, so it arrives within the following day) and replying to that email reaches you
-directly. A request disappears after 14 days. You can ask the same person about the same student
-again a day later.
+talking, press **We've started talking**. The person you asked can also **Close this request**
+themselves, for example after calling you back; it then closes for both of you (you are not told who
+closed it). If neither happens within **48 hours**, we email them once (checked once a day, so it
+arrives within the following day) and replying to that email reaches you directly. A request
+disappears after 14 days. You can ask the same person about the same student again a day later.
 
 Changing your preferences never notifies anyone.`,
   },
