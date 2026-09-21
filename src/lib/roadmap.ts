@@ -5,6 +5,13 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Admins can make someone a teacher** (\`feat/admin-teachers\`, no migration). BAM asked 2026-09-20,
+  once classes needed a teacher role to create: until now the instructor role could only be set by a
+  seed script, so a homeschool parent had no in-app way to run their own classes. **Admin → Teachers**
+  (\`/admin/teachers\`, brand admin or owner) lists the school's teachers and admins with their adult
+  status, **makes someone a teacher** by account email (instructor on THIS school only), and **removes**
+  the role (back to learner; classes they already teach stay theirs). Behind the same adult rule as
+  assigning a class teacher; admins are not managed here. Pure rules in \`src/lib/school-teachers.ts\`.
 - ✅ **Reset the demo account from the admin home** (\`feat/admin-demo-reset-button\`, no migration). BAM
   asked 2026-09-20. A platform-owner-only **Reset demo data now** button in a "Demo account" section
   on \`/admin\` runs the same \`resetDemoData\` as the nightly cron, on demand

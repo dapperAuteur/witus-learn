@@ -610,7 +610,8 @@ Decided by BAM on 2026-09-20 (`plans/app-improvements/messaging-parents-teachers
 **Classes.** Only **adult teachers or admins** create a class (`POST /api/cohorts`: an instructor or
 brand_admin role, or the platform owner, AND the adult rule). A class can have **several teachers**
 (`cohort_teachers`, migration `0063`); its creator or a school admin adds one by email from the class
-page. Every "may run this class" check goes through [src/lib/cohort-access.ts](src/lib/cohort-access.ts).
+page. A school admin makes someone a teacher of the whole school (the instructor role) at
+**`/admin/teachers`**. Every "may run this class" check goes through [src/lib/cohort-access.ts](src/lib/cohort-access.ts).
 
 **"Adult"** is an "I am 18 or older" attestation (`user_profiles.adult_attested_at`) that no
 structural fact contradicts: a managed child, a kid (avatar and PIN) login, or being someone's linked

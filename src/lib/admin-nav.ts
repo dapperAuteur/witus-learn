@@ -40,6 +40,7 @@ export const ADMIN_NAV: AdminNavItem[] = [
     ownerOnly: true,
   },
   { href: "/admin/dashboard", title: "Dashboard", desc: "Learners, enrollments, completions + roster.", icon: "📊" },
+  { href: "/admin/teachers", title: "Teachers", desc: "Who teaches here; make someone a teacher so they can run classes.", icon: "🧑‍🏫" },
   { href: "/admin/gradebook", title: "School gradebook", desc: "Every learner's enrollments, lessons, quiz average + cohorts. Export CSV.", icon: "🧮" },
   { href: "/admin/settings", title: "Brand settings", desc: "Accent, branding, gamification, AI tutor, age-gate.", icon: "🎨" },
   { href: "/admin/categories", title: "Categories", desc: "Add, rename, or remove course categories.", icon: "🗂️" },

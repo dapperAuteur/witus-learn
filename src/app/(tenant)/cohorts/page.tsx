@@ -16,8 +16,8 @@ export const metadata: Metadata = { title: "Cohorts" };
 // classmates). Lists the classes this person created or was assigned to teach. Since 2026-09-20
 // only ADULT teachers or admins may create one (POST /api/cohorts enforces it; this page only
 // decides which of three things to show in the create slot): the form, the "confirm you are 18+"
-// card, or a plain explanation of who can. A parent-teacher without a teacher role gets a class by
-// having an admin create it and assign them as its teacher.
+// card, or a plain explanation of who can. A parent-teacher without a teacher role gets one from an
+// admin at /admin/teachers, or a single class by having an admin create it and assign them.
 export default async function CohortsPage() {
   const tenant = await requireTenant();
   const session = await requireUserPage();
@@ -47,7 +47,8 @@ export default async function CohortsPage() {
           <div className="space-y-4">
             <p className="rounded-lg border border-neutral-200 p-4 text-sm text-neutral-700 dark:border-neutral-800 dark:text-neutral-300">
               Classes are created by this school&apos;s teachers and admins. If you teach here, ask an
-              admin to set up your class and add you as its teacher; it will then appear below.
+              admin to make you a teacher of the school, or to set up your class and add you as its
+              teacher; it will then appear below.
             </p>
             {/* An admin can only assign an adult, so let a would-be teacher say so here first. */}
             {eligibility.ruleOn && eligibility.status === "unattested" ? (
