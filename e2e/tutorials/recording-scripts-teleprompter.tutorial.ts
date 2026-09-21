@@ -77,13 +77,17 @@ defineTutorial(
       narration: "Pick a lesson in Recording to, and the take is captured from inside the full-screen script.",
       action: async (page) => {
         // SHOWN, NEVER STARTED — a take asks for the microphone or camera and, on upload,
-        // attaches media to a real lesson. The whole recorder bar renders only when the course has
-        // lessons (recording-script-view.tsx: `lessons.length > 0`), so an empty course correctly
-        // has nothing here.
-        const picker = page.getByText("Recording to");
-        const shown = await picker.isVisible().catch(() => false);
-        console.log(`[recording-scripts-teleprompter] "Recording to" picker on screen: ${shown}`);
-        if (shown) await expect(picker).toBeVisible();
+        // attaches media to a real lesson.
+        //
+        // The recorder bar renders only when the course has lessons (recording-script-view.tsx:
+        // `lessons.length > 0`). This step FAILS rather than logging when it is missing: the
+        // caption promises a "Recording to" picker, and a clip that says so over a teleprompter
+        // with no recorder bar is a false clip.
+        await expect(
+          page.getByText("Recording to"),
+          "No 'Recording to' picker in the teleprompter — the recorded course has no lessons, so recording-script-view.tsx " +
+            "renders no recorder bar and there is also no script to read. Point TUTORIAL_TEACH_COURSE at a course with lessons.",
+        ).toBeVisible();
       },
     },
     {

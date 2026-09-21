@@ -79,6 +79,14 @@ defineTutorial(
       title: "Work on several at once",
       narration: "Ticking courses opens a bar of bulk actions that apply to everything you selected.",
       action: async (page) => {
+        // The bulk bar only exists once something is selected, and nothing can be selected in an
+        // empty list — so an account with no courses would film this caption over a bare page.
+        // Fail with the reason instead of a locator timeout.
+        await expect(
+          page.getByRole("link", { name: "Manage" }).first(),
+          "This account's /teach list is empty, so there are no rows to tick and no bulk bar to film. Record with an " +
+            "account that has courses, or set TUTORIAL_STORAGE_STATE to one that does.",
+        ).toBeVisible();
         await page.getByRole("button", { name: "Select all shown" }).click();
         // Shown, never clicked: each one rewrites live courses.
         for (const label of ["Publish", "Unpublish", "Make free"]) {

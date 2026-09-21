@@ -47,13 +47,16 @@ defineTutorial(
       },
     },
     {
-      title: "A queue that needs you is outlined",
-      narration: "A tile with something waiting is outlined in your accent colour, so it finds you.",
+      title: "Every number is a way in",
+      narration: "Each tile is a link to the page where you act on that number.",
       action: async (page) => {
-        // The tiles themselves are links; the numbers are live data, so the caption describes the
-        // rule rather than any figure.
+        // The caption claims only what is always on screen and is asserted here. The article's
+        // "a tile with an open queue is outlined in your accent colour" is deliberately NOT
+        // captioned: the outline appears only when a queue happens to be open, so on a clear
+        // dashboard the caption would describe something the viewer cannot see.
         const glance = page.getByRole("region", { name: /at a glance/i });
         await expect(glance.getByRole("link").first()).toBeVisible();
+        expect(await glance.getByRole("link").count()).toBeGreaterThan(1);
       },
     },
     {

@@ -72,9 +72,11 @@ defineTutorial(
       title: "It carries the school's colours",
       narration: "It takes the school's name and accent colour, so it does not look borrowed.",
       action: async (page) => {
-        // The accent rule comes from the tenant's own theme (embed/card/[id]/page.tsx sets
-        // --accent from tenant.theme), which is why the card cannot be styled by the host page.
-        await expect(page.locator("main")).toBeVisible();
+        // Both halves of the caption are asserted, not assumed. The name is the uppercase line
+        // above the title, and the accent rule is the bar above it — embed/card/[id]/page.tsx sets
+        // --accent from the tenant's own theme, which is why a host page cannot restyle the card.
+        await expect(page.locator("main p").first()).not.toBeEmpty();
+        await expect(page.locator('main span[style*="--accent"]').first()).toBeVisible();
       },
     },
     {

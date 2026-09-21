@@ -32,7 +32,7 @@
       "requiresAuth": true,
       "sideEffects": "none",
       "status": "written-not-run",
-      "notes": "Read-only tour of /teach: the course list, its search and status filters, the bulk bar (revealed by a client-side selection, every button asserted and none clicked), and the New course form shown but never submitted. Skips without TUTORIAL_STORAGE_STATE; the session must be an instructor, brand_admin or the platform owner."
+      "notes": "Read-only tour of /teach: the course list, its search and status filters, the bulk bar (revealed by a client-side selection, every button asserted and none clicked), and the New course form shown but never submitted. Skips without TUTORIAL_STORAGE_STATE; the session must be an instructor, brand_admin or the platform owner, and must OWN AT LEAST ONE COURSE or the bulk-bar step fails with that reason."
     },
     {
       "article": "create-a-course",
@@ -69,7 +69,7 @@
       "requiresAuth": true,
       "sideEffects": "none",
       "status": "written-not-run",
-      "notes": "Read-only: /teach/<course>/script and the full-screen teleprompter with its speed / size / mirror controls and the Recording to picker. The recorder is shown, never started (a take asks for mic/camera and an upload attaches media to a real lesson); Copy script is asserted, not clicked, because it writes the machine clipboard."
+      "notes": "Read-only: /teach/<course>/script and the full-screen teleprompter with its speed / size / mirror controls and the Recording to picker. The recorder is shown, never started; Copy script is asserted, not clicked (it writes the machine clipboard). PRECONDITION: the recorded course must HAVE LESSONS - with none there is no script and no recorder bar, and the spec fails saying so rather than captioning a picker that is not there."
     },
     {
       "article": "set-pricing",
@@ -79,7 +79,7 @@
       "requiresAuth": true,
       "sideEffects": "none",
       "status": "written-not-run",
-      "notes": "Shows Course settings -> Pricing and stops at Save settings, which is asserted and never clicked. A save step is appended ONLY under TUTORIAL_ALLOW_MUTATIONS=1 (default off, and never to be set against production): re-pricing re-prices the next checkout. Conditional at load time so marks.json matches the take."
+      "notes": "Shows Course settings -> Pricing and stops at Save settings, which is asserted and never clicked. A save step is appended ONLY under TUTORIAL_ALLOW_MUTATIONS=1 (default off, never against production): re-pricing re-prices the next checkout. Conditional at load time so marks.json matches the take. PRECONDITION: the recorded course must be PRICED, not free - the amount field and the \"You keep about $X\" estimate only render for a non-free price and the spec fails with that instruction rather than filming a Free course under a caption about fees. Pin it with TUTORIAL_TEACH_COURSE."
     },
     {
       "article": "categories",
@@ -135,8 +135,8 @@
       "kind": "quick-reference",
       "requiresAuth": false,
       "sideEffects": "none",
-      "status": "passes",
-      "notes": "Signed-out half: the public /live page. PASSES against production 2026-09-21 with no sessions scheduled, so the take shows the page and the sign-in-gated Live chat and no Live now / Upcoming / Recordings sections; the spec logs which sections were on screen. The Admin → Live half (schedule, go live, end) mutates broadcast state and is not recorded."
+      "status": "blocked",
+      "notes": "Signed-out half: the public /live page. BLOCKED for the same reason as sales-and-promotions: the spec now FAILS when none of Stream / Live now / Upcoming / Recordings is on screen, because the captions describe sections and a session. learn.witus.online has nothing scheduled and no always-on stream today. To unblock: schedule a session in Admin -> Live, or save an always-on stream embed, then re-run. The Admin half (schedule, go live, end) mutates broadcast state and is not recorded."
     },
     {
       "article": "cohorts",
@@ -238,8 +238,8 @@
       "kind": "quick-reference",
       "requiresAuth": false,
       "sideEffects": "none",
-      "status": "passes",
-      "notes": "Signed-out half: the public /sale index — what is running now, starting soon, and ended. The Admin half starts and ends real sales and is not recorded. PASSES against production 2026-09-21, but it filmed the EMPTY STATE: no promotion on learn.witus.online carries a slug today, so the clip is only worth keeping once a campaign is live. The spec logs which face it filmed."
+      "status": "blocked",
+      "notes": "Signed-out half: the public /sale index. BLOCKED, not failing-by-accident: the spec now FAILS when no promotion has a slug, because steps 2-4 caption the rows and a campaign page. learn.witus.online has none today, so /sale shows its empty state. To unblock: create a promotion WITH A SLUG in Admin -> Marketing -> Sales and promotions (any status - running, scheduled or ended all list), then re-run. The Admin half starts and ends real sales and is not recorded."
     },
     {
       "article": "streaming-and-multistream",

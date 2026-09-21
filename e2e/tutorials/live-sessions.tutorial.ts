@@ -16,11 +16,14 @@ import { defineTutorial } from "./tutorial";
 // unconditionally with a sign-in prompt for a signed-out visitor; src/components/live-presence.tsx
 // renders nothing at all when signed out.
 //
-// WHY THE SECTIONS ARE CHECKED SOFTLY. Every section on this page depends on what the school has
-// scheduled at the moment of recording — listLiveForViewer() plus a per-session visibility gate
-// (public / members / enrolled). Asserting "Upcoming is visible" would make this spec fail on a
-// quiet week, which is not a defect. The spec therefore asserts what is structurally always there
-// and reports which sections were on screen for the take, so the caption matches the recording.
+// THE SPEC REQUIRES AT LEAST ONE SECTION, AND FAILS WITHOUT ONE (witus plans/33 §5.2). Which
+// section is present depends on what the school has scheduled — listLiveForViewer() plus a
+// per-session visibility gate (public / members / enrolled) — so the spec does not demand a
+// particular one. But it will not pass over a page with none of them: steps 2 and 4 caption "Each
+// section appears only when the school has something in it" and "A session is public, signed-in
+// only, or for learners enrolled in the course it belongs to" over a page that would then be
+// showing no section and no session at all. An earlier version logged the emptiness and passed;
+// that produced a clip whose captions described things no viewer could see.
 //
 // SAFETY: read-only. No chat message is sent (live-chat.tsx posts to the room), no moderation
 // control is touched, and no admin page is opened.
@@ -44,15 +47,21 @@ defineTutorial(
       title: "What is on this page today",
       narration: "Each section appears only when the school has something in it.",
       action: async (page) => {
-        const sections = ["Stream", "Live now", "Upcoming", "Recordings"];
         const present: string[] = [];
-        for (const s of sections) {
+        for (const s of ["Stream", "Live now", "Upcoming", "Recordings"]) {
           if (await page.getByRole("heading", { name: s, exact: true }).first().isVisible().catch(() => false)) {
             present.push(s);
           }
         }
-        // Recorded in the run log so the caption can be checked against the take.
-        console.log(`[live-sessions] sections on screen: ${present.join(", ") || "(none scheduled)"}`);
+        expect(
+          present.length,
+          "/live has no Stream, Live now, Upcoming or Recordings section — this school has nothing scheduled and no " +
+            "always-on stream, so every caption in this tutorial would sit over an empty page. Before recording this " +
+            "article, schedule a session in Admin → Live (or save an always-on stream embed). Recording is not " +
+            "possible until then.",
+        ).toBeGreaterThan(0);
+        // Named in the run log so the finished clip can be checked against this caption.
+        console.log(`[live-sessions] sections on screen: ${present.join(", ")}`);
         // A live session attached to a course also appears on that course's page — the attachment
         // is set in Admin → Live, which this spec does not open.
       },
