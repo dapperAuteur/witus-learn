@@ -1,6 +1,7 @@
 import "server-only";
 import type { ScopedDb } from "@/db/scoped";
 import type { ContactPing } from "@/db/schema";
+import { cohortOverrideKey } from "@/db/queries/contact";
 import {
   counterpartView,
   effectiveMode,
@@ -46,8 +47,9 @@ export interface ContactCard {
   myDefault: ContactMode;
   /** A ping the viewer sent this person about this student, still active. */
   outgoing: { pingId: string; createdAt: string; emailDueAt: string; emailedAt: string | null } | null;
-  /** A ping this person sent the viewer about this student, still active, with how to reach them. */
-  incoming: { createdAt: string; emailedAt: string | null; details: CardDetails } | null;
+  /** A ping this person sent the viewer about this student, still active, with how to reach them.
+   *  The viewer can close it (POST /api/contact/pings/[id]/close). */
+  incoming: { pingId: string; createdAt: string; emailedAt: string | null; details: CardDetails } | null;
 }
 
 export interface ContactLink {
@@ -89,11 +91,14 @@ export async function buildContactCards(input: {
   const counterpartIds = [...new Set(links.map((l) => l.counterpartId))];
   const counterpartRole: Role = viewerRole === "parent" ? "teacher" : "parent";
 
-  const [people, overridesAboutMe, myOverrides, pings] = await Promise.all([
+  const [people, overridesAboutMe, myOverrides, pings, classRules] = await Promise.all([
     sdb.getContactPeople([viewerId, ...counterpartIds]),
     sdb.listContactOverridesAbout(viewerId, counterpartIds),
     sdb.listContactOverridesBy(viewerId),
     sdb.listActivePingsForUser(viewerId, now),
+    // Each counterpart's per-class rule for the class this link runs through (a teacher's "parents
+    // in this class may..."). Keyed `${counterpartId}:${cohortId}`.
+    sdb.contactCohortOverridesFor(counterpartIds, [...new Set(links.map((l) => l.cohortId))]),
   ]);
   const viewer = people.get(viewerId);
   const viewerStatus: AdultStatus = viewer?.status ?? "unattested";
@@ -107,6 +112,7 @@ export async function buildContactCards(input: {
     const mode = effectiveMode({
       settings: other.settings,
       override: overridesAboutMe.get(other.userId) ?? null,
+      cohortOverride: classRules.get(cohortOverrideKey(other.userId, link.cohortId)) ?? null,
       askerRole: viewerRole,
     });
     const view = counterpartView(mode, mayUseContact(other.status));
@@ -137,7 +143,7 @@ export async function buildContactCards(input: {
         : null,
       incoming:
         inc && viewerAdult
-          ? { createdAt: inc.createdAt.toISOString(), emailedAt: inc.emailedAt?.toISOString() ?? null, details }
+          ? { pingId: inc.id, createdAt: inc.createdAt.toISOString(), emailedAt: inc.emailedAt?.toISOString() ?? null, details }
           : null,
     });
   }

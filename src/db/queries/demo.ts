@@ -7,6 +7,7 @@ import {
   cohortMembers,
   cohortTeachers,
   cohorts,
+  contactCohortOverrides,
   contactOverrides,
   contactPings,
   contactSettings,
@@ -181,6 +182,9 @@ export async function clearDemoData(userId: string, tenantId: string): Promise<v
         or(eq(contactOverrides.userId, userId), eq(contactOverrides.otherUserId, userId)),
       ),
     );
+  await db
+    .delete(contactCohortOverrides)
+    .where(and(eq(contactCohortOverrides.tenantId, tenantId), eq(contactCohortOverrides.userId, userId)));
   await db
     .delete(contactSettings)
     .where(and(eq(contactSettings.tenantId, tenantId), eq(contactSettings.userId, userId)));

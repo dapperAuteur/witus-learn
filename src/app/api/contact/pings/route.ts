@@ -36,9 +36,10 @@ export async function POST(req: Request) {
   const role = await sdb.contactRelationshipRole({ fromUserId: me, toUserId, studentUserId, cohortId });
   if (!role) return errorJson("Not found", 404);
 
-  const [people, overridesAboutMe] = await Promise.all([
+  const [people, overridesAboutMe, classRule] = await Promise.all([
     sdb.getContactPeople([me, toUserId]),
     sdb.listContactOverridesAbout(me, [toUserId]),
+    sdb.getContactCohortOverride(toUserId, cohortId),
   ]);
   const sender = people.get(me);
   const recipient = people.get(toUserId);
@@ -50,6 +51,7 @@ export async function POST(req: Request) {
   const mode = effectiveMode({
     settings: recipient.settings,
     override: overridesAboutMe.get(toUserId) ?? null,
+    cohortOverride: classRule,
     askerRole: role,
   });
   if (!mayPing(counterpartView(mode, mayUseContact(recipient.status)))) {

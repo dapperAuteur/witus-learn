@@ -86,7 +86,8 @@ export function ContactSettingsPanel({
         <p className="text-neutral-700 dark:text-neutral-300">
           Only adults already linked to you through a class ever see these choices take effect: a
           student&apos;s parents and that student&apos;s teachers. There are no messages in this app; you
-          talk by email or phone. You can also set a different rule for one person from their card.
+          talk by email or phone. You can also set a different rule for one person from their card, and, if
+          you teach, for a whole class from that class&apos;s page. The most specific rule wins.
         </p>
         {show.parents ? (
           <ModeFieldset legend="Parents of my students may" name="parentsMode" value={s.parentsMode} onChange={(m) => setS({ ...s, parentsMode: m })} />

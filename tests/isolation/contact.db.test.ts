@@ -75,6 +75,25 @@ describe.skipIf(!HAS_DB)("parent/teacher contact is tenant- and relationship-sco
     ).rejects.toThrow();
   });
 
+  it("lets only the person asked close a request, and closing ends it for both", async () => {
+    const { createPing, endPing, listActivePingsForUser } = await import("@/db/queries/contact");
+    const ping = await createPing({ tenantId: bvcId, cohortId, studentUserId: student, fromUserId: teacher, toUserId: parent, fromRole: "teacher" });
+    expect(await endPing(bvcId, ping.id, teacher, "recipient")).toBe(false); // the asker is not the recipient
+    expect(await endPing(acmeId, ping.id, parent, "recipient")).toBe(false); // wrong school
+    expect(await endPing(bvcId, ping.id, parent, "recipient")).toBe(true);
+    expect((await listActivePingsForUser(bvcId, teacher)).map((p) => p.id)).not.toContain(ping.id);
+    expect((await listActivePingsForUser(bvcId, parent)).map((p) => p.id)).not.toContain(ping.id);
+  });
+
+  it("keeps a teacher's class rule on its own class and school", async () => {
+    const { setCohortOverride, getCohortOverride } = await import("@/db/queries/contact");
+    await setCohortOverride(bvcId, teacher, cohortId, "school");
+    expect(await getCohortOverride(bvcId, teacher, cohortId)).toBe("school");
+    expect(await getCohortOverride(acmeId, teacher, cohortId)).toBeNull();
+    await setCohortOverride(bvcId, teacher, cohortId, null);
+    expect(await getCohortOverride(bvcId, teacher, cohortId)).toBeNull();
+  });
+
   it("shows a live ping and its badge, then drops both the moment the student leaves the class", async () => {
     const { createPing, listActivePingsForUser, countIncomingPings } = await import("@/db/queries/contact");
     await createPing({ tenantId: bvcId, cohortId, studentUserId: student, fromUserId: parent, toUserId: teacher, fromRole: "parent" });

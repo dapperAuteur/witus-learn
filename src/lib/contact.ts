@@ -4,11 +4,13 @@
 //
 // The feature, per BAM (2026-08-30, then 2026-09-20, choosing Option C with his own fallback):
 //   1. Each adult sets how the OTHER side may reach them: show my details / ask me first / only
-//      through the school. One default for parents, one for teachers, and per-person overrides.
+//      through the school. One default for parents, one for teachers, a per-CLASS rule for a teacher
+//      ("parents in this class may not contact me"), and per-person overrides. Most specific wins.
 //   2. A ping ("I'd like to talk") shows up IN THE APP first, as a badge and a card on the page where
 //      the relationship already lives (/family, the class roster). There is no inbox.
-//   3. The person who asked says "we've started talking" once they have. If they have not after 48
-//      hours, the other person gets ONE email, Reply-To the asker.
+//   3. The person who asked says "we've started talking" once they have, or the person asked closes
+//      the request. If neither happens within 48 hours, the person asked gets ONE email, Reply-To the
+//      asker.
 //   4. No student is ever a party. Both adults see the student's name and a link to their work.
 
 export const CONTACT_MODES = ["direct", "request", "school"] as const;
@@ -48,15 +50,20 @@ export interface ContactSettingsFacts {
 }
 
 /**
- * How `askerRole` may reach the owner of `settings`: a per-person override wins over the default for
- * that role. A teacher's `parentsMode` governs parents; a parent's `teachersMode` governs teachers.
+ * How `askerRole` may reach the owner of `settings`, most specific rule first:
+ *   1. a per-person override (this one parent / this one teacher),
+ *   2. a per-class override (every parent in this class; set by a teacher of the class),
+ *   3. the default for the asker's role: a teacher's `parentsMode` governs parents, a parent's
+ *      `teachersMode` governs teachers.
  */
 export function effectiveMode(input: {
   settings: ContactSettingsFacts | null;
   override: ContactMode | null;
+  cohortOverride?: ContactMode | null;
   askerRole: Role;
 }): ContactMode {
   if (input.override) return input.override;
+  if (input.cohortOverride) return input.cohortOverride;
   if (!input.settings) return DEFAULT_CONTACT_MODE;
   return input.askerRole === "parent" ? input.settings.parentsMode : input.settings.teachersMode;
 }

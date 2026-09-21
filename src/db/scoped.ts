@@ -38,8 +38,12 @@ import {
 import { listTenantPrerequisiteEdges } from "@/db/queries/prerequisites";
 import {
   areRelated,
+  cohortOverridesFor,
   countIncomingPings,
   createPing,
+  endPing,
+  getCohortOverride,
+  setCohortOverride,
   getContactPeople,
   getContactSettings,
   listActivePingsForUser,
@@ -530,6 +534,22 @@ export class ScopedDb {
 
   markPingConnected(pingId: string, userId: string) {
     return markPingConnected(this.tenantId, pingId, userId);
+  }
+
+  closePingAsRecipient(pingId: string, userId: string) {
+    return endPing(this.tenantId, pingId, userId, "recipient");
+  }
+
+  getContactCohortOverride(userId: string, cohortId: string) {
+    return getCohortOverride(this.tenantId, userId, cohortId);
+  }
+
+  contactCohortOverridesFor(userIds: string[], cohortIds: string[]) {
+    return cohortOverridesFor(this.tenantId, userIds, cohortIds);
+  }
+
+  setContactCohortOverride(userId: string, cohortId: string, mode: ContactMode | null) {
+    return setCohortOverride(this.tenantId, userId, cohortId, mode);
   }
 
   countIncomingPings(userId: string, now?: Date) {

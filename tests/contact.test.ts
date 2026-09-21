@@ -17,27 +17,36 @@ import {
 // asked for "all possible combinations": every default crossed with every per-person override, for
 // both directions (a parent reaching a teacher, a teacher reaching a parent).
 
-describe("effectiveMode: every default x override combination, both directions", () => {
+describe("effectiveMode: every default x class rule x person rule combination, both directions", () => {
   const cases: { askerRole: "parent" | "teacher"; field: "parentsMode" | "teachersMode" }[] = [
     { askerRole: "parent", field: "parentsMode" },
     { askerRole: "teacher", field: "teachersMode" },
   ];
+  const layers = [null, ...CONTACT_MODES] as (ContactMode | null)[];
   for (const { askerRole, field } of cases) {
     for (const def of CONTACT_MODES) {
-      for (const override of [null, ...CONTACT_MODES] as (ContactMode | null)[]) {
-        it(`${askerRole} asking; default ${def}, override ${override ?? "none"}`, () => {
-          const other: ContactMode = def === "direct" ? "school" : "direct";
-          const settings = { parentsMode: other, teachersMode: other, [field]: def } as {
-            parentsMode: ContactMode;
-            teachersMode: ContactMode;
-          };
-          // The override wins whenever present; otherwise the default FOR THE ASKER'S ROLE applies,
-          // never the other role's default.
-          expect(effectiveMode({ settings, override, askerRole })).toBe(override ?? def);
-        });
+      for (const cohortOverride of layers) {
+        for (const override of layers) {
+          it(`${askerRole} asking; default ${def}, class ${cohortOverride ?? "none"}, person ${override ?? "none"}`, () => {
+            const other: ContactMode = def === "direct" ? "school" : "direct";
+            const settings = { parentsMode: other, teachersMode: other, [field]: def } as {
+              parentsMode: ContactMode;
+              teachersMode: ContactMode;
+            };
+            // Most specific wins: the person rule, then the class rule, then the default FOR THE
+            // ASKER'S ROLE (never the other role's default).
+            expect(effectiveMode({ settings, override, cohortOverride, askerRole })).toBe(override ?? cohortOverride ?? def);
+          });
+        }
       }
     }
   }
+
+  it("lets one parent's rule reopen contact inside a class that is closed to parents", () => {
+    const settings = { parentsMode: "direct" as const, teachersMode: "request" as const };
+    expect(effectiveMode({ settings, override: null, cohortOverride: "school", askerRole: "parent" })).toBe("school");
+    expect(effectiveMode({ settings, override: "request", cohortOverride: "school", askerRole: "parent" })).toBe("request");
+  });
 
   it("falls back to 'request' for someone who never chose", () => {
     expect(effectiveMode({ settings: null, override: null, askerRole: "parent" })).toBe(DEFAULT_CONTACT_MODE);

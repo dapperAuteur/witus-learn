@@ -3,6 +3,7 @@ import { env } from "@/lib/env";
 import {
   claimPingForEmail,
   getCohortName,
+  getCohortOverride,
   getContactPeople,
   getTenantWithSiteUrl,
   listOverridesAbout,
@@ -15,14 +16,16 @@ import { mayUseContact } from "@/lib/teacher-age";
 
 // GET/POST /api/cron/contact-pings: the 48-hour fallback for parent/teacher contact pings (decided
 // 2026-09-20). A ping shows in the app first; if the person who asked has not marked "we've started
-// talking" 48 hours later, the person they asked gets ONE email, Reply-To the asker.
+// talking" 48 hours later, and the person they asked has not closed it, that person gets ONE email,
+// Reply-To the asker.
 //
 // Runs once a day (vercel.json), so an email goes out between 48 and 72 hours after the ask. Guarded
 // by CRON_SECRET exactly like /api/cron/demo-reset: no secret, or a wrong one, is a flat 401.
 //
 // Every ping is re-checked at send time, inside its own tenant: the relationship must still hold
 // (listPingsDueForEmail filters on it) and the recipient's CURRENT rule for this asker must still
-// allow asking. A recipient who switched to "through the school" after being asked gets no email.
+// allow asking (per-person rule, then per-class rule, then default). A recipient who switched to
+// "through the school" after being asked gets no email.
 // Each ping is claimed before sending, so overlapping runs can never send it twice, and released if
 // the send fails, so tomorrow's run tries again (until the ping expires at 14 days).
 function guard(req: Request): boolean {
@@ -50,9 +53,10 @@ async function handle(req: Request): Promise<NextResponse> {
         skipped++;
         continue;
       }
-      const [people, overridesAboutAsker, cohortName] = await Promise.all([
+      const [people, overridesAboutAsker, classRule, cohortName] = await Promise.all([
         getContactPeople(ping.tenantId, [ping.fromUserId, ping.toUserId, ping.studentUserId]),
         listOverridesAbout(ping.tenantId, ping.fromUserId, [ping.toUserId]),
+        getCohortOverride(ping.tenantId, ping.toUserId, ping.cohortId),
         getCohortName(ping.tenantId, ping.cohortId),
       ]);
       const asker = people.get(ping.fromUserId);
@@ -66,6 +70,7 @@ async function handle(req: Request): Promise<NextResponse> {
       const mode = effectiveMode({
         settings: recipient.settings,
         override: overridesAboutAsker.get(recipient.userId) ?? null,
+        cohortOverride: classRule,
         askerRole: role,
       });
       if (!mayPing(counterpartView(mode, mayUseContact(recipient.status)))) {

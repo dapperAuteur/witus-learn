@@ -335,8 +335,9 @@ the talking done by email or phone outside the app.
 
 **What is allowed:** a count or dot on an EXISTING nav item pointing at the page where the thing
 already lives (the Family / Cohorts badge), and a card on the related person's own row on that page
-(/family, the class roster) that disappears when the request ends. Signals end; they are not kept for
-browsing. Teacher notes are content attached to a lesson, not messages, and stay under their own
+(/family, the class roster) that disappears when the request ends. Either person may end it (the
+asker: "we've started talking"; the person asked: "close this request"), but the other side is never
+told who ended it or that it was read. Signals end; they are not kept for browsing. Teacher notes are content attached to a lesson, not messages, and stay under their own
 guardrail (`lesson_notes_teacher_lesson_chk`).
 
 **Enforced** by `tests/contact-schema.test.ts` (the contact tables may not grow a message-shaped
