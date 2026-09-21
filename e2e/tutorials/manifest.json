@@ -211,7 +211,7 @@
       "requiresAuth": false,
       "sideEffects": "none",
       "status": "passes",
-      "notes": "Signed-out: the Share popover on a course page. Copy link is NOT clicked — each channel click POSTs a share count to /api/share, which would inflate the admin dashboard's share signals."
+      "notes": "Signed-out: the Share popover on a course page. Copy link and every channel are shown and NOT clicked — each one POSTs a share count to /api/share and would inflate the admin dashboard signals. The spec hides the Web Share API first, because Chrome on macOS has navigator.share and the button then opens an OS sheet Playwright cannot film. ARTICLE MISMATCH: the article says \"Link usage, the course page shows how often outbound links get clicked\"; LinkUsagePanel is rendered only by src/app/(tenant)/teach/[courseId]/page.tsx:230, the instructor course MANAGER, so that bullet is not recorded. \"Related WitUS tools\" is conditional (showEcosystem && relatedSlugs.length > 0) and is not asserted."
     },
     {
       "article": "cross-course-links",
