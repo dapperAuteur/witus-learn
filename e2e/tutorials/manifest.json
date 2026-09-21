@@ -27,11 +27,12 @@
     {
       "article": "getting-started",
       "title": "Getting started as a teacher",
+      "spec": "e2e/tutorials/getting-started.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": true,
       "sideEffects": "none",
-      "status": "todo",
-      "notes": "Read-only tour of /teach: the course list, its search and filters, and the New course form shown but never submitted. Needs an instructor/owner session; skips without TUTORIAL_STORAGE_STATE."
+      "status": "written-not-run",
+      "notes": "Read-only tour of /teach: the course list, its search and status filters, the bulk bar (revealed by a client-side selection, every button asserted and none clicked), and the New course form shown but never submitted. Skips without TUTORIAL_STORAGE_STATE; the session must be an instructor, brand_admin or the platform owner."
     },
     {
       "article": "create-a-course",
@@ -63,20 +64,22 @@
     {
       "article": "recording-scripts-teleprompter",
       "title": "Recording scripts & teleprompter",
+      "spec": "e2e/tutorials/recording-scripts-teleprompter.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": true,
       "sideEffects": "none",
-      "status": "todo",
-      "notes": "Read-only: /teach/<courseId>/script and the full-screen teleprompter with its speed / text-size / mirror controls. The recorder in the teleprompter control bar is shown, never started. Needs an instructor session."
+      "status": "written-not-run",
+      "notes": "Read-only: /teach/<course>/script and the full-screen teleprompter with its speed / size / mirror controls and the Recording to picker. The recorder is shown, never started (a take asks for mic/camera and an upload attaches media to a real lesson); Copy script is asserted, not clicked, because it writes the machine clipboard."
     },
     {
       "article": "set-pricing",
       "title": "Set a price (it's here, not in Stripe)",
+      "spec": "e2e/tutorials/set-pricing.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": true,
       "sideEffects": "none",
-      "status": "todo",
-      "notes": "Shows Course settings → Pricing on a real course and stops before Save settings. The save is behind TUTORIAL_ALLOW_MUTATIONS=1, which defaults off: re-pricing a live course changes what the next learner is charged."
+      "status": "written-not-run",
+      "notes": "Shows Course settings -> Pricing and stops at Save settings, which is asserted and never clicked. A save step is appended ONLY under TUTORIAL_ALLOW_MUTATIONS=1 (default off, and never to be set against production): re-pricing re-prices the next checkout. Conditional at load time so marks.json matches the take."
     },
     {
       "article": "categories",
@@ -183,11 +186,12 @@
     {
       "article": "in-course-search",
       "title": "Search inside a course",
+      "spec": "e2e/tutorials/in-course-search.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": true,
       "sideEffects": "none",
-      "status": "todo",
-      "notes": "Read-only. The Search this course box renders only for an enrolled learner, an editor or an invited auditor (course page gate, line ~621), so the spec needs a session that is enrolled in TUTORIAL_COURSE_PATH."
+      "status": "written-not-run",
+      "notes": "Read-only. The Search this course box renders only for an enrolled learner, an editor or an invited auditor, so the session must be enrolled in (or own) TUTORIAL_COURSE_PATH. The article omits the auditor case that the code allows."
     },
     {
       "article": "learner-feedback-and-reports",
@@ -296,11 +300,12 @@
     {
       "article": "admin-home-and-brand-settings",
       "title": "Your admin home and brand settings",
+      "spec": "e2e/tutorials/admin-home-and-brand-settings.tutorial.ts",
       "kind": "quick-reference",
       "requiresAuth": true,
       "sideEffects": "none",
-      "status": "todo",
-      "notes": "Read-only walk of /admin and /admin/settings. Nothing is saved: brand settings apply to the live school on the next page load, so the Save control is shown and never clicked. Needs an owner/brand-admin session."
+      "status": "written-not-run",
+      "notes": "Read-only walk of /admin and /admin/settings. No toggle is flipped and Save changes is never clicked: these settings change the live school for every visitor. The tiles hold real counts, so the captions describe the rule and never read out a number."
     }
   ]
 }
