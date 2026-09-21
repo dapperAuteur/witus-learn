@@ -623,7 +623,8 @@ serves an unverified domain, so a school can't hijack a domain it doesn't contro
 into a **shared demo account**, a `brand_admin` on Acme only, so they can try teacher/admin
 surfaces (authoring, `/teach`, `/live`, `/cohorts`) without ever becoming a platform owner or a
 member of any other brand. A nightly Vercel cron (`/api/cron/demo-reset`, midnight UTC) wipes the
-demo user's Acme data and reseeds a small baseline so every visitor gets a fresh sandbox. Fully
+demo user's Acme data and reseeds a small baseline so every visitor gets a fresh sandbox; the
+platform owner can run the same reset on demand with **Reset demo data now** on `/admin`. Fully
 optional: three env vars (`CRON_SECRET`, `DEMO_VISITOR_PASSWORD`, `DEMO_VISITOR_USER_EMAIL`) gate
 it, the app boots fine without them. See [src/db/queries/demo.ts](src/db/queries/demo.ts) and
 `plans/user-tasks/62-demo-account-setup.md`.

@@ -5,6 +5,12 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Reset the demo account from the admin home** (\`feat/admin-demo-reset-button\`, no migration). BAM
+  asked 2026-09-20. A platform-owner-only **Reset demo data now** button in a "Demo account" section
+  on \`/admin\` runs the same \`resetDemoData\` as the nightly cron, on demand
+  (\`POST /api/admin/demo-reset\`). Authorized by the owner's session, never by \`CRON_SECRET\`, so the
+  secret never reaches a browser; a brand admin never sees it, because the demo lives on Acme
+  whatever school you are on.
 - 🔧 **"Continue as ..." instead of asking a signed-in visitor to sign in again**
   (\`fix/decisions-01-02\`, no migration). Signing in on a WitUS-branded host sent you to the WitUS
   login page even when another tab already had you signed in to a WitUS app. BAM chose **option B**

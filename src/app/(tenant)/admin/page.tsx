@@ -10,6 +10,7 @@ import { countOpenFeedback } from "@/db/queries/feedback";
 import { countLeads } from "@/db/queries/leads";
 import { countPendingMediaAssets } from "@/db/queries/media-assets";
 import { countUpcomingLiveSessions } from "@/db/queries/live";
+import { DemoResetButton } from "@/components/demo-reset-button";
 
 export const metadata: Metadata = { title: "Admin" };
 
@@ -65,6 +66,23 @@ export default async function AdminHome() {
           ))}
         </ul>
       </section>
+
+      {/* Owner only: the shared demo account lives on the Acme school, so this is a platform
+          control, not a school's. The nightly cron still runs; this is the same reset, on demand. */}
+      {owner ? (
+        <section aria-labelledby="admin-demo" className="mt-8">
+          <h2 id="admin-demo" className="text-sm font-semibold uppercase tracking-wide text-neutral-600">
+            Demo account
+          </h2>
+          <p className="mt-1 text-sm text-neutral-600">
+            Wipes and re-seeds what visitors did on the Acme demo school. It also runs every night at
+            midnight UTC.
+          </p>
+          <div className="mt-3">
+            <DemoResetButton />
+          </div>
+        </section>
+      ) : null}
 
       <section aria-labelledby="admin-all-tools" className="mt-8">
         <h2 id="admin-all-tools" className="text-sm font-semibold uppercase tracking-wide text-neutral-600">
