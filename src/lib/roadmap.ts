@@ -5,6 +5,25 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Classes are run by adult teachers, and a class can have several** (\`feat/cohort-teachers-adult-rule\`,
+  **migration 0063**, run \`pnpm db:migrate:prod\`). Decided by BAM on 2026-09-20. **Only adult
+  teachers or admins create classes now**: \`POST /api/cohorts\` requires an instructor or brand_admin
+  role (or the platform owner) AND the adult rule, where it used to accept any signed-in user. **A
+  class can have several teachers** (\`cohort_teachers\`): its creator or a school admin adds one by
+  email from the class page, and the creator can step back from the list, so a homeschool parent
+  without a teacher role gets a class by having an admin create it and assign them. Every "may run
+  this class" check (roster, invites, class code, gradebook, grade adjustments, parent invites,
+  teacher notes) now goes through one helper, \`src/lib/cohort-access.ts\`, instead of a dozen copies of
+  "owner or admin". The migration makes every existing owner a teacher of their class, so nothing
+  changes for classes that already exist. **"Adult" means** the person ticked "I am 18 or older"
+  (\`user_profiles.adult_attested_at\`) AND nothing the platform recorded says otherwise: a managed
+  child, a kid (avatar and PIN) login, or being someone's linked student each outrank the tick, and a
+  check constraint refuses an attestation on a managed child outright. There is no ID check and the
+  copy does not pretend there is. **The platform owner's switch** (\`/admin/teacher-age\`, default ON,
+  typing TURN OFF to disable) and **per-person exceptions**, granted in four steps (find the person;
+  tick three warnings, plus a fourth when the account shows a child's signals; write a reason and type
+  their email back; review and grant), every step re-checked on the server and every exception kept
+  after revocation. An exception lets someone teach; it never makes them reachable by parents.
 - 🔧 **"Continue as ..." instead of asking a signed-in visitor to sign in again**
   (\`fix/decisions-01-02\`, no migration). Signing in on a WitUS-branded host sent you to the WitUS
   login page even when another tab already had you signed in to a WitUS app. BAM chose **option B**
@@ -980,7 +999,9 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   students by email (one-time link; falls back to a copyable link if Mailgun isn't sending), and
   manages a **roster** at \`/cohorts/[id]\` showing **● here** for anyone currently present on
   \`/live\`. Students accept at \`/join/[token]\` and land on \`/live\` enrolled. Tenant-scoped tables
-  \`cohorts\`/\`cohort_members\`/\`cohort_invites\` (migration 0029).
+  \`cohorts\`/\`cohort_members\`/\`cohort_invites\` (migration 0029). **Changed 2026-09-20:** creating a
+  class now takes an adult teacher or admin, and a class can have several teachers (see "Classes are
+  run by adult teachers" above).
 - ✅ **Family** (\`feat/cohorts-family\`): a read-only parent view (Model A of the hybrid: kids keep
   their own accounts). From a cohort roster, a teacher **invites a parent** by email per student
   (\`/api/cohorts/[id]/guardian-invite\`); the parent accepts at \`/family/accept/[token]\` and sees, at

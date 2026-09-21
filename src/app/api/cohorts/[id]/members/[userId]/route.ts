@@ -1,5 +1,6 @@
-import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
+import { apiContext, errorJson, json } from "@/lib/api";
 import { getCohort, removeMember } from "@/db/queries/cohorts";
+import { canManageCohort } from "@/lib/cohort-access";
 
 type Params = { params: Promise<{ id: string; userId: string }> };
 
@@ -12,7 +13,7 @@ export async function DELETE(_req: Request, { params }: Params) {
 
   const cohort = await getCohort(sdb.tenantId, id);
   if (!cohort) return errorJson("Not found", 404);
-  if (cohort.ownerId !== session.user.id && !(await isTenantAdmin(session, sdb.tenantId))) {
+  if (!(await canManageCohort(session, sdb.tenantId, cohort))) {
     return errorJson("Forbidden", 403);
   }
 

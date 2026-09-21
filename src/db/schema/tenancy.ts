@@ -168,6 +168,14 @@ export const userProfiles = pgTable(
     // scrypt: "salt:hash", both hex. NEVER the plaintext PIN — see src/lib/kid-pin.ts.
     pinHash: text("pin_hash"),
     pinSetAt: timestamp("pin_set_at", { withTimezone: true }),
+    // "I am 18 or older", self-attested, with the moment it was said. The platform has no ID
+    // check and does not pretend to: this is an attestation, and it is ONE of two halves of the
+    // adult test in src/lib/teacher-age.ts. The other half is structural (a managed child, an
+    // avatar-PIN login, or being someone's linked student each mean "not an adult" no matter what
+    // was ticked), and the check constraint below makes the first of those a database fact.
+    // Required before creating or being assigned to teach a class (when the owner's
+    // "teachers must be adults" switch is on) and before any parent/teacher contact.
+    adultAttestedAt: timestamp("adult_attested_at", { withTimezone: true }),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
@@ -175,6 +183,11 @@ export const userProfiles = pgTable(
     check(
       "user_profiles_login_method_chk",
       sql`${t.loginMethod} in ('none','magic_link','avatar_pin')`,
+    ),
+    // A managed child profile can never carry an adult attestation, whoever tries to write one.
+    check(
+      "user_profiles_managed_not_adult_chk",
+      sql`${t.managedByUserId} is null or ${t.adultAttestedAt} is null`,
     ),
   ],
 );

@@ -52,6 +52,39 @@ export const cohortMembers = pgTable(
 
 export type CohortMember = typeof cohortMembers.$inferSelect;
 
+// The TEACHERS of a cohort: the adults who manage it and whom its families may contact.
+// Separate from `cohorts.owner_id` on purpose. The owner is whoever created the class (and stays
+// able to manage it); the teachers are who the class is FOR, as far as parents are concerned. A
+// brand admin can set up a class for a homeschool parent, assign that parent as its teacher, and
+// take themselves off the list, so parents' contact pings reach the person actually teaching and
+// never the admin who clicked "Create". The creator is added here automatically at creation
+// (createCohort), and migration 0063 backfilled every existing owner, so "no teacher rows" never
+// silently means "nobody can manage this class".
+export const cohortTeachers = pgTable(
+  "cohort_teachers",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    cohortId: uuid("cohort_id")
+      .notNull()
+      .references(() => cohorts.id, { onDelete: "cascade" }),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    // Who assigned them (the owner or a brand admin). Null only for the backfilled owner rows.
+    assignedBy: text("assigned_by").references(() => users.id, { onDelete: "set null" }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    unique("cohort_teachers_cohort_user_uq").on(t.cohortId, t.userId),
+    index("cohort_teachers_tenant_user_idx").on(t.tenantId, t.userId),
+  ],
+);
+
+export type CohortTeacher = typeof cohortTeachers.$inferSelect;
+
 // Magic-link-style email invites into a cohort. `token` is a 16-byte hex
 // generated in app code (no pgcrypto, matching course_completions). An invite
 // is accepted at most once — `acceptedAt`/`acceptedUserId` record that.

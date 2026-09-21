@@ -442,6 +442,13 @@
       "when": 1789759741393,
       "tag": "0062_legal_wild_pack",
       "breakpoints": true
+    },
+    {
+      "idx": 63,
+      "version": "7",
+      "when": 1789957176348,
+      "tag": "0063_soft_bishop",
+      "breakpoints": true
     }
   ]
 }

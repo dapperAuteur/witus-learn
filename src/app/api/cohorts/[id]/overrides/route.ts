@@ -1,7 +1,8 @@
 import { z } from "zod";
-import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
+import { apiContext, errorJson, json } from "@/lib/api";
 import { getCohort, listMembers } from "@/db/queries/cohorts";
 import { createOverride, listCohortOverrides } from "@/db/queries/overrides";
+import { canManageCohort } from "@/lib/cohort-access";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -20,7 +21,7 @@ async function gate(id: string) {
   if (!session) return { error: errorJson("Unauthorized", 401) } as const;
   const cohort = await getCohort(sdb.tenantId, id);
   if (!cohort) return { error: errorJson("Not found", 404) } as const;
-  if (cohort.ownerId !== session.user.id && !(await isTenantAdmin(session, sdb.tenantId))) {
+  if (!(await canManageCohort(session, sdb.tenantId, cohort))) {
     return { error: errorJson("Forbidden", 403) } as const;
   }
   return { sdb, session, cohort } as const;
