@@ -5,6 +5,12 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Reset the demo account from the admin home** (\`feat/admin-demo-reset-button\`, no migration). BAM
+  asked 2026-09-20. A platform-owner-only **Reset demo data now** button in a "Demo account" section
+  on \`/admin\` runs the same \`resetDemoData\` as the nightly cron, on demand
+  (\`POST /api/admin/demo-reset\`). Authorized by the owner's session, never by \`CRON_SECRET\`, so the
+  secret never reaches a browser; a brand admin never sees it, because the demo lives on Acme
+  whatever school you are on.
 - ✅ **Parent/teacher contact, without messaging** (\`feat/contact-pings\`, **migration 0064**, run
   \`pnpm db:migrate:prod\`; needs \`CRON_SECRET\`, already set for the demo reset). BAM chose Option C
   on 2026-09-20, with his own fallback. **Standing preferences**: each adult sets, per school, how the
