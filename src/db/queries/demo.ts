@@ -5,7 +5,11 @@ import {
   cohortAttendance,
   cohortInvites,
   cohortMembers,
+  cohortTeachers,
   cohorts,
+  contactOverrides,
+  contactPings,
+  contactSettings,
   courses,
   enrollments,
   guardianInvites,
@@ -112,7 +116,8 @@ export function isDemoEmail(email: string | null | undefined): boolean {
  * Delete every bit of learner + teacher data the demo user has on Acme — enrollments,
  * lesson progress, active-recall/quiz attempts, assignment submissions, cohorts they
  * own (+ that cohort's members/invites/attendance), cohort memberships/attendance
- * elsewhere, guardian links/invites, live chat/presence/sessions, API keys, and any
+ * elsewhere, co-teacher assignments, guardian links/invites, parent/teacher contact settings,
+ * rules and pings, live chat/presence/sessions, API keys, and any
  * courses (+ modules/lessons, cascaded) they authored on Acme.
  *
  * Every delete below filters BOTH `userId === demoUserId` and the Acme `tenantId` (or,
@@ -153,7 +158,32 @@ export async function clearDemoData(userId: string, tenantId: string): Promise<v
   await db
     .delete(cohortInvites)
     .where(and(eq(cohortInvites.tenantId, tenantId), eq(cohortInvites.acceptedUserId, userId)));
+  await db
+    .delete(cohortTeachers)
+    .where(and(eq(cohortTeachers.tenantId, tenantId), eq(cohortTeachers.userId, userId)));
   await db.delete(cohorts).where(and(eq(cohorts.tenantId, tenantId), eq(cohorts.ownerId, userId)));
+
+  // Parent/teacher contact on Acme: the demo user's preferences, per-person rules (theirs and
+  // anyone's about them), and pings they sent or received.
+  await db
+    .delete(contactPings)
+    .where(
+      and(
+        eq(contactPings.tenantId, tenantId),
+        or(eq(contactPings.fromUserId, userId), eq(contactPings.toUserId, userId)),
+      ),
+    );
+  await db
+    .delete(contactOverrides)
+    .where(
+      and(
+        eq(contactOverrides.tenantId, tenantId),
+        or(eq(contactOverrides.userId, userId), eq(contactOverrides.otherUserId, userId)),
+      ),
+    );
+  await db
+    .delete(contactSettings)
+    .where(and(eq(contactSettings.tenantId, tenantId), eq(contactSettings.userId, userId)));
 
   await db
     .delete(guardians)

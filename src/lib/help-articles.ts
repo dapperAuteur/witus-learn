@@ -399,11 +399,17 @@ sessions for the school.`,
     slug: "cohorts",
     title: "Run a private class with Cohorts",
     category: "Live",
-    keywords: ["cohort", "class", "roster", "invite", "home school", "homeschool", "students", "who's here", "presence", "adjust grade", "override", "regrade"],
+    keywords: ["cohort", "class", "roster", "invite", "home school", "homeschool", "students", "who's here", "presence", "adjust grade", "override", "regrade", "teacher", "co-teacher", "assign", "adult", "18"],
     body: `# Cohorts
 
-**/cohorts** lets any signed-in user, not just brand admins, run a private class: the
-home-school use case (a parent asks you to teach their child + classmates live).
+**/cohorts** is where a school's teachers run private classes: the home-school use case (a parent
+asks you to teach their child + classmates live).
+
+**Who can create a class.** Teachers and admins of the school, who have confirmed they are **18 or
+older**. The first time, **/cohorts** asks you to tick "I am 18 or older"; an account that belongs to
+a student (a child profile, a kid login, or someone's linked student) can't. Not a teacher here? Ask
+an admin to create the class and **add you as its teacher**: it then appears on your /cohorts page
+and you run it exactly as its creator would.
 
 1. **Create a class**, give it a name (e.g. "Tuesday homeschool group").
 2. **Invite students by email** from the class's roster page. Each invite is a one-time link; if
@@ -412,7 +418,13 @@ home-school use case (a parent asks you to teach their child + classmates live).
 4. The roster shows **● here** next to any student currently present on /live, so you can see who
    showed up in real time. Remove a student from the roster at any time.
 
-You see only your own classes; brand admins/owner can see any class on the school.
+**Teachers of a class.** The class page lists its **Teachers**: the people who run it and whom its
+families can ask to talk. The class's creator or a school admin can **add a teacher by email** (they
+must be a confirmed adult) or remove one; a class always keeps at least one. The creator can take
+themselves off the list, for example an admin who set a class up for someone else, and still manage
+the class.
+
+You see the classes you created or teach; brand admins/owner can see any class on the school.
 
 ## Adjusting a grade (without rewriting it)
 
@@ -423,6 +435,42 @@ the student's real attempt stays underneath, and every report (yours, the family
 shows the adjusted value **with a visible marker and your reason**. The student sees both values
 on their own dashboard. A wrong adjustment is fixed by saving a newer one. Course statistics
 keep measuring real attempts only.`,
+  },
+  {
+    slug: "parent-teacher-contact",
+    title: "Contact a teacher or a parent (without messaging)",
+    category: "Live",
+    keywords: ["contact", "parent", "teacher", "guardian", "ping", "talk", "email", "phone", "reach", "school", "message", "reply"],
+    body: `# Contact a teacher or a parent
+
+There are **no messages** in this app. Instead, a parent and their child's teacher can see how to
+reach each other, or ask to be reached, and then talk by **email or phone**.
+
+**Who.** Only adults already linked through a class: a student's parent (from **/family**) and that
+student's teachers (from the class page under **/cohorts**). You confirm once that you are **18 or
+older**. Students are never part of it.
+
+**Your preferences** (the **Contact preferences** box on /family or /cohorts). For each side (the
+teachers of your children, the parents of your students) choose one:
+
+- **Show my contact details**: they see your account email, plus a phone and a "best time" note if you
+  add them (both optional).
+- **Ask me to get in touch** (the default): your details stay hidden, but they can ask you to contact
+  them, and you see their details with the request.
+- **Only through the school**: they can't ask you in the app and are pointed to the school instead.
+
+On each person's card you can set a **different rule for that one person**, in any combination (for
+example: parents may see your details, but one particular parent goes through the school).
+
+**Asking to talk.** Press **Ask ... to get in touch** (or **Let ... know you'd like to talk**) on their
+card. They see a count next to **Family** or **Cohorts** in the menu, and your request on your card,
+with the student's name, a link to the student's work, and how to reach you. Once you have started
+talking, press **We've started talking**. If you haven't within **48 hours**, we email them once
+(checked once a day, so it arrives within the following day) and replying to that email reaches you
+directly. A request disappears after 14 days. You can ask the same person about the same student
+again a day later.
+
+Changing your preferences never notifies anyone.`,
   },
   {
     slug: "family",

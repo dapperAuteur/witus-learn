@@ -4,7 +4,8 @@ import { useEffect, useRef, useState, type FocusEvent, type ReactNode } from "re
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SignOutButton } from "./sign-out-button";
-import type { NavItem } from "./nav-types";
+import { badgeTotal, type NavItem } from "./nav-types";
+import { NavBadge } from "./nav-badge";
 
 export type { NavItem };
 
@@ -97,6 +98,7 @@ export function MobileNav({
         ) : (
           <Link href={i.href} {...props}>
             {i.label}
+            {i.badge ? <NavBadge count={i.badge} /> : null}
           </Link>
         )}
       </li>
@@ -126,10 +128,13 @@ export function MobileNav({
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-controls="mobile-nav-panel"
-        aria-label="Menu"
-        className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-neutral-300 text-lg focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700"
+        aria-label={badgeTotal(accountItems) > 0 ? `Menu, ${badgeTotal(accountItems)} contact request${badgeTotal(accountItems) === 1 ? "" : "s"} waiting` : "Menu"}
+        className="relative inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-neutral-300 text-lg focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700"
       >
         {open ? "✕" : "☰"}
+        {!open && badgeTotal(accountItems) > 0 ? (
+          <span aria-hidden className="absolute -right-1 -top-1 size-3 rounded-full ring-2 ring-white dark:ring-neutral-950" style={{ backgroundColor: "var(--accent)" }} />
+        ) : null}
       </button>
       {open ? (
         <>

@@ -173,3 +173,56 @@ export async function sendGuardianInviteEmail(opts: {
     tenant: opts.tenant.slug,
   });
 }
+
+/**
+ * The 48-hour fallback for a parent/teacher contact ping (src/app/api/cron/contact-pings): the
+ * person who asked has not said "we've started talking", so the person they asked hears about it by
+ * email as well as in the app. ONE email per ping.
+ *
+ * Reply-To is the ASKER's account email (the sendPricingInquiryEmail pattern), so hitting reply
+ * answers them directly. From stays the school's own sender: putting a parent's gmail address in
+ * From would fail DMARC at the recipient's mail server, while Reply-To is not checked. Contains the
+ * student's name (decided 2026-09-20: both adults see it; the guardian invite already names the
+ * child) and a sign-in-required link to the page where the request lives. Contains NO message from
+ * the asker (there is none to send), no token, and no link that grants anything. Not mirrored to the
+ * WitUS Inbox (NOT_MIRRORED in src/lib/mailer.ts).
+ */
+export async function sendContactPingEmail(opts: {
+  tenant: TenantRecord;
+  to: string;
+  fromName: string;
+  fromEmail: string;
+  fromRoleText: string;
+  fromPhone: string | null;
+  fromNote: string | null;
+  studentName: string;
+  cohortName: string;
+  askedOn: string;
+  pageUrl: string;
+}): Promise<void> {
+  const brand = brandName(opts.tenant);
+  const lines = [
+    `${opts.fromName}, ${opts.fromRoleText} in "${opts.cohortName}", asked on ${opts.askedOn} to talk with you.`,
+    "",
+    "How to reach them:",
+    `  Email: ${opts.fromEmail} (reply to this email to answer them directly)`,
+    ...(opts.fromPhone ? [`  Phone: ${opts.fromPhone}`] : []),
+    ...(opts.fromNote ? [`  Best time: ${opts.fromNote}`] : []),
+    "",
+    `${brand} does not carry messages, so please talk by email or phone.`,
+    "",
+    `See this request, and ${opts.studentName}'s work, on ${brand} (sign in required):`,
+    opts.pageUrl,
+    "",
+    `You are getting this because ${opts.fromName} asked through ${brand} two days ago and has not yet told us you've connected. This is the only email about this request.`,
+  ];
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    replyTo: opts.fromEmail,
+    subject: `${opts.fromName} would like to talk about ${opts.studentName}`,
+    text: lines.join("\n"),
+    kind: "contact-ping",
+    tenant: opts.tenant.slug,
+  });
+}

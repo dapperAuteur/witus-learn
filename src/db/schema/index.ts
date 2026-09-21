@@ -30,3 +30,5 @@ export * from "./media-assets";
 export * from "./notes";
 export * from "./overrides";
 export * from "./interest";
+export * from "./teacher-age";
+export * from "./contact";

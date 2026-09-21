@@ -1,6 +1,7 @@
-import { apiContext, errorJson, isTenantAdmin } from "@/lib/api";
+import { apiContext, errorJson } from "@/lib/api";
 import { getCohort } from "@/db/queries/cohorts";
 import { getCohortGradebook } from "@/db/queries/gradebook";
+import { canManageCohort } from "@/lib/cohort-access";
 
 // GET /api/cohorts/<id>/gradebook.csv — the cohort's gradebook as a CSV download (plans/50, Phase 1).
 // Authorized to the cohort OWNER or a tenant ADMIN only, and read strictly within the request's tenant
@@ -19,7 +20,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ id: str
 
   const cohort = await getCohort(sdb.tenantId, id);
   if (!cohort) return errorJson("Cohort not found.", 404);
-  if (cohort.ownerId !== session.user.id && !(await isTenantAdmin(session, sdb.tenantId))) {
+  if (!(await canManageCohort(session, sdb.tenantId, cohort))) {
     return errorJson("You do not have access to this cohort.", 403);
   }
 

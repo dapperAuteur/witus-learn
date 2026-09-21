@@ -150,6 +150,17 @@ describe("the mirror never leaks a bearer secret", () => {
 });
 
 describe("the mirror can never break the email send", () => {
+  it("never mirrors a contact-ping email: it is two adults' addresses and a child's name", async () => {
+    await sendEmail({
+      to: "teacher@example.com",
+      subject: "Dana Lee would like to talk about Sam Lee",
+      text: "Email: dana@example.com",
+      replyTo: "dana@example.com",
+      kind: "contact-ping",
+    });
+    expect(sendToInbox).not.toHaveBeenCalled();
+  });
+
   it("a throwing Inbox does not fail sendEmail", async () => {
     sendToInbox.mockRejectedValueOnce(new Error("inbox is down"));
     await expect(

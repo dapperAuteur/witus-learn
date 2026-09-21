@@ -1,12 +1,14 @@
 import "server-only";
 import { randomBytes } from "node:crypto";
-import { and, eq, isNull, sql } from "drizzle-orm";
+import { and, asc, eq, isNull, or, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   cohortInvites,
   cohortMembers,
+  cohortTeachers,
   cohorts,
   userProfiles,
+  users,
   type Cohort,
   type CohortInvite,
 } from "@/db/schema";
@@ -15,17 +17,25 @@ import {
 // are tenant-scoped; a caller resolving by id must still run row.tenantId through
 // sdb.ownOrNotFound (never trust an id alone).
 
+/** Create a class and make its creator its first teacher, in one transaction, so a cohort never
+ *  exists with nobody on its teacher list. Who MAY create one is the route's job (an adult teacher
+ *  or admin, see POST /api/cohorts). */
 export async function createCohort(tenantId: string, ownerId: string, name: string): Promise<Cohort> {
-  const [row] = await db.insert(cohorts).values({ tenantId, ownerId, name }).returning();
-  return row;
+  return db.transaction(async (tx) => {
+    const [row] = await tx.insert(cohorts).values({ tenantId, ownerId, name }).returning();
+    await tx.insert(cohortTeachers).values({ tenantId, cohortId: row.id, userId: ownerId, assignedBy: ownerId });
+    return row;
+  });
 }
 
 export interface CohortWithCount extends Cohort {
   memberCount: number;
 }
 
-/** Cohorts for the tenant, optionally filtered to one owner (an instructor's own classes). */
-export async function listCohorts(tenantId: string, ownerId?: string): Promise<CohortWithCount[]> {
+/** Cohorts for the tenant, optionally filtered to the ones a user runs: those they created OR are
+ *  an assigned teacher of ("my classes"). */
+export async function listCohorts(tenantId: string, userId?: string): Promise<CohortWithCount[]> {
+  const teaches = sql`exists (select 1 from ${cohortTeachers} where ${cohortTeachers.cohortId} = ${cohorts.id} and ${cohortTeachers.userId} = ${userId ?? ""})`;
   const rows = await db
     .select({
       cohort: cohorts,
@@ -33,7 +43,11 @@ export async function listCohorts(tenantId: string, ownerId?: string): Promise<C
     })
     .from(cohorts)
     .leftJoin(cohortMembers, eq(cohortMembers.cohortId, cohorts.id))
-    .where(ownerId ? and(eq(cohorts.tenantId, tenantId), eq(cohorts.ownerId, ownerId)) : eq(cohorts.tenantId, tenantId))
+    .where(
+      userId
+        ? and(eq(cohorts.tenantId, tenantId), or(eq(cohorts.ownerId, userId), teaches))
+        : eq(cohorts.tenantId, tenantId),
+    )
     .groupBy(cohorts.id)
     .orderBy(cohorts.createdAt);
   return rows.map((r) => ({ ...r.cohort, memberCount: r.memberCount }));
@@ -84,6 +98,9 @@ export async function acceptInvite(token: string, userId: string): Promise<Cohor
 export interface CohortMemberWithName {
   userId: string;
   displayName: string;
+  /** The account's full name (users.name) when set, else the display name. What a class's teachers
+   *  and a student's parents see on contact cards (decided 2026-09-20: first and last name). */
+  fullName: string;
   joinedAt: Date;
 }
 
@@ -95,16 +112,17 @@ export async function listMembers(tenantId: string, cohortId: string): Promise<C
       joinedAt: cohortMembers.joinedAt,
       displayName: userProfiles.displayName,
       username: userProfiles.username,
+      name: users.name,
     })
     .from(cohortMembers)
     .leftJoin(userProfiles, eq(userProfiles.userId, cohortMembers.userId))
+    .leftJoin(users, eq(users.id, cohortMembers.userId))
     .where(and(eq(cohortMembers.tenantId, tenantId), eq(cohortMembers.cohortId, cohortId)))
     .orderBy(cohortMembers.joinedAt);
-  return rows.map((r) => ({
-    userId: r.userId,
-    joinedAt: r.joinedAt,
-    displayName: r.displayName ?? r.username ?? "Learner",
-  }));
+  return rows.map((r) => {
+    const displayName = r.displayName ?? r.username ?? "Learner";
+    return { userId: r.userId, joinedAt: r.joinedAt, displayName, fullName: r.name?.trim() || displayName };
+  });
 }
 
 /** Cohort ids this user is a member of, in this tenant. Used to piggyback live-presence
@@ -167,4 +185,90 @@ export async function refreshInvite(
     )
     .returning();
   return row ?? null;
+}
+
+// ── Teachers of a cohort ──────────────────────────────────────────────────────
+
+/** Is this user an assigned teacher of this cohort, in this tenant? */
+export async function isCohortTeacher(tenantId: string, cohortId: string, userId: string): Promise<boolean> {
+  const [row] = await db
+    .select({ id: cohortTeachers.id })
+    .from(cohortTeachers)
+    .where(
+      and(
+        eq(cohortTeachers.tenantId, tenantId),
+        eq(cohortTeachers.cohortId, cohortId),
+        eq(cohortTeachers.userId, userId),
+      ),
+    )
+    .limit(1);
+  return Boolean(row);
+}
+
+export interface CohortTeacherRow {
+  userId: string;
+  name: string;
+  email: string;
+  isOwner: boolean;
+}
+
+/** The teachers of one cohort, oldest assignment first. Tenant-scoped. Email is included because
+ *  the only screen that lists this is the class's own management page (owner, teachers, admins). */
+export async function listCohortTeachers(tenantId: string, cohortId: string): Promise<CohortTeacherRow[]> {
+  const rows = await db
+    .select({
+      userId: cohortTeachers.userId,
+      name: users.name,
+      displayName: userProfiles.displayName,
+      email: users.email,
+      ownerId: cohorts.ownerId,
+    })
+    .from(cohortTeachers)
+    .innerJoin(cohorts, eq(cohorts.id, cohortTeachers.cohortId))
+    .innerJoin(users, eq(users.id, cohortTeachers.userId))
+    .leftJoin(userProfiles, eq(userProfiles.userId, cohortTeachers.userId))
+    .where(and(eq(cohortTeachers.tenantId, tenantId), eq(cohortTeachers.cohortId, cohortId)))
+    .orderBy(asc(cohortTeachers.createdAt));
+  return rows.map((r) => ({
+    userId: r.userId,
+    name: r.name?.trim() || r.displayName?.trim() || r.email,
+    email: r.email,
+    isOwner: r.userId === r.ownerId,
+  }));
+}
+
+/** Idempotent: assigning someone who already teaches the class changes nothing. */
+export async function addCohortTeacher(
+  tenantId: string,
+  cohortId: string,
+  userId: string,
+  assignedBy: string,
+): Promise<void> {
+  await db
+    .insert(cohortTeachers)
+    .values({ tenantId, cohortId, userId, assignedBy })
+    .onConflictDoNothing({ target: [cohortTeachers.cohortId, cohortTeachers.userId] });
+}
+
+/** Remove a teacher. Refuses (false) to remove the LAST one: a class with no teacher has nobody its
+ *  families can reach and nobody listed as running it. */
+export async function removeCohortTeacher(tenantId: string, cohortId: string, userId: string): Promise<boolean> {
+  return db.transaction(async (tx) => {
+    const [{ n }] = await tx
+      .select({ n: sql<number>`count(*)::int` })
+      .from(cohortTeachers)
+      .where(and(eq(cohortTeachers.tenantId, tenantId), eq(cohortTeachers.cohortId, cohortId)));
+    if (n <= 1) return false;
+    const rows = await tx
+      .delete(cohortTeachers)
+      .where(
+        and(
+          eq(cohortTeachers.tenantId, tenantId),
+          eq(cohortTeachers.cohortId, cohortId),
+          eq(cohortTeachers.userId, userId),
+        ),
+      )
+      .returning({ id: cohortTeachers.id });
+    return rows.length > 0;
+  });
 }

@@ -5,6 +5,47 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Reset the demo account from the admin home** (\`feat/admin-demo-reset-button\`, no migration). BAM
+  asked 2026-09-20. A platform-owner-only **Reset demo data now** button in a "Demo account" section
+  on \`/admin\` runs the same \`resetDemoData\` as the nightly cron, on demand
+  (\`POST /api/admin/demo-reset\`). Authorized by the owner's session, never by \`CRON_SECRET\`, so the
+  secret never reaches a browser; a brand admin never sees it, because the demo lives on Acme
+  whatever school you are on.
+- ✅ **Parent/teacher contact, without messaging** (\`feat/contact-pings\`, **migration 0064**, run
+  \`pnpm db:migrate:prod\`; needs \`CRON_SECRET\`, already set for the demo reset). BAM chose Option C
+  on 2026-09-20, with his own fallback. **Standing preferences**: each adult sets, per school, how the
+  other side may reach them (show my details / ask me to get in touch / only through the school),
+  one default for parents and one for teachers, and **per-person overrides** in every combination
+  (\`contact_settings\`, \`contact_overrides\`). **A ping shows in the app first**: a count on Family /
+  Cohorts in the menu (a dot on the collapsed Account menu and the phone hamburger) and a card on
+  \`/family\` or the class roster naming the student with a link to their work. **The asker marks
+  "We've started talking"**; if not after 48 hours, a daily cron (\`/api/cron/contact-pings\`,
+  15:00 UTC) sends the other person ONE email, **Reply-To the asker**, From the school (so DMARC
+  holds), not mirrored to the WitUS Inbox. Pings go only to a class's assigned teachers, never to a
+  course author or an admin. No student is ever a party (check constraints), the relationship is
+  recomputed on every read (isolation test covers the staleness case), and a schema test fails if
+  any contact table grows a message column: **the no-inbox rule** in CLAUDE.md. **Known limits:**
+  daily cron means the email lands 48 to 72 hours after the ask (hourly needs Vercel Pro); the
+  privacy page is still the per-tenant placeholder, so it does not yet describe this disclosure.
+- ✅ **Classes are run by adult teachers, and a class can have several** (\`feat/cohort-teachers-adult-rule\`,
+  **migration 0063**, run \`pnpm db:migrate:prod\`). Decided by BAM on 2026-09-20. **Only adult
+  teachers or admins create classes now**: \`POST /api/cohorts\` requires an instructor or brand_admin
+  role (or the platform owner) AND the adult rule, where it used to accept any signed-in user. **A
+  class can have several teachers** (\`cohort_teachers\`): its creator or a school admin adds one by
+  email from the class page, and the creator can step back from the list, so a homeschool parent
+  without a teacher role gets a class by having an admin create it and assign them. Every "may run
+  this class" check (roster, invites, class code, gradebook, grade adjustments, parent invites,
+  teacher notes) now goes through one helper, \`src/lib/cohort-access.ts\`, instead of a dozen copies of
+  "owner or admin". The migration makes every existing owner a teacher of their class, so nothing
+  changes for classes that already exist. **"Adult" means** the person ticked "I am 18 or older"
+  (\`user_profiles.adult_attested_at\`) AND nothing the platform recorded says otherwise: a managed
+  child, a kid (avatar and PIN) login, or being someone's linked student each outrank the tick, and a
+  check constraint refuses an attestation on a managed child outright. There is no ID check and the
+  copy does not pretend there is. **The platform owner's switch** (\`/admin/teacher-age\`, default ON,
+  typing TURN OFF to disable) and **per-person exceptions**, granted in four steps (find the person;
+  tick three warnings, plus a fourth when the account shows a child's signals; write a reason and type
+  their email back; review and grant), every step re-checked on the server and every exception kept
+  after revocation. An exception lets someone teach; it never makes them reachable by parents.
 - 🔧 **"Continue as ..." instead of asking a signed-in visitor to sign in again**
   (\`fix/decisions-01-02\`, no migration). Signing in on a WitUS-branded host sent you to the WitUS
   login page even when another tab already had you signed in to a WitUS app. BAM chose **option B**
@@ -980,7 +1021,9 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   students by email (one-time link; falls back to a copyable link if Mailgun isn't sending), and
   manages a **roster** at \`/cohorts/[id]\` showing **● here** for anyone currently present on
   \`/live\`. Students accept at \`/join/[token]\` and land on \`/live\` enrolled. Tenant-scoped tables
-  \`cohorts\`/\`cohort_members\`/\`cohort_invites\` (migration 0029).
+  \`cohorts\`/\`cohort_members\`/\`cohort_invites\` (migration 0029). **Changed 2026-09-20:** creating a
+  class now takes an adult teacher or admin, and a class can have several teachers (see "Classes are
+  run by adult teachers" above).
 - ✅ **Family** (\`feat/cohorts-family\`): a read-only parent view (Model A of the hybrid: kids keep
   their own accounts). From a cohort roster, a teacher **invites a parent** by email per student
   (\`/api/cohorts/[id]/guardian-invite\`); the parent accepts at \`/family/accept/[token]\` and sees, at

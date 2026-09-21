@@ -537,8 +537,8 @@ and a database constraint (`lesson_notes_teacher_lesson_chk`) makes that a fact 
 convention. Notes key off stable lesson/course UUIDs, never array positions, so re-seeding a
 course leaves every note where its author put it.
 
-Sharing is deliberately narrow (plans/61): a student shares a single note with a teacher (an
-owner of a cohort they belong to), revocably — never a bulk toggle, never student↔student. A
+Sharing is deliberately narrow (plans/61): a student shares a single note with a teacher (a
+teacher of a cohort they belong to), revocably — never a bulk toggle, never student↔student. A
 teacher attaches a note to a lesson for a cohort or a subset of it (one `audience` model), which
 renders in those students' panels on that lesson: **content, not messaging** — no notification,
 no inbox, no email. Guardians see teacher-sent notes on the family report; a child's own notes
@@ -603,6 +603,37 @@ shows the adjusted value with a visible marker and the reason, corrections are n
 (latest wins), and platform/course-level statistics never consult overrides
 ([src/lib/overrides.ts](src/lib/overrides.ts), migration `0053`).
 
+## Class teachers, the adult rule, and parent/teacher contact
+
+Decided by BAM on 2026-09-20 (`plans/app-improvements/messaging-parents-teachers-3-options.md`).
+
+**Classes.** Only **adult teachers or admins** create a class (`POST /api/cohorts`: an instructor or
+brand_admin role, or the platform owner, AND the adult rule). A class can have **several teachers**
+(`cohort_teachers`, migration `0063`); its creator or a school admin adds one by email from the class
+page. Every "may run this class" check goes through [src/lib/cohort-access.ts](src/lib/cohort-access.ts).
+
+**"Adult"** is an "I am 18 or older" attestation (`user_profiles.adult_attested_at`) that no
+structural fact contradicts: a managed child, a kid (avatar and PIN) login, or being someone's linked
+student each outrank the tick. There is no ID check. The platform owner's switch at
+**`/admin/teacher-age`** (default ON) applies the rule to teaching, with per-person exceptions granted
+in four server-checked steps and kept after revocation. Pure rules:
+[src/lib/teacher-age.ts](src/lib/teacher-age.ts).
+
+**Contact, not messaging.** Two adults already related through a class (a student's parent and that
+student's teacher) can see how to reach each other or ask to be reached; the talking happens by email
+or phone. Each person sets, per school, how the other side may reach them (**show my details**,
+**ask me to get in touch**, or **only through the school**), one default for parents and one for
+teachers, plus **per-person overrides** in any combination. A request ("ping") shows **in the app
+first**: a count on Family / Cohorts in the menu, and a card on `/family` or the class roster, naming
+the student and linking to their work. The person who asked marks **"We've started talking"**; if
+they have not after 48 hours, a daily cron (`/api/cron/contact-pings`, `CRON_SECRET`) sends the other
+person **one** email with Reply-To set to the asker. No student is ever a party (check constraints),
+the relationship is recomputed on every read (`tests/isolation/contact.db.test.ts`, including the
+staleness case), the fallback email is not mirrored to the WitUS Inbox, and there is **no inbox**: no
+message body, no thread, no history view (`tests/contact-schema.test.ts`). Rules:
+[src/lib/contact.ts](src/lib/contact.ts); data: [src/db/queries/contact.ts](src/db/queries/contact.ts)
+(migration `0064`).
+
 ## Self-serve custom domains
 
 At `/admin/domains`, a school's **brand_admin** maps a domain to their tenant entirely self-serve,
@@ -623,7 +654,8 @@ serves an unverified domain, so a school can't hijack a domain it doesn't contro
 into a **shared demo account**, a `brand_admin` on Acme only, so they can try teacher/admin
 surfaces (authoring, `/teach`, `/live`, `/cohorts`) without ever becoming a platform owner or a
 member of any other brand. A nightly Vercel cron (`/api/cron/demo-reset`, midnight UTC) wipes the
-demo user's Acme data and reseeds a small baseline so every visitor gets a fresh sandbox. Fully
+demo user's Acme data and reseeds a small baseline so every visitor gets a fresh sandbox; the
+platform owner can run the same reset on demand with **Reset demo data now** on `/admin`. Fully
 optional: three env vars (`CRON_SECRET`, `DEMO_VISITOR_PASSWORD`, `DEMO_VISITOR_USER_EMAIL`) gate
 it, the app boots fine without them. See [src/db/queries/demo.ts](src/db/queries/demo.ts) and
 `plans/user-tasks/62-demo-account-setup.md`.

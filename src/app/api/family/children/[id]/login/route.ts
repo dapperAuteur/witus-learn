@@ -1,8 +1,9 @@
 import { z } from "zod";
-import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
+import { apiContext, errorJson, json } from "@/lib/api";
 import { isManagedChildOf } from "@/db/queries/family";
 import { getCohort } from "@/db/queries/cohorts";
 import { addCohortMemberIfAbsent, getOrCreateClassCode, setChildLoginMethod } from "@/db/queries/kid-login";
+import { canManageCohort } from "@/lib/cohort-access";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -38,7 +39,7 @@ export async function POST(req: Request, { params }: Params) {
   if (method === "avatar_pin" && cohortId) {
     const cohort = await getCohort(sdb.tenantId, cohortId);
     if (!cohort) return errorJson("Class not found.", 404);
-    if (cohort.ownerId !== session.user.id && !(await isTenantAdmin(session, sdb.tenantId))) {
+    if (!(await canManageCohort(session, sdb.tenantId, cohort))) {
       return errorJson("You don't manage that class.", 403);
     }
     await addCohortMemberIfAbsent(sdb.tenantId, cohort.id, childUserId);

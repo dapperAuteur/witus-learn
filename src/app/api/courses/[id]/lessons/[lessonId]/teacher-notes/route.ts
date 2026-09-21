@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { apiContext, errorJson, json } from "@/lib/api";
 import { getLessonById } from "@/db/queries/authoring";
-import { getCohort, listMembers } from "@/db/queries/cohorts";
+import { getCohort, isCohortTeacher, listMembers } from "@/db/queries/cohorts";
 import {
   NOTE_BLOCK_ID_MAX,
   NOTE_BODY_MAX,
@@ -28,7 +28,8 @@ const Schema = z.object({
 // this route does NOT do: it writes a row that renders on the lesson page for the audience.
 // No notification, no inbox, no email — the moment it grows one, it becomes messaging.
 //
-// Authority = OWNING the cohort in this tenant. session.user.id, never the active learner: a
+// Authority = OWNING or being an assigned TEACHER of the cohort in this tenant (a brand admin is
+// deliberately not enough: a teacher note is signed by the person who teaches the class). session.user.id, never the active learner: a
 // parent studying as a child must not be able to send teacher notes through the child.
 export async function POST(req: Request, { params }: Params) {
   const { id, lessonId } = await params;
@@ -48,7 +49,9 @@ export async function POST(req: Request, { params }: Params) {
   }
 
   const cohort = await getCohort(sdb.tenantId, cohortId);
-  if (!cohort || cohort.ownerId !== session.user.id) {
+  const teaches =
+    cohort && (cohort.ownerId === session.user.id || (await isCohortTeacher(sdb.tenantId, cohort.id, session.user.id)));
+  if (!cohort || !teaches) {
     // A foreign or non-owned cohort is a plain 404: revealing "exists but not yours" leaks.
     return errorJson("Not found", 404);
   }

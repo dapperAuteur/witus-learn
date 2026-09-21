@@ -3,6 +3,7 @@ import { and, desc, eq, exists, ilike, inArray, isNull, ne, not, or, sql } from 
 import { db } from "@/db/client";
 import {
   cohortMembers,
+  cohortTeachers,
   cohorts,
   lessonNoteRecipients,
   lessonNoteShares,
@@ -170,23 +171,26 @@ export async function deleteOwnNote(
 
 // ── Student → teacher sharing (per-note, explicit, revocable) ────────────────
 
-/** The teachers a learner can share with: owners of cohorts the learner belongs to, in this
- *  tenant. (No cohort membership = no share targets; the UI explains rather than hiding.) */
+/** The teachers a learner can share with: the assigned teachers of cohorts the learner belongs to,
+ *  in this tenant (cohort_teachers; a class's creator is its first teacher, and migration 0063
+ *  backfilled every pre-existing owner). No cohort membership = no share targets; the UI explains
+ *  rather than hiding. */
 export async function listTeachersForLearner(
   tenantId: string,
   learnerId: string,
 ): Promise<{ id: string; name: string | null }[]> {
   const rows = await db
-    .selectDistinct({ id: cohorts.ownerId, name: users.name })
+    .selectDistinct({ id: cohortTeachers.userId, name: users.name })
     .from(cohortMembers)
-    .innerJoin(cohorts, eq(cohortMembers.cohortId, cohorts.id))
-    .innerJoin(users, eq(users.id, cohorts.ownerId))
+    .innerJoin(cohortTeachers, eq(cohortTeachers.cohortId, cohortMembers.cohortId))
+    .innerJoin(users, eq(users.id, cohortTeachers.userId))
     .where(
       and(
         eq(cohortMembers.tenantId, tenantId),
+        eq(cohortTeachers.tenantId, tenantId),
         eq(cohortMembers.userId, learnerId),
         // Sharing with yourself is a no-op in the model; keep the list honest.
-        ne(cohorts.ownerId, learnerId),
+        ne(cohortTeachers.userId, learnerId),
       ),
     );
   return rows;
