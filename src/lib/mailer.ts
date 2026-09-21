@@ -14,7 +14,19 @@ export type EmailKind =
   | "guardian-invite"
   | "course-audit-invite"
   | "pricing-inquiry"
+  | "contact-ping"
   | "other";
+
+/**
+ * Kinds that are NOT mirrored to the WitUS Inbox at all, not even as metadata.
+ *
+ * `contact-ping` (the 48-hour fallback for a parent/teacher "I'd like to talk"): its whole content
+ * is two adults' email addresses, a class name and a child's name, and redactSecrets strips tokens,
+ * not people. The mirror exists to answer "did the sign-in link go out?"; a family's contact details
+ * in a triage queue answer nothing and would be a second copy nobody decided to keep. The row in
+ * contact_pings (emailed_at) is the record that it was sent.
+ */
+export const NOT_MIRRORED: ReadonlySet<EmailKind> = new Set<EmailKind>(["contact-ping"]);
 
 interface SendEmailInput {
   to: string;
@@ -49,6 +61,7 @@ async function mirrorToInbox(
   delivered: boolean,
   failure?: string,
 ): Promise<void> {
+  if (input.kind && NOT_MIRRORED.has(input.kind)) return;
   try {
     const kind = input.kind ?? "other";
     // The BODY is the dangerous part: the magic-link URL, /join/<token>, /family/accept/<token>

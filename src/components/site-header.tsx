@@ -7,6 +7,7 @@ import { brandName } from "@/lib/branding";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { getActiveLearner } from "@/lib/active-learner";
 import { listManagedChildren } from "@/db/queries/family";
+import { countIncomingPings } from "@/db/queries/contact";
 import { listCategories } from "@/db/queries/catalog";
 import { tenantHasMapData } from "@/db/queries/map";
 import { VETTING_QUEUE } from "@/lib/admin-nav";
@@ -121,11 +122,18 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   // offline, i.e. exactly when they reach for this menu. Gating the LINK on a session is fine —
   // the PAGE stays open to anyone at /downloads (never gate it), because its whole contract is
   // "renderable from cache with no session lookup".
+  //
+  // Family / Cohorts carry a count of parent/teacher contact requests waiting there (the "you have a
+  // ping" signal decided 2026-09-20). The count points at the page where the request already sits,
+  // on the card of the person who asked; there is no inbox to link to, by rule.
+  // Fails soft: a badge is never worth taking every page down (e.g. a deploy that lands before
+  // migration 0064 has run). The pages themselves still fail loudly, which is where it belongs.
+  const pings = session ? await countIncomingPings(tenant.id, session.user.id).catch(() => null) : null;
   const accountItems: NavItem[] = session
     ? [
         { href: "/dashboard", label: "Dashboard" },
-        { href: "/cohorts", label: "Cohorts" },
-        { href: "/family", label: "Family" },
+        { href: "/cohorts", label: "Cohorts", badge: pings?.asTeacher },
+        { href: "/family", label: "Family", badge: pings?.asParent },
         { href: "/my-courses", label: "My Courses" },
         { href: "/field-log", label: "My Field Log" },
         { href: "/downloads", label: "Downloads", hardNav: true },

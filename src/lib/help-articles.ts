@@ -437,6 +437,42 @@ on their own dashboard. A wrong adjustment is fixed by saving a newer one. Cours
 keep measuring real attempts only.`,
   },
   {
+    slug: "parent-teacher-contact",
+    title: "Contact a teacher or a parent (without messaging)",
+    category: "Live",
+    keywords: ["contact", "parent", "teacher", "guardian", "ping", "talk", "email", "phone", "reach", "school", "message", "reply"],
+    body: `# Contact a teacher or a parent
+
+There are **no messages** in this app. Instead, a parent and their child's teacher can see how to
+reach each other, or ask to be reached, and then talk by **email or phone**.
+
+**Who.** Only adults already linked through a class: a student's parent (from **/family**) and that
+student's teachers (from the class page under **/cohorts**). You confirm once that you are **18 or
+older**. Students are never part of it.
+
+**Your preferences** (the **Contact preferences** box on /family or /cohorts). For each side (the
+teachers of your children, the parents of your students) choose one:
+
+- **Show my contact details**: they see your account email, plus a phone and a "best time" note if you
+  add them (both optional).
+- **Ask me to get in touch** (the default): your details stay hidden, but they can ask you to contact
+  them, and you see their details with the request.
+- **Only through the school**: they can't ask you in the app and are pointed to the school instead.
+
+On each person's card you can set a **different rule for that one person**, in any combination (for
+example: parents may see your details, but one particular parent goes through the school).
+
+**Asking to talk.** Press **Ask ... to get in touch** (or **Let ... know you'd like to talk**) on their
+card. They see a count next to **Family** or **Cohorts** in the menu, and your request on your card,
+with the student's name, a link to the student's work, and how to reach you. Once you have started
+talking, press **We've started talking**. If you haven't within **48 hours**, we email them once
+(checked once a day, so it arrives within the following day) and replying to that email reaches you
+directly. A request disappears after 14 days. You can ask the same person about the same student
+again a day later.
+
+Changing your preferences never notifies anyone.`,
+  },
+  {
     slug: "family",
     title: "Give parents a read-only Family view",
     category: "Live",

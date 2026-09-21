@@ -14,8 +14,18 @@ export const metadata: Metadata = { title: "Cohort report" };
 // A print-optimized cohort gradebook (plans/50, Phase 1b) for "Save as PDF" via the browser. Same data
 // as the CSV export, same authorization: the cohort owner or a tenant admin only, tenant-scoped. The
 // print stylesheet isolates the report so the site header/footer do not print.
-export default async function CohortReportPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function CohortReportPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<{ student?: string }>;
+}) {
   const { id } = await params;
+  // ?student=<id>: one student's rows only, the target of the "view their work" links on the roster
+  // and on parent contact cards. Filtering the class's own gradebook means it can never show a
+  // student outside this class.
+  const { student } = await searchParams;
   const sdb = await getScopedDb();
   const session = await requireUserPage();
 
@@ -23,7 +33,9 @@ export default async function CohortReportPage({ params }: { params: Promise<{ i
   if (!cohort) notFound();
   if (!(await canManageCohort(session, sdb.tenantId, cohort))) forbidden();
 
-  const rows = await getCohortGradebook(sdb.tenantId, id);
+  const allRows = await getCohortGradebook(sdb.tenantId, id);
+  const rows = student ? allRows.filter((r) => r.userId === student) : allRows;
+  const studentName = student ? (rows[0]?.student ?? null) : null;
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
@@ -43,7 +55,15 @@ export default async function CohortReportPage({ params }: { params: Promise<{ i
       <div id="cohort-report">
         <h1 className="text-2xl font-bold">{cohort.name}</h1>
         <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-          Gradebook report, {rows.length} {rows.length === 1 ? "row" : "rows"}.
+          {student ? `${studentName ?? "This student"}, ` : ""}Gradebook report, {rows.length} {rows.length === 1 ? "row" : "rows"}.
+          {student ? (
+            <>
+              {" "}
+              <a href={`/cohorts/${cohort.id}/report`} className="underline print:hidden">
+                Show the whole class
+              </a>
+            </>
+          ) : null}
         </p>
         <table className="mt-4 w-full border-collapse text-sm">
           <thead>
@@ -96,7 +116,7 @@ export default async function CohortReportPage({ params }: { params: Promise<{ i
             {rows.length === 0 ? (
               <tr>
                 <td colSpan={6} className="py-3 text-neutral-600">
-                  No enrolled students yet.
+                  {student ? "No course enrollments for this student yet." : "No enrolled students yet."}
                 </td>
               </tr>
             ) : null}

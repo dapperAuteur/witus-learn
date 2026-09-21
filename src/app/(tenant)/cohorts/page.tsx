@@ -7,6 +7,8 @@ import { getTeachingEligibility } from "@/db/queries/teacher-age";
 import { hasTeacherRole } from "@/lib/cohort-access";
 import { CreateCohortForm } from "@/components/create-cohort-form";
 import { AdultAttestation } from "@/components/adult-attestation";
+import { ContactSettingsPanel } from "@/components/contact-settings-panel";
+import { getScopedDb } from "@/db/scoped";
 
 export const metadata: Metadata = { title: "Cohorts" };
 
@@ -20,10 +22,13 @@ export default async function CohortsPage() {
   const tenant = await requireTenant();
   const session = await requireUserPage();
 
-  const [cohorts, isTeacher, eligibility] = await Promise.all([
+  const sdb = await getScopedDb();
+  const [cohorts, isTeacher, eligibility, pings, contactSettings] = await Promise.all([
     listCohorts(tenant.id, session.user.id),
     hasTeacherRole(session, tenant.id),
     getTeachingEligibility(session.user.id),
+    sdb.countIncomingPings(session.user.id),
+    sdb.getContactSettings(session.user.id),
   ]);
 
   return (
@@ -61,12 +66,25 @@ export default async function CohortsPage() {
         )}
       </div>
 
+      {/* How parents of your students may reach you. Only for someone who runs a class and is a
+          confirmed adult; the per-parent rules are on each parent's card on the class page. */}
+      {cohorts.length > 0 && eligibility.status === "adult" ? (
+        <div className="mt-6">
+          <ContactSettingsPanel initial={contactSettings} show={{ parents: true, teachers: false }} accountEmail={session.user.email} />
+        </div>
+      ) : null}
+
       <ul className="mt-8 divide-y divide-neutral-200 dark:divide-neutral-800">
         {cohorts.map((c) => (
           <li key={c.id} className="py-3">
             <Link href={`/cohorts/${c.id}`} className="font-medium hover:underline">
               {c.name}
             </Link>
+            {(pings.byCohort.get(c.id) ?? 0) > 0 ? (
+              <span className="ml-2 inline-flex items-center rounded-full px-2 text-xs font-semibold text-white" style={{ backgroundColor: "var(--accent)" }}>
+                {pings.byCohort.get(c.id)} {pings.byCohort.get(c.id) === 1 ? "parent would" : "parents would"} like to talk
+              </span>
+            ) : null}
             <p className="text-sm text-neutral-600">
               {c.memberCount} {c.memberCount === 1 ? "student" : "students"}
             </p>

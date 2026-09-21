@@ -98,6 +98,9 @@ export async function acceptInvite(token: string, userId: string): Promise<Cohor
 export interface CohortMemberWithName {
   userId: string;
   displayName: string;
+  /** The account's full name (users.name) when set, else the display name. What a class's teachers
+   *  and a student's parents see on contact cards (decided 2026-09-20: first and last name). */
+  fullName: string;
   joinedAt: Date;
 }
 
@@ -109,16 +112,17 @@ export async function listMembers(tenantId: string, cohortId: string): Promise<C
       joinedAt: cohortMembers.joinedAt,
       displayName: userProfiles.displayName,
       username: userProfiles.username,
+      name: users.name,
     })
     .from(cohortMembers)
     .leftJoin(userProfiles, eq(userProfiles.userId, cohortMembers.userId))
+    .leftJoin(users, eq(users.id, cohortMembers.userId))
     .where(and(eq(cohortMembers.tenantId, tenantId), eq(cohortMembers.cohortId, cohortId)))
     .orderBy(cohortMembers.joinedAt);
-  return rows.map((r) => ({
-    userId: r.userId,
-    joinedAt: r.joinedAt,
-    displayName: r.displayName ?? r.username ?? "Learner",
-  }));
+  return rows.map((r) => {
+    const displayName = r.displayName ?? r.username ?? "Learner";
+    return { userId: r.userId, joinedAt: r.joinedAt, displayName, fullName: r.name?.trim() || displayName };
+  });
 }
 
 /** Cohort ids this user is a member of, in this tenant. Used to piggyback live-presence
