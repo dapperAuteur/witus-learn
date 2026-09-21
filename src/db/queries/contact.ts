@@ -5,6 +5,7 @@ import {
   cohortMembers,
   cohortTeachers,
   cohorts,
+  contactCohortOverrides,
   contactOverrides,
   contactPings,
   contactSettings,
@@ -125,6 +126,72 @@ export async function setOverride(
     .values({ tenantId, userId, otherUserId, mode })
     .onConflictDoUpdate({
       target: [contactOverrides.tenantId, contactOverrides.userId, contactOverrides.otherUserId],
+      set: { mode, updatedAt: new Date() },
+    });
+}
+
+// ── Per-class overrides (a teacher's rule for everyone in one class) ─────────
+
+export async function getCohortOverride(tenantId: string, userId: string, cohortId: string): Promise<ContactMode | null> {
+  const [row] = await db
+    .select({ mode: contactCohortOverrides.mode })
+    .from(contactCohortOverrides)
+    .where(
+      and(
+        eq(contactCohortOverrides.tenantId, tenantId),
+        eq(contactCohortOverrides.userId, userId),
+        eq(contactCohortOverrides.cohortId, cohortId),
+      ),
+    )
+    .limit(1);
+  return (row?.mode as ContactMode | undefined) ?? null;
+}
+
+/** Key for cohortOverridesFor: `${userId}:${cohortId}`. */
+export const cohortOverrideKey = (userId: string, cohortId: string) => `${userId}:${cohortId}`;
+
+/** The per-class rules these people set for these classes, keyed by cohortOverrideKey. */
+export async function cohortOverridesFor(
+  tenantId: string,
+  userIds: string[],
+  cohortIds: string[],
+): Promise<Map<string, ContactMode>> {
+  if (userIds.length === 0 || cohortIds.length === 0) return new Map();
+  const rows = await db
+    .select({ userId: contactCohortOverrides.userId, cohortId: contactCohortOverrides.cohortId, mode: contactCohortOverrides.mode })
+    .from(contactCohortOverrides)
+    .where(
+      and(
+        eq(contactCohortOverrides.tenantId, tenantId),
+        inArray(contactCohortOverrides.userId, [...new Set(userIds)]),
+        inArray(contactCohortOverrides.cohortId, [...new Set(cohortIds)]),
+      ),
+    );
+  return new Map(rows.map((r) => [cohortOverrideKey(r.userId, r.cohortId), r.mode as ContactMode]));
+}
+
+/** Set (or with null, clear) a teacher's rule for one class. The caller must have checked that the
+ *  user teaches this class (isCohortTeacher). */
+export async function setCohortOverride(
+  tenantId: string,
+  userId: string,
+  cohortId: string,
+  mode: ContactMode | null,
+): Promise<void> {
+  const where = and(
+    eq(contactCohortOverrides.tenantId, tenantId),
+    eq(contactCohortOverrides.userId, userId),
+    eq(contactCohortOverrides.cohortId, cohortId),
+  );
+  if (mode === null) {
+    await db.delete(contactCohortOverrides).where(where);
+    return;
+  }
+  await db
+    .insert(contactCohortOverrides)
+    .values({ tenantId, userId, cohortId, mode })
+    .onConflictDoUpdate({
+      target: [contactCohortOverrides.tenantId, contactCohortOverrides.userId, contactCohortOverrides.cohortId],
       set: { mode, updatedAt: new Date() },
     });
 }
@@ -368,21 +435,36 @@ export async function listActivePingsForUser(tenantId: string, userId: string, n
     .orderBy(desc(contactPings.createdAt));
 }
 
-/** The asker (and only the asker) says they have started talking. Ends the ping. */
-export async function markPingConnected(tenantId: string, pingId: string, userId: string): Promise<boolean> {
+/**
+ * End a ping. `as: "asker"` is "we've started talking" (only the person who asked); `as: "recipient"`
+ * is "close this request" (only the person asked, decided 2026-09-20). Either way it leaves both
+ * pages and the badge, and the fallback email is never sent. Who ended it is recorded in closed_by
+ * and never shown to the other person.
+ */
+export async function endPing(
+  tenantId: string,
+  pingId: string,
+  userId: string,
+  as: "asker" | "recipient",
+): Promise<boolean> {
   const rows = await db
     .update(contactPings)
-    .set({ connectedAt: new Date() })
+    .set({ connectedAt: new Date(), closedBy: userId })
     .where(
       and(
         eq(contactPings.id, pingId),
         eq(contactPings.tenantId, tenantId),
-        eq(contactPings.fromUserId, userId),
+        as === "asker" ? eq(contactPings.fromUserId, userId) : eq(contactPings.toUserId, userId),
         isNull(contactPings.connectedAt),
       ),
     )
     .returning({ id: contactPings.id });
   return rows.length > 0;
+}
+
+/** The asker says they have started talking. Kept as its own name for the existing route. */
+export async function markPingConnected(tenantId: string, pingId: string, userId: string): Promise<boolean> {
+  return endPing(tenantId, pingId, userId, "asker");
 }
 
 export interface IncomingPingCounts {

@@ -440,7 +440,7 @@ keep measuring real attempts only.`,
     slug: "parent-teacher-contact",
     title: "Contact a teacher or a parent (without messaging)",
     category: "Live",
-    keywords: ["contact", "parent", "teacher", "guardian", "ping", "talk", "email", "phone", "reach", "school", "message", "reply"],
+    keywords: ["contact", "parent", "teacher", "guardian", "ping", "talk", "email", "phone", "reach", "school", "message", "reply", "close", "class rule", "block"],
     body: `# Contact a teacher or a parent
 
 There are **no messages** in this app. Instead, a parent and their child's teacher can see how to
@@ -459,16 +459,22 @@ teachers of your children, the parents of your students) choose one:
   them, and you see their details with the request.
 - **Only through the school**: they can't ask you in the app and are pointed to the school instead.
 
+**Teachers can set a rule for a whole class** from that class's page (**Parent contact for this
+class**): for example, "parents in Tuesday Science may only contact me through the school".
+
 On each person's card you can set a **different rule for that one person**, in any combination (for
-example: parents may see your details, but one particular parent goes through the school).
+example: parents may see your details, but one particular parent goes through the school, or a class
+is closed to parents except one). **The most specific rule wins**: the one-person rule, then the
+class rule, then your default.
 
 **Asking to talk.** Press **Ask ... to get in touch** (or **Let ... know you'd like to talk**) on their
 card. They see a count next to **Family** or **Cohorts** in the menu, and your request on your card,
 with the student's name, a link to the student's work, and how to reach you. Once you have started
-talking, press **We've started talking**. If you haven't within **48 hours**, we email them once
-(checked once a day, so it arrives within the following day) and replying to that email reaches you
-directly. A request disappears after 14 days. You can ask the same person about the same student
-again a day later.
+talking, press **We've started talking**. The person you asked can also **Close this request**
+themselves, for example after calling you back; it then closes for both of you (you are not told who
+closed it). If neither happens within **48 hours**, we email them once (checked once a day, so it
+arrives within the following day) and replying to that email reaches you directly. A request
+disappears after 14 days. You can ask the same person about the same student again a day later.
 
 Changing your preferences never notifies anyone.`,
   },

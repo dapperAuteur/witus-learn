@@ -9,7 +9,8 @@ import type { CardDetails, ContactCard } from "@/lib/contact-cards";
 // One related adult, as the viewer is allowed to see them (the server already stripped anything
 // they may not: src/lib/contact-cards.ts). Lives inline on /family (under a child) and on a class
 // roster (under a student). NOT an inbox: no list page, no history, no read state, no reply box.
-// A ping appears here while it is active and is gone once the asker marks it connected or it expires.
+// A ping appears here while it is active and is gone once the asker marks it connected, the person
+// asked closes it, or it expires.
 
 export interface SchoolContact {
   brand: string;
@@ -163,6 +164,29 @@ function ConnectedButton({ pingId }: { pingId: string }) {
   );
 }
 
+// The person who was ASKED ends the request here, e.g. after calling back. It closes for both people
+// and cancels the reminder email; the asker is not told who closed it (no "seen" signals, by rule).
+function CloseRequestButton({ pingId }: { pingId: string }) {
+  const router = useRouter();
+  const [busy, setBusy] = useState(false);
+  async function close() {
+    setBusy(true);
+    await fetch(`/api/contact/pings/${pingId}/close`, { method: "POST" }).catch(() => {});
+    setBusy(false);
+    router.refresh();
+  }
+  return (
+    <div className="mt-2">
+      <button type="button" disabled={busy} onClick={close} className={`${btn} border border-neutral-300 dark:border-neutral-700`}>
+        {busy ? "Closing…" : "Close this request"}
+      </button>
+      <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+        Closes it for both of you, and we won&apos;t send the reminder email.
+      </p>
+    </div>
+  );
+}
+
 export function ContactCardView({ card, me, school }: { card: ContactCard; me: ViewerContact; school: SchoolContact }) {
   const roleWord = card.counterpartRole === "teacher" ? "Teacher" : "Parent";
   return (
@@ -190,6 +214,7 @@ export function ContactCardView({ card, me, school }: { card: ContactCard; me: V
             directly:
           </p>
           <Details d={card.incoming.details} />
+          <CloseRequestButton pingId={card.incoming.pingId} />
         </div>
       ) : null}
 
