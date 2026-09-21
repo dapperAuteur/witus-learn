@@ -5,6 +5,22 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Parent/teacher contact, without messaging** (\`feat/contact-pings\`, **migration 0064**, run
+  \`pnpm db:migrate:prod\`; needs \`CRON_SECRET\`, already set for the demo reset). BAM chose Option C
+  on 2026-09-20, with his own fallback. **Standing preferences**: each adult sets, per school, how the
+  other side may reach them (show my details / ask me to get in touch / only through the school),
+  one default for parents and one for teachers, and **per-person overrides** in every combination
+  (\`contact_settings\`, \`contact_overrides\`). **A ping shows in the app first**: a count on Family /
+  Cohorts in the menu (a dot on the collapsed Account menu and the phone hamburger) and a card on
+  \`/family\` or the class roster naming the student with a link to their work. **The asker marks
+  "We've started talking"**; if not after 48 hours, a daily cron (\`/api/cron/contact-pings\`,
+  15:00 UTC) sends the other person ONE email, **Reply-To the asker**, From the school (so DMARC
+  holds), not mirrored to the WitUS Inbox. Pings go only to a class's assigned teachers, never to a
+  course author or an admin. No student is ever a party (check constraints), the relationship is
+  recomputed on every read (isolation test covers the staleness case), and a schema test fails if
+  any contact table grows a message column: **the no-inbox rule** in CLAUDE.md. **Known limits:**
+  daily cron means the email lands 48 to 72 hours after the ask (hourly needs Vercel Pro); the
+  privacy page is still the per-tenant placeholder, so it does not yet describe this disclosure.
 - ✅ **Classes are run by adult teachers, and a class can have several** (\`feat/cohort-teachers-adult-rule\`,
   **migration 0063**, run \`pnpm db:migrate:prod\`). Decided by BAM on 2026-09-20. **Only adult
   teachers or admins create classes now**: \`POST /api/cohorts\` requires an instructor or brand_admin

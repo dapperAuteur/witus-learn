@@ -37,6 +37,25 @@ import {
 } from "@/db/queries/media-assets";
 import { listTenantPrerequisiteEdges } from "@/db/queries/prerequisites";
 import {
+  areRelated,
+  countIncomingPings,
+  createPing,
+  getContactPeople,
+  getContactSettings,
+  listActivePingsForUser,
+  listGuardianLinksForCohort,
+  listOverridesAbout,
+  listOverridesBy,
+  listPingsForTriple,
+  listTeacherLinksForGuardian,
+  markPingConnected,
+  relationshipRole,
+  saveContactSettings,
+  setOverride,
+  type ContactSettingsView,
+} from "@/db/queries/contact";
+import type { ContactMode, Role } from "@/lib/contact";
+import {
   listCourseLocations,
   listLessonBodies,
   listLessonLocations,
@@ -451,6 +470,70 @@ export class ScopedDb {
 
   getLessonBodyText(lessonId: string) {
     return getLessonBodyText(this.tenantId, lessonId);
+  }
+
+  // ── Parent/teacher contact (src/db/queries/contact.ts) ──────────────────────
+  // Every read recomputes the guardian -> student -> class -> teacher relationship inside THIS
+  // tenant. Nothing here takes a tenant from the caller.
+
+  getContactSettings(userId: string) {
+    return getContactSettings(this.tenantId, userId);
+  }
+
+  saveContactSettings(userId: string, input: ContactSettingsView) {
+    return saveContactSettings(this.tenantId, userId, input);
+  }
+
+  listContactOverridesBy(userId: string) {
+    return listOverridesBy(this.tenantId, userId);
+  }
+
+  listContactOverridesAbout(aboutUserId: string, ownerIds: string[]) {
+    return listOverridesAbout(this.tenantId, aboutUserId, ownerIds);
+  }
+
+  setContactOverride(userId: string, otherUserId: string, mode: ContactMode | null) {
+    return setOverride(this.tenantId, userId, otherUserId, mode);
+  }
+
+  getContactPeople(userIds: string[]) {
+    return getContactPeople(this.tenantId, userIds);
+  }
+
+  listTeacherLinksForGuardian(guardianUserId: string) {
+    return listTeacherLinksForGuardian(this.tenantId, guardianUserId);
+  }
+
+  listGuardianLinksForCohort(cohortId: string) {
+    return listGuardianLinksForCohort(this.tenantId, cohortId);
+  }
+
+  contactRelationshipRole(t: { fromUserId: string; toUserId: string; studentUserId: string; cohortId: string }) {
+    return relationshipRole(this.tenantId, t);
+  }
+
+  areContactRelated(userId: string, otherUserId: string) {
+    return areRelated(this.tenantId, userId, otherUserId);
+  }
+
+  listPingsForTriple(fromUserId: string, toUserId: string, studentUserId: string) {
+    return listPingsForTriple(this.tenantId, fromUserId, toUserId, studentUserId);
+  }
+
+  createPing(input: { cohortId: string; studentUserId: string; fromUserId: string; toUserId: string; fromRole: Role }) {
+    return createPing({ tenantId: this.tenantId, ...input });
+  }
+
+  listActivePingsForUser(userId: string, now?: Date) {
+    return listActivePingsForUser(this.tenantId, userId, now);
+  }
+
+  markPingConnected(pingId: string, userId: string) {
+    return markPingConnected(this.tenantId, pingId, userId);
+  }
+
+  countIncomingPings(userId: string, now?: Date) {
+    return countIncomingPings(this.tenantId, userId, now);
   }
 }
 

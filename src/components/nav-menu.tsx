@@ -4,7 +4,8 @@ import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import type { KeyboardEvent as ReactKeyboardEvent, FocusEvent as ReactFocusEvent } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { NavItem } from "./nav-types";
+import { badgeTotal, type NavItem } from "./nav-types";
+import { NavBadge } from "./nav-badge";
 
 // Accessible disclosure dropdown for a group of nav links (Explore / Teach / Account in
 // site-header.tsx). Groups the ~16 flat nav items the header used to render inline into a
@@ -117,6 +118,7 @@ export function NavMenu({
         style={accent ? { color: "var(--accent)" } : undefined}
       >
         {label}
+        {badgeTotal(items) > 0 ? <NavBadge count={badgeTotal(items)} dot /> : null}
         <span aria-hidden className="text-xs">
           ▾
         </span>
@@ -150,6 +152,7 @@ export function NavMenu({
                 ) : (
                   <Link href={i.href} {...props}>
                     {i.label}
+                    {i.badge ? <NavBadge count={i.badge} /> : null}
                   </Link>
                 )}
               </li>

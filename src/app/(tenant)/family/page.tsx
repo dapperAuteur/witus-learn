@@ -4,6 +4,11 @@ import { getScopedDb } from "@/db/scoped";
 import { isGuardianOf, listAttendanceForChild, listChildren, listManagedChildren } from "@/db/queries/family";
 import { getLearnerDashboard, getLearnerStats, getSpecializations } from "@/db/queries/dashboard";
 import { ManageChildren } from "@/components/manage-children";
+import { buildContactCards, type ContactCard } from "@/lib/contact-cards";
+import { ContactCardView } from "@/components/contact-card";
+import { ContactSettingsPanel } from "@/components/contact-settings-panel";
+import { AdultAttestation } from "@/components/adult-attestation";
+import { brandName } from "@/lib/branding";
 
 export const metadata: Metadata = { title: "Family" };
 
@@ -31,10 +36,29 @@ export default async function FamilyPage() {
   const sdb = await getScopedDb();
   const session = await requireUserPage();
 
-  const [children, managedChildren] = await Promise.all([
+  const [children, managedChildren, teacherLinks, contactSettings] = await Promise.all([
     listChildren(sdb.tenantId, session.user.id),
     listManagedChildren(sdb.tenantId, session.user.id),
+    sdb.listTeacherLinksForGuardian(session.user.id),
+    sdb.getContactSettings(session.user.id),
   ]);
+
+  // Parent/teacher contact: each child's teachers, as this parent may see them. The relationship is
+  // recomputed live inside this tenant (listTeacherLinksForGuardian), and buildContactCards strips
+  // anything the parent may not see before it reaches the browser. No inbox: a teacher's request
+  // appears on that teacher's card, under the child it is about.
+  const contact = await buildContactCards({
+    sdb,
+    viewerId: session.user.id,
+    viewerRole: "parent",
+    links: teacherLinks.map((l) => ({ ...l, counterpartId: l.teacherUserId })),
+    studentHref: (l) => `/family/${l.studentUserId}/report`,
+  });
+  const cardsByChild = new Map<string, ContactCard[]>();
+  for (const c of contact.cards) cardsByChild.set(c.studentUserId, [...(cardsByChild.get(c.studentUserId) ?? []), c]);
+  const viewerAdult = contact.viewerStatus === "adult";
+  const me = { adult: viewerAdult, email: session.user.email, phone: contactSettings.phone };
+  const school = { brand: brandName(sdb.tenant), email: sdb.tenant.email.replyTo ?? null };
 
   const views: ChildView[] = [];
   for (const child of children) {
@@ -75,6 +99,18 @@ export default async function FamilyPage() {
       <div className="mt-6">
         <ManageChildren initialChildren={managedChildren} />
       </div>
+
+      {/* Contact with teachers: only once this parent has a child in a class, and never for an
+          account the platform knows is a student's. */}
+      {contact.cards.length > 0 && contact.viewerStatus !== "minor_signal" ? (
+        <div className="mt-6">
+          {viewerAdult ? (
+            <ContactSettingsPanel initial={contactSettings} show={{ parents: false, teachers: true }} accountEmail={session.user.email} />
+          ) : (
+            <AdultAttestation purpose="Contacting your children's teachers is for adults only. Confirm it once to see how to reach them." />
+          )}
+        </div>
+      ) : null}
 
       {views.length === 0 ? (
         <p className="mt-8 text-sm text-neutral-600">
@@ -158,6 +194,17 @@ export default async function FamilyPage() {
                   </div>
                 ) : null}
               </div>
+
+              {(cardsByChild.get(child.userId) ?? []).length > 0 && contact.viewerStatus !== "minor_signal" ? (
+                <div className="mt-4">
+                  <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Teachers</h3>
+                  <div className="mt-2 space-y-2">
+                    {(cardsByChild.get(child.userId) ?? []).map((card) => (
+                      <ContactCardView key={card.key} card={card} me={me} school={school} />
+                    ))}
+                  </div>
+                </div>
+              ) : null}
 
               <div className="mt-4">
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-600">Live-class attendance</h3>

@@ -1,12 +1,24 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import type { ContactCard } from "@/lib/contact-cards";
+import { ContactCardView, type SchoolContact, type ViewerContact } from "./contact-card";
 
 interface Member {
   userId: string;
   displayName: string;
   present: boolean;
+  /** This student's rows in the class report (assignments, grades, progress). */
+  workHref?: string;
+}
+
+/** Parent contact for the class's teachers (null for anyone else viewing the roster). */
+interface RosterContact {
+  cardsByStudent: Record<string, ContactCard[]>;
+  me: ViewerContact;
+  school: SchoolContact;
 }
 
 interface PendingInvite {
@@ -187,10 +199,12 @@ export function CohortRoster({
   cohortId,
   members,
   pendingInvites = [],
+  contact = null,
 }: {
   cohortId: string;
   members: Member[];
   pendingInvites?: PendingInvite[];
+  contact?: RosterContact | null;
 }) {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -289,7 +303,13 @@ export function CohortRoster({
             <li key={m.userId} className="py-2 text-sm">
               <div className="flex items-center justify-between gap-3">
                 <span className="min-w-0 break-words">
-                  {m.displayName}
+                  {m.workHref ? (
+                    <Link href={m.workHref} className="font-medium hover:underline">
+                      {m.displayName}
+                    </Link>
+                  ) : (
+                    m.displayName
+                  )}
                   {m.present ? (
                     <span className="ml-2 text-xs text-green-700 dark:text-green-400">● here</span>
                   ) : null}
@@ -301,6 +321,14 @@ export function CohortRoster({
               <div className="mt-1">
                 <GuardianInvite cohortId={cohortId} studentUserId={m.userId} />
               </div>
+              {contact && (contact.cardsByStudent[m.userId] ?? []).length > 0 ? (
+                <div className="mt-2 space-y-2">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-neutral-600 dark:text-neutral-400">Parents</p>
+                  {(contact.cardsByStudent[m.userId] ?? []).map((card) => (
+                    <ContactCardView key={card.key} card={card} me={contact.me} school={contact.school} />
+                  ))}
+                </div>
+              ) : null}
             </li>
           ))}
           {members.length === 0 ? <li className="py-2 text-sm text-neutral-600">No students yet, invite one above.</li> : null}
