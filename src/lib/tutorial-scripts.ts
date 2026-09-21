@@ -142,6 +142,7 @@ export const TUTORIAL_SCRIPTS: TutorialScript[] = [
   placeholder("live-sessions", "Running a live session"),
   placeholder("cohorts", "Running a private class"),
   placeholder("family", "The family view for parents"),
+  placeholder("school-teachers", "Making someone a teacher of your school"),
   placeholder("parent-teacher-contact", "Contacting a teacher or a parent"),
   placeholder("notes-and-annotations", "Notes, highlights, and class notes"),
   placeholder("in-course-search", "Searching inside a course"),

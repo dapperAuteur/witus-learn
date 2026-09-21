@@ -408,8 +408,8 @@ asks you to teach their child + classmates live).
 **Who can create a class.** Teachers and admins of the school, who have confirmed they are **18 or
 older**. The first time, **/cohorts** asks you to tick "I am 18 or older"; an account that belongs to
 a student (a child profile, a kid login, or someone's linked student) can't. Not a teacher here? Ask
-an admin to create the class and **add you as its teacher**: it then appears on your /cohorts page
-and you run it exactly as its creator would.
+an admin to **make you a teacher** (Admin → Teachers), or to create one class and **add you as its
+teacher**: it then appears on your /cohorts page and you run it exactly as its creator would.
 
 1. **Create a class**, give it a name (e.g. "Tuesday homeschool group").
 2. **Invite students by email** from the class's roster page. Each invite is a one-time link; if
@@ -435,6 +435,31 @@ the student's real attempt stays underneath, and every report (yours, the family
 shows the adjusted value **with a visible marker and your reason**. The student sees both values
 on their own dashboard. A wrong adjustment is fixed by saving a newer one. Course statistics
 keep measuring real attempts only.`,
+  },
+  {
+    slug: "school-teachers",
+    title: "Make someone a teacher of your school",
+    category: "Live",
+    keywords: ["teacher", "instructor", "role", "admin", "add teacher", "remove teacher", "homeschool", "adult", "18"],
+    body: `# Teachers of your school
+
+**Admin → Teachers** (\`/admin/teachers\`) lists everyone who teaches or administers this school, and
+lets a school admin **make someone a teacher**.
+
+A **teacher** of the school can create classes (under **/cohorts**) and write courses (under
+**Teach**), on this school only. Making someone a teacher here never changes their role on any other
+school.
+
+1. Ask the person to **sign in to this school once**, so they have an account.
+2. If the platform requires teachers to be adults (the default), they also tick **"I am 18 or older"**
+   once; the Cohorts page offers it. An account that belongs to a student can't be made a teacher.
+3. On Admin → Teachers, enter their account email and press **Make a teacher**.
+
+**Remove teacher** takes the role away. Classes they already teach stay theirs; they just can't
+create new classes or courses here. Admins are managed separately and can't be removed on this page.
+
+**Just one class?** You don't have to make someone a teacher of the whole school. Create the class
+yourself, then on the class page **add them as its teacher**; they run that class and nothing else.`,
   },
   {
     slug: "parent-teacher-contact",

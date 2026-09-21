@@ -5,6 +5,13 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Admins can make someone a teacher** (\`feat/admin-teachers\`, no migration). BAM asked 2026-09-20,
+  once classes needed a teacher role to create: until now the instructor role could only be set by a
+  seed script, so a homeschool parent had no in-app way to run their own classes. **Admin → Teachers**
+  (\`/admin/teachers\`, brand admin or owner) lists the school's teachers and admins with their adult
+  status, **makes someone a teacher** by account email (instructor on THIS school only), and **removes**
+  the role (back to learner; classes they already teach stay theirs). Behind the same adult rule as
+  assigning a class teacher; admins are not managed here. Pure rules in \`src/lib/school-teachers.ts\`.
 - ✅ **Contact: the person asked can close a request, and teachers can set a rule for a whole class**
   (\`feat/contact-close-and-class-rules\`, **migration 0065**, run \`pnpm db:migrate:prod\`). BAM's
   follow-ups of 2026-09-20. **Close this request** on an incoming request ends it for both people and
