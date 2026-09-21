@@ -312,6 +312,37 @@ verified source (`course_sources` / `course_claims`), APA 7 in-line + a `## Sour
 fabricated characters, no "AI tells" — the sources/claims/verify UI is a visible trust signal. (The
 general citation, docs-sync, and authoritative-values rules are in the managed block below.)
 
+## No-inbox rule: never build an inbox or anything inbox-like
+
+Decided by BAM on 2026-09-20. This app does not carry conversations between people, and nothing may be
+built that turns it into a place where messages collect. The obligations that come with one (moderate
+it, retain it, produce it on request, notice when an adult is grooming a child through it) need an
+accountable person and written policies that a platform like this does not have, and the moment a
+message exists, they apply. Parent/teacher contact exists as the proof of how far is allowed: a
+**signal** that one related adult would like to talk, shown where the relationship already lives, with
+the talking done by email or phone outside the app.
+
+**Never build, under any name:**
+- a message body, subject, reply, comment, or free-text field attached to a request between people
+  (a person's own 120-character availability note on their settings is the one exception, and it
+  belongs to the person, not to any request);
+- a thread, conversation, or reply chain; an in-app compose box addressed to another person;
+- a page or panel that LISTS requests, notifications or messages as their own destination (an
+  "inbox", "messages", "notifications", "activity", "requests" or "mail" page), with or without
+  folders, archive, search, history, or unread filters;
+- read receipts, "seen" state, typing indicators, or per-item read/unread flags;
+- a digest or feed that aggregates person-to-person requests.
+
+**What is allowed:** a count or dot on an EXISTING nav item pointing at the page where the thing
+already lives (the Family / Cohorts badge), and a card on the related person's own row on that page
+(/family, the class roster) that disappears when the request ends. Signals end; they are not kept for
+browsing. Teacher notes are content attached to a lesson, not messages, and stay under their own
+guardrail (`lesson_notes_teacher_lesson_chk`).
+
+**Enforced** by `tests/contact-schema.test.ts` (the contact tables may not grow a message-shaped
+column) and by review for everything else. If a feature request needs any item on the never-build
+list, stop and take it to BAM as a decision; do not build a smaller version of it.
+
 ## Stack & conventions (mirror `shop-witus`)
 
 Next.js 16 App Router (`--webpack`) · TS · Tailwind v4 · `@neondatabase/serverless` + Drizzle ORM +
