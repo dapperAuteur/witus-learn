@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "helpSource": "src/lib/help-articles.ts",
+  "helpSourceNote": "HELP_ARTICLES in src/lib/help-articles.ts is what /help and /help/[slug] render (src/app/(tenant)/help/page.tsx, src/app/(tenant)/help/[slug]/page.tsx). It is code, not a DB table; the markdown under docs/tutorials/ is generated recording output and is NOT the help source. Narration scripts for the same slugs live in src/lib/tutorial-scripts.ts.",
+  "recordAgainst": "https://learn.witus.online",
+  "articles": [
+    {
+      "article": null,
+      "title": "Buy a course on Learn.WitUS — browse and sign-in (signed out)",
+      "spec": "e2e/tutorials/purchase-browse.tutorial.ts",
+      "kind": "lead",
+      "requiresAuth": false,
+      "sideEffects": "none",
+      "status": "passes",
+      "notes": "Lead demo A, first half. No help article corresponds. Browse-only; never fills or submits the magic-link form. Re-verified against production 2026-09-21 (witus plans/33 §1). BAM's voice; step order is frozen."
+    },
+    {
+      "article": null,
+      "title": "Buy a course on Learn.WitUS — enroll (signed in)",
+      "spec": "e2e/tutorials/purchase-enroll.tutorial.ts",
+      "kind": "lead",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "blocked",
+      "notes": "Lead demo A, second half. No help article corresponds. Skips without TUTORIAL_STORAGE_STATE, and no session file exists yet (witus task 92). Default path enrolls in a FREE course (creates an enrollment row); the paid Stripe path is behind TUTORIAL_STRIPE_TEST=1 and is for test-mode previews only. Step order is frozen."
+    },
+    {
+      "article": "getting-started",
+      "title": "Getting started as a teacher",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Read-only tour of /teach: the course list, its search and filters, and the New course form shown but never submitted. Needs an instructor/owner session; skips without TUTORIAL_STORAGE_STATE."
+    },
+    {
+      "article": "create-a-course",
+      "title": "Create a course",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "Submitting New course writes a real course row on production. Needs either a Stripe-test/preview target or a [TUTORIAL] course the spec deletes afterwards; not attempted this session."
+    },
+    {
+      "article": "add-and-edit-lessons",
+      "title": "Add and edit lessons",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "Adding or saving a lesson mutates published curriculum. Needs a disposable [TUTORIAL] course first (see create-a-course)."
+    },
+    {
+      "article": "record-audio-in-app",
+      "title": "Record lesson audio or video in the app",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "Needs microphone/camera permissions and uploads to Cloudinary, which attaches media to a real lesson. Record by hand, or against a disposable course."
+    },
+    {
+      "article": "recording-scripts-teleprompter",
+      "title": "Recording scripts & teleprompter",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Read-only: /teach/<courseId>/script and the full-screen teleprompter with its speed / text-size / mirror controls. The recorder in the teleprompter control bar is shown, never started. Needs an instructor session."
+    },
+    {
+      "article": "set-pricing",
+      "title": "Set a price (it's here, not in Stripe)",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Shows Course settings → Pricing on a real course and stops before Save settings. The save is behind TUTORIAL_ALLOW_MUTATIONS=1, which defaults off: re-pricing a live course changes what the next learner is charged."
+    },
+    {
+      "article": "categories",
+      "title": "Organize courses with categories",
+      "kind": "quick-reference",
+      "requiresAuth": false,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Signed-out half only: the catalog's category chips at /courses, which is what categories are FOR. The Admin → Categories half (add/rename/delete) mutates the catalog and is not recorded."
+    },
+    {
+      "article": "publish-visibility-holds",
+      "title": "Publish, drafts, private, and holds",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "Every control on this article publishes or unpublishes a live course. Needs a disposable course; not attempted against production."
+    },
+    {
+      "article": "vetting-and-coming-soon",
+      "title": "Vetting a course, and the \"Coming soon\" page",
+      "kind": "quick-reference",
+      "requiresAuth": false,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Records the PUBLIC face only: a Coming-soon course page, the notify-me form and the 'Want to help this course open?' panel, both shown and never submitted (a submission creates a lead and mirrors to the WitUS Inbox). The owner's vetting queue mutates courses and is not recorded. A 7-step narrated script for the owner half already exists in src/lib/tutorial-scripts.ts."
+    },
+    {
+      "article": "quick-recall",
+      "title": "Add Quick-recall self-test prompts",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "Learner side needs an enrolled account and self-grading records a recall grade that feeds Recall accuracy; author side is the lesson editor. Both need a disposable course."
+    },
+    {
+      "article": "ai-tools-embeddings-audit",
+      "title": "Keep your course's AI features current",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "spends-quota",
+      "status": "todo",
+      "notes": "Re-index embeddings and Audit reveals both call the AI provider and bill real tokens. Show-only spec is possible later; the buttons must stay behind a default-off flag."
+    },
+    {
+      "article": "live-sessions",
+      "title": "Run a live session",
+      "kind": "quick-reference",
+      "requiresAuth": false,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Signed-out half: the public /live page — live now, upcoming, recordings. The Admin → Live half (schedule, go live, end) mutates broadcast state and is not recorded."
+    },
+    {
+      "article": "cohorts",
+      "title": "Run a private class with Cohorts",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "Creating a class, inviting students by email, and adjusting a grade are all real writes about real minors. Needs a teacher session on a non-production target."
+    },
+    {
+      "article": "school-teachers",
+      "title": "Make someone a teacher of your school",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "Make a teacher / Remove teacher grants and revokes a real role on a real account."
+    },
+    {
+      "article": "parent-teacher-contact",
+      "title": "Contact a teacher or a parent (without messaging)",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "sends-email",
+      "status": "todo",
+      "notes": "An unanswered contact request emails a real parent or teacher after 48 hours. Asserting on it would also mean reading another family's data. Needs a seeded non-production school."
+    },
+    {
+      "article": "family",
+      "title": "Give parents a read-only Family view",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "/family shows one real child's grades and attendance. Never record it against production data; needs a seeded demo family."
+    },
+    {
+      "article": "notes-and-annotations",
+      "title": "Notes, highlights, and class notes",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "Writing a note, sharing it, or sending a class note all persist. Needs an enrolled tutorial learner and a cleanup step."
+    },
+    {
+      "article": "in-course-search",
+      "title": "Search inside a course",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Read-only. The Search this course box renders only for an enrolled learner, an editor or an invited auditor (course page gate, line ~621), so the spec needs a session that is enrolled in TUTORIAL_COURSE_PATH."
+    },
+    {
+      "article": "learner-feedback-and-reports",
+      "title": "See learner feedback and problem reports",
+      "kind": "quick-reference",
+      "requiresAuth": false,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Signed-out half: the site-wide 🐞 Report a problem popover, opened and typed into but NEVER submitted (a submission files a real report and mirrors to the WitUS Inbox). The teacher-side queues (/teach → Curriculum feedback, Admin → Problem reports) show other people's reports and are not recorded."
+    },
+    {
+      "article": "sharing-and-cross-promotion",
+      "title": "Sharing, previews, and cross-promotion",
+      "kind": "quick-reference",
+      "requiresAuth": false,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Signed-out: the Share popover on a course page. Copy link is NOT clicked — each channel click POSTs a share count to /api/share, which would inflate the admin dashboard's share signals."
+    },
+    {
+      "article": "cross-course-links",
+      "title": "When your lesson names another course",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "The learner-facing Related courses list only renders where the owner has already approved a candidate; the /admin/cross-links queue mutates on approve. Needs a seeded target."
+    },
+    {
+      "article": "marketing-tools",
+      "title": "Marketing: promo codes, announcements, and demand",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "A 7-step narrated script already exists in src/lib/tutorial-scripts.ts. Promo-code creation mirrors to a real Stripe coupon and announcement batches push drafts to the WitUS Outbox, so every write on the page needs a default-off flag."
+    },
+    {
+      "article": "sales-and-promotions",
+      "title": "Sales and promotions (no promo code needed)",
+      "kind": "quick-reference",
+      "requiresAuth": false,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Signed-out half: the public /sale index — what is running now, starting soon, and ended. The Admin → Sales and promotions half starts and ends real sales and is not recorded."
+    },
+    {
+      "article": "streaming-and-multistream",
+      "title": "Streaming: always-on stream + multistream to socials",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "Saving an always-on embed or a multistream target stores live broadcast config, and stream keys are secrets that must never appear in a recording."
+    },
+    {
+      "article": "quizzes-rotation-and-images",
+      "title": "Quizzes: rotating pools, shuffled options, and images",
+      "waiver": "Quizzes are authored in quiz_content through seed files (scripts/data/, scripts/seed-*.ts), not in any screen: questionsPerAttempt, shuffleOptions and imageUrl/imageAlt are data fields a developer edits in a repo and re-seeds. There is no UI to click, so there is nothing to record."
+    },
+    {
+      "article": "images-and-quick-recall",
+      "title": "Lesson images (with alt text) and Quick recall",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "The lesson editor's Image button uploads to Cloudinary and edits published lesson text. Needs a disposable course."
+    },
+    {
+      "article": "recording-long-lessons",
+      "title": "Recording long lessons (auto-split parts)",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "The behaviour this article describes only appears after a take passes the ~100 MB upload cap. Not a waiver — there IS a screen — but it cannot be produced in a short scripted run; record it by hand off a real long take."
+    },
+    {
+      "article": "keeping-courses-current",
+      "title": "Keeping courses & content current (migrate + seed)",
+      "waiver": "This article is a command-line runbook: pnpm db:migrate:prod, then the seed that owns the course (seed:courses, seed:languages, seed:faa …). Its only screen is a terminal, and the one in-app sentence it carries (edit lesson text on the Curriculum tab) is covered by add-and-edit-lessons. Nothing to record in the browser."
+    },
+    {
+      "article": "change-course-instructor",
+      "title": "Change a course's instructor (fix wrong bylines)",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "creates-data",
+      "status": "todo",
+      "notes": "Changing the Instructor dropdown moves a live course to another account and CHANGES ITS PUBLIC URL, breaking every existing link. Never against production."
+    },
+    {
+      "article": "api-keys-and-embedding",
+      "title": "Embed your courses in another app (API keys)",
+      "kind": "quick-reference",
+      "requiresAuth": false,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Signed-out half: the two public paste-anywhere embeds, /embed/card/<id> and /embed/course/<id>. The key half is deliberately NOT recorded — /admin/api-keys shows a full API key exactly once, and a recording of that screen is a leaked credential."
+    },
+    {
+      "article": "admin-home-and-brand-settings",
+      "title": "Your admin home and brand settings",
+      "kind": "quick-reference",
+      "requiresAuth": true,
+      "sideEffects": "none",
+      "status": "todo",
+      "notes": "Read-only walk of /admin and /admin/settings. Nothing is saved: brand settings apply to the live school on the next page load, so the Save control is shown and never clicked. Needs an owner/brand-admin session."
+    }
+  ]
+}
