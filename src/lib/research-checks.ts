@@ -6398,6 +6398,689 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The society's journal archive",
     ],
   },
+  // ── the-mark-and-the-star (Judith Leyster), filed 2026-09-21 with the course ──
+  {
+    key: "leyster-times-31-may-1893",
+    title: "The London newspaper report of the 1893 hearing",
+    course: "the-mark-and-the-star",
+    lesson: "may-1893-and-a-name-never-spoken",
+    severity: "medium",
+    claim:
+      "Four lessons lean on the 1893 court hearing, and the newspaper report of it is paywalled and was never obtained. Two other weeklies of the same week may carry the same material and be easier to get.",
+    question:
+      "What did the contemporary report say the court heard, and who said it?",
+    stakes:
+      "The case is a third of the course, and it is currently reconstructed from the article and later accounts rather than from a report of the hearing.",
+    needs: [
+      "The newspaper report of 31 May 1893, or one of the two weeklies of 3 June 1893",
+    ],
+    where: [
+      "The newspaper's own archive",
+      "A library's 1893 periodicals",
+    ],
+  },
+  {
+    key: "leyster-crabbe-panel-identity",
+    title: "Is the tampered panel the one a modern scholar calls a copy?",
+    course: "the-mark-and-the-star",
+    lesson: "the-twin-that-was-tampered-with",
+    severity: "medium",
+    claim:
+      "Neither source says so. The course prints both descriptions side by side, a century apart, and says in the lesson why it will not join them.",
+    question:
+      "Are the 1890 Crabbe panel and the copy described in modern scholarship the same picture?",
+    stakes:
+      "Joining them would be the exact move the course teaches learners to catch, so it stays open until a document connects them.",
+    needs: [
+      "A provenance chain linking the 1890 sale to a picture now located",
+    ],
+    where: [
+      "Sale records after 12 June 1890",
+      "The modern catalogue raisonne",
+    ],
+  },
+  {
+    key: "leyster-crabbe-whereabouts",
+    title: "Where the tampered panel went after 1890",
+    course: "the-mark-and-the-star",
+    lesson: "the-twin-that-was-tampered-with",
+    severity: "medium",
+    claim:
+      "The article says its whereabouts after the June 1890 Paris sale were unknown to him, and nothing since has been read.",
+    question:
+      "Where did the panel go after the 1890 sale?",
+    stakes:
+      "It is what would settle the previous check.",
+    needs: [
+      "Sale and collection records after 1890",
+    ],
+    where: [
+      "Paris sale records",
+      "Provenance databases",
+    ],
+  },
+  {
+    key: "leyster-nga-self-portrait",
+    title: "A museum record that would not load",
+    course: "the-mark-and-the-star",
+    lesson: "always-as-fr-hals",
+    severity: "medium",
+    claim:
+      "A museum record and its sale note were verified in an earlier pass but failed to re-fetch twice during the build, so the course drops them entirely rather than cite a source a learner cannot open.",
+    question:
+      "What does the museum's record say, including its provenance note?",
+    stakes:
+      "It is a clean example of the course's own subject, currently absent because the page would not load.",
+    needs: [
+      "The museum's object record",
+    ],
+    where: [
+      "The gallery's collection pages and open data",
+    ],
+  },
+  {
+    key: "leyster-1642-inventory-match",
+    title: "Has the 1642 inventory entry been matched since?",
+    course: "the-mark-and-the-star",
+    lesson: "his-seven-pictures",
+    severity: "low",
+    claim:
+      "The article discusses a 1642 inventory entry; whether anyone has matched it to a surviving picture since is not established here, and the reproduction is too coarse to judge details.",
+    question:
+      "Has that entry been identified with a known painting?",
+    stakes:
+      "Low. It would add one picture to a list the course already gives as his.",
+    needs: [
+      "Modern scholarship on the inventory",
+    ],
+    where: [
+      "The catalogue raisonne",
+      "Dutch archival scholarship",
+    ],
+  },
+  {
+    key: "leyster-mark-to-pound-1893",
+    title: "The 1893 exchange rate",
+    course: "the-mark-and-the-star",
+    lesson: "may-1893-and-a-name-never-spoken",
+    severity: "low",
+    claim:
+      "The price is given in Mark as the article gives it, and no conversion to sterling is printed, because the rate was not verified.",
+    question:
+      "What was the Mark to pound rate in 1893?",
+    stakes:
+      "Low, and the lesson works in the currency the document uses.",
+    needs: [
+      "A contemporary exchange rate",
+    ],
+    where: [
+      "Financial histories of the period",
+    ],
+  },
+  {
+    key: "leyster-birth-year",
+    title: "Three sources, three birth years",
+    course: "the-mark-and-the-star",
+    lesson: "a-mark-a-star-and-a-hand-that-varied",
+    severity: "low",
+    claim:
+      "Three sources give three answers and no document was read, so the course prints none.",
+    question:
+      "What does the record say?",
+    stakes:
+      "Low. Nothing in the argument depends on it.",
+    needs: [
+      "A baptismal or civil record",
+    ],
+    where: [
+      "Haarlem archives",
+    ],
+  },
+  {
+    key: "leyster-engerth-or-engert",
+    title: "One collector, two spellings, one article",
+    course: "the-mark-and-the-star",
+    lesson: "his-seven-pictures",
+    severity: "low",
+    claim:
+      "The article spells the Vienna collector one way in the main text and another in its addendum. The course prints both and settles neither.",
+    question:
+      "Which spelling is right?",
+    stakes:
+      "Low, and the disagreement is itself a small lesson in reading a printed source.",
+    needs: [
+      "A Vienna collection catalogue of the period",
+    ],
+    where: [
+      "Viennese collection records",
+    ],
+  },
+  {
+    key: "leyster-transposed-plate",
+    title: "Did the journal ever print an erratum?",
+    course: "the-mark-and-the-star",
+    lesson: "the-myth-and-the-correction-corrected",
+    severity: "low",
+    claim:
+      "The article miscites its own plate: the text points to one page and the picture sits on another. No erratum has been looked for.",
+    question:
+      "Did a later issue correct it?",
+    stakes:
+      "Low, and the mistake is used in the course as an example of a founding document's own slip.",
+    needs: [
+      "Later issues of the same volume year",
+    ],
+    where: [
+      "The journal's run",
+    ],
+  },
+  // ── whose-names-the-payroll-kept (Central Pacific), filed 2026-09-21 with the course ──
+  {
+    key: "cprr-payroll-102-chinese-characters",
+    title: "The Chinese characters on the 1865 sheet",
+    course: "whose-names-the-payroll-kept",
+    lesson: "a-form-that-cannot-hold-a-person",
+    severity: "medium",
+    claim:
+      "About eleven brush characters sit in the signature area of Pay Roll No. 102. Only one, the character for received, could be read responsibly at the available resolution. The course teaches the rest as a limit and transcribes nothing.",
+    question:
+      "What do the characters say, and whose hand wrote them?",
+    stakes:
+      "On a page where every other mark is somebody else's hand, this is the one place the writing may be theirs. A reading would change a lesson, not a sentence.",
+    needs: [
+      "A higher-resolution image, and a reader of 19th-century Chinese business hands",
+    ],
+    where: [
+      "California State Railroad Museum",
+      "A Chinese manuscript specialist",
+    ],
+  },
+  {
+    key: "sacramento-reporter-bones-1870",
+    title: "The 1870 newspaper behind the death toll",
+    course: "whose-names-the-payroll-kept",
+    lesson: "what-the-record-cannot-tell-you",
+    severity: "medium",
+    claim:
+      "The famous death figure derives from a newspaper report of a weight of bones divided by two assumed constants. The newspaper itself was not obtained, and the course teaches the arithmetic rather than the total.",
+    question:
+      "What did the 1870 report actually say, and what did it count?",
+    stakes:
+      "It is the origin of every death number repeated since. A reading would change a lesson.",
+    needs: [
+      "The newspaper issue, read directly",
+    ],
+    where: [
+      "California newspaper archives of 1870",
+    ],
+  },
+  {
+    key: "sisson-wallace-firm-location",
+    title: "Sacramento house or San Francisco firm?",
+    course: "whose-names-the-payroll-kept",
+    lesson: "the-employer-explains-it-himself",
+    severity: "medium",
+    claim:
+      "One account calls the labour-supplying firm a Sacramento supply house; Crocker, testifying in San Francisco, calls it a mercantile firm here. The course asserts neither city and quotes him.",
+    question:
+      "Where was the firm based?",
+    stakes:
+      "It bears on how the labour contracting actually worked and who was near it.",
+    needs: [
+      "A business directory, incorporation record or letterhead",
+    ],
+    where: [
+      "California business directories of the 1860s",
+    ],
+  },
+  {
+    key: "cprr-payroll-102-deduction-column",
+    title: "What the deduction column on the 1865 sheet records",
+    course: "whose-names-the-payroll-kept",
+    lesson: "a-form-that-cannot-hold-a-person",
+    severity: "medium",
+    claim:
+      "The 1866 form prints its deduction heading outright; the 1865 sheet's equivalent column is unlabelled and illegible. Two candidate readings remain, and the testimony's account of per-gang fines makes them no longer equally idle.",
+    question:
+      "What does that column record?",
+    stakes:
+      "Board and fines are different stories about the same money.",
+    needs: [
+      "A clearer image of the column heading, or another sheet of the same printing",
+    ],
+    where: [
+      "California State Railroad Museum",
+      "Stanford's payroll series",
+    ],
+  },
+  {
+    key: "ogden-1919-three-names",
+    title: "The 1919 identification of men in the ceremony photograph",
+    course: "whose-names-the-payroll-kept",
+    lesson: "the-photograph-and-what-it-shows",
+    severity: "medium",
+    claim:
+      "A caption's claim that named Chinese workers were identified in 1919 is printed as the caption's claim and explicitly untraced.",
+    question:
+      "What is the source of that identification, and who made it?",
+    stakes:
+      "The photograph lesson exists to show what a picture cannot settle; an identification with a source behind it would change that.",
+    needs: [
+      "The 1919 source itself",
+    ],
+    where: [
+      "Utah and Union Pacific archives",
+    ],
+  },
+  {
+    key: "cprr-payroll-scans-rights",
+    title: "Can the two payroll scans be hosted?",
+    course: "whose-names-the-payroll-kept",
+    lesson: "a-form-that-cannot-hold-a-person",
+    severity: "low",
+    claim:
+      "The 1865 and 1866 documents are out of copyright, but their SCANS are published by two repositories under rights statements nobody has read, so the course links rather than hosts.",
+    question:
+      "What do those two rights statements permit?",
+    stakes:
+      "It is the cheapest upgrade the course can get: the single most important document becomes hostable.",
+    needs: [
+      "The two repositories' rights statements",
+    ],
+    where: [
+      "California Revealed",
+      "Stanford Digital Repository",
+    ],
+  },
+  {
+    key: "sisson-wallace-and-co-partner",
+    title: "Who was the and Co.?",
+    course: "whose-names-the-payroll-kept",
+    lesson: "the-employer-explains-it-himself",
+    severity: "low",
+    claim:
+      "One modern author names a Crocker relative as the firm's silent partner. That claim is not in the testimony at any of the four pages checked, and it appears nowhere in the course.",
+    question:
+      "Who were the firm's partners?",
+    stakes:
+      "Low for the argument, but it is repeated widely.",
+    needs: [
+      "Partnership or incorporation records",
+    ],
+    where: [
+      "California business records",
+    ],
+  },
+  {
+    key: "cprr-payroll-individual-occupations",
+    title: "Do any sheets list individual occupations?",
+    course: "whose-names-the-payroll-kept",
+    lesson: "a-form-that-cannot-hold-a-person",
+    severity: "low",
+    claim:
+      "A summary suggests some sheets list Chinese workers by individual occupation. The page that would confirm it returned 403, so the claim is unverified and, if true, would qualify the course's central finding.",
+    question:
+      "Do any of the surviving sheets record individual Chinese workers by occupation?",
+    stakes:
+      "It would narrow recorded only as a gang to recorded only as a gang on the sheets we have read.",
+    needs: [
+      "The remaining sheets of the series",
+    ],
+    where: [
+      "Stanford's payroll series, MS 79",
+    ],
+  },
+  {
+    key: "chew-nameless-builders-page-refs",
+    title: "Page references for the 409-sheet study",
+    course: "whose-names-the-payroll-kept",
+    lesson: "what-the-record-cannot-tell-you",
+    severity: "low",
+    claim:
+      "The only person to have read all 409 surviving sheets is quoted through his own online rebuttal rather than his book, which was not obtained.",
+    question:
+      "What do the book's own pages say, and at which pages?",
+    stakes:
+      "Low: the course uses his method rather than his conclusions.",
+    needs: [
+      "The book, at its cited pages",
+    ],
+    where: [
+      "A library copy",
+    ],
+  },
+  {
+    key: "cprr-1867-strike-length",
+    title: "How long the 1867 strike lasted",
+    course: "whose-names-the-payroll-kept",
+    lesson: "the-employer-explains-it-himself",
+    severity: "low",
+    claim:
+      "Crocker's own account makes it about a week; other accounts differ, and the course uses his words.",
+    question:
+      "How long did the strike last, and what ended it?",
+    stakes:
+      "Low, and the course quotes the employer against himself either way.",
+    needs: [
+      "Contemporary reports",
+    ],
+    where: [
+      "California newspapers of June 1867",
+    ],
+  },
+  {
+    key: "cprr-payroll-102-pencil-lines",
+    title: "The pencil marks on sheet 102",
+    course: "whose-names-the-payroll-kept",
+    lesson: "a-form-that-cannot-hold-a-person",
+    severity: "low",
+    claim:
+      "Light pencil rulings and check marks appear beside some blocks and are not interpreted.",
+    question:
+      "Who made those marks, and when?",
+    stakes:
+      "Low, and nothing rests on them.",
+    needs: [
+      "A conservator's or archivist's reading",
+    ],
+    where: [
+      "California State Railroad Museum",
+    ],
+  },
+  // ── painted-in-court (Margaret Keane), filed 2026-09-21 with the course ──
+  {
+    key: "keane-memorandum-official-text",
+    title: "Check every quotation against a court source",
+    course: "painted-in-court",
+    lesson: "what-a-correction-can-reach",
+    severity: "high",
+    claim:
+      "About forty quotations carry this Tier 2 course, and all of them come from a commercial database's reproduction of the memorandum rather than from a court source. Every sentence was matched against that reproduction's own text, and three quoting defects were found and fixed before shipping, but the reproduction itself has not been checked against the court.",
+    question:
+      "Do the quoted sentences match the opinion as the court issued it?",
+    stakes:
+      "It is the deciding document of the whole course. Closing this also makes the text hostable as a federal work, which the reproduction is not.",
+    needs: [
+      "The opinion from a court source, read against the quotations",
+    ],
+    where: [
+      "The Ninth Circuit's own records",
+      "A law library's reporter volumes",
+    ],
+  },
+  {
+    key: "keane-trial-judge-identity",
+    title: "Two documents name two different judges",
+    course: "painted-in-court",
+    lesson: "a-jury-decides-an-appeal-reviews",
+    severity: "medium",
+    claim:
+      "The caption names one judge as presiding; two later accounts name a different judge as granting the directed verdict. The course states that it cannot resolve this.",
+    question:
+      "Which judge presided, and which granted the directed verdict?",
+    stakes:
+      "A course about reading a court record should be able to say who the judge was.",
+    needs: [
+      "The docket, or the trial record",
+    ],
+    where: [
+      "The district court's docket",
+    ],
+  },
+  {
+    key: "keane-declaratory-and-malicious-prosecution",
+    title: "Two claims named once and never resolved",
+    course: "painted-in-court",
+    lesson: "what-a-correction-can-reach",
+    severity: "medium",
+    claim:
+      "The opening paragraph names a declaratory judgment claim and a malicious prosecution claim. Neither is resolved anywhere in the memorandum, and the course does not guess.",
+    question:
+      "What became of those two claims?",
+    stakes:
+      "If a declaratory judgment on authorship was entered, the course's central line, that no court in this record decided who painted the pictures, would need rewriting rather than amending.",
+    needs: [
+      "The judgment, or the docket entries for both claims",
+    ],
+    where: [
+      "The district court's docket",
+    ],
+  },
+  {
+    key: "keane-jury-instructions",
+    title: "The instructions the jury actually got",
+    course: "painted-in-court",
+    lesson: "the-scene-everybody-remembers",
+    severity: "medium",
+    claim:
+      "A lesson hedges on what the jury was instructed, because the instructions have not been read in full.",
+    question:
+      "What did the instructions say on the questions this course discusses?",
+    stakes:
+      "The hedge is load-bearing: what a jury was asked decides what its verdict means.",
+    needs: [
+      "The jury instructions in full",
+    ],
+    where: [
+      "The trial record",
+    ],
+  },
+  {
+    key: "keane-unpublished-citation-rule-today",
+    title: "What the citation rules say now",
+    course: "painted-in-court",
+    lesson: "what-a-correction-can-reach",
+    severity: "low",
+    claim:
+      "The course states only what the 1990 note says about itself, and asserts nothing about today's rules.",
+    question:
+      "What do the circuit's rules now say about citing unpublished dispositions?",
+    stakes:
+      "Low. The lesson's point is about 1990 and stands either way.",
+    needs: [
+      "The current rule",
+    ],
+    where: [
+      "The Ninth Circuit's rules",
+    ],
+  },
+  {
+    key: "keane-1982-prior-proceeding",
+    title: "The proceeding behind the malicious prosecution claim",
+    course: "painted-in-court",
+    lesson: "a-jury-decides-an-appeal-reviews",
+    severity: "low",
+    claim:
+      "The claim rests on an earlier proceeding the memorandum does not describe.",
+    question:
+      "What was that earlier proceeding, and how did it end?",
+    stakes:
+      "Low, and the course does not rely on it.",
+    needs: [
+      "The earlier case's record",
+    ],
+    where: [
+      "Court dockets of the period",
+    ],
+  },
+  {
+    key: "keane-bankruptcy-outcome",
+    title: "What the 1987 bankruptcy decided",
+    course: "painted-in-court",
+    lesson: "what-a-correction-can-reach",
+    severity: "low",
+    claim:
+      "One account reports a 1987 filing, attributed. Two retellings use the bankruptcy to explain where the money went, and the course asserts nothing about its outcome.",
+    question:
+      "What did the bankruptcy proceeding decide, and what happened to the judgment?",
+    stakes:
+      "Low for the course's argument, but it is the usual explanation offered for a judgment that was never collected.",
+    needs: [
+      "The bankruptcy docket",
+    ],
+    where: [
+      "The bankruptcy court's records",
+    ],
+  },
+  {
+    key: "keane-death-date",
+    title: "A date the obituary's read sentences do not give",
+    course: "painted-in-court",
+    lesson: "the-scene-everybody-remembers",
+    severity: "low",
+    claim:
+      "Her age, cause of death and location are attributed to an obituary; the date appears only in search summaries, so the course does not print it.",
+    question:
+      "What is the date?",
+    stakes:
+      "Low, and nothing rests on it.",
+    needs: [
+      "An obituary or record giving the date",
+    ],
+    where: [
+      "The newspaper's own archive",
+    ],
+  },
+  // ── who-gets-nominated (Chien-Shiung Wu), filed 2026-09-21 with the course ──
+  {
+    key: "wu-proposed-cobalt-60-method",
+    title: "Did she say she proposed the cobalt-60 method?",
+    course: "who-gets-nominated",
+    lesson: "what-the-record-does-not-show",
+    severity: "high",
+    claim:
+      "Her own 1973 account is attributed to her as a later author quotes it, and never asserted. The course does not claim she proposed the method.",
+    question:
+      "Does her 1973 account state that she proposed the cobalt-60 method, and in what words?",
+    stakes:
+      "It is the document that answers the 1971 committee assessment and the physicist who disqualified himself on the same ground. Its answer changes three lessons.",
+    needs: [
+      "Her 1973 chapter, at its cited pages",
+    ],
+    where: [
+      "Maglich (ed.), Adventures in Experimental Physics, Gamma Volume",
+      "A university library",
+    ],
+  },
+  {
+    key: "nomination-count-66-vs-58",
+    title: "The archive and the committee book give different totals",
+    course: "who-gets-nominated",
+    lesson: "the-archive-and-the-search-you-run-yourself",
+    severity: "medium",
+    claim:
+      "The course prints both figures with their sources and labels the multi-nominee explanation a guess.",
+    question:
+      "Why do the archive's 1957 row count and the published committee figure differ?",
+    stakes:
+      "The course teaches a learner to count an archive themselves. It should be able to explain why two honest counts of the same year differ.",
+    needs: [
+      "The counting rule each source used",
+    ],
+    where: [
+      "The nomination archive's own documentation",
+      "The published history of the committee",
+    ],
+  },
+  {
+    key: "nobel-publication-deadline-rule",
+    title: "Is there a rule that the work must predate the prize year?",
+    course: "who-gets-nominated",
+    lesson: "four-stages-and-which-one-failed",
+    severity: "medium",
+    claim:
+      "A deadline rule is reported by one account and the statute behind it is never stated, so the course reports it as that account's and asserts no rule.",
+    question:
+      "Do the statutes contain such a rule, and in what words?",
+    stakes:
+      "It bears on whether the 1957 timing was a rule or a choice.",
+    needs: [
+      "The relevant statute text",
+    ],
+    where: [
+      "The Nobel Foundation statutes",
+    ],
+  },
+  {
+    key: "kurti-sutton-note-publication",
+    title: "Where did the Kurti and Sutton note appear?",
+    course: "who-gets-nominated",
+    lesson: "who-says-so",
+    severity: "medium",
+    claim:
+      "The note is quoted only as a later author quotes it, and its outlet is unnamed in that source.",
+    question:
+      "In what publication and issue did the note appear?",
+    stakes:
+      "A citation that cannot be followed is a weak link in a course about following citations.",
+    needs: [
+      "The publication, date and page",
+    ],
+    where: [
+      "The author who quotes it",
+      "Physics correspondence of the period",
+    ],
+  },
+  {
+    key: "wu-nn-nominators",
+    title: "Who filed the two anonymised nominations?",
+    course: "who-gets-nominated",
+    lesson: "the-archive-and-the-search-you-run-yourself",
+    severity: "low",
+    claim:
+      "Two of the 23 records name no nominator. Two published sources name one person; the database names nobody, so the course names nobody.",
+    question:
+      "Who filed the two nominations the database records as anonymous?",
+    stakes:
+      "Low. The count stands either way.",
+    needs: [
+      "The archive's own record, or a documented identification",
+    ],
+    where: [
+      "The nomination archive",
+      "The published sources that name a nominator",
+    ],
+  },
+  {
+    key: "wu-institutional-firsts-years",
+    title: "The years of her institutional firsts",
+    course: "who-gets-nominated",
+    lesson: "what-a-later-correction-repairs",
+    severity: "low",
+    claim:
+      "A list of institutional firsts is attributed to one author and their years are not printed, because a guessed source URL returned 404 and no authoritative list was read.",
+    question:
+      "What are the dated institutional firsts, from the institutions themselves?",
+    stakes:
+      "Low, and the course prints none of them rather than guessing.",
+    needs: [
+      "An authoritative dated list",
+    ],
+    where: [
+      "Columbia University",
+      "The National Academy of Sciences",
+      "The American Physical Society",
+    ],
+  },
+  {
+    key: "nas-memoir-nobel-absence",
+    title: "Confirm a zero count from page images",
+    course: "who-gets-nominated",
+    lesson: "who-says-so",
+    severity: "low",
+    claim:
+      "The course reports that a biographical memoir of her never mentions the prize, from a text extraction that is known to drop digits. The memoir's words are used and its numbers are not.",
+    question:
+      "Does the printed memoir mention the prize anywhere?",
+    stakes:
+      "Low, but it is an absence used as evidence, and an absence read from a damaged extraction deserves a page-image check.",
+    needs: [
+      "The memoir read from page images",
+    ],
+    where: [
+      "The academy's biographical memoirs",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

@@ -25,6 +25,9 @@ import { DANCE_CREDIT_COURSE } from "./data/dance-credit-course";
 import { PHOTOGRAPHY_CREDIT_COURSE } from "./data/photography-credit-course";
 import { ESTHER_LEDERBERG_COURSE } from "./data/esther-lederberg-course";
 import { DREW_BLOOD_BANK_COURSE } from "./data/drew-blood-bank-course";
+import { THE_MARK_AND_THE_STAR_COURSE } from "./data/the-mark-and-the-star-course";
+import { WHOSE_NAMES_THE_PAYROLL_KEPT_COURSE } from "./data/whose-names-the-payroll-kept-course";
+import { PAINTED_IN_COURT_COURSE } from "./data/painted-in-court-course";
 import { HOW_THE_TRADES_WORK_COURSE } from "./data/how-the-trades-work-course";
 import { READ_THE_PLAN_AND_THE_CODE_COURSE } from "./data/read-the-plan-and-the-code-course";
 import { KEEPING_A_HOUSE_COURSE } from "./data/keeping-a-house-course";
@@ -32,6 +35,7 @@ import { HOW_A_HOUSE_STANDS_UP_COURSE } from "./data/how-a-house-stands-up-cours
 import { SOUL_TRAIN_THE_BUSINESS_COURSE } from "./data/soul-train-the-business-course";
 import { WHO_THE_RULE_LEAVES_OUT_COURSE } from "./data/who-the-rule-leaves-out-course";
 import { AUTHOR_LINE_AND_FINDING_COURSE } from "./data/the-author-line-and-the-finding-course";
+import { WHO_GETS_NOMINATED_COURSE } from "./data/who-gets-nominated-course";
 import { THE_PARTNER_AND_THE_PRIZE_COURSE } from "./data/the-partner-and-the-prize-course";
 import { GEORGE_HUNT_COURSE } from "./data/notes-made-by-mr-george-hunt-course";
 import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
@@ -687,6 +691,113 @@ async function main() {
     visibility: "private",
     publishHoldReason:
       "Private study for BAM (plans/83). A live credit dispute with a named contesting party, the Fondation Jerome Lejeune, which publishes its own documents. Built from the Inserm ethics committee's 2014 opinion, the Foundation's three published texts, Inserm's own listing page, and the 1959 and 1969 index records. It reaches no verdict, because the documents it could read do not support one, and it says so.",
+  });
+
+  // "The Mark and the Star" (Judith Leyster, plans/83 E-07). PRIVATE, by BAM's approval of
+  // 2026-09-21, after he found the 1893 article himself and a reading pass answered both open
+  // questions. The popular story is wrong TWICE and the article proves both: the forged monogram is
+  // on the Crabbe panel, not the litigated Lawrie one (near-pendants, different sizes, different
+  // markets three years apart), and the forgery ALTERED her own mark into Hals's rather than
+  // painting his signature over hers. The other half of the lesson is that she varied her own mark
+  // honestly, so the skill is separating a hand that varies from a hand that tampers.
+  // NO series code. seriesOrder 17: 15 is Keane, 16 is the payroll course. NO migration.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-mark-and-the-star",
+    course: THE_MARK_AND_THE_STAR_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Research & Reporting"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 17,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from Hofstede de Groot's 1893 article read as page images, both instalments, because the OCR disagrees with the page in sixteen places and every monogram facsimile is invisible to the text layer. Four documents it leans on are still unread: the London newspaper report of the 1893 hearing, two 1893 weeklies, and the modern catalogue raisonne.",
+  });
+
+  // "Whose Names the Payroll Kept" (the Central Pacific's Chinese workers, plans/83 E-26). PRIVATE,
+  // by BAM's approval of 2026-09-21, conditional on Crocker's testimony being fetched first, which
+  // it was. Two payroll sheets read as images and the 1876 congressional testimony read from page
+  // images. The spine: a form that cannot hold a person (the NAMES column holds a head man, a firm,
+  // or by 1866 a NUMBER), then the employer explaining it himself under cross-examination, with the
+  // QUESTION first, because every retelling drops it: "Does the same thing obtain with the white
+  // men? No, sir; we get the individual names of the white men." Then the arithmetic: the famous
+  // worker and death totals are a count of head men times an assumed crew, and a weight of bones
+  // divided by an assumed body weight. Unknown, not smaller. The photograph is ONE lesson of
+  // fourteen, placed thirteenth, and says in its own text why. NO series code. NO migration.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "whose-names-the-payroll-kept",
+    course: WHOSE_NAMES_THE_PAYROLL_KEPT_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Research & Reporting"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 16,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from two Central Pacific payroll sheets read as images with shelfmarks and from Crocker's and Strobridge's 1876 congressional testimony read from page images. Still reported rather than read: the 1870 and 1868 newspapers, the 1919 identification of men in the ceremony photograph, a 1928 company bulletin, and the Chinese characters on sheet 102, which are taught as a limit rather than transcribed.",
+  });
+
+  // "Painted in Court" (Margaret Keane, plans/83 E-01). PRIVATE, by BAM's approval of 2026-09-21,
+  // built after he found the full Ninth Circuit memorandum himself. It contradicts the popular
+  // telling twice: the four-million-dollar award was VACATED as so grossly excessive that it shocks
+  // the conscience, and the copyright claim in the case was HIS counterclaim against her, which
+  // failed on proof of copying rather than on any finding about authorship. NO court in this record
+  // decided who painted the pictures, and the course says so twice. The courtroom painting
+  // demonstration appears NOWHERE in the twelve-page opinion, which a learner can check.
+  // Tier 2 (law). NO series code. NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "painted-in-court",
+    course: PAINTED_IN_COURT_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Civics"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 15,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built from the full Ninth Circuit memorandum in Keane v. Keane, No. 87-1741, decided 18 January 1990, read part by part. It contradicts the popular telling twice: the four-million-dollar award was vacated as so grossly excessive that it shocks the conscience, and the copyright claim was his counterclaim against her. No court in this record decided who painted the pictures. The opinion was read from a commercial database's reproduction rather than a court source, so every quotation is flagged for checking, and the course tells the learner so in a lesson rather than only in a comment.",
+  });
+
+  // "Who Gets Nominated" (Chien-Shiung Wu, plans/83 E-10). PRIVATE, by BAM's approval of 2026-09-20.
+  // The catalog's STAGE TWO case, and the only one whose deciding document is a COUNT rather than a
+  // wording: she received ZERO nominations for the 1957 prize, and the famous 23 run 1958 to 1974,
+  // after it. So the failure was at the nomination stage, not in the citation. The committee's
+  // reasoning is attributed to the two researchers who first read the 1957 file and is never stated
+  // as a committee decision, and the course never asserts that she was excluded for being a woman.
+  // Its counter-evidence carries equal weight: the presentation speech names her and she is first
+  // author on the paper. seriesOrder 13 fills the gap the credit series had. NO series code.
+  // NO migration: pnpm seed:courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "who-gets-nominated",
+    course: WHO_GETS_NOMINATED_COURSE,
+    category: "Culture & History",
+    additionalCategories: ["Science & Math"],
+    seriesSlug: "credit",
+    seriesTitle: "Credit: Who Gets Named",
+    seriesOrder: 13,
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "private",
+    publishHoldReason:
+      "Private study for BAM (plans/83). Built archive-first: all 23 nomination records read one at a time, the 1957 list counted row by row, and both banquet speeches and both lectures read in full. It contradicts the popular telling of this case, and the committee's reasoning is attributed to the two researchers who first read the 1957 file rather than stated as a committee decision.",
   });
 
   // Writing Poems and Songs. Public: BAM asked for the class and set no hold on it, unlike the two

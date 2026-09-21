@@ -159,6 +159,12 @@ const BACKLOG: Record<string, string> = {
     "UNMAPPED, and a genuine candidate. Genetics, experimental method and evaluating sources against claims all appear in science and ELA standards. Not claimed until the mapping is done properly.",
   "who-built-the-blood-bank":
     "PRIVATE until vetted, no series code. A primary-source history course (sourcing, corroboration, chronology, claim against evidence), so a genuine candidate for US-history and ELA standards, mapped at the public flip rather than claimed for a course no educator can see.",
+  "the-mark-and-the-star":
+    "PRIVATE, no series code. Walking a provenance line, counting an author's own claims against later summaries, separating assertion from reservation from suspicion, and reading a page image against a transcription: a strong ELA and history candidate, to be MAPPED at the public flip rather than claimed now.",
+  "whose-names-the-payroll-kept":
+    "PRIVATE, no series code. Reading a ruled manuscript column by column, a repeatable two-document check, catching a silent ellipsis in a quotation, and taking a famous number back to its arithmetic: a strong US-history and ELA candidate, to be MAPPED at the public flip rather than claimed now.",
+  "painted-in-court":
+    "PRIVATE, no series code. Three of four sections teach how a federal appeal works from a primary document (standards of review, preservation and waiver, finality versus precedent, what an unpublished disposition is): a strong civics and ELA candidate, to be MAPPED at the public flip rather than claimed now.",
   "the-partner-and-the-prize":
     "PRIVATE study, no series code. A document-analysis history course (reading an institutional record, claim against evidence, corroboration), so a genuine candidate for US-history and ELA standards, mapped at the public flip rather than claimed for a course no educator can see.",
   "notes-made-by-mr-george-hunt":
@@ -169,6 +175,8 @@ const BACKLOG: Record<string, string> = {
     "PRIVATE study, no series code. Sourcing, corroboration and claim-against-evidence, plus quantitative reasoning about counts and the rules behind them, so a real candidate for ELA and mathematics standards; mapped at the public flip rather than claimed for a course no educator can see.",
   "the-author-line-and-the-finding":
     "PRIVATE, no series code. Reading an institutional finding against an interested party's published rebuttal, plus the cell-biology fact the finding rests on: a real candidate for science and ELA standards, to be MAPPED at the public flip rather than claimed now.",
+  "who-gets-nominated":
+    "PRIVATE, no series code. Source criticism end to end (counting an archive, reading a ceremony record, refusing a quotation that cannot be traced), plus the physics the experiment turned on: a real candidate for ELA and science standards, to be MAPPED at the public flip rather than claimed now.",
   "whose-name-is-on-the-score":
     "PRIVATE study, no series code. A primary-source history course on a registration record and a statute (reading a document, corroboration, what a record does and does not settle), so a real candidate for US-history and ELA standards; mapped at the public flip rather than claimed for a course no educator can see.",
   "who-the-rule-leaves-out":
