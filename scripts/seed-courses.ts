@@ -42,6 +42,12 @@ import { WHO_MAY_TEACH_COURSE } from "./data/who-may-teach-course";
 import { WHAT_THE_CITATION_RECORDS_COURSE } from "./data/what-the-citation-records-course";
 import { WHOSE_NAME_ON_THE_SCORE_COURSE } from "./data/whose-name-is-on-the-score-course";
 import { WHO_WERE_THE_COMPUTERS_COURSE } from "./data/who-were-the-computers-course";
+import { USING_LEARN_LEARNER_COURSE } from "./data/using-learn-learner-course";
+import { USING_LEARN_PARENT_COURSE } from "./data/using-learn-parent-course";
+import { USING_LEARN_BUILD_A_COURSE_COURSE } from "./data/using-learn-build-a-course-course";
+import { USING_LEARN_RUN_YOUR_COURSE_COURSE } from "./data/using-learn-run-your-course-course";
+import { USING_LEARN_COHORTS_COURSE } from "./data/using-learn-cohorts-course";
+import { USING_LEARN_RUN_YOUR_SCHOOL_COURSE } from "./data/using-learn-run-your-school-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -3713,6 +3719,54 @@ async function main() {
     category: "Sports",
     navigationMode: "linear",
   });
+
+
+  // "Using Learn.WitUS" (USING) — the help centre taught as six role paths, each ending in the
+  // certificate this app already issues for a finished course. Brief:
+  // plans/future-courses/using-learn/2026-09-21-using-learn-paths-brief.md, approved by BAM
+  // 2026-09-22 (rubric v1.3 A8), who also added the cohort path and approved the assessment-size
+  // exception recorded in scripts/audit-course.ts.
+  //
+  // PARALLEL TRACKS, and the promise is real: a learner, a parent, a cohort teacher and a school
+  // admin each take their own track, and none is a prerequisite for another. TCH2 follows TCH1
+  // inside the teacher track only.
+  //
+  // Lesson text is NOT stored here: scripts/data/using-learn-shared.ts reads each lesson from
+  // src/lib/help-articles.ts at seed time, so re-seeding republishes the current help text and an
+  // article that disappears breaks the seed instead of emptying a lesson.
+  //
+  // Public and free. Each course reads "Coming soon" until BAM vets it (rubric E1) — that is the
+  // ship gate, not an oversight.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Using Learn.WitUS", sortOrder: 9 })
+    .onConflictDoNothing();
+
+  for (const r of [
+    { slug: "using-learn-learner", course: USING_LEARN_LEARNER_COURSE, order: 1, position: "LRN1", track: "LRN · Learner" },
+    { slug: "using-learn-parent", course: USING_LEARN_PARENT_COURSE, order: 2, position: "PAR1", track: "PAR · Parent" },
+    { slug: "using-learn-build-a-course", course: USING_LEARN_BUILD_A_COURSE_COURSE, order: 3, position: "TCH1", track: "TCH · Teacher" },
+    { slug: "using-learn-run-your-course", course: USING_LEARN_RUN_YOUR_COURSE_COURSE, order: 4, position: "TCH2", track: "TCH · Teacher" },
+    { slug: "using-learn-cohorts", course: USING_LEARN_COHORTS_COURSE, order: 5, position: "COH1", track: "COH · Cohort teacher" },
+    { slug: "using-learn-run-your-school", course: USING_LEARN_RUN_YOUR_SCHOOL_COURSE, order: 6, position: "ADM1", track: "ADM · School admin" },
+  ]) {
+    await seedAuthoredCourse(db, {
+      tenantId: learnWitus,
+      instructorId,
+      slug: r.slug,
+      course: r.course,
+      category: "Using Learn.WitUS",
+      navigationMode: "linear",
+      price: 0,
+      priceType: "free",
+      seriesSlug: "using-learn",
+      seriesTitle: "Using Learn.WitUS",
+      seriesOrder: r.order,
+      seriesCode: "USING",
+      seriesPosition: r.position,
+      seriesTrack: r.track,
+    });
+  }
 
   await pool.end();
   console.log("Done.");

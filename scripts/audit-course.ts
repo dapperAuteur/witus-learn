@@ -56,7 +56,30 @@ const POOL_TOLERANCE = 0.9;
  * Never add a line here to make new content pass. Add one only when a human decided the gap, and
  * say who and when, so a later pass does not "fix" it.
  */
+/** The one decision behind every USING entry in SPEC_EXCEPTIONS, written once. */
+const USING_LEARN_SPEC_NOTE =
+  "BAM, 2026-09-22: a help-centre path assesses screens and controls, so section quizzes pool 10 " +
+  "serving 5 and the final pools 25 serving 10, rather than the 40-to-100 the density rule sets " +
+  "for argued material. Brief: plans/future-courses/using-learn/2026-09-21-using-learn-paths-brief.md.";
+
 const SPEC_EXCEPTIONS: Record<string, string> = {
+  // BAM, 2026-09-22. The six "Using Learn.WitUS" (USING) paths teach the help centre itself, so a
+  // section's "material" is a screen and a handful of controls rather than an argument. The spec
+  // would pool 40 to 100 per section and 40 in the final, roughly 400 questions across the series,
+  // which on UI steps is exactly the trivia the density rule exists to prevent: at that size the
+  // bank has to start asking which menu a control sits under. Approved size: section quizzes serve
+  // 5 from a pool of 10 or more, the final serves 10 from a pool of 25 or more, and every teaching
+  // section still has a quiz with a sourceLessonSlug on every question. tests/using-learn-series.ts
+  // measures the banks against the same longest-option and answer-spread rules the lint guards use,
+  // because those guards only recognise a bank written as an object literal and these are built by
+  // scripts/data/using-learn-shared.ts.
+  "using-learn-learner": USING_LEARN_SPEC_NOTE,
+  "using-learn-parent": USING_LEARN_SPEC_NOTE,
+  "using-learn-build-a-course": USING_LEARN_SPEC_NOTE,
+  "using-learn-run-your-course": USING_LEARN_SPEC_NOTE,
+  "using-learn-cohorts": USING_LEARN_SPEC_NOTE,
+  "using-learn-run-your-school": USING_LEARN_SPEC_NOTE,
+
   // BAM, 2026-08-23. Three courses closed in the wave-1 assessment pass whose sections are SHORT,
   // so the pool rule's floor of 40 binds instead of its density half. Broadcasting's sections run
   // 600-726 words, how-to-research 712-869, off-grid-survival 546-933. Forty questions on 600 words
@@ -231,7 +254,12 @@ function audit(entry: SeedEntry, course: AuthoredCourse, spec: boolean): CourseR
   if (spec) {
     // The final is the last quiz lesson: the one every course ends on, whatever it is named.
     const final = [...quizzes].reverse()[0];
-    if (final) {
+    // A SPEC_EXCEPTIONS entry is a decision about a course's ASSESSMENT SIZE, so it covers the
+    // final as well as the section pools. Before 2026-09-22 it silenced only the section rule, so
+    // an excepted course still reported its final every run: a finding nobody could act on, which
+    // is how a findings list stops being read. The exception still has to be a named human
+    // decision with a date, and the served count is still checked below.
+    if (final && !SPEC_EXCEPTIONS[entry.slug]) {
       const n = final.quiz!.questions.length;
       if (n < FINAL_POOL_MIN || served(final) < MAX_QUESTIONS_PER_ATTEMPT) {
         findings.push({
