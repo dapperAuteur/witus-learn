@@ -37,6 +37,19 @@ import { allAlignedCourseSlugs } from "../src/lib/standards/index";
  * mappings (economics, US/world history, geography, civics) remain worthwhile follow-up work, but
  * the courses are no longer unaligned. */
 const BACKLOG: Record<string, string> = {
+  // The six "Using Learn.WitUS" (USING) paths, BAM 2026-09-22. No K-12 or professional standard
+  // covers operating one vendor's software: the literacy strands this catalog maps to are about
+  // reading sources critically, and a path that teaches where the Publish button is makes no claim
+  // a school shops on. They are onboarding for this product, and the certificate says only that the
+  // person finished it. If ISTE Standards for Educators are ever transcribed here, the two teacher
+  // paths are the candidates worth revisiting; the learner, parent, cohort and admin paths are not.
+  "using-learn-learner": "Using Learn.WitUS path: product onboarding, no academic standard applies (BAM, 2026-09-22).",
+  "using-learn-parent": "Using Learn.WitUS path: product onboarding, no academic standard applies (BAM, 2026-09-22).",
+  "using-learn-build-a-course": "Using Learn.WitUS path: product onboarding, no academic standard applies; revisit if ISTE for Educators is transcribed (BAM, 2026-09-22).",
+  "using-learn-run-your-course": "Using Learn.WitUS path: product onboarding, no academic standard applies; revisit if ISTE for Educators is transcribed (BAM, 2026-09-22).",
+  "using-learn-cohorts": "Using Learn.WitUS path: product onboarding, no academic standard applies (BAM, 2026-09-22).",
+  "using-learn-run-your-school": "Using Learn.WitUS path: product onboarding, no academic standard applies (BAM, 2026-09-22).",
+
   "education-leadership-doctoral-rigor":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",
   "know-your-rights-at-work":
