@@ -576,8 +576,8 @@ so.`,
     keywords: ["search", "find", "lesson search", "image search", "captions", "alt text"],
     body: `# Search inside a course
 
-Enrolled learners (and you, on your own courses) get a **Search this course** box on the course
-page. It finds where the course said something: lesson text, self-check questions and answers,
+Enrolled learners get a **Search this course** box on the course page, and so do you on your own
+courses and anyone you have invited to review one. It finds where the course said something: lesson text, self-check questions and answers,
 and image descriptions, the alt text, captions, and credits that every figure in this catalog is
 required to carry.
 
@@ -622,7 +622,8 @@ server received it.`,
   X / LinkedIn / Facebook / Email otherwise). Shared links show a page-relevant preview image.
 - **Related WitUS tools**, in Course settings, curate up to 3 sibling apps to show as a small
   labeled card on the course page (WitUS-branded sites only).
-- **Link usage**, the course page shows how often outbound links get clicked (counts only).`,
+- **Link usage**, your course manager (**/teach** then the course) shows how often outbound links
+  get clicked (counts only). It is not on the public course page.`,
   },
   {
     slug: "cross-course-links",
