@@ -106,7 +106,8 @@
     "test:db": "node --env-file=.env.test ./node_modules/vitest/vitest.mjs run",
     "check:private-courses": "tsx scripts/check-private-courses.ts",
     "seed:local-private": "tsx --env-file=.env.local scripts/seed-local-private.ts",
-    "seed:local-private:prod": "tsx --env-file=.env.prod scripts/seed-local-private.ts"
+    "seed:local-private:prod": "tsx --env-file=.env.prod scripts/seed-local-private.ts",
+    "tutorial:check": "node scripts/tutorial-video/check-manifest.mjs"
   },
   "dependencies": {
     "@langchain/anthropic": "^1.4.0",
