@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { endSessionEndpointFromDiscovery } from "@/lib/silent-sso";
+import { isWitusBrandedHost, tenantUsesWitusSso } from "@/lib/witus-host";
 
 // BAM chose GLOBAL sign-out on 2026-08-30: "signout signs out of every app". Two things have to
 // hold, and neither is visible by clicking around: the endpoint is DERIVED rather than hardcoded,
@@ -43,13 +44,32 @@ describe("global sign-out", () => {
   it("never sends an off-ecosystem tenant to the shared IdP", () => {
     // The isolation invariant applies to logout exactly as it does to login: a white-label
     // school's learner redirected to accounts.witus.online learns the ecosystem exists.
+    // Resolved on the server from the tenant, never from anything the client supplies, and by the
+    // SAME rule as the sign-in half, so the two cannot drift apart again.
     const header = readFileSync("src/components/site-header.tsx", "utf8");
-    expect(header).toMatch(/isWitusBrandedHost\(hostHeader\)\s*\|\|\s*tenant\.flags\.ecosystemSso === true/);
-    // Resolved from the request host on the server, never from anything the client supplies.
-    expect(header).toContain('hdrs.get("x-forwarded-host")');
+    expect(header).toMatch(/tenantUsesWitusSso\(tenant\)\s*\?\s*witusEndSessionEndpoint\s*:\s*null/);
+    const login = readFileSync("src/app/login/page.tsx", "utf8");
+    expect(login).toMatch(/const showWitusSso = tenantUsesWitusSso\(tenant\)/);
+    // The host test is for BRANDING only; it must not gate the IdP handoff any more.
+    expect(header).not.toMatch(/isWitusBrandedHost/);
+    expect(login).not.toMatch(/isWitusBrandedHost/);
     // The button itself holds no URL literal, so a caller who forgets the gate leaks nothing.
     const button = readFileSync("src/components/sign-out-button.tsx", "utf8");
     expect(button.replace(/\/\/.*$/gm, "")).not.toMatch(/https:\/\//);
+  });
+
+  it("hands off to the IdP only from a school the IdP has registered", () => {
+    // 2026-09-21: signing out on the Acme demo (acme.learning.witus.online, a WitUS SUBDOMAIN, so
+    // WitUS-branded) sent an unregistered post_logout_redirect_uri and the IdP refused it. The IdP
+    // registers learn.witus.online only (gemini/witus lib/identity/clients.ts); tenant hosts never.
+    const flags = (ecosystemSso?: boolean) => ({ ecosystemSso });
+    expect(tenantUsesWitusSso({ slug: "learn-witus", flags: flags() })).toBe(true);
+    expect(tenantUsesWitusSso({ slug: "acme-academy", flags: flags() })).toBe(false);
+    expect(tenantUsesWitusSso({ slug: "better-vice-club", flags: flags(false) })).toBe(false);
+    expect(tenantUsesWitusSso({ slug: "any-tenant", flags: flags(true) })).toBe(true);
+    expect(tenantUsesWitusSso(null)).toBe(false);
+    // Branding is a separate, wider question: Acme keeps the ecosystem footer.
+    expect(isWitusBrandedHost("acme.learning.witus.online")).toBe(true);
   });
 
   it("sends client_id, which the IdP requires, and joins the query correctly", () => {

@@ -16,7 +16,7 @@ import {
  * "Sign in with WitUS", plus the silent "Continue as <name>" check on top of it.
  *
  * THE GATE IS THE WHOLE POINT. `enabled` is resolved on the SERVER from the request host
- * (`isWitusBrandedHost(host) || tenant.flags.ecosystemSso`, see src/app/login/page.tsx) and is
+ * (`tenantUsesWitusSso(tenant)`, see src/app/login/page.tsx) and is
  * never derived here or supplied by the client. A white-label school must never so much as touch
  * accounts.witus.online: that single request would both reveal the ecosystem exists and tell it
  * someone visited that school. The login page already renders this component only behind that gate;

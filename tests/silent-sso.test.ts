@@ -80,7 +80,7 @@ describe("the tenant gate: the check never fires without it", () => {
     const page = read("src/app/login/page.tsx");
     // The gate itself, unchanged: resolved from the REQUEST HOST on the server, never the client.
     expect(page).toContain(
-      "const showWitusSso = isWitusBrandedHost(host) || tenant?.flags.ecosystemSso === true;",
+      "const showWitusSso = tenantUsesWitusSso(tenant);",
     );
     // The button is rendered inside `showWitusSso ? ... : null`, and the IdP endpoint is passed
     // only there, so an ineligible tenant's browser never receives the URL at all.

@@ -1,9 +1,8 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import { resolveTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
-import { isWitusBrandedHost } from "@/lib/witus-host";
+import { tenantUsesWitusSso } from "@/lib/witus-host";
 import { hasDemoLogin, witusSilentSsoEndpoint } from "@/lib/env";
 import { DEMO_TENANT_SLUG } from "@/db/queries/demo";
 import Link from "next/link";
@@ -32,13 +31,12 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
   const accentFg = tenant?.theme.colors?.accentFg ?? "#ffffff";
   const style = { "--accent": accent, "--accent-fg": accentFg } as CSSProperties;
 
-  // Show "Sign in with WitUS" on WitUS-branded surfaces (any *.witus.online host
-  // + localhost in dev), or where a tenant explicitly opts in via flags.ecosystemSso.
-  // White-label tenants on their OWN domains (bettervice.club, elementarymba.com)
-  // never match, so they stay isolated — no per-tenant flag needed.
-  const h = await headers();
-  const host = h.get("x-forwarded-host") ?? h.get("host");
-  const showWitusSso = isWitusBrandedHost(host) || tenant?.flags.ecosystemSso === true;
+  // Show "Sign in with WitUS" only on a school the WitUS IdP has registered: the WitUS base school
+  // (learn.witus.online, localhost in dev) or a tenant that explicitly opts in via
+  // flags.ecosystemSso. Every other tenant, INCLUDING one on a *.witus.online subdomain such as the
+  // Acme demo, keeps its own magic-link sign-in: the IdP registers no tenant host, so the WitUS
+  // flow from there fails. See tenantUsesWitusSso.
+  const showWitusSso = tenantUsesWitusSso(tenant);
 
   // "Try the demo" ONLY on the Acme host, and only once DEMO_VISITOR_PASSWORD /
   // DEMO_VISITOR_USER_EMAIL are configured — a white-label tenant never shows it, and
