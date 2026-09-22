@@ -96,8 +96,8 @@ export type SilentSsoDecision = { attempt: true } | { attempt: false; skip: Sile
 /**
  * Should this browser ask the IdP who it is?
  *
- * `enabled` is the SERVER-RESOLVED ecosystem gate (`isWitusBrandedHost(host) ||
- * tenant.flags.ecosystemSso`) handed down from the login page. It is checked FIRST and it is the
+ * `enabled` is the SERVER-RESOLVED ecosystem gate (`tenantUsesWitusSso(tenant)`, see
+ * src/lib/witus-host.ts) handed down from the login page. It is checked FIRST and it is the
  * one that matters: a silent request to a shared IdP from a white-label school would both reveal
  * that the ecosystem exists and tell it that someone visited that school. Never re-derive this gate
  * here, and never accept a tenant from the client.
