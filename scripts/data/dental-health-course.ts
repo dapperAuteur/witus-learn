@@ -5,7 +5,7 @@
 // bibliography) to primary/authoritative sources: Cochrane, the American Dental
 // Association, the CDC, the WHO, NIDCR, and peer-reviewed/consensus literature.
 //
-// CAUSATION CAVEAT (load-bearing — see plans/future-courses/dental-health.md):
+// CAUSATION CAVEAT (load-bearing — see plans/future-courses/completed/dental-health/2026-07-08-dental-health.md):
 // The oral-health <-> cardiovascular link is an ASSOCIATION, not proven causation. The
 // American Heart Association's 2026 statement (Tran et al., 2026) is explicit: "no
 // direct evidence of causality, or that periodontal therapy will prevent CVD." This

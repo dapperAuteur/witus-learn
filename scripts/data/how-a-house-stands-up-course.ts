@@ -1,9 +1,9 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // H01 · How a House Stands Up. PRIVATE, free, NO SERIES CODE, by BAM's decision of 2026-09-20.
-// Brief: plans/future-courses/construction/2026-09-20-how-a-house-stands-up-brief.md (APPROVED
+// Brief: plans/future-courses/science-and-math/construction/2026-09-20-how-a-house-stands-up-brief.md (APPROVED
 // 2026-09-20, with question 1 answered PRIVATE). Rights answer for the whole series:
-// plans/future-courses/construction/2026-09-20-00-sources-and-what-can-be-taught.md.
+// plans/future-courses/science-and-math/construction/2026-09-20-00-sources-and-what-can-be-taught.md.
 // RESEARCH TIER 2, per the brief: a wrong sentence about structure can put a wall on somebody.
 // Assumed slug: `how-a-house-stands-up`. Series slug `the-house-you-live-in`, second built, after
 // `read-the-plan-and-the-code`. Every `sourceLessonSlug` below is course-internal.

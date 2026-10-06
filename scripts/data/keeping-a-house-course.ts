@@ -2,7 +2,7 @@ import type { AuthoredCourse } from "./authored-course";
 
 // "Keeping a House: Hazards, Checks, and Where an Amateur Has to Stop" (Money & Property).
 // Series `the-house-you-live-in`, slot H02. Slug to be registered: `keeping-a-house`.
-// PRIVATE and FREE, by BAM's approval of plans/future-courses/construction/
+// PRIVATE and FREE, by BAM's approval of plans/future-courses/science-and-math/construction/
 // 2026-09-20-keeping-a-house-brief.md on 2026-09-20. NO series code: private courses do not carry
 // one (BAM, 2026-09-19). Every `sourceLessonSlug` below is course-internal, so the registered slug
 // does not affect them.
@@ -16,7 +16,7 @@ import type { AuthoredCourse } from "./authored-course";
 // `visibility: "private"` protects the app and not the text, and gate A4 applies at every
 // visibility. Nothing below derives from any book in content/construction/: not a sequence, not a
 // figure, not a chapter summary, not an "as the Visual Handbook explains". The rights answer for the
-// whole series is plans/future-courses/construction/2026-09-20-00-sources-and-what-can-be-taught.md.
+// whole series is plans/future-courses/science-and-math/construction/2026-09-20-00-sources-and-what-can-be-taught.md.
 //
 // So the course teaches the half that IS extraordinarily well documented, by EPA, CPSC, USFA, DOE
 // and the CFR: what is in an older house that can hurt you, what the law says before you disturb it,
@@ -1688,7 +1688,7 @@ U.S. Environmental Protection Agency. (n.d.-j). *Mold cleanup in your home*. htt
 // PROPOSED REGISTRATION BLOCK for scripts/seed-courses.ts (I do not own that file).
 //
 //   // "Keeping a House" (Money & Property). PRIVATE study, series `the-house-you-live-in` slot H02,
-//   // by BAM's approval of plans/future-courses/construction/2026-09-20-keeping-a-house-brief.md on
+//   // by BAM's approval of plans/future-courses/science-and-math/construction/2026-09-20-keeping-a-house-brief.md on
 //   // 2026-09-20. The brief recommended PUBLIC; BAM chose PRIVATE, and approved the scope change
 //   // from repair procedure to hazards, checks and decisions the same day. NO series code, per the
 //   // 2026-09-19 decision that private courses do not carry one. NO migration: pnpm seed:courses.
@@ -1726,7 +1726,7 @@ U.S. Environmental Protection Agency. (n.d.-j). *Mold cleanup in your home*. htt
 //  - SERIES: `the-house-you-live-in` is a NEW series slug whose other four courses may not exist yet
 //    (H00 read-the-plan-and-the-code, H01 how-a-house-stands-up, H03 water-in-water-out, H04
 //    power-in-the-walls). seriesOrder 3 assumes the slot order in the series inventory at
-//    plans/future-courses/construction/2026-09-20-00-sources-and-what-can-be-taught.md section 5.
+//    plans/future-courses/science-and-math/construction/2026-09-20-00-sources-and-what-can-be-taught.md section 5.
 //    Confirm check-series-codes is happy with a series carrying no codes at all.
 //  - VISIBILITY AND PRICE are INSERT-ONLY. Getting them wrong on the first seed needs an admin act to
 //    undo, so check the block before the first `pnpm seed:courses`.

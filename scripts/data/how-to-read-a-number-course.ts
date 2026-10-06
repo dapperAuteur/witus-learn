@@ -3,8 +3,8 @@ import type { AuthoredCourse } from "./authored-course";
 // How to Read a Number: Statistics for Citizens.
 //
 // Course 1 of the Science & Math track. Outline:
-// plans/future-courses/sciences/outlines/01-how-to-read-a-number.md
-// Track proposal: plans/future-courses/sciences/02-science-and-math-track-proposal.md
+// plans/future-courses/science-and-math/sciences/outlines/2026-08-07-01-how-to-read-a-number.md
+// Track proposal: plans/future-courses/science-and-math/sciences/2026-08-07-02-science-and-math-track-proposal.md
 //
 // WHY THIS COURSE EXISTS: the catalog has 34 civics courses and every one of them quotes numbers.
 // None of them teaches a learner how to check one. This is the missing reading skill, and it is a

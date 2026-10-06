@@ -2,7 +2,7 @@ import type { AuthoredCourse } from "./authored-course";
 
 // How We Know What's Out There. Course 2 of the Science & Math track (SCI-02).
 //
-// Outline: plans/future-courses/sciences/outlines/02-how-we-know-whats-out-there.md
+// Outline: plans/future-courses/science-and-math/sciences/outlines/2026-08-07-02-how-we-know-whats-out-there.md
 //
 // WHY THIS COURSE EXISTS, and why it is not a survey of the solar system: BAM's niece wants to
 // study astrophysics and he wants to be able to talk to her about it. The thing a physics student

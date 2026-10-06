@@ -190,7 +190,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - 🔧 **Credit, and the Decisions Made About You** (\`content/money-01-credit\`, **Money & Property**,
   **MONEY-01**; NO migration, **re-run \`pnpm seed:courses\`**). The first course in a NEW series,
   \`personal-money\` ("Your Money, and Who Decides"), from the research file
-  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\`.
+  \`plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md\`.
   **The fact that made this the build to do next is in the app's own standards data.** Nineteen of
   the fifty-one mapped jurisdictions carried a \`notClaimed\` entry whose stated reason was that this
   catalog teaches no personal finance, and \`notClaimed\` is published to teachers exactly as loudly
@@ -392,7 +392,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   \`pnpm gen:citations\` reads the DATABASE, so it runs after the course is seeded, not before.
 - 🔧 **The Match** (\`content/the-match-1890-institutions\`, **Civics**, **WARRANT-01**; NO migration,
   **re-run \`pnpm seed:courses\`**). The first course in a NEW series, from the research file
-  \`plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md\`, which
+  \`plans/future-courses/civics/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md\`, which
   found the entire Morrill mechanism missing from a 226-course catalog: zero occurrences of
   "Morrill", "Pigford", "Homestead Act", "heirs property" or "Federation of Southern Cooperatives"
   anywhere in \`scripts/data/\`, and two incidental HBCU mentions, both in sports biography.
@@ -499,7 +499,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   \`pnpm gen:citations\` is a later decision.
 - 🔧 **Who Signs the Print** (\`content/credit-printmaking\`, Culture & History, **CREDIT-02**; NO
   migration, **re-run \`pnpm seed:courses\`**). The first **discipline** course in the CREDIT series,
-  from \`plans/future-courses/08-black-creator-series-research.md\` §5, which surveyed eleven
+  from \`plans/future-courses/culture-and-history/2026-08-25-08-black-creator-series-research.md\` §5, which surveyed eleven
   disciplines and named printmaking the one to build first. **The spine: in a print shop the artist
   signs and the master printer does not, and that applies to every master printer.** It is a
   convention of the MEDIUM, not a racial rule, which is exactly what makes it worth teaching: the
@@ -538,7 +538,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - 🔧 **Written by Himself** (\`content/credit-ghostwriting\`, Culture & History, **CREDIT-WRI1**; NO
   migration, **re-run \`pnpm seed:courses\`**). The **first course on the lettered W track** (W · The
   written record) inside the CREDIT series, from
-  \`plans/future-courses/2026-08-25-12-black-writers-research.md\` §1, which called ghostwriting the
+  \`plans/future-courses/culture-and-history/2026-08-25-12-black-writers-research.md\` §1, which called ghostwriting the
   strongest first build in the whole writing file. A letter is a promise the track is independent:
   **W1 can be taken straight after CREDIT-00**, in any order relative to 01, 02 and 03.
   **The spine: a byline is a term in an agreement, and the title page is where the agreement shows.**
@@ -594,7 +594,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   \`STAGED_COURSES\` yet, matching CREDIT-00, CREDIT-02 and CREDIT-03.
 - 🔧 **The Name on the Door** (\`content/credit-architecture\`, Culture & History, **CREDIT-03**; NO
   migration, **re-run \`pnpm seed:courses\`**). The second **discipline** course in the CREDIT
-  series, from \`plans/future-courses/08-black-creator-series-research.md\` §6, which called the
+  series, from \`plans/future-courses/culture-and-history/2026-08-25-08-black-creator-series-research.md\` §6, which called the
   Julian Abele myth-correction "a gift". **The spine: a building is credited to a FIRM, and a firm
   is named after whoever owns it.** An employee designer appears nowhere the public can see, because
   firm practice was that only the principal signed. **Licensure adds a second gate:** you cannot be
@@ -993,7 +993,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   was verified separately from its ELA adoption) and **NGSS HS-ESS1 + HS-ESS2**, with every
   produce-it expectation deliberately unclaimed and published under what we do not claim. Seven
   research checks filed rather than guessed. Track plan:
-  \`plans/future-courses/sciences/02-science-and-math-track-proposal.md\`.
+  \`plans/future-courses/science-and-math/sciences/2026-08-07-02-science-and-math-track-proposal.md\`.
 - ✅ **Every public landing page has its own share card** (\`feat/science-math-wave-1\`): eleven pages
   (\`/civics\`, \`/courses\`, \`/demo\`, \`/for\`, \`/globe\`, \`/great-migration-map\`, \`/help\`,
   \`/instructors\`, \`/languages\`, \`/live\`, \`/paths\`) rode the tenant's DEFAULT OG card, so texting
@@ -1847,7 +1847,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - 🔧 **Cash Flow, and When the Money Actually Moves** (\`content/money-03-cash-flow\`,
   **Money & Property**, **MONEY-03**; NO migration, **re-run \`pnpm seed:courses\`**). The third
   course in the \`personal-money\` series ("Your Money, and Who Decides"), from
-  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.1.
+  \`plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md\` §4.1.
   **The research brief said budgeting is a section and never a course, and it was right**: budgeting
   has no mechanism, no decision-maker and no recourse, so this catalog's read-the-rule method has
   nothing to bite on and forcing it would fabricate a grievance. Cash-flow TIMING is the better
@@ -1896,7 +1896,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - 🔧 **Taxes, and the Money Taken Before You See It** (\`content/money-05-taxes\`,
   **Money & Property**, **MONEY-05**; NO migration, **re-run \`pnpm seed:courses\`**). The fifth
   course in the \`personal-money\` series ("Your Money, and Who Decides"), from
-  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.8. Registered at the
+  \`plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md\` §4.8. Registered at the
   END of the seed shorthand loop rather than in numeric position, because MONEY-07 was authored in
   parallel against the same array.
   **The spine: the tax system takes your money before you see it, pays some people more than they
@@ -1958,7 +1958,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - 🔧 **Predatory Products, Priced** (\`content/money-04-predatory-products\`, **Money & Property**,
   **MONEY-04**; NO migration, **re-run \`pnpm seed:courses\`**). The fourth course in the
   \`personal-money\` series ("Your Money, and Who Decides"), from
-  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.10.
+  \`plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md\` §4.10.
   **The spine is a distinction, and it is what keeps this out of generic-avoid-scams territory: a
   predatory product is NOT a scam. It is legal, licensed, contractually enforceable, and its price
   is printed on the page.** A scam is illegal on its face and reaches fraud law; a legal product
@@ -2016,7 +2016,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - 🔧 **Retirement: the Plan, the Fee Disclosure, and the Floor** (\`content/money-07-retirement\`,
   **Money & Property**, **MONEY-07**; NO migration, **re-run \`pnpm seed:courses\`**). The seventh
   course in the \`personal-money\` series ("Your Money, and Who Decides"), from
-  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.6, which named it the
+  \`plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md\` §4.6, which named it the
   highest-advice-risk build in the track. MONEY-01, 02, 03, 04 and 06 are on main; MONEY-05 is being
   authored in parallel.
   **The spine: a retirement account is a legal wrapper somebody else decides whether to offer you,
@@ -2070,7 +2070,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - 🔧 **Housing: the Lease, the Loan Estimate, and the Map** (\`content/money-06-housing\`,
   **Money & Property**, **MONEY-06**; NO migration, **re-run \`pnpm seed:courses\`**). The sixth
   course in the \`personal-money\` series ("Your Money, and Who Decides"), from
-  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.9. MONEY-01 and
+  \`plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md\` §4.9. MONEY-01 and
   MONEY-02 are on main; MONEY-03 and MONEY-04 are being authored in parallel.
   **The spine: a housing decision is a choice between two contracts, and almost every term that
   matters is already written on a document somebody is legally required to hand you.** The course
@@ -2131,7 +2131,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - 🔧 **Banking, and Who Has No Bank** (\`content/money-02-banking\`, **Money & Property**,
   **MONEY-02**; NO migration, **re-run \`pnpm seed:courses\`**). The second course in a NEW series,
   \`personal-money\` ("Your Money, and Who Decides"), from
-  \`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\` §4.4. MONEY-01, the
+  \`plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md\` §4.4. MONEY-01, the
   credit course, is authored in parallel and creates the series.
   **The catalog had no personal finance at all, and it said so about itself.** Nineteen of the
   fifty-one mapped jurisdictions carried a \`notClaimed\` entry whose stated reason was that this
@@ -2336,7 +2336,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   supports. Seeded by \`pnpm seed:courses\`; citations staged AFTER seeding (the extractor reads the
   DB). BAM sets price + vetted state in the admin UI.
 - ✅ **Acting: The Frame, the Stage, and the Read** (\`content/acting-course\`, source note
-  plans/future-courses/acting/acting.md). The on-camera-and-stage companion to \`voice-acting\`, and
+  plans/future-courses/careers-and-media/acting/2026-08-21-acting.md). The on-camera-and-stage companion to \`voice-acting\`, and
   the first course shipped under the **Tier 1** method in docs/course-method: BAM's note asked for
   research first, so a five-section dossier.md sits beside it and only its section 4 entered a
   lesson. 22 teaching lessons in Careers & Media across five sections, 472 pooled questions in six
@@ -3143,9 +3143,9 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   audit). Cited to the UNESCO General History of Africa, Gomez, Green, Fauvelle, Hunwick, museum
   records and UNESCO World Heritage documentation. Registered in \`seed-courses.ts\`; **no
   migration**, \`pnpm seed:courses\`. Track proposal (7 follow-on courses + build order) at
-  \`plans/future-courses/africa-precolonial-track-proposal.md\` → \`/admin/future\`.
+  \`plans/future-courses/completed/culture-and-history/2026-07-15-africa-precolonial-track-proposal.md\` → \`/admin/future\`.
 - ✅ **Afrocentricity: How to Evaluate a Contested Paradigm** (Culture & History, \`content/afrocentricity\`),
-  the **anchor of a proposed Afrocentricity track** (\`plans/future-courses/afrocentricity-track-proposal.md\`,
+  the **anchor of a proposed Afrocentricity track** (\`plans/future-courses/completed/culture-and-history/2026-07-15-afrocentricity-track-proposal.md\`,
   renders at \`/admin/future\`), for high school students. **6 sections · 15 teaching lessons · 6 quizzes**
   (15-question banks, above the 10-question attempt cap so retries rotate; 90 questions) · 15 \`:::reveal\`
   self-checks; every question carries \`explanation\` + \`sourceLessonSlug\`. Afrocentricity is a **specific,
@@ -3166,10 +3166,10 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   replies, with honest scorekeeping. **No invented citations or quotes.** Cited to Asante, Diop, Bernal,
   Lefkowitz, Howe, Appiah, Gilroy, mainstream Egyptology and the 2017 aDNA paper (APA 7 + a \`## Sources\`
   list on every lesson). Registered in \`seed-courses.ts\`; **no migration**, \`pnpm seed:courses\`. The
-  natural home for BAM's source note \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\`.
+  natural home for BAM's source note \`plans/future-courses/culture-and-history/he-did-the-work/2026-07-14-Molefi-Kete-Asante.md\`.
 - ✅ **Pan-Africanism: The Idea, the Movement, the Reckoning** (Culture & History,
   \`content/pan-africanism\`), the **anchor of the Pan-Africanism track**
-  (\`plans/future-courses/pan-africanism-track-proposal.md\`, renders at \`/admin/future\`), for high
+  (\`plans/future-courses/completed/culture-and-history/2026-07-15-pan-africanism-track-proposal.md\`, renders at \`/admin/future\`), for high
   school students. **6 sections · 16 teaching lessons · 6 quizzes** (15-question banks, above the
   10-question attempt cap so retries rotate; 90 questions) · a \`:::reveal\` self-check per teaching
   lesson; every question carries \`explanation\` + \`sourceLessonSlug\`. The full arc: 19th-century
@@ -3207,7 +3207,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 - ✅ **Pre-Columbian Mesoamerica: Cities, Calendars, and the People Who Are Still Here** (Culture &
   History, \`content/precolumbian-mesoamerica\`), the **anchor of the Pre-Columbian Mesoamerica
   track** (7 follow-on courses proposed at
-  \`plans/future-courses/precolumbian-mesoamerica-track-proposal.md\`). **7 sections · 17 teaching
+  \`plans/future-courses/completed/culture-and-history/2026-07-15-precolumbian-mesoamerica-track-proposal.md\`). **7 sections · 17 teaching
   lessons · 7 quizzes** (15-question banks, above the 10-question attempt cap so retries rotate;
   105 questions; every question carries \`explanation\` + \`sourceLessonSlug\`) **· 1 exercise** (name
   the people/place/period, the anti-flattening drill) · one \`:::reveal\` per teaching lesson.
@@ -3278,7 +3278,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   taught precisely (enclaves 1510-1571 vs **Plassey 1757**; Japan/Korea/Siam/most of China never
   European colonies). Registered in \`seed-courses.ts\`; **no migration**, \`pnpm seed:courses\`.
   Track proposal (8 follow-on courses + build order) at
-  \`plans/future-courses/precolonial-asia-track-proposal.md\` → \`/admin/future\`.
+  \`plans/future-courses/completed/culture-and-history/2026-07-15-precolonial-asia-track-proposal.md\` → \`/admin/future\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports**: a new category), 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap

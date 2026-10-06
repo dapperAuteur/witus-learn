@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // CREDIT-00 · "Who Gets Named" (Culture & History), from BAM's own notes:
 // plans/chat/did-the-work-vetting.md §4 ("One course, 'Who Gets Named', as CREDIT-00, teaching the
 // mechanisms ... Then the people arrive as evidence for a mechanism rather than as a parade"),
-// plans/future-courses/03-proposed-black-subjects.md, and 04-the-record-and-the-artists.md §5.
+// plans/future-courses/culture-and-history/2026-08-23-03-proposed-black-subjects.md, and 04-the-record-and-the-artists.md §5.
 // Tier 0.
 //
 // THE THESIS, and why this is a course rather than a list of people:

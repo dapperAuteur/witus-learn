@@ -8,7 +8,7 @@ import type { AuthoredCourse } from "./authored-course";
 // in Available Data." A reporter who can read that page correctly can read any report.
 //
 // Every figure, page number, and definition quoted here was read out of the PDF itself
-// (plans/future-courses/reporter/Indiana-Girl-Report-2025.pdf), not from a description of it. Page
+// (plans/future-courses/research-and-reporting/reporter/Indiana-Girl-Report-2025.pdf), not from a description of it. Page
 // numbers are the report's own printed page numbers.
 //
 // TWO DISCIPLINES plans/68 attaches to using this document, and they are followed literally:

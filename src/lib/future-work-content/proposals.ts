@@ -8701,7 +8701,7 @@ not a stolen credit.
   African American woman in general US theatrical release. **[VERIFY] the exact wording of that
   claim**, which is heavily qualified and is often repeated without the qualifiers.
 - **Ava DuVernay.** Already has a file at
-  \`plans/future-courses/she-did-the-work/2026-07-13-Ava DuVernay.md\`. Living: Rule 1 applies.
+  \`plans/future-courses/culture-and-history/she-did-the-work/2026-07-13-Ava DuVernay.md\`. Living: Rule 1 applies.
 
 **RECOMMENDATION: BUILD, but as the SECOND film course, and only after the archives angle is
 researched.** The spine is not "pioneering Black directors." It is **what it takes for a film to
@@ -10846,7 +10846,7 @@ biographies.**
 biography, no course content was written, and no name below may enter a lesson until it clears the
 verification list at the end of this file.**
 
-BAM's brief, verbatim, from \`plans/future-courses/2026-08-25-Black-writers.md\`:
+BAM's brief, verbatim, from \`plans/future-courses/culture-and-history/2026-08-25-Black-writers.md\`:
 
 > "create a list of Black women, men, and gender fluid individuals for all writing mediums"
 
@@ -11399,7 +11399,7 @@ dataset. Date any figure in the lesson, because it moves.
   written largely by white writers. **[VERIFY] from contemporaneous interviews**, and treat it as
   the "who is in the room" case rather than a scandal.
 - **Kasi Lemmons**, **Dee Rees**, **Ava DuVernay** (who has a file at
-  \`plans/future-courses/she-did-the-work/2026-07-13-Ava DuVernay.md\`), **Issa Rae**, **Radha Blank**,
+  \`plans/future-courses/culture-and-history/she-did-the-work/2026-07-13-Ava DuVernay.md\`), **Issa Rae**, **Radha Blank**,
   **Cord Jefferson**. Living; Rule 1.
 
 **Women.** de Passe, Bowser, Brock Akil, Rhimes, Rae, Waithe, Mock, Rees, Lemmons, DuVernay, Coel.
@@ -11834,7 +11834,7 @@ confirm as Black in this session and therefore did not list. **This is one of th
 the record is genuinely thin, and the thinness is real:** literary translation into English is a
 small, under-resourced profession, and the pipeline into it runs through graduate programmes that
 have their own access problem. **Say that in the course rather than padding the list**, and note
-that the catalog already has a language shelf (\`plans/future-courses/languages/\`) that may know more.
+that the catalog already has a language shelf (\`plans/future-courses/languages/languages/\`) that may know more.
 
 **RECOMMENDATION: FOLD IN, or build small and late.** The mechanism is real and legally distinct,
 but the subject list is the thinnest in the file. **Best home: a strong section inside the "who
@@ -12391,7 +12391,7 @@ stands.** The list is grouped by how bad an error would be, worst first.
     body: `# 13 - Constitutions: research and proposal
 
 **Status: RESEARCH AND PLANNING ONLY.** No content written, no code, no branch, no commits.
-**Date: 2026-08-25.** Source note: \`plans/future-courses/2026-08-25-constitutions.md\`, verbatim, reads
+**Date: 2026-08-25.** Source note: \`plans/future-courses/civics/2026-08-25-constitutions.md\`, verbatim, reads
 "Iroquois Nation constitution / and other constitution". BAM's clarification, verbatim: "course
 comparing, connections, etc".
 
@@ -12456,11 +12456,11 @@ duplicate two shipped courses. Read against \`scripts/seed-courses.ts\`:
 
 ### Planning docs read
 
-- \`plans/future-courses/2026-07-24-types-of-government-path.md\` proposed the nine-course \`power-structures\` path.
+- \`plans/future-courses/completed/civics/2026-07-24-types-of-government-path.md\` proposed the nine-course \`power-structures\` path.
   **All nine shipped.** Its course 3 is \`how-countries-constitute\`; its course 6 is
   \`tribal-nations-governance\`. Its restraint rule (teach that traditional governance exists, whose it
   is, why it matters, then stop) is the rule this proposal inherits.
-- \`plans/future-courses/2026-07-09-civics-more-proposal.md\` proposed six gap-fillers. Checking against
+- \`plans/future-courses/completed/civics/2026-07-09-civics-more-proposal.md\` proposed six gap-fillers. Checking against
   \`seed-courses.ts\`: **all six shipped** (\`how-a-bill-becomes-law\`, \`supreme-court-judicial-branch\`,
   \`know-your-rights\`, \`voting-elections-101\`, \`jury-duty-courts\`, \`citizenship-naturalization\`).
   That document is now a completed backlog and should be moved to \`plans/future-courses/completed/\`
@@ -12989,7 +12989,7 @@ because CREDIT-00 already teaches that one as "a dispute the record cannot close
 
 ### 6.1 The standard this repo has already set
 
-\`plans/future-courses/languages/2026-08-25-02-sign-language-feasibility.md\` §10 sets the house rule for
+\`plans/future-courses/languages/languages/2026-08-25-02-sign-language-feasibility.md\` §10 sets the house rule for
 Indigenous subject matter, and I am holding to it rather than inventing a softer one:
 
 > "Many Indigenous nations control who may teach their language, to whom, in what setting, and
@@ -13499,9 +13499,9 @@ rule and the memory note that the roadmap lives in-app.
 
 ### 10.7 Housekeeping this research turned up
 
-\`plans/future-courses/2026-07-09-civics-more-proposal.md\` is **fully complete**: all six of its candidates ship.
+\`plans/future-courses/completed/civics/2026-07-09-civics-more-proposal.md\` is **fully complete**: all six of its candidates ship.
 It should be moved to \`plans/future-courses/completed/\` (a local \`mv\`; \`plans/\` is gitignored).
-\`plans/future-courses/2026-07-24-types-of-government-path.md\` is also complete at 9 of 9 and belongs in the same
+\`plans/future-courses/completed/civics/2026-07-24-types-of-government-path.md\` is also complete at 9 of 9 and belongs in the same
 place. I did not move either, because this task is planning only.
 
 ---
@@ -13641,10 +13641,10 @@ Marked by provenance, because the course's own method demands it of its planning
 - \`scripts/check-series-codes.ts\`
 - \`src/lib/citations.ts\`
 - \`src/lib/standards/claims.ts\`, \`src/lib/standards/shared/common-core-ela.ts\`
-- \`plans/future-courses/2026-08-25-constitutions.md\`
-- \`plans/future-courses/2026-07-24-types-of-government-path.md\`
-- \`plans/future-courses/2026-07-09-civics-more-proposal.md\`
-- \`plans/future-courses/languages/2026-08-25-02-sign-language-feasibility.md\`
+- \`plans/future-courses/civics/2026-08-25-constitutions.md\`
+- \`plans/future-courses/completed/civics/2026-07-24-types-of-government-path.md\`
+- \`plans/future-courses/completed/civics/2026-07-09-civics-more-proposal.md\`
+- \`plans/future-courses/languages/languages/2026-08-25-02-sign-language-feasibility.md\`
 
 ---
 
@@ -13741,7 +13741,7 @@ courses are gitignored. **Prefer the database for the same reason \`gen:citation
 **Research only. No content, no code, no branch.** Written 2026-08-27 in the main checkout
 (\`plans/\` is gitignored; a worktree would have been auto-deleted with this file inside it).
 
-Companion: \`plans/future-courses/elementary-mba/2026-08-27-00-emba-and-the-personal-pair.md\`
+Companion: \`plans/future-courses/money-and-property/elementary-mba/2026-08-27-00-emba-and-the-personal-pair.md\`
 (architecture, tenant state, cross-link mechanism). Read that first; this file does not repeat it.
 
 BAM's brief, verbatim:
@@ -13889,7 +13889,7 @@ replaced it, and who bears the risk." That procedure is directly reusable on pay
 rent-to-own, and refund-anticipation loans.
 
 \`what-they-built\` supplies the American case; the construction research
-(\`plans/future-courses/construction/2026-08-26-01\`) supplies surety bonding as a self-reinforcing
+(\`plans/future-courses/science-and-math/construction/2026-08-26-01\`) supplies surety bonding as a self-reinforcing
 capital gate.
 
 **So the strongest personal-finance course this catalog can build is not "budgeting". It is
@@ -14595,7 +14595,7 @@ Per CLAUDE.md and STYLE_GUIDE, and worth stating because this track trips more g
 ## 12 · Sources consulted (repo files, all read this session)
 
 \`CLAUDE.md\` · \`STYLE_GUIDE.md\` ·
-\`plans/future-courses/elementary-mba/2026-08-27-00-emba-and-the-personal-pair.md\` ·
+\`plans/future-courses/money-and-property/elementary-mba/2026-08-27-00-emba-and-the-personal-pair.md\` ·
 \`src/lib/standards/{types,index,claims}.ts\` and \`data/{ar,az,ga,id,il,la,ma,nd,ne,nh,nm,nv,ny,oh,ok,pa,tx,wv,wy}.ts\` ·
 \`src/lib/{cert-disclaimer,ecosystem,citations,research-checks,series-code}.ts\` ·
 \`scripts/{seed-courses,seed-tenants,seed-speedway,check-series-codes,check-standards-coverage,lib/seed-registry}.ts\` ·
@@ -14858,7 +14858,7 @@ Cardona/Vilsack letters of 18 September 2023).
 
 **Relevant to us:** the course contains **zero** athletics content. \`grep -i "athlet|sport|
 basebal"\` over the source brief
-(\`plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md\`)
+(\`plans/future-courses/civics/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md\`)
 returns one hit, and it is the word "sports biography" in a list of what the catalog lacks.
 
 ### 1.3 Other cross-links named in the ask
@@ -15764,6 +15764,387 @@ visit literary-devices.com for a list
     body: `research the connection between the Black pulman opperators, Great Migration, Chicago Defender paper, unions, and Labor Day`,
     provenance: "plans/future-courses/culture-and-history/2026-09-07-connection-unions-great-migration.md",
   },
+  {
+    key: "00-fibre-sources-and-what-can-be-taught",
+    title: "Fibre sources, rights, and what can actually be taught from them",
+    summary: "Written: 2026-10-05 · Status: INVENTORY, supporting the briefs for `making-string`, `crochet`,",
+    body: `# Fibre sources, rights, and what can actually be taught from them
+
+**Written:** 2026-10-05 · **Status:** INVENTORY, supporting the briefs for \`making-string\`, \`crochet\`,
+\`braiding-hair-and-yarn\` and (its fleece-to-yarn half) \`raising-animals-for-yarn\`. Nothing built.
+**Seeds:** BAM, 2026-10-05: "a crochet and string making to compliment the knot tying course";
+"add a braiding class for hair and yarn, and growing animals for yarn".
+**Rules this file answers to:** the course-brief rule and the source-hosting rule in \`CLAUDE.md\`;
+gates A4, A7 and D5a and Part H of \`docs/course-method/course-creation-rubric.md\`.
+**Evidence markings:** VERIFIED (fetched and read on 2026-10-05; "re-fetched" means the orchestrator
+read it again after the research pass), REPORTED (search results or secondary summaries only),
+UNVERIFIED (not confirmed). A lesson may assert only VERIFIED claims.
+
+---
+
+## 0 · The problem this file exists to solve, stated once
+
+BAM decided on 2026-10-05 that these are **public catalog courses**. Course files under \`scripts/data/\`
+are tracked in git, so a public course is written from sources a learner can open and the catalog may
+cite, host or link according to tier. BAM owns no book that teaches crochet, spinning, hair braiding or
+fibre animals, so nothing is lost by that rule here; what he does own (section 1) tells us what the
+trade treats as core and sits beside the courses as his own reading.
+
+**The short answer.** Crochet and string have a deep public-domain backbone (Dillmont, Riego, Beeton,
+Verrill, two Army manuals in public release, three open-access archaeology papers). Braiding has four
+Tier A items and otherwise lives in Tier B links and in practitioners: hair technique has no
+public-domain manual, so those lessons wait for BAM's own demonstrations or an interviewed braider
+(Tier 1-P). Fibre animals are federal-heavy (USDA standards, statistics, bulletins).
+
+---
+
+## 1 · BAM's books: bibliographic facts and the lane each one takes
+
+Nothing from a copyrighted book is extracted, paraphrased or sequenced into a course. A topic list is
+not expression, so these may tell us what the field treats as core.
+
+| Book (where it is) | Rights as printed | Relevant to | What it holds (locators) | Lane |
+|---|---|---|---|---|
+| Verrill, *Knots, Splices and Rope Work*, 2nd rev. ed., preface dated January 1917 (\`content/survival-skills/\`, a print of Gutenberg 13510) | Project Gutenberg markers; "Public domain in the USA" on the Gutenberg page | string, braiding | Ch. I "Cordage" (PDF 7-8): fibres to yarn to strand to rope to cable, each stage twisted opposite to the last; materials. Grommet laid from a single strand (Figs 84-86); plaits and four-strand braid (Figs 70-74, 141, 143); animal halters (Figs 149-154). Its load rule (circumference squared over 5, in tons) is obsolete and must not be taught as safe | **Tier A**, already knots' backbone; cite the Gutenberg URL |
+| Pawson, *Knots: The Complete Visual Guide*, DK, first American ed. 2012 (\`content/survival-skills/\`) | © 2012 Dorling Kindersley, all rights reserved | string, braiding | "Rope Construction" pp. 10-11, "Rope Materials" pp. 12-13; "Braids and Sennits" pp. 290-331 (printed page = PDF page minus 2): three- to seven-strand flat braids, chain, round and square sennits, ocean and oval mats; netting pp. 283-285; lanyard knot p. 152 | Tier C: topic map for cord braiding, "read alongside" |
+| Smith, *No Grid Survival Book*, 2025, independent (\`content/survival-skills/\`) | © 2025, all rights reserved | string | Project 51 "Creating Cordage from Natural Fibers", PDF 132-133 (yucca, dogbane, nettle, cedar or basswood inner bark; twist one way, ply the other) | Tier C, already survival's topic map |
+| Johnson, *Afro Sheen*, Little, Brown, Feb 2025 (\`content/\`) | © 2025 George E. Johnson | braiding (hair business) | Poro and Walker pp. 103-104; Afro Sheen launch pp. 187-189; Soul Train pp. 189-198; the FTC lye action ch. 14. Braids in three passing phrases; no technique, nothing on locs | Tier C, already the Soul Train course's "his account" |
+| Ito (ed.), *Affinity Online*, NYU Press 2019 (Drive \`Education Leadership/\`) | **CC BY-NC** | crochet | Ravelry knitting and crochet learning community, p. 1 and pp. 146-152 | Tier B: a sold course cannot host NC material; link |
+| Merchant, *Blood in the Machine*, 2023 (Drive \`ai-research/\`) | © 2023 | string, fibre animals | Textile machinery glossary (PDF 19-22), the Luddites | Tier C, history colour |
+| Hancock, *World Agriculture Before and After 1492*, Springer 2022 (Drive \`history/\`) | Springer licence | fibre animals | Llamas and alpacas pp. 37-38; Spanish livestock p. 73; cotton p. 130 | Tier C |
+| Rask and Monrad, *Two Views from Christiansborg Castle*, 2010 (Drive \`history/\`) | © 2010 Sub-Saharan Publishers | braiding, string | Gold Coast nets of tree fibre, plaited mats, plant dyes, hair styles (period racist language) | Tier C |
+
+**Not owned at all:** any crochet, knitting, spinning, weaving or basketry manual; any cosmetology,
+natural-hair or locs text; any sheep, alpaca, angora, goat, yak, silk, shearing, fleece or dyeing text.
+The Drive folder \`art/Lloyd Khan\` is empty.
+
+---
+
+## 2 · Public sources that can carry the teaching
+
+### 2.1 String and cordage (\`making-string\`)
+
+| Source | What it covers | Rights, tier | Status |
+|---|---|---|---|
+| **Verrill**, Gutenberg 13510, \`https://gutenberg.org/cache/epub/13510/pg13510-images.html\` | Ch. I cordage: materials (hemp, jute, cotton; manila, sisal, grass, silk), construction (yarn, strand, rope, cable, opposite twist at each stage, three-strand right-hand lay, cable left-hand, bolt-rope around a core) | PD, **Tier A** | VERIFIED, re-fetched (title, author, ebook number, "Public domain in the USA") |
+| **US Army FM 5-125, *Rigging Techniques, Procedures, and Applications***, 3 Oct 1995 with Change 1 (archive.org item \`fm-5-125-rigging-techniques-procedures-and-applications-1995\`) | "DISTRIBUTION RESTRICTION: Approved for public release; distribution is unlimited." Ch. 1 Section I Fiber Rope: characteristics p. 1-3, care 1-4, handling 1-5, inspection 1-6; manila, sisal, hemp, coir, cotton, jute; a manila and sisal properties table. Ch. 2 knots, hitches, lashings; splices Figs 2-40 to 2-43 | Federal, **Tier A** | VERIFIED (research pass) |
+| **US Army ATP 3-50.21, *Survival***, Sept 2018 (archive.org item \`survival-atp-3-50-21\`) | "Approved for public release; distribution is unlimited." Cordage and Lashing p. 8-9; Fig. 8-8 "Making cordage"; Appendix A ropes, knots, lashings | Federal, **Tier A** | VERIFIED (research pass) |
+| **FM 3-05.70, *Survival*, 2002** (\`https://biotech.law.lsu.edu/blaw/DOD/fm3-05-70.pdf\`) | Cordage and lashing p. 12-10 | "Distribution authorized to U.S. Government agencies and their contractors only", with a destruction notice. **Not used, not hosted** | VERIFIED (research pass). Supersedes FM 21-76, whose public-release statement was not found: UNVERIFIED |
+| **USFS "Fabulous Fibers"**, \`https://www.fs.usda.gov/wildflowers/ethnobotany/fibers.shtml\` | Fibre plants: Indian hemp (dogbane), stinging nettle, yuccas, basswood, cattail, flax, cedars. Milkweed and the "five stalks per foot" figure are NOT on this page (search results attribute them to NRCS plant guides: REPORTED) | Federal text, **Tier A**; some photos are third-party | VERIFIED (research pass) |
+| **Dewey, "Hemp", *Yearbook of the USDA 1913***, \`https://archive.org/details/yoa1913\` | Retting, breaking, hackling; telling jute from hemp; pp. 283-346 (catalogue record) | NAL: "not in copyright", **Tier A** | VERIFIED (research pass) |
+| **Hardy et al. 2020**, "Direct evidence of Neanderthal fibre technology and its cognitive and behavioral implications", *Scientific Reports* 10:4889, DOI 10.1038/s41598-020-61839-w | A three-ply cord of conifer inner bark, Abri du Maras level 4.2, about 41 to 52 ka | **CC BY 4.0**, **Tier A** | VERIFIED, re-fetched via the Europe PMC API (title, journal, year, DOI, PMC7145842, "cc by") |
+| **Conard and Rots 2024**, "Rope making in the Aurignacian of Central Europe more than 35,000 years ago", *Science Advances* 10(5) eadh5217 | The Hohle Fels ivory rope-making tool | CC BY 4.0, **Tier A** | VERIFIED (research pass) |
+| **Kvavadze et al. 2009**, "30,000-year-old wild flax fibers", *Science* 325:1359 | Dzudzuana Cave fibres | Subscription, **Tier C**; author manuscript on Harvard DASH (\`https://dash.harvard.edu/server/api/core/bitstreams/7312037c-4f7b-6bd4-e053-0100007fdf3b/content\`), **Tier B** | VERIFIED (research pass). **Contested** by Bergfjord et al. 2010, *Science* 328:1634 ("not sufficient to identify the fibers as flax"): REPORTED. Teach as disputed |
+| Nadel et al. 1994, "19,000-year-old twisted fibers from Ohalo II", *Current Anthropology* 35(4) | Early cordage | | REPORTED |
+| **HAER MA-90-2, Charlestown Navy Yard Ropewalk**, \`https://www.loc.gov/item/ma1756/\` | 22 photographs and data pages | "No known restrictions on images made by the U.S. Government" | VERIFIED (research pass, JSON endpoint) |
+| **NPS, "Charlestown Navy Yard Ropewalk"**, \`https://www.nps.gov/articles/000/charlestown-navy-yard-ropewalk.htm\` | Opened 1838, 1,325 ft, hemp, Treadwell's machinery; closed 1970 | Federal text; two photos are Boston Public Library, not Tier A | VERIFIED (research pass) |
+| Mason, *Aboriginal American Basketry*, Report of the US National Museum for 1902 (GPO 1904), pp. 171-548, \`https://archive.org/details/aboriginalbasket00masorich\` | Basketry as a textile art; Coville, "Plants used in basketry", pp. 199-214 | PD, **Tier A** | VERIFIED (research pass) |
+
+### 2.2 Crochet (\`crochet\`)
+
+| Source | What it covers | Rights, tier | Status |
+|---|---|---|---|
+| **Dillmont, *Encyclopedia of Needlework***, English ed. (no year on the title page), Gutenberg 20776 | Knitting p. 171; **Crochet p. 221** (Tunisian 241, hairpin 243); Tatting 325; Macrame 343; Netting 395; Irish Lace 439 (tape-and-needle lace, not Irish crochet); "Knotted cord" p. 518, figs 831-835; Tambour work p. 521 ("merely a form of crochet"). No braiding chapter | PD, **Tier A** | VERIFIED, re-fetched (title, author 1846-1890, ebook 20776, "Public domain in the USA") |
+| **Riego de la Branchardiere**, *Knitting, Crochet, and Netting, with Twelve Illustrations* (1846), Gutenberg 36669; *The Crochet Book, Fourth Series* (1848), 61222; *Golden Stars in Tatting and Crochet* (1861), 28457 | Early English crochet instruction; 1846 calls slip stitch "Shepherd or Single Crochet" | PD, **Tier A** | VERIFIED (research pass) |
+| ***Beeton's Book of Needlework*** (1870), Gutenberg 15147 | Crochet instructions and patterns | PD, **Tier A** | VERIFIED (research pass) |
+| ***Handbook of Wool Knitting and Crochet*** (1918), Gutenberg 26113 | Patterns | PD, **Tier A** | VERIFIED (research pass) |
+| ***The Priscilla Crochet Book*** (Boston, 1908), \`https://archive.org/details/priscillacrochet00hett\` | Patterns | LOC: "unaware of any copyright restrictions", **Tier A** | VERIFIED (research pass) |
+| **Gaugain, *The Lady's Assistant… in Knitting, Netting, and Crochet Work*** (1840), \`https://archive.org/details/krl00394037\` | The first English crochet instructions (per Karp) | The WORK is PD; this Southampton scan claims CC BY-NC-ND 3.0, so cite the work and link the scan | VERIFIED (research pass) |
+| **Antique Pattern Library**, \`https://www.antiquepatternlibrary.org/\` | Scans of PD needlework books | Scans under CC BY-NC-SA 2.5 by the library's claim; originals PD | VERIFIED (research pass). Link, do not host their scans |
+| **Karp, "Defining Crochet"**, *Textile History* 2018, DOI 10.1080/00404969.2018.1491689; postprint \`https://loopholes.blog/wp-content/publications/Defining-Crochet-Postprint.pdf\` | The documented history: three Dutch instructions in *Penelope*, 1823, using a tambour needle; Gaugain 1840 as the first English instructions; Lambert 1844 on "peasants in Scotland"; tambour embroidery in Europe in the early 1760s; a 1653 patent for a hook making "chains in the air" in passementerie; Paludan (Danish 1986, English 1995) as the one rigorous monograph | Author's postprint under the journal's restrictions, **Tier B** | VERIFIED (research pass) |
+| **KB (Dutch national library), *Penelope***, \`https://collecties.kb.nl/en/collections/magazines/penelope-maandwerk-aan-het-vrouwelijk-geslacht-toegewijd\` | Published 1821-35; the crochet instructions are in part II, 1822/1823 | **Tier B** | VERIFIED (research pass). So **1823**, not 1824 |
+| **Grant, *Memoirs of a Highland Lady*** (London: John Murray, 1898), \`https://archive.org/details/memoirsofhighlan00graniala\` | On the page headed "182 INVERDRUIE 1812-13": "a stitch she called shepherd's knitting; it was done with a little hook which she manufactured for herself out of the tooth of an old tortoise-shell comb" | PD, **Tier A** | VERIFIED (research pass). A memoir published 1898, so "recorded in 1812" overstates it |
+| **Craft Yarn Council, Standards and Guidelines**, \`https://www.craftyarncouncil.com/standards\` | Yarn weights, hook sizes, abbreviations, skill levels; symbols free to use with the credit line "Source: Craft Yarn Council www.YarnStandards.com" and an e-mail notice | **Tier B** | VERIFIED (research pass) |
+| **Henderson and Taimina, "Crocheting the Hyperbolic Plane"**, *Mathematical Intelligencer* 23(2) 2001; web version \`https://pi.math.cornell.edu/~dtaimina/crochet/hplane.htm\` | Increase in a constant N to N+1 ratio | Journal Tier C; web page no statement, **Tier B** | VERIFIED (research pass) |
+| Crochet Coral Reef, \`https://crochetcoralreef.org/\` | Project pages | Copyright IFF; permission required even for curricula. Link only | VERIFIED (research pass) |
+| Riley, Corkhill and Morris 2013, *Br J Occupational Therapy* 76(2); Burns and Van Der Meer 2021, "Happy Hookers", *Perspectives in Public Health* 141(3) | Wellbeing surveys, self-selected online samples (about 3,500 and 8,391) | Tier C | REPORTED and metadata VERIFIED. **Never an efficacy claim**; "practitioners report" at most |
+
+**Folklore to name as folklore in the history lesson:** ancient Arabian, Chinese or South American
+origins; convent "nun's work"; a Swedish 1819 pattern; Riego inventing Irish crochet (a Lacis Museum
+page says "generally accepted", with no source); "1812" as a recorded date.
+
+### 2.3 Braiding, hair and yarn (\`braiding-hair-and-yarn\`)
+
+| Source | What it covers | Rights, tier | Status |
+|---|---|---|---|
+| **van Andel, Maat and Pinas 2023**, "Maroon Women in Suriname and French Guiana: Rice, Slavery, Memory", *Slavery & Abolition*, DOI 10.1080/0144039X.2023.2228771, \`https://edepot.wur.nl/636696\` | Rice varieties named after women who "according to the oral tradition, were hiding rice in their hair"; the legend "was first documented in French Guiana and later also in Brazil"; its validity "was doubted by Eltis et al."; Maroon rice fields are archival (1758) | **CC BY 4.0**, **Tier A** | VERIFIED (research pass) |
+| Carney 2004, "'With Grains in Her Hair'", *Slavery & Abolition* 25(1) | The rice-in-hair tradition | | REPORTED |
+| **Cornrow "escape maps"** (Benkos Bioho, San Basilio de Palenque) | Journalism and Colombian theses recording Palenquero oral tradition | | **No colonial-era document found.** Teach as oral tradition, named as such |
+| ***EEOC v. Catastrophe Management Solutions***, No. 14-13482 (11th Cir., 15 Sept 2016), \`https://media.ca11.uscourts.gov/opinions/pub/files/201413482.pdf\` | Title VII protects immutable traits; the complaint did not assert "that dreadlocks, though culturally associated with race, are an immutable characteristic"; affirmed | Court opinion, PD, **Tier A** | VERIFIED (research pass). The revised Dec 2016 opinion (852 F.3d 1018) and the 2017 en banc denial: UNVERIFIED |
+| **CROWN Act**, H.R. 1638 and S. 751 (119th Congress, introduced 26 Feb 2025, in committee); state counts of 27 plus 2 executive orders versus 30 conflict between sources | | Statute text is Tier A once fetched | REPORTED (congress.gov blocked). Fetch before any lesson asserts a count |
+| Louisiana tignon regulation, 1786 (Miro's *bando de buen gobierno*) | | | REPORTED only; no primary text located; secondary sources (Johnson 2020 p. 198; Winters 2016 p. 77) |
+| Natural-hair braider licensing exemptions (Institute for Justice figures; Indiana) | | | REPORTED (ij.org blocked) |
+| **American Academy of Dermatology, "Hairstyles that pull can lead to hair loss"** (updated 6 Nov 2024), \`https://www.aad.org/public/diseases/hair-loss/causes/hairstyles\` | Wear braids no longer than 6 to 8 weeks; loosen braids at the hairline | "Reproduction or republication strictly prohibited", **Tier B** | VERIFIED (research pass) |
+| Haskin and Aguh 2016, *JAAD* 75(3):606-611 (review); Khumalo et al. 2008, *JAAD* 59(3):432-438 (1,178 participants, cross-sectional); Khumalo 2012, "fringe sign", *Dermatology Online Journal* 18(9) | Traction alopecia | Tier C, Tier C, Tier B | Metadata VERIFIED (research pass) |
+| **Consumer Reports synthetic braiding hair test sheet**, Feb 2025, \`https://article.images.consumerreports.org/image/upload/v1740508146/prod/content/dam/CRO-Images-2025/Misc/Consumer-Reports-Test-Results-Synthetic-Braiding-Hair.pdf\` | 10 products, 2 samples each; lead detected in 9 of 10 (0.02 to 0.21 mg/kg as read), benzene in 3 (15 to 18 ug/kg), acetone up to 5,900,000 ug/kg. A content test, not an exposure study; not peer-reviewed; brands dispute the method | **Tier B** | VERIFIED (research pass) for the sheet; the articles are paywalled; the column reading is inferred |
+| **Verrill** ch. V (single plait, twist braid, leather braiding, Figs 70-74) and ch. VII (four-strand and crown braids, Figs 141-143); **Dillmont** "Knotted cord" p. 518 | Cord braid structures | PD, **Tier A** | VERIFIED |
+| **fingerloop.org bibliography** (Greg Lindahl), \`https://fingerloop.org/bibliography.html\` | Finger-loop braiding; the manuscripts: British Library Harley MS 2320 (c. 1450), V&A National Art Library 86FF3 and 86FF4 (c. 1630); Stanley 1974 edition | **Tier B** | VERIFIED (research pass) |
+| Birman and Brendle, "Braids: A Survey", arXiv math/0409205 | Braid groups (graduate level) | arXiv licence, **Tier B** | VERIFIED (research pass) |
+| Indiana Historical Society, Madam C. J. Walker items (e.g. \`https://crdl.usg.edu/record/xhs_mcjw_49\`) | Walker archive | "In Copyright", permission required | VERIFIED (research pass). Link only |
+| Kumihimo, lucet, Andean sling braiding | | | Nothing reliable verified |
+
+### 2.4 Fibre animals, the fleece-to-yarn half (\`raising-animals-for-yarn\`; husbandry sources are in the farm file)
+
+| Source | What it covers | Rights, tier | Status |
+|---|---|---|---|
+| **USDA AMS, *United States Standards for Grades of Wool*** (effective 21 Dec 1968), \`https://www.ams.usda.gov/sites/default/files/media/Wool_Standard%5B1%5D.pdf\` | Grade by average fibre diameter: finer than 80's is 17.69 um or less; 80's is 17.70 to 19.14 um; and so on | Federal, **Tier A**. **No longer in the CFR** (the current 7 CFR Part 31 covers only buying grade samples): cite as an AMS standard | VERIFIED (research pass) |
+| **USDA, *Home Dyeing with Natural Dyes*** (Furry and Viemont, Misc. Pub. 230, 1935), archive.org item \`homedyeingwithna230furr\` | Natural dyes on wool and cotton | NAL "not in copyright", **Tier A** | VERIFIED (research pass, record) |
+| Adrosko, *Natural Dyes in the United States*, US National Museum Bulletin 281, 1968 | | No statement found, Tier B until checked | REPORTED |
+| ***The Angora Goat*** (Williams, USDA 1921, supersedes Farmers' Bulletin 573), \`https://archive.org/details/CAT87202914\` | Mohair production | NAL "not in copyright", **Tier A** | VERIFIED (research pass) |
+| Skirting, scouring, carding and combing, spinning, plying | | | Nothing verified yet: extension sources to be fetched for the brief |
+| Yak fibre; **Woolly Yak Ranch & Winery, Arcadia, Indiana** (BAM, 2026-10-05) | A nearby yak farm as capture site or practitioner source | | UNVERIFIED (BAM's words; fetch the ranch and a yak-fibre source before the brief asserts anything) |
+
+---
+
+## 3 · What the public sources cannot carry, said plainly
+
+1. **Motor skill.** A chain stitch, a two-ply twist or a cornrow is learned by watching and doing.
+   The public-domain plates (Dillmont's engravings are Tier A figures) carry a lot; BAM's own
+   demonstrations and practitioner footage carry the rest, later. A course built now is honest about
+   that and sends the learner to practise.
+2. **Hair-braiding technique.** No public-domain manual exists. Those lessons are built from a
+   practitioner (interview first, Tier 1-P) or not at all; the law, health, history and structure
+   lessons do not depend on them.
+3. **Safe working loads for rope.** Verrill's rule is obsolete. FM 5-125's tables are the only Tier A
+   numbers found, and a course states that a manufacturer's rating governs.
+4. **Efficacy claims for crochet's wellbeing effects.** Two self-selected surveys; nothing controlled.
+5. **Cornrow maps and rice in hair.** Oral tradition, documented as such by the one open-access paper.
+
+---
+
+## 4 · The proposed series and where each course stands
+
+See \`plans/90-fibre-and-farm-courses-and-folders-by-category.md\` for the scored map. Summary:
+"The Fibre Line" (code \`FIBRE\`), Trade Skills: 00 \`making-string\` (B 3/1/3/3/3/2 = 29, form C2a),
+01 \`knot-tying\` (exists), 02 \`crochet\` (35, C6), 03 \`braiding-hair-and-yarn\` (32, C6 on condition
+the technique sources are fetched; braider reviewer named), 04 \`raising-animals-for-yarn\` (35, C6,
+primary category Farm & Garden). Build order: string and crochet together after \`manure-and-compost\`,
+then braiding, then fibre animals.
+
+---
+
+## 5 · URLs that failed or were blocked on 2026-10-05 (nothing is asserted from them)
+
+nature.com and science.org (journal pages); si.edu and nmaahc.si.edu; loc.gov HTML pages (the JSON
+endpoint works); congress.gov; ij.org; PMC behind a captcha (Europe PMC's REST API works);
+Biodiversity Heritage Library; Cardiff ORCA; the Met's open-access policy page (rate limited);
+irp.fas.org. The Smithsonian and Met open-access licences are REPORTED only (GitHub READMEs confirm
+CC0 for datasets; no object page was fetched).
+
+---
+
+## 6 · Questions for BAM
+
+1. Who is the practising braider who reviews the braiding course (gate E3), and would they be
+   interviewed as its technique source?
+2. Does \`knot-tying\` join "The Fibre Line" as slot 01 (its series fields can be refreshed on re-seed)?
+3. Indiana anchoring: the braider-licensing lesson can be Indiana-specific once Indiana's rule is
+   fetched, or a "find your state's rule" exercise.
+4. Is the Woolly Yak Ranch a capture site, an interview, or both?`,
+    provenance: "plans/future-courses/trade-skills/2026-10-05-00-fibre-sources-and-what-can-be-taught.md",
+  },
+  {
+    key: "braiding-hair-and-yarn",
+    title: "BAM's note, 2026-10-05: braiding, for hair and yarn",
+    summary: "> \"add a braiding class for hair and yarn\"",
+    body: `# BAM's note, 2026-10-05: braiding, for hair and yarn
+
+> "add a braiding class for hair and yarn"
+
+## Decisions recorded the same day
+
+- **Scope (BAM's choice, "all three"):** braiding hair, yarn worn in the hair (yarn braids and wraps),
+  and braiding yarn or cord into things (plaits, sennits, kumihimo, bracelets).
+- **Public catalog**, documents-first. Hair-braiding technique has no public-domain manual, so those
+  lessons wait for BAM's own demonstrations or a practising braider interviewed as the source
+  (Tier 1-P), and the course names a practising braider as its reviewer before it ships (gate E3).
+- **Category:** Trade Skills, slot 03 of "The Fibre Line". Research tier 2: scalp health (traction
+  alopecia), product chemistry (the 2025 Consumer Reports test) and law (the CROWN Act, licensing).
+- **History is taught as the record shows it.** The Maroon rice-in-hair tradition is documented as
+  oral tradition (van Andel, Maat and Pinas 2023, CC BY 4.0); the cornrow "escape maps" story has no
+  colonial-era document behind it and is taught as oral tradition, named as such.
+
+## Where the research is
+
+- \`2026-10-05-00-fibre-sources-and-what-can-be-taught.md\` (this folder), family C.
+- Brief: \`2026-10-05-braiding-hair-and-yarn-brief.md\`.
+
+## Coverage, checked 2026-10-05
+
+Nothing teaches braiding technique, the CROWN Act, tignon laws or kumihimo. The hair-care BUSINESS
+history exists and is linked, not repeated: \`who-gets-named-course.ts:619\` (Malone, Walker, Poro),
+\`indiana-avenue-course.ts:431\` (the Walker Building), \`soul-train-the-business-course.ts:2710\`
+(Johnson Products, Afro Sheen; private until vetted). Owned books: the DK knots guide's "Braids and
+Sennits" chapter (pp. 290-331) is the topic map for cord braiding; George E. Johnson's *Afro Sheen*
+memoir mentions braids three times in passing and has no technique.`,
+    provenance: "plans/future-courses/trade-skills/2026-10-05-braiding-hair-and-yarn.md",
+  },
+  {
+    key: "crochet-and-string-making",
+    title: "BAM's note, 2026-10-05: crochet and string making",
+    summary: "> \"I want to create a crochet and string making to compliment the knot tying course.\"",
+    body: `# BAM's note, 2026-10-05: crochet and string making
+
+> "I want to create a crochet and string making to compliment the knot tying course."
+
+## Decisions recorded the same day
+
+- **Public catalog** courses, built documents-first from public-domain, federal and openly licensed
+  sources. BAM can demonstrate some of this himself and knows practitioners; those come in later as
+  media and as interview sources (Tier 1-P). His purchased ebooks are topic maps and "read alongside"
+  entries only (rubric gate A4).
+- **Category:** Trade Skills, beside \`knot-tying\`. Proposed series "The Fibre Line" (code \`FIBRE\`):
+  00 \`making-string\`, 01 \`knot-tying\` (exists), 02 \`crochet\`, 03 \`braiding-hair-and-yarn\`,
+  04 \`raising-animals-for-yarn\` (shared with Farm & Garden).
+- **Two courses, not one.** The rubric's cluster check splits them: string is the hub that knots,
+  crochet, braiding and fibre animals all draw on, and the only catalog overlap is knots lesson
+  "1 · Rope fibers and materials" (\`scripts/data/knots-course.ts:147\`), which defines rope but does
+  not teach making it (rubric row C2a).
+
+## Where the research is
+
+- Sources, rights tiers and what the public record can carry:
+  \`2026-10-05-00-fibre-sources-and-what-can-be-taught.md\` (this folder).
+- Briefs: \`2026-10-05-making-string-brief.md\`, \`2026-10-05-crochet-brief.md\`.
+- The whole plan, decisions and session record: \`plans/90-fibre-and-farm-courses-and-folders-by-category.md\`.
+
+## Coverage, checked 2026-10-05
+
+Nothing in \`scripts/data/\` teaches crochet, knitting, spinning, making cordage, nets or macrame. Owned
+books: Verrill (public domain, already knots' backbone), the DK knots guide (rope construction
+pp. 10-13, topic map only), one page of cordage in the No Grid Survival book (topic map only). No
+crochet book is owned; Dillmont, Riego, Beeton and the Priscilla book are public domain online.`,
+    provenance: "plans/future-courses/trade-skills/2026-10-05-crochet-and-string-making.md",
+  },
+  {
+    key: "manure-compost-garden-trees-protein-and-pets",
+    title: "BAM's note, 2026-10-05: manure, compost, the garden, trees, protein and the animals that help",
+    summary: "> \"I want to create a course on manures of different animals and composting and using both in",
+    body: `# BAM's note, 2026-10-05: manure, compost, the garden, trees, protein and the animals that help
+
+> "I want to create a course on manures of different animals and composting and using both in
+> gardens and farms to grow food, growing trees and growing protein to compliment the garden to
+> create useful manure and pets (dogs, cats, birds, etc) to help with the garden, composting, manure,
+> and growing the protein (herding dogs, etc)."
+
+## Decisions recorded the same day
+
+- **Public catalog**, documents-first; BAM can demonstrate some of it and knows practitioners (later
+  media and Tier 1-P sources).
+- **New category "Farm & Garden"** (BAM chose the name). Proposed series "The Loop" (code \`LOOP\`):
+  00 \`manure-and-compost\`, 01 \`growing-trees\`, 02 \`growing-protein\` (with a section on the animals
+  that help), 03 \`raising-animals-for-yarn\` (shared with Trade Skills).
+- **Three courses, not one.** One eight-section course was rejected on depth per topic and on the
+  learner who wants composting without husbandry. Working animals start as a SECTION of the protein
+  course because the evidence for barn cats and poultry pest control is thin or negative.
+- **Research tier 2** throughout (food safety, pathogens, animal welfare, law).
+- **The pet-waste answer is a safety lesson, not a tip:** the 2005 NRCS/Fairbanks study ("should not
+  be used on crops grown for human consumption"), CDC toxoplasmosis and toxocariasis pages, and the
+  Iowa State guide ("do not use cat, dog, or pig manures") carry it.
+
+## Where the research is
+
+- \`2026-10-05-00-farm-sources-and-what-can-be-taught.md\` (this folder).
+- Brief for the first course, carrying the cluster check for the series:
+  \`2026-10-05-manure-and-compost-brief.md\`. Trees and protein get briefs when their turn comes.
+
+## Coverage, checked 2026-10-05
+
+Nothing teaches manure, composting, using compost, orchards, agroforestry, husbandry, herding or
+guardian dogs. Related lessons to link, not repeat: nitrogen runoff and hypoxia
+(\`river-the-dead-zone-course.ts:20,56,184\`; \`the-river-and-the-watershed-course.ts:1395,1466\`),
+the extension service (\`the-match-course.ts:177\`), Carver's soil work
+(\`who-gets-the-credit-course.ts:1915\`), rice agronomy and open-range cattle with "herders and dogs"
+(\`training-the-colonizer-course.ts:329,711\`). Owned books: Mollison's *Designers' Manual* (topic map
+and read-alongside for the whole series), the permaculture design-course pamphlets (printed
+public-domain dedication, standing to be confirmed), *Perma-culture Two*, the Reese Black-food books.`,
+    provenance: "plans/future-courses/farm-and-garden/2026-10-05-manure-compost-garden-trees-protein-and-pets.md",
+  },
+  {
+    key: "production-crafts-rigging-sound-light",
+    title: "BAM's notes, 2026-10-05: three production-crafts classes (rigging, sound, light)",
+    summary: "Recorded verbatim, in the order sent, while the fibre and farm plan was being paused:",
+    body: `# BAM's notes, 2026-10-05: three production-crafts classes (rigging, sound, light)
+
+Recorded verbatim, in the order sent, while the fibre and farm plan was being paused:
+
+> "add rigging course for stagehand and utility in sports broadcasting"
+
+> "add field recording, audio engineering for getting nature sounds and recording in a theater and
+> on tv/movie set, using items to create sounds for audio track or"
+
+> "using light/lighting on set of theater, tv, movie set natural and artificial and hacks without
+> having to buy more light tools"
+
+## Status: seeds only. Not coverage-searched in full, not briefed.
+
+Filed under Careers & Media beside \`broadcasting-break-in\`, \`voice-acting\` and \`acting\`; rigging is
+also a trade skill and would cross-list there. The three read as one cluster (the crew behind a
+stage, a set or a broadcast) and should be briefed together so the rubric's cluster check can decide
+one series or three courses.
+
+## What is already known from today's catalog search (partial)
+
+- Rigging: knots lesson "26 · Broadcast & stage rigging basics (safety-flagged)"
+  (\`scripts/data/knots-course.ts:1970\`) and broadcasting lesson "3 · The utility technician: your
+  fastest way in (and why knots matter)" (\`broadcasting-course.ts:121\`) are the neighbours; a rigging
+  course is the deeper follow-on and a safety subject (research tier 2). Tier A candidates to fetch:
+  OSHA 29 CFR 1910 subpart D and 29 CFR 1926 (already the backbone of \`construction-safety\`), US Army
+  FM 5-125 *Rigging* ch. 1-2 (fetched 2026-10-05, approved for public release). Entertainment rigging
+  standards (ANSI E1.x, ESTA) are copyrighted: cite and link only.
+- Sound: the voice-acting course's microphone and room lessons and broadcasting's audio
+  fundamentals are the neighbours. Tier A candidates to fetch: the National Park Service Natural
+  Sounds and Night Skies programme, the Library of Congress American Folklife Center's fieldwork
+  guide. Foley history needs a sourced account before any claim.
+- Light: broadcasting's lighting basics is the neighbour. Pre-1931 stage-lighting textbooks would be
+  public domain; which exist and what they cover is UNVERIFIED. The "no new gear" angle fits a
+  documents-first build.
+
+## Next step
+
+Coverage search in \`scripts/data/\` for each (terms: rig, rigging, hoist, truss, batten, fly system,
+counterweight, sling, shackle; microphone, field recording, foley, sound effect, boom, mixer, room
+tone; lighting, light, key light, reflector, diffusion, gel, three-point), then one brief per class
+with the rubric line, in this folder.`,
+    provenance: "plans/future-courses/careers-and-media/2026-10-05-production-crafts-rigging-sound-light.md",
+  },
+  {
+    key: "raising-animals-for-yarn",
+    title: "BAM's note, 2026-10-05: raising animals for yarn",
+    summary: "> \"growing animals for yarn\"",
+    body: `# BAM's note, 2026-10-05: raising animals for yarn
+
+> "growing animals for yarn"
+
+Later the same day: "include yaks, theres a yak farm nearby, Woolly Yak Ranch & Winery in arcadia
+Indiana" (the ranch's name, location and offer are BAM's words, UNVERIFIED until fetched; it is a
+candidate capture site and practitioner source, Tier 1-P).
+
+## Decisions recorded the same day
+
+- **Public catalog**, documents-first. Species: sheep, alpaca and llama, angora rabbits, angora and
+  cashmere goats, yaks, silkworms. Scoped like \`keeping-a-house\`: what each animal needs, what the
+  law requires, how to decide, where to learn hands-on; never a substitute for a mentor or a vet.
+- **Cross-listed:** primary category Farm & Garden (series "The Loop", slot 03), additional category
+  Trade Skills (it closes "The Fibre Line": the yarn the crochet and braiding courses use).
+- **Research tier 2** (animal health and welfare, zoonoses, the scrapie programme, zoning).
+- **The manure link** is explicit: the NRCS lamb and rabbit tables, the Maryland alpaca and llama
+  table, and waste wool as a slow-release fertiliser (Zheljazkov 2005, 2009, paywalled).
+
+## Where the research is
+
+- \`2026-10-05-00-farm-sources-and-what-can-be-taught.md\` (this folder), family D, and the fibre
+  file in \`../trade-skills/\` for the fleece-to-yarn half.
+- Brief: \`2026-10-05-raising-animals-for-yarn-brief.md\`.
+
+## Coverage, checked 2026-10-05
+
+Nothing teaches sheep husbandry, shearing, fleece, alpaca, angora, yaks, silk or the Navajo-Churro
+story; \`tribal-nations-governance-course.ts:711\` covers Navajo governance only (a cross-link slot for
+the 1930s livestock reduction). The one fibre-dye lesson is indigo in
+\`training-the-colonizer-course.ts:672\`. No owned book covers any of it.`,
+    provenance: "plans/future-courses/farm-and-garden/2026-10-05-raising-animals-for-yarn.md",
+  },
 ];
 
 export interface SubdirDoc extends ProposalDoc {
@@ -16032,7 +16413,7 @@ decided.
 
 ### 2.5 The superlatives to check before writing, not after
 
-\`plans/future-courses/2026-08-23-04-the-record-and-the-artists.md\` already flags the Tuskegee Airmen's "never
+\`plans/future-courses/culture-and-history/2026-08-23-04-the-record-and-the-artists.md\` already flags the Tuskegee Airmen's "never
 lost a bomber" as a claim the record does not support. **Buffalo Soldier lore carries the same genre
 of claim and it must get the same treatment:**
 
@@ -16360,7 +16741,7 @@ collection, class of 1934); **B.A. University of Arizona 1938**; Eastman (M.A. 1
 **NEEDS VERIFICATION** of everything except the birth date and place, and specifically of his opera
 catalogue.
 
-**This one connects two in-flight plans at once.** \`plans/future-courses/2026-08-23-05-renaissances-beyond-harlem.md\`
+**This one connects two in-flight plans at once.** \`plans/future-courses/culture-and-history/2026-08-23-05-renaissances-beyond-harlem.md\`
 argues Harlem was one node in a national network. A Tucson-born composer trained at a state
 university in the Southwest is a data point that network model predicts and the Harlem-only model
 does not. And \`shirley-graham\` is already a shipped course about a **Black woman who wrote an
@@ -16419,7 +16800,7 @@ here duplicates a shipped course**, and the "extends" column says why.
 
 ### The two plans already in flight that these connect to
 
-- **\`plans/future-courses/2026-08-23-04-the-record-and-the-artists.md\`** already lists **the Buffalo Soldiers**
+- **\`plans/future-courses/culture-and-history/2026-08-23-04-the-record-and-the-artists.md\`** already lists **the Buffalo Soldiers**
   (with the Indian Wars tension named), **Black cowboys** (with the quarter-of-cowboys figure flagged
   as needing a source), **the Tuskegee Airmen** (with the "never lost a bomber" claim flagged), the
   **6888th**, and **Fred Snowden at Arizona**. **Five of the museum's own exhibits are already on
@@ -16428,7 +16809,7 @@ here duplicates a shipped course**, and the "extends" column says why.
   **The museum partnership is the reason to split that units course apart and build the Buffalo
   Soldiers one first, as a place course rather than a units course**, because Southern Arizona gives
   it a location, an archive, and an audience that a four-unit survey does not have.
-- **\`plans/future-courses/2026-08-23-05-renaissances-beyond-harlem.md\`** argues Harlem was the best-publicized
+- **\`plans/future-courses/culture-and-history/2026-08-23-05-renaissances-beyond-harlem.md\`** argues Harlem was the best-publicized
   node in a national network rather than a singular event. Proposal **I (Ulysses Kay)** is a
   Southwest data point for exactly that argument, and proposal **B (Tucson)** is a place course of
   the type \`05\` calls for, in a city \`05\` did not consider. **Neither should start a parallel
@@ -17073,7 +17454,7 @@ should cover different mediums of acting:
 > Only **section 4** may enter a lesson. A claim that has not been through section 3 is not evidence,
 > whichever model produced it.
 
-BAM's note (\`plans/future-courses/acting/2026-08-21-acting.md\`) asks to "research how an acting course could be
+BAM's note (\`plans/future-courses/careers-and-media/acting/2026-08-21-acting.md\`) asks to "research how an acting course could be
 effectively taught in this tool" before authoring, which is what makes this Tier 1 rather than the
 Tier 0 the sibling \`voice-acting\` course shipped under. The research question is not "what is in an
 acting curriculum" (that is well documented and uncontested). It is the harder one: **what survives
@@ -17233,7 +17614,7 @@ verified law.** Every factual claim below is either marked as checked against a 
 marked **NEEDS VERIFICATION** with the document that would settle it. Do not lift a sentence from
 this file into a lesson without clearing it first.
 
-**The ask, verbatim from \`plans/future-courses/construction/2026-08-26-00-find-list.md\`:**
+**The ask, verbatim from \`plans/future-courses/science-and-math/construction/2026-08-26-00-find-list.md\`:**
 
 > "list of Black construction and development, planning, civic planning companies"
 
@@ -17656,7 +18037,7 @@ condemnation power. That is the gap.
 
 ## 6.2 It is also the same ground as the AAMSAZ proposal, so stay off it
 
-\`plans/future-courses/aamsaz/2026-08-25-01-aamsaz-course-research.md\` recommends a **Tucson
+\`plans/future-courses/culture-and-history/aamsaz/2026-08-25-01-aamsaz-course-research.md\` recommends a **Tucson
 covenants-based site course** built on the University of Arizona's *Mapping Racist Covenants*
 dataset (covenants running roughly 1912 to 1968, with a learner exercise that reads an actual
 covenant at a real address). **Do not propose a covenants course here.** A deed covenant is a
@@ -17874,7 +18255,7 @@ until the named document has been read.** Grouped by how much damage a wrong ans
 - \`cooperatives\`: the alternative ownership form, and the honest comparison.
 - \`indiana-avenue\` lesson 11 (a university as a land assembler): the counterparty a community
   developer negotiates against.
-- \`surplus-funds-basics\` and the asset-recovery brief in \`plans/future-courses/real-estate/\`: adjacent
+- \`surplus-funds-basics\` and the asset-recovery brief in \`plans/future-courses/money-and-property/real-estate/\`: adjacent
   and should be checked for overlap on the equity-stripping material.
 - \`financing-without-access\`.
 
@@ -19758,7 +20139,7 @@ or what a permit and inspection are for.** Zero files match \`home inspection\` 
 only file naming the International Residential Code is \`construction-math\`, and it names it in a
 comment recording a hedge it could not clear.
 
-There is also \`plans/future-courses/construction/2026-08-26-01-construction-and-planning-research.md\`,
+There is also \`plans/future-courses/science-and-math/construction/2026-08-26-01-construction-and-planning-research.md\`,
 a backlog file about Black construction, development and planning **firms**. That is business and civic
 history, a different subject with a different spine, and it does not overlap this course.
 
@@ -20250,7 +20631,7 @@ Como Bluff, Chicxulub. Each pin carries a \`year\`, which drives the globe's yea
 ## 6. What this series must NOT duplicate
 
 The proposed Science & Math track's course 2,
-\`plans/future-courses/sciences/outlines/2026-08-07-02-how-we-know-whats-out-there.md\`, covers geocentrism →
+\`plans/future-courses/science-and-math/sciences/outlines/2026-08-07-02-how-we-know-whats-out-there.md\`, covers geocentrism →
 heliocentrism. **\`wrong-for-good-reasons\` overlaps it directly.**
 
 Proposed split, to settle before either is authored:
@@ -20345,7 +20726,7 @@ legal or investment advice).
 2026-09-18); and a search of \`scripts/data/\` on 2026-09-18. Facts from the agent reports are marked
 **VERIFIED (agent)**: an agent fetched the page and quoted it, through a fetch tool that summarises
 pages, so the exact wording is re-read before any lesson quotes it.
-**Related plan:** \`plans/future-courses/2026-07-24-types-of-business-path.md\` (the business-forms
+**Related plan:** \`plans/future-courses/civics/2026-07-24-types-of-business-path.md\` (the business-forms
 path, several of whose courses are built). This track is its applied companion.
 
 ---
@@ -21689,7 +22070,7 @@ britannica.com, thehistorymakers.org, and others); the companion track brief col
 
 Outline for the True track of the Storytelling series (\`docs/storytelling-curriculum.md\`).
 
-BAM's note (\`plans/future-courses/documentary/2026-08-03-01-list-of-documentary.md\`) asks for:
+BAM's note (\`plans/future-courses/storytelling/documentary/2026-08-03-01-list-of-documentary.md\`) asks for:
 - a Documenter course based on the **Mirror Indy documenter role**,
 - the **Documenters Field Guide** as the source,
 - **at least one full course on the Field Guide alone**.
@@ -21987,7 +22368,7 @@ uncovered).
 
 ## Related
 
-\`plans/future-courses/construction/2026-09-20-00-sources-and-what-can-be-taught.md\` (the same rights
+\`plans/future-courses/science-and-math/construction/2026-09-20-00-sources-and-what-can-be-taught.md\` (the same rights
 problem, solved) · \`plans/88-course-backlog-2026-09-19.md\` · \`docs/course-method/course-creation-rubric.md\``,
     provenance: "plans/future-courses/aviation/drone/2026-09-20-build-a-drone-brief.md",
   },
@@ -23364,8 +23745,8 @@ lists) · \`src/lib/cert-disclaimer.ts\` · \`src/lib/ecosystem.ts\` · \`src/li
 planned Ed.L.D. move, and the planned Robotics/Electronics/STEAM expansion; found by a repo-wide
 search that finished after the first draft, and it corrected two of this plan's conclusions) ·
 \`/Users/bam/Code_NOiCloud/ai-builds/gemini/witus/lib/products.ts\` (grep, canonical product registry) ·
-\`plans/future-courses/elementary-mba/2026-08-27-00-emba-and-the-personal-pair.md\` ·
-\`plans/future-courses/2026-08-27-15-personal-finance-track-research.md\`
+\`plans/future-courses/money-and-property/elementary-mba/2026-08-27-00-emba-and-the-personal-pair.md\` ·
+\`plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md\`
 
 ### External sources fetched or searched this session
 
@@ -24018,7 +24399,7 @@ document that would settle it. Do not lift a sentence from this file into a less
 it first. Section 12 is the consolidated verification queue and it is the real gate on building any
 of this.
 
-**The ask, verbatim from \`plans/future-courses/land-and-schools/2026-08-27-00-find-list.md\`:**
+**The ask, verbatim from \`plans/future-courses/civics/land-and-schools/2026-08-27-00-find-list.md\`:**
 
 > - land grant universities
 > - HBCU's
@@ -24999,10 +25380,10 @@ the 925,708 figure for 1920.
 \`scripts/data/tribal-nations-governance-course.ts\` (header care rules and the allotment lesson);
 \`scripts/data/cooperatives-course.ts\` (the REA lesson); \`src/lib/standards/claims.ts\`,
 \`jurisdictions.ts\`; \`src/lib/citations.ts\`;
-\`plans/future-courses/construction/2026-08-26-01-construction-and-planning-research.md\` (cross-link map);
-\`plans/future-courses/2026-08-25-13-constitutions-research.md\` (sec. 6, sovereignty);
-\`plans/future-courses/languages/2026-08-25-02-sign-language-feasibility.md\` (sec. 10, Indigenous
-languages); \`plans/future-courses/land-and-schools/2026-08-27-00-find-list.md\`.
+\`plans/future-courses/science-and-math/construction/2026-08-26-01-construction-and-planning-research.md\` (cross-link map);
+\`plans/future-courses/civics/2026-08-25-13-constitutions-research.md\` (sec. 6, sovereignty);
+\`plans/future-courses/languages/languages/2026-08-25-02-sign-language-feasibility.md\` (sec. 10, Indigenous
+languages); \`plans/future-courses/civics/land-and-schools/2026-08-27-00-find-list.md\`.
 
 **Not consulted, and worth a session of its own:** the Cornell agcensus historical archive; the
 landgrabu-data GitHub repository; the 2023 letters; NIFA's annual match reports; the Pigford dockets.`,
@@ -25267,7 +25648,7 @@ Negroes were 97.5% of colored operators but only **92.2% of colored acreage**, s
     body: `# 02. Sign language, African languages, Indigenous languages: feasibility
 
 Research only. No code was written, no branch created, nothing outside \`plans/\` was touched.
-Answers \`plans/future-courses/languages/2026-08-25-01-languages-to-teach.md\`.
+Answers \`plans/future-courses/languages/languages/2026-08-25-01-languages-to-teach.md\`.
 
 Date of research: 2026-08-25.
 
@@ -26172,7 +26553,7 @@ Research only. No code was written, no branch created, no commit made, nothing o
 was touched.
 
 Answers BAM's ask on 2026-08-26 for "a similar path for blind" alongside the Deaf and Black ASL
-course approved from \`plans/future-courses/languages/2026-08-25-02-sign-language-feasibility.md\`.
+course approved from \`plans/future-courses/languages/languages/2026-08-25-02-sign-language-feasibility.md\`.
 That document is the model for this one and this document deliberately follows its shape: separate
 what can be taught from documents from what needs media and consultation, treat licence and
 permission as the deciding factor rather than availability, and refuse to recommend teaching a
@@ -30746,7 +31127,7 @@ physics catalog. Wave 3 has to teach that guard the difference; see §5.
 ## 4. The bridges
 
 Six, not four, BAM's notes added two. Each is judged the same way the
-[She Did the Work proposal](plans/future-courses/she-did-the-work/2026-08-07-00-course-proposals.md) judges its
+[She Did the Work proposal](plans/future-courses/culture-and-history/she-did-the-work/2026-08-07-00-course-proposals.md) judges its
 subjects: **does it hand the learner a transferable system, or a story?**
 
 ### 4.1 Civics → statistics and data literacy
@@ -31395,7 +31776,7 @@ By the end a learner can:
 - **Category:** Culture & History, with the rest of the CREDIT series.
 - **Series and track:** **CREDIT, science track, proposed position S3**, after Lederberg (S1,
   \`the-paper-and-the-prize\`) and Drew (S2, pending). Reasons in §5. **One ambiguity for BAM:** "science
-  track" could also mean the **Science & Math category** (\`plans/future-courses/sciences/2026-08-07-02-…\`).
+  track" could also mean the **Science & Math category** (\`plans/future-courses/science-and-math/sciences/2026-08-07-02-…\`).
   I recommend CREDIT rather than Science & Math: that category teaches how we know things (measurement,
   evidence), and this course's subject is who got named for a medical advance, which is the CREDIT
   question exactly.
@@ -31942,10 +32323,10 @@ Nothing above should enter a lesson without a primary source, per the usual rule
     key: "storytelling-storytelling-curriculum",
     title: "Storytelling: the curriculum, the spine, and the build order",
     group: "Storytelling",
-    summary: "Source note: `plans/future-courses/storytelling/2026-08-03-01-storytelling-series.md`.",
+    summary: "Source note: `plans/future-courses/storytelling/storytelling/2026-08-03-01-storytelling-series.md`.",
     body: `# Storytelling: the curriculum, the spine, and the build order
 
-Source note: \`plans/future-courses/storytelling/2026-08-03-01-storytelling-series.md\`.
+Source note: \`plans/future-courses/storytelling/storytelling/2026-08-03-01-storytelling-series.md\`.
 
 BAM's decisions, 2026-08-03:
 

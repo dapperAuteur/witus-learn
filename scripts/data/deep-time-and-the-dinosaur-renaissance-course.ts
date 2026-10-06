@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // Here Be Dragons, course 3 of 5: Deep Time and the Dinosaur Renaissance.
 //
 // Plan: plans/58-here-be-dragons-series.md §4.3. Category: Culture & History. Grades 9-12.
-// Connections: plans/future-courses/culture/01-connections-to-the-catalog.md §4.3.
+// Connections: plans/future-courses/culture-and-history/culture/2026-08-08-01-connections-to-the-catalog.md §4.3.
 // Model for voice, structure and section quizzes: monsters-at-the-edge-of-the-map-course.ts.
 //
 // THE THESIS EVERY LESSON IS CHECKED AGAINST: people were usually reasoning well from what they

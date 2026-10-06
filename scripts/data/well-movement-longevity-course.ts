@@ -5,7 +5,7 @@ import type { AuthoredCourse } from "./authored-course";
 // as one, and its verified core (VILPA, the Verghese contrast, perturbation training, and
 // activity variety independent of volume) is distinct from anything else in the program.
 //
-// EVERY factual claim traces to the verified dossier (plans/future-courses/health/dossiers/
+// EVERY factual claim traces to the verified dossier (plans/future-courses/health-and-longevity/health/dossiers/
 // 08-movement-longevity/08-movement-longevity.md §3-4). Notable verification outcomes:
 // - The export UNDER-reported VILPA: its frequency figures (38-40% and 48-49%) are larger than
 //   the duration figures it quoted, and both are taught.

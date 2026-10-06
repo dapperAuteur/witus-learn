@@ -1,8 +1,8 @@
 // Authored "Afrocentricity: How to Evaluate a Contested Paradigm" — a Culture & History
 // course on Learn.WitUS (BVC), for high school students (and adult learners). This is the
 // ANCHOR / first course of a proposed Afrocentricity track (see
-// plans/future-courses/afrocentricity-track-proposal.md). Natural home for BAM's source note
-// plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md.
+// plans/future-courses/completed/culture-and-history/2026-07-15-afrocentricity-track-proposal.md). Natural home for BAM's source note
+// plans/future-courses/culture-and-history/he-did-the-work/2026-07-14-Molefi-Kete-Asante.md.
 //
 // THE HARD JOB THIS COURSE DOES (read before editing):
 // Afrocentricity is a specific, named academic paradigm — Molefi Kete Asante coined the term;

@@ -2,7 +2,7 @@
 //
 // RESEARCH TIER 1 (product documentation). Every lesson body is the help article itself, read from
 // src/lib/help-articles.ts at seed time by `helpLesson`, so nothing here can drift from the page it
-// teaches. Brief: plans/future-courses/using-learn/2026-09-21-using-learn-paths-brief.md, approved
+// teaches. Brief: plans/future-courses/using-learn-witus/using-learn/2026-09-21-using-learn-paths-brief.md, approved
 // by BAM 2026-09-22 (rubric v1.3 gate A8), which adds this Cohort teacher path to the four paths in
 // the brief.
 //

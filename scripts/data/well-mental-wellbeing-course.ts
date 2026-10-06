@@ -4,7 +4,7 @@ import type { AuthoredCourse } from "./authored-course";
 // because it works closest to the therapy boundary, so it assumes WELL-00's scope training and
 // re-applies it throughout.
 //
-// EVERY factual claim traces to the verified dossier (plans/future-courses/health/dossiers/
+// EVERY factual claim traces to the verified dossier (plans/future-courses/health-and-longevity/health/dossiers/
 // 06-mental-emotional/06-mental-emotional.md §3-4). Notable verification outcomes:
 // - Galante 2023 (passive controls, SMD -0.32, high confidence) and Goyal 2014 (active controls,
 //   "no evidence that meditation programs were better than any active treatment") are taught as

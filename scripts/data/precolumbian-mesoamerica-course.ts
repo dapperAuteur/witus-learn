@@ -1,6 +1,6 @@
 // Authored "Pre-Columbian Mesoamerica: Cities, Calendars, and the People Who Are Still Here" —
 // the ANCHOR of the Pre-Columbian Mesoamerica track
-// (plans/future-courses/precolumbian-mesoamerica-track-proposal.md).
+// (plans/future-courses/completed/culture-and-history/2026-07-15-precolumbian-mesoamerica-track-proposal.md).
 // Survey depth, real spread: the Olmec (mother-vs-sister taught AS a live debate), Teotihuacan
 // (the humility lesson: builders and language unknown), the Maya (script, zero, the Long Count;
 // the Classic collapse specific AND debated; THEY DID NOT VANISH), the Aztec/Mexica

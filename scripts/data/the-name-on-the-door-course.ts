@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // CREDIT-03 · "The Name on the Door" (Culture & History). Source brief:
-// plans/future-courses/08-black-creator-series-research.md §6 ("Architecture"), which called the
+// plans/future-courses/culture-and-history/2026-08-25-08-black-creator-series-research.md §6 ("Architecture"), which called the
 // Julian Abele myth-correction "a gift" and recommended the spine below. Tier 0.
 //
 // THE SPINE, and the sentence the whole course is built to keep true:

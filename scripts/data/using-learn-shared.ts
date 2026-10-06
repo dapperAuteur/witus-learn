@@ -2,7 +2,7 @@
 // every lesson made from the help article it teaches.
 //
 // Research tier 1 (product documentation). Brief:
-// plans/future-courses/using-learn/2026-09-21-using-learn-paths-brief.md, approved by BAM
+// plans/future-courses/using-learn-witus/using-learn/2026-09-21-using-learn-paths-brief.md, approved by BAM
 // 2026-09-22 (rubric v1.3 gate A8), with these decisions: Learn only; a Cohort teacher path added
 // to the four in the brief; series "Using Learn.WitUS" / USING; public and free, BAM vets each one
 // (E1); flagship plus the Acme demo school; captioned clips embedded later.

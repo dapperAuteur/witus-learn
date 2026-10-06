@@ -2,7 +2,7 @@ import type { AuthoredCourse } from "./authored-course";
 
 // Intro to Citizen Science. Course 4 of the Science & Math track (SCI-04).
 //
-// Outline: plans/future-courses/sciences/outlines/04-intro-to-citizen-science.md
+// Outline: plans/future-courses/science-and-math/sciences/outlines/2026-08-07-04-intro-to-citizen-science.md
 //
 // WHY IT EXISTS: SCI-01, -02 and -03 all teach reading other people's evidence. This one teaches
 // making your own, and it is the practical capstone of Wave 1.

@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // "The Mark and the Star: Judith Leyster, a Monogram Misread, and the Twin That Was Tampered With"
 // (Culture & History, with Research & Reporting alongside). Slug to be registered:
 // `the-mark-and-the-star`. PRIVATE study, by BAM's approval on 2026-09-21 of the brief at
-// plans/future-courses/uncredited/2026-09-18-judith-leyster-brief.md, built STANDALONE rather than
+// plans/future-courses/culture-and-history/uncredited/2026-09-18-judith-leyster-brief.md, built STANDALONE rather than
 // as section 2 of the three-case cluster the 2026-09-18 brief proposed, because BAM approved her
 // alone and because the article pass of 2026-09-21 turned "two sections' worth" into six.
 // Rubric: gates pass; B 3/3/3/3/3/3 = 35; form C6, standalone course.
@@ -1726,7 +1726,7 @@ Musée du Louvre. (n.d.). *La Joyeuse Compagnie*, Judith Leyster, inv. RF 2131 [
 // NO migration. NO seed:* re-run beyond `pnpm seed:courses`.
 //
 //   // "The Mark and the Star" (Judith Leyster, plans/83 E-07). PRIVATE study, by BAM's approval on
-//   // 2026-09-21 of plans/future-courses/uncredited/2026-09-18-judith-leyster-brief.md, built
+//   // 2026-09-21 of plans/future-courses/culture-and-history/uncredited/2026-09-18-judith-leyster-brief.md, built
 //   // STANDALONE rather than as section 2 of the three-case cluster the 2026-09-18 brief proposed:
 //   // BAM approved her alone, and the 2026-09-21 reading of Hofstede de Groot's article turned
 //   // "two sections' worth of evidence" into six. Six teaching sections and a final, sized to what

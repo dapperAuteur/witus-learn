@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // Authored "The Moors: The Word, the History, and the Evidence" (Culture & History), from BAM's
-// one-line brief plans/future-courses/moors.md ("tell the history of the Moors and their impact on
+// one-line brief plans/future-courses/culture-and-history/2026-08-21-moors.md ("tell the history of the Moors and their impact on
 // the world"). Tier 0 per docs/course-method/README.md.
 //
 // THE HARD JOB THIS COURSE DOES (read before editing):

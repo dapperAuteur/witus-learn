@@ -1,6 +1,6 @@
 // Authored "Training the Colonizer: The Knowledge That Was Taken" — a high-school-level,
 // cited course on what enslaved and colonized people taught the people who enslaved and
-// colonized them. From BAM's queue (plans/future-courses/training-the-colonizer.md):
+// colonized them. From BAM's queue (plans/future-courses/completed/culture-and-history/2026-07-17-training-the-colonizer.md):
 // "what did the people stolen during the Atlantic Slave trade teach their enslavers? how
 // to plant the crops, build, etc."
 //

@@ -2,7 +2,7 @@ import type { AuthoredCourse } from "./authored-course";
 
 // The River and the Watershed. Course 3 of the Science & Math track (SCI-03).
 //
-// Outline: plans/future-courses/sciences/outlines/03-the-river-and-the-watershed.md
+// Outline: plans/future-courses/science-and-math/sciences/outlines/2026-08-07-03-the-river-and-the-watershed.md
 //
 // WHY IT EXISTS: eleven River Expedition courses teach what the Mississippi basin MEANS, and none
 // of them teaches how the river works. This is the physical half.

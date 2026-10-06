@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // Here Be Dragons, course 5 of 5: Writing the World. The ELA capstone.
 //
 // Plan: plans/58-here-be-dragons-series.md §4.5 and §7. Category: Culture & History. Grades 9-12.
-// Connections: plans/future-courses/culture/01-connections-to-the-catalog.md §4.5.
+// Connections: plans/future-courses/culture-and-history/culture/2026-08-08-01-connections-to-the-catalog.md §4.5.
 //
 // THIS COURSE IS THE STANDARDS ANCHOR OF THE SERIES. Per plans/58 §7 it carries RH.11-12.6, .8
 // and .9, RI.11-12.6, and WHST.11-12.7 and .8, all already fetched verbatim in

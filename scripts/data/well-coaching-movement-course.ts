@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // WELL-02 · Coaching Movement (plans/67). A THIN BRIDGE by design: coaching movement BEHAVIOR
 // for a student who already holds CPT and CES. It never re-teaches exercise science.
 //
-// EVERY factual claim traces to the verified dossier (plans/future-courses/health/dossiers/
+// EVERY factual claim traces to the verified dossier (plans/future-courses/health-and-longevity/health/dossiers/
 // 02-movement/02-movement.md §3, §3b, §4). Notable verification outcomes baked in:
 // - The "8 hours of sitting" threshold traced to a CONFERENCE ABSTRACT, not a paper; the
 //   peer-reviewed Ku 2018 gives METHOD-DEPENDENT cut-offs (7 h self-report vs 9 h device),

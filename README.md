@@ -810,8 +810,11 @@ pnpm gen:future-work              # regenerate src/lib/future-work-content/* fro
 
 The proposals are **committed** (`src/lib/future-work-content/*`, generated from the gitignored
 `plans/future-courses/` notes by `gen:future-work`), the app never reads `plans/` at runtime, so the
-page renders the same in production. Add a proposal by dropping markdown in `plans/future-courses/`,
-re-running the generator, and registering it in `src/lib/future-work.ts`.
+page renders the same in production. Add a proposal by dropping markdown into the category folder it
+belongs to under `plans/future-courses/` (folders are named after the app's course categories, see
+`scripts/lib/plan-categories.ts` and `plans/future-courses/README.md`) and re-running the generator;
+notes are auto-discovered, and an entry in `src/lib/future-work.ts` is optional curation. A folder
+holding a `*READ-ME-FIRST-private-study-only.md` marker is never generated into the repo.
 
 ## Owner library (`/admin/library`)
 

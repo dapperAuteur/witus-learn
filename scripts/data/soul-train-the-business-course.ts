@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // "Soul Train: Who Paid, Who Owned, Who Got Paid" (Careers & Media, plus Culture & History).
 // Slug to be registered: `soul-train-the-business`. PRIVATE UNTIL VETTED, price 0, free.
 // NO seriesCode / seriesPosition / seriesTrack: BAM, 2026-09-19, private courses carry no code.
-// Built from plans/future-courses/culture/2026-09-18-soul-train-brief.md (rubric 36/36, form C6),
+// Built from plans/future-courses/culture-and-history/culture/2026-09-18-soul-train-brief.md (rubric 36/36, form C6),
 // plus the two saved research notes in the same folder (Motown + Johnson Publishing; BET, Essence,
 // Urban One, Black Enterprise).
 //
@@ -7461,7 +7461,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
 //   import { SOUL_TRAIN_THE_BUSINESS_COURSE } from "./data/soul-train-the-business-course";
 //
 //   // "Soul Train: Who Paid, Who Owned, Who Got Paid". PRIVATE UNTIL VETTED, by BAM's approval of
-//   // plans/future-courses/culture/2026-09-18-soul-train-brief.md (rubric 36/36) and his five
+//   // plans/future-courses/culture-and-history/culture/2026-09-18-soul-train-brief.md (rubric 36/36) and his five
 //   // answers of 2026-09-20. Careers & Media primary, Culture & History second, because it is a
 //   // media-business course that a history learner should also find. NO series code: BAM,
 //   // 2026-09-19, private courses carry none, so the proposed "who-owned-it" / MEDIA track in the
@@ -7491,7 +7491,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
 //    rule it should be MAPPED in src/lib/standards/ rather than BACKLOGged. Until it is mapped it
 //    needs a BACKLOG line in scripts/check-standards-coverage.ts, or `pnpm lint` fails.
 //  - SERIES: none. Do not add a seriesSlug either; the companion media-business track brief
-//    (plans/future-courses/culture/2026-09-18-media-business-track-brief.md) proposes
+//    (plans/future-courses/culture-and-history/culture/2026-09-18-media-business-track-brief.md) proposes
 //    `who-owned-it` / MEDIA / order 1, and that is a decision for the public flip, if ever.
 //  - GUARDS: check-em-dashes, check-longest-option, check-quiz-balance, check-reveals and
 //    check-assessment-fit all read `git ls-files`, so this file is only scanned once it is tracked.

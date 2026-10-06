@@ -1,5 +1,5 @@
 // Authored "Golf: Play It, Know It, Work In It" - a complete golf course for Learn.WitUS,
-// built from BAM's brief (plans/future-courses/sports-courses/golf.md): "how to play golf,
+// built from BAM's brief (plans/future-courses/sports/sports-courses/completed/2026-07-13-golf.md): "how to play golf,
 // strategy, history, rules, leagues, opportunities for amateurs, entrepreneurs". All six are
 // covered, and the last one (opportunities) is the largest section, because it is the angle a
 // generic golf course skips and the one this platform exists for.

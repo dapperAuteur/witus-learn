@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // WARRANT-02 · "The County Committee" (Civics). Source brief:
-// plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md, section
+// plans/future-courses/civics/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md, section
 // 8, Course C. Sibling of WARRANT-01 (`the-match`), which shipped first and which this course
 // cross-links in both directions. Tier 0.
 //

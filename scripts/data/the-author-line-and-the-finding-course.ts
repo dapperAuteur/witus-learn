@@ -5,7 +5,7 @@ import type { AuthoredCourse } from "./authored-course";
 // `the-author-line-and-the-finding`.
 //
 // SOURCE BRIEF, approved by BAM on 2026-09-20:
-//   plans/future-courses/uncredited/2026-09-18-marthe-gautier-brief.md   (rubric B 36, form C6)
+//   plans/future-courses/culture-and-history/uncredited/2026-09-18-marthe-gautier-brief.md   (rubric B 36, form C6)
 //
 // BAM'S DECISION THAT CHANGES THE BRIEF. The brief recommended a two-lesson section inside the
 // private cluster course `what-the-citation-records`, and said this was the one case of the four
@@ -4916,7 +4916,7 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
 //            header states it openly.)
 //     claim: Every French sentence this course quotes from the opinion is the brief's transcription
 //            of a reading made on 2026-09-18
-//            (plans/future-courses/uncredited/2026-09-18-marthe-gautier-brief.md, section 6). A
+//            (plans/future-courses/culture-and-history/uncredited/2026-09-18-marthe-gautier-brief.md, section 6). A
 //            re-fetch on 2026-09-20 was refused: inserm.hal.science now serves an anti-bot
 //            proof-of-work challenge on /document, which this course did not defeat. The document's
 //            identity, producing body, year, language, deposit date of 2019-04-25, CC BY 4.0 licence
@@ -4987,7 +4987,7 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
 // NO migration. NO seed:* re-run beyond `pnpm seed:courses`.
 //
 //   // "The Author Line and the Finding" (Marthe Gautier, plans/83 E-02). PRIVATE study, by BAM's
-//   // approval of plans/future-courses/uncredited/2026-09-18-marthe-gautier-brief.md and his
+//   // approval of plans/future-courses/culture-and-history/uncredited/2026-09-18-marthe-gautier-brief.md and his
 //   // 2026-09-20 decision to build her STANDALONE rather than as a section of
 //   // `what-the-citation-records`. The deciding document here is an institutional ethics opinion
 //   // rather than a prize citation, which is why it is a course of its own; it cross-links to

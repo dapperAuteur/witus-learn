@@ -1,5 +1,5 @@
 // Authored "South Africa: The Union That Helped End Apartheid — Then Joined the Government" —
-// Wave 2 of the Workers' Rights track (plans/future-courses/workers-rights-track-proposal.md).
+// Wave 2 of the Workers' Rights track (plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md).
 // A country course hanging off the anchor, "The History of Unions: America and the World"
 // (scripts/data/history-of-unions-course.ts). The anchor gives ONE lesson to Poland + South Africa
 // ("when a union is the opposition", slug `solidarity-and-cosatu`) and supplies the four questions;

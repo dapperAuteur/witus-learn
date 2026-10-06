@@ -1,5 +1,5 @@
 // Authored "Sweden & Denmark: The Wage Floor That Isn't a Law" — Wave 1 of the Workers' Rights
-// track (plans/future-courses/workers-rights-track-proposal.md). A country course hanging off the
+// track (plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md). A country course hanging off the
 // anchor, "The History of Unions: America and the World" (scripts/data/history-of-unions-course.ts).
 // The anchor gives ONE lesson to the Nordics (lesson 20, "when the union pays your unemployment
 // cheque") and supplies the four questions; this course goes deep on TWO countries and CROSS-LINKS

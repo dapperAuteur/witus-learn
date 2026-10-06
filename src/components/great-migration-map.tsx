@@ -11,7 +11,7 @@ import usData from "us-atlas/states-10m.json";
 // rule: this component ships no DB query and is safe to reuse across tenants). Palette is
 // deliberately DIFFERENT from the civics map (blue/red, a US theme): green states, BLACK
 // outlines, and RED on hover/select — the Pan-African palette, matching the design doc
-// (plans/future-courses/great-migration.md). Reuses the same d3-geo + us-atlas approach as
+// (plans/future-courses/completed/culture-and-history/2026-07-08-great-migration.md). Reuses the same d3-geo + us-atlas approach as
 // <UsStatesMap> so both maps stay visually consistent in projection and interaction pattern.
 //
 // Shows the three migration streams (Southeast→Northeast, Mississippi Valley→Midwest,

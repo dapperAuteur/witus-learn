@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // Authored "Who Gets the Credit: Black Inventors and the Machinery of Attribution"
-// (Culture & History), from BAM's one-line brief plans/future-courses/Black-inventors.md
+// (Culture & History), from BAM's one-line brief plans/future-courses/culture-and-history/2026-08-20-Black-inventors.md
 // ("research Black inventors/innovators/discoveries and highlight those that had their ideas stolen
 // or not credited"). Tier 0 per docs/course-method/README.md.
 //

@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // Here Be Dragons, course 2 of 5: Giants, Dragons, and the Bones They Came From.
 //
 // Plan: plans/58-here-be-dragons-series.md §4.2. Category: Culture & History. Grades 9-12.
-// Connections: plans/future-courses/culture/01-connections-to-the-catalog.md §4.2.
+// Connections: plans/future-courses/culture-and-history/culture/2026-08-08-01-connections-to-the-catalog.md §4.2.
 //
 // THE THESIS EVERY LESSON IS CHECKED AGAINST: people were usually reasoning well from what they
 // had, and the interesting questions are what they had, who they would let speak, and what it took

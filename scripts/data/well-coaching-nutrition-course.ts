@@ -4,7 +4,7 @@ import type { AuthoredCourse } from "./authored-course";
 // for a student who already holds a CNC. It never re-teaches nutrition science, and it stays
 // deliberately, visibly inside the non-prescriptive coaching lane WELL-00 mapped.
 //
-// EVERY factual claim traces to the verified dossier (plans/future-courses/health/dossiers/
+// EVERY factual claim traces to the verified dossier (plans/future-courses/health-and-longevity/health/dossiers/
 // 03-nutrition/03-nutrition.md §3-4). Notable verification outcomes baked in:
 // - Three misattributed sources in the research exports were corrected (Williamson, not
 //   "Mensinger", for early adherence; Sisnowski, not "Gomes"; Hayashi, not "Eskandari").

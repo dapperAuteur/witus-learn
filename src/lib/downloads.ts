@@ -33,7 +33,7 @@ export const DOWNLOAD_DOCS: DownloadDoc[] = [
     subtitle: "For the paddling team · Indiana to the Gulf of Mexico · Spring",
     description:
       "What to collect on the river and how, with every item scored value-vs-effort, plus the prioritized list of places to document. Hand this to the paddlers before they launch.",
-    source: "plans/future-courses/outdoors/river-expedition-field-collection-guide.md",
+    source: "plans/future-courses/rivers-and-expeditions/outdoors/2026-08-05-river-expedition-field-collection-guide.md",
     revised: "2026-08-05",
     audience: "The paddling team (external)",
   },

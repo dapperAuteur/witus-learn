@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // "Who Made the Record: Photography, Custody, and the Credit Line" (Culture & History).
-// CREDIT track R, position R1, from plans/future-courses/2026-08-25-07-photography-series-plan.md.
+// CREDIT track R, position R1, from plans/future-courses/culture-and-history/2026-08-25-07-photography-series-plan.md.
 // Assumed slug: `who-made-the-record` (the plan's own slug for R1). The registering agent owns
 // scripts/seed-courses.ts; if the slug lands differently, every `sourceLessonSlug` here is
 // course-internal and unaffected.
@@ -4828,7 +4828,7 @@ WBUR. (2025, May 28). *Harvard agrees to relinquish early photos of enslaved peo
 // ─────────────────────────────────────────────────────────────────────────────
 //
 // SLUG ASSUMED: `who-made-the-record`, the slug the series plan gives CREDIT-R1
-// (plans/future-courses/2026-08-25-07-photography-series-plan.md). Category: Culture & History.
+// (plans/future-courses/culture-and-history/2026-08-25-07-photography-series-plan.md). Category: Culture & History.
 // Series: `credit`, track "R · The record", position R1, seriesOrder 3. Prerequisite:
 // `who-gets-named` (CREDIT-00), whose vocabulary (format cap, contested claim, gap as evidence)
 // this course assumes and never re-teaches. Every `sourceLessonSlug` above is course-internal, so

@@ -5,7 +5,7 @@ import type { AuthoredCourse } from "./authored-course";
 // OUTSIDE coaching scope while the thing coaches can deliver (sleep hygiene) is the one the
 // AASM guideline recommends against as a standalone. That tension is the course's spine.
 //
-// EVERY factual claim traces to the verified dossier (plans/future-courses/health/dossiers/
+// EVERY factual claim traces to the verified dossier (plans/future-courses/health-and-longevity/health/dossiers/
 // 05-sleep/05-sleep.md §3-4). Notable verification outcomes:
 // - Gemini attributed an orthosomnia "screening algorithm" with score cut-offs to Baron 2017,
 //   which contains no such thing. Orthosomnia is taught as the described phenomenon only.

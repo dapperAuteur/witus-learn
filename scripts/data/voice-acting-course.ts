@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // Voice Acting: The Instrument (VOICE-01 when the series gets its second course).
 //
 // Plan: plans/65-implement-unbuilt-features-and-courses.md Phase 1; source note:
-// plans/future-courses/acting/voice-acting.md (a syllabus scrape of a live-cohort school).
+// plans/future-courses/careers-and-media/acting/2026-08-03-voice-acting.md (a syllabus scrape of a live-cohort school).
 // This course adapts that scope to what a self-paced course can HONESTLY deliver, which is the
 // instrument itself: how the voice works, articulation, the mic and the room, the read, and a
 // clear-eyed look at the business. It makes no promise of coaching, community, or work.

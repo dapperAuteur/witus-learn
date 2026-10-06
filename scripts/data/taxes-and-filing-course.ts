@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // MONEY-05 · "Taxes, and the Money Taken Before You See It" (Money & Property). Source brief:
-// plans/future-courses/2026-08-27-15-personal-finance-track-research.md, section 4.8. Fifth course
+// plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md, section 4.8. Fifth course
 // of the `personal-money` series, code MONEY, position 05. Tier 0.
 //
 // THE SPINE, and the sentence the whole course is built to keep true:

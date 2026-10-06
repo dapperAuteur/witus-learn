@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // WARRANT-01 · "The Match" (Civics). Source brief:
-// plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md, which
+// plans/future-courses/civics/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md, which
 // surveyed the whole land-grant / HBCU / farm-programs cluster, found the catalog close to
 // greenfield on it (zero occurrences of "Morrill", "Pigford", "Homestead Act", "heirs property" or
 // "Federation of Southern Cooperatives" across 226 registered courses), and recommended THIS course

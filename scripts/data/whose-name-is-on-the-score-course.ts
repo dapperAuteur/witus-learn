@@ -4,7 +4,7 @@ import type { AuthoredCourse } from "./authored-course";
 // (Culture & History). Slug to be registered: `whose-name-is-on-the-score`.
 //
 // RESEARCH TIER: 1. The brief IS the dossier
-// (`plans/future-courses/uncredited/2026-09-18-zitkala-sa-brief.md`, section 6 is its verification
+// (`plans/future-courses/culture-and-history/uncredited/2026-09-18-zitkala-sa-brief.md`, section 6 is its verification
 // log), per docs/course-method/README.md. BAM approved the brief on 2026-09-19.
 //
 // PRIVATE, FREE, NO SERIES CODE. BAM, 2026-09-19: private courses carry no CREDIT code. It keeps
@@ -4553,7 +4553,7 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
 //  array loop does not pass visibility):
 //
 //    // "Whose Name Is on the Score" (Zitkala-Šá). PRIVATE and FREE by BAM's approval (2026-09-19)
-//    // of plans/future-courses/uncredited/2026-09-18-zitkala-sa-brief.md. NO seriesCode /
+//    // of plans/future-courses/culture-and-history/uncredited/2026-09-18-zitkala-sa-brief.md. NO seriesCode /
 //    // seriesPosition: BAM, 2026-09-19, private courses carry no CREDIT code. Keeps the series
 //    // SLUG so the owner can find it. Built from the four Copyright Office card images, the 1909
 //    // Act, Smith (2001), Hafen (1998) and the 2021 Copyright Office post. It never describes the

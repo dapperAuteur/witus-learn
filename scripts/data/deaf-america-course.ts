@@ -9,7 +9,7 @@ import type { AuthoredCourse } from "./authored-course";
 // been found, paid, credited, and has had the authority to change or cut any of it.
 //
 // WHAT BAM APPROVED, and the research that produced it:
-// plans/future-courses/languages/2026-08-25-02-sign-language-feasibility.md sections 3 to 7. That
+// plans/future-courses/languages/languages/2026-08-25-02-sign-language-feasibility.md sections 3 to 7. That
 // document established, by reading the actual licence text, that every usable sign-media dataset is
 // barred from a paid course (ASL-LEX carves the videos out entirely, WLASL allows no commercial
 // usage, ASL Citizen forbids redistribution of any kind), and that a signing curriculum needs a Deaf
@@ -40,7 +40,7 @@ import type { AuthoredCourse } from "./authored-course";
 //     src/lib/research-checks.ts.
 //
 // WHERE THE FACTS COME FROM, and the one thing that limits every citation in this file:
-// plans/future-courses/languages/2026-08-27-04-black-asl-verification.md is a primary-source
+// plans/future-courses/languages/languages/2026-08-27-04-black-asl-verification.md is a primary-source
 // verification report produced by an earlier research pass that FETCHED AND READ the pages it
 // lists, and this file follows it exactly, including its three "fix before this ships" items: the
 // constructed-action feature is taught as unresolved rather than as a finding, the McCaskill

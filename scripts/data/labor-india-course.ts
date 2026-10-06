@@ -1,5 +1,5 @@
 // Authored "India: When Most Workers Have No Employer" — Wave 2 of the Workers' Rights track
-// (plans/future-courses/workers-rights-track-proposal.md; the proposal calls this "the single most
+// (plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md; the proposal calls this "the single most
 // important course in the track"). A country course hanging off the anchor, "The History of Unions:
 // America and the World" (scripts/data/history-of-unions-course.ts). The anchor supplies the four
 // questions; this course is where the assumption UNDER all four — worker = employee with an

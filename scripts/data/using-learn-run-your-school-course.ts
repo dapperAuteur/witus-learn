@@ -4,7 +4,7 @@ import { helpLesson, sectionQuiz, finalQuiz } from "./using-learn-shared";
 // "Run your school", the school-admin path in the "Using Learn.WitUS" series (USING).
 // RESEARCH TIER 1 (product documentation): every lesson body is the help article itself, read from
 // src/lib/help-articles.ts at seed time by `helpLesson`, so nothing here can drift from the page it
-// teaches. Brief: plans/future-courses/using-learn/2026-09-21-using-learn-paths-brief.md, approved
+// teaches. Brief: plans/future-courses/using-learn-witus/using-learn/2026-09-21-using-learn-paths-brief.md, approved
 // by BAM 2026-09-22 (rubric v1.3 gate A8).
 //
 // ASSESSMENT SIZE: the series exception recorded in the header of using-learn-shared.ts (rubric D2,

@@ -4,7 +4,7 @@ import type { AuthoredCourse } from "./authored-course";
 // none of BAM's certifications carry stress physiology, HRV literacy, or recovery-modality
 // evidence, so this one teaches content as well as coaching.
 //
-// EVERY factual claim traces to the verified dossier (plans/future-courses/health/dossiers/
+// EVERY factual claim traces to the verified dossier (plans/future-courses/health-and-longevity/health/dossiers/
 // 04-recovery-stress/04-recovery-stress.md §3, §3b, §4). Notable verification outcomes:
 // - The Gemini export INVERTED a null result: it cited Brinkmann 2020 as evidence that HRV
 //   biofeedback reduces stress, when that RCT found neither HRV-Bfb nor mindfulness beat a

@@ -70,7 +70,7 @@ const CATALOG = [
   // Study Skills. Registered via seedAuthoredCourse rather than the shorthand form, which is why
   // check-standards-coverage cannot see it and this list has to carry it explicitly.
   "how-to-research",
-  // Science & Math track, Wave 1 (plans/future-courses/sciences/). Same reason as how-to-research:
+  // Science & Math track, Wave 1 (plans/future-courses/science-and-math/sciences/). Same reason as how-to-research:
   // registered via seedAuthoredCourse, so the coverage ratchet cannot see it. This is the course
   // that carries the catalog's first MATHEMATICS claims.
   "how-to-read-a-number",

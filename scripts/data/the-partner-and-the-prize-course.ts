@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // "The Partner and the Prize: Denise Scott Brown, One Firm, and a Citation That Named Her"
 // (Culture & History). Slug to be registered: `the-partner-and-the-prize`.
 //
-// SOURCE BRIEF: plans/future-courses/uncredited/2026-09-18-denise-scott-brown-brief.md.
+// SOURCE BRIEF: plans/future-courses/culture-and-history/uncredited/2026-09-18-denise-scott-brown-brief.md.
 // BAM APPROVED THE BRIEF ON 2026-09-19, and changed its recommended form. The brief proposed her as
 // section 4 of a three-case cluster course with Judith Leyster and Margaret Keane. BAM approved
 // ONLY Scott Brown; Leyster and Keane are on hold. So this is a STANDALONE course built from the

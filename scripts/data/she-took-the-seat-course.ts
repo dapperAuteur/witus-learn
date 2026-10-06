@@ -1,6 +1,6 @@
 import type { AuthoredCourse } from "./authored-course";
 
-// She Did the Work, wave 1 (plans/65 Phase 4.1, plans/future-courses/she-did-the-work/).
+// She Did the Work, wave 1 (plans/65 Phase 4.1, plans/future-courses/culture-and-history/she-did-the-work/).
 //
 // Course E from 00-course-proposals.md: the sports-media ensemble. Twelve women, four sections, one
 // argument. Built as a COHORT rather than twelve biographies, because the proposals doc's own test
@@ -8,7 +8,7 @@ import type { AuthoredCourse } from "./authored-course";
 // the chapter column. Courses A (woop-science-of-doing-it) and C (know-your-rights-at-work) from
 // that document already shipped, which makes this the next unbuilt ensemble in its build order.
 //
-// EVERY SUBJECT HERE IS ALIVE. The seed files in plans/future-courses/she-did-the-work/ carry a
+// EVERY SUBJECT HERE IS ALIVE. The seed files in plans/future-courses/culture-and-history/she-did-the-work/ carry a
 // verification pass that found fourteen factual errors in the source calendar, and the corrections
 // are load-bearing in this course rather than incidental to it:
 //   * Beth Mowins was the FIRST woman to call a NATIONALLY TELEVISED NFL game (2017) and the SECOND

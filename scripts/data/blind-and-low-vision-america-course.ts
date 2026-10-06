@@ -16,7 +16,7 @@ import type { AuthoredCourse } from "./authored-course";
 // read it, the schools, the segregated schools, the credit, and the law.
 //
 // WHERE THE FACTS COME FROM:
-// plans/future-courses/languages/2026-08-27-03-blind-and-low-vision-research.md is the brief. Every
+// plans/future-courses/languages/languages/2026-08-27-03-blind-and-low-vision-research.md is the brief. Every
 // claim it marked NEEDS VERIFICATION was either verified against a primary or institutional source
 // in the authoring pass of 2026-08-30, or dropped, or hedged in the lesson AND filed in
 // src/lib/research-checks.ts. The identifiers printed in the `## Sources` blocks are only the ones

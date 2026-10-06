@@ -3,8 +3,8 @@ import type { AuthoredCourse } from "./authored-course";
 // Acting: The Frame, the Stage, and the Read.
 //
 // Companion to scripts/data/voice-acting-course.ts. Source note:
-// plans/future-courses/acting/acting.md (BAM asked for research FIRST), so this shipped under the
-// Tier 1 method in docs/course-method/README.md: plans/future-courses/acting/dossier.md holds the
+// plans/future-courses/careers-and-media/acting/2026-08-21-acting.md (BAM asked for research FIRST), so this shipped under the
+// Tier 1 method in docs/course-method/README.md: plans/future-courses/careers-and-media/acting/2026-08-22-dossier.md holds the
 // five-section research record and ONLY its section 4 entered a lesson.
 //
 // THE DESIGN PROBLEM, AND THE ANSWER THIS COURSE GIVES.

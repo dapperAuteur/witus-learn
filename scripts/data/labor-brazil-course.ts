@@ -1,5 +1,5 @@
 // Authored "Brazil: State-Chartered Unions, a Union-Made President, and the 2017 Rupture" — Wave 2
-// of the Workers' Rights track (plans/future-courses/workers-rights-track-proposal.md). Country
+// of the Workers' Rights track (plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md). Country
 // companion to the anchor, "The History of Unions: America and the World"
 // (scripts/data/history-of-unions-course.ts). Brazil's slot in the track: CORPORATISM WRITTEN INTO
 // THE LAW — unions chartered, categorized, and funded by the state (the 1943 CLT) — and then the

@@ -3,7 +3,7 @@
 // read from src/lib/help-articles.ts at seed time by `helpLesson`, so nothing here can drift from
 // the screen it describes.
 //
-// Brief: plans/future-courses/using-learn/2026-09-21-using-learn-paths-brief.md, approved by BAM
+// Brief: plans/future-courses/using-learn-witus/using-learn/2026-09-21-using-learn-paths-brief.md, approved by BAM
 // 2026-09-22 (rubric v1.3 gate A8). The article list and the path name come from the brief's
 // USING-T1 row; the section order is the order a teacher meets these screens in, which is not the
 // order the brief lists them in.

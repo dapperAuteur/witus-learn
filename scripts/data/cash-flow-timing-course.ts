@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // MONEY-03 · "Cash Flow, and When the Money Actually Moves" (Money & Property). Source brief:
-// plans/future-courses/2026-08-27-15-personal-finance-track-research.md, sections 4.1, 4.4, 7.
+// plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md, sections 4.1, 4.4, 7.
 // Third course of the `personal-money` series, code MONEY. Tier 0. NO migration - pnpm seed:courses.
 //
 // THE SPINE, and the sentence the whole course is built to keep true:

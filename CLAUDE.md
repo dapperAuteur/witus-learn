@@ -45,8 +45,10 @@ This applies to every new course, private study courses included. It exists beca
 check keeps changing the answer: a subject that looks like a new course is often already a lesson
 somewhere, and building first means finding that out after the work is done.
 
-Put the brief **beside the seed note that prompted it**, date-prefixed:
-`plans/future-courses/<area>/YYYY-MM-DD-<slug>-brief.md`. It has seven sections:
+Put the brief **beside the seed note that prompted it**, date-prefixed, inside the folder named for the
+app category the course will list under (`plans/future-courses/<category>/`, see
+`scripts/lib/plan-categories.ts`; a multi-file topic keeps its own sub-folder, `<category>/<area>/`):
+`plans/future-courses/<category>/[<area>/]YYYY-MM-DD-<slug>-brief.md`. It has seven sections:
 
 1. **Description** — what a learner will be able to do or understand by the end.
 2. **Outline** — sections and lessons, marked as a draft.

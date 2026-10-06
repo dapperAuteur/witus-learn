@@ -4,7 +4,7 @@ import type { AuthoredCourse } from "./authored-course";
 // Slug to be registered: `notes-made-by-mr-george-hunt`, the exact phrase on the 1897 inner title page.
 // PRIVATE, FREE, NO SERIES CODE, by BAM's decision of 2026-09-19: private courses do not carry CREDIT
 // codes, so the brief's proposed CREDIT W2 slot is NOT used. Built from the brief BAM approved on
-// 2026-09-19: plans/future-courses/uncredited/2026-09-18-george-hunt-brief.md.
+// 2026-09-19: plans/future-courses/culture-and-history/uncredited/2026-09-18-george-hunt-brief.md.
 // RESEARCH TIER: 1-P / 2 (a living community's knowledge; the cost of being wrong is high).
 // Every `sourceLessonSlug` below is course-internal, so the registered slug does not affect them.
 //

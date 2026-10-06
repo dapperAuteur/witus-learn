@@ -2,7 +2,7 @@ import type { AuthoredCourse } from "./authored-course";
 
 // He Did the Work, wave 1 (plans/65 Phase 4.4: "pair launches with She Did the Work waves").
 //
-// WHY THIS COHORT. plans/future-courses/he-did-the-work/01-list-of-men-that-did-the-work.md lists
+// WHY THIS COHORT. plans/future-courses/culture-and-history/he-did-the-work/2026-08-02-01-list-of-men-that-did-the-work.md lists
 // five names: Walter White, W. E. B. Du Bois, Thurgood Marshall, James Weldon Johnson, Onesimus.
 // Two of the five are already taught elsewhere in this catalog, so building them again would be
 // duplication rather than a wave:

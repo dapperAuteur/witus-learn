@@ -2,7 +2,7 @@
 // series (docs/storytelling-curriculum.md, docs/documenters-course-outline.md).
 //
 // SOURCE. Built on the Documenters Field Guide, published by City Bureau, which BAM supplied as PDFs
-// on 2026-08-03 (plans/future-courses/documentary/). Everything attributed to the Guide in this
+// on 2026-08-03 (plans/future-courses/storytelling/documentary/). Everything attributed to the Guide in this
 // course was read from those files, not from a description of them. Article "last updated" dates are
 // given where the Guide states them, because a course teaching accuracy should model it.
 //

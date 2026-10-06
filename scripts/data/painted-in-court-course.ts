@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // "Painted in Court: The Keane Verdict, the Appeal, and What a Court Can Repair" (Culture &
 // History, with Law & Civics alongside). Slug to be registered: `painted-in-court`. PRIVATE study,
 // by BAM's approval on 2026-09-21 of the brief at
-// plans/future-courses/uncredited/2026-09-18-margaret-keane-brief.md, built STANDALONE rather than
+// plans/future-courses/culture-and-history/uncredited/2026-09-18-margaret-keane-brief.md, built STANDALONE rather than
 // as section 3 of the three-case cluster the brief proposed, because BAM approved her alone and
 // because the document that arrived on 2026-09-20 changed what the case is about.
 // RESEARCH TIER 2 (law: a wrong sentence about what a court held is the kind of sentence the tier
@@ -2926,7 +2926,7 @@ United Press International. (1986a, June 4). *Artist wins slander suit*. UPI Arc
 // NO migration. NO seed:* re-run beyond `pnpm seed:courses`.
 //
 //   // "Painted in Court" (Margaret Keane, plans/83 E-01). PRIVATE study, by BAM's approval on
-//   // 2026-09-21 of plans/future-courses/uncredited/2026-09-18-margaret-keane-brief.md, built
+//   // 2026-09-21 of plans/future-courses/culture-and-history/uncredited/2026-09-18-margaret-keane-brief.md, built
 //   // STANDALONE rather than as section 3 of the cluster the brief proposed: BAM approved her
 //   // alone, and the full Ninth Circuit memorandum he supplied on 2026-09-20 changed the subject
 //   // from "she won four million by painting in court" to what a court can and cannot repair. Four

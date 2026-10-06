@@ -2,10 +2,10 @@
 // course on Learn.WitUS (BVC), for homeschoolers (upper-elementary → high school) + adult
 // learners. Companion to the Hoodoo course (the Migration is how Southern traditions spread
 // north) and the Civics courses (the Black urban vote, segregation law). Design doc:
-// plans/future-courses/great-migration.md.
+// plans/future-courses/completed/culture-and-history/2026-07-08-great-migration.md.
 //
 // Every factual claim in this course was checked against a dedicated verification pass —
-// plans/future-courses/great-migration-facts.md — before authoring. Two claims that pass
+// plans/future-courses/completed/culture-and-history/2026-07-08-great-migration-facts.md — before authoring. Two claims that pass
 // flagged as UNVERIFIED are deliberately absent or softened here:
 //   1. Philadelphia's oft-repeated "500% growth, 1910–1920" — the raw population figures
 //      every source cites alongside that percentage (84,549 → 134,229) do not support it

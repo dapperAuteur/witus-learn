@@ -60,7 +60,7 @@ const POOL_TOLERANCE = 0.9;
 const USING_LEARN_SPEC_NOTE =
   "BAM, 2026-09-22: a help-centre path assesses screens and controls, so section quizzes pool 10 " +
   "serving 5 and the final pools 25 serving 10, rather than the 40-to-100 the density rule sets " +
-  "for argued material. Brief: plans/future-courses/using-learn/2026-09-21-using-learn-paths-brief.md.";
+  "for argued material. Brief: plans/future-courses/using-learn-witus/using-learn/2026-09-21-using-learn-paths-brief.md.";
 
 const SPEC_EXCEPTIONS: Record<string, string> = {
   // BAM, 2026-09-22. The six "Using Learn.WitUS" (USING) paths teach the help centre itself, so a

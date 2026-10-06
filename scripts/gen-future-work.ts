@@ -29,12 +29,12 @@
 //
 // The category folder adds NOTHING to a key. That is deliberate and load-bearing: item keys are the
 // join column for `future_work_notes`, and a note filed against `mansa-gold-interview-prep` must still
-// render after the folder it sits in moves from `plans/future-courses/mansa-gold/` to
+// render after the folder it sits in moves from `plans/future-courses/bvc-taster/mansa-gold/` to
 // `plans/future-courses/bvc-taster/mansa-gold/`. A folder at the top level that is NOT in the category
 // map is still read as a legacy area (with a warning), so an unfiled bundle is visible rather than lost.
 //
 // PRIVATE STUDY. A bundle folder that contains a `*READ-ME-FIRST-private-study-only.md` marker holds
-// material BAM reads but does not publish (plans/future-courses/uncredited/00-READ-ME-FIRST…). Pushing
+// material BAM reads but does not publish (plans/future-courses/culture-and-history/uncredited/00-READ-ME-FIRST…). Pushing
 // its text into this committed module would publish it to GitHub, so such a folder emits nothing. The
 // one exception is a key that was already committed before the rule existed (GRANDFATHERED_PRIVATE_KEYS),
 // because removing it would orphan notes filed against it.

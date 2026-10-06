@@ -2,7 +2,7 @@ import type { AuthoredCourse } from "./authored-course";
 
 // CREDIT-W1 · "Written by Himself" (Culture & History). The first course on the lettered W track
 // inside the CREDIT series. Source brief:
-// plans/future-courses/2026-08-25-12-black-writers-research.md §1, which called ghostwriting the
+// plans/future-courses/culture-and-history/2026-08-25-12-black-writers-research.md §1, which called ghostwriting the
 // strongest first build in the whole writing file. Tier 0.
 //
 // THE SPINE, and the sentence the whole course is built to keep true:

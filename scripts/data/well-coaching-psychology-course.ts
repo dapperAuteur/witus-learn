@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // WELL-01 · Coaching Psychology (plans/67). The program's core: behavior-change science and the
 // coaching craft, the material a CPT/CNC/CES does not carry.
 //
-// EVERY factual claim traces to the verified dossier (plans/future-courses/health/dossiers/
+// EVERY factual claim traces to the verified dossier (plans/future-courses/health-and-longevity/health/dossiers/
 // 01-coaching-psychology.md §3-4). Notable verification outcomes baked in here:
 // - MI vocabulary is the FOURTH edition's (Miller & Rollnick, 2023, verified from the book):
 //   spirit = partnership/acceptance/compassion/EMPOWERMENT; four TASKS; the FIXING reflex.

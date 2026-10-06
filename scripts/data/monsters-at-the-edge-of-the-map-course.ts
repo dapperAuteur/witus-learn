@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // Here Be Dragons, course 1 of 5: Monsters at the Edge of the Map.
 //
 // Plan: plans/58-here-be-dragons-series.md. Category: Culture & History. Grades 9-12.
-// Connections: plans/future-courses/culture/01-connections-to-the-catalog.md.
+// Connections: plans/future-courses/culture-and-history/culture/2026-08-08-01-connections-to-the-catalog.md.
 //
 // THE RULE THIS SERIES IS BUILT ON, and the one not to break while authoring the rest: the naive
 // framing ("people used to think the world was flat, then we got smart") is FACTUALLY WRONG and

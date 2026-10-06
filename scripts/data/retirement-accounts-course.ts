@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // MONEY-07 · "Retirement: the Plan, the Fee Disclosure, and the Floor" (Money & Property). Source
-// brief: plans/future-courses/2026-08-27-15-personal-finance-track-research.md, sections 4.6, 6, 7
+// brief: plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md, sections 4.6, 6, 7
 // and 10. Seventh course of the `personal-money` series, code MONEY. Tier 0.
 //
 // THE SPINE, and the sentence the whole course is built to keep true:

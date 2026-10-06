@@ -1,5 +1,5 @@
 // Authored "Mexico: The Protection Contract, and the Trade Deal That Came for It" — Wave 1 of the
-// Workers' Rights track (plans/future-courses/workers-rights-track-proposal.md). Country companion to
+// Workers' Rights track (plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md). Country companion to
 // the anchor, "The History of Unions: America and the World" (scripts/data/history-of-unions-course.ts).
 // This course is the ANSWER to the anchor's bleakest lesson — the ILO floor "is made of paper."
 // Mexico is where an international labor rule finally acquired teeth.

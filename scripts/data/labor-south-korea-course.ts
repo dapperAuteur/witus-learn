@@ -1,5 +1,5 @@
 // Authored "South Korea: Democracy, the Chaebol, and the Lawsuit as a Weapon" — Wave 2 of the
-// Workers' Rights track (plans/future-courses/workers-rights-track-proposal.md). A country course
+// Workers' Rights track (plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md). A country course
 // hanging off the anchor, "The History of Unions: America and the World"
 // (scripts/data/history-of-unions-course.ts). The anchor has NO Korea lesson — its six national
 // models are the Nordics, Germany, Japan, China, Poland/COSATU and the Gulf — so this course

@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // "Who Built the Blood Bank: Charles Drew, the Research, and the Record" (Culture & History).
 // CREDIT series, science track, position S2, beside S1 (`the-paper-and-the-prize`, Esther Lederberg).
 // Slug to be registered: `who-built-the-blood-bank`. PRIVATE UNTIL VETTED, by BAM's approval of the
-// brief at plans/future-courses/he-did-the-work/2026-09-18-charles-drew-brief.md. Every
+// brief at plans/future-courses/culture-and-history/he-did-the-work/2026-09-18-charles-drew-brief.md. Every
 // `sourceLessonSlug` below is course-internal, so the registered slug does not affect them.
 //
 // THE SPINE, and it must not be flattened into a hero story or a debunking:

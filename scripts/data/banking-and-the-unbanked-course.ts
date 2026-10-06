@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // MONEY-02 · "Banking, and Who Has No Bank" (Money & Property). Source brief:
-// plans/future-courses/2026-08-27-15-personal-finance-track-research.md, section 4.4, which called
+// plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md, section 4.4, which called
 // this the strong second build of the personal-money track. Sibling of MONEY-01 (the credit course),
 // authored in parallel. Tier 0.
 //

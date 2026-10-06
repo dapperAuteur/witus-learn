@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // MONEY-06 · "Housing: the Lease, the Loan Estimate, and the Map" (Money & Property). Source brief:
-// plans/future-courses/2026-08-27-15-personal-finance-track-research.md, sections 4.9, 7 and 10.
+// plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md, sections 4.9, 7 and 10.
 // Sixth course of the `personal-money` series, code MONEY. Tier 0.
 //
 // THE SPINE, and the sentence the whole course is built to keep true:

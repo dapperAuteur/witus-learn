@@ -1,6 +1,6 @@
 // Authored "The Negro Leagues: Who Owned the Game" — a cited, high-school-and-up course on
 // Learn.WitUS (Culture & History), from BAM's note in
-// plans/future-courses/sports-courses/negro-leagues.md: "tell story of Negro Leagues. start with
+// plans/future-courses/sports/sports-courses/2026-08-20-negro-leagues.md: "tell story of Negro Leagues. start with
 // baseball and branch out to other sports. could be a compliment or branch from stories of
 // Indianapolis and Indianapolis IN and Madame CJ Walker."
 //

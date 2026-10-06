@@ -4,9 +4,9 @@ import type { AuthoredCourse } from "./authored-course";
 // (Culture & History). Slug to be registered: `what-the-citation-records`.
 //
 // SOURCE BRIEFS, approved by BAM:
-//   plans/future-courses/uncredited/2026-09-18-candace-pert-brief.md          (2026-09-19)
-//   plans/future-courses/uncredited/2026-09-18-robscheit-robbins-brief.md     (2026-09-19)
-//   plans/future-courses/uncredited/2026-09-18-isabella-karle-brief.md        (2026-09-20)
+//   plans/future-courses/culture-and-history/uncredited/2026-09-18-candace-pert-brief.md          (2026-09-19)
+//   plans/future-courses/culture-and-history/uncredited/2026-09-18-robscheit-robbins-brief.md     (2026-09-19)
+//   plans/future-courses/culture-and-history/uncredited/2026-09-18-isabella-karle-brief.md        (2026-09-20)
 //
 // BAM'S CHANGES TO THE BRIEFS. They proposed a FOUR-case cluster course, adding Isabella Karle and
 // Marthe Gautier. On 2026-09-19 BAM approved only Pert and Robscheit-Robbins, and this file was

@@ -1,7 +1,7 @@
 // Authored "Pan-Africanism: The Idea, the Movement, the Reckoning" — a Culture & History course
 // on Learn.WitUS (BVC), for high school students (and adult learners). This is the ANCHOR /
 // entry-point course of a proposed Pan-Africanism track (see
-// plans/future-courses/pan-africanism-track-proposal.md) — each follow-on (the Congresses,
+// plans/future-courses/completed/culture-and-history/2026-07-15-pan-africanism-track-proposal.md) — each follow-on (the Congresses,
 // Garvey & the UNIA, Du Bois, Nkrumah & OAU→AU, Négritude, Rastafari & Ethiopia, the
 // diaspora-vs-continent tension, the post-independence critiques) gets its own deep course later;
 // THIS course is the movement's overview and connective tissue.

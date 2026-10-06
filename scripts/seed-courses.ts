@@ -423,7 +423,7 @@ async function main() {
   });
 
   // CREDIT-S2 · "Who Built the Blood Bank" (Charles Drew). PRIVATE until vetted, by BAM's approval
-  // (2026-09-18) of plans/future-courses/he-did-the-work/2026-09-18-charles-drew-brief.md, "private
+  // (2026-09-18) of plans/future-courses/culture-and-history/he-did-the-work/2026-09-18-charles-drew-brief.md, "private
   // until vetted, Culture & History, link to Credit". The CREDIT science track beside S1
   // (the-paper-and-the-prize). Its own call rather than the CREDIT array because that loop does not
   // pass visibility. Built from NLM Profiles in Science and six digitized Drew Papers documents; it
@@ -449,7 +449,7 @@ async function main() {
   });
 
   // "The Partner and the Prize" (Denise Scott Brown). PRIVATE study, plans/83 E-23, by BAM's
-  // approval of plans/future-courses/uncredited/2026-09-18-denise-scott-brown-brief.md on
+  // approval of plans/future-courses/culture-and-history/uncredited/2026-09-18-denise-scott-brown-brief.md on
   // 2026-09-19. Built STANDALONE rather than as a section of the three-case cluster the brief
   // proposed, because BAM approved only her of that three, and NOT inside public
   // `the-name-on-the-door`, because he did not lift the private-only rule. NO series code, per the
@@ -467,7 +467,7 @@ async function main() {
   });
 
   // "Notes Made by Mr. George Hunt" (plans/83 E-04). PRIVATE study, by BAM's approval of
-  // plans/future-courses/uncredited/2026-09-18-george-hunt-brief.md on 2026-09-19, under the A6
+  // plans/future-courses/culture-and-history/uncredited/2026-09-18-george-hunt-brief.md on 2026-09-19, under the A6
   // condition he confirmed: no stories, songs, prayers, hereditary names or ceremonial detail, and
   // no Kwak'wala personal name printed anywhere. The subject is the CREDIT RECORD (title pages,
   // archive filing, the named re-attribution work), never the knowledge. NO series code. The hold
@@ -487,7 +487,7 @@ async function main() {
   });
 
   // "Who May Teach" (Emmy Noether, plans/83 E-19). PRIVATE study, by BAM's approval of
-  // plans/future-courses/uncredited/2026-09-18-emmy-noether-brief.md on 2026-09-19. Section 6 is
+  // plans/future-courses/culture-and-history/uncredited/2026-09-18-emmy-noether-brief.md on 2026-09-19. Section 6 is
   // four corrections to the popular version, all settled against the digitised Goettingen
   // catalogues: six semesters not four years, no 19 November 1915 vote in any source, the ministry
   // rather than an academic senate, and "gratis" as a fee category printed on Hilbert's own
@@ -535,7 +535,7 @@ async function main() {
   });
 
   // "Whose Name Is on the Score" (Zitkala-Sa, plans/83 E-06). PRIVATE study, by BAM's approval of
-  // plans/future-courses/uncredited/2026-09-18-zitkala-sa-brief.md on 2026-09-19, built STANDALONE
+  // plans/future-courses/culture-and-history/uncredited/2026-09-18-zitkala-sa-brief.md on 2026-09-19, built STANDALONE
   // because Delia Derbyshire was still being researched that day. Sections 1 and 4 are the general
   // frame and name no second subject, so a Derbyshire section drops in between 3 and 4 without
   // renaming the course or rewriting a lesson. A6 condition BAM confirmed: the course never
@@ -560,7 +560,7 @@ async function main() {
   });
 
   // "Who Were the Computers" (the six ENIAC programmers, plans/83 E-13). PRIVATE study, by BAM's
-  // approval of plans/future-courses/uncredited/2026-09-18-eniac-six-brief.md on 2026-09-19, under
+  // approval of plans/future-courses/culture-and-history/uncredited/2026-09-18-eniac-six-brief.md on 2026-09-19, under
   // the condition he approved it on: NO lesson states the 1946-caption claim as fact until an
   // original caption is read. It is attributed to Kathy Kleiman by name everywhere it appears, and
   // section 4 teaches the gap as a gap. NO series code. NO migration: pnpm seed:courses.
@@ -1656,7 +1656,7 @@ async function main() {
   });
 
   // ── Science & Math, Wave 1 ───────────────────────────────────────────────────────────────────
-  // Track proposal: plans/future-courses/sciences/02-science-and-math-track-proposal.md.
+  // Track proposal: plans/future-courses/science-and-math/sciences/2026-08-07-02-science-and-math-track-proposal.md.
   // The category is new. Every course in it complements courses that already exist rather than
   // sitting beside the catalog: SCI-01 serves the 34 Civics courses, which all quote numbers and
   // none of which teach a learner how to check one.
@@ -1668,7 +1668,7 @@ async function main() {
   // SCI-01 How to Read a Number. Wave 1, so it needs NO platform work: every assessment is
   // scenario multiple-choice or a `:::reveal` self-check, and the learner is never asked to
   // produce a number (which `checkExerciseAnswer` grades by string equality and could not mark
-  // fairly). Outline: plans/future-courses/sciences/outlines/01-how-to-read-a-number.md.
+  // fairly). Outline: plans/future-courses/science-and-math/sciences/outlines/2026-08-07-01-how-to-read-a-number.md.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -1687,7 +1687,7 @@ async function main() {
   // starting where river-finding-your-way ends (navigation) and climbing the distance ladder. No
   // equations, by design, so it ships in Wave 1. Its risk is not the physics, it is the biography:
   // five checks are registered in src/lib/research-checks.ts and the lessons hedge in the text
-  // until they are answered. Outline: plans/future-courses/sciences/outlines/02-*.md.
+  // until they are answered. Outline: plans/future-courses/science-and-math/sciences/outlines/02-*.md.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -1874,7 +1874,7 @@ async function main() {
       seriesPosition: "01",
     },
     // She Took the Seat and Held the Door — She Did the Work, wave 1 (plans/65 Phase 4.1; Course E
-    // in plans/future-courses/she-did-the-work/00-course-proposals.md). A COHORT course: twelve
+    // in plans/future-courses/culture-and-history/she-did-the-work/2026-08-07-00-course-proposals.md). A COHORT course: twelve
     // living sports-media figures taught as one argument about how a closed profession opens, not as
     // twelve biographies. Culture & History rather than Careers & Media on purpose: it is the
     // history/how-it-opened companion to `broadcasting-break-in`, which is the career how-to, and
@@ -1902,7 +1902,7 @@ async function main() {
     // with She Did the Work waves"). The deliberate PAIR to she-took-the-seat: that course is how
     // INDIVIDUALS enter a closed profession one seat at a time, this one is how an ORGANIZATION
     // forces an institution open over forty-five years. Four of the five names on
-    // plans/future-courses/he-did-the-work/01-list-of-men-that-did-the-work.md (Du Bois, Johnson,
+    // plans/future-courses/culture-and-history/he-did-the-work/2026-08-02-01-list-of-men-that-did-the-work.md (Du Bois, Johnson,
     // White, Marshall) taught as one institution's four instruments rather than four biographies;
     // Onesimus and Molefi Kete Asante, the other two subjects in that directory, are already taught
     // in `training-the-colonizer` and `afrocentricity`. Charles Hamilton Houston is added because
@@ -1920,7 +1920,7 @@ async function main() {
       seriesPosition: "HIM1",
       seriesTrack: "He Did the Work",
     },
-    // Acting: The Frame, the Stage, and the Read (source note: plans/future-courses/acting/acting.md,
+    // Acting: The Frame, the Stage, and the Read (source note: plans/future-courses/careers-and-media/acting/2026-08-21-acting.md,
     // which asked for research FIRST, so this shipped Tier 1 with a dossier beside that note). The
     // on-camera-and-stage companion to voice-acting: script analysis, the shot-size vocabulary and
     // what each size does to a performance, medium-by-medium adjustment (stage, film, television,
@@ -2027,7 +2027,7 @@ async function main() {
     // (the True Reformers embezzlement, Binga's charge) sit in the achievement column where they
     // belong. It deliberately teaches NO instruments of clearance; the route series owns those.
     { slug: "what-they-built", course: WHAT_THEY_BUILT_COURSE, category: "Culture & History" },
-    // "The Negro Leagues: Who Owned the Game" (plans/future-courses/sports-courses/negro-leagues.md).
+    // "The Negro Leagues: Who Owned the Game" (plans/future-courses/sports/sports-courses/2026-08-20-negro-leagues.md).
     // CATEGORY DECISION, and it is deliberate: this is **Culture & History**, not Sports. The Sports
     // category holds the play-it / know-it / work-in-it courses (golf, football, croquet,
     // pickleball), which teach a learner to play a game and work in its industry. This course
@@ -2184,10 +2184,10 @@ async function main() {
     // Haymarket bombing is taught AS AN UNRESOLVED DISPUTE — the record never established who
     // threw the bomb, and the course refuses to pick. History companion to "Know Your Rights at
     // Work" (that course = your rights today; this one = how we got here). Proposal for the
-    // country-by-country track: plans/future-courses/workers-rights-track-proposal.md.
+    // country-by-country track: plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md.
     { slug: "history-of-unions", course: HISTORY_OF_UNIONS_COURSE, category: "Culture & History" },
     // Germany — Wave 1 of the Workers' Rights country track hanging off the anchor above
-    // (plans/future-courses/workers-rights-track-proposal.md). Co-determination taken apart:
+    // (plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md). Co-determination taken apart:
     // works councils under the Betriebsverfassungsgesetz (and the exact, non-synonymous
     // difference between INFORMATION, CONSULTATION and genuine CO-DETERMINATION rights), the
     // Mitbestimmungsgesetz 1976 supervisory board — with the chair's casting vote that makes
@@ -2220,7 +2220,7 @@ async function main() {
     // still-unresolved 2023 Tesla dispute is taught dated and with no winner. Honest limits: falling
     // density, migrant/platform workers outside the agreements, and the EU minimum-wage directive the
     // Nordic unions themselves resisted. Sweden is kept distinct from Denmark throughout. See
-    // plans/future-courses/workers-rights-track-proposal.md.
+    // plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md.
     { slug: "sweden-denmark-nordic-model", course: LABOR_NORDICS_COURSE, category: "Culture & History" },
     // Poland: Solidarność — When a Union Brought Down a State. Wave 1 of the workers'-rights
     // country track, hanging off the anchor (history-of-unions). The case where a TRADE UNION was
@@ -2259,7 +2259,7 @@ async function main() {
     // NO migration — pnpm seed:courses.
     { slug: "labor-south-korea", course: LABOR_SOUTH_KOREA_COURSE, category: "Culture & History" },
     // Brazil: State-Chartered Unions, a Union-Made President, and the 2017 Rupture — Wave 2 of the
-    // workers'-rights country track (plans/future-courses/workers-rights-track-proposal.md), hanging
+    // workers'-rights country track (plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md), hanging
     // off the anchor (history-of-unions). Corporatism written into LAW: the 1943 CLT's three locks
     // (unicidade, ministry charter, compulsory tax), the dictatorship using the machine, the ABC
     // strikes capturing it from within, 1988 keeping two locks (why C87 is still unratifiable), and
@@ -2288,7 +2288,7 @@ async function main() {
     // see plans/user-tasks/123-seed-labor-south-africa.md. Seeding is fine; promotion waits.
     { slug: "labor-south-africa", course: LABOR_SOUTH_AFRICA_COURSE, category: "Culture & History" },
     // Africa Before Colonization — the ANCHOR of the precolonial-Africa track
-    // (plans/future-courses/africa-precolonial-track-proposal.md; from BAM's world.md queue).
+    // (plans/future-courses/completed/culture-and-history/2026-07-15-africa-precolonial-track-proposal.md; from BAM's world.md queue).
     // Opens with the verified Hegel (1837) and Trevor-Roper (1965) "no history" quotes as the
     // artifact, then the documented record: Kush/25th Dynasty, Aksum (coins, Ezana, Ge'ez),
     // Ghana→Mali→Songhai + Timbuktu (Mansa Musa taught as a SOURCE AUDIT — al-Umari via
@@ -2312,7 +2312,7 @@ async function main() {
     { slug: "golf-play-know-work", course: GOLF_COURSE, category: "Sports" },
     { slug: "football", course: FOOTBALL_COURSE, category: "Sports" },
     // Afrocentricity: How to Evaluate a Contested Paradigm (Culture & History) — the ANCHOR of a
-    // proposed Afrocentricity track (plans/future-courses/afrocentricity-track-proposal.md). For high
+    // proposed Afrocentricity track (plans/future-courses/completed/culture-and-history/2026-07-15-afrocentricity-track-proposal.md). For high
     // school students. Teaches Afrocentricity (Asante's paradigm; roots in Diop) AS ITS PROPONENTS
     // DEFINE IT, presents its strongest claims from their own books, AND the substantive academic
     // criticism from the critics' own books — WITHOUT the course taking a side. The real deliverable
@@ -2327,16 +2327,16 @@ async function main() {
     // it; the course's own voice asserts only what is settled. No invented citations or quotes. 6
     // sections · 15 teaching lessons · 6 quizzes (15-question banks, above the 10-question attempt cap
     // so retries rotate). No migration — pnpm seed:courses. Natural home for BAM's source note
-    // plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md.
+    // plans/future-courses/culture-and-history/he-did-the-work/2026-07-14-Molefi-Kete-Asante.md.
     { slug: "afrocentricity", course: AFROCENTRICITY_COURSE, category: "Culture & History" },
     // Pan-Africanism: The Idea, the Movement, the Reckoning — the ANCHOR of the Pan-Africanism
-    // track (plans/future-courses/pan-africanism-track-proposal.md). 6 sections · 16 teaching
+    // track (plans/future-courses/completed/culture-and-history/2026-07-15-pan-africanism-track-proposal.md). 6 sections · 16 teaching
     // lessons · 6 quizzes (15-question banks). Garvey taught honestly (UNIA scale + Black Star
     // Line collapse + the 1923 conviction + Hoover's 1919 memo); strongmen named with hedged
     // numbers; quotes verbatim-verified or flagged. No migration — pnpm seed:courses.
     { slug: "pan-africanism", course: PAN_AFRICANISM_COURSE, category: "Culture & History" },
     // Pre-Columbian Mesoamerica — the ANCHOR of the Mesoamerica track
-    // (plans/future-courses/precolumbian-mesoamerica-track-proposal.md). Olmec (mother-vs-sister
+    // (plans/future-courses/completed/culture-and-history/2026-07-15-precolumbian-mesoamerica-track-proposal.md). Olmec (mother-vs-sister
     // taught AS a live debate; Cascajal contested), Aguada Fénix (2020, largest/oldest Maya
     // monument), Teotihuacan (builders/language UNKNOWN — the humility lesson), the Maya (script,
     // zero, Long Count; 2012 traced to Tortuguero Monument 6 = period ending, not prophecy; the
@@ -2351,7 +2351,7 @@ async function main() {
     // NO migration — pnpm seed:courses.
     { slug: "precolumbian-mesoamerica", course: PRECOLUMBIAN_MESOAMERICA_COURSE, category: "Culture & History" },
     // Asia Before European Colonization — the ANCHOR of the precolonial-Asia track
-    // (plans/future-courses/precolonial-asia-track-proposal.md; from BAM's world.md queue).
+    // (plans/future-courses/completed/culture-and-history/2026-07-15-precolonial-asia-track-proposal.md; from BAM's world.md queue).
     // ORIENTATION depth by design: the zones (South, East, Southeast, Central, West Asia),
     // when each flourished, and the connective tissue (Silk Roads land+sea, the Baghdad
     // translation movement with the House of Wisdom HEDGED per Gutas, the Mongols as neither
@@ -2376,7 +2376,7 @@ async function main() {
     // coerced, uncredited, uncompensated. NO migration — pnpm seed:courses.
     { slug: "training-the-colonizer", course: TRAINING_THE_COLONIZER_COURSE, category: "Culture & History" },
     // The Moors: The Word, the History, and the Evidence — from BAM's one-line brief
-    // plans/future-courses/moors.md. Tier 0. The spine is that "Moor" is an EXONYM whose referent
+    // plans/future-courses/culture-and-history/2026-08-21-moors.md. Tier 0. The spine is that "Moor" is an EXONYM whose referent
     // moves by century (Roman Mauri, Amazigh confederations, Arab elites, Iberian converts,
     // sub-Saharan Africans, Slavic saqaliba), so the course fixes the definition before any
     // downstream claim inherits it. Real history taught in full: 711 and the Chronicle-of-754
@@ -2395,7 +2395,7 @@ async function main() {
     // serving 5) · 1 final (40 serving 10) = 302 questions. NO migration — pnpm seed:courses.
     { slug: "the-moors", course: THE_MOORS_COURSE, category: "Culture & History" },
     // Who Gets the Credit: Black Inventors and the Machinery of Attribution — from BAM's one-line
-    // brief plans/future-courses/Black-inventors.md (theft and missing credit). Tier 0. The angle
+    // brief plans/future-courses/culture-and-history/2026-08-20-Black-inventors.md (theft and missing credit). Tier 0. The angle
     // is BAM's and the treatment deliberately teaches the SYSTEM first, because the theft framing
     // has a trap: the most-repeated stories in this genre are false or unprovable, and a course
     // that repeats them hands the reader an argument they will lose. So: what a patent grants, the
@@ -2537,7 +2537,7 @@ async function main() {
       seriesTrack: "She Did the Work",
     },
     // Who Signs the Print — CREDIT-02, the first DISCIPLINE course in the CREDIT series (source
-    // brief: plans/future-courses/08-black-creator-series-research.md §5, which surveyed eleven
+    // brief: plans/future-courses/culture-and-history/2026-08-25-08-black-creator-series-research.md §5, which surveyed eleven
     // disciplines and recommended printmaking be built first). CREDIT-00 teaches the general
     // mechanisms and CREDIT-01 the patent system; this one takes ONE medium's credit convention end
     // to end.
@@ -2579,7 +2579,7 @@ async function main() {
       seriesPosition: "02",
     },
     // The Name on the Door (CREDIT-03, Culture & History). The second DISCIPLINE course in the
-    // series, from plans/future-courses/08-black-creator-series-research.md §6 ("Architecture").
+    // series, from plans/future-courses/culture-and-history/2026-08-25-08-black-creator-series-research.md §6 ("Architecture").
     // Spine: a building is credited to a FIRM, a firm is named after whoever owns it, and firm
     // practice was that only the principal signed, so an employee designer appears nowhere the
     // public can see. LICENSURE adds a second gate: no licence, no architect of record.
@@ -2621,7 +2621,7 @@ async function main() {
     },
     // Written by Himself — CREDIT-W1, the first course on the lettered W (the written record) track
     // inside the CREDIT series. Source brief:
-    // plans/future-courses/2026-08-25-12-black-writers-research.md §1, which called ghostwriting the
+    // plans/future-courses/culture-and-history/2026-08-25-12-black-writers-research.md §1, which called ghostwriting the
     // strongest first build in the whole writing file and recommended the spine below.
     //
     // THE SPINE: a byline is a term in an agreement, and the title page is where the agreement
@@ -2706,7 +2706,7 @@ async function main() {
       seriesTrack: "WRI · The written record",
     },
     // The Match — WARRANT-01, the FIRST course in a new series (Civics). Source brief:
-    // plans/future-courses/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md, which
+    // plans/future-courses/civics/land-and-schools/2026-08-27-01-land-grants-hbcus-farm-programs.md, which
     // found the whole Morrill mechanism missing from a 226-course catalog (zero occurrences of
     // "Morrill", "Pigford", "Homestead Act", "heirs property" or "Federation of Southern
     // Cooperatives" in scripts/data/) and recommended this as the first build.
@@ -2808,7 +2808,7 @@ async function main() {
       category: "Civics",
     },
     // WARRANT-02 · The County Committee (Civics). The sibling of THE MATCH, from the same brief
-    // (plans/future-courses/land-and-schools/2026-08-27-01), section 8, Course C. WARRANT-01 met
+    // (plans/future-courses/civics/land-and-schools/2026-08-27-01), section 8, Course C. WARRANT-01 met
     // the series mechanism as a FUNDING FORMULA; this is its second form, the same federal
     // government met as a LENDER, delivering national money through a gate three neighbours stand
     // at. Tier 0. NO migration - pnpm seed:courses.
@@ -2851,7 +2851,7 @@ async function main() {
       seriesPosition: "02",
     },
     // MONEY-01 · Credit, and the Decisions Made About You (Money & Property). Source brief:
-    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md, sections 4.2, 7, 10.
+    // plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md, sections 4.2, 7, 10.
     // FIRST COURSE OF A NEW SERIES, `personal-money`, code MONEY. Tier 0. NO migration - pnpm
     // seed:courses.
     //
@@ -2900,7 +2900,7 @@ async function main() {
     },
     // MONEY-02 · "Banking, and Who Has No Bank" (Money & Property). Second course in the
     // `personal-money` series ("Your Money, and Who Decides"), from
-    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.4. Tier 0.
+    // plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md section 4.4. Tier 0.
     // NO migration - pnpm seed:courses.
     //
     // THE CATALOG HAD NO PERSONAL FINANCE AT ALL, and it said so about itself: nineteen of the
@@ -2938,7 +2938,7 @@ async function main() {
     },
     // MONEY-03 · "Cash Flow, and When the Money Actually Moves" (Money & Property). Third course
     // in the `personal-money` series ("Your Money, and Who Decides"), from
-    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.1. Tier 0.
+    // plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md section 4.1. Tier 0.
     // NO migration - pnpm seed:courses.
     //
     // WHY THIS SUBJECT AND NOT BUDGETING, WHICH IS THE DECISION WORTH RECORDING. The research brief
@@ -2983,7 +2983,7 @@ async function main() {
     },
     // MONEY-04 · "Predatory Products, Priced" (Money & Property). Fourth course in the
     // `personal-money` series ("Your Money, and Who Decides"), from
-    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md §4.10. Tier 0.
+    // plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md §4.10. Tier 0.
     // NO migration - pnpm seed:courses.
     //
     // THE SPINE, AND WHY IT IS NOT AN "AVOID SCAMS" COURSE: a predatory product is NOT a scam. It
@@ -3024,7 +3024,7 @@ async function main() {
     },
     // MONEY-06 · "Housing: the Lease, the Loan Estimate, and the Map" (Money & Property). Sixth
     // course in the `personal-money` series ("Your Money, and Who Decides"), from
-    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.9. Tier 0.
+    // plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md section 4.9. Tier 0.
     // NO migration - pnpm seed:courses.
     //
     // THE SPINE: a housing decision is a choice between two contracts, and almost every term that
@@ -3063,7 +3063,7 @@ async function main() {
     },
     // MONEY-05 · "Taxes, and the Money Taken Before You See It" (Money & Property). Fifth course in
     // the `personal-money` series ("Your Money, and Who Decides"), from
-    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.8. Tier 0.
+    // plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md section 4.8. Tier 0.
     // NO migration - pnpm seed:courses. Appended at the END of this loop rather than in numeric
     // position, because MONEY-07 was authored in parallel and both branches edit this array.
     //
@@ -3111,7 +3111,7 @@ async function main() {
     },
     // MONEY-07 · "Retirement: the Plan, the Fee Disclosure, and the Floor" (Money & Property).
     // Seventh course in the `personal-money` series ("Your Money, and Who Decides"), from
-    // plans/future-courses/2026-08-27-15-personal-finance-track-research.md section 4.6. Tier 0.
+    // plans/future-courses/money-and-property/2026-08-27-15-personal-finance-track-research.md section 4.6. Tier 0.
     // NO migration - pnpm seed:courses.
     //
     // THE SPINE: a retirement account is a legal wrapper somebody else decides whether to offer
@@ -3723,7 +3723,7 @@ async function main() {
 
   // "Using Learn.WitUS" (USING) — the help centre taught as six role paths, each ending in the
   // certificate this app already issues for a finished course. Brief:
-  // plans/future-courses/using-learn/2026-09-21-using-learn-paths-brief.md, approved by BAM
+  // plans/future-courses/using-learn-witus/using-learn/2026-09-21-using-learn-paths-brief.md, approved by BAM
   // 2026-09-22 (rubric v1.3 A8), who also added the cohort path and approved the assessment-size
   // exception recorded in scripts/audit-course.ts.
   //

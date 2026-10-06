@@ -1,5 +1,5 @@
 // Authored "Chile: A Labor System Designed to Be Weak" — Wave 2 of the Workers' Rights track
-// (plans/future-courses/workers-rights-track-proposal.md), and the recommended LAST country course
+// (plans/future-courses/completed/civics/2026-07-14-workers-rights-track-proposal.md), and the recommended LAST country course
 // in the learner's sequence: every other course in the track shows a labor system that EVOLVED;
 // Chile shows one that was DESIGNED, by named people, with a stated goal — the right final thought
 // before a student re-reads their own country's statute. Hangs off the anchor, "The History of

@@ -4,7 +4,7 @@ import type { AuthoredCourse } from "./authored-course";
 // Slug to be registered: `how-the-trades-work`. PRIVATE, price 0, priceType "free", NO series code.
 // Research tier: TIER 2 (the rubric sends credential-adjacent, money and safety subjects to Tier 2
 // whatever they score, and this is all three at once).
-// Brief: plans/future-courses/construction/2026-09-20-journeyman-curriculum-research.md, Option B,
+// Brief: plans/future-courses/science-and-math/construction/2026-09-20-journeyman-curriculum-research.md, Option B,
 // chosen by BAM on 2026-09-20. Rubric line from that file, section 11:
 //   "gates pass; B 3/2/3/3/3/2 = 32; form C6, course".
 //
@@ -6254,7 +6254,7 @@ U.S. Department of Labor. (n.d.-a). *Career seekers*. Apprenticeship.gov. Retrie
 //     priceType: "free",
 //     visibility: "private",
 //     publishHoldReason:
-//       "Private study for BAM, built from the Option B plan in plans/future-courses/construction/2026-09-20-journeyman-curriculum-research.md, chosen 2026-09-20. Every fee, hour, wage, code edition and examination figure was read on 2026-09-20 and prints that date, and several sit on sponsor and vendor pages that will move. Held private until those research checks are answered, the refusal list in lesson 1 has been read by BAM personally, and the Indiana worked example has been re-checked against the ordinance and the state agencies.",
+//       "Private study for BAM, built from the Option B plan in plans/future-courses/science-and-math/construction/2026-09-20-journeyman-curriculum-research.md, chosen 2026-09-20. Every fee, hour, wage, code edition and examination figure was read on 2026-09-20 and prints that date, and several sit on sponsor and vendor pages that will move. Held private until those research checks are answered, the refusal list in lesson 1 has been read by BAM personally, and the Indiana worked example has been re-checked against the ordinance and the state agencies.",
 //   });
 //
 //   NO seriesSlug, NO seriesCode, NO seriesPosition: BAM's 2026-09-19 decision that private courses

@@ -1,7 +1,7 @@
 import type { AuthoredCourse } from "./authored-course";
 
 // CREDIT-02 · "Who Signs the Print" (Culture & History). Source brief:
-// plans/future-courses/08-black-creator-series-research.md §5 ("Printmaking"), which called this
+// plans/future-courses/culture-and-history/2026-08-25-08-black-creator-series-research.md §5 ("Printmaking"), which called this
 // the sleeper of the eleven disciplines it surveyed and recommended building it first. Tier 0.
 //
 // THE SPINE, and the sentence the whole course is built to keep true:

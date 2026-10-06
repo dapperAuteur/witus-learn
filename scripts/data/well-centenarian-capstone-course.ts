@@ -4,7 +4,7 @@ import type { AuthoredCourse } from "./authored-course";
 // six pillars, grades the longevity evidence honestly, and ends in a project rather than a
 // lecture. Depends on WELL-00 through WELL-06 being complete.
 //
-// EVERY factual claim traces to the verified dossier (plans/future-courses/health/dossiers/
+// EVERY factual claim traces to the verified dossier (plans/future-courses/health-and-longevity/health/dossiers/
 // 07-longevity-capstone/07-longevity-capstone.md §3-4), plus claims already verified in the
 // dossiers for the pillars it synthesises. Notable verification outcomes:
 // - The Blue Zones scoping review EXCLUDED Loma Linda and Menorca, and found the advantage

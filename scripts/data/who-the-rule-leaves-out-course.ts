@@ -4,7 +4,7 @@ import type { AuthoredCourse } from "./authored-course";
 // (Culture & History). Slug to be registered: `who-the-rule-leaves-out`.
 //
 // RESEARCH TIER: 1. The brief IS the dossier
-// (`plans/future-courses/uncredited/2026-09-18-delia-derbyshire-brief.md`, second pass 2026-09-19;
+// (`plans/future-courses/culture-and-history/uncredited/2026-09-18-delia-derbyshire-brief.md`, second pass 2026-09-19;
 // its section 6 is the verification log), per docs/course-method/README.md. BAM approved the brief
 // on 2026-09-19 and amended it on 2026-09-20; see the next block.
 //
@@ -94,7 +94,7 @@ import type { AuthoredCourse } from "./authored-course";
 //
 // SECTION 4'S SOURCES WERE NOT RE-FETCHED BY THIS PASS, and that is said rather than blurred. The
 // Zitkala-Sa material comes from her APPROVED brief's verification log
-// (`plans/future-courses/uncredited/2026-09-18-zitkala-sa-brief.md`, section 6, fetched 2026-09-18)
+// (`plans/future-courses/culture-and-history/uncredited/2026-09-18-zitkala-sa-brief.md`, section 6, fetched 2026-09-18)
 // and from the shipped `whose-name-is-on-the-score`, whose own pass re-read all five registration
 // card images on 2026-09-20. Every sentence in Section 4 traces to one of:
 //   - the 1912 application card, front and back, read as an image (the typed heading, the DEC 12
@@ -6405,7 +6405,7 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
 //
 //    // "Who the Rule Leaves Out" (Delia Derbyshire, Ruby Payne-Scott and Zitkala-Sa; plans/83
 //    // E-03, E-11 and E-06). PRIVATE study, by BAM's approval of
-//    // plans/future-courses/uncredited/2026-09-18-delia-derbyshire-brief.md on 2026-09-19 and his
+//    // plans/future-courses/culture-and-history/uncredited/2026-09-18-delia-derbyshire-brief.md on 2026-09-19 and his
 //    // decision of 2026-09-20 to build ALL THREE cases here AND keep `whose-name-is-on-the-score`
 //    // standalone, each course pointing at the other. NO series code (BAM, 2026-09-19: private
 //    // courses carry no CREDIT code); keeps the series SLUG so the owner can find it beside the

@@ -6,7 +6,7 @@ import type { AuthoredCourse } from "./authored-course";
 // carry CREDIT codes at all. Every `sourceLessonSlug` below is course-internal, so the registered
 // slug does not affect them.
 //
-// BRIEF: plans/future-courses/uncredited/2026-09-18-emmy-noether-brief.md, APPROVED by BAM on
+// BRIEF: plans/future-courses/culture-and-history/uncredited/2026-09-18-emmy-noether-brief.md, APPROVED by BAM on
 // 2026-09-19. Research tier 0 (history, not health, law or money). Rubric v1.1: gates pass;
 // B 3/3/3/3/3/3 = 36; form C6, course.
 //
@@ -6784,7 +6784,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
 //
 //   // "Who May Teach" (Emmy Noether and the Göttingen course catalogue). PRIVATE, free, and with
 //   // NO series code: BAM's decision of 2026-09-19 that private courses do not carry CREDIT codes.
-//   // Approved brief: plans/future-courses/uncredited/2026-09-18-emmy-noether-brief.md (2026-09-19).
+//   // Approved brief: plans/future-courses/culture-and-history/uncredited/2026-09-18-emmy-noether-brief.md (2026-09-19).
 //   await seedAuthoredCourse(db, {
 //     tenantId: learnWitus,
 //     instructorId,

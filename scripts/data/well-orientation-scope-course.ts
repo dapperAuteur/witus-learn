@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // WELL-00 · Orientation & Scope (plans/67, the WELL wellness-coaching program).
 //
 // PRIVATE, owner-only at seed time: BAM's own study program first, public product later. Every
-// factual claim below traces to the VERIFIED dossier (plans/future-courses/health/dossiers/
+// factual claim below traces to the VERIFIED dossier (plans/future-courses/health-and-longevity/health/dossiers/
 // 00-orientation-scope.md, section 4 only) — sources were fetched and checked against primaries
 // on 2026-08-19, with corrections applied (e.g. the oft-cited NBHWC "4.2.7" competency number
 // did not survive verification; the scope document and handbook competency 4.2 did).

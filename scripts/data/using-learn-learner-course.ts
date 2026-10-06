@@ -3,7 +3,7 @@ import { helpLesson, sectionQuiz, finalQuiz } from "./using-learn-shared";
 
 // "Learning on Learn.WitUS" (USING-L1, the Learner path of the "Using Learn.WitUS" series).
 // RESEARCH TIER 1: product documentation, ours. Brief:
-// plans/future-courses/using-learn/2026-09-21-using-learn-paths-brief.md, approved by BAM
+// plans/future-courses/using-learn-witus/using-learn/2026-09-21-using-learn-paths-brief.md, approved by BAM
 // 2026-09-22 (rubric v1.3 gate A8). Nine lessons, one per help article, in the order the brief's
 // USING-L1 row lists them.
 //

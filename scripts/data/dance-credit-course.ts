@@ -10,7 +10,7 @@ import type { AuthoredCourse } from "./authored-course";
 // asserted from anecdote. Sections 1 to 3 are the law. Sections 4 and 5 are the archive and the
 // people, read against it.
 //
-// BRIEF: plans/future-courses/2026-08-25-10-dance-credit-research.md, which is primary-source
+// BRIEF: plans/future-courses/culture-and-history/2026-08-25-10-dance-credit-research.md, which is primary-source
 // verified and flags its own traps. This file follows it and RE-VERIFIED everything it prints.
 //
 // FETCH-OR-DO-NOT-CITE. Every identifier below (statute section, case citation, C.F.R. section,

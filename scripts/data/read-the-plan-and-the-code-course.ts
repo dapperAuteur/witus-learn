@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // "Reading the Plan and the Code" (Science & Math). Proposed slug: `read-the-plan-and-the-code`.
 // PRIVATE, free, and carrying NO SERIES CODE, by BAM's decision of 2026-09-19 (private courses do
 // not carry CREDIT-style codes) and his approval of the brief at
-// plans/future-courses/construction/2026-09-20-read-the-plan-and-the-code-brief.md on 2026-09-20.
+// plans/future-courses/science-and-math/construction/2026-09-20-read-the-plan-and-the-code-brief.md on 2026-09-20.
 // Proposed series SLUG only: `the-house-you-live-in` ("The House You Live In"), where this is the
 // mechanism course the four system courses depend on. Every `sourceLessonSlug` below is
 // course-internal, so the registered slug does not affect them.
@@ -60,7 +60,7 @@ import type { AuthoredCourse } from "./authored-course";
 //   5. 24 CFR 3280.1, via law.cornell.edu/cfr/text/24/3280.1. The part-level subpart list was read
 //      on 2026-09-20 in the sources inventory.
 //   6. 17 U.S.C. 105, read 2026-09-20 per the sources inventory at
-//      plans/future-courses/construction/2026-09-20-00-sources-and-what-can-be-taught.md.
+//      plans/future-courses/science-and-math/construction/2026-09-20-00-sources-and-what-can-be-taught.md.
 //   7. County of Santa Cruz, California, Community Development and Infrastructure: the "Typical
 //      Inspections" page and the "Inspections" page, both fetched 2026-09-20. A named, ordered,
 //      published inspection list from a real building department, used for section 6.

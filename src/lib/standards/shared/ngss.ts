@@ -40,7 +40,7 @@ export const NGSS: SharedFramework = {
     // ── HS-ESS1 Earth's Place in the Universe ─────────────────────────────────────────────────
     // Fetched verbatim 2026-08-10 from nextgenscience.org/dci-arrangement/hs-ess1-earths-place-universe.
     // Raw text and the full reasoning for what is and is not claimed:
-    // plans/future-courses/sciences/03-standards-source-text.md.
+    // plans/future-courses/science-and-math/sciences/2026-08-07-03-standards-source-text.md.
     //
     // ⚠️ HS-ESS1-4 IS DELIBERATELY ABSENT. Its verbatim text is "Use mathematical or computational
     // representations to predict the motion of orbiting objects in the solar system", and

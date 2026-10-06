@@ -1,5 +1,5 @@
 // Authored "Asia Before European Colonization: The Center of Gravity" — the ANCHOR of the
-// precolonial-Asia track (plans/future-courses/precolonial-asia-track-proposal.md). From BAM's
+// precolonial-Asia track (plans/future-courses/completed/culture-and-history/2026-07-15-precolonial-asia-track-proposal.md). From BAM's
 // world.md queue. ORIENTATION depth, deliberately: a map and a frame, not an encyclopedia —
 // the major civilizational zones, when each flourished, and the connective tissue between
 // them. Depth belongs to the track's follow-on courses (Ancient India, Tang-Song China,

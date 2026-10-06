@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // Here Be Dragons, course 4 of 5: Wrong for Good Reasons.
 //
 // Plan: plans/58-here-be-dragons-series.md §4.4. Category: Culture & History. Grades 9-12.
-// Connections: plans/future-courses/culture/01-connections-to-the-catalog.md §4.4.
+// Connections: plans/future-courses/culture-and-history/culture/2026-08-08-01-connections-to-the-catalog.md §4.4.
 //
 // THIS IS THE EPISTEMOLOGY PAYLOAD OF THE SERIES. Thesis: people were usually reasoning well from
 // what they had, and the interesting questions are what they had, who they would let speak, and

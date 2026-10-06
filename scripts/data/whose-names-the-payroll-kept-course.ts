@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // "Whose Names the Payroll Kept: the Central Pacific's Chinese Workers and a Form That Cannot Hold
 // a Person" (Culture & History, with Research & Reporting alongside). Slug to be registered:
 // `whose-names-the-payroll-kept`. PRIVATE study, by BAM's approval on 2026-09-21 of the brief at
-// plans/future-courses/uncredited/2026-09-18-central-pacific-chinese-workers-brief.md, approval
+// plans/future-courses/culture-and-history/uncredited/2026-09-18-central-pacific-chinese-workers-brief.md, approval
 // conditional on Crocker's testimony being fetched FIRST, which it was (brief section 6B).
 // Rubric: gates pass; B 3/3/3/3/3/3 = 36; form C6, standalone course.
 // RESEARCH TIER 1 (not health, law, safety, money or credential-adjacent), with every contested
@@ -3803,7 +3803,7 @@ Chinese Railroad Workers in North America Project. (n.d.). *Key questions*. Stan
 //
 //   // "Whose Names the Payroll Kept" (the Central Pacific's Chinese workers, plans/83 E-26).
 //   // PRIVATE study, by BAM's approval on 2026-09-21 of
-//   // plans/future-courses/uncredited/2026-09-18-central-pacific-chinese-workers-brief.md, an
+//   // plans/future-courses/culture-and-history/uncredited/2026-09-18-central-pacific-chinese-workers-brief.md, an
 //   // approval conditional on Crocker's testimony being fetched first, which it was (brief 6B).
 //   // Built from TWO primary sources that corroborate each other: two Central Pacific payroll
 //   // sheets read as page images, and the sworn testimony of the contractor whose name is printed

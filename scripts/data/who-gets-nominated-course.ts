@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // "Who Gets Nominated: Chien-Shiung Wu and the Stage Before the Prize" (Culture & History, with
 // Science & Math alongside). Slug to be registered: `who-gets-nominated`. PRIVATE study, by BAM's
 // approval on 2026-09-20 of the brief at
-// plans/future-courses/uncredited/2026-09-19-chien-shiung-wu-brief.md (rubric: gates pass;
+// plans/future-courses/culture-and-history/uncredited/2026-09-19-chien-shiung-wu-brief.md (rubric: gates pass;
 // B 3/3/3/3/3/3 = 36; form C6, standalone). RESEARCH TIER 1 (not health, law, safety, money or
 // credential-adjacent), with the contested half quoted and attributed rather than summarised,
 // because the cost of being wrong here is a wrong claim about named people.
@@ -4720,7 +4720,7 @@ Wolf Foundation. (n.d.). *Chien-Shiung Wu, Wolf Prize laureate in Physics 1978*.
 // NO migration. NO seed:* re-run beyond `pnpm seed:courses`.
 //
 //   // "Who Gets Nominated" (Chien-Shiung Wu, plans/83 E-10). PRIVATE study, by BAM's approval on
-//   // 2026-09-20 of plans/future-courses/uncredited/2026-09-19-chien-shiung-wu-brief.md, built
+//   // 2026-09-20 of plans/future-courses/culture-and-history/uncredited/2026-09-19-chien-shiung-wu-brief.md, built
 //   // STANDALONE rather than as a section of `what-the-citation-records` because the mechanism is
 //   // different: the deciding document here is a COUNT of nomination rows, not the wording of a
 //   // citation. Its central finding overturns the popular telling: she received ZERO nominations

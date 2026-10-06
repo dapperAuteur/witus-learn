@@ -3,7 +3,7 @@ import { finalQuiz, helpLesson, sectionQuiz } from "./using-learn-shared";
 
 // "Learn.WitUS for parents" (series "Using Learn.WitUS", code USING, position P1). Slug to be
 // registered by the orchestrator: `using-learn-parent`. RESEARCH TIER 1 (product documentation).
-// Brief: plans/future-courses/using-learn/2026-09-21-using-learn-paths-brief.md, APPROVED by BAM
+// Brief: plans/future-courses/using-learn-witus/using-learn/2026-09-21-using-learn-paths-brief.md, APPROVED by BAM
 // 2026-09-22 (rubric v1.3 gate A8). Assessment exception (rubric D2), BAM 2026-09-22: section
 // quizzes serve 5 from a pool of 10, the final serves 10 from a pool of 25 and passes at 80.
 //

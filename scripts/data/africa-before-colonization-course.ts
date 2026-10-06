@@ -1,5 +1,5 @@
 // Authored "Africa Before Colonization: The Documented Record" — the ANCHOR of the
-// precolonial-Africa track (plans/future-courses/africa-precolonial-track-proposal.md).
+// precolonial-Africa track (plans/future-courses/completed/culture-and-history/2026-07-15-africa-precolonial-track-proposal.md).
 // From BAM's world.md queue ("Africa before colonization"). Survey depth, real spread:
 // the Nile corridor (Kush, Aksum), West Africa (Ghana/Mali/Songhai, Timbuktu), the south
 // and east (Great Zimbabwe, the Swahili coast, Benin, Ethiopia), the honest record on
@@ -657,7 +657,7 @@ One deliberate correction before the quiz: these three states were succession IN
       ],
     },
     // Cross-link: BAM's Mansa Gold research files (Ghana cocoa/coffee brand research) live in
-    // plans/future-courses/mansa-gold/ and surface on the Future board at /admin/future.
+    // plans/future-courses/bvc-taster/mansa-gold/ and surface on the Future board at /admin/future.
     {
       slug: "africa-mansa-musa",
       title: "6 · Mansa Musa's hajj: what the sources actually say",

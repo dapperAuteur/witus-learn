@@ -3,7 +3,7 @@ import type { AuthoredCourse } from "./authored-course";
 // "Who Were the Computers: A Job Title, Six Programmers, and the Record of 1946" (Culture & History).
 // Slug to be registered: `who-were-the-computers`.
 //
-// BRIEF: plans/future-courses/uncredited/2026-09-18-eniac-six-brief.md, approved by BAM 2026-09-19.
+// BRIEF: plans/future-courses/culture-and-history/uncredited/2026-09-18-eniac-six-brief.md, approved by BAM 2026-09-19.
 // RESEARCH TIER: Tier 1 (history; not health, law, safety or money, so not Tier 2).
 // VISIBILITY: PRIVATE, price 0, free, per BAM's approval and plans/83's private-study rule.
 // SERIES CODE: NONE. BAM decided on 2026-09-19 that private courses carry no CREDIT code, which
