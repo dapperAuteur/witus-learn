@@ -9,8 +9,9 @@
 //   2. A ping ("I'd like to talk") shows up IN THE APP first, as a badge and a card on the page where
 //      the relationship already lives (/family, the class roster). There is no inbox.
 //   3. The person who asked says "we've started talking" once they have, or the person asked closes
-//      the request. If neither happens within 48 hours, the person asked gets ONE email, Reply-To the
-//      asker.
+//      the request. If neither happens within 2 days, the person asked gets an email, Reply-To the
+//      asker, then reminders at growing intervals (days 2, 4, 8 and 16), and the request ends after
+//      30 days (BAM, 2026-10-06). Ending it, either way, stops the reminders at once.
 //   4. No student is ever a party. Both adults see the student's name and a link to their work.
 
 export const CONTACT_MODES = ["direct", "request", "school"] as const;
@@ -34,10 +35,18 @@ export const CONTACT_MODE_HELP: Record<ContactMode, string> = {
 export type Role = "parent" | "teacher";
 
 export const HOUR_MS = 60 * 60 * 1000;
-/** After this long with no "we've connected", the recipient gets the fallback email. */
-export const PING_EMAIL_AFTER_MS = 48 * HOUR_MS;
+export const DAY_MS = 24 * HOUR_MS;
+/**
+ * The emails to the person asked, by whole days since the ask. Each gap doubles (2, 2, 4, 8 days):
+ * BAM, 2026-10-06, "requests expire after 30 days, send reminders at growing intervals". The first
+ * is the original 48-hour fallback; the last lands two weeks before the request ends. The cron runs
+ * once a day, so each one goes out up to a day after it falls due.
+ */
+export const PING_REMINDER_DAYS = [2, 4, 8, 16] as const;
+/** The first email: 48 hours, as decided on 2026-09-20. */
+export const PING_EMAIL_AFTER_MS = PING_REMINDER_DAYS[0] * DAY_MS;
 /** A ping stops showing (and can no longer be emailed) after this long. There is no archive. */
-export const PING_ACTIVE_MS = 14 * 24 * HOUR_MS;
+export const PING_ACTIVE_MS = 30 * DAY_MS;
 /** One new ping per (asker, recipient, student) per day, even after the last one ended. */
 export const PING_REPEAT_MS = 24 * HOUR_MS;
 
@@ -88,7 +97,10 @@ export function mayPing(view: CounterpartView): boolean {
 export interface PingTimes {
   createdAt: Date;
   connectedAt: Date | null;
+  /** When the most recent reminder went out, or null before the first. */
   emailedAt: Date | null;
+  /** How many reminder emails have gone out (0 to PING_REMINDER_DAYS.length). */
+  remindersSent: number;
 }
 
 /** Still showing in the app: not ended by the asker and not older than PING_ACTIVE_MS. */
@@ -96,14 +108,31 @@ export function isPingActive(p: PingTimes, now: Date): boolean {
   return !p.connectedAt && now.getTime() - p.createdAt.getTime() < PING_ACTIVE_MS;
 }
 
-/** Due for the one fallback email: active, never emailed, and at least 48 hours old. */
-export function isPingDueForEmail(p: PingTimes, now: Date): boolean {
-  return isPingActive(p, now) && !p.emailedAt && now.getTime() - p.createdAt.getTime() >= PING_EMAIL_AFTER_MS;
+/** When the NEXT reminder falls due, or null once every reminder has gone out. */
+export function pingNextReminderAt(p: Pick<PingTimes, "createdAt" | "remindersSent">): Date | null {
+  const days = PING_REMINDER_DAYS[p.remindersSent];
+  return days === undefined ? null : new Date(p.createdAt.getTime() + days * DAY_MS);
 }
 
-/** When the fallback email becomes due, for the asker's "we'll email them on ..." line. */
-export function pingEmailDueAt(p: Pick<PingTimes, "createdAt">): Date {
-  return new Date(p.createdAt.getTime() + PING_EMAIL_AFTER_MS);
+/** Due for its next reminder: still active, reminders left, and that reminder's day has come. */
+export function isPingDueForEmail(p: PingTimes, now: Date): boolean {
+  const next = pingNextReminderAt(p);
+  return isPingActive(p, now) && next !== null && now.getTime() >= next.getTime();
+}
+
+/**
+ * How many reminders' days have come by `now` (0 to PING_REMINDER_DAYS.length). When the cron sends,
+ * it sets reminders_sent to THIS, not to one more than before, so a ping that missed a day (a failed
+ * run, downtime, or the 2026-10-06 schedule change) gets one email, never a burst on consecutive days.
+ */
+export function remindersDueBy(p: Pick<PingTimes, "createdAt">, now: Date): number {
+  const age = now.getTime() - p.createdAt.getTime();
+  return PING_REMINDER_DAYS.filter((d) => age >= d * DAY_MS).length;
+}
+
+/** When the request ends on its own (30 days), shown on both cards and in every reminder. */
+export function pingEndsAt(p: Pick<PingTimes, "createdAt">): Date {
+  return new Date(p.createdAt.getTime() + PING_ACTIVE_MS);
 }
 
 /**

@@ -2,7 +2,7 @@ import { apiContext, errorJson, json } from "@/lib/api";
 
 // POST /api/contact/pings/[id]/close: the person who was ASKED closes the request (decided
 // 2026-09-20: "they get a way to close request"), for example after calling back. It ends the ping
-// for both people: it leaves both pages and the badge, and the 48-hour email is never sent. The
+// for both people: it leaves both pages and the badge, and no further reminder email is sent. The
 // asker is not told who closed it or why; that would be a "seen" signal, which the no-inbox rule
 // bans. Anyone but the recipient, or a ping on another school, gets 404.
 export async function POST(_req: Request, { params }: { params: Promise<{ id: string }> }) {

@@ -22,6 +22,8 @@ import {
   DEFAULT_CONTACT_MODE,
   PING_ACTIVE_MS,
   PING_EMAIL_AFTER_MS,
+  PING_REMINDER_DAYS,
+  DAY_MS,
   type ContactMode,
   type Role,
 } from "@/lib/contact";
@@ -438,7 +440,7 @@ export async function listActivePingsForUser(tenantId: string, userId: string, n
 /**
  * End a ping. `as: "asker"` is "we've started talking" (only the person who asked); `as: "recipient"`
  * is "close this request" (only the person asked, decided 2026-09-20). Either way it leaves both
- * pages and the badge, and the fallback email is never sent. Who ended it is recorded in closed_by
+ * pages and the badge, and no further reminder email is sent. Who ended it is recorded in closed_by
  * and never shown to the other person.
  */
 export async function endPing(
@@ -502,20 +504,31 @@ export async function countIncomingPings(tenantId: string, userId: string, now =
   return out;
 }
 
-// ── The 48-hour fallback (cron, all tenants) ──────────────────────────────────
+// ── Reminder emails (cron, all tenants) ──────────────────────────────────────
 
-/** Pings, on every tenant, that are due their one fallback email. The cron re-checks each one's
- *  relationship and the recipient's current mode inside its own tenant before sending. */
+/**
+ * Pings, on every tenant, whose NEXT reminder has fallen due: active, not ended, reminders left, and
+ * at least PING_REMINDER_DAYS[reminders_sent] days old. The cutoff is one CASE over the counter so the
+ * LIMIT never fills up with pings that are merely waiting for a later reminder. The cron re-checks each
+ * one's relationship and the recipient's current rule inside its own tenant before sending.
+ */
 export async function listPingsDueForEmail(now = new Date(), limit = 200): Promise<ContactPing[]> {
+  const cutoff = sql`case ${contactPings.remindersSent} ${sql.join(
+    PING_REMINDER_DAYS.map(
+      (days, i) => sql`when ${i} then ${new Date(now.getTime() - days * DAY_MS).toISOString()}::timestamptz`,
+    ),
+    sql` `,
+  )} end`;
   return db
     .select()
     .from(contactPings)
     .where(
       and(
         isNull(contactPings.connectedAt),
-        isNull(contactPings.emailedAt),
+        sql`${contactPings.remindersSent} < ${PING_REMINDER_DAYS.length}`,
         gt(contactPings.createdAt, activeSince(now)),
         lte(contactPings.createdAt, new Date(now.getTime() - PING_EMAIL_AFTER_MS)),
+        sql`${contactPings.createdAt} <= ${cutoff}`,
         pingIsLive,
       ),
     )
@@ -523,20 +536,31 @@ export async function listPingsDueForEmail(now = new Date(), limit = 200): Promi
     .limit(limit);
 }
 
-/** Claim a ping for its email. Returns false if another run already did, so two overlapping cron
- *  runs can never send the same email twice. */
-export async function claimPingForEmail(pingId: string): Promise<boolean> {
+/**
+ * Claim a ping's reminder. `sentSoFar` is the reminders_sent value the cron read and `newCount` is
+ * remindersDueBy(now), so missed reminders are counted as done rather than sent in a burst. The update
+ * only lands if reminders_sent is still `sentSoFar`, so two overlapping runs can never both send.
+ */
+export async function claimPingForEmail(pingId: string, sentSoFar: number, newCount: number): Promise<boolean> {
   const rows = await db
     .update(contactPings)
-    .set({ emailedAt: new Date() })
-    .where(and(eq(contactPings.id, pingId), isNull(contactPings.emailedAt)))
+    .set({ emailedAt: new Date(), remindersSent: newCount })
+    .where(and(eq(contactPings.id, pingId), eq(contactPings.remindersSent, sentSoFar), isNull(contactPings.connectedAt)))
     .returning({ id: contactPings.id });
   return rows.length > 0;
 }
 
 /** Undo a claim when the send itself failed, so tomorrow's run tries again. */
-export async function releasePingEmailClaim(pingId: string): Promise<void> {
-  await db.update(contactPings).set({ emailedAt: null }).where(eq(contactPings.id, pingId));
+export async function releasePingEmailClaim(
+  pingId: string,
+  sentSoFar: number,
+  newCount: number,
+  previousEmailedAt: Date | null,
+): Promise<void> {
+  await db
+    .update(contactPings)
+    .set({ emailedAt: previousEmailedAt, remindersSent: sentSoFar })
+    .where(and(eq(contactPings.id, pingId), eq(contactPings.remindersSent, newCount)));
 }
 
 export async function getCohortName(tenantId: string, cohortId: string): Promise<string | null> {

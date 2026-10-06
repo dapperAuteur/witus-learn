@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { apiContext, errorJson, json } from "@/lib/api";
 import { checkRateLimit } from "@/lib/rate-limit";
-import { counterpartView, effectiveMode, mayPing, pingBlockReason, pingEmailDueAt } from "@/lib/contact";
+import { counterpartView, effectiveMode, mayPing, pingBlockReason, pingEndsAt, pingNextReminderAt } from "@/lib/contact";
 import { mayUseContact } from "@/lib/teacher-age";
 
 const Body = z.object({
@@ -13,7 +13,8 @@ const Body = z.object({
 // POST /api/contact/pings: "I'd like to talk." A signal, not a message: there is no body field and
 // never will be (CLAUDE.md, no-inbox rule). The recipient sees it IN THE APP first (a badge, and a
 // card on /family or the class roster). If the asker has not marked it "we've started talking"
-// within 48 hours, the recipient gets one email, Reply-To the asker (src/app/api/cron/contact-pings).
+// within 2 days, the recipient gets an email, Reply-To the asker, then reminders on days 4, 8 and 16,
+// and the request ends on day 30 (src/app/api/cron/contact-pings; BAM, 2026-10-06).
 //
 // The recipient is never picked from a search: the client names a (recipient, student, class)
 // triple and the server re-proves the relationship inside this tenant. Anything that does not prove
@@ -65,6 +66,11 @@ export async function POST(req: Request) {
   const ping = await sdb.createPing({ cohortId, studentUserId, fromUserId: me, toUserId, fromRole: role });
   return json({
     ok: true,
-    ping: { id: ping.id, createdAt: ping.createdAt.toISOString(), emailDueAt: pingEmailDueAt(ping).toISOString() },
+    ping: {
+      id: ping.id,
+      createdAt: ping.createdAt.toISOString(),
+      nextReminderAt: pingNextReminderAt(ping)?.toISOString() ?? null,
+      endsAt: pingEndsAt(ping).toISOString(),
+    },
   });
 }

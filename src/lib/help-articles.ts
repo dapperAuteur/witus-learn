@@ -497,9 +497,11 @@ card. They see a count next to **Family** or **Cohorts** in the menu, and your r
 with the student's name, a link to the student's work, and how to reach you. Once you have started
 talking, press **We've started talking**. The person you asked can also **Close this request**
 themselves, for example after calling you back; it then closes for both of you (you are not told who
-closed it). If neither happens within **48 hours**, we email them once (checked once a day, so it
-arrives within the following day) and replying to that email reaches you directly. A request
-disappears after 14 days. You can ask the same person about the same student again a day later.
+closed it). If neither happens within **2 days**, we email them, and replying to that email reaches
+you directly. If the request is still open, we remind them on **days 4, 8 and 16**, further apart each
+time (checked once a day, so each email arrives within the following day). Ending the request, by
+either of you, stops the reminders at once. A request ends on its own after **30 days**, and both
+cards show the day it will end. You can ask the same person about the same student again a day later.
 
 Changing your preferences never notifies anyone.`,
   },

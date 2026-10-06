@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { check, index, pgTable, primaryKey, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
+import { check, index, integer, pgTable, primaryKey, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
 import { users } from "./auth";
 import { cohorts } from "./cohorts";
 import { tenants } from "./tenancy";
@@ -18,8 +18,9 @@ import { tenants } from "./tenancy";
 //   contact_cohort_overrides
 //                      a teacher's rule for a whole CLASS ("parents in Tuesday Science may not
 //                      contact me"), between the default and the per-person rule;
-//   contact_pings      "I'd like to talk": a signal, shown in-app first and emailed after 48 hours
-//                      only if the person who asked has not said they've connected.
+//   contact_pings      "I'd like to talk": a signal, shown in-app first, then emailed to the person
+//                      asked on days 2, 4, 8 and 16 unless either of them has ended it; it ends on
+//                      its own after 30 days (BAM, 2026-10-06).
 //
 // The three modes, and what the OTHER person sees:
 //   direct   my contact details (account email, optional phone and note) are shown to them;
@@ -146,17 +147,20 @@ export const contactPings = pgTable(
     // Who ended it: the asker or the recipient. Null while active (and on pings ended before 0065).
     // Never shown to the other person: that would be a "seen" signal, which the no-inbox rule bans.
     closedBy: text("closed_by").references(() => users.id, { onDelete: "set null" }),
-    // Set when the 48-hour fallback email went out (src/app/api/cron/contact-pings). One per ping.
+    // When the most recent reminder email went out (src/app/api/cron/contact-pings).
     emailedAt: timestamp("emailed_at", { withTimezone: true }),
+    // How many reminder emails have gone out: 0 to 4, on days 2, 4, 8 and 16 (PING_REMINDER_DAYS in
+    // src/lib/contact.ts; BAM, 2026-10-06). A counter, never a message: it records what the platform
+    // sent, not anything either person did, so it is not a "seen" signal (CLAUDE.md, no-inbox rule).
+    remindersSent: integer("reminders_sent").notNull().default(0),
   },
   (t) => [
     index("contact_pings_tenant_to_idx").on(t.tenantId, t.toUserId, t.createdAt),
     index("contact_pings_tenant_from_idx").on(t.tenantId, t.fromUserId, t.createdAt),
-    index("contact_pings_email_due_idx")
-      .on(t.createdAt)
-      .where(sql`${t.connectedAt} is null and ${t.emailedAt} is null`),
+    index("contact_pings_email_due_idx").on(t.createdAt).where(sql`${t.connectedAt} is null`),
     check("contact_pings_role_chk", sql`${t.fromRole} in ('parent','teacher')`),
     check("contact_pings_not_self_chk", sql`${t.fromUserId} <> ${t.toUserId}`),
+    check("contact_pings_reminders_chk", sql`${t.remindersSent} between 0 and 4`),
     check(
       "contact_pings_student_not_party_chk",
       sql`${t.studentUserId} <> ${t.fromUserId} and ${t.studentUserId} <> ${t.toUserId}`,

@@ -6,7 +6,8 @@ import {
   counterpartView,
   effectiveMode,
   isPingActive,
-  pingEmailDueAt,
+  pingEndsAt,
+  pingNextReminderAt,
   type ContactMode,
   type CounterpartView,
   type Role,
@@ -46,10 +47,20 @@ export interface ContactCard {
   /** The viewer's default for people in the counterpart's role. */
   myDefault: ContactMode;
   /** A ping the viewer sent this person about this student, still active. */
-  outgoing: { pingId: string; createdAt: string; emailDueAt: string; emailedAt: string | null } | null;
+  outgoing: {
+    pingId: string;
+    createdAt: string;
+    /** When the next reminder email to them falls due, or null once all have gone out. */
+    nextReminderAt: string | null;
+    /** When the last reminder went out, or null before the first. */
+    emailedAt: string | null;
+    remindersSent: number;
+    /** When the request ends on its own (30 days). */
+    endsAt: string;
+  } | null;
   /** A ping this person sent the viewer about this student, still active, with how to reach them.
    *  The viewer can close it (POST /api/contact/pings/[id]/close). */
-  incoming: { pingId: string; createdAt: string; emailedAt: string | null; details: CardDetails } | null;
+  incoming: { pingId: string; createdAt: string; emailedAt: string | null; endsAt: string; details: CardDetails } | null;
 }
 
 export interface ContactLink {
@@ -137,13 +148,21 @@ export async function buildContactCards(input: {
         ? {
             pingId: out.id,
             createdAt: out.createdAt.toISOString(),
-            emailDueAt: pingEmailDueAt(out).toISOString(),
+            nextReminderAt: pingNextReminderAt(out)?.toISOString() ?? null,
             emailedAt: out.emailedAt?.toISOString() ?? null,
+            remindersSent: out.remindersSent,
+            endsAt: pingEndsAt(out).toISOString(),
           }
         : null,
       incoming:
         inc && viewerAdult
-          ? { pingId: inc.id, createdAt: inc.createdAt.toISOString(), emailedAt: inc.emailedAt?.toISOString() ?? null, details }
+          ? {
+              pingId: inc.id,
+              createdAt: inc.createdAt.toISOString(),
+              emailedAt: inc.emailedAt?.toISOString() ?? null,
+              endsAt: pingEndsAt(inc).toISOString(),
+              details,
+            }
           : null,
     });
   }

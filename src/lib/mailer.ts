@@ -20,7 +20,7 @@ export type EmailKind =
 /**
  * Kinds that are NOT mirrored to the WitUS Inbox at all, not even as metadata.
  *
- * `contact-ping` (the 48-hour fallback for a parent/teacher "I'd like to talk"): its whole content
+ * `contact-ping` (the reminder emails for a parent/teacher "I'd like to talk"): its whole content
  * is two adults' email addresses, a class name and a child's name, and redactSecrets strips tokens,
  * not people. The mirror exists to answer "did the sign-in link go out?"; a family's contact details
  * in a triage queue answer nothing and would be a second copy nobody decided to keep. The row in
