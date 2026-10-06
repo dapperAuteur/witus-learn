@@ -323,6 +323,7 @@ const BACKLOG: Record<string, string> = {
   "reporter-solutions-journalism": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
   "reporter-pitch-and-shapes": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
   "reporter-capstone": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
+  "manure-and-compost": "PENDING: NGSS life-science mapping (5-LS2-1, MS-LS2-3, HS-LS2-3) is added by the orchestrator in this branch",
 };
 
 // WAS A REGEX OVER scripts/seed-courses.ts, AND IT WAS SILENTLY WRONG. The pattern required a `{`
