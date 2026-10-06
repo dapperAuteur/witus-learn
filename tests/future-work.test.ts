@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { FUTURE_WORK, futureWorkGroups, getFutureWorkItem } from "@/lib/future-work";
+import { PROPOSAL_DOCS, SUBDIR_DOCS } from "@/lib/future-work-content/proposals";
+import committed from "./fixtures/future-work-keys-2026-10-05.json";
 
 // The Future classes & features content is COMMITTED (generated from the gitignored
 // plans/future-courses/ notes by `pnpm gen:future-work`), because /admin/future renders it in a
@@ -24,10 +26,11 @@ describe("future-work content index", () => {
     // history-of-unions). They shipped and were archived to plans/future-courses/completed/, which
     // the generator excludes on purpose, so pinning slugs made "BAM finished something" look like a
     // broken build. Assert the SHAPE instead: a healthy standing backlog with real bodies.
-    const standing = FUTURE_WORK.filter((i) =>
-      /^plans\/future-courses\/[^/]+\.md$/.test(i.provenance ?? ""),
-    );
-    expect(standing.length, "top-level backlog collapsed").toBeGreaterThanOrEqual(10);
+    // Loose notes now live one folder down, in the category folder they belong to, so they are
+    // selected by the array the generator emits them into rather than by path depth.
+    const looseKeys = new Set(PROPOSAL_DOCS.map((p) => p.key));
+    const standing = FUTURE_WORK.filter((i) => looseKeys.has(i.key));
+    expect(standing.length, "loose-note backlog collapsed").toBeGreaterThanOrEqual(10);
     for (const i of standing) expect(i.body.length, i.key).toBeGreaterThan(50);
   });
 
@@ -38,15 +41,51 @@ describe("future-work content index", () => {
     // Deliberately NOT a hardcoded slug: any note named here can legitimately ship and be archived,
     // and then this guard fails for the one reason it was never meant to catch. What must hold is
     // that discovery finds top-level notes AT ALL, with a date prefix stripped from the key.
-    const top = FUTURE_WORK.filter((i) =>
-      /^plans\/future-courses\/[^/]+\.md$/.test(i.provenance ?? ""),
-    );
-    expect(top.length, "no top-level notes discovered — is discovery hardcoded again?").toBeGreaterThan(5);
+    const top = PROPOSAL_DOCS;
+    expect(top.length, "no loose notes discovered, is discovery hardcoded again?").toBeGreaterThan(5);
     const dated = top.filter((i) => /^\d{4}-\d{2}-\d{2}-/.test((i.provenance ?? "").split("/").pop()!));
     expect(dated.length, "date-prefixed notes exist but were not discovered").toBeGreaterThan(0);
     for (const i of dated) {
       expect(i.key, `${i.provenance} kept its date prefix in the key`).not.toMatch(/^\d{4}-\d{2}-\d{2}-/);
     }
+    // The category folder a note sits in is TRANSPARENT: it never becomes part of the key. If it did,
+    // every loose note would have changed key on 2026-10-05 and orphaned its review notes.
+    for (const d of PROPOSAL_DOCS) {
+      const segs = d.provenance.split("/");
+      expect(segs.length, `${d.provenance} is nested deeper than category/file`).toBeLessThanOrEqual(4);
+      if (segs.length === 4) {
+        expect(d.key.startsWith(`${segs[2]}-`), `category folder leaked into key ${d.key}`).toBe(false);
+      }
+    }
+  });
+
+  // A topic bundle's key is prefixed by ITS OWN folder name (`mansa-gold-…`), never by the category
+  // folder above it (`bvc-taster-…`). Same reason: the keys predate the category folders.
+  it("prefixes bundle keys with the bundle folder, not the category folder", () => {
+    expect(SUBDIR_DOCS.length).toBeGreaterThan(20);
+    for (const d of SUBDIR_DOCS) {
+      const segs = d.provenance.split("/");
+      expect(segs.length, `${d.provenance} should be category/area/file`).toBeGreaterThanOrEqual(4);
+      const area = segs[segs.length - 2];
+      expect(d.key.startsWith(`${area}-`), `${d.key} is not prefixed by its folder ${area}`).toBe(true);
+    }
+  });
+
+  // Folders marked `*READ-ME-FIRST-private-study-only.md` hold material BAM reads and does not
+  // publish; the generator must not have copied any of it into this committed module.
+  it("publishes nothing from a private-study folder", () => {
+    for (const i of FUTURE_WORK) {
+      expect(i.key, `${i.key} came from a private-study folder`).not.toMatch(/private-study-only|^uncredited-/i);
+      expect(i.provenance, `${i.provenance} is a private-study path`).not.toMatch(/\/uncredited\//);
+    }
+  });
+
+  // The whole committed key set as of 2026-10-05, pinned. A key leaves this list only by an archive
+  // to completed/ done on purpose (then edit the fixture in the same commit and say why).
+  it("keeps every key that was committed before the folder reorganisation", () => {
+    const live = new Set(FUTURE_WORK.map((i) => i.key));
+    const missing = committed.keys.filter((k) => !live.has(k));
+    expect(missing, "committed keys dropped (orphans their notes)").toEqual([]);
   });
 
   it("keeps item keys unique — they are the join key for future_work_notes", () => {
@@ -63,7 +102,14 @@ describe("future-work content index", () => {
     // would have rewritten `mansa-gold-interview-prep` to `mansa-gold-07-13-00-interview-prep`
     // (and skipped all 29 She Did the Work subjects outright, since they now all match `^\d+-`).
     // Keys must survive a file rename; these three are committed keys that notes may be joined to.
-    for (const k of ["mansa-gold-interview-prep", "health-prompts", "outdoors-kayaking"]) {
+    for (const k of [
+      "mansa-gold-interview-prep",
+      "health-prompts",
+      "outdoors-kayaking",
+      "she-did-the-work",
+      "sdtw-ava-duvernay",
+      "reporter-learn-to-be-a-reporter",
+    ]) {
       expect(getFutureWorkItem(k), `${k} drifted — did a rename change the join key?`).toBeDefined();
     }
     for (const i of FUTURE_WORK) {
@@ -117,6 +163,10 @@ describe("future-work content index", () => {
     expect(prep!.kind).toBe("feature");
     expect(prep!.group).toBe("Mansa Gold");
     expect(prep!.body.length).toBeGreaterThan(200);
+    // Its provenance names the real file, under whatever category folder the bundle sits in today.
+    expect(prep!.provenance).toMatch(
+      /^plans\/future-courses\/(?:[a-z0-9_-]+\/)?mansa-gold\/2026-07-13-00-interview-prep\.md$/,
+    );
     // The redundant concatenation must NOT appear as its own item.
     expect(getFutureWorkItem("mansa-gold-mansa-gold-interview-prep-FULL")).toBeUndefined();
   });

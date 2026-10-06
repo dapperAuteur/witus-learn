@@ -3,9 +3,10 @@
 // The source notes live in the GITIGNORED `plans/future-courses/` dir, which does not exist in a
 // deploy. `pnpm gen:future-work` reads them once at dev time and writes the plain-string modules
 // under `src/lib/future-work-content/` that this file imports. Nothing here touches the filesystem, so
-// /admin/future renders identically in production. To add a proposal: drop the markdown in
-// `plans/future-courses/` and re-run the generator. That is the whole procedure — top-level `.md`
-// files are AUTO-DISCOVERED. (They used to be two hardcoded filenames, which meant a note BAM filed
+// /admin/future renders identically in production. To add a proposal: drop the markdown in the
+// category folder it belongs to under `plans/future-courses/` (folders are named after the app's
+// course categories, see scripts/lib/plan-categories.ts) and re-run the generator. That is the whole
+// procedure: `.md` files are AUTO-DISCOVERED. (They used to be two hardcoded filenames, which meant a note BAM filed
 // was silently invisible in the app until someone edited the script. Never again.) Adding it to
 // PROPOSAL_META below is optional and only curates which group/status it shows under.
 //
@@ -13,7 +14,11 @@
 // `future_work_notes` table and are readable from the CLI with `pnpm future:list`.
 
 import { PROPOSAL_DOCS, SUBDIR_DOCS } from "@/lib/future-work-content/proposals";
-import { SHE_DID_THE_WORK_PROPOSAL, SHE_DID_THE_WORK_SUBJECTS } from "@/lib/future-work-content/she-did-the-work";
+import {
+  SHE_DID_THE_WORK_PROPOSAL,
+  SHE_DID_THE_WORK_PROVENANCE,
+  SHE_DID_THE_WORK_SUBJECTS,
+} from "@/lib/future-work-content/she-did-the-work";
 
 export type FutureWorkKind = "course" | "feature";
 
@@ -88,7 +93,7 @@ const SHE_DID_THE_WORK: FutureWorkItem[] = [
     summary:
       "Nine proposed courses (A-I) with a recommended build order, the 14 factual errors found in the source calendar, and the rights/permissions table.",
     body: SHE_DID_THE_WORK_PROPOSAL,
-    provenance: "plans/future-courses/she-did-the-work/00-course-proposals.md",
+    provenance: SHE_DID_THE_WORK_PROVENANCE,
   },
   ...SHE_DID_THE_WORK_SUBJECTS.map<FutureWorkItem>((s) => ({
     key: `sdtw-${s.key}`,
@@ -98,7 +103,7 @@ const SHE_DID_THE_WORK: FutureWorkItem[] = [
     group: "She Did the Work, subject research",
     summary: s.summary,
     body: s.body,
-    provenance: `plans/future-courses/she-did-the-work/${s.name}.md`,
+    provenance: s.provenance,
   })),
 ];
 
