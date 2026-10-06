@@ -2039,7 +2039,7 @@ A reader finishes your piece knowing something specific about a business they ha
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 7 · Outside the league
     //
-    // Added after the course shipped, from plans/future-courses/2026-08-28-17-hbcus-and-the-negro-
+    // Added after the course shipped, from plans/future-courses/culture-and-history/2026-08-28-17-hbcus-and-the-negro-
     // leagues.md. BAM asked four questions the original six sections did not answer: where the
     // players came from, whether clubs played Black college teams, whether they played abroad, and
     // whether they played major leaguers. Half of the answer is a NEGATIVE finding, which is why the
