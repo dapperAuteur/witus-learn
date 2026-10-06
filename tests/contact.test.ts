@@ -9,7 +9,10 @@ import {
   isPingDueForEmail,
   mayPing,
   pingBlockReason,
-  pingEmailDueAt,
+  pingEndsAt,
+  pingNextReminderAt,
+  remindersDueBy,
+  PING_REMINDER_DAYS,
   type ContactMode,
 } from "@/lib/contact";
 
@@ -75,20 +78,42 @@ describe("counterpartView", () => {
 describe("ping timing", () => {
   const t0 = new Date("2026-09-20T12:00:00Z");
   const at = (h: number) => new Date(t0.getTime() + h * HOUR_MS);
-  const ping = { createdAt: t0, connectedAt: null, emailedAt: null };
+  const day = (d: number) => at(d * 24);
+  const ping = { createdAt: t0, connectedAt: null, emailedAt: null, remindersSent: 0 };
 
-  it("is emailed only after 48 hours, once, and never after the asker says they connected", () => {
+  it("emails on days 2, 4, 8 and 16 (each gap doubles), then never again (BAM, 2026-10-06)", () => {
+    expect([...PING_REMINDER_DAYS]).toEqual([2, 4, 8, 16]);
     expect(isPingDueForEmail(ping, at(47.9))).toBe(false);
     expect(isPingDueForEmail(ping, at(48))).toBe(true);
-    expect(isPingDueForEmail({ ...ping, emailedAt: at(49) }, at(50))).toBe(false);
-    expect(isPingDueForEmail({ ...ping, connectedAt: at(10) }, at(60))).toBe(false);
-    expect(pingEmailDueAt(ping).toISOString()).toBe(at(48).toISOString());
+    expect(pingNextReminderAt(ping)?.toISOString()).toBe(day(2).toISOString());
+    const after1 = { ...ping, remindersSent: 1, emailedAt: day(2) };
+    expect(isPingDueForEmail(after1, day(3.9))).toBe(false);
+    expect(isPingDueForEmail(after1, day(4))).toBe(true);
+    const after3 = { ...ping, remindersSent: 3, emailedAt: day(8) };
+    expect(pingNextReminderAt(after3)?.toISOString()).toBe(day(16).toISOString());
+    expect(isPingDueForEmail(after3, day(16))).toBe(true);
+    const after4 = { ...ping, remindersSent: 4, emailedAt: day(16) };
+    expect(pingNextReminderAt(after4)).toBeNull();
+    expect(isPingDueForEmail(after4, day(29))).toBe(false);
   });
 
-  it("stops showing after 14 days or once connected, and is never emailed after that", () => {
-    expect(isPingActive(ping, at(14 * 24 - 1))).toBe(true);
-    expect(isPingActive(ping, at(14 * 24))).toBe(false);
-    expect(isPingDueForEmail(ping, at(14 * 24 + 1))).toBe(false);
+  it("counts missed reminders as done, so a late run sends one email, never a burst", () => {
+    expect(remindersDueBy(ping, at(47))).toBe(0);
+    expect(remindersDueBy(ping, day(2))).toBe(1);
+    expect(remindersDueBy(ping, day(10))).toBe(3);
+    expect(remindersDueBy(ping, day(29))).toBe(4);
+  });
+
+  it("never emails once either person has ended it", () => {
+    expect(isPingDueForEmail({ ...ping, connectedAt: at(10) }, day(3))).toBe(false);
+    expect(isPingDueForEmail({ ...ping, remindersSent: 2, connectedAt: day(5) }, day(9))).toBe(false);
+  });
+
+  it("ends on its own after 30 days, and is never emailed after that", () => {
+    expect(pingEndsAt(ping).toISOString()).toBe(day(30).toISOString());
+    expect(isPingActive(ping, at(30 * 24 - 1))).toBe(true);
+    expect(isPingActive(ping, day(30))).toBe(false);
+    expect(isPingDueForEmail({ ...ping, remindersSent: 3 }, day(31))).toBe(false);
     expect(isPingActive({ ...ping, connectedAt: at(1) }, at(2))).toBe(false);
   });
 

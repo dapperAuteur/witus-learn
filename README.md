@@ -628,8 +628,10 @@ teachers, a **per-class rule** a teacher sets for one class, plus **per-person o
 combination (most specific wins: person, then class, then default). A request ("ping") shows **in the app
 first**: a count on Family / Cohorts in the menu, and a card on `/family` or the class roster, naming
 the student and linking to their work. The person who asked marks **"We've started talking"**, or
-the person asked presses **"Close this request"**; if neither happens within 48 hours, a daily cron (`/api/cron/contact-pings`, `CRON_SECRET`) sends the other
-person **one** email with Reply-To set to the asker. No student is ever a party (check constraints),
+the person asked presses **"Close this request"**; if neither happens within 2 days, a daily cron (`/api/cron/contact-pings`, `CRON_SECRET`) emails the other
+person with Reply-To set to the asker, then reminds them on days 4, 8 and 16 while the request stays
+open (missed days count as sent, so a late run never sends a burst); a request ends on its own after
+30 days (migration 0066). No student is ever a party (check constraints),
 the relationship is recomputed on every read (`tests/isolation/contact.db.test.ts`, including the
 staleness case), the fallback email is not mirrored to the WitUS Inbox, and there is **no inbox**: no
 message body, no thread, no history view (`tests/contact-schema.test.ts`). Rules:

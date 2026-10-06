@@ -5,6 +5,18 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Contact requests last 30 days, with reminders further apart each time**
+  (\`feat/contact-ping-30-day-reminders\`, **migration 0066**, run \`pnpm db:migrate:prod\`). BAM,
+  2026-10-06: "requests expire after 30 days, send reminders at growing intervals", and "the existing
+  guardian relationship [is] consent enough" (so a teacher may ask a parent to get in touch without a
+  separate opt-in, which is how it already behaved: a parent's default is "ask me to get in touch").
+  The person asked is emailed on day 2, as before, then reminded on days 4, 8 and 16 while neither
+  person has ended the request (\`PING_REMINDER_DAYS\` in \`src/lib/contact.ts\`); the request ends
+  on its own on day 30 and both cards say when. Each email says which reminder it is and how to stop
+  them. \`contact_pings.reminders_sent\` counts what the platform sent, never what anyone did, so it
+  is not a "seen" signal under the no-inbox rule. Missed days (a failed run, downtime) count as sent,
+  so a late run sends one email, never a burst. The migration ends pings already past their old 14-day
+  life, so lengthening the life cannot bring old requests back.
 - ✅ **Admins can make someone a teacher** (\`feat/admin-teachers\`, no migration). BAM asked 2026-09-20,
   once classes needed a teacher role to create: until now the instructor role could only be set by a
   seed script, so a homeschool parent had no in-app way to run their own classes. **Admin → Teachers**

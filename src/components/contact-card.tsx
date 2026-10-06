@@ -131,8 +131,9 @@ function PingButton({ card, me }: { card: ContactCard; me: ViewerContact }) {
         {me.phone ? <> and your phone number</> : null}.
       </p>
       <p>
-        Once you&apos;ve started talking, mark it here. If you haven&apos;t within 48 hours, we&apos;ll email{" "}
-        {card.counterpartName} once, and replying to that email reaches you directly. Nothing you type is
+        Once you&apos;ve started talking, mark it here. If you haven&apos;t within 2 days, we&apos;ll email{" "}
+        {card.counterpartName}, with reminders further apart each time (days 4, 8 and 16), and replying to
+        any of them reaches you directly. The request ends on its own after 30 days. Nothing you type is
         sent, because there is nothing to type.
       </p>
       <div className="flex flex-wrap gap-2">
@@ -210,8 +211,8 @@ export function ContactCardView({ card, me, school }: { card: ContactCard; me: V
           </p>
           <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
             Asked {day(card.incoming.createdAt)}
-            {card.incoming.emailedAt ? `, and we emailed you about it on ${day(card.incoming.emailedAt)}` : ""}. Reach them
-            directly:
+            {card.incoming.emailedAt ? `; we last emailed you about it on ${day(card.incoming.emailedAt)}` : ""}. It ends on
+            its own on {day(card.incoming.endsAt)}, and closing it stops the reminders. Reach them directly:
           </p>
           <Details d={card.incoming.details} />
           <CloseRequestButton pingId={card.incoming.pingId} />
@@ -245,8 +246,13 @@ export function ContactCardView({ card, me, school }: { card: ContactCard; me: V
               <p>
                 You asked on {day(card.outgoing.createdAt)}.{" "}
                 {card.outgoing.emailedAt
-                  ? `We emailed ${card.counterpartName} about it on ${day(card.outgoing.emailedAt)}.`
-                  : `If you haven't marked this by ${day(card.outgoing.emailDueAt)}, we'll email ${card.counterpartName} once for you.`}
+                  ? `We last emailed ${card.counterpartName} about it on ${day(card.outgoing.emailedAt)}.${
+                      card.outgoing.nextReminderAt ? ` The next reminder is due ${day(card.outgoing.nextReminderAt)}.` : ""
+                    }`
+                  : card.outgoing.nextReminderAt
+                    ? `If you haven't marked this by ${day(card.outgoing.nextReminderAt)}, we'll email ${card.counterpartName} for you, then remind them a few more times.`
+                    : ""}{" "}
+                It ends on its own on {day(card.outgoing.endsAt)}.
               </p>
               <ConnectedButton pingId={card.outgoing.pingId} />
             </div>
