@@ -30,6 +30,8 @@ export interface SeedEntry {
   /** Module specifier that identifier was imported from, e.g. "./data/pickleball-course". */
   modulePath: string | null;
   category: string | null;
+  /** Extra categories the course also lists under (`additionalCategories: [...]`), up to five. */
+  additionalCategories: string[];
   seriesSlug: string | null;
   seriesCode: string | null;
   seriesPosition: string | null;
@@ -48,6 +50,26 @@ function matchBrace(src: string, open: number): number {
     }
   }
   return -1;
+}
+
+/** `name: ["a", "b"]` inside an object body, as a list of string literals (empty when absent). */
+function listField(body: string, name: string): string[] {
+  const m = new RegExp(`\\b${name}:\\s*\\[([^\\]]*)\\]`).exec(body);
+  if (!m) return [];
+  return [...m[1].matchAll(/"([^"]*)"/g)].map((x) => x[1]);
+}
+
+/**
+ * The `category: "..."` literal of the first seedAuthoredCourse call AFTER `from` (the end of a loop
+ * entry), or null when that call takes the category from the entry (`category,` or `category: x`).
+ */
+function loopCallCategory(src: string, from: number): string | null {
+  const at = src.indexOf("seedAuthoredCourse(", from);
+  if (at === -1) return null;
+  const open = src.indexOf("{", at);
+  const end = open === -1 ? -1 : matchBrace(src, open);
+  if (end === -1) return null;
+  return /\bcategory:\s*"([^"]*)"/.exec(src.slice(open, end))?.[1] ?? null;
 }
 
 /** Pull every seedAuthoredCourse({...}) call out of one seed script by brace matching. A regex over
@@ -117,6 +139,7 @@ export function extractSeedEntries(file: string): SeedEntry[] {
       courseConst,
       modulePath: courseConst ? (importOf.get(courseConst) ?? null) : null,
       category: field("category"),
+      additionalCategories: listField(body, "additionalCategories"),
       seriesSlug: field("seriesSlug"),
       seriesCode: field("seriesCode"),
       seriesPosition: field("seriesPosition"),
@@ -161,7 +184,11 @@ export function extractSeedEntries(file: string): SeedEntry[] {
         slug,
         courseConst,
         modulePath: importOf.get(courseConst) ?? null,
-        category: str("category"),
+        // A loop entry often leaves the category to the loop's own seedAuthoredCourse call (every
+        // state-civics course is "Civics" there). Read it from that call when the entry has none, so
+        // a catalog index built on this registry does not show 73 courses as uncategorised.
+        category: str("category") ?? (objEnd > 0 ? loopCallCategory(src, objEnd) : null),
+        additionalCategories: listField(around, "additionalCategories"),
         seriesSlug: str("seriesSlug"),
         seriesCode: str("seriesCode"),
         seriesPosition: str("seriesPosition"),

@@ -352,6 +352,16 @@ filed as research checks rather than guessed. The **construction study series**
 (`construction-safety`, `construction-math`) is private for a different reason: it is BAM's own study
 support, never for publication.
 
+## Course index by category (`scripts/data/README.md`)
+
+The course files stay flat in `scripts/data/`; **[scripts/data/README.md](scripts/data/README.md)** lists
+every registered course by school and by category, the way the app lists them, with each course's series
+code, its extra categories, and whether it is private. It is generated from the seed scripts by
+`pnpm gen:course-index` (the same registry the lint guards read), and `pnpm lint` fails while it is
+stale, so re-run it whenever you register a course. A category is data in a course's registration, not
+its folder: a course can list under up to six categories and the owner can rename one at
+`/admin/categories` (BAM chose the index over moving the files on 2026-10-06).
+
 ## Local private courses (text that never enters this repository)
 
 A course built from a book BAM owns can be held for his own study but not published, and **pushing to
@@ -806,6 +816,7 @@ open), so 40+ proposals scan as a screenful of headings. Leave a note on any ite
 pnpm future:list                  # open notes, all schools (--tenant <slug> · --status open|done|all
                                   #   · --item <key> · --limit N)
 pnpm gen:future-work              # regenerate src/lib/future-work-content/* from plans/future-courses/
+pnpm gen:course-index             # regenerate scripts/data/README.md, the course index by category
 ```
 
 The proposals are **committed** (`src/lib/future-work-content/*`, generated from the gitignored
