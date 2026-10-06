@@ -175,9 +175,10 @@ export async function sendGuardianInviteEmail(opts: {
 }
 
 /**
- * The 48-hour fallback for a parent/teacher contact ping (src/app/api/cron/contact-pings): the
+ * The reminder email for a parent/teacher contact ping (src/app/api/cron/contact-pings): the
  * person who asked has not said "we've started talking", so the person they asked hears about it by
- * email as well as in the app. ONE email per ping.
+ * email as well as in the app. Sent on days 2, 4, 8 and 16 until either person ends the request,
+ * which itself ends on day 30 (BAM, 2026-10-06).
  *
  * Reply-To is the ASKER's account email (the sendPricingInquiryEmail pattern), so hitting reply
  * answers them directly. From stays the school's own sender: putting a parent's gmail address in
@@ -198,9 +199,15 @@ export async function sendContactPingEmail(opts: {
   studentName: string;
   cohortName: string;
   askedOn: string;
+  /** The day the request ends on its own (30 days after the ask). */
+  endsOn: string;
+  /** Which reminder this is, 1-based, and how many there can be. */
+  reminderNumber: number;
+  reminderTotal: number;
   pageUrl: string;
 }): Promise<void> {
   const brand = brandName(opts.tenant);
+  const isLast = opts.reminderNumber >= opts.reminderTotal;
   const lines = [
     `${opts.fromName}, ${opts.fromRoleText} in "${opts.cohortName}", asked on ${opts.askedOn} to talk with you.`,
     "",
@@ -214,13 +221,19 @@ export async function sendContactPingEmail(opts: {
     `See this request, and ${opts.studentName}'s work, on ${brand} (sign in required):`,
     opts.pageUrl,
     "",
-    `You are getting this because ${opts.fromName} asked through ${brand} two days ago and has not yet told us you've connected. This is the only email about this request.`,
+    `You are getting this because ${opts.fromName} asked through ${brand} on ${opts.askedOn}, and neither of you has ended the request yet.`,
+    isLast
+      ? `This is the last reminder (${opts.reminderNumber} of ${opts.reminderTotal}). The request ends on its own on ${opts.endsOn}.`
+      : `This is reminder ${opts.reminderNumber} of ${opts.reminderTotal}; they come further apart each time. To stop them, close the request on the page above, or once you've talked ${opts.fromName} can mark it done. Either way it ends on its own on ${opts.endsOn}.`,
   ];
   await sendEmail({
     to: opts.to,
     from: opts.tenant.email.from,
     replyTo: opts.fromEmail,
-    subject: `${opts.fromName} would like to talk about ${opts.studentName}`,
+    subject:
+      opts.reminderNumber > 1
+        ? `Reminder: ${opts.fromName} would like to talk about ${opts.studentName}`
+        : `${opts.fromName} would like to talk about ${opts.studentName}`,
     text: lines.join("\n"),
     kind: "contact-ping",
     tenant: opts.tenant.slug,

@@ -22,6 +22,11 @@ describe("contact tables carry no message", () => {
         "from_role",
         "from_user_id",
         "id",
+        // A counter of reminder emails the PLATFORM sent (days 2, 4, 8, 16), never anything either
+        // person did, so not a "seen" signal. Added on BAM's decision of 2026-10-06 ("requests expire
+        // after 30 days, send reminders at growing intervals"), recorded in
+        // plans/app-improvements/messaging-parents-teachers.md.
+        "reminders_sent",
         "student_user_id",
         "tenant_id",
         "to_user_id",

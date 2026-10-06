@@ -2,7 +2,7 @@ import { apiContext, errorJson, json } from "@/lib/api";
 
 // POST /api/contact/pings/[id]/connected: the person who ASKED says "we've started talking" (decided
 // 2026-09-20: only the initiator signals this). Ends the ping: it leaves both pages and the badge,
-// and the 48-hour fallback email is never sent. Anyone else, or a ping on another school, gets 404.
+// and no further reminder email is sent. Anyone else, or a ping on another school, gets 404.
 export async function POST(_req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const { sdb, session } = await apiContext();

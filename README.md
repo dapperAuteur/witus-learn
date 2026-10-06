@@ -352,6 +352,16 @@ filed as research checks rather than guessed. The **construction study series**
 (`construction-safety`, `construction-math`) is private for a different reason: it is BAM's own study
 support, never for publication.
 
+## Course index by category (`scripts/data/README.md`)
+
+The course files stay flat in `scripts/data/`; **[scripts/data/README.md](scripts/data/README.md)** lists
+every registered course by school and by category, the way the app lists them, with each course's series
+code, its extra categories, and whether it is private. It is generated from the seed scripts by
+`pnpm gen:course-index` (the same registry the lint guards read), and `pnpm lint` fails while it is
+stale, so re-run it whenever you register a course. A category is data in a course's registration, not
+its folder: a course can list under up to six categories and the owner can rename one at
+`/admin/categories` (BAM chose the index over moving the files on 2026-10-06).
+
 ## Local private courses (text that never enters this repository)
 
 A course built from a book BAM owns can be held for his own study but not published, and **pushing to
@@ -628,8 +638,10 @@ teachers, a **per-class rule** a teacher sets for one class, plus **per-person o
 combination (most specific wins: person, then class, then default). A request ("ping") shows **in the app
 first**: a count on Family / Cohorts in the menu, and a card on `/family` or the class roster, naming
 the student and linking to their work. The person who asked marks **"We've started talking"**, or
-the person asked presses **"Close this request"**; if neither happens within 48 hours, a daily cron (`/api/cron/contact-pings`, `CRON_SECRET`) sends the other
-person **one** email with Reply-To set to the asker. No student is ever a party (check constraints),
+the person asked presses **"Close this request"**; if neither happens within 2 days, a daily cron (`/api/cron/contact-pings`, `CRON_SECRET`) emails the other
+person with Reply-To set to the asker, then reminds them on days 4, 8 and 16 while the request stays
+open (missed days count as sent, so a late run never sends a burst); a request ends on its own after
+30 days (migration 0066). No student is ever a party (check constraints),
 the relationship is recomputed on every read (`tests/isolation/contact.db.test.ts`, including the
 staleness case), the fallback email is not mirrored to the WitUS Inbox, and there is **no inbox**: no
 message body, no thread, no history view (`tests/contact-schema.test.ts`). Rules:
@@ -806,6 +818,7 @@ open), so 40+ proposals scan as a screenful of headings. Leave a note on any ite
 pnpm future:list                  # open notes, all schools (--tenant <slug> · --status open|done|all
                                   #   · --item <key> · --limit N)
 pnpm gen:future-work              # regenerate src/lib/future-work-content/* from plans/future-courses/
+pnpm gen:course-index             # regenerate scripts/data/README.md, the course index by category
 ```
 
 The proposals are **committed** (`src/lib/future-work-content/*`, generated from the gitignored
