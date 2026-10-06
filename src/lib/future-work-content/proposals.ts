@@ -17094,6 +17094,222 @@ the 1930s livestock reduction). The one fibre-dye lesson is indigo in
 \`training-the-colonizer-course.ts:672\`. No owned book covers any of it.`,
     provenance: "plans/future-courses/farm-and-garden/2026-10-05-raising-animals-for-yarn.md",
   },
+  {
+    key: "debate-class",
+    title: "BAM's note, 2026-10-06: a debate class",
+    summary: "> \"create a debate class using the content in '/Users/bam/Google Drive/My Drive/files/ebooks/language/debating'\"",
+    body: `# BAM's note, 2026-10-06: a debate class
+
+> "create a debate class using the content in '/Users/bam/Google Drive/My Drive/files/ebooks/language/debating'"
+
+## What is in that folder (opened 2026-10-06)
+
+- Bo Seo, *Good Arguments: How Debate Teaches Us to Listen and Be Heard* (2022), PDF; and *The Art of
+  Disagreeing Well* (2022), PDF: the same book under its US and UK titles. Copyrighted, **Tier C**:
+  topic map and "read alongside", never extracted.
+- "Arguing is a constructive skill: The blueprint to build yours", Bo Seo, Big Think full interview
+  (mp3 plus a 64 KB transcript). The interview is public on Big Think's channel (**Tier B**: link and
+  cite as his account); the downloaded audio is BAM's copy and is not hosted.
+
+## What the interview gives as a topic map (attributed to Bo Seo where a lesson uses it)
+
+Why disagreement is a skill that atrophied; the Farmer and Malcolm X debates and three lessons (training,
+format, a relationship bigger than the disagreement); listening as a debater (transcribe, reconstruct
+faithfully, strengthen); his RISA test for choosing a disagreement (real, important, specific, aligned);
+which points to answer (necessary? helps progress?); side-switch exercises; one bright line (the equal
+moral standing of persons is not debated); rhetoric defended against Socrates' charge, with three Ps
+(proportionality, personality, panache); Schopenhauer's eristic stratagems as a defence against the dark
+arts; five bad-faith personas (dodger, twister, wrangler, liar, brawler) and the answer to each; the
+Nixon and Khrushchev kitchen debate; Hobbes's civil silence versus the value of difference.
+
+## Decisions to record
+
+- The course is built from public-domain and federal sources (section 6 of the brief); Bo Seo's
+  frameworks are named and attributed as his, never reproduced. Category proposed: **Civics**
+  (debate as a citizen's skill; the historical debates are civic events), additional categories Study
+  Skills and Research & Reporting. BAM's call in the brief.
+
+## Where the research is
+
+- Brief: \`2026-10-06-how-to-argue-well-brief.md\` (this folder). Evidence and rights are in its section 6.`,
+    provenance: "plans/future-courses/civics/2026-10-06-debate-class.md",
+  },
+  {
+    key: "how-to-argue-well-brief",
+    title: "Course brief · How to Argue Well",
+    summary: "Written: 2026-10-06 · Status: BRIEF, awaiting BAM's review. Nothing built.",
+    body: `# Course brief · How to Argue Well
+
+**Written:** 2026-10-06 · **Status:** BRIEF, awaiting BAM's review. Nothing built.
+**Seed:** BAM, 2026-10-06, "create a debate class using the content in [the debating folder]".
+**Proposed slug:** \`how-to-argue-well\` (alternatives: \`disagreeing-well\`, \`debate-and-argument\`) ·
+**Proposed category:** Civics, with \`additionalCategories: ["Study Skills", "Research & Reporting"]\`.
+No series yet; it would pair with \`spotting-misleading-marketing\` and \`fact-checking-as-a-discipline\`.
+**Research tier:** 1 (a dossier). No health, money or safety claims; the law content is history, not
+advice.
+**Rule:** the course-brief rule in CLAUDE.md. No course file is created until this is approved.
+**Rubric:** gates pass; B 3/3/3/3/2/2 = 31; form C6, course.
+
+---
+
+## 1 · Description
+
+A learner finishes this course able to disagree on purpose: to decide whether a disagreement is worth
+having and name exactly what it is about; to listen the way a debater listens (write it down,
+reconstruct it faithfully, answer the strongest version); to build a case from claim, reason and
+evidence and to test one; to recognise the moves that wreck a conversation (changing the subject,
+misrepresenting, criticising without an alternative, flooding with falsehoods, turning it into a brawl)
+and to answer each; to use rhetoric in proportion and to notice when it is being used on them; and to
+read three historical debates as primary sources: Lincoln and Douglas in 1858 (seven debates; an hour,
+an hour and a half, thirty minutes), Nixon and Khrushchev in 1959, and Farmer and Malcolm X in 1962.
+They leave knowing that a debate is a format with rules, that the rules are what reward reasoning over
+dominance, and that the skill is for the kitchen table and the city council as much as the stage.
+
+**The scope decision.** This is an argumentation course, not a competitive-debate manual. The formats of
+school debate (policy, Lincoln-Douglas, public forum, parliamentary) are described in one lesson so a
+learner can recognise them and find a club; the course does not train tournament tactics. BAM's owned
+sources (Bo Seo's book and interview) are the topic map and are attributed by name where a lesson uses
+one of his frameworks; the teaching text comes from public-domain argumentation textbooks (Gardiner
+1912-era, Ketcham, Pattee, Alden 1900), Aristotle's *Rhetoric* and Schopenhauer's *Art of Controversy*,
+and from federal records of the historical debates.
+
+**The honesty decision.** The course teaches one bright line as a position with an argument behind it
+(the equal moral standing of persons is the premise of debate, not its subject) and otherwise does not
+tell the learner what to believe about any contested question used as an example.
+
+## 2 · Outline (draft)
+
+| # | Section | Lessons (draft) | Backbone |
+|---|---|---|---|
+| 1 | What an argument is | Claim, reason, evidence; a disagreement versus a quarrel; why the rules of a format matter (when one person speaks, no one else does); where the tradition comes from (Athens, the coffee houses, the founders' debate clubs) | Gardiner, Ketcham; Aristotle Rhetoric I; Bo Seo attributed for the history frame |
+| 2 | Choosing the fight | Is it real, important, specific, and are we aligned on why we are arguing (Bo Seo's RISA test, attributed); naming the disagreement first; which points are necessary to answer and which help | Bo Seo (attributed, no reproduction); Pattee on the proposition and the issues |
+| 3 | Listening like a debater | Transcribe, reconstruct faithfully, build the strongest version; why answering the weak version loses; a practice: the flow sheet | Ketcham; Alden; Bo Seo attributed |
+| 4 | Building and testing a case | Burden of proof, the issues, evidence and its tests, the brief; rebuttal; the side-switch exercise (write the other side's four best arguments) | Gardiner; Ketcham; Alden; Pattee |
+| 5 | Fallacies and the dark arts | The classic fallacies (Whately, Mill, the textbooks); Schopenhauer's stratagems read as a parody and a warning; the five bad-faith personas and the answer to each (attributed to Bo Seo): stay the course, correct the record, pin to a position, plug and replace, pause and name the conversation | Schopenhauer (Gutenberg 10731); Whately; Bo Seo attributed |
+| 6 | Rhetoric, used and spotted | Ethos, pathos, logos (Aristotle); proportionality, personality, panache (attributed); applause lines and spectacle; how an audience judges who is "winning" and why that is exploitable | Aristotle *Rhetoric* (Roberts translation); Bo Seo attributed |
+| 7 | Three debates, read from the record | Lincoln and Douglas 1858 (the NPS transcripts; the 60/90/30 format); Nixon and Khrushchev 1959 (stay the course, levity, defer); Farmer and Malcolm X 1962 (training, format, relationship); what each shows about rules and their breaking | NPS Lincoln Home page and transcripts (Tier A); the other two REPORTED until fetched |
+| 8 | Disagreeing with people you love, and when not to debate | Carelessness with the closest people; the bright line; debate as one tool beside negotiation, collaboration and tolerance; a practice plan | Bo Seo attributed; Mill *On Liberty* ch. 2 for the value of hearing the other side (to fetch) |
+
+A typed exercise in section 4 (name the part of the case) and a side-switch written exercise;
+\`recallContent\` cards per lesson; pools sized to text (gate D2). Sections 2, 5 and 6 cite Bo Seo by
+name for his frameworks and link the Big Think interview; no passage is reproduced or paraphrased at
+length (gate A4).
+
+## 3 · Fit
+
+- **Category:** Civics (debate as a citizen's skill; the historical debates are civic events). Additional:
+  Study Skills (it is a thinking skill) and Research & Reporting (evidence and its tests). BAM's call.
+- **Audience:** public catalog. Teens and adults; teachers who run a class debate; anyone who dreads
+  Thanksgiving.
+- **Visibility:** public, free by default like knots and survival.
+- **Standards:** Common Core ELA speaking-and-listening and argument-writing standards exist in
+  \`src/lib/standards/shared/common-core-ela.ts\` (24 ELA entries in the catalog today); whether the
+  exact codes (for example SL.9-10.1, SL.9-10.3, W.9-10.1) are present is to be checked at build time.
+  If they are, this course can carry a claim a school shops on; if not, add them with verbatim text.
+- **Media:** none required. The NPS transcripts and the public-domain textbooks are the artefacts.
+
+## 4 · Connections, found by searching \`scripts/data/\`
+
+Searched 2026-10-06 for debate, argument, rebuttal, fallacy, rhetoric, persuasion, public speaking,
+oratory, Toulmin, Lincoln-Douglas, forensics, Malcolm X, Farmer, Tolson.
+
+- **Nothing teaches** argumentation, debate, fallacies (one incidental hit in \`nasm-cnc\`) or rhetoric
+  as a skill. "Argument" in lesson titles means a historical thesis (\`forms-of-government\` "1 ·
+  Classification is an argument, not a vocabulary quiz"; \`indiana-avenue\` "13 · Testing an argument
+  against a chronology"; \`how-to-read-a-number\` "4 · The denominator is the argument").
+- **Links out, by lesson:** \`spotting-misleading-marketing\` (the whole course: claims built to mislead);
+  \`fact-checking-as-a-discipline\` (researcher series: evidence and its tests); \`mockumentary\` "2 · The
+  grammar of persuasion, read backwards" (\`mockumentary-course.ts:68\`); \`supreme-court-judicial-branch\`
+  "4 · Oral argument and the justices' private conference" (\`:110\`); \`how-a-bill-becomes-law\` (debate in
+  Congress as procedure); \`jury-duty-courts\` (argument before a jury); \`reporter-interviewing\` (listening
+  as a craft); \`voice-acting\` and \`acting\` (delivery); \`how-to-read-a-number\` lesson 4 (the denominator
+  as argument); the Malcolm X and civil-rights material in the history courses (grep at build time for
+  the exact lessons that name him, so the Farmer debate lesson links rather than repeats).
+- **Links in:** none yet; a natural prerequisite for a future \`how-to-run-for-office\` refresh and for
+  the reporter and researcher tracks.
+
+## 5 · Course or lesson?
+
+**A course (form C6).** B1 = 3 (the textbooks, Schopenhauer and the NPS debate records are fetched or
+their records are; Bo Seo's frameworks are read in his own interview and attributed); B2 = 3 (nothing
+covers it); B3 = 3 (a learner can read Ketcham's or Gardiner's textbook, Schopenhauer's stratagems and
+the Lincoln-Douglas transcripts); B4 = 3 (eight sections); B5 = 2 (two courses linked by lesson, no
+series slot); B6 = 2 (BAM asked; an ELA standards claim would raise it to 3 if the codes are present).
+Total 31, "build next".
+
+**The cluster check.** One course. The alternative, a short "argument" lesson inside
+\`spotting-misleading-marketing\` or \`fact-checking-as-a-discipline\`, loses because those courses are
+about other people's claims and this one is about the learner's own conduct in a disagreement; eight
+sections do not fit a lesson. A competitive-debate training course was rejected as scope: formats and
+tournament tactics are a club's job, and the public record for them is Tier B (association rules).
+
+## 6 · Evidence status
+
+### VERIFIED, fetched 2026-10-06
+
+- Schopenhauer, *The Essays of Arthur Schopenhauer; the Art of Controversy* (trans. T. Bailey
+  Saunders), Project Gutenberg 10731 (search result page; title and number).
+- Gardiner, J. H. (1863-1913), *The Making of Arguments*, Gutenberg 13089, "Public domain in the USA".
+- Ketcham, Victor Alvin (1883-1947), *The theory and practice of argumentation and debate*, Gutenberg
+  62583, "Public domain in the USA".
+- Pattee, George K., *Practical Argumentation*, Gutenberg 6473 (search result; page not opened).
+- Alden, Raymond Macdonald (1873-1924), *The art of debate*, 1900; three scans on archive.org
+  (identifiers \`artofdebate00alderich\`, \`artdebate00aldegoog\`, \`cu31924031321247\`); rights field absent;
+  public domain by date.
+- Aristotle, *Rhetoric*, trans. W. Rhys Roberts, Internet Classics Archive (classics.mit.edu); the
+  site shows "© 1994-2009" for its digital edition, so the TEXT is cited as the Roberts translation
+  (public domain) and the SITE is linked as Tier B.
+- National Park Service, Lincoln Home, "The Lincoln-Douglas Debates of 1858": seven debates; "In each
+  debate either Douglas or Lincoln would open with an hour address. The other would then speak for an
+  hour and a half. The first then had 30 minutes of rebuttal."; transcripts of all seven linked. Federal,
+  Tier A.
+- Bo Seo, Big Think interview (transcript read in full, 2026-10-06): the frameworks and examples listed
+  in the seed note. Tier B (link the interview); Tier C for the book.
+
+### REPORTED, and therefore not assertable in a lesson until fetched
+
+- The Farmer and Malcolm X debates (1962, Cornell and broadcasts) and Melvin Tolson's coaching of
+  Farmer at Wiley College: known from the interview and general reference; the recordings' and
+  transcripts' holders and rights are not yet located.
+- The Nixon and Khrushchev kitchen debate (24 July 1959): a transcript and recording exist (the
+  recording is a US-made broadcast); holder and rights not yet located.
+- Malcolm X's prison debate programme (Norfolk Prison Colony): REPORTED via the interview and
+  biographies.
+- The original publication years of Gardiner, Ketcham and Pattee (not shown on the Gutenberg pages;
+  the authors' dates make pre-1930 publication certain for Gardiner, likely for the others).
+- Whately's *Elements of Logic* and Mill's *On Liberty* chapter 2 as the fallacy and
+  hear-the-other-side sources: not fetched today.
+- National Speech & Debate Association format descriptions (Tier B): not fetched.
+
+### UNVERIFIED
+
+- The Roberts translation's year (1924 by standard bibliographies; not shown on the page).
+- Whether Common Core SL and W argument codes are present in \`src/lib/standards/shared/common-core-ela.ts\`.
+
+### Gate A4
+
+Nothing from *Good Arguments* is reproduced or paraphrased at length. Bo Seo's named frameworks (RISA,
+the side switch, the three Ps, the five personas, the bright line) are taught as his, with his name and
+a link to the interview, in the way the catalog cites any author's idea; the textbook material carries
+the instruction.
+
+### Failed fetches
+
+None today. Gutenberg's search has no Aristotle *Rhetoric* (the MIT archive was used instead).
+
+## 7 · Questions for BAM
+
+1. **Civics, Study Skills or Research & Reporting as the primary category?** Civics is recommended
+   because the three historical debates and the "citizen's skill" frame belong there.
+2. **Slug and title.** \`how-to-argue-well\` is proposed; "Good Arguments" and "Disagreeing Well" are Bo
+   Seo's titles and are not used.
+3. **Do you want the competitive formats taught** (one lesson, as drafted) **or left out entirely?**
+4. **Build position.** It is independent of the fibre and farm series; it could go first, since its
+   sources are all fetched or fetchable today and it needs no media.
+5. **Would you record a debate exercise** (two people, the side switch, the flow sheet) as the course's
+   one piece of original media, later?`,
+    provenance: "plans/future-courses/civics/2026-10-06-how-to-argue-well-brief.md",
+  },
 ];
 
 export interface SubdirDoc extends ProposalDoc {
