@@ -15765,6 +15765,184 @@ visit literary-devices.com for a list
     provenance: "plans/future-courses/culture-and-history/2026-09-07-connection-unions-great-migration.md",
   },
   {
+    key: "00-farm-sources-and-what-can-be-taught",
+    title: "Farm sources, rights, and what can actually be taught from them",
+    summary: "Written: 2026-10-05 · Status: INVENTORY, supporting the briefs for `manure-and-compost`,",
+    body: `# Farm sources, rights, and what can actually be taught from them
+
+**Written:** 2026-10-05 · **Status:** INVENTORY, supporting the briefs for \`manure-and-compost\`,
+\`growing-trees\`, \`growing-protein\` (with its working-animals section) and the husbandry half of
+\`raising-animals-for-yarn\`. Nothing built.
+**Seed:** BAM, 2026-10-05: "a course on manures of different animals and composting and using both in
+gardens and farms to grow food, growing trees and growing protein to compliment the garden to create
+useful manure and pets (dogs, cats, birds, etc) to help with the garden, composting, manure, and
+growing the protein (herding dogs, etc)." Later: "growing animals for yarn", "include yaks, theres a
+yak farm nearby, Woolly Yak Ranch & Winery in arcadia Indiana".
+**Rules this file answers to:** the course-brief rule and the source-hosting rule in \`CLAUDE.md\`;
+gates A4, A7 and D5a and Part H of \`docs/course-method/course-creation-rubric.md\`.
+**Evidence markings:** VERIFIED (fetched and read on 2026-10-05; "re-fetched" means the orchestrator
+read it again after the research pass), REPORTED, UNVERIFIED. A lesson may assert only VERIFIED claims.
+**Research tier:** 2 throughout (food safety, pathogens, animal welfare, law).
+
+---
+
+## 0 · The problem this file exists to solve, stated once
+
+BAM decided these are **public catalog courses**, so the teaching rests on sources a learner can open.
+He owns a strong permaculture library (section 1); it is the topic map and the reading companion, and
+under gate A4 nothing from it is extracted, paraphrased or sequenced into a tracked course file. That
+costs little here, because the federal record already carries the backbone: the organic rule's
+manure and compost numbers, the FDA produce-safety rule, the NRCS manure tables and composting
+chapter, the dog-waste study, CDC's pathogen pages, Carver's own bulletins, two Yearbooks of
+Agriculture, and a USDA bulletin on livestock guardian dogs. Where the record is thin (barn cats,
+poultry as pest control, herding-dog effectiveness) the course says so.
+
+**Four things I remembered wrong, corrected by fetching:** the organic rule's compost numbers are in
+7 CFR 205.203(c)(2), not in the 205.2 definition; FDA sets **no** waiting interval for untreated
+manure (21 CFR 112.56(a)(1)(i) is "[Reserved]"); EPA's home-composting page gives no reason for
+excluding pet waste (CDC and the 2005 study do); the NRCS manure tables have no goat, alpaca, dog or
+cat rows.
+
+---
+
+## 1 · BAM's books: bibliographic facts and the lane each one takes
+
+| Book (where it is) | Rights as printed | What it holds (printed page p., scan page PDF) | Lane |
+|---|---|---|---|
+| Mollison, *Permaculture: A Designers' Manual*, Tagari 1988, reprinted 1992 (Drive \`science/nature/\`; an Island Press 1990 scan with the same pagination sits beside it) | "© Bill Mollison 1988 The contents of this book and the word PERMACULTURE © are copyright" | §3.2 Analysis pp. 37-42 (the chicken inputs and outputs); ch. 6 Trees pp. 137-151; ch. 8 Soils pp. 182-226 (compost p. 201, Table 8.5 compost materials p. 202, earthworms pp. 207-208, rehabilitation p. 215); home gardens pp. 266, 371, 417; §10.12 animal tractors p. 299; §12.9 Orchards p. 423 (animals in the orchard p. 425); §12.10 farm forestry p. 425; §12.11 free-range forage pp. 427-434 (bees, poultry, pigs); grasslands pp. 435-443; ch. 13 Aquaculture pp. 458-504. Printed = PDF minus 14 to PDF 290, minus 38 from PDF 315 | **Tier C**: the topic map for the whole series and its "read alongside" |
+| Mollison, *Permaculture Design Course* pamphlets (Yankee Permaculture; transcripts of the 1981 Wilton, NH course; two identical 155-page files, Drive \`science/nature/\`) | "Reproduction of this Pamphlet Is Free and Encouraged"; "with Bill Mollison's consent, I have placed these pamphlets in the public domain" | Pamphlets I, II, III, VIII to XIV (IV to VII and XV missing). IX: compost (PDF 86), poultry forage systems (PDF 94-96), bees (PDF 98), cattle forage (PDF 99-102). XI water: ponds, ducks, fish (PDF 123-132) | The one owned text with an open statement. **Tier B until the dedication's standing is confirmed** (publisher's current copy, date of the statement): link, do not host |
+| Mollison and Holmgren, *Perma-culture Two*, Tagari 1979 (Drive \`science/nature/\`) | © Bill Mollison 1979 | Legumes pp. 29-39; sheet mulch p. 40; orchards about p. 52; arid-land livestock pp. 72-73; sewage p. 106; aquatic polyculture p. 107; free-range poultry design pp. 133-141 (printed = PDF minus 11, minus 12 from about PDF 118) | Tier C |
+| Smith, *No Grid Survival Book*, 2025 (\`content/survival-skills/\`) | © 2025, all rights reserved | Compost toilet PDF 123-126; vermicomposting PDF 126-129; greywater PDF 129-132; a self-sufficient garden PDF 141-145. Nothing on animals or manure | Tier C, already survival's topic map |
+| Pawson, *Knots*, DK 2012 (\`content/survival-skills/\`) | © 2012 DK | "Best for Gardening" pp. 218-221; "Best for Horses" pp. 370-373 | Tier C |
+| Verrill, *Knots, Splices and Rope Work* (PD) | Gutenberg 13510 | Halters for animals, Figs 149-154 | Tier A |
+| Hancock, *World Agriculture Before and After 1492*, Springer 2022 (Drive \`history/Africa to Americas History/\`) | Springer licence | Origins of crops and livestock pp. 5-18; llamas and alpacas pp. 37-38; Spanish livestock p. 73; provision grounds p. 92; African rice and banana p. 94 | Tier C |
+| Reese and Garth (eds), *Black Food Matters*, Minnesota 2020; Reese, *Black Food Geographies*, UNC 2019; Reese, *Gather*, Norton 2026 (Drive \`history/African Diaspora/\`) | University presses and Norton; the *Gather* file is stamped "OceanofPDF.com" (cite the work, never that copy) | Detroit urban agriculture pp. 208-227; Black farmers and the law pp. 228-250; community gardening pp. 111-130; "Gardens" pp. 19-43 | Tier C: the Black agrarian frame of the history lessons; link publisher pages |
+| Rask and Monrad, *Two Views from Christiansborg Castle*, 2010 (Drive \`history/\`) | © 2010 Sub-Saharan Publishers | Gold Coast cultivation and cattle (Vol II PDF 185-190), agricultural establishments (PDF 240-263); period racist language | Tier C |
+| Davis, Gardner and Gardner, *Deep South*, 2nd enlarged ed., Chicago 2022 (Drive \`Black Authors/Isabel Wilkerson/\`); Foner, *Reconstruction* (four copies, Drive \`history/\`) | © Chicago; © Foner 1988, 2014 | Tenancy and sharecropping chapters | Tier C, context for the history lesson |
+| Great Lakes Inter-Tribal Council, *Walking Toward the Sacred* (2013, Drive \`Better Vice Club Research/\`) | © 2013 GLITC | "How to Grow Your Own Tobacco" PDF 21-23 | Tier C; BVC material, not these courses |
+
+**Not owned:** any livestock-guardian, herding-dog or barn-cat source; any sheep, alpaca, goat, yak or
+silk husbandry text; any extension compost guide. The \`cannabis/\` folder has no cultivation guide.
+\`content/DO-NOT-READ-ganjier-curriculum.zip\` was left closed as its name asks.
+
+---
+
+## 2 · Public sources that can carry the teaching
+
+### 2.1 Manure and compost (\`manure-and-compost\`)
+
+| Source | What it covers | Rights, tier | Status |
+|---|---|---|---|
+| **7 CFR 205.203, Soil fertility and crop nutrient management practice standard** (USDA National Organic Program); fetched from the eCFR API, \`https://www.ecfr.gov/api/versioner/v1/full/2025-09-01/title-7.xml?part=205&section=205.203\` (the HTML pages redirect to an unblock page) | **(c)(1)** raw animal manure "must be composted unless it is" (i) applied to a crop not for human consumption, (ii) "Incorporated into the soil not less than 120 days prior to the harvest of a product whose edible portion has direct contact with the soil surface or soil particles", (iii) "not less than 90 days prior to the harvest of a product whose edible portion does not have direct contact". **(c)(2)** composted materials: "(i) Established an initial C:N ratio of between 25:1 and 40:1; and (ii) Maintained a temperature of between 131 °F and 170 °F for 3 days using an in-vessel or static aerated pile system; or (iii) … for 15 days using a windrow composting system, during which period, the materials must be turned a minimum of five times." **205.2** defines compost ("The product of a managed process through which microorganisms break down plant and animal materials…") and manure ("Feces, urine, other excrement, and bedding produced by livestock that has not been composted") with no numbers | Federal regulation, **Tier A** | VERIFIED, re-fetched |
+| **21 CFR Part 112 Subpart F, biological soil amendments of animal origin** (FDA Produce Safety Rule), eCFR API part=112 | 112.51 when an amendment is "untreated"; 112.53 human waste prohibited; **112.54** treatment processes (static composting at 131 °F for 3 consecutive days then curing; turned composting at 131 °F for 15 days, not necessarily consecutive, with at least five turnings); **112.55** microbial standards (Listeria, Salmonella, E. coli O157:H7 not detected, or Salmonella below 3 MPN per 4 g and fecal coliforms below 1,000 MPN per g); **112.56** application intervals: untreated with minimised contact "[Reserved]"; untreated with no contact 0 days; treated 0 days; 112.60 records | Federal regulation, **Tier A** | VERIFIED (research pass). **The course must say FDA sets no interval**; the 120 and 90 days are the organic rule's |
+| **USDA NRCS, Agricultural Waste Management Field Handbook, Part 651 ch. 4 "Agricultural Waste Characteristics"** (210-VI-AWMFH, March 2008, 40 pp.), \`https://directives.nrcs.usda.gov/sites/default/files2/1712930943/17165.pdf\` | "As excreted" tables: 4-5 dairy, 4-8 beef, 4-10 swine, 4-11 poultry, 4-12 veal, 4-13 lamb, 4-14 horse, 4-15 rabbit; 4-16 manure as transferred; 4-17 human. Values credit ASAE D384.2 (2005). **No goat, alpaca, dog or cat tables** | Federal, **Tier A** | VERIFIED (research pass) |
+| **USDA NRCS, National Engineering Handbook Part 637 ch. 2 "Composting"** (Amend. 40, Nov 2010, 97 pp.), \`https://directives.nrcs.usda.gov/sites/default/files2/1720464003/Chapter%202%20-%20Composting.pdf\` | 637.0201 principles; 637.0202 mixtures; 637.0206 pathogens (p. 2-26); 637.0209(g) quality, with the EPA process standards (104 °F for 5 days with 4 hours at or above 131 °F "significantly reduces" pathogens; 131 °F for 3 days static or in-vessel, or 15 days with five turnings windrow, "further reduces"); 637.0213 dead-animal composting; 637.0214 compost bedded packs; Appendix 2A raw materials; 2B on-farm testing | Federal, **Tier A** | VERIFIED (research pass) |
+| **USDA NRCS and Fairbanks Soil and Water Conservation District, *Composting Dog Waste*** (December 2005, 11 PDF pp.), EPA-hosted copy \`https://www.epa.gov/system/files/documents/2026-06/usda-fact-sheet-composting-dog-waste-2005-12.pdf\` | "Dog waste compost can be used as a soil additive for revegetation, lawn establishment, and planting beds. It should not be used on crops grown for human consumption." "Compost must reach 145ºF for several days to destroy pathogens." "the primary agents for disease are roundworm eggs." "We do not recommend adding cat waste or cat litter to your compost." Based on a 1991 Fairbanks study | Federal text, **Tier A**; "Compost bin illustrations by Ellen Million and Noel Bell", photos by NRCS staff: host the text, not the drawings | VERIFIED, re-fetched (publisher, date, the quoted sentences, the credit line) |
+| **EPA, "Composting At Home"** (updated 8 Dec 2025), \`https://www.epa.gov/recycle/composting-home\` | Avoid: "Pet waste and cat litter", meat, fish, bones, dairy, fats, cooked food in quantity, compostable foodservice ware, herbicide-treated plants, weedy seeds, diseased plants, treated wood, dryer lint, glossy paper, stickers. **Gives no reason for the pet-waste exclusion** | Federal, **Tier A** | VERIFIED (research pass) |
+| **CDC, "Preventing Toxoplasmosis"** (30 Jan 2024), \`https://www.cdc.gov/toxoplasmosis/prevention/index.html\` | "Wear gloves when gardening or touching soil or sand that cat feces containing Toxoplasma may have contaminated"; cover sandboxes; change litter daily ("does not become infectious until 1-5 days after a cat shed it"); rinse produce | Federal, **Tier A** | VERIFIED (research pass) |
+| **CDC, "How Toxocariasis Spreads"** (19 Apr 2024), \`https://www.cdc.gov/toxocariasis/spreads/index.html\` | Roundworm eggs need "2-4 weeks in the environment" to become infective and survive "months, or even years"; pick up pet waste daily; deworm; children and dirt | Federal, **Tier A** | VERIFIED (research pass) |
+| **CDC, "Backyard Poultry"** (18 Jul 2025), \`https://www.cdc.gov/healthy-pets/backyard-poultry.html\` | Handwashing, coop shoes, children under 5, egg cooking. Says nothing about poultry manure in gardens | Federal, **Tier A** | VERIFIED (research pass) |
+| **Iowa State University Extension, "Using Manure in the Home Garden"** (reviewed Apr 2023), \`https://yardandgarden.extension.iastate.edu/how-to/using-manure-home-garden\` | The 120 and 90 day intervals for gardeners; "Do not use cat, dog, or pig manures in gardens or compost piles. Some of the parasites found in these manures may survive and remain infectious for people"; composting kills pathogens at 131 °F | © Iowa State, **Tier B** | VERIFIED (research pass) |
+| **Carver, *How to Build Up Worn Out Soils***, Tuskegee Experiment Station Bulletin No. 6, 1905, \`https://archive.org/details/CAT31355455\` | Fill ditches with leaves and pine tops; "swamp muck and leaf mould are valuable as a fertilizer"; barnyard manure in the drill | NAL: "The contributing institution believes that this item is not in copyright", **Tier A** | VERIFIED, re-fetched (title, author, series, 1905, NAL, rights statement) |
+| **Carver, *How to Build Up and Maintain the Virgin Fertility of Our Soils***, Bulletin No. 42, October 1936, \`https://archive.org/details/CAT31355516\` | "A year-round compost pile is absolutely essential", layered muck, leaves and barnyard manure | NAL "not in copyright"; published 1936, outside the 1930 rule, so hosting rests on the NAL statement and the absent notice: **Tier A with that caveat recorded** | VERIFIED (research pass). The NAL exhibit (\`https://www.nal.usda.gov/exhibits/ipd/carver/exhibits/show/bulletins\`) numbers it 38; the printed number is 42 |
+| **Beal, *Barnyard Manure***, USDA Farmers' Bulletin 192 (1904, 32 pp., revising FB 21 of 1894), \`https://archive.org/details/CAT87201627\` (FB 21: CAT87201444) | Manure handling a century ago | NAL "not in copyright", **Tier A** | VERIFIED (research pass) |
+| **USDA Yearbook of Agriculture 1938, *Soils and Men***, \`https://archive.org/details/yoa1938\`; **1957, *Soil***, \`https://archive.org/details/yoa1957\` | Soil science as the government taught it | NAL "not in copyright", **Tier A** | VERIFIED (research pass) |
+| **King, *Farmers of Forty Centuries***, Gutenberg 5350; **Darwin, *The Formation of Vegetable Mould Through the Action of Worms*** (1881), Gutenberg 2355 | Night soil and composting in East Asia; the earthworm as a soil-maker | "Public domain in the USA", **Tier A** | VERIFIED (research pass) |
+| **SARE, *Building Soils for Better Crops*** (4th ed. 2021, Magdoff and van Es), \`https://www.sare.org/wp-content/uploads/Building-Soils-for-Better-Crops.pdf\` (ch. 12 integrating crops and livestock, ch. 13 composts); ***Managing Cover Crops Profitably*** (3rd ed. 2007), \`https://www.sare.org/wp-content/uploads/Managing-Cover-Crops-Profitably.pdf\` | Soil organic matter, composting, cover crops | "SARE content may be copied and distributed with attribution for educational, non-commercial purposes"; no CC licence; **Tier B** (link) | VERIFIED (research pass) |
+| **FAO, *On-Farm Composting Methods*** (2003), \`https://www.fao.org/4/y5104e/y5104e00.htm\`; ***Farmer's Compost Handbook: Experiences in Latin America*** (2015), \`https://www.fao.org/3/i3388e/i3388e.pdf\` | Methods and troubleshooting | Non-commercial reproduction with acknowledgement; no CC licence; **Tier B** | VERIFIED (research pass) |
+| NCAT/ATTRA, *Manures for Organic Crop Production* (Kuepper 2003), \`https://www.ncat.org/publication/manures-for-organic-crop-production/\` | Manures by type | No rights statement read, **Tier B** | VERIFIED (research pass, landing page) |
+| Cornell, *On-Farm Composting Handbook* (NRAES-54, 1992), \`https://ecommons.cornell.edu/items/c66de614-e524-46a3-a4cb-031c9a1e7e11/full\` (74 MB PDF) | The farm-scale reference | No rights text displayed, **Tier B** | VERIFIED (research pass, record) |
+| Runoff and hypoxia | Already taught in \`river-the-dead-zone\` and \`the-river-and-the-watershed\` | | Link, do not repeat |
+
+### 2.2 Trees (\`growing-trees\`)
+
+| Source | What it covers | Rights, tier | Status |
+|---|---|---|---|
+| **USDA National Agroforestry Center publications**, \`https://www.fs.usda.gov/nac/resources/publications/index.php\` | "You are free to photocopy, print, or download items from our website as needed. All USDA publications and broadcasts are free for public use and may be reproduced for non-profit purposes." Working Trees brochures (silvopasture, agriculture, livestock); Agroforestry Notes on silvopasture, alley cropping, forest farming, windbreaks; *Inside Agroforestry* | Federal (Forest Service), **Tier A**; check photo credits per item | VERIFIED (research pass, index page). Individual PDFs to be read for the brief |
+| Mollison ch. 6 and §12.9-12.10 | Topic map only | Tier C | |
+| Planting and establishment guidance (USFS, extension), nitrogen-fixing trees, orchard basics | | | UNVERIFIED: to be fetched for the brief |
+
+### 2.3 Protein, and the animals that help (\`growing-protein\`)
+
+| Source | What it covers | Rights, tier | Status |
+|---|---|---|---|
+| **USDA APHIS Wildlife Services, *Livestock Guarding Dogs: Protecting Sheep from Predators*** (Green and Woodruff, Agriculture Information Bulletin 588, 1990, revised 1999, 32 pp.), \`https://www.govinfo.gov/content/pkg/GOVPUB-A-PURL-LPS2240/pdf/GOVPUB-A-PURL-LPS2240.pdf\` | Breeds, rearing, a 1986 University of Idaho survey of about 400 users and 763 dogs (Great Pyrenees 57 percent, Komondor 18 percent) | Federal, **Tier A**; "Photos on pages 7 and 19 were provided by the American Sheep Industry Association" | VERIFIED (research pass) |
+| Gehring and VerCauteren 2010, "Utility of livestock-protection dogs for deterring wildlife from cattle farms", *Wildlife Research* 37(8):715-721 | Six treatment and three control farms, 2005-2008 | Likely Tier C | REPORTED |
+| **Parsons et al. 2018**, "Temporal and Space-Use Changes by Rats in Response to Predation by Feral Cats in an Urban Ecosystem", *Frontiers in Ecology and Evolution*, DOI 10.3389/fevo.2018.00146 | Over 79 days: 3 predation events (2 successful) and 20 stalking events; rats shifted movements rather than disappearing. Urban, not a farm | CC BY, **Tier A** | VERIFIED (research pass). **The barn-cat claim is thin, and the best open study is largely negative** |
+| **Penn State Extension, "Do Chickens, Guinea Fowl, or Opossums Control Ticks?"** (Skvarla 2024), \`https://extension.psu.edu/do-chickens-guinea-fowl-or-opossums-control-ticks\` | Guinea fowl eat adult ticks but do not reduce nymphs; no North American chicken studies; the opossum claim is contradicted by a 2021 stomach-contents study | **Tier B** | VERIFIED (research pass). Duffy, Downer and Brinkley 1992, *Wilson Bulletin* 104(2): REPORTED |
+| Herding-dog effectiveness | No evaluation found | | The course describes the work and the breeds without a performance claim |
+| **FAO, *Small-scale aquaponic food production*** (Technical Paper 589, 2014), \`https://www.fao.org/3/i4021e/i4021e.pdf\`; ***Edible insects: future prospects for food and feed security*** (Forestry Paper 171, 2013), \`https://www.fao.org/3/i3253e/i3253e.pdf\` | Aquaponics; insects as feed and food | Non-commercial reproduction with acknowledgement, **Tier B** | VERIFIED (research pass) |
+| Mollison §12.11 (bees, poultry, pigs), ch. 13 (aquaculture); the design-course pamphlets IX and XI | Topic map and read-alongside | Tier C and Tier B | |
+| 1890 land-grant small-farm programmes: Kentucky State aquaculture, Langston goat research, Fort Valley State small ruminants (Tuskegee, NC A&T unverified) | Husbandry extension | Tier B | REPORTED only; fetch for the brief |
+| USDA APHIS biosecurity, FSIS processing exemptions, local zoning | Law of keeping and processing animals | Federal and local | UNVERIFIED; to be fetched for the brief |
+
+### 2.4 Fibre animals, the husbandry half (\`raising-animals-for-yarn\`)
+
+| Source | What it covers | Rights, tier | Status |
+|---|---|---|---|
+| **USDA NASS, *Sheep and Goats*** (released 30 Jan 2026), \`https://esmis.nal.usda.gov/sites/default/release-files/795751/shep0126.pdf\` | 4.99 million sheep and lambs; 20.5 million lb of wool shorn in 2025 | Federal, **Tier A** | VERIFIED (research pass) |
+| **USDA APHIS, scrapie identification and recordkeeping guide**, \`https://www.aphis.usda.gov/sites/default/files/fs_ahscrapie.pdf\` | Official ID for sheep and goats; prevalence "reduced by over 99 percent" | Federal, **Tier A**; tag details dated about 2019-2020 | VERIFIED (research pass) |
+| ***The Angora Goat*** (USDA 1921) and the **AMS wool grade standards** (1968) | See the fibre file | Tier A | VERIFIED |
+| **University of Maryland Extension, unusual livestock manure table** (data from Ontario OMAF 21-077) | Alpaca 0.66 percent N, 0.92 P2O5, 0.28 K2O as-is; llama 0.75 / 0.80 / 0.30 | **Tier B** | VERIFIED (research pass) |
+| NRCS AWMFH Tables 4-13 (lamb) and 4-15 (rabbit) | Manure characteristics | Tier A | VERIFIED |
+| Zheljazkov 2005, *J Environ Qual* 34:2310-2317; Zheljazkov et al. 2009, *Waste Management* 29:2160-2164 | Waste wool as a slow-release nitrogen source; container yields 2 to 5 times controls | Tier C | REPORTED |
+| **Australian Veterinary Association, mulesing policy** (ratified 16 July 2026), \`https://www.ava.com.au/policy/mulesing\` | Mulesing to be "phased out" with "mandatory multi-modal analgesia" meanwhile | **Tier B** | VERIFIED (research pass). **There is no AVMA policy** |
+| Angora live-plucking controversy (2013) | Rests on a PETA Asia video; no peer-reviewed welfare study found | | REPORTED; teach as a documented controversy, not a finding |
+| Navajo-Churro sheep and the 1930s federal livestock reduction; Gulf Coast Native sheep; Black shepherds | | Federal records would be Tier A | REPORTED (Hubbell Trading Post pages, reduction figures) or not found |
+| Yak husbandry and fibre; **Woolly Yak Ranch & Winery, Arcadia, Indiana** (BAM) | A nearby farm as capture site or practitioner | | UNVERIFIED; fetch before the brief |
+| University of Maryland "Sheep 101/201", Oklahoma State breeds, alpaca and Angora rabbit extension guides, the Livestock Conservancy | Husbandry | Tier B | UNVERIFIED (sheep101.info blocked; others not reached) |
+
+---
+
+## 3 · What the public sources cannot carry, said plainly
+
+1. **A number FDA never set.** Learners will arrive with "wait 90 or 120 days" as gospel. Those are the
+   organic rule's numbers; the produce-safety rule has a reserved paragraph where the untreated-manure
+   interval would be. The course teaches both documents and the difference.
+2. **Dog and cat waste in a food garden.** The federal study says not on food crops; CDC gives the
+   parasites. There is no public source that says it is safe, and the course does not invent one.
+3. **Working-animal effectiveness.** Guardian dogs have one controlled study and user surveys; herding
+   dogs have no evaluation found; barn cats and tick-eating poultry are closer to folklore than data.
+   Taught as what the record shows, which is why working animals are a section, not a course.
+4. **Species BAM named that the federal tables skip.** Goat, alpaca, llama, yak, dog, cat: the course
+   uses extension tables (Tier B) where they exist and says where no table exists.
+5. **Hands-on husbandry.** No document replaces a mentor, a vet or an extension agent. Every animal
+   course here is scoped like \`keeping-a-house\`: needs, law, decisions, where to stop.
+6. **Local law.** Zoning for backyard animals and slaughter exemptions vary by county; the course
+   teaches the learner to find their own rule (the \`read-the-plan-and-the-code\` habit).
+
+---
+
+## 4 · The proposed series and where each course stands
+
+"The Loop" (code \`LOOP\`), the new Farm & Garden category: 00 \`manure-and-compost\`
+(B 3/2/3/3/3/3 = 33, form C6; B6 = 3 only if NGSS life-science codes are added to
+\`src/lib/standards/shared/ngss.ts\` and genuinely taught), 01 \`growing-trees\` (32, C6), 02
+\`growing-protein\` with a working-animals section (35, C6), 03 \`raising-animals-for-yarn\` (35, C6,
+cross-listed Trade Skills). \`manure-and-compost\` builds first. Scores are provisional until each brief.
+
+---
+
+## 5 · URLs that failed or were blocked on 2026-10-05 (nothing is asserted from them)
+
+ecfr.gov HTML pages (redirect to unblock.federalregister.gov; the API works); sheep101.info;
+archive.tuskegee.edu (connection refused); congress.gov; si.edu. The NCAT PDF download returned HTML,
+so its rights notice was not read.
+
+---
+
+## 6 · Questions for BAM
+
+1. Rely on the permaculture pamphlets' printed public-domain dedication, or treat them as link-only?
+   (Recommended: link-only until Yankee Permaculture's current statement is fetched.)
+2. Indiana anchoring (Purdue Extension, Marion County zoning) versus "find your county's rule".
+3. Do \`growing-trees\` and \`growing-protein\` get their briefs now, or after \`manure-and-compost\` ships?
+4. The Woolly Yak Ranch: capture site, interview, or both; and who at the farm.
+5. NGSS life science: add 5-LS2-1, MS-LS2-3 and HS-LS2-4 (verbatim text fetched) so the compost course
+   can claim an educator standard, or leave Farm & Garden unmapped like the knots course?`,
+    provenance: "plans/future-courses/farm-and-garden/2026-10-05-00-farm-sources-and-what-can-be-taught.md",
+  },
+  {
     key: "00-fibre-sources-and-what-can-be-taught",
     title: "Fibre sources, rights, and what can actually be taught from them",
     summary: "Written: 2026-10-05 · Status: INVENTORY, supporting the briefs for `making-string`, `crochet`,",
@@ -15944,6 +16122,171 @@ CC0 for datasets; no object page was fetched).
     provenance: "plans/future-courses/trade-skills/2026-10-05-00-fibre-sources-and-what-can-be-taught.md",
   },
   {
+    key: "braiding-hair-and-yarn-brief",
+    title: "Course brief · Braiding, for Hair and Yarn",
+    summary: "Written: 2026-10-05 · Status: BRIEF, awaiting BAM's review. Nothing built.",
+    body: `# Course brief · Braiding, for Hair and Yarn
+
+**Written:** 2026-10-05 · **Status:** BRIEF, awaiting BAM's review. Nothing built.
+**Seed:** BAM, 2026-10-05, "add a braiding class for hair and yarn." Scope chosen the same day: all
+three of braiding hair, yarn worn in the hair, and braiding yarn or cord into things.
+**Proposed slug:** \`braiding-hair-and-yarn\` · **Proposed slot:** FIBRE-03 of \`the-fibre-line\`, Trade
+Skills.
+**Research tier:** 2. Scalp health (traction alopecia), product chemistry (the 2025 Consumer Reports
+test) and law (the CROWN Act, braider licensing) are health and law subjects.
+**Sources inventory:** \`2026-10-05-00-fibre-sources-and-what-can-be-taught.md\`, same folder, family C.
+**Rule:** the course-brief rule in CLAUDE.md. No course file is created until this is approved.
+**Rubric:** gates pass, with E3 (a practising braider named as reviewer) and a B1 condition; B
+2/3/3/3/3/2 = 32; form C6, course, **on condition** that the technique lessons are built from a fetched
+or interviewed source, not from memory.
+
+---
+
+## 1 · Description
+
+A learner finishes this course able to braid: three strands and more, flat and round, on yarn and cord
+first (where mistakes cost nothing) and then on hair; to add yarn to hair for yarn braids and wraps and
+to take it out without damage; to recognise tension that is too tight and why it matters (traction
+alopecia, the AAD's 6 to 8 week guidance); to read what is actually documented about braiding's
+history in Africa and the diaspora and to tell it from the stories that circulate without a source; to
+know what the CROWN Act does and does not do, what the 11th Circuit held about locs in 2016, and how
+their own state licenses or exempts natural-hair braiding; and to see braiding as work, with the
+Black hair-care businesses the catalog already teaches (Malone, Walker, Johnson Products) as the
+history this course links to rather than repeats.
+
+**The scope decision.** Three things in one course because they share a structure: a braid is a braid
+whether the strands are cord, yarn or hair, and the yarn-in-hair styles sit exactly between the other
+two. Section 1 teaches the structure on cord, where the public-domain record is strong (Verrill,
+Dillmont). Sections 4 and 5 teach it on hair, where the public-domain record is empty: those lessons
+are built from a practising braider interviewed as the source (Tier 1-P) or from BAM's own
+demonstrations, and the course does not ship them from memory.
+
+**The honesty decision.** The rice-in-hair tradition is taught as the one open-access paper documents
+it: oral tradition, first written down in French Guiana, doubted by named scholars, with the Maroon
+rice fields themselves in the archive. The cornrow "escape maps" story has journalism and oral
+tradition behind it and no colonial-era document found; the course says so and teaches the tradition
+as a tradition.
+
+## 2 · Outline (draft)
+
+| # | Section | Lessons (draft) | Backbone |
+|---|---|---|---|
+| 1 | The braid as a structure | Three strands, flat; four, five and more; round and square sennits; why a braid holds (link to \`making-string\` for twist and \`knot-tying\` for the chain knot); a glance at the mathematics (a braid is a word in a group; Birman and Brendle linked for the curious) | Verrill ch. V and VII; Pawson pp. 290-331 as topic map; Dillmont knotted cord |
+| 2 | Braiding yarn and cord into things | Bracelets and lanyards (the lanyard knot), a belt, a mat, a rug; finger-loop braiding and its medieval manuscripts; kumihimo named, with the gap in reliable sources stated | Verrill; fingerloop.org bibliography (Tier B) |
+| 3 | Hair and scalp | What a hair strand is; hair types; sectioning and parting; tension and traction alopecia (AAD guidance; Khumalo and Haskin and Aguh cited as the literature); products, and the 2025 Consumer Reports synthetic-hair test read as a content test with its limits | AAD (Tier B); JAAD papers (Tier C, cited); CR test sheet (Tier B) |
+| 4 | Braiding hair | Three-strand, French and Dutch, cornrows, two-strand twists, box braids, feed-in; starting, finishing, taking down; care between | **practitioner source or BAM's demonstration; not built until one exists** |
+| 5 | Yarn in hair | Yarn braids, wraps, Brazilian wool; choosing yarn; installing and removing without pulling; how long to wear | **practitioner source or BAM's demonstration** |
+| 6 | What the record shows | Braiding in Africa and the diaspora as museums and scholars document it; the Maroon rice tradition (van Andel 2023, CC BY); the cornrow-map story as oral tradition; the Walker, Malone and Johnson businesses (link to \`who-gets-named\` lesson 7, \`indiana-avenue\` lesson 6, \`soul-train-the-business\` lessons 10-12) | van Andel 2023; the three existing lessons |
+| 7 | The law and the work | *EEOC v. Catastrophe Management Solutions* (11th Cir. 2016) read from the opinion; the CROWN Act, federal bill status and state count as fetched on the build date; braider licensing and exemptions, Indiana's rule as fetched; braiding as a trade (link to \`know-your-rights-at-work\`) | the opinion PDF (Tier A); statute text (Tier A once fetched) |
+
+Pools sized to text (gate D2). Sections 4 and 5 may ship later than the rest if no source exists at
+build time; the course is honest about that in its description.
+
+## 3 · Fit
+
+- **Category:** Trade Skills; \`additionalCategories: ["Culture & History"]\` for section 6 and 7.
+  **Series:** \`the-fibre-line\`, FIBRE-03.
+- **Audience:** public catalog. Beginners braiding yarn; people who braid hair at home; parents;
+  anyone who has heard the CROWN Act named and wants the text.
+- **Visibility:** public, free by default.
+- **Standards:** \`BACKLOG\` line like knots; the law lessons could carry a civics claim later if the
+  texts are fetched and the lessons genuinely teach them.
+- **Reviewer (gate E3):** a practising braider or licensed cosmetologist named before the course ships,
+  with authority to change or cut the hair lessons. BAM said he knows practitioners (2026-10-05).
+- **Media:** Verrill's figures and Dillmont's plates for cord (Tier A). Hair technique has no
+  public-domain figures: practitioner footage or BAM's demonstration.
+
+## 4 · Connections, found by searching \`scripts/data/\`
+
+Searched 2026-10-05 for braid, plait, cornrow, locs, twist, hair, barber, cosmetology, salon, Madam
+Walker, Annie Malone, Poro, Afro Sheen, Johnson Products, CROWN Act, tignon, kumihimo, sennit, lanyard.
+
+- **Nothing teaches** braiding technique, the CROWN Act (zero hits in \`know-your-rights-at-work\`),
+  tignon laws, kumihimo or sennits.
+- **The hair-care business is taught, and is linked not repeated:** \`who-gets-named\` "7 · Malone,
+  Walker, and a story that ran uphill" (\`who-gets-named-course.ts:619\`); \`indiana-avenue-a-district-and-what-replaced-it\`
+  "6 · The Walker Building: the one that survived" (\`indiana-avenue-course.ts:431\`);
+  \`soul-train-the-business\` "10 · The company that bought the time", "11 · Where the money for a million
+  dollars of airtime came from", "12 · A regulator, a court opinion, and a memory that differs"
+  (\`soul-train-the-business-course.ts:2710, 2751, 2793\`; private until vetted, so the link waits).
+- **Passing:** \`what-they-built\` "2 · What a business district is" (\`:114\`, barbers); \`green-book-how-to-read-a-route\`
+  lessons 2 and 5 (beauty parlors); \`blind-and-low-vision-america\` lesson 8 (cosmetology training);
+  \`labor-south-korea\` lesson 3 (wigs as export).
+- **Links out, cord side:** \`knot-tying\` "4 · The overhand knot" and the chain knot in Verrill;
+  \`making-string\`; \`lacrosse-creators-game\` lesson 2 (leather stringing).
+
+## 5 · Course or lesson?
+
+**A course (form C6), on a condition.** B1 = 2: the law and history claims are documented (the
+opinion, the CC BY paper), the cord technique is in public-domain manuals, but the hair technique has
+no fetched source yet, and the rubric says B1 = 2 "passes, on a condition": no technique lesson is
+written until its source exists (an interview transcript, which under Tier 1-P is the dossier). B2 =
+3 (nothing covers it; the business history is linked). B3 = 3 (a learner can read the 11th Circuit
+opinion, the CROWN Act text, the van Andel paper, Verrill's braid figures). B4 = 3 (seven sections).
+B5 = 3 (knots, string, three business-history lessons, know-your-rights-at-work, a series slot).
+B6 = 2. Total 32, "build next" once the condition is met.
+
+**Alternatives rejected:** two courses, hair and cord (they share the structure lesson and the audience
+BAM described; and the cord half alone is a lesson's worth beside Verrill); a lesson in
+\`who-gets-named\` or \`indiana-avenue\` (those are history courses, and this is a technique course with
+a history section); yarn first and hair later as separate classes (BAM chose all three; sections 4
+and 5 can lag without splitting the course).
+
+## 6 · Evidence status
+
+### VERIFIED, fetched 2026-10-05
+
+- van Andel, Maat and Pinas 2023, *Slavery & Abolition*, CC BY 4.0 (edepot.wur.nl): the oral-tradition
+  wording; "first documented in French Guiana and later also in Brazil"; "doubted by Eltis et al.";
+  rice fields archival (1758).
+- *EEOC v. Catastrophe Management Solutions*, No. 14-13482 (11th Cir., 15 Sept 2016), opinion PDF:
+  immutable-trait holding; affirmed.
+- AAD "Hairstyles that pull can lead to hair loss" (6 Nov 2024): braids no longer than 6 to 8 weeks;
+  loosen at the hairline; reproduction prohibited (Tier B, link).
+- Consumer Reports synthetic braiding hair test sheet (Feb 2025): 10 products, lead in 9 of 10,
+  benzene in 3; a content test; the column reading is inferred and flagged.
+- Verrill ch. V and VII braid figures (Gutenberg 13510); Dillmont "Knotted cord" p. 518 (Gutenberg 20776).
+- fingerloop.org bibliography: Harley MS 2320 (c. 1450), V&A 86FF3 and 86FF4 (c. 1630), Stanley 1974.
+- Khumalo et al. 2008 and Haskin and Aguh 2016 metadata (Tier C); Khumalo 2012 (open, licence unstated).
+- Indiana Historical Society Walker item: "In Copyright", permission required (link only).
+- Birman and Brendle, arXiv math/0409205.
+
+### REPORTED, and therefore not assertable in a lesson until fetched
+
+- CROWN Act: H.R. 1638 and S. 751 (119th Congress, introduced 26 Feb 2025, in committee); state count
+  (27 plus 2 executive orders versus 30, sources conflict).
+- The 1786 Louisiana tignon regulation (secondary sources only; no primary text located anywhere).
+- Braider licensing exemptions (Institute for Justice figures; Indiana's rule). ij.org blocked.
+- The 11th Circuit's revised December 2016 opinion (852 F.3d 1018) and the 2017 en banc denial.
+- Carney 2004 on rice in hair.
+- The cornrow "escape maps" story: journalism and oral tradition only.
+
+### UNVERIFIED
+
+- Any hair-braiding technique source (none public domain exists; the practitioner is the source).
+- Kumihimo, lucet and Andean sling braiding sources.
+- NMAAHC and Library of Congress holdings on braiding (si.edu and loc.gov HTML blocked).
+
+### Gate A4
+
+Pawson's braids chapter is a topic map only; *Afro Sheen* is cited as Johnson's account, already the
+Soul Train course's practice; nothing is reproduced from either.
+
+### Failed fetches
+
+congress.gov; ij.org; si.edu and nmaahc.si.edu; loc.gov HTML; the Restrepo Toro 2014 thesis PDF (403).
+
+## 7 · Questions for BAM
+
+1. **Who is the braider?** Reviewer under E3, and ideally the interviewed source for sections 4 and 5.
+2. **Ship without sections 4 and 5?** Sections 1 to 3 and 6 to 7 are buildable from documents now.
+3. **Indiana's braider rule** as a fetched, concrete lesson, or "find your state's rule"?
+4. **Yarn braids as a demonstration** you record yourself, or the practitioner's?
+5. **Content decision (A6) check:** none of the subjects is graphic or about a minor; the one living
+   community whose knowledge this touches is braiders themselves, which the reviewer answers. Confirm.`,
+    provenance: "plans/future-courses/trade-skills/2026-10-05-braiding-hair-and-yarn-brief.md",
+  },
+  {
     key: "braiding-hair-and-yarn",
     title: "BAM's note, 2026-10-05: braiding, for hair and yarn",
     summary: "> \"add a braiding class for hair and yarn\"",
@@ -16015,6 +16358,465 @@ books: Verrill (public domain, already knots' backbone), the DK knots guide (rop
 pp. 10-13, topic map only), one page of cordage in the No Grid Survival book (topic map only). No
 crochet book is owned; Dillmont, Riego, Beeton and the Priscilla book are public domain online.`,
     provenance: "plans/future-courses/trade-skills/2026-10-05-crochet-and-string-making.md",
+  },
+  {
+    key: "crochet-brief",
+    title: "Course brief · Crochet",
+    summary: "Written: 2026-10-05 · Status: BRIEF, awaiting BAM's review. Nothing built.",
+    body: `# Course brief · Crochet
+
+**Written:** 2026-10-05 · **Status:** BRIEF, awaiting BAM's review. Nothing built.
+**Seed:** BAM, 2026-10-05, "I want to create a crochet and string making to compliment the knot tying
+course."
+**Proposed slug:** \`crochet\` · **Proposed slot:** FIBRE-02 of \`the-fibre-line\`, Trade Skills.
+**Research tier:** 1 (a dossier). The one health-adjacent subject, wellbeing claims, is handled by
+making none.
+**Sources inventory:** \`2026-10-05-00-fibre-sources-and-what-can-be-taught.md\`, same folder.
+**Rule:** the course-brief rule in CLAUDE.md. No course file is created until this is approved.
+**Rubric:** gates pass; B 3/3/3/3/3/2 = 35; form C6, course.
+
+---
+
+## 1 · Description
+
+A learner finishes this course able to hold a hook, make a slip knot and a foundation chain, work the
+five basic stitches, turn rows and work in the round, increase and decrease to shape a flat circle or a
+tube, read a written pattern in US and UK terms and a symbol chart, measure gauge, and finish and
+block a piece. They can say what is documented about where crochet came from (printed instructions in
+a Dutch magazine in 1823, English instructions in 1840, a tambour hook and a 1653 patent before that)
+and which popular origin stories have no source behind them. They understand why a crocheted
+hyperbolic plane is the clearest model of a geometry a drawing cannot show. And they begin, in lesson
+one, from the slip knot the knots course already taught, on string the string course showed them how to
+make.
+
+**The scope decision.** This is a technique and literacy course built from public-domain manuals and
+their plates. It does not sell patterns, does not claim therapeutic effects (two self-selected surveys
+are not evidence of efficacy; "practitioners report" is the ceiling), and does not pretend a text can
+replace watching hands. BAM can demonstrate some stitches himself and knows practitioners; those come
+as media later. The first version ships with Dillmont's and Riego's engravings, which are Tier A.
+
+## 2 · Outline (draft)
+
+| # | Section | Lessons (draft) | Backbone |
+|---|---|---|---|
+| 1 | Hook, yarn, hands | Hooks and sizes; yarn weights (Craft Yarn Council system, linked and credited); holding hook and yarn; the slip knot (link to knots lesson 4 for the overhand family); tension | Dillmont crochet ch. p. 221; CYC standards (Tier B) |
+| 2 | The chain and the five stitches | Foundation chain; slip stitch, single, half double, double, treble; where the hook goes; counting | Dillmont; Riego 1846; Beeton 1870 |
+| 3 | Rows and rounds | Turning chains; working in rows; joining into a round; the magic ring versus a chain ring; why a flat circle needs a steady increase | Dillmont; Henderson and Taimina (increase ratios) |
+| 4 | Shaping | Increasing and decreasing; a flat circle, a cone, a tube, a sphere; the hyperbolic plane as the shape that happens when you increase too much, and why it matters to geometry | Henderson and Taimina web version (Tier B) |
+| 5 | Reading a pattern | US and UK terms (the same word means different stitches); abbreviations; symbol charts; gauge and why swatches exist; fixing a mistake | CYC standards; Dillmont |
+| 6 | Finishing | Fastening off, weaving ends, blocking, joining pieces, edges; caring for the piece | Dillmont; Beeton |
+| 7 | Where crochet came from, as the record shows it | *Penelope* 1823; Gaugain 1840; Riego's "shepherd or single crochet" 1846; Lambert 1844; the tambour hook; the 1653 passementerie patent; Grant's memoir (published 1898, about 1812); Irish crochet and famine relief, with what is and is not documented; the folklore list, named as folklore; Ravelry and learning online (link to *Affinity Online*) | Karp 2018 (Tier B); KB page; Grant 1898 (Tier A); Ito 2019 (CC BY-NC, link) |
+| 8 | Projects | A washcloth (rows), a coaster (rounds), a hat (shaping), a hyperbolic plane (the geometry lesson made real) | the course |
+
+A typed exercise in section 5 (read a line of pattern and name the stitch count); \`recallContent\`
+cards per lesson; pools sized to text (gate D2).
+
+## 3 · Fit
+
+- **Category:** Trade Skills. **Series:** \`the-fibre-line\`, FIBRE-02. \`additionalCategories: ["Science & Math"]\`
+  only if the hyperbolic-geometry lesson genuinely teaches the mathematics (then a Common Core
+  geometry claim could be considered; otherwise no claim).
+- **Audience:** public catalog. Beginners; teachers who want a hands-on geometry hook; the Ravelry
+  generation.
+- **Visibility:** public, free by default.
+- **Standards:** \`BACKLOG\` line like knots unless the geometry claim is made and verified.
+- **Media:** Dillmont's figures (PD), Riego's twelve illustrations (PD), Priscilla Crochet Book plates
+  (LOC, no known restrictions). Crochet Coral Reef images require permission: link only. Smithsonian
+  and Met open-access object images are REPORTED (licences not fetched on an object page).
+
+## 4 · Connections, found by searching \`scripts/data/\`
+
+Searched 2026-10-05 for crochet, knit, yarn, hook, needlework, textile, quilt, sew, Ravelry.
+
+- **Nothing teaches** crochet, knitting or any needlework. The word knit appears as "knitting" in
+  \`blind-and-low-vision-america\` "7 · The residential school" (\`:2253\`, blind children taught to knit
+  and cane chairs) and in \`what-they-built\` once; quilt appears once in \`genealogy-for-yourself-and-your-community\`.
+- **Links out:** \`knot-tying\` "4 · The overhand knot" (\`knots-course.ts:376\`, the slip knot's family);
+  \`making-string\` (yarn is string); \`blind-and-low-vision-america\` lesson 7 (handwork as a curriculum of
+  low expectation, a counterpoint worth a sentence); \`how-to-read-a-number\` or the science-and-math
+  series for the geometry lesson's home if cross-listed.
+- **Links in, later:** \`braiding-hair-and-yarn\` (yarn braids), \`raising-animals-for-yarn\` (the yarn
+  itself).
+
+## 5 · Course or lesson?
+
+**A course (form C6).** B1 = 3 (Dillmont, Riego, Beeton, Priscilla, Grant fetched and read; Karp's
+documented chronology read in his postprint); B2 = 3 (nothing covers it); B3 = 3 (a learner can open
+Dillmont's crochet chapter and Riego's 1846 book and work from the plates); B4 = 3 (eight sections);
+B5 = 3 (knots, string, braiding, fibre animals, blind-and-low-vision, the geometry link, a series
+slot); B6 = 2 (BAM asked). Total 35, "build next".
+
+**Alternatives rejected:** one course with string (string is the hub of the series and stands alone);
+a lesson inside knots (eight sections; and knots is a tying course); a private study course (BAM chose
+public; the public-domain manuals make it unnecessary).
+
+## 6 · Evidence status
+
+### VERIFIED, fetched 2026-10-05 († re-fetched by the orchestrator)
+
+- Dillmont, *Encyclopedia of Needlework*, Gutenberg 20776 †: chapter pages for knitting, crochet,
+  tatting, macrame, netting, Irish lace (tape-and-needle lace), knotted cord, tambour work.
+- Riego 1846 (Gutenberg 36669), 1848 (61222), 1861 (28457); Beeton 1870 (15147); *Handbook of Wool
+  Knitting and Crochet* 1918 (26113); *Priscilla Crochet Book* 1908 (archive.org, LOC statement);
+  Gaugain 1840 (archive.org, scan under CC BY-NC-ND 3.0).
+- Karp, "Defining Crochet", 2018 postprint: the 1823 *Penelope* instructions, Gaugain 1840, Lambert
+  1844, the 1760s tambour date, the 1653 patent, Paludan as the rigorous monograph.
+- KB *Penelope* page: published 1821-35; instructions in part II, 1822/1823.
+- Grant, *Memoirs of a Highland Lady* (1898): the "shepherd's knitting" passage.
+- Craft Yarn Council standards page and its credit-line terms.
+- Henderson and Taimina web version; Crochet Coral Reef permission terms; *Affinity Online* CC BY-NC.
+- Burns and Van Der Meer 2021 metadata (n = 8,391, social-media survey).
+
+### REPORTED
+
+- Riley, Corkhill and Morris 2013 (about 3,500 respondents). Other Priscilla volumes 1911-1916.
+  Weldon's. Smithsonian and Met object-image licences.
+
+### UNVERIFIED
+
+- The Textile Research Centre Leiden's "Swedish 1819 magazine" claim (its own sources are a 1882
+  dictionary, a 1984 book and Wikipedia): treated as folklore unless a primary source appears.
+- Dillmont's English edition year (title page shows none).
+
+### Failed fetches
+
+PMC (captcha); the Met policy page (rate limited); si.edu.
+
+## 7 · Questions for BAM
+
+1. Claim a geometry standard for the hyperbolic-plane lesson, or keep the course unmapped like knots?
+2. Which projects? The four above are draft; BAM's own demonstration pieces could replace them.
+3. Who demonstrates on camera, and when? The first version can ship on the engravings alone.
+4. Series title and whether \`knot-tying\` joins as FIBRE-01 (asked in the string brief too).`,
+    provenance: "plans/future-courses/trade-skills/2026-10-05-crochet-brief.md",
+  },
+  {
+    key: "making-string-brief",
+    title: "Course brief · Making String",
+    summary: "Written: 2026-10-05 · Status: BRIEF, awaiting BAM's review. Nothing built.",
+    body: `# Course brief · Making String
+
+**Written:** 2026-10-05 · **Status:** BRIEF, awaiting BAM's review. Nothing built.
+**Seed:** BAM, 2026-10-05, "I want to create a crochet and string making to compliment the knot tying
+course."
+**Proposed slug:** \`making-string\` · **Proposed slot:** FIBRE-00 of \`the-fibre-line\` (new series),
+Trade Skills, beside \`knot-tying\`.
+**Research tier:** 1 (a dossier). No life-safety claims: the one safety-adjacent subject, rope load
+ratings, is handled by refusing to teach a number.
+**Sources inventory:** \`2026-10-05-00-fibre-sources-and-what-can-be-taught.md\`, same folder.
+**Rule:** the course-brief rule in CLAUDE.md. No course file is created until this is approved.
+**Rubric:** gates pass; B 3/1/3/3/3/2 = 29; form **C2a** (a knots lesson covers the definitions; this
+course teaches only the uncovered part, making it) and the uncovered part has B4 = 3, so a course.
+
+---
+
+## 1 · Description
+
+A learner finishes this course able to take plant or animal fibre and make a usable cord by hand,
+and to explain why it holds: twist stores energy, counter-twist locks it, and friction between fibres
+does the rest. They can name the fibres a cord can be made from and prepare one (retting flax or
+hemp, stripping dogbane or nettle, splitting yucca and bark), twist and ply a two- or three-ply cord,
+splice new fibre into a running length, and read what a manufactured rope is made of and how. They
+know the archaeology: a three-ply conifer-bark cord from a Neanderthal site, an ivory rope-making tool
+from the Aurignacian, and a disputed claim about 30,000-year-old flax, taught as disputed. They know a
+ropewalk when they see one. And they leave knowing that the knots course's first lesson defined all
+of this, and that this course made it.
+
+**The scope decision.** The knots course already defines rope (fibre to yarn to strand to laid rope,
+natural versus synthetic) in "1 · Rope fibers and materials" (\`scripts/data/knots-course.ts:147\`),
+and teaches care, coiling and storage in its lesson 3. This course does not repeat either. It teaches
+the making, which no lesson in the catalog covers, and links to knots for the vocabulary and the care.
+
+**The safety decision.** Verrill's load rule (circumference squared over five, in tons) is obsolete and
+is not taught as a number. FM 5-125's tables are the only Tier A figures found; the course teaches that
+a manufacturer's rating governs and that hand-made cord is never load-bearing for people.
+
+## 2 · Outline (draft)
+
+| # | Section | Lessons (draft) | Backbone |
+|---|---|---|---|
+| 1 | Why twist holds | Fibre, yarn, strand, rope, cable, each twisted against the last; S and Z; friction and counter-twist; why a single untwisted bundle fails (link to knots lesson 1 for the vocabulary) | Verrill ch. I; FM 5-125 ch. 1 |
+| 2 | What string is made of | Bast fibres (flax, hemp, dogbane, nettle, basswood), leaf fibres (yucca, agave, sisal), bark (cedar, basswood), seed fibre (cotton), animal fibres (sinew, wool, hair); preparing each: retting, breaking, hackling, stripping, splitting | USFS "Fabulous Fibers"; Dewey "Hemp" 1913; ATP 3-50.21 p. 8-9 |
+| 3 | Making it by hand | Reverse-wrap two-ply; thigh rolling; adding fibre on the run; three-ply; finishing an end; what a hand-made cord is and is not good for | ATP 3-50.21 Fig. 8-8; Verrill grommet and Flemish eye |
+| 4 | Tools and the ropewalk | Spindle, hook and twister; the ropewalk and why it is long; the Charlestown Navy Yard ropewalk (1838, 1,325 ft, hemp, closed 1970); laid versus braided manufacture | HAER MA-90-2; NPS article; Pawson pp. 10-13 as topic map only |
+| 5 | How old string is | Abri du Maras (about 41 to 52 ka, three-ply conifer bark, CC BY paper); Hohle Fels (rope-making tool, CC BY paper); Dzudzuana flax (2009) and the 2010 reply, taught as a dispute; Ohalo II (REPORTED, so named but not asserted); what fibre survives and what does not | Hardy 2020; Conard and Rots 2024; Kvavadze 2009; Bergfjord 2010 |
+| 6 | Reading a rope | Materials and construction of bought rope (manila, sisal, cotton, nylon, polyester, polypropylene); what a rating is and who sets it; why this course gives no number; inspection (link to knots lesson 3 for care) | FM 5-125 ch. 1 |
+
+A typed exercise in section 3 (name the step from its description) and \`recallContent\` cards per
+lesson, as knots does. Pools sized to text (gate D2).
+
+## 3 · Fit
+
+- **Category:** Trade Skills. **Series:** \`the-fibre-line\`, code \`FIBRE\`, position 00; \`knot-tying\`
+  proposed as 01 (its series fields are refreshable on re-seed; BAM's call, §7); \`crochet\` 02;
+  \`braiding-hair-and-yarn\` 03; \`raising-animals-for-yarn\` 04 (primary category Farm & Garden).
+- **Audience:** public catalog (BAM, 2026-10-05). Anyone who took knots; survival learners; crafters
+  who buy yarn and have never made string.
+- **Visibility:** public, free by default like knots.
+- **Standards:** none claimed; a \`BACKLOG\` line like knots' ("OUT OF SCOPE, practical skill").
+- **Media:** Verrill's figures and Dillmont's plates are Tier A; HAER photographs are "no known
+  restrictions"; the Hardy 2020 figures are CC BY 4.0 (attribution required). BAM's own demonstration
+  of a reverse-wrap cord comes later.
+
+## 4 · Connections, found by searching \`scripts/data/\`
+
+Searched 2026-10-05 for cordage, twine, rope-making, ropewalk, laid, strand, ply, spinning, spindle,
+fibre, hemp, flax, sisal, jute, manila, bast, sinew, net, basket.
+
+- **Partly covered:** \`knot-tying\` "1 · Rope fibers and materials" (\`knots-course.ts:147\`), definitions
+  of construction and materials; "3 · Care, coiling & storing rope" (\`:211\`); strands unlaid and tucked
+  in "20 · The eye splice" (\`:1633\`), "21 · The short splice" (\`:1668\`), "22 · The back splice" (\`:1702\`);
+  twine and marline in "18 · Whipping a rope end" (\`:1446\`) and "19 · Seizings" (\`:1479\`).
+- **Nothing covers** making cordage, preparing plant fibre, spinning, the ropewalk or the archaeology.
+- **Links out:** \`off-grid-survival\` (shelter lashings assume cord; the No Grid book's one cordage page
+  is its topic map); \`broadcasting-break-in\` "3 · The utility technician" (\`broadcasting-course.ts:121\`,
+  rope and cable); \`lacrosse-creators-game\` "2 · The stick, the wood, and the maker" (\`lacrosse-course.ts:107\`,
+  leather and sinew stringing); \`training-the-colonizer\` "8 · Indigo" (\`:672\`) for fibre dye.
+- **Links in, later:** \`crochet\` (yarn is string), \`braiding-hair-and-yarn\` (cord), \`raising-animals-for-yarn\`
+  (wool as fibre).
+
+## 5 · Course or lesson?
+
+**A course on the making angle (form C2a).** B1 = 3 (Verrill, FM 5-125, ATP 3-50.21, the USFS page,
+Dewey, two CC BY papers, HAER, all fetched); B2 = 1 (knots lesson 1 covers the definitions, so only
+the uncovered part is taught, and that part has six sections, B4 = 3, which C2a says makes it a course
+on that angle); B3 = 3 (a learner can read Verrill's chapter, open FM 5-125, read the Hardy paper and
+look at its micrographs); B5 = 3 (knots, survival, broadcasting, lacrosse, indigo, plus the series
+slot); B6 = 2 (BAM asked; no named series gap existed before this brief created one). Total 29, "build
+next".
+
+**Alternatives rejected:** a new lesson inside \`knot-tying\` (six sections do not fit one lesson, and
+knots is a tying course, not a making course); folding string into the crochet course (string is the
+hub that knots, crochet, braiding and fibre animals all draw on, so it stands alone and small);
+nothing (BAM asked for it, and the public record is unusually strong).
+
+## 6 · Evidence status
+
+### VERIFIED, fetched 2026-10-05 († re-fetched by the orchestrator)
+
+- Verrill, Gutenberg 13510, "Public domain in the USA" †; ch. I materials and construction; braids and
+  grommet figures.
+- FM 5-125 (3 Oct 1995, Change 1): "Approved for public release; distribution is unlimited"; ch. 1 fibre
+  rope pp. 1-3 to 1-6; manila and sisal table.
+- ATP 3-50.21 (Sept 2018): public release; Cordage and Lashing p. 8-9; Fig. 8-8.
+- FM 3-05.70 (2002): distribution restricted; **not used**.
+- USFS "Fabulous Fibers": dogbane, nettle, yuccas, basswood, cattail, flax, cedars (milkweed is NOT on
+  the page).
+- Dewey, "Hemp", Yearbook 1913 (archive.org yoa1913), NAL "not in copyright".
+- Hardy et al. 2020, *Scientific Reports*, CC BY 4.0 † (Europe PMC API); Abri du Maras, three-ply
+  conifer bark, about 41 to 52 ka.
+- Conard and Rots 2024, *Science Advances*, CC BY: Hohle Fels rope-making tool.
+- Kvavadze 2009 paywalled; Harvard DASH manuscript Tier B; Bergfjord 2010 contest REPORTED.
+- HAER MA-90-2 (LOC JSON): 22 photographs, no known restrictions on government images; NPS ropewalk
+  article: 1838, 1,325 ft, hemp, Treadwell, 1970.
+- Mason 1904 on archive.org (PD).
+
+### REPORTED
+
+- Nadel et al. 1994, Ohalo II fibres. Milkweed and the "five stalks per foot" figure (NRCS plant
+  guides). FM 21-76's public-release statement.
+
+### UNVERIFIED
+
+- Verrill's edition year (the Gutenberg transcription shows no publisher or year; the preface is
+  dated January 1917).
+
+### Failed fetches
+
+nature.com; science.org; PMC (captcha; Europe PMC used); loc.gov HTML (JSON used).
+
+## 7 · Questions for BAM
+
+1. Does \`knot-tying\` join \`the-fibre-line\` as FIBRE-01? It changes a badge learners see.
+2. Series title: "The Fibre Line" is a working title; "From Fibre to Fabric" was the alternative.
+3. Build order: string before crochet (string is small and sets the voice) or crochet first (it scores
+   higher)? The plan recommends building them together after \`manure-and-compost\`.
+4. Will you record the reverse-wrap demonstration, or should the first version ship with Verrill's
+   figures and the Army manual's drawing only?`,
+    provenance: "plans/future-courses/trade-skills/2026-10-05-making-string-brief.md",
+  },
+  {
+    key: "manure-and-compost-brief",
+    title: "Course brief · Manure and Compost",
+    summary: "Written: 2026-10-05 · Status: BRIEF, awaiting BAM's review. Nothing built.",
+    body: `# Course brief · Manure and Compost
+
+**Written:** 2026-10-05 · **Status:** BRIEF, awaiting BAM's review. Nothing built.
+**Seed:** BAM, 2026-10-05, "a course on manures of different animals and composting and using both in
+gardens and farms to grow food, growing trees and growing protein to compliment the garden to create
+useful manure and pets (dogs, cats, birds, etc) to help with the garden…"
+**Proposed slug:** \`manure-and-compost\` · **Proposed slot:** LOOP-00 of \`the-loop\` (new series), in the
+new **Farm & Garden** category (BAM's name, 2026-10-05).
+**Research tier:** 2. Pathogens, food safety and two federal rules: the rubric sends health, safety and
+law to Tier 2 whatever the score.
+**Sources inventory:** \`2026-10-05-00-farm-sources-and-what-can-be-taught.md\`, same folder.
+**Rule:** the course-brief rule in CLAUDE.md. No course file is created until this is approved.
+**Rubric:** gates pass (A4 on the condition in §6); B 3/2/3/3/3/3 = 33; form C6, course. B6 = 3 only if
+the NGSS life-science codes in §3 are added and taught; otherwise 2 and 32.
+
+---
+
+## 1 · Description, and the scope decision that shapes the whole course
+
+A learner finishes this course able to answer four questions about any pile of manure or compost:
+**what is in it** (which animal, how fresh, what the NRCS tables say it carries), **what could be in it**
+(the pathogens, and why dog and cat waste never go on food crops), **how to make it safe** (the
+composting process the organic rule and the produce-safety rule each define, and how they differ),
+and **how much to put where, and when** (soil tests, application timing, and the runoff the two river
+courses already teach). They also learn where the practice came from: Carver's bulletins, *Farmers of
+Forty Centuries*, Darwin's worms, and the Black agrarian tradition the catalog's history courses touch.
+
+**The scope decision.** BAM's seed names one course that runs from manure through trees, protein animals
+and the animals that help. The rubric's cluster check (§5) splits that into a series and makes this
+course its spine: manure, compost, and using both in a garden or on a farm. Trees and animals link
+from here and get their own courses. This course does not teach husbandry, and it does not teach a
+learner to build anything larger than a home compost system; the farm-scale material (NRCS Part 637)
+is taught as what a farm does and why, not as a how-to.
+
+**The honesty decision.** Two numbers learners arrive with are wrong in ways that matter. "Wait 90 or
+120 days" is the organic rule's requirement (7 CFR 205.203(c)(1)), not a food-safety law; FDA's produce
+rule has a reserved paragraph where that interval would be (21 CFR 112.56(a)(1)(i)). And "compost kills
+everything" is the organic rule's process definition (131 to 170 °F for 3 days or 15 days with five
+turnings), which a cold backyard heap never reaches. The course teaches both documents by their
+section numbers and lets the learner see the gap.
+
+## 2 · Outline (draft)
+
+| # | Section | Lessons (draft) | Backbone |
+|---|---|---|---|
+| 0 | What a loop is | Why a garden and its animals feed each other; what this course covers and what the series' other courses cover; the two rules we will read | the inventory |
+| 1 | Manure, animal by animal | What "as excreted" means; dairy, beef, horse, swine, poultry, rabbit, lamb from the NRCS tables; fresh, aged, composted; "hot" and "cold" as farmers use the words versus what the tables show; the animals the tables skip (goat, alpaca, llama, yak) and the Tier B tables that cover them | NRCS Part 651 ch. 4; Maryland Extension table |
+| 2 | What could be in it | Pathogens and parasites; why dog and cat waste stay out of a food garden (the 2005 NRCS/Fairbanks study, CDC on Toxoplasma and Toxocara); human waste as a regulated subject the course does not teach; backyard poultry hygiene | NRCS/Fairbanks 2005; CDC; EPA; 21 CFR 112.53 |
+| 3 | Making it safe: composting | Carbon to nitrogen, moisture, air, temperature; the organic rule's process (C:N 25:1 to 40:1; 131 to 170 °F; 3 days static or in-vessel, 15 days windrow with five turnings); the produce rule's two processes and its microbial standards; what a cold heap does and does not do; vermicomposting; dead-animal composting as a farm practice | 7 CFR 205.203(c)(2); 21 CFR 112.54 and .55; NRCS Part 637 ch. 2 |
+| 4 | Using it: how much, where, when | Soil tests; the organic rule's 90 and 120 day intervals and what each protects; the produce rule's reserved interval; application to gardens, orchards, pasture; too much (link to \`river-the-dead-zone\` and \`the-river-and-the-watershed\`); cover crops as the other half | 7 CFR 205.203(c)(1); 21 CFR 112.56; SARE (link) |
+| 5 | Where the practice came from | Carver's Bulletin No. 6 (1905) and No. 42 (1936) read as primary sources; *Farmers of Forty Centuries* on East Asian night soil; Darwin's worms; Farmers' Bulletin 192; the extension service (link to \`the-match\`); Black agrarian history (cite Reese; link \`the-county-committee\`) | Carver; King; Darwin; Beal; Yearbooks |
+| 6 | Your own loop | A design exercise: a balcony, a backyard, an acre; which inputs, which rule applies, what to test, what to never add; what the next courses in the series add | the whole course |
+
+Each section carries a quiz pool sized to its text (rubric gate D2); section 6 carries the final.
+
+## 3 · Fit
+
+- **Category:** Farm & Garden (new; one \`.values({ name: "Farm & Garden", sortOrder })\` insert beside
+  "Survival" at \`scripts/seed-courses.ts:1822\`). \`additionalCategories: ["Science & Math"]\` if the
+  NGSS claim below is made.
+- **Series:** \`the-loop\`, code \`LOOP\` (2 to 8 uppercase letters or digits, so it passes
+  \`check-series-codes\`), position 00. Later: 01 \`growing-trees\`, 02 \`growing-protein\`, 03
+  \`raising-animals-for-yarn\`.
+- **Audience:** public catalog (BAM, 2026-10-05). Home gardeners, small farmers, teachers. Indiana
+  anchoring is a question in §7.
+- **Visibility:** public. No price decision needed for a brief; knots and survival ship free by default.
+- **Standards:** the compost cycle is matter cycling among producers, consumers and decomposers, which
+  NGSS states as 5-LS2-1 and MS-LS2-3 (and HS-LS2-4 at high school). None of these codes is in
+  \`src/lib/standards/shared/ngss.ts\` today (it holds six Earth-science codes). Mapping requires adding
+  them with verbatim text fetched from NGSS and claiming only what sections 1 to 4 teach. Without
+  that, a \`BACKLOG\` line like knots'.
+- **Media:** Dillmont-style plates do not exist for compost; the Tier A figures are the NRCS
+  diagrams, the Yearbook illustrations and Carver's bulletin pages. BAM's own photos of a heap, a
+  thermometer and a soil test come later (he can demonstrate some himself, 2026-10-05).
+
+## 4 · Connections, found by searching \`scripts/data/\`
+
+Searched 2026-10-05 across all 314 entries and the CSV-seeded content for manure, dung, compost,
+vermicompost, humus, soil, fertilizer, nitrogen, mulch, garden, crop rotation, cover crop, farm,
+agriculture, permaculture, orchard, livestock, poultry, rabbit, goat, pig, fish, insect, bee, herding,
+guardian, barn cat, Carver, Tuskegee, extension, 4-H, runoff, dead zone.
+
+- **Nothing teaches** manure, composting, using compost, or raising any animal. Compost appears once,
+  as a wrong quiz option in survival (\`survival-course.ts:1535\`); gardening once, as a wrong option in
+  hoodoo (\`hoodoo-course.ts:558\`).
+- **Links out, by lesson:** \`river-the-dead-zone\` "1 · Cause and effect, a thousand miles apart"
+  (\`:20\`) and "2 · Problems with no author" (\`:56\`); \`the-river-and-the-watershed\` "10 · A thousand
+  miles of nitrogen" (\`:1466\`, cover crops, buffer strips, fertilizer timing); \`the-match\` "3 · What a
+  capacity grant is, and the machine it built" (\`:177\`, the Smith-Lever extension service);
+  \`who-gets-the-credit\` "17 · Five claims that do not survive checking" (\`:1915\`, Carver's real work was
+  soil restoration and crop rotation); \`training-the-colonizer\` "4 · The Rice Coast" (\`:329\`) and "9 ·
+  Cattle and the open range" (\`:711\`); \`off-grid-survival\` "15 · Sanitation: human waste when plumbing
+  fails" (\`:1449\`, the bucket toilet; this course's human-waste boundary points there);
+  \`keeping-a-house\` "4 · Why 1978 is the line" (\`:284\`, lead tracked in from soil).
+- **Links in, later:** \`growing-trees\`, \`growing-protein\`, \`raising-animals-for-yarn\`.
+- **BVC:** the sommelier courses teach soil as terroir (\`bvc-sommelier-wine-course.ts:1522\`); a
+  cross-tenant link is not made (tenant isolation), but the brief notes the parallel.
+
+## 5 · Course or lesson?
+
+**A course (form C6), the spine of a series.** Rubric: gates pass; B1 = 3 (the two regulations, the
+NRCS tables and chapter, the 2005 study, Carver's bulletins, all fetched and read); B2 = 2 (runoff is
+taught in two river courses; everything else is new); B3 = 3 (a learner can read 7 CFR 205.203, open
+the NRCS tables, read Carver's 1905 bulletin page); B4 = 3 (six sections of verified material); B5 = 3
+(seven lessons in five courses plus a series slot); B6 = 3 conditional on the NGSS mapping, else 2.
+Total 33 (or 32): "build next".
+
+**The cluster check (one course or a series?).** BAM named one course spanning manure, compost, use,
+trees, protein animals and working animals. The mechanism they share is the nutrient loop. One
+eight-section course was weighed and loses on two grounds: each later topic has four or more
+sections of verifiable material of its own (trees: the five agroforestry practices from the
+National Agroforestry Center; protein: husbandry, biosecurity, processing law, welfare), so each
+would be compressed to a survey; and a learner who wants composting should not have to take
+husbandry. A series on one spine wins. Working animals (herding and guardian dogs, barn cats, poultry
+as pest control) are a section of \`growing-protein\`, not a course, because the evidence found is one
+federal bulletin, one controlled dog study (paywalled), one urban cat study (negative) and one
+extension article (negative on chickens); a section can teach that honestly, a course would have to
+pad it.
+
+**Alternatives rejected:** a lesson inside \`off-grid-survival\` (B4 = 3 here, far more than a lesson;
+and survival's frame is emergency, not practice); a lesson inside \`the-river-and-the-watershed\` (it
+would teach the cause from the consequence's course); a private study course from Mollison (BAM chose
+public, and the federal backbone makes the book unnecessary as a source).
+
+## 6 · Evidence status
+
+### VERIFIED, fetched 2026-10-05 (re-fetched by the orchestrator where marked †)
+
+- 7 CFR 205.203(c)(1) and (c)(2), the 120 and 90 day intervals, C:N 25:1 to 40:1, 131 to 170 °F, 3 days
+  static or in-vessel, 15 days windrow with five turnings; 205.2 definitions of compost and manure
+  (eCFR API) †.
+- 21 CFR 112.51.53.54.55.56.60; 112.56(a)(1)(i) "[Reserved]" (eCFR API).
+- NRCS AWMFH Part 651 ch. 4 (March 2008): tables 4-5, 4-8, 4-10 to 4-17; sources ASAE D384.2.
+- NRCS NEH Part 637 ch. 2 "Composting" (Nov 2010, 97 pp.): 637.0201.0202.0206.0209(g).0213.0214, appendices 2A and 2B.
+- NRCS and Fairbanks SWCD, *Composting Dog Waste* (Dec 2005): the food-crop sentence, 145 °F, roundworm
+  eggs, the cat-waste sentence, the illustration credit †.
+- EPA "Composting At Home" (8 Dec 2025): the avoid list; no reason given for pet waste.
+- CDC toxoplasmosis (30 Jan 2024), toxocariasis (19 Apr 2024), backyard poultry (18 Jul 2025).
+- Carver, Bulletin No. 6 (1905) †, Bulletin No. 42 (Oct 1936); NAL exhibit numbering differs.
+- Farmers' Bulletin 192 (1904) and FB 21 (1894); Yearbooks 1938 and 1957; King (Gutenberg 5350);
+  Darwin (Gutenberg 2355).
+- Iowa State "Using Manure in the Home Garden" (Apr 2023), Tier B.
+- SARE books and reuse terms; FAO 2003 and 2015 handbooks and terms; NCAT landing page; NRAES-54 record.
+
+### REPORTED, and therefore not assertable in a lesson
+
+- The 1890 institutions' small-farm programmes (Kentucky State, Langston, Fort Valley State).
+- Purdue Extension and Cornell Waste Management Institute guides (not fetched).
+- The standing of the permaculture pamphlets' public-domain dedication.
+
+### UNVERIFIED
+
+- NGSS code texts for 5-LS2-1, MS-LS2-3, HS-LS2-4 (to be fetched verbatim if the mapping is made).
+- Indiana zoning and Marion County rules for backyard animals and compost.
+- The Woolly Yak Ranch (BAM's words).
+
+### Gate A4 condition
+
+Nothing from Mollison, *Perma-culture Two*, the No Grid book or the Reese books enters the course
+text. They are named in a "read alongside" list with chapter locators. The permaculture pamphlets are
+linked, not hosted, until their statement is confirmed.
+
+### Failed fetches
+
+ecfr.gov HTML (API used instead); sheep101.info; archive.tuskegee.edu; the NCAT PDF (returned HTML).
+
+## 7 · Questions for BAM
+
+1. **Add the NGSS life-science codes?** It is the difference between a course teachers can shop for
+   and one they cannot find. Cost: fetch three code texts verbatim, add them to
+   \`src/lib/standards/shared/ngss.ts\`, map the 22 NGSS jurisdictions, claim only sections 1 to 4.
+2. **Indiana or everywhere?** Purdue Extension's compost and manure guides would make section 4
+   concrete and Indiana-specific; the alternative is a "find your extension office" exercise.
+3. **The series code \`LOOP\` and the series title.** "The Loop" is a working title.
+4. **Briefs for \`growing-trees\` and \`growing-protein\` now, or after this course ships?**
+5. **Who reviews it?** A Master Gardener or extension educator as the named reviewer would satisfy the
+   spirit of gate E3 for a practice course.`,
+    provenance: "plans/future-courses/farm-and-garden/2026-10-05-manure-and-compost-brief.md",
   },
   {
     key: "manure-compost-garden-trees-protein-and-pets",
@@ -16107,6 +16909,153 @@ counterweight, sling, shackle; microphone, field recording, foley, sound effect,
 tone; lighting, light, key light, reflector, diffusion, gel, three-point), then one brief per class
 with the rubric line, in this folder.`,
     provenance: "plans/future-courses/careers-and-media/2026-10-05-production-crafts-rigging-sound-light.md",
+  },
+  {
+    key: "raising-animals-for-yarn-brief",
+    title: "Course brief · Raising Animals for Yarn",
+    summary: "Written: 2026-10-05 · Status: BRIEF, awaiting BAM's review. Nothing built.",
+    body: `# Course brief · Raising Animals for Yarn
+
+**Written:** 2026-10-05 · **Status:** BRIEF, awaiting BAM's review. Nothing built.
+**Seed:** BAM, 2026-10-05, "growing animals for yarn"; later, "include yaks, theres a yak farm nearby,
+Woolly Yak Ranch & Winery in arcadia Indiana."
+**Proposed slug:** \`raising-animals-for-yarn\` · **Proposed slot:** LOOP-03 of \`the-loop\`, primary
+category Farm & Garden, \`additionalCategories: ["Trade Skills"]\` (it closes \`the-fibre-line\`: the
+yarn the crochet and braiding courses use).
+**Research tier:** 2. Animal health and welfare, zoonoses, the scrapie programme and local law.
+**Sources inventory:** \`2026-10-05-00-farm-sources-and-what-can-be-taught.md\` (husbandry, §2.4) and
+\`../trade-skills/2026-10-05-00-fibre-sources-and-what-can-be-taught.md\` (fleece to yarn, §2.4).
+**Rule:** the course-brief rule in CLAUDE.md. No course file is created until this is approved.
+**Rubric:** gates pass; B 3/3/3/3/3/2 = 35; form C6, course. Scores assume the husbandry extension
+sources marked UNVERIFIED in §6 are fetched before those lessons are written.
+
+---
+
+## 1 · Description
+
+A learner finishes this course able to say, for each fibre animal (sheep, alpaca and llama, Angora
+rabbits, Angora and cashmere goats, yaks, silkworms), what it needs in land, feed, shelter, company and
+veterinary care; what the law asks of its keeper (the federal scrapie identification programme for
+sheep and goats; the local zoning they must look up); what its fibre is and how it is graded (the
+USDA wool grade standards by micron); how a fleece becomes yarn (shearing, skirting, scouring, carding
+or combing, spinning, plying, dyeing); what the welfare arguments are, with the evidence named
+(mulesing policy, the Angora plucking controversy as a documented controversy); where the animals'
+manure goes (back into the Loop, with the NRCS and extension tables); and what the record documents
+about the Navajo-Churro sheep and the federal livestock reduction of the 1930s. They leave able to
+decide whether to keep a fibre animal, not pretending the course has taught them to.
+
+**The scope decision.** Scoped like \`keeping-a-house\`: needs, law, decisions and where to stop. No
+lesson tells a learner how to shear, lamb or treat an animal; those are a mentor's and a vet's. The
+fleece-to-yarn section teaches the stages and the vocabulary and sends the learner to a practitioner.
+BAM's nearby yak ranch is a candidate for that practitioner and for capture; nothing is asserted about
+it until it is fetched and the people are asked.
+
+## 2 · Outline (draft)
+
+| # | Section | Lessons (draft) | Backbone |
+|---|---|---|---|
+| 1 | What a fibre animal is | Fibre as a crop; the animals and their fibres; where US sheep and wool stand (NASS, Jan 2026: 4.99 million sheep and lambs, 20.5 million lb of wool); a fibre animal is also a manure animal (link to \`manure-and-compost\`) | NASS; NRCS tables 4-13, 4-15; Maryland alpaca and llama table |
+| 2 | Sheep | Breeds for fibre; needs; the scrapie identification programme; shearing as a once-a-year event the keeper arranges; welfare, including the Australian mulesing policy and the absence of an AVMA one | APHIS scrapie guide; AMS wool grades; AVA policy (Tier B); extension (to fetch) |
+| 3 | Alpaca, llama and yak | Needs and temperament; fibre and its grading; yak down; the Woolly Yak Ranch as a possible visit (UNVERIFIED until fetched) | extension (to fetch); Hancock pp. 37-38 as topic map |
+| 4 | Goats and rabbits | Angora goat (USDA 1921 bulletin as a primary source); cashmere; Angora rabbits and the 2013 plucking controversy, taught as a documented controversy without a peer-reviewed study behind either side | *The Angora Goat* (Tier A); ARBA and extension (to fetch) |
+| 5 | Silk | Sericulture in a sentence of history (link to \`asia-before-european-colonization\` lesson 12); what a silkworm needs; why it is a fibre animal and an insect | USDA silk bulletins (REPORTED; to fetch) |
+| 6 | Fleece to yarn | Shearing day; skirting; scouring; carding and combing; spinning (spindle and wheel, link to \`making-string\`); plying; natural dyeing (USDA Misc. Pub. 230, 1935; link to \`training-the-colonizer\` indigo); the micron grades | AMS standards; *Home Dyeing with Natural Dyes*; extension (to fetch) |
+| 7 | Manure and waste wool | What sheep, rabbit, alpaca and llama manure carry; waste wool as a slow-release fertiliser (Zheljazkov, paywalled, cited); back to the Loop | NRCS; Maryland table; Zheljazkov (Tier C) |
+| 8 | A history the records keep | Navajo-Churro sheep and the 1930s livestock reduction (federal records to fetch; REPORTED until then); Gulf Coast Native sheep (not found); Black shepherds (not found); the course says what it could not find | NARA, NPS, LOC (to fetch) |
+| 9 | Should you keep one? | Land, time, money, law, a vet, a shearer, a market for the fibre; the decision exercise | the course |
+
+Pools sized to text (gate D2).
+
+## 3 · Fit
+
+- **Category:** Farm & Garden primary, Trade Skills additional. **Series:** \`the-loop\` LOOP-03;
+  named in \`the-fibre-line\`'s description as its last stop (a course has one series slug).
+- **Audience:** public catalog. Homesteaders deciding; crafters who want to know where yarn comes
+  from; learners finishing crochet or braiding.
+- **Visibility:** public, free by default.
+- **Standards:** \`BACKLOG\` line like knots.
+- **Media:** USDA photographs and bulletin plates (Tier A); BAM's capture at the yak ranch later, with
+  the ranch's permission.
+- **Reviewer:** a shepherd or fibre farmer, ideally the ranch, as a named reviewer for the husbandry
+  sections.
+
+## 4 · Connections, found by searching \`scripts/data/\`
+
+Searched 2026-10-05 for sheep, wool, fleece, shearing, alpaca, llama, angora, mohair, cashmere, yak,
+silk, silkworm, sericulture, carding, spinning, dye, Navajo-Churro, livestock reduction.
+
+- **Nothing teaches** any of it. Sericulture is one sentence in \`asia-before-european-colonization\`
+  "12 · The Silk Roads, by land and by sea" (\`:1299\`). The one fibre-dye lesson is
+  \`training-the-colonizer\` "8 · Indigo" (\`:672\`). \`tribal-nations-governance\` lessons at \`:711-780\`
+  cover Navajo governance only, with no sheep: the livestock-reduction lesson's cross-link slot.
+- **Links out:** \`manure-and-compost\` (sections 1 and 7), \`making-string\` (spinning),
+  \`crochet\` and \`braiding-hair-and-yarn\` (the yarn), \`training-the-colonizer\` lesson 8,
+  \`asia-before-european-colonization\` lesson 12, \`tribal-nations-governance\`.
+
+## 5 · Course or lesson?
+
+**A course (form C6).** B1 = 3 for the federal spine (AMS standards, NASS, APHIS, two USDA bulletins,
+NRCS tables, all fetched); B2 = 3 (nothing covers it); B3 = 3 (a learner can read the wool grade
+standard, the 1921 Angora bulletin, the NASS report); B4 = 3 (nine sections, four of them resting on
+fetched Tier A material today and the rest on extension sources to be fetched); B5 = 3 (five courses
+and both series); B6 = 2. Total 35. The husbandry lessons depend on extension sources not yet fetched
+(sheep101.info blocked; Oklahoma State, Penn State, ARBA not reached), so those sections are not
+written until they are.
+
+**Alternatives rejected:** a section inside \`growing-protein\` (fibre animals are kept for a different
+product, with different law and a different craft downstream; and the course closes the fibre series);
+a section inside \`making-string\` (string's fibres are mostly plant; this is husbandry); nothing (BAM
+asked twice, and the federal record is strong).
+
+## 6 · Evidence status
+
+### VERIFIED, fetched 2026-10-05
+
+- USDA AMS, *United States Standards for Grades of Wool* (1968): grades by micron (finer than 80's at
+  17.69 um or less; 80's 17.70 to 19.14 um). Not in the current CFR (7 CFR Part 31 is sample purchase).
+- USDA NASS, *Sheep and Goats* (30 Jan 2026): 4.99 million sheep and lambs; 20.5 million lb wool, 2025.
+- USDA APHIS scrapie identification guide: official ID; prevalence reduced by over 99 percent.
+- *The Angora Goat* (Williams, USDA 1921), NAL "not in copyright".
+- *Home Dyeing with Natural Dyes* (USDA Misc. Pub. 230, 1935), NAL record.
+- NRCS Tables 4-13 (lamb) and 4-15 (rabbit); University of Maryland alpaca and llama manure table
+  (alpaca 0.66 N, 0.92 P2O5, 0.28 K2O; llama 0.75, 0.80, 0.30).
+- Australian Veterinary Association mulesing policy (ratified 16 July 2026): phase-out, analgesia.
+  No AVMA policy exists.
+- Zheljazkov 2005 and 2009 metadata (waste wool, paywalled).
+
+### REPORTED
+
+- Navajo-Churro and the livestock reduction (Hubbell Trading Post pages, reduction figures);
+  Kentucky State, Langston and Fort Valley State programmes; Riley's silkworm manuals (1879, 1888) and
+  Kelly (1903); Adrosko 1968.
+- The Angora plucking controversy (a 2013 PETA Asia video; no peer-reviewed study found).
+
+### UNVERIFIED
+
+- Woolly Yak Ranch & Winery, Arcadia, Indiana (BAM's words).
+- Yak fibre sources; all husbandry extension guides (Maryland Sheep 101/201, Oklahoma State breeds,
+  alpaca and Angora rabbit guides, the Livestock Conservancy, ASI, ARBA); shearing, skirting, scouring
+  and carding guides; Gulf Coast Native sheep; Black shepherd history.
+
+### Gate A4
+
+Hancock and the Christiansborg volumes are topic maps and read-alongside only.
+
+### Failed fetches
+
+sheep101.info; the extension sites were not reached in the research pass.
+
+## 7 · Questions for BAM
+
+1. **The yak ranch:** a visit for capture, an interview as the practitioner source, a named reviewer,
+   or all three? Who there?
+2. **Which animals lead?** Nine sections is long; sheep, alpaca and yak could carry the first version
+   with goats, rabbits and silk as a later expansion.
+3. **Build order:** after \`manure-and-compost\` and the two fibre courses, or sooner because of the
+   ranch?
+4. **Indiana:** Purdue Extension small-ruminant material and Indiana's zoning as fetched lessons, or
+   "find your county's rule".`,
+    provenance: "plans/future-courses/farm-and-garden/2026-10-05-raising-animals-for-yarn-brief.md",
   },
   {
     key: "raising-animals-for-yarn",
