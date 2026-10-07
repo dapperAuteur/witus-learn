@@ -52,6 +52,8 @@ import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { KNOTS_COURSE } from "./data/knots-course";
+import { MAKING_STRING_COURSE } from "./data/making-string-course";
+import { CROCHET_COURSE } from "./data/crochet-course";
 import { CROQUET_COURSE } from "./data/croquet-course";
 import { SURVIVAL_COURSE } from "./data/survival-course";
 import { MANURE_AND_COMPOST_COURSE } from "./data/manure-and-compost-course";
@@ -1816,6 +1818,38 @@ async function main() {
     slug: "cybersecurity-get-the-job",
     course: CYBER_SECURITY_COURSE,
     category: "Cybersecurity",
+    navigationMode: "linear",
+  });
+
+  // ── From Fibre to Fabric (Trade Skills) ───────────────────────────────────────
+  // BAM's briefs of 2026-10-05, answered 2026-10-06 (plans/future-courses/trade-skills/): making
+  // string, then crocheting; braiding and raising animals for yarn follow. knot-tying stays separate
+  // (BAM: "keep separate, but link to each other"), so it carries no FIBRE code. Public and free, like
+  // knots. Dossiers beside the briefs; every lesson asserts only their VERIFIED lines.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "making-string",
+    course: MAKING_STRING_COURSE,
+    category: "Trade Skills",
+    seriesSlug: "from-fibre-to-fabric",
+    seriesTitle: "From Fibre to Fabric",
+    seriesOrder: 0,
+    seriesCode: "FIBRE",
+    seriesPosition: "00",
+    navigationMode: "linear",
+  });
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "crochet",
+    course: CROCHET_COURSE,
+    category: "Trade Skills",
+    seriesSlug: "from-fibre-to-fabric",
+    seriesTitle: "From Fibre to Fabric",
+    seriesOrder: 1,
+    seriesCode: "FIBRE",
+    seriesPosition: "01",
     navigationMode: "linear",
   });
 
