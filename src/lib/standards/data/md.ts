@@ -74,8 +74,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Maryland was an NGSS lead state and adopted the Next Generation Science Standards (2013) as the Maryland College and Career-Ready Standards for Science, using the NGSS codes verbatim — this is what the Maryland Integrated Science Assessment (MISA) measures. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "The Maryland State Department of Education states that the Maryland State Board of Education adopted the Next Generation Science Standards in 2013 (MSDE release, March 20, 2015). Maryland adopted the NGSS as published, so as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; we did not compare a separate Maryland printing.",
     },
   ],
   frameworks: [
@@ -263,8 +264,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Maryland College and Career Ready Standards mathematics expectation.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Maryland was an NGSS lead state and adopted the NGSS verbatim (2013) as the Maryland College and Career-Ready Standards for Science, assessed by the MISA, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Maryland was an NGSS lead state and adopted the NGSS verbatim (2013) as the Maryland College and Career-Ready Standards for Science, assessed by the MISA, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Maryland's nation-strongest executive budget power has no code of its own.",

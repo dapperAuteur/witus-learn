@@ -62,8 +62,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "In November 2016 the New Hampshire State Board of Education adopted the Next Generation Science Standards as the state's science standards (New Hampshire's College- and Career-Ready Science Standards), using the NGSS codes verbatim. HS-ESS3-1, the one performance expectation we cite, is a standard NGSS PE, so the shared NGSS file is adopted verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "The New Hampshire State Board of Education adopted New Hampshire's College- and Career-Ready Science Standards, which are the Next Generation Science Standards, in November 2016 (NH Department of Education release, November 9, 2016). New Hampshire adopted the NGSS as published, so as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; we did not compare a separate New Hampshire printing.",
     },
   ],
   frameworks: [
@@ -345,8 +346,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no New Hampshire College and Career Ready (Common Core) mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "New Hampshire adopted the NGSS in November 2016 as its science standards, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "New Hampshire adopted the NGSS in November 2016 as its science standards, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "New Hampshire's own state structure is taught more fully than any one 2006 indicator captures.",

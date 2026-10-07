@@ -53,8 +53,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "The Connecticut State Board of Education adopted the Next Generation Science Standards in 2015 as the state's K-12 science standards, using the NGSS codes verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "The Connecticut State Board of Education adopted the Next Generation Science Standards by unanimous vote on November 4, 2015, and the State Department of Education's science page sends teachers to nextgenscience.org for the standards. Connecticut adopted the NGSS as published, so as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate Connecticut printing to compare.",
     },
   ],
   frameworks: [
@@ -152,8 +153,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Connecticut Core Standards (Common Core) mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Connecticut adopted the NGSS in 2015 as its K-12 science standards, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry itself. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Connecticut adopted the NGSS in 2015 as its K-12 science standards, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Connecticut's own state structure is taught more fully than any one code captures.",

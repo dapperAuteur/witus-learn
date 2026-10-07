@@ -58,8 +58,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "New Mexico adopted the Next Generation Science Standards in 2018 as the NM STEM Ready! Science Standards, which add six New Mexico-specific standards to the NGSS. HS-ESS3-1, the one performance expectation we cite, is a standard NGSS PE unchanged by the New Mexico additions, so the shared NGSS file is adopted verbatim. The six NM additions are New Mexico's own and are not claimed. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "Under 6.29.10 NMAC (effective July 1, 2018) the New Mexico STEM Ready! Science Standards incorporate the Next Generation Science Standards and any amendments to them by reference, and add six New Mexico standards (1-SS-1 NM, 5-SS-1 NM, MS-ESS3-3 NM, HS-LS2-7 NM, HS-SS-1 NM and HS-SS-2 NM) that we do not claim. Because the rule adopts the NGSS text itself, as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text.",
     },
   ],
   frameworks: [
@@ -338,8 +339,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no New Mexico Common Core mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "New Mexico adopted the NGSS in 2018 as the NM STEM Ready! Science Standards, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. The six New Mexico-specific standards added to the NGSS are New Mexico's own; none is HS-ESS3-1, and this catalog has no laboratory work, investigation, or modelling, so we claim nothing there.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "New Mexico adopted the NGSS in 2018 as the NM STEM Ready! Science Standards, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "The New Mexico History (NMH) strand — not the catalog's content.",

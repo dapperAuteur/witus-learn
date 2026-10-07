@@ -73,8 +73,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Vermont was an NGSS Lead State and adopted the Next Generation Science Standards in 2013. HS-ESS3-1, the one performance expectation we cite, is a standard NGSS PE, so the shared NGSS file is adopted verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "Under Vermont's Education Quality Standards, Vermont uses the standards for science as laid out by the Next Generation Science Standards for grades K-12 (Agency of Education science page). Vermont uses the NGSS as published, so as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate Vermont printing to compare.",
     },
   ],
   frameworks: [
@@ -244,8 +245,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Vermont Common Core mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Vermont was an NGSS Lead State and adopted the NGSS in 2013, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Vermont was an NGSS Lead State and adopted the NGSS in 2013, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Tribal, national, and international levels named in the C3 civics indicators.",

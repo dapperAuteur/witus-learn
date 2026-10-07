@@ -11,6 +11,7 @@ import {
   coursesIn,
   filterGroups,
   isStateCode,
+  jurisdictionData,
   mappedStates,
   scopeAlignments,
   standardsForCourse,
@@ -326,12 +327,26 @@ describe("standards data integrity — a wrong code could be filed with a state"
         const resolved = FRAMEWORKS.find((r) => r.id === id);
         expect(resolved, id).toBeDefined();
         expect(resolved!.state, id).toBe(j.state);
-        // Verbatim adoption keeps the shared framework's codes; aliases would rename them.
+        // Verbatim adoption keeps the shared framework's codes; aliases would rename them, and an
+        // exclusion (a state that rewords or dropped a code) removes it for that state only.
         for (const s of a.framework.standards) {
           const local = ALIGNMENTS.find(
             (x) => x.frameworkId === id && x.code === (a.aliases?.[s.code] ?? s.code),
           );
-          expect(local, `${id}:${s.code}`).toBeDefined();
+          if (a.exclude && s.code in a.exclude) {
+            expect(local, `${id}:${s.code} is excluded but still resolves`).toBeUndefined();
+          } else {
+            expect(local, `${id}:${s.code}`).toBeDefined();
+          }
+        }
+        // Every exclusion says why, and the state's page publishes it under "What we don't claim".
+        for (const [code, why] of Object.entries(a.exclude ?? {})) {
+          expect(why.length, `${id}: exclusion reason for ${code}`).toBeGreaterThan(40);
+          const page = jurisdictionData(j.state)!;
+          expect(
+            page.notClaimed.some((n) => n.heading.endsWith(`: ${code}`) && n.body === why),
+            `${id}: ${code} exclusion missing from notClaimed`,
+          ).toBe(true);
         }
       }
     }
