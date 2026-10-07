@@ -176,14 +176,14 @@ The same table also lists a 4.25 mm G and a 5.25 mm I, which is the whole proble
 
 **Steel hooks run backwards.** Fine thread is worked with small steel hooks, and their numbers run the other way: "the higher the number, the smaller the hook". Thread "is similarly sized: the smaller the number, the thicker the thread". The council says "The most common crochet threads are sizes 3, 5, 10, 20, and 30", going "up to size 100, which is the finest" (Craft Yarn Council, n.d.-g).
 
-**One hook this course does not use.** Dillmont notes that "The Tunisian crochet is done with a long straight hook" (p. 221), with "a knob at one end" (p. 242, fig. 444). Tunisian crochet is a different technique and is not taught here.
+**One hook this course does not use.** Dillmont notes that "The Tunisian crochet is done with a long straight hook" (p. 221), with "a knob at one end" (pp. 241-243; plain Tunisian is fig. 444, p. 242). Tunisian crochet is a different technique and is not taught here.
 
 :::reveal Why does the Craft Yarn Council tell you to trust the millimetre size on a hook's package? ||| Because letter and number sizes vary from company to company, while millimetres are the hook's actual diameter.
 
 :::reveal Steel hook size 7 or steel hook size 10: which is smaller? ||| Size 10. Steel hooks run backwards: the higher the number, the smaller the hook.
 
 ## Sources
-${src(DILLMONT, `"Crochet Work", p. 221 (materials, points, sizing); p. 222, figs. 400-402 and the needle-number table; p. 242, fig. 444 (the Tunisian hook).`)}
+${src(DILLMONT, `"Crochet Work", p. 221 (materials, points, sizing); p. 222, figs. 400-402 and the needle-number table; pp. 241-243, with fig. 444 on p. 242 (the Tunisian hook).`)}
 ${src(BEETON, `"Crochet", p. 185.`)}
 ${src(RIEGO_1848, `p. 5 (the materials line).`)}
 ${src(HANDBOOK, `section "A Lesson in Crochet", the remarks on hooks (this edition has no page numbers).`)}
@@ -258,7 +258,7 @@ ${src(CYC_FAQ, `the question on the yarn weight system and interchangeability.`)
 
 **Work at the point.** Beeton adds a rule about where the loop sits: "work only with the point of the needle, and never move the stitch up and down the needle" (p. 185).
 
-**How tight.** The sources agree on evenness more than on any number. Dillmont tightens the first loop "just enough to leave an easy passage through it for the needle" (p. 224). Beeton: "The stitches must be elastic, but if too loose they look as bad as if too tight" (p. 185), and "Each stitch must be loose enough to let the hook of the needle pass easily through" (p. 187). The 1918 *Handbook* tightens each loop "so that all will be of uniform size and smoothness". Two mathematicians crocheting a geometry model asked for the same thing: "Be sure to crochet fairly tight and even" (Henderson & Taimina, n.d.).
+**How tight.** The sources agree on evenness more than on any number. Dillmont tightens the loop of the first stitch "just enough to leave an easy passage through it for the needle" (pp. 223-224). Beeton: "The stitches must be elastic, but if too loose they look as bad as if too tight" (p. 185), and "Each stitch must be loose enough to let the hook of the needle pass easily through" (p. 187). The 1918 *Handbook* tightens each loop "so that all will be of uniform size and smoothness". Two mathematicians crocheting a geometry model asked for the same thing: "Be sure to crochet fairly tight and even" (Henderson & Taimina, n.d.).
 
 **One word, two meanings.** In a British pattern "tension" means what an American pattern calls gauge (Craft Yarn Council, n.d.-a). This lesson is about how firmly you work; gauge, in either name, is lesson 19.
 
@@ -292,7 +292,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
 
 **Not in the knots course.** The *Knot-Tying & Rope Work* course on Learn.WitUS does not teach a slip knot, so it is taught here.
 
-**The slip knot from Mary Frances (1918).** *The Mary Frances Knitting and Crocheting Book* teaches the knot in its knitting half, on p. 148, beside Plate 4, a photograph whose caption calls it the right way to make a slip knot and the first step in knitting. A crochet chain starts from the same knot on the hook. The book's steps, in its own words:
+**The slip knot from Mary Frances (1918).** *The Mary Frances Knitting and Crocheting Book* teaches the knot on p. 148, beside Plate 4, a photograph whose caption calls it the right way to make a slip knot and the first step in knitting. A crochet chain starts from the same knot on the hook. The book's steps, in its own words:
 
 1. "Hold yarn in hands as shown in this picture."
 2. "Let upper thread fall behind the second finger of left hand."
@@ -300,7 +300,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
 4. "Pull hard on the thread in the right hand bringing the loop off the left-hand fingers."
 5. "Draw knot up tight."
 
-**Be honest about what you just read.** Those lines are not the whole instruction. The text leans on its photograph: the first step says only "as shown in this picture", and the book's own text runs on between the lines quoted here. The plate shows how the yarn lies across the fingers at the start, which the words never say. Until the plate is added to this lesson, open the book at p. 148 and read the steps with Plate 4 in front of you. A slip knot learned from words alone is a guess.
+**Read the steps with the plate.** Those lines are not the whole instruction. The text leans on its photograph: the first step says only "as shown in this picture", and the book's own text runs on between the lines quoted here. How to hold the yarn at the start is given only by the plate; the words never describe it. Until the plate is added to this lesson, open the book at p. 148 and read the steps with Plate 4 in front of you. A slip knot learned from words alone is a guess.
 
 **Two other ways in.** The same book starts its crochet chain without a slip knot at all: "Pointing the hook away from you, turn it completely around, bringing a loop on the needle" (Fryer, 1918, p. 48). Plate 1, which the book calls its "motion pictures", shows the move. The older manuals say even less about the first loop. Riego (1846) begins a chain with "Make a loop, and draw the wool through it" (Riego de la Branchardière, 1846, p. 55), and the 1918 *Handbook* with "Make a loop of thread around the needle". For a beginner, the slip knot is the version a source teaches step by step, with a picture.
 
@@ -584,7 +584,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
             prompt: "What kind of hook does Tunisian crochet use, per Dillmont?",
             options: ["A long straight hook", "A short hook with a flat, spoon-shaped end", "A forked steel hairpin with two prongs", "A tambour needle screwed into a case"],
             correctIndex: 0,
-            explanation: "\"The Tunisian crochet is done with a long straight hook\" (p. 221), with \"a knob at one end\" (p. 242, fig. 444).",
+            explanation: "\"The Tunisian crochet is done with a long straight hook\" (p. 221), with \"a knob at one end\" (pp. 241-243; fig. 444 is on p. 242).",
             sourceLessonSlug: "hooks-and-sizes",
           },
           {
@@ -714,6 +714,13 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
             explanation: "Lace (0): steel 6, 7, 8, and regular hook B-1.",
             sourceLessonSlug: "yarn-weights",
           },
+          {
+            prompt: "What hook range does the council give for bulky yarn, category 5?",
+            options: ["I-9 to K-10½, the range for medium", "K-10½ to M-13", "M-13 to Q, the range for super bulky", "E-4 to 7, the range for fine yarn"],
+            correctIndex: 1,
+            explanation: "Bulky (5): K-10½ to M-13, 6.5 to 9 mm, 8 to 11 stitches to 4 inches.",
+            sourceLessonSlug: "yarn-weights",
+          },
           // ── holding-hook-and-yarn ──
           {
             prompt: "How do Dillmont, Beeton and the 1918 Handbook all say to hold the hook?",
@@ -817,7 +824,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
             prompt: "How tight does Dillmont make the first loop?",
             options: ["As tight as the yarn allows without breaking", "Just enough for the hook to pass", "Loose enough to fit two fingers through it", "Not at all; the first loop stays slack"],
             correctIndex: 1,
-            explanation: "Tightening it \"just enough to leave an easy passage through it for the needle\" (Dillmont, p. 224).",
+            explanation: "Tightening it \"just enough to leave an easy passage through it for the needle\" (Dillmont, pp. 223-224).",
             sourceLessonSlug: "holding-hook-and-yarn",
           },
           {
@@ -885,10 +892,10 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
             sourceLessonSlug: "the-slip-knot",
           },
           {
-            prompt: "In which part of the Mary Frances book is the slip knot?",
-            options: ["The crochet half, just before the chain", "The preface, before any of the lessons", "An appendix on knots for sailors", "The knitting half"],
+            prompt: "What does the caption of Plate 4 in the Mary Frances book call the slip knot?",
+            options: ["The first chain of a crochet row", "A knot for joining two rope ends", "The last step before fastening off", "The first step in knitting"],
             correctIndex: 3,
-            explanation: "It sits in the knitting half; Plate 4's caption calls it the first step in knitting. A crochet chain starts from the same knot.",
+            explanation: "Plate 4's caption calls it the right way to make a slip knot, the first step in knitting (p. 148). A crochet chain starts from the same knot on the hook.",
             sourceLessonSlug: "the-slip-knot",
           },
           {
@@ -909,14 +916,14 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
             prompt: "Why does lesson 5 say the Mary Frances words alone are not enough?",
             options: ["They were written for left-handed knitters", "Its steps are printed in the wrong order", "They lean on a photograph", "They use UK stitch names the course avoids"],
             correctIndex: 2,
-            explanation: "The first step says only \"as shown in this picture\", and the plate shows how the yarn lies on the fingers, which the words never say.",
+            explanation: "The first step says only \"as shown in this picture\": how to hold the yarn at the start is given only by the plate.",
             sourceLessonSlug: "the-slip-knot",
           },
           {
             prompt: "What does Plate 4 show that the words never say?",
-            options: ["How many chains to make after the finished knot", "Which hook size to use for the very first loop", "How to unpick the knot if it jams on the hook", "How the yarn lies on the fingers"],
+            options: ["How many chains to make after the finished knot", "Which hook size to use for the very first loop", "How to unpick the knot if it jams on the hook", "How to hold the yarn at the start"],
             correctIndex: 3,
-            explanation: "The plate shows how the yarn lies across the fingers at the start. Until it is added to the lesson, open the book at p. 148.",
+            explanation: "The starting hold is given only as \"as shown in this picture\". Until the plate is added to the lesson, open the book at p. 148.",
             sourceLessonSlug: "the-slip-knot",
           },
           {
@@ -1017,13 +1024,13 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
 **The chain, in four sources.** Start with the loop on your hook from lesson 5.
 
 - The Mary Frances book: "Now point the hook under the yarn, and catch it on the hook. This is called 'wrapping' the yarn." Then: "Pull a loop through the loop which was on the needle" (Fryer, 1918, p. 48). Repeat.
-- Dillmont: "The next stitches are made by taking up the thread with the needle and drawing it through the loop" (Dillmont, n.d., p. 224).
+- Dillmont: "The next stitches are made by taking up the thread with the needle and drawing it through the loop" (Dillmont, n.d., pp. 223-224).
 - *The Priscilla Crochet Book*: "Chain Stitch (ch st). Make a series of loops, drawing each loop through the preceding one" (Hettich, 1908, p. 3).
 - The 1918 *Handbook* adds the standard: tighten "each loop as drawn through, so that all will be of uniform size and smoothness". It also gives the abbreviation: "When abbreviations are used, that for chain is ch."
 
 Four books, one motion: yarn over, pull through the loop on the hook, and you have one chain with a new loop on the hook.
 
-**Look at the pictures.** Dillmont's figure 403 (pp. 223-224) shows both hands making chain. Beeton's Illustration 216 (pp. 186-187) is the plain foundation chain. The 1918 *Handbook*'s Figure 1 is the chain, and the Mary Frances book's Plate 1 shows the move in a strip of photographs.
+**Look at the pictures.** Dillmont's figure 403 (pp. 223-224) shows both hands making chain. Beeton's Illustration 216 (pp. 186-187) is the plain foundation chain. The 1918 *Handbook*'s Figure 1 is the chain, and the Mary Frances book's Plate 1, which it calls its "motion pictures", shows the move in photographs.
 
 **Even chains.** Beeton's warning applies to every chain: "Each stitch must be loose enough to let the hook of the needle pass easily through" (p. 187). Every stitch of your next row has to go into one of these chains.
 
@@ -1060,7 +1067,7 @@ ${src(LEINHAUSER, `the counting rule for the slip knot and the loop on the hook.
 
 **Slip stitch (UK: slip stitch, ss).** *The Priscilla Crochet Book*: "Slip Stitch (sl st). Insert the hook into the stitch, draw the wool through that stitch and through the wool on hook at the same time" (Hettich, 1908, p. 3). The Mary Frances book gives a practice row: "Make 15 chain stitches. Skip one chain. Put the hook through the next chain stitch; wrap yarn over needle, and draw it through both loops on the needle" (Fryer, 1918, p. 53). Beeton calls it slip stitch too (p. 188, Ill. 219). Dillmont calls the same motion "single stitch": "Put the needle in from the right side of the work, into the uppermost loop of the preceding row, take up the thread on the needle and draw it through both loops" (Dillmont, n.d., p. 224, fig. 404). The 1918 *Handbook* says it is "properly a close joining stitch", and lesson 22 uses it that way.
 
-**Single crochet (UK: double crochet, dc).** The Mary Frances book teaches it in three numbered steps, labelled "CUT 1" to "CUT 3" to match its Plate 2. "Make a row of 15 chain stitches." Then, cut 1: "Put the hook through the second chain stitch from the needle. (That is, skip one chain stitch.)" Cut 2: "Draw a loop through the chain stitch, and wrap the yarn over the hook, and" cut 3: "Pull a loop through the two loops on the needle" (Fryer, 1918, p. 51). Priscilla says the same in one line: "Single Crochet (s c). Insert the hook, draw wool through, pass wool around hook (wool over), and draw it through both loops on the hook" (Hettich, 1908, p. 3).
+**Single crochet (UK: double crochet, dc).** The Mary Frances book teaches it in three numbered steps, labelled "CUT 1" to "CUT 3", with its Plate 2. "Make a row of 15 chain stitches." Then, cut 1: "Put the hook through the second chain stitch from the needle. (That is, skip one chain stitch.)" Cut 2: "Draw a loop through the chain stitch, and wrap the yarn over the hook, and" cut 3: "Pull a loop through the two loops on the needle" (Fryer, 1918, p. 51). Priscilla says the same in one line: "Single Crochet (s c). Insert the hook, draw wool through, pass wool around hook (wool over), and draw it through both loops on the hook" (Hettich, 1908, p. 3).
 
 **Why the second chain from the hook.** The chain next to the hook is skipped. Both Mary Frances ("skip one chain stitch") and Leinhauser ("sc in 2nd ch from hook") start the first single crochet in the second chain.
 
@@ -1101,7 +1108,7 @@ ${src(LEINHAUSER, `the single crochet row example.`)}`,
           answer: "Any two of: Dillmont's \"plain stitch\", Beeton's \"double stitch\", Lambert's \"plain double crochet\", the 1918 Handbook's \"double crochet\".",
         },
       ],
-      body: `Dillmont: "Trebles are little columns, or bars made of loops or stitches" (Dillmont, n.d., p. 227). The tall stitches all start the same way, with the yarn wrapped round the hook *before* you insert it. The number of wraps decides the height.
+      body: `Dillmont: "Trebles are little columns, or bars made of loops or stitches" (Dillmont, n.d., pp. 227-228). The tall stitches all start the same way, with the yarn wrapped round the hook *before* you insert it. The number of wraps decides the height.
 
 **Half double crochet (UK: half treble, htr).** One wrap first, then pull through all three loops at once. Priscilla: "Half Double Crochet (h d c). Pass the wool around the hook, insert the hook, draw wool through; pass the wool around the hook, and draw the wool through all 3 loops at once" (Hettich, 1908, p. 3). Dillmont's "half treble" is the same (p. 228, fig. 415), Beeton's "long double" too (p. 191, Ill. 225), and the 1918 *Handbook*'s "half-treble" (Figure 5).
 
@@ -1241,7 +1248,7 @@ ${src(CYC_ABBR, `entries BLO, FLO, ch-sp.`)}`,
             sourceLessonSlug: "the-foundation-chain",
           },
           {
-            prompt: "Which Mary Frances plate shows the chain in a strip of photographs?",
+            prompt: "Which Mary Frances plate shows the chain stitch?",
             options: ["Plate 4, the slip knot for knitting", "Plate 1", "Plate 2, with its three numbered cuts", "None; the book has no crochet plates"],
             correctIndex: 1,
             explanation: "Plate 1 shows the chain, which the book calls its \"motion pictures\".",
@@ -1272,7 +1279,7 @@ ${src(CYC_ABBR, `entries BLO, FLO, ch-sp.`)}`,
             prompt: "In Dillmont's words, how are the chain stitches after the first made?",
             options: ["By wrapping twice and working off in pairs", "Thread taken up and drawn through", "By inserting the hook into the stitch below", "By twisting the loop a full turn on the hook"],
             correctIndex: 1,
-            explanation: "\"The next stitches are made by taking up the thread with the needle and drawing it through the loop\" (Dillmont, p. 224).",
+            explanation: "\"The next stitches are made by taking up the thread with the needle and drawing it through the loop\" (Dillmont, pp. 223-224).",
             sourceLessonSlug: "the-foundation-chain",
           },
           {
@@ -1378,7 +1385,7 @@ ${src(CYC_ABBR, `entries BLO, FLO, ch-sp.`)}`,
             prompt: "How many numbered steps does the Mary Frances book give for single crochet?",
             options: ["Three", "Five, matching the slip-knot steps", "Two, one for each loop on the hook", "Seven, one for each photograph"],
             correctIndex: 0,
-            explanation: "CUT 1 to CUT 3, matched to Plate 2 (Fryer, p. 51).",
+            explanation: "CUT 1 to CUT 3, with Plate 2 (Fryer, p. 51).",
             sourceLessonSlug: "slip-stitch-and-single-crochet",
           },
           {
@@ -1462,7 +1469,7 @@ ${src(CYC_ABBR, `entries BLO, FLO, ch-sp.`)}`,
             prompt: "How does the Mary Frances book label its single crochet steps?",
             options: ["CUT 1 to CUT 3", "STEP A to STEP C, under Plate 4", "Figures 1 to 3 of the Handbook", "Illustrations 219 to 221 of Beeton"],
             correctIndex: 0,
-            explanation: "The steps are labelled CUT 1, CUT 2 and CUT 3 to match Plate 2.",
+            explanation: "The steps are labelled CUT 1, CUT 2 and CUT 3 (Fryer, p. 51, Plate 2).",
             sourceLessonSlug: "slip-stitch-and-single-crochet",
           },
           {
@@ -1484,7 +1491,7 @@ ${src(CYC_ABBR, `entries BLO, FLO, ch-sp.`)}`,
             prompt: "How does Dillmont describe trebles?",
             options: ["Knots tied over a doubled strand", "Twists locked in by a second chain", "Rings worked into a single loop", "Little columns, or bars"],
             correctIndex: 3,
-            explanation: "\"Trebles are little columns, or bars made of loops or stitches\" (Dillmont, p. 227).",
+            explanation: "\"Trebles are little columns, or bars made of loops or stitches\" (Dillmont, pp. 227-228).",
             sourceLessonSlug: "the-tall-stitches",
           },
           {
@@ -1819,7 +1826,7 @@ ${src(CYC_ABBR, `entries BLO, FLO, ch-sp.`)}`,
 
 **Does the turning chain count?** Leinhauser gives the US rule. In single crochet: "never count the turning ch-1 as a stitch." For everything taller: "Unless your pattern tells you otherwise, on all stitches taller than a single crochet, the turning chain is counted as the first stitch of the row" (Leinhauser, n.d.). That is the same rule you met at the start of a chain in lesson 9. Beeton's ribbed stitch says the same of its one chain in its own words: "Work 1 chain stitch at the end of every row, which is not worked, however, in the following row" (p. 189).
 
-**The older habit: working all from one end.** Dillmont's other way of making rows never turns. Working all one way, "the thread must be fastened on afresh each time" (p. 223). Riego (1846) gives it as a standing rule: "In crochet that is worked square, at the end of a row, cut the wool off, and draw it through to fasten it; begin at the other end" (Riego de la Branchardière, 1846, p. 55). Her plain crochet ends each row the same way: "At the end, cut the wool off, draw it through, and begin at the other end" (pp. 57-58). And her way to start the next row: "Put the needle in the side of the 1st stitch, bring the wool through, and work a chain stitch" (p. 55). The manuals record the habit without saying why. Dillmont's later pages assume the other way when a stitch allows it: "When you use a stitch that has to be worked to and fro, you turn your work at the end of every row" (p. 240).
+**The older habit: working all from one end.** Dillmont's other way of making rows never turns. Working all one way, "the thread must be fastened on afresh each time" (p. 223). Riego (1846) gives it as a standing rule: "In crochet that is worked square, at the end of a row, cut the wool off, and draw it through to fasten it; begin at the other end" (Riego de la Branchardière, 1846, p. 55). Her plain crochet ends each row the same way: "At the end, cut the wool off, draw it through, and begin at the other end" (pp. 57-58). And her way to start the next row: "Put the needle in the side of the 1st stitch, bring the wool through, and work a chain stitch" (p. 55). The passages quoted here record the habit without giving a reason. Dillmont's later pages assume the other way when a stitch allows it: "When you use a stitch that has to be worked to and fro, you turn your work at the end of every row" (p. 240).
 
 :::reveal How many turning chains go with a US double crochet, and does the turning chain count as a stitch? ||| Three, and unless the pattern says otherwise it counts as the first stitch of the row.
 
@@ -1891,7 +1898,7 @@ ${src(RIEGO_1846, `p. 57, "Shepherd or Single Crochet".`)}`,
           answer: "None of the sources it was built from describes one, so every round here starts from a joined chain.",
         },
       ],
-      body: `Work round and round into a ring without adding stitches and the piece will not lie flat. Every manual here that makes a flat round piece adds stitches as it goes. Beeton (1870) puts it as a rule: "It is necessary to increase regularly in all the rounds to keep the work flat" (p. 268). The 1918 *Handbook*'s button cover says the same in its own words: "Continue to work around and around, widening to keep the work flat".
+      body: `Work round and round into a ring without adding stitches and the piece will not lie flat. Every manual here that makes a flat round piece adds stitches as it goes. Beeton (1870) puts it as a rule: "It is necessary to increase regularly in all the rounds to keep the work flat" (p. 268). Her rule comes from a work-basket that is oval, begun on a row of 46 stitches and crocheted over damp straw (pp. 266-268), so take the principle from it, not the pattern. The 1918 *Handbook*'s button cover says the same in its own words: "Continue to work around and around, widening to keep the work flat".
 
 **The 1918 Tam-o'-Shanter, round by round.** This is the clearest worked example in the sources, and it is in English names, so its "double" is the US single crochet.
 
@@ -1912,7 +1919,7 @@ Then: "Continue in this way, adding 1 double between widenings each row, until y
 :::reveal Where do Dillmont's square and hexagon put their increases? ||| At the corners: three stitches into one stitch at each corner, four corners for the square and six for the hexagon.
 
 ## Sources
-${src(BEETON, `p. 268, Ill. 272-273 (the work-basket).`)}
+${src(BEETON, `pp. 266-268, Ill. 272-273 (the work-basket; the rule is on p. 268).`)}
 ${src(HANDBOOK, `section "Tam-o'-Shanter in Double Crochet", rounds 1-5; the button-cover instructions (this edition has no page numbers).`)}
 ${src(DILLMONT, `"Crochet Work", p. 240, fig. 441 (square) and fig. 442 (hexagon).`)}
 ${src(FRYER, `pp. 206-207, "Little Crocheted Hat".`)}`,
@@ -2048,10 +2055,10 @@ ${src(FRYER, `pp. 206-207, "Little Crocheted Hat".`)}`,
             sourceLessonSlug: "rows-and-the-turning-chain",
           },
           {
-            prompt: "Do the manuals say why they worked rows from one end?",
+            prompt: "Do the passages lesson 10 quotes say why rows were worked from one end?",
             options: ["Yes: turned work showed its wrong side", "No", "Yes: the wool was too short to turn", "Yes: their hooks could only work one way"],
             correctIndex: 1,
-            explanation: "Lesson 10: the manuals record the habit without saying why.",
+            explanation: "Lesson 10: the passages it quotes record the habit without giving a reason.",
             sourceLessonSlug: "rows-and-the-turning-chain",
           },
           {
@@ -2196,6 +2203,13 @@ ${src(FRYER, `pp. 206-207, "Little Crocheted Hat".`)}`,
             sourceLessonSlug: "joining-a-ring",
           },
           // ── the-flat-circle ──
+          {
+            prompt: "Why does lesson 12 take only the principle from Beeton's work-basket?",
+            options: ["Beeton wrote it for a knitted basket", "It is oval, not a circle", "It is worked on a tambour frame", "Its stitch counts are lost from the book"],
+            correctIndex: 1,
+            explanation: "The basket is oval, begun on a row of 46 stitches and crocheted over damp straw (Beeton, pp. 266-268), so lesson 12 takes the principle, not the pattern.",
+            sourceLessonSlug: "the-flat-circle",
+          },
           {
             prompt: "What does Beeton say keeps round work flat?",
             options: ["Working every round into the back loop", "Pressing each round with a damp cloth", "Regular increases", "Tightening the yarn every other round"],
@@ -2345,15 +2359,15 @@ ${src(FRYER, `pp. 206-207, "Little Crocheted Hat".`)}`,
       ],
       body: `Every shape in crochet comes from two moves: add a stitch, or take one away.
 
-**Riego's definitions (1846).** Her list of terms gives both moves in four words each. To increase: "Work 2 stitches in 1." To decrease: "Miss a stitch." And to miss a stitch is to "Pass over 1 of the row before" (Riego de la Branchardière, 1846, p. 55). So in Riego's book an increase puts two stitches where there was one, and a decrease skips a stitch of the row below.
+**Riego's definitions (1846).** Her list of terms gives both moves in a few words. To increase: "Work 2 stitches in 1." To decrease: "Miss a stitch." And to miss a stitch is to "Pass over 1 of the row before" (Riego de la Branchardière, 1846, p. 55). So in Riego's book an increase puts two stitches where there was one, and a decrease skips a stitch of the row below.
 
 **The other words for it.** The 1918 *Handbook* says "widening". *The Priscilla Crochet Book* abbreviates its widening: "the term used is wi 2" (Hettich, 1908, p. 3). Modern patterns write inc and dec, and the Craft Yarn Council's master list includes the two-together decreases sc2tog and dc2tog (Craft Yarn Council, n.d.-a). The chart symbols page draws them too (Craft Yarn Council, n.d.-b). This course does not reproduce the master list's steps for those two; open the list itself for them.
 
 **Two together, in an older source.** Dillmont's Tunisian crochet decreases by working two stitches as one: "On the right you crochet the first two stitches together, and at the end of the row, the last two" (Dillmont, n.d., p. 243, fig. 447). Tunisian is not taught here, but it shows the two-together idea in an older source.
 
-**Increase, then decrease.** Dillmont's coloured star does both in one motif (p. 241, fig. 443). "In each subsequent row, make one dark stitch more, increasing regularly, that is, making 2 stitches on the last light stitch that comes before the dark ones." Later: "then begin to decrease in every row by one". (If you read the plain-text edition, its caption calls this figure 423. The number is wrong; the HTML edition and the book give 443.)
+**Increase, then decrease.** Dillmont's coloured star does both in one motif (p. 241, fig. 443). "In each subsequent row, make one dark stitch more, increasing regularly, that is, making 2 stitches on the last light stitch that comes before the dark ones." Later: "then begin to decrease in every row by one". (If you read the plain-text edition, its caption calls this figure 423. The number is wrong; the HTML edition gives 443.)
 
-**Shaping by eye.** Lambert (1847) treats crochet as a fabric you can cut to any outline as you go. "A paper pattern, the size of any desired object, can easily be cut", she writes, and then "the making a stitch at the commencement, or the decreasing in the middle, or the end of a row, and *vice versâ*, render this work subservient to almost any form" (Lambert, 1847, p. 11). In plain words: cut a paper pattern to the shape you want, and add or drop stitches at the start, middle or end of a row until the work matches it.
+**Shaping by eye.** Lambert (1847) treats crochet as a fabric you can shape to any outline as you go. "A paper pattern, the size of any desired object, can easily be cut", she writes, and then "the making a stitch at the commencement, or the decreasing in the middle, or the end of a row, and *vice versâ*, render this work subservient to almost any form" (Lambert, 1847, p. 11). In plain words: cut a paper pattern to the shape you want, and add or drop stitches at the start, middle or end of a row until the work matches it.
 
 **Where the increases go.** In rounds, the sources spread their increases round the circle (the Tam) or stack them at corners (Dillmont's square). Beeton's basket border increases "at both ends", as lesson 14 shows.
 
@@ -2388,13 +2402,13 @@ ${src(LAMBERT, `p. 11.`)}`,
 
 **The tube: stop increasing.** Work round without adding stitches and the sides go straight up. Beeton's work-basket border: "the first 2 rounds without increasing the number of stitches" (Beeton, 1870, p. 268). The 1918 *Handbook*'s Tam: "36 to 45. A double in each stitch", ten rounds with no change in count.
 
-**The flare: increase a little.** Beeton's border goes on: "but in the following 9 rounds increase 2 double stitches at both ends, in order that the edge may be a little wider in the upper part" (p. 268). A little increase on each round, and the wall leans out instead of going straight up. Two cautions before you copy it. Beeton's basket is oval, not round, and it is begun on a row of 46 stitches, not a ring. And it is crocheted over damp straw (pp. 266-268). Read it for the principle, not as a pattern.
+**The cone: increase a little.** Beeton's border goes on: "but in the following 9 rounds increase 2 double stitches at both ends, in order that the edge may be a little wider in the upper part" (p. 268). A little increase on each round, and the wall leans out instead of going straight up. Two cautions before you copy it. Beeton's basket is oval, not round, and it is begun on a row of 46 stitches, not a ring. And it is crocheted over damp straw (pp. 266-268). Read it for the principle, not as a pattern.
 
 **The sphere: increase, hold, decrease.** *The Priscilla Crochet Book*'s "Child's Ball" is a cover for a ball: "a ch of 4 sts; join in a circle, and work in tr st, increasing at regular intervals until the work is large enough to cover one-half the ball; then work a few rows without increasing, draw the cover over the ball ... and work the other half to correspond with the first half, decreasing at regular intervals" (Hettich, 1908, p. 39). Increase until the circle covers half the ball, work straight round the middle, then decrease by the same steps until it closes.
 
 **The closed cover.** The 1918 *Handbook*'s button cover is the same idea at a smaller size. Work round "widening to keep the work flat, until you have a circle which will cover the button-mold", then "work once around without widening, slip in the mold", and close it: "miss 1, a double in next, and repeat until the cover is closed". Missing every other stitch is Riego's decrease from lesson 13, done all the way round.
 
-**A cone is what you would expect from this.** Increase steadily and the work lies flat. Increase not at all and it goes straight up. Increase a little, as Beeton's border does, and the wall flares. Those three behaviours are all in the sources. Notice that the sources give them as instructions, not as geometry: they say what to do, and the shape follows.
+**Three behaviours.** Increase steadily and the work lies flat. Increase not at all and it goes straight up. Increase a little, as Beeton's border does, and the wall flares. Those three behaviours are all in the sources. Notice that the sources give them as instructions, not as geometry: they say what to do, and the shape follows.
 
 :::reveal What happens when you work rounds without increasing? ||| The sides go straight up and you get a tube, like Beeton's first two border rounds or the 1918 Tam's rows 36 to 45.
 
@@ -2421,7 +2435,7 @@ ${src(PRISCILLA, `"Child's Ball", printed p. 39 (PDF p. 45).`)}`,
       ],
       body: `Lesson 12 showed that a flat circle needs a steady increase. This lesson is about increasing far more than that, on purpose, by a rule, and what two mathematicians made with it.
 
-**Where it came from.** David Henderson and Daina Taimina tell the story on their web page (Henderson & Taimina, n.d.). "In June of 1997, Daina was in a workshop watching the leader of the workshop, David ... using a paper and tape surface". Henderson's paper model dated from 1978; he had learned it "from William Thurston at a workshop at Bates College". Taimina tried other materials first. "Daina experimented with knitting (but the result was not rigid enough) and then settled on crocheting." An updated version of their account was published in the *Mathematical Intelligencer* in 2001.
+**Where it came from.** David Henderson and Daina Taimina tell the story on their web page (Henderson & Taimina, n.d.). "In June of 1997, Daina was in a workshop watching the leader of the workshop, David ... using a paper and tape surface". Henderson's paper model dated from 1978; he had learned it "from William Thurston at a workshop at Bates College". Taimina tried knitting first. "Daina experimented with knitting (but the result was not rigid enough) and then settled on crocheting." An updated version of their account was published in the *Mathematical Intelligencer* in 2001.
 
 **The one rule.** "You have to increase ... the number of stitches from one row to the next in a constant ratio, N to N+1". In practice: work N stitches as normal, then put the next stitch into the same loop as the one before, which is an increase, and repeat across the row. Every N stitches of the old row become N+1 in the new one.
 
@@ -2527,7 +2541,7 @@ ${src(HT, `the header (the 2001 journal version); the introduction (the 1997 wor
             prompt: "The plain-text Dillmont captions the coloured star as figure 423. What is the right number?",
             options: ["423, as the plain text says", "403, the hands and chain", "443", "433, between the two"],
             correctIndex: 2,
-            explanation: "The number in the plain-text caption is wrong; the HTML edition and the book give 443.",
+            explanation: "The number in the plain-text caption is wrong; the HTML edition gives 443.",
             sourceLessonSlug: "increase-and-decrease",
           },
           {
@@ -2688,7 +2702,7 @@ ${src(HT, `the header (the 2001 journal version); the introduction (the 1997 wor
           // ── the-hyperbolic-plane ──
           {
             prompt: "Who made the crocheted hyperbolic plane in lesson 15?",
-            options: ["Dillmont and Beeton, in the 1870s", "Henderson and Taimina", "Leinhauser, for the Craft Yarn Council", "Karp and Paludan, the historians"],
+            options: ["Dillmont and Beeton, the manual writers", "Henderson and Taimina", "Leinhauser, for the Craft Yarn Council", "Karp and Paludan, the historians"],
             correctIndex: 1,
             explanation: "David Henderson and Daina Taimina tell the story on their web page.",
             sourceLessonSlug: "the-hyperbolic-plane",
@@ -2702,7 +2716,7 @@ ${src(HT, `the header (the 2001 journal version); the introduction (the 1997 wor
           },
           {
             prompt: "From whom, and where, did Henderson learn the paper model?",
-            options: ["Taimina, at a 1997 workshop", "Hilbert, from his 1901 paper", "Milnor, at a 1972 meeting", "Thurston, at Bates College"],
+            options: ["Taimina, at a 1997 workshop", "Hilbert, from his 1901 paper", "Milnor, from his 1972 result", "Thurston, at Bates College"],
             correctIndex: 3,
             explanation: "He learned it \"from William Thurston at a workshop at Bates College\"; his paper model dated from 1978.",
             sourceLessonSlug: "the-hyperbolic-plane",
@@ -2779,7 +2793,7 @@ ${src(HT, `the header (the 2001 journal version); the introduction (the 1997 wor
           },
           {
             prompt: "What curvature does their page give?",
-            options: ["1/2r, half the radius", "r², the radius squared", "-1/r²", "-2r, twice the radius"],
+            options: ["r/2, half the radius", "r², the radius squared", "-1/r²", "-2r, twice the radius"],
             correctIndex: 2,
             explanation: "The page gives the Gaussian curvature as -1/r².",
             sourceLessonSlug: "the-hyperbolic-plane",
@@ -2848,7 +2862,7 @@ ${src(HT, `the header (the 2001 journal version); the introduction (the 1997 wor
 
 A second table groups Canada with the U.K. for two more words: what a U.S. pattern calls gauge, a U.K. one calls tension, and yarn over (yo) is yarn over hook (yoh). Above the slip stitch, every UK name is one step up from the US name for the same stitch.
 
-**It is older than either country's patterns today.** The split was already in American print a century ago. The 1918 *Handbook* used the English names, and said so: "The stitches and terms given herewith are such as are in general use, and were taught the writer by an English teacher of crocheting, herself a professional in the art." Then it warned: "In some periodicals and books, the real slip-stitch is omitted, and the single is called slip-stitch; the double is called single, the treble is called double, the double treble is called treble, and so on." That shifted set is today's US system. *The Priscilla Crochet Book*, printed in Boston in 1908, already used it: slip stitch, single crochet, half double, double, treble (Hettich, 1908, p. 3). So it is not quite right to say "US names versus UK names" as if each country had always had one. Both systems were in American print before the Craft Yarn Council's table.
+**It is older than either country's patterns today.** The split was already in American print more than a century ago. The 1918 *Handbook* used the English names, and said so: "The stitches and terms given herewith are such as are in general use, and were taught the writer by an English teacher of crocheting, herself a professional in the art." Then it warned: "In some periodicals and books, the real slip-stitch is omitted, and the single is called slip-stitch; the double is called single, the treble is called double, the double treble is called treble, and so on." That shifted set is today's US system. *The Priscilla Crochet Book*, printed in Boston in 1908, already used it: slip stitch, single crochet, half double, double, treble (Hettich, 1908, p. 3). So it is not quite right to say "US names versus UK names" as if each country had always had one. Both systems were in American print before the Craft Yarn Council's table.
 
 **And before that, every book its own.** Here is one motion, hook in, loop through, over, through both (today's US single crochet), as each source names it:
 
@@ -3017,7 +3031,16 @@ ${src(LEINHAUSER, `the counting rule.`)}`,
       slug: "exercise-read-and-count",
       title: "20 · Exercise: read the line, name the stitch, count the result",
       section: "Section 5 · Reading a pattern",
-      body: `Type a short answer to each. The counts are the skill this section teaches: work them out from the rule, not from memory. Stitch names can be written in full or as the abbreviation.`,
+      body: `Type a short answer to each. The counts are the skill this section teaches: work them out from the rule, not from memory. Stitch names can be written in full or as the abbreviation.
+
+## Sources
+${src(LEINHAUSER, `the single crochet and double crochet row examples; the turning-chain rule.`)}
+${src(CYC_ABBR, `the tables "Abbreviation & Term Differences between the U.S., United Kingdom (U.K.) and Canada".`)}
+${src(CYC_SYMBOLS, `the symbols for slip stitch, dc and tr.`)}
+${src(CYC_HOOKS, `the paragraph above the hook table (gauge swatches).`)}
+${src(DILLMONT, `"Crochet Work", p. 238, figs. 437-438 (the filet rule).`)}
+${src(HANDBOOK, `section "Tam-o'-Shanter in Double Crochet", rounds 1-5.`)}
+${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
       exercise: {
         instructions:
           "Answer each in a word, a short phrase or a number. Capitals are forgiven.",
@@ -3188,6 +3211,20 @@ ${src(LEINHAUSER, `the counting rule.`)}`,
             explanation: "\"Always refer to the pattern key\" (Craft Yarn Council, chart symbols).",
             sourceLessonSlug: "us-and-uk-names",
           },
+          {
+            prompt: "In lesson 16's table, which source calls today's US single crochet \"plain stitch\"?",
+            options: ["Beeton, who calls it double stitch", "Lambert, who calls it plain double crochet", "Priscilla, who calls it single crochet", "Dillmont"],
+            correctIndex: 3,
+            explanation: "Dillmont's \"plain stitch\" (p. 224, fig. 405) is today's US single crochet.",
+            sourceLessonSlug: "us-and-uk-names",
+          },
+          {
+            prompt: "What did Lambert (1847) call the slip stitch?",
+            options: ["Plain double crochet, her sc", "Shepherd's hook stitch, from Scotland", "Plain single crochet", "Single stitch, Dillmont's name"],
+            correctIndex: 2,
+            explanation: "Lambert's \"plain single crochet\" is the stitch \"where one loop only is made on the needle, and drawn through each stitch\" (p. 15).",
+            sourceLessonSlug: "us-and-uk-names",
+          },
           // ── abbreviations-and-repeats ──
           {
             prompt: "Which group does lesson 17 list as shaping abbreviations?",
@@ -3205,7 +3242,7 @@ ${src(LEINHAUSER, `the counting rule.`)}`,
           },
           {
             prompt: "Why does lesson 17 not spell out every abbreviation?",
-            options: ["The master list forbids anyone to copy it", "The abbreviations change every single year", "Modern patterns have stopped using them", "It checked the stitch names"],
+            options: ["The master list forbids anyone to copy it", "The abbreviations change every single year", "Modern patterns have stopped using them", "It checked only the stitch names"],
             correctIndex: 3,
             explanation: "The course checked the stitch names against the master list, and sends you to the list for the rest.",
             sourceLessonSlug: "abbreviations-and-repeats",
@@ -3306,6 +3343,13 @@ ${src(LEINHAUSER, `the counting rule.`)}`,
             options: ["Yarn only, no hook", "Yarn over", "Your own stitch", "Yoke opening"],
             correctIndex: 1,
             explanation: "yo is yarn over (lesson 4); the UK form is yoh, yarn over hook.",
+            sourceLessonSlug: "abbreviations-and-repeats",
+          },
+          {
+            prompt: "Which repeat signs did the 1918 Handbook name?",
+            options: ["Square brackets and colons only", "Curly braces and question marks", "Underlines beside the row numbers", "Parentheses and asterisks"],
+            correctIndex: 3,
+            explanation: "\"PARENTHESES () AND ASTERISKS OR STARS ... are used to prevent the necessity of repetition and save space.\"",
             sourceLessonSlug: "abbreviations-and-repeats",
           },
           // ── charts-and-symbols ──
@@ -3577,6 +3621,20 @@ ${src(LEINHAUSER, `the counting rule.`)}`,
             explanation: "Ten groups of 4, each becoming 5: 50.",
             sourceLessonSlug: "exercise-read-and-count",
           },
+          {
+            prompt: "In the lesson 20 exercise, which turning chain counts as a stitch in a US pattern?",
+            options: ["The ch-1 before a single crochet row", "The ch-3", "Neither; turning chains never count", "Both, each counted as one stitch"],
+            correctIndex: 1,
+            explanation: "Never count the turning ch-1 in single crochet; on taller stitches the turning chain counts as the first stitch unless the pattern says otherwise (Leinhauser).",
+            sourceLessonSlug: "exercise-read-and-count",
+          },
+          {
+            prompt: "In the lesson 20 exercise, a UK treble (tr) is which US stitch?",
+            options: ["Double crochet", "Treble crochet, the same word", "Half double crochet, a step lower", "Single crochet, two steps down"],
+            correctIndex: 0,
+            explanation: "Craft Yarn Council table: U.S. double crochet (dc) is U.K. treble (tr).",
+            sourceLessonSlug: "exercise-read-and-count",
+          },
         ],
       },
     },
@@ -3611,7 +3669,7 @@ Cut the yarn and draw the end through the last loop on the hook.
 
 **Ends at a colour change.** Changing colour leaves ends too, and the sources say how to change cleanly. Dillmont: "the last stitch before you take another colour cannot be finished with the same thread, you must pass the new thread through the last loop and draw it up with that" (p. 239). Riego (1846) adds how to carry the colour you are not using: "Lay the color not wanted along, and work over it. In changing the color, draw it through before finishing the stitch, when there are 2 loops on the needle" (pp. 58-59).
 
-**Where the record stops.** The sources above say to fasten ends off with a few stitches on the wrong side. None of the sources this course was built from describes in any detail how to run an end into the fabric with a needle, so this course does not teach a method for it.
+**Where the record stops.** The sources above say to fasten ends off with a few stitches on the wrong side, and stop there. None of the passages this course draws on describes how to run an end into the fabric with a needle, so this course does not teach a method for it.
 
 :::reveal How is crochet fastened off, in every source from 1840 to 1918? ||| Cut the yarn and draw the end through the last loop on the hook.
 
@@ -3630,7 +3688,7 @@ ${src(FRYER, `pp. 50-51 (the doll's necklace); p. 69 (the doll's scarf).`)}`,
       recallContent: [
         {
           prompt: "How do you fasten off?",
-          answer: "Cut the yarn, leaving a tail, and draw it through the last loop on the hook.",
+          answer: "Cut the yarn and draw the end through the last loop on the hook.",
         },
         {
           prompt: "How did Riego carry a colour she was not using?",
@@ -3675,7 +3733,7 @@ ${src(RIEGO_1861, `the crochet terms "'To Commence,' in Crochet" and "'To Join,'
       ],
       body: `Two finishing questions remain: shaping a piece to its final size, and washing it. This lesson is short, because the record is.
 
-**Washing starts with the material.** Dillmont's crochet chapter touches care once, when it points to washable materials for "things that require frequent washing" (Dillmont, n.d., p. 241). The choice of yarn is where care begins: a washcloth (lesson 29) will be washed often, so choose its yarn for that.
+**Washing starts with the material.** Dillmont's crochet chapter touches care when it points to washable materials for "things that require frequent washing" (Dillmont, n.d., p. 241). The choice of yarn is where care begins: a washcloth (lesson 29) will be washed often, so choose its yarn for that.
 
 **Blocking: what the record says.** The word you will meet in modern patterns is blocking. It is the one finishing step this course cannot source for crochet, and here is what the record does say.
 
@@ -3684,9 +3742,9 @@ ${src(RIEGO_1861, `the crochet terms "'To Commence,' in Crochet" and "'To Join,'
 - The 1918 *Handbook*'s only pressing instruction is for a knitted coat, not for crochet: "stretch into shape, pin to an ironing-board, cover with a damp cloth and press with a fairly hot iron until the cloth is dry."
 - Dillmont's general pages on finishing lace sit outside her crochet chapter, on pp. 565-568. This course has not checked them closely enough to teach from.
 
-So here is the honest position. The knitted-coat instruction above is a real period method, but it was written for knitting, and this course will not tell you it is right for your crochet. If a pattern you follow gives blocking instructions, follow the pattern. If it does not, the safest test is the one the gauge lesson taught: try it on your swatch first, and see what the yarn does.
+So the position is this. The knitted-coat instruction above is a real period method, but it was written for knitting, and this course will not tell you it is right for your crochet. If a pattern you follow gives blocking instructions, follow the pattern. If it does not, the safest test is the one the gauge lesson taught: try it on your swatch first, and see what the yarn does.
 
-**Why say all this?** Because a course that filled the gap with a confident paragraph would be teaching you something no source here supports. Thinness is a finding. When this course adds a source on blocking crochet, this lesson will change.
+**Why the gap is stated.** A course that filled the gap with a confident paragraph would be teaching you something no source here supports. Thinness is a finding. When this course adds a source on blocking crochet, this lesson will change.
 
 :::reveal Which source in this course gives a pressing instruction, and what was it written for? ||| The 1918 Handbook, and it was written for a knitted coat, not for crochet.
 
@@ -3803,7 +3861,7 @@ ${src(HANDBOOK, `the knitted coat's finishing paragraph.`)}`,
             prompt: "Does this course teach a method for running an end into the fabric with a needle?",
             options: ["Yes, from Dillmont's p. 223", "Yes, from the Mary Frances necklace", "Yes, from Beeton's Ill. 216", "No"],
             correctIndex: 3,
-            explanation: "No source this course was built from describes it in any detail, so it teaches no method for it.",
+            explanation: "None of the passages this course draws on describes it, so it teaches no method for it.",
             sourceLessonSlug: "fastening-off-and-ends",
           },
           {
@@ -3945,7 +4003,7 @@ ${src(HANDBOOK, `the knitted coat's finishing paragraph.`)}`,
             prompt: "What does Dillmont's crochet chapter say about care?",
             options: ["Starch every piece after washing", "Iron each piece on the right side", "Never wash crochet in water", "Choose washable materials"],
             correctIndex: 3,
-            explanation: "It touches care once, pointing to washable materials for \"things that require frequent washing\" (p. 241).",
+            explanation: "It touches care by pointing to washable materials for \"things that require frequent washing\" (p. 241).",
             sourceLessonSlug: "care-and-blocking",
           },
           {
@@ -3999,7 +4057,7 @@ ${src(HANDBOOK, `the knitted coat's finishing paragraph.`)}`,
           },
           {
             prompt: "Where are Dillmont's general lace-finishing pages?",
-            options: ["pp. 221-224, the crochet chapter", "p. 521, with tambour work", "p. 291, with counterpanes", "pp. 565-568"],
+            options: ["pp. 221-324, the crochet chapter", "p. 521, with tambour work", "p. 291, with counterpanes", "pp. 565-568"],
             correctIndex: 3,
             explanation: "They sit outside her crochet chapter, on pp. 565-568.",
             sourceLessonSlug: "care-and-blocking",
@@ -4131,13 +4189,13 @@ The KB, the national library of the Netherlands, holds the magazine and dates it
 
 **The word in English print.** Karp reports that the first use of "crochet" for the craft "yet noted in British publication" is a French-language purse instruction in an English compilation of 1837, and that "The first crochet instructions in the latter language were published by Jane Gaugain in 1840" (p. 2). Gaugain's book, printed in Edinburgh, heads its section "TAMBOUR, OR CROTCHET", and its first entry still uses the tambour name: "SINGLE TAMBOUR, OR CHAIN STITCH. This is worked by drawing one loop through the other; it is seldom used save for open purses, and sometimes for muffettees, shoes, &c." (Gaugain, 1840, p. 189).
 
-**One stitch, three names in six years.** Karp: "Gaugain describes a Plain French Tambour or Double Tambour in 1840 that Riego calls a Plain, Double or French Crochet in 1846" (p. 9). Gaugain's own words: "insert the needle in the first loop, and catch the silk from behind; pull it through the loop. You have now 2 loops on the needle, then catch the thread, and pull it through the two loops; this forms one stitch" (p. 190). That is today's US single crochet.
+**One stitch, renamed in six years.** Karp: "Gaugain describes a Plain French Tambour or Double Tambour in 1840 that Riego calls a Plain, Double or French Crochet in 1846" (p. 9). Gaugain's own words: "insert the needle in the first loop, and catch the silk from behind; pull it through the loop. You have now 2 loops on the needle, then catch the thread, and pull it through the two loops; this forms one stitch" (p. 190). That is today's US single crochet.
 
 **The hook changes too.** "The ivory hook is first mentioned by Gaugain in 1840", and the round, gently tapered hook "appears to have been added to the crocheter's toolbox at some time between 1833 and 1840". "Tapered bone hooks remained in commercial production until the Second World War" (Karp, 2018, p. 12).
 
 **Suddenly everywhere.** Karp quotes Lambert in 1842: "Crochet work, although long known and practised, did not attract particular attention until within the last four years" (p. 2). Her 1847 New York printing says crochet "has, within the last seven years, obtained the preference over all other ornamental works of a similar nature" (Lambert, 1847, p. 9).
 
-**Who claimed it.** Lambert's next sentences: "This art has attained its highest degree of perfection in England, whence it has been transplanted to France and Germany, and both these countries, although unjustifiably, have claimed the invention" (pp. 9-10). Her preface says a German translation "has excited some attention, even in Germany, a country which has laid claim to the invention of the art" (p. 4). That is the claim and the counterclaim, in one writer's view. It is not evidence of where crochet began, and Lambert offers none.
+**Who claimed it.** Lambert's next sentences: "This art has attained its highest degree of perfection in England, whence it has been transplanted to France and Germany, and both these countries, although unjustifiably, have claimed the invention" (pp. 9-10). Her preface says a German translation "has excited some attention, even in Germany, a country which has laid claim to the invention of the art" (p. 4). That is the claim and the counterclaim, in one writer's view. It is not evidence of where crochet began, and the passage offers none.
 
 **Riego's promise.** Riego's 1846 preface says that "as all the receipts have been tried, she can with confidence answer for their accuracy" (Riego de la Branchardière, 1846). She was promising that her patterns worked as printed.
 
@@ -4204,7 +4262,7 @@ ${src(IRISH_LACE, `printed p. 5, "Cork" (IIIF image n27); printed p. 6, "Cork" a
       body: `**Folklore, named as folklore.** You will meet origin stories for crochet that put its birth in Arabia, in China, in South America, or in a Swedish magazine of 1819. None of the sources this course was built from supports any of them.
 
 - The only Chinese link in the record is Saint-Aubin's 1770 remark, and it is about tambour embroidery, not crochet (lesson 24).
-- For Sweden, there is a different and better-sourced report: Karp reports from Sweden "a neckpiece in two-colour tapestry crochet with the date 1812 worked integrally into the fabric" (Karp, 2018, p. 10). That is his report of an object this course has not seen, and it is not a magazine of 1819.
+- For Sweden, the record holds a different report: Karp reports from Sweden "a neckpiece in two-colour tapestry crochet with the date 1812 worked integrally into the fabric" (Karp, 2018, p. 10). That is his report of an object this course has not seen, and it is not a magazine of 1819.
 - "Riego invented Irish crochet": the 1883 history of the industry does not mention her (lesson 27).
 
 A good rule for any origin story: ask what document it rests on. If the answer is another retelling, it is folklore until someone finds the document.
@@ -4225,7 +4283,7 @@ Read that carefully. It is what respondents reported. The people who answered ch
 ${src(KARP, `postprint p. 9 (Saint-Aubin); p. 10 (the 1812 neckpiece).`)}
 ${src(LAMBERT, `p. 10 (blind schools); p. 12 (invalids and failing sight).`)}
 ${src(BURNS, `the abstract.`)}
-${src(ITO, `the whole book (open access).`)}`,
+${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter is cited).`)}`,
     },
     {
       slug: "section-7-quiz",
@@ -4643,7 +4701,7 @@ ${src(ITO, `the whole book (open access).`)}`,
             prompt: "How does Lambert judge France's and Germany's claims to the invention?",
             options: ["Fair, since both named it", "Unjustified", "Proven by their patents", "Likely, but unrecorded"],
             correctIndex: 1,
-            explanation: "\"both these countries, although unjustifiably, have claimed the invention.\" That is her view; she offers no evidence.",
+            explanation: "\"both these countries, although unjustifiably, have claimed the invention.\" That is her view; the passage offers no evidence.",
             sourceLessonSlug: "crochet-in-print",
           },
           {
@@ -4712,7 +4770,7 @@ ${src(ITO, `the whole book (open access).`)}`,
           },
           {
             prompt: "Which two lace industries does the catalogue except from arising out of the famine years?",
-            options: ["Cork and Clones, the two crochet towns", "Thornton and Dungiven, two named places", "New Ross and Tynan, from the same list", "Carrickmacross and Limerick"],
+            options: ["Cork and Clones, the two crochet towns", "Thornton and Dungiven, two named places", "New Ross and Thomastown, from the same list", "Carrickmacross and Limerick"],
             correctIndex: 3,
             explanation: "\"With the exception of Carrickmacross and Limerick, all other existing lace-industries in Ireland arose out of the famine years of 1846-7-8.\"",
             sourceLessonSlug: "irish-crochet-and-the-famine",
@@ -4947,9 +5005,9 @@ The first is a square of single crochet in rows. It fits the Craft Yarn Council'
 7. **Stop** when the piece is as long as it is wide.
 8. **Fasten off.** Cut the yarn and pull it through the last loop (lesson 21). Fasten the ends with a few stitches on the wrong side, as Dillmont describes.
 
-**What to check.** Edges straight, not sloping: if one slopes, look at your first stitch of each row, the cause Priscilla names (lesson 19). Count the same in every row. If the count drifts, you have missed or added a stitch.
+**What to check.** Edges straight, not sloping: if one slopes, look at your first stitch of each row, the cause Priscilla names for a sloping edge in her star stitch (lesson 19). Count the same in every row. If the count drifts, you have missed or added a stitch.
 
-**Variations from the sources.** Work the whole cloth in the back loop only and you get Dillmont's ribbed stitch (lesson 9). Add a picot edge (lesson 22).
+**Variations from the sources.** Work the whole cloth in the back loop only for a rib like Dillmont's ribbed stitch (lesson 9). Add a picot edge (lesson 22).
 
 :::reveal You want a washcloth 24 single crochet wide. How many chains do you make, and why? ||| 25. The first single crochet goes into the 2nd chain from the hook, so the chain next to the hook is skipped.
 
@@ -4993,7 +5051,7 @@ ${src(LEINHAUSER, `the single crochet row example and the turning-chain rule.`)}
 
 **The other way: corners.** Dillmont's hexagon makes a six-sided coaster. Her start: "Make a foundation chain of 6 stitches, join the round; 12 plain on the 6 chain", and her corners: "3 plain on the second plain of the last row; repeat 5 times" (Dillmont, n.d., p. 240, fig. 442). Her "plain" is the US single crochet. Read her full instruction on p. 240 with figure 442 before you try it; this lesson gives only the start and the corner rule, because those are what this course has checked. Her square on the same page works the same way with four corners (fig. 441).
 
-**What to check.** A flat circle should lie flat. If yours does not, recount: a missed increase or an extra one changes the count, and the count is what keeps the work flat in every source here.
+**What to check.** A flat circle should lie flat. If yours does not, recount: a missed increase or an extra one changes the count, and regular increases are what keep the work flat in every source here that makes a flat piece.
 
 :::reveal In the Tam-based coaster, how many stitches should round 6 have? ||| 42: seven more than round 5's 35.
 
@@ -5194,11 +5252,11 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
             prompt: "One edge of your washcloth slopes. What does lesson 29 say to look at?",
             options: ["The yarn's weight category", "Your first stitch", "Whether the hook is too large", "The colour of the yarn"],
             correctIndex: 1,
-            explanation: "The first stitch of each row, the cause Priscilla names (lesson 19).",
+            explanation: "The first stitch of each row: the cause Priscilla names for a sloping edge in her star stitch (lesson 19).",
             sourceLessonSlug: "project-washcloth",
           },
           {
-            prompt: "Work the whole cloth in the back loop only and you get which Dillmont stitch?",
+            prompt: "Working the whole cloth in the back loop only gives a rib like which Dillmont stitch?",
             options: ["Rose stitch, her fig. 406", "Plain stitch, her fig. 405", "Ribbed stitch", "Cluster stitch, her fig. 426"],
             correctIndex: 2,
             explanation: "Dillmont's ribbed stitch, worked to and fro through the back part only (lesson 9).",
@@ -5307,14 +5365,21 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
             prompt: "If your coaster does not lie flat, what does lesson 30 say to do?",
             options: ["Press it with a hot iron", "Recount", "Change to a larger hook", "Add a round of picots"],
             correctIndex: 1,
-            explanation: "A missed or extra increase changes the count, and the count keeps the work flat.",
+            explanation: "A missed or extra increase changes the count, and regular increases are what keep the work flat.",
             sourceLessonSlug: "project-coaster",
           },
           {
             prompt: "What keeps the work flat in every source in this course?",
-            options: ["A damp cloth and pins", "A larger hook each round", "The count", "A frame like tambour"],
+            options: ["A damp cloth and pins", "A larger hook each round", "Regular increases", "A frame like tambour"],
             correctIndex: 2,
-            explanation: "The count of increases, round by round.",
+            explanation: "Beeton: \"It is necessary to increase regularly in all the rounds to keep the work flat.\"",
+            sourceLessonSlug: "project-coaster",
+          },
+          {
+            prompt: "In round 3 of the coaster, how many plain stitches sit between increases?",
+            options: ["1", "2, as in round 4", "3, as in round 5", "0, as in round 2"],
+            correctIndex: 0,
+            explanation: "\"A double in double, 2 in next; repeat\": one plain stitch, then an increase, seven times over: 21.",
             sourceLessonSlug: "project-coaster",
           },
           // ── project-hat ──
