@@ -153,9 +153,9 @@
 
 ### Trade Skills
 
-- [`crochet`](./crochet-course.ts) crochet (course data not in git: generated, or kept outside the repository) · FIBRE-01 (from-fibre-to-fabric)
+- [`crochet`](./crochet-course.ts) Crocheting · FIBRE-01 (from-fibre-to-fabric)
 - [`knot-tying`](./knots-course.ts) Knot-Tying & Rope Work
-- [`making-string`](./making-string-course.ts) making-string (course data not in git: generated, or kept outside the repository) · FIBRE-00 (from-fibre-to-fabric)
+- [`making-string`](./making-string-course.ts) Making String · FIBRE-00 (from-fibre-to-fabric)
 
 ### Farm & Garden
 
