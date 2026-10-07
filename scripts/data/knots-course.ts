@@ -24,7 +24,7 @@ const VERRILL = "Verrill, A. H. (1917). *Knots, splices and rope work: A practic
 export const KNOTS_COURSE: AuthoredCourse = {
   title: "Knot-Tying & Rope Work",
   description:
-    "A practical, hands-on trade course in knots, hitches, bends, whippings, and splices, the foundational rope skills behind rigging, sailing, climbing, and survival. Description-first (every knot is taught in words: what it is, how to tie it step by step, when to use it and when NOT to, and the common mistakes). Built on the public-domain classic by A. Hyatt Verrill (1917). This course pairs with the Sports/Media Broadcasting course: rope and rigging skill is core to broadcast \"utility technician\" roles (cable and rigging) and to the trades, sailing, climbing, and survival.",
+    "A practical, hands-on trade course in knots, hitches, bends, whippings, and splices, the foundational rope skills behind rigging, sailing, climbing, and survival. Description-first (every knot is taught in words: what it is, how to tie it step by step, when to use it and when NOT to, and the common mistakes). Built on the public-domain classic by A. Hyatt Verrill (1917). This course pairs with the Sports/Media Broadcasting course: rope and rigging skill is core to broadcast \"utility technician\" roles (cable and rigging) and to the trades, sailing, climbing, and survival. It also connects to the From Fibre to Fabric series: Making String teaches how cord is made, and Crocheting works a strand into fabric.",
   lessons: [
     // ── Intro ──────────────────────────────────────────────────────────────
     {
@@ -44,6 +44,8 @@ export const KNOTS_COURSE: AuthoredCourse = {
 **A safety word up front.** Several sections touch load-bearing, rescue, and rigging uses. Those lessons are **educational**, they are **not** a substitute for certified rigging, climbing, or rescue training. Where a life or a heavy load depends on the rope, use rated gear and get trained and supervised. This is flagged again at each such point.
 
 **How to practice.** Get a few feet of soft, flexible rope (about 3/8 inch / 10 mm). Tie each knot as you read, slowly, until your hands know it without the words.
+
+**Where this course connects.** This course stands on its own, and it has two neighbours in the *From Fibre to Fabric* series on Learn.WitUS. The companion _Making String_ course teaches how cord is made by hand from fibre, which lesson 1 here only defines. The companion _Crocheting_ course works a single strand into fabric with a hook. Take them in any order.
 
 ## Sources
 - ${VERRILL}
@@ -157,6 +159,8 @@ export const KNOTS_COURSE: AuthoredCourse = {
 **When it matters.** Pick the fiber for the job: nylon to absorb a shock, polyester for a low-stretch control line, natural fiber where grip and tradition matter (and it can be splice-worked).
 
 **Common mistakes.** Using a floating, UV-weak polypropylene rope for a load-bearing task; trusting old, sun-faded, or mildewed natural rope; assuming a knot that holds in grippy natural fiber will hold in slick synthetic (often it won't).
+
+**Making it yourself.** This lesson names what rope is made of. The companion _Making String_ course on Learn.WitUS teaches the making: twisting fibre into yarn by hand and plying yarns into cord. Hand-made cord is for practice and craft, never for holding a person.
 
 ## Sources
 - ${VERRILL}`,
