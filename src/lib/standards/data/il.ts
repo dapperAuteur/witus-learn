@@ -78,8 +78,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Illinois was an NGSS lead state. ISBE adopted the Next Generation Science Standards as the Illinois Learning Standards in science in January 2014 (effective February 27, 2014, full implementation 2016-17), using the NGSS performance-expectation codes verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "In January 2014 the Illinois State Board of Education adopted the Next Generation Science Standards as the Illinois Learning Standards in science, effective statewide February 27, 2014 (ISBE fact sheet, March 2016). Illinois adopted the NGSS as published, so as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; we did not compare a separate Illinois printing.",
     },
   ],
   frameworks: [
@@ -468,8 +469,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Illinois Common Core (Illinois Learning Standards) mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Illinois adopted the NGSS verbatim (January 2014) as its science standards, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Illinois adopted the NGSS verbatim (January 2014) as its science standards, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Financial Literacy — one rejection, two editions of codes, and the whole history in order.",

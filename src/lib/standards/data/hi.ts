@@ -22,7 +22,7 @@
 //   · Science — INHERITED (verbatim NGSS). The Hawaii Board of Education adopted the Next Generation
 //     Science Standards on February 16, 2016, phased in from 2016-17 (full by 2019-20). Hawaii
 //     adopted the NGSS performance expectations using the NGSS codes; ../shared/ngss is adopted
-//     verbatim, no aliases, one partial claim (HS-ESS3-1) — see the note on it.
+//     verbatim, no aliases; checked code by code 2026-10-06 (see the adoption note).
 //   · Social studies — BESPOKE. The Hawaiʻi Core Standards in Social Studies (HCSSS) are Hawaii's
 //     own, built on the C3 Framework (NCSS, 2013) and written by teams of Hawaiʻi educators who met
 //     2016-2018. The high-school "Participation in a Democracy" course is the civics anchor — but,
@@ -51,8 +51,9 @@ export const JURISDICTION: JurisdictionFile = {
   adoptions: [
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "The Hawaii Board of Education adopted the Next Generation Science Standards on February 16, 2016, phased in from the 2016-17 school year (full implementation by 2019-20). Hawaii adopted the NGSS performance expectations using the NGSS codes, so ../shared/ngss is adopted verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "The Hawaii State Department of Education lists the Next Generation Science Standards as Hawaii's science standards and links to nextgenscience.org for them; the Board of Education took up the motion ‘to adopt the Next Generation Science Standards’ at its February 16, 2016 meeting. Hawaii uses the NGSS as published, so as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate Hawaii printing to compare.",
     },
   ],
   frameworks: [
@@ -205,8 +206,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Hawaii Common Core mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Hawaii adopted the NGSS (February 16, 2016), so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Hawaii adopted the NGSS (February 16, 2016), so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "The federal-heavy Participation in a Democracy standards we checked and rejected.",

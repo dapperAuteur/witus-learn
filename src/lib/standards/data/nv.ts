@@ -52,8 +52,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Nevada adopted the Next Generation Science Standards in February 2014 as the Nevada Academic Content Standards for Science (NVACSS), adopted by the Nevada State Board of Education. HS-ESS3-1, the one performance expectation we cite, is a standard NGSS PE, so the shared NGSS file is adopted verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "Nevada adopted the Nevada Academic Content Standards for Science (NVACSS), based on the NGSS, and the Department of Education publishes them as the NVACSS DCI Arrangements (February 2014). On 2026-10-06 we compared that document: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word.",
     },
   ],
   frameworks: [
@@ -402,8 +403,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Nevada Academic Content Standard for mathematics.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Nevada adopted the NGSS in February 2014 as the Nevada Academic Content Standards for Science, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Nevada adopted the NGSS in February 2014 as the Nevada Academic Content Standards for Science, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Nevada's own Nevada-history and civics detail that no single code captures.",

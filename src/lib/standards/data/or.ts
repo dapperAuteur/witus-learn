@@ -60,11 +60,17 @@ export const JURISDICTION: JurisdictionFile = {
   adoptions: [
     {
       framework: NGSS,
-      // Oregon prints the NGSS performance expectations with dot-delimited codes (HS.ESS3.1); the
-      // text is verbatim NGSS, so the one shared code is aliased to Oregon's printed form.
-      aliases: { "HS-ESS3-1": "HS.ESS3.1" },
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
+      aliases: {
+        "HS-ESS1-1": "HS.ESS1.1",
+        "HS-ESS1-2": "HS.ESS1.2",
+        "HS-ESS1-3": "HS.ESS1.3",
+        "HS-ESS2-2": "HS.ESS2.2",
+        "HS-ESS2-5": "HS.ESS2.5",
+        "HS-ESS3-1": "HS.ESS3.1",
+      },
       adoption:
-        "Oregon was an NGSS lead state and the State Board of Education adopted the Next Generation Science Standards as Oregon's K-12 Science Standards (2014, re-adopted 2022). Oregon's 2022 K-12 Science Standards print the performance expectations with dot-delimited codes (HS.ESS3.1) but the text is word-for-word the NGSS, so the shared NGSS code is aliased to Oregon's printed form. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "Oregon's State Board of Education adopted the NGSS as Oregon's K-12 Science Standards in 2014 and again on June 16, 2022. Oregon prints codes with dots and places middle school expectations in a grade, and we show Oregon's codes. On 2026-10-06 we compared the 2022 standards (version 2022.1): HS.ESS1.1, HS.ESS1.2, HS.ESS1.3, HS.ESS2.5 and HS.ESS3.1 carry the NGSS text word for word. Oregon's HS.ESS2.2 ends ‘other Earth's systems’ where the NGSS reads ‘other Earth systems’, a one-word difference we disclose rather than exclude.",
     },
   ],
   frameworks: [
@@ -249,8 +255,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Oregon (Common Core) mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Oregon was an NGSS lead state and adopted the NGSS as its K-12 Science Standards (2014, re-adopted 2022), so our one honest science claim — HS.ESS3.1 (the NGSS HS-ESS3-1, aliased to Oregon's dot-delimited code), partial — comes through the shared NGSS mapping with the limit stated on the entry (verified against Oregon's 2022 K-12 Science Standards). There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Oregon was an NGSS lead state and adopted the NGSS as its K-12 Science Standards (2014, re-adopted 2022), so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Oregon's own state structure is taught more fully than HS.C.PI.3 / HS.C.IR.8 capture.",

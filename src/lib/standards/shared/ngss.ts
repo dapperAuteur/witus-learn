@@ -2,8 +2,11 @@
 // data/<state>.ts via `adoptions` (verbatim or with local code aliases); the mapping is never
 // redone per state. Indiana is NOT an NGSS state — it publishes its own science standards.
 //
-// Fetched 2026-07-13 from nextgenscience.org (the one HS-ESS3 performance expectation this
-// catalog can honestly touch — see the note on it before relying on it).
+// Every code and text below was re-checked against nextgenscience.org on 2026-10-06. Adopting this
+// file applies EVERY code to a state, so a state that rewords or dropped a code EXCLUDES it in its own
+// data file (SharedAdoption.exclude), with the reason published on its page. The per-state check that
+// found AK, NY, NJ and WY carrying different text: plans/future-courses/farm-and-garden/
+// 2026-10-06-ngss-state-check/ (local).
 
 import type { SharedFramework } from "../types";
 
@@ -14,7 +17,7 @@ export const NGSS: SharedFramework = {
   publisher: "NGSS Lead States / nextgenscience.org",
   version: "HS-ESS1 Earth's Place in the Universe; HS-ESS2 Earth's Systems; HS-ESS3 Earth and Human Activity",
   sourceUrl: "https://www.nextgenscience.org/dci-arrangement/hs-ess1-earths-place-universe",
-  fetchedOn: "2026-08-10",
+  fetchedOn: "2026-10-06",
   standards: [
     // ── HS-ESS2 Earth's Systems ───────────────────────────────────────────────────────────────
     // Fetched verbatim 2026-08-10 from nextgenscience.org/dci-arrangement/hs-ess2-earths-systems.

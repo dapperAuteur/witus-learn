@@ -644,7 +644,7 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "Science — almost nothing.",
-      body: "There is no laboratory work, no investigation and no scientific modelling here. Indiana is not an NGSS state; we checked and claim no Indiana science standard. (Our one partial NGSS claim is for Washington, D.C., where NGSS applies.)",
+      body: "There is no laboratory work, no investigation and no scientific modelling here. Indiana is not an NGSS state; we checked and claim no Indiana science standard. (Our partial NGSS claims are shown only for the jurisdictions that adopted the NGSS.)",
     },
     {
       heading: "Most of the U.S. Government standards we checked.",

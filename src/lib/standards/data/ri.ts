@@ -60,8 +60,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Rhode Island was the FIRST state to adopt the Next Generation Science Standards (spring 2013) and served as an NGSS Lead State; in 2024 the Rhode Island Board of Education reaffirmed the NGSS as the state's official science and technology standards (under RIGL § 16-22-31). HS-ESS3-1, the one performance expectation we cite, is a standard NGSS PE, so the shared NGSS file is adopted verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "Rhode Island adopted the Next Generation Science Standards in 2013, and in 2024, after a review under RIGL 16-22-31, the Rhode Island Board of Education reaffirmed the NGSS as the state's official science and technology standards. Rhode Island uses the NGSS as published, so as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate Rhode Island printing to compare.",
     },
   ],
   frameworks: [
@@ -243,8 +244,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Rhode Island Common Core mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Rhode Island was the first state to adopt the NGSS (spring 2013) and reaffirmed it in 2024, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Rhode Island was the first state to adopt the NGSS (spring 2013) and reaffirmed it in 2024, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "The Narragansett and other tribal governments (SSHS.CVC.4.5).",

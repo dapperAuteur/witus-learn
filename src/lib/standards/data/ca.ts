@@ -62,8 +62,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "On September 4, 2013, the State Board of Education adopted the Next Generation Science Standards for California Public Schools, Kindergarten through Grade Twelve (CA NGSS), as required by Education Code 60605.85. California's only edits to the NGSS are to seven clarification statements — we fetched CDE's edits document and HS-ESS3-1 is not among them, so the one performance expectation we cite is verbatim in California. This is not a science course; see the note on the entry itself.",
+        "On September 4, 2013 the California State Board of Education adopted the Next Generation Science Standards for California Public Schools, Kindergarten through Grade Twelve (CA NGSS), as required by Education Code 60605.85. California's edits change only seven clarification statements, none for a code we claim. On 2026-10-06 we compared the CDE grade 5, grade 7 and high school CA NGSS documents (archived copies, because cde.ca.gov refuses automated reading): HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. California's HS-ESS2-2 ends ‘other Earth's systems’ where the NGSS reads ‘other Earth systems’, a one-word difference we disclose rather than exclude.",
     },
   ],
   frameworks: [
@@ -581,8 +582,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "One course, How to Read a Number, teaches the reading of published quantities: provenance, denominators, what a summary discarded, what a margin of error covers, correlation against causation, and the arithmetic of representation. It grades no arithmetic. Every assessment is scenario multiple-choice or a click-to-reveal self-check, and the learner is never asked to produce a number. So we claim the standards about interpreting and evaluating data, and we do NOT claim S-ID.1, S-ID.4, S-ID.6, S-ID.8, S-IC.2, S-IC.4 or S-IC.5, every one of which requires the student to construct a plot, fit a model, compute a correlation coefficient, run a simulation, or develop a margin of error. A course that never asks for those cannot claim them. If your mathematics requirement is assessed on students producing statistical work, this contributes to it and does not discharge it. We also claim nothing in algebra, functions, geometry or probability, because we teach none of it.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "California adopted the NGSS verbatim (September 4, 2013), so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. We verified California's edits document: it touches seven clarification statements, none of them HS-ESS3-1. There is no laboratory work, no investigation, and no modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "California adopted the NGSS verbatim (September 4, 2013), so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "The California Civics flagship's structure lessons have mostly no California code to cite.",

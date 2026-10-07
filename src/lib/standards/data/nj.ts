@@ -52,8 +52,13 @@ export const JURISDICTION: JurisdictionFile = {
   adoptions: [
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
+      exclude: {
+        "HS-ESS3-1":
+          "New Jersey's Student Learning Standards for Science (2020, and as readopted June 3, 2026) reword HS-ESS3-1 to read ‘and climate change have influenced human activity’ where the NGSS reads ‘and changes in climate have influenced human activity’. Compared 2026-10-06, so we make no New Jersey claim for HS-ESS3-1.",
+      },
       adoption:
-        "New Jersey adopted the Next Generation Science Standards in July 2014 as the New Jersey Student Learning Standards for Science (NJSLS-Science). New Jersey was an NGSS lead state and uses the NGSS codes verbatim (including HS-ESS3-1). This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "The New Jersey State Board of Education readopted the New Jersey Student Learning Standards for Science on June 3, 2026, revising four of the 208 performance expectations. On 2026-10-06 we compared the 2026 standards: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2 and HS-ESS2-5 carry the NGSS text word for word. HS-ESS3-1 is not claimed here; the reasons are listed under What we don't claim.",
     },
   ],
   frameworks: [
@@ -318,8 +323,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no New Jersey mathematics standard.",
     },
     {
-      heading: "Science — almost nothing.",
-      body: "There is no laboratory work, no investigation and no scientific modelling here. New Jersey adopted the NGSS verbatim (as NJSLS-Science, 2014), and we claim a single NGSS performance expectation, partially, explaining exactly why on the entry itself. It is not a science course and we will not sell it as one.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "This state adopts the NGSS (see the adoption note above), so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "The flagship's distinctive New Jersey structure has mostly no code to cite.",

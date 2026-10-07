@@ -77,8 +77,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "On June 11, 2013 the Kansas State Board of Education adopted the Next Generation Science Standards as the Kansas College and Career Ready Standards for Science, using the NGSS performance-expectation codes verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "Kansas initially adopted the Next Generation Science Standards in 2013, and KSDE's science page names the Kansas Science Standards as the NGSS, last reviewed in 2025 and next due for review in 2032. On 2026-10-06 we compared the KSDE-hosted Disciplinary Core Ideas arrangement: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word.",
     },
   ],
   frameworks: [
@@ -195,8 +196,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Kansas College and Career Ready (KCCRS / Common Core) mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Kansas adopted the NGSS verbatim as the Kansas College and Career Ready Standards for Science (June 11, 2013), so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Kansas adopted the NGSS verbatim as the Kansas College and Career Ready Standards for Science (June 11, 2013), so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "A 2020 revision exists — confirm current codes.",

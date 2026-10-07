@@ -53,8 +53,13 @@ export const JURISDICTION: JurisdictionFile = {
   adoptions: [
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
+      exclude: {
+        "HS-ESS2-2":
+          "New York's NYSSLS reword HS-ESS2-2 to end ‘cause changes to Earth's systems’ where the NGSS reads ‘cause changes to other Earth systems’. Compared 2026-10-06, so we make no New York claim for HS-ESS2-2.",
+      },
       adoption:
-        "New York adopted the Next Generation Science Standards as the New York State P-12 Science Learning Standards (NYSSLS), adopted by the Board of Regents in December 2016. We fetched NYSED's High School science document: the one performance expectation we cite, HS-ESS3-1 (which NYSSLS titles “Global Impacts on Human Activity”), carries the NGSS text verbatim, so it comes through the shared NGSS mapping with the limit stated on the entry. This is not a science course.",
+        "New York's P-12 Science Learning Standards (NYSSLS) are built on the NGSS, with some performance expectations rewritten by NYSED. On 2026-10-06 we compared NYSED's P-12 standards document: HS-ESS1-2, HS-ESS1-3, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. HS-ESS1-1 differs only in capitalizing Sun. HS-ESS2-2 is not claimed here; the reasons are listed under What we don't claim.",
     },
   ],
   frameworks: [
@@ -534,8 +539,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no New York Next Generation mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "New York adopted the NGSS verbatim as the P-12 Science Learning Standards (NYSSLS, December 2016), so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. We verified the performance-expectation text against NYSED's own High School science document; it is identical to the NGSS. There is no laboratory work, no investigation, and no modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "New York adopted the NGSS verbatim as the P-12 Science Learning Standards (NYSSLS, December 2016), so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "The Opium Wars and the Haitian Revolution — New York's framework never names them.",

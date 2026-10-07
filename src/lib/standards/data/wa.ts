@@ -50,8 +50,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "On October 1, 2013, Washington adopted the Next Generation Science Standards as the Washington State 2013 K-12 Science Learning Standards (WSSLS), the eighth state in the country to do so. The WSSLS are the NGSS, used with the NGSS codes verbatim (including HS-ESS3-1). This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "Washington adopted the Next Generation Science Standards in 2013 as the Washington State K-12 Science Learning Standards; OSPI states that the WSSLS are the NGSS and publishes the NGSS DCI arrangement as the standards. On 2026-10-06 we compared that OSPI document: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. OSPI's review timeline puts revised science standards in late 2026; recheck after they are adopted.",
     },
   ],
   frameworks: [
@@ -272,8 +273,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Common Core mathematics standard Washington adopted.",
     },
     {
-      heading: "Science — almost nothing.",
-      body: "There is no laboratory work, no investigation and no scientific modelling here. Washington adopted the NGSS verbatim (as the WSSLS), and we claim a single NGSS performance expectation, partially, explaining exactly why on the entry itself. It is not a science course and we will not sell it as one.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "This state adopts the NGSS (see the adoption note above), so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Tribal governments and the Since Time Immemorial curriculum.",

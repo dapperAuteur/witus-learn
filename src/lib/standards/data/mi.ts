@@ -63,8 +63,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Michigan was an NGSS lead state. The State Board of Education adopted the Michigan Science Standards on November 10, 2015 — the NGSS performance expectations, using the NGSS codes verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "The Michigan K-12 Science Standards (November 2015) replace Michigan's 2006 standards and use the NGSS performance expectations and codes. On 2026-10-06 we compared MDE's published document: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word.",
     },
   ],
   frameworks: [
@@ -223,8 +224,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Michigan Common Core (Michigan K-12) mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Michigan adopted the NGSS verbatim as the Michigan Science Standards (November 10, 2015), so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Michigan adopted the NGSS verbatim as the Michigan Science Standards (November 10, 2015), so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Michigan's World History, U.S. History, Economics, and Geography strands — deferred, not denied.",

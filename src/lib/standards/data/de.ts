@@ -60,8 +60,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Delaware was one of the 26 NGSS lead-state partners and became the 7th state to adopt the Next Generation Science Standards, by a unanimous State Board of Education vote on September 19, 2013 — the NGSS performance expectations, using the NGSS codes verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "14 DE Admin. Code 501, section 1.1.1.2, adopts the Next Generation Science Standards as the Delaware Content Standards in science, effective with the 2013-2014 school year. Because the regulation adopts the NGSS themselves, as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; we did not compare a separate Delaware printing.",
     },
   ],
   frameworks: [
@@ -190,8 +191,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Delaware (Common Core) mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Delaware was an NGSS lead state and the 7th state to adopt the NGSS verbatim (unanimous State Board vote, September 19, 2013), so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Delaware was an NGSS lead state and the 7th state to adopt the NGSS verbatim (unanimous State Board vote, September 19, 2013), so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Two Civics 9-12 expectations we checked and rejected.",

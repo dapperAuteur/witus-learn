@@ -47,8 +47,9 @@ export const JURISDICTION: JurisdictionFile = {
   adoptions: [
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Kentucky was a lead state for the Next Generation Science Standards and the Kentucky Board of Education adopted the NGSS as the Kentucky Academic Standards for Science, using the NGSS performance-expectation codes verbatim. We verified HS-ESS3-1 against Kentucky's own Earth Space Science course standards (KDE course 304611) and it is printed with the bare NGSS code and identical text. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "704 KAR 8:120 (effective July 5, 2023) incorporates by reference the Kentucky Academic Standards for Science, December 2022, which are built on the NGSS. On 2026-10-06 we compared that document: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word.",
     },
   ],
   frameworks: [
@@ -228,8 +229,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "Kentucky replaced its earlier Common Core adoption with its own Kentucky Academic Standards for Reading and Writing (2019), a post-Common-Core revision under Kentucky's own organization. The shared Common Core ELA mapping this catalog uses in Common Core states does NOT apply in Kentucky. The catalog's ELA-literacy strengths — evaluating an author's point of view and evidence, analyzing rhetoric, and sustained research with citation — would map to Kentucky's own reading and writing standards, but transcribing and verifying those verbatim is deferred this pass (verbatim-or-nothing) and published here rather than claimed unverified.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Kentucky was an NGSS lead state and adopted the NGSS verbatim as the Kentucky Academic Standards for Science, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry (verified against Kentucky's own Earth Space Science course standards). There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Kentucky was an NGSS lead state and adopted the NGSS verbatim as the Kentucky Academic Standards for Science, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Kentucky's own state structure is taught more fully than HS.C.KGO.1-3 capture.",

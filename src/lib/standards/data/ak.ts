@@ -57,8 +57,17 @@ export const JURISDICTION: JurisdictionFile = {
   adoptions: [
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
+      exclude: {
+        "HS-ESS1-1":
+          "Alaska's 2019 standards reword HS-ESS1-1 (“...illustrate that the life span of the Sun is a function of nuclear fusion in its core, and that stars, through nuclear fusion over their life cycle, produce elements and release energy...”), so the NGSS wording shown for other states is not this state's. Compared 2026-10-06.",
+        "HS-ESS1-3":
+          "Alaska's 2019 standards have no separate HS-ESS1-3; its content is folded into Alaska's reworded HS-ESS1-1. Compared 2026-10-06.",
+        "HS-ESS2-2":
+          "Alaska's 2019 standards reword HS-ESS2-2 (“Analyze geoscience data to evaluate claims that one change to Earth's surface creates feedbacks...”), so the NGSS wording shown for other states is not this state's. Compared 2026-10-06.",
+      },
       adoption:
-        "Alaska is a notable non-adopter of the Common Core, but for science it adopted the K-12 Science Standards for Alaska (2019), built on the Next Generation Science Standards. The high-school “Human Sustainability” performance expectation HS-ESS3-1 is reproduced verbatim in Alaska's document, using the NGSS code and the NGSS wording (compared byte-for-byte before adoption), so the shared NGSS file is adopted verbatim. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "The Alaska State Board of Education and Early Development adopted the K-12 Science Standards for Alaska on June 7, 2019; they are shaped around the NGSS but reword some performance expectations. On 2026-10-06 we compared Alaska's published standards document: HS-ESS1-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. HS-ESS1-1, HS-ESS1-3 and HS-ESS2-2 are not claimed here; the reasons are listed under What we don't claim.",
     },
   ],
   frameworks: [
@@ -201,8 +210,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Alaska (2012) mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Alaska's 2019 K-12 Science Standards reproduce the NGSS HS-ESS3-1 performance expectation verbatim, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Alaska's 2019 K-12 Science Standards reproduce the NGSS HS-ESS3-1 performance expectation verbatim, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Alaska Native communities, ANCSA, and tribal governments (Government and Citizenship, Standard C).",

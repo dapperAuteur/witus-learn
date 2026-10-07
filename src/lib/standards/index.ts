@@ -112,6 +112,14 @@ function expandAdoption(
       throw new Error(`standards: ${state} aliases unknown ${a.framework.id} code "${canonical}"`);
     }
   }
+  for (const canonical of Object.keys(a.exclude ?? {})) {
+    if (!a.framework.standards.some((s) => s.code === canonical)) {
+      throw new Error(`standards: ${state} excludes unknown ${a.framework.id} code "${canonical}"`);
+    }
+    if (a.aliases && canonical in a.aliases) {
+      throw new Error(`standards: ${state} both aliases and excludes ${a.framework.id} code "${canonical}"`);
+    }
+  }
   return {
     framework: {
       id,
@@ -125,9 +133,9 @@ function expandAdoption(
       fetchedOn: a.framework.fetchedOn,
       subject: a.framework.subject,
     },
-    alignments: a.framework.standards.map((s) =>
-      resolveStandard(id, { ...s, code: a.aliases?.[s.code] ?? s.code }),
-    ),
+    alignments: a.framework.standards
+      .filter((s) => !(a.exclude && s.code in a.exclude))
+      .map((s) => resolveStandard(id, { ...s, code: a.aliases?.[s.code] ?? s.code })),
   };
 }
 
@@ -171,8 +179,22 @@ export function mappedStates(): StateCode[] {
   return JURISDICTION_FILES.map((j) => j.state);
 }
 
+/**
+ * One state's file, with every shared-framework exclusion appended to its "What we don't claim"
+ * list, so a code we stopped claiming for a state is published as loudly as the claims (THE RULE,
+ * point 5). The exclusions come from the same `exclude` map that removes the codes, so the two can
+ * never disagree.
+ */
 export function jurisdictionData(state: StateCode): JurisdictionFile | undefined {
-  return JURISDICTION_FILES.find((j) => j.state === state);
+  const j = JURISDICTION_FILES.find((f) => f.state === state);
+  if (!j) return undefined;
+  const excluded = (j.adoptions ?? []).flatMap((a) =>
+    Object.entries(a.exclude ?? {}).map(([code, why]) => ({
+      heading: `${a.framework.name}: ${code}`,
+      body: why,
+    })),
+  );
+  return excluded.length ? { ...j, notClaimed: [...j.notClaimed, ...excluded] } : j;
 }
 
 /**

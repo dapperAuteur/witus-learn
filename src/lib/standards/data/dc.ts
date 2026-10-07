@@ -26,8 +26,9 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "OSSE states that “In Dec. 2013, the Next Generation Science Standards were adopted by DC State Board of Education as the new K-12 Science Standards for the District of Columbia Schools.” This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "OSSE announced on December 20, 2013 that the DC State Board of Education had voted on December 18 to adopt the Next Generation Science Standards as the District's K-12 science standards. The District adopted the NGSS as published, so as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate the District printing to compare.",
     },
   ],
   frameworks: [
@@ -107,8 +108,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This curriculum does no mathematics instruction, so it meets no Common Core mathematics standard.",
     },
     {
-      heading: "Science — almost nothing.",
-      body: "There is no laboratory work, no investigation and no scientific modelling here. We claim a single NGSS performance expectation, partially, and we explain exactly why on the entry itself. It is not a science course and we will not sell it as one.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "This state adopts the NGSS (see the adoption note above), so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Prohibition and mass incarceration.",
