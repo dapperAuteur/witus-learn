@@ -29,14 +29,14 @@ export const NGSS: SharedFramework = {
       text: "Develop a model to describe the movement of matter among plants, animals, decomposers, and the environment.",
       claimIds: ["catalog.compost-matter-cycling"],
       coverage: "partial",
-      note: "The capstone (lesson 22) has the learner develop exactly this model for their own ground: boxes for plants, animals, decomposers and soil, arrows labelled with the matter each carries, and the leaks out of the system. PARTIAL because the clarification statement's emphasis, that plants change matter that is not food (air, water) into food, is not taught: the course follows decomposed material back into soil and crops, not photosynthesis.",
+      note: "The capstone (lesson 22, an assignment the learner submits and an instructor grades) has the learner develop exactly this model for their own ground: boxes for plants, animals, decomposers and soil, arrows labelled with the matter each carries, and the leaks out of the system. PARTIAL because the clarification statement's emphasis, that plants change matter that is not food (air, water) into food, is not taught: the course follows decomposed material back into soil and crops, not photosynthesis.",
     },
     {
       code: "MS-LS2-3",
       text: "Develop a model to describe the cycling of matter and flow of energy among living and nonliving parts of an ecosystem.",
       claimIds: ["catalog.compost-matter-cycling"],
       coverage: "partial",
-      note: "Matter cycling among animals, microbes, soil and crops is taught directly, and the capstone has the learner define the boundary of their own system, as the clarification statement asks. PARTIAL because energy flow appears only as the heat a compost pile gives off; there is no treatment of energy moving through an ecosystem.",
+      note: "Matter cycling among animals, microbes, soil and crops is taught directly, and the capstone (an instructor-graded assignment) has the learner build the model and define the boundary of their own system, as the clarification statement asks. PARTIAL because energy flow appears only as the heat a compost pile gives off; there is no treatment of energy moving through an ecosystem.",
     },
     {
       code: "HS-LS2-3",

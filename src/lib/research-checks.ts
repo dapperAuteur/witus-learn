@@ -7081,6 +7081,120 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The academy's biographical memoirs",
     ],
   },
+  {
+    key: "manure-355-iac-8-current-text",
+    course: "manure-and-compost",
+    lesson: "too-much-indiana-rules-and-the-river",
+    quote:
+      "These figures come from the Office of Indiana State Chemist's copy of the rule as readopted in 2018; check the current rule before relying on them",
+    title:
+      "355 IAC 8 setbacks and frozen-ground limits: is the 2018 OISC copy current?",
+    severity: "medium",
+    claim:
+      "Lesson 16 teaches the 355 IAC 8 setbacks (500 ft from public water supply wells, 50 ft from surface water, sinkholes, wells and drainage inlets, 10 ft from property lines and roads) and the frozen-ground limits from the State Chemist's copy of the rule as readopted in 2018.",
+    question:
+      "Does the current official text of 355 IAC 8 (Indiana Administrative Code, as in force today) still carry the 8-1-2(b) 10 cubic yard / 4,000 gallon exemption, the 8-3-2 Table 1 setbacks and the 8-3-4 frozen-ground limits exactly as the 2018 OISC copy prints them?",
+    stakes:
+      "A gardener or small farmer could plan a pile or a spreading setback from figures that have since changed.",
+    needs: [
+      "The current official 355 IAC 8 text (or the IAC readoption notice) with section numbers",
+      "Any change since 2018 to 8-1-2(b), 8-3-2 Table 1 or 8-3-4",
+    ],
+    where: [
+      "iar.iga.in.gov (Indiana Register; JavaScript site, open it in a browser)",
+      "https://www.oisc.purdue.edu/fertilizer/ (OISC rule copies)",
+    ],
+  },
+  {
+    key: "manure-purdue-county-educators-2026",
+    course: "manure-and-compost",
+    lesson: "find-your-extension-office",
+    quote:
+      "This course could not confirm whether every county keeps its own agriculture or horticulture educator after the change.",
+    title:
+      "Purdue Extension's 12 regions: does every county keep an ag or horticulture educator?",
+    severity: "low",
+    claim:
+      "Lesson 17 says Purdue Extension announced on 18 June 2026 a move to 12 regions with a county-level 4-H presence, and that the course could not confirm whether every county keeps its own agriculture or horticulture educator, so the exercise accepts a regional educator.",
+    question:
+      "After Purdue Extension's 2026 restructuring, does each Indiana county office still have its own agriculture and natural resources or horticulture educator, or are those roles regional?",
+    stakes:
+      "Low. The exercise already accepts either answer, but the lesson could tell learners which to expect.",
+    needs: [
+      "A Purdue Extension page or announcement stating how ANR and horticulture educators are assigned after the change",
+    ],
+    where: [
+      "https://extension.purdue.edu/about/transformation.html",
+      "Purdue Extension county office pages",
+    ],
+  },
+  {
+    key: "manure-federal-rule-coverage",
+    course: "manure-and-compost",
+    lesson: "which-rule-applies-to-you",
+    quote:
+      "This course did not verify which growers each federal rule legally covers.",
+    title: "Who 7 CFR 205 and 21 CFR 112 actually bind",
+    severity: "medium",
+    claim:
+      "Lesson 21 teaches the organic rule (7 CFR 205.203) and FDA's produce safety rule (21 CFR part 112) as benchmarks, not as legal duties, because the course did not verify their coverage.",
+    question:
+      "Which growers does each rule legally bind: who must follow 7 CFR part 205 (certified organic operations, and the exemption for small operations under a sales threshold), and who is covered by 21 CFR part 112 (the coverage and exemption sections, including the small-farm and qualified-exemption thresholds)?",
+    stakes:
+      "A learner who sells at a market could misjudge whether a federal rule applies to them; the benchmark framing is safe but less useful than the actual coverage.",
+    needs: [
+      "The operative coverage and exemption sections with paragraph numbers, read from eCFR (7 CFR 205.100 and 205.101; 21 CFR 112.4 to 112.7)",
+    ],
+    where: [
+      "https://www.ecfr.gov/ (title 7 part 205; title 21 part 112)",
+    ],
+  },
+  {
+    key: "manure-pounds-to-cubic-yards",
+    course: "manure-and-compost",
+    lesson: "which-rule-applies-to-you",
+    quote:
+      "Whether that is more than 10 cubic yards depends on how dense it is and what is mixed with it, which this course did not verify.",
+    title:
+      "Converting a horse's yearly manure to cubic yards for the 355 IAC 8 test",
+    severity: "low",
+    claim:
+      "Lesson 21 works out 51 lb a day x 365 = 18,615 lb a year for a 1,000 lb sedentary horse (NRCS Table 4-14) but cannot say whether that passes Indiana's 10 cubic yard threshold, because manure density was not verified.",
+    question:
+      "What bulk density (pounds per cubic foot or per cubic yard) does an authoritative source give for horse manure, as excreted and with bedding, so the lesson can convert pounds to cubic yards?",
+    stakes:
+      "Low. The lesson tells learners to ask their extension office; a sourced density would let it answer the question it raises.",
+    needs: [
+      "A density figure with its source and locator (NRCS Part 651 ch. 4 or ch. 9, ASABE D384, or a land-grant manure guide)",
+    ],
+    where: [
+      "NRCS Agricultural Waste Management Field Handbook, Part 651 (chapters 4 and 9)",
+      "Purdue ABE-166-W and land-grant manure management guides",
+    ],
+  },
+  {
+    key: "manure-iowa-state-may-survive",
+    course: "manure-and-compost",
+    lesson: "dogs-cats-and-pigs",
+    quote:
+      "Some of the parasites found in these manures may survive and remain infectious for people",
+    title:
+      "Cat, dog and pig manure: confirm the parasite reason from a primary source",
+    severity: "low",
+    claim:
+      "Lesson 5 quotes Iowa State Extension that parasites in cat, dog and pig manure 'may survive and remain infectious for people', and flags the hedge as the source's word.",
+    question:
+      "Which parasites, from a primary federal or peer-reviewed source, survive composting conditions in pig manure (as Toxoplasma and Toxocara are documented for cats and dogs by CDC), so the pig half of the claim rests on more than an extension page?",
+    stakes:
+      "Low. The advice is consistent across Iowa State, Purdue and the 2005 NRCS study; the pig reason is the thinnest part.",
+    needs: [
+      "A CDC, USDA or peer-reviewed source naming pig-manure parasites relevant to food gardens (for example Ascaris suum), with locator",
+    ],
+    where: [
+      "CDC parasite pages",
+      "USDA ARS or land-grant swine manure publications",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
