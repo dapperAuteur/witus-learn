@@ -21,7 +21,8 @@ import type { AuthoredCourse } from "./authored-course";
 //    Bell and are not hosted), Carver's 1905 and 1936 bulletins (NAL: not in copyright; the 1936 one
 //    carries no notice), King (Project Gutenberg 5350) and Darwin (Project Gutenberg 2355). Part 637's
 //    Appendix 2A table is "adapted from" NRAES-54: its numbers are used, the table is not hosted as an
-//    image. Part 651's manure tables reproduce ASAE D384.2 (2005), and every lesson that uses them says so.
+//    image. Part 651's dairy, beef, swine and poultry tables draw on ASAE D384.2 (2005); its veal, lamb
+//    and rabbit tables are adapted from the 1992 AWMFH, and every lesson that uses them says so.
 //  - Tier B, cite and link, never rehost: Purdue Extension (ID-182-W, The Scoop on Poop, HO-71-W,
 //    HO-324-W, ABE-166-W, ID-101, AY-277, FS-44-W, the county-office and transformation pages), Iowa
 //    State Extension, IDEM, the OISC copies of 355 IAC 7, 8 and 10 (quote and link, do not host), the
@@ -37,7 +38,7 @@ import type { AuthoredCourse } from "./authored-course";
 //
 // STANDARDS PLAN (the orchestrator adds the mapping in src/lib/standards/ in this branch): NGSS
 // 5-LS2-1 and MS-LS2-3 ("develop a model ..."), claimed PARTIAL, with the learner-built model in
-// lesson 22 (`build-your-own-loop`) as the modelling evidence and lessons 1, 9 and 10 as the matter
+// lesson 22 (`build-your-own-loop`) as the modelling evidence and lessons 1 and 9 as the matter
 // cycling content; HS-LS2-3 (aerobic versus anaerobic conditions) from lessons 9, 10 and 12, also
 // partial. HS-LS2-4 is NOT claimed: the course does not teach trophic-level energy.
 //
@@ -83,7 +84,7 @@ const DOG_WASTE_URL =
 
 /** NRCS Part 651 ch. 4. Printed page 4-N is PDF page N+8. */
 const nrcs651 = (loc: string, pdfPage: number) =>
-  `U.S. Department of Agriculture, Natural Resources Conservation Service. (2008). *Agricultural waste characteristics* (Part 651, Agricultural Waste Management Field Handbook, Chapter 4; 210-VI-AWMFH). Its manure tables reproduce ASAE D384.2 (2005). ${loc}. ${NRCS_651_URL}#page=${pdfPage}`;
+  `U.S. Department of Agriculture, Natural Resources Conservation Service. (2008). *Agricultural waste characteristics* (Part 651, Agricultural Waste Management Field Handbook, Chapter 4; 210-VI-AWMFH). Its dairy, beef, swine and poultry tables draw on ASAE D384.2 (2005); its veal, lamb and rabbit tables are adapted from the 1992 AWMFH. ${loc}. ${NRCS_651_URL}#page=${pdfPage}`;
 /** NRCS Part 637 ch. 2. Printed page 2-N is PDF page N+8; page 2A-1 is PDF page 87. */
 const nrcs637 = (loc: string, pdfPage: number) =>
   `U.S. Department of Agriculture, Natural Resources Conservation Service. (2010). *Composting* (Part 637, National Engineering Handbook, Chapter 2; 210-VI-NEH, Amend. 40). ${loc}. ${NRCS_637_URL}#page=${pdfPage}`;
@@ -97,9 +98,9 @@ const PRODUCE = (section: string, para: string) =>
 const BIOSOLIDS =
   "Pathogen treatment processes, 40 C.F.R. pt. 503, app. B, paragraphs A.4 and B.1 (2026). https://www.ecfr.gov/current/title-40/part-503/appendix-Appendix%20B%20to%20Part%20503";
 const CDC_TOXO =
-  "Centers for Disease Control and Prevention. (2024, January 30). *Preventing toxoplasmosis*. https://www.cdc.gov/toxoplasmosis/prevention/index.html";
+  "Centers for Disease Control and Prevention. (2024a, January 30). *Preventing toxoplasmosis*. https://www.cdc.gov/toxoplasmosis/prevention/index.html";
 const CDC_TOXOCARA =
-  "Centers for Disease Control and Prevention. (2024, April 19). *How toxocariasis spreads*. https://www.cdc.gov/toxocariasis/spreads/index.html";
+  "Centers for Disease Control and Prevention. (2024b, April 19). *How toxocariasis spreads*. https://www.cdc.gov/toxocariasis/spreads/index.html";
 const IOWA =
   "Fillius, D., Rindels, S., & Steil, A. (2023). *Using manure in the home garden*. Iowa State University Extension and Outreach. https://yardandgarden.extension.iastate.edu/how-to/using-manure-home-garden";
 const ID182 = (loc: string) =>
@@ -109,13 +110,16 @@ const SCOOP =
 const HO71 = (loc: string) =>
   `Daniel, K., Lerner, R., & Ackerson, J. (2018). *Collecting soil samples for testing* (HO-71-W). Purdue Extension. ${loc}. https://www.extension.purdue.edu/extmedia/HO/HO-71-W.pdf`;
 const HO324 =
-  "Meyers, S., Lerner, R., & Emanuel, C. (2020). *Cover crops in the home garden* (HO-324-W). Purdue Extension. https://www.extension.purdue.edu/extmedia/HO/HO-324-W.pdf";
+  "Meyers, S., Lerner, R., & Emanuel, C. (2020). *Cover crops in the home garden* (HO-324-W). Purdue Extension. Pages 1 and 5. https://www.extension.purdue.edu/extmedia/HO/HO-324-W.pdf";
+/** ABE-166-W: every use in this course is the title or the "several-fold" sentence, both on page 1. */
 const ABE166 =
-  "Ni, J.-Q., & Lim, T. T. (2022, updated 2023). *Manure characteristics, testing, and sampling* (ABE-166-W). Purdue Extension. https://www.extension.purdue.edu/extmedia/ABE/ABE-166-W.pdf";
-const ID101 =
-  "Sutton, A. L., Jones, D. D., Joern, B. C., & Huber, D. M. (1994). *Animal manure as a plant nutrient resource* (ID-101). Purdue Cooperative Extension Service. https://www.extension.purdue.edu/extmedia/id/id-101.html";
-const AY277 =
-  "Joern, B. C., & Brichford, S. L. (1993). *Calculating manure and manure nutrient application rates* (AY-277). Purdue Cooperative Extension Service. https://www.extension.purdue.edu/extmedia/ay/ay-277.html";
+  "Ni, J.-Q., & Lim, T. T. (2022, updated 2023). *Manure characteristics, testing, and sampling* (ABE-166-W). Purdue Extension. Page 1. https://www.extension.purdue.edu/extmedia/ABE/ABE-166-W.pdf";
+/** ID-101 is an unpaginated HTML page, so the locator is its section heading. */
+const ID101 = (loc: string) =>
+  `Sutton, A. L., Jones, D. D., Joern, B. C., & Huber, D. M. (1994). *Animal manure as a plant nutrient resource* (ID-101). Purdue Cooperative Extension Service. ${loc}. https://www.extension.purdue.edu/extmedia/id/id-101.html`;
+/** AY-277 is an unpaginated HTML page, so the locator is its section heading. */
+const AY277 = (loc: string) =>
+  `Joern, B. C., & Brichford, S. L. (1993). *Calculating manure and manure nutrient application rates* (AY-277). Purdue Cooperative Extension Service. ${loc}. https://www.extension.purdue.edu/extmedia/ay/ay-277.html`;
 const FS44 =
   "VanNorman, C., & Feng, Y. (2020). *Food safety implications for raising backyard poultry* (FS-44-W). Purdue Extension. Page 3. https://www.extension.purdue.edu/extmedia/FS/FS-44-W.pdf";
 const IAC8 = (loc: string) =>
@@ -172,7 +176,7 @@ The soil under a garden has been through an animal's gut, many times. Matter doe
 
 1. **Feed goes into an animal.** A Purdue bulletin on manure rates puts a number on what comes back out: "livestock excrete 70-80 percent of the nitrogen, 60-85 percent of the phosphorus, and 80-90 percent of the potassium fed to them" (Joern & Brichford, 1993).
 2. **So manure carries most of it.** Another Purdue bulletin's title says what that makes manure: *Animal manure as a plant nutrient resource* (Sutton et al., 1994).
-3. **Decomposers break it down.** The USDA Natural Resources Conservation Service (NRCS) defines the managed version: "Composting is the controlled aerobic decomposition of organic matter by microorganisms into a stable, humus-like soil amendment" (NRCS, 2010, p. 2-1). Outside a compost pile, Darwin's worms pass the soil itself through their guts.
+3. **Decomposers break it down.** The USDA Natural Resources Conservation Service (NRCS) defines the managed version: "Composting is the controlled aerobic decomposition of organic matter by microorganisms into a stable, humus-like soil amendment" (NRCS, 2010, p. 2-1). Aerobic means with oxygen; FDA's produce rule writes "aerobic (i.e., oxygenated)" (21 C.F.R. § 112.54(b)(1)). Outside a compost pile, Darwin's worms pass the soil itself through their guts.
 4. **The soil feeds the next crop**, and the crop feeds the next animal or person.
 
 **The loop leaks.** Nitrogen can leave as ammonia gas soon after manure is spread (Sutton et al., 1994), and ammonia can leach out of a compost pile into water (NRCS, 2010, p. 2-8). Sections 3 and 4 show both, and link to the two river courses that follow that water downstream.
@@ -182,23 +186,24 @@ The soil under a garden has been through an animal's gut, many times. Matter doe
 **The two rules.** Two federal documents set the numbers people quote most, and they do not agree.
 
 - The organic rule says raw manure must be composted unless it goes on a crop not meant for people, or is worked into the soil at least 120 days before harvest when the edible part touches the soil, or 90 days when it does not (7 C.F.R. § 205.203(c)(1)).
-- FDA's produce safety rule has a paragraph where the waiting time for untreated manure would go. It reads "[Reserved]" (21 C.F.R. § 112.56(a)(1)(i)).
+- FDA's produce safety rule has a paragraph where the waiting time would go for untreated manure applied in a way that minimizes contact with the crop. It reads "[Reserved]" (21 C.F.R. § 112.56(a)(1)(i)). For untreated manure kept from touching the crop during or after spreading, the next paragraph says "0 days" (21 C.F.R. § 112.56(a)(1)(ii)).
 
 So "wait 90 or 120 days" is the organic rule's number. FDA's food-safety rule has set no number there. Section 4 reads both.
 
 **What this course leaves out.** Raising animals. Composting human waste, which is regulated (21 C.F.R. § 112.53) and gets one lesson explaining why it is out of scope. Anything bigger than a home compost system. This is the first course in a series called The Calorie Loop; courses on trees and on raising animals are planned for it.
 
-:::reveal Where do the 90-day and 120-day manure intervals come from? ||| The organic rule, 7 CFR 205.203(c)(1). FDA's produce safety rule leaves its matching interval for untreated manure as "[Reserved]" in 21 CFR 112.56(a)(1)(i).
+:::reveal Where do the 90-day and 120-day manure intervals come from? ||| The organic rule, 7 CFR 205.203(c)(1). For untreated manure applied in a way that minimizes contact with the crop, FDA's produce safety rule leaves the matching interval "[Reserved]" in 21 CFR 112.56(a)(1)(i).
 
 :::reveal What share of the nitrogen fed to livestock comes back out in manure, according to Purdue's AY-277? ||| 70 to 80 percent. The same bulletin gives 60 to 85 percent for phosphorus and 80 to 90 percent for potassium.
 
 ## Sources
 - ${DARWIN("Introduction")}
-- ${AY277}
-- ${ID101}
+- ${AY277("Opening paragraph, before the heading \"Determining Manure Nutrient Content\"")}
+- ${ID101("Title; section \"Method of Land Application\", after Table 2")}
 - ${nrcs637("Printed pp. 2-1 and 2-8 (PDF pp. 9 and 16)", 9)}
 - ${ORGANIC("(c)(1)")}
-- ${PRODUCE("112.56", "(a)(1)(i)")}
+- ${PRODUCE("112.54", "(b)(1)")}
+- ${PRODUCE("112.56", "(a)(1)")}
 - ${PRODUCE("112.53", "")}`,
     },
     {
@@ -212,11 +217,11 @@ So "wait 90 or 120 days" is the organic rule's number. FDA's food-safety rule ha
             "Feed goes into an animal; most of its nitrogen, phosphorus and potassium comes back out in manure; decomposers break the manure down; the soil feeds the next crop.",
         },
         {
-          prompt: "What does FDA's produce safety rule say in the place where a waiting time for untreated manure would go?",
+          prompt: "What does FDA's produce safety rule say in the place where a waiting time would go for untreated manure applied in a way that minimizes contact with the crop?",
           answer: "\"[Reserved]\" (21 CFR 112.56(a)(1)(i)). No interval is set.",
         },
       ],
-      body: `The best public numbers on manure sit in one chapter of an NRCS field handbook, *Agricultural Waste Characteristics* (NRCS, 2008). Its tables give pounds of manure, moisture, and nutrients for each kind of livestock. The handbook takes them from an engineering standard, ASAE D384.2 (2005). Before reading a single row, learn the three rules for reading any of them.
+      body: `A free federal set of manure numbers sits in one chapter of an NRCS field handbook, *Agricultural Waste Characteristics* (NRCS, 2008). Its tables give pounds of manure, moisture, and nutrients for cattle, swine, poultry, lambs and horses. The handbook takes most of them from an engineering standard, ASAE D384.2 (2005). Before reading a single row, learn the three rules for reading any of them.
 
 **Rule 1: the numbers describe manure the moment it leaves the animal.** The handbook's definition: "The term as excreted refers to feces and urine prior to any changes due to dilution water addition, drying, volatilization, or other physical, chemical, or biological processes" (NRCS, 2008, p. 4-5). Volatilization means escaping as a gas; Purdue uses the word for ammonia leaving freshly spread manure (Sutton et al., 1994). So the tables describe nothing you will shovel. A pile that has sat, dried, been rained on or composted is a different material.
 
@@ -228,7 +233,7 @@ You can check the two bases against each other. Table 4-5 gives a lactating dair
 
 **Rule 3: know what the tables leave out.** "Not considered is manure produced by livestock and poultry on pasture or range" (NRCS, 2008, p. 4-9). A cow on grass is outside them. The veal and sheep values are older, "from the 1992 version of the AWMFH" (p. 4-10).
 
-**Book values are a starting point.** A Purdue bulletin warns: "Using book values for manure nutrient estimations can be problematic because measured farm data can vary widely, from a small percentage to several-fold" (Ni & Lim, 2022). The handbook itself says that using one of its tables (table 4-16) to set field-specific application rates for a single year's nutrient plan "would be a misuse of the data" (NRCS, 2008, p. 4-23).
+**Book values are a starting point.** A Purdue bulletin warns: "Using book values for manure nutrient estimations can be problematic because measured farm data can vary widely, from a small percentage to several-fold" (Ni & Lim, 2022, p. 1). The handbook itself says that using one of its tables (table 4-16) to set field-specific application rates for a single year's nutrient plan "would be a misuse of the data" (NRCS, 2008, p. 4-23).
 
 So use the tables to compare animals and to know roughly what kind of material you have. Use a test to learn what is in your own pile.
 
@@ -239,7 +244,7 @@ So use the tables to compare animals and to know roughly what kind of material y
 ## Sources
 - ${nrcs651("Printed pp. 4-5, 4-8 to 4-10, 4-13 (Table 4-5), 4-15 and 4-23 (section 651.0404); PDF pp. 13, 16 to 18, 21, 23 and 31", 13)}
 - ${ABE166}
-- ${ID101}`,
+- ${ID101("Section \"Method of Land Application\", after Table 2")}`,
     },
     {
       slug: "manure-animal-by-animal",
@@ -256,7 +261,7 @@ So use the tables to compare animals and to know roughly what kind of material y
           answer: "Measured farm data can vary widely, from a small percentage to several-fold, so a test of your own manure beats a table.",
         },
       ],
-      body: `Here are rows from the NRCS tables (NRCS, 2008), which reproduce ASAE D384.2 (2005). Every figure is pounds per day per 1,000 pounds of animal, as excreted.
+      body: `Here are rows from the NRCS tables (NRCS, 2008). Most draw on ASAE D384.2 (2005); the feeder lamb row is older, adapted from the 1992 version of the handbook (p. 4-22). Every figure is pounds per day per 1,000 pounds of animal, as excreted.
 
 | Animal (NRCS table) | Manure | Nitrogen | Phosphorus | Potassium |
 |---|---|---|---|---|
@@ -282,7 +287,7 @@ So use the tables to compare animals and to know roughly what kind of material y
 
 **A table is not a recommendation.** The pig rows are here because the handbook describes what pigs produce. Section 2 shows why pig manure still stays out of a home vegetable garden.
 
-**Carbon matters too.** Two tables also print a carbon to nitrogen ratio: 10 for lamb and 16 for rabbit. Section 3 explains why that ratio decides how a pile behaves.
+**Carbon matters too.** The lamb and rabbit tables also print a carbon to nitrogen ratio: 10 for lamb and 16 for rabbit. Section 3 explains why that ratio decides how a pile behaves.
 
 :::reveal Per 1,000 pounds of animal per day, which gives more nitrogen, laying hens or a sedentary horse, and by roughly how much? ||| Laying hens, at 1.1 pounds against 0.18: about six times as much.
 
@@ -307,7 +312,7 @@ So use the tables to compare animals and to know roughly what kind of material y
       ],
       body: `${SAFETY}
 
-The NRCS tables are the best public numbers there are, and they have gaps. Knowing where the gaps are keeps you from trusting a number that was never measured.
+The NRCS tables are a free federal reference, and they have gaps. Knowing where the gaps are keeps you from trusting a number that was never measured.
 
 **Sheep means one kind of sheep.** "As excreted manure characteristics for sheep are limited to those for the feeder lamb" (NRCS, 2008, p. 4-22). A ewe or a ram is not in the table. The lamb row gives 40 pounds of manure a day per 1,000 pounds, 75 percent moisture, 0.45 pounds of nitrogen, and a carbon to nitrogen ratio of 10.
 
@@ -335,7 +340,7 @@ One line from Purdue's bulletin on application rates belongs on every farm wall:
 ## Sources
 - ${nrcs651("Printed pp. 4-22 and 4-23 (PDF pp. 30 and 31); Tables 4-13 and 4-15", 30)}
 - ${ABE166}
-- ${AY277}`,
+- ${AY277("Section \"Determining Manure Nutrient Content\", subsection \"Collecting a manure sample\"")}`,
     },
     {
       slug: "section-1-quiz",
@@ -356,11 +361,12 @@ One line from Purdue's bulletin on application rates belongs on every farm wall:
           { prompt: "What does composting produce, in the NRCS definition?", options: ["A liquid fertilizer drained from the bottom of the pile and bottled for sale", "A sterile powder with no living organisms of any kind left in it", "Methane for heating", "A stable, humus-like soil amendment"], correctIndex: 3, explanation: "The definition ends \"into a stable, humus-like soil amendment\": the matter changes form and goes back into the loop.", sourceLessonSlug: "what-a-loop-is" },
           { prompt: "Which document sets the 120-day and 90-day manure intervals?", options: ["FDA's produce safety rule, 21 CFR 112.56, as its food-safety waiting period", "The NRCS Agricultural Waste Management Field Handbook, chapter 4 tables", "An Iowa statute", "The organic rule, 7 CFR 205.203"], correctIndex: 3, explanation: "The intervals are in 7 CFR 205.203(c)(1), the organic rule. FDA's produce rule leaves its matching paragraph \"[Reserved]\".", sourceLessonSlug: "what-a-loop-is" },
           { prompt: "What does 21 CFR 112.56(a)(1)(i) say about the waiting time for untreated manure applied in a way that minimizes contact with the crop?", options: ["120 days before harvest for any crop whose edible part touches soil", "90 days before harvest, the same as the organic rule's shorter interval", "\"[Reserved]\": no number is set", "0 days"], correctIndex: 2, explanation: "The paragraph reads \"[Reserved]\". It exists, and it holds no interval. The 0 days figure belongs to the next paragraph, for untreated manure that does not contact the crop at all.", sourceLessonSlug: "what-a-loop-is" },
+          { prompt: "For untreated manure kept from touching the crop during or after spreading, what interval does FDA's produce rule set?", options: ["120 days, the organic rule's interval for crops touching soil", "0 days", "90 days, the organic rule's interval for crops off the soil", "\"[Reserved]\", the same blank as the paragraph before it"], correctIndex: 1, explanation: "21 CFR 112.56(a)(1)(ii) says 0 days. The \"[Reserved]\" paragraph, (a)(1)(i), covers untreated manure applied in a way that minimizes contact with the crop.", sourceLessonSlug: "what-a-loop-is" },
           { prompt: "Under the organic rule, raw manure needs neither composting nor a waiting interval when it goes on land used for what?", options: ["Any crop, as long as the soil was tested within the last three years", "Any vegetable, as long as the manure is less than one week old", "Lawns only", "A crop not meant for people"], correctIndex: 3, explanation: "205.203(c)(1)(i): raw manure need not be composted when applied to land used for a crop not intended for human consumption.", sourceLessonSlug: "what-a-loop-is" },
           { prompt: "Under the organic rule, a crop whose edible part touches the soil needs raw manure worked in how long before harvest?", options: ["At least 90 days, the interval for crops whose edible part stays off the soil", "At least six months, counted from the last time the manure was turned", "At least 120 days", "30 days"], correctIndex: 2, explanation: "205.203(c)(1)(ii) says not less than 120 days before harvest when the edible portion has direct contact with the soil surface or soil particles. Six months is Purdue's composting advice, a different document.", sourceLessonSlug: "what-a-loop-is" },
           { prompt: "Why does this course say \"wait 90 or 120 days\" is not a federal food-safety law?", options: ["Congress repealed both intervals when it passed the produce safety rule", "The intervals apply only to manure from pigs, dogs and cats", "FDA's rule set no number there", "It is a state rule"], correctIndex: 2, explanation: "The 90 and 120 days are the organic rule's intervals. FDA's food-safety rule for produce has a paragraph where the interval would go, and it reads \"[Reserved]\".", sourceLessonSlug: "what-a-loop-is" },
           { prompt: "Which of these does this course leave out on purpose?", options: ["Reading the NRCS manure tables row by row and checking their units", "Composting human waste", "The organic rule's 90 and 120 day intervals and what each one covers", "Soil testing"], correctIndex: 1, explanation: "Human waste is regulated under 21 CFR 112.53 and is out of scope. The tables, the intervals and soil testing are all taught.", sourceLessonSlug: "what-a-loop-is" },
-          { prompt: "Why is composting human waste out of scope in this course?", options: ["No society has ever returned it to fields, so there is no record to teach from", "The organic rule's 120-day interval already covers it in full", "It has no nitrogen", "It is regulated (21 CFR 112.53)"], correctIndex: 3, explanation: "Lesson 1 names 21 CFR 112.53. Section 5 even reads a historical account of human waste on fields, as history, which is why the first distractor is wrong.", sourceLessonSlug: "what-a-loop-is" },
+          { prompt: "Why is composting human waste out of scope in this course?", options: ["No society has ever returned it to fields, so there is no record to teach from", "The organic rule's 120-day interval already covers it in full", "It has no nitrogen", "It is regulated (21 CFR 112.53)"], correctIndex: 3, explanation: "Lesson 1 names 21 CFR 112.53. Section 5 even reads a historical account of human waste on fields, as history, which is why the claim that no society has ever returned it to fields is wrong.", sourceLessonSlug: "what-a-loop-is" },
           { prompt: "This course is the first in which series?", options: ["Farm and Garden Basics, a three-part introduction for new growers", "The Nutrient Cycle, a series of laboratory science courses", "The Calorie Loop", "Compost 101"], correctIndex: 2, explanation: "Lesson 1 says this is the first course in a series called The Calorie Loop, with courses on trees and on raising animals planned for it.", sourceLessonSlug: "what-a-loop-is" },
           { prompt: "Which two ways does lesson 1 say nitrogen can leak out of the loop?", options: ["Only in crops sold off the farm, never into the air or into water", "Through worms carrying it down below the root zone into bedrock", "As ammonia gas, and in water", "As smoke"], correctIndex: 2, explanation: "Ammonia can leave soon after manure is spread, and ammonia can leach out of a compost pile into ground or surface water.", sourceLessonSlug: "what-a-loop-is" },
           { prompt: "In the loop, what does manure carry back toward the soil?", options: ["Most of the nutrients that were fed", "Only water and fiber, because animals keep almost all of the nutrients they eat", "Mainly carbon, because animals breathe out the nitrogen in their feed", "Only carbon"], correctIndex: 0, explanation: "Purdue's AY-277 puts the excreted share at 70 to 80 percent of the nitrogen, 60 to 85 percent of the phosphorus and 80 to 90 percent of the potassium fed.", sourceLessonSlug: "what-a-loop-is" },
@@ -375,8 +381,9 @@ One line from Purdue's bulletin on application rates belongs on every farm wall:
           { prompt: "Table 4-5 gives a lactating cow 108 pounds of manure a day per 1,000 pounds; the per-animal table gives a 1,375-pound cow 148 pounds. What does 108 × 1.375 show?", options: ["The per-animal table overstates manure by about a third and should be ignored", "Larger cows produce less manure per pound of body weight than small ones", "One table is per week", "The two tables agree"], correctIndex: 3, explanation: "108 × 1.375 is about 148.5, which matches the 148 the per-animal table prints. The two bases describe the same cow.", sourceLessonSlug: "as-excreted" },
           { prompt: "On the per-1,000-pound basis, a table gives 108 pounds a day. How much would a 500-pound animal of the same kind produce on that basis?", options: ["54 pounds", "108 pounds, because the figure is per animal whatever its weight", "216 pounds, because smaller animals produce more per pound", "500 pounds"], correctIndex: 0, explanation: "500 pounds is 0.5 animal units, and 0.5 × 108 is 54. The basis is weight, not head count.", sourceLessonSlug: "as-excreted" },
           { prompt: "Which manure does the NRCS chapter say it does not consider?", options: ["Manure on pasture or range", "Manure from lactating dairy cows housed in freestall barns", "Manure from laying hens kept in confinement buildings", "Horse manure"], correctIndex: 0, explanation: "The handbook: \"Not considered is manure produced by livestock and poultry on pasture or range.\" A cow on grass is outside the tables.", sourceLessonSlug: "as-excreted" },
+          { prompt: "For which animals do the NRCS tables give pounds of manure, moisture and nutrients?", options: ["Goats, alpacas, llamas and yaks, the usual small-farm animals", "Dogs and cats, along with every kind of farm livestock", "Cattle, swine, poultry, lambs, horses", "Every kind of livestock"], correctIndex: 2, explanation: "Lesson 2 names cattle, swine, poultry, lambs and horses. Lesson 4 shows the gaps: no table for goats, alpacas, llamas, yaks, dogs or cats, and no daily pounds for rabbits.", sourceLessonSlug: "as-excreted" },
           { prompt: "Where do the NRCS chapter's veal and sheep values come from?", options: ["A 2008 survey of Indiana sheep farms carried out by Purdue Extension", "The organic rule's appendix on the composition of raw manure", "The 1992 version of the handbook", "ASAE D384.2 only"], correctIndex: 2, explanation: "The handbook says the veal and sheep values are from the 1992 version of the AWMFH, older than the rest of the chapter.", sourceLessonSlug: "as-excreted" },
-          { prompt: "Which engineering standard do the NRCS manure tables reproduce?", options: ["The organic rule's compost standard in 7 CFR 205.203(c)(2)", "FDA's microbial standards for compost in 21 CFR 112.55(b)", "NRAES-54", "ASAE D384.2 (2005)"], correctIndex: 3, explanation: "The handbook's manure tables come from ASAE D384.2 (2005). NRAES-54 is the source of a different table, the composting chapter's Table 2A-1.", sourceLessonSlug: "as-excreted" },
+          { prompt: "Which engineering standard do most of the NRCS manure tables draw on?", options: ["The organic rule's compost standard in 7 CFR 205.203(c)(2)", "FDA's microbial standards for compost in 21 CFR 112.55(b)", "NRAES-54", "ASAE D384.2 (2005)"], correctIndex: 3, explanation: "Most of the handbook's manure tables draw on ASAE D384.2 (2005); the veal, lamb and rabbit tables are from the 1992 AWMFH. NRAES-54 is the source of a different table, the composting chapter's Table 2A-1.", sourceLessonSlug: "as-excreted" },
           { prompt: "What does Purdue's ABE-166-W say about book values for manure nutrients?", options: ["They are accurate to within 5 percent for any animal in the tables", "Farm data can differ several-fold", "They overstate nutrients for poultry and are exact for cattle", "They apply only in Indiana"], correctIndex: 1, explanation: "ABE-166-W: using book values can be problematic because measured farm data can vary widely, from a small percentage to several-fold.", sourceLessonSlug: "as-excreted" },
           { prompt: "What does the NRCS handbook call using table 4-16 to set field-specific application rates for one year's nutrient plan?", options: ["The method the handbook recommends for every farm nutrient plan", "Acceptable only on farms with fewer than 300 head of cattle", "Required", "A misuse of the data"], correctIndex: 3, explanation: "Section 651.0404 says that use \"would be a misuse of the data.\" The tables compare; they do not set a field's rate.", sourceLessonSlug: "as-excreted" },
           { prompt: "According to lesson 2, what are the NRCS tables good for?", options: ["Setting exact application rates for a single field in a single year", "Comparing animals", "Proving to an inspector that a compost pile reached 131 °F", "Replacing a soil test"], correctIndex: 1, explanation: "Use the tables to compare animals and to know roughly what material you have; use a test to learn what is in your own pile.", sourceLessonSlug: "as-excreted" },
@@ -386,13 +393,15 @@ One line from Purdue's bulletin on application rates belongs on every farm wall:
           { prompt: "How much manure does a 1,000-pound laying-hen flock produce per day, as excreted?", options: ["108 pounds, the same as a lactating dairy cow on the same basis", "1.1 pounds in total, which is the flock's whole daily output", "57 pounds", "5.7 pounds"], correctIndex: 2, explanation: "The hen row: 57 pounds of manure a day per 1,000 pounds of birds, carrying 1.1 pounds of nitrogen.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "Which pair shows that one kind of animal changes its output with what it is doing?", options: ["Ducks and laying hens kept together on the same small farm", "A beef cow and a dairy cow that happen to weigh the same", "Lactating and gestating sows", "Ducks and turkeys"], correctIndex: 2, explanation: "A lactating sow gives 0.45 pounds of nitrogen against 0.16 for a gestating sow: same animal, different stage.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "Per 1,000 pounds per day, how does a lactating sow's nitrogen compare with a gestating sow's?", options: ["0.16 against 0.45, since a nursing sow eats less than a pregnant one", "The same 0.45, because the tables do not separate sows by stage", "1.1 against 0.18", "0.45 against 0.16"], correctIndex: 3, explanation: "Table 4-10 gives 0.45 pounds for the lactating sow and 0.16 for the gestating sow.", sourceLessonSlug: "manure-animal-by-animal" },
+          { prompt: "Per 1,000 pounds per day, how much manure does a lactating sow make, against 25 pounds for a gestating sow?", options: ["59 pounds", "25 pounds, the same as a gestating sow of equal weight", "108 pounds, the figure for a lactating dairy cow", "0.45 pounds, which is the lactating sow's nitrogen figure"], correctIndex: 0, explanation: "Table 4-10: 59 pounds of manure for the lactating sow and 25 for the gestating sow. Stage changes the amount as well as the nitrogen.", sourceLessonSlug: "manure-animal-by-animal" },
+          { prompt: "How much nitrogen per 1,000 pounds per day does lesson 3's table give for broilers?", options: ["1.1 pounds, the figure for laying hens", "88 pounds, which is the broilers' manure figure", "0.18 pounds, the figure for a sedentary horse", "0.96 pounds"], correctIndex: 3, explanation: "Broilers: 88 pounds of manure and 0.96 pounds of nitrogen a day per 1,000 pounds of birds. Laying hens give 1.1.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "An exercised horse gives how much nitrogen per 1,000 pounds per day, against 0.18 for a sedentary one?", options: ["0.18, since exercise changes manure volume but not its nitrogen", "0.31", "1.1, the same as a laying-hen flock of equal total weight", "0.05"], correctIndex: 1, explanation: "Table 4-14: 0.31 pounds of nitrogen for the exercised horse and 0.18 for the sedentary horse.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "Which horses do the NRCS horse values apply to?", options: ["18 months or older, not pregnant or lactating", "Foals under six months that are still nursing from their mothers", "Only racehorses in training at a licensed race track", "Any horse"], correctIndex: 0, explanation: "The handbook: the values apply to horses 18 months of age or older that are not pregnant or lactating.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "Per animal, how much nitrogen does a 1,375-pound lactating dairy cow give per day, against a 1,660-pound dry cow?", options: ["0.50 against 0.97 pounds, since the heavier dry cow eats more", "0.71 against 0.71 pounds, because both are measured per 1,000 pounds", "0.31 against 0.18", "0.97 against 0.50 pounds"], correctIndex: 3, explanation: "On the per-animal basis the lactating cow gives 0.97 pounds and the dry cow 0.50, even though the dry cow is heavier.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "What moisture do the tables give for fresh dairy manure, as a percent of the wet weight?", options: ["30 percent, about what dairy manure reaches after a season in a barn", "50 percent, roughly the same as finished compost", "87 percent", "8.7 percent"], correctIndex: 2, explanation: "Dairy manure as excreted is 87 percent moisture, wet basis. The 30 percent figure in lesson 2 is beef feedlot manure after drying.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "For the five animals whose moisture lesson 3 lists, how much of fresh manure by weight is water?", options: ["About a tenth, since most of the weight is undigested fiber", "Three quarters or more", "About a third, the same as feedlot manure after it dries", "About half"], correctIndex: 1, explanation: "Dairy 87, beef cow 88, horse 85, laying hens 75 and lamb 75 percent: three quarters or more is water.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "Why do the NRCS tables have swine rows, if pig manure stays out of home gardens?", options: ["Federal law requires every gardener to try pig manure before any other", "Tables describe; they do not recommend", "Pig manure is the safest of all manures for vegetable beds", "The rows are outdated"], correctIndex: 1, explanation: "The handbook describes what pigs produce. Section 2 shows why Purdue and Iowa State still keep pig manure out of gardens and compost piles.", sourceLessonSlug: "manure-animal-by-animal" },
-          { prompt: "Which two NRCS tables also print a carbon to nitrogen ratio?", options: ["Dairy (87) and beef (88), printed in the column beside moisture", "Laying hens (1.1) and broilers (0.96), printed beside nitrogen", "Horse and duck", "Lamb (10) and rabbit (16)"], correctIndex: 3, explanation: "The lamb table gives C:N 10 and the rabbit table C:N 16. Section 3 explains why the ratio decides how a pile behaves.", sourceLessonSlug: "manure-animal-by-animal" },
+          { prompt: "Which pair of NRCS tables both print a carbon to nitrogen ratio?", options: ["Dairy (87) and beef (88), printed in the column beside moisture", "Laying hens (1.1) and broilers (0.96), printed beside nitrogen", "Horse and duck", "Lamb (10) and rabbit (16)"], correctIndex: 3, explanation: "The lamb table gives C:N 10 and the rabbit table C:N 16. Section 3 explains why the ratio decides how a pile behaves.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "How much manure per 1,000 pounds per day do the tables give for ducks?", options: ["57 pounds, the same as laying hens because both are poultry", "102 pounds", "1 pound, which is the duck figure in the manure column", "25 pounds"], correctIndex: 1, explanation: "Ducks: 102 pounds of manure a day per 1,000 pounds, with 1 pound of nitrogen.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "Which growing animal does Table 4-8 list alongside the beef cow in confinement?", options: ["A dairy heifer of about 1,000 pounds being raised for milking", "A breeding bull of more than 2,000 pounds", "A feeder lamb", "A calf of 450 to 750 pounds"], correctIndex: 3, explanation: "Table 4-8 gives a growing beef calf of 450 to 750 pounds: 77 pounds of manure and 0.45 pounds of nitrogen a day per 1,000 pounds.", sourceLessonSlug: "manure-animal-by-animal" },
           { prompt: "What do the figures in lesson 3's nitrogen column measure?", options: ["Pounds per day per 1,000 pounds", "Percent of the manure's dry weight, printed as a fraction of 1.00", "Pounds per animal per year, whatever the animal weighs", "Parts per million"], correctIndex: 0, explanation: "Every figure in the table, manure and nutrients alike, is pounds per day per 1,000 pounds of animal, as excreted.", sourceLessonSlug: "manure-animal-by-animal" },
@@ -402,6 +411,7 @@ One line from Purdue's bulletin on application rates belongs on every farm wall:
           { prompt: "What does the NRCS handbook say about how much manure a rabbit produces each day?", options: ["About 57 pounds per 1,000 pounds, the same as a laying-hen flock", "Exactly 0.03 pounds per rabbit, the figure in the nitrogen column", "40 pounds", "Reliable data is not available"], correctIndex: 3, explanation: "Reliable information on daily production of rabbit manure, feces or urine is not available. The table describes what droppings are like, not how much.", sourceLessonSlug: "the-animals-the-tables-skip" },
           { prompt: "The rabbit table's dry-basis column gives nitrogen as 0.03. What does that mean?", options: ["0.03 percent of dry matter, a few hundredths of a percent", "0.03 pounds per day per 1,000 pounds of rabbit", "About 3 percent of dry matter", "3 pounds a day"], correctIndex: 2, explanation: "The column is printed as fractions: volatile solids 0.86 and fixed solids 0.14 add to 1.00. So 0.03 is about 3 percent of the dry matter.", sourceLessonSlug: "the-animals-the-tables-skip" },
           { prompt: "How can you tell the rabbit dry-basis column is printed as fractions?", options: ["Its parts add to 1.00", "Every value in the column is larger than 100", "The table prints each value in a separate color", "It says so"], correctIndex: 0, explanation: "Volatile solids 0.86 plus fixed solids 0.14 equals 1.00. A percent column would add to 100.", sourceLessonSlug: "the-animals-the-tables-skip" },
+          { prompt: "The rabbit table gives volatile solids of 0.86 on a dry basis. What does it give for fixed solids?", options: ["0.86, the same figure as the volatile solids", "0.14", "1.86, so that the two parts add to more than one", "0.03, the figure in the nitrogen column"], correctIndex: 1, explanation: "Fixed solids are 0.14, and 0.86 plus 0.14 is 1.00, which is how you know the column is printed as fractions.", sourceLessonSlug: "the-animals-the-tables-skip" },
           { prompt: "What quick test does lesson 4 give for any column of decimals?", options: ["Does it add to 1 or to 100?", "Multiply every value by the animal's weight in pounds before reading it", "Compare it with the organic rule's 90 and 120 day intervals", "Divide it by 35"], correctIndex: 0, explanation: "Checking whether a column sums to 1 or to 100 tells you whether it is printed as fractions or percents.", sourceLessonSlug: "the-animals-the-tables-skip" },
           { prompt: "Which animals have no NRCS manure table at all?", options: ["Laying hens and broilers, which are covered in a separate handbook", "Lactating dairy cows, whose values were dropped in 2008", "Goats and alpacas", "Horses"], correctIndex: 2, explanation: "There is no NRCS table for goats, alpacas, llamas or yaks, and none for dogs or cats.", sourceLessonSlug: "the-animals-the-tables-skip" },
           { prompt: "If you keep llamas or yaks, what does lesson 4 say is the honest position?", options: ["Use the dairy cow row, since all large grazing animals are alike", "Use the horse row and multiply it by 1.4 animal units", "The handbook has no number for you", "Assume zero nitrogen"], correctIndex: 2, explanation: "No table exists for those animals. Borrowing another animal's row would be a guess dressed as a number.", sourceLessonSlug: "the-animals-the-tables-skip" },
@@ -491,7 +501,7 @@ Read those two together. The authors worked out a method and still ruled out foo
 
 **How hot.** "Compost must reach 145ºF for several days to destroy pathogens" (p. 4). Compare that with section 3, where both federal composting processes use 131 °F. The dog-waste sheet asks for more heat, for several days.
 
-**Why.** "The primary agents for disease are roundworm eggs" (p. 6). Lesson 7 shows what CDC says about how long such eggs last in soil.
+**Why.** "The primary agents for disease are roundworm eggs" (p. 6). Lesson 7 shows what CDC's page on Toxocara, a roundworm of dogs and cats, says about how long its eggs survive in the environment.
 
 **Cats.** A note on the first page: "Cat and other pet wastes were not studied." And: "We do not recommend adding cat waste or cat litter to your compost" (p. 1, note 2). So the one study that tested dog waste did not test cat waste, and its authors say leave cat waste and litter out.
 
@@ -530,7 +540,7 @@ CDC's pages on two parasites, Toxoplasma and Toxocara, are short and practical. 
 
 The reason for "daily" is the timing. CDC says the parasite "does not become infectious until" one to five days after a cat sheds it in its feces (CDC, 2024a). Clear the box every day and you remove it before it can infect.
 
-**Toxocara: the eggs that wait.** CDC's page on how toxocariasis spreads gives the opposite timing. The eggs need two to four weeks in the environment before they can cause infection, and then they survive "for months, or even years" (CDC, 2024b). Its advice: "Pet waste should be picked up daily and buried or bagged and disposed of in the trash."
+**Toxocara: the eggs that wait.** CDC's page on how toxocariasis spreads uses the same name the dog-waste sheet in lesson 6 used: people are infected when they "accidentally consume dirt or food contaminated with roundworm eggs," which "get into the soil through animal waste, typically from dogs and cats" (CDC, 2024b). It gives the opposite timing. The eggs need two to four weeks in the environment before they can cause infection, and then they survive "for months, or even years" (CDC, 2024b). Its advice: "Pet waste should be picked up daily and buried or bagged and disposed of in the trash."
 
 **Two timings, two lessons.**
 
@@ -571,7 +581,7 @@ This lesson draws three more lines: one set by federal law, one by a Purdue bull
 
 If your interest is sanitation when the plumbing fails, *Off-Grid & Emergency Survival* has a lesson on exactly that: lesson 15, "Sanitation: human waste when plumbing fails".
 
-**Butchering water: into the pile, never onto the garden.** Purdue's bulletin on food safety and backyard poultry points the wastewater from butchering birds toward a compost pile, and adds: "Make sure that the wastewater is not used to water your fruit and vegetable garden" (VanNorman & Feng, 2020, p. 3).
+**Butchering water: never onto the garden.** Purdue's bulletin on food safety and backyard poultry says the wastewater from butchering birds should go in a compost pile or, if there is a small amount, a sewer system, and adds: "Make sure that the wastewater is not used to water your fruit and vegetable garden" (VanNorman & Feng, 2020, p. 3).
 
 **The cool patch: why a hot pile can still carry pathogens.** The NRCS composting chapter says "Most pathogens originating from animals cannot survive above the 130 to 160 degrees Fahrenheit temperature range" (NRCS, 2010, p. 2-26). The catch is that a pile is not one temperature. Two warnings from the same pages:
 
@@ -647,13 +657,13 @@ So a thermometer reading of 150 °F at the center tells you about the center. Th
           { prompt: "Why does lesson 7 say \"it was a while ago\" is no reason to plant food where pet waste was left?", options: ["CDC bans growing food anywhere a pet has ever been", "The parasite grows stronger each year it stays in soil", "It is a good reason", "The eggs can survive for years"], correctIndex: 3, explanation: "Toxocara eggs survive for months, or even years, so old pet waste is not gone just because time has passed.", sourceLessonSlug: "toxoplasma-and-toxocara" },
           { prompt: "Which timing explains daily litter changes, and which explains long-lasting soil risk?", options: ["Toxocara for both, since its eggs mature fastest of all", "Toxoplasma for both, since it lasts for years in soil", "Toxoplasma; then Toxocara", "Neither"], correctIndex: 2, explanation: "Toxoplasma turns infectious in one to five days, so clear litter daily. Toxocara eggs mature over weeks and then last months or years in soil.", sourceLessonSlug: "toxoplasma-and-toxocara" },
           { prompt: "CDC's gardening advice on Toxoplasma is aimed at soil contaminated by what?", options: ["Dog feces left on lawns and walkways", "Cat feces", "Pig manure from a backyard pen", "Bird droppings"], correctIndex: 1, explanation: "The advice is about soil or sand that cat feces containing Toxoplasma may have contaminated.", sourceLessonSlug: "toxoplasma-and-toxocara" },
-          { prompt: "Which habit from lesson 7 protects a gardener from both parasites?", options: ["Keeping pet waste out of beds", "Planting only crops whose edible part grows above the soil", "Waiting 90 days after any pet visit before harvesting", "Watering more"], correctIndex: 0, explanation: "Keeping pet waste out of the beds and the compost, picking it up daily, gloves and rinsing produce all follow from CDC's two pages.", sourceLessonSlug: "toxoplasma-and-toxocara" },
+          { prompt: "Which habit from lesson 7 protects a gardener from both parasites?", options: ["Keeping pet waste out of beds", "Planting only crops whose edible part grows above the soil", "Waiting 90 days after any pet visit before harvesting", "Watering more"], correctIndex: 0, explanation: "Keeping pet waste out of the beds and the compost is the extension guides' rule from lessons 5 and 6, and it removes the source of both parasites. Daily pickup, gloves and rinsing produce come from CDC's two pages.", sourceLessonSlug: "toxoplasma-and-toxocara" },
           { prompt: "What does 21 CFR 112.53 say about human waste?", options: ["Allowed on covered produce if composted for 15 days with five turnings", "Barred for covered produce, except biosolids", "Allowed on any crop once it has aged 120 days in the soil", "Allowed with a county permit"], correctIndex: 1, explanation: "112.53: you may not use human waste for growing covered produce, except sewage sludge biosolids used in accordance with 40 CFR part 503, subpart D.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
           { prompt: "Under 21 CFR 112.53, human waste may be used on covered produce only as what?", options: ["Compost that reached 145 °F for several days, as for dog waste", "Raw material in a windrow turned at least five times", "Biosolids under 40 CFR 503", "Mulch"], correctIndex: 2, explanation: "The one exception is sewage sludge biosolids used under EPA's rule, 40 CFR part 503, subpart D.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
           { prompt: "Why does this course not teach composting human waste?", options: ["No source in the course mentions human waste at all", "It is regulated and out of scope", "The organic rule's 120 days already makes it safe", "The smell"], correctIndex: 1, explanation: "21 CFR 112.53 regulates it, and its one exception runs through a separate EPA rule. Section 5 does mention it, in King's account, as history.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
           { prompt: "Which course does lesson 8 point to for sanitation when the plumbing fails?", options: ["The River and the Watershed, its lesson 10 on nitrogen", "Off-Grid & Emergency Survival", "The Match, its lesson 3 on capacity grants", "Who Gets the Credit"], correctIndex: 1, explanation: "Off-Grid & Emergency Survival, lesson 15, \"Sanitation: human waste when plumbing fails\".", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
           { prompt: "What does Purdue's FS-44-W say butchering wastewater must not be used for?", options: ["Adding to a compost pile, since it carries blood and fat", "Wetting down a dusty driveway in summer", "Anything", "Watering the fruit and vegetable garden"], correctIndex: 3, explanation: "FS-44-W points the wastewater toward a compost pile and adds: make sure it is not used to water your fruit and vegetable garden.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
-          { prompt: "Where does FS-44-W point butchering wastewater?", options: ["Into a storm drain, which carries it away from food", "Toward a compost pile", "Onto the lawn, spread thin in direct sun", "Into a well"], correctIndex: 1, explanation: "Purdue's bulletin on backyard poultry food safety points the wastewater toward a compost pile, never onto the garden.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
+          { prompt: "Where does FS-44-W point butchering wastewater?", options: ["Into a storm drain, which carries it away from food", "Toward a compost pile", "Onto the lawn, spread thin in direct sun", "Into a well"], correctIndex: 1, explanation: "Purdue's bulletin points the wastewater toward a compost pile, or a sewer system for a small amount, never onto the garden.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
           { prompt: "What does the NRCS chapter say about most pathogens from animals above 130 to 160 °F?", options: ["Most double in number, because heat speeds up their growth", "All of them survive until the pile passes 180 °F", "Nobody knows", "Most cannot survive"], correctIndex: 3, explanation: "NRCS: most pathogens originating from animals cannot survive above the 130 to 160 degrees Fahrenheit temperature range.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
           { prompt: "What does the NRCS chapter say happens to the innermost layer when a pile is turned?", options: ["Outer pathogens recontaminate it", "It cools below 50 °F and stops decomposing for a week", "It dries below 15 percent moisture and becomes sterile", "Nothing"], correctIndex: 0, explanation: "Turning means the innermost layer is recontaminated with pathogens from the outermost layer.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
           { prompt: "What does the NRCS chapter say about cool patches in aerated static piles?", options: ["They are where the greatest number of pathogens are killed", "They are where the worms finish off the composting", "Pathogens there can survive", "They never occur"], correctIndex: 2, explanation: "Aerated static piles leave cool patches that contain pathogenic organisms that can survive.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
@@ -757,7 +767,7 @@ The chapter says the thermophilic stage is reached in "2 to 3 days" (p. 2-3). Th
 
 **What heat kills, and what it does not.** "Most pathogens originating from animals cannot survive above the 130 to 160 degrees Fahrenheit temperature range". But some fungal plant pathogens "can withstand temperatures above 180 degrees Fahrenheit". And the chapter names how anyone checks: "temperature and time are the main indicators used to verify optimal pathogen destruction" (all pp. 2-26 to 2-27).
 
-**Aerobic and anaerobic.** Composting is aerobic by definition. Where oxygen does not reach, decomposition still happens, but differently, and the thermometer shows it: cold spots "indicate sites of anaerobic decomposition" (p. 2-21). A passive pile, one that is built and left, has the same weakness: "this method is slow, and the potential for development of anaerobic conditions is greater" (p. 2-37).
+**Aerobic and anaerobic.** Composting is aerobic by definition. Where oxygen does not reach, decomposition still happens, but differently, and the thermometer shows it: cold spots "indicate sites of anaerobic decomposition" (p. 2-20). A passive pile, one that is built and left, has the same weakness: "this method is slow, and the potential for development of anaerobic conditions is greater" (p. 2-37).
 
 **Reading the evidence.** Suppose you push a long thermometer into a pile on day 3:
 
@@ -774,7 +784,7 @@ None of this needs a laboratory. A pile that heats into the thermophilic range w
 :::reveal Why is a pile above 170 °F a problem rather than a success? ||| The chapter says that above 170 °F the pile is unable to control its temperature, and the organic rule's process tops out at 170 °F.
 
 ## Sources
-- ${nrcs637("Printed pp. 2-3 to 2-5 (PDF pp. 11 to 13); p. 2-21 (PDF p. 29); section 637.0206, pp. 2-26 to 2-27 (PDF pp. 34 to 35); p. 2-37 (PDF p. 45)", 11)}
+- ${nrcs637("Printed pp. 2-3 to 2-5 (PDF pp. 11 to 13); pp. 2-20 to 2-21 (PDF pp. 28 to 29); section 637.0206, pp. 2-26 to 2-27 (PDF pp. 34 to 35); p. 2-37 (PDF p. 45)", 11)}
 - ${ORGANIC("(c)(2)(ii)")}`,
     },
     {
@@ -793,7 +803,7 @@ None of this needs a laboratory. A pile that heats into the thermophilic range w
       ],
       body: `${SAFETY}
 
-Two federal rules define a compost process for manure, and a third rule, EPA's for biosolids, defines two more. Read them as recipes.
+Two federal rules describe a compost process for manure, and a third rule, EPA's for biosolids, defines two more. Read them as recipes.
 
 **The organic rule** (7 C.F.R. § 205.203(c)(2)). The compost must have:
 
@@ -801,7 +811,7 @@ Two federal rules define a compost process for manure, and a third rule, EPA's f
 - "(ii) Maintained a temperature of between 131 °F and 170 °F for 3 days using an in-vessel or static aerated pile system; or"
 - "(iii)" the same temperature "for 15 days using a windrow composting system, during which period, the materials must be turned a minimum of five times."
 
-**FDA's produce safety rule** (21 C.F.R. § 112.54(b)):
+**FDA's produce safety rule** (21 C.F.R. § 112.54(b)) starts from a result, not a recipe. It requires a process "validated to satisfy the microbial standard in § 112.55(b)", then gives two composting processes as "examples" that meet that standard:
 
 - "(1) Static composting that maintains aerobic (i.e., oxygenated) conditions at a minimum of 131 °F (55 °C) for 3 consecutive days and is followed by adequate curing"
 - "(2) Turned composting" at 131 °F (55 °C) "for 15 days (which do not have to be consecutive), with a minimum of five turnings, and is followed by adequate curing."
@@ -813,9 +823,9 @@ Two federal rules define a compost process for manure, and a third rule, EPA's f
 | Temperature | 131 to 170 °F | at least 131 °F (55 °C) |
 | Static or in-vessel | 3 days | 3 consecutive days, aerobic, then adequate curing |
 | Turned (windrow) | 15 days, at least five turnings | 15 days, need not be consecutive, at least five turnings, then adequate curing |
-| Also sets | a starting C:N of 25:1 to 40:1 | microbial standards (below) |
+| What the rule sets | the process itself, plus a starting C:N of 25:1 to 40:1 | a microbial standard (below); these two processes are examples that meet it |
 
-**The produce rule's test of the result.** The produce rule also sets microbial standards: Salmonella below the detection limit (3 MPN per 4 grams) "and less than 1,000 MPN fecal coliforms per gram" (21 C.F.R. § 112.55(b)). MPN means most probable number, the unit the counts are given in.
+**The standard the examples meet.** Section 112.55(b) sets the standard a produce-rule process must be validated to meet: Salmonella below the detection limit (3 MPN per 4 grams) "and less than 1,000 MPN fecal coliforms per gram" (21 C.F.R. § 112.55(b)). MPN means most probable number, the unit the counts are given in (21 C.F.R. § 112.55(a)(2)).
 
 **EPA's two processes for biosolids** (40 C.F.R. pt. 503, app. B). One, called PSRP, holds 40 °C for five days with four hours above 55 °C. The other, PFRP, holds 55 °C for three days (in-vessel or static aerated) or 15 days with five turnings (windrow). The NRCS chapter gives the PSRP in Fahrenheit as "104 degrees Fahrenheit or higher for 5 days with at least 4 hours of that 5 days with temperatures 131 degrees Fahrenheit or higher", says it "is sufficient for compost used on traditional row crops", and says that "when the compost is used on vegetable crops" the PFRP "should be used". It notes the organic standard "is similar to the PFRP method" (NRCS, 2010, pp. 2-33 to 2-35).
 
@@ -830,7 +840,7 @@ Two federal rules define a compost process for manure, and a third rule, EPA's f
 ## Sources
 - ${ORGANIC("(c)(2)")}
 - ${PRODUCE("112.54", "(b)")}
-- ${PRODUCE("112.55", "(b)")}
+- ${PRODUCE("112.55", "(a)(2) and (b)")}
 - ${BIOSOLIDS}
 - ${nrcs637("Section 637.0209(g), printed pp. 2-33 to 2-35 (PDF pp. 41 to 43)", 41)}`,
     },
@@ -971,7 +981,7 @@ The NRCS chapter's Appendix 2A has a table, "Typical characteristics of selected
           { prompt: "What does the NRCS chapter say about a pile above 170 °F?", options: ["It cannot control its temperature", "It has passed every pathogen standard and can be used at once", "It is curing and should be left alone for a month", "It is ideal"], correctIndex: 0, explanation: "NRCS p. 2-21: above 170 °F the pile is unable to control its temperature. The organic rule's process tops out at 170 °F.", sourceLessonSlug: "heat-oxygen-and-time" },
           { prompt: "Which pathogens does the NRCS chapter say can withstand temperatures above 180 °F?", options: ["Most pathogens from animals, which the heat cannot reach", "Some fungal plant pathogens", "The roundworm eggs named in the dog-waste fact sheet", "None"], correctIndex: 1, explanation: "Most animal pathogens cannot survive above 130 to 160 °F, but some fungal plant pathogens can withstand temperatures above 180 °F.", sourceLessonSlug: "heat-oxygen-and-time" },
           { prompt: "What does the NRCS chapter call the main indicators used to verify pathogen destruction?", options: ["Color and smell, judged by an experienced composter", "Weight loss and pile height, measured every week", "Temperature and time", "pH alone"], correctIndex: 2, explanation: "NRCS: temperature and time are the main indicators used to verify optimal pathogen destruction.", sourceLessonSlug: "heat-oxygen-and-time" },
-          { prompt: "What does a cold spot inside an active pile indicate, according to the NRCS chapter?", options: ["Finished compost, ready to spread on a vegetable bed", "Anaerobic decomposition", "Too much carbon, which always makes a pile run cold", "Worm activity"], correctIndex: 1, explanation: "NRCS p. 2-21: cold spots indicate sites of anaerobic decomposition.", sourceLessonSlug: "heat-oxygen-and-time" },
+          { prompt: "What does a cold spot inside an active pile indicate, according to the NRCS chapter?", options: ["Finished compost, ready to spread on a vegetable bed", "Anaerobic decomposition", "Too much carbon, which always makes a pile run cold", "Worm activity"], correctIndex: 1, explanation: "NRCS p. 2-20: cold spots indicate sites of anaerobic decomposition.", sourceLessonSlug: "heat-oxygen-and-time" },
           { prompt: "What does the NRCS chapter say about passive piles?", options: ["Slow, with more risk of anaerobic zones", "Fast, because nobody disturbs the microorganisms at work", "Safe for manure, since waiting meets the organic rule", "Odorless"], correctIndex: 0, explanation: "NRCS p. 2-37: this method is slow, and the potential for development of anaerobic conditions is greater.", sourceLessonSlug: "heat-oxygen-and-time" },
           { prompt: "On day 3 a pile reads 140 °F at the center. What does that suggest?", options: ["The pile has met the produce rule and is ready for vegetables", "The aerobic process is running", "The pile is too wet and has gone anaerobic in the middle", "Nothing"], correctIndex: 1, explanation: "140 °F is thermophilic, reached in the 2 to 3 days the chapter describes. One reading does not show the time a federal process needs.", sourceLessonSlug: "heat-oxygen-and-time" },
           { prompt: "A corner of an otherwise hot pile reads 85 °F. Which two causes does lesson 10 let you consider?", options: ["Too much nitrogen, or too many worms in that corner", "Too little air, or too dry", "A faulty thermometer, or a pile above 170 °F", "Sunlight"], correctIndex: 1, explanation: "Cold spots indicate anaerobic decomposition, and below 15 percent moisture microbial activity stops. Check air and water.", sourceLessonSlug: "heat-oxygen-and-time" },
@@ -1000,7 +1010,7 @@ The NRCS chapter's Appendix 2A has a table, "Typical characteristics of selected
           { prompt: "How tall does Purdue's compost guide say a home heap should be?", options: ["1 to 2 inches, the depth of each manure layer", "10 to 15 feet, so that it can pass 170 °F", "Knee high", "4 to 5 feet"], correctIndex: 3, explanation: "ID-182-W: a heap of 4 to 5 feet, which should reach 130 to 160 °F in the center.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
           { prompt: "What center temperature should Purdue's home heap reach?", options: ["Below 105 °F, so that the manure keeps its value", "Above 180 °F, to kill fungal plant pathogens", "98 °F", "130 to 160 °F"], correctIndex: 3, explanation: "ID-182-W: a 4 to 5 foot heap should reach 130 to 160 °F in the center.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
           { prompt: "How often does Purdue's compost guide say to turn the heap?", options: ["At least five times in 15 days, as the federal turned process requires", "Never, because turning recontaminates the center", "At least once or twice a month", "Daily"], correctIndex: 2, explanation: "ID-182-W: turn at least once or twice a month. The federal turned process is five turnings in 15 days.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
-          { prompt: "Why can you not call manure from a heap on Purdue's schedule \"treated\" without measuring?", options: ["Purdue's guide bans manure from home compost heaps", "A heap of 4 to 5 feet can never pass 105 °F", "It runs neither federal process", "You can"], correctIndex: 2, explanation: "Purdue's schedule is a home method. Treated means a measured process, such as 131 °F for 3 days static or 15 days with five turnings.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
+          { prompt: "Why can you not call manure from a heap on Purdue's schedule \"treated\" without measuring?", options: ["Purdue's guide bans manure from home compost heaps", "A heap of 4 to 5 feet can never pass 105 °F", "It runs neither federal process", "You can"], correctIndex: 2, explanation: "Purdue's schedule is a home method. Treated means a measured process, such as 131 °F for 3 consecutive days, aerated static or in-vessel, or 15 days with five turnings.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
           { prompt: "How should you treat manure that went through a cold or slow heap?", options: ["As raw, with section 4's timing", "As treated, since any composting removes the need to wait", "As finished compost, safe for growing crops at once", "As trash"], correctIndex: 0, explanation: "Lesson 12: treat manure that went through a cold or slow heap as raw, and use the timing rules in section 4.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
           { prompt: "What does the NRCS chapter call vermiculture?", options: ["The fastest form of composting, faster than any windrow", "A process equal to PFRP for vegetable crops", "Worm farming, not composting", "Illegal"], correctIndex: 2, explanation: "NRCS p. 2-7: vermiculture is worm farming, not composting at all.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
           { prompt: "How much pathogen reduction does a worm bin give, according to the NRCS chapter?", options: ["Complete, once the worms have passed the material twice", "About the same as 131 °F for three days", "Little or none", "Most of it"], correctIndex: 2, explanation: "NRCS p. 2-7: there is little or no pathogen or weed seed reduction.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
@@ -1009,7 +1019,7 @@ The NRCS chapter's Appendix 2A has a table, "Typical characteristics of selected
           { prompt: "Which farm practice does NRCS section 637.0213 cover that this course does not teach?", options: ["Building steel drum composters from used tanks", "Spreading biosolids on hay fields in winter", "Composting dead animals", "Raising worms"], correctIndex: 2, explanation: "Section 637.0213 covers composting animal mortalities as a farm practice. This course describes it and does not teach it.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
           { prompt: "What weakness do aerated static piles have, according to lesson 12?", options: ["They always overheat past 170 °F within one day", "They cannot be built with manure under the organic rule", "None", "Cool patches where pathogens survive"], correctIndex: 3, explanation: "The NRCS chapter: aerated static piles leave cool patches that contain pathogenic organisms that can survive.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
           { prompt: "Purdue turns once or twice a month; the federal turned process turns five times in 15 days. What follows?", options: ["Purdue's heap meets the federal process once it reaches 130 °F", "A Purdue heap is a home method", "The federal process applies only to heaps under 4 feet tall", "They are the same"], correctIndex: 1, explanation: "A heap on Purdue's schedule is not running either federal process, so its manure is not treated unless a measured process says so.", sourceLessonSlug: "turning-cold-heaps-and-worms" },
-          { prompt: "Where does the NRCS chapter's Table 2A-1 come from?", options: ["Reproduced from ASAE D384.2, like the manure tables", "Adapted from NRAES-54", "Measured by Purdue Extension in Indiana gardens", "The organic rule"], correctIndex: 1, explanation: "Table 2A-1 is adapted from the On-Farm Composting Handbook (NRAES-54). ASAE D384.2 is the source of the Part 651 manure tables.", sourceLessonSlug: "mixing-a-pile-with-table-2a-1" },
+          { prompt: "Where does the NRCS chapter's Table 2A-1 come from?", options: ["Reproduced from ASAE D384.2, like the manure tables", "Adapted from NRAES-54", "Measured by Purdue Extension in Indiana gardens", "The organic rule"], correctIndex: 1, explanation: "Table 2A-1 is adapted from the On-Farm Composting Handbook (NRAES-54). ASAE D384.2 is the source of most of the Part 651 manure tables.", sourceLessonSlug: "mixing-a-pile-with-table-2a-1" },
           { prompt: "What C:N does Table 2A-1 give for laying hen manure?", options: ["6", "30, the ratio it gives for horse manure", "54, the ratio it gives for leaves", "16"], correctIndex: 0, explanation: "Laying hen manure: C:N 6, range 3 to 10, moisture 69 percent.", sourceLessonSlug: "mixing-a-pile-with-table-2a-1" },
           { prompt: "Which manure in Table 2A-1 sits inside the organic rule's 25:1 to 40:1 window on its own?", options: ["Laying hen manure (6), once it has dried in the coop", "Horse manure (30)", "Swine manure (14), the same as broiler litter", "Sheep (16)"], correctIndex: 1, explanation: "Horse manure's C:N of 30 (range 22 to 50) is inside the window without a partner.", sourceLessonSlug: "mixing-a-pile-with-table-2a-1" },
           { prompt: "A pile built mostly on hen manure needs what?", options: ["More hen manure, to raise its nitrogen even further", "More water, to bring it up to 90 percent moisture", "A high-carbon partner", "Worms"], correctIndex: 2, explanation: "At C:N 6, hen manure needs leaves (54), straw (80) or sawdust (442) to reach the window.", sourceLessonSlug: "mixing-a-pile-with-table-2a-1" },
@@ -1117,11 +1127,11 @@ For an Indiana home garden, Purdue's advice is the local guidance, and lesson 17
 
 **The Indiana surprise.** The same bulletin says "most Indiana gardens have a soil pH that is already near neutral, if not slightly alkaline. So, applying lime will not help (and may hurt)" (p. 3). Liming out of habit can do harm here. The test tells you which kind of garden you have.
 
-**Testing the manure.** Lesson 2's warning applies: book values can be off "from a small percentage to several-fold" (Ni & Lim, 2022). Purdue publishes a whole bulletin on calculating manure application rates (Joern & Brichford, 1993). This course does not reproduce its method; your extension office is the place to ask about it.
+**Testing the manure.** Lesson 2's warning applies: book values can be off "from a small percentage to several-fold" (Ni & Lim, 2022, p. 1). Purdue publishes a whole bulletin on calculating manure application rates (Joern & Brichford, 1993). This course does not reproduce its method; your extension office is the place to ask about it.
 
-**The first day matters.** "Most ammonia volatilization occurs within the first 24 hours after surface application" (Sutton et al., 1994). For manure left on the surface, most of the ammonia lost to the air goes in that first day.
+**The first day matters.** "Most ammonia volatilization occurs within the first 24 hours after surface application" (Sutton et al., 1994, "Method of Land Application" section). For manure left on the surface, most of the ammonia lost to the air goes in that first day.
 
-**Cover crops: the other half.** Purdue's home-garden bulletin on cover crops notes that they are "Also known as 'green manure'" (Meyers et al., 2020). It also warns that grass cover crops, with their high C:N, "can temporarily deplete nitrogen". That is the same pattern as lesson 9's pile with too much carbon, where "nitrogen availability is the limiting factor".
+**Cover crops: the other half.** Purdue's home-garden bulletin on cover crops notes that they are "Also known as 'green manure'" (Meyers et al., 2020, p. 1). It also warns that grass cover crops, with their high C:N, "can temporarily deplete nitrogen" (p. 5). That is the same pattern as lesson 9's pile with too much carbon, where "nitrogen availability is the limiting factor" (NRCS, 2010, p. 2-8).
 
 **A short testing plan for a backyard.**
 
@@ -1137,9 +1147,10 @@ For an Indiana home garden, Purdue's advice is the local guidance, and lesson 17
 ## Sources
 - ${HO71("Pages 1, 3, 4 and 5")}
 - ${ABE166}
-- ${AY277}
-- ${ID101}
-- ${HO324}`,
+- ${AY277("Whole bulletin; method under the heading \"Calculating Application Rates\"")}
+- ${ID101("Section \"Method of Land Application\", after Table 2")}
+- ${HO324}
+- ${nrcs637("Printed p. 2-8 (PDF p. 16)", 16)}`,
     },
     {
       slug: "too-much-indiana-rules-and-the-river",
@@ -1159,7 +1170,7 @@ For an Indiana home garden, Purdue's advice is the local guidance, and lesson 17
 
 Nitrogen and phosphorus that leave a field do not disappear. Two courses in this catalog follow them downstream: *What the River Carries*, lesson 1, "Cause and effect, a thousand miles apart", traces nutrients from Midwestern farmland to a low-oxygen zone in the Gulf of Mexico, and *The River and the Watershed*, lesson 10, "A thousand miles of nitrogen", covers cover crops, buffer strips and fertilizer timing. This lesson is the upstream end: the rules that keep manure on the field.
 
-**Frozen ground.** Purdue's manure bulletin: "Do not apply to frozen land with slopes greater than 2% unless there is a vegetative cover crop" (Sutton et al., 1994).
+**Frozen ground.** Purdue's manure bulletin: "Do not apply to frozen land with slopes greater than 2% unless there is a vegetative cover crop" (Sutton et al., 1994, "Applying Manure to the Land" section).
 
 **Indiana's fertilizer-material rule, 355 IAC 8.** It applies to anyone who uses or distributes "fertilizer material for the purposes of producing an agricultural crop" (355 IAC 8-1-2(a)). Three definitions make it reach a gardener:
 
@@ -1180,7 +1191,7 @@ So a vegetable gardener is growing an agricultural crop, and is outside the rule
 :::reveal When does IDEM's registration requirement not apply to home composting? ||| When you compost organic material generated by your own activities on your own property, or the operation covers less than 300 square feet.
 
 ## Sources
-- ${ID101}
+- ${ID101("Section \"Applying Manure to the Land\"")}
 - ${IAC8("Sections 8-1-2, 8-2-2, 8-2-9, 8-3 (Table 1) and 8-3-4")}
 - ${IAC7}
 - ${IDEM_COMPOST}
@@ -1192,7 +1203,7 @@ So a vegetable gardener is growing an agricultural crop, and is outside the rule
       title: "17 · Find your extension office",
       section: S4,
       lessonType: "assignment",
-      body: `Purdue's soil-testing bulletin tells you to "check with the Purdue Extension office in your county" (Daniel et al., 2018). This assignment is that step, done once, so the answer is on paper when you need it.
+      body: `Purdue's soil-testing bulletin tells you to "check with the Purdue Extension office in your county" (Daniel et al., 2018, p. 5). This assignment is that step, done once, so the answer is on paper when you need it.
 
 **Indiana.** Purdue Extension "connects all 92 Indiana counties", and its county-office page has a selector for finding yours (Purdue Extension, n.d.-a). The office locator address printed in the soil-testing bulletin now returns an error page, which is a small lesson in itself: guidance carries a date, and so does every link in it.
 
@@ -1206,7 +1217,7 @@ As an example, here is how the Marion County office was listed when this course 
 
 1. **Your office.** Its name, and how you found it (Purdue's selector, the Extension Foundation list, or another route).
 2. **Your educator.** The name and title of the person who handles horticulture or agriculture for your county, or the regional educator who covers it. Use only what the office publishes.
-3. **Its guidance.** The title, date and web address of the office's own guide on compost, manure or soil testing.
+3. **Its guidance.** The title, date and web address of the guide the office gives on compost or manure: its own, or the Purdue Extension or state Extension guide it points you to.
 4. **Its timing.** Quote exactly what that guide says about when to apply manure. Is it Purdue's six months and previous fall, the 90 and 120 days that Iowa State gives, or something else? Say which, from lesson 14.
 5. **Its soil test.** How the office tells you to get a soil test, and the lab it points to.
 6. **Your question.** One question you would ask this educator about your own plan. Keep it; lesson 22 uses it.
@@ -1214,7 +1225,7 @@ As an example, here is how the Marion County office was listed when this course 
 **What a strong answer shows.** An exact quotation with its date, not a summary. An honest "the county page lists no horticulture educator; the regional page names this person" where that is what you found. And a note of anything that disagreed with this course, because your office is the one that knows your county.
 
 ## Sources
-- ${HO71("The referral to your county office")}
+- ${HO71("Page 5 (the referral to your county office and the printed office-locator address)")}
 - ${PURDUE_COUNTY}
 - ${PURDUE_TRANSFORM}
 - ${PURDUE_REGIONS}
@@ -1236,7 +1247,7 @@ As an example, here is how the Marion County office was listed when this course 
           { prompt: "What word does the organic rule use for working manure into the soil before the 90 or 120 days begin?", options: ["Broadcast, the word Carver used for spreading by hand", "Top-dressed, meaning spread over the surface only", "Incorporated", "Buried"], correctIndex: 2, explanation: "205.203(c)(1)(ii) and (iii): incorporated into the soil not less than 120 or 90 days prior to harvest.", sourceLessonSlug: "when-to-spread" },
           { prompt: "What does 21 CFR 112.56(a)(1)(ii) say for untreated manure applied so that it does not contact the crop during or after application?", options: ["120 days, the organic rule's longer interval", "\"[Reserved]\", the same as the paragraph before it", "90 days", "0 days"], correctIndex: 3, explanation: "Paragraph (a)(1)(ii): 0 days. The \"[Reserved]\" paragraph is (a)(1)(i), for untreated manure applied in a way that minimizes contact.", sourceLessonSlug: "when-to-spread" },
           { prompt: "What does 21 CFR 112.56 say for treated material?", options: ["\"[Reserved]\", the same as the untreated paragraph", "0 days", "15 days, the length of the turned compost process", "120 days"], correctIndex: 1, explanation: "The paragraphs for treated material also say 0 days.", sourceLessonSlug: "when-to-spread" },
-          { prompt: "What does \"[Reserved]\" mean in a CFR paragraph?", options: ["The number is confidential and given only to certified growers", "The interval is the same as the organic rule's 120 days", "Repealed", "It holds no number"], correctIndex: 3, explanation: "The paragraph exists and is empty: FDA has not set that interval.", sourceLessonSlug: "when-to-spread" },
+          { prompt: "What does \"[Reserved]\" mean in a CFR paragraph?", options: ["The number is confidential and given only to certified growers", "The interval is the same as the organic rule's 120 days", "Left blank by a printing error", "It holds no number"], correctIndex: 3, explanation: "The paragraph exists and is empty: FDA has not set that interval.", sourceLessonSlug: "when-to-spread" },
           { prompt: "Which statement about the 90 and 120 days is accurate?", options: ["They are FDA's food-safety waiting periods for all produce in the country", "They are Purdue's rules for every Indiana home garden", "They are state laws", "They come from the organic rule"], correctIndex: 3, explanation: "The 90 and 120 days are in 7 CFR 205.203(c)(1). FDA's food-safety rule left its matching paragraph blank, and Purdue gives different advice.", sourceLessonSlug: "when-to-spread" },
           { prompt: "What does Iowa State's guide advise about manure timing?", options: ["120 days, or 90 for other vegetables", "Six months of composting, with fresh manure only in the fall", "Zero days, since FDA has set no interval", "One year"], correctIndex: 0, explanation: "Iowa State: at least 120 days before harvesting vegetables that contact soil, and 90 days for other vegetables.", sourceLessonSlug: "when-to-spread" },
           { prompt: "How long does Purdue's \"The Scoop on Poop\" say to compost manure?", options: ["At least 120 days for root crops and 90 days for others", "At least 15 days, turned five times", "At least six months", "One week"], correctIndex: 2, explanation: "Purdue: manure should be composted for a minimum of six months to reduce the risk of contamination.", sourceLessonSlug: "when-to-spread" },
@@ -1359,7 +1370,7 @@ A note before you open it. The scanned copy comes from the National Agricultural
           answer: "Any compost-pile instruction.",
         },
       ],
-      body: `In October 1936 Carver published Bulletin No. 42, *How to Build Up and Maintain the Virgin Fertility of Our Soils* (Carver, 1936). Thirty-one years after Bulletin No. 6, some advice is the same and one piece is new.
+      body: `In October 1936 Carver published Bulletin No. 42, *How to Build Up and Maintain the Virgin Fertility of Our Soils* (Carver, 1936, cover). Thirty-one years after Bulletin No. 6, some advice is the same and one piece is new.
 
 **The same.** Ditches "should be filled with pine tops, bark, leaves, and organic rubbish of any kind that will decay and ultimately make soil" (p. 5).
 
@@ -1378,16 +1389,16 @@ Read what each is for.
 
 What changed between 1936 and now is the question being asked. The produce rule's processes and microbial standards (21 C.F.R. §§ 112.54(b), 112.55(b)) measure pathogen reduction. Carver's caution measures fertilizer value. A gardener today, putting manure near food, follows the pathogen rules, and can still take Carver's point that a pile has more than one job.
 
-Notice also what cannot be lined up: Carver gives no temperature. "Steam rising" is an observation, not a thermometer reading, so there is no honest way to say how far his fire fang sits above 131 °F.
+Notice also what cannot be lined up: Carver gives no temperature. "Steam rising" is an observation, not a thermometer reading, so there is no honest way to say whether his fire fang sits above or below 131 °F.
 
-**One table to look at, not to use.** Page 8 also prints a table of what the compost contains. Its units do not agree with each other, so this course quotes no number from it. Look at it as an artifact of its time.
+**One table to look at, not to use.** Page 8 also prints a table headed "Composition of 1,000 Pounds of Fresh Excrements", with rows for cow, hog, sheep, horse, hen, duck and goose. It describes fresh manure, not the finished compost. Its units do not agree with each other, so this course quotes no number from it. Look at it as an artifact of its time.
 
 :::reveal What did Carver's 1936 "fire fang" caution warn against, and why? ||| Letting the compost heap get hot enough for steam to rise, because, he said, you would lose much of the value of the manure.
 
 :::reveal Why do today's composting rules require at least 131 °F when Carver warned against a steaming heap? ||| They answer a different question: pathogen destruction, verified by temperature and time. Carver's caution was about keeping the manure's value as fertilizer.
 
 ## Sources
-- ${CARVER_1936("Printed pp. 5, 7 and 8 (PDF pp. 7, 9 and 10)")}
+- ${CARVER_1936("Cover, dated October 1936 (unnumbered, PDF p. 3); printed pp. 5, 7 and 8 (PDF pp. 7, 9 and 10)")}
 - ${nrcs637("Printed p. 2-3 (PDF p. 11); section 637.0206, pp. 2-26 to 2-27 (PDF pp. 34 to 35)", 11)}
 - ${PRODUCE("112.54", "(b)")}
 - ${PRODUCE("112.55", "(b)")}`,
@@ -1410,11 +1421,11 @@ Notice also what cannot be lined up: Carver gives no temperature. "Steam rising"
 
 **King, 1911.** F. H. King's *Farmers of Forty Centuries* describes farming in China, Korea and Japan. In chapter IX, "The Utilization of Waste", he writes: "One of the most remarkable agricultural practices adopted by any civilized people is the centuries-long and well nigh universal conservation and utilization of all human waste in China, Korea and Japan, turning it to marvelous account in the maintenance of soil fertility and in the production of food" (King, 1911, ch. IX).
 
-Read it as history. Lesson 8 explained why human waste is regulated and out of scope here (21 C.F.R. § 112.53).
+Read it as history. Lesson 8 explained why human waste is regulated and out of scope here: FDA's produce safety rule says you may not use it for growing covered produce, except sewage sludge biosolids used under EPA's biosolids rule (21 C.F.R. § 112.53).
 
 **The Nara compost house.** In the same chapter King describes a compost house (his Figs. 116 and 117). "Water is added sufficient to keep the whole saturated and to maintain the temperature below that of the body", and the stacks stand "five weeks in summer, seven weeks in winter".
 
-Compare it with section 3. The NRCS chapter wants moisture of about 60 percent, "damp but not soggy", and puts the thermophilic stage above 105 °F. King's house was kept saturated and below body temperature. It is a different process from the hot, damp, aerobic compost the federal rules describe, and nothing in this course treats it as a method.
+Compare it with section 3. The NRCS chapter wants moisture of about 60 percent, "damp but not soggy", and puts the thermophilic stage above 105 °F. King's house was kept saturated and below body temperature. It is a different process from the hot, aerobic compost the federal rules describe, and nothing in this course treats it as a method.
 
 **Darwin, 1881.** Lesson 1 opened with Darwin's sentence on vegetable mould passing through the guts of worms. His conclusion goes further: "It may be doubted whether there are many other animals which have played so important a part in the history of the world, as have these lowly organized creatures" (Darwin, 1881, ch. VII).
 
@@ -1435,7 +1446,7 @@ Hold that next to lesson 12. Darwin shows worms building soil. The NRCS chapter 
 ## Sources
 - ${KING}
 - ${DARWIN("Introduction; Chapter VII, Conclusion")}
-- ${ID101}
+- ${ID101("Colophon at the foot of the page, after \"New 5/94\"")}
 - ${nrcs637("Printed pp. 2-2, 2-3 and 2-7 (PDF pp. 10, 11 and 15)", 10)}
 - ${PRODUCE("112.53", "")}
 - ${EXT_FOUNDATION}`,
@@ -1450,7 +1461,7 @@ Hold that next to lesson 12. Darwin shows worms building soil. The NRCS chapter 
         questionsPerAttempt: 5,
         shuffleOptions: true,
         questions: [
-          { prompt: "What date does Carver's Bulletin No. 6 carry?", options: ["October 1936, the date of his compost bulletin", "May 1914, the month of the Smith-Lever Act", "April 1905", "1881"], correctIndex: 2, explanation: "Bulletin No. 6 is dated April 1905 (printed p. 3, PDF p. 5). Bulletin No. 42 is from October 1936.", sourceLessonSlug: "carver-1905" },
+          { prompt: "What date does Carver's Bulletin No. 6 carry?", options: ["October 1936, the date of his compost bulletin", "May 1914, the month of the Smith-Lever Act", "April 1905", "1881"], correctIndex: 2, explanation: "Bulletin No. 6 is dated April 1905 (printed p. 3, PDF p. 5). Bulletin No. 42 is dated October 1936 on its cover (PDF p. 3).", sourceLessonSlug: "carver-1905" },
           { prompt: "Which institution's experiment station issued Bulletin No. 6?", options: ["Tuskegee Normal and Industrial Institute", "Purdue University's agricultural experiment station in Indiana", "The USDA Natural Resources Conservation Service in Washington", "Iowa State"], correctIndex: 0, explanation: "How to Build Up Worn Out Soils was Bulletin No. 6 of the Tuskegee Normal and Industrial Institute Experiment Station.", sourceLessonSlug: "carver-1905" },
           { prompt: "What did Carver put into washed-out ditches in 1905?", options: ["Raw dog and cat waste, buried deep to keep it away from crops", "Pine tops, hay, bark, leaves", "Crushed limestone, to raise the soil's pH before planting", "Sand"], correctIndex: 1, explanation: "Printed p. 4: pine tops, hay, bark, old cotton stalks, leaves, and rubbish of any kind that would decay and ultimately make soil.", sourceLessonSlug: "carver-1905" },
           { prompt: "Why did Carver fill the ditches with that material?", options: ["To stop cattle from wandering across the fields at night", "To hide the gullies from the county tax assessor", "To burn it", "So it would decay into soil"], correctIndex: 3, explanation: "He chose rubbish of any kind that would decay and ultimately make soil: the loop at the scale of a field.", sourceLessonSlug: "carver-1905" },
@@ -1465,7 +1476,7 @@ Hold that next to lesson 12. Darwin shows worms building soil. The NRCS chapter 
           { prompt: "What real work of Carver's does that lesson point to?", options: ["The invention of peanut butter and its first patent", "Soil restoration and crop rotation", "A treatment for toxoplasmosis in farm cats", "Steam engines"], correctIndex: 1, explanation: "It points to his work on soil restoration and crop rotation. Bulletin No. 6 is that work in his own words and numbers.", sourceLessonSlug: "carver-1905" },
           { prompt: "Printed page 4 of Bulletin No. 6 is which page of the scan?", options: ["Page 6", "Page 2, since the scan drops the cover and the title page", "Page 4, since the scan matches the print exactly", "Page 40"], correctIndex: 0, explanation: "The printed page numbers run two behind the scan: printed page 4 is page 6 of the file.", sourceLessonSlug: "carver-1905" },
           { prompt: "Why does lesson 18 read Bulletin No. 6 as a primary source?", options: ["It is Carver's own account", "It is the current federal standard for composting manure", "Purdue wrote it with Carver in 1994", "It is short"], correctIndex: 0, explanation: "It records what a working agricultural scientist did on tired land, in his own words.", sourceLessonSlug: "carver-1905" },
-          { prompt: "When did Carver publish Bulletin No. 42?", options: ["October 1936", "April 1905, the date of Bulletin No. 6", "May 1914, when the Smith-Lever Act passed", "2005"], correctIndex: 0, explanation: "How to Build Up and Maintain the Virgin Fertility of Our Soils, Bulletin No. 42, October 1936.", sourceLessonSlug: "carver-1936-and-fire-fang" },
+          { prompt: "When did Carver publish Bulletin No. 42?", options: ["October 1936", "April 1905, the date of Bulletin No. 6", "May 1914, when the Smith-Lever Act passed", "2005"], correctIndex: 0, explanation: "How to Build Up and Maintain the Virgin Fertility of Our Soils, Bulletin No. 42, is dated October 1936 on its cover (PDF p. 3).", sourceLessonSlug: "carver-1936-and-fire-fang" },
           { prompt: "Which advice from 1905 does the 1936 bulletin repeat?", options: ["Fill ditches with organic rubbish", "Put manure only on growing fruits and vegetables", "Keep the compost heap steaming hot all year", "Burn all leaves"], correctIndex: 0, explanation: "Printed p. 5: ditches should be filled with pine tops, bark, leaves, and organic rubbish of any kind that will decay and ultimately make soil.", sourceLessonSlug: "carver-1936-and-fire-fang" },
           { prompt: "How does the 1936 bulletin rank farmyard manures?", options: ["Second to commercial fertilizer in every respect", "Useful only on very poor land, never on medium land", "Dangerous", "Nothing builds land as well"], correctIndex: 3, explanation: "Printed p. 7: no fertilizer or system of fertilization to date has been found that will build up the land as effectively, cheaply, and permanently as farmyard manures.", sourceLessonSlug: "carver-1936-and-fire-fang" },
           { prompt: "What did Carver say about a year-round compost pile?", options: ["Optional, for farms that can afford hired labor", "Forbidden near a well or a spring", "Absolutely essential", "Too costly"], correctIndex: 2, explanation: "Printed p. 7: a year-round compost pile is absolutely essential and can be had with little labor and practically no cash outlay.", sourceLessonSlug: "carver-1936-and-fire-fang" },
@@ -1479,7 +1490,7 @@ Hold that next to lesson 12. Darwin shows worms building soil. The NRCS chapter 
           { prompt: "What did Carver's \"fire fang\" caution warn against?", options: ["A heap too cold to break down the leaves by spring", "A heap built too close to the farmhouse", "Rain", "A heap hot enough to steam"], correctIndex: 3, explanation: "Printed p. 8: do not allow this compost-heap to become hot enough for steam to rise from it (\"fire fang\").", sourceLessonSlug: "carver-1936-and-fire-fang" },
           { prompt: "What reason did Carver give for the fire-fang caution?", options: ["The steam could set the barn alight", "Hot compost kills every earthworm in it", "The smell", "Value is lost from the manure"], correctIndex: 3, explanation: "His stated reason: you will lose much of the value of the manure.", sourceLessonSlug: "carver-1936-and-fire-fang" },
           { prompt: "What does Carver leave unstated about fire fang?", options: ["Whether a steaming heap is good or bad for the manure", "That the caution applies to his compost heap", "Its name", "What exactly is lost"], correctIndex: 3, explanation: "He says much of the value is lost but not what it is, and the course does not guess for him.", sourceLessonSlug: "carver-1936-and-fire-fang" },
-          { prompt: "Why can Carver's fire fang not be lined up with 131 °F?", options: ["He measured in Celsius, and the rules use Fahrenheit", "He gives no temperature", "131 °F is cooler than any heap can get", "It can"], correctIndex: 1, explanation: "\"Steam rising\" is an observation, not a thermometer reading, so there is no honest way to say how far it sits above 131 °F.", sourceLessonSlug: "carver-1936-and-fire-fang" },
+          { prompt: "Why can Carver's fire fang not be lined up with 131 °F?", options: ["He measured in Celsius, and the rules use Fahrenheit", "He gives no temperature", "131 °F is cooler than any heap can get", "It can"], correctIndex: 1, explanation: "\"Steam rising\" is an observation, not a thermometer reading, so there is no honest way to say whether his fire fang sits above or below 131 °F.", sourceLessonSlug: "carver-1936-and-fire-fang" },
           { prompt: "What question do today's 131 °F processes answer?", options: ["Keeping the manure's full value as fertilizer, as Carver wanted", "How many tons to spread per acre of poor land", "Pathogen destruction", "Color"], correctIndex: 2, explanation: "The NRCS chapter: heat is necessary for the destruction of pathogens, and temperature and time verify it.", sourceLessonSlug: "carver-1936-and-fire-fang" },
           { prompt: "What does lesson 19 say changed between 1936 and now?", options: ["The question being asked", "The temperature at which manure turns into soil", "The chemistry of manure itself", "Nothing"], correctIndex: 0, explanation: "Carver's caution measures fertilizer value; the produce rule's processes and microbial standards measure pathogen reduction.", sourceLessonSlug: "carver-1936-and-fire-fang" },
           { prompt: "What should a gardener putting manure near food follow today?", options: ["Carver's caution, keeping the heap below steaming", "Whichever source gives the higher tonnage", "The pathogen rules", "Nothing"], correctIndex: 2, explanation: "Near food, the pathogen rules govern. Carver's point about value can still be taken alongside them.", sourceLessonSlug: "carver-1936-and-fire-fang" },
@@ -1490,7 +1501,7 @@ Hold that next to lesson 12. Darwin shows worms building soil. The NRCS chapter 
           { prompt: "In chapter IX, which practice does King call one of the most remarkable?", options: ["Burning crop stubble every autumn before plowing", "Spreading river silt on rice paddies each spring", "Terracing", "Returning human waste to fields"], correctIndex: 3, explanation: "King: the centuries-long and well nigh universal conservation and utilization of all human waste in China, Korea and Japan.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
           { prompt: "Which U.S. rule today bars human waste on covered produce, outside the biosolids exception?", options: ["7 CFR 205.203(c)(1), the organic rule's interval paragraph", "355 IAC 8, Indiana's fertilizer-material rule", "None", "21 CFR 112.53"], correctIndex: 3, explanation: "Lesson 20 reads King as history and points back to 21 CFR 112.53 and lesson 8.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
           { prompt: "How wet did King say the Nara compost house was kept?", options: ["Damp but not soggy, like a wrung-out sponge", "Bone dry, below 15 percent moisture", "Frozen", "Saturated"], correctIndex: 3, explanation: "Water is added sufficient to keep the whole saturated. Damp but not soggy is the NRCS chapter's target, a different process.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
-          { prompt: "At what temperature did King say the Nara compost house was kept?", options: ["Above 131 °F for three days, as today's rules require", "Above 170 °F, hot enough to steam", "Below body temperature", "Freezing"], correctIndex: 2, explanation: "King: water is added to maintain the temperature below that of the body.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
+          { prompt: "At what temperature did King say the Nara compost house was kept?", options: ["Above 131 °F for three days, as today's rules require", "Above 170 °F, past the organic rule's upper limit", "Below body temperature", "Freezing"], correctIndex: 2, explanation: "King: water is added to maintain the temperature below that of the body.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
           { prompt: "How long did the Nara compost stacks stand in summer?", options: ["Five weeks", "Seven weeks, the figure King gives for winter", "Six months, Purdue's composting time", "One day"], correctIndex: 0, explanation: "Five weeks in summer, seven weeks in winter.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
           { prompt: "How long did the Nara compost stacks stand in winter?", options: ["Five weeks, the figure King gives for summer", "120 days, the organic rule's interval", "Ten years", "Seven weeks"], correctIndex: 3, explanation: "Five weeks in summer, seven weeks in winter.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
           { prompt: "How does the Nara compost house compare with the compost the federal rules describe?", options: ["Hotter and drier, reaching the thermophilic stage faster", "The same in temperature, moisture and time", "Wetter and cooler", "Unknown"], correctIndex: 2, explanation: "Saturated and below body temperature, against the NRCS chapter's damp-but-not-soggy and the rules' 131 °F.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
@@ -1533,10 +1544,10 @@ Everything so far comes together in one question: for your own place, which rule
 **Six questions, in order.**
 
 1. **Where does the manure come from?** Your own animals; a neighbor's; a large farm; a bag or a truck of unknown origin. CFO manure is governed under 327 IAC 19, while manure that is sold, mixed or of unknown source falls under 355 IAC 8 (lesson 16).
-2. **How much in a year?** Under 10 cubic yards or 4,000 gallons, 355 IAC 8 does not apply to you. Over it, the setbacks and frozen-ground limits in lesson 16 do.
+2. **How much in a year?** Under 10 cubic yards or 4,000 gallons, 355 IAC 8 does not apply to you. Over it, the setbacks and frozen-ground limits in lesson 16 apply if you grow an agricultural crop (8-2-2), which a vegetable garden is and a lawn, tree or flower bed is not.
 3. **Where is your compost, and how big?** Your own material on your own property, or a pile under 300 square feet, is exempt from IDEM registration.
 4. **Is any of it on the never list?** Dog, cat or pig manure; cat litter; human waste; butchering water as garden water (lessons 5 to 8).
-5. **Is your compost "treated", or raw?** Only a measured process counts: 131 °F for 3 days in a static pile, or 15 days with five turnings, as lesson 11 set out. A cold heap, a passive pile or a worm bin is raw for this purpose.
+5. **Is your compost "treated", or raw?** Only a measured process counts: 131 °F for 3 consecutive days in an aerated static pile or an in-vessel system, or 15 days with five turnings, as lesson 11 set out. A cold heap, a passive pile or a worm bin is raw for this purpose.
 6. **What do you grow, and when do you harvest?** Purdue's guidance: compost at least six months; fresh manure only the previous fall; never on actively growing fruits or vegetables. The benchmarks: the organic rule's 120 and 90 days, and the produce rule's "[Reserved]".
 
 **Three sketches.**
@@ -1549,7 +1560,7 @@ Everything so far comes together in one question: for your own place, which rule
 
 **A testing plan, from lesson 15.** Late summer or early fall; 10 to 15 cores for a large area, 6 to 8 inches deep; a pint per area to a lab on the Purdue list; every three to five years.
 
-:::reveal In Indiana, what single number decides whether 355 IAC 8 applies to a home grower using manure? ||| The volume: 10 cubic yards (or 4,000 gallons) of fertilizer material a year.
+:::reveal In Indiana, what single number decides whether 355 IAC 8 applies to a home food grower using manure? ||| The volume: 10 cubic yards (or 4,000 gallons) of fertilizer material a year, since a food garden grows an agricultural crop.
 
 :::reveal Why does this course treat the two federal rules as benchmarks rather than as your legal duties? ||| Because it did not verify which growers each federal rule legally covers. Indiana's own thresholds are the concrete tests, and the extension office answers the rest.
 
@@ -1578,7 +1589,7 @@ This is the course's capstone. You will build a model of the loop on your own gr
 **Step 2: draw the boxes.** Put in a box for each of these:
 
 - **Plants:** your crops.
-- **Animals:** your hens, horse or rabbits, and you.
+- **Animals:** your hens, horse or rabbits, and you. Your own waste stays out of this loop (lesson 8): draw it leaving the boundary, never going into the pile or the beds.
 - **Decomposers:** the microorganisms in your compost pile (lesson 9) and the worms in your soil or bin (lessons 12 and 20).
 - **Soil:** your beds.
 
@@ -1586,7 +1597,7 @@ This is the course's capstone. You will build a model of the loop on your own gr
 
 **Step 4: annotate every manure.** For each one: which animal; its NRCS row, or "no table: test" (lessons 3 and 4); its C:N from Table 2A-1 and its partner material (lesson 13).
 
-**Step 5: mark the process.** Hot pile, cold heap, passive pile or worm bin. For a hot pile, add a thermometer log: date, center and edge readings, turnings, and whether it reached 131 °F for 3 days static, or 15 days with five turnings (lessons 10 and 11). Anything else is raw for timing purposes.
+**Step 5: mark the process.** Hot pile, cold heap, passive pile or worm bin. For a hot pile, add a thermometer log: date, center and edge readings, turnings, and whether it reached 131 °F for 3 consecutive days aerated static or in-vessel, or 15 days with five turnings (lessons 10 and 11). Anything else is raw for timing purposes.
 
 **Step 6: mark the timing.** For each bed, the harvest date, and the rule you follow: Purdue's six months, previous fall, never on growing crops; with the organic rule's 120 and 90 days beside it as the benchmark (lesson 14).
 
@@ -1603,9 +1614,9 @@ This is the course's capstone. You will build a model of the loop on your own gr
 **What a strong model shows.** A boundary that names what crosses it. Arrows that carry named matter, not vague "nutrients". At least one leak, drawn honestly. A never list with reasons. A timing rule with its source. And a revision that changes something real, because a model you never revise is a picture.
 
 ## Sources
-- ${AY277}
-- ${nrcs637("Printed pp. 2-1, 2-8 and 2-21 (PDF pp. 9, 16 and 29); Table 2A-1 (PDF pp. 91 to 93)", 9)}
-- ${ID101}
+- ${AY277("Opening paragraph, before the heading \"Determining Manure Nutrient Content\"")}
+- ${nrcs637("Printed pp. 2-1 and 2-8 (PDF pp. 9 and 16); Table 2A-1 (PDF pp. 91 to 93)", 9)}
+- ${ID101("Sections \"Method of Land Application\" and \"Applying Manure to the Land\"")}
 - ${ORGANIC("(c)(1) and (c)(2)")}
 - ${SCOOP}
 - ${HO71("Pages 3 to 5")}`,
@@ -1624,7 +1635,7 @@ This is the course's capstone. You will build a model of the loop on your own gr
           { prompt: "In Indiana, which two state tests does lesson 21 call concrete?", options: ["355 IAC 8's volume, and IDEM's exemption", "The organic rule's 120 days and FDA's \"[Reserved]\" paragraph", "The NRCS animal unit and the ASAE D384.2 standard", "Soil pH"], correctIndex: 0, explanation: "The 10 cubic yard threshold of 355 IAC 8 and IDEM's registration exemption for home composting are the Indiana tests.", sourceLessonSlug: "which-rule-applies-to-you" },
           { prompt: "Your compost pile covers 200 square feet and holds only your own yard and kitchen material. What does IDEM require?", options: ["Registration, since every pile over 100 square feet needs it", "A permit from the State Chemist under 355 IAC 8", "No registration", "Weekly inspection"], correctIndex: 2, explanation: "Both exemptions apply: material from your own activities composted at your property, and an operation under 300 square feet.", sourceLessonSlug: "which-rule-applies-to-you" },
           { prompt: "You bring in a truckload of manure of unknown origin. Which Indiana rule covers it if you pass the volume threshold?", options: ["327 IAC 19, the rule for confined feeding operation manure", "355 IAC 8", "21 CFR 112.53, the produce rule's human-waste paragraph", "None"], correctIndex: 1, explanation: "Manure that is sold, mixed or of unknown source falls under 355 IAC 8; CFO manure falls under 327 IAC 19.", sourceLessonSlug: "which-rule-applies-to-you" },
-          { prompt: "Which compost counts as \"treated\" under lesson 21's fifth question?", options: ["Any heap that has sat outdoors for at least one full winter", "Measured: 131 °F for 3 days, static", "Worm castings from a bin that was fed manure", "Bagged mulch"], correctIndex: 1, explanation: "Only a measured process counts: 131 °F for 3 days in a static pile, or 15 days with five turnings. A cold heap, a passive pile or a worm bin is raw for this purpose.", sourceLessonSlug: "which-rule-applies-to-you" },
+          { prompt: "Which compost counts as \"treated\" under lesson 21's fifth question?", options: ["Any heap that has sat outdoors for at least one full winter", "Measured: 131 °F for 3 days, aerated", "Worm castings from a bin that was fed manure", "Bagged mulch"], correctIndex: 1, explanation: "Only a measured process counts: 131 °F for 3 consecutive days in an aerated static pile or an in-vessel system, or 15 days with five turnings. A cold heap, a passive pile or a worm bin is raw for this purpose.", sourceLessonSlug: "which-rule-applies-to-you" },
           { prompt: "In lesson 21's backyard sketch with six hens, what does the hen manure need?", options: ["More nitrogen from a second manure such as swine", "Nothing, since its C:N of 6 is inside every window", "High-carbon partners", "Lime"], correctIndex: 2, explanation: "Hen manure's C:N is 6 (Table 2A-1), so it needs partners such as leaves (54) or straw (80).", sourceLessonSlug: "which-rule-applies-to-you" },
           { prompt: "In lesson 21's balcony sketch, why is a worm bin no place for pet waste?", options: ["Worms do little to reduce pathogens", "Pet waste kills composting worms within a single day", "Worm bins must be registered with IDEM", "It is fine"], correctIndex: 0, explanation: "The NRCS chapter: vermiculture gives little or no pathogen reduction. And pet waste stays out of compost in any case.", sourceLessonSlug: "which-rule-applies-to-you" },
           { prompt: "A sedentary 1,000-pound horse makes 51 pounds of manure a day, as excreted. How much is that in a year?", options: ["18,615 pounds", "5,100 pounds, which is 51 pounds times 100 days", "51 pounds, because the table figure is per year", "365 pounds"], correctIndex: 0, explanation: "51 × 365 = 18,615 pounds a year, as excreted, on the NRCS table's per-1,000-pound basis.", sourceLessonSlug: "which-rule-applies-to-you" },
@@ -1634,7 +1645,7 @@ This is the course's capstone. You will build a model of the loop on your own gr
           { prompt: "In step 2, which boxes does the model include?", options: ["Plants, animals, decomposers, soil", "Inputs, outputs and profit, as in a farm budget", "Producers of manure only, with no plants shown", "Rules"], correctIndex: 0, explanation: "The four boxes: plants (your crops), animals (including you), decomposers (microorganisms and worms) and soil.", sourceLessonSlug: "build-your-own-loop" },
           { prompt: "Which decomposers does the model name?", options: ["Fungi only, because bacteria cannot live above 105 °F", "Cats and dogs, which break down kitchen scraps", "Microorganisms and worms", "None"], correctIndex: 2, explanation: "The microorganisms in the compost pile (lesson 9) and the worms in your soil or bin (lessons 12 and 20).", sourceLessonSlug: "build-your-own-loop" },
           { prompt: "What must each arrow in the model carry?", options: ["A dollar value for whatever moves along it", "The date on which the arrow was first drawn", "Nothing", "A label naming the matter"], correctIndex: 3, explanation: "Step 3: label each arrow with the matter it carries, such as feed, manure, scraps, compost or harvest.", sourceLessonSlug: "build-your-own-loop" },
-          { prompt: "For a hot pile, what does step 5 ask you to log?", options: ["The color of the pile each morning at sunrise", "The weight of the pile after every rain", "Temperatures, turnings and days", "Nothing"], correctIndex: 2, explanation: "A thermometer log: date, center and edge readings, turnings, and whether it reached 131 °F for 3 days static or 15 days with five turnings.", sourceLessonSlug: "build-your-own-loop" },
+          { prompt: "For a hot pile, what does step 5 ask you to log?", options: ["The color of the pile each morning at sunrise", "The weight of the pile after every rain", "Temperatures, turnings and days", "Nothing"], correctIndex: 2, explanation: "A thermometer log: date, center and edge readings, turnings, and whether it reached 131 °F for 3 consecutive days aerated static or in-vessel, or 15 days with five turnings.", sourceLessonSlug: "build-your-own-loop" },
           { prompt: "Which of these is a leak step 7 asks you to draw?", options: ["Ammonia after surface spreading", "Carbon dioxide from the gardener's own breath", "Heat lost from the house in winter", "None"], correctIndex: 0, explanation: "Step 7 names ammonia in the first 24 hours after surface spreading, ammonia leaching from a pile short of carbon, and a frozen slope.", sourceLessonSlug: "build-your-own-loop" },
           { prompt: "Why does a strong model include a revision?", options: ["The course requires two drawings for a passing grade", "The first drawing must always be wrong", "It need not", "A model never revised is a picture"], correctIndex: 3, explanation: "Step 10 asks you to change one arrow after a season or a soil test, naming the lesson that tells you so.", sourceLessonSlug: "build-your-own-loop" },
           { prompt: "What does step 1 ask you to list beside the boundary?", options: ["What crosses it, in and out", "The names of every neighbor whose land touches yours", "The price of each input bought that year", "The weather"], correctIndex: 0, explanation: "Inputs such as feed, bought compost or a neighbor's leaves; outputs such as food, drainage water and ammonia.", sourceLessonSlug: "build-your-own-loop" },
@@ -1647,10 +1658,10 @@ This is the course's capstone. You will build a model of the loop on your own gr
           { prompt: "A neighbor's dog-waste compost reached 145 °F for several days. Can it go on your lettuce?", options: ["Yes, since 145 °F is above the 131 °F federal floor", "Yes, after 90 days, the organic rule's shorter interval", "No", "Only if rinsed"], correctIndex: 2, explanation: "The 2005 sheet says dog waste compost should not be used on crops grown for human consumption, whatever temperature it reached.", sourceLessonSlug: "the-fairbanks-dog-waste-study" },
           { prompt: "Your cat uses the vegetable bed. Which CDC advice applies most directly?", options: ["Change the bed's soil every five days", "Compost the soil at 131 °F before planting", "Gloves, and rinse the produce", "Nothing"], correctIndex: 2, explanation: "CDC: wear gloves when touching soil that cat feces may have contaminated, and rinse fruit and vegetables under running water.", sourceLessonSlug: "toxoplasma-and-toxocara" },
           { prompt: "Which source in section 2 is a federal regulation?", options: ["Purdue's FS-44-W bulletin on backyard poultry", "Iowa State's Using Manure in the Home Garden", "21 CFR 112.53", "CDC"], correctIndex: 2, explanation: "21 CFR 112.53 is part of FDA's produce safety rule. The others are extension guidance and public health advice.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
-          { prompt: "You butcher three chickens. Where does the wastewater go?", options: ["Toward the compost, not the garden", "Onto the vegetable garden as free fertilizer", "Into the worm bin to feed the worms", "Down the sink"], correctIndex: 0, explanation: "Purdue's FS-44-W points butchering wastewater toward a compost pile and says not to use it to water the fruit and vegetable garden.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
+          { prompt: "You butcher three chickens. Where does the wastewater go?", options: ["Toward the compost, not the garden", "Onto the vegetable garden as free fertilizer", "Into the worm bin to feed the worms", "Into the rain barrel for the lettuce bed"], correctIndex: 0, explanation: "Purdue's FS-44-W says butchering wastewater goes in a compost pile or, if the amount is small, a sewer system, and must never water the fruit and vegetable garden.", sourceLessonSlug: "human-waste-butchering-water-and-cool-patches" },
           { prompt: "Pig manure is in the NRCS tables, and Purdue says keep it out of gardens. Which reading is right?", options: ["The tables overrule Purdue, so pig manure is fine", "Purdue overrules the tables, so the tables are wrong", "Both are true", "Neither"], correctIndex: 2, explanation: "A table describes what pigs produce; it does not recommend pig manure for a vegetable bed.", sourceLessonSlug: "dogs-cats-and-pigs" },
           { prompt: "Which parasite's timing makes old pet waste a lasting soil concern?", options: ["Toxoplasma, which turns infectious in one to five days", "Salmonella, counted in MPN per 4 grams", "Toxocara", "None"], correctIndex: 2, explanation: "Toxocara eggs take two to four weeks to become infective and then survive for months, or even years.", sourceLessonSlug: "toxoplasma-and-toxocara" },
-          { prompt: "Your pile hit 135 °F once at the center and was never measured again. Is its manure treated?", options: ["Yes, since it passed 131 °F, the federal floor", "No", "Yes, if it was turned at least once afterward", "Only for lettuce"], correctIndex: 1, explanation: "Both federal processes need time as well as temperature: 3 days static, or 15 days with five turnings. One reading is not a process.", sourceLessonSlug: "two-federal-compost-processes" },
+          { prompt: "Your pile hit 135 °F once at the center and was never measured again. Is its manure treated?", options: ["Yes, since it passed 131 °F, the federal floor", "No", "Yes, if it was turned at least once afterward", "Only for lettuce"], correctIndex: 1, explanation: "Both federal processes need time as well as temperature: 3 consecutive days, aerated static or in-vessel, or 15 days with five turnings. One reading is not a process.", sourceLessonSlug: "two-federal-compost-processes" },
           { prompt: "Which pile meets the organic rule's windrow process?", options: ["3 days at 120 °F with a single turning on the second day", "15 days at 180 °F with no turning, so the core stays hot", "15 days at 131 to 170 °F, five turns", "A worm bin"], correctIndex: 2, explanation: "205.203(c)(2)(iii): 131 to 170 °F for 15 days in a windrow, turned a minimum of five times.", sourceLessonSlug: "two-federal-compost-processes" },
           { prompt: "A pile is losing ammonia. What does the NRCS chapter say it is short of?", options: ["Carbon", "Nitrogen, which the ammonia shows is running out", "Water, since ammonia only forms in a dry pile", "Worms"], correctIndex: 0, explanation: "With too little carbon for its nitrogen, a pile loses ammonia, which may leach into ground or surface water.", sourceLessonSlug: "what-composting-is" },
           { prompt: "You mix hen manure (C:N 6) with straw (C:N 80). What tells you whether you got it right?", options: ["The plain average of 6 and 80, which comes to 43", "Heat within two to three days", "The color of the straw after it has sat for a week", "Nothing"], correctIndex: 1, explanation: "Averaging ratios does not give a mix's C:N. The thermometer is the check: a good mix turns thermophilic in two to three days.", sourceLessonSlug: "mixing-a-pile-with-table-2a-1" },
@@ -1664,8 +1675,8 @@ This is the course's capstone. You will build a model of the loop on your own gr
           { prompt: "What does Purdue's 2026 move to 12 regions mean for lesson 17's assignment?", options: ["The assignment can no longer be done in Indiana", "A regional educator may answer", "Only Marion County residents may complete it", "Nothing"], correctIndex: 1, explanation: "Whether every county keeps its own educator was not confirmed, so the assignment accepts a regional educator.", sourceLessonSlug: "find-your-extension-office" },
           { prompt: "Carver's 1905 drill mix used well-rotted manure, and his 1936 pen built compost. What do both show?", options: ["Organic matter rebuilding soil", "That Carver opposed using manure on cotton land", "That Carver invented peanut butter", "Nothing"], correctIndex: 0, explanation: "Both bulletins put plant waste and manure back into worn land. The peanut butter story is a myth corrected in Who Gets the Credit.", sourceLessonSlug: "carver-1905" },
           { prompt: "Carver warned against a steaming heap; today's rules require 131 °F. Which guides a vegetable garden today?", options: ["Carver's caution, since he was a soil scientist", "Neither, since compost should not be used near food", "The 131 °F rule", "Both equally"], correctIndex: 2, explanation: "Near food, the pathogen rules govern. Carver's caution was about fertilizer value, a different question.", sourceLessonSlug: "carver-1936-and-fire-fang" },
-          { prompt: "Why is King's Nara compost house not a method this course teaches?", options: ["It ran wet and cool", "It ran hotter than 170 °F, past any safe limit", "King described it as fiction in his preface", "It is"], correctIndex: 0, explanation: "King's house was saturated and below body temperature, unlike the hot, damp-but-not-soggy aerobic compost the federal rules describe.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
-          { prompt: "Which statement about Darwin and worms is accurate?", options: ["Darwin proved that worms destroy pathogens in manure", "Worms are pests that ruin vegetable mould", "Worms pass soil through their guts", "Worms eat stones"], correctIndex: 2, explanation: "Darwin: all the vegetable mould has passed many times through the intestinal canals of worms.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
+          { prompt: "Why is King's Nara compost house not a method this course teaches?", options: ["It ran wet and cool", "It ran hotter than 170 °F, past any safe limit", "King described it as fiction in his preface", "It is"], correctIndex: 0, explanation: "King's house was saturated and below body temperature. The federal rules require hot composting at 131 °F or more, and the NRCS chapter wants damp but not soggy.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
+          { prompt: "Which statement about Darwin and worms is accurate?", options: ["Darwin proved that worms destroy pathogens in manure", "Worms are pests that ruin vegetable mould", "Worms pass soil through their guts", "Worms live only in tropical soils"], correctIndex: 2, explanation: "Darwin: all the vegetable mould has passed many times through the intestinal canals of worms.", sourceLessonSlug: "king-darwin-and-the-extension-service" },
           { prompt: "Why does lesson 18 send you to Who Gets the Credit?", options: ["It teaches composting at 131 °F step by step", "It reprints Bulletin No. 6 in full", "No reason", "It corrects a Carver myth"], correctIndex: 3, explanation: "Lesson 17 of Who Gets the Credit corrects the peanut butter claim and points to Carver's real work in soil restoration and crop rotation.", sourceLessonSlug: "carver-1905" },
         ],
       },

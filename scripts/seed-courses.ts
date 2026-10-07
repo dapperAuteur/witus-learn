@@ -3219,6 +3219,10 @@ async function main() {
     seriesTitle: "The Calorie Loop",
     seriesOrder: 0,
     navigationMode: "linear",
+    // Insert-only. BAM's answer of 2026-10-06: a Master Gardener or extension educator reviews it
+    // before it is vetted; their name replaces "a reviewer" here (edit the hold in course settings).
+    publishHoldReason:
+      "Held until a Master Gardener or extension educator has reviewed it (BAM is finding one). Research tier 2: pathogens, food safety and two federal rules.",
   });
 
   // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared
