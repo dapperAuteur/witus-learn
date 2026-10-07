@@ -79,7 +79,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Kansas initially adopted the Next Generation Science Standards in 2013, and KSDE's science page names the Kansas Science Standards as the NGSS, last reviewed in 2025 and next due for review in 2032. On 2026-10-06 we compared the KSDE-hosted Disciplinary Core Ideas arrangement: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word.",
+        "Kansas initially adopted the Next Generation Science Standards in 2013, and KSDE's science page names the Kansas Science Standards as the NGSS, last reviewed in 2025 and next due for review in 2032. On 2026-10-06 we compared the KSDE-hosted Disciplinary Core Ideas arrangement: 5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word.",
     },
   ],
   frameworks: [

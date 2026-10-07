@@ -66,6 +66,8 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       exclude: {
+        "HS-LS2-3":
+          "Not in Wyoming's 2023 Content and Performance Standards for Science (emended February 2025), which replaced the 2016 standards this page used to cite. Compared 2026-10-06, so we make no claim for HS-LS2-3 here.",
         "HS-ESS1-1":
           "Not in Wyoming's 2023 Content and Performance Standards for Science (emended February 2025), which replaced the 2016 standards this page used to cite. Compared 2026-10-06, so we make no claim for HS-ESS1-1 here.",
         "HS-ESS1-3":
@@ -76,7 +78,7 @@ export const JURISDICTION: JurisdictionFile = {
           "Not in Wyoming's 2023 Content and Performance Standards for Science (emended February 2025), which replaced the 2016 standards this page used to cite. Compared 2026-10-06, so we make no claim for HS-ESS3-1 here.",
       },
       adoption:
-        "Wyoming's operative science standards are the 2023 Wyoming Content and Performance Standards for Science (emended February 2025), approved by the State Board on December 21, 2023 and signed by the Governor on July 17, 2024, for full implementation by school year 2025-26. They are a reduced set informed by the NGSS. On 2026-10-06 we compared that document: HS-ESS1-2 and HS-ESS2-2 carry the NGSS text word for word. HS-ESS1-1, HS-ESS1-3, HS-ESS2-5 and HS-ESS3-1 are not claimed here; the reasons are listed under What we don't claim.",
+        "Wyoming's operative science standards are the 2023 Wyoming Content and Performance Standards for Science (emended February 2025), approved by the State Board on December 21, 2023 and signed by the Governor on July 17, 2024, for full implementation by school year 2025-26. They are a reduced set informed by the NGSS. On 2026-10-06 we compared that document: 5-LS2-1, MS-LS2-3, HS-ESS1-2 and HS-ESS2-2 carry the NGSS text word for word. HS-LS2-3, HS-ESS1-1, HS-ESS1-3, HS-ESS2-5 and HS-ESS3-1 are not claimed here; the reasons are listed under What we don't claim.",
     },
   ],
   frameworks: [

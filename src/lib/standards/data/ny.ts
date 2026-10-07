@@ -55,11 +55,15 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       exclude: {
+        "5-LS2-1":
+          "New York's NYSSLS reword 5-LS2-1 to read ‘among plants (producers), animals (consumers), decomposers, and the environment’. Compared 2026-10-06, so we make no New York claim for 5-LS2-1.",
+        "HS-LS2-3":
+          "New York's NYSSLS reword HS-LS2-3 to end ‘in ecosystems’ in place of ‘in aerobic and anaerobic conditions’, which changes what is assessed. Compared 2026-10-06, so we make no New York claim for HS-LS2-3.",
         "HS-ESS2-2":
           "New York's NYSSLS reword HS-ESS2-2 to end ‘cause changes to Earth's systems’ where the NGSS reads ‘cause changes to other Earth systems’. Compared 2026-10-06, so we make no New York claim for HS-ESS2-2.",
       },
       adoption:
-        "New York's P-12 Science Learning Standards (NYSSLS) are built on the NGSS, with some performance expectations rewritten by NYSED. On 2026-10-06 we compared NYSED's P-12 standards document: HS-ESS1-2, HS-ESS1-3, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. HS-ESS1-1 differs only in capitalizing Sun. HS-ESS2-2 is not claimed here; the reasons are listed under What we don't claim.",
+        "New York's P-12 Science Learning Standards (NYSSLS) are built on the NGSS, with some performance expectations rewritten by NYSED. On 2026-10-06 we compared NYSED's P-12 standards document: MS-LS2-3, HS-ESS1-2, HS-ESS1-3, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. HS-ESS1-1 differs only in capitalizing Sun. 5-LS2-1, HS-LS2-3 and HS-ESS2-2 are not claimed here; the reasons are listed under What we don't claim.",
     },
   ],
   frameworks: [

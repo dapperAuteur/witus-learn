@@ -62,7 +62,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Rhode Island adopted the Next Generation Science Standards in 2013, and in 2024, after a review under RIGL 16-22-31, the Rhode Island Board of Education reaffirmed the NGSS as the state's official science and technology standards. Rhode Island uses the NGSS as published, so as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate Rhode Island printing to compare.",
+        "Rhode Island adopted the Next Generation Science Standards in 2013, and in 2024, after a review under RIGL 16-22-31, the Rhode Island Board of Education reaffirmed the NGSS as the state's official science and technology standards. Rhode Island uses the NGSS as published, so as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate Rhode Island printing to compare.",
     },
   ],
   frameworks: [

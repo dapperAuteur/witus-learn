@@ -60,7 +60,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Under 6.29.10 NMAC (effective July 1, 2018) the New Mexico STEM Ready! Science Standards incorporate the Next Generation Science Standards and any amendments to them by reference, and add six New Mexico standards (1-SS-1 NM, 5-SS-1 NM, MS-ESS3-3 NM, HS-LS2-7 NM, HS-SS-1 NM and HS-SS-2 NM) that we do not claim. Because the rule adopts the NGSS text itself, as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text.",
+        "Under 6.29.10 NMAC (effective July 1, 2018) the New Mexico STEM Ready! Science Standards incorporate the Next Generation Science Standards and any amendments to them by reference, and add six New Mexico standards (1-SS-1 NM, 5-SS-1 NM, MS-ESS3-3 NM, HS-LS2-7 NM, HS-SS-1 NM and HS-SS-2 NM) that we do not claim. Because the rule adopts the NGSS text itself, as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text.",
     },
   ],
   frameworks: [

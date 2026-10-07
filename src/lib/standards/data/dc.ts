@@ -28,7 +28,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "OSSE announced on December 20, 2013 that the DC State Board of Education had voted on December 18 to adopt the Next Generation Science Standards as the District's K-12 science standards. The District adopted the NGSS as published, so as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate the District printing to compare.",
+        "OSSE announced on December 20, 2013 that the DC State Board of Education had voted on December 18 to adopt the Next Generation Science Standards as the District's K-12 science standards. The District adopted the NGSS as published, so as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate the District printing to compare.",
     },
   ],
   frameworks: [

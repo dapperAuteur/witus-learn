@@ -53,7 +53,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "The Hawaii State Department of Education lists the Next Generation Science Standards as Hawaii's science standards and links to nextgenscience.org for them; the Board of Education took up the motion ‘to adopt the Next Generation Science Standards’ at its February 16, 2016 meeting. Hawaii uses the NGSS as published, so as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate Hawaii printing to compare.",
+        "The Hawaii State Department of Education lists the Next Generation Science Standards as Hawaii's science standards and links to nextgenscience.org for them; the Board of Education took up the motion ‘to adopt the Next Generation Science Standards’ at its February 16, 2016 meeting. Hawaii uses the NGSS as published, so as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate Hawaii printing to compare.",
     },
   ],
   frameworks: [

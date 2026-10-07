@@ -48,8 +48,11 @@ export const JURISDICTION: JurisdictionFile = {
     {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
+      aliases: {
+        "MS-LS2-3": "6-LS2-3",
+      },
       adoption:
-        "704 KAR 8:120 (effective July 5, 2023) incorporates by reference the Kentucky Academic Standards for Science, December 2022, which are built on the NGSS. On 2026-10-06 we compared that document: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word.",
+        "704 KAR 8:120 (effective July 5, 2023) incorporates by reference the Kentucky Academic Standards for Science, December 2022, which are built on the NGSS. On 2026-10-06 we compared that document: 5-LS2-1, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. Kentucky places middle school expectations in a grade, so it prints MS-LS2-3 as 6-LS2-3, with nonliving spelled non-living; we show Kentucky's code.",
     },
   ],
   frameworks: [

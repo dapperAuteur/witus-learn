@@ -75,7 +75,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Under Vermont's Education Quality Standards, Vermont uses the standards for science as laid out by the Next Generation Science Standards for grades K-12 (Agency of Education science page). Vermont uses the NGSS as published, so as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate Vermont printing to compare.",
+        "Under Vermont's Education Quality Standards, Vermont uses the standards for science as laid out by the Next Generation Science Standards for grades K-12 (Agency of Education science page). Vermont uses the NGSS as published, so as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; there is no separate Vermont printing to compare.",
     },
   ],
   frameworks: [

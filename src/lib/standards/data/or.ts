@@ -62,6 +62,9 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       aliases: {
+        "5-LS2-1": "5.LS2.1",
+        "MS-LS2-3": "7.LS2.3",
+        "HS-LS2-3": "HS.LS2.3",
         "HS-ESS1-1": "HS.ESS1.1",
         "HS-ESS1-2": "HS.ESS1.2",
         "HS-ESS1-3": "HS.ESS1.3",
@@ -70,7 +73,7 @@ export const JURISDICTION: JurisdictionFile = {
         "HS-ESS3-1": "HS.ESS3.1",
       },
       adoption:
-        "Oregon's State Board of Education adopted the NGSS as Oregon's K-12 Science Standards in 2014 and again on June 16, 2022. Oregon prints codes with dots and places middle school expectations in a grade, and we show Oregon's codes. On 2026-10-06 we compared the 2022 standards (version 2022.1): HS.ESS1.1, HS.ESS1.2, HS.ESS1.3, HS.ESS2.5 and HS.ESS3.1 carry the NGSS text word for word. Oregon's HS.ESS2.2 ends ‘other Earth's systems’ where the NGSS reads ‘other Earth systems’, a one-word difference we disclose rather than exclude.",
+        "Oregon's State Board of Education adopted the NGSS as Oregon's K-12 Science Standards in 2014 and again on June 16, 2022. Oregon prints codes with dots and places middle school expectations in a grade, and we show Oregon's codes. On 2026-10-06 we compared the 2022 standards (version 2022.1): 5.LS2.1, 7.LS2.3, HS.LS2.3, HS.ESS1.1, HS.ESS1.2, HS.ESS1.3, HS.ESS2.5 and HS.ESS3.1 carry the NGSS text word for word. Oregon's HS.ESS2.2 ends ‘other Earth's systems’ where the NGSS reads ‘other Earth systems’, a one-word difference we disclose rather than exclude.",
     },
   ],
   frameworks: [

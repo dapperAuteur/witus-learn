@@ -59,7 +59,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Maine's Science, Technology, and Engineering standards in the Maine Learning Results were signed into law on April 19, 2019 and are adapted from the NGSS; in 2024 the Legislature's education committee declined a revision and left them unchanged. On 2026-10-06 we compared the Maine DOE's 2019 Science and Engineering standards document: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. Maine's own Further explanation notes are not part of what we claim.",
+        "Maine's Science, Technology, and Engineering standards in the Maine Learning Results were signed into law on April 19, 2019 and are adapted from the NGSS; in 2024 the Legislature's education committee declined a revision and left them unchanged. On 2026-10-06 we compared the Maine DOE's 2019 Science and Engineering standards document: 5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. Maine's own Further explanation notes are not part of what we claim.",
     },
   ],
   frameworks: [

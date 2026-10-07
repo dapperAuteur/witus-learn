@@ -65,7 +65,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "The Michigan K-12 Science Standards (November 2015) replace Michigan's 2006 standards and use the NGSS performance expectations and codes. On 2026-10-06 we compared MDE's published document: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word.",
+        "The Michigan K-12 Science Standards (November 2015) replace Michigan's 2006 standards and use the NGSS performance expectations and codes. On 2026-10-06 we compared MDE's published document: 5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word.",
     },
   ],
   frameworks: [

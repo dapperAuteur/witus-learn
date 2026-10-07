@@ -59,6 +59,8 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       exclude: {
+        "5-LS2-1":
+          "Alaska's 2019 standards reword 5-LS2-1 (“Develop and describe a model that describes the movement of matter among plants, animals, decomposers, and the environment.”), so the NGSS wording shown for other states is not this state's. Compared 2026-10-06.",
         "HS-ESS1-1":
           "Alaska's 2019 standards reword HS-ESS1-1 (“...illustrate that the life span of the Sun is a function of nuclear fusion in its core, and that stars, through nuclear fusion over their life cycle, produce elements and release energy...”), so the NGSS wording shown for other states is not this state's. Compared 2026-10-06.",
         "HS-ESS1-3":
@@ -67,7 +69,7 @@ export const JURISDICTION: JurisdictionFile = {
           "Alaska's 2019 standards reword HS-ESS2-2 (“Analyze geoscience data to evaluate claims that one change to Earth's surface creates feedbacks...”), so the NGSS wording shown for other states is not this state's. Compared 2026-10-06.",
       },
       adoption:
-        "The Alaska State Board of Education and Early Development adopted the K-12 Science Standards for Alaska on June 7, 2019; they are shaped around the NGSS but reword some performance expectations. On 2026-10-06 we compared Alaska's published standards document: HS-ESS1-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. HS-ESS1-1, HS-ESS1-3 and HS-ESS2-2 are not claimed here; the reasons are listed under What we don't claim.",
+        "The Alaska State Board of Education and Early Development adopted the K-12 Science Standards for Alaska on June 7, 2019; they are shaped around the NGSS but reword some performance expectations. On 2026-10-06 we compared Alaska's published standards document: MS-LS2-3, HS-LS2-3, HS-ESS1-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. 5-LS2-1, HS-ESS1-1, HS-ESS1-3 and HS-ESS2-2 are not claimed here; the reasons are listed under What we don't claim.",
     },
   ],
   frameworks: [

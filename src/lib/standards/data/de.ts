@@ -62,7 +62,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "14 DE Admin. Code 501, section 1.1.1.2, adopts the Next Generation Science Standards as the Delaware Content Standards in science, effective with the 2013-2014 school year. Because the regulation adopts the NGSS themselves, as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; we did not compare a separate Delaware printing.",
+        "14 DE Admin. Code 501, section 1.1.1.2, adopts the Next Generation Science Standards as the Delaware Content Standards in science, effective with the 2013-2014 school year. Because the regulation adopts the NGSS themselves, as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; we did not compare a separate Delaware printing.",
     },
   ],
   frameworks: [

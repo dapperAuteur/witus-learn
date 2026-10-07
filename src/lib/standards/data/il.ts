@@ -80,7 +80,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "In January 2014 the Illinois State Board of Education adopted the Next Generation Science Standards as the Illinois Learning Standards in science, effective statewide February 27, 2014 (ISBE fact sheet, March 2016). Illinois adopted the NGSS as published, so as of 2026-10-06 the codes we claim (HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; we did not compare a separate Illinois printing.",
+        "In January 2014 the Illinois State Board of Education adopted the Next Generation Science Standards as the Illinois Learning Standards in science, effective statewide February 27, 2014 (ISBE fact sheet, March 2016). Illinois adopted the NGSS as published, so as of 2026-10-06 the codes we claim (5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1) carry the NGSS code and text; we did not compare a separate Illinois printing.",
     },
   ],
   frameworks: [

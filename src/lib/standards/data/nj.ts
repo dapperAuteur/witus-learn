@@ -58,7 +58,7 @@ export const JURISDICTION: JurisdictionFile = {
           "New Jersey's Student Learning Standards for Science (2020, and as readopted June 3, 2026) reword HS-ESS3-1 to read ‘and climate change have influenced human activity’ where the NGSS reads ‘and changes in climate have influenced human activity’. Compared 2026-10-06, so we make no New Jersey claim for HS-ESS3-1.",
       },
       adoption:
-        "The New Jersey State Board of Education readopted the New Jersey Student Learning Standards for Science on June 3, 2026, revising four of the 208 performance expectations. On 2026-10-06 we compared the 2026 standards: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2 and HS-ESS2-5 carry the NGSS text word for word. HS-ESS3-1 is not claimed here; the reasons are listed under What we don't claim.",
+        "The New Jersey State Board of Education readopted the New Jersey Student Learning Standards for Science on June 3, 2026, revising four of the 208 performance expectations. On 2026-10-06 we compared the 2026 standards: 5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2 and HS-ESS2-5 carry the NGSS text word for word. HS-ESS3-1 is not claimed here; the reasons are listed under What we don't claim.",
     },
   ],
   frameworks: [

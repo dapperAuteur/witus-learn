@@ -64,7 +64,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "On September 4, 2013 the California State Board of Education adopted the Next Generation Science Standards for California Public Schools, Kindergarten through Grade Twelve (CA NGSS), as required by Education Code 60605.85. California's edits change only seven clarification statements, none for a code we claim. On 2026-10-06 we compared the CDE grade 5, grade 7 and high school CA NGSS documents (archived copies, because cde.ca.gov refuses automated reading): HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. California's HS-ESS2-2 ends ‘other Earth's systems’ where the NGSS reads ‘other Earth systems’, a one-word difference we disclose rather than exclude.",
+        "On September 4, 2013 the California State Board of Education adopted the Next Generation Science Standards for California Public Schools, Kindergarten through Grade Twelve (CA NGSS), as required by Education Code 60605.85. California's edits change only seven clarification statements, none for a code we claim. On 2026-10-06 we compared the CDE grade 5, grade 7 and high school CA NGSS documents (archived copies, because cde.ca.gov refuses automated reading): 5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. California's HS-ESS2-2 ends ‘other Earth's systems’ where the NGSS reads ‘other Earth systems’, a one-word difference we disclose rather than exclude.",
     },
   ],
   frameworks: [

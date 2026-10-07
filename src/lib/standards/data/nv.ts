@@ -54,7 +54,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Nevada adopted the Nevada Academic Content Standards for Science (NVACSS), based on the NGSS, and the Department of Education publishes them as the NVACSS DCI Arrangements (February 2014). On 2026-10-06 we compared that document: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word.",
+        "Nevada adopted the Nevada Academic Content Standards for Science (NVACSS), based on the NGSS, and the Department of Education publishes them as the NVACSS DCI Arrangements (February 2014). On 2026-10-06 we compared that document: 5-LS2-1, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. MS-LS2-3 matches except that Nevada spells nonliving as non-living.",
     },
   ],
   frameworks: [

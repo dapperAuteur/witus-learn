@@ -15,10 +15,36 @@ export const NGSS: SharedFramework = {
   subject: "Science",
   name: "Next Generation Science Standards (NGSS)",
   publisher: "NGSS Lead States / nextgenscience.org",
-  version: "HS-ESS1 Earth's Place in the Universe; HS-ESS2 Earth's Systems; HS-ESS3 Earth and Human Activity",
+  version: "5-LS2, MS-LS2, HS-LS2 Ecosystems: Interactions, Energy, and Dynamics; HS-ESS1 Earth's Place in the Universe; HS-ESS2 Earth's Systems; HS-ESS3 Earth and Human Activity",
   sourceUrl: "https://www.nextgenscience.org/dci-arrangement/hs-ess1-earths-place-universe",
   fetchedOn: "2026-10-06",
   standards: [
+    // ── 5-LS2 / MS-LS2 / HS-LS2 Ecosystems: Interactions, Energy, and Dynamics ─────────────────
+    // Fetched verbatim 2026-10-06 from nextgenscience.org (/pe/ pages and the 5-LS2, MS-LS2 and HS-LS2
+    // DCI arrangements). Backs the Manure and Compost course. HS-LS2-4 (trophic-level energy in biomass)
+    // is deliberately ABSENT: the course does not teach it. Per-state differences are excluded in each
+    // state's file (AK and NY reword 5-LS2-1; NY rewords and WY dropped HS-LS2-3).
+    {
+      code: "5-LS2-1",
+      text: "Develop a model to describe the movement of matter among plants, animals, decomposers, and the environment.",
+      claimIds: ["catalog.compost-matter-cycling"],
+      coverage: "partial",
+      note: "The capstone (lesson 22) has the learner develop exactly this model for their own ground: boxes for plants, animals, decomposers and soil, arrows labelled with the matter each carries, and the leaks out of the system. PARTIAL because the clarification statement's emphasis, that plants change matter that is not food (air, water) into food, is not taught: the course follows decomposed material back into soil and crops, not photosynthesis.",
+    },
+    {
+      code: "MS-LS2-3",
+      text: "Develop a model to describe the cycling of matter and flow of energy among living and nonliving parts of an ecosystem.",
+      claimIds: ["catalog.compost-matter-cycling"],
+      coverage: "partial",
+      note: "Matter cycling among animals, microbes, soil and crops is taught directly, and the capstone has the learner define the boundary of their own system, as the clarification statement asks. PARTIAL because energy flow appears only as the heat a compost pile gives off; there is no treatment of energy moving through an ecosystem.",
+    },
+    {
+      code: "HS-LS2-3",
+      text: "Construct and revise an explanation based on evidence for the cycling of matter and flow of energy in aerobic and anaerobic conditions.",
+      claimIds: ["catalog.compost-aerobic-anaerobic"],
+      coverage: "partial",
+      note: "Composting is taught as aerobic decomposition, and the learner reads temperature evidence to tell a working aerobic pile from cold zones the NRCS composting chapter calls likely sites of anaerobic decomposition. PARTIAL because the course stops at that evidence: it does not teach aerobic or anaerobic respiration as processes (which the assessment boundary also excludes at the chemical level) and treats energy only as pile temperature.",
+    },
     // ── HS-ESS2 Earth's Systems ───────────────────────────────────────────────────────────────
     // Fetched verbatim 2026-08-10 from nextgenscience.org/dci-arrangement/hs-ess2-earths-systems.
     //

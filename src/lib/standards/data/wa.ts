@@ -52,7 +52,7 @@ export const JURISDICTION: JurisdictionFile = {
       framework: NGSS,
       // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "Washington adopted the Next Generation Science Standards in 2013 as the Washington State K-12 Science Learning Standards; OSPI states that the WSSLS are the NGSS and publishes the NGSS DCI arrangement as the standards. On 2026-10-06 we compared that OSPI document: HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. OSPI's review timeline puts revised science standards in late 2026; recheck after they are adopted.",
+        "Washington adopted the Next Generation Science Standards in 2013 as the Washington State K-12 Science Learning Standards; OSPI states that the WSSLS are the NGSS and publishes the NGSS DCI arrangement as the standards. On 2026-10-06 we compared that OSPI document: 5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. OSPI's review timeline puts revised science standards in late 2026; recheck after they are adopted.",
     },
   ],
   frameworks: [
