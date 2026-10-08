@@ -1,4 +1,4 @@
-// "Crocheting" (Trade Skills). Slug `crochet`. Series "From Fibre to Fabric" (`from-fibre-to-fabric`),
+// "Crocheting" (Trade Skills). Slug `crochet`. Series "From Fiber to Fabric" (`from-fiber-to-fabric`),
 // code FIBRE, slot 02, after Making String (FIBRE-00) and Knot-Tying & Rope Work (FIBRE-01, which joined
 // the series by BAM's decision of 2026-10-08). Both are linked here by course name.
 //
@@ -129,7 +129,7 @@ export const CROCHET_COURSE: AuthoredCourse = {
 
 **Words are a weak way to teach hands.** These manuals knew it, which is why they are full of engravings and photographs. Where a lesson names a figure, open the source at that page: every lesson ends with its sources and says where in them to look. Several lessons also show the figure itself, credited to its source and page.
 
-**Where this fits.** Crocheting is part of the From Fibre to Fabric series on Learn.WitUS. Yarn is string, and the companion course *Making String* starts one step earlier, with how string is made. *Knot-Tying & Rope Work*, the course before this one in the series, is good practice for the hands.
+**Where this fits.** Crocheting is part of the From Fiber to Fabric series on Learn.WitUS. Yarn is string, and the companion course *Making String* starts one step earlier, with how string is made. *Knot-Tying & Rope Work*, the course before this one in the series, is good practice for the hands.
 
 To start you need a hook and some yarn. Which hook and which yarn are the next two lessons.
 
@@ -418,9 +418,9 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           },
           {
             prompt: "Which series is Crocheting part of?",
-            options: ["The House You Live In, beside Keeping a House", "Rope and Rigging, with Knot-Tying & Rope Work", "Trade Skills Essentials, with broadcasting", "From Fibre to Fabric"],
+            options: ["The House You Live In, beside Keeping a House", "Rope and Rigging, with Knot-Tying & Rope Work", "Trade Skills Essentials, with broadcasting", "From Fiber to Fabric"],
             correctIndex: 3,
-            explanation: "Crocheting is part of the From Fibre to Fabric series on Learn.WitUS, after Making String.",
+            explanation: "Crocheting is part of the From Fiber to Fabric series on Learn.WitUS, after Making String.",
             sourceLessonSlug: "what-crochet-is",
           },
           {
@@ -431,7 +431,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
             sourceLessonSlug: "what-crochet-is",
           },
           {
-            prompt: "Is the Knot-Tying & Rope Work course part of the From Fibre to Fabric series?",
+            prompt: "Is the Knot-Tying & Rope Work course part of the From Fiber to Fabric series?",
             options: ["Yes, it opens the series", "Yes, as its second course", "Yes, it replaces this course's lessons on the chain", "No, it is a separate neighbour"],
             correctIndex: 1,
             explanation: "Lesson 1: Knot-Tying & Rope Work is the course before this one in the series, good practice for the hands. Making String opens the series.",

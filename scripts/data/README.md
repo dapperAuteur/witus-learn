@@ -153,9 +153,9 @@
 
 ### Trade Skills
 
-- [`crochet`](./crochet-course.ts) Crocheting · FIBRE-02 (from-fibre-to-fabric)
-- [`knot-tying`](./knots-course.ts) Knot-Tying & Rope Work · FIBRE-01 (from-fibre-to-fabric)
-- [`making-string`](./making-string-course.ts) Making String · FIBRE-00 (from-fibre-to-fabric)
+- [`crochet`](./crochet-course.ts) Crocheting · FIBRE-02 (from-fiber-to-fabric)
+- [`knot-tying`](./knots-course.ts) Knot-Tying & Rope Work · FIBRE-01 (from-fiber-to-fabric)
+- [`making-string`](./making-string-course.ts) Making String · FIBRE-00 (from-fiber-to-fabric)
 
 ### Farm & Garden
 
