@@ -23,7 +23,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   (HS-ESS3-1); Oregon was missing five dot-code aliases. \`SharedAdoption.exclude\` now removes a code for
   one state, with the reason published under "What we don't claim", and all 22 adoption notes list exactly
   which codes were compared on that date.
-- 🔧 **Making String and Crocheting, the first two From Fibre to Fabric courses** (\`feat/fibre-courses\`, no
+- 🔧 **Making String and Crocheting, the first two From Fiber to Fabric courses** (\`feat/fibre-courses\`, no
   migration; after merge run \`pnpm seed:courses:prod\` and register both media manifests). BAM's briefs of
   2026-10-05, answered 2026-10-06. Making String (FIBRE-00): six sections, 19 lessons, 458 questions, from
   Verrill, the Army's rigging and survival manuals, the 1913 USDA hemp report and two open-access

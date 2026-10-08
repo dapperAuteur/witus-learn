@@ -1821,7 +1821,7 @@ async function main() {
     navigationMode: "linear",
   });
 
-  // ── From Fibre to Fabric (Trade Skills) ───────────────────────────────────────
+  // ── From Fiber to Fabric (Trade Skills) ───────────────────────────────────────
   // BAM's briefs of 2026-10-05, answered 2026-10-06 (plans/future-courses/trade-skills/): making
   // string, then crocheting; braiding and raising animals for yarn follow. knot-tying stays separate
   // (BAM: "keep separate, but link to each other"), so it carries no FIBRE code. Public and free, like
@@ -1832,8 +1832,8 @@ async function main() {
     slug: "making-string",
     course: MAKING_STRING_COURSE,
     category: "Trade Skills",
-    seriesSlug: "from-fibre-to-fabric",
-    seriesTitle: "From Fibre to Fabric",
+    seriesSlug: "from-fiber-to-fabric",
+    seriesTitle: "From Fiber to Fabric",
     seriesOrder: 0,
     seriesCode: "FIBRE",
     seriesPosition: "00",
@@ -1845,8 +1845,8 @@ async function main() {
     slug: "crochet",
     course: CROCHET_COURSE,
     category: "Trade Skills",
-    seriesSlug: "from-fibre-to-fabric",
-    seriesTitle: "From Fibre to Fabric",
+    seriesSlug: "from-fiber-to-fabric",
+    seriesTitle: "From Fiber to Fabric",
     seriesOrder: 2,
     seriesCode: "FIBRE",
     seriesPosition: "02",
@@ -1886,13 +1886,13 @@ async function main() {
     seriesPosition,
     seriesTrack,
   } of [
-    // knot-tying joins From Fibre to Fabric as FIBRE-01 (BAM, 2026-10-08), between Making String and Crocheting.
+    // knot-tying joins From Fiber to Fabric as FIBRE-01 (BAM, 2026-10-08), between Making String and Crocheting.
     {
       slug: "knot-tying",
       course: KNOTS_COURSE,
       category: "Trade Skills",
-      seriesSlug: "from-fibre-to-fabric",
-      seriesTitle: "From Fibre to Fabric",
+      seriesSlug: "from-fiber-to-fabric",
+      seriesTitle: "From Fiber to Fabric",
       seriesOrder: 1,
       seriesCode: "FIBRE",
       seriesPosition: "01",
