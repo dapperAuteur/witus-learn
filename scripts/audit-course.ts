@@ -30,6 +30,7 @@
 
 import type { AuthoredCourse, AuthoredLesson } from "./data/authored-course";
 import { MAX_QUESTIONS_PER_ATTEMPT } from "../src/lib/quiz";
+import { FIGURE_RE } from "../src/lib/figures";
 import { allSeedEntries, loadCourse, type SeedEntry } from "./lib/seed-registry";
 
 /** The Tier-0 assessment spec from plans/71: pool sized by content density, serving a small subset
@@ -143,7 +144,20 @@ interface CourseReport {
 }
 
 const isQuiz = (l: AuthoredLesson) => !!l.quiz;
-const words = (l: AuthoredLesson) => (l.body ? l.body.trim().split(/\s+/).filter(Boolean).length : 0);
+// Teaching words, which size the question pool. A `:::figure` line counts only its CAPTION: the
+// caption tells the reader what to look at and why, so it teaches and may be quizzed, but the alt text
+// (a description of the picture for screen readers) and the credit (provenance) are not lesson prose,
+// and counting them inflated the target by about one question per 35 words of image description
+// (2026-10-07: 22 figures added roughly 70 questions of target to Making String and Crocheting). Only
+// ever lowers a target, so no course that passed before can fail because of this.
+const countWords = (text: string) => text.trim().split(/\s+/).filter(Boolean).length;
+const words = (l: AuthoredLesson) => {
+  if (!l.body) return 0;
+  return l.body.split("\n").reduce((n, line) => {
+    const fig = line.match(FIGURE_RE);
+    return n + countWords(fig ? fig[3] : line);
+  }, 0);
+};
 const reveals = (l: AuthoredLesson) => (l.body?.match(/^:::reveal /gm) ?? []).length;
 const targetPool = (w: number) =>
   Math.min(POOL_MAX, Math.max(POOL_MIN, Math.round(w / WORDS_PER_QUESTION)));
