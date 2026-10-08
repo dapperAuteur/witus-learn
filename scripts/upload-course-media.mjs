@@ -402,9 +402,9 @@ for (const t of TARGETS) {
     tier = {
       tier: "open",
       obligation:
-        `${meta.host} records this item as: ${meta.statement}. That is the source's own statement, recorded verbatim; confirm it at /admin/media like any other asset.`,
+        `${meta.host} records this item as: ${meta.statement.replace(/\.$/, "")}. That is the source's own statement, recorded verbatim; confirm it at /admin/media like any other asset.`,
     };
-    creditLine = t.figureCredit ?? `${t.figure ? `${t.figure}. ` : ""}${meta.title}. ${meta.statement}. Via ${meta.host}. ${meta.descriptionUrl}`;
+    creditLine = t.figureCredit ?? `${t.figure ? `${t.figure}. ` : ""}${meta.title}. ${meta.statement.replace(/\.$/, "")}. Via ${meta.host}. ${meta.descriptionUrl}`;
     console.log(`  obligation: ${tier.obligation}`);
   } else if (t.loc) {
     console.log(`  rights: ${meta.advisory || "(none stated)"}`);

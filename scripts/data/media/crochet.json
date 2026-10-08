@@ -142,5 +142,53 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fig._442._Crochet_hexagon.jpg",
     "width": 350,
     "height": 305
+  },
+  {
+    "course": "crochet",
+    "lesson": "the-slip-knot",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1791419524/witus/courses/crochet/crochet/fryer-1918-plate4-slip-knot.jpg",
+    "publicId": "witus/courses/crochet/crochet/fryer-1918-plate4-slip-knot",
+    "alt": "A page of six numbered black-and-white photographs, in two columns, of a pair of hands tying a knot in white yarn against a black background. In 1 to 3, the left hand is held out with its first two fingers extended while the right hand, at the upper right, draws the yarn across them and then round them. In 4, a small round loop has formed at the left hand's fingertips. In 5, the right hand pulls the yarn and the knot closes up between the hands. In 6, the right hand holds a long straight knitting needle with the knot on it, and the left hand holds the loose yarn below.",
+    "caption": "Plate 4 of the Mary Frances book, captioned \"Motion Pictures Showing the Right Way to Make a Slip Knot\": the plate the steps on p. 148 lean on. The pictures are numbered as the steps are, so \"Hold yarn in hands as shown in this picture\" means picture 1. The last picture puts the knot on a knitting needle, because the book teaches it as the first step in knitting. For crochet, the same knot goes on your hook.",
+    "credit": "J. E. Fryer, The Mary Frances Knitting and Crocheting Book (John C. Winston, 1918), Plate 4, unnumbered plate facing p. 148. Public domain in the USA. Image via Project Gutenberg eBook 52396. https://www.gutenberg.org/ebooks/52396",
+    "rightsStatus": "Public domain in the USA.",
+    "rightsTier": "open",
+    "rightsObligation": "Project Gutenberg records this item as: Public domain in the USA. That is the source's own statement, recorded verbatim; confirm it at /admin/media like any other asset.",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/52396",
+    "width": 578,
+    "height": 745
+  },
+  {
+    "course": "crochet",
+    "lesson": "the-foundation-chain",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1791419526/witus/courses/crochet/crochet/fryer-1918-plate1-chain-stitch.jpg",
+    "publicId": "witus/courses/crochet/crochet/fryer-1918-plate1-chain-stitch",
+    "alt": "A page of eight numbered black-and-white photographs, in two columns, of a pair of hands making a crochet chain in white yarn with a long pale hook, against a black background. In 1 to 4 the right hand holds the hook while the left hand holds the yarn close to its tip, where a loop forms. In 5 to 7 the left hand is raised with the yarn passing over its fingers, and the hook, held in the right hand, works at the left hand's fingertips. Picture 8 is a close view of the hook, whose handle is turned with a knob at the end, with a short, even length of chain running from its tip like a narrow braid.",
+    "caption": "Plate 1 of the Mary Frances book, captioned \"Motion Pictures Showing How to Make Chain Stitch\", with its description on p. 48. The book starts the chain without a slip knot: \"Pointing the hook away from you, turn it completely around, bringing a loop on the needle.\" Picture 8 is the finished chain beside the hook.",
+    "credit": "J. E. Fryer, The Mary Frances Knitting and Crocheting Book (John C. Winston, 1918), Plate 1, unnumbered plate following p. 48. Public domain in the USA. Image via Project Gutenberg eBook 52396. https://www.gutenberg.org/ebooks/52396",
+    "rightsStatus": "Public domain in the USA.",
+    "rightsTier": "open",
+    "rightsObligation": "Project Gutenberg records this item as: Public domain in the USA. That is the source's own statement, recorded verbatim; confirm it at /admin/media like any other asset.",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/52396",
+    "width": 573,
+    "height": 747
+  },
+  {
+    "course": "crochet",
+    "lesson": "slip-stitch-and-single-crochet",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1791419526/witus/courses/crochet/crochet/fryer-1918-plate2-single-crochet.jpg",
+    "publicId": "witus/courses/crochet/crochet/fryer-1918-plate2-single-crochet",
+    "alt": "A page of four numbered black-and-white photographs, overlapping in a zigzag, of hands working single crochet in white yarn against a black background. In 1 to 3 the left hand holds the start of the work between thumb and finger, with the yarn over its raised forefinger, and the right hand holds a long pale hook whose tip is in the work, with loops on it. Picture 4 is a close view: a length of chain lies flat, a short row of stitches has been worked along part of it, and the hook is in the chain at the end of that row, with the unworked chain stretching away to the left and the yarn rising from the hook to the top left.",
+    "caption": "Plate 2 of the Mary Frances book, captioned \"Motion Pictures Showing How to Make Single Crochet\", described on p. 51. The pictures are numbered as the steps are: cut 1 puts the hook \"through the second chain stitch from the needle\", and cut 3 pulls \"a loop through the two loops on the needle\". Picture 4 is the row under way along the chain.",
+    "credit": "J. E. Fryer, The Mary Frances Knitting and Crocheting Book (John C. Winston, 1918), Plate 2, unnumbered plate facing p. 51. Public domain in the USA. Image via Project Gutenberg eBook 52396. https://www.gutenberg.org/ebooks/52396",
+    "rightsStatus": "Public domain in the USA.",
+    "rightsTier": "open",
+    "rightsObligation": "Project Gutenberg records this item as: Public domain in the USA. That is the source's own statement, recorded verbatim; confirm it at /admin/media like any other asset.",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/52396",
+    "width": 576,
+    "height": 721
   }
 ]
