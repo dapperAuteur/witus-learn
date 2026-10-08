@@ -1,4 +1,4 @@
-// Media batch: Crocheting (course `crochet`, series From Fibre to Fabric).
+// Media batch: Crocheting (course `crochet`, series From Fiber to Fabric).
 //
 // Every image below was opened and LOOKED AT before its alt text was written, at the exact URL
 // given, on 2026-10-07. Alt text says what the image shows; the caption says what to look at and
