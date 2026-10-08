@@ -57,6 +57,7 @@ import { CROCHET_COURSE } from "./data/crochet-course";
 import { CROQUET_COURSE } from "./data/croquet-course";
 import { SURVIVAL_COURSE } from "./data/survival-course";
 import { MANURE_AND_COMPOST_COURSE } from "./data/manure-and-compost-course";
+import { RAISING_ANIMALS_FOR_YARN_COURSE } from "./data/raising-animals-for-yarn-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { VOICE_ACTING_COURSE } from "./data/voice-acting-course";
@@ -3252,11 +3253,36 @@ async function main() {
     seriesSlug: "the-calorie-loop",
     seriesTitle: "The Calorie Loop",
     seriesOrder: 0,
+    // LOOP code added 2026-10-08 when the series' second course (raising-animals-for-yarn, LOOP-03) was
+    // registered, as the manure brief said it would be. 01 and 02 are kept for growing-trees and
+    // growing-protein, whose briefs come after this course ships.
+    seriesCode: "LOOP",
+    seriesPosition: "00",
     navigationMode: "linear",
     // Insert-only. BAM's answer of 2026-10-06: a Master Gardener or extension educator reviews it
     // before it is vetted; their name replaces "a reviewer" here (edit the hold in course settings).
     publishHoldReason:
       "Held until a Master Gardener or extension educator has reviewed it (BAM is finding one). Research tier 2: pathogens, food safety and two federal rules.",
+  });
+  // Raising Animals for Yarn (LOOP-03), brief answered by BAM 2026-10-06: first version is sheep, alpaca
+  // and yak; Purdue Extension and Indiana zoning taught concretely, with a find-your-county activity. It
+  // closes the From Fibre to Fabric line too, so Trade Skills is an additional category (a course has one
+  // series). Held for a named husbandry reviewer (task 326 asks the Woolly Yak Ranch).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "raising-animals-for-yarn",
+    course: RAISING_ANIMALS_FOR_YARN_COURSE,
+    category: "Farm & Garden",
+    additionalCategories: ["Trade Skills"],
+    seriesSlug: "the-calorie-loop",
+    seriesTitle: "The Calorie Loop",
+    seriesOrder: 3,
+    seriesCode: "LOOP",
+    seriesPosition: "03",
+    navigationMode: "linear",
+    publishHoldReason:
+      "Held until a shepherd or fibre farmer has reviewed the husbandry lessons (BAM is asking the Woolly Yak Ranch). Research tier 2: animal health, welfare and local law.",
   });
 
   // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared

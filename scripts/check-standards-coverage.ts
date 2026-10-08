@@ -245,6 +245,7 @@ const BACKLOG: Record<string, string> = {
   // Genuinely out of scope: practical/vocational skills with no academic standard to claim.
   // These are permanent, not backlog.
   "knot-tying": "OUT OF SCOPE, practical skill, no academic standard claimed",
+  "raising-animals-for-yarn": "OUT OF SCOPE, practical husbandry, no academic standard claimed (BAM's brief of 2026-10-06, like knot-tying)",
   "making-string": "OUT OF SCOPE, practical skill, no academic standard claimed (like knot-tying)",
   "crochet": "UNMAPPED by BAM's decision of 2026-10-06: a practical skill; the hyperbolic-geometry lesson is not claimed",
   "off-grid-survival": "OUT OF SCOPE, practical skill, no academic standard claimed",
