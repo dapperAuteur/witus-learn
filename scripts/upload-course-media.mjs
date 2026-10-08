@@ -31,6 +31,10 @@
 //
 // USAGE
 //   node scripts/upload-course-media.mjs --dry-run    # rights-check and report, upload nothing
+//
+// SOURCES a target may name: `commons` (a Wikimedia Commons file title), `loc` (a Library of Congress
+// item id), `gutenberg` (an ebook number) or `archive` (an Internet Archive identifier), the last two
+// with an `imageUrl` inside that ebook or item. Rights are always read from the source, never declared.
 //   node scripts/upload-course-media.mjs              # upload
 //
 // Output: a JSON manifest at scripts/data/media/<batch>.json carrying the provenance triple
@@ -212,6 +216,72 @@ async function locMeta(itemId) {
  */
 const LOC_ALLOWED = /^(no known restrictions|no copyright renewal)/i;
 
+/**
+ * Project Gutenberg and Internet Archive figures (added 2026-10-07 for Making String).
+ *
+ * WHY. Public-domain manuals and federal field manuals are often on neither Commons nor the LOC, but
+ * their scans are on Gutenberg or the Internet Archive, and both expose a MACHINE-READABLE rights
+ * field. The same rule as the LOC applies: only a POSITIVE statement read from the source's own
+ * metadata publishes, it is recorded verbatim, and silence is refused. A batch never declares its own
+ * rights; it names the ebook or item, and this script reads what that source says.
+ *
+ *   · `gutenberg: <ebook number>`: the ebook's RDF must carry dcterms:rights "Public domain in the
+ *     USA." The image URL must live under that ebook's own /cache/epub/<n>/ folder.
+ *   · `archive: <identifier>`: the item's metadata must carry a Creative Commons Public Domain Mark or
+ *     CC0 `licenseurl`, `possible-copyright-status: NOT_IN_COPYRIGHT`, or a `rights` statement that
+ *     the item is not in copyright. The image URL must be that item's own IIIF or download URL, so a
+ *     crop cannot quietly come from a different item than the one whose rights were read.
+ */
+async function directMeta(t) {
+  if (!t.imageUrl) throw new Error("a gutenberg or archive target needs `imageUrl`");
+  if (t.gutenberg) {
+    const n = String(t.gutenberg);
+    if (!t.imageUrl.startsWith(`https://www.gutenberg.org/cache/epub/${n}/`))
+      throw new Error(`imageUrl is not inside Gutenberg ebook ${n}'s own folder`);
+    const res = await fetch(`https://www.gutenberg.org/ebooks/${n}.rdf`, { headers: { "User-Agent": UA } });
+    if (!res.ok) throw new Error(`Gutenberg RDF ${res.status} for ${n}`);
+    const rdf = await res.text();
+    const rights = (rdf.match(/<dcterms:rights>([^<]*)<\/dcterms:rights>/) || [])[1]?.trim() ?? "";
+    const title = (rdf.match(/<dcterms:title>([^<]*)<\/dcterms:title>/) || [])[1]?.trim() ?? `ebook ${n}`;
+    return {
+      statement: rights,
+      allowed: /^public domain in the usa/i.test(rights),
+      title,
+      host: "Project Gutenberg",
+      descriptionUrl: `https://www.gutenberg.org/ebooks/${n}`,
+      fileUrl: t.imageUrl,
+    };
+  }
+  const id = String(t.archive);
+  const enc = encodeURIComponent(id);
+  const okUrl =
+    t.imageUrl.startsWith(`https://iiif.archive.org/image/iiif/3/${enc}%2F`) ||
+    t.imageUrl.startsWith(`https://iiif.archive.org/image/iiif/3/${id}%2F`) ||
+    t.imageUrl.startsWith(`https://archive.org/download/${id}/`);
+  if (!okUrl) throw new Error(`imageUrl is not an image of Internet Archive item ${id}`);
+  const res = await fetch(`https://archive.org/metadata/${id}/metadata`, { headers: { "User-Agent": UA } });
+  if (!res.ok) throw new Error(`Internet Archive metadata ${res.status} for ${id}`);
+  const m = (await res.json())?.result ?? {};
+  const lic = String(m.licenseurl ?? "");
+  const status = String(m["possible-copyright-status"] ?? "");
+  const rights = stripHtml(String(m.rights ?? ""));
+  let statement = "";
+  if (/creativecommons\.org\/publicdomain\/(mark|zero)\//i.test(lic)) statement = `licenseurl ${lic}`;
+  else if (/^not_in_copyright$/i.test(status)) statement = `possible-copyright-status ${status}`;
+  else if (/not in copyright/i.test(rights)) statement = rights;
+  return {
+    statement: statement || [lic, status, rights].filter(Boolean).join("; "),
+    allowed: Boolean(statement),
+    title: Array.isArray(m.title) ? m.title[0] : m.title || id,
+    host: "Internet Archive",
+    descriptionUrl: `https://archive.org/details/${id}`,
+    fileUrl: t.imageUrl,
+  };
+}
+
+const targetLabel = (t) =>
+  t.commons ?? (t.loc ? `LOC ${t.loc}` : t.gutenberg ? `Gutenberg ${t.gutenberg}: ${t.name}` : `Internet Archive ${t.archive}: ${t.name}`);
+
 async function cloudinaryUpload(env, { buffer, mime, publicId, context }) {
   const cloud = env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
   const key = env.CLOUDINARY_API_KEY;
@@ -253,7 +323,7 @@ async function cloudinaryUpload(env, { buffer, mime, publicId, context }) {
 {
   let bad = 0;
   for (const t of TARGETS) {
-    const label = t.commons ?? `LOC ${t.loc}`;
+    const label = targetLabel(t);
     // The data file is USUALLY named after the course slug, and sometimes is not: the route/place
     // courses were authored with short file names (indiana-avenue-course.ts) and long registered
     // slugs (indiana-avenue-a-district-and-what-replaced-it). A target may therefore name its file
@@ -310,18 +380,33 @@ let refused = 0;
 let uploaded = 0;
 
 for (const t of TARGETS) {
-  const label = t.commons ?? `LOC ${t.loc}`;
+  const label = targetLabel(t);
   process.stdout.write(`\n${label}\n`);
   let meta, tier, creditLine;
   try {
-    meta = t.loc ? await locMeta(t.loc) : await commonsMeta(t.commons);
+    meta = t.loc ? await locMeta(t.loc) : t.gutenberg || t.archive ? await directMeta(t) : await commonsMeta(t.commons);
   } catch (err) {
     console.log(`  ! SKIPPED, could not read metadata: ${err.message}`);
     refused++;
     continue;
   }
 
-  if (t.loc) {
+  if (t.gutenberg || t.archive) {
+    console.log(`  rights (${meta.host}): ${meta.statement || "(none stated)"}`);
+    if (!meta.allowed) {
+      console.log(`  ! REFUSED. ${meta.host} states no public-domain or not-in-copyright status for this`);
+      console.log("    item, so nobody has established its rights. Not publishable on that basis.");
+      refused++;
+      continue;
+    }
+    tier = {
+      tier: "open",
+      obligation:
+        `${meta.host} records this item as: ${meta.statement}. That is the source's own statement, recorded verbatim; confirm it at /admin/media like any other asset.`,
+    };
+    creditLine = t.figureCredit ?? `${t.figure ? `${t.figure}. ` : ""}${meta.title}. ${meta.statement}. Via ${meta.host}. ${meta.descriptionUrl}`;
+    console.log(`  obligation: ${tier.obligation}`);
+  } else if (t.loc) {
     console.log(`  rights: ${meta.advisory || "(none stated)"}`);
     if (!LOC_ALLOWED.test(meta.advisory)) {
       console.log("  ! REFUSED. The LOC states no affirmative no-known-restrictions advisory, so");
@@ -365,7 +450,7 @@ for (const t of TARGETS) {
 
   if (dryRun) {
     console.log(`  would upload -> ${publicId}`);
-    manifest.push({ ...t, publicId, url: null, credit: creditLine, rightsStatus: t.loc ? meta.advisory : meta.licence, rightsTier: tier.tier, rightsObligation: tier.obligation, sourceUrl: meta.descriptionUrl });
+    manifest.push({ ...t, publicId, url: null, credit: creditLine, rightsStatus: t.loc ? meta.advisory : t.gutenberg || t.archive ? meta.statement : meta.licence, rightsTier: tier.tier, rightsObligation: tier.obligation, sourceUrl: meta.descriptionUrl });
     continue;
   }
 
@@ -381,7 +466,7 @@ for (const t of TARGETS) {
   const context = `alt=${t.alt.replace(/[|=]/g, " ")}|credit=${creditLine.replace(/[|=]/g, " ")}`;
   let up;
   try {
-    up = await cloudinaryUpload(env, { buffer, mime: meta.mime ?? "image/jpeg", publicId, context });
+    up = await cloudinaryUpload(env, { buffer, mime: meta.mime ?? fileRes.headers.get("content-type")?.split(";")[0] ?? "image/jpeg", publicId, context });
   } catch (err) {
     // Never abort the batch: a failure on asset 7 must not discard the manifest entries for 1 to 6.
     console.log(`  ! SKIPPED, upload failed: ${err.message}`);
@@ -400,7 +485,7 @@ for (const t of TARGETS) {
     alt: t.alt,
     caption: t.caption,
     credit: creditLine,
-    rightsStatus: t.loc ? meta.advisory : meta.licence,
+    rightsStatus: t.loc ? meta.advisory : t.gutenberg || t.archive ? meta.statement : meta.licence,
     rightsTier: tier.tier,
     rightsObligation: tier.obligation,
     sourceUrl: meta.descriptionUrl,
