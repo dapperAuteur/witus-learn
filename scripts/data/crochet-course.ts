@@ -11,6 +11,10 @@
 // Only the dossier's VERIFIED lines and its section 4 approved claims are asserted below. Quotations
 // are copied from the dossier, which copied them from the fetched text. Where a source's own sentence
 // contains a dash, the quotation is cut at the dash and the rest is given in the course's words.
+// Added 2026-10-07 from the fetched Gutenberg texts, after the verifier pass: Fryer p. 51 runs to CUT 4
+// and Plate 2 has four numbered photographs; Fryer pp. 172-173 (ripping out knitting, reusing yarn);
+// the Tam widens only "until you have 30 doubles in each section". Dillmont's fig. 442 was checked on
+// the archive.org page image (encyclopediaofne00dill, leaf 248): figure and text are on printed p. 240.
 //
 // THE DOSSIER'S CORRECTIONS TO THE BRIEF, all honoured: the knots course teaches no slip knot, so the
 // slip knot is taught here from Fryer (1918), p. 148, Plate 4; Riego's twelve 1846 illustrations are
@@ -20,7 +24,8 @@
 // Lambert is quoted from the 1847 New York printing; no inventor of Irish crochet is documented.
 //
 // THIN RECORD, said plainly in the lessons rather than filled from memory: the magic ring (no source),
-// pulling out and reworking a mistake (no source), blocking crochet (no crochet source), the
+// pulling out and reworking a mistake (no crochet source; Fryer pp. 172-173 gives it for knitting
+// only, and lesson 19 says so), blocking crochet (no crochet source), the
 // abbreviations' expansions beyond the stitch names, yo, BLO, FLO and ch-sp, and the geometric reason a flat circle needs a
 // steady increase (no fetched geometry source).
 //
@@ -793,7 +798,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
             sourceLessonSlug: "holding-hook-and-yarn",
           },
           {
-            prompt: "What does the Mary Frances book call the same move?",
+            prompt: "What does the Mary Frances book call catching the yarn on the hook?",
             options: ["Wrapping", "Throwing, after Dillmont's jerk of the wrist", "Casting on, as the knitting manuals say", "Hooking"],
             correctIndex: 0,
             explanation: "Fryer (1918), p. 48: \"This is called 'wrapping' the yarn.\"",
@@ -1074,7 +1079,7 @@ ${src(LEINHAUSER, `the counting rule for the slip knot and the loop on the hook.
 
 **Slip stitch (UK: slip stitch, ss).** *The Priscilla Crochet Book*: "Slip Stitch (sl st). Insert the hook into the stitch, draw the wool through that stitch and through the wool on hook at the same time" (Hettich, 1908, p. 3). The Mary Frances book gives a practice row: "Make 15 chain stitches. Skip one chain. Put the hook through the next chain stitch; wrap yarn over needle, and draw it through both loops on the needle" (Fryer, 1918, p. 53). Beeton calls it slip stitch too (p. 188, Ill. 219). Dillmont calls the same motion "single stitch": "Put the needle in from the right side of the work, into the uppermost loop of the preceding row, take up the thread on the needle and draw it through both loops" (Dillmont, n.d., p. 224, fig. 404). The 1918 *Handbook* calls this motion its single crochet (Figure 2, "frequently called slip-stitch"). It keeps the name slip-stitch for a different move, "properly a close joining stitch", worked by dropping the loop, and lesson 22 teaches that join.
 
-**Single crochet (UK: double crochet, dc).** The Mary Frances book teaches it in three numbered steps, labelled "CUT 1" to "CUT 3", with its Plate 2. "Make a row of 15 chain stitches." Then, cut 1: "Put the hook through the second chain stitch from the needle. (That is, skip one chain stitch.)" Cut 2: "Draw a loop through the chain stitch, and wrap the yarn over the hook, and" cut 3: "Pull a loop through the two loops on the needle" (Fryer, 1918, p. 51). Priscilla says the same in one line: "Single Crochet (s c). Insert the hook, draw wool through, pass wool around hook (wool over), and draw it through both loops on the hook" (Hettich, 1908, p. 3).
+**Single crochet (UK: double crochet, dc).** The Mary Frances book teaches it in four numbered steps, labelled "CUT 1" to "CUT 4", with its Plate 2, whose four photographs are numbered 1 to 4. "Make a row of 15 chain stitches." Then, cut 1: "Put the hook through the second chain stitch from the needle. (That is, skip one chain stitch.)" Cut 2: "Draw a loop through the chain stitch, and wrap the yarn over the hook, and" cut 3: "Pull a loop through the two loops on the needle." Cut 4: "Keep on working in this way until you have made a row of single crochet stitches" (Fryer, 1918, p. 51). Cuts 1 to 3 make one stitch; cut 4 repeats it along the chain. Priscilla says the same in one line: "Single Crochet (s c). Insert the hook, draw wool through, pass wool around hook (wool over), and draw it through both loops on the hook" (Hettich, 1908, p. 3).
 
 **Why the second chain from the hook.** The chain next to the hook is skipped. Both Mary Frances ("skip one chain stitch") and Leinhauser ("sc in 2nd ch from hook") start the first single crochet in the second chain.
 
@@ -1390,9 +1395,9 @@ ${src(CYC_ABBR, `entries BLO, FLO, ch-sp.`)}`,
           },
           {
             prompt: "How many numbered steps does the Mary Frances book give for single crochet?",
-            options: ["Three", "Five, matching the slip-knot steps", "Two, one for each loop on the hook", "Seven, one for each photograph"],
+            options: ["Four", "Five, matching the slip-knot steps", "Two, one for each loop on the hook", "Seven, one for each photograph"],
             correctIndex: 0,
-            explanation: "CUT 1 to CUT 3, with Plate 2 (Fryer, p. 51).",
+            explanation: "CUT 1 to CUT 4 (Fryer, p. 51), with Plate 2's four numbered photographs. Cuts 1 to 3 make the stitch; cut 4 says to keep on working in this way.",
             sourceLessonSlug: "slip-stitch-and-single-crochet",
           },
           {
@@ -1474,9 +1479,9 @@ ${src(CYC_ABBR, `entries BLO, FLO, ch-sp.`)}`,
           },
           {
             prompt: "How does the Mary Frances book label its single crochet steps?",
-            options: ["CUT 1 to CUT 3", "STEP A to STEP C, under Plate 4", "Figures 1 to 3 of the Handbook", "Illustrations 219 to 221 of Beeton"],
+            options: ["CUT 1 to CUT 4", "STEP A to STEP C, under Plate 4", "Figures 1 to 3 of the Handbook", "Illustrations 219 to 221 of Beeton"],
             correctIndex: 0,
-            explanation: "The steps are labelled CUT 1, CUT 2 and CUT 3 (Fryer, p. 51, Plate 2).",
+            explanation: "The steps are labelled CUT 1, CUT 2, CUT 3 and CUT 4 (Fryer, p. 51, Plate 2).",
             sourceLessonSlug: "slip-stitch-and-single-crochet",
           },
           {
@@ -1915,13 +1920,13 @@ ${src(RIEGO_1846, `p. 57, "Shepherd or Single Crochet".`)}`,
 4. "A double in each of 2 doubles, 2 in next; repeat." 28.
 5. "A double in each of 3 doubles, 2 in next; repeat." 35.
 
-Then: "Continue in this way, adding 1 double between widenings each row, until you have 30 doubles in each section". The pattern is plain once you see it. There are seven increases in every round, one in each of seven sections, so every round is 7 stitches longer than the last, and the plain stitches between increases go up by one each time.
+Then: "Continue in this way, adding 1 double between widenings each row, until you have 30 doubles in each section". The pattern is plain once you see it. Each widening round has seven increases, one in each of seven sections, so it is 7 stitches longer than the round before, and the plain stitches between increases go up by one each time. The widening stops once each section has 30 doubles; the Tam's later rounds do not add seven, and its rounds 36 to 45 add none (lesson 14).
 
 **Corners instead of a circle.** Dillmont's square and hexagon put their increases at the corners instead of spreading them round. Her hexagon (p. 240, fig. 442): "Make a foundation chain of 6 stitches, join the round; 12 plain on the 6 chain", and at each corner "3 plain on the second plain of the last row; repeat 5 times", which makes six corners. Her square gets its corners from "3 plain on the second of the 3 plain that form the corner" (p. 240, fig. 441). Dillmont's "plain" is the US single crochet. The Mary Frances hat starts with 16 double crochets in the ring and builds sections of its own (pp. 206-207).
 
 **What the sources do not say.** They give the steady increase as practice: do it, and the work stays flat. None of the sources this course was built from explains the geometry of why a flat circle needs it, so this course does not offer an explanation either. What the course can show you is what happens when you get the amount wrong on purpose. Increase nothing and you get a tube (lesson 14). Increase by a growing amount, in a fixed ratio, and you get the hyperbolic plane (lesson 15).
 
-:::reveal In the 1918 Tam, how many stitches are added in every round after the first, and how are they placed? ||| Seven: one increase in each of seven sections, with one more plain stitch between increases each round.
+:::reveal In the 1918 Tam, how many stitches does each widening round add, and how are they placed? ||| Seven: one increase in each of seven sections, with one more plain stitch between increases each round, until each section has 30 doubles.
 
 :::reveal Where do Dillmont's square and hexagon put their increases? ||| At the corners: three stitches into one stitch at each corner, four corners for the square and six for the hexagon.
 
@@ -2253,7 +2258,7 @@ ${src(FRYER, `pp. 206-207, "Little Crocheted Hat".`)}`,
             sourceLessonSlug: "the-flat-circle",
           },
           {
-            prompt: "How many increases go into every round of the Tam after the first?",
+            prompt: "How many increases go into each widening round of the 1918 Tam?",
             options: ["One", "Six", "Fourteen", "Seven"],
             correctIndex: 3,
             explanation: "One increase in each of seven sections, so every widening round is 7 stitches longer than the last.",
@@ -2356,8 +2361,8 @@ ${src(FRYER, `pp. 206-207, "Little Crocheted Hat".`)}`,
       section: "Section 4 · Shaping",
       recallContent: [
         {
-          prompt: "In the 1918 Tam, how many stitches does each round add?",
-          answer: "Seven, one in each of seven sections: 7, 14, 21, 28, 35 and so on.",
+          prompt: "In the 1918 Tam, how many stitches does each widening round add?",
+          answer: "Seven, one in each of seven sections: 7, 14, 21, 28, 35 and so on, until each section has 30 doubles.",
         },
         {
           prompt: "What does Beeton say keeps round work flat?",
@@ -3030,7 +3035,7 @@ The council's yarn weight table gives you a starting point for the swatch, in si
 1. **Count every row.** Leinhauser: "Count the stitches at the end of every row" (Leinhauser, n.d.). Compare it with the count the pattern prints.
 2. **Watch the edges.** Priscilla's diagnosis, from the same star-stitch page: "Now notice if your work at the ends is perfectly straight. If it slopes at the end where the wool is clipped off, you will have to work an extra star to keep it even ... It is generally caused by keeping the 1st st tight upon the hook when it should be loosest of all." In her star stitch, a sloping edge is a symptom, and a tight first stitch on the hook is the usual cause.
 
-**What the record does not cover.** None of the sources this course was built from tells you how to pull out stitches and rework them. They teach you to catch a mistake by counting and by watching the edges, not how to undo one, so this course stops there too.
+**Undoing a mistake: the record has it for knitting only.** No crochet source this course was built from tells you how to pull out crochet stitches and rework them. The one passage on undoing work is a knitting scene in the Mary Frances book. Mary Frances finds dropped stitches in a doll's knitted shawl, and the fairy tells her: "You must pull out your needle and rip out all your stitches back to the beginning of the row where you see your first mistake" (Fryer, 1918, p. 172). On the next page the fairy says the yarn can be used again ("many a grown person has unraveled a whole sweater and used the yarn again"), and that crinkled yarn can be steamed: laid in a towel in a wire strainer or colander, over a kettle of boiling water but not touching it, for five minutes (p. 173). Then Mary Frances knits again the "seven rows which she had ripped out" (p. 173). That is knitting, done with a needle you pull out. The book gives no crochet version, so this course does not turn it into a crochet rule. For crochet, the sources teach you to catch a mistake early, by counting and by watching the edges.
 
 :::reveal Your swatch is larger than the pattern's gauge. Do you change to a smaller or a larger hook? ||| A smaller hook.
 
@@ -3042,7 +3047,8 @@ ${src(CYC_WEIGHTS, `the row "Crochet Gauge Ranges in Single Crochet to 4 inch".`
 ${src(CYC_FAQ, `the question on the yarn weight system and interchangeability.`)}
 ${src(CYC_ABBR, `the U.S. and U.K. term table (gauge and tension).`)}
 ${src(PRISCILLA, `"Star Stitch", printed p. 3 (PDF p. 9).`)}
-${src(LEINHAUSER, `the counting rule.`)}`,
+${src(LEINHAUSER, `the counting rule.`)}
+${src(FRYER, `pp. 172-173, after "Doll's Knitted Shawl" (p. 171): ripping out knitting and reusing the yarn.`)}`,
     },
     {
       slug: "exercise-read-and-count",
@@ -3070,7 +3076,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
           { prompt: "On a Craft Yarn Council chart, a T with two slashes across the stem is which stitch?", answer: "treble crochet", accept: ["treble", "tr", "a treble"], hint: "On a dc or tr, each slash is one wrap.", explanation: "One slash is a double crochet (one wrap), two slashes a treble (two wraps)." },
           { prompt: "On a crochet chart, which stitch is a filled dot?", answer: "slip stitch", accept: ["sl st", "a slip stitch", "slip"], hint: "It is the shortest stitch there is.", explanation: "On the council's chart page the slip stitch is a filled dot and the chain an open oval." },
           { prompt: "By Dillmont's filet rule, how many trebles make 4 solid squares side by side?", answer: "13", computedAnswer: true, hint: "Three per solid square, and one to begin.", explanation: "1 + 3 × 4 = 13. Dillmont's own examples: 2 solid squares are 7 trebles and 3 are 10." },
-          { prompt: "The 1918 Tam starts with 7 stitches in the ring and adds 7 every round. How many stitches are in round 6?", answer: "42", computedAnswer: true, hint: "Round 5 has 35.", explanation: "7, 14, 21, 28, 35, 42: each round is seven more than the last." },
+          { prompt: "The 1918 Tam starts with 7 stitches in the ring, and each widening round adds 7. Round 6 is still widening. How many stitches are in round 6?", answer: "42", computedAnswer: true, hint: "Round 5 has 35.", explanation: "7, 14, 21, 28, 35, 42: each widening round is seven more than the last, and the Tam keeps widening until each section has 30 doubles." },
           { prompt: "Your swatch is larger than the pattern's gauge. Do you change to a smaller or a larger hook?", answer: "smaller", accept: ["a smaller hook", "smaller hook", "smaller one"], hint: "A bigger hook makes bigger stitches.", explanation: "The Craft Yarn Council: if your swatch is larger than the pattern gauge, redo it with a smaller hook." },
           { prompt: "In a US pattern, which turning chain counts as a stitch: the ch-1 before a row of single crochet, or the ch-3 before a row of double crochet?", answer: "ch-3", accept: ["the ch-3", "ch 3", "ch3", "the ch 3", "chain 3", "the chain 3", "the ch-3 before double crochet"], hint: "Leinhauser's rule is about stitches taller than a single crochet.", explanation: "Never count the turning ch-1 in single crochet; on taller stitches the turning chain counts as the first stitch unless the pattern says otherwise." },
           { prompt: "With N = 4, a hyperbolic-plane row has 40 stitches. How many does the next row have?", answer: "50", computedAnswer: true, hint: "Every N stitches become N + 1.", explanation: "40 ÷ 4 = 10 groups of 4, and each becomes 5: 50 stitches." },
@@ -3286,7 +3292,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
             sourceLessonSlug: "abbreviations-and-repeats",
           },
           {
-            prompt: "In that 1918 example, what does \"miss 3\" mean?",
+            prompt: "In the 1918 Handbook's repeat example, \"(Chain 3, miss 3, 1 treble in next) three times\", what does \"miss 3\" mean?",
             options: ["Chain 3 more for the turning", "Work 3 into one", "Skip 3 stitches", "Leave 3 loops on the hook"],
             correctIndex: 2,
             explanation: "Miss means skip: Riego's \"Pass over 1 of the row before\", here three times over.",
@@ -3349,7 +3355,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
             sourceLessonSlug: "abbreviations-and-repeats",
           },
           {
-            prompt: "What does lesson 17 say to do with that number?",
+            prompt: "What does lesson 17 say to do with the count after the colon at the end of a row?",
             options: ["Multiply it by the gauge", "Add it to the next row's count", "Ignore it until the last row", "Check your count"],
             correctIndex: 3,
             explanation: "Compare it with your own count every time.",
@@ -3603,7 +3609,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
             sourceLessonSlug: "gauge-and-catching-mistakes",
           },
           {
-            prompt: "What does Priscilla say usually causes the slope?",
+            prompt: "What does Priscilla say usually causes a sloping edge in star stitch?",
             options: ["A turning chain that is too long", "The wrong hook", "Yarn joined in the middle of a row", "A tight first stitch"],
             correctIndex: 3,
             explanation: "\"It is generally caused by keeping the 1st st tight upon the hook when it should be loosest of all.\"",
@@ -3618,9 +3624,9 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
           },
           {
             prompt: "Does any source in this course explain how to pull out stitches and rework them?",
-            options: ["Yes, Leinhauser's counting guide", "No", "Yes, Priscilla's star stitch page", "Yes, Dillmont's p. 223"],
+            options: ["Yes, Leinhauser's counting guide", "Only Fryer, for knitting", "Yes, Priscilla's star stitch page", "Yes, Dillmont's p. 223"],
             correctIndex: 1,
-            explanation: "None of them does. They teach catching a mistake by counting and watching edges, not undoing one.",
+            explanation: "Only the Mary Frances book, in a knitting scene: \"rip out all your stitches back to the beginning of the row where you see your first mistake\" (Fryer, p. 172). No crochet source here explains it.",
             sourceLessonSlug: "gauge-and-catching-mistakes",
           },
           {
@@ -4412,7 +4418,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "before-the-word",
           },
           {
-            prompt: "What date does Karp give for those accounts?",
+            prompt: "What date does Karp give for the household accounts of Mary, Queen of Scots?",
             options: ["13 February 1567", "13 February 1653, with the patent", "June 1997, at a workshop", "1823, with Penélopé"],
             correctIndex: 0,
             explanation: "13 February 1567.",
@@ -4525,7 +4531,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "shepherds-knitting",
           },
           {
-            prompt: "Besides caps, what does Grant say were made in that stitch?",
+            prompt: "Besides caps, what does Grant say were made in shepherd's knitting?",
             options: ["Drawers and waistcoats", "Purses and collars to sell in town", "Lace collars for the London trade", "Cuffs and boots"],
             correctIndex: 0,
             explanation: "\"making not only caps, but drawers and waistcoats for winter wear\".",
@@ -4539,7 +4545,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "shepherds-knitting",
           },
           {
-            prompt: "What does that running head date?",
+            prompt: "What does the running head on Grant's p. 182 date?",
             options: ["The writing of the passage", "The printing of the book", "The events", "The scan"],
             correctIndex: 2,
             explanation: "It dates the events to 1812-13. The preface dates the writing.",
@@ -4553,7 +4559,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "shepherds-knitting",
           },
           {
-            prompt: "When did she conclude the portion that was printed?",
+            prompt: "When did Mrs. Smith conclude the printed portion of her recollections?",
             options: ["1867", "1845", "1812", "1898"],
             correctIndex: 0,
             explanation: "\"and concluded the portion here printed in 1867.\"",
@@ -4666,7 +4672,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "crochet-in-print",
           },
           {
-            prompt: "On which page of that volume is the instruction?",
+            prompt: "On which page of its Penélopé volume does the KB show the crochet instruction?",
             options: ["93", "72", "189", "182"],
             correctIndex: 0,
             explanation: "\"detail from page 93\" (KB).",
@@ -4708,7 +4714,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "crochet-in-print",
           },
           {
-            prompt: "In what year did Gaugain publish them?",
+            prompt: "In what year did Jane Gaugain publish her crochet instructions?",
             options: ["1823", "1846", "1840", "1870"],
             correctIndex: 2,
             explanation: "1840, in Edinburgh.",
@@ -4828,7 +4834,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "About how much did the nuns receive for that work?",
+            prompt: "About how much did the Blackrock nuns receive in 1845 for the work they had taught?",
             options: ["Ten pounds", "Twelve and sixpence", "Two thousand pounds", "Ninety pounds"],
             correctIndex: 3,
             explanation: "\"about ninety pounds on the work they had taught their scholars to do\".",
@@ -4842,7 +4848,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "What does the catalogue say about who first had it?",
+            prompt: "What does the 1883 Irish Lace catalogue say about who first had crochet?",
             options: ["It was Mrs. Roberts in 1847", "It is not remembered", "It was the Ursulines in 1845", "A London dealer"],
             correctIndex: 1,
             explanation: "\"It is not remembered into whose hands it first came, or in what spot it commenced its beneficent career\".",
@@ -4948,7 +4954,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "folklore-testimony-and-a-survey",
           },
           {
-            prompt: "Where is the date on that neckpiece?",
+            prompt: "Where is the date on the Swedish neckpiece Karp reports?",
             options: ["In the fabric", "Stitched on a paper label", "Written in a museum ledger", "Engraved on a hook"],
             correctIndex: 0,
             explanation: "\"worked integrally into the fabric\". It is Karp's report of an object this course has not seen.",
@@ -5591,7 +5597,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
             sourceLessonSlug: "project-hyperbolic-plane",
           },
           {
-            prompt: "What yarn did they choose?",
+            prompt: "What yarn did Henderson and Taimina choose?",
             options: ["The softest, stretchiest yarn", "Size 100 thread", "Super bulky yarn, category 6", "Low-stretch yarn"],
             correctIndex: 3,
             explanation: "They \"chose a yarn which will not stretch a lot\".",
