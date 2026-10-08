@@ -57,8 +57,9 @@ export const JURISDICTION: JurisdictionFile = {
   adoptions: [
     {
       framework: NGSS,
+      // Checked code by code on 2026-10-06 (plans/future-courses/farm-and-garden/2026-10-06-ngss-state-check/).
       adoption:
-        "On April 19, 2019 Governor Mills signed LD 283, adopting the Next Generation Science Standards as Maine's Science and Engineering standards within the Maine Learning Results; the performance expectations are taken from NGSS. HS-ESS3-1, the one performance expectation we cite, appears in Maine's own printed standards with the NGSS code and identical performance-expectation text, so the shared NGSS file is adopted verbatim with no aliases. This is not a science course, so we claim exactly one NGSS performance expectation, partially — see the note on it.",
+        "Maine's Science, Technology, and Engineering standards in the Maine Learning Results were signed into law on April 19, 2019 and are adapted from the NGSS; in 2024 the Legislature's education committee declined a revision and left them unchanged. On 2026-10-06 we compared the Maine DOE's 2019 Science and Engineering standards document: 5-LS2-1, MS-LS2-3, HS-LS2-3, HS-ESS1-1, HS-ESS1-2, HS-ESS1-3, HS-ESS2-2, HS-ESS2-5 and HS-ESS3-1 carry the NGSS text word for word. Maine's own Further explanation notes are not part of what we claim.",
     },
   ],
   frameworks: [
@@ -219,8 +220,8 @@ export const JURISDICTION: JurisdictionFile = {
       body: "This catalog does no mathematics instruction, so it meets no Maine Learning Results mathematics standard.",
     },
     {
-      heading: "Science — one partial claim, via the shared NGSS file.",
-      body: "Maine adopted the NGSS in 2019 (LD 283) as its Science and Engineering standards, so our one honest science claim — HS-ESS3-1, partial — comes through the shared NGSS mapping with the limit stated on the entry. There is no laboratory work, investigation, or modelling in this catalog, and we will not claim more.",
+      heading: "Science: partial claims, through the shared NGSS file.",
+      body: "Maine adopted the NGSS in 2019 (LD 283) as its Science and Engineering standards, so our science claims come through the shared NGSS mapping, each partial and with its limit stated on the entry; any NGSS code this state rewords or dropped is listed separately on this page. There is no laboratory work or investigation in this catalog, and we claim no more than the lessons teach.",
     },
     {
       heading: "Maine's own state structure is taught more fully than any one Civics & Government indicator names.",

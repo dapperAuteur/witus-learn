@@ -153,7 +153,13 @@
 
 ### Trade Skills
 
+- [`crochet`](./crochet-course.ts) Crocheting · FIBRE-01 (from-fibre-to-fabric)
 - [`knot-tying`](./knots-course.ts) Knot-Tying & Rope Work
+- [`making-string`](./making-string-course.ts) Making String · FIBRE-00 (from-fibre-to-fabric)
+
+### Farm & Garden
+
+- [`manure-and-compost`](./manure-and-compost-course.ts) Manure and Compost · series the-calorie-loop · also in: Science & Math
 
 ### Survival
 
@@ -340,6 +346,7 @@
 - [`read-the-plan-and-the-code`](./read-the-plan-and-the-code-course.ts) Reading the Plan and the Code: Drawings, Specifications, and Who Made the Code Law · series the-house-you-live-in · private · also in: Money & Property, Careers & Media
 - [`the-river-and-the-watershed`](./the-river-and-the-watershed-course.ts) The River and the Watershed · SCI-03 (science-and-math)
 - [`keeping-a-house`](./keeping-a-house-course.ts) Keeping a House: Hazards, Checks, and Where an Amateur Has to Stop · series the-house-you-live-in · private · listed here as an extra category; primary: Money & Property
+- [`manure-and-compost`](./manure-and-compost-course.ts) Manure and Compost · series the-calorie-loop · listed here as an extra category; primary: Farm & Garden
 - [`the-author-line-and-the-finding`](./the-author-line-and-the-finding-course.ts) The Author Line and the Finding: Three Names in 1959, and What an Ethics Committee Concluded in 2014 · private · listed here as an extra category; primary: Culture & History
 - [`what-the-citation-records`](./what-the-citation-records-course.ts) What the Citation Records: Reading a Prize Page Against the Documents Around It · private · listed here as an extra category; primary: Culture & History
 - [`who-gets-nominated`](./who-gets-nominated-course.ts) Who Gets Nominated: Chien-Shiung Wu and the Stage Before the Prize · series credit · private · listed here as an extra category; primary: Culture & History

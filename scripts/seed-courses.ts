@@ -52,8 +52,11 @@ import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { KNOTS_COURSE } from "./data/knots-course";
+import { MAKING_STRING_COURSE } from "./data/making-string-course";
+import { CROCHET_COURSE } from "./data/crochet-course";
 import { CROQUET_COURSE } from "./data/croquet-course";
 import { SURVIVAL_COURSE } from "./data/survival-course";
+import { MANURE_AND_COMPOST_COURSE } from "./data/manure-and-compost-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { VOICE_ACTING_COURSE } from "./data/voice-acting-course";
@@ -1818,6 +1821,38 @@ async function main() {
     navigationMode: "linear",
   });
 
+  // ── From Fibre to Fabric (Trade Skills) ───────────────────────────────────────
+  // BAM's briefs of 2026-10-05, answered 2026-10-06 (plans/future-courses/trade-skills/): making
+  // string, then crocheting; braiding and raising animals for yarn follow. knot-tying stays separate
+  // (BAM: "keep separate, but link to each other"), so it carries no FIBRE code. Public and free, like
+  // knots. Dossiers beside the briefs; every lesson asserts only their VERIFIED lines.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "making-string",
+    course: MAKING_STRING_COURSE,
+    category: "Trade Skills",
+    seriesSlug: "from-fibre-to-fabric",
+    seriesTitle: "From Fibre to Fabric",
+    seriesOrder: 0,
+    seriesCode: "FIBRE",
+    seriesPosition: "00",
+    navigationMode: "linear",
+  });
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "crochet",
+    course: CROCHET_COURSE,
+    category: "Trade Skills",
+    seriesSlug: "from-fibre-to-fabric",
+    seriesTitle: "From Fibre to Fabric",
+    seriesOrder: 1,
+    seriesCode: "FIBRE",
+    seriesPosition: "01",
+    navigationMode: "linear",
+  });
+
   // ── Vocational / new courses (all on Learn.WitUS) ──────────────────────────
   for (const { name, sortOrder } of [
     { name: "Trade Skills", sortOrder: 8 },
@@ -3194,6 +3229,35 @@ async function main() {
     })
     .where(and(eq(schema.courses.tenantId, learnWitus), eq(schema.courses.slug, "hoodoo-complete")));
   console.log("  hoodoo: held from publishing (v1 review-hold; v2 private, owner-only)");
+
+  // Farm & Garden (new category, BAM's name, 2026-10-05). Its first course is "Manure and Compost",
+  // the spine of The Calorie Loop series. Brief: plans/future-courses/farm-and-garden/
+  // 2026-10-05-manure-and-compost-brief.md (approved by BAM 2026-10-06; his answers are in its
+  // section 8). Dossier: plans/future-courses/farm-and-garden/2026-10-06-manure-and-compost-dossier.md.
+  // Research tier 2. PUBLIC (the default), BAM's decision 2026-10-06; a Master Gardener or extension
+  // educator BAM is finding will review it before it is vetted. Listed under Science & Math too for
+  // the NGSS life-science claims. NO seriesCode or seriesPosition yet: check-series-codes forbids a
+  // "00" that is the only course in its series, so LOOP-00 is coded when the second course ships.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Farm & Garden", sortOrder: 9 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "manure-and-compost",
+    course: MANURE_AND_COMPOST_COURSE,
+    category: "Farm & Garden",
+    additionalCategories: ["Science & Math"],
+    seriesSlug: "the-calorie-loop",
+    seriesTitle: "The Calorie Loop",
+    seriesOrder: 0,
+    navigationMode: "linear",
+    // Insert-only. BAM's answer of 2026-10-06: a Master Gardener or extension educator reviews it
+    // before it is vetted; their name replaces "a reviewer" here (edit the hold in course settings).
+    publishHoldReason:
+      "Held until a Master Gardener or extension educator has reviewed it (BAM is finding one). Research tier 2: pathogens, food safety and two federal rules.",
+  });
 
   // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared
   // "AI & Technology" category alongside AI Literacy (F1, the recommended prerequisite).

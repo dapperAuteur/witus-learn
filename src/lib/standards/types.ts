@@ -106,6 +106,15 @@ export interface SharedAdoption {
    * the test suite fails on it.
    */
   aliases?: Record<string, string>;
+  /**
+   * Shared codes this state does NOT carry verbatim (canonical code → why), so they are not shown
+   * for this state at all. Added 2026-10-06, when a per-state check found the NGSS file applying
+   * codes to states that reword them (AK, NY, NJ) or dropped them (WY's 2023 standards). Adopting a
+   * shared framework applies EVERY code in it; this is the only way to say "not here". Each reason
+   * is published on the state's page under "What we don't claim" (jurisdictionData), and a code may
+   * not be both aliased and excluded. An exclusion naming a code the framework lacks is a data bug.
+   */
+  exclude?: Record<string, string>;
 }
 
 /** An honest omission, rendered under "What we don't claim" on a state's page. */

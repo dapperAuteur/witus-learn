@@ -500,11 +500,19 @@ far by California. **A state's mathematics adoption is a separate decision from 
 must be checked against that state's own department of education before it is added; several states
 kept one and not the other. NGSS carries HS-ESS1 and HS-ESS2 alongside the original HS-ESS3.
 
-Every mathematics and science standard this catalog claims is an **interpret-it** standard. The
-produce-it expectations (Common Core S-ID.1/.4/.6/.8 and S-IC.2/.4/.5; every NGSS "Develop a model"
-performance expectation) are deliberately **unclaimed**, because no course asks a learner to construct
-a plot, fit a model, run a simulation or build a model, and the platform could not grade it if they
-did. They become claimable when numeric grading ships, and not before.
+Almost every mathematics and science standard this catalog claims is an **interpret-it** standard. The
+produce-it expectations (Common Core S-ID.1/.4/.6/.8 and S-IC.2/.4/.5; NGSS "Develop a model"
+performance expectations) are **unclaimed** wherever no course asks a learner to construct a plot, fit a
+model, run a simulation or build a model. **The one exception (2026-10-06):** the Manure and Compost
+capstone has the learner build a bounded model of their own loop as an **assignment** lesson, which the
+learner submits and an instructor grades (`assignment_submissions`), so 5-LS2-1 and MS-LS2-3 are claimed,
+partially, on that assignment alone. Any other produce-it expectation becomes claimable only the same
+way, or when numeric grading ships.
+
+NGSS is now also **checked per state** (2026-10-06): a state that rewords or dropped a shared code
+**excludes** it in its own data file (`SharedAdoption.exclude`, with a reason), and the reason appears
+on that state's page under "What we don't claim". Wyoming (2023 standards), Alaska, New York and New
+Jersey carry exclusions; Oregon and Kentucky print their own codes (aliases).
 
 The companion **standards explorer** (`/academic-standards/matrix`) flattens every
 (state x standard x course) alignment into one table you can fuzzy-search (code, standard text,
@@ -991,6 +999,16 @@ GET   /api/admin/media          # this tenant's assets, newest first
 POST  /api/admin/media          # register an upload: url, kind, credit, rightsStatus, sourceUrl (+ course/lesson/alt/caption)
 PATCH /api/admin/media/[id]     # record a decision: { status, note }
 ```
+
+Assets reach the queue in two steps. `node scripts/upload-course-media.mjs --batch <name> [--dry-run]`
+copies a batch (`scripts/data/media-batches/<name>.mjs`) into Cloudinary and writes a manifest
+(`scripts/data/media/<name>.json`); then `pnpm register:media:prod <manifest>` registers it here. The
+uploader **reads rights from the source and never from the batch**: a Wikimedia Commons licence, a
+Library of Congress rights advisory, Project Gutenberg's RDF rights line ("Public domain in the USA.")
+or an Internet Archive item's licence (Public Domain Mark or CC0), not-in-copyright status or rights
+note (the last two sources added 2026-10-07). It records the statement verbatim, refuses an item that
+states nothing, and refuses an image URL that does not belong to the item whose rights it read. A dry
+run writes the manifest too, with `url: null`, so never commit a dry-run manifest over a real one.
 
 Everything goes through the scoped DAL, so one school's unreviewed media is invisible to every other,
 and a by-id decision on a foreign asset **404s** rather than redirecting. The pure clearance logic

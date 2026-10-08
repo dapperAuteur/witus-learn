@@ -7081,6 +7081,291 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The academy's biographical memoirs",
     ],
   },
+  {
+    key: "manure-355-iac-8-current-text",
+    course: "manure-and-compost",
+    lesson: "too-much-indiana-rules-and-the-river",
+    quote:
+      "These figures come from the Office of Indiana State Chemist's copy of the rule as readopted in 2018; check the current rule before relying on them",
+    title:
+      "355 IAC 8 setbacks and frozen-ground limits: is the 2018 OISC copy current?",
+    severity: "medium",
+    claim:
+      "Lesson 16 teaches the 355 IAC 8 setbacks (500 ft from public water supply wells, 50 ft from surface water, sinkholes, wells and drainage inlets, 10 ft from property lines and roads) and the frozen-ground limits from the State Chemist's copy of the rule as readopted in 2018.",
+    question:
+      "Does the current official text of 355 IAC 8 (Indiana Administrative Code, as in force today) still carry the 8-1-2(b) 10 cubic yard / 4,000 gallon exemption, the 8-3-2 Table 1 setbacks and the 8-3-4 frozen-ground limits exactly as the 2018 OISC copy prints them?",
+    stakes:
+      "A gardener or small farmer could plan a pile or a spreading setback from figures that have since changed.",
+    needs: [
+      "The current official 355 IAC 8 text (or the IAC readoption notice) with section numbers",
+      "Any change since 2018 to 8-1-2(b), 8-3-2 Table 1 or 8-3-4",
+    ],
+    where: [
+      "iar.iga.in.gov (Indiana Register; JavaScript site, open it in a browser)",
+      "https://www.oisc.purdue.edu/fertilizer/ (OISC rule copies)",
+    ],
+  },
+  {
+    key: "manure-purdue-county-educators-2026",
+    course: "manure-and-compost",
+    lesson: "find-your-extension-office",
+    quote:
+      "This course could not confirm whether every county keeps its own agriculture or horticulture educator after the change.",
+    title:
+      "Purdue Extension's 12 regions: does every county keep an ag or horticulture educator?",
+    severity: "low",
+    claim:
+      "Lesson 17 says Purdue Extension announced on 18 June 2026 a move to 12 regions with a county-level 4-H presence, and that the course could not confirm whether every county keeps its own agriculture or horticulture educator, so the exercise accepts a regional educator.",
+    question:
+      "After Purdue Extension's 2026 restructuring, does each Indiana county office still have its own agriculture and natural resources or horticulture educator, or are those roles regional?",
+    stakes:
+      "Low. The exercise already accepts either answer, but the lesson could tell learners which to expect.",
+    needs: [
+      "A Purdue Extension page or announcement stating how ANR and horticulture educators are assigned after the change",
+    ],
+    where: [
+      "https://extension.purdue.edu/about/transformation.html",
+      "Purdue Extension county office pages",
+    ],
+  },
+  {
+    key: "manure-federal-rule-coverage",
+    course: "manure-and-compost",
+    lesson: "which-rule-applies-to-you",
+    quote:
+      "This course did not verify which growers each federal rule legally covers.",
+    title: "Who 7 CFR 205 and 21 CFR 112 actually bind",
+    severity: "medium",
+    claim:
+      "Lesson 21 teaches the organic rule (7 CFR 205.203) and FDA's produce safety rule (21 CFR part 112) as benchmarks, not as legal duties, because the course did not verify their coverage.",
+    question:
+      "Which growers does each rule legally bind: who must follow 7 CFR part 205 (certified organic operations, and the exemption for small operations under a sales threshold), and who is covered by 21 CFR part 112 (the coverage and exemption sections, including the small-farm and qualified-exemption thresholds)?",
+    stakes:
+      "A learner who sells at a market could misjudge whether a federal rule applies to them; the benchmark framing is safe but less useful than the actual coverage.",
+    needs: [
+      "The operative coverage and exemption sections with paragraph numbers, read from eCFR (7 CFR 205.100 and 205.101; 21 CFR 112.4 to 112.7)",
+    ],
+    where: [
+      "https://www.ecfr.gov/ (title 7 part 205; title 21 part 112)",
+    ],
+  },
+  {
+    key: "manure-pounds-to-cubic-yards",
+    course: "manure-and-compost",
+    lesson: "which-rule-applies-to-you",
+    quote:
+      "Whether that is more than 10 cubic yards depends on how dense it is and what is mixed with it, which this course did not verify.",
+    title:
+      "Converting a horse's yearly manure to cubic yards for the 355 IAC 8 test",
+    severity: "low",
+    claim:
+      "Lesson 21 works out 51 lb a day x 365 = 18,615 lb a year for a 1,000 lb sedentary horse (NRCS Table 4-14) but cannot say whether that passes Indiana's 10 cubic yard threshold, because manure density was not verified.",
+    question:
+      "What bulk density (pounds per cubic foot or per cubic yard) does an authoritative source give for horse manure, as excreted and with bedding, so the lesson can convert pounds to cubic yards?",
+    stakes:
+      "Low. The lesson tells learners to ask their extension office; a sourced density would let it answer the question it raises.",
+    needs: [
+      "A density figure with its source and locator (NRCS Part 651 ch. 4 or ch. 9, ASABE D384, or a land-grant manure guide)",
+    ],
+    where: [
+      "NRCS Agricultural Waste Management Field Handbook, Part 651 (chapters 4 and 9)",
+      "Purdue ABE-166-W and land-grant manure management guides",
+    ],
+  },
+  {
+    key: "manure-iowa-state-may-survive",
+    course: "manure-and-compost",
+    lesson: "dogs-cats-and-pigs",
+    quote:
+      "Some of the parasites found in these manures may survive and remain infectious for people",
+    title:
+      "Cat, dog and pig manure: confirm the parasite reason from a primary source",
+    severity: "low",
+    claim:
+      "Lesson 5 quotes Iowa State Extension that parasites in cat, dog and pig manure 'may survive and remain infectious for people', and flags the hedge as the source's word.",
+    question:
+      "Which parasites, from a primary federal or peer-reviewed source, survive composting conditions in pig manure (as Toxoplasma and Toxocara are documented for cats and dogs by CDC), so the pig half of the claim rests on more than an extension page?",
+    stakes:
+      "Low. The advice is consistent across Iowa State, Purdue and the 2005 NRCS study; the pig reason is the thinnest part.",
+    needs: [
+      "A CDC, USDA or peer-reviewed source naming pig-manure parasites relevant to food gardens (for example Ascaris suum), with locator",
+    ],
+    where: [
+      "CDC parasite pages",
+      "USDA ARS or land-grant swine manure publications",
+    ],
+  },
+  // ── Making String (FIBRE-00), filed 2026-10-08 for the hedges the verified draft writes ──────────
+  {
+    key: "string-nettle-milkweed-preparation",
+    title: "How nettle and milkweed fibre were prepared",
+    course: "making-string",
+    lesson: "dogbane-yucca-basswood-sinew",
+    quote: "A gap to state plainly: none of the sources read for this course describes how nettle or milkweed fibre was prepared.",
+    severity: "low",
+    question: "Does a public-domain or federal source describe, step by step, how nettle (Urtica) or milkweed (Asclepias) fibre is prepared for cord?",
+    claim: "Lesson 6 names nettle and milkweed as fibre plants and says no source read for the course describes their preparation.",
+    stakes: "Low. The course teaches dogbane, yucca, basswood and sinew from sources and declines to guess for these two.",
+    needs: ["A Tier A source (US federal, or published 1930 or earlier) with the preparation steps and a page or section locator"],
+    where: ["USDA NRCS plant guides for Urtica dioica and Asclepias species", "USFS Celebrating Wildflowers ethnobotany pages", "USDA fibre investigation reports of the 1890s to 1910s (Dodge; Dewey)"],
+  },
+  {
+    key: "string-joining-new-fibre",
+    title: "A source for adding fibre to a running strand",
+    course: "making-string",
+    lesson: "thigh-rolling-and-feeding-in",
+    quote: "Neither source gives a step-by-step method for joining new fibre into a running strand, and no public-domain source found for this course does.",
+    severity: "medium",
+    question: "Does any public-domain or federal source give a step-by-step method for adding new fibre to a strand while twisting cord?",
+    claim: "Lesson 8 teaches only the principle (keep each strand an even thickness as fibre is added) and says no public-domain source found gives a method.",
+    stakes: "Medium for a how-to course: a learner making a long cord needs this step, and the course currently stops at the principle rather than invent one.",
+    needs: ["The passage, with page or paragraph locator and its rights tier", "Whether it is written for plant fibre, sinew or both"],
+    where: ["Earlier editions of the Army survival manual (FM 21-76, 1957 and 1970)", "Holmes, Prehistoric Textile Art, BAE 13th Annual Report (1896)", "Mason, The Origins of Invention (1895), beyond p. 240"],
+  },
+  {
+    key: "string-ropewalk-machines",
+    title: "What each Charlestown ropewalk machine did",
+    course: "making-string",
+    lesson: "the-ropewalk",
+    quote: "The captions name the machines without describing the process step by step, so this course does not guess what each machine did beyond what its caption says.",
+    severity: "low",
+    question: "What did each machine named in the HAER MA-90-2 captions do in the rope-making process?",
+    claim: "Lesson 12 names the machines from the HAER photo captions and goes no further.",
+    stakes: "Low. Nothing false is said; the lesson is thinner than it could be.",
+    needs: ["A federal or public-domain description of the Charlestown ropewalk process, with locator"],
+    where: ["Boston National Historical Park historic resource studies of the Charlestown Navy Yard", "HAER MA-90-2 data pages and the related HAER and HABS records", "US Navy records on the ropewalk (NHHC)"],
+  },
+  {
+    key: "string-dzudzuana-dispute-outcome",
+    title: "How the Dzudzuana flax exchange came out",
+    course: "making-string",
+    lesson: "hohle-fels-and-dzudzuana",
+    quote: "This course has not read that reply, or the full text of the comment, so it cannot tell you how the exchange came out.",
+    severity: "medium",
+    question: "What do Bergfjord et al.'s full comment and Kvavadze et al.'s reply (Science 328, 1634, 2010) argue, and has later work settled whether the Dzudzuana fibres are flax?",
+    claim: "Lesson 15 teaches the 30,000-year-old flax claim as a dispute, from the original manuscript and the comment's abstract only.",
+    stakes: "Medium. A dispute is taught; if one side has since prevailed, the lesson should say so.",
+    needs: ["The full text of the comment and of the reply", "Any later peer-reviewed assessment of the identification"],
+    where: ["Science 328(5986):1634, the technical comment and response", "Harvard DASH for an author manuscript of the reply", "Later reviews citing Kvavadze 2009"],
+  },
+  {
+    key: "string-ohalo-lascaux-originals",
+    title: "The original Ohalo II and Lascaux cord reports",
+    course: "making-string",
+    lesson: "what-survives",
+    quote: "This course has not read those original reports.",
+    severity: "low",
+    question: "What ages and descriptions do the original reports give for the Ohalo II cordage and the Lascaux cord?",
+    claim: "Lesson 16 mentions both finds as cited by the two papers it read, which give different Ohalo II ages, and repeats neither age.",
+    stakes: "Low. No age is asserted.",
+    needs: ["The original reports with page locators", "The dating method each used"],
+    where: ["Nadel et al. on Ohalo II cordage (1994)", "Leroi-Gourhan on the Lascaux cord (1982)"],
+  },
+  {
+    key: "string-polyester-rope",
+    title: "A source on polyester rope",
+    course: "making-string",
+    lesson: "what-a-bought-rope-is-made-of",
+    quote: "The sources read for this course do not describe polyester rope.",
+    severity: "low",
+    question: "Which federal source describes polyester (Dacron) fibre rope, its properties and its uses?",
+    claim: "Lesson 17 lists the rope fibres its sources describe and says plainly that polyester is not among them.",
+    stakes: "Low, but polyester is a common bought rope, so a learner reading labels will meet it.",
+    needs: ["The passage and locator", "Its rights tier"],
+    where: ["US Navy rate training manuals (Boatswain's Mate) approved for public release", "Later editions or changes of FM 5-125"],
+  },
+  // ── Crocheting (FIBRE-01), filed 2026-10-08 ──────────────────────────────────────────────────────
+  {
+    key: "crochet-weight-8",
+    title: "The Craft Yarn Council's size 8",
+    course: "crochet",
+    lesson: "yarn-weights",
+    quote: "The table read for this course had no size 8 column, so this course stops at 7.",
+    severity: "low",
+    question: "Has the Craft Yarn Council published its size 8 yarn category, and with what name, yarn description and hook range?",
+    claim: "Lesson 3 teaches weights 0 to 7 and notes the council announced a size 8 with resources 'coming soon'.",
+    stakes: "Low; the lesson says what it read and when.",
+    needs: ["The published table row for size 8, with the date read"],
+    where: ["craftyarncouncil.com/standards/yarn-weight-system"],
+  },
+  {
+    key: "crochet-turning-chain-reason",
+    title: "Why a row starts with a turning chain",
+    course: "crochet",
+    lesson: "rows-and-the-turning-chain",
+    quote: "The passages quoted here record the habit without giving a reason.",
+    severity: "low",
+    question: "Does any period manual or open source explain why each row begins with a turning chain of a given length?",
+    claim: "Lesson 10 teaches the turning chain from period manuals that give the habit but not the reason.",
+    stakes: "Low. The habit is taught correctly.",
+    needs: ["The explaining passage and its locator"],
+    where: ["Dillmont, Encyclopedia of Needlework, crochet chapter", "The Priscilla Crochet Book (1908)", "Craft Yarn Council learn-to-crochet pages (Tier B)"],
+  },
+  {
+    key: "crochet-magic-ring-source",
+    title: "A source for the magic (adjustable) ring",
+    course: "crochet",
+    lesson: "joining-a-ring",
+    quote: "If you meet a pattern that begins with a \"magic ring\" or an \"adjustable ring\", know that none of the sources this course was built from describes one.",
+    severity: "medium",
+    question: "Is there a reliable source, free to read, that describes the magic or adjustable ring step by step?",
+    claim: "Lesson 11 teaches only the joined-chain ring and says no source it was built from describes the magic ring.",
+    stakes: "Medium. Many modern patterns start with it, so a learner will meet it in their first pattern.",
+    needs: ["The description and locator", "Its rights tier (link if Tier B)"],
+    where: ["Craft Yarn Council how-to pages", "Land-grant extension 4-H crochet project books"],
+  },
+  {
+    key: "crochet-flat-circle-geometry",
+    title: "Why a flat circle needs a steady increase",
+    course: "crochet",
+    lesson: "the-flat-circle",
+    quote: "None of the sources this course was built from explains the geometry of why a flat circle needs it, so this course does not offer an explanation either.",
+    severity: "low",
+    question: "Which open source explains, in terms a beginner can follow, why each round of a flat circle adds the same number of stitches?",
+    claim: "Lesson 12 teaches the regular increase as a rule from the manuals and declines to explain the geometry.",
+    stakes: "Low. The rule is taught correctly; only the reason is missing.",
+    needs: ["The explaining passage and locator", "Its licence"],
+    where: ["Henderson and Taimina's paper (already a course source), read in full", "Open-licence geometry or crochet-mathematics texts"],
+  },
+  {
+    key: "crochet-blocking-source",
+    title: "A source on blocking crochet",
+    course: "crochet",
+    lesson: "care-and-blocking",
+    quote: "The knitted-coat pressing and Dillmont's lace pinning are real period methods, but one was written for knitting and the other for lace, and this course will not tell you either is right for your crochet.",
+    severity: "medium",
+    question: "Does a period or open source describe blocking or pressing finished crochet specifically?",
+    claim: "Lesson 23 reports a knitting method and Dillmont's lace finishing, and declines to recommend either for crochet.",
+    stakes: "Medium. Blocking is a standard finishing step that a learner will be told to do in patterns.",
+    needs: ["The passage, written for crochet, with locator and rights tier"],
+    where: ["The Priscilla Crochet Book (1908) and other Priscilla titles", "Beeton's Book of Needlework (1870)", "Craft Yarn Council care pages (Tier B)"],
+  },
+  {
+    key: "crochet-mary-queen-of-scots-accounts",
+    title: "The 1567 household accounts Karp reports",
+    course: "crochet",
+    lesson: "before-the-word",
+    quote: "That is Karp's report of a document this course has not seen.",
+    severity: "low",
+    question: "What do the household accounts of Mary, Queen of Scots, dated 13 February 1567, actually say, and does the word translated as 'crochet' mean the craft?",
+    claim: "Lesson 24 reports, as Karp's, that the accounts record 'silk thread used for sewing and crochet'.",
+    stakes: "Low; the lesson marks it as Karp's report.",
+    needs: ["The original entry in its language, with archive reference", "The word Karp renders as crochet"],
+    where: ["Published editions of the Scottish royal household accounts (National Records of Scotland)", "Karp's postprint addendum, p. 17, for his source"],
+  },
+  {
+    key: "crochet-tam-decrease-rounds",
+    title: "The 1918 Tam's decrease rounds",
+    course: "crochet",
+    lesson: "project-hat",
+    quote: "As transcribed, their numbers look garbled, so this course does not reproduce them.",
+    severity: "low",
+    question: "What do the decrease rounds of the 1918 Handbook's Tam actually say, read from the page images rather than the transcription?",
+    claim: "Lesson 31 teaches the hat's crown and straight rows and leaves out the decrease rounds as garbled in transcription.",
+    stakes: "Low; the project still works as taught.",
+    needs: ["The rounds as printed, with page", "Whether the Gutenberg transcription or the original is in error"],
+    where: ["Handbook of Wool Knitting and Crochet (1918), Gutenberg 26113, and an archive.org page scan of the same edition"],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

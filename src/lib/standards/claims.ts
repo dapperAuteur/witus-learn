@@ -5692,6 +5692,40 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "23 · Capstone: read your own record, and the gap it sits inside",
     ],
   },
+  // ── Manure and Compost (Farm & Garden; brief and dossier in plans/future-courses/farm-and-garden/) ──
+  // Checked against the lesson text on 2026-10-06, not the titles: lesson 22 has the learner draw a
+  // bounded system with plants, animals, decomposers and soil, and arrows labelled with the matter each
+  // carries; lesson 10 reads thermometer evidence to tell a working aerobic pile from cold, possibly
+  // anaerobic spots. Photosynthesis (plants turning air and water into food) is NOT taught, and energy
+  // appears only as the heat a pile gives off, which is why every NGSS entry on these claims is partial.
+  {
+    id: "catalog.compost-matter-cycling",
+    claim:
+      "Traces how matter moves from feed through animals into manure, is broken down by decomposers in a compost pile and in soil, and returns to crops, and has the learner build their own bounded model of that loop.",
+    courseSlugs: ["manure-and-compost"],
+    lessons: [
+      // Feed in, most of the N, P and K back out as manure (Purdue AY-277), decomposers, soil, crop.
+      "1 · What a loop is, and the two rules this course reads",
+      // Composting defined as aerobic decomposition by microorganisms; matter changes form, not lost.
+      "9 · What composting is: carbon, nitrogen, water and air",
+      // The capstone: the learner draws the boundary, the boxes and the labelled matter arrows.
+      "22 · Build your own loop",
+    ],
+  },
+  {
+    id: "catalog.compost-aerobic-anaerobic",
+    claim:
+      "Explains composting as aerobic decomposition and uses temperature readings over time as evidence to tell a working aerobic pile from cold zones where decomposition may be anaerobic.",
+    courseSlugs: ["manure-and-compost"],
+    lessons: [
+      "9 · What composting is: carbon, nitrogen, water and air",
+      // The temperature stages, and the NRCS line that cold spots "indicate sites of anaerobic
+      // decomposition", read from a thermometer table.
+      "10 · Heat, oxygen and time: the stages of a pile",
+      // Passive piles: "the potential for development of anaerobic conditions is greater".
+      "12 · Turning, cold heaps, and worms",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

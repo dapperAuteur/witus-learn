@@ -5,6 +5,43 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Manure and Compost, the first Farm & Garden course** (\`feat/manure-and-compost-course\`, no
+  migration; after merge run \`pnpm seed:courses:prod\`). BAM's brief of 2026-10-05, answered 2026-10-06.
+  Six sections, 22 lessons, 373 quiz questions, built only from a verified dossier (NRCS manure tables and
+  composting chapter, 7 CFR 205.203, 21 CFR 112, the 2005 NRCS dog-waste study, CDC, Purdue Extension and
+  Indiana's 355 IAC 8, Carver's 1905 and 1936 bulletins, King, Darwin). Teaches the organic rule's 90/120
+  days and FDA's "[Reserved]" interval side by side, Indiana-specific use with a find-your-extension-office
+  exercise, and ends with the learner building a model of their own loop (an instructor-graded
+  assignment). New **Farm & Garden** category; series **The Calorie Loop** (code LOOP once a second
+  course ships). Mapped to NGSS 5-LS2-1, MS-LS2-3 and HS-LS2-3, all partial. Five hedges filed as research
+  checks. Citations are staged after the prod seed (\`pnpm gen:citations:prod\`). Public, unvetted until a
+  Master Gardener or extension educator reviews it.
+- ✅ **NGSS checked state by state; four states corrected** (\`feat/manure-and-compost-course\`, no
+  migration). A per-state check on 2026-10-06 found the shared NGSS file showing codes that Wyoming's 2023
+  standards dropped (HS-ESS1-1, HS-ESS1-3, HS-ESS2-5, HS-ESS3-1), that Alaska rewords or lacks
+  (HS-ESS1-1, HS-ESS1-3, HS-ESS2-2), that New York rewords (HS-ESS2-2) and that New Jersey rewords
+  (HS-ESS3-1); Oregon was missing five dot-code aliases. \`SharedAdoption.exclude\` now removes a code for
+  one state, with the reason published under "What we don't claim", and all 22 adoption notes list exactly
+  which codes were compared on that date.
+- 🔧 **Making String and Crocheting, the first two From Fibre to Fabric courses** (\`feat/fibre-courses\`, no
+  migration; after merge run \`pnpm seed:courses:prod\` and register both media manifests). BAM's briefs of
+  2026-10-05, answered 2026-10-06. Making String (FIBRE-00): six sections, 19 lessons, 458 questions, from
+  Verrill, the Army's rigging and survival manuals, the 1913 USDA hemp report and two open-access
+  archaeology papers; it teaches the Army's twist-and-ply method and says plainly that hand-made cord is
+  never for holding a person. Crocheting (FIBRE-01): eight sections, 32 lessons, 630 questions, from
+  Dillmont, Beeton, Riego, Gaugain, the 1918 Mary Frances book and Handbook, the Craft Yarn Council and
+  Karp; it teaches the slip knot, the chain and five stitches, rounds, shaping, patterns, finishing, the
+  documented history (folklore named as folklore) and four projects. Both were checked claim by claim
+  (166 agents) and then question by question (190 agents); 22 public-domain or federal figures are
+  hosted and placed. Knot-Tying links to both. Thirteen hedges are filed as research checks. Unvetted
+  ("Coming soon") until BAM vets them; standards excused (practical skills).
+- 🔧 **Course figures from Project Gutenberg and the Internet Archive** (\`feat/fibre-courses\`). The media
+  uploader now reads a Gutenberg ebook's or an archive item's own rights statement (Public Domain Mark,
+  CC0, not-in-copyright), records it verbatim for \`/admin/media\`, and refuses silence or an image from a
+  different item. \`audit:course\` now counts only a figure's caption toward a section's words.
+- ❓ **The shortest answer is usually the right one, across the catalog** (\`plans/bugs/2026-10-07-shortest-option-tell.md\`).
+  In 392 quiz banks (73 courses) the correct option is strictly the shortest more than 60% of the time;
+  the length guard only measures the longest direction. Three fixes proposed; BAM to choose.
 - ✅ **Course index by category** (\`feat/course-category-index\`, no migration). BAM asked 2026-10-05 for
   course files organised by the categories the app lists them under, and on 2026-10-06 chose a
   generated index over moving the files. \`scripts/data/README.md\` lists every registered course by
