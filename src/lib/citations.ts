@@ -70,6 +70,9 @@ export interface Citation {
  */
 export const STAGED_COURSES: string[] = [
   // Newly created, never reviewed by anyone
+  "manure-and-compost",
+  "making-string",
+  "crochet",
   "the-match",
   "written-by-himself",
   "territories-and-representation",
