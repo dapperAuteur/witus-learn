@@ -153,9 +153,9 @@
 
 ### Trade Skills
 
-- [`crochet`](./crochet-course.ts) Crocheting · FIBRE-01 (from-fibre-to-fabric)
-- [`knot-tying`](./knots-course.ts) Knot-Tying & Rope Work
-- [`making-string`](./making-string-course.ts) Making String · FIBRE-00 (from-fibre-to-fabric)
+- [`crochet`](./crochet-course.ts) Crocheting · FIBRE-02 (from-fiber-to-fabric)
+- [`knot-tying`](./knots-course.ts) Knot-Tying & Rope Work · FIBRE-01 (from-fiber-to-fabric)
+- [`making-string`](./making-string-course.ts) Making String · FIBRE-00 (from-fiber-to-fabric)
 - [`raising-animals-for-yarn`](./raising-animals-for-yarn-course.ts) Raising Animals for Yarn · LOOP-03 (the-calorie-loop) · listed here as an extra category; primary: Farm & Garden
 
 ### Farm & Garden
