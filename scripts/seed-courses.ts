@@ -1847,9 +1847,9 @@ async function main() {
     category: "Trade Skills",
     seriesSlug: "from-fibre-to-fabric",
     seriesTitle: "From Fibre to Fabric",
-    seriesOrder: 1,
+    seriesOrder: 2,
     seriesCode: "FIBRE",
-    seriesPosition: "01",
+    seriesPosition: "02",
     navigationMode: "linear",
   });
 
@@ -1886,7 +1886,17 @@ async function main() {
     seriesPosition,
     seriesTrack,
   } of [
-    { slug: "knot-tying", course: KNOTS_COURSE, category: "Trade Skills" },
+    // knot-tying joins From Fibre to Fabric as FIBRE-01 (BAM, 2026-10-08), between Making String and Crocheting.
+    {
+      slug: "knot-tying",
+      course: KNOTS_COURSE,
+      category: "Trade Skills",
+      seriesSlug: "from-fibre-to-fabric",
+      seriesTitle: "From Fibre to Fabric",
+      seriesOrder: 1,
+      seriesCode: "FIBRE",
+      seriesPosition: "01",
+    },
     { slug: "croquet", course: CROQUET_COURSE, category: "Sports" },
     { slug: "off-grid-survival", course: SURVIVAL_COURSE, category: "Survival" },
     { slug: "broadcasting-break-in", course: BROADCASTING_COURSE, category: "Careers & Media" },

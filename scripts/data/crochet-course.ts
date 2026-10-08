@@ -1,6 +1,6 @@
 // "Crocheting" (Trade Skills). Slug `crochet`. Series "From Fibre to Fabric" (`from-fibre-to-fabric`),
-// code FIBRE, slot 01, after Making String (FIBRE-00). `knot-tying` stays outside the series (BAM:
-// keep separate, link to each other) and is linked here by course name only.
+// code FIBRE, slot 02, after Making String (FIBRE-00) and Knot-Tying & Rope Work (FIBRE-01, which joined
+// the series by BAM's decision of 2026-10-08). Both are linked here by course name.
 //
 // PUBLIC and free, by BAM's answers of 2026-10-06 to the brief (section 8): the four projects as
 // drafted, ships on the engravings, title "Crocheting", standards unmapped for now.
@@ -129,7 +129,7 @@ export const CROCHET_COURSE: AuthoredCourse = {
 
 **Words are a weak way to teach hands.** These manuals knew it, which is why they are full of engravings and photographs. Where a lesson names a figure, open the source at that page: every lesson ends with its sources and says where in them to look. Several lessons also show the figure itself, credited to its source and page.
 
-**Where this fits.** Crocheting is part of the From Fibre to Fabric series on Learn.WitUS. Yarn is string, and the companion course *Making String* starts one step earlier, with how string is made. The *Knot-Tying & Rope Work* course is a separate neighbour, good practice for the hands.
+**Where this fits.** Crocheting is part of the From Fibre to Fabric series on Learn.WitUS. Yarn is string, and the companion course *Making String* starts one step earlier, with how string is made. *Knot-Tying & Rope Work*, the course before this one in the series, is good practice for the hands.
 
 To start you need a hook and some yarn. Which hook and which yarn are the next two lessons.
 
@@ -432,9 +432,9 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           },
           {
             prompt: "Is the Knot-Tying & Rope Work course part of the From Fibre to Fabric series?",
-            options: ["Yes, it opens the series", "No, it is a separate neighbour", "Yes, it replaces this course's lessons on the chain", "Yes, and it must be finished before this course opens"],
+            options: ["Yes, it opens the series", "Yes, as its second course", "Yes, it replaces this course's lessons on the chain", "No, it is a separate neighbour"],
             correctIndex: 1,
-            explanation: "Lesson 1 calls it a separate neighbour, good practice for the hands. It is not in the series.",
+            explanation: "Lesson 1: Knot-Tying & Rope Work is the course before this one in the series, good practice for the hands. Making String opens the series.",
             sourceLessonSlug: "what-crochet-is",
           },
           {
