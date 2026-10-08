@@ -992,6 +992,16 @@ POST  /api/admin/media          # register an upload: url, kind, credit, rightsS
 PATCH /api/admin/media/[id]     # record a decision: { status, note }
 ```
 
+Assets reach the queue in two steps. `node scripts/upload-course-media.mjs --batch <name> [--dry-run]`
+copies a batch (`scripts/data/media-batches/<name>.mjs`) into Cloudinary and writes a manifest
+(`scripts/data/media/<name>.json`); then `pnpm register:media:prod <manifest>` registers it here. The
+uploader **reads rights from the source and never from the batch**: a Wikimedia Commons licence, a
+Library of Congress rights advisory, Project Gutenberg's RDF rights line ("Public domain in the USA.")
+or an Internet Archive item's licence (Public Domain Mark or CC0), not-in-copyright status or rights
+note (the last two sources added 2026-10-07). It records the statement verbatim, refuses an item that
+states nothing, and refuses an image URL that does not belong to the item whose rights it read. A dry
+run writes the manifest too, with `url: null`, so never commit a dry-run manifest over a real one.
+
 Everything goes through the scoped DAL, so one school's unreviewed media is invisible to every other,
 and a by-id decision on a foreign asset **404s** rather than redirecting. The pure clearance logic
 lives in [src/lib/media-verify.ts](src/lib/media-verify.ts): `isCourseMediaCleared(slug, assets)` is
