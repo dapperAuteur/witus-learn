@@ -156,6 +156,8 @@
 - [`crochet`](./crochet-course.ts) Crocheting · FIBRE-02 (from-fiber-to-fabric)
 - [`knot-tying`](./knots-course.ts) Knot-Tying & Rope Work · FIBRE-01 (from-fiber-to-fabric)
 - [`making-string`](./making-string-course.ts) Making String · FIBRE-00 (from-fiber-to-fabric)
+- [`light-on-set`](./light-on-set-course.ts) Light on Set · CREW-03 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
+- [`stage-and-broadcast-rigging`](./stage-and-broadcast-rigging-course.ts) Rigging for Stage and Broadcast Crews · CREW-01 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 
 ### Farm & Garden
 
@@ -179,7 +181,10 @@
 - [`acting`](./acting-course.ts) Acting: The Frame, the Stage, and the Read · PERFORM-00 (perform)
 - [`broadcasting-break-in`](./broadcasting-course.ts) Break Into Sports & Media Broadcasting
 - [`how-the-trades-work`](./how-the-trades-work-course.ts) How the Trades Work: Journeyman, Apprentice, and Who Actually Decides · private · also in: Money & Property
+- [`light-on-set`](./light-on-set-course.ts) Light on Set · CREW-03 (the-crew-behind-the-show) · also in: Trade Skills
 - [`soul-train-the-business`](./soul-train-the-business-course.ts) Soul Train: Who Paid, Who Owned, Who Got Paid · private · also in: Culture & History
+- [`sound-craft`](./sound-craft-course.ts) Sound Craft · CREW-02 (the-crew-behind-the-show) · also in: Storytelling
+- [`stage-and-broadcast-rigging`](./stage-and-broadcast-rigging-course.ts) Rigging for Stage and Broadcast Crews · CREW-01 (the-crew-behind-the-show) · also in: Trade Skills
 - [`voice-acting`](./voice-acting-course.ts) Voice Acting: The Instrument · PERFORM-01 (perform)
 - [`how-a-house-stands-up`](./how-a-house-stands-up-course.ts) How a House Stands Up: The Load Path, the Parts, and What You Can See · series the-house-you-live-in · private · listed here as an extra category; primary: Science & Math
 - [`read-the-plan-and-the-code`](./read-the-plan-and-the-code-course.ts) Reading the Plan and the Code: Drawings, Specifications, and Who Made the Code Law · series the-house-you-live-in · private · listed here as an extra category; primary: Science & Math
@@ -331,6 +336,7 @@
 - [`oral-history`](./oral-history-course.ts) Oral history · STORY-TRU4 (storytelling)
 - [`short-form-drama`](./short-form-drama-course.ts) Short-Form Drama: Constraint as a Structural Tool · STORY-PER3 (storytelling)
 - [`writing-poems-and-songs`](./writing-poems-and-songs-course.ts) Writing Poems and Songs
+- [`sound-craft`](./sound-craft-course.ts) Sound Craft · CREW-02 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 
 ### Science & Math
 
