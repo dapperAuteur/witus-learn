@@ -45,7 +45,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
 
 **How to practice.** Get a few feet of soft, flexible rope (about 3/8 inch / 10 mm). Tie each knot as you read, slowly, until your hands know it without the words.
 
-**Where this course connects.** This is the second course in the *From Fiber to Fabric* series on Learn.WitUS. The course before it, _Making String_, teaches how cord is made by hand from fibre, which lesson 1 here only defines. The course after it, _Crocheting_, works a single strand into fabric with a hook. Take them in any order.
+**Where this course connects.** This is the second course in the *From Fiber to Fabric* series on Learn.WitUS. The course before it, _Making String_, teaches how cord is made by hand from fiber, which lesson 1 here only defines. The course after it, _Crocheting_, works a single strand into fabric with a hook. Take them in any order.
 
 ## Sources
 - ${VERRILL}
@@ -160,7 +160,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
 
 **Common mistakes.** Using a floating, UV-weak polypropylene rope for a load-bearing task; trusting old, sun-faded, or mildewed natural rope; assuming a knot that holds in grippy natural fiber will hold in slick synthetic (often it won't).
 
-**Making it yourself.** This lesson names what rope is made of. The companion _Making String_ course on Learn.WitUS teaches the making: twisting fibre into yarn by hand and plying yarns into cord. Hand-made cord is for practice and craft, never for holding a person.
+**Making it yourself.** This lesson names what rope is made of. The companion _Making String_ course on Learn.WitUS teaches the making: twisting fiber into yarn by hand and plying yarns into cord. Hand-made cord is for practice and craft, never for holding a person.
 
 ## Sources
 - ${VERRILL}`,
