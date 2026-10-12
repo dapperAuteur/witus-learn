@@ -105,7 +105,7 @@ import type { AuthoredCourse } from "./authored-course";
 //  - L20 and L21: killing against selling unsettled; prices paid not found; the 1939 court case
 //    unnamed; the Senate hearing text not read; no 1930s record read uses the word "Churro"; no
 //    National Archives records read; the 1937 regulations and the 1941 rule not read as legal texts.
-//  - L22: Gulf Coast Native origin disputed.
+//  - L22: Gulf Coast Native origin disputed; no Navajo-Churro census; the Hubbell flock's start unknown.
 //  - L23: nothing found on Black shepherds after 1865; Bannor 2024 unread.
 //  - L25: right to farm against county zoning enforcement unanswered.
 //  - L26: Arcadia's own ordinance unread; Hamilton County's Article 22 against its use table.
@@ -1758,7 +1758,7 @@ In the 1930s the federal government cut the number of sheep, goats and other liv
 
 **In the classroom.** The 1942 school text taught Navajo students that factories paid more for uniform wool than for "mixed-breed Navajo wool," and asked them to compare "long-haired Navajo wool" with "shorter-haired Rambouillet type wool" for shrinkage, and with shorter-haired wool for hand spinning (Boyce, 1942, p. 90).
 
-**The sheep today.** The Livestock Conservancy says Navajo-Churro sheep are known to the Diné as Dibé dits'ozí, "long fleeced sheep" (The Livestock Conservancy, n.d.), and the breed is on its Critical list (lesson 8). The National Park Service keeps a flock of Churro sheep at Hubbell Trading Post (National Park Service, 2025). In 2005 an Agricultural Research Service scientist had 1,200 Navajo-Churro semen samples from 27 rams, toward a goal of 6,000 units (Elstein, 2005).
+**The sheep today.** The Livestock Conservancy says Navajo-Churro sheep are known to the Diné as Dibé dits'ozí, "long fleeced sheep" (The Livestock Conservancy, n.d.), and the breed is on its Critical list (lesson 8). The National Park Service keeps a flock of Churro sheep at Hubbell Trading Post (National Park Service, 2025). In 2005 an Agricultural Research Service scientist had 1,200 Navajo-Churro semen samples from 27 rams, toward a goal of 6,000 units (Elstein, 2005). That article also gives counts of the breed over time, with no source for any of them. This course found no census of the breed beyond the Conservancy's Critical listing, so it teaches no number. Nor did it find when or why the park's Hubbell flock began.
 
 **Gulf Coast Native.** Gulf Coast Native sheep have two genetically distinct lines, Florida Native and Louisiana Native. A 2012 open-access study found the two lines farther apart (a genetic distance, FST, of 6.2 percent) than the average for closely related southern European breeds (4.2 percent), about 50 percent higher, and "sufficiently different to be considered separate breeds" (Kijas et al., 2012). The breed has adapted to an environment of high parasite loads (Kijas et al., 2012, Introduction). At the Agricultural Research Service center in Booneville, Arkansas, where Gulf Coast Natives are part of a crossbreeding program and the flock was gathered from 1994, the breed "fulfills two of Brown's three requirements: an ability to take the heat and unusually high resistance to parasite infestation" (Hays, 1996).
 
@@ -1809,6 +1809,7 @@ In the 1930s the federal government cut the number of sheep, goats and other liv
 - **The 1937 Senate record,** with Navajo testimony in full (lesson 21).
 - **Prices and enforcement.** The prices paid for Navajo livestock, and which court case the 1939 report means (lesson 20).
 - **The archives and the rules themselves.** This course read no National Archives records. It knows the 1937 grazing regulations and the December 1941 limit of 350 sheep units only through federal accounts of them, not as legal texts (lessons 20, 21).
+- **Navajo-Churro numbers.** No census of the breed, and nothing on when or why the Hubbell flock began (lesson 22).
 - **Gulf Coast Native's past.** Its origin (lesson 22), and its role in Southern wool before the Second World War, which a 2017 Mississippi House resolution asserts without a source (Mississippi Legislature, 2017).
 
 Saying what is missing is part of the history. Each gap is a place where a learner with library access could add to what this course knows.
