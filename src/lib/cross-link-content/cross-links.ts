@@ -5,7 +5,7 @@
 import type { CrossLinkCandidate } from "@/lib/cross-links";
 
 /** When this registry was last rebuilt, so the board can say how old its queue is. */
-export const CROSS_LINKS_GENERATED_AT: string | null = "2026-10-08";
+export const CROSS_LINKS_GENERATED_AT: string | null = "2026-10-13";
 
 export const CROSS_LINK_CANDIDATES: CrossLinkCandidate[] = [
   {
@@ -816,7 +816,7 @@ export const CROSS_LINK_CANDIDATES: CrossLinkCandidate[] = [
     targetCourseSlug: "making-string",
     targetCourseTitle: "Making String",
     via: "title",
-    sentence: "The companion _Making String_ course on Learn.WitUS teaches the making: twisting fibre into yarn by hand and plying yarns into cord.",
+    sentence: "The companion _Making String_ course on Learn.WitUS teaches the making: twisting fiber into yarn by hand and plying yarns into cord.",
   },
   {
     sourceCourseSlug: "knot-tying",
@@ -826,7 +826,7 @@ export const CROSS_LINK_CANDIDATES: CrossLinkCandidate[] = [
     targetCourseSlug: "making-string",
     targetCourseTitle: "Making String",
     via: "title",
-    sentence: "The course before it, _Making String_, teaches how cord is made by hand from fibre, which lesson 1 here only defines.",
+    sentence: "The course before it, _Making String_, teaches how cord is made by hand from fiber, which lesson 1 here only defines.",
   },
   {
     sourceCourseSlug: "know-your-rights-at-work",
@@ -1037,6 +1037,16 @@ export const CROSS_LINK_CANDIDATES: CrossLinkCandidate[] = [
     targetCourseTitle: "Know Your Rights at Work",
     via: "title",
     sentence: "Where to go next in this track: the anchor's Japan lesson (the enterprise-union family Korea belongs to), Poland (the democratization twin, arrow reversed), Germany (the coverage machine Korea lacks), and (for your own workplace, today) Know Your Rights at Work.",
+  },
+  {
+    sourceCourseSlug: "making-string",
+    sourceCourseTitle: "Making String",
+    sourceLessonSlug: "fiber-yarn-strand-rope",
+    sourceLessonTitle: "1 · Fiber, yarn, strand, rope",
+    targetCourseSlug: "knot-tying",
+    targetCourseTitle: "Knot-Tying & Rope Work",
+    via: "title",
+    sentence: "The next is Knot-Tying & Rope Work, and after it Crocheting, which works a single strand into fabric. Knot-Tying & Rope Work has a lesson called \"1 · Rope fibers and materials\", the first lesson of its section 1, which defines fiber, yarn, strand, lay and the common rope materials.",
   },
   {
     sourceCourseSlug: "making-string",
@@ -1457,6 +1467,76 @@ export const CROSS_LINK_CANDIDATES: CrossLinkCandidate[] = [
     targetCourseTitle: "Financing Without Access",
     via: "title",
     sentence: "The method, borrowed from a course you can go and read. This catalog's Financing Without Access states a procedure for reading any exclusion: ask which door was closed, what pool replaced it, and who bears the risk.",
+  },
+  {
+    sourceCourseSlug: "raising-animals-for-yarn",
+    sourceCourseTitle: "Raising Animals for Yarn",
+    sourceLessonSlug: "alpacas-llamas-and-the-uncounted-yak",
+    sourceLessonTitle: "3 · Alpacas, llamas, and the yak no census counts",
+    targetCourseSlug: "manure-and-compost",
+    targetCourseTitle: "Manure and Compost",
+    via: "title",
+    sentence: "Look up your own county and keep the page: lesson 27 asks you to find your county's zoning rule, and Manure and Compost lesson 17 asks you to find your county extension office.",
+  },
+  {
+    sourceCourseSlug: "raising-animals-for-yarn",
+    sourceCourseTitle: "Raising Animals for Yarn",
+    sourceLessonSlug: "black-shepherds-and-what-is-missing",
+    sourceLessonTitle: "23 · Black shepherds in the record, and what this course could not find",
+    targetCourseSlug: "making-string",
+    targetCourseTitle: "Making String",
+    via: "title",
+    sentence: "That is the chain of section 4 and Making String, from shearing to cloth, with enslaved people holding the sheep, spinning the thread and weaving beside the mistress.",
+  },
+  {
+    sourceCourseSlug: "raising-animals-for-yarn",
+    sourceCourseTitle: "Raising Animals for Yarn",
+    sourceLessonSlug: "fiber-as-a-crop",
+    sourceLessonTitle: "1 · Fiber as a crop, and where this course stops",
+    targetCourseSlug: "making-string",
+    targetCourseTitle: "Making String",
+    via: "title",
+    sentence: "It is also the last stop of the From Fiber to Fabric line, after Making String and Crocheting: section 4 takes a fleece as far as yarn and hands spinning to Making String.",
+  },
+  {
+    sourceCourseSlug: "raising-animals-for-yarn",
+    sourceCourseTitle: "Raising Animals for Yarn",
+    sourceLessonSlug: "fiber-as-a-crop",
+    sourceLessonTitle: "1 · Fiber as a crop, and where this course stops",
+    targetCourseSlug: "manure-and-compost",
+    targetCourseTitle: "Manure and Compost",
+    via: "title",
+    sentence: "Where it sits. This course follows Manure and Compost in The Calorie Loop: a fiber animal is also a manure animal, and section 5 follows its manure toward the soil.",
+  },
+  {
+    sourceCourseSlug: "raising-animals-for-yarn",
+    sourceCourseTitle: "Raising Animals for Yarn",
+    sourceLessonSlug: "scouring-carding-and-spinning",
+    sourceLessonTitle: "15 · Scouring, carding, combing, and on to spinning",
+    targetCourseSlug: "making-string",
+    targetCourseTitle: "Making String",
+    via: "title",
+    sentence: "Spinning. A drop spindle is a tapering rod with a disk-shaped whorl; turning it twists the fibers, and the yarn winds onto it (National Park Service, 2015). Making String lesson 11, \"Spindle, whorl and twister\", teaches the mechanics.",
+  },
+  {
+    sourceCourseSlug: "raising-animals-for-yarn",
+    sourceCourseTitle: "Raising Animals for Yarn",
+    sourceLessonSlug: "the-reduction-in-the-federal-record",
+    sourceLessonTitle: "20 · The Navajo livestock reduction, in the federal record",
+    targetCourseSlug: "tribal-nations-governance",
+    targetCourseTitle: "Tribal Nations and Indigenous Governance",
+    via: "title",
+    sentence: "Collier wrote that a shift of 210 votes would have reversed the result, and that many had voted against it believing they were voting against stock reduction (Office of Indian Affairs, 1935, pp. 46, 47; 1937b, p. 13). Tribal Nations and Indigenous Governance lesson 8, \"Allotment, and the Indian Reorganization Act of…",
+  },
+  {
+    sourceCourseSlug: "raising-animals-for-yarn",
+    sourceCourseTitle: "Raising Animals for Yarn",
+    sourceLessonSlug: "what-the-manure-carries",
+    sourceLessonTitle: "18 · What fiber-animal manure carries",
+    targetCourseSlug: "manure-and-compost",
+    targetCourseTitle: "Manure and Compost",
+    via: "title",
+    sentence: "Manure and Compost lessons 3 and 4 read the federal manure tables for sheep.",
   },
   {
     sourceCourseSlug: "reporter-interviewing",
