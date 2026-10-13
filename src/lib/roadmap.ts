@@ -5,6 +5,13 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Rigging for Stage and Broadcast Crews, CREW-01** (\`feat/crew-courses\`, no migration). BAM approved the
+  brief on 2026-10-08. Six sections, 20 lessons, 446 questions: who rigs on a show, working at height (the
+  stage-edge exemption, thresholds, a harness not a seat), slings and hardware, forces, under the load, and
+  the path to certification. Two workplace fatality cases are taught from the state FACE reports with links
+  to the news coverage, victims unnamed. Checked claim by claim (72 fixes) and question by question (48).
+  Lessons needing a qualified rigger's review or a practitioner are marked; seven research checks filed.
+  Held for a named qualified reviewer. Sound Craft (CREW-02) and Light on Set (CREW-03) follow.
 - 🔧 **Manure and Compost, the first Farm & Garden course** (\`feat/manure-and-compost-course\`, no
   migration; after merge run \`pnpm seed:courses:prod\`). BAM's brief of 2026-10-05, answered 2026-10-06.
   Six sections, 22 lessons, 373 quiz questions, built only from a verified dossier (NRCS manure tables and
