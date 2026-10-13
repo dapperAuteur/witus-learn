@@ -1320,7 +1320,7 @@ This lesson does not teach shearing. It teaches what the keeper does around it, 
 
 **Weigh first.** Every recipe is per pound of wool or cotton, weighed dry before mordanting (pp. 5, 7).
 
-**Mordants.** A mordant helps fix the color to the fiber. The bulletin's mordants were alum, chrome (potassium dichromate), copperas and tannin (pp. 5, 6). One dye can give different colors with different mordants: cochineal gives red with alum and purple with chrome (p. 6).
+**Mordants.** A mordant helps fix the color to the fiber. The bulletin's mordants were alum, chrome (potassium dichromate), copperas and tannin (pp. 5, 6). One dye can give different colors with different mordants: on wool, dahlia flowers give orange with chrome and light yellow with alum, and cochineal gives red with alum and purple with chrome (p. 6).
 
 **Fiber and pot.** In 1935 USDA found wool the easiest fiber to dye, and cotton harder (pp. 2, 6). Iron kettles darken colors and tin kettles make them harsh, so the bulletin used enamelware or copper (p. 4).
 
