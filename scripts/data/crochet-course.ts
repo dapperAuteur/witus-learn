@@ -77,7 +77,7 @@ const GAUGAIN =
 const GRANT =
   "Grant, E. (1898). *Memoirs of a Highland lady: The autobiography of Elizabeth Grant of Rothiemurchus, afterwards Mrs. Smith of Baltiboys, 1797-1830* (Lady Strachey, Ed.; 3rd impression). John Murray. https://archive.org/details/memoirsofhighlan00graniala";
 const IRISH_LACE =
-  "*Irish lace: A history of the industry* [Mansion House exhibition catalogue]. (1883). https://archive.org/details/mansionhouseexh00housgoog";
+  "*Irish lace: A history of the industry* [Mansion House exhibition catalog]. (1883). https://archive.org/details/mansionhouseexh00housgoog";
 const KARP =
   "Karp, C. (2018). Defining crochet. *Textile History, 49*(2), 208-223. https://doi.org/10.1080/00404969.2018.1491689 Free postprint: https://loopholes.blog/wp-content/publications/Defining-Crochet-Postprint.pdf";
 const KB =
@@ -135,7 +135,7 @@ To start you need a hook and some yarn. Which hook and which yarn are the next t
 
 :::reveal According to Dillmont, how many crochet stitches are there, "in point of fact"? ||| One. All crochet is loops drawn one through another with a hook; every named stitch is a variation on that move.
 
-:::reveal In Karp's definition, why is a single row of chain not yet crochet? ||| Because crochet loops interwork sideways with their neighbours as well as with the row before. A chain becomes crochet only when a second row is worked into it.
+:::reveal In Karp's definition, why is a single row of chain not yet crochet? ||| Because crochet loops interwork sideways with their neighbors as well as with the row before. A chain becomes crochet only when a second row is worked into it.
 
 ## Sources
 ${src(DILLMONT, `"Crochet Work", pp. 221-222 (printed pages, from the HTML edition's page anchors).`)}
@@ -165,7 +165,7 @@ ${src(KARP, `postprint p. 1 (the Emery definition and Karp's conclusion).`)}`,
 
 The Craft Yarn Council's answer was to measure. Its FAQ says "we realized there were differences in how various companies numbered their hook sizes. That was the main reason we adopted the metric sizing, which is the actual measurement (diameter) of the hook" (Craft Yarn Council, n.d.-c). Its hooks page gives the rule: "Because letter and number sizing vary from company to company, rely on the package millimeter (mm) sizing, which is an accurate measurement" (Craft Yarn Council, n.d.-d). Some rows of its crochet hook table:
 
-| Millimetres | US size |
+| Millimeters | US size |
 |---|---|
 | 2.25 mm | B-1 |
 | 3.50 mm | E-4 |
@@ -183,7 +183,7 @@ The same table also lists a 4.25 mm G and a 5.25 mm I, which is the whole proble
 
 **One hook this course does not use.** Dillmont notes that "The Tunisian crochet is done with a long straight hook" (p. 221), with "a knob at one end" (pp. 241-243; plain Tunisian is fig. 444, p. 242). Tunisian crochet is a different technique and is not taught here.
 
-:::reveal Why does the Craft Yarn Council tell you to trust the millimetre size on a hook's package? ||| Because letter and number sizes vary from company to company, while millimetres are the hook's actual diameter.
+:::reveal Why does the Craft Yarn Council tell you to trust the millimeter size on a hook's package? ||| Because letter and number sizes vary from company to company, while millimeters are the hook's actual diameter.
 
 :::reveal Steel hook size 7 or steel hook size 10: which is smaller? ||| Size 10. Steel hooks run backwards: the higher the number, the smaller the hook.
 
@@ -203,7 +203,7 @@ ${src(CYC_STEEL, `the opening paragraphs on steel hooks and thread sizes.`)}`,
       recallContent: [
         {
           prompt: "Why did the Craft Yarn Council adopt metric hook sizing?",
-          answer: "Because companies numbered their hooks differently. Millimetres are the actual diameter of the hook, so the mm size on the package is the one to trust.",
+          answer: "Because companies numbered their hooks differently. Millimeters are the actual diameter of the hook, so the mm size on the package is the one to trust.",
         },
         {
           prompt: "Which way do steel hook numbers run?",
@@ -362,7 +362,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           },
           {
             prompt: "What changes from one stitch to the next, as lesson 1 explains it?",
-            options: ["The kind of fibre the yarn is spun from", "Which hand holds the hook during the stitch", "Whether the stitch is worked on a frame or loose", "How many wraps, and how many loops pulled"],
+            options: ["The kind of fiber the yarn is spun from", "Which hand holds the hook during the stitch", "Whether the stitch is worked on a frame or loose", "How many wraps, and how many loops pulled"],
             correctIndex: 3,
             explanation: "The move is always a loop through a loop. What changes is how many times the yarn goes round the hook first, and how many loops you pull through at once.",
             sourceLessonSlug: "what-crochet-is",
@@ -432,7 +432,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           },
           {
             prompt: "Is the Knot-Tying & Rope Work course part of the From Fiber to Fabric series?",
-            options: ["Yes, it opens the series", "Yes, as its second course", "Yes, it replaces this course's lessons on the chain", "No, it is a separate neighbour"],
+            options: ["Yes, it opens the series", "Yes, as its second course", "Yes, it replaces this course's lessons on the chain", "No, it is a separate neighbor"],
             correctIndex: 1,
             explanation: "Lesson 1: Knot-Tying & Rope Work is the course before this one in the series, good practice for the hands. Making String opens the series.",
             sourceLessonSlug: "what-crochet-is",
@@ -461,7 +461,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           // ── hooks-and-sizes ──
           {
             prompt: "What does Dillmont say the hooks for heavier work are made of?",
-            options: ["Wood, bone or tortoise-shell", "Brass, pewter or polished copper wire", "Ivory only, since bone splinters in wool", "Aluminium or plastic"],
+            options: ["Wood, bone or tortoise-shell", "Brass, pewter or polished copper wire", "Ivory only, since bone splinters in wool", "Aluminum or plastic"],
             correctIndex: 0,
             explanation: "Dillmont, p. 221: hooks \"made of wood, bone or tortoise-shell are used for all the heavier kinds of crochet work in thick wool or cotton, and steel ones for the finer kinds\".",
             sourceLessonSlug: "hooks-and-sizes",
@@ -510,7 +510,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           },
           {
             prompt: "What did the 1918 Handbook say about hook numbers?",
-            options: ["Every maker had adopted one shared numbering", "Numbers had been replaced by millimetres by law", "Only steel hooks carried a size number at all", "Makers used different numbers"],
+            options: ["Every maker had adopted one shared numbering", "Numbers had been replaced by millimeters by law", "Only steel hooks carried a size number at all", "Makers used different numbers"],
             correctIndex: 3,
             explanation: "\"no two manufacturers use like numbers for the same sizes\" (Handbook, 1918). The muddle is old.",
             sourceLessonSlug: "hooks-and-sizes",
@@ -524,7 +524,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           },
           {
             prompt: "What does Dillmont's table on p. 222 pair her needle numbers with?",
-            options: ["Craft Yarn Council weight categories 0 to 7", "D.M.C thread numbers", "US letter sizes from B-1 to N/P-15", "Millimetre diameters"],
+            options: ["Craft Yarn Council weight categories 0 to 7", "D.M.C thread numbers", "US letter sizes from B-1 to N/P-15", "Millimeter diameters"],
             correctIndex: 1,
             explanation: "Dillmont pairs needle numbers 9, 10, 11, 12, 13, 14, 16 and 18 with D.M.C thread numbers. The council's weights and letters came much later.",
             sourceLessonSlug: "hooks-and-sizes",
@@ -537,7 +537,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
             sourceLessonSlug: "hooks-and-sizes",
           },
           {
-            prompt: "What does a hook's millimetre size measure, according to the council?",
+            prompt: "What does a hook's millimeter size measure, according to the council?",
             options: ["Its length", "The depth of the throat that holds the yarn", "The weight of the hook in tenths of a gram", "Its diameter"],
             correctIndex: 3,
             explanation: "Metric sizing \"is the actual measurement (diameter) of the hook\" (Craft Yarn Council FAQ).",
@@ -545,7 +545,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           },
           {
             prompt: "On a hook's package, which size does the council tell you to rely on?",
-            options: ["The millimetre size", "The letter", "The number printed by the yarn maker on the ball", "Whichever size the pattern's photograph shows"],
+            options: ["The millimeter size", "The letter", "The number printed by the yarn maker on the ball", "Whichever size the pattern's photograph shows"],
             correctIndex: 0,
             explanation: "\"Because letter and number sizing vary from company to company, rely on the package millimeter (mm) sizing, which is an accurate measurement.\"",
             sourceLessonSlug: "hooks-and-sizes",
@@ -554,7 +554,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
             prompt: "In the council's hook table, which US size is the 5 mm hook?",
             options: ["G-6", "H-8", "I-9", "K-10½"],
             correctIndex: 1,
-            explanation: "5 mm is H-8. The neighbours are 4 mm G-6 and 5.50 mm I-9.",
+            explanation: "5 mm is H-8. The neighbors are 4 mm G-6 and 5.50 mm I-9.",
             sourceLessonSlug: "hooks-and-sizes",
           },
           {
@@ -573,21 +573,21 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           },
           {
             prompt: "What does lesson 2 say the 4.25 mm G and the 5.25 mm I show?",
-            options: ["A letter alone is not a size", "That metric sizes were dropped in favour of letters", "That the council's table contains printing errors", "That steel hooks are sized the same as regular ones"],
+            options: ["A letter alone is not a size", "That metric sizes were dropped in favor of letters", "That the council's table contains printing errors", "That steel hooks are sized the same as regular ones"],
             correctIndex: 0,
-            explanation: "Two hooks share a letter, so the letter alone does not tell you the size. That is why the council says to rely on millimetres.",
+            explanation: "Two hooks share a letter, so the letter alone does not tell you the size. That is why the council says to rely on millimeters.",
             sourceLessonSlug: "hooks-and-sizes",
           },
           {
             prompt: "Which steel hook is smaller: size 7 or size 10?",
-            options: ["Size 7", "Size 10", "They are the same; steel hooks carry no sizes", "Size 7, because steel numbers count millimetres"],
+            options: ["Size 7", "Size 10", "They are the same; steel hooks carry no sizes", "Size 7, because steel numbers count millimeters"],
             correctIndex: 1,
             explanation: "Steel hooks run backwards: \"the higher the number, the smaller the hook\".",
             sourceLessonSlug: "hooks-and-sizes",
           },
           {
             prompt: "Which crochet thread is thicker: size 10 or size 30?",
-            options: ["Size 30", "They are equal; the size number names the colour", "Size 10", "Size 30, since thread runs like regular hooks"],
+            options: ["Size 30", "They are equal; the size number names the color", "Size 10", "Size 30, since thread runs like regular hooks"],
             correctIndex: 2,
             explanation: "Thread \"is similarly sized: the smaller the number, the thicker the thread\" (Craft Yarn Council).",
             sourceLessonSlug: "hooks-and-sizes",
@@ -707,7 +707,7 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           },
           {
             prompt: "What does this course say yarn is?",
-            options: ["A knitted tube that is cut into lengths", "Fibre that is crocheted before it is sold", "A chain made with a tambour needle", "String"],
+            options: ["A knitted tube that is cut into lengths", "Fiber that is crocheted before it is sold", "A chain made with a tambour needle", "String"],
             correctIndex: 3,
             explanation: "Yarn is string: every row on the weight table is a strand at a particular thickness. Making String is about how one is made.",
             sourceLessonSlug: "yarn-weights",
@@ -862,14 +862,14 @@ ${src(HANDBOOK, `section "A Lesson in Crochet", Figure 1 (chain).`)}`,
           },
           {
             prompt: "What did Henderson and Taimina ask for when crocheting their model?",
-            options: ["Fairly tight and even", "Loose and airy", "Tight at the centre and loose at the edge", "Uneven, so that the surface curls on its own"],
+            options: ["Fairly tight and even", "Loose and airy", "Tight at the center and loose at the edge", "Uneven, so that the surface curls on its own"],
             correctIndex: 0,
             explanation: "\"Be sure to crochet fairly tight and even\" (Henderson & Taimina, section 2).",
             sourceLessonSlug: "holding-hook-and-yarn",
           },
           {
             prompt: "On tension, what do the sources agree on more than on any number?",
-            options: ["The exact hook size for every yarn weight", "Evenness", "The number of chains needed in every ring", "Colour"],
+            options: ["The exact hook size for every yarn weight", "Evenness", "The number of chains needed in every ring", "Color"],
             correctIndex: 1,
             explanation: "The 1918 Handbook wants loops \"of uniform size and smoothness\" and Henderson and Taimina say \"Be sure to crochet fairly tight and even\"; Dillmont and Beeton want room for the hook to pass, and Beeton warns that too loose looks as bad as too tight.",
             sourceLessonSlug: "holding-hook-and-yarn",
@@ -1468,7 +1468,7 @@ ${src(CYC_ABBR, `entries BLO, FLO, ch-sp.`)}`,
           },
           {
             prompt: "What did Lambert say of plain double crochet?",
-            options: ["The stitch generally practised", "The hardest stitch to learn from print", "A stitch fit only for children's work", "A stitch used only for Irish lace"],
+            options: ["The stitch generally practiced", "The hardest stitch to learn from print", "A stitch fit only for children's work", "A stitch used only for Irish lace"],
             correctIndex: 0,
             explanation: "\"This is the crochet stitch generally practised\" (Lambert, 1847, p. 16).",
             sourceLessonSlug: "slip-stitch-and-single-crochet",
@@ -1975,7 +1975,7 @@ ${src(FRYER, `pp. 206-207, "Little Crocheted Hat".`)}`,
           },
           {
             prompt: "Why does Dillmont begin a turned row with chain stitches?",
-            options: ["So the row is easier to count at the end", "To stop the edge contracting", "To fasten off there", "So the yarn can change colour there"],
+            options: ["So the row is easier to count at the end", "To stop the edge contracting", "To fasten off there", "So the yarn can change color there"],
             correctIndex: 1,
             explanation: "The row is \"begun with 1, 2 or 3 chain stitches to prevent the contraction of the outside edge\".",
             sourceLessonSlug: "rows-and-the-turning-chain",
@@ -2172,7 +2172,7 @@ ${src(FRYER, `pp. 206-207, "Little Crocheted Hat".`)}`,
           },
           {
             prompt: "Where do the Tam and the Mary Frances hat work their first round?",
-            options: ["Into each chain, one by one", "Into the centre of the ring", "Into the back loop of the chain", "Around the slip-stitch join only"],
+            options: ["Into each chain, one by one", "Into the center of the ring", "Into the back loop of the chain", "Around the slip-stitch join only"],
             correctIndex: 1,
             explanation: "The Tam: \"Seven doubles in ring.\" Mary Frances: \"Put 16 double crochets in the ring\".",
             sourceLessonSlug: "joining-a-ring",
@@ -2396,7 +2396,7 @@ ${src(FRYER, `pp. 206-207, "Little Crocheted Hat".`)}`,
 
 **Two together, in an older source.** Dillmont's Tunisian crochet decreases by working two stitches as one: "On the right you crochet the first two stitches together, and at the end of the row, the last two" (Dillmont, n.d., p. 243, fig. 447). Tunisian is not taught here, but it shows the two-together idea in an older source.
 
-**Increase, then decrease.** Dillmont's coloured star does both in one motif (p. 241, fig. 443). "In each subsequent row, make one dark stitch more, increasing regularly, that is, making 2 stitches on the last light stitch that comes before the dark ones." Later: "then begin to decrease in every row by one". (The printed caption itself reads "Fig. 423", a misprint that the plain-text edition copies. Dillmont's own heading on the same page calls it fig. 443, and the HTML edition corrects the caption to match.)
+**Increase, then decrease.** Dillmont's colored star does both in one motif (p. 241, fig. 443). "In each subsequent row, make one dark stitch more, increasing regularly, that is, making 2 stitches on the last light stitch that comes before the dark ones." Later: "then begin to decrease in every row by one". (The printed caption itself reads "Fig. 423", a misprint that the plain-text edition copies. Dillmont's own heading on the same page calls it fig. 443, and the HTML edition corrects the caption to match.)
 
 :::figure https://res.cloudinary.com/devdash54321/image/upload/v1791419363/witus/courses/crochet/crochet/dillmont-fig443-coloured-star.jpg ||| A white-on-black engraving of a flat, round crochet mat worked in a light thread, its stitches running in rings round a small centre. A dark star with six broad arms is worked into it. The arms leave the centre divided by thin lines of light stitches, and each bends round in the same direction, like the blades of a pinwheel, out towards the edge. ||| Dillmont's figure 443, "Coloured star worked into a light ground" (p. 241). The arms grow because in each row she makes "one dark stitch more, increasing regularly, that is, making 2 stitches on the last light stitch that comes before the dark ones", and later she will "begin to decrease in every row by one". In the book, the caption printed under this engraving misnumbers it Fig. 423. ||| Th. de Dillmont, Encyclopedia of Needlework (English ed., n.d.), "Crochet Work", p. 241, Fig. 443, Coloured star worked into a light ground (the printed caption reads Fig. 423). Public domain in the USA. Image via Wikimedia Commons, File:Fig. 443. Coloured star worked into a light ground.jpg (the same engraving is 456.jpg in Project Gutenberg eBook 20776). https://commons.wikimedia.org/wiki/File:Fig._443._Coloured_star_worked_into_a_light_ground.jpg
 
@@ -2442,7 +2442,7 @@ ${src(BEETON, `p. 268, Ill. 272-273 (the work-basket border, "at both ends").`)}
 
 **The closed cover.** The 1918 *Handbook*'s button cover is the same idea at a smaller size. Work round "widening to keep the work flat, until you have a circle which will cover the button-mold", then "work once around without widening, slip in the mold", and close it: "miss 1, a double in next, and repeat until the cover is closed". Missing every other stitch is Riego's decrease from lesson 13, done all the way round.
 
-**Three behaviours.** Increase steadily and the work lies flat. Increase not at all and it goes straight up. Increase a little, as Beeton's border does, and the wall flares. Those three behaviours are all in the sources. Notice that the sources give them as instructions, not as geometry: they say what to do, and the shape follows.
+**Three behaviors.** Increase steadily and the work lies flat. Increase not at all and it goes straight up. Increase a little, as Beeton's border does, and the wall flares. Those three behaviors are all in the sources. Notice that the sources give them as instructions, not as geometry: they say what to do, and the shape follows.
 
 :::reveal What happens when you work rounds without increasing? ||| The sides go straight up and you get a tube, like Beeton's first two border rounds or the 1918 Tam's rows 36 to 45.
 
@@ -2558,21 +2558,21 @@ ${src(HT, `the header (the 2001 journal version); the introduction (the 1997 wor
             sourceLessonSlug: "increase-and-decrease",
           },
           {
-            prompt: "What does Dillmont's coloured star do?",
+            prompt: "What does Dillmont's colored star do?",
             options: ["Increases, then decreases", "Decreases only", "Keeps a fixed count in every row", "Decreases first, then increases"],
             correctIndex: 0,
             explanation: "One dark stitch more each row, then \"begin to decrease in every row by one\" (p. 241, fig. 443).",
             sourceLessonSlug: "increase-and-decrease",
           },
           {
-            prompt: "In the coloured star, where is the extra stitch made?",
-            options: ["The first dark stitch of the row below", "Last light stitch", "The turning chain at each row's end", "The centre stitch"],
+            prompt: "In the colored star, where is the extra stitch made?",
+            options: ["The first dark stitch of the row below", "Last light stitch", "The turning chain at each row's end", "The center stitch"],
             correctIndex: 1,
             explanation: "\"making 2 stitches on the last light stitch that comes before the dark ones\".",
             sourceLessonSlug: "increase-and-decrease",
           },
           {
-            prompt: "The plain-text Dillmont captions the coloured star as figure 423. What is the right number?",
+            prompt: "The plain-text Dillmont captions the colored star as figure 423. What is the right number?",
             options: ["423", "403", "443", "433"],
             correctIndex: 2,
             explanation: "The printed caption reads 423, a misprint the plain text copies; Dillmont's own heading on p. 241 calls it fig. 443, as the HTML edition does.",
@@ -2700,7 +2700,7 @@ ${src(HT, `the header (the 2001 journal version); the introduction (the 1997 wor
           },
           {
             prompt: "What comes between the two halves of Priscilla's ball cover?",
-            options: ["A few rows without increasing", "The cover is fastened off and resewn", "A new colour", "A row of picots marks the middle"],
+            options: ["A few rows without increasing", "The cover is fastened off and resewn", "A new color", "A row of picots marks the middle"],
             correctIndex: 0,
             explanation: "\"then work a few rows without increasing\", draw the cover over the ball, and decrease the other half to match.",
             sourceLessonSlug: "tube-cone-and-sphere",
@@ -2727,7 +2727,7 @@ ${src(HT, `the header (the 2001 journal version); the introduction (the 1997 wor
             sourceLessonSlug: "tube-cone-and-sphere",
           },
           {
-            prompt: "Which three behaviours does lesson 14 say the sources show?",
+            prompt: "Which three behaviors does lesson 14 say the sources show?",
             options: ["Flat, straight, flaring", "Flat, ruffled and twisted into a spiral", "Round, square and six-sided like a hexagon", "Tight, loose and even in the tension"],
             correctIndex: 0,
             explanation: "Increase steadily and it lies flat; not at all and it goes straight up; a little and the wall flares.",
@@ -2813,7 +2813,7 @@ ${src(HT, `the header (the 2001 journal version); the introduction (the 1997 wor
           },
           {
             prompt: "What do Henderson and Taimina say the ratio determines?",
-            options: ["The colour", "The number of rows to work", "The yarn weight to buy", "The radius"],
+            options: ["The color", "The number of rows to work", "The yarn weight to buy", "The radius"],
             correctIndex: 3,
             explanation: "\"the ratio determines the radius\".",
             sourceLessonSlug: "the-hyperbolic-plane",
@@ -3018,7 +3018,7 @@ A memory aid of this course's own, not the council's: on the double and the treb
 
 The arithmetic: each solid square is 3 trebles, and a run of squares starts with one extra treble to close the first edge. Two solid squares: 1 + 3 + 3 = 7. Three: 1 + 9 = 10. You will use this in the exercise in lesson 20.
 
-**A chart from 1846.** Riego's *Knitting, Crochet, and Netting* (1846) came "with twelve illustrations", and the Project Gutenberg edition labels all twelve "Pattern chart". Its figure 1 is a squared grid with filled dots, a chart for a purse, which shows where the colours or the beads go. Figures 1 to 9 follow crochet patterns and figures 10 to 12 follow netting patterns (pp. 89 and 93). They are not drawings of stitches; for those, use Dillmont, Beeton and the 1918 *Handbook*.
+**A chart from 1846.** Riego's *Knitting, Crochet, and Netting* (1846) came "with twelve illustrations", and the Project Gutenberg edition labels all twelve "Pattern chart". Its figure 1 is a squared grid with filled dots, a chart for a purse, which shows where the colors or the beads go. Figures 1 to 9 follow crochet patterns and figures 10 to 12 follow netting patterns (pp. 89 and 93). They are not drawings of stitches; for those, use Dillmont, Beeton and the 1918 *Handbook*.
 
 **One line to remember.** Whatever the chart, the council's advice holds: "Always refer to the pattern key."
 
@@ -3372,7 +3372,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
           },
           {
             prompt: "What is the number after the colon at the end of a row, as in \": 15 dc\"?",
-            options: ["The number of rows still to work", "The hook size in millimetres", "Your expected count", "The next page"],
+            options: ["The number of rows still to work", "The hook size in millimeters", "Your expected count", "The next page"],
             correctIndex: 2,
             explanation: "It is the stitch count you should have when the row is done: the pattern checking your work for you.",
             sourceLessonSlug: "abbreviations-and-repeats",
@@ -3529,7 +3529,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
             prompt: "What does Riego's figure 1 show?",
             options: ["Two hands holding a hook", "A grid of filled dots", "A finished purse, photographed", "A treble's motion"],
             correctIndex: 1,
-            explanation: "A squared grid with filled dots, a chart for a purse showing where the colours or beads go.",
+            explanation: "A squared grid with filled dots, a chart for a purse showing where the colors or beads go.",
             sourceLessonSlug: "charts-and-symbols",
           },
           {
@@ -3746,15 +3746,15 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane".`)}`,
 
 Cut the yarn and draw the end through the last loop on the hook.
 
-**The loose ends.** Every piece has at least two ends, where you started and where you stopped, and a colour change adds more. Dillmont describes two ways workers dealt with them: "Some crochet workers make a few extra chain stitches with the ends of the thread at the beginning and end of each row, or fasten them off with a few stitches on the wrong side" (p. 223). The Mary Frances book gives a needle method, under the heading "To Join Ends of Yarn in Crocheting": "When the work is finished, thread the ends of yarn into a long-eyed 'crewel' or darning needle, and run the ends back into the work" (Fryer, 1918, p. 76). Its crocheted cape says it again: "To fasten the loose ends of wool, thread them into a long-eyed needle and run the ends back into the work" (p. 238). On the doll's necklace the needle strings three beads before the end is fastened "securely into the end chain stitch" (pp. 50-51).
+**The loose ends.** Every piece has at least two ends, where you started and where you stopped, and a color change adds more. Dillmont describes two ways workers dealt with them: "Some crochet workers make a few extra chain stitches with the ends of the thread at the beginning and end of each row, or fasten them off with a few stitches on the wrong side" (p. 223). The Mary Frances book gives a needle method, under the heading "To Join Ends of Yarn in Crocheting": "When the work is finished, thread the ends of yarn into a long-eyed 'crewel' or darning needle, and run the ends back into the work" (Fryer, 1918, p. 76). Its crocheted cape says it again: "To fasten the loose ends of wool, thread them into a long-eyed needle and run the ends back into the work" (p. 238). On the doll's necklace the needle strings three beads before the end is fastened "securely into the end chain stitch" (pp. 50-51).
 
-**Ends at a colour change.** Changing colour leaves ends too, and the sources say how to change cleanly. Dillmont: "the last stitch before you take another colour cannot be finished with the same thread, you must pass the new thread through the last loop and draw it up with that" (p. 239). Riego (1846) adds how to carry the colour you are not using: "Lay the color not wanted along, and work over it. In changing the color, draw it through before finishing the stitch, when there are 2 loops on the needle" (pp. 58-59).
+**Ends at a color change.** Changing color leaves ends too, and the sources say how to change cleanly. Dillmont: "the last stitch before you take another colour cannot be finished with the same thread, you must pass the new thread through the last loop and draw it up with that" (p. 239). Riego (1846) adds how to carry the color you are not using: "Lay the color not wanted along, and work over it. In changing the color, draw it through before finishing the stitch, when there are 2 loops on the needle" (pp. 58-59).
 
 **What the record leaves open.** Fryer says to run the ends back into the work, and the picture is captioned "Run the ends into the work" (p. 76). She does not say how far to run an end or along which path, so this course gives no rule for that.
 
 :::reveal How do the four sources in this lesson fasten off? ||| Cut the yarn and draw the end through the last loop on the hook.
 
-:::reveal When does Dillmont say to bring in a new colour? ||| On the last stitch before the change: that stitch is finished with the new thread, drawn through the last loop.
+:::reveal When does Dillmont say to bring in a new color? ||| On the last stitch before the change: that stitch is finished with the new thread, drawn through the last loop.
 
 ## Sources
 ${src(GAUGAIN, `p. 191 (PDF p. 195).`)}
@@ -3772,7 +3772,7 @@ ${src(FRYER, `pp. 50-51 (the doll's necklace); p. 69 (the doll's scarf); p. 76 (
           answer: "Cut the yarn and draw the end through the last loop on the hook.",
         },
         {
-          prompt: "How did Riego carry a colour she was not using?",
+          prompt: "How did Riego carry a color she was not using?",
           answer: "\"Lay the color not wanted along, and work over it.\"",
         },
       ],
@@ -3884,9 +3884,9 @@ ${src(HANDBOOK, `the knitted coat's finishing paragraph.`)}`,
           },
           {
             prompt: "What adds more ends to a piece?",
-            options: ["A turning chain at the row's end", "An increase worked at a corner", "A row worked in the back loop", "A colour change"],
+            options: ["A turning chain at the row's end", "An increase worked at a corner", "A row worked in the back loop", "A color change"],
             correctIndex: 3,
-            explanation: "A colour change leaves ends too, which is why lesson 21 covers changing colour.",
+            explanation: "A color change leaves ends too, which is why lesson 21 covers changing color.",
             sourceLessonSlug: "fastening-off-and-ends",
           },
           {
@@ -3911,28 +3911,28 @@ ${src(HANDBOOK, `the knitted coat's finishing paragraph.`)}`,
             sourceLessonSlug: "fastening-off-and-ends",
           },
           {
-            prompt: "When does Dillmont bring in a new colour?",
+            prompt: "When does Dillmont bring in a new color?",
             options: ["At the start of the next row only", "After fastening off", "On the first stitch after the change", "On the last stitch before the change"],
             correctIndex: 3,
             explanation: "\"the last stitch before you take another colour cannot be finished with the same thread\" (p. 239).",
             sourceLessonSlug: "fastening-off-and-ends",
           },
           {
-            prompt: "At a colour change, how does Dillmont bring in the new thread?",
-            options: ["Through the last loop", "Knotted to the old colour's end", "Into the back loop", "Wrapped twice before the insert"],
+            prompt: "At a color change, how does Dillmont bring in the new thread?",
+            options: ["Through the last loop", "Knotted to the old color's end", "Into the back loop", "Wrapped twice before the insert"],
             correctIndex: 0,
             explanation: "\"you must pass the new thread through the last loop and draw it up with that\" (p. 239).",
             sourceLessonSlug: "fastening-off-and-ends",
           },
           {
-            prompt: "What does Riego (1846) do with the colour not wanted?",
+            prompt: "What does Riego (1846) do with the color not wanted?",
             options: ["Cuts it off", "Works over it", "Leaves it hanging at the back", "Winds it round the hook's handle"],
             correctIndex: 1,
             explanation: "\"Lay the color not wanted along, and work over it\" (pp. 58-59).",
             sourceLessonSlug: "fastening-off-and-ends",
           },
           {
-            prompt: "When does Riego draw the new colour through?",
+            prompt: "When does Riego draw the new color through?",
             options: ["After the stitch is fully finished", "Before the hook goes into the stitch", "With 2 loops on the needle", "At the next row"],
             correctIndex: 2,
             explanation: "\"In changing the color, draw it through before finishing the stitch, when there are 2 loops on the needle.\"",
@@ -4173,7 +4173,7 @@ ${src(HANDBOOK, `the knitted coat's finishing paragraph.`)}`,
           },
           {
             prompt: "Why does this course not teach from Dillmont's lace-finishing pages?",
-            options: ["They never mention crochet", "They are about knitting, not lace", "They were removed from the edition", "They need a licence before quoting"],
+            options: ["They never mention crochet", "They are about knitting, not lace", "They were removed from the edition", "They need a license before quoting"],
             correctIndex: 0,
             explanation: "Pp. 565-568 stiffen, iron and pin out lace and never mention crochet, so the course does not present them as crochet instructions.",
             sourceLessonSlug: "care-and-blocking",
@@ -4342,21 +4342,21 @@ ${src(RIEGO_1846, `title page and Preface.`)}`,
           answer: "Plain French Tambour, or double tambour.",
         },
       ],
-      body: `The source for this lesson is a catalogue printed in London in 1883 for an exhibition at the Mansion House, *Irish Lace: A History of the Industry*. It is careful to say what it does not know.
+      body: `The source for this lesson is a catalog printed in London in 1883 for an exhibition at the Mansion House, *Irish Lace: A History of the Industry*. It is careful to say what it does not know.
 
-**Before the famine: a convent school, 1845.** The catalogue traces Cork crochet to "The nuns of the Ursuline Convent at Blachrock [sic], Co. Cork", who "wisely added industrial training to the education of those who came to their exterior day school. It is on record that in the year 1845 they received about ninety pounds on the work they had taught their scholars to do" (*Irish Lace*, 1883, p. 5). The place is Blackrock; the catalogue prints "Blachrock". It says the industry then spread to "almost every convent" and "did much to mitigate the effects of famine".
+**Before the famine: a convent school, 1845.** The catalog traces Cork crochet to "The nuns of the Ursuline Convent at Blachrock [sic], Co. Cork", who "wisely added industrial training to the education of those who came to their exterior day school. It is on record that in the year 1845 they received about ninety pounds on the work they had taught their scholars to do" (*Irish Lace*, 1883, p. 5). The place is Blackrock; the catalog prints "Blachrock". It says the industry then spread to "almost every convent" and "did much to mitigate the effects of famine".
 
-**Nobody knows who started it.** The same page: "Whoever suggested the tambour needle, for ladies to amuse themselves in producing crochet work, at the same time indirectly conferred a great boon on the poor." And: "It is not remembered into whose hands it first came, or in what spot it commenced its beneficent career ... Evidently it was known before the famine, but the famine brought out and proved its worth" (p. 5). The catalogue names no inventor of Irish crochet.
+**Nobody knows who started it.** The same page: "Whoever suggested the tambour needle, for ladies to amuse themselves in producing crochet work, at the same time indirectly conferred a great boon on the poor." And: "It is not remembered into whose hands it first came, or in what spot it commenced its beneficent career ... Evidently it was known before the famine, but the famine brought out and proved its worth" (p. 5). The catalog names no inventor of Irish crochet.
 
 **The famine.** "The failure of the potato crop in 1846 stirred the entire population to think of industry as the only legitimate means of relief. Lace-making was only one of many forms of labour that the benevolent adopted." And: "With the exception of Carrickmacross and Limerick, all other existing lace-industries in Ireland arose out of the famine years of 1846-7-8" (p. 4).
 
 **Teaching crochet as relief, from 1847.** "Previous to 1847, Mrs. W. C. Roberts, of Thornton, Co. Kildare, greatly assisted the poor in her neighbourhood by teaching them to knit woollen jackets. In that year of famine the orders failed, and crochet was suggested ... Every one thus personally taught by Mrs. Roberts was required to teach three others, and so on, until hundreds were taught." It adds that "the distress at that time was so great that boys willingly learned to do crochet work" (p. 6). One of her teachers went, "on the application of Mrs. Hand, to Clones, Co. Monaghan", where "To its Rectory, for miles round, came the poor to learn crochet" (p. 7).
 
-**The trade.** Crochet "was soon introduced to the London trade", and "Its productions formed a conspicuous element of the great exhibition of 1851." The catalogue names "Plain Crochet" and "Lace Crochet", and a plate shows both from Cork. It records a collar order placed "at 12/6 per doz." being cut to "2/6" (p. 6). It lists the places the work spread: "New Ross, Thomastown, Castleboro', Thornton, Dungiven, and Carndough."
+**The trade.** Crochet "was soon introduced to the London trade", and "Its productions formed a conspicuous element of the great exhibition of 1851." The catalog names "Plain Crochet" and "Lace Crochet", and a plate shows both from Cork. It records a collar order placed "at 12/6 per doz." being cut to "2/6" (p. 6). It lists the places the work spread: "New Ross, Thomastown, Castleboro', Thornton, Dungiven, and Carndough."
 
 **What the record does not support.** It does not name an inventor. It does not mention Riego, and stories that credit her with inventing Irish crochet get no support from it. It does not say convents invented crochet: it says one convent school taught it by 1845 and was paid for the work. Its chapter also quotes period contempt for the poor it describes; this course does not repeat it.
 
-:::reveal What is the earliest dated fact the 1883 catalogue gives for Irish crochet? ||| In 1845 the Ursuline nuns at Blackrock, Co. Cork, received about ninety pounds for the work they had taught the pupils of their day school.
+:::reveal What is the earliest dated fact the 1883 catalog gives for Irish crochet? ||| In 1845 the Ursuline nuns at Blackrock, Co. Cork, received about ninety pounds for the work they had taught the pupils of their day school.
 
 :::reveal What was Mrs. Roberts's rule for the people she taught crochet in 1847? ||| Each person she taught had to teach three others.
 
@@ -4369,7 +4369,7 @@ ${src(IRISH_LACE, `printed p. 4, the famine passage (IIIF image n18); printed p.
       section: "Section 7 · Where crochet came from, as the record shows it",
       recallContent: [
         {
-          prompt: "Does the 1883 Irish Lace catalogue name an inventor of Irish crochet?",
+          prompt: "Does the 1883 Irish Lace catalog name an inventor of Irish crochet?",
           answer: "No. It says \"It is not remembered into whose hands it first came\", and does not mention Riego.",
         },
         {
@@ -4391,7 +4391,7 @@ A good rule for any origin story: ask what document it rests on. If the answer i
 
 Read that carefully. It is what respondents reported. The people who answered chose to answer a survey about crochet that reached them through social media, so they are not a sample of all crocheters, let alone of everyone. Nobody was compared with people who do not crochet. The authors conclude that crochet "can play a role in promoting positive wellbeing"; that is their inference from this sample. It is a reason to ask a better question, not a finding that crochet makes people calmer.
 
-**Learning together.** Crochet has been taught person to person at least since the Ursuline day school of 1845 and Mrs. Roberts's teach-three rule of 1847. For a study of how people learn through shared interests online, see *Affinity Online* (Ito et al., 2018), which is free to read under an open licence.
+**Learning together.** Crochet has been taught person to person at least since the Ursuline day school of 1845 and Mrs. Roberts's teach-three rule of 1847. For a study of how people learn through shared interests online, see *Affinity Online* (Ito et al., 2018), which is free to read under an open license.
 
 :::reveal Which origin stories for crochet does this course name as folklore? ||| Arabian, Chinese and South American origins, and a Swedish magazine of 1819. None of the sources this course was built from supports any of them.
 
@@ -4451,7 +4451,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
           },
           {
             prompt: "Has this course read the 1567 accounts itself?",
-            options: ["Yes, in the KB's collection", "No; it is Karp's report", "Yes, on archive.org", "Yes, quoted in the 1883 catalogue"],
+            options: ["Yes, in the KB's collection", "No; it is Karp's report", "Yes, on archive.org", "Yes, quoted in the 1883 catalog"],
             correctIndex: 1,
             explanation: "It is Karp's report of a document this course has not seen, and the lesson says so.",
             sourceLessonSlug: "before-the-word",
@@ -4654,7 +4654,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "shepherds-knitting",
           },
           {
-            prompt: "Where does Lambert's 1847 introduction say crochet was originally practised?",
+            prompt: "Where does Lambert's 1847 introduction say crochet was originally practiced?",
             options: ["At the French court of Louis XIV", "In the convents of County Cork", "Among Scottish peasants", "In Leipzig"],
             correctIndex: 2,
             explanation: "\"a species of knitting originally practised by the peasants in Scotland\" (Lambert, p. 9).",
@@ -4832,27 +4832,27 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
           // ── irish-crochet-and-the-famine ──
           {
             prompt: "What is the source for lesson 27, on Irish crochet and the famine?",
-            options: ["A 1912 government report on lace", "Riego's 1846 book on crochet", "Karp's 2018 paper on crochet", "An 1883 Mansion House catalogue"],
+            options: ["A 1912 government report on lace", "Riego's 1846 book on crochet", "Karp's 2018 paper on crochet", "An 1883 Mansion House catalog"],
             correctIndex: 3,
-            explanation: "Irish Lace: A History of the Industry, the catalogue of an 1883 exhibition at the Mansion House.",
+            explanation: "Irish Lace: A History of the Industry, the catalog of an 1883 exhibition at the Mansion House.",
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "To whom does the catalogue trace Cork crochet?",
+            prompt: "To whom does the catalog trace Cork crochet?",
             options: ["Ursuline nuns", "Mrs. Roberts of Thornton", "Riego", "Jane Gaugain, of Edinburgh"],
             correctIndex: 0,
             explanation: "\"The nuns of the Ursuline Convent at Blachrock [sic], Co. Cork\" (p. 5).",
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "In what kind of school did the Blackrock nuns teach crochet, per the 1883 catalogue?",
+            prompt: "In what kind of school did the Blackrock nuns teach crochet, per the 1883 catalog?",
             options: ["A boarding school", "A day school", "A blind school", "A night school"],
             correctIndex: 1,
             explanation: "They \"added industrial training to the education of those who came to their exterior day school.\"",
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "In which year does the 1883 catalogue record the Blackrock nuns being paid for their pupils' work?",
+            prompt: "In which year does the 1883 catalog record the Blackrock nuns being paid for their pupils' work?",
             options: ["1847", "1851", "1845", "1883"],
             correctIndex: 2,
             explanation: "\"It is on record that in the year 1845 they received about ninety pounds on the work\".",
@@ -4866,28 +4866,28 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "Does the catalogue name an inventor of Irish crochet?",
+            prompt: "Does the catalog name an inventor of Irish crochet?",
             options: ["No, it names none", "Yes, Riego", "Yes, Mrs. Roberts", "Yes, an Ursuline nun"],
             correctIndex: 0,
             explanation: "It names none.",
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "What does the 1883 Irish Lace catalogue say about who first had crochet?",
+            prompt: "What does the 1883 Irish Lace catalog say about who first had crochet?",
             options: ["It was Mrs. Roberts in 1847", "It is not remembered", "It was the Ursulines in 1845", "A London dealer"],
             correctIndex: 1,
             explanation: "\"It is not remembered into whose hands it first came, or in what spot it commenced its beneficent career\".",
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "Was crochet known in Ireland before the famine, per the catalogue?",
+            prompt: "Was crochet known in Ireland before the famine, per the catalog?",
             options: ["No, from 1847", "No, it came in 1851", "Evidently, yes", "Not until the 1880s"],
             correctIndex: 2,
             explanation: "\"Evidently it was known before the famine, but the famine brought out and proved its worth\".",
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "Which two lace industries does the catalogue except from arising out of the famine years?",
+            prompt: "Which two lace industries does the catalog except from arising out of the famine years?",
             options: ["Cork and Clones, the two crochet towns", "Thornton and Dungiven", "New Ross and Thomastown, from the same list", "Carrickmacross and Limerick"],
             correctIndex: 3,
             explanation: "\"With the exception of Carrickmacross and Limerick, all other existing lace-industries in Ireland arose out of the famine years of 1846-7-8.\"",
@@ -4922,7 +4922,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "Which exhibition does the catalogue say Irish crochet was conspicuous in?",
+            prompt: "Which exhibition does the catalog say Irish crochet was conspicuous in?",
             options: ["1851", "1883", "1845", "1867"],
             correctIndex: 0,
             explanation: "\"Its productions formed a conspicuous element of the great exhibition of 1851.\"",
@@ -4932,25 +4932,25 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             prompt: "What happened to a collar order placed \"at 12/6 per doz.\"?",
             options: ["It rose to twenty shillings", "It was cut to 2/6", "It was cancelled in 1851", "No change"],
             correctIndex: 1,
-            explanation: "The catalogue records it being cut to \"2/6\" (p. 6).",
+            explanation: "The catalog records it being cut to \"2/6\" (p. 6).",
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "Which two kinds of crochet does the catalogue name?",
+            prompt: "Which two kinds of crochet does the catalog name?",
             options: ["Irish crochet and English crochet", "Tambour crochet and Tunisian", "Plain and Lace", "Filet crochet and star stitch"],
             correctIndex: 2,
             explanation: "\"Plain Crochet\" and \"Lace Crochet\", both shown from Cork on plate \"CORK. 4\".",
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "Does the catalogue mention Riego?",
+            prompt: "Does the catalog mention Riego?",
             options: ["Yes, as the inventor", "Yes, in Cork", "Yes, in its preface", "No, it does not"],
             correctIndex: 3,
             explanation: "It does not, so stories crediting her with inventing Irish crochet get no support from it.",
             sourceLessonSlug: "irish-crochet-and-the-famine",
           },
           {
-            prompt: "Does the catalogue say convents invented crochet?",
+            prompt: "Does the catalog say convents invented crochet?",
             options: ["No", "Yes, the Ursulines did", "Yes, in Co. Monaghan", "Yes, before 1800"],
             correctIndex: 0,
             explanation: "It says one convent school taught it by 1845 and was paid for the work. That is not invention.",
@@ -5007,7 +5007,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             sourceLessonSlug: "folklore-testimony-and-a-survey",
           },
           {
-            prompt: "Which group did Lambert say had much practised crochet in fleecy wool?",
+            prompt: "Which group did Lambert say had much practiced crochet in fleecy wool?",
             options: ["Invalids", "Sailors", "Soldiers in winter camps", "Nuns in convent schools"],
             correctIndex: 0,
             explanation: "\"both by invalids, and by persons whose sight either needs relief, or has become impaired\" (p. 12).",
@@ -5080,7 +5080,7 @@ ${src(ITO, `the whole book, open access under CC BY-NC-ND 4.0 (no single chapter
             prompt: "Which open-access book does lesson 28 point to on learning through shared interests online?",
             options: ["Defining Crochet, by Karp", "Irish Lace", "Affinity Online", "My Crochet Sampler, of 1847"],
             correctIndex: 2,
-            explanation: "Ito et al. (2018), Affinity Online, free to read under an open licence.",
+            explanation: "Ito et al. (2018), Affinity Online, free to read under an open license.",
             sourceLessonSlug: "folklore-testimony-and-a-survey",
           },
         ],
@@ -5156,7 +5156,7 @@ ${src(LEINHAUSER, `the single crochet row example and the turning-chain rule.`)}
 **Steps.**
 
 1. **Ring.** "Make a chain of 3 stitches, join" (Handbook, 1918). Join with a slip stitch into the first chain (lesson 11).
-2. **Round 1.** "Seven doubles in ring": 7 single crochet into the centre of the ring.
+2. **Round 1.** "Seven doubles in ring": 7 single crochet into the center of the ring.
 3. **Round 2.** "Two doubles in each double": 2 single crochet in every stitch. 14.
 4. **Round 3.** "A double in double, 2 in next; repeat." 21.
 5. **Round 4.** "A double in each of 2 doubles, 2 in next; repeat." 28.
@@ -5286,7 +5286,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
           },
           {
             prompt: "How does the council describe a Basic project?",
-            options: ["Lace patterns worked in two colours", "Basic stitches, maybe basic shaping", "Basic stitches, never any shaping", "Only chains and slip stitches"],
+            options: ["Lace patterns worked in two colors", "Basic stitches, maybe basic shaping", "Basic stitches, never any shaping", "Only chains and slip stitches"],
             correctIndex: 1,
             explanation: "\"Projects using basic stitches. May include basic increases and decreases.\"",
             sourceLessonSlug: "project-washcloth",
@@ -5370,7 +5370,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
           },
           {
             prompt: "One edge of your washcloth slopes. What does lesson 29 say to look at?",
-            options: ["The yarn's weight category", "Your first stitch", "Whether the hook is too large", "The colour of the yarn"],
+            options: ["The yarn's weight category", "Your first stitch", "Whether the hook is too large", "The color of the yarn"],
             correctIndex: 1,
             explanation: "Your first stitch on the hook: the cause Priscilla names for a sloping edge in her star stitch (lesson 19).",
             sourceLessonSlug: "project-washcloth",
@@ -5476,7 +5476,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
           },
           {
             prompt: "Which Dillmont piece makes a six-sided coaster?",
-            options: ["Her coloured star, fig. 443", "Her square, fig. 441", "Her picot edge, p. 237", "Her hexagon"],
+            options: ["Her colored star, fig. 443", "Her square, fig. 441", "Her picot edge, p. 237", "Her hexagon"],
             correctIndex: 3,
             explanation: "Her hexagon, p. 240, fig. 442.",
             sourceLessonSlug: "project-coaster",
@@ -5695,7 +5695,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
           },
           {
             prompt: "What do Henderson and Taimina's figures 7a to 7c compare?",
-            options: ["Different yarn colours", "Different radii", "Different hook sizes only", "Stitch names"],
+            options: ["Different yarn colors", "Different radii", "Different hook sizes only", "Stitch names"],
             correctIndex: 1,
             explanation: "Models with radii of \"approximately 4 cm, 8 cm, and 16 cm\".",
             sourceLessonSlug: "project-hyperbolic-plane",
@@ -5760,10 +5760,10 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
             sourceLessonSlug: "what-crochet-is",
           },
           {
-            prompt: "A pattern names a G hook. Why check the millimetres too?",
-            options: ["Letters were abolished by the council", "Two sizes share the letter", "G is a steel size, not a regular one", "They show its colour"],
+            prompt: "A pattern names a G hook. Why check the millimeters too?",
+            options: ["Letters were abolished by the council", "Two sizes share the letter", "G is a steel size, not a regular one", "They show its color"],
             correctIndex: 1,
-            explanation: "The council's table lists both a 4 mm G-6 and a 4.25 mm G. Rely on the millimetre size.",
+            explanation: "The council's table lists both a 4 mm G-6 and a 4.25 mm G. Rely on the millimeter size.",
             sourceLessonSlug: "hooks-and-sizes",
           },
           {
@@ -5929,7 +5929,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
           },
           {
             prompt: "On a chart, how do you tell a double crochet from a treble?",
-            options: ["Its colour", "Count the slashes", "Measure the oval's size", "Count the dots below"],
+            options: ["Its color", "Count the slashes", "Measure the oval's size", "Count the dots below"],
             correctIndex: 1,
             explanation: "A T with one slash is a double crochet; two slashes, a treble.",
             sourceLessonSlug: "charts-and-symbols",
@@ -5985,14 +5985,14 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
           },
           {
             prompt: "What does Dillmont's chain picot decorate?",
-            options: ["A ring's centre", "A finished edge", "A turning chain", "A foundation chain"],
+            options: ["A ring's center", "A finished edge", "A turning chain", "A foundation chain"],
             correctIndex: 1,
             explanation: "It is an edge finish: 5 chain and 1 plain stitch in the first of them.",
             sourceLessonSlug: "joining-and-edges",
           },
           {
             prompt: "Which finishing step can this course not source for crochet?",
-            options: ["Fastening off the last loop", "Joining squares on the wrong side", "Blocking a piece to size", "Changing colour mid-row"],
+            options: ["Fastening off the last loop", "Joining squares on the wrong side", "Blocking a piece to size", "Changing color mid-row"],
             correctIndex: 2,
             explanation: "No crochet source in the course gives a blocking instruction.",
             sourceLessonSlug: "care-and-blocking",
@@ -6019,7 +6019,7 @@ ${src(HT, `section "2. How to Crochet the Hyperbolic Plane" (materials and steps
             sourceLessonSlug: "crochet-in-print",
           },
           {
-            prompt: "What does the 1883 catalogue say the famine did for crochet in Ireland?",
+            prompt: "What does the 1883 catalog say the famine did for crochet in Ireland?",
             options: ["Invented it from nothing in 1847", "Ended the trade entirely by 1851", "Proved its worth", "Brought it in"],
             correctIndex: 2,
             explanation: "\"Evidently it was known before the famine, but the famine brought out and proved its worth\".",
