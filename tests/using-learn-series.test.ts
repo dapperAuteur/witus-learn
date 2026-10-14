@@ -29,7 +29,7 @@ const COURSES: [string, AuthoredCourse][] = [
 const WAIVED: Record<string, string> = {
   "keeping-courses-current": "a command-line runbook for the platform owner, not a screen anyone drives",
   "reviewer-sign-off":
-    "shipped with feat/reviewer-signoff (plans/93), which by rule edits no course file; teaching it in Run Your Course is a separate content task",
+    "shipped with feat/reviewer-signoff (plans/93) while the quiz-balance sweep was editing course files; a Run Your Course lesson that teaches it is the follow-up (delete this line then)",
 };
 
 describe("Using Learn.WitUS series", () => {

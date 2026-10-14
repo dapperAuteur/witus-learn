@@ -26,7 +26,7 @@ const STATE_TONE: Record<string, string> = {
  * One row per need, its state against the lesson as it stands now, the reviewer's credit, and any
  * correction still to apply (this one course only: no page lists corrections across courses).
  *
- * "Release the review hold" appears for the platform owner once every QR need is cleared and no
+ * "Release the review hold" appears for the platform owner once every QR and P need is cleared and no
  * decision is left; the server re-checks before clearing anything. Vetting stays a separate step.
  */
 export function ReviewSignoffPanel({
@@ -49,8 +49,7 @@ export function ReviewSignoffPanel({
       </h2>
       <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
         Lessons marked &ldquo;Before release&rdquo; and where each need stands. Qualified-reviewer needs: {readiness.qrCleared} of{" "}
-        {readiness.qrTotal} cleared. Practitioner needs: {readiness.pCleared} of {readiness.pTotal} cleared (they do not hold the
-        release).
+        {readiness.qrTotal} cleared. Practitioner needs: {readiness.pCleared} of {readiness.pTotal} cleared.
         {readiness.openDecisions > 0
           ? ` ${readiness.openDecisions} decision ${readiness.openDecisions === 1 ? "marker is" : "markers are"} open; a decision clears only by editing the marker out of the course file.`
           : ""}{" "}
@@ -66,7 +65,7 @@ export function ReviewSignoffPanel({
           <ReleaseReviewHoldButton courseId={courseId} />
         ) : (
           <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-            The hold can be released here once every qualified-reviewer need is cleared and no decision is open.
+            The hold can be released here once every qualified-reviewer and practitioner need is cleared and no decision is open.
           </p>
         )
       ) : null}

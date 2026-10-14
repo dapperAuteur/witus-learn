@@ -232,10 +232,12 @@ export interface ReleaseReadiness {
 }
 
 /**
- * May the review hold come off? Ready means every lesson's QR need is cleared and no decision
- * marker remains. P needs are counted and shown but do not block, as plans/93 decided: the holds
- * these courses carry name the qualified reviewer, not the practitioner. A course with no markers
- * at all is NOT ready here: its hold was never about markers and is still cleared by hand.
+ * May the review hold come off? Ready means every lesson's QR AND P need is cleared and no decision
+ * marker remains. P needs block too (changed from plans/93's draft on review, 2026-10-14): a released
+ * course must not show learners a "Before release" box, and a sound-craft marker says the lesson is
+ * not released without its practitioner. The owner can clear a P need himself (own demonstration),
+ * so this adds no outside dependency. A course with no markers at all is NOT ready here: its hold
+ * was never about markers and is still cleared by hand.
  */
 export function releaseReadiness(lessons: readonly ReadinessLesson[]): ReleaseReadiness {
   let qrTotal = 0;
@@ -257,7 +259,7 @@ export function releaseReadiness(lessons: readonly ReadinessLesson[]): ReleaseRe
   }
   const anything = qrTotal + pTotal + openDecisions > 0;
   return {
-    ready: anything && qrCleared === qrTotal && openDecisions === 0,
+    ready: anything && qrCleared === qrTotal && pCleared === pTotal && openDecisions === 0,
     qrTotal,
     qrCleared,
     pTotal,

@@ -503,10 +503,11 @@ or BAM's demonstration`, or `BAM's decision (brief question N)`; one line may ca
 - **Corrections are applied, never answered.** Editors see a pending correction on the lesson and in the
   `/teach` "Reviewer sign-off" panel; the owner edits the lesson and presses **Applied as written**
   (once), which re-pins the verdict to the edited text and shows "correction applied {date}".
-- **Release.** When every QR need is cleared and no decision marker is left, the owner's **Release the
+- **Release.** When every QR and P need is cleared and no decision marker is left, the owner's **Release the
   review hold** button (`POST /api/courses/[id]/release-review-hold`, readiness re-checked on the
   server) clears `publish_hold_reason`. Holds are written on first insert only, so a release survives
-  re-seeds. P needs are shown but do not block. Vetting stays a separate step. `/teach` shows a
+  re-seeds. P needs block release too (the owner may clear them with his own demonstration), so a
+  released course never shows a "Before release" box. Vetting stays a separate step. `/teach` shows a
   "QR 12/17" chip per marked course.
 - **Reviewers' own list:** `/audit/review` (noindex, linked from the invite screen, the reviewer banner
   on a lesson, and `/audit/citations`) lists their marked lessons, each need's state, and how they will

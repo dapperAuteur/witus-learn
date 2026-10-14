@@ -215,13 +215,13 @@ describe("releaseReadiness", () => {
   const p: ReviewNeed = { kind: "p", who: "a shearer" };
   const d: ReviewNeed = { kind: "decision", who: "set sound here or not", question: 5 };
 
-  it("is ready only when every QR is cleared and no decision is left", () => {
-    expect(releaseReadiness([{ needs: [qr, p], states: { qr: "cleared" } }, { needs: [qr], states: { qr: "cleared" } }])).toEqual({
+  it("is ready only when every QR and P need is cleared and no decision is left", () => {
+    expect(releaseReadiness([{ needs: [qr, p], states: { qr: "cleared", p: "cleared" } }, { needs: [qr], states: { qr: "cleared" } }])).toEqual({
       ready: true,
       qrTotal: 2,
       qrCleared: 2,
       pTotal: 1,
-      pCleared: 0,
+      pCleared: 1,
       openDecisions: 0,
     });
     expect(releaseReadiness([{ needs: [qr], states: { qr: "pending_correction" } }]).ready).toBe(false);
@@ -236,8 +236,11 @@ describe("releaseReadiness", () => {
     expect(releaseReadiness([{ needs: [], states: {} }]).ready).toBe(false);
   });
 
-  it("a course with only P needs is ready (P does not block, by plans/93)", () => {
-    expect(releaseReadiness([{ needs: [p], states: {} }]).ready).toBe(true);
+  it("P needs block release until cleared, so a released course never shows a Before release box", () => {
+    expect(releaseReadiness([{ needs: [p], states: {} }]).ready).toBe(false);
+    expect(releaseReadiness([{ needs: [p], states: { p: "cleared" } }]).ready).toBe(true);
+    expect(releaseReadiness([{ needs: [qr, p], states: { qr: "cleared" } }]).ready).toBe(false);
+    expect(releaseReadiness([{ needs: [qr, p], states: { qr: "cleared", p: "cleared" } }]).ready).toBe(true);
   });
 });
 

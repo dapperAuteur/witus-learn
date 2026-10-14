@@ -413,9 +413,9 @@ That is deliberate: your name never sits on wording you did not read.
 
 ## Releasing the hold (platform owner)
 
-When every qualified-reviewer need is cleared and no decision is left, **Release the review hold**
-appears on the sign-off panel. The server checks again before clearing anything. Practitioner needs
-are shown but do not hold the release. Releasing does not vet the course: vetting is still its own
+When every qualified-reviewer and practitioner need is cleared and no decision is left, **Release the
+review hold** appears on the sign-off panel. The server checks again before clearing anything, so a
+released course never shows a learner a "Before release" box. Releasing does not vet the course: vetting is still its own
 step (see **Vetting a course, and the "Coming soon" page**).
 
 For now only the platform owner releases a hold and clears practitioner needs, and only an invited
