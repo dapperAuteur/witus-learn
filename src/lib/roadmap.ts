@@ -12,10 +12,10 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   still begins "Before release". An accepted reviewer whose name and credential the inviter set records
   cleared, cleared with one correction, or not cleared; the verdict is pinned to a hash of the lesson's
   text, so any edit (a typo included) resets it on read. The owner clears practitioner needs only, applies
-  a correction with "Applied as written", and releases the hold once every QR need is cleared and no
-  decision is left. New \`/audit/review\` for reviewers, a sign-off panel on \`/teach/<course>\`, and a QR
-  chip on \`/teach\`. No inbox: a correction is one-way content on a lesson, never a message. ❓ Open for BAM:
-  may a school's brand_admin release (owner only for now)?
+  a correction with "Applied as written"; the owner or the school's admin (BAM, 2026-10-14; never the
+  course's own instructor) releases the hold once every QR and P need is cleared and no decision is left.
+  New \`/audit/review\` for reviewers, a sign-off panel on \`/teach/<course>\`, and a QR chip on \`/teach\`.
+  No inbox: a correction is one-way content on a lesson, never a message.
 - 🔧 **Tours from the field** (\`feat/field-tours\`, stacked on \`feat/reviewer-signoff\`, migration
   \`0068_jittery_changeling\`; after merge run \`pnpm db:migrate:prod\`). Plans/93 section 2. A photo or video
   logged on a Field Log leg fills an empty \`virtual_tour\` slot (the 13 site-history "Now" lessons) through

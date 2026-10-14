@@ -504,9 +504,10 @@ or BAM's demonstration`, or `BAM's decision (brief question N)`; one line may ca
 - **Corrections are applied, never answered.** Editors see a pending correction on the lesson and in the
   `/teach` "Reviewer sign-off" panel; the owner edits the lesson and presses **Applied as written**
   (once), which re-pins the verdict to the edited text and shows "correction applied {date}".
-- **Release.** When every QR and P need is cleared and no decision marker is left, the owner's **Release the
-  review hold** button (`POST /api/courses/[id]/release-review-hold`, readiness re-checked on the
-  server) clears `publish_hold_reason`. Holds are written on first insert only, so a release survives
+- **Release.** When every QR and P need is cleared and no decision marker is left, **Release the
+  review hold** (`POST /api/courses/[id]/release-review-hold`, for the platform owner or this school's
+  admin, never the course's own instructor; readiness re-checked on the server) clears
+  `publish_hold_reason`. Holds are written on first insert only, so a release survives
   re-seeds. P needs block release too (the owner may clear them with his own demonstration), so a
   released course never shows a "Before release" box. Vetting stays a separate step. `/teach` shows a
   "QR 12/17" chip per marked course.
@@ -514,10 +515,10 @@ or BAM's demonstration`, or `BAM's decision (brief question N)`; one line may ca
   on a lesson, and `/audit/citations`) lists their marked lessons, each need's state, and how they will
   be credited. It never shows correction text.
 
-**Decisions taken as safe defaults until BAM rules (plans/93):** only the **platform owner** releases a
-review hold (not a white-label school's brand_admin); the owner may clear **P needs only**, and QR
-needs need an accepted auditor with an inviter-set credential; there is **no feature for learners to
-propose anything**.
+**Decisions (BAM, 2026-10-14):** the **platform owner or the school's admin** (brand_admin) releases a
+review hold, never the course's own instructor; the owner may clear **P needs only**, and QR needs need
+an accepted auditor with an inviter-set credential; there is **no feature for learners to propose
+anything**.
 
 **No inbox.** A correction is one-way content attached to one lesson and one need: no recipient, no
 reply, no parent row, no read or seen state, no email, no notification, and a new verdict replaces the

@@ -26,7 +26,7 @@ const STATE_TONE: Record<string, string> = {
  * One row per need, its state against the lesson as it stands now, the reviewer's credit, and any
  * correction still to apply (this one course only: no page lists corrections across courses).
  *
- * "Release the review hold" appears for the platform owner once every QR and P need is cleared and no
+ * "Release the review hold" appears for the platform owner or this school's admin once every QR and P need is cleared and no
  * decision is left; the server re-checks before clearing anything. Vetting stays a separate step.
  */
 export function ReviewSignoffPanel({
@@ -34,12 +34,16 @@ export function ReviewSignoffPanel({
   lessons,
   readiness,
   isOwner,
+  canRelease,
   holdReason,
 }: {
   courseId: string;
   lessons: SignoffLesson[];
   readiness: ReleaseReadiness;
+  /** The platform owner: may mark a correction "applied as written". */
   isOwner: boolean;
+  /** The platform owner or this school's admin: may release the review hold (BAM, 2026-10-14). */
+  canRelease: boolean;
   holdReason: string | null;
 }) {
   return (
@@ -60,7 +64,7 @@ export function ReviewSignoffPanel({
         course&rdquo;. The platform owner may clear practitioner needs with their own demonstration, never a qualified-reviewer need.
       </p>
 
-      {isOwner && holdReason ? (
+      {canRelease && holdReason ? (
         readiness.ready ? (
           <ReleaseReviewHoldButton courseId={courseId} />
         ) : (
