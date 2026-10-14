@@ -418,8 +418,9 @@ review hold** appears on the sign-off panel. The server checks again before clea
 released course never shows a learner a "Before release" box. Releasing does not vet the course: vetting is still its own
 step (see **Vetting a course, and the "Coming soon" page**).
 
-For now only the platform owner releases a hold and clears practitioner needs, and only an invited
-reviewer clears a qualified-reviewer need.`,
+The platform owner or the school's admin releases a hold, never the course's own author. Only the
+platform owner clears practitioner needs (with their own demonstration), and only an invited reviewer
+clears a qualified-reviewer need.`,
   },
   {
     slug: "tours-from-field-log",
@@ -915,17 +916,34 @@ config; OBS does the streaming. Stream keys are often single-use, so update them
     slug: "quizzes-rotation-and-images",
     title: "Quizzes: rotating pools, shuffled options, and images",
     category: "Courses",
-    keywords: ["quiz", "exam", "rotate", "random", "shuffle", "pool", "image", "alt", "accessibility"],
+    keywords: ["quiz", "exam", "rotate", "random", "shuffle", "pool", "image", "alt", "accessibility", "integrity", "length", "balance"],
     body: `# Quizzes & exams
 
 Quizzes are authored in \`quiz_content\` (via seeds today). Beyond the basics you can:
 
 - **Rotate questions**, set \`questionsPerAttempt\` to serve a random subset of a larger pool, so a
   learner sees different questions on each retake. Omit it (or set it to the pool size) to show all.
-- **Shuffle options**, set \`shuffleOptions: true\` to randomize each question's option order per
-  attempt. Scoring is by identity, so rotation and shuffling never affect correctness.
+- **Shuffled options**, every quiz reshuffles each question's option order on every attempt by
+  default, so a retake never shows the right answer in the slot it sat in last time. Scoring is by
+  identity, so rotation and shuffling never affect correctness. Opt a quiz out only with an explicit
+  \`shuffleOptions: false\`, for the rare question whose options must keep a fixed order.
 - **Add an image**, a question can carry \`imageUrl\` plus a REQUIRED \`imageAlt\` (screen-reader
-  description); it renders above the prompt. Seeding fails if an image has no alt text.`,
+  description); it renders above the prompt. Seeding fails if an image has no alt text.
+
+## How your quizzes look to a visitor
+
+Your course page carries a collapsed card under the standards block, **How this course's quizzes are
+built**. It counts, from the quizzes themselves each time the page loads: how many quizzes reshuffle
+their options, how many quizzes of 8 or more questions pass the length check (the right answer is as
+often a long option as a short one, so it cannot be picked out by length), how many questions link
+back to the lesson that teaches the answer (a \`sourceLessonSlug\` naming a published lesson in the
+same course), and how many explain the answer. A course with no quiz shows nothing. The card also
+appears on the Coming-soon page of a course still in review, as counts only.
+
+To raise the numbers, give every question a \`sourceLessonSlug\` and an \`explanation\`, and edit
+option text in place so the right answer is as often long as short across a quiz (never reorder
+options or edit a prompt; the length guards in \`pnpm lint\` say which questions to fix). The platform
+owner sees every course, worst first, at **/admin/quiz-integrity**.`,
   },
   {
     slug: "images-and-quick-recall",

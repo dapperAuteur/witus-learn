@@ -12,10 +12,10 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   still begins "Before release". An accepted reviewer whose name and credential the inviter set records
   cleared, cleared with one correction, or not cleared; the verdict is pinned to a hash of the lesson's
   text, so any edit (a typo included) resets it on read. The owner clears practitioner needs only, applies
-  a correction with "Applied as written", and releases the hold once every QR need is cleared and no
-  decision is left. New \`/audit/review\` for reviewers, a sign-off panel on \`/teach/<course>\`, and a QR
-  chip on \`/teach\`. No inbox: a correction is one-way content on a lesson, never a message. ❓ Open for BAM:
-  may a school's brand_admin release (owner only for now)?
+  a correction with "Applied as written"; the owner or the school's admin (BAM, 2026-10-14; never the
+  course's own instructor) releases the hold once every QR and P need is cleared and no decision is left.
+  New \`/audit/review\` for reviewers, a sign-off panel on \`/teach/<course>\`, and a QR chip on \`/teach\`.
+  No inbox: a correction is one-way content on a lesson, never a message.
 - 🔧 **Tours from the field** (\`feat/field-tours\`, stacked on \`feat/reviewer-signoff\`, migration
   \`0068_jittery_changeling\`; after merge run \`pnpm db:migrate:prod\`). Plans/93 section 2. A photo or video
   logged on a Field Log leg fills an empty \`virtual_tour\` slot (the 13 site-history "Now" lessons) through
@@ -30,6 +30,17 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Remove), linked from \`/teach\`. Not requested or queued: a learner proposing a tour is out of scope (no-inbox
   rule). Follow-ups: the course files still say "forthcoming" under the hood; \`/api/v1\` omits field tours; a
   Run Your Course lesson teaching \`tours-from-field-log\` (then delete its WAIVED line).
+- 🔧 **Quiz integrity panel** (\`feat/quiz-integrity-panel\`, no migration). Plans/93 section 3. The three
+  length guards' constants and measures move into one pure \`src/lib/quiz-integrity.ts\` that
+  \`check-longest-option\`, \`check-shortest-option\` and \`check-length-balance\` import (their output is
+  byte-identical before and after; no GRANDFATHERED map touched). A collapsed "How this course's quizzes are
+  built" card after the standards block on the course page and the Coming-soon face: shuffle, length
+  balance (banks of 8+), questions linked to a lesson in the course, explanations; no quiz renders nothing.
+  The Coming-soon face gets counts from \`ScopedDb.courseQuizIntegrity\`, where SQL returns option lengths,
+  never question text. New owner-only \`/admin/quiz-integrity\`: every course worst first, with a
+  school-wide pass share that doubles as the length-balance campaign's progress bar; it states that a
+  database figure can differ slightly from lint. Follow-up: \`tests/isolation/quiz-integrity.db.test.ts\`
+  has not run against a database.
 - 🔧 **Light on Set, CREW-03** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Eight
   sections, 27 lessons, 661 questions: what light does, hard and soft light from first principles, shaping
   light with what is already in the room (and the hacks the course refuses), natural light, key, fill and

@@ -49,18 +49,22 @@ describe("reviewer sign-off is tenant-scoped end to end", () => {
     expect(body).not.toMatch(/hash/i);
   });
 
-  it("only the platform owner applies a correction or releases a hold (not a brand_admin, by default)", () => {
-    for (const p of [
-      "src/app/api/courses/[id]/lessons/[lessonId]/review/applied/route.ts",
-      "src/app/api/courses/[id]/release-review-hold/route.ts",
-    ]) {
-      const r = src(p);
-      expect(r, p).toContain("isPlatformOwner(session.user.id)");
-      expect(r, p).toContain("sdb.getCourseById(id)");
-      expect(r, p).not.toContain("isTenantAdmin");
-      expect(r, p).not.toContain("canEditCourse");
-    }
+  it("only the platform owner applies a correction as written", () => {
+    const r = src("src/app/api/courses/[id]/lessons/[lessonId]/review/applied/route.ts");
+    expect(r).toContain("isPlatformOwner(session.user.id)");
+    expect(r).toContain("sdb.getCourseById(id)");
+    expect(r).not.toContain("isTenantAdmin");
+    expect(r).not.toContain("canEditCourse");
+  });
+
+  it("the platform owner or THIS school's admin releases a hold; never the course's own instructor (BAM, 2026-10-14)", () => {
     const release = src("src/app/api/courses/[id]/release-review-hold/route.ts");
+    expect(release).toContain("sdb.getCourseById(id)");
+    // The tenant comes from the request's host via the scoped DAL, never from the client.
+    expect(release).toContain("isTenantAdmin(session, sdb.tenantId)");
+    expect(release).not.toContain("canEditCourse");
+    expect(release).not.toContain("canManageCourseReviewers");
+    expect(release).not.toMatch(/instructorId\s*===\s*session/);
     // Readiness is recomputed on the server from stored verdicts, never trusted from the click.
     expect(release).toContain("readinessOf(");
     expect(release).toContain("readiness.ready");
