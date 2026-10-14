@@ -2,6 +2,16 @@ import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import ts from "typescript";
+import {
+  MIN_BANK,
+  OVER_CHANCE,
+  STRATEGIES,
+  balanceLimit,
+  bestStrategy,
+  optionLength,
+  strategyValue,
+  type Strategy,
+} from "../src/lib/quiz-integrity";
 
 /**
  * Guard: FULL length balance. The longest- and shortest-option guards catch the two extremes; this one
@@ -30,34 +40,13 @@ const ROOTS = ["scripts", "src"];
 const EXCLUDE_DIRS = [join("src", "db", "migrations"), join("node_modules"), join(".next")];
 const EXTS = [".ts", ".tsx"];
 
-/** Banks smaller than this are not checked (too small to tell a giveaway from chance). */
-const MIN_BANK = 8;
-/** The floor of the limit: no strategy may score more than this on any bank of 4+ options. */
-const BASE_SHARE = 0.4;
-/** Headroom over chance (1 / options), so a true/false bank is judged against 65%, not 40%. */
-const OVER_CHANCE = 0.15;
+// The measure itself (MIN_BANK, the visible-length margin, the four strategies, strategyValue and the
+// limit) lives in src/lib/quiz-integrity.ts, shared with check-longest-option.ts,
+// check-shortest-option.ts and the course-page quiz panel, so a change to a measure changes all of them
+// at once.
+
 /** Slack over a grandfathered file's recorded score, for ordinary authoring drift. */
 const DRIFT = 0.03;
-/** Length difference a learner cannot see: options within this of the shortest read as the same size. */
-const MIN_VISIBLE_GAP = 8;
-/** ...or within this fraction of the shortest, so the gap scales with how long the options are. */
-const VISIBLE_FRACTION = 0.1;
-
-type Strategy = "shortest" | "2nd shortest" | "2nd longest" | "longest";
-const STRATEGIES: Strategy[] = ["shortest", "2nd shortest", "2nd longest", "longest"];
-
-/** What "always pick the option at this length position" scores on one question: 1 if the correct option
- *  is alone at that position, 1/k if it is one of k options a learner cannot tell apart by size, else 0. */
-function strategyValue(lens: number[], correct: number, strategy: Strategy): number {
-  if (lens.length < 2) return 0;
-  const asc = [...lens].sort((a, b) => a - b);
-  const pos = { shortest: 0, "2nd shortest": 1, "2nd longest": lens.length - 2, longest: lens.length - 1 }[strategy];
-  if (pos < 0 || pos >= lens.length) return 0;
-  const target = asc[pos];
-  const margin = Math.max(MIN_VISIBLE_GAP, target * VISIBLE_FRACTION);
-  const candidates = lens.filter((l) => Math.abs(l - target) <= margin).length;
-  return Math.abs(lens[correct] - target) <= margin ? 1 / candidates : 0;
-}
 
 /** Where the correct option sits, for --detail: 0 = shortest ... n-1 = longest. */
 function rankOf(lens: number[], correct: number): number {
@@ -262,7 +251,7 @@ function bankFrom(obj: ts.ObjectLiteralExpression, file: string, sf: ts.SourceFi
     const texts = opts.elements.map((e) => (ts.isExpression(e) ? stringOf(e) : null));
     // A bank with any computed option cannot be measured honestly; skip the whole question.
     if (texts.some((t) => t === null) || correct >= texts.length) continue;
-    const lens = (texts as string[]).map((t) => t.trim().length);
+    const lens = (texts as string[]).map(optionLength);
     options = Math.max(options, lens.length);
 
     const values = Object.fromEntries(STRATEGIES.map((st) => [st, strategyValue(lens, correct, st)])) as Record<Strategy, number>;
@@ -280,7 +269,7 @@ function bankFrom(obj: ts.ObjectLiteralExpression, file: string, sf: ts.SourceFi
   const byStrategy = Object.fromEntries(
     STRATEGIES.map((st) => [st, qs.reduce((a, q) => a + q.values[st], 0) / qs.length]),
   ) as Record<Strategy, number>;
-  const strategy = STRATEGIES.reduce((best, st) => (byStrategy[st] > byStrategy[best] ? st : best), STRATEGIES[0]);
+  const strategy = bestStrategy(byStrategy);
   return {
     file,
     line: sf.getLineAndCharacterOfPosition(obj.getStart(sf)).line + 1,
@@ -290,7 +279,7 @@ function bankFrom(obj: ts.ObjectLiteralExpression, file: string, sf: ts.SourceFi
     score: byStrategy[strategy],
     strategy,
     byStrategy,
-    limit: options >= 2 ? Math.max(BASE_SHARE, 1 / options + OVER_CHANCE) : BASE_SHARE,
+    limit: balanceLimit(options),
     questions: qs,
   };
 }

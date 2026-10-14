@@ -89,6 +89,10 @@ export const PUBLIC_ROADMAP: Record<RoadmapStatus, PublicRoadmapItem[]> = {
       body: "Photos and video an instructor captured on site can fill a course's virtual-tour lesson, credited under the tour. Nothing is shown of anyone who declined, a child appears only with a parent's written consent, the place needs a permission note, and all of it is checked again every time the lesson opens.",
     },
     {
+      title: "How a course's quizzes are built",
+      body: "Every course page with a quiz says, in plain sentences, whether its answer options are reshuffled on each attempt, whether the right answer can be picked out by its length, whether each question points back to the lesson that teaches it, and whether it explains the answer. Counted from the quizzes themselves each time the page loads.",
+    },
+    {
       title: "In-app lesson recording",
       body: "Record a lesson's audio right in the app, offline-first, so a dropped connection never loses a take.",
     },

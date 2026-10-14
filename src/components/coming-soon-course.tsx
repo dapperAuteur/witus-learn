@@ -2,6 +2,8 @@ import Link from "next/link";
 import { CourseInterestForm } from "./course-interest-form";
 import { CourseNotifyForm } from "./course-notify-form";
 import { CourseStandards } from "./course-standards";
+import { CourseQuizIntegrity } from "./course-quiz-integrity";
+import type { CourseQuizIntegrity as QuizIntegritySummary } from "@/lib/quiz-integrity";
 import { ShareButton } from "./share-button";
 
 // Per-COURSE "Coming soon" presentation for an unvetted course (`vetted_at IS NULL`).
@@ -13,9 +15,10 @@ import { ShareButton } from "./share-button";
 // closed.
 //
 // This file must never be handed a lesson. It receives exactly the fields the public face shows
-// (title, description, instructor username, brand) and nothing else: no lesson list, no media
-// URL, no price, so "the closed course can't leak through the open page" is checkable by reading
-// one small file. tests/isolation/vetting.test.ts asserts that.
+// (title, description, instructor username, brand, and the quiz-integrity COUNTS, which are numbers
+// only) and nothing else: no lesson list, no question text, no media URL, no price, so "the closed
+// course can't leak through the open page" is checkable by reading one small file.
+// tests/isolation/vetting.test.ts asserts that.
 
 /** Card / list badge. Absolutely positioned by the caller when it sits over a card. */
 export function ComingSoonBadge({ className = "" }: { className?: string }) {
@@ -120,6 +123,7 @@ export function ComingSoonCourseFace({
   brand,
   defaultEmail,
   defaultName,
+  quizIntegrity = null,
 }: {
   courseId: string;
   title: string;
@@ -130,6 +134,8 @@ export function ComingSoonCourseFace({
   brand: string;
   defaultEmail?: string;
   defaultName?: string;
+  /** Counts from a scoped query that never returns question text; null renders nothing. */
+  quizIntegrity?: QuizIntegritySummary | null;
 }) {
   const summary = description ?? `${title}, a course on ${brand}.`;
   return (
@@ -168,6 +174,7 @@ export function ComingSoonCourseFace({
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{description}</p>
       ) : null}
       <CourseStandards courseSlug={courseSlug} />
+      <CourseQuizIntegrity summary={quizIntegrity} />
       <ComingSoonPanel
         brand={brand}
         courseId={courseId}

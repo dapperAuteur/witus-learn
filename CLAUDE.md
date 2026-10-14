@@ -145,6 +145,7 @@ All three length guards are **ratchets** like the standards one: pre-existing fi
 `GRANDFATHERED` with their measured score and may not get *worse*; any file not on that list fails.
 When you fix a file, delete its line. Never add a line to make new content pass. The sweep's method,
 tools and order are in `plans/bugs/2026-10-07-shortest-option-tell.md`.
+The length measures live in `src/lib/quiz-integrity.ts`; the three check scripts and the course-page quiz panel all import them, so a change to a measure changes all three at once.
 
 **When fixing either, edit option TEXT in place.** Never reorder options or move `correctIndex`
 (stored attempts keep the chosen index, so a reorder rewrites what past learners answered on the

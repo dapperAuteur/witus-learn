@@ -792,6 +792,11 @@ pnpm check:quiz-balance    # no bank of 8+ questions parks over 60% of its corre
                            #   bank). The fix is always the flag, never reordering options.
 pnpm check:longest-option  # ratchet. No bank is beatable by always clicking the LONGEST option;
                            #   `shuffleOptions` does not help, because length travels with the text.
+pnpm check:shortest-option # ratchet. The mirror image: no bank is beatable by clicking the SHORTEST.
+pnpm check:length-balance  # ratchet. No length POSITION (shortest, 2nd shortest, 2nd longest,
+                           #   longest) beats chance by more than 15 points. All three length guards
+                           #   import their measure from src/lib/quiz-integrity.ts, as does the
+                           #   course-page quiz panel, so a change to a measure changes all of them.
 pnpm check:recall          # recall cards quiz the PREVIOUS lesson, never the one they sit on.
 pnpm check:reveals         # ratchet. Every `:::reveal` card is well formed, so none rots into
                            #   prose that silently never grades.
@@ -1236,6 +1241,45 @@ broken page. The graph logic is pure and DB-free in
 [src/lib/course-graph.ts](src/lib/course-graph.ts) (unit-tested in `tests/course-graph.test.ts`);
 reads go through `ScopedDb.listPrerequisiteEdges()`, which scopes **both** ends of every
 prerequisite to the tenant. No migration.
+
+## Quiz integrity panel
+
+Every course page with a quiz carries a collapsed card under its standards block, **"How this
+course's quizzes are built"**, that shows a visitor the facts the quiz-integrity rule enforces in
+lint, one sentence per measure:
+
+- **Shuffle**: how many quizzes reshuffle their answer options on every attempt (`shuffleOptions ??
+  true`, exactly as `toSafeQuiz` serves it, so only an explicit `shuffleOptions: false` counts against).
+- **Length balance**: how many quizzes of 8 or more questions pass every length measure (the
+  longest, shortest and full-balance guards), so the right answer cannot be picked out by length.
+  Left out entirely when no quiz is that big, rather than shown as "0 of 0".
+- **Linked to a lesson**: how many questions carry a `sourceLessonSlug` naming a published lesson
+  in the same course, so the review link lands.
+- **Explained**: how many questions carry an explanation shown after the learner answers.
+
+There is deliberately no "the explanation cites the lesson" measure: that is a judgment call, and the
+quiz-integrity rule keeps judgment out of deterministic checks. A course with no quiz renders nothing.
+
+**Computed on read, never stored**, so no badge goes stale and there is no migration. The full course
+page counts from the lessons it already loaded (published lessons only). The **Coming-soon** face of an
+unvetted course cannot be handed a lesson, so it calls `ScopedDb.courseQuizIntegrity(courseId)`, where
+Postgres unpacks `quiz_content` with `jsonb_array_elements` and returns only option **lengths**, the
+correct index, whether an explanation exists and the source slug; the face receives the counts object
+and no question text ever leaves the database.
+
+**`/admin/quiz-integrity`** (owner only, in the admin sidebar) lists every course in the school, worst
+first by the share of measured quizzes passing length balance, with a school-wide pass share on top that
+doubles as the length-balance campaign's progress bar. Its figures come from the database (the quiz
+content as last seeded), while the lint guards read the authored source and skip any question with a
+computed option, and SQL counts characters slightly differently from JavaScript, so a figure there can
+differ slightly from lint. The page says so; the lint figures are the ones that gate a commit.
+
+The measures live once, in [src/lib/quiz-integrity.ts](src/lib/quiz-integrity.ts): the constants and
+per-question strategy values that `check-longest-option.ts`, `check-shortest-option.ts` and
+`check-length-balance.ts` import, plus `measureBank` and `courseQuizIntegrity` for the panel. Pinned by
+`tests/quiz-integrity.test.ts` (equal lengths score chance, a visibly longest correct option scores 1.0,
+a k-way tie scores 1/k, true/false limits of 65% and 75%, banks under 8 questions unmeasured) and
+`tests/isolation/quiz-integrity.db.test.ts` (tenant-scoped, counts only; skipped offline).
 
 ## Teachers Pay Teachers packets (`/admin/tpt-plan`)
 
