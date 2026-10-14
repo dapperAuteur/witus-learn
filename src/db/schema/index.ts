@@ -25,6 +25,7 @@ export * from "./cross-links";
 export * from "./bundles";
 export * from "./promotions";
 export * from "./auditors";
+export * from "./lesson-reviews";
 export * from "./library";
 export * from "./media-assets";
 export * from "./notes";
