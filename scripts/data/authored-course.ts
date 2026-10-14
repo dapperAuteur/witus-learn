@@ -5,6 +5,7 @@
 
 import type { QuizContent } from "../../src/lib/quiz";
 import type { ExerciseContent } from "../../src/lib/exercise";
+import type { ReviewNeed } from "../../src/lib/lesson-review";
 
 export interface AuthoredLesson {
   slug: string;
@@ -61,6 +62,24 @@ export interface AuthoredLesson {
    * A tour URL is authoritative external data: read it from Wanderlearn, never guess it.
    */
   contentUrl?: string;
+  /**
+   * Who must act before this lesson is released (reviewer sign-off, plans/93 section 1).
+   *
+   * Normally LEAVE THIS UNSET and write the need as the body's first line instead:
+   *
+   *   > **Before release:** needs a qualified reviewer (QR): a large-animal veterinarian.
+   *
+   * The seeder parses every such line (`parseReleaseMarkers`, src/lib/lesson-review.ts) into
+   * `lessons.review_needs` and strips it from the stored text; the lesson page draws it back as a
+   * box that begins "Before release". The recognised wordings are "a qualified reviewer (QR)",
+   * "a practitioner", "a practitioner or BAM's demonstration" and "BAM's decision (brief question
+   * N)", and one line may carry two needs joined by "; and needs ...". A line in any other wording
+   * still holds the course: it is stored as a decision, which no verdict can clear.
+   *
+   * Set this only to override the parse; an empty list means "no needs" even if the body has
+   * marker lines.
+   */
+  reviewNeeds?: ReviewNeed[];
 }
 
 export interface AuthoredCourse {
