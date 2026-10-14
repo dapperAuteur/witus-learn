@@ -1691,6 +1691,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   (self-attest + 2 endorsements) is **surfaced** on My Field Log (a 🎖 group + per-card badge). The
   fuller **gated course-family credential** (core+medium+subject) stays backlog, building on this signal.
   Spec: \`plans/future/14-field-kit.md\`, rubric: \`…/16\`.
+- ✅ **Field Log site tours** (\`feat/field-log-site-tour\`): legs can finally be **ticked visited** (the flag existed
+  since migration 0025 with no way to set it): a checkbox per leg, queued offline and replayed, the leg's **notes** with
+  lesson links, a **Directions** link, a visited count with a jump to the next stop, and \`PATCH\` for one leg (404
+  outside its project). New **\`site-tour\`** template; checklists show template labels instead of prettified ids.
+  \`pnpm field-log:import\` loads a prepared route (gitignored JSON only) as one project; first use, BAM's October
+  2026 road trip in three versions. No migration.
 - ✅ **Robust error UX** (\`feat/field-log-ui\`): route error boundaries now **route the user back into
   the app** (Home / My Field Log) AND **auto-report to an admin** (reusing the \`/api/report\` →
   problem_reports + WitUS Inbox pipeline) with a reference id. The Field Log client surfaces clear

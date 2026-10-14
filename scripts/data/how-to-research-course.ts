@@ -148,9 +148,9 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
             prompt: "What does the lesson call five results that all trace back to one wire story?",
             options: [
               "Weak corroboration, since a wire service is a reliable origin",
-              "A consensus, since five outlets chose to carry the same claim",
+              "A consensus among five outlets",
               "A verification chain, which is what following citations produces",
-              "One source wearing five coats",
+              "One source wearing five coats, not five sources",
             ],
             correctIndex: 3,
             explanation:
@@ -225,10 +225,10 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
           {
             prompt: "What does this course use instead of a list of virtues?",
             options: [
-              "A published code of ethics from a professional body",
+              "A professional code of ethics",
               "A checklist run over each piece of work before it is published",
               "A sequence of exercises graded by a reviewer at each stage",
-              "The Trusted Documentation Rubric",
+              "The Trusted Documentation Rubric of eight criteria",
             ],
             correctIndex: 3,
             explanation:
@@ -355,8 +355,8 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
           {
             prompt: "Why does the course teach a rubric rather than a philosophy?",
             options: [
-              "Because you can fail a rubric",
-              "Because a rubric is faster to teach than a philosophy is",
+              "Because you can fail a rubric, and learn from it",
+              "Because a rubric is faster to teach",
               "Because philosophies differ between fields and rubrics do not",
               "Because a rubric can be applied without understanding it",
             ],
@@ -1657,8 +1657,8 @@ Then get on with the work.
           {
             prompt: "What has to accompany anything that can change?",
             options: [
-              "The date you accessed it",
-              "A note that the value may since have been revised",
+              "The date you accessed it, in your source list",
+              "A revision warning",
               "An archived copy of the page as it appeared to you",
               "A second source confirming the same value independently",
             ],
@@ -1683,7 +1683,7 @@ Then get on with the work.
           {
             prompt: "What three parts does a correction that works have?",
             options: [
-              "An acknowledgment, an apology, and a commitment to do better",
+              "An apology, an explanation, a pledge",
               "The claim, the source that disproved it, and the reader who found it",
               "The original text, the revised text, and the reason for the change",
               "What was wrong, what is right, and when it changed",

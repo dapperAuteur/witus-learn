@@ -132,13 +132,20 @@ export async function addLeg(
   return leg;
 }
 
+/** Edit one leg. Null unless the leg belongs to `projectId` AND the user can reach that project, so a
+ *  leg id from another project (or another tenant) reads as not found rather than editable. */
 export async function updateLeg(
   tenantId: string,
   userId: string,
+  projectId: string,
   legId: string,
   patch: Partial<LegInput>,
 ): Promise<ProjectLeg | null> {
-  const [leg] = await db.select().from(projectLegs).where(eq(projectLegs.id, legId)).limit(1);
+  const [leg] = await db
+    .select()
+    .from(projectLegs)
+    .where(and(eq(projectLegs.id, legId), eq(projectLegs.projectId, projectId)))
+    .limit(1);
   if (!leg || !(await accessibleProject(tenantId, userId, leg.projectId))) return null;
   const [updated] = await db.update(projectLegs).set(patch).where(eq(projectLegs.id, legId)).returning();
   return updated ?? null;
