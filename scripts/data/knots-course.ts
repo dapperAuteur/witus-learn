@@ -13,6 +13,10 @@
 //     modern topic set (e.g. taut-line hitch, back splice); NONE of its text or
 //     figures are reproduced. It appears solely as a "Further reading" pointer.
 //
+//   • Lessons 27 (trucker's hitch) and 28 (coiling cable over-under), added 2026-10-14 at BAM's
+//     request so the broadcasting course's promises are true, rest on Tier B sources, linked and not
+//     reproduced (NetKnots; LEWITT). Verrill does not name either; no federal source was found.
+//
 // The importer upserts lessons by (courseId, slug); slugs are stable.
 
 import type { AuthoredCourse } from "./authored-course";
@@ -1973,10 +1977,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
       ],
       title: "26 · Broadcast & stage rigging basics (safety-flagged)",
       section: "8 · Practical applications",
-      body: `**What it is.** How the rope skills in this course show up in **broadcast, event, and stage work**: the "utility technician" world this course pairs with (see the Sports/Media Broadcasting course). **Safety flag: overhead rigging that can fall on people is life-safety work governed by rated hardware, load limits, and certification (e.g. ETCP-style standards). This lesson is educational orientation, not a rigging qualification.**
+      body: `**What it is.** How the rope skills in this course show up in **broadcast, event, and stage work**: the "utility technician" world this course pairs with (see the Sports/Media Broadcasting course). **Safety flag: overhead rigging that can fall on people is life-safety work governed by rated hardware, load limits, and certification (for example ETCP certification) and industry standards such as the ANSI E1 series. This lesson is educational orientation, not a rigging qualification.**
 
 **Where rope work fits, day to day.**
-- **Dressing and securing cable.** A utility tech runs camera and audio cable, then secures and tidies runs so nobody trips and nothing pulls loose. Clean **hitches** (clove hitch, two half-hitches) and neat **coiling** (Lesson 3) are the daily craft, including the broadcast habit of coiling cable "over-under" so it lays flat and pays out clean.
+- **Dressing and securing cable.** A utility tech runs camera and audio cable, then secures and tidies runs so nobody trips and nothing pulls loose. Clean **hitches** (clove hitch, two half-hitches) and neat **coiling** are the daily craft. Lesson 3 teaches coiling rope; for cable, broadcast crews coil "over-under" so it lays flat and pays out clean, which lesson 28 teaches step by step.
 - **Securing gear on carts and stands.** Tying down equipment with **round turn + two half-hitches** and **adjustable taut-line** tension (Lessons 12, 14, 24) keeps gear safe as it's moved.
 - **Temporary tie-offs and guys.** Steadying a stand or a light with a guy line uses the same hitches, but **anything overhead or over people is rated rigging**, not a rope-and-knot improvisation.
 - **Knowing your limits.** The single most important professional skill here is knowing which tasks are "utility rope work" (fine to do) versus "overhead rigging / flying loads" (defer to certified riggers, rated slings, shackles, and load calcs).
@@ -1992,6 +1996,62 @@ export const KNOTS_COURSE: AuthoredCourse = {
 - *Further reading (copyrighted; not reproduced):* Pawson, D. (2012). *Knots: The complete visual guide.* DK.`,
     },
 
+    {
+      slug: "truckers-hitch",
+      recallContent: [
+        {
+          prompt: "What does lesson 26 say about overhead rigging that can fall on people?",
+          answer:
+            "It is life-safety work governed by rated hardware, load limits and certification, and the lesson is orientation, not a rigging qualification.",
+        },
+      ],
+      title: "27 · The trucker's hitch",
+      section: "8 · Practical applications",
+      body: `**What it is.** A combination of knots that lets you pull a line very tight and lock it there. NetKnots puts its use plainly: "Use the Trucker's Hitch to cinch down a load." A loop tied partway along the line works as a simple pulley, so you get extra pull before you tie off. Once the line is at the tension you want, "the knot is secured with a couple half hitches around one or both lines" (NetKnots, n.d.). Lesson 24 mentions a "trucker's-hitch-style purchase"; this is that knot.
+
+**How to tie it, step by step** (following NetKnots, n.d.):
+1. Tie one end of the rope to a fixed point, for example with a round turn and two half-hitches (lesson 12).
+2. About midway along the rope, tie a slipped half hitch to make a loop in the line. Form the loop from the slack part of the rope: NetKnots warns that otherwise "it will tighten down on itself under pressure."
+3. Take the free end around a second fixed point opposite the first, and feed it through the loop.
+4. Using the loop as a pulley, pull the free end down as tight as you need.
+5. Lock it with two half-hitches around one or both lines (lesson 12).
+
+**When to use it.** Tensioning a line between two fixed points: tying down a load, pulling a cable run or a tarp line tight, securing something to a roof rack. The companion broadcasting course names it as the knot for tensioning a run.
+
+**When NOT to.** Never for anything that holds a person, never for overhead rigging, and not where failure could hurt someone. NetKnots itself says: "Where failure could cause property damage, injury, or death, seek professional instruction prior to use." Where you want a line you can keep adjusting, the taut-line hitch (lesson 14) is the simpler choice.
+
+**Common mistakes.** Forming the loop from the loaded part, so it jams; letting go of the free end before the half hitches are on, so the tension is lost; tying the loop so close to the second anchor that there is no room left to pull.
+
+## Sources
+- NetKnots. (n.d.). *Truckers hitch: How to tie a trucker's hitch*. https://netknots.com/rope_knots/truckers-hitch (Tier B, linked, not reproduced: the description, steps 1 to 3 and the safety note)`,
+    },
+    {
+      slug: "coiling-cable-over-under",
+      recallContent: [
+        {
+          prompt: "In a trucker's hitch, which part of the rope forms the loop, and why?",
+          answer: "The slack part. A loop formed from the loaded part tightens down on itself under pressure.",
+        },
+      ],
+      title: "28 · Coiling cable over-under",
+      section: "8 · Practical applications",
+      body: `**What it is.** A way to coil microphone, audio, video and power cable so it pays out straight. LEWITT's guide gives the reason: "If you don't properly roll your cable, you will coil the cable into a spiral, so when you pull it out straight, you will end up with a twisted mess." Over-under "alternates the way the cable turns with each loop, so there is less twisting stress on it, and it will pull out straight and relaxed every time" (Tobias, 2023).
+
+**How it differs from coiling rope.** Lesson 3 feeds the same slight twist into every loop of a laid rope. Over-under does the opposite: each loop turns the other way from the one before, so twist never builds up along the cable.
+
+**How to do it, step by step** (following Tobias, 2023):
+1. Hold the cable near one end, with the cable running away from you.
+2. With your other hand, draw back a length of cable and form a loop, your thumb pointing toward the connector.
+3. Form the next loop the other way: draw back the cable again with your thumb pointing the opposite way, so the loop turns in.
+4. Repeat, alternating, until the whole cable is coiled.
+
+**When to use it.** Every cable on a set, a stage or a broadcast crew: it is the coil the next person can pay out without a fight.
+
+**Common mistakes.** Coiling every loop the same way, which builds the spiral the method exists to prevent; leaving a cable coiled wrong for a long time, after which, the guide notes, "the rubber will be bent"; setting a coiled cable down on a hot surface, which the guide warns "might damage the cable."
+
+## Sources
+- Tobias, T. K. (2023, July 10). *How to roll your cable*. LEWITT. https://www.lewitt-audio.com/blog/how-to-roll-your-cable (Tier B, linked, not reproduced: the reason for over-under, the three steps and the two cautions)`,
+    },
     {
       slug: "quiz-practical-applications",
       title: "Section 8 quiz · Practical applications",
@@ -2155,8 +2215,64 @@ export const KNOTS_COURSE: AuthoredCourse = {
             ],
             correctIndex: 1,
             explanation:
-              "The over-under habit is the broadcast version of the coiling lesson: cable that lays flat and pays out clean, instead of a sloppy coil that tangles or trips someone.",
+              "Over-under, taught in lesson 28, is different from the rope coil in lesson 3: cable that lays flat and pays out clean, instead of a sloppy coil that tangles or trips someone.",
             sourceLessonSlug: "broadcast-stage-rigging-basics",
+          },
+          {
+            prompt: "What does the loop tied partway along the line do in a trucker's hitch?",
+            options: ["It acts as a pulley for extra pull", "It marks where the load should sit", "It shortens the rope for storage", "It holds the rope to the anchor"],
+            correctIndex: 0,
+            explanation: "The loop works as a pulley: the free end is pulled down through it to tension the line before it is locked off.",
+            sourceLessonSlug: "truckers-hitch",
+          },
+          {
+            prompt: "Which part of the rope should form the loop in a trucker's hitch?",
+            options: ["The slack part, so it will not jam", "The loaded part, so it grips hard", "Either part; the knot works both ways", "Only the very end of the rope"],
+            correctIndex: 0,
+            explanation: "NetKnots warns that a loop formed the wrong way 'will tighten down on itself under pressure.'",
+            sourceLessonSlug: "truckers-hitch",
+          },
+          {
+            prompt: "How is a trucker's hitch locked off once it is tight?",
+            options: ["With two half-hitches", "With a bowline at the anchor", "With tape over the loop", "With a square knot"],
+            correctIndex: 0,
+            explanation: "It is secured with a couple of half hitches around one or both lines (lesson 12 teaches them).",
+            sourceLessonSlug: "truckers-hitch",
+          },
+          {
+            prompt: "What does NetKnots say to do where a knot's failure could cause injury or death?",
+            options: ["Get professional instruction first", "Add a third half hitch for extra safety", "Use a thicker rope than usual", "Tie the hitch twice as tight"],
+            correctIndex: 0,
+            explanation: "'Where failure could cause property damage, injury, or death, seek professional instruction prior to use.'",
+            sourceLessonSlug: "truckers-hitch",
+          },
+          {
+            prompt: "Why does over-under coiling help a cable?",
+            options: ["Alternating loops stop twist building up", "It packs more cable into a smaller bag", "It keeps the connectors clean and dry", "It lets the cable carry a stronger signal"],
+            correctIndex: 0,
+            explanation: "Over-under alternates the way the cable turns with each loop, so there is less twisting stress and it pulls out straight.",
+            sourceLessonSlug: "coiling-cable-over-under",
+          },
+          {
+            prompt: "In the over-under method, what changes from one loop to the next?",
+            options: ["The direction your thumb points", "The hand that holds the coiled cable", "The length you draw back each time", "The end you start from"],
+            correctIndex: 0,
+            explanation: "Each new loop is drawn back with the thumb pointing the opposite way, so the loop turns the other way.",
+            sourceLessonSlug: "coiling-cable-over-under",
+          },
+          {
+            prompt: "How does over-under coiling differ from the rope coil in lesson 3?",
+            options: ["Its loops alternate direction", "It uses no loops at all", "It is only for braided rope", "It needs a cable tie per loop"],
+            correctIndex: 0,
+            explanation: "Lesson 3 gives every loop the same twist; over-under turns each loop the opposite way from the last.",
+            sourceLessonSlug: "coiling-cable-over-under",
+          },
+          {
+            prompt: "What does the LEWITT guide say can happen to a cable coiled wrong for a long time?",
+            options: ["Its rubber jacket stays bent", "Its connectors work loose", "It loses its signal shielding", "It shrinks in length"],
+            correctIndex: 0,
+            explanation: "The guide notes that after long wrong coiling 'the rubber will be bent.'",
+            sourceLessonSlug: "coiling-cable-over-under",
           },
         ],
       },
@@ -2165,7 +2281,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
     // ── Exercise ───────────────────────────────────────────────────────────
     {
       slug: "knots-exercise",
-      title: "27 · Practice: name the knot",
+      title: "29 · Practice: name the knot",
       section: "Practice & assessment",
       body: "Fill-in practice on the core vocabulary and knot choices. Type the term the description points to. Answers are checked forgivingly (case and small spelling differences count as close).",
       exercise: {
@@ -2227,7 +2343,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
     // ── Quiz ───────────────────────────────────────────────────────────────
     {
       slug: "knots-final-quiz",
-      title: "28 · Final quiz",
+      title: "30 · Final quiz",
       section: "Practice & assessment",
       body: "A short graded quiz covering the whole course. Passing score is 70%. Each answer links back to the lesson that teaches it.",
       quiz: {
