@@ -8,8 +8,11 @@ import {
   extremeLimit,
   longestStrategyValue,
   measureBank,
+  quizIntegrityFromLessons,
+  quizIntegrityLines,
   shortestStrategyValue,
   strategyValue,
+  type CourseQuizIntegrity,
   type IntegrityQuestion,
 } from "@/lib/quiz-integrity";
 
@@ -210,6 +213,94 @@ describe("courseQuizIntegrity", () => {
     expect(courseQuizIntegrity([{ questions: times(7, () => q([5, 5], 0)) }], [])?.balance).toBeNull();
     const r = courseQuizIntegrity([{ questions: fair() }, { questions: tell() }, { questions: times(3, () => q([5, 5], 0)) }], []);
     expect(r).toMatchObject({ quizzes: 3, questions: 19, balance: { measured: 2, passing: 1 } });
+  });
+});
+
+describe("quizIntegrityFromLessons (the course page, from the lessons it already loaded)", () => {
+  const lesson = (over: Partial<{ lessonType: string; isPublished: boolean; slug: string | null; quizContent: unknown }>) => ({
+    lessonType: "text",
+    isPublished: true,
+    slug: null,
+    quizContent: null,
+    ...over,
+  });
+
+  it("counts published quiz lessons only, and ties a question only to a published lesson", () => {
+    const r = quizIntegrityFromLessons([
+      lesson({ slug: "intro" }),
+      lesson({ slug: "draft", isPublished: false }),
+      lesson({
+        lessonType: "quiz",
+        slug: "check",
+        quizContent: {
+          questions: [q([5, 5], 0, { sourceLessonSlug: "intro" }), q([5, 5], 0, { sourceLessonSlug: "draft" })],
+        },
+      }),
+      lesson({ lessonType: "quiz", isPublished: false, quizContent: { questions: [q([5, 5], 0)] } }),
+      // Quiz content on a non-quiz lesson is never served, so it is not counted.
+      lesson({ lessonType: "text", quizContent: { questions: [q([5, 5], 0)] } }),
+    ]);
+    expect(r).toMatchObject({ quizzes: 1, questions: 2, tied: 1 });
+  });
+
+  it("is null for a course with no quiz lesson, or whose quiz content is malformed", () => {
+    expect(quizIntegrityFromLessons([lesson({ slug: "intro" })])).toBeNull();
+    expect(quizIntegrityFromLessons([lesson({ lessonType: "quiz", quizContent: "not a quiz" })])).toBeNull();
+    expect(quizIntegrityFromLessons([lesson({ lessonType: "quiz", quizContent: { questions: ["a string"] } })])).toBeNull();
+  });
+});
+
+describe("quizIntegrityLines (the panel's sentences)", () => {
+  const base: CourseQuizIntegrity = { quizzes: 4, questions: 40, shuffled: 4, balance: { measured: 3, passing: 2 }, tied: 40, explained: 31 };
+
+  it("says All when every one counts, and N of M otherwise", () => {
+    const lines = quizIntegrityLines(base);
+    expect(lines[0]).toMatch(/^All 4 quizzes reshuffle/);
+    expect(lines[1]).toMatch(/^2 of 3 quizzes long enough to measure \(8 or more questions\) pass/);
+    expect(lines[1]).toContain("One smaller quiz is too short to measure.");
+    expect(lines[2]).toMatch(/^All 40 questions link back/);
+    expect(lines[3]).toMatch(/^31 of 40 questions explain/);
+  });
+
+  it("leaves out length balance when no quiz is big enough, rather than saying 0 of 0", () => {
+    const lines = quizIntegrityLines({ ...base, balance: null });
+    expect(lines).toHaveLength(3);
+    expect(lines.join(" ")).not.toContain("0 of 0");
+    expect(lines.join(" ")).not.toContain("length check");
+  });
+
+  it("speaks of a single quiz in the singular, and admits a fixed order or a failed check", () => {
+    const lines = quizIntegrityLines({ quizzes: 1, questions: 12, shuffled: 0, balance: { measured: 1, passing: 0 }, tied: 0, explained: 12 });
+    expect(lines[0]).toBe("The answer options keep a fixed order on every attempt.");
+    expect(lines[1]).toMatch(/does not pass the length check yet/);
+    expect(lines[2]).toMatch(/^0 of 12 questions link back/);
+  });
+
+  it("writes no en or em dash", () => {
+    for (const line of quizIntegrityLines(base)) expect(line).not.toMatch(/[\u2013\u2014]/);
+  });
+});
+
+describe("the Coming-soon path returns counts, never question text", () => {
+  const read = (p: string) => readFileSync(fileURLToPath(new URL(`../${p}`, import.meta.url)), "utf8");
+  const query = read("src/db/queries/quiz-integrity.ts");
+
+  it("filters on the tenant in both queries", () => {
+    expect(query).toContain("where l.tenant_id = ${tenantId}");
+    expect(query).toContain("eq(lessons.tenantId, tenantId)");
+  });
+
+  it("selects option lengths, not option text, and never the prompt", () => {
+    expect(query).toContain("char_length(regexp_replace(o.value");
+    expect(query).not.toContain("'prompt'");
+    expect(query).not.toContain("'imageUrl'");
+    expect(query).not.toMatch(/select\s+l\.quiz_content\b/);
+  });
+
+  it("hands the Coming-soon face a summary object, not lessons or quiz content", () => {
+    const page = read("src/app/(tenant)/[username]/[courseSlug]/page.tsx");
+    expect(page).toContain("courseQuizIntegrity(course.id)");
+    expect(page).toContain("quizIntegrity={quizIntegrity}");
   });
 });
 

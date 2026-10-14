@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
+import { getScopedDb } from "@/db/scoped";
 import { isWitusBrandedHost } from "@/lib/witus-host";
 import { trackedHref } from "@/lib/tracked-link";
 import { ogImageUrl } from "@/lib/og";
@@ -42,6 +43,7 @@ import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { brandName } from "@/lib/branding";
 import { CourseStandards } from "@/components/course-standards";
+import { CourseQuizIntegrity } from "@/components/course-quiz-integrity";
 import { CourseSearch } from "@/components/course-search";
 import { CourseNotesPanel } from "@/components/course-notes-panel";
 import { ComingSoonCourseFace } from "@/components/coming-soon-course";
@@ -53,6 +55,7 @@ import { isPlatformOwner } from "@/lib/session";
 import { VetCourseCta } from "@/components/vet-course-cta";
 import { displayTourTitle } from "@/lib/field-log-tour";
 import { liveToursForCourse } from "@/lib/lesson-tours";
+import { quizIntegrityFromLessons } from "@/lib/quiz-integrity";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -94,6 +97,9 @@ export default async function CourseBySlugPage({ params }: Params) {
   // already does (title + description), and an age wall in front of it would make a public page
   // unindexable for no protective gain. Every actual lesson stays behind both gates.
   if (view.isComingSoon) {
+    // Counts only, from a scoped query that returns option LENGTHS and never question text: the face
+    // is never handed a lesson (tests/isolation/vetting.test.ts).
+    const quizIntegrity = await (await getScopedDb()).courseQuizIntegrity(course.id);
     return (
       <ComingSoonCourseFace
         courseId={course.id}
@@ -104,6 +110,7 @@ export default async function CourseBySlugPage({ params }: Params) {
         brand={brandName(view.tenant)}
         defaultEmail={view.session?.user.email}
         defaultName={view.session?.user.name ?? undefined}
+        quizIntegrity={quizIntegrity}
       />
     );
   }
@@ -402,6 +409,8 @@ export default async function CourseBySlugPage({ params }: Params) {
       {ownerNeedsToVet ? <VetCourseCta courseId={course.id} courseTitle={course.title} /> : null}
 
       <CourseStandards courseSlug={courseSlug} />
+
+      <CourseQuizIntegrity summary={quizIntegrityFromLessons(lessons)} />
 
       {courseBundles.length > 0 ? (
         <aside

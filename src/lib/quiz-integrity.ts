@@ -222,10 +222,17 @@ export function courseQuizIntegrity(
   const slugs = new Set<string>();
   for (const s of lessonSlugs) if (s) slugs.add(s);
 
-  const banks = quizzes.filter(
-    (q): q is IntegrityQuiz & { questions: readonly IntegrityQuestion[] } =>
-      Boolean(q) && Array.isArray(q?.questions) && q.questions.length > 0,
-  );
+  // A bank counts when it holds at least one question object; anything else in the array is not a
+  // question a learner could be served (the SQL path filters the same way).
+  const banks = quizzes
+    .filter((quiz): quiz is IntegrityQuiz => Boolean(quiz) && typeof quiz === "object")
+    .map((quiz) => ({
+      shuffleOptions: quiz.shuffleOptions,
+      questions: (Array.isArray(quiz.questions) ? quiz.questions : []).filter(
+        (q): q is IntegrityQuestion => Boolean(q) && typeof q === "object",
+      ),
+    }))
+    .filter((bank) => bank.questions.length > 0);
   if (banks.length === 0) return null;
 
   let questions = 0;
@@ -242,7 +249,6 @@ export function courseQuizIntegrity(
       if (m.pass) passing += 1;
     }
     for (const q of bank.questions) {
-      if (!q || typeof q !== "object") continue;
       questions += 1;
       if (typeof q.sourceLessonSlug === "string" && slugs.has(q.sourceLessonSlug)) tied += 1;
       if (q.hasExplanation === true || hasText(q.explanation)) explained += 1;
@@ -257,4 +263,67 @@ export function courseQuizIntegrity(
     tied,
     explained,
   };
+}
+
+/** The lesson fields the course page already loads, enough to summarize its quizzes. */
+export interface IntegrityLesson {
+  lessonType: string;
+  isPublished: boolean;
+  slug: string | null;
+  quizContent: unknown;
+}
+
+/**
+ * The course-page path: summarize from the lesson rows the page already holds, so the panel costs no
+ * extra query. Published lessons only, on both sides: a quiz a learner cannot open is not counted, and
+ * a review link pointing at an unpublished lesson does not count as tied, because it would not land.
+ * The SQL path behind the Coming-soon page and /admin/quiz-integrity applies the same two rules.
+ */
+export function quizIntegrityFromLessons(lessons: readonly IntegrityLesson[]): CourseQuizIntegrity | null {
+  const published = lessons.filter((l) => l.isPublished);
+  return courseQuizIntegrity(
+    published.filter((l) => l.lessonType === "quiz").map((l) => l.quizContent as IntegrityQuiz | null),
+    published.map((l) => l.slug),
+  );
+}
+
+// ── The panel's sentences ────────────────────────────────────────────────────────────────────────
+
+/** "All 12" when every one counts, else "9 of 12". */
+const share = (n: number, total: number) => (n === total && total > 1 ? `All ${total}` : `${n} of ${total}`);
+
+/**
+ * One plain sentence per measure, for the course-page panel. Kept here, next to the counts, so the
+ * wording is pinned by the same tests. A measure with nothing to measure gets no sentence: length
+ * balance is left out when no quiz has MIN_BANK questions, rather than shown as "0 of 0".
+ */
+export function quizIntegrityLines(s: CourseQuizIntegrity): string[] {
+  const lines: string[] = [];
+
+  lines.push(
+    s.quizzes === 1
+      ? s.shuffled === 1
+        ? "The answer options are reshuffled on every attempt, so a retake cannot be passed by remembering where the right answer sat."
+        : "The answer options keep a fixed order on every attempt."
+      : `${share(s.shuffled, s.quizzes)} quizzes reshuffle their answer options on every attempt, so a retake cannot be passed by remembering where the right answer sat.`,
+  );
+
+  if (s.balance) {
+    const { measured, passing } = s.balance;
+    const big = `${MIN_BANK} or more questions`;
+    let line =
+      measured === 1
+        ? passing === 1
+          ? `The quiz long enough to measure (${big}) passes the length check: the right answer is as often a long option as a short one, so it cannot be picked out by length alone.`
+          : `The quiz long enough to measure (${big}) does not pass the length check yet: its right answers lean long or short often enough to be picked out by length.`
+        : `${share(passing, measured)} quizzes long enough to measure (${big}) pass the length check: in those, the right answer is as often a long option as a short one, so it cannot be picked out by length alone.`;
+    const small = s.quizzes - measured;
+    if (small > 0) line += ` ${small === 1 ? "One smaller quiz is" : `${small} smaller quizzes are`} too short to measure.`;
+    lines.push(line);
+  }
+
+  const verb = (one: string, many: string) => (s.questions === 1 ? one : many);
+  lines.push(`${share(s.tied, s.questions)} ${verb("question links", "questions link")} back to the lesson that teaches the answer.`);
+  lines.push(`${share(s.explained, s.questions)} ${verb("question explains", "questions explain")} the answer once you have responded.`);
+  return lines;
 }
