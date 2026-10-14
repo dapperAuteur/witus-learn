@@ -88,9 +88,9 @@ export default async function TeachPage({
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-12">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <h1 className="text-2xl font-bold">Your courses</h1>
-        <div className="flex items-center gap-4 text-sm">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
           {owner ? (
             <Link href="/admin" className="font-medium underline" style={{ color: "var(--accent)" }}>
               Admin →
@@ -109,6 +109,10 @@ export default async function TeachPage({
           </Link>
           <Link href="/teach/feedback" className="underline" style={{ color: "var(--accent)" }}>
             Curriculum feedback →
+          </Link>
+          {/* Tours from the field (plans/93 section 2): every virtual-tour slot and what fills it. */}
+          <Link href="/teach/tours" className="inline-flex min-h-11 items-center underline" style={{ color: "var(--accent)" }}>
+            Tours →
           </Link>
         </div>
       </div>

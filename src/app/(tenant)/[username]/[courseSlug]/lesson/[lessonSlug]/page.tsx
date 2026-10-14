@@ -40,6 +40,8 @@ import { canRecordVerdict, hasReviewerCredential, type Verdict } from "@/lib/les
 import { summarizeLessonReview, type LessonReviewSummary } from "@/lib/lesson-review-summary";
 import { ReleaseNeedsBox } from "@/components/release-needs-box";
 import { LessonVerdictForm, type VerdictNeed } from "@/components/lesson-verdict-form";
+import { displayTourTitle, isEmptyTourSlot } from "@/lib/field-log-tour";
+import { liveToursForCourse } from "@/lib/lesson-tours";
 
 // Reported 2026-08-26: "pages don't maintain complete status when I revisit page to review."
 // The completion IS persisted (lesson_progress.completed_at was set in prod for the reported
@@ -58,13 +60,17 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const view = await loadCourseView(username, courseSlug);
   const lesson = view?.lessons.find((l) => l.slug === lessonSlug);
   if (!view || !lesson) return { title: "Lesson" };
-  const description = `${lesson.title}, part of ${view.course.title}.`;
-  const image = ogImageUrl({ title: lesson.title, subtitle: view.course.title });
+  // A live tour from the field drops the "(360 tour, forthcoming)" suffix (plans/93 section 2).
+  const title = isEmptyTourSlot(lesson, false)
+    ? displayTourTitle(lesson.title, (await liveToursForCourse(view.course.id, [lesson])).has(lesson.id))
+    : lesson.title;
+  const description = `${title}, part of ${view.course.title}.`;
+  const image = ogImageUrl({ title, subtitle: view.course.title });
   return {
-    title: lesson.title,
+    title,
     description,
-    openGraph: { type: "article", title: lesson.title, description, images: [image] },
-    twitter: { card: "summary_large_image", title: lesson.title, description, images: [image] },
+    openGraph: { type: "article", title, description, images: [image] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
   };
 }
 
@@ -99,6 +105,13 @@ export default async function LessonPage({ params }: Params) {
   // refused server-side; hiding the write controls here is so the page never offers a button that
   // can only fail, and says plainly that nothing is being kept.
   const canRecord = Boolean(view.session) && !view.isAuditor;
+
+  // Tours from the field (plans/93 section 2): the course's live field tours, each re-checked against
+  // its capture's consent and its leg's permission note on this read. A live tour shows in the player
+  // and drops the "(... tour, forthcoming)" suffix from its lesson's title, here and in the rail.
+  const tours = await liveToursForCourse(view.course.id, view.lessons);
+  const titleOf = (l: (typeof view.lessons)[number]) => displayTourTitle(l.title, tours.has(l.id));
+  const lessonTitle = titleOf(lesson);
 
   const idx = view.lessons.findIndex((l) => l.id === lesson.id);
   const prev = idx > 0 ? view.lessons[idx - 1] : null;
@@ -325,7 +338,7 @@ export default async function LessonPage({ params }: Params) {
                         <span className="h-1.5 w-1.5 rounded-full bg-neutral-300 dark:bg-neutral-700" />
                       )}
                     </span>
-                    <span className="truncate">{l.title}</span>
+                    <span className="truncate">{titleOf(l)}</span>
                   </Link>
                 </li>
               );
@@ -363,9 +376,9 @@ export default async function LessonPage({ params }: Params) {
         {/* Main lesson column. */}
         <main className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-3">
-            <h1 className="text-2xl font-bold tracking-tight">{lesson.title}</h1>
+            <h1 className="text-2xl font-bold tracking-tight">{lessonTitle}</h1>
             {view.course.isPublished && view.course.visibility !== "private" ? (
-              <ShareButton title={`${lesson.title}, ${view.course.title}`} label="Share" courseId={view.course.id} lessonId={lesson.id} />
+              <ShareButton title={`${lessonTitle}, ${view.course.title}`} label="Share" courseId={view.course.id} lessonId={lesson.id} />
             ) : null}
           </div>
 
@@ -401,6 +414,7 @@ export default async function LessonPage({ params }: Params) {
                   trackRecall={canRecord}
                   readOnly={view.isAuditor}
                   resumeAt={view.watchSeconds.get(lesson.id) ?? 0}
+                  tourEmbed={tours.get(lesson.id) ?? null}
                 />
               </AnnotationLayer>
             ) : (
@@ -410,6 +424,7 @@ export default async function LessonPage({ params }: Params) {
                 trackRecall={canRecord}
                 readOnly={view.isAuditor}
                 resumeAt={view.watchSeconds.get(lesson.id) ?? 0}
+                tourEmbed={tours.get(lesson.id) ?? null}
               />
             )}
             <SaveOfflineButton

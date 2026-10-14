@@ -9,6 +9,7 @@ import { LessonBody } from "./lesson-body";
 import { MediaPlayer } from "./media-player";
 import { MultiPartPlayer } from "./multi-part-player";
 import { isDirectMediaFile, parseChapters, parseTranscript, toEmbed } from "@/lib/media";
+import { displayTourBody, displayTourTitle, type TourMedia } from "@/lib/field-log-tour";
 
 // Renders a lesson by type. Text/audio/video (file or YouTube/Vimeo embed) are first-class
 // with chapter jump-markers + a synced transcript; slides/PDF embed; 360/tour/map have basic
@@ -18,12 +19,15 @@ import { isDirectMediaFile, parseChapters, parseTranscript, toEmbed } from "@/li
 // out, or when they've never played it) — direct-media audio/video picks up from there.
 // `trackRecall` marks the viewer as a signed-in learner so `:::reveal` check-yourself cards
 // offer their "I got it / Missed it" self-grade (signed out, the reveal still works untracked).
+// `tourEmbed` is a tour from the field (plans/93 section 2) for a virtual_tour lesson with no link
+// of its own, already re-checked by the page against its capture's consent and its leg's permission.
 export function LessonPlayer({
   lesson,
   resumeAt = 0,
   trackPlayback = false,
   trackRecall = false,
   readOnly = false,
+  tourEmbed,
 }: {
   lesson: Lesson;
   resumeAt?: number;
@@ -31,6 +35,7 @@ export function LessonPlayer({
   trackRecall?: boolean;
   /** Auditor view (plans/52 section 5): read everything, record nothing. */
   readOnly?: boolean;
+  tourEmbed?: { media: TourMedia; credit: string } | null;
 }) {
   // Only a signed-in learner has a position worth saving; signed out, the player is untracked.
   const track = trackPlayback ? { courseId: lesson.courseId, lessonId: lesson.id, resumeAt } : {};
@@ -168,20 +173,28 @@ export function LessonPlayer({
       // (plans/37 §1: the tour is a drop-in), and its body is the context that tells the learner
       // what to look for. Returning early on a missing url would hide that authored text and leave
       // the lesson looking empty rather than pending.
+      //
+      // A tour from the field fills the slot only when the lesson has no link of its own. Its credit
+      // renders as plain text under it, and the body's "this tour is forthcoming" paragraph is
+      // hidden, because it is no longer true.
       const embed = lesson.contentUrl ? toEmbed(lesson.contentUrl) : null;
+      const fieldTour = !embed && lesson.lessonType === "virtual_tour" ? tourEmbed ?? null : null;
+      const body = displayTourBody(lesson.textContent, fieldTour !== null);
       return (
         <div>
           {embed ? (
             <MediaEmbed src={embed.src} title={lesson.title} />
+          ) : fieldTour ? (
+            <FieldTour media={fieldTour.media} credit={fieldTour.credit} title={displayTourTitle(lesson.title, true)} />
           ) : (
             <p className="text-neutral-600">
               This lesson type ({lesson.lessonType}) has no media yet.
             </p>
           )}
-          {lesson.textContent ? (
+          {body ? (
             <div className="mt-4">
               <LessonBody
-                text={lesson.textContent}
+                text={body}
                 courseId={lesson.courseId}
                 lessonId={lesson.id}
                 trackRecall={trackRecall}
@@ -205,6 +218,29 @@ function MediaEmbed({ src, title }: { src: string; title: string }) {
       allowFullScreen
       className="aspect-video w-full rounded-lg border border-neutral-200 dark:border-neutral-800"
     />
+  );
+}
+
+// A tour from the field: the capture's own link (never a hosted copy), with its credit as plain text.
+function FieldTour({ media, credit, title }: { media: TourMedia; credit: string; title: string }) {
+  return (
+    <figure className="space-y-2">
+      {media.kind === "image" ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={media.src} alt={`Tour photo: ${title}`} className="w-full rounded-lg border border-neutral-200 dark:border-neutral-800" />
+      ) : media.kind === "video" ? (
+        <video
+          src={media.src}
+          controls
+          preload="metadata"
+          title={title}
+          className="aspect-video w-full rounded-lg border border-neutral-200 bg-black dark:border-neutral-800"
+        />
+      ) : (
+        <MediaEmbed src={media.src} title={title} />
+      )}
+      <figcaption className="text-sm text-neutral-600 dark:text-neutral-400">{credit}</figcaption>
+    </figure>
   );
 }
 
