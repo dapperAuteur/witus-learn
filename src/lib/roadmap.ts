@@ -5,6 +5,17 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Reviewer sign-off** (\`feat/reviewer-signoff\`, migration \`0067_serious_karen_page\`; after merge run
+  \`pnpm db:migrate:prod\` then \`pnpm seed:courses:prod\`). Plans/93 section 1. The "Before release" lines in
+  the four marked courses (rigging, sound, light, raising animals for yarn: 81 lines in 71 lessons, 83
+  needs) become \`lessons.review_needs\`, parsed by the seeder and drawn back on the lesson in a box that
+  still begins "Before release". An accepted reviewer whose name and credential the inviter set records
+  cleared, cleared with one correction, or not cleared; the verdict is pinned to a hash of the lesson's
+  text, so any edit (a typo included) resets it on read. The owner clears practitioner needs only, applies
+  a correction with "Applied as written", and releases the hold once every QR need is cleared and no
+  decision is left. New \`/audit/review\` for reviewers, a sign-off panel on \`/teach/<course>\`, and a QR
+  chip on \`/teach\`. No inbox: a correction is one-way content on a lesson, never a message. ❓ Open for BAM:
+  may a school's brand_admin release (owner only for now)?
 - 🔧 **Light on Set, CREW-03** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Eight
   sections, 27 lessons, 661 questions: what light does, hard and soft light from first principles, shaping
   light with what is already in the room (and the hacks the course refuses), natural light, key, fill and

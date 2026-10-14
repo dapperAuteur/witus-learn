@@ -173,3 +173,98 @@ export async function listAuditedCourseSlugs(
   }
   return [...new Set(out)];
 }
+
+// ── Reviewer sign-off (plans/93 section 1) ───────────────────────────────────
+
+/**
+ * Set how a reviewer is credited: name and credential, both set by the INVITER (the caller is gated
+ * by canManageCourseReviewers), so the credential on a badge is not only self-reported. Scoped by
+ * tenant AND course, so a grant id from another school or another course updates nothing. A blank
+ * value is stored as NULL, which means "not credited yet" and blocks recording a verdict.
+ */
+export async function setCourseAuditorCredit(
+  tenantId: string,
+  courseId: string,
+  auditorId: string,
+  credit: { reviewerName: string | null; reviewerCredential: string | null },
+): Promise<CourseAuditor | null> {
+  const [row] = await db
+    .update(courseAuditors)
+    .set({
+      reviewerName: credit.reviewerName?.trim() || null,
+      reviewerCredential: credit.reviewerCredential?.trim() || null,
+    })
+    .where(
+      and(
+        eq(courseAuditors.tenantId, tenantId),
+        eq(courseAuditors.courseId, courseId),
+        eq(courseAuditors.id, auditorId),
+      ),
+    )
+    .returning();
+  return row ?? null;
+}
+
+/**
+ * The viewer's own ACCEPTED grant on one course, or null. Same SQL narrowing and the same pure
+ * matcher as isCourseAuditor, but it returns the row, because recording a verdict needs the grant's
+ * id and its inviter-set credit. Deliberately does NOT look at vetting: a reviewer may still record
+ * a verdict on a course that was vetted after they were invited.
+ */
+export async function getViewerAuditorGrant(viewer: AuditorViewer): Promise<CourseAuditor | null> {
+  if (!viewer.userId && !viewer.email) return null;
+  const rows = await db
+    .select()
+    .from(courseAuditors)
+    .where(
+      and(
+        eq(courseAuditors.tenantId, viewer.tenantId),
+        eq(courseAuditors.courseId, viewer.courseId),
+        isNotNull(courseAuditors.acceptedAt),
+      ),
+    );
+  return rows.find((r) => isAcceptedAuditor([r], viewer)) ?? null;
+}
+
+export interface ViewerAuditGrant {
+  auditorId: string;
+  courseId: string;
+  courseSlug: string | null;
+  courseTitle: string;
+  instructorId: string;
+  reviewerName: string | null;
+  reviewerCredential: string | null;
+}
+
+/**
+ * Every ACCEPTED grant this viewer holds in this tenant, with the course it opens and how the
+ * viewer will be credited. Backs /audit/review, which lists exactly these courses and nothing else.
+ * Identity goes through the pure matcher, like listAuditedCourseSlugs.
+ */
+export async function listViewerAuditGrants(
+  tenantId: string,
+  viewer: { userId: string | null; email: string | null },
+): Promise<ViewerAuditGrant[]> {
+  if (!viewer.userId && !viewer.email) return [];
+  const rows = await db
+    .select({
+      auditor: courseAuditors,
+      courseSlug: courses.slug,
+      courseTitle: courses.title,
+      instructorId: courses.instructorId,
+    })
+    .from(courseAuditors)
+    .innerJoin(courses, and(eq(courses.id, courseAuditors.courseId), eq(courses.tenantId, tenantId)))
+    .where(and(eq(courseAuditors.tenantId, tenantId), isNotNull(courseAuditors.acceptedAt)));
+  return rows
+    .filter((r) => isAcceptedAuditor([r.auditor], { tenantId, courseId: r.auditor.courseId, ...viewer }))
+    .map((r) => ({
+      auditorId: r.auditor.id,
+      courseId: r.auditor.courseId,
+      courseSlug: r.courseSlug,
+      courseTitle: r.courseTitle,
+      instructorId: r.instructorId,
+      reviewerName: r.auditor.reviewerName,
+      reviewerCredential: r.auditor.reviewerCredential,
+    }));
+}

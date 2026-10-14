@@ -34,6 +34,12 @@ import { ShareButton } from "@/components/share-button";
 import { isDirectMediaFile } from "@/lib/media";
 import { brandName } from "@/lib/branding";
 import { ogImageUrl } from "@/lib/og";
+import { getScopedDb } from "@/db/scoped";
+import { isPlatformOwner } from "@/lib/session";
+import { canRecordVerdict, hasReviewerCredential, type Verdict } from "@/lib/lesson-review";
+import { summarizeLessonReview, type LessonReviewSummary } from "@/lib/lesson-review-summary";
+import { ReleaseNeedsBox } from "@/components/release-needs-box";
+import { LessonVerdictForm, type VerdictNeed } from "@/components/lesson-verdict-form";
 
 // Reported 2026-08-26: "pages don't maintain complete status when I revisit page to review."
 // The completion IS persisted (lesson_progress.completed_at was set in prod for the reported
@@ -196,6 +202,74 @@ export default async function LessonPage({ params }: Params) {
       .map((e) => ({ slug: e.slug, name: e.name }));
   }
 
+  // Reviewer sign-off (plans/93 section 1). The lesson's release needs (parsed from its "Before
+  // release" lines by the seeder) joined to the stored verdicts, with each verdict's state computed
+  // against the lesson AS IT STANDS, so an edit since the review shows as needing a fresh one.
+  // Read even for a lesson with no markers left, because a cleared badge outlives its marker.
+  //
+  // The verdict form goes to anyone holding an ACCEPTED review grant on this course, not only to
+  // `view.isAuditor` (which turns false once the course is vetted), and to the platform owner for
+  // P needs. The route re-checks all of it on save.
+  //
+  // Wrapped like the cross-links read above: an optional panel must not 500 a learner's lesson.
+  let reviewSummary: LessonReviewSummary | null = null;
+  let viewerIsOwner = false;
+  let verdictForm: {
+    needs: VerdictNeed[];
+    credit: { name: string; credential: string } | null;
+    blockedReason: string | null;
+  } | null = null;
+  if (access.open) {
+    try {
+      const sdb = await getScopedDb();
+      const summary = summarizeLessonReview(lesson, await sdb.listLessonReviews([view.course.id], lesson.id));
+      if (summary.rows.length > 0 || summary.decisions.length > 0) reviewSummary = summary;
+      const marked = summary.rows.filter((r) => r.stillMarked);
+      const hasPending = summary.rows.some((r) => r.state === "pending_correction");
+      if (view.session && (marked.length > 0 || (view.isEditor && hasPending))) {
+        viewerIsOwner = await isPlatformOwner(view.session.user.id);
+      }
+      if (view.session && marked.length > 0) {
+        const grant = viewerIsOwner
+          ? null
+          : await sdb.getViewerAuditorGrant({
+              courseId: view.course.id,
+              userId: view.session.user.id,
+              email: view.session.user.email ?? null,
+            });
+        if (grant || viewerIsOwner) {
+          const hasCredential = grant ? hasReviewerCredential(grant) : false;
+          const isInstructor = view.course.instructorId === view.session.user.id;
+          const needs: VerdictNeed[] = marked
+            .map((r) => ({
+              kind: r.kind,
+              whos: r.whos,
+              state: r.state,
+              current: r.review ? { verdict: r.review.verdict as Verdict, correction: r.review.correction } : null,
+              canRecord: canRecordVerdict({ isAuditor: Boolean(grant), hasCredential, isOwner: viewerIsOwner, isInstructor, kind: r.kind }),
+            }))
+            // The owner sees only what he may record (P); a reviewer sees every need, disabled until credited.
+            .filter((n) => !viewerIsOwner || n.canRecord);
+          if (needs.length > 0) {
+            verdictForm = {
+              needs,
+              credit:
+                grant && hasCredential
+                  ? { name: grant.reviewerName!.trim(), credential: grant.reviewerCredential!.trim() }
+                  : null,
+              blockedReason:
+                grant && !hasCredential
+                  ? "The person who invited you has not added your name and credential yet, so a verdict cannot be credited. Ask them to add it; the form opens as soon as they do."
+                  : null,
+            };
+          }
+        }
+      }
+    } catch (err) {
+      console.error("lesson-reviews: could not load this lesson's review state", err);
+    }
+  }
+
   return (
     <div>
       {/* Sticky progress header — course context + position always visible. Offsets by the
@@ -303,6 +377,14 @@ export default async function LessonPage({ params }: Params) {
                 really on instead of the first gap in the syllabus. Never a completion. Signed-out
                 learners simply don't render it — no ping, no error. */}
             {isOpenWhileUnvetted(view.course) ? <UnvettedDisclosure /> : null}
+            {reviewSummary ? (
+              <ReleaseNeedsBox
+                summary={reviewSummary}
+                courseId={view.course.id}
+                showCorrections={view.isEditor}
+                canApply={viewerIsOwner}
+              />
+            ) : null}
             {canRecord ? <LessonViewPing courseId={view.course.id} lessonId={lesson.id} /> : null}
             {/* Open with recall: quiz the PREVIOUS lesson before this one's content. */}
             {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 && canRecord ? (
@@ -337,11 +419,25 @@ export default async function LessonPage({ params }: Params) {
               next={nextOffline}
             />
             {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
+            {verdictForm ? (
+              <LessonVerdictForm
+                courseId={view.course.id}
+                lessonId={lesson.id}
+                needs={verdictForm.needs}
+                credit={verdictForm.credit}
+                blockedReason={verdictForm.blockedReason}
+              />
+            ) : null}
             <div className="mt-6">
               {view.isAuditor ? (
                 <p className="rounded-lg border border-sky-300 bg-sky-50 p-4 text-sm text-sky-900 dark:border-sky-800 dark:bg-sky-950/40 dark:text-sky-200">
                   You are reviewing this course. Nothing here is recorded: no progress, no quiz
-                  scores, no certificate. Send your notes to whoever invited you.
+                  scores, no certificate. Send your notes to whoever invited you. Lessons marked
+                  &ldquo;Before release&rdquo; take a verdict on the page;{" "}
+                  <Link href="/audit/review" className="underline">
+                    see every lesson you are reviewing
+                  </Link>
+                  .
                 </p>
               ) : view.session ? (
                 <MarkCompleteButton
