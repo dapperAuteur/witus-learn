@@ -493,7 +493,7 @@ Do the writing offline, then run the confirmation drill below, and finish with t
             prompt: "Anthropic's core guidance for choosing how complex to build is:",
             options: [
               "Always build a full agent for the maximum capability",
-              "Find the simplest solution, and add complexity only when needed",
+              "Find the simplest solution; add complexity only when needed",
               "Fine-tune the model first, and then simplify it later",
               "Add as many tools as you possibly can right up front",
             ],
@@ -571,8 +571,8 @@ Do the writing offline, then run the confirmation drill below, and finish with t
             prompt: "Why pin the model version and prompt as versioned config before you ship?",
             options: [
               "It makes the model's behavior fully deterministic",
-              "So you can re-run evals before adopting a provider's update",
-              "It lowers the per-token price you are charged",
+              "To re-run evals before you adopt a provider's update",
+              "It lowers the per-token price the provider charges you",
               "It removes any need to build a kill switch at all",
             ],
             correctIndex: 1,

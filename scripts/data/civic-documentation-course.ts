@@ -690,7 +690,7 @@ Recording the meeting is one thing. Recording two officials talking in the corri
           {
             prompt: "What practice does the Field Guide recommend about recording outside the meeting room?",
             options: [
-              "Do not record conversations outside the space where the meeting is happening",
+              "Do not record conversations outside the meeting space",
               "Record everything and delete anything private afterwards",
               "Record only if you announce yourself to those present first",
               "Record freely, since a public building has no privacy expectation",
@@ -742,7 +742,7 @@ Recording the meeting is one thing. Recording two officials talking in the corri
           {
             prompt: "Which habit does the course call the single most useful in the six steps?",
             options: [
-              "Recording audio and jotting timestamps for anything to double-check",
+              "Recording audio and timestamping anything worth rechecking",
               "Counting the attendees before the meeting is called to order",
               "Sitting in the front row to hear the officials clearly",
               "Writing the notes in full sentences during the meeting",
@@ -1104,7 +1104,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
           {
             prompt: "What is the one rule that makes live reporting different from note-taking?",
             options: [
-              "You cannot revise what has already been published, at least not invisibly",
+              "You cannot revise a published post, at least not invisibly",
               "You may only publish material that was formally voted on",
               "You must obtain the chair's permission before posting",
               "You are required to publish a correction within one hour",

@@ -507,8 +507,8 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
             prompt: "What does 'human-in-the-loop' mean, and when is it most required?",
             options: [
               "A human writes everything and the AI is never used",
-              "A person approves AI output before it ships to a customer",
-              "The AI supervises the human doing the work",
+              "A person approves AI output before a customer sees it",
+              "The AI supervises and approves the human's work",
               "It only ever applies to much bigger companies",
             ],
             correctIndex: 1,
@@ -547,8 +547,8 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
             options: [
               "Always answer confidently, even when you are unsure",
               "Make uncertainty visible and let customers correct it",
-              "Hide the fact that AI was involved at all",
-              "Remove every way of reaching an actual human",
+              "Hide the fact that AI was involved in the answer",
+              "Put up an AI-only wall with no way to reach a human",
             ],
             correctIndex: 1,
             explanation:
@@ -559,7 +559,7 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
             prompt: "What does the FTC say about claims that your product 'uses AI' or about what your AI can do?",
             options: [
               "You can say anything so long as it sounds impressive",
-              "AI claims must be truthful and substantiated, like any claim",
+              "AI claims must be truthful and substantiated",
               "Only the claims you make about price are regulated",
               "Claims do not matter at all for a small business",
             ],
@@ -572,9 +572,9 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
             prompt: "Can you copyright a logo you got from a single AI prompt, according to the U.S. Copyright Office?",
             options: [
               "Yes, anything AI makes for you is automatically yours",
-              "Purely AI-generated output is not protected; it needs a human",
+              "No, purely AI-generated output lacks human authorship",
               "Yes, so long as the prompt you wrote was detailed",
-              "Only if you actually paid to use that AI tool",
+              "Only if you paid for a subscription to that AI tool",
             ],
             correctIndex: 1,
             explanation:

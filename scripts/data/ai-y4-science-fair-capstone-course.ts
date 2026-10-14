@@ -532,7 +532,7 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
             prompt: "What is the scientific method, in plain words?",
             options: [
               "A way to make AI do your entire project for you",
-              "A careful, step-by-step way to find a trustworthy answer",
+              "A step-by-step way to find a trustworthy answer",
               "A rule saying science projects must use a robot",
               "A trick to always get the result that you hoped for",
             ],
@@ -650,7 +650,7 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
             prompt: "Why put your sources and limitations right on your science-fair poster?",
             options: [
               "To fill up the empty space on the board",
-              "Because showing sources and limits lets judges check it",
+              "So judges can check your work and trust it",
               "To hide your real results from the judges",
               "Because the rules say you must use big words",
             ],

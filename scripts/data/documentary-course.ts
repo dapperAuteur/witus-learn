@@ -454,7 +454,7 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
             options: [
               "Casting actors who resemble the real participants closely enough to be mistaken for them",
               "Signalling it clearly enough that no viewer mistakes it for actual footage",
-              "Restricting it strictly to events for which no photographic or archive footage survives",
+              "Restricting it to events that no surviving footage records",
               "Obtaining every surviving participant's written approval of the staged version before release",
             ],
             correctIndex: 1,
@@ -492,9 +492,9 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
             prompt: "Where does funding most commonly influence documentary?",
             options: [
               "In which films get made at all, rather than in their conclusions",
-              "In the choice of interview locations, technical crew and delivery format for the finished film",
-              "In demanding that the final cut reach a specific conclusion the commission named in advance",
-              "In requiring every participant to sign an additional release naming the funder by name",
+              "In the choice of interview locations, crew and delivery format",
+              "In demanding the final cut reach a conclusion the commission named",
+              "In requiring participants to sign a release naming the funder",
             ],
             correctIndex: 0,
             explanation:
