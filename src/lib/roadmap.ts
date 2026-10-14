@@ -5,6 +5,13 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Light on Set, CREW-03** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Eight
+  sections, 27 lessons, 661 questions: what light does, hard and soft light from first principles, shaping
+  light with what is already in the room (and the hacks the course refuses), natural light, key, fill and
+  back, color without a meter, the stage, studio and set, and the safety floor (hot lamps, cords, what the
+  rules forbid). From federal manuals (TM 11-401-2, DI0370), Fuchs (1929), Luckiesh, NIST, CPSC and OSHA.
+  Checked claim by claim (78 fixes) and question by question (56). Lessons needing a qualified reviewer
+  (electrical, fire) or a practitioner are marked; seven research checks filed. Held for a named reviewer.
 - 🔧 **Sound Craft, CREW-02** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Seven
   sections, 26 lessons, 583 questions: listening and the decibel, protecting your hearing (OSHA and NIOSH),
   field recording in nature (the Park Service protocol), recording in a theater and on a set, sounds made by
