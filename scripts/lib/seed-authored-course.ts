@@ -3,6 +3,7 @@ import type { NeonDatabase } from "drizzle-orm/neon-serverless";
 import * as schema from "../../src/db/schema";
 import type { AuthoredCourse } from "../data/authored-course";
 import { normalizeAdditionalCategories } from "../../src/lib/course-categories";
+import { parseReleaseMarkers } from "../../src/lib/lesson-review";
 
 // Reusable seeder for any authored course (Ed.L.D., cyber, FAA when it lands, more
 // languages). Upserts the course (refreshing title/description) and its lessons by
@@ -158,29 +159,38 @@ export async function seedAuthoredCourse(
     console.log(`  modules: ${moduleRows.length}`);
   }
 
-  const lessonRows = course.lessons.map((l, i) => ({
-    tenantId,
-    courseId: courseId as string,
-    moduleId: l.section ? moduleBySection.get(l.section) ?? null : null,
-    title: l.title,
-    slug: l.slug,
-    // An explicit `lessonType` wins: it is the only way to author a MEDIA lesson (audio, video,
-    // virtual_tour), whose payload is a `contentUrl` rather than its own content field, so it
-    // cannot be inferred. Otherwise infer from whichever content field is set, exactly as before,
-    // leaving every previously authored course unchanged.
-    lessonType:
-      l.lessonType ?? (l.quiz ? "quiz" : l.exercise ? "exercise" : l.mapContent ? "map" : "text"),
-    contentFormat: "markdown" as const,
-    contentUrl: l.contentUrl ?? null,
-    textContent: l.body ?? null,
-    quizContent: l.quiz ?? null,
-    exerciseContent: l.exercise ?? null,
-    mapContent: l.mapContent ?? null,
-    recallContent: l.recallContent ?? null,
-    sortOrder: i + 1,
-    isFreePreview: i < Math.max(1, opts.freePreviewCount ?? 1),
-    isPublished: true,
-  }));
+  const lessonRows = course.lessons.map((l, i) => {
+    // Reviewer sign-off (plans/93 section 1): the "> **Before release:**" lines become
+    // `review_needs` and leave the stored text, and the lesson page draws them back as a box that
+    // still begins "Before release". A body with no marker is returned unchanged. An explicit
+    // `reviewNeeds` on the lesson wins over the parse (an empty list means "none").
+    const parsed = parseReleaseMarkers(l.body);
+    const needs = l.reviewNeeds ?? parsed.needs;
+    return {
+      tenantId,
+      courseId: courseId as string,
+      moduleId: l.section ? moduleBySection.get(l.section) ?? null : null,
+      title: l.title,
+      slug: l.slug,
+      // An explicit `lessonType` wins: it is the only way to author a MEDIA lesson (audio, video,
+      // virtual_tour), whose payload is a `contentUrl` rather than its own content field, so it
+      // cannot be inferred. Otherwise infer from whichever content field is set, exactly as before,
+      // leaving every previously authored course unchanged.
+      lessonType:
+        l.lessonType ?? (l.quiz ? "quiz" : l.exercise ? "exercise" : l.mapContent ? "map" : "text"),
+      contentFormat: "markdown" as const,
+      contentUrl: l.contentUrl ?? null,
+      textContent: l.body == null ? null : parsed.body,
+      reviewNeeds: needs.length > 0 ? needs : null,
+      quizContent: l.quiz ?? null,
+      exerciseContent: l.exercise ?? null,
+      mapContent: l.mapContent ?? null,
+      recallContent: l.recallContent ?? null,
+      sortOrder: i + 1,
+      isFreePreview: i < Math.max(1, opts.freePreviewCount ?? 1),
+      isPublished: true,
+    };
+  });
   if (lessonRows.length) {
     await db
       .insert(schema.lessons)
@@ -195,6 +205,10 @@ export async function seedAuthoredCourse(
           exerciseContent: sql`excluded.exercise_content`,
           mapContent: sql`excluded.map_content`,
           recallContent: sql`excluded.recall_content`,
+          // Rewritten every seed, like the text it was parsed from: removing a marker from the
+          // course file removes the need. Verdicts live in lesson_reviews and are never touched
+          // here; a changed text resets them on read (src/lib/lesson-review.ts).
+          reviewNeeds: sql`excluded.review_needs`,
           sortOrder: sql`excluded.sort_order`,
           moduleId: sql`excluded.module_id`,
           isFreePreview: sql`excluded.is_free_preview`,

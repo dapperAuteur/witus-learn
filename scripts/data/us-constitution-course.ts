@@ -408,9 +408,9 @@ Together these show the design at work: a fixed framework, changed only by broad
           {
             prompt: "Does the Preamble itself grant the government any powers?",
             options: [
-              "Yes: it grants Congress its main powers",
+              "Yes: by naming the general welfare, it grants Congress its main powers",
               "No: it states purposes; the powers come from the Articles that follow",
-              "Yes: it grants the President war powers",
+              "Yes: by naming the common defense, it grants the President war powers",
               "Only during wartime",
             ],
             correctIndex: 1,
@@ -422,7 +422,7 @@ Together these show the design at work: a fixed framework, changed only by broad
             prompt: "Which article creates Congress, and how many chambers does Congress have?",
             options: [
               "Article II; one chamber",
-              "Article I; two chambers (Senate and House)",
+              "Article I; two chambers",
               "Article III; two chambers",
               "Article I; three chambers",
             ],

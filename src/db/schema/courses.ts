@@ -217,6 +217,12 @@ export const lessons = pgTable(
     // Active-recall prompts: [{ prompt, answer }]. Rendered as click-to-reveal cards with a
     // self-grade ("I got it" / "Missed it"), so learners test themselves in-lesson before the quiz.
     recallContent: jsonb("recall_content").$type<{ prompt: string; answer: string }[]>(),
+    // Reviewer sign-off (plans/93 section 1): who must act before this lesson is released, parsed by
+    // the seeder from the lesson's "> **Before release:**" lines (src/lib/lesson-review.ts), which
+    // are then stripped from text_content and drawn back by the lesson page. qr = a qualified
+    // reviewer, p = a practitioner or the owner's demonstration, decision = the owner's call. NULL
+    // = no marker. Rewritten on every seed, so removing a marker from the course file removes it.
+    reviewNeeds: jsonb("review_needs").$type<{ kind: "qr" | "p" | "decision"; who: string; question?: number }[]>(),
     exerciseContent: jsonb("exercise_content"),
     audioChapters: jsonb("audio_chapters"),
     // Multi-part media: when a recording is too long for the upload cap, it's captured and stored

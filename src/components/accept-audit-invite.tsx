@@ -80,16 +80,22 @@ export function AcceptAuditInvite({ token }: { token: string }) {
       </p>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Nothing you do is recorded: no progress, no quiz scores, no certificate. Send your notes to
-        whoever invited you.
+        whoever invited you. Lessons marked &ldquo;Before release&rdquo; also take your verdict, once
+        whoever invited you has added your name and credential.
       </p>
       {accepted.signedIn ? (
-        <Link
-          href={accepted.href}
-          className="mt-4 inline-flex min-h-11 items-center rounded-md px-5 py-2.5 font-medium text-white"
-          style={{ backgroundColor: "var(--accent)" }}
-        >
-          Open the course
-        </Link>
+        <div className="mt-4 flex flex-col items-center gap-2">
+          <Link
+            href={accepted.href}
+            className="inline-flex min-h-11 items-center rounded-md px-5 py-2.5 font-medium text-white"
+            style={{ backgroundColor: "var(--accent)" }}
+          >
+            Open the course
+          </Link>
+          <Link href="/audit/review" className="inline-flex min-h-11 items-center text-sm underline">
+            See the lessons marked for your review
+          </Link>
+        </div>
       ) : (
         <>
           <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400">

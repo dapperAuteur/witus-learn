@@ -90,7 +90,7 @@ export function playableAudioSrc(url: string): string {
   return `${base}/f_mp3/${rest}`;
 }
 
-/** Map a non-file URL to an embeddable iframe src (YouTube/Vimeo/Google Slides/PDF/generic). */
+/** Map a non-file URL to an embeddable iframe src (YouTube/Vimeo/Google Drive file/Google Slides/PDF/generic). */
 export function toEmbed(url: string): Embed | null {
   if (!url) return null;
   try {
@@ -108,6 +108,20 @@ export function toEmbed(url: string): Embed | null {
     if (host === "vimeo.com") {
       const id = u.pathname.split("/").filter(Boolean)[0];
       if (id && /^\d+$/.test(id)) return { kind: "vimeo", src: `https://player.vimeo.com/video/${id}` };
+    }
+    if (host === "drive.google.com") {
+      // A shared Drive FILE refuses to be framed at its /view (or /edit) address; its /preview form
+      // is the one Drive serves for embedding. Both link shapes Drive hands out are normalized:
+      // /file/d/<id>/view?usp=sharing and /open?id=<id>. A resourcekey (older shared files need it)
+      // is kept. A folder link is not a file and falls through to the generic iframe unchanged.
+      const id = u.pathname.match(/^\/file\/d\/([^/]+)/)?.[1] ?? (u.pathname === "/open" ? u.searchParams.get("id") : null);
+      if (id) {
+        const key = u.searchParams.get("resourcekey");
+        return {
+          kind: "iframe",
+          src: `https://drive.google.com/file/d/${id}/preview${key ? `?resourcekey=${encodeURIComponent(key)}` : ""}`,
+        };
+      }
     }
     if (host === "docs.google.com" && u.pathname.includes("/presentation/")) {
       // Normalize any Google Slides link to its /embed form.

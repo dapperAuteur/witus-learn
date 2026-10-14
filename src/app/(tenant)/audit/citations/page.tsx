@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { requireUserPage, isPlatformOwner } from "@/lib/session";
@@ -62,6 +63,15 @@ export default async function AuditCitationsPage() {
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Say what you found before marking anything. A citation marked verified with nothing written
         behind it stops anyone from ever looking again, which is worse than leaving it unchecked.
+      </p>
+      <p className="mt-3 text-sm">
+        <Link
+          href="/audit/review"
+          className="inline-flex min-h-11 items-center underline focus-visible:outline-2 focus-visible:outline-offset-2"
+          style={{ color: "var(--accent)" }}
+        >
+          Lessons marked &ldquo;Before release&rdquo; that you are reviewing
+        </Link>
       </p>
 
       {groups.length === 0 ? (

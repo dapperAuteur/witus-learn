@@ -6,7 +6,7 @@ import { canEditCourse } from "@/lib/api";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { VetCourseCta } from "@/components/vet-course-cta";
 import { hasStripe } from "@/lib/env";
-import { listLessons, listModules, listTenantInstructors } from "@/db/queries/authoring";
+import { getUsername, listLessons, listModules, listTenantInstructors } from "@/db/queries/authoring";
 import { listLinkUsage } from "@/db/queries/link-clicks";
 import { countCourseNotifySignups } from "@/db/queries/leads";
 import { countActiveEnrollments } from "@/db/queries/enrollment";
@@ -18,6 +18,8 @@ import { LinkUsagePanel } from "@/components/link-usage-panel";
 import { CourseAuditorsPanel } from "@/components/course-auditors-panel";
 import { CourseInterestPanel } from "@/components/course-interest-panel";
 import { serializeForOwner } from "@/lib/course-interest";
+import { ReviewSignoffPanel, type SignoffLesson } from "@/components/review-signoff-panel";
+import { readinessOf, reviewsByLesson, summarizeLessonReview } from "@/lib/lesson-review-summary";
 
 export const metadata: Metadata = { title: "Manage course" };
 
@@ -50,6 +52,8 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
     auditors,
     interest,
     enrolledNow,
+    lessonReviews,
+    instructorUsername,
   ] = await Promise.all([
       listLessons(courseId),
       isPlatformOwner(session.user.id),
@@ -70,6 +74,11 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
       // Active enrollments, shown in the price-change confirmation: the number of learners a
       // free-to-paid switch is being made in front of.
       countActiveEnrollments(courseId),
+      // Reviewer sign-off (plans/93 section 1): the current verdicts on this course's marked lessons,
+      // tenant-scoped. Their state is computed below against each lesson as it stands now.
+      sdb.listLessonReviews([courseId]),
+      // For the pretty lesson URLs the sign-off panel links to.
+      getUsername(course.instructorId),
     ]);
 
   // Number lessons the way the learner sees them ("Module 2, Lesson 7: …") so the instructor can
@@ -86,6 +95,18 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
     perModuleCount.set(l.moduleId, n);
     lessonNumberById.set(l.id, n);
   }
+
+  // Reviewer sign-off: one summary per lesson that carries a release need (or keeps a cleared badge
+  // after its marker went). The lessons are already loaded above, so this costs no extra read.
+  const reviewsFor = reviewsByLesson(lessonReviews);
+  const signoffLessons: SignoffLesson[] = lessons
+    .map((l) => ({
+      title: l.title,
+      href: instructorUsername && course.slug && l.slug ? `/${instructorUsername}/${course.slug}/lesson/${l.slug}` : null,
+      summary: summarizeLessonReview(l, reviewsFor.get(l.id) ?? []),
+    }))
+    .filter((x) => x.summary.rows.length > 0 || x.summary.decisions.length > 0);
+  const signoffReadiness = readinessOf(signoffLessons.map((x) => x.summary));
 
   // Admins (platform owner / brand_admin) may reassign the course's instructor.
   const isAdmin = owner || membership === "brand_admin";
@@ -224,8 +245,20 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             email: a.email,
             invitedAt: a.invitedAt,
             acceptedAt: a.acceptedAt,
+            reviewerName: a.reviewerName,
+            reviewerCredential: a.reviewerCredential,
           }))}
         />
+
+        {signoffLessons.length > 0 ? (
+          <ReviewSignoffPanel
+            courseId={course.id}
+            lessons={signoffLessons}
+            readiness={signoffReadiness}
+            isOwner={owner}
+            holdReason={course.publishHoldReason}
+          />
+        ) : null}
 
         <LinkUsagePanel rows={linkUsage} />
       </div>

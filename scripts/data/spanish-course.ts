@@ -601,7 +601,7 @@ _Platypus: Perfect! I'm very happy to meet you._
         questions: [
           {
             prompt: "En la cafetería, ¿cómo pide Curb con cortesía un café?",
-            options: ["Dame un café", "Quería un café con leche, por favor", "¿Tienes café?", "Café ahora"],
+            options: ["Dame un café con leche, y rápido", "Quería un café con leche, por favor", "Oye, ¿tienes café o no tienes?", "Quiero un café con leche ahora mismo"],
             correctIndex: 1,
             explanation: "\"Quería... por favor\" es la forma cortés de pedir, como practicaste con el condicional.",
             sourceLessonSlug: "dialogo-cafe",
@@ -615,7 +615,7 @@ _Platypus: Perfect! I'm very happy to meet you._
           },
           {
             prompt: "\"Voy a probar una manzana\" usa qué estructura?",
-            options: ["pretérito", "ir + a + infinitivo (futuro próximo)", "imperfecto", "subjuntivo"],
+            options: ["pretérito (acción pasada terminada)", "ir + a + infinitivo (futuro próximo)", "imperfecto (pasado habitual o continuo)", "subjuntivo (deseo, consejo o duda)"],
             correctIndex: 1,
             explanation: "Es el futuro próximo: ir conjugado + a + infinitivo.",
             sourceLessonSlug: "dialogo-cafe",
@@ -648,7 +648,7 @@ _Platypus: Perfect! I'm very happy to meet you._
           },
           {
             prompt: "\"Estoy muy contento de conocerte\" usa estar porque expresa:",
-            options: ["identidad", "profesión", "un estado o emoción", "origen"],
+            options: ["identidad", "profesión", "estado o emoción", "origen"],
             correctIndex: 2,
             explanation: "Estados y emociones (cómo te sientes ahora) usan estar.",
             sourceLessonSlug: "dialogo-presentaciones",

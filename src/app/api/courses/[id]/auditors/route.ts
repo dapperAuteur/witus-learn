@@ -33,6 +33,10 @@ export async function GET(_req: Request, { params }: Params) {
       email: a.email,
       invitedAt: a.invitedAt,
       acceptedAt: a.acceptedAt,
+      // How the reviewer is credited on a lesson they clear (plans/93 section 1). Set by the
+      // inviter through PATCH /api/courses/[id]/auditors/[auditorId].
+      reviewerName: a.reviewerName,
+      reviewerCredential: a.reviewerCredential,
     })),
   });
 }
@@ -76,7 +80,14 @@ export async function POST(req: Request, { params }: Params) {
   }
 
   return json({
-    auditor: { id: auditor.id, email: auditor.email, invitedAt: auditor.invitedAt, acceptedAt: auditor.acceptedAt },
+    auditor: {
+      id: auditor.id,
+      email: auditor.email,
+      invitedAt: auditor.invitedAt,
+      acceptedAt: auditor.acceptedAt,
+      reviewerName: auditor.reviewerName,
+      reviewerCredential: auditor.reviewerCredential,
+    },
     inviteUrl,
     emailed,
   });

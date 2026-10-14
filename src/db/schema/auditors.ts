@@ -44,6 +44,15 @@ export const courseAuditors = pgTable(
     invitedBy: text("invited_by")
       .notNull()
       .references(() => users.id),
+    /**
+     * Reviewer sign-off (plans/93 section 1): how this reviewer is credited on a lesson they clear,
+     * e.g. "Ada Okafor" / "Large-animal veterinarian, Indiana". Set by the INVITER (the owner, the
+     * course's instructor or a tenant admin), never by the reviewer, so the credential shown to
+     * learners is not only self-reported. Both must be set before a verdict can be recorded; each
+     * verdict copies them (lesson_reviews), so a later edit here does not rewrite an old badge.
+     */
+    reviewerName: text("reviewer_name"),
+    reviewerCredential: text("reviewer_credential"),
   },
   (t) => [
     unique("course_auditors_tenant_course_email_uq").on(t.tenantId, t.courseId, t.email),

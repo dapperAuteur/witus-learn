@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+/** Reviewer sign-off progress for a course with "Before release" markers (plans/93 section 1). */
+export interface CatalogReview {
+  qrCleared: number;
+  qrTotal: number;
+  /** Every QR need cleared and no decision open: the owner may release the review hold. */
+  ready: boolean;
+  openDecisions: number;
+}
+
 export interface CatalogCourse {
   id: string;
   /** Readable URL segment for /teach/<slug>; falls back to the uuid when a course has no slug. */
@@ -19,6 +28,8 @@ export interface CatalogCourse {
   vetted: boolean;
   /** Instructor byline shown to owner/admins for courses they don't personally own (else null). */
   instructorLabel?: string | null;
+  /** Null for a course with no release markers, which shows no chip. */
+  review?: CatalogReview | null;
 }
 
 type Status = "all" | "published" | "draft" | "private" | "hold" | "vetted" | "unvetted";
@@ -300,6 +311,24 @@ export function TeacherCatalog({
               ) : null}
               {c.publishHoldReason ? (
                 <span title={c.publishHoldReason} className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-800 dark:bg-amber-900 dark:text-amber-200">⚠️ hold</span>
+              ) : null}
+              {c.review && (c.review.qrTotal > 0 || c.review.openDecisions > 0) ? (
+                <span
+                  title={
+                    c.review.ready
+                      ? "Every qualified-reviewer need is cleared: ready to release the review hold"
+                      : `${c.review.qrCleared} of ${c.review.qrTotal} qualified-reviewer needs cleared${
+                          c.review.openDecisions > 0 ? `, ${c.review.openDecisions} decision(s) open` : ""
+                        }`
+                  }
+                  className={`shrink-0 rounded-full px-2 py-0.5 text-xs tabular-nums ${
+                    c.review.ready
+                      ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200"
+                      : "bg-neutral-200 text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100"
+                  }`}
+                >
+                  QR {c.review.qrCleared}/{c.review.qrTotal}
+                </span>
               ) : null}
               {!c.vetted ? (
                 <span

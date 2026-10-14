@@ -4,7 +4,9 @@ import { requireTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { listAllTenantCourses, listOwnCourses, type ManagedCourse } from "@/db/queries/authoring";
-import { TeacherCatalog } from "@/components/teacher-catalog";
+import { TeacherCatalog, type CatalogReview } from "@/components/teacher-catalog";
+import { getScopedDb } from "@/db/scoped";
+import { readinessOf, reviewsByLesson, summarizeLessonReview, type LessonReviewSummary } from "@/lib/lesson-review-summary";
 import { createCourseAction } from "./actions";
 
 export const metadata: Metadata = { title: "Teach" };
@@ -57,6 +59,26 @@ export default async function TeachPage({
   const courses = isAdmin
     ? await listAllTenantCourses(tenant.id)
     : await listOwnCourses(tenant.id, session.user.id);
+  // Reviewer sign-off (plans/93 section 1): a "QR 12/17" chip per course that carries release
+  // markers. Only marked lessons are read (a handful of courses), then the verdicts on just those
+  // courses; each state is computed against the lesson as it stands, exactly as the course page does.
+  const sdb = await getScopedDb();
+  const reviewable = await sdb.listReviewableLessons(courses.map((c) => c.id));
+  const markedCourseIds = [...new Set(reviewable.map((l) => l.courseId))];
+  const reviewsFor = reviewsByLesson(await sdb.listLessonReviews(markedCourseIds));
+  const summariesByCourse = new Map<string, LessonReviewSummary[]>();
+  for (const l of reviewable) {
+    const list = summariesByCourse.get(l.courseId) ?? [];
+    list.push(summarizeLessonReview(l, reviewsFor.get(l.id) ?? []));
+    summariesByCourse.set(l.courseId, list);
+  }
+  const reviewFor = (courseId: string): CatalogReview | null => {
+    const summaries = summariesByCourse.get(courseId);
+    if (!summaries) return null;
+    const r = readinessOf(summaries);
+    return { qrCleared: r.qrCleared, qrTotal: r.qrTotal, ready: r.ready, openDecisions: r.openDecisions };
+  };
+
   const labelFor = (c: (typeof courses)[number]): string | null => {
     if (!isAdmin) return null;
     const m = c as ManagedCourse;
@@ -66,9 +88,9 @@ export default async function TeachPage({
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-12">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <h1 className="text-2xl font-bold">Your courses</h1>
-        <div className="flex items-center gap-4 text-sm">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
           {owner ? (
             <Link href="/admin" className="font-medium underline" style={{ color: "var(--accent)" }}>
               Admin →
@@ -87,6 +109,10 @@ export default async function TeachPage({
           </Link>
           <Link href="/teach/feedback" className="underline" style={{ color: "var(--accent)" }}>
             Curriculum feedback →
+          </Link>
+          {/* Tours from the field (plans/93 section 2): every virtual-tour slot and what fills it. */}
+          <Link href="/teach/tours" className="inline-flex min-h-11 items-center underline" style={{ color: "var(--accent)" }}>
+            Tours →
           </Link>
         </div>
       </div>
@@ -141,6 +167,7 @@ export default async function TeachPage({
             // date itself is the owner's record, not something to ship to every client.
             vetted: c.vettedAt != null,
             instructorLabel: labelFor(c),
+            review: reviewFor(c.id),
           }))}
           canVet={owner}
           initialStatus={status}

@@ -371,7 +371,7 @@ Several concrete checks back that up:
           {
             prompt: "What is a dissenting opinion, and does it carry legal force?",
             options: [
-              "An opinion agreeing with the outcome; it is binding",
+              "An opinion agreeing with the outcome but adding different reasoning; it is binding",
               "An opinion disagreeing with the outcome; it has no legal force",
               "The Court's official binding ruling",
               "An unsigned opinion issued 'by the court'",
@@ -395,7 +395,7 @@ Several concrete checks back that up:
           {
             prompt: "What sets the Supreme Court's size at nine justices?",
             options: [
-              "The Constitution fixes it at nine",
+              "Article III of the Constitution, which fixes the number at nine",
               "A statute (the Judiciary Act of 1869), which Congress could change",
               "A Supreme Court ruling",
               "An executive order",

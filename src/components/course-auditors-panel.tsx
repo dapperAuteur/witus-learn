@@ -7,6 +7,9 @@ export interface AuditorRow {
   email: string;
   invitedAt: string | Date;
   acceptedAt: string | Date | null;
+  /** How this reviewer is credited on a lesson they clear (reviewer sign-off). Set here, by the inviter. */
+  reviewerName?: string | null;
+  reviewerCredential?: string | null;
 }
 
 const fmt = (d: string | Date) =>
@@ -73,6 +76,10 @@ export function CourseAuditorsPanel({
     setRows((prev) => prev.filter((r) => r.id !== id));
   }
 
+  function credited(updated: AuditorRow) {
+    setRows((prev) => prev.map((r) => (r.id === updated.id ? { ...r, ...updated } : r)));
+  }
+
   return (
     <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <h2 className="font-semibold">Invite someone to review this course</h2>
@@ -80,6 +87,11 @@ export function CourseAuditorsPanel({
         A reviewer can read every lesson of this course while it is still &ldquo;Coming soon&rdquo;.
         They cannot enroll, earn a certificate, or record any progress, and their quiz answers are
         never counted, so this course&apos;s statistics keep measuring learners only.
+      </p>
+      <p className="mt-1 text-sm text-neutral-600">
+        To let a reviewer sign off lessons marked &ldquo;Before release&rdquo;, add the name and
+        credential they will be credited with (for example &ldquo;Large-animal veterinarian,
+        Indiana&rdquo;). You set it, not the reviewer, so the credit is not only self-reported.
       </p>
       {!isUnvetted ? (
         <p className="mt-2 text-sm text-neutral-600">
@@ -134,24 +146,112 @@ export function CourseAuditorsPanel({
       ) : (
         <ul className="mt-3 divide-y divide-neutral-100 dark:divide-neutral-800/60">
           {rows.map((r) => (
-            <li key={r.id} className="flex flex-wrap items-center justify-between gap-2 py-2 text-sm">
-              <span className="min-w-0 break-all">
-                {r.email}
-                <span className="ml-2 text-neutral-600">
-                  {r.acceptedAt ? `accepted ${fmt(r.acceptedAt)}` : `invited ${fmt(r.invitedAt)}, not accepted yet`}
+            <li key={r.id} className="py-2 text-sm">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <span className="min-w-0 break-all">
+                  {r.email}
+                  <span className="ml-2 text-neutral-600">
+                    {r.acceptedAt ? `accepted ${fmt(r.acceptedAt)}` : `invited ${fmt(r.invitedAt)}, not accepted yet`}
+                  </span>
                 </span>
-              </span>
-              <button
-                type="button"
-                onClick={() => revoke(r.id)}
-                className="min-h-11 rounded-md border border-neutral-300 px-3 py-1 dark:border-neutral-700"
-              >
-                Remove
-              </button>
+                <button
+                  type="button"
+                  onClick={() => revoke(r.id)}
+                  className="min-h-11 rounded-md border border-neutral-300 px-3 py-1 dark:border-neutral-700"
+                >
+                  Remove
+                </button>
+              </div>
+              <ReviewerCredit courseId={courseId} row={r} onSaved={credited} />
             </li>
           ))}
         </ul>
       )}
     </section>
+  );
+}
+
+/** The inviter-set credit line for one reviewer: name + credential, shown on every lesson they clear. */
+function ReviewerCredit({
+  courseId,
+  row,
+  onSaved,
+}: {
+  courseId: string;
+  row: AuditorRow;
+  onSaved: (r: AuditorRow) => void;
+}) {
+  const [name, setName] = useState(row.reviewerName ?? "");
+  const [credential, setCredential] = useState(row.reviewerCredential ?? "");
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
+  const isSet = Boolean(row.reviewerName?.trim() && row.reviewerCredential?.trim());
+
+  async function save(e: React.FormEvent) {
+    e.preventDefault();
+    setBusy(true);
+    setMessage(null);
+    try {
+      const res = await fetch(`/api/courses/${courseId}/auditors/${row.id}`, {
+        method: "PATCH",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ reviewerName: name, reviewerCredential: credential }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        setMessage(data.error ?? "That credit could not be saved.");
+        return;
+      }
+      onSaved(data.auditor);
+      setMessage("Saved.");
+    } catch {
+      setMessage("Network error, please try again.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return (
+    <details className="mt-1">
+      <summary className="inline-flex min-h-11 cursor-pointer items-center text-neutral-600">
+        {isSet ? `Credited as ${row.reviewerName}, ${row.reviewerCredential}` : "Not credited yet: add a name and credential"}
+      </summary>
+      <form onSubmit={save} className="mt-2 grid gap-2 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
+        <div>
+          <label htmlFor={`credit-name-${row.id}`} className="block text-xs font-medium">
+            Name as credited
+          </label>
+          <input
+            id={`credit-name-${row.id}`}
+            value={name}
+            maxLength={120}
+            onChange={(e) => setName(e.target.value)}
+            className="min-h-11 w-full rounded-md border border-neutral-300 px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
+          />
+        </div>
+        <div>
+          <label htmlFor={`credit-credential-${row.id}`} className="block text-xs font-medium">
+            Credential
+          </label>
+          <input
+            id={`credit-credential-${row.id}`}
+            value={credential}
+            maxLength={200}
+            onChange={(e) => setCredential(e.target.value)}
+            className="min-h-11 w-full rounded-md border border-neutral-300 px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
+          />
+        </div>
+        <button
+          type="submit"
+          disabled={busy}
+          className="min-h-11 rounded-md border border-neutral-300 px-3 py-1 dark:border-neutral-700 disabled:opacity-60"
+        >
+          {busy ? "Saving…" : "Save credit"}
+        </button>
+      </form>
+      <p role="status" className="mt-1 text-xs text-neutral-600">
+        {message ?? ""}
+      </p>
+    </details>
   );
 }

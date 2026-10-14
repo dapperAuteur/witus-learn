@@ -256,7 +256,7 @@ The medieval version is a safe place to practice, because nothing is at stake an
           {
             prompt: 'The lesson calls reading a schematic as a survey a "category error." Why is that worse than an ordinary mistake?',
             options: [
-              "Every later conclusion is worthless because the object was misidentified",
+              "Every later conclusion fails because the object was misidentified",
               "It can only be corrected by measuring the original document",
               "It is a mistake that only affects historians of cartography",
               "It always reverses the direction of the argument being made",
@@ -308,7 +308,7 @@ The medieval version is a safe place to practice, because nothing is at stake an
           {
             prompt: "Where is the modern reader most likely to repeat the T-O mistake?",
             options: [
-              "On a simplified chart or diagram in a news article or company report",
+              "On a simplified chart in a news article",
               "On a national census table",
               "On a photograph of a historical artifact",
               "On a transcript of a recorded interview",
@@ -657,7 +657,7 @@ That is not a disclaimer to skim. It is the same point as the empty interior of 
           {
             prompt: "What makes the Carta Marina a problem for the idea that monsters signal ignorance?",
             options: [
-              "Its coastlines were the best available for the northern seas",
+              "Its northern coastlines were the best available",
               "Its monsters were added by a later owner",
               "It was drawn without reference to any earlier map",
               "It was never intended for sale to the public",
@@ -670,7 +670,7 @@ That is not a disclaimer to skim. It is the same point as the empty interior of 
           {
             prompt: "According to Van Duzer's survey, where do the creatures on maps usually come from?",
             options: [
-              "Written authorities, garbled reports of real animals, and earlier maps",
+              "Texts, garbled reports of real animals, and earlier maps",
               "The personal dreams and visions of individual engravers",
               "Sailors' sworn depositions collected by port authorities",
               "Church commissions specifying which creatures to include",
@@ -988,7 +988,7 @@ Hold on to two things before you turn the page. First, Pliny is not the villain:
           {
             prompt: "What is the useful question to ask about a widely repeated claim?",
             options: [
-              "How many independent sources say it, and what is the earliest",
+              "How many independent sources, and which is earliest",
               "How recently was it most prominently published",
               "How many languages has it been translated into",
               "How many experts have declined to contradict it",
@@ -1000,7 +1000,7 @@ Hold on to two things before you turn the page. First, Pliny is not the villain:
           {
             prompt: "What is known about the author of the Book of John Mandeville?",
             options: [
-              "The identity is unresolved and the journey almost certainly was not made",
+              "Unidentified, and almost certainly never made the journey",
               "He was a Flemish physician who traveled as far as Persia",
               "He was a Venetian merchant writing under a pen name",
               "He was a monk who copied a genuine account word for word",
@@ -1052,7 +1052,7 @@ Hold on to two things before you turn the page. First, Pliny is not the villain:
           {
             prompt: "Where did Pliny locate the peoples he described in Book 7 of the Natural History?",
             options: [
-              "At the edges of the known world, mostly India and Ethiopia",
+              "Mostly in India and Ethiopia",
               "In the mountains of northern Italy",
               "On islands in the western Atlantic",
               "Beneath the earth in caverns near the Black Sea",
@@ -1091,7 +1091,7 @@ Hold on to two things before you turn the page. First, Pliny is not the villain:
           {
             prompt: "Why does the lesson decline to treat Pliny as the villain?",
             options: [
-              "He was compiling first-century reports and mostly said where they came from",
+              "He compiled reports and mostly said where they came from",
               "He never described any people at the edges of the world",
               "His work was unknown until the fifteenth century",
               "He wrote the descriptions as acknowledged fiction",

@@ -442,7 +442,7 @@ A feature that's "basically free" while you test it can become a real monthly bi
             prompt: "What's the fix for generic AI marketing 'slop'?",
             options: [
               "Publish a great deal more of it, much faster",
-              "Feed it your voice and rewrite the draft in your own words",
+              "Feed it your voice, then rewrite it in your words",
               "Use a much longer prompt and ship the result unedited",
               "Add a good many more industry buzzwords to it",
             ],
@@ -456,7 +456,7 @@ A feature that's "basically free" while you test it can become a real monthly bi
             options: [
               "To be a finished and completely perfect product",
               "To impress your investors with sheer polish",
-              "To learn cheaply whether the idea works, by testing the risk",
+              "To test your riskiest assumption cheaply",
               "To use just as much AI as you possibly can",
             ],
             correctIndex: 2,
@@ -468,7 +468,7 @@ A feature that's "basically free" while you test it can become a real monthly bi
             prompt: "When you build with a model's API, what do you actually pay for?",
             options: [
               "A one-time flat fee that lasts forever",
-              "Per token, for your input and the model's output alike",
+              "Per token of input and output",
               "Per user only, however much they use it",
               "Nothing at all, because model APIs are free",
             ],
@@ -520,7 +520,7 @@ A feature that's "basically free" while you test it can become a real monthly bi
             prompt: "Why isn't 'I generated a lot of stuff quickly' proof that an AI tool is worth it?",
             options: [
               "Because sheer speed always equals real value",
-              "Because without a baseline, fixing its mistakes can cost more",
+              "Because without a baseline, fixing errors can cost more",
               "Because the AI tools themselves are always free",
               "Because the quality of the output never matters",
             ],

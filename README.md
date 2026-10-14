@@ -51,7 +51,8 @@ Wanderlust, renamed from Wanderlearn in 2026-08) can render real Learn.WitUS les
 host, never client input, and every response is **published + `visibility:"public"` only**. The two
 reads that return LESSONS additionally require the course to be **vetted** (`courses.vetted_at IS NOT
 NULL`), so an unvetted "Coming soon" course is listed by `GET /api/v1/courses` but its lessons 404;
-see [src/lib/vetting.ts](src/lib/vetting.ts). Mint
+see [src/lib/vetting.ts](src/lib/vetting.ts). A lesson's media is its own `contentUrl`: a tour from
+the field (`lesson_tour_embeds`, see the Field Log section) is not included yet. Mint
 keys at `/admin/api-keys` (owner/brand-admin). Every response includes a top-level `disclaimer`
 field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.ts) and the
 consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
@@ -475,6 +476,58 @@ exclude them. The whole decision lives in one pure module,
 [src/lib/vetting.ts](src/lib/vetting.ts). Mark courses vetted or unvetted in bulk from `/teach`
 (owner only); notify-me signups land in `leads` and are read at `/admin/leads`.
 
+## Reviewer sign-off (`lessons.review_needs`, `lesson_reviews`)
+
+Some lessons cannot be released on the author's word alone: a rigging load table, a hearing-safety
+figure, a scrapie rule. Four course files mark those lessons with one line at the top of the body,
+`> **Before release:** needs a qualified reviewer (QR): <who>.` (or `a practitioner`, `a practitioner
+or BAM's demonstration`, or `BAM's decision (brief question N)`; one line may carry two needs joined by
+`; and needs ...`). **Reviewer sign-off turns those lines into data a qualified person can clear.**
+
+- **The seeder parses the markers** (`parseReleaseMarkers` in
+  [src/lib/lesson-review.ts](src/lib/lesson-review.ts)) into `lessons.review_needs`, strips them from
+  `text_content`, and rewrites the needs on every re-seed. No course file changes. A line in any other
+  wording still holds the course: it is stored as a decision, which no verdict clears.
+- **The lesson page draws them back** in a box that begins "Before release" (the rigging course quizzes
+  on that sentence). A cleared need reads "Reviewed by {name}, {credential}, on {date}", with one line
+  saying a review checks content and is not an endorsement or a learner qualification.
+- **A verdict** (`lesson_reviews`, one current row per lesson per need kind) is cleared, cleared with
+  one correction to make (1 to 1,000 characters), or not cleared. It is **pinned to a sha256 of the
+  lesson's material text** (title, body without markers and with whitespace collapsed, media URL,
+  recall, exercise and map content), computed on the server. Every read compares it with the current
+  hash, so **any edit, a typo fix included, resets the verdict** (a re-seed and a /teach edit alike).
+  Moving a lesson, its publish flags, and the marker lines are outside the hash.
+- **Who records one.** An accepted course auditor whose **name and credential were set by the
+  inviter** (on the course's `/teach` page, under the reviewer invites), for QR and P needs. The
+  **platform owner clears P needs only** (his own demonstration), never a QR need, even holding a
+  grant. The course's own instructor records nothing. Rules: `canRecordVerdict`.
+- **Corrections are applied, never answered.** Editors see a pending correction on the lesson and in the
+  `/teach` "Reviewer sign-off" panel; the owner edits the lesson and presses **Applied as written**
+  (once), which re-pins the verdict to the edited text and shows "correction applied {date}".
+- **Release.** When every QR and P need is cleared and no decision marker is left, the owner's **Release the
+  review hold** button (`POST /api/courses/[id]/release-review-hold`, readiness re-checked on the
+  server) clears `publish_hold_reason`. Holds are written on first insert only, so a release survives
+  re-seeds. P needs block release too (the owner may clear them with his own demonstration), so a
+  released course never shows a "Before release" box. Vetting stays a separate step. `/teach` shows a
+  "QR 12/17" chip per marked course.
+- **Reviewers' own list:** `/audit/review` (noindex, linked from the invite screen, the reviewer banner
+  on a lesson, and `/audit/citations`) lists their marked lessons, each need's state, and how they will
+  be credited. It never shows correction text.
+
+**Decisions taken as safe defaults until BAM rules (plans/93):** only the **platform owner** releases a
+review hold (not a white-label school's brand_admin); the owner may clear **P needs only**, and QR
+needs need an accepted auditor with an inviter-set credential; there is **no feature for learners to
+propose anything**.
+
+**No inbox.** A correction is one-way content attached to one lesson and one need: no recipient, no
+reply, no parent row, no read or seen state, no email, no notification, and a new verdict replaces the
+old one. No page lists corrections across courses. Pinned by
+[tests/lesson-review-schema.test.ts](tests/lesson-review-schema.test.ts); tenant and course scoping by
+[tests/isolation/lesson-reviews.test.ts](tests/isolation/lesson-reviews.test.ts) and
+[tests/isolation/lesson-reviews.db.test.ts](tests/isolation/lesson-reviews.db.test.ts). After merge:
+`pnpm db:migrate:prod` (migration `0067_serious_karen_page`), then `pnpm seed:courses:prod` so the
+needs are filled and the markers leave the lesson text.
+
 ## State-standards finder (`/academic-standards`) and explorer (`/academic-standards/matrix`)
 
 A teacher, homeschooler, or administrator picks their **state** and sees which courses meet which
@@ -868,7 +921,36 @@ A long route is loaded rather than typed: `pnpm field-log:import <file.json> [--
 a git-tracked file, because an itinerary says where someone will be and this repo is public; keep the
 JSON under the gitignored `content/` tree. Re-runs are safe: legs match by name and keep their visited
 tick, and a leg missing from the file is reported, never deleted. The file shape is in the script's
-header.
+header, including each leg's optional `permissionNote` (a re-import that leaves it out keeps the one
+already stored).
+
+**Permission note.** Each leg has a `permission_note` (up to 500 characters, migration
+`0068_jittery_changeling`): what permission covers filming at that stop, in the learner's words, such
+as "Public viewpoint, no permission needed". It is set on the add-leg form, in the "Use in a lesson"
+panel, through `PATCH .../legs/[legId]`, or from the import file, and it shows on the leg card. Like the
+rest of the consent minimum it holds no contact details.
+
+**Use in a lesson (tours from the field, plans/93 section 2).** A photo or video logged on a leg can fill
+an empty tour slot: a `virtual_tour` lesson with no tour link of its own (the 13 site-history courses'
+"Now" lessons). The panel appears on each leg only for a viewer who may fill at least one slot, which
+is the **platform owner** or the **course's own instructor**; it suggests the slot the leg's notes link
+to, lists the leg's captures with the ineligible ones disabled and the reason shown, and offers an
+editable credit (default "Photo by {name} at {stop}, {place}, {month year}."). The server refuses, with
+the reason (`GET|POST /api/field-log/projects/[id]/legs/[legId]/tour-targets`, 422): a subject who
+**declined**; a capture that **involves a minor** without **written** consent; any kind but **photo or
+video**; a missing or non-**https** link; a link that **cannot be shown** in a lesson (a Drive folder, a
+YouTube channel, an audio file); and a leg with **no permission note**. The tour lives in its own table,
+`lesson_tour_embeds` (one per lesson, a copy of the capture's link and the credit), because the course
+seeder rewrites `lessons.content_url` on every seed. Media stays **link only**: nothing is uploaded or
+hosted, and a Google Drive file link is shown through its `/preview` form. **Every lesson read re-runs
+the same rules** against the capture and leg as they stand, so a consent later set to declined, a
+removed permission note, a changed link or a deleted capture takes the tour off the lesson at once.
+While a tour is live, the lesson and course pages drop the title's "(360 tour, forthcoming)" suffix and
+the body's opening "forthcoming" paragraph; the course files are not edited. **`/teach/tours`** (linked
+from the `/teach` header) lists every tour slot as empty, shown, hidden (with why), or with its own
+link, and **Remove** (`DELETE /api/courses/[id]/lessons/[lessonId]/tour`, any course editor) empties a
+slot again. Nothing is requested or queued: a learner proposing a tour to an instructor is out of scope
+under the no-inbox rule. The public read API (`/api/v1`) does not carry tours from the field yet.
 
 ## Admin home + self-serve brand settings
 

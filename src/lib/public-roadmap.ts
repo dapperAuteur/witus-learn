@@ -81,6 +81,14 @@ export const PUBLIC_ROADMAP: Record<RoadmapStatus, PublicRoadmapItem[]> = {
   ],
   building: [
     {
+      title: "Qualified-reviewer sign-off",
+      body: "Lessons where a wrong sentence could hurt someone, like rigging, electrical work or animal health, stay held until a qualified reviewer has read them, and the lesson names who reviewed it and as what. Any later change to the lesson asks for a fresh review.",
+    },
+    {
+      title: "Tours from the field",
+      body: "Photos and video an instructor captured on site can fill a course's virtual-tour lesson, credited under the tour. Nothing is shown of anyone who declined, a child appears only with a parent's written consent, the place needs a permission note, and all of it is checked again every time the lesson opens.",
+    },
+    {
       title: "In-app lesson recording",
       body: "Record a lesson's audio right in the app, offline-first, so a dropped connection never loses a take.",
     },

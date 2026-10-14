@@ -51,6 +51,8 @@ import { isOpenWhileUnvetted, isUnvetted } from "@/lib/vetting";
 import { civicsBackLink } from "@/lib/civics-nav";
 import { isPlatformOwner } from "@/lib/session";
 import { VetCourseCta } from "@/components/vet-course-cta";
+import { displayTourTitle } from "@/lib/field-log-tour";
+import { liveToursForCourse } from "@/lib/lesson-tours";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -146,6 +148,10 @@ export default async function CourseBySlugPage({ params }: Params) {
   const completedCount = lessons.filter((l) => completedLessonIds.has(l.id)).length;
   const percent = lessons.length > 0 ? Math.round((completedCount / lessons.length) * 100) : 0;
   const showProgress = (view.isEnrolled || completedCount > 0) && lessons.length > 0;
+  // Tours from the field (plans/93 section 2): a lesson whose field tour is live drops the
+  // "(... tour, forthcoming)" suffix from its title. Costs no query for a course with no tour slot.
+  const tours = await liveToursForCourse(course.id, lessons);
+  const titleOf = (l: (typeof lessons)[number]) => displayTourTitle(l.title, tours.has(l.id));
 
   // "Continue where you left off" — the lesson the learner was ACTUALLY on (last opened), not the
   // first gap in the syllabus. Only shown once they've genuinely begun, so the copy never lies to
@@ -233,7 +239,7 @@ export default async function CourseBySlugPage({ params }: Params) {
         </span>
         <div className="min-w-0 flex-1">
           <span className={`block truncate font-medium ${access.open ? "" : "text-neutral-600"}`}>
-            {n}. {lesson.title}
+            {n}. {titleOf(lesson)}
           </span>
           <span className="text-xs capitalize text-neutral-400">{lesson.lessonType.replace("_", " ")}</span>
         </div>
@@ -484,7 +490,7 @@ export default async function CourseBySlugPage({ params }: Params) {
             <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
               {resumingInProgress ? "Continue where you left off" : "Next up"}
             </p>
-            <p className="mt-0.5 truncate text-lg font-bold">{resumeLesson.title}</p>
+            <p className="mt-0.5 truncate text-lg font-bold">{titleOf(resumeLesson)}</p>
             <p className="mt-0.5 text-sm text-neutral-600">
               Lesson {numberOf(resumeLesson)} of {lessons.length}
             </p>

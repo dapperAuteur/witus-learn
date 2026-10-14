@@ -28,6 +28,10 @@ const COURSES: [string, AuthoredCourse][] = [
 /** Articles deliberately taught by no path. Each needs a reason a reader can weigh. */
 const WAIVED: Record<string, string> = {
   "keeping-courses-current": "a command-line runbook for the platform owner, not a screen anyone drives",
+  "reviewer-sign-off":
+    "shipped with feat/reviewer-signoff (plans/93) while the quiz-balance sweep was editing course files; a Run Your Course lesson that teaches it is the follow-up (delete this line then)",
+  "tours-from-field-log":
+    "shipped with feat/field-tours while the quiz-balance sweep was editing course files; a Run Your Course lesson that teaches it is the follow-up (delete this line then)",
 };
 
 describe("Using Learn.WitUS series", () => {

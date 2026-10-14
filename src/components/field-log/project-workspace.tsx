@@ -14,6 +14,7 @@ import { CREDENTIAL_ENDORSEMENTS_REQUIRED, endorsementCount } from "@/lib/field-
 import { templateByKey, type FieldLogTemplate } from "@/lib/field-log-templates";
 import { splitNoteLinks } from "@/lib/note-links";
 import { patchJson, postJson } from "./client";
+import { UseInLesson } from "./use-in-lesson";
 
 // Education, not legal advice — jurisdiction varies (see plans/future/15-field-log-safety-legal.md).
 const CONSENT_DISCLAIMER =
@@ -56,6 +57,7 @@ const field = "w-full rounded-md border border-neutral-300 px-3 py-2 dark:border
 export function ProjectWorkspace({
   initial,
   me,
+  canUseInLesson = false,
 }: {
   initial: {
     project: DocumentationProject;
@@ -65,6 +67,8 @@ export function ProjectWorkspace({
     reviews: ProjectReview[];
   };
   me: { id: string; name?: string | null };
+  /** The server found an empty tour slot this viewer may fill (tours from the field, plans/93). */
+  canUseInLesson?: boolean;
 }) {
   const reviews = initial.reviews;
   const [project, setProject] = useState(initial.project);
@@ -353,6 +357,11 @@ export function ProjectWorkspace({
             onChainMode={(v) => patchProject({ chainMode: v })}
             onAdd={addLeg}
             onVisited={setVisited}
+            tours={
+              canUseInLesson
+                ? { projectId, onLegUpdated: (leg) => setLegs((prev) => prev.map((l) => (l.id === leg.id ? leg : l))) }
+                : null
+            }
           />
         ) : null}
         {tab === "captures" ? (
@@ -478,12 +487,15 @@ function LegsTab({
   onChainMode,
   onAdd,
   onVisited,
+  tours,
 }: {
   legs: ProjectLeg[];
   chainMode: boolean;
   onChainMode: (v: boolean) => void;
   onAdd: (input: Record<string, unknown>) => Promise<boolean>;
   onVisited: (legId: string, visited: boolean) => void;
+  /** Present only when this viewer may fill a lesson's tour slot: "Use in a lesson" per leg. */
+  tours: { projectId: string; onLegUpdated: (leg: ProjectLeg) => void } | null;
 }) {
   const visitedCount = legs.filter((l) => l.visited).length;
   const nextLeg = legs.find((l) => !l.visited);
@@ -491,6 +503,7 @@ function LegsTab({
   const [siteType, setSiteType] = useState<string>("other");
   const [locationLabel, setLocationLabel] = useState("");
   const [startDate, setStartDate] = useState("");
+  const [permissionNote, setPermissionNote] = useState("");
   const [saving, setSaving] = useState(false);
 
   async function submit(e: React.FormEvent) {
@@ -502,12 +515,14 @@ function LegsTab({
       siteType,
       locationLabel: locationLabel.trim() || null,
       startDate: startDate || null,
+      permissionNote: permissionNote.trim() || null,
     });
     setSaving(false);
     if (ok) {
       setName("");
       setLocationLabel("");
       setStartDate("");
+      setPermissionNote("");
     }
   }
 
@@ -568,6 +583,11 @@ function LegsTab({
                 Directions
               </a>
             ) : null}
+            {leg.permissionNote ? (
+              <p className="mt-1 break-words text-xs text-neutral-600 dark:text-neutral-400">
+                <span className="font-medium">Permission:</span> {leg.permissionNote}
+              </p>
+            ) : null}
             {leg.notes ? (
               <details className="mt-1" open={leg.id === nextLeg?.id}>
                 <summary className="min-h-8 cursor-pointer py-1 text-xs font-medium pointer-coarse:min-h-11 pointer-coarse:py-2">Notes</summary>
@@ -576,6 +596,7 @@ function LegsTab({
                 </div>
               </details>
             ) : null}
+            {tours ? <UseInLesson projectId={tours.projectId} leg={leg} onLegUpdated={tours.onLegUpdated} /> : null}
           </li>
         ))}
         {legs.length === 0 ? <li className="text-sm text-neutral-600">No legs yet.</li> : null}
@@ -589,6 +610,14 @@ function LegsTab({
           </select>
           <input value={locationLabel} onChange={(e) => setLocationLabel(e.target.value)} placeholder="Location (e.g. Ashanti Region)" className={`${field} text-sm`} />
           <input type="date" value={startDate} onChange={(e) => setStartDate(e.target.value)} className={`${field} text-sm`} />
+          <input
+            value={permissionNote}
+            onChange={(e) => setPermissionNote(e.target.value)}
+            maxLength={500}
+            placeholder="Permission (e.g. Public viewpoint, no permission needed)"
+            aria-label="Permission note: what permission covers filming here"
+            className={`${field} text-sm sm:col-span-2`}
+          />
         </div>
         <button type="submit" disabled={saving || !name.trim()} className="mt-3 min-h-9 rounded-md px-4 text-sm font-medium text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
           {saving ? "Adding…" : "Add leg"}

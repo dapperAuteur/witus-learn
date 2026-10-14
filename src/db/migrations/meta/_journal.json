@@ -470,6 +470,20 @@
       "when": 1791310673822,
       "tag": "0066_soft_marvel_boy",
       "breakpoints": true
+    },
+    {
+      "idx": 67,
+      "version": "7",
+      "when": 1791987117797,
+      "tag": "0067_serious_karen_page",
+      "breakpoints": true
+    },
+    {
+      "idx": 68,
+      "version": "7",
+      "when": 1791990055861,
+      "tag": "0068_jittery_changeling",
+      "breakpoints": true
     }
   ]
 }

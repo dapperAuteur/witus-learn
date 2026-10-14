@@ -854,7 +854,7 @@ _Platypus: Perfect! I'm very happy to meet you._
         questions: [
           {
             prompt: "Na cafeteria, como Curb pede com educação?",
-            options: ["Me dá um café", "Eu queria um café com leite, por favor", "Você tem café?", "Café agora"],
+            options: ["Me dá um café com leite, e rápido", "Eu queria um café com leite, por favor", "Ei, você tem café aí ou não tem?", "Quero um café com leite agora mesmo"],
             correctIndex: 1,
             explanation: "\"Eu queria... por favor\" é a forma educada de pedir (condicional/cortesia).",
             sourceLessonSlug: "dialogo-cafe",
@@ -868,7 +868,7 @@ _Platypus: Perfect! I'm very happy to meet you._
           },
           {
             prompt: "\"Eu vou levar uma maçã\" usa que estrutura?",
-            options: ["pretérito", "ir + infinitivo (futuro próximo)", "imperfeito", "subjuntivo"],
+            options: ["pretérito perfeito (ação terminada)", "ir + infinitivo (futuro próximo)", "imperfeito (passado habitual)", "subjuntivo (desejo ou dúvida)"],
             correctIndex: 1,
             explanation: "Futuro próximo: ir conjugado + infinitivo, sem \"a\".",
             sourceLessonSlug: "dialogo-cafe",
@@ -901,7 +901,7 @@ _Platypus: Perfect! I'm very happy to meet you._
           },
           {
             prompt: "\"Estou muito feliz em conhecer você\" usa estar porque expressa:",
-            options: ["identidade", "profissão", "um estado ou emoção", "origem"],
+            options: ["identidade", "profissão", "estado ou emoção", "origem"],
             correctIndex: 2,
             explanation: "Estados e emoções (como você se sente agora) usam estar.",
             sourceLessonSlug: "dialogo-apresentacoes",

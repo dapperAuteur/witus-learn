@@ -374,7 +374,7 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
             options: [
               "A living creature that has real feelings too",
               "Magic that already knows about everything",
-              "A computer program that is good at finding patterns",
+              "A computer program good at finding patterns",
               "A real friend who knows all about you",
             ],
             correctIndex: 2,
@@ -385,7 +385,7 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
             prompt: "How does an AI mainly \"learn\" to do something?",
             options: [
               "It is simply born already knowing how",
-              "It learns patterns from lots and lots of examples",
+              "It learns patterns from lots of examples",
               "It guesses at it with no help at all",
               "A clever wizard teaches it how to",
             ],
@@ -397,7 +397,7 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
             prompt: "What is a \"prompt\"?",
             options: [
               "A mistake that the AI has made",
-              "The message you give the AI when you ask it",
+              "The message you give the AI",
               "A special kind of robot helper",
               "A password for the AI tool",
             ],

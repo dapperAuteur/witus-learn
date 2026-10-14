@@ -188,7 +188,7 @@ export const MONODRAMA_PERFORMING_COURSE: AuthoredCourse = {
           {
             prompt: "Which approach to playing another character should a performer reach for first?",
             options: [
-              "Reporting them, then indicating them, and embodying only if needed",
+              "Report them, then indicate, and embody only if needed",
               "Full embodiment, since it demonstrates the most skill",
               "Costume changes, which signal the shift most clearly",
               "Recorded voiceover, so the performer stays in one role",
@@ -254,7 +254,7 @@ export const MONODRAMA_PERFORMING_COURSE: AuthoredCourse = {
             prompt: "What is the guidance on imaginary objects?",
             options: [
               "Use as many as possible to enrich the invisible world",
-              "Pick a small number and be exact; an inconsistent object is worse than none",
+              "Use few and be exact; an inconsistent one is worse than none",
               "Avoid them completely and let language do all the work",
               "Replace them with real props wherever the budget allows",
             ],
@@ -410,8 +410,8 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
             prompt: "What does Johnstone's concept of status offer a solo performer?",
             options: [
               "A method for projecting the voice without strain",
-              "A live choice about position relative to the audience, changeable mid-piece",
-              "A way of ranking characters by social importance in the script",
+              "A live choice of position relative to the audience",
+              "A way of ranking characters by social importance",
               "A technique for memorizing long passages of text",
             ],
             correctIndex: 1,
@@ -437,7 +437,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
             options: [
               "Because you memorize the breathing along with the words",
               "Because breath marks help a director follow the script",
-              "Because it shortens the total memorisation time required",
+              "Because it shortens the total memorization time required",
               "Because adrenaline makes breathing irrelevant in performance",
             ],
             correctIndex: 0,
@@ -451,7 +451,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
               "The opening and closing paragraphs, then the middle",
               "The words themselves, in strict sequence from the start",
               "The stage directions, so the blocking is secure",
-              "The sequence of wants, then the turns, then transitions, then words",
+              "The sequence of wants, then turns, transitions, words",
             ],
             correctIndex: 3,
             explanation:
@@ -461,7 +461,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
           {
             prompt: "What should a performer do when they blank?",
             options: [
-              "Stop, breathe, and go to the want, without apologising",
+              "Stop, breathe, and go to the want, without apologizing",
               "Apologize briefly to the audience and restart the section",
               "Skip ahead to the next section and continue as normal",
               "Ask the technical operator to hold while they find the line",
@@ -475,7 +475,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
             prompt: "Why does the course recommend learning the piece out of order?",
             options: [
               "It makes the piece easier to rehearse in short sessions",
-              "It proves structural knowledge rather than fragile sequential memory",
+              "It proves you know the structure, not just the sequence",
               "It allows sections to be cut without relearning the whole",
               "It prevents the performer from becoming bored during rehearsal",
             ],
