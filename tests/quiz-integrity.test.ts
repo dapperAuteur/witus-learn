@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 import {
   MIN_BANK,
   balanceLimit,
+  compareWorstFirst,
   courseQuizIntegrity,
   extremeLimit,
   longestStrategyValue,
@@ -278,6 +279,28 @@ describe("quizIntegrityLines (the panel's sentences)", () => {
 
   it("writes no en or em dash", () => {
     for (const line of quizIntegrityLines(base)) expect(line).not.toMatch(/[\u2013\u2014]/);
+  });
+});
+
+describe("compareWorstFirst (the admin table's order)", () => {
+  const s = (balance: CourseQuizIntegrity["balance"]): CourseQuizIntegrity => ({
+    quizzes: 3, questions: 30, shuffled: 3, balance, tied: 30, explained: 30,
+  });
+
+  it("puts the lowest share passing first, then more failing quizzes, then unmeasured, then no quiz", () => {
+    const clean = s({ measured: 2, passing: 2 });
+    const half = s({ measured: 2, passing: 1 });
+    const halfBigger = s({ measured: 6, passing: 3 });
+    const none = s({ measured: 3, passing: 0 });
+    const small = s(null);
+    const sorted = [clean, small, null, half, none, halfBigger].sort(compareWorstFirst);
+    expect(sorted).toEqual([none, halfBigger, half, clean, small, null]);
+  });
+
+  it("calls two courses with the same standing a tie, so the caller's title order decides", () => {
+    expect(compareWorstFirst(null, null)).toBe(0);
+    expect(compareWorstFirst(s(null), s(null))).toBe(0);
+    expect(compareWorstFirst(s({ measured: 4, passing: 2 }), s({ measured: 4, passing: 2 }))).toBe(0);
   });
 });
 

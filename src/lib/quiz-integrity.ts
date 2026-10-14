@@ -327,3 +327,20 @@ export function quizIntegrityLines(s: CourseQuizIntegrity): string[] {
   lines.push(`${share(s.explained, s.questions)} ${verb("question explains", "questions explain")} the answer once you have responded.`);
   return lines;
 }
+
+// ── The admin table's order ──────────────────────────────────────────────────────────────────────
+
+/**
+ * Worst first, for /admin/quiz-integrity, which doubles as the length-balance campaign's progress bar:
+ * courses with measured quizzes come first, lowest share passing at the top and, at the same share,
+ * the one with more failing quizzes; then courses whose quizzes are all too small to measure; then
+ * courses with no quiz. Callers break a remaining tie by title.
+ */
+export function compareWorstFirst(a: CourseQuizIntegrity | null, b: CourseQuizIntegrity | null): number {
+  const key = (s: CourseQuizIntegrity | null): [number, number, number] =>
+    !s ? [2, 0, 0] : !s.balance ? [1, 0, 0] : [0, s.balance.passing / s.balance.measured, s.balance.passing - s.balance.measured];
+  const ka = key(a);
+  const kb = key(b);
+  for (let i = 0; i < ka.length; i++) if (ka[i] !== kb[i]) return ka[i] - kb[i];
+  return 0;
+}
