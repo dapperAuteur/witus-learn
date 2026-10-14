@@ -293,9 +293,9 @@ export class ScopedDb {
     return listViewerAuditGrants(this.tenantId, viewer);
   }
 
-  /** Current verdicts on these courses, in this tenant. */
-  listLessonReviews(courseIds: readonly string[]) {
-    return listLessonReviews(this.tenantId, courseIds);
+  /** Current verdicts on these courses (or on one lesson of them), in this tenant. */
+  listLessonReviews(courseIds: readonly string[], lessonId?: string) {
+    return listLessonReviews(this.tenantId, courseIds, lessonId);
   }
 
   /** Record (or replace) the one current verdict for a lesson's need kind. */

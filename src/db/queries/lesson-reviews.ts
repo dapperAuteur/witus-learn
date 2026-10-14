@@ -10,14 +10,27 @@ import type { Verdict, VerdictNeedKind } from "@/lib/lesson-review";
 // row even if a lesson id were guessed. Kept free of next/headers so the isolation suite can call
 // them directly.
 
-/** Every current verdict on the named courses, in this tenant. Empty ids read nothing. */
-export async function listLessonReviews(tenantId: string, courseIds: readonly string[]): Promise<LessonReview[]> {
+/**
+ * Every current verdict on the named courses, in this tenant, or on one lesson of them when
+ * `lessonId` is given (the lesson page reads just its own). Empty ids read nothing.
+ */
+export async function listLessonReviews(
+  tenantId: string,
+  courseIds: readonly string[],
+  lessonId?: string,
+): Promise<LessonReview[]> {
   const ids = [...new Set(courseIds)];
   if (ids.length === 0) return [];
   return db
     .select()
     .from(lessonReviews)
-    .where(and(eq(lessonReviews.tenantId, tenantId), inArray(lessonReviews.courseId, ids)));
+    .where(
+      and(
+        eq(lessonReviews.tenantId, tenantId),
+        inArray(lessonReviews.courseId, ids),
+        lessonId ? eq(lessonReviews.lessonId, lessonId) : undefined,
+      ),
+    );
 }
 
 export interface UpsertLessonReviewInput {

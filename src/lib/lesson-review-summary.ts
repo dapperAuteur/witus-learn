@@ -22,6 +22,7 @@ import { lessonReviewHash } from "@/lib/lesson-review-hash";
 export interface StoredReview {
   needKind: string;
   verdict: Verdict | string;
+  reviewerUserId: string | null;
   reviewerName: string;
   reviewerCredential: string;
   correction: string | null;
