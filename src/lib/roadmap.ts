@@ -30,6 +30,17 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Remove), linked from \`/teach\`. Not requested or queued: a learner proposing a tour is out of scope (no-inbox
   rule). Follow-ups: the course files still say "forthcoming" under the hood; \`/api/v1\` omits field tours; a
   Run Your Course lesson teaching \`tours-from-field-log\` (then delete its WAIVED line).
+- 🔧 **Quiz integrity panel** (\`feat/quiz-integrity-panel\`, no migration). Plans/93 section 3. The three
+  length guards' constants and measures move into one pure \`src/lib/quiz-integrity.ts\` that
+  \`check-longest-option\`, \`check-shortest-option\` and \`check-length-balance\` import (their output is
+  byte-identical before and after; no GRANDFATHERED map touched). A collapsed "How this course's quizzes are
+  built" card after the standards block on the course page and the Coming-soon face: shuffle, length
+  balance (banks of 8+), questions linked to a lesson in the course, explanations; no quiz renders nothing.
+  The Coming-soon face gets counts from \`ScopedDb.courseQuizIntegrity\`, where SQL returns option lengths,
+  never question text. New owner-only \`/admin/quiz-integrity\`: every course worst first, with a
+  school-wide pass share that doubles as the length-balance campaign's progress bar; it states that a
+  database figure can differ slightly from lint. Follow-up: \`tests/isolation/quiz-integrity.db.test.ts\`
+  has not run against a database.
 - 🔧 **Light on Set, CREW-03** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Eight
   sections, 27 lessons, 661 questions: what light does, hard and soft light from first principles, shaping
   light with what is already in the room (and the hacks the course refuses), natural light, key, fill and
