@@ -14,6 +14,8 @@ export const LegSchema = z.object({
   endDate: z.string().max(20).nullish(),
   visited: z.boolean().optional(),
   notes: z.string().max(2000).nullish(),
+  /** What permission covers filming at this stop (tours from the field need one); see the column. */
+  permissionNote: z.string().max(500).nullish(),
   estCostCents: z.number().int().nullish(),
   estCurrency: z.string().max(10).nullish(),
   sortOrder: z.number().int().optional(),

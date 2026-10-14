@@ -21,7 +21,13 @@
 // File shape (every leg field is the API's own, see src/lib/field-log-leg-schema.ts):
 //   { "title": "...", "subject": "...", "templateKey": "site-tour", "subjectTag": "travel-place",
 //     "medium": null, "kit": ["..."], "legs": [{ "name": "...", "siteType": "other", "locationLabel": "...",
-//     "lat": 0, "lng": 0, "notes": "...", "sortOrder": 0 }] }
+//     "lat": 0, "lng": 0, "notes": "...", "permissionNote": "...", "sortOrder": 0 }] }
+//
+// `permissionNote` (optional, up to 500 characters) says what permission covers filming at the stop,
+// for example "Public viewpoint, no permission needed". A capture on a leg can fill a lesson's tour
+// slot only when its leg has one ("Use in a lesson", src/lib/field-log-tour.ts). Older files carried
+// it inside `notes`; move it to its own field so the tour rule can read it. On --replace, a leg whose
+// file entry has no permissionNote keeps the one already stored.
 
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";

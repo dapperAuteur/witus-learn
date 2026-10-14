@@ -39,6 +39,19 @@ describe("leg edit schema", () => {
     expect(LegPatchSchema.safeParse({ notes: "x".repeat(2001) }).success).toBe(false);
     expect(LegSchema.safeParse({ name: "Stop", notes: "x".repeat(2001) }).success).toBe(false);
   });
+
+  it("accepts a permission note on its own, up to 500 characters, and lets it be cleared", () => {
+    expect(LegPatchSchema.safeParse({ permissionNote: "Public viewpoint, no permission needed" }).success).toBe(true);
+    expect(LegPatchSchema.safeParse({ permissionNote: "x".repeat(500) }).success).toBe(true);
+    expect(LegPatchSchema.safeParse({ permissionNote: "x".repeat(501) }).success).toBe(false);
+    expect(LegPatchSchema.safeParse({ permissionNote: null }).success).toBe(true);
+    expect(LegSchema.safeParse({ name: "Stop", permissionNote: "x".repeat(501) }).success).toBe(false);
+  });
+
+  it("leaves the permission note out of a parsed leg that did not send one, so a re-import keeps it", () => {
+    const parsed = LegSchema.parse({ name: "Stop", notes: "Serves /bam/fort-harrison/lesson/fh-now-tour" });
+    expect("permissionNote" in parsed).toBe(false);
+  });
 });
 
 describe("splitNoteLinks", () => {

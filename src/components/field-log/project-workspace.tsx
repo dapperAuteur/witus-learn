@@ -491,6 +491,7 @@ function LegsTab({
   const [siteType, setSiteType] = useState<string>("other");
   const [locationLabel, setLocationLabel] = useState("");
   const [startDate, setStartDate] = useState("");
+  const [permissionNote, setPermissionNote] = useState("");
   const [saving, setSaving] = useState(false);
 
   async function submit(e: React.FormEvent) {
@@ -502,12 +503,14 @@ function LegsTab({
       siteType,
       locationLabel: locationLabel.trim() || null,
       startDate: startDate || null,
+      permissionNote: permissionNote.trim() || null,
     });
     setSaving(false);
     if (ok) {
       setName("");
       setLocationLabel("");
       setStartDate("");
+      setPermissionNote("");
     }
   }
 
@@ -568,6 +571,11 @@ function LegsTab({
                 Directions
               </a>
             ) : null}
+            {leg.permissionNote ? (
+              <p className="mt-1 break-words text-xs text-neutral-600 dark:text-neutral-400">
+                <span className="font-medium">Permission:</span> {leg.permissionNote}
+              </p>
+            ) : null}
             {leg.notes ? (
               <details className="mt-1" open={leg.id === nextLeg?.id}>
                 <summary className="min-h-8 cursor-pointer py-1 text-xs font-medium pointer-coarse:min-h-11 pointer-coarse:py-2">Notes</summary>
@@ -589,6 +597,14 @@ function LegsTab({
           </select>
           <input value={locationLabel} onChange={(e) => setLocationLabel(e.target.value)} placeholder="Location (e.g. Ashanti Region)" className={`${field} text-sm`} />
           <input type="date" value={startDate} onChange={(e) => setStartDate(e.target.value)} className={`${field} text-sm`} />
+          <input
+            value={permissionNote}
+            onChange={(e) => setPermissionNote(e.target.value)}
+            maxLength={500}
+            placeholder="Permission (e.g. Public viewpoint, no permission needed)"
+            aria-label="Permission note: what permission covers filming here"
+            className={`${field} text-sm sm:col-span-2`}
+          />
         </div>
         <button type="submit" disabled={saving || !name.trim()} className="mt-3 min-h-9 rounded-md px-4 text-sm font-medium text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
           {saving ? "Adding…" : "Add leg"}
