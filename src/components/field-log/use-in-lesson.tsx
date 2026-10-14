@@ -10,7 +10,7 @@ import { apiRequest, patchJson, postJson } from "./client";
 // videos into an empty tour slot of a course the viewer runs. Rendered only when the server found at
 // least one such slot for this viewer (the platform owner, or a course's own instructor).
 //
-// Everything shown here is a PREVIEW of the server's rules: the greyed-out captures and their reasons
+// Everything shown here is a PREVIEW of the server's rules: the grayed-out captures and their reasons
 // come from the same tourCaptureEligibility the POST route re-runs before writing, and the lesson page
 // re-runs again on every read. The publisher writes the tour directly; nothing is requested of anyone.
 

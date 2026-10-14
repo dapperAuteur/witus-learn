@@ -34,7 +34,7 @@ const Body = z.object({
 // user's, in this tenant; the lesson and its course 404 across tenants.
 //
 // The capture rules (consent, minors, kind, https link, embeddable, the leg's permission note) are
-// checked HERE, on the server, and again every time the lesson renders. The client's greyed-out
+// checked HERE, on the server, and again every time the lesson renders. The client's grayed-out
 // captures are a preview of the same function, never the gate.
 
 async function loadLeg(id: string, legId: string) {

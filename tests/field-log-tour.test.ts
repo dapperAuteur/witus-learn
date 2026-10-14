@@ -115,7 +115,7 @@ describe("tourCaptureEligibility", () => {
   it("carries the plain-language reason with every refusal", () => {
     const e = tourCaptureEligibility({ ...ok, consentStatus: "declined" }, leg);
     expect(e.ok ? "" : e.message).toBe(TOUR_REFUSAL_COPY.consent_declined);
-    for (const copy of Object.values(TOUR_REFUSAL_COPY)) expect(copy).not.toMatch(/[–—]/);
+    for (const copy of Object.values(TOUR_REFUSAL_COPY)) expect(copy).not.toMatch(/[\u2013\u2014]/);
   });
 });
 

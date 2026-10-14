@@ -422,6 +422,84 @@ For now only the platform owner releases a hold and clears practitioner needs, a
 reviewer clears a qualified-reviewer need.`,
   },
   {
+    slug: "tours-from-field-log",
+    title: "Tours from the field: put a Field Log photo or video into a tour lesson",
+    category: "Courses",
+    keywords: [
+      "tour",
+      "virtual tour",
+      "360",
+      "forthcoming",
+      "field log",
+      "capture",
+      "photo",
+      "video",
+      "permission",
+      "permission note",
+      "consent",
+      "credit",
+      "use in a lesson",
+      "drive",
+    ],
+    body: `# Tours from the field
+
+Some lessons are **tour lessons**: a virtual tour of a place, written to work before the tour exists. Until
+one is added, the lesson says its tour is forthcoming. If you filmed or photographed the place yourself and
+logged it in **My Field Log**, you can put that capture into the lesson.
+
+**Who can do this:** the platform owner, or the course's own instructor. The capture has to be in a Field
+Log project you are on.
+
+## Before you start: the permission note
+
+Each stop (leg) in a Field Log project has a **permission note**: what permission covers filming there, in
+your own words. "Public viewpoint, no permission needed" is a perfectly good note; so is "Site manager
+agreed by email on October 2." Add it when you create the leg, in the leg's **Use in a lesson** panel, or in
+your route import file. **A capture on a leg with no permission note cannot be used.** Do not put anyone's
+phone number or email in it.
+
+## Adding the tour
+
+1. Open the project in **My Field Log**, go to **Legs**, and open **Use in a lesson** on the stop.
+2. Pick the **lesson**. If the stop's notes link to a lesson (a path like /yourname/your-course/lesson/its-slug),
+   that one is picked for you. Only empty tour lessons in your own courses are listed.
+3. Pick the **capture**. Captures that cannot be used are grayed out with the reason.
+4. Check the **credit**, which shows under the tour as plain text, for example "Photo by Jordan Lee at
+   Fort Benjamin Harrison, Lawrence, Indiana, October 2026." Edit it if someone else on the crew took it
+   (up to 400 characters).
+5. Press **Confirm**. The tour is on the lesson straight away; nobody has to approve it.
+
+## What can never be used
+
+The server refuses, and tells you why, when:
+
+- the subject **declined** (never published, whatever else is true);
+- the capture **involves a minor** and the consent is anything but **written** (a parent or guardian's yes);
+- it is not a **photo or video**;
+- it has no **https** link to where the file lives (media is link only: nothing is uploaded here);
+- the link **cannot be shown** in a lesson: link one file (a Google Drive file, a YouTube or Vimeo video, or
+  an image or video file), not a folder, a channel, or an audio file;
+- its stop has **no permission note**.
+
+## Checked again on every view
+
+A tour is not approved once and forgotten. **Every time the lesson opens, the same rules run again** against
+the capture as it stands. If a subject's consent is changed to declined, the permission note is removed, the
+capture's link changes, or the capture is deleted, the tour comes off the lesson at once and the lesson goes
+back to saying its tour is forthcoming.
+
+While a tour is showing, the lesson's title drops "(360 tour, forthcoming)" and the opening paragraph that
+says the tour is not here yet is hidden, because neither is true any more.
+
+## Seeing and removing tours
+
+**Teach, Tours** (/teach/tours, linked from the top of **Teach**) lists every tour lesson in your courses:
+**Empty**, **Shown, from the field** (with its credit and the link's site), **Hidden** (with the reason), or
+**Has its own tour link**. **Remove tour** empties the slot again; the capture stays in your Field Log.
+
+Learners cannot send you a tour to add. That would be a request list, which this app does not keep.`,
+  },
+  {
     slug: "quick-recall",
     title: "Add Quick-recall self-test prompts",
     category: "Teaching",
