@@ -132,10 +132,19 @@ Two more, below, protect the self-check card and the choice of widget itself:
 - `check-longest-option.ts` — the **length** tell: the right answer collects the qualifier and the
   "because" clause while the distractors stay short, so a learner can click the longest option
   without reading. **`shuffleOptions` does NOT fix this** — length travels with the option text.
+- `check-shortest-option.ts` — the mirror image: advice written to beat the longest tell ("keep the
+  correct option short") overshot, and a learner could click the shortest option instead.
+- `check-length-balance.ts` — **full balance** (BAM, 2026-10-14): no length POSITION may win, not the
+  shortest, the second-shortest, the second-longest or the longest. Its limit is chance plus 15 points
+  (40% on a four-option bank). So the goal is not "the correct option is never an extreme", which is
+  itself a tell (rule out the two extremes); it is that across a bank the correct answer is as often
+  long as short. The other two guards stop the extremes at 60% for every file; this one is the
+  standard new content is written to.
 
-The length guard is a **ratchet** like the standards one: 138 pre-existing files sit in
+All three length guards are **ratchets** like the standards one: pre-existing files sit in
 `GRANDFATHERED` with their measured score and may not get *worse*; any file not on that list fails.
-When you fix a file, delete its line. Never add a line to make new content pass.
+When you fix a file, delete its line. Never add a line to make new content pass. The sweep's method,
+tools and order are in `plans/bugs/2026-10-07-shortest-option-tell.md`.
 
 **When fixing either, edit option TEXT in place.** Never reorder options or move `correctIndex`
 (stored attempts keep the chosen index, so a reorder rewrites what past learners answered on the
