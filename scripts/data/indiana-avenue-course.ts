@@ -1546,7 +1546,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             prompt: "What does a street that stops where it once continued tell a researcher?",
             options: [
               "That the street was renamed",
-              "That it is right-of-way taken for a project, and there is a right-of-way map to request",
+              "That a project took right-of-way",
               "That the census tract changed",
               "Nothing checkable",
             ],
@@ -1558,19 +1558,19 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             prompt: "Name three things a 360 tour of a place cannot show you.",
             options: [
               "Color, texture, and scale",
-              "A date, an owner, an intention, and absence",
+              "A date, an owner, and an intention",
               "Buildings, streets, and signs",
               "Weather, season, and time of day",
             ],
             correctIndex: 1,
-            explanation: "You cannot photograph a demolished restaurant, so everything missing from the tour is a question for the records rather than an answer.",
+            explanation: "The tour has no clock, an owner is not on the facade, and a parking lot is no evidence of anyone's motives. Nor can it show absence: everything missing from the tour is a question for the records rather than an answer.",
             sourceLessonSlug: "ia-now-tour",
           },
           {
             prompt: "Why does this course publish a virtual_tour lesson before the tour URL exists?",
             options: [
               "Because the tour was canceled",
-              "Because beat 4 is a drop-in: a site course is complete and teachable with the other five beats, and the body serves as the observation brief meanwhile",
+              "Because the course is teachable without it",
               "Because the platform requires a placeholder",
               "Because the tour is optional and will never be added",
             ],
@@ -1582,7 +1582,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             prompt: "Why do the amber markers on the map include four other cities?",
             options: [
               "To pad the map",
-              "To stop the reader treating Indianapolis as a local misfortune rather than a local instance of a national method",
+              "To show a national method, not a local misfortune",
               "Because those cities have Green Book listings",
               "Because they are the four largest US cities",
             ],
@@ -1594,7 +1594,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             prompt: "The map lesson says its markers are approximate points. What follows from that?",
             options: [
               "The map is unreliable and should be ignored",
-              "Do not use them to find an address; use them to see the pattern, and use MapIndy or the assessor's cards for a parcel",
+              "Use them for the pattern, not an address",
               "The coordinates should be averaged",
               "The markers are fictional",
             ],

@@ -453,9 +453,9 @@ That's creating with AI the right way: **your vision, AI's help, your honesty.**
           {
             prompt: "How does generative AI mainly create a new image, song, or paragraph?",
             options: [
-              "It imagines it out of its own feelings and moods",
+              "It imagines each piece out of its own feelings, moods and memories",
               "It learns patterns from human-made work, then makes something new",
-              "It copies one existing file and simply renames it",
+              "It finds one existing file online, copies it exactly, and renames it",
               "It looks the answer up in one single reference book",
             ],
             correctIndex: 1,
@@ -502,8 +502,8 @@ That's creating with AI the right way: **your vision, AI's help, your honesty.**
             prompt: "Why do many artists object to AI being trained on their work?",
             options: [
               "Artists tend to dislike all new technology",
-              "Their work trained the model without being asked, paid or credited",
-              "The AI ends up paying them far too much",
+              "Their work trained the model without consent, pay or credit",
+              "The AI companies end up paying them far too much in royalties",
               "There is no real reason; the whole thing is imaginary",
             ],
             correctIndex: 1,
@@ -514,7 +514,7 @@ That's creating with AI the right way: **your vision, AI's help, your honesty.**
             prompt: "Under U.S. Copyright Office guidance, can you fully 'own' something an AI generated entirely on its own from one prompt?",
             options: [
               "Yes, anything an AI makes for you is automatically yours",
-              "Generally no; copyright protects human authorship only",
+              "Generally no; copyright needs a human author",
               "Only if you actually paid to use the tool",
               "Only if you keep the whole thing secret",
             ],
@@ -538,7 +538,7 @@ That's creating with AI the right way: **your vision, AI's help, your honesty.**
             prompt: "A classmate wants to make a realistic AI fake of another student 'as a joke.' What's the right call?",
             options: [
               "Fine, since the whole thing is only a joke",
-              "Not okay; deepfakes of real people need their consent",
+              "Not okay without that student's consent",
               "Fine, so long as it ends up looking real",
               "Only okay if you do not post it publicly anywhere",
             ],
@@ -562,7 +562,7 @@ That's creating with AI the right way: **your vision, AI's help, your honesty.**
             prompt: "What is Content Credentials (from C2PA), and why does it matter for honest creators?",
             options: [
               "A way of hiding the fact that AI was used",
-              "An open standard attaching a tamper-evident record of origin",
+              "A tamper-evident record of where a file came from",
               "A tool that makes you AI art free of charge",
               "A password manager for creative tools",
             ],

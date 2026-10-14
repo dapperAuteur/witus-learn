@@ -353,8 +353,8 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             prompt:
               "Treating AI as a \"socio-technical system\" means an AI harm is best understood as coming from…",
             options: [
-              "The maths alone, because the algorithms are objective",
-              "The whole system: data, people, institutions and incentives",
+              "The math alone, because the algorithms are objective",
+              "Code plus its data, people, institutions and incentives",
               "Bad luck of a kind that simply cannot be predicted",
               "The user of the system, in every single case",
             ],
@@ -367,8 +367,8 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             prompt:
               "A model with no \"race\" field still produces racially biased outcomes. The most likely reason is…",
             options: [
-              "The underlying maths of the model is simply broken",
-              "It learned from historical data that already encoded bias",
+              "The underlying math of the model is simply broken",
+              "It learned from historical data that encoded bias",
               "Someone outside must have hacked into the model",
               "AI cannot be biased at all without such a field",
             ],
@@ -434,7 +434,7 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             options: [
               "The algorithm itself, entirely on its own",
               "No one at all, since the whole thing is automated",
-              "A human or an organization; responsibility stays with people",
+              "The people and organizations behind it",
               "The end user of the system, and nobody else",
             ],
             correctIndex: 2,
@@ -461,7 +461,7 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
               "Which is a real, often-overlooked cost behind large AI models?",
             options: [
               "Nothing much, because AI is essentially weightless",
-              "Large electricity and water use, and low-paid labeling work",
+              "Electricity, water, and low-paid labeling work",
               "Only the price of your monthly subscription fee",
               "Just a very slightly slower internet connection",
             ],
@@ -475,7 +475,7 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
               "A manager says \"the hiring AI is objective, so it's fair.\" The best response is to…",
             options: [
               "Agree with them, because machines really are neutral",
-              "Treat 'objective' as a red flag and ask what data trained it",
+              "Ask what data trained it; 'objective' is a red flag",
               "Refuse to use any AI at all, now or ever again",
               "Ask them for a much faster computer to run it on",
             ],

@@ -139,7 +139,7 @@ What is left is the story and one person telling it. If the story does not work,
           {
             prompt: "Why does this series treat the monodrama as a teaching instrument rather than a niche form?",
             options: [
-              "It removes the structural crutches, so a weak story has nothing to hide behind",
+              "It removes every crutch, so a weak story has nothing to hide behind",
               "It is the cheapest form to produce, so more writers can attempt it",
               "It is the oldest dramatic form and therefore the most fundamental",
               "It requires less rehearsal than an ensemble piece of the same length",
@@ -220,7 +220,7 @@ What is left is the story and one person telling it. If the story does not work,
               "An offstage voice performed by a second actor",
               "The audience, whom Krapp addresses throughout",
               "A projected film of the character as a younger man",
-              "A tape recording of the character made thirty years earlier",
+              "A tape Krapp recorded of himself thirty years earlier",
             ],
             correctIndex: 3,
             explanation:
@@ -243,9 +243,9 @@ What is left is the story and one person telling it. If the story does not work,
           {
             prompt: "Which piece is described as the bridge between this series' storytelling and documentary tracks?",
             options: [
-              "Not I, for its extremity of form",
+              "Not I, for its lone lit mouth speaking at speed",
               "Every Brilliant Thing, for its use of the audience",
-              "Fires in the Mirror, built from interviews after Crown Heights",
+              "Fires in the Mirror, built from Crown Heights interviews",
               "Krapp's Last Tape, for its use of recorded material",
             ],
             correctIndex: 2,
@@ -429,7 +429,7 @@ That happens when the speaker's account contains evidence against itself. A deta
             prompt: "What does the course say about shaping real events?",
             options: [
               "Real events must be presented exactly as they occurred",
-              "Shaping is legitimate; asserting something false about a real person is not",
+              "You may shape, not fabricate what a real person said or did",
               "Any alteration of real events constitutes fabrication",
               "Real material should be avoided in favor of invention",
             ],
@@ -481,7 +481,7 @@ That happens when the speaker's account contains evidence against itself. A deta
             prompt: "When should a moment be written as scene rather than summary?",
             options: [
               "Whenever dialogue was actually spoken in the real event",
-              "When the change runs through it",
+              "When the change runs through it; summarize the rest",
               "At the beginning and end, with summary in the middle",
               "Whenever the passage exceeds roughly two minutes",
             ],
@@ -506,7 +506,7 @@ That happens when the speaker's account contains evidence against itself. A deta
           {
             prompt: "What is the greatest temptation created by a speaker who can step out and explain?",
             options: [
-              "Leaning on explanation and never dramatising anything",
+              "Leaning on explanation and never dramatizing anything",
               "Addressing the audience too directly and breaking immersion",
               "Overusing the present tense across the whole piece",
               "Making the piece longer than an audience will sit for",
@@ -520,8 +520,8 @@ That happens when the speaker's account contains evidence against itself. A deta
             prompt: "Which failure does the course say concentrates in the fractured memory form?",
             options: [
               "Excessive use of scene at the expense of summary",
-              "Atmosphere without change, because association feels like structure",
-              "Over-defining the audience's role in the piece",
+              "Atmosphere without change: nothing different at the end",
+              "Over-defining who the audience is to the speaker",
               "Relying on blackouts to signal every transition",
             ],
             correctIndex: 1,

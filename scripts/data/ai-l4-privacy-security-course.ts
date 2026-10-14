@@ -389,7 +389,7 @@ You won't be invisible, and that's not the goal. The goal is **control and resil
             prompt: "What is a \"data broker\"?",
             options: [
               "A kind of bank that trades in stocks",
-              "A company that collects and sells profiles of you",
+              "A firm that collects and sells your profile",
               "A government office that handles privacy",
               "A particular type of password manager",
             ],
@@ -401,7 +401,7 @@ You won't be invisible, and that's not the goal. The goal is **control and resil
             prompt: "Why is a REUSED password especially dangerous?",
             options: [
               "It is a good deal harder to remember",
-              "One site's breach opens every other account you own",
+              "One site's breach opens your other accounts",
               "It expires a great deal faster than others",
               "It cannot be used together with MFA at all",
             ],
@@ -413,7 +413,7 @@ You won't be invisible, and that's not the goal. The goal is **control and resil
             prompt: "Someone 'from your bank' calls and asks you to read back the code they just texted. You should…",
             options: [
               "Read it back quickly so that they can verify you",
-              "Refuse, hang up, and call back on a number you have",
+              "Hang up and call back on a number you have",
               "Text the code over to them just to be safe",
               "Give them only the first half of the code",
             ],

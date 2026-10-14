@@ -175,8 +175,8 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
             options: [
               "The change, which must be visible rather than inferred",
               "Scene and summary, since summary is a luxury of longer forms",
-              "The turn, which arrives well before the midpoint",
-              "Withholding: a question opened in second one, answered in second twenty",
+              "The turn, which arrives early and hard, well before the midpoint",
+              "Withholding: a question opened in second one, held to second twenty",
             ],
             correctIndex: 3,
             explanation:
@@ -239,7 +239,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
             prompt: "What is the durable relationship between a platform's objective and yours?",
             options: [
               "They are aligned, since platforms want creators to succeed",
-              "They overlap partially and never completely, and the gap is the pressure",
+              "They overlap only partially, and the gap is where pressure lives",
               "They are opposed, so any platform success indicates weak work",
               "They are unrelated, so the objective can safely be ignored",
             ],
@@ -265,7 +265,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
             prompt: "What does the course offer as the one durable strategic answer?",
             options: [
               "Post consistently enough that the system learns your account",
-              "Build something that survives the middle: an audience and body of work you control",
+              "Build what survives the middle: an audience and work you control",
               "Specialize in whichever format the platforms currently favor",
               "Match your output to the length the container is optimised for",
             ],
@@ -436,7 +436,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
           {
             prompt: "What promise does an anthology series make, compared with a serial?",
             options: [
-              "A kind of thing: the same voice and reliable pleasure, in any order",
+              "A kind of thing: one voice, one reliable pleasure, any order",
               "A resolution that arrives at a stated point in the run",
               "A fixed release schedule the maker commits to in advance",
               "That every part will be longer than the one before it",
@@ -530,7 +530,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
               "Whether the material is already publicly available elsewhere",
               "Whether the person would consent if you were able to ask them",
               "Whether the piece names them explicitly or only describes them",
-              "Whether the person can answer it: the bigger the asymmetry, the higher the bar",
+              "Whether the person in the piece has the reach to answer it",
             ],
             correctIndex: 3,
             explanation:

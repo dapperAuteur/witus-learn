@@ -163,7 +163,7 @@ In 2023 the Supreme Court held unanimously that this was unconstitutional. Keepi
             prompt: "What did the Supreme Court hold in Tyler v. Hennepin County?",
             options: [
               "That counties must automatically mail surplus funds to former owners",
-              "That a government keeping surplus equity beyond the debt is an unconstitutional taking",
+              "That keeping equity beyond the debt is an unconstitutional taking",
               "That surplus recovery agents must register in every state where they operate",
               "That tax foreclosure itself violates the Fifth Amendment in all circumstances",
             ],
@@ -254,7 +254,7 @@ In 2023 the Supreme Court held unanimously that this was unconstitutional. Keepi
             prompt: "What does this course say about its own position in the industry?",
             options: [
               "That it is the only accurate training available in the field",
-              "That it profits from your interest, so weigh its optimism accordingly",
+              "That it profits from your interest, so doubt its optimism",
               "That it is endorsed by the offices that hold surplus funds",
               "That course sales are unrelated to the recovery business",
             ],
@@ -448,7 +448,7 @@ Legislatures do not write numbers like that in the abstract. **Each one is a res
             prompt: "What is the 'where does my profit come from' test?",
             options: [
               "Whether revenue exceeds the cost of skip tracing on each file",
-              "Whether profit comes from work performed or from what the person does not know",
+              "Whether profit comes from work or from what the owner does not know",
               "Whether the fee is charged upfront rather than on contingency",
               "Whether the county or the owner ultimately pays your invoice",
             ],
@@ -476,7 +476,7 @@ Legislatures do not write numbers like that in the abstract. **Each one is a res
               "It protects the recipient's privacy from third-party interception",
               "It complies with state rules barring disclosure before an agreement",
               "It reduces the risk of another recovery agent claiming the file",
-              "It makes the sender necessary, since the recipient cannot verify or file alone",
+              "It makes the sender necessary: the owner cannot verify or file alone",
             ],
             correctIndex: 3,
             explanation:

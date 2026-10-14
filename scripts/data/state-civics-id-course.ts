@@ -266,7 +266,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             prompt: "Do Idaho's Governor and Lieutenant Governor run together?",
             options: [
               "Yes, on a joint ticket",
-              "No, they are elected separately and can be from different parties",
+              "No, they are elected separately",
               "The Legislature picks both",
               "There is no Lieutenant Governor",
             ],
@@ -279,7 +279,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             prompt: "What can Idaho citizens put on the ballot by initiative?",
             options: [
               "A constitutional amendment",
-              "A statute (a law)",
+              "A statute (an ordinary law)",
               "A new Governor",
               "Nothing: Idaho has no initiative",
             ],
@@ -292,7 +292,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             prompt: "Why is qualifying an Idaho initiative difficult?",
             options: [
               "It requires the Governor's approval",
-              "Signatures must be distributed across many legislative districts (statewide support), not just big cities",
+              "Signatures must span many districts",
               "Only judges can file them",
               "They must be unanimous",
             ],
@@ -305,7 +305,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             prompt: "How does Idaho choose its Supreme Court justices?",
             options: [
               "Appointed for life by the Governor",
-              "Elected on a nonpartisan ballot to 6-year terms",
+              "In nonpartisan elections",
               "Elected by the Legislature",
               "In partisan races",
             ],
@@ -331,7 +331,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             prompt: "How many legislators represent your Idaho district?",
             options: [
               "One",
-              "Three: one senator and two representatives",
+              "Three",
               "Five",
               "None; they are statewide",
             ],
@@ -352,7 +352,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             prompt: "Why does this course tell you to VERIFY Idaho's initiative and voting rules?",
             options: [
               "Because Idaho has no elections office",
-              "Because signature-distribution thresholds have been debated and litigated and voting is run by county clerks, confirm at [sos.idaho.gov](https://sos.idaho.gov)",
+              "Because the thresholds have been litigated",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
