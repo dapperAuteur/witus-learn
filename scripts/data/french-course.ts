@@ -844,7 +844,7 @@ _Platypus: Perfect! I'm very happy to meet you._
         questions: [
           {
             prompt: "Au café, comment Curb commande-t-il poliment ?",
-            options: ["Donne-moi un café", "Je voudrais un café au lait, s'il vous plaît", "Tu as du café ?", "Café maintenant"],
+            options: ["Donne-moi un café au lait tout de suite", "Je voudrais un café au lait, s'il vous plaît", "Eh, tu as du café ou pas ? Dépêche-toi !", "Je veux un café au lait, maintenant !"],
             correctIndex: 1,
             explanation: "« Je voudrais... s'il vous plaît » est la formule polie, au conditionnel.",
             sourceLessonSlug: "dialogue-cafe",
@@ -858,7 +858,7 @@ _Platypus: Perfect! I'm very happy to meet you._
           },
           {
             prompt: "« Je vais prendre une pomme » est :",
-            options: ["le passé composé", "le futur proche (aller + infinitif)", "l'imparfait", "le subjonctif"],
+            options: ["le passé composé (avoir/être + participe)", "le futur proche (aller + infinitif)", "l'imparfait (passé habituel ou en cours)", "le subjonctif (après « il faut que »)"],
             correctIndex: 1,
             explanation: "Futur proche : aller conjugué + infinitif.",
             sourceLessonSlug: "dialogue-cafe",
@@ -891,7 +891,7 @@ _Platypus: Perfect! I'm very happy to meet you._
           },
           {
             prompt: "Quelle est une présentation naturelle ?",
-            options: ["Je être Platypus", "Je m'appelle Platypus, enchanté", "Tu t'appelles Platypus", "Platypus a"],
+            options: ["Je être Platypus, enchanté", "Je m'appelle Platypus, enchanté", "Tu t'appelles Platypus", "Platypus a"],
             correctIndex: 1,
             explanation: "« Je m'appelle... enchanté » est la présentation naturelle.",
             sourceLessonSlug: "dialogue-presentations",

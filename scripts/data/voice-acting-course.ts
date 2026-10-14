@@ -281,10 +281,10 @@ National Institute on Deafness and Other Communication Disorders. (n.d.). *Takin
           {
             prompt: "What is the actual purpose of lip trills in a warmup?",
             options: [
-              "They strengthen the lips for crisper plosive consonants",
-              "They force steady airflow while keeping the throat out of the work",
-              "They stretch the vocal folds to extend range permanently",
-              "They warm the resonating spaces of the face and skull",
+              "They strengthen the lips so p and b plosives land more crisply",
+              "They force steady airflow and keep the throat out of the work",
+              "They stretch the vocal folds so the range extends permanently",
+              "They warm the resonating spaces of the face, sinuses, and skull",
             ],
             correctIndex: 1,
             explanation:
@@ -466,7 +466,7 @@ American Speech-Language-Hearing Association. (n.d.). *Speech sound disorders: A
           {
             prompt: "What does over-enunciation get wrong, given that it is perfectly intelligible?",
             options: [
-              "It hits every word with equal weight, which no longer sounds like a human talking",
+              "It weights every word equally, which no longer sounds like a human talking",
               "It slows the read down too much for commercial time limits to accommodate",
               "It emphasizes vowels so strongly that the consonants disappear entirely",
               "It causes plosive pops by making every consonant release too much air",
@@ -494,8 +494,8 @@ American Speech-Language-Hearing Association. (n.d.). *Speech sound disorders: A
             options: [
               "A lisp disqualifies a performer from paid voice work until corrected",
               "Voice courses are the right place to clinically retrain a lisp",
-              "A lisp narrows some lanes but matters far less in character and conversational work",
-              "Mic placement can fully neutralize a lisp on any recording",
+              "A lisp narrows some lanes and matters far less in character work",
+              "Mic placement alone can fully neutralize a lisp on any recording",
             ],
             correctIndex: 2,
             explanation:

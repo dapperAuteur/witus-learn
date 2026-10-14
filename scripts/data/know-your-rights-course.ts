@@ -337,9 +337,9 @@ This course explains general constitutional principles; it is not legal advice. 
           {
             prompt: "What is \"incorporation\"?",
             options: [
-              "The process of amending the Constitution",
-              "The process by which the Supreme Court applied most Bill of Rights protections to state and local governments",
-              "The process of ratifying the Bill of Rights in 1791",
+              "The process of amending the Constitution under Article V",
+              "The process of applying most of the Bill of Rights to the states",
+              "The process of the states ratifying the Bill of Rights in 1791",
               "The process of impeaching a federal judge",
             ],
             correctIndex: 1,
@@ -349,7 +349,7 @@ This course explains general constitutional principles; it is not legal advice. 
           },
           {
             prompt: "Which of these is NOT one of the categories of speech the Supreme Court has excluded from 1st Amendment protection?",
-            options: ["Obscenity", "True threats", "Unpopular political opinions", "Incitement to imminent lawless action"],
+            options: ["Obscenity under the Miller test", "True threats of violence", "Unpopular political opinions", "Incitement to imminent lawless action"],
             correctIndex: 2,
             explanation:
               "Unpopular political opinions are protected speech. Obscenity, true threats, and incitement to imminent lawless action are recognized unprotected categories.",
@@ -366,7 +366,7 @@ This course explains general constitutional principles; it is not legal advice. 
             prompt: "What is a \"prior restraint\"?",
             options: [
               "A criminal sentence served before trial",
-              "Government censorship of speech or press before it is published",
+              "Government censorship before publication",
               "A court order requiring bail",
               "A rule limiting how long a protest permit lasts",
             ],
@@ -379,7 +379,7 @@ This course explains general constitutional principles; it is not legal advice. 
             prompt: "Under Mahanoy Area School District v. B.L. (2021), how did the Court treat a student's off-campus social media post compared to on-campus speech?",
             options: [
               "The same; schools have identical authority on and off campus",
-              "Schools have a diminished, though not zero, interest in regulating off-campus speech",
+              "Schools' interest off campus: diminished, not zero",
               "Schools have no authority over any off-campus speech",
               "The Court did not address off-campus speech",
             ],

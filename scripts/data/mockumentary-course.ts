@@ -446,10 +446,10 @@ Every great mockumentary character runs on this. **They believe they are being d
           {
             prompt: "What does current scholarship say about the 1938 War of the Worlds panic?",
             options: [
-              "It was substantially a media myth: the audience was small and evidence thin",
-              "It was larger than the papers reported, since most local incidents went entirely unrecorded",
+              "It was substantially a media myth: the audience was small and evidence of panic thin",
+              "It was larger than the papers reported, since most local incidents went unrecorded",
               "It occurred because the broadcast carried no announced frame at any point in the hour",
-              "It has since been confirmed by contemporary police, hospital and telephone-exchange records",
+              "It has been confirmed by contemporary police, hospital and telephone-exchange records",
             ],
             correctIndex: 0,
             explanation:
@@ -498,8 +498,8 @@ Every great mockumentary character runs on this. **They believe they are being d
           {
             prompt: "What does synthetic media genuinely change about this form?",
             options: [
-              "Cost, the performer's consent, and volume",
-              "The permission ladder, which no longer distinguishes fiction from documentation",
+              "Cost, volume, and consent: a real person's face and voice used without asking",
+              "The permission ladder, which no longer separates fiction from documentation",
               "The frame requirement, which detection tools now satisfy automatically",
               "The grounds for believing a documentary, which shift to technical analysis",
             ],

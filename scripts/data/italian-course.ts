@@ -919,7 +919,7 @@ _Platypus: Perfect! I'm very happy to meet you._
         questions: [
           {
             prompt: "Al bar, come ordina Curb con cortesia?",
-            options: ["Dammi un caffè", "Vorrei un caffellatte, per favore", "Hai del caffè?", "Caffè adesso"],
+            options: ["Dammi un caffellatte, subito", "Vorrei un caffellatte, per favore", "Ehi tu, hai del caffè o no?", "Voglio un caffellatte, adesso"],
             correctIndex: 1,
             explanation: "\"Vorrei... per favore\" è la forma cortese, al condizionale.",
             sourceLessonSlug: "dialogo-bar",

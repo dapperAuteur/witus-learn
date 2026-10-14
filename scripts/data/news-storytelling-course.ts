@@ -175,10 +175,10 @@ From How Stories Work: the owner is the person the change happens to. A policy h
           {
             prompt: "What is a nut graf, and why does its absence matter?",
             options: [
-              "The opening sentence; without it the story has no hook",
-              "The final paragraph; without it the story has no resolution",
-              "The attribution paragraph; without it claims are unsourced",
-              "The paragraph saying why this matters; without it readers have facts and no reason to care",
+              "The opening sentence, known as the lede; without it the story has no hook",
+              "The closing background paragraph; without it the story has no resolution",
+              "The attribution paragraph; without it claims rest on the reporter's word alone",
+              "The paragraph saying why this matters; without it readers have no reason to care",
             ],
             correctIndex: 3,
             explanation:
@@ -435,8 +435,8 @@ From How Stories Work: the owner is the person the change happens to. A policy h
           {
             prompt: "When should the terms of an interview be agreed?",
             options: [
-              "Afterwards, once you know what is worth using",
-              "Before the conversation, explicitly rather than by assumption",
+              "Afterwards, once you know which quotes are worth using",
+              "Before the conversation, explicitly, not by assumption",
               "Only when the source raises the question themselves",
               "At publication, when the final quotes are selected",
             ],
@@ -448,10 +448,10 @@ From How Stories Work: the owner is the person the change happens to. A policy h
           {
             prompt: "What is the governing test for editing a quotation?",
             options: [
-              "Whether the edit improves clarity for a general reader",
+              "Whether the edit makes the quotation clearer for a general reader",
               "Whether the outlet's style guide permits the change",
               "Whether the speaker would recognize it as what they said and meant",
-              "Whether the original wording was grammatically correct",
+              "Whether the speaker's original wording was grammatically correct",
             ],
             correctIndex: 2,
             explanation:

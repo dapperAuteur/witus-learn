@@ -207,7 +207,7 @@ Not the narrator, not the most interesting person present: the one the change ha
             prompt: "A piece follows a whole town through a closure and feels flat. What is the likely diagnosis?",
             options: [
               "The change is too small to sustain the runtime",
-              "The change has no owner, because groups do not want things",
+              "The change has no owner; groups do not want things",
               "The withholding closes too early in the piece",
               "The scenes are too long relative to the summary",
             ],
@@ -499,7 +499,7 @@ Not the narrator, not the most interesting person present: the one the change ha
             prompt: "What is the test for whether an ending is doing too much work?",
             options: [
               "Read it aloud and check whether it exceeds the intended runtime",
-              "Cover the last thirty seconds and ask whether the change is already obvious",
+              "Cover the last thirty seconds: is the change already obvious?",
               "Remove the final line and see whether the piece still resolves",
               "Ask a reader to predict the ending from the opening page",
             ],
@@ -513,7 +513,7 @@ Not the narrator, not the most interesting person present: the one the change ha
             options: [
               "A writer should outline before drafting and then follow it",
               "Genre conventions oblige a writer to satisfy reader expectations",
-              "The opening tells the audience what to expect, and breaking it feels like a cheat",
+              "The opening sets what to expect; breaking it feels like a cheat",
               "Publishers require a synopsis that the finished work must match",
             ],
             correctIndex: 2,
