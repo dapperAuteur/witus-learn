@@ -249,7 +249,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
               "A shared toolkit, largely federal, applied locally",
               "A set of unrelated local accidents that happen to look alike because American cities all look alike",
               "One conspiracy directed from a single office in Washington throughout the postwar decades",
-              "A story about architecture that has very little to do with law, money or statutes",
+              "A story about architecture, not law",
             ],
             correctIndex: 0,
             explanation: "The learner already knows the instruments from the city courses. This course teaches the transmission: the same statutes paid for them and one opinion made the central tool safe nationwide.",
@@ -282,10 +282,10 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
           {
             prompt: "Which is the STRONGEST kind of connection in this course's taxonomy?",
             options: [
-              "Thematic rhyme, because resemblance across many places is the most widely observed pattern",
+              "Thematic rhyme",
               "Instrument lineage, because it covers the longest span of time and the most instruments",
               "Model to copy, because a program that others imitate leaves the largest documentary trail",
-              "Source to use",
+              "Source to use, because it has a document at both ends",
             ],
             correctIndex: 3,
             explanation: "Source to use has a document at both ends: the authorising instrument in one place and the tool in use in another. The only thing that can break it is chronology.",
@@ -294,10 +294,10 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
           {
             prompt: "Which is the WEAKEST kind of connection in the taxonomy?",
             options: [
-              "Thematic rhyme",
+              "Thematic rhyme, because a resemblance is not a connection",
               "Person to place, because individual careers are difficult to reconstruct from public records",
               "Doctrine pair, because judicial opinions rarely explain the reasoning behind a holding",
-              "Model to copy, because delegations of visiting officials seldom leave any usable record",
+              "Model to copy",
             ],
             correctIndex: 0,
             explanation: "A rhyme is a resemblance. It is a category worth naming and a good reason to go looking for a line, but it is not itself a connection.",
@@ -343,9 +343,9 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
             prompt: "Milliken v. Bradley and Parents Involved are treated in this course as which kind of connection?",
             options: [
               "Source to use, because the earlier case is the direct legal authority for the later one",
-              "A doctrine pair",
+              "A doctrine pair, bounding one question from opposite ends",
               "Instrument lineage, since the school district line evolved steadily between the two decisions",
-              "Person to place, because several of the same lawyers appear on both sides of the two cases",
+              "Person to place, through the same lawyers",
             ],
             correctIndex: 1,
             explanation: "Milliken limited what a court could compel across a district line; Parents Involved limited what a district could voluntarily choose. Reading them together frames one argument without making either the cause of the other.",
@@ -366,8 +366,8 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
           {
             prompt: "The mechanism question asks you to name the channel. Which four channels does the lesson list?",
             options: [
-              "Money, law, paper and people",
-              "Rail, road, river and telegraph, the four ways information moved between American cities",
+              "Money, law, paper and people, such as a grant, a statute, a plan or a planner",
+              "Rail, road, river and telegraph",
               "Federal, state, county and municipal, the four levels at which a decision can be taken",
               "Newspapers, universities, professional associations and political parties, the four institutions that spread ideas",
             ],
@@ -710,10 +710,10 @@ Deborah Archer's study of highways and racial equity documents that urban inters
           {
             prompt: "Give the citation and date of the Housing Act of 1949.",
             options: [
-              "Public Law 83-560, 68 Stat. 590, approved on the second day of August in the year 1954",
-              "Public Law 84-627, 70 Stat. 374, signed on the twenty-ninth day of June in the year 1956",
+              "Public Law 83-560, 68 Stat. 590, approved August 2, 1954",
+              "Public Law 84-627, 70 Stat. 374, signed June 29, 1956",
               "Public Law 81-171, 63 Stat. 413, approved July 15, 1949",
-              "Public Law 93-198, 87 Stat. 774, signed on the twenty-fourth day of December in 1973",
+              "Public Law 93-198, 87 Stat. 774, signed December 24, 1973",
             ],
             correctIndex: 2,
             explanation: "Title I of that Act created the national money for slum clearance and urban redevelopment, the program soon called urban renewal.",
@@ -867,7 +867,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
             prompt: "Where does the defence rationale for the Interstate system first appear in the record?",
             options: [
               "In the 1944 Act, which described routes located to serve the National Defense",
-              "In the 1956 Act alone, since no earlier highway legislation mentioned national defense in any form",
+              "In the 1956 Act, with no earlier mention of defense",
               "In a 1961 executive order issued after the system was already substantially under construction nationally",
               "In the Yellow Book of 1955, which was prepared jointly by the Bureau of Public Roads and the Army",
             ],
@@ -1342,7 +1342,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
           {
             prompt: "Which three later decisions cite Berman, making those edges documented lines?",
             options: [
-              "Shelley v. Kraemer, Buchanan v. Warley and Milliken v. Bradley, the three great property decisions of the century",
+              "Shelley v. Kraemer, Buchanan v. Warley and Milliken v. Bradley",
               "Poletown, Hawaii Housing Authority v. Midkiff and Kelo v. City of New London",
               "Brown v. Board of Education, Parents Involved and United States v. Board of School Commissioners of Indianapolis",
               "Washington v. Seattle School District No. 1, Evans v. Buchanan and Sheff v. O'Neill, the desegregation remedy cases",
@@ -1426,10 +1426,10 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
           {
             prompt: "How does this course classify the relationship between Milliken and Parents Involved?",
             options: [
-              "A doctrine pair, not a source-to-use line",
+              "A doctrine pair, because no citation chain between them was verified",
               "A source-to-use line, because the later decision expressly adopts the reasoning of the earlier one",
               "An instrument lineage, because the school district boundary evolved into a different tool between them",
-              "A model-to-copy relationship, because Seattle deliberately imitated the arrangements that Detroit had used",
+              "A model-to-copy line, with Seattle imitating Detroit",
             ],
             correctIndex: 0,
             explanation: "Milliken limits what a court may compel; Parents Involved limits what a district may voluntarily choose. This course did not verify a citation chain between them and will not assert one it has not read.",
@@ -1475,9 +1475,9 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             prompt: "State the verdict on the claim that other cities copied Pittsburgh.",
             options: [
               "True in every respect, because more than seventy delegations came to Pittsburgh to study the Renaissance",
-              "False in every respect, because no evidence exists that Pittsburgh's program was noticed elsewhere",
+              "False in every respect: nobody noticed Pittsburgh",
               "Unresolvable, because the records that would settle it were destroyed when the Civic Arena was demolished",
-              "True as to emulation, false as to a copy-chain",
+              "True as to emulation, false as to a copy-chain; what traveled was a reputation",
             ],
             correctIndex: 3,
             explanation: "Pittsburgh was genuinely emulated as a model of the public-private partnership. The clearance instruments spread through the 1949 Act and parallel state laws instead.",

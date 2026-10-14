@@ -294,9 +294,9 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "What architecture are modern large language models built on?",
             options: [
-              "The transformer",
+              "The transformer, introduced by Vaswani et al. in 2017",
               "A verified reference database queried at the moment of answering",
-              "A rules engine written and maintained by subject-matter experts",
+              "A rules engine written by experts",
               "A search index refreshed every time the model is asked a question",
             ],
             correctIndex: 0,
@@ -308,8 +308,8 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "What role does this course ask you to keep, whatever the AI produces?",
             options: [
               "Prompt author, since the wording decides whether the output is correct",
-              "Observer, stepping in only when an answer looks obviously wrong",
-              "Editor and fact-checker",
+              "Observer, intervening only rarely",
+              "Editor, fact-checker, and person responsible",
               "Reviewer of the model's sources, though not of its reasoning",
             ],
             correctIndex: 2,
@@ -333,10 +333,10 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "You need an answer grounded in one specific article. What does the lesson tell you to do?",
             options: [
-              "Name the article and let the model recall what is in it",
+              "Name the article and let it recall",
               "Ask the model to search its training data for that article",
               "Ask the model how confident it is about the article's contents",
-              "Paste the article in",
+              "Paste the article in rather than trust its memory",
             ],
             correctIndex: 3,
             explanation:
@@ -359,9 +359,9 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "Which part of the recipe does \"You are a patient biology tutor\" set?",
             options: [
-              "Context, because it describes the situation the answer is for",
+              "Context, because it sets the situation",
               "Task, because it says what the model is being asked to produce",
-              "Role",
+              "Role, because it sets who the model should act as",
               "Examples, because it shows the model a sample of what to copy",
             ],
             correctIndex: 2,
@@ -372,8 +372,8 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "Why does the lesson tell you to ask a model for its reasoning or its sources?",
             options: [
-              "So you can check them",
-              "Because a model that explains itself makes fewer mistakes overall",
+              "So you can check them rather than take them on trust",
+              "Because explaining makes it error-free",
               "Because reasoning shown in an answer is drawn from verified records",
               "Because the extra text gives the model more room to be accurate",
             ],
@@ -386,9 +386,9 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "A prompt reads \"Write about dogs\" and never says how long or in what shape. Which piece is missing?",
             options: [
               "Context, since the model has not been told who will read it",
-              "Role, since no voice has been chosen for the answer",
+              "Role, since no voice was chosen",
               "Examples, since no sample answer has been supplied",
-              "Format",
+              "Format, since length and shape were never set",
             ],
             correctIndex: 3,
             explanation:
@@ -398,9 +398,9 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "A prompt says \"Explain this\" with nothing pasted in. Which piece is missing?",
             options: [
-              "Context",
+              "Context, since nothing was pasted for it to see",
               "Format, since no length or structure has been requested",
-              "Role, since the model has not been told who to act as",
+              "Role, since no persona was given",
               "Task, since the word explain does not name a deliverable",
             ],
             correctIndex: 0,
@@ -412,9 +412,9 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "Which piece of the recipe makes a model answer like a kind coach rather than a generic bot?",
             options: [
               "Examples, by showing one sample answer written in that voice",
-              "Context, by describing the reader the answer is aimed at",
+              "Context, by naming the reader",
               "Task, by naming the coaching outcome you want",
-              "Role",
+              "Role, by setting who the model should act as",
             ],
             correctIndex: 3,
             explanation:
@@ -425,9 +425,9 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "The drill asks what to request from a model when you want to check whether a claim is true. What is it?",
             options: [
               "A confidence score for each sentence in the answer",
-              "Its sources",
+              "Its sources, so you can check them",
               "A shorter version with the uncertain parts removed",
-              "A list of the subjects the model was trained on",
+              "Its training subjects",
             ],
             correctIndex: 1,
             explanation:
@@ -541,9 +541,9 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "What is a reverse image search for, in this lesson's workflow?",
             options: [
-              "Finding the original",
+              "Finding the original, where it first appeared",
               "Detecting which model generated a picture from its pixel pattern",
-              "Measuring how many times a picture has been edited since capture",
+              "Counting a picture's edits",
               "Reading the Content Credentials embedded inside the image file",
             ],
             correctIndex: 0,
@@ -556,8 +556,8 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             options: [
               "A rounding error, since the model approximated a real value",
               "A retrieval failure, since it could not reach the right record",
-              "Hallucination",
-              "A bias artifact, since the training data skewed the answer",
+              "A hallucination, since it is fluent but false",
+              "A bias artifact",
             ],
             correctIndex: 2,
             explanation:
@@ -567,8 +567,8 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "How much proof does a citation you never opened give you?",
             options: [
-              "Some, because a model rarely fabricates a complete reference entry",
-              "None",
+              "Some, if it looks complete",
+              "None, until you have opened and checked it",
               "Strong, provided the reference carries a DOI or a publisher name",
               "Enough for a first draft, if you flag it to be checked later",
             ],
@@ -595,8 +595,8 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             options: [
               "Watch it a second time before deciding what to do about it",
               "Read the replies underneath it before forming a view",
-              "Save a copy of it to your own device for later",
-              "Share it",
+              "Save a copy",
+              "Share, post, or repost it",
             ],
             correctIndex: 3,
             explanation:
@@ -621,8 +621,8 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             options: [
               "A licensing breach, since the output belongs to the tool's maker",
               "A privacy violation, since the prompt was stored by the provider",
-              "A factual error, since the model's claims were never verified",
-              "Plagiarism",
+              "A factual error",
+              "Plagiarism or academic dishonesty",
             ],
             correctIndex: 3,
             explanation:
@@ -632,9 +632,9 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "What relationship between AI and human judgment does the lesson argue for?",
             options: [
-              "AI supports it",
+              "AI supports it and does not replace it",
               "AI replaces it wherever the decision already follows a written rule",
-              "AI overrides it whenever the two disagree on a matter of fact",
+              "AI overrides it on facts",
               "AI is neutral, so it corrects for the biases a person brings",
             ],
             correctIndex: 0,
@@ -646,13 +646,13 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "Who is accountable for AI-assisted work that you publish or act on?",
             options: [
               "The tool's provider, under the terms you agreed to at signup",
-              "You are",
+              "You are, even if the AI wrote every word",
               "Whoever wrote the prompt, if that was somebody other than you",
-              "Nobody, until a specific harm can be traced back to the output",
+              "Nobody, until harm is traced",
             ],
             correctIndex: 1,
             explanation:
-              "Even if AI wrote it. That is why disclosure and verification are obligations rather than courtesies.",
+              "Using a tool does not hand the responsibility to it. That is why disclosure and verification are obligations rather than courtesies.",
             sourceLessonSlug: "ethics-bias",
           },
           {

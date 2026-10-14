@@ -149,10 +149,10 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "Which word in the definition does the lesson call operative?",
             options: [
-              "Rigorous",
+              "Rigorous, which rules out reporting that hopes it works",
               "Social, which limits the form to problems affecting groups rather than individuals",
               "Responses, which excludes reporting on the underlying problem itself",
-              "Reporting, which distinguishes it from commentary or analysis",
+              "Reporting, as opposed to commentary",
             ],
             correctIndex: 0,
             explanation:
@@ -175,9 +175,9 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What is solutions journalism a replacement for?",
             options: [
-              "Nothing",
+              "Nothing; it sits alongside accountability work",
               "Accountability reporting, which it supersedes on most beats",
-              "Feature writing, which it replaces in the weekend sections",
+              "Weekend feature writing",
               "Analysis pieces, which it makes unnecessary once evidence is reported",
             ],
             correctIndex: 0,
@@ -2947,10 +2947,10 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "Which quality is most often missing?",
             options: [
-              "Insight",
+              "Insight: a how-to somebody elsewhere could learn from",
               "Evidence of whether the response is achieving what it claims",
               "Discussion of what the response has not solved and whom it misses",
-              "Operational detail about what the response actually does",
+              "Operational detail about the response",
             ],
             correctIndex: 0,
             explanation:
@@ -3025,9 +3025,9 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What is required if you have a relationship with the response or its funders?",
             options: [
-              "Say so in the piece",
+              "Say so in the piece, so readers can weigh what follows",
               "Decline the assignment and pass it to a colleague on the desk",
-              "Disclose it to the editor without disclosing it to readers",
+              "Tell the editor, not the readers",
               "Obtain the outlet's written approval before proceeding with reporting",
             ],
             correctIndex: 0,
@@ -3090,8 +3090,8 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "Which quality does the hero imposter fail?",
             options: [
-              "Insight",
-              "Evidence of whether the response produced any measurable results",
+              "Insight: little about an exceptional person transfers",
+              "Evidence of measurable results",
               "Operational detail about what the response actually does day to day",
               "Discussion of the conditions the response depends on to work",
             ],
@@ -3116,9 +3116,9 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "Which quality does the announcement fail completely?",
             options: [
-              "Evidence",
+              "Evidence, because nothing has happened yet",
               "Insight into what somebody elsewhere could learn from it",
-              "Operational detail about how the program will be run",
+              "Operational detail about the plan",
               "Discussion of the limits the program is likely to encounter",
             ],
             correctIndex: 0,
@@ -3246,9 +3246,9 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "How should a program's own evaluation be treated?",
             options: [
-              "As evidence of the weakest kind",
+              "As evidence of the weakest kind, labeled as such",
               "As independent evidence, since the program holds the underlying data",
-              "As inadmissible and therefore excluded from the piece entirely",
+              "As inadmissible, and left out",
               "As equivalent in strength to a funder-commissioned evaluation",
             ],
             correctIndex: 0,
@@ -3298,9 +3298,9 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "Where does the central limitation go?",
             options: [
-              "Beside the central claim",
+              "In the same passage as the central claim",
               "In the closing section, alongside all the other qualifications",
-              "In a linked methodological note published with the piece",
+              "In a linked methods note",
               "In the headline, where the strongest claim also appears",
             ],
             correctIndex: 0,
@@ -3363,9 +3363,9 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "Why interview operators about mechanism rather than merit?",
             options: [
-              "Merit questions invite a pitch",
+              "Merit questions invite a pitch, not a description",
               "Merit questions expose the reporter to a later claim of bias",
-              "Mechanism questions can be asked more quickly under deadline",
+              "Mechanism questions are quicker",
               "Merit questions fall outside the scope of the four qualities",
             ],
             correctIndex: 0,

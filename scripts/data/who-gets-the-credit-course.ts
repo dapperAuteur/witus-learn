@@ -32,7 +32,8 @@ import type { AuthoredCourse } from "./authored-course";
 // `## Vocabulary` block of 3-6 lesson-specific terms; APA 7 `## Sources`; a quiz per teaching
 // section (pool sized by the Tier-0 density rule, serving 5, passing 80, shuffled) plus a
 // 40-question final serving 10; every question carries `explanation` + `sourceLessonSlug`. Correct
-// options are written SHORT and distractors long and specific.
+// options are kept off both length extremes as a pattern (the longest and shortest tells are both
+// guarded in `pnpm lint`), and distractors are specific and definitively wrong.
 export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
   title: "Who Gets the Credit: Black Inventors and the Machinery of Attribution",
   description:
@@ -150,7 +151,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
         questions: [
           {
             prompt: "What does a patent grant?",
-            options: ["A limited-term right to exclude others", "An official finding that nobody else conceived of the invention", "Ownership of the underlying idea for as long as it is in commercial use", "A government guarantee that the holder may manufacture and sell the device"],
+            options: ["A limited-term right to exclude others from making, using, or selling it", "A certificate of originality", "Ownership of the underlying idea for as long as it is in commercial use", "A government guarantee that the holder may manufacture and sell the device"],
             correctIndex: 0,
             explanation: "In exchange for disclosing how the thing works. It is a bargain, not a prize and not a certificate of originality.",
             sourceLessonSlug: "what-a-patent-is-and-is-not",
@@ -178,7 +179,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Which part of a patent defines what is legally protected?",
-            options: ["The numbered claims", "The title, which is why patent titles are drafted so carefully", "The abstract, which summarizes the protected subject matter", "The drawings, since they show the embodiment being claimed"],
+            options: ["The numbered claims at the end of the patent", "The title, which is why patent titles are drafted so carefully", "The abstract, which summarizes the protected subject matter", "The drawings of the device"],
             correctIndex: 0,
             explanation: "Two patents with nearly identical titles can protect completely different things. Arguing without reading claims is arguing about titles.",
             sourceLessonSlug: "what-a-patent-is-and-is-not",
@@ -234,7 +235,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "How should any figure for nineteenth-century Black patents be described?",
-            options: ["A floor, not a count", "A precise total, since the Patent Office indexed applicants by race", "An overestimate, since Baker double-counted reissued patents", "Unknowable, since no reconstruction of any kind is possible"],
+            options: ["A floor, not a count: the minimum found so far", "A precise total, since the Patent Office indexed applicants by race", "An overestimate of the true total", "Unknowable, since no reconstruction of any kind is possible"],
             correctIndex: 0,
             explanation: "A minimum consistent with the evidence found so far, which is weaker than the round numbers usually quoted and is the accurate statement.",
             sourceLessonSlug: "the-paper-trail-and-its-holes",
@@ -276,14 +277,14 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What kind of record does mechanism one, legal exclusion, leave behind?",
-            options: ["None", "A rejected application file with the examiner's reasoning", "A note in the Patent Office index marking the applicant ineligible", "A separate register of barred applications kept until 1865"],
+            options: ["None, since the inventor could not apply", "A rejected application file", "A note in the Patent Office index marking the applicant ineligible", "A separate register of barred applications kept until 1865"],
             correctIndex: 0,
             explanation: "Which is why the 1858 opinion is so valuable: it is the rare case where the barrier itself was written down and can be read.",
             sourceLessonSlug: "five-ways-a-name-disappears",
           },
           {
             prompt: "Under assignment, who is named on the face of the patent?",
-            options: ["The inventor", "The company, with the inventor listed only in the file history", "Both parties as joint inventors, by statutory requirement", "Neither, since assigned patents issue in the assignee's name alone"],
+            options: ["The inventor, though the employer owns the patent", "The company, with the inventor listed only in the file history", "Both, as joint inventors", "Neither, since assigned patents issue in the assignee's name alone"],
             correctIndex: 0,
             explanation: "The inventor is named and does not own it. Nothing improper has happened by the law's standards, and the public remembers the corporation.",
             sourceLessonSlug: "five-ways-a-name-disappears",
@@ -311,7 +312,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Which mechanism leaves the best documentary evidence?",
-            options: ["Publication by a colleague", "Legal exclusion, because the statute survives", "Assignment, because the agreement is filed with the patent", "Absorption into a brand, because trademark records survive"],
+            options: ["Publication by a colleague, since papers survive", "Legal exclusion", "Assignment, because the agreement is filed with the patent", "Absorption into a brand, because trademark records survive"],
             correctIndex: 0,
             explanation: "The papers survive and can be read, so you can see who published what and when.",
             sourceLessonSlug: "five-ways-a-name-disappears",
@@ -458,7 +459,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What makes the patent record usable as historical evidence at all?",
-            options: ["The disclosure requirement", "The requirement that inventors reside in the United States", "The examiner's obligation to record the applicant's occupation", "The rule that patents must be worked commercially within three years"],
+            options: ["The requirement to disclose how the invention works", "A residency requirement", "The examiner's obligation to record the applicant's occupation", "The rule that patents must be worked commercially within three years"],
             correctIndex: 0,
             explanation: "A patent has to explain how the thing works, so it documents technique even when it documents nothing about the person.",
             sourceLessonSlug: "what-a-patent-is-and-is-not",
@@ -639,7 +640,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Who denied the application before it reached the Attorney General?",
-            options: ["Commissioner of Patents Joseph Holt", "Attorney General Jeremiah S. Black, in a preliminary ruling", "Rufus Rhodes, then a United States patent examiner", "The Supreme Court, on appeal from the Mississippi courts"],
+            options: ["Commissioner of Patents Joseph Holt", "Attorney General Jeremiah S. Black, in a preliminary ruling", "Rufus Rhodes", "The Supreme Court, on appeal from the Mississippi courts"],
             correctIndex: 0,
             explanation: "Holt refused it, and the question then went up to the Attorney General for an opinion.",
             sourceLessonSlug: "the-1858-opinion",
@@ -653,14 +654,14 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Why could Ned not swear the required oath?",
-            options: ["Dred Scott had denied him citizenship and standing", "Because the oath required literacy, which the law presumed he lacked", "Because he had already assigned his rights to Stuart by operation of law", "Because the 1836 Act limited applications to residents of free states"],
+            options: ["Dred Scott had denied him citizenship and standing", "Because the oath required literacy", "Because he had already assigned his rights to Stuart by operation of law", "Because the 1836 Act limited applications to residents of free states"],
             correctIndex: 0,
             explanation: "The 1857 decision is what the oath reasoning in the 1858 opinion depends on.",
             sourceLessonSlug: "the-1858-opinion",
           },
           {
             prompt: "Why could Stuart not obtain the patent either?",
-            options: ["He was not the inventor", "He had failed to file within the statutory period after the invention", "He was not a citizen of a state that permitted patent applications", "He had already licensed the device before applying, which barred the grant"],
+            options: ["He was not the original and first inventor", "He had failed to file within the statutory period after the invention", "He was not a citizen", "He had already licensed the device before applying, which barred the grant"],
             correctIndex: 0,
             explanation: "The oath required the applicant to be the original and first inventor, and he plainly was not.",
             sourceLessonSlug: "the-1858-opinion",
@@ -723,7 +724,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Who headed the Confederate Patent Office?",
-            options: ["Rufus Rhodes", "Joseph Holt, who had left the United States office", "Jeremiah S. Black, after leaving the Attorney General's office", "Jefferson Davis, who administered it from the executive office"],
+            options: ["Rufus Rhodes, a former US patent examiner", "Joseph Holt", "Jeremiah S. Black, after leaving the Attorney General's office", "Jefferson Davis, who administered it from the executive office"],
             correctIndex: 0,
             explanation: "A former United States patent examiner. The office ran from August 1861 to March 1865.",
             sourceLessonSlug: "the-confederate-answer",
@@ -751,7 +752,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Which amendment removed the legal status that made the oath impossible?",
-            options: ["The Thirteenth", "The Fourteenth, by conferring citizenship on the formerly enslaved", "The Fifteenth, by extending the franchise", "The Sixteenth, by reorganizing federal administrative authority"],
+            options: ["The Thirteenth, by abolishing slavery", "The Fourteenth, by conferring citizenship on the formerly enslaved", "The Fifteenth", "The Sixteenth, by reorganizing federal administrative authority"],
             correctIndex: 0,
             explanation: "The Fourteenth then settled the citizenship question that Dred Scott had created.",
             sourceLessonSlug: "the-confederate-answer",
@@ -765,7 +766,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What patent number does Thomas L. Jennings hold?",
-            options: ["3306x", "X8447, issued for a corn seed planter", "305,474, issued for a dough kneader and roller", "4,879, issued for a multiple-effect evaporator"],
+            options: ["3306x, reconstructed after the 1836 fire", "X8447", "305,474, issued for a dough kneader and roller", "4,879, issued for a multiple-effect evaporator"],
             correctIndex: 0,
             explanation: "Dated 3 March 1821, with the X marking it as reconstructed after the 1836 Patent Office fire.",
             sourceLessonSlug: "free-patentees-and-the-first-problem",
@@ -807,7 +808,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Which patent number covers Rillieux's broader multiple-effect system?",
-            options: ["4,879, dated 10 December 1846", "3,237, granted in 1843 for the double-effect design", "129,843, granted in 1872 for a lubricator", "3306x, reconstructed after the 1836 fire"],
+            options: ["4,879, dated 10 December 1846", "3,237, granted in 1843 for the double-effect design", "129,843, granted in 1872 for a lubricator", "3306x"],
             correctIndex: 0,
             explanation: "The 1843 patent 3,237 covered a double-effect evaporator; the 1846 patent covered the broader system.",
             sourceLessonSlug: "free-patentees-and-the-first-problem",
@@ -891,7 +892,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Which decision is the 1858 opinion's oath reasoning built on?",
-            options: ["Dred Scott v. Sandford", "Plessy v. Ferguson, decided four decades later", "Prigg v. Pennsylvania, on the return of fugitives", "The Amistad case, on the status of captives"],
+            options: ["Dred Scott v. Sandford, decided in 1857", "Plessy v. Ferguson, decided four decades later", "Prigg v. Pennsylvania, on the return of fugitives", "The Amistad case"],
             correctIndex: 0,
             explanation: "The 1857 decision denied citizenship to Black Americans, which is what removed Ned's standing to swear the oath.",
             sourceLessonSlug: "the-1858-opinion",
@@ -1090,7 +1091,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "When is a pre-invention assignment signed?",
-            options: ["On the first day of the job", "At the moment the invention is reduced to practice", "When the patent application is filed with the office", "After the patent issues, as a separately negotiated sale"],
+            options: ["On the first day of the job", "At the moment the invention is reduced to practice", "At filing", "After the patent issues, as a separately negotiated sale"],
             correctIndex: 0,
             explanation: "The employment agreement covers anything the employee invents in the scope of the work, from the moment it exists.",
             sourceLessonSlug: "assignment",
@@ -1160,7 +1161,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What was Lewis Latimer's professional training?",
-            options: ["Draftsman", "Chemist, specializing in carbon compounds", "Machinist, trained in a railroad workshop", "Electrical engineer, trained at a technical college"],
+            options: ["Draftsman, making patent drawings", "Chemist", "Machinist, trained in a railroad workshop", "Electrical engineer, trained at a technical college"],
             correctIndex: 0,
             explanation: "He drew patent drawings, worked for Hiram Maxim's electric lighting company and later Edison's, and became an Edison Pioneer.",
             sourceLessonSlug: "inside-the-corporation",
@@ -1202,7 +1203,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Mark Dean's patents from the original IBM PC work are owned by whom?",
-            options: ["IBM", "Dean personally, under a negotiated exception", "Jointly by Dean and the other named inventors", "A consortium of PC manufacturers who licensed the bus"],
+            options: ["IBM, where he worked as an engineer", "Dean personally", "Jointly by Dean and the other named inventors", "A consortium of PC manufacturers who licensed the bus"],
             correctIndex: 0,
             explanation: "Commonly reported as three of the nine original patents, including the bus architecture that let users add peripherals.",
             sourceLessonSlug: "inside-the-corporation",
@@ -1237,7 +1238,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "At what age did Alice Ball die?",
-            options: ["Twenty-four", "Thirty-two, shortly after publishing her results", "Forty-one, after two decades at the College of Hawaii", "Nineteen, while still an undergraduate student"],
+            options: ["Twenty-four, in 1916", "Thirty-two, shortly after publishing her results", "Forty-one, after two decades at the College of Hawaii", "Nineteen"],
             correctIndex: 0,
             explanation: "She died in 1916, before publishing, which is the opening the credit dispute ran through.",
             sourceLessonSlug: "credit-without-a-patent",
