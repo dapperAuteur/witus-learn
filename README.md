@@ -849,7 +849,26 @@ links to it, so no school ever sees a byte of it. Mirrors `/admin/library` on wi
 Migration `0048_nebulous_vermin.sql` creates the table (`pnpm db:migrate:prod` after merging).
 The owner can also download each document's typeset **PDF** (uploaded by `sync-library.mjs` from
 the sibling `<name>.pdf`; migration `0052` adds the columns) from the list rows or the reader
-header — attachment download, no caching.
+header — attachment download, no caching. `pnpm library:sync:prod <markdown files...>` runs the same
+script against `.env.prod` (`.env.local` carries no database URL, so the plain form needs one exported).
+
+## My Field Log: site tours and imported routes (`/field-log`)
+
+A project's **legs** are its stops. Each leg now has a **Visited** checkbox (optimistic, and queued
+offline like captures, then replayed when the connection returns), its **notes** rendered as text with
+links (site paths such as `/bam/<course>/lesson/<slug>` and http(s) URLs; never markdown or HTML), a
+**Directions** link when it has coordinates, and the tab shows how many are visited with a jump to the
+next stop. Ticking calls `PATCH /api/field-log/projects/[id]/legs/[legId]`, which 404s for a leg outside
+that project or a project the user cannot reach. The **`site-tour`** template is the checklist for a
+route of places (plan, consent, capture, verify, publish), and every checklist now shows the template's
+own labels.
+
+A long route is loaded rather than typed: `pnpm field-log:import <file.json> [--email] [--tenant]
+[--replace] [--check]` (and `field-log:import:prod`) creates one project with a leg per stop. It refuses
+a git-tracked file, because an itinerary says where someone will be and this repo is public; keep the
+JSON under the gitignored `content/` tree. Re-runs are safe: legs match by name and keep their visited
+tick, and a leg missing from the file is reported, never deleted. The file shape is in the script's
+header.
 
 ## Admin home + self-serve brand settings
 
