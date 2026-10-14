@@ -5,6 +5,13 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Sound Craft, CREW-02** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Seven
+  sections, 26 lessons, 583 questions: listening and the decibel, protecting your hearing (OSHA and NIOSH),
+  field recording in nature (the Park Service protocol), recording in a theater and on a set, sounds made by
+  hand (a 1913 Paris stage manual, a 1928 federal radio script, the Foley story as an open record),
+  permission and rights, and sound as work. Checked claim by claim (88 fixes) and question by question
+  (58). Lessons needing a qualified reviewer (hearing conservation, safety, rights) or a practitioner are
+  marked; seven research checks filed. Held for a named reviewer.
 - 🔧 **Rigging for Stage and Broadcast Crews, CREW-01** (\`feat/crew-courses\`, no migration). BAM approved the
   brief on 2026-10-08. Six sections, 20 lessons, 446 questions: who rigs on a show, working at height (the
   stage-edge exemption, thresholds, a harness not a seat), slings and hardware, forces, under the load, and
