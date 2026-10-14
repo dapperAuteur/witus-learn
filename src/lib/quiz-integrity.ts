@@ -8,8 +8,8 @@
 //   • scripts/check-longest-option.ts   always-pick-longest, limit max(60%, chance + 25 points)
 //   • scripts/check-shortest-option.ts  always-pick-shortest, the same limit, mirrored
 //   • scripts/check-length-balance.ts   every length POSITION, limit max(40%, chance + 15 points)
-//   • src/components/course-quiz-integrity.tsx and /admin/quiz-integrity, through measureBank and
-//     courseQuizIntegrity at the bottom of this file
+//   • src/components/course-quiz-integrity.tsx and /admin/quiz-integrity, through measureBank,
+//     courseQuizIntegrity and quizIntegrityFromLessons further down this file
 //
 // Pure: no I/O, no database, no dependencies, so the scripts can import it with tsx (the way
 // scripts/check-assessment-fit.ts imports src/lib/assessment-fit.ts) and Vitest can pin it.
