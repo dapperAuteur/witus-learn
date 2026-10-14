@@ -246,7 +246,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
           {
             prompt: "What does this course say the city courses actually documented, taken together?",
             options: [
-              "A shared toolkit, largely federal, applied locally",
+              "A shared toolkit, largely federal, applied locally: a handful of statutes, one manual, one Supreme Court opinion",
               "A set of unrelated local accidents that happen to look alike because American cities all look alike",
               "One conspiracy directed from a single office in Washington throughout the postwar decades",
               "A story about architecture, not law",
@@ -294,7 +294,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
           {
             prompt: "Which is the WEAKEST kind of connection in the taxonomy?",
             options: [
-              "Thematic rhyme, because a resemblance is not a connection",
+              "Thematic rhyme, because a resemblance is a reason to look for a line, not a substitute for one",
               "Person to place, because individual careers are difficult to reconstruct from public records",
               "Doctrine pair, because judicial opinions rarely explain the reasoning behind a holding",
               "Model to copy",
@@ -307,7 +307,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
             prompt: "State the hard rule that governs the whole course.",
             options: [
               "Any resemblance between two cities counts as a link if both cities took federal money in the same decade",
-              "A shared pattern is a rhyme; a documented line is a connection",
+              "A shared pattern is a rhyme; a documented line is a connection, and without that line the honest word is rhyme",
               "A connection is established once two independent secondary sources describe the same resemblance",
               "Nothing counts as a connection unless a court has expressly said so in a published opinion",
             ],
@@ -330,7 +330,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
           {
             prompt: "What is the difference between admiration and copying, in the model-to-copy category?",
             options: [
-              "Admiration is evidence of reputation; copying needs evidence of a copy",
+              "Admiration is evidence of reputation; copying needs evidence of a copy, such as a borrowed provision",
               "There is no practical difference, because a city that is admired is by definition being imitated",
               "Admiration is documented in newspapers while copying is documented only in private correspondence",
               "Copying is what happens between neighboring cities, and admiration is what happens across long distances",
@@ -343,7 +343,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
             prompt: "Milliken v. Bradley and Parents Involved are treated in this course as which kind of connection?",
             options: [
               "Source to use, because the earlier case is the direct legal authority for the later one",
-              "A doctrine pair, bounding one question from opposite ends",
+              "A doctrine pair: one limits what a court may compel, the other what a district may choose",
               "Instrument lineage, since the school district line evolved steadily between the two decisions",
               "Person to place, through the same lawyers",
             ],
@@ -380,7 +380,7 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
             options: [
               "Whether the two places are close enough together for officials to have traveled between them easily",
               "Whether the sources you are relying on are primary rather than secondary documents",
-              "Alternative cause: what else would produce the same result",
+              "Alternative cause: what else, such as a shared federal statute, would produce the same result",
               "Whether the outcome in the second city was worse than the outcome in the first city was",
             ],
             correctIndex: 2,
@@ -722,7 +722,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
           {
             prompt: "In the 1949 declaration of national housing policy, what is the operative word this course points to?",
             options: [
-              "\"Through,\" because clearance is written into the goal as the way it will be reached",
+              "\"Through,\" because clearance is written into the goal as the way it will be reached, not as a side effect",
               "\"Decent,\" because the standard of a decent home was never defined anywhere in the statute itself",
               "\"Feasible,\" because it gave every locality an unlimited amount of time to reach the stated goal",
               "\"Welfare,\" because it placed the whole program under the general welfare clause of the Constitution",
@@ -746,7 +746,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
           {
             prompt: "How was the net project cost split between Washington and the locality?",
             options: [
-              "Up to two thirds federal, with local grants-in-aid worth at least one third",
+              "Up to two thirds federal, with local grants-in-aid worth at least one third of net project cost",
               "Evenly, half and half, with the state government contributing whatever remained after the split",
               "Entirely federal, since a local agency could not lawfully contribute to a federal grant program",
               "Ninety percent federal and ten percent local, the same formula the highway program later used",
@@ -759,7 +759,7 @@ Deborah Archer's study of highways and racial equity documents that urban inters
             prompt: "Why does the 1949 Act make many exciting city-to-city claims harder to sustain?",
             options: [
               "Because the Act expressly forbade one locality from consulting another locality's redevelopment plan",
-              "It is the alternative cause: a standing federal offer explains simultaneous clearances",
+              "It is the alternative cause: a standing federal offer, open in every state, explains simultaneous clearances",
               "Because the records generated by Title I projects were sealed for fifty years after each project closed",
               "Because most cities in this series declined the federal money and paid for clearance out of local funds",
             ],
@@ -1356,7 +1356,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             options: [
               "That the legislature rather than the judiciary is the main guardian of the public needs served by social legislation",
               "That a housing survey may be used as evidence about the physical condition of buildings in an area",
-              "That cleared land could be conveyed to a private company and still count as a public use",
+              "That cleared land could be conveyed to a private company and still satisfy the constitutional public-use requirement",
               "That the government may exercise eminent domain at all within the boundaries of the District of Columbia",
             ],
             correctIndex: 2,
@@ -1378,7 +1378,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
           {
             prompt: "What is the accurate, reclassified version of the Berman-to-Indianapolis edge?",
             options: [
-              "Berman insured the clearance rather than causing it, and what traveled was legal security",
+              "Berman insured the clearance rather than causing it, and what traveled was the legal security of the clearance",
               "There is no relationship of any kind between the two, and the two courses should not be taught together",
               "Berman was decided because of what had already happened in Indianapolis during the preceding decade",
               "Indianapolis officials attended the argument in Berman and returned home to begin the clearance work",
@@ -1426,7 +1426,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
           {
             prompt: "How does this course classify the relationship between Milliken and Parents Involved?",
             options: [
-              "A doctrine pair, because no citation chain between them was verified",
+              "A doctrine pair, rank 3, because this course did not verify a citation chain from one to the other",
               "A source-to-use line, because the later decision expressly adopts the reasoning of the earlier one",
               "An instrument lineage, because the school district boundary evolved into a different tool between them",
               "A model-to-copy line, with Seattle imitating Detroit",
@@ -1441,7 +1441,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
               "It ordered Baltimore to repeal them within a fixed period and to compensate the owners they had affected",
               "It upheld them, on the ground that a municipality may regulate the use of land within its own boundaries",
               "It left them untouched, because the decision applied only to the Commonwealth of Kentucky and its cities",
-              "They became unenforceable rather than repealed, because it ended the whole class of laws",
+              "They became unenforceable rather than repealed, because the Louisville case ended the whole class of racial zoning laws",
             ],
             correctIndex: 3,
             explanation: "Baltimore had a chain of four ordinances, in 1910, twice in 1911 and 1913. A Louisville lawsuit disabled another city's statute book, which is source to use.",
@@ -1450,7 +1450,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
           {
             prompt: "Why does the sequence \"first zoning, then covenants\" fail?",
             options: [
-              "Because Guilford's racial covenant is 1913, four years before Buchanan was decided in 1917",
+              "Because the Roland Park Company wrote Guilford's racial covenant in 1913, four years before Buchanan in 1917",
               "Because covenants were never used in Baltimore, only in the surrounding counties of the state of Maryland",
               "Because the Supreme Court expressly held in 1917 that covenants could not be substituted for zoning laws",
               "Because racial zoning ordinances remained fully enforceable in Baltimore until the Fair Housing Act of 1968",

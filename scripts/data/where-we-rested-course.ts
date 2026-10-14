@@ -554,9 +554,9 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
           {
             prompt: "Willa Bruce's holding at Manhattan Beach had which legal identity?",
             options: [
-              "An unrecorded homestead claim",
+              "A homestead claim filed with the federal land office around 1912",
               "Lots 8 and 9 of Block 5, Peck's Manhattan Beach Tract",
-              "The whole of Peck's Manhattan Beach Tract",
+              "The whole of Peck's Manhattan Beach Tract, which she platted herself",
               "A ninety-nine year lease granted by the city of Manhattan Beach",
             ],
             correctIndex: 1,
@@ -578,7 +578,7 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
           {
             prompt: "How much land the Douglasses bought in 1893 is contested. Which pair of figures is in dispute?",
             options: [
-              "10 acres and 15 acres",
+              "10 acres of farmland and 15 acres of beachfront",
               "26 and two-thirds acres, and 40 acres",
               "100 acres and 216 acres",
               "2,700 acres and 3,000 acres of cutover timberland",
@@ -658,7 +658,7 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
             prompt: "What finally made NaNa dune permanently public land?",
             options: [
               "A federal statute revising a preserve boundary in 2004",
-              "A Nassau County zoning amendment",
+              "A Nassau County zoning amendment reserving the dune as open space",
               "A purchase made by MaVynee Betsch herself",
               "A Florida state park designation granted in 1977 by the governor",
             ],
@@ -973,9 +973,9 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
           {
             prompt: "Why does this course call the changing room the most important product on the list?",
             options: [
-              "Because you cannot swim if you cannot change",
+              "Because you cannot swim if you cannot change, so the beach is not really public",
               "Because it was the most profitable line by a wide margin",
-              "Because the buildings were architecturally significant and survive",
+              "Because the buildings were architecturally significant and survive today as listed landmarks",
               "Because it was the only service the Green Book editors would list",
             ],
             correctIndex: 0,
@@ -1023,7 +1023,7 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
             options: [
               "Who owned the land, because the deeds were destroyed by fire",
               "Which states they were located in, because the records conflict badly",
-              "Room rates, occupancy, payroll and season length",
+              "Room rates, occupancy, payroll and season length, because no season's books have been read",
               "Whether Black Americans were in fact excluded from other beaches",
             ],
             correctIndex: 2,
@@ -1055,7 +1055,7 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
               "The price at which they voluntarily sold the property to a buyer",
               "The assessed value entered by the Los Angeles County assessor",
               "The amount they had originally paid for the two beachfront lots",
-              "The court's award in the condemnation judgment",
+              "The court's award in the condemnation judgment, not a sale price",
             ],
             correctIndex: 3,
             explanation: "An award, not a price. They had asked for more. An award is not a sale and an asking price is not a transaction.",
@@ -1064,7 +1064,7 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
           {
             prompt: "Which power does a property owners association NOT have?",
             options: [
-              "Taking property by eminent domain",
+              "Taking property by eminent domain for public use",
               "Holding and maintaining common property it owns",
               "Setting covenants that bind its own members",
               "Raising money, advocating, and interpreting local history",
@@ -1077,7 +1077,7 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
             prompt: "Idlewild is unincorporated. Which unit of Michigan government does it sit in?",
             options: [
               "The City of Baldwin, which annexed it in the 1920s",
-              "Yates Township, in Lake County",
+              "Yates Township, in Lake County, with the township and county providing oversight",
               "No unit at all. It is federal land inside a national forest",
               "The Idlewild Lot Owners Association, which is a public body",
             ],
@@ -1091,7 +1091,7 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
               "The American Beach Property Owners Association, by member vote",
               "The National Park Service, under the Timucuan preserve legislation",
               "The community itself, through a town meeting held each summer",
-              "Nassau County",
+              "Nassau County, with the community participating but not deciding",
             ],
             correctIndex: 3,
             explanation: "The community is unincorporated, so the county holds the pen. County planning staff have worked with residents since 2018, but participation and authority are different things.",
@@ -1549,7 +1549,7 @@ Here is why the evidence does not carry it.
               "In the same year that the association incorporated, the ordinance passed",
               "Out of that suffering came great achievement",
               "The same board that leased the beach also repealed the lease",
-              "This happened to the same people, in the same town, in the same summer",
+              "This happened to the same people",
             ],
             correctIndex: 1,
             explanation: "It makes exclusion productive, which is an argument for exclusion. The other three are the allowed constructions.",
@@ -1584,7 +1584,7 @@ Here is why the evidence does not carry it.
             options: [
               "Filed suit in Superior Court against the arresting officer and trustees",
               "Sold their property to the city and moved to Los Angeles",
-              "Opened a ten-room boarding house",
+              "Opened a modern ten-room boarding house outside the condemned area",
               "Petitioned the Board of Trustees to repeal the Bessonette beach lease",
             ],
             correctIndex: 2,
@@ -1594,7 +1594,7 @@ Here is why the evidence does not carry it.
           {
             prompt: "Under Hugh Macbeth's questioning on August 2, 1927, Oscar Bessonette said his sign was posted against whom?",
             options: [
-              "Undesirables, and he agreed that meant Black people",
+              "Undesirables, and he agreed that he considered Black people undesirable",
               "Nobody in particular. He said the sign had been left by a previous tenant",
               "Anybody without a bathing permit issued by the Manhattan Beach police",
               "Only those swimmers who had been warned by an officer on a previous day",
@@ -1618,7 +1618,7 @@ Here is why the evidence does not carry it.
           {
             prompt: "The City of Manhattan Beach's own 2021 report said it could not obtain which record?",
             options: [
-              "The outcome of Elizabeth Catley's 1928 damages suit",
+              "The outcome of Elizabeth Catley's 1928 suit seeking 35,000 dollars in damages",
               "The 1924 minutes recording Ordinance 276",
               "The deed by which Willa Bruce acquired Lot 8 of Block 5",
               "The final judgment issued in the condemnation case on June 10, 1929",
@@ -1666,7 +1666,7 @@ Here is why the evidence does not carry it.
           {
             prompt: "In the 1929 final judgment, the largest single award went to whom?",
             options: [
-              "Dyer, Rice and Eichelberger, for fourteen lots",
+              "Dyer, Rice and Eichelberger, for fourteen lots across Blocks 5 and 12",
               "Willa and Charles Bruce, for lots 8 and 9 of Block 5",
               "Mary R. Sanders, for lot 6 of Block 12",
               "Ethel and George W. Prioleau, for the southerly half of lot 4",

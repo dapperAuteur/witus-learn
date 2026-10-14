@@ -629,7 +629,7 @@ ${flightCard(FLIGHT_0)}
           {
             prompt: "What does this course explicitly refuse to claim about itself?",
             options: [
-              "That it is affiliated with or preparation for any certifying body",
+              "That it is affiliated with any certifying body",
               "That tasting can be learned by an ordinary drinker",
               "That comparative tasting is better than tasting one wine alone",
               "That structure should be scored before flavor is described",
@@ -681,7 +681,7 @@ ${flightCard(FLIGHT_0)}
           {
             prompt: "How does the course describe the role of blind tasting in the sommelier profession?",
             options: [
-              "The sport of the profession, useful training, but not its substance",
+              "The sport of the profession, not its substance",
               "The single most important daily skill on a restaurant floor",
               "An obsolete ritual with no modern training value",
               "A reliable way to authenticate a bottle's stated origin",
@@ -733,7 +733,7 @@ ${flightCard(FLIGHT_0)}
           {
             prompt: "Why does the course tell you to write your notes before discussing a wine with others?",
             options: [
-              "Group tasting without writing first collapses into agreeing with whoever spoke first",
+              "Otherwise the group drifts into agreeing with whoever spoke first",
               "Written notes are required evidence in any certified tasting",
               "Speaking aloud changes the temperature of the wine in the glass",
               "Discussion before writing makes the finish harder to time accurately",
@@ -746,7 +746,7 @@ ${flightCard(FLIGHT_0)}
           {
             prompt: "What is the stated reason tasters spit rather than swallow?",
             options: [
-              "Ethanol degrades discrimination quickly, and a flight is four to six pours",
+              "Ethanol degrades discrimination quickly",
               "Swallowing prevents accurate measurement of the finish",
               "Spitting is required to detect cork taint reliably",
               "Swallowed wine coats the tongue and blocks retronasal aroma",
@@ -966,7 +966,7 @@ Four things carry most of a quality assessment, and they are all things you can 
           {
             prompt: "Why does the grid ask whether the wine is CLEAN before anything else on the nose?",
             options: [
-              "If the wine is faulty, no other observation on the sheet means anything",
+              "If the wine is faulty, nothing else on the sheet matters",
               "Faults become undetectable once the wine has been swirled",
               "Clean wines legally require a different tasting sheet",
               "Cleanliness determines which glass shape should be used",
@@ -1005,7 +1005,7 @@ Four things carry most of a quality assessment, and they are all things you can 
           {
             prompt: "Why does the palate stage use a five step scale rather than low, medium and high?",
             options: [
-              "Almost every wine is medium something, so three steps collapse the useful middle",
+              "Three steps leave almost every wine stuck at medium",
               "Five steps are required for the hundred point rating scale",
               "Five matches the number of basic tastes the tongue reports",
               "Three step scales cannot be compared between two tasters",
@@ -1031,7 +1031,7 @@ Four things carry most of a quality assessment, and they are all things you can 
           {
             prompt: "What does a garnet or tawny rim on a red wine most directly suggest?",
             options: [
-              "Age, as color pigments polymerise and the blue tones fade first",
+              "Age, as pigments polymerize and blue tones fade",
               "A thick skinned grape variety with long maceration",
               "Fermentation in stainless steel rather than oak",
               "Residual sugar left in the wine at bottling",
@@ -1057,7 +1057,7 @@ Four things carry most of a quality assessment, and they are all things you can 
           {
             prompt: "What is the honest position the course takes on hundred point wine scores?",
             options: [
-              "A compressed scale, useful only against a critic you have calibrated against",
+              "A compressed scale, useful only once you calibrate to a critic",
               "The most reliable objective measure of wine quality available",
               "Meaningless, because quality cannot be assessed at all",
               "Accurate for young wines and unreliable for aged ones",
@@ -1070,7 +1070,7 @@ Four things carry most of a quality assessment, and they are all things you can 
           {
             prompt: "Why does the tasting order run sight, nose, palate, conclusion rather than starting with a guess?",
             options: [
-              "It moves from least suggestible evidence to most, limiting confirmation bias",
+              "Least suggestible evidence comes first, limiting confirmation bias",
               "It follows the order in which the senses physically respond to liquid",
               "It matches the sequence required for restaurant service",
               "It allows the wine to warm to the correct temperature in stages",
@@ -1341,7 +1341,7 @@ This drill is deliberately harder than a multiple choice question, because produ
           {
             prompt: "What makes Nebbiolo's appearance so useful as a teaching example?",
             options: [
-              "Its color is pale while its tannin is very high, breaking the dark-equals-strong assumption",
+              "Its color is pale while its tannin is very high",
               "It is the only red grape that produces a wine with no visible rim variation",
               "Its color deepens with age rather than fading, unlike other reds",
               "It is opaque when young and pale only after a decade in bottle",
@@ -1393,7 +1393,7 @@ This drill is deliberately harder than a multiple choice question, because produ
           {
             prompt: "Cool grown Syrah and warm grown Shiraz differ most obviously in what respect?",
             options: [
-              "Peppery and savory versus sweet fruited, plush and higher in alcohol",
+              "Peppery and savory versus sweet fruited and plush",
               "Pale and low tannin versus opaque and very high tannin",
               "Very high acid versus no perceptible acid at all",
               "Aromatic when young versus completely neutral when young",
@@ -1407,7 +1407,7 @@ This drill is deliberately harder than a multiple choice question, because produ
             prompt: "Why does the course say the grape variety is sometimes the wrong question to ask?",
             options: [
               "Because variety is legally secret in most of the world",
-              "Because blends are common and many Old World labels never state the grapes",
+              "Because blends are common and Old World labels often omit grapes",
               "Because DNA testing has shown most named varieties are identical",
               "Because variety has no measurable effect on structure or aroma",
             ],
@@ -1435,7 +1435,7 @@ This drill is deliberately harder than a multiple choice question, because produ
               "Twenty varieties account for all legally permitted plantings worldwide",
               "Twenty is the maximum number a human palate can distinguish",
               "The remaining varieties are all crosses of those twenty",
-              "They cover most shelves and set the reference points everything else is judged against",
+              "They cover most shelves and set the reference points",
             ],
             correctIndex: 3,
             explanation:
@@ -1922,7 +1922,7 @@ ${flightCard(FLIGHT_6)}
           {
             prompt: "What single decision makes a wine red rather than white?",
             options: [
-              "Fermenting on the skins before pressing, rather than pressing first",
+              "Fermenting on the skins before pressing",
               "Using a black grape variety rather than a white one",
               "Ageing in oak barrels rather than stainless steel",
               "Allowing malolactic conversion to complete",
@@ -1962,7 +1962,7 @@ ${flightCard(FLIGHT_6)}
             prompt: "Where does the bread and brioche character of traditional method sparkling wine come from?",
             options: [
               "Oak barrels used for the first fermentation",
-              "Autolysis, as dead yeast cells break down during bottle ageing",
+              "Autolysis of dead yeast cells in the bottle",
               "A yeast strain selected specifically for bread aromas",
               "Dosage added at the moment of disgorging",
             ],
@@ -1977,7 +1977,7 @@ ${flightCard(FLIGHT_6)}
               "Port uses sweeter grape varieties than Sherry does",
               "Sherry is filtered to remove sugar before bottling",
               "Port is aged in a solera system and Sherry is not",
-              "Port is fortified during fermentation, Sherry after it finishes",
+              "Port is fortified during fermentation, Sherry afterward",
             ],
             correctIndex: 3,
             explanation:
@@ -2014,7 +2014,7 @@ ${flightCard(FLIGHT_6)}
             prompt: "What is the most reliable way to tell oak character apart from fruit character?",
             options: [
               "Oak character is always more intense than fruit character",
-              "Oak markers are a short non-fruit list: vanilla, coconut, clove, toast, smoke, cedar",
+              "Oak markers are a short non-fruit list: vanilla, toast, smoke",
               "Oak character appears only in red wine",
               "Oak character disappears entirely once a wine is decanted",
             ],
@@ -2054,7 +2054,7 @@ ${flightCard(FLIGHT_6)}
             options: [
               "No wine contains them unless they are deliberately added",
               "They are the established cause of red wine headaches",
-              "They cause real reactions in a small group, and are declared in the US at ten parts per million or more",
+              "They cause genuine reactions in some asthmatics",
               "They are banned outright in European winemaking",
             ],
             correctIndex: 2,
@@ -2325,7 +2325,7 @@ The habit being built is separating the enforceable from the decorative, which i
             prompt: "What does an appellation legally guarantee?",
             options: [
               "That an independent panel judged the wine to be of high quality",
-              "Origin, permitted grapes and production limits, and sometimes minimum ageing",
+              "Origin, permitted grapes, production limits, sometimes aging",
               "That the producer owns every vineyard named on the bottle outright",
               "That the wine will improve for at least a decade in a proper cellar",
             ],
@@ -2353,7 +2353,7 @@ The habit being built is separating the enforceable from the decorative, which i
               "The residual sugar remaining in the finished bottled wine",
               "The number of years the wine was aged before its release",
               "The classification rank of the vineyard the fruit came from",
-              "The sugar in the grapes at harvest, which is ripeness rather than sweetness",
+              "Grape sugar at harvest, meaning ripeness, not sweetness",
             ],
             correctIndex: 3,
             explanation:
@@ -2620,7 +2620,7 @@ ${flightCard(FLIGHT_9)}
           {
             prompt: "What is the structural difference between left bank and right bank Bordeaux?",
             options: [
-              "Left bank is Cabernet dominant and firmer, right bank is Merlot dominant and rounder",
+              "Left bank is Cabernet led and firmer, right bank Merlot led and rounder",
               "Left bank is a white wine region and right bank produces only red wine",
               "Left bank wines are unoaked while right bank wines are aged in new barrels",
               "Left bank permits blending and right bank requires a single named variety",
@@ -2700,7 +2700,7 @@ ${flightCard(FLIGHT_9)}
             options: [
               "Portugal subsidises wine exports more heavily than other EU states",
               "Portuguese wine is exempt from EU appellation law and its costs",
-              "Its many native varieties are unfamiliar, which suppresses price but not quality",
+              "Unfamiliar native varieties suppress price but not quality",
               "Portuguese vineyards are mechanised, which lowers production costs sharply",
             ],
             correctIndex: 2,
@@ -2711,7 +2711,7 @@ ${flightCard(FLIGHT_9)}
           {
             prompt: "Which Austrian white is described as one of the most food friendly wines made anywhere?",
             options: [
-              "Gruner Veltliner, with white pepper, citrus and high acid",
+              "Gruner Veltliner, with white pepper and citrus",
               "Blaufrankisch, medium bodied and peppery",
               "Spatburgunder, grown mainly on limestone soils",
               "Garganega, the principal grape of the Soave zone",
@@ -2904,7 +2904,7 @@ ${flightCard(FLIGHT_10)}
             prompt: "What did Goldstein and colleagues (2008) find in their large blind tasting study?",
             options: [
               "Experts and non-experts agreed closely on which wines were most expensive",
-              "Non-experts enjoyed pricier wines slightly less, while trained tasters showed a small positive link",
+              "Non-experts liked pricier wines slightly less; trained tasters, slightly more",
               "Price predicted enjoyment strongly for every group of tasters studied",
               "Blind tasters could identify a wine's price bracket with high reliability",
             ],
@@ -3378,7 +3378,7 @@ ${flightCard(FLIGHT_11)}
           {
             prompt: "Why does steak work with a tannic red wine?",
             options: [
-              "Tannins bind to the fat and protein in the food instead of to your saliva",
+              "Tannins bind to the food's fat and protein, not your saliva",
               "The heat of cooked meat evaporates the alcohol in the wine",
               "Red meat and red wine share the same dominant aroma compounds",
               "Grilling produces acids that neutralise the tannins chemically",
@@ -3485,7 +3485,7 @@ ${flightCard(FLIGHT_11)}
               "Both originate in the same region, which guarantees a match",
               "The cheese's fat is the only element interacting with the wine",
               "Blue cheese contains no salt, so it cannot alter the wine",
-              "Salt softens the wine's structure, and both are intense enough to survive each other",
+              "Salt softens the wine, and each is intense enough to hold up",
             ],
             correctIndex: 3,
             explanation:
@@ -3642,7 +3642,7 @@ ${flightCard(FLIGHT_12)}
           {
             prompt: "Why should a taster record errors by TYPE rather than by wine?",
             options: [
-              "Errors cluster by type, so a short list of recurring ones drives improvement",
+              "Errors cluster by type, so a few recurring ones drive improvement",
               "Recording by wine is prohibited under standard tasting protocols",
               "Error types are needed to calculate an overall accuracy percentage",
               "Wines change between vintages, so the specific wine is irrelevant",
@@ -3656,7 +3656,7 @@ ${flightCard(FLIGHT_12)}
             prompt: "What makes naming a second choice so valuable in a tasting note?",
             options: [
               "It doubles the chance that one of the two calls is correct",
-              "It shows the reasoning, and identifies which observation was weakest",
+              "It shows the reasoning and which observation was weakest",
               "It is required before a conclusion can be considered complete",
               "It allows other tasters to score the note more consistently",
             ],

@@ -97,7 +97,6 @@ const GRANDFATHERED: Record<string, Partial<Record<AssessmentRule, number>>> = {
   "scripts/data/citizenship-naturalization-course.ts": { "closed-set-fill-in": 1 },
   "scripts/data/croquet-course.ts": { "closed-set-fill-in": 1 },
   "scripts/data/dual-citizenship-course.ts": { "closed-set-fill-in": 1 },
-  "scripts/data/faa-part-107-quizzes.ts": { "positional-explanation": 1 },
   "scripts/data/football-course.ts": { "positional-explanation": 1 },
   "scripts/data/fort-harrison-course.ts": { "closed-set-fill-in": 2 },
   "scripts/data/golf-course.ts": { "closed-set-fill-in": 2 },

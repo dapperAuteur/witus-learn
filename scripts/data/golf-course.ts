@@ -438,9 +438,9 @@ Better still, the Rules explicitly kill the old idea that you must wait for the 
           {
             prompt: "What is the object of golf?",
             options: [
-              "Hit the ball as far as possible",
+              "Hit the ball farther than anyone else in your group off every tee",
               "Hit the ball into the hole in as few strokes as possible",
-              "Stay on the fairway for all 18 holes",
+              "Keep the ball on the short-mown fairway for all 18 holes without a miss",
               "Score the most points per hole",
             ],
             correctIndex: 1,
@@ -503,10 +503,10 @@ Better still, the Rules explicitly kill the old idea that you must wait for the 
           {
             prompt: "When you set up to a shot, where should your feet, hips, and shoulders point?",
             options: [
-              "Directly at the target",
+              "Directly at the target, along the line the clubface aims",
               "Parallel to the target line, like railroad tracks",
               "To the right of the target",
-              "It makes no difference",
+              "It makes no difference once the clubface is aimed",
             ],
             correctIndex: 1,
             explanation:
@@ -516,10 +516,10 @@ Better still, the Rules explicitly kill the old idea that you must wait for the 
           {
             prompt: "What is the swing thought that corrects the most common beginner error?",
             options: [
-              "Scoop the ball up into the air",
+              "Scoop under the ball to help lift it into the air",
               "Hit down, striking the ball first and the turf second",
               "Swing as hard as possible",
-              "Keep your weight on your back foot",
+              "Keep your weight on your back foot through the finish",
             ],
             correctIndex: 1,
             explanation:
@@ -537,7 +537,7 @@ Better still, the Rules explicitly kill the old idea that you must wait for the 
           {
             prompt: "On a putt, which matters more?",
             options: [
-              "Line, because speed takes care of itself",
+              "Line, because a putt started on the right line drops at any speed",
               "Speed, because a good line at the wrong speed still misses",
               "Neither; putting is luck",
               "The brand of putter",
@@ -550,7 +550,7 @@ Better still, the Rules explicitly kill the old idea that you must wait for the 
           {
             prompt: "In a greenside bunker shot, what do you strike?",
             options: [
-              "The ball, cleanly, first",
+              "The ball first, cleanly, with a square clubface and no sand",
               "The sand, about two inches behind the ball",
               "The top of the ball",
               "The lip of the bunker",
@@ -2401,8 +2401,8 @@ That third question is the one this course keeps asking. **You would find out th
             prompt: "How did the PGA TOUR come into existence?",
             options: [
               "It was founded in 1916 alongside the PGA of America",
-              "It was formed in 1968 when a subset of touring professionals broke away from the PGA of America",
-              "The USGA created it",
+              "Touring pros broke away from the PGA of America in 1968",
+              "The USGA created it in 1968 as its professional division",
               "It was spun out of The R&A in 2004",
             ],
             correctIndex: 1,
@@ -2479,12 +2479,12 @@ That third question is the one this course keeps asking. **You would find out th
             prompt: "The Solheim Cup is:",
             options: [
               "Men's USA v Europe",
-              "Women's USA v Europe, run by the LPGA",
+              "Women's USA v Europe",
               "Women's USA v the rest of the world",
               "A mixed team event",
             ],
             correctIndex: 1,
-            explanation: "Ryder = men, USA v Europe. Solheim = women, USA v Europe. Presidents = men, USA v rest-of-world excluding Europe.",
+            explanation: "Ryder = men, USA v Europe. Solheim = women, USA v Europe, run by the LPGA. Presidents = men, USA v rest-of-world excluding Europe.",
             sourceLessonSlug: "golf-team-golf",
           },
           {
@@ -2499,51 +2499,51 @@ That third question is the one this course keeps asking. **You would find out th
             prompt: "What is the status of LIV Golf in the Official World Golf Ranking?",
             options: [
               "Still rejected, as it was in 2023",
-              "Accredited on 3 February 2026, with points to the top 10 and ties",
+              "Accredited on 3 February 2026",
               "It has always had full points",
               "It awards more points than the PGA TOUR",
             ],
             correctIndex: 1,
             explanation:
-              "The ranking mattered enormously because it decides entry to the MAJORS, which neither tour controls. The fight was about access, not prize money.",
+              "Points go to the top 10 and ties only. The ranking mattered enormously because it decides entry to the MAJORS, which neither tour controls. The fight was about access, not prize money.",
             sourceLessonSlug: "golf-liv-and-2026",
           },
           {
             prompt: "Did the PGA TOUR and LIV/PIF merge?",
             options: [
-              "Yes, in June 2023",
-              "No, the June 2023 framework agreement was never consummated, and men's golf is still not reunified",
+              "Yes, in June 2023, when the framework agreement was announced",
+              "No, the June 2023 framework agreement was never consummated",
               "Yes, in February 2026",
               "Yes, but it was later reversed",
             ],
             correctIndex: 1,
             explanation:
-              "A framework agreement is an agreement to try to reach an agreement. It was reported everywhere as a merger. It never became a deal.",
+              "A framework agreement is an agreement to try to reach an agreement. It was reported everywhere as a merger. It never became a deal, and men's golf is still not reunified.",
             sourceLessonSlug: "golf-liv-and-2026",
           },
           {
             prompt: "What did PIF announce around 30 April 2026?",
             options: [
-              "That it would double its investment in LIV",
-              "That it will END its funding of LIV after the 2026 season, having invested over $5 billion",
+              "That it would double its investment in LIV for the 2027 season",
+              "That it will END its funding of LIV after the 2026 season",
               "That it had bought the PGA TOUR",
-              "That LIV would return to 54 holes",
+              "That it would bankroll LIV indefinitely, with no end date",
             ],
             correctIndex: 1,
-            explanation: "LIV is now courting new investors. This is why you must read the date on anything written about this dispute.",
+            explanation: "PIF had invested over $5 billion. LIV is now courting new investors. This is why you must read the date on anything written about this dispute.",
             sourceLessonSlug: "golf-liv-and-2026",
           },
           {
             prompt: "Why did the world ranking become the real battleground in the LIV dispute?",
             options: [
-              "Because it determines prize money",
-              "Because it decides entry to the majors, which are run by NEITHER tour",
-              "Because it sets television schedules",
-              "Because it determines Ryder Cup captains",
+              "Because it determines how each event's prize money is split",
+              "Because it decides entry to the majors",
+              "Because it sets the television schedules for both tours",
+              "Because it determines who is named Ryder Cup captain",
             ],
             correctIndex: 1,
             explanation:
-              "A LIV player could be among the best alive, earn a fortune, and still slide down a ranking that decided whether he could play at Augusta.",
+              "The majors are run by NEITHER tour. A LIV player could be among the best alive, earn a fortune, and still slide down a ranking that decided whether he could play at Augusta.",
             sourceLessonSlug: "golf-liv-and-2026",
           },
         ],

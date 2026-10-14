@@ -360,7 +360,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
             prompt: "Rule 4 of the sourcing standard forbids which specific move?",
             options: [
               "Quoting a scholar you disagree with",
-              "Quoting page numbers from an unpublished typescript edition of a book",
+              "Citing a book's chapters without page numbers",
               "Citing a statute rather than a historian",
               "Using Whitman's German thesis as evidence about South Africa",
             ],
@@ -395,7 +395,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
           {
             prompt: "The Immigration Act of 1924 based its quotas on which census year, and why does the choice matter?",
             options: [
-              "1890, because pushing the base year back from 1910 favored northern Europe",
+              "1890, pushed back from 1910 to favor northern Europe",
               "1920, because it was the most recent national count available to the Congress of the day",
               "1870, because it predated Reconstruction",
               "1900, because it was a round number at the turn of the century",
@@ -431,7 +431,7 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
           {
             prompt: "In 1967 the Supreme Court wrote that Virginia was one of sixteen states punishing marriage by racial classification. Why is that not a contradiction of the figure of thirty?",
             options: [
-              "Because the Supreme Court miscounted, and the true figure in 1967 was still thirty states",
+              "Because the Supreme Court miscounted the states with bans",
               "The two counts are at different dates, and fourteen states repealed in between",
               "Because Whitman counted territories as well as states",
               "Because the Court was counting only southern states",
@@ -788,7 +788,7 @@ On classification: some states counted descent "for up to three generations," fi
             options: [
               "American penalties for mixed marriage were far too light for German purposes",
               "American law was written in English and could not be translated accurately",
-              "American law did not reckon Jews among the coloreds",
+              "American law had in mind only coloreds and did not reckon Jews among them",
               "American law was made by judges rather than by an elected legislature",
             ],
             correctIndex: 2,
@@ -846,7 +846,7 @@ On classification: some states counted descent "for up to three generations," fi
           {
             prompt: "Herbert Kier was commissioned to compile material on the race legislation of which countries?",
             options: [
-              "Only the United States, because no other country had comparable statutes on its books",
+              "Only the United States",
               "The United States, Brazil and Canada",
               "The United States and Britain",
               "The United States, South Africa and Australia",
@@ -871,7 +871,7 @@ On classification: some states counted descent "for up to three generations," fi
             prompt: "Which American rule did German commentators describe as leading to \"human hardness\"?",
             options: [
               "The requirement that race be stated on a birth certificate",
-              "The one-drop rule",
+              "The one-drop rule, counting anyone with any traceable African ancestry as Black",
               "The ten-year maximum sentence for mixed marriage in several states",
               "The exclusion of Chinese labourers under the 1882 Act",
             ],
@@ -919,7 +919,7 @@ On classification: some states counted descent "for up to three generations," fi
             prompt: "Which scholar wrote of the \"astonishing insignificance of American segregation laws\" for Nazi policy?",
             options: [
               "Michael Stolleis, reviewing the book in the journal Rechtsgeschichte in 2018",
-              "Jens-Uwe Guettel",
+              "Jens-Uwe Guettel, in a 2012 book arguing the Nazis saw America as mired in outdated liberalism",
               "Bernhard Lösener, in his own postwar memoir of the drafting process",
               "George M. Fredrickson, in his comparative study of white supremacy",
             ],

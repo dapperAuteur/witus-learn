@@ -62,7 +62,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "How long does the daily log take, according to the welcome lesson?",
             "options": [
               "About fifteen minutes, once every optional metric has been filled in",
-              "Under thirty seconds a day, since the habit is the point",
+              "Under thirty seconds a day, because the daily habit is the whole point",
               "About an hour, once a week on Sunday",
               "As long as it takes to sync every app on your phone to the tracker"
             ],
@@ -87,7 +87,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "Analytics, because the watch compared it against your earlier nights",
               "A baseline, because a single night sets the normal you measure against",
-              "A trend, because sleep is always averaged",
+              "A trend, because the watch averages your sleep across the whole week",
               "A metric: one number from one night, a single snapshot"
             ],
             "correctIndex": 3,
@@ -110,7 +110,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What does the lesson say a single day's number mostly is?",
             "options": [
               "A verdict on your new habit",
-              "Noise, because numbers bounce around from day to day",
+              "Noise, because your numbers bounce around from day to day, which is normal",
               "The most honest reading you get, before averaging distorts it",
               "Proof of a pattern, as long as the device is a well-tested brand"
             ],
@@ -124,7 +124,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "The Oura Ring, the WHOOP band, and any modern smartphone pedometer",
               "Only chest-strap monitors and clinical-grade ambulatory heart monitors",
               "The Fitbit, the Garmin, and the Apple Watch",
-              "All seven devices tested"
+              "All seven devices tested, since every brand met the five percent bar"
             ],
             "correctIndex": 2,
             "explanation": "Shcherbina and colleagues (2017) tested seven devices and found three under five percent error on step counting and heart rate: the Fitbit, the Garmin, and the Apple Watch. The lesson still says not to go buy one, because the best tracker is the one you already have.",
@@ -136,7 +136,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Because no consumer tracker can export its data to another application",
               "Because automatic syncing rounds the numbers and loses the decimals",
               "Because the metrics page cannot accept data from a device directly",
-              "Typing them makes you read them"
+              "Because typing each number in makes you look at it and builds the habit of reading it"
             ],
             "correctIndex": 3,
             "explanation": "When you enter your own resting heart rate you look at it and notice it. Doing it by hand each day builds the habit of reading your own data, which is the whole point of the course.",
@@ -145,7 +145,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "You own no smartwatch and no ring. Can you start this course today?",
             "options": [
-              "Yes, your phone counts steps",
+              "Yes, your phone already counts steps and you log them by hand",
               "No, the course requires one of the three devices Stanford validated",
               "Only after you buy a device that measures resting heart rate at night",
               "Only once you have logged a week of readings taken at a clinic instead"
@@ -159,7 +159,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "Rereading builds deeper memory, though it feels harder at the time",
               "The two work equally well as long as the sessions are spread out",
-              "Quizzing yourself wins",
+              "Quizzing yourself wins, even though rereaders feel more confident",
               "Rereading works better for facts and quizzing works better for skills"
             ],
             "correctIndex": 2,
@@ -170,7 +170,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "Why are the lessons short, about six to eight minutes each?",
             "options": [
               "Because audio files longer than ten minutes will not stream reliably",
-              "Memory holds few new things at once",
+              "Because your memory can hold only a few new things at once, so small bites stick better",
               "Because a shorter lesson leaves more room for the weekly assignment",
               "Because most people listen while walking and stop after eight minutes"
             ],
@@ -181,7 +181,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What does the lesson tell you to do when you get a quiz question wrong?",
             "options": [
-              "Read why it was wrong",
+              "Read why it was wrong, since the wrong answers teach you the most",
               "Retake the whole quiz immediately until you score a hundred percent",
               "Memorize the correct choice so that question cannot catch you again",
               "Skip ahead to the next module and come back at the end of the course"
@@ -394,7 +394,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Lean on the calorie number, and treat the step count as a rough hint",
               "Lean on heart rate, and treat both steps and calories as rough hints",
               "Treat all three the same, since their errors cancel each other out",
-              "Lean on steps, doubt calories"
+              "Lean on steps, accurate within two percent, and doubt the calories"
             ],
             "correctIndex": 3,
             "explanation": "Fuller and colleagues (2020) found steps off by less than two percent on good devices, heart rate in the middle, and the energy or calorie number often off by more than thirty percent. Lean on the reliable numbers when you decide what to change.",
@@ -403,7 +403,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What does the research reward, according to this module?",
             "options": [
-              "Small steady moves, repeated",
+              "Small steady moves, repeated day after day, nudged by your own numbers",
               "A dramatic overhaul sustained hard for the first two or three weeks",
               "Hitting every daily target without missing a single day of the month",
               "Any change at all, as long as it is large enough to feel difficult"
@@ -417,7 +417,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "The US Physical Activity Guidelines published by federal researchers",
               "The National Sleep Foundation's companion movement recommendation",
-              "A marketing slogan from Japan",
+              "A marketing slogan from Japan, not a result from scientific research",
               "A meta-analysis of fifteen international cohorts of older adults"
             ],
             "correctIndex": 2,
@@ -427,7 +427,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What change in resting heart rate does the Module 1 review name as a red flag?",
             "options": [
-              "More than ten beats above baseline",
+              "More than ten beats above your baseline, and staying there for a few days",
               "Any morning reading that lands above sixty beats per minute at all",
               "A drop of five beats or more sustained across a full week of mornings",
               "Any single reading that differs from yesterday's by two beats or more"
@@ -441,7 +441,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "Ninety-five percent, the level a healthy adult should reach nightly",
               "Sixty percent, below which a clinician should be consulted at once",
-              "Eighty percent",
+              "Eighty percent, though most healthy people stay above ninety percent",
               "There is no threshold, because efficiency varies too much to judge"
             ],
             "correctIndex": 2,
@@ -514,7 +514,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "Which number on your tracker is the most accurate, with an error under about two percent in good devices?",
             "options": [
               "Calories burned",
-              "Steps",
+              "Daily step count",
               "Sleep efficiency",
               "Heart rate during a sprint"
             ],
@@ -626,7 +626,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What does a hub app such as Apple Health or Google Fit actually do?",
             "options": [
               "It measures your steps and heart rate using the phone's own sensors",
-              "It shows what device apps send it",
+              "It gathers and shows whatever the device apps send it, measuring nothing on its own",
               "It replaces the device app, so you can uninstall the tracker's software",
               "It corrects the errors in each device's readings before displaying them"
             ],
@@ -639,7 +639,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "The hub only keeps fourteen days of history before deleting the rest",
               "Sleep can only reach a hub from a wrist device, never from a ring",
-              "Sharing is off in the ring's app",
+              "The sharing switch to the hub was never turned on in the ring's app",
               "The ring has to be paired to a second phone before a hub can read it"
             ],
             "correctIndex": 2,
@@ -649,7 +649,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "Why does the lesson tell you to find your app's export button today, before you need it?",
             "options": [
-              "So your history moves with you",
+              "So your years of history come with you if you switch phones or brands",
               "Because the hub deletes anything you have not exported within a month",
               "Because export is the only way to share your numbers with a buddy",
               "Because the course requires you to upload a data file before Module 3"
@@ -674,7 +674,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What is a baseline week, and what do you change during it?",
             "options": [
               "A normal week of wear in which you change nothing",
-              "A week of your hardest training",
+              "A week of your hardest training, so the device learns your peak",
               "A week where you change one habit each day to find which one matters",
               "A week of clinic measurements taken before you first put the tracker on"
             ],
@@ -687,7 +687,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "Because the device needs seven days of data before it will calibrate",
               "Because the course grades your first assignment on the baseline week",
-              "Without it, noise looks like progress",
+              "Without knowing your normal swing, you will chase noise as progress",
               "Because trackers under-report steps until they have learned your gait"
             ],
             "correctIndex": 2,
@@ -865,7 +865,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "Two of your metrics rise and fall together across the month. What has that shown you?",
             "options": [
               "That one of them is reliably causing the other one to change",
-              "They tend to move together",
+              "Only that they tend to move together, not which one, if either, causes the other",
               "That a hidden third factor has been ruled out by the comparison",
               "That the pattern will hold up if you go on to test it deliberately"
             ],
@@ -879,7 +879,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Trackers round their readings, which invents patterns that are not real",
               "Two metrics measured by the same device can never be compared at all",
               "Correlation is only valid once you have more than ninety days of data",
-              "A third thing could drive both"
+              "A hidden third thing, like a calm day off work, could be driving both"
             ],
             "correctIndex": 3,
             "explanation": "The three reasons are that the direction could be backwards, that a hidden third thing could drive both, and that it could be plain chance. A relaxing day off raising your steps and your sleep at once is the classic third-thing case.",
@@ -888,7 +888,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "How does the lesson tell you to hold a pattern you have spotted in your own data?",
             "options": [
-              "As a question, not an answer",
+              "As a question, not an answer: a good lead on what is worth testing",
               "As a firm conclusion, so you commit to the change and follow through",
               "As a finding you can share as proven, at least for your own body",
               "As a percentage, since a number sounds more convincing than a sentence"
@@ -914,7 +914,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "Three, so you can compare which of them moved the number the most",
               "As many as you can sustain, since more changes give a bigger effect",
-              "Two, one helpful and one neutral",
+              "Two, one helpful and one neutral, so the neutral one acts as a control",
               "One, so you know which change moved the needle"
             ],
             "correctIndex": 3,
@@ -924,7 +924,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "Why does a sleep experiment need a full week before and a full week after?",
             "options": [
-              "Sleep bounces around night to night",
+              "Sleep bounces around night to night, so one lucky night could fool you",
               "Because devices need seven days to calibrate their sleep staging",
               "Because the tracker deletes anything older than fourteen days of data",
               "Because a week is the shortest period the metrics page will average"
@@ -938,7 +938,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "Calories burned and active minutes, since both come from one sensor",
               "Sleep stages and blood oxygen, which are measured directly overnight",
-              "Steps, the most accurate, and resting heart rate",
+              "Steps, the most accurate, and resting heart rate, good when taken at rest",
               "Whichever two your device reports"
             ],
             "correctIndex": 2,
@@ -948,7 +948,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What is the difference between your baseline and your normal range?",
             "options": [
-              "Baseline is typical, range is the band",
+              "The baseline is your typical number; the range is the band around it",
               "The baseline is a published guideline and the range comes from your data",
               "The baseline is measured in a clinic and the range comes from a device",
               "The baseline covers one day and the range covers a full calendar year"
@@ -1127,7 +1127,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What three things make an N-of-1 experiment valid?",
             "options": [
               "A control group, a randomized order, and a blinded observer scoring it",
-              "One variable, a baseline, repetition",
+              "One variable changed, a quiet baseline period first, and repetition",
               "A full month of data, a doctor's review, and a validated device model",
               "Three variables measured at once so their interactions can be compared"
             ],
@@ -1138,7 +1138,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "Why does this module build its experiment around intensity minutes rather than another metric?",
             "options": [
-              "They tie most strongly to a longer life",
+              "They have the strongest tie to a longer life of any tracker number",
               "They are the number a tracker measures with the smallest error margin",
               "They are the only metric a phone alone can record without a watch",
               "They change fastest, so one week is enough to detect a difference"
@@ -1152,7 +1152,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "It improves, because a stronger pulse is easier for the sensor to read",
               "It stays the same, since the sensor samples at a fixed rate throughout",
-              "It gets worse",
+              "It gets worse, so in your hard zone give the number a little grace",
               "It overtakes steps in accuracy once you cross into the hard zone"
             ],
             "correctIndex": 2,
@@ -1363,7 +1363,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Sleep duration, daily steps, and resting heart rate",
               "Calories burned, active minutes, and overnight blood oxygen saturation",
               "Sleep stages, stress score, and the readiness rating the device gives",
-              "Weight, waist, and floors climbed"
+              "Body weight, waist size, and floors climbed, all logged by hand"
             ],
             "correctIndex": 0,
             "explanation": "These three are the ones the device measures well and they talk to each other: a short night often shows up as a higher resting heart rate the next morning and fewer steps that day.",
@@ -1375,7 +1375,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Which of the three has moved furthest from its published guideline?",
               "Which single number is worst today, and what will I do to fix it?",
               "Has any one of them broken its record since I started tracking?",
-              "Do they agree or disagree?"
+              "Do these three numbers agree or disagree with each other today?"
             ],
             "correctIndex": 3,
             "explanation": "Agreement is signal. If two or three point the same way, ask why; if only one moved, that is usually the normal day-to-day wiggle and you wait another day.",
@@ -1385,7 +1385,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What are the three parts of a Century Plan roadmap?",
             "options": [
               "A ten-year budget, a training schedule, and a list of medical screenings",
-              "What you track now, what you protect now, and the next shift",
+              "What you track now, what you protect now, and the next shift coming up",
               "One goal per decade, written out in advance",
               "A weekly trigger, a daily logging habit, and a monthly review meeting"
             ],
@@ -1408,7 +1408,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What are the three ways other people help you keep tracking?",
             "options": [
-              "Accountability, a buddy, and example",
+              "Accountability, one buddy who also tracks, and leading others by your own example",
               "Competition, public leaderboards, and a paid coach checking your data",
               "Group workouts, a shared spreadsheet, and a monthly weigh-in meeting",
               "Encouragement, financial stakes, and a signed contract with a friend"
@@ -1420,7 +1420,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What does the community lesson say about broadcasting your numbers to strangers online?",
             "options": [
-              "It is the strongest form of accountability the research has measured",
+              "It is the strongest form of accountability",
               "It works if you share only your steps",
               "It can backfire, making you feel worse and quit faster",
               "It is required before a peer accountability partnership counts as one"
@@ -1435,7 +1435,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
               "Ten goals and five habits, one for each week of the whole course",
               "One goal for each of the four core metrics, and no habits at all",
               "As many as fit on the page, provided every one of them is specific",
-              "Three goals and one habit"
+              "Three specific goals, and just one habit you will not let drop"
             ],
             "correctIndex": 3,
             "explanation": "Three ninety-day goals, each specific, and exactly one habit you will not drop. A blueprint with ten goals is one nobody follows, and if it does not fit on a page you cut until it does.",
@@ -1445,7 +1445,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What are the four parts of a Health Blueprint, in the order you build them?",
             "options": [
               "Choose a device, log a week, run an experiment, then share it publicly",
-              "Pull data, summarize, set goals, pick a habit",
+              "Pull your data, summarize what changed, set your goals, then pick a habit",
               "Set a target, buy the equipment, book a check-up, then schedule reviews",
               "Write a mission, list your obstacles, plan your rewards, then find a coach"
             ],
@@ -1458,7 +1458,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "A full calendar year, reviewed at the end of every third month",
               "The rest of your life, revised only when a decade priority shifts",
-              "Ninety days",
+              "Ninety days, a quarter of a year, built from your five weeks of data",
               "Five weeks, matching the length of the course that produced it"
             ],
             "correctIndex": 2,
@@ -1468,7 +1468,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What is the Module 5 review's rule for one, two, and three off weeks in a row?",
             "options": [
-              "Keep going, look, then adjust",
+              "Keep going after one, look for what changed after two, adjust or get help after three",
               "Stop tracking, restart the baseline, and then repeat the whole module",
               "Adjust at once, then wait a month before you look at the data again",
               "Ignore all three, since anything under a month is always simple noise"
@@ -1481,7 +1481,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What does the review mean by resilience, your master health signal?",
             "options": [
               "The highest workload you can sustain before your heart rate plateaus",
-              "How fast your body bounces back",
+              "How fast your body bounces back after a hard workout or a bad night",
               "The share of nights you reach the recommended seven to nine hours",
               "How long you hold a habit before a busy week finally interrupts it"
             ],

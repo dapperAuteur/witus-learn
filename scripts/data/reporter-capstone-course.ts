@@ -170,7 +170,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Why choose small?",
             options: [
-              "The narrow version has the same structure and is reportable in weeks",
+              "Same structure as the wide one, reportable in weeks",
               "Because a smaller beat requires fewer records requests",
               "Because assessors prefer capstones on local subjects",
               "Because small beats produce more publishable material",
@@ -196,7 +196,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the beat need a document trail?",
             options: [
-              "A subject resting only on recollection exercises neither records nor data",
+              "A recollection-only subject exercises neither records nor data",
               "Because documents are more reliable than interviews",
               "Because assessors require a minimum number of primary sources",
               "Because a document trail shortens the reporting window",
@@ -261,7 +261,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Why is the out-of-scope sentence the one to labor over at capstone scale?",
             options: [
-              "The reporting keeps opening doors and every institution touches another",
+              "Every institution touches another, and doors keep opening",
               "Because assessors read it first among the memo's parts",
               "Because it determines which records can be requested",
               "Because it fixes the length of the finished deliverables",
@@ -339,7 +339,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "When is the file set up?",
             options: [
-              "Before the first phone call",
+              "Before the first phone call, not afterward",
               "After the memo is approved by an assessor",
               "Once the records request has been answered",
               "In the final week, when the material is complete",
@@ -352,7 +352,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What does the provenance rule require of every entry?",
             options: [
-              "Document, page, and date",
+              "The source document, its page, and its date",
               "A confidence level and a source category",
               "An assessor's initials and a timestamp",
               "A link to the original online location",
@@ -987,7 +987,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What are the four things the report deliverable produces?",
             options: [
-              "A document map, three traced sentences, one resolved endnote, one definition",
+              "A document map, three traced sentences, an endnote, a definition",
               "A summary, a critique, a comparison, and a recommendation",
               "A chart, a table, a citation list, and a glossary",
               "A methodology review, a sample assessment, and two figures",
@@ -1000,7 +1000,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What are the six fields?",
             options: [
-              "Page, source, year, population, denominator, whether the table was seen",
+              "Page, source, year, population, denominator, table seen or not",
               "Author, title, publisher, edition, page, and date accessed",
               "Sample, error, weighting, mode, response rate, and vintage",
               "Domain, dimension, indicator, county, sex, and age",
@@ -1026,7 +1026,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What must the deliverable say about the publisher?",
             options: [
-              "Whether it is a primary collector or a secondary compiler, and how you know",
+              "Whether it collects or compiles its figures, and how you know",
               "Whether it is a government body or a private organization",
               "Whether it has published on this subject before",
               "Whether it accepts corrections from readers",
@@ -1052,7 +1052,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What are the two transfer sentences?",
             options: [
-              "What the report lets you say about your beat, and what it does not",
+              "What it lets you say about your beat, and what it does not",
               "What the report found, and what other reports found",
               "What the publisher claims, and what the tables show",
               "What is confirmed, and what remains disputed",
@@ -1091,7 +1091,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What goes in the pre-interview note?",
             options: [
-              "The five disclosures, the risk assessment, the three things, and your limits",
+              "The disclosures, risk assessment, three things, and your limits",
               "The questions you will ask, in the order you will ask them",
               "The subject's background and their prior public statements",
               "The consent form and the recording permission",
@@ -1130,7 +1130,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What is the capstone's position on interviewing a minor?",
             options: [
-              "Not required and not encouraged, and if unavoidable the full rules apply",
+              "Not required or encouraged; if unavoidable, the full rules apply",
               "Required, since the interviewing course covers minors at length",
               "Prohibited entirely in an assessed exercise",
               "Permitted with the assessor's prior written approval",
@@ -1156,7 +1156,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What does the follow-through require even in an exercise?",
             options: [
-              "Call before anything is submitted, send what you produced, be reachable",
+              "Call before submitting, send what you produced, be reachable",
               "Obtain written approval of the finished write-up",
               "Provide a transcript of the interview to the subject",
               "Report the outcome of the exercise to the institution",
@@ -1183,7 +1183,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
             prompt: "Which conduct rules apply during the capstone interviews?",
             options: [
               "Identify, disclose before recording, start where they want, signpost, stop rule, close deliberately",
-              "Record everything, ask the hardest question first, and press for a quotation",
+              "Record everything, ask the hardest question first, press for a quotation, and never stop early",
               "Send questions in advance and confirm answers afterward in writing",
               "Interview in the institution's offices so the setting is neutral",
             ],
@@ -1247,7 +1247,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What does separating account from interpretation mean?",
             options: [
-              "What a person experienced, against claims about cause and fault",
+              "What a person experienced, against claims of cause and fault",
               "What was on the record, against what was on background",
               "What was quoted directly, against what was paraphrased",
               "What the reporter observed, against what was described",
@@ -1273,7 +1273,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What does the records deliverable's process trail prove?",
             options: [
-              "That the request was filed and followed rather than described",
+              "That the request was filed and followed, not described",
               "That the agency complied with the statutory deadline",
               "That the reporter's scope was legally sufficient",
               "That the records obtained are authentic",
@@ -1312,7 +1312,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these is a legitimate report for the deliverable?",
             options: [
-              "One from a state agency, nonprofit, university center, or national compiler",
+              "One from a state agency, nonprofit, university center, or compiler",
               "One published by the body you filed the records request with only",
               "One produced by an outlet covering the same beat",
               "One the reporter compiles themselves from the records obtained",
@@ -1338,7 +1338,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Which is a complete records outcome even though nothing arrived?",
             options: [
-              "Silence, documented with the statutory period and the promised dates",
+              "Silence, documented with the statutory and promised dates",
               "A withdrawn request, closed by the reporter",
               "An informal refusal received by telephone",
               "A request that was never sent to the designated office",
@@ -1673,7 +1673,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Where does uncertainty go in the quick-turn piece?",
             options: [
-              "In the sentence carrying the claim",
+              "In the same sentence that carries the claim",
               "In a closing paragraph, where there is room for it",
               "In the working file rather than in the piece",
               "In a note to the editor accompanying the file",
@@ -1933,7 +1933,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "How long does the compressed sequence take once practiced?",
             options: [
-              "It fits inside an hour after you have done it twice",
+              "Under an hour, once you have done it twice",
               "A full working day for a short piece",
               "As long as the reporting itself",
               "It cannot be compressed below half a day",
@@ -2024,7 +2024,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Where does the quick-turn story's uncertainty economy come from?",
             options: [
-              "A short piece has less room and needs it stated more compactly",
+              "A short piece has less room, so it is stated compactly",
               "A short piece may omit uncertainty entirely",
               "A short piece defers uncertainty to the working file",
               "A short piece places uncertainty in a standing footer",
@@ -2154,7 +2154,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What does the pitch demonstrate about the beat?",
             options: [
-              "That it produced something rather than merely being attended",
+              "That it produced something, not just attendance",
               "That the reporter can write to a word limit",
               "That the subject is of interest to a wider audience",
               "That the records request produced usable documents",
@@ -2345,7 +2345,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What does a file that passes the stranger test contain?",
             options: [
-              "Every claim naming its origin, every level recorded, every promise written",
+              "Each claim's origin, each level, each promise, recorded",
               "A complete transcript of each interview conducted",
               "A copy of every document the beat's bodies published",
               "A narrative account of the reporting from start to finish",
@@ -2423,7 +2423,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What is the fix for a beat that is too big?",
             options: [
-              "Narrow at the midpoint revision and say in the deliverable that you did",
+              "Narrow at the midpoint revision; say you did",
               "Extend the working window by two weeks",
               "Drop one of the deliverables to fit the time available",
               "Restart with a different beat entirely",
@@ -2436,7 +2436,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What is the symptom of a retrofitted file?",
             options: [
-              "Entries with no page numbers and a chronology assembled from memory",
+              "No page numbers and a chronology rebuilt from memory",
               "A file longer than the deliverables it supports",
               "A file containing documents that were never used",
               "A file whose entries all date from the final week",
@@ -2462,7 +2462,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What is the symptom of a request that went in too late?",
             options: [
-              "A records deliverable consisting of a filed request and nothing else",
+              "A filed request and nothing else",
               "A fee estimate the reporter cannot afford to pay",
               "A denial with no appeal route stated",
               "A response arriving on the day of the deadline",
@@ -2501,7 +2501,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What is the symptom of a note that is a formality?",
             options: [
-              "Three items, all comfortable, none with a settling artifact",
+              "Three comfortable items, no settling artifact",
               "Twenty items, several of them repeated",
               "Items that were resolved before the deadline",
               "Items concerning documents rather than people",
@@ -2605,7 +2605,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What should be done if the beat is continued?",
             options: [
-              "Revise the memo at six months, audit quotes monthly, protect listening, read the year",
+              "Revise the memo, audit quotes, protect listening, read the year",
               "File a records request every month regardless of need",
               "Publish a newsletter weekly to build an audience",
               "Expand the beat to include adjacent institutions",
@@ -2631,7 +2631,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What is the capstone honestly evidence of?",
             options: [
-              "Running a documented method on an unfamiliar subject, and saying what you do not know",
+              "Running a documented method, and saying what you do not know",
               "The ability to obtain documents from a reluctant institution",
               "The ability to write publishable copy under deadline",
               "Familiarity with the law governing records and publication",
@@ -2709,7 +2709,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Which criterion concerns the memo?",
             options: [
-              "Whether its boundary held, or was revised deliberately rather than abandoned",
+              "Whether its boundary held or was deliberately revised",
               "Whether its three questions were all answered",
               "Whether it was written before the reporting began",
               "Whether it names a community the reporting reached",
@@ -2916,7 +2916,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What does the capstone beat memo contain?",
             options: [
-              "Scope, three questions, four inventories, communities, measurement, disclosure",
+              "Scope, questions, inventories, communities, measurement, disclosure",
               "A reporting plan, a budget, a timetable, and a deliverables list",
               "The records request, the report, the interviews, and the outputs",
               "The assessment criteria, the deadline, and the assessor's contact",
@@ -2929,7 +2929,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Why is the out-of-scope sentence the hardest part at capstone scale?",
             options: [
-              "The reporting keeps opening doors and every institution touches another",
+              "Every institution touches another, and doors keep opening",
               "Because assessors read it before anything else in the memo",
               "Because it determines which records can lawfully be requested",
               "Because it fixes the word count of the finished deliverables",
@@ -3007,14 +3007,14 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Why is a denial arguably the better outcome for the exercise?",
             options: [
-              "It lets you run the letter's elements, the category, the search question, and the appeal",
+              "It lets you run the whole second half of the records course",
               "It proves the agency was concealing something material",
               "It shortens the window by removing the review of documents",
               "It qualifies the request for expedited handling on appeal",
             ],
             correctIndex: 0,
             explanation:
-              "Do all of it whether or not you file the appeal within the window.",
+              "That half is the letter's required elements, the answer's real category, how the search was run, and the appeal. Do all of it whether or not you file the appeal within the window.",
             sourceLessonSlug: "the-records-request",
           },
           {
@@ -3033,7 +3033,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What four things does the report deliverable produce?",
             options: [
-              "A document map, three traced sentences, one resolved endnote, one definition",
+              "A document map, three traced sentences, an endnote, a definition",
               "A summary, a critique, a comparison, and a recommendation",
               "A chart, a table, a citation list, and a glossary",
               "A methodology review, a sample assessment, and two figures",
@@ -3059,7 +3059,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What are the two transfer sentences?",
             options: [
-              "What the report lets you say about your beat, and what it does not",
+              "What it lets you say about your beat, and what it does not",
               "What the report found, and what other reports found",
               "What the publisher claims, and what the tables show",
               "What is confirmed, and what remains disputed",
@@ -3085,7 +3085,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What goes in the pre-interview note?",
             options: [
-              "The five disclosures, the risk assessment, the three things, and your limits",
+              "The disclosures, risk assessment, three things, and your limits",
               "The questions you intend to ask, in the order you will ask them",
               "The subject's background and their prior public statements",
               "The consent form and the recording permission you obtained",
@@ -3254,7 +3254,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "Which six things is the capstone assessed on?",
             options: [
-              "Levels, the stranger test, independence, the note, interviewing, the boundary",
+              "Levels, stranger test, independence, note, interviewing, boundary",
               "Findings, documents, quotations, writing, length, and timeliness",
               "Accuracy, balance, fairness, clarity, structure, and sourcing",
               "Records, reports, interviews, story, pitch, and note",
@@ -3371,7 +3371,7 @@ export const REPORTER_CAPSTONE_COURSE: AuthoredCourse = {
           {
             prompt: "What are the three things to do in the following week?",
             options: [
-              "Close the loop with sources, follow up the request, log the note's items",
+              "Close the loop, follow up the request, log the note",
               "Submit the work, await assessment, and revise the memo",
               "Publish, promote, and answer reader replies",
               "Choose a second beat, file again, and begin over",
