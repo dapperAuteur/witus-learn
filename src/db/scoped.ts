@@ -13,11 +13,22 @@ import {
 } from "@/db/queries/catalog";
 import { markCoursesAnnounced } from "@/db/queries/announce";
 import {
+  getViewerAuditorGrant,
   inviteCourseAuditor,
   isCourseAuditor,
   listCourseAuditors,
+  listViewerAuditGrants,
   revokeCourseAuditor,
+  setCourseAuditorCredit,
 } from "@/db/queries/course-auditors";
+import {
+  listLessonReviews,
+  listReviewableLessons,
+  markCorrectionApplied,
+  upsertLessonReview,
+  type UpsertLessonReviewInput,
+} from "@/db/queries/lesson-reviews";
+import type { VerdictNeedKind } from "@/lib/lesson-review";
 import {
   countCourseInterestByCapacity,
   countPendingCourseInterest,
@@ -257,6 +268,49 @@ export class ScopedDb {
   /** Is this person an ACCEPTED auditor of this course, in this tenant? */
   isCourseAuditor(input: { courseId: string; userId: string | null; email: string | null }) {
     return isCourseAuditor({ tenantId: this.tenantId, ...input });
+  }
+
+  // ── Reviewer sign-off (plans/93 section 1) ─────────────────────────────────
+  // Verdicts on a lesson's release needs. Every method supplies this tenant itself, so a route can
+  // neither read nor write a verdict, a credit or a reviewable lesson outside its own school.
+
+  /** Set how a reviewer of one of THIS tenant's courses is credited (inviter-set). */
+  setCourseAuditorCredit(
+    courseId: string,
+    auditorId: string,
+    credit: { reviewerName: string | null; reviewerCredential: string | null },
+  ) {
+    return setCourseAuditorCredit(this.tenantId, courseId, auditorId, credit);
+  }
+
+  /** The viewer's own accepted grant on one of this tenant's courses (with its credit), or null. */
+  getViewerAuditorGrant(input: { courseId: string; userId: string | null; email: string | null }) {
+    return getViewerAuditorGrant({ tenantId: this.tenantId, ...input });
+  }
+
+  /** Every accepted grant this viewer holds in this tenant, for /audit/review. */
+  listViewerAuditGrants(viewer: { userId: string | null; email: string | null }) {
+    return listViewerAuditGrants(this.tenantId, viewer);
+  }
+
+  /** Current verdicts on these courses, in this tenant. */
+  listLessonReviews(courseIds: readonly string[]) {
+    return listLessonReviews(this.tenantId, courseIds);
+  }
+
+  /** Record (or replace) the one current verdict for a lesson's need kind. */
+  upsertLessonReview(input: Omit<UpsertLessonReviewInput, "tenantId">) {
+    return upsertLessonReview({ tenantId: this.tenantId, ...input });
+  }
+
+  /** The owner's "Applied as written" stamp, which re-pins the verdict to the edited lesson. */
+  markCorrectionApplied(input: { courseId: string; lessonId: string; needKind: VerdictNeedKind; lessonHash: string }) {
+    return markCorrectionApplied({ tenantId: this.tenantId, ...input });
+  }
+
+  /** Lessons carrying release needs in these courses, with the fields their hash is computed from. */
+  listReviewableLessons(courseIds: readonly string[]) {
+    return listReviewableLessons(this.tenantId, courseIds);
   }
 
   // ── Self-nominated course interest (the public "I want to help" form) ──────
