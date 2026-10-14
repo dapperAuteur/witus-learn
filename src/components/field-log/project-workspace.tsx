@@ -12,6 +12,7 @@ import type {
 } from "@/db/schema/field-log";
 import { CREDENTIAL_ENDORSEMENTS_REQUIRED, endorsementCount } from "@/lib/field-log-rubric";
 import { templateByKey, type FieldLogTemplate } from "@/lib/field-log-templates";
+import { splitNoteLinks } from "@/lib/note-links";
 import { patchJson, postJson } from "./client";
 
 // Education, not legal advice — jurisdiction varies (see plans/future/15-field-log-safety-legal.md).
@@ -453,22 +454,20 @@ function stageTitle(template: FieldLogTemplate | undefined, stageKey: string): s
   return template?.stages.find((s) => s.key === stageKey)?.title ?? stageKey;
 }
 
-// Links inside leg notes: absolute http(s) URLs, and site paths such as /bam/<course>/lesson/<slug>.
-// Everything else renders as plain text (no markdown, no HTML), so a note can never inject markup.
-const NOTE_LINK = /(https?:\/\/[^\s<>"]+[^\s<>".,;:)]|(?<![\w/])\/[a-z][a-z0-9-]*(?:\/[a-z0-9-]+)+)/g;
-
+// Leg notes render as text with links (see splitNoteLinks): site paths become in-app links, and
+// http(s) URLs open in a new tab.
 function NoteText({ text }: { text: string }) {
-  const parts = text.split(NOTE_LINK);
   return (
     <>
-      {parts.map((part, i) => {
-        if (i % 2 === 0) return part;
-        return part.startsWith("/") ? (
-          <Link key={i} href={part} className="underline">{part}</Link>
+      {splitNoteLinks(text).map((seg, i) =>
+        !seg.href ? (
+          seg.text
+        ) : seg.external ? (
+          <a key={i} href={seg.href} target="_blank" rel="noopener noreferrer" className="underline">{seg.text}</a>
         ) : (
-          <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="underline">{part}</a>
-        );
-      })}
+          <Link key={i} href={seg.href} className="underline">{seg.text}</Link>
+        ),
+      )}
     </>
   );
 }
