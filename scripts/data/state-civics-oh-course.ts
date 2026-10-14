@@ -350,7 +350,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
               "What pivotal power did Ohio's 1912 constitutional amendments give directly to the people?",
             options: [
               "The power to elect U.S. Senators",
-              "The initiative and referendum (direct democracy)",
+              "The initiative and referendum",
               "The power to abolish the state income tax",
               "A line-item veto for voters",
             ],
@@ -365,8 +365,8 @@ The practical payoff is the same as everywhere: **who provides your service depe
             options: [
               "A simple majority (50% + 1)",
               "Sixty percent (60%)",
-              "Two-thirds",
-              "Three-fifths",
+              "Two-thirds of votes cast",
+              "Three-fifths of votes cast",
             ],
             correctIndex: 0,
             explanation:
@@ -392,7 +392,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
             options: [
               "Appointment by the Governor for life",
               "Merit selection by a nominating commission",
-              "Popular election (with party labels on the general ballot since 2022)",
+              "Popular election on a partisan ballot",
               "Appointment by the General Assembly",
             ],
             correctIndex: 2,
@@ -405,7 +405,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
               "What vote does the Ohio General Assembly need to override the Governor's veto?",
             options: [
               "A simple majority of each chamber",
-              "Three-fifths (3/5) of each chamber",
+              "Three-fifths of each chamber",
               "Two-thirds of each chamber",
               "A statewide referendum",
             ],
@@ -418,7 +418,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
             prompt: "In the Ohio General Assembly, where do most bills die?",
             options: [
               "On the Governor's desk",
-              "In committee",
+              "In a House or Senate committee",
               "In a citizen referendum",
               "At the county commission",
             ],
@@ -439,7 +439,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
             prompt:
               "What does 'home rule' (Article XVIII, 1912) give Ohio cities and villages?",
             options: [
-              "Broad power to run their own local affairs (adopt charters/ordinances) as long as they don't conflict with general state law",
+              "Local self-government within state law",
               "The power to secede from the state",
               "Immunity from all state law",
               "The right to levy federal taxes",
@@ -454,7 +454,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
               "What recently changed about voting in person in Ohio (HB 458, 2023)?",
             options: [
               "Ohio abolished in-person voting",
-              "Ohio now generally requires an unexpired photo ID to vote in person",
+              "Ohio now requires photo ID at the polls",
               "Ohio adopted Election-Day registration",
               "Ohio made all elections vote-by-mail",
             ],
@@ -469,7 +469,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
             options: [
               "It passed, so amendments now need 60%",
               "It was withdrawn before the vote",
-              "Voters REJECTED it, so amendments still pass on a simple majority",
+              "Voters REJECTED it, about 57% to 43%",
               "A court struck it down",
             ],
             correctIndex: 2,

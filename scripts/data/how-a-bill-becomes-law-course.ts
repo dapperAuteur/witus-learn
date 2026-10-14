@@ -367,8 +367,8 @@ None of this requires any particular party affiliation or position, the process 
           {
             prompt: "What does a House 'closed rule' do?",
             options: [
-              "Bars the bill from getting a floor vote at all",
-              "Allows no floor amendments beyond what the committee already approved",
+              "Bars the bill from any floor vote",
+              "Bars floor amendments except the committee's",
               "Requires a two-thirds vote to pass",
               "Sends the bill straight to the Senate",
             ],
@@ -396,10 +396,10 @@ None of this requires any particular party affiliation or position, the process 
           {
             prompt: "When the House and Senate pass different versions of the same bill, how is that resolved?",
             options: [
-              "The bill automatically dies",
-              "The President chooses one version",
-              "By amending the bill between the chambers, or by a conference committee",
-              "The Supreme Court decides",
+              "The bill automatically dies and must be reintroduced",
+              "The President chooses which version to sign into law",
+              "Back-and-forth amendments, or a conference committee",
+              "The Supreme Court decides which version is valid",
             ],
             correctIndex: 2,
             explanation:
@@ -425,7 +425,7 @@ None of this requires any particular party affiliation or position, the process 
               "It requires a three-fourths override vote",
               "It can be overridden by the Senate alone",
               "It happens automatically after any veto",
-              "It cannot be overridden, because Congress has adjourned and the bill can't be returned",
+              "It can't be overridden; Congress has adjourned",
             ],
             correctIndex: 3,
             explanation:
