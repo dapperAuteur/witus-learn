@@ -260,8 +260,8 @@ The Geological Society awarded him its first Wollaston Medal in 1831, sixteen ye
           {
             prompt: "What kind of evidence set the floor under Ussher's 4004 BCE date?",
             options: [
-              "Written documents, which run out",
-              "Measured thicknesses of sedimentary rock in Ireland",
+              "Written documents like genealogies, which run out",
+              "Rock thicknesses measured in Ireland",
               "The observed cooling rate of heated metal spheres",
               "Astronomical tables of the precession of the equinoxes",
             ],
@@ -300,7 +300,7 @@ The Geological Society awarded him its first Wollaston Medal in 1831, sixteen ye
             prompt: "What did Clair Patterson measure in 1956 to date the earth?",
             options: [
               "Lead isotope ratios in meteorites",
-              "Helium accumulation in deep continental granites",
+              "Helium in granites",
               "Carbon isotope ratios in the oldest known sedimentary rocks",
               "Uranium concentrations in ocean water sampled at several depths",
             ],
@@ -312,8 +312,8 @@ The Geological Society awarded him its first Wollaston Medal in 1831, sixteen ye
           {
             prompt: "What did Steno argue about the tongue stones found embedded in Mediterranean rock?",
             options: [
-              "They were shark teeth",
-              "They were mineral growths shaped by crystal habit",
+              "They were shark teeth, down to the serrations",
+              "They were mineral growths",
               "They were carved objects deposited by earlier peoples",
               "They were the hardened remains of an extinct sea plant",
             ],
@@ -338,8 +338,8 @@ The Geological Society awarded him its first Wollaston Medal in 1831, sixteen ye
           {
             prompt: "A rock layer that is now steeply tilted tells you what, under Steno's principles?",
             options: [
-              "It was tilted after it was deposited",
-              "It was deposited by a current running down a steep slope",
+              "It was laid flat, then tilted after deposition",
+              "It was laid down on a steep slope",
               "It was deposited more rapidly than the layers lying above it",
               "It formed underwater rather than in a river or a lake bed",
             ],
@@ -707,7 +707,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
             prompt: "Why did Cuvier initially suspect the 1823 plesiosaur was a forgery?",
             options: [
               "Its neck carried an implausible number of vertebrae",
-              "It had arrived in Paris without any accompanying stratigraphic notes",
+              "It came with no stratigraphic notes",
               "Its limb bones resembled those of a species already known from Germany",
               "Its skull had been reconstructed in plaster before he was allowed to see it",
             ],
@@ -732,8 +732,8 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
           {
             prompt: "What does Torrens argue has happened to Mary Anning's reputation over time?",
             options: [
-              "She was written out, then rewritten as a saint",
-              "Her finds were reattributed to her brother by later museum curators",
+              "She was first written out, then rewritten as a saint",
+              "Her finds were credited to her brother",
               "Her correspondence was destroyed and reconstructed from secondhand accounts",
               "Her specimens were cataloged under a dealer's name until the twentieth century",
             ],
@@ -772,7 +772,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
             prompt: "William Smith and Gideon Mantell were both men. What does the course draw from their difficulties?",
             options: [
               "The room where a claim becomes knowledge had several doors",
-              "Institutional recognition in this period depended almost entirely on wealth",
+              "Recognition depended almost entirely on wealth",
               "Provincial researchers were barred by statute from publishing in London journals",
               "Naming rights were granted to whoever presented a specimen at a meeting first",
             ],
@@ -784,8 +784,8 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
           {
             prompt: "In what year did the name Dinosauria first appear in print?",
             options: [
-              "1842",
-              "1841, in the meeting program",
+              "1842, in the printed report",
+              "1841",
               "1839, in a letter to the Geological Society",
               "1854, in the Crystal Palace guidebook",
             ],
@@ -1128,7 +1128,7 @@ Learning to see when a dispute is about the world and when it is about the categ
             prompt: "Which behaviour did the Marsh and Cope competition reward?",
             options: [
               "Naming a species fast, on fragmentary material",
-              "Excavating slowly so that the quarry wall could be photographed",
+              "Excavating slowly and carefully",
               "Publishing joint descriptions so that priority could not be disputed",
               "Depositing duplicate specimens at a second museum for verification",
             ],
@@ -1153,8 +1153,8 @@ Learning to see when a dispute is about the world and when it is about the categ
           {
             prompt: "How did the Marsh and Cope rivalry become a public spectacle in 1890?",
             options: [
-              "Each accused the other in the New York Herald",
-              "Their field crews fought over a quarry in front of a railway survey party",
+              "Each accused the other of misconduct in the New York Herald",
+              "Cope's estate gave his notes to a newspaper",
               "Congress opened hearings into the funding of the federal geological surveys",
               "Both submitted rival mounted skeletons to the same international exhibition",
             ],
@@ -1179,9 +1179,9 @@ Learning to see when a dispute is about the world and when it is about the categ
           {
             prompt: "What was the consequence of Marsh publishing an 1883 restoration with a skull not found with the skeleton?",
             options: [
-              "Yale's mount carried the wrong head until 1979",
+              "Yale's 1931 mount carried the wrong kind of head until 1979",
               "The species was declared invalid by the naming commission in 1912",
-              "Every later sauropod mount in America was built without a skull at all",
+              "Every later sauropod mount was left headless",
               "Field crews stopped collecting sauropod skulls for the next two decades",
             ],
             correctIndex: 0,
@@ -1893,9 +1893,9 @@ Most of the time, the interesting answer is not that someone was foolish. It is 
           {
             prompt: "Which of these did the 1980 iridium evidence NOT establish?",
             options: [
-              "That an impact caused the extinction",
+              "That an impact caused the extinction at the boundary",
               "That material with a meteoritic composition reached the boundary",
-              "That the anomaly appears in sections on more than one continent",
+              "That the anomaly is worldwide",
               "That the boundary clay contains far more iridium than the rock around it",
             ],
             correctIndex: 0,
@@ -2011,7 +2011,7 @@ Most of the time, the interesting answer is not that someone was foolish. It is 
             prompt: "On the course timeline, what does the gap between Riggs in 1903 and the 1905 museum label show?",
             options: [
               "Publication and circulation are different events",
-              "Museums were legally required to use the older of two names",
+              "Museums were legally bound by priority",
               "Riggs published in a journal that was not read outside Chicago",
               "The synonymy was rejected by every major museum for two decades",
             ],
