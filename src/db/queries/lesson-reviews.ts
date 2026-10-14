@@ -52,8 +52,24 @@ export interface UpsertLessonReviewInput {
  * Record a verdict. One current verdict per (tenant, lesson, need kind): a new one REPLACES the old
  * one outright (reviewer, credit, correction, hash and date), and clears any "applied" stamp. There
  * is no history chain and no parent, by the no-inbox rule: a verdict is not an answer to anything.
+ *
+ * Returns null, writing nothing, unless the lesson belongs to THIS tenant and THIS course. The route
+ * already 404s both cases; this repeats the check where the row is written, because the foreign
+ * keys alone would accept another school's lesson id under this tenant's name.
  */
-export async function upsertLessonReview(input: UpsertLessonReviewInput): Promise<LessonReview> {
+export async function upsertLessonReview(input: UpsertLessonReviewInput): Promise<LessonReview | null> {
+  const owned = await db
+    .select({ id: lessons.id })
+    .from(lessons)
+    .where(
+      and(
+        eq(lessons.id, input.lessonId),
+        eq(lessons.tenantId, input.tenantId),
+        eq(lessons.courseId, input.courseId),
+      ),
+    )
+    .limit(1);
+  if (owned.length === 0) return null;
   const now = new Date();
   const [row] = await db
     .insert(lessonReviews)

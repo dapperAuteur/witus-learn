@@ -5,7 +5,7 @@ import { REVIEWER_CREDENTIAL_MAX, REVIEWER_NAME_MAX } from "@/lib/lesson-review"
 
 type Params = { params: Promise<{ id: string; auditorId: string }> };
 
-// PATCH /api/courses/[id]/auditors/[auditorId] — set how a reviewer is credited (reviewer sign-off,
+// PATCH /api/courses/[id]/auditors/[auditorId]: set how a reviewer is credited (reviewer sign-off,
 // plans/93 section 1): the name and the credential a lesson's "Reviewed by" line will show. Set by
 // whoever may hand out the grant (the same canManageCourseReviewers gate), never by the reviewer, so
 // the credential is not only self-reported. A blank value clears it, which stops that reviewer
@@ -49,7 +49,7 @@ export async function PATCH(req: Request, { params }: Params) {
   });
 }
 
-// DELETE /api/courses/[id]/auditors/[auditorId] — revoke an audit grant. Takes effect on the next
+// DELETE /api/courses/[id]/auditors/[auditorId]: revoke an audit grant. Takes effect on the next
 // request: the gate reads the table every time, so there is no cached grant to expire.
 export async function DELETE(_req: Request, { params }: Params) {
   const { id, auditorId } = await params;

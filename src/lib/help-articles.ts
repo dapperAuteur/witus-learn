@@ -157,6 +157,8 @@ one). Categories power the catalog filter.`,
 - **Private**, owner/instructor only, even hidden from brand admins.
 - **On hold**, a course flagged with a hold reason **can't be published** until you clear the hold
   (use this for content that still needs vetting).
+- **Held for a reviewer**, a course whose lessons are marked "Before release" is released from its
+  hold on its own page once a qualified reviewer has cleared them: see **Reviewer sign-off**.
 
 Toggle publish per course from **/teach** (click the status pill), or in bulk by selecting several
 courses and choosing **Publish / Unpublish**.
@@ -311,6 +313,11 @@ A reviewer can read **every lesson of that one course**, and nothing else. In pa
 **Remove** next to a name revokes access, and it takes effect immediately. If someone loses their
 link, invite the same address again, that mints a fresh link and replaces the old one.
 
+**Asking a reviewer to sign off lessons.** Some courses mark lessons "Before release" because they
+need a qualified person (a rigger, a veterinarian) before anyone learns from them. Under each
+reviewer's name, add the **name and credential** they will be credited with. You set it, not them,
+and until you do they can read but cannot record a verdict. See **Reviewer sign-off** for the rest.
+
 ## People who put their hand up
 
 Inviting a reviewer is one direction. The other is people volunteering, and that panel sits just
@@ -347,6 +354,72 @@ given in confidence, for this one course.
 The Inbox does get a notification for every submission, saying who put their hand up, in which
 capacity, on which course, and linking back to this panel. It does not carry the phone number or the
 background.`,
+  },
+  {
+    slug: "reviewer-sign-off",
+    title: "Reviewer sign-off: lessons marked \"Before release\"",
+    category: "Courses",
+    keywords: [
+      "before release",
+      "reviewer",
+      "qualified reviewer",
+      "qr",
+      "practitioner",
+      "sign off",
+      "signoff",
+      "verdict",
+      "correction",
+      "credential",
+      "hold",
+      "release",
+      "audit",
+      "applied as written",
+    ],
+    body: `# Reviewer sign-off
+
+Some lessons should not reach a learner on the author's word alone: a rigging load, a hearing-safety
+figure, an animal-health rule. Those lessons carry a box at the top that begins **"Before release"**
+and says who must act: **a qualified reviewer**, **a practitioner** (or the platform owner's own
+demonstration), or **a decision** the course author still has to make.
+
+## If you were invited to review
+
+1. Open your invitation link and sign in with the address it was sent to.
+2. Go to **Review lessons** (\`/audit/review\`). It lists every marked lesson in the courses you were
+   invited to, where each one stands, and how you will be credited.
+3. Open a lesson, read it against its sources, and at the foot of the page choose one verdict:
+   **Cleared**, **Cleared with a correction**, or **Not cleared**.
+4. A correction is one short note (up to 1,000 characters) **attached to that lesson**. Nobody replies
+   to it and nobody is notified; the author applies it. Recording a new verdict replaces your old one.
+
+You can record a verdict only after the person who invited you has added your **name and
+credential**, because that is what the lesson will show: "Reviewed by {name}, {credential}, on
+{date}", with a line saying a review checks the content and is not an endorsement.
+
+**Any change to the lesson's text, even a typo fix, resets its verdict** and asks for a fresh review.
+That is deliberate: your name never sits on wording you did not read.
+
+## If you run the course
+
+- On the course's page under **Teach**, add each reviewer's name and credential under **Invite someone
+  to review this course**.
+- The **Reviewer sign-off** panel on the same page lists every need, its state (awaiting, cleared,
+  correction to apply, not cleared, changed since review), who cleared it, and any correction.
+- **Apply a correction by editing the lesson.** The platform owner can then press **Applied as
+  written** once, which keeps the reviewer's badge on the edited text and shows the date it was
+  applied. Any later edit resets the verdict like any other.
+- A **decision** marker clears only when the marker is edited out of the course file.
+- On **/teach**, a **QR 12/17** chip shows how many qualified-reviewer needs are cleared.
+
+## Releasing the hold (platform owner)
+
+When every qualified-reviewer need is cleared and no decision is left, **Release the review hold**
+appears on the sign-off panel. The server checks again before clearing anything. Practitioner needs
+are shown but do not hold the release. Releasing does not vet the course: vetting is still its own
+step (see **Vetting a course, and the "Coming soon" page**).
+
+For now only the platform owner releases a hold and clears practitioner needs, and only an invited
+reviewer clears a qualified-reviewer need.`,
   },
   {
     slug: "quick-recall",

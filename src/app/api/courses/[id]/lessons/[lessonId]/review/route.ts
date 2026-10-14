@@ -23,7 +23,7 @@ const Body = z.object({
   correction: z.string().max(CORRECTION_MAX * 4).nullable().optional(),
 });
 
-// POST /api/courses/[id]/lessons/[lessonId]/review — record a verdict on one of a lesson's release
+// POST /api/courses/[id]/lessons/[lessonId]/review: record a verdict on one of a lesson's release
 // needs (reviewer sign-off, plans/93 section 1).
 //
 // Who: an ACCEPTED auditor of this course whose grant carries an inviter-set name and credential
@@ -104,6 +104,7 @@ export async function POST(req: Request, { params }: Params) {
     correction: correction.correction,
     lessonHash,
   });
+  if (!row) return errorJson("Not found", 404);
 
   return json({
     review: {

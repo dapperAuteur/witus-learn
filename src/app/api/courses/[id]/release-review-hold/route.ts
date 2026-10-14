@@ -5,7 +5,7 @@ import { readinessOf, reviewsByLesson, summarizeLessonReview } from "@/lib/lesso
 
 type Params = { params: Promise<{ id: string }> };
 
-// POST /api/courses/[id]/release-review-hold — clear a course's publish hold once its review is
+// POST /api/courses/[id]/release-review-hold: clear a course's publish hold once its review is
 // done (reviewer sign-off, plans/93 section 1).
 //
 // PLATFORM OWNER ONLY. Whether a white-label school's brand_admin may release is an open question

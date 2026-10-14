@@ -8,7 +8,7 @@ type Params = { params: Promise<{ id: string; lessonId: string }> };
 
 const Body = z.object({ needKind: z.enum(["qr", "p"]) });
 
-// POST /api/courses/[id]/lessons/[lessonId]/review/applied — "Applied as written" (reviewer
+// POST /api/courses/[id]/lessons/[lessonId]/review/applied: "Applied as written" (reviewer
 // sign-off, plans/93 section 1). The platform owner says he has edited the lesson to read exactly as
 // the reviewer's correction asked. That stamps correction_applied_at and RE-PINS the verdict's hash
 // to the lesson as it now stands, so the edit that applied the correction does not reset the badge.
