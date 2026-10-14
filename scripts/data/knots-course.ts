@@ -1973,10 +1973,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
       ],
       title: "26 · Broadcast & stage rigging basics (safety-flagged)",
       section: "8 · Practical applications",
-      body: `**What it is.** How the rope skills in this course show up in **broadcast, event, and stage work**: the "utility technician" world this course pairs with (see the Sports/Media Broadcasting course). **Safety flag: overhead rigging that can fall on people is life-safety work governed by rated hardware, load limits, and certification (e.g. ETCP-style standards). This lesson is educational orientation, not a rigging qualification.**
+      body: `**What it is.** How the rope skills in this course show up in **broadcast, event, and stage work**: the "utility technician" world this course pairs with (see the Sports/Media Broadcasting course). **Safety flag: overhead rigging that can fall on people is life-safety work governed by rated hardware, load limits, and certification (for example ETCP certification) and industry standards such as the ANSI E1 series. This lesson is educational orientation, not a rigging qualification.**
 
 **Where rope work fits, day to day.**
-- **Dressing and securing cable.** A utility tech runs camera and audio cable, then secures and tidies runs so nobody trips and nothing pulls loose. Clean **hitches** (clove hitch, two half-hitches) and neat **coiling** (Lesson 3) are the daily craft, including the broadcast habit of coiling cable "over-under" so it lays flat and pays out clean.
+- **Dressing and securing cable.** A utility tech runs camera and audio cable, then secures and tidies runs so nobody trips and nothing pulls loose. Clean **hitches** (clove hitch, two half-hitches) and neat **coiling** are the daily craft. Lesson 3 teaches coiling rope; broadcast crews also coil cable "over-under" so it lays flat and pays out clean, a crew habit this course does not teach step by step.
 - **Securing gear on carts and stands.** Tying down equipment with **round turn + two half-hitches** and **adjustable taut-line** tension (Lessons 12, 14, 24) keeps gear safe as it's moved.
 - **Temporary tie-offs and guys.** Steadying a stand or a light with a guy line uses the same hitches, but **anything overhead or over people is rated rigging**, not a rope-and-knot improvisation.
 - **Knowing your limits.** The single most important professional skill here is knowing which tasks are "utility rope work" (fine to do) versus "overhead rigging / flying loads" (defer to certified riggers, rated slings, shackles, and load calcs).
@@ -2155,7 +2155,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
             ],
             correctIndex: 1,
             explanation:
-              "The over-under habit is the broadcast version of the coiling lesson: cable that lays flat and pays out clean, instead of a sloppy coil that tangles or trips someone.",
+              "Over-under is a broadcast crew habit, separate from the rope coil lesson 3 teaches: cable that lays flat and pays out clean, instead of a sloppy coil that tangles or trips someone.",
             sourceLessonSlug: "broadcast-stage-rigging-basics",
           },
         ],

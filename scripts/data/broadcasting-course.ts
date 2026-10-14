@@ -118,11 +118,11 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
 
 **Why it matters.** You do not need a demo reel to be a utility tech; you need to be reliable, safe, and fast. Because the work involves securing gear, tying off cable, and rigging on truss and stands, **basic knot and rigging skill is a real, hireable competency**. A tech who can throw a clean, quick-release hitch and coil cable so it runs free is worth more than one who leaves a tangled, unsafe mess.
 
-**Knots and rigging: the cross-link.** Camera cables, mic stands, banners, backdrops, and lighting all get secured with rope, straps, and ties. Knowing which knot holds under load, which one unties fast when you strike the set, and how to coil so a cable pays out without kinking is day-one utility work. **Learn this properly in the companion _Knot-Tying & Rope Work_ course on Learn.WitUS**: the bowline (a fixed loop that will not slip), the clove hitch and round-turn-and-two-half-hitches (securing to a rail or truss), the trucker's hitch (tensioning a run), and safe coiling. Bring those skills to a broadcast crew and you are immediately more useful than a rookie who can only tape.
+**Knots and rigging: the cross-link.** Camera cables, mic stands, banners, backdrops, and lighting all get secured with rope, straps, and ties. Knowing which knot holds under load, which one unties fast when you strike the set, and how to coil so a cable pays out without kinking is day-one utility work. **Learn this properly in the companion _Knot-Tying & Rope Work_ course on Learn.WitUS**: the bowline (a fixed loop that will not slip), the clove hitch and round-turn-and-two-half-hitches (securing to a rail or truss), the taut-line hitch (tensioning a run), and safe coiling. Bring those skills to a broadcast crew and you are immediately more useful than a rookie who can only tape.
 
 **Real-world example.** During a rain delay, the utility tech re-secures a camera cable that came loose on the truss using a round turn and two half-hitches, coils the excess out of the walkway, and tapes the last run. The show comes back on air with nothing to trip over. That quiet competence is what gets a utility tech invited back.
 
-**Practical application.** Learn four knots to muscle memory: a bowline, a clove hitch, a round turn and two half-hitches, and a trucker's hitch, then practice coiling a length of cable or rope so it pays out cleanly. (Do the drills in the _Knot-Tying & Rope Work_ course.) Time yourself; speed and cleanliness both count on a live crew.
+**Practical application.** Learn four knots to muscle memory: a bowline, a clove hitch, a round turn and two half-hitches, and a taut-line hitch, then practice coiling a length of cable or rope so it pays out cleanly. (Do the drills in the _Knot-Tying & Rope Work_ course.) Time yourself; speed and cleanliness both count on a live crew.
 
 **Next steps.** With a way in identified, build the materials that prove you belong: reel, résumé, and brand.
 
@@ -501,7 +501,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             options: [
               "The clove hitch, which wraps around a rail without a loop",
               "The bowline",
-              "The trucker's hitch, which pulls a line tight against a fixed point",
+              "The taut-line hitch, which pulls a line tight against a fixed point",
               "The round turn and two half-hitches, which holds under a steady pull",
             ],
             correctIndex: 1,
@@ -512,27 +512,27 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
           {
             prompt: "Which knots does the lesson name for securing to a rail or truss?",
             options: [
-              "The bowline and the trucker's hitch, tied in sequence on the same line",
+              "The bowline and the taut-line hitch, tied in sequence on the same line",
               "Any knot that can be untied quickly when the set is struck",
               "The clove hitch, and the round turn and two half-hitches",
               "A simple overhand knot backed up with gaffer tape",
             ],
             correctIndex: 2,
             explanation:
-              "Those two are the securing-to-a-rail knots. The bowline is the fixed loop and the trucker's hitch is for tensioning a run.",
+              "Those two are the securing-to-a-rail knots. The bowline is the fixed loop and the taut-line hitch is for tensioning a run.",
             sourceLessonSlug: "utility-technician-and-rigging",
           },
           {
             prompt: "Which knot does the lesson name for tensioning a run?",
             options: [
-              "The trucker's hitch",
+              "The taut-line hitch",
               "The bowline, which holds its loop size under load",
               "The clove hitch, which tightens as the line is pulled",
               "The round turn and two half-hitches, which resists slipping",
             ],
             correctIndex: 0,
             explanation:
-              "The trucker's hitch is the tensioning knot in the set of four the lesson asks you to learn to muscle memory.",
+              "The taut-line hitch is the tensioning knot in the set of four the lesson asks you to learn to muscle memory.",
             sourceLessonSlug: "utility-technician-and-rigging",
           },
           {
@@ -565,7 +565,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             prompt: "In the rain-delay example, which knot re-secures the loose camera cable on the truss?",
             options: [
               "A bowline, tied around the truss and left slack",
-              "A trucker's hitch, pulling the cable taut against the rail",
+              "A taut-line hitch, pulling the cable taut against the rail",
               "A round turn and two half-hitches",
               "A clove hitch backed up with a second clove hitch",
             ],
@@ -629,7 +629,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
         },
         {
           prompt: "Which four knots does the lesson tell you to learn to muscle memory?",
-          answer: "The bowline, the clove hitch, the round turn and two half-hitches, and the trucker's hitch, plus clean cable coiling (taught in the companion Knot-Tying and Rope Work course).",
+          answer: "The bowline, the clove hitch, the round turn and two half-hitches, and the taut-line hitch, plus clean cable coiling (taught in the companion Knot-Tying and Rope Work course).",
         },
       ],
       title: "4 · The demo reel: your 90-second audition",
@@ -2021,7 +2021,7 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
 4. **Air**: everyone holds position; utility stands by to fix, move, and support live.
 5. **Strike**: de-rig, coil cable properly, pack; the crew is not done until the truck is loaded.
 
-**Cross-link: rigging safety.** Rigging and striking are hands-on rope-and-cable work: securing runs so nobody trips, tying gear to stands and rails, and coiling cable so it pays out clean next time. **The companion _Knot-Tying & Rope Work_ course on Learn.WitUS teaches the exact knots (bowline, clove hitch, round turn and two half-hitches, trucker's hitch) and safe coiling that make you valuable on the rig-and-strike crew.**
+**Cross-link: rigging safety.** Rigging and striking are hands-on rope-and-cable work: securing runs so nobody trips, tying gear to stands and rails, and coiling cable so it pays out clean next time. **The companion _Knot-Tying & Rope Work_ course on Learn.WitUS teaches the exact knots (bowline, clove hitch, round turn and two half-hitches, taut-line hitch) and safe coiling that make you valuable on the rig-and-strike crew.**
 
 **Real-world example.** A new utility tech arrives 30 minutes early, helps pull cable and dress it with clean ties, stands by through the game to move a cable on cue, and stays to coil and pack every run at strike. The crew lead marks them as reliable, and calls them for the next three games.
 
@@ -2301,7 +2301,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
               "Whatever holds, since a rig is judged on speed rather than method",
               "A single reliable knot used consistently across the whole rig",
               "Only the knots specified by the equipment manufacturer",
-              "Bowline, clove hitch, round turn and two half-hitches, trucker's hitch",
+              "Bowline, clove hitch, round turn and two half-hitches, taut-line hitch",
             ],
             correctIndex: 3,
             explanation:
@@ -2515,7 +2515,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
             ],
             correctIndex: 1,
             explanation:
-              "Utility and AV work involves securing cable and rigging gear; knowing the bowline, clove hitch, round turn and two half-hitches, and trucker's hitch (taught in the companion Knot-Tying course) makes you immediately useful.",
+              "Utility and AV work involves securing cable and rigging gear; knowing the bowline, clove hitch, round turn and two half-hitches, and taut-line hitch (taught in the companion Knot-Tying course) makes you immediately useful.",
             sourceLessonSlug: "utility-technician-and-rigging",
           },
           {
