@@ -9,10 +9,12 @@ import {
   forthcomingLead,
   isEmptyTourSlot,
   liveTour,
+  liveToursByLesson,
   normalizeTourCredit,
   suggestSlotFromNotes,
   tourCaptureEligibility,
   tourMediaFor,
+  tourSlotState,
   type TourCaptureFacts,
 } from "@/lib/field-log-tour";
 import { toEmbed } from "@/lib/media";
@@ -185,6 +187,38 @@ describe("liveTour: re-checked on every read", () => {
     expect(liveTour({ ...stored, capture: { ...ok, consentStatus: "declined" } })).toMatchObject({ reason: "consent_declined" });
     expect(liveTour({ ...stored, leg: { permissionNote: "" } })).toMatchObject({ reason: "no_permission_note" });
     expect(liveTour({ ...stored, leg: null })).toMatchObject({ reason: "no_permission_note" });
+  });
+});
+
+describe("liveToursByLesson and tourSlotState", () => {
+  const stored = { url: ok.storageUrl!, creditLine: "Photo by BAM at the porch.", capture: ok, leg };
+  const slot = { lessonType: "virtual_tour", contentUrl: null };
+
+  it("keys live tours by lesson and drops hidden ones and lessons that are no longer slots", () => {
+    const map = liveToursByLesson([
+      { ...stored, ...slot, lessonId: "live" },
+      { ...stored, ...slot, lessonId: "declined", capture: { ...ok, consentStatus: "declined" } },
+      { ...stored, lessonId: "own-link", lessonType: "virtual_tour", contentUrl: "https://wanderlearn.example/t" },
+      { ...stored, lessonId: "now-text", lessonType: "text", contentUrl: null },
+    ]);
+    expect([...map.keys()]).toEqual(["live"]);
+    expect(map.get("live")).toEqual({
+      media: { kind: "iframe", src: "https://drive.google.com/file/d/abc123/preview" },
+      credit: "Photo by BAM at the porch.",
+    });
+  });
+
+  it("says empty, own link, live with its host, or hidden with the reason", () => {
+    expect(tourSlotState(slot, null)).toEqual({ state: "empty" });
+    expect(tourSlotState({ ...slot, contentUrl: "https://wanderlearn.example/t" }, stored)).toEqual({ state: "own_link" });
+    expect(tourSlotState(slot, stored)).toEqual({ state: "live", credit: stored.creditLine, host: "drive.google.com" });
+    expect(tourSlotState(slot, { ...stored, capture: null })).toEqual({
+      state: "hidden",
+      credit: stored.creditLine,
+      host: "drive.google.com",
+      reason: "capture_removed",
+      message: TOUR_REFUSAL_COPY.capture_removed,
+    });
   });
 });
 

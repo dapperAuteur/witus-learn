@@ -158,6 +158,59 @@ export function liveTour(row: StoredTour): LiveTour {
   return { ok: true, media: e.media, credit: row.creditLine };
 }
 
+/** A stored tour with the lesson it sits in, as the lesson and course pages read it. */
+export interface StoredLessonTour extends StoredTour {
+  lessonId: string;
+  lessonType: string;
+  contentUrl: string | null;
+}
+
+/**
+ * The live field tours of a set of lessons, keyed by lesson id. A lesson that has since gained a
+ * tour link of its own (contentUrl), or stopped being a virtual_tour, is no longer a slot: its own
+ * content wins and the field tour is not shown.
+ */
+export function liveToursByLesson(rows: readonly StoredLessonTour[]): Map<string, { media: TourMedia; credit: string }> {
+  const out = new Map<string, { media: TourMedia; credit: string }>();
+  for (const row of rows) {
+    if (!isEmptyTourSlot(row, false)) continue;
+    const live = liveTour(row);
+    if (live.ok) out.set(row.lessonId, { media: live.media, credit: live.credit });
+  }
+  return out;
+}
+
+export type TourSlotState =
+  | { state: "empty" }
+  | { state: "own_link" }
+  | { state: "live"; credit: string; host: string }
+  | { state: "hidden"; credit: string; host: string; reason: TourHiddenReason; message: string };
+
+function hostOf(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+}
+
+/**
+ * What /teach/tours says about one tour lesson: empty, filled by a tour link of its own, filled from
+ * the field and shown, or filled from the field and hidden (with the reason). The host is shown so a
+ * dead or unexpected link is visible at a glance.
+ */
+export function tourSlotState(
+  lesson: { lessonType: string; contentUrl: string | null },
+  stored: StoredTour | null,
+): TourSlotState {
+  if (lesson.contentUrl?.trim()) return { state: "own_link" };
+  if (!stored) return { state: "empty" };
+  const live = liveTour(stored);
+  const host = hostOf(stored.url);
+  if (live.ok) return { state: "live", credit: stored.creditLine, host };
+  return { state: "hidden", credit: stored.creditLine, host, reason: live.reason, message: live.message };
+}
+
 /** Who may put a field capture into a lesson: the platform owner, or the course's own instructor. */
 export function canPublishTour(input: { isOwner: boolean; isInstructor: boolean }): boolean {
   return input.isOwner || input.isInstructor;
