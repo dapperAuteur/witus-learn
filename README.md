@@ -51,7 +51,8 @@ Wanderlust, renamed from Wanderlearn in 2026-08) can render real Learn.WitUS les
 host, never client input, and every response is **published + `visibility:"public"` only**. The two
 reads that return LESSONS additionally require the course to be **vetted** (`courses.vetted_at IS NOT
 NULL`), so an unvetted "Coming soon" course is listed by `GET /api/v1/courses` but its lessons 404;
-see [src/lib/vetting.ts](src/lib/vetting.ts). Mint
+see [src/lib/vetting.ts](src/lib/vetting.ts). A lesson's media is its own `contentUrl`: a tour from
+the field (`lesson_tour_embeds`, see the Field Log section) is not included yet. Mint
 keys at `/admin/api-keys` (owner/brand-admin). Every response includes a top-level `disclaimer`
 field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.ts) and the
 consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
@@ -920,7 +921,36 @@ A long route is loaded rather than typed: `pnpm field-log:import <file.json> [--
 a git-tracked file, because an itinerary says where someone will be and this repo is public; keep the
 JSON under the gitignored `content/` tree. Re-runs are safe: legs match by name and keep their visited
 tick, and a leg missing from the file is reported, never deleted. The file shape is in the script's
-header.
+header, including each leg's optional `permissionNote` (a re-import that leaves it out keeps the one
+already stored).
+
+**Permission note.** Each leg has a `permission_note` (up to 500 characters, migration
+`0068_jittery_changeling`): what permission covers filming at that stop, in the learner's words, such
+as "Public viewpoint, no permission needed". It is set on the add-leg form, in the "Use in a lesson"
+panel, through `PATCH .../legs/[legId]`, or from the import file, and it shows on the leg card. Like the
+rest of the consent minimum it holds no contact details.
+
+**Use in a lesson (tours from the field, plans/93 section 2).** A photo or video logged on a leg can fill
+an empty tour slot: a `virtual_tour` lesson with no tour link of its own (the 13 site-history courses'
+"Now" lessons). The panel appears on each leg only for a viewer who may fill at least one slot, which
+is the **platform owner** or the **course's own instructor**; it suggests the slot the leg's notes link
+to, lists the leg's captures with the ineligible ones disabled and the reason shown, and offers an
+editable credit (default "Photo by {name} at {stop}, {place}, {month year}."). The server refuses, with
+the reason (`GET|POST /api/field-log/projects/[id]/legs/[legId]/tour-targets`, 422): a subject who
+**declined**; a capture that **involves a minor** without **written** consent; any kind but **photo or
+video**; a missing or non-**https** link; a link that **cannot be shown** in a lesson (a Drive folder, a
+YouTube channel, an audio file); and a leg with **no permission note**. The tour lives in its own table,
+`lesson_tour_embeds` (one per lesson, a copy of the capture's link and the credit), because the course
+seeder rewrites `lessons.content_url` on every seed. Media stays **link only**: nothing is uploaded or
+hosted, and a Google Drive file link is shown through its `/preview` form. **Every lesson read re-runs
+the same rules** against the capture and leg as they stand, so a consent later set to declined, a
+removed permission note, a changed link or a deleted capture takes the tour off the lesson at once.
+While a tour is live, the lesson and course pages drop the title's "(360 tour, forthcoming)" suffix and
+the body's opening "forthcoming" paragraph; the course files are not edited. **`/teach/tours`** (linked
+from the `/teach` header) lists every tour slot as empty, shown, hidden (with why), or with its own
+link, and **Remove** (`DELETE /api/courses/[id]/lessons/[lessonId]/tour`, any course editor) empties a
+slot again. Nothing is requested or queued: a learner proposing a tour to an instructor is out of scope
+under the no-inbox rule. The public read API (`/api/v1`) does not carry tours from the field yet.
 
 ## Admin home + self-serve brand settings
 

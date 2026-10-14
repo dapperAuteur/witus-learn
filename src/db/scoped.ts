@@ -30,6 +30,14 @@ import {
 } from "@/db/queries/lesson-reviews";
 import type { VerdictNeedKind } from "@/lib/lesson-review";
 import {
+  deleteLessonTourEmbed,
+  getLessonTourEmbed,
+  insertLessonTourEmbed,
+  listCourseTourEmbeds,
+  listTourSlots,
+  type InsertTourInput,
+} from "@/db/queries/tour-embeds";
+import {
   countCourseInterestByCapacity,
   countPendingCourseInterest,
   decideCourseInterest,
@@ -311,6 +319,35 @@ export class ScopedDb {
   /** Lessons carrying release needs in these courses, with the fields their hash is computed from. */
   listReviewableLessons(courseIds: readonly string[]) {
     return listReviewableLessons(this.tenantId, courseIds);
+  }
+
+  // ── Tours from the field (plans/93 section 2) ──────────────────────────────
+  // A field capture shown in a lesson's tour slot. Every method supplies this tenant itself, so a
+  // route can neither read nor write a tour, nor list a slot, outside its own school.
+
+  /** Virtual-tour lessons the viewer may publish to: every course here for the owner, else their own. */
+  listTourSlots(viewer: { userId: string; isOwner: boolean }) {
+    return listTourSlots(this.tenantId, viewer);
+  }
+
+  /** Every field tour stored on one of this tenant's courses (shown or not; see liveToursByLesson). */
+  listCourseTourEmbeds(courseId: string) {
+    return listCourseTourEmbeds(this.tenantId, courseId);
+  }
+
+  /** The field tour stored on one of this tenant's lessons, or null. */
+  getLessonTourEmbed(lessonId: string) {
+    return getLessonTourEmbed(this.tenantId, lessonId);
+  }
+
+  /** Publish a tour into an empty slot of one of this tenant's courses. */
+  insertLessonTourEmbed(input: Omit<InsertTourInput, "tenantId">) {
+    return insertLessonTourEmbed({ tenantId: this.tenantId, ...input });
+  }
+
+  /** Take the tour off one lesson of one of this tenant's courses. */
+  deleteLessonTourEmbed(courseId: string, lessonId: string) {
+    return deleteLessonTourEmbed(this.tenantId, courseId, lessonId);
   }
 
   // ── Self-nominated course interest (the public "I want to help" form) ──────

@@ -96,6 +96,13 @@ export const projectLegs = pgTable(
     endDate: date("end_date"),
     visited: boolean("visited").notNull().default(false),
     notes: text("notes"),
+    /**
+     * What permission covers filming here, in the learner's words (up to 500 characters): "Public
+     * viewpoint, no permission needed", "Site manager agreed by email, 2026-10-02". A capture on this
+     * leg can fill a lesson's tour slot only when this is set (src/lib/field-log-tour.ts). It names
+     * no contact details, like the rest of the consent minimum.
+     */
+    permissionNote: text("permission_note"),
     /** A SINGLE light per-leg estimate (trip planning), not a budget ledger — RideWitUS owns budgets. */
     estCostCents: integer("est_cost_cents"),
     estCurrency: text("est_currency"),
@@ -105,6 +112,7 @@ export const projectLegs = pgTable(
   (t) => [
     index("project_legs_project_idx").on(t.projectId),
     check("project_legs_site_type_chk", sql`${t.siteType} is null or ${t.siteType} in ('farm','factory','office','market','home','public-space','archive','other')`),
+    check("project_legs_permission_note_chk", sql`${t.permissionNote} is null or char_length(${t.permissionNote}) <= 500`),
   ],
 );
 
