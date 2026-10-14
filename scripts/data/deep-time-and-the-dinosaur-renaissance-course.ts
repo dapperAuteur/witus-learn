@@ -299,7 +299,7 @@ The Geological Society awarded him its first Wollaston Medal in 1831, sixteen ye
           {
             prompt: "What did Clair Patterson measure in 1956 to date the earth?",
             options: [
-              "Lead isotope ratios in meteorites",
+              "Lead isotope ratios in meteorites, yielding about 4.55 billion years",
               "Helium in granites",
               "Carbon isotope ratios in the oldest known sedimentary rocks",
               "Uranium concentrations in ocean water sampled at several depths",
@@ -351,7 +351,7 @@ The Geological Society awarded him its first Wollaston Medal in 1831, sixteen ye
           {
             prompt: "Steno ended his life as a Catholic bishop. Why does the course insist on mentioning it?",
             options: [
-              "Because the people here do not sort into two teams",
+              "Because the people here do not sort into two teams, religion against science",
               "Because his ordination was the reason the principles went unpublished",
               "Because the Church later suppressed the stratigraphic work he had done",
               "Because his later writings retracted the argument about the tongue stones",
@@ -377,7 +377,7 @@ The Geological Society awarded him its first Wollaston Medal in 1831, sixteen ye
           {
             prompt: "How did Hutton's theory reach a wide nineteenth-century readership?",
             options: [
-              "Through Playfair's clear restatement of it in 1802",
+              "Through John Playfair's clear 1802 restatement of the theory",
               "Through a French translation commissioned by the Royal Society",
               "Through a series of public lectures Hutton gave across Scotland",
               "Through its inclusion in the Encyclopaedia Britannica of the period",
@@ -390,7 +390,7 @@ The Geological Society awarded him its first Wollaston Medal in 1831, sixteen ye
           {
             prompt: "What is the principle of faunal succession that William Smith worked out?",
             options: [
-              "Each stratum carries its own distinctive fossils",
+              "Each stratum carries its own distinctive fossil assemblage wherever it goes",
               "Fossils become smaller and simpler in progressively deeper layers",
               "Marine fossils always occur beneath the layers holding land animals",
               "The number of fossil species in a layer rises with the layer's thickness",
@@ -667,7 +667,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
           {
             prompt: "What is the rule that makes a field notebook its own genre of writing?",
             options: [
-              "Observation and interpretation are kept visibly separate",
+              "Observation and interpretation are kept visibly separate, with the interpretation marked off",
               "Entries are written in the past tense and signed by two witnesses",
               "Every entry is copied into a second book kept at a different location",
               "Measurements are recorded before any sketch of the specimen is attempted",
@@ -706,7 +706,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
           {
             prompt: "Why did Cuvier initially suspect the 1823 plesiosaur was a forgery?",
             options: [
-              "Its neck carried an implausible number of vertebrae",
+              "Its neck carried too many vertebrae to be credible in a genuine animal",
               "It came with no stratigraphic notes",
               "Its limb bones resembled those of a species already known from Germany",
               "Its skull had been reconstructed in plaster before he was allowed to see it",
@@ -732,7 +732,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
           {
             prompt: "What does Torrens argue has happened to Mary Anning's reputation over time?",
             options: [
-              "She was first written out, then rewritten as a saint",
+              "She was mythologized both ways: first written out, then rewritten as a saint",
               "Her finds were credited to her brother",
               "Her correspondence was destroyed and reconstructed from secondhand accounts",
               "Her specimens were cataloged under a dealer's name until the twentieth century",
@@ -745,7 +745,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
           {
             prompt: "What made publication the decisive barrier for Anning rather than a matter of courtesy?",
             options: [
-              "Fellowship of the Geological Society was closed to women",
+              "Fellowship of the Geological Society was closed to women in her lifetime",
               "The Transactions charged an author's fee she could not afford to pay",
               "Descriptions had to be submitted in Latin, which she had never been taught",
               "Specimens sold to a private buyer could not legally be described in print",
@@ -771,7 +771,7 @@ The conclusion did not survive. Owen also opposed Darwin's account after 1859 an
           {
             prompt: "William Smith and Gideon Mantell were both men. What does the course draw from their difficulties?",
             options: [
-              "The room where a claim becomes knowledge had several doors",
+              "The room where a claim becomes knowledge had several doors, and gender was only one",
               "Recognition depended almost entirely on wealth",
               "Provincial researchers were barred by statute from publishing in London journals",
               "Naming rights were granted to whoever presented a specimen at a meeting first",
@@ -1101,7 +1101,7 @@ Learning to see when a dispute is about the world and when it is about the categ
           {
             prompt: "Which part of Owen's picture of these animals turned out to be right?",
             options: [
-              "That they stood on columnar legs held under the body",
+              "That they stood on columnar legs held under the body, not sprawling",
               "That they were confined to swamps and shallow coastal lagoons",
               "That their skin was covered in overlapping bony scales like a lizard",
               "That the conical bone found with Iguanodon sat on the animal's snout",
@@ -1127,7 +1127,7 @@ Learning to see when a dispute is about the world and when it is about the categ
           {
             prompt: "Which behaviour did the Marsh and Cope competition reward?",
             options: [
-              "Naming a species fast, on fragmentary material",
+              "Naming a species fast, on fragmentary material, to win priority",
               "Excavating slowly and carefully",
               "Publishing joint descriptions so that priority could not be disputed",
               "Depositing duplicate specimens at a second museum for verification",
@@ -1153,7 +1153,7 @@ Learning to see when a dispute is about the world and when it is about the categ
           {
             prompt: "How did the Marsh and Cope rivalry become a public spectacle in 1890?",
             options: [
-              "Each accused the other of misconduct in the New York Herald",
+              "Each accused the other of incompetence and misconduct in the New York Herald",
               "Cope's estate gave his notes to a newspaper",
               "Congress opened hearings into the funding of the federal geological surveys",
               "Both submitted rival mounted skeletons to the same international exhibition",
@@ -1192,7 +1192,7 @@ Learning to see when a dispute is about the world and when it is about the categ
           {
             prompt: "What is the narrow, accurate claim the course makes about the Bone Wars?",
             options: [
-              "The incentive was to be first, not to be checkable",
+              "The incentive was to be first, not to be checkable, so what only served checking was not kept",
               "The competition produced almost nothing of lasting scientific value",
               "The damage was caused by the two men's personalities rather than by the system",
               "The material was so poorly collected that the Morrison Formation is now useless",
@@ -1218,7 +1218,7 @@ Learning to see when a dispute is about the world and when it is about the categ
           {
             prompt: "What is actually in dispute in the Brontosaurus argument after Tschopp and colleagues published in 2015?",
             options: [
-              "Where to draw the boundary called genus on a branching tree",
+              "Where to draw the boundary called genus on a branching tree, not the anatomy",
               "Whether the specimens in question come from the Morrison Formation at all",
               "Whether Marsh or Riggs holds priority for naming the animal originally",
               "Whether the skeletons represent one species or several dozen local forms",
@@ -1532,7 +1532,7 @@ That last point closes a loop this course opened in lesson 5. Liaoning fossils a
           {
             prompt: "What does the course say actually keeps a wrong scientific picture alive?",
             options: [
-              "Its coherence: it makes unrelated facts into one story",
+              "Its coherence: it makes a mass of unrelated facts into one story",
               "The reluctance of senior researchers to admit any past error",
               "The absence of any published evidence that contradicts it directly",
               "The difficulty of obtaining funding to test a well-established view",
@@ -1545,7 +1545,7 @@ That last point closes a loop this course opened in lesson 5. Liaoning fossils a
           {
             prompt: "What does the stiffening of the Deinonychus tail by bony rods indicate?",
             options: [
-              "It was held out behind as a rigid counterweight",
+              "It was held out behind as a rigid counterweight, balancing the animal as it ran and struck",
               "It was used to prop the animal upright while it was resting",
               "It was swung sideways as a defensive weapon against predators",
               "It was too heavy to lift, so the animal walked with it dragging",
@@ -1558,7 +1558,7 @@ That last point closes a loop this course opened in lesson 5. Liaoning fossils a
           {
             prompt: "What was Heilmann's 1926 objection to theropods being the ancestors of birds?",
             options: [
-              "No theropod then known preserved clavicles",
+              "No theropod then known preserved clavicles, which fuse into a bird's furcula",
               "No theropod then known had been found earlier in time than Archaeopteryx",
               "No theropod then known showed any trace of feathers or skin impressions",
               "No theropod then known had a hand with the same three fingers birds have",
@@ -1597,7 +1597,7 @@ That last point closes a loop this course opened in lesson 5. Liaoning fossils a
           {
             prompt: "What does the course say about Bakker's framing of himself as a heretic?",
             options: [
-              "It worked, and it is not evidence",
+              "It worked as a rhetorical instrument, and it is not evidence",
               "It was invented by his publisher without his agreement",
               "It delayed acceptance of his argument by roughly a decade",
               "It was the standard way disputes were framed in the journals then",
@@ -1867,7 +1867,7 @@ Most of the time, the interesting answer is not that someone was foolish. It is 
           {
             prompt: "What were the Alvarez team originally trying to measure at Gubbio?",
             options: [
-              "How long the boundary clay took to accumulate",
+              "How long the boundary clay took to accumulate, using meteoritic iridium as a steady clock",
               "How many microfossil species disappeared at the boundary",
               "How much the sea level had fallen at the end of the Cretaceous",
               "How the magnetic polarity of the limestone changed across the layer",
@@ -1883,7 +1883,7 @@ Most of the time, the interesting answer is not that someone was foolish. It is 
               "Most of the earth's supply sank into the core early on",
               "It weathers out of surface rocks faster than any other heavy metal",
               "It forms only under the pressures found in the earth's lower mantle",
-              "It is destroyed by contact with liquid water over geological time",
+              "Liquid water destroys it over geological time",
             ],
             correctIndex: 0,
             explanation:
@@ -1893,7 +1893,7 @@ Most of the time, the interesting answer is not that someone was foolish. It is 
           {
             prompt: "Which of these did the 1980 iridium evidence NOT establish?",
             options: [
-              "That an impact caused the extinction at the boundary",
+              "That an impact caused the extinction rather than merely coinciding with it",
               "That material with a meteoritic composition reached the boundary",
               "That the anomaly is worldwide",
               "That the boundary clay contains far more iridium than the rock around it",
@@ -1984,7 +1984,7 @@ Most of the time, the interesting answer is not that someone was foolish. It is 
           {
             prompt: "The 2010 Science review with forty-one authors declared the case settled. What happened next?",
             options: [
-              "Formal published comments disputed it in the same journal",
+              "Formal comments in the same journal disputed it as overstating the case",
               "The Geological Society of America adopted it as an official position",
               "The rival volcanic hypothesis was formally withdrawn by its authors",
               "The paper was retracted after an error in its dating was identified",
@@ -2010,7 +2010,7 @@ Most of the time, the interesting answer is not that someone was foolish. It is 
           {
             prompt: "On the course timeline, what does the gap between Riggs in 1903 and the 1905 museum label show?",
             options: [
-              "Publication and circulation are different events",
+              "Publication and circulation are different events; the 1905 label won",
               "Museums were legally bound by priority",
               "Riggs published in a journal that was not read outside Chicago",
               "The synonymy was rejected by every major museum for two decades",

@@ -13,7 +13,8 @@ import type { AuthoredCourse } from "./authored-course";
 // House style follows deaf-america-course.ts: `section` on every lesson, flush-left single-line
 // `:::reveal q ||| a`, a `## Vocabulary` block, APA 7 `## Sources`, a quiz per teaching section
 // serving 5 plus a final serving 10, every question carrying `explanation` + `sourceLessonSlug`.
-// Correct options are written SHORT and distractors long and specific.
+// The correct option's length position is balanced across each bank (the length-balance guard
+// enforces it in pnpm lint), and distractors are specific.
 export const NEUROMATCH_COMP_BEHAVIOUR_COURSE: AuthoredCourse = {
   title: "Computational Behaviour Foundations",
   description:
@@ -715,10 +716,10 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "Why does markerless estimation matter beyond convenience?",
             options: [
-              "The measurement does not intervene in the behaviour",
+              "It leaves the measured behavior undisturbed",
               "It runs faster than marker-based tracking",
               "It requires no calibration",
-              "It works without any labelled frames",
+              "It works without any labeled frames",
             ],
             correctIndex: 0,
             explanation:
@@ -819,9 +820,9 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What is a feature, in this pipeline?",
             options: [
-              "A quantity computed from pose, such as a speed or angle",
-              "A behaviour that appears in the ethogram",
-              "A frame selected for hand labelling",
+              "A quantity computed from pose",
+              "A behavior that appears in the ethogram",
+              "A frame selected for hand labeling",
               "A parameter learned by the network",
             ],
             correctIndex: 0,
@@ -832,10 +833,10 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What does re-expressing pose in the egocentric frame accomplish?",
             options: [
-              "It removes position and heading so posture compares across the arena",
+              "It removes position and heading from the pose",
               "It corrects for camera lens distortion",
               "It converts two-dimensional tracking into three",
-              "It removes the need for hand-labelled frames",
+              "It removes the need for hand-labeled frames",
             ],
             correctIndex: 0,
             explanation:
@@ -962,23 +963,23 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What does fine-tuning start from?",
             options: [
-              "A network already trained on a large general image dataset",
-              "A randomly initialised network",
+              "A pretrained general image network",
+              "A randomly initialized network",
               "An unsupervised segmentation",
               "A marker-based recording",
             ],
             correctIndex: 0,
             explanation:
-              "The general visual features are already learned, so only the task-specific part needs the small labelled set.",
+              "The general visual features are already learned, so only the task-specific part needs the small labeled set.",
             sourceLessonSlug: "pose-estimation",
           },
           {
             prompt: "What does a tracker do when it jitters?",
             options: [
               "Alternates between two plausible positions",
-              "Stops producing output",
+              "Stops producing output until the body part reappears",
               "Reports a confidence of zero",
-              "Skips to the next labelled frame",
+              "Skips to the next labeled frame",
             ],
             correctIndex: 0,
             explanation:
@@ -1040,7 +1041,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What kind of claim is calling a stretch of pose 'grooming'?",
             options: [
-              "An interpretation requiring a definition or a model",
+              "An interpretation",
               "A direct measurement",
               "A property of the camera calibration",
               "A statistical test result",
@@ -1066,7 +1067,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What problem does the allocentric frame create?",
             options: [
-              "It mixes where the animal is with what it is doing",
+              "It mixes location with behavior",
               "It cannot represent rotation",
               "It requires depth imaging",
               "It discards speed information",
@@ -1144,7 +1145,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "When does discarding location information matter?",
             options: [
-              "When where the animal is forms part of the question",
+              "When location is part of the question",
               "Whenever depth imaging is used",
               "Only for multi-animal studies",
               "Only when the arena is asymmetric",
@@ -1195,7 +1196,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "Is the claim that mouse behaviour is a language?",
             options: [
-              "No, only that it has the shape of a sequence of reused parts",
+              "No, only a sequence of reused parts",
               "Yes, with syllables mapping to phonemes",
               "Yes, but only for grooming sequences",
               "The 2015 paper takes no position",
@@ -1221,7 +1222,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "Why is the transition structure half the result?",
             options: [
-              "A manipulation can change the grammar while leaving the vocabulary",
+              "A drug can alter grammar while sparing vocabulary",
               "Transitions are easier to measure than modules",
               "Module counts are unreliable across animals",
               "Transitions determine the frame rate required",
@@ -1312,7 +1313,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What do papers frequently do, according to this lesson?",
             options: [
-              "Make the strong claim while the evidence supports the weak one",
+              "Claim more than their evidence supports",
               "Understate their findings to survive peer review",
               "Omit the module count entirely",
               "Refuse to publish unsupervised results",
@@ -1351,7 +1352,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What is the difference between description and discovery here?",
             options: [
-              "Whether the model summarises data or reveals a property of the animal",
+              "A summary of data, or a property of the animal",
               "Whether the method is supervised or unsupervised",
               "Whether results were replicated in a second laboratory",
               "Whether the paper is peer reviewed",
@@ -1457,7 +1458,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
             options: [
               "The probabilities of moving between them",
               "The frame rate used",
-              "The number of keypoints tracked",
+              "The number of keypoints tracked on each animal's body",
               "The species studied",
             ],
             correctIndex: 0,
@@ -1481,20 +1482,20 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "How does the course qualify the linguistic metaphor?",
             options: [
-              "Behaviour has the shape of a sequence of reused parts",
-              "Behaviour is literally a language",
+              "It describes a shape of reused parts",
+              "Behavior is literally a language",
               "The metaphor is rejected entirely",
               "It applies only to grooming",
             ],
             correctIndex: 0,
             explanation:
-              "Reuse, recognisability and patterned combination are the shared structure; nothing more is claimed.",
+              "Reuse, recognizability and patterned combination are the shared structure; nothing more is claimed.",
             sourceLessonSlug: "behavioural-syllables",
           },
           {
             prompt: "Why is the inventory of modules less interesting than the transitions?",
             options: [
-              "Manipulations often change sequencing rather than membership",
+              "Manipulations often alter sequencing",
               "Inventories are unreliable",
               "Transitions are easier to compute",
               "Inventories vary between cameras",
@@ -1533,7 +1534,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What does 'predicting something it was not fitted to' mean here?",
             options: [
-              "The unit explains data outside the fitting procedure",
+              "The unit explains data outside its fit",
               "The model forecasts the next frame",
               "The unit appears in the training set",
               "The model has low training error",
@@ -1546,7 +1547,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What is the cheapest negative test named in the lesson?",
             options: [
-              "Changing the window length and seeing if categories survive",
+              "Changing the window length",
               "Re-running the model with a new seed",
               "Collecting more animals",
               "Increasing the frame rate",
@@ -1559,9 +1560,9 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "How does the course describe the two positions in the debate?",
             options: [
-              "Both held by serious people and both reasonable",
+              "Both serious and both reasonable",
               "One mainstream and one fringe",
-              "Settled in favour of modularity",
+              "Settled in favor of modularity",
               "Unresolvable in principle",
             ],
             correctIndex: 0,
@@ -1624,7 +1625,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What is the honest reading of 'this model describes the data with forty modules'?",
             options: [
-              "A description, which may still be useful",
+              "A description, possibly useful",
               "A discovery about the animal",
               "An error in the analysis",
               "A claim requiring no evidence",
@@ -1753,9 +1754,9 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What does markerless estimation avoid?",
             options: [
-              "Intervening in the behaviour being measured",
+              "Intervening in behavior",
               "The need for a camera",
-              "Hand labelling of any frames",
+              "Hand labeling of any frames",
               "The occlusion problem",
             ],
             correctIndex: 0,
@@ -1766,14 +1767,14 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "Transfer learning made pose tracking practical by reducing what?",
             options: [
-              "The number of hand-labelled frames needed",
+              "Hand-labeled frames needed",
               "The camera resolution required",
               "The number of animals per study",
               "The length of each recording",
             ],
             correctIndex: 0,
             explanation:
-              "A few hundred labelled frames rather than tens of thousands is what brought it within reach of an ordinary lab.",
+              "A few hundred labeled frames rather than tens of thousands is what brought it within reach of an ordinary lab.",
             sourceLessonSlug: "pose-estimation",
           },
           {
@@ -1831,7 +1832,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "Why is window length not a neutral choice?",
             options: [
-              "It determines whether a behaviour fragments or merges",
+              "It decides if behavior fragments or merges",
               "Longer windows are always more accurate",
               "It is fixed by the camera hardware",
               "It only affects supervised classifiers",
@@ -1883,10 +1884,10 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What does the transition structure let you detect?",
             options: [
-              "A changed grammar with an unchanged vocabulary",
+              "New grammar, same vocabulary",
               "A miscalibrated camera",
               "An occluded keypoint",
-              "A mislabelled training frame",
+              "A mislabeled training frame",
             ],
             correctIndex: 0,
             explanation:
@@ -1909,7 +1910,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "An unsupervised method returns modules when?",
             options: [
-              "Whether or not behaviour is genuinely modular",
+              "Whether or not behavior is modular",
               "Only when the structure is real",
               "Only above a confidence threshold",
               "Only for depth-imaging data",
@@ -1948,9 +1949,9 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What does this course do with the modularity debate?",
             options: [
-              "Teaches it as unresolved and names both positions",
+              "Teaches it as unresolved",
               "Concludes the modules are real",
-              "Concludes the modules are artefacts",
+              "Concludes the modules are artifacts",
               "Omits it as too technical",
             ],
             correctIndex: 0,
@@ -1961,7 +1962,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "The difference between a finding and a description is what?",
             options: [
-              "Whether the claim is about the animal or the model",
+              "About the animal, or about the model",
               "Whether the paper was peer reviewed",
               "Whether the code is public",
               "Whether the sample size was large",
@@ -2091,7 +2092,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What should a reader ask about a reported module count?",
             options: [
-              "Whether it appears in an independent dataset",
+              "Whether independent data repeat it",
               "Whether it is an even number",
               "How long the model took to converge",
               "Which programming language was used",
@@ -2104,7 +2105,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What is Motion Sequencing?",
             options: [
-              "The unsupervised method behind the 2015 syllable result",
+              "The unsupervised 2015 syllable method",
               "A marker-based motion capture system",
               "A supervised classifier for grooming",
               "A camera calibration procedure",
@@ -2130,7 +2131,7 @@ Mathis, A., Mamidanna, P., Cury, K. M., Abe, T., Murthy, V. N., Mathis, M. W., &
           {
             prompt: "What makes a foundations course honest about its subject?",
             options: [
-              "Saying what it is not, especially when the source does not exist",
+              "Saying plainly what it is not",
               "Covering every published method",
               "Matching the official syllabus exactly",
               "Avoiding contested claims entirely",

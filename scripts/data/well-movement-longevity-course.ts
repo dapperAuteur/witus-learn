@@ -96,10 +96,10 @@ export const WELL_MOVEMENT_LONGEVITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why does bundling the three questions cause a problem?",
             options: [
-              "'Do you exercise?' returns yes for very different clients and hides what each is missing",
+              "'Do you exercise?' gets a yes that hides what each client is missing",
               "Bundled questions take longer to answer, which slows the intake conversation",
               "Clients answer bundled questions less accurately than separate ones",
-              "The three questions have different evidence bases and should not be combined",
+              "All three rest on the same step data, so bundling them repeats one finding",
             ],
             correctIndex: 0,
             explanation:
@@ -122,7 +122,7 @@ export const WELL_MOVEMENT_LONGEVITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course quote fewer numbers than the others in the program?",
             options: [
-              "Roughly half the effect sizes in its research export could not be located against primary sources",
+              "Roughly half the export's effect sizes could not be located in primary sources",
               "Its findings are newer, so effect sizes have not yet stabilized across replications",
               "Its outcomes are behavioral rather than physiological, so numbers add little",
               "Its evidence is observational, and the course avoids quoting observational figures",
@@ -200,7 +200,7 @@ export const WELL_MOVEMENT_LONGEVITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why is the novelty section split into three parts?",
             options: [
-              "Cognition, falls, and lifespan have genuinely different answers and separate verdicts",
+              "Cognition, falls, and lifespan have different answers",
               "The evidence for each arrives from a different research tradition",
               "Each part addresses a different population of clients",
               "The section would otherwise be too long for a single knowledge check",
@@ -213,7 +213,7 @@ export const WELL_MOVEMENT_LONGEVITY_COURSE: AuthoredCourse = {
           {
             prompt: "What is the standing scope note for this course?",
             options: [
-              "Education and behaviour is coaching; programming the resulting sessions is the CPT hat",
+              "Education and behavior is coaching; programming is the CPT hat",
               "Everything in the course is coaching, since none of it involves prescription",
               "Intensity work requires medical clearance before it can be coached",
               "Novel-movement work belongs to a physiotherapist in all cases",
@@ -239,7 +239,7 @@ export const WELL_MOVEMENT_LONGEVITY_COURSE: AuthoredCourse = {
           {
             prompt: "What is the 'untouched lever' from WELL-02?",
             options: [
-              "Everyday non-exercise movement, which most clients are never coached on",
+              "Everyday non-exercise movement, which few clients are coached on",
               "Vigorous intensity, which most clients avoid entirely",
               "Strength training, which the step literature does not address",
               "Sitting reduction, which no guideline quantifies",
@@ -1107,7 +1107,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "The activity-variety finding showed 19 percent lower all-cause mortality in the highest variety group:",
             options: [
-              "After adjustment for total physical activity, which is what isolates variety from volume",
+              "After adjustment for total physical activity",
               "Before any adjustment, with the effect disappearing once volume was controlled",
               "Only among participants who also met guideline activity levels",
               "Only within the male cohort, with no comparable association observed in women",
@@ -1120,7 +1120,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "Swimming's hazard ratio of 1.01 in that cohort best illustrates that:",
             options: [
-              "These are observational patterns shaped by who does each activity, not a quality ranking",
+              "These patterns reflect who does each activity, not exercise quality",
               "Swimming is actively harmful and should be discouraged in all older clients",
               "Water-based exercise provides no cardiovascular benefit of any kind",
               "The study's methods were flawed and its findings unusable",
@@ -1237,7 +1237,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "What does the dance literature look like, in shape?",
             options: [
-              "Favourable for global cognition and some memory measures; narrower against active controls",
+              "Favorable for global cognition, narrower against active controls",
               "Consistently large effects across all cognitive domains regardless of comparator",
               "Null results against passive controls and positive results against active ones",
               "Effects confined to motor outcomes with no cognitive changes detected",
@@ -1276,7 +1276,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "How should dance be coached?",
             options: [
-              "As an enjoyable, plausible, low-risk activity stacking several evidenced pillars at once",
+              "As an enjoyable, low-risk activity stacking several pillars",
               "As the first-line intervention for clients concerned about cognitive decline",
               "As equivalent to structured exercise for cardiovascular outcomes",
               "As a cognitive intervention with a quantified protective effect",
@@ -1289,7 +1289,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "What is perturbation-based balance training?",
             options: [
-              "Deliberate destabilisation by slips, trips, pushes, or platforms, training reactive recovery",
+              "Deliberate slips, trips, or pushes that train reactive recovery",
               "Progressive single-leg and unstable-surface work to build static balance",
               "Balance training performed while completing a simultaneous cognitive task",
               "Repeated practice of controlled falls onto crash mats to reduce injury",
@@ -1523,7 +1523,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "Why does the course grade cognition, falls, and lifespan separately?",
             options: [
-              "The evidence differs in strength; collapsing imports the weakest verdict into the strongest",
+              "The evidence differs in strength from outcome to outcome",
               "Each outcome is relevant to a different client population",
               "They are measured by different research communities with different standards",
               "The three outcomes respond to different types of novel movement",
@@ -1602,7 +1602,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "What does the audit ask, and in what order?",
             options: [
-              "How much, roughly; how hard, does anything get them breathing hard; how new, when did they last learn",
+              "How much, then how hard, then how new: when they last learned a movement",
               "How often, how long, how hard, and how much they enjoy it",
               "What they currently do, what they used to do, and what they would like to do",
               "Their step count, their intensity minutes, and their weekly session count",
@@ -1680,7 +1680,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "How do the three questions fit without becoming three programmes?",
             options: [
-              "Audit all three, then work the blank: one week for one client, not three plans",
+              "Audit all three, then work the blank in one weekly plan, not three",
               "Address one question per training block in rotation across the year",
               "Assign each question to a separate session within the week",
               "Combine all three into a single activity that satisfies each",
@@ -1693,7 +1693,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "Which is the correct scope division for this course's content?",
             options: [
-              "Education and behaviour is coaching; programming the resulting sessions is the CPT hat",
+              "Education and behavior is coaching; programming is the CPT hat",
               "All of it is coaching, since none of it involves individual prescription",
               "Intensity and novelty work require a trainer; dose is coachable",
               "Perturbation training is coachable; the rest requires clinical referral",
@@ -1770,7 +1770,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "A client's weekly wearable intensity minutes cannot be compared against guideline minutes because:",
             options: [
-              "They come from proprietary vendor algorithms, not the accelerometry or questionnaires the guidelines rest on",
+              "They come from proprietary vendor algorithms, not published research methods",
               "Wearables systematically undercount activity by a known and easily correctable factor",
               "The guidelines are expressed in steps rather than in minutes",
               "Intensity minutes measure only vigorous activity and exclude moderate",
@@ -1796,7 +1796,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "The candidate explanation for dance's cognitive benefits is:",
             options: [
-              "Combined motor and cognitive load, plus social and musical elements, rather than dance specifically",
+              "Combined motor and cognitive load, not dance specifically",
               "A dance-specific neurological pathway not activated by other activities",
               "The aerobic component alone, which walking would match exactly",
               "Nothing; the trial literature shows no direction of benefit",
@@ -1822,7 +1822,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "The coach's role regarding perturbation training is to:",
             options: [
-              "Know it exists, raise it with independence-focused clients, and refer to a qualified deliverer",
+              "Know it exists, raise it, and refer to a qualified deliverer",
               "Deliver it directly using controlled pushes during coaching sessions",
               "Discourage it, since inducing falls carries unacceptable risk",
               "Wait until a client has already fallen before mentioning it",
@@ -1861,14 +1861,14 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "Why should the client choose the additional activity type themselves?",
             options: [
-              "Self-selected behaviours build more habit strength, and the evidence is about variety rather than any specific kind",
+              "Self-chosen behaviors build more habit strength than assigned ones",
               "Because coaches may not recommend specific activities under any scope",
               "Because client-chosen activities have larger measured mortality benefits",
-              "Because assigned activities are prohibited in behaviour-change practice",
+              "Because assigned activities are prohibited in behavior-change practice",
             ],
             correctIndex: 0,
             explanation:
-              "WELL-02's habit evidence favours self-selection, and the variety finding concerns doing several kinds rather than doing particular ones, so there is no evidence-based reason to override the choice.",
+              "WELL-02's habit evidence favors self-selection, and the variety finding concerns doing several kinds rather than doing particular ones, so there is no evidence-based reason to override the choice.",
             sourceLessonSlug: "coaching-all-three",
           },
           {
@@ -1887,7 +1887,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "The four surviving findings in this course should be described:",
             options: [
-              "Each at its own strength, since they range from a strong cohort signal to a fragile fifty-year-old contrast",
+              "Each at its own strength, from a strong cohort signal to a fragile contrast",
               "As uniformly strong, since all were verified against primary sources",
               "As uniformly weak, given that none of them comes from a randomized controlled trial",
               "Without reference to their evidence quality, which clients find confusing",
@@ -1907,10 +1907,10 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "Why does bundling them cause a problem?",
             options: [
-              "'Do you exercise?' returns yes for very different clients, hiding what is missing",
+              "A single yes hides what each client is missing",
               "Bundled questions slow the intake conversation",
               "Clients answer bundled questions less accurately",
-              "The three have different evidence bases and should not be combined",
+              "All three rest on the same step data, so bundling repeats one finding",
             ],
             correctIndex: 0,
             explanation: "A client running the same route for eleven years has excellent dose, moderate intensity, and zero novelty. They answer yes.",
@@ -1991,7 +1991,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "How should VILPA be coached, and to whom first?",
             options: [
-              "As an addition using existing opportunities; prioritise those who declined structured exercise",
+              "As an addition, first for non-exercisers",
               "As a replacement for training in clients who dislike the gym",
               "As a warm-up preceding their usual session",
               "As a daily target measured by their wearable",
@@ -2015,13 +2015,13 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "What ARE wearable intensity metrics good for?",
             options: [
-              "Trends within one person on one device, motivation, consistency checks",
+              "Personal trends, motivation, consistency checks",
               "Comparing a client against population norms for their age",
               "Verifying whether a client reached the weekly guideline",
               "Comparing two clients wearing the same brand",
             ],
             correctIndex: 0,
-            explanation: "Narrower than clients assume, and not nothing: a closing ring genuinely changes behaviour for many people.",
+            explanation: "Narrower than clients assume, and not nothing: a closing ring genuinely changes behavior for many people.",
             sourceLessonSlug: "wearable-intensity-metrics",
           },
           {
@@ -2111,7 +2111,7 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "What coaching instruction follows from the dual-task finding?",
             options: [
-              "Introduce novel movement in forgiving conditions; no second demand while acquiring",
+              "Teach novel movement in forgiving conditions, no second demand while acquiring",
               "Avoid novel movement in older adults and people with balance impairments",
               "Pair novel movement with a cognitive task to train the interference away",
               "Delay novel movement until static balance is established for three months",
@@ -2123,9 +2123,9 @@ Han, H., Hu, J., Lee, D. H., Zhang, Y., Giovannucci, E., Stampfer, M. J., Hu, F.
           {
             prompt: "Who should deliver perturbation training, and what is the coach's role?",
             options: [
-              "A physiotherapist for higher-risk clients; the coach knows and routes",
+              "A physiotherapist for high-risk clients; the coach routes",
               "Any qualified trainer, with the coach supervising",
-              "The coach, since the intervention is behavioural",
+              "The coach, since the intervention is behavioral",
               "Nobody outside research, since the risk is unquantified",
             ],
             correctIndex: 0,

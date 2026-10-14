@@ -391,7 +391,7 @@ ${flightCard(FLIGHT_0, ALT)}
             prompt: "Is a dark roast stronger in caffeine than a light roast?",
             options: [
               "Yes, roasting concentrates caffeine substantially in the bean",
-              "No, caffeine is fairly stable through roasting, so strength means roast flavor",
+              "No, caffeine is fairly stable through roasting",
               "Yes, but only when the beans are ground finer than filter grind",
               "No, because caffeine is entirely destroyed during the roasting process",
             ],
@@ -443,7 +443,7 @@ ${flightCard(FLIGHT_0, ALT)}
             prompt: "What does the course say about freshness having a floor as well as a ceiling?",
             options: [
               "Coffee is undrinkable until it has rested for at least one month",
-              "Very fresh coffee still releasing carbon dioxide can brew unevenly and taste sour",
+              "Very fresh coffee, still degassing, can brew unevenly and taste sour",
               "Coffee tastes identical for the first six months after roasting",
               "Freshness matters only for espresso and never for filter brewing",
             ],
@@ -990,7 +990,7 @@ ${flightCard(FLIGHT_3, ALT)}
             options: [
               "A roast stopped before first crack, tasting intensely bitter and smoky",
               "A roast held past second crack, tasting of ash with no acidity left",
-              "A roast that browned outside without the inside progressing, tasting of raw cereal and grass",
+              "A roast browned outside but raw inside, tasting of cereal and grass",
               "A roast cooled too slowly, tasting flat with no aroma whatsoever",
             ],
             correctIndex: 2,
@@ -1001,7 +1001,7 @@ ${flightCard(FLIGHT_3, ALT)}
           {
             prompt: "What are quakers?",
             options: [
-              "Underripe or defective beans that stay pale and taste of peanut and cardboard",
+              "Pale, underripe beans tasting of peanut and cardboard",
               "Beans that crack audibly a second time during a dark roast",
               "Broken bean fragments produced during the hulling process",
               "Beans deliberately left unroasted and blended in for body",
@@ -1323,7 +1323,7 @@ This is the drill that pays for the course. Diagnosing a cup is the difference b
           {
             prompt: "Which storage advice does the course give?",
             options: [
-              "Airtight, opaque, room temperature, and grind immediately before brewing",
+              "Airtight, opaque, room temperature, grind just before brewing",
               "Refrigerate in the original bag once it has been opened",
               "Decant into a clear glass jar so you can monitor the bean color",
               "Grind the whole bag at once to minimize exposure during use",
@@ -1522,7 +1522,7 @@ ${flightCard(FLIGHT_7, ALT)}
             prompt: "What does Fairtrade certification address?",
             options: [
               "A verified cup quality score above the specialty threshold",
-              "A minimum price floor and a community premium for certified cooperatives",
+              "A price floor and community premium for certified cooperatives",
               "A guarantee that the roaster paid above the market rate",
               "An independent audit of the roasting process and freshness",
             ],
@@ -1536,7 +1536,7 @@ ${flightCard(FLIGHT_7, ALT)}
             options: [
               "The retail ceiling price set by importing countries for green coffee",
               "The certified minimum price agreed under the organic standard",
-              "A global futures benchmark moving on weather, speculation and macro conditions",
+              "A global futures benchmark moving on weather and speculation",
               "The average price paid by specialty roasters for traceable lots",
             ],
             correctIndex: 2,

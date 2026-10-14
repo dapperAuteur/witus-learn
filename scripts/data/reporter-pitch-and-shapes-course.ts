@@ -134,7 +134,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is a pitch?",
             options: [
-              "A proposal an editor can act on",
+              "A proposal an editor can act on, answering different questions from a story",
               "A summary of everything the reporter has learned about a subject so far",
               "A first draft of the opening section of the eventual piece",
               "A request for permission to begin looking into a subject",
@@ -212,7 +212,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "How long is an internal enterprise pitch?",
             options: [
-              "Two hundred to four hundred words",
+              "Two hundred to four hundred words, short and self-contained",
               "About a thousand words, so the reporting plan can be set out",
               "One page of bullet points with no continuous prose",
               "As long as it takes, since editors read the whole thing",
@@ -251,7 +251,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What does the second part establish?",
             options: [
-              "Why now, and why us",
+              "Why now, and why us rather than somebody else",
               "What the reader will be able to do afterward",
               "Which format the finished work will take",
               "Who has agreed to be interviewed",
@@ -368,7 +368,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is the constraint on a cold pitch?",
             options: [
-              "Trust",
+              "Trust, since the editor has never worked with you before",
               "Capacity, since the desk has a fixed budget",
               "Legal exposure, since the outlet does not know you",
               "Timing, since freelance work runs behind staff work",
@@ -381,7 +381,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What carries the decision in a cold pitch?",
             options: [
-              "The first paragraph",
+              "The first paragraph and its question",
               "The attached clips and resume",
               "The closing paragraph about cost",
               "The list of sources already secured",
@@ -394,7 +394,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Why not pitch three ideas at once?",
             options: [
-              "It reads as having no strong one",
+              "It reads as though you have no strong idea among them",
               "It exceeds the length most editors will read",
               "It commits you to reporting all three if any is accepted",
               "It prevents the editor from assigning the story internally",
@@ -459,7 +459,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What single question do you ask after a refusal?",
             options: [
-              "Was it the idea or the fit",
+              "Was it the idea itself, or the fit",
               "Would you consider a shorter version",
               "Who else at the outlet might take it",
               "What would you need to see to say yes",
@@ -485,7 +485,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What does three refusals from people who understood an idea suggest?",
             options: [
-              "The problem is probably the idea",
+              "The problem is probably the idea rather than the pitch",
               "The pitch needs a stronger opening paragraph",
               "The idea should be taken to a national outlet",
               "The reporter should attach more supporting material",
@@ -524,7 +524,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What does an enterprise idea with no reason for now do?",
             options: [
-              "Sits in a queue forever",
+              "Sits in a queue forever, however good the idea",
               "Gets reassigned to another reporter on the desk",
               "Runs as a shorter piece without the enterprise resourcing",
               "Becomes a newsletter item instead of a story",
@@ -1056,7 +1056,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is the Q and A honest about?",
             options: [
-              "Being one perspective",
+              "Being one perspective, with the questions visible",
               "Being edited more heavily than a quoted story",
               "Being produced faster than any other shape",
               "Being unsuitable for contested subjects",
@@ -1121,7 +1121,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What does the course say about length?",
             options: [
-              "A decision, not a residue",
+              "A decision made before drafting, not a residue",
               "A consequence of how much reporting was completed",
               "A limit set by the desk before assignment",
               "A function of the format the piece takes",
@@ -1381,7 +1381,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is the honest place to look for audience behavior?",
             options: [
-              "Your own outlet's analytics",
+              "Your own outlet's analytics, which describe your readers",
               "Published industry benchmarks for the sector",
               "A platform's own reporting on content performance",
               "Academic studies of general reading habits",
@@ -1459,7 +1459,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What kind of fix is a wrong shape?",
             options: [
-              "Structural, not line editing",
+              "A structural fix rather than a line-editing one",
               "A matter for the copy desk rather than the reporter",
               "A question of length rather than form",
               "Something to disclose in a closing note",
@@ -1485,7 +1485,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Which shape does the course say is decided by what the reader must do?",
             options: [
-              "Every one of them",
+              "Every one of them, the news story as much as the narrative",
               "Only the enterprise shapes, since dailies follow convention",
               "Only narrative and data pieces, which need aimed reporting",
               "Only the shapes that require an editor's approval",
@@ -1692,7 +1692,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What are the two things that ruin a beat newsletter?",
             options: [
-              "Writing it as a press release, and publishing sub-standard material in it",
+              "Self-promotion, and material below the site's standard",
               "Sending it too often, and writing it too long",
               "Using a personal voice, and admitting uncertainty",
               "Linking to competitors, and answering reader mail",
@@ -1744,7 +1744,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Where does uncertainty go in a social post?",
             options: [
-              "In the same post as the claim",
+              "In the same post as the claim it qualifies",
               "In a following post in the same thread",
               "In the linked piece, where there is room to explain",
               "In a reply, once somebody questions the claim",
@@ -1760,7 +1760,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
               "It is real and the standard does not move",
               "It justifies a lower confidence threshold for platform material",
               "It is managed by the audience team rather than the reporter",
-              "It applies only to breaking news and not to beat coverage",
+              "It applies only to breaking news",
             ],
             correctIndex: 0,
             explanation:
@@ -1783,7 +1783,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the course name no platform and no format specification?",
             options: [
-              "Both date within a year",
+              "Both date within a year, so the course would soon teach something wrong",
               "Because platforms prohibit describing their features in training",
               "Because outlets choose platforms centrally rather than per reporter",
               "Because the professional code forbids endorsing commercial products",
@@ -1861,7 +1861,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Why must a short reporting video be captioned?",
             options: [
-              "Captions are an accessibility requirement rather than a preference",
+              "Captions are an accessibility requirement, not a preference",
               "Because sound quality is unreliable on a phone recording",
               "Because platforms rank captioned material more highly",
               "Because captions substitute for on-screen attribution",
@@ -1965,7 +1965,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "How long does the four-part newsletter take to produce?",
             options: [
-              "A morning",
+              "A morning, which keeps it repeatable",
               "A full working day each week",
               "Two days, since it requires original reporting",
               "As long as a filed story of comparable length",
@@ -1991,7 +1991,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is showing working, on social?",
             options: [
-              "Publishing the document, the page, and what you could not resolve",
+              "Publishing the document and the open question",
               "Explaining the reporting process in a long thread",
               "Posting drafts before the piece is edited",
               "Naming the sources who declined to comment",
@@ -2017,7 +2017,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about a reporter careful on the site and loose on a platform?",
             options: [
-              "They have one reputation, not two",
+              "They have one reputation, not two, whatever format they publish in",
               "They are following the outlet's separate standards for each",
               "They are correctly adapting to different audiences",
               "They are protected because platform posts are not published work",
@@ -2043,7 +2043,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is the must-be-seen test?",
             options: [
-              "Whether the story contains something a sentence cannot carry",
+              "Whether a sentence could carry it instead",
               "Whether the subject will consent to being filmed",
               "Whether the outlet has equipment available",
               "Whether the desk has commissioned a visual element",
@@ -2056,7 +2056,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Which does video carry that text handles badly?",
             options: [
-              "Scale by comparison",
+              "Scale, shown by comparison",
               "The chronology of a decision",
               "The strength of competing evidence",
               "The provenance of a document",
@@ -2108,7 +2108,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about a story with no visual?",
             options: [
-              "It is not a smaller story",
+              "It is not a smaller story because it lacks a visual",
               "It should be reshaped until a visual is available",
               "It should be published only as text and never promoted",
               "It should be handed to a colleague who can film it",
@@ -2186,7 +2186,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What travels without a timestamp?",
             options: [
-              "A screenshot of a post",
+              "A screenshot of a social post",
               "A link shared in a private message",
               "A quoted paragraph in another story",
               "A video clip uploaded by the outlet",
@@ -2418,7 +2418,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is a filler version?",
             options: [
-              "An output produced because it was expected rather than because it has a job",
+              "An output made because it was expected, with no job to do",
               "A shortened version published while the main piece is edited",
               "A version produced by the audience team rather than the reporter",
               "A version that repeats the story with different quotations",
@@ -2431,7 +2431,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What should an editor be told before they read a draft?",
             options: [
-              "The question, what you established, what you could not, and where you are least sure",
+              "The question, findings, gaps, and least certain point",
               "The word count, the deadline, and the intended placement",
               "The sources used and whether each agreed to be named",
               "The competing coverage and how this piece differs from it",
@@ -2457,7 +2457,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What are the editor's three kinds of note?",
             options: [
-              "This is unclear, this is wrong, and I would have done it differently",
+              "Unclear, wrong, and a preference",
               "Cut this, expand this, and move this",
               "Legal, factual, and stylistic",
               "Approved, revise, and reject",
@@ -2483,7 +2483,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Which notes are load-bearing?",
             options: [
-              "A caveat's placement, a confidence level, an attribution, and the limitations",
+              "Caveats, confidence, attribution, limitations",
               "Word choice, paragraph order, and the headline",
               "Length, section breaks, and pull quotes",
               "Anything the reporter feels strongly about",
@@ -2535,7 +2535,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is the shortest professional development available?",
             options: [
-              "Asking afterward what would have made the piece better",
+              "Asking what would have improved it",
               "Reading the outlet's style guide once a year",
               "Attending an editing workshop",
               "Comparing your piece against a competitor's",
@@ -2600,7 +2600,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Which artifacts should a reporter keep besides clips?",
             options: [
-              "The beat memo and revisions, the request log, the signal log, refused pitches, corrections",
+              "The beat memo, the logs, refused pitches, and corrections",
               "Interview recordings, transcripts, and source contact details",
               "Editor correspondence, contracts, and expense records",
               "Audience analytics, referral data, and engagement reports",
@@ -2626,7 +2626,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What does the pre-file briefing protect the piece from?",
             options: [
-              "An editor hardening a sentence they did not know was single-sourced",
+              "Hardening a single-sourced sentence",
               "A headline written without reference to the body",
               "A cut that removes the limitations section",
               "A legal review that delays publication",
@@ -2678,7 +2678,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is the version set?",
             options: [
-              "The outputs decided at the pitch, in order, each with a stated job",
+              "The outputs chosen at the pitch, each with a job",
               "The drafts a piece passes through during editing",
               "The formats the outlet publishes in each week",
               "The platforms a story is distributed to after publication",
@@ -2704,7 +2704,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is the publication list for?",
             options: [
-              "Knowing everywhere a version appeared when a correction has to be pushed",
+              "Correcting every place a version appeared",
               "Reporting the story's reach to the desk after publication",
               "Establishing priority over competing outlets",
               "Satisfying the outlet's archiving requirements",
@@ -2756,7 +2756,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What does the annual read check about the quote audit?",
             options: [
-              "Whether its distribution held up over twelve months rather than one",
+              "Whether its distribution held up over twelve months",
               "Whether the audit was run every month without exception",
               "Whether the categories were applied consistently",
               "Whether the desk agreed with the categorization",
@@ -2847,7 +2847,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is the structure pass asking?",
             options: [
-              "Does the shape match what the reader must be able to do",
+              "Does the shape fit the reader's need",
               "Are the sections in the order the desk expects",
               "Is every paragraph the same length",
               "Does the piece fit the allocated word count",
@@ -2963,7 +2963,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is a pitch?",
             options: [
-              "A proposal an editor can act on",
+              "A proposal an editor can act on, rather than a summary of what you know",
               "A summary of everything the reporter has learned about a subject so far",
               "A draft of the opening section of the piece the reporter intends to write",
               "A request for permission to begin looking into a promising subject",
@@ -2976,7 +2976,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What five things is an editor deciding?",
             options: [
-              "Story, gettability, cost, timing, displacement",
+              "Whether it is a story, if you can get it, cost, timing, displacement",
               "Accuracy, balance, fairness, legal safety, and quality of writing",
               "Which desk owns it, who edits it, and who will copy-edit the result",
               "Source count, word count, placement, and promotional support",
@@ -3002,7 +3002,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Which part of the five-part pitch separates it from an idea?",
             options: [
-              "What you already have",
+              "What you already have: the document, the data, the agreed sources",
               "The question, stated in a single specific sentence at the top",
               "The cost in weeks and money, with the intended publication window",
               "The line about what a reader will understand afterward",
@@ -3054,7 +3054,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Which refusal is frequently an invitation?",
             options: [
-              "Not now",
+              "Not now, which is about timing rather than the idea",
               "Not a story, which is a judgment about the idea itself",
               "Not for us, which is a judgment about fit with the outlet",
               "We already have this, which is about the outlet's own plans",
@@ -3067,7 +3067,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What single question follows a refusal?",
             options: [
-              "Was it the idea or the fit",
+              "Was it the idea, or was it the fit with this outlet",
               "Would you consider a substantially shorter version of it",
               "Is there another editor at the outlet who might take it",
               "What would you need to see before you would say yes",
@@ -3093,7 +3093,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Why is volume of material the wrong input?",
             options: [
-              "Six interviews do not require six voices",
+              "Six interviews do not require six voices, and data need not mean a data piece",
               "Because material is cut during editing regardless of how much there is",
               "Because the desk decides length before the reporting begins",
               "Because editors judge a piece by its sourcing rather than its length",
@@ -3119,7 +3119,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is the news story's failure mode?",
             options: [
-              "Flattening",
+              "Flattening: the key sequence pushed where readers never reach it",
               "The news peg bending the explanation out of its proper shape",
               "An anecdote carrying an argument that it cannot actually support",
               "An unchallenged single voice whose claims required checking",
@@ -3132,7 +3132,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is the narrative's failure mode?",
             options: [
-              "An anecdote carrying an argument it cannot support",
+              "An anecdote carrying a population argument it cannot support",
               "A mechanism explained without any current news peg attached",
               "A pattern asserted without publishing the underlying data set",
               "An outcome stated before the sequence that actually produced it",
@@ -3171,7 +3171,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is length, in this course?",
             options: [
-              "A decision, not a residue",
+              "A decision made before drafting, not a residue",
               "A consequence of how much reporting was completed in the time",
               "A limit set by the desk before the assignment is made",
               "A function of which format the finished piece takes",
@@ -3223,20 +3223,20 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "When are the headline and first sentence written?",
             options: [
-              "Last, from the finished piece",
+              "Last, from the finished piece, and checked against it",
               "First, so that the reporting can be aimed toward them",
               "During the structure pass of the revision sequence",
               "By the desk rather than by the reporter at any stage",
             ],
             correctIndex: 0,
             explanation:
-              "And checked so each is supported by what follows, since more people read them than read anything else.",
+              "So each is supported by what follows, since more people read them than read anything else.",
             sourceLessonSlug: "length-and-attention",
           },
           {
             prompt: "What is a newsletter?",
             options: [
-              "A recurring relationship with a list",
+              "A recurring relationship with people who agreed to hear from you",
               "A distribution channel for stories already published on the site",
               "A weekly summary of the outlet's coverage sent to subscribers",
               "A promotional product owned by the audience development team",
@@ -3301,7 +3301,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Where does uncertainty go in a social post?",
             options: [
-              "In the same post as the claim",
+              "In the same post as the claim, never left for a follow-up",
               "In a following post within the same published thread",
               "In the linked piece, where there is room to explain properly",
               "In a reply, once a reader has questioned the claim",
@@ -3314,7 +3314,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the course name no platform or format specification?",
             options: [
-              "Both date within a year",
+              "Both date within a year, so the course would soon teach something wrong",
               "Because platforms prohibit describing their features in training material",
               "Because outlets select platforms centrally rather than per reporter",
               "Because the professional code forbids endorsing commercial products",
@@ -3327,7 +3327,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What question justifies the camera?",
             options: [
-              "Is there something that must be seen",
+              "Is there something that must be seen rather than described",
               "Is the subject willing to appear on camera for the piece",
               "Does the desk expect a video with this kind of story",
               "Will the piece perform better with a visual element attached",
@@ -3392,7 +3392,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What is it when one version makes a claim the others do not support?",
             options: [
-              "An error",
+              "An error, not a format difference, to fix in every version",
               "A legitimate difference between the demands of two formats",
               "A sign that the version was produced by a different person",
               "A consequence of the shorter formats losing necessary detail",
@@ -3444,7 +3444,7 @@ export const REPORTER_PITCH_AND_SHAPES_COURSE: AuthoredCourse = {
           {
             prompt: "What are the three revision passes, in order?",
             options: [
-              "Structure, evidence, line",
+              "Structure first, then evidence, then the line pass",
               "Line, then structure, then a final evidence check",
               "Evidence, then line, then structure at the end",
               "Structure, then line, then evidence before filing",

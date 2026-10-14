@@ -269,7 +269,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "Which task is an LLM strongest at, according to this course?",
             options: [
               "Counting the exact number of items in a long list",
-              "Rephrasing a draft",
+              "Rephrasing or summarizing a draft, or translating it into another language",
               "Reporting what happened in the news earlier this week",
               "Confirming a statistic against a verified source",
             ],
@@ -321,7 +321,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "In the prompt recipe, what does Format specify?",
             options: [
               "The file type you want the answer delivered in for later editing",
-              "Length, structure, and tone",
+              "Length, structure, and tone, such as five short bullet points in plain English",
               "Which version of the model should handle the request",
               "The order the model should work through the steps in",
             ],
@@ -347,7 +347,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "What does the lesson mean by iterating on a prompt?",
             options: [
               "Sending the same prompt several times and keeping the best reply",
-              "Treating the first answer as a draft",
+              "Treating the first answer as a draft and asking for changes",
               "Rewriting the prompt from scratch whenever an answer disappoints",
               "Splitting one request into several smaller requests sent in order",
             ],
@@ -439,7 +439,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             options: [
               "It appears only in answers about specialized technical subjects",
               "It clusters at the end of a long answer, where attention drops off",
-              "It is confident and well written",
+              "It is confident and well written, so it reads like a true claim",
               "It is produced when a model runs short of training examples",
             ],
             correctIndex: 2,
@@ -463,7 +463,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "What does the lesson say a model can invent that looks completely real?",
             options: [
-              "DOIs and court cases",
+              "Citations, complete with fake DOIs, fake URLs and fake court cases",
               "A record of the exact date on which it learned a fact",
               "The name of the outside tool it used to look a claim up",
               "A warning attached to any answer it could not verify",
@@ -503,7 +503,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "What do Content Credentials attach to a piece of media?",
             options: [
               "A score estimating how likely the media is to be synthetic",
-              "A tamper-evident history",
+              "A tamper-evident history showing who made it and whether AI was involved",
               "A list of every account that has reshared the file so far",
               "A lock that prevents the file being edited after publication",
             ],
@@ -544,7 +544,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
               "Finding the original, where it first appeared",
               "Detecting which model generated a picture from its pixel pattern",
               "Counting a picture's edits",
-              "Reading the Content Credentials embedded inside the image file",
+              "Reading the file's metadata",
             ],
             correctIndex: 0,
             explanation:
@@ -554,7 +554,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "The drill's one-word name for an AI stating something false with total confidence is…",
             options: [
-              "A rounding error, since the model approximated a real value",
+              "A rounding error",
               "A retrieval failure, since it could not reach the right record",
               "A hallucination, since it is fluent but false",
               "A bias artifact",
@@ -620,7 +620,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "What does the lesson say passing AI work off as fully your own can amount to?",
             options: [
               "A licensing breach, since the output belongs to the tool's maker",
-              "A privacy violation, since the prompt was stored by the provider",
+              "A privacy violation",
               "A factual error",
               "Plagiarism or academic dishonesty",
             ],
@@ -633,7 +633,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
             prompt: "What relationship between AI and human judgment does the lesson argue for?",
             options: [
               "AI supports it and does not replace it",
-              "AI replaces it wherever the decision already follows a written rule",
+              "AI decides the routine cases",
               "AI overrides it on facts",
               "AI is neutral, so it corrects for the biases a person brings",
             ],
@@ -645,7 +645,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "Who is accountable for AI-assisted work that you publish or act on?",
             options: [
-              "The tool's provider, under the terms you agreed to at signup",
+              "The tool's provider",
               "You are, even if the AI wrote every word",
               "Whoever wrote the prompt, if that was somebody other than you",
               "Nobody, until harm is traced",
@@ -697,7 +697,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
           {
             prompt: "What is step two of the lesson's healthy workflow?",
             options: [
-              "Verify with sources",
+              "Verify with sources, confirming every fact, quote and citation that matters",
               "Rewrite the draft in your own words before you use any of it",
               "Ask a second model whether the first model got it right",
               "Check whether the tool has stored your conversation",

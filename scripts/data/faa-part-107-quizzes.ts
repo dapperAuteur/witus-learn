@@ -158,7 +158,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "You answer a question on the test computer and it tells you nothing. What does that mean?",
         options: [
           "The answer did not save, so you should re-enter it",
-          "Nothing is wrong. The test scores everything at the very end, so keep moving",
+          "Nothing is wrong. It scores everything at the end, so keep moving",
           "The question was one of the unscored experimental questions",
         ],
         correctIndex: 1,
@@ -229,8 +229,9 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
   // Module 2 (Regulations) — THREE rotating SECTION pools, placed mid-module after the
   // section each tests (see plans/user-tasks/171). The CSV's three module-2 rows were removed
   // so this authored path is used. Each pool is larger than its per-attempt serve count, so a
-  // retake draws a fresh subset. Ported questions (from the old CSV quizzes, already vetted) are
-  // VERBATIM — only `sourceLessonNumber` was added; NEW questions are grounded in one lesson's
+  // retake draws a fresh subset. Ported questions came from the old CSV quizzes (already vetted) and
+  // have since had option TEXT edited for length balance (prompts and answers unchanged; see
+  // plans/bugs/2026-10-07-shortest-option-tell.md); NEW questions are grounded in one lesson's
   // stated facts, and every explanation cites the exact 14 CFR section that lesson's Sources name.
   // ---------------------------------------------------------------------------
   {
@@ -241,7 +242,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
     shuffleOptions: true,
     afterLessonNumber: 3, // after "Honesty, Inspections & Accident Reports" — covers lessons 1-3
     questions: [
-      // ---- Ported VERBATIM from CSV "Regulation Quiz" (4) ----
+      // ---- Ported from CSV, options since length-balanced: "Regulation Quiz" (4) ----
       {
         prompt: "Who should you make your documents available to when asked?",
         options: [
@@ -277,18 +278,18 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       },
       {
         prompt: "A person whose sole task is watching the sUAS to report hazards to the rest of the crew is called:",
-        options: ["Visual observer.", "Remote PIC.", "Person manipulating the controls."],
+        options: ["Visual observer.", "Remote PIC (pilot in command).", "Person manipulating the controls."],
         correctIndex: 0,
         explanation:
           "Per 14 CFR 107.3, a visual observer is a crewmember whose sole job is watching the aircraft to help see and avoid traffic and hazards and report them to the crew. The Remote PIC is wrong because that person is in command of the whole operation, not limited to watching. The person manipulating the controls is wrong because that crewmember is actively flying the aircraft, not just observing.",
         sourceLessonNumber: 2,
       },
-      // ---- Ported VERBATIM from CSV "Regulation Quiz 1" (5) ----
+      // ---- Ported from CSV, options since length-balanced: "Regulation Quiz 1" (5) ----
       {
         prompt: "Which of the following types of operations are excluded from the requirements in Part 107?",
         options: [
           "Quadcopter capturing aerial imagery for crop monitoring.",
-          "UAS used for motion picture filming.",
+          "UAS used for motion picture filming by a production company.",
           "Model aircraft for hobby use.",
         ],
         correctIndex: 2,
@@ -320,8 +321,8 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt:
           "A pilot has purchased a new quadcopter that weighs 0.43 lbs (195 grams) to complete roof inspections. Is this operation subject to 14 CFR Part 107?",
         options: [
-          "No, 14 CFR Part 107 does not apply to aircraft weighting less than 0.55 lbs.",
-          "Yes, there is no lower weight limit for operating under 14 CFR Part 107.",
+          "No, 14 CFR Part 107 does not apply to aircraft weighing less than 0.55 lbs.",
+          "Yes, 14 CFR Part 107 has no lower weight limit.",
           "No, roof inspections don't require operation under 14 CFR Part 107.",
         ],
         correctIndex: 1,
@@ -381,7 +382,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "Your coworker is holding the controller and flying while you stand beside them, in charge and giving directions. Can you be the remote pilot in command even though you are not touching the sticks?",
         options: [
           "No, only the person physically on the controls can be the remote pilot in command",
-          "Yes, the remote pilot in command may supervise the person manipulating the controls and still be in command",
+          "Yes, the remote pilot in command may supervise whoever is flying",
           "Only if the coworker also holds a certificate",
           "Only during training flights",
         ],
@@ -395,7 +396,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         options: [
           "Just the flying aircraft by itself",
           "The remote pilot together with the aircraft",
-          "The aircraft plus the controller and the equipment that makes it fly",
+          "The aircraft, controller and supporting equipment",
           "The aircraft together with its visual observer",
         ],
         correctIndex: 2,
@@ -706,7 +707,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
     shuffleOptions: true,
     afterLessonNumber: 11, // after "Over Moving Vehicles, Assemblies & Waivers" — covers lessons 9-11
     questions: [
-      // ---- Ported VERBATIM from CSV "Regulation Quiz 4" (11) ----
+      // ---- Ported from CSV, options since length-balanced: "Regulation Quiz 4" (11) ----
       {
         prompt:
           "A remote pilot owns a Category 1 sUAS, and is current. They want to take videos of their friend riding her bike, hovering over her while she rides. The operation is on a busy sidewalk in a city park. Is this legal under Part 107?",
@@ -725,7 +726,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         options: [
           "After a person or entity submits the MOC paperwork for review.",
           "The FAA issues an airworthiness certificate for that aircraft.",
-          "The FAA receives the necessary paperwork confirming a drone complies with the associated regulations.",
+          "The FAA receives paperwork confirming the drone meets the regulations.",
         ],
         correctIndex: 2,
         explanation:
@@ -785,7 +786,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "Can a sUAS weighing .35 lbs be flown over an open-air assembly of human beings if it's equipped with prop guards.",
         options: [
           "Yes, as long as the aircraft is equipped with an anti-collision light visible from 3SM.",
-          "No, only transiting flights are allowed.",
+          "No, only transiting flights are allowed over an open-air assembly.",
           "Yes, as long as the sUAS is equipped with Remote ID.",
         ],
         correctIndex: 2,
@@ -795,7 +796,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       },
       {
         prompt: "Who must retain maintenance records of category 4 aircraft?",
-        options: ["The FAA.", "The Remote Pilot in Command (RPIC).", "The owner of the aircraft."],
+        options: ["The FAA's Flight Standards District Office.", "The Remote Pilot in Command (RPIC).", "The owner of the aircraft."],
         correctIndex: 2,
         explanation:
           "The correct answer is right because the owner of a Category 4 aircraft must keep and maintain the records of maintenance, preventive maintenance, alterations, and inspection status. The FAA option is wrong because the agency does not hold these records for the operator; it can request them but the duty to retain falls on the owner. The Remote Pilot in Command option is wrong because the recordkeeping duty is tied to ownership of the aircraft, not to whoever happens to fly it.",
@@ -805,7 +806,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "Which best describes a declaration of compliance?",
         options: [
           "A document issued by the FAA stating an aircraft is airworthy.",
-          "A document submitted to the FAA stating that a drone complies with either Remote ID requirements or OOP Requirements.",
+          "A document submitted to the FAA stating a drone meets Remote ID or OOP requirements.",
           "A document approved by the FAA that details testing methods for remote ID or OOP.",
         ],
         correctIndex: 1,
@@ -817,7 +818,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt:
           "While flying at the beach, a remote pilot notices a cruise ship underway and flies over the ship to get a top-down view. Is this legal under Part 107, assuming the remote pilot is certificated and current?",
         options: [
-          "Yes, the deck is considered a closed site.",
+          "Yes, a cruise ship's deck is considered a closed site.",
           "Yes, as long as the aircraft is equipped with remote ID.",
           "No, the people on the deck are not on notice.",
         ],
@@ -841,7 +842,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       // ---- NEW, grounded in lessons 9-11 ----
       {
         prompt: "What is the maximum takeoff weight for a Category 1 small unmanned aircraft?",
-        options: ["0.55 pounds (250 grams) or less", "11 pounds or less", "25 pounds or less", "55 pounds or less"],
+        options: ["0.55 pounds or less", "11 pounds or less", "25 pounds or less", "55 pounds or less"],
         correctIndex: 0,
         explanation:
           "Per 14 CFR 107.110, a Category 1 small unmanned aircraft weighs 0.55 pounds (250 grams) or less at takeoff and throughout the flight, and has no exposed rotating parts that could lacerate skin.",
@@ -866,7 +867,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "What is the difference between a Means of Compliance (MOC) and a Declaration of Compliance (DOC)?",
         options: [
-          "The MOC is the manufacturer's statement of compliance; the DOC is the test method",
+          "The MOC is the manufacturer's statement of compliance; the DOC is the FAA-accepted test method",
           "The MOC is the FAA-accepted test method; the DOC is the manufacturer's statement that the drone meets it",
           "They are two names for the same document",
           "The MOC is issued by the FAA; the DOC is issued by the remote pilot",
@@ -881,7 +882,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         options: [
           "Only drones over 0.55 pounds",
           "Only drones flown over people",
-          "Every drone flown under Part 107, because each one must be registered",
+          "Every drone flown under Part 107",
           "Only Category 2 and Category 3 drones",
         ],
         correctIndex: 2,
@@ -1391,7 +1392,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "Small tick marks stick out around the edge of an airport symbol, like spokes on a wheel. What do they mean?",
         options: [
-          "The airport has fuel and services available",
+          "The airport has fuel and services",
           "The airport has a control tower",
           "The number of runways at the field",
         ],
@@ -1436,7 +1437,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "At a TOWERED airport, which frequency is the CTAF?",
         options: [
           "There is no CTAF at a towered airport",
-          "The control tower frequency (labeled CT) is the CTAF while the tower is open",
+          "The tower frequency (CT), while the tower is open",
           "The ground control frequency is always the CTAF",
         ],
         correctIndex: 1,
@@ -1583,7 +1584,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "How hard does a microburst push down, and how long does it last?",
         options: [
-          "Up to 6,000 feet per minute, lasting only about 5 to 15 minutes",
+          "Up to 6,000 feet per minute, for about 5 to 15 minutes",
           "Up to 600 feet per minute, lasting about an hour",
           "Up to 1,500 feet per minute, lasting several hours",
         ],
@@ -1596,7 +1597,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "Which cloud has the greatest turbulence of any cloud in the sky, and what three ingredients build it?",
         options: [
           "The stratus cloud; cool air, dry air, and a temperature inversion",
-          "The cumulonimbus cloud; water vapor, unstable air, and a lifting action such as surface heat",
+          "The cumulonimbus cloud; water vapor, unstable air, and a lifting action",
           "The cumulus cloud; high pressure, low humidity, and strong surface wind",
         ],
         correctIndex: 1,
@@ -1607,7 +1608,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "You fly through a cloud on a day when the temperature is at freezing. What is the danger?",
         options: [
-          "Structural icing, ice builds on the props, adding weight, killing lift, and causing heavy vibration",
+          "Structural icing: props gain weight, lose lift, and vibrate",
           "Nothing. A drone is too small and fast for ice to form on it",
           "The battery loses charge, but the airframe is unaffected",
         ],
@@ -1664,7 +1665,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         options: [
           "One airport and about a 5 statute mile radius, valid 24 to 30 hours",
           "An entire region, valid 12 hours",
-          "One airport, valid for exactly 6 hours",
+          "One airport and a 25 statute mile radius, valid for exactly 6 hours",
         ],
         correctIndex: 0,
         explanation:
@@ -1696,7 +1697,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         options: [
           "Flight Service at 1-800-WX-BRIEF",
           "The nearest control tower on its published CT frequency",
-          "FAA DroneZone support",
+          "FAA DroneZone support through its online help desk",
         ],
         correctIndex: 0,
         explanation:
@@ -1706,7 +1707,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "How often is a METAR issued, and how often is a TAF?",
         options: [
-          "METAR about once an hour; TAF four times a day (0000, 0600, 1200, 1800 Zulu)",
+          "METAR about once an hour; TAF four times a day",
           "Both about once an hour",
           "METAR four times a day; TAF about once an hour",
         ],
@@ -1776,7 +1777,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
           "Your METAR looks fine, but the TAF reads 'FM012100 ... 2SM BKN008' and your job runs past 2100 Zulu. What is the call?",
         options: [
           "Go. The current observation is what governs the flight",
-          "Go now, but land before 2100, the forecast drops visibility to 2 statute miles, below the 3-mile minimum",
+          "Go now, but land before 2100, when forecast visibility drops below 3 miles",
           "No go at all. A TAF that forecasts any change grounds the whole day",
         ],
         correctIndex: 1,
@@ -1812,7 +1813,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 0,
         explanation:
-          "The five hazardous attitudes are anti-authority, impulsivity, invulnerability, macho, and resignation. The second option is IMSAFE (a pilot fitness checklist) and the third is built from the 3P model. Do not mix the tools up.",
+          "The five hazardous attitudes are anti-authority, impulsivity, invulnerability, macho, and resignation. Illness, medication, stress, alcohol, fatigue and emotion is IMSAFE (a pilot fitness checklist), and perceive, process, perform is the 3P model. Do not mix the tools up.",
         sourceLessonNumber: 2,
       },
       {
@@ -2331,7 +2332,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "Which system do you use to apply for the remote pilot certificate, and what do you need from it first?",
         options: [
-          "IACRA, where you create an account and get your FTN (FAA Tracking Number)",
+          "IACRA, where you get your FTN (FAA Tracking Number)",
           "FAA DroneZone, where you get your registration number",
           "FAASafety.gov, where you get your training certificate",
         ],
@@ -2344,7 +2345,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "You pass the knowledge test. What happens next?",
         options: [
           "Your certificate is mailed automatically; nothing more is required",
-          "You log back into IACRA and submit the actual application, then go through TSA security vetting",
+          "You submit the application in IACRA, then go through TSA vetting",
           "You take a practical flight test with an examiner",
         ],
         correctIndex: 1,
@@ -2392,7 +2393,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "Your recurrent training lapsed six months ago. What can you do?",
         options: [
           "Nothing. You must retake the initial knowledge test at a testing center",
-          "You may still fly recreationally, but you cannot use your Part 107 privileges until you complete the free recurrent training again",
+          "Fly only recreationally until you redo the free recurrent training",
           "You may keep flying commercially for a 12-month grace period",
         ],
         correctIndex: 1,
@@ -2444,7 +2445,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "What is Remote ID?",
         options: [
-          "The drone broadcasting its location and identity in flight, like a digital license plate",
+          "The drone broadcasting its location and identity in flight",
           "The FTN that identifies you to the FAA",
           "The registration number you write on the outside of the aircraft",
         ],
@@ -2469,7 +2470,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "Does the remote pilot certificate itself expire?",
         options: [
           "Yes, it expires every 24 calendar months and must be reissued",
-          "No. The certificate does not expire; what expires is your currency, and recurrent training resets that clock",
+          "No. Only your currency expires; recurrent training resets it",
           "Yes, it expires after 120 days unless you register a drone",
         ],
         correctIndex: 1,

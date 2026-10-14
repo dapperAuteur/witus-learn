@@ -529,7 +529,7 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             prompt: "What does the course say was the cost of the AFL's strategy winning?",
             options: [
               "It made every labor union in the entire country illegal",
-              "It organized the fewest workers and left most outside",
+              "It organized the fewest people",
               "It forced all craft unions to merge together",
               "It ended collective bargaining across the US",
             ],
@@ -615,7 +615,7 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             prompt: "What was the long-run result of the Homestead strike for the American steel industry?",
             options: [
               "Steel became the most heavily unionized industry in America",
-              "Steel stayed effectively non-union for roughly the next forty years",
+              "Steel stayed effectively non-union for forty years",
               "Carnegie recognized the union and raised wages",
               "Congress banned private detective agencies",
             ],
@@ -654,7 +654,7 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             prompt: "What was a \"yellow-dog contract\"?",
             options: [
               "A contract requiring union membership as a condition of employment",
-              "A hire condition: the worker promised NOT to join a union",
+              "A pledge NOT to join a union",
               "A union's agreement not to strike for a fixed term",
               "A federal court order ending a strike",
             ],
@@ -668,7 +668,7 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             options: [
               "It gave workers a legal right to organize and required employers to bargain",
               "It curbed injunctions, voided yellow-dog contracts, not a right",
-              "It created the National Labor Relations Board",
+              "It created the National Labor Relations Board to supervise union elections",
               "It banned strikes in interstate commerce",
             ],
             correctIndex: 1,
@@ -877,7 +877,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
               "The National Labor Relations Act",
               "The NY State Factory Investigating Commission",
               "The federal Occupational Safety and Health Administration",
-              "The Fair Labor Standards Act",
+              "The Fair Labor Standards Act, the federal minimum-wage law",
             ],
             correctIndex: 1,
             explanation:
@@ -926,7 +926,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
           {
             prompt: "Under the Wagner Act, an employer who bargains with a union chosen by a majority of workers must:",
             options: [
-              "Agree to whatever the union demands",
+              "Agree to whatever the union demands, since refusing is an unfair labor practice",
               "Bargain in good faith, but is not required to agree",
               "Recognize the union only if the government approves each term",
               "Pay the union's legal costs",
@@ -1274,7 +1274,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "Why was the United Farm Workers' nationwide grape boycott LAWFUL when the identical tactic would have been illegal for a steelworkers' union?",
             options: [
               "Because agricultural boycotts have a special exemption written into Taft-Hartley",
-              "Because the secondary-boycott ban sits in the NLRA, which excludes farm workers",
+              "Because the ban sits in the NLRA, which excludes farm workers",
               "Because the Supreme Court granted the UFW an exception",
               "Because California law overrode federal law",
             ],
@@ -1300,7 +1300,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "The PATCO strike of August 3, 1981 was:",
             options: [
               "Legal, and Reagan's response was unlawful",
-              "Illegal; federal workers may not strike, by statute",
+              "Illegal by federal statute",
               "Legal under Taft-Hartley's national-emergency provisions",
               "Authorized in advance by the FAA",
             ],
@@ -1334,13 +1334,13 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "What caveat does BLS attach to the 2025 union figures?",
             options: [
               "They exclude every worker under twenty-five years old",
-              "They are 11-month averages that skip October 2025",
+              "They skip October 2025",
               "They cover only the private sector",
               "They are projections, not measurements",
             ],
             correctIndex: 1,
             explanation:
-              "Exactly the sort of caveat a careless course drops. The rate has been near 10% for several years; do not build an argument on a one-year move.",
+              "They are 11-month averages, because October data were not collected during the federal government shutdown. Exactly the sort of caveat a careless course drops. The rate has been near 10% for several years; do not build an argument on a one-year move.",
             sourceLessonSlug: "patco-and-the-long-decline",
           },
           {
@@ -1642,7 +1642,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "How did A. Philip Randolph obtain Executive Order 8802 in 1941?",
             options: [
               "By winning a lawsuit against the federal government",
-              "By threatening a march of thousands on Washington",
+              "By threatening a mass march",
               "By lobbying Congress for five years",
               "By calling a nationwide general strike",
             ],
@@ -1702,7 +1702,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "The McClellan Committee (1957-59), with Robert F. Kennedy as chief counsel, primarily investigated:",
             options: [
               "The entire Congress of Industrial Organizations",
-              "Labor racketeering, centrally the Teamsters",
+              "Teamster racketeering",
               "The National Labor Relations Board",
               "The United Farm Workers",
             ],
@@ -1743,7 +1743,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
               "He was killed by a rival Teamster faction, as court records show",
               "It refuses to say; he vanished in 1975, unresolved",
               "He fled to Brazil",
-              "He died of natural causes in prison",
+              "He died of natural causes in prison, serving his jury-tampering sentence",
             ],
             correctIndex: 1,
             explanation:
@@ -2145,7 +2145,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "What is the \"catch\" in German board-level co-determination that the caricature usually omits?",
             options: [
               "Employee representatives cannot vote",
-              "The chair is a shareholder with the CASTING VOTE",
+              "The shareholder chair has a CASTING VOTE",
               "The law applies only to large state-owned companies",
               "Workers must buy shares to qualify",
             ],
@@ -2184,7 +2184,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "Which workers does Japan's enterprise-union structure systematically leave out?",
             options: [
               "Senior corporate managers and their executives",
-              "Non-regular part-time and fixed-term workers",
+              "Non-regular workers",
               "Highly paid senior engineers",
               "Permanent public-sector employees",
             ],
@@ -2249,7 +2249,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "Why did the apartheid government's Wiehahn Commission (1979) recommend legally recognizing Black trade unions?",
             options: [
               "Out of a genuine commitment to full racial equality",
-              "For CONTROL, a registered union can be regulated",
+              "For CONTROL over Black unions",
               "Because the ILO ordered it",
               "Because Black workers had won the vote",
             ],
