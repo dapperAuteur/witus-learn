@@ -2,6 +2,13 @@ import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import ts from "typescript";
+import {
+  EXTREME_BASE_SHARE as BASE_SHARE,
+  MIN_BANK,
+  extremeLimit,
+  optionLength,
+  shortestStrategyValue,
+} from "../src/lib/quiz-integrity";
 
 /**
  * Guard: the SHORTEST-option tell, the mirror image of check-longest-option.ts.
@@ -27,27 +34,12 @@ const ROOTS = ["scripts", "src"];
 const EXCLUDE_DIRS = [join("src", "db", "migrations"), join("node_modules"), join(".next")];
 const EXTS = [".ts", ".tsx"];
 
-/** Banks smaller than this are not checked (too small to tell a giveaway from chance). */
-const MIN_BANK = 8;
-/** Base expected score of always-pick-shortest that counts as a tell. */
-const BASE_SHARE = 0.6;
-/** Extra headroom over uniform, so a true/false bank is judged against 50%, not 25%. */
-const OVER_UNIFORM = 0.25;
+// The measure itself (MIN_BANK, the visible-length margin, shortestStrategyValue and the limit) lives in
+// src/lib/quiz-integrity.ts, shared with check-longest-option.ts, check-length-balance.ts and the
+// course-page quiz panel, so a change to a measure changes all of them at once.
+
 /** Slack over a grandfathered file's recorded score, for ordinary authoring drift. */
 const DRIFT = 0.03;
-/** Length difference a learner cannot see: options within this of the shortest read as the same size. */
-const MIN_VISIBLE_GAP = 8;
-/** ...or within this fraction of the shortest, so the gap scales with how long the options are. */
-const VISIBLE_FRACTION = 0.1;
-
-/** How many options a learner scanning for "the shortest" would actually be choosing between, and
- *  therefore what always-pick-shortest scores on this question. */
-function shortestStrategyValue(lens: number[], correct: number): { value: number; visible: number } {
-  const min = Math.min(...lens);
-  const margin = Math.max(MIN_VISIBLE_GAP, min * VISIBLE_FRACTION);
-  const visible = lens.filter((l) => l <= min + margin).length;
-  return { value: lens[correct] <= min + margin ? 1 / visible : 0, visible };
-}
 
 /**
  * Files authored before this guard existed, with the score measured when it was added. They do not
@@ -209,7 +201,7 @@ function bankFrom(obj: ts.ObjectLiteralExpression, file: string, sf: ts.SourceFi
     const texts = opts.elements.map((e) => (ts.isExpression(e) ? stringOf(e) : null));
     // A bank with any computed option cannot be measured honestly; skip the whole question.
     if (texts.some((t) => t === null) || correct >= texts.length) continue;
-    const lens = (texts as string[]).map((t) => t.trim().length);
+    const lens = (texts as string[]).map(optionLength);
     options = Math.max(options, lens.length);
 
     const { value } = shortestStrategyValue(lens, correct);
@@ -233,7 +225,7 @@ function bankFrom(obj: ts.ObjectLiteralExpression, file: string, sf: ts.SourceFi
     options,
     score,
     strict: qs.filter((q) => q.value === 1).length,
-    limit: options >= 2 ? Math.max(BASE_SHARE, 1 / options + OVER_UNIFORM) : BASE_SHARE,
+    limit: extremeLimit(options),
     questions: qs,
   };
 }
