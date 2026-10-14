@@ -5,6 +5,27 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Light on Set, CREW-03** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Eight
+  sections, 27 lessons, 661 questions: what light does, hard and soft light from first principles, shaping
+  light with what is already in the room (and the hacks the course refuses), natural light, key, fill and
+  back, color without a meter, the stage, studio and set, and the safety floor (hot lamps, cords, what the
+  rules forbid). From federal manuals (TM 11-401-2, DI0370), Fuchs (1929), Luckiesh, NIST, CPSC and OSHA.
+  Checked claim by claim (78 fixes) and question by question (56). Lessons needing a qualified reviewer
+  (electrical, fire) or a practitioner are marked; seven research checks filed. Held for a named reviewer.
+- 🔧 **Sound Craft, CREW-02** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Seven
+  sections, 26 lessons, 583 questions: listening and the decibel, protecting your hearing (OSHA and NIOSH),
+  field recording in nature (the Park Service protocol), recording in a theater and on a set, sounds made by
+  hand (a 1913 Paris stage manual, a 1928 federal radio script, the Foley story as an open record),
+  permission and rights, and sound as work. Checked claim by claim (88 fixes) and question by question
+  (58). Lessons needing a qualified reviewer (hearing conservation, safety, rights) or a practitioner are
+  marked; seven research checks filed. Held for a named reviewer.
+- 🔧 **Rigging for Stage and Broadcast Crews, CREW-01** (\`feat/crew-courses\`, no migration). BAM approved the
+  brief on 2026-10-08. Six sections, 20 lessons, 446 questions: who rigs on a show, working at height (the
+  stage-edge exemption, thresholds, a harness not a seat), slings and hardware, forces, under the load, and
+  the path to certification. Two workplace fatality cases are taught from the state FACE reports with links
+  to the news coverage, victims unnamed. Checked claim by claim (72 fixes) and question by question (48).
+  Lessons needing a qualified rigger's review or a practitioner are marked; seven research checks filed.
+  Held for a named qualified reviewer. Sound Craft (CREW-02) and Light on Set (CREW-03) follow.
 - 🔧 **Raising Animals for Yarn, LOOP-03** (\`feat/raising-animals-for-yarn\`, no migration). BAM's brief of
   2026-10-05, answered 2026-10-06: the first version covers sheep, alpaca and llama, and yak (goats, rabbits
   and silk later). Seven sections, 28 lessons, from a verified dossier (NASS, APHIS and 9 CFR 79, Indiana's

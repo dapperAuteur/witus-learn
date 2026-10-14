@@ -57,6 +57,9 @@ import { CROCHET_COURSE } from "./data/crochet-course";
 import { CROQUET_COURSE } from "./data/croquet-course";
 import { SURVIVAL_COURSE } from "./data/survival-course";
 import { MANURE_AND_COMPOST_COURSE } from "./data/manure-and-compost-course";
+import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "./data/stage-and-broadcast-rigging-course";
+import { SOUND_CRAFT_COURSE } from "./data/sound-craft-course";
+import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
 import { RAISING_ANIMALS_FOR_YARN_COURSE } from "./data/raising-animals-for-yarn-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
@@ -3293,6 +3296,59 @@ async function main() {
     navigationMode: "linear",
     publishHoldReason:
       "Held until a shepherd or fibre farmer has reviewed the husbandry lessons (BAM is asking the Woolly Yak Ranch). Research tier 2: animal health, welfare and local law.",
+  });
+
+  // The Crew Behind the Show (CREW), BAM approved the three briefs on 2026-10-08: rigging, sound and
+  // light for stage, set and broadcast crews. Public, each held until a named qualified reviewer has read
+  // the lessons marked QR (research tier 2 where the brief says so). Briefs and dossiers:
+  // plans/future-courses/careers-and-media/.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "stage-and-broadcast-rigging",
+    course: STAGE_AND_BROADCAST_RIGGING_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Trade Skills"],
+    seriesSlug: "the-crew-behind-the-show",
+    seriesTitle: "The Crew Behind the Show",
+    seriesOrder: 1,
+    seriesCode: "CREW",
+    seriesPosition: "01",
+    navigationMode: "linear",
+    publishHoldReason:
+      "Held until a qualified rigging reviewer (for example an ETCP-certified rigger) has read every lesson marked QR, with authority to change or cut it. Research tier 2: fall protection, rigging hardware and loads.",
+  });
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "sound-craft",
+    course: SOUND_CRAFT_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Storytelling"],
+    seriesSlug: "the-crew-behind-the-show",
+    seriesTitle: "The Crew Behind the Show",
+    seriesOrder: 2,
+    seriesCode: "CREW",
+    seriesPosition: "02",
+    navigationMode: "linear",
+    publishHoldReason:
+      "Held until a qualified reviewer has read the hearing-safety lessons and build lists marked QR. Research tier 2 in places: noise exposure.",
+  });
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "light-on-set",
+    course: LIGHT_ON_SET_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Trade Skills"],
+    seriesSlug: "the-crew-behind-the-show",
+    seriesTitle: "The Crew Behind the Show",
+    seriesOrder: 3,
+    seriesCode: "CREW",
+    seriesPosition: "03",
+    navigationMode: "linear",
+    publishHoldReason:
+      "Held until a qualified reviewer (for example a licensed electrician or a stage lighting professional) has read every lesson marked QR. Research tier 2: electrical work, hot lamps and fire.",
   });
 
   // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared
