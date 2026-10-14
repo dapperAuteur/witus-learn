@@ -418,8 +418,9 @@ review hold** appears on the sign-off panel. The server checks again before clea
 released course never shows a learner a "Before release" box. Releasing does not vet the course: vetting is still its own
 step (see **Vetting a course, and the "Coming soon" page**).
 
-For now only the platform owner releases a hold and clears practitioner needs, and only an invited
-reviewer clears a qualified-reviewer need.`,
+The platform owner or the school's admin releases a hold, never the course's own author. Only the
+platform owner clears practitioner needs (with their own demonstration), and only an invited reviewer
+clears a qualified-reviewer need.`,
   },
   {
     slug: "tours-from-field-log",

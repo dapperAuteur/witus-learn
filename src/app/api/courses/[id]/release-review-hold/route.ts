@@ -1,6 +1,5 @@
-import { apiContext, errorJson, json } from "@/lib/api";
+import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
 import { updateCourse } from "@/db/queries/authoring";
-import { isPlatformOwner } from "@/lib/session";
 import { readinessOf, reviewsByLesson, summarizeLessonReview } from "@/lib/lesson-review-summary";
 
 type Params = { params: Promise<{ id: string }> };
@@ -8,11 +7,12 @@ type Params = { params: Promise<{ id: string }> };
 // POST /api/courses/[id]/release-review-hold: clear a course's publish hold once its review is
 // done (reviewer sign-off, plans/93 section 1).
 //
-// PLATFORM OWNER ONLY. Whether a white-label school's brand_admin may release is an open question
-// for BAM (plans/93); until he answers, the safe default is the narrower one.
+// The PLATFORM OWNER or THIS SCHOOL'S ADMIN (brand_admin of the tenant the request resolved to), by
+// BAM's decision of 2026-10-14. A course's own instructor does not release their own course: the
+// point of the hold is that someone other than the author decides it is ready.
 //
 // Readiness is RE-COMPUTED here from the stored verdicts and the lessons as they stand, never taken
-// from the screen that sent the click: every QR need cleared against the current text, and no
+// from the screen that sent the click: every QR and P need cleared against the current text, and no
 // decision marker left (releaseReadiness in src/lib/lesson-review.ts). 409 otherwise.
 //
 // The seeder writes a hold on FIRST INSERT only, so a release survives every later re-seed. Vetting
@@ -24,7 +24,8 @@ export async function POST(_req: Request, { params }: Params) {
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
-  if (!(await isPlatformOwner(session.user.id))) return errorJson("Forbidden", 403);
+  // isTenantAdmin is true for the platform owner too, and for a brand_admin of THIS tenant only.
+  if (!(await isTenantAdmin(session, sdb.tenantId))) return errorJson("Forbidden", 403);
 
   const [lessons, reviews] = await Promise.all([
     sdb.listReviewableLessons([course.id]),
@@ -39,7 +40,9 @@ export async function POST(_req: Request, { params }: Params) {
         ? "This course has no review markers, so its hold is cleared by hand in course settings."
         : readiness.openDecisions > 0
           ? `${readiness.openDecisions} decision ${readiness.openDecisions === 1 ? "marker is" : "markers are"} still open.`
-          : `${readiness.qrCleared} of ${readiness.qrTotal} qualified-reviewer needs are cleared.`;
+          : readiness.qrCleared < readiness.qrTotal
+            ? `${readiness.qrCleared} of ${readiness.qrTotal} qualified-reviewer needs are cleared.`
+            : `${readiness.pCleared} of ${readiness.pTotal} practitioner needs are cleared.`;
     return json({ error: `Not ready to release. ${why}`, readiness }, 409);
   }
   if (!course.publishHoldReason) return json({ ok: true, released: false, readiness });

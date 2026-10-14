@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 export interface CatalogReview {
   qrCleared: number;
   qrTotal: number;
-  /** Every QR need cleared and no decision open: the owner may release the review hold. */
+  /** Every QR and P need cleared and no decision open: the owner or school admin may release the hold. */
   ready: boolean;
   openDecisions: number;
 }

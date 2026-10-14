@@ -256,6 +256,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             lessons={signoffLessons}
             readiness={signoffReadiness}
             isOwner={owner}
+            canRelease={isAdmin}
             holdReason={course.publishHoldReason}
           />
         ) : null}
