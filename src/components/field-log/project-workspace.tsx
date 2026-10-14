@@ -11,6 +11,7 @@ import type {
   ProjectReview,
 } from "@/db/schema/field-log";
 import { CREDENTIAL_ENDORSEMENTS_REQUIRED, endorsementCount } from "@/lib/field-log-rubric";
+import { templateByKey, type FieldLogTemplate } from "@/lib/field-log-templates";
 import { patchJson, postJson } from "./client";
 
 // Education, not legal advice — jurisdiction varies (see plans/future/15-field-log-safety-legal.md).
@@ -26,6 +27,26 @@ const CONSENT_OPTIONS = [
 ] as const;
 const CAPTURE_KINDS = ["photo", "audio", "video", "document", "interview", "artifact", "note"] as const;
 const SITE_TYPES = ["farm", "factory", "office", "market", "home", "public-space", "archive", "other"] as const;
+
+/** Visited ticks made offline, keyed by leg id, replayed when the connection returns. */
+type VisitQueue = Record<string, boolean>;
+
+function readVisitQueue(key: string): VisitQueue {
+  try {
+    const q = JSON.parse(localStorage.getItem(key) ?? "{}");
+    return q && typeof q === "object" ? (q as VisitQueue) : {};
+  } catch {
+    return {};
+  }
+}
+
+function writeVisitQueue(key: string, q: VisitQueue) {
+  try {
+    localStorage.setItem(key, JSON.stringify(q));
+  } catch {
+    /* storage full / disabled: the tick stays on screen this session and is retried while it lasts */
+  }
+}
 
 type PendingCapture = { tempId: string; body: Record<string, unknown>; subject: string; kind: string; consentStatus: string };
 
@@ -55,9 +76,12 @@ export function ProjectWorkspace({
   const [tab, setTab] = useState<"checklist" | "legs" | "captures" | "journal" | "reviews">("checklist");
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState<PendingCapture[]>([]);
+  const [pendingVisits, setPendingVisits] = useState(0);
 
   const projectId = project.id;
   const pendingKey = `fieldlog:pending:${projectId}`;
+  const visitKey = `fieldlog:visited:${projectId}`;
+  const template = useMemo(() => templateByKey(project.templateKey), [project.templateKey]);
 
   const fail = useCallback((msg: string) => setError(msg), []);
 
@@ -81,15 +105,40 @@ export function ProjectWorkspace({
     setPending(remaining);
   }, [pendingKey, projectId, fail]);
 
+  // ── Offline visited ticks ──────────────────────────────────────────────────
+  // Same contract as the capture queue: still offline keeps the tick queued (and on screen), a real
+  // rejection drops it and says why. setState happens only after an await.
+  const flushVisits = useCallback(async () => {
+    const queue = readVisitQueue(visitKey);
+    const ids = Object.keys(queue);
+    if (ids.length === 0) return;
+    const remaining: VisitQueue = {};
+    for (const legId of ids) {
+      const res = await patchJson<ProjectLeg>(`/api/field-log/projects/${projectId}/legs/${legId}`, { visited: queue[legId] });
+      if (res.ok) setLegs((prev) => prev.map((l) => (l.id === legId ? res.data : l)));
+      else if (res.offline) remaining[legId] = queue[legId];
+      else fail(res.error);
+    }
+    writeVisitQueue(visitKey, remaining);
+    setPendingVisits(Object.keys(remaining).length);
+    // Still-queued ticks win over the server copy on screen, so a reload offline shows what was ticked.
+    setLegs((prev) => prev.map((l) => (l.id in remaining ? { ...l, visited: remaining[l.id] } : l)));
+  }, [visitKey, projectId, fail]);
+
+  const syncAll = useCallback(async () => {
+    await flush();
+    await flushVisits();
+  }, [flush, flushVisits]);
+
   useEffect(() => {
-    // Sync the offline capture queue with the server on mount + when connectivity returns.
-    // flush() only calls setState AFTER an await (never synchronously), so no cascading render.
+    // Sync the offline queues with the server on mount + when connectivity returns.
+    // flush() and flushVisits() only call setState AFTER an await (never synchronously).
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    void flush();
-    const onOnline = () => void flush();
+    void syncAll();
+    const onOnline = () => void syncAll();
     window.addEventListener("online", onOnline);
     return () => window.removeEventListener("online", onOnline);
-  }, [flush]);
+  }, [syncAll]);
 
   // ── Checklist ──────────────────────────────────────────────────────────────
   const progress = useMemo(() => {
@@ -153,6 +202,24 @@ export function ProjectWorkspace({
     return res.ok;
   }
 
+  // Tick a leg visited (or untick it). Optimistic; offline queues the tick instead of losing it.
+  async function setVisited(legId: string, visited: boolean) {
+    setLegs((prev) => prev.map((l) => (l.id === legId ? { ...l, visited } : l)));
+    const res = await patchJson<ProjectLeg>(`/api/field-log/projects/${projectId}/legs/${legId}`, { visited });
+    if (res.ok) {
+      setLegs((prev) => prev.map((l) => (l.id === legId ? res.data : l)));
+      return;
+    }
+    if (res.offline) {
+      const queue = { ...readVisitQueue(visitKey), [legId]: visited };
+      writeVisitQueue(visitKey, queue);
+      setPendingVisits(Object.keys(queue).length);
+      return;
+    }
+    setLegs((prev) => prev.map((l) => (l.id === legId ? { ...l, visited: !visited } : l)));
+    fail(res.error);
+  }
+
   // ── Captures (with offline queue) ────────────────────────────────────────────
   async function addCapture(body: Record<string, unknown>, meta: { subject: string; kind: string; consentStatus: string }) {
     if (typeof navigator !== "undefined" && navigator.onLine === false) {
@@ -198,7 +265,7 @@ export function ProjectWorkspace({
 
   const tabs = [
     { key: "checklist", label: `Checklist ${progress.total ? `(${progress.done}/${progress.total})` : ""}` },
-    { key: "legs", label: `Legs (${legs.length})` },
+    { key: "legs", label: `Legs (${legs.filter((l) => l.visited).length}/${legs.length})` },
     { key: "captures", label: `Captures (${captures.length}${pending.length ? ` +${pending.length}` : ""})` },
     { key: "journal", label: `Journal (${comments.length})` },
     { key: "reviews", label: `Reviews (${reviews.length})` },
@@ -246,6 +313,11 @@ export function ProjectWorkspace({
           {pending.length} capture(s) saved offline, they’ll sync when you’re back online.
         </p>
       ) : null}
+      {pendingVisits ? (
+        <p className="mt-3 rounded-md bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:bg-amber-950 dark:text-amber-300">
+          {pendingVisits} visited tick(s) saved offline, they’ll sync when you’re back online.
+        </p>
+      ) : null}
       {reminders.length ? (
         <details className="mt-3 rounded-md border border-neutral-200 p-3 text-sm dark:border-neutral-800">
           <summary className="cursor-pointer font-medium">Reminders ({reminders.length})</summary>
@@ -271,10 +343,16 @@ export function ProjectWorkspace({
 
       <div className="mt-5">
         {tab === "checklist" ? (
-          <ChecklistTab checklist={checklist} onToggle={toggleItem} onNote={editNote} onNoteBlur={() => saveChecklist(checklist)} />
+          <ChecklistTab checklist={checklist} template={template} onToggle={toggleItem} onNote={editNote} onNoteBlur={() => saveChecklist(checklist)} />
         ) : null}
         {tab === "legs" ? (
-          <LegsTab legs={legs} chainMode={project.chainMode} onChainMode={(v) => patchProject({ chainMode: v })} onAdd={addLeg} />
+          <LegsTab
+            legs={legs}
+            chainMode={project.chainMode}
+            onChainMode={(v) => patchProject({ chainMode: v })}
+            onAdd={addLeg}
+            onVisited={setVisited}
+          />
         ) : null}
         {tab === "captures" ? (
           <CapturesTab captures={captures} pending={pending} legs={legs} onAdd={addCapture} />
@@ -323,11 +401,13 @@ function ReviewsTab({ reviews, project }: { reviews: ProjectReview[]; project: D
 
 function ChecklistTab({
   checklist,
+  template,
   onToggle,
   onNote,
   onNoteBlur,
 }: {
   checklist: FieldLogChecklist;
+  template: FieldLogTemplate | undefined;
   onToggle: (s: number, i: number) => void;
   onNote: (s: number, i: number, note: string) => void;
   onNoteBlur: () => void;
@@ -336,13 +416,13 @@ function ChecklistTab({
     <div className="space-y-5">
       {checklist.stages.map((stage, si) => (
         <div key={stage.key} className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
-          <h2 className="font-semibold capitalize">{stage.key}</h2>
+          <h2 className="font-semibold capitalize">{stageTitle(template, stage.key)}</h2>
           <ul className="mt-2 space-y-2">
             {stage.items.map((it, ii) => (
               <li key={it.id}>
                 <label className="flex items-start gap-2 text-sm">
                   <input type="checkbox" checked={it.done} onChange={() => onToggle(si, ii)} className="mt-1 h-4 w-4" />
-                  <span className={it.done ? "text-neutral-600 line-through" : ""}>{itemLabel(stage.key, it.id)}</span>
+                  <span className={it.done ? "text-neutral-600 line-through" : ""}>{itemLabel(template, stage.key, it.id)}</span>
                 </label>
                 <input
                   value={it.note}
@@ -361,10 +441,36 @@ function ChecklistTab({
   );
 }
 
-// The checklist snapshot stores ids + notes; labels live in the template. We render the id
-// prettified as a fallback (the item label text isn't snapshotted to keep the row small).
-function itemLabel(_stageKey: string, id: string): string {
-  return id.replace(/^[a-z]+-/, "").replace(/-/g, " ").replace(/^\w/, (c) => c.toUpperCase());
+// The checklist snapshot stores ids + notes; labels live in the template (the label text isn't
+// snapshotted, to keep the row small). Read the label from the project's template, and fall back to
+// the id prettified only for an item the template no longer has.
+function itemLabel(template: FieldLogTemplate | undefined, stageKey: string, id: string): string {
+  const label = template?.stages.find((s) => s.key === stageKey)?.items.find((i) => i.id === id)?.label;
+  return label ?? id.replace(/^[a-z]+-/, "").replace(/-/g, " ").replace(/^\w/, (c) => c.toUpperCase());
+}
+
+function stageTitle(template: FieldLogTemplate | undefined, stageKey: string): string {
+  return template?.stages.find((s) => s.key === stageKey)?.title ?? stageKey;
+}
+
+// Links inside leg notes: absolute http(s) URLs, and site paths such as /bam/<course>/lesson/<slug>.
+// Everything else renders as plain text (no markdown, no HTML), so a note can never inject markup.
+const NOTE_LINK = /(https?:\/\/[^\s<>"]+[^\s<>".,;:)]|(?<![\w/])\/[a-z][a-z0-9-]*(?:\/[a-z0-9-]+)+)/g;
+
+function NoteText({ text }: { text: string }) {
+  const parts = text.split(NOTE_LINK);
+  return (
+    <>
+      {parts.map((part, i) => {
+        if (i % 2 === 0) return part;
+        return part.startsWith("/") ? (
+          <Link key={i} href={part} className="underline">{part}</Link>
+        ) : (
+          <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="underline">{part}</a>
+        );
+      })}
+    </>
+  );
 }
 
 function LegsTab({
@@ -372,12 +478,16 @@ function LegsTab({
   chainMode,
   onChainMode,
   onAdd,
+  onVisited,
 }: {
   legs: ProjectLeg[];
   chainMode: boolean;
   onChainMode: (v: boolean) => void;
   onAdd: (input: Record<string, unknown>) => Promise<boolean>;
+  onVisited: (legId: string, visited: boolean) => void;
 }) {
+  const visitedCount = legs.filter((l) => l.visited).length;
+  const nextLeg = legs.find((l) => !l.visited);
   const [name, setName] = useState("");
   const [siteType, setSiteType] = useState<string>("other");
   const [locationLabel, setLocationLabel] = useState("");
@@ -409,16 +519,64 @@ function LegsTab({
         Chain mode, view legs as the nodes of a chain (grower → factory → boardroom)
       </label>
 
+      {legs.length ? (
+        <p className="text-sm">
+          <span className="font-medium">{visitedCount} of {legs.length} visited.</span>{" "}
+          {nextLeg ? (
+            <a href={`#leg-${nextLeg.id}`} className="underline">Next stop: {nextLeg.name}</a>
+          ) : (
+            "Every stop visited."
+          )}
+        </p>
+      ) : null}
+
       <ol className="space-y-2">
         {legs.map((leg, i) => (
-          <li key={leg.id} className="rounded-md border border-neutral-200 p-3 text-sm dark:border-neutral-800">
-            <div className="font-medium">
-              {chainMode ? `${i + 1}. ` : ""}{leg.name}
-              {leg.siteType ? <span className="ml-2 text-xs text-neutral-600">{leg.siteType}</span> : null}
+          <li
+            key={leg.id}
+            id={`leg-${leg.id}`}
+            className={`scroll-mt-4 rounded-md border p-3 text-sm ${leg.visited ? "border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900" : "border-neutral-300 dark:border-neutral-700"}`}
+          >
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <div className={`font-medium ${leg.visited ? "text-neutral-600 dark:text-neutral-400" : ""}`}>
+                  {chainMode ? `${i + 1}. ` : ""}{leg.name}
+                  {leg.siteType ? <span className="ml-2 text-xs font-normal text-neutral-600">{leg.siteType}</span> : null}
+                </div>
+                <div className="text-xs text-neutral-600">
+                  {leg.locationLabel ?? ""}{leg.startDate ? ` · ${leg.startDate}` : ""}
+                </div>
+              </div>
+              <label className="flex min-h-11 shrink-0 cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="checkbox"
+                  checked={leg.visited}
+                  onChange={(e) => onVisited(leg.id, e.target.checked)}
+                  className="h-5 w-5"
+                  aria-label={`Visited: ${leg.name}`}
+                />
+                Visited
+              </label>
             </div>
-            <div className="text-xs text-neutral-600">
-              {leg.locationLabel ?? ""}{leg.startDate ? ` · ${leg.startDate}` : ""}{leg.visited ? " · visited" : ""}
-            </div>
+            {leg.lat != null && leg.lng != null ? (
+              <a
+                href={`https://www.google.com/maps/dir/?api=1&destination=${leg.lat},${leg.lng}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-8 items-center text-xs underline pointer-coarse:min-h-11"
+                aria-label={`Directions to ${leg.name} (opens Google Maps)`}
+              >
+                Directions
+              </a>
+            ) : null}
+            {leg.notes ? (
+              <details className="mt-1" open={leg.id === nextLeg?.id}>
+                <summary className="min-h-8 cursor-pointer py-1 text-xs font-medium pointer-coarse:min-h-11 pointer-coarse:py-2">Notes</summary>
+                <div className="whitespace-pre-line break-words text-xs leading-relaxed text-neutral-700 dark:text-neutral-300">
+                  <NoteText text={leg.notes} />
+                </div>
+              </details>
+            ) : null}
           </li>
         ))}
         {legs.length === 0 ? <li className="text-sm text-neutral-600">No legs yet.</li> : null}

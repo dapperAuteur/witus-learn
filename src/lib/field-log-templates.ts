@@ -139,6 +139,42 @@ export const FIELD_LOG_TEMPLATES: FieldLogTemplate[] = [
       ] },
     ],
   },
+  {
+    key: "site-tour",
+    title: "Site tour",
+    description:
+      "Plan and shoot a route of places. Each stop is a leg you tick off as visited, with the lesson or source it serves, the permission it needs, and the evidence to capture there.",
+    audience: "learner",
+    stages: [
+      // A tour fails the way a documentary does: by treating every place on the route as the thing
+      // it is said to be. The plan and verify items exist to stop that before and after the drive.
+      { key: "plan", title: "Plan", items: [
+        { id: "plan-route", label: "Add every stop as a leg, in travel order, with its address" },
+        { id: "plan-why", label: "Write in each leg's notes which lesson or source the stop serves" },
+        { id: "plan-label", label: "Label each stop: listed in a dated source, a supporting business, a community institution, or a former site" },
+        { id: "plan-distances", label: "Check distances and travel times against a routing source, and note the date you checked" },
+      ] },
+      { key: "consent", title: "Consent", items: [
+        { id: "consent-sites", label: "Written permission from every museum, school, venue or owner whose inside you will shoot, saying exactly what it covers" },
+        { id: "consent-people", label: "Consent for anyone identifiable, and a parent or guardian's yes for anyone under 18" },
+        { id: "consent-private", label: "Public viewpoints for private homes and businesses: no faces, house numbers or plates unless agreed" },
+      ] },
+      { key: "capture", title: "Capture", items: [
+        { id: "capture-approach", label: "At each stop, the approach: how a visitor arrives" },
+        { id: "capture-panorama", label: "At each stop, one level panorama of the site in its present-day surroundings" },
+        { id: "capture-evidence", label: "Flat photographs of plaques, addresses and panels you may need to cite" },
+        { id: "capture-log", label: "Log the date, time and camera position, and tick the leg as visited" },
+      ] },
+      { key: "verify", title: "Verify", items: [
+        { id: "verify-source", label: "Match every claim about a site to a dated source: an edition year, a record, a marker's stated source" },
+        { id: "verify-followup", label: "List what each site could not settle, as follow-up research" },
+      ] },
+      { key: "publish", title: "Publish", items: [
+        { id: "publish-credit", label: "File each permission and its credit line with the media it covers" },
+        { id: "publish-sources", label: "Give the finished piece a visible ## Sources list" },
+      ] },
+    ],
+  },
 ];
 
 const BY_KEY = new Map(FIELD_LOG_TEMPLATES.map((t) => [t.key, t]));

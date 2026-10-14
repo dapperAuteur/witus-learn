@@ -1,23 +1,8 @@
-import { z } from "zod";
 import { apiContext, errorJson, json } from "@/lib/api";
 import { addLeg } from "@/db/queries/field-log";
+import { LegSchema } from "@/lib/field-log-leg-schema";
 
 type Params = { params: Promise<{ id: string }> };
-
-const LegSchema = z.object({
-  name: z.string().min(1).max(200),
-  siteType: z.enum(["farm", "factory", "office", "market", "home", "public-space", "archive", "other"]).nullish(),
-  locationLabel: z.string().max(300).nullish(),
-  lat: z.number().nullish(),
-  lng: z.number().nullish(),
-  startDate: z.string().max(20).nullish(),
-  endDate: z.string().max(20).nullish(),
-  visited: z.boolean().optional(),
-  notes: z.string().max(2000).nullish(),
-  estCostCents: z.number().int().nullish(),
-  estCurrency: z.string().max(10).nullish(),
-  sortOrder: z.number().int().optional(),
-});
 
 // POST /api/field-log/projects/[id]/legs — add a site/node to a project.
 export async function POST(req: Request, { params }: Params) {
