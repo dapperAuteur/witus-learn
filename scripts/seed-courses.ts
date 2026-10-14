@@ -60,6 +60,7 @@ import { MANURE_AND_COMPOST_COURSE } from "./data/manure-and-compost-course";
 import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "./data/stage-and-broadcast-rigging-course";
 import { SOUND_CRAFT_COURSE } from "./data/sound-craft-course";
 import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
+import { SURVEYING_HOW_LAND_GETS_MEASURED_COURSE } from "./data/surveying-how-land-gets-measured-course";
 import { RAISING_ANIMALS_FOR_YARN_COURSE } from "./data/raising-animals-for-yarn-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
@@ -3349,6 +3350,31 @@ async function main() {
     navigationMode: "linear",
     publishHoldReason:
       "Held until a qualified reviewer (for example a licensed electrician or a stage lighting professional) has read every lesson marked QR. Research tier 2: electrical work, hot lamps and fire.",
+  });
+
+  // Tools That Think (TOOLS), BAM approved the surveying brief on 2026-10-14 and split it in two:
+  // TOOLS-03 measures land (distance, direction, elevation, area) and TOOLS-04 reads land descriptions
+  // (the PLSS grid, metes and bounds and the deed, Indiana). TOOLS-01 (map and compass) and TOOLS-02
+  // (the slide rule) are built in other branches. Public and free by BAM's decision, each held until a
+  // licensed land surveyor (to be named) has read the lessons marked QR and BAM has filmed the lessons
+  // marked P. Brief: plans/future-courses/science-and-math/tool-usage/2026-10-14-surveying-brief.md.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "surveying-how-land-gets-measured",
+    course: SURVEYING_HOW_LAND_GETS_MEASURED_COURSE,
+    category: "Science & Math",
+    seriesSlug: "tools-that-think",
+    seriesTitle: "Tools That Think",
+    seriesOrder: 3,
+    seriesCode: "TOOLS",
+    seriesPosition: "03",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "public",
+    publishHoldReason:
+      "Held until a licensed land surveyor (to be named) has read every lesson marked QR, with authority to change or cut it, and until BAM has filmed his demonstrations with the chain, compass, level and planimeter for the lessons marked P. Research tier 2: the practice of a licensed profession, next to boundary law.",
   });
 
   // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared
