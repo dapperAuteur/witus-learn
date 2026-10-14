@@ -26,6 +26,14 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   to the news coverage, victims unnamed. Checked claim by claim (72 fixes) and question by question (48).
   Lessons needing a qualified rigger's review or a practitioner are marked; seven research checks filed.
   Held for a named qualified reviewer. Sound Craft (CREW-02) and Light on Set (CREW-03) follow.
+- 🔧 **Raising Animals for Yarn, LOOP-03** (\`feat/raising-animals-for-yarn\`, no migration). BAM's brief of
+  2026-10-05, answered 2026-10-06: the first version covers sheep, alpaca and llama, and yak (goats, rabbits
+  and silk later). Seven sections, 28 lessons, from a verified dossier (NASS, APHIS and 9 CFR 79, Indiana's
+  BOAH rules, Purdue Extension, the USDA wool grades, the 1935 natural-dye bulletin, NRCS manure tables, the
+  federal record of the 1930s Navajo livestock reduction) with a find-your-county-rule assignment. Checked
+  claim by claim (90 fixes) and question by question (5). Lessons needing a qualified reviewer or a
+  practitioner are marked at the top; nothing about the Woolly Yak Ranch is asserted until task 326. Held
+  for a named husbandry reviewer; Manure and Compost becomes LOOP-00.
 - 🔧 **Manure and Compost, the first Farm & Garden course** (\`feat/manure-and-compost-course\`, no
   migration; after merge run \`pnpm seed:courses:prod\`). BAM's brief of 2026-10-05, answered 2026-10-06.
   Six sections, 22 lessons, 373 quiz questions, built only from a verified dossier (NRCS manure tables and
