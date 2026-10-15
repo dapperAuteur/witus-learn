@@ -694,5 +694,44 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3: Saying where a place is
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "latitude-and-longitude",
+      title: "10 · Latitude and longitude on a topographic map",
+      section: "3 · Saying where a place is",
+      recallContent: [
+        {
+          prompt: "Which way does the closed end of a valley's U or V point, and a ridge's?",
+          answer: "A valley's (and a draw's) points upstream, toward high ground; a ridge's (and a spur's) points away from high ground.",
+        },
+        {
+          prompt: "What shape does a saddle make on a map, and what do you feel standing in one?",
+          answer: "An hourglass; high ground in two opposite directions and lower ground in the other two.",
+        },
+      ],
+      body: `**Why a place needs coordinates.** The Army manual starts with a city: "the streets are named and the buildings have numbers. The only thing needed is the address." Out in the woods there is no address, so you need "a uniform and precise system of referencing". There are two on every US Topo map: latitude and longitude, which this lesson covers, and the UTM grid, in lesson 11.
+
+**Two sets of rings.** Latitude measures north or south of the equator. "Lines of latitude run east-west but north-south distances are measured between them." Longitude measures east or west of the prime meridian, which "runs through Greenwich, England". Both are angles: "Each circle is divided into 360 degrees, each degree into 60 minutes, and each minute into 60 seconds." Latitude runs from 0° at the equator to 90° at each pole, so "the direction N or S must always be given"; longitude runs to 180° east and west, and "The direction E or W must always be given." The wildland fire workbook adds that "latitude is always said first."
+
+**What a degree is on the ground.** "The ground distance covered by one degree of latitude is about 111 kilometers (69 miles); one second is equal to about 30 meters (100 feet)." Longitude is different. A degree of longitude is about 111 kilometers only at the equator and "decreases as one moves north or south, until it becomes zero at the poles." The manual's example: one second of longitude is about 30 meters at the equator but "about 24 meters (78 feet)" at the latitude of Washington, DC. The catalog's climate tools course makes the same point in its lesson "3 · Grids, resolution, and what a cell hides": cells defined in degrees shrink toward the poles.
+
+**Three ways to write it.** The workbook lists them: degrees, minutes and seconds, "the most common format that is used on maps"; degrees and decimal minutes, used by aircraft guidance systems; and decimal degrees, used by the National Weather Service and many computer maps. Its conversion: to turn seconds into decimal minutes, divide by 60, so 48° 20' 30" becomes 48° 20.5'; to go back, multiply the decimal by 60. Counting works "the same as counting time on a clock": at 60 seconds, carry a minute; at 60 minutes, carry a degree.
+
+**Where they are on a US Topo.** The map does not draw latitude and longitude lines across its face. The workbook: "Topographic maps do not show the latitude/longitude lines – just the tick marks." The four corners carry full values, and "On 1:24,000 scale maps, latitude and longitude tick marks are indicated every 2.5 minutes", with small crosses where the lines would meet inside the map. A 7.5-minute quad is three ticks wide and three tall: 7.5 = 3 × 2.5. To find a point's latitude, draw a line between matching ticks on the two sides, then measure how far the point sits between two lines and divide that gap into equal parts.
+
+**The western hemisphere trap.** In Indiana, longitude is west, so it grows toward the west, the left edge of the map. The workbook's warning: "If the point lies in the western hemisphere, count degrees, minutes and seconds from right to left (east to west)." Many errors are simply counting the wrong way.
+
+**You may have done this before.** The FAA Part 107 course in this catalog teaches latitude and longitude on an aeronautical sectional chart in its module 6, "Sectional Charts", where the scale is 1:500,000. And How We Know What's Out There, in its lesson "1 · Finding yourself by the sky", shows how latitude was found from the stars long before any grid.
+
+:::reveal About how far on the ground is one degree of latitude, and one second? ||| About 111 kilometers (69 miles) for a degree, and about 30 meters (100 feet) for a second.
+
+:::reveal On a 1:24,000 US Topo, how often are latitude and longitude tick marks printed? ||| Every 2.5 minutes, with full values at the four corners.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 4-1 to 4-3 (PDF pp. 23 to 25), paragraphs 4-1 and 4-2a to 4-2d.
+- ${NWCG_475} Locator: p. 37, "Latitude and Longitude (edges of map)"; pp. 66 to 68, "Latitude/Longitude" and "Counting and Converting Minutes and Seconds".`,
+    },
   ],
 };
