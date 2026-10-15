@@ -383,5 +383,47 @@ Breed and Hosmer say Gunter's chain is used "chiefly" in land surveying "on acco
 - ${WHITE} Locator: p. 18 (PDF p. 32). ${TIER_A}
 - ${NIST_FOOT} Locator: the timeline entries for December 31, 2022 and January 1, 2023. ${TIER_A}`,
     },
+    {
+      slug: "chaining-a-line",
+      title: "6 · Chaining a line: two chainmen, eleven pins, and the errors that creep in",
+      section: "1 · Distance: pacing and the chain",
+      recallContent: [
+        {
+          prompt: "How long is a Gunter's chain, how many links does it have, and how many chains make a mile?",
+          answer: "66 feet and 100 links; 80 chains to the mile.",
+        },
+        {
+          prompt: "What happens to a chain's length with use?",
+          answer: "It grows: nearly six hundred wearing surfaces each wear a little, and chains 0.3 ft. or more too long are common (Breed and Hosmer, sec. 22).",
+        },
+      ],
+      body: `${P("BAM and a helper chaining a measured line on level ground and then down a slope, with the pin tally, the calls and the plumb line on camera")}
+
+**The crew and the kit.** Breed and Hosmer (sec. 10): "This work is done by two chainmen using a chain and a set of eleven steel marking pins." The head chainman "carries ten of the marking pins and the front end of the chain. The rear-chainman takes the eleventh pin and the other end of the chain." Their Fig. 2, on p. 7, shows the two men at work.
+
+**One chain-length, step by step.**
+1. The rear chainman holds his end at the starting pin, "just to one side" of it, so that a jerk on the chain does not disturb the pin.
+2. With his eye over the point, he lines the head chainman in on a sighting rod at the far end, motioning him right or left.
+3. The head chainman stretches the chain taut, checks that there are no kinks and that nothing bends it, and when the rear chainman calls "All right here," sets a pin at the end of the chain and presses it vertically into the ground. Then he calls "All right."
+4. The rear chainman pulls the pin at his end, and they move on. Just before he reaches the next pin he calls "Chain," to warn the head chainman that a chain-length is nearly run out.
+
+**The pins are the tally.** "The number of pins the rear-chainman holds is a record of the number of chain-lengths measured. There is always one pin in the ground which simply marks the distance and is not counted." After 10 chains the head chainman is out of pins; the rear chainman brings the ten forward, both men count them, and both write the 10 chains in their notebooks. A part chain at the end is read in links from the proper tag, with tenths of a link estimated.
+
+**Every length is horizontal, so hills cost work.** On a slope "the chain must be held horizontal and the distance transferred to the ground by means of a plumb-line. This is difficult to do accurately and is a fruitful source of error. Beginners usually hold the downhill end of the chain too low" (sec. 11). Where the slope is too steep to hold a full chain level, it is measured in sections of 50, 20 or even 10 feet. Chaining downhill is usually the more accurate direction, because the rear end is then held firmly on the ground.
+
+**Errors and mistakes are different things.** Breed and Hosmer list the common sources of error (sec. 13): not pulling the chain taut, careless plumbing, incorrect alignment, wind, temperature, and a chain of the wrong length. Mistakes are blunders (sec. 14): omitting a whole chain-length, reading from the wrong end of the chain ("40 ft. for 60 ft."), transposing figures. The cure for blunders is procedure (sec. 15). More than one person keeps the tally, and the note keeper repeats each distance aloud, in different words: if the chainman calls "Thirty-six, five," the note keeper answers "Thirty-six and a half," and a chainman who meant 36.05 hears the mistake at once.
+
+**Errors that cancel and errors that add up.** Section 23 separates errors "which are of such a nature that they tend to balance each other" from "those which continually accumulate. The latter are by far the more serious." Their example: a 5,000-foot line measured with a tape 0.01 foot too long, with a random error of about 0.02 foot in marking each tape length. Over fifty lengths the random errors partly cancel and leave about 0.14 foot; the long tape adds its 0.01 foot every time, 0.50 foot in all. "The small (0.01) accumulative error is therefore seen to have far greater effect than the larger (0.02) compensating error." A worn chain is an accumulating error.
+
+**The first four miles, 1785.** The Land Ordinance's surveys began on September 30, 1785, at the Pennsylvania line on the north bank of the Ohio. By October 8, C. Albert White records in the Bureau of Land Management's history, Thomas Hutchins, eight other surveyors "and a crew of about 30 chainmen and axemen ran 4 miles of line," measured "with a two-pole Gunter's chain held horizontally." The ground was "very rough, hilly, and covered with timber," speed mattered most, and "the resulting measurements were very crude" (pp. 18 to 19). What became of land laid out on such measurements is the subject of *Reading a Land Description*.
+
+:::reveal The rear chainman holds 7 pins, and one more pin stands in the ground ahead. How many chain-lengths have been run since the last tally of ten? ||| Seven. The pins in the rear chainman's hand are the count; the pin in the ground only marks the point and is not counted.
+
+:::reveal In Breed and Hosmer's example, which error does more damage over a long line, and why? ||| The accumulating one. A tape 0.01 ft. too long adds 0.01 ft. every length, 0.50 ft. over fifty lengths, while random 0.02 ft. errors partly cancel and leave about 0.14 ft.
+
+## Sources
+- ${BH} Locator: secs. 10 and 11 and Fig. 2, pp. 7 to 10 (scan pp. 33 to 36); secs. 13 to 15, pp. 11 to 12 (scan pp. 37 to 38); sec. 23, pp. 14 to 15 (scan pp. 40 to 41). ${TIER_A_PD}
+- ${WHITE} Locator: pp. 18 to 19 (PDF pp. 32 to 33). ${TIER_A}`,
+    },
   ],
 };
