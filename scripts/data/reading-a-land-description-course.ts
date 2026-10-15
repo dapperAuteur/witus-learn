@@ -27,8 +27,9 @@ import type { AuthoredCourse } from "./authored-course";
 // MARKED LESSONS. Each starts its body with a "> **Before release:**" line naming who must act.
 //   QR, licensed land surveyor only: 2 (the limits and the legal-survey definition), 6 (the corners
 //     are the law), 8 (reading and rerunning a deed).
-//   QR, ONE combined line naming the surveyor AND the Native reviewer (the release-marker parser
-//     keeps one verdict per kind per lesson, so both names share one line): 3 (the 1785 Ordinance,
+//   QR, licensed land surveyor, PLUS a separate decision marker for the Native reviewer's read (one
+//     verdict per kind per lesson, so two reviewers on one QR line would clear when either signed;
+//     see plans/bugs/2026-10-15-one-qr-verdict-per-lesson.md): 3 (the 1785 Ordinance,
 //     "purchased of the Indian inhabitants"), 7 (the 1775 Piankeshaw deed), 10 (how Indiana was
 //     surveyed, cession by cession).
 //   P (BAM's filmed visit): 13.
@@ -116,6 +117,11 @@ const P = (what: string) => `> **Before release:** needs a practitioner or BAM's
 
 const SURVEYOR = "a licensed land surveyor, to be named";
 const NATIVE_REVIEWER = "a Native reviewer, to be named";
+// The Native read is a DECISION marker, not a second QR need: sign-off keeps one verdict per kind per
+// lesson, so a QR line naming two reviewers would clear when EITHER signed. A decision is never cleared
+// by a verdict; BAM removes the marker once the Native reviewer has read the lesson (answer 8).
+const NATIVE_READ = (what: string) =>
+  `> **Before release:** needs BAM's decision (brief question 8): release only after ${NATIVE_REVIEWER} has read ${what}.`;
 
 export const READING_A_LAND_DESCRIPTION_COURSE: AuthoredCourse = {
   title: "Reading a Land Description: The Grid, the Deed and Indiana",
@@ -266,7 +272,8 @@ export const READING_A_LAND_DESCRIPTION_COURSE: AuthoredCourse = {
           answer: "Evidence of the corner's original position (sec. 4-2).",
         },
       ],
-      body: `${QR(`${SURVEYOR}, to check the reading of the Ordinance's survey rules; and ${NATIVE_REVIEWER}, to read how the lesson treats "the late Indian purchases" and the Ordinance's framing of Native land`)}
+      body: `${QR(`${SURVEYOR}, to check the reading of the Ordinance's survey rules`)}
+${NATIVE_READ(`how the lesson treats "the late Indian purchases" and the Ordinance's framing of Native land`)}
 
 **Read it yourself.** The text of "An Ordinance for Ascertaining the Mode of Disposing of Lands in the Western Territory," passed May 20, 1785, is printed in C. A. White's *A History of the Rectangular Survey System* (pp. 11 to 14), free from the Bureau of Land Management. It runs about three pages. White marks one omission, the form of the deed, with a bracketed note: "[Here follow the terms of the deed to be given when a township or a lot is sold.]" This lesson walks through it in order, quoting its own words, so you can check every claim against the document.
 
@@ -558,7 +565,8 @@ The idea had a champion. White records that Jared Mansfield, the surveyor genera
           answer: "Fixed them in position \"regardless of any errors\" (43 U.S.C. 752; Manual sec. 1-20(n)).",
         },
       ],
-      body: `${QR(`${SURVEYOR}, to check the description of metes and bounds; and ${NATIVE_REVIEWER}, to read how the lesson presents the 1775 Piankeshaw deed, its signers, and the purchase the United States refused to recognize`)}
+      body: `${QR(`${SURVEYOR}, to check the description of metes and bounds`)}
+${NATIVE_READ(`how the lesson presents the 1775 Piankeshaw deed, its signers, and the purchase the United States refused to recognize`)}
 
 **Metes and bounds.** Before the grid, and alongside it ever since, land was described by walking its edge: a starting point, then a course (a direction) and a distance to the next point, and so on around until the description returns to the start. "Metes" are the measurements; "bounds" are the things the line runs along or to, such as a stream, a road, a neighbor's land or a marked tree. The Manual calls this the colonial practice "where lands were described by irregular metes-and-bounds" (sec. 1-18).
 
@@ -813,7 +821,8 @@ That is lesson 6's rule again, at the scale of a backyard: monuments first, meas
           answer: "That the boundaries, not the stated figure, control.",
         },
       ],
-      body: `${QR(`${SURVEYOR}, to check the survey history and the description of the meridians; and ${NATIVE_REVIEWER}, to read how the lesson presents the cessions, the Vincennes Tract, and the order in which treaties and surveys came`)}
+      body: `${QR(`${SURVEYOR}, to check the survey history and the description of the meridians`)}
+${NATIVE_READ(`how the lesson presents the cessions, the Vincennes Tract, and the order in which treaties and surveys came`)}
 
 **The rule Indiana was surveyed under.** The Act of March 26, 1804 "made the necessary provision for the disposal of the public lands in the Indiana Territory." The Manual's own summary of it: "This is an early example of the policy to extinguish Indian title to the public domain, followed by the extension of the surveys and settlement" (sec. 1-20(n)). White's reading of the act's first section is blunter: it extended the surveyor general's authority to the lands north of the Ohio "to which Indian title had been extinguished or 'shall hereafter be extinguished,'" and "the Federal government made no pretense that all the lands would not eventually be acquired from the Indians and everybody knew it, except maybe the Indians themselves" (p. 48). In Indiana, the survey moved only as fast as the cessions did.
 
