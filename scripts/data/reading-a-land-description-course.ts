@@ -872,5 +872,61 @@ Freeman's north line ran from Point Coupee on the Wabash "south 78 degrees east"
 - ${STARKEY} Locator: pp. 192 to 193 (PDF pp. 1 to 2). ${TIER_B}
 - ${WELLS} Locator: the page's first paragraphs. ${TIER_B}`,
     },
+    {
+      slug: "the-records-and-who-keeps-them",
+      title: "12 · The records and who keeps them: field notes, plats, tract books, and the county surveyor",
+      section: "3 · Indiana on the grid",
+      recallContent: [
+        {
+          prompt: "Why did early Indiana county roads tend to follow section lines, according to Starkey?",
+          answer: "The surveyors had already blazed and partly cleared the section lines, settlers owed six days of road work a year, and section-line roads took little land from each farm.",
+        },
+        {
+          prompt: "Where does the Wells County surveyor say section corners are usually found?",
+          answer: "\"Near the centerlines of the County's roads.\"",
+        },
+      ],
+      body: `**Three kinds of original record.** The Indiana Archives and Records Administration (IARA) puts it in one list: "For all of Indiana, these land records exist: field notes - the surveyor's written description; plat maps - the surveyor's graphic description; and land office tract book entries - the accounts of individual purchases. All of these are available for examination at the State Archives."
+- **Field notes** are the surveyor's mile-by-mile record: distances, corners, bearing trees, and what the land was like. The Indiana State Library says the surveyors "took notes that vividly described the physiography and vegetation," along with where settlements and Native villages were and the problems they met. Freeman wrote of "handsome prairies," "wavy land" and "bushy barrens" (Wilson, p. 12).
+- **Plats** are the township drawings made from the notes.
+- **Tract books** record each first sale, arranged by location.
+
+**Where to read them.** IARA lists several routes:
+- "The compiled land survey notes have also been digitized and are available online from the National Archives" (catalog.archives.gov/id/566714).
+- The tract books for the "Fort Wayne, LaPorte-Winamac, and Vincennes" land offices "are available on the Indiana Digital Archives."
+- The early land records "enhance the Bureau of Land Management's Land Patent database by providing the date of purchase," which "will often place early settlers on their land earlier than the patent date."
+The State Library adds two more: the Internet Archive collection "Indiana PLSS Notes and Plats" (archive.org/details/@indiana_historical_land_records), and IndianaMap's Historical Indiana PLSS Township Record Viewer, which "allows the public to view surveyors' technical descriptions of the land."
+
+**After the first sale, go to the county.** IARA is explicit about the limit of the state's records: they "detail only initial surveys and sales from the public domain. All subsequent transactions and plat maps are held by the recorders in the individual counties of Indiana." For anything after the first purchase, "contact the recorder of the county where the sale took place."
+
+**A date the sources disagree on.** When did the first land office in Indiana open at Vincennes? IARA's own page says "the first land office in Indiana opened in 1807 at Vincennes," and, in a list of offices on the same page, "Vincennes (1804)." Both cannot be the opening year. White adds that the Act of March 26, 1804 "establishes three new land offices at Vincennes, Detroit, and Kaskaskia" (p. 48), but an act that establishes an office and the day an office opens for sales are not the same event. This course states neither year until a primary record settles it, and a check has been filed to do that.
+
+**The county surveyor.** Every Indiana county has one, and the office keeps the ground connected to the paper.
+- Boone County: the surveyor "must keep and maintain a corner record book showing original government section corners," and "must check, locate, establish, and reference at least 5% of all original corners shown in the Corner Record Book." The office also "maintains a legal survey record book for all legal surveys within the county."
+- Wells County: "each year the surveyor shall check and reference at least five percent (5%) of all corners shown in the corner record book," citing IC 36-2-12-11.
+A corner "referenced" is tied by measurement to nearby objects, so that it can be found again if it is disturbed.
+
+**And the 2009 Manual's own pointer.** The Manual's list of public-land states gives Indiana's original survey records as "with the Commission on Public Records at Indianapolis" (sec. 1-32). That was its wording in 2009; today it is the State Archives page above that describes holding the field notes and plats.
+
+**Find the original survey of a section.** For practice, use the section that holds your county courthouse:
+1. Find its legal description in the county's public parcel records, or read the section, township and range off a county map.
+2. Note the meridian, or work out which origin governs your part of the state (lesson 10).
+3. Open the township's field notes and plat through the National Archives, the Internet Archive collection, or the IndianaMap viewer.
+4. Read what the surveyor recorded along the section's lines: the distances, the corners, the trees, the soil.
+5. Look up the first sale in the tract books on the Indiana Digital Archives.
+
+:::reveal Which three kinds of original land record does IARA say exist for all of Indiana? ||| Field notes (the written description), plat maps (the graphic description), and land office tract book entries (the individual purchases).
+
+:::reveal You want a sale of your county's courthouse lot from 1910. State Archives or county recorder? ||| The county recorder. The State Archives' records "detail only initial surveys and sales from the public domain."
+
+## Sources
+- ${IARA} Locator: "Field Notes, Plat Maps, and Tract Books"; the National Archives and Indiana Digital Archives paragraphs; the first land office sentences; the county recorders paragraph. ${TIER_B}
+- ${ISL_BLOG} Locator: the paragraphs on the field notes, the Internet Archive collection, and the IndianaMap viewer. ${TIER_B}
+- ${BOONE} Locator: "Section Corner Perpetuation"; "Legal Survey Book". ${TIER_B}
+- ${WELLS} Locator: the paragraph citing IC 36-2-12-11. ${TIER_B}
+- ${WHITE} Locator: p. 48 (PDF p. 62). ${TIER_A}
+- ${WILSON} Locator: p. 12. ${TIER_A_1916}
+- ${MANUAL} Locator: sec. 1-32, p. 16 (PDF p. 27). ${TIER_A}`,
+    },
   ],
 };
