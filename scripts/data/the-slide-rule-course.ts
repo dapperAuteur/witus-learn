@@ -1502,6 +1502,53 @@ Work through three questions before reading on. Where do the accounts agree? (A 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 7: Charts and circles that calculate
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "nomograms",
+      title: "22 · Nomograms: a straightedge as a calculator",
+      section: "7 · Charts and circles that calculate",
+      recallContent: [
+        {
+          prompt: "What made the HP-35 a first, according to the Smithsonian?",
+          answer: "It was the first handheld electronic calculator to compute all the functions represented on a slide rule. It was announced in early 1972.",
+        },
+        {
+          prompt: "What does a calculator not do that a slide rule forced, per lesson 21?",
+          answer: "Stop at three figures, and estimate: only an estimate made first catches a mistyped exponent.",
+        },
+      ],
+      body: `${P("BAM on camera drawing Lipka's three-line multiplication chart on graph paper from the measurements below, then reading 7 × 3 and 3 × 5 on it with a straightedge")}
+
+**A calculator with no moving parts.** Joseph Lipka taught a course in the Mathematical Laboratory of the Massachusetts Institute of Technology and published it in 1918 as *Graphical and Mechanical Computation*. His preface: "Engineers have recognized for a long time the value of graphical charts in lessening the labor of computation. Among the charts devised none are so rapidly constructed nor so easily read as the charts of the alignment or nomographic type," a type "most fully developed by Professor M. d'Ocagne of Paris." Lipka begins from the slide rule itself. Of the C and D scales he writes that "we can easily read three figures in any part of these scales," and adds the advice of lesson 8: "in computing it is best to disregard all decimal points and to estimate the position of the decimal point in the final result."
+
+**The idea.** A nomogram, or alignment chart, represents an equation in three numbers "by means of three scales along three curves (or straight lines) in such a manner that a straight line cuts the three scales in values of u, v, and w satisfying the equation. The transversal is called an isopleth or index line." For multiplication the trick is lesson 1's: written with logarithms, u × v = w becomes log u + log v = log w, a sum.
+
+**Lipka's chart for multiplication.** Draw two parallel scales 10 inches apart, each a logarithmic scale running 10 inches from 1 to 10. Midway between them draw a third line carrying a scale half as large, running from 1 to 100, starting where the line from 1 on the left scale to 1 on the right scale crosses it. Lay a straightedge across any number on the left and any number on the right, and read their product where it crosses the middle. "The index line in the completed chart gives the reading u = 7, v = 3, w = 21." Lipka's next chart gives a second check: 3 and 5 give 15.
+
+**Why the middle line works.** A straight line crossing two parallel lines crosses the line midway between them at the average of its two heights. On the outer scales the heights are 10 × log u and 10 × log v. Their average is 5 × (log u + log v), which is 5 × log (u × v). So a middle scale marked at 5 × log w reads the product. Check with Lipka's example: 7 sits 8.45 inches up the left scale and 3 sits 4.77 inches up the right one. The average is 6.61 inches; divided by 5 that is 1.322, the logarithm of 21.
+
+**Draw your own.** On a sheet at least 11 inches tall, draw three upright lines, the outer two 10 inches apart and the third exactly halfway, and a base line across their feet. Mark both outer lines with lesson 3's card-rule distances, measured up from the base line: 1 at 0, 2 at 3.01, 3 at 4.77, 4 at 6.02, 5 at 6.99, 6 at 7.78, 7 at 8.45, 8 at 9.03, 9 at 9.54 and 10 at 10.00 inches. Mark the middle line at 5 × log w:
+
+| w | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Inches up | 0 | 1.51 | 2.39 | 3.01 | 3.49 | 3.89 | 4.23 | 4.52 | 4.77 | 5.00 |
+
+and carry on for 20 to 100, each 5 inches higher than the mark ten times smaller: 20 at 6.51, 30 at 7.39, 40 at 8.01, 50 at 8.49 and so on up to 100 at 10.00. Lipka's reading tool: "a straight edge or a transparent sheet of celluloid with a straight line scratched on its under side or a thread." To divide, lay the edge from the product on the middle scale through the divisor on one outer scale, and read the quotient on the other.
+
+**The decimal point, once more.** Lipka notes that the outer scales may be read as running from any power of ten to the next, "with a corresponding change in the position of the decimal point in the value of w." A nomogram gives figures, as a slide rule does, and you place the point.
+
+**Why engineers liked them.** Lipka's list of advantages: "the chart uses very few lines and is thus easily read"; "interpolation is made along a scale rather than between curves, with a corresponding gain in accuracy"; "the labor of construction is very small"; and "the chart allows us to note instantly the change in one of the variables due to changes in the other variables." He advises making the chart "almost square," so the index line never crosses a scale at too low an angle. One of his charts carries six engineering formulas on the same two outer scales. His three chapters on alignment charts go much further than this lesson, with charts "for a large number of well-known engineering formulas."
+
+:::reveal On Lipka's multiplication chart, what does a straightedge from 7 on one outer scale to 3 on the other cross on the middle scale? ||| 21. The middle line sits at the average height, 6.61 inches, which is 5 × log 21.
+
+:::reveal Why is the middle scale of the chart marked at 5 × log w? ||| A straight line crosses the midline at the average of its heights on the outer lines: 5 × (log u + log v), which is 5 × log (u × v).
+
+## Sources
+- ${LIPKA} Locator: Preface, p. iii (PDF p. 9), the MIT course, graphical charts, the alignment type and d'Ocagne; p. 9 (PDF p. 25), Art. 6, three figures on C and D and estimating the decimal point; p. 44 (PDF p. 60), Art. 22, the advantages and the index line; p. 46 (PDF p. 62), straight edge, celluloid or thread, and "almost square"; p. 47 (PDF p. 63), Art. 24, the chart for multiplication and the reading 7, 3, 21; p. 48 (PDF p. 64), the decimal point and Art. 25, six formulas and the reading 3, 5, 15. ${TA}
+- ${PICKWORTH} Locator: pp. 10 to 11 (PDF pp. 16 to 17), the card-rule distances. ${TA}`,
+    },
     // NEXT_SECTIONS
   ],
 };
