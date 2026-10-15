@@ -1601,5 +1601,48 @@ So a two-step pace is about twice an Army pace, and a count of one is about half
 - ${FM_2001} Locator: printed pp. 9-6 and 9-7 (PDF pp. 115 and 116), paragraph 9-4e; printed pp. 11-15 to 11-18 (PDF pp. 161 to 164), paragraphs 11-6a(9), (10), 11-6b and 11-6c; printed pp. F-19 to F-21 (PDF pp. 214 to 216), paragraphs F-10 and F-11.
 - ${MMSF_ORIENT} Locator: "Orienteering Pointers", "Route Choice and Handrails". Linked only.`,
     },
+    {
+      slug: "without-a-compass",
+      title: "25 · Without a compass: shadow, watch and star",
+      section: "5 · Map and compass together",
+      recallContent: [
+        {
+          prompt: "What is a navigational attack point, and how far from the goal does the Army manual prefer it?",
+          answer: "The last easily identified checkpoint, where area navigation ends and point navigation begins; 500 meters or less.",
+        },
+        {
+          prompt: "Why aim a deliberate offset to one side of a goal on a road?",
+          answer: "So that when you reach the road you know which way to turn; 10° moves you about 180 meters aside per 1,000 meters.",
+        },
+      ],
+      body: `${P("BAM runs the shadow-tip method with a stick on a sunny day, tries the watch method beside it, and compares both with his compass")}
+
+**When the compass is gone.** The Army manual: "When a compass is not available, different techniques should be used to determine the four cardinal directions." These give rough directions, good enough to orient a map (lesson 20) or to keep walking the right general way. None replaces a compass.
+
+**The shadow-tip method.** The manual calls it "This simple and accurate method of finding direction by the sun", in four steps:
+1. "Place a stick or branch into the ground at a level spot where a distinctive shadow will be cast. Mark the shadow tip with a stone, twig, or other means. This first shadow mark is always the west direction."
+2. "Wait 10 to 15 minutes until the shadow tip moves a few inches. Mark the new position of the shadow tip in the same way as the first."
+3. "Draw a straight line through the two marks to obtain an approximate east-west line."
+4. "Standing with the first mark (west) to your left, the other directions are simple; north is to the front, east is to the right, and south is behind you."
+
+The rule to remember: "the first shadow-tip mark is always in the west direction, everywhere on earth." The manual's limit: it "is not intended for use in polar regions, which the Department of Defense defines as being above 60° latitude in either hemisphere." At night, the manual says the same trick works with a bright moon, "the moon has to be bright enough to cast a shadow."
+
+**A shadow clock.** Set the stick upright where the east-west and north-south lines cross, and its shadow becomes an hour hand: the west end of the line reads 0600, the east end 1800, and the north-south line is noon. It "makes every day 12 unequal hours long", so it is rough, but it can reset a watch.
+
+**The watch method, with its warning.** "In the north temperate zone only, the hour hand is pointed toward the sun. A south line can be found midway between the hour hand and 1200 hours, standard time. If on daylight saving time, the north-south line is found between the hour hand and 1300 hours." Then the warning, which is why the course lists it last: "The watch method can be in error, especially in the lower latitudes, and may cause circling." The manual's fix is to set the watch from a shadow clock and check it again after an hour.
+
+**The North Star.** At night in the northern hemisphere, "The North Star is less than 1° off true north and does not move from its place because the axis of the earth is pointed toward it." To find it, use the two Pointers of the Big Dipper: "an imaginary line drawn through them five times their distance points to the North Star", the last star in the Little Dipper's handle. It is not the brightest star; "none is more important because of its location." It cannot be seen south of the equator, and "above latitude 70°, it is too high in the sky to be useful." Of the roughly 5,000 stars visible to the eye, the manual says navigators use fewer than 60.
+
+**From direction to latitude.** The North Star gives more than north. How We Know What's Out There, in its lesson "1 · Finding yourself by the sky", shows how its height above the horizon gives your latitude, the idea behind the later sextant course in this series.
+
+**Choose the honest tool.** Shadow-tip is slow but sound in daylight; the North Star is the best night reference in this hemisphere; the watch method is the one most likely to walk you in a circle. Each gives true north, not magnetic, so a map oriented by them needs no declination correction.
+
+:::reveal In the shadow-tip method, which direction is the first mark? ||| West, "everywhere on earth."
+
+:::reveal How far from true north is the North Star, according to the Army manual? ||| Less than 1°.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 9-7 to 9-10 (PDF pp. 116 to 119), paragraph 9-5a to 9-5c; printed p. 11-18 (PDF p. 164), paragraph 11-7b.`,
+    },
   ],
 };
