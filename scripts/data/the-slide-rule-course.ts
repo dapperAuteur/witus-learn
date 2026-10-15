@@ -507,7 +507,7 @@ Each distance is the logarithm from lesson 1 times 10. For finer marks, take the
 
 **Unit conversions, a row at a time.** Cullimore's ounces to grams: the back of his rule says 6 ounces equal 170 grams. Set the runner to 6 on D and bring 170 on C to it. Now read ounces on D and grams above them on C: 1 ounce is 28.3 grams, and 6.5, 7.75 and 9.25 ounces are 184, 220 and 262 grams. When a value runs off the end, shift the slide to the other index, exactly as in multiplication. One setting, a whole table.
 
-**Reciprocals.** One divided by a number is a division with 1 as the dividend. Cullimore: "Find the reciprocal of 3.17. Set 3.17C over 1D, and read on D under 1C. Answer is .316." Many basic rules also carry a CI scale for reciprocals (lesson 10 has a note).
+**Reciprocals.** One divided by a number is a division with 1 as the dividend. Cullimore: "Find the reciprocal of 3.17. Set 3.17C over 1D, and read on D under 1C. Answer is .316." Many basic rules also carry a CI scale for reciprocals (lesson 12 has a note).
 
 **Check it by multiplying back.** A quotient times the divisor should give the dividend: 12.5 × 18 = 225. That is the same setting read the other way, so the rule checks itself.
 
@@ -688,6 +688,47 @@ Each distance is the logarithm from lesson 1 times 10. For finer marks, take the
           { prompt: "What does lesson 9 say the slide rule adds to the habit of reporting figures?", options: ["A table of rules for rounding", "A proof that four figures are best", "A way to report more figures", "A physical limit you can see"], correctIndex: 3, explanation: "\"The slide rule makes the same point with a physical limit you can see\" (lesson 9).", sourceLessonSlug: "how-accurate-is-it" },
         ],
       },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4: A, B and L
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "squares-and-square-roots",
+      title: "10 · Squares and square roots on A and D",
+      section: "4 · A, B and L: squares, roots and logarithms",
+      recallContent: [
+        {
+          prompt: "When does Cullimore say we have a right to use the slide rule?",
+          answer: "Where three significant figures are warranted in the result: the rule gives about one part in a thousand.",
+        },
+        {
+          prompt: "What does Holman's rule say about multiplying and dividing measured numbers?",
+          answer: "A given percentage error in one of them produces the same percentage error in the result.",
+        },
+      ],
+      body: `${P("BAM on camera setting the cursor to 4.17 and to 114 on D and reading their squares on A, finding the square roots of 5 and 50 on the two halves of A, and working the area of an 11.6-inch circle")}
+
+**A table of squares on the face.** Cullimore: "The numbers on A are the squares of those on D. We have then a table of squares and square roots ready at hand." Pickworth says the same of the slide: over any number on D is its square on A, and under any number on A is its square root on D, "the same remarks applying to the C and B scales on the slide." D runs from 1 to 10, and A, above it, from 1 to 100.
+
+**Why it works.** A carries two copies of the 1-to-10 scale in the length D uses for one, so each copy is half as long. A distance that stands for the logarithm of a number on D stands for twice that logarithm on A, and lesson 1 showed that doubling a logarithm squares the number. The cursor line carries the distance from one scale to the other.
+
+**Squaring.** Pickworth: "set the cursor to the number on D and read the required square on A under the cursor." Cullimore squares 4.17: the runner to 417 on D, and under it on A, 17.4. Estimate first, as always: 4 squared is 16, so the answer is 17.4, not 1.74 or 174.
+
+**What the A scale gives up.** Pickworth squares 114. The cursor on 114 on D shows 13 on the left half of A, and his digit rule makes it 13,000. "The true result is 12,996." A is half as long as D, so its marks are coarser (lesson 5: two, sometimes three figures). When a square is wanted to three figures, multiply the number by itself on C and D instead; Pickworth calls that plan "often very convenient."
+
+**Square roots, and which half of A.** The reverse: set the cursor to the number on A and read the root on D. But every number appears twice on A, once in each half. Cullimore's example: the runner on 5 in the left half shows 2.24 on D; on 5 in the right half it shows 7.07. "It is evident that 2.24 is the square root of 5, and 7.07 the square root of 50." His rule: "If a number has an uneven number of digits to the left of the decimal point, use the left-hand scale; if an even number, the right-hand scale on A." So the left-hand 5 also gives the roots of 500 and 50,000: 22.4 and 224.
+
+**Or estimate.** Cullimore adds: "It is perhaps better in most cases to estimate the result mentally and set on the scale so as to approximate this result." The root of 5 is about 2, so use the half that gives about 2. Pickworth's root of 36,500: five figures, an odd number, so the left half; 365 there gives 191 on D, and since 190 squared is 36,100, the root is 191. A number below 1 follows the same habit: the root of 0.0098 is near 0.1, because 0.1 squared is 0.01, and Pickworth reads 0.099 from the right half.
+
+**Squares inside a formula.** A and B also multiply, so a square can be multiplied in the same setting. Cullimore finds 3 squared times 9: set 1 on C to 3 on D, and over 9 on B read 81 on A. His area of a circle uses the same idea. The area is 0.7854 times the diameter squared, and 0.7854 is marked on the right halves of A and B "by a longer line in the same way that π is marked." Set the runner to the diameter, 11.6, on D; bring 1 on B to the runner; and over the 0.7854 mark on B read 105.7 on A, the area in square inches.
+
+:::reveal Where is the square of a number on D found? ||| On A, directly above it under the cursor line: Cullimore's 4.17 gives 17.4.
+
+:::reveal Which half of A gives the square root of 50? ||| The right half: 5 there gives 7.07 on D. The left half's 5 gives 2.24, the root of 5.
+
+## Sources
+- ${CULLIMORE} Locator: p. 9 (PDF p. 13), "The numbers on A are the squares of those on D" and the square of 4.17; p. 10 (PDF p. 14), the square roots of 5 and 50, the rule for the half of A, and estimating; p. 11 (PDF p. 15), the area of a circle and the 0.7854 mark; p. 15 (PDF p. 19), 3 squared times 9. ${TA}
+- ${PICKWORTH} Locator: p. 37 (PDF p. 43), squares and square roots on A and D and the rule for squaring; p. 38 (PDF p. 44), the square of 114 and 12,996, the roots of 36,500 and 0.0098; p. 39 (PDF p. 45), squaring by ordinary multiplication. ${TA}`,
     },
     // NEXT_SECTIONS
   ],
