@@ -393,7 +393,7 @@ White also explains two numbers. Townships "were to be six miles square (reduced
       ],
       body: `${QR(`${SURVEYOR}, to check this lesson's statement of the statutes and the restoration rules, and its advice on fences and lines`)}
 
-**The problem the law had to solve.** The companion course showed how the first lines were run: with a chain that "was difficult to keep at standard length," over hills where "inaccuracies often arose in measuring steep slopes" (Manual, sec. 7-5). By 1800 there were thousands of corners on the ground that were not quite where the theory said, and settlers were already living by them. Congress had to choose: move the corners to match the arithmetic, or hold the corners and let the arithmetic go.
+**The problem the law had to solve.** The companion course showed how the first lines were run: with a chain that "was difficult to keep at standard length," over hills where "inaccuracies often arose in measuring steep slopes" (Manual, sec. 7-5). By 1800 corners stood on the ground that were not where the theory put them, and land had already been sold by them: the first sale of the Seven Ranges was held in 1787 (White, p. 19). Congress had to choose: move the corners to match the arithmetic, or hold the corners and let the arithmetic go.
 
 **It held the corners: the Act of March 1, 1800.** The Manual (sec. 1-20(n)) summarizes it: "the lines run and the corners marked on the ground and returned in the field notes and on the plat by the Surveyor General shall be considered to be the lines and corners of the parcels so identified, even though not in conformity to the precise theoretical positions contemplated by the survey laws, or not appearing to correspond with the plat, or found at unequal distances from the respective corners. It thus established a hierarchy of boundary evidence, the foremost and dispositive of which were the actual marks on the ground."
 
@@ -418,7 +418,7 @@ The idea had a champion. White records that Jared Mansfield, the surveyor genera
 
 ## Sources
 - ${MANUAL} Locator: sec. 1-20(n), pp. 20 to 21 (PDF pp. 31 to 32); sec. 3-4, p. 40 (PDF p. 51); sec. 4-2, p. 105 (PDF p. 116); secs. 7-1, 7-2 and 7-5, p. 165 (PDF p. 176). ${TIER_A}
-- ${WHITE} Locator: p. 49 (PDF p. 63). ${TIER_A}`,
+- ${WHITE} Locator: p. 19 (PDF p. 33); p. 49 (PDF p. 63). ${TIER_A}`,
     },
   ],
 };
