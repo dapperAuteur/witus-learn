@@ -1353,6 +1353,42 @@ Work through three questions before reading on. Where do the accounts agree? (A 
 - ${LOFF} Locator: the paragraph on the West Area Computers; the paragraph on reading film, calculating and plotting, and checking for accuracy; second paragraph (mid-1930s into the 1970s). ${TA}
 - ${PICKWORTH} Locator: p. 111 (PDF p. 117), accuracy and the length of the scale. ${TA}`,
     },
+    {
+      slug: "the-hp-35-and-the-end-of-an-era",
+      title: "21 · The HP-35 and the end of an era",
+      section: "6 · From Gunter's line to the Moon",
+      recallContent: [
+        {
+          prompt: "What does the National Air and Space Museum say Apollo's computers did, and what did the slide rule do?",
+          answer: "The on-board and ground computers did the critical guidance and navigation calculations; the crews' slide rule did more routine calculations.",
+        },
+        {
+          prompt: "Why did lesson 20 warn about the Pickett N600-ES's size?",
+          answer: "Accuracy depends primarily on scale length, so a 5-inch rule crowds its marks; the Smithsonian notes it suited engineers with excellent vision.",
+        },
+      ],
+      body: `**Every key a scale.** The Smithsonian's record of a Hewlett-Packard HP-35 begins: "The HP-35 was the first handheld electronic calculator to compute all the functions represented on a slide rule." It was "first announced in early 1972." The donor ordered his when it was announced and received it six weeks later, "paying $395 plus shipping." Its keys are a list of this course's lessons: digits and a decimal point, the four arithmetic operations, and keys "for powers, logs to base ten, natural logs, exponents, square roots, trigonometric functions," and "simple inverses." Multiplication and division (section 3), squares, roots, powers and logarithms (section 4), and reciprocals (the CI scale) each became a single press.
+
+**The decimal point, done for you.** The rule never shows the decimal point (lesson 2); placing it was the learner's job (lesson 8), hard enough that a "Decimal Keeper" rule was built to help. The HP-35 places it itself. "Numbers with absolute value between one hundredth and 10 billion are given in decimal form. Smaller or larger ones appear in scientific notation, with the appropriate power of ten occupying the three rightmost digit places." That is Pickworth's notation from lesson 2, a number times a power of ten, shown on a red display.
+
+**A title that says it all.** Among the record's references is an article from the *Hewlett-Packard Journal* of June 1972 whose title tells the story: "The 'Powerful Pocketful': an Electronic Calculator Challenges the Slide Rule." (This course cites the title as the museum lists it; it has not read the article.)
+
+**The makers stop.** The Smithsonian's records trace the end through two of the makers this course has met. Keuffel & Esser's Analon rule "was only listed in K&E's 1967 catalog," and "According to former curator Uta Merzbach, the ANALON slide rule was the last model manufactured by Keuffel & Esser at its plant in Hoboken, N.J., which closed in 1970." Pickett, maker of the Apollo rule, "In the mid-1970s ... moved to Nogales, Mexico, ceased making slide rules, and was gradually subsumed into Chartpak." When Keuffel & Esser made its last slide rule anywhere is not settled by the sources this course has read: only the closing of the Hoboken plant in 1970 is recorded, and popular accounts that give a later date have not been checked.
+
+**What the calculator does not do for you.** A calculator gives as many figures as its display holds, whether the measurements behind them deserve it or not. Cullimore's warning from 1920 (lesson 9) now has more force than when he wrote it: carrying "a greater number of significant figures than the data warrant comes perilously near to lying with figures." A slide rule stopped you at three figures. A calculator will not. And it does not estimate: a mistyped exponent gives a wrong answer printed just as neatly as a right one, and only lesson 8's habit (estimate, calculate, check that the sizes agree) catches it.
+
+**Why learn the rule now.** Not for speed: the HP-35 won that in 1972. Three reasons remain, and they are this course's reasons. You can see a logarithm on a rule, as a length, in a way no keypress shows (lesson 1). The rule makes estimating a habit, because without an estimate you cannot place the point. And it reminds you, every time you read it, how many figures an answer is good for. It also needs no battery, which is why this course belongs to a series called Tools That Think.
+
+:::reveal What made the HP-35 a first, according to the Smithsonian? ||| It was "the first handheld electronic calculator to compute all the functions represented on a slide rule."
+
+:::reveal What does the record of the Analon say about Keuffel & Esser's Hoboken plant? ||| According to former curator Uta Merzbach, the Analon was the last model made there, and the plant closed in 1970.
+
+## Sources
+- ${NMAH_HP35} Locator: description, first paragraph (the first handheld calculator to compute all the functions of a slide rule, the keys, the display), fourth paragraph ($395, early 1972), references (the Hewlett-Packard Journal article of June 1972, title only). ${TB}
+- ${NMAH_ANALON} Locator: description, third paragraph (the 1967 catalog, Uta Merzbach, Hoboken, 1970). ${TB}
+- ${NMAH_N600} Locator: description, third paragraph (Pickett in the mid-1970s). ${TB}
+- ${CULLIMORE} Locator: p. 4 (PDF p. 8), "perilously near to lying with figures". ${TA}`,
+    },
     // NEXT_SECTIONS
   ],
 };
