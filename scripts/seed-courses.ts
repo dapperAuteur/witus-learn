@@ -61,6 +61,8 @@ import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "./data/stage-and-broadcast-r
 import { SOUND_CRAFT_COURSE } from "./data/sound-craft-course";
 import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
 import { MAP_AND_COMPASS_COURSE } from "./data/map-and-compass-course";
+import { SURVEYING_HOW_LAND_GETS_MEASURED_COURSE } from "./data/surveying-how-land-gets-measured-course";
+import { READING_A_LAND_DESCRIPTION_COURSE } from "./data/reading-a-land-description-course";
 import { RAISING_ANIMALS_FOR_YARN_COURSE } from "./data/raising-animals-for-yarn-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
@@ -3381,7 +3383,7 @@ async function main() {
 
   // Tools That Think (TOOLS), BAM's series of analog tools that work without electricity (decisions of
   // 2026-10-14: one cross-category series, each course under its own category). TOOLS-01 is map and
-  // compass; 02 the slide rule and 03/04 surveying are on their own branches. Brief (approved
+  // compass; 02 the slide rule is registered after the SCI-04 block; 03/04 surveying follow below. Brief (approved
   // 2026-10-14): plans/future-courses/science-and-math/tool-usage/2026-10-14-map-and-compass-brief.md.
   // Public and free; held until a NAMED qualified reviewer has read every lesson marked QR and BAM has
   // recorded the demonstrations marked P. Research tier 2: a wrong bearing or declination sign can
@@ -3404,6 +3406,57 @@ async function main() {
     priceType: "free",
     publishHoldReason:
       "Held until a qualified reviewer, still to be named (a search-and-rescue member, or a wilderness or land-navigation instructor), has read every lesson marked QR, and until BAM has recorded the demonstrations marked P (his compasses, his quad, his route). Research tier 2: a wrong bearing or declination sign can strand a walker.",
+  });
+
+  // Tools That Think (TOOLS), BAM approved the surveying brief on 2026-10-14 and split it in two:
+  // TOOLS-03 measures land (distance, direction, elevation, area) and TOOLS-04 reads land descriptions
+  // (the PLSS grid, metes and bounds and the deed, Indiana). TOOLS-01 (map and compass) and TOOLS-02
+  // (the slide rule) are registered elsewhere in this file. Public and free by BAM's decision, each held until a
+  // licensed land surveyor (to be named) has read the lessons marked QR and BAM has filmed the lessons
+  // marked P. Brief: plans/future-courses/science-and-math/tool-usage/2026-10-14-surveying-brief.md.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "surveying-how-land-gets-measured",
+    course: SURVEYING_HOW_LAND_GETS_MEASURED_COURSE,
+    category: "Science & Math",
+    seriesSlug: "tools-that-think",
+    seriesTitle: "Tools That Think",
+    seriesOrder: 3,
+    seriesCode: "TOOLS",
+    seriesPosition: "03",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "public",
+    publishHoldReason:
+      "Held until a licensed land surveyor (to be named) has read every lesson marked QR, with authority to change or cut it, and until BAM has filmed his demonstrations with the chain, compass, level and planimeter for the lessons marked P. Research tier 2: the practice of a licensed profession, next to boundary law.",
+  });
+
+  // TOOLS-04, the second half of the split surveying brief: reading the PLSS grid, metes and bounds
+  // and the deed, and Indiana's own survey records. Civics first (its subject is a public act, the
+  // 1785 decision to survey before sale), with Science & Math (the series home) and Money & Property
+  // (deeds and title) as BAM's answer 5 added. Held for a licensed land surveyor on the QR lessons,
+  // a Native reviewer on the treaty-cession lessons 3, 7 and 10 (answer 8), and BAM's filmed county
+  // surveyor visit in lesson 13 (answer 6).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reading-a-land-description",
+    course: READING_A_LAND_DESCRIPTION_COURSE,
+    category: "Civics",
+    additionalCategories: ["Science & Math", "Money & Property"],
+    seriesSlug: "tools-that-think",
+    seriesTitle: "Tools That Think",
+    seriesOrder: 4,
+    seriesCode: "TOOLS",
+    seriesPosition: "04",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "public",
+    publishHoldReason:
+      "Held until a licensed land surveyor (to be named) has read every lesson marked QR, with authority to change or cut it; until a Native reviewer (to be named) has read lessons 3, 7 and 10, which teach that the grid followed treaty cessions, with the same authority; and until BAM has filmed his county surveyor visit for lesson 13. Research tier 2: boundary law and land title, next to a licensed profession.",
   });
 
   // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared

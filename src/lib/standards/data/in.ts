@@ -434,9 +434,31 @@ export const JURISDICTION: JurisdictionFile = {
         {
           code: "USH.10.2",
           text: "Locate and analyze primary sources and secondary sources related to an event or issue of the past; discover possible limitations in various kinds of historical evidence and differing secondary opinions.",
-          claimIds: ["history.migration-primary-sources"],
+          claimIds: ["history.migration-primary-sources", "history.land-record-primary-sources"],
           coverage: "partial",
-          note: "Partial: sources are pointed to their actual archives (National Archives, Census Bureau, the Schomburg Center) rather than quoted from memory, and the course turns a widely repeated but unsupported statistic into an explicit limitations-of-evidence lesson. Sustained student-run source analysis is prompted by activities but not assessed.",
+          note: "Partial: sources are pointed to their actual archives (National Archives, Census Bureau, the Schomburg Center) rather than quoted from memory, and the course turns a widely repeated but unsupported statistic into an explicit limitations-of-evidence lesson. Sustained student-run source analysis is prompted by activities but not assessed. Reading a Land Description reaches the standard through land records: learners read the Land Ordinance of 1785 clause by clause, a 1775 deed from eleven Piankeshaw chiefs, and a surveyor's own field entry, each beside a secondary account (White's 1983 BLM history, Wilson's 1916 article), and two conflicts are taught as limitations of the evidence rather than settled by guessing: the year Freeman surveyed the Vincennes Tract (1803 in White, 1802-3 in Wilson) and the year the Vincennes land office opened (two different years on the state archives' own page). Partial there too: the sources are land records only, and the analysis is assessed by quiz rather than by a student-written argument.",
+        },
+      ],
+    },
+
+    // ── Grade 4 Social Studies (2023) ──────────────────────────────────────
+    {
+      id: "in-g4ss",
+      subject: "Social Studies",
+      name: "Indiana Academic Standards: Grade 4 Social Studies",
+      publisher: "Indiana Department of Education (IDOE)",
+      version: "2023",
+      fetchedOn: "2026-10-14",
+      sourceUrl: "https://www.in.gov/doe/files/Indiana-Academic-Standards-Grade-4-Social-Studies.pdf",
+      adoption:
+        "The 2023 edition, as printed on the document itself. IDOE's social-studies page also lists a 2026 column for Grade 4; that edition has not been fetched, so confirm which edition your school year is held to. Mapped for Reading a Land Description, an adult-level course whose Indiana lessons a Grade 4 teacher can draw on for the documents named in 4.H.4.",
+      standards: [
+        {
+          code: "4.H.4",
+          text: "Summarize and explain the significance of key documents in Indiana’s development from a United States territory to statehood.",
+          claimIds: ["civics.land-ordinance-and-northwest-ordinance"],
+          coverage: "partial",
+          note: "Partial. The standard's examples are the Land Ordinance of 1784, the Northwest Ordinance (1787), and the 1816 Indiana Constitution. Reading a Land Description teaches the Land Ordinance of 1785 from its own text and the Northwest Ordinance's provisions and significance (lesson 3), and what each gave Indiana: its survey grid, and its path to statehood on an equal footing. It mentions the 1784 committee draft only as the plan the 1785 Ordinance revised, and it does not teach the 1816 Indiana Constitution. The course is written for adults, so a Grade 4 teacher would adapt it rather than assign it.",
         },
       ],
     },
@@ -686,7 +708,7 @@ export const JURISDICTION: JurisdictionFile = {
   notClaimed: [
     {
       heading: "Mathematics — two grade-level standards, both partial, and nothing else.",
-      body: "Map and Compass is the only course here that teaches mathematics an Indiana standard names: reading coordinates on a first-quadrant grid (5.CA.11) and computing ground lengths and areas from a map's scale (7.GM.1). Both are partial, because the course grades its computations by multiple choice and never grades the hand work the standards also ask for: graphing equations and points, and creating a scale drawing. It claims no other Indiana mathematics standard; the rest of this catalog does no mathematics instruction.",
+      body: "Map and Compass is the only course here that teaches mathematics an Indiana standard names: reading coordinates on a first-quadrant grid (5.CA.11) and computing ground lengths and areas from a map's scale (7.GM.1). Both are partial, because the course grades its computations by multiple choice and never grades the hand work the standards also ask for: graphing equations and points, and creating a scale drawing. It claims no other Indiana mathematics standard; Surveying: How Land Gets Measured claims only the Common Core HSN-Q.A.3 reporting judgment, which this file does not adopt for Indiana, so it is not shown here; the rest of this catalog does no mathematics instruction an Indiana standard names.",
     },
     {
       heading: "Science — almost nothing.",

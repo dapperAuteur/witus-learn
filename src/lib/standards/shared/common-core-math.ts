@@ -46,6 +46,13 @@
 // drawing at another scale) is practiced but not graded, so every standard whose wording asks for
 // that production is mapped PARTIAL with the gap stated: 4.MD.C.6, 5.G.A.2 and 7.G.A.1. The grade 4,
 // 5, 7 and 8 texts below were transcribed from the CCSS PDF on 2026-10-14.
+//
+// Surveying: How Land Gets Measured (TOOLS-03, 2026-10-14) also has learners compute but takes the
+// narrower line: its claim here is HSN-Q.A.3's reporting judgment only. HSG.SRT.C.8 (right
+// triangles in applied problems) and HSG.GPE.B.7 (perimeters and areas from coordinates), which its
+// lessons 8, 15 and 16 touch, are not claimed, because the platform cannot yet grade the number a
+// learner produces; revisit that beside the two courses above, which claim computation graded by
+// multiple choice.
 
 import type { SharedFramework } from "../types";
 
@@ -126,9 +133,9 @@ export const COMMON_CORE_MATH: SharedFramework = {
     {
       code: "CCSS.Math.Content.HSN-Q.A.3",
       text: "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities.",
-      claimIds: ["catalog.accuracy-and-provenance", "catalog.honest-measurement-reporting", "catalog.slide-rule-figures-warranted", "catalog.grid-reference-precision"],
+      claimIds: ["catalog.accuracy-and-provenance", "catalog.honest-measurement-reporting", "catalog.slide-rule-figures-warranted", "catalog.grid-reference-precision", "catalog.surveying-measurement-accuracy"],
       coverage: "full",
-      note: "A judgment rather than a computation, which is why a course that grades no arithmetic can claim it honestly. In How to Read a Number, lesson 8 separates a census from a sample estimate from a projection and refuses to quote a revisable figure without its release, and lesson 9 establishes that a stated margin of error is a lower bound on uncertainty. Intro to Citizen Science lesson 9 makes it a rule the learner applies to their own data: a derived number cannot be more precise than its roughest input. The Slide Rule lesson 9 teaches it with a physical limit: a rule good to about one part in a thousand may be used where three significant figures are warranted, and Cullimore's 1920 worked case writes a volume as 6900 because one of its three measurements was taken only to the nearest tenth. Map and Compass lessons 12 and 34 apply it to position: a grid reference's digits are a claim about how well you measured, a pencil line 0.5 mm wide is 12 m at 1:24,000, and a phone fix good to about 4.9 m (GPS.gov) supports an eight-digit reference, not a ten-digit one.",
+      note: "A judgment rather than a computation, which is why a course that grades no arithmetic can claim it honestly. In How to Read a Number, lesson 8 separates a census from a sample estimate from a projection and refuses to quote a revisable figure without its release, and lesson 9 establishes that a stated margin of error is a lower bound on uncertainty. Intro to Citizen Science lesson 9 makes it a rule the learner applies to their own data: a derived number cannot be more precise than its roughest input. The Slide Rule lesson 9 teaches it with a physical limit: a rule good to about one part in a thousand may be used where three significant figures are warranted, and Cullimore's 1920 worked case writes a volume as 6900 because one of its three measurements was taken only to the nearest tenth. Map and Compass lessons 12 and 34 apply it to position: a grid reference's digits are a claim about how well you measured, a pencil line 0.5 mm wide is 12 m at 1:24,000, and a phone fix good to about 4.9 m (GPS.gov) supports an eight-digit reference, not a ten-digit one. Surveying: How Land Gets Measured applies it to physical measurement by hand: lesson 7 reports a paced line from the walker's own calibration spread and a chained line from the chain's stated 1 in 500, lesson 13 lets a level loop's misclosure decide how many decimals an elevation difference earns, and lesson 15 carries two lengths' uncertainty into an area. The course has learners compute, but the graded check here is the reporting judgment, not the arithmetic.",
     },
     // ── Grade 4 · Measurement and Data (Geometric measurement: understand concepts of angle and measure angles)
     {
