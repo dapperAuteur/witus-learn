@@ -1207,7 +1207,7 @@ Multiply each D.M.D. by its latitude, add the north products, subtract the south
 - A tracing point, moved along the outline.
 - A graduated wheel with a vernier beside it, and "a small disk D which records the number of full revolutions of the wheel." "The result of reading the disk, the wheel, and its vernier will usually give four figures."
 
-The instrument "rests then on three points, the anchor, the tracing point, and the periphery of the wheel." As the point goes round the outline "the wheel drags along, sometimes slipping and sometimes rolling," and the difference between the readings at the start and the end "represents the area of the figure." Why that works is a proof in calculus, which Breed and Hosmer print from Édouard Collignon's *Cours de Mécanique*; you do not need it to use the instrument.
+The instrument "rests then on three points, the anchor, the tracing point, and the periphery of the wheel." As the point goes round the outline "the wheel drags along, sometimes slipping and sometimes rolling," and the difference between the readings at the start and the end "represents the area of the figure." Why that works is a proof in calculus, which Breed and Hosmer print from Edouard Collignon's *Cours de Mécanique*; you do not need it to use the instrument.
 
 **Using it** (sec. 370).
 1. Set the anchor "at some convenient position on the drawing outside of the area to be measured."
