@@ -468,6 +468,58 @@ That is **706**: seven hundreds (the five-bead and two one-beads), zero tens (a 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2: Adding and subtracting
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "adding-and-the-five-complement",
+      title: "5 · Adding without carrying, and the five-complement",
+      section: "2 · Adding and subtracting",
+      recallContent: [
+        {
+          prompt: "Why does lesson 4 say Knott's 928 × 4173 needs about eleven rods?",
+          answer: "Three rods for 928, a gap, four for 4173, and at least three empty rods to the right of the multiplicand.",
+        },
+        {
+          prompt: "What did the 1959 Smithsonian donor's experience teach about bead size?",
+          answer: "Check that one fingertip moves one bead: his beads were too small for his seventy-year-old fingers, and he went back to logarithm tables.",
+        },
+      ],
+      body: `${P("BAM working 2 + 2, 4 + 3, 1 + 4 and 342 + 213 on camera, saying each move aloud")}
+
+**Adding is setting, on top.** Knott calls addition and subtraction "self-evident," and Smith and Mikami show why: "To add two numbers we have only to set down the first ... and then set down the second upon it." You never write the first number down or hold it in your head. It is already on the beads, and the second number is added rod by rod, each digit to its own place.
+
+**When the beads are there, just push them.** Smith and Mikami's first example: "to add 2 and 2, we put 2 balls at the top of the column and then 2 more, making 4." On a cleared ones rod, push up two one-beads, then two more. Most additions on a single rod are this simple: the beads you need are sitting below the beam waiting.
+
+**Rod by rod, left to right.** Add 1,231 and 3,415. Set 1,231. Then go along the rods from the left: thousands, push up 3 (1 + 3 = 4); hundreds, push up 4 (2 + 4 = 6); tens, push up 1 (3 + 1 = 4); ones, the rod shows 1 and you need 5 more, so bring the five-bead down (1 + 5 = 6). The soroban reads **4,646**. No rod ever needed more beads than it had, so nothing had to change on its neighbor.
+
+**When the beads are not there: the five-complement.** Smith and Mikami's next example is 4 and 3. Set 4: all four one-beads are up. Now there is no one-bead left to push. On the soroban taught here the move is: bring the five-bead down, which adds 5, and push two one-beads away, which takes off 2. Five minus two is three, so you have added 3. The rod shows the five-bead and two one-beads: **7**. Smith and Mikami describe the same result on their older five-bead soroban, "leaving the five-ball and 2 unit balls."
+
+**The pairs that make five.** The number you take away is the one that makes 5 with the number you are adding. This course calls it the **five-complement**:
+
+| To add | Bring down | Take away | Because |
+|---|---|---|---|
+| 1 | the five-bead | 4 one-beads | 5 - 4 = 1 |
+| 2 | the five-bead | 3 one-beads | 5 - 3 = 2 |
+| 3 | the five-bead | 2 one-beads | 5 - 2 = 3 |
+| 4 | the five-bead | 1 one-bead | 5 - 1 = 4 |
+
+Use it only when the five-bead is up (away from the beam) and there are not enough one-beads below to push. Try 1 + 4: the rod shows 1, three beads below, and you need four. Bring down the five-bead and take away one: **5**. And 3 + 4: bring down the five-bead, take away one, and the rod shows the five-bead and two one-beads, **7**.
+
+**A whole number with no carrying.** Add 342 and 213. Set 342. Hundreds: the rod shows 3 and you need 2 more, but only one bead is below; bring down the five-bead and take away three (the complement of 2): the rod shows **5**. Tens: the rod shows 4 and you need 1, with no bead below; bring down the five-bead and take away four: **5**. Ones: the rod shows 2 and you need 3, with two beads below; bring down the five-bead and take away two: **5**. The answer is **555**, and every rod stayed under ten, so no neighbor was touched.
+
+**Why it works, in one line.** The five-bead stands for five one-beads that the rod has no room for. Adding five and taking away the complement is just adding the number in two pieces, and the rod's total is the same either way.
+
+**What comes next.** When a rod would go past 9, the five-bead is not enough; you need the rod to its left. That is the ten-complement, the move Knott built his whole explanation on, and it is lesson 6.
+
+:::reveal The ones rod shows 4. How do you add 3? ||| Bring the five-bead down (add 5) and push two one-beads away (take off 2). The rod shows the five-bead and two one-beads: 7.
+
+:::reveal Why is 342 + 213 = 555 done without touching any neighboring rod? ||| Every rod's sum stays at 9 or under (each is exactly 5), so each digit is added on its own rod with the five-complement where needed.
+
+## Sources
+- ${KNOTT} Locator: p. 49 (PDF p. 72), "The operations of addition and subtraction are self-evident." ${TA}
+- ${SMITH_MIKAMI} Locator: p. 36 (PDF p. 48), "set down the first ... and then set down the second upon it", 2 and 2, 2 and 3, and the start of 4 and 3; p. 37 (PDF p. 49), the end of 4 and 3, "leaving the five-ball and 2 unit balls". ${TA}`,
+    },
     // @@END_LESSONS@@
   ],
 };
