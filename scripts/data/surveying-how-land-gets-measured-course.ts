@@ -38,8 +38,8 @@ import type { AuthoredCourse } from "./authored-course";
 //    atreatiseonland00gillgoog, Gillespie 1855) go to BAM's private library and are never linked here.
 //    Page numbers were checked in the non-Google scans: the passages cited fall on the same printed
 //    pages the brief recorded from the Google copies.
-//  - Tier B, link only: Dracup's NGS history (author's federal-work status unsettled), the Boone County
-//    surveyor's page, and Starkey (1956).
+//  - Tier B, link only: Dracup's NGS history (author's federal-work status unsettled) and the Boone
+//    County surveyor's page. (Starkey's road-pattern paper is used in TOOLS-04, not here.)
 //  - Breed and Hosmer's sample deed names private people; it is not used in this course.
 //  - FIGURES: none embedded yet. Breed and Hosmer's Fig. 2 (chaining), Fig. 4 (reading bearings),
 //    Fig. 43 (differential leveling) and Fig. 196 (the polar planimeter) are cited by number and page.
@@ -86,8 +86,6 @@ const NOAA_MARKS =
   "National Oceanic and Atmospheric Administration. (n.d.). *Survey mark hunting* [Classroom activity, Discover Your World With NOAA, pp. 93-95]. https://www.nauticalcharts.noaa.gov/learn/docs/educational-activities/survey-mark-hunting.pdf";
 const BOONE =
   "Boone County, Indiana, Surveyor's Office. (n.d.). *Surveyor's responsibilities*. https://boonecounty.in.gov/offices/surveyor/surveyor-responsibilities";
-const STARKEY =
-  "Starkey, O. P. (1957). Road patterns of Indiana. *Proceedings of the Indiana Academy of Science, 66*, 192-194 (volume dated 1956). https://journals.indianapolis.iu.edu/index.php/ias/article/download/6447/6472/12578";
 
 const TIER_A = "Tier A, free to host (U.S. federal work).";
 const TIER_A_PD = "Tier A, free to host (published before 1929; non-Google scan).";
