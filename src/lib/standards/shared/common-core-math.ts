@@ -23,22 +23,29 @@
 //
 // WHAT IS DELIBERATELY NOT CLAIMED, and why it matters more than what is:
 // S-ID.1, .4, .6 and .8, and S-IC.2, .4 and .5, all require the learner to PRODUCE something —
-// a plot, a fit, a correlation coefficient, a simulation, a margin of error. Two of the courses
-// claiming here (how-to-read-a-number, intro-to-citizen-science) are reading-and-judgment courses:
-// neither asks a learner to compute, because the platform grades typed answers by string equality
-// and could not mark a computed number fairly (see src/lib/exercise.ts and
+// a plot, a fit, a correlation coefficient, a simulation, a margin of error. The two courses that
+// first claimed here (how-to-read-a-number, intro-to-citizen-science) are reading-and-judgment
+// courses: neither asks a learner to compute, because the platform grades typed answers by string
+// equality and could not mark a computed number fairly (see src/lib/exercise.ts and
 // scripts/check-assessment-fit.ts). Claiming a produce-it standard for an interpret-it course would
 // be exactly the widening src/lib/standards/index.ts forbids. Those standards become claimable when
 // the numeric-grading work lands, and not before.
 //
-// THE THIRD COURSE IS DIFFERENT, AND THE BOUNDARY MOVES ONLY AS FAR AS IT DOES. The Slide Rule
-// (2026-10-14) does teach calculation: estimating with powers of ten, multiplying in scientific
-// notation, logarithms and their inverse. It grades that work with multiple choice whose options
-// differ by a power of ten or by far more than a reading error, never with a typed number. So it
-// claims 8.EE.A.3 (full: the standard is estimation and comparison, which the options test
-// directly), 8.EE.A.4 and HSF-BF.B.5 (partial, each saying what is missing), HSN-Q.A.3 (full, beside
-// the two reading courses) and the practice standard MP5 (partial). It does NOT claim 8.EE.A.1,
-// HSF-LE.A.4 or anything that asks a learner to solve an equation, because it never does.
+// COMPUTING IS NOW CLAIMED, BY MULTIPLE CHOICE (2026-10-14). Two courses here ask the learner to
+// compute, and each grades it with multiple choice whose options are the candidate results, which
+// string-equality grading handles fairly; the boundary moves only as far as they do.
+// The Slide Rule teaches calculation: estimating with powers of ten, multiplying in scientific
+// notation, logarithms and their inverse, with options that differ by a power of ten or by far more
+// than a reading error. So it claims 8.EE.A.3 (full: the standard is estimation and comparison,
+// which the options test directly), 8.EE.A.4 and HSF-BF.B.5 (partial, each saying what is missing),
+// HSN-Q.A.3 (full, beside the two reading courses) and the practice standard MP5 (partial). It does
+// NOT claim 8.EE.A.1, HSF-LE.A.4 or anything that asks a learner to solve an equation.
+// Map and Compass computes map scale to ground distance and area, angles added and subtracted on a
+// declination diagram, and coordinates interpreted on a first-quadrant grid. What it asks a learner
+// to DO with a protractor, a pencil or a map (measure an angle, sketch it, plot a point, reproduce a
+// drawing at another scale) is practiced but not graded, so every standard whose wording asks for
+// that production is mapped PARTIAL with the gap stated: 4.MD.C.6, 5.G.A.2 and 7.G.A.1. The grade 4,
+// 5, 7 and 8 texts below were transcribed from the CCSS PDF on 2026-10-14.
 
 import type { SharedFramework } from "../types";
 
@@ -47,7 +54,7 @@ export const COMMON_CORE_MATH: SharedFramework = {
   subject: "Mathematics",
   name: "Common Core State Standards for Mathematics",
   publisher: "Common Core State Standards Initiative",
-  version: "Grade 8: Expressions and Equations; High School: Number and Quantity, Functions, Statistics and Probability; Standards for Mathematical Practice",
+  version: "Grade 4: Measurement and Data; Grade 5: Geometry; Grade 7: Geometry; Grade 8: Expressions and Equations; High School: Number and Quantity, Functions, Statistics and Probability; Standards for Mathematical Practice",
   sourceUrl: "https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf",
   fetchedOn: "2026-10-14",
   standards: [
@@ -119,9 +126,40 @@ export const COMMON_CORE_MATH: SharedFramework = {
     {
       code: "CCSS.Math.Content.HSN-Q.A.3",
       text: "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities.",
-      claimIds: ["catalog.accuracy-and-provenance", "catalog.honest-measurement-reporting", "catalog.slide-rule-figures-warranted"],
+      claimIds: ["catalog.accuracy-and-provenance", "catalog.honest-measurement-reporting", "catalog.slide-rule-figures-warranted", "catalog.grid-reference-precision"],
       coverage: "full",
-      note: "A judgment rather than a computation, which is why a course that grades no arithmetic can claim it honestly. In How to Read a Number, lesson 8 separates a census from a sample estimate from a projection and refuses to quote a revisable figure without its release, and lesson 9 establishes that a stated margin of error is a lower bound on uncertainty. Intro to Citizen Science lesson 9 makes it a rule the learner applies to their own data: a derived number cannot be more precise than its roughest input. The Slide Rule lesson 9 teaches it with a physical limit: a rule good to about one part in a thousand may be used where three significant figures are warranted, and Cullimore's 1920 worked case writes a volume as 6900 because one of its three measurements was taken only to the nearest tenth.",
+      note: "A judgment rather than a computation, which is why a course that grades no arithmetic can claim it honestly. In How to Read a Number, lesson 8 separates a census from a sample estimate from a projection and refuses to quote a revisable figure without its release, and lesson 9 establishes that a stated margin of error is a lower bound on uncertainty. Intro to Citizen Science lesson 9 makes it a rule the learner applies to their own data: a derived number cannot be more precise than its roughest input. The Slide Rule lesson 9 teaches it with a physical limit: a rule good to about one part in a thousand may be used where three significant figures are warranted, and Cullimore's 1920 worked case writes a volume as 6900 because one of its three measurements was taken only to the nearest tenth. Map and Compass lessons 12 and 34 apply it to position: a grid reference's digits are a claim about how well you measured, a pencil line 0.5 mm wide is 12 m at 1:24,000, and a phone fix good to about 4.9 m (GPS.gov) supports an eight-digit reference, not a ten-digit one.",
+    },
+    // ── Grade 4 · Measurement and Data (Geometric measurement: understand concepts of angle and measure angles)
+    {
+      code: "CCSS.Math.Content.4.MD.C.6",
+      text: "Measure angles in whole-number degrees using a protractor. Sketch angles of specified measure.",
+      claimIds: ["catalog.measure-and-plot-bearings"],
+      coverage: "partial",
+      note: "PARTIAL: taught, practiced, not graded. Map and Compass lesson 21 measures map bearings with a protractor to the nearest degree and plots a bearing from a known point; lesson 18 sketches a 60° bearing clockwise from north before taking one. The measuring and sketching are hands-on (and shown in BAM's demonstrations), but the quizzes check only the method and the readings by multiple choice, so the course cannot certify that a student measured or sketched accurately.",
+    },
+    {
+      code: "CCSS.Math.Content.4.MD.C.7",
+      text: "Recognize angle measure as additive. When an angle is decomposed into non-overlapping parts, the angle measure of the whole is the sum of the angle measures of the parts. Solve addition and subtraction problems to find unknown angles on a diagram in real world and mathematical problems, e.g., by using an equation with a symbol for the unknown angle measure.",
+      claimIds: ["catalog.declination-angle-addition"],
+      coverage: "full",
+      note: "Map and Compass lesson 16 is this standard on a real diagram: the grid-magnetic angle on the Hindustan quad is the sum of its two non-overlapping parts, 4°28' + 0°21' = 4°49', worked for three more quads and then solved for an unknown declination d in 4°49' = d + 0°21'; lessons 17 to 19 add and subtract the declination, 180° and 90° to convert and turn bearings. Each is graded by multiple choice on the computed angle.",
+    },
+    // ── Grade 5 · Geometry (Graph points on the coordinate plane to solve real-world and mathematical problems)
+    {
+      code: "CCSS.Math.Content.5.G.A.2",
+      text: "Represent real world and mathematical problems by graphing points in the first quadrant of the coordinate plane, and interpret coordinate values of points in the context of the situation.",
+      claimIds: ["catalog.utm-first-quadrant-coordinates"],
+      coverage: "partial",
+      note: "PARTIAL: the interpreting half is taught and graded in full, the graphing half is practiced but not graded. Map and Compass lesson 11 presents the UTM grid as a first-quadrant plane (easting as x, northing as y, both positive because of the false origin) and interprets coordinates on the ground: 546,000 m E is 46,000 m east of the central meridian, and two points differ by 1,300 m east and 400 m north. Lesson 34 plots a GPS fix on the map by finding its grid square and measuring in from the corner; that plotting is done on paper and assessed only through multiple choice on its arithmetic.",
+    },
+    // ── Grade 7 · Geometry (Draw, construct, and describe geometrical figures and describe the relationships between them)
+    {
+      code: "CCSS.Math.Content.7.G.A.1",
+      text: "Solve problems involving scale drawings of geometric figures, including computing actual lengths and areas from a scale drawing and reproducing a scale drawing at a different scale.",
+      claimIds: ["catalog.map-scale-actual-distance"],
+      coverage: "partial",
+      note: "PARTIAL: actual lengths and areas from a scale drawing are taught and graded; reproducing a scale drawing at a different scale is not. Map and Compass lesson 7 treats a topographic map as the scale drawing: 3.5 in at 1:24,000 is 7,000 ft, 6.2 cm is 1,488 m, 1,200 m on the ground is 5 cm on the map, a 1,000 m grid square is 1 km² (about 247 acres), and a map printed at 90 percent is no longer 1:24,000. Lessons 8 and 34 apply the same arithmetic to slope and to plotting. The course discusses a map printed at another size but never asks the student to redraw one.",
     },
     // ── Grade 8: Expressions and Equations ───────────────────────────────────────────────────
     {

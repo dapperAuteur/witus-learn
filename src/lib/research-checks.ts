@@ -7928,6 +7928,131 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["The article's printed title and page range, and a short quote on the slide rule with its page, from the issue itself"],
     where: ["Hewlett-Packard Journal, June 1972 (HP Computer Museum archive, hparchive.com)", "The NMAH HP-35 record's reference list (already read)"],
   },
+
+  // ── Map and Compass: Finding Your Way on Land (map-and-compass), TOOLS-01 ──────────────────────
+  // Filed 2026-10-14 when the course was written. Brief and handoff:
+  // plans/future-courses/science-and-math/tool-usage/.
+  {
+    key: "mc-declination-2026-ncei",
+    title: "Today's declination at the four Indiana quads, on NCEI's calculator",
+    course: "map-and-compass",
+    lesson: "three-norths-and-declination",
+    quote: "That figure is an estimate the course has filed to be confirmed against NCEI's online calculator",
+    severity: "high",
+    question:
+      "What declination does NCEI's online calculator (WMM2025) give for the center of the Hindustan, Indianapolis East, Belmont and Elkinsville quads on 14 October 2026?",
+    claim:
+      "Lesson 16 says the course's own WMM2025 calculation gives about 4°47' W at the center of the Hindustan sheet on 14 October 2026 (the sheet prints 4°28' W for 2019); lesson 17 uses the 19' difference in a worked example. The handoff's other estimates: Belmont about 4°51' W, Elkinsville about 4°51' W, Indianapolis East about 5°06' W.",
+    stakes:
+      "A walker who sets the wrong declination walks off line by about 920 feet in ten miles per degree. The lessons tell learners to use the calculator, but the worked figures should match it.",
+    needs: [
+      "The calculator's declination for each quad's center (latitude and longitude stated) on 2026-10-14, with the model named",
+      "A screenshot or the result text, so the lesson can cite it",
+    ],
+    where: [
+      "NCEI geomagnetic calculators: https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml",
+      "Each quad's corner coordinates in its margin (US Topo PDFs, 2022 editions)",
+    ],
+  },
+  {
+    key: "mc-dnr-day-visitor-hours",
+    title: "Indiana DNR hours for day visitors on state forest land",
+    course: "map-and-compass",
+    lesson: "where-to-practice-near-indianapolis",
+    quote: "could not be read for this lesson, so ask the forest office before any night walk that is not a camping trip",
+    severity: "medium",
+    question:
+      "Under 312 IAC 8-2 (and any Morgan-Monroe or Yellowwood posting), may a day visitor be on state forest land after dark without camping, and what are the hours?",
+    claim:
+      "Lesson 3 says Morgan-Monroe's page offers registered backcountry camping as the clear way to be there after dark, gives no day-visitor hours, and that the DNR rule on hours could not be read; lesson 30 repeats the camping route.",
+    stakes:
+      "A learner planning night practice on DNR land could break a rule, or be told the forest is closed when it is not.",
+    needs: ["The text of the hours provision in 312 IAC 8-2 with its section number", "Any property-specific posting for Morgan-Monroe and Yellowwood"],
+    where: ["Indiana Administrative Code, 312 IAC 8-2 (iar.iga.in.gov)", "Morgan-Monroe State Forest office, 765-342-4026", "DNR State Forest Property Regulations page"],
+  },
+  {
+    key: "mc-yellowwood-dispersed-camping",
+    title: "Yellowwood: dispersed or designated camping along the Tecumseh Trail?",
+    course: "map-and-compass",
+    lesson: "where-to-practice-near-indianapolis",
+    quote: "Ask the forest office which rule governs before you plan a night there",
+    severity: "medium",
+    question:
+      "Along the Tecumseh Trail at Yellowwood State Forest, is camping dispersed (at least a quarter mile from roads and 100 feet from the trail) or limited to designated areas?",
+    claim:
+      "Lesson 3 reports that the forest's web page allows dispersed camping a quarter mile from roads and 100 feet from the trail, while the property map (© 9/2021) says \"Camping in designated areas is allowed along this trail.\"",
+    stakes: "A learner could camp where it is not allowed, or skip a site where it is.",
+    needs: ["The forest office's answer on which rule governs", "Whether the property map is being revised"],
+    where: ["Yellowwood State Forest office", "https://www.in.gov/dnr/forestry/properties/yellowwood-state-forest/"],
+  },
+  {
+    key: "mc-pathfinder-reopening",
+    title: "When does Morgan-Monroe's Pathfinder orienteering course reopen?",
+    course: "map-and-compass",
+    lesson: "where-to-practice-near-indianapolis",
+    quote: "but the forest's page lists it as closed after the EF-2 tornado of June 18, 2026, with no reopening date given.",
+    severity: "low",
+    question: "Has the Pathfinder Trail Orienteering Course at Morgan-Monroe State Forest reopened, or been given a reopening date, since the June 18, 2026 tornado?",
+    claim: "Lesson 3 says the course is listed as closed after the EF-2 tornado, with no reopening date given.",
+    stakes: "Low: learners are pointed away from a closed course; the lesson should say so when it reopens.",
+    needs: ["The forest's current status for the Pathfinder Trail, with the date it was read"],
+    where: ["https://www.in.gov/dnr/forestry/properties/morgan-monroe-state-forest/", "Morgan-Monroe State Forest office"],
+  },
+  {
+    key: "mc-orienteering-body-indiana",
+    title: "Today's U.S. orienteering body and any Indiana clubs",
+    course: "map-and-compass",
+    lesson: "let-the-land-help",
+    quote: "That is a 2001 description; check the current body and its clubs before you go looking for an event.",
+    severity: "low",
+    question: "What is the current national orienteering body in the United States, which clubs serve Indiana, and what map scale and contour interval do their maps use today?",
+    claim:
+      "Lesson 24 reports the 2001 Army manual's description (United States Orienteering Federation, at least 70 clubs, 1:15,000 maps with a 5-meter interval) and marks it as dated.",
+    stakes: "Low: learners looking for an event might chase an out-of-date name.",
+    needs: ["The national body's own page", "Any Indiana club's page", "Current map specifications from the body or the international federation"],
+    where: ["The national orienteering body's website", "Indiana club websites", "International Orienteering Federation map specifications"],
+  },
+  {
+    key: "mc-nwcg-pms475-revision",
+    title: "Does NWCG's revision of Basic Land Navigation change anything the course uses?",
+    course: "map-and-compass",
+    severity: "low",
+    question:
+      "NWCG says all its publications are under revision. Has a revised PMS 475 been issued, and does it change the pace definition, the declination advice, the GPS chapter or any page this course cites?",
+    claim:
+      "The course cites PMS 475 (May 2016) by page throughout, read from the Wayback copy of 2024-01-27 because nwcg.gov did not resolve.",
+    stakes: "Page locators and dated figures (the 2016 satellite count, Selective Availability) could drift from the current edition.",
+    needs: ["The current edition's date", "Any change to the pages cited (pp. ix, 12, 14, 34-38, 45, 66-71, 77, 81-91, 97-103, 111-134, 167-171)"],
+    where: ["https://www.nwcg.gov/publications/pms475", "The archived 2016 PDF for comparison"],
+  },
+  {
+    key: "mc-california-ccssm-grade-texts",
+    title: "Are 4.MD.6, 4.MD.7, 5.G.2 and 7.G.1 word for word in California's math standards?",
+    course: "map-and-compass",
+    severity: "medium",
+    question:
+      "In the California Common Core State Standards for Mathematics (Modified January 2013 Publication Version), do 4.MD.6, 4.MD.7, 5.G.2 and 7.G.1 match the CCSS text exactly, with no California (\"CA\") additions?",
+    claim:
+      "src/lib/standards/data/ca.ts shows these four codes for California through the shared Common Core math file and says the CDE's modified publication has not yet been compared.",
+    stakes: "A teacher reads the standard text on the course page; if California's wording differs, the page shows the wrong words.",
+    needs: ["The four standards' text from the CDE document, with page numbers"],
+    where: ["California Department of Education, Common Core State Standards for Mathematics (CDE PDF; use an archived copy if cde.ca.gov refuses automated reading)"],
+  },
+  {
+    key: "mc-read-alongside-book-details",
+    title: "Edition and publisher details for two of BAM's books",
+    course: "map-and-compass",
+    lesson: "capstone-your-own-route",
+    quote: "Check the edition and year of the copy you find.",
+    severity: "low",
+    question:
+      "From the title pages of BAM's own copies: what edition, year and publisher does Kals's Land Navigation Handbook carry, and who published the 2022 Official U.S. Army Map Reading and Land Navigation Handbook?",
+    claim:
+      "Lesson 36's read-alongside list gives Kals without a year or edition and the 2022 Army handbook without a publisher, because only the files' metadata was read (the books are Tier C).",
+    stakes: "Low: an incomplete APA entry, and a learner may find a different edition.",
+    needs: ["Kals: edition, year, publisher as printed", "Army handbook: publisher as printed"],
+    where: ["BAM's copies (title and copyright pages only)"],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

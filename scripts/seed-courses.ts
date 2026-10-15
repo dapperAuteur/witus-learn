@@ -60,6 +60,7 @@ import { MANURE_AND_COMPOST_COURSE } from "./data/manure-and-compost-course";
 import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "./data/stage-and-broadcast-rigging-course";
 import { SOUND_CRAFT_COURSE } from "./data/sound-craft-course";
 import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
+import { MAP_AND_COMPASS_COURSE } from "./data/map-and-compass-course";
 import { RAISING_ANIMALS_FOR_YARN_COURSE } from "./data/raising-animals-for-yarn-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
@@ -3376,6 +3377,33 @@ async function main() {
     navigationMode: "linear",
     publishHoldReason:
       "Held until a qualified reviewer (for example a licensed electrician or a stage lighting professional) has read every lesson marked QR. Research tier 2: electrical work, hot lamps and fire.",
+  });
+
+  // Tools That Think (TOOLS), BAM's series of analog tools that work without electricity (decisions of
+  // 2026-10-14: one cross-category series, each course under its own category). TOOLS-01 is map and
+  // compass; 02 the slide rule and 03/04 surveying are on their own branches. Brief (approved
+  // 2026-10-14): plans/future-courses/science-and-math/tool-usage/2026-10-14-map-and-compass-brief.md.
+  // Public and free; held until a NAMED qualified reviewer has read every lesson marked QR and BAM has
+  // recorded the demonstrations marked P. Research tier 2: a wrong bearing or declination sign can
+  // strand a walker. The brief also offered Science & Math as an additional category; the
+  // registration plan was Survival + Rivers & Expeditions unless BAM adds it.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "map-and-compass",
+    course: MAP_AND_COMPASS_COURSE,
+    category: "Survival",
+    additionalCategories: ["Rivers & Expeditions"],
+    seriesSlug: "tools-that-think",
+    seriesTitle: "Tools That Think",
+    seriesOrder: 1,
+    seriesCode: "TOOLS",
+    seriesPosition: "01",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    publishHoldReason:
+      "Held until a qualified reviewer, still to be named (a search-and-rescue member, or a wilderness or land-navigation instructor), has read every lesson marked QR, and until BAM has recorded the demonstrations marked P (his compasses, his quad, his route). Research tier 2: a wrong bearing or declination sign can strand a walker.",
   });
 
   // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared
