@@ -2157,7 +2157,7 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 
 **Three satellites or four.** "A GPS receiver needs only three satellites to plot a rough, 2D position, which will not be very accurate. Ideally, four or more satellites are needed to plot a 3D position, which is much more accurate." Lesson 33 shows what goes wrong when a receiver quietly falls back to 2D.
 
-**The constellation, with its dates.** GPS.gov: "The United States is committed to maintaining the availability of at least 24 operational GPS satellites, 95% of the time", and "the U.S. Space Force has been flying 31 operational GPS satellites for well over a decade." The satellites "fly in medium Earth orbit (MEO) at an altitude of approximately 20,200 km (12,550 miles). Each satellite circles the Earth twice a day," in "six equally-spaced orbital planes" arranged so that "users can view at least four satellites from virtually any point on the planet." The page's own count is dated: "As of July 3, 2023, there were a total of 31 operational satellites", and it sends readers to the Coast Guard's NAVCEN site for current status.
+**The constellation, with its dates.** GPS.gov: "The United States is committed to maintaining the availability of at least 24 operational GPS satellites, 95% of the time", and "the U.S. Space Force has been flying 31 operational GPS satellites for well over a decade." The satellites "fly in medium Earth orbit (MEO) at an altitude of approximately 20,200 km (12,550 miles). Each satellite circles the Earth twice a day," in "six equally-spaced orbital planes" arranged so that "users can view at least four satellites from virtually any point on the planet." The page's own count is dated: "As of July 3, 2023, there were a total of 31 operational satellites", and it sends readers to the NAVCEN website for current status.
 
 **A number that went stale.** The 2016 workbook says the space segment "consists of 29 satellites circling the earth every 12 hours at 12,000 miles in altitude." It also says Selective Availability, a deliberate blurring of civilian signals, "can be reactivated without notice." GPS.gov tells the later story: "In May 2000, at the direction of President Bill Clinton, the U.S government discontinued its use of Selective Availability", in September 2007 the government decided to buy the GPS III satellites "without the SA feature", and "The United States has no intent to ever use Selective Availability again." Both are reminders from lesson 1: read the date, then the newer source.
 
@@ -2172,6 +2172,50 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 - ${NWCG_475} Locator: p. 97, chapter 5 introduction; pp. 98 to 100, "How the Global Positioning System Works" and "How GPS Determines a Position"; pp. 101 and 102, clock errors and Selective Availability.
 - ${GPS_SPACE} Locator: the opening paragraph, "Constellation Arrangement", and the July 3, 2023 count.
 - ${GPS_SA} Locator: the opening paragraph.`,
+    },
+    {
+      slug: "where-gps-fails",
+      title: "33 · Where GPS fails",
+      section: "7 · What GPS adds, and where it fails",
+      recallContent: [
+        {
+          prompt: "Why do GPS satellites carry atomic clocks?",
+          answer: "Distance is travel time times the speed of light, so a millionth of a second of clock error is about 300 meters of distance.",
+        },
+        {
+          prompt: "How does the 2016 workbook's description of the GPS constellation compare with GPS.gov's?",
+          answer: "The workbook says 29 satellites at 12,000 miles; GPS.gov counts 31 operational (as of July 3, 2023) at about 12,550 miles. Read the date, then the newer source.",
+        },
+      ],
+      body: `${QR("a search-and-rescue member or a wilderness or land-navigation instructor, to check the failure list and the advice on carrying a phone or receiver as a navigator's backup")}
+
+**"It depends."** That is GPS.gov's whole first answer to "How Accurate is GPS?" What you receive "depends on additional factors, including satellite geometry, signal blockage, atmospheric conditions, and receiver design features/quality." Its benchmark: "GPS-enabled smartphones are typically accurate to within a 4.9 m (16 ft.) radius under open sky", and "their accuracy worsens near buildings, bridges, and trees." Survey equipment with "dual-frequency receivers and/or augmentation systems" can reach "a few centimeters", but that is not the phone in your pocket.
+
+**Common causes, from GPS.gov:** "Satellite signal blockage due to buildings, bridges, trees, etc.", "Indoor or underground use", and "Signals reflected off buildings or walls ('multipath')". Less common: "Radio interference or jamming", "Major solar storms", satellite maintenance, and badly designed devices.
+
+**The workbook's list, written for people in the woods.**
+- **You.** "User mistakes account for most GPS errors; and a GPS receiver has no way to identify and correct these mistakes." Its first example is "Inputting incorrect information into a GPS receiver, such as the datum". Lesson 34 deals with that one.
+- **A silent fall back to 2D.** "Unknowingly relying on a 2D position instead of a 3D position for determining position coordinates. This mistake can result in distance errors in excess of a mile."
+- **Blocked sky.** "The signal from the satellite may be blocked by buildings, terrain, electronic interference, and sometimes dense foliage. A GPS receiver needs a fairly clear view of the sky to operate." In a deep Brown County hollow under summer leaves, you have terrain and foliage at once.
+- **Your own body.** "Holding a GPS receiver close to the body can block some satellite signals and hinder accurate positioning."
+- **Multipath** off "vehicles, buildings, power lines, water and other interfering objects", which "is difficult to detect and sometimes impossible for the user to avoid".
+- **Geometry.** A fix is better when the satellites in view are spread across the sky and worse when they are "grouped close together".
+
+**The map in the device can be wrong too.** GPS.gov: "In many cases, a device's GPS hardware is working fine, but its mapping software is faulty", with "Incorrectly drawn maps" and "Missing roads" among its examples, and "The U.S. government cannot correct mapping errors in consumer devices." A correct fix on a wrong map is still a wrong answer.
+
+**The battery.** The most common failure needs no physics. The Park Service: "Pack an extra battery for your phone." The Deam Wilderness checklist lists a "power bank to keep phone charged" and says digital maps work "if you have signal and plenty of battery power. Worst case scenario, take a photo of the map at the trailhead." The workbook's own rule for incident crews: "Always have a compass and a map", and "Have extra batteries."
+
+**So: a backup, not a replacement.** The workbook opens its navigation chapter with the same advice this course started with: "Always have a compass and map when navigating, do not rely only on a GPS receiver." Use the receiver to check yourself, and keep the paper and the needle working while you do.
+
+:::reveal According to GPS.gov, how accurate is a smartphone under open sky, and what makes it worse? ||| Typically within a 4.9 m (16 ft.) radius; it worsens near buildings, bridges and trees.
+
+:::reveal What does the workbook say accounts for most GPS errors? ||| User mistakes, such as entering the wrong datum, which the receiver cannot detect or correct.
+
+## Sources
+- ${GPS_ACCURACY} Locator: "GPS Accuracy FAQs", "How Accurate is GPS?" and "Why Does GPS Sometimes Show Me in the Wrong Place?"
+- ${NWCG_475} Locator: pp. 100 and 101, "Sources of Errors"; p. 103, "Using a GPS Receiver"; p. 111, chapter 6 introduction.
+- ${NPS_TEN} Locator: "Navigation".
+- ${DEAM} Locator: "Pre-Trip Check List".`,
     },
   ],
 };
