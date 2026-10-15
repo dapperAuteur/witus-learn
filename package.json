@@ -59,6 +59,8 @@
     "reports:triage:prod": "tsx --env-file=.env.prod scripts/report-triage.ts",
     "research:list": "tsx --env-file=.env.local scripts/research-list.ts",
     "research:list:prod": "tsx --env-file=.env.prod scripts/research-list.ts",
+    "follow-ups:list": "tsx --env-file=.env.local scripts/follow-ups-list.ts",
+    "follow-ups:list:prod": "tsx --env-file=.env.prod scripts/follow-ups-list.ts",
     "reveal:audit": "tsx scripts/reveal-audit.ts",
     "reveal:convert": "tsx scripts/reveal-convert.ts",
     "seed:bundles": "tsx --env-file=.env.local scripts/seed-bundles.ts",

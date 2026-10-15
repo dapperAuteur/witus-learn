@@ -529,6 +529,38 @@ old one. No page lists corrections across courses. Pinned by
 `pnpm db:migrate:prod` (migration `0067_serious_karen_page`), then `pnpm seed:courses:prod` so the
 needs are filled and the markers leave the lesson text.
 
+## Launch to-do list and release follow-ups (`course_launch_todos`, `course_release_followups`)
+
+A course that is ready is not the same as a course that is launched: the blog post that announces it,
+the welcome video, the step to re-check once it is released. **Every course's `/teach` page carries a
+Launch to-do list, and the list comes up as a warning whenever someone moves the course toward live.**
+
+- **Two sources, one list.** Committed follow-ups in
+  [src/lib/release-followups.ts](src/lib/release-followups.ts), written by Claude for BAM's courses (a
+  blog post names its blog, slug and ledger number; a task names where its full steps live), and items
+  any editor adds on the page (`course_launch_todos`: a task, or a blog post with the blog's name and an
+  optional URL). Add a committed follow-up whenever a blog post is drafted about a course.
+- **When an item falls due is computed, never stored**, from the course row: `seeded` (in the catalog,
+  held or not), `scheduled` (visibility "scheduled", or live), `live` (public or members, published, no
+  hold, vetted or opened unvetted). A committed follow-up may wait on several courses (all, or any).
+- **The warning** (`LaunchTodoWarning`) appears before a settings save that schedules the course, opens
+  its visibility, publishes it or clears its hold (`isLaunchIntent` in
+  [src/lib/launch-todos.ts](src/lib/launch-todos.ts)), before **Release the review hold**, and before
+  **Mark this course vetted**. It lists the open items, split into "before launch" and "once live", and
+  never blocks: "Go ahead" proceeds.
+- **Who sees what.** The widget and the warning: everyone who edits the course (`canEditCourse`).
+  Committed follow-ups close owner-only (`POST /api/admin/follow-ups`); added items close or are removed
+  by any editor (`/api/courses/[id]/launch-todos`). **Closing requires a note** saying what was done.
+- **The owner's board**, `/admin/follow-ups` (and a "Release follow-ups due" tile on `/admin`): committed
+  follow-ups by due state, plus **courses being launched**, meaning scheduled or live with added items
+  still open, so BAM hears when a teacher schedules a course. A blog post listed in the blog's own JSON
+  Feed shows as published and pre-fills its URL (`src/lib/blog-feed.ts`, cached an hour, failure reads as
+  "could not check", never "not published").
+- **`pnpm follow-ups:list[:prod]`** prints every item with its due state and note, for Claude to read
+  back; delete a finished committed follow-up from the file.
+- **No inbox.** An item is a chore on one course: no recipient, no assignee, no reply, no read state, no
+  notification. Help: the `launch-to-do-list` article.
+
 ## State-standards finder (`/academic-standards`) and explorer (`/academic-standards/matrix`)
 
 A teacher, homeschooler, or administrator picks their **state** and sees which courses meet which

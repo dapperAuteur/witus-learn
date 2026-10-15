@@ -75,4 +75,13 @@ describe("adminStatTiles", () => {
     expect(allClear.find((t) => t.href === "/admin/reports")?.attention).toBe(false);
     expect(allClear.find((t) => t.href === "/admin/media")?.attention).toBe(false);
   });
+
+  it("shows release follow-ups due to the owner only, and flags them when any are due", () => {
+    expect(adminStatTiles(counts()).some((t) => t.href === "/admin/follow-ups")).toBe(false);
+    expect(adminStatTiles(counts({ followUpsDue: null })).some((t) => t.href === "/admin/follow-ups")).toBe(false);
+    const due = adminStatTiles(counts({ followUpsDue: 4 })).find((t) => t.href === "/admin/follow-ups");
+    expect(due?.value).toBe(4);
+    expect(due?.attention).toBe(true);
+    expect(adminStatTiles(counts({ followUpsDue: 0 })).find((t) => t.href === "/admin/follow-ups")?.attention).toBe(false);
+  });
 });

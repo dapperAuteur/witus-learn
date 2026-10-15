@@ -1015,6 +1015,50 @@ Lesson text, glossary, sources, and quick-recall prompts can be edited **in-app*
 \`pnpm reports:list\` (or \`/admin/reports\`) shows what learners filed via "Report a problem".`,
   },
   {
+    slug: "launch-to-do-list",
+    title: "The launch to-do list, and the warning before a course goes live",
+    category: "Courses",
+    keywords: ["launch", "to-do", "todo", "checklist", "schedule", "scheduled", "publish", "release", "blog", "marketing", "follow-up"],
+    body: `# The launch to-do list
+
+Every course has a **Launch to-do list** on its page at \`/teach/<course>\`. It holds what has to happen
+before and after the course goes live: record the welcome video, tell the department, publish the post
+about it on your blog. Everyone who edits the course sees the same list: its teacher, the school's admin
+and the platform owner.
+
+## Adding an item
+Under **Add to the list**, pick:
+- **Task** or **Blog post**. A blog post asks for the **blog's name** (so nobody has to guess where it
+  goes), and the post's or the blog's URL if you have it.
+- **When** it falls due: **Before it goes live** (from the moment the course is scheduled), **Once it is
+  live** (when learners can take it), or **Now**.
+
+## The warning
+Whenever someone signals that the course should go live, the open items appear as a warning first, so
+the real launch date can be planned around them. That happens when you:
+- save settings that **schedule** the course, make it **public** or **members**, **publish** it, or
+  **release its hold**;
+- press **Release the review hold**;
+- (platform owner) **mark the course vetted**.
+
+The warning never blocks you. **Go ahead** does exactly what you asked; **Not yet** goes back.
+
+## Closing an item
+**Mark done** asks what was done: a link to the live post, what changed, or why you are not doing it.
+An item cannot be closed without that note, because "done" with nothing written down hides whether it
+really happened. Items you added can also be removed.
+
+## Items added by Claude
+On the platform owner's own courses, some items are written in by Claude (for example the blog post
+that announces a course, or a step to re-check once it is released). They show "added by Claude", and
+only the platform owner closes them.
+
+## What the platform owner sees
+When a course is scheduled or made live with items still open, the platform owner sees it under
+**Release follow-ups** in Admin, with a count on the Admin home page. It is a to-do list, not a
+message: nobody is notified, and nothing is sent.`,
+  },
+  {
     slug: "change-course-instructor",
     title: "Change a course's instructor (fix wrong bylines)",
     category: "Operator",
