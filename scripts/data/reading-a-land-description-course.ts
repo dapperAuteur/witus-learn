@@ -241,5 +241,51 @@ export const READING_A_LAND_DESCRIPTION_COURSE: AuthoredCourse = {
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 1: The grid: the Public Land Survey System
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-land-ordinance-of-1785",
+      title: "3 · The Land Ordinance of 1785, read as a primary source",
+      section: "1 · The grid: the Public Land Survey System",
+      recallContent: [
+        {
+          prompt: "What does the USGS say about the section lines printed on its US Topo maps?",
+          answer: "They are not a legal record: \"the Public Land Survey System (PLSS) representation is not legally authoritative.\"",
+        },
+        {
+          prompt: "Which does the Manual say weighs more in court: evidence of a corner's original position, or the record of bearings and lengths?",
+          answer: "Evidence of the corner's original position (sec. 4-2).",
+        },
+      ],
+      body: `${QR(`${SURVEYOR}, to check the reading of the Ordinance's survey rules; and ${NATIVE_REVIEWER}, to read how the lesson treats "the late Indian purchases" and the Ordinance's framing of Native land`)}
+
+**Read it yourself.** The full text of "An Ordinance for Ascertaining the Mode of Disposing of Lands in the Western Territory," passed May 20, 1785, is printed in C. A. White's *A History of the Rectangular Survey System* (pp. 11 to 13), free from the Bureau of Land Management. It runs about three pages. This lesson walks through it in order, quoting its own words, so you can check every claim against the document.
+
+**What it was dividing.** It opens: "the territory ceded by individual states to the United States, which had been purchased of the Indian inhabitants, shall be disposed of in the following manner." Hold onto the word "purchased." It is the Ordinance's word for transactions that Native nations made through treaties, often under military and economic pressure.
+
+**The township.** "The surveyors ... shall proceed to divide the said territory into townships of 6 miles square, by lines running due north and south, and others crossing these at right angles, as near as may be, unless where the boundaries of the late Indian purchases may render the same impracticable." The grid was to give way only where a treaty boundary got in its way. A surveyor was paid "two dollars for every mile, in length, he shall run, including the wages of chain carriers, markers, and every other expense."
+
+**Where to begin.** The first north-south line was to start "on the river Ohio, at a point that shall be found to be due north from the western termination of a line, which has been run as the southern boundary of the state of Pennsylvania," and the first east-west line from the same point. Townships were numbered "progressively from south to north," and ranges by "their progressive numbers to the westward."
+
+**How to mark it.** "The lines shall be measured with a chain; shall be plainly marked by chaps on the trees, and exactly described on a plat; whereon shall be noted by the surveyor, as their proper distances, all mines, salt-springs, salt-licks, and mill-seats, that shall come to his knowledge; and all water-courses, mountains and other remarkable and permanent things ... and also the quality of the lands." A "chap" is a blaze, a cut in the bark. The plat was a sales sheet as much as a map.
+
+**The lots.** Each township's plat was to be "marked by subdivisions into lots of one mile square, or 640 acres, ... and numbered from 1 to 36." Only the outside lines were run on the ground; the inner lots were drawn on paper. Lots 8, 11, 26 and 29 were reserved "for future sale," and "the lot No. 16, of every township, for the maintenance of public schools, within the said township," with "one-third part of all gold, silver, lead and copper mines." Land was not to be sold "under the price of one dollar the acre," plus survey costs "rated at 36 dollars the township." And "the towns of Gnadenhutten, Schoenbrun and Salem, on the Muskingum," were reserved "for the sole use of the Christian Indians, who were formerly settled there."
+
+**How White reads it.** White's analysis (p. 14) begins: "Only the land that had been purchased from the Indians was to be surveyed. This provision would appease the Indians, follow the practice of purchase traditional in the colonies, and since only Congress could buy land from the Indians, would prevent private claims based on private purchases." That is White's interpretation, written in 1983 for the BLM, and it is worth reading critically: it explains the provision from the government's side. Lesson 7 shows a private purchase of exactly the kind it shut out. The catalog's course *The Match* (its lesson "Whose land it was") follows how ceded land was counted and sold, parcel by parcel.
+
+White also explains two numbers. Townships "were to be six miles square (reduced from seven)," and the chain was written into the law partly because Jefferson had wanted a geographic mile of about 6,080 feet, which "would have made a lot about 849 acres, a very oddball figure" (p. 14). Lot 16 mattered for a reason beyond land: White judges that with it "governmental support of public schools was established" (p. 15).
+
+**Two years later: the Northwest Ordinance.** The 1785 Ordinance said how to survey and sell. The Northwest Ordinance of July 13, 1787 said how the territory would be governed. The Manual calls it "the first general legislation by the Congress on the subject of real property," and notes that by it "new States were to be admitted on an equal footing with the original States" (sec. 1-20(n)). White summarizes its articles (p. 15): religious freedom; habeas corpus, jury trial and property rights; public schools and "protection and rights of the Indians"; the territory to be divided into three to five states, each admissible at 50,000 free inhabitants; and slavery outlawed in the territory. Indiana was one of the states carved from that territory, admitted in 1816 (Manual, sec. 1-32). The 1785 Ordinance gave Indiana its grid; the 1787 Ordinance gave it the path to statehood.
+
+:::reveal Where did the 1785 Ordinance allow the surveyors to depart from six-mile-square townships? ||| "Where the boundaries of the late Indian purchases may render the same impracticable," and no further than those circumstances required.
+
+:::reveal Which lot of every township did the Ordinance reserve for public schools? ||| Lot No. 16, "for the maintenance of public schools, within the said township."
+
+## Sources
+- ${WHITE} Locator: the Ordinance's text, pp. 11 to 13 (PDF pp. 25 to 27); White's analysis, pp. 14 to 15 (PDF pp. 28 to 29). ${TIER_A}
+- ${MANUAL} Locator: sec. 1-20(n), p. 20 (PDF p. 31); sec. 1-32, p. 16 (PDF p. 27). ${TIER_A}`,
+    },
   ],
 };
