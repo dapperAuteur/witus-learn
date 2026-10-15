@@ -310,7 +310,7 @@ White also explains two numbers. Townships "were to be six miles square (reduced
 4. **Township exteriors**, numbered "to the north or south commencing with number 1 at the base line," with **ranges** numbered "to the east or west beginning with number 1 at the principal meridian."
 5. **Sections**, numbered "commencing with number 1 in the northeast section of the township, proceeding thence west to section 6, thence south to section 7, thence east to section 12, and so on, alternately, to number 36 in the southeast section."
 
-**Draw the township.** Six rows of six squares. The top row, from right to left: 1, 2, 3, 4, 5, 6. The next row, left to right: 7 under 6, then 8, 9, 10, 11, 12 under 1. And so on, snaking down, until 36 sits in the bottom right corner. The pattern has a name in the old books, boustrophedon, "as the ox plows," and you will never forget it once you have drawn it twice.
+**Draw the township.** Six rows of six squares. The top row, from right to left: 1, 2, 3, 4, 5, 6. The next row, left to right: 7 under 6, then 8, 9, 10, 11, 12 under 1. And so on, snaking down, until 36 sits in the bottom right corner. Draw it twice and you will not forget it.
 
 **It was not always this way.** Under the 1785 Ordinance the lots were numbered differently: "commencing with No. 1 in the southeast corner of the township and running from south to north in each sequence to No. 36 in the northwest corner" (Manual, front matter, describing the first township plat). The Act of May 18, 1796 changed the numbering "to that which is practiced today" (sec. 1-20(n)). So a section 1 in eastern Ohio's first surveys is not where a section 1 is anywhere else. Old records must be read by the rules of their own date.
 
