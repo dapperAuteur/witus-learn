@@ -1586,6 +1586,43 @@ and carry on for 20 to 100, each 5 inches higher than the mark ten times smaller
 - ${CAJORI_1920} Locator: p. 189 (PDF p. 7), Milbourn's spiral line and Leybourn's objection; p. 196 (PDF p. 14), Delamain's two circles and their figures; p. 200 (PDF p. 18), Oughtred's index and Elias Allen; p. 202 (PDF p. 20), Delamain's great cylinder. ${TA}
 - ${CAJORI_1909} Locator: p. 33, Palmer's Computing Scale of 1844 and his Pocket Scale; p. 37, Fuller's Spiral Slide Rule and other circular designs. ${TA}`,
     },
+    {
+      slug: "the-e6b-briefly",
+      title: "24 · The pilot's E6B, briefly",
+      section: "7 · Charts and circles that calculate",
+      recallContent: [
+        {
+          prompt: "Why do a circular calculator's scales never run off the end?",
+          answer: "They are continuous: on a circle the 10 is also the 1, so, as Pickworth puts it, no traversing of the slide from 1 to 10 is required.",
+        },
+        {
+          prompt: "What is the Boucher calculator's rule for multiplication?",
+          answer: "Set one factor to the fixed index and bring the pointer to 1; set the other factor to the pointer and read the result under the fixed index.",
+        },
+      ],
+      body: `**What the FAA says.** The Federal Aviation Administration's *Pilot's Handbook of Aeronautical Knowledge* (2023 edition), in its chapter on navigation: "In reality, most pilots use a mechanical flight computer called an E6B or electronic flight calculator. These devices can compute numerous problems associated with flight planning and navigation. The mechanical or electronic computer has an instruction book that probably includes sample problems so the pilot can become familiar with its functions and operation." A figure in the chapter shows "the computational and wind side of a mechanical flight computer (E6B)," and the handbook lists "a flight computer or electronic calculator" among the things a pilot should gather before a flight. This lesson uses the E6B to show slide-rule arithmetic still at work. It teaches no flight planning.
+
+**The arithmetic before a flight.** The handbook's "Basic Calculations" are the ones "for time, speed, and distance, and the amount of fuel required":
+- **Time is distance divided by groundspeed.** "The time to fly 210 NM at a GS of 140 knots is 210 ÷ 140 or 1.5 hours." (NM is nautical miles; GS is groundspeed.)
+- **Distance is groundspeed times time.** "The distance flown in 1 hour 45 minutes at a GS of 120 knots is 120 × 1.75 or 210 NM."
+- **Groundspeed is distance divided by time.** "If an aircraft flies 270 NM in 3 hours, the GS is 270 ÷ 3 = 90 knots."
+- **Knots to miles per hour.** Because a nautical mile is 6,076.1 feet and a statute mile 5,280, "the conversion factor is 1.15. To convert knots to mph, multiply speed in knots by 1.15. For example: a wind speed of 20 knots is equivalent to 23 mph." The handbook adds: "Most flight computers or electronic calculators have a means of making this conversion."
+- **Fuel.** "For example, a flight of 400 NM at 100 knots GS takes 4 hours to complete. If an aircraft consumes 5 gallons of fuel per hour, the total fuel consumption is 20 gallons."
+
+**Each one is a proportion.** A speed is a distance per 60 minutes, so every time-speed-distance problem is lesson 7's proportion. The first example: 140 is to 60 as 210 is to the unknown time in minutes. By Pickworth's rule, set 140 on C to 60 on D, and opposite 210 on C read 90 on D: 90 minutes, an hour and a half, the handbook's answer. The knots-to-miles conversion is one setting that serves every speed at once, a whole row of answers like Cullimore's ounces and grams. Fuel is a proportion too: 5 gallons is to 60 minutes as the fuel used is to the flying time.
+
+**What the dial probably is.** The E6B's computational side is a circular dial (lesson 23's shape). The FAA handbook calls it a "mechanical flight computer" and does not say how its scales are graduated. This course's inference, not yet checked against an E6B's own instruction book: a dial that converts knots to miles per hour and solves time, speed and distance in single settings, as the handbook says flight computers do, would do it the way lesson 7 does, with logarithmic scales, because only logarithmic scales keep every facing pair in the same ratio. Treat that as a likely explanation, not a fact, until it is checked.
+
+**The other side.** The wind side of the E6B solves a different kind of problem. The handbook: "The WCA can be determined by using a manual or electronic flight computer. Using a wind of 360° at 10 knots, it is determined the WCA is 3° left." (WCA is the wind correction angle.) That is a problem of directions, not of logarithms, and it belongs to a navigation course, not this one. A later aviation course in this catalog is planned to teach the E6B itself.
+
+:::reveal What does the FAA handbook say most pilots use for flight-planning arithmetic? ||| "A mechanical flight computer called an E6B or electronic flight calculator," each with an instruction book that probably includes sample problems.
+
+:::reveal How long does it take to fly 210 nautical miles at a groundspeed of 140 knots? ||| 1.5 hours (210 ÷ 140), or 90 minutes: on the rule, set 140 on C to 60 on D and read 90 on D opposite 210 on C.
+
+## Sources
+- ${FAA_PHAK} Locator: p. 16-11, Basic Calculations, minutes to hours, time, distance and groundspeed, knots to miles per hour; p. 16-12, fuel consumption and Flight Computers; p. 16-13, Figure 16-18 (plotter, mechanical flight computer, electronic flight computer); p. 16-17, Assembling Necessary Material; p. 16-20, the wind correction angle by flight computer. ${TA}
+- ${PICKWORTH} Locator: p. 31 (PDF p. 37), the rule for proportion. ${TA}`,
+    },
     // NEXT_SECTIONS
   ],
 };
