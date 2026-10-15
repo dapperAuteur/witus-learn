@@ -581,5 +581,56 @@ Breed and Hosmer say Gunter's chain is used "chiefly" in land surveying "on acco
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2: Direction: the surveyor's compass
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "bearings-and-angles",
+      title: "8 · Bearings in quadrant form, and turning bearings into angles",
+      section: "2 · Direction: the surveyor's compass",
+      recallContent: [
+        {
+          prompt: "At Breed and Hosmer's 1 in 500, about how uncertain is a chained line of 305 feet?",
+          answer: "About 0.6 foot (305 ÷ 500), so it is honestly reported as 305 feet or 4.62 chains, not 304.92 feet.",
+        },
+        {
+          prompt: "Pacing and chaining disagree by about 66 feet. What should you suspect?",
+          answer: "A blunder: a whole chain-length dropped from the tally.",
+        },
+      ],
+      body: `${P("BAM's surveyor's compass set up and leveled, sighting a rod, with the needle let down, the glass tapped, and the reading taken close up on camera")}
+
+**What a bearing is.** Breed and Hosmer (sec. 24): the needle points along the magnetic meridian, and "the horizontal angle between the direction of this meridian and of any other line ... is called the Magnetic Bearing of the line, or simply its Bearing." Measured from the true, geographical meridian instead, it "is called the true bearing. In general this will not be the same as the magnetic bearing." Lesson 9 is about that difference.
+
+**Quadrant form.** "Bearings are reckoned from 0° to 90°, the 0° being either at the N or the S point and the 90° either at the E or the W point." So a bearing always has three parts: N or S first, then an angle of 90° or less, then E or W. Breed and Hosmer's example: "if a line makes an angle of 20° with the meridian and is in the southeast quadrant its bearing is written S 20° E." Their Fig. 4, on p. 18, draws four: N 30° E, S 60° E, S 60° W and N 45° W.
+
+**Azimuths are different.** An azimuth runs all the way round the circle. Breed and Hosmer reckon true azimuths "from the south point right-handed (clockwise) to 360°," the astronomers' habit of their day, and add that "sometimes, however, the azimuth is reckoned from the north." The series' map-and-compass course uses azimuths from north. When you meet an azimuth in an old record, find out where its zero is before you use it.
+
+**Taking a bearing** (sec. 26). Set the compass up and level it on the line, let the needle down on its pivot, and turn the box until the sights point exactly at a rod on the line. "The glass should be tapped lightly over the end of the needle to be sure that the latter is free to move." Then read and record. "Bearings are usually read to the nearest quarter of a degree." The rule for which end to read: "When the north point of the compass-box is toward the point whose bearing is desired, read the north end of the needle. When the south point of the box is toward the point, read the south end of the needle." Read the farther end, "always looking along the needle, not across it"; looking sideways makes it seem to sit on the wrong graduation, an error called parallax. Keep the chain, the axe, the pins and your keys away from the compass, because iron moves the needle.
+
+**The reverse bearing.** "If a bearing of the line is taken looking in the opposite direction it is called the reverse bearing." The angle stays the same and both letters flip: the reverse of N 30° E is S 30° W. Lesson 10 uses that to catch a disturbed needle.
+
+**From bearings to angles** (sec. 41). Every bearing is "reckoned from the meridian, either N or S, toward the E and W points," so the angle between two lines from one point follows from their letters:
+
+| The two bearings | Angle between the lines | Example |
+|---|---|---|
+| Same first letter, same last letter | the difference | N 20° E and N 50° E: 30° |
+| Same first letter, different last letters | the sum | N 20° E and N 50° W: 70° |
+| Different first letters, same last letter | 180° minus the sum | N 20° E and S 50° E: 110° |
+| Different first letters, different last letters | 180° minus the difference | N 20° E and S 50° W: 150° |
+
+Breed and Hosmer give the same four cases in their Fig. 11. If you would rather not memorize a table, turn each bearing into an azimuth from north (N 20° E is 20°, S 50° E is 130°, S 50° W is 230°, N 50° W is 310°) and subtract.
+
+**How fine is a bearing?** The Manual says bearings are reported "to the level of precision consistent with the accuracy requirements of the survey," and that "many plats and field notes indicate bearings to only the nearest minute" (sec. 2-41). A needle read to a quarter of a degree is good to 15 minutes at best, so a compass bearing written to the minute claims more than the compass gave.
+
+:::reveal A line runs 25° west of south. Write its bearing and its reverse bearing. ||| S 25° W; the reverse is N 25° E.
+
+:::reveal From one point, line A bears N 40° E and line B bears S 70° E. What is the angle between them? ||| Different first letters, same last letter: 180° − (40° + 70°) = 70°. As azimuths, 40° and 110°, which also differ by 70°.
+
+## Sources
+- ${BH} Locator: secs. 24 and 26 and Fig. 4, pp. 16 to 19 (scan pp. 42 to 45); sec. 41 and Fig. 11, p. 30 (scan p. 56). ${TIER_A_PD}
+- ${MANUAL} Locator: sec. 2-5, p. 28 (PDF p. 39); sec. 2-41, p. 37 (PDF p. 48). ${TIER_A}`,
+    },
   ],
 };
