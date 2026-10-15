@@ -656,6 +656,45 @@ The beads say **3437.343**. Check by pencil: 3085.274 + 352.069 = 3437.343. The 
 ## Sources
 - ${KNOTT} Locator: p. 19 (PDF p. 42), the shop-boy and the prices "Yen 1.25, Yen 2,89, and Yen 3.17" (as printed); p. 49 (PDF p. 72), the addition of 352·069 to 3085·274, Figs. 4 and 5, and the printed result "3437·843" (read on the page image: the 8 is in the type). ${TA}`,
     },
+    {
+      slug: "why-it-is-fast-what-a-mistake-costs",
+      title: "9 · Why it is fast, and what a mistake costs",
+      section: "2 · Adding and subtracting",
+      recallContent: [
+        {
+          prompt: "Knott prints the sum 3085.274 + 352.069 as 3437·843. What do his beads show, and which is right?",
+          answer: "The beads show 3437.343 (no five-bead and three one-beads on the tenths rod), and pencil arithmetic agrees: the printed 8 is a misprint.",
+        },
+        {
+          prompt: "How did Knott's shop-boy add ¥1.25, ¥2.89 and ¥3.17?",
+          answer: "Each price set onto the running total, rod by rod, with the yen on one chosen rod: \"as fast as the numbers can be named\", ¥7.31.",
+        },
+      ],
+      body: `**Why it is fast.** Knott's explanation is that the soroban takes the arithmetic out of your head and puts it in your fingers. "In all addition or subtraction processes, the number is added to or taken from the rod rather than from the number on the rod. The eye can tell at a glance if this operation can be effected on the rod in the question, or if the next rod to the left has to be called into play. Mental labour is thus reduced to a minimum." He compares a practiced operator to a musician: the fingers follow the spoken numbers "as naturally as the fingers of a pianist obey the graphic commands of a Sonata."
+
+**What beginners do wrong.** Knott watched Westerners try it, and saw them add in their heads and then set the answer on the beads. That, he says, is worse than pencil and paper, "being liable to error, inasmuch as the number that is being added is not visible to the eye at any time, and the number that it is being added to disappears in the operation." Work the complements on the rods instead, and "he will find Soroban addition and subtraction both more rapid and more certain, because attended by less mental exertion, than in figuring."
+
+**What a mistake costs.** Every addition on a soroban replaces the number that was there. Knott names the cost himself: "the final result of each step alone appears, so that if any error is made, the whole operation must be carried through from the beginning again." On paper you can look back up the column and find the slip. On the beads, the column is gone.
+
+**Knott's answer, and how far it goes.** He thought the complaint "a hasty one." "After all it is the result we wish; and if an error has been made, repetition is necessary both with Soroban and ciphering." He grants that on paper an accidental error is on average found "half-way through," which "would tell in favour of the ciphering system," but argues that the soroban is "much more rapid than ciphering, and less liable to error." Then he says what a careful scientist should: "Only a lengthened series of comparative experiments could establish whether there is any real disadvantage at all." His speed claim is an 1885 opinion, not a measurement, and this course treats it that way. Section 7 reads one famous comparison from 1946; section 4 reads a three-year trial of children. Neither is the long series Knott asked for.
+
+**Three checks that cost little.**
+
+| Check | How | When it is worth it |
+|---|---|---|
+| Do it again | Clear, set the first number, add the rest again | Short columns; the cheapest check |
+| Undo it | Subtract each number back off the total and land on the first number | When you need to find the step that went wrong |
+| Pencil | Add the column on paper | Anything that matters, and every capstone problem in lesson 27 |
+
+**Say the number, move the beads.** Knott thought the Japanese way of saying numbers helped: the operator "hears or utters a certain sound, which means one of two operations." And he was blunt about English: "how ill adapted all such systems must be which say sixteen and five-and-twenty instead of teen-six and twenty-five." Whatever language you count in, say each number digit by digit from the left as you set it, in the order the rods take it.
+
+:::reveal Why did Knott say adding in your head and then setting the answer is worse than pencil and paper? ||| The number being added is never visible, and the number it is added to disappears, so an error cannot be seen or traced.
+
+:::reveal What did Knott say would be needed to settle whether the soroban's lost working is a real disadvantage? ||| "A lengthened series of comparative experiments." His own speed claim was an opinion, not a measurement.
+
+## Sources
+- ${KNOTT} Locator: p. 50 (PDF p. 73), the Western beginner's error ("liable to error, inasmuch as the number that is being added is not visible"), "more rapid and more certain", "the final result of each step alone appears", "a hasty one", "half-way through", "much more rapid than ciphering", and "Only a lengthened series of comparative experiments"; p. 53 (PDF p. 76), "added to or taken from the rod rather than from the number on the rod", "Mental labour is thus reduced to a minimum", the pianist, and "teen-six and twenty-five". ${TA}`,
+    },
     // @@END_LESSONS@@
   ],
 };
