@@ -154,6 +154,7 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { HOW_TO_READ_A_NUMBER_COURSE } from "./data/how-to-read-a-number-course";
 import { HOW_WE_KNOW_WHATS_OUT_THERE_COURSE } from "./data/how-we-know-whats-out-there-course";
 import { INTRO_TO_CITIZEN_SCIENCE_COURSE } from "./data/intro-to-citizen-science-course";
+import { THE_SLIDE_RULE_COURSE } from "./data/the-slide-rule-course";
 import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-watershed-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 import { ARCHIVES_AND_FINDING_AIDS_COURSE } from "./data/archives-and-finding-aids-course";
@@ -1745,6 +1746,32 @@ async function main() {
     seriesOrder: 4,
     seriesCode: "SCI",
     seriesPosition: "04",
+  });
+
+  // TOOLS-02 The Slide Rule. Brief: plans/future-courses/science-and-math/tool-usage/2026-10-14-slide-rule-brief.md,
+  // approved by BAM 2026-10-14. Series "Tools That Think" (analog tools that work without electricity):
+  // TOOLS-01 map and compass and TOOLS-03 surveying are registered in their own branches. Multiple-choice
+  // quizzes only, because a slide-rule reading is approximate and typed answers grade by exact match.
+  // Learn.WitUS only for now: BAM also asked for an ElementaryMBA copy (STEAM), which needs a change to
+  // tests/seed-registry.test.ts (one slug per seed script today) and waits on his OK.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-slide-rule",
+    course: THE_SLIDE_RULE_COURSE,
+    category: "Science & Math",
+    additionalCategories: ["Culture & History"],
+    seriesSlug: "tools-that-think",
+    seriesTitle: "Tools That Think",
+    seriesOrder: 2,
+    seriesCode: "TOOLS",
+    seriesPosition: "02",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "public",
+    publishHoldReason:
+      "Held until BAM has recorded the demonstrations the lessons marked P call for (3 to 7, 10 to 13, 15, 22 and 25) on his own Mannheim-type rule, card rods and printed log table. Every P lesson already teaches its operation in writing; the videos show it done. Research tier 1: mathematics and history, every example from two public-domain manuals of 1920.",
   });
 
   // River Expedition, course 1 of 11 (RIVER-01). FREE: it is the series funnel and the course that

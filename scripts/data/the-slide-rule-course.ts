@@ -11,15 +11,19 @@ import type { AuthoredCourse } from "./authored-course";
 //          rule, a lesson on what features to look for, trig and log-log scales out, a short E6B
 //          lesson here, multiple-choice quizzes, the Oughtred and Delamain question taught as a
 //          documented dispute, "slide rules got us to the Moon" corrected from the museum record).
-// Dossier: plans/future-courses/science-and-math/tool-usage/2026-10-14-slide-rule-dossier.md
-//          Every source below was fetched and read on 2026-10-14. Only VERIFIED lines are asserted.
+// Evidence: the brief's section 6 (35 VERIFIED items) serves as the dossier; no separate dossier file
+//          was written. Every source below was fetched and read on 2026-10-14, and the sections built
+//          the same day re-read each locator on the saved page text (and on the page image where the
+//          text layer was poor). Only VERIFIED lines are asserted.
 //          Two locator corrections to the brief: Abramowitz and Stegun's printed pages sit 32 PDF
 //          pages in (the brief said 33), and Cullimore's page 10 carries the square-root and
 //          multiplication examples on an image page with no text layer (read from the page image).
 //
 // VISIBILITY: PUBLIC and free, HELD ("Coming soon") until BAM records the demonstrations the P
 // lessons call for on a Mannheim-type rule. The publishHoldReason in scripts/seed-courses.ts says so.
-// Also registered on the ElementaryMBA school (scripts/seed-speedway.ts, category STEAM), same module.
+// Registered on Learn.WitUS only (Science & Math, also Culture & History). BAM asked for a second copy
+// on the ElementaryMBA school (category STEAM); that needs tests/seed-registry.test.ts to allow one
+// slug per school instead of one per seed script, and waits on his OK.
 //
 // MARKED LESSONS. Each starts its body with a "> **Before release:**" line (parsed by the seeder).
 //   P (BAM's demonstration): 3, 4, 5, 6, 7, 10, 11, 12, 13, 15, 22, 25. Every P lesson still teaches
@@ -52,11 +56,21 @@ import type { AuthoredCourse } from "./authored-course";
 // STANDARDS: CCSS 8.EE.A.3, 8.EE.A.4 (partial), HSF-BF.B.5 (partial), HSN-Q.A.3 and MP5 (partial),
 // through five claims in src/lib/standards/claims.ts mapped in shared/common-core-math.ts.
 //
-// HEDGES WRITTEN INTO LESSONS (each has a check in src/lib/research-checks.ts):
+// HEDGES WRITTEN INTO LESSONS (each has a check in src/lib/research-checks.ts, keys sr-*):
 //  - L24: that the E6B's computational scales are logarithmic (derived here from how it solves a
 //    proportion; the FAA handbook calls it a mechanical flight computer and does not say).
 //  - L21: when Keuffel & Esser made its last slide rule (only the 1970 Hoboken closure is verified).
 //  - L11: where the L scale sits on BAM's own rule (face, or back of the slide), for the P video.
+//  - L20: how many slide rules flew on each Apollo mission (the two Smithsonian records say less than
+//    a collector's claim seen only in a search summary).
+//
+// SOURCES DISAGREE, NOT TAUGHT AS A HEDGE: who first made the runner. Cajori 1920 (p. 201) finds an
+// index in Delamain's 1630s pamphlets and Cajori 1909 (p. 35) says it was "first invented" in England
+// nearly 200 years before Mannheim; Lipka's 1918 historical note (p. 9) credits Robertson in 1775.
+// Lessons 18 and 19 follow Cajori, who read Delamain; a future revision could teach the disagreement.
+//
+// FOLLOW-UP (BAM, brief question 7): the E6B gets its own lesson in an aviation course later; lesson 24
+// here is deliberately brief and teaches no flight planning.
 //
 // House style, matching stage-and-broadcast-rigging-course.ts: `section` on every lesson; flush-left
 // single-line `:::reveal q ||| a`; recallContent from the second teaching lesson on, quizzing the
