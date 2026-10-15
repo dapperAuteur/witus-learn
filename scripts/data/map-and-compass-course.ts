@@ -1217,5 +1217,50 @@ On a baseplate you can also read a back bearing directly by "aligning the south 
 - ${FM_2001} Locator: printed pp. 6-2 and 6-3 (PDF pp. 65 and 66), paragraph 6-3 and 6-3a; printed pp. 9-3 and 9-4 (PDF pp. 112 and 113), paragraphs 9-4a and 9-4b.
 - ${NWCG_475} Locator: p. 81, chapter 4 introduction; p. 84, tips; pp. 88 to 90, "Taking Bearings (Direct and Back)" and Table 4-2.`,
     },
+    {
+      slug: "following-a-bearing",
+      title: "19 · Following a bearing",
+      section: "4 · The compass",
+      recallContent: [
+        {
+          prompt: "What is the back bearing of 300°?",
+          answer: "120°: subtract 180 because 300 is more than 180.",
+        },
+        {
+          prompt: "What are the workbook's four steps for a direct bearing with a baseplate compass?",
+          answer: "Adjust for declination if using a map; face the object with the direction-of-travel arrow on it; turn the housing until the needle's north end sits in the orienting arrow; read the bearing at the index line.",
+        },
+      ],
+      body: `${P("BAM follows a 100-meter bearing through woods on camera, choosing intermediate objects aloud, checking with a back bearing halfway, and walking the box detour around an obstacle")}
+
+${QR("a search-and-rescue member or a wilderness or land-navigation instructor, to check the method, the detour arithmetic and the advice on what to do when the back bearing does not match")}
+
+**Why follow a bearing.** "A bearing can help you stay on course even if you lose sight of your destination due to terrain, vegetation, fog, smoke or other conditions," says the workbook. You set the bearing once and walk the line it gives you.
+
+**The workbook's method (Table 4-3).**
+1. "Adjust compass for declination if using the bearing with a map."
+2. Take the bearing of your destination. If it is far away or hidden, "choose an intermediary object that is visible and located along the line of the direction-of-travel arrow. Don't turn the compass housing after you have taken the bearing."
+3. "Walk to the intermediary or goal destination by the easiest route, it doesn't have to be straight route. Don't look at your compass while you are walking, just walk towards the destination."
+4. Check that you are still on the line: stop, turn until the needle sits in the orienting arrow again, and see that the travel arrow still points at the next object. Then "Take a back bearing to the intermediary or starting point. It should be 180° from the direct bearing that was taken from that point." If it is not, step sideways until it is.
+5. "Repeat steps above until goal object is reached."
+
+If nothing stands out on the line, "another person can serve as the intermediate destination."
+
+**Steering marks.** The Army manual calls the intermediate objects steering marks, and its advice on choosing them is the best part of the chapter. A good one has "color, shade of color, size, or shape (preferably all four)" so you keep recognizing it as you approach. "If several easily distinguished objects appear along your line of march, the best steering mark is the most distant object", and "If you have many options, select the highest object". They are chosen as you walk: "Steering marks should never be determined from a map study." And never walk with the compass held open in front of you, because it "will not stay steady or level": sight, put it away, walk, sight again.
+
+**With a lensatic.** Preset it: hold it level, turn it until the bearing sits under the black index line, then turn the bezel ring until its luminous line lies over the north-seeking arrow. To follow, hold it in the centerhold and "turn your body until the north-seeking arrow is aligned with the luminous line."
+
+**Around an obstacle: the box.** The manual detours at right angles and counts the legs. Its example, on a bearing of 90°: turn to 180° and walk 100 meters; turn back to 90° and walk 150 meters past the obstacle; turn to 360° and walk 100 meters; turn to 90° again, "and you are back on your original azimuth line." The two side legs cancel because they are equal and opposite. Two rules come with it: to turn right 90°, add 90 to your bearing; to turn left, subtract 90. And count only the paces that move you toward the goal: "be certain that only paces taken toward the final destination are counted as part of your forward progress." In the example, the 150 meters along the obstacle count; the two 100-meter side legs do not.
+
+**When the line drifts.** Each small error adds to the last. The workbook: "A mistake of a few degrees can result in a significant mistake in distance from your final destination." That is why the back-bearing check comes every leg, not only at the end, and why section 5 teaches ways to let the land correct you.
+
+:::reveal After you take a bearing with a baseplate compass, what must you not do before you reach the next object? ||| Turn the compass housing. The bearing is set; you only re-box the needle to check.
+
+:::reveal In the box detour, which legs count toward forward progress? ||| Only the leg toward the destination (the 150 meters on the original bearing), not the two side legs.
+
+## Sources
+- ${NWCG_475} Locator: p. 84, tips; p. 91, "Following Bearings" and Table 4-3.
+- ${FM_2001} Locator: printed pp. 9-4 to 9-6 (PDF pp. 113 to 115), paragraphs 9-4c(1) and 9-4d; printed pp. 11-14 and 11-15 (PDF pp. 160 and 161), paragraph 11-6a(4) to (7).`,
+    },
   ],
 };
