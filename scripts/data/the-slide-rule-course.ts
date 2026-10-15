@@ -959,6 +959,41 @@ Read it from the left: 2,550. And 425 × 6 is 2,550.
 - ${NAPIER_1617} Locator: the whole book (Latin), title page. ${TA}
 - ${NMAH_RODS} Locator: description, first to third paragraphs (the book of 1617, the rods, the diagonal squares, the eleventh rod, ten distinct rods). ${TB}`,
     },
+    {
+      slug: "the-1614-table-and-briggs",
+      title: "14 · The 1614 table, and Briggs's \"better kind\" of logarithm",
+      section: "5 · Before the slide rule: Napier's rods and log tables",
+      recallContent: [
+        {
+          prompt: "How do you multiply 425 by 6 with Napier's rods?",
+          answer: "Lay the rods for 4, 2 and 5 side by side, read the sixth row (24, 12, 30), and add along the diagonals from the right: 0, 5, 5, 2. The answer is 2,550.",
+        },
+        {
+          prompt: "Why did Napier publish the rods, in Macdonald's words?",
+          answer: "\"For the sake of those who may prefer to work with the natural numbers\" rather than with logarithms.",
+        },
+      ],
+      body: `**The problem.** Macdonald's introduction to Napier sets the scene: toward the end of the sixteenth century "the further progress of science was greatly impeded by the continually increasing complexity and labour of numerical calculation." Napier "deliberately set himself to devise some means of lessening this labour." By 1594 word was out: Kepler reports that Tycho Brahe, the astronomer, had been led by a Scottish correspondent to hope for "the publication of the Canon or Table of Logarithms." *Wrong for Good Reasons* lesson "8 · Geocentrism was good science" shows how much calculation Tycho's astronomy required.
+
+**The book of 1614.** "The Canon, with the description of its nature and use, made its appearance in 1614," as the *Mirifici logarithmorum canonis descriptio* (in English, a description of the wonderful canon of logarithms). The method of building the table, the *Constructio*, was written several years earlier but published only in 1619, two years after Napier's death. In the *Constructio* the logarithms are called "artificial numbers": his son Robert explains that the treatise was written "several years before the word Logarithm was invented."
+
+**It was not the table you would expect.** Napier's Canon "does not contain the logarithms of equidifferent numbers, but of sines of equidifferent arcs for every minute in the quadrant," Macdonald notes, with the radius taken as 10,000,000. It was built for trigonometry, the heavy arithmetic of astronomy and navigation, not for the plain multiplication this course does on a rule. Napier closed it with an apology: the table, which "ought to have been accomplished by the labour and assistance of many computors," had been computed "by the strength and industry of one alone," so errors were likely. "Nothing is perfect at birth."
+
+**A better kind.** Napier saw a simpler scheme before he died. In the English translation of 1616 he promised a second edition whose logarithms would "fall upon decimal numbers, such as 100,000,000, 200,000,000, 300,000,000, &c., which are easie to bee added or abated." In the dedication of the 1617 book he wrote: "We have now also found out a better kind of logarithms," and, "owing to our bodily weakness, we leave the actual computation of the new canon to others skilled in this kind of work, more particularly to that very learned scholar, my very dear friend, Henry Briggs, public Professor of Geometry in London."
+
+**Briggs.** Henry Briggs visited Napier at Merchiston in 1615 and 1616 and was preparing a third visit when Napier died, on 4 April 1617. Robert Napier's preface to the *Constructio* adds an appendix on "another and better kind of logarithms ... in which the logarithm of unity is 0," and credits Briggs with taking on "the very heavy labour of computing this new Canon." A logarithm of 1 equal to 0 is lesson 1's table: log 1 = 0, log 10 = 1, log 100 = 2. Every scale on a slide rule and every printed table in lesson 15 descends from it. The 1964 federal handbook that lesson 15 reads still calls base-10 logarithms "common or Briggs logarithms."
+
+**And the decimal point.** Macdonald credits Napier with something lesson 2 relied on. Simon Stevin had proposed decimal fractions in 1585 "in a cumbrous form," but "Napier was the first to use the present notation." His first published explanation of it, in the 1617 book, divides 861094 by 432 and writes the quotient as 1993,273, "which signifies 1993 units and 273 thousandth parts," with a comma where we put a point. (The point itself had already appeared in the table printed with the English translation of 1616.)
+
+:::reveal What did Napier's 1614 Canon actually tabulate? ||| The logarithms of sines, for every minute of the quadrant, with the radius taken as 10,000,000: a table built for trigonometry.
+
+:::reveal What made Briggs's logarithms the "better kind"? ||| In them "the logarithm of unity is 0," so that log 10 = 1 and log 100 = 2: base 10, the kind on every slide rule.
+
+## Sources
+- ${MACDONALD} Locator: Introduction, p. xv (PDF p. 19), the labor of calculation, Tycho's hopes in 1594, Stevin and Napier's notation; p. xvi (PDF p. 20), the Canon of 1614, the Constructio of 1619, Briggs's visits and Napier's death; "To the Reader," sig. A2 verso (PDF p. 28), "artificial numbers," the better kind "in which the logarithm of unity is 0," and Briggs's "very heavy labour"; Notes, p. 85 (PDF p. 109), sines for every minute and the radius of 10,000,000; p. 87 (PDF p. 111), the note at the end of the Table, "Nothing is perfect at birth"; p. 88 (PDF p. 112), the 1616 admonition and the dedication of Rabdologiae; p. 89 (PDF p. 113), the division 861094 by 432. ${TA}
+- ${NAPIER_1614} Locator: title page; the Canon follows the Descriptio. ${TA}
+- ${AS_1964} Locator: chapter 4, p. 68 (PDF p. 100), "common or Briggs logarithms". ${TA}`,
+    },
     // NEXT_SECTIONS
   ],
 };
