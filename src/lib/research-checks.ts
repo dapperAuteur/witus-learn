@@ -7888,6 +7888,50 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["The tool's name and URL", "The steps from a place name or coordinates to a datasheet", "The date checked"],
     where: ["https://geodesy.noaa.gov/ (National Geodetic Survey)", "NOAA's current educational materials on survey marks"],
   },
+  {
+    key: "surv-indiana-legal-survey-statute",
+    title: "Does Indiana's statute match the Boone County definition of a 'legal survey'?",
+    course: "surveying-how-land-gets-measured",
+    lesson: "the-tools-and-the-limits",
+    quote: "In Indiana, the Boone County surveyor's office defines a legal survey as \"a survey prepared by a registered land surveyor with notice to all adjoining landowners to resolve property disputes.\"",
+    severity: "low",
+    question:
+      "Does the text of IC 36-2-12-10 (the county surveyor's legal survey record) define a 'legal survey' as the special procedure, with notice to all adjoining owners, used to resolve property disputes, as the Boone County surveyor's page summarizes it?",
+    claim:
+      "Lesson 2 quotes the Boone County, Indiana, surveyor's page (a Tier B county summary that cites IC 36-2-12 but does not quote it). The statute itself has not been read: Justia returned 403 during the 2026-10-14 brief, and during the 2026-10-15 fact check FindLaw returned 403 and Justia did not respond.",
+    stakes:
+      "Low to medium. If the county's summary is loose, learners get a wrong legal definition, and if the notice procedure is narrower or broader than the summary says, a learner could think every ordinary retracement survey needs notice to all adjoining owners. Lesson 2 is already marked for the licensed land surveyor's read (QR), who can settle this at the same time.",
+    needs: [
+      "The text of IC 36-2-12-10, quoted, with the year of the Code read",
+      "Whether 'legal survey' is the notice procedure for resolving disputes only, or a broader category",
+    ],
+    where: [
+      "Indiana General Assembly, Indiana Code Title 36, Article 2, Chapter 12 (iga.in.gov)",
+      "The licensed land surveyor reviewing lesson 2",
+    ],
+  },
+  {
+    key: "surv-manual-chain-foot-update",
+    title: "Has BLM moved the Manual's chain from the U.S. survey foot to the international foot?",
+    course: "surveying-how-land-gets-measured",
+    lesson: "gunters-chain",
+    quote: "The Manual defines the chain \"in terms of the U.S. Survey Foot\", and says the difference from the international foot is \"very small, on the order of 2 parts per million\" (sec. 2-43).",
+    severity: "low",
+    question:
+      "Since NIST retired the U.S. survey foot on January 1, 2023, has the Bureau of Land Management issued a Manual update, a supplement or an instruction memorandum that defines the chain for PLSS work in international feet?",
+    claim:
+      "Lesson 5 quotes the 2009 Manual (sec. 2-43), which defines the chain in U.S. survey feet, and then NIST's page, which says those units (the chain, link, rod, pole, perch and acre among them) were previously defined only in terms of the U.S. survey foot and that from January 1, 2023 relationships are available in terms of the international foot. It does not say whether BLM has changed the Manual.",
+    stakes:
+      "Low: the sentence is accurate about the 2009 Manual, but if BLM has adopted the international foot the lesson should say 'in its 2009 edition' and name the later instruction.",
+    needs: [
+      "The BLM document (Manual edition, supplement or instruction memorandum number), its date and the passage, quoted, or a statement that none exists as of the date checked",
+    ],
+    where: [
+      "BLM Cadastral Survey pages and the Manual of Surveying Instructions page (blm.gov)",
+      "BLM instruction memoranda on the U.S. survey foot transition",
+      "NIST's U.S. survey foot page, 'Resources' and the Federal Register notices it lists",
+    ],
+  },
   // ── Reading a Land Description (TOOLS-04) ─────────────────────────────────────────────────────
   {
     key: "land-vincennes-office-year",
