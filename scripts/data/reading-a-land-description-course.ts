@@ -889,7 +889,7 @@ Freeman's north line ran from Point Coupee on the Wabash "south 78 degrees east"
       body: `**Three kinds of original record.** The Indiana Archives and Records Administration (IARA) puts it in one list: "For all of Indiana, these land records exist: field notes - the surveyor's written description; plat maps - the surveyor's graphic description; and land office tract book entries - the accounts of individual purchases. All of these are available for examination at the State Archives."
 - **Field notes** are the surveyor's mile-by-mile record: distances, corners, bearing trees, and what the land was like. The Indiana State Library says the surveyors "took notes that vividly described the physiography and vegetation," along with where settlements and Native villages were and the problems they met. Freeman wrote of "handsome prairies," "wavy land" and "bushy barrens" (Wilson, p. 12).
 - **Plats** are the township drawings made from the notes.
-- **Tract books** record each first sale, arranged by location.
+- **Tract books** record the individual purchases: each first sale from the public domain.
 
 **Where to read them.** IARA lists several routes:
 - "The compiled land survey notes have also been digitized and are available online from the National Archives" (catalog.archives.gov/id/566714).
@@ -904,7 +904,6 @@ The State Library adds two more: the Internet Archive collection "Indiana PLSS N
 **The county surveyor.** Every Indiana county has one, and the office keeps the ground connected to the paper.
 - Boone County: the surveyor "must keep and maintain a corner record book showing original government section corners," and "must check, locate, establish, and reference at least 5% of all original corners shown in the Corner Record Book." The office also "maintains a legal survey record book for all legal surveys within the county."
 - Wells County: "each year the surveyor shall check and reference at least five percent (5%) of all corners shown in the corner record book," citing IC 36-2-12-11.
-A corner "referenced" is tied by measurement to nearby objects, so that it can be found again if it is disturbed.
 
 **And the 2009 Manual's own pointer.** The Manual's list of public-land states gives Indiana's original survey records as "with the Commission on Public Records at Indianapolis" (sec. 1-32). That was its wording in 2009; today it is the State Archives page above that describes holding the field notes and plats.
 
