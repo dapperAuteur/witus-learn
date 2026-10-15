@@ -631,5 +631,65 @@ That is lesson 6's rule again, at the scale of a backyard: monuments first, meas
 - ${SPECS} Locator: p. 9 (PDF p. 15), note 14, the definition of "lot". ${TIER_A}
 - ${IARA} Locator: the paragraph on county recorders. ${TIER_B}`,
     },
+    {
+      slug: "what-to-look-for-in-a-land-description",
+      title: "9 · What to look for in a land description: a reader's checklist",
+      section: "2 · Metes and bounds, and the deed",
+      recallContent: [
+        {
+          prompt: "Under Breed and Hosmer's rules, what controls when a deed's stated area disagrees with its boundaries?",
+          answer: "The boundaries (sec. 151).",
+        },
+        {
+          prompt: "To rerun an old deed written in magnetic bearings, what must a surveyor find first?",
+          answer: "The declination of the needle at the date of the original survey and today, or the change in declination measured on one surviving original line (sec. 152).",
+        },
+      ],
+      body: `**Why a checklist.** Lessons 3 to 8 taught three ways of describing land. This lesson turns them into the questions a careful reader asks of any description, in the order worth asking them. None of it tells you where a line is on the ground; it tells you whether the words are complete, consistent and readable, and where to look when they are not.
+
+**First: which system is it?**
+- **Grid (PLSS):** a principal meridian, a township and range, a section, and aliquot parts or lots.
+- **Metes and bounds:** a point of beginning, then courses and distances, back to the start.
+- **Lot and block:** a subdivision name, a lot, a block, and a reference to a recorded plat.
+- **A mix:** common in practice, such as "part of the SW1/4" followed by metes and bounds that cut a piece out of it. Read each part by its own rules.
+
+**For a grid description, check:**
+1. **Every reference element is present.** The *Specifications* list them: "principal meridian, State, township and range, section, and lots or aliquot parts" (p. 10). A description that skips the meridian is relying on you to guess it.
+2. **Directions on township and range.** "T. 4 N., R. 20 E." is a place; "T. 4, R. 20" is four places.
+3. **The aliquot string reads right to left,** and each step quarters the area (lesson 5).
+4. **Commas.** "A comma means 'AND THE' and the absence of a comma means 'OF THE'" (p. 10). Do the acreage both ways if a comma looks doubtful.
+5. **No more than four components,** and no "half of a half," which the *Specifications* call "ambiguous and subject to more than one interpretation" (p. 11).
+6. **Lots named as lots.** "Lots cannot be described as aliquot" (p. 11). "NE1/4" of a section that contains lots in its northeast quarter is a warning sign.
+7. **The acreage adds up,** remembering that legal acres come from the plat (lesson 5).
+
+**For a metes-and-bounds description, check:**
+1. **A findable point of beginning,** tied to a monument or to a grid corner, not to "the old oak."
+2. **Every course has a bearing and a distance.** Breed and Hosmer warned that some deeds "contain only the names of the owners of adjacent property, no bearings or distances being given" (sec. 150).
+3. **The basis of bearing.** Magnetic or true? If magnetic, of what date? Without a date, an old bearing cannot be corrected (sec. 152).
+4. **The unit.** Feet, chains, rods, perches, poles, or leagues? The 1775 deed's league had at least three values (lesson 7). The Manual warns that some early notes give "perches" and some places used "2 pole (perch) chains" (sec. 2-42).
+5. **Monuments called by name.** A wall or fence controls only if the deed mentions it (Breed and Hosmer, sec. 151).
+6. **It closes.** The last course should return "to the point of beginning." If you plot it and it does not close, the description has an error somewhere.
+7. **Exceptions and reservations.** The 1775 deed reserved twenty-four leagues for the inhabitants of Post St. Vincent (lesson 7); modern deeds except road rights-of-way, easements or earlier sales. What is excepted is not conveyed.
+
+**For a lot-and-block description, check:** the exact subdivision name, the lot and block numbers, and the plat's recording reference, so you can pull the plat from the county recorder. "When a deed refers to a plan the dimensions on this plan become a part of the description" (sec. 151).
+
+**Words that should slow you down.**
+- **"More or less"** after an area or a distance: a signal that the boundaries, not the figure, control.
+- **"Thereabouts"** and **"about"**: the 1775 deed has both. They are honest, and they are also uncertain.
+- **"Along"** a wall, road or stream: a distance given "along a wall or highway" follows the feature even where it bends (sec. 151).
+- **A name instead of a monument:** "land now or formerly of" an adjoining owner tells you who was there, not where the line is.
+
+**A worked read-through.** The *Specifications'* example: "Mount Diablo Meridian, Nevada / T. 4 N., R. 20 E., / sec. 15, NW1/4, NE1/4SE1/4SW1/4, and NW1/4SE1/4." Meridian and state: present. Township and range with directions: present. Section: 15. Three parts separated by commas, so "and the": NW1/4 (160 acres), NE1/4SE1/4SW1/4 (three components, 10 acres), NW1/4SE1/4 (two components, 40 acres). Listed in the order NE, NW, SW, SE within each quarter as the guide prefers. Total 210 acres, which is the figure the *Specifications* give. Every box ticked.
+
+:::reveal A description reads "the N1/2 of the SE1/4 of section 12" with no township, range or meridian. Which checklist item fails? ||| The first: every reference element must be present. Without the meridian, township and range, "section 12" could be in any township in the country.
+
+:::reveal A metes-and-bounds deed gives magnetic bearings but no date. Why is that a problem for rerunning it? ||| A magnetic bearing can only be corrected with the declination at the date of the survey. Without the date, the surveyor must find one surviving original line and measure the change directly (sec. 152).
+
+## Sources
+- ${SPECS} Locator: chap. II, pp. 9 to 11 (PDF pp. 15 to 17). ${TIER_A}
+- ${BH} Locator: secs. 150 to 152, pp. 115 to 120 (scan pp. 141 to 146). ${TIER_A_PD}
+- ${MANUAL} Locator: sec. 2-42, p. 37 (PDF p. 48). ${TIER_A}
+- ${WILSON} Locator: p. 4, the reservation for the inhabitants of Post St. Vincent. ${TIER_A_1916}`,
+    },
   ],
 };
