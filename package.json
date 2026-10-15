@@ -115,7 +115,9 @@
     "tutorial:check": "node scripts/tutorial-video/check-manifest.mjs",
     "tutorial:auth": "node scripts/tutorial-auth.mjs",
     "check:shortest-option": "tsx scripts/check-shortest-option.ts",
-    "check:length-balance": "tsx scripts/check-length-balance.ts"
+    "check:length-balance": "tsx scripts/check-length-balance.ts",
+    "notes:show": "tsx --env-file=.env.local scripts/notes-show.ts",
+    "notes:show:prod": "tsx --env-file=.env.prod scripts/notes-show.ts"
   },
   "dependencies": {
     "@langchain/anthropic": "^1.4.0",
