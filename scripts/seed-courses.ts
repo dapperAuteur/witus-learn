@@ -61,6 +61,7 @@ import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "./data/stage-and-broadcast-r
 import { SOUND_CRAFT_COURSE } from "./data/sound-craft-course";
 import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
 import { SURVEYING_HOW_LAND_GETS_MEASURED_COURSE } from "./data/surveying-how-land-gets-measured-course";
+import { READING_A_LAND_DESCRIPTION_COURSE } from "./data/reading-a-land-description-course";
 import { RAISING_ANIMALS_FOR_YARN_COURSE } from "./data/raising-animals-for-yarn-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
@@ -3375,6 +3376,32 @@ async function main() {
     visibility: "public",
     publishHoldReason:
       "Held until a licensed land surveyor (to be named) has read every lesson marked QR, with authority to change or cut it, and until BAM has filmed his demonstrations with the chain, compass, level and planimeter for the lessons marked P. Research tier 2: the practice of a licensed profession, next to boundary law.",
+  });
+
+  // TOOLS-04, the second half of the split surveying brief: reading the PLSS grid, metes and bounds
+  // and the deed, and Indiana's own survey records. Civics first (its subject is a public act, the
+  // 1785 decision to survey before sale), with Science & Math (the series home) and Money & Property
+  // (deeds and title) as BAM's answer 5 added. Held for a licensed land surveyor on the QR lessons,
+  // a Native reviewer on the treaty-cession lessons 3, 7 and 10 (answer 8), and BAM's filmed county
+  // surveyor visit in lesson 13 (answer 6).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reading-a-land-description",
+    course: READING_A_LAND_DESCRIPTION_COURSE,
+    category: "Civics",
+    additionalCategories: ["Science & Math", "Money & Property"],
+    seriesSlug: "tools-that-think",
+    seriesTitle: "Tools That Think",
+    seriesOrder: 4,
+    seriesCode: "TOOLS",
+    seriesPosition: "04",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "public",
+    publishHoldReason:
+      "Held until a licensed land surveyor (to be named) has read every lesson marked QR, with authority to change or cut it; until a Native reviewer (to be named) has read lessons 3, 7 and 10, which teach that the grid followed treaty cessions, with the same authority; and until BAM has filmed his county surveyor visit for lesson 13. Research tier 2: boundary law and land title, next to a licensed profession.",
   });
 
   // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared
