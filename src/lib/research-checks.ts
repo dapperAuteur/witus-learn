@@ -7907,7 +7907,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     title: "What Latin word did Napier use for the people who compute a table?",
     course: "the-slide-rule",
     lesson: "the-human-computers",
-    quote: "Napier's 1614 note at the end of his table, in Macdonald's 1889 English translation, already uses the word for a person",
+    quote: "Napier's 1614 note at the end of his table, in Macdonald's 1889 English translation, uses the word for a person",
     severity: "low",
     question: "In the Admonitio printed on the back of the last page of the 1614 Table of Logarithms, what Latin word does Napier use for the people who compute a table (Macdonald's 1889 English gives \"computors\")?",
     claim: "Lesson 16 and its quiz quote the note as \"many computors\", now attributed to Macdonald's 1889 English translation (Notes, p. 87). The Smithsonian scan of the 1614 Descriptio (archive.org mirificilogarit00napi) does not include the Admonitio: its table ends at PDF p. 163, and Macdonald says the note \"is omitted in many copies\". Napier's own 1614 preface calls the people slowed by long multiplications \"Logistas\" (PDF p. 13).",
