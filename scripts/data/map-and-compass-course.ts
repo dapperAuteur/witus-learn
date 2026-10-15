@@ -977,5 +977,46 @@ So report six digits for "here is where we are", eight when the map, the tool an
 - ${FM_2001} Locator: printed pp. 9-1 and 9-2 (PDF pp. 110 and 111), paragraphs 9-1 and 9-2; printed p. 6-1 (PDF p. 64), paragraph 6-1b.
 - ${USTOPO_HINDUSTAN} Locator: lower margin, the declination diagram (degrees and mils).`,
     },
+    {
+      slug: "choosing-a-compass",
+      title: "14 · What to look for in a compass",
+      section: "4 · The compass",
+      recallContent: [
+        {
+          prompt: "Which part of a baseplate compass is adjusted to set it for declination?",
+          answer: "The orienting arrow. Once declination is set with a screw, the orienting lines no longer run parallel to it.",
+        },
+        {
+          prompt: "What are the three major parts of a lensatic compass?",
+          answer: "The cover (sighting wire and luminous dots), the base (floating dial, index line, bezel ring of 3° clicks, thumb loop) and the lens (with the rear-sight slot).",
+        },
+      ],
+      body: `${P("BAM shows each feature below on his two compasses, and runs the buyer's checks on camera: the needle settling, the dial turning, and the declination setting being changed and locked")}
+
+**Why a lesson on buying.** You will choose your own compass, and this course names no brands and quotes no prices. What it can give you is the list of features the two backbone documents rely on, and the checks the Army manual makes on any compass before trusting it.
+
+**First feature: a declination adjustment.** The workbook's list of materials begins "Compass with adjustment for magnetic declination". It explains the choice: "Either the map or the compass needs to be adjusted for declination. It is generally easier to adjust the compass for declination, rather than the map." It also warns that designs differ: "Some compasses have a declination screw that can be turned which rotates the orienting arrow. Others require the rotation of the center of the case so the orienting arrow is offset by declination. Some compasses are automatically adjusted." Whatever the design, the workbook says to "refer to the owner's manual for specific instructions." Look for a setting you can read in degrees and that stays put once set. Lesson 17 shows what it saves you: the arithmetic and its sign errors.
+
+**For map work: a clear base plate.** The workbook's baseplate compass doubles as a ruler and protractor on the map: the plate "can be used as a ruler to measure map distances", and "Some compasses will have a protractor on the baseplate that can be used to determine bearings from a map." Look for:
+- **Orienting lines** in the housing, to line the dial up with the map's grid lines (lesson 21).
+- **A ruler or map scale on the plate.** If it carries map scales, check that one matches the 1:24,000 of a US Topo. The Army manual shows why: its lensatic's coordinate scale is 1:50,000 on newer compasses, "Some older compasses will have a 1:25,000 scale", and the values must then be adjusted. "Check the scale."
+- **A dial marked in degrees from 0 to 360**, fine enough to read to the nearest degree or two. The manual reads map azimuths "to the nearest degree".
+
+**Useful, not required.** A magnifying lens "for reading tiny map symbols"; a sighting mirror, which "can improve accuracy when reading bearings" and doubles as a signal; a clinometer, which this course does not use.
+
+**The lensatic's strengths.** The Army's compass has features built for the dark and for sighting: the "two luminous sighting slots or dots used for night navigation", a bezel ring whose 3° clicks let you set a bearing by feel (lesson 30), and a sighting wire and slot for the compass-to-cheek technique, which the manual calls "the best technique" for sighting. What the manual's compass does not have is a declination setting: it handles declination by arithmetic with the grid-magnetic angle (lesson 17).
+
+**Batteries.** The workbook teaches the baseplate compass partly because it "does not require batteries." Electronic compasses exist, and phones carry one, but a magnetic needle keeps working when the battery does not.
+
+**Checks before you trust it.** The Army manual: "A detailed inspection is required when first obtaining and using a compass. One of the most important parts to check is the floating dial, which contains the magnetic needle." It wants the sighting wire straight, the glass unbroken, "the numbers on the dial are readable, and most important, that the dial does not stick." For a baseplate compass, the same checks are: does the needle swing freely and settle, does the housing turn smoothly, can you read every mark, and does the declination setting hold. The manual also checks accuracy "on a known line of direction", and says "Compasses with more than 3° + variation should not be used."
+
+:::reveal Which compass feature does the workbook list first, and why? ||| A declination adjustment: it is "generally easier to adjust the compass for declination, rather than the map."
+
+:::reveal According to the Army manual, what is the most important check on a new compass? ||| That the dial (the magnetic needle) does not stick.
+
+## Sources
+- ${NWCG_475} Locator: p. ix, the list of materials; p. 81, chapter 4 introduction; p. 82, "Parts of a Compass"; p. 86, "Adjusting a Compass".
+- ${FM_2001} Locator: printed pp. 9-2 and 9-3 (PDF pp. 111 and 112), paragraphs 9-2a, 9-2c, 9-3a and 9-3c; printed p. 9-4 (PDF p. 113), paragraph 9-4b note; printed p. 6-7 (PDF p. 70), paragraph 6-5b note.`,
+    },
   ],
 };
