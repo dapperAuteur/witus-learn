@@ -7878,45 +7878,11 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The neighboring 2022 US Topo sheets themselves",
     ],
   },
-  {
-    key: "mc-deam-walker-trail-rule",
-    title: "Does any Deam Wilderness rule ask hikers to stay on trails?",
-    course: "map-and-compass",
-    lesson: "where-to-practice-near-indianapolis",
-    quote: "the Deam is the one site whose posted rules do not ask walkers to stay on marked trails",
-    severity: "medium",
-    question:
-      "Does the Hoosier National Forest ask walkers to stay on trails anywhere in the Charles C. Deam Wilderness, in its \"Keep Wilderness Wild\" best practices, its recreation guide, or a posted order?",
-    claim:
-      "Lesson 3 says the Deam is the one site of the four whose posted rules do not ask walkers to stay on marked trails, because the Deam page's Restrictions confine only horse riders (\"Horse riders must stay on designated trails\") while the other three properties' maps print \"PLEASE STAY ON MARKED TRAILS.\"",
-    stakes:
-      "If a stay-on-trail request for hikers exists elsewhere, lesson 3 sends learners off trail against the manager's wishes.",
-    needs: ["Any Forest Service text, quoted with its source, on off-trail foot travel in the Deam"],
-    where: [
-      "The Deam page's linked \"Keep Wilderness Wild\" best-practices page",
-      "The Charles C. Deam Wilderness Recreation Guide",
-      "Hoosier National Forest, Brownstown Ranger District office",
-    ],
-  },
-  {
-    key: "mc-deam-off-trail-practice",
-    title: "May a learner practice off-trail navigation in the Deam, and do practice markers count as geocaching?",
-    course: "map-and-compass",
-    lesson: "difficult-terrain",
-    quote: "The Deam Wilderness (lesson 3) is where the rules allow you to practice all of it off trail.",
-    severity: "medium",
-    question:
-      "Does the Hoosier National Forest permit off-trail foot travel for navigation practice in the Deam Wilderness, and would leaving temporary practice markers fall under its geocaching prohibition?",
-    claim:
-      "Lesson 31 says the Deam is where the rules allow off-trail practice, and lesson 30 says its rules expect overnight use away from trails. The Deam page (fetched 2026-10-15) confines only horse riders to trails and keeps campsites 200 feet from them, but never states that off-trail hiking is permitted, and it says \"Geocaching is prohibited.\"",
-    stakes:
-      "Learners could be sent to practice in a way the forest does not allow, or leave markers that break the geocaching ban.",
-    needs: [
-      "A written Forest Service statement on off-trail hiking in the Deam",
-      "Whether placing temporary practice markers counts as geocaching",
-    ],
-    where: ["Hoosier National Forest, Brownstown Ranger District office", "The Charles C. Deam Wilderness Recreation Guide"],
-  },
+  // mc-deam-walker-trail-rule and mc-deam-off-trail-practice were CLOSED 2026-10-15 (final read):
+  // the Hoosier National Forest's rules page (fs.usda.gov/r09/hoosier/about-area/rules-and-regulations,
+  // already cited in lesson 30) says under "Trail Use": "Hikers may hike anywhere except where an area is
+  // posted closed." Lesson 3 now quotes it and lesson 31 cites it. The practice-marker half was dropped:
+  // no lesson asks learners to place markers, and lesson 3 already quotes "Geocaching is prohibited."
   {
     key: "mc-triangle-of-error",
     title: "A public-domain source for the triangle of error and the 90° reasoning",
@@ -8069,18 +8035,18 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   },
   {
     key: "mc-read-alongside-book-details",
-    title: "Edition and publisher details for two of BAM's books",
+    title: "Which year lesson 36 should give BAM's Army map-reading book",
     course: "map-and-compass",
     lesson: "capstone-your-own-route",
     quote: "Check the edition and year of the copy you find.",
     severity: "low",
     question:
-      "From the title and copyright pages of BAM's own copies: what exact title, edition, year and publisher does Kals's land-navigation book carry, and what exact title and publisher does the 2022 Official U.S. Army map-reading book carry?",
+      "Should lesson 36 date the Army book 2022, as BAM's file and the section 8 prompt do, or 2023, as its copyright page prints?",
     claim:
-      "Lesson 36's read-alongside list gives Kals without a year or edition and the 2022 Army book without a publisher, because only the files' metadata was read (the books are Tier C). The titles also differ from BAM's own record: the lesson has \"The official U.S. Army map reading and land navigation handbook\" where the brief (BAM's answer 7) and the file on his shelf say \"The Official U.S. Army Map Reading and Land Navigation\", with no \"Handbook\"; and the lesson has \"Land navigation handbook: The Sierra Club guide to map and compass\" where the brief says \"The Land Navigation Handbook\". Fix the lesson 36 list and the section 8 quiz explanation (\"Kals, W. S., Land navigation handbook: ...\") to match the title pages.",
-    stakes: "Low: an incomplete APA entry, and a learner may find a different edition.",
-    needs: ["Kals: exact title, edition, year, publisher as printed (Sierra Club or Sierra Club Books)", "Army book: exact title and publisher as printed"],
-    where: ["BAM's copies (title and copyright pages only)"],
+      "Title and copyright pages of BAM's copies, read 2026-10-15. Kals: title page \"Land Navigation Handbook\", subtitle \"The Sierra Club Guide to Map and Compass\", Sierra Club Books, San Francisco, and \"Copyright © 1983 by W.S. Kals\" (PDF pp. 5 and 6); lesson 36 now reads Kals, W. S. (1983), Sierra Club Books. Army: the title page reads \"The Official U.S. Army Map Reading and Land Navigation Handbook\", Department of the Army, Essex, Connecticut (PDF p. 2), so the lesson's title, with \"Handbook\", is right even though the brief and the shelf file name drop the word. Its copyright page (PDF p. 3) reads \"New Lyons Press edition published 2023\" over a 2004 Rowman & Littlefield copyright, while its page footers carry a 7/1/22 production stamp. Lesson 36 now names Lyons Press but keeps (2022) and \"A 2022 printing\", because the section 8 prompt says \"the 2022 Army handbook\" and a prompt reword resets that question's history.",
+    stakes: "Low: an APA entry a year off, and a learner may look for the wrong printing.",
+    needs: ["BAM's decision: cite (2023) per the copyright page and reword the section 8 prompt, or keep 2022"],
+    where: ["BAM's copy of the Army book, copyright page (PDF p. 3)"],
   },
 ];
 

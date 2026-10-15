@@ -64,8 +64,9 @@ import type { AuthoredCourse } from "./authored-course";
 //  - L3, L30 (mc-dnr-day-visitor-hours): Indiana DNR day-visitor hours (312 IAC 8-2) could not be read.
 //  - L3 (mc-quad-coverage): each named quad holds the heart of its site, not always all of it; which
 //    neighboring sheets each site reaches is open.
-//  - L3 (mc-deam-walker-trail-rule) and L30, L31 (mc-deam-off-trail-practice): no Deam rule read asks
-//    walkers to stay on trails, but none says off-trail practice is allowed, and geocaching is banned.
+//  - L3, L30, L31: the Deam off-trail hedges (mc-deam-walker-trail-rule, mc-deam-off-trail-practice) were
+//    closed on 2026-10-15: the Hoosier National Forest's rules page says "Hikers may hike anywhere except
+//    where an area is posted closed.", now quoted in lesson 3 and cited in lesson 31.
 //  - L22 (mc-triangle-of-error): the 90° and three-line geometry is marked as the course's explanation.
 //  - L31 (mc-indiana-leaf-on): "roughly May to October" for leaf-on woods is uncited.
 //  - L32 (mc-pms475-satellite-count): whether the workbook's 29 satellites was current in 2016.
@@ -75,7 +76,8 @@ import type { AuthoredCourse } from "./authored-course";
 //  - L3 (mc-pathfinder-reopening): the Pathfinder Trail orienteering course is closed after the
 //    18 June 2026 tornado; no reopening date is published.
 //  - L24 (mc-orienteering-body-indiana): the 2001 manual's description of civilian orienteering is dated.
-//  - L36 (mc-read-alongside-book-details): edition and publisher details for two of BAM's books.
+//  - L36 (mc-read-alongside-book-details): the year of BAM's Army book, listed as 2022 though its
+//    copyright page says "New Lyons Press edition published 2023". Kals is settled (1983, Sierra Club Books).
 //  - Course-wide (mc-nwcg-pms475-revision): whether NWCG's announced revision of PMS 475 changes
 //    anything this course cites. Standards (mc-california-ccssm-grade-texts): the four grade-level
 //    CCSS texts have not been compared with California's modified publication.
@@ -266,7 +268,7 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 
 **3. Yellowwood State Forest, Brown County.** Map: BELMONT, dated 2022-10-14, contour interval 10 feet. "PLEASE STAY ON MARKED TRAILS." again, and part of the Tecumseh Trail is closed "until further notice". The two sources disagree about camping along the Tecumseh Trail: the forest's web page allows dispersed camping at least "¼ mile away from all roads, recreation areas, and trailheads, and a minimum of 100 feet from the trail", while the property map says "Camping in designated areas is allowed along this trail." Ask the forest office which rule governs before you plan a night there.
 
-**4. Charles C. Deam Wilderness, Hoosier National Forest.** Map: ELKINSVILLE, dated 2022-10-05. Of the four, the Deam is the one site whose posted rules do not ask walkers to stay on marked trails, and they expect you off the trail and out after dark. Its restrictions confine horse riders to designated trails and say nothing of the kind for walkers, and "Camping is prohibited within 200 feet of trails, trailheads, roads, water sources, rock shelters, caves, and historic structures, unless in a Forest Service designated campsite." "Group size is limited to 10 persons or less." "Geocaching is prohibited." Drones may not launch or land. And the page warns: "Please get a map before visiting this area, as the boundaries are not clearly marked." Lessons 30 and 31 point here.
+**4. Charles C. Deam Wilderness, Hoosier National Forest.** Map: ELKINSVILLE, dated 2022-10-05. Of the four, the Deam is the one site whose posted rules do not ask walkers to stay on marked trails, and they expect you off the trail and out after dark. Its restrictions confine horse riders to designated trails and say nothing of the kind for walkers, and the national forest's own rules say "Hikers may hike anywhere except where an area is posted closed." "Camping is prohibited within 200 feet of trails, trailheads, roads, water sources, rock shelters, caves, and historic structures, unless in a Forest Service designated campsite." "Group size is limited to 10 persons or less." "Geocaching is prohibited." Drones may not launch or land. And the page warns: "Please get a map before visiting this area, as the boundaries are not clearly marked." Lessons 30 and 31 point here.
 
 **Groups, events and cameras.** The Indiana DNR says a special events permit is required by 312 IAC 8-2-15 "if an individual, business or other group wishes to host an event such as a public meeting, parade, contest, competition, sporting activity or other special event or activity on a DNR property." An orienteering meet you organize is that kind of event. The DNR's rules page also links a "Commercial Film and Photography Agreement Form"; before BAM films a demonstration on DNR land, he asks the property whether his filming needs one.
 
@@ -283,6 +285,7 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 - ${YSF_PAGE} Locator: the Tecumseh Trail closure notice; "Hiking Trails", Tecumseh Trail. Linked only.
 - ${YSF_MAP} Locator: the Tecumseh Trail entry and the "Please stay on marked trails" note. Linked only.
 - ${DEAM} Locator: "Restrictions"; "Directions".
+- ${HNF_RULES} Locator: "Trail Use".
 - ${DNR_SP_RULES} Locator: the page's list of rule topics ("Commercial Film and Photography Agreement Form"); "Use of DNR Property by Private Organizations". Linked only.
 - ${USTOPO_INDY_EAST} Locator: lower margin, contour interval note and adjoining-quadrangles box; the park's woods and trails at the north edge of the map face.
 - ${USTOPO_HINDUSTAN} Locator: lower margin, contour interval note.
@@ -1077,7 +1080,7 @@ Its last two lines, a machine gun at 2 meters and a steel helmet or rifle at hal
 
 **When the ground itself pulls.** Sometimes the cause is underground. The World Magnetic Model describes only the long-wavelength part of the field, generated mainly in Earth's outer core, and NCEI says "Some local, regional, and temporal magnetic declination anomalies can exceed 10 degrees", while anomalies "of the order of 3 or 4 degrees are not uncommon but are usually of small spatial extent." Lesson 16 explains the model; for now, if two careful readings from spots a few meters apart disagree, suspect the ground or something you are carrying.
 
-**Orienting the compass, or "boxing the needle".** The workbook's first exercise: set 0° (or 360°) at the index line, then "Hold the base plate and turn your body until the north seeking end of the magnetic needle lines up with the orienting arrow. The direction you are facing is magnetic north." Lining the needle up inside the arrow is called "boxing the needle", and the bearing methods in lessons 18 and 19 begin with it.
+**Orienting the compass, or "boxing the needle".** The workbook's first exercise: set 0° (or 360°) at the index line, then "Hold the base plate and turn your body until the north seeking end of the magnetic needle lines up with the orienting arrow. The direction you are facing is magnetic north." Lining the needle up inside the arrow is called "boxing the needle", and the bearing methods in lessons 18 and 19 rely on it.
 
 :::reveal How far does the Army manual say to stay from a truck or a tank, and from barbed wire? ||| 18 meters from a field gun, truck or tank; 10 meters from barbed wire or telephone wires.
 
@@ -2035,7 +2038,8 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 
 ## Sources
 - ${FM_2001} Locator: printed pp. 13-1 to 13-3 (PDF pp. 173 to 175), paragraph 13-1; printed p. 13-5 (PDF p. 177), paragraph 13-2; printed pp. 13-6 to 13-8 (PDF pp. 178 to 180), paragraph 13-3; printed pp. 13-9 and 13-10 (PDF pp. 181 and 182), paragraphs 13-4 and 13-5.
-- ${MMSF_PAGE} Locator: the property description. Linked only.`,
+- ${MMSF_PAGE} Locator: the property description. Linked only.
+- ${HNF_RULES} Locator: "Trail Use".`,
     },
     {
       slug: "section-6-quiz",
@@ -2444,8 +2448,8 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 
 **Reading alongside.** BAM keeps three land-navigation books on his own shelf. They are named here so you can find them, not quoted or summarized, and this course does not rely on them:
 - Burns, B., & Burns, M. (2015). *Wilderness navigation: Finding your way using map, compass, altimeter & GPS* (3rd ed.). Mountaineers Books.
-- Kals, W. S. *Land navigation handbook: The Sierra Club guide to map and compass*. Sierra Club. Check the edition and year of the copy you find.
-- Department of the Army. (2022). *The official U.S. Army map reading and land navigation handbook* [Commercial edition]. A 2022 printing of Army land-navigation material, separate from the 2001 field manual this course is built on.
+- Kals, W. S. (1983). *Land navigation handbook: The Sierra Club guide to map and compass*. Sierra Club Books.
+- Department of the Army. (2022). *The official U.S. Army map reading and land navigation handbook* [Commercial edition]. Lyons Press. A 2022 printing of Army land-navigation material, separate from the 2001 field manual this course is built on. Check the edition and year of the copy you find.
 
 **What you have now.** A map you can read, a compass you can trust, a position you can find, and a plan you can walk, with a phone as a check rather than a crutch. The Army manual's last word on method still holds: "One should not depend entirely on compass navigation or map navigation; either or both could be lost or destroyed."
 
