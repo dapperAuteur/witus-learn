@@ -438,7 +438,7 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 
 **The older scheme.** The USGS's 2005 symbol sheet describes the paper maps you will find in the historical collection: area colors first, "vegetation (green), water (blue), and densely built-up areas (gray or red)"; then lines, "topographic contours (brown); lakes, streams, irrigation ditches, and other hydrographic features (blue); land grids and important roads (red); and other roads and trails, railroads, boundaries, and other cultural features (black)." The 2001 fact sheet adds that "Woodlands, for instance, are shown in a green tint" and "Buildings may be shown on the map as black squares or outlines."
 
-**Purple.** Open an older quad and you may find features printed in purple. The fact sheet explains: "Recent changes in an area may be shown by a purple overprint." The 2005 sheet finishes the story: "At one time, purple was used as a revision color to show all feature changes. Currently, purple is not used in our revision program, but purple features are still present on many existing maps." Purple means "added at a revision, from photographs", and often not checked on the ground.
+**Purple.** Open an older quad and you may find features printed in purple. The fact sheet explains: "Recent changes in an area may be shown by a purple overprint." The 2005 sheet finishes the story: "At one time, purple was used as a revision color to show all feature changes. Currently, purple is not used in our revision program, but purple features are still present on many existing maps." On an old sheet, purple marks what was added at a revision.
 
 **Symbols change, so read the legend.** The 2005 sheet warns that symbols "are constantly refined", so "within the same series, maps may have slightly different symbols for the same feature." The Army manual makes it a habit: "the legend should be referred to each time a new map is used." For a US Topo, the legend is a separate document: the symbol guide "is included as an attachment for all US Topo map downloads."
 
@@ -450,10 +450,9 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 
 ## Sources
 - ${FM_2001} Locator: printed pp. 3-5 and 3-6 (PDF pp. 21 and 22), paragraphs 3-3 and 3-5.
-- ${USGS_USTOPO_SYM} Locator: p. 2, "Symbols on US Topo Maps".
+- ${USGS_USTOPO_SYM} Locator: p. 2, "Symbols on US Topo Maps"; and the media page's "Detailed Description".
 - ${USGS_GIP_SYM} Locator: p. 1, "What is a Topographic Map?" and "Reading Topographic Maps".
-- ${USGS_FS} Locator: p. 1, the paragraph on colored areas and symbols.
-- U.S. Geological Survey. (2023, January 11). *US Topo map symbols* [Media page, "Detailed Description"]. https://www.usgs.gov/media/files/us-topo-map-symbols Locator: "Detailed Description".`,
+- ${USGS_FS} Locator: p. 1, the paragraph on colored areas and symbols.`,
     },
   ],
 };
