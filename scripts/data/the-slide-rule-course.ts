@@ -730,6 +730,44 @@ Each distance is the logarithm from lesson 1 times 10. For finer marks, take the
 - ${CULLIMORE} Locator: p. 9 (PDF p. 13), "The numbers on A are the squares of those on D" and the square of 4.17; p. 10 (PDF p. 14), the square roots of 5 and 50, the rule for the half of A, and estimating; p. 11 (PDF p. 15), the area of a circle and the 0.7854 mark; p. 15 (PDF p. 19), 3 squared times 9. ${TA}
 - ${PICKWORTH} Locator: p. 37 (PDF p. 43), squares and square roots on A and D and the rule for squaring; p. 38 (PDF p. 44), the square of 114 and 12,996, the roots of 36,500 and 0.0098; p. 39 (PDF p. 45), squaring by ordinary multiplication. ${TA}`,
     },
+    {
+      slug: "reading-the-l-scale",
+      title: "11 · Reading logarithms on the L scale",
+      section: "4 · A, B and L: squares, roots and logarithms",
+      recallContent: [
+        {
+          prompt: "What does Cullimore call the A and D scales taken together?",
+          answer: "A table of squares and square roots ready at hand: the numbers on A are the squares of those on D.",
+        },
+        {
+          prompt: "Why does Pickworth's square of 114 read 13,000 when the true value is 12,996?",
+          answer: "A is half as long as D, so its marks are coarser and it gives only two or three figures. Multiplying 114 by itself on C and D gives three.",
+        },
+      ],
+      body: `${P("BAM on camera showing where the L scale sits on his own rule, then reading the logarithms of 2 and 265 and setting the logarithm 3.697 to find its number")}
+
+**A ruler with equal marks.** Every scale so far has been logarithmic, its marks crowding together toward the right. The L scale is not. Pickworth finds it on the back of the slide of the Gravet and similar rules: one of three scales there, "usually the centre one," is "divided equally throughout its entire length, and figured from right to left. It is sometimes marked L, indicating that it is a scale giving logarithms." It is divided "primarily into ten equal parts, and each of these subdivided into 50 equal parts," so each small division is worth 0.002. It is lesson 3's ordinary ruler, laid beside the logarithmic one to measure how far each number sits from 1.
+
+**Why it reads logarithms.** The L scale is "equal in length to the logarithmic scale D." When the left index of C sits over a number on D, the slide has moved a distance proportional to that number's logarithm, and an evenly divided scale on the slide measures the move. Pickworth's example: set 1 on C to 2 on D, turn the rule over, and read at the reference mark in the notch at the right-hand end: 0.301, the logarithm of 2.
+
+**Cullimore's two ways.** On his Keuffel & Esser rule the back of the slide carries a scale of sines marked S, a scale of tangents marked T, and "a scale of equal parts in the center," read under "the line etched on the xylonite on the left end of the back of the rule." First way: set 1 on C to the number on D, turn the rule over, and read under the line. For 265 he reads 423. Second way: "reverse and invert the slide," so that its back faces you upside down in the groove, and read the figures "directly over the number on D," using the runner. Both give the same reading.
+
+**Only the mantissa.** The scale gives the decimal part. Cullimore: "It should be remembered that the number found on the rule gives only the mantissa of the logarithm and that the characteristic must in every case be supplied in order to complete the logarithm." 265 has three figures before the point, so its characteristic is 2 (lesson 2), and log 265 = 2.423. Pickworth states the rule for the characteristic exactly as lesson 2 did: the number of figures before the point, minus 1; or, for a number wholly decimal, the zeros after the point, plus 1, and negative.
+
+**Back from a logarithm to its number.** Run it the other way. Cullimore finds the number whose logarithm is 3.697: set 697 on the scale of equal parts to the line, and read on D under 1 on C: 4980. The characteristic 3 says four figures before the point, so the number is 4,980.
+
+**Where is yours?** Not every rule keeps L on the back of the slide. A Smithsonian record lists L on the front of a Pickett "Decimal Keeper" of about 1958, beside the K, A, DF and D scales; another lists it among the scales on the second side of a two-sided 5-inch Pickett rule of the early 1960s. Find it on your own rule before you start. Where it sits on BAM's rule is shown in his video and is not yet recorded in this lesson.
+
+:::reveal What does the L scale read when 1 on C is set to 2 on D? ||| 0.301, the mantissa of the logarithm of 2 (Pickworth's example).
+
+:::reveal What must you add to an L-scale reading to complete a logarithm? ||| The characteristic, worked out from the number of figures (lesson 2): for 265 it is 2, so log 265 = 2.423.
+
+## Sources
+- ${PICKWORTH} Locator: p. 45 (PDF p. 51), the scale of logarithms on the back of the slide, its divisions and the reference mark; p. 46 (PDF p. 52), why it reads the mantissa, log 2 = 0.301, and the rule for the characteristic. ${TA}
+- ${CULLIMORE} Locator: p. 5 (PDF p. 9), the S, T and equal-parts scales on the back of the slide; p. 6 (PDF p. 10), the line on the back of the rule; p. 20 (PDF p. 24), the two ways of reading logarithms, log 265 = 2.423, and the number whose logarithm is 3.697. ${TA}
+- ${NMAH_904} Locator: description, first paragraph (the scales on the front). ${TB}
+- ${NMAH_N600} Locator: description, first and second paragraphs (the scales on each side). ${TB}`,
+    },
     // NEXT_SECTIONS
   ],
 };
