@@ -50,7 +50,8 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Briggs, a printed log table, the human computers), from Gunter's line to the Moon (Oughtred and Delamain
   read side by side, Mannheim, Langley and Apollo, the HP-35), and charts and circles (nomograms, circular
   rules, the pilot's E6B, a capstone of Cullimore's printed problems). Every worked number comes from
-  Pickworth (1920), Cullimore (1920) or Lipka (1918), or is plain arithmetic. Claims 8.EE.A.3, 8.EE.A.4,
+  Pickworth (1920), Cullimore (1920), Lipka (1918), the 1964 federal handbook or the FAA's pilot handbook, or
+  is plain arithmetic. Claims 8.EE.A.3, 8.EE.A.4,
   HSF-BF.B.5, HSN-Q.A.3 and MP5; four research checks filed. Public and free, held for BAM's demonstrations
   in the lessons marked P (3 to 7, 10 to 13, 15, 22 and 25). Not yet: the ElementaryMBA copy (needs his OK on
   a seed-registry test change), STAGED_COURSES (after seeding), and the E6B lesson in an aviation course.

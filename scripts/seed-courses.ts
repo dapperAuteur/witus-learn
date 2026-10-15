@@ -1771,7 +1771,7 @@ async function main() {
     priceType: "free",
     visibility: "public",
     publishHoldReason:
-      "Held until BAM has recorded the demonstrations the lessons marked P call for (3 to 7, 10 to 13, 15, 22 and 25) on his own Mannheim-type rule, card rods and printed log table. Every P lesson already teaches its operation in writing; the videos show it done. Research tier 1: mathematics and history, every example from two public-domain manuals of 1920.",
+      "Held until BAM has recorded the demonstrations the lessons marked P call for (3 to 7, 10 to 13, 15, 22 and 25) on his own Mannheim-type rule, card rods and printed log table. Every P lesson already teaches its operation in writing; the videos show it done. Research tier 1: mathematics and history, every worked example from public-domain sources (Pickworth and Cullimore, 1920; Lipka, 1918; the 1964 federal handbook; the FAA's pilot handbook) or plain arithmetic.",
   });
 
   // River Expedition, course 1 of 11 (RIVER-01). FREE: it is the series funnel and the course that

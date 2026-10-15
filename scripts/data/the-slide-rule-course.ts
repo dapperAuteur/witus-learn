@@ -33,7 +33,9 @@ import type { AuthoredCourse } from "./authored-course";
 // typed answer is graded by exact match (src/lib/exercise.ts), so every numeric question's options
 // differ by a power of ten (testing the decimal point) or by far more than a rule's reading error
 // (testing the operation). Every worked number comes from Pickworth (1920) or Cullimore (1920), whose
-// printed answers are public domain, or is plain arithmetic shown in the lesson.
+// printed answers are public domain, from Lipka (1918), Abramowitz and Stegun (1964) or the FAA's
+// Pilot's Handbook (2023), or is plain arithmetic shown in the lesson (the Napier's-rods products,
+// checked by ordinary multiplication).
 //
 // RIGHTS (the source-hosting rule in CLAUDE.md, decided per source):
 //  - Tier A, may be hosted on Cloudinary later: Pickworth 1920, Cullimore 1920 (K&E, copyright 1915,
@@ -135,7 +137,7 @@ const P = (what: string) => `> **Before release:** needs a practitioner or BAM's
 export const THE_SLIDE_RULE_COURSE: AuthoredCourse = {
   title: "The Slide Rule",
   description:
-    "Learn to multiply, divide, square, take square roots and read common logarithms on a basic Mannheim-type slide rule, to place the decimal point by estimating first, and to say how many figures an answer is good for. The course starts with why it works (every number sits at a distance from 1 proportional to its logarithm, so sliding one length along another adds logarithms, and adding logarithms multiplies), has you build a paper rule, and teaches what to look for in a rule of your own. Then it goes back to what came before and after: Napier's rods and his 1614 table, Briggs's base-10 logarithms, printed log tables and the human computers who made them, Gunter's line of numbers, the Oughtred and Delamain dispute read from both men's own words, Mannheim's runner, slide rules at Langley and on Apollo (and what they were not used for), the handheld calculator that ended the era, nomograms, circular rules and the pilot's E6B. Every worked example comes from two public-domain manuals of 1920. Trigonometric and log-log scales are named but not taught. The second course in the Tools That Think series.",
+    "Learn to multiply, divide, square, take square roots and read common logarithms on a basic Mannheim-type slide rule, to place the decimal point by estimating first, and to say how many figures an answer is good for. The course starts with why it works (every number sits at a distance from 1 proportional to its logarithm, so sliding one length along another adds logarithms, and adding logarithms multiplies), has you build a paper rule, and teaches what to look for in a rule of your own. Then it goes back to what came before and after: Napier's rods and his 1614 table, Briggs's base-10 logarithms, printed log tables and the human computers who made them, Gunter's line of numbers, the Oughtred and Delamain dispute read from both men's own words, Mannheim's runner, slide rules at Langley and on Apollo (and what they were not used for), the handheld calculator that ended the era, nomograms, circular rules and the pilot's E6B. Every worked example comes from public-domain sources (two slide-rule manuals of 1920, a 1918 MIT text on graphical computation, a 1964 federal handbook of tables and the FAA's pilot handbook) or is plain arithmetic shown in the lesson. Trigonometric and log-log scales are named but not taught. The second course in the Tools That Think series.",
   lessons: [
     // ══════════════════════════════════════════════════════════════════════
     // SECTION 1: Why it works
