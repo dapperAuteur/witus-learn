@@ -376,5 +376,47 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 - ${USGS_COPYRIGHT} Locator: the answer and its note on commercial road data.
 - ${USTOPO_HINDUSTAN} Locator: the edition dates, as listed by The National Map for the Hindustan quad (2010-05-13, 2013-05-20, 2016-10-18, 2019-05-10, 2022-10-05).`,
     },
+    {
+      slug: "the-margin",
+      title: "5 · The margin: read the instructions first",
+      section: "2 · Reading a topographic map",
+      recallContent: [
+        {
+          prompt: "What is a US Topo map, in the USGS symbol guide's words?",
+          answer: "\"a digital topographic map that covers 7.5-minutes of longitude by 7.5-minutes of latitude and is produced at a scale of 1:24,000.\" Its base layer is a recent aerial photograph.",
+        },
+        {
+          prompt: "How do the USGS's own pages disagree about how often US Topo maps change?",
+          answer: "The 2023 symbol guide says they are \"revised on a three-year production cycle\"; the program page says that was historical and that \"Beginning in 2026\" maps update from changes in the underlying data.",
+        },
+      ],
+      body: `**The map's instructions.** The Army manual opens its chapter on the margin with an analogy: "A map could be compared to any piece of equipment, in that before it is placed into operation the user must read the instructions." The instructions are the marginal information printed around the edge, and the manual's rule is to read them every time: "All maps are not the same, so it becomes necessary every time a different map is used to examine the marginal information carefully."
+
+**What to look for, and why each matters.** The manual lists more than twenty items for a military sheet. These are the ones a civilian US Topo also carries:
+- **The name.** "A map is generally named for the settlement contained within the area covered by the sheet, or for the largest natural feature".
+- **The scale**, as a fraction such as 1:24,000, and the **bar scales**, which are "rulers used to convert map distance to ground distance." The manual warns that "Care should be exercised when using the scales, especially in the selection of the unit of measure that is needed." Lesson 7 uses both.
+- **The contour interval**, the height between neighboring contour lines. Lesson 8 depends on it.
+- **The declination diagram**, which "indicates the angular relationships of true north, grid north, and magnetic north." Section 4 is built on it.
+- **The datum.** Coordinates mean nothing without it. The manual's warning: "UTM coordinates from the same point computed on different data may differ as much as 900 meters." The wildland fire workbook calls the datum and UTM zone "extremely important when using a GPS receiver." Lesson 34 comes back to this.
+- **The date.** The map information date "is important when determining how accurately the map data might be expected to match what you will encounter on the ground." A printing date is not the same thing and "should not be used to determine when the map information was obtained."
+- **The legend.** "The symbols are not always the same on every map. Always refer to the legend to avoid errors when reading a map." Lesson 6 reads it.
+- **The adjoining sheets**, so you know which quad to download when your route runs off the edge.
+
+**One margin, read.** The Hindustan quad that covers Morgan-Monroe State Forest prints, along its bottom edge: HINDUSTAN QUADRANGLE, INDIANA, 7.5-MINUTE SERIES; SCALE 1:24 000; CONTOUR INTERVAL 10 FEET; NORTH AMERICAN VERTICAL DATUM OF 1988 for heights; North American Datum of 1983 (NAD83) for positions, with the projection and 1,000-meter grid on "Universal Transverse Mercator, Zone 16S". Its declination diagram is titled "UTM GRID AND 2019 MAGNETIC NORTH DECLINATION AT CENTER OF SHEET", and shows magnetic north 4°28' (79 mils) to the west of true north and grid north 0°21' (6 mils) to the east. Its adjoining-quadrangles box names eight neighbors, from Paragon and Martinsville to Bloomington and Belmont. And it says plainly: "This map is not a legal document."
+
+**Numbers, not the drawing.** The USGS fact sheet adds a warning about that diagram: "The declination diagram is only representational, and true values of the angles of declination should be taken from the numbers provided rather than from the directional lines." Never measure the angle with a protractor off the diagram; read the number.
+
+**When the workbook is out of date.** The workbook, written in 2016, says "The datum used for most currently available USGS 7.5 minute series topographical maps is the NAD27." Every current US Topo quad in lesson 3 prints NAD83. A historical quad may print NAD27. Read the datum on the sheet in your hand, not the one a book expects.
+
+:::reveal According to the Army manual, how far apart can UTM coordinates of the same point be when computed on different datums? ||| "as much as 900 meters."
+
+:::reveal On the Hindustan quad, which way and how far does magnetic north lie from true north, and for what year? ||| 4°28' (79 mils) west of true north, for 2019, at the center of the sheet.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 3-1 to 3-4 (PDF pp. 17 to 20), paragraph 3-1, items a, d, f, j, k, l, q, t and w.
+- ${NWCG_475} Locator: p. 14, "Topographic Maps"; p. 36, "Datum and UTM Zone".
+- ${USGS_FS} Locator: pp. 1 and 2, "From Here to There: Determining Direction".
+- ${USTOPO_HINDUSTAN} Locator: lower margin, the scale, contour interval, datum and projection notes, the declination diagram and the adjoining-quadrangles box.`,
+    },
   ],
 };
