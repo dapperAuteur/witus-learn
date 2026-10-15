@@ -125,6 +125,12 @@ const USGS_USTOPO_SYM =
   "U.S. Geological Survey. (2023, January 11). *US Topo map symbols* (ver. 7.7). https://www.usgs.gov/media/files/us-topo-map-symbols";
 const USGS_GIP_SYM =
   "U.S. Geological Survey. (2005). *Topographic map symbols* [General Interest Publication]. https://pubs.usgs.gov/publication/70039164";
+const USGS_UTM_MEASURED =
+  "U.S. Geological Survey. (n.d.-d). *How are UTM coordinates measured on USGS topographic maps?* [FAQ]. https://www.usgs.gov/faqs/how-are-utm-coordinates-measured-usgs-topographic-maps";
+const USGS_UTM_GRID =
+  "U.S. Geological Survey. (n.d.-e). *Do all USGS 7.5 minute topographic maps show the UTM grid?* [FAQ]. https://www.usgs.gov/faqs/do-all-usgs-75-minute-topographic-maps-show-utm-grid";
+const FGDC_USNG =
+  "Federal Geographic Data Committee. (n.d.). *United States National Grid*. https://www.fgdc.gov/usng";
 const NPS_TEN =
   "National Park Service. (2026, May 28). *Ten essentials*. U.S. Department of the Interior. https://www.nps.gov/articles/10essentials.htm";
 
@@ -732,6 +738,48 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 ## Sources
 - ${FM_2001} Locator: printed pp. 4-1 to 4-3 (PDF pp. 23 to 25), paragraphs 4-1 and 4-2a to 4-2d.
 - ${NWCG_475} Locator: p. 37, "Latitude and Longitude (edges of map)"; pp. 66 to 68, "Latitude/Longitude" and "Counting and Converting Minutes and Seconds".`,
+    },
+    {
+      slug: "the-utm-grid",
+      title: "11 · The UTM grid: read right, then up",
+      section: "3 · Saying where a place is",
+      recallContent: [
+        {
+          prompt: "About how far on the ground is one degree of latitude?",
+          answer: "About 111 kilometers (69 miles); one second is about 30 meters (100 feet). A degree of longitude shrinks toward the poles.",
+        },
+        {
+          prompt: "In the western hemisphere, which way do you count longitude on the map?",
+          answer: "From right to left (east to west): longitude west grows toward the map's left edge.",
+        },
+      ],
+      body: `**Why a square grid.** On the projection used for large-scale maps, "most lines of latitude and longitude are curved lines", and the shapes between them differ in size. So a rectangular grid is laid over the map, "a system of squares similar to the block system of most city streets." That grid is the Universal Transverse Mercator, or UTM, and it measures in meters, not degrees.
+
+**Sixty zones.** The UTM grid covers the world "between latitude 84°N and latitude 80°S". It is divided into "60 zones (6 degrees wide)", numbered from west to east starting at the 180° meridian. The workbook adds that the lower 48 states span 10 of them, and the USGS that Zone 1 includes the westernmost point of Alaska and Zone 19 includes Maine. Indiana is in Zone 16, and the USGS gives its center line: "In Zone 16, for example, the central meridian is at 87 degrees longitude west."
+
+**The false origin.** Each zone measures from its central meridian and the equator. Measuring both ways from zero would give negative numbers west of the center line, so the grid assigns "false values" that make every point positive. "The false eating value" (the manual's misprint for easting) "for each central meridian is 500,000 meters, and the false northing value for the equator is 0 meters when measuring in the northern hemisphere". An easting is meters east of a line 500,000 meters west of the central meridian; a northing is meters north of the equator.
+
+**Right, then up.** The manual states its one rule in capitals: "Distances are always measured RIGHT and UP (east and north as the reader faces the map)". This is the coordinate plane from math class. The easting is the x-coordinate, read first, going right; the northing is the y-coordinate, read second, going up; and because of the false origin, every point in the zone sits in the first quadrant, with both numbers positive. Interpreting a coordinate is reading what each number says about the ground:
+- An easting of 546,000 meters is 546,000 - 500,000 = **46,000 meters east of the central meridian**, 87° W.
+- An easting of 297,480 meters, the workbook's New Hampshire example in Zone 19, is 500,000 - 297,480 = **202,520 meters west** of that zone's central meridian.
+- Two made-up points in Zone 16: A at 546,200 m E, 4,370,700 m N; B at 547,500 m E, 4,371,100 m N. B is 547,500 - 546,200 = **1,300 meters east** and 4,371,100 - 4,370,700 = **400 meters north** of A.
+
+**Zone and row.** The manual's grid also has lettered rows, C through X, 8 degrees high, "I and O were omitted". A zone number and row letter make a grid zone designation, read right and up, so "the number is always written before the letter". The manual's example is Columbus, Georgia, "grid zone designation 16S". Every quad in lesson 3 prints "Grid Zone Designation 16S" too.
+
+**On the map.** A US Topo draws black grid lines every 1,000 meters, labeled in the margin with shortened numbers. "Note that the large numbers adjacent to the tick marks around the perimeter of the map represent tens of thousands and thousands of meters", says the USGS; the full value is printed near the corners. So a line labeled 46 on the Hindustan quad means 46 thousand within its hundred-thousand, and the corner tells you which hundred-thousand.
+
+**When the grid arrived: the sources disagree.** The workbook says blue ticks marked the grid "Prior to 1978" and black grid lines appeared "Since 1978". One USGS answer says "Almost all USGS topographic maps produced after 1977 show UTM tick marks ... (or a full-line grid)". Another says blue ticks began in the mid-1950s, "In 1979, the ticks were replaced with a full-line black UTM grid", the decision was "reversed in 1992, then reversed again in 1994", and maps made with the Forest Service "do not show the full grid regardless of their vintage." All agree on the present: "All US Topo maps published after 2009 have a full UTM grid". On an older sheet, look before you rely on it.
+
+:::reveal What does "read right, then up" mean for a UTM coordinate? ||| Read the easting first (meters east, going right), then the northing (meters north, going up), like x and then y on a graph.
+
+:::reveal What false easting does every UTM central meridian carry, and why? ||| 500,000 meters, so that every point in the zone has a positive easting.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 4-10 to 4-12 (PDF pp. 32 to 34), paragraphs 4-3a and 4-4.
+- ${NWCG_475} Locator: p. 38, "Universal Transverse Mercator (UTM) (edges of map)"; pp. 69 to 71, "UTM Grid Zones" and "UTM Coordinates".
+- ${USGS_UTM_MEASURED} Locator: the answer, first and second paragraphs.
+- ${USGS_UTM_GRID} Locator: "Historical Topographic Map Collection" and "US Topo maps".
+- ${USTOPO_HINDUSTAN} Locator: lower margin, "Grid Zone Designation 16S"; the grid labels along the edges.`,
     },
   ],
 };
