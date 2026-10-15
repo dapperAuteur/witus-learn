@@ -672,5 +672,46 @@ Breed and Hosmer set this problem (p. 30): in 1859 a line bore N 21° W when the
 - ${WHITE} Locator: the Land Ordinance text, p. 12 (PDF p. 26); pp. 18 to 19 (PDF pp. 32 to 33); p. 49 (PDF p. 63); Mansfield's letter, p. 51 (PDF p. 65). ${TIER_A}
 - ${NCEI} Locator: the "Description" (accuracy, coverage, models) and the "Time Period" under "Time & Location". ${TIER_A}`,
     },
+    {
+      slug: "local-attraction",
+      title: "10 · Local attraction: sight the line from both ends",
+      section: "2 · Direction: the surveyor's compass",
+      recallContent: [
+        {
+          prompt: "What is the declination of the needle?",
+          answer: "The angle the needle makes with the true meridian: east when the north end points east of true north, west when it points west (Breed and Hosmer, sec. 28).",
+        },
+        {
+          prompt: "What magnetic bearing did Mansfield find Freeman had run the Vincennes Tract's north boundary on, and what declination did he observe?",
+          answer: "A magnetic bearing of N 78° W, with an average declination of 6° 45' E (White, p. 49).",
+        },
+      ],
+      body: `${P("BAM taking a bearing and its reverse on a line well clear of iron, then on a line with one end beside a parked car or a steel fence post, with the two pairs of readings compared on screen")}
+
+**What pulls the needle aside.** Breed and Hosmer (sec. 26): "Since iron or steel near the instrument affects the position of the needle, great care should be taken that the chain, axe, or marking pins are not left near the compass. Small pieces of iron on the person, such as keys, iron buttons, or the iron wire in a stiff hat, also produce a noticeable effect on the needle." And in 1912 they already warned that "electric currents are a great source of disturbance to the needle and in cities, where electricity is so common, the compass is practically useless." Today's version of the same list is anything steel or electric near the compass: a phone, a car, a fence, a buried pipe, a power line. A disturbance at one station, from a source you may not see, is called local attraction.
+
+**The check: sight the line from both ends** (sec. 40). "As the needle is always affected by masses of iron near the compass it is important that the bearings in any survey should be checked. This is most readily done by taking the bearing of any line from both its ends or from intermediate points on the line. If the two bearings agree it is probable that there is no local magnetic disturbance." A bearing and its reverse should share the same angle with the letters flipped, exactly 180° apart.
+
+**Breed and Hosmer's worked case** (their Fig. 10, p. 29). With the compass at A, the bearing of AB reads N 50¼° E. With the compass at B, the reverse bearing BA reads S 49° W. They disagree by 1¼°, so "there is local attraction at one or both points." Which one?
+1. From B, sight a third point C that looks free of disturbance. BC reads S 72° E.
+2. Move to C and sight back. CB reads N 72° W.
+3. That pair agrees, so there is no local attraction at B or C. The reading taken at B, S 49° W, is therefore the true magnetic bearing of the line, and "there is 1¼° error in all bearings taken at A."
+4. If BC and CB had not agreed, take the bearing and reverse of a new line CD, and keep going "until a line is found whose bearing and reverse bearing differ by exactly 180°."
+
+**Correcting the bad station.** A disturbance at A turns every reading taken at A by the same amount, so the fix is one number applied to all of them. At A the line to B read N 50¼° E, an azimuth of 50¼°, when its true magnetic azimuth was 49°: the readings at A are 1¼° too far clockwise. Take 1¼° off every azimuth read at A. A reading of N 10° W at A (an azimuth of 350°) becomes 348¾°, or N 11¼° W.
+
+**Why angles survive it.** Because every bearing at one station is turned by the same amount, the angle between two lines read at that station does not change. Subtract one disturbed azimuth from another and the disturbance cancels. That is why a compass traverse can still close when one corner sits next to a steel post: the angles are sound even though the bearings at that corner are not.
+
+**Two more habits from the same chapter** (secs. 38 and 39). The common sources of error are "iron or steel near compass" and "parallax in reading needle." The common mistakes are reading the wrong end of the needle, not letting the needle down on the pivot, and reading the wrong side of the tenth degree, "61° instead of 59°."
+
+**To try.** Choose a line well clear of fences and cars, read its bearing from each end, and confirm the pair sits 180° apart. Then repeat with one end beside a steel post and watch the pair disagree.
+
+:::reveal From A, line AB reads N 30° E. From B, line BA reads S 32° W. What does that tell you, and what do you do next? ||| The pair is 2° off from a true reverse, so there is local attraction at A, at B, or both. Sight a third point C from B, then sight back from C; whichever station gives a matching pair is the clean one.
+
+:::reveal Every azimuth read at station D is known to be 2° too far counterclockwise. A reading at D is S 40° E. What is the corrected bearing? ||| S 40° E is an azimuth of 140°. Too far counterclockwise means add 2°: 142°, which is S 38° E.
+
+## Sources
+- ${BH} Locator: sec. 26, pp. 18 to 19 (scan pp. 44 to 45); secs. 38 and 39, p. 28 (scan p. 54); sec. 40 and Fig. 10, p. 29 (scan p. 55). ${TIER_A_PD}`,
+    },
   ],
 };
