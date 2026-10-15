@@ -788,5 +788,51 @@ That is lesson 6's rule again, at the scale of a backyard: monuments first, meas
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3: Indiana on the grid
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "how-indiana-was-surveyed",
+      title: "10 · How Indiana was surveyed: three origins, Freeman's lines, and the cessions the grid followed",
+      section: "3 · Indiana on the grid",
+      recallContent: [
+        {
+          prompt: "Which reference elements does a complete grid description contain?",
+          answer: "Principal meridian, State, township and range, section, and lots or aliquot parts (Specifications, p. 10).",
+        },
+        {
+          prompt: "What does \"more or less\" after a deed's area signal?",
+          answer: "That the boundaries, not the stated figure, control.",
+        },
+      ],
+      body: `${QR(`${SURVEYOR}, to check the survey history and the description of the meridians; and ${NATIVE_REVIEWER}, to read how the lesson presents the cessions, the Vincennes Tract, and the order in which treaties and surveys came`)}
+
+**The rule Indiana was surveyed under.** The Act of March 26, 1804 "made the necessary provision for the disposal of the public lands in the Indiana Territory." The Manual's own summary of it: "This is an early example of the policy to extinguish Indian title to the public domain, followed by the extension of the surveys and settlement" (sec. 1-20(n)). White's reading of the act's first section is blunter: it extended the surveyor general's authority to the lands north of the Ohio "to which Indian title had been extinguished or 'shall hereafter be extinguished,'" and "the Federal government made no pretense that all the lands would not eventually be acquired from the Indians and everybody knew it, except maybe the Indians themselves" (p. 48). In Indiana, the survey moved only as fast as the cessions did.
+
+**Three origins, not one.** Indiana's townships are counted from three different starting lines (Manual, tables 3-1 and 3-2):
+- **The Ohio River Base (Indiana),** begun 1799, with townships "north from Ohio River" and ranges counted "from Ohio-Indiana boundary and its projection south." The Indiana State Library traces this to the Gore of Indiana, the triangle created by the 1795 Treaty of Greenville, "the first place in Indiana to use townships, sections and quarter-sections," with the Greenville Treaty Line "surveyed by Ludlow from 1797 to 1799."
+- **The Second Principal Meridian,** adopted 1805, governing surveys "in Illinois and Indiana."
+- **The First Principal Meridian,** adopted 1819, governing "Ohio and Indiana," which reached the northeast of the state.
+So a township number in Indiana means nothing until you know which origin it counts from. A description that names its meridian answers that.
+
+**The Vincennes Tract.** The oldest settled part of Indiana sat inside the space the 1775 deed had reserved (lesson 7). White: "only the Vincennes Tract and a few thousand acres of French claims had been cleared of Indian title by the Fort Wayne Treaty of June 7, 1803, 7 Stat. 74," and "Thomas Freeman had already surveyed the boundaries of the Vincennes Tract in 1803" (p. 48). Wilson, writing in 1916 from Freeman's records in the State Auditor's office, gives the work as "in 1802-3" (p. 1) and quotes Freeman's own first entry: "Crossed the Wabash July 21st (1802), and proceeded from Vincennes with my little party for Point Coupee" (p. 12). Two careful sources, one year apart. Wilson's quotation suggests the work began in 1802 and ran into 1803; White's sentence may simply date its completion. When sources disagree, report both and say which evidence each rests on.
+
+Freeman's north line ran from Point Coupee on the Wabash "south 78 degrees east" to a corner near Orleans, and his east line "south 12 degrees west, 40 miles" (Wilson, p. 7). In 1804 Jared Mansfield found that Freeman "had run the north boundary on a magnetic bearing of N. 78° W. instead of true bearing" and measured the declination at "6° 45' E." (White, p. 49). The companion course's lesson 9 works that error through, and asks you to check Mansfield's figure yourself.
+
+**Mansfield's new grid.** At Vincennes, Mansfield "personally attended to and directed the establishment of the Second Principal Meridian and Base Line in Indiana" (White, p. 49). His letter of October 26, 1804 explains why he did not keep counting from the Ohio: "The townships would not then, as heretofore, be numbered from the Ohio, but from the Base Line, which I have caused to be run for the purpose of surveying here. This I account an advantage, as it would present an uniformity of numbers in the adjacent townships of different ranges" (p. 51). Townships inside the tract were closed against Freeman's lines, and the grid was "continued and extended outside the tract when the Indian lands were acquired. That plan was not always adhered to, however, and some jogs occurred at Old Indian treaty boundaries" (p. 51). On open prairie Mansfield proposed corners of "stones or posts and mounds of earth," which "was later made the usual practice" (p. 51).
+
+**Cession by cession.** Wilson lists what followed around Freeman's corner near Orleans: the Vincennes Tract "acquired by the United States June 7, 1803; the land immediately east of the Freeman Corner ... acquired by the treaty of Grouseland, August 21, 1805, and the land immediately north of the Vincennes Tract was acquired by the treaty of Ft. Wayne, September 30, 1809," with William Henry Harrison "the leading agent for the general government" (p. 9). The Freeman Corner, he notes, "is a corner of three Indian concessions." The State Library's blog quotes a soil survey's summary that "the state survey was completed about 1834." Every township line between those dates was run on land a treaty had just transferred.
+
+:::reveal Why can a township number in Indiana not be read without its meridian? ||| Indiana is counted from three origins: the Ohio River Base of 1799, the Second Principal Meridian of 1805, and the First Principal Meridian of 1819. The same number can mean different places.
+
+:::reveal White dates Freeman's survey of the Vincennes Tract to 1803; Wilson to 1802-3. What evidence supports Wilson's earlier start? ||| Wilson quotes Freeman's own record: "Crossed the Wabash July 21st (1802)."
+
+## Sources
+- ${MANUAL} Locator: sec. 1-20(n), p. 21 (PDF p. 32); tables 3-1 and 3-2, pp. 41 to 42 (PDF pp. 52 to 53). ${TIER_A}
+- ${WHITE} Locator: p. 48 (PDF p. 62); p. 49 (PDF p. 63); Mansfield's letter and the jogs, p. 51 (PDF p. 65). ${TIER_A}
+- ${WILSON} Locator: p. 1 (Freeman, "1802-3"); p. 7 (the north and east lines); p. 9 (the cessions); p. 12 (Freeman's first entry). ${TIER_A_1916}
+- ${ISL_BLOG} Locator: the paragraphs on the Gore, the Greenville Treaty Line, and "about 1834". ${TIER_B}`,
+    },
   ],
 };
