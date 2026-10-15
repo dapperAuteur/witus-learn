@@ -4890,6 +4890,101 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ══ TOOLS-02 · The Slide Rule ═══════════════════════════════════════════════
+  //
+  // A CALCULATING course, unlike the two interpret-it courses above, so read the boundary with care.
+  // The slide rule's answers are read by eye, and the platform grades typed answers by exact match,
+  // so every quiz is multiple choice whose options differ by a power of ten or by far more than a
+  // reading error. That is enough to claim standards about estimating, powers of ten and choosing a
+  // level of accuracy, which the lessons teach and the quizzes test; it is NOT enough to claim
+  // standards whose substance is solving equations, which the course never asks for. Each standard
+  // these claims back says on its own entry what it does not cover.
+  {
+    id: "catalog.slide-rule-powers-of-ten-estimate",
+    claim:
+      "Rounds numbers to a single digit times a power of ten to estimate the size of a product or quotient before calculating, including very large and very small quantities, and states how many times as large one quantity is than another.",
+    courseSlugs: ["the-slide-rule"],
+    lessons: [
+      // One-figure estimates: 63,200 is about 6 × 10⁴ and 0.0035 about 4 × 10⁻³, so the product is
+      // about 240; the true 221.2 is the same size.
+      "2 · Powers of ten and the decimal point",
+      // The estimate places every decimal point the rule cannot show (793 read as 7930; 74 read as
+      // 0.00074), and compares 7,930 with 65,400,000 by one-digit estimates: about 9,000 times.
+      "8 · Placing the decimal point by estimate",
+      // Thirteen of Cullimore's printed problems, each worked estimate first.
+      "25 · Capstone: a page of arithmetic by estimate, rule and check",
+    ],
+  },
+  {
+    id: "catalog.slide-rule-scientific-notation",
+    claim:
+      "Multiplies and divides numbers written as a number times a power of ten, moving between decimal and power-of-ten forms, and reads a result a calculator displays in scientific notation.",
+    courseSlugs: ["the-slide-rule"],
+    lessons: [
+      // Pickworth's notation: 3,610,000 = 3.61 × 10⁶; 63,200 × 0.0035 worked as 6.32 × 10⁴ × 3.5 × 10⁻³.
+      "2 · Powers of ten and the decimal point",
+      // 17,300 × 3780 = 1.73 × 3.78 × 10⁷ = 65,400,000; 0.00000285 ÷ 0.000197 = 1.446 × 10⁻².
+      "8 · Placing the decimal point by estimate",
+      // The HP-35 shows numbers outside one hundredth to 10 billion in scientific notation, the power
+      // of ten in its three rightmost places (Smithsonian record).
+      "21 · The HP-35 and the end of an era",
+    ],
+  },
+  {
+    id: "catalog.logarithms-as-exponents",
+    claim:
+      "Treats a common logarithm as the exponent to which 10 must be raised, reads logarithms and the numbers they belong to on a slide rule's L scale and in a printed table, and uses that inverse relationship to multiply, divide, and raise numbers to powers and roots.",
+    courseSlugs: ["the-slide-rule"],
+    lessons: [
+      // Pickworth's definition (the index of the power to which 10 must be raised), log 2 + log 4 =
+      // log 8, doubling a logarithm squares, dividing by 3 takes a cube root.
+      "1 · Multiplying by adding",
+      // The L scale: mantissa and characteristic, log 265 = 2.423, and back from 3.697 to 4,980.
+      "11 · Reading logarithms on the L scale",
+      // 36 to the power 1.414 and 717 to the power 3/5 by logarithms, and when not to use them.
+      "12 · Powers and roots by logarithms, with notes on CI and K",
+      // Briggs's base-10 logarithms, "in which the logarithm of unity is 0".
+      "14 · The 1614 table, and Briggs's \"better kind\" of logarithm",
+      // Table 4.1 of the 1964 federal handbook: mantissa, characteristic, antilogarithm, interpolation.
+      "15 · Reading a printed log table, and interpolating",
+    ],
+  },
+  {
+    id: "catalog.choosing-calculating-tools",
+    claim:
+      "Weighs calculating tools (a slide rule, a printed table, an alignment chart, a circular calculator, an electronic calculator) by what each can and cannot do, including how many figures each supports, and uses a prior estimate to catch errors any of them can produce.",
+    courseSlugs: ["the-slide-rule"],
+    lessons: [
+      // What limits a rule: scale length, cursor, fit, honest marks.
+      "4 · What to look for in a basic rule",
+      // Three figures as the rule's honest limit, and when that is enough.
+      "9 · How accurate is it, and why three figures is honest",
+      // What the Apollo crews' rule was used for and what the computers did instead.
+      "20 · Slide rules at Langley and on Apollo, and what they were not used for",
+      // What the calculator does not do: stop at three figures, or estimate.
+      "21 · The HP-35 and the end of an era",
+      // Alignment charts as a tool with its own strengths (Lipka's list).
+      "22 · Nomograms: a straightedge as a calculator",
+      // Circular calculators weighed against straight rules (Pickworth's advantages and disadvantages).
+      "23 · Circular rules, from Delamain's ring to the pocket watch",
+    ],
+  },
+  {
+    id: "catalog.slide-rule-figures-warranted",
+    claim:
+      "Reports a calculated result to the number of figures its measurements and the instrument support, and explains why carrying more figures than the data warrant overstates the accuracy of the result.",
+    courseSlugs: ["the-slide-rule"],
+    lessons: [
+      // Cullimore: significant figures, the prism of earth written 6900, "perilously near to lying
+      // with figures", one part in a thousand, Holman's rule; Pickworth's 0.15 per cent.
+      "9 · How accurate is it, and why three figures is honest",
+      // How many figures each scale can be read to: three on C and D, four at the left, two or three on A and B.
+      "5 · Stock, slide, cursor, and reading between the marks",
+      // A slide rule stopped you at three figures; a calculator will not.
+      "21 · The HP-35 and the end of an era",
+    ],
+  },
+
   // ══ MONEY-01 · Credit, and the Decisions Made About You ══════════════════════
   //
   // THE POINT OF THESE CLAIMS, STATED ONCE. Nineteen jurisdiction files in data/ carried a
