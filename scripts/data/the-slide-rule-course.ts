@@ -1549,6 +1549,43 @@ and carry on for 20 to 100, each 5 inches higher than the mark ten times smaller
 - ${LIPKA} Locator: Preface, p. iii (PDF p. 9), the MIT course, graphical charts, the alignment type and d'Ocagne; p. 9 (PDF p. 25), Art. 6, three figures on C and D and estimating the decimal point; p. 44 (PDF p. 60), Art. 22, the advantages and the index line; p. 46 (PDF p. 62), straight edge, celluloid or thread, and "almost square"; p. 47 (PDF p. 63), Art. 24, the chart for multiplication and the reading 7, 3, 21; p. 48 (PDF p. 64), the decimal point and Art. 25, six formulas and the reading 3, 5, 15. ${TA}
 - ${PICKWORTH} Locator: pp. 10 to 11 (PDF pp. 16 to 17), the card-rule distances. ${TA}`,
     },
+    {
+      slug: "circular-rules",
+      title: "23 · Circular rules, from Delamain's ring to the pocket watch",
+      section: "7 · Charts and circles that calculate",
+      recallContent: [
+        {
+          prompt: "On Lipka's multiplication chart, why does the middle scale read the product?",
+          answer: "A straight line crosses the midline at the average of its heights on the outer scales, 5 × (log u + log v) = 5 × log (u × v), so a middle scale marked at 5 × log w reads the product.",
+        },
+        {
+          prompt: "What does Lipka call the straight line laid across a nomogram?",
+          answer: "The isopleth or index line. He suggests a straightedge, a line scratched on celluloid, or a thread to read it.",
+        },
+      ],
+      body: `**The first slide rule was round.** Richard Delamain's instrument of 1630 (lesson 18) had "two Circles, the one moveable, and the other fixed." The moving circle is "divided into unequall parts, charactered with figures thus, 1. 2. 3. 4. 5. 6. 7. 8. 9.," and "1. stands for 1. or 10. or 100., &c.": the decimal point left to the user, exactly as in lesson 2. Oughtred's book of 1632 described a different arrangement, fixed circles "with an index to be opened after the manner of a paire of Compasses." Oughtred said he had changed his rules from a moving circle to the two arms of an index at the request of the instrument maker Elias Allen.
+
+**Why a circle.** Pickworth weighs circular calculators against the straight rule. For them: "It is more compact and conveniently carried in the waistcoat pocket. The scales are continuous, so that no traversing of the slide from 1 to 10 is required. The dial can be set quickly to any value; there is no trouble with tight or ill-fitting slides." On a circle the 10 is also the 1, so a product never runs off the end, and lesson 6's change of index disappears. Against them: "Many problems involve more operations than a straight rule." Results are read under pointers, which brings an error of parallax, "so that the results generally are not so accurate as with a straight rule." The inner scales are short and read less accurately, cubes need special circles, and "The slide cannot be reversed or inverted."
+
+**Longer scales by curling them.** Accuracy depends on the length of the scale (lesson 4), so makers curled long scales into small spaces. A Yorkshire gentleman named Milbourn laid Gunter's line out "in a Serpentine or Spiral Line, thereby enlarging the divisions," though William Leybourn complained that such an instrument "can in no wise be made portable." Delamain proposed a "great Cylinder" a yard across carrying "100 or more Circles." Later designers wound the line around a cylinder: Thacher's cylindrical rule (lesson 19), and Fuller's Spiral Slide Rule, with the logarithmic line running around a cylinder like a screw thread.
+
+**American circles.** Before the straight rule caught on in the United States, there were circular ones. Cajori records Aaron Palmer's Computing Scale, published in Boston in 1844, "a circular slide rule, 8 in. in diameter," and the next year a Pocket Scale 2 5/8 inches across.
+
+**The watch that calculates.** The Boucher calculator, Pickworth writes, "resembles a stem-winding watch, being about 2in. in diameter." It has two dials, the back one fixed and the front one turned by the winding stem, and two fine needle pointers that move together, one over each dial. Its main logarithmic scale "corresponds to a straight scale of about 4¾in. in length"; other circles give square roots, cube roots, logarithms of sines, and a scale of equal parts for logarithms. To multiply 2 by 3, Pickworth turns the dial until 2 lies under the fixed index, sets the moving pointer to 1, then turns the dial on until 3 comes under the pointer, and reads 6 under the fixed index. His rule: "Set one factor to the fixed index and bring the pointer to 1 on the scale; set the other factor to the pointer and read the result under the fixed index."
+
+**Gunter's dividers in a pocket.** Look at what the Boucher does. The fixed index and the moving pointer hold an arc of scale between them, the arc from 1 to 2, the way the two points of Gunter's dividers hold a length (lesson 17). Turning the dial adds a second arc, from 1 to 3, and the end lands on the product. Division takes an arc away: "Set the dividend to the fixed index, and the pointer to the divisor; turn the dial until 1 on the scale agrees with the pointer, and read the result under the fixed index." Same logarithms, curled into a circle.
+
+**One circle still in use.** Pilots still carry a circular calculator. Lesson 24 looks at it briefly.
+
+:::reveal What advantages does Pickworth give circular calculators? ||| They fit a waistcoat pocket, their scales are continuous so the slide never has to be moved from 1 to 10, they set quickly, and they have no tight or ill-fitting slides.
+
+:::reveal How does Pickworth multiply 2 by 3 on the Boucher calculator? ||| Turn 2 under the fixed index, set the moving pointer to 1, turn the dial until 3 is under the pointer, and read 6 under the fixed index.
+
+## Sources
+- ${PICKWORTH} Locator: p. 101 (PDF p. 107), circular calculators, their advantages and disadvantages, and the Boucher's size; p. 102 (PDF p. 108), the Boucher's dials, pointers, the 4¾-inch scale and its other circles; p. 103 (PDF p. 109), the rules for multiplication and division. ${TA}
+- ${CAJORI_1920} Locator: p. 189 (PDF p. 7), Milbourn's spiral line and Leybourn's objection; p. 196 (PDF p. 14), Delamain's two circles and their figures; p. 200 (PDF p. 18), Oughtred's index and Elias Allen; p. 202 (PDF p. 20), Delamain's great cylinder. ${TA}
+- ${CAJORI_1909} Locator: p. 33, Palmer's Computing Scale of 1844 and his Pocket Scale; p. 37, Fuller's Spiral Slide Rule and other circular designs. ${TA}`,
+    },
     // NEXT_SECTIONS
   ],
 };
