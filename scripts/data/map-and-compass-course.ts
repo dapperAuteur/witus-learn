@@ -1069,5 +1069,56 @@ Its last two lines, a machine gun at 2 meters and a steel helmet or rifle at hal
 - ${USGS_FS} Locator: p. 2, "A Word of Caution".
 - ${NCEI_WMM_ACC} Locator: the opening paragraph on what the model leaves out, and its anomaly sentences.`,
     },
+    {
+      slug: "three-norths-and-declination",
+      title: "16 · Three norths, and declination",
+      section: "4 · The compass",
+      recallContent: [
+        {
+          prompt: "How far does the Army manual say to stay from high-tension power lines, a truck, and barbed wire?",
+          answer: "55 meters from high-tension power lines, 18 meters from a field gun, truck or tank, and 10 meters from telephone wires and barbed wire.",
+        },
+        {
+          prompt: "How do you hold a baseplate compass for a reading?",
+          answer: "Level and steady so the needle swings freely, about waist high in front of you, facing the object directly; take the bearing twice.",
+        },
+      ],
+      body: `**Three norths.** The Army manual: "There are three base lines: true north, magnetic north, and grid north."
+- **True north** is "A line from any point on the earth's surface to the north pole. All lines of longitude are true north lines." It is drawn as a star.
+- **Magnetic north** is the direction the needle shows, drawn as a line with half an arrowhead and labeled MN.
+- **Grid north** is "established by using the vertical grid lines on the map", labeled GN. On a current US Topo, the USGS says, the grid is UTM, and "The difference between true north and grid north is an inherent effect of transforming the earth's spherical surface to a plane surface".
+
+**Declination, defined twice.** The manual's definition is general: "Declination is the angular difference between any two norths." It names two of the angles: the **grid-magnetic (G-M) angle** "between grid north and magnetic north", and the **grid convergence**, between true north and grid north. NCEI, which computes the values, uses the word for the one that matters most: "Magnetic declination (sometimes called magnetic variation) is the angle between magnetic north and true north. Declination is positive when this angle is east of true north and negative when it is west."
+
+**Where does the needle point? The sources disagree.** The Army manual calls magnetic north "The direction to the north magnetic pole", and the workbook says "The magnetic needle points to the magnetic North Pole." NCEI answers the question directly: "No. The compass points in the directions of the horizontal component of the magnetic field where the compass is located, and not to any single point." Trust NCEI here. The field is lumpy, which is why declination differs from place to place, and the USGS adds that "at very high latitudes, the compass can even point south!"
+
+**East or west.** The workbook: in the lower 48 states declination "generally varies between zero and twenty degrees". East of the zero line, as in Maine, the needle points west of true north, a westerly declination; west of it, as in Nevada, easterly. Indiana's is westerly.
+
+**Angles add: the Hindustan diagram.** The Hindustan quad's diagram shows magnetic north 4°28' west of true north and grid north 0°21' east of it. The G-M angle runs from grid north, past true north, to magnetic north, so it is made of those two parts, and angles that do not overlap add:
+
+G-M angle = 4°28' + 0°21' = **4°49'**
+
+The other three quads in lesson 3 work the same way. Indianapolis East: 4°49' + 0°36' = **5°25'**. Belmont: 4°32' + 0°26' = **4°58'**. Elkinsville: 4°31' + 0°26' = **4°57'**. Run it backward as an equation with an unknown: if a map gave a G-M angle of 4°49' and a grid convergence of 0°21' on the opposite side of true north, the declination d solves 4°49' = d + 0°21', so d = 4°28'. When the two lines lie on the same side of true north, the smaller angle sits inside the larger, and you subtract instead. That is why the manual tells you to sketch the diagram every time.
+
+**Why the date matters.** Magnetic north drifts. The USGS: "magnetic declination values on old maps might no longer be accurate." The Hindustan diagram is labeled "2019 MAGNETIC NORTH DECLINATION AT CENTER OF SHEET". This course's own calculation from the current World Magnetic Model gives about **4°47' west** for the center of that sheet on 14 October 2026, about 19' more than the printed 4°28'. That figure is an estimate the course has filed to be confirmed against NCEI's online calculator; use the calculator for the value on the day you walk.
+
+**The model, and what it leaves out.** NCEI: "The current version (WMM2025) was released on December 17, 2024, and will remain valid until late 2029", and "the current model expires on December 31, 2029." It "comes pre-installed in Android and iOS devices". But it "only describe[s] the long-wavelength portion of Earth's internal magnetic field"; the crust, upper mantle, ionosphere and magnetosphere "are not represented". Near the magnetic poles lie "Blackout Zones" where "compasses are unreliable."
+
+**A primary-source exercise.** Look up today's declination for the center of your quad on NCEI's calculator. Write it beside the printed value and its year. Then download a historical quad of the same ground (lesson 4) and add its printed value and year. You now have three dated measurements of a moving field.
+
+:::reveal On the Hindustan quad, what is the grid-magnetic angle, and why is it a sum? ||| 4°49': magnetic north is 4°28' west of true north and grid north 0°21' east, so the two non-overlapping angles add.
+
+:::reveal Does a compass needle point to the magnetic pole? ||| NCEI says no: it points along "the horizontal component of the magnetic field where the compass is located, and not to any single point."
+
+## Sources
+- ${FM_2001} Locator: printed pp. 6-1 and 6-2 (PDF pp. 64 and 65), paragraph 6-2; printed pp. 6-8 to 6-14 (PDF pp. 71 to 77), paragraph 6-6.
+- ${NCEI_DECL} Locator: "Magnetic Declination", first paragraph; "Does the compass needle point toward the magnetic pole?"
+- ${NWCG_475} Locator: p. 81, chapter 4 introduction; pp. 85 and 86, "Adjusting a Compass for Magnetic Declination".
+- ${USGS_NORTH} Locator: the answer, on true, magnetic and grid north.
+- ${USGS_DECL} Locator: the answer, first paragraph.
+- ${NCEI_WMM} Locator: the overview paragraphs and the "WMM2025 Coefficient File" note.
+- ${NCEI_WMM_ACC} Locator: opening paragraph; "Blackout Zone (BoZ)".
+- ${USTOPO_HINDUSTAN} Locator: the declination diagram. Also ${USTOPO_INDY_EAST}; ${USTOPO_BELMONT}; ${USTOPO_ELKINSVILLE}, each at its declination diagram.`,
+    },
   ],
 };
