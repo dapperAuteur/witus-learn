@@ -103,6 +103,8 @@ const DNR_SP_RULES =
   "Indiana Department of Natural Resources. (n.d.-c). *Rules & regulations* [State parks]. https://www.in.gov/dnr/state-parks/property-rules-and-regulations";
 const DEAM =
   "USDA Forest Service. (n.d.). *Charles C. Deam Wilderness*. Hoosier National Forest. https://www.fs.usda.gov/r09/hoosier/recreation/charles-c-deam-wilderness";
+const HNF_RULES =
+  "USDA Forest Service. (n.d.). *Rules and regulations*. Hoosier National Forest. https://www.fs.usda.gov/r09/hoosier/about-area/rules-and-regulations";
 // The four US Topo sheets (Tier A, federal, public domain), as downloaded from The National Map.
 const USTOPO_INDY_EAST =
   "U.S. Geological Survey. (2022a). *Indianapolis East quadrangle, Indiana* [US Topo 7.5-minute map, 1:24,000; dated 2022-10-14]. https://prd-tnm.s3.amazonaws.com/StagedProducts/Maps/USTopo/PDF/IN/IN_Indianapolis_East_20221014_TM_geo.pdf";
@@ -1928,6 +1930,52 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 - ${MMSF_ORIENT} Locator: the "LOST?" note. Linked only.
 - ${NPS_TEN} Locator: "Extra clothing".
 - ${DEAM} Locator: "Pre-Trip Check List".`,
+    },
+    {
+      slug: "night-navigation",
+      title: "30 · Night navigation",
+      section: "6 · Planning and walking a route",
+      recallContent: [
+        {
+          prompt: "Lost, what is the first thing to do, and where do you work from?",
+          answer: "Stop walking; then work forward from your last certain position rather than from where you assume you are.",
+        },
+        {
+          prompt: "If you cannot fix your position, what is the advice?",
+          answer: "Stay in one place if it is safe, so searchers can find you, and make yourself visible and audible.",
+        },
+      ],
+      body: `${QR("a search-and-rescue member or a wilderness or land-navigation instructor, to check the night methods, the lensatic click arithmetic and the advice on where and how a civilian should practice after dark")}
+
+**Same methods, less to see.** The Army manual opens its night paragraph plainly: "Darkness presents its own characteristics for land navigation because of limited or no visibility. However, the techniques and principles are the same as that used for day navigation." What changes is how much you can check as you go, so more of the work moves to the planning table.
+
+**Plan harder.** "The success in nighttime land navigation depends on rehearsals during the planning phase before the movement, such as detailed analysis of the map to determine the type of terrain in which the navigation is going to take place and the predetermination of azimuths and distances." Every bearing and distance on your route card (lesson 26) is worked out in daylight. The manual also weighs checkpoints "even more heavily when selecting the route for a night operation", because "The degree of visibility and ease of recognition (visual effect) are the key".
+
+**Dead reckoning, with help.** "The basic technique used for nighttime land navigation is dead reckoning with several compasses recommended." A second person a few steps ahead can be the steering mark, the way the manual sends "a member of the unit out in front of your position to create your own steering mark". If you pick natural marks, they "must have even more unique shapes than those selected during daylight", because "As darkness approaches, colors disappear and objects appear as black or gray silhouettes." And keep them close: in darkness "your steering marks must be close together."
+
+**Your pace changes.** "Smaller steps are taken during night navigation, so remember, the pace count is different." The manual recommends a night pace count measured on a 100-meter course, and lesson 23's list already said poor visibility shortens a pace.
+
+**The lensatic's night features.** The cover's "two luminous sighting slots or dots" and the bezel ring's 3° clicks let you set a bearing by touch, the "click method":
+- Set the luminous line over the black index line. For a bearing under 180°, divide by 3 and count that many clicks counterclockwise: the manual's example, "51° ÷ 3 = 17 clicks counterclockwise."
+- For a bearing over 180°, subtract it from 360, divide by 3, and count clockwise: "360°-330° = 30 ÷3 = 10 clicks clockwise."
+- When a bearing does not divide by 3, round, and remember which way: rounding up means the goal "is to be found on the left"; rounding down, "on the right."
+- For a quick right angle around an obstacle, turn until the luminous E (right) or W (left) sits under the luminous line, without touching the bezel.
+- "When the compass is to be used in darkness, an initial azimuth should be set while light is still available, if possible."
+
+**North at night.** The North Star (lesson 25) is the best reference in this hemisphere, and the shadow-tip method works with the moon "bright enough to cast a shadow."
+
+**Light, and the rules.** Carry a headlamp and spare batteries: the Park Service's Ten Essentials say "Headlamps are the recommended light source because they are hands-free." And check that you may be there at all. Of the sites in lesson 3, the Charles C. Deam Wilderness is the one whose rules expect overnight use away from trails; on the wider Hoosier National Forest, "Day use areas are closed between 10 PM and 6 AM except for fishermen on the water." At Morgan-Monroe, after dark means registered backcountry camping. Practice first on ground you have walked in daylight.
+
+:::reveal Using the click method on a lensatic, how do you set 51°? ||| 51 ÷ 3 = 17 clicks counterclockwise from the index line.
+
+:::reveal Why does the Army manual say night steering marks need more distinctive shapes? ||| Because in the dark "colors disappear and objects appear as black or gray silhouettes."
+
+## Sources
+- ${FM_2001} Locator: printed p. 11-18 (PDF p. 164), paragraph 11-7; printed pp. 11-12 to 11-16 (PDF pp. 158 to 162), paragraphs 11-5b(1), 11-6a(5)(c), (6) and (11)(b); printed pp. 9-2 and 9-5 to 9-6 (PDF pp. 111 and 114 to 115), paragraphs 9-2a and 9-4c(2) to 9-4d(2).
+- ${NPS_TEN} Locator: "Illumination".
+- ${DEAM} Locator: "Restrictions".
+- ${HNF_RULES} Locator: the day-use hours.
+- ${MMSF_PAGE} Locator: "Camping", backcountry paragraph. Linked only.`,
     },
   ],
 };
