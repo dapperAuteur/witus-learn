@@ -2337,5 +2337,54 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 8: Where it came from, and your own route
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-compass-and-the-map-in-history",
+      title: "35 · The compass and the map in history",
+      section: "8 · Where it came from, and your own route",
+      recallContent: [
+        {
+          prompt: "Before plotting a GPS fix on a US Topo, what must you set on the receiver?",
+          answer: "The datum printed on the map (NAD83 on current US Topo quads) and, to use the grid, UTM coordinates.",
+        },
+        {
+          prompt: "A plotted GPS fix disagrees with the ground. What do you suspect, in order?",
+          answer: "The datum, the coordinate format, a 2D fix, and then the map's age.",
+        },
+      ],
+      body: `**This lesson is a map of other lessons.** The history of the compass and the map is taught elsewhere in this catalog by courses that read the sources for it. This course points you to them, and then gives you a primary-source exercise of your own: the maps in this course are historical documents too.
+
+**The needle at sea.** *Asia Before European Colonization: The Center of Gravity*, in its lesson "8 · The Song economic revolution", reads the earliest Chinese accounts: the scholar-official Shen Kuo describing the magnetized needle in 1088, and Zhu Yu's *Pingzhou Ketan*, from the early 1100s, recording ships' pilots using it in overcast weather, which that course calls "the earliest known account of marine compass navigation anywhere."
+
+**A chart made for a compass.** *Monsters at the Edge of the Map*, in its lesson "2 · Three objects that look alike and are not", reads the portolan chart, drawn from the 1300s on and "covered in radiating lines called rhumb lines that a navigator used with a compass to hold a bearing." Its coasts are good and its interiors nearly empty, and the course's point applies to every map in this one: "The chart leaves out what its user will not use." A US Topo leaves things out too (lesson 6). Every map is edited for its user.
+
+**Colors with a long memory.** The Army manual notes that "By the fifteenth century, most European maps were carefully colored", with mountains brown, water blue and vegetation green, and that "the use of colors has not changed much over the past several hundred years" (lesson 6).
+
+**The finding you started with.** *How We Know What's Out There*, lesson "1 · Finding yourself by the sky", shows how the sky gave latitude long before any grid, and lesson 25 used its North Star. The satellites in lesson 32 rest on the earth-shape mathematics that *Who Gets the Credit* credits to Gladys West.
+
+**Your own maps are history.** The USGS describes US Topo as "Building on the success of 125 years of mapping", and its Historical Topographic Map Collection holds the paper maps "published as paper documents between 1884-2006." The documents this course is built on are dated too: the Army's FM 3-25.26 of 2001 replaced its FM 21-26 of 1993 and has since been replaced itself; the World Magnetic Model "is updated every five years"; the workbook's GPS chapter froze 2016's satellite count. A map is a claim made on a date.
+
+**A primary-source exercise.** Pick the ground you will walk in lesson 36.
+1. Download its current US Topo (lesson 4) and the oldest quad of the same ground in the historical collection.
+2. Compare their margins: the dates, the datum, the grid (lesson 11's sources disagree on when black grid lines arrived, so look), the contour interval, and the printed declination and its year.
+3. Compare the ground: which roads, buildings, woods and water appear on one and not the other? Mark which changes are cultural features and vegetation, the ones the Army manual warns "are most likely to have changed since the map was last revised" (lesson 26).
+4. Use NCEI's geomagnetic calculators, which compute the field "for specific time frames and coordinates", to look up the declination for the old quad's year and for today, and set the three values side by side (lesson 16).
+5. Write two sentences: what changed on the land, and what changed in the field your compass reads.
+
+**What comes next in the series.** This is the first course in Tools That Think. The next takes up the slide rule, and later courses turn to surveying, the measuring of land that put many of the lines on your quad.
+
+:::reveal According to the Monsters at the Edge of the Map course, why were portolan charts nearly empty inland? ||| Editing, not ignorance: "The chart leaves out what its user will not use."
+
+:::reveal Which years does the USGS Historical Topographic Map Collection cover? ||| Paper maps published between 1884 and 2006.
+
+## Sources
+- ${FM_2001} Locator: printed p. 3-6 (PDF p. 22), paragraph 3-5; printed p. i (PDF p. 2), the supersession note; printed p. 11-13 (PDF p. 159), paragraph 11-5b(2).
+- ${USGS_USTOPO} Locator: the US Topo summary paragraph ("125 years of mapping").
+- ${USGS_OLDER} Locator: the answer.
+- ${NCEI_WMM} Locator: the overview paragraph on five-year updates.
+- ${NCEI_DECL} Locator: "Geomagnetic Calculators".`,
+    },
   ],
 };
