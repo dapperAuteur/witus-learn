@@ -496,5 +496,47 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 - ${USGS_FS} Locator: p. 1, "From Near to Far: Distance" and its table of map series.
 - ${FH_MAP} Locator: the park's address block ("1,744 Acres"). Linked only.`,
     },
+    {
+      slug: "contour-lines",
+      title: "8 · Contour lines: reading height and steepness",
+      section: "2 · Reading a topographic map",
+      recallContent: [
+        {
+          prompt: "How do you turn a map measurement into a ground distance?",
+          answer: "Multiply the map measurement by the denominator of the representative fraction. On a 1:24,000 map, one inch is 2,000 feet.",
+        },
+        {
+          prompt: "Why are distances measured on a map short of what you walk on hilly ground?",
+          answer: "Maps \"measure horizontal distances, not slope distances\" (the workbook), so a hill adds distance the map does not show.",
+        },
+      ],
+      body: `**What a contour is.** The 2023 US Topo symbol guide: "The unique feature of a topographic map is the contour. These lines do not exist on the Earth's surface. They join points of equal elevation above a zero level surface (such as Mean Sea Level) and therefore show heights of the land and reveal the shape of the land surface." Picture walking a hillside without ever going up or down: your path is a contour line. The 2005 sheet adds the rule that follows from it: "Each contour is a line of equal elevation; therefore, contours never cross."
+
+**Three kinds of line.** The Army manual names them:
+- **Index.** "Starting at zero elevation or mean sea level, every fifth contour line is a heavier line." Index contours carry their elevation as a number.
+- **Intermediate.** The finer lines between them, which "do not have their elevations given. There are normally four intermediate contour lines between index contour lines."
+- **Supplementary.** Dashed lines that "show changes in elevation of at least one-half the contour interval", used "where there is very little change in elevation, such as on fairly level terrain."
+
+**The contour interval.** The interval is the height between neighboring lines, printed in the margin under the bar scale. It varies with the ground: the symbol guide says "A map of a relatively flat area may have a contour interval of 10 feet. In steep areas an interval of 100 feet or more may be used". Around Indianapolis it is 5 feet on the Indianapolis East quad and 10 feet on the three southern quads in lesson 3. With four intermediates between index lines, an index line comes every fifth contour, so on a 10-foot map the index lines are 50 feet apart.
+
+**Reading an elevation.** The manual's steps: find the interval, find the nearest numbered index line, decide whether you are going up or down from it, and count lines. "If you are increasing elevation, add the contour interval to the nearest index contour line. If you are decreasing elevation, subtract the contour interval". Worked on a 10-foot map: a point on the second intermediate line above the 700-foot index is 700 + 2 × 10 = **720 feet**. A point on the line just below the 750-foot index is **740 feet**.
+
+**Between the lines, and on top.** For a point between two lines, the manual's rule of thumb: under a quarter of the way across, take the lower line; from a quarter to three quarters, add half the interval; past three quarters, take the upper line. For a hilltop, "Add one-half the contour interval to the elevation of the last contour line." A hilltop inside a closed 780-foot line on a 10-foot map is about **785 feet**. A depression works the other way: subtract half the interval from the lowest line, and its contour carries tick marks that "always point to lower elevations."
+
+**Known heights.** "Bench marks, the more accurate of the two, are symbolized by a black X", with the height beside it, and spot elevations mark hilltops and road junctions.
+
+**Steepness.** "Closely spaced contours indicate a steep land slope; widely spaced contours show more level ground," says the symbol guide. The workbook measures it as a percentage: "A one percent slope indicates a rise or drop of one unit over a distance of 100 horizontal units." Rise is the difference in height; run is the map distance through the scale. Worked: from a 700-foot line to a 750-foot line across 0.25 inch of a 1:24,000 map is a rise of 50 feet over a run of 500 feet, a **10 percent** slope.
+
+:::reveal On a map with a 10-foot contour interval, how far apart in height are the index contours? ||| 50 feet: every fifth line is an index line, with four intermediates between.
+
+:::reveal How does the Army manual estimate the elevation of a hilltop? ||| Add half the contour interval to the last contour line below the top.
+
+## Sources
+- ${USGS_USTOPO_SYM} Locator: p. 2, the paragraph beginning "The unique feature of a topographic map is the contour."
+- ${USGS_GIP_SYM} Locator: p. 1, "Reading Topographic Maps", the contour paragraph.
+- ${FM_2001} Locator: printed pp. 10-1 to 10-5 (PDF pp. 123 to 127), paragraphs 10-2e, 10-3 and 10-4.
+- ${NWCG_475} Locator: p. 45, slope.
+- ${USTOPO_INDY_EAST} Locator: lower margin, contour interval note.`,
+    },
   ],
 };
