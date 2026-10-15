@@ -1807,5 +1807,43 @@ An invented example, to show the form: "Leg 2: stream junction to trail crossing
 - ${NWCG_475} Locator: p. 171, Appendix C field-notes form.
 - ${DEAM} Locator: "Pre-Trip Check List".`,
     },
+    {
+      slug: "time-slope-and-turning-back",
+      title: "27 · Time, slope, and the turn-back rule",
+      section: "6 · Planning and walking a route",
+      recallContent: [
+        {
+          prompt: "What are the Army manual's four steps of land navigation?",
+          answer: "Know where you are, plan the route, stay on the route, and recognize the objective.",
+        },
+        {
+          prompt: "What does the manual call the method of reaching a small goal from a nearby, easy checkpoint?",
+          answer: "Point navigation: follow a compass azimuth and pace off the short, known distance to the final destination.",
+        },
+      ],
+      body: `${QR("a search-and-rescue member or a wilderness or land-navigation instructor, to check the timing advice and the turn-back guidance for civilian walkers")}
+
+**How long will it take?** The workbook says navigation skills help you know "how long it will take, and when you will get back." The only number the two backbone documents give for walking speed is a military one: "The normal rate for an 8-hour foot march is 4 kmph", that is, 4 kilometers an hour for trained soldiers, which the manual says varies with "Distance", "Time allowed", "Terrain", "Weather", "Physical condition of soldiers" and "Equipment/weight to be carried." Treat it as an upper bound, not a promise. Better: time yourself on the calibration walk from lesson 23, flat and uphill, and plan with your own number.
+
+**Worked, with the soldier's rate.** A 6-kilometer route at 4 km/h is 6 ÷ 4 = **1.5 hours** of walking before any stop, climb or wrong turn. At half that speed, the same route takes **3 hours**. Write the slower figure on your route card.
+
+**Slope costs distance as well as effort.** Map distances are horizontal (lesson 7). The workbook's own figure shows a stretch that is 384 feet on the map and 470 feet on the ground, because the ground climbs and falls: 470 ÷ 384 is about 1.22, so the walk is about **22 percent longer** than the map says. Lesson 8 measured slope as rise over run; the steeper the slope, the bigger that gap, and your pace shortens uphill too (lesson 23). The manual's route example makes the same point in time: a 1,500-meter flat route can beat a 1,000-meter route over a ridge.
+
+**Budget the margin.** Add up the legs, use your slow speed, add time for every climb and for finding each checkpoint, and then add time you do not expect to need. The River Expedition course *Finding Your Way, and Losing It* names the failure this protects against, in its lesson "2 · When the plan fails": "committing further because you have already committed." Each choice to push on feels like progress, "and each one reduces your margin, and margin is the thing that absorbs the next surprise."
+
+**Decide the turn-back rule before you need it.** The same lesson's counter-habit: "Decide the turn-back rule before you need it." For a walk, that means writing down, before you leave, a clock time at which you turn around wherever you are, and a condition that ends the walk early: a missed checkpoint you cannot resolve, failing light, weather, or anyone in the group wanting to stop. The river course's reason: "A rule set in advance survives contact with the desire to keep going. A judgment made at the moment does not, because at the moment you are tired, invested and want to be finished."
+
+**Who calls it.** The same lesson again: "Somebody has to be able to make a call", and there must be "a way for the least confident person in the group to stop the day without it being a defeat." Agree on both at the trailhead, not on the ridge.
+
+**Light is part of the budget.** Darkness slows everything: the Army manual says poor visibility shortens your pace, and night navigation needs its own plan (lesson 30). If your turn-back time would put you on unfamiliar ground after dark, it is too late.
+
+:::reveal How long does a 6-kilometer route take at the Army's 4 km/h march rate, before stops? ||| 1.5 hours (6 ÷ 4). A slower walker should plan with their own measured speed.
+
+:::reveal According to the river course, why set the turn-back rule in advance? ||| "A rule set in advance survives contact with the desire to keep going. A judgment made at the moment does not."
+
+## Sources
+- ${FM_2001} Locator: printed pp. 11-10 and 11-12 (PDF pp. 156 and 158), paragraphs 11-4b(1)(a) and 11-4b(5); printed p. 5-11 (PDF p. 60), paragraph 5-3a(2)(f).
+- ${NWCG_475} Locator: p. 111, chapter 6 introduction; p. 133, Figure 6-11; p. 45, slope.`,
+    },
   ],
 };
