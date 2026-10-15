@@ -1174,7 +1174,7 @@ The sum is 96; half of it is 48 square chains, 4.8 acres. The field is a paralle
 2. "The D.M.D. of any other course equals the D.M.D. of the preceding course plus the departure of the preceding course plus the departure of the course itself."
 3. "The D.M.D. of the last course should be numerically equal to its departure, but with opposite sign." That is the built-in check.
 
-Multiply each D.M.D. by its latitude, add the north products, subtract the south ones, "and be careful to divide by 2." The result is the same area the coordinate method gives; the two are the same arithmetic arranged differently. Old plats and field books often show D.M.D. columns, which is why it is worth recognizing.
+Multiply each D.M.D. by its latitude, add the north products, subtract the south ones, and "be careful to divide by 2." The result is the same area the coordinate method gives; the two are the same arithmetic arranged differently. Old plats and field books often show D.M.D. columns, which is why it is worth recognizing.
 
 :::reveal A course runs 20.00 chains due east. What are its latitude and departure? ||| Latitude 0 (cos 90° = 0) and departure 20.00 chains east (sin 90° = 1).
 
