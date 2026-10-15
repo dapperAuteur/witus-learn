@@ -7,6 +7,8 @@ import { CROSS_PROMO_PRODUCTS } from "@/lib/ecosystem";
 import { assessPriceChange, type PriceState } from "@/lib/price-change";
 import { PriceChangeConfirm, type PriceChangeItem } from "@/components/price-change-confirm";
 import { MAX_ADDITIONAL_CATEGORIES } from "@/lib/course-categories";
+import { isLaunchIntent, type LaunchTodo } from "@/lib/launch-todos";
+import { LaunchTodoWarning, hasOpenTodos } from "@/components/launch-todo-warning";
 
 export interface CourseSettings {
   title: string;
@@ -60,6 +62,7 @@ export function CourseSettingsForm({
   instructors = [],
   canAssignInstructor = false,
   enrollmentCount = null,
+  launchTodos,
 }: {
   courseId: string;
   initial: CourseSettings;
@@ -74,6 +77,8 @@ export function CourseSettingsForm({
   canAssignInstructor?: boolean;
   /** Active enrollments, shown in the price-change confirmation. Null when the caller didn't load it. */
   enrollmentCount?: number | null;
+  /** The course's launch to-do list, shown as a warning when a save would schedule, publish or release it. */
+  launchTodos?: LaunchTodo[];
 }) {
   const router = useRouter();
   const [v, setV] = useState<CourseSettings>(initial);
@@ -86,6 +91,8 @@ export function CourseSettingsForm({
   // other, and both go through the same helper and the same server-side confirm gate.
   const [savedPricing, setSavedPricing] = useState<PriceState>(() => pricingOf(initial));
   const [pending, setPending] = useState<PriceChangeItem[] | null>(null);
+  // A save that schedules, publishes or releases the course stops once to show the launch to-do list.
+  const [launchWarn, setLaunchWarn] = useState(false);
 
   // Warn before leaving (tab close / refresh / external nav) with unsaved changes.
   useEffect(() => {
@@ -151,6 +158,21 @@ export function CourseSettingsForm({
 
   function save(e: React.FormEvent) {
     e.preventDefault();
+    // Scheduling, publishing or clearing the hold is the moment to see what the launch still needs,
+    // so that the teacher (and the owner) plan for the real date. Judged against the last SAVED
+    // settings, so re-saving an already-scheduled course does not warn again.
+    const saved = JSON.parse(savedSnapshot) as CourseSettings;
+    if (!launchWarn && hasOpenTodos(launchTodos) && isLaunchIntent(saved, v)) {
+      setState("idle");
+      setErrMsg(null);
+      setLaunchWarn(true);
+      return;
+    }
+    proceed();
+  }
+
+  function proceed() {
+    setLaunchWarn(false);
     // A material price change stops here for an explicit confirmation. Everything else, including a
     // price edit that changes nothing a learner would notice, saves in one click as before.
     const a = assessPriceChange(savedPricing, pricingOf(v), {
@@ -408,6 +430,17 @@ export function CourseSettingsForm({
           <label className="flex items-center gap-2"><input type="checkbox" checked={v.isFeatured} onChange={(e) => set("isFeatured", e.target.checked)} /> Featured on the catalog</label>
         ) : null}
       </fieldset>
+
+      {launchWarn && launchTodos ? (
+        <LaunchTodoWarning
+          todos={launchTodos}
+          action={v.visibility === "scheduled" ? "schedule this course" : "make this course live"}
+          confirmLabel="Go ahead and save"
+          busy={state === "saving"}
+          onConfirm={proceed}
+          onCancel={() => setLaunchWarn(false)}
+        />
+      ) : null}
 
       {pending ? (
         <PriceChangeConfirm

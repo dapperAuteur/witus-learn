@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import type { FollowUpStatus } from "@/lib/release-followups";
+import type { FollowUpStatus } from "@/lib/launch-todos";
 
 // The close form on /admin/follow-ups, one per follow-up: pick a status, say what was done, save.
 // Like the source-check form, a follow-up cannot be closed without a note (the API refuses it too):

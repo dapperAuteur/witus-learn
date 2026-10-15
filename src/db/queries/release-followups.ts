@@ -197,3 +197,45 @@ export async function launchTodosForCourse(
     ...custom.map((r) => customTodo(r, courseStage(course))),
   ];
 }
+
+// ── The owner's view across the school ──────────────────────────────────────────────────────────
+
+export interface LaunchingCourse {
+  course: { id: string; slug: string | null; title: string; stage: CourseStage };
+  todos: LaunchTodo[];
+}
+
+export interface OwnerFollowUpSummary {
+  committed: FollowUpView[];
+  /** Courses someone has scheduled or made live that still have open items they or a teacher added. */
+  launching: LaunchingCourse[];
+  /** What the admin-home tile shows: committed follow-ups due now, plus added items due now on a
+   *  scheduled or live course. A draft's own chores stay the teacher's business until a launch is
+   *  planned; the moment it is scheduled, the owner hears about it here. */
+  dueCount: number;
+}
+
+export async function ownerFollowUpSummary(
+  tenant: { id: string; slug: string },
+  courses: (CourseStageInput & { id: string; slug: string | null; title: string })[],
+): Promise<OwnerFollowUpSummary> {
+  const [rows, custom] = await Promise.all([releaseFollowupsByKey(tenant.id), listLaunchTodos(tenant.id)]);
+  const committed = viewFollowUps(tenant.slug, courses, rows);
+  const byId = new Map(courses.map((c) => [c.id, c]));
+  const grouped = new Map<string, LaunchingCourse>();
+  for (const r of custom) {
+    if (r.status !== "open") continue;
+    const c = byId.get(r.courseId);
+    if (!c) continue;
+    const stage = courseStage(c);
+    if (stage !== "scheduled" && stage !== "live") continue;
+    const entry = grouped.get(c.id) ?? { course: { id: c.id, slug: c.slug, title: c.title, stage }, todos: [] };
+    entry.todos.push(customTodo(r, stage));
+    grouped.set(c.id, entry);
+  }
+  const launching = [...grouped.values()].sort((a, b) => a.course.title.localeCompare(b.course.title));
+  const dueCount =
+    committed.filter((v) => v.due.due && v.status === "open").length +
+    launching.reduce((n, l) => n + l.todos.filter((t) => t.due).length, 0);
+  return { committed, launching, dueCount };
+}

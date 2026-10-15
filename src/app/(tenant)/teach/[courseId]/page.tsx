@@ -20,6 +20,9 @@ import { CourseInterestPanel } from "@/components/course-interest-panel";
 import { serializeForOwner } from "@/lib/course-interest";
 import { ReviewSignoffPanel, type SignoffLesson } from "@/components/review-signoff-panel";
 import { readinessOf, reviewsByLesson, summarizeLessonReview } from "@/lib/lesson-review-summary";
+import { courseStage, followUpsForCourse, type LaunchTodo } from "@/lib/release-followups";
+import { launchTodosForCourse } from "@/db/queries/release-followups";
+import { LaunchTodoList } from "@/components/launch-todo-list";
 
 export const metadata: Metadata = { title: "Manage course" };
 
@@ -108,6 +111,23 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
     .filter((x) => x.summary.rows.length > 0 || x.summary.decisions.length > 0);
   const signoffReadiness = readinessOf(signoffLessons.map((x) => x.summary));
 
+  // The launch to-do list (src/lib/release-followups.ts): the committed follow-ups that name this
+  // course plus the items its editors added. Every editor sees it (the teacher plans the launch too),
+  // and it rides along as a warning on every control that schedules, publishes or releases the
+  // course. A committed follow-up can wait on several courses, so only then is the catalog read.
+  // Kept off the critical path: if the tables are missing (a deploy ahead of its migration), the page
+  // still renders and the error is logged.
+  let launchTodos: LaunchTodo[] = [];
+  try {
+    const committedHere = course.slug ? followUpsForCourse(sdb.tenant.slug, course.slug) : [];
+    const stageCourses = committedHere.length ? await sdb.listCourses({ includeUnpublished: true }) : [course];
+    launchTodos = await launchTodosForCourse({ id: sdb.tenantId, slug: sdb.tenant.slug }, course, stageCourses);
+  } catch (err) {
+    console.error("launch to-do list unavailable", err);
+  }
+  const courseLive = courseStage(course) === "live";
+  const showLaunchTodos = !courseLive || launchTodos.some((t) => t.status === "open");
+
   // Admins (platform owner / brand_admin) may reassign the course's instructor.
   const isAdmin = owner || membership === "brand_admin";
   const instructors = isAdmin ? await listTenantInstructors(sdb.tenantId) : [];
@@ -158,13 +178,18 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           ) : null}
           {/* Mark it vetted from here, where the course is actually worked on: the walk to /teach
               and back is the friction that let the review queue sit (BAM 2026-08-18). */}
-          {owner ? <VetCourseCta courseId={course.id} variant="inline" /> : null}
+          {owner ? <VetCourseCta courseId={course.id} variant="inline" launchTodos={launchTodos} /> : null}
         </div>
       ) : null}
 
       <div className="mt-6 space-y-8">
+        {showLaunchTodos ? (
+          <LaunchTodoList courseId={course.id} todos={launchTodos} isOwner={owner} courseLive={courseLive} />
+        ) : null}
+
         <CourseSettingsForm
           courseId={course.id}
+          launchTodos={launchTodos}
           canFeature={owner}
           hasStripe={hasStripe}
           categories={categories.map((c) => c.name)}
@@ -258,6 +283,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             isOwner={owner}
             canRelease={isAdmin}
             holdReason={course.publishHoldReason}
+            launchTodos={launchTodos}
           />
         ) : null}
 

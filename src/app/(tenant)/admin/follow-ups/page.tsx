@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getScopedDb } from "@/db/scoped";
 import { requirePlatformOwner } from "@/lib/session";
-import { releaseFollowupsByKey, viewFollowUps, type FollowUpView } from "@/db/queries/release-followups";
-import { blogPostUrl, needsAttention, type BlogKey } from "@/lib/release-followups";
+import { ownerFollowUpSummary, type FollowUpView } from "@/db/queries/release-followups";
+import { FOLLOW_UP_WHEN_LABEL, blogPostUrl, needsAttention, type BlogKey } from "@/lib/release-followups";
 import { publishedSlugs } from "@/lib/blog-feed";
 import { FollowUpCard, type FeedState } from "@/components/follow-up-card";
 import { FollowUpForm } from "@/components/follow-up-form";
@@ -13,18 +14,16 @@ export const metadata: Metadata = {
 };
 
 // Owner-only. The work that waits on a course: the blog post that markets it, a task step to
-// re-check once it is released. Definitions are committed (src/lib/release-followups.ts); whether
-// each is due is computed from THIS school's course rows on every load (getScopedDb resolves the
-// tenant from the host), and only status and note live in the database. Claude reads them back with
+// re-check once it is released, and the launch to-dos teachers added to courses that are now
+// scheduled or live (so BAM hears when a teacher schedules one). Committed definitions live in
+// src/lib/release-followups.ts; whether each is due is computed from THIS school's course rows on
+// every load (getScopedDb resolves the tenant from the host). Claude reads them back with
 // `pnpm follow-ups:list`.
 export default async function FollowUpsPage() {
   await requirePlatformOwner();
   const sdb = await getScopedDb();
-  const [courses, rows] = await Promise.all([
-    sdb.listCourses({ includeUnpublished: true }),
-    releaseFollowupsByKey(sdb.tenantId),
-  ]);
-  const views = viewFollowUps(sdb.tenant.slug, courses, rows);
+  const courses = await sdb.listCourses({ includeUnpublished: true });
+  const { committed: views, launching } = await ownerFollowUpSummary({ id: sdb.tenantId, slug: sdb.tenant.slug }, courses);
   const titleBySlug = new Map(courses.flatMap((c) => (c.slug ? [[c.slug, c.title] as const] : [])));
 
   // One feed read per blog named on this page, in parallel; a failed read is "unknown", never "not
@@ -80,7 +79,8 @@ export default async function FollowUpsPage() {
         whoever released them.
       </p>
       <p className="mt-2 text-sm font-medium">
-        {dueNow.length} due now, {waiting.length} waiting on a course, {closed.length} closed.
+        {dueNow.length} due now, {waiting.length} waiting on a course, {closed.length} closed;{" "}
+        {launching.length} {launching.length === 1 ? "course" : "courses"} being launched with open to-dos.
       </p>
       <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-400">
         A follow-up cannot be closed without saying what was done. For a blog post, that is its live
@@ -93,6 +93,43 @@ export default async function FollowUpsPage() {
           <ul className="mt-3 space-y-4">{dueNow.map(card)}</ul>
         ) : (
           <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">Nothing is due.</p>
+        )}
+      </section>
+
+      <section aria-labelledby="fu-launching" className="mt-8">
+        <h2 id="fu-launching" className="text-lg font-semibold">Courses being launched</h2>
+        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
+          Courses someone has scheduled or made live, with launch to-dos still open on their page.
+          Each teacher closes their own items there.
+        </p>
+        {launching.length ? (
+          <ul className="mt-3 space-y-4">
+            {launching.map((l) => (
+              <li key={l.course.id} className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
+                <h3 className="text-base font-semibold">
+                  <Link href={`/teach/${l.course.slug ?? l.course.id}`} className="underline underline-offset-2">
+                    {l.course.title}
+                  </Link>{" "}
+                  <span className="text-sm font-normal text-neutral-600 dark:text-neutral-400">
+                    ({l.course.stage === "live" ? "live" : "scheduled"})
+                  </span>
+                </h3>
+                <ul className="mt-2 list-disc pl-5 text-sm">
+                  {l.todos.map((t) => (
+                    <li key={t.id}>
+                      {t.title}
+                      {t.kind === "blog-post" && t.blogName ? <> on {t.blogName}</> : null}
+                      <span className="text-neutral-600 dark:text-neutral-400">
+                        {t.due ? " (due now)" : ` (due ${FOLLOW_UP_WHEN_LABEL[t.when]})`}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">None.</p>
         )}
       </section>
 

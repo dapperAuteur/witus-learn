@@ -11,6 +11,8 @@ import { countLeads } from "@/db/queries/leads";
 import { countPendingMediaAssets } from "@/db/queries/media-assets";
 import { countUpcomingLiveSessions } from "@/db/queries/live";
 import { DemoResetButton } from "@/components/demo-reset-button";
+import { getScopedDb } from "@/db/scoped";
+import { ownerFollowUpSummary } from "@/db/queries/release-followups";
 
 export const metadata: Metadata = { title: "Admin" };
 
@@ -35,7 +37,21 @@ export default async function AdminHome() {
     owner ? countUpcomingLiveSessions(tenant.id) : Promise.resolve(null),
   ]);
 
-  const tiles = adminStatTiles({ stats, openReports, leads, openFeedback, pendingMedia, upcomingLive });
+  // Release follow-ups due (owner only): a course reached the catalog, or a teacher scheduled one,
+  // and the post or chore waiting for it is open. Never allowed to take the admin home down: if the
+  // tables are missing (a deploy ahead of its migration) the tile is simply left out.
+  let followUpsDue: number | null = null;
+  if (owner) {
+    try {
+      const sdb = await getScopedDb();
+      const courses = await sdb.listCourses({ includeUnpublished: true });
+      followUpsDue = (await ownerFollowUpSummary({ id: tenant.id, slug: tenant.slug }, courses)).dueCount;
+    } catch (err) {
+      console.error("release follow-ups unavailable", err);
+    }
+  }
+
+  const tiles = adminStatTiles({ stats, openReports, leads, openFeedback, pendingMedia, upcomingLive, followUpsDue });
 
   return (
     <div className="py-10">

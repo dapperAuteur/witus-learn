@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import type { LaunchTodo } from "@/lib/launch-todos";
+import { LaunchTodoWarning, hasOpenTodos } from "@/components/launch-todo-warning";
 import { useRouter } from "next/navigation";
 import type { VerdictNeedKind } from "@/lib/lesson-review";
 
@@ -62,12 +64,15 @@ export function CorrectionAppliedButton({
 }
 
 /** Clear the course's publish hold. The server re-checks readiness and refuses (409) if not ready. */
-export function ReleaseReviewHoldButton({ courseId }: { courseId: string }) {
+export function ReleaseReviewHoldButton({ courseId, launchTodos }: { courseId: string; launchTodos?: LaunchTodo[] }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
+  // Releasing the hold is an intent to launch, so the course's open launch to-dos come first.
+  const [warning, setWarning] = useState(false);
 
   async function release() {
+    setWarning(false);
     setBusy(true);
     setMessage(null);
     const res = await fetch(`/api/courses/${courseId}/release-review-hold`, { method: "POST" }).catch(() => null);
@@ -83,15 +88,26 @@ export function ReleaseReviewHoldButton({ courseId }: { courseId: string }) {
 
   return (
     <div className="mt-3">
-      <button
-        type="button"
-        onClick={release}
-        disabled={busy}
-        className="min-h-11 rounded-md px-4 py-2 text-sm font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60"
-        style={{ backgroundColor: "var(--accent)" }}
-      >
-        {busy ? "Releasing…" : "Release the review hold"}
-      </button>
+      {warning && launchTodos ? (
+        <LaunchTodoWarning
+          todos={launchTodos}
+          action="release the review hold"
+          confirmLabel="Go ahead and release"
+          busy={busy}
+          onConfirm={() => void release()}
+          onCancel={() => setWarning(false)}
+        />
+      ) : (
+        <button
+          type="button"
+          onClick={() => (hasOpenTodos(launchTodos) ? setWarning(true) : void release())}
+          disabled={busy}
+          className="min-h-11 rounded-md px-4 py-2 text-sm font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60"
+          style={{ backgroundColor: "var(--accent)" }}
+        >
+          {busy ? "Releasing…" : "Release the review hold"}
+        </button>
+      )}
       <p role="status" className="mt-1 text-sm">
         {message ?? ""}
       </p>
