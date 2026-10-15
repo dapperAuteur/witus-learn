@@ -1470,5 +1470,53 @@ The Army manual does the same against the grid lines instead of the map's edge, 
 - ${FM_2001} Locator: printed p. 9-1 (PDF p. 110), paragraph 9-1; printed pp. 6-4 to 6-7 (PDF pp. 67 to 70), paragraphs 6-4 and 6-5b, with the warning in 6-4 and the note in 6-5b.
 - ${USGS_FS} Locator: p. 2, "Taking a compass bearing from a map", steps 1 to 3.`,
     },
+    {
+      slug: "finding-yourself",
+      title: "22 · Finding yourself: resection, intersection, and a clash of names",
+      section: "5 · Map and compass together",
+      recallContent: [
+        {
+          prompt: "Using the workbook's compass-as-protractor method for a true bearing, what do you do with the needle?",
+          answer: "Disregard it: set the compass at 0° declination, lay the plate along the line, turn the orienting arrow to true north parallel to the map edge, and read at the index line.",
+        },
+        {
+          prompt: "What does the Army manual say about measuring a map azimuth from the wrong end of the line?",
+          answer: "The reading will be the opposite direction, sending you the wrong way.",
+        },
+      ],
+      body: `${P("BAM stands at a spot he has not marked on his quad, takes bearings to two landmarks about 90° apart, plots the back bearings, and then checks the crossing point against a known feature")}
+
+**The situation.** You can see landmarks that are on your map, but you are not sure where you are among them. Bearings to them, drawn backward on the map, cross where you stand. The two backbone documents agree on the method and disagree on the name.
+
+**The Army's words.**
+- **Resection** finds your own position: "Resection is the method of locating one's position on a map by determining the grid azimuth to at least two well-defined locations that can be pinpointed on the map. For greater accuracy, the desired method of resection would be to use three or more well-defined locations."
+- **Modified resection** works when you are on a line: "when the person is located on a linear feature on the ground, such as a road, canal, or stream". One bearing is enough, and "The location of the user is where the line crosses the linear feature."
+- **Intersection** finds a distant point you cannot reach: "the location of an unknown point by successively occupying at least two (preferably three) known positions on the ground and then map sighting on the unknown location."
+
+**The workbook's words.** It calls finding your own position **triangulation**, and uses the same word for finding a distant point: "Triangulation is also used to estimate the location of an unknown position." Its example is smoke: two observers who know where they stand each take a bearing to the smoke, and "The intersection of the two lines is the location of the smoke." So the workbook's one word covers the Army's resection and intersection. Neither is wrong; they are two vocabularies, and you should know both before you talk to someone who learned the other.
+
+**The steps for your own position.** The workbook's Table 6-9:
+1. "Adjust compass for declination."
+2. Locate two or more objects you can identify on the map. "It is best if the objects are approximately 90° apart to reduce potential errors."
+3. "Take a bearing to each of the objects."
+4. "Convert to back bearings."
+5. "On the map, draw the lines of the back bearing from the objects", which the workbook calls lines of position. "The point where these lines intersect is your position."
+
+**A worked example.** With the compass set for declination, you read 40° to a fire tower and 130° to a bridge, 90° apart. The back bearings are 40 + 180 = **220°** and 130 + 180 = **310°**. From the tower on the map, draw a line at 220°; from the bridge, a line at 310°. Where they cross is you. Using the Army's lensatic instead, you would read magnetic bearings, convert each to grid with the G-M angle, then take the back bearings, as the manual's step list does.
+
+**Why 90°, and why three.** Lines that cross at a shallow angle smear your small bearing errors along a long stretch of map; lines near 90° pin them down. A third line is a check: three lines seldom meet at exactly one point, and the small triangle they make shows how good your bearings were. If it is large, take them again.
+
+**Without a compass.** Both resection and intersection can be done with a straightedge on a map oriented by terrain: pivot the edge on a known point on the map until it lines up with the same point on the ground, and draw the line toward yourself. Do it from a second point and the lines cross at your position.
+
+**When to do it.** Not only when you are lost. Lesson 23 shows that pace counts drift, and the Army manual's cure is to resect along the way: "Periodically, you should accomplish a resection triangulation using two or more known points to pinpoint and correct your position on the map."
+
+:::reveal What does the workbook call finding your own position from two landmarks, and what does the Army manual call it? ||| The workbook calls it triangulation; the Army manual calls it resection.
+
+:::reveal Why does the workbook want the two landmarks about 90° apart? ||| "to reduce potential errors": lines crossing near a right angle pin down the position best.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 6-14 to 6-19 (PDF pp. 77 to 82), paragraphs 6-7, 6-8 and 6-9; printed p. 11-16 (PDF p. 162), paragraph 11-6a(11).
+- ${NWCG_475} Locator: p. 131, "Estimating Your Own Position Location" and Table 6-9; p. 132, "Estimating Unknown Position Locations".`,
+    },
   ],
 };
