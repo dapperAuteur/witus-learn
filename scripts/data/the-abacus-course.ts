@@ -203,6 +203,53 @@ export const THE_ABACUS_COURSE: AuthoredCourse = {
 - ${KNOTT} Locator: p. 18 (PDF p. 41), the title page, "Read December 15th, 1885"; p. 46 (PDF p. 69), the definition; p. 48 (PDF p. 71), "simply a mechanical model of our cipher system" and each rod a place or power of ten. ${TA}
 - ${SMITH_1925} Locator: p. 157 (PDF p. 175), the dust tablet as "the earliest form", the ruled table with counters "until the opening of the 17th century", the three standard types; p. 159 (PDF p. 177), the addition of 22 and 139 in six steps. ${TA}`,
     },
+    {
+      slug: "anatomy-of-a-soroban",
+      title: "2 · Anatomy of a soroban",
+      section: "1 · Place value you can touch",
+      recallContent: [
+        {
+          prompt: "How did Knott define the soroban?",
+          answer: "\"An arrangement of movable beads, which slip along fixed rods and indicate by their configuration some definite numerical quantity.\"",
+        },
+        {
+          prompt: "Why can an abacus do place-value arithmetic without a written zero?",
+          answer: "An empty place is simply a rod with no beads at the beam, and you can see that it is empty. Written numerals need a symbol for it.",
+        },
+      ],
+      body: `${P("BAM naming each part on his own soroban (frame, beam, rods, the five-bead and the one-beads, the unit marks) and showing which beads count and which do not")}
+
+**The frame and the beam.** Knott describes "a shallow rectangular box or framework ... divided longitudinally by a narrow ridge into two compartments, of which one is roughly some three or four times larger than the other." This course calls that ridge the **beam**. Rods "placed at equal intervals apart pass through the ridge" and are fixed into the sides of the frame, and on each rod the beads are threaded so they slide easily.
+
+**The beads, and why they are shaped that way.** Looked at from the front, Knott writes, each bead is "a rhombus, the rod passing through the blunt angles. This double cone form makes manipulation rapid, the finger easily catching the ridge-like girth." Smith and Mikami make the same point in 1914: the soroban replaces the round balls of the Chinese instrument "by buttons having a sharp edge that the finger easily engages without slipping." A soroban bead is built to be caught by a fingertip.
+
+**One bead above, four below.** On the soroban this course teaches, each rod carries **one bead above the beam** and **four below**. This course names them by their value: the upper bead is the **five-bead** and the lower beads are **one-beads**. A soroban given to the Smithsonian, made in 1959, is described exactly so: twenty-three rods, "one bead above the cross piece and four below." Knott's sorobans of 1885 were different. He counted "six (sometimes seven)" beads on a rod, "Five of these slide on the longer segment of the rod, the remaining one (or two) on the shorter." Lesson 24 tells how the extra beads went away, and why the sources disagree about when.
+
+**Only beads at the beam count.** Knott's rule: "When the counters are as far as possible from the dividing ridge they have no value; when they are pushed as near the ridge as possible they have values." A one-bead pushed up to the beam counts 1 on its rod. The five-bead pushed down to the beam counts 5: in Knott's words it "has five times the value of any other counter upon that rod." Beads left away from the beam count nothing at all.
+
+| Bead | Where it counts | Worth on its rod |
+|---|---|---|
+| Five-bead (above the beam) | Pushed down to touch the beam | 5 |
+| Each one-bead (below the beam) | Pushed up to touch the beam | 1 |
+| Any bead away from the beam | Nowhere | 0 |
+
+**Every digit has exactly one shape.** With one five-bead and four one-beads, a rod can show 0 to 9 in only one way: the five-bead is either at the beam or not (0 or 5), and then 0 to 4 one-beads join it. So 7 is always the five-bead and two one-beads, never anything else. On Knott's five-bead rods there were two ways to show 5 (five one-beads, or the five-bead), which is one reason the fifth bead could go.
+
+**The unit marks.** Along the beam most sorobans carry dots. The 1959 Smithsonian soroban: "Every third column of beads is marked with a black dot on the cross piece." Takashi Kojima's 1954 manual says the common Japanese soroban has 21 rods, with 13, 17, 27 and 31 also in use, and a unit point every third rod. You choose one marked rod as your ones rod; the marks every third rod then fall where commas fall in a written number, at the thousands and the millions, and lesson 14 uses them to place a decimal point.
+
+**Old and new, side by side.** The Smithsonian also holds a soroban in a rosewood box, "ca 1885", with "13 parallel bamboo rods, with one bead above the cross bar and five below," used by S. Tetsu Tamura "as a schoolboy from 1885 to 1897". It is a physical match for Knott's count. Hold a modern soroban beside a picture of it and you have the change from five below to four below in two objects.
+
+:::reveal On a one-above, four-below soroban, how is 7 shown on a rod, and is there any other way? ||| The five-bead at the beam and two one-beads up to the beam. There is no other way: each digit has exactly one shape.
+
+:::reveal What did Knott and Smith and Mikami both say the bead's sharp double-cone edge is for? ||| So the finger catches it easily without slipping, which makes the beads quick to move.
+
+## Sources
+- ${KNOTT} Locator: p. 46 (PDF p. 69), the framework divided by a ridge, the rods, the double cone ("This double cone form makes manipulation rapid") and "six (sometimes seven)" beads, five on the longer segment; p. 47 (PDF p. 70), the remaining one or two on the shorter segment; p. 48 (PDF p. 71), counters away from the ridge have no value, and the single counter "has five times the value". ${TA}
+- ${SMITH_MIKAMI} Locator: pp. 31 to 32 (PDF pp. 43 to 44), the soroban's single 5-ball and "buttons having a sharp edge that the finger easily engages without slipping". ${TA}
+- ${NMAH_ALBREE} Locator: Description, the 23 rods, "one bead above the cross piece and four below", and "Every third column of beads is marked with a black dot". Record text CC0; images not checked. ${TB}
+- ${NMAH_TAMURA} Locator: Description, the 13 bamboo rods with one bead above and five below, and its use by S. Tetsu Tamura "as a schoolboy from 1885 to 1897". Record text CC0; images not checked. ${TB}
+- ${KOJIMA} Locator: p. 26, the 21-rod common soroban and the 13, 17, 27 and 31 rod sizes; p. 27, "a unit point at every third rod". ${TC}`,
+    },
     // @@END_LESSONS@@
   ],
 };
