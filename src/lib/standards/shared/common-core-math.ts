@@ -26,6 +26,12 @@
 // Claiming a produce-it standard for an interpret-it course would be exactly the widening
 // src/lib/standards/index.ts forbids. Those standards become claimable when the numeric-grading
 // work lands, and not before.
+//
+// The same rule binds Surveying: How Land Gets Measured (TOOLS-03, 2026-10-14), which DOES have
+// learners compute: its claim here is HSN-Q.A.3's reporting judgment only. HSG.SRT.C.8 (right
+// triangles in applied problems) and HSG.GPE.B.7 (perimeters and areas from coordinates), which its
+// lessons 8, 15 and 16 touch, are not claimed, because the platform cannot yet grade the number a
+// learner produces.
 
 import type { SharedFramework } from "../types";
 
@@ -106,9 +112,13 @@ export const COMMON_CORE_MATH: SharedFramework = {
     {
       code: "CCSS.Math.Content.HSN-Q.A.3",
       text: "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities.",
-      claimIds: ["catalog.accuracy-and-provenance", "catalog.honest-measurement-reporting"],
+      claimIds: [
+        "catalog.accuracy-and-provenance",
+        "catalog.honest-measurement-reporting",
+        "catalog.surveying-measurement-accuracy",
+      ],
       coverage: "full",
-      note: "A judgment rather than a computation, which is why a course that grades no arithmetic can claim it honestly. In How to Read a Number, lesson 8 separates a census from a sample estimate from a projection and refuses to quote a revisable figure without its release, and lesson 9 establishes that a stated margin of error is a lower bound on uncertainty. Intro to Citizen Science lesson 9 makes it a rule the learner applies to their own data: a derived number cannot be more precise than its roughest input.",
+      note: "A judgment rather than a computation, which is why a course that grades no arithmetic can claim it honestly. In How to Read a Number, lesson 8 separates a census from a sample estimate from a projection and refuses to quote a revisable figure without its release, and lesson 9 establishes that a stated margin of error is a lower bound on uncertainty. Intro to Citizen Science lesson 9 makes it a rule the learner applies to their own data: a derived number cannot be more precise than its roughest input. Surveying: How Land Gets Measured applies it to physical measurement by hand: lesson 7 reports a paced line from the walker's own calibration spread and a chained line from the chain's stated 1 in 500, lesson 13 lets a level loop's misclosure decide how many decimals an elevation difference earns, and lesson 15 carries two lengths' uncertainty into an area. The course has learners compute, but the graded check here is the reporting judgment, not the arithmetic.",
     },
   ],
 };

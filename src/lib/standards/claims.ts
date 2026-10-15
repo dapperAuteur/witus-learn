@@ -4890,6 +4890,60 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ══ TOOLS-03 and TOOLS-04 · Surveying, and Reading a Land Description ═══════════════
+  //
+  // Narrow on purpose. TOOLS-03 asks learners to compute (pace lengths, chained distances, level
+  // notes, areas), but the platform cannot yet grade a produced number, so it claims only the
+  // judgment half: reporting each result to the accuracy its method supports. HSG.SRT.C.8 and
+  // HSG.GPE.B.7 are NOT claimed for that reason (see shared/common-core-math.ts). TOOLS-04's
+  // claims rest on lessons that quote the documents themselves, and every disagreement between
+  // sources is taught as a disagreement, never resolved by guessing.
+  {
+    id: "catalog.surveying-measurement-accuracy",
+    claim:
+      "Reports a hand-measured distance, elevation difference or area only to the accuracy its method supports, judged from the method's stated error, the measurer's own calibration spread, or a closed level loop's misclosure.",
+    courseSlugs: ["surveying-how-land-gets-measured"],
+    lessons: [
+      // Pacing against chaining on one line: the chain's 1 in 500 (Breed and Hosmer, sec. 16), the
+      // pace's own calibration spread, and three rules for the field book.
+      "7 · Practice: pace and chain the same line, and report each honestly",
+      // A level loop's misclosure decides how many decimals an elevation difference earns.
+      "13 · Balanced sights, the earth's curve, and how close a level line closes",
+      // An area inherits the uncertainty of the two lengths that made it.
+      "15 · Area from chains and triangles: acres, square chains, and the 640-acre section",
+    ],
+  },
+  {
+    id: "history.land-record-primary-sources",
+    claim:
+      "Has the learner read land-history primary sources (the 1785 Ordinance's text, a 1775 deed, a surveyor's own field entry) beside secondary accounts, and treats a conflict between careful sources as a limitation of the evidence to report rather than resolve by guessing.",
+    courseSlugs: ["reading-a-land-description"],
+    lessons: [
+      // The Ordinance quoted clause by clause from the text printed in White, and White's own 1983
+      // reading of its purchase provision flagged as an interpretation from the government's side.
+      "3 · The Land Ordinance of 1785, read as a primary source",
+      // The 1775 Piankeshaw deed read as the purchasers' document, with what it cannot tell us.
+      "7 · Metes and bounds, and a 1775 deed bounded in leagues along the Wabash",
+      // White (1803) against Wilson (1802-3, quoting Freeman's own entry), reported both ways.
+      "10 · How Indiana was surveyed: three origins, Freeman's lines, and the cessions the grid followed",
+      // IARA's own page giving 1807 and 1804 for one land office; the course states neither.
+      "12 · The records and who keeps them: field notes, plats, tract books, and the county surveyor",
+    ],
+  },
+  {
+    id: "civics.land-ordinance-and-northwest-ordinance",
+    claim:
+      "Explains what the Land Ordinance of 1785 and the Northwest Ordinance of 1787 provided and why each mattered to Indiana: the survey grid with its reservations, and the path from territory to statehood on an equal footing.",
+    courseSlugs: ["reading-a-land-description"],
+    lessons: [
+      "1 · Survey before sale: why a land description is a civic act",
+      // Both ordinances, the second summarized from White and the Manual, ending on what each gave
+      // Indiana.
+      "3 · The Land Ordinance of 1785, read as a primary source",
+      "10 · How Indiana was surveyed: three origins, Freeman's lines, and the cessions the grid followed",
+    ],
+  },
+
   // ══ MONEY-01 · Credit, and the Decisions Made About You ══════════════════════
   //
   // THE POINT OF THESE CLAIMS, STATED ONCE. Nineteen jurisdiction files in data/ carried a
