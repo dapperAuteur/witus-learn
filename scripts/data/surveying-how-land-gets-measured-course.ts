@@ -912,5 +912,49 @@ It did not take over at once. In 1841 the surveyor general in Arkansas "was havi
 ## Sources
 - ${BH} Locator: secs. 111 to 116 and Fig. 43, pp. 83 to 86 (scan pp. 109 to 112); the field notes, p. 87 (scan p. 113). ${TIER_A_PD}`,
     },
+    {
+      slug: "balanced-sights",
+      title: "13 · Balanced sights, the earth's curve, and how close a level line closes",
+      section: "3 · Elevation: running a level line",
+      recallContent: [
+        {
+          prompt: "How do Breed and Hosmer get the elevation of the last point above the first in differential leveling?",
+          answer: "The sum of all the backsights minus the sum of all the foresights; a negative result means the last point is below the first (sec. 116).",
+        },
+        {
+          prompt: "What is a turning point?",
+          answer: "A firm, well-defined point that will not change in elevation, where a foresight is taken and then, from the next setup, a backsight.",
+        },
+      ],
+      body: `${P("BAM pacing the backsight and foresight distances so they match, then running a short loop that returns to its starting mark, with the misclosure worked on screen")}
+
+**How long a sight?** Breed and Hosmer (sec. 117): the proper length depends on how distinct and steady the rod looks, on how much readings on one point vary, and on the precision wanted. "Under ordinary conditions the length of sight should not exceed about 300 ft. where elevations to the nearest 0.01 ft. are desired." On hot days the "'boiling' of the air due to irregular refraction is frequently so troublesome that long sights cannot be taken accurately."
+
+**Balance the sights, and two errors vanish.** A level slightly out of adjustment tilts its line of sight, and "the resulting error in the rod-reading is proportional to the distance from the instrument to the rod." But a height difference is the difference of two readings. "If the level is at equal distances from the rod the errors are equal," and they cancel. How does the rodman know the distances are equal? "By counting his paces as he goes from one point to the other" (sec. 117). The pace from lesson 4 comes back here as a working tool.
+
+**The earth curves, and the air bends light** (sec. 118). A level line of sight is straight, but the earth's surface curves away beneath it, so a distant rod reads a little high. Refraction in the air bends the sight back down, making the effect "about one-seventh part smaller." Breed and Hosmer's figures for the combined effect:
+
+| Length of sight | Curvature and refraction |
+|---|---|
+| 300 ft. | 0.002 ft. |
+| 500 ft. | 0.005 ft. |
+| 1,000 ft. | 0.020 ft. |
+| 1 mile | about 0.57 ft. |
+
+At ordinary sight lengths the effect is tiny; over a mile it is more than half a foot. And the same cure works again: "If the rod is equally distant from the instrument on the foresight and backsight the effect of curvature and refraction is eliminated from the result."
+
+**Small habits that matter.** The rod is made of wood, and "the effect of moisture is greater" than heat, "consequently if very accurate leveling is to be done the rod should be compared frequently with a standard" (sec. 110). "Care should be taken not to strike the rod on the ground after it has been clamped and before it has been read" (sec. 119). And "whenever close results are desired it will be well to take several readings on each point and use the mean" (sec. 114).
+
+**Close the loop.** A single run from A to B gives an answer with nothing to check it against. Run the line back to A by different turning points, and the arithmetic gives you a test for free: around a closed loop the elevation ends where it began, so all the backsights minus all the foresights should come to zero. Whatever it comes to instead is the **misclosure**, a measure of how much error crept into the work.
+
+A worked case. Out from A to B, the notes give B 4.316 feet above A. Back from B to A, by other turning points, they give A 4.302 feet below B. Around the loop the sum is 4.316 − 4.302 = 0.014 foot, so the work misses by 0.014 foot. The best single figure is the mean of the two runs, 4.309 feet, and with a misclosure of a hundredth of a foot the honest report is B about 4.31 feet above A. Giving it as 4.3090 would claim a thousandth of a foot the work never reached. This is the same rule as lesson 7: choose the level of accuracy the measurement can support.
+
+:::reveal A level stands 120 feet from the backsight and 260 feet from the foresight. What error does that invite, and how does Breed and Hosmer's rodman avoid it? ||| Any tilt in the line of sight hits the two readings unequally, so it no longer cancels. The rodman paces the foresight distance to match the backsight distance.
+
+:::reveal A loop run out and back gives a misclosure of 0.03 foot. Should the elevation difference be reported to the thousandth of a foot? ||| No. Work that misses by 0.03 foot supports a figure to the hundredth at best, so report it to two decimal places.
+
+## Sources
+- ${BH} Locator: sec. 110, p. 83 (scan p. 109); sec. 114, p. 85 (scan p. 111); secs. 117 and 118 and Fig. 44, pp. 87 to 88 (scan pp. 113 to 114); sec. 119, p. 88 (scan p. 114). ${TIER_A_PD}`,
+    },
   ],
 };
