@@ -7901,6 +7901,33 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["A NASA stowage list or crew equipment record naming the slide rules per mission, with document and page"],
     where: ["NASA Apollo stowage lists and crew compartment equipment records", "NASM and NMAH object files"],
   },
+  // ── The Slide Rule (TOOLS-02), filed 2026-10-15 after the four-checker review ─────────────────────
+  {
+    key: "sr-napier-admonitio-word",
+    title: "What Latin word did Napier use for the people who compute a table?",
+    course: "the-slide-rule",
+    lesson: "the-human-computers",
+    quote: "Napier's 1614 note at the end of his table, in Macdonald's 1889 English translation, already uses the word for a person",
+    severity: "low",
+    question: "In the Admonitio printed on the back of the last page of the 1614 Table of Logarithms, what Latin word does Napier use for the people who compute a table (Macdonald's 1889 English gives \"computors\")?",
+    claim: "Lesson 16 and its quiz quote the note as \"many computors\", now attributed to Macdonald's 1889 English translation (Notes, p. 87). The Smithsonian scan of the 1614 Descriptio (archive.org mirificilogarit00napi) does not include the Admonitio: its table ends at PDF p. 163, and Macdonald says the note \"is omitted in many copies\". Napier's own 1614 preface calls the people slowed by long multiplications \"Logistas\" (PDF p. 13).",
+    stakes: "Low: the lesson now says whose English the word is. If the Latin is calculatores or logistae, the attribution stays; if it is computatores or similar, the lesson can say Napier's own word was the root of \"computer\".",
+    needs: ["The Latin word, quoted from a 1614 copy that has the Admonitio, with the library, shelfmark or scan URL and the page"],
+    where: ["A 1614 Descriptio copy that includes the Admonitio after the Table (Macdonald's Catalogue lists 1614 copies)", "Wright's 1616 English translation, which may carry its own version of the note"],
+  },
+  {
+    key: "sr-hp-journal-1972",
+    title: "What does the June 1972 Hewlett-Packard Journal article say about the slide rule?",
+    course: "the-slide-rule",
+    lesson: "the-hp-35-and-the-end-of-an-era",
+    quote: "This course cites the title as the museum lists it; it has not read the article.",
+    severity: "low",
+    question: "Is the article by Whitney, Rodé and Tung in the Hewlett-Packard Journal of June 1972, pp. 2-9, titled \"The 'Powerful Pocketful': an Electronic Calculator Challenges the Slide Rule\", and what does it say about the slide rule?",
+    claim: "Lesson 21 quotes the title from the NMAH record of the HP-35 (ID 1982.0222.01, references) and says plainly that the course has not read the article.",
+    stakes: "Low: the lesson hedges openly. Reading the article would let it confirm the title and page range, quote what HP itself said about the slide rule, and drop the hedge.",
+    needs: ["The article's printed title and page range, and a short quote on the slide rule with its page, from the issue itself"],
+    where: ["Hewlett-Packard Journal, June 1972 (HP Computer Museum archive, hparchive.com)", "The NMAH HP-35 record's reference list (already read)"],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
