@@ -377,5 +377,48 @@ White also explains two numbers. Townships "were to be six miles square (reduced
 - ${SPECS} Locator: chap. II, pp. 9 to 11 (PDF pp. 15 to 17), including note 14's glossary definitions. ${TIER_A}
 - ${MANUAL} Locator: sec. 1-20(n), pp. 20 to 21 (PDF pp. 31 to 32); secs. 3-32 and 3-33, pp. 47 to 48 (PDF pp. 58 to 59). ${TIER_A}`,
     },
+    {
+      slug: "the-corners-are-the-law",
+      title: "6 · The corners are the law: monuments over measurements",
+      section: "1 · The grid: the Public Land Survey System",
+      recallContent: [
+        {
+          prompt: "What does a comma mean in an aliquot description, and what does its absence mean?",
+          answer: "A comma means \"AND THE\"; no comma means \"OF THE\" (Specifications, p. 10).",
+        },
+        {
+          prompt: "What are \"legal acres\"?",
+          answer: "The quantity of acres shown on the official plat, which the Act of March 1, 1800 made the quantity for administrative purposes (Manual, sec. 1-20(n)).",
+        },
+      ],
+      body: `${QR(`${SURVEYOR}, to check this lesson's statement of the statutes and the restoration rules, and its advice on fences and lines`)}
+
+**The problem the law had to solve.** The companion course showed how the first lines were run: with a chain that "was difficult to keep at standard length," over hills where "inaccuracies often arose in measuring steep slopes" (Manual, sec. 7-5). By 1800 there were thousands of corners on the ground that were not quite where the theory said, and settlers were already living by them. Congress had to choose: move the corners to match the arithmetic, or hold the corners and let the arithmetic go.
+
+**It held the corners: the Act of March 1, 1800.** The Manual (sec. 1-20(n)) summarizes it: "the lines run and the corners marked on the ground and returned in the field notes and on the plat by the Surveyor General shall be considered to be the lines and corners of the parcels so identified, even though not in conformity to the precise theoretical positions contemplated by the survey laws, or not appearing to correspond with the plat, or found at unequal distances from the respective corners. It thus established a hierarchy of boundary evidence, the foremost and dispositive of which were the actual marks on the ground."
+
+**Then made it permanent: the Act of February 11, 1805** (2 Stat. 313; 43 U.S.C. 752). It "fixes the corners marked (monumented) in position regardless of any errors, requires that any corners of half- or quarter-section not marked (monumented) in the original survey shall be established at midpoint and on line, fixes the lines actually run and marked as the proper (true) boundary lines, and establishes the length of the lines returned by the Surveyor General ... as the true length." It also fixed that "a half-section or quarter-section of a full 640-acre section contains 320 or 160 acres, respectively" (sec. 1-20(n)).
+
+The idea had a champion. White records that Jared Mansfield, the surveyor general, "insisted that if his plats returned 640 acres in a section, then a quarter-section contained 160 acres regardless of what errors were found in the original surveys," and that "Mansfield was so firm in this stand that his views soon became law" (p. 49).
+
+**How the Manual states the rule today.**
+- "The original corners shall stand as the true corners they were intended to represent, even though not exactly where professional care might have placed them in the first instance" (sec. 3-4).
+- "The law provides that the corners marked during the process of an original survey shall forever remain fixed in position, even disregarding technical errors that may have passed undetected before acceptance of the survey" (sec. 4-2).
+- "Existing original corners shall not be disturbed. ... This restates the common law hierarchy of calls for monuments as controlling over calls for measurements" (sec. 7-5).
+
+**Monuments over measurements.** That last phrase is the heart of it. A description "calls" for things: a monument (a corner, a stone, a blazed tree) and a measurement (a bearing, a distance). When they disagree, the monument controls. The chain's error does not move the corner; the corner corrects the chain.
+
+**When a corner is lost.** A corner is **lost** only when "its original position cannot be determined by substantial evidence, either from traces of the original marks or from acceptable evidence or reliable testimony" (sec. 7-2). If substantial evidence exists, the corner is "existent or obliterated," and its original position is used. A truly lost corner is restored "by applying proportionate measurement" (sec. 7-1): the original record's distances are stretched or shrunk in proportion until they fit between the corners that do survive. "Lost corners must be reestablished in the identical positions they originally occupied" (sec. 3-4), as nearly as evidence allows. This is professional work, and the rule is that a surveyor restores the old position, never a new and better one.
+
+**Why your fence may not be on your line.** A fence, a road edge, or a line on a county map was put there by someone after the survey, for their own reasons. The legal line runs between the original corners, wherever they actually stand. Whether a particular fence sits on that line is a question only a licensed surveyor's retracement can answer; this course gives you the reason the question exists, not the answer for any piece of land.
+
+:::reveal An original corner is found 30 feet from where the plat's distances say it should be. Which position controls? ||| The corner as found. By the Acts of 1800 and 1805 and Manual secs. 3-4 and 4-2, original corners stand "regardless of any errors."
+
+:::reveal When is a corner "lost" rather than "obliterated"? ||| When its original position cannot be determined by substantial evidence, from traces of the marks or reliable testimony. If such evidence exists, it is obliterated, and that evidence is used (sec. 7-2).
+
+## Sources
+- ${MANUAL} Locator: sec. 1-20(n), pp. 20 to 21 (PDF pp. 31 to 32); sec. 3-4, p. 40 (PDF p. 51); sec. 4-2, p. 105 (PDF p. 116); secs. 7-1, 7-2 and 7-5, p. 165 (PDF p. 176). ${TIER_A}
+- ${WHITE} Locator: p. 49 (PDF p. 63). ${TIER_A}`,
+    },
   ],
 };
