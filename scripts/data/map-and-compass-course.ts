@@ -112,6 +112,19 @@ const USTOPO_BELMONT =
   "U.S. Geological Survey. (2022c). *Belmont quadrangle, Indiana* [US Topo 7.5-minute map, 1:24,000; dated 2022-10-14]. https://prd-tnm.s3.amazonaws.com/StagedProducts/Maps/USTopo/PDF/IN/IN_Belmont_20221014_TM_geo.pdf";
 const USTOPO_ELKINSVILLE =
   "U.S. Geological Survey. (2022d). *Elkinsville quadrangle, Indiana* [US Topo 7.5-minute map, 1:24,000; dated 2022-10-05]. https://prd-tnm.s3.amazonaws.com/StagedProducts/Maps/USTopo/PDF/IN/IN_Elkinsville_20221005_TM_geo.pdf";
+// USGS (Tier A, federal, public domain), read 2026-10-14.
+const USGS_FS =
+  "U.S. Geological Survey. (2001, March). *Finding your way with map and compass* (Fact Sheet 035-01). https://pubs.usgs.gov/fs/2001/0035/report.pdf";
+const USGS_USTOPO =
+  "U.S. Geological Survey. (n.d.-a). *US Topo: Maps for America*. National Geospatial Program. https://www.usgs.gov/programs/national-geospatial-program/us-topo-maps-america";
+const USGS_OLDER =
+  "U.S. Geological Survey. (n.d.-b). *Can I still get the older topographic maps?* [FAQ]. https://www.usgs.gov/faqs/can-i-still-get-older-topographic-maps";
+const USGS_COPYRIGHT =
+  "U.S. Geological Survey. (n.d.-c). *Are USGS topographic maps copyrighted?* [FAQ]. https://www.usgs.gov/faqs/are-usgs-topographic-maps-copyrighted";
+const USGS_USTOPO_SYM =
+  "U.S. Geological Survey. (2023, January 11). *US Topo map symbols* (ver. 7.7). https://www.usgs.gov/media/files/us-topo-map-symbols";
+const USGS_GIP_SYM =
+  "U.S. Geological Survey. (2005). *Topographic map symbols* [General Interest Publication]. https://pubs.usgs.gov/publication/70039164";
 const NPS_TEN =
   "National Park Service. (2026, May 28). *Ten essentials*. U.S. Department of the Interior. https://www.nps.gov/articles/10essentials.htm";
 
@@ -321,6 +334,47 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
           { prompt: "What does BAM do before filming a demonstration on DNR land?", options: ["Posts the video to the DNR's own channel", "Asks the property about a film agreement", "Films only before the property opens", "Buys a special events permit for $25"], correctIndex: 1, explanation: "The DNR's rules page links a \"Commercial Film and Photography Agreement Form\"; BAM asks the property whether his filming needs one.", sourceLessonSlug: "where-to-practice-near-indianapolis" },
         ],
       },
+    },
+    {
+      slug: "what-a-topographic-map-is",
+      title: "4 · What a topographic map is, and getting yours free",
+      section: "2 · Reading a topographic map",
+      recallContent: [
+        {
+          prompt: "Of the four practice sites near Indianapolis, which one's posted rules expect walkers off the trail and out after dark?",
+          answer: "The Charles C. Deam Wilderness in the Hoosier National Forest (ELKINSVILLE quad).",
+        },
+        {
+          prompt: "What did the Army manual say leaders must do before using an area for land navigation training?",
+          answer: "\"complete a thorough terrain reconnaissance\", looking for \"dangerous terrain, heavy trafficked roads, water obstacles, wildlife, and training debris.\"",
+        },
+      ],
+      body: `${P("BAM downloads the US Topo quad he will film on, turns layers on and off in the PDF, prints it at full size, and checks the bar scale with a ruler; then opens a historical quad of the same ground beside it")}
+
+**What makes a map topographic.** The US Geological Survey puts it in one sentence: "The distinctive characteristic of a topographic map is that the shape of the Earth's surface is shown by contour lines." Its fact sheet for walkers says the same thing in plainer words: "These maps describe the shape of the land." A road map tells you where the roads go. A topographic map also tells you which way is uphill, how steep it is, and where the water runs, which is what you need once you leave the road.
+
+**The US Topo.** The USGS's current series is called US Topo. Its symbol guide defines it: "a digital topographic map that covers 7.5-minutes of longitude by 7.5-minutes of latitude and is produced at a scale of 1:24,000." Each sheet is called a quadrangle, or quad, and is named in its margin. US Topo maps keep "the same extent, scale, and general layout" as the paper 7.5-minute maps the USGS printed from 1947 to 2006. The difference is underneath: "The base data layer of a US Topo map is a recent orthographic aerial photograph," with contours, water, roads, boundaries and names drawn on top.
+
+**Getting yours.** The program page says the maps are "Available for free and immediate download". Each one is a geospatial PDF, which "enables basic GIS functionality, such as displaying coordinates, distance or area measurement", and a layered PDF, which "allows users to turn each data layer on or off". Turning the photograph off before you print gives a cleaner page and saves ink.
+
+**And the old ones.** The USGS also scanned its paper maps: "Topographic maps originally published as paper documents between 1884-2006 have been scanned and published as the USGS Historical Topographic Map Collection." Both the historical maps and the current US Topos (published 2009 to the present) are free through TopoView or the USGS Store's Map Locator. Download a historical quad of the same ground as your current one. Roads, lakes, woods and even the magnetic declination will differ, and section 4 uses that difference.
+
+**Free to copy, with one exception.** "All topographic maps produced by the U.S. Geological Survey (USGS) are in the public domain and are not copyrighted", the USGS says, except that "Most maps in the period 2010-2016 contain commercially licensed road data." It stopped using commercial data in November 2016. Even the older US Topos "can be reproduced freely and used for any purpose, provided copyright notices" for that data are kept.
+
+**How often they change.** Here the USGS's own pages disagree by date. The 2023 symbol guide says "US Topo maps are revised on a three-year production cycle." The program page, read in October 2026, says the series "Historically followed a 3-year production cycle" and that "Beginning in 2026, the US Topo program will update maps based on changes in the underlying data." The Hindustan quad shows the old rhythm: editions dated 2010, 2013, 2016, 2019 and 2022. Trust the newer page, and read the date on your own sheet.
+
+:::reveal What makes a map topographic, in the USGS's words? ||| "The distinctive characteristic of a topographic map is that the shape of the Earth's surface is shown by contour lines."
+
+:::reveal Which years does the USGS Historical Topographic Map Collection cover? ||| Maps "originally published as paper documents between 1884-2006".
+
+## Sources
+- ${USGS_GIP_SYM} Locator: p. 1, "What is a Topographic Map?"
+- ${USGS_FS} Locator: p. 1, first paragraph.
+- ${USGS_USTOPO_SYM} Locator: p. 2, "What is a US Topo map?"
+- ${USGS_USTOPO} Locator: the download panels and the list of US Topo features.
+- ${USGS_OLDER} Locator: the answer, first paragraph.
+- ${USGS_COPYRIGHT} Locator: the answer and its note on commercial road data.
+- ${USTOPO_HINDUSTAN} Locator: the edition dates, as listed by The National Map for the Hindustan quad (2010-05-13, 2013-05-20, 2016-10-18, 2019-05-10, 2022-10-05).`,
     },
   ],
 };
