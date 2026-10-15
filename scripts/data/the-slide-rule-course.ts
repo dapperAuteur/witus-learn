@@ -1190,6 +1190,45 @@ Read it from the left: 2,550. And 425 × 6 is 2,550.
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6: From Gunter's line to the Moon
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "gunters-line-and-dividers",
+      title: "17 · Gunter's line of numbers and a pair of dividers",
+      section: "6 · From Gunter's line to the Moon",
+      recallContent: [
+        {
+          prompt: "How did the Math Tables Project let unskilled computers handle negative numbers?",
+          answer: "With black and red pencils: black plus black stayed black, red plus red stayed red, and any mixed pair went to Group 2.",
+        },
+        {
+          prompt: "What tools did Langley's human computers use, according to NASA?",
+          answer: "Slide rules, curves, magnifying glasses, and basic calculating machines like the Marchant and the Friden.",
+        },
+      ],
+      body: `**Six years after Napier.** Florian Cajori's history of the slide rule opens with two inventions. Napier gave logarithms "to the world in 1614," and "only a few years later, in 1620, was made a second invention which was a necessary prelude to the invention of the slide rule." That year Edmund Gunter (1581 to 1626), professor of astronomy at Gresham College in London, designed the logarithmic "line of numbers": a straight line with the digits 1 to 10 placed along it so that distances "were not taken proportional to the numbers on it, but to the logarithms of those numbers." It is Pickworth's card scale from lesson 3, three hundred years early. A later writer, William Leybourn, put Gunter's achievement in one phrase: he "had brought it from the Tables to a Line."
+
+**Gunter's scale.** Gunter mounted his line, with other lines giving the logarithms of trigonometric functions, on a ruler "commonly called 'Gunter's scale,'" by which "questions in navigation could be resolved with the aid of a pair of compasses." A Smithsonian record describes one made around 1825 by Merrifield & Co. of New York: a 2-foot boxwood rule with "standard (or 'natural') scales typically used in navigation on one side and Gunter's logarithmic (or 'artificial') scales on the other side." Artificial is Napier's word for a logarithm (lesson 14). The logarithmic side carries a line of numbers and lines of sines and tangents, and brass pins at the zero and 60° marks "reduce wear from the points of dividers."
+
+**Multiplying with dividers.** Gunter's scale has no sliding part, so you add lengths by carrying them in a pair of dividers. The record says it plainly: logarithms "could be multiplied and divided, by measuring the distance between two logarithmic numbers with a pair of dividers." Open the dividers from 1 to the first factor. Without changing the opening, put one point on the second factor and swing the other point forward along the line: it lands on the product. To divide, swing it back. Try it on your paper scale from lesson 3: open the dividers from 1 to 2 (3.01 inches), put one point on 3 (4.77 inches), swing forward, and the other point lands at 7.78 inches, on 6. Richard Delamain described the same move for a proportion in the 1630s: "if the feet bee opened to any two termes or numbers in that Projection, then may you move the first foot to the third number, and the other foot shall give the Answer."
+
+**Why it lasted.** Made of one piece of wood, "the expansion and shrinking that happened at sea did not impede its operation," so Gunter's scale "remained popular with ship's navigators until the end of the 19th century." Surveyors, mechanics, craftsmen and retailers used it too. Cajori's 1920 study quotes a navigator's handbook of 1694 describing it as "usually of Boxwood ... commonly 2 ft. long," and concludes that "during the seventeenth century (and long after) the Gunter's scale was a rival of the slide rule."
+
+**Its troubles.** Edmund Wingate, who carried Gunter's scale to France in 1624, gave three reasons in a later English edition why it was not used more: the lines were hard to draw exactly, working sometimes needed too wide an opening of the compasses, and the instrument was not easy to carry. His own improvement was to repeat the line of numbers two and three times, so that square and cube roots could be read "by inspection only, without the aid of pen or compass," the idea behind the A scale of lesson 10. William Oughtred's complaint about the compasses is part of the next lesson's story.
+
+**Not a slide rule.** "In former years the invention of the slide rule was frequently but erroneously, attributed to Gunter," Cajori writes. "Gunter certainly constructed the first logarithmic line and scale. But this scale, as invented by Gunter, has no sliding parts and is, therefore, not a sliding rule." Old dictionaries mixed the two up because both went by the name "Gunter's lines." Putting a second line of numbers beside the first, so that one slides along the other and no dividers are needed, is the step lesson 18 is about.
+
+:::reveal How do you multiply with dividers on Gunter's line of numbers? ||| Open the dividers from 1 to the first factor, put one point on the second factor, and swing the other point forward: it lands on the product.
+
+:::reveal Why does Cajori say Gunter did not invent the slide rule? ||| Gunter's scale "has no sliding parts and is, therefore, not a sliding rule." He made the first logarithmic line; the sliding came later.
+
+## Sources
+- ${CAJORI_1909} Locator: p. 5, Napier in 1614, Gunter's line of numbers in 1620 and Gunter's scale; p. 6, "erroneously, attributed to Gunter" and "not a sliding rule". ${TA}
+- ${CAJORI_1920} Locator: p. 188 (PDF p. 6), Wingate carries Gunter's scale into France in 1624; p. 189 (PDF p. 7), Wingate's three reasons, roots "by inspection only," and Leybourn's "from the Tables to a Line"; p. 192 (PDF p. 10), Atkinson's description and "a rival of the slide rule"; p. 198 (PDF p. 16), Delamain on the feet of a pair of compasses. ${TA}
+- ${NMAH_GUNTER} Locator: description, first to fourth paragraphs (dividers, natural and artificial scales, navigators to the end of the 19th century, the 2-foot boxwood rule and its brass pins). ${TB}
+- ${PICKWORTH} Locator: pp. 10 to 11 (PDF pp. 16 to 17), the card scale and its distances. ${TA}`,
+    },
     // NEXT_SECTIONS
   ],
 };
