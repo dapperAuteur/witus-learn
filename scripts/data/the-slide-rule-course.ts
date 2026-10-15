@@ -768,6 +768,53 @@ Each distance is the logarithm from lesson 1 times 10. For finer marks, take the
 - ${NMAH_904} Locator: description, first paragraph (the scales on the front). ${TB}
 - ${NMAH_N600} Locator: description, first and second paragraphs (the scales on each side). ${TB}`,
     },
+    {
+      slug: "powers-and-roots-by-logarithms",
+      title: "12 · Powers and roots by logarithms, with notes on CI and K",
+      section: "4 · A, B and L: squares, roots and logarithms",
+      recallContent: [
+        {
+          prompt: "Why does an evenly divided scale on the slide read logarithms?",
+          answer: "It is as long as D, so when the left index of C sits over a number on D the slide has moved a distance proportional to that number's logarithm, and the even scale measures the move.",
+        },
+        {
+          prompt: "How does Cullimore find the number whose logarithm is 3.697?",
+          answer: "Set 697 on the scale of equal parts to the line and read 4980 on D under 1 on C; the characteristic 3 makes it 4,980.",
+        },
+      ],
+      body: `${P("BAM on camera working 36 to the power 1.414 by the L scale, cubing 2.17 with A and B, and, if his rule carries them, showing a reciprocal on CI and a cube on K")}
+
+**When squares are not enough.** For "powers or roots other than those of the simple forms already discussed," Pickworth writes, "it is necessary to employ the usual logarithmic process." To raise a number to a power, multiply its logarithm by the power; to take a root, divide the logarithm by the root. Then find the number that has the new logarithm. Lesson 1 did this with a table (0.477 × 2 = 0.954, the logarithm of 9). The L scale lets the rule do it.
+
+**The steps, in Pickworth's order.**
+1. Set the left index of C to the number on D, and read the mantissa on L.
+2. Add the characteristic (lesson 2).
+3. Multiply by the power, or divide by the root, on C and D.
+4. Set the decimal part of the result on L, and read the answer on D under the left index of C.
+5. Place the point from the characteristic of the result.
+
+**Pickworth's example: 36 to the power 1.414.** Set 1 on C to 36 on D: L reads 0.556. 36 has two figures, so the characteristic is 1, and log 36 = 1.556. Multiply 1.556 by 1.414 on C and D: 2.2. Set 0.2 on L and read 1585 on D. The characteristic 2 means three figures before the point: 158.5.
+
+**Cullimore's example: a fractional power.** For 717 to the power 3/5, divide 3 by 5 in your head: 0.6. The logarithm of 717 is 2.855; multiply by 0.6 on the rule: 1.713. The mantissa 0.713 set on the scale gives 516, and the characteristic 1 makes it 51.6. "Remember that the rule in every case gives only the mantissas and that the characteristic must be supplied independently."
+
+**Not always the best way.** Cullimore raises 3.17 to the seventh power two ways. By squares and cubes, (3.17 × 3.17) squared times 3.17 cubed, the rule gives 3210. By logarithms, log 3.17 = 0.501, times 7 is 3.505, and 0.505 on the scale gives 3210 again. "The first method is the more accurate, while for the seventh power, at least, the second is much the shorter." He keeps logarithms for fractional powers and roots, except where the power or root is a multiple of two or three. A fourth power, Pickworth notes, is the square of the square, and a fourth root the square root of the square root.
+
+**Cubes on A and B.** Pickworth's rule for a cube: "Set the l.h. or r.h. index of C to the number on D, and opposite the number on the left-hand scale of B read the cube" on A. One setting squares the number and multiplies by it again. His examples: 1.4 cubed is about 2.745 (exactly 2.744), and 26.4 cubed is about 18,400. Cullimore cubes 2.17: the runner to 2.17 on D, 1 on B to the runner, and over 2.17 on B read 10.2 on A.
+
+**Note: the K scale (cubes).** Many rules carry a scale of cubes. Cullimore's Keuffel & Esser "Polyphase" rule has one "below D on the edge": "Set R on any number on D and read the cube of that number on the edge of rule below D." It is divided into three parts, for numbers with one, two and three figures before the point, and read in reverse it gives cube roots. He warns that it is less accurate than cubing on A and B, though "sufficient for many purposes."
+
+**Note: the CI scale (reciprocals).** A CI scale is the C scale running backward, red on Cullimore's rule. "The red scale CI obviates the necessity of inverting the slide," he writes, and multiplying or dividing between CI and D is "just the reverse" of the same work between C and D. With the indices of C and D together, each number on D faces its reciprocal on CI. CI saves settings: Cullimore multiplies four factors, 12.8 × 6.14 × 183.2 × 62.5, in seven settings with C and D and in four with CI. And it divides one number by many: he times 85 turns of a current meter at 47.3, 48.1 and 46.4 seconds, sets 1 on C to 85 on D, and reads on D, under each time on CI, 1.80, 1.77 and 1.83 turns per second.
+
+**What this course leaves out.** Trigonometric scales (S and T) and log-log scales are not taught. Each would need its own section, and neither is needed to understand the instrument. Lesson 25 says what they add.
+
+:::reveal How do you raise a number to a fractional power on the rule? ||| Read its mantissa on L and add the characteristic, multiply by the power on C and D, set the decimal part of the result on L, and read the answer on D under the index of C.
+
+:::reveal Why does Cullimore work 3.17 to the seventh by squares and cubes rather than logarithms? ||| The squares-and-cubes method is more accurate. Logarithms are shorter, and he keeps them for fractional powers and roots.
+
+## Sources
+- ${PICKWORTH} Locator: p. 40 (PDF p. 46), the rule for a cube; p. 41 (PDF p. 47), 1.4 cubed and 26.4 cubed; p. 45 (PDF p. 51), fourth powers and roots and "the usual logarithmic process"; p. 46 (PDF p. 52), the steps and 36 to the power 1.414. ${TA}
+- ${CULLIMORE} Locator: p. 14 (PDF p. 18), the red CI scale, "obviates the necessity of inverting the slide", and the four-factor product; p. 15 (PDF p. 19), "just the reverse" and the current meter; p. 17 (PDF p. 21), cubing 2.17 and the scale of cubes below D; p. 19 (PDF p. 23), the three parts of the cube scale; pp. 20 to 21 (PDF pp. 24 to 25), 3.17 to the seventh power, 717 to the power 3/5, and "only the mantissas". ${TA}`,
+    },
     // NEXT_SECTIONS
   ],
 };
