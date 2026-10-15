@@ -520,6 +520,51 @@ Use it only when the five-bead is up (away from the beam) and there are not enou
 - ${KNOTT} Locator: p. 49 (PDF p. 72), "The operations of addition and subtraction are self-evident." ${TA}
 - ${SMITH_MIKAMI} Locator: p. 36 (PDF p. 48), "set down the first ... and then set down the second upon it", 2 and 2, 2 and 3, and the start of 4 and 3; p. 37 (PDF p. 49), the end of 4 and 3, "leaving the five-ball and 2 unit balls". ${TA}`,
     },
+    {
+      slug: "the-ten-complement",
+      title: "6 · The ten-complement: carrying to the next rod",
+      section: "2 · Adding and subtracting",
+      recallContent: [
+        {
+          prompt: "The ones rod shows 4. How do you add 3 on a one-above, four-below soroban?",
+          answer: "Bring the five-bead down (add 5) and push two one-beads away (take off 2): the rod shows 7.",
+        },
+        {
+          prompt: "What is the five-complement of 2, and when do you use it?",
+          answer: "3, because 2 and 3 make 5. Use it when the five-bead is up and there are not enough one-beads below to push.",
+        },
+      ],
+      body: `${P("BAM working 7 + 6, 8 + 6, 6 + 7 and 95 + 7 on camera, naming each complement as he moves it")}
+
+**When one rod is not enough.** A rod holds 9 at most. Add 6 to a rod showing 7 and the answer, 13, will not fit. Knott's rule, the heart of his whole account, says what to do: if a number cannot be added on a rod, "it is necessary simply to add ... one to ... the next higher place and subtract ... the complementary number from ... the place in question." He defines the complementary number as "the number which with the given number makes up 10."
+
+**The pairs that make ten.** This course calls it the **ten-complement**:
+
+| Number | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|---|
+| Ten-complement | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 |
+
+**7 + 6.** The ones rod shows 7 (the five-bead and two one-beads). You cannot add 6 there. So push up **one bead on the tens rod** (that adds 10) and **take 4 off the ones rod** (4 is the ten-complement of 6). Seven take away four is three, so the ones rod shows 3 and the tens rod shows 1: **13**. You added 10 and took off 4, which is adding 6. Smith and Mikami reach the same 13 on their older five-bead soroban, ending with "1 ten and 3 units."
+
+**This is "making ten."** First-grade arithmetic in the Common Core standards teaches the same idea in writing, as "making ten (e.g., 8 + 6 = 8 + 2 + 4 = 10 + 4 = 14)." Work 8 + 6 on the beads: the ones rod shows 8; take off 4 (the complement of 6) and push up one ten. The rod now shows 4 and the tens rod 1, so 8 + 6 = 10 + 4 = 14. The written strategy and the bead move build the same ten and leave the same 4 ones. The soroban simply does it from the other side: instead of splitting the 6 into 2 and 4, it adds 10 and takes back 4.
+
+**Why it always works.** Every digit and its ten-complement add to 10, so adding 10 on the next rod and taking off the complement adds exactly the digit. The total on the frame is the same as if the rod could hold the whole sum; the extra ten has simply moved to the place where tens belong. That is place value doing the work, and it is why Knott says the operations need "no mental labour beyond that of remembering the complementary number."
+
+**When taking off the complement needs the five-bead.** Try 6 + 7. The ones rod shows 6 (the five-bead and one one-bead). The complement of 7 is 3, but there is only one one-bead to take off. So take off the five-bead and push up two one-beads instead (taking 5 and giving back 2 takes off 3): the ones rod shows 3. Then push up one bead on the tens rod: **13**. The five-complement from lesson 5 works inside the ten-complement whenever the rod needs it.
+
+**When the carry carries.** Try 95 + 7. The ones rod shows 5, and you cannot add 7: take off its complement, 3 (take off the five-bead, push up two one-beads, as above), and add one to the tens rod. But the tens rod shows 9 and cannot take 1. Apply the same rule there: add one to the hundreds rod and take off 9 (the complement of 1) from the tens. The soroban reads **102**. Each step looked at one rod and its left-hand neighbor, and nothing was held in your head.
+
+**What you see, and what you do not.** Knott notes that "A glance at the configuration on any rod is sufficient to show if the addition ... of a named number can be effected on it." Look at the rod, then either push the beads or use a complement. Lesson 9 comes back to the one thing this costs: the first number disappears as you add to it.
+
+:::reveal The ones rod shows 7. How do you add 6 with the ten-complement? ||| Push up one bead on the tens rod (add 10) and take 4 off the ones rod (the complement of 6). The rods show 1 and 3: 13.
+
+:::reveal Why does adding 10 on the next rod and taking off the complement always add the right amount? ||| Because a digit and its ten-complement make 10: 10 minus the complement is the digit.
+
+## Sources
+- ${KNOTT} Locator: pp. 49 to 50 (PDF pp. 72 to 73), "no mental labour beyond that of remembering the complementary number", its definition, "A glance at the configuration on any rod", and the rule to add one to the next higher place and subtract the complementary number. ${TA}
+- ${SMITH_MIKAMI} Locator: p. 37 (PDF p. 49), adding 7 and 6 to make "1 ten and 3 units". ${TA}
+- Common Core State Standards Initiative. (2010). *Common Core State Standards for mathematics*. https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf Locator: p. 15, standard 1.OA.6, "making ten (e.g., 8 + 6 = 8 + 2 + 4 = 10 + 4 = 14)". ${TB}`,
+    },
     // @@END_LESSONS@@
   ],
 };
