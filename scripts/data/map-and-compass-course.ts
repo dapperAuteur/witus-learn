@@ -418,5 +418,42 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 - ${USGS_FS} Locator: pp. 1 and 2, "From Here to There: Determining Direction".
 - ${USTOPO_HINDUSTAN} Locator: lower margin, the scale, contour interval, datum and projection notes, the declination diagram and the adjoining-quadrangles box.`,
     },
+    {
+      slug: "symbols-and-colors",
+      title: "6 · Symbols and colors, and why old maps carry purple",
+      section: "2 · Reading a topographic map",
+      recallContent: [
+        {
+          prompt: "What does the USGS fact sheet say about measuring declination off the diagram in the margin?",
+          answer: "\"The declination diagram is only representational, and true values of the angles of declination should be taken from the numbers provided rather than from the directional lines.\"",
+        },
+        {
+          prompt: "Why must you read the datum note on your own sheet, not the one a book expects?",
+          answer: "Coordinates of one point on different datums can differ \"as much as 900 meters\" (Army manual), and the 2016 workbook still says most quads use NAD27 while current US Topo quads print NAD83.",
+        },
+      ],
+      body: `**Why a map needs symbols.** At 1:24,000 a house is a speck and a creek is thinner than a hair. The Army manual explains the trade: showing every feature at its true size "is not practical because many of the features would be unimportant and others would be unrecognizable because of their reduction in size." So the mapmaker uses symbols, placed "in such a manner that the center of the symbol remains in its true location." There is one exception worth knowing: where a road has been drawn wider than it is, a building beside it "is moved from its true position to preserve its relation to the road."
+
+**What the colors mean on a US Topo.** The 2023 symbol guide gives the scheme in one line: "topographic contours in brown, streams and rivers and other hydrographic features in blue, and roads in black and red." Underneath sits the aerial photograph, which "shows those features on the Earth's surface that are visible to the eye." The line style carries meaning too: "a perennial stream is symbolized by a solid blue line while an intermittent stream is shown by a blue dashed and dotted line." A dashed blue line on a map in August may be a dry bed under your feet.
+
+**The older scheme.** The USGS's 2005 symbol sheet describes the paper maps you will find in the historical collection: area colors first, "vegetation (green), water (blue), and densely built-up areas (gray or red)"; then lines, "topographic contours (brown); lakes, streams, irrigation ditches, and other hydrographic features (blue); land grids and important roads (red); and other roads and trails, railroads, boundaries, and other cultural features (black)." The 2001 fact sheet adds that "Woodlands, for instance, are shown in a green tint" and "Buildings may be shown on the map as black squares or outlines."
+
+**Purple.** Open an older quad and you may find features printed in purple. The fact sheet explains: "Recent changes in an area may be shown by a purple overprint." The 2005 sheet finishes the story: "At one time, purple was used as a revision color to show all feature changes. Currently, purple is not used in our revision program, but purple features are still present on many existing maps." Purple means "added at a revision, from photographs", and often not checked on the ground.
+
+**Symbols change, so read the legend.** The 2005 sheet warns that symbols "are constantly refined", so "within the same series, maps may have slightly different symbols for the same feature." The Army manual makes it a habit: "the legend should be referred to each time a new map is used." For a US Topo, the legend is a separate document: the symbol guide "is included as an attachment for all US Topo map downloads."
+
+**Colors have a long history.** The manual notes that "By the fifteenth century, most European maps were carefully colored," with mountains in brown, water in blue and vegetation in green, and that "the use of colors has not changed much over the past several hundred years." Lesson 35 comes back to old maps.
+
+:::reveal On a US Topo map, what color are contours, water features and roads? ||| Contours brown; streams, rivers and other water blue; roads black and red.
+
+:::reveal What does purple mean on an older USGS quad? ||| A revision: "At one time, purple was used as a revision color to show all feature changes." It is no longer used, but remains on many existing maps.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 3-5 and 3-6 (PDF pp. 21 and 22), paragraphs 3-3 and 3-5.
+- ${USGS_USTOPO_SYM} Locator: p. 2, "Symbols on US Topo Maps".
+- ${USGS_GIP_SYM} Locator: p. 1, "What is a Topographic Map?" and "Reading Topographic Maps".
+- ${USGS_FS} Locator: p. 1, the paragraph on colored areas and symbols.
+- U.S. Geological Survey. (2023, January 11). *US Topo map symbols* [Media page, "Detailed Description"]. https://www.usgs.gov/media/files/us-topo-map-symbols Locator: "Detailed Description".`,
+    },
   ],
 };
