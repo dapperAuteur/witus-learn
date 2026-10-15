@@ -1135,5 +1135,53 @@ Two worked cases, in chains:
 - ${MANUAL} Locator: table 2-1, p. 37 (PDF p. 48). ${TIER_A}
 - ${BH} Locator: sec. 4, p. 3 (scan p. 29); secs. 366 and 367, pp. 336 to 337 (scan pp. 376 to 377); sec. 369, p. 339 (scan p. 379). ${TIER_A_PD}`,
     },
+    {
+      slug: "area-from-coordinates",
+      title: "16 · Area from the coordinates of the corners, and the double meridian distance method",
+      section: "4 · Area",
+      recallContent: [
+        {
+          prompt: "How do you turn a field measured in chains into acres?",
+          answer: "Multiply length by width in chains to get square chains, then divide by 10: ten square chains make an acre.",
+        },
+        {
+          prompt: "What area formula do Breed and Hosmer give for a triangle whose three sides were measured with the tape alone?",
+          answer: "√(s(s − a)(s − b)(s − c)), where s is half the perimeter (sec. 366).",
+        },
+      ],
+      body: `**From a traverse to coordinates.** A compass-and-chain survey of a field records, for every side, a bearing and a length. Breed and Hosmer (sec. 384): "To obtain the area enclosed the points of the survey are referred to a system of rectangular coördinates." In compass surveys "it is convenient to use the magnetic meridian for one of the axes," though any line will do.
+
+**Latitudes and departures.** Each side is the long side of a right triangle whose other two sides run north-south and east-west. "The projection of any line on the meridian is called its difference of latitude or simply its latitude. The projection of a line on the other axis is called its difference of departure, or simply its departure." And:
+
+> Latitude = Distance × cos Bearing; Departure = Distance × sin Bearing
+
+North latitudes and east departures are positive; south latitudes and west departures negative. A course of 10.00 chains bearing N 30° E has a latitude of 10 × cos 30° = 8.66 chains north and a departure of 10 × sin 30° = 5.00 chains east. Breed and Hosmer's quick sanity check: "when the bearing of a course, for example, is less than 45° its latitude is greater than its departure and vice versa" (sec. 386).
+
+**Does the field close?** Walk all the way round a field and you end where you began, so "if the field is a closed polygon the sum of the north latitudes will equal the sum of the south latitudes, and the sum of the east departures will equal the sum of the west departures" (sec. 387). Real notes never close exactly. The gap between the computed end and the start is the survey's total error, √(l² + d²) for errors l in latitude and d in departure, and "if this distance E is divided by the perimeter of the field the resulting fraction is called the error of closure" (sec. 391). In their own worked compass survey, errors of 0.08 and 0.07 chain give a closing error of about 10 links on a perimeter of 129.77 chains: about 1 in 1300. Before computing an area the error is spread around the sides, which Breed and Hosmer call balancing the traverse (sec. 387).
+
+**The coordinate method** (sec. 411). Add up the latitudes and departures in order and every corner gets coordinates. Then: "(1) Number the corners consecutively around the field. (2) Multiply each abscissa by the difference between the following and the preceding ordinates, always subtracting the following from the preceding (or always subtracting the preceding from the following), and take half the sum of the products."
+
+A worked field, in chains, with corners 1 (0, 0), 2 (8, 0), 3 (10, 6) and 4 (2, 6), where the first number is the abscissa x and the second the ordinate y. For each corner, multiply its x by (the next corner's y minus the previous corner's y):
+- Corner 1: 0 × (0 − 6) = 0
+- Corner 2: 8 × (6 − 0) = 48
+- Corner 3: 10 × (6 − 0) = 60
+- Corner 4: 2 × (0 − 6) = −12
+
+The sum is 96; half of it is 48 square chains, 4.8 acres. The field is a parallelogram with a base of 8 chains and a height of 6, and 8 × 6 = 48 confirms it. (If the sum comes out negative, you numbered the corners the other way round; take its size.)
+
+**The double meridian distance method** (secs. 384 to 385). Before coordinates were routine, surveyors computed the same area as a set of trapezoids between each side and the meridian. Each trapezoid's area is its latitude times its "meridian distance," the distance of the side's middle from the meridian; to avoid halving every time they used twice that distance, the double meridian distance (D.M.D.). Breed and Hosmer's rules:
+1. "The D.M.D. of the first course ... equals the departure of the course itself."
+2. "The D.M.D. of any other course equals the D.M.D. of the preceding course plus the departure of the preceding course plus the departure of the course itself."
+3. "The D.M.D. of the last course should be numerically equal to its departure, but with opposite sign." That is the built-in check.
+
+Multiply each D.M.D. by its latitude, add the north products, subtract the south ones, "and be careful to divide by 2." The result is the same area the coordinate method gives; the two are the same arithmetic arranged differently. Old plats and field books often show D.M.D. columns, which is why it is worth recognizing.
+
+:::reveal A course runs 20.00 chains due east. What are its latitude and departure? ||| Latitude 0 (cos 90° = 0) and departure 20.00 chains east (sin 90° = 1).
+
+:::reveal A triangle has corners (0, 0), (6, 0) and (0, 4), in chains. Use the coordinate rule to find its area. ||| Corner 1: 0 × (0 − 4) = 0; corner 2: 6 × (4 − 0) = 24; corner 3: 0 × (0 − 0) = 0. Half of 24 is 12 square chains, 1.2 acres, which matches ½ × 6 × 4.
+
+## Sources
+- ${BH} Locator: secs. 384 and 385, pp. 352 to 356 (scan pp. 392 to 396); sec. 386, p. 356 (scan p. 396); secs. 387 and 391 and Fig. 159, pp. 357 to 360 (scan pp. 397 to 400); sec. 411, pp. 374 to 375 (scan pp. 414 to 415). ${TIER_A_PD}`,
+    },
   ],
 };
