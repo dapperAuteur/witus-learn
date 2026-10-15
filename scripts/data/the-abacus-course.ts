@@ -565,6 +565,52 @@ Use it only when the five-bead is up (away from the beam) and there are not enou
 - ${SMITH_MIKAMI} Locator: p. 37 (PDF p. 49), adding 7 and 6 to make "1 ten and 3 units". ${TA}
 - Common Core State Standards Initiative. (2010). *Common Core State Standards for mathematics*. https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf Locator: p. 15, standard 1.OA.6, "making ten (e.g., 8 + 6 = 8 + 2 + 4 = 10 + 4 = 14)". ${TB}`,
     },
+    {
+      slug: "subtracting-with-complements",
+      title: "7 · Subtracting with complements",
+      section: "2 · Adding and subtracting",
+      recallContent: [
+        {
+          prompt: "State Knott's rule for adding a number a rod cannot take.",
+          answer: "Add one to the next higher place and subtract the complementary number (the number that makes 10 with it) from the rod in question.",
+        },
+        {
+          prompt: "How does the bead move for 8 + 6 match the first-grade \"making ten\" strategy?",
+          answer: "Take 4 (the complement of 6) off the 8 and push up one ten: 10 + 4 = 14, the same ten and the same 4 ones as 8 + 2 + 4.",
+        },
+      ],
+      body: `${P("BAM working 8 - 3, 7 - 4, 13 - 4, 12 - 7 and 102 - 7 on camera, then checking 102 - 7 by adding 7 back")}
+
+**Subtraction runs the same rule backward.** Knott: "Subtraction is executed in a similar manner." His rule has a subtraction half built in: if a number cannot be taken off a rod, "subtract ... one ... from the next higher place and ... add the complementary number ... to the place in question." Smith and Mikami agree in one line: "Subtraction is evidently performed with equal ease."
+
+**When the beads are there, take them off.** 8 - 3: the rod shows the five-bead and three one-beads. Take the three one-beads away: the rod shows **5**. Most single-rod subtractions are this direct.
+
+**The five-complement, backward.** 7 - 4: the rod shows the five-bead and two one-beads, and you cannot take four one-beads off two. So take off the five-bead (subtract 5) and push up one one-bead (add back 1, the five-complement of 4). Seven minus five plus one is three: the rod shows **3**.
+
+| To subtract | Take off | Push up | Because |
+|---|---|---|---|
+| 1 | the five-bead | 4 one-beads | 5 - 4 = 1 |
+| 2 | the five-bead | 3 one-beads | 5 - 3 = 2 |
+| 3 | the five-bead | 2 one-beads | 5 - 2 = 3 |
+| 4 | the five-bead | 1 one-bead | 5 - 1 = 4 |
+
+**The ten-complement, backward.** 13 - 4: the ones rod shows 3 and cannot give up 4. So take **one bead off the tens rod** (subtract 10) and **add 6 to the ones rod** (6 is the ten-complement of 4). Three plus six is nine, and the tens rod is now empty: **9**. You took off 10 and gave back 6, which is taking off 4. The Common Core's first-grade standard reaches the same 9 by a different route, "decomposing a number leading to a ten (e.g., 13 - 4 = 13 - 3 - 1 = 10 - 1 = 9)." Both rest on the ten; the soroban borrows it whole and gives back the change.
+
+**When adding the change needs the five-bead.** 12 - 7: the ones rod shows 2. Take one off the tens rod and add 3 (the complement of 7) to the ones rod. But adding 3 to a rod showing 2 is lesson 5's five-complement: bring down the five-bead and take off two. The ones rod shows the five-bead alone: **5**.
+
+**When the borrow has to travel.** 102 - 7: the ones rod shows 2 and cannot give up 7, so you need one off the tens rod, but the tens rod is empty. Apply the rule there first: take one off the hundreds rod and add 9 (the complement of 1) to the tens rod. Now finish the ones: add 3 (the complement of 7) to the 2 with the five-bead, as above. The soroban reads **95**. Ten hundreds, ten tens: each borrow broke one bead of a higher place into ten of the place below, exactly as place value says it must.
+
+**Check by adding back.** Lesson 6 worked 95 + 7 and got 102. Subtraction undoes addition, so set 95, add 7, and you should see 102 again. It is the quickest honest check you have on a soroban, and lesson 9 explains why you need one.
+
+:::reveal The ones rod shows 3 and the tens rod 1. How do you subtract 4? ||| Take one bead off the tens rod (subtract 10) and add 6, the complement of 4, to the ones rod: 9.
+
+:::reveal How do you take 4 off a rod showing 7 when there are only two one-beads up? ||| Take off the five-bead (subtract 5) and push up one one-bead (add back 1): the rod shows 3.
+
+## Sources
+- ${KNOTT} Locator: p. 49 (PDF p. 72), "Subtraction is executed in a similar manner"; pp. 49 to 50 (PDF pp. 72 to 73), the rule with its subtraction half, "subtract ... one ... from the next higher place and ... add the complementary number". ${TA}
+- ${SMITH_MIKAMI} Locator: p. 37 (PDF p. 49), "Subtraction is evidently performed with equal ease." ${TA}
+- Common Core State Standards Initiative. (2010). *Common Core State Standards for mathematics*. https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf Locator: p. 15, standard 1.OA.6, "decomposing a number leading to a ten". The PDF sets the minus sign as a dash; it is written here as a hyphen. ${TB}`,
+    },
     // @@END_LESSONS@@
   ],
 };
