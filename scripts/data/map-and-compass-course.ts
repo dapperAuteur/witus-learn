@@ -1169,5 +1169,53 @@ Going the other way, compass to map, you undo it: **compass to map: subtract**.
 - ${FM_2001} Locator: printed pp. 6-9 and 6-10 (PDF pp. 72 and 73), paragraphs 6-6b, 6-6d and 6-6e; printed p. 6-14 (PDF p. 77), the note in paragraph 6-6.
 - ${USTOPO_HINDUSTAN} Locator: the declination diagram.`,
     },
+    {
+      slug: "taking-a-bearing",
+      title: "18 · Taking a bearing and a back bearing",
+      section: "4 · The compass",
+      recallContent: [
+        {
+          prompt: "In Indiana, how do you turn a true bearing from the map into a magnetic bearing to walk?",
+          answer: "Add the declination (magnetic north is to the left, west, on the diagram). On Hindustan, 60° true is about 64.5° magnetic.",
+        },
+        {
+          prompt: "How does NCEI write the declination correction as one equation?",
+          answer: "True bearing = magnetic bearing + declination, with west declination negative.",
+        },
+      ],
+      body: `${P("BAM takes a direct bearing to a landmark with each compass, says the number aloud, walks to the landmark and takes the back bearing to where he started, and shows the two numbers differ by 180°")}
+
+**What a bearing is.** The Army manual calls it an azimuth: "An azimuth is defined as a horizontal angle measured clockwise from a north base line. This north base line could be true north, magnetic north, or grid north." The workbook uses the word bearing and says that "the term 'bearing' is used interchangeably with the term 'azimuth.'" Either way it is an angle in degrees, from 0 at north, clockwise: east is 90, south 180, west 270.
+
+**Sketch one before you take one.** To draw a bearing of 60°: draw a short line straight up the page for north, put a protractor's center on its base with 0 on the north line, count 60 degrees clockwise, mark it, and draw the line. A bearing of 240° points the opposite way along the same line. Sketching first makes the numbers mean something before you meet them in the field.
+
+**Taking a direct bearing with a baseplate compass.** The workbook's four steps (Table 4-2):
+1. "Adjust compass for declination if using the bearing with a map."
+2. "Face object and align the direction-of-travel arrow with the object whose bearing you want to measure."
+3. "Turn the compass housing until the north end of the magnetic needle is aligned with the orienting arrow."
+4. "Read the bearing where the direction of travel arrow or index line meets the dial. This is the direction to the object, expressed as an angle."
+
+Then do it again: the workbook's tip is "Take bearing twice."
+
+**With a lensatic.** For a quick reading, the centerhold: point the cover at the object by turning your whole body, then "look down and read the azimuth from beneath the fixed black index line." For a precise sight on a distant object, the compass-to-cheek technique: raise the cover's sighting wire, look through the rear-sight slot, line the wire up with the object, and "glance down at the dial through the eye lens to read the azimuth."
+
+**The back bearing.** "A back bearing ... is the exact opposite of a bearing", the workbook says: it points from the object back to you. The Army manual's rule: "add 180 degrees if the azimuth is 180 degrees or less, or subtract 180 degrees if the azimuth is 180 degrees or more." The workbook's example: "if the direct bearing is 60° the back bearing is 240°." Two more:
+- 145° + 180° = **325°**.
+- 300° - 180° = **120°**.
+
+On a baseplate you can also read a back bearing directly by "aligning the south end of the needle with the orienting arrow."
+
+**Why back bearings matter.** They tell someone else where you are: the workbook's example is "I am located 145° from the cell tower." They also check that you are still on line while you walk (lesson 19). And they are where careless arithmetic does damage. The Army manual prints the warning in a box: "A simple mathematical mistake could cause disastrous consequences."
+
+**A bearing is a number, so say it with its north.** "64° magnetic" and "60° true" can be the same direction on Hindustan ground (lesson 17). A bearing written without its north is half a fact.
+
+:::reveal What is the back bearing of 145°? ||| 325°: add 180 because 145 is less than 180.
+
+:::reveal In which direction, and from which line, is an azimuth measured? ||| Clockwise, from a north base line (true, magnetic or grid north).
+
+## Sources
+- ${FM_2001} Locator: printed pp. 6-2 and 6-3 (PDF pp. 65 and 66), paragraph 6-3 and 6-3a; printed pp. 9-3 and 9-4 (PDF pp. 112 and 113), paragraphs 9-4a and 9-4b.
+- ${NWCG_475} Locator: p. 81, chapter 4 introduction; p. 84, tips; pp. 88 to 90, "Taking Bearings (Direct and Back)" and Table 4-2.`,
+    },
   ],
 };
