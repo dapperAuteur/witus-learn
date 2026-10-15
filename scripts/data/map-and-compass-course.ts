@@ -58,15 +58,20 @@ import type { AuthoredCourse } from "./authored-course";
 // so every locator gives the printed page AND the PDF page. NWCG PMS 475: the printed page equals the
 // PDF page (read from the Wayback copy of 2024-01-27, because nwcg.gov did not resolve).
 //
-// HEDGES WRITTEN INTO LESSONS (each has a check in src/lib/research-checks.ts):
-//  - L16, L17: the declination for 14 October 2026 at the four quads is this course's own WMM2025
-//    computation (about 4°47' W at Hindustan), to be confirmed on NCEI's calculator.
-//  - L3: Indiana DNR day-visitor hours (312 IAC 8-2) could not be read here.
-//  - L3: Yellowwood's web page allows dispersed camping along the Tecumseh Trail while its property map
-//    says "Camping in designated areas"; which rule governs is unsettled.
-//  - L3: the Pathfinder Trail orienteering course at Morgan-Monroe is closed after the 18 June 2026
-//    tornado; no reopening date is published.
-//  - L1, L23: whether NWCG's announced revision of PMS 475 changes anything this course uses.
+// HEDGES WRITTEN INTO LESSONS (each has a check in src/lib/research-checks.ts, keys "mc-..."):
+//  - L16, L17 (mc-declination-2026-ncei): the declination for 14 October 2026 at the quads is this
+//    course's own WMM2025 computation (about 4°47' W at Hindustan), to be confirmed on NCEI's calculator.
+//  - L3, L30 (mc-dnr-day-visitor-hours): Indiana DNR day-visitor hours (312 IAC 8-2) could not be read.
+//  - L3 (mc-yellowwood-dispersed-camping): Yellowwood's web page allows dispersed camping along the
+//    Tecumseh Trail while its property map says "Camping in designated areas"; which governs is open.
+//  - L3 (mc-pathfinder-reopening): the Pathfinder Trail orienteering course is closed after the
+//    18 June 2026 tornado; no reopening date is published.
+//  - L24 (mc-orienteering-body-indiana): the 2001 manual's description of civilian orienteering is dated.
+//  - L36 (mc-read-alongside-book-details): edition and publisher details for two of BAM's books.
+//  - Course-wide (mc-nwcg-pms475-revision): whether NWCG's announced revision of PMS 475 changes
+//    anything this course cites. Standards (mc-california-ccssm-grade-texts): the four grade-level
+//    CCSS texts have not been compared with California's modified publication.
+// LINKS TO PRIVATE COURSES: none. The neuromatch climate-tools course (private) is not cited.
 //
 // STANDARDS (src/lib/standards/): CCSS 4.MD.C.6 (partial), 4.MD.C.7, 5.G.A.2, 7.G.A.1 (partial) and
 // HSN-Q.A.3 through the shared Common Core math file; Indiana 5.CA.11 and 7.GM.1 (partial) through a
