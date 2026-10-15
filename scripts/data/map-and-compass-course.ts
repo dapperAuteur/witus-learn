@@ -1561,5 +1561,45 @@ So a two-step pace is about twice an Army pace, and a count of one is about half
 - ${NWCG_475} Locator: p. 133, "Pacing" and Table 6-11; p. 134, the list of what changes a pace.
 - ${MMSF_ORIENT} Locator: "Orienteering Pointers", "Estimating Distance". Linked only.`,
     },
+    {
+      slug: "let-the-land-help",
+      title: "24 · Let the land help: handrails, catching features, attack points, offsets",
+      section: "5 · Map and compass together",
+      recallContent: [
+        {
+          prompt: "How do the Army manual and the workbook define a pace?",
+          answer: "The Army: one natural step, about 30 inches. The workbook: the average length of two natural steps.",
+        },
+        {
+          prompt: "What does the Army manual call the most common source of error when moving?",
+          answer: "\"Determining distance is the most common source of error encountered while moving either mounted or dismounted.\"",
+        },
+      ],
+      body: `${P("BAM walks a short leg that uses each technique in turn on his quad: a stream as a handrail, a road as a catching feature, a trail junction as an attack point, and a deliberate offset onto a linear feature")}
+
+**Why lean on the land.** The Army manual: "because it is difficult to dead reckon without error over long distances with your compass, the alert navigator can often gain assistance from the terrain." Moving by terrain association "is more forgiving of mistakes" because "you are comparing what you expected to see from the map to what you do see on the ground." The manual's everyday comparison: "you do not find the neighborhood grocery store by dead reckoning".
+
+**Handrails.** "Handrails are linear features like roads or highways, railroads, power transmission lines, ridgelines, or streams that run roughly parallel to your direction of travel." While one runs beside you, you can "rough compass without the use of steering marks for as long as the feature travels with you on your right or left." Morgan-Monroe's orienteering brochure says the same about its own hills: "Following compass bearings over long distances is not practical in ridge-and-valley terrain. Instead, look for 'handrails'", and "ridge tops and stream beds also count."
+
+**Catching features.** Where your route leaves the handrail, pick something you cannot miss: "Some prominent feature located near this point is selected to provide this warning. This is called a catching feature; it can also be used to tell you when you have gone too far." A road across your path, a lake, the bottom of a steep slope: if you reach it, you have overshot.
+
+**Attack points.** "The catching feature may also be your navigational attack point; this point is the place where area navigation ends and point navigation begins." From there you move "cautiously and precisely along a given azimuth for a specified distance", and "A distance of 500 meters or less is most desirable." The Army's orienteering appendix gives examples: "stream junctions, bridges, and road intersections."
+
+**The deliberate offset.** Suppose your goal sits on a road that crosses your path, and you aim straight at it. Small compass errors mean you reach the road without knowing whether the goal lies left or right. The manual's answer is to miss on purpose: "A deliberate offset by a known number of degrees in a known direction compensates for possible errors and ensures that upon reaching the linear feature, the user knows whether to go right or left to reach the objective." Its numbers: "Ten degrees is an adequate offset for most tactical uses. Each degree offset moves the course about 18 meters to the right or left for each 1,000 meters traveled." So 10° over 1,000 meters puts you about **180 meters** to one side, and you turn the other way when you hit the road. The 18 meters checks out: 1,000 × tan(1°) is about 17.5 meters. Over 600 meters, 10° is about 6 × 18 = **108 meters**. The manual's reason for erring on purpose: "If you introduce your own mistake, you will certainly know how to correct it."
+
+**Thumbing.** The orienteering appendix's simplest trick: fold the map small, put your thumb beside your location, and move it as you move. "This technique prevents the orienteer from looking all over the map for his location."
+
+**Putting it together.** The manual's conclusion: "the most successful navigation is obtained by combining the techniques described above. Constant orientation of the map and continuous observation of the terrain in conjunction with compass-read azimuths, and distance traveled on the ground compared with map distance, used together make reaching a destination more certain." A typical leg: follow a stream (handrail) to where a trail crosses it (catching feature and attack point), then walk the last 300 meters on a bearing with a pace count.
+
+**Orienteering as a sport.** The 2001 manual describes civilian orienteering under "the United States Orienteering Federation with at least 70 clubs currently affiliated", on maps at 1:15,000 with a 5-meter contour interval and north lines drawn to magnetic north. That is a 2001 description; check the current body and its clubs before you go looking for an event.
+
+:::reveal What is a catching feature? ||| A prominent feature near where your route leaves a handrail, chosen to warn you it is time to turn, or that you have gone too far.
+
+:::reveal About how far to the side does a 10° deliberate offset put you after 1,000 meters? ||| About 180 meters: the manual's 18 meters per degree per 1,000 meters.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 9-6 and 9-7 (PDF pp. 115 and 116), paragraph 9-4e; printed pp. 11-15 to 11-18 (PDF pp. 161 to 164), paragraphs 11-6a(9), (10), 11-6b and 11-6c; printed pp. F-19 to F-21 (PDF pp. 214 to 216), paragraphs F-10 and F-11.
+- ${MMSF_ORIENT} Locator: "Orienteering Pointers", "Route Choice and Handrails". Linked only.`,
+    },
   ],
 };
