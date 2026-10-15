@@ -46,6 +46,7 @@
 - [`know-your-rights`](./know-your-rights-course.ts) The Bill of Rights: Know Your Rights
 - [`know-your-rights-at-work`](./know-your-rights-at-work-course.ts) Know Your Rights at Work
 - [`map-your-own-stack`](./map-your-own-stack-course.ts) Capstone: Map Your Own Stack
+- [`reading-a-land-description`](./reading-a-land-description-course.ts) Reading a Land Description: The Grid, the Deed and Indiana · TOOLS-04 (tools-that-think) · also in: Science & Math, Money & Property
 - [`spotting-misleading-marketing`](./spotting-misleading-marketing-course.ts) Spotting Misleading Marketing
 - [`state-civics-ak`](./state-civics-ak-course.ts) Alaska Civics: How Your State Government Works
 - [`state-civics-al`](./state-civics-al-course.ts) Alabama Civics: How Your State Government Works
@@ -308,6 +309,7 @@
 - [`how-a-house-stands-up`](./how-a-house-stands-up-course.ts) How a House Stands Up: The Load Path, the Parts, and What You Can See · series the-house-you-live-in · private · listed here as an extra category; primary: Science & Math
 - [`how-the-trades-work`](./how-the-trades-work-course.ts) How the Trades Work: Journeyman, Apprentice, and Who Actually Decides · private · listed here as an extra category; primary: Careers & Media
 - [`read-the-plan-and-the-code`](./read-the-plan-and-the-code-course.ts) Reading the Plan and the Code: Drawings, Specifications, and Who Made the Code Law · series the-house-you-live-in · private · listed here as an extra category; primary: Science & Math
+- [`reading-a-land-description`](./reading-a-land-description-course.ts) Reading a Land Description: The Grid, the Deed and Indiana · TOOLS-04 (tools-that-think) · listed here as an extra category; primary: Civics
 - [`who-the-rule-leaves-out`](./who-the-rule-leaves-out-course.ts) Who the Rule Leaves Out: Delia Derbyshire, Ruby Payne-Scott, Zitkala-Šá, and the Paper Each Rule Left · series credit · private · listed here as an extra category; primary: Culture & History
 - [`whose-name-is-on-the-score`](./whose-name-is-on-the-score-course.ts) Whose Name Is on the Score: Zitkala-Šá, The Sun Dance Opera, and the Copyright Register · series credit · private · listed here as an extra category; primary: Culture & History
 
@@ -352,9 +354,11 @@
 - [`how-we-know-whats-out-there`](./how-we-know-whats-out-there-course.ts) How We Know What's Out There · SCI-02 (science-and-math)
 - [`intro-to-citizen-science`](./intro-to-citizen-science-course.ts) Intro to Citizen Science · SCI-04 (science-and-math)
 - [`read-the-plan-and-the-code`](./read-the-plan-and-the-code-course.ts) Reading the Plan and the Code: Drawings, Specifications, and Who Made the Code Law · series the-house-you-live-in · private · also in: Money & Property, Careers & Media
+- [`surveying-how-land-gets-measured`](./surveying-how-land-gets-measured-course.ts) Surveying: How Land Gets Measured · TOOLS-03 (tools-that-think)
 - [`the-river-and-the-watershed`](./the-river-and-the-watershed-course.ts) The River and the Watershed · SCI-03 (science-and-math)
 - [`keeping-a-house`](./keeping-a-house-course.ts) Keeping a House: Hazards, Checks, and Where an Amateur Has to Stop · series the-house-you-live-in · private · listed here as an extra category; primary: Money & Property
 - [`manure-and-compost`](./manure-and-compost-course.ts) Manure and Compost · LOOP-00 (the-calorie-loop) · listed here as an extra category; primary: Farm & Garden
+- [`reading-a-land-description`](./reading-a-land-description-course.ts) Reading a Land Description: The Grid, the Deed and Indiana · TOOLS-04 (tools-that-think) · listed here as an extra category; primary: Civics
 - [`the-author-line-and-the-finding`](./the-author-line-and-the-finding-course.ts) The Author Line and the Finding: Three Names in 1959, and What an Ethics Committee Concluded in 2014 · private · listed here as an extra category; primary: Culture & History
 - [`what-the-citation-records`](./what-the-citation-records-course.ts) What the Citation Records: Reading a Prize Page Against the Documents Around It · private · listed here as an extra category; primary: Culture & History
 - [`who-gets-nominated`](./who-gets-nominated-course.ts) Who Gets Nominated: Chien-Shiung Wu and the Stage Before the Prize · series credit · private · listed here as an extra category; primary: Culture & History
