@@ -834,5 +834,43 @@ Freeman's north line ran from Point Coupee on the Wabash "south 78 degrees east"
 - ${WILSON} Locator: p. 1 (Freeman, "1802-3"); p. 7 (the north and east lines); p. 9 (the cessions); p. 12 (Freeman's first entry). ${TIER_A_1916}
 - ${ISL_BLOG} Locator: the paragraphs on the Gore, the Greenville Treaty Line, and "about 1834". ${TIER_B}`,
     },
+    {
+      slug: "the-grid-under-your-roads",
+      title: "11 · The grid under your roads: section lines, county roads, and the roads that only look straight",
+      section: "3 · Indiana on the grid",
+      recallContent: [
+        {
+          prompt: "From which three origins are Indiana's townships counted?",
+          answer: "The Ohio River Base (1799), the Second Principal Meridian (1805), and the First Principal Meridian (1819).",
+        },
+        {
+          prompt: "What did Mansfield find about Freeman's north line of the Vincennes Tract?",
+          answer: "It was run on a magnetic bearing of N 78° W instead of a true one, with an average declination of 6° 45' E (White, p. 49).",
+        },
+      ],
+      body: `**Look at a county road map.** Across most of Indiana the local roads make a checkerboard. Otis P. Starkey of Indiana University explained why in a short paper for the Indiana Academy of Science, "Road Patterns of Indiana" (1956): "In most of the state the influence of the early surveys appears in the common checkerboard pattern." Throughout that area "the majority of the local roads either follow or are parallel to the section lines. The roads are most commonly one mile apart, at most one mile and a half, and in thickly settled sections one-half mile apart" (p. 192).
+
+**Where the grid is plainest.** "In some counties, for example Grant, Hancock, and Madison, the checkerboard pattern is so regular that the roads almost coincide with the section lines; everywhere in central and northern Indiana conformity of roads to section lines is common" (p. 192). Where a road does bend off the line, Starkey found the bends are usually small detours "to avoid streams, ponds, and moraines," often "so slight as to be unnoticeable on small-scale maps" (pp. 192 to 193).
+
+**Why the roads followed the survey.** Starkey gives the practical reason (p. 193). County roads "were opened by petition and the work was performed by the settlers after approval by the County Commissioners. As each man was obligated to work six days a year on the roads, there was a tendency to advocate the easier routes. When the land was first surveyed, the surveyors blazed the trees and cleared the underbrush along the section lines. The corners of each quarter section were also marked. Thus, if a county road became desirable, it was easier to follow a line already surveyed and partly cleared." The section-line roads also "took but a little land from each of the adjacent properties nor did they cut across farmsteads or upset the rectangular field pattern."
+
+**What it costs.** "The checkerboard road system is not a particularly efficient system. Its right-angle corners slow down traffic. To get to a point to the northwest, northeast, southwest, or southeast of the starting point involves a journey of 10 miles for every 7 miles airline distance if no diagonal roads are available" (p. 193). That is the Pythagorean theorem on a map: a diagonal of 7 miles has legs of about 5 miles each, and 5 + 5 is about 10.
+
+**Where the pattern breaks.** In the hilly, unglaciated south, roads follow ridges instead, "descending briefly into the valley and then climbing up an opposite spur." Near rivers and lakes, roads keep their distance from the water. And there is a stranger exception: "in Clark and Knox counties where road grids are diagonal to the township-range survey but parallel to the old survey grid" (p. 193). Knox County holds Vincennes. The "old survey grid" there predates the federal township lines, which is lesson 10's story of the Vincennes Tract and the French claims seen from the road.
+
+**The road that only looks straight.** Through routes behave differently. "Especially where traffic is heavy, through routes cut across survey lines," and Starkey warns that some roads look straighter on a state map than they are: "U. S. 40 east of Indianapolis at a glance appears to follow the section lines but nowhere does it do so" (p. 192). U.S. 40 is the old National Road, which Starkey names among the routes that trace "early trunk roads."
+
+**The corners under the asphalt.** A county surveyor's page says it plainly. In Wells County, section corners "were created when the government originally surveyed Indiana into 'mile Square' parcels," the half-mile corners are "quarter corners," and "these corners are usually found near the centerlines of the County's roads." Wells County counts "1384 cornerstones" set by government surveyors "starting in 1805" and "finishing in 1823." When a road crew digs at an intersection, it may be digging at a section corner, which is one reason county surveyors keep corner records (lesson 12).
+
+**A word that means two things.** "Township" in a land description means a survey township, six miles square. "Township" on a ballot means a civil township, a unit of local government; the catalog's course *Indiana Civics: How Your State Government Works* teaches that every acre of Indiana lies within one. How Indiana's civil townships relate to its survey townships, where they match and where they do not, is not something this course has established from a primary source, so it does not claim either way. Treat them as two different things until a record in front of you says otherwise.
+
+:::reveal According to Starkey, how far do you drive on a checkerboard to reach a point 7 miles away on a diagonal? ||| About 10 miles, if no diagonal roads exist (p. 193).
+
+:::reveal Why did early county roads tend to follow section lines, according to Starkey? ||| Settlers built the roads with six days of required labor a year, and the surveyors had already blazed and partly cleared the section lines, so following them was easier. They also took little land from each property and left farm fields whole.
+
+## Sources
+- ${STARKEY} Locator: pp. 192 to 193 (PDF pp. 1 to 2). ${TIER_B}
+- ${WELLS} Locator: the page's first paragraphs. ${TIER_B}`,
+    },
   ],
 };
