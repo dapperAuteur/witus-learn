@@ -415,7 +415,7 @@ Breed and Hosmer say Gunter's chain is used "chiefly" in land surveying "on acco
 
 **Errors that cancel and errors that add up.** Section 23 separates errors "which are of such a nature that they tend to balance each other" from "those which continually accumulate. The latter are by far the more serious." Their example: a 5,000-foot line measured with a tape 0.01 foot too long, with a random error of about 0.02 foot in marking each tape length. Over fifty lengths the random errors partly cancel and leave about 0.14 foot; the long tape adds its 0.01 foot every time, 0.50 foot in all. "The small (0.01) accumulative error is therefore seen to have far greater effect than the larger (0.02) compensating error." A worn chain is an accumulating error.
 
-**The first four miles, 1785.** The Land Ordinance's surveys began on September 30, 1785, at the Pennsylvania line on the north bank of the Ohio. By October 8, C. Albert White records in the Bureau of Land Management's history, Thomas Hutchins, eight other surveyors "and a crew of about 30 chainmen and axemen ran 4 miles of line," measured "with a two-pole Gunter's chain held horizontally." The ground was "very rough, hilly, and covered with timber," speed mattered most, and "the resulting measurements were very crude" (pp. 18 to 19). What became of land laid out on such measurements is the subject of *Reading a Land Description*.
+**The first four miles, 1785.** The Land Ordinance's surveys began on September 30, 1785, at the Pennsylvania line on the north bank of the Ohio. By October 8, C. A. White records in the Bureau of Land Management's history, Thomas Hutchins, eight other surveyors "and a crew of about 30 chainmen and axemen ran 4 miles of line," measured "with a two-pole Gunter's chain held horizontally." The ground was "very rough, hilly, and covered with timber," speed mattered most, and "the resulting measurements were very crude" (pp. 18 to 19). What became of land laid out on such measurements is the subject of *Reading a Land Description*.
 
 :::reveal The rear chainman holds 7 pins, and one more pin stands in the ground ahead. How many chain-lengths have been run since the last tally of ten? ||| Seven. The pins in the rear chainman's hand are the count; the pin in the ground only marks the point and is not counted.
 
@@ -424,6 +424,49 @@ Breed and Hosmer say Gunter's chain is used "chiefly" in land surveying "on acco
 ## Sources
 - ${BH} Locator: secs. 10 and 11 and Fig. 2, pp. 7 to 10 (scan pp. 33 to 36); secs. 13 to 15, pp. 11 to 12 (scan pp. 37 to 38); sec. 23, pp. 14 to 15 (scan pp. 40 to 41). ${TIER_A_PD}
 - ${WHITE} Locator: pp. 18 to 19 (PDF pp. 32 to 33). ${TIER_A}`,
+    },
+    {
+      slug: "practice-pace-and-chain",
+      title: "7 · Practice: pace and chain the same line, and report each honestly",
+      section: "1 · Distance: pacing and the chain",
+      recallContent: [
+        {
+          prompt: "What does the rear chainman's handful of pins record?",
+          answer: "The number of chain-lengths measured. The one pin in the ground only marks the point and is not counted.",
+        },
+        {
+          prompt: "Which errors do Breed and Hosmer call far more serious: those that balance or those that accumulate?",
+          answer: "Those that accumulate, such as a chain of the wrong length, which adds its error on every chain-length.",
+        },
+      ],
+      body: `${P("BAM pacing and then chaining the same line, with both field books shown and the comparison worked on screen")}
+
+**The exercise.** Pick a straight line a few hundred feet long, on public ground open to walking or with the owner's yes (lesson 2), and mark both ends. Measure it twice: once by pacing with the step you calibrated in lesson 4, once with a chain or tape as in lesson 6. Then report each result with only the digits it has earned. This is the skill a mathematics standard names directly: choose a level of accuracy appropriate to the limitations of the measurement when reporting a quantity.
+
+**How good is each method?** Breed and Hosmer give the chain's budget (sec. 16): "If, in a survey, it is allowable to make an error of one foot in every five hundred feet the chain is sufficiently accurate for the work. To reach an accuracy of 1 in 1000 or greater with a chain it is necessary to give careful attention to the pull, the plumbing, and the deviation from the standard length." With a steel tape "an accuracy of 1 in 5000 can be obtained without difficulty" with ordinary care. No book can give you the figure for pacing, because it is your own step: your calibration spread is the measure.
+
+**A worked example.**
+1. **Calibration** (lesson 4): 200 feet walked in 79, 81, 80 and 80 paces. One pace is 2.5 feet, ranging from 2.47 to 2.53, a little over 1 percent either way.
+2. **Paced:** 123 paces. 123 × 2.5 = 307.5 feet, with a range of 123 × 2.47 = 304 to 123 × 2.53 = 311 feet. Report it as about 308 feet, give or take 4, paced. Writing "307.5 feet" would claim a precision your legs never had.
+3. **Chained:** 4 chains and 62 links, so 4.62 × 66 = 304.92 feet. At the chain's 1 in 500, the uncertainty is about 304.92 ÷ 500 = 0.6 foot. Report 305 feet, or 4.62 chains. Recording to the nearest link already matches the chain's accuracy, because a link is 0.66 foot. "304.92 feet" claims hundredths of a foot that the chain did not measure.
+4. **Compare:** the paced figure is 2.6 feet longer, about 1 part in 117 (2.6 ÷ 305). That is inside the pace's own range of 304 to 311 feet, which is all a rough check can ask.
+
+**What the check is for.** Pacing cannot find a one-foot error, but it catches a big one at once. If the two figures disagree by far more than your pacing spread allows, suspect a blunder in the chaining first. Breed and Hosmer's list of common mistakes begins with reading errors and "omitting a whole chain- or tape-length" (sec. 14), and a dropped chain shows up as a gap of 66 feet. Their advice for every measurement is the same habit: "the chainmen should make mental estimates of the distances when measuring, in order to avoid large and absurd mistakes" (sec. 15).
+
+**Three rules for the field book.**
+1. Never write more digits than the method supports.
+2. Write the method next to the number: "paced" or "chained."
+3. Keep the raw counts, so a reader can redo your arithmetic.
+
+:::reveal Your pace is 2.4 feet and you count 150 paces. What do you write in the field book? ||| 150 × 2.4 = 360 feet, written as "about 360 feet, paced", with the count of 150 beside it, never "360.0 feet".
+
+:::reveal A line chains at 6.05 chains. Using Breed and Hosmer's 1 in 500, about how uncertain is it? ||| 6.05 × 66 = 399.3 feet, and 399.3 ÷ 500 is about 0.8 foot. Report about 399 feet, or 6.05 chains.
+
+:::reveal Pacing gives about 380 feet and the chain gives 314 feet for the same line. What should you suspect first? ||| A blunder in the chaining, most likely a chain-length dropped from the tally: the gap is 66 feet, one full chain.
+
+## Sources
+- ${BH} Locator: secs. 14 to 16, pp. 11 to 12 (scan pp. 37 to 38). ${TIER_A_PD}
+- ${GILLESPIE} Locator: Part IX, art. 460, pp. 311 to 312 (scan pp. 317 to 318). ${TIER_A_PD}`,
     },
   ],
 };
