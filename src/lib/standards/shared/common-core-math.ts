@@ -7,7 +7,11 @@
 // note in data/de.ts says in as many words "We claim no mathematics standards." Every state added
 // here must have its MATH status checked against its own department of education, separately.
 //
-// Fetched 2026-08-10 from the CCSS Initiative's own PDF. NOTE THE URL: www.thecorestandards.org
+// Fetched 2026-08-10 from the CCSS Initiative's own PDF, and fetched again 2026-10-14 for The Slide
+// Rule: every text below was compared with the 2026-10-14 copy (all ten earlier ones unchanged), and
+// 8.EE.A.3 and 8.EE.A.4 (PDF p. 54), HSF-BF.B.5 (PDF p. 70) and MP5 (PDF p. 7) were transcribed from
+// it. The PDF prints exponents as superscripts; 8.EE.A.3's example is transcribed with superscript
+// digits (10⁸, 10⁹). NOTE THE URL: www.thecorestandards.org
 // now returns HTTP 403 to automated fetches (it did not on 2026-07-13, the date in
 // common-core-ela.ts), while the PDF below serves normally. Cite the PDF, or the next re-check
 // fails on a blocked page rather than on a changed standard.
@@ -19,13 +23,22 @@
 //
 // WHAT IS DELIBERATELY NOT CLAIMED, and why it matters more than what is:
 // S-ID.1, .4, .6 and .8, and S-IC.2, .4 and .5, all require the learner to PRODUCE something —
-// a plot, a fit, a correlation coefficient, a simulation, a margin of error. Both courses claiming
-// here (how-to-read-a-number, intro-to-citizen-science) are reading-and-judgment courses: neither
-// asks a learner to compute, because the platform grades typed answers by string equality and could
-// not mark a computed number fairly (see src/lib/exercise.ts and scripts/check-assessment-fit.ts).
-// Claiming a produce-it standard for an interpret-it course would be exactly the widening
-// src/lib/standards/index.ts forbids. Those standards become claimable when the numeric-grading
-// work lands, and not before.
+// a plot, a fit, a correlation coefficient, a simulation, a margin of error. Two of the courses
+// claiming here (how-to-read-a-number, intro-to-citizen-science) are reading-and-judgment courses:
+// neither asks a learner to compute, because the platform grades typed answers by string equality
+// and could not mark a computed number fairly (see src/lib/exercise.ts and
+// scripts/check-assessment-fit.ts). Claiming a produce-it standard for an interpret-it course would
+// be exactly the widening src/lib/standards/index.ts forbids. Those standards become claimable when
+// the numeric-grading work lands, and not before.
+//
+// THE THIRD COURSE IS DIFFERENT, AND THE BOUNDARY MOVES ONLY AS FAR AS IT DOES. The Slide Rule
+// (2026-10-14) does teach calculation: estimating with powers of ten, multiplying in scientific
+// notation, logarithms and their inverse. It grades that work with multiple choice whose options
+// differ by a power of ten or by far more than a reading error, never with a typed number. So it
+// claims 8.EE.A.3 (full: the standard is estimation and comparison, which the options test
+// directly), 8.EE.A.4 and HSF-BF.B.5 (partial, each saying what is missing), HSN-Q.A.3 (full, beside
+// the two reading courses) and the practice standard MP5 (partial). It does NOT claim 8.EE.A.1,
+// HSF-LE.A.4 or anything that asks a learner to solve an equation, because it never does.
 
 import type { SharedFramework } from "../types";
 
@@ -34,9 +47,9 @@ export const COMMON_CORE_MATH: SharedFramework = {
   subject: "Mathematics",
   name: "Common Core State Standards for Mathematics",
   publisher: "Common Core State Standards Initiative",
-  version: "High School: Number and Quantity; Statistics and Probability",
+  version: "Grade 8: Expressions and Equations; High School: Number and Quantity, Functions, Statistics and Probability; Standards for Mathematical Practice",
   sourceUrl: "https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf",
-  fetchedOn: "2026-08-10",
+  fetchedOn: "2026-10-14",
   standards: [
     // ── Statistics and Probability ───────────────────────────────────────────────────────────
     {
@@ -106,9 +119,40 @@ export const COMMON_CORE_MATH: SharedFramework = {
     {
       code: "CCSS.Math.Content.HSN-Q.A.3",
       text: "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities.",
-      claimIds: ["catalog.accuracy-and-provenance", "catalog.honest-measurement-reporting"],
+      claimIds: ["catalog.accuracy-and-provenance", "catalog.honest-measurement-reporting", "catalog.slide-rule-figures-warranted"],
       coverage: "full",
-      note: "A judgment rather than a computation, which is why a course that grades no arithmetic can claim it honestly. In How to Read a Number, lesson 8 separates a census from a sample estimate from a projection and refuses to quote a revisable figure without its release, and lesson 9 establishes that a stated margin of error is a lower bound on uncertainty. Intro to Citizen Science lesson 9 makes it a rule the learner applies to their own data: a derived number cannot be more precise than its roughest input.",
+      note: "A judgment rather than a computation, which is why a course that grades no arithmetic can claim it honestly. In How to Read a Number, lesson 8 separates a census from a sample estimate from a projection and refuses to quote a revisable figure without its release, and lesson 9 establishes that a stated margin of error is a lower bound on uncertainty. Intro to Citizen Science lesson 9 makes it a rule the learner applies to their own data: a derived number cannot be more precise than its roughest input. The Slide Rule lesson 9 teaches it with a physical limit: a rule good to about one part in a thousand may be used where three significant figures are warranted, and Cullimore's 1920 worked case writes a volume as 6900 because one of its three measurements was taken only to the nearest tenth.",
+    },
+    // ── Grade 8: Expressions and Equations ───────────────────────────────────────────────────
+    {
+      code: "CCSS.Math.Content.8.EE.A.3",
+      text: "Use numbers expressed in the form of a single digit times an integer power of 10 to estimate very large or very small quantities, and to express how many times as much one is than the other. For example, estimate the population of the United States as 3 × 10⁸ and the population of the world as 7 × 10⁹, and determine that the world population is more than 20 times larger.",
+      claimIds: ["catalog.slide-rule-powers-of-ten-estimate"],
+      coverage: "full",
+      note: "Cluster: Work with radicals and integer exponents. The Slide Rule makes this the habit every calculation starts from, because the rule shows figures and never the decimal point. Lesson 2 rounds each factor to one figure times a power of ten (63,200 × 0.0035 is about 6 × 10⁴ × 4 × 10⁻³, about 240); lesson 8 places every point that way, for very small results too (3.95 ÷ 5340 estimated as 0.0008), and compares two results by one-digit estimates (7 × 10⁷ against 8 × 10³, about 9,000 times as large); the capstone works thirteen problems estimate first. The quizzes test it directly with options a power of ten apart.",
+    },
+    {
+      code: "CCSS.Math.Content.8.EE.A.4",
+      text: "Perform operations with numbers expressed in scientific notation, including problems where both decimal and scientific notation are used. Use scientific notation and choose units of appropriate size for measurements of very large or very small quantities (e.g., use millimeters per year for seafloor spreading). Interpret scientific notation that has been generated by technology.",
+      claimIds: ["catalog.slide-rule-scientific-notation"],
+      coverage: "partial",
+      note: "PARTIAL. Taught: multiplying and dividing in powers-of-ten form with decimal inputs (lesson 2: 6.32 × 10⁴ × 3.5 × 10⁻³ = 221.2; lesson 8: 17,300 × 3780 = 6.54 × 10⁷ and 0.00000285 ÷ 0.000197 = 1.446 × 10⁻²), and reading scientific notation generated by technology (lesson 21: the HP-35 display, power of ten in the three rightmost places). Not taught: choosing units of appropriate size for very large or very small measurements. Learners recognize correct results in multiple choice and are never asked to type one.",
+    },
+    // ── High School: Functions ────────────────────────────────────────────────────────────────
+    {
+      code: "CCSS.Math.Content.HSF-BF.B.5",
+      text: "(+) Understand the inverse relationship between exponents and logarithms and use this relationship to solve problems involving logarithms and exponents.",
+      claimIds: ["catalog.logarithms-as-exponents"],
+      coverage: "partial",
+      note: "PARTIAL, and a (+) standard, which the CCSS marks as \"Additional mathematics that students should learn in order to take advanced courses\" (high school introduction). The Slide Rule teaches the inverse relationship for base 10 only: a common logarithm is the exponent of 10 (lesson 1), read forward and backward on the L scale (lesson 11: log 265 = 2.423; the number whose logarithm is 3.697 is 4,980) and in a printed table (lesson 15), and used to raise numbers to powers and roots (lesson 12: 36 to the power 1.414 = 158.5). Not taught: other bases, the natural logarithm, or solving an equation for an unknown exponent. Problems are recognized in multiple choice, not produced.",
+    },
+    // ── Standards for Mathematical Practice ──────────────────────────────────────────────────
+    {
+      code: "CCSS.Math.Practice.MP5",
+      text: "Use appropriate tools strategically. Mathematically proficient students consider the available tools when solving a mathematical problem. These tools might include pencil and paper, concrete models, a ruler, a protractor, a calculator, a spreadsheet, a computer algebra system, a statistical package, or dynamic geometry software. Proficient students are sufficiently familiar with tools appropriate for their grade or course to make sound decisions about when each of these tools might be helpful, recognizing both the insight to be gained and their limitations. For example, mathematically proficient high school students analyze graphs of functions and solutions generated using a graphing calculator. They detect possible errors by strategically using estimation and other mathematical knowledge. When making mathematical models, they know that technology can enable them to visualize the results of varying assumptions, explore consequences, and compare predictions with data. Mathematically proficient students at various grade levels are able to identify relevant external mathematical resources, such as digital content located on a website, and use them to pose or solve problems. They are able to use technological tools to explore and deepen their understanding of concepts.",
+      claimIds: ["catalog.choosing-calculating-tools"],
+      coverage: "partial",
+      note: "PARTIAL. The Slide Rule is a course about one tool and its rivals, weighed by what each can and cannot do: the rule's three honest figures (lesson 9), what limits a rule (lesson 4), what the Apollo rule was and was not used for (lesson 20), alignment charts and circular calculators against straight rules (lessons 22 and 23), and what an electronic calculator does not do for you (lesson 21). Detecting errors by estimating first is taught as the habit of the whole course. Not taught: graphing calculators, spreadsheets, computer algebra, dynamic geometry, statistical packages, modeling with technology, or finding digital resources.",
     },
   ],
 };
