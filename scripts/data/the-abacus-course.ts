@@ -295,9 +295,67 @@ That is **706**: seven hundreds (the five-bead and two one-beads), zero tens (a 
 :::reveal You set 7 on the hundreds rod. How many times the value of the same 7 on the tens rod is it? ||| Ten times: 700 against 70. Each rod to the left is worth ten times the rod to its right.
 
 ## Sources
-- ${KNOTT} Locator: p. 47 (PDF p. 70), tilting, levelling and sweeping the frame to zero ("The number represented is zero") and setting 1 to 4; p. 48 (PDF p. 71), 5 with the single counter, 6 to 9, and each rod a place, "One being first chosen as the unit"; p. 49 (PDF p. 72), Fig. 4 with "The mark V ... placed over the 'units' rod". ${TA}
+- ${KNOTT} Locator: p. 47 (PDF p. 70), tilting, leveling and sweeping the frame to zero ("The number represented is zero") and setting 1 to 4; p. 48 (PDF p. 71), 5 with the single counter, 6 to 9, and each rod a place, "One being first chosen as the unit"; p. 49 (PDF p. 72), Fig. 4 with "The mark V ... placed over the 'units' rod". ${TA}
 - ${SMITH_MIKAMI} Locator: p. 36 (PDF p. 48), Fig. 12, the columns arranged so that "the units are 1, the tens 2, the hundreds 3," representing 987 654 321. ${TA}
 - ${BARNER} Locator: ms p. 4 (PDF p. 5), Figure 1, a "Japanese soroban-style abacus ... representing the value 123,456,789". ${TB}`,
+    },
+    {
+      slug: "what-to-look-for-buying-one",
+      title: "4 · What to look for when you buy one",
+      section: "1 · Place value you can touch",
+      recallContent: [
+        {
+          prompt: "How does Knott clear a soroban to zero?",
+          answer: "Tilt it with the smaller compartment uppermost so the lower beads slide away and the upper beads drop onto the beam, level it, then sweep the upper beads away from the beam with the fingertips.",
+        },
+        {
+          prompt: "How does a soroban show that 13 is a ten and three ones?",
+          answer: "One one-bead on the tens rod, and three one-beads (five-bead off) on the ones rod: a count of tens on one rod and of ones on the next.",
+        },
+      ],
+      body: `${P("BAM comparing the sorobans he is choosing between (rod count, bead size and shape, unit marks, how firmly the beads stay put), and showing the one he buys")}
+
+**Why this lesson exists.** A slide rule or a soroban is a tool you will hold for hundreds of hours, and a bad one teaches bad habits. This lesson lists what to check, each point tied to a source or to a number this course actually asks you to set.
+
+**1. One bead above, four below.** This course teaches the one-above, four-below soroban, the form a 1959 Smithsonian example describes as "one bead above the cross piece and four below." A five-below soroban like Knott's still works, but it lets 5 be shown two ways, and the drills here assume four. A Chinese suanpan, with two above and five below, is a different instrument with its own methods; lesson 22 teaches you to read one, not to calculate on it.
+
+**2. Enough rods.** Kojima's manual of 1954 gives 21 rods as the common Japanese size, with 13, 17, 27 and 31 also in use. Count what this course needs. Lesson 11's multiplication, Knott's 928 × 4173, uses three rods for 928, a gap, four for 4173, and "3 empty rods at least" to the right: eleven rods. The large cube root in lesson 16 lays out a nine-figure number with its answer rod beside it. Thirteen rods will do almost everything here; seventeen or more gives you room to work without crowding.
+
+**3. Bead size you can feel.** A man who gave the Smithsonian a 23-rod soroban made in 1959 found addition and subtraction "straightforward" and bought the bigger instrument to try multiplication and division. "However, the beads were too small for his seventy-year-old fingers and thumb," and he went back to logarithm tables. Before you buy, check that your fingertip can move one bead without nudging its neighbor.
+
+**4. Bead shape.** The soroban's bead is a double cone with a sharp edge. Knott says the shape "makes manipulation rapid, the finger easily catching the ridge-like girth"; Smith and Mikami say "a sharp edge that the finger easily engages without slipping." Round beads, like those the Smithsonian describes on a 1958 Chinese abacus ("The beads are rounded, as on other Chinese abaci"), are harder to catch with one fingertip.
+
+**5. Unit marks.** Look for a dot on the beam every third rod, as on the 1959 Smithsonian soroban ("Every third column of beads is marked with a black dot"). Lesson 14 uses them to place decimal points, and they make long numbers easy to read.
+
+**6. Beads that stay where you put them.** Knott levels the frame so that "if any counter is shifted it will have no tendency to move back to its former position." A soroban whose beads drift when you tilt it is quietly changing your number. The Cranmer abacus made for blind students solves this on purpose: the American Printing House for the Blind sells it as "A specially designed abacus that keeps beads in position once they have been set," with a "Red felt backing" that "prevents beads from slipping." Lesson 26 explains why that matters so much for a touch reader. For a sighted learner, a soroban with firm, even friction is the same idea in a milder form.
+
+**7. A clearing bar, maybe.** Some sorobans sold today add a button or bar that clears every rod at once. No source this course has read describes one or tests whether it helps, so this lesson does not recommend it; BAM's video shows one if he buys one, and a research check is open.
+
+**What it should cost.** Not much. In the 1946 contest of section 7, the champion's "deluxe abacus" was reported to cost "17 yen, about $1.13," against "a prewar price of about $800" for the electric calculator he beat.
+
+**A checklist.**
+
+| Check | Good sign | Why (lesson) |
+|---|---|---|
+| Beads per rod | One above, four below | Every digit has one shape (2) |
+| Rods | 13 at least, 17 or more for roots | Knott's 928 × 4173 needs about 11 (11, 16) |
+| Bead size | One fingertip, one bead | The 1959 donor's beads were too small |
+| Bead shape | Sharp double cone | Caught "without slipping" (2) |
+| Unit marks | A dot every third rod | Decimals and long numbers (14) |
+| Friction | Beads stay set when tilted | A drifting bead changes the number (26) |
+
+:::reveal Why does Knott's 928 × 4173 need about eleven rods? ||| Three rods for 928, a gap, four for 4173, and at least three empty rods to the right of the multiplicand for the product.
+
+:::reveal What made the 1959 Smithsonian donor give up on his soroban for multiplication and division? ||| The beads were too small for his seventy-year-old fingers and thumb, so he went back to logarithm tables.
+
+## Sources
+- ${NMAH_ALBREE} Locator: Description, "one bead above the cross piece and four below", "Every third column of beads is marked with a black dot", and the donor's account (addition and subtraction "straightforward"; "the beads were too small for his seventy-year-old fingers and thumb"). Record text CC0. ${TB}
+- ${NMAH_SUANPAN} Locator: Description, "The beads are rounded, as on other Chinese abaci." Record text CC0. ${TB}
+- ${KNOTT} Locator: p. 46 (PDF p. 69), the double cone; p. 47 (PDF p. 70), leveling so a shifted counter has "no tendency to move back"; p. 51 (PDF p. 74), "3 empty rods at least to the right of the multiplicand". ${TA}
+- ${SMITH_MIKAMI} Locator: p. 32 (PDF p. 44), "a sharp edge that the finger easily engages without slipping". ${TA}
+- ${APH_PRODUCT} Locator: the product summary ("keeps beads in position once they have been set") and description ("Red felt backing prevents beads from slipping"). ${TB}
+- ${UP_1946} Locator: p. 27, the 17-yen abacus and the calculator's $800 prewar price. ${TB}
+- ${KOJIMA} Locator: p. 26, the common 21-rod soroban and the 13, 17, 27 and 31 rod sizes. ${TC}`,
     },
     // @@END_LESSONS@@
   ],
