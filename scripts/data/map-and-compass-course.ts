@@ -1427,5 +1427,48 @@ Because the compass is set for declination, the map's edge (true north) now poin
 - ${MMSF_ORIENT} Locator: "Orienteering Pointers", "Orienting the Map". Linked only.
 - ${USTOPO_HINDUSTAN} Locator: the declination diagram.`,
     },
+    {
+      slug: "a-bearing-from-the-map",
+      title: "21 · A bearing from the map to the ground",
+      section: "5 · Map and compass together",
+      recallContent: [
+        {
+          prompt: "What are the workbook's steps for orienting a map by terrain?",
+          answer: "Find your approximate location; pick two prominent features you can see that are on the map; turn the map until they sit in proper relation to the real ones.",
+        },
+        {
+          prompt: "On the Hindustan quad, what should a compass laid along a grid line read when the map is oriented without a declination setting?",
+          answer: "About 5°, the grid-magnetic angle of 4°49', because magnetic north is to the left of grid north.",
+        },
+      ],
+      body: `${P("BAM measures one bearing on his quad three ways, with a protractor, with the compass used as a protractor, and by the USGS border method, and shows they agree; then walks it")}
+
+**Why measure a bearing on the map.** The workbook's examples: you know where you are and want to reach a place "several miles away over hilly terrain", or one you cannot see "because of morning fog". The map gives you the direction; the compass carries it onto the ground.
+
+**With a protractor.** The workbook: "A protractor or compass can be used to measure a map bearing; a protractor is easier to use and more accurate than a compass." Its steps (Table 6-3):
+1. "Center the protractor over the starting point and orient 0º with true north (the 0º line needs to be parallel to edge of map)."
+2. "Draw a line on the map from the starting point towards the destination."
+3. "Read the bearing where the line, string or ruler intersects the protractor. This is the direction of travel to your destination."
+4. "Before using this bearing in the field, adjust the compass for declination."
+
+The Army manual does the same against the grid lines instead of the map's edge, and so gets a grid bearing: "when using the protractor on a map, only grid azimuths are obtained." It reads every azimuth "to the nearest degree", and it adds two warnings. Measure from start to end: "If a mistake is made and the reading is taken from the ending point, the grid azimuth will be opposite". And "Distance does not change an accurately measured azimuth": a long line and a short line at the same angle read the same.
+
+**With the compass as a protractor.** The workbook's way to get a true bearing (Table 6-5): "Set compass at 0º declination. Disregard the magnetic needle." Lay one edge of the base plate along the line from start to destination, with the travel arrow pointing toward the destination. "Turn the compass housing so that the orienting arrow points to true north, parallel to map edge and longitude lines." Then "Read the true bearing at the index line." The needle plays no part; on the map, the compass is just a protractor with a ruler attached.
+
+**The USGS border method.** The fact sheet draws "a straight line on the map passing through your location and your destination and extending across any one of the map borders", centers the compass where the line meets the border, lines it up with the border, and reads the true bearing. Its warning: "Be careful to get the bearing in the correct sense because a straight line will have two values 180° apart."
+
+**Then cross to the ground.** A map bearing is true (from the edge) or grid (from the grid lines). Before you walk it, correct it as lesson 17 showed: set your compass for declination, or, in Indiana, add the declination. On the Hindustan quad, a protractor reading of 60° true is about 64.5° magnetic.
+
+**And the other way: plotting a bearing.** To draw a bearing you took in the field onto the map, the manual's steps: convert it to the map's north first, put the protractor's center on your known point with its base line along a grid line, "Make a mark on the map at the desired azimuth", and draw the line from the point through the mark. This is sketching an angle of a given size, as in lesson 18, now on real ground.
+
+:::reveal According to the workbook, which is easier and more accurate for a map bearing, a protractor or a compass? ||| A protractor.
+
+:::reveal Why does the USGS warn you to get a map bearing "in the correct sense"? ||| Because a straight line has two bearings 180° apart; measure from where you are toward where you are going.
+
+## Sources
+- ${NWCG_475} Locator: pp. 114 and 115, "Measuring a Bearing on a Map" and Table 6-3; pp. 116 and 117, Tables 6-4 and 6-5.
+- ${FM_2001} Locator: printed p. 9-1 (PDF p. 110), paragraph 9-1; printed pp. 6-4 to 6-7 (PDF pp. 67 to 70), paragraphs 6-4 and 6-5b, with the warning in 6-4 and the note in 6-5b.
+- ${USGS_FS} Locator: p. 2, "Taking a compass bearing from a map", steps 1 to 3.`,
+    },
   ],
 };
