@@ -713,5 +713,40 @@ Breed and Hosmer set this problem (p. 30): in 1859 a line bore N 21° W when the
 ## Sources
 - ${BH} Locator: sec. 26, pp. 18 to 19 (scan pp. 44 to 45); secs. 38 and 39, p. 28 (scan p. 54); sec. 40 and Fig. 10, p. 29 (scan p. 55). ${TIER_A_PD}`,
     },
+    {
+      slug: "why-the-needle-was-banned",
+      title: "11 · Why the needle compass is banned from official surveys, and what replaced it",
+      section: "2 · Direction: the surveyor's compass",
+      recallContent: [
+        {
+          prompt: "How do Breed and Hosmer check a survey for local attraction?",
+          answer: "Take the bearing of each line from both ends. If a bearing and its reverse differ by exactly 180°, there is probably no disturbance; if not, find a clean line and work back to the bad station.",
+        },
+        {
+          prompt: "Why does local attraction at one station leave the angles measured there unchanged?",
+          answer: "It turns every bearing at that station by the same amount, so the difference between any two of them stays the same.",
+        },
+      ],
+      body: `**Three weaknesses, already met.** The needle compass carries three faults this section has shown. It points to a magnetic north that differs from true north by an amount that changes with the year, the hour and the place (lesson 9). Iron and electric current near it pull it aside without warning (lesson 10). And it reads coarsely: "Bearings are usually read to the nearest quarter of a degree" (Breed and Hosmer, sec. 26). A quarter of a degree sounds small, but at the end of a mile-long line it moves the far end about 23 feet sideways (5,280 × tan 0.25° = 23).
+
+**Where it failed in the field.** C. A. White's history records the moment the needle met iron country. William A. Burt, who had contracted for public land surveys in Michigan from 1833, "found that iron ore deposits made needle compass surveying nearly impossible." He invented a "True Meridian Finding" instrument, "since known as Burt's Solar Compass," had it built in 1835 by William J. Young of Philadelphia, and patented it on February 25, 1836. White's judgment: "The Burt Solar Compass made possible the accurate extension of the rectangular system of surveying in the iron ore regions and throughout the western United States" (p. 96).
+
+It did not take over at once. In 1841 the surveyor general in Arkansas "was having trouble with 'local attraction' to such a degree on the Sabine River that he had to relinquish the contracts for approximately 1,000 miles of lines." That July the General Land Office sent a report on Burt's solar compass to every surveyor general and "recommended the instrument should be put to use in all the surveying districts. It wasn't, however." (p. 99).
+
+**What the solar compass did differently.** Instead of a needle, it found the true meridian from the sun. The 2009 Manual of Surveying Instructions says why that mattered: "a properly adjusted solar compass or solar transit determined the true meridian at each instrument setup. Matched with traditional chaining, a line of constant bearing can be run by instrumental orientation without any special reduction of the survey data" (sec. 2-8). No declination to look up, and no iron to fool it.
+
+**The rule today.** The Manual lists the instruments the public lands have been surveyed with: "Historically, these include the magnetic needle, solar compass, transit with solar attachment, and direct altitude or hour angle observations on the Sun, Polaris, or other stars. The use of direct astronomical observations to determine direction is effective and still used. Only the use of the needle compass is unequivocally prohibited." Other valid methods "include gyroscopic instruments, satellite receivers, orientation from the National Spatial Reference System (NSRS), and identifiable lines between monuments of adjoining official surveys" (sec. 2-4). Every line is reported in bearings "with reference to the true meridian" (sec. 2-5).
+
+**So why learn the compass at all?** Because a great deal of the record was made with it. The first lines in Ohio were run "with a compass or circumferentor, with orientation at each point by using the compass needle" (White, p. 18), and old deeds across the country give magnetic bearings. To read such a record you need to know what its bearings could and could not mean: which way the needle pointed that year, what a quarter of a degree amounts to, and that a station near iron can be wrong by a degree or more. That is the knowledge this section gives you. It is also why this course never asks you to settle a line with a compass: the official surveys stopped trusting the needle, and so should you.
+
+:::reveal At the end of a 2-mile line, about how far sideways does a quarter-degree error move the far end? ||| 10,560 × tan 0.25° is about 46 feet, twice the 23 feet of a 1-mile line.
+
+:::reveal What problem pushed William Burt to invent the solar compass? ||| Iron ore deposits in Michigan, which "made needle compass surveying nearly impossible" (White, p. 96).
+
+## Sources
+- ${MANUAL} Locator: secs. 2-4, 2-5 and 2-8, p. 28 (PDF p. 39). ${TIER_A}
+- ${WHITE} Locator: p. 18 (PDF p. 32); p. 96 (PDF p. 110); p. 99 (PDF p. 113). ${TIER_A}
+- ${BH} Locator: sec. 26, p. 18 (scan p. 44). ${TIER_A_PD}`,
+    },
   ],
 };
