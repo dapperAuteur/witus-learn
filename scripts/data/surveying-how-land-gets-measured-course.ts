@@ -632,5 +632,45 @@ Breed and Hosmer give the same four cases in their Fig. 11. If you would rather 
 - ${BH} Locator: secs. 24 and 26 and Fig. 4, pp. 16 to 19 (scan pp. 42 to 45); sec. 41 and Fig. 11, p. 30 (scan p. 56). ${TIER_A_PD}
 - ${MANUAL} Locator: sec. 2-5, p. 28 (PDF p. 39); sec. 2-41, p. 37 (PDF p. 48). ${TIER_A}`,
     },
+    {
+      slug: "magnetic-declination",
+      title: "9 · Magnetic north is not true north: declination, its drift, and the Vincennes line",
+      section: "2 · Direction: the surveyor's compass",
+      recallContent: [
+        {
+          prompt: "Write the bearing of a line 20° east of south, and its reverse bearing.",
+          answer: "S 20° E; the reverse is N 20° W. The angle stays the same and both letters flip.",
+        },
+        {
+          prompt: "Two lines from one point bear N 20° E and N 50° W. What angle do they make?",
+          answer: "Same first letter, different last letters: the sum, 70°.",
+        },
+      ],
+      body: `**The angle between two norths.** Breed and Hosmer (sec. 28): the direction the needle settles in "is called the magnetic meridian and rarely coincides with the true meridian. The angle which the needle makes with the true meridian is called the declination of the needle." When the north end points east of true north the declination is east; when it points west, it is west. Navigators call the same angle variation, and so did the Land Ordinance of 1785.
+
+**It drifts, by the year and by the hour** (sec. 29). Breed and Hosmer name four changes: the secular variation, "a long, extremely slow swing"; a daily swing averaging "about 7 minutes of arc"; an annual change "so small (about one minute a year) that it need not be considered"; and irregular jumps from magnetic storms, often "from ten to twenty minutes in the United States." Writing in 1912, they add that "all declinations are now increasing" across most of the country, "at an average rate of about 3 minutes per year." It also changes with place: "The value found at one place may be considerably different from that of a place only a few miles distant" (sec. 31).
+
+**Turning a magnetic bearing into a true one.** The safe method is to go through azimuths from north:
+1. Turn the magnetic bearing into a magnetic azimuth (N 21° W is 360° − 21° = 339°).
+2. Add an east declination, or subtract a west one, to get the true azimuth.
+3. Turn the true azimuth back into a bearing.
+
+Breed and Hosmer set this problem (p. 30): in 1859 a line bore N 21° W when the declination was 8° 39' W; in 1902 the declination was 10° 58' W. What did the line bear in 1902? The true azimuth is 339° − 8° 39' = 330° 21', a true bearing of N 29° 39' W. In 1902 the needle sat 10° 58' west of true, so the magnetic azimuth was 330° 21' + 10° 58' = 341° 19', a bearing of N 18° 41' W. The line had not moved; the needle had.
+
+**What the 1785 Ordinance ordered.** The Land Ordinance, printed in full in C. A. White's history of the rectangular survey, told the surveyors to "pay the utmost attention to the variation of the magnetic needle; and shall run and note all lines by the true meridian, certifying, with every plat, what was the variation at the times of running the lines thereon noted" (p. 12). Hutchins complained that running by the true meridian cost too much at $2 a mile, and in May 1786 Congress suspended the requirement (p. 18). White's verdict on the result: "There is no indication that any attempt was made to correct the compass needle for the magnetic variation. As a result, the range lines have an actual bearing of about S. 2° W., with a maximum bearing of about S. 3° W." (p. 19). Lines meant to run due south still run a couple of degrees off it.
+
+**The Vincennes line.** In 1803 Thomas Freeman surveyed the boundaries of the Vincennes Tract in what became Indiana. When Jared Mansfield, the surveyor general, reached Vincennes in 1804, he "made astronomic observations of the corners of the Vincennes Tract and found that Freeman had run the north boundary on a magnetic bearing of N. 78° W. instead of true bearing and that the average magnetic declination was 6° 45' E." (White, p. 49). Mansfield wrote to the Treasury that Freeman's courses had been "put down with a variation of 12° from the true meridian. On examination, they were found to deviate 12° from the magnetical meridian, instead of the true" (letter of October 26, 1804, quoted on p. 51). Work it through: a magnetic N 78° W is an azimuth of 282°; add 6° 45' east and the true azimuth is 288° 45', a true bearing of N 71° 15' W. One unconverted bearing turned a whole boundary nearly 7° away from the line the description gave. *Reading a Land Description* follows that boundary into Indiana's land records.
+
+**Try it yourself.** NOAA's National Centers for Environmental Information keeps a US Historic Declination Calculator (https://www.ngdc.noaa.gov/geomag-web/#ushistoric) covering 1750 to 2014 for the conterminous United States. Its own record says results are "typically accurate to 30 minutes of arc." Enter Vincennes, Indiana, and the year 1804, and compare its answer with Mansfield's 6° 45' E. This course does not print the answer: the comparison is waiting on a check, and an answer printed here before anyone has done it would only be a guess.
+
+:::reveal Your compass reads N 40° E where the declination is 5° W. What is the true bearing? ||| Magnetic azimuth 40°; subtract the west declination: 35°. True bearing N 35° E.
+
+:::reveal Why did Hutchins's range lines in Ohio end up running about S 2° W instead of due south? ||| White finds no sign that anyone corrected the needle for the magnetic variation, after Congress suspended the true-meridian requirement in 1786.
+
+## Sources
+- ${BH} Locator: secs. 28, 29 and 31, pp. 19 to 25 (scan pp. 45 to 51); problem 3(a), p. 30 (scan p. 56). ${TIER_A_PD}
+- ${WHITE} Locator: the Land Ordinance text, p. 12 (PDF p. 26); pp. 18 to 19 (PDF pp. 32 to 33); p. 49 (PDF p. 63); Mansfield's letter, p. 51 (PDF p. 65). ${TIER_A}
+- ${NCEI} Locator: "Abstract" and "Time Period" fields. ${TIER_A}`,
+    },
   ],
 };
