@@ -2217,5 +2217,47 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 - ${NPS_TEN} Locator: "Navigation".
 - ${DEAM} Locator: "Pre-Trip Check List".`,
     },
+    {
+      slug: "a-gps-fix-on-the-paper-map",
+      title: "34 · A GPS fix on the paper map",
+      section: "7 · What GPS adds, and where it fails",
+      recallContent: [
+        {
+          prompt: "What does the workbook say accounts for most GPS errors?",
+          answer: "User mistakes, such as entering the wrong datum, which the receiver cannot detect or correct.",
+        },
+        {
+          prompt: "What can a silent fall back from a 3D to a 2D position cost you?",
+          answer: "The workbook says \"distance errors in excess of a mile.\"",
+        },
+      ],
+      body: `${P("BAM sets his receiver or phone to UTM and to the datum printed on his quad, reads a fix at a known spot, plots it on the paper map with a grid reader, and checks it against the ground")}
+
+**Why put the fix on paper.** A fix on a screen tells you a number. On the paper map it tells you which side of the creek you are on, how far to the ridge, and whether your plan still works, and it stays useful when the battery does not.
+
+**First, make the receiver speak the map's language.** The workbook: "When using a GPS receiver the datum must be set to match the horizontal datum on the map. If the datum does not match there will be errors when plotting data on a map." Lesson 5 gave the size of the risk: UTM coordinates of one point on different datums "may differ as much as 900 meters." Every current US Topo in lesson 3 prints "North American Datum of 1983 (NAD83)" and "World Geodetic System of 1984 (WGS84)" in its margin, with its grid on "Universal Transverse Mercator, Zone 16S". A historical quad may print NAD27. Set the receiver to the datum on the sheet in your hand, and to UTM if you will plot with the grid.
+
+**Plotting a UTM fix.** Read the fix as zone, easting and northing, then work right, then up (lesson 11). A made-up fix: Zone 16, **546,320 m E, 4,370,780 m N**.
+1. **Find the square.** The easting lies between the grid lines labeled 46 and 47 (546,000 and 547,000); the northing between 70 and 71 (4,370,000 and 4,371,000). The point is in the square whose southwest corner is 46, 70.
+2. **Measure in from the corner.** It is 320 meters right of the 46 line and 780 meters up from the 70 line. On a 1:24,000 map, 320 m is 320,000 mm ÷ 24,000, about **13.3 mm**, and 780 m is about **32.5 mm**.
+3. **Mark it, and say it to the precision it deserves.** A phone fix good to about 4.9 m (lesson 33) supports an eight-digit reference, 46327078, good to 10 meters, not a ten-digit one.
+
+**A grid reader makes it faster.** The workbook's Appendix C prints a UTM grid reader to copy onto clear plastic, and warns: "When using a grid reader to plot points on a map, the scale on the grid reader must match the scale of the map." Use the 1:24,000 one on a US Topo.
+
+**Plotting latitude and longitude instead.** The workbook's method uses an engineer's ruler with 20 marks to the inch, which on a 1:24,000 map makes "each graduation is equal to 1 second." It measures latitude with the ruler held north and south, but longitude "diagonally (since the distance between longitude lines is not constant)". Draw the 2.5-minute lines between the edge ticks first (lesson 10), and remember that in Indiana longitude counts from right to left.
+
+**Check it against the ground.** A plotted fix should agree with what you can see: the contour you stand on, the stream beside you, the slope falling the way the map says. If it does not, suspect, in order, the datum, the coordinate format, a 2D fix, and then the map's age. The workbook's reminder applies: a receiver "has no way to identify and correct these mistakes." The Army manual's balance holds too: use the fix to confirm your position, then let the pace count start again (lesson 23).
+
+**Direction from a receiver.** The Army manual notes that a receiver "will display direction and distance to the checkpoint." Before you compare that direction with your compass, find out whether the device shows true or magnetic north, so the two are measured from the same north (lesson 18).
+
+:::reveal Before plotting a GPS fix on a US Topo, what must you set on the receiver? ||| The datum printed on the map (NAD83 on current US Topo quads) and, to use the grid, UTM coordinates.
+
+:::reveal On a 1:24,000 map, how far is 320 meters? ||| About 13.3 mm (320,000 mm ÷ 24,000).
+
+## Sources
+- ${NWCG_475} Locator: p. 12, "Datum"; p. 100, how a position is reported; p. 118, "Rulers"; p. 127, "UTM grid reader"; p. 170, Appendix C templates.
+- ${FM_2001} Locator: printed p. 3-3 (PDF p. 19), paragraph 3-1q; printed pp. 9-12 and 9-13 (PDF pp. 121 and 122), paragraph 9-6a.
+- ${USTOPO_HINDUSTAN} Locator: lower left margin, the datum and projection notes.`,
+    },
   ],
 };
