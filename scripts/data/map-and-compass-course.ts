@@ -86,6 +86,32 @@ const FM_2001 =
   "Headquarters, Department of the Army. (2001, July 20). *Map reading and land navigation* (FM 3-25.26). Superseded; \"Approved for public release; distribution is unlimited.\" https://archive.org/details/milmanual-fm-3-25.26-map-reading-and-land-navigation";
 const NWCG_475 =
   "National Wildfire Coordinating Group. (2016, May). *Basic land navigation* (PMS 475, NFES 002865). https://www.nwcg.gov/sites/default/files/publications/pms475.pdf (archived copy read: https://web.archive.org/web/20240127171515/https://www.nwcg.gov/sites/default/files/publications/pms475.pdf)";
+// Lesson 3's places (Tier B, linked only), read 2026-10-14.
+const FH_MAP =
+  "Indiana Department of Natural Resources. (2026, January). *Fort Harrison State Park* [Property and trail map]. https://www.in.gov/dnr/state-parks/files/ftharrison_trail.pdf";
+const MMSF_PAGE =
+  "Indiana Department of Natural Resources. (n.d.-a). *Morgan-Monroe State Forest*. https://www.in.gov/dnr/forestry/properties/morgan-monroe-state-forest/";
+const MMSF_MAP =
+  "Indiana Department of Natural Resources. (2021a, August). *Morgan-Monroe State Forest* [Property map]. https://www.in.gov/dA/7ac22c7c01/fo-morgan-monroe-map.pdf";
+const MMSF_ORIENT =
+  "Indiana Department of Natural Resources. (2013, May). *Pathfinder Trail orienteering course* [Brochure; first developed May 1997 with the Environmental Club of Bloomington South High School]. https://www.in.gov/dA/e4de3d4b52/fo-MorganMonroeOrienteeringMap.pdf";
+const YSF_PAGE =
+  "Indiana Department of Natural Resources. (n.d.-b). *Yellowwood State Forest*. https://www.in.gov/dnr/forestry/properties/yellowwood-state-forest/";
+const YSF_MAP =
+  "Indiana Department of Natural Resources. (2021b, September). *Yellowwood State Forest* [Property map]. https://www.in.gov/dA/1ccf866ece/fo-Yellowwood_map.pdf";
+const DNR_SP_RULES =
+  "Indiana Department of Natural Resources. (n.d.-c). *Rules & regulations* [State parks]. https://www.in.gov/dnr/state-parks/property-rules-and-regulations";
+const DEAM =
+  "USDA Forest Service. (n.d.). *Charles C. Deam Wilderness*. Hoosier National Forest. https://www.fs.usda.gov/r09/hoosier/recreation/charles-c-deam-wilderness";
+// The four US Topo sheets (Tier A, federal, public domain), as downloaded from The National Map.
+const USTOPO_INDY_EAST =
+  "U.S. Geological Survey. (2022a). *Indianapolis East quadrangle, Indiana* [US Topo 7.5-minute map, 1:24,000; dated 2022-10-14]. https://prd-tnm.s3.amazonaws.com/StagedProducts/Maps/USTopo/PDF/IN/IN_Indianapolis_East_20221014_TM_geo.pdf";
+const USTOPO_HINDUSTAN =
+  "U.S. Geological Survey. (2022b). *Hindustan quadrangle, Indiana* [US Topo 7.5-minute map, 1:24,000; dated 2022-10-05]. https://prd-tnm.s3.amazonaws.com/StagedProducts/Maps/USTopo/PDF/IN/IN_Hindustan_20221005_TM_geo.pdf";
+const USTOPO_BELMONT =
+  "U.S. Geological Survey. (2022c). *Belmont quadrangle, Indiana* [US Topo 7.5-minute map, 1:24,000; dated 2022-10-14]. https://prd-tnm.s3.amazonaws.com/StagedProducts/Maps/USTopo/PDF/IN/IN_Belmont_20221014_TM_geo.pdf";
+const USTOPO_ELKINSVILLE =
+  "U.S. Geological Survey. (2022d). *Elkinsville quadrangle, Indiana* [US Topo 7.5-minute map, 1:24,000; dated 2022-10-05]. https://prd-tnm.s3.amazonaws.com/StagedProducts/Maps/USTopo/PDF/IN/IN_Elkinsville_20221005_TM_geo.pdf";
 const NPS_TEN =
   "National Park Service. (2026, May 28). *Ten essentials*. U.S. Department of the Interior. https://www.nps.gov/articles/10essentials.htm";
 
@@ -126,6 +152,92 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 - ${NPS_TEN} Locator: "Navigation", the first of the ten categories.
 - ${NWCG_475} Locator: p. iii, the public-domain notice; p. ix, "Introduction".
 - ${FM_2001} Locator: cover (PDF p. 1); p. i (PDF p. 2); printed p. 11-18 (PDF p. 164), paragraph 11-6.`,
+    },
+    {
+      slug: "the-kit",
+      title: "2 · The kit, and getting it cheaply",
+      section: "1 · Before you set out",
+      recallContent: [
+        {
+          prompt: "What does the National Park Service say about a physical map?",
+          answer: "\"Bring a physical map as a back up.\" It also says to know how to use a topographical map, compass or GPS unit before going out.",
+        },
+        {
+          prompt: "Why does this course quote the 2001 Army manual and never its later editions?",
+          answer: "The 2001 edition is \"Approved for public release; distribution is unlimited.\" The 2005 and 2013 editions carry distribution restrictions.",
+        },
+      ],
+      body: `${P("BAM lays out his own kit on camera, item by item: a baseplate compass with a declination adjustment, a lensatic compass for comparison, a printed US Topo quad, a ruler and protractor, a pencil, a watch, and a phone or GPS receiver with a spare battery")}
+
+**The workbook's list.** The wildland fire workbook tells its readers what they need for its exercises: "Compass with adjustment for magnetic declination", "Clinometer", "Calculator", "Engineer's ruler", "Protractor", "Dot grid" and "UTM grid reader". It also says to have "a U.S. Geological Survey (USGS) color topographic map to use as a reference." This course needs less than that. A clinometer measures slope and a dot grid measures area, and neither is required here.
+
+**What this course uses.**
+- **A topographic map of ground you can walk.** The US Geological Survey gives its current maps away as free downloads, and lesson 4 shows how to get yours. Print it at full size and then check the printed bar scale against a ruler, because a printer that shrinks the page shrinks every distance on it.
+- **A baseplate compass.** The workbook teaches this kind "because it is a common, inexpensive, and easy to use compass that does not require batteries." Lesson 14 lists the features worth paying for, the declination adjustment above all, and why a lensatic compass is the other common choice.
+- **A ruler and a protractor.** The workbook's Appendix C prints a protractor, an engineer's ruler and a UTM grid reader as templates, with the instruction "Copy on clear plastic sheets. Make sure scale does not change during photocopying." Many baseplate compasses carry a ruler and scales on the plate itself.
+- **A pencil and something to write on.** Appendix C also prints a field-notes form. Lesson 26 turns your plan into a route card, and lesson 28 shows why the log matters.
+- **A watch.** For time on each leg, and for the watch method of finding direction in lesson 25, which comes with its own warning.
+- **A phone or GPS receiver, with a spare battery.** The Park Service says "Pack an extra battery for your phone." The Hoosier National Forest's checklist for the Deam Wilderness says to "Have a map", adding that paper is best and that "digital works if you have signal and plenty of battery power."
+
+**What it does not replace.** Navigation is one of the Park Service's ten categories, not all of them. The same list asks for a light, "Headlamps are the recommended light source because they are hands-free", along with first aid, water, food, extra clothing and shelter. Lesson 30, on night navigation, assumes you carry a light and spare batteries.
+
+**Getting it cheaply.** The map is free to download. The templates are free to print. The baseplate compass is the inexpensive kind on purpose. This course names no brands and quotes no prices: lesson 14 tells you what to look for, so you can judge any compass yourself.
+
+:::reveal Which compass feature heads the wildland fire workbook's list of materials? ||| "Compass with adjustment for magnetic declination".
+
+:::reveal What should you check after printing a map or a template? ||| That the scale has not changed: measure the printed bar scale against a ruler. The workbook says "Make sure scale does not change during photocopying."
+
+## Sources
+- ${NWCG_475} Locator: p. ix, "Introduction", the list of materials; p. 81, chapter 4 introduction; p. 169, Appendix C templates; p. 171, the field-notes form.
+- ${NPS_TEN} Locator: "Navigation" and "Illumination".
+- ${DEAM} Locator: "Pre-Trip Check List".`,
+    },
+    {
+      slug: "where-to-practice-near-indianapolis",
+      title: "3 · Where to practice near Indianapolis",
+      section: "1 · Before you set out",
+      recallContent: [
+        {
+          prompt: "Which compass does the wildland fire workbook teach, and why?",
+          answer: "The baseplate compass, \"because it is a common, inexpensive, and easy to use compass that does not require batteries.\"",
+        },
+        {
+          prompt: "What should you check after printing a map or a template?",
+          answer: "That the scale has not changed: measure the printed bar scale against a ruler.",
+        },
+      ],
+      body: `**Scout the ground first, and read its rules.** The Army manual puts this before any training: "Unit leaders must complete a thorough terrain reconnaissance before using an area for land navigation training. They should look for dangerous terrain, heavy trafficked roads, water obstacles, wildlife, and training debris." A civilian has one more thing to check: whether the land's manager allows what you mean to do. Off-trail walking, being out after dark and filming are each allowed in some places and not in others.
+
+**Four places, nearest first.** Each is public land on a free US Topo map (lesson 4), and the rules below are quoted from each manager's own page or map as read on 14 October 2026. Rules change, so read them again before you go.
+
+**1. Fort Harrison State Park, northeast Indianapolis.** Map: the INDIANAPOLIS EAST quad, dated 2022-10-14, contour interval 5 feet. The park's trail map says "PLEASE STAY ON MARKED TRAILS." and lists two nature preserves, Chinquapin and Bluffs of Fall Creek, each "Closed to the public." Use it for the skills that work on a trail: reading the map against the ground, pace counts on a measured stretch, and taking bearings to landmarks. It is not the place to leave the trail, and it has no campground for a night walk.
+
+**2. Morgan-Monroe State Forest, Morgan and Monroe counties.** Map: HINDUSTAN, dated 2022-10-05, contour interval 10 feet. Its trail map also says "PLEASE STAY ON MARKED TRAILS." The forest built the Pathfinder Trail Orienteering Course, "a 'compass course', set up for you to practice following bearings and counting pace", but the forest's page lists it as closed after the EF-2 tornado of June 18, 2026, with no reopening date given. After dark is possible only as a registered backcountry camper: "All campers must register", groups are limited to "family units or groups not exceeding six persons", "No campsite may be established within ¼ mile of access points", and "Use of the area is restricted to a maximum of three nights". In hunting season, "Hikers are advised to wear hunter orange or other bright clothing while on trails".
+
+**3. Yellowwood State Forest, Brown County.** Map: BELMONT, dated 2022-10-14, contour interval 10 feet. "PLEASE STAY ON MARKED TRAILS." again, and part of the Tecumseh Trail is closed "until further notice". The two sources disagree about camping along the Tecumseh Trail: the forest's web page allows dispersed camping at least "¼ mile away from all roads, recreation areas, and trailheads, and a minimum of 100 feet from the trail", while the property map says "Camping in designated areas is allowed along this trail." Ask the forest office which rule governs before you plan a night there.
+
+**4. Charles C. Deam Wilderness, Hoosier National Forest.** Map: ELKINSVILLE, dated 2022-10-05. This is the one site of the four whose posted rules expect you off the trail and out after dark. Its restrictions confine horse riders to designated trails and say nothing of the kind for walkers, and "Camping is prohibited within 200 feet of trails, trailheads, roads, water sources, rock shelters, caves, and historic structures, unless in a Forest Service designated campsite." "Group size is limited to 10 persons or less." "Geocaching is prohibited." Drones may not launch or land. And the page warns: "Please get a map before visiting this area, as the boundaries are not clearly marked." Lessons 30 and 31 point here.
+
+**Groups, events and cameras.** The Indiana DNR says a special events permit is required by 312 IAC 8-2-15 "if an individual, business or other group wishes to host an event such as a public meeting, parade, contest, competition, sporting activity or other special event or activity on a DNR property." An orienteering meet you organize is that kind of event. The DNR's rules page also links a "Commercial Film and Photography Agreement Form"; before BAM films a demonstration on DNR land, he asks the property whether his filming needs one.
+
+:::reveal Of the four sites, which one's posted rules expect walkers off the trail and out after dark? ||| The Charles C. Deam Wilderness in the Hoosier National Forest.
+
+:::reveal Why can you not practice on Morgan-Monroe's Pathfinder orienteering course right now? ||| The forest lists it as closed after the EF-2 tornado of June 18, 2026, with no reopening date given.
+
+## Sources
+- ${FM_2001} Locator: printed p. 1-2 (PDF p. 8), paragraph 1-3.
+- ${FH_MAP} Locator: "Nature Preserves" panel and the "Please stay on marked trails" note. Linked only.
+- ${MMSF_PAGE} Locator: the tornado notice at the top; "Camping", backcountry paragraph; "Hunting"; "Hiking Trails", Pathfinder Orienteering Trail. Linked only.
+- ${MMSF_MAP} Locator: "Please stay on marked trails" note. Linked only.
+- ${MMSF_ORIENT} Locator: "Pathfinder Trail Orienteering Course", first panel. Linked only.
+- ${YSF_PAGE} Locator: the Tecumseh Trail closure notice; "Hiking Trails", Tecumseh Trail. Linked only.
+- ${YSF_MAP} Locator: the Tecumseh Trail entry and the "Please stay on marked trails" note. Linked only.
+- ${DEAM} Locator: "Restrictions"; "Directions".
+- ${DNR_SP_RULES} Locator: the page's list of rule topics; "Special Events". Linked only.
+- ${USTOPO_INDY_EAST} Locator: lower margin, contour interval note.
+- ${USTOPO_HINDUSTAN} Locator: lower margin, contour interval note.
+- ${USTOPO_BELMONT} Locator: lower margin, contour interval note.
+- ${USTOPO_ELKINSVILLE} Locator: lower margin, quad name and date.`,
     },
   ],
 };
