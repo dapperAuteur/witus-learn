@@ -1845,5 +1845,47 @@ An invented example, to show the form: "Leg 2: stream junction to trail crossing
 - ${FM_2001} Locator: printed pp. 11-10 and 11-12 (PDF pp. 156 and 158), paragraphs 11-4b(1)(a) and 11-4b(5); printed p. 5-11 (PDF p. 60), paragraph 5-3a(2)(f).
 - ${NWCG_475} Locator: p. 111, chapter 6 introduction; p. 133, Figure 6-11; p. 45, slope.`,
     },
+    {
+      slug: "bams-route",
+      title: "28 · A planned route, walked and logged",
+      section: "6 · Planning and walking a route",
+      recallContent: [
+        {
+          prompt: "What does the river course name as the failure that turns a problem into an accident?",
+          answer: "\"committing further because you have already committed.\" Each push feels like progress and uses up the margin.",
+        },
+        {
+          prompt: "What is a turn-back rule, for a walk?",
+          answer: "A clock time and conditions, written down before you leave, at which you turn around wherever you are.",
+        },
+      ],
+      body: `${P("BAM plans a route of four or five legs on the quad he films on, walks it with a written log on camera, and shows on the map afterward where the log and the ground disagreed and why; filmed only where the land manager allows it (lesson 3)")}
+
+${QR("a search-and-rescue member or a wilderness or land-navigation instructor, to review BAM's footage, his log and the lessons he draws from it before release")}
+
+**What this lesson will hold.** This is the demonstration lesson: one real route, planned with the route card from lesson 26, walked with the methods of sections 4 and 5, and logged as it happens. The video carries it. The text below says what the log records and what to watch for, so you can keep the same log on your own walk.
+
+**The log.** At each checkpoint, write:
+- **The time**, so you can compare your real speed with your plan (lesson 27).
+- **The leg and the bearing you walked**, with its north (lesson 18).
+- **The pace count** for the leg, and the count you expected (lesson 23).
+- **What you saw**, compared with what the card said you should see.
+- **Any fix**: a resection, or a known feature reached, after which the pace count starts again (lesson 22). The Army manual: "Pace counts or any type of distance measurement should begin anew each time your position is confirmed on the map."
+
+**What to watch for in the footage.** The documents name where routes go wrong, and the log is how you catch each one:
+- **Distance.** "Determining distance is the most common source of error". A count that runs long on the uphill legs is the slope and the ground at work, not a mistake to hide.
+- **Direction.** A declination applied with the wrong sign, or not at all, puts a 450-meter leg about 70 meters off line at 9°, about 450 × tan(9°). The check is the both-ways conversion in lesson 17.
+- **The map's age.** A trail or clearing that has moved since the map was made: "cultural features and vegetation" are "most likely to have changed since the map was last revised."
+- **Seeing what you expect.** The River Expedition course's definition fits a walk: "you are lost when your belief about your position stops matching reality, whether or not you have noticed." The log is a record of what you believed, written before you knew whether it was true.
+
+**After the walk.** Lay the log beside the map and mark where your position, as logged, and the truth parted, then why. The river course's question for any failure account applies to your own: "what did they believe that turned out to be wrong?" Lesson 36 asks you to plan and log your own route the same way.
+
+:::reveal According to the Army manual, when should a pace count begin anew? ||| Each time your position is confirmed on the map.
+
+:::reveal About how far off line does a 9° error put you after 450 meters? ||| About 70 meters (450 × tan 9°).
+
+## Sources
+- ${FM_2001} Locator: printed p. 5-11 (PDF p. 60), paragraph 5-3; printed p. 11-13 (PDF p. 159), paragraph 11-5b(2); printed p. 11-16 (PDF p. 162), paragraph 11-6a(11).`,
+    },
   ],
 };
