@@ -454,5 +454,47 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 - ${USGS_GIP_SYM} Locator: p. 1, "What is a Topographic Map?" and "Reading Topographic Maps".
 - ${USGS_FS} Locator: p. 1, the paragraph on colored areas and symbols.`,
     },
+    {
+      slug: "scale-and-distance",
+      title: "7 · Scale and distance",
+      section: "2 · Reading a topographic map",
+      recallContent: [
+        {
+          prompt: "On a US Topo map, what colors are contours, water features and roads?",
+          answer: "Contours brown; streams, rivers and other water blue; roads black and red.",
+        },
+        {
+          prompt: "Why might an older USGS quad show features in purple?",
+          answer: "Purple was once the revision color: \"At one time, purple was used as a revision color to show all feature changes.\" It is no longer used but remains on many existing maps.",
+        },
+      ],
+      body: `**The representative fraction.** A scale such as 1:24,000 is a ratio. The Army manual: "The RF is always written with the map distance as 1 and is independent of any unit of measure." So 1:24,000 means one inch on the map is 24,000 inches on the ground, and also one centimeter is 24,000 centimeters. The workbook does the conversion that matters on a US Topo: "1 inch represents 24,000 inches or 2000 feet". The USGS fact sheet's table adds that one centimeter represents 240 meters, and that at 1:63,360 one inch is one mile.
+
+**From the map to the ground.** "The ground distance between two points is determined by measuring between the same two points on the map and then multiplying the map measurement by the denominator of the RF". Worked on a 1:24,000 quad:
+- You measure 3.5 inches between two trail junctions. 3.5 × 2,000 = **7,000 feet**, and 7,000 ÷ 5,280 is about **1.33 miles**.
+- You measure 6.2 centimeters. 6.2 × 240 = **1,488 meters**, about 1.5 kilometers.
+
+**From the ground to the map.** The manual turns it around: map distance equals ground distance divided by the denominator. A 1,200-meter leg on a 1:24,000 map is 1,200 ÷ 24,000 = 0.05 meter, which is **5 centimeters**.
+
+**Area, too.** A scale works on area by squaring it. The black grid on a US Topo is drawn every 1,000 meters, so each grid square is 1,000 m × 1,000 m = **1 square kilometer**, which is about 247 acres. Fort Harrison State Park's map gives the park as 1,744 acres, roughly the area of seven grid squares. The fact sheet gives a whole 7.5-minute quad at "49 to 70" square miles; the range comes from how much the lines of longitude crowd together with distance from the equator.
+
+**The bar scale.** The scale you can trust after printing is the bar scale, because it shrinks or grows with the paper. The manual calls it "a ruler printed on the map". Right of zero is the primary scale, in whole units; left of zero is the extension scale, divided into tenths, and "always read right to left". To use it, lay the straight edge of a scrap of paper between the two points, tick both, then carry the paper to the bar: put the right tick on a whole number of the primary scale and read the left tick in the extension. A map printed at 90 percent of full size is no longer 1:24,000 (one inch is then about 2,222 feet), but its bar scale is still right.
+
+**A winding route.** For a road or a trail that bends, the manual's method is a paper strip pivoted at every bend: tick the start, run the edge along the first straight stretch, tick where the line leaves the edge, pivot to the next stretch, and so on. At the end, measure only from the first tick to the last on the bar scale; "The tick marks in between are not used."
+
+**What a map distance is not.** "Maps measure the distance between two points 'as the crow flies,'" says the workbook. "This means they measure horizontal distances, not slope distances." On flat ground that changes nothing. On hills, "distances measured on maps are going to be way off", always short of what you will walk. And the manual adds a caution about small scales: "As the scale becomes smaller, the accuracy of measurement decreases because some of the features on the map must be exaggerated".
+
+**The right map for the job.** The Fort Harrison course in this catalog, in its lesson "14 · Map: this post, and the national pattern it belongs to", makes the same point from the other side: a world map cannot show a 2,500-acre post. Pick the scale that shows the ground you will walk.
+
+:::reveal On a 1:24,000 map, how far on the ground is 2.5 inches? ||| 2.5 × 2,000 feet = 5,000 feet, a little under a mile (5,280 feet).
+
+:::reveal Why trust the bar scale over the printed 1:24,000 after you print a map? ||| The bar scale shrinks or grows with the paper, so it stays right; the fraction is only right at full size.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 5-1 to 5-6 (PDF pp. 50 to 55), paragraphs 5-1a, 5-1d, 5-1e and 5-2a to 5-2g.
+- ${NWCG_475} Locator: p. 34, "Fractional Scale"; p. 133, "Estimating Distance on the Ground".
+- ${USGS_FS} Locator: p. 1, "From Near to Far: Distance" and its table of map series.
+- ${FH_MAP} Locator: the park's address block ("1,744 Acres"). Linked only.`,
+    },
   ],
 };
