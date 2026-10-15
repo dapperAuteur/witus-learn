@@ -580,5 +580,56 @@ A second tract ran from the mouth of the White River down the Wabash to the Ohio
 - ${WILSON} Locator: pp. 1 to 4, the deed of October 18, 1775 (the bounds on p. 4); pp. 6 to 8, the acreage, the rejected applications, and the league. ${TIER_A_1916}
 - ${MANUAL} Locator: sec. 1-18, p. 7 (PDF p. 18); sec. 10-33, p. 336 (PDF p. 347). ${TIER_A}`,
     },
+    {
+      slug: "reading-a-deed-description",
+      title: "8 · Reading a deed description: what controls, rerunning an old deed, and lot and block",
+      section: "2 · Metes and bounds, and the deed",
+      recallContent: [
+        {
+          prompt: "What did Wilson find when he tried to fix the length of a league?",
+          answer: "Several values: a marine league of 18,240 feet, a French common league of 2.422 miles, a land league sometimes said to be three miles. \"It appears very indefinite.\"",
+        },
+        {
+          prompt: "What happened to the Wabash Land Company's requests that Congress confirm its 1775 purchase?",
+          answer: "Every one, in 1781, 1791, 1797, 1804 and 1810, was rejected (Wilson, p. 7).",
+        },
+      ],
+      body: `${QR(`${SURVEYOR}, to check the 1912 rules of deed interpretation as this lesson states them, and to say where today's practice differs`)}
+
+**The shape of a deed description.** Breed and Hosmer's 1912 textbook says the written description recorded in a deed "should be given by bearings (or angles) and distances, stating in every case how the sides of the property are marked and whether bounded by a highway, stream, or private property" (sec. 150). Their sample deed, for a small parcel in Maine, has every part you will meet in a real one. It names private people, so this course describes it rather than quoting it:
+1. A **point of beginning**, tied to something findable: a point in the line of a named road, at an iron pipe sunk in the ground.
+2. **Courses**, each a bearing and a distance, such as "N 85° 34' E" for a stated number of feet, written in words and in figures.
+3. **Monuments and bounds** along the way: the thread of a brook's channel, the middle of a stone wall, a fence, another iron pipe, and the adjoining owners' land.
+4. A **close**: the last course runs "to the point of beginning."
+5. A **basis of bearing**: "all the bearings being magnetic."
+6. An **area**: "a calculated area of 79,305 square feet more or less."
+
+They add a warning: "It is unfortunate that the description of the property in deeds in the vast majority of cases, does not define the property in such a manner that it can be plotted from the description" (sec. 150).
+
+**What controls when the parts disagree.** Breed and Hosmer set out the rules of interpretation as the courts of their day applied them (sec. 151). Read them as the principles of 1912, not as advice about your deed:
+- "It is distinctly his duty to find the position of the original boundaries of the property and not attempt to correct the original survey even though he may be sure that an error exists in it."
+- "Where artificial features are mentioned as boundaries, these always take precedence over the recorded measurements or angles, but these marks must be mentioned in the deed in order to have the force or authority of monuments."
+- "When the area does not agree with the boundaries as described in the deed the boundaries control."
+- "It is assumed that it was intended to convey property the boundaries of which will form a closed traverse," so a surveyor may "reject any evident mistake," such as a bearing written backward or a side left out.
+- In a dispute between neighbors, "the surveyor acts simply as an expert in judging where the line originally ran and has no power to establish a new line."
+That is lesson 6's rule again, at the scale of a backyard: monuments first, measurements second, area last.
+
+**Rerunning an old deed** (sec. 152). "The visible marks which are mentioned in a deed are of primary importance ... the lengths of the sides and the bearings (or angles) ... are of secondary importance." When the marks are gone, the surveyor falls back on the record. If the bearings are magnetic, "it is necessary first to find the declination of the needle at the date of the original survey as well as the present declination of the needle and to correct all the bearings accordingly." Better still, if one original line can be found on the ground, "a bearing taken on this line and compared with that given in the deed will determine directly the change in declination." The companion course's lesson 9 works this arithmetic. And if the old traverse does not close by a little, the chain may be to blame: measure a known line and compare it with the record before running anything (p. 120).
+
+**Lot and block.** Inside towns, land is usually described by a recorded plat instead: a named subdivision, a block number and a lot number. The *Specifications* note that "lot" has two meanings: a government lot in an irregular section (lesson 5), and "the name given individual parcels of recorded subdivision of private tracts, i.e., lot and block subdivisions" (p. 9, note 14). Breed and Hosmer: "When a deed refers to a plan the dimensions on this plan become a part of the description of the property" (sec. 151). So "Lot 7, Block 3" means nothing without the recorded plat it points to, which the county recorder keeps.
+
+**Where deeds are kept.** "The transfer of real property must be recorded," Breed and Hosmer wrote, and the registry indexes deeds by **grantor** (seller) and **grantee** (buyer) (sec. 153). In Indiana, the State Archives explains that after the first sale from the public domain, "all subsequent transactions and plat maps are held by the recorders in the individual counties of Indiana" (lesson 12).
+
+**Practice.** Choose a public building in your county, such as the courthouse, a library or a public school, and find its recorded legal description through your county's public parcel records. Decide which system it uses (grid, metes and bounds, or lot and block), and label its parts with this lesson's list. Never practice on a private home.
+
+:::reveal A deed's courses add up to 2.1 acres, but it says "containing 2.5 acres, more or less." Under Breed and Hosmer's rules, which controls? ||| The boundaries. "When the area does not agree with the boundaries as described in the deed the boundaries control."
+
+:::reveal What must a fence or wall have to count as a monument in a deed, according to Breed and Hosmer? ||| It must be mentioned in the deed: "these marks must be mentioned in the deed in order to have the force or authority of monuments."
+
+## Sources
+- ${BH} Locator: secs. 150 to 152, pp. 115 to 120 (scan pp. 141 to 146); sec. 153, p. 120 (scan p. 146). ${TIER_A_PD}
+- ${SPECS} Locator: p. 9 (PDF p. 15), note 14, the definition of "lot". ${TIER_A}
+- ${IARA} Locator: the paragraph on county recorders. ${TIER_B}`,
+    },
   ],
 };
