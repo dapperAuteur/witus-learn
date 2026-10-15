@@ -330,5 +330,58 @@ export const SURVEYING_HOW_LAND_GETS_MEASURED_COURSE: AuthoredCourse = {
 - ${GILLESPIE} Locator: Part IX, art. 460, pp. 311 to 312 (scan pp. 317 to 318). ${TIER_A_PD}
 - ${BH} Locator: sec. 9, p. 6 (scan p. 32); sec. 10, pp. 7 to 9 (scan pp. 33 to 35). ${TIER_A_PD}`,
     },
+    {
+      slug: "gunters-chain",
+      title: "5 · Gunter's chain: 66 feet, 100 links, and the acre",
+      section: "1 · Distance: pacing and the chain",
+      recallContent: [
+        {
+          prompt: "How did Gillespie say to walk a straight line?",
+          answer: "Keep two objects in the line, the nearer steadily covering the farther, and choose a new one ahead before you reach the nearer (art. 460).",
+        },
+        {
+          prompt: "How do you find the length of your own pace?",
+          answer: "Walk a known distance several times at your natural step and divide the distance by the number of paces.",
+        },
+      ],
+      body: `${P("BAM's chain laid out beside a tape, with the handles, the tags and the end-link adjusting nut shown close up, and a link measured against a ruler")}
+
+**The legal unit.** The federal Manual of Surveying Instructions opens its units of distance with the law: "The law prescribes the chain as the unit of linear measure for the survey of the public lands. The majority of the PLSS has, in fact, been surveyed and reported in chain units" (sec. 2-42). The chain was "devised in the 17th century by Edmund Gunter, an English astronomer," and it "is so designed that 10 square chains are equivalent to 1 acre."
+
+**The table to learn.** From the Manual's table 2-1 and Breed and Hosmer's sec. 4:
+
+| Unit | Equals |
+|---|---|
+| 1 chain | 100 links = 66 feet = 4 rods (also called poles or perches) |
+| 1 rod | 25 links = 16.5 feet |
+| 1 link | 0.66 foot = 7.92 inches |
+| 1 mile | 80 chains = 5,280 feet |
+| 1 acre | 10 square chains = 43,560 square feet |
+| 1 square mile | 640 acres |
+
+**Why the numbers fit.** Work them once and they stay with you.
+- 66 feet × 80 chains = 5,280 feet, so the chain divides the mile evenly.
+- One square chain is 66 × 66 = 4,356 square feet. Ten of them make 43,560 square feet: the acre.
+- A mile square is 80 × 80 = 6,400 square chains. Divide by 10 and you have 640 acres, the section of the public land survey.
+- A link is a hundredth of a chain, so a chain length reads as a decimal: 12.34 chains is 12 chains and 34 links.
+
+Breed and Hosmer say Gunter's chain is used "chiefly" in land surveying "on account of its simple relation to the acre and to the mile." Distances measured with it "are recorded as chains and links, (or in chains and decimals)," while the 100-foot engineer's chain records feet and decimals. And: "The inch, however, is never used in surveying fieldwork."
+
+**Rods, poles, perches and the two-pole chain.** The Manual warns that the old records do not all speak in chains. In the English colonies "lengths of lines were frequently expressed in poles"; early field notes in the southern states give "perches"; and "The term now commonly used for the same distance is the rod." In some places distances "were recorded in 2 pole (perch) chains," and a surveyor retracing such work "needs to be cautious" (sec. 2-42). The very first line of the public land survey, in 1785, was measured "with a two-pole Gunter's chain held horizontally" (White, p. 18). A two-pole chain is 33 feet, half a full chain, so read the field notes for which chain was used before you trust a number.
+
+**Which foot?** The Manual defines the chain "in terms of the U.S. Survey Foot", and says the difference from the international foot is "very small, on the order of 2 parts per million" (sec. 2-43). Over a mile, 2 parts per million is about a hundredth of a foot (5,280 × 0.000002 = 0.01). The National Institute of Standards and Technology has since retired the survey foot: "The U.S. survey foot is obsolete. Only use for historical and legacy applications." It was superseded by the international foot of exactly 0.3048 meter. Rerunning an old chained line is exactly that kind of historical work, so a surveyor still needs both.
+
+**The chain grows.** Breed and Hosmer (sec. 22): a new chain is "very nearly the standard length," and at first its links bend and shorten it. "But there are nearly six hundred wearing surfaces and before long the small amount of wear on each surface lengthens the chain an appreciable amount. It is very common to find chains which, after considerable use, have lengthened 0.3 ft. or more." Follow that through a mile. A chain 66.3 feet long fits along a true mile 5,280 ÷ 66.3 = 79.64 times, so the notes record 79.64 chains for a line that is really 80, about 24 feet short. The Manual says the same of the old surveys: "Prior to 1900 most of the lines were measured with the Gunter's link chain. Such a chain was difficult to keep at standard length" (sec. 7-5). What the law did about that is the subject of *Reading a Land Description*.
+
+:::reveal Why do ten square chains make an acre? ||| A square chain is 66 × 66 = 4,356 square feet, and ten of them are 43,560 square feet, the acre.
+
+:::reveal A field note reads 7.25 chains. How far is that in feet? ||| 7.25 × 66 = 478.5 feet: 7 chains and 25 links.
+
+## Sources
+- ${MANUAL} Locator: secs. 2-42 and 2-43 and table 2-1, p. 37 (PDF p. 48); sec. 7-5, p. 165 (PDF p. 176). ${TIER_A}
+- ${BH} Locator: sec. 4, pp. 3 to 5 (scan pp. 29 to 31); sec. 22, p. 14 (scan p. 40). ${TIER_A_PD}
+- ${WHITE} Locator: p. 18 (PDF p. 32). ${TIER_A}
+- ${NIST_FOOT} Locator: the timeline entries for December 31, 2022 and January 1, 2023. ${TIER_A}`,
+    },
   ],
 };
