@@ -855,5 +855,62 @@ It did not take over at once. In 1841 the surveyor general in Arkansas "was havi
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3: Elevation: running a level line
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "differential-leveling",
+      title: "12 · Differential leveling: backsight, foresight, turning point",
+      section: "3 · Elevation: running a level line",
+      recallContent: [
+        {
+          prompt: "What problem pushed William Burt to invent his solar compass?",
+          answer: "Iron ore deposits in Michigan that \"made needle compass surveying nearly impossible\" (White, p. 96).",
+        },
+        {
+          prompt: "Which direction instrument does the 2009 Manual unequivocally prohibit, and against what is every PLSS bearing reported?",
+          answer: "The needle compass; bearings are reported with reference to the true meridian (secs. 2-4 and 2-5).",
+        },
+      ],
+      body: `${P("BAM setting up and leveling his level, a helper holding the rod plumb on a stone, and a short level line run across two turning points with the field book filled in on screen")}
+
+**The simplest case.** Breed and Hosmer (sec. 111): "In order to obtain the difference in elevation between two points, hold the rod at the first point and, while the instrument is level, take a rod-reading. This is the distance that the bottom of the rod is below the line of sight of the level. Then take a rod-reading on the second point and the difference between the two rod-readings is the difference in elevation of the two points." A bigger reading means the ground is lower, because more of the rod is below the line of sight.
+
+**Leveling the instrument** (sec. 112). Set it up where the rod can be seen on both points, and save time by doing most of the leveling with the tripod legs, keeping the leveling screws for small moves. Center the bubble over one pair of screws, then the other, and repeat. "If the instrument is in adjustment and is properly leveled in both directions, then the bubble will remain in the center during an entire revolution of the telescope about the vertical axis."
+
+**Reading the rod** (sec. 113). Bring the bubble to the center while the telescope points at the rod, and check it again just before and just after each reading: "It is not sufficient to trust the bubble to remain in the center." The rodman stands beside the rod and keeps it upright, because "it is extremely important that the rod be held plumb." A rod that leans reads too high. One way to plumb it toward the instrument is "waving the rod": the rodman tips it slowly toward and away from the level, and the reading is taken at its lowest, where the rod stands plumb (sec. 114).
+
+**When the points are far apart** (sec. 116). Then the line is run in steps.
+- The first reading, on the starting point, is the **backsight**, also called a plus sight (B. S. or + S.).
+- The rod then goes to "some well-defined point which will not change in elevation (such as the top of a firm rock)". The reading there is a **foresight**, or minus sight (F. S. or − S.), and that point is a **turning point** (T. P.).
+- The level moves ahead, takes a backsight on the turning point, and a foresight on the next one, and so on to the end.
+
+"The elevation of the last point above the first is equal to the sum of all the backsights minus the sum of all the foresights. If the result is negative, i.e., if the sum of the foresights is the greater, then the last point is below the first."
+
+**Breed and Hosmer's own notes** (p. 87), from a stone bound at A to a stone step at B:
+
+| Point | + S. | − S. |
+|---|---|---|
+| A | 8.160 | |
+| T. P. | 7.901 | 2.404 |
+| T. P. | 9.446 | 3.070 |
+| T. P. | 8.005 | 6.906 |
+| B | | 2.107 |
+| Sums | 33.512 | 14.487 |
+
+33.512 − 14.487 = 19.025: "B above A" by 19.025 feet.
+
+**Following the line point by point.** Give A an elevation of 100.000 feet. Each backsight adds and each foresight subtracts: 100.000 + 8.160 − 2.404 = 105.756 at the first turning point; + 7.901 − 3.070 = 110.587 at the second; + 9.446 − 6.906 = 113.127 at the third; + 8.005 − 2.107 = 119.025 at B. The last figure agrees with the sums, 19.025 above A, which is the arithmetic check on the notes.
+
+**The signal that moves the work on.** Breed and Hosmer list the hand signals of a level party (sec. 115). For "Take a Turning Point," "the arm is swung slowly in a circle above the head."
+
+:::reveal Backsights total 12.40 feet and foresights total 15.15 feet. Is the last point above or below the first, and by how much? ||| Below, by 2.75 feet: 12.40 − 15.15 = −2.75, and a negative result means the last point is lower.
+
+:::reveal Why must a turning point be a firm rock or another point that will not change in elevation? ||| It carries the elevation forward: the foresight and the next backsight are both read on it, so if it settles between the two readings, every elevation after it is wrong.
+
+## Sources
+- ${BH} Locator: secs. 111 to 116 and Fig. 43, pp. 83 to 86 (scan pp. 109 to 112); the field notes, p. 87 (scan p. 113). ${TIER_A_PD}`,
+    },
   ],
 };
