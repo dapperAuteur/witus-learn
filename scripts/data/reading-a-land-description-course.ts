@@ -959,7 +959,7 @@ Wells County adds that its corners "are usually found near the centerlines of th
 **Questions worth asking.**
 1. Which origin governs this county's townships: the Second Principal Meridian, the First, or the Ohio River Base (lesson 10)?
 2. How does the office choose which corners to check each year, and what does it record when it finds one?
-3. Which set of the original field notes does the office use, and has it found differences between them?
+3. Which copy of the original field notes does the office use, and where did it come from?
 4. What does a corner look like here: a stone, an iron pin, a monument under the pavement?
 5. Is there a perpetuated corner nearby that the public may see, and how should a visitor behave there?
 
