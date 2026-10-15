@@ -131,6 +131,16 @@ const USGS_UTM_GRID =
   "U.S. Geological Survey. (n.d.-e). *Do all USGS 7.5 minute topographic maps show the UTM grid?* [FAQ]. https://www.usgs.gov/faqs/do-all-usgs-75-minute-topographic-maps-show-utm-grid";
 const FGDC_USNG =
   "Federal Geographic Data Committee. (n.d.). *United States National Grid*. https://www.fgdc.gov/usng";
+const USGS_NORTH =
+  "U.S. Geological Survey. (n.d.-f). *What do the different north arrows on a USGS topographic map mean?* [FAQ]. https://www.usgs.gov/faqs/what-do-different-north-arrows-a-usgs-topographic-map-mean";
+const USGS_DECL = "U.S. Geological Survey. (n.d.-g). *What is declination?* [FAQ]. https://www.usgs.gov/faqs/what-declination";
+// NCEI (Tier A, federal; the WMM source code is stated public domain), read 2026-10-14.
+const NCEI_DECL =
+  "National Centers for Environmental Information. (n.d.-a). *Magnetic declination*. National Oceanic and Atmospheric Administration. https://www.ncei.noaa.gov/products/magnetic-declination";
+const NCEI_WMM =
+  "National Centers for Environmental Information. (n.d.-b). *World Magnetic Model (WMM)*. National Oceanic and Atmospheric Administration. https://www.ncei.noaa.gov/products/world-magnetic-model";
+const NCEI_WMM_ACC =
+  "National Centers for Environmental Information. (n.d.-c). *World Magnetic Model accuracy, limitations, and error model*. National Oceanic and Atmospheric Administration. https://www.ncei.noaa.gov/products/world-magnetic-model/accuracy-limitations-error-model";
 // GPS.gov (Tier A, federal), read 2026-10-14.
 const GPS_ACCURACY = "GPS.gov. (n.d.-a). *GPS accuracy*. https://www.gps.gov/gps-accuracy";
 const NPS_TEN =
@@ -917,6 +927,55 @@ So report six digits for "here is where we are", eight when the map, the tool an
           { prompt: "Where does lesson 12 send the section-township-range land survey?", options: ["To the surveying courses in this series", "To lesson 11, as a kind of UTM grid", "To the final quiz, as a bonus topic", "Nowhere; the course ignores it all"], correctIndex: 0, explanation: "Land survey descriptions describe land rather than find your way, and belong to the surveying courses later in this series.", sourceLessonSlug: "how-precise-is-a-grid-reference" },
         ],
       },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4: The compass
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "parts-of-a-compass",
+      title: "13 · Parts of a baseplate compass, and a lensatic beside it",
+      section: "4 · The compass",
+      recallContent: [
+        {
+          prompt: "How big is the square named by a six-digit grid reference, and when does the Army manual use six digits?",
+          answer: "100 meters on a side; six digits are its normal precision \"for reporting locations.\"",
+        },
+        {
+          prompt: "Why is a ten-digit reference copied off a phone usually more precise than the truth?",
+          answer: "It claims 1 meter, but GPS.gov says a phone is typically good to about 4.9 m under open sky, and worse under trees.",
+        },
+      ],
+      body: `${P("BAM names each part on camera, first on his baseplate compass with a declination adjustment, then on his lensatic compass, holding the two side by side")}
+
+**What a compass does, and does not.** The wildland fire workbook: a compass "uses a magnet, mounted on a pivot that turns in response to the earth's magnetic field, to determine direction (but not position)." Direction is all it gives you. Position comes from the map, the ground and the methods in section 5.
+
+**The baseplate compass, part by part.** The workbook names these (p. 82):
+- **Magnetic needle.** It "typically has a red end that points to magnetic north, as long as the compass is being used properly and there is no local magnetic attraction."
+- **Housing with cardinal points and degrees.** "a revolving dial that shows the cardinal points (at least north, east, south, and west) and degrees (0 – 360)", turned "to line up the compass needle with the orienting arrow when taking a bearing."
+- **Orienting arrow.** The outlined arrow inside the housing, "used to align the magnetic needle when taking a bearing. It is also what is adjusted to set the compass for magnetic declination."
+- **Orienting lines.** They run parallel to the orienting arrow and line the dial up with grid lines on a map. "When the declination is set on a compass with an adjustment screw, the orienting lines no longer parallel the orienting arrow."
+- **Index line.** On the front of the plate, "where you read the indicated bearing."
+- **Direction of travel arrow.** "used for sighting and following bearings. The arrow should be pointed in the direction of the destination or landmark."
+- **Base plate.** The clear plate everything sits on, which "can be used as a ruler to measure map distances", sometimes with a protractor.
+- **Optional extras:** a magnifying lens, a declination adjustment screw (or an internal adjustment), a clinometer for slope, and a sighting mirror, which "can improve accuracy when reading bearings" and "can also be used for signaling."
+
+**The lensatic compass, for comparison.** The Army manual's compass "consists of three major parts: the cover, the base, and the lens."
+- **Cover:** protects the dial and carries "the sighting wire (front sight) and two luminous sighting slots or dots used for night navigation."
+- **Base:** a floating dial whose arrow "always points to magnetic north", with "two scales; the outer scale denotes mils and the inner scale (normally in red) denotes degrees"; a fixed black index line; a bezel ring that "contains 120 clicks when rotated fully; each click is equal to 3°", with a short luminous line; and a thumb loop.
+- **Lens:** for reading the dial, with the rear-sight slot. Closed, it locks the dial; it "must be opened more than 45° to allow the dial to float freely."
+
+**Degrees and mils.** The lensatic's outer scale is in mils. "A circle equals 6400 mils divided by 360 degrees, or 17.78 mils per degree." The Hindustan quad prints its declination both ways: 4°28' is 79 mils, because 4.47 × 17.78 is about 79.
+
+**The two side by side.** On a baseplate you turn the housing until the needle sits in the orienting arrow, then read the bearing at the index line. On a lensatic the dial floats on its own and you read it through the lens under the index line. The baseplate's clear plate lies flat on a map and works as a protractor and ruler; the lensatic's straightedge carries a coordinate scale, "1:50,000 in newer compasses", with a warning that "Some older compasses will have a 1:25,000 scale." Neither scale is the 1:24,000 of a US Topo, so measure distance with the map's bar scale.
+
+:::reveal Which part of a baseplate compass do you turn to set it for declination? ||| The orienting arrow: the workbook says "It is also what is adjusted to set the compass for magnetic declination."
+
+:::reveal How many degrees is one click of a lensatic compass's bezel ring? ||| 3°, with 120 clicks in a full turn.
+
+## Sources
+- ${NWCG_475} Locator: p. 81, chapter 4 introduction; p. 82, "Parts of a Compass"; p. 83, Figure 4-1.
+- ${FM_2001} Locator: printed pp. 9-1 and 9-2 (PDF pp. 110 and 111), paragraphs 9-1 and 9-2; printed p. 6-1 (PDF p. 64), paragraph 6-1b.
+- ${USTOPO_HINDUSTAN} Locator: lower margin, the declination diagram (degrees and mils).`,
     },
   ],
 };
