@@ -733,7 +733,7 @@ Breed and Hosmer set this problem (p. 30): in 1859 a line bore N 21° W when the
 
 It did not take over at once. In 1841 the surveyor general in Arkansas "was having trouble with 'local attraction' to such a degree on the Sabine River that he had to relinquish the contracts for approximately 1,000 miles of lines." That July the General Land Office sent a report on Burt's solar compass to every surveyor general and "recommended the instrument should be put to use in all the surveying districts. It wasn't, however." (p. 99).
 
-**What the solar compass did differently.** Instead of a needle, it found the true meridian from the sun. The 2009 Manual of Surveying Instructions says why that mattered: "a properly adjusted solar compass or solar transit determined the true meridian at each instrument setup. Matched with traditional chaining, a line of constant bearing can be run by instrumental orientation without any special reduction of the survey data" (sec. 2-8). No declination to look up, and no iron to fool it.
+**What the solar compass did differently.** Instead of a needle, it found the true meridian from the sun. The 2009 Manual of Surveying Instructions says why that mattered: "a properly adjusted solar compass or solar transit determined the true meridian at each instrument setup. Matched with traditional chaining, a line of constant bearing can be run by instrumental orientation without any special reduction of the survey data" (the paragraphs after sec. 2-8). No declination to look up, and no iron to fool it.
 
 **The rule today.** The Manual lists the instruments the public lands have been surveyed with: "Historically, these include the magnetic needle, solar compass, transit with solar attachment, and direct altitude or hour angle observations on the Sun, Polaris, or other stars. The use of direct astronomical observations to determine direction is effective and still used. Only the use of the needle compass is unequivocally prohibited." Other valid methods "include gyroscopic instruments, satellite receivers, orientation from the National Spatial Reference System (NSRS), and identifiable lines between monuments of adjoining official surveys" (sec. 2-4). Every line is reported in bearings "with reference to the true meridian" (sec. 2-5).
 
@@ -744,7 +744,7 @@ It did not take over at once. In 1841 the surveyor general in Arkansas "was havi
 :::reveal What problem pushed William Burt to invent the solar compass? ||| Iron ore deposits in Michigan, which "made needle compass surveying nearly impossible" (White, p. 96).
 
 ## Sources
-- ${MANUAL} Locator: secs. 2-4, 2-5 and 2-8, p. 28 (PDF p. 39). ${TIER_A}
+- ${MANUAL} Locator: secs. 2-4 and 2-5, and the paragraphs after sec. 2-8, p. 28 (PDF p. 39). ${TIER_A}
 - ${WHITE} Locator: p. 18 (PDF p. 32); p. 96 (PDF p. 110); p. 99 (PDF p. 113). ${TIER_A}
 - ${BH} Locator: sec. 26, p. 18 (scan p. 44). ${TIER_A_PD}`,
     },
