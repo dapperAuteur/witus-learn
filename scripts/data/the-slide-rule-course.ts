@@ -994,6 +994,53 @@ Read it from the left: 2,550. And 425 × 6 is 2,550.
 - ${NAPIER_1614} Locator: title page; the Canon follows the Descriptio. ${TA}
 - ${AS_1964} Locator: chapter 4, p. 68 (PDF p. 100), "common or Briggs logarithms". ${TA}`,
     },
+    {
+      slug: "reading-a-log-table",
+      title: "15 · Reading a printed log table, and interpolating",
+      section: "5 · Before the slide rule: Napier's rods and log tables",
+      recallContent: [
+        {
+          prompt: "What did Napier's 1614 Canon tabulate, and why?",
+          answer: "The logarithms of sines for every minute of the quadrant, radius 10,000,000: it was built for the trigonometry of astronomy and navigation.",
+        },
+        {
+          prompt: "Who computed the base-10 logarithms Napier called the \"better kind\"?",
+          answer: "Henry Briggs, Professor of Geometry in London, who took on \"the very heavy labour of computing this new Canon.\"",
+        },
+      ],
+      body: `${P("BAM on camera with a printed table of logarithms, looking up log 2 and log 3, adding them and finding 6, then interpolating the logarithm of 9836 and checking it on the rule")}
+
+**The table the rule replaces.** Pickworth calls the slide rule "in effect a concisely arranged table of logarithms," and Cullimore measures its accuracy against "a four place table of logarithms" (lesson 9). This lesson opens a real one: Table 4.1, "Common Logarithms," in the *Handbook of Mathematical Functions* published by the National Bureau of Standards in 1964. It is a federal work, free to read, and its chapter 4 was written by Ruth Zucker.
+
+**How the page is laid out.** Table 4.1 lists the numbers from 100 to 1350 with their common logarithms to ten decimal places, printed in groups of five digits. On its first page, beside 200, it prints 30102 99957: the mantissa 0.30102 99957, lesson 1's 0.301 to seven more places. Beside 300 it prints 47712 12547, Pickworth's 0.477. The characteristic is not printed, because, as the handbook explains, you supply it: write the number as x times a power of ten, with x between 1 and 10, and the logarithm "consists of an integral part which is called the characteristic and a decimal part which is called the mantissa." Table 4.1 gives the mantissa.
+
+**Multiplying with it.** To multiply 2 by 3, add their logarithms: 0.30103 + 0.47712 = 0.77815. Then look for 77815 in the table, the reverse lookup the handbook calls the antilogarithm, "written antilog x or log⁻¹ x." Beside 600 it prints 77815 12504, so the product's figures are 6, and the characteristic 0 makes it 6. That is the whole method of lesson 1, done with a book instead of a rule.
+
+**Between the lines: interpolation.** A table cannot list every number. The handbook's own example finds the mantissa of 9836: "Interpolation in Table 4.1 between 983 and 984 gives .99281 85 as the mantissa of 9836." The page prints:
+
+| x | log₁₀ x (mantissa) |
+|---|---|
+| 983 | 99255 35178 |
+| 984 | 99299 50984 |
+
+9836 lies 6/10 of the way from 9830 to 9840. The difference between the two entries is 0.00044 15806, and 6/10 of it is 0.00026 49484. Add that to the entry for 983: 0.99281 84662, which rounds to the handbook's 0.99281 85. This straight-line method is **linear interpolation**. The same mantissa serves 9.836, 98.36 and 0.009836; only the characteristic changes, exactly as in lesson 2.
+
+**With four places.** A four-place table would give 0.9926 for 983 and 0.9930 for 984. Six tenths of the difference, 0.0004, is 0.00024, so the mantissa of 9836 is about 0.9928. Four figures, about what a 10-inch rule reads: Cullimore's point exactly.
+
+**Where a straight line is not enough.** Interpolating between neighbors assumes the logarithm runs straight between them, and it does not quite. The handbook uses a "four-point Lagrangian interpolation" to get all ten places, and warns of a case where straight lines fail: for natural logarithms of small numbers, "To obtain 5 decimal place accuracy with linear interpolation it is necessary that x > .175." For the three or four figures a slide-rule user wants, the straight line between neighbors is plenty.
+
+**Who checked it.** The chapter's author "acknowledges the assistance of Lois K. Cherwinski and Elizabeth F. Godefroy in the preparation and checking of the tables." Lesson 16 is about the people who made tables like this one.
+
+:::reveal What does Table 4.1 print beside 200, and what is it? ||| 30102 99957: the mantissa of log 200, 0.30102 99957. The characteristic, 2, you supply yourself.
+
+:::reveal How do you interpolate the mantissa of 9836 from the entries for 983 and 984? ||| Take 6/10 of the difference between the two entries and add it to the entry for 983: 0.99281 85.
+
+## Sources
+- ${AS_1964} Locator: chapter 4 contents, p. 65 (PDF p. 97), Ruth Zucker and Table 4.1, x = 100 to 1350 to ten places; p. 66 (PDF p. 98), the acknowledgment of Lois K. Cherwinski and Elizabeth F. Godefroy; p. 89 (PDF p. 121), section 4.7, Example 1 (characteristic, mantissa, the interpolation for 9836, antilog), Example 2 (four-point Lagrangian interpolation) and Example 4 (x > .175); p. 95 (PDF p. 127), the entries for 200 and 300; p. 97 (PDF p. 129), the entry for 600; p. 98 (PDF p. 130), the entries for 983 and 984. ${TA}
+- ${NIST_HMF} Locator: second paragraph (the Handbook issued June 1964 as Applied Mathematics Series 55). ${TA}
+- ${PICKWORTH} Locator: p. 5 (PDF p. 11), "in effect a concisely arranged table of logarithms". ${TA}
+- ${CULLIMORE} Locator: p. 3 (PDF p. 7), "a four place table of logarithms". ${TA}`,
+    },
     // NEXT_SECTIONS
   ],
 };
