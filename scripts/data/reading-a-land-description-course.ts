@@ -651,7 +651,7 @@ That is lesson 6's rule again, at the scale of a backyard: monuments first, meas
 - **Grid (PLSS):** a principal meridian, a township and range, a section, and aliquot parts or lots.
 - **Metes and bounds:** a point of beginning, then courses and distances, back to the start.
 - **Lot and block:** a subdivision name, a lot, a block, and a reference to a recorded plat.
-- **A mix:** common in practice, such as "part of the SW1/4" followed by metes and bounds that cut a piece out of it. Read each part by its own rules.
+- **A mix:** for example, "part of the SW1/4" followed by metes and bounds that cut a piece out of it. Read each part by its own rules.
 
 **For a grid description, check:**
 1. **Every reference element is present.** The *Specifications* list them: "principal meridian, State, township and range, section, and lots or aliquot parts" (p. 10). A description that skips the meridian is relying on you to guess it.
@@ -677,7 +677,7 @@ That is lesson 6's rule again, at the scale of a backyard: monuments first, meas
 - **"More or less"** after an area or a distance: a signal that the boundaries, not the figure, control.
 - **"Thereabouts"** and **"about"**: the 1775 deed has both. They are honest, and they are also uncertain.
 - **"Along"** a wall, road or stream: a distance given "along a wall or highway" follows the feature even where it bends (sec. 151).
-- **A name instead of a monument:** "land now or formerly of" an adjoining owner tells you who was there, not where the line is.
+- **A name instead of a monument:** "land now or formerly belonging to" an adjoining owner (Breed and Hosmer's sample, sec. 150) tells you who was there, not where the line is.
 
 **A worked read-through.** The *Specifications'* example: "Mount Diablo Meridian, Nevada / T. 4 N., R. 20 E., / sec. 15, NW1/4, NE1/4SE1/4SW1/4, and NW1/4SE1/4." Meridian and state: present. Township and range with directions: present. Section: 15. Three parts separated by commas, so "and the": NW1/4 (160 acres), NE1/4SE1/4SW1/4 (three components, 10 acres), NW1/4SE1/4 (two components, 40 acres). Listed in the order NE, NW, SW, SE within each quarter as the guide prefers. Total 210 acres, which is the figure the *Specifications* give. Every box ticked.
 
