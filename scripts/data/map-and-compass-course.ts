@@ -131,6 +131,8 @@ const USGS_UTM_GRID =
   "U.S. Geological Survey. (n.d.-e). *Do all USGS 7.5 minute topographic maps show the UTM grid?* [FAQ]. https://www.usgs.gov/faqs/do-all-usgs-75-minute-topographic-maps-show-utm-grid";
 const FGDC_USNG =
   "Federal Geographic Data Committee. (n.d.). *United States National Grid*. https://www.fgdc.gov/usng";
+// GPS.gov (Tier A, federal), read 2026-10-14.
+const GPS_ACCURACY = "GPS.gov. (n.d.-a). *GPS accuracy*. https://www.gps.gov/gps-accuracy";
 const NPS_TEN =
   "National Park Service. (2026, May 28). *Ten essentials*. U.S. Department of the Interior. https://www.nps.gov/articles/10essentials.htm";
 
@@ -780,6 +782,55 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 - ${USGS_UTM_MEASURED} Locator: the answer, first and second paragraphs.
 - ${USGS_UTM_GRID} Locator: "Historical Topographic Map Collection" and "US Topo maps".
 - ${USTOPO_HINDUSTAN} Locator: lower margin, "Grid Zone Designation 16S"; the grid labels along the edges.`,
+    },
+    {
+      slug: "how-precise-is-a-grid-reference",
+      title: "12 · How precise is a grid reference?",
+      section: "3 · Saying where a place is",
+      recallContent: [
+        {
+          prompt: "What does \"read right, then up\" mean for a UTM coordinate?",
+          answer: "Read the easting first (meters east, going right), then the northing (meters north, going up), like x and then y on a graph.",
+        },
+        {
+          prompt: "An easting reads 546,000 meters in Zone 16. What does that say about the place?",
+          answer: "It is 546,000 - 500,000 = 46,000 meters east of the zone's central meridian, 87° W.",
+        },
+      ],
+      body: `**More digits, smaller square.** A grid reference does not name a point. It names a square, and the number of digits says how big the square is. The Army manual: "The number of digits represents the degree of precision to which a point has been located and measured on a map, the more digits the more precise the measurement." The workbook's table, for one New Hampshire location:
+- **297 4834** (the four-figure style, shortened): a 1,000 m by 1,000 m square.
+- **2974 48343**: a 100 m by 100 m square.
+- **29748 483436**: a 10 m by 10 m square.
+- **297480 4834360**: a 1 m by 1 m square.
+
+The military writes the short forms as one run of digits. "Coordinates are written as one continuous number without spaces, parentheses, dashes, or decimal points; they must always contain an even number of digits", and the reader splits it in half: the first half is right, the second half is up.
+
+**Four, six, eight.** A four-digit reference such as 1484 names a 1,000-meter grid square, and the next square to the right "would be 1584; the next square up would be 1485". To get six digits, "Mentally divide the grid square in tenths": the manual's point X is two tenths right and seven tenths up, so its reference is 142847, good to 100 meters. With a plotting scale you can read hundredths and get eight digits, 14178484, good to 10 meters. The manual's practice: "Normally, grid coordinates are determined to the nearest 100 meters (six digits) for reporting locations," and eight digits for targets.
+
+**Which corner?** A grid reference names the square up and to the right of the lines it quotes. The manual's example, 0182, "gives the location of the southwest corner of grid square 0182". Read it as "start at the southwest corner and go right, then up."
+
+**Choose the precision your measurement can carry.** This is the part that takes judgment. More digits are not more truth; they are a claim about how well you measured.
+- **Your pencil.** A pencil line half a millimeter wide on a 1:24,000 map covers 0.5 mm × 24,000 = 12,000 mm, which is **12 meters** of ground. An eight-digit reference read off a paper map by eye is already at the edge of what the paper can show.
+- **A phone.** GPS.gov says smartphones are "typically accurate to within a 4.9 m (16 ft.) radius under open sky", and worse under trees or near buildings (lesson 33). A ten-digit, 1-meter reference copied off a phone screen claims more than the phone measured.
+- **The workbook.** It says that with UTM "a location can be identified within a meter." That is what the system can express, not what your tools measured.
+
+So report six digits for "here is where we are", eight when the map, the tool and the need justify it, and never more digits than your worst instrument supports.
+
+**The letters in front.** The manual requires the grid zone designation and "the 100,000-meter square identification letters" in any full reference, as in its example 16SGL0182. The workbook calls this the Military Grid Reference System, "an extension of the UTM system", whose "coordinates are 2 to 10 digits which represent a precision range of 10 kilometers to 1 meter." Civilian maps carry the same idea as the U.S. National Grid, a federal standard (FGDC-STD-011-2001) that FEMA chose in a May 28, 2009 memo to "Establish a standard for FEMA operational maps". The Hindustan quad prints its "U.S. National Grid 100,000-m Square ID" as EJ, and the USGS says the grid on every US Topo since 2009 is "implemented in conformance with the U.S. National Grid standard."
+
+**One more system, later.** The section-township-range descriptions of the federal land survey, the grid under many Indiana roads, are a different job, describing land rather than finding your way, and belong to the surveying courses later in this series.
+
+:::reveal How big is the square named by a six-digit grid reference? ||| 100 meters on a side. Four digits name 1,000 m; eight name 10 m.
+
+:::reveal Why is a ten-digit reference copied off a phone usually more precise than the truth? ||| It claims 1 meter, but GPS.gov says a phone is typically good to about 4.9 m under open sky, and worse under trees.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 4-17, 4-18 and 4-21 (PDF pp. 39, 40 and 43), paragraphs 4-5a, 4-5b and 4-5e; printed p. 4-23 (PDF p. 45), paragraph 4-6e.
+- ${NWCG_475} Locator: p. 69, "Universal Transverse Mercator (UTM)"; p. 71, the table of abbreviated coordinates; p. 77, "Military Grid Reference System (MGRS)".
+- ${GPS_ACCURACY} Locator: "How accurate is GPS?", the smartphone sentence.
+- ${FGDC_USNG} Locator: the FEMA memorandum of May 28, 2009, and the standard's number.
+- ${USGS_UTM_GRID} Locator: "US Topo maps (2010-present)".
+- ${USTOPO_HINDUSTAN} Locator: lower margin, the U.S. National Grid box.`,
     },
   ],
 };
