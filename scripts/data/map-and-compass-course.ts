@@ -1120,5 +1120,54 @@ The other three quads in lesson 3 work the same way. Indianapolis East: 4°49' +
 - ${NCEI_WMM_ACC} Locator: opening paragraph; "Blackout Zone (BoZ)".
 - ${USTOPO_HINDUSTAN} Locator: the declination diagram. Also ${USTOPO_INDY_EAST}; ${USTOPO_BELMONT}; ${USTOPO_ELKINSVILLE}, each at its declination diagram.`,
     },
+    {
+      slug: "correcting-for-declination",
+      title: "17 · Correcting for declination without a sign error",
+      section: "4 · The compass",
+      recallContent: [
+        {
+          prompt: "On the Hindustan quad, what is the grid-magnetic angle, and why is it a sum?",
+          answer: "4°49': magnetic north is 4°28' west of true north and grid north 0°21' east, so the two non-overlapping angles add.",
+        },
+        {
+          prompt: "How does NCEI define magnetic declination and its sign?",
+          answer: "\"the angle between magnetic north and true north\", positive when magnetic north is east of true north and negative when it is west.",
+        },
+      ],
+      body: `${P("BAM sets the declination on his baseplate compass for the quad he films on, shows the dial before and after, then converts the same bearing by arithmetic on paper and shows that both give one answer")}
+
+${QR("a search-and-rescue member or a wilderness or land-navigation instructor, to check the direction rules, the worked examples and the check at the end, because a sign error here sends a walker the wrong way")}
+
+**Why bother.** A map is drawn to true north and a compass needle follows magnetic north, so a bearing carried from one to the other is wrong by the declination unless you correct it. The Army manual: azimuths "will be in error by the size of the declination angle if not adjusted for it." The workbook puts a number on it: "1 degree off can result in 920 feet off course in 10 miles." Check the arithmetic: ten miles is 52,800 feet, and the sideways error for one degree is 52,800 × tan(1°), about 52,800 × 0.01746, which is about **922 feet**.
+
+**Way 1: set it on the compass.** The workbook's advice: "It is generally easier to adjust the compass for declination, rather than the map. When the compass is adjusted then geographic north is the reference point for both the compass and the map." You set the declination once, by the screw or ring your compass has (follow its own instructions), and after that every bearing you read is a true bearing, ready for the map. In the workbook's words, bearings from an unadjusted compass "are called 'magnetic bearings'", and from an adjusted one, "'true bearings.'"
+
+**Way 2: do the arithmetic.** The USGS fact sheet gives the rule for turning a true bearing measured on the map into a magnetic bearing to walk: "If the MN arrow on the map magnetic declination diagram is to the right of the true north line, subtract the MN value. If the arrow is to the left of the line, add the value." On every quad in lesson 3, MN is to the left. So, in Indiana, **map to compass: add**.
+- On the Hindustan quad, using the printed 4°28' (call it 4.5°): a true bearing of 60° becomes 60 + 4.5 = **64.5° magnetic**.
+
+Going the other way, compass to map, you undo it: **compass to map: subtract**.
+- A magnetic bearing of 210° becomes 210 - 4.5 = **205.5° true**.
+
+**The same rule, written as an equation.** NCEI writes it as one formula: "You can compute the true bearing from a magnetic bearing by adding the magnetic declination to the magnetic bearing," with the convention "that degrees west are negative". For Hindustan, declination d = -4.5°, so true = magnetic + d. Check the first example: 64.5 + (-4.5) = 60. Check the second: 210 + (-4.5) = 205.5. Both rules agree, which is the point of checking.
+
+**Grid lines instead of true north.** If you measure bearings on the map against the black UTM grid lines rather than the map's edge, the angle to correct for is the grid-magnetic angle (lesson 16), 4°49' on Hindustan, not 4°28'. The difference is only 0°21' there, but the manual's rule is to sketch the diagram and know which north you measured from.
+
+**Past 360, below 0.** "There are no negative azimuths on the azimuth circle." A true bearing of 358° plus 4.5° is 362.5°, which is **2.5°**. A magnetic bearing of 2° minus 4.5° is -2.5°, which is **357.5°**.
+
+**Use today's number.** The printed value is for 2019; lesson 16 estimates about 4°47' west for 2026. Using 4°28' instead of 4°47' leaves 19' of error. Over ten miles that is about 52,800 × tan(0.32°), roughly **290 feet**. Get the current value from NCEI before a long walk.
+
+**The check that catches sign errors.** The manual: "When converting azimuths, exercise extreme care when adding and subtracting the G-M angle. A simple mistake of 1° could be significant in the field." Before you walk, do the conversion both ways (rule and equation) and make sure they agree, and ask: in Indiana, should the compass number be bigger than the map number? Yes, by the declination.
+
+:::reveal In Indiana, does a true bearing from the map get bigger or smaller when you turn it into a magnetic bearing? ||| Bigger: magnetic north is to the left (west) on the diagram, so you add the declination.
+
+:::reveal About how far off course is one degree of error over ten miles? ||| About 920 feet (the workbook); 52,800 × tan(1°) is about 922 feet.
+
+## Sources
+- ${NWCG_475} Locator: pp. 85 and 86, "Adjusting a Compass"; p. 88, "Taking Bearings (Direct and Back)"; p. 111, the note that the chapter adjusts the compass, not the map.
+- ${USGS_FS} Locator: p. 2, "Taking a compass bearing from a map", step 3.
+- ${NCEI_DECL} Locator: "How do I correct my compass to the true bearing?"
+- ${FM_2001} Locator: printed pp. 6-9 and 6-10 (PDF pp. 72 and 73), paragraphs 6-6b, 6-6d and 6-6e; printed p. 6-14 (PDF p. 77), the note in paragraph 6-6.
+- ${USTOPO_HINDUSTAN} Locator: the declination diagram.`,
+    },
   ],
 };
