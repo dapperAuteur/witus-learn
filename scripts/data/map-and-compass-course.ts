@@ -1874,7 +1874,7 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 
 **What to watch for in the footage.** The documents name where routes go wrong, and the log is how you catch each one:
 - **Distance.** "Determining distance is the most common source of error". A count that runs long on the uphill legs is the slope and the ground at work, not a mistake to hide.
-- **Direction.** A declination applied with the wrong sign, or not at all, puts a 450-meter leg about 70 meters off line at 9°, about 450 × tan(9°). The check is the both-ways conversion in lesson 17.
+- **Direction.** Leaving out Indiana's declination of about 4.5° puts a 450-meter leg about 35 meters off line (450 × tan 4.5°). Applying it with the wrong sign doubles the error to about 9°, and the miss to about 70 meters (450 × tan 9°). The check is the both-ways conversion in lesson 17.
 - **The map's age.** A trail or clearing that has moved since the map was made: "cultural features and vegetation" are "most likely to have changed since the map was last revised."
 - **Seeing what you expect.** The River Expedition course's definition fits a walk: "you are lost when your belief about your position stops matching reality, whether or not you have noticed." The log is a record of what you believed, written before you knew whether it was true.
 
@@ -1882,7 +1882,7 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 
 :::reveal According to the Army manual, when should a pace count begin anew? ||| Each time your position is confirmed on the map.
 
-:::reveal About how far off line does a 9° error put you after 450 meters? ||| About 70 meters (450 × tan 9°).
+:::reveal Applying Indiana's 4.5° declination with the wrong sign makes what error, and how far off is a 450-meter leg? ||| About 9° (twice 4.5°), which puts you about 70 meters off line (450 × tan 9°).
 
 ## Sources
 - ${FM_2001} Locator: printed p. 5-11 (PDF p. 60), paragraph 5-3; printed p. 11-13 (PDF p. 159), paragraph 11-5b(2); printed p. 11-16 (PDF p. 162), paragraph 11-6a(11).`,
