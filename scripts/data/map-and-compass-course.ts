@@ -73,9 +73,9 @@ import type { AuthoredCourse } from "./authored-course";
 //    CCSS texts have not been compared with California's modified publication.
 // LINKS TO PRIVATE COURSES: none. The neuromatch climate-tools course (private) is not cited.
 //
-// STANDARDS (src/lib/standards/): CCSS 4.MD.C.6 (partial), 4.MD.C.7, 5.G.A.2, 7.G.A.1 (partial) and
-// HSN-Q.A.3 through the shared Common Core math file; Indiana 5.CA.11 and 7.GM.1 (partial) through a
-// new Indiana mathematics framework. NGSS 4-ESS2-2 is NOT claimed: its text has not been confirmed for
+// STANDARDS (src/lib/standards/): CCSS 4.MD.C.6 (partial), 4.MD.C.7, 5.G.A.2 (partial), 7.G.A.1
+// (partial) and HSN-Q.A.3 through the shared Common Core math file; Indiana 5.CA.11 (partial) and
+// 7.GM.1 (partial) through new Indiana grade 5 and grade 7 mathematics frameworks. NGSS 4-ESS2-2 is NOT claimed: its text has not been confirmed for
 // every adopting state. See the claims for which lessons carry each.
 //
 // House style, matching stage-and-broadcast-rigging-course.ts: `section` on every lesson; flush-left
