@@ -56,6 +56,8 @@ import type { AuthoredCourse } from "./authored-course";
 //    and 1804 in another; the course states neither.
 //  - L11: how Indiana's civil townships relate to survey townships; the course says it does not
 //    establish this.
+//  - L11: what the "old survey grid" is in Clark and Knox counties (Starkey names it, does not
+//    identify it); the course leaves it open.
 //  - L10 links back to TOOLS-03 lesson 9 for the NCEI declination check (filed there).
 //
 // DISAGREEMENTS TAUGHT, NOT RESOLVED: Freeman's survey of the Vincennes Tract is "1803" in White

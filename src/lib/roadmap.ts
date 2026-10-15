@@ -48,6 +48,21 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   rules forbid). From federal manuals (TM 11-401-2, DI0370), Fuchs (1929), Luckiesh, NIST, CPSC and OSHA.
   Checked claim by claim (78 fixes) and question by question (56). Lessons needing a qualified reviewer
   (electrical, fire) or a practitioner are marked; seven research checks filed. Held for a named reviewer.
+- 🔧 **Surveying and Reading a Land Description, TOOLS-03 and TOOLS-04** (\`feat/course-surveying\`, no
+  migration; after merge run \`pnpm seed:courses:prod\`). BAM approved the surveying brief on 2026-10-14 and split
+  it in two. **Surveying: How Land Gets Measured** (Science & Math, Tools That Think 03): five sections, 17
+  lessons, 446 questions: what a survey is and what to look for in each tool, pacing and Gunter's chain,
+  bearings, declination and local attraction (and why the Manual bans the needle compass), differential
+  leveling and bench marks, and area from chains, coordinates and the planimeter. From the 2009 Manual, White's
+  BLM history, Breed and Hosmer (1912) and Gillespie (1883). **Reading a Land Description: The Grid, the Deed
+  and Indiana** (Civics, with Science & Math and Money & Property, Tools That Think 04): four sections, 13
+  lessons, 360 questions: the 1785 Ordinance read as a primary source, townships and aliquot parts, why the
+  original corners control, a 1775 Piankeshaw deed bounded in leagues, reading a deed, a description checklist,
+  and Indiana's survey, roads, records and county surveyors. Public and free, each held: for a licensed land
+  surveyor on the QR lessons, BAM's demonstrations (TOOLS-03) and filmed county surveyor visit (TOOLS-04), and
+  a Native reviewer on TOOLS-04's treaty-cession lessons 3, 7 and 10. Standards: HSN-Q.A.3; Indiana USH.10.2
+  and Grade 4 4.H.4 (partial). Five research checks filed. Sources linked, nothing uploaded yet; TOOLS-01 and
+  TOOLS-02 are in other branches.
 - 🔧 **Sound Craft, CREW-02** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Seven
   sections, 26 lessons, 583 questions: listening and the decibel, protecting your hearing (OSHA and NIOSH),
   field recording in nature (the Park Service protocol), recording in a theater and on a set, sounds made by
