@@ -1977,5 +1977,45 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 - ${HNF_RULES} Locator: the day-use hours.
 - ${MMSF_PAGE} Locator: "Camping", backcountry paragraph. Linked only.`,
     },
+    {
+      slug: "difficult-terrain",
+      title: "31 · Difficult terrain",
+      section: "6 · Planning and walking a route",
+      recallContent: [
+        {
+          prompt: "Using the click method on a lensatic, how do you set 330°?",
+          answer: "360 - 330 = 30, and 30 ÷ 3 = 10 clicks clockwise from the index line.",
+        },
+        {
+          prompt: "What does the Army manual say changes about your pace at night?",
+          answer: "\"Smaller steps are taken during night navigation, so remember, the pace count is different.\" It recommends a night count from a 100-meter course.",
+        },
+      ],
+      body: `${QR("a search-and-rescue member or a wilderness or land-navigation instructor, to check what this lesson carries over from the Army manual's notes and what it says about steep wooded ground, wet bottoms and snow in Indiana")}
+
+**Hints, not rules.** The Army manual's chapter on deserts, mountains, jungles, arctic ground and cities begins with a disclaimer worth copying: "The following information is not doctrine." Its refrain through every environment is that "the four steps and two techniques for navigation presented earlier remain valid": know where you are, plan, stay on the route, recognize the goal, by dead reckoning and terrain association. What changes is which of the two techniques the ground lets you use.
+
+**Desert: distance lies.** In clear desert air, visibility "often contribute[s] to gross underestimations of ranges. Errors of up to 200 or 300 percent are not uncommon." Distant landmarks give "a false sense of security", and "It is not uncommon to develop errors of several kilometers when casually estimating a position in this manner." In dunes with few features, "you must proceed by dead reckoning."
+
+**Mountains: read the slope.** "Since mountain maps often use large contour intevals" (the manual's spelling), small features vanish from the map. One technique the manual offers is the aspect of slope: "take a compass reading along an imaginary line that runs straight down the slope. It should cut through each of the contour lines at about a 90° angle." Compare that bearing with the map and "you will be able to keep track of your location ... even when visibility is poor."
+
+**Forest and jungle: dead reckoning, and a pace table.** In thick growth, "very little terrain association can be accomplished because of the heavy foliage", so "The navigator must rely heavily upon his compass and the dead reckoning technique". The manual's best tool for it is a personal pace table: "your average pace count per 100 meters for each of the types of terrain through which you are likely to navigate." It also warns that vegetation is what maps get wrong: "In temperate climates, it is the areas of vegetation that are most likely to be altered and incorrectly portrayed on a map." For swamps, "The usual technique used in swamp navigation is dead reckoning."
+
+**Snow and bare trees.** "There are no special techniques for navigating in arctic terrain." But with leaves off, "the absence of foliage makes movement by terrain association easier", while "in relatively flat, open areas covered with snow (especially in bright sunlight), the resulting lack of contrast may interfere with your being able to read the land." On a clear night, "Moonlight and starlight on a clear night reflect off the snow", which helps.
+
+**Towns.** In built-up places "it is man-made features, such as roads, railroads, bridges, and buildings that become important", and because towns change fast, the topographic map "is likely to be outdated." A current street map helps.
+
+**What this means near Indianapolis.** No desert, no mountains, no jungle, but each lesson has an Indiana form. Morgan-Monroe describes its own ground as "many steep ridges and valleys": that is mountain advice at a smaller size, so use the aspect of slope and expect your pace to change sharply between ridge and hollow. Summer woods are the manual's foliage problem: plan more dead reckoning from May to October and more terrain association once the leaves fall. Wet bottoms along creeks are swamp navigation in miniature. And keep a personal pace table for trail, open woods, brush and slope, filled in on your calibration walks (lesson 23). The Deam Wilderness (lesson 3) is where the rules allow you to practice all of it off trail.
+
+**Avoid what you cannot handle.** The best route through difficult ground is often around it. The manual's route advice from lesson 26 holds here too: follow the shape of the land rather than fighting it.
+
+:::reveal According to the Army manual, how large can range-estimate errors be in clear desert air? ||| "Errors of up to 200 or 300 percent are not uncommon."
+
+:::reveal What is a personal pace table? ||| Your average pace count per 100 meters for each kind of ground you are likely to cross.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 13-1 to 13-3 (PDF pp. 173 to 175), paragraph 13-1; printed p. 13-5 (PDF p. 177), paragraph 13-2; printed pp. 13-6 to 13-8 (PDF pp. 178 to 180), paragraph 13-3; printed pp. 13-9 and 13-10 (PDF pp. 181 and 182), paragraphs 13-4 and 13-5.
+- ${MMSF_PAGE} Locator: the property description. Linked only.`,
+    },
   ],
 };
