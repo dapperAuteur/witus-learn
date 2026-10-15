@@ -951,7 +951,7 @@ So report six digits for "here is where we are", eight when the map, the tool an
 
 **The baseplate compass, part by part.** The workbook names these (p. 82):
 - **Magnetic needle.** It "typically has a red end that points to magnetic north, as long as the compass is being used properly and there is no local magnetic attraction."
-- **Housing with cardinal points and degrees.** "a revolving dial that shows the cardinal points (at least north, east, south, and west) and degrees (0 – 360)", turned "to line up the compass needle with the orienting arrow when taking a bearing."
+- **Housing with cardinal points and degrees.** a revolving dial showing "the cardinal points (at least north, east, south, and west)" and degrees from 0 to 360, turned "to line up the compass needle with the orienting arrow when taking a bearing."
 - **Orienting arrow.** The outlined arrow inside the housing, "used to align the magnetic needle when taking a bearing. It is also what is adjusted to set the compass for magnetic declination."
 - **Orienting lines.** They run parallel to the orienting arrow and line the dial up with grid lines on a map. "When the declination is set on a compass with an adjustment screw, the orienting lines no longer parallel the orienting arrow."
 - **Index line.** On the front of the plate, "where you read the indicated bearing."
