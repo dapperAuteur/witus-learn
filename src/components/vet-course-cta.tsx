@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import type { LaunchTodo } from "@/lib/launch-todos";
+import { LaunchTodoWarning, hasOpenTodos } from "@/components/launch-todo-warning";
 
 // "This course still needs vetting" — the call to action, shown wherever the platform OWNER meets
 // an unvetted course (BAM 2026-08-18: he was finding unvetted courses with no way to act on them
@@ -17,15 +19,20 @@ export function VetCourseCta({
   courseId,
   courseTitle,
   variant = "page",
+  launchTodos,
 }: {
   courseId: string;
   courseTitle?: string;
   variant?: "page" | "inline";
+  /** When given, vetting (which can make the course live) first shows its open launch to-dos. */
+  launchTodos?: LaunchTodo[];
 }) {
   const router = useRouter();
   const [state, setState] = useState<"idle" | "saving" | "done" | "error">("idle");
 
+  const [warning, setWarning] = useState(false);
   async function markVetted() {
+    setWarning(false);
     setState("saving");
     const r = await fetch(`/api/courses/${courseId}`, {
       method: "PATCH",
@@ -43,7 +50,7 @@ export function VetCourseCta({
   const button = (
     <button
       type="button"
-      onClick={markVetted}
+      onClick={() => (hasOpenTodos(launchTodos) ? setWarning(true) : void markVetted())}
       disabled={state === "saving" || state === "done"}
       className="inline-flex min-h-11 items-center justify-center rounded-md px-3 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 pointer-coarse:min-h-12"
       style={{ backgroundColor: "var(--accent)" }}
@@ -63,10 +70,23 @@ export function VetCourseCta({
       </span>
     ) : null;
 
+  const warningPanel =
+    warning && launchTodos ? (
+      <div className="mt-3 w-full">
+        <LaunchTodoWarning
+          todos={launchTodos}
+          action="mark this course vetted"
+          confirmLabel="Go ahead and mark it vetted"
+          busy={state === "saving"}
+          onConfirm={() => void markVetted()}
+          onCancel={() => setWarning(false)}
+        />
+      </div>
+    ) : null;
   if (variant === "inline") {
     return (
       <div className="mt-3 flex flex-wrap items-center gap-3">
-        {button}
+        {warningPanel ?? button}
         {status}
       </div>
     );
@@ -86,7 +106,7 @@ export function VetCourseCta({
         Vetting is your confirmation that you reviewed it against its sources.
       </p>
       <div className="mt-3 flex flex-wrap items-center gap-3">
-        {button}
+        {warningPanel ?? button}
         <Link
           href="/teach?status=unvetted"
           className="inline-flex min-h-11 items-center text-sm underline pointer-coarse:min-h-12"

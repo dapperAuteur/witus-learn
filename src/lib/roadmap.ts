@@ -5,6 +5,19 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Launch to-do list and release follow-ups** (\`feat/release-follow-ups\`, migration
+  \`0069_release_followups\`; after merge run \`pnpm db:migrate:prod\`). BAM, 2026-10-15: warn about the blog
+  post (naming the blog) and any follow-up work when a course is published, and give teachers the warning
+  when they SCHEDULE it, so they can plan for the real date. Every course's \`/teach\` page carries a
+  Launch to-do list for all its editors while it is not live: committed follow-ups Claude writes in
+  \`src/lib/release-followups.ts\` (the four Tools That Think posts and their release re-checks seed it)
+  plus items any editor adds (task or blog post with the blog's name; due now, before it goes live, or
+  once live). Scheduling, opening the visibility, publishing, clearing the hold, releasing the review hold
+  and vetting each show the open items as a warning first (never a gate). Owner-only
+  \`/admin/follow-ups\` and an Admin-home tile list committed follow-ups by due state and courses being
+  launched with open items; a blog post's feed listing is checked so a published post can be closed with
+  its URL. Closing anything requires saying what was done. \`pnpm follow-ups:list\` reads it all back. No
+  inbox: a chore on a course, no recipient, no notification.
 - 🔧 **Reviewer sign-off** (\`feat/reviewer-signoff\`, migration \`0067_serious_karen_page\`; after merge run
   \`pnpm db:migrate:prod\` then \`pnpm seed:courses:prod\`). Plans/93 section 1. The "Before release" lines in
   the four marked courses (rigging, sound, light, raising animals for yarn: 81 lines in 71 lessons, 83

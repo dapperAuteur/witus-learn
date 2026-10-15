@@ -324,6 +324,18 @@ verified source (`course_sources` / `course_claims`), APA 7 in-line + a `## Sour
 fabricated characters, no "AI tells" — the sources/claims/verify UI is a visible trust signal. (The
 general citation, docs-sync, and authoritative-values rules are in the managed block below.)
 
+## Release follow-ups rule: a blog post about a course names its gate in the app
+
+BAM, 2026-10-15: warn about the blog post (naming the blog) and any follow-up work when a course goes
+live, and warn teachers when they schedule it. **Whenever you draft a blog post about a course, add a
+committed follow-up to `src/lib/release-followups.ts` in the same session** (`kind: "blog-post"`, the
+blog, slug, title and ledger number, and `when`: `seeded` if the post may go out while the course is
+held, `live` if it waits for release), plus a `kind: "task"` follow-up for any step that must wait for the
+release (re-check a task's list, update a post that calls the course "Coming soon"). It shows on the
+course's Launch to-do list, in the warning on scheduling, publishing, releasing and vetting, and on
+`/admin/follow-ups`; `pnpm follow-ups:list` reads back what BAM closed. Delete a committed follow-up once
+it is done for good. The tests fail on a follow-up naming a course no seed script registers.
+
 ## No-inbox rule: never build an inbox or anything inbox-like
 
 Decided by BAM on 2026-09-20. This app does not carry conversations between people, and nothing may be

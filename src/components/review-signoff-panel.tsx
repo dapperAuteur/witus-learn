@@ -2,6 +2,7 @@ import Link from "next/link";
 import { KIND_TITLE, needLabel, RESET_RULE, STATE_LABEL, type ReleaseReadiness } from "@/lib/lesson-review";
 import type { LessonReviewSummary } from "@/lib/lesson-review-summary";
 import { CorrectionAppliedButton, ReleaseReviewHoldButton } from "@/components/review-actions";
+import type { LaunchTodo } from "@/lib/launch-todos";
 
 const fmt = (d: Date | string) =>
   new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
@@ -35,6 +36,7 @@ export function ReviewSignoffPanel({
   readiness,
   isOwner,
   canRelease,
+  launchTodos,
   holdReason,
 }: {
   courseId: string;
@@ -45,6 +47,8 @@ export function ReviewSignoffPanel({
   /** The platform owner or this school's admin: may release the review hold (BAM, 2026-10-14). */
   canRelease: boolean;
   holdReason: string | null;
+  /** The course's launch to-do list, shown as a warning before the hold is released. */
+  launchTodos?: LaunchTodo[];
 }) {
   return (
     <section aria-labelledby="review-signoff-heading" className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
@@ -66,7 +70,7 @@ export function ReviewSignoffPanel({
 
       {canRelease && holdReason ? (
         readiness.ready ? (
-          <ReleaseReviewHoldButton courseId={courseId} />
+          <ReleaseReviewHoldButton courseId={courseId} launchTodos={launchTodos} />
         ) : (
           <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
             The hold can be released here once every qualified-reviewer and practitioner need is cleared and no decision is open.

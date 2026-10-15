@@ -484,6 +484,13 @@
       "when": 1791990055861,
       "tag": "0068_jittery_changeling",
       "breakpoints": true
+    },
+    {
+      "idx": 69,
+      "version": "7",
+      "when": 1792091149459,
+      "tag": "0069_release_followups",
+      "breakpoints": true
     }
   ]
 }

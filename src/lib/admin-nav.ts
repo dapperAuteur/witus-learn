@@ -67,6 +67,7 @@ export const ADMIN_NAV: AdminNavItem[] = [
   },
   { href: "/admin/documentarian", title: "Documentarian", desc: "Course-family build tracker, check off + leave notes.", icon: "🎬", ownerOnly: true },
   { href: "/admin/future", title: "Future classes & features", desc: "Proposed courses + features to review, leave notes Claude reads.", icon: "🔮", ownerOnly: true },
+  { href: "/admin/follow-ups", title: "Release follow-ups", desc: "The blog post and the tasks that fall due when a course reaches the catalog or goes live.", icon: "📣", ownerOnly: true },
   { href: "/admin/research", title: "Source checks", desc: "Facts needing a primary source Claude cannot reach; answer one and it fixes the lesson.", icon: "🔎", ownerOnly: true },
   { href: "/admin/downloads", title: "Downloads", desc: "Branded PDFs you can hand to someone outside the platform.", icon: "📄", ownerOnly: true },
   { href: "/admin/ebooks", title: "Ebooks", desc: "Marketing ebooks, private until you approve them; then a free download on their landing page.", icon: "📘", ownerOnly: true },
