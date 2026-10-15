@@ -181,7 +181,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What is the single most useful distinction in the course?",
             options: [
-              "How you gathered material is judged separately from what you published",
+              "How you gathered it is judged apart from what you published",
               "Truth is a defense to every claim a reporter faces",
               "Federal law preempts state law wherever both apply",
               "Publication protection extends to everything preceding it",
@@ -220,7 +220,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What are the elements of a defamation claim, as most states frame them?",
             options: [
-              "A false statement of fact about an identifiable person, published, harming reputation, with fault",
+              "False fact, identifiable person, publication, reputational harm, and fault",
               "An offensive statement, widely distributed, causing measurable financial loss",
               "A published accusation the subject formally denies within a statutory period",
               "Any statement a subject can show they would prefer not to have been published",
@@ -363,7 +363,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What did Curtis Publishing Co. v. Butts do?",
             options: [
-              "Extended a comparable standard to public figures who are not officials",
+              "Extended a comparable standard to non-official public figures",
               "Established the negligence standard for private figures",
               "Created the fair report privilege as a constitutional matter",
               "Rejected a reporter's privilege before grand juries",
@@ -415,7 +415,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What did Hustler Magazine v. Falwell decide?",
             options: [
-              "A public figure could not recover for distress over a parody stating no actual facts",
+              "No public-figure recovery for distress over a parody stating no facts",
               "That parody is never protected where the subject objects",
               "That emotional distress claims replace defamation for public figures",
               "That advertisements are outside First Amendment protection",
@@ -428,7 +428,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What is the working translation of the fault rules?",
             options: [
-              "Assume you will have to show you were careful, whoever the plaintiff turns out to be",
+              "Assume you must show you were careful, whatever the plaintiff's category",
               "Assume actual malice applies whenever the subject holds any office",
               "Assume negligence applies unless the subject is nationally famous",
               "Assume no standard applies until a court has categorized the plaintiff",
@@ -441,7 +441,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What did the Sullivan advertisement contain?",
             options: [
-              "Factual errors, about the civil rights movement in the South",
+              "Factual errors about the civil rights movement",
               "An unauthorized endorsement by a public official",
               "A parody of a named public figure",
               "An accusation against a private business",
@@ -532,7 +532,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What is a constitutional floor?",
             options: [
-              "The minimum protection federal decisions require of every state",
+              "The minimum protection federal decisions require",
               "The maximum protection a state may grant a publisher",
               "The threshold below which a claim cannot be filed",
               "The damages cap a federal court will apply",
@@ -571,7 +571,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What is the relationship between the verification course and this one?",
             options: [
-              "A file showing the assertion is accurate is the strongest legal position",
+              "A file proving accuracy is the strongest legal position",
               "Verification replaces the need for legal review",
               "Legal review replaces the need for verification",
               "They address different stories and do not overlap",
@@ -597,7 +597,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What is a public official, for actual-malice purposes?",
             options: [
-              "A government officeholder, whose claim over official conduct requires actual malice",
+              "A government officeholder suing over official conduct",
               "Any employee of a public body regardless of role",
               "Any person who has held elected office at any time",
               "Any person whose salary is paid from public funds",
@@ -675,7 +675,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What is the closing claim of the first lesson about how cases are cited here?",
             options: [
-              "Named with court and year so you can read them yourself",
+              "Named with court and year, so you can read them",
               "Summarized so you do not need to read them",
               "Cited only where a holding is undisputed",
               "Paraphrased from a standard media law text",
@@ -975,7 +975,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What lives inside the intrusion tort?",
             options: [
-              "Hidden recording, entering private space, and persistent surveillance",
+              "Hidden recording, entry to private space, surveillance",
               "Publishing medical information about a private person",
               "Using a photograph in a promotional campaign",
               "Creating a false impression through selective quotation",
@@ -1014,7 +1014,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What limits the public disclosure tort in practice?",
             options: [
-              "Legitimate public concern, which courts have read broadly for news",
+              "Legitimate public concern, read broadly for news",
               "A requirement that the plaintiff be a private figure",
               "A one-year statute of limitations in most states",
               "A requirement of proven financial loss",
@@ -1079,7 +1079,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What happened in the Food Lion litigation?",
             options: [
-              "Reporters obtained jobs with false applications and used hidden cameras",
+              "False job applications, then hidden-camera recording",
               "A newspaper published a confidential source's name",
               "A broadcaster aired an illegally intercepted call",
               "A reporter refused to testify before a grand jury",
@@ -1105,7 +1105,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What is the course's conclusion about undercover work?",
             options: [
-              "It is a decision with a legal cost that has to be priced in advance",
+              "A decision whose legal cost must be priced in advance",
               "It is forbidden by the professional code",
               "It is protected wherever the resulting story is accurate",
               "It is safe where the reporter does not sign anything false",
@@ -1144,7 +1144,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What does the federal wiretap statute generally permit?",
             options: [
-              "A party to a communication to record it, absent a criminal or tortious purpose",
+              "A party to record it, absent criminal or tortious purpose",
               "Any person to record any communication for journalistic purposes",
               "Recording only with the written consent of all parties",
               "Recording only where a court has authorized it",
@@ -1196,7 +1196,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What habit makes the recording question mostly disappear?",
             options: [
-              "Say you are recording, say it is for accuracy, and record the agreement",
+              "Announce it, say why, and record the agreement",
               "Record everything and decide later what to use",
               "Take notes instead of recording in unfamiliar states",
               "Ask the source to send a written statement afterward",
@@ -1222,14 +1222,14 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What have courts generally recognized about recording officials in public?",
             options: [
-              "A right to record, subject to reasonable time, place, and manner limits",
+              "A right to record, within reasonable limits",
               "A prohibition absent the official's consent",
               "A right that applies only to accredited journalists",
               "A rule identical in every federal circuit",
             ],
             correctIndex: 0,
             explanation:
-              "The details vary by circuit, and knowing your circuit's position before you need it is worth an hour.",
+              "The limits are reasonable time, place, and manner restrictions. The details vary by circuit, and knowing your circuit's position before you need it is worth an hour.",
             sourceLessonSlug: "recording-consent",
           },
           {
@@ -1248,7 +1248,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What is intrusion upon seclusion, precisely?",
             options: [
-              "Intruding on private affairs in a way highly offensive to a reasonable person",
+              "Intruding on private affairs in a highly offensive way",
               "Publishing private information of no public concern",
               "Creating a highly offensive false impression",
               "Using a name or likeness for commercial advantage",
@@ -1456,7 +1456,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What does the course say about the phrase generally applicable law?",
             options: [
-              "It means a rule about conduct that applies to everybody, including the press",
+              "A conduct rule that applies to everybody, press included",
               "It means a statute that names the press specifically",
               "It means a rule that has been upheld in every circuit",
               "It means a rule with no First Amendment exception at all",
@@ -1831,7 +1831,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "Why does the course refuse to print the scope of Indiana's shield provision?",
             options: [
-              "The details are precisely what would matter and could not be verified",
+              "The details that matter could not be verified",
               "Because shield provisions are confidential by design",
               "Because Indiana's provision has been repealed",
               "Because federal law governs the question instead",
@@ -1883,7 +1883,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What did Zurcher v. Stanford Daily hold?",
             options: [
-              "The Fourth Amendment did not bar a search warrant for a newspaper office not suspected of crime",
+              "A warrant could reach a newsroom not suspected of crime",
               "That newsroom searches are per se unconstitutional",
               "That reporters may refuse to produce notes under subpoena",
               "That a state shield law preempts a federal warrant",
@@ -1896,7 +1896,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What does the Privacy Protection Act of 1980 restrict?",
             options: [
-              "Government searches and seizures of work product and documentary materials",
+              "Government searches of work product and documents",
               "Subpoenas issued to journalists in civil litigation",
               "Disclosure of a confidential source's identity",
               "Publication of material obtained from a government employee",
@@ -1935,7 +1935,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What is the rule about retention and deletion?",
             options: [
-              "Decide the practice when nothing is happening, and stop deleting when something is",
+              "Set it in advance; stop deleting once a dispute is foreseeable",
               "Delete routinely to minimize what can be demanded",
               "Retain everything indefinitely regardless of circumstances",
               "Follow whatever the source requests about their material",
@@ -1961,7 +1961,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What do encryption and secure channels not do?",
             options: [
-              "Stop a subpoena to you, or help if the other end keeps everything",
+              "Stop a subpoena, or help if the other end keeps it all",
               "Protect material in transit against interception",
               "Protect material at rest against some threats",
               "Reduce the number of copies of a message in existence",
@@ -2052,7 +2052,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What is the doctrine of prior restraint?",
             options: [
-              "Stopping publication in advance, which faces an extremely heavy presumption against it",
+              "Stopping publication in advance, against a heavy presumption",
               "Punishing publication after the fact under a general statute",
               "Requiring a publisher to seek comment before publishing",
               "Restricting access to a proceeding rather than to a record",
@@ -2091,7 +2091,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "Why is this the paradigm case for calling a lawyer?",
             options: [
-              "General principles lose to specific facts here more than anywhere",
+              "General principles lose to specific facts most here",
               "Because the material is presumptively unlawful to hold",
               "Because prior restraint is likely to be sought",
               "Because the source will need representation too",
@@ -2221,7 +2221,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What does the course say about how lower courts have read Branzburg?",
             options: [
-              "In a range of ways, with some recognizing a qualified privilege",
+              "Variously, with some finding a qualified privilege",
               "Uniformly, as barring any privilege in any context",
               "As having been overruled by later decisions",
               "As applying only to grand juries and to nothing else",
@@ -2234,7 +2234,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What kind of showing sometimes decides whether a shield statute covers somebody?",
             options: [
-              "Whether they had a journalistic purpose when they gathered the material",
+              "A journalistic purpose at the time of gathering",
               "Whether they held press credentials at the time",
               "Whether they were paid for the resulting work",
               "Whether they published within the state",
@@ -2247,7 +2247,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What is the relationship between this lesson and the interviewing course's promise rule?",
             options: [
-              "This is the reason you promise what you will do rather than what will happen",
+              "It is why you promise what you will do, not what will happen",
               "This replaces the promise rule with a legal standard",
               "The promise rule applies only to minors and this to adults",
               "They address different kinds of source and do not overlap",
@@ -2416,7 +2416,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "Why does the course call the Bartnicki conditions the holding?",
             options: [
-              "Because changing any one of them puts you outside what the case decided",
+              "Change any one and you leave what it decided",
               "Because the Court described them as dicta",
               "Because they were adopted by statute afterward",
               "Because they apply only to broadcasters",
@@ -2480,7 +2480,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           },
           {
             prompt: "Which Indiana Code sections create the state's reporter's shield, and from when?",
-            options: ["34-46-4-1 and 34-46-4-2, dating to 1941", "34-46-3-1 and 34-46-3-2, enacted in the 1970s after Branzburg was decided", "5-14-3-9, the same chapter that governs access to public records in the state", "A rule of evidence rather than a statute, adopted by the Indiana Supreme Court"],
+            options: ["34-46-4-1 and 34-46-4-2, dating to 1941", "34-46-3-1 and 34-46-3-2, enacted in the 1970s after Branzburg was decided", "5-14-3-9, the records act", "A rule of evidence rather than a statute, adopted by the Indiana Supreme Court"],
             correctIndex: 0,
             explanation: "Section 1 names who is covered; section 2 states the privilege. The 1941 date is why the covered list reads the way it does.",
             sourceLessonSlug: "shield-and-privilege",
@@ -2543,35 +2543,35 @@ Three features of that, and each one matters more than the fact that a shield ex
           },
           {
             prompt: "On whose authority does the course currently state the shield's scope?",
-            options: ["The Reporters Committee, an expert secondary source", "The Indiana General Assembly's own published code text, read directly", "An Indiana Supreme Court opinion construing the covered-persons list", "The Indiana Public Access Counselor's handbook, which restates the chapter"],
+            options: ["The Reporters Committee, an expert secondary source", "The statute's text, read directly", "An Indiana Supreme Court opinion construing the covered-persons list", "The Indiana Public Access Counselor's handbook, which restates the chapter"],
             correctIndex: 0,
             explanation: "The lesson says so and keeps an open check, because iga.in.gov serves an application rather than a document to an automated reader.",
             sourceLessonSlug: "shield-and-privilege",
           },
           {
             prompt: "What does the phrase 'published or not published, broadcast or not broadcast' do in the statute?",
-            options: ["Extends the identity protection to unaired work", "Extends the protection to the underlying material once the story runs in any medium", "Limits the protection to reporters who actually published something in the matter", "Distinguishes the print privilege from the broadcast privilege, which have different scopes"],
+            options: ["Extends the identity protection to unaired work", "Extends the protection to the underlying material once the story runs in any medium", "Limits it to published work", "Distinguishes the print privilege from the broadcast privilege, which have different scopes"],
             correctIndex: 0,
             explanation: "Whether the story ever ran does not decide whether the source is protected. What is protected is still only the identity.",
             sourceLessonSlug: "shield-and-privilege",
           },
           {
             prompt: "Why does the 1941 enactment date matter to a working reporter today?",
-            options: ["The covered list predates how most journalism is now done", "Older statutes are read narrowly by courts as a general rule of construction", "A privilege that old is presumed superseded by later rules of evidence", "The date determines which appellate decisions are still good law under it"],
+            options: ["The covered list predates how most journalism is now done", "Older statutes are read narrowly by courts as a general rule of construction", "Old statutes are presumed superseded", "The date determines which appellate decisions are still good law under it"],
             correctIndex: 0,
             explanation: "The list describes employment relationships that were nearly universal in 1941 and are not now.",
             sourceLessonSlug: "shield-and-privilege",
           },
           {
             prompt: "A source asks you to promise their name will never come out. What can you honestly say if your coverage is uncertain?",
-            options: ["What you will do, and what you cannot control", "That the state shield is absolute, which is true as a general statement of the law", "That you will destroy your notes if a subpoena arrives, removing the risk entirely", "That you will publish nothing at all unless the protection is confirmed in advance"],
+            options: ["What you will do, and what you cannot control", "That the state shield is absolute, which is true as a general statement of the law", "That you will destroy your notes", "That you will publish nothing at all unless the protection is confirmed in advance"],
             correctIndex: 0,
             explanation: "And destroying material once a dispute is foreseeable is its own serious problem, which the lesson names separately.",
             sourceLessonSlug: "shield-and-privilege",
           },
           {
             prompt: "What is 28 C.F.R. 50.10 in relation to a state shield law?",
-            options: ["A Justice Department policy binding only that department", "A federal shield regulation that supplements weaker state statutes", "The federal rule that decides when a state privilege applies in federal court", "A reporting requirement imposed on newsrooms that receive federal subpoenas"],
+            options: ["A Justice Department policy binding only that department", "A federal shield regulation", "The federal rule that decides when a state privilege applies in federal court", "A reporting requirement imposed on newsrooms that receive federal subpoenas"],
             correctIndex: 0,
             explanation: "An internal policy, revised more than once, binding nobody outside the Department. It is not a privilege you hold.",
             sourceLessonSlug: "shield-and-privilege",
@@ -2585,7 +2585,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           },
           {
             prompt: "Before a subpoena arrives, what three things does the lesson say to have done?",
-            options: ["Know the lawyer, preserve material, tell an editor and lawyer at once", "Register with a press body, file a protective motion, and notify the source in writing", "Move notes off any device the outlet owns, encrypt them, and store them out of state", "Publish the story quickly, since an unpublished story attracts more legal risk"],
+            options: ["Know the lawyer, preserve material, tell an editor and lawyer at once", "Register with a press body, file a protective motion, and notify the source in writing", "Move notes off any device the outlet owns, encrypt them, and store them out of state", "Publish the story quickly"],
             correctIndex: 0,
             explanation: "Destroying anything once a dispute is foreseeable is a separate and serious problem, whatever the privilege says.",
             sourceLessonSlug: "shield-and-privilege",
@@ -2766,7 +2766,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What does the fair report privilege typically require?",
             options: [
-              "That the report be fair, accurate, and often attributed to the proceeding",
+              "That it be fair, accurate, and often attributed",
               "That the reporter attended the proceeding in person",
               "That the proceeding have concluded before publication",
               "That the subject be given an opportunity to respond",
@@ -2805,20 +2805,20 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What do anti-SLAPP statutes generally allow?",
             options: [
-              "Early dismissal, and sometimes fee recovery, for suits targeting public-issue speech",
+              "Early dismissal of suits targeting public-issue speech",
               "A publisher to countersue for the cost of defending",
               "A court to enjoin a plaintiff from filing further claims",
               "A defendant to move a case from state to federal court",
             ],
             correctIndex: 0,
             explanation:
-              "They vary enormously, several states have none, whether they apply in federal court is contested, and there is no general federal statute.",
+              "Some also allow fee recovery. They vary enormously, several states have none, whether they apply in federal court is contested, and there is no general federal statute.",
             sourceLessonSlug: "defenses-and-privileges",
           },
           {
             prompt: "What do retraction statutes typically do?",
             options: [
-              "Limit recoverable damages where a prompt correction is made in a specified form",
+              "Limit damages after a prompt correction in a set form",
               "Require an outlet to publish any correction a subject demands",
               "Bar a claim entirely once a correction is published",
               "Extend the deadline for filing a defamation action",
@@ -2857,7 +2857,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What is the legal position on publishing lawfully obtained truthful information about a matter of public significance?",
             options: [
-              "The state generally may not punish it absent an interest of the highest order",
+              "Generally not punishable absent a highest-order interest",
               "It may be punished wherever a victim is identified",
               "It may be enjoined where a court finds harm likely",
               "It is prohibited where a juvenile is involved",
@@ -2883,7 +2883,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What is the operative constraint on naming minors and victims, in practice?",
             options: [
-              "Editorial standards, which typically go beyond what the law requires",
+              "Editorial standards stricter than the law requires",
               "Federal statute, which prohibits it in most circumstances",
               "State law, which is uniform across jurisdictions",
               "Court order, which is required before any publication",
@@ -2922,7 +2922,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "How does the course treat immigration status and criminal history?",
             options: [
-              "Lawful to report, and a minimize-harm question rather than a legal one",
+              "Lawful to report; a minimize-harm question",
               "Prohibited from publication without consent",
               "Public records that require no additional consideration",
               "Subject to the same restrictions as health information",
@@ -2935,7 +2935,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What does the law generally not solve about a published name?",
             options: [
-              "Its durability, since removal mechanisms rarely reach news archives",
+              "Its durability, searchable for decades",
               "Its accuracy, which is the reporter's responsibility",
               "Its placement, which is an editorial decision",
               "Its attribution, which is a matter of style",
@@ -2948,7 +2948,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What is the one line to carry out of the minors lesson?",
             options: [
-              "Ask whether you are permitted and whether you are right, separately and in that order",
+              "Ask if permitted, then if right, separately",
               "Never name a minor under any circumstances",
               "Name only where the law expressly permits it",
               "Defer the decision to the outlet's legal review",
@@ -2974,7 +2974,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "Which is a pre-publication trigger for legal review?",
             options: [
-              "The story accuses a named person of a crime or professional misconduct",
+              "It accuses a named person of crime or professional misconduct",
               "The story relies on a records request that was answered late",
               "The story quotes an official who declined to be named",
               "The story concerns an institution that has complained before",
@@ -3000,7 +3000,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What should be ready for the lawyer conversation?",
             options: [
-              "The sentences at issue, the claim list, the sourcing chain, the reply correspondence, and dated notes",
+              "Sentences at issue, claim list, sourcing, replies, notes",
               "The full draft and every source's contact details",
               "The outlet's insurance policy and editorial standards",
               "A written summary of the reporter's own legal assessment",
@@ -3130,7 +3130,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What does a fair and accurate report of a filed complaint let you do?",
             options: [
-              "Report what the complaint alleges without adopting the allegations",
+              "Report the allegations without adopting them",
               "Assert the allegations as established facts",
               "Publish without seeking any response",
               "Ignore the fault standard entirely",
@@ -3169,7 +3169,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What does the course say is the strongest legal position available?",
             options: [
-              "A file showing the assertion is accurate and how you established it",
+              "A file proving accuracy and how you established it",
               "A signed release from every person named",
               "A legal opinion obtained before publication",
               "A prompt correction policy applied consistently",
@@ -3195,7 +3195,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "Why do newsroom standards on naming go beyond the law?",
             options: [
-              "It is a deliberate choice rather than a legal misunderstanding",
+              "A deliberate choice, not a legal misunderstanding",
               "Because the law is unclear in most states",
               "Because insurers require the additional restriction",
               "Because professional bodies impose them by rule",
@@ -3221,7 +3221,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What is a provider-side restriction?",
             options: [
-              "A rule binding who may release information rather than what a person may say",
+              "A limit on who may release, not on what a person says",
               "A limit on which reporters may attend a proceeding",
               "A restriction imposed by a court on publication",
               "A condition attached to a records release",
@@ -3234,7 +3234,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What should be written down about the second question in the minors lesson?",
             options: [
-              "The answer to whether you are right, as distinct from permitted",
+              "Whether you are right, not just permitted",
               "The legal basis for publishing the name",
               "The editor's approval of the identification decision",
               "The subject's response to being identified",
@@ -3247,14 +3247,14 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What is a litigation hold?",
             options: [
-              "A letter requiring preservation, which stops any routine deletion immediately",
+              "A letter requiring preservation",
               "A court order suspending publication",
               "An internal decision to delay a story",
               "A demand that a correction be published",
             ],
             correctIndex: 0,
             explanation:
-              "It is one of the arrivals that means calling a lawyer before doing anything else.",
+              "It stops any routine deletion immediately, and it is one of the arrivals that means calling a lawyer before doing anything else.",
             sourceLessonSlug: "call-the-lawyer",
           },
           {
@@ -3338,7 +3338,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "How does the course frame being permitted versus being right?",
             options: [
-              "Different questions with different answers, asked separately and in that order",
+              "Different questions, asked separately and in order",
               "The same question answered by different bodies of law",
               "A legal question followed by an editorial formality",
               "An editorial question that the law resolves",
@@ -3351,7 +3351,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What does the course say about removal or sealing mechanisms for published names?",
             options: [
-              "Most jurisdictions have none, and none reach news archives as a matter of course",
+              "Most places have none; none reach news archives routinely",
               "They are widely available and routinely granted",
               "They apply automatically once a person turns eighteen",
               "They are administered by the publishing outlet",
@@ -3636,7 +3636,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "Why does the course decline to print an Indiana recording citation?",
             options: [
-              "This pass could not read the current text against a primary source",
+              "This pass could not read the current Indiana text against a primary source",
               "Because Indiana's recording statute is not made available to the public online",
               "Because the federal wiretap statute governs the question in place of state law",
               "Because the consent rule varies between counties within the state of Indiana",
@@ -3870,7 +3870,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What is the operative constraint on naming, in practice?",
             options: [
-              "Editorial standards, which go beyond what the law requires",
+              "Editorial standards, which typically go beyond what the law requires",
               "Federal statute, which prohibits naming in the great majority of these cases",
               "State law, which is substantially uniform across American jurisdictions",
               "A court order, which must be obtained before publication in every instance",

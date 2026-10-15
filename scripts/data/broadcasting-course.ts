@@ -163,7 +163,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             options: [
               "The broadcast engineer, who keeps the signal alive through the show",
               "The graphics operator, who builds every score and lower-third on screen",
-              "The utility technician, the crew's general-support role",
+              "The utility technician, the crew's general-support role and classic way in",
               "The editor, who cuts the highlights",
             ],
             correctIndex: 2,
@@ -227,9 +227,9 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             prompt: "Which organization does the lesson name as the broadcast engineer's professional home?",
             options: [
               "The Society of Broadcast Engineers",
-              "The National Association of Broadcasters, the industry's trade association",
-              "The Federal Communications Commission, which licenses the stations",
-              "The Bureau of Labor Statistics, which classifies the occupation",
+              "The National Association of Broadcasters",
+              "The Federal Communications Commission",
+              "The Bureau of Labor Statistics",
             ],
             correctIndex: 0,
             explanation:
@@ -304,7 +304,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
           {
             prompt: "What does the lesson mean by saying almost nobody starts on-air?",
             options: [
-              "You start by being useful to the crew",
+              "You start by being useful to the crew, and useful has a learnable shape",
               "That on-air roles require a degree the technical roles do not",
               "That stations promote from within and never hire talent externally",
               "That on-air work is unpaid until a performer builds an audience",
@@ -317,7 +317,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
           {
             prompt: "Which publication carries median pay and 10-year job-growth projections for broadcasting roles?",
             options: [
-              "The Occupational Outlook Handbook",
+              "The Occupational Outlook Handbook, from the Bureau of Labor Statistics",
               "The National Association of Broadcasters career guide",
               "The Society of Broadcast Engineers certification handbook",
               "The Federal Communications Commission's annual industry report",
@@ -343,10 +343,10 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
           {
             prompt: "What is the projected employment growth for broadcast, sound, and video technicians?",
             options: [
-              "Declining, as automation removes positions from the control room",
-              "Little or no change over the projection period",
+              "Declining",
+              "Little or no change",
               "Faster than average",
-              "Too varied between markets for the handbook to project at all",
+              "Too varied to project",
             ],
             correctIndex: 2,
             explanation:
@@ -359,7 +359,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
               "Because the existing workforce is approaching retirement age",
               "Because stations are bringing outsourced technical work back in house",
               "Because regulation now requires more technical staff per broadcast",
-              "Content and streaming keep expanding",
+              "Because video content and streaming audiences keep expanding",
             ],
             correctIndex: 3,
             explanation:
@@ -383,7 +383,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             prompt: "What is the projected growth for announcers and DJs?",
             options: [
               "Faster than average, driven by the growth of podcasting",
-              "Little or no change",
+              "Little or no change, so on-air is the most competitive door",
               "About as fast as average, in line with production roles",
               "Growing in sports specifically while declining in news",
             ],
@@ -398,7 +398,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
               "Announcers and DJs",
               "Broadcast, sound, and video technicians, since demand is growing fastest",
               "Film and video editors and camera operators, since the skills are specialized",
-              "Producers and directors, at about $85,300 a year",
+              "Producers and directors, at a 2023 national median of about $85,300 a year",
             ],
             correctIndex: 3,
             explanation:
@@ -499,10 +499,10 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
           {
             prompt: "Which knot does the lesson describe as a fixed loop that will not slip?",
             options: [
-              "The clove hitch, which wraps around a rail without a loop",
+              "The clove hitch",
               "The bowline",
-              "The trucker's hitch, which pulls a line tight against a fixed point",
-              "The round turn and two half-hitches, which holds under a steady pull",
+              "The trucker's hitch",
+              "The round turn and two half-hitches",
             ],
             correctIndex: 1,
             explanation:
@@ -526,9 +526,9 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             prompt: "Which knot does the lesson name for tensioning a run?",
             options: [
               "The trucker's hitch",
-              "The bowline, which holds its loop size under load",
-              "The clove hitch, which tightens as the line is pulled",
-              "The round turn and two half-hitches, which resists slipping",
+              "The bowline",
+              "The clove hitch",
+              "The round turn and two half-hitches",
             ],
             correctIndex: 0,
             explanation:
@@ -541,7 +541,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
               "Because a neat coil takes less room in the truck at the end of the night",
               "Because coiling protects the connectors from damage in transit",
               "Because the coil's direction affects the signal the cable carries",
-              "So it pays out without kinking",
+              "So it pays out without kinking when the cable is next run out",
             ],
             correctIndex: 3,
             explanation:
@@ -565,9 +565,9 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             prompt: "In the rain-delay example, which knot re-secures the loose camera cable on the truss?",
             options: [
               "A bowline",
-              "A trucker's hitch, pulling the cable taut against the rail",
+              "A trucker's hitch",
               "A round turn and two half-hitches",
-              "A clove hitch backed up with a second clove hitch",
+              "A clove hitch",
             ],
             correctIndex: 2,
             explanation:
@@ -577,7 +577,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
           {
             prompt: "What two qualities does the lesson say both count on a live crew?",
             options: [
-              "Speed and cleanliness",
+              "Speed and cleanliness, so time yourself as you practice",
               "Accuracy and patience, in that order of importance",
               "Strength and stamina, since the work is physical",
               "Independence and initiative, since nobody has time to supervise",
@@ -733,7 +733,7 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
           {
             prompt: "How long should a reel run?",
             options: [
-              "About 60 to 120 seconds",
+              "About 60 to 120 seconds, because tighter is better than longer",
               "Between four and five minutes, to show range across several jobs",
               "As long as your best continuous piece of work happens to be",
               "Under 30 seconds, since nobody watches past the opening",
@@ -749,7 +749,7 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
               "The equipment you own, shown clearly enough to be identified",
               "Footage from the largest production you have ever been part of",
               "The control room you worked in, filmed during a live show",
-              "Framing, focus, exposure, and clean audio",
+              "Clean framing, focus, exposure, and audio on footage you were responsible for",
             ],
             correctIndex: 3,
             explanation:
@@ -798,7 +798,7 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
           {
             prompt: "What does the lesson mean by show me always beats trust me?",
             options: [
-              "A reel proves, where a claim only asserts",
+              "A reel proves what you can do, where a claim only asserts it",
               "That a reference from a crew lead outweighs anything you write",
               "That a hiring manager will always ask for a live demonstration",
               "That footage is easier to verify than a written credit list",
@@ -826,7 +826,7 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
             options: [
               "Because naming them proves you were trusted to operate them",
               "Because a longer skills list makes the one-page format look full",
-              "Hiring managers search for the exact tools",
+              "Because hiring managers search a resume for the exact tools",
               "Because equipment names date a resume and show recent experience",
             ],
             correctIndex: 2,
@@ -1037,7 +1037,7 @@ U.S. Bureau of Labor Statistics. (2024c). *Film and video editors and camera ope
             options: [
               "Replace each component in turn until the fault disappears",
               "Switch to the backup feed and diagnose after the show",
-              "Walk the chain until you find the dead link",
+              "Walk the chain, source to output, until you find the dead link",
               "Check the output first, since that is where the fault appears",
             ],
             correctIndex: 2,
@@ -1061,9 +1061,9 @@ U.S. Bureau of Labor Statistics. (2024c). *Film and video editors and camera ope
           {
             prompt: "Which microphone is the rugged one that handles loud sources?",
             options: [
-              "Dynamic, the sideline reporter's handheld",
-              "Condenser, which is sensitive enough for booth and studio work",
-              "Lavalier, which clips on and leaves the hands free",
+              "Dynamic",
+              "Condenser",
+              "Lavalier",
               "Shotgun",
             ],
             correctIndex: 0,
@@ -1074,10 +1074,10 @@ U.S. Bureau of Labor Statistics. (2024c). *Film and video editors and camera ope
           {
             prompt: "Which microphone is sensitive and detailed, for booth and studio work?",
             options: [
-              "Dynamic, which is rugged enough for a sideline in any weather",
+              "Dynamic",
               "Condenser",
-              "Shotgun, which rejects the noise around its target",
-              "Lavalier, which is small enough to hide under clothing",
+              "Shotgun",
+              "Lavalier",
             ],
             correctIndex: 1,
             explanation:
@@ -1087,9 +1087,9 @@ U.S. Bureau of Labor Statistics. (2024c). *Film and video editors and camera ope
           {
             prompt: "Which microphone is highly directional and rejects crowd noise?",
             options: [
-              "Lavalier, which sits close enough to the mouth to exclude the rest",
-              "Dynamic, which needs a loud source before it registers anything",
-              "Shotgun, which captures a subject at a distance",
+              "Lavalier",
+              "Dynamic",
+              "Shotgun",
               "Condenser",
             ],
             correctIndex: 2,
@@ -1100,9 +1100,9 @@ U.S. Bureau of Labor Statistics. (2024c). *Film and video editors and camera ope
           {
             prompt: "Which microphone is the clip-on, hands-free choice for interviews and hosts?",
             options: [
-              "Shotgun, mounted on a boom just out of the frame",
-              "Dynamic, held by the host through the whole segment",
-              "Condenser, on a stand between the two speakers",
+              "Shotgun",
+              "Dynamic",
+              "Condenser",
               "Lavalier",
             ],
             correctIndex: 3,
@@ -1128,7 +1128,7 @@ U.S. Bureau of Labor Statistics. (2024c). *Film and video editors and camera ope
             options: [
               "It is recoverable if the recording is made at a high enough bitrate",
               "It is unrecoverable, so never let it into the red",
-              "It only matters on the recorded version, not the live output",
+              "It matters only on a recording, not live",
               "It is preferable to a quiet signal",
             ],
             correctIndex: 1,
@@ -1167,7 +1167,7 @@ U.S. Bureau of Labor Statistics. (2024c). *Film and video editors and camera ope
             options: [
               "Color grading and audio mixing, applied after the shoot",
               "Camera choice and lens choice, decided before the shoot",
-              "Lighting and framing",
+              "Lighting and framing, the working basics camera operators use every day",
               "Steadiness and focus, which are matters of practice",
             ],
             correctIndex: 2,
@@ -1192,7 +1192,7 @@ U.S. Bureau of Labor Statistics. (2024c). *Film and video editors and camera ope
             prompt: "What does the fill light do?",
             options: [
               "Adds a highlight along the edge of the subject's hair and shoulders",
-              "Lifts the shadows, from opposite the key",
+              "Lifts the shadows as a softer light placed opposite the key",
               "Raises the overall exposure so the camera can be stopped down",
               "Lights the background so the subject does not disappear into it",
             ],
@@ -1206,7 +1206,7 @@ U.S. Bureau of Labor Statistics. (2024c). *Film and video editors and camera ope
             options: [
               "Fills the shadow side of the face where the key does not reach",
               "Adds warmth to the image so skin tones read correctly on camera",
-              "Separates the subject from the background",
+              "Sits behind the subject and separates them from the background",
               "Lets the camera operate at a lower gain setting in a dark room",
             ],
             correctIndex: 2,
@@ -1395,7 +1395,7 @@ National Association of Broadcasters. (n.d.). *About NAB*. https://www.nab.org/`
             options: [
               "The director, who is calling the shots as they happen",
               "The producer, who is responsible for the show's content",
-              "The technical director",
+              "The technical director, who cuts on the director's call",
               "The broadcast engineer, who maintains the equipment",
             ],
             correctIndex: 2,
@@ -1446,7 +1446,7 @@ National Association of Broadcasters. (n.d.). *About NAB*. https://www.nab.org/`
             prompt: "What does the replay operator do?",
             options: [
               "Cuts the highlight package that airs after the game finishes",
-              "Marks and plays back key moments",
+              "Marks and plays back key moments while the game is still live",
               "Stores every camera feed for the archive after the broadcast",
               "Reviews contested calls on behalf of the officials",
             ],
@@ -1536,10 +1536,10 @@ National Association of Broadcasters. (n.d.). *About NAB*. https://www.nab.org/`
           {
             prompt: "Which protocol does the lesson name as the common streaming protocol?",
             options: [
-              "SRT, which was designed specifically for broadcast contribution",
+              "SRT",
               "RTMP",
-              "HLS, which every browser supports without a plugin",
-              "RTSP, which is used by most security camera systems",
+              "HLS",
+              "RTSP",
             ],
             correctIndex: 1,
             explanation:
@@ -1615,7 +1615,7 @@ National Association of Broadcasters. (n.d.). *About NAB*. https://www.nab.org/`
             prompt: "In the lesson's example, what does the stream operator do besides setting the output?",
             options: [
               "Files the stream's technical details with the licensing authority",
-              "Enables captions and monitors dropped frames",
+              "Enables auto-captions for accessibility and monitors dropped frames",
               "Records a backup copy locally in case the stream drops entirely",
               "Adjusts the bitrate upward whenever the picture softens",
             ],
@@ -1766,7 +1766,7 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
               "Match it to the pace of the action you are describing",
               "Vary it constantly, since a steady pace reads as monotone",
               "Speed up, since dead air is the worst thing on a broadcast",
-              "Slow down, because nervous speakers rush",
+              "Slow down, since nervous speakers rush; punctuation is permission to breathe",
             ],
             correctIndex: 3,
             explanation:
@@ -1804,7 +1804,7 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
             options: [
               "Memorize each line before it reaches the top of the screen",
               "Glance away from the lens between sentences to break the stare",
-              "Read a few words ahead of the scroll",
+              "Read a few words ahead of the scroll, so it sounds like thinking",
               "Ask the operator to scroll slightly faster than you would speak",
             ],
             correctIndex: 2,
@@ -1856,7 +1856,7 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
             options: [
               "The score and the situation at regular intervals",
               "The continuous description that a radio listener depends on",
-              "Analysis, context, and story: the why",
+              "Analysis, context, and story: the why behind what just happened",
               "The transition into and out of each commercial break",
             ],
             correctIndex: 2,
@@ -1870,7 +1870,7 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
               "Speak more slowly than you would for a television audience",
               "Describe the crowd, so the atmosphere carries the moment",
               "Repeat each call twice, in case the first was missed",
-              "If you do not say it, it did not happen",
+              "If you do not say it, it did not happen, so say the score, time and down",
             ],
             correctIndex: 3,
             explanation:
@@ -1932,7 +1932,7 @@ U.S. Bureau of Labor Statistics. (2024a). *Announcers and DJs*. Occupational Out
           {
             prompt: "What does the lesson call the best question in an interview?",
             options: [
-              "The one their last answer suggested",
+              "The follow-up that their last answer suggested, if you listen",
               "The one you prepared that nobody else in the room thought of",
               "The one that gets the shortest usable clip for the highlight",
               "The one that puts the subject most at ease at the start",
@@ -2077,7 +2077,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
           {
             prompt: "What is a spotting board?",
             options: [
-              "A monitor showing which camera is currently live on air",
+              "The live camera monitor",
               "The board a replay operator uses to mark in and out points",
               "A pre-built cheat sheet of players and facts",
               "A diagram of where each camera is positioned in the venue",
@@ -2171,7 +2171,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
               "The director and the technical director, setting camera positions",
               "The engineers, who own everything technical on a broadcast",
               "Utility technicians and camera assistants",
-              "The venue's own staff, under the crew lead's direction",
+              "The venue's own staff",
             ],
             correctIndex: 2,
             explanation:
@@ -2197,7 +2197,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
               "Stands by to fix, move, and support live",
               "Begins striking the equipment that is no longer needed",
               "Moves to the control room to assist the technical director",
-              "Takes the first break, since the rig work is finished",
+              "Takes a break",
             ],
             correctIndex: 0,
             explanation:
@@ -2207,8 +2207,8 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
           {
             prompt: "When is the crew actually done?",
             options: [
-              "At the end of the broadcast, once the feed has been handed back",
-              "When the truck is loaded",
+              "When the broadcast ends",
+              "When the strike is finished and the truck is loaded",
               "Once the last camera position has been cleared of equipment",
               "At the call time agreed with the production company beforehand",
             ],
@@ -2636,7 +2636,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
             options: [
               "A freelance day call on a local sports crew",
               "An internship at a station or a production company",
-              "A staff position",
+              "A staff position with a station or network",
               "A volunteer shift streaming a school or community event",
             ],
             correctIndex: 2,
@@ -2647,7 +2647,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
           {
             prompt: "What is day-calling?",
             options: [
-              "Getting hired per event",
+              "Getting hired per event, as a freelancer on that day's crew",
               "Phoning production companies each morning to ask for work",
               "Working a fixed shift that covers whatever the station needs",
               "Being kept on retainer for a season by a single employer",
@@ -2663,7 +2663,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
               "The most specialized skill set available at the day rate offered",
               "The candidate with the strongest formal qualification on paper",
               "Whoever the crew lead worked with most recently",
-              "Proof of reliability",
+              "Proof of reliability, more than a degree with no credits",
             ],
             correctIndex: 3,
             explanation:
@@ -2702,7 +2702,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
               "Because larger markets require a union card before you can work",
               "Because small markets pay comparably once travel is accounted for",
               "Because the competition there is limited to local candidates",
-              "You touch every role fast",
+              "Because you touch every role fast, and many workers start there and move up",
             ],
             correctIndex: 3,
             explanation:
@@ -2856,7 +2856,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
             prompt: "What does the lesson call your best marketing?",
             options: [
               "A portfolio link that a producer can open in one click",
-              "A crew lead who wants you back",
+              "A crew lead who wants you back after excellent work on small gigs",
               "A membership in the professional body for your role",
               "A reel that has been watched by people who hire",
             ],
@@ -2973,9 +2973,9 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
             prompt: "In the drill, what is the other name the clue accepts for the video switcher?",
             options: [
               "Vision mixer",
-              "Production mixer, which is the audio equivalent of the same device",
-              "Router, which is what distributes each source around the facility",
-              "Control surface, which is the panel the technical director touches",
+              "Production mixer, the audio equivalent",
+              "Router",
+              "Control surface",
             ],
             correctIndex: 0,
             explanation:
@@ -2999,9 +2999,9 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
             prompt: "In the drill, which federal agency does the clue about spectrum and captioning point to?",
             options: [
               "The Federal Communications Commission",
-              "The Bureau of Labor Statistics, which classifies broadcasting occupations",
-              "The National Association of Broadcasters, which represents the industry",
-              "The Society of Broadcast Engineers, which certifies technical staff",
+              "The Bureau of Labor Statistics",
+              "The National Association of Broadcasters",
+              "The Society of Broadcast Engineers",
             ],
             correctIndex: 0,
             explanation:
@@ -3011,10 +3011,10 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
           {
             prompt: "In the drill, which term answers the clue about the announcer's pre-built cheat sheet?",
             options: [
-              "Rundown, which sets the order of the show's segments",
+              "Rundown",
               "Spotting board",
-              "Shot sheet, which lists what each camera is assigned to cover",
-              "Scorebug, which carries the live score on screen",
+              "Shot sheet",
+              "Scorebug",
             ],
             correctIndex: 1,
             explanation:

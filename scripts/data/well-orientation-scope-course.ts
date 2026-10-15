@@ -261,7 +261,7 @@ National Board for Health & Wellness Coaching. (n.d.-b). *Exam eligibility requi
           {
             prompt: "What is a contested claim in this program's usage?",
             options: [
-              "A claim credible sources genuinely dispute, taught AS a dispute rather than resolved quietly",
+              "A claim credible sources dispute, taught AS a dispute, not quietly resolved",
               "A claim the author personally doubts but includes for completeness",
               "A claim that failed verification and was therefore removed from the lesson",
               "A claim whose evidence is observational rather than drawn from randomized trials",
@@ -677,7 +677,7 @@ National Board for Health & Wellness Coaching. (n.d.-b). *Exam eligibility requi
           {
             prompt: "What are the practice-session requirements in an NBHWC-approved program?",
             options: [
-              "At least three sessions of at least 30 minutes, each with at least 20 minutes of individual faculty feedback",
+              "At least three sessions of 30+ minutes, each with 20+ minutes of individual feedback",
               "At least five sessions of at least 20 minutes, each with written faculty feedback within a week",
               "At least three sessions of at least 60 minutes, with group debriefs after each",
               "At least ten sessions of any length, with feedback on a representative sample",
@@ -716,7 +716,7 @@ National Board for Health & Wellness Coaching. (n.d.-b). *Exam eligibility requi
           {
             prompt: "Which faculty-credential rule attaches to at least 15 of the core instructional hours?",
             options: [
-              "A graduate degree in a health-related field, or a bachelor's plus a state license or national registration",
+              "A health-related graduate degree, or a bachelor's plus a license or registration",
               "At least 200 hours of the faculty member's own documented coaching practice",
               "An active NBC-HWC credential held for a minimum of three continuous years",
               "Completion of the board's train-the-trainer course within the prior recertification cycle",
@@ -729,7 +729,7 @@ National Board for Health & Wellness Coaching. (n.d.-b). *Exam eligibility requi
           {
             prompt: "What are the three requirements to sit the NBHWC board exam?",
             options: [
-              "An approved program, a log of 50 coaching sessions, and an associate's degree or 4,000 hours of work experience",
+              "An approved program, 50 logged sessions, and an associate's degree or 4,000 work hours",
               "An approved program, a log of 100 coaching sessions, and a bachelor's degree in a health field",
               "An approved program, a passing Practical Skills Assessment, and two professional references",
               "An accredited certification, a log of 50 coaching sessions, and current CPR/AED certification",
@@ -781,7 +781,7 @@ National Board for Health & Wellness Coaching. (n.d.-b). *Exam eligibility requi
           {
             prompt: "What did verification for this program find when it looked for a standalone NASM CWC scope-of-practice document?",
             options: [
-              "None comparable to NBHWC's; NASM's scope guidance lives in nutrition-coaching materials and instructor commentary",
+              "None comparable; its scope guidance sits in nutrition materials and commentary",
               "A published document equivalent in structure to NBHWC's, released alongside the credential",
               "A scope document available only to enrolled candidates through the course portal",
               "A scope section embedded in NASM's code of ethics, covering all five pillars",
@@ -1384,7 +1384,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "A verification note in this lesson corrects an earlier reading of the NBHWC scope page. What changed?",
             options: [
-              "An earlier read recorded four named therapy modalities; the current page names five, adding Solution Focused Therapy",
+              "An earlier read found four named modalities; the current page names five",
               "An earlier read recorded five named therapy modalities; the current page names four, having dropped EMDR",
               "An earlier read placed exercise prescription outside the list; the current page adds it explicitly",
               "An earlier read treated the list as exhaustive; the current page adds 'other such therapies' behind it",
@@ -1475,7 +1475,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "What does NASM's guidance leave inside a coach's scope?",
             options: [
-              "Portion education, label reading, government guidelines, meal-prep strategy, and coaching the behavior",
+              "Portions, labels, government guidelines, meal prep, and the behavior",
               "Portion education, macronutrient targets, government guidelines, and supplement timing",
               "Anything the client requests, provided no specific food quantities are named",
               "General education, plus individualized planning where no medical condition is present",
@@ -1501,7 +1501,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "What is a 'position statement' in this course's vocabulary?",
             options: [
-              "An organization's published stance on a boundary question: weaker than statute, stronger than opinion",
+              "A published stance on a boundary: weaker than statute, stronger than opinion",
               "A statutory declaration a licensing board files when it adopts a new interpretation",
               "A certifying body's binding rule, enforceable against its certificants through discipline",
               "A consensus document jointly issued by two or more credentialing organizations",
@@ -1514,7 +1514,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "What distinguishes general from individualized guidance, as the exclusion lists converge on it?",
             options: [
-              "Portions, labels, and public guidelines are general; a plan built for one person's body or condition is individualized",
+              "Public guidelines are general; a plan for one person is individualized",
               "Written material is general; anything delivered verbally in session is individualized",
               "Free material is general; anything the client pays for is individualized",
               "Group delivery is general; anything delivered one-to-one is individualized",
@@ -1527,7 +1527,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "A client asks their coach which magnesium product to buy for sleep. What does the converged guidance require?",
             options: [
-              "Decline the recommendation and route the question to a licensed provider, since supplement recommendation is excluded",
+              "Decline and route it to a licensed provider; supplements are excluded",
               "Recommend a third-party-tested product, since quality verification satisfies the scope concern",
               "Recommend a product but document that the client requested it first",
               "Recommend the form rather than the brand, since forms are general information",
@@ -1540,7 +1540,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "Why does this lesson open by saying nothing in it is legal advice?",
             options: [
-              "It teaches the STRUCTURE of regulation so you know which questions to ask a lawyer, not so you can skip asking",
+              "It teaches the structure so you know which questions to ask a lawyer",
               "Because statutory material is copyrighted and cannot be reproduced as advice",
               "Because the author is not admitted to practice in the states the lesson cites",
               "Because state law changes too frequently for any lesson to remain accurate",
@@ -1579,7 +1579,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "Why does the lesson say a coaching business must check each state it operates in?",
             options: [
-              "Many states mix practice and title regulation, and the pattern varies enough that one state's answer does not transfer",
+              "States mix practice and title rules, so one state's answer does not transfer",
               "Federal law requires registration in every state where a client resides",
               "Each state sets a different minimum certification level for nutrition coaching",
               "Interstate coaching is prohibited unless the coach holds a license in the client's state",
@@ -1696,7 +1696,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "What did the Fourth Circuit actually decide in Cooksey v. Futrell?",
             options: [
-              "That the board's actions had an objectively reasonable chilling effect, giving Cooksey standing to bring his claim",
+              "That the board's objectively reasonable chilling effect gave Cooksey standing",
               "That North Carolina's dietetics practice act violated the First Amendment as applied to bloggers",
               "That individualized dietary advice is protected speech regardless of the speaker's licensure",
               "That state dietetics boards may not regulate any advice delivered over the internet",
@@ -1722,7 +1722,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "What is the two-sided moral the lesson draws from Cooksey?",
             options: [
-              "General nutrition speech has real constitutional protection, and individualized clinical nutrition care remains squarely regulable",
+              "General nutrition speech is protected; clinical care is regulable",
               "Blogging about health is protected, and in-person consultation is not",
               "Free advice is protected, and paid advice is regulable",
               "Personal experience is protected, and any reference to research is regulable",
@@ -1852,7 +1852,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "'Serving clients exclusively as a coach' is one of the exemption's conditions. What does it constrain?",
             options: [
-              "The relationship with that client must be coaching only, not coaching mixed with a defined clinical practice",
+              "Coaching only with that client, never mixed with a clinical practice",
               "The coach may hold no other professional credential of any kind",
               "The coach may not work with clients who are simultaneously in therapy elsewhere",
               "The coach must derive all professional income from coaching services",
@@ -2008,7 +2008,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "How does the NBHWC outline build referral into the craft itself?",
             options: [
-              "The coach maintains professional boundaries, seeks consultation when needed, and treats scope questions as ethics questions",
+              "It maintains boundaries, seeks consultation, and treats scope as ethics",
               "The coach documents each referral in a standardized format retained for seven years",
               "The coach obtains written clinician approval before continuing with a referred client",
               "The coach suspends the coaching relationship until licensed care has concluded",
@@ -2060,7 +2060,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "What does the Code of Ethics require of a coach who also holds a clinical credential?",
             options: [
-              "Commitment to the ethics code and standards of practice of EACH profession, understanding the scope parameters of each",
+              "Commitment to EACH profession's ethics code, standards, and scope",
               "Commitment to whichever profession's standards are stricter on any given question",
               "Suspension of the clinical credential while acting in a coaching capacity",
               "Written notice to both certifying bodies that dual practice is being undertaken",
@@ -2099,7 +2099,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "What posture does NASM teach when work hedges toward diagnosis or treatment?",
             options: [
-              "Support the client in engaging their physician or therapist, rather than working the condition",
+              "Help the client engage their physician or therapist, not work the condition",
               "Continue coaching while monitoring the condition and documenting any change",
               "Pause the engagement until the client produces clearance from a treating clinician",
               "Refer only where the client explicitly asks for help with the condition",
@@ -2151,7 +2151,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "What is a 'warm handoff' as this course defines it?",
             options: [
-              "A referral done as a skill: observe without diagnosing, state your lane, offer next steps, keep coaching what remains",
+              "Referral as a skill: observe, state your lane, offer next steps, keep coaching",
               "A referral in which the coach speaks directly to the receiving clinician before the client does",
               "A referral accompanied by the coach's written notes on the client's history",
               "A referral in which the coach remains present during the client's first clinical appointment",
@@ -2177,7 +2177,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "How does the referral duty apply to self-coaching, per this lesson?",
             options: [
-              "Identically: persistent symptoms, mood changes outlasting their circumstances, or pain that alters function are triggers whether the client is a stranger or the mirror",
+              "Identically: persistent symptoms, lasting mood changes, or function-altering pain",
               "Loosely, since a coach applying the framework to themselves has full context a stranger lacks",
               "Not at all, since referral duties govern professional relationships rather than personal health",
               "Only for the crisis triggers, since the others assume an observer's perspective",
@@ -2458,7 +2458,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What distinguishes WELL-99 from every other course in the program?",
             options: [
-              "It is a capstone with a project: build and coach your own centenarian protocol using every tool taught",
+              "A capstone project: build and coach your own centenarian protocol",
               "It is the only course whose final examination is proctored, non-retakeable, and scored against a higher passing threshold",
               "It is the only course that grants a credential on completion",
               "It is the only course drawing on primary sources rather than secondary summaries",
@@ -2536,7 +2536,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "How are section knowledge checks sized and served in this program?",
             options: [
-              "Five questions drawn from a pool of roughly 40 to 100, sized to what the section teaches",
+              "Five drawn from roughly 40 to 100, sized to the section",
               "Ten questions drawn from a fixed pool of roughly a dozen, identical in every section regardless of length",
               "Five questions drawn from a pool of exactly 100 in every section",
               "Eight questions drawn from a pool of 30 to 60, matching the finals",
@@ -2588,7 +2588,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What is 'passing-score calibration' as this course defines it?",
             options: [
-              "Setting the bar to the exam's conditions, so open-book retakeable finals owe a higher standard",
+              "Setting the bar to the exam's conditions",
               "Adjusting the cut score after each cohort so pass rates stay within a target band",
               "Matching the passing score to the certifying body a program benchmarks against",
               "Weighting each question by difficulty before computing the percentage",
@@ -2601,7 +2601,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "Describe the mock-exam week mechanically.",
             options: [
-              "One sitting after all nine courses: every course final back to back, 10 fresh-drawn questions each, 90 total",
+              "One sitting: every final back to back, 10 fresh questions each, 90 total",
               "One sitting after all nine courses: every course final back to back, 20 questions each, 180 total",
               "One week in which a single course final is retaken daily until each is passed at 80",
               "One sitting of a separate 90-question comprehensive exam drawn from all nine pools",
@@ -2653,7 +2653,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What is a 'fresh draw,' and what does it make possible?",
             options: [
-              "A retake's new subset from the pool, so a second attempt measures retention, not recognition",
+              "A retake's new subset, testing retention",
               "The first attempt at a quiz, before any question has been seen",
               "A pool refreshed with newly authored questions after a lesson is revised",
               "A draw weighted toward questions the learner previously missed",
@@ -2705,7 +2705,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What is 'quick recall,' and why does the lesson insist you not skip it?",
             options: [
-              "Lessons that open by quizzing the previous lesson; spaced retrieval is the cheapest learning multiplier available",
+              "Openers that quiz the prior lesson; the cheapest learning multiplier",
               "A rapid summary at each lesson's start; it reduces the time needed to read the lesson",
               "A timed drill before each final; it simulates exam-day time pressure",
               "A dashboard widget listing recent lessons; it helps you resume where you stopped",
@@ -2718,7 +2718,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What is 'spaced retrieval'?",
             options: [
-              "Recalling material again after a delay, as the quick-recall openers do with the prior lesson",
+              "Recalling material again after a delay",
               "Spreading study sessions evenly across the week regardless of content",
               "Reviewing material immediately after reading it, while it is still fresh",
               "Alternating between two subjects so neither becomes monotonous",
@@ -2731,7 +2731,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "The lesson gives two program-specific suggestions for notes. What are they?",
             options: [
-              "Annotate every scope boundary with a situation from your own practice, and keep a running list of claims to check against the primaries",
+              "Pin scope boundaries to your own cases, and list claims to verify",
               "Summarize each lesson in one sentence, and record the time spent on each section",
               "Copy every vocabulary term into a single file, and tag each by pillar",
               "Note every effect size encountered, and rank the pillars by evidence strength",
@@ -2757,7 +2757,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "Why does the week-later retake measure something the first attempt cannot?",
             options: [
-              "It draws different questions from the pool, so it tests retention rather than memory of the first attempt",
+              "It draws different questions, so it tests retention",
               "It is taken without access to notes, so it removes the open-book advantage",
               "It is scored against a higher passing threshold than the first attempt",
               "It includes questions from later courses, so it tests transfer",
@@ -2783,7 +2783,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What is the one program-specific practice the study lesson adds beyond the four instruments?",
             options: [
-              "You are the first client: apply each course's ending to your own week, because the capstone assumes you did",
+              "You are the first client: apply each course to your own week",
               "Keep a coaching log of practice sessions, because the capstone requires fifty",
               "Read each course's primary sources in full before starting its lessons",
               "Discuss each pillar with a licensed clinician before applying it to yourself",
@@ -2835,7 +2835,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "You score 62 on a course final. What does the program's own framing tell you to do?",
             options: [
-              "Treat it as an instruction about which lessons to reread, using each question's review link",
+              "Use each question's review link to choose lessons to reread",
               "Retake the course from the beginning before attempting the final again",
               "Record it as a failure and proceed, since scores carry no external standing",
               "Wait a full week before any retake, so the second attempt measures retention",
@@ -3055,7 +3055,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "Which pairing correctly matches a credential with its kind of claim?",
             options: [
-              "NBHWC board certification; ACE accredited certification; NASM CWC private certification; ACLM clinician certification plus coach education",
+              "NBHWC board; ACE accredited; NASM CWC private; ACLM clinician plus coach education",
               "NBHWC accredited certification; ACE board certification; NASM CWC clinician certification; ACLM private certification",
               "All four are private certifications differing only in their examination format and prerequisites",
               "NBHWC and ACE are both board certifications; NASM and ACLM are both education providers",
@@ -3115,7 +3115,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What did the Fourth Circuit actually decide in Cooksey v. Futrell?",
             options: [
-              "That the board's actions had an objectively reasonable chilling effect, giving Cooksey standing",
+              "That the board's chilling effect gave Cooksey standing",
               "That North Carolina's dietetics practice act violated the First Amendment as applied",
               "That individualized dietary advice is protected speech regardless of licensure",
               "That state boards may not regulate advice delivered over the internet",
@@ -3139,7 +3139,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "Which duty did the November 2025 NBHWC ethics-code update add?",
             options: [
-              "Disclosing the use of artificial intelligence in delivering coaching, including privacy implications",
+              "Disclosing AI use in coaching, including privacy implications",
               "Disclosing whether sessions are recorded and how long recordings are kept",
               "Disclosing the coach's supervision arrangements to every client at intake",
               "Disclosing any use of client data for research or programme evaluation",
@@ -3151,7 +3151,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What are the four parts of a referral that keeps the relationship?",
             options: [
-              "Name the observation without diagnosing; state your lane; offer concrete next steps; keep coaching what remains",
+              "Observe, state your lane, offer next steps, keep coaching",
               "Express concern; recommend a provider; schedule follow-up; document the conversation",
               "Ask permission; describe the risk; obtain consent; transfer the file",
               "Name what you suspect; explain the evidence; refer; suspend the engagement",
@@ -3187,7 +3187,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "Which is the correct sequencing rationale for the nine courses?",
             options: [
-              "A single linear path where each course assumes its predecessors; WELL-06 comes late because it walks nearest the therapy line",
+              "A single linear path; WELL-06 comes late, nearest the therapy line",
               "Two parallel tracks joined at the capstone, with the coaching track taken first",
               "A core of three required courses followed by five taken in any order",
               "Courses ordered by evidence strength, with the best-evidenced pillars first",
@@ -3199,7 +3199,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "Why are WELL-02 and WELL-03 the shortest courses?",
             options: [
-              "They are thin bridges teaching only the coaching layer over CPT, CES, and CNC content",
+              "Thin bridges: only the coaching layer over CPT, CES, CNC",
               "Movement and nutrition have the weakest evidence bases of the six pillars",
               "They are optional for learners whose certifications are current",
               "Their material carries the lowest weight in the NBHWC content outline",
@@ -3211,7 +3211,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What are the four study instruments, and what does using all four claim to do?",
             options: [
-              "Check-yourself cards, quick recall, notes and highlights, the finals as instruments; the program roughly doubles in value",
+              "Cards, quick recall, notes, and finals; the program roughly doubles in value",
               "Reading, quizzes, notes, and the capstone project; retention improves by about a third",
               "Recall cards, spaced repetition, self-testing, and review; the program takes half the time",
               "Lessons, quizzes, finals, and the mock exam; the learner reaches board-exam readiness",
@@ -3223,7 +3223,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "Why take a course final twice, a week apart?",
             options: [
-              "The second attempt draws different questions, so it measures retention rather than recognition",
+              "It draws different questions, measuring retention",
               "The second attempt is taken without notes, removing the open-book advantage",
               "The gap allows consolidation, which raises the second score reliably",
               "Two attempts are averaged to reduce the noise from a small question draw",
@@ -3259,7 +3259,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What are the three requirements to sit the NBHWC board exam?",
             options: [
-              "An approved program, 50 logged coaching sessions, and an associate's degree or 4,000 hours of work in ANY field",
+              "Approved program, 50 logged sessions, associate's or 4,000 work hours",
               "An approved program, 100 logged sessions, and a bachelor's degree in a health field",
               "An approved program, a passing Practical Skills Assessment, and two references",
               "An accredited certification, 50 logged sessions, and current CPR/AED certification",
@@ -3295,7 +3295,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What does this program grant on completion?",
             options: [
-              "Nothing from NASM or NBHWC; it is independent, unaffiliated, unendorsed, and unaccredited",
+              "Nothing from NASM or NBHWC; it is independent",
               "A specialization credential recognised by both benchmarked organizations",
               "Continuing-education credit accepted toward NBC-HWC recertification",
               "Provisional eligibility toward the NBHWC board examination",
@@ -3343,7 +3343,7 @@ And one program-specific practice: you are the first client. Each course ends wi
           {
             prompt: "What is the mock-exam week, mechanically?",
             options: [
-              "One sitting after all nine courses: every final back to back, 10 fresh-drawn questions each, 90 total",
+              "All nine finals in one sitting: 10 fresh questions each",
               "One sitting after all nine courses: a separate 90-question comprehensive exam",
               "One final retaken per day across nine consecutive days",
               "One sitting of all nine finals, with the same questions as the first attempt",

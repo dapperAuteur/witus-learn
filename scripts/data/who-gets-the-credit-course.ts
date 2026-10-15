@@ -31,9 +31,9 @@ import type { AuthoredCourse } from "./authored-course";
 // House style: `section` on every lesson; flush-left single-line `:::reveal q ||| a`; a
 // `## Vocabulary` block of 3-6 lesson-specific terms; APA 7 `## Sources`; a quiz per teaching
 // section (pool sized by the Tier-0 density rule, serving 5, passing 80, shuffled) plus a
-// 40-question final serving 10; every question carries `explanation` + `sourceLessonSlug`. Correct
-// options are kept off both length extremes as a pattern (the longest and shortest tells are both
-// guarded in `pnpm lint`), and distractors are specific and definitively wrong.
+// 40-question final serving 10; every question carries `explanation` + `sourceLessonSlug`. The
+// correct option's length position is balanced across each bank (the length-balance guard enforces
+// it in `pnpm lint`), and distractors are specific and definitively wrong.
 export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
   title: "Who Gets the Credit: Black Inventors and the Machinery of Attribution",
   description:
@@ -165,7 +165,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What did an applicant have to swear under the 1836 Act?",
-            options: ["That they were the original and first inventor", "That the invention had been reduced to practice and tested in public", "That no foreign patent on the same device was pending anywhere", "That they would manufacture the device within three years of the grant"],
+            options: ["That they were the original and first inventor, the oath that excluded people in 1858", "That the invention had been reduced to practice and tested in public", "That no foreign patent on the same device was pending anywhere", "That they would manufacture the device within three years of the grant"],
             correctIndex: 0,
             explanation: "The oath requirement is the mechanism by which an entire category of people was excluded in 1858.",
             sourceLessonSlug: "what-a-patent-is-and-is-not",
@@ -186,7 +186,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What happened in December 1836 besides the new act?",
-            options: ["A fire destroyed the Patent Office records", "Congress opened patent eligibility to non-citizens for the first time", "The office moved to a new building and lost its examining staff", "The first patent was issued to a Black inventor under the new numbering"],
+            options: ["A fire destroyed the Patent Office's records, and roughly ten thousand patents burned", "Congress opened patent eligibility to non-citizens for the first time", "The office moved to a new building and lost its examining staff", "The first patent was issued to a Black inventor under the new numbering"],
             correctIndex: 0,
             explanation: "Roughly ten thousand patents burned. Reconstructed ones carry an X suffix, which is why Jennings is 3306x.",
             sourceLessonSlug: "what-a-patent-is-and-is-not",
@@ -200,7 +200,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Why does the course start with the system rather than with people?",
-            options: ["The system decides what the record can contain", "Because the biographies are already well covered elsewhere", "Because patent law is more reliably documented than personal histories", "Because the inventors themselves wrote very little about their own work"],
+            options: ["The system decides what the record can even contain, so it comes before the names", "Because the biographies are already well covered elsewhere", "Because patent law is more reliably documented than personal histories", "Because the inventors themselves wrote very little about their own work"],
             correctIndex: 0,
             explanation: "A person barred from the oath leaves no patent; an employee leaves one owned by someone else. Different silences, different evidence.",
             sourceLessonSlug: "what-a-patent-is-and-is-not",
@@ -214,7 +214,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "How are Black inventors identified in the patent record?",
-            options: ["By matching names against other records", "By a racial designation the Patent Office recorded until 1900", "By the examiner's notes, which survive for most nineteenth-century files", "By the attorney of record, since only a few firms served Black clients"],
+            options: ["By matching names against census returns, directories, obituaries, and the trade press", "By a racial designation the Patent Office recorded until 1900", "By the examiner's notes, which survive for most nineteenth-century files", "By the attorney of record, since only a few firms served Black clients"],
             correctIndex: 0,
             explanation: "Census returns, city directories, obituaries, trade press, and community knowledge. Every total is built by hand.",
             sourceLessonSlug: "the-paper-trail-and-its-holes",
@@ -256,7 +256,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "If no Black inventor can be found behind a device, what follows?",
-            options: ["Nothing either way", "That the popular attribution is a fabrication", "That the inventor was almost certainly barred from patenting", "That the invention predates the period when records were kept"],
+            options: ["Nothing either way: it proves neither that there was one nor that there was not", "That the popular attribution is a fabrication", "That the inventor was almost certainly barred from patenting", "That the invention predates the period when records were kept"],
             correctIndex: 0,
             explanation: "Absence of evidence is not proof in either direction, which is why the course uses not established as a real category.",
             sourceLessonSlug: "the-paper-trail-and-its-holes",
@@ -270,7 +270,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Why could enslaved people not swear the patent oath?",
-            options: ["They were not legal persons who could contract", "Because the oath had to be sworn in person at the Patent Office", "Because literacy was a statutory requirement for applicants", "Because the oath required proof of residence in a free state"],
+            options: ["They were not legal persons who could contract, so the oath was closed to them", "Because the oath had to be sworn in person at the Patent Office", "Because literacy was a statutory requirement for applicants", "Because the oath required proof of residence in a free state"],
             correctIndex: 0,
             explanation: "And after 1858 their enslavers could not patent the work either, which is what makes the opinion so consequential.",
             sourceLessonSlug: "five-ways-a-name-disappears",
@@ -298,14 +298,14 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What is mechanism three?",
-            options: ["The name is absorbed into a brand", "The patent lapses for non-payment and enters the public domain", "The invention is licensed abroad under a different inventor's name", "The examiner narrows the claims until the patent is worthless"],
+            options: ["The name is absorbed into a brand that becomes the household word for the product", "The patent lapses for non-payment and enters the public domain", "The invention is licensed abroad under a different inventor's name", "The examiner narrows the claims until the patent is worthless"],
             correctIndex: 0,
             explanation: "The patent is real and the name is on it, but the product sells under a company name that becomes the household word.",
             sourceLessonSlug: "five-ways-a-name-disappears",
           },
           {
             prompt: "In science rather than engineering, credit runs through what?",
-            options: ["Authorship", "Patents, exactly as it does in engineering", "Institutional affiliation recorded at the time of the discovery", "Priority letters deposited with a learned society"],
+            options: ["Authorship of published papers, rather than patents", "Patents, exactly as it does in engineering", "Institutional affiliation recorded at the time of the discovery", "Priority letters deposited with a learned society"],
             correctIndex: 0,
             explanation: "Which is the mechanism in the Alice Ball and Vivien Thomas cases, and it produces the cleanest documentary evidence of the five.",
             sourceLessonSlug: "five-ways-a-name-disappears",
@@ -326,7 +326,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Why is \"they stole it\" analytically useless?",
-            options: ["It names a feeling rather than a mechanism", "Because theft of an idea was not illegal in the nineteenth century", "Because it applies equally to all five mechanisms and so is always true", "Because courts have never recognized invention theft as a cause of action"],
+            options: ["It names a feeling rather than a mechanism, so it can be neither checked nor argued", "Because theft of an idea was not illegal in the nineteenth century", "Because it applies equally to all five mechanisms and so is always true", "Because courts have never recognized invention theft as a cause of action"],
             correctIndex: 0,
             explanation: "It cannot be checked and cannot be argued. A claim with a document behind it wins arguments; a claim with a feeling behind it does not.",
             sourceLessonSlug: "five-ways-a-name-disappears",
@@ -354,21 +354,21 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What does the disclosure requirement mean for historians?",
-            options: ["Patents describe how the thing actually worked", "Patents record who funded the development of the invention", "Patents include the inventor's correspondence with the examiner", "Patents state the commercial value the inventor expected"],
+            options: ["Patents describe how the thing actually worked, in enough detail to check", "Patents record who funded the development of the invention", "Patents include the inventor's correspondence with the examiner", "Patents state the commercial value the inventor expected"],
             correctIndex: 0,
             explanation: "It is the half of the bargain that makes the patent record usable as evidence rather than merely as a list of names.",
             sourceLessonSlug: "what-a-patent-is-and-is-not",
           },
           {
             prompt: "The course compares unquoted patent totals to what other catalog example?",
-            options: ["The Cordoba library volume figure", "The population estimates for medieval Toledo", "The Morisco expulsion totals under Philip III", "The size of the force that crossed into Iberia in 711"],
+            options: ["The Cordoba library volume figure, quoted as though someone had counted it", "The population estimates for medieval Toledo", "The Morisco expulsion totals under Philip III", "The size of the force that crossed into Iberia in 711"],
             correctIndex: 0,
             explanation: "Both are numbers that no surviving document could have produced, quoted as though someone counted them.",
             sourceLessonSlug: "the-paper-trail-and-its-holes",
           },
           {
             prompt: "Recovery bias in this field favors which inventors?",
-            options: ["Those who were already publicly visible", "Those who patented after the 1836 numbering began", "Those who worked in cities with active Black newspapers only", "Those whose patents were assigned to large corporations"],
+            options: ["Those who were already publicly visible, with businesses and biographers", "Those who patented after the 1836 numbering began", "Those who worked in cities with active Black newspapers only", "Those whose patents were assigned to large corporations"],
             correctIndex: 0,
             explanation: "Men with businesses, newspapers, and biographers, since a patent attorney had to remember them and write back.",
             sourceLessonSlug: "the-paper-trail-and-its-holes",
@@ -424,7 +424,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "How does a patent for an improvement become a claim of invention?",
-            options: ["The verb gets upgraded across retellings", "The Patent Office reclassifies it after the original patent expires", "The inventor's estate applies to have the title amended", "Trade journals of the period routinely printed the stronger claim"],
+            options: ["The verb gets upgraded across retellings, from improving a thing to inventing it", "The Patent Office reclassifies it after the original patent expires", "The inventor's estate applies to have the title amended", "Trade journals of the period routinely printed the stronger claim"],
             correctIndex: 0,
             explanation: "And the person who checks finds only the patent, which is how a defensible achievement turns into an indefensible claim.",
             sourceLessonSlug: "what-a-patent-is-and-is-not",
@@ -626,14 +626,14 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
         questions: [
           {
             prompt: "Who applied for the cotton scraper patent in 1857?",
-            options: ["Oscar J. E. Stuart", "Ned, the enslaved mechanic who had devised the machine", "Joseph Holt, in his capacity as Commissioner of Patents", "Jefferson Davis, on behalf of his brother's plantation"],
+            options: ["Oscar J. E. Stuart, a planter in Pike County, Mississippi", "Ned, the enslaved mechanic who had devised the machine", "Joseph Holt, in his capacity as Commissioner of Patents", "Jefferson Davis, on behalf of his brother's plantation"],
             correctIndex: 0,
             explanation: "A planter in Pike County, Mississippi, who had not invented it. Ned, whom he held, had.",
             sourceLessonSlug: "the-1858-opinion",
           },
           {
             prompt: "Who actually devised the cotton scraper?",
-            options: ["Ned, an enslaved mechanic", "Benjamin Montgomery, on the Davis plantation", "Oscar Stuart's overseer, whose name does not survive", "An unnamed free Black machinist hired for the season"],
+            options: ["Ned, an enslaved mechanic held by the planter who filed the application", "Benjamin Montgomery, on the Davis plantation", "Oscar Stuart's overseer, whose name does not survive", "An unnamed free Black machinist hired for the season"],
             correctIndex: 0,
             explanation: "Stuart's application argued that the labor of the enslaved belonged to the enslaver, so the invention did too.",
             sourceLessonSlug: "the-1858-opinion",
@@ -647,7 +647,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Who issued the 1858 opinion, and on what date?",
-            options: ["Jeremiah S. Black, 10 June 1858", "Joseph Holt, 3 March 1858, as Commissioner of Patents", "Roger Taney, 6 March 1857, in Dred Scott v. Sandford", "Rufus Rhodes, 12 August 1861, for the Confederate office"],
+            options: ["Jeremiah S. Black, as Attorney General, on 10 June 1858", "Joseph Holt, 3 March 1858, as Commissioner of Patents", "Roger Taney, 6 March 1857, in Dred Scott v. Sandford", "Rufus Rhodes, 12 August 1861, for the Confederate office"],
             correctIndex: 0,
             explanation: "The opinion is brief to the point of curtness and has come to be known as Invention of a Slave.",
             sourceLessonSlug: "the-1858-opinion",
@@ -668,7 +668,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What did Black add about a patent issued to the enslaver?",
-            options: ["It would not have protected him against infringers", "It would have been valid only within the slaveholding states", "It would have required the enslaved inventor's countersignature", "It would have expired on the death of the enslaved inventor"],
+            options: ["It would not have protected him against infringers, because it would have been void", "It would have been valid only within the slaveholding states", "It would have required the enslaved inventor's countersignature", "It would have expired on the death of the enslaved inventor"],
             correctIndex: 0,
             explanation: "It would have been void, so even a granted patent would have bought the enslaver nothing.",
             sourceLessonSlug: "the-1858-opinion",
@@ -710,7 +710,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Who enslaved Benjamin Montgomery?",
-            options: ["Joseph Emory Davis", "Oscar J. E. Stuart, of Pike County, Mississippi", "Jefferson Davis, before he entered national politics", "Rufus Rhodes, the future Confederate patent commissioner"],
+            options: ["Joseph Emory Davis, whose younger brother later led the Confederacy", "Oscar J. E. Stuart, of Pike County, Mississippi", "Jefferson Davis, before he entered national politics", "Rufus Rhodes, the future Confederate patent commissioner"],
             correctIndex: 0,
             explanation: "Joseph was the elder brother of Jefferson Davis, who later became president of the Confederate States.",
             sourceLessonSlug: "the-confederate-answer",
@@ -738,14 +738,14 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "How many Confederate patents appear to have originated with enslaved inventors?",
-            options: ["None that historians have identified", "About a dozen, all filed by Mississippi planters", "Roughly a third of the total, mostly agricultural machinery", "The records do not distinguish, so the question cannot be posed"],
+            options: ["None that historians have been able to identify in the surviving records", "About a dozen, all filed by Mississippi planters", "Roughly a third of the total, mostly agricultural machinery", "The records do not distinguish, so the question cannot be posed"],
             correctIndex: 0,
             explanation: "The law written specifically to capture such inventions captured none that anyone has been able to find.",
             sourceLessonSlug: "the-confederate-answer",
           },
           {
             prompt: "Which reading of that silence does the course endorse?",
-            options: ["Neither, since both are reasonable", "That the provision solved a narrow personal problem and went unused", "That wartime record loss explains the absence entirely", "That the provision was repealed before any application could be filed"],
+            options: ["Neither as settled, since both readings are reasonable on the evidence", "That the provision solved a narrow personal problem and went unused", "That wartime record loss explains the absence entirely", "That the provision was repealed before any application could be filed"],
             correctIndex: 0,
             explanation: "What is not reasonable is describing the provision as producing a wave of stolen patents, because no such wave appears in the record.",
             sourceLessonSlug: "the-confederate-answer",
@@ -759,7 +759,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "After 1865, credit loss ran through which mechanisms?",
-            options: ["Employment agreements, capital, access, and memory", "Continued statutory exclusion until the Civil Rights Act of 1964", "State laws barring Black applicants in the former Confederacy", "Patent Office practice of refusing applications without an attorney"],
+            options: ["Employment agreements, capital, access to attorneys, and who got remembered", "Continued statutory exclusion until the Civil Rights Act of 1964", "State laws barring Black applicants in the former Confederacy", "Patent Office practice of refusing applications without an attorney"],
             correctIndex: 0,
             explanation: "The formal legal bar was gone. The other four mechanisms from lesson 3 did the work afterward.",
             sourceLessonSlug: "the-confederate-answer",
@@ -773,21 +773,21 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What did Jennings's patent cover?",
-            options: ["A dry scouring process", "A machine for pressing and finishing tailored garments", "A dye-fixing preparation for wool and silk", "A steam-heated cabinet for drying cloth"],
+            options: ["A dry scouring process for cloth, an ancestor of modern dry cleaning", "A machine for pressing and finishing tailored garments", "A dye-fixing preparation for wool and silk", "A steam-heated cabinet for drying cloth"],
             correctIndex: 0,
             explanation: "An ancestor of modern dry cleaning. Jennings was a free-born New York tailor.",
             sourceLessonSlug: "free-patentees-and-the-first-problem",
           },
           {
             prompt: "What did Henry Blair patent on 14 October 1834?",
-            options: ["A corn seed planter", "A cotton planter, followed by a corn planter two years later", "A mechanical cotton scraper of the type Ned had devised", "A horse-drawn harrow with adjustable tines"],
+            options: ["A corn seed planter, then a cotton planter two years later", "A cotton planter, followed by a corn planter two years later", "A mechanical cotton scraper of the type Ned had devised", "A horse-drawn harrow with adjustable tines"],
             correctIndex: 0,
             explanation: "Patent X8447. He patented a cotton planter two years after that.",
             sourceLessonSlug: "free-patentees-and-the-first-problem",
           },
           {
             prompt: "How does the course treat the claim that Blair is the only inventor recorded as a colored man?",
-            options: ["As widely reported rather than verified", "As confirmed against the Patent Office's own indexes", "As false, since several other such notations survive", "As irrelevant, since the notation was added in the twentieth century"],
+            options: ["As a widely reported claim the author could not confirm in the Patent Office indexes", "As confirmed against the Patent Office's own indexes", "As false, since several other such notations survive", "As irrelevant, since the notation was added in the twentieth century"],
             correctIndex: 0,
             explanation: "The author could not confirm it against the indexes, so it is flagged as a reported claim and filed as an open source check.",
             sourceLessonSlug: "free-patentees-and-the-first-problem",
@@ -801,7 +801,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Where was Norbert Rillieux from, and where was he educated?",
-            options: ["New Orleans, educated in France", "Baltimore, educated at a Quaker academy in Philadelphia", "Havana, educated by Spanish engineers in Madrid", "Charleston, educated privately on the plantation where he was born"],
+            options: ["A free man of color from New Orleans, educated in France", "Baltimore, educated at a Quaker academy in Philadelphia", "Havana, educated by Spanish engineers in Madrid", "Charleston, educated privately on the plantation where he was born"],
             correctIndex: 0,
             explanation: "A free man of color whose work transformed sugar refining across the Americas.",
             sourceLessonSlug: "free-patentees-and-the-first-problem",
@@ -941,7 +941,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Rillieux's 1843 patent covered which design?",
-            options: ["A double-effect evaporator", "The full multiple-effect system under vacuum", "A vacuum pan for crystallizing refined sugar", "A mechanical cane crusher driven by steam"],
+            options: ["A double-effect evaporator for boiling down cane juice", "The full multiple-effect system under vacuum", "A vacuum pan for crystallizing refined sugar", "A mechanical cane crusher driven by steam"],
             correctIndex: 0,
             explanation: "Patent 3,237. The broader multiple-effect claim came with patent 4,879 in December 1846.",
             sourceLessonSlug: "free-patentees-and-the-first-problem",
@@ -1084,7 +1084,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
         questions: [
           {
             prompt: "What is an assignment, in patent terms?",
-            options: ["A transfer of patent ownership to another party", "A licensing arrangement that leaves ownership with the inventor", "A court order redistributing rights after an infringement finding", "The examiner's allocation of an application to a technology class"],
+            options: ["A transfer of patent ownership from the inventor to someone else, such as an employer", "A licensing arrangement that leaves ownership with the inventor", "A court order redistributing rights after an infringement finding", "The examiner's allocation of an application to a technology class"],
             correctIndex: 0,
             explanation: "A patent is property, and property can be transferred. The form that matters here is the pre-invention assignment.",
             sourceLessonSlug: "assignment",
@@ -1098,7 +1098,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What does an assigned inventor keep?",
-            options: ["Their name on the face of the patent", "The right to license the invention to third parties", "The right to sue infringers in their own name", "A statutory share of any revenue the patent produces"],
+            options: ["Their name, printed permanently on the face of the patent", "The right to license the invention to third parties", "The right to sue infringers in their own name", "A statutory share of any revenue the patent produces"],
             correctIndex: 0,
             explanation: "US law requires patents to name the actual human inventors, so the name is permanent even when the ownership is not.",
             sourceLessonSlug: "assignment",
@@ -1112,7 +1112,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Why does assignment shift public memory to the company?",
-            options: ["The company advertises, litigates, and licenses", "Because the inventor's name is removed from the published patent", "Because assignment is recorded confidentially and cannot be searched", "Because employers are legally entitled to claim inventorship"],
+            options: ["The company does the advertising, litigating, and licensing, so its name is the one heard", "Because the inventor's name is removed from the published patent", "Because assignment is recorded confidentially and cannot be searched", "Because employers are legally entitled to claim inventorship"],
             correctIndex: 0,
             explanation: "A century later people say Bell, General Electric, or IBM, and no individual name survives the sentence.",
             sourceLessonSlug: "assignment",
@@ -1182,21 +1182,21 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Which patent covers the electret microphone?",
-            options: ["US 3,118,022", "US 3,482,037, for a home security system", "US 4,591,071, for a squirt gun", "US 252,386, for a process of manufacturing carbons"],
+            options: ["US 3,118,022, for an electroacoustic transducer", "US 3,482,037, for a home security system", "US 4,591,071, for a squirt gun", "US 252,386, for a process of manufacturing carbons"],
             correctIndex: 0,
             explanation: "Filed in 1962 by James E. West and Gerhard Sessler at Bell Telephone Laboratories.",
             sourceLessonSlug: "inside-the-corporation",
           },
           {
             prompt: "Who co-invented the electret microphone with James E. West?",
-            options: ["Gerhard Sessler", "Joseph V. Nichols, his co-inventor on an earlier lamp patent", "Mark Dean, later of IBM's personal computer program", "Shelby J. Davidson, the third subject of Fouché's study"],
+            options: ["Gerhard Sessler, his colleague at Bell Telephone Laboratories", "Joseph V. Nichols, his co-inventor on an earlier lamp patent", "Mark Dean, later of IBM's personal computer program", "Shelby J. Davidson, the third subject of Fouché's study"],
             correctIndex: 0,
             explanation: "Both were at Bell Telephone Laboratories, where employee inventions are assigned to the employer as a matter of course.",
             sourceLessonSlug: "inside-the-corporation",
           },
           {
             prompt: "What does the electret microphone use to convert sound?",
-            options: ["A charged polymer foil", "A carbon granule chamber under variable pressure", "A moving coil suspended in a permanent magnetic field", "A piezoelectric crystal bonded to a metal diaphragm"],
+            options: ["A charged polymer foil inside an electroacoustic transducer", "A carbon granule chamber under variable pressure", "A moving coil suspended in a permanent magnetic field", "A piezoelectric crystal bonded to a metal diaphragm"],
             correctIndex: 0,
             explanation: "Descendants of that design became overwhelmingly dominant in telephones, hearing aids, camcorders, and computers.",
             sourceLessonSlug: "inside-the-corporation",
@@ -1245,14 +1245,14 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Who published Ball's work and circulated it under his own name?",
-            options: ["Arthur L. Dean", "Harry T. Hollmann, the physician who first proposed the work", "Alfred Blalock, in a paper on injectable preparations", "Gerhard Sessler, then a chemist at the same college"],
+            options: ["Arthur L. Dean, the chemist who was also the college's president", "Harry T. Hollmann, the physician who first proposed the work", "Alfred Blalock, in a paper on injectable preparations", "Gerhard Sessler, then a chemist at the same college"],
             correctIndex: 0,
             explanation: "Dean was a chemist and the college's president, and the technique circulated as the Dean method.",
             sourceLessonSlug: "credit-without-a-patent",
           },
           {
             prompt: "Who credited Ball in print in 1922?",
-            options: ["Harry T. Hollmann", "Arthur L. Dean, in a correction to his earlier paper", "The College of Hawaii, in its annual report", "The United States Public Health Service, in a bulletin"],
+            options: ["Harry T. Hollmann, a physician who named it the Ball Method", "Arthur L. Dean, in a correction to his earlier paper", "The College of Hawaii, in its annual report", "The United States Public Health Service, in a bulletin"],
             correctIndex: 0,
             explanation: "The physician's paper named the technique the Ball Method, which is a large part of why her name survived at all.",
             sourceLessonSlug: "credit-without-a-patent",
@@ -1266,7 +1266,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Roughly how many dogs did Thomas's laboratory work involve?",
-            options: ["About two hundred", "About twenty, over three months of preparation", "About two thousand, over a decade of experiments", "None; the work was entirely theoretical until the first operation"],
+            options: ["About two hundred, over nearly two years of laboratory work", "About twenty, over three months of preparation", "About two thousand, over a decade of experiments", "None; the work was entirely theoretical until the first operation"],
             correctIndex: 0,
             explanation: "Over nearly two years, establishing that the correction was survivable before it was attempted on a child.",
             sourceLessonSlug: "credit-without-a-patent",
@@ -1280,14 +1280,14 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What did Johns Hopkins award Thomas in 1976?",
-            options: ["An honorary Doctor of Laws", "An honorary Doctor of Medicine, granted by special dispensation", "A full professorship in the department of surgery", "The university's highest research prize, with a cash award"],
+            options: ["An honorary Doctor of Laws, plus an appointment as an instructor in surgery", "An honorary Doctor of Medicine, granted by special dispensation", "A full professorship in the department of surgery", "The university's highest research prize, with a cash award"],
             correctIndex: 0,
             explanation: "It also appointed him to the faculty as an instructor in surgery, thirty-two years after the first operation.",
             sourceLessonSlug: "credit-without-a-patent",
           },
           {
             prompt: "What is the procedure now called?",
-            options: ["The Blalock-Taussig-Thomas shunt", "The Thomas-Blalock procedure, with Taussig's name removed", "The Hopkins shunt, after the institution rather than the individuals", "The Thomas shunt, in a renaming that dropped both surgeons"],
+            options: ["The Blalock-Taussig-Thomas shunt, a renaming the AMA reported in 2023", "The Thomas-Blalock procedure, with Taussig's name removed", "The Hopkins shunt, after the institution rather than the individuals", "The Thomas shunt, in a renaming that dropped both surgeons"],
             correctIndex: 0,
             explanation: "The American Medical Association reported the renaming in 2023.",
             sourceLessonSlug: "credit-without-a-patent",
@@ -1308,7 +1308,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What was at issue in all three cases in this lesson?",
-            options: ["A byline, a procedure name, and a credit line", "Ownership of a patent that had been improperly assigned", "The right to publish results without institutional approval", "Compensation for work performed outside the terms of employment"],
+            options: ["A byline, a name on a procedure, and a credit line in an institutional history", "Ownership of a patent that had been improperly assigned", "The right to publish results without institutional approval", "Compensation for work performed outside the terms of employment"],
             correctIndex: 0,
             explanation: "No patent was ever at issue, which is what makes this a different mechanism requiring different evidence.",
             sourceLessonSlug: "credit-without-a-patent",
@@ -1343,7 +1343,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What is a patent you are named on but do not own?",
-            options: ["A line on a resume", "A licensable asset you may sell at any time", "A basis for an infringement action in your own name", "Legally indistinguishable from a patent you do own"],
+            options: ["A line on a resume, since the rights went to the employer", "A licensable asset you may sell at any time", "A basis for an infringement action in your own name", "Legally indistinguishable from a patent you do own"],
             correctIndex: 0,
             explanation: "The name is permanent, and everything with financial or legal value has gone to the assignee.",
             sourceLessonSlug: "assignment",
@@ -1563,14 +1563,14 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What problem did McCoy's lubricator solve?",
-            options: ["Oiling an engine without stopping it", "Preventing lubricating oil from igniting near the firebox", "Reducing the volume of oil a locomotive had to carry", "Filtering grit out of oil before it reached the bearings"],
+            options: ["Oiling the moving parts while the engine ran, instead of stopping it", "Preventing lubricating oil from igniting near the firebox", "Reducing the volume of oil a locomotive had to carry", "Filtering grit out of oil before it reached the bearings"],
             correctIndex: 0,
             explanation: "Stopping a locomotive or a factory line to oil it cost time and money, which is a specific and checkable problem.",
             sourceLessonSlug: "documented-cases-nineteenth-century",
           },
           {
             prompt: "What does McCoy's patent title claim?",
-            options: ["An improvement in lubricators", "The invention of mechanical lubrication", "A system for automatic engine maintenance", "A process for refining lubricating oils"],
+            options: ["An improvement in lubricators for steam engines", "The invention of mechanical lubrication", "A system for automatic engine maintenance", "A process for refining lubricating oils"],
             correctIndex: 0,
             explanation: "The wording is doing precise work: an improvement to something that already existed, not its invention.",
             sourceLessonSlug: "documented-cases-nineteenth-century",
@@ -1591,14 +1591,14 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Which Woods priority dispute is documented?",
-            options: ["An interference proceeding against Lucius Phelps", "Two lawsuits brought by Thomas Edison, both of which Woods won", "A challenge from the Bell Telephone Company over transmitter claims", "An appeal against the Commissioner of Patents' refusal to grant"],
+            options: ["An interference proceeding against Lucius Phelps, which Woods won", "Two lawsuits brought by Thomas Edison, both of which Woods won", "A challenge from the Bell Telephone Company over transmitter claims", "An appeal against the Commissioner of Patents' refusal to grant"],
             correctIndex: 0,
             explanation: "Woods prevailed in it. The Edison litigation story is repeated nearly everywhere and is not asserted by this course.",
             sourceLessonSlug: "documented-cases-nineteenth-century",
           },
           {
             prompt: "How does the course treat the Edison-sued-Woods story?",
-            options: ["As an open source check rather than as teaching", "As established fact, since it appears in every account", "As a fabrication invented by twentieth-century biographers", "As irrelevant, since the outcome would not change the patents"],
+            options: ["As an open source check, filed rather than taught as fact", "As established fact, since it appears in every account", "As a fabrication invented by twentieth-century biographers", "As irrelevant, since the outcome would not change the patents"],
             correctIndex: 0,
             explanation: "It is exactly the class of claim Fouché's work re-examined, so it is filed for verification rather than taught.",
             sourceLessonSlug: "documented-cases-nineteenth-century",
@@ -1633,7 +1633,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What do all eight nineteenth-century patents in this lesson have in common?",
-            options: ["Each improves an existing industrial system", "Each was assigned to a corporation on the day it issued", "Each was the subject of an interference proceeding", "Each was reconstructed after the 1836 Patent Office fire"],
+            options: ["Each improves an existing industrial system: lubrication, signaling, lighting, refining", "Each was assigned to a corporation on the day it issued", "Each was the subject of an interference proceeding", "Each was reconstructed after the 1836 Patent Office fire"],
             correctIndex: 0,
             explanation: "Lubrication, signaling, lighting, and refining. That is what invention usually looks like.",
             sourceLessonSlug: "documented-cases-nineteenth-century",
@@ -1696,7 +1696,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Who was named as co-inventor on that patent?",
-            options: ["Albert L. Brown", "Lonnie G. Johnson, then an engineering student", "Joseph V. Nichols, in a much later collaboration", "Frederick McKinley Jones, of Thermo King"],
+            options: ["Albert L. Brown, listed with her on the home security patent", "Lonnie G. Johnson, then an engineering student", "Joseph V. Nichols, in a much later collaboration", "Frederick McKinley Jones, of Thermo King"],
             correctIndex: 0,
             explanation: "Her husband. The pair are both named on the face of patent 3,482,037.",
             sourceLessonSlug: "documented-cases-twentieth-century",
@@ -1710,7 +1710,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What is the mechanical evidence that the Brown patent was influential?",
-            options: ["Later patents have cited it many times", "It was licensed to every major alarm manufacturer of the 1970s", "It was extended beyond its normal term by act of Congress", "It was reissued three times with progressively broader claims"],
+            options: ["Later patents have cited it many times over in the decades since", "It was licensed to every major alarm manufacturer of the 1970s", "It was extended beyond its normal term by act of Congress", "It was reissued three times with progressively broader claims"],
             correctIndex: 0,
             explanation: "Forward citations are not proof of importance, but they are real evidence and they are free to look at.",
             sourceLessonSlug: "documented-cases-twentieth-century",
@@ -1731,7 +1731,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Why is Johnson's case unusual in this course?",
-            options: ["He kept the value of his own invention", "He is the only inventor here who never received a patent", "He is the only one whose patent was assigned to an employer", "He is the only one whose invention was never commercialized"],
+            options: ["He held the patent and licensed it on his own terms, keeping the value", "He is the only inventor here who never received a patent", "He is the only one whose patent was assigned to an employer", "He is the only one whose invention was never commercialized"],
             correctIndex: 0,
             explanation: "He held the patent, licensed it on his own terms, and funded his own research company with the proceeds.",
             sourceLessonSlug: "documented-cases-twentieth-century",
@@ -1745,28 +1745,28 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Why does the course omit Jones's patent numbers?",
-            options: ["They were not verified for this course", "Because his patents were all assigned and therefore not his", "Because the numbering system changed during his career", "Because his patents were filed under a company name only"],
+            options: ["They were not verified for this course, and numbers from memory are not used", "Because his patents were all assigned and therefore not his", "Because the numbering system changed during his career", "Because his patents were filed under a company name only"],
             correctIndex: 0,
             explanation: "A number quoted from memory is exactly the failure mode this course was built to avoid.",
             sourceLessonSlug: "documented-cases-twentieth-century",
           },
           {
             prompt: "What should you read first on any patent?",
-            options: ["The verb in the title", "The list of forward citations", "The inventor's address and residence", "The examiner's name and art unit"],
+            options: ["The verb in the title, which sizes the claim", "The list of forward citations", "The inventor's address and residence", "The examiner's name and art unit"],
             correctIndex: 0,
             explanation: "Improvement in, process of, apparatus for, and system for each tell you the size of the claim before you read the body.",
             sourceLessonSlug: "reading-a-patent-narrowly",
           },
           {
             prompt: "Which claim in a patent is normally the broadest?",
-            options: ["Claim 1", "The final claim, which summarizes the others", "The claim with the most elements recited", "Whichever claim the examiner marked as allowable first"],
+            options: ["Claim 1, since every later claim narrows it further", "The final claim, which summarizes the others", "The claim with the most elements recited", "Whichever claim the examiner marked as allowable first"],
             correctIndex: 0,
             explanation: "Every later claim narrows it further, which is why two people can hold patents on what looks like the same device.",
             sourceLessonSlug: "reading-a-patent-narrowly",
           },
           {
             prompt: "If claim 1 recites a specific combination of elements, what does the patent cover?",
-            options: ["That combination, not the general idea", "The general idea, with the elements given only as an example", "Any device performing the same function by any means", "Only the exact embodiment shown in the drawings"],
+            options: ["That specific combination of elements, not the general idea behind it", "The general idea, with the elements given only as an example", "Any device performing the same function by any means", "Only the exact embodiment shown in the drawings"],
             correctIndex: 0,
             explanation: "This is the single most common source of confident overstatement about what a patent means.",
             sourceLessonSlug: "reading-a-patent-narrowly",
@@ -1780,7 +1780,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Which date does priority run from?",
-            options: ["The filing date", "The issue date, when the patent becomes enforceable", "The date the invention was first reduced to practice", "The date the assignment was recorded with the office"],
+            options: ["The filing date, which can be years before the issue date", "The issue date, when the patent becomes enforceable", "The date the invention was first reduced to practice", "The date the assignment was recorded with the office"],
             correctIndex: 0,
             explanation: "Filing and issue are often years apart, and comparing the two different date types produces confidently wrong conclusions.",
             sourceLessonSlug: "reading-a-patent-narrowly",
@@ -1801,7 +1801,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Who drafts patent titles?",
-            options: ["Attorneys who are precise for a living", "Patent examiners assigning the application to a class", "The inventors themselves, in their own words", "Clerks transcribing the application into the official index"],
+            options: ["Patent attorneys, who are precise about wording for a living", "Patent examiners assigning the application to a class", "The inventors themselves, in their own words", "Clerks transcribing the application into the official index"],
             correctIndex: 0,
             explanation: "Which is why the verb in the title is such a reliable signal of the claim's actual size.",
             sourceLessonSlug: "reading-a-patent-narrowly",
@@ -1822,7 +1822,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Morgan received how many breathing-device patents in 1914?",
-            options: ["Two", "One, later reissued with broader claims", "Four, covering variants for different industries", "None; the safety hood patent issued in 1916"],
+            options: ["Two, the safety hood and a second breathing device", "One, later reissued with broader claims", "Four, covering variants for different industries", "None; the safety hood patent issued in 1916"],
             correctIndex: 0,
             explanation: "Patents 1,090,936 and 1,113,675, the second issued 13 October 1914.",
             sourceLessonSlug: "documented-cases-twentieth-century",
@@ -2038,7 +2038,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What kind of traffic signal was in use in London in 1868?",
-            options: ["A non-electric one", "An electric three-position signal identical to Morgan's", "An automatic timed signal controlled from a central station", "A semaphore linked by telegraph to a police headquarters"],
+            options: ["A non-electric signal, of an earlier kind than the electric ones", "An electric three-position signal identical to Morgan's", "An automatic timed signal controlled from a central station", "A semaphore linked by telegraph to a police headquarters"],
             correctIndex: 0,
             explanation: "It sits in the list of things preceding Morgan's patent, which is what makes the invented-the-traffic-light claim indefensible.",
             sourceLessonSlug: "five-claims-that-fail",
@@ -2080,7 +2080,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "How did Charles Drew actually die?",
-            options: ["Of injuries from a 1950 car accident", "Of a transfusion reaction after being given mismatched blood", "After being turned away from three segregated hospitals in succession", "Of an illness contracted during his blood plasma research"],
+            options: ["Of injuries from a 1950 car accident, though surgeons at Alamance General tried to save him", "Of a transfusion reaction after being given mismatched blood", "After being turned away from three segregated hospitals in succession", "Of an illness contracted during his blood plasma research"],
             correctIndex: 0,
             explanation: "He was taken to Alamance General Hospital in North Carolina, where the white surgeons recognized him and worked to save him.",
             sourceLessonSlug: "five-claims-that-fail",
@@ -2094,7 +2094,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What is the documented Charles Drew protest?",
-            options: ["He opposed segregating stored blood by donor race", "He refused to treat white patients at segregated facilities", "He resigned from the Red Cross over its hiring practices", "He sued the American Medical Association over membership rules"],
+            options: ["He publicly opposed segregating stored blood by the donor's race", "He refused to treat white patients at segregated facilities", "He resigned from the Red Cross over its hiring practices", "He sued the American Medical Association over membership rules"],
             correctIndex: 0,
             explanation: "The practice had no scientific basis, and this protest is both real and stronger than the false story about his death.",
             sourceLessonSlug: "five-claims-that-fail",
@@ -2108,7 +2108,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What is the status of the \"real McCoy\" etymology?",
-            options: ["Not established", "Confirmed, and traced to railroad engineers of the 1870s", "Disproven, and traced conclusively to the whisky slogan", "Irrelevant, since McCoy's patents settle the question"],
+            options: ["Not established: language historians have not settled it", "Confirmed, and traced to railroad engineers of the 1870s", "Disproven, and traced conclusively to the whisky slogan", "Irrelevant, since McCoy's patents settle the question"],
             correctIndex: 0,
             explanation: "Language historians have not settled it, and the honest form is that the phrase is associated with McCoy and its origin is disputed.",
             sourceLessonSlug: "five-claims-that-fail",
@@ -2122,7 +2122,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Why is learning these corrections described as protective?",
-            options: ["Nobody can use one of them to discredit you", "Because repeating a myth can expose a teacher to liability", "Because the corrections are more memorable than the myths", "Because most audiences already know the corrections"],
+            options: ["Nobody can then use one of these myths to discredit you", "Because repeating a myth can expose a teacher to liability", "Because the corrections are more memorable than the myths", "Because most audiences already know the corrections"],
             correctIndex: 0,
             explanation: "In every case the true story underneath is available and defensible, so the correction costs the speaker nothing.",
             sourceLessonSlug: "five-claims-that-fail",
@@ -2185,21 +2185,21 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What did Fouché's approach require him to do?",
-            options: ["Contradict some cherished stories", "Restrict his study to inventors with surviving personal papers", "Avoid discussing race in order to keep the analysis technical", "Rely on corporate archives rather than on patent records"],
+            options: ["Contradict some cherished stories, which produced a stronger account", "Restrict his study to inventors with surviving personal papers", "Avoid discussing race in order to keep the analysis technical", "Rely on corporate archives rather than on patent records"],
             correctIndex: 0,
             explanation: "Replacing myths with people produced a stronger account, not a weaker one.",
             sourceLessonSlug: "where-the-myths-came-from",
           },
           {
             prompt: "What is Swanson's finding really about?",
-            options: ["Whose memory counts as knowledge", "Whether the 1858 opinion was correctly decided", "How many enslaved inventors were barred from patenting", "Which archives hold the surviving Confederate patent files"],
+            options: ["Whose memory counts as knowledge, since Black writers kept the opinion alive", "Whether the 1858 opinion was correctly decided", "How many enslaved inventors were barred from patenting", "Which archives hold the surviving Confederate patent files"],
             correctIndex: 0,
             explanation: "The opinion was preserved for a century by Black writers whose work mainstream scholarship ignored.",
             sourceLessonSlug: "where-the-myths-came-from",
           },
           {
             prompt: "How does the course recommend correcting someone?",
-            options: ["Give them the better fact in the same breath", "Cite the scholarship and let them read it themselves", "Ask what source they have before offering a correction", "Correct only in private, never in front of an audience"],
+            options: ["Give them the better fact in the same breath as you correct them", "Cite the scholarship and let them read it themselves", "Ask what source they have before offering a correction", "Correct only in private, never in front of an audience"],
             correctIndex: 0,
             explanation: "Remove a weak claim and hand over two strong ones, so nobody has lost anything in the exchange.",
             sourceLessonSlug: "where-the-myths-came-from",
@@ -2269,14 +2269,14 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Roughly how long does the checking procedure take?",
-            options: ["About ten minutes", "About an hour, once the archives are located", "Several days, since patent records must be requested", "About a minute, using a single database query"],
+            options: ["About ten minutes, and it works on any invention claim", "About an hour, once the archives are located", "Several days, since patent records must be requested", "About a minute, using a single database query"],
             correctIndex: 0,
             explanation: "And it works on any invention claim, not only the ones in this course.",
             sourceLessonSlug: "check-it-yourself",
           },
           {
             prompt: "Morgan's real contribution should be stated how?",
-            options: ["He patented the three-position signal in 1923", "He invented the first traffic signal used anywhere in America", "He designed the first electric signal, which Cleveland installed in 1914", "He improved the London signal design of 1868 for American streets"],
+            options: ["He patented the three-position signal, with its warning state, in 1923", "He invented the first traffic signal used anywhere in America", "He designed the first electric signal, which Cleveland installed in 1914", "He improved the London signal design of 1868 for American streets"],
             correctIndex: 0,
             explanation: "Paired with the 1914 safety hood that saved lives in the Cleveland tunnel, that is two strong claims replacing one weak one.",
             sourceLessonSlug: "where-the-myths-came-from",
@@ -2318,7 +2318,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What does the course say about scholarship in this field?",
-            options: ["It requires no unverifiable claims to make its case", "It has largely accepted the popular versions of these stories", "It focuses on the twentieth century and neglects the nineteenth", "It relies on the chain list where patent records are missing"],
+            options: ["It requires no unverifiable claims to make its case, as James, Fouché and Swanson show", "It has largely accepted the popular versions of these stories", "It focuses on the twentieth century and neglects the nineteenth", "It relies on the chain list where patent records are missing"],
             correctIndex: 0,
             explanation: "James, Fouché, and Swanson each produced a strong account without a single claim that fails checking.",
             sourceLessonSlug: "where-the-myths-came-from",
@@ -2529,7 +2529,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What is a pre-invention assignment?",
-            options: ["An employment agreement transferring rights before inventions exist", "A sale of a patent negotiated after it issues", "A licensing deal covering a defined field of use", "A court-ordered transfer following an infringement finding"],
+            options: ["An employment agreement transferring rights before inventions exist", "A sale of a patent negotiated after it issues", "A licensing deal covering a defined field of use", "A court-ordered transfer of the patent following an infringement finding"],
             correctIndex: 0,
             explanation: "It is the dominant mechanism of the twentieth century and it is not specific to race, which is why it explains so much.",
             sourceLessonSlug: "assignment",
@@ -2543,7 +2543,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Why was assignment a constrained choice for a Black inventor of the era?",
-            options: ["Independent invention needed capital, attorneys, credit, and courtroom standing", "Because employers were legally permitted to compel signature", "Because federal law required all Black inventors to assign", "Because patent attorneys refused to represent independent inventors"],
+            options: ["Independent invention needed capital, attorneys, credit, and courtroom standing", "Because employers were legally permitted to compel signature", "Because federal law required all Black inventors to assign", "Because patent attorneys of the era refused to represent any independent inventor"],
             correctIndex: 0,
             explanation: "Every one of those was restricted by segregation, so the alternative was frequently no patent at all.",
             sourceLessonSlug: "assignment",
@@ -2676,7 +2676,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What is the upgrade mechanism?",
-            options: ["Each retelling shortens the claim until improvement becomes invention", "Each retelling adds a citation the original lacked", "Each retelling moves the claim to an earlier date", "Each retelling attaches the claim to a more famous name"],
+            options: ["Each retelling shortens the claim until improvement becomes invention", "Each retelling adds a citation the original lacked", "Each retelling moves the claim to an earlier date", "Each retelling attaches the claim to a more famous name in the same field"],
             correctIndex: 0,
             explanation: "No single step is a big lie, and three steps produce a claim a hostile reader can destroy in one search.",
             sourceLessonSlug: "where-the-myths-came-from",

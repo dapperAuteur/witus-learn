@@ -136,7 +136,7 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
             options: [
               "Evidence, weaker than two but still evidence of the fact",
               "Unusable, since nothing can be established from one source",
-              "A claim",
+              "A claim, which might be right, though you do not yet know",
               "A starting point, which becomes a fact once it is written down",
             ],
             correctIndex: 2,
@@ -175,7 +175,7 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
             options: [
               "Thorough, so that nothing relevant was left unread",
               "Impartial, so that no view of your own reaches the page",
-              "Legible",
+              "Legible, so a reader can see which of your claims are still open",
               "Cautious, so that no claim is made beyond what is proven",
             ],
             correctIndex: 2,
@@ -265,9 +265,9 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
             prompt: "Under which pillar does the focused question sit?",
             options: [
               "Planning",
-              "Seek truth, alongside sourcing and verification",
-              "Accountable, since the question is what you are held to",
-              "Craft, since the question shapes the finished form",
+              "Seek truth",
+              "Accountable",
+              "Craft",
             ],
             correctIndex: 0,
             explanation:
@@ -290,9 +290,9 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
           {
             prompt: "Under which pillar does disclosure of interests sit?",
             options: [
-              "Minimize harm, since an undisclosed interest can harm a reader",
-              "Accountable, alongside the transparency criterion",
-              "Seek truth, since an interest can distort what you find",
+              "Minimize harm",
+              "Accountable",
+              "Seek truth",
               "Act independently",
             ],
             correctIndex: 3,
@@ -303,7 +303,7 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
           {
             prompt: "Which criterion sits under two pillars at once?",
             options: [
-              "Cultural and linguistic fidelity",
+              "Cultural and linguistic fidelity, under seek truth and minimize harm",
               "Transparent, which serves both accountability and truth",
               "Consent and fair representation, under harm and independence",
               "Craft for the medium, under planning and craft",
@@ -344,7 +344,7 @@ Because you can fail a rubric, and failing is how you learn where your habits ar
             options: [
               "A neutral result that neither helps nor harms the overall score",
               "A default for any criterion a reviewer cannot evaluate",
-              "A claim you should be prepared to defend",
+              "A claim you should be prepared to defend rather than a way out",
               "An option available only when a reviewer agrees in advance",
             ],
             correctIndex: 2,
@@ -505,9 +505,9 @@ For these, there is exactly one acceptable move: **read it from the system that 
           {
             prompt: "Which of these is a focused research question?",
             options: [
-              "The economic history of river towns in the Midwest",
+              "The economic history of river towns in the Midwest, from the first steamboat landings to the closing of the last mills",
               "Which council decisions between 1948 and 1962 relocated the town's main street, and who made them",
-              "Everything worth knowing about how towns and rivers interact",
+              "Everything worth knowing about how towns and rivers interact, across every period and region for which records survive",
               "Whether rivers were important to the development of towns",
             ],
             correctIndex: 1,
@@ -562,7 +562,7 @@ For these, there is exactly one acceptable move: **read it from the system that 
             prompt: "Why is the focused question the first rubric criterion?",
             options: [
               "Because a reviewer scores it before reading any of the work",
-              "Everything downstream inherits its shape",
+              "Because everything downstream of the question inherits its shape",
               "Because it is the only criterion you can complete before research begins",
               "Because its bar is Developing, so it is the easiest to satisfy first",
             ],
@@ -603,7 +603,7 @@ For these, there is exactly one acceptable move: **read it from the system that 
               "Because a narrow question takes longer to research than a broad one",
               "Because narrow questions require primary sources and broad ones do not",
               "Because a reader will read further into a subject they already know",
-              "Specific questions attract specific evidence",
+              "Because specific questions attract specific evidence and named people",
             ],
             correctIndex: 3,
             explanation:
@@ -613,7 +613,7 @@ For these, there is exactly one acceptable move: **read it from the system that 
           {
             prompt: "Where do good research questions usually come from?",
             options: [
-              "A gap rather than a topic",
+              "A gap: something you were told that does not fit something else",
               "A subject you already know enough about to work in quickly",
               "A survey of what has already been published in the field",
               "A request from someone who needs the answer for their own work",
@@ -641,7 +641,7 @@ For these, there is exactly one acceptable move: **read it from the system that 
             options: [
               "A publication with editorial standards you have reason to trust",
               "Any document you can cite in a form a reader could follow",
-              "A thing that has a relationship to the fact",
+              "A thing that has a relationship to the fact, not a place you read it",
               "The earliest place a claim can be shown to have appeared",
             ],
             correctIndex: 2,
@@ -946,7 +946,7 @@ You do not need this platform's version. You need **a version**: a file, a page,
               "All of them, without exception",
               "Any claim a reader is likely to find surprising",
               "Any claim you could not verify at first attempt",
-              "The load-bearing ones",
+              "The load-bearing ones that your conclusion rests on",
             ],
             correctIndex: 3,
             explanation:
@@ -1023,7 +1023,7 @@ You do not need this platform's version. You need **a version**: a file, a page,
             options: [
               "Because it lengthens a piece that is already at its word limit",
               "Because editors remove flags as a matter of house style",
-              "It looks like they failed",
+              "Because it looks like they failed, though it is the opposite",
               "Because a flagged claim is more likely to be challenged in public",
             ],
             correctIndex: 2,
@@ -1034,7 +1034,7 @@ You do not need this platform's version. You need **a version**: a file, a page,
           {
             prompt: "What does the lesson call an unflagged uncertainty?",
             options: [
-              "A lie of confidence",
+              "A lie of confidence, and one the reader cannot detect",
               "A gap that a careful reader will notice on their own",
               "An acceptable simplification, provided the claim is true",
               "A failure of craft rather than of sourcing",
@@ -1100,9 +1100,9 @@ You do not need this platform's version. You need **a version**: a file, a page,
             prompt: "Which rubric pillar do both of this section's criteria belong to?",
             options: [
               "Seek truth",
-              "Accountable, since both are about what a reader can check",
-              "Planning, since both are decided before the research begins",
-              "Act independently, since both protect against outside pressure",
+              "Accountable",
+              "Planning",
+              "Act independently",
             ],
             correctIndex: 0,
             explanation:
@@ -1337,7 +1337,7 @@ The failure mode to watch for is a piece of work that is **technically accurate 
             prompt: "Somebody declines. What happens next?",
             options: [
               "You ask once more, in case the first refusal was a misunderstanding",
-              "That is the end",
+              "That is the end, not a negotiation or a softer version",
               "You use the material without naming them",
               "You publish and note that they declined to comment",
             ],
@@ -1388,7 +1388,7 @@ The failure mode to watch for is a piece of work that is **technically accurate 
           {
             prompt: "What does the fidelity lesson say a translation is?",
             options: [
-              "A claim",
+              "A claim, asserting that what you wrote is what was said",
               "A courtesy to a reader who does not speak the language",
               "An interpretation, which no reader should treat as exact",
               "A secondary source, since somebody has processed the original",
@@ -1404,7 +1404,7 @@ The failure mode to watch for is a piece of work that is **technically accurate 
               "A second machine translation, to compare the two outputs",
               "A note giving the original alongside the rendered version",
               "A check by someone fluent, ideally a native speaker of the variety spoken",
-              "Approval from the person quoted before it can be published",
+              "Approval from the person quoted, in writing, before the translation can be published",
             ],
             correctIndex: 2,
             explanation:
@@ -1415,7 +1415,7 @@ The failure mode to watch for is a piece of work that is **technically accurate 
             prompt: "What do you do when you cannot get a translation checked?",
             options: [
               "Paraphrase rather than quote, so nothing is attributed as speech",
-              "Say so, plainly, in the work",
+              "Say so, plainly: translated by the author, not independently checked",
               "Leave the passage in the original and let the reader decide",
               "Hold the material until a checker becomes available",
             ],
@@ -1455,7 +1455,7 @@ The failure mode to watch for is a piece of work that is **technically accurate 
             options: [
               "Choose the one most widely used in the field and stay consistent",
               "Avoid frameworks entirely, and report only what you observed",
-              "Name it, instead of hiding it",
+              "Name it openly in the work instead of silently applying it",
               "Test it against a second framework before you commit to it",
             ],
             correctIndex: 2,
@@ -1466,7 +1466,7 @@ The failure mode to watch for is a piece of work that is **technically accurate 
           {
             prompt: "What should you do with a reader-from-inside who says that is not how we would put it?",
             options: [
-              "Take it seriously",
+              "Take it seriously and rethink your framing before you publish",
               "Note it as one view among several and publish as drafted",
               "Ask them to supply the wording they would prefer instead",
               "Weigh it against the accuracy of the underlying facts",
@@ -1634,7 +1634,7 @@ Then get on with the work.
               "The canonical work in the field, whether or not you read it",
               "Both the summary and the original it draws on",
               "Only primary material, with secondary reading left uncited",
-              "What you actually used",
+              "What you actually used, even if that was only a summary",
             ],
             correctIndex: 3,
             explanation:
@@ -1672,7 +1672,7 @@ Then get on with the work.
             options: [
               "The lengthy apology and the detailed explanation of the error",
               "Republishing the piece, and leaving the original version online",
-              "The quiet fix and the silent deletion",
+              "The quiet fix and the silent deletion, which both hide the change",
               "Correcting immediately, and waiting for a reader to notice first",
             ],
             correctIndex: 2,
@@ -1826,10 +1826,10 @@ Then get on with the work.
           {
             prompt: "Which rubric pillar does disclosure of interests belong to?",
             options: [
-              "Accountable, alongside transparency",
-              "Minimize harm, since an undisclosed interest can mislead",
+              "Accountable",
+              "Minimize harm",
               "Act independently",
-              "Seek truth, since an interest distorts what you look for",
+              "Seek truth",
             ],
             correctIndex: 2,
             explanation:
@@ -1839,7 +1839,7 @@ Then get on with the work.
           {
             prompt: "What does the lesson call the bibliography?",
             options: [
-              "The deliverable",
+              "The deliverable: the full list of sources the work ends with",
               "A courtesy to readers who want to go further",
               "The last thing to assemble, once the writing is finished",
               "A record for reviewers rather than for readers",
@@ -2015,7 +2015,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
           {
             prompt: "What is the bar for craft for the medium?",
             options: [
-              "Developing",
+              "Developing, the same lower bar the focused question carries",
               "Met, like every criterion under seek truth and minimize harm",
               "Met, unless the work is in a medium the rubric does not cover",
               "Not applicable for written work, and Met for everything else",
@@ -2044,7 +2044,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
               "The specific and the physical: a condition, a place, a face",
               "Process and time, and things a person does rather than describes",
               "Voice, and what a transcript loses",
-              "Argument and evidence",
+              "Argument and evidence, with qualification and citation",
             ],
             correctIndex: 3,
             explanation:
@@ -2054,7 +2054,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
           {
             prompt: "What does audio carry?",
             options: [
-              "Voice, and what a transcript loses",
+              "Voice, and what a transcript loses: hesitation, warmth, a pause",
               "Argument and evidence, in a form easier to follow than prose",
               "Proof, since a recording cannot be edited without trace",
               "Process and time, as something unfolds across a sequence",
@@ -2068,7 +2068,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
             prompt: "What does photography carry?",
             options: [
               "Process and time, since a sequence shows change",
-              "The specific and the physical",
+              "The specific and the physical: a condition, a place, a face",
               "Proof, since an image records what was actually there",
               "Argument, since an image can be read many ways at once",
             ],
@@ -2083,7 +2083,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
               "Voice, more completely than audio alone can manage",
               "Evidence, since a camera records more than a note-taker can",
               "The specific and the physical, in motion rather than still",
-              "Process and time",
+              "Process and time: something a person does rather than describes",
             ],
             correctIndex: 3,
             explanation:
@@ -2146,9 +2146,9 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
             prompt: "What does the AI lesson say the real danger is?",
             options: [
               "Laundering",
-              "Fabrication, since the tools invent facts that sound plausible",
-              "Dependence, since your own judgment weakens with use",
-              "Disclosure, since readers object to AI involvement in research",
+              "Fabrication",
+              "Dependence",
+              "Disclosure",
             ],
             correctIndex: 0,
             explanation:
@@ -2172,7 +2172,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
             prompt: "Which of these is on the lesson's list of what AI tools are genuinely good at?",
             options: [
               "Supplying facts that are too obscure to find by searching",
-              "Criticizing your draft's reasoning",
+              "Criticizing the reasoning of a draft you have already written",
               "Deciding which of two conflicting sources is more reliable",
               "Confirming whether a citation you already have is accurate",
             ],
@@ -2265,7 +2265,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
               "A craft failure, since the prose disguises its own origin",
               "A transparency failure, since the source list is incomplete",
               "A disclosure failure, since the tool's involvement is hidden",
-              "A sourcing failure with no fingerprints",
+              "A sourcing failure with no fingerprints, passing a casual read",
             ],
             correctIndex: 3,
             explanation:
@@ -2288,7 +2288,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
           {
             prompt: "How many criteria must the capstone satisfy?",
             options: [
-              "All eight",
+              "All eight, the same criteria reviewers will score",
               "The five that carry a Met bar, with the rest optional",
               "As many as the medium you chose in lesson 13 makes applicable",
               "Six, since two may always be scored not applicable",
@@ -2303,7 +2303,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
             options: [
               "Send it to a reviewer for an informal read against the criteria",
               "Check that each criterion has been addressed somewhere in the text",
-              "Score yourself against it, honestly",
+              "Score yourself against it honestly, with a line on each shortfall",
               "Rewrite anything that would not clearly reach the bar",
             ],
             correctIndex: 2,
@@ -2314,7 +2314,7 @@ Ten questions are drawn from a bank of forty, so a retake is a different exam. E
           {
             prompt: "What does submitting the capstone actually do?",
             options: [
-              "Places your project in review",
+              "Places your project in review, a status rather than a result",
               "Awards the Trusted Documentation credential on completion",
               "Sends the work to two reviewers who have already been assigned",
               "Publishes the work to the platform for anyone to read",

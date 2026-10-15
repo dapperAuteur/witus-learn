@@ -203,7 +203,7 @@ for each epoch:
               "A companion that teaches the substrate under Neuromatch's tutorials",
               "An official Neuromatch preparatory track, reviewed and endorsed by their curriculum committee before publication",
               "A condensed but complete reproduction of the three-week Deep Learning curriculum, notebooks and projects included",
-              "A hands-on coding course in which you build and train the same models Neuromatch assigns to its pods",
+              "A hands-on coding course run inside Neuromatch's pods",
             ],
             correctIndex: 0,
             explanation: "It is independent, unaffiliated, unendorsed, and deliberately contains no notebooks, projects or pods. Its job is to make their material legible, not to substitute for it.",
@@ -357,7 +357,7 @@ for each epoch:
             prompt: "Cross-entropy loss grows without bound in which situation?",
             options: [
               "The probability assigned to the true class approaches zero",
-              "The model assigns equal probability to every class, since an entirely uninformative prediction carries infinite cost",
+              "Every class receives an equal probability",
               "The predicted probabilities fail to sum to one, which the loss penalises in proportion to the size of the discrepancy",
               "The number of classes increases, because the loss is summed over classes rather than averaged across them",
             ],
@@ -371,7 +371,7 @@ for each epoch:
               "Dropout and batch normalisation behave differently in each",
               "Gradient tracking is only possible in training mode, so evaluating without switching would silently corrupt the parameters",
               "The loss function is replaced by an accuracy metric in evaluation mode, which requires a different internal state",
-              "Evaluation mode moves every tensor to the CPU, which is required before any metric can be computed",
+              "Evaluation mode moves every tensor to the CPU",
             ],
             correctIndex: 0,
             explanation: "Dropout must be active while training and inactive while evaluating, and batch normalisation uses batch statistics while training and running estimates afterwards. Forgetting the switch changes the numbers you report.",
@@ -444,7 +444,7 @@ for each epoch:
             options: [
               "Attribution, links to source and licence, and marked modifications",
               "Only a mention of the original author",
-              "Written permission from the licensor",
+              "Written permission from the licensor, obtained before the adaptation is published",
               "A share-alike licence on the derivative",
             ],
             correctIndex: 0,
@@ -469,7 +469,7 @@ for each epoch:
             prompt: "Does Neuromatch review or endorse external uses of its material?",
             options: [
               "No, and this course reproduces that wording",
-              "Yes, every adaptation is reviewed",
+              "Yes, every adaptation is reviewed and listed on their website",
               "Only commercial adaptations",
               "Only those on their own domain",
             ],
@@ -508,7 +508,7 @@ for each epoch:
             prompt: "Why does (64, 10) plus (64,) fail?",
             options: [
               "Aligning from the right compares 10 against 64",
-              "Ranks must always match",
+              "Ranks must always match, so 2-D and 1-D tensors never combine",
               "64 can never broadcast",
               "The larger operand must come first",
             ],
@@ -575,7 +575,7 @@ for each epoch:
               "No GPU execution and no automatic differentiation",
               "NumPy has no shape attribute",
               "NumPy cannot hold floats",
-              "NumPy is slower at everything",
+              "NumPy is slower at every operation, even on small arrays on the CPU",
             ],
             correctIndex: 0,
             explanation:
@@ -703,7 +703,7 @@ for each epoch:
             prompt: "What is held until the backward pass?",
             options: [
               "Every intermediate needed for gradients",
-              "Only the final loss",
+              "Only the final loss; each intermediate is discarded once it is used",
               "The optimizer's state",
               "The whole dataset",
             ],
@@ -718,7 +718,7 @@ for each epoch:
               "Backpropagation applies the chain rule with bookkeeping",
               "They are unrelated",
               "Backpropagation replaced it",
-              "The chain rule suits only linear models",
+              "The chain rule suits only linear models, so backpropagation avoids it",
             ],
             correctIndex: 0,
             explanation:
@@ -755,7 +755,7 @@ for each epoch:
             prompt: "What is an epoch?",
             options: [
               "One pass over the training set",
-              "One parameter update",
+              "One parameter update from a single batch",
               "One batch",
               "One evaluation run",
             ],
@@ -794,7 +794,7 @@ for each epoch:
             prompt: "What does the loss function supply?",
             options: [
               "A number saying how wrong the output is",
-              "The gradient directly",
+              "The gradient for each parameter, with no backward pass needed",
               "The learning rate",
               "The batch size",
             ],
@@ -807,7 +807,7 @@ for each epoch:
             prompt: "What does the optimizer's step do?",
             options: [
               "Applies the stored gradients to the parameters",
-              "Computes the gradients",
+              "Computes fresh gradients from the loss, replacing the backward call",
               "Zeroes the gradients",
               "Runs validation",
             ],
@@ -1275,7 +1275,7 @@ for each epoch:
               "To introduce nonlinearity between layers",
               "To normalise the loss",
               "To schedule the learning rate",
-              "To move tensors between devices",
+              "To move each layer's output tensors between the CPU and the GPU",
             ],
             correctIndex: 0,
             explanation:
@@ -1288,7 +1288,7 @@ for each epoch:
               "A step in the direction of the current batch's gradient",
               "A step using the full dataset gradient",
               "A random search over parameters",
-              "A second-order optimisation method",
+              "A second-order method that steps using the curvature of the loss surface",
             ],
             correctIndex: 0,
             explanation:
@@ -1313,7 +1313,7 @@ for each epoch:
             options: [
               "It scales each parameter's step by its own gradient history",
               "It uses the exact Hessian",
-              "It removes the learning rate entirely",
+              "It removes the learning rate entirely, so there is no value left to tune",
               "It requires no gradients",
             ],
             correctIndex: 0,
@@ -1379,7 +1379,7 @@ for each epoch:
               "Training is stable but impractically slow",
               "The loss diverges",
               "Gradients are never computed",
-              "The optimizer raises an error",
+              "The optimizer raises an error when the step size falls below a floor",
             ],
             correctIndex: 0,
             explanation:
@@ -1429,7 +1429,7 @@ for each epoch:
             prompt: "Why does the lesson call the theorem over-quoted?",
             options: [
               "It is used to justify expectations it cannot support",
-              "It has been formally disproved",
+              "It has been formally disproved by later results on deep networks",
               "It applies only to one activation function",
               "Its proof is disputed",
             ],
@@ -1443,8 +1443,8 @@ for each epoch:
             options: [
               "A stack of linear layers with nonlinearities between them",
               "A single linear map",
-              "A network with no trainable weights",
-              "A convolutional architecture",
+              "A network with no trainable weights, whose values are all set by hand",
+              "A convolutional architecture that shares each filter across every position",
             ],
             correctIndex: 0,
             explanation:
@@ -1546,7 +1546,7 @@ for each epoch:
             prompt: "What does 'features are where linearity hides' warn against?",
             options: [
               "Assuming a linear model is weak because it is linear",
-              "Using nonlinear features at all",
+              "Using nonlinear features at all, since they break the linear model",
               "Adding depth to a network",
               "Normalising the inputs",
             ],
@@ -1560,8 +1560,8 @@ for each epoch:
             options: [
               "Depth usually buys more for the same parameter count",
               "Width usually buys more",
-              "They are equivalent by the theorem",
-              "Neither matters once the optimizer is tuned",
+              "They are equivalent, which the universal approximation theorem proves",
+              "Neither matters once the optimizer and its learning rate are tuned",
             ],
             correctIndex: 0,
             explanation:
@@ -1637,8 +1637,8 @@ for each epoch:
             prompt: "What does the course say about copying hyperparameters from a paper?",
             options: [
               "Choose the learning rate empirically instead",
-              "Always copy them exactly",
-              "Copy them and halve the value",
+              "Always copy them exactly, since the paper's values were already tuned",
+              "Copy them, then halve the learning rate for every new dataset",
               "Papers rarely report them",
             ],
             correctIndex: 0,
@@ -1897,7 +1897,7 @@ for each epoch:
             options: [
               "It returns a wrong number rather than raising",
               "It crashes the process",
-              "It corrupts the dataset",
+              "It corrupts the dataset on disk, so every later epoch is wrong",
               "It changes the device",
             ],
             correctIndex: 0,
@@ -1974,7 +1974,7 @@ for each epoch:
             prompt: "Why does a no-gradient context save memory?",
             options: [
               "No intermediates are retained for a backward pass",
-              "Tensors are stored at lower precision",
+              "Tensors are stored at 16-bit precision instead of the usual 32-bit",
               "The model is moved to the CPU",
               "The batch size is reduced",
             ],
@@ -2078,7 +2078,7 @@ for each epoch:
             prompt: "Why fit a linear baseline first?",
             options: [
               "It makes any later improvement attributable",
-              "It initialises the deeper model",
+              "It initializes the deeper model with its own trained weights",
               "It is required by the optimizer",
               "It fixes the batch size",
             ],
@@ -2208,9 +2208,9 @@ for each epoch:
             prompt: "What distinguishes Adam?",
             options: [
               "Per-parameter step scaling from gradient history",
-              "Use of the exact Hessian",
+              "Use of the exact Hessian, computed once per step for every parameter",
               "No learning rate at all",
-              "Gradient-free updates",
+              "Gradient-free updates that sample random directions instead",
             ],
             correctIndex: 0,
             explanation:
@@ -2286,9 +2286,9 @@ for each epoch:
             prompt: "What is the correct reading of the universal approximation theorem?",
             options: [
               "Reassurance about capacity, not a practical guide",
-              "A recipe for choosing width",
+              "A recipe for choosing the hidden width from the input dimension",
               "Proof that shallow beats deep",
-              "A convergence theorem",
+              "A convergence guarantee for gradient descent on any wide network",
             ],
             correctIndex: 0,
             explanation:
@@ -2325,9 +2325,9 @@ for each epoch:
             prompt: "What does this course NOT include?",
             options: [
               "Notebooks, datasets, projects and pods",
-              "Tensors and shapes",
+              "Tensors, shapes, dtypes and the broadcasting rules",
               "Autograd",
-              "Optimizers",
+              "Optimizers from plain SGD through momentum to Adam",
             ],
             correctIndex: 0,
             explanation:

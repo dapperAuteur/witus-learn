@@ -139,7 +139,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
               "Rigorous reporting on responses to social problems",
               "Coverage that balances negative news with positive stories about the same subject",
               "Reporting that recommends a course of action to readers and policymakers",
-              "A newsroom slot reserved for uplifting material about the community",
+              "A newsroom slot for uplifting stories",
             ],
             correctIndex: 0,
             explanation:
@@ -201,7 +201,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is a solutions story frequently harder than an accountability story?",
             options: [
-              "The central claim is causal",
+              "Its central claim is causal: that the response produced the results",
               "Because organizations refuse access more often than institutions do",
               "Because the evidence is usually held by a private body rather than a public one",
               "Because the audience is less interested and the piece must be longer",
@@ -227,7 +227,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the first of the four qualities?",
             options: [
-              "It focuses on a response",
+              "It focuses on a response, as the subject of the piece",
               "It offers something transferable to people working elsewhere",
               "It provides some indication of whether the response works",
               "It names what the response has not solved and whom it misses",
@@ -254,7 +254,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
             prompt: "What is insight, as the second quality?",
             options: [
               "Something transferable that others could learn from",
-              "The reporter's own assessment of whether the response deserves support",
+              "The reporter's verdict on the program",
               "The context that explains why the problem arose in the first place",
               "The perspective of people who benefited from the response personally",
             ],
@@ -266,7 +266,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "Which quality most often turns out to be weaker than a story implies?",
             options: [
-              "Evidence of results",
+              "The evidence that the response is producing results",
               "The operational description of what the response does",
               "The transferable insight for people working elsewhere",
               "The discussion of what the response has not solved",
@@ -344,7 +344,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What would a mood be, in this lesson's terms?",
             options: [
-              "A decision about tone",
+              "A decision about tone, such as writing more hopefully",
               "A commitment to publish one response story per month",
               "A rule that every problem story carries a response paragraph",
               "An editorial policy favoring local subjects over national ones",
@@ -409,7 +409,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a reporter known for reporting responses rigorously gain?",
             options: [
-              "Access to the difficult ones",
+              "Access to the difficult responses, the ones worth having",
               "A larger audience for each published piece",
               "Faster responses to routine records requests",
               "An exemption from the outlet's legal review",
@@ -461,7 +461,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say the second half of the definition prevents?",
             options: [
-              "Reserving scrutiny for the failures",
+              "Reserving scrutiny for the failures and sparing the successes",
               "Reporting on responses that have not yet launched",
               "Covering responses outside the reporter's own jurisdiction",
               "Quoting the people who run a response at any length",
@@ -500,7 +500,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about writing a sentence that sounds like a quality?",
             options: [
-              "It is not the same as having reported it",
+              "It is not the same as having reported the quality",
               "It satisfies the checklist if an editor accepts it",
               "It is acceptable where space prevents full treatment",
               "It should be flagged for the reader in a closing note",
@@ -607,7 +607,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
               "A description they cannot evaluate",
               "A complete solutions story, since the honesty pair is optional",
               "An accountability story about the underlying problem",
-              "A profile of the organization running the response",
+              "An organization profile",
             ],
             correctIndex: 0,
             explanation:
@@ -1691,7 +1691,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
               "A comparison against a group that did not receive the response",
               "A before-and-after measure of the same participants",
               "An outcome measure with no comparison at all",
-              "Participant reports of how the response helped them",
+              "Participant reports of how the response helped them, collected in exit surveys",
             ],
             correctIndex: 0,
             explanation:
@@ -2119,7 +2119,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
             options: [
               "Can I get to the people it affects rather than only the people who run it",
               "Can I obtain the program's full financial records",
-              "Can I confirm the results with an independent evaluator",
+              "Can I confirm the results with an independent evaluator before committing to the story",
               "Can I visit the site during normal operating hours",
             ],
             correctIndex: 0,
@@ -2404,7 +2404,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
             options: [
               "A headline stating a result the evidence does not support",
               "An evidence section placed after the limitations",
-              "A quotation from an operator left unattributed",
+              "A quotation from an operator left unattributed in the closing paragraph",
               "A problem paragraph that understates the scale",
             ],
             correctIndex: 0,
@@ -2468,8 +2468,8 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
             prompt: "Which unfavorable material should be asked for by name?",
             options: [
               "The unpublished evaluation, the bad year, and the cut component",
-              "The organization's full financial statements",
-              "The list of participants who left the program",
+              "The organization's full financial statements for every year since it was founded",
+              "The list of participants who left the program, with their contact details",
               "The correspondence with the program's funder",
             ],
             correctIndex: 0,
@@ -2547,7 +2547,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
             options: [
               "Reporting on responses at the same standard as everything else",
               "Softer coverage of local institutions",
-              "A fixed proportion of positive stories each month",
+              "A fixed proportion of positive stories each month, set by the editor in chief",
               "Fewer accountability investigations",
             ],
             correctIndex: 0,
@@ -2573,7 +2573,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
             options: [
               "The pitch, the shapes a story can take, and the capstone",
               "Verification and the legal frame",
-              "Records and reading somebody else's report",
+              "Records and reading somebody else's report, the two courses still to come",
               "The beat and community listening",
             ],
             correctIndex: 0,
@@ -2585,9 +2585,9 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
             prompt: "What does the lesson mean by keeping the mechanism concrete?",
             options: [
               "What happens when somebody calls, who decides, what the form asks",
-              "How large the budget is and where it comes from",
+              "How large the budget is, and which foundations and public agencies supply it",
               "How the organization describes its own values",
-              "How many staff the program employs and at what grade",
+              "How many staff the program employs, at what pay grade, and on what contracts",
             ],
             correctIndex: 0,
             explanation:
@@ -2676,9 +2676,9 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
             prompt: "How is somebody who tried the same thing and stopped found?",
             options: [
               "Through the same records and beat calendar the earlier courses built",
-              "Through the organization currently running the response",
+              "Through the organization currently running the response, and only through it",
               "Through an advocacy group that tracks the sector",
-              "Through a national database of discontinued programs",
+              "Through a national database of discontinued programs kept by the federal government",
             ],
             correctIndex: 0,
             explanation:
@@ -2895,7 +2895,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What is solutions journalism?",
             options: [
-              "Rigorous reporting on responses to social problems",
+              "Rigorous reporting on responses to social problems, held to the usual standard of evidence",
               "Coverage designed to balance negative news about a community with positive material",
               "Reporting that recommends a specific course of action to readers and policymakers",
               "A recurring newsroom slot reserved for uplifting stories about local people",
@@ -2908,7 +2908,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What hole does response reporting fill?",
             options: [
-              "What is possible inside a situation",
+              "What is possible inside a situation that is known to be broken",
               "Who bears responsibility for a problem and what has gone wrong",
               "How a problem compares against other jurisdictions of similar size",
               "Whether a public body has complied with its statutory obligations",
@@ -2934,7 +2934,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What are the four qualities?",
             options: [
-              "Response, insight, evidence, limitations",
+              "Response, insight, evidence of results, and discussion of limitations",
               "Problem, response, reaction, and recommendation for further action",
               "Accuracy, balance, fairness, and independence from the subject",
               "Source, date, location, and the motivation behind the material",
@@ -3103,7 +3103,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What is false about a silver-bullet story containing no false sentences?",
             options: [
-              "Its implication about transferability",
+              "Its implication that the response would transfer to other places",
               "Its account of the size of the underlying problem being addressed",
               "Its characterization of the organization running the response",
               "Its description of how the response operates day to day",
@@ -3207,7 +3207,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the most common substitution in evidence?",
             options: [
-              "Activity reported where results should be",
+              "Activity, such as numbers served, reported where results should be",
               "A comparison group that was not genuinely comparable to participants",
               "A self-evaluation presented as an independent assessment of results",
               "A result reported without stating the period the measure covers",
@@ -3220,7 +3220,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What question separates the rungs of the ladder?",
             options: [
-              "Compared to what",
+              "Compared to what, asked of every outcome figure the piece reports",
               "Measured by which independent evaluator, and over what period",
               "Funded by whom, and with what conditions attached to the money",
               "Reported when, and in which published document originally",
@@ -3233,7 +3233,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the stronger assertion a reader takes away regardless?",
             options: [
-              "That the response caused the improvement",
+              "That the response itself caused the improvement in outcomes",
               "That the improvement occurred at all during the measured period",
               "That the response deserves to be expanded to other places",
               "That the evidence has been independently verified by somebody",
@@ -3259,7 +3259,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "Which limitation question do readers most need answered?",
             options: [
-              "What conditions the response depends on",
+              "What conditions the response depends on that another place may lack",
               "What the response has not yet managed to solve for anybody",
               "Whom the response does not reach among the affected population",
               "What the response costs to operate in a full budget year",
@@ -3272,7 +3272,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "How should a response's failures be treated?",
             options: [
-              "As evidence about how the thing works",
+              "As evidence about how the thing works, worth asking for directly",
               "As a deduction from the response's overall record of achievement",
               "As material better suited to a separate accountability piece",
               "As background detail the general reader does not require",
@@ -3402,7 +3402,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
           {
             prompt: "How do accountability and response coverage of the same subject strengthen each other?",
             options: [
-              "Neither reads as cynicism or promotion once both exist",
+              "Neither reads as cynicism or promotion once both exist on the same beat",
               "Each reaches a different segment of the outlet's paying audience",
               "Each satisfies a separate requirement of the professional code of ethics",
               "Each is produced by a different desk working to different standards",
