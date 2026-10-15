@@ -4890,6 +4890,155 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ══ TOOLS-02 · The Slide Rule ═══════════════════════════════════════════════
+  //
+  // A CALCULATING course, unlike the two interpret-it courses above, so read the boundary with care.
+  // The slide rule's answers are read by eye, and the platform grades typed answers by exact match,
+  // so every quiz is multiple choice whose options differ by a power of ten or by far more than a
+  // reading error. That is enough to claim standards about estimating, powers of ten and choosing a
+  // level of accuracy, which the lessons teach and the quizzes test; it is NOT enough to claim
+  // standards whose substance is solving equations, which the course never asks for. Each standard
+  // these claims back says on its own entry what it does not cover.
+  {
+    id: "catalog.slide-rule-powers-of-ten-estimate",
+    claim:
+      "Rounds numbers to a single digit times a power of ten to estimate the size of a product or quotient before calculating, including very large and very small quantities, and states how many times as large one quantity is than another.",
+    courseSlugs: ["the-slide-rule"],
+    lessons: [
+      // One-figure estimates: 63,200 is about 6 × 10⁴ and 0.0035 about 4 × 10⁻³, so the product is
+      // about 240; the true 221.2 is the same size.
+      "2 · Powers of ten and the decimal point",
+      // The estimate places every decimal point the rule cannot show (793 read as 7930; 74 read as
+      // 0.00074), and compares 7,930 with 65,400,000 by one-digit estimates: about 9,000 times.
+      "8 · Placing the decimal point by estimate",
+      // Thirteen of Cullimore's printed problems, each worked estimate first.
+      "25 · Capstone: a page of arithmetic by estimate, rule and check",
+    ],
+  },
+  {
+    id: "catalog.slide-rule-scientific-notation",
+    claim:
+      "Multiplies and divides numbers written as a number times a power of ten, moving between decimal and power-of-ten forms, and reads a result a calculator displays in scientific notation.",
+    courseSlugs: ["the-slide-rule"],
+    lessons: [
+      // Pickworth's notation: 3,610,000 = 3.61 × 10⁶; 63,200 × 0.0035 worked as 6.32 × 10⁴ × 3.5 × 10⁻³.
+      "2 · Powers of ten and the decimal point",
+      // 17,300 × 3780 = 1.73 × 3.78 × 10⁷ = 65,400,000; 0.00000285 ÷ 0.000197 = 1.446 × 10⁻².
+      "8 · Placing the decimal point by estimate",
+      // The HP-35 shows numbers outside one hundredth to 10 billion in scientific notation, the power
+      // of ten in its three rightmost places (Smithsonian record).
+      "21 · The HP-35 and the end of an era",
+    ],
+  },
+  {
+    id: "catalog.logarithms-as-exponents",
+    claim:
+      "Treats a common logarithm as the exponent to which 10 must be raised, reads logarithms and the numbers they belong to on a slide rule's L scale and in a printed table, and uses that inverse relationship to multiply, divide, and raise numbers to powers and roots.",
+    courseSlugs: ["the-slide-rule"],
+    lessons: [
+      // Pickworth's definition (the index of the power to which 10 must be raised), log 2 + log 4 =
+      // log 8, doubling a logarithm squares, dividing by 3 takes a cube root.
+      "1 · Multiplying by adding",
+      // The L scale: mantissa and characteristic, log 265 = 2.423, and back from 3.697 to 4,980.
+      "11 · Reading logarithms on the L scale",
+      // 36 to the power 1.414 and 717 to the power 3/5 by logarithms, and when not to use them.
+      "12 · Powers and roots by logarithms, with notes on CI and K",
+      // Briggs's base-10 logarithms, "in which the logarithm of unity is 0".
+      "14 · The 1614 table, and Briggs's \"better kind\" of logarithm",
+      // Table 4.1 of the 1964 federal handbook: mantissa, characteristic, antilogarithm, interpolation.
+      "15 · Reading a printed log table, and interpolating",
+    ],
+  },
+  {
+    id: "catalog.choosing-calculating-tools",
+    claim:
+      "Weighs calculating tools (a slide rule, a printed table, an alignment chart, a circular calculator, an electronic calculator) by what each can and cannot do, including how many figures each supports, and uses a prior estimate to catch errors any of them can produce.",
+    courseSlugs: ["the-slide-rule"],
+    lessons: [
+      // What limits a rule: scale length, cursor, fit, honest marks.
+      "4 · What to look for in a basic rule",
+      // Three figures as the rule's honest limit, and when that is enough.
+      "9 · How accurate is it, and why three figures is honest",
+      // What the Apollo crews' rule was used for and what the computers did instead.
+      "20 · Slide rules at Langley and on Apollo, and what they were not used for",
+      // What the calculator does not do: stop at three figures, or estimate.
+      "21 · The HP-35 and the end of an era",
+      // Alignment charts as a tool with its own strengths (Lipka's list).
+      "22 · Nomograms: a straightedge as a calculator",
+      // Circular calculators weighed against straight rules (Pickworth's advantages and disadvantages).
+      "23 · Circular rules, from Delamain's ring to the pocket watch",
+    ],
+  },
+  {
+    id: "catalog.slide-rule-figures-warranted",
+    claim:
+      "Reports a calculated result to the number of figures its measurements and the instrument support, and explains why carrying more figures than the data warrant overstates the accuracy of the result.",
+    courseSlugs: ["the-slide-rule"],
+    lessons: [
+      // Cullimore: significant figures, the prism of earth written 6900, "perilously near to lying
+      // with figures", one part in a thousand, Holman's rule; Pickworth's 0.15 per cent.
+      "9 · How accurate is it, and why three figures is honest",
+      // How many figures each scale can be read to: three on C and D, four at the left, two or three on A and B.
+      "5 · Stock, slide, cursor, and reading between the marks",
+      // A slide rule stopped you at three figures; a calculator will not.
+      "21 · The HP-35 and the end of an era",
+    ],
+  },
+
+  // ══ TOOLS-03 and TOOLS-04 · Surveying, and Reading a Land Description ═══════════════
+  //
+  // Narrow on purpose. TOOLS-03 asks learners to compute (pace lengths, chained distances, level
+  // notes, areas), but the platform cannot yet grade a produced number, so it claims only the
+  // judgment half: reporting each result to the accuracy its method supports. HSG.SRT.C.8 and
+  // HSG.GPE.B.7 are NOT claimed for that reason (see shared/common-core-math.ts). TOOLS-04's
+  // claims rest on lessons that quote the documents themselves, and every disagreement between
+  // sources is taught as a disagreement, never resolved by guessing.
+  {
+    id: "catalog.surveying-measurement-accuracy",
+    claim:
+      "Reports a hand-measured distance, elevation difference or area only to the accuracy its method supports, judged from the method's stated error, the measurer's own calibration spread, or a closed level loop's misclosure.",
+    courseSlugs: ["surveying-how-land-gets-measured"],
+    lessons: [
+      // Pacing against chaining on one line: the chain's 1 in 500 (Breed and Hosmer, sec. 16), the
+      // pace's own calibration spread, and three rules for the field book.
+      "7 · Practice: pace and chain the same line, and report each honestly",
+      // A level loop's misclosure decides how many decimals an elevation difference earns.
+      "13 · Balanced sights, the earth's curve, and how close a level line closes",
+      // An area inherits the uncertainty of the two lengths that made it.
+      "15 · Area from chains and triangles: acres, square chains, and the 640-acre section",
+    ],
+  },
+  {
+    id: "history.land-record-primary-sources",
+    claim:
+      "Has the learner read land-history primary sources (the 1785 Ordinance's text, a 1775 deed, a surveyor's own field entry) beside secondary accounts, and treats a conflict between careful sources as a limitation of the evidence to report rather than resolve by guessing.",
+    courseSlugs: ["reading-a-land-description"],
+    lessons: [
+      // The Ordinance quoted clause by clause from the text printed in White, and White's own 1983
+      // reading of its purchase provision flagged as an interpretation from the government's side.
+      "3 · The Land Ordinance of 1785, read as a primary source",
+      // The 1775 Piankeshaw deed read as the purchasers' document, with what it cannot tell us.
+      "7 · Metes and bounds, and a 1775 deed bounded in leagues along the Wabash",
+      // White (1803) against Wilson (1802-3, quoting Freeman's own entry), reported both ways.
+      "10 · How Indiana was surveyed: three origins, Freeman's lines, and the cessions the grid followed",
+      // IARA's own page giving 1807 and 1804 for one land office; the course states neither.
+      "12 · The records and who keeps them: field notes, plats, tract books, and the county surveyor",
+    ],
+  },
+  {
+    id: "civics.land-ordinance-and-northwest-ordinance",
+    claim:
+      "Explains what the Land Ordinance of 1785 and the Northwest Ordinance of 1787 provided and why each mattered to Indiana: the survey grid with its reservations, and the path from territory to statehood on an equal footing.",
+    courseSlugs: ["reading-a-land-description"],
+    lessons: [
+      "1 · Survey before sale: why a land description is a civic act",
+      // Both ordinances, the second summarized from White and the Manual, ending on what each gave
+      // Indiana.
+      "3 · The Land Ordinance of 1785, read as a primary source",
+      "10 · How Indiana was surveyed: three origins, Freeman's lines, and the cessions the grid followed",
+    ],
+  },
+
   // ══ MONEY-01 · Credit, and the Decisions Made About You ══════════════════════
   //
   // THE POINT OF THESE CLAIMS, STATED ONCE. Nineteen jurisdiction files in data/ carried a
@@ -5724,6 +5873,88 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "10 · Heat, oxygen and time: the stages of a pile",
       // Passive piles: "the potential for development of anaerobic conditions is greater".
       "12 · Turning, cold heaps, and worms",
+    ],
+  },
+
+  // ══ Map and Compass: Finding Your Way on Land (TOOLS-01) ═════════════════════
+  // Checked 2026-10-14 against scripts/data/map-and-compass-course.ts as written. Every computation
+  // below is worked in the lesson and assessed by multiple choice; the hands-on halves (measuring
+  // with a protractor, plotting on paper, drawing) are practiced but not graded, which is why the
+  // standards that ask a student to PRODUCE those are mapped as partial.
+  {
+    id: "catalog.map-scale-actual-distance",
+    claim:
+      "Computes actual ground distances and areas from a map's representative fraction and bar scale, and turns a ground distance back into a map distance.",
+    courseSlugs: ["map-and-compass"],
+    lessons: [
+      // 1:24,000 as 2,000 feet to the inch and 240 m to the centimeter; 3.5 in = 7,000 ft; 6.2 cm =
+      // 1,488 m; 1,200 m = 5 cm; a 1,000 m grid square = 1 km² ≈ 247 acres; a print at 90% is no
+      // longer 1:24,000.
+      "7 · Scale and distance",
+      // Rise over run read through the scale: 50 ft over 0.25 in at 1:24,000 is a 10 percent slope.
+      "8 · Contour lines: reading height and steepness",
+      // Ground to map: 320 m and 780 m become 13.3 mm and 32.5 mm at 1:24,000 to plot a GPS fix.
+      "34 · A GPS fix on the paper map",
+    ],
+  },
+  {
+    id: "catalog.utm-first-quadrant-coordinates",
+    claim:
+      "Reads a UTM grid as a first-quadrant coordinate plane (easting to the right, northing up, both positive because of a false origin), interprets what each coordinate says about the ground, and plots a coordinate read from a GPS onto the map.",
+    courseSlugs: ["map-and-compass"],
+    lessons: [
+      // "RIGHT and UP" as x then y; 546,000 m E = 46,000 m east of 87° W; the difference between two
+      // points as meters east and north.
+      "11 · The UTM grid: read right, then up",
+      // Grid references as squares named right-then-up from the southwest corner.
+      "12 · How precise is a grid reference?",
+      // Finding the grid square of a fix and measuring in from its corner.
+      "34 · A GPS fix on the paper map",
+    ],
+  },
+  {
+    id: "catalog.declination-angle-addition",
+    claim:
+      "Decomposes the angle between grid north and magnetic north on a declination diagram into the declination and the grid convergence, finds an unknown angle by addition or subtraction, and converts bearings by adding or subtracting the declination and 180 degrees.",
+    courseSlugs: ["map-and-compass"],
+    lessons: [
+      // Hindustan: 4°28' + 0°21' = 4°49'; the three other quads; the unknown d in 4°49' = d + 0°21';
+      // subtract when both lines lie on one side of true north.
+      "16 · Three norths, and declination",
+      // True to magnetic and back, by the USGS rule and by NCEI's equation, with wraparound past 360.
+      "17 · Correcting for declination without a sign error",
+      // Back bearings by adding or subtracting 180.
+      "18 · Taking a bearing and a back bearing",
+      // Right and left 90° turns as adding or subtracting 90 in the box detour.
+      "19 · Following a bearing",
+    ],
+  },
+  {
+    id: "catalog.measure-and-plot-bearings",
+    claim:
+      "Measures a bearing on a map with a protractor to the nearest degree, and sketches and plots a bearing of a given number of degrees clockwise from north.",
+    courseSlugs: ["map-and-compass"],
+    lessons: [
+      // Sketching a 60° bearing with a protractor before taking one in the field.
+      "18 · Taking a bearing and a back bearing",
+      // The workbook's protractor method, the Army's reading "to the nearest degree", and plotting a
+      // bearing from a known point.
+      "21 · A bearing from the map to the ground",
+    ],
+  },
+  {
+    id: "catalog.grid-reference-precision",
+    claim:
+      "Chooses how many digits of a grid reference to report from the limits of the measurement (the width of a pencil line at map scale, a phone's stated GPS accuracy) and declines precision the measurement cannot support.",
+    courseSlugs: ["map-and-compass"],
+    lessons: [
+      // Four, six, eight and ten digits as 1,000, 100, 10 and 1 m squares; a 0.5 mm pencil line is
+      // 12 m at 1:24,000; a 4.9 m phone fix does not support a 1 m reference.
+      "12 · How precise is a grid reference?",
+      // GPS.gov's 4.9 m and what degrades it.
+      "33 · Where GPS fails",
+      // Reporting a plotted phone fix to eight digits, not ten.
+      "34 · A GPS fix on the paper map",
     ],
   },
 ];

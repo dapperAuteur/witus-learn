@@ -7848,6 +7848,500 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["A dated price survey or extension source"],
     where: ["Extension small-flock marketing guides", "Fleece-show or fiber-festival sale reports"],
   },
+  // ── The Slide Rule (TOOLS-02), filed 2026-10-14 ──────────────────────────────────────────────────
+  {
+    key: "sr-e6b-scales-logarithmic",
+    title: "Are the E6B's computational scales logarithmic?",
+    course: "the-slide-rule",
+    lesson: "the-e6b-briefly",
+    quote: "The FAA handbook calls it a \"mechanical flight computer\" and does not say how its scales are graduated.",
+    severity: "medium",
+    question: "Are the scales on the computational (circular slide rule) side of a mechanical E6B flight computer logarithmic?",
+    claim: "Lesson 24 infers that they are, from the proportions and unit conversions the FAA handbook says flight computers solve, and labels the inference as not yet checked.",
+    stakes: "Medium: the lesson's explanation of why the E6B belongs in a slide-rule course rests on it.",
+    needs: ["A primary source (an E6B maker's instruction book, an FAA or military manual) that describes the computational scales, with page"],
+    where: ["FAA-H-8083-25C chapter 16 (read; silent on the scales)", "A public-domain military E6B manual (for example a 1940s Army Air Forces technical order)", "A current maker's E6B instruction book"],
+  },
+  {
+    key: "sr-ke-last-slide-rule",
+    title: "When did Keuffel & Esser make its last slide rule?",
+    course: "the-slide-rule",
+    lesson: "the-hp-35-and-the-end-of-an-era",
+    quote: "When Keuffel & Esser made its last slide rule anywhere is not settled by the sources this course has read: only the closing of the Hoboken plant in 1970 is recorded, and popular accounts that give a later date have not been checked.",
+    severity: "low",
+    question: "In what year did Keuffel & Esser manufacture its last slide rule, at any plant?",
+    claim: "Lesson 21 records only the 1970 closing of the Hoboken plant (Smithsonian record of the Analon, citing former curator Uta Merzbach) and leaves the last-production date open.",
+    stakes: "Low: a date in the end-of-an-era story; the lesson already says it is unsettled.",
+    needs: ["A dated primary or museum source naming K&E's last slide rule production, with quote"],
+    where: ["Smithsonian NMAH slide rule records (K&E objects of the 1970s)", "K&E corporate records or catalogs of the 1970s", "Journal of the Oughtred Society (link only; copyrighted)"],
+  },
+  {
+    key: "sr-l-scale-on-bams-rule",
+    title: "Where does the L scale sit on BAM's own rule?",
+    course: "the-slide-rule",
+    lesson: "reading-the-l-scale",
+    quote: "Where it sits on BAM's rule is shown in his video and is not yet recorded in this lesson.",
+    severity: "low",
+    question: "On the Mannheim-type rule BAM demonstrates with, is the L scale on the face of the stock, the face of the slide, or the back of the slide, and how is it read there?",
+    claim: "Lesson 11 teaches Pickworth's and Cullimore's back-of-slide L scale and notes that later rules moved it; it does not yet say where BAM's rule has it.",
+    stakes: "Low, but it must be settled before the P video: the written steps should match the rule on screen.",
+    needs: ["BAM's answer from his rule (and the maker and model), or a photo of its face and back"],
+    where: ["BAM's rule", "His two instruction booklets (Frederick Post; Acu-Rule no. 44), cited by title only"],
+  },
+  {
+    key: "sr-apollo-rules-per-mission",
+    title: "How many slide rules flew on each Apollo mission?",
+    course: "the-slide-rule",
+    lesson: "langley-and-apollo",
+    quote: "Neither says how many rules flew on each mission, and this course does not guess.",
+    severity: "low",
+    question: "How many Pickett N600-ES slide rules were carried on each of the first five Apollo flights, and by whom?",
+    claim: "Lesson 20 says the Pickett 600-ES was carried on the first five Apollo flights (NMAH) and that one example was used by the Apollo 13 crew (NASM), and declines to give a number per mission.",
+    stakes: "Low: a collector's claim of one or two per flight exists, seen only in a search summary.",
+    needs: ["A NASA stowage list or crew equipment record naming the slide rules per mission, with document and page"],
+    where: ["NASA Apollo stowage lists and crew compartment equipment records", "NASM and NMAH object files"],
+  },
+  // ── The Slide Rule (TOOLS-02), filed 2026-10-15 after the four-checker review ─────────────────────
+  {
+    key: "sr-napier-admonitio-word",
+    title: "What Latin word did Napier use for the people who compute a table?",
+    course: "the-slide-rule",
+    lesson: "the-human-computers",
+    quote: "Napier's 1614 note at the end of his table, in Macdonald's 1889 English translation, uses the word for a person",
+    severity: "low",
+    question: "In the Admonitio printed on the back of the last page of the 1614 Table of Logarithms, what Latin word does Napier use for the people who compute a table (Macdonald's 1889 English gives \"computors\")?",
+    claim: "Lesson 16 and its quiz quote the note as \"many computors\", now attributed to Macdonald's 1889 English translation (Notes, p. 87). The Smithsonian scan of the 1614 Descriptio (archive.org mirificilogarit00napi) does not include the Admonitio: its table ends at PDF p. 163, and Macdonald says the note \"is omitted in many copies\". Napier's own 1614 preface calls the people slowed by long multiplications \"Logistas\" (PDF p. 13).",
+    stakes: "Low: the lesson now says whose English the word is. If the Latin is calculatores or logistae, the attribution stays; if it is computatores or similar, the lesson can say Napier's own word was the root of \"computer\".",
+    needs: ["The Latin word, quoted from a 1614 copy that has the Admonitio, with the library, shelfmark or scan URL and the page"],
+    where: ["A 1614 Descriptio copy that includes the Admonitio after the Table (Macdonald's Catalogue lists 1614 copies)", "Wright's 1616 English translation, which may carry its own version of the note"],
+  },
+  {
+    key: "sr-hp-journal-1972",
+    title: "What does the June 1972 Hewlett-Packard Journal article say about the slide rule?",
+    course: "the-slide-rule",
+    lesson: "the-hp-35-and-the-end-of-an-era",
+    quote: "This course cites the title as the museum lists it; it has not read the article.",
+    severity: "low",
+    question: "Is the article by Whitney, Rodé and Tung in the Hewlett-Packard Journal of June 1972, pp. 2-9, titled \"The 'Powerful Pocketful': an Electronic Calculator Challenges the Slide Rule\", and what does it say about the slide rule?",
+    claim: "Lesson 21 quotes the title from the NMAH record of the HP-35 (ID 1982.0222.01, references) and says plainly that the course has not read the article.",
+    stakes: "Low: the lesson hedges openly. Reading the article would let it confirm the title and page range, quote what HP itself said about the slide rule, and drop the hedge.",
+    needs: ["The article's printed title and page range, and a short quote on the slide rule with its page, from the issue itself"],
+    where: ["Hewlett-Packard Journal, June 1972 (HP Computer Museum archive, hparchive.com)", "The NMAH HP-35 record's reference list (already read)"],
+  },
+
+  // ── Map and Compass: Finding Your Way on Land (map-and-compass), TOOLS-01 ──────────────────────
+  // Filed 2026-10-14 when the course was written. Brief and handoff:
+  // plans/future-courses/science-and-math/tool-usage/.
+  // mc-declination-2026-ncei was CLOSED 2026-10-15: NCEI's calculator (WMM-2025), queried for
+  // 14 October 2026 at each quad's center, gave Hindustan -4.782° (4°47' W, ±0.37°), Indianapolis
+  // East -5.100° (5°06' W), Belmont -4.858° (4°51' W), Elkinsville -4.845° (4°51' W), matching the
+  // course's estimates; lessons 16 and 17 now cite the calculator.
+  // Filed 2026-10-15 from the pre-merge fact check:
+  {
+    key: "mc-quad-coverage",
+    title: "Which US Topo sheets does each practice site spill onto?",
+    course: "map-and-compass",
+    lesson: "where-to-practice-near-indianapolis",
+    quote: "The sheet named for each holds the heart of the site, not always all of it",
+    severity: "low",
+    question:
+      "For Fort Harrison State Park, Morgan-Monroe State Forest, Yellowwood State Forest and the Charles C. Deam Wilderness, which 7.5-minute US Topo quads besides the one lesson 3 names does each property reach?",
+    claim:
+      "Lesson 3 names one quad per site and now says each named sheet holds the heart of the site, not always all of it; it says Fort Harrison's northern edge runs off the top of Indianapolis East, which the 2022 sheet shows (woods, Fall Creek and trails reach the north neatline). OpenStreetMap outlines (REPORTED, not citable) put parts of Fort Harrison on Fishers and McCordsville, Morgan-Monroe on Unionville, Modesto, Martinsville and Belmont, Yellowwood on Morgantown, Elkinsville, Hindustan, Story and Nashville, and the Deam on Allens Creek and Norman; the handoff also lists Bartlettsville for the Deam and Cumberland for Fort Harrison.",
+    stakes:
+      "A learner who downloads only the named sheet may plan a route onto ground the map does not show.",
+    needs: [
+      "For each site, the list of quads its official boundary touches, read from a citable boundary overlaid on the US Topo index",
+    ],
+    where: [
+      "The National Map's US Topo index with the DNR and Forest Service property boundaries",
+      "The neighboring 2022 US Topo sheets themselves",
+    ],
+  },
+  // mc-deam-walker-trail-rule and mc-deam-off-trail-practice were CLOSED 2026-10-15 (final read):
+  // the Hoosier National Forest's rules page (fs.usda.gov/r09/hoosier/about-area/rules-and-regulations,
+  // already cited in lesson 30) says under "Trail Use": "Hikers may hike anywhere except where an area is
+  // posted closed." Lesson 3 now quotes it and lesson 31 cites it. The practice-marker half was dropped:
+  // no lesson asks learners to place markers, and lesson 3 already quotes "Geocaching is prohibited."
+  {
+    key: "mc-triangle-of-error",
+    title: "A public-domain source for the triangle of error and the 90° reasoning",
+    course: "map-and-compass",
+    lesson: "finding-yourself",
+    quote: "the geometry is this course's explanation",
+    severity: "low",
+    question:
+      "Does a public-domain navigation text state that three lines of position form a small triangle whose size shows how good the bearings were, and that lines crossing at a shallow angle magnify bearing errors?",
+    claim:
+      "Lesson 22 explains why lines of position should cross near 90° and why a third line helps (the triangle it makes shows bearing quality). Neither backbone document says so: the workbook gives only \"to reduce potential errors\" (p. 131, Table 6-9) and the Army manual only \"For greater accuracy\" (printed p. 6-16). The lesson now marks the geometry as the course's own explanation.",
+    stakes: "Low: the reasoning is standard, but it is uncited.",
+    needs: ["A fetched federal or public-domain text that teaches the triangle of error, with its page"],
+    where: ["Federal navigation manuals (NOAA, U.S. Coast Guard, Forest Service training texts)"],
+  },
+  {
+    key: "mc-indiana-leaf-on",
+    title: "When are central Indiana's woods in leaf?",
+    course: "map-and-compass",
+    lesson: "difficult-terrain",
+    quote: "plan more dead reckoning while the trees are in leaf (roughly May to October)",
+    severity: "low",
+    question: "What are typical leaf-out and leaf-fall dates for deciduous forest in central and south-central Indiana?",
+    claim:
+      "Lesson 31 (and its section 6 quiz) gives the leaf-on period as roughly May to October. The Army manual gives only the principle that bare trees make terrain association easier (printed p. 13-9); no cited source gives Indiana dates.",
+    stakes: "Low: the planning advice holds, but the months are uncited.",
+    needs: ["A phenology source for central Indiana leaf-out and leaf-fall, fetched and quoted"],
+    where: ["USA National Phenology Network", "Purdue Extension forestry publications"],
+  },
+  {
+    key: "mc-pms475-satellite-count",
+    title: "Was PMS 475's \"29 satellites\" current when it was printed in 2016?",
+    course: "map-and-compass",
+    lesson: "how-a-receiver-finds-you",
+    quote: "The 2016 workbook says the space segment \"consists of 29 satellites circling the earth every 12 hours at 12,000 miles in altitude.\"",
+    severity: "low",
+    question:
+      "Was 29 the operational GPS satellite count in May 2016, or a figure carried over from the June 2007 edition of PMS 475?",
+    claim:
+      "Lesson 32 calls the workbook's 29 \"A number that went stale\", and the section 7 quiz says GPS.gov has since overtaken it. GPS.gov says 31 operational satellites have flown \"for well over a decade\" as of its July 3, 2023 count, which suggests 29 may already have been out of date in 2016.",
+    stakes: "Low: if 29 was out of date when printed, \"went stale\" misdescribes it.",
+    needs: [
+      "The satellite count in the June 2007 PMS 475 GPS chapter",
+      "A dated constellation status for 2007 and for 2016",
+    ],
+    where: ["The June 2007 PMS 475 (archived)", "NAVCEN constellation status", "Archived GPS.gov space segment pages"],
+  },
+  {
+    key: "mc-historic-declination-calculator",
+    title: "Which NCEI calculator covers the declination for an 1880s or 1890s quad?",
+    course: "map-and-compass",
+    lesson: "the-compass-and-the-map-in-history",
+    quote: "to look up the declination for the old quad's year and for today",
+    severity: "low",
+    question:
+      "Which NCEI calculator, \"Declination\" or \"U.S. Historic Declination\", computes declination for dates from 1884 to 1899, and with which model?",
+    claim:
+      "Lesson 35's exercise step 4 asks for the declination for the old quad's year. The oldest quads in the Historical Topographic Map Collection go back to 1884, and NCEI's calculator menu lists both a \"Declination\" and a \"U.S. Historic Declination\" calculator.",
+    stakes: "Low: a learner may pick a calculator that does not cover the year and get no answer or a wrong one.",
+    needs: ["Each calculator's stated date range and model, quoted from NCEI"],
+    where: ["NCEI geomagnetic calculators: https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml"],
+  },
+  {
+    key: "mc-dnr-day-visitor-hours",
+    title: "Indiana DNR hours for day visitors on state forest land",
+    course: "map-and-compass",
+    lesson: "where-to-practice-near-indianapolis",
+    quote: "could not be read for this lesson, so ask the forest office before any night walk that is not a camping trip",
+    severity: "medium",
+    question:
+      "Under 312 IAC 8-2 (and any Morgan-Monroe or Yellowwood posting), may a day visitor be on state forest land after dark without camping, and what are the hours?",
+    claim:
+      "Lesson 3 says Morgan-Monroe's page offers registered backcountry camping as the clear way to be there after dark, gives no day-visitor hours, and that the DNR rule on hours could not be read; lesson 30 repeats the camping route.",
+    stakes:
+      "A learner planning night practice on DNR land could break a rule, or be told the forest is closed when it is not.",
+    needs: ["The text of the hours provision in 312 IAC 8-2 with its section number", "Any property-specific posting for Morgan-Monroe and Yellowwood"],
+    where: ["Indiana Administrative Code, 312 IAC 8-2 (iar.iga.in.gov)", "Morgan-Monroe State Forest office, 765-342-4026", "DNR State Forest Property Regulations page"],
+  },
+  {
+    key: "mc-yellowwood-dispersed-camping",
+    title: "Yellowwood: dispersed or designated camping along the Tecumseh Trail?",
+    course: "map-and-compass",
+    lesson: "where-to-practice-near-indianapolis",
+    quote: "Ask the forest office which rule governs before you plan a night there",
+    severity: "medium",
+    question:
+      "Along the Tecumseh Trail at Yellowwood State Forest, is camping dispersed (at least a quarter mile from roads and 100 feet from the trail) or limited to designated areas?",
+    claim:
+      "Lesson 3 reports that the forest's web page allows dispersed camping a quarter mile from roads and 100 feet from the trail, while the property map (© 9/2021) says \"Camping in designated areas is allowed along this trail.\"",
+    stakes: "A learner could camp where it is not allowed, or skip a site where it is.",
+    needs: ["The forest office's answer on which rule governs", "Whether the property map is being revised"],
+    where: ["Yellowwood State Forest office", "https://www.in.gov/dnr/forestry/properties/yellowwood-state-forest/"],
+  },
+  {
+    key: "mc-pathfinder-reopening",
+    title: "When does Morgan-Monroe's Pathfinder orienteering course reopen?",
+    course: "map-and-compass",
+    lesson: "where-to-practice-near-indianapolis",
+    quote: "but the forest's page lists it as closed after the EF-2 tornado of June 18, 2026, with no reopening date given.",
+    severity: "low",
+    question: "Has the Pathfinder Trail Orienteering Course at Morgan-Monroe State Forest reopened, or been given a reopening date, since the June 18, 2026 tornado?",
+    claim: "Lesson 3 says the course is listed as closed after the EF-2 tornado, with no reopening date given.",
+    stakes: "Low: learners are pointed away from a closed course; the lesson should say so when it reopens.",
+    needs: ["The forest's current status for the Pathfinder Trail, with the date it was read"],
+    where: ["https://www.in.gov/dnr/forestry/properties/morgan-monroe-state-forest/", "Morgan-Monroe State Forest office"],
+  },
+  {
+    key: "mc-orienteering-body-indiana",
+    title: "Today's U.S. orienteering body and any Indiana clubs",
+    course: "map-and-compass",
+    lesson: "let-the-land-help",
+    quote: "That is a 2001 description; check the current body and its clubs before you go looking for an event.",
+    severity: "low",
+    question: "What is the current national orienteering body in the United States, which clubs serve Indiana, and what map scale and contour interval do their maps use today?",
+    claim:
+      "Lesson 24 reports the 2001 Army manual's description (United States Orienteering Federation, at least 70 clubs, 1:15,000 maps with a 5-meter interval) and marks it as dated.",
+    stakes: "Low: learners looking for an event might chase an out-of-date name.",
+    needs: ["The national body's own page", "Any Indiana club's page", "Current map specifications from the body or the international federation"],
+    where: [
+      "Orienteering USA, www.orienteeringusa.com, and its club list (the Morgan-Monroe Pathfinder brochure, revised May 2013 and already cited in lesson 24, points readers there rather than to the 2001 manual's \"United States Orienteering Federation\")",
+      "Indiana club websites",
+      "International Orienteering Federation map specifications",
+    ],
+  },
+  {
+    key: "mc-nwcg-pms475-revision",
+    title: "Does NWCG's revision of Basic Land Navigation change anything the course uses?",
+    course: "map-and-compass",
+    severity: "low",
+    question:
+      "NWCG says all its publications are under revision. Has a revised PMS 475 been issued, and does it change the pace definition, the declination advice, the GPS chapter or any page this course cites?",
+    claim:
+      "The course cites PMS 475 (May 2016) by page throughout, read from the Wayback copy of 2024-01-27 because nwcg.gov did not resolve.",
+    stakes: "Page locators and dated figures (the 2016 satellite count, Selective Availability) could drift from the current edition.",
+    needs: ["The current edition's date", "Any change to the pages cited (pp. ix, 12, 14, 34-38, 45, 66-71, 77, 81-91, 97-103, 111-134, 167-171)"],
+    where: ["https://www.nwcg.gov/publications/pms475", "The archived 2016 PDF for comparison"],
+  },
+  {
+    key: "mc-california-ccssm-grade-texts",
+    title: "Are 4.MD.6, 4.MD.7, 5.G.2 and 7.G.1 word for word in California's math standards?",
+    course: "map-and-compass",
+    severity: "medium",
+    question:
+      "In the California Common Core State Standards for Mathematics (Modified January 2013 Publication Version), do 4.MD.6, 4.MD.7, 5.G.2 and 7.G.1 match the CCSS text exactly, with no California (\"CA\") additions?",
+    claim:
+      "src/lib/standards/data/ca.ts shows these four codes for California through the shared Common Core math file and says the CDE's modified publication has not yet been compared.",
+    stakes: "A teacher reads the standard text on the course page; if California's wording differs, the page shows the wrong words.",
+    needs: ["The four standards' text from the CDE document, with page numbers"],
+    where: ["California Department of Education, Common Core State Standards for Mathematics (CDE PDF; use an archived copy if cde.ca.gov refuses automated reading)"],
+  },
+  {
+    key: "mc-read-alongside-book-details",
+    title: "Which year lesson 36 should give BAM's Army map-reading book",
+    course: "map-and-compass",
+    lesson: "capstone-your-own-route",
+    quote: "Check the edition and year of the copy you find.",
+    severity: "low",
+    question:
+      "Should lesson 36 date the Army book 2022, as BAM's file and the section 8 prompt do, or 2023, as its copyright page prints?",
+    claim:
+      "Title and copyright pages of BAM's copies, read 2026-10-15. Kals: title page \"Land Navigation Handbook\", subtitle \"The Sierra Club Guide to Map and Compass\", Sierra Club Books, San Francisco, and \"Copyright © 1983 by W.S. Kals\" (PDF pp. 5 and 6); lesson 36 now reads Kals, W. S. (1983), Sierra Club Books. Army: the title page reads \"The Official U.S. Army Map Reading and Land Navigation Handbook\", Department of the Army, Essex, Connecticut (PDF p. 2), so the lesson's title, with \"Handbook\", is right even though the brief and the shelf file name drop the word. Its copyright page (PDF p. 3) reads \"New Lyons Press edition published 2023\" over a 2004 Rowman & Littlefield copyright, while its page footers carry a 7/1/22 production stamp. Lesson 36 now names Lyons Press but keeps (2022) and \"A 2022 printing\", because the section 8 prompt says \"the 2022 Army handbook\" and a prompt reword resets that question's history.",
+    stakes: "Low: an APA entry a year off, and a learner may look for the wrong printing.",
+    needs: ["BAM's decision: cite (2023) per the copyright page and reword the section 8 prompt, or keep 2022"],
+    where: ["BAM's copy of the Army book, copyright page (PDF p. 3)"],
+  },
+  // ── Surveying: How Land Gets Measured (TOOLS-03) ──────────────────────────────────────────────
+  {
+    key: "surv-ncei-vincennes-1804",
+    title: "NOAA's historic declination for Vincennes in 1804, against Mansfield's 6° 45' E",
+    course: "surveying-how-land-gets-measured",
+    lesson: "magnetic-declination",
+    quote: "This course does not print the answer: the comparison is waiting on a check, and an answer printed here before anyone has done it would only be a guess.",
+    severity: "low",
+    question:
+      "What declination does the NOAA NCEI US Historic Declination Calculator give for Vincennes, Indiana, in 1804, and how does it compare with the 6° 45' E that Jared Mansfield observed there (White, p. 49)?",
+    claim:
+      "Lesson 9 quotes Mansfield's 6° 45' E and sends the learner to the calculator, deliberately printing no answer. Wilson (1916, p. 12) separately reports 6° 25' E at the Freeman Corner in 1806, which a reviewer may want to compare too.",
+    stakes:
+      "Low, and that is why it is an exercise rather than a claim: the calculator is 'typically accurate to 30 minutes of arc', so agreement within that margin is all it can show. Printing a guessed value would teach learners to trust a number nobody computed.",
+    needs: [
+      "The calculator's output for Vincennes (state the latitude and longitude used) for 1804, with the model it reports (USD polynomial or IGRF)",
+      "Whether it falls within 30 minutes of 6° 45' E",
+      "The date the calculator was run",
+    ],
+    where: [
+      "https://www.ngdc.noaa.gov/geomag-web/#ushistoric (NOAA NCEI)",
+      "White (1983), A History of the Rectangular Survey System, p. 49, for Mansfield's figure",
+    ],
+  },
+  {
+    key: "surv-ngs-datasheet-tool",
+    title: "Which current NGS tool a learner should use to look up a survey mark's datasheet",
+    course: "surveying-how-land-gets-measured",
+    lesson: "bench-marks-and-the-law",
+    quote: "Which NGS tool a learner should use today is waiting on a check, so this course names the agency and not a page.",
+    severity: "low",
+    question:
+      "What is the National Geodetic Survey's current public tool for finding survey marks near a location and opening a mark's datasheet, and what are its steps?",
+    claim:
+      "Lesson 14 quotes NOAA's classroom activity, whose step-by-step clicks (the 'NGS Datasheet Retrieval Page') describe an older version of the NGS site, so it names the agency but no page.",
+    stakes:
+      "Low: a learner can still find NGS, but a working link and steps would make the lesson's mark-recovery exercise usable as written.",
+    needs: ["The tool's name and URL", "The steps from a place name or coordinates to a datasheet", "The date checked"],
+    where: ["https://geodesy.noaa.gov/ (National Geodetic Survey)", "NOAA's current educational materials on survey marks"],
+  },
+  {
+    key: "surv-indiana-legal-survey-statute",
+    title: "Does Indiana's statute match the Boone County definition of a 'legal survey'?",
+    course: "surveying-how-land-gets-measured",
+    lesson: "the-tools-and-the-limits",
+    quote: "In Indiana, the Boone County surveyor's office defines a legal survey as \"a survey prepared by a registered land surveyor with notice to all adjoining landowners to resolve property disputes.\"",
+    severity: "low",
+    question:
+      "Does the text of IC 36-2-12-10 (the county surveyor's legal survey record) define a 'legal survey' as the special procedure, with notice to all adjoining owners, used to resolve property disputes, as the Boone County surveyor's page summarizes it?",
+    claim:
+      "Lesson 2 quotes the Boone County, Indiana, surveyor's page (a Tier B county summary that cites IC 36-2-12 but does not quote it). The statute itself has not been read verbatim: Justia returned 403 during the 2026-10-14 brief, and during the 2026-10-15 fact check FindLaw returned 403 and Justia did not respond. A later 2026-10-15 attempt reached FindLaw's page for sec. 36-2-12-10 only through a summarizing fetch tool (REPORTED, not read): it describes a legal survey record book, a landowner establishing a boundary line by legal survey, notice to adjoining owners by registered or certified mail at least 20 days before the survey and within 10 days after filing, and a 180-day appeal to the circuit court. Whether the statute's own words match the county's phrase 'to resolve property disputes' is still open.",
+    stakes:
+      "Low to medium. If the county's summary is loose, learners get a wrong legal definition, and if the notice procedure is narrower or broader than the summary says, a learner could think every ordinary retracement survey needs notice to all adjoining owners. Lesson 2 is already marked for the licensed land surveyor's read (QR), who can settle this at the same time.",
+    needs: [
+      "The text of IC 36-2-12-10, quoted, with the year of the Code read",
+      "Whether 'legal survey' is the notice procedure for resolving disputes only, or a broader category",
+    ],
+    where: [
+      "Indiana General Assembly, Indiana Code Title 36, Article 2, Chapter 12 (iga.in.gov)",
+      "The licensed land surveyor reviewing lesson 2",
+    ],
+  },
+  {
+    key: "surv-manual-chain-foot-update",
+    title: "Has BLM moved the Manual's chain from the U.S. survey foot to the international foot?",
+    course: "surveying-how-land-gets-measured",
+    lesson: "gunters-chain",
+    quote: "The Manual defines the chain \"in terms of the U.S. Survey Foot\", and says the difference from the international foot is \"very small, on the order of 2 parts per million\" (sec. 2-43).",
+    severity: "low",
+    question:
+      "Since NIST retired the U.S. survey foot on January 1, 2023, has the Bureau of Land Management issued a Manual update, a supplement or an instruction memorandum that defines the chain for PLSS work in international feet?",
+    claim:
+      "Lesson 5 quotes the 2009 Manual (sec. 2-43), which defines the chain in U.S. survey feet, and then NIST's page, which says those units (the chain, link, rod, pole, perch and acre among them) were previously defined only in terms of the U.S. survey foot and that from January 1, 2023 relationships are available in terms of the international foot. It does not say whether BLM has changed the Manual.",
+    stakes:
+      "Low: the sentence is accurate about the 2009 Manual, but if BLM has adopted the international foot the lesson should say 'in its 2009 edition' and name the later instruction.",
+    needs: [
+      "The BLM document (Manual edition, supplement or instruction memorandum number), its date and the passage, quoted, or a statement that none exists as of the date checked",
+    ],
+    where: [
+      "BLM Cadastral Survey pages and the Manual of Surveying Instructions page (blm.gov)",
+      "BLM instruction memoranda on the U.S. survey foot transition",
+      "NIST's U.S. survey foot page, 'Resources' and the Federal Register notices it lists",
+    ],
+  },
+  // ── Reading a Land Description (TOOLS-04) ─────────────────────────────────────────────────────
+  {
+    key: "land-vincennes-office-year",
+    title: "The year Indiana's first land office opened at Vincennes: 1804 or 1807?",
+    course: "reading-a-land-description",
+    lesson: "the-records-and-who-keeps-them",
+    quote: "This course states neither year until a primary record settles it, and a check has been filed to do that.",
+    severity: "medium",
+    question:
+      "In what year did the federal land office at Vincennes open for business, as shown by a primary record (the office's first entries, its register's commission, or a Treasury or GLO document)?",
+    claim:
+      "Lesson 12 reports that IARA's own land-records page says 'The first land office in Indiana opened in 1807 at Vincennes' and, in a list on the same page, 'Vincennes (1804)', and that White (p. 48) summarizes the Act of March 26, 1804 as establishing land offices at Vincennes, Detroit and Kaskaskia. It states neither year.",
+    stakes:
+      "Medium: the date anchors when the first Indiana purchases could be entered, which matters to anyone dating a family's land purchase from the tract books.",
+    needs: [
+      "The opening year with the primary record it rests on, quoted, with a locator",
+      "Whether the 1804 figure refers to the act establishing the office and the 1807 figure to the first sales, or one of them is simply wrong",
+      "Note when reading IARA: its 1804 list says the offices \"were established in Indiana proper\", while its 1807 sentence says the office \"opened\"; confirm or rule out that the two years date different events (lesson 12 now says the page may be dating two events)",
+    ],
+    where: [
+      "The Vincennes tract books on the Indiana Digital Archives (the earliest entry dates)",
+      "American State Papers, Public Lands, for the register and receiver appointments",
+      "IARA reference staff",
+    ],
+  },
+  {
+    key: "land-indiana-civil-vs-survey-townships",
+    title: "How Indiana's civil townships relate to its survey townships",
+    course: "reading-a-land-description",
+    lesson: "the-grid-under-your-roads",
+    quote: "How Indiana's civil townships relate to its survey townships, where they match and where they do not, is not something this course has established from a primary source, so it does not claim either way.",
+    severity: "low",
+    question:
+      "What does Indiana law or a primary state source say about how civil townships (units of local government) were drawn relative to the PLSS survey townships, and where do they differ?",
+    claim:
+      "Lesson 11 separates the two meanings of 'township' and says it has not established how they relate. Indiana Civics (state-civics-in, lesson 5) teaches that every acre lies within a civil township but does not draw the distinction either.",
+    stakes:
+      "Low, but it is a common confusion: a learner reading a deed's 'T. 17 N.' beside a ballot's township name could assume they are the same unit.",
+    needs: ["The governing statute or a state source, quoted, with a locator", "One or two worked examples of a civil township that does and does not match a survey township"],
+    where: ["Indiana Code Title 36, Article 6 (townships)", "IARA or the Indiana State Library on township formation", "County commissioners' records of township creation"],
+  },
+  {
+    key: "land-clark-knox-old-survey-grid",
+    title: "What the 'old survey grid' is in Clark and Knox counties",
+    course: "reading-a-land-description",
+    lesson: "the-grid-under-your-roads",
+    quote: "Starkey does not say what that \"old survey grid\" was, and this course has not confirmed it from a primary source, so it leaves the question open rather than guess.",
+    severity: "low",
+    question:
+      "What earlier survey sets the diagonal road grid Starkey (1956, p. 193) found in Clark and Knox counties, 'diagonal to the township-range survey but parallel to the old survey grid'? For example, the French and Vincennes-area claims in Knox County, or a grant in Clark County.",
+    claim: "Lesson 11 quotes Starkey and leaves the identity of the older grid open.",
+    stakes: "Low: a sentence of explanation, but a guessed one would put an unverified claim about pre-federal land titles in front of learners.",
+    needs: ["The survey or grant that sets each county's older grid, from a primary source or the Manual's tables, with a locator"],
+    where: [
+      "The 2009 Manual, table 3-2 and its notes on private land claims",
+      "White (1983), on the French claims at Vincennes and on grants outside the rectangular system",
+      "The original plats for Knox and Clark counties at IARA or the Internet Archive collection",
+      "Lead, not a source for the grid itself: IARA's land-records page ('Land Records at the Indiana State Archives') says the only Indiana lands not federally surveyed and sold before settlement are \"the lands around Vincennes settled by the French and George Rogers Clark's Grant around Clarksville\", the same two counties Starkey names",
+    ],
+  },
+  {
+    key: "land-indiana-outside-rectangular-survey",
+    title: "How much of Indiana lies outside the rectangular survey, and how is it described?",
+    course: "reading-a-land-description",
+    lesson: "survey-before-sale",
+    quote: "If you own land in Indiana, or rent it, or pay taxes on it, its description almost certainly begins with this survey.",
+    severity: "low",
+    question:
+      "Which Indiana lands were never part of the rectangular (PLSS) survey, such as Clark's Grant in Clark County and the French claims and Vincennes Tract lots at Vincennes, how large are they, and are their parcels described today by metes and bounds or by some other system?",
+    claim:
+      "Lesson 1 says an Indiana parcel's description 'almost certainly' begins with the PLSS survey. The hedge exists because the course has not sized the exceptions. IARA's land-records page names two ('the lands around Vincennes settled by the French and George Rogers Clark's Grant around Clarksville') but gives no area.",
+    stakes:
+      "Low: the hedge is honest, but a learner in Clark or Knox County may hold a description that does not begin with a township and range at all, and the course does not yet tell them so.",
+    needs: [
+      "The exceptions named and sized (acres or townships), each from a primary or federal source, with a locator",
+      "Whether parcels in those areas are described by metes and bounds, by numbered grant lots, or both, with one public-record example",
+    ],
+    where: [
+      "White (1983), on Clark's Grant and the Vincennes donation lands",
+      "The 2009 Manual, on private land claims and nonrectangular surveys (sec. 10-33 and its notes)",
+      "IARA and Indiana State Library documentation of the Clark's Grant and Vincennes surveys",
+      "American State Papers, Public Lands, for the Vincennes claims",
+    ],
+  },
+  {
+    key: "land-wells-cornerstone-dates",
+    title: "Were Wells County's government corners really set between 1805 and 1823?",
+    course: "reading-a-land-description",
+    lesson: "a-visit-to-the-county-surveyor",
+    quote: "Wells County adds that its corners \"are usually found near the centerlines of the County's roads,\" and counts 1,384 cornerstones set by government surveyors between 1805 and 1823.",
+    severity: "low",
+    question:
+      "In what years did the original government surveyors actually set the section and quarter corners in the townships that make up Wells County, Indiana, according to the original field notes and plats?",
+    claim:
+      "Lessons 11 and 13, and two section 3 quiz items, repeat the Wells County surveyor's page: '1384 cornerstones in Wells County that was originally set by Government Land Surveyors starting in 1805 finishing in 1823'. The 1805 start may describe Indiana's surveys in general rather than this county's: the course has not confirmed when the land that became Wells County was ceded or first surveyed.",
+    stakes:
+      "Low: the count and the end year are the county's own, but if the start year is not Wells County's, the course presents a statewide date as a county fact.",
+    needs: [
+      "The earliest and latest dates corners were set in the Wells County townships, quoted from the field notes with township, range and page",
+      "If the work began after 1805, lesson 13's sentence recast as the county page's own statement",
+    ],
+    where: [
+      "Internet Archive collection 'Indiana PLSS Notes and Plats' (archive.org/details/@indiana_historical_land_records)",
+      "National Archives catalog 566714 (compiled Indiana land survey notes)",
+      "IndianaMap's Historical Indiana PLSS Township Record Viewer",
+      "The Wells County Surveyor's Office",
+    ],
+  },
+  {
+    key: "land-moved-vs-lost-corner",
+    title: "Is a slightly moved corner worse than a lost one?",
+    course: "reading-a-land-description",
+    lesson: "a-visit-to-the-county-surveyor",
+    quote: "Disturbing a government survey corner can be a federal crime (18 U.S.C. 1858), and a corner moved even a little can do more harm than one lost, because the next person to measure from it may inherit the error without knowing it.",
+    severity: "low",
+    question:
+      "Does the Manual of Surveying Instructions, a court decision or a surveying text compare a disturbed or moved original corner with a lost one, and say which does more harm to later surveys?",
+    claim:
+      "Lesson 13 says a corner moved a little 'can do more harm than one lost'. The reasoning (a lost corner is restored by proportionate measurement, Manual sec. 7-1, while a moved one may be accepted as found) is the course's own; no fetched source ranks the two. The section 3 quiz prompt 'Why is a corner moved a little worse than one lost?' still states it flatly.",
+    stakes:
+      "Low: the advice (never move a corner) stands either way, but the comparison is presented to learners without a source.",
+    needs: [
+      "A passage that compares a moved or disturbed corner with a lost one, quoted, with a locator; or a statement that none was found, in which case the hedge stays",
+    ],
+    where: [
+      "The 2009 Manual, chapter V (obliterated corners and evidence) and chapter VI",
+      "Court decisions on disturbed original monuments",
+      "The licensed land surveyor reviewing the course",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

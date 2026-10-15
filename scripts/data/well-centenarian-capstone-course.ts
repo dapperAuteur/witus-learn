@@ -182,14 +182,14 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
           {
             prompt: "How many hallmarks does the 2023 revision propose, and how many were added?",
             options: [
-              "Twelve, with four added: inflammation, dysbiosis, intercellular communication, macroautophagy",
-              "Twelve, with three added to the original nine",
+              "Twelve, with four added, including dysbiosis",
+              "Twelve, with two added, including dysbiosis",
               "Nine, unchanged from the original framework",
               "Fourteen, with five added to the original nine",
             ],
             correctIndex: 0,
             explanation:
-              "The last three named in the list, plus disabled macroautophagy, are the additions. Knowing the count and the additions is what lets a coach recognise the framework when a product borrows it.",
+              "The last three named in the list, plus disabled macroautophagy, are the additions. Knowing the count and the additions is what lets a coach recognize the framework when a product borrows it.",
             sourceLessonSlug: "the-twelve-hallmarks",
           },
           {
@@ -248,13 +248,13 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
             prompt: "What is 'senescence' as a hallmark?",
             options: [
               "Cells stop dividing but persist and signal; senolytics target them",
-              "The progressive loss of stem cell populations with age",
+              "The progressive loss of stem cell populations, which slows tissue repair with age",
               "The accumulation of DNA damage that triggers cell death",
               "The gradual shortening of telomeres across cell divisions",
             ],
             correctIndex: 0,
             explanation:
-              "Persisting and signalling is what makes senescent cells a target: they are not simply dead, they are actively contributing.",
+              "Persisting and signaling is what makes senescent cells a target: they are not simply dead, they are actively contributing.",
             sourceLessonSlug: "the-twelve-hallmarks",
           },
           {
@@ -396,14 +396,14 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
           },
           {
             prompt: "What is 'geroscience'?",
-            options: ["The field studying the biology of aging itself, not its individual diseases","The clinical specialty treating older adults","The study of exceptional longevity in centenarians","The application of aging biology to drug development"],
+            options: ["The study of aging biology itself, not single diseases","The clinical specialty treating older adults","The study of exceptional longevity in centenarians","The application of aging biology to drug development"],
             correctIndex: 0,
             explanation: "It is the framing that makes the hallmarks a research agenda rather than a list of pathologies.",
             sourceLessonSlug: "what-a-capstone-is-for",
           },
           {
             prompt: "What does 'capstone' mean here, and what is the smallest part?",
-            options: ["Grading claims, synthesising pillars, and a protocol project; the final quiz is smallest","Reviewing the six pillars and testing retention; the project is smallest","Summarising each course and adding new evidence; the quiz is largest","Teaching longevity biology and prescribing a protocol; measurement is smallest"],
+            options: ["Grading, synthesis, and a protocol project; the final quiz is smallest","Reviewing the six pillars and testing retention; the project is smallest","Summarizing each course and adding new evidence; the quiz is largest","Teaching longevity biology and prescribing a protocol; measurement is smallest"],
             correctIndex: 0,
             explanation: "Not a summary. Three things, with the final quiz explicitly the least of them.",
             sourceLessonSlug: "what-a-capstone-is-for",
@@ -417,35 +417,35 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
           },
           {
             prompt: "What is 'the evidence gap' in this course's vocabulary?",
-            options: ["The distance between mechanistic knowledge and demonstrated human outcomes","The absence of long-term follow-up in longevity trials","The difference between animal and human findings","The lag between publication and clinical adoption"],
+            options: ["The distance between mechanism and proven human outcomes","The absence of long-term follow-up in longevity trials","The difference between animal and human findings","The lag between publication and clinical adoption"],
             correctIndex: 0,
             explanation: "Nearly all longevity claims are sold in that gap, and learning to see it is most of what this course teaches.",
             sourceLessonSlug: "what-a-capstone-is-for",
           },
           {
             prompt: "What is 'senescence' as a hallmark?",
-            options: ["Cells stop dividing but persist and signal; senolytics target them","Progressive loss of stem cell populations","Accumulated DNA damage triggering cell death","Telomere shortening across divisions"],
+            options: ["Cells stop dividing but persist and signal","Progressive loss of stem cell populations","Accumulated DNA damage triggering cell death","Telomere shortening across divisions"],
             correctIndex: 0,
-            explanation: "Persisting and signalling is what makes senescent cells a target: they are not simply dead, they are actively contributing.",
+            explanation: "Persisting and signaling is what makes senescent cells a target: they are not simply dead, they are actively contributing.",
             sourceLessonSlug: "the-twelve-hallmarks",
           },
           {
             prompt: "What is 'inflammaging'?",
-            options: ["Chronic low-grade inflammation with age, added in the 2023 revision","The acute inflammatory response, which slows with age","Inflammation from accumulated senescent cells specifically","The inflammatory component of age-related disease"],
+            options: ["Chronic low-grade inflammation with age, a 2023 addition","The acute inflammatory response, which slows with age","Inflammation from accumulated senescent cells specifically","The inflammatory component of age-related disease"],
             correctIndex: 0,
             explanation: "One of the four additions. Knowing which are new is part of knowing the framework rather than reciting a list.",
             sourceLessonSlug: "the-twelve-hallmarks",
           },
           {
             prompt: "What does the hallmarks framework explain about single-target interventions?",
-            options: ["Why they disappoint: aging is not one thing and the hallmarks interconnect","Why they succeed: each hallmark can be addressed independently","Why they are untested: no trial has isolated a single hallmark","Why they are expensive: each requires a separate compound"],
+            options: ["Why they disappoint: aging is many interconnected processes","Why they succeed: each hallmark can be addressed independently","Why they are untested: no trial has isolated a single hallmark","Why they are expensive: each requires a separate compound"],
             correctIndex: 0,
             explanation: "It also explains why lifestyle factors touching several at once outperform ones touching a single pathway.",
             sourceLessonSlug: "the-twelve-hallmarks",
           },
           {
             prompt: "Which classes of compound does the lesson name as animal-supported and medically owned?",
-            options: ["Senolytics, rapamycin analogues, metformin for aging, NAD precursors","Antioxidants, multivitamins, omega-3s, probiotics","Statins, metformin, aspirin, hormone therapy","Creatine, collagen, melatonin, magnesium"],
+            options: ["Senolytics, rapamycin analogues, metformin for aging, NAD precursors","Antioxidants, multivitamins, omega-3 fatty acids, and probiotics","Statins, blood-pressure drugs, low-dose aspirin, hormone therapy","Creatine, collagen peptides, melatonin, magnesium glycinate"],
             correctIndex: 0,
             explanation: "Supported by animal work and small human pilots, and medical territory a coach has no business recommending.",
             sourceLessonSlug: "the-twelve-hallmarks",
@@ -466,42 +466,42 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
           },
           {
             prompt: "What is 'unpatentable' pointing at?",
-            options: ["The shared property of the replicated list, and part of why it is marketed least","The reason lifestyle interventions cannot be studied in trials","The absence of commercial funding for behavioural research","The legal status of dietary and exercise recommendations"],
+            options: ["A partial reason the replicated list is marketed least","The reason lifestyle interventions cannot be studied in trials","The absence of commercial funding for behavioral research","The legal status of dietary and exercise recommendations"],
             correctIndex: 0,
-            explanation: "Unglamorous, unpatentable, and almost entirely behavioural, which is exactly the profile of things nobody advertises.",
+            explanation: "Unglamorous, unpatentable, and almost entirely behavioral, which is exactly the profile of things nobody advertises.",
             sourceLessonSlug: "what-replicates",
           },
           {
             prompt: "What is the striking thing about the convergent list's overlap with this program?",
-            options: ["The pillars came from a credential's structure and the epidemiology points at the same targets","The list was derived from the pillars, so agreement is expected","The pillars were chosen after reviewing the epidemiology","The overlap is partial, with two pillars unsupported"],
+            options: ["A credential and the epidemiology found the same targets separately","The list was derived from the pillars, so agreement is expected","The pillars were chosen after reviewing the epidemiology","The overlap is partial, with two pillars unsupported"],
             correctIndex: 0,
             explanation: "Two completely different starting points arriving at almost the same seven items.",
             sourceLessonSlug: "what-replicates",
           },
           {
             prompt: "What four criteria make the observational longevity evidence credible despite confounding?",
-            options: ["Large effect sizes, graded dose-responses, replication across unrelated populations, dense mechanisms","Randomization, blinding, pre-registration, and replication","Large samples, long follow-up, low dropout, and adjustment","Consistency, coherence, temporality, and specificity"],
+            options: ["Large effects, graded dose-response, replication, mechanisms","Randomization, blinding, pre-registration, and replication","Large samples, long follow-up, low dropout, and adjustment","Consistency, coherence, temporality, and specificity"],
             correctIndex: 0,
             explanation: "They give the findings weight without licensing causal language, which is why the honest verb stays 'associated with'.",
             sourceLessonSlug: "what-replicates",
           },
           {
             prompt: "What is the coaching posture stated at the end of lesson 3?",
-            options: ["Do the unglamorous things that replicate, describe them accurately, and wait forty years","Focus on the largest effect sizes and defer the rest","Combine behavioural and pharmacological approaches as evidence permits","Prioritise the pillars a client is most willing to work on"],
+            options: ["Do what replicates, say it accurately, and wait forty years","Focus on the largest effect sizes and defer the rest","Combine behavioral and pharmacological approaches as evidence permits","Prioritize the pillars a client is most willing to work on"],
             correctIndex: 0,
             explanation: "The modest honest claim over forty years rather than the inflated one over four weeks.",
             sourceLessonSlug: "what-replicates",
           },
           {
             prompt: "What is a 'graded dose-response', and why does it matter here?",
-            options: ["Outcomes improving progressively with exposure; it is one criterion making an association credible","A threshold above which benefit appears; it identifies a target","A curve flattening at high exposure; it identifies a ceiling","A linear relationship; it establishes causation"],
+            options: ["Outcomes improving steadily with exposure; one sign of credibility","A threshold above which benefit appears; it identifies a target","A curve flattening at high exposure; it identifies a ceiling","A linear relationship; it establishes causation"],
             correctIndex: 0,
             explanation: "It is much harder to produce by confounding than a single contrast, which is what strengthens a causal reading of observational data.",
             sourceLessonSlug: "what-replicates",
           },
           {
             prompt: "What is 'lifespan' in this course's vocabulary?",
-            options: ["Total years lived; the outcome marketing promises and no human trial has moved","The maximum years achievable given a person's genetics","The years lived beyond the population average","The span between birth and functional decline"],
+            options: ["Total years lived, which no human trial has yet moved","The maximum years a person's genetics would allow in ideal conditions","The years lived beyond the population average","The span between birth and functional decline"],
             correctIndex: 0,
             explanation: "No intervention has been shown in a randomized trial to extend it, which is the gap the whole course is built around.",
             sourceLessonSlug: "what-a-capstone-is-for",
@@ -515,7 +515,7 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
           },
           {
             prompt: "Why does the course say this list is 'the spine of the rest of the course'?",
-            options: ["Everything mechanistic, proprietary, or promising-but-unproven was stripped out first","It is the only material with randomized evidence behind it","It was assembled from the six pillars the program teaches","It matches the certifying bodies' own recommendations"],
+            options: ["Everything proprietary or unproven was stripped out first","It is the only material with randomized evidence behind it","It was assembled from the six pillars the program teaches","It matches the certifying bodies' own recommendations"],
             correctIndex: 0,
             explanation: "What remains shows up across very different populations, methods, and decades, which is what makes it a spine rather than a summary.",
             sourceLessonSlug: "what-replicates",
@@ -529,7 +529,7 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
           },
           {
             prompt: "Which is missing from the convergent list, and where does it appear instead?",
-            options: ["Supplements, fasting protocols, and branded lifestyles; in the contested section","Sleep and social connection; in the pillar courses","Strength training; in WELL-02's movement material","Nothing; the list is comprehensive"],
+            options: ["Supplements and fasting protocols; in the contested section","Sleep and social connection; in the pillar courses","Strength training; in WELL-02's movement material","Nothing; the list is comprehensive"],
             correctIndex: 0,
             explanation: "They appear in the next section, and they appear there because the evidence puts them there.",
             sourceLessonSlug: "what-replicates",
@@ -635,9 +635,9 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           {
             prompt: "The defining gap in longevity science today is that:",
             options: [
-              "No intervention has been shown in a randomized trial to extend human lifespan",
+              "No intervention has extended human lifespan in a randomized trial",
               "The biological mechanisms of aging remain entirely unmapped",
-              "Behavioural factors have been shown to have no measurable effect",
+              "Behavioral factors have been shown to have no measurable effect",
               "Randomized trials have shown several compounds extend human lifespan",
             ],
             correctIndex: 0,
@@ -648,7 +648,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           {
             prompt: "The 2023 revision proposes how many hallmarks of aging?",
             options: [
-              "Twelve, adding disabled macroautophagy, chronic inflammation, and dysbiosis",
+              "Twelve, including chronic inflammation and dysbiosis",
               "Nine, unchanged from the original 2013 framework",
               "Five, after consolidation of overlapping mechanisms",
               "Twenty, following the addition of organ-specific hallmarks",
@@ -700,7 +700,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           {
             prompt: "Why does this course frame the fitness target as 'move up one band'?",
             options: [
-              "One MET is achievable for most untrained people and carries about 13 percent of mortality risk",
+              "One MET is achievable and worth about 13 percent of mortality risk",
               "Because fitness gains above the lowest band produce no further benefit",
               "Because the evidence only applies to people below 7.9 METs",
               "Because measuring METs precisely requires laboratory testing",
@@ -765,7 +765,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           {
             prompt: "How large was the cardiorespiratory-fitness meta-analysis?",
             options: [
-              "33 studies, 102,980 participants, 6,910 deaths in the all-cause analysis",
+              "33 studies, 102,980 participants and 6,910 deaths",
               "38 studies, 1,907,580 participants and 63,087 deaths",
               "148 prospective studies, 308,849 participants",
               "65 records, classified by strength of demographic evidence",
@@ -817,7 +817,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           {
             prompt: "What was the low-versus-high fitness comparison?",
             options: [
-              "All-cause mortality RR 1.70 (1.51-1.92), low fitness against high",
+              "All-cause mortality RR 1.70 for low fitness against high",
               "All-cause mortality RR 0.87 for high fitness against low",
               "All-cause mortality RR 1.39 for low fitness against high",
               "All-cause mortality RR 2.20 for low fitness against high",
@@ -999,7 +999,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           {
             prompt: "Which sleep figures does lesson 6 assemble?",
             options: [
-              "Short sleep RR 1.12, clearest below six hours; long sleep 1.39, causality left open",
+              "Short sleep RR 1.12, clearest below six hours; long 1.39, causality open",
               "Short sleep RR 1.39; long sleep 1.12, both established as causal",
               "Short sleep RR 1.12 and long sleep 1.39, both requiring intervention",
               "Seven to nine hours as the target, with no risk ratios established",
@@ -1051,7 +1051,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           {
             prompt: "What is 'the week as design unit'?",
             options: [
-              "Building one realistic week containing every pillar, not six parallel programs",
+              "One realistic week containing every pillar, not six programs",
               "Reviewing progress weekly rather than monthly",
               "Planning training in weekly blocks rather than daily sessions",
               "Assigning one pillar to each day of the week",
@@ -1109,7 +1109,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           },
           {
             prompt: "What is 'risk ratio per unit', and why does it make CRF actionable?",
-            options: ["The risk change per one-unit increase; it turns fitness into a target rather than a description","The ratio of risks between the highest and lowest groups; it shows the range","Risk expressed per year of follow-up; it standardises across studies","The ratio adjusted for each unit of confounder; it removes bias"],
+            options: ["Risk change per one-unit increase; it makes fitness a target","The ratio of risks between the highest and lowest groups; it shows the range","Risk expressed per year of follow-up; it standardizes across studies","The ratio adjusted for each unit of confounder; it removes bias"],
             correctIndex: 0,
             explanation: "One MET is small and achievable, and worth roughly 13 percent of all-cause mortality risk in this data.",
             sourceLessonSlug: "cardiorespiratory-fitness",
@@ -1123,14 +1123,14 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           },
           {
             prompt: "What is 'appendicular muscle mass'?",
-            options: ["The muscle of the arms and legs, most relevant to function in older adults","Total muscle mass excluding water weight","The muscle lost during energy restriction","Muscle mass expressed relative to height"],
+            options: ["The muscle of the arms and legs, key to function","Total muscle mass excluding water weight","The muscle lost during energy restriction","Muscle mass expressed relative to height"],
             correctIndex: 0,
             explanation: "The compartment that decides whether someone can stand up from a chair, which is why it appears in both the strength and the fasting lessons.",
             sourceLessonSlug: "strength-and-muscle",
           },
           {
             prompt: "What is 'functional independence', and what protects it?",
-            options: ["Managing daily life unaided; strength and balance work protect it more directly than mortality data conveys","Living without assistance from family; social connection protects it","Freedom from chronic disease; medical management protects it","Cognitive capacity for daily decisions; novelty protects it"],
+            options: ["Managing daily life unaided; strength and balance work protect it","Living without assistance from family; social connection protects it","Freedom from chronic disease; medical management protects it","Cognitive capacity for daily decisions; novelty protects it"],
             correctIndex: 0,
             explanation: "Combined with WELL-02's falls evidence and WHO's 65-plus recommendation, resistance training stops being aesthetic.",
             sourceLessonSlug: "strength-and-muscle",
@@ -1151,7 +1151,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           },
           {
             prompt: "What does WELL-01's adherence finding look like at the scale of a life?",
-            options: ["The pillars are a system that either supports itself or unravels together","Behaviour change becomes harder as more pillars are added","Content knowledge matters less than the coach's consistency","Adherence declines predictably across a multi-decade horizon"],
+            options: ["A system that either supports itself or unravels together","Behavior change becomes harder as more pillars are added","Content knowledge matters less than the coach's consistency","Adherence declines predictably across a multi-decade horizon"],
             correctIndex: 0,
             explanation: "The client who walks more sleeps better, and the one with people expecting them at a Tuesday session does all three.",
             sourceLessonSlug: "the-pillars-priced",
@@ -1853,14 +1853,14 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           },
           {
             prompt: "Why does the course not quote the age-record-fraud figures?",
-            options: ["It could not verify that work's specific numbers, so it gives direction only","The work has been retracted since publication","The figures apply only to regions outside the review's scope","The critique was addressed and resolved by later analysis"],
+            options: ["The numbers could not be verified; only the direction is given","The work has been retracted since publication","The figures apply only to regions outside the review's scope","The critique was addressed and resolved by later analysis"],
             correctIndex: 0,
             explanation: "The direction of the concern is consistent with the review's own finding that these statistics are fragile, so the concern is taught and the numbers are not.",
             sourceLessonSlug: "blue-zones-after-scrutiny",
           },
           {
             prompt: "What is 'time-restricted eating'?",
-            options: ["Confining intake to a daily window, tested in TREAT against structured meals","Restricting calories on alternate days","Eating only during daylight hours to align with circadian timing","Restricting intake to two meals a day"],
+            options: ["Confining intake to a daily eating window","Restricting calories on alternate days","Eating only during daylight hours to align with circadian timing","Restricting intake to two meals a day"],
             correctIndex: 0,
             explanation: "TREAT tested sixteen-eight against three structured meals and found no significant weight advantage.",
             sourceLessonSlug: "restriction-and-fasting",
@@ -1881,14 +1881,14 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           },
           {
             prompt: "What is the relevant question about fasting protocols?",
-            options: ["Not 'does fasting work' but 'does it beat an equal calorie deficit'","Not 'does fasting work' but 'which protocol works best'","Not 'does fasting work' but 'is it safe long term'","Not 'does fasting work' but 'which populations suit it'"],
+            options: ["Not 'does fasting work' but 'does it beat an equal deficit'","Not 'does fasting work' but 'which protocol works best'","Not 'does fasting work' but 'is it safe long term'","Not 'does fasting work' but 'which populations suit it'"],
             correctIndex: 0,
             explanation: "The comparator question from WELL-04 applied here. Against nothing most deficits work; the question is whether the protocol adds anything.",
             sourceLessonSlug: "restriction-and-fasting",
           },
           {
             prompt: "What did Villareal's primary outcome measure, and over what period?",
-            options: ["Physical Performance Test score change from baseline to six months","Body weight change over twelve months","Lean mass and bone density over two years","All-cause mortality over a median 20.7 years"],
+            options: ["Physical Performance Test change over six months","Body weight change over twelve months","Lean mass and bone density over two years","All-cause mortality over a median 20.7 years"],
             correctIndex: 0,
             explanation: "Secondary outcomes included other frailty measures, body composition, bone density, and physical functions.",
             sourceLessonSlug: "restriction-and-fasting",
@@ -1902,7 +1902,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           },
           {
             prompt: "What is 'weight-loss-induced sarcopenia and osteopenia'?",
-            options: ["Muscle and bone lost alongside fat during a deficit, accelerated in older adults","Muscle and bone loss caused by ageing independently of weight change","The frailty that follows rapid unintentional weight loss in illness","Bone loss specific to very-low-energy diets"],
+            options: ["Muscle and bone lost with fat in a deficit, worse in older adults","Muscle and bone loss caused by aging independently of weight change","The frailty that follows rapid unintentional weight loss in illness","Bone loss specific to very-low-energy diets"],
             correctIndex: 0,
             explanation: "Attenuated by resistance training, which is the finding the whole lesson turns on.",
             sourceLessonSlug: "restriction-and-fasting",
@@ -1916,7 +1916,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           },
           {
             prompt: "What did COSMOS randomise, and for how long?",
-            options: ["Older adults to cocoa extract, a multivitamin, both, or neither; median 3.6 years","Older adults to a multivitamin or placebo; median 10 years","Adults with cardiovascular risk to cocoa or usual care; two years","Older adults to four supplement combinations; median 5 years"],
+            options: ["Cocoa, a multivitamin, both, or neither; median 3.6 years","Older adults to a multivitamin or placebo; median 10 years","Adults with cardiovascular risk to cocoa or usual care; two years","Older adults to four supplement combinations; median 5 years"],
             correctIndex: 0,
             explanation: "Followed for cardiovascular events and cancer. A factorial design testing two agents at once.",
             sourceLessonSlug: "the-supplement-autopsy",
@@ -1958,7 +1958,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           },
           {
             prompt: "What is 'achieved versus prescribed restriction'?",
-            options: ["The gap between what a trial asked and what participants delivered: 25 became 11.9","The difference between what a client agrees to and what they report","Variation in restriction across participants within a trial","The reduction in prescribed restriction as adherence falls"],
+            options: ["What a trial asked for versus what participants delivered","The difference between what a client agrees to and what they report","Variation in restriction across participants within a trial","The reduction in prescribed restriction as adherence falls"],
             correctIndex: 0,
             explanation: "It means CALERIE's results describe roughly 12 percent restriction rather than the 25 percent its name implies.",
             sourceLessonSlug: "restriction-and-fasting",
@@ -2900,10 +2900,10 @@ This is required rather than optional, because it is the only part of the capsto
           {
             prompt: "CALERIE's participants, prescribed 25 percent restriction, achieved about 12 percent. The trial measured:",
             options: [
-              "Cardiometabolic risk markers, not cardiovascular events or mortality",
+              "Cardiometabolic risk markers, not events or deaths",
               "All-cause mortality across a twenty-year follow-up",
               "Cardiovascular events in participants with existing disease",
-              "Nothing measurable at all, because participant adherence to the restriction was too poor to analyse",
+              "Nothing measurable at all, because participant adherence to the restriction was too poor to analyze",
             ],
             correctIndex: 0,
             explanation:
@@ -3053,7 +3053,7 @@ This is required rather than optional, because it is the only part of the capsto
           {
             prompt: "Recite the convergent list, and say what it lacks.",
             options: [
-              "Fitness, strength, not smoking, 7-9 hours sleep, social integration, plant-forward eating, everyday movement; no supplement or compound",
+              "Fitness, strength, no smoking, sleep, connection, plant-forward eating, movement; no compound",
               "Fitness, strength, caloric restriction, sleep, connection, Mediterranean diet; no supplement",
               "Fitness, strength, sleep, connection, fasting, minimally processed eating; no branded lifestyle",
               "Exercise, diet, sleep, stress management, connection, targeted supplementation",
@@ -3065,7 +3065,7 @@ This is required rather than optional, because it is the only part of the capsto
           {
             prompt: "Why is 'associated with' the honest verb even here?",
             options: [
-              "Nearly all of it is observational; adjustment never eliminates group differences",
+              "Nearly all of the evidence is observational",
               "The effect sizes are too small to support causal language",
               "The findings have not replicated in independent populations",
               "The mechanisms are not understood well enough to claim causation",
@@ -3089,7 +3089,7 @@ This is required rather than optional, because it is the only part of the capsto
           {
             prompt: "Which fitness boundary did the review pick out, and why?",
             options: [
-              "7.9 METs: those at or above it had substantially lower mortality and event rates",
+              "7.9 METs: at or above it, mortality was lower",
               "10.9 METs: the threshold defining the high-fitness band",
               "5.0 METs: below which no association was detectable",
               "None; the review used continuous fitness without bands",
@@ -3156,7 +3156,7 @@ This is required rather than optional, because it is the only part of the capsto
           {
             prompt: "What survives the Blue Zones scrutiny?",
             options: [
-              "Plant-forward diets, incidental activity, social ties, low smoking: all already on the replicated list",
+              "Plant-forward diets, activity, social ties, low smoking",
               "The dietary patterns, which the demographic critique does not touch",
               "Nothing; the concept should be discarded entirely",
               "The social components, the only features common to all zones",
@@ -3168,7 +3168,7 @@ This is required rather than optional, because it is the only part of the capsto
           {
             prompt: "What did CALERIE prescribe, achieve, and measure?",
             options: [
-              "Prescribed 25 percent restriction, achieved 11.9; measured risk markers, not outcomes",
+              "Prescribed 25 percent, achieved 11.9; measured risk markers",
               "Prescribed 11.9 percent, achieved 25; measured mortality over two years",
               "Prescribed 25 percent, achieved 25; measured cardiovascular events",
               "Prescribed 25 percent, achieved 11.9; measured mortality and events",
@@ -3180,19 +3180,19 @@ This is required rather than optional, because it is the only part of the capsto
           {
             prompt: "What did the TREAT trial find and conclude?",
             options: [
-              "0.26 kg between-group difference, not significant; TRE alone is not more effective than eating all day",
-              "2.6 kg difference favouring time-restricted eating, significant at twelve weeks",
+              "0.26 kg difference, not significant; TRE alone is no better",
+              "2.6 kg difference favoring time-restricted eating, significant at twelve weeks",
               "No weight change in either group, with lean mass preserved equally",
-              "Weight loss favouring TRE, with lean mass also favouring it",
+              "Weight loss favoring TRE, with lean mass also favoring it",
             ],
             correctIndex: 0,
-            explanation: "Energy intake did not differ, and appendicular lean mass index favoured the CONTROL group in the in-person cohort.",
+            explanation: "Energy intake did not differ, and appendicular lean mass index favored the CONTROL group in the in-person cohort.",
             sourceLessonSlug: "restriction-and-fasting",
           },
           {
             prompt: "What did Villareal find about lean mass and bone density?",
             options: [
-              "Lean mass fell 3 percent combined, 2 percent resistance, 5 percent aerobic; hip density 1, 0.5, and 3 percent",
+              "Aerobic alone lost most: lean mass 5 percent, hip density 3 percent",
               "Lean mass fell equally across all exercise arms; only density differed",
               "Lean mass fell 5 percent combined and 3 percent aerobic; density was preserved",
               "Both were preserved in all exercise arms and fell only in the control",
@@ -3216,7 +3216,7 @@ This is required rather than optional, because it is the only part of the capsto
           {
             prompt: "What happened in the COSMOS cocoa arm?",
             options: [
-              "Primary missed (CV events HR 0.90, P = 0.11); a secondary hit (CV death 0.73)",
+              "Primary missed (HR 0.90); a secondary, CV death, hit at 0.73",
               "Primary hit (CV events HR 0.73); secondaries all null",
               "Both primary and secondary endpoints reached significance",
               "Primary missed and no secondary reached significance",
@@ -3240,7 +3240,7 @@ This is required rather than optional, because it is the only part of the capsto
           {
             prompt: "Where does protocol design start, and at what dose?",
             options: [
-              "From the week, not the pillars; doses at the low end, deliberately smaller than the impressive version",
+              "From the week, not the pillars; doses at the low end",
               "From the weakest pillar, at the dose the evidence identifies as optimal",
               "From the client's strongest pillar, at whatever dose they will sustain",
               "From the six pillars in turn, at the midpoint of each guideline range",
@@ -3264,19 +3264,19 @@ This is required rather than optional, because it is the only part of the capsto
           {
             prompt: "What should be measured mostly, rarely, and not at all?",
             options: [
-              "Mostly behaviour; rarely fitness and strength; ignore nightly stages and single-morning HRV",
-              "Mostly capacity; rarely behaviour; ignore subjective ratings",
-              "Mostly outcomes; rarely behaviour; ignore device data entirely",
+              "Mostly behavior; rarely capacity; ignore nightly stages",
+              "Mostly capacity; rarely behavior; ignore subjective ratings",
+              "Mostly outcomes; rarely behavior; ignore device data entirely",
               "Mostly subjective state; rarely outcomes; ignore capacity testing",
             ],
             correctIndex: 0,
-            explanation: "Behaviour responds immediately and you control it. Capacity changes slowly, so once or twice a year sees the trend without generating anxiety.",
+            explanation: "Behavior responds immediately and you control it. Capacity changes slowly, so once or twice a year sees the trend without generating anxiety.",
             sourceLessonSlug: "what-to-measure",
           },
           {
             prompt: "What does 'design for revision rather than for optimality' mean?",
             options: [
-              "A protocol tuned to this year is more fragile than a rougher one that survives rebuilding",
+              "A rougher plan that survives rebuilding beats a tuned one",
               "Protocols should be revised on a fixed schedule regardless of circumstances",
               "Optimality should yield to simplicity so clients can follow it unaided",
               "Each revision should improve on the last toward an optimal version",

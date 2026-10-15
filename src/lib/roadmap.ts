@@ -41,6 +41,32 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   school-wide pass share that doubles as the length-balance campaign's progress bar; it states that a
   database figure can differ slightly from lint. Follow-up: \`tests/isolation/quiz-integrity.db.test.ts\`
   has not run against a database.
+- 🔧 **The Slide Rule, TOOLS-02** (\`feat/course-the-slide-rule\`, no migration; after merge run
+  \`pnpm seed:courses:prod\`). BAM approved the brief on 2026-10-14. Seven sections, 25 lessons, 599 questions
+  (seven section quizzes and a final of 40 serving 10): why it works (logarithms made physical, a paper
+  rule), the instrument (what to look for, reading the scales), C and D (multiplication, division and
+  proportion, the decimal point by estimate, why three figures is honest), A, B and L (squares and roots,
+  the L scale, powers by logarithms, CI and K), before the slide rule (Napier's rods, the 1614 table and
+  Briggs, a printed log table, the human computers), from Gunter's line to the Moon (Oughtred and Delamain
+  read side by side, Mannheim, Langley and Apollo, the HP-35), and charts and circles (nomograms, circular
+  rules, the pilot's E6B, a capstone of Cullimore's printed problems). Every worked number comes from
+  Pickworth (1920), Cullimore (1920), Lipka (1918), the 1964 federal handbook or the FAA's pilot handbook, or
+  is plain arithmetic. Claims 8.EE.A.3, 8.EE.A.4,
+  HSF-BF.B.5, HSN-Q.A.3 and MP5; four research checks filed. Public and free, held for BAM's demonstrations
+  in the lessons marked P (3 to 7, 10 to 13, 15, 22 and 25). Not yet: the ElementaryMBA copy (needs his OK on
+  a seed-registry test change), STAGED_COURSES (after seeding), and the E6B lesson in an aviation course.
+- 🔧 **Map and Compass: Finding Your Way on Land, TOOLS-01** (\`feat/course-map-and-compass\`, no migration; after
+  merge run \`pnpm seed:courses:prod\`). BAM approved the brief on 2026-10-14 and opened a new series, Tools That
+  Think (analog tools that work without electricity). Survival, also Rivers & Expeditions; public and free.
+  Eight sections, 36 lessons, 699 questions: the kit and where to practice near Indianapolis (four US Topo quads
+  and each site's rules), reading a topographic map, latitude-longitude and the UTM grid, the compass (parts, what
+  to look for when buying one, declination without a sign error), map and compass together, planning a route
+  (night navigation and difficult terrain included), GPS and where it fails, and a capstone route. Built from the
+  Army's 2001 FM 3-25.26 (public release; the restricted 2005 and 2013 editions are never used) and NWCG PMS 475,
+  teaching where the two disagree. Standards: CCSS 4.MD.C.6, 4.MD.C.7, 5.G.A.2, 7.G.A.1, HSN-Q.A.3; Indiana
+  5.CA.11, 7.GM.1 (partial where hand work is ungraded); NGSS 4-ESS2-2 not claimed. Eight lessons need a
+  qualified reviewer and seventeen need BAM's demonstration; eight research checks filed. Held for both.
+  Follow-ups: stage citations after seeding; DNR film agreement before P videos on DNR land.
 - 🔧 **Light on Set, CREW-03** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Eight
   sections, 27 lessons, 661 questions: what light does, hard and soft light from first principles, shaping
   light with what is already in the room (and the hacks the course refuses), natural light, key, fill and
@@ -48,6 +74,21 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   rules forbid). From federal manuals (TM 11-401-2, DI0370), Fuchs (1929), Luckiesh, NIST, CPSC and OSHA.
   Checked claim by claim (78 fixes) and question by question (56). Lessons needing a qualified reviewer
   (electrical, fire) or a practitioner are marked; seven research checks filed. Held for a named reviewer.
+- 🔧 **Surveying and Reading a Land Description, TOOLS-03 and TOOLS-04** (\`feat/course-surveying\`, no
+  migration; after merge run \`pnpm seed:courses:prod\`). BAM approved the surveying brief on 2026-10-14 and split
+  it in two. **Surveying: How Land Gets Measured** (Science & Math, Tools That Think 03): five sections, 17
+  lessons, 446 questions: what a survey is and what to look for in each tool, pacing and Gunter's chain,
+  bearings, declination and local attraction (and why the Manual bans the needle compass), differential
+  leveling and bench marks, and area from chains, coordinates and the planimeter. From the 2009 Manual, White's
+  BLM history, Breed and Hosmer (1912) and Gillespie (1883). **Reading a Land Description: The Grid, the Deed
+  and Indiana** (Civics, with Science & Math and Money & Property, Tools That Think 04): four sections, 13
+  lessons, 360 questions: the 1785 Ordinance read as a primary source, townships and aliquot parts, why the
+  original corners control, a 1775 Piankeshaw deed bounded in leagues, reading a deed, a description checklist,
+  and Indiana's survey, roads, records and county surveyors. Public and free, each held: for a licensed land
+  surveyor on the QR lessons, BAM's demonstrations (TOOLS-03) and filmed county surveyor visit (TOOLS-04), and
+  a Native reviewer on TOOLS-04's treaty-cession lessons 3, 7 and 10. Standards: HSN-Q.A.3; Indiana USH.10.2
+  and Grade 4 4.H.4 (partial). Five research checks filed. Sources linked, nothing uploaded yet; TOOLS-01 and
+  TOOLS-02 are in other branches.
 - 🔧 **Sound Craft, CREW-02** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Seven
   sections, 26 lessons, 583 questions: listening and the decibel, protecting your hearing (OSHA and NIOSH),
   field recording in nature (the Park Service protocol), recording in a theater and on a set, sounds made by

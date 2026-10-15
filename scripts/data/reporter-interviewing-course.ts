@@ -143,7 +143,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "What defines a source who did not seek this?",
             options: [
-              "They cannot predict what happens after publication",
+              "They cannot predict what will happen to them after publication",
               "They have declined to speak to reporters from other outlets first",
               "They are unwilling to be identified by name in any published piece",
               "They are speaking about somebody else rather than about themselves",
@@ -195,7 +195,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "What does minimizing harm NOT mean?",
             options: [
-              "Publishing nothing that hurts anyone",
+              "Publishing nothing that hurts anyone, or letting a source approve coverage",
               "Treating sources as human beings deserving of respect",
               "Showing compassion for those affected by coverage",
               "Using heightened sensitivity with inexperienced sources",
@@ -260,14 +260,14 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "Which disclosure do inexperienced sources most reliably not know?",
             options: [
-              "Permanence",
+              "Permanence: the piece may stay online and findable indefinitely",
               "That the reporter works for a specific outlet",
               "That an interview may be recorded",
               "That other people are being interviewed as well",
             ],
             correctIndex: 0,
             explanation:
-              "That the piece may live online indefinitely, be findable by search, cannot be removed later, and may be picked up elsewhere.",
+              "It also cannot be removed later and may be picked up elsewhere, and it is the part that most often changes an answer.",
             sourceLessonSlug: "informed-consent",
           },
           {
@@ -299,33 +299,33 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "How long do the five disclosures take?",
             options: [
-              "Under two minutes",
+              "Under two minutes, said in plain conversation rather than recited",
               "About ten minutes, which is why they are usually sent in writing",
               "A full pre-interview meeting, separate from the interview itself",
               "As long as the interview, since each point must be confirmed",
             ],
             correctIndex: 0,
             explanation:
-              "In plain conversation rather than recited, before recording starts, with a note in your file of what you said.",
+              "Before recording starts, with a note in your file of what you said.",
             sourceLessonSlug: "informed-consent",
           },
           {
             prompt: "When must consent be re-asked?",
             options: [
-              "When the story changes materially",
+              "When the story changes materially, especially toward their own conduct",
               "Whenever more than a week passes between interview and publication",
               "Each time a new source is added to the same story",
               "Only if the source requests a further conversation",
             ],
             correctIndex: 0,
             explanation:
-              "Especially when it turns toward the source's own conduct. Agreeing to talk about one subject is not agreeing to talk about a different one.",
+              "Agreeing to talk about one subject is not agreeing to talk about a different one.",
             sourceLessonSlug: "informed-consent",
           },
           {
             prompt: "What does consent never cover?",
             options: [
-              "Responsibility for harm",
+              "Responsibility for harm, which stays with the reporter",
               "The accuracy of the reporter's notes",
               "The right to quote the source by name",
               "The reporter's obligation to correct an error",
@@ -405,7 +405,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             options: [
               "You must protect the details that carry it",
               "You must decline to publish the story if any detail is identifying",
-              "You must obtain the agreement in writing before proceeding",
+              "You must get a signed agreement",
               "You must inform the subject of the story that a source is protected",
             ],
             correctIndex: 0,
@@ -470,7 +470,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             options: [
               "Entirely on the reporter's side",
               "With the editor, who makes the final selection of quotations",
-              "With the source, who may decline to be quoted at all",
+              "With the source alone",
               "With the outlet's legal review, which approves characterizations",
             ],
             correctIndex: 0,
@@ -507,7 +507,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "What often happens in the conversation after a story materially changes?",
             options: [
-              "The real interview finally happens",
+              "The real interview finally happens, on the story as it now stands",
               "The source withdraws consent for the original material",
               "The outlet requires a signed release before proceeding",
               "The reporter must start the five disclosures over from the beginning",
@@ -572,14 +572,14 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "What is the effect of a source not knowing they may decline a question?",
             options: [
-              "They usually answer it",
+              "They usually answer it, which is why the choices are listed",
               "They usually end the interview early",
               "They usually ask to go off the record",
               "They usually request a written question list",
             ],
             correctIndex: 0,
             explanation:
-              "Which is why the fifth disclosure lists the choices rather than assuming a source knows they exist.",
+              "Naming the choices in the fifth disclosure is what makes them available, rather than assuming a source knows they exist.",
             sourceLessonSlug: "informed-consent",
           },
           {
@@ -639,7 +639,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             options: [
               "So the source decides before anything is captured",
               "Because recording a disclosure would constitute a legal agreement",
-              "Because recorded disclosures cannot be corrected afterward",
+              "Because disclosures must be in writing",
               "Because recording law prohibits capturing preliminary conversation",
             ],
             correctIndex: 0,
@@ -689,7 +689,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "What makes an unsought source's consent structurally weaker than an official's?",
             options: [
-              "They cannot forecast the consequence",
+              "They cannot forecast the consequence of speaking",
               "They have no legal representation available to them",
               "They are usually speaking about a third party",
               "They cannot verify what the reporter tells them",
@@ -718,7 +718,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
               "It covers what the story was when they agreed",
               "It expires after a fixed period unless renewed in writing",
               "It applies only to the specific quotations recorded that day",
-              "It transfers to the outlet once the interview concludes",
+              "It passes to the outlet afterward",
             ],
             correctIndex: 0,
             explanation:
@@ -807,7 +807,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             prompt: "Which population is this course about?",
             options: [
               "Everyone who did not want to be interviewed",
-              "Officials, experts, advocates, and people with a message",
+              "Officials and experts",
               "Sources who have been quoted inaccurately in the past",
               "Anyone speaking about a matter currently before a court",
             ],
@@ -1029,14 +1029,14 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "How does a reporter find out whether retelling is welcome or costly?",
             options: [
-              "By asking",
+              "By asking them, since both reactions are common",
               "By observing whether the source becomes upset",
               "By checking with a family member beforehand",
               "By assuming it is costly and limiting the interview",
             ],
             correctIndex: 0,
             explanation:
-              "Both are common, and asking is not intrusive. Offer the choice between talking it through and answering only what you need.",
+              "Asking is not intrusive. Offer the choice between talking it through and answering only what you need.",
             sourceLessonSlug: "what-trauma-does",
           },
           {
@@ -1081,7 +1081,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "Whom was the trauma-informed framework originally written for?",
             options: [
-              "Services rather than journalism",
+              "Services, not journalism, which is why it needs translating",
               "Newsrooms covering disaster and conflict",
               "Courts handling testimony from vulnerable witnesses",
               "Researchers conducting interviews under ethics review",
@@ -1211,14 +1211,14 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "Where should an interview start?",
             options: [
-              "Where the source wants to start",
+              "With what the source would like you to understand first",
               "At the hardest moment, while attention is freshest",
               "With the reporter's most important question",
               "With biographical detail, to establish rapport",
             ],
             correctIndex: 0,
             explanation:
-              "Ask what they would like you to understand first. The material you need arrives more often, and more usably, from someone allowed to arrange their own account.",
+              "The material you need arrives more often, and more usably, from someone allowed to arrange their own account.",
             sourceLessonSlug: "control-and-choice",
           },
           {
@@ -1263,7 +1263,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "When is the stop rule actually tested?",
             options: [
-              "The first time it is used",
+              "The first time it is used, when it must be honored instantly",
               "When the reporter is closest to the material they need",
               "At the end of the interview, when the source reviews what was said",
               "After publication, when the source sees the piece",
@@ -1341,14 +1341,14 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "What is the account, in the account-versus-interpretation distinction?",
             options: [
-              "What the person experienced",
+              "What the person experienced, reportable as their account",
               "What the documents establish about the events",
               "What the reporter concludes from the evidence",
               "What other witnesses have independently confirmed",
             ],
             correctIndex: 0,
             explanation:
-              "It is theirs and reportable as their account. Cause, fault, and what it proves are separate claims requiring separate evidence.",
+              "It is theirs. Cause, fault, and what it proves are separate claims requiring separate evidence.",
             sourceLessonSlug: "what-trauma-does",
           },
           {
@@ -1432,14 +1432,14 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "What makes signposting cheap?",
             options: [
-              "It takes about four seconds",
+              "It takes about four seconds and removes the ambush",
               "It replaces the need for the five disclosures",
               "It shortens the interview by removing tangents",
               "It can be done in writing before the interview",
             ],
             correctIndex: 0,
             explanation:
-              "And it removes the ambush, which is the most expensive thing that can happen in this kind of conversation.",
+              "The ambush is the most expensive thing that can happen in this kind of conversation.",
             sourceLessonSlug: "control-and-choice",
           },
           {
@@ -1813,7 +1813,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             prompt: "How does the lesson suggest making refusal easy for a young person?",
             options: [
               "Say it is completely fine to say no and nothing happens if they do",
-              "Ask the guardian to leave so the answer is unpressured",
+              "Ask the guardian to leave the room so the young person's answer is unpressured",
               "Offer a written form they can decline without speaking",
               "Suggest they think it over and reply the following day",
             ],
@@ -1930,7 +1930,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             prompt: "What will a young person generally not say in front of a guardian?",
             options: [
               "Anything involving the guardian or that the guardian does not know",
-              "Anything about school, which they treat as private",
+              "Anything about school, since schools must approve what students tell reporters",
               "Anything they have already told a friend",
               "Anything that could be checked against a document",
             ],
@@ -2048,7 +2048,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             options: [
               "Say it is not what you asked about and ask if it is on the record",
               "Note it privately and decide at the editing stage",
-              "Use it if it is newsworthy, since it was volunteered",
+              "Use it if it is newsworthy, since the source volunteered it without being asked",
               "End the interview to prevent further disclosure",
             ],
             correctIndex: 0,
@@ -2152,7 +2152,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             options: [
               "The long-term searchability of a name attached to a difficult subject",
               "A permanent record of the interview held by the outlet",
-              "An identifier assigned to a source in the reporter's notes",
+              "An identifier assigned to a source in the reporter's notes and kept for later stories",
               "A photograph that cannot be removed once published",
             ],
             correctIndex: 0,
@@ -2724,7 +2724,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "Why is continuing an interview producing unpublishable material a problem?",
             options: [
-              "Continuing is just taking",
+              "Continuing is just taking, at a cost only the source bears",
               "It wastes the outlet's reporting time",
               "It creates a record that could be subpoenaed",
               "It obliges the reporter to use some of the material",
@@ -2802,7 +2802,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson recommend when you are the wrong reporter for an interview?",
             options: [
-              "Hand it over",
+              "Hand it over to somebody with more experience or time",
               "Proceed, since a filed story beats an unfiled one",
               "Bring a second reporter to the same interview",
               "Postpone until you have more experience",
@@ -2854,7 +2854,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "How long should a reporter stay reachable after publication?",
             options: [
-              "About a week",
+              "About a week, on a number that reaches a person",
               "Twenty-four hours, which is when reaction peaks",
               "Until the next story publishes",
               "Indefinitely, through the outlet's general contact address",
@@ -2906,14 +2906,14 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "What structure makes a follow-up possible at all?",
             options: [
-              "A beat",
+              "A beat, as the track's first course defines it",
               "A standing records request with the relevant agency",
               "A retainer arrangement with the source",
               "An editor's commitment to a series",
             ],
             correctIndex: 0,
             explanation:
-              "As the first course in this track defines it: a territory held over time, which is what lets a second story exist.",
+              "A territory held over time, which is what lets a second story exist.",
             sourceLessonSlug: "after-publication",
           },
           {
@@ -3127,14 +3127,14 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "Why stay a minute after ending an interview early?",
             options: [
-              "Abrupt stopping reads as rejection",
+              "Abrupt stopping reads as rejection after something hard",
               "Because the recorder must be formally switched off",
               "Because the source may want to add material",
               "Because leaving quickly suggests the material was unusable",
             ],
             correctIndex: 0,
             explanation:
-              "To a person who has just told you something hard, and the minute costs nothing.",
+              "And the minute afterward costs nothing.",
             sourceLessonSlug: "when-to-stop",
           },
           {
@@ -3426,7 +3426,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             prompt: "What does a reporter do if a source says they are in danger?",
             options: [
               "Stop, and give them a number for somebody whose job it is",
-              "Ask a careful follow-up to establish the details",
+              "Ask a careful follow-up to establish the details before deciding what to do",
               "Continue, and note the disclosure for the story",
               "Contact the authorities on their behalf",
             ],
@@ -3504,8 +3504,8 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             prompt: "What is assent, and how is it obtained?",
             options: [
               "The young person's own agreement, asked separately with refusal made easy",
-              "A guardian's countersignature on a release",
-              "A verbal confirmation recorded at the interview's start",
+              "A guardian's countersignature on a release, filed with the outlet before the interview",
+              "A verbal confirmation from the guardian, recorded as the interview begins",
               "An editor's approval to interview a minor",
             ],
             correctIndex: 0,
@@ -3517,8 +3517,8 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             prompt: "What does guardian permission settle?",
             options: [
               "That a responsible adult knows and agrees the interview is happening",
-              "That the young person understands what publication means",
-              "That the guardian's interest matches the young person's",
+              "That the young person understands what publication means for them years later",
+              "That the guardian's interest in the story matches the young person's own interest",
               "That the story will be good for the family",
             ],
             correctIndex: 0,
@@ -3609,8 +3609,8 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             options: [
               "Say it is not what you asked about and ask if it is on the record",
               "Record it and decide during editing",
-              "Use it, since it was freely volunteered",
-              "End the interview to prevent further disclosure",
+              "Use it, since it was freely volunteered and the source knew you were a reporter",
+              "End the interview immediately, before the source can disclose anything further",
             ],
             correctIndex: 0,
             explanation:
@@ -3634,7 +3634,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             prompt: "What do institutionally exposed sources frequently not know?",
             options: [
               "That detail identifies them and employers see social accounts",
-              "That reporters can be compelled to name them",
+              "That anything said before the recorder starts is automatically off the record",
               "That their employer must be asked for comment",
               "That recordings are retained after publication",
             ],
@@ -3701,7 +3701,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
               "They plainly do not understand what they are agreeing to",
               "They become emotional describing the events",
               "They ask how long the interview will take",
-              "They decline to answer a particular question",
+              "They decline to answer a particular question that the story depends on",
             ],
             correctIndex: 0,
             explanation:

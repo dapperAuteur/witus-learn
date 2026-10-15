@@ -176,7 +176,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
           {
             prompt: "What has an agency that does not answer the phone told you?",
             options: [
-              "Nothing",
+              "Nothing: an agency's silence is neither a denial nor a confirmation",
               "That the claim is likely true, since a denial would have been quick",
               "That the claim is disputed, which is itself reportable as a dispute",
               "That the story may run with the agency described as declining to comment",
@@ -189,7 +189,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
           {
             prompt: "When should the publication threshold be set?",
             options: [
-              "In advance, and written down",
+              "In advance, and written down as a single sentence",
               "At the moment of filing, when the full picture is available",
               "By the editor, once the draft has been read",
               "After the negative check has been run",
@@ -215,7 +215,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
           {
             prompt: "What is a reporter not obliged to do?",
             options: [
-              "Match a competitor's claim",
+              "Match a claim a competitor has already published",
               "Seek comment from the institution named in a story",
               "Record which facts are confirmed and which are not",
               "Set a publication threshold before reporting begins",
@@ -358,14 +358,14 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
           {
             prompt: "What can corroborated material do in print?",
             options: [
-              "Be stated with its support named",
+              "Be stated with its support named, so a reader can weigh it",
               "Be stated without qualification, like confirmed material",
               "Be attributed to a single source in the sentence",
               "Appear only in an enterprise piece, never a daily",
             ],
             correctIndex: 0,
             explanation:
-              "One solid source plus consistent circumstantial support, and the support is named so a reader can weigh it.",
+              "Corroborated means one solid source plus consistent circumstantial support.",
             sourceLessonSlug: "confidence-levels",
           },
           {
@@ -748,7 +748,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
           {
             prompt: "What should a reporter assume about the first version of anything?",
             options: [
-              "It is wrong in some detail",
+              "It is wrong in some detail, so hold what you cannot check",
               "It is broadly reliable if it comes from an official",
               "It is wrong about whether the event happened",
               "It is accurate about numbers and wrong about causes",
@@ -1696,7 +1696,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "Which echo pattern does the lesson call hardest to see?",
             options: [
               "Two people who were in the same room and have discussed it since",
-              "Two outlets citing an unnamed original",
+              "Two outlets citing each other's reports, or both citing one unnamed original",
               "A social post and its reprint elsewhere",
               "A document and someone briefed from it",
             ],
@@ -1826,7 +1826,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "What should be sent to an institution before publication?",
             options: [
               "The specific assertions you intend to publish about them, in writing",
-              "The full draft of the story for review",
+              "The full draft of the story, so their lawyers can review every line before it runs",
               "A list of every source you have spoken to",
               "The headline and the publication time",
             ],
@@ -1917,7 +1917,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "What is the negative check, in one question?",
             options: [
               "If this were wrong, what would be true instead and where would it show?",
-              "What further evidence would make this story stronger?",
+              "What further evidence would make this story stronger, and where should I look for it?",
               "Which of my sources is least reliable, and why?",
               "What would an editor most likely object to?",
             ],
@@ -1930,8 +1930,8 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "Why is the negative check necessary?",
             options: [
               "Supporting material exists for most claims, including false ones",
-              "Because editors require a documented counter-argument",
-              "Because sources withhold contrary evidence deliberately",
+              "Because editors require a documented counter-argument before any story is filed",
+              "Because sources deliberately withhold contrary evidence unless asked for it directly",
               "Because most stories contain at least one false element",
             ],
             correctIndex: 0,
@@ -2125,8 +2125,8 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "What is the oldest rule in the trade, and how is it routinely satisfied falsely?",
             options: [
               "Two sources, satisfied by two sources who are the same source",
-              "Seek comment, satisfied by a request nobody answered",
-              "Attribute everything, satisfied by an unnamed source",
+              "Seek comment, satisfied by a single voicemail left an hour before deadline",
+              "Attribute everything, satisfied by citing unnamed officials for every line",
               "Correct promptly, satisfied by a silent edit",
             ],
             correctIndex: 0,
@@ -2451,7 +2451,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             options: [
               "Publish, publish less, or hold and keep reporting",
               "Publish, correct, or retract",
-              "Publish, attribute, or anonymize",
+              "Publish, attribute everything to sources, or anonymize the subject",
               "Publish, delay, or reassign",
             ],
             correctIndex: 0,
@@ -2477,8 +2477,8 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             options: [
               "Sometimes a competitor runs it, and sometimes the moment passes",
               "The reporter's ability to report it later",
-              "The source's willingness to speak again",
-              "The outlet's legal position if it publishes afterward",
+              "The source's willingness to speak again, since they gave the interview for nothing",
+              "The outlet's legal protection, which lapses if the story is published later",
             ],
             correctIndex: 0,
             explanation:
@@ -2515,9 +2515,9 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "What does a held story need in order to stay alive?",
             options: [
               "A note of which line failed, what would settle it, and when to check",
-              "An editor's agreement to revisit it within a fixed period",
+              "An editor's written agreement to revisit it within a fixed period of thirty days",
               "A source who has agreed to remain available",
-              "A place in the outlet's planning calendar",
+              "A place in the outlet's planning calendar, with a run date already penciled in",
             ],
             correctIndex: 0,
             explanation:
@@ -2541,7 +2541,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "How should a reporter raise a verification problem with the desk?",
             options: [
               "Name the specific line the reporting does not support",
-              "Ask for more time to complete the reporting",
+              "Ask for more time to complete the reporting, and give a firm new deadline",
               "Say the story does not feel solid enough yet",
               "Suggest the piece run as an analysis instead",
             ],
@@ -2568,8 +2568,8 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             options: [
               "It remains unclear whether the vote preceded the contract signature",
               "Questions remain about the process",
-              "Some details could not be independently established",
-              "The full picture is not yet available",
+              "Some details could not be independently established before this story was published",
+              "The full picture is not yet available, and more will be reported as it emerges",
             ],
             correctIndex: 0,
             explanation:
@@ -2621,7 +2621,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
               "The evidence asymmetry, which is frequently the story",
               "The identity of whoever raised the dispute",
               "The date on which the dispute began",
-              "The institution's obligation to resolve it",
+              "The institution's legal obligation to resolve the dispute before publication",
             ],
             correctIndex: 0,
             explanation:
@@ -2672,7 +2672,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             options: [
               "A dated note saying what was wrong and what it now says",
               "A statement that the piece has been updated",
-              "An apology from the reporter and the editor",
+              "An apology signed by both the reporter and the editor who handled the story",
               "A link to the outlet's corrections policy",
             ],
             correctIndex: 0,
@@ -3099,7 +3099,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "Which line in a decomposed claim gets checked hardest?",
             options: [
               "The one that would most damage someone if wrong",
-              "The one in the headline",
+              "The one in the headline, since that is the line most readers see",
               "The one with the fewest sources",
               "The one the editor asked about",
             ],
@@ -3151,7 +3151,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "When is the making of a claim itself the news?",
             options: [
               "When an official alleged it, a suit asserts it, or a document says it",
-              "When two outlets have already reported it",
+              "When two outlets have already reported it, which makes the claim a matter of record",
               "When the subject has declined to comment",
               "When the claim concerns public money",
             ],
@@ -3215,7 +3215,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
           {
             prompt: "Where do most false claims live?",
             options: [
-              "In the gap between when material was made and when it surfaced",
+              "In genuine old material relabeled as new",
               "In fabricated documents produced to order",
               "In synthetic images generated by software",
               "In quotations attributed to the wrong person",
@@ -3255,8 +3255,8 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "What are the three information-disorder categories?",
             options: [
               "Misinformation, disinformation, malinformation",
-              "Error, rumor, fabrication",
-              "Bias, spin, propaganda",
+              "Error, rumor, and fabrication, sorted by how deliberate each is",
+              "Bias, spin, and propaganda, ranked by how far each one spreads",
               "Hoax, satire, parody",
             ],
             correctIndex: 0,
@@ -3280,7 +3280,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
           {
             prompt: "How should a reporter cover a false claim they must address?",
             options: [
-              "Lead with what is true, describe the claim in your own words",
+              "Lead with what is true; paraphrase the claim",
               "Quote the claim exactly so readers recognize it",
               "Open with the claim and refute it point by point",
               "Decline to cover it, since coverage amplifies it",
@@ -3320,8 +3320,8 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "Which is the hardest echo pattern to see?",
             options: [
               "Two people who were in the same room and have since discussed it",
-              "Two outlets citing each other",
-              "A social post and its reprint",
+              "Two outlets citing each other's reports, or both citing one unnamed original",
+              "A social post and its reprint on a second account, presented as a new witness",
               "A document and someone briefed from it",
             ],
             correctIndex: 0,
@@ -3372,7 +3372,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "What should be sent in writing before publication?",
             options: [
               "The specific assertions you intend to publish about them",
-              "The complete draft of the story",
+              "The complete draft of the story, so their lawyers can check each line",
               "A list of sources consulted",
               "The intended headline and publication time",
             ],
@@ -3411,7 +3411,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "What is the negative check?",
             options: [
               "If this were wrong, what would be true instead and where would it show",
-              "What further evidence would strengthen this",
+              "What further evidence would strengthen this story, and where to go looking for it",
               "Which source is weakest and why",
               "What an editor would most likely object to",
             ],
@@ -3463,13 +3463,13 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "What is actually being decided when a story is held?",
             options: [
               "Whether the file supports the sentence you would publish",
-              "Whether the underlying claim is true",
+              "Whether the underlying claim is true, which the file can usually settle",
               "Whether a competitor will publish first",
               "Whether the subject would object",
             ],
             correctIndex: 0,
             explanation:
-              "The second is not answerable from a file at 5:50, and confusing the two is what makes holding feel like failure.",
+              "Whether the claim is true is not answerable from a file at 5:50, and confusing the two questions is what makes holding feel like failure.",
             sourceLessonSlug: "not-publishing",
           },
           {
@@ -3478,7 +3478,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
               "Publish, publish less, or hold and keep reporting",
               "Publish, correct, or retract",
               "Publish, delay, or reassign",
-              "Publish, attribute, or anonymize",
+              "Publish, attribute everything to sources, or anonymize the subject",
             ],
             correctIndex: 0,
             explanation:
@@ -3489,8 +3489,8 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             prompt: "What does a held story need to stay alive?",
             options: [
               "A note of the failed line, the settling artifact, and a date to check",
-              "An editor's agreement to revisit it",
-              "A source who remains available",
+              "An editor's written agreement to revisit it within a fixed period of thirty days",
+              "A source who remains available and has promised not to speak to any rival outlet",
               "A slot in the outlet's planning calendar",
             ],
             correctIndex: 0,
@@ -3516,8 +3516,8 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             options: [
               "It remains unclear whether the vote preceded the signature",
               "Questions remain about the process",
-              "Some details could not be established",
-              "The full picture is not yet available",
+              "Some details could not be independently established before this story was published",
+              "The full picture is not yet available, and more will be reported as it emerges",
             ],
             correctIndex: 0,
             explanation:

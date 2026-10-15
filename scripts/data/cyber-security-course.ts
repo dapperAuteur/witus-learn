@@ -326,7 +326,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What does this course name as the common entry point into cybersecurity?",
             options: [
-              "SOC analyst",
+              "SOC analyst, watching and responding to alerts in security operations",
               "Penetration tester, once you hold an offensive security certification",
               "Governance, risk, and compliance auditor inside a regulated bank",
               "Cloud security architect designing controls for a large provider",
@@ -340,7 +340,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "What does the blue team do?",
             options: [
               "Performs authorized offense to find weaknesses before criminals do",
-              "Defends",
+              "Defends the organization's systems and networks against attackers",
               "Writes the governance policies the whole organization is audited on",
               "Builds the applications the security team is later asked to protect",
             ],
@@ -354,7 +354,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "Anything publicly reachable on the internet is fair game to scan",
               "Testing is legal as long as you report what you find afterward",
-              "Only systems you own or may test",
+              "Only touch systems you own or are explicitly authorized to test",
               "Permission is only needed once you move past read-only reconnaissance",
             ],
             correctIndex: 2,
@@ -378,7 +378,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What does DNS do when you open a web address?",
             options: [
-              "Turns the name into an IP address",
+              "Turns the human-readable name into the IP address to connect to",
               "Encrypts the connection before any page content is transferred",
               "Chooses which of the server's open ports the browser will use",
               "Checks the site's certificate against a list of trusted authorities",
@@ -392,7 +392,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "In what order do the steps happen when you type a URL?",
             options: [
               "TLS handshake, then the DNS lookup, then the TCP connection",
-              "DNS, then TCP, then TLS",
+              "DNS lookup first, then the TCP connection, then the TLS handshake",
               "TCP connection first, then DNS, and TLS only if the site asks for it",
               "A single packet carries the whole request, with no handshake at all",
             ],
@@ -406,7 +406,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "Integrity, because the encryption rewrites every file in place",
               "Confidentiality alone, since data is copied but never withheld",
-              "Availability",
+              "Availability, because you cannot reach your files, and often confidentiality too",
               "None of the three, since ransomware is a payment problem",
             ],
             correctIndex: 2,
@@ -420,7 +420,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "A motivated attacker, an unpatched server, and a missing backup copy",
               "An open port, a weak password, and an administrator who reuses it",
               "A regulation, an auditor, and a control the organization has skipped",
-              "A threat, a vulnerability, an asset",
+              "A threat that meets a vulnerability on an asset that has value",
             ],
             correctIndex: 3,
             explanation:
@@ -432,7 +432,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "Layering controls, so no one failure is fatal",
               "Applying the strongest possible control at the single weakest point",
-              "Spending the whole security budget on the outer network perimeter",
+              "Guarding only the perimeter",
               "Reducing the attack surface until only one control is ever needed",
             ],
             correctIndex: 0,
@@ -444,7 +444,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "Why does this course call the command line the biggest early force-multiplier?",
             options: [
               "Because graphical security tools are only sold to large enterprises",
-              "Tools, logs, and investigations live there",
+              "Tools, logs, and investigations all happen at the command line",
               "Because typing commands is faster than clicking through any console",
               "Because employers test typing speed during the technical interview",
             ],
@@ -472,7 +472,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "Only Linux, because every security tool worth running refuses Windows",
               "macOS and Linux, because they share the same underlying command shell",
               "Whichever one your first employer runs, learned after you are hired",
-              "Linux for servers, Windows for enterprises",
+              "Linux, which runs most servers and security tools, and Windows, which runs most enterprises",
             ],
             correctIndex: 3,
             explanation:
@@ -482,7 +482,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What is hashing used for?",
             options: [
-              "Integrity and password storage",
+              "Verifying integrity and storing passwords, since it is one-way",
               "Protecting confidentiality so the data can be read back out later",
               "Establishing the shared key at the start of a TLS handshake",
               "Signing a message so the recipient can verify who actually sent it",
@@ -496,7 +496,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "What does symmetric encryption use?",
             options: [
               "A public key to encrypt and a private key to decrypt the message",
-              "One shared key",
+              "One shared key for both encrypting and decrypting, which makes it fast",
               "A one-way function that cannot be reversed under any circumstances",
               "A certificate issued by an authority the recipient already trusts",
             ],
@@ -510,7 +510,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "The password encrypted with the server's own private signing key",
               "The password in plaintext, inside a database only admins can read",
-              "A salted hash",
+              "A salted hash, such as bcrypt, and never the password itself",
               "A shortened form of the password with the vowels stripped out first",
             ],
             correctIndex: 2,
@@ -524,7 +524,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "An attacker from ever obtaining valid credentials in the first place",
               "Encrypted traffic from leaving the network without being inspected",
               "Any inbound connection that has not been explicitly authorized",
-              "One infected machine reaching everything",
+              "One infected machine reaching sensitive systems across the whole company",
             ],
             correctIndex: 3,
             explanation:
@@ -534,7 +534,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "How does a firewall differ from an IDS or IPS?",
             options: [
-              "A firewall allows or denies by rule",
+              "A firewall allows or denies by rule; an IDS or IPS detects or blocks known-bad traffic",
               "A firewall inspects payloads for known-bad patterns and signatures",
               "An IDS enforces the allow list while the firewall only watches traffic",
               "An IPS works only at the perimeter and a firewall only works inside",
@@ -548,7 +548,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "Why did the 2017 ransomware spread freely through some organizations and not others?",
             options: [
               "Their firewalls were configured to allow all outbound connections",
-              "Their networks were flat",
+              "Their networks were flat, letting it move anywhere once it was inside",
               "Their staff had not been trained to recognize a phishing email",
               "Their backups sat on the same servers that ended up encrypted",
             ],
@@ -576,7 +576,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "Social engineering, because they trick a person into acting",
               "Malware, because they install code that persists on the host",
               "Network attacks, because they travel over TCP to reach an open port",
-              "Application attacks",
+              "Application attacks, which abuse software that trusts input it should not",
             ],
             correctIndex: 3,
             explanation:
@@ -588,7 +588,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "Your own lab or sanctioned platforms",
               "Any system whose owner has not explicitly forbidden being tested",
-              "Any target, provided you stop before extracting any actual data",
+              "Any target at all",
               "Your employer's production network, once you are on the payroll",
             ],
             correctIndex: 0,
@@ -600,7 +600,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "What is the difference between authentication and authorization?",
             options: [
               "One is checked at login and the other is reviewed once a quarter",
-              "Who you are, versus what you may do",
+              "Authentication establishes who you are; authorization decides what you are allowed to do",
               "One applies to people and the other only to machine service accounts",
               "One is enforced by the firewall and the other by the directory server",
             ],
@@ -614,7 +614,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "Rotates it automatically before an attacker can try to use it",
               "Alerts the security team the moment the password is entered",
-              "Makes it useless on its own",
+              "Makes it useless alone, since the attacker lacks the second factor",
               "Prevents the same password from ever being reused on another site",
             ],
             correctIndex: 2,
@@ -628,7 +628,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "The number of accounts an organization is permitted to create",
               "How often a password has to be changed by each individual user",
               "How many systems a single sign-on session is able to unlock at once",
-              "The blast radius",
+              "The blast radius when an account or a system gets compromised",
             ],
             correctIndex: 3,
             explanation:
@@ -638,7 +638,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What does a SIEM do?",
             options: [
-              "Aggregates logs and raises alerts",
+              "Aggregates logs from many systems and raises alerts on them",
               "Blocks known-bad traffic at the boundary before it reaches a host",
               "Encrypts stored logs so an intruder cannot delete their own tracks",
               "Runs the scans that find unpatched systems across the whole network",
@@ -652,7 +652,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "What are the stages of the incident response lifecycle?",
             options: [
               "Scope, scan, exploit, escalate, report, and then remediate the findings",
-              "Prepare, detect, contain, eradicate, recover, learn",
+              "Prepare, detect, contain, eradicate, recover, and learn from the incident",
               "Identify, protect, detect, respond, and recover, in that fixed order",
               "Log, alert, triage, escalate, and close the ticket within the deadline",
             ],
@@ -666,7 +666,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "Writing the detection rules the SIEM runs against every incoming log",
               "Building the network segmentation that contains a compromised host",
-              "Deciding benign or incident",
+              "Turning a flood of logs and alerts into a call: benign, or incident",
               "Negotiating the scope document before an authorized test begins",
             ],
             correctIndex: 2,
@@ -680,7 +680,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "A signed non-disclosure agreement with every employee involved",
               "An insurance policy covering damage the tester may accidentally cause",
               "A completed vulnerability scan showing where the weaknesses already are",
-              "Written permission and a scope",
+              "Written permission and a defined scope, signed before testing begins",
             ],
             correctIndex: 3,
             explanation:
@@ -704,7 +704,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "Which platforms does the course name for safe offensive practice?",
             options: [
               "Any public bug bounty program, whether or not you have enrolled in it",
-              "TryHackMe, Hack The Box, PortSwigger",
+              "TryHackMe, Hack The Box, and the PortSwigger Web Security Academy",
               "Shodan and Censys, which index internet-facing hosts you can practice on",
               "The production network of any company that publishes a security policy",
             ],
@@ -732,7 +732,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "A referral from someone already working inside the organization",
               "A degree in computer science from an accredited four-year school",
               "Ten years of adjacent help-desk experience at the same employer",
-              "A documented home lab",
+              "A documented home lab and a few clear write-ups that prove you do the work",
             ],
             correctIndex: 3,
             explanation:
@@ -744,7 +744,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "A deadline turns study into progress",
               "Because seats fill months ahead at every authorized testing center",
-              "Because the certification expires from the date you first register",
+              "Because booking waives the fee",
               "Because employers check when you booked, not only when you passed",
             ],
             correctIndex: 0,
@@ -756,7 +756,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "What is supervised machine learning trained on?",
             options: [
               "Raw traffic with no labels, so the model discovers its own clusters",
-              "Labeled examples",
+              "Labeled examples, such as emails already marked phishing or not phishing",
               "A written set of rules an analyst maintains as the threat landscape moves",
               "The model's own earlier predictions, fed back in after every single run",
             ],
@@ -770,7 +770,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "The gap between a model's training accuracy and its test accuracy",
               "The delay between an event happening and the model scoring it",
-              "The model degrading as things change",
+              "The model degrading over time as attackers and environments change",
               "The tendency of a model to return different answers for one input",
             ],
             correctIndex: 2,
@@ -784,7 +784,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "Because accuracy is only ever measured on the data used for training",
               "Because a model cannot report accuracy on inputs it has not yet seen",
               "Because precision and recall always add up to the same fixed total",
-              "The base rate can be skewed",
+              "When attacks are rare, calling nearly everything benign still scores high accuracy",
             ],
             correctIndex: 3,
             explanation:
@@ -794,7 +794,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What does user and entity behavior analytics learn?",
             options: [
-              "Each account's normal behavior",
+              "Each account's normal behavior, so it can flag sudden mass downloads",
               "The structure of malicious files before they are ever executed",
               "The baseline of network traffic between every pair of internal subnets",
               "The wording patterns that separate phishing mail from genuine mail",
@@ -808,7 +808,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "What is alert fatigue, and what causes it?",
             options: [
               "Too few alerts, so analysts lose the habit of checking the console",
-              "Too many false alarms, so alerts get ignored",
+              "Too many false alarms, so analysts start ignoring the detector's alerts",
               "Alerts arriving faster than the SIEM is able to write them to storage",
               "An analyst working consecutive night shifts without a proper handover",
             ],
@@ -822,7 +822,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "To satisfy the reporting requirement in most compliance frameworks",
               "To calculate the precision and recall of the underlying classifier",
-              "To see your coverage gaps",
+              "To see which adversary techniques you detect and where the gaps are",
               "To decide which vendor's intrusion prevention system to buy next",
             ],
             correctIndex: 2,
@@ -835,7 +835,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "Crafting an input that fools a model at the moment it classifies",
               "Reconstructing training data by querying the model's own outputs",
-              "Shaping malware so it slips past a detector without being flagged",
+              "Evading a detector",
               "Corrupting the training data",
             ],
             correctIndex: 3,
@@ -846,7 +846,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What is prompt injection?",
             options: [
-              "Hidden instructions that hijack an assistant",
+              "Malicious instructions hidden in inputs that hijack an AI assistant",
               "A flaw where the model returns text from another user's session",
               "A supply-chain attack on the plugins an assistant is allowed to call",
               "An attacker retraining the model on data that they control themselves",
@@ -887,7 +887,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "Escalates it straight to the penetration testing team for a retest",
               "Investigates, then locks the account",
-              "Waits for a second alert before spending any time on the account",
+              "Waits for more alerts",
               "Opens a compliance finding and assigns it to the governance team",
             ],
             correctIndex: 1,
@@ -914,7 +914,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "netstat, ss, and last, against the host you are investigating",
               "chmod, grep, and less, on the log file the server has written",
               "sha256sum, openssl, and the browser's own certificate viewer",
-              "ping, nslookup, traceroute",
+              "ping, nslookup or dig, and tracert or traceroute, noting what each reveals",
             ],
             correctIndex: 3,
             explanation:
@@ -924,7 +924,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What does confidentiality protect?",
             options: [
-              "Only the right people see it",
+              "That only the people authorized to see the data are able to see it",
               "That the data has not been tampered with since it was written",
               "That the data is there and reachable at the moment it is needed",
               "That every access to the data is written to an immutable log",
@@ -938,7 +938,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "Which control does this lesson name as the defense for availability against ransomware?",
             options: [
               "Encryption, which keeps the stolen copy unreadable to the attacker",
-              "Backups",
+              "Backups, which keep your files reachable after an attack",
               "Multi-factor authentication on every administrator account",
               "Segmentation between the file servers and the workstations",
             ],
@@ -966,7 +966,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "A SIEM on your own laptop, fed by the logs from your home router",
               "Kali directly onto the machine you use every day, dual-booted",
               "A Windows Server evaluation copy on the company test network",
-              "Linux in a VM",
+              "Linux in a VM, such as Ubuntu or Kali running in VirtualBox",
             ],
             correctIndex: 3,
             explanation:
@@ -990,7 +990,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "What does the cryptography lab have you observe when you hash a string?",
             options: [
               "The hash grows longer each time another character is added",
-              "One character rewrites the whole hash",
+              "Changing a single character of the string rewrites the whole hash",
               "Two similar strings produce two similar hashes you can compare",
               "The same string produces a different hash on every single run",
             ],
@@ -1004,7 +1004,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "A separate physical network reserved for sensitive systems only",
               "A rule set deciding which traffic may cross a network boundary",
-              "An encrypted tunnel",
+              "An encrypted tunnel that protects traffic crossing the network",
               "A monitored zone between the internet and the internal network",
             ],
             correctIndex: 2,
@@ -1018,7 +1018,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "Allow all outbound traffic and deny anything that is encrypted",
               "Allow HTTP and HTTPS while denying every remote shell session",
               "Allow traffic from one subnet and deny all the other segments",
-              "Allow SSH, deny other inbound",
+              "Allow SSH but deny everything else inbound, and explain why",
             ],
             correctIndex: 3,
             explanation:
@@ -1041,7 +1041,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What does knowing the attacker's playbook tell a defender?",
             options: [
-              "Which certification to pursue next on the career map they drew",
+              "Which cert to pursue next",
               "Where to put defenses, and what to watch",
               "How to obtain authorization for a test without a scope document",
               "Which of the OWASP Top 10 entries the vendor has already fixed",
@@ -1068,7 +1068,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "What does this lesson mean by strong authentication?",
             options: [
               "Rotating every password on a fixed thirty-day schedule forever",
-              "Requiring a different security question for each separate account",
+              "Security questions",
               "Disabling password login entirely and relying on certificates alone",
               "Long passphrases and a password manager",
             ],
@@ -1080,7 +1080,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What does the SIEM flag in the blue team lesson's worked example?",
             options: [
-              "Failed logins, then one success",
+              "A hundred failed logins, then one success on an admin account",
               "A single administrator account created outside of business hours",
               "An outbound transfer far larger than the daily historical average",
               "A device scanning every internal host on a hospital's network",
@@ -1094,7 +1094,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "When you triage a sample alert in the blue team lab, what must you justify?",
             options: [
               "Which MITRE ATT&CK technique the alert maps onto most closely",
-              "True or false positive, from the logs",
+              "Whether it is a true positive or a false positive, justified from the logs",
               "Whether the affected host should be rebuilt or simply patched",
               "How much the incident is likely to cost the business per hour",
             ],
@@ -1108,7 +1108,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "A tester scans a public host, finds a flaw, and publishes it online",
               "A researcher tests a vendor's product without telling the vendor",
-              "Scope signed, bug reported, then fixed",
+              "A scope is signed, the flaw is reported, and the company fixes it",
               "An employee tests the company network on their own initiative",
             ],
             correctIndex: 2,
@@ -1132,7 +1132,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What three things does the course say employers hire on?",
             options: [
-              "Certifications, a portfolio, interview readiness",
+              "Certifications, a GitHub or blog portfolio, and interview readiness",
               "A degree, a professional network, and a list of target employers",
               "A resume, a cover letter template, and a set of recommendations",
               "A specialization, a mentor, and a salary target for the first year",
@@ -1145,7 +1145,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "What does the course tell you to do once you are in the field?",
             options: [
-              "Stop studying until the first certification comes up for renewal",
+              "Stop studying",
               "Pick a specialization and go deep",
               "Move to the red team, since offense is where the pay increases",
               "Repeat the whole path with a second, unrelated certification track",
@@ -1160,7 +1160,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "Because attacks follow rules that can be written down exactly",
               "Because analysts can label every single event before a model sees it",
-              "It produces enormous data",
+              "It produces enormous data, such as logs, network flows, malware samples, and alerts",
               "Because the same attack repeats identically across every company",
             ],
             correctIndex: 2,
@@ -1174,7 +1174,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "Build a SIEM rule set from the logs your own laptop generates",
               "Fine-tune a large language model on a corpus of incident reports",
               "Compare two commercial detectors on the same captured traffic",
-              "Train a classifier on phishing URLs",
+              "Train a classifier on a public phishing-URL dataset, then measure precision and recall",
             ],
             correctIndex: 3,
             explanation:
@@ -1184,7 +1184,7 @@ Everything here is for defense and for systems you own or are authorized to test
           {
             prompt: "How does malware classification look at a file?",
             options: [
-              "Static features and sandbox behavior",
+              "Static features like structure and strings, plus its behavior in a sandbox",
               "Only the file's hash, checked against a list of known-bad hashes",
               "Only what the file does once it is executed on a real machine",
               "The reputation of the sender who delivered it into the network",
@@ -1198,7 +1198,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "What does an anomaly-based intrusion detection system learn?",
             options: [
               "The signatures of every known attack the vendor has published",
-              "A baseline of normal traffic",
+              "A baseline of normal traffic, so it can flag deviations from it",
               "The permissions each account holds across the whole directory",
               "The wording features that separate phishing mail from real mail",
             ],
@@ -1212,7 +1212,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "A training record the attacker inserted to plant a backdoor",
               "A query designed to reconstruct the model's own training data",
-              "An input crafted to fool a model",
+              "An input crafted to fool a model into the wrong answer, such as calling malware benign",
               "A malware sample reshaped so a detector never sees it at all",
             ],
             correctIndex: 2,
@@ -1226,7 +1226,7 @@ Everything here is for defense and for systems you own or are authorized to test
               "Corrupting the training set so the model learns the attacker's rule",
               "Crafting a tiny perturbation that flips the model's own verdict",
               "Hiding instructions in input so an assistant ignores its rules",
-              "Stealing the model itself",
+              "Stealing the model itself by studying what its outputs reveal",
             ],
             correctIndex: 3,
             explanation:

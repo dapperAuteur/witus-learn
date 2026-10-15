@@ -60,6 +60,9 @@ import { MANURE_AND_COMPOST_COURSE } from "./data/manure-and-compost-course";
 import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "./data/stage-and-broadcast-rigging-course";
 import { SOUND_CRAFT_COURSE } from "./data/sound-craft-course";
 import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
+import { MAP_AND_COMPASS_COURSE } from "./data/map-and-compass-course";
+import { SURVEYING_HOW_LAND_GETS_MEASURED_COURSE } from "./data/surveying-how-land-gets-measured-course";
+import { READING_A_LAND_DESCRIPTION_COURSE } from "./data/reading-a-land-description-course";
 import { RAISING_ANIMALS_FOR_YARN_COURSE } from "./data/raising-animals-for-yarn-course";
 import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
@@ -154,6 +157,7 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { HOW_TO_READ_A_NUMBER_COURSE } from "./data/how-to-read-a-number-course";
 import { HOW_WE_KNOW_WHATS_OUT_THERE_COURSE } from "./data/how-we-know-whats-out-there-course";
 import { INTRO_TO_CITIZEN_SCIENCE_COURSE } from "./data/intro-to-citizen-science-course";
+import { THE_SLIDE_RULE_COURSE } from "./data/the-slide-rule-course";
 import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-watershed-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 import { ARCHIVES_AND_FINDING_AIDS_COURSE } from "./data/archives-and-finding-aids-course";
@@ -1745,6 +1749,32 @@ async function main() {
     seriesOrder: 4,
     seriesCode: "SCI",
     seriesPosition: "04",
+  });
+
+  // TOOLS-02 The Slide Rule. Brief: plans/future-courses/science-and-math/tool-usage/2026-10-14-slide-rule-brief.md,
+  // approved by BAM 2026-10-14. Series "Tools That Think" (analog tools that work without electricity):
+  // TOOLS-01 map and compass and TOOLS-03 surveying are registered in their own branches. Multiple-choice
+  // quizzes only, because a slide-rule reading is approximate and typed answers grade by exact match.
+  // Learn.WitUS only for now: BAM also asked for an ElementaryMBA copy (STEAM), which needs a change to
+  // tests/seed-registry.test.ts (one slug per seed script today) and waits on his OK.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-slide-rule",
+    course: THE_SLIDE_RULE_COURSE,
+    category: "Science & Math",
+    additionalCategories: ["Culture & History"],
+    seriesSlug: "tools-that-think",
+    seriesTitle: "Tools That Think",
+    seriesOrder: 2,
+    seriesCode: "TOOLS",
+    seriesPosition: "02",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "public",
+    publishHoldReason:
+      "Held until BAM has recorded the demonstrations the lessons marked P call for (3 to 7, 10 to 13, 15, 22 and 25) on his own Mannheim-type rule, card rods and printed log table. Every P lesson already teaches its operation in writing; the videos show it done. Research tier 1: mathematics and history, every worked example from public-domain sources (Pickworth and Cullimore, 1920; Lipka, 1918; the 1964 federal handbook; the FAA's pilot handbook) or plain arithmetic.",
   });
 
   // River Expedition, course 1 of 11 (RIVER-01). FREE: it is the series funnel and the course that
@@ -3349,6 +3379,84 @@ async function main() {
     navigationMode: "linear",
     publishHoldReason:
       "Held until a qualified reviewer (for example a licensed electrician or a stage lighting professional) has read every lesson marked QR. Research tier 2: electrical work, hot lamps and fire.",
+  });
+
+  // Tools That Think (TOOLS), BAM's series of analog tools that work without electricity (decisions of
+  // 2026-10-14: one cross-category series, each course under its own category). TOOLS-01 is map and
+  // compass; 02 the slide rule is registered after the SCI-04 block; 03/04 surveying follow below. Brief (approved
+  // 2026-10-14): plans/future-courses/science-and-math/tool-usage/2026-10-14-map-and-compass-brief.md.
+  // Public and free; held until a NAMED qualified reviewer has read every lesson marked QR and BAM has
+  // recorded the demonstrations marked P. Research tier 2: a wrong bearing or declination sign can
+  // strand a walker. The brief also offered Science & Math as an additional category; the
+  // registration plan was Survival + Rivers & Expeditions unless BAM adds it.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "map-and-compass",
+    course: MAP_AND_COMPASS_COURSE,
+    category: "Survival",
+    additionalCategories: ["Rivers & Expeditions"],
+    seriesSlug: "tools-that-think",
+    seriesTitle: "Tools That Think",
+    seriesOrder: 1,
+    seriesCode: "TOOLS",
+    seriesPosition: "01",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    publishHoldReason:
+      "Held until a qualified reviewer, still to be named (a search-and-rescue member, or a wilderness or land-navigation instructor), has read every lesson marked QR, and until BAM has recorded the demonstrations marked P (his compasses, his quad, his route). Research tier 2: a wrong bearing or declination sign can strand a walker.",
+  });
+
+  // Tools That Think (TOOLS), BAM approved the surveying brief on 2026-10-14 and split it in two:
+  // TOOLS-03 measures land (distance, direction, elevation, area) and TOOLS-04 reads land descriptions
+  // (the PLSS grid, metes and bounds and the deed, Indiana). TOOLS-01 (map and compass) and TOOLS-02
+  // (the slide rule) are registered elsewhere in this file. Public and free by BAM's decision, each held until a
+  // licensed land surveyor (to be named) has read the lessons marked QR and BAM has filmed the lessons
+  // marked P. Brief: plans/future-courses/science-and-math/tool-usage/2026-10-14-surveying-brief.md.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "surveying-how-land-gets-measured",
+    course: SURVEYING_HOW_LAND_GETS_MEASURED_COURSE,
+    category: "Science & Math",
+    seriesSlug: "tools-that-think",
+    seriesTitle: "Tools That Think",
+    seriesOrder: 3,
+    seriesCode: "TOOLS",
+    seriesPosition: "03",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "public",
+    publishHoldReason:
+      "Held until a licensed land surveyor (to be named) has read every lesson marked QR, with authority to change or cut it, and until BAM has filmed his demonstrations with the chain, compass, level and planimeter for the lessons marked P. Research tier 2: the practice of a licensed profession, next to boundary law.",
+  });
+
+  // TOOLS-04, the second half of the split surveying brief: reading the PLSS grid, metes and bounds
+  // and the deed, and Indiana's own survey records. Civics first (its subject is a public act, the
+  // 1785 decision to survey before sale), with Science & Math (the series home) and Money & Property
+  // (deeds and title) as BAM's answer 5 added. Held for a licensed land surveyor on the QR lessons,
+  // a Native reviewer on the treaty-cession lessons 3, 7 and 10 (answer 8), and BAM's filmed county
+  // surveyor visit in lesson 13 (answer 6).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "reading-a-land-description",
+    course: READING_A_LAND_DESCRIPTION_COURSE,
+    category: "Civics",
+    additionalCategories: ["Science & Math", "Money & Property"],
+    seriesSlug: "tools-that-think",
+    seriesTitle: "Tools That Think",
+    seriesOrder: 4,
+    seriesCode: "TOOLS",
+    seriesPosition: "04",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "public",
+    publishHoldReason:
+      "Held until a licensed land surveyor (to be named) has read every lesson marked QR, with authority to change or cut it; until a Native reviewer (to be named) has read lessons 3, 7 and 10, which teach that the grid followed treaty cessions, with the same authority; and until BAM has filmed his county surveyor visit for lesson 13. Research tier 2: boundary law and land title, next to a licensed profession.",
   });
 
   // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared

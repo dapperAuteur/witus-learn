@@ -149,7 +149,7 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           {
             prompt: "What is the distinction this course teaches you to make?",
             options: [
-              "Disrupted versus disordered sleep",
+              "Disrupted versus disordered sleep: a coaching problem or a referral",
               "Acute versus chronic sleep complaints, measured by duration",
               "Primary versus secondary insomnia, based on whether another condition is present",
               "Subjective versus objective sleep quality, measured against tracker data",
@@ -162,7 +162,7 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           {
             prompt: "What does the course say the referral is, on this pillar?",
             options: [
-              "A genuine contribution, not a consolation prize",
+              "A genuine contribution that gets someone to effective treatment",
               "The last resort, once behavioral approaches have been given a fair trial",
               "A formality, since most clients will not follow through on it",
               "The point at which the coaching relationship should be concluded",
@@ -253,7 +253,7 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           {
             prompt: "What is melatonin, correctly understood?",
             options: [
-              "A timing signal, not a sedative",
+              "A timing signal for the clock, not a sedative that induces sleep",
               "A sedative hormone that induces sleep onset when concentrations rise",
               "A hormone that regulates sleep depth rather than sleep timing",
               "A marker of accumulated sleep pressure across the waking day",
@@ -279,7 +279,7 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           {
             prompt: "What are the National Sleep Foundation's age-banded ranges?",
             options: [
-              "7 to 9 hours for young adults and adults, 7 to 8 for older adults",
+              "7 to 9 hours for young adults and adults, 7 to 8 hours for older adults",
               "7 to 9 hours for all adults regardless of age, with no upper-age adjustment",
               "8 to 10 hours for young adults, 7 to 9 for adults, 7 to 8 for older adults",
               "7 to 8 hours for young adults and 7 to 9 for older adults, reversing with age",
@@ -370,7 +370,7 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           {
             prompt: "What is 'reverse causation' in the long-sleep context?",
             options: [
-              "Illness, depression, and undiagnosed sleep disorders lengthen sleep, rather than long sleep causing harm",
+              "Illness, depression, and undiagnosed sleep disorders lengthen sleep, not the reverse",
               "Long sleep causes daytime inactivity, which then produces the health outcomes observed",
               "The measurement of sleep duration is affected by the health outcome being studied",
               "Short and long sleep share a common cause that produces both patterns",
@@ -422,7 +422,7 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           {
             prompt: "What is 'sleep hygiene' in this course's vocabulary?",
             options: [
-              "General education about sleep-supportive habits; not recommended alone as treatment for chronic insomnia",
+              "General sleep-habit education; not recommended alone for chronic insomnia",
               "The set of behavioral techniques that constitute the core of CBT-I delivery",
               "The environmental component of sleep coaching, distinct from behavioral change",
               "A discredited approach that the AASM guideline recommends against in all contexts",
@@ -447,21 +447,21 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           },
           {
             prompt: "What is 'chronic insomnia disorder'?",
-            options: ["A clinical diagnosis: persistent difficulty falling or staying asleep with daytime consequences","Any sleep difficulty lasting more than two weeks","Difficulty sleeping that persists after hygiene changes","Sleep dissatisfaction reported over several months"],
+            options: ["Diagnosed, persistent poor sleep with daytime consequences","Any sleep difficulty lasting more than two weeks","Difficulty sleeping that persists after hygiene changes","Sleep dissatisfaction reported over several months"],
             correctIndex: 0,
             explanation: "It is the population CBT-I is designed for, and the reason the pillar has the sharpest scope line in the program.",
             sourceLessonSlug: "the-sleep-pillar",
           },
           {
             prompt: "What causes 'disrupted' rather than 'disordered' sleep?",
-            options: ["Late caffeine, unstable schedules, light exposure, shift patterns, bad-sleeper beliefs","An undiagnosed clinical condition not yet assessed","A short-term stressor resolving within two weeks","Poor sleep hygiene practices specifically"],
+            options: ["Caffeine, schedules, light, shifts, and beliefs","An undiagnosed clinical condition not yet assessed","A short-term stressor resolving within two weeks","Poor sleep hygiene practices specifically"],
             correctIndex: 0,
-            explanation: "Behaviour and environment, which is the coach's entire jurisdiction. It is also the much larger population.",
+            explanation: "Behavior and environment, which is the coach's entire jurisdiction. It is also the much larger population.",
             sourceLessonSlug: "the-sleep-pillar",
           },
           {
             prompt: "Where does biological night begin, physiologically?",
-            options: ["With melatonin rising in dim light a couple of hours before habitual sleep","At the moment of sleep onset","When core body temperature reaches its nadir","When sleep pressure exceeds the circadian alerting signal"],
+            options: ["With melatonin rising in dim light before sleep","At the moment of sleep onset","When core body temperature reaches its nadir","When sleep pressure exceeds the circadian alerting signal"],
             correctIndex: 0,
             explanation: "Melatonin is a timing signal, not a sedative. Light suppresses it and pushes the clock later.",
             sourceLessonSlug: "architecture-and-processes",
@@ -475,7 +475,7 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           },
           {
             prompt: "Why can an early bedtime with a 3 a.m. waking feel less catastrophic than it sounds?",
-            options: ["Slow-wave sleep dominates the first third, so most of it is already delivered","Sleep pressure discharges fastest in the first two hours","The circadian nadir has passed by 3 a.m.","REM is front-loaded and therefore preserved"],
+            options: ["Most slow-wave sleep comes in the first third","Sleep pressure discharges fastest in the first two hours","The circadian nadir has passed by 3 a.m.","REM is front-loaded and therefore preserved"],
             correctIndex: 0,
             explanation: "Neither observation licenses shortening sleep; both help a client understand their own night.",
             sourceLessonSlug: "architecture-and-processes",
@@ -538,14 +538,14 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           },
           {
             prompt: "What is a sleep coach actually FOR, given the pillar's tension?",
-            options: ["The larger population whose sleep is disrupted rather than disordered, plus knowing when to refer","Delivering the behavioural components of CBT-I between clinical sessions","Screening clients for insomnia before referring them onward","Managing sleep for clients whose clinicians lack the time"],
+            options: ["The disrupted-not-disordered majority, plus knowing when to refer","Delivering the behavioral components of CBT-I between clinical sessions","Screening clients for insomnia before referring them onward","Managing sleep for clients whose clinicians lack the time"],
             correctIndex: 0,
-            explanation: "Behaviour and environment, plus the referral that gets someone to the treatment you cannot give.",
+            explanation: "Behavior and environment, plus the referral that gets someone to the treatment you cannot give.",
             sourceLessonSlug: "the-sleep-pillar",
           },
           {
             prompt: "What does 'some is better than none' authorize on this pillar's equivalent?",
-            options: ["Nothing; that sentence is from the movement guidelines, not the sleep ones","Coaching sleep in clients with diagnosed insomnia","Recommending partial-night sleep extension","Treating short sleep as always modifiable"],
+            options: ["Nothing; it is a movement-guideline sentence","Coaching sleep in clients with diagnosed insomnia","Recommending partial-night sleep extension","Treating short sleep as always modifiable"],
             correctIndex: 0,
             explanation: "The WHO 'some is better than none' sentence belongs to WELL-02's physical-activity guidelines. Importing it here would misattribute a source.",
             sourceLessonSlug: "the-sleep-pillar",
@@ -601,7 +601,7 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           },
           {
             prompt: "What is 'reverse causation' in the long-sleep context?",
-            options: ["Illness, depression, and undiagnosed disorders lengthen sleep, rather than long sleep causing harm","Long sleep causes inactivity, which produces the outcomes","Measurement of duration is affected by the outcome studied","Short and long sleep share a common upstream cause"],
+            options: ["Illness and depression lengthen sleep, not the reverse","Long sleep causes inactivity, which produces the outcomes","Measurement of duration is affected by the outcome studied","Short and long sleep share a common upstream cause"],
             correctIndex: 0,
             explanation: "The outcome causing the exposure. It is entirely live here, which is what separates a marker from a cause.",
             sourceLessonSlug: "how-much-sleep",
@@ -808,7 +808,7 @@ Edinger, J. D., Arnedt, J. T., Bertisch, S. M., et al. (2021). Behavioral and ps
           {
             prompt: "Does that guideline finding mean sleep hygiene has no place in coaching?",
             options: [
-              "No: it addresses treatment of diagnosed insomnia, while most coaching clients are disrupted rather than disordered",
+              "No: it addresses diagnosed insomnia; most clients are disrupted, not disordered",
               "Yes: sleep hygiene should never be discussed with any coaching client under any circumstances at all",
               "Yes, unless the coach holds an additional certification in sleep science",
               "No, because the guideline applies only to children and adolescents",
@@ -860,7 +860,7 @@ Edinger, J. D., Arnedt, J. T., Bertisch, S. M., et al. (2021). Behavioral and ps
           {
             prompt: "What does sleep restriction do, and why?",
             options: [
-              "Compresses time in bed toward actual sleep time, using mild deprivation to consolidate sleep",
+              "Compresses time in bed toward sleep time to consolidate sleep",
               "Limits sleep to a fixed duration so the circadian clock can stabilize around it",
               "Restricts naps and early bedtimes so sleep pressure accumulates across the day",
               "Reduces total sleep gradually until the client's minimum requirement is identified",
@@ -873,7 +873,7 @@ Edinger, J. D., Arnedt, J. T., Bertisch, S. M., et al. (2021). Behavioral and ps
           {
             prompt: "What does cognitive restructuring target in CBT-I?",
             options: [
-              "The catastrophic beliefs about sleep loss that keep people awake worrying about being awake",
+              "Catastrophic beliefs about sleep loss that keep people awake",
               "The client's expectations about how much sleep they need each night",
               "The negative thoughts that arise during the day as a result of poor sleep",
               "The client's beliefs about whether treatment will work for them",
@@ -912,7 +912,7 @@ Edinger, J. D., Arnedt, J. T., Bertisch, S. M., et al. (2021). Behavioral and ps
           {
             prompt: "Why does the total-sleep-time null matter to a client?",
             options: [
-              "Clients expect treatment to mean more hours, and may abandon it for missing a target it never hit",
+              "Clients expect more hours and may quit for missing that target",
               "It suggests CBT-I is less effective than the other outcomes imply",
               "It means CBT-I should be combined with sleep-extension strategies to be worthwhile",
               "It indicates the trials were too short to detect changes in total sleep duration",
@@ -1003,7 +1003,7 @@ Edinger, J. D., Arnedt, J. T., Bertisch, S. M., et al. (2021). Behavioral and ps
           {
             prompt: "What does the guideline's structure reveal when you read both ends together?",
             options: [
-              "The strongest recommendation needs clinical delivery; the only negative one targets the coach's default offering",
+              "The strongest needs a clinician; the only negative hits the coach's default",
               "The strongest recommendations are all for single-component therapies a coach could deliver",
               "The guideline was written without considering non-clinical practitioners at all",
               "The evidence for behavioral treatment is weaker than for pharmacological treatment",
@@ -1042,7 +1042,7 @@ Edinger, J. D., Arnedt, J. T., Bertisch, S. M., et al. (2021). Behavioral and ps
           {
             prompt: "How do you tell disrupted from disordered sleep in a first conversation?",
             options: [
-              "Disrupted sleep has visible causes; disordered sleep persists without them, over months, with daytime consequences",
+              "Disrupted has visible causes; disordered persists without them for months",
               "Disrupted sleep resolves within two weeks; disordered sleep persists beyond that",
               "Disrupted sleep affects onset; disordered sleep affects maintenance through the night",
               "Disrupted sleep responds to hygiene advice; disordered sleep does not, which is the test",
@@ -1094,7 +1094,7 @@ Edinger, J. D., Arnedt, J. T., Bertisch, S. M., et al. (2021). Behavioral and ps
           {
             prompt: "What does 'coach the belief, not just the behavior' mean here?",
             options: [
-              "'I am a terrible sleeper' is an identity claim that keeps people awake, and it is more coachable than the pillow",
+              "'I am a terrible sleeper' is an identity claim more coachable than the pillow",
               "Clients must believe the advice will work before they will implement it consistently",
               "Beliefs about sleep need should be corrected against the published duration recommendations",
               "The client's confidence in their coach predicts adherence to sleep recommendations",
@@ -1193,9 +1193,9 @@ Edinger, J. D., Arnedt, J. T., Bertisch, S. M., et al. (2021). Behavioral and ps
           },
           {
             prompt: "What is a 'single-component therapy'?",
-            options: ["One element of CBT-I delivered alone, such as stimulus control or sleep hygiene","A therapy addressing one symptom rather than the presentation","A treatment delivered in a single session","A behavioural treatment used without medication"],
+            options: ["One element of CBT-I delivered on its own","A therapy addressing one symptom rather than the presentation","A treatment delivered in a single session","A behavioral treatment used without medication"],
             correctIndex: 0,
-            explanation: "Three carry conditional recommendations, and sleep hygiene carries the recommendation against.",
+            explanation: "Stimulus control, sleep restriction, and relaxation each carry a conditional recommendation as single components, and sleep hygiene carries the recommendation against.",
             sourceLessonSlug: "the-guideline-and-the-line",
           },
           {
@@ -1498,7 +1498,7 @@ Torquati, L., Mielke, G. I., Brown, W. J., & Kolbe-Alexander, T. (2018). Shift w
           {
             prompt: "Why does this course avoid quoting magnitudes for light interventions?",
             options: [
-              "The direction is well established; the precise magnitude comes from small trials the course does not quote",
+              "The direction is established; magnitudes come from small unquoted trials",
               "Light interventions have not been tested in randomized designs",
               "The magnitude varies too much between individuals to be meaningful",
               "The measurements depend on equipment most clients do not have access to",
@@ -1848,7 +1848,7 @@ Torquati, L., Mielke, G. I., Brown, W. J., & Kolbe-Alexander, T. (2018). Shift w
           },
           {
             prompt: "What is 'entrainment'?",
-            options: ["The synchronising of the internal clock to external cues, principally light","The gradual drift of the clock without external cues","The alignment of sleep pressure with circadian timing","The training of a consistent sleep schedule over weeks"],
+            options: ["Syncing the internal clock to external cues, chiefly light","The gradual drift of the clock without external cues","The alignment of sleep pressure with circadian timing","The training of a consistent sleep schedule over weeks"],
             correctIndex: 0,
             explanation: "Light is the dominant zeitgeber, with meals, activity, and temperature weaker.",
             sourceLessonSlug: "timing-and-light",
@@ -1862,7 +1862,7 @@ Torquati, L., Mielke, G. I., Brown, W. J., & Kolbe-Alexander, T. (2018). Shift w
           },
           {
             prompt: "What is 'polysomnography'?",
-            options: ["Laboratory sleep measurement with brain, eye, and muscle recording","Movement-based sleep estimation worn on the wrist","Sleep estimation from heart-rate variability","Self-reported sleep logging validated against devices"],
+            options: ["Lab sleep recording of brain, eye, and muscle activity","Movement-based sleep estimation worn on the wrist","Sleep estimation from heart-rate variability","Self-reported sleep logging validated against devices"],
             correctIndex: 0,
             explanation: "The gold standard the caffeine crossover trials used and the reference trackers are judged against.",
             sourceLessonSlug: "caffeine-and-alcohol",
@@ -2085,7 +2085,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What is 'actigraphy'?",
             options: [
-              "Movement-based sleep estimation, the research-grade method most consumer devices are built on",
+              "Movement-based sleep estimation, the method most consumer devices use",
               "Laboratory sleep measurement with brain, eye, and muscle recording",
               "Sleep estimation from heart-rate variability during the night",
               "Self-reported sleep logging validated against objective measurement",
@@ -2098,7 +2098,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What is orthosomnia?",
             options: [
-              "Preoccupation with achieving ideal sleep-tracker metrics, where the pursuit worsens the sleep",
+              "Preoccupation with ideal tracker metrics that worsens the sleep",
               "A sleep disorder caused by excessive nighttime device use before bed",
               "Anxiety about sleep that develops independently of any tracking behavior",
               "The tendency of tracker users to sleep more than their bodies require",
@@ -2124,7 +2124,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What is the honest limit of the orthosomnia evidence?",
             options: [
-              "It is a clinical perspective built on cases, with no validated instrument or published cut-offs",
+              "Case-based clinical perspective; no validated instrument",
               "It is a large cohort study whose findings have not been replicated",
               "It is a randomized trial of tracking versus no tracking with a small sample",
               "It is a consensus statement that has since been superseded",
@@ -2176,7 +2176,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "Which flags does this course call the most commonly missed?",
             options: [
-              "Snoring with witnessed pauses, gasping or choking awakenings, daytime sleepiness despite adequate time in bed",
+              "Snoring with witnessed pauses, gasping awakenings, daytime sleepiness",
               "Early-morning waking with low mood, which is mistaken for a circadian problem",
               "Repetitive leg movements reported by a partner, which are rarely volunteered",
               "Use of over-the-counter sleep aids, which clients do not consider medication",
@@ -2202,7 +2202,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What thresholds did the prevalence estimate use?",
             options: [
-              "An apnea-hypopnea index of 5 or more with daytime sleepiness, or 15 or more regardless of symptoms",
+              "An index of 5 or more with daytime sleepiness, or 15 or more regardless",
               "An apnea-hypopnea index of 15 or more with daytime sleepiness, or 30 or more regardless",
               "An apnea-hypopnea index of 5 or more, with symptoms not considered",
               "Any witnessed apnea reported by a partner, confirmed by overnight recording",
@@ -2241,7 +2241,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "Why is knowing STOP-BANG exists useful to a coach at all?",
             options: [
-              "'There is a short screening questionnaire your doctor can run' beats 'you should get that looked at'",
+              "It makes the referral specific: 'a short questionnaire your doctor can run'",
               "It allows the coach to judge whether a referral is likely to be productive",
               "It gives the coach a structured way to document their observations",
               "It demonstrates clinical literacy, which increases the client's trust in the referral",
@@ -2293,14 +2293,14 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What defines chronic insomnia as a referral trigger?",
             options: [
-              "Months of difficulty falling or staying asleep, with daytime consequences, absent obvious behavioural causes",
+              "Months of poor sleep, daytime consequences, no obvious behavioral cause",
               "Any difficulty sleeping that persists after a month of consistent hygiene practice",
               "Difficulty falling asleep on more than half of nights over a two-week period",
               "Sleep dissatisfaction reported by the client regardless of measured duration",
             ],
             correctIndex: 0,
             explanation:
-              "Three components: duration, daytime consequences, and the absence of behavioural explanations. Refer for CBT-I, the treatment that works and that lesson 5 established is not yours.",
+              "Three components: duration, daytime consequences, and the absence of behavioral explanations. Refer for CBT-I, the treatment that works and that lesson 5 established is not yours.",
             sourceLessonSlug: "referral-on-sleep",
           },
           {
@@ -2358,14 +2358,14 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What is 'concept versus instrument,' and why does it keep orthosomnia teachable?",
             options: [
-              "Orthosomnia is a described phenomenon, not a scored diagnosis, so it is recognised rather than applied",
+              "A described phenomenon, not a scored diagnosis: recognized, not applied",
               "The concept is validated even though no instrument exists to measure it",
               "Instruments require clinical training, while concepts can be taught to any client",
               "The concept came first and the instrument is currently under development",
             ],
             correctIndex: 0,
             explanation:
-              "Recognise, do not label. It is the same discipline as 'describe, do not label' from WELL-04, applied to a phenomenon with no validated measure behind it.",
+              "Recognize, do not label. It is the same discipline as 'describe, do not label' from WELL-04, applied to a phenomenon with no validated measure behind it.",
             sourceLessonSlug: "orthosomnia",
           },
           {
@@ -2398,9 +2398,9 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           },
           {
             prompt: "Which signals suggest the orthosomnia pattern?",
-            options: ["Distress tracking the score; feeling fine but sleeping badly 'per the app'; bedtime organised around the metric","Consistently poor scores despite good hygiene","Reluctance to discuss tracker data in session","Frequent switching between tracking devices"],
+            options: ["Distress that tracks the score, not the night","Consistently poor scores despite good hygiene","Reluctance to discuss tracker data in session","Frequent switching between tracking devices"],
             correctIndex: 0,
-            explanation: "All are observations about the relationship to the number rather than about the sleep.",
+            explanation: "It is an observation about the relationship to the number rather than about the sleep, and the same holds for bedtime organized around the metric.",
             sourceLessonSlug: "orthosomnia",
           },
           {
@@ -2412,7 +2412,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           },
           {
             prompt: "What is 'concept versus instrument', and why does it keep orthosomnia teachable?",
-            options: ["It is a described phenomenon, not a scored diagnosis, so it is recognised rather than applied","The concept is validated even without an instrument","Instruments need training; concepts can be taught to clients","The concept came first and an instrument is in development"],
+            options: ["A described phenomenon, not a scored diagnosis","The concept is validated even without an instrument","Instruments need training; concepts can be taught to clients","The concept came first and an instrument is in development"],
             correctIndex: 0,
             explanation: "The same discipline as 'describe, do not label' from WELL-04, applied to a phenomenon with no validated measure behind it.",
             sourceLessonSlug: "orthosomnia",
@@ -2440,21 +2440,21 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           },
           {
             prompt: "Why is knowing STOP-BANG exists useful to a coach?",
-            options: ["'There is a short questionnaire your doctor can run' beats 'you should get that looked at'","It lets the coach judge whether referral is likely to be productive","It gives a structured way to document observations","It demonstrates clinical literacy, raising client trust"],
+            options: ["It makes the referral specific rather than vague","It lets the coach judge whether referral is likely to be productive","It gives a structured way to document observations","It demonstrates clinical literacy, raising client trust"],
             correctIndex: 0,
             explanation: "The client arrives at the appointment knowing what to ask for, which materially raises the chance the assessment happens.",
             sourceLessonSlug: "referral-on-sleep",
           },
           {
             prompt: "Which findings belong to a clinician under movement during sleep?",
-            options: ["Acting out dreams, violent movement, repetitive leg movements reported by a partner","Restlessness in the first hour, reported on waking","Sleep talking and occasional teeth grinding","Difficulty finding a comfortable position"],
+            options: ["Dream enactment, violent movement, leg movements","Restlessness in the first hour, reported on waking","Sleep talking and occasional teeth grinding","Difficulty finding a comfortable position"],
             correctIndex: 0,
             explanation: "All three are typically reported by a partner rather than by the client.",
             sourceLessonSlug: "referral-on-sleep",
           },
           {
             prompt: "What defines chronic insomnia as a referral trigger?",
-            options: ["Months of difficulty, daytime consequences, absent obvious behavioural causes","Any difficulty persisting after a month of hygiene practice","Difficulty on more than half of nights over two weeks","Sleep dissatisfaction regardless of measured duration"],
+            options: ["Months of difficulty, daytime consequences, no obvious behavioral cause","Any difficulty persisting after a month of hygiene practice","Difficulty on more than half of nights over two weeks","Sleep dissatisfaction regardless of measured duration"],
             correctIndex: 0,
             explanation: "Three components. Refer for CBT-I, the treatment that works and that lesson 5 established is not yours.",
             sourceLessonSlug: "referral-on-sleep",
@@ -2468,7 +2468,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           },
           {
             prompt: "Why is a sleep complaint often the presenting edge of a mood problem?",
-            options: ["Sleep and mood run in both directions, so the client brings the sleep symptom","Mood problems always disrupt sleep while sleep rarely affects mood","Clients find sleep easier to raise than mood","Sleep is measurable and mood is not"],
+            options: ["Sleep and mood affect each other in both directions","Mood problems always disrupt sleep while sleep rarely affects mood","Sleep loss causes low mood, never the reverse","Sleep is measurable and mood is not"],
             correctIndex: 0,
             explanation: "Early waking with low mood, or sleep loss alongside hopelessness, routes to mental-health care rather than a wind-down routine.",
             sourceLessonSlug: "referral-on-sleep",
@@ -2496,7 +2496,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           },
           {
             prompt: "What is 'excessive daytime sleepiness' as a flag?",
-            options: ["Falling asleep unintentionally during the day; urgent when it occurs while driving","Feeling tired despite adequate sleep opportunity","Needing a nap most afternoons","Waking unrefreshed more than three days weekly"],
+            options: ["Falling asleep unintentionally; urgent while driving","Feeling tired despite adequate sleep opportunity","Needing a nap most afternoons","Waking unrefreshed more than three days weekly"],
             correctIndex: 0,
             explanation: "Unintentional sleep onset is the defining feature, and driving is what makes it urgent regardless of what the nights look like.",
             sourceLessonSlug: "referral-on-sleep",
@@ -2524,7 +2524,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           },
           {
             prompt: "Why does the mental-health flag list include early-morning waking specifically?",
-            options: ["Early waking with low mood is a recognised presenting pattern routing to mental-health care","Early waking indicates a circadian phase advance requiring light therapy","Early waking is the most common insomnia subtype","Early waking predicts sleep apnea more strongly than other patterns"],
+            options: ["With low mood it is a recognized mental-health presentation","Early waking indicates a circadian phase advance requiring light therapy","Early waking is the most common insomnia subtype","Early waking predicts sleep apnea more strongly than other patterns"],
             correctIndex: 0,
             explanation: "Sleep and mood run in both directions, and the sleep complaint is often the visible edge of something larger.",
             sourceLessonSlug: "referral-on-sleep",
@@ -2734,9 +2734,9 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "State this pillar's central tension.",
             options: [
-              "The treatment that works is not yours; what you can deliver is advised against alone",
+              "What works is not yours; what you have is advised against alone",
               "The treatment that works is unavailable; the alternatives have no evidence",
-              "The evidence is strong but clients rarely comply with the behaviours",
+              "The evidence is strong but clients rarely comply with the behaviors",
               "Sleep problems are common but their causes require diagnostic tools",
             ],
             correctIndex: 0,
@@ -2806,7 +2806,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What did CBT-I deliver, and what did it NOT?",
             options: [
-              "Latency -19 min, WASO -26 min, efficiency +9.91; total sleep time not significant",
+              "Better latency, WASO, efficiency; not total sleep time",
               "Total sleep time +26 min; efficiency and latency both non-significant",
               "All four outcomes improved significantly and were sustained",
               "Efficiency improved only; latency and WASO were unchanged",
@@ -2842,7 +2842,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "How do you tell disrupted sleep from disordered sleep?",
             options: [
-              "Disrupted has visible causes; disordered persists without them, with daytime consequences",
+              "Disrupted has visible causes; disordered persists without them",
               "Disrupted resolves within two weeks; disordered persists beyond",
               "Disrupted affects onset; disordered affects maintenance",
               "Disrupted responds to hygiene advice; disordered does not, which is the test",
@@ -2890,7 +2890,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What does alcohol do, and why do clients misread it?",
             options: [
-              "Shortens onset then fragments the second half; the onset is the visible part",
+              "Shortens onset, then fragments the second half",
               "Deepens early sleep and lightens later sleep, netting out neutral",
               "Suppresses slow-wave sleep throughout without affecting onset",
               "Delays onset but consolidates the second half",
@@ -2902,7 +2902,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What did the shift-work meta-analysis find, and what is the timing nuance?",
             options: [
-              "17 percent higher CV events, 26 percent higher CHD morbidity; risk appears after five years",
+              "CV events +17 percent, CHD +26 percent; risk appears after five years",
               "26 percent higher CV event risk from the first year, rising linearly",
               "17 percent higher risk, front-loaded in the first two years then plateauing",
               "20 percent higher mortality with no dose-response detectable",
@@ -2926,7 +2926,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What are the two consumer-tracker performance figures, and what do they mean?",
             options: [
-              "Sensitivity for sleep 0.93+, specificity for wake 0.18-0.54; devices OVERESTIMATE sleep",
+              "Sleep 0.93+, wake 0.18-0.54; devices OVERESTIMATE sleep",
               "Sensitivity 0.18-0.54, specificity above 0.93; devices UNDERESTIMATE sleep",
               "Both above 0.90 for sleep-wake, with only staging unreliable",
               "Sensitivity 0.93 and specificity 0.85, both adequate for tracking",
@@ -2938,7 +2938,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "Which tracker output should a client ignore, and which should they watch?",
             options: [
-              "Ignore the nightly stage breakdown; watch the multi-week trend in sleep and timing",
+              "Ignore nightly stages; watch the multi-week trend",
               "Ignore total sleep; watch the stage breakdown for patterns",
               "Ignore everything; the device is unreliable across all outputs",
               "Ignore the weekly trend; watch nightly efficiency scores",
@@ -2950,8 +2950,8 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           {
             prompt: "What is orthosomnia, and what is the evidence's honest limit?",
             options: [
-              "Preoccupation with tracker metrics that worsens sleep; a case perspective, no instrument",
-              "A recognised sleep disorder with published diagnostic criteria and cut-offs",
+              "Metric preoccupation that worsens sleep; case-based, no instrument",
+              "A recognized sleep disorder with published diagnostic criteria and cut-offs",
               "Anxiety about sleep unrelated to tracking, described in cohort studies",
               "A randomized finding that tracking worsens sleep in most users",
             ],
