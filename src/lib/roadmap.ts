@@ -41,6 +41,18 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   school-wide pass share that doubles as the length-balance campaign's progress bar; it states that a
   database figure can differ slightly from lint. Follow-up: \`tests/isolation/quiz-integrity.db.test.ts\`
   has not run against a database.
+- 🔧 **Map and Compass: Finding Your Way on Land, TOOLS-01** (\`feat/course-map-and-compass\`, no migration; after
+  merge run \`pnpm seed:courses:prod\`). BAM approved the brief on 2026-10-14 and opened a new series, Tools That
+  Think (analog tools that work without electricity). Survival, also Rivers & Expeditions; public and free.
+  Eight sections, 36 lessons, 699 questions: the kit and where to practice near Indianapolis (four US Topo quads
+  and each site's rules), reading a topographic map, latitude-longitude and the UTM grid, the compass (parts, what
+  to look for when buying one, declination without a sign error), map and compass together, planning a route
+  (night navigation and difficult terrain included), GPS and where it fails, and a capstone route. Built from the
+  Army's 2001 FM 3-25.26 (public release; the restricted 2005 and 2013 editions are never used) and NWCG PMS 475,
+  teaching where the two disagree. Standards: CCSS 4.MD.C.6, 4.MD.C.7, 5.G.A.2, 7.G.A.1, HSN-Q.A.3; Indiana
+  5.CA.11, 7.GM.1 (partial where hand work is ungraded); NGSS 4-ESS2-2 not claimed. Eight lessons need a
+  qualified reviewer and seventeen need BAM's demonstration; eight research checks filed. Held for both.
+  Follow-ups: stage citations after seeding; DNR film agreement before P videos on DNR land.
 - 🔧 **Light on Set, CREW-03** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Eight
   sections, 27 lessons, 661 questions: what light does, hard and soft light from first principles, shaping
   light with what is already in the room (and the hacks the course refuses), natural light, key, fill and
