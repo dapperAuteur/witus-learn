@@ -1018,5 +1018,56 @@ So report six digits for "here is where we are", eight when the map, the tool an
 - ${NWCG_475} Locator: p. ix, the list of materials; p. 81, chapter 4 introduction; p. 82, "Parts of a Compass"; p. 86, "Adjusting a Compass".
 - ${FM_2001} Locator: printed pp. 9-2 and 9-3 (PDF pp. 111 and 112), paragraphs 9-2a, 9-2c, 9-3a and 9-3c; printed p. 9-4 (PDF p. 113), paragraph 9-4b note; printed p. 6-7 (PDF p. 70), paragraph 6-5b note.`,
     },
+    {
+      slug: "holding-it-and-what-pulls-the-needle",
+      title: "15 · Holding it, and what pulls the needle",
+      section: "4 · The compass",
+      recallContent: [
+        {
+          prompt: "Which compass feature does the workbook list first, and why?",
+          answer: "A declination adjustment, because it is \"generally easier to adjust the compass for declination, rather than the map.\"",
+        },
+        {
+          prompt: "What does the Army manual call the most important check on a new compass?",
+          answer: "That the dial, which carries the magnetic needle, \"does not stick.\" It also says compasses off by more than 3° should not be used.",
+        },
+      ],
+      body: `${P("BAM shows the hold for each compass, then walks toward a parked car and a wire fence with the compass level in front of him so the camera can see the needle swing")}
+
+**A small error grows.** The workbook opens its tips with the reason they matter: "A small error when using a compass can result in a significant error in measurement on the ground." Lesson 17 puts a number on it.
+
+**How to hold a baseplate compass.** The workbook's tips (p. 84):
+- "Hold the compass level and steady so the needle swings freely."
+- "Hold the compass about waist high in front of the body, except when using a compass with a sighting mirror or a sighting type compass."
+- "Raise and lower eyes when taking a bearing, do not move your head. Always use the same eye when taking bearings."
+- "Directly face object that is being measured."
+- "Take bearing twice."
+- "Follow the direction of travel arrow, not the compass needle, when walking a bearing."
+
+**How to hold a lensatic.** The Army manual's preferred hold is the centerhold technique: open the compass fully, thumb through the thumb loop, steady it with both hands, and "Pull your elbows firmly into your sides; this will place the compass between your chin and your belt. To measure an azimuth, simply turn your entire body toward the object". The manual lists its advantages, among them that "It is faster and easier to use" and "It can be used under all conditions of visibility." For sighting a distant object precisely, it uses the compass-to-cheek technique instead.
+
+**What pulls the needle.** A compass needle points along the magnetic field where it sits, and nearby iron changes that field. The workbook: "Avoid taking readings near magnetic fields such as steel, iron (ferrous metals), vehicles, rebar, and clipboards. Even belt buckles, glasses, and rings can interfere with the compass reading." The USGS fact sheet's list: "pocket knives, belt buckles, railroad tracks, trucks, electrical lines, and so forth". Not every metal matters; the Army manual says "nonmagnetic metals and alloys do not affect compass readings."
+
+**How far to stand off.** The manual gives separation distances for its soldiers, and three translate directly to a civilian walk:
+- High-tension power lines: **55 meters**.
+- A field gun, truck or tank: **18 meters**. Read that as your car at the trailhead.
+- Telegraph or telephone wires and barbed wire: **10 meters**. Read that as a wire fence.
+
+Its last two lines, a machine gun at 2 meters and a steel helmet or rifle at half a meter, make the same point at arm's length: keep steel off your body and out of your hand while you read.
+
+**When the ground itself pulls.** Sometimes the cause is underground. The World Magnetic Model behind every declination value describes only the large-scale field from Earth's core, and NCEI says "Some local, regional, and temporal magnetic declination anomalies can exceed 10 degrees", while anomalies "of the order of 3 or 4 degrees are not uncommon but are usually of small spatial extent." Lesson 16 explains the model; for now, if two careful readings from spots a few meters apart disagree, suspect the ground or something you are carrying.
+
+**Orienting the compass, or "boxing the needle".** The workbook's first exercise: set 0° (or 360°) at the index line, then "Hold the base plate and turn your body until the north seeking end of the magnetic needle lines up with the orienting arrow. The direction you are facing is magnetic north." Lining the needle up inside the arrow is called "boxing the needle", and every method in the next four lessons begins with it.
+
+:::reveal How far does the Army manual say to stay from a truck or a tank, and from barbed wire? ||| 18 meters from a field gun, truck or tank; 10 meters from barbed wire or telephone wires.
+
+:::reveal What does "boxing the needle" mean? ||| Turning until the north-seeking end of the needle lines up with the orienting arrow.
+
+## Sources
+- ${NWCG_475} Locator: p. 84, "Tips on Getting Accurate Compass Readings"; p. 87, "Orienting a Compass" and Table 4-1.
+- ${FM_2001} Locator: printed pp. 9-2 to 9-4 (PDF pp. 111 to 113), paragraphs 9-3b and 9-4a to 9-4b.
+- ${USGS_FS} Locator: p. 2, "A Word of Caution".
+- ${NCEI_WMM_ACC} Locator: the opening paragraph on what the model leaves out, and its anomaly sentences.`,
+    },
   ],
 };
