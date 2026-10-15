@@ -5726,6 +5726,88 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "12 · Turning, cold heaps, and worms",
     ],
   },
+
+  // ══ Map and Compass: Finding Your Way on Land (TOOLS-01) ═════════════════════
+  // Checked 2026-10-14 against scripts/data/map-and-compass-course.ts as written. Every computation
+  // below is worked in the lesson and assessed by multiple choice; the hands-on halves (measuring
+  // with a protractor, plotting on paper, drawing) are practiced but not graded, which is why the
+  // standards that ask a student to PRODUCE those are mapped as partial.
+  {
+    id: "catalog.map-scale-actual-distance",
+    claim:
+      "Computes actual ground distances and areas from a map's representative fraction and bar scale, and turns a ground distance back into a map distance.",
+    courseSlugs: ["map-and-compass"],
+    lessons: [
+      // 1:24,000 as 2,000 feet to the inch and 240 m to the centimeter; 3.5 in = 7,000 ft; 6.2 cm =
+      // 1,488 m; 1,200 m = 5 cm; a 1,000 m grid square = 1 km² ≈ 247 acres; a print at 90% is no
+      // longer 1:24,000.
+      "7 · Scale and distance",
+      // Rise over run read through the scale: 50 ft over 0.25 in at 1:24,000 is a 10 percent slope.
+      "8 · Contour lines: reading height and steepness",
+      // Ground to map: 320 m and 780 m become 13.3 mm and 32.5 mm at 1:24,000 to plot a GPS fix.
+      "34 · A GPS fix on the paper map",
+    ],
+  },
+  {
+    id: "catalog.utm-first-quadrant-coordinates",
+    claim:
+      "Reads a UTM grid as a first-quadrant coordinate plane (easting to the right, northing up, both positive because of a false origin), interprets what each coordinate says about the ground, and plots a coordinate read from a GPS onto the map.",
+    courseSlugs: ["map-and-compass"],
+    lessons: [
+      // "RIGHT and UP" as x then y; 546,000 m E = 46,000 m east of 87° W; the difference between two
+      // points as meters east and north.
+      "11 · The UTM grid: read right, then up",
+      // Grid references as squares named right-then-up from the southwest corner.
+      "12 · How precise is a grid reference?",
+      // Finding the grid square of a fix and measuring in from its corner.
+      "34 · A GPS fix on the paper map",
+    ],
+  },
+  {
+    id: "catalog.declination-angle-addition",
+    claim:
+      "Decomposes the angle between grid north and magnetic north on a declination diagram into the declination and the grid convergence, finds an unknown angle by addition or subtraction, and converts bearings by adding or subtracting the declination and 180 degrees.",
+    courseSlugs: ["map-and-compass"],
+    lessons: [
+      // Hindustan: 4°28' + 0°21' = 4°49'; the three other quads; the unknown d in 4°49' = d + 0°21';
+      // subtract when both lines lie on one side of true north.
+      "16 · Three norths, and declination",
+      // True to magnetic and back, by the USGS rule and by NCEI's equation, with wraparound past 360.
+      "17 · Correcting for declination without a sign error",
+      // Back bearings by adding or subtracting 180.
+      "18 · Taking a bearing and a back bearing",
+      // Right and left 90° turns as adding or subtracting 90 in the box detour.
+      "19 · Following a bearing",
+    ],
+  },
+  {
+    id: "catalog.measure-and-plot-bearings",
+    claim:
+      "Measures a bearing on a map with a protractor to the nearest degree, and sketches and plots a bearing of a given number of degrees clockwise from north.",
+    courseSlugs: ["map-and-compass"],
+    lessons: [
+      // Sketching a 60° bearing with a protractor before taking one in the field.
+      "18 · Taking a bearing and a back bearing",
+      // The workbook's protractor method, the Army's reading "to the nearest degree", and plotting a
+      // bearing from a known point.
+      "21 · A bearing from the map to the ground",
+    ],
+  },
+  {
+    id: "catalog.grid-reference-precision",
+    claim:
+      "Chooses how many digits of a grid reference to report from the limits of the measurement (the width of a pencil line at map scale, a phone's stated GPS accuracy) and declines precision the measurement cannot support.",
+    courseSlugs: ["map-and-compass"],
+    lessons: [
+      // Four, six, eight and ten digits as 1,000, 100, 10 and 1 m squares; a 0.5 mm pencil line is
+      // 12 m at 1:24,000; a 4.9 m phone fix does not support a 1 m reference.
+      "12 · How precise is a grid reference?",
+      // GPS.gov's 4.9 m and what degrades it.
+      "33 · Where GPS fails",
+      // Reporting a plotted phone fix to eight digits, not ten.
+      "34 · A GPS fix on the paper map",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
