@@ -927,5 +927,54 @@ The State Library adds two more: the Internet Archive collection "Indiana PLSS N
 - ${WILSON} Locator: p. 12. ${TIER_A_1916}
 - ${MANUAL} Locator: sec. 1-32, p. 16 (PDF p. 27). ${TIER_A}`,
     },
+    {
+      slug: "a-visit-to-the-county-surveyor",
+      title: "13 · A visit to the county surveyor",
+      section: "3 · Indiana on the grid",
+      recallContent: [
+        {
+          prompt: "What must the Boone County surveyor keep, and what share of the original corners must the office check each year?",
+          answer: "A corner record book showing original government section corners; at least 5% of them must be checked, located, established and referenced.",
+        },
+        {
+          prompt: "After the first sale from the public domain, where are Indiana's later land transactions and plats kept?",
+          answer: "With the recorder of the county where the sale took place (IARA).",
+        },
+      ],
+      body: `${P("BAM's filmed visit to an Indiana county surveyor's office, and, with the office's permission, to a perpetuated section corner, to be recorded; this lesson's text is a placeholder until then")}
+
+**What this lesson will be.** BAM plans to film a visit to a county surveyor's office in Indiana: the corner record book, the legal survey record book, the original field notes as the office holds them, and, if the office agrees, a section corner that has been found and perpetuated in the field. Until that film exists, this lesson tells you what to look for and how to make a visit of your own.
+
+**What a county surveyor's office keeps.** From the two county pages this course has read:
+- A **corner record book** "showing original government section corners" (Boone County).
+- A program to "check, locate, establish, and reference at least 5% of all original corners" each year (Boone County; Wells County, citing IC 36-2-12-11).
+- A **legal survey record book** "for all legal surveys within the county" (Boone County).
+Wells County adds that its corners "are usually found near the centerlines of the County's roads," and counts 1,384 cornerstones set by government surveyors between 1805 and 1823.
+
+**If you visit.** A county surveyor's office is a public office, but its staff are working.
+- **Call or email first** and ask whether a short visit is welcome, and when.
+- **Say what you want to learn,** not what you want decided. "How does the office keep the corner record?" is a fair question. "Where is my property line?" is a request for professional work, and lesson 2 explains why the answer to it comes from a licensed survey with notice to the neighbors, not from a conversation.
+- **Ask to see, not to take.** Photograph a page only if the office says you may.
+
+**Questions worth asking.**
+1. Which origin governs this county's townships: the Second Principal Meridian, the First, or the Ohio River Base (lesson 10)?
+2. How does the office choose which corners to check each year, and what does it record when it finds one?
+3. Which set of the original field notes does the office use, and has it found differences between them?
+4. What does a corner look like here: a stone, an iron pin, a monument under the pavement?
+5. Is there a perpetuated corner nearby that the public may see, and how should a visitor behave there?
+
+**At a corner.** If you see one, remember lesson 2 and the companion course's lesson 14: look and photograph; never dig, mark or move. Disturbing a government survey corner can be a federal crime (18 U.S.C. 1858), and a corner moved even a little is worse than one lost, because the next person to measure from it inherits the error.
+
+**What to bring home.** Write down the section, township, range and meridian of the corner or the office you visited, and look up that section's original field notes using lesson 12's steps. Read what the first surveyor recorded at that corner, two centuries ago, and compare it with what the county records now.
+
+:::reveal Why is "Where is my property line?" the wrong question to bring to a county surveyor's office on a casual visit? ||| It asks for professional work. A legal survey is prepared by a registered land surveyor with notice to all adjoining landowners (Boone County), not settled in a conversation.
+
+:::reveal What does Indiana law, as the Wells County page cites it, require of a county surveyor each year? ||| To check and reference at least five percent of all corners shown in the corner record book (IC 36-2-12-11).
+
+## Sources
+- ${BOONE} Locator: "Section Corner Perpetuation"; "Legal Survey Book". ${TIER_B}
+- ${WELLS} Locator: the page's first paragraphs and the paragraph citing IC 36-2-12-11. ${TIER_B}
+- ${IARA} Locator: the county recorders paragraph. ${TIER_B}`,
+    },
   ],
 };
