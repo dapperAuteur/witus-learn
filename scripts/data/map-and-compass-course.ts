@@ -538,5 +538,48 @@ export const MAP_AND_COMPASS_COURSE: AuthoredCourse = {
 - ${NWCG_475} Locator: p. 45, slope.
 - ${USTOPO_INDY_EAST} Locator: lower margin, contour interval note.`,
     },
+    {
+      slug: "landforms-from-contours",
+      title: "9 · Landforms from contours",
+      section: "2 · Reading a topographic map",
+      recallContent: [
+        {
+          prompt: "How many intermediate contour lines normally sit between two index contours, according to the Army manual?",
+          answer: "Four: \"every fifth contour line is a heavier line\", the index contour.",
+        },
+        {
+          prompt: "What does the spacing of contour lines tell you?",
+          answer: "Steepness: \"Closely spaced contours indicate a steep land slope; widely spaced contours show more level ground.\"",
+        },
+      ],
+      body: `**From lines to land.** Contours are only useful once you can see shapes in them. The Army manual classifies ten terrain features: five major, three minor and two made by people. For each it gives what you would feel standing on it and how the contours draw it.
+
+**The five major features.** The manual lists them as "the five major terrain features (hilltop, valley, ridge, depression, and saddle)".
+- **Hill.** "From a hilltop, the ground slopes down in all directions. A hill is shown on a map by contour lines forming concentric circles. The inside of the smallest closed circle is the hilltop."
+- **Saddle.** "A saddle is a dip or low point between two areas of higher ground." Stand in one and "there is high ground in two opposite directions and lower ground in the other two directions." On the map it "is normally represented as an hourglass."
+- **Valley.** "A valley is a stretched-out groove in the land, usually formed by streams or rivers." Its contours are U-shaped or V-shaped, and the rule that tells you which way water runs is this one: "The closed end of the contour line (U or V) always points upstream or toward high ground."
+- **Ridge.** "A ridge is a sloping line of high ground." On its centerline you have "low ground in three directions and high ground in one direction". Its contours are U- or V-shaped too, but here "The closed end of the contour line points away from high ground."
+- **Depression.** "A depression is a low point in the ground or a sinkhole", drawn as "closed contour lines that have tick marks pointing toward low ground." Only depressions at least as deep as the contour interval are usually shown.
+
+**The three minor features.**
+- **Draw.** "A draw is a less developed stream course than a valley", with "essentially no level ground". Its U's and V's point toward high ground, like a valley's.
+- **Spur.** "A spur is a short, continuous sloping line of higher ground, normally jutting out from the side of a ridge." Its U's and V's point away from high ground, like a ridge's.
+- **Cliff.** "A cliff is a vertical or near vertical feature". Its contours run very close together or touch, and where they merge into one line, that line carries tick marks toward low ground.
+
+**Made by people.** A **cut** goes through raised ground to give a road or railroad a level bed; a **fill** builds up a low area for the same purpose. The manual says both are shown "when they are at least 10 feet high."
+
+**Telling a valley from a ridge.** The two look the same on paper, a stack of U's or V's. The difference is which way they point. Point toward higher numbers, uphill, and you are looking at a valley or a draw, where water runs. Point toward lower numbers, downhill, and it is a ridge or a spur, where water divides. Read the index numbers before you decide.
+
+**Describe it, then find it.** The manual's technique for matching what you see to the map is SOSES: compare features by "their shapes, orientations, sizes, elevations, and slopes." Lesson 20 uses it to orient the map by terrain.
+
+**High ground divides water.** The River and the Watershed course makes the same point in its lesson "1 · You live in a watershed": the line between two watersheds is a divide, and it usually runs along high ground. On a topographic map, that divide is a ridgeline you can trace.
+
+:::reveal On a map, which way does the closed end of a valley's U or V point? ||| Upstream, toward high ground. A ridge's or spur's points away from high ground.
+
+:::reveal If you stand in a saddle, where is the high ground? ||| In two opposite directions, with lower ground in the other two. On the map it looks like an hourglass.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 10-12 to 10-16 (PDF pp. 134 to 138), paragraph 10-6; printed p. 10-18 (PDF p. 140), paragraph 10-7b; printed p. 11-7 (PDF p. 153), paragraph 11-3a.`,
+    },
   ],
 };
