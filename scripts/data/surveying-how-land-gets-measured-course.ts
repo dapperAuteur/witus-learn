@@ -1087,5 +1087,53 @@ A worked case. Out from A to B, the notes give B 4.316 feet above A. Back from B
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4: Area
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "area-from-chains-and-triangles",
+      title: "15 · Area from chains and triangles: acres, square chains, and the 640-acre section",
+      section: "4 · Area",
+      recallContent: [
+        {
+          prompt: "Which federal statute protects bench marks and section corners, and what is its longest prison term?",
+          answer: "18 U.S.C. 1858, quoted in Manual sec. 4-2: a fine, or up to six months in prison, or both.",
+        },
+        {
+          prompt: "What does NOAA say to do when you find a benchmark?",
+          answer: "Take pictures, but that's all: never disturb or move it, even if it appears damaged.",
+        },
+      ],
+      body: `**Why the chain makes area easy.** Lesson 5's table does most of the work. Ten square chains make an acre (Manual, table 2-1), so a field measured in chains turns into acres with one division:
+
+> acres = (length in chains × width in chains) ÷ 10
+
+A field 12.50 chains long and 8.00 chains wide holds 12.50 × 8.00 = 100 square chains, which is 10 acres. Done in feet the same field is 825 × 528 = 435,600 square feet, divided by 43,560: still 10 acres, with much bigger numbers on the way. That is the convenience Breed and Hosmer meant by the chain's "simple relation to the acre."
+
+**The section and its parts, as arithmetic.** A square mile is 80 chains on a side, so it holds 80 × 80 = 6,400 square chains, or 640 acres (table 2-1). Halve both sides and you have a square 40 chains on a side: 1,600 square chains, 160 acres, a quarter of the square mile. Halve again, 20 chains on a side: 400 square chains, 40 acres. Those three numbers, 640, 160 and 40, run through every land record in the public-land states. Which of them the law treats as units of sale, and how a description names them, is the subject of *Reading a Land Description*; here they are only multiplication.
+
+**Triangles.** Most fields are not rectangles, so a surveyor splits them into triangles. Breed and Hosmer give two formulas (sec. 366).
+- **Two sides and the angle between them:** area = ½ ab sin C, "where C is the angle included between the sides a and b." This fits a field surveyed by setting an instrument in the middle and measuring angles between the corners.
+- **All three sides,** "if the field has been surveyed with the tape alone": area = √(s(s − a)(s − b)(s − c)), where s is half the perimeter, (a + b + c) ÷ 2.
+
+Two worked cases, in chains:
+1. Sides of 8 and 5 chains with 30° between them: ½ × 8 × 5 × sin 30° = ½ × 8 × 5 × 0.5 = 10 square chains, exactly 1 acre.
+2. Sides of 3, 4 and 5 chains: s = 6, and √(6 × 3 × 2 × 1) = √36 = 6 square chains, 0.6 acre. (A 3-4-5 triangle is a right triangle, so ½ × 3 × 4 = 6 agrees.)
+
+**Check one way with another.** For a four-sided lot, Breed and Hosmer cut along a diagonal and compute the two triangles, then cut along the other diagonal and compute again: "The area can be obtained by calculating the area of one pair of triangles and readily checked by calculating the other pair" (sec. 367). The two diagonals also each come out twice, from either triangle they belong to, and "these two determinations ... should check each other." Two routes to the same number is the habit, in area as in leveling.
+
+**Rough checks you can do without trigonometry** (sec. 369). Plot the field to scale, divide the drawing into rectangles and triangles, scale their sides from the plan and add up their areas. Or lay a sheet ruled in small squares over the plan, count the squares, and estimate the part-squares "generally to tenths of a square, by inspection." Knowing the area of one square on the ground, you have the field's approximate area. The planimeter in lesson 17 is the instrument version of the same check.
+
+**How many digits?** An area inherits the uncertainty of the lengths that made it, and a little more, because two lengths are multiplied. If each side of the 12.50 by 8.00 chain field could be off by a link, the area could be off by roughly 12.5 × 0.01 + 8 × 0.01 ≈ 0.2 square chain, about 0.02 acre. So "10.0 acres" is honest and "10.000 acres" is not.
+
+:::reveal A field measures 15.00 by 6.40 chains. How many acres? ||| 15.00 × 6.40 = 96 square chains; ÷ 10 = 9.6 acres.
+
+:::reveal A triangle has sides of 6 and 10 chains with 90° between them. What is its area in acres? ||| ½ × 6 × 10 × sin 90° = 30 square chains, which is 3 acres.
+
+## Sources
+- ${MANUAL} Locator: table 2-1, p. 37 (PDF p. 48). ${TIER_A}
+- ${BH} Locator: sec. 4, p. 3 (scan p. 29); secs. 366 and 367, pp. 336 to 337 (scan pp. 376 to 377); sec. 369, p. 339 (scan p. 379). ${TIER_A_PD}`,
+    },
   ],
 };
