@@ -145,6 +145,8 @@ const NCEI_WMM_ACC =
   "National Centers for Environmental Information. (n.d.-c). *World Magnetic Model accuracy, limitations, and error model*. National Oceanic and Atmospheric Administration. https://www.ncei.noaa.gov/products/world-magnetic-model/accuracy-limitations-error-model";
 // GPS.gov (Tier A, federal), read 2026-10-14.
 const GPS_ACCURACY = "GPS.gov. (n.d.-a). *GPS accuracy*. https://www.gps.gov/gps-accuracy";
+const GPS_SPACE = "GPS.gov. (n.d.-b). *Space segment*. https://www.gps.gov/space-segment";
+const GPS_SA = "GPS.gov. (n.d.-c). *Selective availability*. https://www.gps.gov/selective-availability";
 const NPS_TEN =
   "National Park Service. (2026, May 28). *Ten essentials*. U.S. Department of the Interior. https://www.nps.gov/articles/10essentials.htm";
 
@@ -2129,6 +2131,47 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
           { prompt: "What helps night navigation on a clear night in snow?", options: ["The snow's lack of any contrast", "The long hours of winter dark", "The driving snow and wind", "Moon and starlight off the snow"], correctIndex: 3, explanation: "\"Moonlight and starlight on a clear night reflect off the snow\", which helps.", sourceLessonSlug: "difficult-terrain" },
         ],
       },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 7: What GPS adds, and where it fails
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "how-a-receiver-finds-you",
+      title: "32 · How a GPS receiver finds you",
+      section: "7 · What GPS adds, and where it fails",
+      recallContent: [
+        {
+          prompt: "In clear desert air, how large does the Army manual say range estimates can be off?",
+          answer: "\"Errors of up to 200 or 300 percent are not uncommon.\"",
+        },
+        {
+          prompt: "What is a personal pace table?",
+          answer: "Your average pace count per 100 meters for each kind of ground you are likely to cross.",
+        },
+      ],
+      body: `**What GPS is.** The Army manual's definition: "a space-based, global, all-weather, continuously available, radio positioning navigation system." It reports "latitude, longitude, and altitude", displays "geographic or military grid coordinates", and, unlike older dead-reckoning instruments, "does not have inherent drift". The wildland fire workbook adds that it "consists of satellites, control and monitor stations, and receivers": the space, control and user segments.
+
+**It measures distances, not directions.** Each satellite carries atomic clocks and broadcasts where it is and what time it is. Your receiver times how long each signal took to arrive. The workbook: "The travel time multiplied by the speed of light equals the distance from the satellite to the GPS receiver", with the speed of light given as "186,000 miles per second". A distance from one satellite puts you somewhere on a huge sphere around it; distances from several narrow that down to one place. The workbook calls this "triangulation", the same word it uses for resection in lesson 22, though here the receiver works from distances rather than bearings.
+
+**Why the clocks matter so much.** Work the numbers. A satellite about 12,550 miles up sends a signal that arrives in roughly 12,550 ÷ 186,000, about **0.067 second**. An error of one millionth of a second in that timing is 186,000 × 0.000001 = 0.186 mile, about **300 meters** of distance. That is why the satellites carry atomic clocks and why, the workbook says, clock and orbit errors "are monitored and corrected by the Master Control Station."
+
+**Three satellites or four.** "A GPS receiver needs only three satellites to plot a rough, 2D position, which will not be very accurate. Ideally, four or more satellites are needed to plot a 3D position, which is much more accurate." Lesson 33 shows what goes wrong when a receiver quietly falls back to 2D.
+
+**The constellation, with its dates.** GPS.gov: "The United States is committed to maintaining the availability of at least 24 operational GPS satellites, 95% of the time", and "the U.S. Space Force has been flying 31 operational GPS satellites for well over a decade." The satellites "fly in medium Earth orbit (MEO) at an altitude of approximately 20,200 km (12,550 miles). Each satellite circles the Earth twice a day," in "six equally-spaced orbital planes" arranged so that "users can view at least four satellites from virtually any point on the planet." The page's own count is dated: "As of July 3, 2023, there were a total of 31 operational satellites", and it sends readers to the Coast Guard's NAVCEN site for current status.
+
+**A number that went stale.** The 2016 workbook says the space segment "consists of 29 satellites circling the earth every 12 hours at 12,000 miles in altitude." It also says Selective Availability, a deliberate blurring of civilian signals, "can be reactivated without notice." GPS.gov tells the later story: "In May 2000, at the direction of President Bill Clinton, the U.S government discontinued its use of Selective Availability", in September 2007 the government decided to buy the GPS III satellites "without the SA feature", and "The United States has no intent to ever use Selective Availability again." Both are reminders from lesson 1: read the date, then the newer source.
+
+**Who made it possible.** The catalog's *Who Gets the Credit*, in its lesson "11 · When the currency is authorship, not patents", tells of Gladys West, a mathematician at the Naval Surface Warfare Center in Dahlgren, Virginia, whose satellite geodesy, the mathematical model of the Earth's shape, was "a prerequisite for any satellite positioning system."
+
+:::reveal How does a GPS receiver turn a signal into a distance? ||| It times how long the signal took and multiplies by the speed of light.
+
+:::reveal How many satellites does a receiver need for a rough 2D position, and for a 3D position? ||| Three for a rough 2D position; four or more for a more accurate 3D position.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 9-12 and 9-13 (PDF pp. 121 and 122), paragraph 9-6.
+- ${NWCG_475} Locator: p. 97, chapter 5 introduction; pp. 98 to 100, "How the Global Positioning System Works" and "How GPS Determines a Position"; pp. 101 and 102, clock errors and Selective Availability.
+- ${GPS_SPACE} Locator: the opening paragraph, "Constellation Arrangement", and the July 3, 2023 count.
+- ${GPS_SA} Locator: the opening paragraph.`,
     },
   ],
 };
