@@ -1375,5 +1375,57 @@ If nothing stands out on the line, "another person can serve as the intermediate
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5: Map and compass together
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "orienting-the-map",
+      title: "20 · Orienting the map",
+      section: "5 · Map and compass together",
+      recallContent: [
+        {
+          prompt: "After taking a bearing with a baseplate compass, what must you not do before you reach your next object?",
+          answer: "Turn the compass housing. The bearing is set; you only re-box the needle to check.",
+        },
+        {
+          prompt: "Of several distinct objects on your line, which does the Army manual call the best steering mark?",
+          answer: "The most distant one; given many options, the highest. Steering marks are chosen as you walk, never from a map study.",
+        },
+      ],
+      body: `${P("BAM orients the same map twice on camera, once by the terrain from a high point with two landmarks in view and once with his declination-adjusted baseplate compass, then turns to face a new direction and re-orients")}
+
+**What oriented means.** The Army manual: "The first step for a navigator in the field is orienting the map. A map is oriented when it is in a horizontal position with its north and south corresponding to the north and south on the ground." The workbook says why it comes first: "Orienting the map to true north is key to navigating successfully. Orienting a map also gives you a general idea of your own location on the map." With the map lined up with the land, the road on your left is on the map's left, and the hill ahead is ahead on the paper.
+
+**By the terrain.** The workbook's three steps (Table 6-1):
+1. "Find your approximate location on the map."
+2. "Select two prominent topographical features or landmarks that are visible to you and shown on the map."
+3. "Turn the map until the features on the map are in proper relation to the actual features in the field. The map is now oriented."
+
+The manual adds that this method "requires careful examination of the map and the ground, and the user must know his approximate location." Lesson 9's SOSES (shape, orientation, size, elevation, slope) is how you match a hill you see to a hill on the paper. The Army's orienteering appendix prefers this way: "The orienteer should try not to use the compass to orient the map. The terrain association technique is recommended instead."
+
+**By the compass, adjusted for declination.** The workbook's four steps (Table 6-2):
+1. "Adjust compass for declination as appropriate. Make sure there is no local magnetic attraction."
+2. "Rotate the compass housing so north or 360º is at the index line or direction of travel line on the compass."
+3. "Place one side of the compass base plate along the right or left hand edge of the map. The direction-of-travel line must be toward the top of the map."
+4. "Carefully rotate the map and compass together until the needle is aligned with orienting arrow. The map and compass are now oriented."
+
+Because the compass is set for declination, the map's edge (true north) now points at true north on the ground.
+
+**By the compass, without the adjustment.** The Army's lensatic has no declination setting, so the manual lays the compass's straightedge along a north-south grid line, turns map and compass until the arrow is under the index line, and then turns them a little more, by the grid-magnetic angle. "If the magnetic north arrow on the map is to the left of the grid north, check the compass reading to see if it equals the G-M angle given in the declination diagram. The map is then oriented." On the Hindustan quad, where magnetic north is to the left, the compass laid along a grid line reads about 5° (the G-M angle, 4°49') when the map is oriented. Skip that last turn and the map is about 5° off, which, as lesson 17 showed, adds up.
+
+**A simpler version you will meet.** Morgan-Monroe's orienteering brochure teaches the quick form: "rotate the map so that map north points the same direction as compass north." Then "all of the terrain in front of you is 'up' on the map", and "When you turn your body to walk in a different direction, re-orient the map so that it is always aligned with the terrain." It leaves out declination, which in Indiana is about 5°: close enough for reading the land, not for a long bearing.
+
+**Keep it oriented.** The manual: once the map is oriented, "Do not move the map from its oriented position", and "Special care should be taken whenever orienting your map with a compass. A small mistake can cause you to navigate in the wrong direction." Without a compass or recognizable terrain, lesson 25's methods can give you north.
+
+:::reveal What does it mean for a map to be oriented? ||| It lies horizontal with its north and south matching north and south on the ground.
+
+:::reveal Orienting by terrain, what must you already know? ||| Your approximate location on the map, plus two landmarks you can see that are also on the map.
+
+## Sources
+- ${FM_2001} Locator: printed pp. 11-1 to 11-6 (PDF pp. 147 to 152), paragraph 11-1; printed p. F-19 (PDF p. 214), paragraph F-10.
+- ${NWCG_475} Locator: p. 112, "Orienting Maps" and Table 6-1; p. 113, Table 6-2.
+- ${MMSF_ORIENT} Locator: "Orienteering Pointers", "Orienting the Map". Linked only.
+- ${USTOPO_HINDUSTAN} Locator: the declination diagram.`,
+    },
   ],
 };
