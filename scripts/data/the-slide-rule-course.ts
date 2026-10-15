@@ -1623,6 +1623,72 @@ and carry on for 20 to 100, each 5 inches higher than the mark ten times smaller
 - ${FAA_PHAK} Locator: p. 16-11, Basic Calculations, minutes to hours, time, distance and groundspeed, knots to miles per hour; p. 16-12, fuel consumption and Flight Computers; p. 16-13, Figure 16-18 (plotter, mechanical flight computer, electronic flight computer); p. 16-17, Assembling Necessary Material; p. 16-20, the wind correction angle by flight computer. ${TA}
 - ${PICKWORTH} Locator: p. 31 (PDF p. 37), the rule for proportion. ${TA}`,
     },
+    {
+      slug: "capstone-estimate-rule-check",
+      title: "25 · Capstone: a page of arithmetic by estimate, rule and check",
+      section: "7 · Charts and circles that calculate",
+      recallContent: [
+        {
+          prompt: "Why is every time-speed-distance problem a proportion?",
+          answer: "A speed is a distance per 60 minutes, so one ratio is known and the other is found: 140 is to 60 as 210 is to 90.",
+        },
+        {
+          prompt: "What does this course infer, but not assert, about the E6B's scales?",
+          answer: "That they are logarithmic, because a dial that converts units and solves proportions in single settings would need logarithmic scales; the FAA handbook does not say.",
+        },
+      ],
+      body: `${P("BAM on camera working this page on his own rule, saying each estimate aloud before he sets the rule, then checking each reading against Cullimore's printed answer")}
+
+**The method, one last time.** For every problem below:
+1. **Estimate.** Round each number to one figure times a power of ten and work the size out in your head (lessons 2 and 8).
+2. **Set and read the rule.** Use the lesson named on the card: C and D (6, 7), A and B (10), L (11), cubes or powers (12).
+3. **Place the point** from your estimate.
+4. **Check.** Compare with Cullimore's printed answer. A difference in the third figure is reading error, about what lesson 9 expects. A difference by a power of ten is a misplaced point. Anything else is a wrong setting: find it.
+
+Every problem comes from Allan Cullimore's 1920 manual, which printed its own answers, so nothing on this page is invented. Work each one before you open its card.
+
+:::reveal Problem 1 (lesson 6). Multiply 13.14 × 9.63 × 7.46 × 349. ||| Cullimore: 329000. Estimate: about 10 × 10 × 7 × 300 = 210,000, a six-figure number, so the reading 329 is 329,000.
+
+:::reveal Problem 2 (lesson 7). Divide 39.8 by 46.7. ||| Cullimore: .852. Estimate: 40 ÷ 47 is a little less than 1, so the reading 852 is 0.852.
+
+:::reveal Problem 3 (lesson 7). A motor develops 15 horsepower, and horsepower = volts × amperes ÷ 746. How many amperes does it draw at 110, 220, 550 and 750 volts? ||| Cullimore: 102, 51, 20.4 and 14.9. 15 × 746 = 11,190, divided by each voltage: one setting gives the whole row (Cullimore works it with the slide inverted, which is what CI saves).
+
+:::reveal Problem 4 (lesson 10). Square 4.77 and 87.9. ||| Cullimore: 22.75 and 7730. Estimates: 5 squared is 25; 90 squared is 8,100.
+
+:::reveal Problem 5 (lesson 10). Find the square roots of 1391 and 600. ||| Cullimore: 37.3 and 24.5. 1391 has four figures, an even number, so the right half of A; 600 has three, so the left half. Check: 37 squared is about 1,370 and 25 squared is 625.
+
+:::reveal Problem 6 (lessons 7 and 12). Find the reciprocals of 389 and 7.79. ||| Cullimore: .00257 and .1284. Estimates: 1 ÷ 400 = 0.0025; 1 ÷ 8 = 0.125.
+
+:::reveal Problem 7 (lesson 12). Cube 8.07 and 55.9. ||| Cullimore: 526 and 174700. Estimates: 8 cubed is 512; 56 cubed is near 60 × 60 × 50 = 180,000.
+
+:::reveal Problem 8 (lesson 12). Find the cube roots of 17.8 and 1793. ||| Cullimore: 2.61 and 12.15. Checks: 2.6 cubed is about 17.6; 12 cubed is 1,728.
+
+:::reveal Problem 9 (lesson 11). Find the logarithms of 2181 and 7.94 to three places. ||| Cullimore: 3.339 and 0.900. The characteristics, 3 and 0, come from the number of figures before the point.
+
+:::reveal Problem 10 (lesson 12). Find the fifth power of 3.72 by two methods. ||| Cullimore: 712. By squares and cubes, 3.72 squared times 3.72 cubed; by logarithms, log 3.72 times 5. Estimate: 4 to the fifth is 1,024, so a three-figure answer is the right size.
+
+:::reveal Problem 11 (lesson 10). Find the areas of circles 7.93 and 64.8 inches across. ||| Cullimore: 49.4 and 3300 square inches. Use the 0.7854 setting. Estimate: 0.8 × 64 = 51; 0.8 × 4,200 = 3,360.
+
+:::reveal Problem 12 (lesson 7). Convert 9.78 and 351 U.S. gallons to cubic feet. ||| Cullimore: 1.307 and 46.9. One proportion serves both, so set it once and read along the rule.
+
+:::reveal Problem 13 (lesson 7). Write 1/8, 5/16 and 17/64 as decimals. ||| Cullimore: .125, .313 and .266. Numerator on C to denominator on D, read on C over 1 on D.
+
+**How did you do?** If your readings agree with Cullimore's to about one part in a thousand, you are working to his standard (lesson 9). If every answer has the right size, your estimates are doing their job, and that habit is worth more than any single reading.
+
+**What a bigger rule adds.** This course stops at A, B, C, D, L, CI and K. Bigger rules add three things it leaves out:
+- **Trigonometric scales.** Cullimore's rule carries a scale of sines marked S and a scale of tangents marked T on the back of the slide; set 15 degrees on S and read the sine, .259, or on T and read the tangent, .268.
+- **Log-log scales,** for powers and roots of any kind ("Involution and Evolution," in the title of the paper Cajori lists for P. M. Roget's log-log rule of 1815). Pickworth describes a Keuffel & Esser log-log rule whose three log-log scales cover "a total log-log range of from 1.01 to 22,000."
+- **The duplex rule,** "two side strips securely clamped together at the two ends," so that "both front and back faces of the rule and slide are available," joined by "the cursor which extends around the whole." The Apollo rule of lesson 20 was a duplex.
+
+Both of this course's manuals teach those scales, and both are free to read.
+
+**The habit outlasts the tool.** Estimate, calculate, check. A private study course in this catalog, *Construction Math*, is built on the same habit for the building trades; it is not yet open to learners. Wherever you calculate next, on a rule, a chart, a calculator or a phone, the estimate in your head is the part no machine does for you.
+
+## Sources
+- ${CULLIMORE} Locator: p. 22 (PDF p. 26), the S and T scales and the sine and tangent of 15 degrees; p. 23 (PDF p. 27), the readings .259 and .268; p. 29 (PDF p. 33), areas of circles, gallons to cubic feet, fractions to decimals; p. 30 (PDF p. 34), squares, square roots, and 39.8 ÷ 46.7; p. 31 (PDF p. 35), reciprocals and the four-factor product; p. 32 (PDF p. 36), the motor; p. 33 (PDF p. 37), cubes and cube roots; p. 34 (PDF p. 38), logarithms and the fifth power of 3.72. ${TA}
+- ${CAJORI_1909} Locator: p. 37, Roget's log-log rule; p. 40, "Roget's Slide Rule for Involution and Evolution," 1815. ${TA}
+- ${PICKWORTH} Locator: p. 115 (PDF p. 121), the Keuffel & Esser log-log duplex rule and the duplex construction. ${TA}`,
+    },
     // NEXT_SECTIONS
   ],
 };
