@@ -286,5 +286,49 @@ export const SURVEYING_HOW_LAND_GETS_MEASURED_COURSE: AuthoredCourse = {
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 1: Distance: pacing and the chain
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "pacing-a-line",
+      title: "4 · Pacing: walk a straight line and calibrate your step",
+      section: "1 · Distance: pacing and the chain",
+      recallContent: [
+        {
+          prompt: "Why should a compass needle be raised whenever the compass is carried?",
+          answer: "To keep from dulling the pivot-point: \"a dull pivot-point is a fruitful source of error\" (Breed and Hosmer, sec. 24).",
+        },
+        {
+          prompt: "How can you tell a bent needle from an off-center pivot?",
+          answer: "Read both ends in several directions. A constant difference means a bent needle; a difference that changes as the compass turns means the pivot is off center (sec. 34).",
+        },
+      ],
+      body: `${P("BAM walking a calibration line several times and then a test line, counting aloud, with each count and the arithmetic shown on screen")}
+
+**Why pace at all.** Pacing is the cheapest distance measurement there is, and it is the rough check on every other one. Breed and Hosmer tell the head chainman that "much time can be saved" if he will "pace the chain-length" before lining himself in (sec. 10). The series' map-and-compass course teaches a pace count for finding your way; this lesson treats the pace as a survey measurement, calibrated, repeated, and reported with its error.
+
+**Walk a straight line first.** William Gillespie's *Treatise on Land-Surveying* puts the skill before the counting: "the art of walking in a straight line must first be acquired." His method: "fix the eye on two objects in the desired line, such as two trees, or bushes, or stones, or tufts of grass. Walk forward, keeping the nearest of these objects steadily covering the other." Before you reach the nearer object, choose a new one in line farther ahead, and go on the same way (art. 460).
+
+**Take your natural step.** Both textbooks give the same warning. Gillespie: "It is better not to attempt to make each of the paces three feet, but to take steps of the natural length." Breed and Hosmer: the beginner "should take his natural step and avoid any attempt to take steps just 3 ft. long." A forced step is hard to repeat, and repeatability is the whole value of a pace.
+
+**Calibrate on a known distance.** Gillespie again: "ascertain the value of each by walking over a known distance, and dividing it by the number of paces required to traverse it. Every person should thus determine the usual length of his own steps, repeating the experiment sufficiently often." Breed and Hosmer say to pace "several times, some line of known length so as to determine approximately how many steps he takes in 100 ft."
+
+**A worked calibration.** Lay out 200 feet with a tape on a level path and walk it four times. Say the counts are 79, 81, 80 and 80. The mean is 80 paces, so one pace is 200 ÷ 80 = 2.5 feet. Keep the spread as well as the mean: 200 ÷ 81 = 2.47 feet and 200 ÷ 79 = 2.53 feet. Lesson 7 uses that spread to decide how many digits a paced distance deserves.
+
+**Count the same way every time.** Gillespie's paces are single steps: he gives "the English military pace" as "two feet and six inches", and says the French geographical engineers trained themselves to steps of eight-tenths of a meter. Some walkers count every second step instead. Either works, so long as you calibrate the way you count and never switch.
+
+**Machines that count for you.** Gillespie describes a pedometer worn on the body, with a cord to the foot that "at each step moves a toothed wheel one division." Breed and Hosmer describe the odometer, which counts the turns of a carriage wheel: "The circumference of the wheel being known the approximate distance traversed is easily determined" (sec. 9). Both count; neither knows how long your step or your wheel really is until you check it on a known line.
+
+**To try.** Lay out a known line, walk it at least four times, and write down every count, not only the average. Lesson 7 pairs this pace with a chained line.
+
+:::reveal You walk a 150-foot calibration line four times and count 60, 61, 59 and 60 paces. What is your pace? ||| 150 ÷ 60 = 2.5 feet, from the mean count of 60. The spread runs from 150 ÷ 61 = 2.46 feet to 150 ÷ 59 = 2.54 feet.
+
+:::reveal Why do both textbooks warn against stretching each step to three feet? ||| A forced step is not repeatable. Gillespie and Breed and Hosmer both say to take the natural step and calibrate it on a known distance.
+
+## Sources
+- ${GILLESPIE} Locator: Part IX, art. 460, pp. 311 to 312 (scan pp. 317 to 318). ${TIER_A_PD}
+- ${BH} Locator: sec. 9, p. 6 (scan p. 32); sec. 10, pp. 7 to 9 (scan pp. 33 to 35). ${TIER_A_PD}`,
+    },
   ],
 };
