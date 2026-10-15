@@ -1757,5 +1757,55 @@ The rule to remember: "the first shadow-tip mark is always in the west direction
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6: Planning and walking a route
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "a-route-on-paper",
+      title: "26 · A route on paper",
+      section: "6 · Planning and walking a route",
+      recallContent: [
+        {
+          prompt: "In the shadow-tip method, which mark is west, and where is north when you stand with it on your left?",
+          answer: "The first mark is always west; with it on your left, north is in front of you.",
+        },
+        {
+          prompt: "What warning does the Army manual give about the watch method?",
+          answer: "\"The watch method can be in error, especially in the lower latitudes, and may cause circling.\"",
+        },
+      ],
+      body: `**Four steps.** The Army manual reduces land navigation to four: "you must know where you are, plan the route, stay on the route, and recognize the objective." Sections 2 to 5 gave you the tools. This section puts them in order, starting at a table with the map.
+
+**Start where you are.** "If movement takes place without establishing the initial location, everything that is done in the field from there on is a gamble." Mark the start on the map before you mark anything else.
+
+**What to weigh.** Among the manual's factors for choosing a route, the ones that matter to a walker are "Travel time", "Travel distance", "Energy expenditure", and the "Availability of good checkpoints and steering marks." The shortest line is often not the quickest: the manual's example is a route that looks like 1,000 meters but crosses a large ridge, against one of 1,500 meters "on flat terrain", where "the quickest route would be across the flat terrain". Its advice: "Following a valley floor or proceeding near (not on) the crest of a ridgeline generally offers easy movement, good navigation checkpoints". Follow the shape of the land rather than fighting it.
+
+**Choose checkpoints the map can be trusted for.** "The best checkpoints are linear features that cross the route. Examples include perennial streams, hard-top roads, ridges, valleys, railroads, and power transmission lines." Next best are "features that represent elevation changes of at least two contour intervals such as hills, depressions, spurs, and draws." And a warning that ties back to lesson 4's dates: "Primary reliance upon cultural features and vegetation is cautioned against because they are most likely to have changed since the map was last revised." A trail or a clearing on a map is a claim about the past.
+
+**Mark the decision points.** "Checkpoints located at places where changes in direction are made mark your decision points." The manual adds: "it is especially important to review the route and anticipate where mistakes are most likely to be made so they can be avoided."
+
+**Finish with a short, careful leg.** The goal itself is often small and easy to miss, so the manual's method is to aim first for a checkpoint near it that is hard to miss, then "follow a specific compass azimuth and pace off the relatively short, known distance to the final, pinpoint destination. This procedure is called point navigation." That last checkpoint is lesson 24's attack point, best within 500 meters.
+
+**The route card.** Write the plan down, one line per leg. This course's card has these columns, built from the lessons so far:
+- **Leg**: from which checkpoint to which.
+- **Bearing**: true from the map, and magnetic if your compass is not set for declination (lesson 17).
+- **Distance**: in meters from the bar scale (lesson 7), and in your own paces (lesson 23).
+- **Handrail and catching feature**: what guides you and what tells you that you have gone too far (lesson 24).
+- **Checkpoint**: what you should see at the end of the leg.
+- **Time**: your estimate for the leg (lesson 27).
+
+An invented example, to show the form: "Leg 2: stream junction to trail crossing; bearing 64° true, 69° magnetic; 450 m, 288 paces; handrail the stream on the left; catching feature the gravel road; checkpoint a footbridge; 15 minutes." Workbook Appendix C prints a field-notes form you can adapt, and lesson 28 shows a card being used.
+
+**Leave a copy behind.** The Forest Service's checklist for the Deam Wilderness: "Tell someone where you are going and when to expect you to return. Be specific." A route card is a specific answer.
+
+:::reveal According to the Army manual, what are the best checkpoints? ||| Linear features that cross the route, such as perennial streams, hard-top roads, ridges, valleys, railroads and power lines.
+
+:::reveal Why does the Army manual caution against relying on cultural features and vegetation as checkpoints? ||| They are the features "most likely to have changed since the map was last revised."
+
+## Sources
+- ${FM_2001} Locator: printed pp. 11-6 and 11-12 to 11-13 (PDF pp. 152 and 158 to 159), paragraphs 11-2a, 11-4b(5) and 11-5a to 11-5d.
+- ${NWCG_475} Locator: p. 171, Appendix C field-notes form.
+- ${DEAM} Locator: "Pre-Trip Check List".`,
+    },
   ],
 };
