@@ -910,6 +910,55 @@ Each distance is the logarithm from lesson 1 times 10. For finer marks, take the
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5: Before the slide rule
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "napiers-bones",
+      title: "13 · Napier's bones: multiplying with rods",
+      section: "5 · Before the slide rule: Napier's rods and log tables",
+      recallContent: [
+        {
+          prompt: "How do you raise 36 to the power 1.414 on the rule?",
+          answer: "Read log 36 = 1.556 (L gives 0.556, characteristic 1), multiply by 1.414 on C and D to get 2.2, set 0.2 on L and read 1585 on D: 158.5.",
+        },
+        {
+          prompt: "What does the red CI scale save you, according to Cullimore?",
+          answer: "Turning the slide over: \"The red scale CI obviates the necessity of inverting the slide,\" and it cuts the settings in a long product.",
+        },
+      ],
+      body: `${P("BAM on camera making a set of card rods for the digits 0 to 9 and multiplying 425 by 6, 8 and 36 with them")}
+
+**The other thing Napier invented.** John Napier published his table of logarithms in 1614 (lesson 14). In 1617, the year he died, he published something simpler, "for the sake of those who may prefer to work with the natural numbers," in the words his translator W. R. Macdonald quotes: a set of "mechanical aids to computation," the most important of them "named Rabdologia, or calculation by means of small rods, familiarly called 'Napier's bones.'" His dedication explains the aim of both books: "to do away with the difficulty and tediousness of calculations, the irksomeness of which is wont to deter very many from the study of mathematics."
+
+**What a rod looks like.** A Smithsonian record describes a set: rods "marked with the multiples of the digits from 0 to 9." Each face of a rod carries the multiples of one digit, one above the other. "Each square containing a multiple is divided diagonally, with the tens value of the number written in the upper left corner and the ones value in the lower right corner." So the rod for 7 shows 0/7, 1/4, 2/1, 2/8 and so on down to 6/3. The museum's set has ten short wooden rods with four faces each, plus "an eleventh, wider rod for square and cube roots." Napier himself, the record adds, suggested ten distinct rods.
+
+**How the layout multiplies.** The record names the parts but does not walk through a sum; the steps below follow from the layout it describes, and every one can be checked by ordinary multiplication. Lay the rods for 4, 2 and 5 side by side, so their tops read 425. To multiply by 6, look along the sixth row: 2/4, 1/2 and 3/0 (that is, 24, 12 and 30). Now add along the diagonals, starting at the right:
+
+| Diagonal | Ones place | Tens | Hundreds | Thousands |
+|---|---|---|---|---|
+| Digits added | 0 | 3 + 2 | 1 + 4 | 2 |
+| Result | 0 | 5 | 5 | 2 |
+
+Read it from the left: 2,550. And 425 × 6 is 2,550.
+
+**Carrying.** The eighth row of the same rods reads 3/2, 1/6 and 4/0 (32, 16 and 40). From the right: 0; then 4 + 6 = 10, so write 0 and carry 1; then 1 + 2 + 1 = 4; then 3. The answer is 3,400, and 425 × 8 is 3,400. A diagonal never holds more than two digits plus a carry, so the hardest step is adding small numbers.
+
+**A longer multiplier.** For 425 × 36, read the third row (12, 06, 15, which give 1,275) and the sixth (2,550). The 3 stands for 30, so shift the first answer one place: 12,750 + 2,550 = 15,300. The rods have turned a multiplication into reading rows and adding, the same trade Napier's logarithms make.
+
+**Division runs the rows backward.** To divide 2,550 by 425, set out the rods for 425 and look down the rows for the multiple that fits: the sixth row gives 2,550 exactly, so the quotient is 6. For a longer division you take the largest row that does not exceed each part of the dividend, as in long division, but every multiple is already written out for you.
+
+**Make a set.** Cut eleven strips of card. On ten of them write a digit at the top, 0 to 9, and below it nine squares holding that digit's multiples from 1 to 9, each square split by a diagonal from upper right to lower left, tens above the line and ones below. (The square-and-cube-root rod is not needed for multiplying.) Check each strip by ordinary multiplication before you trust it: a wrong square gives a wrong answer every time it is used.
+
+:::reveal On a Napier's rod, where are the tens and the ones of each multiple written? ||| In each square, cut by a diagonal: the tens in the upper left corner, the ones in the lower right.
+
+:::reveal Using the rods for 425, what do the diagonals of the sixth row give? ||| From the right: 0, 3 + 2 = 5, 1 + 4 = 5, then 2: so 2,550, which is 425 × 6.
+
+## Sources
+- ${MACDONALD} Locator: Introduction, p. xvi (PDF p. 20), the 1617 Rabdologia "for the sake of those who may prefer to work with the natural numbers" and "Napier's bones"; Notes, p. 88 (PDF p. 112), the dedication of Rabdologiae. ${TA}
+- ${NAPIER_1617} Locator: the whole book (Latin), title page. ${TA}
+- ${NMAH_RODS} Locator: description, first to third paragraphs (the book of 1617, the rods, the diagonal squares, the eleventh rod, ten distinct rods). ${TB}`,
+    },
     // NEXT_SECTIONS
   ],
 };
