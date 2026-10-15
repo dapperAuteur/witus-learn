@@ -611,6 +611,51 @@ Use it only when the five-bead is up (away from the beam) and there are not enou
 - ${SMITH_MIKAMI} Locator: p. 37 (PDF p. 49), "Subtraction is evidently performed with equal ease." ${TA}
 - Common Core State Standards Initiative. (2010). *Common Core State Standards for mathematics*. https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf Locator: p. 15, standard 1.OA.6, "decomposing a number leading to a ten". The PDF sets the minus sign as a dash; it is written here as a hyphen. ${TB}`,
     },
+    {
+      slug: "long-columns-money-decimals",
+      title: "8 · Long columns, money and decimals, and a misprint you can catch",
+      section: "2 · Adding and subtracting",
+      recallContent: [
+        {
+          prompt: "The ones rod shows 3 and the tens rod 1. How do you take off 4?",
+          answer: "Take one bead off the tens rod (subtract 10) and add 6, the ten-complement of 4, to the ones rod: 9.",
+        },
+        {
+          prompt: "What is the quickest honest check on a subtraction done on a soroban?",
+          answer: "Add the number back: 102 - 7 = 95 is checked by setting 95, adding 7 and seeing 102.",
+        },
+      ],
+      body: `${P("BAM adding Knott's three shop prices and then his 3085.274 + 352.069 on camera, reading the result off the beads")}
+
+**The shop-boy.** Knott opens his paper with a test you can try on a friend. A customer buys three things priced at ¥1.25, ¥2.89 and ¥3.17. "How many people out of any hundred of ordinary intellect could add these three numbers correctly in their mind? A Japanese shop-boy with Soroban in hand will do it as fast as the numbers can be named, and with greater precision and certainty than many of us could attain in figuring."
+
+**Money is decimals.** Choose a marked rod as the yen (ones) rod; the two rods to its right then carry tenths and hundredths of a yen. Every price is set with its yen on that rod, so the decimal points line up by themselves, exactly as they do when you write a column of figures with the points under one another.
+
+**The shop-boy's sum, rod by rod.** Set 1.25. Add 2.89: on the yen rod 1 + 2 is 3; on the tenths rod you cannot add 8 to 2, so add one to the yen rod (now 4) and take 2, the complement of 8, off the tenths (now 0); on the hundredths rod you cannot add 9 to 5, so add one to the tenths (now 1) and take 1 off the hundredths (now 4). The frame reads **4.14**. Add 3.17: yen 4 + 3 with the five-complement, 7; tenths 1 + 1, 2; hundredths 4 + 7 will not fit, so add one to the tenths (now 3) and take 3 off the hundredths (now 1). The frame reads **¥7.31**, and you never wrote down 4.14.
+
+**A long column is the same move, over and over.** Each new number is set onto the running total, rod by rod, and the total is always on the frame. That is why the shop-boy is fast: there is nothing to carry in your head, only the next number to put on.
+
+**Knott's own example.** On page 49 Knott adds 352.069 to 3085.274 and narrates it. Hundreds: push up 3. Tens: the rod shows 8 and cannot take 5, "But since 50=100-50, the addition is affected by pushing up one counter on the 'hundreds' and removing 5 from the 'tens' rod." Units: push up 2. Then, for the 6 hundredths and the 9 thousandths, two more ten-complements: one up on the tenths with 4 off the hundredths, "since 10-6=4," and one up on the hundredths with 1 off the thousandths. He prints Fig. 4 (the first number on the beads, a V over the units rod) and Fig. 5 (the result).
+
+**The misprint.** Knott's text gives the result as "3437·843" (his raised point is a decimal point). Now read his Fig. 5 the way lesson 3 taught you. On the tenths rod the five-bead is *not* set and three one-beads are up:
+
+| Rod | thousands | hundreds | tens | units | tenths | hundredths | thousandths |
+|---|---|---|---|---|---|---|---|
+| Five-bead at the beam? | no | no | no | yes | no | no | no |
+| One-beads at the beam | 3 | 4 | 3 | 2 | 3 | 4 | 3 |
+| Digit | 3 | 4 | 3 | 7 | 3 | 4 | 3 |
+
+The beads say **3437.343**. Check by pencil: 3085.274 + 352.069 = 3437.343. The figure is right and the printed sum is wrong in one digit, the 8 in the tenths place. The page image shows the 8 in the type itself, so it is Knott's misprint, not a scanning error. A learner who can read beads can correct a printed paper from 1886, which is the best argument this course has for learning to read them.
+
+**One habit to take away.** When a printed answer and the beads disagree, check both by another method before you trust either. Here plain column addition settles it in a minute.
+
+:::reveal Knott's text prints the sum as 3437·843. What do his beads in Fig. 5 show on the tenths rod, and what is the true sum? ||| Three one-beads and no five-bead, so 3 in the tenths place: 3437.343, which pencil arithmetic confirms (3085.274 + 352.069).
+
+:::reveal Why do decimal points line up by themselves on a soroban? ||| Every number is set with its ones digit on the same chosen ones rod, so tenths fall on the tenths rod, hundredths on the hundredths rod, and so on.
+
+## Sources
+- ${KNOTT} Locator: p. 19 (PDF p. 42), the shop-boy and the prices "Yen 1.25, Yen 2,89, and Yen 3.17" (as printed); p. 49 (PDF p. 72), the addition of 352·069 to 3085·274, Figs. 4 and 5, and the printed result "3437·843" (read on the page image: the 8 is in the type). ${TA}`,
+    },
     // @@END_LESSONS@@
   ],
 };
