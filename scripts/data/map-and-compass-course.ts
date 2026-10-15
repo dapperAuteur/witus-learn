@@ -2386,5 +2386,58 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 - ${NCEI_WMM} Locator: the overview paragraph on five-year updates.
 - ${NCEI_DECL} Locator: "Geomagnetic Calculators".`,
     },
+    {
+      slug: "capstone-your-own-route",
+      title: "36 · Capstone: plan, and walk, your own route",
+      section: "8 · Where it came from, and your own route",
+      recallContent: [
+        {
+          prompt: "Who described the magnetized needle in 1088, according to the Asia course?",
+          answer: "The scholar-official Shen Kuo; Zhu Yu's Pingzhou Ketan (early 1100s) records pilots using it at sea.",
+        },
+        {
+          prompt: "What point does the Monsters at the Edge of the Map course make about portolan charts?",
+          answer: "\"The chart leaves out what its user will not use\": every map is edited for its user.",
+        },
+      ],
+      body: `${P("BAM's worked example of this capstone on the quad he films on: his route card, his walk with the log, and his own after-walk comparison, shown so a learner can follow each step")}
+
+**The task.** Plan a route of three to five legs on a US Topo map of ground you may legally walk, and walk it if it is safe and allowed. If you cannot walk it, plan it in full and walk the first leg, or walk a measured stretch to calibrate your pace. Everything you need is in the lessons it names.
+
+**1. Choose the ground and read its rules** (lesson 3). Start with a site whose rules allow what you plan: marked trails for a first route, and off-trail ground only where the manager permits it. Check the alerts for closures before you go.
+
+**2. Get the map and read its margin** (lessons 4 and 5). Note the date, the scale, the contour interval, the datum and zone, and the declination and its year. Look up today's declination (lesson 16).
+
+**3. Set up the compass** (lessons 14 to 17). Set the declination, or write the rule on your card: in Indiana, map to compass, add.
+
+**4. Plan the legs on paper** (lessons 21, 24 and 26). For each leg, measure the bearing with a protractor and the distance with the bar scale; turn the distance into paces (lesson 23); name a handrail, a catching feature and a checkpoint that crosses your line; finish with a short point-navigation leg from an attack point within 500 meters.
+
+**5. Budget the time and set the turn-back rule** (lesson 27). Use your own measured speed, add margin, and write down the clock time at which you turn around wherever you are.
+
+**6. Leave the plan with someone** (lesson 26): "Tell someone where you are going and when to expect you to return. Be specific."
+
+**7. Walk and log it** (lessons 18 to 20, 22 and 28). Orient the map at the start. At each checkpoint, log the time, the bearing walked, the pace count against the expected count, and what you saw. Resect at least once on the way, and restart the pace count after each fix.
+
+**8. If something stops making sense** (lesson 29): stop, go back to your last certain position, try to fix it, and if you cannot, stay and be found.
+
+**9. Check one GPS fix** (lesson 34). Set the receiver to the map's datum, plot a fix, and see whether it agrees with the ground.
+
+**10. Afterward, compare** (lesson 28). Lay the log beside the map. Where did your logged position and the truth part, and what did you believe that turned out to be wrong?
+
+**Reading alongside.** BAM keeps three land-navigation books on his own shelf. They are named here so you can find them, not quoted or summarized, and this course does not rely on them:
+- Burns, B., & Burns, M. (2015). *Wilderness navigation: Finding your way using map, compass, altimeter & GPS* (3rd ed.). Mountaineers Books.
+- Kals, W. S. *Land navigation handbook: The Sierra Club guide to map and compass*. Sierra Club. Check the edition and year of the copy you find.
+- Department of the Army. (2022). *The official U.S. Army map reading and land navigation handbook* [Commercial edition]. A 2022 printing of Army land-navigation material, separate from the 2001 field manual this course is built on.
+
+**What you have now.** A map you can read, a compass you can trust, a position you can find, and a plan you can walk, with a phone as a check rather than a crutch. The Army manual's last word on method still holds: "One should not depend entirely on compass navigation or map navigation; either or both could be lost or destroyed."
+
+:::reveal In the capstone, what do you write down before you leave besides the route? ||| A turn-back time (the clock time to turn around wherever you are), and a copy of the plan left with someone, saying where you are going and when you will be back.
+
+:::reveal After each fix on the walk, what happens to the pace count? ||| It starts again.
+
+## Sources
+- ${FM_2001} Locator: printed p. 11-18 (PDF p. 164), paragraph 11-6c.
+- ${DEAM} Locator: "Pre-Trip Check List".`,
+    },
   ],
 };
