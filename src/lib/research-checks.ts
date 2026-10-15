@@ -7848,6 +7848,104 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["A dated price survey or extension source"],
     where: ["Extension small-flock marketing guides", "Fleece-show or fiber-festival sale reports"],
   },
+  // ── Surveying: How Land Gets Measured (TOOLS-03) ──────────────────────────────────────────────
+  {
+    key: "surv-ncei-vincennes-1804",
+    title: "NOAA's historic declination for Vincennes in 1804, against Mansfield's 6° 45' E",
+    course: "surveying-how-land-gets-measured",
+    lesson: "magnetic-declination",
+    quote: "This course does not print the answer: the comparison is waiting on a check, and an answer printed here before anyone has done it would only be a guess.",
+    severity: "low",
+    question:
+      "What declination does the NOAA NCEI US Historic Declination Calculator give for Vincennes, Indiana, in 1804, and how does it compare with the 6° 45' E that Jared Mansfield observed there (White, p. 49)?",
+    claim:
+      "Lesson 9 quotes Mansfield's 6° 45' E and sends the learner to the calculator, deliberately printing no answer. Wilson (1916, p. 12) separately reports 6° 25' E at the Freeman Corner in 1806, which a reviewer may want to compare too.",
+    stakes:
+      "Low, and that is why it is an exercise rather than a claim: the calculator is 'typically accurate to 30 minutes of arc', so agreement within that margin is all it can show. Printing a guessed value would teach learners to trust a number nobody computed.",
+    needs: [
+      "The calculator's output for Vincennes (state the latitude and longitude used) for 1804, with the model it reports (USD polynomial or IGRF)",
+      "Whether it falls within 30 minutes of 6° 45' E",
+      "The date the calculator was run",
+    ],
+    where: [
+      "https://www.ngdc.noaa.gov/geomag-web/#ushistoric (NOAA NCEI)",
+      "White (1983), A History of the Rectangular Survey System, p. 49, for Mansfield's figure",
+    ],
+  },
+  {
+    key: "surv-ngs-datasheet-tool",
+    title: "Which current NGS tool a learner should use to look up a survey mark's datasheet",
+    course: "surveying-how-land-gets-measured",
+    lesson: "bench-marks-and-the-law",
+    quote: "Which NGS tool a learner should use today is waiting on a check, so this course names the agency and not a page.",
+    severity: "low",
+    question:
+      "What is the National Geodetic Survey's current public tool for finding survey marks near a location and opening a mark's datasheet, and what are its steps?",
+    claim:
+      "Lesson 14 quotes NOAA's classroom activity, whose step-by-step clicks (the 'NGS Datasheet Retrieval Page') describe an older version of the NGS site, so it names the agency but no page.",
+    stakes:
+      "Low: a learner can still find NGS, but a working link and steps would make the lesson's mark-recovery exercise usable as written.",
+    needs: ["The tool's name and URL", "The steps from a place name or coordinates to a datasheet", "The date checked"],
+    where: ["https://geodesy.noaa.gov/ (National Geodetic Survey)", "NOAA's current educational materials on survey marks"],
+  },
+  // ── Reading a Land Description (TOOLS-04) ─────────────────────────────────────────────────────
+  {
+    key: "land-vincennes-office-year",
+    title: "The year Indiana's first land office opened at Vincennes: 1804 or 1807?",
+    course: "reading-a-land-description",
+    lesson: "the-records-and-who-keeps-them",
+    quote: "This course states neither year until a primary record settles it, and a check has been filed to do that.",
+    severity: "medium",
+    question:
+      "In what year did the federal land office at Vincennes open for business, as shown by a primary record (the office's first entries, its register's commission, or a Treasury or GLO document)?",
+    claim:
+      "Lesson 12 reports that IARA's own land-records page says 'The first land office in Indiana opened in 1807 at Vincennes' and, in a list on the same page, 'Vincennes (1804)', and that White (p. 48) summarizes the Act of March 26, 1804 as establishing land offices at Vincennes, Detroit and Kaskaskia. It states neither year.",
+    stakes:
+      "Medium: the date anchors when the first Indiana purchases could be entered, which matters to anyone dating a family's land purchase from the tract books.",
+    needs: [
+      "The opening year with the primary record it rests on, quoted, with a locator",
+      "Whether the 1804 figure refers to the act establishing the office and the 1807 figure to the first sales, or one of them is simply wrong",
+    ],
+    where: [
+      "The Vincennes tract books on the Indiana Digital Archives (the earliest entry dates)",
+      "American State Papers, Public Lands, for the register and receiver appointments",
+      "IARA reference staff",
+    ],
+  },
+  {
+    key: "land-indiana-civil-vs-survey-townships",
+    title: "How Indiana's civil townships relate to its survey townships",
+    course: "reading-a-land-description",
+    lesson: "the-grid-under-your-roads",
+    quote: "How Indiana's civil townships relate to its survey townships, where they match and where they do not, is not something this course has established from a primary source, so it does not claim either way.",
+    severity: "low",
+    question:
+      "What does Indiana law or a primary state source say about how civil townships (units of local government) were drawn relative to the PLSS survey townships, and where do they differ?",
+    claim:
+      "Lesson 11 separates the two meanings of 'township' and says it has not established how they relate. Indiana Civics (state-civics-in, lesson 5) teaches that every acre lies within a civil township but does not draw the distinction either.",
+    stakes:
+      "Low, but it is a common confusion: a learner reading a deed's 'T. 17 N.' beside a ballot's township name could assume they are the same unit.",
+    needs: ["The governing statute or a state source, quoted, with a locator", "One or two worked examples of a civil township that does and does not match a survey township"],
+    where: ["Indiana Code Title 36, Article 6 (townships)", "IARA or the Indiana State Library on township formation", "County commissioners' records of township creation"],
+  },
+  {
+    key: "land-clark-knox-old-survey-grid",
+    title: "What the 'old survey grid' is in Clark and Knox counties",
+    course: "reading-a-land-description",
+    lesson: "the-grid-under-your-roads",
+    quote: "Starkey does not say what that \"old survey grid\" was, and this course has not confirmed it from a primary source, so it leaves the question open rather than guess.",
+    severity: "low",
+    question:
+      "What earlier survey sets the diagonal road grid Starkey (1956, p. 193) found in Clark and Knox counties, 'diagonal to the township-range survey but parallel to the old survey grid'? For example, the French and Vincennes-area claims in Knox County, or a grant in Clark County.",
+    claim: "Lesson 11 quotes Starkey and leaves the identity of the older grid open.",
+    stakes: "Low: a sentence of explanation, but a guessed one would put an unverified claim about pre-federal land titles in front of learners.",
+    needs: ["The survey or grant that sets each county's older grid, from a primary source or the Manual's tables, with a locator"],
+    where: [
+      "The 2009 Manual, table 3-2 and its notes on private land claims",
+      "White (1983), on the French claims at Vincennes and on grants outside the rectangular system",
+      "The original plats for Knox and Clark counties at IARA or the Internet Archive collection",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
