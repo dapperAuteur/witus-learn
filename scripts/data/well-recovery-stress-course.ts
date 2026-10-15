@@ -441,9 +441,9 @@ McEwen, B. S. (1998). Protective and damaging effects of stress mediators. *New 
           },
           {
             prompt: "What stays inside coaching scope on this pillar?",
-            options: ["Teaching what stress does, coaching the behaviours, reading wearable data as pattern","Interpreting HRV to decide whether a client should train","Identifying whether a presentation meets overtraining criteria","Prescribing heat or cold as treatment for inflammation"],
+            options: ["Teaching what stress does, coaching the behaviors, reading wearable data as pattern","Interpreting HRV to decide whether a client should train","Identifying whether a client's presentation meets the established criteria for overtraining syndrome","Prescribing heat or cold as treatment for inflammation"],
             correctIndex: 0,
-            explanation: "Pattern reading is education and behaviour. Clinical interpretation, syndrome identification, and prescribing recovery as treatment all leave the lane.",
+            explanation: "Pattern reading is education and behavior. Clinical interpretation, syndrome identification, and prescribing recovery as treatment all leave the lane.",
             sourceLessonSlug: "the-recovery-pillar",
           },
           {
@@ -455,9 +455,9 @@ McEwen, B. S. (1998). Protective and damaging effects of stress mediators. *New 
           },
           {
             prompt: "What is 'load management'?",
-            options: ["Arranging training, work, and rest so demand and capacity stay workable","Adjusting volume and intensity across a periodized block","Monitoring fatigue markers and reducing load when they worsen","Distributing stress evenly across the week"],
+            options: ["Arranging training, work, and rest so demand and capacity stay workable","Adjusting volume and intensity across a periodized block","Monitoring accumulated fatigue using objective markers and reducing load when they worsen","Distributing stress evenly across the week"],
             correctIndex: 0,
-            explanation: "It spans work and rest, not just training, which makes it the behavioural half of recovery rather than a programming task.",
+            explanation: "It spans work and rest, not just training, which makes it the behavioral half of recovery rather than a programming task.",
             sourceLessonSlug: "the-recovery-pillar",
           },
           {
@@ -469,14 +469,14 @@ McEwen, B. S. (1998). Protective and damaging effects of stress mediators. *New 
           },
           {
             prompt: "What is 'allostasis'?",
-            options: ["The body adjusting its systems to meet demand rather than holding a setpoint","The return to a fixed physiological setpoint after disturbance","The accumulated cost of a stress response that never stands down","Adaptation to a training stimulus over weeks"],
+            options: ["The body adjusting its systems to meet demand rather than holding a setpoint","The return to a fixed physiological setpoint after disturbance","The accumulated physiological cost of a stress response that never fully stands down again","Adaptation to a training stimulus over weeks"],
             correctIndex: 0,
             explanation: "Adjustment, not homeostatic return. The accumulated COST is allostatic load, a separate term.",
             sourceLessonSlug: "allostatic-load",
           },
           {
             prompt: "Define allostatic load.",
-            options: ["Wear accumulating across systems when the stress response never fully stands down","The total demand a person is carrying at a given moment","The gap between current capacity and the demands on it","The clinical index determining when stress becomes pathological"],
+            options: ["Wear accumulating across systems when the stress response never fully stands down","The total demand a person is carrying at a given moment","The gap between current capacity and the demands on it","The clinical index used to determine whether a person's stress response has become pathological"],
             correctIndex: 0,
             explanation: "McEwen's term for cumulative cost across neuroendocrine, cardiovascular, metabolic, and immune systems. The wear, not the demand.",
             sourceLessonSlug: "allostatic-load",
@@ -490,7 +490,7 @@ McEwen, B. S. (1998). Protective and damaging effects of stress mediators. *New 
           },
           {
             prompt: "What question does the allostatic-load frame replace 'is stress bad?' with?",
-            options: ["What is the total load on this person, and their capacity to absorb it","Which stressor is largest and can it be removed","How long has the stress response been elevated","Which system shows the earliest signs of wear"],
+            options: ["What is the total load on this person, and their capacity to absorb it","Which of this person's stressors is the largest, and can it be removed or reduced?","How long has the stress response been elevated","Which system shows the earliest signs of wear"],
             correctIndex: 0,
             explanation: "It stops a client treating a hard training block and a brutal work quarter as unrelated events.",
             sourceLessonSlug: "allostatic-load",
@@ -504,7 +504,7 @@ McEwen, B. S. (1998). Protective and damaging effects of stress mediators. *New 
           },
           {
             prompt: "How should a coach use allostatic load?",
-            options: ["As a teaching metaphor and rationale, never as a score","As a screening tool applied at intake","As a monthly index tracked as a trend","As a threshold determining when to refer"],
+            options: ["As a teaching metaphor and rationale, never as a score","As a screening tool applied at intake","As a monthly index tracked as a trend","As a diagnostic threshold that determines when to refer a client"],
             correctIndex: 0,
             explanation: "'Your body is carrying load from several directions' is honest. 'Your allostatic load is high, here is your index' is not.",
             sourceLessonSlug: "allostatic-load",
@@ -518,14 +518,14 @@ McEwen, B. S. (1998). Protective and damaging effects of stress mediators. *New 
           },
           {
             prompt: "Which conditions produce the same picture as overtraining?",
-            options: ["Depression, anemia, thyroid disease, sleep apnea, and grief","Only other training-related conditions","Primarily sleep disorders","Conditions affecting the endocrine system"],
+            options: ["Depression, anemia, thyroid disease, sleep apnea, and grief","Only other training-related conditions","Primarily sleep disorders","Conditions affecting the endocrine system specifically, since the mechanism is hormonal"],
             correctIndex: 0,
             explanation: "The mimics are the argument: a confident label discourages a client from pursuing causes only a clinician can rule out.",
             sourceLessonSlug: "load-exceeds-capacity",
           },
           {
             prompt: "What are the four moves instead of labelling?",
-            options: ["Describe the pattern, map total load, refer the medical question, coach what is yours","Reduce load, monitor two weeks, reassess, refer if unchanged","Document, notify their physician, pause coaching, await clearance","Assess sleep, nutrition, and volume, then adjust the weakest"],
+            options: ["Describe the pattern, map total load, refer the medical question, coach what is yours","Reduce load, monitor two weeks, reassess, refer if unchanged","Document the symptoms, notify the client's physician, pause coaching, and await medical clearance","Assess sleep, nutrition, and volume, then adjust the weakest"],
             correctIndex: 0,
             explanation: "Referral is one of four simultaneous moves, not a last resort, and coaching continues alongside it.",
             sourceLessonSlug: "load-exceeds-capacity",
@@ -1391,13 +1391,13 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
             prompt: "In the trial comparing breathing practices with meditation, cyclic sighing produced greater:",
             options: [
               "Improvement in mood and reduction in respiratory rate",
-              "Reduction in diagnosed anxiety disorder severity at twelve months",
+              "Remission of anxiety disorders at one year",
               "Increases in maximal aerobic capacity and resting metabolic rate",
               "Improvement in every measured outcome, including cortisol and sleep",
             ],
             correctIndex: 0,
             explanation:
-              "Those two are the reported between-group findings over a month of five-minute daily practice. Claims about diagnosed anxiety, fitness, or a clean sweep of outcomes go past what the trial showed.",
+              "Those two are the reported between-group findings over a month of five-minute daily practice. Claims about anxiety disorders, fitness, or a clean sweep of outcomes go past what the trial showed between groups.",
             sourceLessonSlug: "breathwork-evidence",
           },
           {
@@ -1575,7 +1575,7 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
               "Mood improvement and reduction in respiratory rate",
               "Anxiety reduction and improvement in heart-rate variability across the month",
               "Mood improvement and reduction in physiological arousal across every measured marker",
-              "Sleep quality and self-reported stress, the trial's two primary outcomes",
+              "Sleep quality and self-reported stress",
             ],
             correctIndex: 0,
             explanation:
@@ -1585,10 +1585,10 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
           {
             prompt: "What is 'cyclic sighing'?",
             options: [
-              "A pattern emphasising a prolonged exhale",
+              "A pattern emphasizing a prolonged exhale",
               "A pattern of equal-length inhale, hold, exhale, and hold, repeated in a fixed cycle",
               "Rapid breathing followed by a period of breath retention, repeated across several rounds",
-              "Breathing at a fixed rate of six breaths per minute, the resonance frequency of most adults",
+              "Breathing at six breaths per minute",
             ],
             correctIndex: 0,
             explanation:
@@ -1613,12 +1613,12 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
             options: [
               "An effect size like Cohen's d with a small-sample correction",
               "An effect size expressed in the original units of the outcome measured",
-              "A measure of between-study heterogeneity used when pooling trial results",
+              "A measure of between-study heterogeneity",
               "A correlation coefficient adjusted for the number of predictors in a model",
             ],
             correctIndex: 0,
             explanation:
-              "Cohen's d with a small-sample correction, which is why meta-analyses of small trials favour it. −0.35 is small-to-medium on the same scale.",
+              "Cohen's d with a small-sample correction, which is why meta-analyses of small trials favor it. −0.35 is small-to-medium on the same scale.",
             sourceLessonSlug: "breathwork-evidence",
           },
           {
@@ -1638,7 +1638,7 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
             prompt: "What does a waitlist control actually control for?",
             options: [
               "The passage of time, and nothing else",
-              "Time and expectation, though not the attention a practitioner provides",
+              "Time and expectation",
               "Time, expectation, and attention, but not the structure of doing something deliberate",
               "Nothing; a waitlist group is functionally identical to no control group at all",
             ],
@@ -1743,7 +1743,7 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
             options: [
               "2,315 middle-aged Finnish men, median follow-up 20.7 years",
               "1,688 participants, 51.4 percent women, mean age 63, median follow-up 15 years",
-              "2,315 Finnish adults of both sexes, followed for a median of 15 years",
+              "2,315 Finnish adults of both sexes",
               "1,688 middle-aged Finnish men, randomized to sauna frequency for 20.7 years",
             ],
             correctIndex: 0,
@@ -1885,9 +1885,9 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
             prompt: "At which follow-up was the cold-water soreness effect largest?",
             options: [
               "72 hours (SMD −0.93)",
-              "24 hours (SMD −0.55), with the effect diminishing steadily thereafter",
-              "96 hours (SMD −0.58), indicating a delayed but durable benefit",
-              "48 hours (SMD −0.66), coinciding with the usual peak of delayed onset soreness",
+              "24 hours (SMD −0.55)",
+              "96 hours (SMD −0.58)",
+              "48 hours (SMD −0.66)",
             ],
             correctIndex: 0,
             explanation:
@@ -2016,7 +2016,7 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
             options: [
               "The soreness peaking a day or two after unfamiliar effort",
               "Soreness that appears only after a training block has concluded and recovery has begun",
-              "Persistent soreness lasting more than 96 hours after a single training session",
+              "Soreness lasting past 96 hours",
               "The soreness felt during the final repetitions of a set taken close to failure",
             ],
             correctIndex: 0,
@@ -2117,7 +2117,7 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
           },
           {
             prompt: "What is 'cyclic sighing'?",
-            options: ["A pattern emphasising a prolonged exhale","Equal-length inhale, hold, exhale, hold","Rapid breathing followed by retention","Breathing at six breaths per minute"],
+            options: ["A pattern emphasizing a prolonged exhale","Equal-length inhale, hold, exhale, hold","Rapid breathing followed by retention","Breathing at six breaths per minute"],
             correctIndex: 0,
             explanation: "The four-part pattern is box breathing and the rapid-then-retain is cyclic hyperventilation, both in the same trial.",
             sourceLessonSlug: "breathwork-evidence",
@@ -2508,7 +2508,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
             options: [
               "The clinical finding a wearable number is standing in for, which is what gets referred",
               "The physiological mechanism that causes a wearable reading to change",
-              "The subjective experience a client reports alongside an objective measurement",
+              "The subjective experience a client reports alongside an objective measurement from the same device",
               "The measurement error that makes a wearable reading appear abnormal",
             ],
             correctIndex: 0,
@@ -2570,7 +2570,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           },
           {
             prompt: "What is a 'taper' versus a 'deload'?",
-            options: ["Taper: pre-event volume cut with intensity held. Deload: routine reduction inside training","Taper: routine reduction. Deload: pre-event reduction","Taper cuts intensity; deload cuts volume","Taper lasts under a week; deload a full week"],
+            options: ["Taper: pre-event volume cut with intensity held. Deload: routine reduction inside training","Taper: a routine reduction inside ordinary training. Deload: a pre-event reduction before competition","Taper cuts intensity; deload cuts volume","Taper lasts under a week; deload a full week"],
             correctIndex: 0,
             explanation: "Pre-event and well-evidenced versus routine and thinly evidenced. The evidence asymmetry is why they are treated differently.",
             sourceLessonSlug: "rest-deloads-tapers",
@@ -2584,7 +2584,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           },
           {
             prompt: "What does 'revealing versus building' name?",
-            options: ["The taper distinction: performance rose while VO2max and economy did not","Deloads reveal fatigue while tapers build capacity","Subjective readiness versus objective capacity","Showing a client progress versus producing more"],
+            options: ["The taper distinction: performance rose while VO2max and economy did not","The difference between a deload, which reveals fatigue, and a taper, which builds capacity","Subjective readiness versus objective capacity","Showing a client progress versus producing more"],
             correctIndex: 0,
             explanation: "Capacity was already there; the taper let it appear.",
             sourceLessonSlug: "rest-deloads-tapers",
@@ -2598,14 +2598,14 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           },
           {
             prompt: "Which half of a deload is coaching?",
-            options: ["Everything around the numbers: normalising, guilt, the identity story","The exercise selection during the deload week","The timing of the deload within the block","All of it, since a deload is behavioural"],
+            options: ["Everything around the numbers: normalizing, guilt, the identity story","The exercise selection during the deload, while the schedule is the programming half","The timing of the deload within the block","All of it, since a deload is behavioral"],
             correctIndex: 0,
             explanation: "Which weeks, what percentage, which sets are programming under the CPT hat. The physiology is the easy part; the permission is the intervention.",
             sourceLessonSlug: "rest-deloads-tapers",
           },
           {
             prompt: "What accompanies persistent fatigue as a medical signal?",
-            options: ["Weight change, temperature intolerance, breathlessness, unusual bruising or bleeding","Reduced performance, low motivation, irritability for weeks","Elevated resting heart rate and poor recovery scores","Soreness persisting beyond 96 hours"],
+            options: ["Weight change, temperature intolerance, breathlessness, unusual bruising or bleeding","Reduced performance, low motivation, irritability for weeks","Low wearable readiness scores, suppressed HRV, and poor subjective recovery ratings","Soreness persisting beyond 96 hours"],
             correctIndex: 0,
             explanation: "Four accompaniments, each pointing at something a clinician needs to exclude.",
             sourceLessonSlug: "referral-on-recovery",
@@ -2619,7 +2619,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           },
           {
             prompt: "Which findings route to mental-health care?",
-            options: ["Flattened mood, lost interest, hopelessness, self-harm content, decision-driving anxiety","Low motivation, irritability, and reduced enjoyment of training","Poor sleep, high stress ratings, and declining HRV","Frustration with progress and reluctance to attend"],
+            options: ["Flattened mood, lost interest, hopelessness, self-harm content, decision-driving anxiety","Irritability and low motivation in a heavy training block, both gone by the deload week","Poor sleep, high stress ratings, and declining HRV","Frustration with progress and reluctance to attend"],
             correctIndex: 0,
             explanation: "Self-harm goes immediately with the crisis-line information in hand. Ordinary frustration is coaching material, not a referral trigger.",
             sourceLessonSlug: "referral-on-recovery",
@@ -2647,7 +2647,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           },
           {
             prompt: "What is the coach's role in contraindication screening?",
-            options: ["Asking the question and routing it, never clearing anyone medically","Clearing the client once no contraindications are reported","Obtaining written clearance before thermal exposure","Documenting the screen and proceeding unless flagged"],
+            options: ["Asking the question and routing it, never clearing anyone medically","Clearing the client once no contraindications are reported","Obtaining written clearance before thermal exposure","Documenting the screening and proceeding unless the client reports a listed condition"],
             correctIndex: 0,
             explanation: "Ask and route. That is what distinguishes screening from assessment.",
             sourceLessonSlug: "referral-on-recovery",
@@ -2661,7 +2661,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           },
           {
             prompt: "A client says a rest week feels like giving up. Which tools apply?",
-            options: ["The WELL-01 identity tools, plus normalising the reduction","Education about the taper evidence","A lower-volume week that does not feel like rest","Reassurance that the feeling passes with results"],
+            options: ["The WELL-01 identity tools, plus normalizing the reduction","Education about the taper evidence","A revised program with a lower-volume week that does not feel like rest","Reassurance that the feeling passes with results"],
             correctIndex: 0,
             explanation: "'I am someone who trains hard' is an identity story, and the psychology course owns it. Education aims at the wrong variable.",
             sourceLessonSlug: "rest-deloads-tapers",
@@ -2688,10 +2688,10 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "How should a coach use the allostatic-load concept with a client?",
             options: [
-              "As a teaching frame for cumulative load across life and training, never as a score to compute",
+              "As a teaching frame for cumulative load, never as a score to compute",
               "As an index to calculate from the client's own lab results and then track on a quarterly basis",
               "As a diagnosis to explain persistent fatigue and justify time off work",
-              "As a reason to avoid all training stress until stress markers normalise",
+              "As a reason to avoid all training stress until stress markers normalize",
             ],
             correctIndex: 0,
             explanation:
@@ -2805,7 +2805,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "Which is the coaching half of a deload week?",
             options: [
-              "Normalising the reduction and working the identity story that makes rest feel like failure",
+              "Normalizing the reduction and working the identity story behind the guilt",
               "Selecting the exact percentage reduction and specifying the sets, loads, and exercises for the week",
               "Deciding which training weeks in the calendar should be reduced",
               "Assessing whether accumulated fatigue has reached a threshold requiring rest",
@@ -2818,7 +2818,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "A client reports chest tightness during their sauna sessions. The coach should:",
             options: [
-              "Stop the heat exposure and route them to medical care now, before any further coaching",
+              "Stop the heat exposure and route them to medical care now",
               "Suggest shorter sauna sessions at a lower temperature and monitor closely how the next few go",
               "Recommend they hydrate more thoroughly and try again next week",
               "Track it alongside their HRV data for a fortnight to establish a pattern",
@@ -2831,7 +2831,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "The referral trap specific to this pillar is that:",
             options: [
-              "Recovery tools feel harmless, so a metric gets coached while the symptom behind it goes unreferred",
+              "Recovery tools feel harmless, so the symptom behind a metric goes unreferred",
               "Clients very rarely disclose meaningful physical symptoms during ordinary recovery conversations",
               "Recovery referrals must go to specialists rather than primary care",
               "Wearable data is legally protected, so symptoms cannot be discussed",
@@ -2870,7 +2870,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "Why is this pillar not a thin bridge?",
             options: [
-              "No certification you hold teaches its content, so the course teaches content as well as coaching",
+              "No certification you hold teaches its content, so this course does",
               "Its coaching layer is more complex than movement's or nutrition's",
               "Its scope boundaries require more legal detail than other pillars",
               "Its evidence base is newer and requires primary-literature review",
@@ -2882,7 +2882,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "What is a 'mechanism story', and why does this pillar attract them?",
             options: [
-              "An explanation of HOW something should work, instead of evidence that it DOES",
+              "An account of HOW something should work, not proof that it DOES",
               "A simplified physiological account prepared for clients",
               "A description of a pathway confirmed by randomized trial",
               "The narrative a client builds about why a practice helps them",
@@ -2906,7 +2906,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "Why does this course refuse to let a coach say 'you are overtrained'?",
             options: [
-              "It is a clinical construct, and the same picture comes from depression, anemia, thyroid disease, apnea",
+              "It is a clinical construct with criteria, so saying it is diagnosing",
               "It discourages clients, which reduces their willingness to continue",
               "The construct has been abandoned by sports-medicine literature",
               "It applies only to competitive athletes, not general clients",
@@ -2942,7 +2942,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "What did daily RMSSD track, and what did it notably fail to track?",
             options: [
-              "Better sleep, lower fatigue and stress; NO association with muscle soreness",
+              "Better sleep, less fatigue and stress; not muscle soreness",
               "Muscle soreness and fatigue; no association with sleep quality",
               "Sleep only, with fatigue and stress explained by the same variable",
               "Training readiness, validated against subsequent performance",
@@ -2966,9 +2966,9 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "State the HRV recording rule.",
             options: [
-              "One protocol: same posture, same time, same breathing style, ideally spontaneous, never mixed",
+              "Same posture, same time, ideally spontaneous breathing, never mixed",
               "Record three times weekly and average before plotting",
-              "Use paced breathing throughout to standardise the respiratory contribution",
+              "Use paced breathing throughout to standardize the respiratory contribution",
               "Record on waking and before sleep, and use the difference",
             ],
             correctIndex: 0,
@@ -2978,7 +2978,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "What did the breathwork meta-analysis find, and what did the authors warn?",
             options: [
-              "Stress g = -0.35 across 12 RCTs; avoid 'a miscalibration between hype and evidence'",
+              "g = -0.35 across 12 RCTs; avoid 'a miscalibration between hype and evidence'",
               "Stress g = -0.63 across 12 RCTs; the effect is robust to risk of bias",
               "Stress g = -0.35 across 20 trials; anxiety and depression showed no effect",
               "No significant effect on stress; only anxiety and depression improved",
@@ -3038,7 +3038,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "Which sauna hazard ratio should a coach carry, and why?",
             options: [
-              "0.23 (0.08-0.65), because it survived adjustment for CV risk, activity, and status",
+              "0.23 (0.08-0.65), as it survived adjustment for CV risk, activity, and status",
               "0.37 (0.18 to 0.75), because it comes from the longer-followed cohort",
               "0.30, because it adjusts for age and sex, the strongest confounders",
               "0.48, because it isolates session duration, the modifiable variable",
@@ -3062,7 +3062,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "What did cold-water immersion beat, and what did it fail to beat?",
             options: [
-              "Beat passive rest on soreness; failed to beat contrast or warm-water immersion",
+              "Beat passive rest on soreness; failed to beat contrast or warm water",
               "Beat contrast immersion; failed to beat passive rest beyond 48 hours",
               "Beat active recovery on soreness; failed to beat it on adaptation",
               "Beat compression garments; failed to beat passive rest at any point",
@@ -3074,13 +3074,13 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "What did twelve weeks of post-session cold water do to adaptation?",
             options: [
-              "Strength and mass increased MORE with active recovery than with cold water",
-              "Strength increased equally, with only muscle mass favouring active recovery",
+              "Strength and mass rose MORE with active recovery than cold water",
+              "Strength increased equally, with only muscle mass favoring active recovery",
               "Cold water produced greater strength but smaller mass gains",
               "Neither group differed, though soreness was lower with cold water",
             ],
             correctIndex: 0,
-            explanation: "Plus isokinetic work, type II fibre cross-sectional area, and myonuclei per fibre appearing in the active recovery group only.",
+            explanation: "Plus isokinetic work, type II fiber cross-sectional area, and myonuclei per fiber appearing in the active recovery group only.",
             sourceLessonSlug: "cold-water-evidence",
           },
           {
@@ -3110,7 +3110,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "What is the honest status of the four-week deload convention?",
             options: [
-              "A reasonable tradition extrapolated from adjacent literature, not a tested prescription",
+              "A reasonable tradition, extrapolated rather than tested",
               "A well-evidenced prescription supported by randomized trials in lifters",
               "Contradicted by the taper evidence, which supports longer intervals",
               "Untested, and therefore recommended against by this course",
@@ -3158,7 +3158,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "A client reports three weeks of low HRV, exhaustion rest does not touch, and unexplained weight loss. What do you do?",
             options: [
-              "Refer for the medical question, and coach only what is legitimately yours alongside it",
+              "Refer the medical question, and coach only what is yours alongside it",
               "Reduce training load and reassess the HRV trend over two weeks",
               "Investigate sleep and stress inputs, since both drive HRV and fatigue",
               "Advise a deload week, since the picture fits accumulated load",
@@ -3170,7 +3170,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "Why does the course call breathwork the best cost-to-benefit tool here?",
             options: [
-              "No cost, no equipment, no real risk, and a real effect against nothing",
+              "No cost, no equipment, no real risk, and a real effect",
               "The largest effect size of any recovery modality tested",
               "The strongest mechanistic rationale of the four modalities",
               "The longest follow-up data establishing durable benefit",

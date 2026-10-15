@@ -255,7 +255,7 @@ This is the part that most writing about military posts leaves out, and it is th
             prompt: "Why was the post built miles outside Indianapolis rather than at the existing Arsenal site?",
             options: [
               "The Arsenal had burned down",
-              "Congress required all new posts to be rural",
+              "A congressional act barred new Army posts inside city limits, so the board had to buy farmland beyond Indianapolis",
               "City residents opposed a post next to their growing residential and business communities",
               "The War Department had already sold the Arsenal grounds to a private buyer before the military board reported",
             ],
@@ -311,7 +311,7 @@ This is the part that most writing about military posts leaves out, and it is th
           {
             prompt: "What was Base Hospital 32?",
             options: [
-              "The post's permanent hospital, built with appropriated funds during the original 1906 to 1910 construction period and still standing inside the historic district, where it later served as the Soldier Support Center headquarters",
+              "The post's permanent hospital, built with appropriated funds during the 1906 to 1910 construction period and still standing inside the historic district",
               "One of 33 voluntary base hospitals organized nationally before United States entry, established here with a $25,000 Eli Lilly contribution, which ran a 500-bed hospital in France",
               "A prisoner of war infirmary",
               "The Army's influenza quarantine ward",
@@ -324,9 +324,9 @@ This is the part that most writing about military posts leaves out, and it is th
             prompt: "The HABS documentation says influenza mortality at General Hospital No. 25 was high. Why does this course give no death toll?",
             options: [
               "The epidemic never reached the post, because General Hospital No. 25 treated only wounded troops returning from France and had closed before the autumn wave arrived",
-              "The figure is classified",
-              "The course rounded the number down to be cautious",
-              "The source states that mortality was high and gives no figure, and inventing one would be fabricating a statistic",
+              "The figure sits in a classified Army death register that remains sealed to researchers and to this course",
+              "The course dropped the HABS death toll after a later Army medical history revised that count sharply downward",
+              "The source says mortality was high but gives no figure, and inventing one would be fabricating a statistic",
             ],
             correctIndex: 3,
             explanation: "The count exists somewhere in Army medical records. This course has not read them and says so.",
@@ -347,7 +347,7 @@ This is the part that most writing about military posts leaves out, and it is th
           {
             prompt: "How should you report the dates of the prisoner of war camp at this post?",
             options: [
-              "All four sources agree on 1943 to 1944, and the National Register nomination adds that the prisoners were held at the main post rather than at the Camp Glenn complex",
+              "All four sources agree on 1943 to 1944, and the National Register nomination holds the prisoners at the main post",
               "All sources agree on 1944 to 1945",
               "Two sources give 1943 to 1944 and two give 1944 to 1945, and the National Register nomination places the camp at the Camp Glenn complex",
               "No source dates it at all",
@@ -361,7 +361,7 @@ This is the part that most writing about military posts leaves out, and it is th
             options: [
               "The statute required segregated camps",
               "The statute was silent on race",
-              "The CCC operated integrated companies in Indiana, which is why eight of the state's fifty-six companies appear in the enrollment records without any racial designation at all",
+              "The CCC ran integrated companies in Indiana, which is why eight of the state's fifty-six companies carry no racial designation in its records",
               "The statute prohibited discrimination by race, color and creed while the practice was segregated camps with white officers and technical staff supervising Black enrollees",
             ],
             correctIndex: 3,
@@ -374,7 +374,7 @@ This is the part that most writing about military posts leaves out, and it is th
               "It was numbered 3350, and no source disagrees",
               "It arrived in 1936 from Fort Knox specializing in reforestation and soil conservation; Hankins numbers it 3350 and the HABS documentation numbers it 3550",
               "It was numbered 3550, confirmed against National Archives rosters",
-              "The company's number was never recorded, so it appears in the Army command history and in the National Register nomination only as an unnumbered conservation detail working out of the district headquarters",
+              "Its number was never recorded, so every source lists it only as an unnumbered conservation detail at the district headquarters",
             ],
             correctIndex: 1,
             explanation: "This course uses 3350 because Hankins cites two documents naming the company directly, including one the company produced. Archives rosters would settle it.",
@@ -383,7 +383,7 @@ This is the part that most writing about military posts leaves out, and it is th
           {
             prompt: "Whom does the 30 April 1938 item in The Fort Ben Banner name?",
             options: [
-              "Jack Delano, the photographer",
+              "Jack Delano, the Farm Security Administration photographer whose April 1942 Chaplain School pictures are held at the Library of Congress",
               "Earl J. Schoen, the Indianapolis pilot killed in the First World War for whom the post's airfield was dedicated in 1922",
               "Lester Cain, a civilian credited with the best workers and most outstanding detail in the company",
               "Russell B. Harrison",
@@ -396,7 +396,7 @@ This is the part that most writing about military posts leaves out, and it is th
             prompt: "What, precisely, do the April 1942 Chaplain School photographs establish?",
             options: [
               "That the school's classes in that month included Jewish, Catholic, and Negro and white Protestant students",
-              "That the entire post was racially integrated",
+              "That the entire post was racially integrated in 1942, with Black and white soldiers sharing its barracks, mess halls and clubs",
               "That housing, food, mess arrangements and promotion opportunities were equal for all soldiers on the post in that period",
               "That the Army had already desegregated by 1942",
             ],
@@ -408,9 +408,9 @@ This is the part that most writing about military posts leaves out, and it is th
             prompt: "What do the National Register nomination and the HABS documentation say about race at this post?",
             options: [
               "They document segregated barracks, mess halls and recreation facilities in detail, and the HABS narrative devotes a section to the post's racial arrangements in the interwar years",
-              "They record the post as integrated from the start",
-              "They cite the Indianapolis Recorder throughout",
-              "Nothing at all; they describe social hierarchy only by rank, which is a fact about the documents rather than evidence of absence",
+              "They record the post as racially integrated from the start, which is why the building inventory lists no separate barracks",
+              "They cite the Indianapolis Recorder throughout, drawing on its wartime coverage of Black soldiers and civilian workers at the fort",
+              "Nothing; they describe social hierarchy only by rank, a fact about the documents rather than evidence of absence",
             ],
             correctIndex: 3,
             explanation: "Nominations of that era evaluated architectural integrity and military function without asking who was allowed where. Silence in a document is not silence in the past.",
@@ -1011,7 +1011,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
             prompt: "Why does this course refuse to state whether this post was an exclusive-jurisdiction federal enclave?",
             options: [
               "Because the answer is classified",
-              "Because jurisdiction over federal land is always exclusive once the property is acquired, so there is nothing about this particular post that would need to be verified separately in the state's cession statutes",
+              "Because jurisdiction over federal land is always exclusive once acquired, so nothing about this post needs checking in the state's cession statutes",
               "Because the question is unanswerable in principle",
               "Because jurisdiction may be exclusive, concurrent, partial or proprietary depending on what Indiana ceded and the United States accepted, and this course did not read those records",
             ],
@@ -1025,7 +1025,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
               "Because the Federal Property and Administrative Services Act of 1949 waived state and local property taxation on every installation acquired after the Second World War",
               "Because a state may not tax an instrumentality of the federal government, a principle running back to McCulloch v. Maryland in 1819",
               "Because military land is legally worthless",
-              "Because counties choose not to assess it",
+              "Because counties choose not to assess it, having agreed in each installation's original purchase contract to waive the levy in exchange for local jobs",
             ],
             correctIndex: 1,
             explanation: "The Department of Education states the practical consequence plainly: federally owned property does not generate taxes while the school district must still educate the same children.",
@@ -1035,7 +1035,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
             prompt: "Which Impact Aid limb compensates for the lost tax base itself, and what is its eligibility test?",
             options: [
               "Section 7003, triggered by a count of federally connected children living on or near the installation and enrolled in the district's schools during the count year",
-              "Section 7002, triggered by the number of soldiers stationed on the post",
+              "Section 7002, triggered by the number of uniformed soldiers stationed on the post during the annual count, with payment scaled to the installation's payroll and housing",
               "Section 7002, triggered by federal acquisition since 1938 of property worth at least 10 percent of all real property in the district at the time",
               "Section 7003, triggered by the acreage of the installation",
             ],
@@ -1047,8 +1047,8 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
             prompt: "What does the phrase 'formula grants subject to appropriation' warn a researcher about?",
             options: [
               "That the grants are awarded competitively against applications from other districts rather than by a statutory formula, so a strong application matters more than the underlying entitlement",
-              "That only states, not districts, may apply",
-              "That the formula is secret",
+              "That only state education agencies, not school districts, may apply, so every district must wait for its state to file a claim on its behalf",
+              "That the formula is kept confidential by the Department of Education, so no district can calculate its own entitlement before the award arrives",
               "That eligibility is not payment: a district can be eligible for a full entitlement and receive a fraction of it for years",
             ],
             correctIndex: 3,
@@ -1059,8 +1059,8 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
             prompt: "The City of Lawrence annexed the fort in 1970. What did the annexation NOT do?",
             options: [
               "It did not make the land taxable, because a city ordinance cannot override the rule that a state may not tax federal property",
-              "It did not add population to the city",
-              "It did not add roads to the city's obligations",
+              "It did not add population to the city, because soldiers and families living on a federal post are excluded from a municipal census count",
+              "It did not add roads to the city's obligations, because the Army kept maintaining every street inside the fort's boundary until the closure",
               "It did not affect who had jurisdiction after the base closed, because federal disposal ran through the Department of the Interior rather than through any municipality",
             ],
             correctIndex: 0,
@@ -1070,8 +1070,8 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
           {
             prompt: "Why is the 1970 annexation the most portable lesson in Section 3?",
             options: [
-              "Because annexation is always profitable",
-              "Because it shows that federal land can be taxed after annexation",
+              "Because annexation is always profitable, since the added population raises a city's formula distributions by more than its new roads cost",
+              "Because it shows that federal land can be taxed once a city annexes it, which made the fort the largest taxpayer in the City of Lawrence",
               "Because a jurisdictional decision made when land is worthless to you determines who benefits when it becomes valuable",
               "Because it proves the Army supported the annexation, which the Encyclopedia of Indianapolis and the thesis both record without any disagreement between them",
             ],
@@ -1082,9 +1082,9 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
           {
             prompt: "What is the design feature that makes base closure politically possible?",
             options: [
-              "A two-thirds Senate vote requirement",
+              "A two-thirds Senate vote requirement to remove any base from the list, so a single state's senators cannot block a closure by themselves",
               "Congress can reject the commission's package only in its entirety, so there is no vote on any individual base to trade",
-              "The President may close bases by proclamation without Congress",
+              "The President may close bases by proclamation without Congress, using emergency powers that bypass the commission's selection criteria",
               "Each base gets a separate up or down vote, taken by the congressional delegation of the state in which the installation is located, after a public hearing",
             ],
             correctIndex: 1,
@@ -1095,7 +1095,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
             prompt: "What did the 1988 base closure round do to this post, and what does that teach?",
             options: [
               "It closed the post outright",
-              "It had no effect on the post at all",
+              "It had no effect on the post at all, because the post was not reviewed until 1991, which teaches that a base absent from one list is exempt from review in the next round",
               "It cut the post's civilian workforce roughly in half and moved the Adjutant General's School to Fort Jackson, which is why the 1991 round found the installation already redundant",
               "It brought new jobs here and made the post look financially viable, which teaches that surviving one round means only that you are not yet on the next list",
             ],
@@ -1145,7 +1145,7 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
               "That the land was not suitable as a national park and that preservation should be accomplished by local or state government, while supporting a public benefit conveyance",
               "That the land should be sold at auction",
               "That the forest had no ecological value",
-              "That the Army should retain the training area as a residual holding, and that only the developed main post should be released for economic development by the local redevelopment authority",
+              "That the Army should keep the training area as a residual holding and release only the developed main post to the local redevelopment authority",
             ],
             correctIndex: 0,
             explanation: "A federal agency deciding it should not be the owner, and naming who should be, is an instrument working exactly as designed.",
@@ -1592,7 +1592,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
             prompt: "Why is this course's map lesson national rather than post-scale?",
             options: [
               "Because the post's coordinates are unknown",
-              "Because military installations may not be mapped at parcel scale in a public teaching product, even after they have been closed and disposed of by the Department of Defense, under federal security rules",
+              "Because federal security rules bar parcel-scale maps of military installations in a public teaching product, even after closure and disposal",
               "Because the course avoids maps of Indiana",
               "Because the lesson map draws the whole world, so points need roughly two degrees of separation to be distinguishable, and a 2,500-acre post is smaller than one dot",
             ],
@@ -1603,13 +1603,13 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
           {
             prompt: "What is MapIndy?",
             options: [
-              "A private real estate listing service",
+              "A private real estate listing service that shows asking prices and photographs for homes for sale across Marion County",
               "The official GIS for the Consolidated City of Indianapolis and Marion County",
-              "The Indiana DNR's trail mapping app",
+              "The Indiana DNR's trail mapping app, which shows trailheads and park boundaries but no parcel lines",
               "A historical atlas of military installations in Indiana, published by the Indiana Historical Bureau",
             ],
             correctIndex: 1,
-            explanation: "It shows parcel boundaries, political boundaries, street centrelines and aerial imagery by address, intersection or parcel number.",
+            explanation: "It shows parcel boundaries, political boundaries, street centerlines and aerial imagery by address, intersection or parcel number.",
             sourceLessonSlug: "fh-next-exercise-parcel",
           },
           {
@@ -1641,8 +1641,8 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
             options: [
               "Because the building was moved from its original site on Schoen Field when the airfield was expanded, so its street address changed as well as its name",
               "Because its official designation changed five times between 1953 and 1991, so a search on any one name misses four decades of records",
-              "Because the records are sealed",
-              "Because the building has no street address",
+              "Because its records are sealed under the Defense Finance and Accounting Service's payroll privacy rules, so no outside researcher may search them",
+              "Because the building has no street address of its own and is filed under the reuse authority's parcel number, so a search by address finds nothing",
             ],
             correctIndex: 1,
             explanation: "It is the same lesson course 1 taught about following a corporate entity rather than an institution's current name.",
@@ -1652,7 +1652,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
             prompt: "What extra question does a former federal installation add in front of the usual four parcel questions?",
             options: [
               "What year was the building constructed",
-              "How many people work there now, compared with the peak civilian and military workforce recorded before the base closure was announced in 1991 by the Secretary of Defense",
+              "How many people work there now, compared with the peak workforce recorded before the 1991 closure announcement",
               "What is the building's architectural style",
               "Who owns it now and by what instrument they got it: a public benefit conveyance, an economic development sale, a lease, or an ordinary transaction",
             ],
@@ -1676,7 +1676,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
             prompt: "How many overlapping authorities can claim a single parcel on this post?",
             options: [
               "At least five: a state park, a reuse authority's taxing district, an excluded city, a consolidated county, and a National Register district",
-              "Exactly one, the City of Lawrence",
+              "Exactly one, the City of Lawrence, because its 1970 annexation folded every other authority's claim on the former post into the city's own jurisdiction",
               "Two, the state and the county",
               "None; former federal land remains outside state and local regulation until the county formally accepts it for assessment purposes",
             ],
@@ -1687,10 +1687,10 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
           {
             prompt: "State park visitation here rose from 653,889 in 2008 to 973,599 in 2017. Why does this course use those figures rather than a general statement?",
             options: [
-              "Because larger numbers are more persuasive",
+              "Because larger numbers are more persuasive to a general reader than a plain statement that the park has grown more popular",
               "Because they are the agency's own counts, so you know exactly what they measure and who produced them",
               "Because annual visitation is the only measure of a state park's value that the Department of Natural Resources publishes each year",
-              "Because the figures are estimates the course rounded",
+              "Because the figures are estimates the course rounded to the nearest thousand from the park's gate and parking receipts",
             ],
             correctIndex: 1,
             explanation: "A number with an owner and a method beats an impression. The same rule applied to the disputed acreage and the closure job losses.",
@@ -1699,7 +1699,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
           {
             prompt: "How should you treat the redevelopment figures reported by the American Forces Press Service?",
             options: [
-              "As independently audited totals, since the Defense Department verifies every redevelopment figure it publishes against the reuse authority's annual financial statements before releasing them",
+              "As independently audited totals, since the Defense Department checks every figure it publishes against the reuse authority's financial statements",
               "As too unreliable to mention",
               "As attributed claims in a Defense Department success story, worth reporting and worth labeling, with the reuse authority's own reports as the place to look for audited figures",
               "As the reuse authority's official position",
@@ -1713,7 +1713,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
             options: [
               "Because it proves the park should be closed",
               "Because correcting a state park's interpretive program requires an act of the Indiana General Assembly amending the department's enabling statute, which is why no interpretive plan has been revised since the park opened",
-              "Because state parks are exempt from public comment",
+              "Because state parks are exempt from public comment under Indiana law, so the only route to changing an interpretive plan is a lawsuit filed against the Department of Natural Resources",
               "Because interpretive plans get revised, so a documented gap in a state park's interpretation is a comment a member of the public can make to a state agency",
             ],
             correctIndex: 3,
@@ -1725,7 +1725,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
             options: [
               "The rank hierarchy, because the most elaborate ornament is on the senior officers' quarters on the north and west sides and the least is on service buildings",
               "The construction date of every building around the loop, because the Quartermaster Corps stamped completion years into the limestone water tables of the original complex",
-              "The boundary of the state park",
+              "The boundary of the state park, which the 1995 interim lease drew around all 2,500 acres of the post, so that the parade ground and every building facing it became park land",
               "Which parcels are taxable",
             ],
             correctIndex: 0,
@@ -1747,9 +1747,9 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
           {
             prompt: "Name three things the tour cannot show you.",
             options: [
-              "Color, texture and scale",
+              "The color, texture and relative scale of the brick buildings ringing the parade ground",
               "Jurisdiction, tax status, what was demolished, and who was allowed where",
-              "Buildings, roads and signs",
+              "The buildings, the roads, and the interpretive signs that each landowner has posted",
               "Season, weather, time of day and the direction of the light when the capture was made",
             ],
             correctIndex: 1,
@@ -1759,7 +1759,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
           {
             prompt: "The map lesson says its markers are approximate points. What follows?",
             options: [
-              "The map is unreliable and should be ignored",
+              "The map is unreliable and should be ignored, since a marker that has not been surveyed cannot place a post even within the correct county or state",
               "The coordinates should be averaged against a surveyed control point before they are used for anything more precise than a regional overview of the national pattern",
               "The markers are illustrative fictions",
               "Do not use them to find an address or a property line; use them to see the pattern, and use MapIndy or the assessor's cards for a parcel",

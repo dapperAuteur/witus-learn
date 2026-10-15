@@ -267,7 +267,7 @@ This measures whether you can hold the argument. It does not measure the written
             prompt: "What does this course say gives a doctorate its value?",
             options: [
               "The length of the reading list a candidate works through before defending",
-              "A committee that pokes holes in your thinking",
+              "A committee that pokes holes in your thinking until it can survive skeptics",
               "The reputation of the institution that eventually confers the credential",
               "The number of primary sources a candidate can cite from memory at a defense",
             ],
@@ -281,7 +281,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "Because a committee will check whether you bought the books that you cite",
               "Because summaries of these particular works are all written by their critics",
-              "The summaries here are a map, not the territory",
+              "The summaries here are a map, not the territory, and your argument lives in the reading",
               "Because the primary sources hold data that no summary is permitted to reprint",
             ],
             correctIndex: 2,
@@ -295,7 +295,7 @@ This measures whether you can hold the argument. It does not measure the written
               "You do not yet hold a claim you cannot write clearly",
               "Because a committee wants the written record more than it wants the answer",
               "Because writing is the only format in which an argument can be shared",
-              "Because drafting early stops you changing position later in the program",
+              "To lock in your position early",
             ],
             correctIndex: 0,
             explanation:
@@ -308,7 +308,7 @@ This measures whether you can hold the argument. It does not measure the written
               "Rehearse your position until you can deliver it without any notes at all",
               "Build the case that the weakest of your critics would be most likely to make",
               "Set the objections you cannot answer aside until the design is finished",
-              "Answer the strongest argument against what you love",
+              "Find the strongest argument against each idea you love, and answer it",
             ],
             correctIndex: 3,
             explanation:
@@ -333,7 +333,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "A literature review covering the four thinkers the modules introduce",
               "A comparison of the American and the international precedents studied",
-              "A defensible design and the argument that funds it",
+              "A defensible design for a learning system beyond school, plus the argument that funds it",
               "A written response to each of the nine committee questions in order",
             ],
             correctIndex: 2,
@@ -345,7 +345,7 @@ This measures whether you can hold the argument. It does not measure the written
             prompt: "In Deschooling Society, what did Illich propose putting in place of schools?",
             options: [
               "Community colleges open to any adult regardless of prior schooling",
-              "Learning webs",
+              "Learning webs: decentralized networks of people, resources, and tools",
               "A national apprenticeship system administered by trade associations",
               "Neighborhood libraries funded the way Andrew Carnegie funded his own",
             ],
@@ -360,7 +360,7 @@ This measures whether you can hold the argument. It does not measure the written
               "A standardized examination that certifies what a learner has picked up",
               "A residential campus where the peer network can gather in one place",
               "A public subsidy paid to the learner rather than to the institution",
-              "Skill exchanges",
+              "Skill exchanges, where people list the skills they will teach others",
             ],
             correctIndex: 3,
             explanation:
@@ -370,7 +370,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What does a peer-matching network do in Illich's scheme?",
             options: [
-              "Connects people by shared interest",
+              "Connects learners who share an interest so they can pursue it together",
               "Assigns every learner a trained mentor drawn from the directory of educators",
               "Ranks learners against one another so that employers can read the result",
               "Pairs a beginner with an expert who is paid for the hours they teach",
@@ -385,7 +385,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "That it depends on internet access that did not exist when he wrote it",
               "That it removes the credential employers use to sort applicants fairly",
-              "It helps those who already have resources",
+              "Self-directed models can favor those who already have resources and social capital",
               "That it costs more per learner than the schools it proposes to replace",
             ],
             correctIndex: 2,
@@ -397,7 +397,7 @@ This measures whether you can hold the argument. It does not measure the written
             prompt: "What kind of answer does the module demand to that equity critique?",
             options: [
               "A statement of the values that will guide the hub once it has opened",
-              "A survey of the learners in the neighborhood the hub means to serve",
+              "A survey of local learners",
               "A comparison with the equity record of the traditional school system",
               "A policy, a staffing model, or a funded role",
             ],
@@ -409,7 +409,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "Why does the course call Illich's 1971 argument almost a one-to-one match for the modern pattern?",
             options: [
-              "It already describes the hub and the peer model",
+              "It describes the hub, the show-your-work credential, and the peer-led model",
               "Because he predicted the internet would eventually make schools obsolete",
               "Because his four parts were adopted directly by the Chicago Public Library",
               "Because the critics who answered him later founded the Connected Learning Alliance",
@@ -424,7 +424,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "The set of relationships a person can call on during an emergency",
               "The digital platforms that carry civic conversation in a modern city",
-              "The physical places where social connections form",
+              "The physical places, such as libraries, parks and childcare centers, where connections form",
               "The public agencies responsible for licensing and inspecting buildings",
             ],
             correctIndex: 2,
@@ -435,7 +435,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What comparison does Klinenberg use to argue for social infrastructure?",
             options: [
-              "Bridges and airports",
+              "Bridges and airports, which he says are no more urgent to invest in",
               "Public schools, which cities already fund without a yearly argument",
               "Police and fire departments, whose budgets survive every downturn",
               "Hospitals, which no city council would propose closing to save money",
@@ -450,7 +450,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "A New York Times headline written for Klinenberg's own op-ed",
               "A Helsinki city slogan adopted when the Oodi library opened",
-              "Carnegie's description of the libraries he funded",
+              "Andrew Carnegie, describing the public libraries he paid to build",
               "A Harvard Graduate School of Design lecture series on civic buildings",
             ],
             correctIndex: 2,
@@ -474,7 +474,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What does this module's committee question demand you turn social infrastructure into?",
             options: [
-              "A line item",
+              "A line item saying exactly what a city would be buying with it",
               "A slogan that a city council can repeat back to its own voters",
               "A comparison against the operating cost of the nearest public school",
               "A partnership agreement between the library and the parks department",
@@ -488,7 +488,7 @@ This measures whether you can hold the argument. It does not measure the written
             prompt: "How does Ito define Connected Learning?",
             options: [
               "Self-paced, technology-mediated, and measured against a common standard",
-              "Social, interest-driven, and opportunity-expanding",
+              "Socially embedded, interest-driven, and oriented toward opportunity",
               "Project-based, teacher-guided, and assessed through a portfolio review",
               "Peer-led, credential-free, and organized around the learner's own schedule",
             ],
@@ -526,7 +526,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What does the progression from hanging out to geeking out describe?",
             options: [
-              "Social presence deepening into mastery",
+              "Social presence moving through casual experimentation to deep mastery",
               "The stages a hub passes through in its first three years of operation",
               "The order in which a learner should meet each of the four learning webs",
               "The way an interest spreads from one learner to the rest of a peer group",
@@ -541,7 +541,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "That interests change too fast for any program to build a curriculum on",
               "That a learner's stated interest rarely matches the work they actually do",
-              "Interests are cultivated at home first",
+              "Interest-driven learning is a luxury for kids whose interests are cultivated at home",
               "That measuring an interest is impossible, so the model cannot be evaluated",
             ],
             correctIndex: 2,
@@ -555,7 +555,7 @@ This measures whether you can hold the argument. It does not measure the written
               "A recruitment plan reaching families outside the hub's usual catchment",
               "An assessment recording what each arriving learner already cares about",
               "A partnership with the schools that already know these learners by name",
-              "A mechanism that cultivates interest",
+              "A mechanism that cultivates interest in a learner who arrives without one",
             ],
             correctIndex: 3,
             explanation:
@@ -565,7 +565,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What is YOUmedia?",
             options: [
-              "A drop-in teen space in a Chicago library",
+              "A drop-in teen space for digital media, STEM, and making in the Chicago Public Library",
               "A federal grant program for out-of-school digital media instruction",
               "A curriculum publisher whose materials the Chicago public schools adopted",
               "A research center studying how teenagers use media outside of school",
@@ -580,7 +580,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "It was the first such space funded from a city's own capital budget",
               "It published the only curriculum other libraries were licensed to reuse",
-              "It became a model for 30 or more libraries",
+              "It became a national model for similar spaces in 30 or more libraries",
               "It ran continuously for longer than any comparable space in the country",
             ],
             correctIndex: 2,
@@ -593,7 +593,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "The Department of Education and the Coalition for Community Schools",
               "The National Science Foundation and the Chicago public school district",
-              "IMLS and MacArthur",
+              "The Institute of Museum and Library Services and the MacArthur Foundation",
               "The Fab Foundation and the Connected Learning Alliance",
             ],
             correctIndex: 2,
@@ -605,7 +605,7 @@ This measures whether you can hold the argument. It does not measure the written
             prompt: "What is the community-schools model?",
             options: [
               "Charter schools governed by a board drawn from the surrounding streets",
-              "Public schools run as neighborhood hubs",
+              "Public schools run as neighborhood hubs offering integrated supports and longer learning time",
               "Libraries that took over the instructional duties of a school that closed",
               "Schools sharing one campus with a health clinic and a housing office",
             ],
@@ -633,7 +633,7 @@ This measures whether you can hold the argument. It does not measure the written
               "It was consolidated into a single block grant issued out to the states",
               "It tripled, to roughly 75 million dollars",
               "It was held flat while an expansion act waited for a vote on the floor",
-              "It was cut and then restored inside a later appropriations package",
+              "It was cut, then restored",
             ],
             correctIndex: 1,
             explanation:
@@ -645,7 +645,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "Whether teen attendance held up across the whole decade it operated",
               "How much of its budget came from the city rather than the foundations",
-              "Which of the thirty sites still run the original curriculum today",
+              "Which sites still use its curriculum",
               "What the network did that the failures did not",
             ],
             correctIndex: 3,
@@ -656,7 +656,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What is Oodi?",
             options: [
-              "Helsinki's central library as a civic living room",
+              "Helsinki's central library, reimagined as the city's civic living room",
               "A Finnish national program that placed a library in every rail station",
               "An architecture practice specializing in redesigning public buildings",
               "A Nordic funding body that pays the operating costs of civic buildings",
@@ -671,7 +671,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "It coordinates a ring of smaller branches spread across the whole city",
               "It runs a fleet of mobile libraries that return to it every evening",
-              "It was built over a light-rail station",
+              "It was built directly over a light-rail station, tying the hub to the transit line",
               "It sits where the two busiest pedestrian streets in Denmark meet",
             ],
             correctIndex: 2,
@@ -682,7 +682,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What did Tower Hamlets do with its Idea Stores?",
             options: [
-              "Merged the borough's libraries into a single flagship civic building",
+              "Merged them into one flagship",
               "Handed the branches to a trust that runs them alongside adult education",
               "Opened them inside schools so that families already knew the buildings",
               "Moved libraries onto retail high streets",
@@ -695,10 +695,10 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What is the cautionary tale of Medellín's library parks?",
             options: [
-              "Operating them in years 5 to 12",
+              "Operating them in years 5 to 12, not building them",
               "Building them in the poorest neighborhoods before the transit arrived",
               "Designing them so ambitiously that construction ran past its own budget",
-              "Staffing them with volunteers who were never trained for the work",
+              "Untrained volunteer staff",
             ],
             correctIndex: 0,
             explanation:
@@ -710,7 +710,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "A European program funding digital fabrication inside public libraries",
               "A consortium of universities that certifies makerspace instructors",
-              "A replicable maker-space model at global scale",
+              "A replicable maker-space model at global scale, associated with MIT's Neil Gershenfeld",
               "A manufacturer's franchise supplying equipment to community workshops",
             ],
             correctIndex: 2,
@@ -737,7 +737,7 @@ This measures whether you can hold the argument. It does not measure the written
               "About 1 to 2 dollars, which is why the case is usually made on values",
               "About 20 to 30 dollars, driven almost entirely by the crime estimates",
               "About 3 to 12 dollars per dollar",
-              "About 50 cents, meaning the case has to rest on something besides money",
+              "About 50 cents",
             ],
             correctIndex: 2,
             explanation:
@@ -775,7 +775,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "The studies were funded by the organizations that ran the programs",
               "The savings are counted in a currency year that has since been revised",
-              "The studies are about afterschool programs",
+              "Every one of the studies is about afterschool and diversion programs, not 24/7 civic hubs",
               "The studies measure enrollment rather than any outcome for the learner",
             ],
             correctIndex: 2,
@@ -802,7 +802,7 @@ This measures whether you can hold the argument. It does not measure the written
               "Which council members are most likely to object to your numbers",
               "How the claim compares with the return on a school construction bond",
               "What the pitch would cost to produce and who would go and deliver it",
-              "What evidence would make it direct proof",
+              "What evidence you would need to make it direct proof, not analogy",
             ],
             correctIndex: 3,
             explanation:
@@ -813,7 +813,7 @@ This measures whether you can hold the argument. It does not measure the written
             prompt: "What is the sustainability problem?",
             options: [
               "Whether the building can be maintained on the budget it was designed for",
-              "Who pays to operate it after the grant",
+              "Who pays the recurring cost of staffing and operating it after the grant runs out",
               "Whether the model can be copied in cities smaller than the one it began in",
               "Whether a founding director can be replaced without the project losing focus",
             ],
@@ -838,7 +838,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What is the evidence problem, in one line?",
             options: [
-              "The studies that exist have never been replicated by another team",
+              "No study was replicated",
               "The outcome measures used in the field are not comparable to each other",
               "The data on civic hubs is held privately by the foundations that fund them",
               "Nobody has costed your specific model",
@@ -851,7 +851,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What does the module say is the point of answering all three questions in writing?",
             options: [
-              "To know where the argument is still weak",
+              "To know exactly where the argument is still weak, not to be perfect",
               "To have a document a funder can read before committing any money",
               "To settle the three objections before a committee can raise any of them",
               "To produce the three chapters the final deliverable is assembled from",
@@ -867,7 +867,7 @@ This measures whether you can hold the argument. It does not measure the written
               "They copy an international precedent without adjusting for local politics",
               "They underestimate how long a municipal approval process actually runs",
               "They are strong on building and weak elsewhere",
-              "They are written by people who have never run a public building",
+              "Their authors never ran a building",
             ],
             correctIndex: 2,
             explanation:
@@ -880,7 +880,7 @@ This measures whether you can hold the argument. It does not measure the written
               "A signed letter of intent from the institution that would host the hub",
               "A review of the literature on out-of-school learning since Illich wrote",
               "An architectural brief describing the building the design would need",
-              "A year-1 and year-8 operating budget",
+              "A year-1 and year-8 operating budget, and whoever owns that budget",
             ],
             correctIndex: 3,
             explanation:
@@ -891,7 +891,7 @@ This measures whether you can hold the argument. It does not measure the written
             prompt: "Who is in the room the synthesis asks you to imagine?",
             options: [
               "The foundation officers who would fund the first three years of operation",
-              "An economist, a union rep, a budget director, a parent",
+              "A skeptical economist, a union representative, a city budget director, and a parent",
               "The teachers and librarians who would be doing the work day to day",
               "The city council members whose votes the proposal has to win in the end",
             ],
@@ -916,7 +916,7 @@ This measures whether you can hold the argument. It does not measure the written
           {
             prompt: "What answer does the closing committee question refuse to accept?",
             options: [
-              "That there is no argument against your project",
+              "That there isn't one: no strongest argument against your entire project",
               "An objection you have borrowed from one of the critics in the reading",
               "A weakness you have already described inside one of the three defenses",
               "Anything that depends on funding decisions outside your own control",
