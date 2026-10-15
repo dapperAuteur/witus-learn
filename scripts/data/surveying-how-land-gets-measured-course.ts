@@ -1183,5 +1183,50 @@ Multiply each D.M.D. by its latitude, add the north products, subtract the south
 ## Sources
 - ${BH} Locator: secs. 384 and 385, pp. 352 to 356 (scan pp. 392 to 396); sec. 386, p. 356 (scan p. 396); secs. 387 and 391 and Fig. 159, pp. 357 to 360 (scan pp. 397 to 400); sec. 411, pp. 374 to 375 (scan pp. 414 to 415). ${TIER_A_PD}`,
     },
+    {
+      slug: "the-planimeter",
+      title: "17 · The planimeter: trace a plat, read the wheel, and check it against the arithmetic",
+      section: "4 · Area",
+      recallContent: [
+        {
+          prompt: "What are a course's latitude and departure?",
+          answer: "Its projections on the meridian and on the line at right angles to it: latitude = distance × cos bearing, departure = distance × sin bearing (Breed and Hosmer, sec. 384).",
+        },
+        {
+          prompt: "State Breed and Hosmer's rule for area from the coordinates of the corners.",
+          answer: "Number the corners consecutively around the field; multiply each abscissa by the difference between the following and preceding ordinates; take half the sum of the products (sec. 411).",
+        },
+      ],
+      body: `${P("BAM's polar planimeter set on a drawn test square and then on a plotted field, with the anchor placed, the outline traced, and the wheel, disk and vernier read close up")}
+
+**What it is for.** Breed and Hosmer (Appendix B): "The planimeter is an instrument used to determine the area of a figure by moving the tracing point of the instrument around the perimeter of the plotted area." A regular figure is quicker to compute, "but when the boundaries are crooked, such as river boundaries, the planimeter is most useful, and with careful manipulation results can be obtained which are accurate enough for many engineering purposes."
+
+**The parts** of "the most common planimeter," which they call the Amsler Polar Planimeter (their Fig. 196, p. 533):
+- An anchor arm "of fixed length," "anchored at O by a needle point which sticks into the paper and is held in position by a small weight."
+- A collar at the arm's other end, "through which the tracing arm HP can slide," so the tracing arm's length can be set "to conform to the scale of the map."
+- A tracing point, moved along the outline.
+- A graduated wheel with a vernier beside it, and "a small disk D which records the number of full revolutions of the wheel." "The result of reading the disk, the wheel, and its vernier will usually give four figures."
+
+The instrument "rests then on three points, the anchor, the tracing point, and the periphery of the wheel." As the point goes round the outline "the wheel drags along, sometimes slipping and sometimes rolling," and the difference between the readings at the start and the end "represents the area of the figure." Why that works is a proof in calculus, which Breed and Hosmer print from Édouard Collignon's *Cours de Mécanique*; you do not need it to use the instrument.
+
+**Using it** (sec. 370).
+1. Set the anchor "at some convenient position on the drawing outside of the area to be measured."
+2. Put the tracing point on a mark on the outline and read the wheel.
+3. Trace the outline, kept "as closely as possible on the boundary line," and return "exactly to the starting point."
+4. Read again. The difference is the area, in a unit set by the arm's length, which you then convert to the scale of the map.
+
+**Calibrate on a known area first.** Makers supply arm settings for various units, but "it is safer to test this setting by running the instrument around a known area, such as 4 square inches," repeating it several times with the anchor in different positions, and dividing the wheel's interval by 4 to get the value of one square inch. Draw the test square to the map's present scale, because paper swells and shrinks: the scale "is frequently not quite the same as when it was first drawn."
+
+**The zero circle.** If the tracing arm is held so that the wheel's plane passes through the anchor point, the wheel slips without turning, and the tracing point can go all the way round a circle "without recording any reading of the wheel. This circumference is called the zero circumference, or the correction circle." It matters when the area is too big to trace with the anchor outside: with the anchor inside, the reading no longer gives the whole area, and Breed and Hosmer's proof adds a circle to it. The simple rule for a learner is the one in step 1: keep the anchor outside.
+
+**Check it against lesson 16.** Plot lesson 16's parallelogram, corners (0, 0), (8, 0), (10, 6) and (2, 6) in chains, at 1 inch = 2 chains. One square inch on the paper is then 2 × 2 = 4 square chains on the ground, so the 48-square-chain field should trace as 48 ÷ 4 = 12 square inches. Trace it three times with the anchor in different places and compare the mean with 12. Your planimeter's error on a figure whose area you know is the honest measure of how far to trust it on a figure, like a river lot, whose area you do not. Breed and Hosmer call the planimeter "one of the commonest ways of checking the area of a traverse" (sec. 370): a check on the arithmetic, never a replacement for it.
+
+:::reveal At a scale of 1 inch = 3 chains, how many square chains does one square inch of the plan represent, and how many acres? ||| 3 × 3 = 9 square chains, which is 0.9 acre.
+
+:::reveal Why should the test square be drawn to the map's present scale rather than its printed one? ||| Paper swells and shrinks, so the scale "is frequently not quite the same as when it was first drawn" (sec. 370).
+
+## Sources
+- ${BH} Locator: secs. 369 and 370, pp. 339 to 340 (scan pp. 379 to 380); Appendix B and Fig. 196, pp. 533 to 535 (scan pp. 573 to 575). ${TIER_A_PD}`,
+    },
   ],
 };
