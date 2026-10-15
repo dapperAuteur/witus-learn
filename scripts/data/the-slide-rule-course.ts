@@ -1317,6 +1317,42 @@ Work through three questions before reading on. Where do the accounts agree? (A 
 - ${PICKWORTH} Locator: p. 12 (PDF p. 18), "the Gravet, the Tavernier-Gravet, and the Mannheim rule". ${TA}
 - ${NMAH_N600} Locator: description, third paragraph (aluminum rules in Alhambra in the early 1950s). ${TB}`,
     },
+    {
+      slug: "langley-and-apollo",
+      title: "20 · Slide rules at Langley and on Apollo, and what they were not used for",
+      section: "6 · From Gunter's line to the Moon",
+      recallContent: [
+        {
+          prompt: "What did Mannheim succeed in popularizing?",
+          answer: "The runner, which lets you read across scales that are not side by side and skip reading intermediate results.",
+        },
+        {
+          prompt: "When did the slide rule become popular in the United States, per Cajori?",
+          answer: "About 1890, with the introduction of the Mannheim type; before 1880 or 1885 it was little known and little used.",
+        },
+      ],
+      body: `**The engineer's instrument.** By the middle of the twentieth century the slide rule was ordinary equipment for anyone who calculated for a living. Lesson 16 met the human computers at NASA's Langley laboratory, whose work "was done by hand, using slide rules, curves, magnifying glasses, and basic calculating machines," and the West Area Computers, whose "calculations were completed with the aid of a slide rule and results recorded in logs and plotted on graphs." Notice what came next in NASA's account: "Once completed, the calculations, graphs, and other information were checked for accuracy and sent back to the engineers to design the next tests." Three figures from a rule, then a check: lesson 8's habit, done as a job.
+
+**The Apollo rule.** The National Air and Space Museum holds a slide rule used in space and describes it carefully. "During the Apollo missions, an on-board computer and large computers on Earth performed the critical guidance and navigation calculations necessary for a successful journey. In addition, crews carried a slide rule for more routine calculations. NASA chose a 5-inch, metal rule, model 'N600-ES,' manufactured by the Pickett Company for their use. It was a model that was popular among engineers, scientists and students at the time. No modifications were needed for use in space." The museum's own example "was used by the crew of Apollo 13, in April 1970," and was transferred from NASA to the museum in 1984. A second Smithsonian record adds: "The Pickett 600-ES was carried on the first five Apollo flights."
+
+**What was on it.** The National Museum of American History describes an N600-ES as a "five-inch 'eye saver' yellow aluminum linear slide rule" with a nylon cursor and scales on both sides. One side of the body carries LL1, A, D, DI and K, with B, ST, T, S and C on the slide; the other side carries LL2, DF, D and LL3, with CF, Ln, L, CI and C on the slide. Among them are this course's A, B, C, D, K, L and CI, and the trigonometric (S, ST, T) and log-log (LL) scales it leaves out. "Its compact size and large number of scales made this model popular with engineers who had excellent vision." Lesson 4 explains the catch: accuracy "depends primarily upon the length of the scale," so a 5-inch rule crowds its marks into half the room of a 10-inch one.
+
+**What it was not used for.** The popular line is that slide rules got astronauts to the Moon. The museum's record says something narrower, and this course says no more than the record does. The critical guidance and navigation calculations were done by "an on-board computer and large computers on Earth." The slide rule was carried "for more routine calculations." A rule that gives about three figures (lesson 9) suits routine work, and routine work is the job the museum assigns it. One more line in the record is worth keeping: "No modifications were needed for use in space."
+
+**Two lessons in reading a record.** First, the museum chose its words. "Critical guidance and navigation" went to computers; "routine" work went to the rule. A summary that drops either word changes the claim. Second, the two Smithsonian records say different things, and both can be true: one says the Pickett rule was carried on the first five Apollo flights; the other describes a single rule, used on Apollo 13. Neither says how many rules flew on each mission, and this course does not guess.
+
+**The end of the line.** The Apollo years were nearly the slide rule's last as everyday equipment. Langley's human computers worked "from the mid-1930s into the 1970s," and Pickett, the Apollo rule's maker, "ceased making slide rules" in the mid-1970s. Lesson 21 is about the machine that replaced it.
+
+:::reveal According to the National Air and Space Museum, what did the Apollo crews' slide rule do? ||| "More routine calculations." The critical guidance and navigation calculations were done by the on-board computer and large computers on Earth.
+
+:::reveal What does the Smithsonian say about the Pickett 600-ES and the Apollo flights? ||| It "was carried on the first five Apollo flights"; the Air and Space Museum's example was used by the crew of Apollo 13 in April 1970.
+
+## Sources
+- ${NASM_APOLLO} Locator: object description, first paragraph (critical guidance and navigation, routine calculations, NASA's choice, no modifications, Apollo 13 in April 1970, transferred in 1984). ${TB}
+- ${NMAH_N600} Locator: description, first and second paragraphs (the scales on each side), third paragraph (the mid-1970s), fourth paragraph (excellent vision, the first five Apollo flights). ${TB}
+- ${LOFF} Locator: the paragraph on the West Area Computers; the paragraph on reading film, calculating and plotting, and checking for accuracy; second paragraph (mid-1930s into the 1970s). ${TA}
+- ${PICKWORTH} Locator: p. 111 (PDF p. 117), accuracy and the length of the scale. ${TA}`,
+    },
     // NEXT_SECTIONS
   ],
 };
