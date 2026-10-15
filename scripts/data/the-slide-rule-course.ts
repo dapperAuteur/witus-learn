@@ -1282,6 +1282,41 @@ Work through three questions before reading on. Where do the accounts agree? (A 
 - ${CAJORI_1920} Locator: p. 187 (PDF p. 5), the 1909 view and Oughtred's rules in print in 1632 and 1633; p. 188 (PDF p. 6), De Morgan and the 1630 book; p. 190 (PDF p. 8), note 10, the title of Oughtred's Epistle; p. 192 (PDF p. 10), the relations of the two men and the books of 1630 to 1632; p. 194 (PDF p. 12), "Each combatant accuses the other" and the 1630 title page; p. 196 (PDF p. 14), Delamain's preface, "February last," "Horse backe," the two circles and the interest problem; p. 197 (PDF p. 15), "the earliest known printed instructions"; pp. 199 to 200 (PDF pp. 17 to 18), Forster's preface and Oughtred on instruments; p. 201 (PDF p. 19), the index and the runner; p. 203 (PDF p. 21), Delamain's charge, Oughtred's date and his account of the compasses; p. 204 (PDF p. 22), the two statements in double column; p. 205 (PDF p. 23), hearsay, independent invention and the verdict. ${TA}
 - ${OUGHTRED_1632} Locator: the record of the microfilm scan (the book itself, not the Epistle). ${TB}`,
     },
+    {
+      slug: "mannheim-and-the-american-era",
+      title: "19 · Mannheim's rule, the runner, and the American engineering era",
+      section: "6 · From Gunter's line to the Moon",
+      recallContent: [
+        {
+          prompt: "Who published the earliest known printed instructions for a slide rule?",
+          answer: "Richard Delamain, in Grammelogia, or the Mathematicall Ring, in 1630.",
+        },
+        {
+          prompt: "Why did Cajori change his mind between 1909 and 1920?",
+          answer: "His earlier view rested on De Morgan, who had not read Delamain; after reading Delamain himself he judged independent invention the most plausible.",
+        },
+      ],
+      body: `**A lieutenant of nineteen.** "It was about 1850 that a French army officer in Metz, then only about nineteen years old, designed a straight slide rule with a runner and with a disposition of the logarithmic scales, such as experience has shown to be admirably suited to the ordinary every-day uses of a slide rule." So Cajori introduces Amédée Mannheim (1831 to 1906), who had entered the École Polytechnique in 1848 and was a lieutenant of artillery studying at Metz. He described the rule in a pamphlet printed at Metz in December 1851. It was made by Tavernier-Gravet, a firm of national reputation, and adopted by the French artillery, and Mannheim went on to a long career as professor of geometry at the École Polytechnique. That is why Pickworth's 1920 manual says the modern rule is "variously styled the Gravet, the Tavernier-Gravet, and the Mannheim rule."
+
+**The layout you have been using.** In Mannheim's rule the upper scales A and B "are marked alike, each having a double graduation from 1 to 10, as in the older rules," and the lower scales C and D are "also marked alike, both having a single graduation from 1 to 10." Older rules had marked C like A and B, an arrangement that had "enjoyed popular favor for 170 years." Cajori counts the costs and gains. Squares and square roots now need the runner (lesson 10), and C and D bring "uncertainty as to the direction of the motion of the slide," which is lesson 6's question of which index to use. In return the rule yields "a double accuracy when the lower lines are used for simple proportion," and the runner in longer work "simplifies matters enormously." "Protests against the Mannheim arrangement are seldom heard."
+
+**The runner.** "Mannheim is the first who succeeded in popularizing the use of the runner." It "enables one to read corresponding numbers on scales that are not contiguous and also to compute the value of complex expressions without the necessity of reading intermediate results of computation," which is lesson 6's continued multiplication exactly. He did not invent it. Delamain described an index in the 1630s (lesson 18), and in England, "where the runner was first invented nearly 200 years earlier," it was used so little that it "was reinvented in England by Erskine Scott in 1870." Mannheim's rule took 30 or 40 years to reach England and the United States.
+
+**The United States catches up.** Cajori writes that "before 1880 or 1885, the slide rule was little known and very little used in the United States." Interest grew from 1881, when the bridge engineer Edwin Thacher patented a cylindrical slide rule that "almost attains the accuracy of a five-place table of logarithms," which Cajori calls "the most important single contribution to the design of slide rules made in America." In the 1880s Professor J. B. Johnson "required every student in engineering to use it." Then: "Its popularity began with the introduction of the Mannheim type about the year 1890." By the time Cajori wrote, an inquiry had found that "in about half of the engineering schools of the United States attention is given to the use of the slide rule."
+
+**Celluloid, Hoboken and the manuals.** In 1886 the German firm Dennert & Pape began mounting scales on white celluloid instead of boxwood or metal: "Upon celluloid numbers appear so much more distinctly that the use of celluloid has become well nigh universal." Keuffel & Esser sold celluloid rules in America from the late 1880s and, "Since 1895," made them "in Hoboken, N. J." Rules were "now usually engine-divided," their marks cut by machine. This is the world of the two manuals this course is built on: Pickworth's in Manchester, with its wood-and-celluloid rules (lesson 4), and Cullimore's, published by Keuffel & Esser in 1920 for its own rules, among them the Polyphase with its CI and K scales (lesson 12).
+
+**Into the twentieth century.** Later rules kept Mannheim's A, B, C and D and added scales around them. A Smithsonian record notes that Pickett began making aluminum slide rules in Alhambra, California, in the early 1950s; lesson 20 meets one of them on the way to the Moon. Cajori himself, in 1909, was not sure the layout would last: "it is far from certain that the Mannheim type will continue long in its undisputed supremacy as the best portable rule for popular use in ordinary computation to three significant figures." It lasted until the calculator of lesson 21.
+
+:::reveal What did Mannheim succeed in popularizing, and what does it let you do? ||| The runner. It lets you read across scales that are not side by side and carry a long calculation without reading the intermediate results.
+
+:::reveal When, according to Cajori, did the slide rule's popularity begin in the United States? ||| With the introduction of the Mannheim type, about 1890.
+
+## Sources
+- ${CAJORI_1909} Locator: p. 33, "little known and very little used" before 1880 or 1885, and Thacher's patent of 1881; p. 34, Johnson, popularity "about the year 1890," and half of the engineering schools; p. 35, Mannheim, his pamphlet of December 1851, Tavernier-Gravet, the French artillery, the runner, 30 or 40 years; p. 36, Erskine Scott in 1870, the arrangement of A, B, C and D, its costs and gains, and "far from certain"; p. 37, Thacher's accuracy; pp. 38 to 39, celluloid, Keuffel & Esser in Hoboken since 1895, engine division. ${TA}
+- ${PICKWORTH} Locator: p. 12 (PDF p. 18), "the Gravet, the Tavernier-Gravet, and the Mannheim rule". ${TA}
+- ${NMAH_N600} Locator: description, third paragraph (aluminum rules in Alhambra in the early 1950s). ${TB}`,
+    },
     // NEXT_SECTIONS
   ],
 };
