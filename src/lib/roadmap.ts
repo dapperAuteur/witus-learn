@@ -41,6 +41,19 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   school-wide pass share that doubles as the length-balance campaign's progress bar; it states that a
   database figure can differ slightly from lint. Follow-up: \`tests/isolation/quiz-integrity.db.test.ts\`
   has not run against a database.
+- 🔧 **The Slide Rule, TOOLS-02** (\`feat/course-the-slide-rule\`, no migration; after merge run
+  \`pnpm seed:courses:prod\`). BAM approved the brief on 2026-10-14. Seven sections, 25 lessons, 599 questions
+  (seven section quizzes and a final of 40 serving 10): why it works (logarithms made physical, a paper
+  rule), the instrument (what to look for, reading the scales), C and D (multiplication, division and
+  proportion, the decimal point by estimate, why three figures is honest), A, B and L (squares and roots,
+  the L scale, powers by logarithms, CI and K), before the slide rule (Napier's rods, the 1614 table and
+  Briggs, a printed log table, the human computers), from Gunter's line to the Moon (Oughtred and Delamain
+  read side by side, Mannheim, Langley and Apollo, the HP-35), and charts and circles (nomograms, circular
+  rules, the pilot's E6B, a capstone of Cullimore's printed problems). Every worked number comes from
+  Pickworth (1920), Cullimore (1920) or Lipka (1918), or is plain arithmetic. Claims 8.EE.A.3, 8.EE.A.4,
+  HSF-BF.B.5, HSN-Q.A.3 and MP5; four research checks filed. Public and free, held for BAM's demonstrations
+  in the lessons marked P (3 to 7, 10 to 13, 15, 22 and 25). Not yet: the ElementaryMBA copy (needs his OK on
+  a seed-registry test change), STAGED_COURSES (after seeding), and the E6B lesson in an aviation course.
 - 🔧 **Light on Set, CREW-03** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Eight
   sections, 27 lessons, 661 questions: what light does, hard and soft light from first principles, shaping
   light with what is already in the room (and the hacks the course refuses), natural light, key, fill and

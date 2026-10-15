@@ -268,6 +268,7 @@
 - [`written-by-himself`](./written-by-himself-course.ts) Written by Himself · CREDIT-WRI1 (credit)
 - [`wrong-for-good-reasons`](./wrong-for-good-reasons-course.ts) Wrong for Good Reasons
 - [`soul-train-the-business`](./soul-train-the-business-course.ts) Soul Train: Who Paid, Who Owned, Who Got Paid · private · listed here as an extra category; primary: Careers & Media
+- [`the-slide-rule`](./the-slide-rule-course.ts) The Slide Rule · TOOLS-02 (tools-that-think) · listed here as an extra category; primary: Science & Math
 
 ### Sports
 
@@ -353,6 +354,7 @@
 - [`intro-to-citizen-science`](./intro-to-citizen-science-course.ts) Intro to Citizen Science · SCI-04 (science-and-math)
 - [`read-the-plan-and-the-code`](./read-the-plan-and-the-code-course.ts) Reading the Plan and the Code: Drawings, Specifications, and Who Made the Code Law · series the-house-you-live-in · private · also in: Money & Property, Careers & Media
 - [`the-river-and-the-watershed`](./the-river-and-the-watershed-course.ts) The River and the Watershed · SCI-03 (science-and-math)
+- [`the-slide-rule`](./the-slide-rule-course.ts) The Slide Rule · TOOLS-02 (tools-that-think) · also in: Culture & History
 - [`keeping-a-house`](./keeping-a-house-course.ts) Keeping a House: Hazards, Checks, and Where an Amateur Has to Stop · series the-house-you-live-in · private · listed here as an extra category; primary: Money & Property
 - [`manure-and-compost`](./manure-and-compost-course.ts) Manure and Compost · LOOP-00 (the-calorie-loop) · listed here as an extra category; primary: Farm & Garden
 - [`the-author-line-and-the-finding`](./the-author-line-and-the-finding-course.ts) The Author Line and the Finding: Three Names in 1959, and What an Ethics Committee Concluded in 2014 · private · listed here as an extra category; primary: Culture & History
