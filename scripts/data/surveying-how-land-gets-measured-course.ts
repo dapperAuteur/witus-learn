@@ -956,5 +956,48 @@ A worked case. Out from A to B, the notes give B 4.316 feet above A. Back from B
 ## Sources
 - ${BH} Locator: sec. 110, p. 83 (scan p. 109); sec. 114, p. 85 (scan p. 111); secs. 117 and 118 and Fig. 44, pp. 87 to 88 (scan pp. 113 to 114); sec. 119, p. 88 (scan p. 114). ${TIER_A_PD}`,
     },
+    {
+      slug: "bench-marks-and-the-law",
+      title: "14 · Bench marks, the federal geodetic survey, and the law that protects them",
+      section: "3 · Elevation: running a level line",
+      recallContent: [
+        {
+          prompt: "Why do Breed and Hosmer have the rodman pace the foresight distance to match the backsight?",
+          answer: "Equal sight lengths make an instrument's tilt, and the earth's curvature and refraction, affect both readings equally, so they cancel in the difference (secs. 117 and 118).",
+        },
+        {
+          prompt: "What is a misclosure?",
+          answer: "What a level loop's backsights minus foresights come to instead of zero when it returns to its starting point: a measure of the error in the work.",
+        },
+      ],
+      body: `${QR(`${SURVEYOR}, to check the statement of the federal penalty and the advice on finding and handling survey marks`)}
+
+**Where elevations start.** A level line gives differences. To turn a difference into an elevation, you start from a point whose elevation someone has already fixed. NOAA's National Geodetic Survey (NGS) keeps those points: in its classroom activity *Survey Mark Hunting*, NOAA says that in the United States "these reference points are developed and maintained by NOAA's National Geodetic Survey," and that there are "more than 1,200,000" of them.
+
+**What a survey mark looks like.** NOAA again: "NGS uses permanent marks called 'survey marks' (you may hear survey marks called 'benchmarks,' but benchmarks are only one type of survey mark). Often, survey marks are marked with a metal disk ... set in concrete or bedrock." They can also be "stainless steel rods driven into the ground, drill holes in bedrock, bottles, pots, or landmarks visible from a long distance, such as a water tower, a radio mast, or a church steeple." For a tower or a steeple, the top of the structure is usually the point itself.
+
+**The agency behind them.** Joseph F. Dracup, a retired officer of the Coast and Geodetic Survey, wrote its history for NGS: "Geodetic surveying began in the United States on February 10, 1807 with the creation of the Survey of the Coast by Congress," with the Swiss-born geodesist Ferdinand R. Hassler in charge. It was "identified as the Coast Survey in 1836," and "in 1878 Congress changed the name to U.S. Coast and Geodetic Survey." The marks themselves changed slowly: "Bench mark monuments were of similar design until the late 1970's when special steel rod type marks were introduced."
+
+**Reading a mark's datasheet.** Every NGS mark has a datasheet, and at its foot a "Station Description" gives "very precise instructions for finding the survey mark, starting from easy-to-find landmarks." NOAA quotes two, in the datasheets' own capitals: "30 FEET SOUTH OF THE CENTER LINE OF THE ROAD, 23.98 FEET WEST OF BENCH MARK 33 A (USGS), AND ABOUT 2 FEET LOWER THAN THE ROAD," and "8 FEET SOUTHEAST OF A GATE IN AN EAST-AND-WEST FENCE, AND IN THE TOP OF A LAVA ROCK." Notice what those descriptions are: distances and directions from things you can find, the same metes-and-bounds habit the old surveyors used. The NOAA activity tells you to look marks up through the NGS website, but its step-by-step clicks describe an older version of the site. Which NGS tool a learner should use today is waiting on a check, so this course names the agency and not a page.
+
+**How to hunt, and how not to.** NOAA's own rules for what it calls "mark recovery":
+- Students should hunt "ONLY ... with an adult partner."
+- "Many survey marks are on private property, and may be in dangerous areas. Be sure to obey local laws!"
+- "When you find a benchmark, you can take pictures, but that's all! Never disturb or move a benchmark, even if it appears to have been damaged. Remember that benchmarks are important, they are public property, and are protected by law."
+- Never climb a tower or a steeple to reach a mark on top of it.
+
+**The law.** The Manual of Surveying Instructions quotes the federal statute in full (18 U.S.C. 1858, in sec. 4-2): "Whoever willfully destroys, defaces, changes, or removes to another place any section corner, quarter-section corner, or meander post, on any Government line of survey, or willfully cuts down any witness tree or any tree blazed to mark the line of a Government survey, or willfully defaces, changes or removes any monument or bench mark of any Government survey, shall be fined under this title or imprisoned not more than six months, or both." Lesson 2 gave the short form: look, photograph, never move.
+
+**Why it matters to a level line.** A bench mark is only useful if it is exactly where its datasheet says, at exactly the height on record. A disk pried loose and reset an inch higher is worse than a missing one, because the next person to level from it will carry the inch into everything they measure. That is the plain reason behind the penalty.
+
+:::reveal Is every survey mark a "benchmark"? ||| No. NOAA says "benchmarks are only one type of survey mark"; marks also include steel rods, drill holes, and landmarks such as towers and steeples.
+
+:::reveal You find a bench mark disk that has been knocked loose. What does NOAA say to do? ||| Photograph it, but "never disturb or move a benchmark, even if it appears to have been damaged."
+
+## Sources
+- ${NOAA_MARKS} Locator: pp. 93 to 95. ${TIER_A}
+- ${DRACUP} Locator: "Abstract"; "1807: Survey of the Coast Created"; "A Series of Name Changes"; "Versatile Concrete". ${TIER_B}
+- ${MANUAL} Locator: sec. 4-2, p. 105 (PDF p. 116). ${TIER_A}`,
+    },
   ],
 };
