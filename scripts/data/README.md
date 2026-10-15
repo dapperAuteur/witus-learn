@@ -167,6 +167,7 @@
 
 ### Survival
 
+- [`map-and-compass`](./map-and-compass-course.ts) Map and Compass: Finding Your Way on Land · TOOLS-01 (tools-that-think) · also in: Rivers & Expeditions
 - [`off-grid-survival`](./survival-course.ts) Off-Grid & Emergency Survival
 
 ### Using Learn.WitUS
@@ -324,6 +325,7 @@
 - [`river-the-ohio-and-the-line`](./river-the-ohio-and-the-line-course.ts) The Ohio, and the Line
 - [`river-the-wabash-headwaters`](./river-the-wabash-headwaters-course.ts) The Wabash, and What a Watershed Is
 - [`river-what-an-expedition-is`](./river-what-an-expedition-is-course.ts) What an Expedition Is · RIVER-01 (river-expedition)
+- [`map-and-compass`](./map-and-compass-course.ts) Map and Compass: Finding Your Way on Land · TOOLS-01 (tools-that-think) · listed here as an extra category; primary: Survival
 
 ### Storytelling
 
