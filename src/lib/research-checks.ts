@@ -8168,6 +8168,50 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["The tool's name and URL", "The steps from a place name or coordinates to a datasheet", "The date checked"],
     where: ["https://geodesy.noaa.gov/ (National Geodetic Survey)", "NOAA's current educational materials on survey marks"],
   },
+  {
+    key: "surv-indiana-legal-survey-statute",
+    title: "Does Indiana's statute match the Boone County definition of a 'legal survey'?",
+    course: "surveying-how-land-gets-measured",
+    lesson: "the-tools-and-the-limits",
+    quote: "In Indiana, the Boone County surveyor's office defines a legal survey as \"a survey prepared by a registered land surveyor with notice to all adjoining landowners to resolve property disputes.\"",
+    severity: "low",
+    question:
+      "Does the text of IC 36-2-12-10 (the county surveyor's legal survey record) define a 'legal survey' as the special procedure, with notice to all adjoining owners, used to resolve property disputes, as the Boone County surveyor's page summarizes it?",
+    claim:
+      "Lesson 2 quotes the Boone County, Indiana, surveyor's page (a Tier B county summary that cites IC 36-2-12 but does not quote it). The statute itself has not been read verbatim: Justia returned 403 during the 2026-10-14 brief, and during the 2026-10-15 fact check FindLaw returned 403 and Justia did not respond. A later 2026-10-15 attempt reached FindLaw's page for sec. 36-2-12-10 only through a summarizing fetch tool (REPORTED, not read): it describes a legal survey record book, a landowner establishing a boundary line by legal survey, notice to adjoining owners by registered or certified mail at least 20 days before the survey and within 10 days after filing, and a 180-day appeal to the circuit court. Whether the statute's own words match the county's phrase 'to resolve property disputes' is still open.",
+    stakes:
+      "Low to medium. If the county's summary is loose, learners get a wrong legal definition, and if the notice procedure is narrower or broader than the summary says, a learner could think every ordinary retracement survey needs notice to all adjoining owners. Lesson 2 is already marked for the licensed land surveyor's read (QR), who can settle this at the same time.",
+    needs: [
+      "The text of IC 36-2-12-10, quoted, with the year of the Code read",
+      "Whether 'legal survey' is the notice procedure for resolving disputes only, or a broader category",
+    ],
+    where: [
+      "Indiana General Assembly, Indiana Code Title 36, Article 2, Chapter 12 (iga.in.gov)",
+      "The licensed land surveyor reviewing lesson 2",
+    ],
+  },
+  {
+    key: "surv-manual-chain-foot-update",
+    title: "Has BLM moved the Manual's chain from the U.S. survey foot to the international foot?",
+    course: "surveying-how-land-gets-measured",
+    lesson: "gunters-chain",
+    quote: "The Manual defines the chain \"in terms of the U.S. Survey Foot\", and says the difference from the international foot is \"very small, on the order of 2 parts per million\" (sec. 2-43).",
+    severity: "low",
+    question:
+      "Since NIST retired the U.S. survey foot on January 1, 2023, has the Bureau of Land Management issued a Manual update, a supplement or an instruction memorandum that defines the chain for PLSS work in international feet?",
+    claim:
+      "Lesson 5 quotes the 2009 Manual (sec. 2-43), which defines the chain in U.S. survey feet, and then NIST's page, which says those units (the chain, link, rod, pole, perch and acre among them) were previously defined only in terms of the U.S. survey foot and that from January 1, 2023 relationships are available in terms of the international foot. It does not say whether BLM has changed the Manual.",
+    stakes:
+      "Low: the sentence is accurate about the 2009 Manual, but if BLM has adopted the international foot the lesson should say 'in its 2009 edition' and name the later instruction.",
+    needs: [
+      "The BLM document (Manual edition, supplement or instruction memorandum number), its date and the passage, quoted, or a statement that none exists as of the date checked",
+    ],
+    where: [
+      "BLM Cadastral Survey pages and the Manual of Surveying Instructions page (blm.gov)",
+      "BLM instruction memoranda on the U.S. survey foot transition",
+      "NIST's U.S. survey foot page, 'Resources' and the Federal Register notices it lists",
+    ],
+  },
   // ── Reading a Land Description (TOOLS-04) ─────────────────────────────────────────────────────
   {
     key: "land-vincennes-office-year",
@@ -8185,6 +8229,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: [
       "The opening year with the primary record it rests on, quoted, with a locator",
       "Whether the 1804 figure refers to the act establishing the office and the 1807 figure to the first sales, or one of them is simply wrong",
+      "Note when reading IARA: its 1804 list says the offices \"were established in Indiana proper\", while its 1807 sentence says the office \"opened\"; confirm or rule out that the two years date different events (lesson 12 now says the page may be dating two events)",
     ],
     where: [
       "The Vincennes tract books on the Indiana Digital Archives (the earliest entry dates)",
@@ -8224,6 +8269,77 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The 2009 Manual, table 3-2 and its notes on private land claims",
       "White (1983), on the French claims at Vincennes and on grants outside the rectangular system",
       "The original plats for Knox and Clark counties at IARA or the Internet Archive collection",
+      "Lead, not a source for the grid itself: IARA's land-records page ('Land Records at the Indiana State Archives') says the only Indiana lands not federally surveyed and sold before settlement are \"the lands around Vincennes settled by the French and George Rogers Clark's Grant around Clarksville\", the same two counties Starkey names",
+    ],
+  },
+  {
+    key: "land-indiana-outside-rectangular-survey",
+    title: "How much of Indiana lies outside the rectangular survey, and how is it described?",
+    course: "reading-a-land-description",
+    lesson: "survey-before-sale",
+    quote: "If you own land in Indiana, or rent it, or pay taxes on it, its description almost certainly begins with this survey.",
+    severity: "low",
+    question:
+      "Which Indiana lands were never part of the rectangular (PLSS) survey, such as Clark's Grant in Clark County and the French claims and Vincennes Tract lots at Vincennes, how large are they, and are their parcels described today by metes and bounds or by some other system?",
+    claim:
+      "Lesson 1 says an Indiana parcel's description 'almost certainly' begins with the PLSS survey. The hedge exists because the course has not sized the exceptions. IARA's land-records page names two ('the lands around Vincennes settled by the French and George Rogers Clark's Grant around Clarksville') but gives no area.",
+    stakes:
+      "Low: the hedge is honest, but a learner in Clark or Knox County may hold a description that does not begin with a township and range at all, and the course does not yet tell them so.",
+    needs: [
+      "The exceptions named and sized (acres or townships), each from a primary or federal source, with a locator",
+      "Whether parcels in those areas are described by metes and bounds, by numbered grant lots, or both, with one public-record example",
+    ],
+    where: [
+      "White (1983), on Clark's Grant and the Vincennes donation lands",
+      "The 2009 Manual, on private land claims and nonrectangular surveys (sec. 10-33 and its notes)",
+      "IARA and Indiana State Library documentation of the Clark's Grant and Vincennes surveys",
+      "American State Papers, Public Lands, for the Vincennes claims",
+    ],
+  },
+  {
+    key: "land-wells-cornerstone-dates",
+    title: "Were Wells County's government corners really set between 1805 and 1823?",
+    course: "reading-a-land-description",
+    lesson: "a-visit-to-the-county-surveyor",
+    quote: "Wells County adds that its corners \"are usually found near the centerlines of the County's roads,\" and counts 1,384 cornerstones set by government surveyors between 1805 and 1823.",
+    severity: "low",
+    question:
+      "In what years did the original government surveyors actually set the section and quarter corners in the townships that make up Wells County, Indiana, according to the original field notes and plats?",
+    claim:
+      "Lessons 11 and 13, and two section 3 quiz items, repeat the Wells County surveyor's page: '1384 cornerstones in Wells County that was originally set by Government Land Surveyors starting in 1805 finishing in 1823'. The 1805 start may describe Indiana's surveys in general rather than this county's: the course has not confirmed when the land that became Wells County was ceded or first surveyed.",
+    stakes:
+      "Low: the count and the end year are the county's own, but if the start year is not Wells County's, the course presents a statewide date as a county fact.",
+    needs: [
+      "The earliest and latest dates corners were set in the Wells County townships, quoted from the field notes with township, range and page",
+      "If the work began after 1805, lesson 13's sentence recast as the county page's own statement",
+    ],
+    where: [
+      "Internet Archive collection 'Indiana PLSS Notes and Plats' (archive.org/details/@indiana_historical_land_records)",
+      "National Archives catalog 566714 (compiled Indiana land survey notes)",
+      "IndianaMap's Historical Indiana PLSS Township Record Viewer",
+      "The Wells County Surveyor's Office",
+    ],
+  },
+  {
+    key: "land-moved-vs-lost-corner",
+    title: "Is a slightly moved corner worse than a lost one?",
+    course: "reading-a-land-description",
+    lesson: "a-visit-to-the-county-surveyor",
+    quote: "Disturbing a government survey corner can be a federal crime (18 U.S.C. 1858), and a corner moved even a little can do more harm than one lost, because the next person to measure from it may inherit the error without knowing it.",
+    severity: "low",
+    question:
+      "Does the Manual of Surveying Instructions, a court decision or a surveying text compare a disturbed or moved original corner with a lost one, and say which does more harm to later surveys?",
+    claim:
+      "Lesson 13 says a corner moved a little 'can do more harm than one lost'. The reasoning (a lost corner is restored by proportionate measurement, Manual sec. 7-1, while a moved one may be accepted as found) is the course's own; no fetched source ranks the two. The section 3 quiz prompt 'Why is a corner moved a little worse than one lost?' still states it flatly.",
+    stakes:
+      "Low: the advice (never move a corner) stands either way, but the comparison is presented to learners without a source.",
+    needs: [
+      "A passage that compares a moved or disturbed corner with a lost one, quoted, with a locator; or a statement that none was found, in which case the hedge stays",
+    ],
+    where: [
+      "The 2009 Manual, chapter V (obliterated corners and evidence) and chapter VI",
+      "Court decisions on disturbed original monuments",
+      "The licensed land surveyor reviewing the course",
     ],
   },
 ];
