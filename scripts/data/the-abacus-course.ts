@@ -235,7 +235,7 @@ export const THE_ABACUS_COURSE: AuthoredCourse = {
 
 **Every digit has exactly one shape.** With one five-bead and four one-beads, a rod can show 0 to 9 in only one way: the five-bead is either at the beam or not (0 or 5), and then 0 to 4 one-beads join it. So 7 is always the five-bead and two one-beads, never anything else. On Knott's five-bead rods there were two ways to show 5 (five one-beads, or the five-bead), which is one reason the fifth bead could go.
 
-**The unit marks.** Along the beam most sorobans carry dots. The 1959 Smithsonian soroban: "Every third column of beads is marked with a black dot on the cross piece." Takashi Kojima's 1954 manual says the common Japanese soroban has 21 rods, with 13, 17, 27 and 31 also in use, and a unit point every third rod. You choose one marked rod as your ones rod; the marks every third rod then fall where commas fall in a written number, at the thousands and the millions, and lesson 14 uses them to place a decimal point.
+**The unit marks.** Along the beam many sorobans carry dots. The 1959 Smithsonian soroban: "Every third column of beads is marked with a black dot on the cross piece." Takashi Kojima's 1954 manual says the common Japanese soroban has 21 rods, with 13, 17, 27 and 31 also in use, and a unit point every third rod. You choose one marked rod as your ones rod; the marks every third rod then fall where commas fall in a written number, at the thousands and the millions, and lesson 14 uses them to place a decimal point.
 
 **Old and new, side by side.** The Smithsonian also holds a soroban in a rosewood box, "ca 1885", with "13 parallel bamboo rods, with one bead above the cross bar and five below," used by S. Tetsu Tamura "as a schoolboy from 1885 to 1897". It is a physical match for Knott's count. Hold a modern soroban beside a picture of it and you have the change from five below to four below in two objects.
 
@@ -249,6 +249,55 @@ export const THE_ABACUS_COURSE: AuthoredCourse = {
 - ${NMAH_ALBREE} Locator: Description, the 23 rods, "one bead above the cross piece and four below", and "Every third column of beads is marked with a black dot". Record text CC0; images not checked. ${TB}
 - ${NMAH_TAMURA} Locator: Description, the 13 bamboo rods with one bead above and five below, and its use by S. Tetsu Tamura "as a schoolboy from 1885 to 1897". Record text CC0; images not checked. ${TB}
 - ${KOJIMA} Locator: p. 26, the 21-rod common soroban and the 13, 17, 27 and 31 rod sizes; p. 27, "a unit point at every third rod". ${TC}`,
+    },
+    {
+      slug: "setting-clearing-reading",
+      title: "3 · Setting, clearing and reading numbers",
+      section: "1 · Place value you can touch",
+      recallContent: [
+        {
+          prompt: "On a soroban, which beads count and which do not?",
+          answer: "Only beads touching the beam count: a one-bead pushed up counts 1, the five-bead pushed down counts 5. Beads away from the beam count nothing.",
+        },
+        {
+          prompt: "Why does each digit have exactly one shape on a one-above, four-below rod?",
+          answer: "The five-bead is either at the beam or not (0 or 5), and then 0 to 4 one-beads join it, so 0 to 9 can each be made only one way.",
+        },
+      ],
+      body: `${P("BAM clearing his soroban on camera, then setting and reading 706, 13, 30 and 987,654,321, rod by rod")}
+
+**Clearing to zero.** Knott's method of 1885: tilt the frame "slightly with the smaller compartment uppermost," so every lower bead slides down away from the beam and every upper bead drops onto the beam. Then set the frame level and, "By a sweep of the finger tips along the surfaces of the single counters," push all the upper beads away from the beam. "The number represented is zero." Every bead is now as far from the beam as it can go. Do this before every new problem; a single stray bead left at the beam is a wrong answer you cannot see coming.
+
+**Setting a digit on one rod.** Knott walks up one rod. Push up one lower bead and the rod shows 1; a second, 2; a third, 3; the fourth, 4. For 5, clear the lower beads and bring the five-bead down. Leave it there and push up lower beads again: 6, 7, 8, 9. Each digit is a five-bead (or not) plus up to four one-beads, exactly as lesson 2 said.
+
+**Choosing the ones rod.** "One being first chosen as the unit, the next to the left is the 'tens,' the next the 'hundreds,' the next the 'thousands' and so on," Knott writes, and the rods to the right are tenths, hundredths and so on. In his figure he marks the ones rod with a V. On a modern soroban you use a unit mark: pick a marked rod near the middle and call it your ones rod.
+
+**A way to write bead states.** This course writes a soroban as a small table, one column per rod, read left to right like a number:
+
+| Rod | hundreds | tens | ones |
+|---|---|---|---|
+| Five-bead at the beam? | yes | no | yes |
+| One-beads at the beam | 2 | 0 | 1 |
+| Digit | 7 | 0 | 6 |
+
+That is **706**: seven hundreds (the five-bead and two one-beads), zero tens (a rod with nothing at the beam), six ones (the five-bead and one one-bead). The empty tens rod *is* the zero, and you can see it.
+
+**Tens and ones, made visible.** Set 13: one one-bead on the tens rod, the five-bead off and three one-beads on the ones rod. It is a ten and three ones. Set 10: one bead on the tens rod and the ones rod empty, ten ones gathered into a single ten. Set 30: three one-beads on the tens rod and nothing on the ones rod, three tens and no ones. Every two-digit number is a count of tens on one rod and a count of ones on the next, and the soroban will not let you forget which is which.
+
+**A hundred is ten tens.** Set 100 and you have one bead on the hundreds rod and two empty rods beside it. On the tens rod you could never set more than 9; the tenth ten has to become one hundred on the rod to the left. That trade, ten of one rod for one of the next, is the carry, and lesson 6 makes it a move of the fingers.
+
+**Ten times as much, one rod to the left.** Set 7 on the ones rod, then clear it and set 7 on the tens rod, then on the hundreds rod. The bead shapes are identical; only the rod has changed, and the value has gone from 7 to 70 to 700. A bead on any rod is worth ten times the same bead on the rod to its right. Going the other way, a bead on the tenths rod is worth one tenth of the same bead on the ones rod.
+
+**Reading.** Read from the left: say each rod's digit in turn, and say "zero" for an empty rod between digits. Two pictures make good practice. Smith and Mikami's illustration of 1914 sets a different digit on each rod so that "the units are 1, the tens 2, the hundreds 3, and so on," and the soroban reads **987,654,321**. The research team in section 4 printed the reverse, a soroban "representing the value 123,456,789." Set each, clear it, and set it again until your fingers find the shapes without counting.
+
+:::reveal Write the bead table for 706 in words, rod by rod. ||| Hundreds: the five-bead and two one-beads (7). Tens: nothing at the beam (0). Ones: the five-bead and one one-bead (6).
+
+:::reveal You set 7 on the hundreds rod. How many times the value of the same 7 on the tens rod is it? ||| Ten times: 700 against 70. Each rod to the left is worth ten times the rod to its right.
+
+## Sources
+- ${KNOTT} Locator: p. 47 (PDF p. 70), tilting, levelling and sweeping the frame to zero ("The number represented is zero") and setting 1 to 4; p. 48 (PDF p. 71), 5 with the single counter, 6 to 9, and each rod a place, "One being first chosen as the unit"; p. 49 (PDF p. 72), Fig. 4 with "The mark V ... placed over the 'units' rod". ${TA}
+- ${SMITH_MIKAMI} Locator: p. 36 (PDF p. 48), Fig. 12, the columns arranged so that "the units are 1, the tens 2, the hundreds 3," representing 987 654 321. ${TA}
+- ${BARNER} Locator: ms p. 4 (PDF p. 5), Figure 1, a "Japanese soroban-style abacus ... representing the value 123,456,789". ${TB}`,
     },
     // @@END_LESSONS@@
   ],
