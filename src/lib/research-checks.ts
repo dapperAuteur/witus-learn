@@ -7852,27 +7852,132 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   // ── Map and Compass: Finding Your Way on Land (map-and-compass), TOOLS-01 ──────────────────────
   // Filed 2026-10-14 when the course was written. Brief and handoff:
   // plans/future-courses/science-and-math/tool-usage/.
+  // mc-declination-2026-ncei was CLOSED 2026-10-15: NCEI's calculator (WMM-2025), queried for
+  // 14 October 2026 at each quad's center, gave Hindustan -4.782° (4°47' W, ±0.37°), Indianapolis
+  // East -5.100° (5°06' W), Belmont -4.858° (4°51' W), Elkinsville -4.845° (4°51' W), matching the
+  // course's estimates; lessons 16 and 17 now cite the calculator.
+  // Filed 2026-10-15 from the pre-merge fact check:
   {
-    key: "mc-declination-2026-ncei",
-    title: "Today's declination at the four Indiana quads, on NCEI's calculator",
+    key: "mc-quad-coverage",
+    title: "Which US Topo sheets does each practice site spill onto?",
     course: "map-and-compass",
-    lesson: "three-norths-and-declination",
-    quote: "That figure is an estimate the course has filed to be confirmed against NCEI's online calculator",
-    severity: "high",
+    lesson: "where-to-practice-near-indianapolis",
+    quote: "The sheet named for each holds the heart of the site, not always all of it",
+    severity: "low",
     question:
-      "What declination does NCEI's online calculator (WMM2025) give for the center of the Hindustan, Indianapolis East, Belmont and Elkinsville quads on 14 October 2026?",
+      "For Fort Harrison State Park, Morgan-Monroe State Forest, Yellowwood State Forest and the Charles C. Deam Wilderness, which 7.5-minute US Topo quads besides the one lesson 3 names does each property reach?",
     claim:
-      "Lesson 16 says the course's own WMM2025 calculation gives about 4°47' W at the center of the Hindustan sheet on 14 October 2026 (the sheet prints 4°28' W for 2019); lesson 17 uses the 19' difference in a worked example. The handoff's other estimates: Belmont about 4°51' W, Elkinsville about 4°51' W, Indianapolis East about 5°06' W.",
+      "Lesson 3 names one quad per site and now says each named sheet holds the heart of the site, not always all of it; it says Fort Harrison's northern edge runs off the top of Indianapolis East, which the 2022 sheet shows (woods, Fall Creek and trails reach the north neatline). OpenStreetMap outlines (REPORTED, not citable) put parts of Fort Harrison on Fishers and McCordsville, Morgan-Monroe on Unionville, Modesto, Martinsville and Belmont, Yellowwood on Morgantown, Elkinsville, Hindustan, Story and Nashville, and the Deam on Allens Creek and Norman; the handoff also lists Bartlettsville for the Deam and Cumberland for Fort Harrison.",
     stakes:
-      "A walker who sets the wrong declination walks off line by about 920 feet in ten miles per degree. The lessons tell learners to use the calculator, but the worked figures should match it.",
+      "A learner who downloads only the named sheet may plan a route onto ground the map does not show.",
     needs: [
-      "The calculator's declination for each quad's center (latitude and longitude stated) on 2026-10-14, with the model named",
-      "A screenshot or the result text, so the lesson can cite it",
+      "For each site, the list of quads its official boundary touches, read from a citable boundary overlaid on the US Topo index",
     ],
     where: [
-      "NCEI geomagnetic calculators: https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml",
-      "Each quad's corner coordinates in its margin (US Topo PDFs, 2022 editions)",
+      "The National Map's US Topo index with the DNR and Forest Service property boundaries",
+      "The neighboring 2022 US Topo sheets themselves",
     ],
+  },
+  {
+    key: "mc-deam-walker-trail-rule",
+    title: "Does any Deam Wilderness rule ask hikers to stay on trails?",
+    course: "map-and-compass",
+    lesson: "where-to-practice-near-indianapolis",
+    quote: "the Deam is the one site whose posted rules do not ask walkers to stay on marked trails",
+    severity: "medium",
+    question:
+      "Does the Hoosier National Forest ask walkers to stay on trails anywhere in the Charles C. Deam Wilderness, in its \"Keep Wilderness Wild\" best practices, its recreation guide, or a posted order?",
+    claim:
+      "Lesson 3 says the Deam is the one site of the four whose posted rules do not ask walkers to stay on marked trails, because the Deam page's Restrictions confine only horse riders (\"Horse riders must stay on designated trails\") while the other three properties' maps print \"PLEASE STAY ON MARKED TRAILS.\"",
+    stakes:
+      "If a stay-on-trail request for hikers exists elsewhere, lesson 3 sends learners off trail against the manager's wishes.",
+    needs: ["Any Forest Service text, quoted with its source, on off-trail foot travel in the Deam"],
+    where: [
+      "The Deam page's linked \"Keep Wilderness Wild\" best-practices page",
+      "The Charles C. Deam Wilderness Recreation Guide",
+      "Hoosier National Forest, Brownstown Ranger District office",
+    ],
+  },
+  {
+    key: "mc-deam-off-trail-practice",
+    title: "May a learner practice off-trail navigation in the Deam, and do practice markers count as geocaching?",
+    course: "map-and-compass",
+    lesson: "difficult-terrain",
+    quote: "The Deam Wilderness (lesson 3) is where the rules allow you to practice all of it off trail.",
+    severity: "medium",
+    question:
+      "Does the Hoosier National Forest permit off-trail foot travel for navigation practice in the Deam Wilderness, and would leaving temporary practice markers fall under its geocaching prohibition?",
+    claim:
+      "Lesson 31 says the Deam is where the rules allow off-trail practice, and lesson 30 says its rules expect overnight use away from trails. The Deam page (fetched 2026-10-15) confines only horse riders to trails and keeps campsites 200 feet from them, but never states that off-trail hiking is permitted, and it says \"Geocaching is prohibited.\"",
+    stakes:
+      "Learners could be sent to practice in a way the forest does not allow, or leave markers that break the geocaching ban.",
+    needs: [
+      "A written Forest Service statement on off-trail hiking in the Deam",
+      "Whether placing temporary practice markers counts as geocaching",
+    ],
+    where: ["Hoosier National Forest, Brownstown Ranger District office", "The Charles C. Deam Wilderness Recreation Guide"],
+  },
+  {
+    key: "mc-triangle-of-error",
+    title: "A public-domain source for the triangle of error and the 90° reasoning",
+    course: "map-and-compass",
+    lesson: "finding-yourself",
+    quote: "the geometry is this course's explanation",
+    severity: "low",
+    question:
+      "Does a public-domain navigation text state that three lines of position form a small triangle whose size shows how good the bearings were, and that lines crossing at a shallow angle magnify bearing errors?",
+    claim:
+      "Lesson 22 explains why lines of position should cross near 90° and why a third line helps (the triangle it makes shows bearing quality). Neither backbone document says so: the workbook gives only \"to reduce potential errors\" (p. 131, Table 6-9) and the Army manual only \"For greater accuracy\" (printed p. 6-16). The lesson now marks the geometry as the course's own explanation.",
+    stakes: "Low: the reasoning is standard, but it is uncited.",
+    needs: ["A fetched federal or public-domain text that teaches the triangle of error, with its page"],
+    where: ["Federal navigation manuals (NOAA, U.S. Coast Guard, Forest Service training texts)"],
+  },
+  {
+    key: "mc-indiana-leaf-on",
+    title: "When are central Indiana's woods in leaf?",
+    course: "map-and-compass",
+    lesson: "difficult-terrain",
+    quote: "plan more dead reckoning while the trees are in leaf (roughly May to October)",
+    severity: "low",
+    question: "What are typical leaf-out and leaf-fall dates for deciduous forest in central and south-central Indiana?",
+    claim:
+      "Lesson 31 (and its section 6 quiz) gives the leaf-on period as roughly May to October. The Army manual gives only the principle that bare trees make terrain association easier (printed p. 13-9); no cited source gives Indiana dates.",
+    stakes: "Low: the planning advice holds, but the months are uncited.",
+    needs: ["A phenology source for central Indiana leaf-out and leaf-fall, fetched and quoted"],
+    where: ["USA National Phenology Network", "Purdue Extension forestry publications"],
+  },
+  {
+    key: "mc-pms475-satellite-count",
+    title: "Was PMS 475's \"29 satellites\" current when it was printed in 2016?",
+    course: "map-and-compass",
+    lesson: "how-a-receiver-finds-you",
+    quote: "The 2016 workbook says the space segment \"consists of 29 satellites circling the earth every 12 hours at 12,000 miles in altitude.\"",
+    severity: "low",
+    question:
+      "Was 29 the operational GPS satellite count in May 2016, or a figure carried over from the June 2007 edition of PMS 475?",
+    claim:
+      "Lesson 32 calls the workbook's 29 \"A number that went stale\", and the section 7 quiz says GPS.gov has since overtaken it. GPS.gov says 31 operational satellites have flown \"for well over a decade\" as of its July 3, 2023 count, which suggests 29 may already have been out of date in 2016.",
+    stakes: "Low: if 29 was out of date when printed, \"went stale\" misdescribes it.",
+    needs: [
+      "The satellite count in the June 2007 PMS 475 GPS chapter",
+      "A dated constellation status for 2007 and for 2016",
+    ],
+    where: ["The June 2007 PMS 475 (archived)", "NAVCEN constellation status", "Archived GPS.gov space segment pages"],
+  },
+  {
+    key: "mc-historic-declination-calculator",
+    title: "Which NCEI calculator covers the declination for an 1880s or 1890s quad?",
+    course: "map-and-compass",
+    lesson: "the-compass-and-the-map-in-history",
+    quote: "to look up the declination for the old quad's year and for today",
+    severity: "low",
+    question:
+      "Which NCEI calculator, \"Declination\" or \"U.S. Historic Declination\", computes declination for dates from 1884 to 1899, and with which model?",
+    claim:
+      "Lesson 35's exercise step 4 asks for the declination for the old quad's year. The oldest quads in the Historical Topographic Map Collection go back to 1884, and NCEI's calculator menu lists both a \"Declination\" and a \"U.S. Historic Declination\" calculator.",
+    stakes: "Low: a learner may pick a calculator that does not cover the year and get no answer or a wrong one.",
+    needs: ["Each calculator's stated date range and model, quoted from NCEI"],
+    where: ["NCEI geomagnetic calculators: https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml"],
   },
   {
     key: "mc-dnr-day-visitor-hours",
@@ -7930,7 +8035,11 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Lesson 24 reports the 2001 Army manual's description (United States Orienteering Federation, at least 70 clubs, 1:15,000 maps with a 5-meter interval) and marks it as dated.",
     stakes: "Low: learners looking for an event might chase an out-of-date name.",
     needs: ["The national body's own page", "Any Indiana club's page", "Current map specifications from the body or the international federation"],
-    where: ["The national orienteering body's website", "Indiana club websites", "International Orienteering Federation map specifications"],
+    where: [
+      "Orienteering USA, www.orienteeringusa.com, and its club list (the Morgan-Monroe Pathfinder brochure, revised May 2013 and already cited in lesson 24, points readers there rather than to the 2001 manual's \"United States Orienteering Federation\")",
+      "Indiana club websites",
+      "International Orienteering Federation map specifications",
+    ],
   },
   {
     key: "mc-nwcg-pms475-revision",
@@ -7966,11 +8075,11 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     quote: "Check the edition and year of the copy you find.",
     severity: "low",
     question:
-      "From the title pages of BAM's own copies: what edition, year and publisher does Kals's Land Navigation Handbook carry, and who published the 2022 Official U.S. Army Map Reading and Land Navigation Handbook?",
+      "From the title and copyright pages of BAM's own copies: what exact title, edition, year and publisher does Kals's land-navigation book carry, and what exact title and publisher does the 2022 Official U.S. Army map-reading book carry?",
     claim:
-      "Lesson 36's read-alongside list gives Kals without a year or edition and the 2022 Army handbook without a publisher, because only the files' metadata was read (the books are Tier C).",
+      "Lesson 36's read-alongside list gives Kals without a year or edition and the 2022 Army book without a publisher, because only the files' metadata was read (the books are Tier C). The titles also differ from BAM's own record: the lesson has \"The official U.S. Army map reading and land navigation handbook\" where the brief (BAM's answer 7) and the file on his shelf say \"The Official U.S. Army Map Reading and Land Navigation\", with no \"Handbook\"; and the lesson has \"Land navigation handbook: The Sierra Club guide to map and compass\" where the brief says \"The Land Navigation Handbook\". Fix the lesson 36 list and the section 8 quiz explanation (\"Kals, W. S., Land navigation handbook: ...\") to match the title pages.",
     stakes: "Low: an incomplete APA entry, and a learner may find a different edition.",
-    needs: ["Kals: edition, year, publisher as printed", "Army handbook: publisher as printed"],
+    needs: ["Kals: exact title, edition, year, publisher as printed (Sierra Club or Sierra Club Books)", "Army book: exact title and publisher as printed"],
     where: ["BAM's copies (title and copyright pages only)"],
   },
 ];
