@@ -1518,5 +1518,48 @@ The Army manual does the same against the grid lines instead of the map's edge, 
 - ${FM_2001} Locator: printed pp. 6-14 to 6-19 (PDF pp. 77 to 82), paragraphs 6-7, 6-8 and 6-9; printed p. 11-16 (PDF p. 162), paragraph 11-6a(11).
 - ${NWCG_475} Locator: p. 131, "Estimating Your Own Position Location" and Table 6-9; p. 132, "Estimating Unknown Position Locations".`,
     },
+    {
+      slug: "pace-count-and-dead-reckoning",
+      title: "23 · Pace count and dead reckoning",
+      section: "5 · Map and compass together",
+      recallContent: [
+        {
+          prompt: "What does the workbook call finding your own position from two landmarks, and what does the Army manual call it?",
+          answer: "The workbook calls it triangulation; the Army manual calls it resection (and finding a distant point, intersection).",
+        },
+        {
+          prompt: "You read 40° to a tower and 130° to a bridge. Which lines do you draw on the map?",
+          answer: "The back bearings: 220° from the tower and 310° from the bridge. You are where they cross.",
+        },
+      ],
+      body: `${P("BAM calibrates his pace on a measured course, flat and then uphill, counting both ways the two documents define a pace, and shows the tally method he uses")}
+
+**Distance is where most errors come from.** The Army manual: "Determining distance is the most common source of error encountered while moving either mounted or dismounted." The map tells you how far; counting your steps tells you how far you have come.
+
+**Two definitions of a pace.** The documents disagree, and both are in use:
+- **The Army manual:** "A pace is equal to one natural step, about 30 inches long." You learn "how many paces it takes you to walk 100 meters."
+- **The workbook:** "A pace is defined as the average length of two natural steps (a count is made each time the same foot touches the ground)."
+
+So a two-step pace is about twice an Army pace, and a count of one is about half the other. The arithmetic: 30 inches is about 0.76 meter, so 100 meters is about 100 ÷ 0.76, roughly **131 one-step paces**, or about **66 two-step paces**. Morgan-Monroe's brochure uses the two-step kind ("It's easiest to include both feet in your 'pace' length") and says "Five or six paces would be average for 30 feet." Decide which you count, write it on your route card, and never mix them.
+
+**Calibrate yours.** The workbook's method (Table 6-11): set up courses of 100 feet or 66 feet (one chain), "One course needs to be on level ground and the other two need to be on a moderate slope and steep slope." Walk each, count, and "Calculate your pace by dividing the distance measured (100' or 66') by average number of paces." The Army walks a measured course of 100 to 600 meters "on similar terrain to that you will be walking over", and divides: on a 600-meter course, "divide the total paces by 6" to get paces per 100 meters.
+
+**What changes it.** Both documents list the same causes. The manual's: "Your pace lengthens on a downslope and shortens on an upgrade"; "A head wind shortens the pace and a tail wind increases it"; "Sand, gravel, mud, snow, and similar surface materials tend to shorten the pace"; falling snow, rain or ice shorten it; so do heavy clothing and poor boots; and "Poor visibility, such as in fog, rain, or darkness, will shorten your pace." Its example: "if it normally takes you 120 paces to walk 100 meters, your pace count may increase to 130 or more when walking up a slope."
+
+**Keep count outside your head.** "Do not try to remember the count; always use one of these methods": a pebble moved to a pocket every 100 meters, knots in a string, marks in a notebook.
+
+**Dead reckoning.** The manual defines it in two steps: first "use of a protractor and graphic scales to determine the direction and distance from one point to another on a map", then "the use of a compass and some means of measuring distance to apply this information on the ground." A worked leg: the map gives 450 meters at 64.5° magnetic; your two-step count is 64 per 100 meters on this ground, so you expect 4.5 × 64 = **288 paces** before you look for the end of the leg.
+
+**Why it drifts, and the cure.** "Error from them compounds over distance; therefore, you could soon be far afield from your intended route even if you performed the procedures correctly." The manual's rules: confirm your position "whenever you encounter a known feature on the ground that is also on the map", resect along the way (lesson 22), and "Pace counts or any type of distance measurement should begin anew each time your position is confirmed on the map." Compared with reading the land, "The technique of moving by terrain association is more forgiving of mistakes and far less time-consuming than dead reckoning." Lesson 24 combines the two.
+
+:::reveal How do the Army manual and the workbook define a pace? ||| The Army: one natural step, about 30 inches. The workbook: the average length of two natural steps, counted each time the same foot lands.
+
+:::reveal When does the Army manual say to start your pace count over? ||| Each time your position is confirmed on the map.
+
+## Sources
+- ${FM_2001} Locator: printed p. 5-11 (PDF p. 60), paragraph 5-3a; printed pp. 11-14 and 11-16 (PDF pp. 160 and 162), paragraphs 11-6a(1), (2) and (11), and 11-6b.
+- ${NWCG_475} Locator: p. 133, "Pacing" and Table 6-11; p. 134, the list of what changes a pace.
+- ${MMSF_ORIENT} Locator: "Orienteering Pointers", "Estimating Distance". Linked only.`,
+    },
   ],
 };
