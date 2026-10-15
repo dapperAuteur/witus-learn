@@ -1887,5 +1887,47 @@ ${QR("a search-and-rescue member or a wilderness or land-navigation instructor, 
 ## Sources
 - ${FM_2001} Locator: printed p. 5-11 (PDF p. 60), paragraph 5-3; printed p. 11-13 (PDF p. 159), paragraph 11-5b(2); printed p. 11-16 (PDF p. 162), paragraph 11-6a(11).`,
     },
+    {
+      slug: "when-you-do-not-know-where-you-are",
+      title: "29 · When you do not know where you are",
+      section: "6 · Planning and walking a route",
+      recallContent: [
+        {
+          prompt: "What should a route log record at each checkpoint?",
+          answer: "The time, the leg and bearing walked (with its north), the pace count against the expected count, what you saw against the card, and any fix.",
+        },
+        {
+          prompt: "Why does the log matter after the walk?",
+          answer: "It records what you believed before you knew whether it was true, so you can find where your logged position and the truth parted, and why.",
+        },
+      ],
+      body: `${QR("a search-and-rescue member or a wilderness or land-navigation instructor, to check every step of this lesson, which is safety advice for a person who may be in trouble")}
+
+**Lost is a belief, not a place.** The River Expedition course *Finding Your Way, and Losing It*, lesson "1 · You cannot get lost on a river, and people do", gives the definition this lesson uses: "you are lost when your belief about your position stops matching reality, whether or not you have noticed." Its warning is that "the dangerous period is not the moment of confusion. It is the hours before it, when you were confidently wrong and making decisions on that basis." The Army manual puts the same idea positively: "The key to success in land navigation is to know your location at all times."
+
+**First: stop.** Every step taken while confused adds distance between you and your last good fix. Stop walking, and get out the map and the log.
+
+**Second: go back to your last certain position.** The river course's second habit: "know your last certain position. When something stops making sense, the right move is usually to work forward from the last point you were sure of, rather than to reason from where you assume you are now." Your log (lesson 28) says where that was, when, and on what bearing you left it. Time since then and your usual speed give a rough circle you must be inside.
+
+**Third: try to fix your position.** Orient the map by compass (lesson 20). If you can see two landmarks that are on the map, resect (lesson 22). If you are on a trail, stream or road, one bearing and modified resection may be enough. The Army manual calls periodic resection the cure for drift: "Periodically, you should accomplish a resection triangulation using two or more known points to pinpoint and correct your position on the map."
+
+**Fourth: if the land offers a big catching feature, use it, carefully.** Some places print their own way out. Morgan-Monroe's orienteering brochure tells its course users: "LOST? Note that all the hills/ridges on the map lead to roads. Simply walk uphill, and to the west." That advice is true of that course's ground, not of every forest. The same idea, a large linear feature you cannot miss, is lesson 24's catching feature at the scale of a whole area. Know yours before you start.
+
+**Fifth: if you cannot fix your position, stay and be found.** The Army manual, writing about polar regions, gives the principle: "Distressed persons in these areas are advised to stay in one place so that search/rescue teams may easily find them." The catalog's Off-Grid & Emergency Survival course, in its lesson "20 · Your communication plan, and signaling for help", says the same for any stranding: "stay put if it's safe (a stationary person is easier to locate)", and make yourself visible and audible, with a whistle carrying farther than your voice. The Park Service's Ten Essentials ask for bright clothing for this reason: "Use bright clothing to make yourself easier to see in case Search and Rescue needs to look for you."
+
+**Before any of this: the plan you left behind.** Staying put works because someone knows where to look. The Forest Service's checklist: "Tell someone where you are going and when to expect you to return. Be specific." A route card left at home (lesson 26) turns a search of a whole forest into a search of a line.
+
+**What this lesson is not.** It is not search-and-rescue training and not a survival course. It is the navigator's half: stop, go back to the last certain position, try to fix it, and if you cannot, stay and help them find you.
+
+:::reveal According to the river course, when is the dangerous period of being lost? ||| The hours before the confusion, "when you were confidently wrong and making decisions on that basis."
+
+:::reveal If you cannot fix your position, what do the Army manual and the survival course both advise? ||| Stay in one place, if it is safe, so searchers can find you, and make yourself visible and audible.
+
+## Sources
+- ${FM_2001} Locator: printed p. 11-6 (PDF p. 152), paragraph 11-2; printed p. 11-16 (PDF p. 162), paragraph 11-6a(11); printed p. 9-8 (PDF p. 117), paragraph 9-5a(3)(d).
+- ${MMSF_ORIENT} Locator: the "LOST?" note. Linked only.
+- ${NPS_TEN} Locator: "Extra clothing".
+- ${DEAM} Locator: "Pre-Trip Check List".`,
+    },
   ],
 };
