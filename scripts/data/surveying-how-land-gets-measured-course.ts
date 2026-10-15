@@ -928,7 +928,7 @@ It did not take over at once. In 1841 the surveyor general in Arkansas "was havi
       ],
       body: `${P("BAM pacing the backsight and foresight distances so they match, then running a short loop that returns to its starting mark, with the misclosure worked on screen")}
 
-**How long a sight?** Breed and Hosmer (sec. 117): the proper length depends on how distinct and steady the rod looks, on how much readings on one point vary, and on the precision wanted. "Under ordinary conditions the length of sight should not exceed about 300 ft. where elevations to the nearest 0.01 ft. are desired." On hot days the "'boiling' of the air due to irregular refraction is frequently so troublesome that long sights cannot be taken accurately."
+**How long a sight?** Breed and Hosmer (sec. 117): the proper length depends on how distinct and steady the rod looks, on how much readings on one point vary, and on the precision wanted. "Under ordinary conditions the length of sight should not exceed about 300 ft. where elevations to the nearest 0.01 ft. are desired." And the "'boiling' of the air due to irregular refraction is frequently so troublesome that long sights cannot be taken accurately."
 
 **Balance the sights, and two errors vanish.** A level slightly out of adjustment tilts its line of sight, and "the resulting error in the rod-reading is proportional to the distance from the instrument to the rod." But a height difference is the difference of two readings. "If the level is at equal distances from the rod the errors are equal," and they cancel. How does the rodman know the distances are equal? "By counting his paces as he goes from one point to the other" (sec. 117). The pace from lesson 4 comes back here as a working tool.
 
