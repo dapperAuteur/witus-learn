@@ -287,5 +287,46 @@ White also explains two numbers. Townships "were to be six miles square (reduced
 - ${WHITE} Locator: the Ordinance's text, pp. 11 to 13 (PDF pp. 25 to 27); White's analysis, pp. 14 to 15 (PDF pp. 28 to 29). ${TIER_A}
 - ${MANUAL} Locator: sec. 1-20(n), p. 20 (PDF p. 31); sec. 1-32, p. 16 (PDF p. 27). ${TIER_A}`,
     },
+    {
+      slug: "meridians-townships-and-ranges",
+      title: "4 · Meridians, base lines, townships and ranges",
+      section: "1 · The grid: the Public Land Survey System",
+      recallContent: [
+        {
+          prompt: "How big were the 1785 Ordinance's townships, and how many lots did each hold?",
+          answer: "Six miles square, divided on the plat into 36 lots of one mile square, or 640 acres.",
+        },
+        {
+          prompt: "What did the Northwest Ordinance of 1787 provide for new states?",
+          answer: "That they would be admitted \"on an equal footing with the original States\" (Manual, sec. 1-20(n)); White adds three to five states, each admissible at 50,000 free inhabitants.",
+        },
+      ],
+      body: `**The rule in one sentence.** The statute behind every township, as the Manual quotes it (sec. 3-2, citing Rev. Stat. 2395; 43 U.S.C. 751): the public lands "shall be divided by lines intersecting true north and south lines at right angles so as to form townships 6 miles square," the townships "shall be subdivided into 36 sections, each 1 mile square and containing 640 acres as nearly as may be," and the sections are numbered "beginning with the number 1 in the northeast section, and proceeding west and east alternately through the township with progressive numbers to and including 36."
+
+**The framework, step by step** (sec. 3-3):
+1. An **initial point**, "to serve as an origin for surveys to be extended in separated localities."
+2. A **principal meridian** running north and south through it, and a **base line** running east and west.
+3. **Guide meridians** and **standard parallels** at intervals "short enough to maintain a workable adherence to the legal definition of the primary unit, the township 6 miles square."
+4. **Township exteriors**, numbered "to the north or south commencing with number 1 at the base line," with **ranges** numbered "to the east or west beginning with number 1 at the principal meridian."
+5. **Sections**, numbered "commencing with number 1 in the northeast section of the township, proceeding thence west to section 6, thence south to section 7, thence east to section 12, and so on, alternately, to number 36 in the southeast section."
+
+**Draw the township.** Six rows of six squares. The top row, from right to left: 1, 2, 3, 4, 5, 6. The next row, left to right: 7 under 6, then 8, 9, 10, 11, 12 under 1. And so on, snaking down, until 36 sits in the bottom right corner. The pattern has a name in the old books, boustrophedon, "as the ox plows," and you will never forget it once you have drawn it twice.
+
+**It was not always this way.** Under the 1785 Ordinance the lots were numbered differently: "commencing with No. 1 in the southeast corner of the township and running from south to north in each sequence to No. 36 in the northwest corner" (Manual, front matter, describing the first township plat). The Act of May 18, 1796 changed the numbering "to that which is practiced today" (sec. 1-20(n)). So a section 1 in eastern Ohio's first surveys is not where a section 1 is anywhere else. Old records must be read by the rules of their own date.
+
+**Reading a township and range.** A description gives the township first, then the range, each with a direction: "T. 4 N., R. 20 E." means township 4 north of the base line, range 20 east of the principal meridian (the Bureau of Land Management's *Specifications for Descriptions of Land*, p. 10). Because each township is 6 miles on a side, the numbers turn straight into distances. Township 4 north is the fourth row of townships above the base line, so its south line lies 3 × 6 = 18 miles north of the base line. Range 20 east is the twentieth column east of the meridian, so its west line lies 19 × 6 = 114 miles east of it.
+
+**Why the grid needs correcting.** Meridians are not parallel; they run together toward the pole. A township whose east and west lines both run true north must be a little narrower at its north end than at its south. Standard parallels, "which have also been called correction lines," restart the measurement at intervals; under the 2009 Manual they are run "at intervals of 24 miles north and south of the base line," and guide meridians "at intervals of 24 miles east and west from the principal meridian" (secs. 3-13 and 3-14). The same sections admit that older surveys used other spacings, 30 or 36 miles. A township line that jogs where it crosses a correction line is the grid catching up with the shape of the earth, not a mistake. When you meet one on an old plat, read the rules of its own date before you draw a conclusion.
+
+**The meridians that matter here.** The Manual's table 3-1 lists every principal meridian, the year it was adopted, and the states it governs. Two reach Indiana: the **Second Principal Meridian**, adopted 1805, governing surveys "in Illinois and Indiana," with an initial point at 38° 28' 09.900" N, 86° 27' 20.400" W; and the **First Principal Meridian**, adopted 1819, governing "Ohio and Indiana." Table 3-2 adds a survey with no initial point at all: the "Ohio River Base (Indiana)," begun 1799, its townships numbered north from the Ohio River. Lesson 10 tells how Indiana came to be surveyed from three origins.
+
+:::reveal In a regular township, which section lies directly south of section 6? ||| Section 7. The numbers run west along the top row from 1 to 6, then turn south and run east, so 7 sits under 6.
+
+:::reveal How far north of the base line is the south line of township 3 north? ||| Two townships of 6 miles lie below it, so 2 × 6 = 12 miles.
+
+## Sources
+- ${MANUAL} Locator: front matter, the first township plat (PDF p. 5); sec. 1-20(n), p. 20 (PDF p. 31); secs. 3-2 and 3-3, pp. 39 to 40 (PDF pp. 50 to 51); tables 3-1 and 3-2, pp. 41 to 42 (PDF pp. 52 to 53); secs. 3-13 and 3-14, pp. 42 to 43 (PDF pp. 53 to 54). ${TIER_A}
+- ${SPECS} Locator: chap. II, "Preferred Method for Writing Descriptions," p. 10 (PDF p. 16). ${TIER_A}`,
+    },
   ],
 };
