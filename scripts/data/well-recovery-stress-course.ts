@@ -443,7 +443,7 @@ McEwen, B. S. (1998). Protective and damaging effects of stress mediators. *New 
             prompt: "What stays inside coaching scope on this pillar?",
             options: ["Teaching what stress does, coaching the behaviors, reading wearable data as pattern","Interpreting HRV to decide whether a client should train","Identifying whether a client's presentation meets the established criteria for overtraining syndrome","Prescribing heat or cold as treatment for inflammation"],
             correctIndex: 0,
-            explanation: "Pattern reading is education and behaviour. Clinical interpretation, syndrome identification, and prescribing recovery as treatment all leave the lane.",
+            explanation: "Pattern reading is education and behavior. Clinical interpretation, syndrome identification, and prescribing recovery as treatment all leave the lane.",
             sourceLessonSlug: "the-recovery-pillar",
           },
           {
@@ -457,7 +457,7 @@ McEwen, B. S. (1998). Protective and damaging effects of stress mediators. *New 
             prompt: "What is 'load management'?",
             options: ["Arranging training, work, and rest so demand and capacity stay workable","Adjusting volume and intensity across a periodized block","Monitoring accumulated fatigue using objective markers and reducing load when they worsen","Distributing stress evenly across the week"],
             correctIndex: 0,
-            explanation: "It spans work and rest, not just training, which makes it the behavioural half of recovery rather than a programming task.",
+            explanation: "It spans work and rest, not just training, which makes it the behavioral half of recovery rather than a programming task.",
             sourceLessonSlug: "the-recovery-pillar",
           },
           {
@@ -1391,13 +1391,13 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
             prompt: "In the trial comparing breathing practices with meditation, cyclic sighing produced greater:",
             options: [
               "Improvement in mood and reduction in respiratory rate",
-              "Lower anxiety and arousal",
+              "Remission of anxiety disorders at one year",
               "Increases in maximal aerobic capacity and resting metabolic rate",
               "Improvement in every measured outcome, including cortisol and sleep",
             ],
             correctIndex: 0,
             explanation:
-              "Those two are the reported between-group findings over a month of five-minute daily practice. Claims about anxiety and arousal, fitness, or a clean sweep of outcomes go past what the trial showed between groups.",
+              "Those two are the reported between-group findings over a month of five-minute daily practice. Claims about anxiety disorders, fitness, or a clean sweep of outcomes go past what the trial showed between groups.",
             sourceLessonSlug: "breathwork-evidence",
           },
           {
@@ -1575,7 +1575,7 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
               "Mood improvement and reduction in respiratory rate",
               "Anxiety reduction and improvement in heart-rate variability across the month",
               "Mood improvement and reduction in physiological arousal across every measured marker",
-              "Sleep quality and stress",
+              "Sleep quality and self-reported stress",
             ],
             correctIndex: 0,
             explanation:
@@ -1585,10 +1585,10 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
           {
             prompt: "What is 'cyclic sighing'?",
             options: [
-              "A pattern emphasising a prolonged exhale",
+              "A pattern emphasizing a prolonged exhale",
               "A pattern of equal-length inhale, hold, exhale, and hold, repeated in a fixed cycle",
               "Rapid breathing followed by a period of breath retention, repeated across several rounds",
-              "Six breaths per minute",
+              "Breathing at six breaths per minute",
             ],
             correctIndex: 0,
             explanation:
@@ -1618,7 +1618,7 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
             ],
             correctIndex: 0,
             explanation:
-              "Cohen's d with a small-sample correction, which is why meta-analyses of small trials favour it. −0.35 is small-to-medium on the same scale.",
+              "Cohen's d with a small-sample correction, which is why meta-analyses of small trials favor it. −0.35 is small-to-medium on the same scale.",
             sourceLessonSlug: "breathwork-evidence",
           },
           {
@@ -2117,7 +2117,7 @@ Roberts, L. A., Raastad, T., Markworth, J. F., et al. (2015). Post-exercise cold
           },
           {
             prompt: "What is 'cyclic sighing'?",
-            options: ["A pattern emphasising a prolonged exhale","Equal-length inhale, hold, exhale, hold","Rapid breathing followed by retention","Breathing at six breaths per minute"],
+            options: ["A pattern emphasizing a prolonged exhale","Equal-length inhale, hold, exhale, hold","Rapid breathing followed by retention","Breathing at six breaths per minute"],
             correctIndex: 0,
             explanation: "The four-part pattern is box breathing and the rapid-then-retain is cyclic hyperventilation, both in the same trial.",
             sourceLessonSlug: "breathwork-evidence",
@@ -2598,14 +2598,14 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           },
           {
             prompt: "Which half of a deload is coaching?",
-            options: ["Everything around the numbers: normalising, guilt, the identity story","The exercise selection during the deload, while the schedule is the programming half","The timing of the deload within the block","All of it, since a deload is behavioural"],
+            options: ["Everything around the numbers: normalizing, guilt, the identity story","The exercise selection during the deload, while the schedule is the programming half","The timing of the deload within the block","All of it, since a deload is behavioral"],
             correctIndex: 0,
             explanation: "Which weeks, what percentage, which sets are programming under the CPT hat. The physiology is the easy part; the permission is the intervention.",
             sourceLessonSlug: "rest-deloads-tapers",
           },
           {
             prompt: "What accompanies persistent fatigue as a medical signal?",
-            options: ["Weight change, temperature intolerance, breathlessness, unusual bruising or bleeding","Reduced performance, low motivation, irritability for weeks","Elevated resting heart rate, suppressed HRV, and poor subjective recovery scores","Soreness persisting beyond 96 hours"],
+            options: ["Weight change, temperature intolerance, breathlessness, unusual bruising or bleeding","Reduced performance, low motivation, irritability for weeks","Low wearable readiness scores, suppressed HRV, and poor subjective recovery ratings","Soreness persisting beyond 96 hours"],
             correctIndex: 0,
             explanation: "Four accompaniments, each pointing at something a clinician needs to exclude.",
             sourceLessonSlug: "referral-on-recovery",
@@ -2619,7 +2619,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           },
           {
             prompt: "Which findings route to mental-health care?",
-            options: ["Flattened mood, lost interest, hopelessness, self-harm content, decision-driving anxiety","Low motivation, irritability, and reduced enjoyment of training over a period of weeks","Poor sleep, high stress ratings, and declining HRV","Frustration with progress and reluctance to attend"],
+            options: ["Flattened mood, lost interest, hopelessness, self-harm content, decision-driving anxiety","Irritability and low motivation in a heavy training block, both gone by the deload week","Poor sleep, high stress ratings, and declining HRV","Frustration with progress and reluctance to attend"],
             correctIndex: 0,
             explanation: "Self-harm goes immediately with the crisis-line information in hand. Ordinary frustration is coaching material, not a referral trigger.",
             sourceLessonSlug: "referral-on-recovery",
@@ -2661,7 +2661,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           },
           {
             prompt: "A client says a rest week feels like giving up. Which tools apply?",
-            options: ["The WELL-01 identity tools, plus normalising the reduction","Education about the taper evidence","A revised program with a lower-volume week that does not feel like rest","Reassurance that the feeling passes with results"],
+            options: ["The WELL-01 identity tools, plus normalizing the reduction","Education about the taper evidence","A revised program with a lower-volume week that does not feel like rest","Reassurance that the feeling passes with results"],
             correctIndex: 0,
             explanation: "'I am someone who trains hard' is an identity story, and the psychology course owns it. Education aims at the wrong variable.",
             sourceLessonSlug: "rest-deloads-tapers",
@@ -2691,7 +2691,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
               "As a teaching frame for cumulative load, never as a score to compute",
               "As an index to calculate from the client's own lab results and then track on a quarterly basis",
               "As a diagnosis to explain persistent fatigue and justify time off work",
-              "As a reason to avoid all training stress until stress markers normalise",
+              "As a reason to avoid all training stress until stress markers normalize",
             ],
             correctIndex: 0,
             explanation:
@@ -2966,9 +2966,9 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "State the HRV recording rule.",
             options: [
-              "Same posture, same time, spontaneous breathing, never mixed",
+              "Same posture, same time, ideally spontaneous breathing, never mixed",
               "Record three times weekly and average before plotting",
-              "Use paced breathing throughout to standardise the respiratory contribution",
+              "Use paced breathing throughout to standardize the respiratory contribution",
               "Record on waking and before sleep, and use the difference",
             ],
             correctIndex: 0,
@@ -3038,7 +3038,7 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
           {
             prompt: "Which sauna hazard ratio should a coach carry, and why?",
             options: [
-              "0.23 (0.08-0.65), as it survived adjustment for activity and status",
+              "0.23 (0.08-0.65), as it survived adjustment for CV risk, activity, and status",
               "0.37 (0.18 to 0.75), because it comes from the longer-followed cohort",
               "0.30, because it adjusts for age and sex, the strongest confounders",
               "0.48, because it isolates session duration, the modifiable variable",
@@ -3075,12 +3075,12 @@ Wang, Z., Wang, Y. T., Gao, W., & Zhong, Y. (2023). Effects of tapering on perfo
             prompt: "What did twelve weeks of post-session cold water do to adaptation?",
             options: [
               "Strength and mass rose MORE with active recovery than cold water",
-              "Strength increased equally, with only muscle mass favouring active recovery",
+              "Strength increased equally, with only muscle mass favoring active recovery",
               "Cold water produced greater strength but smaller mass gains",
               "Neither group differed, though soreness was lower with cold water",
             ],
             correctIndex: 0,
-            explanation: "Plus isokinetic work, type II fibre cross-sectional area, and myonuclei per fibre appearing in the active recovery group only.",
+            explanation: "Plus isokinetic work, type II fiber cross-sectional area, and myonuclei per fiber appearing in the active recovery group only.",
             sourceLessonSlug: "cold-water-evidence",
           },
           {

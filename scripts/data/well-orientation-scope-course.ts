@@ -1475,7 +1475,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "What does NASM's guidance leave inside a coach's scope?",
             options: [
-              "Portions, labels, government guidelines, meal prep, and the behavior",
+              "Portions, labels, government guidelines, meal prep, and coaching the behavior",
               "Portion education, macronutrient targets, government guidelines, and supplement timing",
               "Anything the client requests, provided no specific food quantities are named",
               "General education, plus individualized planning where no medical condition is present",
@@ -2008,7 +2008,7 @@ National Board for Health & Wellness Coaching. (2025). *Code of ethics and profe
           {
             prompt: "How does the NBHWC outline build referral into the craft itself?",
             options: [
-              "It maintains boundaries, seeks consultation, and treats scope as ethics",
+              "The coach maintains boundaries, seeks consultation, treats scope as ethics",
               "The coach documents each referral in a standardized format retained for seven years",
               "The coach obtains written clinician approval before continuing with a referred client",
               "The coach suspends the coaching relationship until licensed care has concluded",
@@ -3142,7 +3142,7 @@ And one program-specific practice: you are the first client. Each course ends wi
               "Disclosing AI use in coaching, including privacy implications",
               "Disclosing whether sessions are recorded and how long recordings are kept",
               "Disclosing the coach's supervision arrangements to every client at intake",
-              "Disclosing any use of client data for research or programme evaluation",
+              "Disclosing any use of client data for research or program evaluation",
             ],
             correctIndex: 0,
             explanation: "The code's most modern duty, and one this program treats as directly relevant to how it was itself built.",
@@ -3296,7 +3296,7 @@ And one program-specific practice: you are the first client. Each course ends wi
             prompt: "What does this program grant on completion?",
             options: [
               "Nothing from NASM or NBHWC; it is independent",
-              "A specialization credential recognised by both benchmarked organizations",
+              "A specialization credential recognized by both benchmarked organizations",
               "Continuing-education credit accepted toward NBC-HWC recertification",
               "Provisional eligibility toward the NBHWC board examination",
             ],

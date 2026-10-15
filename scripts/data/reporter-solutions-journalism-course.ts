@@ -416,7 +416,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "Which are the ones worth having, and which are unavailable to somebody whose coverage is known to be favorable.",
+              "The difficult ones are unavailable to somebody whose coverage is known to be favorable.",
             sourceLessonSlug: "why-a-method",
           },
           {
@@ -2573,7 +2573,7 @@ export const REPORTER_SOLUTIONS_COURSE: AuthoredCourse = {
             options: [
               "The pitch, the shapes a story can take, and the capstone",
               "Verification and the legal frame",
-              "Records and reading somebody else's report, the two courses still to come",
+              "Records, reading somebody else's report, interviewing, and verification",
               "The beat and community listening",
             ],
             correctIndex: 0,

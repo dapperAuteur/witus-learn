@@ -365,7 +365,7 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "One solid source plus consistent circumstantial support, and the support is named so a reader can weigh it.",
+              "Corroborated means one solid source plus consistent circumstantial support.",
             sourceLessonSlug: "confidence-levels",
           },
           {
@@ -3475,10 +3475,10 @@ export const REPORTER_VERIFICATION_COURSE: AuthoredCourse = {
           {
             prompt: "What are the three normal outcomes of verification?",
             options: [
-              "Publish, publish less, or hold",
+              "Publish, publish less, or hold and keep reporting",
               "Publish, correct, or retract",
               "Publish, delay, or reassign",
-              "Publish, attribute, or anonymize",
+              "Publish, attribute everything to sources, or anonymize the subject",
             ],
             correctIndex: 0,
             explanation:

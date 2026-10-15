@@ -447,7 +447,7 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           },
           {
             prompt: "What is 'chronic insomnia disorder'?",
-            options: ["A clinical diagnosis with daytime consequences","Any sleep difficulty lasting more than two weeks","Difficulty sleeping that persists after hygiene changes","Sleep dissatisfaction reported over several months"],
+            options: ["Diagnosed, persistent poor sleep with daytime consequences","Any sleep difficulty lasting more than two weeks","Difficulty sleeping that persists after hygiene changes","Sleep dissatisfaction reported over several months"],
             correctIndex: 0,
             explanation: "It is the population CBT-I is designed for, and the reason the pillar has the sharpest scope line in the program.",
             sourceLessonSlug: "the-sleep-pillar",
@@ -456,7 +456,7 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
             prompt: "What causes 'disrupted' rather than 'disordered' sleep?",
             options: ["Caffeine, schedules, light, shifts, and beliefs","An undiagnosed clinical condition not yet assessed","A short-term stressor resolving within two weeks","Poor sleep hygiene practices specifically"],
             correctIndex: 0,
-            explanation: "Behaviour and environment, which is the coach's entire jurisdiction. It is also the much larger population.",
+            explanation: "Behavior and environment, which is the coach's entire jurisdiction. It is also the much larger population.",
             sourceLessonSlug: "the-sleep-pillar",
           },
           {
@@ -538,9 +538,9 @@ Watson, N. F., Badr, M. S., Belenky, G., et al. (2015). Recommended amount of sl
           },
           {
             prompt: "What is a sleep coach actually FOR, given the pillar's tension?",
-            options: ["The disrupted-not-disordered majority, plus knowing when to refer","Delivering the behavioural components of CBT-I between clinical sessions","Screening clients for insomnia before referring them onward","Managing sleep for clients whose clinicians lack the time"],
+            options: ["The disrupted-not-disordered majority, plus knowing when to refer","Delivering the behavioral components of CBT-I between clinical sessions","Screening clients for insomnia before referring them onward","Managing sleep for clients whose clinicians lack the time"],
             correctIndex: 0,
-            explanation: "Behaviour and environment, plus the referral that gets someone to the treatment you cannot give.",
+            explanation: "Behavior and environment, plus the referral that gets someone to the treatment you cannot give.",
             sourceLessonSlug: "the-sleep-pillar",
           },
           {
@@ -1193,7 +1193,7 @@ Edinger, J. D., Arnedt, J. T., Bertisch, S. M., et al. (2021). Behavioral and ps
           },
           {
             prompt: "What is a 'single-component therapy'?",
-            options: ["One element of CBT-I delivered on its own","A therapy addressing one symptom rather than the presentation","A treatment delivered in a single session","A behavioural treatment used without medication"],
+            options: ["One element of CBT-I delivered on its own","A therapy addressing one symptom rather than the presentation","A treatment delivered in a single session","A behavioral treatment used without medication"],
             correctIndex: 0,
             explanation: "Stimulus control, sleep restriction, and relaxation each carry a conditional recommendation as single components, and sleep hygiene carries the recommendation against.",
             sourceLessonSlug: "the-guideline-and-the-line",
@@ -2300,7 +2300,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
             ],
             correctIndex: 0,
             explanation:
-              "Three components: duration, daytime consequences, and the absence of behavioural explanations. Refer for CBT-I, the treatment that works and that lesson 5 established is not yours.",
+              "Three components: duration, daytime consequences, and the absence of behavioral explanations. Refer for CBT-I, the treatment that works and that lesson 5 established is not yours.",
             sourceLessonSlug: "referral-on-sleep",
           },
           {
@@ -2365,7 +2365,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
             ],
             correctIndex: 0,
             explanation:
-              "Recognise, do not label. It is the same discipline as 'describe, do not label' from WELL-04, applied to a phenomenon with no validated measure behind it.",
+              "Recognize, do not label. It is the same discipline as 'describe, do not label' from WELL-04, applied to a phenomenon with no validated measure behind it.",
             sourceLessonSlug: "orthosomnia",
           },
           {
@@ -2454,7 +2454,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           },
           {
             prompt: "What defines chronic insomnia as a referral trigger?",
-            options: ["Months of difficulty, daytime consequences, no obvious cause","Any difficulty persisting after a month of hygiene practice","Difficulty on more than half of nights over two weeks","Sleep dissatisfaction regardless of measured duration"],
+            options: ["Months of difficulty, daytime consequences, no obvious behavioral cause","Any difficulty persisting after a month of hygiene practice","Difficulty on more than half of nights over two weeks","Sleep dissatisfaction regardless of measured duration"],
             correctIndex: 0,
             explanation: "Three components. Refer for CBT-I, the treatment that works and that lesson 5 established is not yours.",
             sourceLessonSlug: "referral-on-sleep",
@@ -2468,7 +2468,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
           },
           {
             prompt: "Why is a sleep complaint often the presenting edge of a mood problem?",
-            options: ["Sleep and mood affect each other in both directions","Mood problems always disrupt sleep while sleep rarely affects mood","Clients find sleep easier to raise than mood","Sleep is measurable and mood is not"],
+            options: ["Sleep and mood affect each other in both directions","Mood problems always disrupt sleep while sleep rarely affects mood","Sleep loss causes low mood, never the reverse","Sleep is measurable and mood is not"],
             correctIndex: 0,
             explanation: "Early waking with low mood, or sleep loss alongside hopelessness, routes to mental-health care rather than a wind-down routine.",
             sourceLessonSlug: "referral-on-sleep",
@@ -2736,7 +2736,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
             options: [
               "What works is not yours; what you have is advised against alone",
               "The treatment that works is unavailable; the alternatives have no evidence",
-              "The evidence is strong but clients rarely comply with the behaviours",
+              "The evidence is strong but clients rarely comply with the behaviors",
               "Sleep problems are common but their causes require diagnostic tools",
             ],
             correctIndex: 0,
@@ -2951,7 +2951,7 @@ Peppard, P. E., Young, T., Barnet, J. H., Palta, M., Hagen, E. W., & Hla, K. M. 
             prompt: "What is orthosomnia, and what is the evidence's honest limit?",
             options: [
               "Metric preoccupation that worsens sleep; case-based, no instrument",
-              "A recognised sleep disorder with published diagnostic criteria and cut-offs",
+              "A recognized sleep disorder with published diagnostic criteria and cut-offs",
               "Anxiety about sleep unrelated to tracking, described in cohort studies",
               "A randomized finding that tracking worsens sleep in most users",
             ],

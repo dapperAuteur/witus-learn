@@ -505,7 +505,7 @@ For these, there is exactly one acceptable move: **read it from the system that 
           {
             prompt: "Which of these is a focused research question?",
             options: [
-              "The economic history of river towns in the Midwest, from the first steamboat landings to the closing of the last mills",
+              "The economic history of river towns across the Midwest, covering trade, industry, migration and decline",
               "Which council decisions between 1948 and 1962 relocated the town's main street, and who made them",
               "Everything worth knowing about how towns and rivers interact, across every period and region for which records survive",
               "Whether rivers were important to the development of towns",

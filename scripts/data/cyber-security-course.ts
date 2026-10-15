@@ -340,7 +340,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "What does the blue team do?",
             options: [
               "Performs authorized offense to find weaknesses before criminals do",
-              "Defends systems, and is where most people start because jobs are plentiful",
+              "Defends the organization's systems and networks against attackers",
               "Writes the governance policies the whole organization is audited on",
               "Builds the applications the security team is later asked to protect",
             ],
@@ -548,7 +548,7 @@ Everything here is for defense and for systems you own or are authorized to test
             prompt: "Why did the 2017 ransomware spread freely through some organizations and not others?",
             options: [
               "Their firewalls were configured to allow all outbound connections",
-              "Their networks were flat, with no segmentation to contain the spread",
+              "Their networks were flat, letting it move anywhere once it was inside",
               "Their staff had not been trained to recognize a phishing email",
               "Their backups sat on the same servers that ended up encrypted",
             ],
@@ -744,7 +744,7 @@ Everything here is for defense and for systems you own or are authorized to test
             options: [
               "A deadline turns study into progress",
               "Because seats fill months ahead at every authorized testing center",
-              "Because exam prices rise",
+              "Because booking waives the fee",
               "Because employers check when you booked, not only when you passed",
             ],
             correctIndex: 0,

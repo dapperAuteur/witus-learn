@@ -267,7 +267,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "That the piece may live online indefinitely, be findable by search, cannot be removed later, and may be picked up elsewhere.",
+              "It also cannot be removed later and may be picked up elsewhere, and it is the part that most often changes an answer.",
             sourceLessonSlug: "informed-consent",
           },
           {
@@ -306,7 +306,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "In plain conversation rather than recited, before recording starts, with a note in your file of what you said.",
+              "Before recording starts, with a note in your file of what you said.",
             sourceLessonSlug: "informed-consent",
           },
           {
@@ -319,7 +319,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "Especially when it turns toward the source's own conduct. Agreeing to talk about one subject is not agreeing to talk about a different one.",
+              "Agreeing to talk about one subject is not agreeing to talk about a different one.",
             sourceLessonSlug: "informed-consent",
           },
           {
@@ -507,7 +507,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "What often happens in the conversation after a story materially changes?",
             options: [
-              "The real interview often finally happens in that second conversation",
+              "The real interview finally happens, on the story as it now stands",
               "The source withdraws consent for the original material",
               "The outlet requires a signed release before proceeding",
               "The reporter must start the five disclosures over from the beginning",
@@ -579,7 +579,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "Which is why the fifth disclosure lists the choices rather than assuming a source knows they exist.",
+              "Naming the choices in the fifth disclosure is what makes them available, rather than assuming a source knows they exist.",
             sourceLessonSlug: "informed-consent",
           },
           {
@@ -639,7 +639,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             options: [
               "So the source decides before anything is captured",
               "Because recording a disclosure would constitute a legal agreement",
-              "Because recordings cannot be corrected",
+              "Because disclosures must be in writing",
               "Because recording law prohibits capturing preliminary conversation",
             ],
             correctIndex: 0,
@@ -1036,7 +1036,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "Both are common, and asking is not intrusive. Offer the choice between talking it through and answering only what you need.",
+              "Asking is not intrusive. Offer the choice between talking it through and answering only what you need.",
             sourceLessonSlug: "what-trauma-does",
           },
           {
@@ -1218,7 +1218,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "Ask what they would like you to understand first. The material you need arrives more often, and more usably, from someone allowed to arrange their own account.",
+              "The material you need arrives more often, and more usably, from someone allowed to arrange their own account.",
             sourceLessonSlug: "control-and-choice",
           },
           {
@@ -1348,7 +1348,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "It is theirs and reportable as their account. Cause, fault, and what it proves are separate claims requiring separate evidence.",
+              "It is theirs. Cause, fault, and what it proves are separate claims requiring separate evidence.",
             sourceLessonSlug: "what-trauma-does",
           },
           {
@@ -1439,7 +1439,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "And it removes the ambush, which is the most expensive thing that can happen in this kind of conversation.",
+              "The ambush is the most expensive thing that can happen in this kind of conversation.",
             sourceLessonSlug: "control-and-choice",
           },
           {
@@ -1930,7 +1930,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             prompt: "What will a young person generally not say in front of a guardian?",
             options: [
               "Anything involving the guardian or that the guardian does not know",
-              "Anything about school, which teenagers tend to treat as private from their parents",
+              "Anything about school, since schools must approve what students tell reporters",
               "Anything they have already told a friend",
               "Anything that could be checked against a document",
             ],
@@ -2724,7 +2724,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
           {
             prompt: "Why is continuing an interview producing unpublishable material a problem?",
             options: [
-              "Continuing is just taking from the source, with nothing to publish",
+              "Continuing is just taking, at a cost only the source bears",
               "It wastes the outlet's reporting time",
               "It creates a record that could be subpoenaed",
               "It obliges the reporter to use some of the material",
@@ -2913,7 +2913,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "As the first course in this track defines it: a territory held over time, which is what lets a second story exist.",
+              "A territory held over time, which is what lets a second story exist.",
             sourceLessonSlug: "after-publication",
           },
           {
@@ -3134,7 +3134,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             ],
             correctIndex: 0,
             explanation:
-              "To a person who has just told you something hard, and the minute costs nothing.",
+              "And the minute afterward costs nothing.",
             sourceLessonSlug: "when-to-stop",
           },
           {
@@ -3505,7 +3505,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             options: [
               "The young person's own agreement, asked separately with refusal made easy",
               "A guardian's countersignature on a release, filed with the outlet before the interview",
-              "A verbal confirmation from the guardian, recorded at the very start of the interview",
+              "A verbal confirmation from the guardian, recorded as the interview begins",
               "An editor's approval to interview a minor",
             ],
             correctIndex: 0,
@@ -3634,7 +3634,7 @@ export const REPORTER_INTERVIEWING_COURSE: AuthoredCourse = {
             prompt: "What do institutionally exposed sources frequently not know?",
             options: [
               "That detail identifies them and employers see social accounts",
-              "That reporters can be compelled to name them in any lawsuit over the story",
+              "That anything said before the recorder starts is automatically off the record",
               "That their employer must be asked for comment",
               "That recordings are retained after publication",
             ],

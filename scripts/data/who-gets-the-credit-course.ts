@@ -165,7 +165,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What did an applicant have to swear under the 1836 Act?",
-            options: ["That they were the original and first inventor, the oath that excluded people in 1858", "That the invention had been reduced to practice and tested in public", "That no foreign patent on the same device was pending anywhere", "That they would manufacture the device within three years of the grant"],
+            options: ["That they were the original and first inventor, an oath enslaved people could not swear", "That the invention had been reduced to practice and tested in public", "That no foreign patent on the same device was pending anywhere", "That they would manufacture the device within three years of the grant"],
             correctIndex: 0,
             explanation: "The oath requirement is the mechanism by which an entire category of people was excluded in 1858.",
             sourceLessonSlug: "what-a-patent-is-and-is-not",
@@ -941,7 +941,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Rillieux's 1843 patent covered which design?",
-            options: ["A double-effect evaporator for boiling down cane juice", "The full multiple-effect system under vacuum", "A vacuum pan for crystallizing refined sugar", "A mechanical cane crusher driven by steam"],
+            options: ["A double-effect evaporator, narrower than his later patent", "The full multiple-effect system under vacuum", "A vacuum pan for crystallizing refined sugar", "A mechanical cane crusher driven by steam"],
             correctIndex: 0,
             explanation: "Patent 3,237. The broader multiple-effect claim came with patent 4,879 in December 1846.",
             sourceLessonSlug: "free-patentees-and-the-first-problem",
@@ -1196,7 +1196,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What does the electret microphone use to convert sound?",
-            options: ["A charged polymer foil inside an electroacoustic transducer", "A carbon granule chamber under variable pressure", "A moving coil suspended in a permanent magnetic field", "A piezoelectric crystal bonded to a metal diaphragm"],
+            options: ["A charged polymer foil, the electret the device is named for", "A carbon granule chamber under variable pressure", "A moving coil suspended in a permanent magnetic field", "A piezoelectric crystal bonded to a metal diaphragm"],
             correctIndex: 0,
             explanation: "Descendants of that design became overwhelmingly dominant in telephones, hearing aids, camcorders, and computers.",
             sourceLessonSlug: "inside-the-corporation",
@@ -1287,7 +1287,7 @@ export const WHO_GETS_THE_CREDIT_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What is the procedure now called?",
-            options: ["The Blalock-Taussig-Thomas shunt, a renaming the AMA reported in 2023", "The Thomas-Blalock procedure, with Taussig's name removed", "The Hopkins shunt, after the institution rather than the individuals", "The Thomas shunt, in a renaming that dropped both surgeons"],
+            options: ["The Blalock-Taussig-Thomas shunt, adding his name to the original two", "The Thomas-Blalock procedure, with Taussig's name removed", "The Hopkins shunt, after the institution rather than the individuals", "The Thomas shunt, in a renaming that dropped both doctors"],
             correctIndex: 0,
             explanation: "The American Medical Association reported the renaming in 2023.",
             sourceLessonSlug: "credit-without-a-patent",
@@ -1696,7 +1696,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "Who was named as co-inventor on that patent?",
-            options: ["Albert L. Brown, listed with her on the home security patent", "Lonnie G. Johnson, then an engineering student", "Joseph V. Nichols, in a much later collaboration", "Frederick McKinley Jones, of Thermo King"],
+            options: ["Albert L. Brown, her husband, named with her on its face", "Lonnie G. Johnson, then an engineering student", "Joseph V. Nichols, in a much later collaboration", "Frederick McKinley Jones, of Thermo King"],
             correctIndex: 0,
             explanation: "Her husband. The pair are both named on the face of patent 3,482,037.",
             sourceLessonSlug: "documented-cases-twentieth-century",
@@ -1710,7 +1710,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What is the mechanical evidence that the Brown patent was influential?",
-            options: ["Later patents have cited it many times over in the decades since", "It was licensed to every major alarm manufacturer of the 1970s", "It was extended beyond its normal term by act of Congress", "It was reissued three times with progressively broader claims"],
+            options: ["Later patents have cited it many times, a record free to check", "It was licensed to every major alarm manufacturer of the 1970s", "It was extended beyond its normal term by act of Congress", "It was reissued three times with progressively broader claims"],
             correctIndex: 0,
             explanation: "Forward citations are not proof of importance, but they are real evidence and they are free to look at.",
             sourceLessonSlug: "documented-cases-twentieth-century",
@@ -2038,7 +2038,7 @@ The second is longer, and it is also unanswerable. Nobody can take it away from 
           },
           {
             prompt: "What kind of traffic signal was in use in London in 1868?",
-            options: ["A non-electric signal, of an earlier kind than the electric ones", "An electric three-position signal identical to Morgan's", "An automatic timed signal controlled from a central station", "A semaphore linked by telegraph to a police headquarters"],
+            options: ["A non-electric signal, decades before the 1912 electric one", "An electric three-position signal identical to Morgan's", "An automatic timed signal controlled from a central station", "A semaphore linked by telegraph to a police headquarters"],
             correctIndex: 0,
             explanation: "It sits in the list of things preceding Morgan's patent, which is what makes the invented-the-traffic-light claim indefensible.",
             sourceLessonSlug: "five-claims-that-fail",

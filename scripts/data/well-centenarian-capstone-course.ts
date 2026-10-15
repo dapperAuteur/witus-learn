@@ -182,14 +182,14 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
           {
             prompt: "How many hallmarks does the 2023 revision propose, and how many were added?",
             options: [
-              "Twelve, with four added to the original nine",
-              "Twelve, with three added to the original nine",
+              "Twelve, with four added, including dysbiosis",
+              "Twelve, with two added, including dysbiosis",
               "Nine, unchanged from the original framework",
               "Fourteen, with five added to the original nine",
             ],
             correctIndex: 0,
             explanation:
-              "The last three named in the list, plus disabled macroautophagy, are the additions. Knowing the count and the additions is what lets a coach recognise the framework when a product borrows it.",
+              "The last three named in the list, plus disabled macroautophagy, are the additions. Knowing the count and the additions is what lets a coach recognize the framework when a product borrows it.",
             sourceLessonSlug: "the-twelve-hallmarks",
           },
           {
@@ -254,7 +254,7 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
             ],
             correctIndex: 0,
             explanation:
-              "Persisting and signalling is what makes senescent cells a target: they are not simply dead, they are actively contributing.",
+              "Persisting and signaling is what makes senescent cells a target: they are not simply dead, they are actively contributing.",
             sourceLessonSlug: "the-twelve-hallmarks",
           },
           {
@@ -403,7 +403,7 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
           },
           {
             prompt: "What does 'capstone' mean here, and what is the smallest part?",
-            options: ["Grading, synthesis, and a protocol project; the final quiz is smallest","Reviewing the six pillars and testing retention; the project is smallest","Summarising each course and adding new evidence; the quiz is largest","Teaching longevity biology and prescribing a protocol; measurement is smallest"],
+            options: ["Grading, synthesis, and a protocol project; the final quiz is smallest","Reviewing the six pillars and testing retention; the project is smallest","Summarizing each course and adding new evidence; the quiz is largest","Teaching longevity biology and prescribing a protocol; measurement is smallest"],
             correctIndex: 0,
             explanation: "Not a summary. Three things, with the final quiz explicitly the least of them.",
             sourceLessonSlug: "what-a-capstone-is-for",
@@ -426,7 +426,7 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
             prompt: "What is 'senescence' as a hallmark?",
             options: ["Cells stop dividing but persist and signal","Progressive loss of stem cell populations","Accumulated DNA damage triggering cell death","Telomere shortening across divisions"],
             correctIndex: 0,
-            explanation: "Persisting and signalling is what makes senescent cells a target: they are not simply dead, they are actively contributing.",
+            explanation: "Persisting and signaling is what makes senescent cells a target: they are not simply dead, they are actively contributing.",
             sourceLessonSlug: "the-twelve-hallmarks",
           },
           {
@@ -466,9 +466,9 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
           },
           {
             prompt: "What is 'unpatentable' pointing at?",
-            options: ["A partial reason the replicated list is marketed least","The reason lifestyle interventions cannot be studied in trials","The absence of commercial funding for behavioural research","The legal status of dietary and exercise recommendations"],
+            options: ["A partial reason the replicated list is marketed least","The reason lifestyle interventions cannot be studied in trials","The absence of commercial funding for behavioral research","The legal status of dietary and exercise recommendations"],
             correctIndex: 0,
-            explanation: "Unglamorous, unpatentable, and almost entirely behavioural, which is exactly the profile of things nobody advertises.",
+            explanation: "Unglamorous, unpatentable, and almost entirely behavioral, which is exactly the profile of things nobody advertises.",
             sourceLessonSlug: "what-replicates",
           },
           {
@@ -487,7 +487,7 @@ López-Otín, C., Blasco, M. A., Partridge, L., Serrano, M., & Kroemer, G. (2023
           },
           {
             prompt: "What is the coaching posture stated at the end of lesson 3?",
-            options: ["Do what replicates, say it accurately, and wait forty years","Focus on the largest effect sizes and defer the rest","Combine behavioural and pharmacological approaches as evidence permits","Prioritise the pillars a client is most willing to work on"],
+            options: ["Do what replicates, say it accurately, and wait forty years","Focus on the largest effect sizes and defer the rest","Combine behavioral and pharmacological approaches as evidence permits","Prioritize the pillars a client is most willing to work on"],
             correctIndex: 0,
             explanation: "The modest honest claim over forty years rather than the inflated one over four weeks.",
             sourceLessonSlug: "what-replicates",
@@ -637,7 +637,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
             options: [
               "No intervention has extended human lifespan in a randomized trial",
               "The biological mechanisms of aging remain entirely unmapped",
-              "Behavioural factors have been shown to have no measurable effect",
+              "Behavioral factors have been shown to have no measurable effect",
               "Randomized trials have shown several compounds extend human lifespan",
             ],
             correctIndex: 0,
@@ -700,7 +700,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           {
             prompt: "Why does this course frame the fitness target as 'move up one band'?",
             options: [
-              "One MET is achievable and worth roughly 13 percent of risk",
+              "One MET is achievable and worth about 13 percent of mortality risk",
               "Because fitness gains above the lowest band produce no further benefit",
               "Because the evidence only applies to people below 7.9 METs",
               "Because measuring METs precisely requires laboratory testing",
@@ -1051,7 +1051,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           {
             prompt: "What is 'the week as design unit'?",
             options: [
-              "Building one week that contains every pillar",
+              "One realistic week containing every pillar, not six programs",
               "Reviewing progress weekly rather than monthly",
               "Planning training in weekly blocks rather than daily sessions",
               "Assigning one pillar to each day of the week",
@@ -1109,7 +1109,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           },
           {
             prompt: "What is 'risk ratio per unit', and why does it make CRF actionable?",
-            options: ["Risk change per one-unit increase; it makes fitness a target","The ratio of risks between the highest and lowest groups; it shows the range","Risk expressed per year of follow-up; it standardises across studies","The ratio adjusted for each unit of confounder; it removes bias"],
+            options: ["Risk change per one-unit increase; it makes fitness a target","The ratio of risks between the highest and lowest groups; it shows the range","Risk expressed per year of follow-up; it standardizes across studies","The ratio adjusted for each unit of confounder; it removes bias"],
             correctIndex: 0,
             explanation: "One MET is small and achievable, and worth roughly 13 percent of all-cause mortality risk in this data.",
             sourceLessonSlug: "cardiorespiratory-fitness",
@@ -1151,7 +1151,7 @@ García-Hermoso, A., Cavero-Redondo, I., Ramírez-Vélez, R., et al. (2018). Mus
           },
           {
             prompt: "What does WELL-01's adherence finding look like at the scale of a life?",
-            options: ["A system that either supports itself or unravels together","Behaviour change becomes harder as more pillars are added","Content knowledge matters less than the coach's consistency","Adherence declines predictably across a multi-decade horizon"],
+            options: ["A system that either supports itself or unravels together","Behavior change becomes harder as more pillars are added","Content knowledge matters less than the coach's consistency","Adherence declines predictably across a multi-decade horizon"],
             correctIndex: 0,
             explanation: "The client who walks more sleeps better, and the one with people expecting them at a Tuesday session does all three.",
             sourceLessonSlug: "the-pillars-priced",
@@ -1853,7 +1853,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           },
           {
             prompt: "Why does the course not quote the age-record-fraud figures?",
-            options: ["Its numbers could not be verified; only the direction is given","The work has been retracted since publication","The figures apply only to regions outside the review's scope","The critique was addressed and resolved by later analysis"],
+            options: ["The numbers could not be verified; only the direction is given","The work has been retracted since publication","The figures apply only to regions outside the review's scope","The critique was addressed and resolved by later analysis"],
             correctIndex: 0,
             explanation: "The direction of the concern is consistent with the review's own finding that these statistics are fragile, so the concern is taught and the numbers are not.",
             sourceLessonSlug: "blue-zones-after-scrutiny",
@@ -1902,7 +1902,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           },
           {
             prompt: "What is 'weight-loss-induced sarcopenia and osteopenia'?",
-            options: ["Muscle and bone lost with fat in a deficit, worse in older adults","Muscle and bone loss caused by ageing independently of weight change","The frailty that follows rapid unintentional weight loss in illness","Bone loss specific to very-low-energy diets"],
+            options: ["Muscle and bone lost with fat in a deficit, worse in older adults","Muscle and bone loss caused by aging independently of weight change","The frailty that follows rapid unintentional weight loss in illness","Bone loss specific to very-low-energy diets"],
             correctIndex: 0,
             explanation: "Attenuated by resistance training, which is the finding the whole lesson turns on.",
             sourceLessonSlug: "restriction-and-fasting",
@@ -1958,7 +1958,7 @@ Sesso, H. D., Manson, J. E., Aragaki, A. K., et al. (2022b). Effect of cocoa fla
           },
           {
             prompt: "What is 'achieved versus prescribed restriction'?",
-            options: ["Asked versus delivered: CALERIE's 25 percent became 11.9","The difference between what a client agrees to and what they report","Variation in restriction across participants within a trial","The reduction in prescribed restriction as adherence falls"],
+            options: ["What a trial asked for versus what participants delivered","The difference between what a client agrees to and what they report","Variation in restriction across participants within a trial","The reduction in prescribed restriction as adherence falls"],
             correctIndex: 0,
             explanation: "It means CALERIE's results describe roughly 12 percent restriction rather than the 25 percent its name implies.",
             sourceLessonSlug: "restriction-and-fasting",
@@ -2903,7 +2903,7 @@ This is required rather than optional, because it is the only part of the capsto
               "Cardiometabolic risk markers, not events or deaths",
               "All-cause mortality across a twenty-year follow-up",
               "Cardiovascular events in participants with existing disease",
-              "Nothing measurable at all, because participant adherence to the restriction was too poor to analyse",
+              "Nothing measurable at all, because participant adherence to the restriction was too poor to analyze",
             ],
             correctIndex: 0,
             explanation:
@@ -3181,12 +3181,12 @@ This is required rather than optional, because it is the only part of the capsto
             prompt: "What did the TREAT trial find and conclude?",
             options: [
               "0.26 kg difference, not significant; TRE alone is no better",
-              "2.6 kg difference favouring time-restricted eating, significant at twelve weeks",
+              "2.6 kg difference favoring time-restricted eating, significant at twelve weeks",
               "No weight change in either group, with lean mass preserved equally",
-              "Weight loss favouring TRE, with lean mass also favouring it",
+              "Weight loss favoring TRE, with lean mass also favoring it",
             ],
             correctIndex: 0,
-            explanation: "Energy intake did not differ, and appendicular lean mass index favoured the CONTROL group in the in-person cohort.",
+            explanation: "Energy intake did not differ, and appendicular lean mass index favored the CONTROL group in the in-person cohort.",
             sourceLessonSlug: "restriction-and-fasting",
           },
           {
@@ -3265,12 +3265,12 @@ This is required rather than optional, because it is the only part of the capsto
             prompt: "What should be measured mostly, rarely, and not at all?",
             options: [
               "Mostly behavior; rarely capacity; ignore nightly stages",
-              "Mostly capacity; rarely behaviour; ignore subjective ratings",
-              "Mostly outcomes; rarely behaviour; ignore device data entirely",
+              "Mostly capacity; rarely behavior; ignore subjective ratings",
+              "Mostly outcomes; rarely behavior; ignore device data entirely",
               "Mostly subjective state; rarely outcomes; ignore capacity testing",
             ],
             correctIndex: 0,
-            explanation: "Behaviour responds immediately and you control it. Capacity changes slowly, so once or twice a year sees the trend without generating anxiety.",
+            explanation: "Behavior responds immediately and you control it. Capacity changes slowly, so once or twice a year sees the trend without generating anxiety.",
             sourceLessonSlug: "what-to-measure",
           },
           {

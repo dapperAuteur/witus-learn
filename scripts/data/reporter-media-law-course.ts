@@ -1144,7 +1144,7 @@ export const REPORTER_MEDIA_LAW_COURSE: AuthoredCourse = {
           {
             prompt: "What does the federal wiretap statute generally permit?",
             options: [
-              "A party to record it, absent criminal or tortious purpose",
+              "A participant to record, absent criminal or tortious purpose",
               "Any person to record any communication for journalistic purposes",
               "Recording only with the written consent of all parties",
               "Recording only where a court has authorized it",
@@ -2550,7 +2550,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           },
           {
             prompt: "What does the phrase 'published or not published, broadcast or not broadcast' do in the statute?",
-            options: ["Extends the identity protection to unaired work", "Extends the protection to the underlying material once the story runs in any medium", "Limits it to published work", "Distinguishes the print privilege from the broadcast privilege, which have different scopes"],
+            options: ["Extends the identity protection to unaired work", "Extends the protection to the underlying material once the story runs in any medium", "Limits the protection to published work", "Distinguishes the print privilege from the broadcast privilege, which have different scopes"],
             correctIndex: 0,
             explanation: "Whether the story ever ran does not decide whether the source is protected. What is protected is still only the identity.",
             sourceLessonSlug: "shield-and-privilege",
@@ -2571,7 +2571,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           },
           {
             prompt: "What is 28 C.F.R. 50.10 in relation to a state shield law?",
-            options: ["A Justice Department policy binding only that department", "A federal shield regulation", "The federal rule that decides when a state privilege applies in federal court", "A reporting requirement imposed on newsrooms that receive federal subpoenas"],
+            options: ["A Justice Department policy binding only that department", "A federal shield law that binds every court", "The federal rule that decides when a state privilege applies in federal court", "A reporting requirement imposed on newsrooms that receive federal subpoenas"],
             correctIndex: 0,
             explanation: "An internal policy, revised more than once, binding nobody outside the Department. It is not a privilege you hold.",
             sourceLessonSlug: "shield-and-privilege",
@@ -2766,7 +2766,7 @@ Three features of that, and each one matters more than the fact that a shield ex
           {
             prompt: "What does the fair report privilege typically require?",
             options: [
-              "That it be fair, accurate, and often attributed",
+              "That the report be fair, accurate, often attributed",
               "That the reporter attended the proceeding in person",
               "That the proceeding have concluded before publication",
               "That the subject be given an opportunity to respond",

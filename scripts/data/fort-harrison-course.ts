@@ -383,7 +383,7 @@ This is the part that most writing about military posts leaves out, and it is th
           {
             prompt: "Whom does the 30 April 1938 item in The Fort Ben Banner name?",
             options: [
-              "Jack Delano, the Farm Security Administration photographer who documented the company's timber clearing for the Library of Congress",
+              "Jack Delano, the Farm Security Administration photographer whose April 1942 Chaplain School pictures are held at the Library of Congress",
               "Earl J. Schoen, the Indianapolis pilot killed in the First World War for whom the post's airfield was dedicated in 1922",
               "Lester Cain, a civilian credited with the best workers and most outstanding detail in the company",
               "Russell B. Harrison",
@@ -1609,7 +1609,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
               "A historical atlas of military installations in Indiana, published by the Indiana Historical Bureau",
             ],
             correctIndex: 1,
-            explanation: "It shows parcel boundaries, political boundaries, street centrelines and aerial imagery by address, intersection or parcel number.",
+            explanation: "It shows parcel boundaries, political boundaries, street centerlines and aerial imagery by address, intersection or parcel number.",
             sourceLessonSlug: "fh-next-exercise-parcel",
           },
           {
@@ -1725,7 +1725,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
             options: [
               "The rank hierarchy, because the most elaborate ornament is on the senior officers' quarters on the north and west sides and the least is on service buildings",
               "The construction date of every building around the loop, because the Quartermaster Corps stamped completion years into the limestone water tables of the original complex",
-              "The boundary of the state park, which the Department of Natural Resources marked around the parade ground with a continuous limestone curb when the land was transferred under the 1995 lease",
+              "The boundary of the state park, which the 1995 interim lease drew around all 2,500 acres of the post, so that the parade ground and every building facing it became park land",
               "Which parcels are taxable",
             ],
             correctIndex: 0,

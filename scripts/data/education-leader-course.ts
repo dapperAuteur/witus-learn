@@ -645,7 +645,7 @@ This measures whether you can hold the argument. It does not measure the written
             options: [
               "Whether teen attendance held up across the whole decade it operated",
               "How much of its budget came from the city rather than the foundations",
-              "Which sites still run it today",
+              "Which sites still use its curriculum",
               "What the network did that the failures did not",
             ],
             correctIndex: 3,
@@ -813,7 +813,7 @@ This measures whether you can hold the argument. It does not measure the written
             prompt: "What is the sustainability problem?",
             options: [
               "Whether the building can be maintained on the budget it was designed for",
-              "Who pays the recurring cost of staffing and operating it in years 5, 8 and 12, after the grant",
+              "Who pays the recurring cost of staffing and operating it after the grant runs out",
               "Whether the model can be copied in cities smaller than the one it began in",
               "Whether a founding director can be replaced without the project losing focus",
             ],

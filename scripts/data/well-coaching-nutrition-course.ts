@@ -192,7 +192,7 @@ export const WELL_COACHING_NUTRITION_COURSE: AuthoredCourse = {
           {
             prompt: "What is a 'wellness exemption'?",
             options: [
-              "Statute text, like MCL 333.18353, that keeps named coaching activities lawful",
+              "Statute text, like MCL 333.18353, keeping named activities lawful on conditions",
               "A waiver a client signs acknowledging the coach is not a licensed provider",
               "A regulatory exception for coaches working under clinician supervision",
               "The general principle that wellness work falls outside practice acts",
@@ -270,7 +270,7 @@ export const WELL_COACHING_NUTRITION_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about environment and logistics work?",
             options: [
-              "Not the consolation tier: it is where the evidence says the leverage lives",
+              "Not the consolation tier: the evidence suggests it is where the leverage lives",
               "It is a fallback for clients whose conditions preclude direct nutrition work",
               "It is permitted but low-yield compared with direct dietary education",
               "It requires a dietitian's involvement once specific foods are named",
@@ -469,7 +469,7 @@ export const WELL_COACHING_NUTRITION_COURSE: AuthoredCourse = {
               "General information, wellness advice, behavior-change management, coaching",
               "General information and classes only, with individualized work reserved",
               "All nutrition work provided no fee is charged",
-              "Behaviour-change management only, with all food guidance reserved",
+              "Behavior-change management only, with all food guidance reserved",
             ],
             correctIndex: 0,
             explanation: "The list explicitly includes INDIVIDUALIZED recommendations, provided they are for wellness or primary prevention rather than therapy.",
@@ -514,7 +514,7 @@ export const WELL_COACHING_NUTRITION_COURSE: AuthoredCourse = {
             prompt: "What does 'food logistics' cover?",
             options: ["Shopping, meal structure, pantry design, cost and social planning","Meal prep, portion control, budgeting, and storage","Shopping, cooking, portioning, and tracking","Meal timing as therapy, shopping, cost, supplement scheduling"],
             correctIndex: 0,
-            explanation: "The 'as behaviour, not as therapy' qualifier keeps timing work inside the lane rather than turning it into a protocol.",
+            explanation: "The lesson's definition: shopping, structure, cost, and social planning around eating. Timing work stays in the lane only 'as behavior, not as therapy', which is what rules out meal timing as therapy.",
             sourceLessonSlug: "what-the-lane-contains",
           },
           {
@@ -747,7 +747,7 @@ Miketinas, D. C., Bray, G. A., Beyl, R. A., Ryan, D. H., Sacks, F. M., & Champag
           {
             prompt: "Why does fiber count as a BEHAVIOR lever rather than only a nutrient?",
             options: [
-              "It comes in whole foods, and its intake tracked adherence",
+              "It comes in whole foods, and its intake predicted adherence",
               "Because fiber supplements are the one supplement coaches may recommend",
               "Because fiber has no physiological effects, only psychological ones",
               "Because tracking fiber grams is substantially easier than tracking any other nutrient in food records",
@@ -840,7 +840,7 @@ Miketinas, D. C., Bray, G. A., Beyl, R. A., Ryan, D. H., Sacks, F. M., & Champag
             options: [
               "Its effective ingredients were what both arms shared: the coaching layer",
               "It shows that dietary prescription is unnecessary for weight loss in any population",
-              "It demonstrates that group coaching outperforms individual dietary counselling",
+              "It demonstrates that group coaching outperforms individual dietary counseling",
               "It establishes that coaches can deliver equivalent results to registered dietitians",
             ],
             correctIndex: 0,
@@ -1296,14 +1296,14 @@ Miketinas, D. C., Bray, G. A., Beyl, R. A., Ryan, D. H., Sacks, F. M., & Champag
           },
           {
             prompt: "Why is fiber described as a behaviour lever rather than a nutrient?",
-            options: ["It comes packaged inside coachable whole foods","It is easier to measure than other nutrients","It can be supplemented, which simplifies targets","It has the strongest mortality association of any nutrient"],
+            options: ["It arrives bundled inside coachable whole foods","It is easier to measure than other nutrients","It can be supplemented, which simplifies targets","It has the strongest mortality association of any nutrient"],
             correctIndex: 0,
             explanation: "Coaching toward vegetables, fruits, legumes, and whole grains brings the rest with it. That bundling is the point.",
             sourceLessonSlug: "fiber-and-energy-density",
           },
           {
             prompt: "What is 'crowding out'?",
-            options: ["Added foods displace reduced ones, with no restriction talk","Ultra-processed foods displacing whole foods over time","A busy schedule pushing out meal preparation","Competition between multiple simultaneous behaviour goals"],
+            options: ["Added foods displace reduced ones, with no restriction talk","Ultra-processed foods displacing whole foods over time","A busy schedule pushing out meal preparation","Competition between multiple simultaneous behavior goals"],
             correctIndex: 0,
             explanation: "It is how a coach reduces something without ever discussing reducing it.",
             sourceLessonSlug: "fiber-and-energy-density",
@@ -2044,14 +2044,14 @@ Ulian, M. D., Pinto, A. J., de Morais Sato, P., et al. (2018). Effects of a new 
           {
             prompt: "A client says 'I just need more discipline around food.' What does this section supply?",
             options: [
-              "Evidence that the environment, not discipline, is driving their eating",
+              "Evidence that their environment, not weakness, is working against them",
               "Discipline predicts adherence, which predicts outcomes, so the instinct is correct",
               "Self-control is a moderator of habit formation rate, per the pooled habit data",
               "Nothing directly; the response belongs to the eating-conversation lesson",
             ],
             correctIndex: 0,
             explanation:
-              "Two independent findings pointing the same way. The plan that follows is design rather than discipline: home defaults, shopping structure, social if-thens, budget-fit swaps.",
+              "Two independent findings point the same way: matched-nutrient ultra-processed food drove a meal a day of passive overconsumption, and 26 studies found environments making the healthier choice harder. The plan that follows is design rather than discipline: home defaults, shopping structure, social if-thens, budget-fit swaps.",
             sourceLessonSlug: "the-food-environment",
           },
           {
@@ -2116,7 +2116,7 @@ Ulian, M. D., Pinto, A. J., de Morais Sato, P., et al. (2018). Effects of a new 
             ],
             correctIndex: 0,
             explanation:
-              "Industrial formulation, and the trial detail is what makes the definition load-bearing here: the nutrients were matched, so the classification was doing the work.",
+              "Industrial formulation. The Hall trial is what makes the definition load-bearing here: the nutrients were matched, so the classification was doing the work.",
             sourceLessonSlug: "the-hall-experiment",
           },
           {
@@ -2147,7 +2147,7 @@ Ulian, M. D., Pinto, A. J., de Morais Sato, P., et al. (2018). Effects of a new 
           },
           {
             prompt: "What is 'ad libitum intake', and why does it matter in the Hall trial?",
-            options: ["Eating freely, so intake is a finding, not compliance","Eating to a prescribed calorie target; it standardises the comparison","Eating at fixed times; it controls for meal timing","Eating only whole foods; it isolates processing"],
+            options: ["Eating freely, so intake is a finding, not compliance","Eating to a prescribed calorie target; it standardizes the comparison","Eating at fixed times; it controls for meal timing","Eating only whole foods; it isolates processing"],
             correctIndex: 0,
             explanation: "If portions had been assigned, the trial would have measured nothing.",
             sourceLessonSlug: "the-hall-experiment",
@@ -2156,7 +2156,7 @@ Ulian, M. D., Pinto, A. J., de Morais Sato, P., et al. (2018). Effects of a new 
             prompt: "What is 'default design', and why is it lane-legal?",
             options: ["Arranging surroundings so the easy choice is the good one","Setting default portion sizes for the client's meals","Establishing a default meal plan for busy days","Defaulting to unprocessed foods in all recommendations"],
             correctIndex: 0,
-            explanation: "Arranging the environment is behaviour and logistics work, which is unreserved. Prescribing which foods a person must eat is not.",
+            explanation: "Arranging the environment is behavior and logistics work, which is unreserved. Prescribing which foods a person must eat is not.",
             sourceLessonSlug: "the-hall-experiment",
           },
           {
@@ -2357,7 +2357,7 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
           {
             prompt: "What is the tension the self-monitoring craft resolves?",
             options: [
-              "The crowned tool is also the one likeliest to turn obsessive",
+              "Self-monitoring is crowned, but food tracking can turn obsessive",
               "Self-monitoring works only when the coach reviews the data",
               "Self-monitoring is effective but falls outside the non-prescriptive coaching lane",
               "Self-monitoring improves short-term adherence but not long-term outcomes",
@@ -2383,7 +2383,7 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
           {
             prompt: "What is 'behavior monitoring' as this lesson defines it?",
             options: [
-              "Tracking countable behaviors rather than calories",
+              "Self-monitoring of countable behaviors, not calories",
               "The coach's observation of the client's eating during sessions",
               "Monitoring that focuses on frequency rather than quantity",
               "Tracking that the client reviews privately without ever sharing the record with their coach",
@@ -2656,7 +2656,7 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
           {
             prompt: "What do the two referral lanes have in common, and what differs?",
             options: [
-              "Both use a warm handoff; destination and food pausing differ",
+              "Both use a warm handoff; destination and the food pause differ",
               "Both route to registered dietitians; they differ in urgency",
               "Both pause coaching entirely; they differ in how long the pause lasts",
               "Both require the client's written consent beforehand; they differ in documentation requirements",
@@ -2703,7 +2703,7 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
           },
           {
             prompt: "Where do eating-disorder flags route?",
-            options: ["Clinical care: physician, therapist, specialist","Registered dietitian territory, since the presentation is nutritional","The client's primary care physician, who coordinates onward","A specialist only if the client asks"],
+            options: ["Clinical care: physician, therapist, specialist","Registered dietitian territory, since the presentation is nutritional","A more experienced coach, who takes over the food coaching","A specialist only if the client asks"],
             correctIndex: 0,
             explanation: "A dietitian addresses nutrition; these flags call for clinical care of the disorder itself.",
             sourceLessonSlug: "referral-on-this-pillar",
@@ -2770,7 +2770,7 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
           {
             prompt: "DIETFITS' contribution to the 'which diet' conversation is:",
             options: [
-              "Equal 12-month loss on both diets; genotype and insulin predicted nothing",
+              "Equal loss on both diets; genotype and insulin secretion predicted nothing",
               "Proof that low-carbohydrate eating is metabolically superior for most adults, regardless of food quality or adherence levels",
               "Evidence that genotype testing should guide every diet recommendation",
               "A demonstration that neither diet works without prescribed calorie limits",
@@ -2987,7 +2987,7 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
             prompt: "What did POUNDS LOST show about the two adherence dimensions?",
             options: [
               "Early BEHAVIORAL adherence predicted outcomes; dietary did little",
-              "Early DIETARY adherence predicted outcomes; behavioural adherence did not",
+              "Early DIETARY adherence predicted outcomes; behavioral adherence did not",
               "Both dimensions predicted outcomes equally at 24 months",
               "Neither predicted outcomes once diet assignment was controlled",
             ],
@@ -3154,7 +3154,7 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
           {
             prompt: "Name the disordered-eating red flags.",
             options: [
-              "Secret eating, tightening rules, compensating, distress, rapid weight change",
+              "Secret eating, tightening rules, compensatory behavior, rapid weight change",
               "Skipping meals, counting calories, weighing daily, avoiding social meals",
               "Rapid weight loss, low mood, fatigue, and reduced training performance",
               "Restrictive eating, excessive exercise, and refusal to discuss food",
@@ -3208,7 +3208,7 @@ National Board for Health & Wellness Coaching. (n.d.). *Scope of practice*. http
               "Providing several plans and letting the client choose one",
             ],
             correctIndex: 0,
-            explanation: "The content stays general or stays the licensee's; the behaviour work stays yours. The other three only disguise the prohibited act.",
+            explanation: "The content stays general or stays the licensee's; the behavior work stays yours. The other three only disguise the prohibited act.",
             sourceLessonSlug: "what-the-lane-contains",
           },
           {
