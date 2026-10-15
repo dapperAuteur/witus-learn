@@ -328,5 +328,54 @@ White also explains two numbers. Townships "were to be six miles square (reduced
 - ${MANUAL} Locator: front matter, the first township plat (PDF p. 5); sec. 1-20(n), p. 20 (PDF p. 31); secs. 3-2 and 3-3, pp. 39 to 40 (PDF pp. 50 to 51); tables 3-1 and 3-2, pp. 41 to 42 (PDF pp. 52 to 53); secs. 3-13 and 3-14, pp. 42 to 43 (PDF pp. 53 to 54). ${TIER_A}
 - ${SPECS} Locator: chap. II, "Preferred Method for Writing Descriptions," p. 10 (PDF p. 16). ${TIER_A}`,
     },
+    {
+      slug: "aliquot-parts-and-lots",
+      title: "5 · Aliquot parts and lots: reading SW1/4NE1/4",
+      section: "1 · The grid: the Public Land Survey System",
+      recallContent: [
+        {
+          prompt: "In a regular township, where are sections 1, 6, 7 and 36?",
+          answer: "Section 1 in the northeast corner, 6 in the northwest, 7 directly under 6, and 36 in the southeast.",
+        },
+        {
+          prompt: "Read \"T. 4 N., R. 20 E.\"",
+          answer: "Township 4 north of the base line, range 20 east of the principal meridian.",
+        },
+      ],
+      body: `**Below the section.** A section is a square mile of 640 acres, but people rarely buy a whole one. The Bureau of Land Management's *Specifications for Descriptions of Land* (2017), the federal style guide for writing descriptions, explains how a section is cut into smaller legal units, called **legal subdivisions**, which "are of two types, aliquot parts and lots" (p. 9).
+
+**Aliquot parts.** "Aliquot" means a part that divides a whole exactly. The *Specifications* define an aliquot part as "an area that is a legal subdivision of a section by division into halves or fourths ad infinitum; except lots" (p. 9, note 14).
+- The section is split into quarters "by running straight lines from the established quarter-section corners to the opposite corresponding quarter-section corners." These "nominal 160-acre units are designated by symbol ... as NE1/4, NW1/4, SW1/4, and SE1/4."
+- Each quarter is split the same way into "nominal 40-acre units ... designated by symbol ... as, for example, SW1/4NE1/4."
+- Occasionally again, into "nominal 10-acre units ... for example, NW1/4SW1/4NE1/4."
+
+**Read it right to left.** SW1/4NE1/4 means the southwest quarter **of** the northeast quarter. Start with the last piece (the NE quarter of the section, 160 acres) and work left: its SW quarter is 40 acres. NW1/4SW1/4NE1/4 is the NW quarter of the SW quarter of the NE quarter: 160 → 40 → 10 acres. Each component divides the area by four.
+
+**The comma is not punctuation, it is arithmetic.** "A comma means 'AND THE' and the absence of a comma means 'OF THE.'" The *Specifications'* own example: "The description NE1/4SW1/4SE1/4 without a comma describes an aliquot part of 10 acres. With a comma, as such NE1/4, SW1/4, SE1/4 describes three aliquot parts totaling 480 acres" (p. 10). One misplaced comma can multiply an area by forty-eight.
+
+**Four components at most.** Aliquot parts could be divided forever, but long strings "tend to invite error," so "land descriptions by aliquot part must not go beyond a four component description" (p. 9). A 2½-acre unit such as SE1/4NE1/4NE1/4SW1/4 is acceptable; a five-component string is not, and anything smaller gets a survey and lot numbers instead. The Manual states the same practice (sec. 3-33).
+
+**A complete description.** "A proper aliquot part description should contain all of the reference elements within it: principal meridian, State, township and range, section, and lots or aliquot parts." The *Specifications'* worked example (p. 10):
+
+> Mount Diablo Meridian, Nevada
+> T. 4 N., R. 20 E.,
+> sec. 15, NW1/4, NE1/4SE1/4SW1/4, and NW1/4SE1/4.
+
+"The areas described aggregate 210 acres": the NW quarter (160), plus a 10-acre piece, plus a 40-acre piece. Parts are listed in a set order, "NE, then NW, SW, and SE."
+
+**Halves of halves are trouble.** The *Specifications* advise against "half of a half" descriptions such as W1/2W1/2, because they are "ambiguous and subject to more than one interpretation" (p. 11): it is not clear whether the half is by area or by measurement.
+
+**Lots.** Not every section is regular. The Manual (sec. 3-32): of a township's 36 sections, "25 of which are regular sections returned as containing 640 acres each." The sections against the north and west boundaries absorb the leftovers from measurement and from the converging meridians: each holds 480 acres of regular aliquot parts plus "four additional regular lots returned as containing 40 acres plus or minus the excess or deficiency," and section 6, in the corner, holds 360 acres plus seven lots. A lot is "designated by section and lot numbers such as 'sec. 3, lot 1,'" and "lots cannot be described as aliquot" (*Specifications*, p. 11).
+
+**Legal acres and the smallest unit.** Under the Act of March 1, 1800, "each legal subdivision on the plats returned by the Surveyor General shall be considered as containing the exact quantity expressed on the plat": "the plat is the source of the quantity of acres for administrative purposes, often called legal acres" (Manual, sec. 1-20(n)). A quarter section of a full 640-acre section is 160 acres in law, whatever a modern tape says. And "the smallest legal subdivision for purposes of disposal under the general land laws is 40 acres unless otherwise specified in a given law" (sec. 3-32).
+
+:::reveal How many acres is NE1/4SE1/4, and how many is NE1/4, SE1/4? ||| Without the comma, the NE quarter of the SE quarter: 40 acres. With the comma, the NE quarter and the SE quarter: 320 acres.
+
+:::reveal How many acres is the S1/2NE1/4? ||| Half of a 160-acre quarter: 80 acres.
+
+## Sources
+- ${SPECS} Locator: chap. II, pp. 9 to 11 (PDF pp. 15 to 17), including note 14's glossary definitions. ${TIER_A}
+- ${MANUAL} Locator: sec. 1-20(n), pp. 20 to 21 (PDF pp. 31 to 32); secs. 3-32 and 3-33, pp. 47 to 48 (PDF pp. 58 to 59). ${TIER_A}`,
+    },
   ],
 };
