@@ -1,6 +1,12 @@
-// Release follow-ups: the work that falls due when a course reaches the catalog or goes live, with
-// the blog post that markets it named in full. Surfaced at /admin/follow-ups, as a count on the admin
-// home, and on each course's /teach page, all owner-only.
+// Release follow-ups and the course launch to-do list: the work that falls due when a course reaches
+// the catalog, is scheduled, or goes live, with the blog post that markets it named in full.
+//
+// WHERE IT SHOWS. On each course's /teach page as a to-do widget for everyone who edits the course
+// (its teacher, the school's admin, the owner) while the course is not live; as a WARNING carrying
+// that list whenever someone signals the course should go live (saving settings that schedule it,
+// publish it or clear its hold, releasing the review hold, vetting it), so the teacher and BAM can
+// plan for the real date; and owner-only at /admin/follow-ups and as a count on the admin home, so
+// BAM hears when a teacher schedules a course.
 //
 // THE PROBLEM THIS SOLVES. Every course BAM ships gets a blog post (the standing blog-drafts rule),
 // and most posts can only go out once their course exists, or once it is released: a post that
@@ -9,15 +15,21 @@
 // released"), which nothing in this app could see. A course could be released, by BAM or by a
 // school admin, and the post that was waiting for it would stay waiting.
 //
-// HOW IT WORKS. Definitions live here, committed, like src/lib/research-checks.ts: the editorial call
-// (which post, which blog, what to re-check) is reviewable in a diff. Each one names the courses it
-// waits on and WHEN it falls due, computed from the course rows as they stand, never stored:
-//   - "seeded": the course exists in the school's catalog, held or not.
-//   - "live":   learners can take it (public or members, published, no publish hold, vetted or
-//               opened while unvetted). The same four states the catalog badges read.
-// BAM closes one at /admin/follow-ups, which writes status and note to `course_release_followups`;
-// closing requires saying what was done (the live URL, what changed). `pnpm follow-ups:list` reads
-// them back. Once a follow-up is done and nothing will reopen it, DELETE it from this file.
+// TWO SOURCES, ONE LIST. (1) Committed follow-ups, defined below like src/lib/research-checks.ts, so
+// the editorial call (which post, which blog, what to re-check) is reviewable in a diff; BAM closes
+// them at /admin/follow-ups (status and note in `course_release_followups`). (2) Items a teacher or
+// admin adds on the course page (`course_launch_todos`), so a school's own launch chores fit too.
+// Every item says WHEN it falls due, computed from the course row as it stands, never stored:
+//   - "seeded":    the course exists in the school's catalog, held or not.
+//   - "scheduled": someone has scheduled it (visibility "scheduled"), or it is live. "Before it goes
+//                  live" items use this, so they surface the moment a launch is planned.
+//   - "live":      learners can take it (public or members, published, no publish hold, vetted or
+//                  opened while unvetted). The same states the catalog badges read.
+// Closing any item requires saying what was done (the live URL, what changed). `pnpm follow-ups:list`
+// reads both back. Once a committed follow-up is done for good, DELETE it from this file.
+//
+// NOT AN INBOX (CLAUDE.md). An item is a chore attached to one course: no recipient, no reply, no
+// read state, no notification. It ends when it is closed.
 //
 // TO ADD ONE: append an entry whenever you draft a blog post about a course, and whenever a course
 // ships with work that has to wait for its release (a post to update, a task step to re-check, a
@@ -35,9 +47,10 @@ export const BLOGS = {
 } as const;
 export type BlogKey = keyof typeof BLOGS;
 
-export type FollowUpWhen = "seeded" | "live";
+export type FollowUpWhen = "seeded" | "scheduled" | "live";
 export const FOLLOW_UP_WHEN_LABEL: Record<FollowUpWhen, string> = {
   seeded: "once the course is in the catalog, held or not",
+  scheduled: "before it goes live, from the moment it is scheduled",
   live: "once learners can take the course",
 };
 
@@ -186,7 +199,7 @@ export interface CourseStageInput {
   allowUnvettedPublic: boolean;
 }
 
-export type CourseStage = "missing" | "seeded" | "live";
+export type CourseStage = "missing" | "seeded" | "scheduled" | "live";
 
 /**
  * "live" reads the same states as the catalog's badges (private, on hold, draft, coming soon), and
@@ -198,10 +211,16 @@ export function courseStage(course: CourseStageInput | undefined): CourseStage {
   const vettingLocked = course.vettedAt == null && !course.allowUnvettedPublic;
   const open = course.visibility === "public" || course.visibility === "members";
   const live = open && course.isPublished && !course.publishHoldReason && !vettingLocked;
-  return live ? "live" : "seeded";
+  if (live) return "live";
+  return course.visibility === "scheduled" ? "scheduled" : "seeded";
 }
 
-const RANK: Record<CourseStage, number> = { missing: 0, seeded: 1, live: 2 };
+const RANK: Record<CourseStage, number> = { missing: 0, seeded: 1, scheduled: 2, live: 3 };
+
+/** Has the course reached `when`? The one comparison every surface uses. */
+export function stageReaches(stage: CourseStage, when: FollowUpWhen): boolean {
+  return RANK[stage] >= RANK[when];
+}
 
 export interface FollowUpDue {
   due: boolean;
@@ -210,9 +229,8 @@ export interface FollowUpDue {
 }
 
 export function followUpDue(f: ReleaseFollowUp, stageOf: (slug: string) => CourseStage): FollowUpDue {
-  const need = RANK[f.when];
   const stages = f.courses.map((slug) => ({ slug, stage: stageOf(slug) }));
-  const waitingOn = stages.filter((s) => RANK[s.stage] < need);
+  const waitingOn = stages.filter((s) => !stageReaches(s.stage, f.when));
   const due = (f.match ?? "all") === "any" ? waitingOn.length < stages.length : waitingOn.length === 0;
   return { due, waitingOn };
 }
@@ -237,4 +255,72 @@ export function getFollowUp(key: string): ReleaseFollowUp | undefined {
 /** A follow-up needs attention when it is due and nobody has closed it. */
 export function needsAttention(due: FollowUpDue, status: FollowUpStatus): boolean {
   return due.due && status === "open";
+}
+
+// ── The launch to-do list: both sources as one list for one course ──────────────────────────────
+
+/** One item on a course's launch to-do list, from either source, ready to render or serialize. */
+export interface LaunchTodo {
+  /** Committed follow-up key, or the custom item's uuid. */
+  id: string;
+  source: "committed" | "custom";
+  kind: "blog-post" | "task";
+  title: string;
+  detail: string | null;
+  when: FollowUpWhen;
+  status: FollowUpStatus;
+  note: string | null;
+  /** For a blog post: the blog's name, and the post's (or the blog's) URL when known. */
+  blogName: string | null;
+  postTitle: string | null;
+  postUrl: string | null;
+  ref: string | null;
+  /** True when every course it waits on has reached `when`. */
+  due: boolean;
+}
+
+export function committedTodo(f: ReleaseFollowUp, due: FollowUpDue, status: FollowUpStatus, note: string | null): LaunchTodo {
+  const post = f.blogPost;
+  return {
+    id: f.key,
+    source: "committed",
+    kind: f.kind,
+    title: f.title,
+    detail: f.detail,
+    when: f.when,
+    status,
+    note,
+    blogName: post ? BLOGS[post.blog].name : null,
+    postTitle: post?.postTitle ?? null,
+    postUrl: post ? blogPostUrl(post) : null,
+    ref: f.ref ?? null,
+    due: due.due,
+  };
+}
+
+/** The settings that decide whether a course is live, as the settings form holds them. */
+export interface LaunchSettings {
+  visibility: string;
+  isPublished: boolean;
+  publishHoldReason: string | null;
+}
+
+/**
+ * Does this change say "make it live"? Scheduling it, moving it to public or members from private
+ * or scheduled, publishing it, or clearing its hold. Any one is an intent to launch, and the moment
+ * the launch to-do list must be in front of the person making it.
+ */
+export function isLaunchIntent(before: LaunchSettings, after: LaunchSettings): boolean {
+  const open = (v: string) => v === "public" || v === "members";
+  if (after.visibility === "scheduled" && before.visibility !== "scheduled") return true;
+  if (open(after.visibility) && !open(before.visibility)) return true;
+  if (after.isPublished && !before.isPublished) return true;
+  if (before.publishHoldReason && !after.publishHoldReason) return true;
+  return false;
+}
+
+/** The open items, split the way the warning reads: what to do before launch, and what launch starts. */
+export function launchWarningGroups(todos: LaunchTodo[]): { before: LaunchTodo[]; after: LaunchTodo[] } {
+  const open = todos.filter((t) => t.status === "open");
+  return { before: open.filter((t) => t.when !== "live"), after: open.filter((t) => t.when === "live") };
 }

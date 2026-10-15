@@ -2,6 +2,7 @@ import { sql } from "drizzle-orm";
 import { check, index, pgTable, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
 import { tenants } from "./tenancy";
 import { users } from "./auth";
+import { courses } from "./courses";
 
 // Release follow-ups: the work that falls due when a course reaches the catalog or goes live (the
 // blog post that markets it, a task step to re-check), surfaced owner-only at /admin/follow-ups.
@@ -38,3 +39,44 @@ export const courseReleaseFollowups = pgTable(
 );
 
 export type CourseReleaseFollowup = typeof courseReleaseFollowups.$inferSelect;
+
+// The items a teacher, a school admin or the owner adds to ONE course's launch to-do list on its
+// /teach page: a school's own chores before and after a launch (record the welcome video, tell the
+// department, publish the post on our blog). Shown with the committed follow-ups above, and in the
+// warning that appears whenever someone schedules, publishes or releases the course.
+//
+// A chore attached to a course, never a message: no recipient, no assignee, no reply, no read state
+// (the no-inbox rule in CLAUDE.md). `title` is the chore; `note` says what was done when it closes.
+export const courseLaunchTodos = pgTable(
+  "course_launch_todos",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    /** task | blog-post. A blog post names its blog, and the post's URL once it has one. */
+    kind: text("kind").notNull().default("task"),
+    title: text("title").notNull(),
+    blogName: text("blog_name"),
+    postUrl: text("post_url"),
+    /** seeded | scheduled | live: when it falls due (src/lib/release-followups.ts). */
+    dueWhen: text("due_when").notNull().default("scheduled"),
+    status: text("status").notNull().default("open"),
+    note: text("note"),
+    createdBy: text("created_by").references(() => users.id, { onDelete: "set null" }),
+    decidedBy: text("decided_by").references(() => users.id, { onDelete: "set null" }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("course_launch_todos_tenant_course_idx").on(t.tenantId, t.courseId),
+    check("course_launch_todos_kind_chk", sql`${t.kind} in ('task','blog-post')`),
+    check("course_launch_todos_due_when_chk", sql`${t.dueWhen} in ('seeded','scheduled','live')`),
+    check("course_launch_todos_status_chk", sql`${t.status} in ('open','done','skipped')`),
+  ],
+);
+
+export type CourseLaunchTodo = typeof courseLaunchTodos.$inferSelect;

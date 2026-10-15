@@ -1,5 +1,5 @@
 {
-  "id": "b4c2458d-af72-4dd0-bd96-aa43bf55ffb2",
+  "id": "438439a6-6b8d-4fca-9925-2a26da019c09",
   "prevId": "86771859-ec49-408a-b8be-1204125fb4a5",
   "version": "7",
   "dialect": "postgresql",
@@ -7264,6 +7264,197 @@
         "course_research_checks_status_chk": {
           "name": "course_research_checks_status_chk",
           "value": "\"course_research_checks\".\"status\" in ('open','verified','corrected','blocked')"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.course_launch_todos": {
+      "name": "course_launch_todos",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "tenant_id": {
+          "name": "tenant_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "course_id": {
+          "name": "course_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "kind": {
+          "name": "kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'task'"
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "blog_name": {
+          "name": "blog_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "post_url": {
+          "name": "post_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "due_when": {
+          "name": "due_when",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'scheduled'"
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'open'"
+        },
+        "note": {
+          "name": "note",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_by": {
+          "name": "created_by",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "decided_by": {
+          "name": "decided_by",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "course_launch_todos_tenant_course_idx": {
+          "name": "course_launch_todos_tenant_course_idx",
+          "columns": [
+            {
+              "expression": "tenant_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "course_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "course_launch_todos_tenant_id_tenants_id_fk": {
+          "name": "course_launch_todos_tenant_id_tenants_id_fk",
+          "tableFrom": "course_launch_todos",
+          "tableTo": "tenants",
+          "columnsFrom": [
+            "tenant_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "course_launch_todos_course_id_courses_id_fk": {
+          "name": "course_launch_todos_course_id_courses_id_fk",
+          "tableFrom": "course_launch_todos",
+          "tableTo": "courses",
+          "columnsFrom": [
+            "course_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "course_launch_todos_created_by_users_id_fk": {
+          "name": "course_launch_todos_created_by_users_id_fk",
+          "tableFrom": "course_launch_todos",
+          "tableTo": "users",
+          "columnsFrom": [
+            "created_by"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "set null",
+          "onUpdate": "no action"
+        },
+        "course_launch_todos_decided_by_users_id_fk": {
+          "name": "course_launch_todos_decided_by_users_id_fk",
+          "tableFrom": "course_launch_todos",
+          "tableTo": "users",
+          "columnsFrom": [
+            "decided_by"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "set null",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "course_launch_todos_kind_chk": {
+          "name": "course_launch_todos_kind_chk",
+          "value": "\"course_launch_todos\".\"kind\" in ('task','blog-post')"
+        },
+        "course_launch_todos_due_when_chk": {
+          "name": "course_launch_todos_due_when_chk",
+          "value": "\"course_launch_todos\".\"due_when\" in ('seeded','scheduled','live')"
+        },
+        "course_launch_todos_status_chk": {
+          "name": "course_launch_todos_status_chk",
+          "value": "\"course_launch_todos\".\"status\" in ('open','done','skipped')"
         }
       },
       "isRLSEnabled": false

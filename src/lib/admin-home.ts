@@ -13,6 +13,8 @@ export interface AdminHomeCounts {
   openFeedback: number | null;
   pendingMedia: number | null;
   upcomingLive: number | null;
+  /** Release follow-ups due now and not closed (/admin/follow-ups); owner-only. */
+  followUpsDue?: number | null;
 }
 
 export interface AdminStatTile {
@@ -65,6 +67,17 @@ export function adminStatTiles(c: AdminHomeCounts): AdminStatTile[] {
       label: "Media awaiting review",
       value: c.pendingMedia,
       attention: c.pendingMedia > 0,
+    });
+  }
+  if (c.followUpsDue != null) {
+    // A course went live (or reached the catalog) and the post or task waiting for it has not been
+    // done. A school admin can release a course too, so this tile is how BAM hears about it.
+    tiles.push({
+      href: "/admin/follow-ups",
+      label: "Release follow-ups due",
+      value: c.followUpsDue,
+      hint: "blog posts and tasks waiting on a course",
+      attention: c.followUpsDue > 0,
     });
   }
   if (c.upcomingLive !== null) {
