@@ -1229,6 +1229,59 @@ Read it from the left: 2,550. And 425 × 6 is 2,550.
 - ${NMAH_GUNTER} Locator: description, first to fourth paragraphs (dividers, natural and artificial scales, navigators to the end of the 19th century, the 2-foot boxwood rule and its brass pins). ${TB}
 - ${PICKWORTH} Locator: pp. 10 to 11 (PDF pp. 16 to 17), the card scale and its distances. ${TA}`,
     },
+    {
+      slug: "who-invented-the-slide-rule",
+      title: "18 · Who invented the slide rule? Oughtred and Delamain, side by side",
+      section: "6 · From Gunter's line to the Moon",
+      recallContent: [
+        {
+          prompt: "How do you multiply on Gunter's line of numbers?",
+          answer: "With a pair of dividers: open them from 1 to the first factor, put one point on the second factor, and swing the other forward to the product.",
+        },
+        {
+          prompt: "Why did Gunter's scale last at sea until the end of the 19th century?",
+          answer: "Made of one piece of wood, it was not upset by the expansion and shrinking that happened at sea.",
+        },
+      ],
+      body: `**The claim this lesson tests.** Short histories often say that William Oughtred invented the slide rule. The record is a quarrel, and the way to judge it is to read both men. Everything quoted here comes from Florian Cajori's paper of 1920, which prints their statements side by side after he had read Richard Delamain's own pamphlets. Their spelling is kept as printed.
+
+**The dates nobody disputes.**
+- **1620.** Gunter's line of numbers, used with dividers (lesson 17).
+- **1630.** Richard Delamain, a teacher of mathematics in London who had once been helped in his studies by Oughtred, publishes *Grammelogia, or the Mathematicall Ring*. His instrument has "two Circles, the one moveable, and the other fixed." Cajori: these "are the earliest known printed instructions on the use of a slide rule."
+- **1632.** Oughtred's *The Circles of Proportion* appears, translated from his Latin by his pupil William Forster, whose preface attacks, without naming him, "another" who "went about to preocupate" the invention.
+- **1633.** Oughtred's straight (rectilinear) slide rule is described in print.
+- **After that,** pamphlets: Delamain's additions to the *Grammelogia*, and Oughtred's reply, "The just Apologie of Wil: Ovghtred, against the slaunderous insimulations of Richard Delamain." In Cajori's summary, "Each combatant accuses the other of stealing the invention of the circular slide rule and the horizontal quadrant."
+
+**Exercise: read the two accounts of one walk.** Both men describe meeting in a London street around Allhallowtide (early November) 1630.
+
+Delamain, in the enlarged *Grammelogia*:
+
+> "wee being walking together some few weekes before Christmas, upon Fishstreet hill ... He replyed unto me (in these very words) What will yov say to an Invention that I have, which in a lesse extent of the Compasses shall worke truer then that of Mr. Gunters Ruler, I asked him then of what forme it was, he answered with some pause ... that it was Archingwise, but now hee sayes that hee told mee then, it was Circular ... At which immediately I answered, I had the like my selfe ... Then after my coming home I sent him a sight of my Projection drawne in Pastboard."
+
+Oughtred, in his *Epistle*:
+
+> "Shortly after my gift to Elias Allen, I chanced to meet with Richard Delamain in the street (it was at Alhallontide) and as we walked together I told him what an Instrument I had given to Master Allen, both of the Logarithmes projected into circles, which being lesse then one foot diameter would performe as much as one of Master Gunters Rulers of sixe feet long ... Such an invention have I said he ... More then seven weekes after on December 23, he sent to mee the line of numbers onely set upon a circle."
+
+Work through three questions before reading on. Where do the accounts agree? (A walk; Oughtred spoke of an instrument better than Gunter's ruler; Delamain said he had one like it; Delamain later sent a drawing.) Where do they differ? (Whether Oughtred said "Archingwise" or circular; how long Delamain took to send his drawing and how much it showed.) And which statements are things a man saw himself, and which are guesses about the other man's motives?
+
+**Each man's own date.** Oughtred says he invented the instrument "above twelve yeares agoe," about 1621, made two such circles with his own hand, and tells how: Gunter's line "required many times too great a paire of Compasses, which would bee hard to open, apt to slip, and troublesome for use. I therefore first devised to have another Ruler with the former." Delamain writes that the idea came to him "in February last," and dates his preface the first of January, 1630. Forster says Oughtred showed him both the two sliding rulers and the ring in the long vacation of 1630.
+
+**Two temperaments.** Forster reports Oughtred saying "That the true way of Art is not by Instruments, but by Demonstration," and that teachers who begin with instruments make their scholars "only doers of tricks, and as it were Juglers." Cajori notes that Oughtred "repeatedly expressed his contempt for mathematical instruments," while "That Delamain loved instruments is quite evident." Delamain promised his ring would work "onely by an Ocular Inspection," "as well on Horse backe as on Foot," and later described "a small single Index" sliding in a channel "to shew the opposition of Numbers." From that, Cajori writes, "the invention of the 'runner' goes back to the very first writers on the slide rule."
+
+**How the historian changed his mind.** In his 1909 history Cajori had named Oughtred the inventor and described Delamain as having tried to take the credit. In 1920 he explains why that was weak: "All our information about Delamain was taken from De Morgan, who, however, gives no evidence of having read any of Delamain's writings on the slide rule." Having read them, he weighed each side. Delamain's charge that Oughtred stole the idea "cannot be seriously considered," given Oughtred's standing, Forster's testimony, and Oughtred's command of the straight rule as well as the circular one. But "it is quite possible that Oughtred's guesses as to Delamain's motives are wrong," and "some of Oughtred's statements are not first hand knowledge with him, but mere hearsay." "Seldom is an invention of any note made by only one man." His conclusion: "We incline to the opinion that the hypothesis of independent invention is the most plausible. At any rate, Delamain figures in the history of the slide rule as the publisher of the earliest book thereon and as an enthusiastic and skillful designer of slide rules."
+
+**How to say it accurately.** Not "Oughtred invented the slide rule," and not "Delamain did." Rather: Oughtred claimed a date about 1621 and had a witness; Delamain published first, in 1630; the historian who read both judged independent invention the most likely. *Who Gets the Credit* lesson "7 · The free patentees, and why 'first' cannot be settled" works through another case where "first" cannot be settled.
+
+**The oldest printed slide-rule problem.** It is lesson 7's proportion. Delamain, 1630: "If the Interest of 100. li. be 8. li. in the yeare, what is the Interest of 65. li. for the same time. Bring 100. in the moveable to 8. in the fixed, so right against 65. in the moveable is 5.2. in the fixed." (Li. is pounds: 100 is to 8 as 65 is to 5.2.)
+
+:::reveal Who published the earliest known printed instructions for using a slide rule, and when? ||| Richard Delamain, in his Grammelogia, or the Mathematicall Ring, in 1630.
+
+:::reveal What did Cajori conclude in 1920 about who invented the slide rule? ||| That independent invention is the most plausible; Oughtred's claim dates to about 1621, and Delamain published the earliest book.
+
+## Sources
+- ${CAJORI_1920} Locator: p. 187 (PDF p. 5), the 1909 view and Oughtred's rules in print in 1632 and 1633; p. 188 (PDF p. 6), De Morgan and the 1630 book; p. 190 (PDF p. 8), note 10, the title of Oughtred's Epistle; p. 192 (PDF p. 10), the relations of the two men and the books of 1630 to 1632; p. 194 (PDF p. 12), "Each combatant accuses the other" and the 1630 title page; p. 196 (PDF p. 14), Delamain's preface, "February last," "Horse backe," the two circles and the interest problem; p. 197 (PDF p. 15), "the earliest known printed instructions"; pp. 199 to 200 (PDF pp. 17 to 18), Forster's preface and Oughtred on instruments; p. 201 (PDF p. 19), the index and the runner; p. 203 (PDF p. 21), Delamain's charge, Oughtred's date and his account of the compasses; p. 204 (PDF p. 22), the two statements in double column; p. 205 (PDF p. 23), hearsay, independent invention and the verdict. ${TA}
+- ${OUGHTRED_1632} Locator: the record of the microfilm scan (the book itself, not the Epistle). ${TB}`,
+    },
     // NEXT_SECTIONS
   ],
 };
