@@ -533,5 +533,52 @@ The idea had a champion. White records that Jared Mansfield, the surveyor genera
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2: Metes and bounds, and the deed
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "metes-and-bounds-and-the-1775-deed",
+      title: "7 · Metes and bounds, and a 1775 deed bounded in leagues along the Wabash",
+      section: "2 · Metes and bounds, and the deed",
+      recallContent: [
+        {
+          prompt: "Which common-law rule does the Manual say governs when a monument and a measurement disagree?",
+          answer: "Calls for monuments control over calls for measurements (sec. 7-5).",
+        },
+        {
+          prompt: "What did the Act of February 11, 1805 do with corners marked in the original survey?",
+          answer: "Fixed them in position \"regardless of any errors\" (43 U.S.C. 752; Manual sec. 1-20(n)).",
+        },
+      ],
+      body: `${QR(`${SURVEYOR}, to check the description of metes and bounds; and ${NATIVE_REVIEWER}, to read how the lesson presents the 1775 Piankeshaw deed, its signers, and the purchase the United States refused to recognize`)}
+
+**Metes and bounds.** Before the grid, and alongside it ever since, land was described by walking its edge: a starting point, then a course (a direction) and a distance to the next point, and so on around until the description returns to the start. "Metes" are the measurements; "bounds" are the things the line runs along or to, such as a stream, a road, a neighbor's land or a marked tree. The Manual calls this the colonial practice "where lands were described by irregular metes-and-bounds" (sec. 1-18).
+
+**It never went away.** Even inside the public-land states, the Manual says, "nonrectangular surveys, sometimes referred to as metes-and-bounds surveys, are required to define the boundaries of irregular areas of land that are not conformable to legal subdivisions": mineral claims, private land grants, townsites, Indian reservations, national parks and more (sec. 10-33). And a city lot or a piece cut out of a quarter section is very often described by metes and bounds in its deed. Lesson 8 reads one.
+
+**A deed from 1775.** George R. Wilson's 1916 article "The First Public Land Surveys in Indiana; Freeman's Lines," in the *Indiana Magazine of History*, reprints a deed in full. In 1775 Louis Viviat, a merchant of the Illinois country, acting for an association "denominated the 'Wabash Land Company,'" negotiated with the Piankeshaw for two large tracts along the Wabash, "and at Post Vincennes, October 18, 1775, he obtained a deed from eleven Piankeshaw chiefs" (pp. 1 to 2). The deed names them: Tabac, or Tobacco; Montour; La Grand Couette; Ouaouaijao; Tabac, junior; La Mouche Noire, or the Black Fly; Le Maringouin, or Musquito; Le Petit Castor, or the Little Beaver; Kiesquibichias; Grelot, senior; and Grelot, junior.
+
+**Read its bounds as a surveyor would.** The first tract, in the deed's own words (p. 4): "beginning at the mouth of a rivulet called Riviere du Chat, or Cat River, where it empties itself into the Ouabache river aforesaid, being about fifty-two leagues distant from the above Post St. Vincent aforesaid; thence down the Ouabache, by the several courses thereof, to a place called Point Coupee, ... being forty leagues, or thereabouts, in length on the said river Ouabache, from the place of beginning, with forty leagues in width or breadth on the east side, and thirty leagues in breadth or width on the west side." Take it apart:
+- **Point of beginning:** a natural monument, a river mouth.
+- **Course:** "down the Ouabache, by the several courses thereof," so the river itself is the line.
+- **Distance:** "forty leagues, or thereabouts."
+- **Widths:** forty leagues east, thirty west, with no stated direction.
+A second tract ran from the mouth of the White River down the Wabash to the Ohio. Between them, "the intermediate space of twenty-four leagues, or thereabouts, between Point Coupee and the mouth of the White river," was "reserved for the use of the inhabitants of Post St. Vincent." That **exception** matters in lesson 10: it became the Vincennes Tract.
+
+**What a league was.** Wilson tried to pin the unit down and could not: "A marine league, in England and America is 18,240 feet, or almost 3½ miles"; "the common league of France was 2.422 miles"; "a land league is sometimes said to be three statute miles. ... so it appears very indefinite" (pp. 7 to 8). When Freeman finally ran the line, "twenty-four leagues along the meanderings of the Wabash proved to be 40 miles when run south 12 degrees west from the Orleans corner" (p. 8). A description whose unit is uncertain is uncertain everywhere.
+
+**The price, and what became of it.** The consideration was "five shillings" and goods "for the use of the several tribes": among them "four hundred blankets, twenty-two pieces of stroud, two hundred and fifty shirts," "ten thousand gunflints, six hundred pounds of gunpowder, two thousand pounds of lead," flour, salt, horses and silverware (p. 3). Wilson reckons the deed "conveyed to the purchasers about 37,497,600 acres" (p. 6). The company asked Congress to confirm part of its claim "in the years 1781, 1791, 1797, 1804 and 1810; but all of these applications were rejected" (p. 7). "The American government did not recognize the title, as held by the French and the Wabash Land Company, as sufficient, and proceeded to recognize the claims of the Indians," buying the land from them directly (p. 8). This is the private purchase that lesson 3's Ordinance was written to shut out.
+
+**What this source cannot tell you.** The deed is the purchasers' document, written in their language and their law, and reprinted by a surveyor-historian a century and a half later. It records eleven names and a list of goods. It does not record how the Piankeshaw council understood what it was agreeing to. Read it as evidence of what the buyers wrote down, which is a narrower thing.
+
+:::reveal In the 1775 deed's first tract, what is the point of beginning, and what kind of monument is it? ||| The mouth of the Riviere du Chat, or Cat River, where it enters the Wabash: a natural monument.
+
+:::reveal Why does Wilson call the league "very indefinite"? ||| It had several values: an English or American marine league of 18,240 feet, a French common league of 2.422 miles, and a land league sometimes said to be three miles.
+
+## Sources
+- ${WILSON} Locator: pp. 1 to 4, the deed of October 18, 1775 (the bounds on p. 4); pp. 6 to 8, the acreage, the rejected applications, and the league. ${TIER_A_1916}
+- ${MANUAL} Locator: sec. 1-18, p. 7 (PDF p. 18); sec. 10-33, p. 336 (PDF p. 347). ${TIER_A}`,
+    },
   ],
 };
