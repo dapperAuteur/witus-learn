@@ -132,17 +132,29 @@ function bootServiceWorker(fetchImpl: typeof fetch) {
     headers: Headers;
   }): Promise<Response | null> {
     let responded: Promise<Response> | null = null;
+    const waits: Promise<unknown>[] = [];
     listeners.get("fetch")?.({
       request,
       respondWith: (p: Promise<Response>) => {
         responded = p;
       },
+      waitUntil: (p: Promise<unknown>) => waits.push(p),
     });
     if (!responded) return null; // SW declined to handle it → straight to the network
-    return await responded;
+    const res = await responded;
+    // The worker remembers visited pages inside waitUntil, after it has answered. Let that land
+    // before the test looks at the caches, as a real worker kept alive by waitUntil would.
+    await Promise.all(waits);
+    return res;
   }
 
-  return { install, dispatchFetch, cacheStorage };
+  async function activate() {
+    const waits: Promise<unknown>[] = [];
+    listeners.get("activate")?.({ waitUntil: (p: Promise<unknown>) => waits.push(p) });
+    await Promise.all(waits);
+  }
+
+  return { install, activate, dispatchFetch, cacheStorage };
 }
 
 /** What the browser issues when a learner clicks a real <a href="/downloads">. */
@@ -189,7 +201,7 @@ describe("the Downloads nav link with no network", () => {
   });
 
   it("precaches /downloads at install, so it exists before the learner ever needs it", async () => {
-    const cache = await sw.cacheStorage.open("witus-static-v5");
+    const cache = await sw.cacheStorage.open("witus-static-v6");
     expect(await cache.keys()).toContain(`${ORIGIN}/downloads`);
   });
 
@@ -259,7 +271,7 @@ describe("offline navigations serve the right document", () => {
     const online = bootServiceWorker(ONLINE());
     await online.install();
     // The install-time copy (static cache, created first) is old; the client saved a fresh one.
-    (await online.cacheStorage.open("witus-static-v5")).store.set(`${ORIGIN}/offline`, html("<h1>STALE offline</h1>"));
+    (await online.cacheStorage.open("witus-static-v6")).store.set(`${ORIGIN}/offline`, html("<h1>STALE offline</h1>"));
     await (await online.cacheStorage.open("witus-pages-v1")).put("/offline", html("<h1>FRESH offline</h1>"));
 
     const dead = await goOffline(online);
@@ -382,5 +394,148 @@ describe("a server error on a saved page", () => {
     const sw = await goOffline(online, ONLINE());
     const text = await (await sw.dispatchFetch(hardNavigation("/bam/knots/lesson/bowline")))!.text();
     expect(text).not.toContain("OLD copy");
+  });
+});
+
+describe("visited public pages are remembered and served offline (worker v6)", () => {
+  const VISITED = "witus-visited-v1";
+
+  /** A network that answers each path with its own page, so a test can tell which copy it got. */
+  const PER_PATH = () =>
+    vi.fn(async (input: RequestInfo | URL) => {
+      const url = new URL(typeof input === "string" ? input : (input as { url: string }).url);
+      return html(`<h1>LIVE ${url.pathname}${url.search}</h1>`);
+    }) as unknown as typeof fetch;
+
+  async function visit(paths: string[]) {
+    const online = bootServiceWorker(PER_PATH());
+    for (const p of paths) await online.dispatchFetch(hardNavigation(p));
+    return online;
+  }
+
+  it("serves a page opened online from its visited copy once the network is gone", async () => {
+    const dead = await goOffline(await visit(["/bam/knots"]));
+    const res = await dead.dispatchFetch(hardNavigation("/bam/knots"));
+    expect(res!.headers.get("content-type")).toContain("text/html");
+    expect(await res!.text()).toContain("LIVE /bam/knots");
+  });
+
+  it("keys a visited copy by the exact URL, query string included", async () => {
+    const dead = await goOffline(await visit(["/courses?category=art"]));
+    expect(await (await dead.dispatchFetch(hardNavigation("/courses?category=art")))!.text()).toContain(
+      "LIVE /courses?category=art",
+    );
+    // A different query is a different page the visitor never opened.
+    const other = await (await dead.dispatchFetch(hardNavigation("/courses?category=math")))!.text();
+    expect(other).not.toContain("LIVE");
+    expect(other).toContain("You're offline");
+  });
+
+  it("prefers the learner's saved copy over the visited one", async () => {
+    const online = await visit(["/bam/knots"]);
+    await (await online.cacheStorage.open("witus-pages-v1")).put("/bam/knots", html("<h1>SAVED knots</h1>"));
+    const text = await (await (await goOffline(online)).dispatchFetch(hardNavigation("/bam/knots")))!.text();
+    expect(text).toContain("SAVED knots");
+    expect(text).not.toContain("LIVE");
+  });
+
+  it("caps the visited cache and evicts the page opened longest ago", async () => {
+    const paths = Array.from({ length: 152 }, (_, i) => `/page-${i}`);
+    const online = await visit(paths);
+    const keys = await (await online.cacheStorage.open(VISITED)).keys();
+    expect(keys).toHaveLength(150);
+    expect(keys).not.toContain(`${ORIGIN}/page-0`);
+    expect(keys).not.toContain(`${ORIGIN}/page-1`);
+    expect(keys).toContain(`${ORIGIN}/page-151`);
+  });
+
+  it("counts a revisit as recent, so a page the visitor keeps opening is not evicted", async () => {
+    const online = await visit(["/home-base", ...Array.from({ length: 148 }, (_, i) => `/p-${i}`)]);
+    await online.dispatchFetch(hardNavigation("/home-base")); // opened again: now the newest
+    await online.dispatchFetch(hardNavigation("/one-more"));
+    await online.dispatchFetch(hardNavigation("/and-another"));
+    const keys = await (await online.cacheStorage.open(VISITED)).keys();
+    expect(keys).toContain(`${ORIGIN}/home-base`);
+    expect(keys).not.toContain(`${ORIGIN}/p-0`);
+  });
+
+  it("skips a page over 1.5 MB", async () => {
+    const big = vi.fn(async () => html(`<p>${"x".repeat(1.6 * 1024 * 1024)}</p>`)) as unknown as typeof fetch;
+    const online = bootServiceWorker(big);
+    await online.dispatchFetch(hardNavigation("/huge"));
+    expect(await (await online.cacheStorage.open(VISITED)).keys()).toHaveLength(0);
+  });
+
+  it("does not remember an error page, a non-HTML answer or a redirect", async () => {
+    const answers: Record<string, () => Response> = {
+      "/missing": () => new Response("<h1>Not found</h1>", { status: 404, headers: { "content-type": "text/html" } }),
+      "/feed": () => new Response("{}", { status: 200, headers: { "content-type": "application/json" } }),
+      "/moved": () => {
+        const res = html("<h1>Sign in</h1>");
+        Object.defineProperty(res, "redirected", { value: true });
+        return res;
+      },
+    };
+    const net = vi.fn(async (input: RequestInfo | URL) =>
+      answers[new URL(typeof input === "string" ? input : (input as { url: string }).url).pathname](),
+    ) as unknown as typeof fetch;
+    const online = bootServiceWorker(net);
+    for (const p of Object.keys(answers)) await online.dispatchFetch(hardNavigation(p));
+    expect(await (await online.cacheStorage.open(VISITED)).keys()).toHaveLength(0);
+  });
+
+  it("falls back to /downloads for '/' when the home page was never visited", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    await (await online.cacheStorage.open(VISITED)).delete("/");
+    const text = await (await (await goOffline(online)).dispatchFetch(hardNavigation("/")))!.text();
+    expect(text).toContain("/downloads");
+  });
+
+  it("serves a remembered RSC payload to the identical <Link> fetch, and never to a navigation", async () => {
+    const rsc = vi.fn(async () =>
+      new Response('0:["$","main"]', { status: 200, headers: { "content-type": "text/x-component" } }),
+    ) as unknown as typeof fetch;
+    const online = bootServiceWorker(rsc);
+    const linkFetch = { ...rscNavigation("/bam/knots?_rsc=abc12"), headers: new Headers({ RSC: "1" }) };
+    await online.dispatchFetch(linkFetch);
+    const keys = await (await online.cacheStorage.open(VISITED)).keys();
+    expect(keys).toEqual([`${ORIGIN}/bam/knots?_rsc=abc12`]);
+
+    const dead = await goOffline(online);
+    expect(await (await dead.dispatchFetch(linkFetch))!.text()).toContain('"main"');
+    // The same path as a document is NOT answered with the payload: it was never an HTML page.
+    const nav = await dead.dispatchFetch(hardNavigation("/bam/knots"));
+    expect(nav!.headers.get("content-type")).toContain("text/html");
+    expect(await nav!.text()).not.toContain('"main"');
+    // Nor is a navigation that happens to carry the payload's own URL.
+    const navWithKey = await dead.dispatchFetch(hardNavigation("/bam/knots?_rsc=abc12"));
+    expect(await navWithKey!.text()).not.toContain('"main"');
+  });
+
+  it("does not remember prefetches, which are partial segments", async () => {
+    const rsc = vi.fn(async () =>
+      new Response("0:[]", { status: 200, headers: { "content-type": "text/x-component" } }),
+    ) as unknown as typeof fetch;
+    const online = bootServiceWorker(rsc);
+    await online.dispatchFetch({
+      ...rscNavigation("/bam/knots?_rsc=pf1"),
+      headers: new Headers({ RSC: "1", "Next-Router-Prefetch": "1" }),
+    });
+    expect(await (await online.cacheStorage.open(VISITED)).keys()).toHaveLength(0);
+  });
+
+  it("keeps the visited cache across a worker update", async () => {
+    const online = await visit(["/bam/knots"]);
+    await online.cacheStorage.open("witus-static-v5"); // a previous worker's cache
+    const listeners = online.cacheStorage;
+    const sw = bootServiceWorker(PER_PATH());
+    for (const [name, cache] of listeners.caches) {
+      const target = await sw.cacheStorage.open(name);
+      for (const [k, v] of cache.store) target.store.set(k, v);
+    }
+    await sw.activate();
+    expect(await sw.cacheStorage.keys()).toContain(VISITED);
+    expect(await sw.cacheStorage.keys()).not.toContain("witus-static-v5");
   });
 });

@@ -1,12 +1,15 @@
 // Conservative offline service worker. Goals: (1) never serve stale HTML while online —
 // navigations are network-first; (2) fall back to a learner's own saved lesson pages when the
-// network is unreachable, and only to the generic offline page when nothing was saved;
-// (3) cache only immutable hashed assets. API + cross-origin are never touched. Service workers
+// network is unreachable, then to the last copy of a public page they opened, and only to the
+// generic offline page when neither exists; (3) otherwise cache only immutable hashed assets.
+// API + cross-origin are never touched. Service workers
 // are per-origin, so each tenant domain gets its own cache — no cross-tenant leakage. Bump
 // VERSION to roll out a new SW + purge old caches.
 // v5: every browser drops the months-old /offline copy precached by v4, whose JS chunks may no
 // longer exist. Saved pages, media and assets survive (activate keeps their caches).
-const VERSION = "v5";
+// v6: public pages the visitor opens are remembered in VISITED_CACHE, so the app keeps working
+// offline from the last good copy of every page they have seen, not only the ones they saved.
+const VERSION = "v6";
 const STATIC_CACHE = `witus-static-${VERSION}`;
 // Media + lesson pages the learner explicitly saved for offline. Independent of VERSION so a SW
 // update never wipes a learner's downloads — both are preserved across activations. Keep these
@@ -20,6 +23,16 @@ const PAGES_CACHE = "witus-pages-v1";
 // exactly like PAGES/MEDIA — a deploy must never strip a learner's downloads of the code that
 // renders them.
 const ASSETS_CACHE = "witus-assets-v1";
+// The last good copy of each public page the visitor opened (HTML and RSC payloads), written by
+// this worker, never by the page. Version-independent like PAGES/MEDIA/ASSETS: a deploy must not
+// throw away the copies that make the app usable offline. Bounded (see VISITED_MAX_*), and cleared
+// when the signed-in user changes (src/components/offline-privacy-guard.tsx). Keep the name in
+// sync with src/lib/offline.ts.
+const VISITED_CACHE = "witus-visited-v1";
+// About 150 pages, oldest dropped first, and nothing over 1.5 MB, so the cache stays a small,
+// predictable share of the device's storage. HTML and RSC entries count alike.
+const VISITED_MAX_ENTRIES = 150;
+const VISITED_MAX_BYTES = 1.5 * 1024 * 1024;
 const OFFLINE_URL = "/offline";
 // The Downloads manager — the ONLY screen where a learner can see and delete what they've saved.
 // It has to work with no network, so it's precached here alongside the offline fallback. Both are
@@ -42,6 +55,47 @@ const neverFromCache = (pathname) =>
   !CACHE_OK_EXCEPTIONS.some((p) => under(pathname, p)) && NEVER_FROM_CACHE.some((p) => under(pathname, p));
 
 const isHtml = (res) => Boolean(res) && (res.headers.get("content-type") || "").includes("text/html");
+const isRscPayload = (res) => Boolean(res) && (res.headers.get("content-type") || "").includes("text/x-component");
+
+// Whether this page may be remembered in VISITED_CACHE at all, and so served from it.
+const rememberable = (url) => !neverFromCache(url.pathname);
+
+// Whether this RESPONSE may be remembered: a plain 200 for the URL that was asked for. A redirect
+// is refused because its body belongs to a different page (often /login) than the key it would be
+// stored under.
+const storableResponse = (res) => res.status === 200 && !res.redirected && (res.type === "basic" || res.type === "default");
+
+/**
+ * Remember a public page's response as its last good copy. Best-effort and off the critical path:
+ * the visitor already has `res`; this works on a clone. The body is read to measure it (streamed
+ * HTML usually has no Content-Length), and anything over VISITED_MAX_BYTES is skipped.
+ *
+ * Re-putting a key deletes it first, so the Cache API's insertion order is "least recently visited
+ * first" and the eviction below drops the page opened longest ago.
+ */
+async function remember(key, res) {
+  try {
+    const body = await res.arrayBuffer();
+    if (body.byteLength > VISITED_MAX_BYTES) return;
+    const cache = await caches.open(VISITED_CACHE);
+    await cache.delete(key);
+    await cache.put(key, new Response(body, { status: res.status, statusText: res.statusText, headers: res.headers }));
+    const keys = await cache.keys();
+    const excess = keys.length - VISITED_MAX_ENTRIES;
+    for (let i = 0; i < excess; i++) await cache.delete(keys[i]);
+  } catch {
+    /* quota or a torn stream: the copy is a convenience, never worth an error */
+  }
+}
+
+// The visited copy of this exact URL (path AND query: `/courses?category=art` is its own page).
+// HTML only, so an RSC payload can never come back as a document.
+async function visitedDocument(url) {
+  if (!rememberable(url)) return undefined;
+  const cache = await caches.open(VISITED_CACHE);
+  const hit = await cache.match(url.origin + url.pathname + url.search, { ignoreVary: true });
+  return isHtml(hit) ? hit : undefined;
+}
 
 // The saved document for this path, HTML only. Matched on the exact path (query string dropped),
 // never with ignoreSearch: that would also match the `?__rsc` entry savePage() writes beside the
@@ -69,11 +123,14 @@ async function offlinePage(url) {
   );
 }
 
-// What a navigation gets when the network can't answer it.
+// What a navigation gets when the network can't answer it: the learner's saved copy, then the
+// last copy this worker remembered on a visit, then the install-time shell.
 async function offlineNavigation(url) {
   if (!neverFromCache(url.pathname)) {
     const saved = await savedDocument(PAGES_CACHE, url);
     if (saved) return saved;
+    const visited = await visitedDocument(url);
+    if (visited) return visited;
     const shell = await savedDocument(STATIC_CACHE, url);
     if (shell) return shell;
   }
@@ -105,7 +162,12 @@ self.addEventListener("activate", (event) => {
         Promise.all(
           keys
             .filter(
-              (k) => k !== STATIC_CACHE && k !== MEDIA_CACHE && k !== PAGES_CACHE && k !== ASSETS_CACHE,
+              (k) =>
+                k !== STATIC_CACHE &&
+                k !== MEDIA_CACHE &&
+                k !== PAGES_CACHE &&
+                k !== ASSETS_CACHE &&
+                k !== VISITED_CACHE,
             )
             .map((k) => caches.delete(k)),
         ),
@@ -149,26 +211,49 @@ self.addEventListener("fetch", (event) => {
   // Client-side RSC (React Server Component) fetches — what Next's router issues for a
   // <Link>/router.push navigation instead of a full document request. Network-first (always
   // fresh online); offline, serve the payload savePage() cached under this pathname's synthetic
-  // key (see src/lib/offline.ts). If it's missing (never saved, or a stale/incompatible payload
-  // from a previous deploy), let this fail — Next's router then falls back to a hard navigation,
-  // which the navigate handler below serves from the page cache instead. NOTE: a cached RSC
-  // payload can go stale across deploys (its shape is tied to the build); it's strictly an
-  // offline-only fallback and is never served while the network is reachable.
-  const isRscRequest = request.headers.get("RSC") === "1" || url.searchParams.has("_rsc");
+  // key (see src/lib/offline.ts), then the payload remembered on a visit. If neither exists, let
+  // this fail — Next's router then falls back to a hard navigation, which the navigate handler
+  // below serves from the page caches instead. NOTE: a cached RSC payload can go stale across
+  // deploys (its shape is tied to the build); it's strictly an offline-only fallback and is never
+  // served while the network is reachable.
+  //
+  // Visited payloads are stored under the REAL request: its URL keeps the `_rsc` value and the
+  // response's `Vary` (rsc, next-router-state-tree, next-router-prefetch, …) stays in force on
+  // match. Next derives `_rsc` from those same router headers, so a payload is only ever replayed
+  // for the identical navigation it answered, never patched onto a different router state.
+  // Prefetches are not remembered: they are partial segments, and there are many per page.
+  // A document navigation is never an RSC fetch, even when its URL carries `_rsc` (a pasted or
+  // bookmarked payload URL): routing it here could hand the browser a payload as the page.
+  const isRscRequest =
+    request.mode !== "navigate" && (request.headers.get("RSC") === "1" || url.searchParams.has("_rsc"));
   if (isRscRequest) {
     if (neverFromCache(url.pathname)) return;
+    const isPrefetch =
+      request.headers.has("Next-Router-Prefetch") || request.headers.has("Next-Router-Segment-Prefetch");
     event.respondWith(
-      fetch(request).catch(() => caches.open(PAGES_CACHE).then((c) => c.match(new Request(rscKey(url.pathname))))),
+      fetch(request).then(
+        (res) => {
+          if (!isPrefetch && rememberable(url) && storableResponse(res) && isRscPayload(res)) {
+            event.waitUntil(remember(request, res.clone()));
+          }
+          return res;
+        },
+        async () =>
+          (await caches.open(PAGES_CACHE).then((c) => c.match(new Request(rscKey(url.pathname))))) ||
+          (isPrefetch ? undefined : await caches.open(VISITED_CACHE).then((c) => c.match(request))),
+      ),
     );
     return;
   }
 
-  // Page navigations → network-first (always fresh online). Offline, fall back in order:
+  // Page navigations → network-first (always fresh online). A healthy public page is remembered
+  // in VISITED_CACHE on the way through. Offline, fall back in order:
   //   1. the learner's own saved copy of this exact page (query string ignored; HTML only);
-  //   2. a precached app-shell page — today that's /downloads, so a learner with no signal can
+  //   2. the copy remembered the last time this exact URL was opened (HTML only);
+  //   3. a precached app-shell page — today that's /downloads, so a learner with no signal can
   //      still reach the one screen that lists and deletes their downloads;
-  //   3. the generic /offline page, freshest copy first.
-  // Sign-in, dashboard and admin pages skip 1 and 2 (see NEVER_FROM_CACHE).
+  //   4. for "/" only, /downloads; then the generic /offline page, freshest copy first.
+  // Sign-in, dashboard and admin pages skip 1 to 3 (see NEVER_FROM_CACHE).
   //
   // A 5xx is not a network failure (fetch resolves), but to a learner it is the same thing: the
   // server or its database is down. If this exact page is saved, the saved copy beats an error
@@ -177,6 +262,9 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request).then(
         async (res) => {
+          if (rememberable(url) && storableResponse(res) && isHtml(res)) {
+            event.waitUntil(remember(url.origin + url.pathname + url.search, res.clone()));
+          }
           if (res.status < 500 || neverFromCache(url.pathname)) return res;
           return (await savedDocument(PAGES_CACHE, url)) || res;
         },
