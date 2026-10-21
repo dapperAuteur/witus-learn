@@ -5,6 +5,8 @@ import { CourseCard } from "@/components/course-card";
 import { getScopedDb } from "@/db/scoped";
 import { ogImageUrl } from "@/lib/og";
 import { coursePriceView, formatPrice, promotionStatus } from "@/lib/sale-pricing";
+import { getUsernames } from "@/db/queries/authoring";
+import { coursePagePath } from "@/lib/course-href";
 
 // One public campaign page, e.g. /sale/back-to-school.
 //
@@ -68,6 +70,7 @@ export default async function SalePage({ params }: { params: Promise<{ slug: str
         ? allCourses.filter((c) => memberIds.has(c.id))
         : allCourses.filter((c) => c.id === sale.courseId);
 
+  const usernames = await getUsernames(courses.map((c) => c.instructorId));
   const ends = sale.endsAt ? new Date(sale.endsAt) : null;
 
   return (
@@ -118,7 +121,11 @@ export default async function SalePage({ params }: { params: Promise<{ slug: str
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((c) => (
             <li key={c.id}>
-              <CourseCard course={c} price={coursePriceView(c, sdb.tenantId, activePromotions)} />
+              <CourseCard
+                course={c}
+                href={coursePagePath(c, usernames.get(c.instructorId))}
+                price={coursePriceView(c, sdb.tenantId, activePromotions)}
+              />
             </li>
           ))}
         </ul>

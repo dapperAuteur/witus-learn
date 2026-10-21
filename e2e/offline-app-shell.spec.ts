@@ -81,3 +81,35 @@ test("pages opened online open offline, with the offline banner, and links betwe
   await goOnline(context);
   await expect(page.getByRole("status").filter({ hasText: BANNER })).toHaveCount(0);
 });
+
+test("a page reached by tapping a link, never loaded in full, opens offline", async ({ page, context }) => {
+  await page.goto("/courses");
+  await page.waitForFunction(() => navigator.serviceWorker?.controller != null, null, { timeout: 30_000 });
+
+  // A course card: a client-side (next/link) navigation, so the browser never loads it as a document.
+  const card = page.locator('main a[href^="/"]:visible').filter({ hasNot: page.locator("a") }).filter({
+    has: page.locator("h3, h2"),
+  });
+  test.skip((await card.count()) === 0, "The catalog lists no courses.");
+  const href = await card.first().getAttribute("href");
+  await card.first().click();
+  await expect(page).toHaveURL(new RegExp(`${href!.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`));
+  const path = new URL(page.url()).pathname;
+  expect(path, "cards link the canonical course page, not the /course/{id} redirect").not.toMatch(/^\/course\//);
+
+  // The worker fetches and remembers the page as a document in the background after the tap.
+  await expect
+    .poll(
+      () =>
+        page.evaluate(
+          async (p) => Boolean(await (await caches.open("witus-visited-v1")).match(location.origin + p)),
+          path,
+        ),
+      { timeout: 15_000 },
+    )
+    .toBe(true);
+
+  await goOffline(context);
+  await expectServedFromCache(page, path);
+  await goOnline(context);
+});

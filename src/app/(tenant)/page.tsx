@@ -10,6 +10,8 @@ import { ShareButton } from "@/components/share-button";
 import { LearnerDashboardView } from "@/components/learner-dashboard";
 import { ComingSoon } from "@/components/coming-soon";
 import { tenantHasMapData } from "@/db/queries/map";
+import { getUsernames } from "@/db/queries/authoring";
+import { coursePagePath } from "@/lib/course-href";
 
 type SearchParams = Promise<{ q?: string; category?: string; sort?: string; view?: string }>;
 
@@ -55,6 +57,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
     sdb.listActivePromotions(),
   ]);
   const featured = courses.filter((c) => c.isFeatured);
+  const usernames = await getUsernames(featured.map((c) => c.instructorId));
   const countByCategory = new Map<string, number>();
   // Counted under every category the course appears in, so each count matches what its catalog
   // page actually lists (a course in two categories is found on both pages).
@@ -232,7 +235,12 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
           <h2 className="mb-3 text-lg font-semibold">Featured</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {featured.map((c) => (
-              <CourseCard key={c.id} course={c} price={coursePriceView(c, tenant.id, promotions)} />
+              <CourseCard
+                key={c.id}
+                course={c}
+                href={coursePagePath(c, usernames.get(c.instructorId))}
+                price={coursePriceView(c, tenant.id, promotions)}
+              />
             ))}
           </div>
         </section>

@@ -521,6 +521,79 @@ describe("visited public pages are remembered and served offline (worker v6)", (
     expect(await navWithKey!.text()).not.toContain('"main"');
   });
 
+  /** A server that answers the router's RSC fetch with a payload and a document fetch with HTML. */
+  const RSC_AND_HTML = (date = () => new Date().toUTCString()) =>
+    vi.fn(async (input: RequestInfo | URL) => {
+      const isRsc = typeof input !== "string" && (input as { headers?: Headers }).headers?.get?.("RSC") === "1";
+      if (isRsc) return new Response('0:["$","main"]', { status: 200, headers: { "content-type": "text/x-component" } });
+      const url = new URL(typeof input === "string" ? input : (input as { url: string }).url, ORIGIN);
+      if (url.pathname.startsWith("/_next/static/")) {
+        return new Response("/* js */", { status: 200, headers: { "content-type": "application/javascript" } });
+      }
+      return new Response(`<h1>PAGE ${url.pathname}${url.search}</h1><script src="/_next/static/chunks/app/(tenant)/page-tap1.js"></script>`, {
+        status: 200,
+        headers: { "content-type": "text/html", date: date() },
+      });
+    });
+
+  it("remembers the page as a document after a tap, so it opens offline as a full load", async () => {
+    const net = RSC_AND_HTML();
+    const online = bootServiceWorker(net as unknown as typeof fetch);
+    await online.dispatchFetch(rscNavigation("/bam/knots?_rsc=abc12"));
+    const keys = await (await online.cacheStorage.open(VISITED)).keys();
+    expect(keys).toContain(`${ORIGIN}/bam/knots`);
+    // The document fetch drops the router's `_rsc` key: it is the page's real address.
+    expect(net.mock.calls.map(([i]) => (typeof i === "string" ? i : null))).toContain(`${ORIGIN}/bam/knots`);
+
+    const dead = await goOffline(online);
+    const nav = await dead.dispatchFetch(hardNavigation("/bam/knots"));
+    expect(await nav!.text()).toContain("PAGE /bam/knots</h1>");
+    // Its JS came along, so the page renders rather than failing on a chunk.
+    const chunk = await dead.dispatchFetch({
+      method: "GET",
+      url: `${ORIGIN}/_next/static/chunks/app/(tenant)/page-tap1.js`,
+      mode: "no-cors",
+      destination: "script",
+      headers: new Headers(),
+    });
+    expect(chunk!.status).toBe(200);
+  });
+
+  it("keeps a tapped page's own query string, which makes it a different page", async () => {
+    const online = bootServiceWorker(RSC_AND_HTML() as unknown as typeof fetch);
+    await online.dispatchFetch(rscNavigation("/courses?category=art&_rsc=q1"));
+    expect(await (await online.cacheStorage.open(VISITED)).keys()).toContain(`${ORIGIN}/courses?category=art`);
+  });
+
+  it("does not fetch the document again for a tap back to a page remembered minutes ago", async () => {
+    const net = RSC_AND_HTML();
+    const online = bootServiceWorker(net as unknown as typeof fetch);
+    await online.dispatchFetch(rscNavigation("/bam/knots?_rsc=a"));
+    await online.dispatchFetch(rscNavigation("/bam/knots?_rsc=b"));
+    const documentFetches = net.mock.calls.filter(([i]) => i === `${ORIGIN}/bam/knots`);
+    expect(documentFetches).toHaveLength(1);
+  });
+
+  it("refreshes a tapped page whose remembered copy is old", async () => {
+    const net = RSC_AND_HTML(() => new Date(Date.now() - 60 * 60 * 1000).toUTCString());
+    const online = bootServiceWorker(net as unknown as typeof fetch);
+    await online.dispatchFetch(rscNavigation("/bam/knots?_rsc=a"));
+    await online.dispatchFetch(rscNavigation("/bam/knots?_rsc=b"));
+    expect(net.mock.calls.filter(([i]) => i === `${ORIGIN}/bam/knots`)).toHaveLength(2);
+  });
+
+  it("never fetches or remembers a private page's document after a tap, nor after a prefetch", async () => {
+    const net = RSC_AND_HTML();
+    const online = bootServiceWorker(net as unknown as typeof fetch);
+    await online.dispatchFetch(rscNavigation("/family?_rsc=x"));
+    await online.dispatchFetch({
+      ...rscNavigation("/bam/knots?_rsc=pf1"),
+      headers: new Headers({ RSC: "1", "Next-Router-Prefetch": "1" }),
+    });
+    expect(net.mock.calls.filter(([i]) => typeof i === "string")).toHaveLength(0);
+    expect(await (await online.cacheStorage.open(VISITED)).keys()).toEqual([]);
+  });
+
   it("does not remember prefetches, which are partial segments", async () => {
     const rsc = vi.fn(async () =>
       new Response("0:[]", { status: 200, headers: { "content-type": "text/x-component" } }),

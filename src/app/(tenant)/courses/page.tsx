@@ -11,6 +11,8 @@ import { matchEntities } from "@/lib/entities";
 import { isVettingLocked } from "@/lib/vetting";
 import { coursePriceView } from "@/lib/sale-pricing";
 import { CourseCard } from "@/components/course-card";
+import { getUsernames } from "@/db/queries/authoring";
+import { coursePagePath } from "@/lib/course-href";
 
 const TITLE = "Courses";
 const DESCRIPTION =
@@ -76,6 +78,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
   const courses = rawCourses.filter(
     (c) => c.visibility !== "private" || owner || (session && c.instructorId === session.user.id),
   );
+  const usernames = await getUsernames(courses.map((c) => c.instructorId));
 
   // Cross-promotion idea #3: when browsing an active category that's mapped to a WitUS
   // ecosystem product, show a single labeled chip (WitUS-branded hosts / opt-in tenants only).
@@ -195,7 +198,11 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
                     {badge}
                   </span>
                 ) : null}
-                <CourseCard course={c} price={coursePriceView(c, sdb.tenantId, promotions)} />
+                <CourseCard
+                  course={c}
+                  href={coursePagePath(c, usernames.get(c.instructorId))}
+                  price={coursePriceView(c, sdb.tenantId, promotions)}
+                />
               </div>
             );
           })}

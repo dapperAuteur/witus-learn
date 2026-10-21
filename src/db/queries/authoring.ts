@@ -354,6 +354,18 @@ export async function getUsername(userId: string): Promise<string | null> {
   return rows[0]?.username ?? null;
 }
 
+/** Public usernames for several users at once, keyed by user id (one query for a card grid).
+ *  A user with no username is simply absent from the map. */
+export async function getUsernames(userIds: readonly string[]): Promise<Map<string, string>> {
+  const ids = [...new Set(userIds)];
+  if (ids.length === 0) return new Map();
+  const rows = await db
+    .select({ userId: userProfiles.userId, username: userProfiles.username })
+    .from(userProfiles)
+    .where(inArray(userProfiles.userId, ids));
+  return new Map(rows.flatMap((r) => (r.username ? [[r.userId, r.username] as const] : [])));
+}
+
 /** Ensure a user has a username (pretty URLs need one). Derives a unique slug
  *  from their email on first course creation. Idempotent. */
 export async function ensureUsername(userId: string, email: string): Promise<string> {

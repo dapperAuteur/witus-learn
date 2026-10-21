@@ -775,7 +775,9 @@ With no connection, a page navigation is answered, in order, by the learner's **
 (`witus-pages-v1`, "Save for offline"), the copy **remembered the last time that exact URL was opened**
 (`witus-visited-v1`), the install-time shell, and finally `/offline`. The visited cache:
 
-- fills on its own as public pages are opened, plus `/`, `/downloads`, `/offline` and `/help` at
+- fills on its own as public pages are opened, whether loaded in full or reached by tapping an in-app
+  link (after a tap the worker fetches the page once more as a document, at most every 10 minutes per
+  page, since the router's own fetch is never served as a page), plus `/`, `/downloads`, `/offline` and `/help` at
   install (with their JS/CSS), so an installed app opens at `/` offline on first launch;
 - is capped at about 150 entries (least recently opened dropped first) and skips anything over 1.5 MB;
 - **never** stores sign-in and invite routes, signed-in areas (`/dashboard`, `/admin`, `/teach`,
