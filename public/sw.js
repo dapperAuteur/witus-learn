@@ -129,6 +129,34 @@ async function remember(key, res) {
   }
 }
 
+// A tap on an in-app link is an RSC fetch, never a document load, so on its own it leaves no page
+// to open offline: only full loads were remembered, and most browsing is taps. After such a fetch
+// succeeds, fetch the same URL as a document and remember it, with its assets, as a full load
+// would have. Skipped while the remembered copy is younger than DOCUMENT_REFRESH_MS, so going back
+// and forth between pages costs one extra render per page, not one per tap.
+const DOCUMENT_REFRESH_MS = 10 * 60 * 1000;
+
+async function rememberDocument(rscUrl) {
+  const url = new URL(rscUrl.href);
+  url.searchParams.delete("_rsc");
+  if (!rememberable(url)) return;
+  const key = url.origin + url.pathname + url.search;
+  try {
+    const cache = await caches.open(VISITED_CACHE);
+    const prior = await cache.match(key, { ignoreVary: true });
+    const age = prior ? Date.now() - Date.parse(prior.headers.get("date") || "") : Infinity;
+    if (isHtml(prior) && age < DOCUMENT_REFRESH_MS) return;
+    const signal = typeof AbortSignal.timeout === "function" ? AbortSignal.timeout(PRECACHE_TIMEOUT_MS) : undefined;
+    const res = await fetch(key, { credentials: "same-origin", signal });
+    if (!storableResponse(res) || !isHtml(res)) return;
+    const html = await res.clone().text();
+    await remember(key, res);
+    await cachePageAssets(html);
+  } catch {
+    /* offline or slow: the page itself already rendered from the RSC payload */
+  }
+}
+
 // The visited copy of this exact URL (path AND query: `/courses?category=art` is its own page).
 // HTML only, so an RSC payload can never come back as a document.
 async function visitedDocument(url) {
@@ -346,7 +374,7 @@ self.addEventListener("fetch", (event) => {
       fetch(request).then(
         (res) => {
           if (!isPrefetch && rememberable(url) && storableResponse(res) && isRscPayload(res)) {
-            event.waitUntil(remember(request, res.clone()));
+            event.waitUntil(Promise.all([remember(request, res.clone()), rememberDocument(url)]));
           }
           return res;
         },
