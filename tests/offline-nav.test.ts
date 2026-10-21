@@ -684,6 +684,27 @@ describe("the front door is precached, so a first offline launch opens the app (
     expect(await chunk!.text()).toContain("js");
   });
 
+  // REGRESSION: the asset pattern stopped at every "(", so the home page's own chunk,
+  // chunks/app/(tenant)/page-….js, became a request for chunks/app/. In Chromium that request
+  // never settled and held install open, so the worker never took control of a page.
+  it("precaches a (route group) chunk under its full URL, not cut off at the parenthesis", async () => {
+    const GROUP_CHUNK = "/_next/static/chunks/app/(tenant)/page-home456.js";
+    const net = vi.fn(async (input: RequestInfo | URL) => {
+      const url = new URL(typeof input === "string" ? input : (input as { url: string }).url);
+      if (url.pathname.startsWith("/_next/static/")) {
+        return new Response("/* js */", { status: 200, headers: { "content-type": "application/javascript" } });
+      }
+      return html(`<h1>PAGE ${url.pathname}</h1><script src="${GROUP_CHUNK}"></script>`);
+    });
+    const sw = bootServiceWorker(net as unknown as typeof fetch);
+    await sw.install();
+    const requested = net.mock.calls.map(([input]) =>
+      decodeURI(new URL(typeof input === "string" ? input : (input as { url: string }).url, ORIGIN).pathname),
+    );
+    expect(requested).toContain(GROUP_CHUNK);
+    expect(requested).not.toContain("/_next/static/chunks/app/");
+  });
+
   it("applies the visit exclusions: a front-door answer that sets a cookie or redirects is skipped", async () => {
     const net = vi.fn(async (input: RequestInfo | URL) => {
       const url = new URL(typeof input === "string" ? input : (input as { url: string }).url);

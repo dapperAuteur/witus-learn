@@ -8,15 +8,21 @@ import { goOffline, goOnline } from "./support/offline";
 
 const BANNER = /You.re offline\. Pages you.ve opened and courses you saved still work\./;
 
-/** A course page linked from /courses: `/{username}/{courseSlug}`. */
+/** A course page linked from /courses, at its canonical `/{username}/{courseSlug}` address.
+ *  Course cards link `/course/{id}`, which redirects there, and the worker never stores a
+ *  redirect, so the test visits (and later expects offline) the page the redirect lands on. */
 async function firstCoursePath(page: Page): Promise<string | null> {
   await page.goto("/courses");
   const paths = await page
     .locator("main a[href]")
     .evaluateAll((links) =>
-      [...new Set(links.map((a) => (a as HTMLAnchorElement).pathname))].filter((p) => /^\/[^/]+\/[^/]+$/.test(p)),
+      [...new Set(links.map((a) => (a as HTMLAnchorElement).pathname))].filter(
+        (p) => /^\/[^/]+\/[^/]+$/.test(p) && !p.startsWith("/series/"),
+      ),
     );
-  return paths[0] ?? null;
+  if (!paths[0]) return null;
+  await page.goto(paths[0]);
+  return new URL(page.url()).pathname;
 }
 
 async function expectServedFromCache(page: Page, path: string) {

@@ -183,7 +183,9 @@ export async function savePage(pathname: string): Promise<void> {
 
 // Every /_next/static/… URL the HTML mentions — <script src>, <link href>, preloads, and the ones
 // embedded in the RSC flight payload (which appear escaped, so we don't anchor on a quote).
-const NEXT_ASSET_RE = /\/_next\/static\/[^"'()\s\\]+/g;
+// A "(group)" segment is part of the path: every lesson page's own chunk lives under
+// `chunks/app/(tenant)/…`. Any other parenthesis ends the URL, as in CSS `url(…)`.
+const NEXT_ASSET_RE = /\/_next\/static\/(?:[^"'()\s\\]|\([^"'()\s\\/]*\))+/g;
 
 /** Cache the build assets a saved page needs to render. Best-effort per asset: a single missing
  *  chunk must not fail the lesson save the learner actually asked for. */

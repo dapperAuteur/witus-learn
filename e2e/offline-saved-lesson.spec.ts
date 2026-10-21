@@ -16,12 +16,15 @@ async function findOpenLesson(page: Page): Promise<string | null> {
         /^\/[^/]+\/[^/]+$/.test(p),
       ),
     );
-  for (const courseHref of courseHrefs.slice(0, 8)) {
-    await page.goto(courseHref);
+  for (const cardHref of courseHrefs.filter((p) => !p.startsWith("/series/")).slice(0, 8)) {
+    // Course cards link `/course/{id}`, which redirects to `/{username}/{courseSlug}`; lesson
+    // links hang off the address the redirect lands on.
+    await page.goto(cardHref);
+    const courseHref = new URL(page.url()).pathname;
     const lessonHref = await page
       .locator(`a[href^="${courseHref}/lesson/"]`)
       .first()
-      .getAttribute("href")
+      .getAttribute("href", { timeout: 5_000 })
       .catch(() => null);
     if (!lessonHref) continue;
     await page.goto(lessonHref);
@@ -65,7 +68,7 @@ test("a lesson saved for offline opens offline, with its course and the download
   // Not /courses: worker v6 remembers every public page opened online, and this test opened it.
   await page.goto("/terms");
   await expect(page.getByRole("heading", { name: /You.re offline/ })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Your downloads" })).toHaveAttribute("href", "/downloads");
+  await expect(page.getByRole("link", { name: "Your downloads" }).first()).toHaveAttribute("href", "/downloads");
 
   // Positive: the saved lesson is served as an HTML document, not the offline page.
   const res = await page.goto(lesson);
