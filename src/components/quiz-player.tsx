@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { enqueue, outboxSupported } from "@/lib/offline-outbox";
+import { NEEDS_CONNECTION } from "@/lib/needs-connection";
 import { quizAttemptDraft } from "@/lib/outbox-kinds";
 
 interface SafeQuestion {
@@ -96,6 +97,7 @@ export function QuizPlayer({
   const [pending, setPending] = useState(false);
   // Submitted offline: the attempt is queued to score on reconnect (no answers on the device).
   const [queued, setQueued] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   function setAnswer(si: number, originalOptionIndex: number) {
     setAnswers((a) => {
@@ -114,6 +116,7 @@ export function QuizPlayer({
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
+    setSubmitError(null);
     setPending(true);
     const responses = served.map((s, si) => ({ questionIndex: s.qi, optionIndex: answers[si] }));
     try {
@@ -127,6 +130,8 @@ export function QuizPlayer({
         const d: QuizResult = await r.json();
         setResult(d);
         if (d.passed) router.refresh();
+      } else {
+        setSubmitError("Could not score your answers. Try again.");
       }
     } catch {
       // Offline: queue the attempt so it's scored + recorded on reconnect, WITHOUT the answers ever
@@ -135,6 +140,9 @@ export function QuizPlayer({
       setPending(false);
       if (outboxSupported() && enqueue(quizAttemptDraft({ courseId, lessonId, responses }))) {
         setQueued(true);
+      } else {
+        // No outbox here (storage blocked or full): say so instead of leaving a dead button.
+        setSubmitError(NEEDS_CONNECTION);
       }
     }
   }
@@ -257,6 +265,11 @@ export function QuizPlayer({
           ) : null}
         </div>
       )}
+      {submitError && !queued && !result ? (
+        <p role="alert" className="text-sm text-red-600">
+          {submitError}
+        </p>
+      ) : null}
     </form>
   );
 }
