@@ -8,6 +8,12 @@ import { defineConfig, devices } from "@playwright/test";
 // that CI and fresh clones don't have. CI always runs against a deployed URL instead.
 const baseURL = process.env.PLAYWRIGHT_BASE_URL ?? "http://localhost:3040";
 
+// Lets context.route() (and network events) see the service worker's own fetches, not only the
+// page's. The offline specs depend on it: without it the worker can still reach the server while
+// the test believes it is offline. See e2e/support/offline.ts. Set here so every worker process
+// the runner forks inherits it.
+process.env.PW_EXPERIMENTAL_SERVICE_WORKER_NETWORK_EVENTS ??= "1";
+
 // Vercel Deployment Protection: if the target deployment is protected, set
 // VERCEL_AUTOMATION_BYPASS_SECRET (Vercel → Project → Deployment Protection → Protection Bypass
 // for Automation) as a GitHub Actions secret. Read from the project's own dashboard — value is

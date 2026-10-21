@@ -1,4 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
+import { goOffline, goOnline } from "./support/offline";
 
 // The app works offline from the last good copy of every public page the visitor opened, with a
 // banner that says so (cloud-briefs/offline-app-shell-2026-10-21.md). Not @smoke yet: it drives
@@ -42,7 +43,7 @@ test("pages opened online open offline, with the offline banner, and links betwe
     await expect(page.getByRole("status").filter({ hasText: BANNER })).toHaveCount(0);
   }
 
-  await context.setOffline(true);
+  await goOffline(context);
 
   // Negative: the test really is offline. A request the worker never answers from a cache fails.
   const probe = await page.evaluate(() =>
@@ -71,6 +72,6 @@ test("pages opened online open offline, with the offline banner, and links betwe
   await expect(page.getByRole("heading", { name: /You.re offline/ })).toHaveCount(0);
   await expect(page.getByRole("status").filter({ hasText: BANNER })).toBeVisible();
 
-  await context.setOffline(false);
+  await goOnline(context);
   await expect(page.getByRole("status").filter({ hasText: BANNER })).toHaveCount(0);
 });
