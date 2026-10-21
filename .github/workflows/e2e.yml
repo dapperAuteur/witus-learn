@@ -70,3 +70,6 @@ jobs:
         run: pnpm exec playwright test --grep "@smoke" --project=desktop
         env:
           PLAYWRIGHT_BASE_URL: ${{ github.event.deployment_status.environment_url }}
+          # environment_url is the deployment's own *.vercel.app address, which Vercel's deployment
+          # protection covers (only custom domains are exempt), so this job needs the bypass too.
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
