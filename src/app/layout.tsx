@@ -5,6 +5,7 @@ import { tenantMetadata, tenantViewport } from "@/lib/branding";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { OfflineOutboxFlusher } from "@/components/offline-outbox-flusher";
 import { ChunkErrorReloader } from "@/components/chunk-error-reloader";
+import { OfflineBanner } from "@/components/offline-banner";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -59,6 +60,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
+        {/* "You're offline" on every page, above everything and in the flow, so it pushes the page
+            down instead of covering it. Empty while online. See the component. */}
+        <OfflineBanner />
         {children}
         <ServiceWorkerRegister />
         {/* Sends anything written while offline (today: /admin/future notes) as soon as there's a
