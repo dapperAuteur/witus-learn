@@ -54,16 +54,57 @@ const under = (pathname, prefix) => pathname === prefix || pathname.startsWith(`
 const neverFromCache = (pathname) =>
   !CACHE_OK_EXCEPTIONS.some((p) => under(pathname, p)) && NEVER_FROM_CACHE.some((p) => under(pathname, p));
 
+// Pages that are never REMEMBERED on a visit: a wider net than NEVER_FROM_CACHE, because this
+// cache fills on its own, with nobody pressing a button. Sign-in and invite routes (their URLs and
+// pages carry tokens and codes), every signed-in area, and checkout or billing. /admin has no
+// exception here: /admin/future works offline only through its explicit save, never by visiting.
+// /api/* is skipped before this is ever consulted.
+const NEVER_REMEMBER = [
+  ...NEVER_FROM_CACHE,
+  "/kids",
+  "/join",
+  "/teach",
+  "/audit",
+  "/cohorts",
+  "/family",
+  "/field-log",
+  "/my-courses",
+  "/checkout",
+  "/billing",
+];
+// Query parameters that mark a URL as one-time or personal (a sign-in token, a Stripe session).
+const SENSITIVE_PARAMS = ["token", "session_id", "code"];
+
 const isHtml = (res) => Boolean(res) && (res.headers.get("content-type") || "").includes("text/html");
 const isRscPayload = (res) => Boolean(res) && (res.headers.get("content-type") || "").includes("text/x-component");
 
 // Whether this page may be remembered in VISITED_CACHE at all, and so served from it.
-const rememberable = (url) => !neverFromCache(url.pathname);
+const rememberable = (url) =>
+  !NEVER_REMEMBER.some((p) => under(url.pathname, p)) && !SENSITIVE_PARAMS.some((k) => url.searchParams.has(k));
 
-// Whether this RESPONSE may be remembered: a plain 200 for the URL that was asked for. A redirect
-// is refused because its body belongs to a different page (often /login) than the key it would be
-// stored under.
-const storableResponse = (res) => res.status === 200 && !res.redirected && (res.type === "basic" || res.type === "default");
+// The Cache-Control Next.js puts on EVERY dynamically rendered page, public or not. Nearly every
+// page here is dynamic (the tenant layout reads the request host), so treating this value as
+// "private" would remember nothing at all. Any OTHER value carrying `private` or `no-store` is a
+// deliberate opt-out by the route, and is honored.
+const NEXT_DYNAMIC_DEFAULT = ["max-age=0", "must-revalidate", "no-cache", "no-store", "private"].join(",");
+const optsOutOfCaching = (res) => {
+  const cc = (res.headers.get("cache-control") || "").toLowerCase();
+  const directives = cc.split(",").map((d) => d.trim()).filter(Boolean).sort();
+  if (directives.join(",") === NEXT_DYNAMIC_DEFAULT) return false;
+  return directives.includes("private") || directives.includes("no-store");
+};
+
+// Whether this RESPONSE may be remembered: a plain 200 for the URL that was asked for, which sets
+// no cookie and does not opt out. A redirect is refused because its body belongs to a different
+// page (often /login) than the key it would be stored under. (A browser hides Set-Cookie from a
+// worker's fetch, so that check only bites where the header is visible; the path list is the
+// real guard for sign-in pages.)
+const storableResponse = (res) =>
+  res.status === 200 &&
+  !res.redirected &&
+  (res.type === "basic" || res.type === "default") &&
+  !res.headers.has("set-cookie") &&
+  !optsOutOfCaching(res);
 
 /**
  * Remember a public page's response as its last good copy. Best-effort and off the critical path:

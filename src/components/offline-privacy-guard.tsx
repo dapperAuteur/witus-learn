@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { purgeSensitivePages } from "@/lib/offline";
+import { purgeSensitivePages, purgeVisitedOnUserChange } from "@/lib/offline";
 
 /**
  * Deletes any PRIVATE page cached for offline that doesn't belong to whoever is signed in now.
@@ -11,6 +11,10 @@ import { purgeSensitivePages } from "@/lib/offline";
  * session) — but sign-out is not the only way a session ends. It can simply expire; a different
  * person can sign in on the same laptop. This closes that: every ONLINE page load under the
  * (tenant) layout re-asserts "cached private pages belong to the current user, or they go".
+ *
+ * The same check covers the visited-pages cache public/sw.js fills as the visitor browses: those
+ * copies were rendered for whoever was signed in at the time, so when that person changes (a
+ * different account, or signed out) the whole cache is emptied. See purgeVisitedOnUserChange.
  *
  * ⚠️ ONLINE ONLY, and that condition is load-bearing.
  *
@@ -26,6 +30,9 @@ export function OfflinePrivacyGuard({ userId }: { userId: string | null }) {
     if (typeof navigator !== "undefined" && navigator.onLine === false) return;
     void purgeSensitivePages(userId).catch(() => {
       /* best-effort: a browser with no Cache API has nothing to purge */
+    });
+    void purgeVisitedOnUserChange(userId).catch(() => {
+      /* best-effort, as above */
     });
   }, [userId]);
 

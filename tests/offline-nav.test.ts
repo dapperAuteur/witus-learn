@@ -539,3 +539,95 @@ describe("visited public pages are remembered and served offline (worker v6)", (
     expect(await sw.cacheStorage.keys()).not.toContain("witus-static-v5");
   });
 });
+
+describe("private and one-time pages are never remembered", () => {
+  const VISITED = "witus-visited-v1";
+
+  async function visitedKeysAfter(paths: string[], respond: () => Response = () => html("<h1>PAGE</h1>")) {
+    const online = bootServiceWorker(vi.fn(async () => respond()) as unknown as typeof fetch);
+    for (const p of paths) await online.dispatchFetch(hardNavigation(p));
+    return { online, keys: await (await online.cacheStorage.open(VISITED)).keys() };
+  }
+
+  it("skips sign-in, invite, signed-in, admin, checkout and billing routes", async () => {
+    const privatePaths = [
+      "/login",
+      "/login?next=/family",
+      "/verify/abc123",
+      "/kids",
+      "/join/invite-token",
+      "/dashboard",
+      "/dashboard/settings",
+      "/admin",
+      "/admin/users",
+      "/admin/future",
+      "/admin/school-billing",
+      "/teach/course-1",
+      "/audit/citations",
+      "/cohorts/c1",
+      "/family",
+      "/field-log/new",
+      "/my-courses",
+      "/checkout",
+      "/billing/portal",
+    ];
+    const { keys } = await visitedKeysAfter(privatePaths);
+    expect(keys).toEqual([]);
+  });
+
+  it("skips URLs that carry a token or a payment session", async () => {
+    const { keys } = await visitedKeysAfter(["/course/abc?session_id=cs_test_1", "/courses?token=t", "/?code=x"]);
+    expect(keys).toEqual([]);
+  });
+
+  it("still remembers ordinary public pages beside them", async () => {
+    const { keys } = await visitedKeysAfter(["/courses", "/help", "/bam/knots", "/course/abc?canceled=true"]);
+    expect(keys).toHaveLength(4);
+  });
+
+  it("skips a response that sets a cookie", async () => {
+    const { keys } = await visitedKeysAfter(["/courses"], () => {
+      const res = html("<h1>PAGE</h1>");
+      res.headers.set("set-cookie", "session=1; HttpOnly");
+      return res;
+    });
+    expect(keys).toEqual([]);
+  });
+
+  it("skips a response a route marked private or no-store on purpose", async () => {
+    for (const cc of ["no-store", "private, max-age=60", "private, no-store"]) {
+      const { keys } = await visitedKeysAfter(["/courses"], () => {
+        const res = html("<h1>PAGE</h1>");
+        res.headers.set("cache-control", cc);
+        return res;
+      });
+      expect(keys, cc).toEqual([]);
+    }
+  });
+
+  it("does remember a page carrying the Cache-Control Next.js puts on every dynamic page", async () => {
+    // Measured on this app's own build: `next start`, then curl -D - on /offline and /downloads.
+    const { keys } = await visitedKeysAfter(["/courses"], () => {
+      const res = html("<h1>PAGE</h1>");
+      res.headers.set("cache-control", "private, no-cache, no-store, max-age=0, must-revalidate");
+      return res;
+    });
+    expect(keys).toEqual([`${ORIGIN}/courses`]);
+  });
+
+  it("never remembers a private path's RSC payload either", async () => {
+    const rsc = () => new Response("0:[]", { status: 200, headers: { "content-type": "text/x-component" } });
+    const online = bootServiceWorker(vi.fn(async () => rsc()) as unknown as typeof fetch);
+    await online.dispatchFetch(rscNavigation("/teach/course-1?_rsc=x"));
+    await online.dispatchFetch(rscNavigation("/family?_rsc=x"));
+    expect(await (await online.cacheStorage.open(VISITED)).keys()).toEqual([]);
+  });
+
+  it("does not serve a private path from a visited copy, however one got there", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    await (await online.cacheStorage.open(VISITED)).put("/family", html("<h1>PRIVATE family</h1>"));
+    const text = await (await (await goOffline(online)).dispatchFetch(hardNavigation("/family")))!.text();
+    expect(text).not.toContain("PRIVATE");
+  });
+});
