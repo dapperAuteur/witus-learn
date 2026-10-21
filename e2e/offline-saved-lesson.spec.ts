@@ -55,7 +55,15 @@ test("a lesson saved for offline opens offline, with its course and the download
   let nextTitle: string | null = null;
   if (nextHref) {
     await page.goto(nextHref);
-    if (await page.getByRole("button", { name: /Save for offline/ }).isVisible().catch(() => false)) {
+    // Saving a lesson also saves the next one, so this page usually renders "Save for offline"
+    // for a moment and then flips to "Saved for offline". Let that check settle before clicking.
+    const alreadySaved = await page
+      .getByText("Saved for offline")
+      .waitFor({ timeout: 5_000 })
+      .then(() => true, () => false);
+    if (alreadySaved) {
+      nextTitle = (await page.locator("main h1").first().innerText()).trim();
+    } else if (await page.getByRole("button", { name: /Save for offline/ }).isVisible().catch(() => false)) {
       nextTitle = (await page.locator("main h1").first().innerText()).trim();
       await saveThisLesson(page);
     }

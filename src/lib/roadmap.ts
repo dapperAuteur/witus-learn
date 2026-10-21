@@ -1706,6 +1706,14 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   buy, notes, sign-in) say **"Needs a connection"** instead of spinning forever, while quiz attempts and
   lesson completions still queue and sync as before. A page you never opened still shows the offline
   page. Copies of pages can be out of date; the bar is the honest signal.
+- ✅ **Pages you reach by tapping a link open offline too** (\`claude/project-thread-yefsbo\`). The
+  first v6 only kept a page loaded in full, and most browsing in the app is taps, so many pages a
+  learner had opened still showed the offline page. Now, after a tap, the service worker fetches the
+  same page once more in the background and keeps it (at most once every ten minutes per page).
+  **Course cards** on the home page, catalog, sales and instructor pages also link straight to the
+  course's own address instead of a redirect, which the worker never keeps, so a course you opened
+  from a card opens offline, and online the card skips a redirect. The same branch fixed the v6
+  install, which never finished in Chrome because chunk paths like \`app/(tenant)/…\` were cut short.
 - ✅ **Every email is mirrored to the WitUS Inbox, with the credentials stripped**
   (\`feat/downloads-link-inbox-mirror\`), only the pricing form mirrored before; magic-link sign-in,
   certificates, cohort invites and guardian invites left no record. The mirror now happens at the
