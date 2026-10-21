@@ -335,3 +335,52 @@ describe("offline navigations serve the right document", () => {
     expect(await dead.dispatchFetch(hardNavigation("/api/health"))).toBeNull();
   });
 });
+
+describe("a server error on a saved page", () => {
+  /** The network is up but the server answers 503 (e.g. its database is over quota). */
+  const SERVER_DOWN = () =>
+    vi.fn(async () => new Response("<h1>Service unavailable</h1>", { status: 503, headers: { "content-type": "text/html" } })) as unknown as typeof fetch;
+
+  async function savedThenDown() {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    const pages = await online.cacheStorage.open("witus-pages-v1");
+    await pages.put("/bam/knots/lesson/bowline", html("<h1>The bowline</h1>"));
+    await pages.put("/dashboard", html("<h1>PRIVATE dashboard</h1>"));
+    return goOffline(online, SERVER_DOWN());
+  }
+
+  it("serves the saved copy of that exact page instead of the 503", async () => {
+    const sw = await savedThenDown();
+    const res = await sw.dispatchFetch(hardNavigation("/bam/knots/lesson/bowline"));
+    expect(res!.status).toBe(200);
+    expect(await res!.text()).toContain("The bowline");
+  });
+
+  it("passes the 503 through for a page that was never saved", async () => {
+    const sw = await savedThenDown();
+    const res = await sw.dispatchFetch(hardNavigation("/bam/knots/lesson/sheet-bend"));
+    expect(res!.status).toBe(503);
+  });
+
+  it("passes the 503 through for never-cached pages, even if a copy exists", async () => {
+    const sw = await savedThenDown();
+    const res = await sw.dispatchFetch(hardNavigation("/dashboard"));
+    expect(res!.status).toBe(503);
+    expect(await res!.text()).not.toContain("PRIVATE");
+  });
+
+  it("leaves /api alone", async () => {
+    const sw = await savedThenDown();
+    expect(await sw.dispatchFetch(hardNavigation("/api/courses"))).toBeNull();
+  });
+
+  it("passes a healthy 200 straight through, saved copy or not", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    await (await online.cacheStorage.open("witus-pages-v1")).put("/bam/knots/lesson/bowline", html("<h1>OLD copy</h1>"));
+    const sw = await goOffline(online, ONLINE());
+    const text = await (await sw.dispatchFetch(hardNavigation("/bam/knots/lesson/bowline")))!.text();
+    expect(text).not.toContain("OLD copy");
+  });
+});

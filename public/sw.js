@@ -169,7 +169,19 @@ self.addEventListener("fetch", (event) => {
   //      still reach the one screen that lists and deletes their downloads;
   //   3. the generic /offline page, freshest copy first.
   // Sign-in, dashboard and admin pages skip 1 and 2 (see NEVER_FROM_CACHE).
+  //
+  // A 5xx is not a network failure (fetch resolves), but to a learner it is the same thing: the
+  // server or its database is down. If this exact page is saved, the saved copy beats an error
+  // page; anything not saved gets the real error, never a different page standing in for it.
   if (request.mode === "navigate") {
-    event.respondWith(fetch(request).catch(() => offlineNavigation(url)));
+    event.respondWith(
+      fetch(request).then(
+        async (res) => {
+          if (res.status < 500 || neverFromCache(url.pathname)) return res;
+          return (await savedDocument(PAGES_CACHE, url)) || res;
+        },
+        () => offlineNavigation(url),
+      ),
+    );
   }
 });

@@ -1688,6 +1688,8 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   serves a saved page's **HTML only** (it could hand a navigation the stored RSC data instead),
   prefers the fresh \`/offline\` copy over a months-old install-time one whose scripts were gone, and
   never answers sign-in, \`/dashboard\` or \`/admin\` pages from a cache (\`/admin/future\` excepted).
+  When the **server is down** (a 5xx, like the 2026-10-17 database outage), a page you saved opens
+  from your device instead of the error page; anything not saved still shows the real error.
   \`tests/offline-nav.test.ts\` runs the **real \`public/sw.js\`** over a dead network for each case.
 - ✅ **Every email is mirrored to the WitUS Inbox, with the credentials stripped**
   (\`feat/downloads-link-inbox-mirror\`), only the pricing form mirrored before; magic-link sign-in,
