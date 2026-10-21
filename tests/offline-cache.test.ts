@@ -231,9 +231,10 @@ describe("offline cache + manifest, together", () => {
     const { entries } = await offline.reconcileOffline();
     expect(entries.map((e) => e.pagePath)).toEqual(["/bam/signals/lesson/b"]);
 
-    // The prune was persisted, not just filtered for one render.
+    // The prune was persisted, not just filtered for one render. The course page's entry stays:
+    // lesson b still rides on it.
     const { readManifest } = await import("@/lib/offline-manifest");
-    expect(Object.keys(readManifest())).toEqual(["/bam/signals/lesson/b"]);
+    expect(Object.keys(readManifest()).sort()).toEqual(["/bam/signals", "/bam/signals/lesson/b"]);
   });
 
   it("DRIFT: a cached page with no manifest entry is an orphan — shown, and removable", async () => {
@@ -327,5 +328,81 @@ describe("offline cache + manifest, together", () => {
   it("storageUsage returns null (rather than a wrong 0 B) where estimate() is unsupported", async () => {
     const offline = await load();
     expect(await offline.storageUsage()).toBeNull();
+  });
+});
+
+describe("the course page is saved with its lessons", () => {
+  const courseFetches = () => fetchLog.filter((p) => p === "/bam/signals").length;
+  let fetchLog: string[];
+  beforeEach(() => {
+    fetchLog = [];
+    const inner = globalThis.fetch;
+    vi.stubGlobal("fetch", async (input: RequestInfo, init?: RequestInit) => {
+      const url = typeof input === "string" ? input : input.url;
+      fetchLog.push(new URL(url, "https://tenant.example").pathname);
+      return inner(input, init);
+    });
+  });
+
+  it("saveCourse caches courseHref once, and records it as a course", async () => {
+    const offline = await load();
+    await offline.saveCourse([lesson("a"), lesson("b"), lesson("c")]);
+
+    const pages = cacheStorage.caches.get(offline.PAGES_CACHE)!;
+    expect(pages.store.has("https://tenant.example/bam/signals")).toBe(true);
+    // One HTML fetch + one RSC fetch for the course page, not one pair per lesson.
+    expect(courseFetches()).toBe(2);
+    const { readManifest, isCourseEntry } = await import("@/lib/offline-manifest");
+    expect(isCourseEntry(readManifest()["/bam/signals"])).toBe(true);
+  });
+
+  it("saving a single lesson saves its course page too", async () => {
+    const offline = await load();
+    await offline.saveLesson(lesson("a"));
+    expect(await offline.isSaved("/bam/signals")).toBe(true);
+  });
+
+  it("the course page is neither a listed lesson nor a leftover", async () => {
+    const offline = await load();
+    await offline.saveCourse([lesson("a"), lesson("b")]);
+
+    expect(await cachedPaths(offline)).toEqual(["/bam/signals/lesson/a", "/bam/signals/lesson/b"]);
+    const inv = await offline.reconcileOffline();
+    expect(inv.entries.map((e) => e.pagePath).sort()).toEqual(["/bam/signals/lesson/a", "/bam/signals/lesson/b"]);
+    expect(inv.pages).toEqual([]);
+    expect(inv.orphanPages).toEqual([]);
+  });
+
+  it("is not a leftover even when the manifest has been lost", async () => {
+    const offline = await load();
+    await offline.saveCourse([lesson("a")]);
+    localStorage.clear();
+    const inv = await offline.reconcileOffline();
+    // The lesson shows as an orphan (honest: its title is gone); its course page does not.
+    expect(inv.orphanPages).toEqual(["/bam/signals/lesson/a"]);
+  });
+
+  it("removing one lesson keeps the course page; removing the last one removes it", async () => {
+    const offline = await load();
+    await offline.saveCourse([lesson("a"), lesson("b")]);
+    const { readManifest } = await import("@/lib/offline-manifest");
+
+    await offline.removeLesson({ pagePath: "/bam/signals/lesson/a" });
+    expect(await offline.isSaved("/bam/signals")).toBe(true);
+
+    await offline.removeLesson({ pagePath: "/bam/signals/lesson/b" });
+    expect(await offline.isSaved("/bam/signals")).toBe(false);
+    const pages = cacheStorage.caches.get(offline.PAGES_CACHE)!;
+    expect([...pages.store.keys()].some((k) => k.includes("/bam/signals?__rsc"))).toBe(false);
+    expect(readManifest()).toEqual({});
+  });
+
+  it("a course page that fails to save never fails the lessons", async () => {
+    const offline = await load();
+    broken.add("/bam/signals");
+    const { failed } = await offline.saveCourse([lesson("a")]);
+    expect(failed).toEqual([]);
+    expect(await offline.isSaved("/bam/signals/lesson/a")).toBe(true);
+    expect(await offline.isSaved("/bam/signals")).toBe(false);
   });
 });

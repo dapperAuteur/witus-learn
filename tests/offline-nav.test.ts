@@ -313,6 +313,23 @@ describe("offline navigations serve the right document", () => {
     expect(text).toContain("Retry");
   });
 
+  it("opens the downloads screen for the app's start URL, which is never saved", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    const dead = await goOffline(online);
+    const text = await (await dead.dispatchFetch(hardNavigation("/")))!.text();
+    expect(text).toContain("Your downloads");
+    expect(text).toContain("/downloads");
+  });
+
+  it("serves a saved course page by its own path", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    await (await online.cacheStorage.open("witus-pages-v1")).put("/bam/knots", html("<h1>Knots course</h1>"));
+    const dead = await goOffline(online);
+    expect(await (await dead.dispatchFetch(hardNavigation("/bam/knots")))!.text()).toContain("Knots course");
+  });
+
   it("never touches /api, saved or not", async () => {
     const dead = bootServiceWorker(OFFLINE());
     expect(await dead.dispatchFetch(hardNavigation("/api/health"))).toBeNull();

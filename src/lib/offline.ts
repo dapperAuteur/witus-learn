@@ -12,6 +12,8 @@
 // when the cache says otherwise.
 import {
   clearManifest,
+  coursePagePaths,
+  isCourseEntry,
   isLessonEntry,
   isPageEntry,
   manifestSupported,
@@ -20,21 +22,24 @@ import {
   upsertEntry,
   withoutPaths,
   writeManifest,
+  type OfflineCourseEntry,
   type OfflineEntry,
   type OfflineLessonEntry,
   type OfflineLessonMeta,
+  type OfflineManifest as OfflineManifestRecord,
   type OfflinePageEntry,
   type OfflinePageMeta,
 } from "./offline-manifest";
 
 export type {
+  OfflineCourseEntry,
   OfflineEntry,
   OfflineLessonEntry,
   OfflineLessonMeta,
   OfflinePageEntry,
   OfflinePageMeta,
 };
-export { isLessonEntry, isPageEntry };
+export { isCourseEntry, isLessonEntry, isPageEntry };
 
 export const PAGES_CACHE = "witus-pages-v1";
 export const MEDIA_CACHE = "witus-media-v1";
@@ -99,6 +104,27 @@ const PRIVATE_PATH_PREFIXES = ["/admin"];
 
 function isPrivatePath(pathname: string): boolean {
   return PRIVATE_PATH_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));
+}
+
+/**
+ * The course page a lesson page belongs to, read from the URL alone. Lessons live at
+ * `/{username}/{courseSlug}/lesson/{lessonSlug}` (src/app/(tenant)/[username]/[courseSlug]/lesson),
+ * and the course page is everything before `/lesson/`. Used where the manifest may have lost the
+ * lesson's `courseHref`, so a saved course page is still recognized as one.
+ */
+function courseOfLessonPath(pathname: string): string | null {
+  const i = pathname.indexOf("/lesson/");
+  return i > 0 ? pathname.slice(0, i) : null;
+}
+
+/** Course pages that saved lessons ride on: from the manifest, and from the lesson URLs cached. */
+function knownCoursePages(manifest: OfflineManifestRecord, cachedPaths: string[]): Set<string> {
+  const courses = coursePagePaths(manifest);
+  for (const p of cachedPaths) {
+    const course = courseOfLessonPath(p);
+    if (course) courses.add(course);
+  }
+  return courses;
 }
 
 /** Enough to *remove* a lesson: the manifest supplies the media URL when it knows it, and the
@@ -209,6 +235,12 @@ async function ensureShellCached(): Promise<void> {
  * the same cache keys and refreshes `savedAt`.
  */
 export async function saveLesson(lesson: SavableLesson): Promise<void> {
+  await saveLessonOnly(lesson);
+  await saveCoursePages([lesson]);
+}
+
+/** saveLesson without the course page, for batches that save the course page once at the end. */
+async function saveLessonOnly(lesson: SavableLesson): Promise<void> {
   await savePage(lesson.pagePath);
   if (lesson.mediaUrl) await saveMedia(lesson.mediaUrl);
   // VERIFY, don't assume. "Saved" must mean "I have read this back out of the cache", not "the
@@ -240,6 +272,41 @@ export async function saveLesson(lesson: SavableLesson): Promise<void> {
 }
 
 /**
+ * Save the course page each of these lessons belongs to (once per course), so a learner offline
+ * can open the course and not only a lesson whose URL they happen to have. The PWA starts at "/"
+ * and learners navigate from the course page; before this, only lesson pages were ever saved, so
+ * every way in fell through to /offline.
+ *
+ * Best-effort: the learner asked for the lessons, and a course page that fails to save must not
+ * fail them. It is written to the manifest as `kind: "course"` only after it reads back from the
+ * cache, like a lesson. Re-saving refreshes it, so its list of lessons stays current.
+ */
+async function saveCoursePages(lessons: SavableLesson[]): Promise<void> {
+  if (unsupported()) return;
+  const courses = new Map<string, OfflineLessonMeta>();
+  for (const lesson of lessons) {
+    const href = lesson.meta.courseHref;
+    if (href && !isPrivatePath(href) && !courses.has(href)) courses.set(href, lesson.meta);
+  }
+  for (const [href, meta] of courses) {
+    try {
+      await savePage(href);
+      if (!(await isSaved(href))) continue;
+      upsertEntry({
+        kind: "course",
+        pagePath: href,
+        courseTitle: meta.courseTitle,
+        courseSlug: meta.courseSlug,
+        mediaUrl: null,
+        savedAt: Date.now(),
+      });
+    } catch {
+      /* best effort: the lessons themselves are saved */
+    }
+  }
+}
+
+/**
  * Re-download lessons whose course has been edited since they were saved, and re-stamp them with
  * the version now live. This is what the "Update available" button on /downloads runs.
  *
@@ -261,10 +328,11 @@ export async function refreshLessons(
   let refreshed = 0;
   let failed = 0;
   const media = await caches.open(MEDIA_CACHE);
+  const done: SavableLesson[] = [];
   for (const entry of entries) {
     try {
       if (entry.mediaUrl) await media.delete(entry.mediaUrl);
-      await saveLesson({
+      const lesson: SavableLesson = {
         pagePath: entry.pagePath,
         mediaUrl: entry.mediaUrl,
         meta: {
@@ -277,12 +345,15 @@ export async function refreshLessons(
           // Only claim the new version once the re-save actually verified.
           courseContentVersion: newVersion ?? entry.courseContentVersion,
         },
-      });
+      };
+      await saveLessonOnly(lesson);
+      done.push(lesson);
       refreshed += 1;
     } catch {
       failed += 1;
     }
   }
+  await saveCoursePages(done);
   return { refreshed, failed };
 }
 
@@ -410,7 +481,27 @@ export async function removeLessons(lessons: RemovableLesson[]): Promise<void> {
   const pages = await caches.open(PAGES_CACHE);
   await Promise.all(paths.flatMap((p) => [pages.delete(p), pages.delete(rscKey(p))]));
 
-  const after = withoutPaths(before, paths);
+  // A course page goes with the last of its saved lessons: it rides on them and is never listed
+  // as a download of its own, so leaving it behind would strand it. "Still saved" is read from
+  // both the manifest and the cache, so this also works when the manifest has lost the lessons.
+  const touchedCourses = new Set<string>();
+  for (const p of paths) {
+    const entry = before[p];
+    const course = entry && isLessonEntry(entry) ? entry.courseHref : courseOfLessonPath(p);
+    if (course) touchedCourses.add(course);
+  }
+  const remaining = withoutPaths(before, paths);
+  const stillSaved = new Set<string>(
+    Object.values(remaining).filter(isLessonEntry).map((e) => e.courseHref),
+  );
+  for (const p of await listCachedPagePaths()) {
+    const course = courseOfLessonPath(p);
+    if (course) stillSaved.add(course);
+  }
+  const emptiedCourses = [...touchedCourses].filter((c) => !stillSaved.has(c) && !paths.includes(c));
+  await Promise.all(emptiedCourses.flatMap((p) => [pages.delete(p), pages.delete(rscKey(p))]));
+
+  const after = withoutPaths(remaining, emptiedCourses);
   const stillReferenced = referencedMedia(after);
   const media = await caches.open(MEDIA_CACHE);
   const doomed = new Set<string>();
@@ -439,9 +530,17 @@ export async function isMediaSaved(url: string): Promise<boolean> {
   return Boolean(hit);
 }
 
-/** Every lesson-page path currently in PAGES_CACHE. Synthetic RSC keys and app-shell pages
- *  (/downloads, /offline) are filtered out — what's left is exactly "lessons the learner has". */
+/** Every lesson-page path currently in PAGES_CACHE. Synthetic RSC keys, app-shell pages
+ *  (/downloads, /offline) and saved course pages are filtered out — what's left is exactly
+ *  "lessons the learner has" (plus standalone pages and anything the manifest can't name). */
 export async function listSavedPagePaths(): Promise<string[]> {
+  const cached = await listCachedPagePaths();
+  const courses = knownCoursePages(readManifest(), cached);
+  return cached.filter((p) => !courses.has(p));
+}
+
+/** Every page path in PAGES_CACHE, course pages included (RSC keys and shell pages excluded). */
+async function listCachedPagePaths(): Promise<string[]> {
   if (unsupported()) return [];
   const cache = await caches.open(PAGES_CACHE);
   const requests = await cache.keys();
@@ -481,13 +580,15 @@ export async function saveCourse(
   let done = 0;
   for (const lesson of lessons) {
     try {
-      await saveLesson(lesson);
+      await saveLessonOnly(lesson);
     } catch {
       failed.push(lesson);
     }
     done += 1;
     onProgress?.({ done, total: lessons.length });
   }
+  // The course page once, after its lessons, and only for courses with a lesson that saved.
+  await saveCoursePages(lessons.filter((l) => !failed.includes(l)));
   return { failed };
 }
 
@@ -526,7 +627,7 @@ export type OfflineInventory = {
 export async function reconcileOffline(): Promise<OfflineInventory> {
   if (unsupported()) return { entries: [], pages: [], orphanPages: [], orphanMedia: [] };
 
-  const [cachedPaths, cachedMedia] = await Promise.all([listSavedPagePaths(), listSavedMediaUrls()]);
+  const [cachedPaths, cachedMedia] = await Promise.all([listCachedPagePaths(), listSavedMediaUrls()]);
   const cached = new Set(cachedPaths);
   const manifest = readManifest();
 
@@ -542,9 +643,18 @@ export async function reconcileOffline(): Promise<OfflineInventory> {
   const entries = live.filter(isLessonEntry);
   const pages = live.filter(isPageEntry).sort((a, b) => a.pageTitle.localeCompare(b.pageTitle));
 
-  // BOTH kinds count as "described" — a saved page the manifest knows about is not an orphan.
-  const described = new Set(live.map((e) => e.pagePath));
-  const orphanPages = cachedPaths.filter((p) => !described.has(p)).sort();
+  // Lessons and standalone pages count as "described": a saved page the manifest knows about is
+  // not an orphan. A course page is described while any of its lessons is saved (it rides on
+  // them); one whose lessons are all gone is a leftover, shown so it can be removed.
+  // Lessons whose own entry was lost still count (read from their URL), so a wiped manifest
+  // shows the orphaned lessons but not their course page as one more mystery row.
+  const lessonCourses = new Set<string>(entries.map((e) => e.courseHref));
+  for (const p of cachedPaths) {
+    const course = courseOfLessonPath(p);
+    if (course) lessonCourses.add(course);
+  }
+  const described = new Set(live.filter((e) => !isCourseEntry(e)).map((e) => e.pagePath));
+  const orphanPages = cachedPaths.filter((p) => !described.has(p) && !lessonCourses.has(p)).sort();
 
   const referenced = referencedMedia(Object.fromEntries(live.map((e) => [e.pagePath, e])));
   const orphanMedia = cachedMedia.filter((u) => !referenced.has(u)).sort();

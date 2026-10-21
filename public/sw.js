@@ -77,6 +77,13 @@ async function offlineNavigation(url) {
     const shell = await savedDocument(STATIC_CACHE, url);
     if (shell) return shell;
   }
+  // The installed app opens at "/" (the manifest's start_url), which is never saved. Offline,
+  // the learner's downloads are a better first screen than the generic offline page.
+  if (url.pathname === "/") {
+    const downloads = new URL(DOWNLOADS_URL, url);
+    const hit = (await savedDocument(PAGES_CACHE, downloads)) || (await savedDocument(STATIC_CACHE, downloads));
+    if (hit) return hit;
+  }
   return offlinePage(url);
 }
 
