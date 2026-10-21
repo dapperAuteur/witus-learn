@@ -60,8 +60,9 @@ test("a lesson saved for offline opens offline, with its course and the download
 
   await context.setOffline(true);
 
-  // Negative: a page that was never saved shows the offline page, with a way forward.
-  await page.goto("/courses");
+  // Negative: a page that was never saved (or visited) shows the offline page, with a way forward.
+  // Not /courses: worker v6 remembers every public page opened online, and this test opened it.
+  await page.goto("/terms");
   await expect(page.getByRole("heading", { name: /You.re offline/ })).toBeVisible();
   await expect(page.getByRole("link", { name: "Your downloads" })).toHaveAttribute("href", "/downloads");
 
