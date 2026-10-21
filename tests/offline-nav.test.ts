@@ -155,9 +155,9 @@ function bootServiceWorker(fetchImpl: typeof fetch) {
   }
 
   /** Post a message to the worker, as a page's `registration.active.postMessage` would. */
-  async function postMessage(data: unknown) {
+  async function postMessage(data: unknown, ports: { postMessage: (m: unknown) => void }[] = []) {
     const waits: Promise<unknown>[] = [];
-    listeners.get("message")?.({ data, waitUntil: (p: Promise<unknown>) => waits.push(p) });
+    listeners.get("message")?.({ data, ports, waitUntil: (p: Promise<unknown>) => waits.push(p) });
     await Promise.all(waits);
   }
 
@@ -810,5 +810,71 @@ describe("the front door is precached, so a first offline launch opens the app (
     await sw.cacheStorage.delete(VISITED);
     await sw.postMessage({ type: "something-else" });
     expect(sw.cacheStorage.caches.has(VISITED)).toBe(false);
+  });
+});
+
+describe("sign-out cancels the worker's background saves before the purge (privacy)", () => {
+  const VISITED = "witus-visited-v1";
+  const SETTLE = { type: "witus:settle-saves" };
+  const flush = () => new Promise((r) => setTimeout(r, 0));
+
+  /** The router's tap answers at once; the follow-up document fetch waits until `release()`. */
+  function slowDocumentServer({ honorAbort }: { honorAbort: boolean }) {
+    let release!: () => void;
+    const gate = new Promise<void>((r) => (release = r));
+    const net = vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
+      const isRsc = typeof input !== "string" && (input as { headers?: Headers }).headers?.get?.("RSC") === "1";
+      if (isRsc) return new Response('0:["$","main"]', { status: 200, headers: { "content-type": "text/x-component" } });
+      await new Promise<void>((resolve, reject) => {
+        void gate.then(resolve);
+        if (!honorAbort) return;
+          // As a real fetch does: an already-aborted signal rejects at once.
+          if (init?.signal?.aborted) reject(new DOMException("Aborted", "AbortError"));
+          init?.signal?.addEventListener("abort", () => reject(new DOMException("Aborted", "AbortError")));
+      });
+      return new Response("<h1>PRIVATE: Ada's view of this page</h1>", {
+        status: 200,
+        headers: { "content-type": "text/html", date: new Date().toUTCString() },
+      });
+    });
+    return { net: net as unknown as typeof fetch, release };
+  }
+
+  it("a page still downloading when sign-out starts is not written after it", async () => {
+    const { net, release } = slowDocumentServer({ honorAbort: false });
+    const sw = bootServiceWorker(net);
+    const tap = sw.dispatchFetch(rscNavigation("/bam/knots?_rsc=a")); // background save now in flight
+    await flush();
+
+    const port = { postMessage: vi.fn() };
+    const settled = sw.postMessage(SETTLE, [port]);
+    release(); // the server answers only AFTER sign-out began
+    await Promise.all([tap, settled]);
+
+    const keys = (await (await sw.cacheStorage.open(VISITED)).keys()).map(String);
+    expect(keys).not.toContain(`${ORIGIN}/bam/knots`);
+    // The worker said it was done, which is what the page waits for before it purges.
+    expect(port.postMessage).toHaveBeenCalledWith(SETTLE);
+  });
+
+  it("aborts the download rather than waiting it out, so sign-out stays fast", async () => {
+    const { net } = slowDocumentServer({ honorAbort: true });
+    const sw = bootServiceWorker(net);
+    const tap = sw.dispatchFetch(rscNavigation("/bam/knots?_rsc=a"));
+    await flush();
+    const port = { postMessage: vi.fn() };
+    await sw.postMessage(SETTLE, [port]); // resolves without the server ever answering
+    await tap;
+    expect(port.postMessage).toHaveBeenCalledWith(SETTLE);
+    expect((await (await sw.cacheStorage.open(VISITED)).keys()).map(String)).not.toContain(`${ORIGIN}/bam/knots`);
+  });
+
+  it("keeps remembering normally for whoever browses after sign-out", async () => {
+    const { net, release } = slowDocumentServer({ honorAbort: false });
+    release();
+    const sw = bootServiceWorker(net);
+    await sw.postMessage(SETTLE, [{ postMessage: () => {} }]);
+    await sw.dispatchFetch(rscNavigation("/bam/knots?_rsc=b"));
+    expect((await (await sw.cacheStorage.open(VISITED)).keys()).map(String)).toContain(`${ORIGIN}/bam/knots`);
   });
 });

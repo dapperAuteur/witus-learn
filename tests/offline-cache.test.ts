@@ -503,3 +503,97 @@ describe("asking the worker to fetch the front door again", () => {
     await expect(offline.warmFrontDoor()).resolves.toBeUndefined();
   });
 });
+
+describe("sign-out and a save still in flight (privacy)", () => {
+  const ADMIN = "/admin/future";
+  const adminPage = {
+    pagePath: ADMIN,
+    meta: { pageTitle: "Future work", pageSummary: null, sensitive: true, savedByUserId: "owner-1" },
+  };
+
+  /** The owner's page answers only when the test says so, after sign-out has begun. */
+  function slowAdminPage({ honorAbort }: { honorAbort: boolean }) {
+    let release!: () => void;
+    const gate = new Promise<void>((r) => (release = r));
+    vi.stubGlobal("fetch", async (input: RequestInfo, init?: RequestInit) => {
+      const url = typeof input === "string" ? input : input.url;
+      if (new URL(url, "https://tenant.example").pathname === ADMIN) {
+        await new Promise<void>((resolve, reject) => {
+          void gate.then(resolve);
+          if (!honorAbort) return;
+          // As a real fetch does: an already-aborted signal rejects at once.
+          if (init?.signal?.aborted) reject(new DOMException("Aborted", "AbortError"));
+          init?.signal?.addEventListener("abort", () => reject(new DOMException("Aborted", "AbortError")));
+        });
+        return new Response("<h1>PRIVATE owner board</h1>", { status: 200, headers: { "content-type": "text/html" } });
+      }
+      return new Response("ok", { status: 200 });
+    });
+    return release;
+  }
+
+  const cachedKeys = () => [...(cacheStorage.caches.get("witus-pages-v1")?.store.keys() ?? [])].map((u) => new URL(u).pathname);
+
+  it("a private page that finishes downloading after sign-out began is never left in the cache", async () => {
+    const release = slowAdminPage({ honorAbort: false });
+    const offline = await load();
+    const save = offline.savePageOffline(adminPage);
+
+    // The sign-out button's order: settle, then purge. The download lands in between.
+    const settled = offline.settleOfflineSaves(10_000);
+    release();
+    await settled;
+    await offline.purgeSensitivePages(null);
+
+    await expect(save).rejects.toThrow();
+    expect(cachedKeys()).not.toContain(ADMIN);
+  });
+
+  it("without the settle step the same race leaves the page behind (the bug this fixes)", async () => {
+    const release = slowAdminPage({ honorAbort: false });
+    const offline = await load();
+    const save = offline.savePageOffline(adminPage);
+    await offline.purgeSensitivePages(null); // purge runs while the download is still in flight
+    release();
+    await save.catch(() => {});
+    expect(cachedKeys()).toContain(ADMIN);
+  });
+
+  it("aborts the download, so sign-out does not wait on a slow server", async () => {
+    slowAdminPage({ honorAbort: true });
+    const offline = await load();
+    const save = offline.savePageOffline(adminPage);
+    const started = Date.now();
+    await offline.settleOfflineSaves(10_000);
+    expect(Date.now() - started).toBeLessThan(1_000);
+    await expect(save).rejects.toThrow();
+    expect(cachedKeys()).not.toContain(ADMIN);
+  });
+
+  it("gives up waiting after the timeout, and the late save still cannot land", async () => {
+    const release = slowAdminPage({ honorAbort: false });
+    const offline = await load();
+    const save = offline.savePageOffline(adminPage);
+    await offline.settleOfflineSaves(20); // the server is still silent
+    release();
+    await save.catch(() => {});
+    expect(cachedKeys()).not.toContain(ADMIN);
+  });
+
+  it("asks the service worker to settle too, and waits for its answer", async () => {
+    const posted: unknown[] = [];
+    vi.stubGlobal("navigator", {
+      serviceWorker: {
+        controller: {
+          postMessage: (data: unknown, [port]: MessagePort[]) => {
+            posted.push(data);
+            port.postMessage({ type: "witus:settle-saves" });
+          },
+        },
+      },
+    });
+    const offline = await load();
+    await offline.settleOfflineSaves(10_000);
+    expect(posted).toEqual([{ type: "witus:settle-saves" }]);
+  });
+});

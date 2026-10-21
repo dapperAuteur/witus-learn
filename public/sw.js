@@ -106,6 +106,40 @@ const storableResponse = (res) =>
   !res.headers.has("set-cookie") &&
   !optsOutOfCaching(res);
 
+// Sign-out must not leave behind a page that was still being saved when it started. Every write
+// into VISITED_CACHE goes through remember(), which notes the generation it began in; sign-out
+// (settleOfflineSaves in src/lib/offline.ts) posts SETTLE_SAVES before it purges, which bumps the
+// generation, aborts in-flight fetches and waits for running saves to finish. A save from an
+// older generation then drops its copy instead of writing it, and one that already wrote deletes
+// it again, so nothing begun before sign-out survives the purge that follows it.
+const SETTLE_SAVES = "witus:settle-saves";
+let saveGeneration = 0;
+const savesInFlight = new Set();
+
+/** Run a background save so SETTLE_SAVES can abort it (through `signal`) and wait for it. */
+function trackSave(run) {
+  const entry = { controller: new AbortController(), done: undefined };
+  entry.done = Promise.resolve()
+    .then(() => run(entry.controller.signal))
+    .finally(() => savesInFlight.delete(entry));
+  savesInFlight.add(entry);
+  return entry.done;
+}
+
+async function settleSaves() {
+  saveGeneration++;
+  const pending = [...savesInFlight];
+  for (const save of pending) save.controller.abort();
+  await Promise.allSettled(pending.map((save) => save.done));
+}
+
+/** Aborts on whichever fires first: the save's own controller or its timeout. */
+function saveSignal(signal, timeoutMs) {
+  if (typeof AbortSignal.timeout !== "function") return signal;
+  const timeout = AbortSignal.timeout(timeoutMs);
+  return typeof AbortSignal.any === "function" ? AbortSignal.any([signal, timeout]) : signal;
+}
+
 /**
  * Remember a public page's response as its last good copy. Best-effort and off the critical path:
  * the visitor already has `res`; this works on a clone. The body is read to measure it (streamed
@@ -114,19 +148,26 @@ const storableResponse = (res) =>
  * Re-putting a key deletes it first, so the Cache API's insertion order is "least recently visited
  * first" and the eviction below drops the page opened longest ago.
  */
-async function remember(key, res) {
-  try {
-    const body = await res.arrayBuffer();
-    if (body.byteLength > VISITED_MAX_BYTES) return;
-    const cache = await caches.open(VISITED_CACHE);
-    await cache.delete(key);
-    await cache.put(key, new Response(body, { status: res.status, statusText: res.statusText, headers: res.headers }));
-    const keys = await cache.keys();
-    const excess = keys.length - VISITED_MAX_ENTRIES;
-    for (let i = 0; i < excess; i++) await cache.delete(keys[i]);
-  } catch {
-    /* quota or a torn stream: the copy is a convenience, never worth an error */
-  }
+function remember(key, res, generation = saveGeneration) {
+  return trackSave(async () => {
+    try {
+      const body = await res.arrayBuffer();
+      if (body.byteLength > VISITED_MAX_BYTES) return;
+      if (generation !== saveGeneration) return; // sign-out started while this was in flight
+      const cache = await caches.open(VISITED_CACHE);
+      await cache.delete(key);
+      await cache.put(key, new Response(body, { status: res.status, statusText: res.statusText, headers: res.headers }));
+      if (generation !== saveGeneration) {
+        await cache.delete(key);
+        return;
+      }
+      const keys = await cache.keys();
+      const excess = keys.length - VISITED_MAX_ENTRIES;
+      for (let i = 0; i < excess; i++) await cache.delete(keys[i]);
+    } catch {
+      /* quota or a torn stream: the copy is a convenience, never worth an error */
+    }
+  });
 }
 
 // A tap on an in-app link is an RSC fetch, never a document load, so on its own it leaves no page
@@ -141,20 +182,22 @@ async function rememberDocument(rscUrl) {
   url.searchParams.delete("_rsc");
   if (!rememberable(url)) return;
   const key = url.origin + url.pathname + url.search;
-  try {
-    const cache = await caches.open(VISITED_CACHE);
-    const prior = await cache.match(key, { ignoreVary: true });
-    const age = prior ? Date.now() - Date.parse(prior.headers.get("date") || "") : Infinity;
-    if (isHtml(prior) && age < DOCUMENT_REFRESH_MS) return;
-    const signal = typeof AbortSignal.timeout === "function" ? AbortSignal.timeout(PRECACHE_TIMEOUT_MS) : undefined;
-    const res = await fetch(key, { credentials: "same-origin", signal });
-    if (!storableResponse(res) || !isHtml(res)) return;
-    const html = await res.clone().text();
-    await remember(key, res);
-    await cachePageAssets(html);
-  } catch {
-    /* offline or slow: the page itself already rendered from the RSC payload */
-  }
+  const generation = saveGeneration;
+  await trackSave(async (signal) => {
+    try {
+      const cache = await caches.open(VISITED_CACHE);
+      const prior = await cache.match(key, { ignoreVary: true });
+      const age = prior ? Date.now() - Date.parse(prior.headers.get("date") || "") : Infinity;
+      if (isHtml(prior) && age < DOCUMENT_REFRESH_MS) return;
+      const res = await fetch(key, { credentials: "same-origin", signal: saveSignal(signal, PRECACHE_TIMEOUT_MS) });
+      if (!storableResponse(res) || !isHtml(res)) return;
+      const html = await res.clone().text();
+      await remember(key, res, generation);
+      if (generation === saveGeneration) await cachePageAssets(html);
+    } catch {
+      /* offline, slow or cancelled by sign-out: the page already rendered from the RSC payload */
+    }
+  });
 }
 
 // The visited copy of this exact URL (path AND query: `/courses?category=art` is its own page).
@@ -292,6 +335,11 @@ self.addEventListener("install", (event) => {
 const WARM_FRONT_DOOR = "witus:warm-front-door";
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === WARM_FRONT_DOOR) event.waitUntil(precacheFrontDoor());
+  // Sign-out: cancel and wait for every background save, then answer on the port the page sent,
+  // so the page purges only once nothing from before sign-out can still land.
+  if (event.data && event.data.type === SETTLE_SAVES) {
+    event.waitUntil(settleSaves().then(() => event.ports?.[0]?.postMessage({ type: SETTLE_SAVES })));
+  }
 });
 
 self.addEventListener("activate", (event) => {

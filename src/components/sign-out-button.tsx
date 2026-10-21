@@ -3,7 +3,7 @@
 import { useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
-import { clearVisitedPages, purgeSensitivePages } from "@/lib/offline";
+import { clearVisitedPages, purgeSensitivePages, settleOfflineSaves } from "@/lib/offline";
 
 // `className` lets callers restyle this as a plain inline link (default) or as a full-width
 // menu row (nav-menu.tsx / mobile-nav.tsx). `menuItem` adds the ARIA + focus-management hooks
@@ -40,6 +40,9 @@ export function SignOutButton({
           // `null` = "nobody is signed in now", so every sensitive cached page is purged.
           // Best-effort by design: an unsupported browser has no Cache API to purge, and a failure
           // here must never trap someone in a session they asked to leave.
+          // First stop every offline save still running (here and in the service worker), so a page
+          // fetched for this session cannot be written after the purge below and outlive it.
+          await settleOfflineSaves().catch(() => {});
           await purgeSensitivePages(null).catch(() => {});
           await clearVisitedPages().catch(() => {});
           await authClient.signOut();
