@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { failureMessage, serverFetch } from "@/lib/needs-connection";
 
 // Buy a bundle. Free bundle: enroll in every member course, then refresh. Paid bundle: off to Stripe
 // Checkout. The server re-validates everything; this just calls the API. Mirrors CourseActions.
@@ -21,7 +22,14 @@ export function BundleBuyButton({
   async function buy() {
     setError(null);
     setPending(true);
-    const r = await fetch(`/api/bundles/${slug}/buy`, { method: "POST" });
+    let r: Response;
+    try {
+      r = await serverFetch(`/api/bundles/${slug}/buy`, { method: "POST" });
+    } catch (err) {
+      setPending(false);
+      setError(failureMessage(err, "Could not complete the purchase."));
+      return;
+    }
     const data = await r.json().catch(() => ({}) as { url?: string; error?: string });
     if (data.url) {
       window.location.href = data.url; // Stripe Checkout

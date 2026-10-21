@@ -3,7 +3,7 @@
 import { useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
-import { purgeSensitivePages } from "@/lib/offline";
+import { clearVisitedPages, purgeSensitivePages } from "@/lib/offline";
 
 // `className` lets callers restyle this as a plain inline link (default) or as a full-width
 // menu row (nav-menu.tsx / mobile-nav.tsx). `menuItem` adds the ARIA + focus-management hooks
@@ -16,6 +16,7 @@ import { purgeSensitivePages } from "@/lib/offline";
 // purge BEFORE destroying the session (a purge is a local cache delete, not a request, so it can't
 // be refused mid-way) and it is deliberately awaited: sign-out taking another 20ms is worth it.
 // Public lessons are untouched — signing out must not cost a learner the course they downloaded.
+// The visited-pages cache goes too: those copies were rendered for the person signing out.
 // GLOBAL SIGN-OUT (BAM, 2026-08-30: "signout signs out of every app"). When `endSessionUrl` is
 // present, sign-out also ends the shared session at accounts.witus.online, so signing out of Learn
 // signs you out of every WitUS app in this browser. The caller resolves it on the SERVER and passes
@@ -40,6 +41,7 @@ export function SignOutButton({
           // Best-effort by design: an unsupported browser has no Cache API to purge, and a failure
           // here must never trap someone in a session they asked to leave.
           await purgeSensitivePages(null).catch(() => {});
+          await clearVisitedPages().catch(() => {});
           await authClient.signOut();
           // ORDER IS THE SAFETY PROPERTY. The local session is already destroyed by the line above,
           // so if the IdP refuses the logout, is unreachable, or the redirect never completes, the

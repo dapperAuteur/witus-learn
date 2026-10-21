@@ -1,4 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
+import { goOffline, goOnline } from "./support/offline";
 
 // A lesson saved for offline must OPEN offline, along with the course it belongs to and the
 // downloads list, instead of "You're offline / Retry" (cloud-briefs/offline-fix-2026-10-16.md).
@@ -58,10 +59,11 @@ test("a lesson saved for offline opens offline, with its course and the download
     await page.goto(lesson);
   }
 
-  await context.setOffline(true);
+  await goOffline(context);
 
-  // Negative: a page that was never saved shows the offline page, with a way forward.
-  await page.goto("/courses");
+  // Negative: a page that was never saved (or visited) shows the offline page, with a way forward.
+  // Not /courses: worker v6 remembers every public page opened online, and this test opened it.
+  await page.goto("/terms");
   await expect(page.getByRole("heading", { name: /You.re offline/ })).toBeVisible();
   await expect(page.getByRole("link", { name: "Your downloads" })).toHaveAttribute("href", "/downloads");
 
@@ -85,5 +87,5 @@ test("a lesson saved for offline opens offline, with its course and the download
   await page.goto("/downloads");
   await expect(page.getByText(lessonTitle).first()).toBeVisible();
 
-  await context.setOffline(false);
+  await goOnline(context);
 });

@@ -3,6 +3,7 @@
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { getAvatarEmoji } from "@/lib/kid-avatars";
+import { failureMessage, serverFetch } from "@/lib/needs-connection";
 
 interface AvatarOption {
   childUserId: string;
@@ -32,7 +33,13 @@ export function KidSignIn() {
     if (!code) return;
     setError(null);
     startTransition(async () => {
-      const res = await fetch(`/api/kid-login/avatars?classCode=${encodeURIComponent(code)}`);
+      let res: Response;
+      try {
+        res = await serverFetch(`/api/kid-login/avatars?classCode=${encodeURIComponent(code)}`);
+      } catch (err) {
+        setError(failureMessage(err, "Something went wrong. Try again."));
+        return;
+      }
       const data = await res.json().catch(() => ({ avatars: [] }));
       const list: AvatarOption[] = data.avatars ?? [];
       if (list.length === 0) {
@@ -66,11 +73,18 @@ export function KidSignIn() {
     if (!selected || pin.length < 4) return;
     setError(null);
     startTransition(async () => {
-      const res = await fetch("/api/kid-login", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ classCode: classCode.trim().toUpperCase(), childUserId: selected.childUserId, pin }),
-      });
+      let res: Response;
+      try {
+        res = await serverFetch("/api/kid-login", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ classCode: classCode.trim().toUpperCase(), childUserId: selected.childUserId, pin }),
+        });
+      } catch (err) {
+        // Keep the PIN they typed: nothing was checked, so there is nothing to retype.
+        setError(failureMessage(err, "Something went wrong. Try again."));
+        return;
+      }
       if (!res.ok) {
         setPin("");
         setError("That didn't work. Try your PIN again.");

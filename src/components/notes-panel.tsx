@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { NOTE_BODY_MAX } from "@/lib/annotations";
+import { failureMessage, serverFetch } from "@/lib/needs-connection";
 
 // Notes on a lesson (plans/61): the learner's private notes (steps 1+3), per-note sharing with a
 // teacher (step 4), the teacher's compose-to-cohort surface (step 4), and search across the
@@ -109,12 +110,14 @@ export function NotesPanel({
   const call = useCallback(
     async (input: RequestInfo, init: RequestInit, failMessage: string): Promise<boolean> => {
       setActionError(null);
-      const r = await fetch(input, init).catch(() => null);
-      if (!r?.ok) {
+      try {
+        const r = await serverFetch(input, init);
+        if (r.ok) return true;
         setActionError(failMessage);
-        return false;
+      } catch (err) {
+        setActionError(failureMessage(err, failMessage));
       }
-      return true;
+      return false;
     },
     [],
   );

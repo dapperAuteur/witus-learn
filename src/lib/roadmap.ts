@@ -1691,6 +1691,21 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   When the **server is down** (a 5xx, like the 2026-10-17 database outage), a page you saved opens
   from your device instead of the error page; anything not saved still shows the real error.
   \`tests/offline-nav.test.ts\` runs the **real \`public/sw.js\`** over a dead network for each case.
+- ✅ **The app works offline, not only saved lessons** (\`bundle/learn-offline-app-shell-2026-10-21\`),
+  BAM's report after testing v5 on his phone: *"witus offline homepage should work and user should be
+  able to navigate thru app and access offline courses with banner letting them know they're
+  offline."* The service worker (now **v6**) keeps the **last copy of every public page you open**
+  (home, catalog, course pages, help: up to about 150, the oldest dropped first, nothing over 1.5 MB),
+  and precaches the **home page, downloads, offline and help pages** when it installs, so the installed
+  app opens at \`/\` with no connection. It never keeps sign-in pages, anything you see only when
+  signed in (dashboard, admin, teaching, family, cohorts, field log, my courses), checkout or billing,
+  or a link carrying a token, and the copies are **deleted when a different person signs in or you
+  sign out**, because they show whoever was signed in when they were opened. Offline, **every page
+  shows a bar**: *"You're offline. Pages you've opened and courses you saved still work."* with a
+  **Your downloads** link; links between pages keep working; and buttons that need the server (enroll,
+  buy, notes, sign-in) say **"Needs a connection"** instead of spinning forever, while quiz attempts and
+  lesson completions still queue and sync as before. A page you never opened still shows the offline
+  page. Copies of pages can be out of date; the bar is the honest signal.
 - ✅ **Every email is mirrored to the WitUS Inbox, with the credentials stripped**
   (\`feat/downloads-link-inbox-mirror\`), only the pricing form mirrored before; magic-link sign-in,
   certificates, cohort invites and guardian invites left no record. The mirror now happens at the

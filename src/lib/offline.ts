@@ -60,6 +60,17 @@ export const MEDIA_CACHE = "witus-media-v1";
  */
 export const ASSETS_CACHE = "witus-assets-v1";
 
+/**
+ * The last copy of each public page the visitor opened, written by public/sw.js as they browse (not
+ * by anything in this file). It is NOT a download: nothing here lists it, and "Remove all" leaves
+ * it alone. What this file does is clear it when the person it was filled for is no longer the one
+ * signed in: see purgeVisitedOnUserChange.
+ */
+export const VISITED_CACHE = "witus-visited-v1";
+
+/** Who the visited cache was filled for: a user id, or "" for signed out. localStorage, per origin. */
+const VISITED_OWNER_KEY = "witus:visited-owner";
+
 /** The Downloads manager route. Precached by the SW and (belt-and-braces) re-cached — with its
  *  JS/CSS — on the learner's first save. See ensureShellCached. */
 export const DOWNLOADS_PATH = "/downloads";
@@ -444,6 +455,66 @@ export async function purgeSensitivePages(currentUserId: string | null): Promise
   if (doomed.size === 0) return [];
   await removeSavedPaths([...doomed]);
   return [...doomed];
+}
+
+/**
+ * Empty the visited-pages cache if it was filled for somebody other than the user signed in now.
+ *
+ * A remembered public page is rendered for whoever was signed in at the time: the header carries
+ * their name, a course page says whether they are enrolled. Fine for them, not for the next person
+ * on the same phone. So the cache belongs to one "owner" (a user id, or signed out), and when the
+ * owner changes it is emptied rather than sorted through: every copy in it is replaceable by
+ * browsing again, unlike a download.
+ *
+ * Unknown owner (first run, or localStorage was cleared) counts as a change: there is no way to
+ * tell whose pages are in there. ONLINE ONLY, for the reason `<OfflinePrivacyGuard>` documents: a
+ * page replayed from cache carries the user id it was rendered with. Returns true if it cleared.
+ */
+export async function purgeVisitedOnUserChange(currentUserId: string | null): Promise<boolean> {
+  if (unsupported()) return false;
+  const owner = currentUserId ?? "";
+  let previous: string | null = null;
+  try {
+    previous = localStorage.getItem(VISITED_OWNER_KEY);
+  } catch {
+    /* storage blocked: treat as unknown, which clears */
+  }
+  if (previous === owner) return false;
+  await caches.delete(VISITED_CACHE);
+  try {
+    localStorage.setItem(VISITED_OWNER_KEY, owner);
+  } catch {
+    /* next load clears again, which is the safe direction */
+  }
+  return true;
+}
+
+/** The message public/sw.js listens for to fetch the front door again. Keep in sync with sw.js. */
+export const WARM_FRONT_DOOR = "witus:warm-front-door";
+
+/**
+ * Ask the service worker to fetch and remember the front door again (home, downloads, offline,
+ * help), so an app whose visited cache was just emptied for a new user still opens offline.
+ *
+ * The worker does the fetching, not this page, so the pages pass exactly the exclusions a visit
+ * does and nothing here has to repeat them. Best-effort: with no worker, there is nobody to serve
+ * the copies anyway.
+ */
+export async function warmFrontDoor(): Promise<void> {
+  if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) return;
+  const registration = await navigator.serviceWorker.ready;
+  registration.active?.postMessage({ type: WARM_FRONT_DOOR });
+}
+
+/** Empty the visited-pages cache unconditionally. Sign-out calls this before the session ends. */
+export async function clearVisitedPages(): Promise<void> {
+  if (unsupported()) return;
+  await caches.delete(VISITED_CACHE);
+  try {
+    localStorage.removeItem(VISITED_OWNER_KEY);
+  } catch {
+    /* an unknown owner already means "clear on the next online load" */
+  }
 }
 
 /** Remove a single lesson's page (HTML + RSC) and its media, unless another saved lesson still

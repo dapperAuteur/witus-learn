@@ -4,9 +4,9 @@ import { OfflineSavedLessons } from "@/components/offline-saved-lessons";
 export const metadata: Metadata = { title: "Offline" };
 
 // Generic offline fallback, precached by the service worker and shown only when a page
-// navigation can't reach the network AND the requested page wasn't itself saved for offline
-// (see public/sw.js — a saved lesson page is served straight from cache instead of landing
-// here). Deliberately brand-neutral and self-contained (no tenant data) so it's correct on
+// navigation can't reach the network AND there is no copy of the requested page: not saved for
+// offline, and not opened on this device before (see public/sw.js — a saved or previously opened
+// page is served straight from cache instead of landing here). Deliberately brand-neutral and self-contained (no tenant data) so it's correct on
 // every domain and never stale. The saved-lessons list below is read client-side from the
 // browser's own Cache API, so it works even though this page itself can't hit the network.
 //
@@ -22,7 +22,8 @@ export default function OfflinePage() {
         <span aria-hidden>📡 </span>You&rsquo;re offline
       </h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
-        This page isn&rsquo;t saved on this device. Lessons you saved for offline still work.
+        This page isn&rsquo;t on this device yet. Pages you&rsquo;ve opened and lessons you saved
+        still work.
       </p>
       <div className="mt-5 flex w-full flex-col gap-3 sm:flex-row sm:justify-center">
         {/* Real <a>s (not next/link): offline, only a full navigation can be answered from the

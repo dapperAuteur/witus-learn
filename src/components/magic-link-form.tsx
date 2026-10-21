@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { authClient } from "@/lib/auth-client";
+import { NEEDS_CONNECTION, isOffline } from "@/lib/needs-connection";
 
 // Magic-link sign-in. The link is sent for the current origin, so the session
 // cookie lands on this tenant's host (see auth.ts rewriteOrigin).
@@ -12,13 +13,22 @@ import { authClient } from "@/lib/auth-client";
 // safeNextPath BEFORE it reaches this prop, so this component never has to trust a raw query param.
 export function MagicLinkForm({ callbackURL = "/" }: { callbackURL?: string }) {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error" | "offline">("idle");
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
+    // Sending a link needs the server; offline, say so rather than "could not send".
+    if (isOffline()) {
+      setStatus("offline");
+      return;
+    }
     setStatus("sending");
-    const { error } = await authClient.signIn.magicLink({ email, callbackURL });
-    setStatus(error ? "error" : "sent");
+    try {
+      const { error } = await authClient.signIn.magicLink({ email, callbackURL });
+      setStatus(error ? (isOffline() ? "offline" : "error") : "sent");
+    } catch {
+      setStatus(isOffline() ? "offline" : "error");
+    }
   }
 
   if (status === "sent") {
@@ -55,6 +65,11 @@ export function MagicLinkForm({ callbackURL = "/" }: { callbackURL?: string }) {
       {status === "error" ? (
         <p role="alert" className="text-sm text-red-600">
           Could not send the link. Please try again.
+        </p>
+      ) : null}
+      {status === "offline" ? (
+        <p role="alert" className="text-sm text-red-600">
+          {NEEDS_CONNECTION}
         </p>
       ) : null}
     </form>

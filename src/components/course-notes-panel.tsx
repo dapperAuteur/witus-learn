@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { NOTE_BODY_MAX } from "@/lib/annotations";
+import { failureMessage, serverFetch } from "@/lib/needs-connection";
 
 // Notes about the COURSE as a whole (2026-08-30), the companion to the per-lesson panel in
 // notes-panel.tsx. A learner keeps two different kinds of note and only one of them had a home:
@@ -51,12 +52,14 @@ export function CourseNotesPanel({ courseId }: { courseId: string }) {
   const call = useCallback(
     async (input: RequestInfo, init: RequestInit, failMessage: string): Promise<boolean> => {
       setActionError(null);
-      const r = await fetch(input, init).catch(() => null);
-      if (!r?.ok) {
+      try {
+        const r = await serverFetch(input, init);
+        if (r.ok) return true;
         setActionError(failMessage);
-        return false;
+      } catch (err) {
+        setActionError(failureMessage(err, failMessage));
       }
-      return true;
+      return false;
     },
     [],
   );

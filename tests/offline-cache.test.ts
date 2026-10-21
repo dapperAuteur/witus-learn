@@ -406,3 +406,83 @@ describe("the course page is saved with its lessons", () => {
     expect(await offline.isSaved("/bam/signals")).toBe(false);
   });
 });
+
+describe("the visited-pages cache belongs to whoever is signed in", () => {
+  const VISITED = "witus-visited-v1";
+
+  /** What public/sw.js leaves behind after the visitor browsed a couple of pages. */
+  async function browsed() {
+    const visited = await cacheStorage.open(VISITED);
+    await visited.put("/", new Response("<h1>Hi, Ada</h1>", { headers: { "content-type": "text/html" } }));
+    await visited.put("/bam/signals", new Response("<p>Enrolled</p>", { headers: { "content-type": "text/html" } }));
+  }
+
+  it("keeps the cache while the same person stays signed in", async () => {
+    const offline = await load();
+    expect(await offline.purgeVisitedOnUserChange("user-ada")).toBe(true); // first run: unknown owner
+    await browsed();
+    expect(await offline.purgeVisitedOnUserChange("user-ada")).toBe(false);
+    expect(cacheStorage.caches.has(VISITED)).toBe(true);
+  });
+
+  it("empties it when a different user signs in on the same device", async () => {
+    const offline = await load();
+    await offline.purgeVisitedOnUserChange("user-ada");
+    await browsed();
+    expect(await offline.purgeVisitedOnUserChange("user-grace")).toBe(true);
+    expect(cacheStorage.caches.has(VISITED)).toBe(false);
+  });
+
+  it("empties it when the session ends and the next load is signed out", async () => {
+    const offline = await load();
+    await offline.purgeVisitedOnUserChange("user-ada");
+    await browsed();
+    expect(await offline.purgeVisitedOnUserChange(null)).toBe(true);
+    expect(cacheStorage.caches.has(VISITED)).toBe(false);
+    // Signed out is an owner too: browsing on while signed out keeps what it gathers.
+    await browsed();
+    expect(await offline.purgeVisitedOnUserChange(null)).toBe(false);
+    expect(cacheStorage.caches.has(VISITED)).toBe(true);
+  });
+
+  it("treats an unknown owner as a change, since nobody can say whose pages these are", async () => {
+    const offline = await load();
+    await browsed();
+    expect(await offline.purgeVisitedOnUserChange("user-ada")).toBe(true);
+    expect(cacheStorage.caches.has(VISITED)).toBe(false);
+  });
+
+  it("leaves the learner's downloads alone", async () => {
+    const offline = await load();
+    await offline.saveLesson(lesson("one"));
+    await offline.purgeVisitedOnUserChange("user-ada");
+    await browsed();
+    await offline.purgeVisitedOnUserChange("user-grace");
+    expect(await cachedPaths(offline)).toEqual(["/bam/signals/lesson/one"]);
+  });
+
+  it("is cleared outright on sign-out, and the next owner starts from unknown", async () => {
+    const offline = await load();
+    await offline.purgeVisitedOnUserChange("user-ada");
+    await browsed();
+    await offline.clearVisitedPages();
+    expect(cacheStorage.caches.has(VISITED)).toBe(false);
+    expect(localStorage.getItem("witus:visited-owner")).toBeNull();
+  });
+});
+
+describe("asking the worker to fetch the front door again", () => {
+  it("posts the warm message to the active worker", async () => {
+    const postMessage = vi.fn();
+    vi.stubGlobal("navigator", { serviceWorker: { ready: Promise.resolve({ active: { postMessage } }) } });
+    const offline = await load();
+    await offline.warmFrontDoor();
+    expect(postMessage).toHaveBeenCalledWith({ type: "witus:warm-front-door" });
+  });
+
+  it("does nothing in a browser with no service worker", async () => {
+    vi.stubGlobal("navigator", {});
+    const offline = await load();
+    await expect(offline.warmFrontDoor()).resolves.toBeUndefined();
+  });
+});

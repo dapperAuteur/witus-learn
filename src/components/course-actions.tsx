@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { failureMessage, serverFetch } from "@/lib/needs-connection";
 
 /**
  * What a price change does to someone who enrolls TODAY. Every sentence is what the code does, not a
@@ -55,7 +56,14 @@ export function CourseActions({
   async function enroll() {
     setError(null);
     setPending(true);
-    const r = await fetch(`/api/courses/${courseId}/enroll`, { method: "POST" });
+    let r: Response;
+    try {
+      r = await serverFetch(`/api/courses/${courseId}/enroll`, { method: "POST" });
+    } catch (err) {
+      setPending(false);
+      setError(failureMessage(err, "Could not enroll."));
+      return;
+    }
     const data = await r
       .json()
       .catch(() => ({}) as { url?: string; error?: string; unmet?: { title: string }[] });
@@ -76,10 +84,17 @@ export function CourseActions({
   }
 
   async function complete() {
+    setError(null);
     setPending(true);
-    const r = await fetch(`/api/courses/${courseId}/complete`, { method: "POST" });
-    setPending(false);
-    if (r.ok) setVerifyUrl(`/verify/${(await r.json()).verificationToken}`);
+    try {
+      const r = await serverFetch(`/api/courses/${courseId}/complete`, { method: "POST" });
+      setPending(false);
+      if (r.ok) setVerifyUrl(`/verify/${(await r.json()).verificationToken}`);
+      else setError("Could not issue the certificate.");
+    } catch (err) {
+      setPending(false);
+      setError(failureMessage(err, "Could not issue the certificate."));
+    }
   }
 
   return (

@@ -768,6 +768,31 @@ optional: three env vars (`CRON_SECRET`, `DEMO_VISITOR_PASSWORD`, `DEMO_VISITOR_
 it, the app boots fine without them. See [src/db/queries/demo.ts](src/db/queries/demo.ts) and
 `plans/user-tasks/62-demo-account-setup.md`.
 
+## Offline: what works without a connection
+
+The service worker (`public/sw.js`, **v6**) is network-first: online, every page is always fresh.
+With no connection, a page navigation is answered, in order, by the learner's **saved** copy
+(`witus-pages-v1`, "Save for offline"), the copy **remembered the last time that exact URL was opened**
+(`witus-visited-v1`), the install-time shell, and finally `/offline`. The visited cache:
+
+- fills on its own as public pages are opened, plus `/`, `/downloads`, `/offline` and `/help` at
+  install (with their JS/CSS), so an installed app opens at `/` offline on first launch;
+- is capped at about 150 entries (least recently opened dropped first) and skips anything over 1.5 MB;
+- **never** stores sign-in and invite routes, signed-in areas (`/dashboard`, `/admin`, `/teach`,
+  `/audit`, `/cohorts`, `/family`, `/field-log`, `/my-courses`), checkout or billing, URLs carrying
+  `token`, `session_id` or `code`, redirects, responses that set a cookie, or responses a route marks
+  `private`/`no-store` (the one exception is the `Cache-Control` Next.js puts on **every** dynamic
+  page, which would otherwise exclude every page);
+- is emptied when the signed-in user changes or signs out (`OfflinePrivacyGuard`, sign-out button).
+
+Offline, the root layout shows a "You're offline" bar on every page (`OfflineBanner`), in-app links
+load the page in full so the worker can answer them (`OfflineLinkFallback`, `src/lib/offline-links.ts`),
+and server-backed buttons say "Needs a connection" (`src/lib/needs-connection.ts`). Writes that can wait
+still go through the offline outbox. Tests: `tests/offline-nav.test.ts` runs the real worker over a dead
+network; `e2e/offline-app-shell.spec.ts` drives it in a browser (see `e2e/support/offline.ts` for why
+`context.setOffline` alone does not take a service worker offline). Kill-switch:
+`NEXT_PUBLIC_DISABLE_SW=1`.
+
 ## Develop
 
 ```bash

@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
+import { NEEDS_CONNECTION, NeedsConnectionError, serverFetch } from "@/lib/needs-connection";
 
 // "Try the demo" — POSTs with an empty body; the server supplies DEMO_VISITOR_PASSWORD
 // itself (src/app/api/demo-login/route.ts), so no secret ever reaches this component.
@@ -10,14 +11,20 @@ import { useRouter } from "next/navigation";
 export function DemoLoginButton() {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
-  const [error, setError] = useState(false);
+  const [error, setError] = useState<"failed" | "offline" | null>(null);
 
   function onClick() {
-    setError(false);
+    setError(null);
     startTransition(async () => {
-      const res = await fetch("/api/demo-login", { method: "POST" });
+      let res: Response;
+      try {
+        res = await serverFetch("/api/demo-login", { method: "POST" });
+      } catch (err) {
+        setError(err instanceof NeedsConnectionError ? "offline" : "failed");
+        return;
+      }
       if (!res.ok) {
-        setError(true);
+        setError("failed");
         return;
       }
       // A real session cookie is now set — go straight to the dashboard.
@@ -42,7 +49,7 @@ export function DemoLoginButton() {
       </p>
       {error ? (
         <p role="alert" className="mt-2 text-center text-sm text-red-600">
-          Couldn&apos;t start the demo. Please try again.
+          {error === "offline" ? NEEDS_CONNECTION : "Couldn't start the demo. Please try again."}
         </p>
       ) : null}
     </div>
