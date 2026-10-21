@@ -29,10 +29,24 @@ const ASSETS_CACHE = "witus-assets-v1";
 // when the signed-in user changes (src/components/offline-privacy-guard.tsx). Keep the name in
 // sync with src/lib/offline.ts.
 const VISITED_CACHE = "witus-visited-v1";
-// About 150 pages, oldest dropped first, and nothing over 1.5 MB, so the cache stays a small,
-// predictable share of the device's storage. HTML and RSC entries count alike.
-const VISITED_MAX_ENTRIES = 150;
-const VISITED_MAX_BYTES = 1.5 * 1024 * 1024;
+// Bounded three ways, least recently USED dropped first (opening a copy offline counts as use):
+//  - 150 pages and, separately, 50 router payloads. Pages reached by a tap store both a payload
+//    and the page, so one shared count filled twice as fast; payloads only help in the rare
+//    "connected but no data" case, so they get the smaller budget and can never push a page out.
+//  - per entry: a page up to 2 MB, a payload up to 1 MB. Measured on this app's own build
+//    (2026-10-21): pages run a median 105 KB, p90 165 KB; the largest is the full catalog at
+//    1.16 MB with 276 courses, about 4 KB per course, so 2 MB still fits it at ~480 courses.
+//    The largest payload is that catalog's, at 0.6 MB.
+//  - 40 MB for the whole cache: 150 median pages are ~16 MB, p90 pages ~25 MB, so the total
+//    only binds when many pages are unusually large.
+// Pages the learner saved on purpose live in PAGES_CACHE, which eviction never touches.
+const VISITED_MAX_PAGES = 150;
+const VISITED_MAX_PAYLOADS = 50;
+const VISITED_MAX_PAGE_BYTES = 2 * 1024 * 1024;
+const VISITED_MAX_PAYLOAD_BYTES = 1024 * 1024;
+const VISITED_MAX_TOTAL_BYTES = 40 * 1024 * 1024;
+// Each copy records its own size, so eviction can sum the cache without reading every body.
+const SIZE_HEADER = "x-witus-bytes";
 const OFFLINE_URL = "/offline";
 // The Downloads manager — the ONLY screen where a learner can see and delete what they've saved.
 // It has to work with no network, so it's precached here alongside the offline fallback. Both are
@@ -106,6 +120,56 @@ const storableResponse = (res) =>
   !res.headers.has("set-cookie") &&
   !optsOutOfCaching(res);
 
+// What may be stored as a page, decided in ONE place so no write path can skip it. A document is
+// a plain 200 HTML response; a router (RSC) payload is a plain 200 text/x-component response, and
+// it is kept only under its own `_rsc` URL, so it can never sit at a page's address and be found
+// where a document is expected. Error pages, redirects and any other body are refused.
+const hasRscKey = (key) => new URL(typeof key === "string" ? key : key.url, self.location.origin).searchParams.has("_rsc");
+const storableDocument = (res) => Boolean(res) && storableResponse(res) && isHtml(res);
+const storablePayload = (res) => Boolean(res) && storableResponse(res) && isRscPayload(res);
+const storableUnder = (key, res) => (hasRscKey(key) ? storablePayload(res) : storableDocument(res));
+
+/** Store a document in a shell cache (install-time /offline and /downloads), under the same rule. */
+async function putDocument(cacheName, path) {
+  const res = await fetch(path, { credentials: "same-origin" });
+  if (!storableDocument(res)) return;
+  await (await caches.open(cacheName)).put(path, res);
+}
+
+// Sign-out must not leave behind a page that was still being saved when it started. Every write
+// into VISITED_CACHE goes through remember(), which notes the generation it began in; sign-out
+// (settleOfflineSaves in src/lib/offline.ts) posts SETTLE_SAVES before it purges, which bumps the
+// generation, aborts in-flight fetches and waits for running saves to finish. A save from an
+// older generation then drops its copy instead of writing it, and one that already wrote deletes
+// it again, so nothing begun before sign-out survives the purge that follows it.
+const SETTLE_SAVES = "witus:settle-saves";
+let saveGeneration = 0;
+const savesInFlight = new Set();
+
+/** Run a background save so SETTLE_SAVES can abort it (through `signal`) and wait for it. */
+function trackSave(run) {
+  const entry = { controller: new AbortController(), done: undefined };
+  entry.done = Promise.resolve()
+    .then(() => run(entry.controller.signal))
+    .finally(() => savesInFlight.delete(entry));
+  savesInFlight.add(entry);
+  return entry.done;
+}
+
+async function settleSaves() {
+  saveGeneration++;
+  const pending = [...savesInFlight];
+  for (const save of pending) save.controller.abort();
+  await Promise.allSettled(pending.map((save) => save.done));
+}
+
+/** Aborts on whichever fires first: the save's own controller or its timeout. */
+function saveSignal(signal, timeoutMs) {
+  if (typeof AbortSignal.timeout !== "function") return signal;
+  const timeout = AbortSignal.timeout(timeoutMs);
+  return typeof AbortSignal.any === "function" ? AbortSignal.any([signal, timeout]) : signal;
+}
+
 /**
  * Remember a public page's response as its last good copy. Best-effort and off the critical path:
  * the visitor already has `res`; this works on a clone. The body is read to measure it (streamed
@@ -114,19 +178,59 @@ const storableResponse = (res) =>
  * Re-putting a key deletes it first, so the Cache API's insertion order is "least recently visited
  * first" and the eviction below drops the page opened longest ago.
  */
-async function remember(key, res) {
-  try {
-    const body = await res.arrayBuffer();
-    if (body.byteLength > VISITED_MAX_BYTES) return;
-    const cache = await caches.open(VISITED_CACHE);
-    await cache.delete(key);
-    await cache.put(key, new Response(body, { status: res.status, statusText: res.statusText, headers: res.headers }));
-    const keys = await cache.keys();
-    const excess = keys.length - VISITED_MAX_ENTRIES;
-    for (let i = 0; i < excess; i++) await cache.delete(keys[i]);
-  } catch {
-    /* quota or a torn stream: the copy is a convenience, never worth an error */
+function remember(key, res, generation = saveGeneration) {
+  return trackSave(async () => {
+    if (!storableUnder(key, res)) return;
+    try {
+      const body = await res.arrayBuffer();
+      if (body.byteLength > (hasRscKey(key) ? VISITED_MAX_PAYLOAD_BYTES : VISITED_MAX_PAGE_BYTES)) return;
+      if (generation !== saveGeneration) return; // sign-out started while this was in flight
+      const cache = await caches.open(VISITED_CACHE);
+      const headers = new Headers(res.headers);
+      headers.set(SIZE_HEADER, String(body.byteLength));
+      await cache.delete(key, { ignoreVary: true });
+      await cache.put(key, new Response(body, { status: res.status, statusText: res.statusText, headers }));
+      if (generation !== saveGeneration) {
+        await cache.delete(key, { ignoreVary: true });
+        return;
+      }
+      await evictVisited(cache);
+    } catch {
+      /* quota or a torn stream: the copy is a convenience, never worth an error */
+    }
+  });
+}
+
+/**
+ * Drop least-recently-used copies until every budget holds. Cache keys come back in insertion
+ * order and every write (and every offline use, see touchVisited) deletes before it puts, so the
+ * first key is the one used longest ago. Pages and payloads are counted apart, so evicting for one
+ * budget never takes from the other; the byte total takes the oldest of either.
+ */
+async function evictVisited(cache) {
+  const keys = await cache.keys();
+  const entries = await Promise.all(
+    keys.map(async (key) => {
+      const hit = await cache.match(key, { ignoreVary: true });
+      return { key, payload: hasRscKey(key), bytes: Number(hit?.headers.get(SIZE_HEADER)) || 0 };
+    }),
+  );
+  let pages = entries.filter((e) => !e.payload).length;
+  let payloads = entries.length - pages;
+  let total = entries.reduce((sum, e) => sum + e.bytes, 0);
+  for (const e of entries) {
+    const overCount = e.payload ? payloads > VISITED_MAX_PAYLOADS : pages > VISITED_MAX_PAGES;
+    if (!overCount && total <= VISITED_MAX_TOTAL_BYTES) continue;
+    await cache.delete(e.key, { ignoreVary: true });
+    total -= e.bytes;
+    if (e.payload) payloads--;
+    else pages--;
   }
+}
+
+/** A copy opened offline counts as used: move it to the newest end so it is evicted last. */
+function touchVisited(key, hit) {
+  return remember(key, hit.clone());
 }
 
 // A tap on an in-app link is an RSC fetch, never a document load, so on its own it leaves no page
@@ -141,20 +245,22 @@ async function rememberDocument(rscUrl) {
   url.searchParams.delete("_rsc");
   if (!rememberable(url)) return;
   const key = url.origin + url.pathname + url.search;
-  try {
-    const cache = await caches.open(VISITED_CACHE);
-    const prior = await cache.match(key, { ignoreVary: true });
-    const age = prior ? Date.now() - Date.parse(prior.headers.get("date") || "") : Infinity;
-    if (isHtml(prior) && age < DOCUMENT_REFRESH_MS) return;
-    const signal = typeof AbortSignal.timeout === "function" ? AbortSignal.timeout(PRECACHE_TIMEOUT_MS) : undefined;
-    const res = await fetch(key, { credentials: "same-origin", signal });
-    if (!storableResponse(res) || !isHtml(res)) return;
-    const html = await res.clone().text();
-    await remember(key, res);
-    await cachePageAssets(html);
-  } catch {
-    /* offline or slow: the page itself already rendered from the RSC payload */
-  }
+  const generation = saveGeneration;
+  await trackSave(async (signal) => {
+    try {
+      const cache = await caches.open(VISITED_CACHE);
+      const prior = await cache.match(key, { ignoreVary: true });
+      const age = prior ? Date.now() - Date.parse(prior.headers.get("date") || "") : Infinity;
+      if (isHtml(prior) && age < DOCUMENT_REFRESH_MS) return;
+      const res = await fetch(key, { credentials: "same-origin", signal: saveSignal(signal, PRECACHE_TIMEOUT_MS) });
+      if (!storableDocument(res)) return;
+      const html = await res.clone().text();
+      await remember(key, res, generation);
+      if (generation === saveGeneration) await cachePageAssets(html);
+    } catch {
+      /* offline, slow or cancelled by sign-out: the page already rendered from the RSC payload */
+    }
+  });
 }
 
 // The visited copy of this exact URL (path AND query: `/courses?category=art` is its own page).
@@ -162,8 +268,11 @@ async function rememberDocument(rscUrl) {
 async function visitedDocument(url) {
   if (!rememberable(url)) return undefined;
   const cache = await caches.open(VISITED_CACHE);
-  const hit = await cache.match(url.origin + url.pathname + url.search, { ignoreVary: true });
-  return isHtml(hit) ? hit : undefined;
+  const key = url.origin + url.pathname + url.search;
+  const hit = await cache.match(key, { ignoreVary: true });
+  if (!isHtml(hit)) return undefined;
+  void touchVisited(key, hit);
+  return hit;
 }
 
 // The saved document for this path, HTML only. Matched on the exact path (query string dropped),
@@ -197,7 +306,9 @@ async function offlinePage(url) {
 async function visitedPayload(request) {
   const cache = await caches.open(VISITED_CACHE);
   const hit = await cache.match(request);
-  return isRscPayload(hit) ? hit : undefined;
+  if (!isRscPayload(hit)) return undefined;
+  void touchVisited(request, hit);
+  return hit;
 }
 
 // What a navigation gets when the network can't answer it: the learner's saved copy, then the
@@ -262,7 +373,7 @@ async function precacheFrontDoor() {
       try {
         const signal = typeof AbortSignal.timeout === "function" ? AbortSignal.timeout(PRECACHE_TIMEOUT_MS) : undefined;
         const res = await fetch(url.href, { credentials: "same-origin", signal });
-        if (!storableResponse(res) || !isHtml(res)) return;
+        if (!storableDocument(res)) return;
         const html = await res.clone().text();
         await remember(url.href, res);
         await cachePageAssets(html);
@@ -277,10 +388,10 @@ self.addEventListener("install", (event) => {
   // Added independently (not addAll) so one failing fetch doesn't take the other down with it.
   event.waitUntil(
     Promise.all([
-      caches
-        .open(STATIC_CACHE)
-        .then((c) => Promise.all([c.add(OFFLINE_URL).catch(() => {}), c.add(DOWNLOADS_URL).catch(() => {})]))
-        .catch(() => {}),
+      // Fetched and checked, not cache.add(): add() would keep a redirect to /login or a 2xx
+      // that is not a page.
+      putDocument(STATIC_CACHE, OFFLINE_URL).catch(() => {}),
+      putDocument(STATIC_CACHE, DOWNLOADS_URL).catch(() => {}),
       precacheFrontDoor(),
     ]),
   );
@@ -292,6 +403,11 @@ self.addEventListener("install", (event) => {
 const WARM_FRONT_DOOR = "witus:warm-front-door";
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === WARM_FRONT_DOOR) event.waitUntil(precacheFrontDoor());
+  // Sign-out: cancel and wait for every background save, then answer on the port the page sent,
+  // so the page purges only once nothing from before sign-out can still land.
+  if (event.data && event.data.type === SETTLE_SAVES) {
+    event.waitUntil(settleSaves().then(() => event.ports?.[0]?.postMessage({ type: SETTLE_SAVES })));
+  }
 });
 
 self.addEventListener("activate", (event) => {
@@ -339,8 +455,11 @@ self.addEventListener("fetch", (event) => {
         (hit) =>
           hit ||
           fetch(request).then((res) => {
-            const copy = res.clone();
-            caches.open(STATIC_CACHE).then((c) => c.put(request, copy));
+            // Only a real asset: a 404 or 500 cached here would be served cache-first forever.
+            if (res.status === 200 && !res.redirected) {
+              const copy = res.clone();
+              caches.open(STATIC_CACHE).then((c) => c.put(request, copy));
+            }
             return res;
           }),
       ),
@@ -373,7 +492,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request).then(
         (res) => {
-          if (!isPrefetch && rememberable(url) && storableResponse(res) && isRscPayload(res)) {
+          if (!isPrefetch && rememberable(url) && hasRscKey(request) && storablePayload(res)) {
             event.waitUntil(Promise.all([remember(request, res.clone()), rememberDocument(url)]));
           }
           return res;
@@ -402,7 +521,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request).then(
         async (res) => {
-          if (rememberable(url) && storableResponse(res) && isHtml(res)) {
+          if (rememberable(url) && storableDocument(res)) {
             event.waitUntil(remember(url.origin + url.pathname + url.search, res.clone()));
           }
           if (res.status < 500 || neverFromCache(url.pathname)) return res;

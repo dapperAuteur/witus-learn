@@ -155,9 +155,9 @@ function bootServiceWorker(fetchImpl: typeof fetch) {
   }
 
   /** Post a message to the worker, as a page's `registration.active.postMessage` would. */
-  async function postMessage(data: unknown) {
+  async function postMessage(data: unknown, ports: { postMessage: (m: unknown) => void }[] = []) {
     const waits: Promise<unknown>[] = [];
-    listeners.get("message")?.({ data, waitUntil: (p: Promise<unknown>) => waits.push(p) });
+    listeners.get("message")?.({ data, ports, waitUntil: (p: Promise<unknown>) => waits.push(p) });
     await Promise.all(waits);
   }
 
@@ -467,11 +467,16 @@ describe("visited public pages are remembered and served offline (worker v6)", (
     expect(keys).not.toContain(`${ORIGIN}/p-0`);
   });
 
-  it("skips a page over 1.5 MB", async () => {
-    const big = vi.fn(async () => html(`<p>${"x".repeat(1.6 * 1024 * 1024)}</p>`)) as unknown as typeof fetch;
+  it("skips a page over 2 MB, and keeps one the size of the full catalog", async () => {
+    const big = vi.fn(async () => html(`<p>${"x".repeat(2.1 * 1024 * 1024)}</p>`)) as unknown as typeof fetch;
     const online = bootServiceWorker(big);
     await online.dispatchFetch(hardNavigation("/huge"));
     expect(await (await online.cacheStorage.open(VISITED)).keys()).toHaveLength(0);
+    // /courses measured 1.16 MB with 276 courses: well inside the limit, with room to grow.
+    const catalog = vi.fn(async () => html(`<p>${"x".repeat(1.6 * 1024 * 1024)}</p>`)) as unknown as typeof fetch;
+    const sw = bootServiceWorker(catalog);
+    await sw.dispatchFetch(hardNavigation("/courses"));
+    expect(await (await sw.cacheStorage.open(VISITED)).keys()).toEqual([`${ORIGIN}/courses`]);
   });
 
   it("does not remember an error page, a non-HTML answer or a redirect", async () => {
@@ -810,5 +815,220 @@ describe("the front door is precached, so a first offline launch opens the app (
     await sw.cacheStorage.delete(VISITED);
     await sw.postMessage({ type: "something-else" });
     expect(sw.cacheStorage.caches.has(VISITED)).toBe(false);
+  });
+});
+
+describe("sign-out cancels the worker's background saves before the purge (privacy)", () => {
+  const VISITED = "witus-visited-v1";
+  const SETTLE = { type: "witus:settle-saves" };
+  const flush = () => new Promise((r) => setTimeout(r, 0));
+
+  /** The router's tap answers at once; the follow-up document fetch waits until `release()`. */
+  function slowDocumentServer({ honorAbort }: { honorAbort: boolean }) {
+    let release!: () => void;
+    const gate = new Promise<void>((r) => (release = r));
+    const net = vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
+      const isRsc = typeof input !== "string" && (input as { headers?: Headers }).headers?.get?.("RSC") === "1";
+      if (isRsc) return new Response('0:["$","main"]', { status: 200, headers: { "content-type": "text/x-component" } });
+      await new Promise<void>((resolve, reject) => {
+        void gate.then(resolve);
+        if (!honorAbort) return;
+          // As a real fetch does: an already-aborted signal rejects at once.
+          if (init?.signal?.aborted) reject(new DOMException("Aborted", "AbortError"));
+          init?.signal?.addEventListener("abort", () => reject(new DOMException("Aborted", "AbortError")));
+      });
+      return new Response("<h1>PRIVATE: Ada's view of this page</h1>", {
+        status: 200,
+        headers: { "content-type": "text/html", date: new Date().toUTCString() },
+      });
+    });
+    return { net: net as unknown as typeof fetch, release };
+  }
+
+  it("a page still downloading when sign-out starts is not written after it", async () => {
+    const { net, release } = slowDocumentServer({ honorAbort: false });
+    const sw = bootServiceWorker(net);
+    const tap = sw.dispatchFetch(rscNavigation("/bam/knots?_rsc=a")); // background save now in flight
+    await flush();
+
+    const port = { postMessage: vi.fn() };
+    const settled = sw.postMessage(SETTLE, [port]);
+    release(); // the server answers only AFTER sign-out began
+    await Promise.all([tap, settled]);
+
+    const keys = (await (await sw.cacheStorage.open(VISITED)).keys()).map(String);
+    expect(keys).not.toContain(`${ORIGIN}/bam/knots`);
+    // The worker said it was done, which is what the page waits for before it purges.
+    expect(port.postMessage).toHaveBeenCalledWith(SETTLE);
+  });
+
+  it("aborts the download rather than waiting it out, so sign-out stays fast", async () => {
+    const { net } = slowDocumentServer({ honorAbort: true });
+    const sw = bootServiceWorker(net);
+    const tap = sw.dispatchFetch(rscNavigation("/bam/knots?_rsc=a"));
+    await flush();
+    const port = { postMessage: vi.fn() };
+    await sw.postMessage(SETTLE, [port]); // resolves without the server ever answering
+    await tap;
+    expect(port.postMessage).toHaveBeenCalledWith(SETTLE);
+    expect((await (await sw.cacheStorage.open(VISITED)).keys()).map(String)).not.toContain(`${ORIGIN}/bam/knots`);
+  });
+
+  it("keeps remembering normally for whoever browses after sign-out", async () => {
+    const { net, release } = slowDocumentServer({ honorAbort: false });
+    release();
+    const sw = bootServiceWorker(net);
+    await sw.postMessage(SETTLE, [{ postMessage: () => {} }]);
+    await sw.dispatchFetch(rscNavigation("/bam/knots?_rsc=b"));
+    expect((await (await sw.cacheStorage.open(VISITED)).keys()).map(String)).toContain(`${ORIGIN}/bam/knots`);
+  });
+});
+
+describe("only real pages are kept by the worker", () => {
+  const VISITED = "witus-visited-v1";
+  const visitedKeys = async (sw: ReturnType<typeof bootServiceWorker>) =>
+    (await (await sw.cacheStorage.open(VISITED)).keys()).map((r) => (typeof r === "string" ? r : (r as Request).url));
+  const typed = (body: string, type: string, status = 200) => new Response(body, { status, headers: { "content-type": type } });
+  const redirectedRes = (res: Response) => Object.defineProperty(res, "redirected", { value: true });
+
+  it("never keeps an error page, a redirect or a non-HTML body from a navigation", async () => {
+    for (const make of [
+      () => typed("<h1>Server error</h1>", "text/html", 500),
+      () => typed("<h1>Not found</h1>", "text/html", 404),
+      () => redirectedRes(typed("<h1>Sign in</h1>", "text/html")),
+      () => typed('{"ok":true}', "application/json"),
+      () => typed("plain", "text/plain"),
+    ]) {
+      const sw = bootServiceWorker(vi.fn(async () => make()) as unknown as typeof fetch);
+      await sw.dispatchFetch(hardNavigation("/bam/knots"));
+      expect(await visitedKeys(sw)).toEqual([]);
+    }
+  });
+
+  it("never keeps an error page or a redirect fetched after a tap", async () => {
+    for (const doc of [
+      () => typed("<h1>Server error</h1>", "text/html", 500),
+      () => redirectedRes(typed("<h1>Sign in</h1>", "text/html")),
+      () => typed('{"ok":true}', "application/json"),
+    ]) {
+      const net = vi.fn(async (input: RequestInfo | URL) =>
+        typeof input === "string" ? doc() : typed('0:["$","main"]', "text/x-component"),
+      );
+      const sw = bootServiceWorker(net as unknown as typeof fetch);
+      await sw.dispatchFetch(rscNavigation("/bam/knots?_rsc=a"));
+      expect(await visitedKeys(sw)).not.toContain(`${ORIGIN}/bam/knots`);
+    }
+  });
+
+  it("keeps a router payload only when it is one, and only under its own _rsc key", async () => {
+    // A tap answered with HTML (an error page) is not a payload.
+    const asHtml = bootServiceWorker(vi.fn(async () => typed("<h1>x</h1>", "text/html")) as unknown as typeof fetch);
+    await asHtml.dispatchFetch(rscNavigation("/bam/knots?_rsc=a"));
+    expect(await visitedKeys(asHtml)).not.toContain(`${ORIGIN}/bam/knots?_rsc=a`);
+
+    // A payload whose request has no _rsc key would sit at the page's own address: not kept.
+    const noKey = bootServiceWorker(vi.fn(async () => typed("0:[]", "text/x-component")) as unknown as typeof fetch);
+    await noKey.dispatchFetch(rscNavigation("/bam/knots"));
+    expect(await visitedKeys(noKey)).toEqual([]);
+  });
+
+  it("does not precache an /offline that redirected, and does not cache a missing asset", async () => {
+    const net = vi.fn(async (input: RequestInfo | URL) => {
+      const url = new URL(typeof input === "string" ? input : (input as { url: string }).url, ORIGIN);
+      if (url.pathname === "/offline") return redirectedRes(typed("<h1>Sign in</h1>", "text/html"));
+      if (url.pathname.startsWith("/_next/")) return typed("Not found", "text/html", 404);
+      return typed("<h1>page</h1>", "text/html");
+    });
+    const sw = bootServiceWorker(net as unknown as typeof fetch);
+    await sw.install();
+    const staticKeys = async () =>
+      (await (await sw.cacheStorage.open("witus-static-v6")).keys()).map((r) => (typeof r === "string" ? r : (r as Request).url));
+    expect((await staticKeys()).some((k) => k.endsWith("/offline"))).toBe(false);
+    expect((await staticKeys()).some((k) => k.endsWith("/downloads"))).toBe(true);
+
+    await sw.dispatchFetch({ method: "GET", url: `${ORIGIN}/_next/static/chunks/gone.js`, mode: "no-cors", destination: "script", headers: new Headers() });
+    await new Promise((r) => setTimeout(r, 0));
+    expect((await staticKeys()).some((k) => k.includes("gone.js"))).toBe(false);
+  });
+});
+
+describe("the visited cache stays bounded, least recently used first (worker v6)", () => {
+  const VISITED = "witus-visited-v1";
+  const PAGES = "witus-pages-v1";
+  const keysOf = async (sw: ReturnType<typeof bootServiceWorker>, name = VISITED) =>
+    (await (await sw.cacheStorage.open(name)).keys()).map((r) => (typeof r === "string" ? r : (r as Request).url));
+  const page = (body = "") =>
+    new Response(`<h1>LIVE</h1>${body}`, { status: 200, headers: { "content-type": "text/html", date: new Date().toUTCString() } });
+  const payload = (size = 10) =>
+    new Response(`0:${"x".repeat(size)}`, { status: 200, headers: { "content-type": "text/x-component" } });
+
+  /** Pages answer as HTML; router fetches answer as payloads, and the follow-up document fetch
+   *  after a tap gets a non-page, so a tap stores ONLY its payload (to test the payload budget). */
+  const net = (pageBody = () => "") =>
+    vi.fn(async (input: RequestInfo | URL) => {
+      if (typeof input === "string") return new Response("{}", { status: 200, headers: { "content-type": "application/json" } });
+      const headers = (input as { headers?: Headers }).headers;
+      return headers?.get?.("RSC") === "1" ? payload() : page(pageBody());
+    }) as unknown as typeof fetch;
+
+  it("gives router payloads their own budget, so taps never push pages out", async () => {
+    const sw = bootServiceWorker(net());
+    for (let i = 0; i < 150; i++) await sw.dispatchFetch(hardNavigation(`/page-${i}`));
+    for (let i = 0; i < 60; i++) await sw.dispatchFetch(rscNavigation(`/tap-${i}?_rsc=r${i}`));
+    const keys = await keysOf(sw);
+    expect(keys.filter((k) => !k.includes("_rsc"))).toHaveLength(150);
+    expect(keys).toContain(`${ORIGIN}/page-0`);
+    const payloads = keys.filter((k) => k.includes("_rsc"));
+    expect(payloads).toHaveLength(50);
+    expect(payloads).not.toContain(`${ORIGIN}/tap-0?_rsc=r0`); // the oldest payloads went
+    expect(payloads).toContain(`${ORIGIN}/tap-59?_rsc=r59`);
+  });
+
+  it("counts opening a copy offline as use, so it is evicted last", async () => {
+    const online = bootServiceWorker(net());
+    for (let i = 0; i < 150; i++) await online.dispatchFetch(hardNavigation(`/page-${i}`));
+
+    const dead = await goOffline(online);
+    expect(await (await dead.dispatchFetch(hardNavigation("/page-0")))!.text()).toContain("LIVE");
+    await new Promise((r) => setTimeout(r, 0)); // the touch lands after the answer
+
+    const back = bootServiceWorker(net());
+    for (const [name, cache] of dead.cacheStorage.caches) {
+      const target = await back.cacheStorage.open(name);
+      for (const [k, v] of cache.store) target.store.set(k, v);
+    }
+    await back.dispatchFetch(hardNavigation("/new-page"));
+    const keys = await keysOf(back);
+    expect(keys).toContain(`${ORIGIN}/page-0`); // used offline: kept
+    expect(keys).not.toContain(`${ORIGIN}/page-1`); // now the least recently used
+  });
+
+  it("caps the whole cache at 40 MB, dropping the oldest pages first", async () => {
+    const big = "x".repeat(1.9 * 1024 * 1024);
+    const sw = bootServiceWorker(net(() => big));
+    for (let i = 0; i < 25; i++) await sw.dispatchFetch(hardNavigation(`/big-${i}`));
+    const keys = await keysOf(sw);
+    expect(keys).toHaveLength(21); // 21 × 1.9 MB fits in 40 MB; 22 would not
+    expect(keys).not.toContain(`${ORIGIN}/big-0`);
+    expect(keys).toContain(`${ORIGIN}/big-24`);
+  });
+
+  it("skips a router payload over 1 MB", async () => {
+    const sw = bootServiceWorker(vi.fn(async () => payload(1.1 * 1024 * 1024)) as unknown as typeof fetch);
+    await sw.dispatchFetch(rscNavigation("/courses?_rsc=big"));
+    expect(await keysOf(sw)).toEqual([]);
+  });
+
+  it("never evicts a page the learner saved, and still serves it offline", async () => {
+    const online = bootServiceWorker(net());
+    const saved = await online.cacheStorage.open(PAGES);
+    await saved.put("/bam/knots/lesson/one", html("<h1>SAVED lesson one</h1>"));
+    await online.dispatchFetch(hardNavigation("/bam/knots/lesson/one")); // visited too, then pushed out
+    for (let i = 0; i < 200; i++) await online.dispatchFetch(hardNavigation(`/page-${i}`));
+
+    expect(await keysOf(online)).not.toContain(`${ORIGIN}/bam/knots/lesson/one`);
+    expect(await keysOf(online, PAGES)).toContain(`${ORIGIN}/bam/knots/lesson/one`);
+    const dead = await goOffline(online);
+    expect(await (await dead.dispatchFetch(hardNavigation("/bam/knots/lesson/one")))!.text()).toContain("SAVED lesson one");
   });
 });

@@ -154,6 +154,97 @@ export function offlineSupported(): boolean {
 }
 
 /**
+ * Saves that were still running when sign-out began must not outlive its purge: a page fetched for
+ * the signed-in person and written a moment after the purge would stay on the device for whoever
+ * picks it up next. Every page save notes the generation it started in and registers itself here;
+ * settleOfflineSaves() bumps the generation, aborts in-flight fetches and waits for them. A save
+ * from an older generation then refuses to write, and deletes what it wrote if it lost the race.
+ */
+let saveGeneration = 0;
+type InFlightSave = { controller: AbortController; done: Promise<unknown> };
+const savesInFlight = new Set<InFlightSave>();
+
+/** Thrown by a save that sign-out cancelled. Callers treat it like any other failed save. */
+export class OfflineSaveCancelled extends Error {
+  constructor(pathname: string) {
+    super(`Offline save of ${pathname} was cancelled by sign-out`);
+    this.name = "OfflineSaveCancelled";
+  }
+}
+
+function trackSave<T>(run: (signal: AbortSignal, generation: number) => Promise<T>): Promise<T> {
+  const controller = new AbortController();
+  const done = run(controller.signal, saveGeneration);
+  const entry: InFlightSave = { controller, done };
+  savesInFlight.add(entry);
+  void done.then(
+    () => savesInFlight.delete(entry),
+    () => savesInFlight.delete(entry),
+  );
+  return done;
+}
+
+/** The message public/sw.js answers once its own background saves are cancelled. Keep in sync. */
+export const SETTLE_SAVES = "witus:settle-saves";
+
+/** Ask the service worker to cancel and finish its background saves, and wait for its answer. */
+async function settleWorkerSaves(): Promise<void> {
+  if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) return;
+  const worker = navigator.serviceWorker.controller;
+  if (!worker || typeof MessageChannel === "undefined") return;
+  const channel = new MessageChannel();
+  const answered = new Promise<void>((resolve) => {
+    channel.port1.onmessage = () => resolve();
+  });
+  worker.postMessage({ type: SETTLE_SAVES }, [channel.port2]);
+  await answered;
+}
+
+/**
+ * Cancel every offline save still in flight, in this page and in the service worker, and wait for
+ * them to stop. Sign-out calls this BEFORE purging, so no page saved during the sign-out survives
+ * it. Bounded by `timeoutMs` so a hung save can never trap someone in a session they asked to
+ * leave; a save that outlasts the wait still cannot land, because the generation already moved on.
+ */
+export async function settleOfflineSaves(timeoutMs = 3000): Promise<void> {
+  saveGeneration++;
+  const pending = [...savesInFlight];
+  for (const save of pending) save.controller.abort();
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const timeout = new Promise<void>((resolve) => {
+    timer = setTimeout(resolve, timeoutMs);
+  });
+  await Promise.race([
+    Promise.allSettled([...pending.map((save) => save.done), settleWorkerSaves()]),
+    timeout,
+  ]);
+  clearTimeout(timer);
+}
+
+/** Write into a page cache only if sign-out has not started since the save did; undo a write that
+ *  lost the race. */
+async function putUnlessSettled(cache: Cache, key: string, res: Response, generation: number, pathname: string) {
+  if (generation !== saveGeneration) throw new OfflineSaveCancelled(pathname);
+  await cache.put(key, res);
+  if (generation !== saveGeneration) {
+    await cache.delete(key);
+    throw new OfflineSaveCancelled(pathname);
+  }
+}
+
+/**
+ * Whether a response is a real page worth saving: a plain 200 (not a redirect, which would store
+ * the sign-in page under the lesson's address) with the body type expected. `res.ok` alone let a
+ * 204, a redirect to /login or a JSON error body through. Mirrors storableDocument/storablePayload
+ * in public/sw.js.
+ */
+export function isSavableResponse(res: Response, kind: "document" | "payload"): boolean {
+  const type = res.headers.get("content-type") ?? "";
+  const wanted = kind === "document" ? "text/html" : "text/x-component";
+  return res.status === 200 && !res.redirected && type.includes(wanted);
+}
+
+/**
  * Cache a lesson page two ways: the HTML document (hard-navigation / offline fallback) and the
  * RSC payload (what Next fetches for client-side <Link> navigation, so clicking "Next lesson"
  * offline works without a full reload). Both requests hit the network directly from the page —
@@ -161,24 +252,30 @@ export function offlineSupported(): boolean {
  */
 export async function savePage(pathname: string): Promise<void> {
   if (unsupported()) return;
-  const cache = await caches.open(PAGES_CACHE);
-  const results = await Promise.allSettled([
-    fetch(pathname, { credentials: "same-origin" }).then(async (res) => {
-      if (!res.ok) throw new Error(`Failed to save ${pathname}: ${res.status}`);
-      // Clone BEFORE put — put consumes the body, and we need the HTML text to find the page's
-      // JS/CSS. Without those, this page would be served from cache and then die rendering.
-      const forAssets = res.clone();
-      await cache.put(pathname, res);
-      return forAssets.text();
-    }),
-    fetch(pathname, { credentials: "same-origin", headers: { RSC: "1" } }).then((res) => {
-      if (res.ok) return cache.put(rscKey(pathname), res);
-    }),
-  ]);
-  // Require the HTML half to succeed (it's the offline fallback of last resort); the RSC half
-  // is a nice-to-have for client-side nav and is allowed to fail independently.
-  if (results[0].status === "rejected") throw results[0].reason;
-  await savePageAssets(results[0].value);
+  return trackSave(async (signal, generation) => {
+    const cache = await caches.open(PAGES_CACHE);
+    if (generation !== saveGeneration) throw new OfflineSaveCancelled(pathname);
+    const results = await Promise.allSettled([
+      fetch(pathname, { credentials: "same-origin", signal }).then(async (res) => {
+        if (!isSavableResponse(res, "document")) {
+          throw new Error(`Failed to save ${pathname}: ${res.status} ${res.headers.get("content-type") ?? ""}`);
+        }
+        // Clone BEFORE put — put consumes the body, and we need the HTML text to find the page's
+        // JS/CSS. Without those, this page would be served from cache and then die rendering.
+        const forAssets = res.clone();
+        await putUnlessSettled(cache, pathname, res, generation, pathname);
+        return forAssets.text();
+      }),
+      fetch(pathname, { credentials: "same-origin", headers: { RSC: "1" }, signal }).then((res) => {
+        if (isSavableResponse(res, "payload")) return putUnlessSettled(cache, rscKey(pathname), res, generation, pathname);
+      }),
+    ]);
+    // Require the HTML half to succeed (it's the offline fallback of last resort); the RSC half
+    // is a nice-to-have for client-side nav and is allowed to fail independently.
+    if (results[0].status === "rejected") throw results[0].reason;
+    if (generation !== saveGeneration) throw new OfflineSaveCancelled(pathname);
+    await savePageAssets(results[0].value);
+  });
 }
 
 // Every /_next/static/… URL the HTML mentions — <script src>, <link href>, preloads, and the ones
@@ -482,6 +579,8 @@ export async function purgeVisitedOnUserChange(currentUserId: string | null): Pr
     /* storage blocked: treat as unknown, which clears */
   }
   if (previous === owner) return false;
+  // A background save begun for the previous person must not land after this clear.
+  await settleOfflineSaves().catch(() => {});
   await caches.delete(VISITED_CACHE);
   try {
     localStorage.setItem(VISITED_OWNER_KEY, owner);
