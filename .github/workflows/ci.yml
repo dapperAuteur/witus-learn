@@ -1,0 +1,58 @@
+# CI gate: typecheck, lint (eslint + the content checks), unit tests, production build.
+#
+# No env vars are set on purpose. src/lib/env.ts already supplies placeholders for DATABASE_URL,
+# BETTER_AUTH_SECRET and BETTER_AUTH_URL when NODE_ENV is not production (vitest runs as "test")
+# and during `next build` (NEXT_PHASE=phase-production-build), so every step passes without
+# secrets. The DB-backed integration suites skip themselves when no real DATABASE_URL is present;
+# run them locally with `pnpm test:db`.
+#
+# e2e.yml is separate: it runs against live Vercel deployments, not here.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  # Cancel superseded PR runs; let every push to main finish so each main commit gets a result.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: typecheck, lint, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      # No version input: the action reads packageManager (pnpm 11) from package.json.
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      # Runs `next typegen` before `tsc --noEmit`, so route types exist on a fresh checkout.
+      - name: Typecheck
+        run: pnpm typecheck
+
+      # eslint plus the content checks: quiz balance, citations, page reachability,
+      # private courses, course index, and the rest listed in package.json.
+      - name: Lint
+        run: pnpm lint
+
+      - name: Test
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build
