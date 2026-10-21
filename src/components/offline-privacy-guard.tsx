@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { purgeSensitivePages, purgeVisitedOnUserChange } from "@/lib/offline";
+import { purgeSensitivePages, purgeVisitedOnUserChange, warmFrontDoor } from "@/lib/offline";
 
 /**
  * Deletes any PRIVATE page cached for offline that doesn't belong to whoever is signed in now.
@@ -15,6 +15,8 @@ import { purgeSensitivePages, purgeVisitedOnUserChange } from "@/lib/offline";
  * The same check covers the visited-pages cache public/sw.js fills as the visitor browses: those
  * copies were rendered for whoever was signed in at the time, so when that person changes (a
  * different account, or signed out) the whole cache is emptied. See purgeVisitedOnUserChange.
+ * Right after, the worker is asked to fetch the front door again for the new user, so the
+ * installed app still opens offline at "/".
  *
  * ⚠️ ONLINE ONLY, and that condition is load-bearing.
  *
@@ -31,9 +33,11 @@ export function OfflinePrivacyGuard({ userId }: { userId: string | null }) {
     void purgeSensitivePages(userId).catch(() => {
       /* best-effort: a browser with no Cache API has nothing to purge */
     });
-    void purgeVisitedOnUserChange(userId).catch(() => {
-      /* best-effort, as above */
-    });
+    void purgeVisitedOnUserChange(userId)
+      .then((cleared) => (cleared ? warmFrontDoor() : undefined))
+      .catch(() => {
+        /* best-effort, as above */
+      });
   }, [userId]);
 
   return null;

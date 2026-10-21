@@ -154,7 +154,14 @@ function bootServiceWorker(fetchImpl: typeof fetch) {
     await Promise.all(waits);
   }
 
-  return { install, activate, dispatchFetch, cacheStorage };
+  /** Post a message to the worker, as a page's `registration.active.postMessage` would. */
+  async function postMessage(data: unknown) {
+    const waits: Promise<unknown>[] = [];
+    listeners.get("message")?.({ data, waitUntil: (p: Promise<unknown>) => waits.push(p) });
+    await Promise.all(waits);
+  }
+
+  return { install, activate, dispatchFetch, postMessage, cacheStorage };
 }
 
 /** What the browser issues when a learner clicks a real <a href="/downloads">. */
@@ -325,13 +332,14 @@ describe("offline navigations serve the right document", () => {
     expect(text).toContain("Retry");
   });
 
-  it("opens the downloads screen for the app's start URL, which is never saved", async () => {
+  it("opens the home page for the app's start URL, precached at install (worker v6)", async () => {
     const online = bootServiceWorker(ONLINE());
     await online.install();
     const dead = await goOffline(online);
     const text = await (await dead.dispatchFetch(hardNavigation("/")))!.text();
-    expect(text).toContain("Your downloads");
-    expect(text).toContain("/downloads");
+    // ONLINE answers every URL with a page that names it; the home page's copy names "/".
+    expect(text).toContain(`${ORIGIN}/`);
+    expect(text).not.toContain(`${ORIGIN}/downloads`);
   });
 
   it("serves a saved course page by its own path", async () => {
@@ -629,5 +637,84 @@ describe("private and one-time pages are never remembered", () => {
     await (await online.cacheStorage.open(VISITED)).put("/family", html("<h1>PRIVATE family</h1>"));
     const text = await (await (await goOffline(online)).dispatchFetch(hardNavigation("/family")))!.text();
     expect(text).not.toContain("PRIVATE");
+  });
+});
+
+describe("the front door is precached, so a first offline launch opens the app (worker v6)", () => {
+  const VISITED = "witus-visited-v1";
+  const CHUNK = "/_next/static/chunks/app/page-home123.js";
+
+  /** The real shape: each page's HTML points at the JS chunk it needs to render. */
+  const SITE = () =>
+    vi.fn(async (input: RequestInfo | URL) => {
+      const url = new URL(typeof input === "string" ? input : (input as { url: string }).url);
+      if (url.pathname.startsWith("/_next/static/")) {
+        return new Response("/* js */", { status: 200, headers: { "content-type": "application/javascript" } });
+      }
+      return html(`<h1>PAGE ${url.pathname}</h1><script src="${CHUNK}"></script>`);
+    }) as unknown as typeof fetch;
+
+  it("stores /, /downloads, /offline and /help in the visited cache at install", async () => {
+    const sw = bootServiceWorker(SITE());
+    await sw.install();
+    const keys = await (await sw.cacheStorage.open(VISITED)).keys();
+    for (const p of ["/", "/downloads", "/offline", "/help"]) expect(keys).toContain(`${ORIGIN}${p}`);
+  });
+
+  it("opens the home page and the help index with no network, on a device that never browsed", async () => {
+    const online = bootServiceWorker(SITE());
+    await online.install();
+    const dead = await goOffline(online);
+    expect(await (await dead.dispatchFetch(hardNavigation("/")))!.text()).toContain("PAGE /</h1>");
+    expect(await (await dead.dispatchFetch(hardNavigation("/help")))!.text()).toContain("PAGE /help");
+  });
+
+  it("caches the JS the precached pages need, so they render instead of failing on a chunk", async () => {
+    const online = bootServiceWorker(SITE());
+    await online.install();
+    const dead = await goOffline(online);
+    const chunk = await dead.dispatchFetch({
+      method: "GET",
+      url: `${ORIGIN}${CHUNK}`,
+      mode: "no-cors",
+      destination: "script",
+      headers: new Headers(),
+    });
+    expect(chunk!.status).toBe(200);
+    expect(await chunk!.text()).toContain("js");
+  });
+
+  it("applies the visit exclusions: a front-door answer that sets a cookie or redirects is skipped", async () => {
+    const net = vi.fn(async (input: RequestInfo | URL) => {
+      const url = new URL(typeof input === "string" ? input : (input as { url: string }).url);
+      const res = html(`<h1>PAGE ${url.pathname}</h1>`);
+      if (url.pathname === "/") res.headers.set("set-cookie", "s=1");
+      if (url.pathname === "/help") Object.defineProperty(res, "redirected", { value: true });
+      return res;
+    }) as unknown as typeof fetch;
+    const sw = bootServiceWorker(net);
+    await sw.install();
+    const keys = await (await sw.cacheStorage.open(VISITED)).keys();
+    expect(keys).not.toContain(`${ORIGIN}/`);
+    expect(keys).not.toContain(`${ORIGIN}/help`);
+    expect(keys).toContain(`${ORIGIN}/downloads`);
+  });
+
+  it("installs cleanly when the network is down, and falls back as v5 did", async () => {
+    const sw = bootServiceWorker(OFFLINE());
+    await expect(sw.install()).resolves.toBeUndefined();
+    expect(await (await sw.dispatchFetch(hardNavigation("/")))!.text()).toContain("You're offline");
+  });
+
+  it("fetches the front door again when a page asks (after the visited cache was emptied)", async () => {
+    const sw = bootServiceWorker(SITE());
+    await sw.cacheStorage.delete(VISITED);
+    await sw.postMessage({ type: "witus:warm-front-door" });
+    const keys = await (await sw.cacheStorage.open(VISITED)).keys();
+    expect(keys).toContain(`${ORIGIN}/`);
+    // Any other message is ignored.
+    await sw.cacheStorage.delete(VISITED);
+    await sw.postMessage({ type: "something-else" });
+    expect(sw.cacheStorage.caches.has(VISITED)).toBe(false);
   });
 });

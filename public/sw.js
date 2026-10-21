@@ -164,6 +164,14 @@ async function offlinePage(url) {
   );
 }
 
+// The RSC payload remembered for this exact request, payloads only: a document stored under a
+// matching URL is never handed to the router as if it were one.
+async function visitedPayload(request) {
+  const cache = await caches.open(VISITED_CACHE);
+  const hit = await cache.match(request);
+  return isRscPayload(hit) ? hit : undefined;
+}
+
 // What a navigation gets when the network can't answer it: the learner's saved copy, then the
 // last copy this worker remembered on a visit, then the install-time shell.
 async function offlineNavigation(url) {
@@ -185,14 +193,74 @@ async function offlineNavigation(url) {
   return offlinePage(url);
 }
 
+// The front door: what an installed app needs to open on its FIRST offline launch, before the
+// visitor has browsed anything. "/" is the manifest's start_url. Stored in VISITED_CACHE, so it
+// passes the same exclusions as a visit and is cleared with it when the user changes.
+const FRONT_DOOR = ["/", DOWNLOADS_URL, OFFLINE_URL, "/help"];
+// A front-door fetch that hangs must not hold the worker's install open indefinitely.
+const PRECACHE_TIMEOUT_MS = 15000;
+
+// Every /_next/static/… URL an HTML page mentions (same pattern as src/lib/offline.ts). A page
+// fetched here was never rendered, so its JS/CSS was never requested; without them it would be
+// served offline and then die with a ChunkLoadError.
+const NEXT_ASSET_RE = /\/_next\/static\/[^"'()\s\\]+/g;
+
+async function cachePageAssets(html) {
+  const urls = new Set(html.match(NEXT_ASSET_RE) || []);
+  if (urls.size === 0) return;
+  const cache = await caches.open(STATIC_CACHE);
+  await Promise.all(
+    [...urls].map(async (u) => {
+      try {
+        if (await caches.match(u)) return; // content-hashed: one copy anywhere is enough
+        await cache.add(u);
+      } catch {
+        /* one missing chunk must not cost the page */
+      }
+    }),
+  );
+}
+
+// Fetch and remember the front-door pages, with their assets. Best-effort per page. Runs at
+// install, and again when a page asks (a sign-in or sign-out just emptied VISITED_CACHE).
+async function precacheFrontDoor() {
+  await Promise.all(
+    FRONT_DOOR.map(async (path) => {
+      const url = new URL(path, self.location.origin);
+      if (!rememberable(url)) return;
+      try {
+        const signal = typeof AbortSignal.timeout === "function" ? AbortSignal.timeout(PRECACHE_TIMEOUT_MS) : undefined;
+        const res = await fetch(url.href, { credentials: "same-origin", signal });
+        if (!storableResponse(res) || !isHtml(res)) return;
+        const html = await res.clone().text();
+        await remember(url.href, res);
+        await cachePageAssets(html);
+      } catch {
+        /* offline or slow at install: the visitor's own browsing fills it later */
+      }
+    }),
+  );
+}
+
 self.addEventListener("install", (event) => {
   // Added independently (not addAll) so one failing fetch doesn't take the other down with it.
   event.waitUntil(
-    caches.open(STATIC_CACHE).then((c) =>
-      Promise.all([c.add(OFFLINE_URL).catch(() => {}), c.add(DOWNLOADS_URL).catch(() => {})]),
-    ).catch(() => {}),
+    Promise.all([
+      caches
+        .open(STATIC_CACHE)
+        .then((c) => Promise.all([c.add(OFFLINE_URL).catch(() => {}), c.add(DOWNLOADS_URL).catch(() => {})]))
+        .catch(() => {}),
+      precacheFrontDoor(),
+    ]),
   );
   self.skipWaiting();
+});
+
+// A page asks for the front door to be fetched again: src/lib/offline.ts sends this right after
+// OfflinePrivacyGuard empties VISITED_CACHE for a new signed-in user (or for signing out).
+const WARM_FRONT_DOOR = "witus:warm-front-door";
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === WARM_FRONT_DOOR) event.waitUntil(precacheFrontDoor());
 });
 
 self.addEventListener("activate", (event) => {
@@ -281,7 +349,7 @@ self.addEventListener("fetch", (event) => {
         },
         async () =>
           (await caches.open(PAGES_CACHE).then((c) => c.match(new Request(rscKey(url.pathname))))) ||
-          (isPrefetch ? undefined : await caches.open(VISITED_CACHE).then((c) => c.match(request))),
+          (isPrefetch ? undefined : await visitedPayload(request)),
       ),
     );
     return;

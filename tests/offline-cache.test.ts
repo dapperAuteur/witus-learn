@@ -470,3 +470,19 @@ describe("the visited-pages cache belongs to whoever is signed in", () => {
     expect(localStorage.getItem("witus:visited-owner")).toBeNull();
   });
 });
+
+describe("asking the worker to fetch the front door again", () => {
+  it("posts the warm message to the active worker", async () => {
+    const postMessage = vi.fn();
+    vi.stubGlobal("navigator", { serviceWorker: { ready: Promise.resolve({ active: { postMessage } }) } });
+    const offline = await load();
+    await offline.warmFrontDoor();
+    expect(postMessage).toHaveBeenCalledWith({ type: "witus:warm-front-door" });
+  });
+
+  it("does nothing in a browser with no service worker", async () => {
+    vi.stubGlobal("navigator", {});
+    const offline = await load();
+    await expect(offline.warmFrontDoor()).resolves.toBeUndefined();
+  });
+});

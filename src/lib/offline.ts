@@ -489,6 +489,23 @@ export async function purgeVisitedOnUserChange(currentUserId: string | null): Pr
   return true;
 }
 
+/** The message public/sw.js listens for to fetch the front door again. Keep in sync with sw.js. */
+export const WARM_FRONT_DOOR = "witus:warm-front-door";
+
+/**
+ * Ask the service worker to fetch and remember the front door again (home, downloads, offline,
+ * help), so an app whose visited cache was just emptied for a new user still opens offline.
+ *
+ * The worker does the fetching, not this page, so the pages pass exactly the exclusions a visit
+ * does and nothing here has to repeat them. Best-effort: with no worker, there is nobody to serve
+ * the copies anyway.
+ */
+export async function warmFrontDoor(): Promise<void> {
+  if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) return;
+  const registration = await navigator.serviceWorker.ready;
+  registration.active?.postMessage({ type: WARM_FRONT_DOOR });
+}
+
 /** Empty the visited-pages cache unconditionally. Sign-out calls this before the session ends. */
 export async function clearVisitedPages(): Promise<void> {
   if (unsupported()) return;
