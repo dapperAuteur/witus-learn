@@ -6,6 +6,7 @@ import { getInstructorProfile } from "@/db/queries/authoring";
 import { listActivePromotions } from "@/db/queries/promotions";
 import { coursePriceView } from "@/lib/sale-pricing";
 import { CourseCard } from "@/components/course-card";
+import { coursePagePath } from "@/lib/course-href";
 
 type Params = { params: Promise<{ username: string }> };
 
@@ -67,7 +68,12 @@ export default async function InstructorProfilePage({ params }: Params) {
       <h2 className="mt-8 mb-3 text-lg font-semibold">Courses</h2>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {courses.map((c) => (
-          <CourseCard key={c.id} course={c} price={coursePriceView(c, tenant.id, promotions)} />
+          <CourseCard
+            key={c.id}
+            course={c}
+            href={coursePagePath(c, profile.username)}
+            price={coursePriceView(c, tenant.id, promotions)}
+          />
         ))}
       </div>
     </main>
