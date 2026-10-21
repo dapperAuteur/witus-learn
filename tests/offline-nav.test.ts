@@ -25,8 +25,13 @@ const SW_SOURCE = readFileSync(
 
 const ORIGIN = "https://bettervice.club";
 
+// Mirrors the parts of the real Cache API the worker relies on: entries are kept in insertion
+// order (the real API returns the FIRST stored match), each match hands back a fresh copy (a real
+// match never returns an already-read body), and `add` goes through the worker's own fetch, so
+// an "install while online" test never touches the real network.
 class FakeCache {
   readonly store = new Map<string, Response>();
+  constructor(private readonly fetchImpl: () => typeof fetch) {}
   private key(request: { url: string } | string): string {
     return new URL(typeof request === "string" ? request : request.url, ORIGIN).toString();
   }
@@ -34,15 +39,16 @@ class FakeCache {
     this.store.set(this.key(request), response);
   }
   async add(request: string) {
-    const res = await (globalThis.fetch as typeof fetch)(new URL(request, ORIGIN).toString());
+    const res = await this.fetchImpl()(new URL(request, ORIGIN).toString());
     if (!res.ok) throw new TypeError("cache.add failed");
     this.store.set(this.key(request), res);
   }
-  async match(request: { url: string } | string, options?: { ignoreSearch?: boolean }) {
+  async match(request: { url: string } | string, options?: { ignoreSearch?: boolean; ignoreVary?: boolean }) {
     const wanted = this.key(request);
-    if (!options?.ignoreSearch) return this.store.get(wanted);
     const base = wanted.split("?")[0];
-    for (const [k, v] of this.store) if (k.split("?")[0] === base) return v;
+    for (const [k, v] of this.store) {
+      if (k === wanted || (options?.ignoreSearch && k.split("?")[0] === base)) return v.clone();
+    }
     return undefined;
   }
   async delete(request: { url: string } | string) {
@@ -55,10 +61,11 @@ class FakeCache {
 
 class FakeCacheStorage {
   readonly caches = new Map<string, FakeCache>();
+  constructor(private readonly fetchImpl: () => typeof fetch) {}
   async open(name: string) {
     let c = this.caches.get(name);
     if (!c) {
-      c = new FakeCache();
+      c = new FakeCache(this.fetchImpl);
       this.caches.set(name, c);
     }
     return c;
@@ -84,7 +91,7 @@ type Listener = (event: unknown) => void;
  *  fetch events at it. `fetch` is a vi.fn the test controls — that's how we "go offline". */
 function bootServiceWorker(fetchImpl: typeof fetch) {
   const listeners = new Map<string, Listener>();
-  const cacheStorage = new FakeCacheStorage();
+  const cacheStorage = new FakeCacheStorage(() => fetchImpl);
   const self = {
     addEventListener: (type: string, fn: Listener) => listeners.set(type, fn),
     skipWaiting: () => {},
@@ -182,7 +189,7 @@ describe("the Downloads nav link with no network", () => {
   });
 
   it("precaches /downloads at install, so it exists before the learner ever needs it", async () => {
-    const cache = await sw.cacheStorage.open("witus-static-v4");
+    const cache = await sw.cacheStorage.open("witus-static-v5");
     expect(await cache.keys()).toContain(`${ORIGIN}/downloads`);
   });
 
@@ -231,5 +238,149 @@ describe("the Downloads nav link with no network", () => {
     const res = await dead.dispatchFetch(hardNavigation("/courses/never-visited"));
     expect(res).not.toBeNull();
     expect(await res!.text()).toContain("/offline");
+  });
+});
+
+/** A worker with a dead network over a COPY of `online`'s caches: the same device, signal lost. */
+async function goOffline(online: ReturnType<typeof bootServiceWorker>, fetchImpl: typeof fetch = OFFLINE()) {
+  const dead = bootServiceWorker(fetchImpl);
+  for (const [name, cache] of online.cacheStorage.caches) {
+    const target = await dead.cacheStorage.open(name);
+    for (const [k, v] of cache.store) target.store.set(k, v);
+  }
+  return dead;
+}
+
+const html = (body: string) =>
+  new Response(`<!doctype html>${body}`, { status: 200, headers: { "content-type": "text/html; charset=utf-8" } });
+
+describe("offline navigations serve the right document", () => {
+  it("serves the fresh /offline saved in the pages cache over a stale install-time copy", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    // The install-time copy (static cache, created first) is old; the client saved a fresh one.
+    (await online.cacheStorage.open("witus-static-v5")).store.set(`${ORIGIN}/offline`, html("<h1>STALE offline</h1>"));
+    await (await online.cacheStorage.open("witus-pages-v1")).put("/offline", html("<h1>FRESH offline</h1>"));
+
+    const dead = await goOffline(online);
+    const res = await dead.dispatchFetch(hardNavigation("/courses"));
+    const text = await res!.text();
+    expect(text).toContain("FRESH offline");
+    expect(text).not.toContain("STALE");
+  });
+
+  it("gives a navigation the saved HTML even when the ?__rsc payload was stored first", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    const pages = await online.cacheStorage.open("witus-pages-v1");
+    const lesson = "/bam/knots/lesson/bowline";
+    // savePage() writes both halves concurrently, so the RSC payload can land first.
+    await pages.put(`${lesson}?__rsc`, new Response("0:[\"$\",\"div\"]", { headers: { "content-type": "text/x-component" } }));
+    await pages.put(lesson, html("<h1>The bowline</h1>"));
+
+    const dead = await goOffline(online);
+    const res = await dead.dispatchFetch(hardNavigation(`${lesson}?ref=next`));
+    expect(res!.headers.get("content-type")).toContain("text/html");
+    expect(await res!.text()).toContain("The bowline");
+  });
+
+  it("never answers sign-in, dashboard or admin pages from a cache", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    const pages = await online.cacheStorage.open("witus-pages-v1");
+    for (const path of ["/dashboard", "/admin/users", "/login"]) await pages.put(path, html(`<h1>PRIVATE ${path}</h1>`));
+    await pages.put("/admin/future", html("<h1>Future board</h1>"));
+
+    const dead = await goOffline(online);
+    for (const path of ["/dashboard", "/admin/users", "/login"]) {
+      const text = await (await dead.dispatchFetch(hardNavigation(path)))!.text();
+      expect(text).not.toContain("PRIVATE");
+      expect(text).toContain("/offline");
+    }
+    // The owner's deliberately saved board is the one admin page that works offline.
+    expect(await (await dead.dispatchFetch(hardNavigation("/admin/future")))!.text()).toContain("Future board");
+    // And the RSC branch leaves these paths to the network, saved payload or not.
+    await pages.put("/dashboard?__rsc", new Response("PRIVATE rsc"));
+    expect(await (await goOffline(online)).dispatchFetch(rscNavigation("/dashboard"))).toBeNull();
+  });
+
+  it("falls back to inline HTML with a way forward when no /offline copy exists at all", async () => {
+    const dead = bootServiceWorker(OFFLINE());
+    const res = await dead.dispatchFetch(hardNavigation("/courses"));
+    expect(res!.headers.get("content-type")).toContain("text/html");
+    const text = await res!.text();
+    expect(text).toContain('href="/downloads"');
+    expect(text).toContain("Retry");
+  });
+
+  it("opens the downloads screen for the app's start URL, which is never saved", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    const dead = await goOffline(online);
+    const text = await (await dead.dispatchFetch(hardNavigation("/")))!.text();
+    expect(text).toContain("Your downloads");
+    expect(text).toContain("/downloads");
+  });
+
+  it("serves a saved course page by its own path", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    await (await online.cacheStorage.open("witus-pages-v1")).put("/bam/knots", html("<h1>Knots course</h1>"));
+    const dead = await goOffline(online);
+    expect(await (await dead.dispatchFetch(hardNavigation("/bam/knots")))!.text()).toContain("Knots course");
+  });
+
+  it("never touches /api, saved or not", async () => {
+    const dead = bootServiceWorker(OFFLINE());
+    expect(await dead.dispatchFetch(hardNavigation("/api/health"))).toBeNull();
+  });
+});
+
+describe("a server error on a saved page", () => {
+  /** The network is up but the server answers 503 (e.g. its database is over quota). */
+  const SERVER_DOWN = () =>
+    vi.fn(async () => new Response("<h1>Service unavailable</h1>", { status: 503, headers: { "content-type": "text/html" } })) as unknown as typeof fetch;
+
+  async function savedThenDown() {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    const pages = await online.cacheStorage.open("witus-pages-v1");
+    await pages.put("/bam/knots/lesson/bowline", html("<h1>The bowline</h1>"));
+    await pages.put("/dashboard", html("<h1>PRIVATE dashboard</h1>"));
+    return goOffline(online, SERVER_DOWN());
+  }
+
+  it("serves the saved copy of that exact page instead of the 503", async () => {
+    const sw = await savedThenDown();
+    const res = await sw.dispatchFetch(hardNavigation("/bam/knots/lesson/bowline"));
+    expect(res!.status).toBe(200);
+    expect(await res!.text()).toContain("The bowline");
+  });
+
+  it("passes the 503 through for a page that was never saved", async () => {
+    const sw = await savedThenDown();
+    const res = await sw.dispatchFetch(hardNavigation("/bam/knots/lesson/sheet-bend"));
+    expect(res!.status).toBe(503);
+  });
+
+  it("passes the 503 through for never-cached pages, even if a copy exists", async () => {
+    const sw = await savedThenDown();
+    const res = await sw.dispatchFetch(hardNavigation("/dashboard"));
+    expect(res!.status).toBe(503);
+    expect(await res!.text()).not.toContain("PRIVATE");
+  });
+
+  it("leaves /api alone", async () => {
+    const sw = await savedThenDown();
+    expect(await sw.dispatchFetch(hardNavigation("/api/courses"))).toBeNull();
+  });
+
+  it("passes a healthy 200 straight through, saved copy or not", async () => {
+    const online = bootServiceWorker(ONLINE());
+    await online.install();
+    await (await online.cacheStorage.open("witus-pages-v1")).put("/bam/knots/lesson/bowline", html("<h1>OLD copy</h1>"));
+    const sw = await goOffline(online, ONLINE());
+    const text = await (await sw.dispatchFetch(hardNavigation("/bam/knots/lesson/bowline")))!.text();
+    expect(text).not.toContain("OLD copy");
   });
 });

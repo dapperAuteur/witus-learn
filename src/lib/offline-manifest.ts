@@ -108,8 +108,21 @@ export type OfflinePageEntry = OfflineEntryBase & {
   savedByUserId: string | null;
 };
 
+/**
+ * The COURSE PAGE saved alongside a course's lessons (`pagePath` is the lessons' `courseHref`).
+ *
+ * Offline, a learner starts from the course, not from a lesson URL they memorized, so saving lessons
+ * also saves the page that lists them. It is never shown as a download of its own: it rides on its
+ * lessons, and is removed with the last of them.
+ */
+export type OfflineCourseEntry = OfflineEntryBase & {
+  kind: "course";
+  courseTitle: string;
+  courseSlug: string;
+};
+
 /** Everything the manifest can describe. Discriminated on `kind`. */
-export type OfflineEntry = OfflineLessonEntry | OfflinePageEntry;
+export type OfflineEntry = OfflineLessonEntry | OfflinePageEntry | OfflineCourseEntry;
 
 /** The metadata a call site must supply to save a lesson. Everything else is derived. */
 export type OfflineLessonMeta = Omit<OfflineLessonEntry, "kind" | "pagePath" | "mediaUrl" | "savedAt">;
@@ -123,6 +136,21 @@ export function isLessonEntry(entry: OfflineEntry): entry is OfflineLessonEntry 
 
 export function isPageEntry(entry: OfflineEntry): entry is OfflinePageEntry {
   return entry.kind === "page";
+}
+
+export function isCourseEntry(entry: OfflineEntry): entry is OfflineCourseEntry {
+  return entry.kind === "course";
+}
+
+/** Paths that are saved COURSE pages: every course entry, plus every lesson's `courseHref` (so a
+ *  course page whose own entry was lost is still recognized while its lessons are saved). */
+export function coursePagePaths(manifest: OfflineManifest): Set<string> {
+  const paths = new Set<string>();
+  for (const entry of Object.values(manifest)) {
+    if (isCourseEntry(entry)) paths.add(entry.pagePath);
+    else if (isLessonEntry(entry)) paths.add(entry.courseHref);
+  }
+  return paths;
 }
 
 /** `pagePath` → entry. A plain object so it round-trips through JSON unchanged. */
@@ -187,6 +215,12 @@ function coerce(pagePath: string, value: unknown): OfflineEntry | null {
 
   const courseTitle = str("courseTitle");
   const courseSlug = str("courseSlug");
+
+  if (v.kind === "course") {
+    if (!courseTitle || !courseSlug) return null;
+    return { kind: "course", pagePath, courseTitle, courseSlug, mediaUrl, savedAt };
+  }
+
   const courseHref = str("courseHref");
   const lessonTitle = str("lessonTitle");
   if (!courseTitle || !courseSlug || !courseHref || !lessonTitle) return null;

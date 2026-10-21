@@ -218,3 +218,52 @@ describe("offline manifest", () => {
     expect(m.readManifest()).toEqual({});
   });
 });
+
+describe("offline manifest: saved course pages", () => {
+  const courseEntry = (over: Partial<Record<string, unknown>> = {}) =>
+    ({
+      kind: "course",
+      pagePath: "/bam/course",
+      courseTitle: "Course",
+      courseSlug: "course",
+      mediaUrl: null,
+      savedAt: 1_700_000_000_000,
+      ...over,
+    }) as import("@/lib/offline-manifest").OfflineEntry;
+
+  it("round-trips a course entry as a course, never as a lesson or a page", async () => {
+    const m = await load();
+    m.upsertEntry(courseEntry());
+    const read = m.readManifest()["/bam/course"];
+    expect(m.isCourseEntry(read)).toBe(true);
+    expect(m.isLessonEntry(read)).toBe(false);
+    expect(m.isPageEntry(read)).toBe(false);
+  });
+
+  it("drops a course entry with no title, like any other malformed record", async () => {
+    store.setItem(KEY, JSON.stringify({ "/bam/course": { kind: "course", courseSlug: "course" } }));
+    const m = await load();
+    expect(m.readManifest()).toEqual({});
+  });
+
+  it("still reads an old entry with no kind as a lesson, next to a course entry", async () => {
+    store.setItem(
+      KEY,
+      JSON.stringify({
+        "/bam/course": { kind: "course", courseTitle: "Course", courseSlug: "course" },
+        "/bam/course/lesson/one": { courseTitle: "Course", courseSlug: "course", courseHref: "/bam/course", lessonTitle: "One" },
+      }),
+    );
+    const m = await load();
+    const manifest = m.readManifest();
+    expect(m.isLessonEntry(manifest["/bam/course/lesson/one"])).toBe(true);
+    expect(m.isCourseEntry(manifest["/bam/course"])).toBe(true);
+  });
+
+  it("coursePagePaths names course entries AND the course every saved lesson points at", async () => {
+    const m = await load();
+    m.upsertEntry(courseEntry());
+    m.upsertEntry(entry({ pagePath: "/sam/other/lesson/x", courseHref: "/sam/other" }));
+    expect([...m.coursePagePaths(m.readManifest())].sort()).toEqual(["/bam/course", "/sam/other"]);
+  });
+});

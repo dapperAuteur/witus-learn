@@ -56,13 +56,17 @@ class FakeCache {
     if (!res.ok) throw new TypeError("cache.add failed");
     await this.keep(this.key(request), res);
   }
-  async match(request: RequestInfo | { url: string }, options?: { ignoreSearch?: boolean }) {
+  /**
+   * Like the real Cache API, return the FIRST stored entry that matches, in insertion order. An
+   * exact-match-first fake hid a real bug: with `ignoreSearch`, a navigation to `/x` also matches
+   * the `/x?__rsc` payload savePage() stores beside the HTML, and whichever landed first wins.
+   */
+  async match(request: RequestInfo | { url: string }, options?: { ignoreSearch?: boolean; ignoreVary?: boolean }) {
     const wanted = this.key(request);
-    const hit = this.store.get(wanted);
-    if (hit) return hit.clone();
-    if (!options?.ignoreSearch) return undefined;
     const base = wanted.split("?")[0];
-    for (const [k, v] of this.store) if (k.split("?")[0] === base) return v.clone();
+    for (const [k, v] of this.store) {
+      if (k === wanted || (options?.ignoreSearch && k.split("?")[0] === base)) return v.clone();
+    }
     return undefined;
   }
   async delete(request: RequestInfo) {
@@ -134,10 +138,16 @@ const LESSON_HTML = `<!doctype html><title>Lesson one</title><script src="/_next
 
 let cacheStorage: FakeCacheStorage;
 
-const ONLINE = async (input: RequestInfo | URL) => {
+const ONLINE = async (input: RequestInfo | URL, init?: RequestInit) => {
   const url = typeof input === "string" ? input : ((input as Request).url ?? String(input));
   const { pathname } = new URL(url, ORIGIN);
   if (pathname === ADMIN_PATH) {
+    // The RSC half answers first, so savePage() stores `?__rsc` BEFORE the HTML: the order in which
+    // a navigation matched with ignoreSearch used to get the payload instead of the document.
+    if (new Headers(init?.headers).get("RSC") === "1") {
+      return new Response(`0:["$","main",null,{}]`, { status: 200, headers: { "content-type": "text/x-component" } });
+    }
+    await new Promise((resolve) => setTimeout(resolve, 5));
     return new Response(ADMIN_HTML, { status: 200, headers: { "content-type": "text/html" } });
   }
   if (pathname === LESSON_PATH) {
@@ -296,6 +306,8 @@ describe("/admin/future, saved for offline", () => {
     const res = await dispatch(hardNavigation(ADMIN_PATH));
     expect(res).toBeTruthy();
     expect(res!.status).toBe(200);
+    // The document, never the `?__rsc` payload stored under the same path.
+    expect(res!.headers.get("content-type")).toContain("text/html");
     const html = await res!.text();
     expect(html).toContain("Future classes");
     expect(html).toContain("She Did The Work"); // the proposals are really there

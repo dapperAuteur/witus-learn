@@ -4,30 +4,45 @@ import { OfflineSavedLessons } from "@/components/offline-saved-lessons";
 export const metadata: Metadata = { title: "Offline" };
 
 // Generic offline fallback, precached by the service worker and shown only when a page
-// navigation can't reach the network AND the requested lesson wasn't itself saved for offline
+// navigation can't reach the network AND the requested page wasn't itself saved for offline
 // (see public/sw.js — a saved lesson page is served straight from cache instead of landing
 // here). Deliberately brand-neutral and self-contained (no tenant data) so it's correct on
 // every domain and never stale. The saved-lessons list below is read client-side from the
 // browser's own Cache API, so it works even though this page itself can't hit the network.
+//
+// Everything above the list is server-rendered and works with NO JavaScript, because this page
+// is often an old cached copy whose JS chunks may be gone: the Downloads link is the way forward,
+// and Retry reloads the address the learner actually asked for (the service worker serves this
+// page in place of it, so the URL bar still holds it). It used to point at "/", which is never
+// saved, so offline it looped straight back here.
 export default function OfflinePage() {
   return (
-    <main id="main-content" className="mx-auto flex min-h-[60vh] max-w-md flex-col items-center justify-center px-4 text-center">
-      <p className="text-4xl" aria-hidden>📡</p>
-      <h1 className="mt-4 text-2xl font-bold">You&rsquo;re offline</h1>
+    <main id="main-content" className="mx-auto flex max-w-md flex-col items-center px-4 py-8 text-center">
+      <h1 className="text-2xl font-bold">
+        <span aria-hidden>📡 </span>You&rsquo;re offline
+      </h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
-        This page isn&rsquo;t available without a connection. Lessons you&rsquo;ve saved for
-        offline still work, otherwise, reconnect and try again.
+        This page isn&rsquo;t saved on this device. Lessons you saved for offline still work.
       </p>
-      {/* A real <a> (not next/link): offline, we want a full reload that re-hits the
-          network, not a client-side navigation that would just fail again. */}
-      {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-      <a
-        href="/"
-        className="mt-6 min-h-11 rounded-md px-5 py-2.5 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2"
-        style={{ backgroundColor: "var(--accent, #111)" }}
-      >
-        Retry
-      </a>
+      <div className="mt-5 flex w-full flex-col gap-3 sm:flex-row sm:justify-center">
+        {/* Real <a>s (not next/link): offline, only a full navigation can be answered from the
+            service worker's cache; a client-side RSC fetch would just fail again. */}
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+        <a
+          href="/downloads"
+          className="inline-flex min-h-11 items-center justify-center rounded-md px-5 py-2.5 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2"
+          style={{ backgroundColor: "var(--accent, #111)" }}
+        >
+          Your downloads
+        </a>
+        {/* An empty href is the current URL: a plain reload of the page the learner asked for. */}
+        <a
+          href=""
+          className="inline-flex min-h-11 items-center justify-center rounded-md border border-neutral-300 px-5 py-2.5 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700"
+        >
+          Retry
+        </a>
+      </div>
       <OfflineSavedLessons />
     </main>
   );

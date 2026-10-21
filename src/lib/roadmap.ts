@@ -1677,6 +1677,20 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   replayed against another brand. Verified against a **real killed server** (a real \`ECONNREFUSED\`,
   not DevTools throttling, which the last offline agent learned doesn't apply to the SW's own
   fetches) and across a real process restart. No migration.
+- ✅ **Saved courses open offline, not "You're offline / Retry"** (\`bundle/learn-offline-fix-2026-10-16\`),
+  BAM's report: *"saves courses offline but the UI says you're offline and Retry."* Saving only ever
+  stored **lesson** pages, while learners start from the app's home screen, the catalog or the
+  **course page**, none of which were saved, so every way in landed on \`/offline\`, whose only button
+  went back to \`/\` and looped. Now saving lessons also saves **their course page** (once per course,
+  removed with its last lesson, never listed as a download of its own); offline, the app's start URL
+  \`/\` opens **Your downloads**; and \`/offline\` leads with a **Your downloads** link and a Retry that
+  reloads the page you asked for, both working with **no JavaScript**. The service worker (now **v5**)
+  serves a saved page's **HTML only** (it could hand a navigation the stored RSC data instead),
+  prefers the fresh \`/offline\` copy over a months-old install-time one whose scripts were gone, and
+  never answers sign-in, \`/dashboard\` or \`/admin\` pages from a cache (\`/admin/future\` excepted).
+  When the **server is down** (a 5xx, like the 2026-10-17 database outage), a page you saved opens
+  from your device instead of the error page; anything not saved still shows the real error.
+  \`tests/offline-nav.test.ts\` runs the **real \`public/sw.js\`** over a dead network for each case.
 - ✅ **Every email is mirrored to the WitUS Inbox, with the credentials stripped**
   (\`feat/downloads-link-inbox-mirror\`), only the pricing form mirrored before; magic-link sign-in,
   certificates, cohort invites and guardian invites left no record. The mirror now happens at the
