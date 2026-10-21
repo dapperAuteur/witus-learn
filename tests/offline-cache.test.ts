@@ -84,10 +84,14 @@ beforeEach(() => {
   vi.stubGlobal("caches", cacheStorage);
   vi.stubGlobal("localStorage", new MemoryStorage());
   vi.stubGlobal("navigator", { storage: undefined });
-  vi.stubGlobal("fetch", async (input: RequestInfo) => {
+  vi.stubGlobal("fetch", async (input: RequestInfo, init?: RequestInit) => {
     const url = typeof input === "string" ? input : input.url;
     const path = new URL(url, "https://tenant.example").pathname;
     if (broken.has(path)) return new Response("nope", { status: 404 });
+    // As the real server does: the router's RSC request gets a payload, not the HTML page.
+    if (new Headers(init?.headers).get("RSC") === "1") {
+      return new Response('0:["$","main"]', { status: 200, headers: { "content-type": "text/x-component" } });
+    }
     // Lesson pages come back as real HTML referencing their build assets, so savePage() has
     // something to discover — that's the ChunkLoadError regression below.
     if (path.includes("/lesson/") || path === "/downloads" || path === "/offline") {
@@ -101,6 +105,10 @@ beforeEach(() => {
           `<style>@font-face{src:url(/_next/static/media/font-ghi.woff2)}</style>`,
         { status: 200, headers: { "content-type": "text/html" } },
       );
+    }
+    // Any other page (a course page) is HTML too; build assets are not pages.
+    if (!path.startsWith("/_next/")) {
+      return new Response(`<!doctype html><h1>${path}</h1>`, { status: 200, headers: { "content-type": "text/html" } });
     }
     return new Response("ok", { status: 200 });
   });
@@ -595,5 +603,58 @@ describe("sign-out and a save still in flight (privacy)", () => {
     const offline = await load();
     await offline.settleOfflineSaves(10_000);
     expect(posted).toEqual([{ type: "witus:settle-saves" }]);
+  });
+});
+
+describe("only real pages are saved", () => {
+  const PAGES = "witus-pages-v1";
+  const keys = () => [...(cacheStorage.caches.get(PAGES)?.store.keys() ?? [])].map((u) => new URL(u).pathname + new URL(u).search);
+
+  /** Answer the lesson's document fetch with `doc` and its RSC fetch with `rsc`. */
+  function serve(doc: () => Response, rsc?: () => Response) {
+    vi.stubGlobal("fetch", async (_input: RequestInfo, init?: RequestInit) =>
+      new Headers(init?.headers).get("RSC") === "1" && rsc ? rsc() : doc(),
+    );
+  }
+  const htmlRes = (status = 200) => new Response("<h1>x</h1>", { status, headers: { "content-type": "text/html" } });
+  const redirected = (res: Response) => Object.defineProperty(res, "redirected", { value: true });
+
+  it("refuses a page that redirected (a sign-in page stored under the lesson's address)", async () => {
+    serve(() => redirected(htmlRes()));
+    const offline = await load();
+    await expect(offline.savePage("/bam/signals/lesson/a")).rejects.toThrow();
+    expect(keys()).toEqual([]);
+  });
+
+  it("refuses an error page and a body that is not HTML", async () => {
+    const offline = await load();
+    serve(() => htmlRes(500));
+    await expect(offline.savePage("/bam/signals/lesson/a")).rejects.toThrow();
+    serve(() => new Response("<h1>x</h1>", { status: 203, headers: { "content-type": "text/html" } }));
+    await expect(offline.savePage("/bam/signals/lesson/a")).rejects.toThrow();
+    serve(() => new Response('{"error":"nope"}', { status: 200, headers: { "content-type": "application/json" } }));
+    await expect(offline.savePage("/bam/signals/lesson/a")).rejects.toThrow();
+    expect(keys()).toEqual([]);
+  });
+
+  it("keeps the RSC payload only when it is one, and only under its own key", async () => {
+    const offline = await load();
+    serve(htmlRes, () => htmlRes()); // the RSC request came back as a page
+    await offline.savePage("/bam/signals/lesson/a");
+    expect(keys()).toEqual(["/bam/signals/lesson/a"]);
+
+    serve(htmlRes, () => new Response("0:[]", { status: 200, headers: { "content-type": "text/x-component" } }));
+    await offline.savePage("/bam/signals/lesson/b");
+    expect(keys()).toContain("/bam/signals/lesson/b?__rsc");
+    const doc = cacheStorage.caches.get(PAGES)!.store.get("https://tenant.example/bam/signals/lesson/b")!;
+    expect(doc.headers.get("content-type")).toContain("text/html");
+  });
+
+  it("isSavableResponse: 200 of the right type, not redirected", async () => {
+    const { isSavableResponse } = await load();
+    expect(isSavableResponse(htmlRes(), "document")).toBe(true);
+    expect(isSavableResponse(htmlRes(404), "document")).toBe(false);
+    expect(isSavableResponse(redirected(htmlRes()), "document")).toBe(false);
+    expect(isSavableResponse(htmlRes(), "payload")).toBe(false);
   });
 });

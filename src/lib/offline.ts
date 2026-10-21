@@ -233,6 +233,18 @@ async function putUnlessSettled(cache: Cache, key: string, res: Response, genera
 }
 
 /**
+ * Whether a response is a real page worth saving: a plain 200 (not a redirect, which would store
+ * the sign-in page under the lesson's address) with the body type expected. `res.ok` alone let a
+ * 204, a redirect to /login or a JSON error body through. Mirrors storableDocument/storablePayload
+ * in public/sw.js.
+ */
+export function isSavableResponse(res: Response, kind: "document" | "payload"): boolean {
+  const type = res.headers.get("content-type") ?? "";
+  const wanted = kind === "document" ? "text/html" : "text/x-component";
+  return res.status === 200 && !res.redirected && type.includes(wanted);
+}
+
+/**
  * Cache a lesson page two ways: the HTML document (hard-navigation / offline fallback) and the
  * RSC payload (what Next fetches for client-side <Link> navigation, so clicking "Next lesson"
  * offline works without a full reload). Both requests hit the network directly from the page —
@@ -245,7 +257,9 @@ export async function savePage(pathname: string): Promise<void> {
     if (generation !== saveGeneration) throw new OfflineSaveCancelled(pathname);
     const results = await Promise.allSettled([
       fetch(pathname, { credentials: "same-origin", signal }).then(async (res) => {
-        if (!res.ok) throw new Error(`Failed to save ${pathname}: ${res.status}`);
+        if (!isSavableResponse(res, "document")) {
+          throw new Error(`Failed to save ${pathname}: ${res.status} ${res.headers.get("content-type") ?? ""}`);
+        }
         // Clone BEFORE put — put consumes the body, and we need the HTML text to find the page's
         // JS/CSS. Without those, this page would be served from cache and then die rendering.
         const forAssets = res.clone();
@@ -253,7 +267,7 @@ export async function savePage(pathname: string): Promise<void> {
         return forAssets.text();
       }),
       fetch(pathname, { credentials: "same-origin", headers: { RSC: "1" }, signal }).then((res) => {
-        if (res.ok) return putUnlessSettled(cache, rscKey(pathname), res, generation, pathname);
+        if (isSavableResponse(res, "payload")) return putUnlessSettled(cache, rscKey(pathname), res, generation, pathname);
       }),
     ]);
     // Require the HTML half to succeed (it's the offline fallback of last resort); the RSC half

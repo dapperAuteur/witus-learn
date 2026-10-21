@@ -106,6 +106,22 @@ const storableResponse = (res) =>
   !res.headers.has("set-cookie") &&
   !optsOutOfCaching(res);
 
+// What may be stored as a page, decided in ONE place so no write path can skip it. A document is
+// a plain 200 HTML response; a router (RSC) payload is a plain 200 text/x-component response, and
+// it is kept only under its own `_rsc` URL, so it can never sit at a page's address and be found
+// where a document is expected. Error pages, redirects and any other body are refused.
+const hasRscKey = (key) => new URL(typeof key === "string" ? key : key.url, self.location.origin).searchParams.has("_rsc");
+const storableDocument = (res) => Boolean(res) && storableResponse(res) && isHtml(res);
+const storablePayload = (res) => Boolean(res) && storableResponse(res) && isRscPayload(res);
+const storableUnder = (key, res) => (hasRscKey(key) ? storablePayload(res) : storableDocument(res));
+
+/** Store a document in a shell cache (install-time /offline and /downloads), under the same rule. */
+async function putDocument(cacheName, path) {
+  const res = await fetch(path, { credentials: "same-origin" });
+  if (!storableDocument(res)) return;
+  await (await caches.open(cacheName)).put(path, res);
+}
+
 // Sign-out must not leave behind a page that was still being saved when it started. Every write
 // into VISITED_CACHE goes through remember(), which notes the generation it began in; sign-out
 // (settleOfflineSaves in src/lib/offline.ts) posts SETTLE_SAVES before it purges, which bumps the
@@ -150,6 +166,7 @@ function saveSignal(signal, timeoutMs) {
  */
 function remember(key, res, generation = saveGeneration) {
   return trackSave(async () => {
+    if (!storableUnder(key, res)) return;
     try {
       const body = await res.arrayBuffer();
       if (body.byteLength > VISITED_MAX_BYTES) return;
@@ -190,7 +207,7 @@ async function rememberDocument(rscUrl) {
       const age = prior ? Date.now() - Date.parse(prior.headers.get("date") || "") : Infinity;
       if (isHtml(prior) && age < DOCUMENT_REFRESH_MS) return;
       const res = await fetch(key, { credentials: "same-origin", signal: saveSignal(signal, PRECACHE_TIMEOUT_MS) });
-      if (!storableResponse(res) || !isHtml(res)) return;
+      if (!storableDocument(res)) return;
       const html = await res.clone().text();
       await remember(key, res, generation);
       if (generation === saveGeneration) await cachePageAssets(html);
@@ -305,7 +322,7 @@ async function precacheFrontDoor() {
       try {
         const signal = typeof AbortSignal.timeout === "function" ? AbortSignal.timeout(PRECACHE_TIMEOUT_MS) : undefined;
         const res = await fetch(url.href, { credentials: "same-origin", signal });
-        if (!storableResponse(res) || !isHtml(res)) return;
+        if (!storableDocument(res)) return;
         const html = await res.clone().text();
         await remember(url.href, res);
         await cachePageAssets(html);
@@ -320,10 +337,10 @@ self.addEventListener("install", (event) => {
   // Added independently (not addAll) so one failing fetch doesn't take the other down with it.
   event.waitUntil(
     Promise.all([
-      caches
-        .open(STATIC_CACHE)
-        .then((c) => Promise.all([c.add(OFFLINE_URL).catch(() => {}), c.add(DOWNLOADS_URL).catch(() => {})]))
-        .catch(() => {}),
+      // Fetched and checked, not cache.add(): add() would keep a redirect to /login or a 2xx
+      // that is not a page.
+      putDocument(STATIC_CACHE, OFFLINE_URL).catch(() => {}),
+      putDocument(STATIC_CACHE, DOWNLOADS_URL).catch(() => {}),
       precacheFrontDoor(),
     ]),
   );
@@ -387,8 +404,11 @@ self.addEventListener("fetch", (event) => {
         (hit) =>
           hit ||
           fetch(request).then((res) => {
-            const copy = res.clone();
-            caches.open(STATIC_CACHE).then((c) => c.put(request, copy));
+            // Only a real asset: a 404 or 500 cached here would be served cache-first forever.
+            if (res.status === 200 && !res.redirected) {
+              const copy = res.clone();
+              caches.open(STATIC_CACHE).then((c) => c.put(request, copy));
+            }
             return res;
           }),
       ),
@@ -421,7 +441,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request).then(
         (res) => {
-          if (!isPrefetch && rememberable(url) && storableResponse(res) && isRscPayload(res)) {
+          if (!isPrefetch && rememberable(url) && hasRscKey(request) && storablePayload(res)) {
             event.waitUntil(Promise.all([remember(request, res.clone()), rememberDocument(url)]));
           }
           return res;
@@ -450,7 +470,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request).then(
         async (res) => {
-          if (rememberable(url) && storableResponse(res) && isHtml(res)) {
+          if (rememberable(url) && storableDocument(res)) {
             event.waitUntil(remember(url.origin + url.pathname + url.search, res.clone()));
           }
           if (res.status < 500 || neverFromCache(url.pathname)) return res;

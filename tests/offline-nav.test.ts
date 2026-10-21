@@ -878,3 +878,71 @@ describe("sign-out cancels the worker's background saves before the purge (priva
     expect((await (await sw.cacheStorage.open(VISITED)).keys()).map(String)).toContain(`${ORIGIN}/bam/knots`);
   });
 });
+
+describe("only real pages are kept by the worker", () => {
+  const VISITED = "witus-visited-v1";
+  const visitedKeys = async (sw: ReturnType<typeof bootServiceWorker>) =>
+    (await (await sw.cacheStorage.open(VISITED)).keys()).map((r) => (typeof r === "string" ? r : (r as Request).url));
+  const typed = (body: string, type: string, status = 200) => new Response(body, { status, headers: { "content-type": type } });
+  const redirectedRes = (res: Response) => Object.defineProperty(res, "redirected", { value: true });
+
+  it("never keeps an error page, a redirect or a non-HTML body from a navigation", async () => {
+    for (const make of [
+      () => typed("<h1>Server error</h1>", "text/html", 500),
+      () => typed("<h1>Not found</h1>", "text/html", 404),
+      () => redirectedRes(typed("<h1>Sign in</h1>", "text/html")),
+      () => typed('{"ok":true}', "application/json"),
+      () => typed("plain", "text/plain"),
+    ]) {
+      const sw = bootServiceWorker(vi.fn(async () => make()) as unknown as typeof fetch);
+      await sw.dispatchFetch(hardNavigation("/bam/knots"));
+      expect(await visitedKeys(sw)).toEqual([]);
+    }
+  });
+
+  it("never keeps an error page or a redirect fetched after a tap", async () => {
+    for (const doc of [
+      () => typed("<h1>Server error</h1>", "text/html", 500),
+      () => redirectedRes(typed("<h1>Sign in</h1>", "text/html")),
+      () => typed('{"ok":true}', "application/json"),
+    ]) {
+      const net = vi.fn(async (input: RequestInfo | URL) =>
+        typeof input === "string" ? doc() : typed('0:["$","main"]', "text/x-component"),
+      );
+      const sw = bootServiceWorker(net as unknown as typeof fetch);
+      await sw.dispatchFetch(rscNavigation("/bam/knots?_rsc=a"));
+      expect(await visitedKeys(sw)).not.toContain(`${ORIGIN}/bam/knots`);
+    }
+  });
+
+  it("keeps a router payload only when it is one, and only under its own _rsc key", async () => {
+    // A tap answered with HTML (an error page) is not a payload.
+    const asHtml = bootServiceWorker(vi.fn(async () => typed("<h1>x</h1>", "text/html")) as unknown as typeof fetch);
+    await asHtml.dispatchFetch(rscNavigation("/bam/knots?_rsc=a"));
+    expect(await visitedKeys(asHtml)).not.toContain(`${ORIGIN}/bam/knots?_rsc=a`);
+
+    // A payload whose request has no _rsc key would sit at the page's own address: not kept.
+    const noKey = bootServiceWorker(vi.fn(async () => typed("0:[]", "text/x-component")) as unknown as typeof fetch);
+    await noKey.dispatchFetch(rscNavigation("/bam/knots"));
+    expect(await visitedKeys(noKey)).toEqual([]);
+  });
+
+  it("does not precache an /offline that redirected, and does not cache a missing asset", async () => {
+    const net = vi.fn(async (input: RequestInfo | URL) => {
+      const url = new URL(typeof input === "string" ? input : (input as { url: string }).url, ORIGIN);
+      if (url.pathname === "/offline") return redirectedRes(typed("<h1>Sign in</h1>", "text/html"));
+      if (url.pathname.startsWith("/_next/")) return typed("Not found", "text/html", 404);
+      return typed("<h1>page</h1>", "text/html");
+    });
+    const sw = bootServiceWorker(net as unknown as typeof fetch);
+    await sw.install();
+    const staticKeys = async () =>
+      (await (await sw.cacheStorage.open("witus-static-v6")).keys()).map((r) => (typeof r === "string" ? r : (r as Request).url));
+    expect((await staticKeys()).some((k) => k.endsWith("/offline"))).toBe(false);
+    expect((await staticKeys()).some((k) => k.endsWith("/downloads"))).toBe(true);
+
+    await sw.dispatchFetch({ method: "GET", url: `${ORIGIN}/_next/static/chunks/gone.js`, mode: "no-cors", destination: "script", headers: new Headers() });
+    await new Promise((r) => setTimeout(r, 0));
+    expect((await staticKeys()).some((k) => k.includes("gone.js"))).toBe(false);
+  });
+});
