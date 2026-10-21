@@ -202,8 +202,11 @@ const PRECACHE_TIMEOUT_MS = 15000;
 
 // Every /_next/static/… URL an HTML page mentions (same pattern as src/lib/offline.ts). A page
 // fetched here was never rendered, so its JS/CSS was never requested; without them it would be
-// served offline and then die with a ChunkLoadError.
-const NEXT_ASSET_RE = /\/_next\/static\/[^"'()\s\\]+/g;
+// served offline and then die with a ChunkLoadError. A "(group)" segment is part of the path
+// (route groups: `chunks/app/(tenant)/page-….js`); any other parenthesis ends it, as in CSS
+// `url(…)`. Stopping at every "(" cut those chunks to `chunks/app/`, and in Chromium that
+// redirecting, never-finishing add held the install open, so the worker never activated.
+const NEXT_ASSET_RE = /\/_next\/static\/(?:[^"'()\s\\]|\([^"'()\s\\/]*\))+/g;
 
 async function cachePageAssets(html) {
   const urls = new Set(html.match(NEXT_ASSET_RE) || []);

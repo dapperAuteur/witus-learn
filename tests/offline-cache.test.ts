@@ -94,7 +94,11 @@ beforeEach(() => {
       return new Response(
         `<!doctype html><script src="/_next/static/chunks/shared-abc.js"></script>` +
           `<link rel="stylesheet" href="/_next/static/css/app-def.css">` +
-          `<script>self.__next_f.push([1,"\\"/_next/static/chunks/app${path}/page-xyz.js\\""])</script>`,
+          `<script>self.__next_f.push([1,"\\"/_next/static/chunks/app${path}/page-xyz.js\\""])</script>` +
+          // The real shape of every (tenant) page: its own chunk sits under a route group, and a
+          // stylesheet can name a font inside CSS url(…).
+          `<script src="/_next/static/chunks/app/(tenant)/[username]/page-grp.js"></script>` +
+          `<style>@font-face{src:url(/_next/static/media/font-ghi.woff2)}</style>`,
         { status: 200, headers: { "content-type": "text/html" } },
       );
     }
@@ -295,6 +299,19 @@ describe("offline cache + manifest, together", () => {
     // Including the route chunk embedded (escaped) in the RSC flight payload — the exact one whose
     // absence produced the ChunkLoadError.
     expect(keys).toContain("/_next/static/chunks/app/bam/signals/lesson/a/page-xyz.js");
+  });
+
+  // REGRESSION: the asset pattern stopped at every "(", so a route-group chunk such as
+  // chunks/app/(tenant)/…/page-….js was cut to chunks/app/ and never cached. Every lesson page's
+  // own chunk lives under (tenant).
+  it("keeps a (route group) segment in a chunk URL, and still ends a URL at a CSS url( ) paren", async () => {
+    const offline = await load();
+    await offline.saveLesson(lesson("a"));
+    const assets = cacheStorage.caches.get(offline.ASSETS_CACHE);
+    const keys = [...(assets?.store.keys() ?? [])].map((u) => decodeURI(new URL(u).pathname));
+    expect(keys).toContain("/_next/static/chunks/app/(tenant)/[username]/page-grp.js");
+    expect(keys).toContain("/_next/static/media/font-ghi.woff2");
+    expect(keys).not.toContain("/_next/static/chunks/app/");
   });
 
   it("caches the /downloads and /offline shells — with their JS — on the first save", async () => {
