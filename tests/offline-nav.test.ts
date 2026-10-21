@@ -467,11 +467,16 @@ describe("visited public pages are remembered and served offline (worker v6)", (
     expect(keys).not.toContain(`${ORIGIN}/p-0`);
   });
 
-  it("skips a page over 1.5 MB", async () => {
-    const big = vi.fn(async () => html(`<p>${"x".repeat(1.6 * 1024 * 1024)}</p>`)) as unknown as typeof fetch;
+  it("skips a page over 2 MB, and keeps one the size of the full catalog", async () => {
+    const big = vi.fn(async () => html(`<p>${"x".repeat(2.1 * 1024 * 1024)}</p>`)) as unknown as typeof fetch;
     const online = bootServiceWorker(big);
     await online.dispatchFetch(hardNavigation("/huge"));
     expect(await (await online.cacheStorage.open(VISITED)).keys()).toHaveLength(0);
+    // /courses measured 1.16 MB with 276 courses: well inside the limit, with room to grow.
+    const catalog = vi.fn(async () => html(`<p>${"x".repeat(1.6 * 1024 * 1024)}</p>`)) as unknown as typeof fetch;
+    const sw = bootServiceWorker(catalog);
+    await sw.dispatchFetch(hardNavigation("/courses"));
+    expect(await (await sw.cacheStorage.open(VISITED)).keys()).toEqual([`${ORIGIN}/courses`]);
   });
 
   it("does not remember an error page, a non-HTML answer or a redirect", async () => {
@@ -944,5 +949,86 @@ describe("only real pages are kept by the worker", () => {
     await sw.dispatchFetch({ method: "GET", url: `${ORIGIN}/_next/static/chunks/gone.js`, mode: "no-cors", destination: "script", headers: new Headers() });
     await new Promise((r) => setTimeout(r, 0));
     expect((await staticKeys()).some((k) => k.includes("gone.js"))).toBe(false);
+  });
+});
+
+describe("the visited cache stays bounded, least recently used first (worker v6)", () => {
+  const VISITED = "witus-visited-v1";
+  const PAGES = "witus-pages-v1";
+  const keysOf = async (sw: ReturnType<typeof bootServiceWorker>, name = VISITED) =>
+    (await (await sw.cacheStorage.open(name)).keys()).map((r) => (typeof r === "string" ? r : (r as Request).url));
+  const page = (body = "") =>
+    new Response(`<h1>LIVE</h1>${body}`, { status: 200, headers: { "content-type": "text/html", date: new Date().toUTCString() } });
+  const payload = (size = 10) =>
+    new Response(`0:${"x".repeat(size)}`, { status: 200, headers: { "content-type": "text/x-component" } });
+
+  /** Pages answer as HTML; router fetches answer as payloads, and the follow-up document fetch
+   *  after a tap gets a non-page, so a tap stores ONLY its payload (to test the payload budget). */
+  const net = (pageBody = () => "") =>
+    vi.fn(async (input: RequestInfo | URL) => {
+      if (typeof input === "string") return new Response("{}", { status: 200, headers: { "content-type": "application/json" } });
+      const headers = (input as { headers?: Headers }).headers;
+      return headers?.get?.("RSC") === "1" ? payload() : page(pageBody());
+    }) as unknown as typeof fetch;
+
+  it("gives router payloads their own budget, so taps never push pages out", async () => {
+    const sw = bootServiceWorker(net());
+    for (let i = 0; i < 150; i++) await sw.dispatchFetch(hardNavigation(`/page-${i}`));
+    for (let i = 0; i < 60; i++) await sw.dispatchFetch(rscNavigation(`/tap-${i}?_rsc=r${i}`));
+    const keys = await keysOf(sw);
+    expect(keys.filter((k) => !k.includes("_rsc"))).toHaveLength(150);
+    expect(keys).toContain(`${ORIGIN}/page-0`);
+    const payloads = keys.filter((k) => k.includes("_rsc"));
+    expect(payloads).toHaveLength(50);
+    expect(payloads).not.toContain(`${ORIGIN}/tap-0?_rsc=r0`); // the oldest payloads went
+    expect(payloads).toContain(`${ORIGIN}/tap-59?_rsc=r59`);
+  });
+
+  it("counts opening a copy offline as use, so it is evicted last", async () => {
+    const online = bootServiceWorker(net());
+    for (let i = 0; i < 150; i++) await online.dispatchFetch(hardNavigation(`/page-${i}`));
+
+    const dead = await goOffline(online);
+    expect(await (await dead.dispatchFetch(hardNavigation("/page-0")))!.text()).toContain("LIVE");
+    await new Promise((r) => setTimeout(r, 0)); // the touch lands after the answer
+
+    const back = bootServiceWorker(net());
+    for (const [name, cache] of dead.cacheStorage.caches) {
+      const target = await back.cacheStorage.open(name);
+      for (const [k, v] of cache.store) target.store.set(k, v);
+    }
+    await back.dispatchFetch(hardNavigation("/new-page"));
+    const keys = await keysOf(back);
+    expect(keys).toContain(`${ORIGIN}/page-0`); // used offline: kept
+    expect(keys).not.toContain(`${ORIGIN}/page-1`); // now the least recently used
+  });
+
+  it("caps the whole cache at 40 MB, dropping the oldest pages first", async () => {
+    const big = "x".repeat(1.9 * 1024 * 1024);
+    const sw = bootServiceWorker(net(() => big));
+    for (let i = 0; i < 25; i++) await sw.dispatchFetch(hardNavigation(`/big-${i}`));
+    const keys = await keysOf(sw);
+    expect(keys).toHaveLength(21); // 21 × 1.9 MB fits in 40 MB; 22 would not
+    expect(keys).not.toContain(`${ORIGIN}/big-0`);
+    expect(keys).toContain(`${ORIGIN}/big-24`);
+  });
+
+  it("skips a router payload over 1 MB", async () => {
+    const sw = bootServiceWorker(vi.fn(async () => payload(1.1 * 1024 * 1024)) as unknown as typeof fetch);
+    await sw.dispatchFetch(rscNavigation("/courses?_rsc=big"));
+    expect(await keysOf(sw)).toEqual([]);
+  });
+
+  it("never evicts a page the learner saved, and still serves it offline", async () => {
+    const online = bootServiceWorker(net());
+    const saved = await online.cacheStorage.open(PAGES);
+    await saved.put("/bam/knots/lesson/one", html("<h1>SAVED lesson one</h1>"));
+    await online.dispatchFetch(hardNavigation("/bam/knots/lesson/one")); // visited too, then pushed out
+    for (let i = 0; i < 200; i++) await online.dispatchFetch(hardNavigation(`/page-${i}`));
+
+    expect(await keysOf(online)).not.toContain(`${ORIGIN}/bam/knots/lesson/one`);
+    expect(await keysOf(online, PAGES)).toContain(`${ORIGIN}/bam/knots/lesson/one`);
+    const dead = await goOffline(online);
+    expect(await (await dead.dispatchFetch(hardNavigation("/bam/knots/lesson/one")))!.text()).toContain("SAVED lesson one");
   });
 });

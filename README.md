@@ -779,13 +779,20 @@ With no connection, a page navigation is answered, in order, by the learner's **
   link (after a tap the worker fetches the page once more as a document, at most every 10 minutes per
   page, since the router's own fetch is never served as a page), plus `/`, `/downloads`, `/offline` and `/help` at
   install (with their JS/CSS), so an installed app opens at `/` offline on first launch;
-- is capped at about 150 entries (least recently opened dropped first) and skips anything over 1.5 MB;
+- is bounded, least recently used dropped first (opening a copy offline counts as use): 150 pages and,
+  separately, 50 router payloads, up to 2 MB per page and 1 MB per payload, and 40 MB in all. Pages the
+  learner saved on purpose live in `witus-pages-v1` and are never evicted;
+- keeps only real pages: a 200 `text/html` response, or a 200 `text/x-component` payload under its own
+  `_rsc` URL. Error pages, redirects and other bodies are refused, in the worker and in "Save for offline";
 - **never** stores sign-in and invite routes, signed-in areas (`/dashboard`, `/admin`, `/teach`,
   `/audit`, `/cohorts`, `/family`, `/field-log`, `/my-courses`), checkout or billing, URLs carrying
   `token`, `session_id` or `code`, redirects, responses that set a cookie, or responses a route marks
   `private`/`no-store` (the one exception is the `Cache-Control` Next.js puts on **every** dynamic
   page, which would otherwise exclude every page);
 - is emptied when the signed-in user changes or signs out (`OfflinePrivacyGuard`, sign-out button).
+  Sign-out first cancels every save still in flight, in the page and in the worker
+  (`settleOfflineSaves`), so a page that finishes downloading during sign-out is never written after
+  the purge.
 
 Offline, the root layout shows a "You're offline" bar on every page (`OfflineBanner`), in-app links
 load the page in full so the worker can answer them (`OfflineLinkFallback`, `src/lib/offline-links.ts`),
