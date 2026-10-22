@@ -61,6 +61,7 @@ import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "./data/stage-and-broadcast-r
 import { SOUND_CRAFT_COURSE } from "./data/sound-craft-course";
 import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
 import { CINEMA_LOOK_CAMERA_RIG_COURSE } from "./data/cinema-look-camera-rig-course";
+import { ARENA_TRANSMISSION_COURSE } from "./data/arena-transmission-course";
 import { RENTING_OUT_PRODUCTION_GEAR_COURSE } from "./data/renting-out-production-gear-course";
 import { MAP_AND_COMPASS_COURSE } from "./data/map-and-compass-course";
 import { SURVEYING_HOW_LAND_GETS_MEASURED_COURSE } from "./data/surveying-how-land-gets-measured-course";
@@ -3401,6 +3402,27 @@ async function main() {
     navigationMode: "linear",
     publishHoldReason:
       "Held: needs a qualified reviewer (for example a broadcast engineer in charge or an RF and camera specialist) to read every lesson marked QR, with authority to change or cut it. Research tier 2: RF and FCC licensing, lithium batteries and money.",
+  });
+  // CREW-05, approved by BAM 2026-10-21 (cloud-briefs/crew-05/00-approved-brief.md): how a game's video,
+  // audio and data leave the arena over a league arena network, with the NBA's High-Speed Arena Network
+  // as the cited worked example and no team or venue named. Public, held for a qualified reviewer.
+  // Research tier 2: fiber and laser safety, heights. Sections 1 to 4 are written; sections 5 to 7 and
+  // the final quiz follow.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "arena-transmission",
+    course: ARENA_TRANSMISSION_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Sports", "Trade Skills"],
+    seriesSlug: "the-crew-behind-the-show",
+    seriesTitle: "The Crew Behind the Show",
+    seriesOrder: 5,
+    seriesCode: "CREW",
+    seriesPosition: "05",
+    navigationMode: "linear",
+    publishHoldReason:
+      "Held: needs a qualified reviewer (for example a broadcast network engineer or a league or truck engineer in charge) to read every lesson marked QR, with authority to change or cut it. Research tier 2: fiber and laser safety, and heights.",
   });
   // CREW-06, Renting Out Production Gear: brief approved 2026-10-21 (plans/future-courses/
   // careers-and-media/2026-10-21-production-gear-rental-business-brief.md). Public, held until a peer
