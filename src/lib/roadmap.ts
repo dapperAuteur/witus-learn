@@ -80,6 +80,21 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   5.CA.11, 7.GM.1 (partial where hand work is ungraded); NGSS 4-ESS2-2 not claimed. Eight lessons need a
   qualified reviewer and seventeen need BAM's demonstration; eight research checks filed. Held for both.
   Follow-ups: stage citations after seeding; DNR film agreement before P videos on DNR land.
+- 🔧 **Renting Out Production Gear: the Owner-Operator's Business, CREW-06**
+  (\`bundle/crew-06-gear-rental-2026-10-21\`, no migration; after merge run \`pnpm seed:courses:prod\`, then stage
+  citations). Brief approved 2026-10-21. Eight sections, 30 lessons, 627 questions: the market (rental houses, a
+  peer-to-peer platform, the owner-operator's kit fee, and why labor is never gear income), choosing what to own
+  (demand, utilization in billed days, churn, what to keep renting), buying new or used with an asset record,
+  pricing from published price lists (and why a percentage-of-replacement-value kit fee misleads), protection
+  (a rental house's published terms, waivers that are not insurance, owned-equipment and liability cover,
+  voluntary parting and the platform guarantee's limits), operations (prep, batteries, cleaning, check-in and
+  retirement), the money (depreciation and listed property, section 179 and the de minimis safe harbor, a
+  three-scenario break-even with labeled assumptions, where rental income is reported) and growing it. From
+  the platform's help articles, rental price lists and policies read 2026-10-21, the Insurance Information
+  Institute and IRMI, Sony's FX3 help guide, TSA, 49 CFR, and IRS Publications 946, 583 and 525. No lesson promises
+  income; every rate is dated. Lessons on contracts, insurance and taxes are marked for a qualified reviewer (8)
+  and one for a practitioner; two research checks filed. Public, held for a peer reviewer. Extra categories Trade
+  Skills and Money & Property (the brief's "Business" category does not exist on the tenant).
 - 🔧 **Light on Set, CREW-03** (\`feat/crew-courses\`, no migration). BAM approved the brief on 2026-10-08. Eight
   sections, 27 lessons, 661 questions: what light does, hard and soft light from first principles, shaping
   light with what is already in the room (and the hacks the course refuses), natural light, key, fill and
