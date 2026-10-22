@@ -101,6 +101,19 @@ export async function listCourses(tenantId: string, opts: CatalogQuery = {}): Pr
     .orderBy(orderBy);
 }
 
+/**
+ * Slugs of this tenant's published courses: the same rows `listCourses(tenantId)` returns, one
+ * column instead of all of them. For callers that only ask "is this course live here?" (the
+ * cross-course entity checks on the lesson page and the catalog search).
+ */
+export async function listPublishedCourseSlugs(tenantId: string): Promise<string[]> {
+  const rows = await db
+    .select({ slug: courses.slug })
+    .from(courses)
+    .where(and(eq(courses.tenantId, tenantId), eq(courses.isPublished, true), isNotNull(courses.slug)));
+  return rows.map((r) => r.slug as string);
+}
+
 /** By-id read filtered to the tenant: a foreign id returns null → the caller 404s. */
 export async function getCourseById(tenantId: string, id: string): Promise<Course | null> {
   const rows = await db

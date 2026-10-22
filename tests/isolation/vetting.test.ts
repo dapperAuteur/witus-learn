@@ -190,8 +190,20 @@ describe("the Coming soon face cannot leak the closed course", () => {
   it("loadCourseView withholds lessons and sections from a coming-soon viewer", () => {
     const access = src("src/lib/course-access.ts");
     expect(access).toContain("courseViewGate");
-    expect(access).toContain("const all = isComingSoon ? [] : await listLessons(course.id)");
+    expect(access).toContain("const all = isComingSoon ? [] : await listLessonSummaries(course.id)");
     expect(access).toContain("const modules = isComingSoon");
+  });
+
+  it("the lesson page loads a full lesson only after finding it in the gated list", () => {
+    // The view's list holds summaries; the body is fetched by id. It must be looked up in that
+    // list first, so a coming-soon course (empty list) or a draft (filtered out) still 404s.
+    const page = src("src/app/(tenant)/[username]/[courseSlug]/lesson/[lessonSlug]/page.tsx");
+    const find = page.indexOf("const listed = view.lessons.find((l) => l.slug === lessonSlug);");
+    const guard = page.indexOf("if (!listed) notFound();");
+    const load = page.indexOf("await getCourseLesson(view.course.id, listed.id)");
+    expect(find).toBeGreaterThan(-1);
+    expect(guard).toBeGreaterThan(find);
+    expect(load).toBeGreaterThan(guard);
   });
 
   it("the notify-me form is reachable ONLY from the coming-soon face", () => {

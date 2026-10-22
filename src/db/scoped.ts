@@ -8,6 +8,7 @@ import {
   listCategories,
   listSeries,
   listCourses,
+  listPublishedCourseSlugs,
   listSitemapCourses,
   type CatalogQuery,
 } from "@/db/queries/catalog";
@@ -164,6 +165,11 @@ export class ScopedDb {
   // ── Catalog (Phase 3) ──────────────────────────────────────────────────────
   listCourses(opts: CatalogQuery = {}) {
     return listCourses(this.tenantId, opts);
+  }
+
+  /** Slugs of this tenant's published courses (one column; for "is this course live here?"). */
+  listPublishedCourseSlugs() {
+    return listPublishedCourseSlugs(this.tenantId);
   }
 
   /** Course by id, scoped to this tenant (null → caller 404s; never cross-tenant). */

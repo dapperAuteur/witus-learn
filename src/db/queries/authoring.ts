@@ -181,6 +181,66 @@ export async function listLessons(courseId: string): Promise<Lesson[]> {
     .orderBy(asc(lessons.sortOrder), asc(lessons.id));
 }
 
+/**
+ * The columns a lesson LIST renders: titles, order, gating flags, and the content URL the offline
+ * picker and the tour check read. Deliberately NOT the body (`text_content`) or any of the JSON
+ * payloads (quiz, exercise, transcript, map, recall, review needs, documents, chapters): those are
+ * most of a course's bytes, and a syllabus, a contents rail or an ordering check draws none of them.
+ * Pulling them for every lesson on every view was the bulk of Learn's database egress
+ * (cloud-briefs/learn-db-egress-2026-10-20.md). A page that renders ONE lesson loads it whole with
+ * getCourseLesson.
+ */
+const lessonSummaryColumns = {
+  id: lessons.id,
+  courseId: lessons.courseId,
+  moduleId: lessons.moduleId,
+  title: lessons.title,
+  slug: lessons.slug,
+  lessonType: lessons.lessonType,
+  contentUrl: lessons.contentUrl,
+  durationSeconds: lessons.durationSeconds,
+  sortOrder: lessons.sortOrder,
+  isFreePreview: lessons.isFreePreview,
+  isPublished: lessons.isPublished,
+  recordedAt: lessons.recordedAt,
+  updatedAt: lessons.updatedAt,
+} as const;
+
+export type LessonSummary = Pick<Lesson, keyof typeof lessonSummaryColumns>;
+
+/** Every lesson of a course WITHOUT bodies, in the same stable order as listLessons. */
+export async function listLessonSummaries(courseId: string): Promise<LessonSummary[]> {
+  return db
+    .select(lessonSummaryColumns)
+    .from(lessons)
+    .where(eq(lessons.courseId, courseId))
+    .orderBy(asc(lessons.sortOrder), asc(lessons.id));
+}
+
+/** One lesson, whole, keyed by its course so an id from another course returns null. */
+export async function getCourseLesson(courseId: string, lessonId: string): Promise<Lesson | null> {
+  const rows = await db
+    .select()
+    .from(lessons)
+    .where(and(eq(lessons.id, lessonId), eq(lessons.courseId, courseId)))
+    .limit(1);
+  return rows[0] ?? null;
+}
+
+/** `quiz_content` of the named lessons of one course, keyed by lesson id. For the results page,
+ *  which replays only the quizzes a learner actually attempted. */
+export async function getCourseQuizContents(
+  courseId: string,
+  lessonIds: readonly string[],
+): Promise<Map<string, Lesson["quizContent"]>> {
+  if (lessonIds.length === 0) return new Map();
+  const rows = await db
+    .select({ id: lessons.id, quizContent: lessons.quizContent })
+    .from(lessons)
+    .where(and(eq(lessons.courseId, courseId), inArray(lessons.id, [...lessonIds])));
+  return new Map(rows.map((r) => [r.id, r.quizContent]));
+}
+
 export async function getLessonById(tenantId: string, id: string): Promise<Lesson | null> {
   const rows = await db
     .select()

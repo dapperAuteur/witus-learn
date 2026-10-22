@@ -68,7 +68,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
   const matchedEntities = sp.q ? matchEntities(sp.q) : [];
   let entityResults: { slug: string; name: string; kind: string; count: number }[] = [];
   if (matchedEntities.length > 0) {
-    const published = new Set((await sdb.listCourses({})).map((c) => c.slug));
+    const published = new Set(await sdb.listPublishedCourseSlugs());
     entityResults = matchedEntities
       .map((e) => ({ slug: e.slug, name: e.name, kind: e.kind, count: e.courses.filter((l) => published.has(l.courseSlug)).length }))
       .filter((e) => e.count >= 2);
