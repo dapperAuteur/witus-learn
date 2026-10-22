@@ -206,7 +206,7 @@ A production that needs the camera for one shoot, or a few shoots a year, pays a
 
 **A package, not a bare item.** Lensrentals lists exactly what arrives with the FX3 A body: the body, a body cap, a strap, an NP-FZ100 battery, a BC-ZD1 charger, a 3-foot Thunderbolt 4 USB-C cable and a USB charger. Its wireless video kit lists its parts too, and then says: "Batteries are not included and must be rented separately." A production that rents gets a written list of what will be in the case. An owner who rents gear out has to be just as exact.
 
-**What a production gives up by renting.** Renting is not free of conditions. The regional rental house requires a certificate of insurance for reservations that include items of $3,000 or more, and it may hold up to $1,000 on the renter's credit card (or the full value of the rental equipment, whichever is less). A production that rents often may weigh those costs against buying.
+**What renting costs a production besides the price.** Renting is not free of conditions. The regional rental house requires a certificate of insurance for reservations that include items of $3,000 or more, and from a first-time renter it may ask for a credit card hold of $1,000 (or the full value of the rental equipment, whichever is less). A production that rents often may weigh those costs against buying.
 
 **What the owner takes on.** Teradek's page for its Bolt 4K 750 Deluxe Kit, listed at $6,890, showed every version "Sold Out" on October 21, 2026, and pointed buyers onward: "For the latest Bolt generation see Bolt 6." A production that rents simply rents the newer generation. The owner of the older one still owns it. This course's reading, from those pages: renting moves four things from the production to the owner, and later lessons take them one at a time.
 
@@ -317,7 +317,7 @@ These are examples, not your rate. They show the size of the labor number next t
           { prompt: "Which cable does Lensrentals list in the FX3 A box?", options: ["A 6-foot HDMI to micro HDMI cable", "A 3-foot Thunderbolt 4 USB-C cable", "A 10-foot SDI cable with BNC ends", "A 3-foot D-Tap camera power cable"], correctIndex: 1, explanation: "The list includes \"a 3-foot Thunderbolt 4 USB-C cable\", along with the body, body cap, strap, battery, charger and a USB charger.", sourceLessonSlug: "why-productions-rent" },
           { prompt: "What does Lensrentals' wireless video kit listing say about batteries?", options: ["One battery is included per transmitter", "Batteries ship charged to half capacity", "They are not included and are rented apart", "Batteries come only with the 7-day rental"], correctIndex: 2, explanation: "The listing says: \"Batteries are not included and must be rented separately.\"", sourceLessonSlug: "why-productions-rent" },
           { prompt: "What does lesson 2 conclude from rental houses' exact lists of what is in the case?", options: ["Owners should never list accessories", "Productions should bring their own cables", "Package lists matter only on long rentals", "An owner must be just as exact about it"], correctIndex: 3, explanation: "\"A production that rents gets a written list of what will be in the case. An owner who rents gear out has to be just as exact.\"", sourceLessonSlug: "why-productions-rent" },
-          { prompt: "How much may the regional rental house hold on a renter's credit card?", options: ["Up to $1,000, or the gear's value if less", "Up to $3,000, or the gear's value if more", "The full replacement value of every item", "A flat $500 on every single reservation"], correctIndex: 0, explanation: "It \"may hold up to $1,000 on the renter's credit card (or the full value of the rental equipment, whichever is less).\"", sourceLessonSlug: "why-productions-rent" },
+          { prompt: "How much may the regional rental house hold on a first-time renter's credit card?", options: ["Up to $1,000, or the gear's value if less", "Up to $3,000, or the gear's value if more", "The full replacement value of every item", "A flat $500 on every single reservation"], correctIndex: 0, explanation: "From a first-time renter it may ask for \"a credit card hold of $1,000 (or the full value of the rental equipment, whichever is less).\" It does not hold $3,000, the full replacement value, or a flat $500.", sourceLessonSlug: "why-productions-rent" },
           { prompt: "Why does lesson 2 say renting is \"not free of conditions\" for a production?", options: ["Houses require a year-long contract", "Insurance and card holds can be required", "Renters must also buy one item a year", "Rented gear may be used only in a studio"], correctIndex: 1, explanation: "The regional house requires a certificate of insurance for items of $3,000 or more and may hold up to $1,000 on a card. \"A production that rents often may weigh those costs against buying.\"", sourceLessonSlug: "why-productions-rent" },
           { prompt: "What price did Teradek list for its Bolt 4K 750 Deluxe Kit?", options: ["$2,390", "$4,298", "$6,890", "$1,200"], correctIndex: 2, explanation: "Teradek listed the Bolt 4K 750 Deluxe Kit at $6,890, with every version \"Sold Out\". $2,390 is the Bolt 6 LT set.", sourceLessonSlug: "why-productions-rent" },
           { prompt: "Where did Teradek's Bolt 4K Deluxe Kit page point buyers on October 21, 2026?", options: ["To a used-gear dealer", "To its rental partners", "To the Bolt 4K 1500 kit", "To the Bolt 6 generation"], correctIndex: 3, explanation: "The page said: \"For the latest Bolt generation see Bolt 6.\"", sourceLessonSlug: "why-productions-rent" },
@@ -939,7 +939,7 @@ By this arithmetic, the rule's day rate for the camera is 3.4 to 5.2 times the r
 
 **Why it misleads.** This course's reasoning: a percentage of replacement value describes your cost, not the client's choice. A client who can rent the same item from a rental house will compare. A rule that ignores the price list prices you out of the jobs where the client checks, and teaches you to expect income the market may not pay. This course could not test whether clients pay the rule's rates, so it treats the rental house's price as the figure a client can check, and the guide's rule as a claim.
 
-**What a kit fee does buy the client.** The regional house asks a renter to show a certificate of insurance for items of $3,000 or more, and may hold up to $1,000 on a credit card. A client who pays your kit fee skips the pickup, the return, the certificate and the hold, and gets gear prepped by the person who will run it. That convenience is real, by this course's reading, but it has a ceiling: the client can still rent the gear and hire you to run it.
+**What a kit fee does buy the client.** The regional house asks a renter to show a certificate of insurance for items of $3,000 or more, and may ask a first-time renter for a $1,000 credit card hold. A client who pays your kit fee skips the pickup, the return, the certificate and the hold, and gets gear prepped by the person who will run it. That convenience is real, by this course's reading, but it has a ceiling: the client can still rent the gear and hire you to run it.
 
 **How to write it on an invoice.** Keep the kit fee on its own line, apart from your day rate. The Rate Guide says so, and the IRS instructions quoted in lesson 3 ask a payer to split a machine's rent from its operator's charge.
 
@@ -1018,7 +1018,406 @@ By this arithmetic, the rule's day rate for the camera is 3.4 to 5.2 times the r
     },
     // @@QUIZ-4@@
 
-    // @@SECTIONS-5-8@@
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5: Protection
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-rental-agreement",
+      title: "15 · The rental agreement",
+      section: "5 · Protection",
+      recallContent: [
+        {
+          prompt: "Name the six steps of this course's rate sheet.",
+          answer: "Date it; one row per item or package with the market prices; your prices with your weekend and week rules in words; what reaches you after fees; your kit fee on its own line; your terms.",
+        },
+        {
+          prompt: "What does ShareGrid's \"Fair Market Pricing\" factor tell owners?",
+          answer: "\"Set competitive and reasonable rental prices to attract renters and improve your ranking.\"",
+        },
+      ],
+      body: `${QR("an attorney who drafts equipment rental agreements in the learner's state, to check this lesson's reading of the published policies and its checklist")}
+
+**What this lesson does.** It reads one rental house's published policies and terms as a working example of what a rental agreement covers. It is not a template and not legal advice. Which terms a court will enforce depends on the law of your state, which is why this lesson waits for an attorney's review.
+
+**What one house's terms cover.** The regional rental house's policies and terms page, read on October 21, 2026, covers at least nine subjects:
+
+1. **Who may rent.** "You must be at least 21 years of age", with "a valid and current Driver's License or equivalent State/government issued ID" and "a valid and active credit card". The house scans the ID "to have on hand and attach to the customer profile", and if someone else picks up the order, "a copy of their ID will need to be presented at pick-up."
+2. **Money held.** From first-time renters, a card authorization of "$1000.00 (or full value of the rental equipment, whichever is less)."
+3. **Insurance.** A certificate of insurance for reservations that include items of $3,000 or more, and proof of insurance from "All first-time renters". Without a valid certificate, "the renter agrees to full responsibility for any damages or replacement costs that may occur." Lesson 17 reads the certificate's terms.
+4. **Who bears the risk, and until when.** The customer "shall continue to bear any and all risks of loss and/or damage to the Equipment" until it is returned and "verified ... as undamaged and in working condition."
+5. **How the gear may be used.** No use that would "subject it to abnormal or hazardous conditions", no alterations without written consent, and "Customer shall not attempt to service or repair any of the Equipment".
+6. **Time.** "Rentals must be returned by 10am the day after the last reserved date", and late charges "continue to accrue at the rates set forth in the rental contract."
+7. **Fees for condition.** Cleaning fees, a "$5 per cap fee for any missing lens/body/rear cap", and a $25 sensor cleaning fee.
+8. **Non-return.** If a renter fails to return equipment or communicate, the house "will consider equipment stolen and will make all efforts to recover", and "Any and all costs to effect recovery will be the responsibility of you, the renter."
+9. **The legal frame.** The agreement "constitutes a lease and not a sale"; the customer may not "sublease the Equipment to any other person or entity without consent"; the customer agrees to indemnify the house for claims arising from use of the equipment; and a governing-law clause names a state and the county where any case will be heard.
+
+**When a platform is in the middle.** On ShareGrid, the platform's rules supply much of this. Pickup and return times apply "Unless you arrange otherwise with the owner"; "All rentals require some type of coverage"; and an owner may add a late fee, typically "a one-day rental fee", when items come back late. Read the platform's rules as part of your agreement, and do not promise a renter anything that contradicts them.
+
+**A checklist for your own agreement.** This course's list, for the attorney to review: the parties and their ID; the items, with serial numbers and replacement values (lesson 9); pickup and return times; prices and your weekend and week rules; the deposit or card hold; the insurance or waiver required; who bears the risk until check-in; permitted use and no self-repair; condition, cleaning and missing-part fees; late fees; what happens on non-return; cancellation; and signatures.
+
+:::reveal Until when does the regional house's customer bear the risk of loss or damage? ||| Until the equipment is returned and verified as undamaged and in working condition.
+
+:::reveal What does the house say happens if a renter fails to return equipment or communicate? ||| It will consider the equipment stolen and make all efforts to recover it, at the renter's cost.
+
+:::reveal Name four subjects this course's agreement checklist covers. ||| Any four of: parties and ID; items with serial numbers and replacement values; pickup and return times; prices and rules; deposit or hold; insurance or waiver; risk until check-in; permitted use and no self-repair; condition and cleaning fees; late fees; non-return; cancellation; signatures.
+
+## Sources
+- ${RH_POLICIES} Locator: "Policies and Terms" (eligibility, ID scans, first-time renters); "Terms of Rental" (return time, late charges, insurance); "Return"; "Use of Equipment"; "Additional Fees"; "Additional Rental Terms"; "Governing Law"; "Indemnification".
+- ${SG_SHOOT_DAYS} Locator: pickup and return times, "Unless you arrange otherwise with the owner".
+- ${SG_COVERAGE} Locator: first paragraph.
+- ${SG_DAMAGE} Locator: handling missing items, late returns.`,
+    },
+    {
+      slug: "waivers-are-not-insurance",
+      title: "16 · Damage waivers are not insurance",
+      section: "5 · Protection",
+      recallContent: [
+        {
+          prompt: "What does the regional house's agreement say it is, and what may the customer not do with the equipment?",
+          answer: "It \"constitutes a lease and not a sale\", and the customer may not sublease the equipment without consent.",
+        },
+        {
+          prompt: "Under the regional house's terms, how much must a first-time renter allow on a card hold?",
+          answer: "$1,000, or the full value of the rental equipment, whichever is less.",
+        },
+      ],
+      body: `${QR("a licensed insurance agent who writes production equipment coverage, to check this lesson's reading of the waiver and protection pages")}
+
+**Two different promises.** An insurance policy is a contract with an insurer. A damage waiver is a promise from a platform or a rental house about how much a renter will owe if something goes wrong. Renters often treat them as the same thing. The platform's own page says they are not.
+
+**ShareGrid, in its own words.** "Damage Only and Damage + Theft coverage options are not insurance policies."
+
+- **Damage Only** "Provides coverage exclusively for physical damage to the gear" and is "Available for rentals with a cumulative replacement value under $6,000."
+- **Damage + Theft** "Provides protection against both physical damage and theft if the rental is stolen from the renter." Its own page calls it a "Loss Damage Waiver" and says "The renter, not the owner, is responsible for a 12% fee if there is rental damage or theft", based on "the replacement value listed on the rental's listing". It applies to "most listings with a replacement value of up to $30,000."
+- Excluded: "Wear and Tear: Damages such as scratches or dents resulting from regular use are not eligible." and "Any damage resulting from the renter's negligence is also excluded." Every claim is "subject to a comprehensive review by ShareGrid."
+- A renter may also use outside insurance, "accepted only after completing coverage verification."
+
+**What ShareGrid tells owners.** "Owners are not required to carry insurance to list their gear on ShareGrid." "The responsibility to cover the gear lies with the renters." And from the missing-items policy: "Insurance and damage waivers do not cover missing items."
+
+**A rental house's version.** Lensrentals' Lenscap plans are "optional add-ons that limit your liability". With Lenscap, "your liability is limited to the lesser of the cost to repair the equipment or 10% of the replacement cost", up to a stated maximum of $100,000, for accidental damage "as long as you can return it to us." Lenscap+ adds cover for "situations that make it impossible to return the equipment that you rented", such as theft.
+
+**Worked examples of the rules.** This course's arithmetic, with made-up values:
+
+- A Damage + Theft claim on a listing with a $5,000 replacement value: the renter's fee is 12 percent, $600.
+- A Lenscap renter damages an item with a $4,000 replacement value and a $1,000 repair: the renter owes the lesser of $1,000 or $400, so $400.
+
+**Where the owner is still exposed.** This course's reading of those pages: a waiver limits what the renter owes; it does not insure you. Wear and tear, damage the review finds was negligence, missing items, values above the waiver's limits, and the bookings you lose while gear is out for repair all fall outside what these pages describe. Lesson 17 covers insurance you buy for yourself, and lesson 18 covers gear that never comes back.
+
+:::reveal What does ShareGrid say about its Damage Only and Damage + Theft options? ||| They "are not insurance policies."
+
+:::reveal Under Damage + Theft, who pays the 12 percent fee, and on what is it based? ||| The renter, not the owner, based on the replacement value listed on the rental's listing.
+
+:::reveal With Lenscap, what does a renter owe for damage? ||| The lesser of the cost to repair the equipment or 10 percent of the replacement cost, up to a $100,000 maximum.
+
+## Sources
+- ${SG_COMPARE} Locator: the waiver-status sentence and the descriptions of Damage Only, Damage + Theft and third-party insurance.
+- ${SG_THEFT} Locator: the 12 percent fee, the $30,000 limit and the exclusions.
+- ${SG_COVERAGE} Locator: the owner insurance sentence and "The responsibility to cover the gear lies with the renters."
+- ${SG_MISSING} Locator: "Insurance and damage waivers do not cover missing items."
+- ${LR_LENSCAP} Locator: the plan description, the liability limit and its footnote, and the Lenscap+ paragraph.`,
+    },
+    {
+      slug: "insurance-for-owned-gear",
+      title: "17 · Insurance for owned gear and for liability",
+      section: "5 · Protection",
+      recallContent: [
+        {
+          prompt: "In this course's worked example, what does a Lenscap renter owe for a $1,000 repair on an item with a $4,000 replacement value?",
+          answer: "$400, the lesser of the $1,000 repair or 10 percent of the replacement value.",
+        },
+        {
+          prompt: "Name three things this course says still fall outside what the waiver pages describe.",
+          answer: "Any three of: wear and tear; damage the review finds was negligence; missing items; values above the waiver's limits; bookings lost while gear is out for repair.",
+        },
+      ],
+      body: `${QR("a licensed insurance agent who writes production equipment and small-business coverage, to check every statement about coverage and every question this lesson tells the learner to ask")}
+
+**Your home policy is probably not enough.** The Insurance Information Institute says: "A typical homeowners policy provides only $2,500 coverage for business equipment, which is usually not enough to cover all of your business property." It describes three routes: a homeowners endorsement ("For as little as $25 you can raise the policy limits from $2,500 to $5,000", and some insurers allow up to $10,000), an in-home business policy, and a businessowners policy (BOP).
+
+**Gear that travels: inland marine.** The Institute explains that, unlike marine insurance for goods moved over water, inland marine insurance covers products, materials and equipment moved over land, by truck or train, or while a third party holds them in storage. It names "Photography equipment" among the specialty equipment it can cover, and adds that "Collisions and cargo theft are the two most frequent causes of inland marine losses." The International Risk Management Institute (IRMI) defines the policy rental owners hear about most: "An equipment floater is property insurance covering equipment that is often moved from place to place. It is a form of inland marine insurance."
+
+**Liability is a separate question.** The Institute: "Any enterprise can be sued." Liability insurance "pays damages for which the business is found liable, up to the policy limits, as well as attorneys' fees and other legal defense expenses." The regional rental house's certificate requirements say "General Liability Insurance may be required depending on equipment use case." A client may ask the same of you.
+
+**What a rental house asks its renters to carry.** Read as a model of the terms that matter: "Rented Equipment or Inland Marine Equipment Floater Insurance required"; "No 'unattended vehicle' exclusion"; a named loss payee; and coverage that "is replacement cost and includes transit and world-wide coverage."
+
+**What prices looked like, as dated examples.** On October 21, 2026, Athos Insurance listed minimum premiums of "$495" for "Annual Production Equipment: (Owned and/or Rented)", "$250" for "Short-Term Rented Equipment", and a start of "$220" for hobbyists or private events, with deductible options of $250, $500, $1,000 or $2,500. Its form asks, "How much of your total owned equipment do you rent to others?", and entering 0 means that coverage is not added. Insureon, a broker, reported that small businesses buying through it paid "an average of $48 per month" for inland marine insurance, with "Annual premiums" from "around $150 to over $4,500 per year". These are minimums and averages, not a quote for your gear.
+
+**Questions to ask an agent.** This course's list, for the reviewer to check:
+
+1. Does the policy cover my owned gear while it is rented to others, and up to what amount?
+2. Does it cover voluntary parting (lesson 18)?
+3. Is there an unattended-vehicle exclusion?
+4. Does it pay replacement cost, and is transit covered?
+5. What is the deductible, and is it different for some losses?
+6. Does it schedule items by serial number, using my asset record (lesson 9)?
+7. What general liability limit do my clients ask for, and does this policy include it?
+
+:::reveal How much coverage does the Insurance Information Institute say a typical homeowners policy gives business equipment? ||| Only $2,500, which is usually not enough to cover all of your business property.
+
+:::reveal How does IRMI define an equipment floater? ||| Property insurance covering equipment that is often moved from place to place; a form of inland marine insurance.
+
+:::reveal What does Athos's form ask about equipment rented to others, and what happens if you enter 0? ||| How much of your total owned equipment you rent to others; entering 0 means that coverage is not added.
+
+## Sources
+- ${III_HOME_BUSINESS} Locator: first paragraph; "Homeowners Policy Endorsement"; "In-Home Business Policy/Program"; "Businessowners Policy (BOP)".
+- ${III_INLAND_MARINE} Locator: first paragraph; the list of specialty equipment.
+- ${IRMI_FLOATER} Locator: the definition.
+- ${III_BASICS} Locator: "Major Coverages", item 2, "Liability Insurance".
+- ${RH_POLICIES} Locator: "Certificate of Insurance Requirements".
+- ${ATHOS} Locator: minimum premiums; deductible selector; the rented-to-others question.
+- ${INSUREON} Locator: the average monthly cost and the annual range.`,
+    },
+    {
+      slug: "theft-and-non-return",
+      title: "18 · Theft, non-return and the guarantee's limits",
+      section: "5 · Protection",
+      recallContent: [
+        {
+          prompt: "What did Athos list as the minimum premium for annual production equipment, owned and/or rented, on October 21, 2026?",
+          answer: "$495.",
+        },
+        {
+          prompt: "Name three questions this course tells you to ask an insurance agent.",
+          answer: "Any three of: owned gear while rented to others; voluntary parting; an unattended-vehicle exclusion; replacement cost and transit; the deductible; scheduling by serial number; the general liability limit.",
+        },
+      ],
+      body: `${QR("a licensed insurance agent, for the voluntary parting coverage and exclusion, and an attorney for the police-report and written-demand steps")}
+
+**The loss owners fear most.** A renter takes the gear and never brings it back. ShareGrid's guarantee page names it: "This scenario is known as voluntary parting. This is a criminal act sometimes called 'theft by fraud' or 'theft by false pretenses' and should be reported to law enforcement." It adds: "These cases are extremely rare, but when they occur, they can be devastating to the gear's owner."
+
+**What the platform's guarantee covers, and its limits.** ShareGrid's Owner Guarantee offers "up to $20,000 in cumulative Replacement Value for Listings rented and picked up in person, and up to $7,500 in cumulative Replacement Value for Listings rented out using ShareGrid's shipping feature." Its limits, in its own words:
+
+- "This is a cumulative limit, not a per-rental limit." A $15,000 and a $10,000 listing out at once are protected up to $20,000, not $25,000.
+- A listing, or a package, worth more than $20,000 is not protected.
+- "There is a maximum of two (2) eligible claims per 12 calendar months for each Owner account."
+- An owner who has "an insurance policy that covers someone renting your Listing and not returning it" is not eligible and must claim on that policy.
+- It does not cover "Loss of use or ongoing rental fees" before you are reimbursed, or gear not "personally picked up by the Renter from the Owner" unless shipped through ShareGrid's tracked shipping.
+
+**What it asks of you.** Notify ShareGrid "within 48 hours of the rental's end date". If the gear is not back within 72 hours, ShareGrid recommends a police report "for theft by fraud or theft by false pretenses", and notes that some places "may require you to send a written demand to the Renter" first. A theft claim needs a copy of the police report, confirmation of a criminal investigation, and any information or footage that helps.
+
+**Check the ID in person.** ShareGrid's owner guide: "Always check the renter's government-issued ID at gear pickup." "Ensure that the name on the ID matches the name listed in the rental conversation thread on ShareGrid." And: "Please refrain from taking photos of the renter's or an authorized person's ID", because ShareGrid already keeps a copy from sign-up.
+
+**Insurance for the same loss.** The guarantee page recommends "voluntary parting coverage" above its limits, and names Athos Insurance as the partner that provides policies bought through ShareGrid accounts. Athos sells "Voluntary Parting and/or Conversion" as "(Optional Coverage)" and explains: "If you are tricked into renting your equipment to a fraudulent client, where the client does not return or disappears with your equipment." An IRMI article on an equipment coverage form written for farm machinery lists "Voluntary parting" among that form's additional excluded causes of loss. This course's reading: an equipment policy may exclude exactly this loss unless you add it, so ask (lesson 17, question 2).
+
+**Five habits.** This course's advice, from the pages above: hand gear only to the named renter after checking ID; prefer local pickup when the guarantee depends on it; keep values and item lists current (lesson 9); keep total value out at one time under the limits you rely on; and put the 48-hour deadline in your calendar the moment a rental is late.
+
+:::reveal What does ShareGrid call the scenario where a renter does not return the gear? ||| Voluntary parting, a criminal act sometimes called theft by fraud or theft by false pretenses.
+
+:::reveal How much does ShareGrid's guarantee cover for gear picked up in person, and is the limit per rental? ||| Up to $20,000 in cumulative Replacement Value; it is cumulative, not per rental.
+
+:::reveal Within how many hours must an owner notify ShareGrid of an unreturned rental? ||| Within 48 hours of the rental's end date.
+
+## Sources
+- ${SG_GUARANTEE} Locator: opening paragraph; "Why does ShareGrid offer this?"; "Do I still need voluntary parting coverage?" and its examples; "Eligibility"; "Making a claim"; "Exclusions".
+- ${SG_ID} Locator: the ID check, the name match and the request not to photograph IDs.
+- ${ATHOS} Locator: "(Optional Coverage) Voluntary Parting and/or Conversion" and its explanation.
+- ${IRMI_MAMECF} Locator: the list of additional excluded causes of loss.`,
+    },
+    // @@QUIZ-5@@
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6: Operations
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "prep-and-test",
+      title: "19 · Prep and test before every rental",
+      section: "6 · Operations",
+      recallContent: [
+        {
+          prompt: "How many eligible claims per 12 calendar months does ShareGrid's Owner Guarantee allow each owner account?",
+          answer: "Two.",
+        },
+        {
+          prompt: "What does ShareGrid ask owners not to do with a renter's ID at pickup?",
+          answer: "Not to take photos of it; ShareGrid already keeps a copy from sign-up.",
+        },
+      ],
+      body: `**The standard renters expect.** ShareGrid's tips for owners set it plainly: "Keep your equipment clean, in good working order, and ready for use." "Be accessible to resolve any issues within 24 hours of the renter picking up the equipment." "Arrive on time for both the pick-up and return exchanges." And "Check the renter's ID at the start of the rental." The regional rental house promises its own customers that "all Equipment will be operational to accepted manufacturer's specifications" when delivered. A renter comparing you with a house will expect no less.
+
+**Clear the last renter out of the camera.** Sony's help guide for the FX3 says that before lending a camera you should "be sure to perform the following operation to protect private information. Select [Setting Reset] → [Initialize]." Initializing deletes registered faces, certificates, access point information, FTP and cloud connection settings, and streaming connection information. Two details matter for a rental owner:
+
+- Even [Initialize] does not reset [Picture Profile] settings, except PPLUT 1 to 4, so a look the last user built may still be in the camera. Check it.
+- "Be sure not to eject the battery pack while resetting."
+
+**Wipe the cards.** Sony warns that formatting "may not completely delete the data on the memory card" and recommends data deletion software before lending a card. The regional rental house formats rented cards "immediately upon return" and asks renters to make sure "all footage has been properly transferred off" first. If you include cards, tell renters the same, in writing.
+
+**Update the software, with power to spare.** Sony's Version screen shows the body's firmware and, with a compatible lens attached, the lens's. "Updating can be performed only when the remaining battery level is 51% or more." Update between rentals, never the morning of one, and test after.
+
+**A pre-rental checklist.** This course's list, built from the pages above and lessons 9 and 10:
+
+1. Charge every battery; test each in the camera (lesson 20).
+2. Record a short test clip; play it back; check every output the package promises.
+3. Check firmware versions against your asset record.
+4. Reset or initialize the camera, then set any defaults you promise renters.
+5. Wipe every card with data deletion software.
+6. Clean what renters will touch and look through (lesson 21).
+7. Photograph each item, including serial numbers and any marks.
+8. Pack against the kit list, and have the renter confirm the list at handover.
+
+:::reveal Which Sony operation does the help guide say to perform before lending a camera? ||| [Setting Reset] → [Initialize], to protect private information.
+
+:::reveal What does Sony say about [Picture Profile] settings when you initialize? ||| They are not reset, except PPLUT 1 to 4.
+
+:::reveal What battery level does Sony require for a firmware update? ||| 51 percent or more.
+
+## Sources
+- ${SG_TIPS} Locator: "Maintain Your Gear", "Be Available", "Be Punctual", "Verify ID".
+- ${RH_POLICIES} Locator: "Return", the warranty sentence; "Additional Fees", "Immediate Card Format".
+- ${SONY_LENDING} Locator: "Notes on lending, transferring, or discarding the camera to others"; "Notes on lending, transferring, or discarding a memory card to others".
+- ${SONY_RESET} Locator: "Note", the Picture Profile and battery sentences.
+- ${SONY_VERSION} Locator: the first two sentences and "Note".`,
+    },
+    {
+      slug: "batteries",
+      title: "20 · Batteries: care, travel and shipping",
+      section: "6 · Operations",
+      recallContent: [
+        {
+          prompt: "What does the regional rental house do with rented cards on return, and what does it ask renters to do first?",
+          answer: "It formats them immediately on return, and asks renters to make sure all footage has been transferred off first.",
+        },
+        {
+          prompt: "Name four steps of this course's pre-rental checklist.",
+          answer: "Any four of: charge and test batteries; record and play back a test clip and check outputs; check firmware; reset or initialize; wipe cards; clean; photograph each item and serial number; pack against the kit list with the renter confirming it.",
+        },
+      ],
+      body: `**Batteries are where rentals fail.** A camera that will not power on ends the booking. Treat batteries as their own inventory, with their own log.
+
+**What the camera's maker says.** Sony's help guide for the FX3:
+
+- Use only "genuine Sony branded battery packs" in the camera.
+- "Do not expose the battery pack to water. The battery pack is not water-resistant."
+- "Do not leave the battery pack in extremely hot places, such as in a car or under direct sunlight."
+- Sony recommends charging "in an ambient temperature of between 10 °C and 30 °C (50 °F and 86 °F)."
+- "The charged battery pack will discharge little by little even if you do not use it."
+- "Do not continuously or repeatedly charge the battery pack without using it if it is already fully charged or close to fully charged. Doing so may cause a deterioration in battery performance."
+- "Battery performance decreases in low temperature environments."
+- For storage: "charge the battery pack and then fully discharge it in the camera at least once a year before storing it. Store the battery in a cool, dry place after removing it from the camera."
+
+Larger batteries from other makers come with their own manuals. Follow each maker's instructions for its own packs.
+
+**A battery log.** This course suggests one line per battery: a number marked on the pack, the date bought, and a note each time its run time in your test drops. Sony says that when "the available time of the battery is shortened significantly, it is probably time to replace the battery pack." The log tells you when that day has come, before a renter finds out.
+
+**Flying with spares.** The Transportation Security Administration says spare lithium batteries "must be carried in carry-on baggage only." With airline approval, a passenger may also carry "up to two spare larger lithium ion batteries" of 101 to 160 watt hours, a size that "covers ... some larger batteries used in professional audio/visual equipment." A renter flying with your kit needs to know this. Put it in your handover notes.
+
+**Shipping is a regulated act.** Federal hazardous materials rules have a section titled "Lithium cells and batteries" (49 C.F.R. § 173.185), and the person who offers a hazardous material for transport "shall class and describe the hazardous material in accordance with parts 172 and 173" (49 C.F.R. § 173.22(a)(1)). This course does not teach those rules. If you ship batteries to renters, learn your carrier's rules and the federal rules first, or ship the kit without them and have renters supply power.
+
+:::reveal What does Sony recommend for storing a battery pack? ||| Charge it and then fully discharge it in the camera at least once a year before storing, and store it in a cool, dry place outside the camera.
+
+:::reveal Under TSA rules, where must spare lithium batteries travel, and how many larger 101 to 160 watt-hour spares may a passenger carry? ||| In carry-on baggage only; up to two larger spares, with airline approval.
+
+:::reveal Which federal section is titled "Lithium cells and batteries"? ||| 49 C.F.R. § 173.185.
+
+## Sources
+- ${SONY_BATTERY} Locator: "Notes on using the battery pack"; "Notes on charging the battery pack"; "Effective use of the battery pack"; "How to store the battery pack"; "On battery life".
+- ${TSA_LI} Locator: the carry-on rule and the 101 to 160 watt-hour paragraph.
+- ${CFR_173_185} Locator: section title.
+- ${CFR_173_22} Locator: paragraph (a)(1).
+- ${RH_POLICIES} Locator: "Additional Fees", "Immediate Card Format".`,
+    },
+    {
+      slug: "cleaning",
+      title: "21 · Cleaning lenses, sensors and bodies",
+      section: "6 · Operations",
+      recallContent: [
+        {
+          prompt: "In what temperature range does Sony recommend charging the FX3's battery pack?",
+          answer: "Between 10 °C and 30 °C (50 °F and 86 °F).",
+        },
+        {
+          prompt: "What does this course say to do if you will ship a kit but have not learned the battery shipping rules?",
+          answer: "Ship the kit without batteries and have renters supply power, or learn the carrier's and the federal rules first.",
+        },
+      ],
+      body: `**Follow the maker, not habit.** Cleaning is where well-meant care does damage. The rules below are Sony's, from the FX3 help guide. Lenses and bodies from other makers come with their own instructions; read them.
+
+**Lenses.**
+
+- "Do not use a cleaning solution containing organic solvents, such as thinner, or benzine."
+- "When cleaning the lens surface, remove dust with a commercially available blower."
+- For dust that sticks, "wipe it off with a soft cloth or tissue paper slightly moistened with lens cleaning solution. Wipe in a spiral pattern from the center to the outside."
+- "Do not spray lens cleaning solution directly onto the lens surface."
+
+**The body.**
+
+- "Do not touch the parts of the product inside the lens mount, such as a lens signal contact." Use a blower inside the mount, and do not use a spray-type blower, which "may cause a malfunction".
+- Clean the outside "with a soft cloth slightly moistened with water, then wipe the surface with a dry cloth."
+- Keep it away from "thinner, benzine, alcohol, disposable cloths, insect repellent, sunscreen or insecticide", and do not leave it "in contact with rubber or vinyl for a long time."
+- Sony warns that wiping the monitor firmly with tissue paper may scratch it; remove dust gently, then use a soft cloth.
+
+**The sensor.** Sony's steps: confirm the battery is charged, run [Sensor Cleaning] from the menu, then "Use a commercially available blower to clean the image sensor surface and the surrounding area", holding the camera "slightly face downward so that the dust falls out." Its cautions: the battery level must be "51% or more"; "Do not use a spray type blower"; do not put the blower's tip past the lens mount; "do not blow too hard". And: "If the dust remains even after you cleaned the product as described, consult the service facility."
+
+**What the market charges for dirt.** The regional rental house charges $20 per item for gear returned with odors or a dirty exterior, up to 25 percent of the rental fee for gear that comes back "offensively dirty", and "$25 per sensor that is returned needing cleaning". It asks renters "do not try to clean the sensor yourself as it could damage the sensor." Your agreement can name cleaning fees too (lesson 15), and your listing can ask renters not to clean sensors.
+
+**Cleaning is time, and time is cost.** This course's reasoning: every rental adds a cleaning step to the turnaround, and a sensor that a blower will not clear means a trip to a service facility and days out of rental. Count both in your per-booking costs (lesson 25).
+
+:::reveal How does Sony say to wipe a lens with lens cleaning solution? ||| With a soft cloth or tissue slightly moistened with the solution, in a spiral from the center to the outside, never spraying solution on the lens.
+
+:::reveal What does Sony say to do if sensor dust remains after cleaning with a blower? ||| Consult the service facility.
+
+:::reveal What did the regional house charge per sensor returned needing cleaning, and what does it ask renters not to do? ||| $25 per sensor, and it asks renters not to clean the sensor themselves.
+
+## Sources
+- ${SONY_CLEANING} Locator: "Cleaning the lens"; "Cleaning the camera body"; "Cleaning the product surface"; "Cleaning the monitor".
+- ${SONY_SENSOR} Locator: the numbered steps and "Note".
+- ${RH_POLICIES} Locator: "Additional Fees", cleaning and sensor cleaning fees.`,
+    },
+    {
+      slug: "check-in-and-retirement",
+      title: "22 · Check-in, turnaround, repair and retirement",
+      section: "6 · Operations",
+      recallContent: [
+        {
+          prompt: "Name two things Sony says to keep the camera body away from when cleaning.",
+          answer: "Any two of: thinner, benzine, alcohol, disposable cloths, insect repellent, sunscreen, insecticide; also long contact with rubber or vinyl.",
+        },
+        {
+          prompt: "What battery level does Sony require before sensor cleaning?",
+          answer: "51 percent or more.",
+        },
+      ],
+      body: `**Check-in starts the clock.** ShareGrid tells owners to "Report the damage within 24 hours of the equipment's return" and to "take detailed photographs to capture the extent and nature of the damage". Late reports may affect coverage. For missing items, "Renters have 24 hours to locate and return the item," and owners may add a late fee of one day's rental. So inspect at handback, not next week.
+
+**A check-in routine.** This course's steps, matched to those deadlines:
+
+1. With the renter present, count every item against the kit list (lesson 10).
+2. Power on, record, play back; test every output.
+3. Photograph each item from the same angles as at check-out (lesson 19), including serial numbers.
+4. Note anything missing or damaged, and tell the renter on the spot.
+5. Report through the platform within 24 hours if anything is wrong.
+6. Then clean, charge, reset, wipe and log, so the kit is ready for the next renter.
+
+**Turnaround is real time.** ShareGrid makes pickup and return days free because they "are intended for checking, prepping, and transporting gear, not filming." Those days are yours to fill with the routine above. This course's reasoning: if check-in, cleaning, charging and testing take a few hours per booking, count them as a cost of every booking (lesson 25).
+
+**Repairs go to the maker's service.** The regional rental house forbids renters to repair its gear: "Customer shall not attempt to service or repair any of the Equipment". Sony's guide sends sensor dust it cannot clear to "the service facility". This course's advice: send repairs to an authorized service center, keep the receipts in the asset record (for listed property, IRS Publication 946's records rule names "maintenance and repair costs" among the expenditures your records must support), and mark the item unavailable until it is back and tested.
+
+**Retirement.** Gear leaves the business in one of three ways: it wears out, it stops renting, or you sell it. Each leaves a record.
+
+- **Batteries** retire when their run time falls (lesson 20).
+- **For tax purposes**, IRS Publication 946 says "You stop depreciating property either when you have fully recovered your cost or other basis or when you retire it from service, whichever happens first."
+- **When you sell**, Publication 583's asset record asks for when and how you disposed of the asset, the selling price, and the expenses of sale. Selling through ShareGrid carries "A 5% fee" on seller transactions.
+- **Before it goes**, Sony says to initialize the camera, and "When discarding a memory card, we recommend that you physically destroy it."
+
+:::reveal Within how long after return does ShareGrid tell owners to report damage? ||| Within 24 hours of the equipment's return, with detailed photographs.
+
+:::reveal Why does ShareGrid make pickup and return days free? ||| They "are intended for checking, prepping, and transporting gear, not filming."
+
+:::reveal According to IRS Publication 946, when do you stop depreciating property? ||| When you have fully recovered its cost or other basis, or when you retire it from service, whichever happens first.
+
+## Sources
+- ${SG_DAMAGE} Locator: reporting deadline and photographs; handling missing items.
+- ${SG_MISSING} Locator: the 24-hour window and late fee.
+- ${SG_SHOOT_DAYS} Locator: "Pick-up and drop-off days are free".
+- ${RH_POLICIES} Locator: "Return", the service and repair sentence.
+- ${SONY_SENSOR} Locator: "Note", last item on dust that remains.
+- ${IRS_P946} Locator: chapter 1, "When Does Depreciation Begin and End?"; chapter 5, "What Records Must Be Kept?", "Elements of expenditure or use".
+- ${IRS_P583} Locator: "Supporting Documents", "Assets".
+- ${SG_FEES} Locator: "Buy & Sell", seller fee.
+- ${SONY_LENDING} Locator: "Notes on lending, transferring, or discarding a memory card to others".`,
+    },
+    // @@QUIZ-6@@
+
+    // @@SECTIONS-7-8@@
 
     // @@FINAL@@
   ],
