@@ -2564,6 +2564,8 @@ Not priced: an FX6 cage and plates, media, cables, a rain cover, and a stand and
 | Wireless | Accsoon CineView HE, HDMI only, no SDI | $369.00 | Accsoon (n.d.-a) |
 | Wireless | DJI SDR Transmission combo | $469 | DJI (n.d.-g) |
 | Wireless | Vaxis Storm 1000S | $2,999.00 new; $2,250 used set | Vaxis US (n.d.-a, n.d.-b) |
+| Wireless | Teradek Bolt 6 LT 750 with Gold or V-mount plates | $2,890 | Teradek (n.d.-c) |
+| Wireless | Teradek Bolt 6 LT HDMI 750 set | $1,490, not available | Teradek (n.d.-b) |
 | Monitor | SmallHD Indie 5, 1000 nits, SDI and HDMI | $1,299.00 | SmallHD (n.d.-a) |
 | Monitor-recorder | Atomos Ninja RAW 5-inch, 1500 nits | $699.00 | Focus Camera (n.d.-h) |
 
@@ -2606,6 +2608,8 @@ Not priced: an FX6 cage and plates, media, cables, a rain cover, and a stand and
 - ${DJI_SDR_STORE} Locator: combo price.
 - ${VAXIS_NEW} Locator: price.
 - ${VAXIS_USED} Locator: price.
+- ${TERADEK_LT} Locator: the price with battery plates.
+- ${TERADEK_LT_HDMI} Locator: price and availability.
 - ${SMALLHD_INDIE_5} Locator: price, brightness and inputs.
 - ${FOCUS_ATOMOS} Locator: price and brightness.
 - ${TERADEK_BOLT4K} Locator: the stock notice and the pointer to Bolt 6.`,
