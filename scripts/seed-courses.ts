@@ -60,6 +60,7 @@ import { MANURE_AND_COMPOST_COURSE } from "./data/manure-and-compost-course";
 import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "./data/stage-and-broadcast-rigging-course";
 import { SOUND_CRAFT_COURSE } from "./data/sound-craft-course";
 import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
+import { CINEMA_LOOK_CAMERA_RIG_COURSE } from "./data/cinema-look-camera-rig-course";
 import { RENTING_OUT_PRODUCTION_GEAR_COURSE } from "./data/renting-out-production-gear-course";
 import { MAP_AND_COMPASS_COURSE } from "./data/map-and-compass-course";
 import { SURVEYING_HOW_LAND_GETS_MEASURED_COURSE } from "./data/surveying-how-land-gets-measured-course";
@@ -3381,12 +3382,32 @@ async function main() {
     publishHoldReason:
       "Held until a qualified reviewer (for example a licensed electrician or a stage lighting professional) has read every lesson marked QR. Research tier 2: electrical work, hot lamps and fire.",
   });
+  // CREW-04, approved by BAM 2026-10-21 (cloud-briefs/crew-04/00-approved-brief.md): the shallow-focus
+  // wireless gimbal camera sports broadcasts nicknamed the Megalodon. Public, held for a qualified
+  // reviewer. Research tier 2: RF and FCC licensing, lithium batteries, money. Sections 1 to 4 are
+  // written; sections 5 to 8 and the final quiz follow.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "cinema-look-camera-rig",
+    course: CINEMA_LOOK_CAMERA_RIG_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Sports", "Trade Skills"],
+    seriesSlug: "the-crew-behind-the-show",
+    seriesTitle: "The Crew Behind the Show",
+    seriesOrder: 4,
+    seriesCode: "CREW",
+    seriesPosition: "04",
+    navigationMode: "linear",
+    publishHoldReason:
+      "Held: needs a qualified reviewer (for example a broadcast engineer in charge or an RF and camera specialist) to read every lesson marked QR, with authority to change or cut it. Research tier 2: RF and FCC licensing, lithium batteries and money.",
+  });
   // CREW-06, Renting Out Production Gear: brief approved 2026-10-21 (plans/future-courses/
   // careers-and-media/2026-10-21-production-gear-rental-business-brief.md). Public, held until a peer
   // reviewer signs off; the lessons on contracts, insurance and taxes are marked QR (an
   // attorney, an insurance agent, a CPA or enrolled agent). Research tier 2: money, contracts, insurance
   // and taxes. The brief named "Business" as an extra category; no such category exists on this tenant,
-  // so Money & Property stands in for it. CREW-04 and CREW-05 are approved briefs, not yet registered.
+  // so Money & Property stands in for it. Registered after CREW-04 and CREW-05 in series order.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,

@@ -3,9 +3,10 @@ import type { AuthoredCourse } from "./authored-course";
 // "Renting Out Production Gear: the Owner-Operator's Business" (Careers & Media, also listed in
 // Trade Skills and Money & Property). Slug `renting-out-production-gear`. Series
 // `the-crew-behind-the-show` ("The Crew Behind the Show"), code CREW, position 06. CREW-01 is
-// `stage-and-broadcast-rigging`, CREW-02 `sound-craft`, CREW-03 `light-on-set`; CREW-04 (the
-// cinema-look camera rig) and CREW-05 (arena transmission) are approved briefs, not yet built, so this
-// course names them in prose and links to no lesson of theirs.
+// `stage-and-broadcast-rigging`, CREW-02 `sound-craft`, CREW-03 `light-on-set`, CREW-04
+// `cinema-look-camera-rig` and CREW-05 `arena-transmission`. CREW-04 and CREW-05 were written in parallel
+// with this course and are still being finished, so this course names CREW-04 in prose (lesson 7) and
+// links to no lesson of theirs.
 //
 // BRIEF: plans/future-courses/careers-and-media/2026-10-21-production-gear-rental-business-brief.md,
 // APPROVED on 2026-10-21 (gate A8). The decisions recorded in the brief's section 7:
