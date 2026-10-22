@@ -1,7 +1,7 @@
 import "server-only";
 import { cache } from "react";
 import type { Course, CourseModule } from "@/db/schema";
-import type { LessonSummary } from "@/db/queries/authoring";
+import { getCourseBySlug, type LessonSummary } from "@/db/queries/authoring";
 import { cachedCourseBySlug, cachedLessonSummaries, cachedModules } from "@/lib/public-cache";
 import { getCourseProgressSummary } from "@/db/queries/progress";
 import { isEnrolled as checkEnrolled } from "@/db/queries/enrollment";
@@ -68,7 +68,14 @@ export const loadCourseView = cache(async function loadCourseView(
   // The course row, its lesson summaries and its sections are the same for every visitor, so they
   // come from the cross-request cache (src/lib/public-cache.ts). Everything about THIS viewer below
   // (session, enrollment, progress, auditor grant) is read fresh on every request.
-  const course = await cachedCourseBySlug(tenant.id, username, courseSlug);
+  //
+  // A miss is not proof the course doesn't exist. The route index is cached for up to an hour and
+  // the seed scripts write outside Next, so they cannot clear it: a course seeded in the last hour
+  // is missing from it, and its owner got a 404 on the first visit (2026-10-22). A SIGNED-IN miss
+  // gets one direct read. A signed-out miss (crawlers inventing URLs) still costs no query.
+  const course =
+    (await cachedCourseBySlug(tenant.id, username, courseSlug)) ??
+    ((await getSession()) ? await getCourseBySlug(tenant.id, username, courseSlug) : null);
   if (!course) return null;
 
   const session = await getSession();
