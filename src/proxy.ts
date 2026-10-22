@@ -7,6 +7,18 @@ import { PATHNAME_HEADER } from "@/lib/next-path";
 // home. Tenant resolution + flag-driven gating happen server-side where the
 // resolved tenant is available.
 export function proxy(req: NextRequest) {
+  // next.config.ts sets skipTrailingSlashRedirect (PostHog's /ingest endpoints need their trailing
+  // slashes), which switches Next's own "/page/ → /page" redirect off app-wide. Put it back here
+  // for page routes so a page keeps exactly one URL. /ingest and /api never reach this function
+  // (see the matcher), so the analytics proxy is untouched.
+  const { pathname } = req.nextUrl;
+  if (pathname.length > 1 && pathname.endsWith("/")) {
+    // A plain URL, not nextUrl.clone(): NextURL re-adds the trailing slash it parsed when formatting.
+    const url = new URL(req.url);
+    url.pathname = pathname.replace(/\/+$/, "") || "/";
+    return NextResponse.redirect(url, 308);
+  }
+
   if (isBlockedSurfacePath(req.nextUrl.pathname)) {
     const url = req.nextUrl.clone();
     url.pathname = "/";
@@ -24,6 +36,9 @@ export function proxy(req: NextRequest) {
   return NextResponse.next({ request: { headers } });
 }
 
+// `ingest` is excluded on purpose: /ingest/* is the PostHog proxy rewrite (next.config.ts), and
+// middleware runs BEFORE rewrites, so a redirect here would silently eat every analytics event.
+// No app route may begin with /ingest.
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|api|sitemap.xml|robots.txt).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|api|ingest|sitemap.xml|robots.txt).*)"],
 };

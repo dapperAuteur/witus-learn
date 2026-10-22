@@ -16,6 +16,20 @@ const nextConfig: NextConfig = {
   // resolving. It is a same-app route move, NOT a cross-tenant by-id/slug lookup, so a permanent
   // redirect is correct here — the isolation "never redirect" rule is about existence-leaking
   // tenant lookups, which this is not.
+  // PostHog ingest is proxied through our own origin (`/ingest`) so ad blockers that match on the
+  // vendor hostname don't drop events. PostHog's endpoints use trailing slashes, and Next would 308
+  // them away before the rewrite runs, so trailing-slash redirects are turned off here. That is
+  // global, so src/proxy.ts puts the old "/page/ → /page" redirect back for every page route
+  // (it skips /ingest and /api), which keeps one URL per page without per-page canonicals.
+  // Spec: witus-online lib/analytics/INTEGRATE.md step 2. The shared project is US region.
+  skipTrailingSlashRedirect: true,
+  async rewrites() {
+    return [
+      // /static must come first: assets come from a different upstream host than ingest.
+      { source: "/ingest/static/:path*", destination: "https://us-assets.i.posthog.com/static/:path*" },
+      { source: "/ingest/:path*", destination: "https://us.i.posthog.com/:path*" },
+    ];
+  },
   async redirects() {
     return [
       { source: "/standards", destination: "/academic-standards", permanent: true },
