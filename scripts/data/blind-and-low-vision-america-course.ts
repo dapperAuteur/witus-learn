@@ -150,7 +150,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Who wrote this course, and under what conditions?",
             options: [
-              "A sighted author, from published sources",
+              "A sighted author, from published sources, with blind review set as a condition on publication",
               "A blind co-author and a sighted author working together from the outline stage onward",
               "A team of certified braille transcribers drawing on their own production experience",
               "A blind-led research collective that granted the catalog publication rights to its work",
@@ -163,7 +163,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Which of these does this course explicitly refuse to do?",
             options: [
-              "Teach you to read braille with your fingers",
+              "Teach you to read braille with your fingers, since it cannot train a fingertip",
               "Explain the contraction rules that separate contracted braille from uncontracted braille",
               "Name the four codes that competed in American schools during the standards war",
               "Describe how a refreshable braille display renders Unicode text as raised dots",
@@ -177,9 +177,9 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
             prompt: "How long was the tactile braille reading course in Bola and colleagues' 2016 study?",
             options: [
               "Nine months",
-              "Two full academic years, running across four consecutive university semesters",
-              "Six weeks of daily intensive instruction followed by a year of unsupervised practice",
-              "Three months, matching the standard rehabilitation block for newly blinded adults",
+              "Two academic years",
+              "Six weeks",
+              "Three months",
             ],
             correctIndex: 0,
             explanation:
@@ -190,9 +190,9 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
             prompt: "What mean reading speed did the participants in that study reach?",
             options: [
               "About six words per minute",
-              "About sixty words per minute, roughly a quarter of average adult print reading speed",
-              "About twenty-five words per minute, which the authors called functional literacy",
-              "About one hundred words per minute for uncontracted braille and half that for contracted",
+              "About sixty words per minute",
+              "About twenty-five words per minute",
+              "About one hundred words per minute",
             ],
             correctIndex: 0,
             explanation:
@@ -203,9 +203,9 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
             prompt: "How many participants did the Bola study enrol?",
             options: [
               "Twenty-nine",
-              "Ninety-six, sampled in two age cohorts either side of a policy change",
-              "Two hundred and fifty, recruited from braille production houses in four countries",
-              "Twelve, which the authors described as a pilot rather than a full trial",
+              "Ninety-six",
+              "Two hundred and fifty",
+              "Twelve",
             ],
             correctIndex: 0,
             explanation:
@@ -215,7 +215,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What comparison did the authors of that study draw about the pace of learning?",
             options: [
-              "Comparable to blind children in primary school",
+              "Comparable to congenitally and early blind children learning braille in primary school",
               "Roughly half the pace of adults who lose their sight later in life and retrain",
               "Faster than blind adults because sighted learners already have print literacy",
               "Slower than any documented group, which is why the authors called the result null",
@@ -228,7 +228,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What rule does this course apply to every source in its bibliographies?",
             options: [
-              "Flag whether a blind person or blind-led organisation wrote it",
+              "Flag whether a blind person or blind-led organisation wrote it, so readers know whose account it is",
               "Require that two independent publications carry the same claim before it may be printed",
               "Prefer sources published after 2000, because older accounts reflect superseded attitudes",
               "Exclude anything published by an advocacy organisation on either side of a dispute",
@@ -241,7 +241,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Which is the least obvious of the three costs lesson 1 names?",
             options: [
-              "Not noticing the questions a blind reader would ask",
+              "Not noticing the questions a blind reader would ask, an absence that never shows up as an error",
               "Relying on a written record made mostly by sighted superintendents, doctors and printers",
               "Being unable to check a claim about touch reading against the author's own hands",
               "Depending on sources that are themselves published by partisan advocacy organisations",
@@ -254,7 +254,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Who made most of the written record this course draws on, according to lesson 1?",
             options: [
-              "Sighted officials and professionals",
+              "Sighted officials and professionals: superintendents, doctors, printers, legislators",
               "Blind alumni associations that kept minutes of their own conventions and reunions",
               "Federal statisticians compiling registry data on reading media in schools",
               "Publishers and printers who had a commercial interest in one code winning",
@@ -267,7 +267,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What does lesson 1 say a learner should treat their finished knowledge as?",
             options: [
-              "Knowledge about the code, not of reading it",
+              "Knowledge about the code, not of reading it, since it is all learned by sight",
               "A working transcriber's competence that still needs certification before professional use",
               "Equivalent to a sighted teacher's classroom qualification in the code",
               "Provisional until a blind reviewer has corrected the specific claims they remember",
@@ -280,7 +280,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Where does lesson 1 point a reader for the part the course cannot do?",
             options: [
-              "To blind teachers and blind-led organisations",
+              "To blind teachers and blind-led organisations, such as the two largest named in Section 6",
               "To the datasets and corpora the course consulted while it was being researched",
               "To the Unicode Braille Patterns block and any refreshable display that renders it",
               "To the transcription houses that produce contracted braille under the current code",
@@ -293,7 +293,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What did participants in the Bola study do before any braille letters were introduced?",
             options: [
-              "Tactile discrimination exercises",
+              "Tactile discrimination exercises, before half the alphabet was introduced",
               "A written examination on the history and structure of the Polish braille code",
               "Six weeks of learning the print alphabet blindfolded to simulate sight loss",
               "Daily listening practice with audio recordings to build phonological awareness",
@@ -319,7 +319,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What is a blind-led organisation, as this course uses the term?",
             options: [
-              "One run by blind people themselves",
+              "One run by blind people themselves, rather than run by others on their behalf",
               "One whose services are delivered exclusively to blind and low-vision beneficiaries",
               "One that employs a majority of blind staff in its professional and technical roles",
               "One certified by a federal agency as representing blind people in policy consultations",
@@ -332,7 +332,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Why does the course print the Bola study's speed figure rather than paraphrasing it?",
             options: [
-              "Because the claim needs evidence",
+              "Because a claim in this catalog carries its evidence, not just a disclaimer",
               "Because the authors asked that the number be reproduced whenever the study is cited",
               "Because six words per minute is the threshold used to certify braille literacy",
               "Because paraphrase would breach the licence the paper is published under",
@@ -345,7 +345,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Which describes the standpoint rule this course follows?",
             options: [
-              "Stated, not implied",
+              "Stated, not implied: in the first lesson and above the fold in the description",
               "Disclosed to reviewers during editing but kept out of learner-facing text",
               "Established by listing the author's qualifications at the end of the final lesson",
               "Handled by avoiding first-person statements so the text reads as neutral",
@@ -359,9 +359,9 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
             prompt: "How many dot positions does a standard braille cell have?",
             options: [
               "Six",
-              "Eight, arranged four across and two down, as used on refreshable displays",
-              "Nine, which allows a single cell to carry both a letter and a capital marker",
-              "Four, with a variable base that widens the cell for less frequent letters",
+              "Eight",
+              "Nine",
+              "Four",
             ],
             correctIndex: 0,
             explanation:
@@ -372,9 +372,9 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
             prompt: "How many patterns does a six-dot cell allow, counting the empty cell?",
             options: [
               "Sixty-four",
-              "Two hundred and fifty-six, which is why braille can carry the full print character set",
-              "Twenty-six, one for each letter of the English alphabet with no room for punctuation",
-              "Sixty-three, since a cell with no raised dots cannot be read as a character",
+              "Two hundred and fifty-six",
+              "Twenty-six",
+              "Sixty-three",
             ],
             correctIndex: 0,
             explanation:
@@ -384,7 +384,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Is braille a language?",
             options: [
-              "No, it is a code",
+              "No, it is a code that encodes an existing print language, such as English, into dots",
               "Yes, it is a distinct written language with a grammar independent of print English",
               "Yes, in the same sense that American Sign Language is a language rather than a code",
               "Only in its contracted form, where the contractions function as an independent vocabulary",
@@ -410,7 +410,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What does uncontracted braille do?",
             options: [
-              "Spells every word out",
+              "Spells every word out, one cell per print character, historically grade 1",
               "Uses a reduced character set so that beginners meet fewer patterns in their first year",
               "Prints one cell per syllable rather than one cell per printed character",
               "Omits punctuation and capital markers to save space in embossed volumes",
@@ -423,7 +423,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Why does contracted braille exist at all?",
             options: [
-              "Paper braille is bulky",
+              "Paper braille is bulky, and one cell standing for a whole word saves space",
               "Because transcribers are paid by the cell and contractions reduce production costs",
               "Because the six-dot cell cannot represent every English letter without doubling up",
               "Because contractions were required by the treaty that unified British and American codes",
@@ -436,7 +436,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What are the older names for uncontracted and contracted braille?",
             options: [
-              "Grade 1 and grade 2",
+              "Grade 1 and grade 2, names for uncontracted and contracted that are still in wide use",
               "Boston line letter and New York Point, after the schools that promoted each",
               "Literary braille and technical braille, after the material each was designed for",
               "Standard Dot and Revised braille, the two systems the uniform type committees proposed",
@@ -449,7 +449,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What did the ICEB General Assembly do in April 2004?",
             options: [
-              "Declared UEB substantially complete",
+              "Declared UEB substantially complete and available for adoption by individual countries",
               "Voted to require every member country to implement UEB within a fixed five-year window",
               "Rejected the first draft of UEB and returned it to the research project for revision",
               "Merged the literary and mathematics codes into a single notation for all member countries",
@@ -463,9 +463,9 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
             prompt: "On what date did the United States members of BANA vote to adopt Unified English Braille?",
             options: [
               "2 November 2012",
-              "4 January 2016, chosen to fall on the two hundred and seventh birthday of Louis Braille",
-              "9 November 2014, when the board approved its published implementation statement",
-              "In April 2004, immediately after the ICEB General Assembly declared the code complete",
+              "4 January 2016",
+              "9 November 2014",
+              "April 2004",
             ],
             correctIndex: 0,
             explanation:
@@ -489,9 +489,9 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
             prompt: "What date did BANA set for United States implementation of UEB?",
             options: [
               "4 January 2016",
-              "2 November 2012, the day the motion adopting the code passed decisively",
-              "1 July 2013, the start of the announced information year in the transition plan",
-              "9 November 2014, when the board approved the four-phase implementation statement",
+              "2 November 2012",
+              "1 July 2013",
+              "9 November 2014",
             ],
             correctIndex: 0,
             explanation:
@@ -501,7 +501,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What were BANA's four announced transition phases, in order?",
             options: [
-              "Information, infrastructure, instruction, implementation",
+              "Information, infrastructure, instruction, implementation, one phase a year from 2013 to 2016",
               "Consultation, ratification, procurement and finally a two-year grace period for schools",
               "Research, balloting, publication and then withdrawal of the superseded code",
               "Training, testing, certification and finally re-transcription of the existing collection",
@@ -515,9 +515,9 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
             prompt: "How many contractions did the move to UEB eliminate?",
             options: [
               "Nine",
-              "Sixty-four, one for every pattern the six-dot cell can form",
-              "None, since UEB kept the entire contraction set of English Braille American Edition",
-              "Seventeen, matching the number of member organisations then sitting on the BANA board",
+              "Sixty-four",
+              "None",
+              "Seventeen",
             ],
             correctIndex: 0,
             explanation:
@@ -540,7 +540,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "After implementation, what were the four official braille codes of the United States?",
             options: [
-              "UEB, Nemeth, Music and IPA",
+              "UEB, the Nemeth Code, the Music Braille Code and the IPA Braille Code",
               "UEB alone, since the point of unification was to end the use of parallel codes",
               "UEB, English Braille American Edition, Nemeth and the Music Braille Code",
               "UEB, Nemeth, New York Point and the Computer Braille Code of 1987",
@@ -553,7 +553,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What follows for a braille reader sitting in an American mathematics class?",
             options: [
-              "They read a different code from a British reader",
+              "They read a different technical code from a British reader, because the US retained Nemeth",
               "They read the same technical notation a British reader does, because UEB unified both",
               "They must learn eight-dot computer braille before any equation can be transcribed",
               "They read uncontracted braille only, since contractions are barred in technical material",
@@ -566,7 +566,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What does the Library of Congress note about the date its National Library Service took up UEB?",
             options: [
-              "It was Louis Braille's two hundred and seventh birthday",
+              "The day, 4 January 2016, was Louis Braille's two hundred and seventh birthday",
               "It was the first working day after the four-phase transition plan formally expired",
               "It was chosen to coincide with the start of the American academic spring semester",
               "It was the anniversary of the Pratt-Smoot Act, which created the service in 1931",
@@ -580,9 +580,9 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
             prompt: "Which Unicode block holds braille?",
             options: [
               "U+2800 to U+28FF",
-              "U+1F600 to U+1F64F, shared with the emoticon and symbol ranges",
-              "U+0041 to U+005A, mapped directly onto the Latin capital letters it encodes",
-              "U+2800 to U+2863, one code point for each of the sixty-four six-dot patterns",
+              "U+1F600 to U+1F64F",
+              "U+0041 to U+005A",
+              "U+2800 to U+2863",
             ],
             correctIndex: 0,
             explanation:
@@ -606,9 +606,9 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
             prompt: "How many patterns does an eight-dot cell allow?",
             options: [
               "Two hundred and fifty-six",
-              "Sixty-four, the same as the six-dot cell, with the extra dots used only for emphasis",
-              "One hundred and twenty-eight, since the eighth dot is reserved as a cursor marker",
-              "Sixty-three, because the empty cell is not a usable character in computer braille",
+              "Sixty-four",
+              "One hundred and twenty-eight",
+              "Sixty-three",
             ],
             correctIndex: 0,
             explanation:
@@ -631,7 +631,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Where does this course say the real gap is, given that the braille code is teachable in text?",
             options: [
-              "In the fingers, the schools, the archives and the law",
+              "In the fingers, the schools, the archives and the law, which the remaining sections cover",
               "In the contraction rules, which no published account has ever set out completely",
               "In the eight-dot variants, which no course covers because displays differ by manufacturer",
               "In the vocabulary, since contracted braille has short forms print English lacks",
@@ -644,7 +644,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Which body declared UEB substantially complete?",
             options: [
-              "The International Council on English Braille",
+              "The International Council on English Braille, at its April 2004 General Assembly",
               "The Braille Authority of North America, at its board meeting of 9 November 2014",
               "The Library of Congress, through its National Library Service for the Blind",
               "The American Printing House for the Blind, which prints the codes it recommends",
@@ -657,7 +657,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What is the relationship between the ICEB declaration and national adoption?",
             options: [
-              "Adoption stayed a national decision",
+              "Adoption stayed a national decision, which is why the United States voted in 2012",
               "The declaration bound every member country to adopt the code within two years",
               "Adoption required a further vote of the WIPO assembly before it took legal effect",
               "The declaration adopted the code, and national bodies only set implementation dates",
@@ -683,7 +683,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What does lesson 1 say about the argument in Section 3 specifically?",
             options: [
-              "Almost every decision-maker in it was sighted",
+              "Almost every decision-maker in it was sighted, as were those who recorded it",
               "It is the only section in the course where no primary source could be retrieved",
               "It concerns a dispute among blind readers about which contractions to keep",
               "It was settled by a federal court rather than by the schools themselves",
@@ -696,7 +696,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Which is true of the codes braille comes in?",
             options: [
-              "Each encodes its own print system",
+              "Each is a code for its own print system, from English and French to music",
               "They descend from one another the way spoken languages descend from a common ancestor",
               "They are mutually unintelligible in the way two signed languages can be",
               "There is only one, since Unified English Braille absorbed the others in 2016",
@@ -709,7 +709,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "How does this course describe sighted knowledge of braille?",
             options: [
-              "Real knowledge, and a different thing from reading by touch",
+              "Real knowledge about the code, and a different thing from reading it by touch",
               "Worthless, because anything not learned through the fingers misrepresents the code",
               "Sufficient for teaching braille to a blind child provided the teacher is certified",
               "Identical to tactile knowledge, since the code is the same in both cases",
@@ -722,7 +722,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What were the Bola study's participants, by background?",
             options: [
-              "Braille teachers, students and relatives of blind people",
+              "Braille teachers, special education students and relatives of blind people",
               "Undergraduate psychology volunteers recruited for course credit at a single university",
               "Adults with diagnosed low vision who had never previously been offered braille",
               "Professional transcribers already fluent in the code by sight before the study began",
@@ -748,7 +748,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "What is the constraint that has always shaped embossed books?",
             options: [
-              "Bulk",
+              "Bulk: paper braille takes a great deal of space, which is why contracted braille exists",
               "The number of transcribers qualified to work in the current literary code",
               "The sixty-four patterns available in the six-dot cell, which limits the character set",
               "Copyright, which until 1996 barred any accessible copy without the publisher's consent",
@@ -761,7 +761,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Which pairing correctly matches a date to its event?",
             options: [
-              "2012, BANA votes to adopt UEB",
+              "2012, the United States members of BANA vote to adopt Unified English Braille",
               "2004, the United States implements Unified English Braille nationwide",
               "2016, the ICEB General Assembly declares UEB substantially complete",
               "2014, the United States members of BANA vote to replace English Braille American Edition",
@@ -774,7 +774,7 @@ Unicode Consortium. (n.d.). *Blocks.txt* [Unicode Character Database]. https://w
           {
             prompt: "Which claim about braille would this course call an error of framing rather than a detail?",
             options: [
-              "That braille is a language",
+              "That braille is a language, which reverses the whole argument of the course",
               "That contracted braille is harder to learn than uncontracted braille",
               "That the Nemeth Code covers mathematics and science notation in the United States",
               "That refreshable displays commonly use an eight-dot rather than a six-dot cell",
@@ -872,7 +872,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "According to Campsie's article, who was the method that inspired Louis Braille designed for?",
             options: [
-              "Blind people",
+              "Blind people specifically; it was never intended for the military",
               "Soldiers, so that orders could be read at night without striking a light",
               "Naval signallers working below deck where lamps were forbidden",
               "Teachers at the Paris school, as a shorthand for recording lessons quickly",
@@ -898,7 +898,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "When did Barbier and Braille meet, on Campsie's account?",
             options: [
-              "After Braille had published his own system",
+              "After Braille had published his own system, ruling out any mentorship",
               "In 1821, when Barbier first brought his twelve-dot cell to the school in Paris",
               "They never met, and corresponded only through the school's director",
               "Before 1829, during the several years Braille spent adapting the larger cell",
@@ -911,7 +911,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "Which two published accounts does Campsie's summary identify as the source of the distorted story?",
             options: [
-              "Pignier in 1859 and Pierre Henri in 1952",
+              "Pignier in 1859 and Pierre Henri in 1952, a misreading and a hypothesis",
               "Irwin in 1955 and the American Printing House's centenary history of 1958",
               "Two encyclopaedia entries published in Paris in 1841 and in London in 1868",
               "Barbier's own publications, which overstated what he had shown at the school",
@@ -924,7 +924,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What did Pierre Henri's 1952 account actually do, as Campsie's summary describes it?",
             options: [
-              "Hypothesised how Barbier might have developed his ideas",
+              "Hypothesised how Barbier might have developed his ideas and introduced them at the school",
               "Fabricated a demonstration at the Paris school that no witness had recorded",
               "Reported an interview with a descendant of Barbier who had kept the family papers",
               "Translated Barbier's own military correspondence into French for the first time",
@@ -938,9 +938,9 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
             prompt: "In what year was Campsie's article published?",
             options: [
               "2021",
-              "2001, the same year Barbier's papers were donated to the museum in Paris",
-              "1952, when the account she corrects was first published",
-              "1955, alongside the American first-hand history of the standards war",
+              "2001",
+              "1952",
+              "1955",
             ],
             correctIndex: 0,
             explanation:
@@ -963,7 +963,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What archival event made Campsie's correction possible?",
             options: [
-              "A donation of Barbier's papers in 2001",
+              "A donation of Barbier's papers in 2001 to a museum at the Association Valentin Hauy",
               "The declassification of French artillery records held by the Ministry of War",
               "The reopening of the Paris school's own nineteenth-century enrolment registers",
               "A transcription project that put Braille's 1829 exposition online in facsimile",
@@ -976,7 +976,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "Which organisation published Judy Dixon's summary of the Campsie findings?",
             options: [
-              "The American Council of the Blind",
+              "The American Council of the Blind, a membership organisation of blind people",
               "The American Printing House for the Blind, which prints the codes it recommends",
               "The Braille Authority of North America, in its November 2012 press release",
               "The Library of Congress, through its National Library Service",
@@ -989,7 +989,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "Why does this course print Campsie's findings from an abstract rather than from the article?",
             options: [
-              "The journal refused an automated reader",
+              "The journal refused an automated reader, so the pass read the indexed abstract",
               "The article is paywalled and the catalog will not pay for a single source",
               "The abstract is more precise than the article body, which hedges its four findings",
               "The author asked that the article not be quoted in commercial teaching material",
@@ -1002,7 +1002,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What widely repeated claim does this course refuse to teach?",
             options: [
-              "That the Paris school banned braille and burned books",
+              "That the Paris school banned braille and burned books, a story the course could not confirm",
               "That Barbier's cell was twelve dots and too large for a fingertip to read",
               "That Louis Braille published his system in 1829 while still a student",
               "That the method that inspired Braille was designed for blind readers",
@@ -1015,7 +1015,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "Which direction does the Barbier correction run, compared with the rest of this course?",
             options: [
-              "It removes credit from a myth",
+              "It removes credit from a myth and returns it to a man designing for blind readers",
               "It restores credit to a blind inventor the record had dropped entirely",
               "It shows a sighted engineer taking a patent on a blind colleague's design",
               "It shows a blind person's private notation becoming a national standard",
@@ -1028,7 +1028,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What is Barbier remembered as today, according to the summary this lesson quotes?",
             options: [
-              "Only as a precursor of Louis Braille",
+              "Only as a precursor of Louis Braille, though he invented raised-point writing",
               "As the inventor of the code adopted by the French army during the Napoleonic wars",
               "As the director of the Paris school who introduced dot writing to its curriculum",
               "As a critic of Braille who campaigned against the six-dot cell until his death",
@@ -1041,7 +1041,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "How does this lesson describe the way most archival corrections arrive?",
             options: [
-              "Waiting on a donation and a scanning project",
+              "Waiting on a donation and a scanning project, as Campsie's evidence did",
               "Emerging when a new generation of scholars rereads the same published books",
               "Following a legal dispute that forces an institution to open its holdings",
               "Appearing first in the popular press and only later in the scholarly literature",
@@ -1068,9 +1068,9 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
             prompt: "In what year did Louis Braille publish an exposition of his dot system?",
             options: [
               "1829",
-              "1868, the year New York Point was published as a rival to it",
-              "1860, when the system was first officially adopted at an American school",
-              "1859, the year of the Pignier account that misdescribed his relationship with Barbier",
+              "1868",
+              "1860",
+              "1859",
             ],
             correctIndex: 0,
             explanation:
@@ -1080,7 +1080,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What was braille's official standing anywhere in 1829, on Irwin's account?",
             options: [
-              "None",
+              "None anywhere, and it is not clear early American pioneers even knew of it",
               "It was the official code of the Paris school and of two German institutions",
               "It was recommended by the French ministry of education but not yet compulsory",
               "It held the printing subsidy in France, which is why it spread there first",
@@ -1094,9 +1094,9 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
             prompt: "Which three cities held the American mother schools founded in the early 1830s?",
             options: [
               "Boston, New York and Philadelphia",
-              "Boston, Louisville and St Louis, following the routes of the earliest embossing presses",
-              "New York, Philadelphia and Baltimore, the three cities with state appropriations",
-              "Boston, New York and Louisville, where the federal printing house was later founded",
+              "Boston, Louisville and St Louis",
+              "New York, Philadelphia and Baltimore",
+              "Boston, New York and Louisville",
             ],
             correctIndex: 0,
             explanation:
@@ -1106,7 +1106,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What reading type did those three schools adopt?",
             options: [
-              "Embossed Roman letters",
+              "Embossed Roman letters, more or less simplified to make them easier to feel",
               "New York Point, a two-dot-high code with a variable width to save space",
               "Braille, which had reached the United States with returning European visitors",
               "Moon type, which was easier for older readers with less sensitive fingertips",
@@ -1119,7 +1119,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What virtue does Irwin record for embossed Roman letters over arbitrary codes?",
             options: [
-              "Sighted teachers could read them without training",
+              "Sighted teachers could read them by sight with no special instruction",
               "They were cheaper to produce because existing print type could be reused directly",
               "They could be written by a blind person with an ordinary stylus and frame",
               "They fitted more words on a page than any dot system then available",
@@ -1132,7 +1132,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What second argument for embossed Roman letters does Irwin record?",
             options: [
-              "That it set blind people less apart",
+              "That using a type like their seeing associates' set blind people less apart",
               "That it prepared blind students to work alongside sighted printers in the trades",
               "That it allowed a blind reader to check a sighted person's spelling directly",
               "That it was the only type the federal appropriation would pay to emboss",
@@ -1145,7 +1145,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What does Irwin say about a blind person writing embossed Roman letters?",
             options: [
-              "It was not practical",
+              "It was not practical for blind people, whether the letters were smooth or dotted",
               "It required a special frame that only the Philadelphia school manufactured",
               "It was slower than dot writing but produced a page a sighted reader could check",
               "It was taught only to students who intended to become teachers themselves",
@@ -1158,7 +1158,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "Who brought braille to an American school, and in what year?",
             options: [
-              "Simon Pollak, in 1860",
+              "Simon Pollak, in 1860, a Missouri board member who had seen it in Europe",
               "William Bell Wait, in 1868, after his colleagues refused to adopt it",
               "Robert B. Irwin, in 1923, when he became AFB's first executive director",
               "Joel W. Smith, in 1878, when he presented his modified version at a convention",
@@ -1171,7 +1171,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "Which American school first officially adopted braille?",
             options: [
-              "The Missouri School for the Blind",
+              "The Missouri School for the Blind, in 1860, at Simon Pollak's instigation",
               "Perkins Institution in Boston, the oldest of the three mother schools",
               "The New York Institution for the Blind, where its superintendent championed it",
               "The Illinois School for the Blind, where pupils had been using it privately",
@@ -1197,7 +1197,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What did William Bell Wait observe about blind children and embossed Roman letters?",
             options: [
-              "Many had great difficulty learning to read them",
+              "Many had great difficulty learning to read them, and adult-blinded people more so",
               "They learned them faster than any dot code but forgot them within a year of leaving",
               "They preferred them because sighted family members could read the same books",
               "They could read them accurately but not write them, which he considered acceptable",
@@ -1210,7 +1210,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What did Wait do before inventing New York Point?",
             options: [
-              "Asked other schools to adopt braille",
+              "Asked the Boston and Philadelphia heads to adopt braille, and got no encouragement",
               "Published a study comparing reading speeds in Boston line type and braille",
               "Petitioned Congress for a printing appropriation to produce dot-code books",
               "Trained as a transcriber so that he could read both systems by touch himself",
@@ -1224,9 +1224,9 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
             prompt: "In what year did Wait publish New York Point?",
             options: [
               "1868",
-              "1878, the year Joel W. Smith presented his modified braille to the same association",
-              "1871, when the American Association of Instructors of the Blind endorsed it",
-              "1860, the year braille was adopted at the Missouri School for the Blind",
+              "1878",
+              "1871",
+              "1860",
             ],
             correctIndex: 0,
             explanation:
@@ -1249,7 +1249,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What does AFB's own history record about Robert B. Irwin?",
             options: [
-              "Blind from the age of five, and AFB's first executive director",
+              "Blind from the age of five, and hired in 1923 as AFB's first executive director",
               "A sighted printer who ran the Foundation's embossing plant before writing its history",
               "A superintendent of the Missouri School for the Blind who introduced braille there",
               "A British transcriber brought in to negotiate the 1932 agreement with America",
@@ -1262,7 +1262,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "Why does this lesson say Irwin's own blindness is worth stating out loud?",
             options: [
-              "Because a blind-authored account is rare in this material",
+              "Because a blind-authored first-hand account is rare in a record made by sighted officials",
               "Because it disqualifies him from writing neutrally about a dispute he took part in",
               "Because it explains why he preferred New York Point to American braille",
               "Because the American Foundation for the Blind required it in the book's preface",
@@ -1289,9 +1289,9 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
             prompt: "Where does the standard story say Barbier's code came from?",
             options: [
               "The army",
-              "A school for blind children in Lyon that Barbier visited as a young surveyor",
-              "A printing house that needed a code its typesetters could read in poor light",
-              "A competition run by the Paris school for a writing system blind pupils could use",
+              "A school in Lyon",
+              "A printing house",
+              "A Paris school competition",
             ],
             correctIndex: 0,
             explanation:
@@ -1302,9 +1302,9 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
             prompt: "How many dots does the popular story attribute to Barbier's cell?",
             options: [
               "Twelve",
-              "Six, which Braille then rearranged rather than reduced",
-              "Eight, matching the cell used today on refreshable braille displays",
-              "Sixty-four, one for each pattern the six-dot cell can produce",
+              "Six",
+              "Eight",
+              "Sixty-four",
             ],
             correctIndex: 0,
             explanation:
@@ -1314,7 +1314,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What did Pignier's 1859 account get wrong, on Campsie's summary?",
             options: [
-              "The relationship between Braille and Barbier",
+              "The relationship between Braille and Barbier, which it misrepresented",
               "The number of dots in the cell Barbier had designed for military use",
               "The year in which Braille published his own exposition of the six-dot system",
               "Whether Barbier's papers had survived his death in 1841",
@@ -1327,7 +1327,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "How long did the distorted version stand before the correction was published?",
             options: [
-              "Roughly seventy years after the 1952 account",
+              "Roughly seventy years, from Pierre Henri's 1952 account to Campsie's 2021 article",
               "Roughly twenty years, since the correction followed soon after the 2001 donation",
               "Roughly one hundred and sixty years, dating from Pignier's 1859 account",
               "Roughly a decade, because the digitised publications appeared only in 2011",
@@ -1340,7 +1340,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What kind of institution held the papers that supported Campsie's correction?",
             options: [
-              "A museum in Paris",
+              "A museum in Paris, at the Association Valentin Hauy, by donation in 2001",
               "The French military archive at Vincennes, opened to researchers in 2001",
               "A private family collection sold at auction and dispersed among several buyers",
               "The Library of Congress, which had acquired them with its European purchases",
@@ -1353,7 +1353,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "Which is a fair description of what this course does when a source cannot be retrieved?",
             options: [
-              "Says which record it actually read",
+              "Says which record it actually read, as with the Campsie abstract read via DOAJ",
               "Cites the source anyway, since the identifier is correct even if the text was not read",
               "Drops the material entirely, so that no partially-sourced claim reaches a learner",
               "Marks the claim with a numeric confidence score based on how often it is repeated",
@@ -1392,7 +1392,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "Who was harder hit by embossed Roman letters, on Wait's observation?",
             options: [
-              "People blinded in adult life",
+              "People blinded in adult life, a still higher percentage of whom could not learn it",
               "Children under ten, whose fingertips had not yet developed enough sensitivity",
               "Students in rural schools, where embossed books arrived years out of date",
               "Teachers, who had to learn a second type in order to mark written work",
@@ -1405,7 +1405,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What position did Wait hold when he made that observation?",
             options: [
-              "Teacher and superintendent in New York",
+              "Teacher and then superintendent at the New York Institution for the Blind",
               "Board member of the Missouri School for the Blind, after a European study tour",
               "Executive director of the American Foundation for the Blind",
               "Superintendent of the Pennsylvania Institution in Philadelphia",
@@ -1431,7 +1431,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What does the phrase \"mother schools\" refer to here?",
             options: [
-              "The three institutions founded in the early 1830s",
+              "The three institutions founded in the early 1830s in Boston, New York and Philadelphia",
               "The European schools that trained the first American superintendents",
               "The schools that held seats on the American Printing House board of trustees",
               "The residential schools that survived the move to mainstreaming after 1975",
@@ -1457,7 +1457,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What did Barbier invent, on the record this lesson cites?",
             options: [
-              "Raised-point writing and the tools for making it",
+              "Raised-point writing and the tools for making it, during his life from 1767 to 1841",
               "The six-dot cell, which Braille then popularised without acknowledgement",
               "The slate and stylus still used for hand-writing braille today",
               "A phonetic alphabet that the Paris school taught alongside embossed letters",
@@ -1470,7 +1470,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "Why does the journal in which the correction appeared matter to this lesson?",
             options: [
-              "It is a disability studies journal, not a general history one",
+              "It is a disability studies journal, not a general history one, so the finding travels slowly",
               "It is published by the same body that indexes the abstract this course read",
               "It requires authors to work exclusively from digitised primary documents",
               "It is the only journal that had previously published the Pierre Henri account",
@@ -1483,7 +1483,7 @@ American Foundation for the Blind. (n.d.). *Our history*. https://afb.org/afb100
           {
             prompt: "What kind of institution first officially adopted braille in the United States, and on whose initiative?",
             options: [
-              "A state school, on a board member's initiative",
+              "A state school in Missouri, on the initiative of its board member Simon Pollak",
               "A federal printing house, under a congressional appropriation for embossed books",
               "A private academy in Boston, at the request of its blind alumni association",
               "A public library, which imported the first embossed volumes from Paris",
@@ -1576,7 +1576,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What shape was a New York Point cell?",
             options: [
-              "Two dots high, one to four dots wide",
+              "Two dots high and one to four dots wide, a variable base that saved space",
               "Three dots high and two dots wide, the same proportions as the braille cell",
               "Four dots high and two dots wide, giving room for a built-in capital marker",
               "Two dots high and two dots wide, with a second cell used for less common letters",
@@ -1589,7 +1589,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "Why did New York Point books generally appear without capitals?",
             options: [
-              "Its capitals were too cumbersome to use",
+              "Its capitals, formed by widening a letter to four dots, were too cumbersome to use",
               "Because capitals were reserved for proper nouns only under the association's rules",
               "Because the embossing presses could not form a four-dot-wide character reliably",
               "Because blind readers had petitioned to have them removed as confusing to the touch",
@@ -1603,9 +1603,9 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
             prompt: "In what year did the American Association of Instructors of the Blind endorse New York Point?",
             options: [
               "1871",
-              "1868, the year Wait published the system he had spent a decade perfecting",
-              "1878, at the meeting where Joel W. Smith presented his rival modification",
-              "1900, when the association renamed the rival system American braille",
+              "1868",
+              "1878",
+              "1900",
             ],
             correctIndex: 0,
             explanation:
@@ -1615,7 +1615,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What flaw in Louis Braille's original assignments did Joel W. Smith address?",
             options: [
-              "Letter frequency was ignored",
+              "Letter frequency was ignored: the commoner \"t\" got four dots while \"a\" got one",
               "The cell was too tall for a fingertip to read at ordinary reading speeds",
               "Punctuation shared signs with letters, which made back translation unreliable",
               "The system had no contractions at all, so embossed books ran to many volumes",
@@ -1641,7 +1641,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "How does Irwin describe Smith's reception at the 1878 meeting?",
             options: [
-              "Wait and his friends treated him harshly",
+              "Wait and his friends treated the young, mild-mannered Smith harshly",
               "The association adopted his system unanimously and dropped New York Point",
               "The delegates were indifferent because no books existed in either dot code",
               "He was awarded the association's medal but his system was quietly shelved",
@@ -1655,9 +1655,9 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
             prompt: "When was Modified braille renamed American braille?",
             options: [
               "1900",
-              "1878, at the meeting where Smith first presented it to the instructors",
-              "1892, when a group of superintendents met at the Brantford convention",
-              "1910, after the Printing House board voted to fund it from federal money",
+              "1878",
+              "1892",
+              "1910",
             ],
             correctIndex: 0,
             explanation:
@@ -1668,9 +1668,9 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
             prompt: "Where has the American Printing House for the Blind operated since 1858?",
             options: [
               "Louisville",
-              "Boston, alongside the oldest of the three mother schools",
-              "Washington, so that it sits near the congressional committees that fund it",
-              "St Louis, near the Missouri school that first adopted braille",
+              "Boston",
+              "Washington",
+              "St Louis",
             ],
             correctIndex: 0,
             explanation:
@@ -1680,7 +1680,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What did the Act to Promote the Education of the Blind supply?",
             options: [
-              "Embossed books and tangible apparatus",
+              "Embossed books and tangible apparatus for students across the country",
               "Teacher salaries at every publicly supported residential school in the country",
               "Free postage for accessible materials sent to blind readers and their libraries",
               "Scholarships that allowed blind students to attend mainstream state colleges",
@@ -1693,7 +1693,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "Why did Edward E. Allen keep New York Point in Philadelphia for two years after 1890?",
             options: [
-              "It was the only dot type APH would supply",
+              "It was the only dot type obtainable from the government-supported Printing House",
               "Because his board had voted for it and he lacked authority to change the code",
               "Because his teachers preferred it and he did not want to overrule them",
               "Because the state appropriation was conditioned on using the association's type",
@@ -1719,7 +1719,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "Roughly what share of that group could personally read either tactile system, on Irwin's estimate?",
             options: [
-              "About ten per cent",
+              "About ten per cent, the Printing House's own superintendent among them",
               "About forty per cent, matching the share of pupils then in braille schools",
               "About ninety per cent, since superintendents were expected to learn both codes",
               "All of them, because reading both was a condition of holding the board seat",
@@ -1732,7 +1732,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What announcement threatened to keep west-coast superintendents from the 1910 board meeting?",
             options: [
-              "That out-of-state board meetings were illegal",
+              "That board meetings outside Kentucky had been found illegal for the Printing House",
               "That the board would meet only after the convention had formally adjourned",
               "That travel expenses would no longer be reimbursed from the federal appropriation",
               "That proxy voting had been abolished for all questions touching the printing code",
@@ -1746,9 +1746,9 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
             prompt: "Where did the 1910 open debate on the type question take place?",
             options: [
               "Little Rock",
-              "Louisville, immediately before the Printing House board cast its deciding vote",
-              "Brantford, Ontario, where the braillewriter had first been demonstrated",
-              "Jacksonville, Illinois, where the Standard Dot proposal was later recommended",
+              "Louisville",
+              "Brantford, Ontario",
+              "Jacksonville, Illinois",
             ],
             correctIndex: 0,
             explanation:
@@ -1771,7 +1771,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What did the 1910 motion at Louisville propose?",
             options: [
-              "Forty per cent of the appropriation for American braille",
+              "Forty per cent of the federal appropriation for publishing American braille books",
               "That the Printing House cease publishing New York Point books entirely by 1912",
               "That the board be enlarged to include representatives of blind readers themselves",
               "That the federal appropriation be divided equally between the two dot systems",
@@ -1784,7 +1784,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "How was that motion carried?",
             options: [
-              "On the chairman's casting vote after a tie",
+              "On the chairman's casting vote after a tie, cast by Colonel Andrew Cowan",
               "By a two-thirds majority of superintendents present at the Louisville meeting",
               "By unanimous consent once the New York Point members withdrew in protest",
               "By a vote of the seven Kentucky lay members, the superintendents abstaining",
@@ -1797,7 +1797,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What reason did the chairman give for his casting vote?",
             options: [
-              "Forty per cent of pupils were in American braille schools",
+              "Forty per cent of pupils were in schools that had adopted American braille",
               "That the Printing House had a duty to publish whatever blind readers requested",
               "That New York Point had lost the New York Board of Education hearing the year before",
               "That the Kentucky lay members had already agreed the split among themselves",
@@ -1810,7 +1810,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "How did the braillists get to the Louisville meeting after the Little Rock debate?",
             options: [
-              "In a reserved sleeping car",
+              "In a reserved sleeping car, and the meeting drew a record attendance",
               "They did not travel, and voted by proxy through the Kentucky lay members",
               "By petitioning the Printing House to reimburse the fares from the appropriation",
               "They stayed at Little Rock and forced the board to meet there instead",
@@ -1823,7 +1823,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What did Wait think was wrong with braille that led him to build New York Point?",
             options: [
-              "It wasted space",
+              "It wasted space, with a fixed cell wider than narrow letters needed",
               "It was too difficult for people blinded late in life to learn at any speed",
               "It could not be written by hand without a machine no American school owned",
               "Its contractions bridged syllable divisions, which corrupted children's spelling",
@@ -1836,7 +1836,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "Which of these is the reason this course says the code fight mattered materially?",
             options: [
-              "One publisher held the federal money",
+              "One publisher held the federal money, so its code was the one that existed",
               "Because the association's endorsement carried legal force in every member state",
               "Because a school could lose its charter for teaching an unapproved reading type",
               "Because embossing plates were so costly that only one code could exist at a time",
@@ -1862,7 +1862,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What did Smith apply the frequency principle to besides individual letters?",
             options: [
-              "His contraction set",
+              "His set of word contractions, to keep embossed books from being so bulky",
               "The capital and italic markers, which he made narrower than in British braille",
               "The numeral signs, which he shortened to a single cell for the commonest digits",
               "The punctuation marks, which he removed from the code entirely to save space",
@@ -1876,9 +1876,9 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
             prompt: "In what year did the American Printing House begin operating?",
             options: [
               "1858",
-              "1879, the year Congress first appropriated money for embossed books",
-              "1871, when the instructors' association endorsed New York Point",
-              "1892, when the braille typewriter was demonstrated at Brantford",
+              "1879",
+              "1871",
+              "1892",
             ],
             correctIndex: 0,
             explanation:
@@ -1888,7 +1888,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What was the practical effect on a school of not using APH's code?",
             options: [
-              "It had to find books elsewhere",
+              "It had to find books elsewhere, through philanthropy or state appropriations",
               "It lost its ex officio seat on the Printing House board of trustees",
               "It was expelled from the American Association of Instructors of the Blind",
               "It could still order books, but paid a surcharge set by the Kentucky lay members",
@@ -1901,7 +1901,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What happened to a superintendent who switched from New York Point to braille?",
             options: [
-              "Colleagues refused to sit next to him at lunch",
+              "Old associates refused to sit next to him at the next convention's luncheon",
               "His school was struck off the Printing House distribution list for two years",
               "He was removed from the instructors' association committee on types",
               "He was formally censured in the proceedings of the following convention",
@@ -1915,9 +1915,9 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
             prompt: "From what year did the conventions stop holding public discussions of the type question?",
             options: [
               "1902",
-              "1910, immediately after the open debate at Little Rock became unmanageable",
-              "1913, once the Uniform Type Committee had recommended Standard Dot",
-              "1918, when Revised braille grade one and a half settled the American question",
+              "1910",
+              "1913",
+              "1918",
             ],
             correctIndex: 0,
             explanation:
@@ -1928,9 +1928,9 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
             prompt: "On what dates were the two New York Board of Education hearings held?",
             options: [
               "24 March and 18 May 1909",
-              "25 June and 19 July 1913, either side of the Jacksonville recommendation",
-              "In 1910, spread over two evenings during the Little Rock convention week",
-              "In 1900 and 1902, before the association stopped debating the question publicly",
+              "25 June and 19 July 1913",
+              "Two evenings in 1910",
+              "In 1900 and 1902",
             ],
             correctIndex: 0,
             explanation:
@@ -1940,7 +1940,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "Who rallied the American braille witnesses at those hearings?",
             options: [
-              "Winifred Holt",
+              "Winifred Holt, founder of the New York Association for the Blind",
               "Helen Keller, who attended the second hearing and testified in person",
               "Robert B. Irwin, then executive director of the American Foundation for the Blind",
               "Edward E. Allen, who travelled from Philadelphia for the second session",
@@ -1953,7 +1953,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What was Frank Hall's damaging exhibit at the first hearing?",
             options: [
-              "Two title pages in ink type, one without capitals",
+              "Two title pages in ink type, one without capitals and one capitalised",
               "A braillewriter and a Kleidograph side by side, timed against each other",
               "A stack of embossed volumes showing how much shelf space each code consumed",
               "Reading-speed results from several hundred blind readers tested in Illinois",
@@ -1966,7 +1966,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "Did Helen Keller attend the 1909 hearings?",
             options: [
-              "No, she sent a letter that was read out",
+              "No, she wrote to the board's secretary, and her letter was read at the hearing",
               "Yes, and her testimony at the second hearing decided the committee",
               "Yes, but she spoke for New York Point rather than for American braille",
               "No, and she took no position, having avoided the type question entirely",
@@ -1992,7 +1992,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What did Keller say about New York Point's capitals?",
             options: [
-              "They are not always unequivocal",
+              "They are not always unequivocal, she wrote, giving letters she had mistaken",
               "They are impossible to form at all with the machines then available",
               "They double the width of every proper noun, which slows a reader badly",
               "They were removed from the code by its publishers without telling readers",
@@ -2018,7 +2018,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "Who chaired the Tactile Print Investigating Commission created in 1902?",
             options: [
-              "Ambrose M. Shotwell",
+              "Ambrose M. Shotwell, a blind braille printer at the Michigan School",
               "William Bell Wait, as the senior superintendent then holding the association's type",
               "Charles W. Holmes, president of the Perkins alumni association",
               "Edward E. Allen, then director of Perkins Institution",
@@ -2031,7 +2031,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What does Irwin record about the five members of the 1905 Uniform Type Committee?",
             options: [
-              "All of them were blind",
+              "All of them were blind, two favoring New York Point and two American braille",
               "All of them were school superintendents holding ex officio Printing House seats",
               "Three were blind and two were sighted printers appointed for technical expertise",
               "They were appointed by the Printing House board rather than by the association",
@@ -2045,9 +2045,9 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
             prompt: "On what date was Standard Dot recommended, and where?",
             options: [
               "25 June 1913, at Jacksonville, Illinois",
-              "19 July 1932, in London, by a committee holding plenary powers from both associations",
-              "24 March 1909, at the first New York Board of Education hearing",
-              "In 1905, at the Saginaw convention that created the Uniform Type Committee",
+              "19 July 1932, in London",
+              "24 March 1909, in New York",
+              "In 1905, at Saginaw",
             ],
             correctIndex: 0,
             explanation:
@@ -2057,7 +2057,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What did Standard Dot propose to do with the existing American codes?",
             options: [
-              "Scrap both of them",
+              "Scrap both of them for an entirely new code drawing on each side's features",
               "Keep American braille and retire only New York Point, which had fewer readers",
               "Keep New York Point for literary reading and American braille for technical work",
               "Leave both in place and add a third code for readers blinded in adult life",
@@ -2083,7 +2083,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What did the United States adopt in 1918 instead?",
             options: [
-              "Revised braille grade one and a half",
+              "Revised braille grade one and a half, endorsed as the American uniform type",
               "Standard Dot, once the British had withdrawn their objections to it",
               "Grade 2 braille, twelve years ahead of the London agreement",
               "New York Point, restored by the instructors' association as a compromise",
@@ -2096,7 +2096,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "In what code did practically every American book for blind readers appear between 1917 and 1932?",
             options: [
-              "Grade one and a half",
+              "Grade one and a half, for new textbooks and most current magazines",
               "New York Point, which retained the larger share of the federal appropriation",
               "Grade 2, which the London agreement had already settled for both countries",
               "American braille, which the New York decision of 1909 had endorsed",
@@ -2110,9 +2110,9 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
             prompt: "On what date was the agreement sometimes called the Treaty of London signed?",
             options: [
               "19 July 1932",
-              "25 June 1913, when the Standard Dot proposal was recommended at Jacksonville",
-              "In 1918, when the American uniform type was finally settled",
-              "2 November 1912, when the North American authority voted on a unified code",
+              "25 June 1913",
+              "In 1918",
+              "2 November 1912",
             ],
             correctIndex: 0,
             explanation:
@@ -2122,7 +2122,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "Which change did the 1932 agreement make to contractions?",
             options: [
-              "They were not to bridge syllable divisions",
+              "They were not to bridge syllable divisions, as publishers were directed",
               "Nine of them were eliminated and the remainder used more often than before",
               "They were made optional, so a publisher could issue an uncontracted edition",
               "They were reassigned by letter frequency, adopting the American principle",
@@ -2135,7 +2135,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What did the 1932 agreement do about capitalisation?",
             options: [
-              "Made it optional with the publisher",
+              "Made it optional with the publisher, while Roman numerals took a period",
               "Required it in every book, ending the practice New York Point had normalised",
               "Barred it entirely, on the ground that it wasted space in embossed volumes",
               "Referred it back to each national committee to decide separately",
@@ -2149,9 +2149,9 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
             prompt: "How many times did blind readers in this period have to relearn their reading code?",
             options: [
               "Four",
-              "Two, from Boston line type to New York Point and then to grade 2",
-              "Six, counting the music and mathematics codes introduced alongside the literary ones",
-              "Once, when the London agreement replaced grade one and a half with grade 2",
+              "Two",
+              "Six",
+              "Once",
             ],
             correctIndex: 0,
             explanation:
@@ -2187,7 +2187,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What does this lesson say each relearning cost a reader?",
             options: [
-              "A stranded library, obsolete notes and lost speed",
+              "A stranded library, obsolete written notes and reading speed lost for years",
               "The cost of a new writing machine, which no appropriation covered",
               "A year of schooling, since the schools taught only one code at a time",
               "Access to the federal appropriation, which funded only the newest code",
@@ -2213,7 +2213,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "What is the significance of who filled the two uniform-type bodies?",
             options: [
-              "Blind readers were finally doing the deciding",
+              "Blind readers were finally doing the deciding, not the superintendents",
               "They were the first committees to include a representative of the Printing House",
               "They were funded by the federal appropriation rather than by the associations",
               "They were the only bodies with power to bind the British committees as well",
@@ -2226,7 +2226,7 @@ Irwin, R. B. (1955). *As I saw it*. American Foundation for the Blind. (Chapter 
           {
             prompt: "Which of these date-and-event pairings from the standards war is correct?",
             options: [
-              "1932, the London agreement settling grade 2",
+              "1932, the London agreement settling grade 2 for both countries",
               "1913, the New York Board of Education deciding in favour of American braille",
               "1909, the Uniform Type Committee recommending Standard Dot at Jacksonville",
               "1918, the signing in London of the agreement between the two countries",
@@ -2338,7 +2338,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What does the AFB obituary say blind children of Nemeth's generation were taught?",
             options: [
-              "To knit, weave baskets and cane chairs",
+              "To knit, weave baskets and cane chairs, as manual work against begging",
               "Piano tuning, upholstery and barbering, which paid better than the older trades",
               "Cabinet making, book repair, printing and watch repair alongside academics",
               "Braille transcription, so that they could supply the schools with their own books",
@@ -2351,7 +2351,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What reasoning does the obituary give for that curriculum?",
             options: [
-              "Manual labour was thought the only escape from begging",
+              "Manual labour was thought the only way blind people could escape a life of begging",
               "Manual trades were the only work that state vocational rehabilitation would fund",
               "The schools lacked teachers qualified to teach academic subjects to blind students",
               "Employers had agreed to hire blind workers only into piecework manufacturing",
@@ -2364,7 +2364,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What did Nemeth's parents do differently, on that account?",
             options: [
-              "Raised him and his blind sister to be independent",
+              "Raised him and his blind sister to be independent, in public schools",
               "Enrolled him at a residential school rather than in the New York public system",
               "Hired a private tutor in mathematics when the school refused to teach it",
               "Campaigned to have the vocational curriculum replaced with academic subjects",
@@ -2377,7 +2377,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "Why can there be no braille equivalent of the language ban in Deaf education?",
             options: [
-              "Braille is not a community language",
+              "Braille is not a community language; blind children share their parents' speech",
               "Because no American state ever legislated about which reading code schools must use",
               "Because the federal appropriation protected braille from being banned outright",
               "Because blind children learned braille at home before they reached school age",
@@ -2390,7 +2390,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What DOES carry across between the deaf and blind school histories, on this lesson's account?",
             options: [
-              "The curriculum",
+              "The curriculum, which a professional class decided in advance for the child",
               "The language policy, which restricted the natural medium of both groups",
               "The federal subsidy, which funded the same publisher for both populations",
               "The desegregation timeline, which ran identically in both school systems",
@@ -2403,7 +2403,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "Where does this lesson say the ceiling on those students actually sat?",
             options: [
-              "In the timetable",
+              "In the timetable, rather than in the child, which makes tracking a decision",
               "In the reading code, which limited what could be transcribed for them",
               "In the appropriation, which was too small to hire academic teachers",
               "In the entrance requirements, which excluded students with other disabilities",
@@ -2416,7 +2416,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What did the Education for All Handicapped Children Act require?",
             options: [
-              "Education in the least restrictive environment",
+              "Education in the least restrictive environment, pushing children into local classes",
               "That every state maintain at least one residential school for blind students",
               "That braille instruction be offered to every legally blind student in a district",
               "That federal funds be withheld from schools that had not yet desegregated",
@@ -2430,9 +2430,9 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
             prompt: "In what year was that Act reauthorised under the name IDEA?",
             options: [
               "1990",
-              "1975, when the least restrictive environment principle first entered federal law",
-              "1965, when Virginia began sending Black students to the white school at Staunton",
-              "2008, when the last of the Virginia schools closed its doors",
+              "1975",
+              "1965",
+              "2008",
             ],
             correctIndex: 0,
             explanation:
@@ -2455,7 +2455,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What is the argument braille literacy advocates make about local districts?",
             options: [
-              "One blind child means no braille teacher and no braille peers",
+              "One blind child in a district means no braille teacher and no braille peers",
               "That districts spend their disability budgets on physical access rather than on staff",
               "That state licensing rules stop districts from employing blind teachers at all",
               "That embossed books cost more than a district can justify for a single student",
@@ -2468,7 +2468,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What does this lesson say was actually lost when the residential model receded?",
             options: [
-              "A place where blind adults were part of a blind child's week",
+              "A place where blind adults were an ordinary daily part of a blind child's week",
               "The only institutions that could afford to stock a complete braille library",
               "The specialist certification that qualified teachers to work with blind students",
               "A language, in the same way Deaf schools lost a signed language to oralism",
@@ -2481,7 +2481,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "Who approached Mary Ritter in 1895, and why?",
             options: [
-              "A mother whose deaf daughter had been refused admission",
+              "A mother whose deaf daughter had been refused admission by the white-only Staunton school",
               "The superintendent at Staunton, who wanted a teacher for a new department",
               "The Virginia Association of the Deaf, seeking a campaigner for a new school",
               "A member of the House of Delegates who wanted a school in his own district",
@@ -2494,7 +2494,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What was the arrangement under which Mary Ritter taught that child?",
             options: [
-              "In exchange for the family laundry",
+              "In exchange for the family laundry, as the Staunton superintendent suggested",
               "For a stipend paid by the Virginia Association of the Deaf out of member dues",
               "As an unpaid volunteer, with the state supplying only the embossed books",
               "Under a contract with the Staunton school, which paid her by the pupil",
@@ -2507,7 +2507,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "Who campaigned for a state school for Black deaf and blind children in Virginia?",
             options: [
-              "William C. Ritter",
+              "William C. Ritter, Mary Ritter's husband and a recent Staunton graduate",
               "Harry Houston, the member of the House of Delegates who carried the 1906 bill",
               "William Whitehead, who became the school's first Black superintendent in 1940",
               "The superintendent of the Staunton school, after refusing the first applicant",
@@ -2520,7 +2520,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What happened to the first bill proposing the school?",
             options: [
-              "It died in committee in 1902",
+              "It died in committee in 1902, the year Virginia stripped Black men of the vote",
               "It passed in 1902 but was vetoed by the governor for want of an appropriation",
               "It passed in 1906 and opened the school the same year at Hampton",
               "It was withdrawn after the Virginia Association of the Deaf declined to support it",
@@ -2533,7 +2533,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What else happened in Virginia in 1902?",
             options: [
-              "A constitution stripped Black men of the vote",
+              "A constitution stripped Black men in Virginia of their voting rights",
               "The Staunton school admitted its first Black students under a state court order",
               "Congress appropriated funds for embossed books at Southern segregated schools",
               "The Virginia Association of the Deaf was founded to campaign for the school",
@@ -2546,7 +2546,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What did the 1906 bill provide?",
             options: [
-              "Authorisation with no appropriation",
+              "Authorisation with no appropriation, so opening waited three more years",
               "An appropriation of $50,000, matching the white school's operating grant",
               "A site at Hampton Institute, which agreed to house the new school",
               "A requirement that the Staunton school admit Black students within three years",
@@ -2559,7 +2559,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What did Virginia legislators say the school was for?",
             options: [
-              "Making the children self-supporting",
+              "Making the children self-supporting, a narrower purpose than education",
               "Providing the academic education already available to white deaf and blind children",
               "Relieving the Staunton school of pressure to admit Black applicants",
               "Training teachers who could then work in the state's Black public schools",
@@ -2573,9 +2573,9 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
             prompt: "In what year did the Virginia State School for Colored Deaf and Blind Children open?",
             options: [
               "1909",
-              "1906, when the enabling bill finally passed the House of Delegates",
-              "1895, when Mary Ritter began teaching her first pupil at home",
-              "1940, when it appointed its first Black superintendent",
+              "1906",
+              "1895",
+              "1940",
             ],
             correctIndex: 0,
             explanation:
@@ -2599,9 +2599,9 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
             prompt: "What was the Virginia State School's initial appropriation?",
             options: [
               "$25,000",
-              "$50,000, which was also what the white school received to operate the next year",
-              "$100,000, matching the federal appropriation for printing books for blind adults",
-              "Nothing, since the 1906 bill carried no money and none was added later",
+              "$50,000",
+              "$100,000",
+              "Nothing",
             ],
             correctIndex: 0,
             explanation:
@@ -2612,9 +2612,9 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
             prompt: "What did that $50,000 to the white school pay for?",
             options: [
               "Operating for a year",
-              "Land, buildings and the first year of operation, as at the Black school",
-              "A new campus at Hampton, to relieve overcrowding at Staunton",
-              "Vocational equipment for the printing, cabinet making and watch repair shops",
+              "Land, buildings and a year's running",
+              "A new campus at Hampton",
+              "Vocational shop equipment",
             ],
             correctIndex: 0,
             explanation:
@@ -2637,7 +2637,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What were Black students at the Virginia State School largely prepared for?",
             options: [
-              "Agricultural and domestic work",
+              "Agricultural and domestic work, unlike the six trades taught at Staunton",
               "Watch repair and printing, the two trades that transferred to city employment",
               "Teaching, since the school needed graduates who could staff it themselves",
               "Braille transcription for the state library service at Richmond",
@@ -2650,7 +2650,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "Who became the school's first Black superintendent, and when?",
             options: [
-              "William Whitehead, in 1940",
+              "William Whitehead, in 1940, a former St Paul's Polytechnic administrator",
               "William C. Ritter, in 1909, when the school first opened at Hampton",
               "Harry Houston, in 1906, after carrying the enabling bill",
               "Jerry Long, in 1971, after desegregation had begun at Staunton",
@@ -2663,7 +2663,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What did Whitehead require of his teachers?",
             options: [
-              "Graduate training in special education",
+              "Graduate training in special education, mostly obtained at Hampton Institute",
               "That they be graduates of the school themselves, so they knew its students",
               "That they learn braille and sign language before their first classroom term",
               "That they take a state certification examination administered at Staunton",
@@ -2689,7 +2689,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What happened to enrolment during Whitehead's tenure?",
             options: [
-              "It tripled, from about 70 to 215",
+              "It tripled, from about 70 students in his first year to 215 in his last, 1961",
               "It halved, as families kept children at home during the Depression years",
               "It rose from 215 to 700 after the school added a high school department",
               "It stayed flat, because the appropriation never allowed more dormitory space",
@@ -2703,9 +2703,9 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
             prompt: "When did Virginia begin sending Black students to the white school at Staunton?",
             options: [
               "1965",
-              "1954, the year Brown v. Board of Education was decided",
-              "1973, when meaningful desegregation of the two schools finally took place",
-              "1940, when the Hampton school appointed its first Black superintendent",
+              "1954",
+              "1973",
+              "1940",
             ],
             correctIndex: 0,
             explanation:
@@ -2715,7 +2715,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What did Jerry Long write in 1971?",
             options: [
-              "About slurring remarks and taunts from white schoolmates",
+              "About slurring remarks and taunts from white schoolmates, and lost companionship",
               "That the Hampton school's closure would strand its remaining students",
               "That the vocational programme at Staunton was better than Hampton's",
               "That the state had complied fully with Brown by the end of the 1960s",
@@ -2729,9 +2729,9 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
             prompt: "In what year did meaningful desegregation of Virginia's two schools take place?",
             options: [
               "1973",
-              "1965, when the first Black students transferred to Staunton",
-              "1971, the year Jerry Long described his treatment at the school",
-              "1975, when the Education for All Handicapped Children Act was passed",
+              "1965",
+              "1971",
+              "1975",
             ],
             correctIndex: 0,
             explanation:
@@ -2742,9 +2742,9 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
             prompt: "When did the Hampton school close?",
             options: [
               "2008",
-              "2000, when it was renamed for the fifth time in a century of operation",
-              "2006, when the state began moving its remaining students to Staunton",
-              "1977, at the end of the decade in which desegregation was completed",
+              "2000",
+              "2006",
+              "1977",
             ],
             correctIndex: 0,
             explanation:
@@ -2755,9 +2755,9 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
             prompt: "Which two states founded comparable institutions AFTER Virginia's?",
             options: [
               "West Virginia and Louisiana",
-              "Mississippi and North Carolina, which followed Virginia within a decade",
-              "Maryland and Alabama, both of which combined deaf and blind departments",
-              "Georgia and South Carolina, the last two Southern states to comply with Brown",
+              "Mississippi and North Carolina",
+              "Maryland and Alabama",
+              "Georgia and South Carolina",
             ],
             correctIndex: 0,
             explanation:
@@ -2767,7 +2767,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What does this lesson say is missing from the study of Black blind education?",
             options: [
-              "A landmark monograph and a dedicated research centre",
+              "A landmark monograph and a dedicated research centre built on the record",
               "The statutes and appropriations, most of which were destroyed at closure",
               "The enrolment registers, which Gallaudet's archives never collected",
               "Any documentation at all, which is why the subject cannot be taught",
@@ -2780,7 +2780,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What sources does the Virginia history draw on?",
             options: [
-              "Gallaudet University Archives and contemporary newspapers",
+              "Gallaudet University Archives and contemporary historical newspapers",
               "Oral history interviews with surviving alumni of the Hampton school",
               "Federal desegregation correspondence held by the Department of Justice",
               "The papers of the Virginia Association of the Deaf, deposited at Hampton",
@@ -2819,7 +2819,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What organisation did William C. Ritter lead when he took up the campaign?",
             options: [
-              "The Virginia Association of the Deaf",
+              "The Virginia Association of the Deaf, as its president",
               "The board of visitors of the Virginia School for the Deaf and the Blind",
               "The American Association of Instructors of the Blind's Virginia chapter",
               "Hampton Institute's department of special education",
@@ -2832,7 +2832,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What kind of documents does this lesson say segregated schools generate?",
             options: [
-              "Statutes, appropriations, reports and registers",
+              "Statutes, appropriations, superintendents' reports, registers and bulletins",
               "Oral histories, which the Black Deaf collections have and the blind ones lack",
               "Patent filings and engineering drawings for the apparatus they used",
               "Court transcripts, since every founding was litigated before it was funded",
@@ -2845,7 +2845,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "What did the residential school give a blind child that a local district could not?",
             options: [
-              "Blind adults in the ordinary week",
+              "Blind adults in the ordinary week, plus skills a district could not teach",
               "A larger braille library than any state library service could maintain",
               "Federal funding, which followed the student to a residential placement",
               "Freedom from the vocational tracking that local schools imposed",
@@ -2858,7 +2858,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "How does this course treat the claim that the blind story is the Deaf story in different clothes?",
             options: [
-              "As a flattening of both",
+              "As a flattening of both, since braille is a code and signed language is not",
               "As broadly right, since both communities faced the same institutional history",
               "As correct for the schools but wrong for the technology and the law",
               "As unresolved, since no comparative study of the two systems exists",
@@ -2871,7 +2871,7 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
           {
             prompt: "Which is a fair statement about the trades in these school curricula?",
             options: [
-              "They differed by race within the same state",
+              "They differed by race within the same state, as Virginia documents",
               "They were set nationally by the American Printing House's board of trustees",
               "They were identical across states because federal funding required a common list",
               "They were chosen by the students themselves once they reached high school age",
@@ -2924,9 +2924,9 @@ Conner, G. J. (2022, October 4). *The education of deaf and blind African Americ
             prompt: "What did the least restrictive environment principle do to residential school populations?",
             options: [
               "They fell",
-              "They rose, as districts referred students the local schools could not serve",
-              "They stayed level until the schools were merged by state legislatures",
-              "They fell at deaf schools and rose at schools for blind students",
+              "They rose",
+              "They stayed level",
+              "They fell only at deaf schools",
             ],
             correctIndex: 0,
             explanation:
@@ -3028,7 +3028,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Why did no braille code for higher mathematics exist before Nemeth built one?",
             options: [
-              "Nobody expected a blind person to need it",
+              "Nobody expected a blind person to need it, a record of expectation not a limit",
               "Because the six-dot cell has too few patterns to carry mathematical notation",
               "Because the Joint Uniform Braille Committee had rejected three earlier proposals",
               "Because the federal appropriation covered literary books but not technical ones",
@@ -3042,9 +3042,9 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
             prompt: "What degree did Nemeth take at Brooklyn College in 1940?",
             options: [
               "Psychology",
-              "Mathematics, over the objections of the experts who advised against it",
-              "Physics, the same field in which Clifford Witcher held his doctorate",
-              "Music, which he had been playing professionally in Brooklyn clubs",
+              "Mathematics",
+              "Physics",
+              "Music",
             ],
             correctIndex: 0,
             explanation:
@@ -3054,7 +3054,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What work was Nemeth given when AFB hired him in 1943?",
             options: [
-              "Stitching pillowcases and counting phonograph needles",
+              "Stitching pillowcases, loading records onto trucks and counting phonograph needles",
               "Transcribing mathematical textbooks into the literary braille code then in use",
               "Testing talking-book machines in the Foundation's own research laboratory",
               "Teaching braille to newly blinded veterans returning from the war",
@@ -3067,7 +3067,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What was Nemeth's code originally for?",
             options: [
-              "Keeping track of his own calculations",
+              "Keeping track of his own calculations, as a tool one person could read",
               "A proposal he intended to submit to the braille authority of the day",
               "Teaching mathematics to blind students at the Foundation's evening classes",
               "Transcribing published textbooks that no existing code could handle",
@@ -3080,7 +3080,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Who was Clifford Witcher?",
             options: [
-              "A blind physicist who worked at AFB",
+              "A blind physicist with a doctorate in physics who worked for the Foundation",
               "The chairman of the Joint Uniform Braille Committee in the early 1950s",
               "A sighted mathematician at Columbia who supervised Nemeth's doctorate",
               "The American Printing House superintendent who agreed to publish the code",
@@ -3093,7 +3093,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What did Witcher come to Nemeth needing?",
             options: [
-              "A table of integrals",
+              "A table of integrals, which Nemeth had written in his own private code",
               "A transcriber who could produce his physics papers in literary braille",
               "A tutor in mathematics for the students he was teaching at the Foundation",
               "A reader who could dictate technical material to him from print",
@@ -3106,7 +3106,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Why did Witcher's interest turn a private notation into a national code?",
             options: [
-              "He sat on the committee that could adopt it",
+              "He sat on the Joint Uniform Braille Committee, which could adopt it",
               "He funded its publication through a research grant he held at the Foundation",
               "He wrote the first textbook using it, which forced the schools to teach it",
               "He was the Foundation's director and could order it into use",
@@ -3119,7 +3119,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "How quickly was the code adopted, on AFB's account?",
             options: [
-              "The same day it was presented",
+              "The same day: presented one morning in 1951, adopted unanimously that afternoon",
               "After a three-year trial in the schools of four states that volunteered",
               "After the American Printing House had published a full transcriber's manual",
               "After a ballot of the committee's member organisations lasting several months",
@@ -3132,7 +3132,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "How does this course handle the competing 1951 and 1952 dates for the Nemeth code?",
             options: [
-              "Prints the source it read and files the discrepancy",
+              "Prints the source it read and files the discrepancy rather than guessing",
               "Averages the two by describing the code as adopted in the early 1950s",
               "Prints 1952, which is the date the majority of published accounts give",
               "Omits the date entirely, since a contested figure should not reach a learner",
@@ -3158,7 +3158,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What did Nemeth found at the University of Detroit in the 1960s?",
             options: [
-              "Its computer science department",
+              "Its computer science department, while teaching every mathematics course",
               "Its braille transcription service, which supplied textbooks to Michigan schools",
               "The Michigan Commission for the Blind, which he later chaired",
               "A research programme on tactile reading speed among sighted adults",
@@ -3172,9 +3172,9 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
             prompt: "Whose name does the mathematics code carry, and whose does the story usually drop?",
             options: [
               "Nemeth's, and Witcher's",
-              "Witcher's, and Nemeth's, since Witcher brought it to the committee",
-              "The Joint Uniform Braille Committee's, and both men's",
-              "The American Printing House's, since it published and distributed the code",
+              "Witcher's, and Nemeth's",
+              "The committee's, and both men's",
+              "The Printing House's, and Witcher's",
             ],
             correctIndex: 0,
             explanation:
@@ -3197,7 +3197,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Where do testing, training design and evaluation usually appear in the record?",
             options: [
-              "In the acknowledgements",
+              "In the acknowledgements, the section a press release never quotes",
               "On the patent, alongside the inventors of record and any assignees",
               "In the press release, which names everyone the institution wants credited",
               "In the product manual, which lists the staff who prepared it",
@@ -3210,7 +3210,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What can the institutional archive show that the other three records cannot?",
             options: [
-              "A decision being made",
+              "A decision being made, through minutes, memos and board votes",
               "The commercial terms on which an invention was licensed to a manufacturer",
               "How many units of a device were eventually sold, and to whom",
               "Whether the invention worked for the users it was designed for",
@@ -3236,7 +3236,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What does Irwin's chapter establish about the 1905 Uniform Type Committee?",
             options: [
-              "All five members were blind",
+              "All five members were blind, which no patent or press account recorded",
               "That it was appointed by the American Printing House board of trustees",
               "That it recommended keeping American braille and retiring New York Point",
               "That its testing was funded by the federal printing appropriation",
@@ -3275,7 +3275,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What caution does this lesson attach to the curb-cut effect?",
             options: [
-              "Do not let it do the work of the argument",
+              "Do not let it do the work of the argument, leaving the middle steps unexamined",
               "Do not use the phrase, since its origin in kerb design is itself disputed",
               "Apply it only to physical access, never to software or to reading formats",
               "Treat it as evidence that the credit pattern does not exist at all",
@@ -3288,7 +3288,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Why does this lesson decline to walk through the famous device cases?",
             options: [
-              "The archival work was not done in this pass",
+              "The archival work was not done in this pass, so the cases are filed instead",
               "Because those devices are still under patent and cannot be discussed in detail",
               "Because their manufacturers refused permission for the course to describe them",
               "Because the pattern is better shown with codes than with physical hardware",
@@ -3314,7 +3314,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What principle did Joel W. Smith apply that a sighted reader would not have felt the need for?",
             options: [
-              "Letter frequency",
+              "Letter frequency, giving the fewest-dot cells to the commonest letters",
               "A variable-base cell, which saved width on the commonest letters",
               "Non-bridging contractions, so that syllable divisions stayed visible",
               "Capitalisation left optional with the publisher, to reduce bulk",
@@ -3327,7 +3327,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What does this course call the outstanding work on the famous device cases?",
             options: [
-              "Filed, so somebody can pick it up",
+              "Filed, so somebody can pick it up, as with anything it could not settle",
               "Impossible, because the relevant archives are closed to researchers",
               "Complete, since the research document established each participant's role",
               "Unnecessary, because the pattern is already proved by the code cases",
@@ -3340,7 +3340,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Which body chaired by a blind braille printer preceded the Uniform Type Committee?",
             options: [
-              "The Tactile Print Investigating Commission",
+              "The Tactile Print Investigating Commission, created in 1902",
               "The Joint Uniform Braille Committee, which later adopted the Nemeth code",
               "The Commission on Uniform Type, which adopted grade one and a half in 1918",
               "The board of the American Printing House for the Blind",
@@ -3366,7 +3366,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Which record would you consult to find out who worked out how people learn to use a device?",
             options: [
-              "The acknowledgements",
+              "The acknowledgements, where training design and evaluation usually live",
               "The patent, which lists everyone who contributed to the claimed invention",
               "The press coverage, which typically interviews the first users",
               "The product's user manual, which credits its authors on the title page",
@@ -3379,7 +3379,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What does the Nemeth story show about absence in a record?",
             options: [
-              "A missing notation can record an expectation",
+              "A missing notation can record an expectation about who would need it",
               "A missing patent proves that the work was done inside an institution",
               "A missing acknowledgement means the contributor asked not to be named",
               "A missing press account means the technology never reached the market",
@@ -3392,7 +3392,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Which pairing correctly matches a person to what they did?",
             options: [
-              "Nemeth, built a private mathematics notation",
+              "Nemeth, built a private mathematics notation to track his own calculations",
               "Witcher, published the mathematics code through the American Printing House",
               "Smith, chaired the committee that adopted the mathematics code in 1951",
               "Irwin, invented the frequency-based rearrangement called American braille",
@@ -3405,7 +3405,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What did Nemeth do on his free evenings while employed at AFB?",
             options: [
-              "Took mathematics classes",
+              "Took mathematics classes, for fun, on every free evening",
               "Transcribed textbooks into his own private code for other blind students",
               "Lobbied the Joint Uniform Braille Committee to consider a mathematics notation",
               "Studied for the doctorate he had already enrolled in at Columbia",
@@ -3419,9 +3419,9 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
             prompt: "How many employment letters did Nemeth send before the University of Detroit offer?",
             options: [
               "About a hundred",
-              "About a dozen, since mathematics posts were scarce in the early 1950s",
-              "None, because the offer followed directly from his work on the code",
-              "About five hundred, over the four years of his doctoral programme",
+              "About a dozen",
+              "None",
+              "About five hundred",
             ],
             correctIndex: 0,
             explanation:
@@ -3444,7 +3444,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Which is a fair description of what this section teaches?",
             options: [
-              "A method, tested on two cases and a counter-case",
+              "A method, tested on two cases and a counter-case that runs the other way",
               "A list of devices whose blind contributors have been erased from the record",
               "A legal analysis of how patents allocate credit between collaborators",
               "A biography of Abraham Nemeth and the code that carries his name",
@@ -3457,7 +3457,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What did the experts advise Nemeth about mathematics?",
             options: [
-              "That it was an unwise pursuit for a blind man",
+              "That it was an unwise pursuit for a blind man, so he took psychology",
               "That he should first build a notation before applying to any programme",
               "That he should study physics instead, as Clifford Witcher had done",
               "That he would need a sighted reader for every course he took",
@@ -3470,7 +3470,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What was the Joint Uniform Braille Committee, in AFB's description?",
             options: [
-              "The 1950s equivalent of BANA",
+              "The 1950s equivalent of BANA, the body that later adopted UEB",
               "A subcommittee of the American Printing House board of trustees",
               "The successor to the Commission on Uniform Type, dissolved in 1932",
               "An international body representing both British and American code authorities",
@@ -3483,7 +3483,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Which of the four records is slowest to consult?",
             options: [
-              "The institutional archive",
+              "The institutional archive, the only one that shows a decision being made",
               "The patent, which requires a search of the classification index first",
               "The acknowledgements, since papers must be obtained individually",
               "The press coverage, which is scattered across local newspapers",
@@ -3510,9 +3510,9 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
             prompt: "In what year was Nemeth born, on AFB's account?",
             options: [
               "1918",
-              "1940, the year he completed his first degree at Brooklyn College",
-              "1943, the year he began work at the American Foundation for the Blind",
-              "1951, the year the committee adopted the code that carries his name",
+              "1940",
+              "1943",
+              "1951",
             ],
             correctIndex: 0,
             explanation:
@@ -3522,7 +3522,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What did Nemeth's parents not know or care about?",
             options: [
-              "The expectations of the era for blind children",
+              "The expectations of the era for blind children like him and his sister",
               "The braille codes then competing for use in New York's public schools",
               "The vocational trades the residential schools were teaching",
               "The employment discrimination he would meet after graduating",
@@ -3535,7 +3535,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Where did Nemeth learn braille?",
             options: [
-              "In public schools",
+              "In public schools, alongside children from Yiddish-speaking homes",
               "At a residential school for blind children in New York State",
               "At the American Foundation for the Blind, after he was hired in 1943",
               "From his parents, who taught both of their blind children at home",
@@ -3548,7 +3548,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What does this lesson say about the story that blind people do the testing?",
             options: [
-              "Some of it is true and all of it is checkable",
+              "Some of it is true and all of it is checkable against four records",
               "It is a myth produced by advocacy organisations with an interest in it",
               "It is established well enough that no further archival work is needed",
               "It cannot be checked, because acknowledgements are rarely preserved",
@@ -3561,7 +3561,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Which record would show whether a blind employee sat on a design committee?",
             options: [
-              "Minutes and staff lists",
+              "Minutes and staff lists in the institutional archive",
               "The patent, which lists the assignee organisation and its personnel",
               "The published paper, in its methods rather than its acknowledgements",
               "Contemporary press coverage of the product's launch",
@@ -3587,7 +3587,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Which is true of the credit in the Nemeth case?",
             options: [
-              "It landed on the inventor and not on the colleague",
+              "It landed on the inventor, Nemeth, and not on the colleague, Witcher",
               "It landed on the institution rather than on either individual",
               "It landed on the committee, which is named in every account of the code",
               "It was disputed at the time and settled only after Nemeth's death",
@@ -3600,7 +3600,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What does this course do with the claim that a device's blind testers were uncredited?",
             options: [
-              "Files it as work to be done",
+              "Files it as work to be done, since two checked cases prove nothing of a third",
               "States it as established, since the pattern holds in the cases it did check",
               "Rejects it, because acknowledgements usually name the testers",
               "Repeats it with a hedge in the lesson body and no further action",
@@ -3613,7 +3613,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "How does this course describe Nemeth's code in one phrase?",
             options: [
-              "A working tool one person could read",
+              "A working tool one person could read, built to track his own calculations",
               "A committee proposal circulated for comment before adoption",
               "A textbook notation designed for classroom transcription",
               "An international standard developed over several years of consultation",
@@ -3626,7 +3626,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "Why does the lesson insist that an argument must survive its counter-case?",
             options: [
-              "Because errors that only run one way are not history",
+              "Because errors that only run one way are not history, as the Barbier case shows",
               "Because journals require a discussion of contrary evidence before publication",
               "Because the credit pattern has been formally disproved for hardware cases",
               "Because a single counter-example is enough to abandon a general claim",
@@ -3639,7 +3639,7 @@ Kendrick, D. (2013, November). Dr. Abraham Nemeth: The Louis Braille of mathemat
           {
             prompt: "What kind of employment did AFB give Nemeth in 1943, relative to his qualifications?",
             options: [
-              "Manual work, despite two graduate degrees",
+              "Manual work such as stitching pillowcases, despite two degrees in psychology",
               "A research post in its technical evaluation laboratory, matched to his training",
               "A teaching post in braille mathematics, which he had already begun to codify",
               "A clerical position transcribing textbooks into the literary braille code",
@@ -3754,9 +3754,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "On what date does the NFB record its founding?",
             options: [
               "16 November 1940",
-              "7 July 1961, at the convention where a group of members walked out",
-              "3 March 1931, the day the Pratt-Smoot Act became law",
-              "2 October 1913, when the Uniform Type Committee reported to its association",
+              "7 July 1961",
+              "3 March 1931",
+              "2 October 1913",
             ],
             correctIndex: 0,
             explanation:
@@ -3766,7 +3766,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Where was the NFB founded?",
             options: [
-              "Wilkes-Barre, Pennsylvania",
+              "Wilkes-Barre, Pennsylvania, at the Redington Hotel, with seven states attending",
               "Kansas City, Missouri, where the 1901 tactile print resolution had also passed",
               "Berkeley, California, where its founder held a university appointment",
               "Louisville, Kentucky, at the American Printing House for the Blind",
@@ -3780,9 +3780,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "How many states sent blind people to that first meeting?",
             options: [
               "Seven",
-              "Sixty-eight, the number of affiliates the other organisation later counted",
-              "Seventeen, matching the member organisations on the braille authority's board",
-              "Fifty, since the organisation was national from its first day",
+              "Sixty-eight",
+              "Seventeen",
+              "Fifty",
             ],
             correctIndex: 0,
             explanation:
@@ -3792,7 +3792,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What did the NFB's original constitution state as its purpose?",
             options: [
-              "To promote the economic and social welfare of the blind",
+              "To promote the economic and social welfare of the blind, with national policy a focus",
               "To secure a uniform braille code for all English-speaking countries",
               "To take control of the federal printing appropriation from the schools",
               "To provide reading materials to blind adults through a national library",
@@ -3818,7 +3818,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Who is the founder the NFB's history quotes about the first meeting?",
             options: [
-              "Jacobus tenBroek",
+              "Jacobus tenBroek, speaking in 1955 about the mechanics discussed there",
               "Mitch Pomerantz, who later described the split as a civil war",
               "Kenneth Jernigan, who led the organisation after its first two decades",
               "Robert B. Irwin, who was executive director of the Foundation at the time",
@@ -3832,9 +3832,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "On what date was the American Council of the Blind founded?",
             options: [
               "7 July 1961",
-              "16 November 1940, when the older organisation was founded at Wilkes-Barre",
-              "1 October 2019, when the national library service changed its name",
-              "9 October 2018, when the Marrakesh implementing statute was approved",
+              "16 November 1940",
+              "1 October 2019",
+              "9 October 2018",
             ],
             correctIndex: 0,
             explanation:
@@ -3844,7 +3844,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "How did the ACB come into existence?",
             options: [
-              "People left the Federation",
+              "People left the Federation in a walkout led by longtime leaders and members",
               "It was chartered by Congress as a consumer counterpart to the printing house board",
               "It grew out of the alumni associations of the Southern residential schools",
               "It was founded by professionals working in blindness services rather than by blind people",
@@ -3870,7 +3870,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What is the first of the three axes Pomerantz names?",
             options: [
-              "Governance",
+              "Governance: a strong president at the top, or the grassroots membership",
               "Whether blindness is a nuisance or a significant disability",
               "How far accessible pedestrian signals should be an advocacy priority",
               "Whether video description belongs in accessibility law at all",
@@ -3896,7 +3896,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Which two accommodations does Pomerantz name in the third axis?",
             options: [
-              "Accessible pedestrian signals and video description",
+              "Accessible pedestrian signals and video description, as advocacy priorities",
               "Refreshable braille displays and free postal distribution of accessible copies",
               "Structured discovery travel training and orientation instruction",
               "Talking books and the federal quota programme for embossed textbooks",
@@ -3935,7 +3935,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What is this lesson's rule about one organisation's description of the other?",
             options: [
-              "Never quote it as neutral description",
+              "Never quote it as neutral description; attribute each line to its author",
               "Prefer it, because insiders know each other better than outsiders do",
               "Exclude it entirely, since a partisan source cannot be used at all",
               "Average the two accounts to arrive at what probably happened",
@@ -3961,7 +3961,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "How did this course obtain the NFB's own words?",
             options: [
-              "From an archived snapshot of its history page",
+              "From an Internet Archive snapshot of its history page, captured in January 2025",
               "By correspondence with the organisation's communications office",
               "From the ACB's summary of the Federation's founding principles",
               "From a printed history held by the Library of Congress",
@@ -3975,9 +3975,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "How many affiliates did the ACB count at its sixtieth anniversary?",
             options: [
               "Sixty-eight",
-              "Seven, one for each state represented at the older organisation's founding",
-              "One hundred and five, matching the treaty membership figure",
-              "Fifty, one for each state, plus the District of Columbia",
+              "Seven",
+              "One hundred and five",
+              "Fifty",
             ],
             correctIndex: 0,
             explanation:
@@ -3987,7 +3987,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Who introduced the two identical bills that became the Pratt-Smoot Act?",
             options: [
-              "Ruth Pratt and Reed Smoot",
+              "Ruth Pratt in the House and Reed Smoot in the Senate, in 1930",
               "Jacobus tenBroek and Robert B. Irwin, testifying jointly before Congress",
               "Ruth Pratt alone, with the Senate adopting her bill without amendment",
               "The Librarian of Congress, through a departmental legislative request",
@@ -4001,9 +4001,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "On what date did the Pratt-Smoot Act become law?",
             options: [
               "3 March 1931",
-              "1 July 1931, the day the reading project actually began operating",
-              "3 July 1952, when the word \"adult\" was struck from the statute",
-              "9 October 2018, when its copyright companion was amended for Marrakesh",
+              "1 July 1931",
+              "3 July 1952",
+              "9 October 2018",
             ],
             correctIndex: 0,
             explanation:
@@ -4014,9 +4014,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "How much did the joint resolution appropriate for fiscal 1932?",
             options: [
               "$100,000",
-              "$25,000, the same figure Virginia gave its segregated school in 1909",
-              "$50,000, matching the operating grant to the white Virginia school",
-              "$89,927, the amount later withheld from a segregated school over desegregation",
+              "$25,000",
+              "$50,000",
+              "$89,927",
             ],
             correctIndex: 0,
             explanation:
@@ -4026,7 +4026,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "At what speed did the 1933 talking-book records turn?",
             options: [
-              "33 and a third revolutions per minute",
+              "33 and a third revolutions per minute, for thirty minutes a side",
               "78 revolutions per minute, the commercial standard of the period",
               "16 and two-thirds revolutions per minute, adopted for juvenile titles",
               "45 revolutions per minute, matching the single format that followed",
@@ -4040,9 +4040,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "How many discs did a 60,000-word talking book require?",
             options: [
               "Eight or nine",
-              "Thirty or more, which is why an early listener complained about the bulk",
-              "Two, once the close-groove technique had been perfected in 1933",
-              "One, since thirty minutes a side gave an hour of reading per disc",
+              "Thirty or more",
+              "Two",
+              "One",
             ],
             correctIndex: 0,
             explanation:
@@ -4052,7 +4052,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What claim about the long-playing record does this course refuse to assert?",
             options: [
-              "That the LP was developed for blind readers",
+              "That the LP was developed for blind readers, a causal claim it could not establish",
               "That talking-book discs ran at 33 and a third revolutions per minute in 1933",
               "That the Foundation built two kinds of playback machine by 1933",
               "That the first titles included the Declaration of Independence",
@@ -4065,7 +4065,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What did the amendment of 3 July 1952 do?",
             options: [
-              "Deleted the word \"adult\"",
+              "Deleted the word \"adult\", opening the service to blind children",
               "Added music scores and instructional texts to the collection",
               "Extended service to people with physical disabilities that prevent reading",
               "Authorised refreshable braille displays as loanable equipment",
@@ -4078,7 +4078,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What did Congress authorise in 1962?",
             options: [
-              "A collection of musical scores",
+              "A library of musical scores and instructional texts for the program",
               "Service to blind children, by striking a single word from the statute",
               "A copyright exception for accessible copies made by authorised entities",
               "Free postal distribution of accessible materials to eligible readers",
@@ -4130,7 +4130,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What problem did the Marrakesh Treaty exist to solve?",
             options: [
-              "Accessible copies could not cross borders",
+              "Accessible copies could not cross borders, so books were re-transcribed per country",
               "Nonprofits could not make accessible copies without the rightsholder's consent",
               "Blind readers could not be certified as eligible outside their home country",
               "Publishers refused to sell electronic files to national library services",
@@ -4144,9 +4144,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "On what date was the Marrakesh Treaty adopted?",
             options: [
               "27 June 2013",
-              "8 February 2019, when the United States deposited its ratification",
-              "9 October 2018, when the American implementing statute was approved",
-              "8 May 2019, when it entered into force for the United States",
+              "8 February 2019",
+              "9 October 2018",
+              "8 May 2019",
             ],
             correctIndex: 0,
             explanation:
@@ -4157,9 +4157,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "When did the United States deposit its ratification of the treaty?",
             options: [
               "8 February 2019",
-              "2 October 2013, the date it signed the treaty at WIPO",
-              "9 October 2018, the date the implementing act was approved",
-              "24 April 2024, when the Title II web rule was published",
+              "2 October 2013",
+              "9 October 2018",
+              "24 April 2024",
             ],
             correctIndex: 0,
             explanation:
@@ -4170,9 +4170,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "What position does the Library of Congress record for the United States among the treaty's parties?",
             options: [
               "The fiftieth",
-              "The first, since the implementing statute preceded most other ratifications",
-              "The twentieth, whose ratification brought the treaty into force",
-              "The one hundred and fifth, which is the current membership total",
+              "The first",
+              "The twentieth",
+              "The one hundred and fifth",
             ],
             correctIndex: 0,
             explanation:
@@ -4183,9 +4183,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "How many members does WIPO list for the treaty as of this writing?",
             options: [
               "One hundred and five",
-              "Fifty, the position the United States held when it ratified",
-              "Twenty, the number of ratifications needed to bring it into force",
-              "Sixty-eight, the number of affiliates the ACB counted in 2021",
+              "Fifty",
+              "Twenty",
+              "Sixty-eight",
             ],
             correctIndex: 0,
             explanation:
@@ -4196,9 +4196,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "What is the public law number of the Marrakesh Treaty Implementation Act?",
             options: [
               "115-261",
-              "89-522, which extended library service to readers with physical disabilities",
-              "121A, which is the section it added to the copyright title",
-              "46 Stat. 1487, the citation of the 1931 library statute",
+              "89-522",
+              "121A",
+              "46 Stat. 1487",
             ],
             correctIndex: 0,
             explanation:
@@ -4208,7 +4208,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Which phrase did the 2018 Act strike from the copyright statute?",
             options: [
-              "\"Specialized formats\"",
+              "\"Specialized formats\", replacing it with \"accessible formats\"",
               "\"Authorized entity\", which was replaced with a broader institutional definition",
               "\"Previously published literary work\", which was narrowed to printed books",
               "\"Eligible persons\", which had proved too narrow in practice",
@@ -4221,7 +4221,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What did the 2018 Act add to title 17?",
             options: [
-              "A new section 121A",
+              "A new section 121A, covering copies for Marrakesh Treaty countries",
               "A definition of blindness set at 20/200 in the better eye with correction",
               "A requirement that publishers supply electronic files to authorised entities",
               "A term extension for works published in accessible formats",
@@ -4247,7 +4247,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What does this lesson call a legal definition of who counts?",
             options: [
-              "A records artefact",
+              "A records artefact, deciding who exists for a program's purposes",
               "A medical judgement that the law adopts without amendment",
               "A treaty obligation binding on every contracting party equally",
               "A category that has stayed stable since the programme began in 1931",
@@ -4261,9 +4261,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "When did the national library service change its name?",
             options: [
               "1 October 2019",
-              "8 February 2019, when the United States ratified the Marrakesh Treaty",
-              "4 January 2016, when it took up Unified English Braille",
-              "3 March 1931, when the Pratt-Smoot Act created the programme",
+              "8 February 2019",
+              "4 January 2016",
+              "3 March 1931",
             ],
             correctIndex: 0,
             explanation:
@@ -4273,7 +4273,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Why does this lesson call a renaming a records event?",
             options: [
-              "Catalogues and citations still carry the old name",
+              "Catalogues, citations and finding aids still carry the old name",
               "Because a renamed body loses the statutory authority of its predecessor",
               "Because the old name remains legally valid until Congress repeals it",
               "Because renaming requires a new appropriation under the original Act",
@@ -4287,9 +4287,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "What technical standard does the Department of Justice's Title II rule set?",
             options: [
               "WCAG 2.1 Level AA",
-              "WCAG 2.2 Level AAA, the highest conformance level in the current guidelines",
-              "Section 508's own standards, which the rule incorporated by reference",
-              "EN 301 549, harmonised with the European accessibility requirements",
+              "WCAG 2.2 Level AAA",
+              "Section 508's own standards",
+              "EN 301 549",
             ],
             correctIndex: 0,
             explanation:
@@ -4313,9 +4313,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "When was that final rule published in the Federal Register?",
             options: [
               "24 April 2024",
-              "20 April 2026, when the interim final rule extended the compliance dates",
-              "11 December 2008, the date of the underlying WCAG recommendation",
-              "26 April 2027, the compliance date for larger public entities",
+              "20 April 2026",
+              "11 December 2008",
+              "26 April 2027",
             ],
             correctIndex: 0,
             explanation:
@@ -4325,7 +4325,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What did the interim final rule of 20 April 2026 do?",
             options: [
-              "Extended the compliance dates",
+              "Extended the compliance dates to 2027 and 2028, by entity size",
               "Raised the technical standard from WCAG 2.1 to WCAG 2.2 Level AA",
               "Extended the rule to private commercial websites under Title III",
               "Withdrew the rule pending further consultation with public entities",
@@ -4339,9 +4339,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "What is the extended compliance date for public entities serving 50,000 people or more?",
             options: [
               "26 April 2027",
-              "26 April 2028, which applies to every public entity under the interim rule",
-              "24 April 2024, the date the original final rule was published",
-              "20 April 2026, the date the interim final rule itself was published",
+              "26 April 2028",
+              "24 April 2024",
+              "20 April 2026",
             ],
             correctIndex: 0,
             explanation:
@@ -4390,7 +4390,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What are WCAG's conformance levels?",
             options: [
-              "A, AA and AAA",
+              "A, AA and AAA, from lowest to highest, with AA the level the law points at",
               "One, two and three, corresponding to the priority of each success criterion",
               "Basic, intermediate and full, as set out in the Title II rule",
               "Grade 1, grade 2 and grade 3, matching the braille contraction levels",
@@ -4430,9 +4430,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "Under what statutory citation does the library programme now sit?",
             options: [
               "2 U.S.C. 135a",
-              "17 U.S.C. 121, the copyright exception for accessible formats",
-              "36 C.F.R. 701.6, the regulation governing loans of materials",
-              "Public Law 115-261, the Marrakesh implementing statute",
+              "17 U.S.C. 121",
+              "36 C.F.R. 701.6",
+              "Public Law 115-261",
             ],
             correctIndex: 0,
             explanation:
@@ -4455,7 +4455,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Who certifies eligibility for the national library service, under the current regulation?",
             options: [
-              "One of a listed set of professionals",
+              "One of a listed set of professionals, from doctors to librarians",
               "The Librarian of Congress, on the recommendation of a network library",
               "A state rehabilitation agency, which issues a certificate of blindness",
               "The applicant, by signing a self-certification on the application form",
@@ -4484,9 +4484,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "Is braille a language or a code?",
             options: [
               "A code",
-              "A language, in the same sense that American Sign Language is a language",
-              "A language when contracted and a code when uncontracted",
-              "Neither, since it is a rendering method rather than a system of signs",
+              "A language",
+              "A language when contracted",
+              "Neither",
             ],
             correctIndex: 0,
             explanation:
@@ -4496,7 +4496,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Who wrote this course?",
             options: [
-              "A sighted author, from published sources",
+              "A sighted author, from published sources flagged for blind authorship",
               "A blind co-author working from the outline stage with a sighted editor",
               "A team drawn from the two largest membership organisations of blind people",
               "A group of certified braille transcribers and teachers of blind students",
@@ -4509,7 +4509,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What does this course refuse to teach you to do?",
             options: [
-              "Read braille by touch",
+              "Read braille by touch, which no web page can shorten or replace",
               "Recognise the contraction rules that distinguish grade 1 from grade 2 braille",
               "Read partisan primary sources published by advocacy organisations",
               "Trace credit for an invention through patents and acknowledgements",
@@ -4522,7 +4522,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "How many dot positions does a standard braille cell have, and how many patterns does that give?",
             options: [
-              "Six positions, sixty-four patterns",
+              "Six positions, two across and three down, giving sixty-four patterns",
               "Eight positions and two hundred and fifty-six patterns, the display standard",
               "Six positions and twenty-six patterns, one for each letter of the alphabet",
               "Nine positions and five hundred and twelve patterns, in computer braille",
@@ -4535,7 +4535,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What did BANA's UEB motion of 2 November 2012 keep for the United States?",
             options: [
-              "The Nemeth Code",
+              "The Nemeth Code for mathematics and science notation",
               "English Braille American Edition, for existing stereotyped plates only",
               "The right of each state to set its own literary reading code",
               "New York Point, for adults who had learned no other system",
@@ -4549,9 +4549,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "On what date did the United States implement UEB?",
             options: [
               "4 January 2016",
-              "2 November 2012, the day the adoption motion passed",
-              "In April 2004, when ICEB declared the code substantially complete",
-              "9 November 2014, when BANA's board approved its implementation statement",
+              "2 November 2012",
+              "April 2004",
+              "9 November 2014",
             ],
             correctIndex: 0,
             explanation:
@@ -4574,7 +4574,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Where did the distorted Barbier story come from?",
             options: [
-              "Accounts published in 1859 and 1952",
+              "Accounts published by Pignier in 1859 and Pierre Henri in 1952",
               "Barbier's own publications, which overstated his role at the school",
               "A centenary pamphlet issued by the Paris school in 1952",
               "Nineteenth-century French military records that were later shown to be forged",
@@ -4587,7 +4587,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Why did American schools adopt embossed Roman letters in the 1830s, on Irwin's account?",
             options: [
-              "Sighted teachers could read them without training",
+              "Sighted teachers could read them without training, a staff convenience",
               "Because blind readers had tested them against dot codes and preferred them",
               "Because they were the only type the federal appropriation would fund",
               "Because they could be written by hand more quickly than any dot system",
@@ -4613,7 +4613,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What did Wait do before he invented New York Point?",
             options: [
-              "Asked other schools to adopt braille with him",
+              "Asked Boston and Philadelphia to adopt braille with him, and got no encouragement",
               "Ran comparative reading tests on several hundred blind readers",
               "Petitioned the Printing House board for a braille appropriation",
               "Trained himself to read Boston line type by touch to test its difficulty",
@@ -4639,7 +4639,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Why did the American Printing House's choice of code matter so much?",
             options: [
-              "It held the federal appropriation",
+              "It held the federal appropriation, so its code was the one that existed",
               "It employed most of the country's braille transcribers and proofreaders",
               "It set the curriculum for every publicly supported school for blind children",
               "It owned the patents on the braille typewriter and the stereotype maker",
@@ -4652,7 +4652,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Roughly what proportion of the officials deciding the national code could read either system?",
             options: [
-              "About ten per cent",
+              "About ten per cent, the Printing House's own superintendent among them",
               "About forty per cent, matching the pupil share that decided the 1910 vote",
               "All of them, since reading both was a condition of the board seat",
               "About ninety per cent, since superintendents were trained in both codes",
@@ -4678,7 +4678,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What did Helen Keller do about the 1909 New York hearings?",
             options: [
-              "Sent a letter that was read aloud",
+              "Sent a letter to the board's secretary that was read aloud",
               "Testified in person at the second hearing on 18 May",
               "Declined to take any position, as she read all the systems herself",
               "Organised the braillist witnesses who travelled from Philadelphia",
@@ -4691,7 +4691,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What was notable about the membership of the 1905 Uniform Type Committee?",
             options: [
-              "All five members were blind",
+              "All five members were blind, two of them favoring New York Point",
               "All five were superintendents of publicly supported schools",
               "It was appointed by the American Printing House board of trustees",
               "It included representatives of the British braille committee",
@@ -4718,9 +4718,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "When was the agreement sometimes called the Treaty of London signed?",
             options: [
               "19 July 1932",
-              "25 June 1913, when Standard Dot was recommended at Jacksonville",
-              "In 1918, when America adopted grade one and a half",
-              "In 1905, when the Uniform Type Committee was created at Saginaw",
+              "25 June 1913",
+              "In 1918",
+              "In 1905",
             ],
             correctIndex: 0,
             explanation:
@@ -4731,9 +4731,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "How many times were blind readers made to relearn their code across this history?",
             options: [
               "Four",
-              "Twice, from line type to New York Point and from New York Point to grade 2",
-              "Once, when the London agreement settled grade 2 for both countries",
-              "Six, counting the separate mathematics and music codes",
+              "Twice",
+              "Once",
+              "Six",
             ],
             correctIndex: 0,
             explanation:
@@ -4756,7 +4756,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What did a residential school offer that a district serving one blind child could not?",
             options: [
-              "Blind adults in the ordinary week",
+              "Blind adults in the ordinary week, plus the specialist skills",
               "A larger braille library than any state service could maintain",
               "Freedom from the vocational tracking imposed by local schools",
               "Federal funding that followed the student to a residential placement",
@@ -4769,7 +4769,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Why is there no braille counterpart to the language ban in Deaf education history?",
             options: [
-              "Braille is not a community language",
+              "Braille is not a community language but a code for a shared one",
               "Because no state ever regulated which reading code its schools taught",
               "Because blind children were taught braille at home before school age",
               "Because the federal appropriation protected braille from prohibition",
@@ -4782,7 +4782,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What DOES carry across between the deaf and blind school histories?",
             options: [
-              "The curriculum",
+              "The curriculum, decided in advance by a professional class",
               "The language policy that restricted each group's natural medium",
               "The federal subsidy, which funded the same publisher for both",
               "The dates on which each system desegregated its schools",
@@ -4795,7 +4795,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What did the AFB obituary say blind children of Nemeth's generation were taught?",
             options: [
-              "To knit, weave baskets and cane chairs",
+              "To knit, weave baskets and cane chairs, as manual work against begging",
               "Piano tuning, upholstery and barbering, the trades added at Hampton in the 1940s",
               "Cabinet making, book repair, printing and watch repair",
               "Braille transcription, so that schools could produce their own books",
@@ -4809,9 +4809,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "What two appropriations does the Virginia history place side by side?",
             options: [
               "$25,000 and $50,000",
-              "$100,000 and $89,927, from the federal library and desegregation records",
-              "$50,000 and $215,000, before and after the school's enrolment tripled",
-              "$25,000 and $70,000, matching the enrolment figures for 1940 and 1961",
+              "$100,000 and $89,927",
+              "$50,000 and $215,000",
+              "$25,000 and $70,000",
             ],
             correctIndex: 0,
             explanation:
@@ -4822,9 +4822,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "In what year did the school at Hampton for Black deaf and blind children open?",
             options: [
               "1909",
-              "1902, when the first enabling bill was introduced",
-              "1906, when the enabling bill finally passed",
-              "1940, when it appointed its first Black superintendent",
+              "1902",
+              "1906",
+              "1940",
             ],
             correctIndex: 0,
             explanation:
@@ -4834,7 +4834,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What happened to enrolment under William Whitehead?",
             options: [
-              "It tripled, from about 70 to 215",
+              "It tripled, from about 70 in 1940 to 215 in 1961, his last year",
               "It fell by half as families kept children at home during the war",
               "It stayed flat because the appropriation never allowed more dormitory space",
               "It doubled, from 215 to 430, after a new high school department opened",
@@ -4847,7 +4847,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What is the honest finding about the study of Black blind education in the United States?",
             options: [
-              "The scholarship is thin and the primary record is not",
+              "The scholarship is thin and the primary record of statutes and registers is not",
               "The primary record was destroyed when the segregated schools closed",
               "A landmark monograph exists but has never been translated into braille",
               "The subject has been thoroughly studied but only in unpublished theses",
@@ -4860,7 +4860,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Why did no braille mathematics code exist before Nemeth built one?",
             options: [
-              "Nobody expected a blind person to need it",
+              "Nobody expected a blind person to need it, not any technical limit",
               "Because the six-dot cell has too few patterns for mathematical notation",
               "Because the braille authority had rejected three earlier proposals",
               "Because mathematics textbooks were excluded from the federal appropriation",
@@ -4873,7 +4873,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Who turned Nemeth's private notation into a national standard?",
             options: [
-              "Clifford Witcher",
+              "Clifford Witcher, a blind physicist on the adopting committee",
               "The American Printing House, which published it in 1952",
               "Robert B. Irwin, then executive director of the Foundation",
               "The Braille Authority of North America, at its founding meeting",
@@ -4912,7 +4912,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What caution does this course attach to the curb-cut effect?",
             options: [
-              "Do not let it do the work of the argument",
+              "Do not let it do the work of the argument or hide the middle steps",
               "Do not apply it outside physical access, where it was first described",
               "Treat it as disproving the pattern of dropped credit entirely",
               "Use it only where a patent confirms a blind person's involvement",
@@ -4925,7 +4925,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Why does this course decline to narrate the famous blindness-technology cases?",
             options: [
-              "The archival work was not done in this pass",
+              "The archival work was not done in this pass, so the cases are filed",
               "Because those devices remain under patent and cannot be described",
               "Because their manufacturers refused permission to discuss them",
               "Because the credit pattern has been disproved for hardware",
@@ -4938,7 +4938,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "When and where was the National Federation of the Blind founded?",
             options: [
-              "16 November 1940, at Wilkes-Barre",
+              "16 November 1940, at the Redington Hotel in Wilkes-Barre",
               "7 July 1961, at a convention in Kansas City",
               "3 March 1931, in Washington, alongside the Pratt-Smoot Act",
               "In 1923, when it hired its first executive director",
@@ -4952,9 +4952,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "When was the American Council of the Blind founded?",
             options: [
               "7 July 1961",
-              "16 November 1940, at the same meeting as the older organisation",
-              "In 1955, when Jacobus tenBroek recalled the founding convention",
-              "In 1973, after the desegregation of the Virginia schools",
+              "16 November 1940",
+              "In 1955",
+              "In 1973",
             ],
             correctIndex: 0,
             explanation:
@@ -4977,7 +4977,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What is this course's rule when one organisation describes the other?",
             options: [
-              "Never quote it as neutral description",
+              "Never quote it as neutral description; attribute it instead",
               "Prefer it, since insiders know each other better than outsiders",
               "Exclude both organisations' publications from the bibliography",
               "Combine the two accounts into a single balanced summary",
@@ -4991,9 +4991,9 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
             prompt: "What date did the Pratt-Smoot Act become law on?",
             options: [
               "3 March 1931",
-              "1 July 1931, when the reading project began operating",
-              "3 July 1952, when the word \"adult\" was struck",
-              "1 October 2019, when the service was renamed",
+              "1 July 1931",
+              "3 July 1952",
+              "1 October 2019",
             ],
             correctIndex: 0,
             explanation:
@@ -5016,7 +5016,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "What problem did the Marrakesh Treaty solve?",
             options: [
-              "Accessible copies could not cross borders",
+              "Accessible copies could not cross borders between countries",
               "Nonprofits could not make accessible copies without permission",
               "Publishers refused to supply electronic files to libraries",
               "Blind readers had no way to be certified as eligible",
@@ -5042,7 +5042,7 @@ World Wide Web Consortium. (2008, December 11). *Web Content Accessibility Guide
           {
             prompt: "Who does the Department of Justice's 2024 web rule bind?",
             options: [
-              "State and local governments",
+              "State and local governments, under their existing Title II duties",
               "Every business open to the public as a place of public accommodation",
               "Federal agencies, whose own technology must be accessible",
               "Any organisation receiving federal financial assistance",
