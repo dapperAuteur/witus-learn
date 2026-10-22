@@ -62,6 +62,7 @@ import { SOUND_CRAFT_COURSE } from "./data/sound-craft-course";
 import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
 import { CINEMA_LOOK_CAMERA_RIG_COURSE } from "./data/cinema-look-camera-rig-course";
 import { ARENA_TRANSMISSION_COURSE } from "./data/arena-transmission-course";
+import { RENTING_OUT_PRODUCTION_GEAR_COURSE } from "./data/renting-out-production-gear-course";
 import { MAP_AND_COMPASS_COURSE } from "./data/map-and-compass-course";
 import { SURVEYING_HOW_LAND_GETS_MEASURED_COURSE } from "./data/surveying-how-land-gets-measured-course";
 import { READING_A_LAND_DESCRIPTION_COURSE } from "./data/reading-a-land-description-course";
@@ -3422,6 +3423,28 @@ async function main() {
     navigationMode: "linear",
     publishHoldReason:
       "Held: needs a qualified reviewer (for example a broadcast network engineer or a league or truck engineer in charge) to read every lesson marked QR, with authority to change or cut it. Research tier 2: fiber and laser safety, and heights.",
+  });
+  // CREW-06, Renting Out Production Gear: brief approved 2026-10-21 (plans/future-courses/
+  // careers-and-media/2026-10-21-production-gear-rental-business-brief.md). Public, held until a peer
+  // reviewer signs off; the lessons on contracts, insurance and taxes are marked QR (an
+  // attorney, an insurance agent, a CPA or enrolled agent). Research tier 2: money, contracts, insurance
+  // and taxes. The brief named "Business" as an extra category; no such category exists on this tenant,
+  // so Money & Property stands in for it. Registered after CREW-04 and CREW-05 in series order.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "renting-out-production-gear",
+    course: RENTING_OUT_PRODUCTION_GEAR_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Trade Skills", "Money & Property"],
+    seriesSlug: "the-crew-behind-the-show",
+    seriesTitle: "The Crew Behind the Show",
+    seriesOrder: 6,
+    seriesCode: "CREW",
+    seriesPosition: "06",
+    navigationMode: "linear",
+    publishHoldReason:
+      "Needs a qualified reviewer: held until a peer reviewer (for example a rental house owner) has signed off, with an attorney, an insurance agent and a CPA or enrolled agent for the lessons marked QR. Research tier 2: money, contracts, insurance and taxes.",
   });
 
   // Tools That Think (TOOLS), BAM's series of analog tools that work without electricity (decisions of

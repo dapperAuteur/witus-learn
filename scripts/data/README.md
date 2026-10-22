@@ -161,6 +161,7 @@
 - [`cinema-look-camera-rig`](./cinema-look-camera-rig-course.ts) Megalodon: Cinema-look camera rig · CREW-04 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`light-on-set`](./light-on-set-course.ts) Light on Set · CREW-03 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`raising-animals-for-yarn`](./raising-animals-for-yarn-course.ts) Raising Animals for Yarn · LOOP-03 (the-calorie-loop) · listed here as an extra category; primary: Farm & Garden
+- [`renting-out-production-gear`](./renting-out-production-gear-course.ts) Renting Out Production Gear: the Owner-Operator's Business · CREW-06 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`stage-and-broadcast-rigging`](./stage-and-broadcast-rigging-course.ts) Rigging for Stage and Broadcast Crews · CREW-01 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 
 ### Farm & Garden
@@ -190,6 +191,7 @@
 - [`cinema-look-camera-rig`](./cinema-look-camera-rig-course.ts) Megalodon: Cinema-look camera rig · CREW-04 (the-crew-behind-the-show) · also in: Sports, Trade Skills
 - [`how-the-trades-work`](./how-the-trades-work-course.ts) How the Trades Work: Journeyman, Apprentice, and Who Actually Decides · private · also in: Money & Property
 - [`light-on-set`](./light-on-set-course.ts) Light on Set · CREW-03 (the-crew-behind-the-show) · also in: Trade Skills
+- [`renting-out-production-gear`](./renting-out-production-gear-course.ts) Renting Out Production Gear: the Owner-Operator's Business · CREW-06 (the-crew-behind-the-show) · also in: Trade Skills, Money & Property
 - [`soul-train-the-business`](./soul-train-the-business-course.ts) Soul Train: Who Paid, Who Owned, Who Got Paid · private · also in: Culture & History
 - [`sound-craft`](./sound-craft-course.ts) Sound Craft · CREW-02 (the-crew-behind-the-show) · also in: Storytelling
 - [`stage-and-broadcast-rigging`](./stage-and-broadcast-rigging-course.ts) Rigging for Stage and Broadcast Crews · CREW-01 (the-crew-behind-the-show) · also in: Trade Skills
@@ -318,6 +320,7 @@
 - [`how-the-trades-work`](./how-the-trades-work-course.ts) How the Trades Work: Journeyman, Apprentice, and Who Actually Decides · private · listed here as an extra category; primary: Careers & Media
 - [`read-the-plan-and-the-code`](./read-the-plan-and-the-code-course.ts) Reading the Plan and the Code: Drawings, Specifications, and Who Made the Code Law · series the-house-you-live-in · private · listed here as an extra category; primary: Science & Math
 - [`reading-a-land-description`](./reading-a-land-description-course.ts) Reading a Land Description: The Grid, the Deed and Indiana · TOOLS-04 (tools-that-think) · listed here as an extra category; primary: Civics
+- [`renting-out-production-gear`](./renting-out-production-gear-course.ts) Renting Out Production Gear: the Owner-Operator's Business · CREW-06 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`who-the-rule-leaves-out`](./who-the-rule-leaves-out-course.ts) Who the Rule Leaves Out: Delia Derbyshire, Ruby Payne-Scott, Zitkala-Šá, and the Paper Each Rule Left · series credit · private · listed here as an extra category; primary: Culture & History
 - [`whose-name-is-on-the-score`](./whose-name-is-on-the-score-course.ts) Whose Name Is on the Score: Zitkala-Šá, The Sun Dance Opera, and the Copyright Register · series credit · private · listed here as an extra category; primary: Culture & History
 

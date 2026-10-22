@@ -7641,6 +7641,44 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["The source and its term, with locator"],
     where: ["Federal TV production manuals", "Published lighting texts (Tier C, cite)"],
   },
+  // ── Renting Out Production Gear (CREW-06), filed 2026-10-21 for the two hedges the course writes ──────
+  {
+    key: "gear-union-kit-pay",
+    title: "How a union contract pays a member for their own kit",
+    course: "renting-out-production-gear",
+    lesson: "gear-income-and-your-labor",
+    quote: "This course found no published rule for how a union call pays a member for the use of their own kit, so it gives none.",
+    severity: "medium",
+    question:
+      "When a union member brings their own camera, sound or lighting kit to a call, do the local's contracts (broadcast or production agreements) pay for it, and how: a set kit or box rental, a negotiated fee, or not at all?",
+    claim:
+      "Lessons 3 and 28 say the course found no published rule and tell learners to ask their local; the one published rate card the course read (IATSE Local 796) lists day rates and no equipment line.",
+    stakes:
+      "Medium: a learner who works union calls may price a kit fee the contract does not allow, or miss a kit rental the contract does pay.",
+    needs: ["A contract clause or a local's written guidance on member-owned equipment, with the local, the agreement and a locator"],
+    where: [
+      "Published IATSE local rate cards and collective bargaining agreements (cite; link only where the local publishes them)",
+      "A local business agent, by written answer",
+    ],
+  },
+  {
+    key: "gear-state-sales-tax-on-rentals",
+    title: "Do states tax the rental of production equipment?",
+    course: "renting-out-production-gear",
+    lesson: "taxes-and-records",
+    quote:
+      "This course found no single federal source that says whether your state taxes the rental of production equipment, so it says nothing about any state's rule.",
+    severity: "medium",
+    question:
+      "Do states generally treat the rental of tangible personal property such as cameras and lighting as a taxable sale, and is there an authoritative multistate source (for example the Streamlined Sales and Use Tax Agreement's definitions) the course could cite for the general rule?",
+    claim: "Lesson 26 sends the learner to their state's department of revenue and makes no claim about any state.",
+    stakes: "Medium: an owner who should collect sales tax on rentals and does not may owe it later.",
+    needs: ["An authoritative multistate or federal-level source with locator, or two or three state revenue department pages as examples"],
+    where: [
+      "Streamlined Sales and Use Tax Agreement, definitions of lease or rental",
+      "State department of revenue guidance on rentals of tangible personal property",
+    ],
+  },
   // ── Raising Animals for Yarn (LOOP-03), filed 2026-10-13 for the hedges the verified draft writes ──
   {
     key: "ra-avma-mulesing-policy",
