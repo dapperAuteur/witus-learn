@@ -8439,6 +8439,21 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["Spotting practice from an experienced sports operator or a network's written camera-safety guidance, with locator"],
     where: ["The qualified reviewer named in lesson 16's marker", "Network camera-operator safety guidance", "The NCAA's own hosted copy of the 2026 rule book, to upgrade the NCAA lines to VERIFIED"],
   },
+  {
+    key: "megalodon-bolt6-6ghz-class",
+    title: "Which FCC 6 GHz device class the Teradek Bolt 6 uses in the US",
+    course: "cinema-look-camera-rig",
+    lesson: "frequency-coordination-and-licenses",
+    quote: "but its pages read for this course do not say which class its US 6 GHz mode uses.",
+    severity: "medium",
+    question:
+      "Under 47 C.F.R. 15.407, is the Teradek Bolt 6 (LT and XT) certified in the US as a low-power indoor, very-low-power or standard-power 6 GHz device, and may it be used outdoors (an open-air stadium) on 6 GHz?",
+    claim:
+      "Lesson 20 says Teradek enables the Bolt 6's 6 GHz channels for the US (Teradek, 2025) but does not say which device class, and tells learners to check the FCC grant before relying on 6 GHz in an open-air stadium, because low-power indoor devices \"are limited to indoor locations.\"",
+    stakes: "Medium: an operator could run a link outdoors in a mode the FCC limits to indoor use.",
+    needs: ["The FCC ID and grant for the Bolt 6 transmitter, with the 6 GHz device class and any outdoor restriction, with locator"],
+    where: ["FCC Equipment Authorization search (apps.fcc.gov/oetcf/eas)", "Teradek's Bolt 6 user guide and regulatory pages"],
+  },
   // ── Arena transmission (CREW-05), filed 2026-10-22 ─────────────────────────────────────────────────
   {
     key: "crew05-local-vs-national",

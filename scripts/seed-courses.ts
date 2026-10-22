@@ -3386,8 +3386,8 @@ async function main() {
   // CREW-04, approved by BAM 2026-10-21 (cloud-briefs/crew-04/00-approved-brief.md): the shallow-focus
   // wireless gimbal camera sports broadcasts nicknamed the Megalodon; titled "Cinema-look camera rig"
   // after BAM chose the safe name on 2026-10-21 (USPTO findings in research check megalodon-trademark,
-  // closed). Public, held for a qualified reviewer. Research tier 2: RF and FCC licensing, lithium batteries, money. Sections 1 to 4 are
-  // written; sections 5 to 8 and the final quiz follow.
+  // closed). Public, held for a qualified reviewer. Research tier 2: RF and FCC licensing, lithium
+  // batteries, money. All eight sections and the final quiz are written (2026-10-22).
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
