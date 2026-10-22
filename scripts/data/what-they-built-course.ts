@@ -899,7 +899,8 @@ On May 31 and June 1, 1921, a white mob destroyed the district. **This course is
 - Philadelphia Tribune. (n.d.). *Greenwood rebuilt: Why then did it collapse?* https://www.phillytrib.com/special_sections/black_history/greenwood-rebuilt-why-then-did-it-collapse/article_fdc3ff8d-485b-5871-ab5a-3da41208794e.html
 - Smithsonian Magazine. (2021). *Decades after the Tulsa race massacre, urban renewal sparked Black Wall Street's second destruction*. https://www.smithsonianmag.com/history/black-wall-streets-second-destruction-180977871/
 - Tulsa City-County Library. (n.d.). *Black Wall Street*. https://www.tulsalibrary.org/black-wall-street
-- Tulsa Reparations Coalition. (n.d.). *Riot property loss*. https://tulsareparations.z19.web.core.windows.net/Property.htm`,
+- Tulsa Reparations Coalition. (n.d.). *Riot property loss*. https://tulsareparations.z19.web.core.windows.net/Property.htm
+- Young, R. J. (2022). *Requiem for the massacre: A Black history on the conflict, hope, and fallout of the 1921 Tulsa Race Massacre*. Counterpoint. [Named here as further reading for the massacre this course does not teach; not quoted and not used for any claim in this lesson. A book you must obtain; it carries no link. Part 1 opens with the history and Greenwood today; Part 2 reports the 2021 centennial. The author notes that some names and details are changed.]`,
       recallContent: [
         {
           prompt: "What was the founding transaction of Atlanta Life, and why is it worth studying?",
@@ -2204,7 +2205,8 @@ A short, checkable piece in which every sentence is either something you read in
 - Du Bois, W. E. B. (Ed.). (1907). *Economic co-operation among Negro Americans*. Atlanta University Press. https://docsouth.unc.edu/church/dubois07/dubois.html
 - Harris, A. L. (1936). *The Negro as capitalist: A study of banking and business among American Negroes*. American Academy of Political and Social Science.
 - Walker, J. E. K. (2009). *The history of Black business in America: Capitalism, race, entrepreneurship* (2nd ed.). University of North Carolina Press.
-- Weare, W. B. (1993). *Black business in the New South: A social history of the North Carolina Mutual Life Insurance Company*. University of North Carolina Press.`,
+- Weare, W. B. (1993). *Black business in the New South: A social history of the North Carolina Mutual Life Insurance Company*. University of North Carolina Press.
+- Young, R. J. (2022). *Requiem for the massacre: A Black history on the conflict, hope, and fallout of the 1921 Tulsa Race Massacre*. Counterpoint. [Named here as further reading for the massacre this course does not teach; not quoted and not used for any claim in this lesson. A book you must obtain; it carries no link. Part 1 opens with the history and Greenwood today; Part 2 reports the 2021 centennial. The author notes that some names and details are changed.]`,
       recallContent: [
         {
           prompt: "What is the one requirement that makes this assignment different from other place-writing assignments?",
