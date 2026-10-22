@@ -1417,8 +1417,411 @@ Larger batteries from other makers come with their own manuals. Follow each make
     },
     // @@QUIZ-6@@
 
-    // @@SECTIONS-7-8@@
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 7: The money
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "depreciation",
+      title: "23 · Depreciation in plain words",
+      section: "7 · The money",
+      recallContent: [
+        {
+          prompt: "Within how long after return does ShareGrid tell owners to report damage, and with what?",
+          answer: "Within 24 hours of the equipment's return, with detailed photographs.",
+        },
+        {
+          prompt: "What does Sony recommend when you discard a memory card?",
+          answer: "Physically destroy it.",
+        },
+      ],
+      body: `${QR("a CPA or enrolled agent, to check every tax statement in this lesson and how the listed-property rules apply to rental gear")}
 
+**Talk to a tax professional first.** This section reads IRS publications at a beginner's level so that you know what to ask. It is not tax advice. The rules change from year to year, and which ones apply depends on your situation. Before you claim any deduction this section describes, ask a CPA or an enrolled agent.
+
+**What depreciation is.** IRS Publication 946: "Depreciation is an annual income tax deduction that allows you to recover the cost or other basis of certain property over the time you use the property. It is an allowance for the wear and tear, deterioration, or obsolescence of the property."
+
+**What can be depreciated.** The publication sets four requirements. Property "must be property you own"; it "must be used in your business or income-producing activity"; it "must have a determinable useful life"; and it "must be expected to last more than 1 year."
+
+**When it starts and stops.** "You begin to depreciate your property when you place it in service for use in your trade or business or for the production of income." And: "Even if you are not using the property, it is in service when it is ready and available for its specific use." It stops when you have recovered the cost or retire the item, whichever comes first (lesson 22).
+
+**Cameras are "listed property".** Publication 946's list of listed property includes "Property generally used for entertainment, recreation, or amusement (including photographic, phonographic, communication, and video recording equipment)." Listed property comes with a business-use test: it "must be used predominantly (more than 50% of its total use) for qualified business use." If it is not:
+
+- It does not qualify for the section 179 deduction or the special depreciation allowance in the year it is placed in service (lesson 24).
+- Depreciation "must be figured using the straight line method over the ADS recovery period."
+- Excess depreciation from earlier years "must be recaptured (included in income)" in the first year the business use falls to 50 percent or less.
+
+**The records rule.** "You cannot take any depreciation or section 179 deduction for the use of listed property unless you can prove your business/investment use with adequate records or with sufficient evidence to support your own statements." The records must support the amount of each expenditure, "such as the cost of acquiring the item, maintenance and repair costs"; the amount of business and investment use, measured by "time for other listed property", and the total use for the year; the date; and the business purpose. "For listed property, you must keep records for as long as any recapture can still occur."
+
+**What this means for a rental owner.** This course's reading, for the reviewer to check: if you also use the camera for your own projects, keep a log of business days and personal days as you go, in the asset record's use field (lesson 9). Whether a particular use counts as "qualified business use" is a question for your tax professional.
+
+**Two different depreciations.** Lesson 25's break-even uses the value you expect the gear to lose (what you paid minus what you expect to sell it for) to judge the business. Tax depreciation follows the IRS's methods and recovery periods, and the two numbers can differ. Do not use one in place of the other.
+
+:::reveal How does IRS Publication 946 define depreciation? ||| An annual income tax deduction that recovers the cost or other basis of certain property over the time you use it; an allowance for wear and tear, deterioration or obsolescence.
+
+:::reveal Which kinds of equipment does Publication 946 name as listed property used for entertainment, recreation or amusement? ||| Photographic, phonographic, communication, and video recording equipment.
+
+:::reveal What business-use share must listed property have to qualify for section 179 or the special allowance? ||| More than 50 percent qualified business use.
+
+## Sources
+- ${IRS_P946} Locator: chapter 1, "Overview of Depreciation" (introduction), "What Property Can Be Depreciated?", "When Does Depreciation Begin and End?" and "Placed in Service"; chapter 5, "What Is Listed Property?", "What Is the Business-Use Requirement?" and "What Records Must Be Kept?"`,
+    },
+    {
+      slug: "expensing",
+      title: "24 · Expensing: section 179, the special allowance and small items",
+      section: "7 · The money",
+      recallContent: [
+        {
+          prompt: "Under IRS Publication 946, when does depreciation begin?",
+          answer: "When you place the property in service, meaning it is ready and available for its specific use, even if you are not using it yet.",
+        },
+        {
+          prompt: "What must listed property records support, according to Publication 946?",
+          answer: "The amount of each expenditure; the amount of business and investment use (by time, for listed property other than vehicles) and total use; the date; and the business purpose.",
+        },
+      ],
+      body: `${QR("a CPA or enrolled agent, to check every statement in this lesson and its reading of the trade-or-business condition")}
+
+**Deducting sooner.** Lesson 23 described recovering a cost over years. IRS Publication 946 also describes ways to deduct some or all of it in the first year. Read them to know what to ask your tax professional, not to decide alone. The figures below are from the 2025 edition; check the current one.
+
+**Section 179.** "You can elect to recover all or part of the cost of certain qualifying property, up to a limit, by deducting it in the year you place the property in service. This is the section 179 deduction." For 2025: "For tax years beginning in 2025, the maximum section 179 expense deduction is $2,500,000. This limit is reduced by the amount by which the cost of section 179 property placed in service during the tax year exceeds $4,000,000."
+
+Two conditions matter to a rental owner:
+
+- **It must be a trade or business.** "To qualify for the section 179 deduction, your property must have been acquired for use in your trade or business. Property you acquire only for the production of income, such as investment property, rental property (if renting property is not your trade or business), and property that produces royalties, does not qualify."
+- **Business use over half.** "When you use property for both business and nonbusiness purposes, you can elect the section 179 deduction only if you use the property more than 50% for business in the year you place it in service." The publication's example: an item costing $11,000 used 80 percent for business has a business cost of $8,800.
+
+**The special depreciation allowance.** Publication 946 says "P.L. 119-21, commonly known as the One Big Beautiful Bill Act, reinstated the 100% special depreciation allowance for certain qualified property acquired and placed in service after January 19, 2025", and that a taxpayer can instead "elect to take a 40% special depreciation allowance" for that property in the first tax year ending after January 19, 2025. Listed property used 50 percent or less for business does not qualify (lesson 23).
+
+**Small items: the de minimis safe harbor.** The IRS's page on the tangible property regulations: "you may elect to apply a de minimis safe harbor to amounts paid to acquire or produce tangible property to the extent such amounts are deducted by you for financial accounting purposes or in keeping your books and records." A business without an applicable financial statement "may use the safe harbor to deduct amounts up to $2,500" per invoice or item, as substantiated by invoice. To elect it, "attach a statement titled 'Section 1.263(a)-1(f) de minimis safe harbor election' to the timely filed original federal tax return including extensions", and "you must apply the de minimis safe harbor to all expenditures meeting the criteria for the election in the taxable year."
+
+**What this means for a rental owner.** This course's reading, for the reviewer:
+
+- Whether renting gear is your "trade or business" matters twice: for section 179 here, and for where you report the income (lesson 26).
+- A cable, a case or a battery may fall under the $2,500 de minimis line; a $4,298 camera body does not.
+- Deducting sooner changes when you pay tax. It does not change what the gear earns, so lesson 25's break-even does not change.
+
+:::reveal What was the maximum section 179 deduction for tax years beginning in 2025, and where did the reduction begin? ||| $2,500,000, reduced by the amount by which section 179 property placed in service that year cost more than $4,000,000.
+
+:::reveal Does rental property qualify for section 179 if renting property is not your trade or business? ||| No. Property acquired only for the production of income, including such rental property, does not qualify.
+
+:::reveal Without an applicable financial statement, up to what amount does the de minimis safe harbor reach? ||| $2,500 per invoice or item, as substantiated by invoice.
+
+## Sources
+- ${IRS_P946} Locator: "What's New for 2025" (section 179 dollar limits; special depreciation allowance); chapter 2 (the section 179 deduction), introduction, "Property Acquired for Business Use" and "Partial business use".
+- ${IRS_TANGIBLE} Locator: "What is the de minimis safe harbor election?" and "How do you elect to use the de minimis safe harbor?"
+- ${FOCUS_FX3A} Locator: price line.`,
+    },
+    {
+      slug: "break-even",
+      title: "25 · Break-even under three scenarios",
+      section: "7 · The money",
+      recallContent: [
+        {
+          prompt: "What did P.L. 119-21 do to the special depreciation allowance, according to Publication 946?",
+          answer: "It reinstated the 100 percent special depreciation allowance for certain qualified property acquired and placed in service after January 19, 2025, with an election to take 40 percent instead.",
+        },
+        {
+          prompt: "Why does this course say expensing does not change the break-even?",
+          answer: "Deducting sooner changes when you pay tax, not what the gear earns.",
+        },
+      ],
+      body: `${QR("a CPA or enrolled agent, to check the model's method and its labels; every input marked as an assumption is invented to show the method")}
+
+**What this lesson is, and is not.** It is a method: a way to see how many paid days a kit needs before it covers its costs. It is not a forecast, and it is not a promise. Every input marked "assumption" below is invented to show the arithmetic. Put your own numbers in, and expect a different answer.
+
+**The kit (two verified prices, one assumption).** A Sony FX3A body at $4,298 and a Teradek Bolt 6 LT set at $2,390, both listed on October 21, 2026, total $6,688. Add $1,312 of lens, batteries, cables and case (assumption), for $8,000.
+
+**The inputs.**
+
+| Input | Value |
+|---|---|
+| Life, and resale at the end | 3 years; 40 percent of cost (assumption) |
+| Value lost per year | ($8,000 − $3,200) ÷ 3 = $1,600 |
+| Insurance per year | $500 (assumption; one insurer's annual minimum was $495, lesson 17) |
+| Listings, bookkeeping, admin per year | $300 (assumption) |
+| Fixed costs per year | $800 |
+| Dry-hire billed day | $150 listed (assumption), less the 15 percent platform fee ($22.50), less $32.50 of upkeep and handling time (assumption) = **$95** |
+| Kit-fee day (you operate) | $150 (assumption), less $40 of upkeep, extra prep and transport (assumption) = **$110** |
+
+Your labor is in neither day. Lesson 3 explains why.
+
+**Break-even points.** This course's arithmetic, rounded up to whole days:
+
+| Goal for one year | Kit-fee days only | Dry-hire days only |
+|---|---|---|
+| Cover fixed costs ($800) | 8 | 9 |
+| Cover fixed costs and value lost ($2,400) | 22 | 26 |
+
+**Three scenarios a year (assumptions).**
+
+| | Low | Base | High |
+|---|---|---|---|
+| Kit-fee days | 5 | 15 | 30 |
+| Dry-hire billed days | 5 | 15 | 30 |
+| Money left after per-day costs | $1,025 | $3,075 | $6,150 |
+| After fixed costs ($800) | $225 | $2,275 | $5,350 |
+| After value lost ($1,600) | -$1,375 | $675 | $3,750 |
+| Over three years, counting resale | -$4,125 | $2,025 | $11,250 |
+| Simple cash payback of $8,000 | about 36 years | about 3.5 years | about 1.5 years |
+
+**Change one input.** Raise insurance from $500 to $1,000 and the base case falls from $675 to $175 a year after value lost ($3,075 − $1,300 − $1,600).
+
+**Reading the model.** This course's reading: the low case loses money; the base case barely clears the value the kit loses; the high case needs 60 rental days a year from one kit. A working operator's own jobs often fall on the same days renters want (lesson 5), so check the high case against your calendar before you believe it. The input that moves the answer most is utilization, which is why section 2 came first.
+
+**Turn it into a kill rule.** Before you buy, write the pace below which you will sell. For example (an assumption, not advice): fewer than 15 paid days in the first six months, half the base case, means sell while resale is still high.
+
+:::reveal In this lesson's model, how much does one kit-fee day contribute, and what is left out of it? ||| $110 after per-day costs; your labor is left out, because you could earn your day rate on a client's gear.
+
+:::reveal In the model, how many kit-fee days a year cover fixed costs and value lost? ||| 22 ($2,400 ÷ $110 = 21.8, rounded up).
+
+:::reveal What does the base case leave after fixed costs and value lost, and what happens if insurance doubles to $1,000? ||| $675 a year; with $1,000 insurance it falls to $175.
+
+## Sources
+- ${FOCUS_FX3A} Locator: price line.
+- ${TERADEK_B6} Locator: price line.
+- ${SG_FEES} Locator: "Rentals", owner fee.
+- ${ATHOS} Locator: minimum premiums, annual production equipment.`,
+    },
+    {
+      slug: "taxes-and-records",
+      title: "26 · Taxes and records: where the income goes",
+      section: "7 · The money",
+      recallContent: [
+        {
+          prompt: "In lesson 25's model, how many dry-hire days a year cover fixed costs and value lost?",
+          answer: "26 ($2,400 ÷ $95 = 25.3, rounded up).",
+        },
+        {
+          prompt: "What does the model's high case require from one kit, and why does the lesson doubt it?",
+          answer: "60 rental days a year; a working operator's own jobs often fall on the days renters want.",
+        },
+      ],
+      body: `${QR("a CPA or enrolled agent, for every federal statement in this lesson; and a state tax professional for sales tax")}
+
+**Is your rental a business?** IRS Publication 525 says that when you rent out personal property, "such as equipment or vehicles", how you report depends on "Whether or not the rental activity is a business, and Whether or not the rental activity is conducted for profit." It adds: "In most cases, if your primary purpose is income or profit and you're involved in the rental activity with continuity and regularity, your rental activity is a business."
+
+- "If you're in the business of renting personal property, report your income and expenses on Schedule C (Form 1040)."
+- "If you aren't in the business of renting personal property, report your rental income on Schedule 1 (Form 1040), line 8l." Expenses of renting for profit go on line 24b.
+- "If you don't rent personal property for profit, your deductions are limited and you can't report a loss to offset other income."
+
+**Income counts whether or not a form arrives.** The IRS's gig economy page lists "Rent equipment" as gig work and says income must be reported "even if the income is" not on an information return such as Form 1099-K, 1099-MISC or 1099-NEC.
+
+**What payers report.** The instructions for Forms 1099-MISC and 1099-NEC tell payers to "Enter amounts of $2,000 or more for all types of rents" in box 1, and say the minimum reporting threshold for certain payments "increased to $2,000" for tax years beginning after 2025. Lesson 3 quoted the same instructions on splitting a machine's rent from its operator's charge, which is one more reason to invoice them separately.
+
+**Self-employment tax.** The IRS says: "Generally, your net earnings from self-employment are subject to self-employment tax. If you are self-employed as a sole proprietor or independent contractor, you generally use Schedule C to figure net earnings from self-employment." The rate "is 15.3%": 12.4 percent for Social Security and 2.9 percent for Medicare. You must pay it if your net earnings from self-employment were "$400 or more." This course's reading, for the reviewer: a rental business reported on Schedule C generally feeds this tax, so set money aside for it.
+
+**Sales tax is a state question.** The U.S. Small Business Administration says "Tax laws vary by location and business structure, so you'll need to check with state and local governments to know your business' tax obligations." This course found no single federal source that says whether your state taxes the rental of production equipment, so it says nothing about any state's rule. Ask your state's department of revenue before your first rental.
+
+**Which legal form?** Whether you rent as a sole proprietor or through an entity is its own decision. Two catalog courses teach it: *What a Business Entity Actually Is* (lesson "2 · An entity is a separate legal person you create") and *The US Forms: Sole Prop to Corporation* (lessons "5 · Sole proprietorship: you, doing business" and "10 · The LLC: the modern default").
+
+**Keep the records.** Publication 583: keep records "until the period of limitations for that return runs out", keep asset records until the period expires for the year you dispose of the item (lesson 9), and before you discard anything, check whether "your insurance company or creditors may require you to keep them longer than the IRS does."
+
+:::reveal Under Publication 525, where do you report income if you are in the business of renting personal property? ||| On Schedule C (Form 1040).
+
+:::reveal From what amount do the current 1099-MISC instructions tell payers to report rents in box 1? ||| $2,000 or more.
+
+:::reveal What is the self-employment tax rate, and what two parts make it up? ||| 15.3 percent: 12.4 percent for Social Security and 2.9 percent for Medicare.
+
+## Sources
+- ${IRS_P525} Locator: "Rents From Personal Property" and its three reporting paragraphs.
+- ${IRS_GIG} Locator: "What is the gig economy?" list of gig work; "Gig income is taxable".
+- ${IRS_1099} Locator: "What's New", threshold increase; "Specific Instructions for Form 1099-MISC", "Box 1. Rents".
+- ${IRS_SE} Locator: "Self-employment tax rate"; "Who must pay self-employment tax".
+- ${SBA_TAXES} Locator: "Determine your state tax obligations".
+- ${IRS_P583} Locator: "How Long To Keep Records" ("Period of limitations", "Assets", "Records for nontax purposes").`,
+    },
+    // @@QUIZ-7@@
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 8: Growing it
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "listings-and-reputation",
+      title: "27 · Listings and reputation",
+      section: "8 · Growing it",
+      recallContent: [
+        {
+          prompt: "Under Publication 525, when is renting personal property usually a business?",
+          answer: "In most cases, when your primary purpose is income or profit and you are involved in the rental activity with continuity and regularity.",
+        },
+        {
+          prompt: "What does the SBA say about state tax obligations?",
+          answer: "Tax laws vary by location and business structure, so check with state and local governments to know your business's tax obligations.",
+        },
+      ],
+      body: `**Reputation is the asset that does not depreciate.** A kit can be bought by anyone. A record of on-time, clean, working rentals takes months to build, and it is what wins the next booking. This lesson reads one platform's own advice on building it.
+
+**What ShareGrid tells owners to do.** Its tips page lists nine:
+
+1. "Create a Comprehensive Description: Clearly describe your gear and any special notes the renter should be aware of."
+2. "Upload High-Quality Photos: Ensure your photos are accurate and show your gear clearly."
+3. "Respond Promptly: Please answer renters' questions and requests as quickly as possible."
+4. "Be Available: Be accessible to resolve any issues within 24 hours of the renter picking up the equipment."
+5. "Be Punctual: Arrive on time for both the pick-up and return exchanges."
+6. "Maintain Your Gear: Keep your equipment clean, in good working order, and ready for use."
+7. "Verify ID: Check the renter's ID at the start of the rental."
+8. "Leave Feedback: Provide feedback and a rating after each rental to help build the renter's reputation."
+9. "Follow Community Rules: Be courteous and adhere to ShareGrid's Community Rules."
+
+**What its search ranking rewards.** ShareGrid's "Best Match" ranking names "Elite Status" ("Achieving and maintaining Elite Status boosts your listing's visibility"), "Fair Market Pricing", "Positive Reviews", fast response times and a high response rate, up-to-date availability and a high acceptance rate, and the "Number and Variety of Listings". It blends in new owners and listings "to give everyone a fair chance to earn credibility in the marketplace." Reviews run both ways: owners rate renters too.
+
+**A listing that does the work.** This course's checklist, built from the tips above and earlier lessons:
+
+- A title that names the model and says what kind of package it is.
+- The full kit list from lesson 10, with every item named, so the guarantee covers it (lesson 9).
+- Photos of every item, matching the list.
+- An accurate replacement value, kept current (lesson 9).
+- Your weekend and week rules in words (lesson 14), and your pickup and return windows.
+- When you can be reached during the rental.
+
+**Off the platform, the same rules.** This course's reasoning: a production company that rents your kit directly judges you by the same things the platform measures (answers, timing, condition), and it remembers. Keep a list of every client: what they rented, when, what went well, and whether they booked again. Rebooking is the clearest sign your reputation is working, and the best evidence for lesson 29's decision.
+
+:::reveal Name four of the nine tips ShareGrid gives owners. ||| Any four of: comprehensive description; high-quality photos; respond promptly; be available within 24 hours of pickup; be punctual; maintain your gear; verify ID; leave feedback; follow community rules.
+
+:::reveal Why does ShareGrid say owners should leave feedback after each rental? ||| To help build the renter's reputation.
+
+:::reveal What does this course call the clearest sign that your reputation is working? ||| Clients booking again.
+
+## Sources
+- ${SG_TIPS} Locator: the nine tips.
+- ${SG_BEST_MATCH} Locator: the ranking factors and the closing paragraph on new owners.`,
+    },
+    {
+      slug: "relationships-and-unions",
+      title: "28 · Relationships, productions and the union question",
+      section: "8 · Growing it",
+      recallContent: [
+        {
+          prompt: "Name three factors in ShareGrid's Best Match ranking.",
+          answer: "Any three of: Elite Status; fair market pricing; positive reviews; fast response times and a high response rate; up-to-date availability and a high acceptance rate; number and variety of listings.",
+        },
+        {
+          prompt: "What should a client list record, according to this course?",
+          answer: "What each client rented, when, what went well, and whether they booked again.",
+        },
+      ],
+      body: `${P("a working owner-operator or crew coordinator, for how bookings with production trucks and production companies are actually made and who approves a kit fee on a show; and a union business agent, for how a local's contracts treat a member's own kit")}
+
+**Two halves.** This lesson has a documented half and a practitioner's half. The documents say a good deal about how gear is priced and paid for, and very little about how a crew member's kit gets onto a show. That half will come from practitioners, named at the top, before the lesson is released.
+
+**What the documents say.**
+
+1. **On major shows, someone else sets the wireless.** At NFL events, "uncoordinated devices are prohibited", and licensed broadcast auxiliary stations go only to stations and network entities (lesson 7). The show decides what gear may be used, and you fit your kit to it.
+2. **The kit is its own line.** A published rate guide says kit rentals are separate line items on the production budget, and the IRS instructions for Form 1099-MISC tell a payer to split a machine's rent from its operator's charge (lessons 3 and 13). Invoice them separately from the start, so a production's paperwork matches yours.
+3. **One union rate card says nothing about kit.** IATSE Local 796's rates card lists day rates and has no line about equipment, kit or box rental. Lesson 3 named the gap: no published rule this course found says how a union call pays a member for their own kit.
+
+**What to ask a practitioner.** This course's questions, to bring to a crew coordinator, a production manager or an owner-operator who already rents to productions:
+
+1. Who books specialty camera or sound packages on the shows I want to work, and how far ahead?
+2. Which production trucks or companies carry their own packages, and which rent?
+3. Who approves a kit fee on a show, and on what paperwork?
+4. What insurance certificate, loss payee or liability limit will they ask me to show?
+5. If I work union calls, does my local's contract cover a member's own gear, and how is it paid?
+
+**Where the catalog goes further.** *Break Into Sports & Media Broadcasting* covers the crew side of getting work in "14 · Internships, freelancing, and building credits" and "15 · Unions, networking, and landing the first job". This lesson adds only the gear.
+
+:::reveal At NFL events, what does the league's page say about uncoordinated wireless devices? ||| They are prohibited.
+
+:::reveal What did IATSE Local 796's rates card say about a member's own kit? ||| Nothing; it lists day rates and has no line about equipment, kit or box rental.
+
+:::reveal Name two of the five questions this lesson tells you to bring to a practitioner. ||| Any two of: who books specialty packages and how far ahead; which trucks or companies carry their own; who approves a kit fee and on what paperwork; what insurance certificate, loss payee or liability limit they ask for; how a union contract treats a member's own gear.
+
+## Sources
+- ${NFL_EFC} Locator: paragraph on policy.
+- ${CFR_74_600} Locator: the section's single paragraph.
+- ${RATE_GUIDE} Locator: the kit rental rates paragraph.
+- ${IRS_1099} Locator: "Box 1. Rents", the machine rentals paragraph.
+- ${IATSE_796} Locator: the whole rates card.`,
+    },
+    {
+      slug: "a-second-kit",
+      title: "29 · When to add a second kit",
+      section: "8 · Growing it",
+      recallContent: [
+        {
+          prompt: "What are the two halves of lesson 28?",
+          answer: "A documented half (what the documents say about pricing, paperwork and wireless) and a practitioner's half (how kit actually gets booked onto shows, and how union contracts treat a member's own gear).",
+        },
+        {
+          prompt: "Why does this course tell you to invoice the kit fee separately from the start?",
+          answer: "Rate guides treat kit rental as its own budget line and the IRS tells payers to split a machine's rent from its operator's charge, so your paperwork should match the production's.",
+        },
+      ],
+      body: `**The test is turned-away bookings.** This course's reasoning: a second kit earns only from bookings the first kit had to turn down. If the first kit sits idle on the days a second would be busy, the second kit adds cost and little income. So keep a log of every request you could not fill: the date, the item, the days, the price offered, and why you said no.
+
+**Run the model again for kit two.** Using lesson 25's base-case inputs (all assumptions): a second identical kit adds $1,600 a year of value lost and, say, $300 a year more insurance (assumption). At $95 per dry-hire day, 20 turned-away billed days a year would bring $1,900, which just covers $300 plus $1,600. Fewer than about 20 such days, and the second kit loses money on these assumptions.
+
+**A different second item may beat a duplicate.** If your log shows requests for something you do not own (a different lens, a wireless link, a sound package), lesson 7's test applies to that item instead. ShareGrid's ranking also counts the "Number and Variety of Listings", so a different item may help the first kit's listings too.
+
+**Limits that do not grow with you.** Two of the protections in section 5 have ceilings that a bigger inventory reaches:
+
+- ShareGrid's Owner Guarantee covers "up to $20,000 in cumulative Replacement Value" for in-person rentals, and "This is a cumulative limit, not a per-rental limit." Two kits out at once can pass it. It also allows "a maximum of two (2) eligible claims per 12 calendar months for each Owner account."
+- One insurer listed a "$100K maximum for Equipment Rented To Others and Voluntary Parting Coverage."
+
+This course's reading: as the value you have out at one time grows, the guarantee covers less of it, and your own insurance has to carry more (lessons 17 and 18). Ask your agent before you buy the second kit, not after.
+
+**Your calendar is the other limit.** A second kit can rent while you operate the first. That is its best case. But every kit adds check-in, cleaning, charging and testing time (section 6). If you cannot do that work without losing paid days of your own, count those days as a cost.
+
+**A decision rule to adapt.** This course's suggestion, with assumption-based thresholds you should replace: buy a second item only when your log shows at least the break-even number of turned-away days in the past year, your insurance covers the higher value out at once, and you have the hours to turn both kits around.
+
+:::reveal According to this lesson, what is the test for a second kit? ||| Turned-away bookings: a second kit earns only from requests the first kit had to turn down.
+
+:::reveal On lesson 25's assumptions, about how many turned-away dry-hire days a year would a second identical kit need to break even? ||| About 20 ($1,900 at $95 a day covers $300 more insurance plus $1,600 of value lost).
+
+:::reveal Is ShareGrid's Owner Guarantee limit per rental? ||| No. It is cumulative: up to $20,000 in replacement value out at any one time for in-person rentals.
+
+## Sources
+- ${SG_GUARANTEE} Locator: opening paragraph; "Do I still need voluntary parting coverage?"; "Eligibility", claim limit.
+- ${ATHOS} Locator: the rented-to-others and voluntary parting maximum.
+- ${SG_BEST_MATCH} Locator: "Number and Variety of Listings".`,
+    },
+    {
+      slug: "capstone-written-plan",
+      title: "30 · Capstone: a written plan with a kill rule",
+      section: "8 · Growing it",
+      recallContent: [
+        {
+          prompt: "What should a turned-away bookings log record?",
+          answer: "The date, the item, the days, the price offered, and why you said no.",
+        },
+        {
+          prompt: "What maximum did one insurer list for equipment rented to others and voluntary parting coverage?",
+          answer: "$100,000.",
+        },
+      ],
+      body: `**The assignment.** Write a one-page plan for the gear you own or want to buy. Each part comes from a lesson, and each part has to rest on something you can show: a price list with its date, a named renter, a written rule. If a part rests on a hope, mark it as one.
+
+**The eight parts.**
+
+1. **Demand (lesson 4).** Name three productions, crews or companies who rent this item now, what they rent, how often and from whom. Attach the local and national price lists you read, with dates.
+2. **Own or rent (lesson 7).** For each item, the four answers: billed days a year, rentals that equal its price, who decides whether it may be used, and whether a newer model is due.
+3. **Buy (lessons 8 to 10).** New or used, with the arithmetic; the kit list from the job backward; the asset record's fields, filled in.
+4. **Price (lessons 11 to 14).** Your dated rate sheet: day, weekend rule, week rule, what reaches you after fees, and your kit fee on its own line.
+5. **Protect (lessons 15 to 18).** Your agreement checklist, which waiver or insurance you require from renters, your own policy (with the answers to lesson 17's seven questions), and your ID and pickup rules.
+6. **Operate (lessons 19 to 22).** Your pre-rental checklist, battery log, cleaning steps and check-in routine, with the time each takes.
+7. **Money (lessons 23 to 26).** The break-even model with your own inputs, three scenarios, and the questions you will take to a tax professional.
+8. **Grow (lessons 27 to 29).** What your listing will say, who you will ask for work, and the log that will tell you when a second item is earned.
+
+**The kill rule.** At the bottom, write one sentence in this form: "If I have fewer than __ paid days by __, I will sell __." Pick the number from your model before you buy, while you can still be objective about it. A kill rule written after the purchase tends to bend.
+
+**The review date.** Put a date on the plan three or six months out, and on that date compare what happened with what you wrote: the bookings, the rates paid, the hours spent, and whether clients booked again.
+
+**What a good plan looks like.** It can say no. A plan that ends "do not buy yet; rent the item for two paid jobs first and see" is a good result. This course has not promised that renting gear will pay; its purpose is to make sure that if it does not, you find out early and cheaply.
+
+:::reveal What form does this lesson give for the kill rule? ||| "If I have fewer than __ paid days by __, I will sell __", written before you buy.
+
+:::reveal Why does this lesson say to write the kill rule before the purchase? ||| So you can still be objective about it; a kill rule written after the purchase tends to bend.
+
+:::reveal Can a good plan end with "do not buy yet"? ||| Yes. A plan that says to rent the item for paid jobs first and see is a good result.
+
+## Sources
+- No new sources. This assignment uses the sources cited in lessons 4 to 29.`,
+    },
+    // @@QUIZ-8@@
+
+    // ══════════════════════════════════════════════════════════════════════
+    // FINAL
+    // ══════════════════════════════════════════════════════════════════════
     // @@FINAL@@
   ],
 };

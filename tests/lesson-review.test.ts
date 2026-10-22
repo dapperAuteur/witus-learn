@@ -18,6 +18,7 @@ import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "../scripts/data/stage-and-br
 import { SOUND_CRAFT_COURSE } from "../scripts/data/sound-craft-course";
 import { LIGHT_ON_SET_COURSE } from "../scripts/data/light-on-set-course";
 import { RAISING_ANIMALS_FOR_YARN_COURSE } from "../scripts/data/raising-animals-for-yarn-course";
+import { RENTING_OUT_PRODUCTION_GEAR_COURSE } from "../scripts/data/renting-out-production-gear-course";
 import type { AuthoredCourse } from "../scripts/data/authored-course";
 
 // Reviewer sign-off (plans/93 section 1): the pure rules. The marker lines below are copied from the
@@ -99,11 +100,13 @@ describe("the four marked course files", () => {
   // A snapshot of what the seeder will write. Counted 2026-10-14: 81 marker lines in 71 lessons,
   // carrying 83 needs (two lines hold two). If a course gains or loses a marker, update the count
   // deliberately; if a marker stops parsing, the "decision" fallback shows up here as a jump.
+  // CREW-06 (renting-out-production-gear) joined 2026-10-21: 9 marker lines in 9 lessons, 9 needs.
   const courses: [string, AuthoredCourse][] = [
     ["stage-and-broadcast-rigging", STAGE_AND_BROADCAST_RIGGING_COURSE],
     ["sound-craft", SOUND_CRAFT_COURSE],
     ["light-on-set", LIGHT_ON_SET_COURSE],
     ["raising-animals-for-yarn", RAISING_ANIMALS_FOR_YARN_COURSE],
+    ["renting-out-production-gear", RENTING_OUT_PRODUCTION_GEAR_COURSE],
   ];
   const tally = (c: AuthoredCourse) => {
     const t = { lessons: 0, qr: 0, p: 0, decision: 0 };
@@ -121,6 +124,7 @@ describe("the four marked course files", () => {
       "sound-craft": { lessons: 12, qr: 7, p: 5, decision: 5 },
       "light-on-set": { lessons: 19, qr: 8, p: 14, decision: 0 },
       "raising-animals-for-yarn": { lessons: 23, qr: 18, p: 7, decision: 0 },
+      "renting-out-production-gear": { lessons: 9, qr: 8, p: 1, decision: 0 },
     });
   });
 
