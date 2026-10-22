@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
-import { getTenantByHost } from "@/lib/tenant";
+import { getTenantByHostCached } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
-import { listCommodities } from "@/db/queries/map";
+import { cachedCommodities } from "@/lib/public-cache";
 import { mapSvgDataUri } from "@/lib/map-svg";
 
 export const runtime = "nodejs";
@@ -18,7 +18,7 @@ export const runtime = "nodejs";
 // render) we fall through to the plain branded card rather than shipping a broken image.
 export async function GET(req: Request) {
   const host = req.headers.get("x-forwarded-host") ?? req.headers.get("host");
-  const tenant = await getTenantByHost(host);
+  const tenant = await getTenantByHostCached(host);
   const name = brandName(tenant);
   const accent = tenant?.theme.colors?.accent ?? tenant?.theme.themeColor ?? "#111111";
 
@@ -30,7 +30,7 @@ export async function GET(req: Request) {
   let mapUri: string | null = null;
   if (wantsMap && tenant && tenant.flags.commodityMap !== false) {
     try {
-      const pins = await listCommodities(tenant.id);
+      const pins = await cachedCommodities(tenant.id);
       if (pins.length > 0) {
         mapUri = mapSvgDataUri(pins, { width: 1200, height: 630, accent });
       }

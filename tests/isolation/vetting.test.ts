@@ -124,7 +124,9 @@ describe("sitemap includes unvetted courses (discovery, not routing)", () => {
 
   it("the sitemap actually emits per-course URLs, and gates them ONLY on includeInSitemap", () => {
     const sitemap = src("src/app/sitemap.ts");
-    expect(sitemap).toContain("listSitemapCourses");
+    // Through the cross-request cache, which wraps the same tenant-scoped listSitemapCourses.
+    expect(sitemap).toContain("cachedSitemapCourses(tenant.id)");
+    expect(src("src/lib/public-cache.ts")).toContain('cachedRead("sitemap-courses", listSitemapCourses');
     expect(sitemap).toContain("includeInSitemap");
     expect(sitemap).toContain("${base}/${c.username}/${c.slug}");
     // No second, contradictory filter: a `vettedAt` test here would silently un-index every
@@ -190,7 +192,7 @@ describe("the Coming soon face cannot leak the closed course", () => {
   it("loadCourseView withholds lessons and sections from a coming-soon viewer", () => {
     const access = src("src/lib/course-access.ts");
     expect(access).toContain("courseViewGate");
-    expect(access).toContain("const all = isComingSoon ? [] : await listLessonSummaries(course.id)");
+    expect(access).toContain("const all = isComingSoon ? [] : await cachedLessonSummaries(course.id)");
     expect(access).toContain("const modules = isComingSoon");
   });
 
@@ -200,7 +202,7 @@ describe("the Coming soon face cannot leak the closed course", () => {
     const page = src("src/app/(tenant)/[username]/[courseSlug]/lesson/[lessonSlug]/page.tsx");
     const find = page.indexOf("const listed = view.lessons.find((l) => l.slug === lessonSlug);");
     const guard = page.indexOf("if (!listed) notFound();");
-    const load = page.indexOf("await getCourseLesson(view.course.id, listed.id)");
+    const load = page.indexOf("await cachedCourseLesson(view.course.id, listed.id)");
     expect(find).toBeGreaterThan(-1);
     expect(guard).toBeGreaterThan(find);
     expect(load).toBeGreaterThan(guard);

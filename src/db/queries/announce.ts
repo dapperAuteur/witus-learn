@@ -2,6 +2,7 @@ import "server-only";
 import { and, eq, inArray } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses } from "@/db/schema";
+import { expireCatalog } from "@/lib/cache-tags";
 
 // Tenant-scoped mutation for the batch-announce flow. Like every catalog query, the
 // tenantId is baked into the WHERE — a course from another tenant can never be marked,
@@ -22,5 +23,6 @@ export async function markCoursesAnnounced(
     .set({ announcedAt: at })
     .where(and(eq(courses.tenantId, tenantId), inArray(courses.id, courseIds)))
     .returning({ id: courses.id });
+  if (rows.length > 0) expireCatalog(tenantId);
   return rows.map((r) => r.id);
 }

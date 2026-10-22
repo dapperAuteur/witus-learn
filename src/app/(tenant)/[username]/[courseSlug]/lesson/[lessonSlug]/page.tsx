@@ -17,8 +17,7 @@ import { AssignmentSubmit } from "@/components/assignment-submit";
 import { getSubmission } from "@/db/queries/assignments";
 import { buildCrossroads } from "@/lib/crossroads";
 import { entitiesInLesson } from "@/lib/entities";
-import { listPublishedCourseSlugs } from "@/db/queries/catalog";
-import { getCourseLesson } from "@/db/queries/authoring";
+import { cachedCourseLesson, cachedPublishedCourseSlugs } from "@/lib/public-cache";
 import { listApprovedCrossLinkTargets } from "@/db/queries/cross-links";
 import { listCourseLocations } from "@/db/queries/lesson-locations";
 import {
@@ -91,7 +90,7 @@ export default async function LessonPage({ params }: Params) {
   // list FIRST, so a draft or a coming-soon course still 404s exactly as before.
   const listed = view.lessons.find((l) => l.slug === lessonSlug);
   if (!listed) notFound();
-  const lesson = await getCourseLesson(view.course.id, listed.id);
+  const lesson = await cachedCourseLesson(view.course.id, listed.id);
   if (!lesson) notFound();
 
   // Per-course (per-season) age gate. Editors bypass.
@@ -214,7 +213,7 @@ export default async function LessonPage({ params }: Params) {
   const namedEntities = access.open ? entitiesInLesson(lesson.textContent) : [];
   let alsoDiscussed: { slug: string; name: string }[] = [];
   if (namedEntities.length > 0) {
-    const published = new Set(await listPublishedCourseSlugs(view.tenant.id));
+    const published = new Set(await cachedPublishedCourseSlugs(view.tenant.id));
     alsoDiscussed = namedEntities
       .filter((e) => e.courses.filter((l) => published.has(l.courseSlug)).length >= 2)
       .map((e) => ({ slug: e.slug, name: e.name }));

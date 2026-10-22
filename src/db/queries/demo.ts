@@ -33,6 +33,7 @@ import { enrollFree } from "@/db/queries/enrollment";
 import { upsertProgress } from "@/db/queries/progress";
 import { env } from "@/lib/env";
 import type { TenantRecord } from "@/lib/tenant";
+import { expireCatalog } from "@/lib/cache-tags";
 
 // Demo account: a single shared, tenant-scoped user prospective teachers land in via
 // "Try the demo" on the Acme host. A nightly Vercel cron (`/api/cron/demo-reset`) wipes
@@ -225,6 +226,7 @@ export async function clearDemoData(userId: string, tenantId: string): Promise<v
   // social-share rows tied to THOSE specific lessons. Other instructors' courses/lessons
   // are untouched — the WHERE below is instructorId = this user, tenantId = Acme, only.
   await db.delete(courses).where(and(eq(courses.tenantId, tenantId), eq(courses.instructorId, userId)));
+  expireCatalog(tenantId);
 }
 
 /**

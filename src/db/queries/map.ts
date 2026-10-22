@@ -7,10 +7,11 @@ import { mapBelts, mapCommodities, type MapBelt, type MapCommodity } from "@/db/
 // hero, the header link) show — so a school shows the map as soon as it's seeded, with no flag toggle
 // needed. `cache` memoizes it per request (the header + page both call it). The commodityMap flag is
 // only a force-hide override (set it false to hide the map even when data exists).
-export const tenantHasMapData = cache(async (tenantId: string): Promise<boolean> => {
+export async function mapDataExists(tenantId: string): Promise<boolean> {
   const rows = await db.select({ id: mapCommodities.id }).from(mapCommodities).where(eq(mapCommodities.tenantId, tenantId)).limit(1);
   return rows.length > 0;
-});
+}
+export const tenantHasMapData = cache(mapDataExists);
 
 /** The tenant's commodity pins (optionally one season). Tenant-scoped. */
 export async function listCommodities(tenantId: string, season?: number): Promise<MapCommodity[]> {

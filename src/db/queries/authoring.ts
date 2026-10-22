@@ -13,6 +13,7 @@ import {
   type ProfileLinks,
 } from "@/db/schema";
 import { slugify } from "@/lib/slug";
+import { expireCourse, expireCacheTags, CACHE_TAGS, expireProfiles } from "@/lib/cache-tags";
 
 // Tenant-scoped authoring writes + slug/instructor reads. Module/lesson writes are
 // scoped via their parent course id (the caller verifies course ownership first).
@@ -81,6 +82,7 @@ export async function createCourse(
       visibility: input.visibility ?? "public",
     })
     .returning();
+  expireCourse(tenantId, row.id);
   return row;
 }
 
@@ -94,6 +96,7 @@ export async function updateCourse(
     .set({ ...patch, updatedAt: new Date() })
     .where(and(eq(courses.id, id), eq(courses.tenantId, tenantId)))
     .returning();
+  if (row) expireCourse(tenantId, id);
   return row ?? null;
 }
 
@@ -102,6 +105,7 @@ export async function deleteCourse(tenantId: string, id: string): Promise<boolea
     .delete(courses)
     .where(and(eq(courses.id, id), eq(courses.tenantId, tenantId)))
     .returning({ id: courses.id });
+  if (rows.length > 0) expireCourse(tenantId, id);
   return rows.length > 0;
 }
 
@@ -264,14 +268,23 @@ export async function getLessonById(tenantId: string, id: string): Promise<Lesso
  * strictly better than a lost lesson edit.
  */
 export async function bumpCourseContentVersion(courseId: string): Promise<void> {
+  // Every lesson and section write lands here, so this is also where the public cache of the
+  // course's content is cleared (src/lib/public-cache.ts). The course tag is cleared even if the
+  // bump itself fails: the lesson edit DID happen, and must not hide behind a stale cache. The
+  // catalog tag (the course row, which carries content_version) needs the tenant from the bump.
+  let tenantId: string | null = null;
   try {
-    await db
+    const [row] = await db
       .update(courses)
       .set({ contentVersion: sql`${courses.contentVersion} + 1`, updatedAt: new Date() })
-      .where(eq(courses.id, courseId));
+      .where(eq(courses.id, courseId))
+      .returning({ tenantId: courses.tenantId });
+    tenantId = row?.tenantId ?? null;
   } catch {
     // swallow: see above
   }
+  if (tenantId) expireCourse(tenantId, courseId);
+  else expireCacheTags([CACHE_TAGS.course(courseId)]);
 }
 
 export async function createLesson(
@@ -447,6 +460,8 @@ export async function ensureUsername(userId: string, email: string): Promise<str
     .insert(userProfiles)
     .values({ userId, username: candidate })
     .onConflictDoUpdate({ target: userProfiles.userId, set: { username: candidate } });
+  // A username is half of every course URL; the cached route index must pick up the new one.
+  expireProfiles();
   return candidate;
 }
 

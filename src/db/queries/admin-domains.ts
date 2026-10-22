@@ -6,6 +6,7 @@ import { normalizeHost } from "@/lib/tenant-util";
 import { dnsRecordsFor, isWildcardCovered, type DnsRecord } from "@/lib/domain-dns";
 import { hasVercelDomains, hasVercelWildcard } from "@/lib/env";
 import { attachDomain, detachDomain, type AttachResult } from "@/lib/vercel-domains";
+import { expireTenants } from "@/lib/cache-tags";
 
 // A school can self-serve up to this many domains (subdomains + custom) before BAM needs
 // to get involved. The platform owner is exempt (see `exemptFromCap`).
@@ -69,6 +70,8 @@ export async function addDomain(
   }
 
   await db.insert(tenantDomains).values({ tenantId, host, isPrimary: tenantRows.length === 0 });
+  // Tenant-by-host is cached (a miss included), so a newly mapped domain must clear it.
+  expireTenants();
 
   // A base-zone subdomain is only "covered" (skip API + DNS) when a real Vercel WILDCARD DOMAIN is
   // configured (`hasVercelWildcard`, which needs Vercel nameservers). Otherwise attach it via the API
@@ -84,6 +87,7 @@ export async function removeDomain(id: string): Promise<void> {
     await db.select({ host: tenantDomains.host }).from(tenantDomains).where(eq(tenantDomains.id, id)).limit(1)
   )[0];
   await db.delete(tenantDomains).where(eq(tenantDomains.id, id));
+  expireTenants();
   // Best-effort: free up the domain slot on the Vercel project. Never blocks the unmap.
   if (row && hasVercelDomains && !isWildcardCovered(row.host)) {
     await detachDomain(row.host);
@@ -113,4 +117,5 @@ export async function setPrimaryDomain(id: string): Promise<void> {
   if (!row) return;
   await db.update(tenantDomains).set({ isPrimary: false }).where(and(eq(tenantDomains.tenantId, row.tenantId), ne(tenantDomains.id, id)));
   await db.update(tenantDomains).set({ isPrimary: true }).where(eq(tenantDomains.id, id));
+  expireTenants();
 }

@@ -1,9 +1,8 @@
 import "server-only";
 import { cache } from "react";
-import { asc, eq } from "drizzle-orm";
-import { db } from "@/db/client";
-import { courseModules, type Course, type CourseModule } from "@/db/schema";
-import { getCourseBySlug, listLessonSummaries, type LessonSummary } from "@/db/queries/authoring";
+import type { Course, CourseModule } from "@/db/schema";
+import type { LessonSummary } from "@/db/queries/authoring";
+import { cachedCourseBySlug, cachedLessonSummaries, cachedModules } from "@/lib/public-cache";
 import { getCourseProgressSummary } from "@/db/queries/progress";
 import { isEnrolled as checkEnrolled } from "@/db/queries/enrollment";
 import { canAccessCourse } from "@/lib/api";
@@ -66,7 +65,10 @@ export const loadCourseView = cache(async function loadCourseView(
   courseSlug: string,
 ): Promise<CourseView | null> {
   const tenant = await requireTenant();
-  const course = await getCourseBySlug(tenant.id, username, courseSlug);
+  // The course row, its lesson summaries and its sections are the same for every visitor, so they
+  // come from the cross-request cache (src/lib/public-cache.ts). Everything about THIS viewer below
+  // (session, enrollment, progress, auditor grant) is read fresh on every request.
+  const course = await cachedCourseBySlug(tenant.id, username, courseSlug);
   if (!course) return null;
 
   const session = await getSession();
@@ -119,15 +121,9 @@ export const loadCourseView = cache(async function loadCourseView(
   // A coming-soon viewer gets NO lesson data at all, not a title, not a media URL, so the
   // landing page cannot leak content and the lesson route 404s (it looks its lesson up in this
   // list). Skipping both reads also makes the public face cheaper than the full page.
-  const all = isComingSoon ? [] : await listLessonSummaries(course.id);
+  const all = isComingSoon ? [] : await cachedLessonSummaries(course.id);
   const lessons = isEditor ? all : all.filter((l) => l.isPublished);
-  const modules = isComingSoon
-    ? []
-    : await db
-        .select()
-        .from(courseModules)
-        .where(eq(courseModules.courseId, course.id))
-        .orderBy(asc(courseModules.sortOrder));
+  const modules = isComingSoon ? [] : await cachedModules(course.id);
 
   return {
     tenant,

@@ -1,10 +1,8 @@
 import type { MetadataRoute } from "next";
 import { resolveTenant } from "@/lib/tenant";
-import { ScopedDb } from "@/db/scoped";
 import { includeInSitemap } from "@/lib/vetting";
 import { getSiteUrl } from "@/lib/site-url";
-import { getStandardsCoverage } from "@/db/queries/standards";
-import { tenantHasMapData } from "@/db/queries/map";
+import { cachedMapDataExists, cachedSitemapCourses, cachedStandardsCoverage } from "@/lib/public-cache";
 
 // Tenant-scoped sitemap: only THIS tenant's URLs, only routes that exist for it (a URL that would
 // 404 for the tenant is never listed). Unknown host → empty.
@@ -26,7 +24,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // teachers and schools search for. Only the lessons behind it are closed. Drafts, private
   // courses and courses with no pretty URL are excluded because those URLs 404, and a sitemap must
   // never list a URL that 404s. That single decision lives in includeInSitemap.
-  const courseRows = await new ScopedDb(tenant).listSitemapCourses();
+  // Cross-request cached (src/lib/public-cache.ts): crawlers fetch the sitemap far more often than
+  // the catalog changes. Still tenant-keyed, so a brand's sitemap never names another brand's course.
+  const courseRows = await cachedSitemapCourses(tenant.id);
   for (const c of courseRows) {
     if (!c.username || !includeInSitemap(c)) continue;
     entries.push({
@@ -42,7 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   if (tenant.legal.safetyUrl) entries.push({ url: `${base}/safety`, priority: 0.3 });
 
   // The map explorer — only when this tenant has map data (it 404s otherwise).
-  if (tenant.flags.commodityMap !== false && (await tenantHasMapData(tenant.id))) {
+  if (tenant.flags.commodityMap !== false && (await cachedMapDataExists(tenant.id))) {
     entries.push({ url: `${base}/explore`, changeFrequency: "weekly", priority: 0.7 });
   }
 
@@ -50,7 +50,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // jurisdiction this tenant's catalog is actually aligned to — so a teacher searching "<state>
   // standards" can find the page that answers them. Scoped: getStandardsCoverage only returns
   // jurisdictions this tenant backs, so we never list a state page that would render as "not mapped".
-  const { states } = await getStandardsCoverage(tenant.id);
+  const { states } = await cachedStandardsCoverage(tenant.id);
   if (states.length > 0) {
     entries.push({ url: `${base}/academic-standards`, changeFrequency: "monthly", priority: 0.7 });
     entries.push({ url: `${base}/academic-standards/matrix`, changeFrequency: "monthly", priority: 0.6 });

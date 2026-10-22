@@ -3,6 +3,7 @@ import { and, eq, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courseCategories, courses, type CourseCategory } from "@/db/schema";
 import { renameInAdditional } from "@/lib/course-categories";
+import { expireCatalog } from "@/lib/cache-tags";
 
 // Admin CRUD over a tenant's course categories. Renames/deletes reconcile the free-text
 // courses.category field so course chips stay consistent. All tenant-scoped.
@@ -13,6 +14,7 @@ export async function addCategory(tenantId: string, name: string, sortOrder = 0)
     .values({ tenantId, name, sortOrder })
     .onConflictDoNothing()
     .returning();
+  if (row) expireCatalog(tenantId);
   return row ?? null;
 }
 
@@ -48,6 +50,7 @@ export async function renameCategory(tenantId: string, id: string, newName: stri
       .set({ additionalCategories: next })
       .where(and(eq(courses.tenantId, tenantId), eq(courses.id, row.id)));
   }
+  expireCatalog(tenantId);
   return true;
 }
 
@@ -62,6 +65,7 @@ export async function setCategoryEcosystem(
     .set({ ecosystemProductSlug: slug })
     .where(and(eq(courseCategories.tenantId, tenantId), eq(courseCategories.id, id)))
     .returning({ id: courseCategories.id });
+  if (rows.length > 0) expireCatalog(tenantId);
   return rows.length > 0;
 }
 
@@ -84,5 +88,6 @@ export async function deleteCategory(tenantId: string, id: string): Promise<bool
     .update(courses)
     .set({ additionalCategories: sql`array_remove(${courses.additionalCategories}, ${cat.name})` })
     .where(and(eq(courses.tenantId, tenantId), sql`${cat.name} = ANY(${courses.additionalCategories})`));
+  expireCatalog(tenantId);
   return true;
 }
