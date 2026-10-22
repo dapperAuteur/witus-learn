@@ -183,6 +183,28 @@ fix the page, not the gate.
   Automation" secret as the `VERCEL_AUTOMATION_BYPASS_SECRET` Actions secret; public previews need
   nothing.
 
+### Product analytics (PostHog)
+
+PostHog is wired to the WitUS ecosystem standard (witus-online `lib/analytics/INTEGRATE.md`): one
+shared US-region project, events labelled `app: "learn"`. Capture is **anonymous**:
+`persistence: "memory"` (no cookie, no localStorage), no `identify()`, `autocapture` off, session
+replay off. That is what lets it ship without a consent banner. The cost: every hard navigation
+looks like a new visitor, so read "users" as "sessions" and never quote a unique-visitor number.
+
+- **Files.** [src/lib/analytics/](src/lib/analytics/): `posthog-provider.tsx` and `capture.ts` are
+  byte-for-byte copies of witus-online's (do not edit them here; change them upstream).
+  `events.ts` is this app's event list. Mounted once in [src/app/layout.tsx](src/app/layout.tsx).
+- **Send an event** only through `capture(EVENTS.x, { ... })` from `@/lib/analytics/capture`, never
+  `posthog.capture()` directly. Name events `object_verb_past` and never put the app name in them.
+- **Ingest proxy.** The browser posts to `/ingest`, which [next.config.ts](next.config.ts) rewrites
+  to `us.i.posthog.com`, so ad blockers don't drop events. No route may start with `/ingest`, and
+  the [src/proxy.ts](src/proxy.ts) matcher skips it. `skipTrailingSlashRedirect` is on (PostHog
+  needs trailing slashes), so `proxy.ts` puts the `/page/ → /page` 308 back for page routes.
+- **Env.** `NEXT_PUBLIC_POSTHOG_KEY` (the publishable `phc_` key) and `NEXT_PUBLIC_POSTHOG_HOST=https://us.i.posthog.com`,
+  set explicitly. With no key the provider is inert and the app works normally. Redeploy after
+  setting either, since `NEXT_PUBLIC_*` is inlined at build time.
+- **Check conformance** with witus-online's `scripts/check-posthog-conformance.mjs <path-to-this-repo>`.
+
 ### Synthetic traffic tag
 
 Every request Playwright makes — the CI gate and the tutorial recordings alike — carries
