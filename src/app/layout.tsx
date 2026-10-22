@@ -8,6 +8,7 @@ import { ChunkErrorReloader } from "@/components/chunk-error-reloader";
 import { OfflineBanner } from "@/components/offline-banner";
 import { OfflineLinkFallback } from "@/components/offline-link-fallback";
 import { Analytics } from "@vercel/analytics/next";
+import { PostHogProvider } from "@/lib/analytics/posthog-provider";
 import "./globals.css";
 
 /**
@@ -76,6 +77,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <OfflineLinkFallback />
         {/* Vercel Web Analytics — privacy-friendly, cookieless page/route counts. No-ops off Vercel. */}
         <Analytics />
+        {/* PostHog product analytics: anonymous (memory persistence, no cookie), no autocapture, no
+            session replay. Inert without a key. Mounted here, the layout that wraps every tenant,
+            so route tracking covers all of them. Env is read in this Server Component and passed
+            down. Spec: witus-online lib/analytics/INTEGRATE.md. */}
+        <PostHogProvider apiKey={process.env.NEXT_PUBLIC_POSTHOG_KEY ?? null} apiHost="/ingest" />
       </body>
     </html>
   );

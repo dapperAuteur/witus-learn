@@ -120,6 +120,17 @@ const schema = z.object({
   SENTRY_DSN: z.string().optional(),
   NEXT_PUBLIC_SENTRY_DSN: z.string().optional(),
   SENTRY_ENVIRONMENT: z.string().optional(),
+
+  // PostHog product analytics (optional; the provider is inert without a key — see
+  // src/lib/analytics/). The `phc_` key is publishable, never a `phx_` personal key. The HOST is
+  // set explicitly to the US cluster: the shared project is US and a US key against the EU host
+  // fails silently. Browser ingest goes through the /ingest rewrite in next.config.ts, which names
+  // the upstream literally, so nothing reads the host at runtime today; it records the region and
+  // is what a future server-side posthog-node capture would read.
+  // Plain strings on purpose: analytics is never load-bearing, so a mistyped value here must not
+  // fail env validation and take the app down with it.
+  NEXT_PUBLIC_POSTHOG_KEY: z.string().optional(),
+  NEXT_PUBLIC_POSTHOG_HOST: z.string().optional(),
 });
 
 const isProd = process.env.NODE_ENV === "production";
