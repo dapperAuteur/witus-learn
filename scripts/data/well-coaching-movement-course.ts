@@ -269,7 +269,7 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "What does the course call 'the layer between a plan and a life'?",
             options: [
-              "Dose evidence for honest targets, the everyday movement programs ignore, and adherence science",
+              "Dose evidence, the everyday movement programs ignore, and adherence science",
               "Motivational interviewing, goal setting, and accountability structures",
               "Assessment, programming, and progression, planned across a full training block",
               "Education, demonstration, and supervised practice of each movement",
@@ -282,8 +282,8 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "What is 'movement behavior' as this course defines it?",
             options: [
-              "The daily pattern of activity and sitting a person actually lives, as distinct from the workouts they plan",
-              "The quality of a person's movement patterns under load",
+              "The daily pattern of activity and sitting a person lives, not the workouts they plan",
+              "The quality of a person's movement patterns under load, as scored in an assessment",
               "The client's stated intentions about exercise, recorded before any behavior actually occurs",
               "The frequency and duration of a client's structured training sessions",
             ],
@@ -334,7 +334,7 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "What is 'everyday movement'?",
             options: [
-              "The steps, chores, and postures outside structured exercise, where most of a sedentary client's opportunity lives",
+              "The steps, chores, and postures that happen outside structured exercise",
               "Movement performed every day, as opposed to on a structured training schedule",
               "Low-intensity activity prescribed on recovery days between training sessions",
               "The functional patterns a client repeats in ordinary life, assessed for quality",
@@ -386,9 +386,9 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "What is 'multicomponent activity' in the WHO guidelines?",
             options: [
-              "Varied work combining functional balance and strength, three or more days a week, for adults 65 and older",
+              "Varied balance and strength work, three or more days a week, for adults 65 and older",
               "Any combination of aerobic and strength work performed within a single training session",
-              "Activity that trains more than one energy system within a week",
+              "Activity that trains more than one energy system within the same training week",
               "The mix of moderate and vigorous activity that satisfies the aerobic range",
             ],
             correctIndex: 0,
@@ -438,7 +438,7 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "Why does the course say WHO's refusal to set a sitting threshold is 'what honesty looks like'?",
             options: [
-              "The evidence was insufficient to quantify one, and saying so beats inventing a number",
+              "The evidence could not quantify one, and saying so beats inventing a number",
               "Setting a numeric threshold would have implied that sitting below it is safe",
               "Thresholds are outside the WHO's remit for behavioral recommendations",
               "The available studies disagreed too sharply to permit any recommendation",
@@ -464,10 +464,10 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "Why does the self-reported sitting cut-off read LOWER than the device-measured one?",
             options: [
-              "People underestimate their own sitting, so the self-report scale reads lower at the same true exposure",
-              "Self-report studies enrolled more sedentary populations on average",
+              "People underestimate their own sitting, so the self-report scale shifts lower",
+              "Self-report studies enrolled more sedentary populations on average than device studies",
               "Devices capture standing and fidgeting time that self-report classifies as sitting",
-              "Self-report studies had shorter follow-up, detecting risk earlier",
+              "Self-report studies had shorter follow-up, so they detected the rising risk earlier",
             ],
             correctIndex: 0,
             explanation:
@@ -477,10 +477,10 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "What is the verification note attached to the '8 hours of sitting' figure?",
             options: [
-              "It traces to a conference abstract; the published paper reports method-dependent cut-offs of about 7 and 9 hours",
-              "It comes from an older guideline superseded by the 2020 WHO recommendations",
-              "It is a rounding of the device-measured 9-hour figure, widely repeated",
-              "It applies only to adults over 60, though it circulates as a general rule",
+              "From a conference abstract; the paper reports method-dependent 7- and 9-hour cut-offs",
+              "It comes from an older guideline that the 2020 WHO recommendations superseded",
+              "It is a rounding of the device-measured 9-hour figure, widely repeated in handouts",
+              "It applies only to adults over 60, though it circulates online as a general rule",
             ],
             correctIndex: 0,
             explanation:
@@ -490,10 +490,10 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "What is a 'method-dependent cut-off'?",
             options: [
-              "A threshold that moves with how the exposure was measured, like sitting's 7-versus-9-hour split",
+              "A threshold that shifts with the measuring method, like sitting's 7 versus 9 hours",
               "A threshold that applies only within the specific population a given study measured",
-              "A cut-off chosen by the analysts rather than emerging from the data",
-              "A threshold that differs between self-selected and randomized samples",
+              "A cut-off chosen by the analysts in advance rather than emerging from the data",
+              "A threshold that differs between self-selected samples and randomized samples",
             ],
             correctIndex: 0,
             explanation:
@@ -542,10 +542,10 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "What is 'sedentary behavior' as this course defines it?",
             options: [
-              "Waking time spent sitting or reclining at low energy expenditure; a risk exposure in its own right",
+              "Waking sitting or reclining at low energy cost; a risk exposure in its own right",
               "Any waking time not spent in moderate-intensity or vigorous-intensity activity",
-              "The absence of structured exercise across a day or week",
-              "Time spent below the light-intensity threshold, including sleep",
+              "The absence of structured exercise across a day or a full training week",
+              "Time spent below the light-intensity threshold, including overnight sleep",
             ],
             correctIndex: 0,
             explanation:
@@ -568,7 +568,7 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "A client says 'I only have twenty minutes three times a week, so it's pointless.' Which guideline sentence answers them?",
             options: [
-              "Some physical activity is better than none, and people not meeting the recommendations gain health benefits from doing SOME",
+              "Some physical activity is better than none, even below the recommendations",
               "Adults should accumulate 150 to 300 minutes of moderate activity weekly",
               "Adults should limit sedentary time and replace it with activity of any intensity",
               "Muscle-strengthening activity should involve all major muscle groups twice weekly",
@@ -581,10 +581,10 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "What is 'dose evidence,' and what does it let a coach do?",
             options: [
-              "The epidemiology linking amounts of movement to health outcomes; it lets a coach set targets honestly instead of by convention",
+              "Epidemiology linking movement amounts to outcomes, for honest targets",
               "The trial evidence for how much exercise produces a given adaptation",
               "The measured relationship between training load and injury risk",
-              "The guideline minimums published by recognized authorities",
+              "The guideline minimums that recognized health authorities publish",
             ],
             correctIndex: 0,
             explanation:
@@ -607,10 +607,10 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "How does the centenarian frame appear in this course?",
             options: [
-              "Every dose curve is one you are personally on for the next several decades, and the capstone asks what you did about it",
+              "Every dose curve is one you are on for decades; the capstone asks what you did",
               "Every lesson includes its own section on coaching adults over the age of 65",
-              "Every recommendation is adjusted for expected age-related decline",
-              "Every claim is evaluated for its evidence over multi-decade follow-up",
+              "Every recommendation is adjusted downward for expected age-related decline",
+              "Every claim is checked for its evidence over multi-decade follow-up studies",
             ],
             correctIndex: 0,
             explanation:
@@ -620,7 +620,7 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "A client asks how many hours of sitting is 'safe.' What is the honest answer?",
             options: [
-              "There is no threshold; the association is log-linear, so every hour reduced is worth something",
+              "No threshold exists; the risk is log-linear, so every hour cut is worth something",
               "About 8 hours a day, per the widely cited meta-analysis of sitting time",
               "About 7 hours if self-tracked, since that matches the self-report evidence",
               "About 9 hours, per the device-measured evidence, which is the more accurate ruler",
@@ -633,7 +633,7 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "Which is the strongest reason the WHO guidelines fit inside coaching scope as education?",
             options: [
-              "They are evidence-based resources from a nationally recognized authority, which the scope explicitly permits sharing",
+              "Evidence-based resources from a nationally recognized authority, which scope lets you share",
               "They are population-level rather than individualized, so they cannot constitute prescription",
               "They are published freely, so no professional interpretation is required",
               "They concern behavior rather than treatment, which places them outside any practice act",
@@ -659,8 +659,8 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "A colleague cites 'the 8-hour sitting rule' in a client handout. What should you say?",
             options: [
-              "The published meta-regression reports method-dependent cut-offs of about 7 and 9 hours, and the flat 8 traces to a conference abstract",
-              "The rule is correct but applies only to device-measured sitting",
+              "The flat 8 traces to a conference abstract; the paper reports about 7 and 9 hours",
+              "The rule is correct but applies only to device-measured sitting time at work",
               "The rule is correct for adults under 60 and should be lowered for older clients",
               "The rule is superseded by the WHO guidelines, which set a 6-hour limit",
             ],
@@ -672,7 +672,7 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "What does 'log-linear association' mean for how a coach talks about sitting?",
             options: [
-              "Risk rises steadily with dose without a cliff, so reduction at any level is worthwhile and no level is safe",
+              "Risk rises steadily with no cliff, so any reduction helps and no level is safe",
               "Risk rises sharply after a threshold, so the goal is staying under it",
               "Risk rises proportionally to the logarithm of exposure, so the first hours matter most",
               "Risk is unrelated to dose below a floor, so only extreme sitting is coachable",
@@ -711,7 +711,7 @@ Sun, J. W., Zhao, L. G., Yang, Y., Ma, X., Wang, Y. Y., & Xiang, Y. B. (2015). A
           {
             prompt: "What is the coaching consequence of sitting being 'a risk exposure in its own right'?",
             options: [
-              "It becomes a target to coach directly, separate from and alongside the activity conversation",
+              "It becomes its own coaching target, alongside the activity conversation",
               "It becomes the primary target, replacing activity for sedentary clients",
               "It becomes relevant only once the client meets the activity guideline",
               "It becomes a measurement problem rather than a behavioral one",
@@ -808,9 +808,9 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "Why does this course call steps 'the most coachable dose in health'?",
             options: [
-              "Universally understood, passively counted, and mapped against mortality by multiple large meta-analyses that agree",
+              "Universally understood, passively counted, and tied to mortality by agreeing meta-analyses",
               "Because step targets are published in the WHO 2020 guidelines alongside the weekly aerobic minutes",
-              "Because steps correlate more strongly with fitness than any other field measure",
+              "Because steps correlate more strongly with measured fitness than any other field test",
               "Because step counting requires no equipment a client does not already own",
             ],
             correctIndex: 0,
@@ -886,7 +886,7 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "What optimal doses did Stens et al. report, and what additional finding accompanied them?",
             options: [
-              "About 8,800 for mortality and 7,200 for cardiovascular disease, with independent benefit from brisker cadence",
+              "8,800 for mortality, 7,200 for cardiovascular disease, plus independent cadence benefit",
               "About 7,000 for both outcomes, with independent benefit from morning stepping",
               "About 10,000 for mortality and 8,000 for cardiovascular disease, with no cadence effect detected",
               "About 8,800 for mortality and 7,200 for cardiovascular disease, with benefit confined to under-60s",
@@ -925,10 +925,10 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "What is a 'dose-response gradient,' and why does the course call it strong evidence?",
             options: [
-              "Risk changing steadily with dose; it is one of the strongest signals observational evidence can show",
+              "Risk changing steadily with dose, one of the strongest observational signals",
               "The steepness of the risk curve at its lowest doses, where confounding is least likely",
               "The consistency of an effect across a range of different populations and study designs",
-              "The presence of a threshold below which no association is detectable",
+              "The presence of a dose threshold below which no association is detectable",
             ],
             correctIndex: 0,
             explanation:
@@ -938,10 +938,10 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "What does the agreement of five independent teams establish, per this lesson?",
             options: [
-              "One shape: steep gains from a very low floor, continuing gains through the middle thousands, flattening near five digits",
+              "One shape: steep gains from a low floor, continuing gains, flattening near five digits",
               "That the step-and-mortality relationship is genuinely causal rather than merely associational",
-              "That 7,000 steps is the correct universal target for all adults",
-              "That step counting is more reliable than device-measured activity minutes",
+              "That 7,000 steps is the correct universal target for all adults, whatever their baseline",
+              "That step counting is more reliable than device-measured moderate-to-vigorous minutes",
             ],
             correctIndex: 0,
             explanation:
@@ -964,8 +964,8 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "What is this course's default step prescription?",
             options: [
-              "The client's measured baseline plus roughly a thousand, renegotiated as the curve flattens",
-              "Seven thousand steps a day for every adult client",
+              "The client's measured baseline plus about a thousand, renegotiated as gains flatten",
+              "Seven thousand steps a day for every adult client, whatever their current baseline",
               "The age-appropriate plateau: 6,000 to 8,000 over 60, 8,000 to 10,000 under 60",
               "Ten thousand steps a day, retained because it is a simple and memorable standard",
             ],
@@ -1042,7 +1042,7 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "What was the authors' own interpretation of the 7,000-step finding?",
             options: [
-              "10,000 remains a fine target for the already active, and 7,000 is clinically meaningful and more achievable for many",
+              "10,000 suits the active; 7,000 is clinically meaningful and more achievable for many",
               "10,000 should be abandoned as a target, since 7,000 captures nearly all the benefit",
               "7,000 should replace the WHO aerobic guidelines as the primary public recommendation",
               "Both figures are arbitrary, and only the individual's baseline should guide targets",
@@ -1068,9 +1068,9 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "What did Paluch et al. find about age and the mortality plateau?",
             options: [
-              "Risk fell until about 6,000 to 8,000 steps for adults 60 and older, and about 8,000 to 10,000 for adults under 60",
+              "Risk fell until about 6,000 to 8,000 steps at 60 and older, 8,000 to 10,000 under 60",
               "Risk fell until about 7,000 steps in both age groups, with no age difference detected",
-              "Risk fell until about 8,000 to 10,000 steps for adults 60 and older, and 6,000 to 8,000 for under 60",
+              "Risk fell until about 8,000 to 10,000 steps at 60 and older, 6,000 to 8,000 under 60",
               "Risk fell continuously in both age groups with no plateau below 12,000 steps",
             ],
             correctIndex: 0,
@@ -1094,10 +1094,10 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "How should a coach answer a 68-year-old asking whether 7,200 daily steps is 'enough'?",
             options: [
-              "For their age group the curve plateaus around 6,000 to 8,000, so 7,200 sits at their own optimum; next gains likely come from balance, strength, and cadence",
-              "It falls short of the 10,000-step standard, so a gradual increase is warranted",
-              "It exceeds the 7,000-step threshold, so no further movement work is needed",
-              "Step counts are unreliable at that age, so a different metric should be used",
+              "7,200 is at their age group's 6,000 to 8,000 plateau; next gains lie in balance, strength, cadence",
+              "It falls short of the 10,000-step standard, so a gradual monthly increase is warranted",
+              "It exceeds the 7,000-step threshold, so no further balance or strength work is needed",
+              "Step counts are unreliable at that age, so a different metric such as minutes should be used",
             ],
             correctIndex: 0,
             explanation:
@@ -1107,10 +1107,10 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "Why does the course say the dementia, depression, and falls columns 'matter most here'?",
             options: [
-              "They are arguments about who you get to BE at ninety, for clients who stopped caring about their cardiovascular system years ago",
-              "They carry the strongest evidence certainty in the 2025 analysis",
+              "They speak to who you get to BE at ninety, for clients unmoved by heart arguments",
+              "They carry the strongest evidence certainty of any outcome in the 2025 analysis",
               "They are the outcomes a CPT is not already equipped to discuss",
-              "They respond faster to increased steps than cardiovascular outcomes do",
+              "They respond faster to increased daily steps than cardiovascular outcomes do",
             ],
             correctIndex: 0,
             explanation:
@@ -1133,10 +1133,10 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "What is a 'minimal effective dose' in this course's step vocabulary?",
             options: [
-              "The lowest amount at which benefit is statistically detectable, about 2,600 steps against a 2,000-step reference",
+              "The lowest dose with detectable benefit: about 2,600 steps vs a 2,000 reference",
               "The dose at which the curve's gains begin flattening, around 5,000 to 7,000 steps",
               "The dose required to meet the WHO aerobic guideline through walking alone",
-              "The dose below which a client is classified as sedentary",
+              "The daily dose below which a client is formally classified as sedentary",
             ],
             correctIndex: 0,
             explanation:
@@ -1146,7 +1146,7 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "A sedentary client walks 2,400 steps a day and asks whether it is worth increasing. What does the evidence support?",
             options: [
-              "The first thousand steps a sedentary client adds are the most valuable thousand anyone can buy",
+              "The first thousand steps a sedentary client adds are the most valuable of all",
               "They should reach 7,000 before the increase becomes clinically meaningful",
               "Benefit begins around 4,000 steps, so the first 1,600 are preparatory",
               "Steps below 5,000 carry no detectable mortality association",
@@ -1159,7 +1159,7 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "How does the course tell a coach to establish a client's step baseline?",
             options: [
-              "Measure it first, since most phones already know it, then set the next-1,000 target",
+              "Measure it first from the phone, then set the next-1,000 target",
               "Ask the client to estimate their typical day, then round down for accuracy",
               "Use the population median for their age group as a starting assumption",
               "Set a standard 7,000-step target and adjust after two weeks of data",
@@ -1185,9 +1185,9 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "What does 'the 10,000-step myth' name, and what is the honest status of the number?",
             options: [
-              "A marketing artifact treated as a health law; the evidence supports it as one reasonable target among several, not a threshold",
-              "A discredited figure with no support in any analysis",
-              "A guideline superseded by the WHO's 2020 recommendations",
+              "A marketing artifact treated as health law; one fine target, not a threshold",
+              "A discredited figure with no support in any of the published meta-analyses",
+              "A guideline superseded by the WHO's 2020 physical activity recommendations",
               "A target valid only for adults under 60, misapplied to older adults",
             ],
             correctIndex: 0,
@@ -1198,10 +1198,10 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "What is an 'age-dependent plateau'?",
             options: [
-              "Older adults' mortality curve flattening around 6,000 to 8,000 steps while younger adults' continues to about 8,000 to 10,000",
+              "Older adults' curve flattening near 6,000 to 8,000 steps, younger adults' near 8,000 to 10,000",
               "The decline in achievable step counts with age, requiring targets to be lowered",
-              "The age at which additional steps stop producing any mortality benefit",
-              "The point where an older client's curve begins to rise again with excessive steps",
+              "The age at which additional daily steps stop producing any further mortality benefit",
+              "The point where an older client's curve begins to rise again with excessive daily steps",
             ],
             correctIndex: 0,
             explanation:
@@ -1211,7 +1211,7 @@ Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-ca
           {
             prompt: "Two step analyses report different per-1,000-step figures (12 and 15 percent). How should a coach handle that?",
             options: [
-              "Carry both as a range, since they come from overlapping but distinct cohort sets and agree on the shape",
+              "Carry both as a range; the cohorts overlap but differ, and the shape agrees",
               "Use the higher figure, since it came from the larger pooled analysis",
               "Use the lower figure, since conservative estimates protect against overclaiming",
               "Average them and quote a single 13.5 percent figure",
@@ -1642,8 +1642,8 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What does NEAT reframe about the movement conversation?",
             options: [
-              "It moves off the binary of trained-or-skipped: a collapsed week still owns a hundred waking hours",
-              "It shifts the target from behavior to metabolism, which responds faster",
+              "It ends the trained-or-skipped binary: a lost week still has a hundred waking hours",
+              "It shifts the target from behavior to metabolism, which responds faster to coaching",
               "It replaces the guideline minutes with a total-expenditure target",
               "It makes step counting unnecessary, since NEAT captures more of the day",
             ],
@@ -1655,7 +1655,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "Which is the single largest NEAT driver?",
             options: [
-              "Occupation: a standing or walking job versus a seated one outweighs most training plans",
+              "Occupation: a standing or walking job versus a seated one",
               "Transportation: whether a person drives, walks, or takes public transit",
               "Household chores, which accumulate across every day of the week",
               "Fidgeting, which the overfeeding data showed dominates the variance",
@@ -1668,7 +1668,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What does this lesson deliberately NOT claim about NEAT?",
             options: [
-              "Precise individual prescriptions: exact standing hours, exact calorie promises",
+              "Precise individual prescriptions, like exact standing hours or calories",
               "That NEAT is the main variable component of daily energy expenditure",
               "That occupation is the largest driver of between-person differences",
               "That NEAT-building is inside the coaching scope of practice",
@@ -1681,7 +1681,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What is 'fidget-level movement,' and what does the evidence say about it?",
             options: [
-              "The smallest NEAT layer, posture shifts and restlessness; the overfeeding data shows it is not trivial",
+              "The smallest NEAT layer, posture shifts and restlessness, and not trivial",
               "Involuntary movement during sleep, excluded from NEAT by definition",
               "Movement below the light-intensity threshold, which the guidelines do not credit",
               "The tremor and micro-movement that accounts for most resting expenditure",
@@ -1759,7 +1759,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What did the posture study find when participants' weight changed?",
             options: [
-              "It did not change when obese participants lost weight or lean ones overate: biologically patterned",
+              "It stayed unchanged when weight changed either way: biologically patterned",
               "Posture allocation converged between groups once weight was matched",
               "Posture allocation shifted toward standing in the group that lost weight",
               "Posture allocation was not reassessed after the weight interventions",
@@ -1785,7 +1785,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What did Pontzer et al. find about the relationship between activity and total energy expenditure?",
             options: [
-              "It rose with activity in the lower range and then plateaued: the most active spent little more",
+              "It rose in the lower range, then plateaued; the most active spent little more",
               "Expenditure rose linearly with activity across the whole range measured",
               "Expenditure rose only in the highest activity quintile, with no change below it",
               "Expenditure fell with activity, as the body became more metabolically efficient",
@@ -1798,7 +1798,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What is the proposed mechanism behind the constrained-expenditure plateau?",
             options: [
-              "Metabolic compensation: the body trims expenditure elsewhere rather than letting the total climb",
+              "Metabolic compensation: the body trims spending elsewhere to hold the total",
               "Reduced NEAT: the most active people sit more on their non-training days",
               "Improved movement economy: trained bodies spend less energy per unit of activity",
               "Measurement ceiling: doubly labelled water underestimates expenditure at high activity",
@@ -1824,7 +1824,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What DOES the constrained model undercut?",
             options: [
-              "Calorie arithmetic as a selling tool: promising an active client that a walk adds 300 kcal to the ledger",
+              "Calorie arithmetic as a selling tool, like promising a walk adds 300 kcal",
               "The mortality dose-response for steps, which assumes an energy mechanism",
               "The value of structured exercise for cardiovascular adaptation",
               "The claim that NEAT is the main variable component of daily expenditure",
@@ -1850,7 +1850,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What is the NEAT evidence gap the review literature flags?",
             options: [
-              "No randomized trials testing whether NEAT-promotion strategies actually treat obesity",
+              "No randomized trials of NEAT promotion as an obesity treatment",
               "A lack of device-based measurement in the original Levine experiments",
               "A lack of replication of the overfeeding findings in obese populations",
               "A lack of agreement on how NEAT should be defined across studies",
@@ -1876,7 +1876,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What is an 'evidence gap,' and how does this program treat naming one?",
             options: [
-              "A claim's missing piece; naming gaps is a feature of this program, not hedging",
+              "A claim's missing piece; naming it is a feature here, not hedging",
               "A contradiction between two primary sources on the same question",
               "An area where no research has been attempted at all",
               "A finding that failed to replicate in a subsequent trial",
@@ -1993,10 +1993,10 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What is the practical menu for building a sit-less day, in the lesson's order?",
             options: [
-              "Break the longest blocks first, stand for calls, walk short errands, movement snacks at boundaries",
+              "Break longest blocks first, stand for calls, walk short errands, add movement snacks",
               "Set a daily sitting ceiling, track it, then reduce it by an hour each week",
               "Replace one hour of sitting with structured exercise, then extend gradually",
-              "Stand for a fixed proportion of the working day, increasing monthly",
+              "Stand for a fixed proportion of the working day, increasing it each month",
             ],
             correctIndex: 0,
             explanation:
@@ -2006,7 +2006,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "How should each sit-less change be installed, per the lesson?",
             options: [
-              "Anchored to an existing cue with the WELL-01 habit rules: sitting less is habit design, not willpower",
+              "Anchored to an existing cue by WELL-01 habit rules: habit design, not willpower",
               "Tracked daily against a target, so progress is visible and feedback is available",
               "Scheduled into the calendar as recurring appointments the client protects",
               "Reviewed weekly with the coach, since environmental changes decay without support",
@@ -2071,10 +2071,10 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "Why does the course insist on 'two hours' rather than the widely repeated 'two and a half'?",
             options: [
-              "This program cites what primaries say, not what gets repeated; the inflation is exactly that drift",
+              "The program cites what primaries say, not what gets repeated",
               "Because the larger figure came from a different study of a different population",
               "Because the difference changes the calorie estimate attached to the finding",
-              "Because the original paper was later corrected downward",
+              "Because the original paper was later corrected downward by its authors",
             ],
             correctIndex: 0,
             explanation:
@@ -2084,7 +2084,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "Where does NEAT hide in a client's day, in the lesson's own order of size?",
             options: [
-              "Occupation, then transportation, stairs, chores, errands on foot, standing on calls, and fidget-level movement",
+              "Occupation, then transport, stairs, chores, errands, standing on calls, fidgeting",
               "Transportation, then occupation, structured exercise, chores, and posture",
               "Chores, then occupation, transportation, and recreational activity",
               "Fidgeting, then posture, occupation, transportation, and chores",
@@ -2110,7 +2110,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What does the overfeeding study's ten-fold variation in fat storage tell a coach?",
             options: [
-              "Individual responses to the same surplus differ enormously, so identical inputs do not produce identical outcomes",
+              "Individuals differ hugely in response to the same surplus",
               "Fat storage is primarily determined by diet composition rather than surplus size",
               "Most people will resist fat gain if their NEAT is coached upward",
               "Overfeeding studies cannot be generalized to free-living conditions",
@@ -2123,8 +2123,8 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What is 'posture allocation'?",
             options: [
-              "How a day divides among sitting, standing, and moving; measured every half-second and stable across weight change",
-              "The distribution of postures during a single working day",
+              "How a day divides among sitting, standing, and moving; stable across weight change",
+              "The distribution of postures during a single working day, logged by the client",
               "The proportion of waking hours spent upright, used as a NEAT proxy",
               "The client's habitual postural patterns, assessed for corrective purposes",
             ],
@@ -2136,10 +2136,10 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "What is 'NEAT activation'?",
             options: [
-              "The unconscious increase in everyday movement some bodies produce under caloric surplus",
+              "The unconscious rise in daily movement some bodies make in a caloric surplus",
               "The deliberate increase in daily movement a coach and client plan together",
               "The point at which NEAT exceeds structured exercise in daily expenditure",
-              "The metabolic response to standing after prolonged sitting",
+              "The metabolic response to standing up after a prolonged sitting bout",
             ],
             correctIndex: 0,
             explanation:
@@ -2175,7 +2175,7 @@ Stamatakis, E., Hamer, M., Tilling, K., & Lawlor, D. A. (2012). Sedentary time i
           {
             prompt: "A client's TV block is four unbroken evening hours. Which two lessons converge on this target?",
             options: [
-              "The sitting lesson, which ranks TV worst on dose-response, and the sit-less lesson, which says break the longest blocks first",
+              "The sitting lesson (TV worst on dose-response) and the sit-less lesson (longest blocks first)",
               "The NEAT lesson, which ranks occupation largest, and the sitting lesson's log-linear finding",
               "The step lesson's cadence finding and the sit-less lesson's movement-snack unit",
               "The overfeeding lesson's posture data and the NEAT lesson's fidget layer",
@@ -2339,7 +2339,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "In absolute terms, what did maintained activity amount to at three-plus months?",
             options: [
-              "About 45 extra weekly minutes of moderate-to-vigorous activity and 945 extra daily steps",
+              "About 45 extra weekly minutes and 945 extra daily steps",
               "About 21 to 25 extra minutes a week and a few hundred extra daily steps",
               "About 150 extra minutes of activity a week and about 2,000 extra daily steps",
               "About 45 extra minutes a week and about 300 extra daily steps",
@@ -2365,7 +2365,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What did the long-horizon trials show at two to four years?",
             options: [
-              "Small persistent advantages, SMD 0.15 to 0.18: a few hundred extra daily steps, 21 to 25 extra weekly minutes",
+              "Small persistent advantages: a few hundred extra daily steps, 21 to 25 weekly minutes",
               "No detectable difference at all between the intervention and comparison groups",
               "Moderate advantages, SMD roughly 0.40, translating to about 45 extra weekly minutes",
               "Advantages confined to the trials that included ongoing maintenance support",
@@ -2404,9 +2404,9 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What is 'device-measured activity,' and why does the lesson name it?",
             options: [
-              "Steps and minutes counted by accelerometers rather than memory; the maintenance trials' standard",
+              "Steps and minutes counted by accelerometers, not memory; the trials' standard",
               "Activity recorded by the coach during supervised sessions in person",
-              "Activity estimated from heart-rate data rather than motion",
+              "Activity estimated from heart-rate data rather than from motion sensors",
               "Any activity a client logs in an app rather than reporting verbally",
             ],
             correctIndex: 0,
@@ -2456,7 +2456,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What is 'construct count'?",
             options: [
-              "How many theory pieces an intervention genuinely uses; the moderator of activity-trial success",
+              "How many theory pieces an intervention genuinely uses",
               "The number of distinct behaviors that an intervention targets at the same time",
               "The number of behavior-change techniques coded from the standard taxonomy",
               "The count of measurement instruments a trial administered",
@@ -2469,7 +2469,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What is the usual inner obstacle for movement, and what is the craft?",
             options: [
-              "A belief, like 'a ten-minute walk is not worth changing shoes for'; the craft returns schedule-talk to belief-talk",
+              "A belief, not the calendar; the craft returns schedule-talk to belief-talk",
               "A recurring scheduling conflict; the craft is helping the client protect one fixed slot",
               "Low self-efficacy; the craft is building it through graded successes",
               "Fatigue; the craft is coaching recovery before adding activity",
@@ -2521,7 +2521,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "Why does the course call the step count 'this pillar's gift to coaching'?",
             options: [
-              "Passively measured, client-owned, feedback-rich: it powers the self-monitoring durable programs shared",
+              "Passively measured, client-owned, feedback-rich: it powers self-monitoring",
               "It correlates more closely with mortality than any other single field measure",
               "It is the metric the WHO guidelines specify for adults",
               "It is the only movement measure a coach may discuss within scope",
@@ -2534,10 +2534,10 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What is 'passive measurement,' and why does it matter here?",
             options: [
-              "Data collected without client effort, like phone step counts; steps become the natural instrument",
+              "Data collected without client effort, like phone step counts",
               "Measurement taken by the coach rather than the client, removing self-report bias",
               "Measurement that does not itself change the behavior being measured",
-              "Data collected continuously rather than at intervals",
+              "Data collected continuously rather than at scheduled intervals",
             ],
             correctIndex: 0,
             explanation:
@@ -2560,9 +2560,9 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What did the cardiovascular-risk coaching trials improve, and what did they not?",
             options: [
-              "Activity, diet, health responsibility, and stress management improved; smoking cessation did not",
+              "Activity, diet, health responsibility, stress improved; smoking cessation did not",
               "Physical activity and smoking cessation both improved; dietary behavior did not",
-              "All measured behaviors improved, including smoking cessation",
+              "All measured behaviors improved, smoking cessation most of all",
               "Only physical activity improved; the other behavioral outcomes were null",
             ],
             correctIndex: 0,
@@ -2638,7 +2638,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What are 'honest nulls,' and what is this course's example?",
             options: [
-              "The outcomes a trial did not move, reported beside the wins; CKD's depression and self-efficacy",
+              "Unmoved outcomes reported beside wins; CKD's depression and self-efficacy",
               "Findings that a trial failed to detect simply because it was underpowered",
               "Outcomes excluded from a meta-analysis for insufficient data",
               "Results that contradicted the trial's stated hypothesis",
@@ -2651,7 +2651,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What is the 'source-precision rule'?",
             options: [
-              "Quote effects in the units the primary reports; never convert them for rhetorical effect",
+              "Quote effects in the primary's own units; never convert them for effect",
               "Cite the most precise estimate available whenever two sources disagree",
               "Report confidence intervals alongside every point estimate",
               "Prefer meta-analyses over single trials whenever both exist",
@@ -2664,7 +2664,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "In cardiometabolic populations, what stays inside the coaching lane?",
             options: [
-              "The movement plan, sit-less day, self-monitoring, adherence, and the behavior-change conversation",
+              "Movement plan, sit-less day, self-monitoring, adherence, behavior-change talk",
               "The movement plan, plus any adjustments to it that the client's own data suggests",
               "Everything except medication questions, which route to the prescriber",
               "Only education, since individualized work requires clinical oversight",
@@ -2677,7 +2677,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What is 'implementation support' as this lesson defines it?",
             options: [
-              "The role beside licensed care: help the client carry out the clinician's plan, never modify it",
+              "Helping the client carry out the clinician's plan, never modify it",
               "The coach's practical assistance in setting up tracking devices and reminder systems",
               "The structured follow-up that maintains gains after an intervention ends",
               "The coach's coordination with the client's other providers on their behalf",
@@ -2716,7 +2716,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "Why is 'a few hundred steps and twenty minutes a week' worth years of coaching structure?",
             options: [
-              "Sections 2 and 3 price those margins, and the curves are steepest where sedentary clients live",
+              "Earlier sections price those margins; the curves are steepest for sedentary clients",
               "Because those margins accumulate into guideline-level activity within three years",
               "Because maintained small gains predict later larger gains in most trials",
               "Because the alternative is steady decline, which makes holding position itself a win",
@@ -2820,7 +2820,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What is a 'maintenance intervention'?",
             options: [
-              "Explicit post-program support: boosters, ongoing self-monitoring, relapse planning",
+              "Post-program support: boosters, self-monitoring, relapse planning",
               "The final phase of an initial program, tapering toward independence",
               "A separate program delivered after the client returns to baseline",
               "Ongoing coaching at reduced frequency for an indefinite period",
@@ -2846,7 +2846,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What does the course mean by 'WELL-01's toolkit wearing activity trackers'?",
             options: [
-              "The durable programs' components, self-monitoring, goal setting, and follow-up, are behavior-change tools rather than exercise-science ones",
+              "The durable programs' tools are behavior-change ones, not exercise science",
               "Activity trackers are the delivery mechanism the psychology course recommends",
               "Movement coaching requires devices, whereas other pillars do not",
               "The toolkit must be adapted before it transfers to the movement pillar",
@@ -2976,9 +2976,9 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "Why does this lesson close the course's content?",
             options: [
-              "It is the hardest application: the population that needs movement most, worked with the tightest scope discipline",
+              "It is the hardest application: most need, tightest scope discipline",
               "It is the most recent evidence and therefore the most provisional",
-              "It requires every earlier lesson as a prerequisite",
+              "It requires every earlier lesson in the course as a prerequisite",
               "It is the only lesson that addresses clinical rather than general populations",
             ],
             correctIndex: 0,
@@ -3014,7 +3014,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What is the WELL-02 division of labor between your credentials and your coaching?",
             options: [
-              "CPT and CES own prescription and correction; coaching owns dose targets, everyday movement, and adherence",
+              "CPT and CES prescribe and correct; coaching owns dose, everyday movement, adherence",
               "Coaching replaces programming entirely once a client has mastered the fundamental movement patterns safely",
               "The CPT owns everything about movement; coaching handles only nutrition and sleep",
               "Coaching and training are legally interchangeable once both credentials are held",
@@ -3027,7 +3027,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "The WHO 2020 sentence 'replacing sedentary time with activity of any intensity provides benefits' matters to coaching because:",
             options: [
-              "It credits light activity, authorizing sit-less coaching on days when nothing workout-shaped is possible",
+              "It credits light activity, so sit-less coaching works when no workout is possible",
               "It removes the need for any moderate or vigorous aerobic activity anywhere in the adult guidelines' recommendations",
               "It applies only to adults over 65 with mobility limitations",
               "It requires clients to log every replacement bout for guideline credit",
@@ -3040,7 +3040,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "The corrected teaching on sitting thresholds is:",
             options: [
-              "A log-linear association with method-dependent cut-offs: about 7 hours self-reported, 9 device-measured",
+              "Log-linear, with cut-offs near 7 hours self-reported and 9 device-measured",
               "A hard risk cliff at 8 hours of daily sitting, established consistently across all measurement types and cohorts",
               "No association between sitting and mortality after exercise adjustment",
               "A protective effect of sitting below 5 hours a day",
@@ -3053,7 +3053,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "A sedentary client at 2,500 daily steps asks what one more thousand is worth. Per the meta-analyses:",
             options: [
-              "Roughly 12 to 15 percent lower all-cause mortality risk, the steepest part of the whole curve",
+              "Roughly 12 to 15 percent lower all-cause mortality risk",
               "Little benefit until 7,000 daily steps, the point where measurable mortality benefits first begin",
               "About 2 percent, since benefits concentrate above 10,000 steps",
               "Nothing durable, because step benefits decay within months",
@@ -3066,7 +3066,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "The 2025 multi-outcome analysis reframes step targets how?",
             options: [
-              "7,000 steps a day captures clinically meaningful benefit across nine outcomes and is more achievable than 10,000",
+              "7,000 steps gives clinically meaningful benefit on nine outcomes",
               "12,000 steps a day is the new evidence-based minimum recommendation for all adults regardless of baseline activity",
               "Step counts predict mortality but nothing else measured",
               "Targets below 10,000 are now considered clinically meaningless",
@@ -3157,7 +3157,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "Why does this course refuse to quote the hypertension coaching effect as 'about 3 mmHg'?",
             options: [
-              "The source reports standardized mean differences, and converting them to clinical units would outrun the source",
+              "The source reports standardized mean differences; converting them outruns it",
               "Because the actual measured effect in the pooled hypertension trials was closer to 10 mmHg of systolic pressure",
               "Because blood pressure is outside a wellness coach's conversational scope",
               "Because standardized differences and millimeters are interchangeable anyway",
@@ -3257,8 +3257,8 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "Why is TV time the most coachable sitting target?",
             options: [
-              "Worst dose-response of any sitting flavour (RR 1.33), in long unbroken evening blocks",
-              "It is the only sitting flavour clients can accurately self-report",
+              "Worst dose-response of any sitting flavor, in long unbroken evening blocks",
+              "It is the only sitting flavor clients can accurately self-report on surveys",
               "It replaces sleep more often than other sedentary activities",
               "It correlates most strongly with total occupational sitting",
             ],
@@ -3401,9 +3401,9 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What did the 33 stage-based activity trials find?",
             options: [
-              "They worked (0.23-0.36) with or without stage-matching; construct count moderated success",
+              "They worked with or without stage-matching; construct count moderated success",
               "Stage-matched interventions clearly outperformed non-matched ones",
-              "Neither matched nor unmatched interventions produced detectable effects",
+              "Neither matched nor unmatched interventions produced detectable activity effects",
               "Matching helped only in clients assessed as precontemplative",
             ],
             correctIndex: 0,
@@ -3485,7 +3485,7 @@ Yu, L., Yang, Y., Chen, Y., & Wang, Q. (2026). Do health coaching interventions 
           {
             prompt: "What does 'the context does the remembering' mean?",
             options: [
-              "A reliable event triggers the behaviour without the client deciding to recall it",
+              "A reliable event triggers the behavior without the client deciding to",
               "Physical environments store cues more durably than mental intentions do",
               "Repetition encodes the behaviour in procedural memory over time",
               "Clients who change environments forget behaviours they had established",
