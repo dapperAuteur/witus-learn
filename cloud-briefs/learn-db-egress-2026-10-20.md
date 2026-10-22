@@ -100,3 +100,8 @@ so the next read after an edit is fresh. Called from:
 Outside a Next request (seed scripts), clearing is a no-op and the one-hour backstop applies. Run a
 seed, and the site shows the new content within the hour, or immediately after any in-app edit to
 the same course.
+
+One exception, added 2026-10-22: a course seeded in the last hour is missing from the cached route
+index, so its URL used to 404 until the index expired. `loadCourseView` now does one direct read when
+the index misses and the visitor is signed in, so a new course opens at once for its owner. Signed-out
+misses still cost no query. Changed lessons on an existing course still wait for the hour.
