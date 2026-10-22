@@ -57,9 +57,11 @@ import type { AuthoredCourse } from "./authored-course";
 // House style: `section` on every lesson; flush-left single-line `:::reveal q ||| a`; a
 // `## Vocabulary` block of 3-6 lesson-specific terms; APA 7 `## Sources`; a quiz per teaching
 // section (pool sized to that section's word density, serving 5, passing 80, shuffled) plus a
-// 40-question final serving 10; every question carries `explanation` + `sourceLessonSlug`. Correct
-// options are written SHORT and distractors long and specific, so `check-longest-option` passes by
-// construction rather than by trimming afterwards.
+// 40-question final serving 10; every question carries `explanation` + `sourceLessonSlug`. Option
+// lengths must not give the answer away in EITHER direction: the correct option should be neither
+// usually the longest nor usually the shortest (check-longest-option, check-shortest-option and
+// check-length-balance all run; this file left their GRANDFATHERED lists in quiz batch 1, 2026-10-21).
+// The old rule here, "correct options SHORT, distractors long", produced a shortest-answer tell.
 export const EDITOR_OF_THE_CRISIS_COURSE: AuthoredCourse = {
   title: "The Editor of The Crisis",
   description:
