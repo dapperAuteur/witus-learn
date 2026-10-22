@@ -8380,58 +8380,64 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "The licensed land surveyor reviewing the course",
     ],
   },
-  // ── Megalodon: Cinema-look camera rig (CREW-04), filed 2026-10-21 ───────────────────────────────
-  {
-    key: "megalodon-trademark",
-    title: "Is \"Megalodon\" a registered trademark for cameras or broadcast services?",
-    course: "cinema-look-camera-rig",
-    severity: "medium",
-    question:
-      "Does any live US registration (USPTO) or other registration cover \"Megalodon\" for cameras, camera support, video transmission or broadcast services?",
-    claim:
-      "The course is titled \"Megalodon: Cinema-look camera rig\" and lesson 1 uses \"Megalodon\" as the industry nickname, not as a brand. Brief section 7 makes this check a gate before release: if the name is registered for those goods or services, the title becomes \"Cinema-look camera rig\" (the slug already leaves the name out).",
-    stakes: "Medium: a public course title that uses someone's registered mark.",
-    needs: ["A USPTO trademark search result for MEGALODON in classes 9 and 38, with registration numbers and owners, or a statement that none covers those goods"],
-    where: ["USPTO trademark search", "Brief: cloud-briefs/crew-04/00-approved-brief.md, section 7"],
-  },
+  // ── Cinema-look camera rig (CREW-04), filed 2026-10-21 ───────────────────────────────────────────
+  // Answers read back 2026-10-22 from cloud-briefs/crew-04/research/05-research-check-answers.md
+  // (every source fetched 2026-10-21).
+  // megalodon-trademark was CLOSED 2026-10-22, resolved by BAM's decision of 2026-10-21 to use the safe
+  // title "Cinema-look camera rig" (course file and seed-courses.ts). USPTO findings, read 2026-10-21 in
+  // tmsearch.uspto.gov and TSDR: the word mark "megalodon" returned 31 records live and dead ("megalodon*"
+  // 32, "megladon*" 7, "megaladon*" 0). No live registration or application covers cameras, camera
+  // supports, gimbals or broadcast services, and nothing is filed in class 38. Live records nearest the
+  // course: MEGALODON, Reg. No. 7,764,736 (serial 79413156), Panorama Antennas Limited, class 9
+  // "Antennas; coaxial cables", registered Apr. 22, 2025 (Madrid, IR 1830264); MEGLADON, Reg. No.
+  // 2,814,890 (serial 76513525), Megladon Manufacturing Group, class 9 signal transmission paths
+  // (optical and metal cables), registered Feb. 17, 2004, renewed; MEGALODON, Reg. No. 5,173,007 (serial
+  // 86981713), Feld Motor Sports, class 41 motor sports entertainment, registered Mar. 28, 2017, renewed
+  // (Feld also holds live class 25 and 28 registrations). Dead class 9 and 41 records (Defiant Studios,
+  // Megalodon Studios, LG Electronics, Megalodon Sports & Entertainment, Megalodon Pictures) carry no
+  // current rights. The search does not cover common-law or state use and is not a clearance opinion.
+  // Lesson 1 keeps "Megalodon" only as the industry nickname, cited to Dachman (2021).
   {
     key: "megalodon-fx3-hdmi-bit-depth",
-    title: "Bit depth and color sampling of the FX3's HDMI output",
+    title: "Color sampling of the FX3's HDMI output",
     course: "cinema-look-camera-rig",
     lesson: "recording-power-and-heat",
-    quote: "Sony's specifications page does not state the bit depth or the color sampling of the HDMI output.",
+    quote: "Sony's help guide does not state the color sampling of the HDMI signal (4:2:2 or 4:2:0).",
     severity: "low",
-    question: "What bit depth and color sampling (for example 10-bit 4:2:2) does the Sony FX3 / FX3A send over HDMI, and in which recording and output settings?",
-    claim: "Lesson 8 tells learners to check \"10-bit 4:2:2\" in the camera's menu before promising it, because Sony's spec page is silent.",
+    question: "What color sampling (4:2:2 or 4:2:0) does the Sony FX3 / FX3A send over HDMI, in HDMI-only mode and while recording to the card?",
+    claim:
+      "NARROWED 2026-10-22. Bit depth is now taught from Sony's help guide (HDMI output settings page): 10-bit in HDMI-only mode, and following the record setting while recording. Only the sampling stays hedged: lesson 8 tells learners to check 4:2:2 on the receiving monitor or converter before promising it.",
     stakes: "Low: a shader gets less color latitude than promised.",
-    needs: ["A Sony help-guide page or manual section stating the HDMI output format, with its locator"],
-    where: ["Sony ILME-FX3 help guide, HDMI output settings pages", "Sony FX3A help guide"],
+    needs: ["A Sony page, manual section or support answer stating the HDMI color sampling, with its locator"],
+    where: ["Sony support for the ILME-FX3 and ILME-FX3A", "An external recorder maker's FX3 compatibility page (Atomos), as a secondary check"],
   },
   {
     key: "megalodon-gimbal-modes",
-    title: "Gimbal modes for a sideline handheld",
+    title: "Which gimbal follow mode sideline operators use",
     course: "cinema-look-camera-rig",
-    lesson: "running-a-sideline",
-    quote: "The research behind this course does not describe gimbal modes, such as how follow and lock modes behave, so this lesson does not teach them.",
-    severity: "medium",
-    question: "How do the follow, lock and similar modes of current handheld gimbals (DJI RS 4 / RS 4 Pro and comparable) behave, and which do sports specialty operators use?",
-    claim: "Lesson 16 leaves gimbal modes out; the brief's outline (section 4) lists \"modes\" as a topic.",
-    stakes: "Medium: a gap in the gimbal section, not a wrong claim.",
-    needs: ["The maker's user-manual pages on modes, with locators", "An experienced operator's account, for the practice"],
-    where: ["DJI RS 4 Pro user manual (Tier B, link)", "The qualified reviewer named in the lesson's marker"],
+    lesson: "what-a-gimbal-does",
+    quote: "No network, operator or trade-press account found for this course says which mode sideline specialty operators actually use.",
+    severity: "low",
+    question: "Which follow mode, follow speed and deadband settings do sports specialty operators use on a handheld gimbal during live play?",
+    claim:
+      "NARROWED 2026-10-22. What each mode does (PF, PTF, FPV, Custom, Lock), re-centering, Sport Mode and the selfie-tap risk are now taught in lesson 13 from DJI's RS 4 / RS 4 Pro user manual (2024), pp. 25 to 34. Only operator practice stays open.",
+    stakes: "Low: a gap in practice, not a wrong claim.",
+    needs: ["An experienced operator's account or a trade-press source naming the modes used on a sideline"],
+    where: ["The qualified reviewer named in lesson 16's marker", "Sports Video Group coverage of RF handheld operators"],
   },
   {
     key: "megalodon-sideline-practice",
-    title: "Sideline working practice for a handheld specialty operator",
+    title: "How a utility spots a handheld specialty operator on a sideline",
     course: "cinema-look-camera-rig",
     lesson: "running-a-sideline",
-    quote: "It also has no source on sideline working practice for a handheld specialty operator: where to stand, how a spotter works with you, or a league's sideline rules.",
+    quote: "No league or network document this course found says how a utility spots a handheld operator.",
     severity: "high",
-    question: "What do league or network rules and experienced operators say about where a handheld specialty camera may work on a sideline, and how a utility spots the operator?",
-    claim: "Lesson 16 leaves sideline positioning, spotting and league sideline rules out and marks the lesson QR.",
+    question: "How does a utility or spotter work with a handheld RF gimbal operator on a live sideline (position, signals, when to pull the operator back), and where should the operator stand during live play?",
+    claim:
+      "NARROWED 2026-10-22. Lesson 16 now cites the rule books: NFL 2026 Rule 13-1-4 and 13-1-6, MLB 2026 Rules 4.07(a) and 8.01(e) (both VERIFIED), and the NCAA 2026 rule book's Rules 1-2-3-b and 1-2-4-d, read in a complete copy hosted by an officials' association (REPORTED for the host; quoted with that attribution). It quotes two accounts as accounts: BBC Studioworks' 2023 Steadicam risk assessment and a 2019 Ringer profile of a Fox handheld operator. No league, network or crew-safety source describes spotting, so the lesson keeps its QR marker.",
     stakes: "High: an operator walking backward on a live field can be hurt or hurt a player.",
-    needs: ["A league or network sideline-operations document, with locator", "An experienced operator's account"],
-    where: ["NFL Football Operations game-day pages", "Network camera-operator guidance", "The qualified reviewer named in the lesson's marker"],
+    needs: ["Spotting practice from an experienced sports operator or a network's written camera-safety guidance, with locator"],
+    where: ["The qualified reviewer named in lesson 16's marker", "Network camera-operator safety guidance", "The NCAA's own hosted copy of the 2026 rule book, to upgrade the NCAA lines to VERIFIED"],
   },
   // ── Arena transmission (CREW-05), filed 2026-10-22 ─────────────────────────────────────────────────
   {

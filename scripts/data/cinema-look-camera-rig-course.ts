@@ -1,9 +1,11 @@
 import type { AuthoredCourse } from "./authored-course";
 
-// "Megalodon: Cinema-look camera rig" (Careers & Media, also listed in Sports and Trade Skills).
-// Slug `cinema-look-camera-rig`. The slug leaves out "Megalodon" on purpose: the brief (section 7)
-// says to drop the nickname from the title if it proves to be a registered trademark for cameras or
-// broadcast services, and a slug is stable forever, so only the title would change.
+// "Cinema-look camera rig" (Careers & Media, also listed in Sports and Trade Skills).
+// Slug `cinema-look-camera-rig`. TITLE: BAM chose the safe name on 2026-10-21 (brief section 7), so the
+// title leaves out "Megalodon". The research check `megalodon-trademark` recorded the USPTO findings and
+// was closed by that decision (see src/lib/research-checks.ts). "Megalodon" appears in lesson 1 only, as
+// Fox Sports' industry nickname cited to Dachman (2021); elsewhere it survives only inside the titles of
+// cited works, which are quoted as printed.
 // Series `the-crew-behind-the-show` ("The Crew Behind the Show"), code CREW, position 04; CREW-01 is
 // `stage-and-broadcast-rigging`, CREW-02 `sound-craft`, CREW-03 `light-on-set`, and CREW-05 (arena
 // transmission) follows. `broadcasting-break-in` stays outside the series and links by lesson.
@@ -12,10 +14,14 @@ import type { AuthoredCourse } from "./authored-course";
 // Brief:    cloud-briefs/crew-04/00-approved-brief.md (approved by BAM 2026-10-21: public, CREW-04,
 //           held for a qualified reviewer; the business of renting gear out is CREW-06 and stays out).
 // Research: cloud-briefs/crew-04/research/ (fetched 2026-10-21). Only its [V] lines are asserted.
-//           Its [I] lines appear only with their reasoning shown in the lesson. Its [A] lines (the
-//           circle of confusion in the depth-of-field example) are stated as assumptions. Nothing in
+//           Its [I] lines appear only with their reasoning shown in the lesson. Nothing in
 //           00-corrections.md is taught, except as a named misconception followed by its correction
-//           (lessons 2, 4, 6, 11, 12, 13).
+//           (lessons 2, 4, 6, 11, 12, 13). 05-research-check-answers.md (read back 2026-10-22) sourced
+//           the circle of confusion (lesson 3), the shutter explanation and its flicker correction
+//           (lesson 6), the FX3's HDMI bit depth (lesson 8), gimbal modes (lesson 13), DJI's balancing
+//           routine (lesson 14) and the league rule books (lesson 16). Its REPORTED lines (the NCAA rule
+//           book read on an officials' association's host, two spotting accounts, one press report)
+//           are quoted only with that attribution, never as a general rule.
 //
 // BUILD STATUS: this file holds sections 1 to 4 of the brief's outline (the look, the camera body,
 // lenses, the gimbal). Sections 5 to 8 (wireless video, joining the show, troubleshooting, builds and
@@ -25,34 +31,37 @@ import type { AuthoredCourse } from "./authored-course";
 //
 // VISIBILITY: PUBLIC, and HELD ("Coming soon") until a NAMED qualified reviewer, for example a
 // broadcast engineer in charge or an RF and camera specialist, has read every lesson marked QR with
-// authority to change or cut it. The publishHoldReason in scripts/seed-courses.ts says so. Before
-// release, also confirm "Megalodon" is not a registered trademark for cameras or broadcast services
-// (brief section 7; research check `megalodon-trademark`).
+// authority to change or cut it. The publishHoldReason in scripts/seed-courses.ts says so.
 //
 // MARKED LESSONS. Each starts its body with a "> **Before release:**" line naming who must act.
-//   QR: 3 (worked depth-of-field figures rest on an assumed circle of confusion), 6 (the pack explains
-//   rolling and global shutters without a source), 7 (frame sync and converters are engineering
-//   judgment), 8 (external power and lithium batteries), 12 (dated prices), 14 (the balance routine
-//   is field practice with no maker's source), 16 (gimbal modes and sideline working practice are
-//   not in the pack at all).
-//   Unmarked: 1, 2, 4, 5, 9, 10, 11, 13, 15.
+//   QR: 7 (frame sync and converters are engineering judgment), 8 (external power and lithium
+//   batteries), 12 (dated prices), 14 (its two cable steps are field practice with no maker's source;
+//   the rest of the routine is DJI's), 16 (how a utility spots the operator and where to stand during
+//   live play; no fetched source describes either).
+//   Unmarked: 1, 2, 3, 4, 5, 6, 9, 10, 11, 13, 15. Lessons 3 and 6 lost their markers on 2026-10-22,
+//   when the answers file sourced what they had been holding for (Zeiss and Sony for the circle of
+//   confusion; RED for shutters).
 //
 // RIGHTS (the source-hosting rule in CLAUDE.md, decided per source): every source in sections 1 to 4
 // is Tier B, link only, never rehost: trade press (Sports Video Group, CP Communications, Awful
-// Announcing, Sportico via Yahoo Finance, American Cinematographer, Newsshooter) and maker and
-// retailer pages (Sony, DJI, Sigma, Blackmagic Design, AJA, Cyanview, Core SWX, Indipro, SmallHD,
-// Portkeys, Focus Camera, Lensrentals, AbelCine). No figures are embedded.
+// Announcing, Sportico via Yahoo Finance, American Cinematographer, Newsshooter, The Ringer) and maker
+// and retailer pages (Sony, DJI including its RS 4 manual, RED, Zeiss's Nasse paper, Sigma, Blackmagic
+// Design, AJA, Cyanview, Core SWX, Indipro, SmallHD, Portkeys, Focus Camera, Lensrentals, AbelCine),
+// the league rule books (NFL, NCAA, MLB) and the BBC Studioworks risk assessment. No figures are
+// embedded.
 //
 // PRICES are the ones read on October 21, 2026 (research file 04) and every lesson that gives one says
 // so. Lesson 12 is marked QR so the prices are re-read before release.
 //
 // STANDARDS: unmapped for now (BACKLOG entry in scripts/check-standards-coverage.ts).
 //
-// HEDGES WRITTEN INTO LESSONS (each has a check in src/lib/research-checks.ts):
-//  - L8: the bit depth and color sampling of the FX3's HDMI output (Sony's spec page does not say).
-//  - L16: gimbal modes, which no source in the pack describes.
-//  - L16: sideline working practice for a handheld specialty operator (where to stand, spotting),
-//    which no source in the pack describes.
+// HEDGES WRITTEN INTO LESSONS (each has a check in src/lib/research-checks.ts, narrowed 2026-10-22):
+//  - L8: the color sampling of the FX3's HDMI signal (`megalodon-fx3-hdmi-bit-depth`; bit depth is
+//    now taught from Sony's help guide).
+//  - L13: which follow mode sideline operators use (`megalodon-gimbal-modes`; what each mode does is
+//    now taught from DJI's manual).
+//  - L16: how a utility spots a handheld operator (`megalodon-sideline-practice`; the league rule
+//    books are now taught).
 //
 // House style, matching stage-and-broadcast-rigging-course.ts: `section` on every lesson; flush-left
 // single-line `:::reveal q ||| a`; recallContent from the second teaching lesson on, quizzing the
@@ -66,7 +75,7 @@ const RETRIEVED = "Retrieved October 21, 2026, from";
 
 // Trade press and history
 const KEELEY_2020 =
-  "Keeley, S. (2020, December 20). *Fox broke out 8K end zone cameras for the Washington-Seattle NFL game*. Awful Announcing. https://awfulannouncing.com/fox/fox-8k-handheld-end-zone-dlsr-cameras-washington-seattle.html";
+  "Keeley, S. (2020b, December 20). *Fox broke out 8K end zone cameras for the Washington-Seattle NFL game*. Awful Announcing. https://awfulannouncing.com/fox/fox-8k-handheld-end-zone-dlsr-cameras-washington-seattle.html";
 const COSTA_2020 =
   "Costa, B. (2020, December 22). *Fox Sports worked a live mirrorless camera into an NFL broadcast and it caught viewers' attention*. CP Communications. https://cpcomms.com/fox-sports-worked-a-live-mirrorless-camera-into-an-nfl-broadcast-and-it-caught-viewers-attention/";
 const DACHMAN_2021 =
@@ -99,6 +108,14 @@ const FOCUS_FX30 = `Focus Camera. (n.d.-b). *Sony FX30 Super 35 camera (body onl
 const FOCUS_FX6 = `Focus Camera. (n.d.-c). *Sony FX6 Cinema Line full-frame camera body* [Product page]. ${RETRIEVED} https://focuscamera.com/products/sony-ilmefx6v-camcorders-professional-camcorders`;
 const LENSRENTALS_FX3 = `Lensrentals. (n.d.-a). *Rent a Sony FX3 (body only)*. ${RETRIEVED} https://www.lensrentals.com/rent/sony-fx3-body-only`;
 const DJI_RONIN_4D = `DJI. (n.d.-e). *DJI Ronin 4D* [Store page]. ${RETRIEVED} https://store.dji.com/product/dji-ronin-4d`;
+const SONY_HDMI = `Sony. (n.d.-c). *ILME-FX3 help guide: HDMI output settings (movie)*. ${RETRIEVED} https://helpguide.sony.net/ilc/2210/v1/en/contents/TP1000885432.html`;
+const SONY_MOVIE_SETTINGS = `Sony. (n.d.-d). *ILME-FX3 help guide: Movie settings (movie)*. ${RETRIEVED} https://helpguide.sony.net/ilc/2210/v1/en/contents/TP1000868278.html`;
+const SONY_RAW_OUT = `Sony. (n.d.-f). *ILME-FX3 help guide: Outputting RAW movies to an external RAW recorder*. ${RETRIEVED} https://helpguide.sony.net/ilc/2210/v1/en/contents/TP1002078215.html`;
+const SONY_FX30_SPECS = `Sony. (n.d.-e). *ILME-FX30 help guide: Specifications*. ${RETRIEVED} https://helpguide.sony.net/ilc/2220/v1/en/contents/TP1000888850.html`;
+const RED_SHUTTERS = `RED Digital Cinema. (n.d.-a). *Global & rolling shutters* [RED 101 article]. ${RETRIEVED} https://www.reddigitalcinema.com/red-101/global-rolling-shutter`;
+const RED_KOMODO_X = `RED Digital Cinema. (n.d.-b). *KOMODO-X RF mount* [Product page]. ${RETRIEVED} https://www.reddigitalcinema.com/komodo-x_2`;
+const NASSE_2010 =
+  "Nasse, H. H. (2010). *Depth of field and bokeh*. Carl Zeiss Camera Lens Division. https://lenspire.zeiss.com/photo/app/uploads/2018/02/cln35_en_web_special_bokeh.pdf";
 
 // Signal, control and power
 const BLACKMAGIC = `Blackmagic Design. (n.d.). *Micro converters* [Product page]. ${RETRIEVED} https://www.blackmagicdesign.com/products/microconverters`;
@@ -127,14 +144,25 @@ const DJI_RS4_PRO_STORE = `DJI. (n.d.-d). *DJI RS 4 Pro* [Store page]. ${RETRIEV
 const PORTKEYS = `Portkeys. (n.d.). *Portkeys LH5P II 5.5-inch 2000nits* [Product page]. ${RETRIEVED} https://www.portkeys.com/lh5p-ii/`;
 const SMALLHD_INDIE_5 = `SmallHD. (n.d.-a). *Indie 5* [Product page]. ${RETRIEVED} https://smallhd.com/products/indie-5`;
 const SMALLHD_ULTRA_5 = `SmallHD. (n.d.-b). *Ultra 5* [Product page]. ${RETRIEVED} https://smallhd.com/products/ultra-5`;
+const DJI_RS4_MANUAL = `DJI. (2024). *DJI RS 4 / RS 4 Pro user manual* (Version 1.0). ${RETRIEVED} https://dl.djicdn.com/downloads/DJI_RS_4_Pro/UM/DJI_RS_4_User_Manual__v1.0__EN.pdf`;
+
+// Sideline rules and accounts (research file 05, section 4)
+const NFL_RULES_2026 = `National Football League. (2026). *2026 official playing rules of the National Football League*. ${RETRIEVED} https://static.www.nfl.com/image/upload/fl_attachment/league/tqivdkzt9mu6wdgsh1ku.pdf`;
+const NCAA_RULES_2026 = `National Collegiate Athletic Association. (2026). *2026 NCAA football rules and interpretations*. ${RETRIEVED} https://www.amarefs.org/wp-content/uploads/2026/07/RB-Combined-2026-1.pdf (copy hosted by an officials' association)`;
+const MLB_RULES_2026 = `Office of the Commissioner of Baseball. (2026). *Official baseball rules: 2026 edition*. ${RETRIEVED} https://mktg.mlbstatic.com/mlb/official-information/2026-official-baseball-rules.pdf`;
+const KEELEY_CART_2020 =
+  "Keeley, S. (2020a, September 27). *Raiders safety Johnathan Abram's scary collision with MNF television cart much worse than thought*. Awful Announcing. https://awfulannouncing.com/nfl/raiders-safety-johnathan-abrams-scary-collision-with-mnf-television-cart-much-worse-than-thought.html";
+const BBC_STUDIOWORKS_2023 = `BBC Studioworks. (2023). *Risk assessment for safe use of Steadicams* (Version 1.1). ${RETRIEVED} https://bbcstudioworks.com/wp-content/uploads/2023/08/Risk-Assessment-Steadicams.pdf`;
+const CURTIS_2019 =
+  "Curtis, B. (2019, December 5). *Meet the magician of NFL broadcasts*. The Ringer. https://www.theringer.com/2019/12/5/20996630/fox-broadcasts-don-cornelli-cameraman-joe-buck-troy-aikman";
 
 /** The marker every lesson needing a qualified reviewer opens with (authoring checklist, section 3). */
 const QR = (who: string) => `> **Before release:** needs a qualified reviewer (QR): ${who}.`;
 
 export const CINEMA_LOOK_CAMERA_RIG_COURSE: AuthoredCourse = {
-  title: "Megalodon: Cinema-look camera rig",
+  title: "Cinema-look camera rig",
   description:
-    "For camera operators and broadcast crew who want to build or run the handheld, shallow-focus camera that sports broadcasts nicknamed the Megalodon. The course starts with the look itself: what depth of field is, why a bigger sensor and a faster lens make it thinner, and how Fox Sports put the rig on air at an NFL game on December 20, 2020, before Marquee Sports Network, FOX Deportes, BaylorVision, CBS, ESPN and Netflix built their own versions. It then takes the rig apart one piece at a time: the camera body (sensor size, rolling and global shutters, HDMI and SDI outputs, timecode against genlock, recording, power and heat), the lens (aperture, focal length, holding focus live, zooms against primes, and what very fast glass costs, with every price dated), and the gimbal (what it cancels and what it cannot, payload and balance, runtime, and the job of running it on a sideline). Every fact is cited, and claims an earlier draft got wrong are taught as corrections. Lessons that need a qualified reviewer before release say so at the top. The fourth course in The Crew Behind the Show series.",
+    "For camera operators and broadcast crew who want to build or run the handheld, shallow-focus camera that live sports broadcasts use for close, film-style shots. The course starts with the look itself: what depth of field is, why a bigger sensor and a faster lens make it thinner, and how Fox Sports put the rig on air at an NFL game on December 20, 2020, before Marquee Sports Network, FOX Deportes, BaylorVision, CBS, ESPN and Netflix built their own versions. It then takes the rig apart one piece at a time: the camera body (sensor size, rolling and global shutters, HDMI and SDI outputs, timecode against genlock, recording, power and heat), the lens (aperture, focal length, holding focus live, zooms against primes, and what very fast glass costs, with every price dated), and the gimbal (what it cancels and what it cannot, payload and balance, runtime, and the job of running it on a sideline). Every fact is cited, and claims an earlier draft got wrong are taught as corrections. Lessons that need a qualified reviewer before release say so at the top. The fourth course in The Crew Behind the Show series.",
   lessons: [
     // ══════════════════════════════════════════════════════════════════════
     // SECTION 1: Why the look
@@ -162,7 +190,7 @@ The camera, lens, gimbal and transmitter come from CP Communications' own accoun
 
 **The look is standard; the parts are not.** Other crews built the same look from other parts. BaylorVision used a Sony a7R III, a Sigma prime lens and a Zhiyun Crane 3S gimbal (Costa, 2021). Turner used a Canon C500 with a 50mm lens (Kerschbaumer et al., 2021). Lesson 4 follows the look from network to network. The point for now: when someone says "Megalodon," ask which parts they mean.
 
-**How to read this course.** Every fact comes with its source at the end of the lesson. Every price carries the date it was read. An earlier draft about this rig got several claims wrong; this course teaches those only as corrections. A lesson that needs a qualified reviewer before release says so in a box at the top that begins "Before release". The course uses "Megalodon" as the industry nickname, not as a brand.
+**How to read this course.** Every fact comes with its source at the end of the lesson. Every price carries the date it was read. An earlier draft about this rig got several claims wrong; this course teaches those only as corrections. A lesson that needs a qualified reviewer before release says so in a box at the top that begins "Before release". The course uses "Megalodon" only as the industry nickname, here in lesson 1, and never as a brand. Its title calls the rig what it is: a cinema-look camera rig.
 
 :::reveal What did Fox's internal name "Megalodon" stand for? ||| "Mirrorless Gyrostabilized Lightweight DSLR Nonorig" (Dachman, 2021).
 
@@ -189,21 +217,21 @@ The camera, lens, gimbal and transmitter come from CP Communications' own accoun
           answer: "A Sony FE 24-70mm f/2.8 GM zoom.",
         },
       ],
-      body: `**The game.** Fox Sports first put the rig on air on December 20, 2020, when Seattle played Washington (Keeley, 2020). Fox used it for end-zone shots (Costa, 2020). One trade outlet labels that game "Week 16"; other reporting gives only the date. Learn the date. It is the fact every source agrees on.
+      body: `**The game.** Fox Sports first put the rig on air on December 20, 2020, when Seattle played Washington (Keeley, 2020b). Fox used it for end-zone shots (Costa, 2020). One trade outlet labels that game "Week 16"; other reporting gives only the date. Learn the date. It is the fact every source agrees on.
 
-**The operator.** Fox's first operator on the rig was Mike Smole (Keeley, 2020). Fox hired an extra camera operator for that first live game (Feldman, 2021). So the rig added a person to the crew.
+**The operator.** Fox's first operator on the rig was Mike Smole (Keeley, 2020b). Fox hired an extra camera operator for that first live game (Feldman, 2021). So the rig added a person to the crew.
 
 **Who built it.** Fox's technical director, Jarrod Ligrani, developed the rig with CP Communications starting in 2018 (Mrozek, 2021). CP built several packages for Fox to Fox's specifications and supplied the transmission (Mrozek, 2021; Costa, 2020). So the rig that reached air was a partnership: a network engineer's design, a vendor's build, and the vendor's radio link.
 
-**What it cost, and what that number covers.** One early headline called them "8K end zone cameras" (Keeley, 2020). Ligrani put it another way: "It's not an 8K camera, it's an $8k camera" (Feldman, 2021). Read that number with care. The transmission came from CP, a separate company, and the operator was an extra hire. Neither is a camera part. So $8,000 describes the camera rig, not the radio link, the crew or the engineering around it.
+**What it cost, and what that number covers.** One early headline called them "8K end zone cameras" (Keeley, 2020b). Ligrani put it another way: "It's not an 8K camera, it's an $8k camera" (Feldman, 2021). Read that number with care. The transmission came from CP, a separate company, and the operator was an extra hire. Neither is a camera part. So $8,000 describes the camera rig, not the radio link, the crew or the engineering around it.
 
 **A correction to carry.** An earlier draft about this rig said it "cost roughly $10,000." The sourced figure is Ligrani's $8k, and it covers the camera rig only.
 
 **It came back.** Fox brought the rig back for the 2021 NFL postseason (Dachman, 2021). CP Communications' account of the first game says it "caught viewers' attention" (Costa, 2020).
 
-**Why this history matters to an operator.** The first Megalodon was never one person's kit. A network engineer designed it, an RF vendor built it and ran its link, and the network hired a dedicated operator. On a big show today, the operator is usually one part of that kind of team. Sections 5 and 6 cover the rest of the team.
+**Why this history matters to an operator.** Fox's first rig was never one person's kit. A network engineer designed it, an RF vendor built it and ran its link, and the network hired a dedicated operator. On a big show today, the operator is usually one part of that kind of team. Sections 5 and 6 cover the rest of the team.
 
-:::reveal On what date did Fox first use the rig, and at which game? ||| December 20, 2020, Seattle at Washington (Keeley, 2020).
+:::reveal On what date did Fox first use the rig, and at which game? ||| December 20, 2020, Seattle at Washington (Keeley, 2020b).
 
 :::reveal What did Ligrani's "$8k camera" figure cover? ||| The camera rig only, not the radio link from CP, the extra operator or the engineering around it.
 
@@ -228,13 +256,11 @@ The camera, lens, gimbal and transmitter come from CP Communications' own accoun
           answer: "Mike Smole.",
         },
       ],
-      body: `${QR("a cinematographer or first camera assistant, to check the worked depth-of-field figures and the circle of confusion they assume")}
-
-**What depth of field is.** Depth of field is the zone, from near to far, where things look sharp. A deep zone keeps the player and the stands both clear. A shallow zone keeps the player sharp and blurs everything else. That blur is the Megalodon look.
+      body: `**What depth of field is.** Depth of field is the zone, from near to far, where things look sharp. A deep zone keeps the player and the stands both clear. A shallow zone keeps the player sharp and blurs everything else. That blur is the look this course is about.
 
 **How thin Fox works.** Fox's operators work with a depth of field under 2 feet, where "there isn't much margin for error" (Mrozek, 2021).
 
-**A worked example.** The numbers below come from the standard thin-lens depth-of-field formula. They rest on two assumptions, stated so you can check them: the subject stands 3 meters (about 10 feet) away, and the "circle of confusion" (the largest blur spot that still looks sharp) is 0.03 mm on a full-frame sensor and 0.02 mm on a Super 35 sensor.
+**A worked example.** The numbers below come from the standard thin-lens depth-of-field formula. They rest on two choices, stated so you can check them. First, the subject stands 3 meters (about 10 feet) away. Second, the "circle of confusion," the largest blur spot that still looks sharp, is 0.03 mm on full frame and 0.02 mm on Super 35. Zeiss calls 0.03 mm "the usual" value for the 24 x 36 mm format, and its tables use one fifteen-hundredth of the format's diagonal (Nasse, 2010). The FX30's sensor is 23.3 mm × 15.5 mm (Sony, n.d.-e); one fifteen-hundredth of its diagonal is about 0.02 mm, which is the same rule applied to the smaller sensor. It is still a choice: Zeiss notes that the circle of confusion belongs to "the sensor format," not the lens, and the sharpest work calls for a stricter value (Nasse, 2010).
 
 | Setup | Total depth in focus |
 |---|---|
@@ -246,7 +272,7 @@ The camera, lens, gimbal and transmitter come from CP Communications' own accoun
 
 **What the table shows.** Read down the first four rows: the lower the f-number, the thinner the zone. At f/4 the zone is almost 3 feet deep. At f/1.2 it is about 10 inches, so a player who leans forward can leave the zone and go soft.
 
-**Where sensor size comes in.** Sony's FX3 has a "35 mm full frame (35.6 mm × 23.8 mm)" sensor (Sony, n.d.-b). The FX30 is a Super 35 camera (Focus Camera, n.d.-b), and Super 35 is smaller. A smaller sensor needs a shorter lens to frame the same shot: 33mm instead of 50mm in the table. The shorter lens gives a deeper zone. Compare the two f/2.8 rows: 0.94 m against 0.60 m. That is about 1.5 times the depth of field.
+**Where sensor size comes in.** Sony's FX3 has a "35 mm full frame (35.6 mm × 23.8 mm)" sensor (Sony, n.d.-b). The FX30 is sold as a Super 35 camera (Focus Camera, n.d.-b), and its sensor is smaller. A smaller sensor needs a shorter lens to frame the same shot: 33mm instead of 50mm in the table, because the full-frame diagonal is about 1.5 times the FX30's. The shorter lens gives a deeper zone. Compare the two f/2.8 rows: 0.94 m against 0.60 m. That is about 1.5 times the depth of field. Zeiss states the rule: at the same aperture, "reducing the size of the sensor format increases the depth of field" (Nasse, 2010).
 
 **What that means for a build.** Full frame makes the look easier. Super 35 makes focus easier to hold. Neither is wrong; they trade one thing for the other. And an f/2.8 lens on full frame already lands at about 24 inches here, right at Fox's "under 2 feet." The faster f/1.2 lens is for chosen moments, such as introductions and celebrations, not for the whole game. Section 3 comes back to this.
 
@@ -256,7 +282,9 @@ The camera, lens, gimbal and transmitter come from CP Communications' own accoun
 
 ## Sources
 - ${MROZEK_2021} Locator: the passage on working with under 2 feet of depth of field.
+- ${NASSE_2010} Locator: pp. 7 to 8 (0.03 mm as "the usual" circle of confusion; D/1500 in the tables), p. 9 (the circle of confusion belongs to the format; smaller format, more depth of field).
 - ${SONY_SPECS} Locator: "Image sensor" entry.
+- ${SONY_FX30_SPECS} Locator: "Image sensor" entry (23.3 mm × 15.5 mm).
 - ${FOCUS_FX30} Locator: product title.`,
     },
     {
@@ -279,23 +307,23 @@ The camera, lens, gimbal and transmitter come from CP Communications' own accoun
 
 | Broadcaster | What they used | Source |
 |---|---|---|
-| FOX Deportes | The "Megalodon," on live Liga MX soccer matches, by March 2021 | CP Communications (2021) |
-| Marquee Sports Network | The "Megalodon" camera, first on a live MLB broadcast, May 2021 | Sports Video Group (2021) |
+| FOX Deportes | Fox's rig, on live Liga MX soccer matches, by March 2021 | CP Communications (2021) |
+| Marquee Sports Network | The same kind of camera, first on a live MLB broadcast, May 2021 | Sports Video Group (2021) |
 | BaylorVision | Its own version for the NCATA national championship, May 2021: Sony a7R III, a Sigma prime, a Zhiyun Crane 3S | Costa (2021) |
 | CBS | A MōVI with a Sony Venice, later an Alpha 1 | Kerschbaumer et al. (2021) |
 | ESPN | A Sony Alpha 1 and a Canon C500 | Kerschbaumer et al. (2021) |
 | Turner Sports | A Canon C500 with a 50mm lens | Kerschbaumer et al. (2021) |
-| Netflix | "three shallow-depth-of-field Megalodons with cinematic lenses" at its Home Run Derby, July 2026 | Hernández (2026) |
+| Netflix | Three shallow-depth-of-field handheld rigs with cinematic lenses at its Home Run Derby, July 2026 | Hernández (2026) |
 
 The Marquee report also notes that the same type of camera had been used at the Masters golf tournament (Sports Video Group, 2021). CBS used its own Alpha package for PGA Tour golf, not Fox's rig (Mrozek, 2021).
 
-**A correction to carry.** An earlier draft said Turner Sports used "the Megalodon" at the NBA All-Star Game. That mixes up the look with the rig. Turner used a shallow-depth-of-field Canon C500 with a 50mm lens (Kerschbaumer et al., 2021). Same look, different rig.
+**A correction to carry.** An earlier draft said Turner Sports used Fox's rig at the NBA All-Star Game. That mixes up the look with the rig. Turner used a shallow-depth-of-field Canon C500 with a 50mm lens (Kerschbaumer et al., 2021). Same look, different rig.
 
 **Another one.** The same draft said the rig "typically uses" a Sony a7R IV or a7S III. Look at the table: an a7R IV for Fox, an a7R III for BaylorVision, an Alpha 1 for CBS and ESPN, a Canon C500 for ESPN and Turner. No single camera is typical.
 
 **What BaylorVision teaches.** A college production built its own version. Its camera put out HDMI, and an HDMI-to-SDI converter in the operator's backpack turned that into SDI for its transmitter (Costa, 2021). Lesson 7 explains why that converter was needed. A smaller production can reach the same look; what changes is the work of joining it to the show.
 
-**The rule this lesson leaves you with.** The look is standard. The parts are not. When a show asks for a "Megalodon," the useful questions are about the parts: which camera, which lens, which gimbal, which link, and who supplies each one.
+**The rule this lesson leaves you with.** The look is standard. The parts are not. When a show asks for "that shallow-focus camera," the useful questions are about the parts: which camera, which lens, which gimbal, which link, and who supplies each one.
 
 :::reveal Which network was first to use the rig on a live MLB broadcast? ||| Marquee Sports Network, in May 2021 (Sports Video Group, 2021).
 
@@ -307,13 +335,13 @@ The Marquee report also notes that the same type of camera had been used at the 
 - ${SVG_2021} Locator: headline, and the paragraph mentioning the Masters.
 - ${COSTA_2021} Locator: the paragraphs listing the camera, lens, gimbal and the converter in the backpack.
 - ${MROZEK_2021} Locator: the passage on CBS's Alpha package for PGA Tour golf.
-- ${HERNANDEZ_2026} Locator: the paragraph on the shallow-depth-of-field Megalodons.`,
+- ${HERNANDEZ_2026} Locator: the paragraph on the three shallow-depth-of-field cameras.`,
     },
     {
       slug: "section-1-quiz",
       title: "Section 1 quiz · Why the look",
       section: "1 · Why the look",
-      body: "A graded check on what a Megalodon is, how Fox put it on air in 2020, how depth of field and sensor size make the look, and how other broadcasters built their own versions. Each answer links back to the lesson that teaches it.",
+      body: "A graded check on what the rig is, how Fox put it on air in 2020, how depth of field and sensor size make the look, and how other broadcasters built their own versions. Each answer links back to the lesson that teaches it.",
       quiz: {
         passingScore: 80,
         questionsPerAttempt: 5,
@@ -335,25 +363,25 @@ The Marquee report also notes that the same type of camera had been used at the 
           { prompt: "How does the course handle claims an earlier draft got wrong?", options: ["It leaves them in until a reviewer asks", "It teaches them only as corrections", "It teaches them as one view among many", "It hides them from every quiz question"], correctIndex: 1, explanation: "Lesson 1: an earlier draft got several claims wrong, and this course teaches those only as corrections.", sourceLessonSlug: "what-a-megalodon-is" },
           { prompt: "How does the course use the word \"Megalodon\"?", options: ["As a registered Sony product name", "As the name of a DJI gimbal line", "As the industry nickname, not a brand", "As a trademark of CP Communications"], correctIndex: 2, explanation: "The course uses \"Megalodon\" as the industry nickname, not as a brand. No company sells a product by that name.", sourceLessonSlug: "what-a-megalodon-is" },
           { prompt: "What does a box at the top of a lesson that begins \"Before release\" mean?", options: ["It is optional reading for new crew", "It holds the graded section quiz", "It was written by a Fox engineer", "It needs a qualified reviewer first"], correctIndex: 3, explanation: "Lesson 1: a lesson that needs a qualified reviewer before release says so in a box at the top that begins \"Before release\".", sourceLessonSlug: "what-a-megalodon-is" },
-          { prompt: "On what date did Fox first put the rig on air?", options: ["September 13, 2020", "February 7, 2021", "December 20, 2020", "January 16, 2021"], correctIndex: 2, explanation: "Fox first used the rig on December 20, 2020 (Keeley, 2020).", sourceLessonSlug: "the-2020-debut" },
-          { prompt: "At which NFL game did the rig make its debut?", options: ["Seattle at Washington", "Dallas at Philadelphia", "Green Bay at Chicago", "Seattle at San Francisco"], correctIndex: 0, explanation: "The debut was Seattle at Washington on December 20, 2020 (Keeley, 2020).", sourceLessonSlug: "the-2020-debut" },
+          { prompt: "On what date did Fox first put the rig on air?", options: ["September 13, 2020", "February 7, 2021", "December 20, 2020", "January 16, 2021"], correctIndex: 2, explanation: "Fox first used the rig on December 20, 2020 (Keeley, 2020b).", sourceLessonSlug: "the-2020-debut" },
+          { prompt: "At which NFL game did the rig make its debut?", options: ["Seattle at Washington", "Dallas at Philadelphia", "Green Bay at Chicago", "Seattle at San Francisco"], correctIndex: 0, explanation: "The debut was Seattle at Washington on December 20, 2020 (Keeley, 2020b).", sourceLessonSlug: "the-2020-debut" },
           { prompt: "Why does the course teach the debut's date rather than \"Week 16\"?", options: ["The NFL does not number its weeks", "Week 16 is the name of a different rig", "Only one source gives any date at all", "The date is what every source agrees on"], correctIndex: 3, explanation: "One trade outlet labels the game Week 16 while other reporting gives only the date, so the date is the fact every source shares.", sourceLessonSlug: "the-2020-debut" },
-          { prompt: "Who was Fox's first operator on the rig?", options: ["Mike Davies", "Mike Smole", "Jarrod Ligrani", "The game's director"], correctIndex: 1, explanation: "Keeley (2020) names Mike Smole as the operator. Jarrod Ligrani developed the rig, and Mike Davies is quoted on focus in lesson 10.", sourceLessonSlug: "the-2020-debut" },
+          { prompt: "Who was Fox's first operator on the rig?", options: ["Mike Davies", "Mike Smole", "Jarrod Ligrani", "The game's director"], correctIndex: 1, explanation: "Keeley (2020b) names Mike Smole as the operator. Jarrod Ligrani developed the rig, and Mike Davies is quoted on focus in lesson 10.", sourceLessonSlug: "the-2020-debut" },
           { prompt: "How did Fox staff the rig for its first live game?", options: ["It moved a hard-camera operator over", "It hired an extra camera operator", "It had the truck's shader run the rig", "It let a utility run it between plays"], correctIndex: 1, explanation: "Fox hired an extra camera operator for that first live game (Feldman, 2021), so the rig added a person to the crew.", sourceLessonSlug: "the-2020-debut" },
           { prompt: "Who developed Fox's rig?", options: ["Director of photography Mike Smole", "Fox's NFL play-by-play producer", "Netflix's live sports engineers", "Technical director Jarrod Ligrani"], correctIndex: 3, explanation: "Fox's technical director, Jarrod Ligrani, developed the rig with CP Communications (Mrozek, 2021).", sourceLessonSlug: "the-2020-debut" },
           { prompt: "In what year did Ligrani start developing the rig with CP Communications?", options: ["2018", "2020", "2015", "2021"], correctIndex: 0, explanation: "Mrozek (2021) says Ligrani developed the rig with CP starting in 2018, two years before its debut.", sourceLessonSlug: "the-2020-debut" },
           { prompt: "What did CP Communications do for Fox's rig?", options: ["Sold Fox the cameras and lenses at retail prices", "Wrote the NFL's sideline rules for the camera", "Built packages to Fox's specs and ran transmission", "Trained the operator on focus and the gimbal"], correctIndex: 2, explanation: "CP built several packages for Fox to Fox's specifications and supplied the transmission (Mrozek, 2021; Costa, 2020).", sourceLessonSlug: "the-2020-debut" },
-          { prompt: "What did one early headline call Fox's new cameras?", options: ["\"zero-delay cameras\"", "\"robot sideline cameras\"", "\"IMAX field cameras\"", "\"8K end zone cameras\""], correctIndex: 3, explanation: "Keeley's (2020) headline said Fox \"broke out 8K end zone cameras.\" Ligrani's own description, in lesson 2, corrects it.", sourceLessonSlug: "the-2020-debut" },
+          { prompt: "What did one early headline call Fox's new cameras?", options: ["\"zero-delay cameras\"", "\"robot sideline cameras\"", "\"IMAX field cameras\"", "\"8K end zone cameras\""], correctIndex: 3, explanation: "Keeley's (2020b) headline said Fox \"broke out 8K end zone cameras.\" Ligrani's own description, in lesson 2, corrects it.", sourceLessonSlug: "the-2020-debut" },
           { prompt: "How did Ligrani describe the camera, as quoted by Sportico?", options: ["\"It's the first 8K camera on any NFL field\"", "\"It cost us more than a broadcast camera\"", "\"It's not an 8K camera, it's an $8k camera\"", "\"It's a $100k camera in a small body\""], correctIndex: 2, explanation: "The quotation, which is also Sportico's headline: \"It's not an 8K camera, it's an $8k camera\" (Feldman, 2021).", sourceLessonSlug: "the-2020-debut" },
           { prompt: "What does Ligrani's $8,000 figure cover?", options: ["The camera, the RF link and the crew", "The camera rig, not the link or crew", "The rig plus a season of RF service", "Only the lens, without the camera"], correctIndex: 1, explanation: "The transmission came from CP, a separate company, and the operator was an extra hire; neither is a camera part, so $8,000 describes the camera rig only.", sourceLessonSlug: "the-2020-debut" },
           { prompt: "Why does the $8k figure leave out the radio link?", options: ["The link came from CP, a separate company", "The rig had no radio link in 2020", "The link was free under the NFL deal", "Radio links are counted as lenses"], correctIndex: 0, explanation: "CP Communications supplied the transmission, so the link was not part of the camera rig Ligrani priced.", sourceLessonSlug: "the-2020-debut" },
           { prompt: "Which figure does the course teach for the cost of Fox's camera rig?", options: ["About $8,000, per Ligrani", "About $10,000, per Fox", "About $25,000, per CP", "About $80,000, per SVG"], correctIndex: 0, explanation: "An earlier draft said \"roughly $10,000.\" The sourced figure is Ligrani's $8k, for the camera rig only.", sourceLessonSlug: "the-2020-debut" },
-          { prompt: "When did Fox bring the rig back after its debut?", options: ["For the 2022 Super Bowl only", "For the 2021 NFL postseason", "Never; it ran a single time", "For the 2021 MLB All-Star Game"], correctIndex: 1, explanation: "Dachman (2021) reports Fox brought back the \"Megalodon\" for the 2021 NFL postseason.", sourceLessonSlug: "the-2020-debut" },
+          { prompt: "When did Fox bring the rig back after its debut?", options: ["For the 2022 Super Bowl only", "For the 2021 NFL postseason", "Never; it ran a single time", "For the 2021 MLB All-Star Game"], correctIndex: 1, explanation: "Dachman (2021) reports Fox brought the rig back for the 2021 NFL postseason.", sourceLessonSlug: "the-2020-debut" },
           { prompt: "What does CP Communications' account of the first game say the rig did?", options: ["\"won an Emmy that season\"", "\"replaced the hard cameras\"", "\"caught viewers' attention\"", "\"failed in the second half\""], correctIndex: 2, explanation: "The CP account's headline says the camera \"caught viewers' attention\" (Costa, 2020).", sourceLessonSlug: "the-2020-debut" },
           { prompt: "What does the debut's history teach a camera operator?", options: ["One operator can supply the whole show", "The vendor ran the camera on its own", "The network bought it off the shelf", "The rig was a team effort, not one kit"], correctIndex: 3, explanation: "A network engineer designed it, an RF vendor built it and ran its link, and the network hired a dedicated operator.", sourceLessonSlug: "the-2020-debut" },
           { prompt: "What kind of shots did Fox use the rig for in its first game?", options: ["Press box shots", "Booth shots", "End-zone shots", "Pylon shots"], correctIndex: 2, explanation: "Fox used the rig for end-zone shots (Costa, 2020).", sourceLessonSlug: "the-2020-debut" },
           { prompt: "What is depth of field?", options: ["The zone, near to far, that looks sharp", "The distance from the lens to the sensor", "How far a wireless link can reach", "The brightness range a sensor can hold"], correctIndex: 0, explanation: "Depth of field is the zone, from near to far, where things look sharp.", sourceLessonSlug: "depth-of-field-and-sensor-size" },
-          { prompt: "What does a shallow depth of field do to the crowd behind a player?", options: ["Makes it as sharp as the player", "Makes it brighter than the player", "Removes it from the frame entirely", "Blurs it while the player stays sharp"], correctIndex: 3, explanation: "A shallow zone keeps the player sharp and blurs everything else. That blur is the Megalodon look.", sourceLessonSlug: "depth-of-field-and-sensor-size" },
+          { prompt: "What does a shallow depth of field do to the crowd behind a player?", options: ["Makes it as sharp as the player", "Makes it brighter than the player", "Removes it from the frame entirely", "Blurs it while the player stays sharp"], correctIndex: 3, explanation: "A shallow zone keeps the player sharp and blurs everything else. That blur is the look this course is about.", sourceLessonSlug: "depth-of-field-and-sensor-size" },
           { prompt: "How deep is the zone in focus that Fox's operators work with?", options: ["Under 2 inches", "Under 2 feet", "About 10 feet", "About 6 feet"], correctIndex: 1, explanation: "Fox's operators work with a depth of field under 2 feet, where \"there isn't much margin for error\" (Mrozek, 2021).", sourceLessonSlug: "depth-of-field-and-sensor-size" },
           { prompt: "In lesson 3's worked example, how far from the camera is the subject?", options: ["1 m (about 3 ft)", "3 m (about 10 ft)", "10 m (about 33 ft)", "30 m (about 98 ft)"], correctIndex: 1, explanation: "The example assumes a subject 3 meters, about 10 feet, away.", sourceLessonSlug: "depth-of-field-and-sensor-size" },
           { prompt: "What is the \"circle of confusion\" in the worked example?", options: ["The round shape of the lens's front glass", "The patch of frame the autofocus box covers", "The ring that adjusts focus on the lens", "The largest blur spot that still looks sharp"], correctIndex: 3, explanation: "The example defines it as the largest blur spot that still looks sharp, and states its assumed size.", sourceLessonSlug: "depth-of-field-and-sensor-size" },
@@ -370,6 +398,9 @@ The Marquee report also notes that the same type of camera had been used at the 
           { prompt: "What does lesson 3 say about an f/2.8 lens on full frame at 3 m?", options: ["It is too deep to give the look at all", "It cannot hold focus on any player", "It already lands near Fox's under 2 feet", "It only works on a Super 35 sensor"], correctIndex: 2, explanation: "About 24 inches deep, right at Fox's \"under 2 feet,\" so an f/2.8 lens on full frame already gives the look.", sourceLessonSlug: "depth-of-field-and-sensor-size" },
           { prompt: "What is the f/1.2 lens for, according to lesson 3?", options: ["Chosen moments, such as celebrations", "Every play of the game, start to end", "Night games only, when light is low", "Wide shots of the whole stadium"], correctIndex: 0, explanation: "At f/1.2 a player who leans forward can go soft, so the faster lens is for chosen moments like introductions and celebrations.", sourceLessonSlug: "depth-of-field-and-sensor-size" },
           { prompt: "What do you trade when choosing full frame against Super 35?", options: ["Lower cost against a longer battery", "Wireless range against latency", "Weight against a global shutter", "An easier look against easier focus"], correctIndex: 3, explanation: "Full frame makes the look easier; Super 35 makes focus easier to hold. They trade one for the other.", sourceLessonSlug: "depth-of-field-and-sensor-size" },
+          { prompt: "What does Zeiss call 0.03 mm for the 24 x 36 mm format?", options: ["The widest aperture", "The usual circle of confusion", "The sensor's pixel size", "The lens's focus throw"], correctIndex: 1, explanation: "Zeiss's paper calls 0.03 mm \"the usual\" circle of confusion for 35 mm format, and its tables use one fifteen-hundredth of the diagonal (Nasse, 2010, pp. 7 to 8).", sourceLessonSlug: "depth-of-field-and-sensor-size" },
+          { prompt: "Why does the worked example use 0.02 mm for the FX30?", options: ["Zeiss's rule applied to its smaller sensor", "Sony prints 0.02 mm on the FX30's lens", "Super 35 lenses are always half as sharp", "The FX30 records at a lower bit depth"], correctIndex: 0, explanation: "One fifteen-hundredth of the FX30's 23.3 mm × 15.5 mm diagonal is about 0.02 mm, the same rule Zeiss uses for full frame (Nasse, 2010; Sony, n.d.-e).", sourceLessonSlug: "depth-of-field-and-sensor-size" },
+          { prompt: "According to Zeiss, what does the circle of confusion belong to?", options: ["The lens design", "The sensor format", "The focus motor", "The frame rate"], correctIndex: 1, explanation: "\"The acceptable diameter of the circle of confusion is therefore not a characteristic of the lens but rather the sensor format\" (Nasse, 2010, p. 9).", sourceLessonSlug: "depth-of-field-and-sensor-size" },
           { prompt: "Which network was first to use the rig on a live MLB broadcast?", options: ["ESPN's baseball crew", "Marquee Sports Network", "Netflix's MLB crew", "Turner Sports' MLB crew"], correctIndex: 1, explanation: "Marquee Sports Network was first on a live MLB broadcast (Sports Video Group, 2021).", sourceLessonSlug: "the-look-spreads" },
           { prompt: "When did Marquee Sports Network first use the rig on an MLB broadcast?", options: ["December 2020", "May 2021", "July 2026", "March 2021"], correctIndex: 1, explanation: "Sports Video Group reported it on May 7, 2021. December 2020 was Fox's debut, March 2021 FOX Deportes, and July 2026 Netflix.", sourceLessonSlug: "the-look-spreads" },
           { prompt: "Where did FOX Deportes use the rig?", options: ["Live MLB home games", "Live college football", "Live NBA playoff games", "Live Liga MX matches"], correctIndex: 3, explanation: "FOX Deportes debuted it on live Liga MX matches (CP Communications, 2021).", sourceLessonSlug: "the-look-spreads" },
@@ -381,12 +412,12 @@ The Marquee report also notes that the same type of camera had been used at the 
           { prompt: "Did CBS use Fox's rig for PGA Tour golf?", options: ["No; it used its own Alpha package", "Yes; Fox lent CBS its rig for golf", "Yes; CP built CBS a copy of Fox's", "No; it used a fixed tower camera"], correctIndex: 0, explanation: "Mrozek (2021): CBS used its own Alpha package for PGA Tour golf, not Fox's rig.", sourceLessonSlug: "the-look-spreads" },
           { prompt: "Which cameras did ESPN use for the look?", options: ["A Sony Alpha 1 and a Canon C500", "A Sony a7R IV and a RED Komodo-X", "A Sony FX3 and a Sony FX6 body", "A Canon C300 and a Sony Venice"], correctIndex: 0, explanation: "Kerschbaumer et al. (2021): ESPN used a Sony Alpha 1 and a Canon C500.", sourceLessonSlug: "the-look-spreads" },
           { prompt: "How did Turner Sports get its shallow-focus look?", options: ["Fox's own rig, lent for the game", "A Canon C500 with a 50mm lens", "A Sony a7R IV with a 24-70mm", "A RED Komodo-X with a 35mm lens"], correctIndex: 1, explanation: "Turner used a Canon C500 with a 50mm lens (Kerschbaumer et al., 2021), not Fox's rig.", sourceLessonSlug: "the-look-spreads" },
-          { prompt: "What is wrong with the claim that Turner used \"the Megalodon\" at the NBA All-Star Game?", options: ["Turner never used a shallow look", "The game aired on Fox, not Turner", "It mixes up the look with Fox's rig", "Turner used it at the Super Bowl"], correctIndex: 2, explanation: "Turner got the same look from its own Canon C500 and 50mm lens. Same look, different rig.", sourceLessonSlug: "the-look-spreads" },
+          { prompt: "What is wrong with the claim that Turner used Fox's rig at the NBA All-Star Game?", options: ["Turner never used a shallow look", "The game aired on Fox, not Turner", "It mixes up the look with Fox's rig", "Turner used it at the Super Bowl"], correctIndex: 2, explanation: "Turner got the same look from its own Canon C500 and 50mm lens. Same look, different rig.", sourceLessonSlug: "the-look-spreads" },
           { prompt: "According to lesson 4, which camera is typical of these rigs?", options: ["The Sony a7S III, on most rigs", "The Sony a7R IV, on every rig", "The Canon C500, on every rig", "None; the bodies differ by network"], correctIndex: 3, explanation: "The table shows an a7R IV, an a7R III, an Alpha 1 and a Canon C500 across networks, so no single camera is typical.", sourceLessonSlug: "the-look-spreads" },
-          { prompt: "How many shallow-depth-of-field Megalodons did Netflix use at its 2026 Home Run Derby?", options: ["One", "Six", "Three", "Ten"], correctIndex: 2, explanation: "Hernández (2026): \"three shallow-depth-of-field Megalodons with cinematic lenses.\"", sourceLessonSlug: "the-look-spreads" },
+          { prompt: "How many shallow-depth-of-field handheld rigs did Netflix use at its 2026 Home Run Derby?", options: ["One", "Six", "Three", "Ten"], correctIndex: 2, explanation: "Hernández (2026) reports three shallow-depth-of-field rigs with cinematic lenses at the July 2026 Home Run Derby.", sourceLessonSlug: "the-look-spreads" },
           { prompt: "What does the Marquee report say about the Masters golf tournament?", options: ["The same type of camera had been used there", "Fox's own rig made its debut at the Masters", "The camera was banned from the Masters", "Marquee shot the Masters with the rig"], correctIndex: 0, explanation: "The report notes that the same type of camera had been used at the Masters (Sports Video Group, 2021).", sourceLessonSlug: "the-look-spreads" },
           { prompt: "What did Sports Video Group's June 2021 feature say about the shallow-focus look?", options: ["That it was a passing fad", "That it cost too much to last", "That it would not work at night", "That it was \"here to stay\""], correctIndex: 3, explanation: "The feature's headline calls it \"the shallow-depth-of-field movement\" and says it is \"here to stay\" (Kerschbaumer et al., 2021).", sourceLessonSlug: "the-look-spreads" },
-          { prompt: "When a show asks for a \"Megalodon,\" which questions does lesson 4 call useful?", options: ["Which network first named the rig", "Which parts, and who supplies each", "Which week of the season it is", "Which fans will be in the shot"], correctIndex: 1, explanation: "The look is standard and the parts are not, so the useful questions are which camera, lens, gimbal and link, and who supplies each.", sourceLessonSlug: "the-look-spreads" },
+          { prompt: "When a show asks for the shallow-focus look, which questions does lesson 4 call useful?", options: ["Which network first named the rig", "Which parts, and who supplies each", "Which week of the season it is", "Which fans will be in the shot"], correctIndex: 1, explanation: "The look is standard and the parts are not, so the useful questions are which camera, lens, gimbal and link, and who supplies each.", sourceLessonSlug: "the-look-spreads" },
         ],
       },
     },
@@ -462,19 +493,19 @@ The Marquee report also notes that the same type of camera had been used at the 
           answer: "The FX6, with \"12G/6G/3G SDI output and a full-sized HDMI output\" (Allard, 2020).",
         },
       ],
-      body: `${QR("a camera engineer or cinematographer, to confirm the explanation of rolling and global shutters, which the course's research states without a source")}
+      body: `**Two ways to read a sensor.** A camera sensor has to read out millions of pixels for every frame. RED, a cinema camera maker, explains the usual way: "With most digital cameras, the shutter is controlled by the sensor itself. Photosites are read row by row in rapid succession" (RED Digital Cinema, n.d.-a). That is a **rolling shutter**. A **global shutter**, in RED's words, "controls incoming light to all photosites simultaneously."
 
-**Two ways to read a sensor.** A camera sensor has to read out millions of pixels for every frame. A **rolling shutter** reads the sensor one line at a time, top to bottom. A **global shutter** exposes every pixel at the same moment.
+**Why it matters.** With a rolling shutter, the top of the frame is read a moment before the bottom. RED lists what that does: "fast-moving subjects can appear angled or sheared, and rapid camera movements are more likely to appear as a wobble." It adds that the effects are "most pronounced with whip pans, fast subjects, high shutter speeds or run and gun type shots," and that "Strobes can also partially illuminate the frame" (RED Digital Cinema, n.d.-a). Crews call the wobble "jello." A global shutter "effectively addresses all of the potential rolling shutter artifacts," because every pixel is taken at once.
 
-**Why it matters.** With a rolling shutter, the top of the frame is read a moment before the bottom. If the camera whips sideways, or a ball spins fast, the picture can lean or wobble while it is read. Crews call the wobble "jello." A global shutter does not lean, because every pixel is taken at once.
-
-**Which bodies have which.** The RED Komodo-X has a "6K S35 Global Shutter sensor" (AbelCine, n.d.). Sony's specifications describe the FX3's sensor as CMOS and make no global-shutter claim (Sony, n.d.-b), and the FX6 is described the same way (Allard, 2020). A maker that built a global shutter would say so, so this course treats the FX3 and FX6 as rolling-shutter cameras.
+**Which bodies have which.** The RED Komodo-X has a "6K S35 Global Shutter sensor" (AbelCine, n.d.). Sony's specifications describe the FX3's sensor as CMOS and make no global-shutter claim (Sony, n.d.-b), and the FX6 is described the same way (Allard, 2020). Most digital sensors read row by row, and a maker that built a global shutter would say so, so this course treats the FX3 and FX6 as rolling-shutter cameras. That is a reasoned inference, not a statement from Sony.
 
 **A correction to carry.** An earlier draft grouped the Sony FX6 with the RED Komodo-X as "global shutter / true cine body" cameras. That pairing is wrong. The Komodo-X has a global shutter; nothing in the FX6's description claims one. The same draft listed a DJI Ronin 4D on top of a separate camera body. A Ronin 4D is a camera and gimbal in one unit (DJI, n.d.-e), so it replaces both, and it cannot ride on another gimbal.
 
-**When skew shows up on a sideline.** A gimbal following players mostly moves smoothly. The rolling-shutter lean appears mainly when the operator whips the camera fast, on a spinning ball, or against an LED board. So on most sideline shots, the shutter type is not the problem that limits you. Focus is (section 3).
+**When skew shows up on a sideline.** A gimbal following players mostly moves smoothly. The rolling-shutter lean appears mainly when the operator whips the camera fast, on a fast subject such as a spinning ball, or under strobes. So on most sideline shots, the shutter type is not the problem that limits you. Focus is (section 3).
 
-**What a global shutter buys.** Lesson 7 shows one more thing the Komodo-X adds: a genlock input. But for the reason above, a global shutter mostly solves a problem a sideline operator will rarely meet, so it is seldom the first thing to pay for.
+**Flicker is a different problem.** It is easy to blame the shutter when an LED board or stadium light flickers on camera. RED's list names strobes, not LED boards, and it treats flicker under artificial light separately: "A common misconception is that a global shutter can fix flickering in artificial light, but neither shutter type fully addresses this problem." RED's two ways around it are continuous lighting, or "a safe shutter speed and frame rate combination" (RED Digital Cinema, n.d.-a). So a global shutter does not cure flicker. A shutter speed and frame rate that suit the lights do.
+
+**What a global shutter costs.** RED itself says "Some global shutter designs can also make sensor photosites less efficient, which can in turn compromise image noise" (RED Digital Cinema, n.d.-a). It costs payload too. RED lists the Komodo-X body at 2.62 lb (about 1.19 kg) without body cap and card (RED Digital Cinema, n.d.-b), against about 715 g for the FX3 with battery and card (Sony, n.d.-b). Lesson 7 shows one more thing the Komodo-X adds: a genlock input. But a global shutter mostly solves a problem a sideline operator will rarely meet, so it is seldom the first thing to pay for.
 
 **What to do with a rolling shutter.** Watch for the lean on fast moves in rehearsal. If you see it, slow the move. The camera cannot be changed during a game, but the move can.
 
@@ -483,8 +514,10 @@ The Marquee report also notes that the same type of camera had been used at the 
 :::reveal Which body in this lesson has a global shutter sensor? ||| The RED Komodo-X: a "6K S35 Global Shutter sensor" (AbelCine, n.d.).
 
 ## Sources
+- ${RED_SHUTTERS} Locator: the sections on rolling shutters (row-by-row readout, the artifacts list, strobes), on global shutters, on the noise trade-off, and the paragraph on flicker in artificial light.
+- ${RED_KOMODO_X} Locator: specifications, weight.
 - ${ABELCINE} Locator: product title and the sensor line in the specifications.
-- ${SONY_SPECS} Locator: "Image sensor" entry.
+- ${SONY_SPECS} Locator: "Image sensor" and "Mass" entries.
 - ${ALLARD_2020} Locator: the sensor description in the specifications section.
 - ${DJI_RONIN_4D} Locator: product title and description.`,
     },
@@ -560,7 +593,14 @@ The FX3 can take external timecode through Sony's VMC-BNCM1 adapter on its Multi
 
 **What the FX3 records.** Sony lists XAVC HS (H.265) and XAVC S (H.264) video with LPCM audio. With the XLR handle attached, it records 4 channels of LPCM audio (Sony, n.d.-b).
 
-**What Sony's page does not say.** Sony's specifications page does not state the bit depth or the color sampling of the HDMI output. A shader in the truck can push color further on a richer signal. So before you promise a show "10-bit 4:2:2," check it in the camera's menu with the show's settings.
+**What goes out over HDMI.** Bit depth is how many steps of brightness the signal carries. Sony's help guide for the FX3 says the HDMI bit depth depends on whether the camera is also recording to its card (Sony, n.d.-c):
+
+- **Recording at the same time:** "The color depth for the output movie is based on [Record Setting]." The record settings include both 8-bit and 10-bit choices; in XAVC S 4K at 59.94p, for example, there are "200M 4:2:2 10bit" and "150M 4:2:0 8bit" (Sony, n.d.-d). So an 8-bit record setting means an 8-bit feed.
+- **HDMI only, no card recording:** every 4K output option is 10-bit, from "[59.94p 10bit]" to "[24.00p 10bit]" (Sony, n.d.-c).
+
+**Two traps on the same page.** With Log shooting on, "the HDMI output resolution becomes 1080" unless the camera is in HDMI-only mode or RAW output (Sony, n.d.-c). And a RAW output exists, but "RAW movies cannot be recorded on the memory card," and the gamma is locked to S-Log3; it is meant for an external RAW recorder, not a live feed (Sony, n.d.-c, n.d.-f).
+
+**What Sony's help guide does not say.** Sony's help guide does not state the color sampling of the HDMI signal (4:2:2 or 4:2:0). A shader in the truck can push color further on a richer signal, so check the sampling on the receiving monitor or converter before you promise a show 4:2:2.
 
 **How much power.** Sony lists the FX3 at about 7.3 W while shooting movies (Sony, n.d.-b). The FX6 draws about 18.0 W (Allard, 2020). A bigger body draws more, which means bigger or more batteries on the rig.
 
@@ -578,6 +618,9 @@ The FX3 can take external timecode through Sony's VMC-BNCM1 adapter on its Multi
 
 ## Sources
 - ${SONY_SPECS} Locator: "Recording format", "Audio recording format", "Power consumption", "Operating temperature", "Rated voltage" and "Recommended USB adaptor" entries.
+- ${SONY_HDMI} Locator: [Rec. Media dur HDMI Output], [4K Output Set.(HDMI Only)], [RAW Output] and the note on Log shooting and 1080 output.
+- ${SONY_MOVIE_SETTINGS} Locator: [Record Setting] list for XAVC S 4K.
+- ${SONY_RAW_OUT} Locator: the notes on recording to the card and on S-Log3.
 - ${ALLARD_2020} Locator: the specifications section, power consumption.
 - ${MROZEK_2021} Locator: the passages on the battery backpack and quoting Ligrani on moving the batteries.
 - ${COSTA_2021} Locator: the paragraph on the battery and RF units running hot.
@@ -622,7 +665,7 @@ The FX3 can take external timecode through Sony's VMC-BNCM1 adapter on its Multi
           { prompt: "What was wrong with grouping the Sony FX6 with the Komodo-X as global-shutter bodies?", options: ["Only the FX6 has a global shutter", "Both cameras lack any SDI output", "Only the Komodo-X has a global shutter", "The FX6 is the one with genlock"], correctIndex: 2, explanation: "The Komodo-X has a global shutter; nothing in the FX6's description claims one. Both have SDI, and only the Komodo-X lists genlock.", sourceLessonSlug: "rolling-and-global-shutter" },
           { prompt: "What is a DJI Ronin 4D?", options: ["A gimbal for cameras up to 4 kg", "A camera and gimbal in one unit", "A wireless link with 4D audio", "A lens made for cinema gimbals"], correctIndex: 1, explanation: "A Ronin 4D is a camera and gimbal in one unit (DJI, n.d.-e).", sourceLessonSlug: "rolling-and-global-shutter" },
           { prompt: "Why can a DJI Ronin 4D not ride on a separate gimbal?", options: ["It replaces both body and gimbal", "It only works on a tripod head", "It needs a cable to the truck", "Its shutter cannot be stabilized"], correctIndex: 0, explanation: "Because it is a camera and gimbal in one, it replaces both and cannot sit on another gimbal.", sourceLessonSlug: "rolling-and-global-shutter" },
-          { prompt: "When does rolling-shutter lean mainly show up on a sideline?", options: ["On fast whips and spinning balls", "On every shot, even slow follows", "Only at night, under the lights", "Only while the camera records"], correctIndex: 0, explanation: "A gimbal following players mostly moves smoothly; the lean appears mainly on fast whips, spinning balls and LED boards.", sourceLessonSlug: "rolling-and-global-shutter" },
+          { prompt: "When does rolling-shutter lean mainly show up on a sideline?", options: ["On fast whips and spinning balls", "On every shot, even slow follows", "Only at night, under the lights", "Only while the camera records"], correctIndex: 0, explanation: "A gimbal following players mostly moves smoothly; the lean appears mainly on fast whips, fast subjects such as a spinning ball, and under strobes (RED Digital Cinema, n.d.-a).", sourceLessonSlug: "rolling-and-global-shutter" },
           { prompt: "According to lesson 6, what usually limits a sideline operator more than shutter type?", options: ["Audio", "Focus", "Tally", "Timecode"], correctIndex: 1, explanation: "On most sideline shots, the shutter type is not the problem that limits you. Focus is (section 3).", sourceLessonSlug: "rolling-and-global-shutter" },
           { prompt: "Besides a global shutter, what does the Komodo-X add that lesson 7 describes?", options: ["An XLR audio input", "A fiber input", "A genlock input", "A tally input"], correctIndex: 2, explanation: "Lesson 6 points ahead to lesson 7: the Komodo-X lists a \"Tri-Level Genlock Input\" (AbelCine, n.d.).", sourceLessonSlug: "rolling-and-global-shutter" },
           { prompt: "What does lesson 6 advise if you see rolling-shutter lean in rehearsal?", options: ["Swap to a new body", "Raise the f-number", "Turn on autofocus", "Slow down the move"], correctIndex: 3, explanation: "The camera cannot be changed during a game, but the move can. Slow it.", sourceLessonSlug: "rolling-and-global-shutter" },
@@ -630,6 +673,15 @@ The FX3 can take external timecode through Sony's VMC-BNCM1 adapter on its Multi
           { prompt: "What does a global shutter avoid?", options: ["Lean on fast movement", "Soft focus on players", "Heat in direct sun", "Delay in the wireless link"], correctIndex: 0, explanation: "Every pixel is exposed at once, so the picture does not lean on fast moves. It does nothing for focus, heat or link delay.", sourceLessonSlug: "rolling-and-global-shutter" },
           { prompt: "Which pair does the course treat as rolling-shutter cameras?", options: ["RED Komodo-X and FX6", "Komodo-X and Ronin 4D", "Sony FX3 and Komodo-X", "Sony FX3 and Sony FX6"], correctIndex: 3, explanation: "Both Sony bodies are described as CMOS with no global-shutter claim. The Komodo-X has a global shutter.", sourceLessonSlug: "rolling-and-global-shutter" },
           { prompt: "With a rolling shutter, when is the top of the frame read?", options: ["After the bottom", "Before the bottom", "At the same moment", "Only on odd frames"], correctIndex: 1, explanation: "A rolling shutter reads top to bottom, so the top of the frame is read a moment before the bottom.", sourceLessonSlug: "rolling-and-global-shutter" },
+          { prompt: "How does RED say most digital camera sensors are read?", options: ["Row by row in rapid succession", "All photosites at the same instant", "Column by column, right to left", "Only the center, then the edges"], correctIndex: 0, explanation: "RED: \"Photosites are read row by row in rapid succession\" (RED Digital Cinema, n.d.-a).", sourceLessonSlug: "rolling-and-global-shutter" },
+          { prompt: "Which shots does RED say show rolling-shutter effects most?", options: ["Locked-off wide shots of a calm stage", "Whip pans, fast subjects, run and gun", "Slow tilts on a tripod in studio light", "Static interviews lit by soft daylight"], correctIndex: 1, explanation: "RED: effects are \"most pronounced with whip pans, fast subjects, high shutter speeds or run and gun type shots\" (RED Digital Cinema, n.d.-a).", sourceLessonSlug: "rolling-and-global-shutter" },
+          { prompt: "Which light source does RED say can partly light a rolling-shutter frame?", options: ["Strobes", "Daylight", "Tungsten", "Moonlight"], correctIndex: 0, explanation: "RED: \"Strobes can also partially illuminate the frame\" (RED Digital Cinema, n.d.-a).", sourceLessonSlug: "rolling-and-global-shutter" },
+          { prompt: "Does a global shutter cure flicker under artificial light?", options: ["Yes, it removes flicker of every kind", "Only under LED boards, not under strobes", "No, neither shutter type fully fixes it", "Only when the camera records RAW internally"], correctIndex: 2, explanation: "RED calls that \"a common misconception\": \"neither shutter type fully addresses this problem\" (RED Digital Cinema, n.d.-a).", sourceLessonSlug: "rolling-and-global-shutter" },
+          { prompt: "What are RED's two ways around flicker from artificial light?", options: ["A global shutter or a faster lens", "Continuous light or a safe shutter speed", "A higher ISO or a lower bit depth", "A frame sync or a genlock input"], correctIndex: 1, explanation: "RED: use \"continuous lighting, or a safe shutter speed and frame rate combination\" (RED Digital Cinema, n.d.-a).", sourceLessonSlug: "rolling-and-global-shutter" },
+          { prompt: "What image cost does RED say some global shutter designs carry?", options: ["Lower resolution", "Shorter battery life", "More image noise", "Slower autofocus"], correctIndex: 2, explanation: "RED: some designs \"make sensor photosites less efficient, which can in turn compromise image noise\" (RED Digital Cinema, n.d.-a).", sourceLessonSlug: "rolling-and-global-shutter" },
+          { prompt: "How does the Komodo-X body's weight compare with the FX3's, per lesson 6?", options: ["About 1.19 kg against about 715 g", "About 500 g against about 890 g", "About 3 kg against about 1.6 kg", "The two weigh almost exactly the same"], correctIndex: 0, explanation: "RED lists 2.62 lb (about 1.19 kg) without body cap and card (RED Digital Cinema, n.d.-b); Sony lists about 715 g for the FX3 with battery and card (Sony, n.d.-b).", sourceLessonSlug: "rolling-and-global-shutter" },
+          { prompt: "On what basis does the course call the FX3 a rolling-shutter camera?", options: ["Sony's page says so in plain words", "A reasoned inference from the specs", "RED's article names the FX3 directly", "A test the course ran on a sideline"], correctIndex: 1, explanation: "Sony makes no global-shutter claim and RED says most digital sensors read row by row, so treating the FX3 as rolling shutter is an inference, and the lesson says so.", sourceLessonSlug: "rolling-and-global-shutter" },
+          { prompt: "What does a global shutter do, in RED's words?", options: ["Reads the rows from top to bottom", "Controls light to all photosites at once", "Blocks light with a spinning disk", "Reads only the center of the sensor"], correctIndex: 1, explanation: "\"A global shutter controls incoming light to all photosites simultaneously\" (RED Digital Cinema, n.d.-a).", sourceLessonSlug: "rolling-and-global-shutter" },
           { prompt: "What is the Sony FX3's video output?", options: ["12G-SDI and full HDMI", "An HDMI type A jack only", "3G-SDI only, on BNC", "HDMI and a fiber port"], correctIndex: 1, explanation: "Sony lists only an \"HDMI type A jack\" (Sony, n.d.-b).", sourceLessonSlug: "outputs-timecode-and-genlock" },
           { prompt: "What video outputs does the Sony FX6 have?", options: ["An HDMI type A jack and nothing else", "Fiber out and a mini HDMI jack", "3G-SDI only, with no HDMI at all", "12G/6G/3G SDI and full-size HDMI"], correctIndex: 3, explanation: "Allard (2020): \"12G/6G/3G SDI output and a full-sized HDMI output,\" plus BNC timecode.", sourceLessonSlug: "outputs-timecode-and-genlock" },
           { prompt: "What video output does the RED Komodo-X list?", options: ["12G-SDI up to 4096 × 2160 4:2:2 60p", "HDMI only, up to 1920 × 1080 30p", "3G-SDI only, up to 1280 × 720 60p", "Fiber only, up to 7680 × 4320 120p"], correctIndex: 0, explanation: "AbelCine (n.d.): 12G-SDI up to 4096 × 2160 4:2:2 60p, and a tri-level genlock input.", sourceLessonSlug: "outputs-timecode-and-genlock" },
@@ -653,8 +705,12 @@ The FX3 can take external timecode through Sony's VMC-BNCM1 adapter on its Multi
           { prompt: "What is the camera's internal recording used for?", options: ["Sending the live feed to the truck", "Locking the camera's timing to genlock", "Powering the transmitter on the rig", "An iso record, replay or editing later"], correctIndex: 3, explanation: "The recording is a separate copy used for an isolated (\"iso\") record, for replay or for editing later.", sourceLessonSlug: "recording-power-and-heat" },
           { prompt: "Which video formats does Sony list for the FX3?", options: ["ProRes RAW and Blackmagic RAW only", "REDCODE RAW and ProRes 4444 XQ", "XAVC HS (H.265) and XAVC S (H.264)", "Uncompressed DPX image sequences"], correctIndex: 2, explanation: "Sony lists XAVC HS (H.265) and XAVC S (H.264), with LPCM audio (Sony, n.d.-b).", sourceLessonSlug: "recording-power-and-heat" },
           { prompt: "What audio does the FX3 record with the XLR handle attached?", options: ["2 channels of AAC", "4 channels of LPCM", "8 channels of AC-3", "1 channel of MP3"], correctIndex: 1, explanation: "With the XLR handle attached, it records 4 channels of LPCM audio (Sony, n.d.-b).", sourceLessonSlug: "recording-power-and-heat" },
-          { prompt: "What does Sony's FX3 specifications page leave unstated?", options: ["The HDMI output's bit depth and sampling", "The camera's power draw for movies", "The camera's operating temperature", "The size of the camera's sensor"], correctIndex: 0, explanation: "Sony's page does not state the bit depth or color sampling of the HDMI output. It does list power, temperature and sensor size.", sourceLessonSlug: "recording-power-and-heat" },
-          { prompt: "What should you do before promising a show \"10-bit 4:2:2\" from an FX3?", options: ["Check it in the camera's menu", "Assume it, since Sony implies it", "Ask the gimbal maker to confirm", "Promise it; the truck can fix it"], correctIndex: 0, explanation: "Sony's page does not state it, so check it in the camera's menu with the show's settings.", sourceLessonSlug: "recording-power-and-heat" },
+          { prompt: "Which HDMI fact does Sony's FX3 help guide leave unstated?", options: ["The color sampling of the signal", "The bit depth in HDMI-only mode", "The output size of RAW over HDMI", "The resolution with Log turned on"], correctIndex: 0, explanation: "The help guide gives bit depth, RAW output size and the 1080 rule for Log, but not the color sampling (4:2:2 or 4:2:0) of the HDMI signal (Sony, n.d.-c).", sourceLessonSlug: "recording-power-and-heat" },
+          { prompt: "What should you do before promising a show 4:2:2 from an FX3?", options: ["Check it on the receiving monitor", "Assume it, since 10-bit implies it", "Ask the gimbal maker to confirm it", "Promise it; the truck can fix it"], correctIndex: 0, explanation: "Sony's help guide does not state the HDMI color sampling, so check it on the receiving monitor or converter first.", sourceLessonSlug: "recording-power-and-heat" },
+          { prompt: "An FX3 records to its card in an 8-bit setting while feeding HDMI. What bit depth is the HDMI feed?", options: ["8-bit, following the record setting", "10-bit, whatever the record setting", "12-bit, because HDMI adds two bits", "It depends on the gimbal's firmware"], correctIndex: 0, explanation: "While recording, \"The color depth for the output movie is based on [Record Setting]\" (Sony, n.d.-c), so an 8-bit setting means an 8-bit feed.", sourceLessonSlug: "recording-power-and-heat" },
+          { prompt: "In HDMI-only mode, with no card recording, what bit depth are the FX3's 4K output options?", options: ["All 8-bit", "All 10-bit", "All 12-bit", "Mixed 8 and 10"], correctIndex: 1, explanation: "Every [4K Output Set.(HDMI Only)] option is 10-bit, from [59.94p 10bit] to [24.00p 10bit] (Sony, n.d.-c).", sourceLessonSlug: "recording-power-and-heat" },
+          { prompt: "With Log shooting on and the card recording, what happens to the FX3's HDMI resolution?", options: ["It rises to 4K at 120p", "It drops to 720p only", "It becomes 1080", "It switches to RAW"], correctIndex: 2, explanation: "Sony: with Log shooting on, \"the HDMI output resolution becomes 1080\" unless the camera is in HDMI-only mode or RAW output (Sony, n.d.-c).", sourceLessonSlug: "recording-power-and-heat" },
+          { prompt: "Why is the FX3's RAW output not a live feed for the truck?", options: ["It is for an external RAW recorder", "It only works with the XLR handle", "It sends audio but never video", "It needs a genlock input to run"], correctIndex: 0, explanation: "RAW output goes \"to another RAW-compatible device,\" cannot be recorded on the card, and locks the gamma to S-Log3 (Sony, n.d.-c, n.d.-f).", sourceLessonSlug: "recording-power-and-heat" },
           { prompt: "How much power does Sony list for the FX3 while shooting movies?", options: ["About 18.0 W", "About 7.3 W", "About 35 W", "About 73 W"], correctIndex: 1, explanation: "About 7.3 W (Sony, n.d.-b). The FX6 draws about 18.0 W.", sourceLessonSlug: "recording-power-and-heat" },
           { prompt: "How much power does the Sony FX6 draw?", options: ["About 7.3 W", "About 1.8 W", "About 18.0 W", "About 98 W"], correctIndex: 2, explanation: "About 18.0 W (Allard, 2020), against about 7.3 W for the FX3.", sourceLessonSlug: "recording-power-and-heat" },
           { prompt: "What is the FX3's operating temperature range?", options: ["-20 to 45 °C", "10 to 30 °C", "-10 to 60 °C", "0 to 40 °C"], correctIndex: 3, explanation: "Sony lists 0 to 40 °C (Sony, n.d.-b). -20 to 45 °C is the DJI RS 4 Pro gimbal's range.", sourceLessonSlug: "recording-power-and-heat" },
@@ -681,8 +737,8 @@ The FX3 can take external timecode through Sony's VMC-BNCM1 adapter on its Multi
       section: "3 · Lenses",
       recallContent: [
         {
-          prompt: "What did Sony's FX3 spec page leave unstated that a shader cares about?",
-          answer: "The bit depth and color sampling of the HDMI output. Check them in the camera's menu before promising them.",
+          prompt: "What does Sony's FX3 help guide leave unstated that a shader cares about?",
+          answer: "The color sampling of the HDMI signal (4:2:2 or 4:2:0). Check it on the receiving monitor or converter before promising it.",
         },
         {
           prompt: "What is the FX3's operating temperature range?",
@@ -984,6 +1040,19 @@ Do the sum for the Sigma 50mm: $1,539 to buy, $59 for a 3-day rental. That is ab
 
 **Why gimbal choice still matters.** The gimbal decides how heavy a camera you can carry (lesson 14), how long you can run (lesson 15) and how the camera is controlled while it rides. On that last point: Cyanview, whose systems let the truck control the camera, says only one device can control a Sony Alpha camera at a time, so a DJI gimbal's USB camera control must be off when the truck takes over (Cyanview, n.d.-a). The gimbal's own camera buttons and the truck's remote control can fight. Decide before the show which one wins.
 
+**Follow modes.** A follow mode decides which axes turn with your hand and which hold still. DJI's manual for the RS 4 and RS 4 Pro, which share the same modes, defines them (DJI, 2024, pp. 33 to 34):
+
+| Mode | What follows the grip | DJI's suggested use |
+|---|---|---|
+| PF | "only the pan axis" | "walk-through and arc shots or moving from left to right" |
+| PTF | "both the pan and tilt axes" | "moving on a slant" |
+| FPV | "all three axes" | "rotating the camera" |
+| Custom | any axis you turn on; with all three off, it is Lock mode, and nothing follows | "smooth tracking shots and quick reaction shots" |
+
+**Controls worth knowing before a game.** On the RS 4, a switch toggles PF, PTF and FPV (p. 25). Pressing and holding the trigger enters Lock mode; tapping it twice re-centers the gimbal; tapping it three times turns the camera 180° to face you, "selfie mode" (p. 26). A "Disable Selfie" setting "prevents accidentally entering selfie mode and interrupting recording" (p. 30). Holding the M button gives Sport Mode, where "the follow speed of the gimbal increases greatly," which DJI calls "suitable for shooting in scenarios where subjects move suddenly and at fast speeds" (p. 25). One press of the power button puts the gimbal to sleep and locks the axes (p. 25). On air, a stray press or a stray triple tap ends the shot, so learn where your fingers rest.
+
+**What no source says yet.** DJI's manual says what each mode does. No network, operator or trade-press account found for this course says which mode sideline specialty operators actually use. That is left to the qualified reviewer.
+
 **What the gimbal adds to the job.** A gimbal lets one person run with a cinema camera. It also adds weight, batteries, a balancing routine and a new thing that can fail. The next three lessons cover each.
 
 :::reveal What does a gimbal cancel, and what does it not? ||| It cancels rotation (tilt, roll and pan shake); it does not cancel the up-and-down bounce of footsteps, which is the operator's walk.
@@ -995,7 +1064,8 @@ Do the sum for the Sigma 50mm: $1,539 to buy, $59 for a 3-day rental. That is ab
 - ${COSTA_2021} Locator: the paragraph naming the Zhiyun Crane 3S.
 - ${KERSCHBAUMER_2021} Locator: the sections on CBS's and ESPN's MōVI rigs.
 - ${COSTA_2026} Locator: the paragraph on Faction Media's RF Ronin systems.
-- ${CYANVIEW_ALPHA} Locator: the note on one controlling device at a time.`,
+- ${CYANVIEW_ALPHA} Locator: the note on one controlling device at a time.
+- ${DJI_RS4_MANUAL} Locator: pp. 25 to 26 (mode switch, trigger, M button, power button), p. 30 (Disable Selfie), pp. 33 to 34 (gimbal follow modes).`,
     },
     {
       slug: "payload-and-balance",
@@ -1011,33 +1081,34 @@ Do the sum for the Sigma 50mm: $1,539 to buy, $59 for a 3-day rental. That is ab
           answer: "Only one device can control the camera at a time (Cyanview, n.d.-a).",
         },
       ],
-      body: `${QR("a gimbal technician or an experienced gimbal operator, to check the balancing routine, which the course's research gives as field practice without a maker's source")}
+      body: `${QR("a gimbal technician or an experienced gimbal operator, to confirm the two cable steps in the balancing routine, which are field practice with no maker's source")}
 
 **Payload is a ceiling.** DJI rates the RS 4 at a tested payload of 3 kg and the RS 4 Pro at 4.5 kg (DJI, n.d.-b; DJI, n.d.-a). A payload rating is the most the motors are tested to hold when the load is balanced. It does not prove that your camera, cage, monitor and cables fit between the gimbal's arms, or that they clear the arms when the camera tilts.
 
 **Add it up.** A rough sum for one build: the FX3 body is about 715 g with battery and card (Sony, n.d.-b). The FX6 body alone is 890 g (Allard, 2020). Then add the lens, the cage, a monitor if it rides on the gimbal, a transmitter, and every cable. Weigh the real build on a kitchen scale before you trust a payload number. A heavier rig is also harder to carry for a whole game, even if the motors can hold it.
 
-**Balance first.** A balanced camera stays where you leave it with the motors off. The motors then only have to correct movement, not hold the camera up. An unbalanced camera makes the motors work against gravity the whole time. That costs battery and can make the rig buzz or shake.
+**Balance first.** A balanced camera stays where you leave it with the motors off. The motors then only have to correct movement, not hold the camera up. DJI's manual says why it matters: "An unbalanced gimbal may affect the stability of videos and reduce the battery life. Severe imbalance may cause the device to overheat and go into hibernation" (DJI, 2024, p. 14).
 
-**The routine.** These steps follow from what balance is:
+**The routine.** The order and the checks come from DJI's manual for the RS 4 and RS 4 Pro (DJI, 2024). Steps 1 and 7 are field practice, not DJI's, and are marked so.
 
-1. **Build the full rig first.** Attach every cable, the transmitter and the monitor before balancing. A cable added later changes the weight.
-2. **Set the lens where you will use it.** On a zoom, balance at the focal length you use most. A rig that balances at 24mm may be off at 70mm, because the lens's weight moves as it zooms.
-3. **Balance each axis.** Slide the camera until it holds still on each axis with the motors off.
-4. **Then tune the motors.** Run the gimbal's own motor-tuning step only after the camera is balanced.
-5. **Re-balance after any change.** A new lens, a new accessory or a moved cable means starting again.
+1. **Build the full rig first (field practice).** Attach every cable, the transmitter and the monitor before balancing. A cable added later changes the weight.
+2. **Get the camera and gimbal ready.** Power the camera on if the lens is an optical zoom, and set a varifocal lens to its working focal length; make sure the gimbal is powered off or asleep (p. 14). On a zoom, use the focal length you use most, because the lens's weight moves as it zooms.
+3. **Balance the axes in DJI's order:** "the vertical tilt, the depth for the tilt axis, the roll axis and the pan axis in sequence" (p. 14). Vertical tilt is balanced when the camera stays steady pointing up (p. 14); tilt depth when it stays steady tilted up or down by 45° (p. 15); roll when it stays steady level (p. 16); pan when it stays steady as you rotate the pan while tilting the grip (p. 17).
+4. **Then tune the motors.** "Auto tune provides the proper stiffness for the motor according to the payload." Put the gimbal on a steady flat surface, and "DO NOT move the gimbal during automatic calibration" (p. 24).
+5. **Check the result.** Tilt the gimbal 15° left or right and read the balance status bar: green or gray is balanced, yellow slightly off, red critical (p. 28). In the Ronin app, the motor power values of a balanced gimbal sit within ±5 (p. 45).
+6. **Re-tune after a change.** If a new focal length, lens or camera turns the balance icon red, or the gimbal shakes for no reason, DJI recommends running automatic calibration again; raise stiffness if the gimbal is not stable enough and lower it if it starts to shake (p. 28).
+7. **Route cables with slack (field practice).** A stiff HDMI or power cable can tug the camera as it tilts, or catch on an arm. Use short, flexible cables with a little slack loop. Where you can, mount the transmitter and battery on the part of the gimbal that does not move.
 
-**Cables.** A stiff HDMI or power cable can tug the camera as it tilts, or catch on an arm. Use short, flexible cables with a little slack loop. Where you can, mount the transmitter and battery on the part of the gimbal that does not move.
-
-**Test the extremes.** With everything connected, tilt and roll the camera as far as it will go. Watch for a cable pulling or anything hitting an arm. A shot that tilts up for a celebration should not be the first time you find out.
+**Test the extremes.** With everything connected, tilt and roll the camera as far as it will go. Watch for a cable pulling or anything hitting an arm. DJI lets you set tilt end points because "Some longer lenses may hit the gimbal frame" (p. 47). A shot that tilts up for a celebration should not be the first time you find out.
 
 :::reveal What does a gimbal's payload rating not prove? ||| That your full build fits and clears the gimbal's arms; it is the most the motors are tested to hold when the load is balanced.
 
-:::reveal Why balance before running the motor-tuning step? ||| So the motors only correct movement instead of holding the camera up against gravity.
+:::reveal Why balance before running Auto Tune? ||| So the motors only correct movement instead of holding the camera up against gravity; Auto Tune then sets stiffness for that balanced payload (DJI, 2024, p. 24).
 
 ## Sources
 - ${DJI_RS4_SPECS} Locator: "Tested payload" entry.
 - ${DJI_RS4_PRO_SPECS} Locator: "Tested payload" entry.
+- ${DJI_RS4_MANUAL} Locator: p. 14 (before balancing, the order, why balance matters), pp. 15 to 17 (the axis tests), p. 24 (Auto Tune), p. 28 (balance status and stiffness), p. 45 (motor power within ±5), p. 47 (tilt end points).
 - ${SONY_SPECS} Locator: "Mass" entry.
 - ${ALLARD_2020} Locator: the specifications section, body weight.`,
     },
@@ -1096,11 +1167,19 @@ Do the sum for the Sigma 50mm: $1,539 to buy, $59 for a 3-day rental. That is ab
           answer: "That it \"is not currently available for purchase in the United States.\"",
         },
       ],
-      body: `${QR("an experienced sports specialty-camera operator, to supply gimbal modes and sideline working practice (where to stand, how a utility spots the operator, league sideline rules), none of which the course's research covers")}
+      body: `${QR("an experienced sports specialty-camera operator, to supply how a utility spots a handheld operator on a sideline and where an RF gimbal operator should stand during live play, which no fetched league, network or crew-safety source describes")}
 
-**What this lesson can and cannot teach yet.** The research behind this course does not describe gimbal modes, such as how follow and lock modes behave, so this lesson does not teach them. It also has no source on sideline working practice for a handheld specialty operator: where to stand, how a spotter works with you, or a league's sideline rules. Those parts will come from an experienced operator before release. What follows is what the sources do support.
+**What the rule books say.** Leagues decide who may stand where. These are the lines this course could read in the rule books themselves:
 
-**It is a dedicated job.** Fox hired an extra camera operator for the rig's first live game (Feldman, 2021). Its first operator was Mike Smole (Keeley, 2020). The rig was not a hard-camera operator's side task.
+- **NFL.** "The only persons permitted within the solid six-foot white border ... while play is in progress on the field are game officials," for reasons that include "the safety of participating players whose actions may carry them out of bounds." Field-level people outside the benches must be accredited by the home club, and "Photographers and other personnel accredited for field-level work must not be permitted in the end zones or any other part of the official playing field while play is in progress" (National Football League [NFL], 2026, Rule 13, Section 1, Articles 4 and 6). The rule book's diagram labels the outer zone "MEDIA AND ALL OTHERS" (NFL, 2026, p. v).
+- **College football.** The NCAA's 2026 rule book, read in a complete copy hosted by an officials' association, keeps everyone outside the team area behind limit lines, with one exception: "Hand-held cameras under the supervision of the television partners may briefly be between the limit lines and the sideline after the ball is dead and the game clock has been stopped," and never on the field or in the end zone (National Collegiate Athletic Association [NCAA], 2026, Rule 1-2-3-b, p. FR-19). Media and their equipment may not be in the team area or coaching box (Rule 1-2-4-d).
+- **MLB.** Only listed people may be on the field during a game, including "news photographers authorized by the home team" (Office of the Commissioner of Baseball, 2026, Rule 4.07(a)), and an umpire may eject "broadcasting crew members" (Rule 8.01(e)).
+
+**Allowed is not the same as safe.** In 2020 a player ran into an ESPN camera cart on a Monday night game. A press report says "Technically the cart and its operator were where they were supposed to be," and that the player suffered "a Grade 2 AC joint sprain" (Keeley, 2020a). Standing in the permitted zone did not keep anyone safe.
+
+**Two accounts, not standards.** No league or network document this course found says how a utility spots a handheld operator. Two accounts come close. One UK studio's Steadicam risk assessment says "An assistant will watch the operator's back" and that people nearby "will be avoided by the operator and 'minded' by the assistant" (BBC Studioworks, 2023, pp. 2 to 3); that is one studio, not a sports field. A 2019 profile of a Fox handheld operator says that "when Cornelli is looking into his viewfinder, he sometimes can't tell how close the players are," and that after one collision he "was diagnosed with a concussion" (Curtis, 2019); that is one cabled operator, not an RF gimbal rig. Both point the same way: a person looking at a monitor cannot also watch the field. How a sports crew handles that is for the reviewer named at the top.
+
+**It is a dedicated job.** Fox hired an extra camera operator for the rig's first live game (Feldman, 2021). Its first operator was Mike Smole (Keeley, 2020b). The rig was not a hard-camera operator's side task.
 
 **Who owns the camera settings.** On a show that controls the camera from the truck, the operator stops touching exposure. A source in Sports Video Group's 2021 feature put it this way: "The operator doesn't have to worry about camera settings as it's all done back in the trucks" (Kerschbaumer et al., 2021). Cyanview's control of Sony Alpha bodies can reach settings such as iris, ISO, shutter and white balance (Cyanview, n.d.-a). If a show has no remote control, those settings are yours, and you match the other cameras by eye on your monitor.
 
@@ -1123,6 +1202,12 @@ Do the sum for the Sigma 50mm: $1,539 to buy, $59 for a 3-day rental. That is ab
 :::reveal Why does monitor brightness matter most on day games? ||| A dim screen is hard to read in sunlight, and the operator judges focus and framing on it.
 
 ## Sources
+- ${NFL_RULES_2026} Locator: Rule 13, Section 1, Articles 4 and 6; p. v (bench-area diagram).
+- ${NCAA_RULES_2026} Locator: Rule 1-2-3-b, p. FR-19; Rule 1-2-4-d, pp. FR-19 to FR-20.
+- ${MLB_RULES_2026} Locator: Rules 4.07(a) and 8.01(e).
+- ${KEELEY_CART_2020} Locator: the paragraphs on where the cart was and on the injury.
+- ${BBC_STUDIOWORKS_2023} Locator: pp. 2 to 3, the control measures.
+- ${CURTIS_2019} Locator: the passages on the viewfinder and the concussion.
 - ${FELDMAN_2021} Locator: the paragraph on hiring an extra camera operator.
 - ${KEELEY_2020} Locator: the paragraph naming the operator.
 - ${KERSCHBAUMER_2021} Locator: the quotation on camera settings being handled in the trucks.
@@ -1132,7 +1217,7 @@ Do the sum for the Sigma 50mm: $1,539 to buy, $59 for a 3-day rental. That is ab
 - ${SMALLHD_INDIE_5} Locator: specifications, brightness and inputs.
 - ${SMALLHD_ULTRA_5} Locator: specifications, brightness and inputs.
 - ${COSTA_2020} Locator: the paragraph on end-zone shots.
-- ${HERNANDEZ_2026} Locator: the paragraph on the three Megalodons.`,
+- ${HERNANDEZ_2026} Locator: the paragraph on the three shallow-depth-of-field cameras.`,
     },
     {
       slug: "section-4-quiz",
@@ -1161,6 +1246,14 @@ Do the sum for the Sigma 50mm: $1,539 to buy, $59 for a 3-day rental. That is ab
           { prompt: "What must be off when the truck controls a Sony Alpha camera through Cyanview?", options: ["The gimbal's motors and its battery", "The camera's HDMI output to the TX", "The DJI gimbal's USB camera control", "The operator's monitor and its LUT"], correctIndex: 2, explanation: "Only one device may control the camera, so a DJI gimbal's USB control must be off (Cyanview, n.d.-a).", sourceLessonSlug: "what-a-gimbal-does" },
           { prompt: "What does a gimbal let one person do?", options: ["Shade the camera remotely", "Skip the RF coordinator", "Replace the hard cameras", "Run with a cinema camera"], correctIndex: 3, explanation: "A gimbal lets one person run with a cinema camera; it also adds weight, batteries and a balancing routine.", sourceLessonSlug: "what-a-gimbal-does" },
           { prompt: "Which three things does gimbal choice decide, according to lesson 13?", options: ["Lens price, sensor size, codec", "Link range, latency, frequency", "Weight carried, run time, control", "Shutter type, genlock, timecode"], correctIndex: 2, explanation: "How heavy a camera you can carry, how long you can run, and how the camera is controlled while it rides.", sourceLessonSlug: "what-a-gimbal-does" },
+          { prompt: "In DJI's PF mode, which axis follows the grip?", options: ["Only the pan axis", "Only the roll axis", "Pan and tilt both", "All three axes"], correctIndex: 0, explanation: "PF is \"Pan follow, where only the pan axis follows the movement of the grip\" (DJI, 2024, p. 33).", sourceLessonSlug: "what-a-gimbal-does" },
+          { prompt: "In DJI's PTF mode, which axes follow the grip?", options: ["Only the roll axis", "Pan and tilt", "Tilt and roll", "None of them"], correctIndex: 1, explanation: "PTF is \"Pan and tilt follow, where both the pan and tilt axes follow the movement of the grip\" (DJI, 2024, p. 34).", sourceLessonSlug: "what-a-gimbal-does" },
+          { prompt: "In DJI's FPV mode, which axes follow the grip?", options: ["Only pan", "Pan and tilt", "All three", "Only tilt"], correctIndex: 2, explanation: "FPV is \"Pan, tilt, and roll follow, where all three axes follow the movement of the grip\" (DJI, 2024, p. 34).", sourceLessonSlug: "what-a-gimbal-does" },
+          { prompt: "What is Lock mode on the RS 4?", options: ["Custom with all three axes off", "FPV with the roll axis held", "PF with a slower follow speed", "Sport Mode held on the M button"], correctIndex: 0, explanation: "\"Lock mode is enabled when the three axes are disabled\"; then no axis follows the grip (DJI, 2024, p. 34).", sourceLessonSlug: "what-a-gimbal-does" },
+          { prompt: "What does tapping the RS 4's trigger twice do?", options: ["Enters Lock mode", "Re-centers the gimbal", "Turns to selfie mode", "Puts it to sleep"], correctIndex: 1, explanation: "\"Tap twice to re-center the gimbal\" (DJI, 2024, p. 26). Three taps turn the camera to face you.", sourceLessonSlug: "what-a-gimbal-does" },
+          { prompt: "Why turn on DJI's Disable Selfie setting for live work?", options: ["It raises the follow speed", "It locks the pan axis", "It saves gimbal battery", "It blocks a stray triple tap"], correctIndex: 3, explanation: "It \"prevents accidentally entering selfie mode and interrupting recording\" (DJI, 2024, p. 30); three taps would otherwise spin the camera 180°.", sourceLessonSlug: "what-a-gimbal-does" },
+          { prompt: "What does holding the M button do on the RS 4?", options: ["Enters Sport Mode, faster follow", "Starts Auto Tune on the motors", "Switches the link to 6 GHz", "Turns the gimbal fully off"], correctIndex: 0, explanation: "Holding M enters Sport Mode, where \"the follow speed of the gimbal increases greatly\" (DJI, 2024, p. 25).", sourceLessonSlug: "what-a-gimbal-does" },
+          { prompt: "Which mode question does no source found for this course answer?", options: ["What PF mode does with the pan", "What Lock mode does to the axes", "Which mode sideline operators use", "What two trigger taps will do"], correctIndex: 2, explanation: "DJI's manual says what each mode does; no network, operator or trade-press account says which mode sideline specialty operators use.", sourceLessonSlug: "what-a-gimbal-does" },
           { prompt: "What is the DJI RS 4 Pro's tested payload?", options: ["4.5 kg", "3 kg", "1.6 kg", "13 kg"], correctIndex: 0, explanation: "4.5 kg (DJI, n.d.-a). The RS 4 is 3 kg.", sourceLessonSlug: "payload-and-balance" },
           { prompt: "What is a gimbal's payload rating?", options: ["The most the gimbal can hold when unbalanced", "The weight of the gimbal without a camera", "The weight one operator may legally carry", "The most the motors are tested to hold balanced"], correctIndex: 3, explanation: "It is the most the motors are tested to hold when the load is balanced: a ceiling.", sourceLessonSlug: "payload-and-balance" },
           { prompt: "What does a payload rating not prove?", options: ["That the motors can hold a balanced load", "That your build fits and clears the arms", "That the gimbal is sold in DJI's store", "That the camera has a global shutter"], correctIndex: 1, explanation: "A payload rating does not prove your camera, cage, monitor and cables fit and clear the gimbal's arms.", sourceLessonSlug: "payload-and-balance" },
@@ -1176,6 +1269,13 @@ Do the sum for the Sigma 50mm: $1,539 to buy, $59 for a 3-day rental. That is ab
           { prompt: "Why can a cable spoil a gimbal shot?", options: ["It adds delay to the video link", "It can tug the camera as it tilts", "It lowers the gimbal's payload", "It blocks the camera's autofocus"], correctIndex: 1, explanation: "A stiff HDMI or power cable can tug the camera as it tilts, or catch on an arm.", sourceLessonSlug: "payload-and-balance" },
           { prompt: "What kind of cables does lesson 14 recommend on the gimbal?", options: ["Long and stiff, pulled tight to the arm", "Coiled up loosely in the backpack", "Short, flexible, with a slack loop", "Run through the gimbal's motor"], correctIndex: 2, explanation: "Short, flexible cables with a little slack loop.", sourceLessonSlug: "payload-and-balance" },
           { prompt: "Where should the transmitter and battery go, where you can manage it?", options: ["On the camera's top handle", "On the lens's front end", "On the tilt motor's arm", "On the part that does not move"], correctIndex: 3, explanation: "Mount the transmitter and battery on the part of the gimbal that does not move.", sourceLessonSlug: "payload-and-balance" },
+          { prompt: "In what order does DJI's manual say to balance the RS 4's axes?", options: ["Pan, roll, tilt depth, then vertical tilt", "Vertical tilt, tilt depth, roll, then pan", "Roll, pan, vertical tilt, then tilt depth", "Tilt depth, vertical tilt, pan, then roll"], correctIndex: 1, explanation: "\"Balance the vertical tilt, the depth for the tilt axis, the roll axis and the pan axis in sequence\" (DJI, 2024, p. 14).", sourceLessonSlug: "payload-and-balance" },
+          { prompt: "What state should the RS 4 be in while you balance it?", options: ["Powered off or in sleep mode", "Powered on in Sport Mode", "Running Auto Tune live", "Locked in selfie mode"], correctIndex: 0, explanation: "DJI: \"Make sure DJI RS 4 / DJI RS 4 Pro is powered off or in sleep mode before balancing\" (DJI, 2024, p. 14).", sourceLessonSlug: "payload-and-balance" },
+          { prompt: "Where should the gimbal sit while Auto Tune runs?", options: ["In the operator's hands, walking", "On a steady flat surface, still", "On the truck's roof, facing the RX", "Hanging upside down from a stand"], correctIndex: 1, explanation: "\"Place the gimbal on a steady flat surface. DO NOT move the gimbal during automatic calibration\" (DJI, 2024, p. 24).", sourceLessonSlug: "payload-and-balance" },
+          { prompt: "How do you check the RS 4's balance status after tuning?", options: ["Tilt it 15° and read the status bar", "Shake it and listen for a buzz", "Weigh it on a kitchen scale again", "Turn it upside down and wait"], correctIndex: 0, explanation: "\"Tilt the gimbal 15° left or right and check the status bar\" (DJI, 2024, p. 28).", sourceLessonSlug: "payload-and-balance" },
+          { prompt: "What does DJI say severe imbalance can do to the gimbal?", options: ["Switch it into FPV mode", "Overheat it into hibernation", "Erase its saved settings", "Break its wireless pairing"], correctIndex: 1, explanation: "\"Severe imbalance may cause the device to overheat and go into hibernation\" (DJI, 2024, p. 14).", sourceLessonSlug: "payload-and-balance" },
+          { prompt: "Which two steps of lesson 14's routine are field practice, not DJI's?", options: ["Auto Tune and the 15° check", "The axis order and the tests", "Cabling first and slack loops", "Sleep mode and lens setting"], correctIndex: 2, explanation: "DJI's manual has no cable-routing guidance, so building with every cable first and routing short cables with slack are marked as field practice.", sourceLessonSlug: "payload-and-balance" },
+          { prompt: "Why does DJI let you set tilt end points?", options: ["Some longer lenses may hit the frame", "It saves battery on long show days", "It makes the gimbal follow faster", "It stops selfie mode by accident"], correctIndex: 0, explanation: "DJI: \"Some longer lenses may hit the gimbal frame\" (DJI, 2024, p. 47).", sourceLessonSlug: "payload-and-balance" },
           { prompt: "Why tilt and roll the camera to its limits with every cable connected?", options: ["To calibrate the wireless channel", "To warm up the camera's sensor", "To find pulls or arm hits before air", "To check the battery's voltage"], correctIndex: 2, explanation: "Watch for a cable pulling or anything hitting an arm. A celebration shot should not be the first time you find out.", sourceLessonSlug: "payload-and-balance" },
           { prompt: "Why is a heavier rig a problem even when it is within payload?", options: ["It is harder to carry all game", "It cannot output SDI at all", "It records at a lower bit depth", "It voids the camera's warranty"], correctIndex: 0, explanation: "A heavier rig is harder to carry for a whole game, even if the motors can hold it.", sourceLessonSlug: "payload-and-balance" },
           { prompt: "What battery runtime does DJI give for the RS 4 Pro?", options: ["3 hours", "30 hours", "8 hours", "13 hours"], correctIndex: 3, explanation: "DJI rates the RS 4 Pro at \"13 hours\" (DJI, n.d.-a), measured level and stationary.", sourceLessonSlug: "runtime-temperature-and-spares" },
@@ -1195,9 +1295,16 @@ Do the sum for the Sigma 50mm: $1,539 to buy, $59 for a 3-day rental. That is ab
           { prompt: "What can happen if the gimbal's camera-control cable is plugged in and active?", options: ["The camera records at double rate", "The gimbal stops balancing itself", "The truck's remote control may fail", "The monitor shows a black picture"], correctIndex: 2, explanation: "Only one device can control a Sony Alpha camera at a time (Cyanview, n.d.-a).", sourceLessonSlug: "runtime-temperature-and-spares" },
           { prompt: "When should the crew settle which control is in charge of the camera?", options: ["During the facilities check", "During the first play on air", "After the game, in the truck", "Only if a problem appears"], correctIndex: 0, explanation: "Settle it during the facilities check, not on air.", sourceLessonSlug: "runtime-temperature-and-spares" },
           { prompt: "What happens to the shot if the gimbal dies mid-game?", options: ["The truck takes over", "Nothing changes", "The link switches", "The shot goes with it"], correctIndex: 3, explanation: "A gimbal that dies mid-game takes the shot with it.", sourceLessonSlug: "runtime-temperature-and-spares" },
-          { prompt: "Which topics does lesson 16 say it cannot teach yet?", options: ["Who controls the camera settings", "Gimbal modes and sideline practice", "Why monitor brightness matters", "How Fox staffed its first game"], correctIndex: 1, explanation: "The research has no source on gimbal modes or sideline working practice, so the lesson leaves them out.", sourceLessonSlug: "running-a-sideline" },
-          { prompt: "Why does lesson 16 leave out gimbal modes and sideline practice?", options: ["The NFL forbids teaching them", "No source in the research covers them", "They change with each firmware", "They only apply to DJI gimbals"], correctIndex: 1, explanation: "The course states only what its sources support, and no source in its research covers them.", sourceLessonSlug: "running-a-sideline" },
-          { prompt: "Who will supply the parts lesson 16 leaves out?", options: ["The learner, by trial and error on air", "The gimbal's maker, after purchase", "The truck's shader, during the game", "An experienced operator, before release"], correctIndex: 3, explanation: "Those parts will come from an experienced operator before release, as the box at the top says.", sourceLessonSlug: "running-a-sideline" },
+          { prompt: "Under the NFL's 2026 rules, who may be inside the solid six-foot white border while play is live?", options: ["Only the game officials", "Accredited camera crews", "Coaches and team staff", "Any credentialed media"], correctIndex: 0, explanation: "Rule 13, Section 1, Article 4: \"The only persons permitted within the solid six-foot white border ... while play is in progress on the field are game officials\" (NFL, 2026).", sourceLessonSlug: "running-a-sideline" },
+          { prompt: "Where may NFL field-level personnel never be while play is in progress?", options: ["Behind the yellow dashed line", "In the end zones or on the field", "Beside the team bench areas", "In the media zone on the diagram"], correctIndex: 1, explanation: "Rule 13, Section 1, Article 6: field-level personnel \"must not be permitted in the end zones or any other part of the official playing field while play is in progress\" (NFL, 2026).", sourceLessonSlug: "running-a-sideline" },
+          { prompt: "Under the NCAA's 2026 rule book, when may a TV handheld briefly enter the zone inside the limit line?", options: ["During any live play near the sideline", "After the ball is dead and the clock stopped", "Whenever the TV partner's director asks", "Only during the halftime show, not games"], correctIndex: 1, explanation: "Rule 1-2-3-b allows hand-held cameras under the TV partner's supervision there briefly \"after the ball is dead and the game clock has been stopped\" (NCAA, 2026, p. FR-19).", sourceLessonSlug: "running-a-sideline" },
+          { prompt: "Where does the NCAA rule book bar media and their equipment outright?", options: ["The team area and coaching box", "The press box and the camera wells", "The tunnel and the locker rooms", "The stands behind the end zone"], correctIndex: 0, explanation: "Rule 1-2-4-d: no media personnel \"or their equipment, shall be in the team area or coaching box\" (NCAA, 2026).", sourceLessonSlug: "running-a-sideline" },
+          { prompt: "In MLB's 2026 rules, who may eject broadcast crew members from the field?", options: ["The home team's media director", "The league's frequency coordinator", "Any umpire in the game", "The network's stage manager"], correctIndex: 2, explanation: "Rule 8.01(e): each umpire may eject \"any person whose duties permit his presence on the field,\" including \"broadcasting crew members\" (Office of the Commissioner of Baseball, 2026).", sourceLessonSlug: "running-a-sideline" },
+          { prompt: "What does the 2020 ESPN camera-cart collision show, per lesson 16?", options: ["Carts are banned from NFL sidelines", "The cart was in the wrong place", "Allowed is not the same as safe", "Only handhelds are ever at risk"], correctIndex: 2, explanation: "A press report says the cart and operator \"were where they were supposed to be,\" yet the player was hurt (Keeley, 2020a).", sourceLessonSlug: "running-a-sideline" },
+          { prompt: "How does lesson 16 treat the BBC Studioworks and Fox operator accounts?", options: ["As league rules every crew must follow", "As accounts, not sports standards", "As the network's written spotting plan", "As claims the course has disproved"], correctIndex: 1, explanation: "One is a studio's Steadicam risk assessment and one is a profile of a cabled operator; neither is a league or network standard for spotting.", sourceLessonSlug: "running-a-sideline" },
+          { prompt: "What does BBC Studioworks' Steadicam risk assessment say the assistant will do?", options: ["Watch the operator's back", "Shade the camera remotely", "Pull focus from a monitor", "Coordinate the frequencies"], correctIndex: 0, explanation: "\"An assistant will watch the operator's back\" (BBC Studioworks, 2023, pp. 2 to 3).", sourceLessonSlug: "running-a-sideline" },
+          { prompt: "What did a 2019 profile say a Fox handheld operator sometimes cannot tell through his viewfinder?", options: ["Which camera is on the air", "How close the players are", "Whether focus is on target", "What the score of the game is"], correctIndex: 1, explanation: "\"When Cornelli is looking into his viewfinder, he sometimes can't tell how close the players are\" (Curtis, 2019).", sourceLessonSlug: "running-a-sideline" },
+          { prompt: "Which sideline question does lesson 16 leave for the qualified reviewer?", options: ["What the NFL's six-foot border rule says", "Who may eject a broadcast crew in MLB", "How a utility spots a handheld operator", "Which monitor is brightest in daylight"], correctIndex: 2, explanation: "No fetched league, network or crew-safety source describes spotting practice, so the lesson keeps its marker for an experienced operator.", sourceLessonSlug: "running-a-sideline" },
           { prompt: "What shows that running the rig was a dedicated job at Fox?", options: ["Fox hired an extra camera operator", "Fox gave the job to the shader", "Fox had the director run the rig", "Fox let a utility run it at breaks"], correctIndex: 0, explanation: "Fox hired an extra camera operator for the rig's first live game (Feldman, 2021).", sourceLessonSlug: "running-a-sideline" },
           { prompt: "On a show that shades the camera from the truck, who handles camera settings?", options: ["The operator, not the truck", "The gimbal, by itself", "The truck, not the operator", "The RF vendor's tech"], correctIndex: 2, explanation: "\"The operator doesn't have to worry about camera settings as it's all done back in the trucks\" (Kerschbaumer et al., 2021).", sourceLessonSlug: "running-a-sideline" },
           { prompt: "Which settings can Cyanview reach on Sony Alpha bodies?", options: ["Pan, tilt, roll and gimbal speed", "Frequency, channel and link power", "Tally, intercom and return video", "Iris, ISO, shutter and white balance"], correctIndex: 3, explanation: "Cyanview's Sony Alpha list includes iris, ISO, shutter and white balance, among others (Cyanview, n.d.-a).", sourceLessonSlug: "running-a-sideline" },

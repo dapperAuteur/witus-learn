@@ -3384,8 +3384,9 @@ async function main() {
       "Held until a qualified reviewer (for example a licensed electrician or a stage lighting professional) has read every lesson marked QR. Research tier 2: electrical work, hot lamps and fire.",
   });
   // CREW-04, approved by BAM 2026-10-21 (cloud-briefs/crew-04/00-approved-brief.md): the shallow-focus
-  // wireless gimbal camera sports broadcasts nicknamed the Megalodon. Public, held for a qualified
-  // reviewer. Research tier 2: RF and FCC licensing, lithium batteries, money. Sections 1 to 4 are
+  // wireless gimbal camera sports broadcasts nicknamed the Megalodon; titled "Cinema-look camera rig"
+  // after BAM chose the safe name on 2026-10-21 (USPTO findings in research check megalodon-trademark,
+  // closed). Public, held for a qualified reviewer. Research tier 2: RF and FCC licensing, lithium batteries, money. Sections 1 to 4 are
   // written; sections 5 to 8 and the final quiz follow.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
