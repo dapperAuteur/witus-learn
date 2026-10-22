@@ -79,7 +79,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/how-we-know-whats-out-there-course.ts": 1.00,
   "scripts/data/keeping-a-house-course.ts": 1.00,
   "scripts/data/knots-course.ts": 1.00,
-  "scripts/data/manure-and-compost-course.ts": 0.84,
   "scripts/data/naacp-learned-to-win-course.ts": 0.90,
   "scripts/data/neuromatch-compneuro-course.ts": 1.00,
   "scripts/data/notes-made-by-mr-george-hunt-course.ts": 1.00,
