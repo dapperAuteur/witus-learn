@@ -55,7 +55,6 @@ import { isPlatformOwner } from "@/lib/session";
 import { VetCourseCta } from "@/components/vet-course-cta";
 import { displayTourTitle } from "@/lib/field-log-tour";
 import { liveToursForCourse } from "@/lib/lesson-tours";
-import { quizIntegrityFromLessons } from "@/lib/quiz-integrity";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -137,7 +136,8 @@ export default async function CourseBySlugPage({ params }: Params) {
     return <AgeGate brand={brandName(view.tenant)} hasSafety={Boolean(view.tenant.legal.safetyUrl)} />;
   }
 
-  const [glossary, sources, prerequisites, courseBundles, promotions] = await Promise.all([
+  const sdb = await getScopedDb();
+  const [glossary, sources, prerequisites, courseBundles, promotions, quizIntegrity] = await Promise.all([
     listGlossary(course.id),
     listSources(course.id),
     listPrerequisites(course.id),
@@ -145,6 +145,9 @@ export default async function CourseBySlugPage({ params }: Params) {
     // Codeless promotions live for THIS tenant. The same resolution runs again server-side in
     // /api/courses/[id]/enroll, so what the page shows is what Stripe is asked to charge.
     listActivePromotions(course.tenantId),
+    // Counts from SQL (option LENGTHS only), the same numbers quizIntegrityFromLessons computed from
+    // every quiz's JSON, which this page no longer loads (cloud-briefs/learn-db-egress-2026-10-20.md).
+    sdb.courseQuizIntegrity(course.id),
   ]);
   const priceView = coursePriceView(course, course.tenantId, promotions);
   const unmetPrereqIds = view.activeLearnerId
@@ -410,7 +413,7 @@ export default async function CourseBySlugPage({ params }: Params) {
 
       <CourseStandards courseSlug={courseSlug} />
 
-      <CourseQuizIntegrity summary={quizIntegrityFromLessons(lessons)} />
+      <CourseQuizIntegrity summary={quizIntegrity} />
 
       {courseBundles.length > 0 ? (
         <aside

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
+import { getCourseQuizContents } from "@/db/queries/authoring";
 import { getUserCourseQuizAttempts } from "@/db/queries/quiz-attempts";
 import { getUserCourseRecallStats } from "@/db/queries/recall";
 import { questionKey, type QuizContent, type QuizQuestion } from "@/lib/quiz";
@@ -78,6 +79,12 @@ export default async function CourseResultsPage({ params }: Params) {
     list.push(a);
     byLesson.set(a.lessonId, list);
   }
+  // The view's lesson list carries no quiz JSON, so load it for the attempted quizzes only, and
+  // only for lessons in that list (a draft stays out of reach exactly as before).
+  const quizContents = await getCourseQuizContents(
+    course.id,
+    [...byLesson.keys()].filter((id) => lessonById.has(id)),
+  );
 
   // Rollups (subject view): use each quiz's LATEST attempt so a rollup reflects where you stand now.
   const latestByLesson = new Map<string, (typeof attempts)[number]>();
@@ -154,7 +161,7 @@ export default async function CourseResultsPage({ params }: Params) {
               const title = lesson?.title ?? "Quiz";
               const best = Math.max(...list.map((a) => a.score));
               const latest = list[list.length - 1];
-              const quiz = lesson?.quizContent as QuizContent | null;
+              const quiz = (quizContents.get(lessonId) ?? null) as QuizContent | null;
               // Map each CURRENT question's stable key (and its original index, for pre-key rows) to
               // its prompt + display order, so per-question history lines up even after a reorder.
               const promptByKey = new Map<string, string>();

@@ -13,6 +13,7 @@ import {
   type ProfileLinks,
 } from "@/db/schema";
 import { slugify } from "@/lib/slug";
+import { expireCourse, expireCacheTags, CACHE_TAGS, expireProfiles } from "@/lib/cache-tags";
 
 // Tenant-scoped authoring writes + slug/instructor reads. Module/lesson writes are
 // scoped via their parent course id (the caller verifies course ownership first).
@@ -81,6 +82,7 @@ export async function createCourse(
       visibility: input.visibility ?? "public",
     })
     .returning();
+  expireCourse(tenantId, row.id);
   return row;
 }
 
@@ -94,6 +96,7 @@ export async function updateCourse(
     .set({ ...patch, updatedAt: new Date() })
     .where(and(eq(courses.id, id), eq(courses.tenantId, tenantId)))
     .returning();
+  if (row) expireCourse(tenantId, id);
   return row ?? null;
 }
 
@@ -102,6 +105,7 @@ export async function deleteCourse(tenantId: string, id: string): Promise<boolea
     .delete(courses)
     .where(and(eq(courses.id, id), eq(courses.tenantId, tenantId)))
     .returning({ id: courses.id });
+  if (rows.length > 0) expireCourse(tenantId, id);
   return rows.length > 0;
 }
 
@@ -181,6 +185,66 @@ export async function listLessons(courseId: string): Promise<Lesson[]> {
     .orderBy(asc(lessons.sortOrder), asc(lessons.id));
 }
 
+/**
+ * The columns a lesson LIST renders: titles, order, gating flags, and the content URL the offline
+ * picker and the tour check read. Deliberately NOT the body (`text_content`) or any of the JSON
+ * payloads (quiz, exercise, transcript, map, recall, review needs, documents, chapters): those are
+ * most of a course's bytes, and a syllabus, a contents rail or an ordering check draws none of them.
+ * Pulling them for every lesson on every view was the bulk of Learn's database egress
+ * (cloud-briefs/learn-db-egress-2026-10-20.md). A page that renders ONE lesson loads it whole with
+ * getCourseLesson.
+ */
+const lessonSummaryColumns = {
+  id: lessons.id,
+  courseId: lessons.courseId,
+  moduleId: lessons.moduleId,
+  title: lessons.title,
+  slug: lessons.slug,
+  lessonType: lessons.lessonType,
+  contentUrl: lessons.contentUrl,
+  durationSeconds: lessons.durationSeconds,
+  sortOrder: lessons.sortOrder,
+  isFreePreview: lessons.isFreePreview,
+  isPublished: lessons.isPublished,
+  recordedAt: lessons.recordedAt,
+  updatedAt: lessons.updatedAt,
+} as const;
+
+export type LessonSummary = Pick<Lesson, keyof typeof lessonSummaryColumns>;
+
+/** Every lesson of a course WITHOUT bodies, in the same stable order as listLessons. */
+export async function listLessonSummaries(courseId: string): Promise<LessonSummary[]> {
+  return db
+    .select(lessonSummaryColumns)
+    .from(lessons)
+    .where(eq(lessons.courseId, courseId))
+    .orderBy(asc(lessons.sortOrder), asc(lessons.id));
+}
+
+/** One lesson, whole, keyed by its course so an id from another course returns null. */
+export async function getCourseLesson(courseId: string, lessonId: string): Promise<Lesson | null> {
+  const rows = await db
+    .select()
+    .from(lessons)
+    .where(and(eq(lessons.id, lessonId), eq(lessons.courseId, courseId)))
+    .limit(1);
+  return rows[0] ?? null;
+}
+
+/** `quiz_content` of the named lessons of one course, keyed by lesson id. For the results page,
+ *  which replays only the quizzes a learner actually attempted. */
+export async function getCourseQuizContents(
+  courseId: string,
+  lessonIds: readonly string[],
+): Promise<Map<string, Lesson["quizContent"]>> {
+  if (lessonIds.length === 0) return new Map();
+  const rows = await db
+    .select({ id: lessons.id, quizContent: lessons.quizContent })
+    .from(lessons)
+    .where(and(eq(lessons.courseId, courseId), inArray(lessons.id, [...lessonIds])));
+  return new Map(rows.map((r) => [r.id, r.quizContent]));
+}
+
 export async function getLessonById(tenantId: string, id: string): Promise<Lesson | null> {
   const rows = await db
     .select()
@@ -204,14 +268,23 @@ export async function getLessonById(tenantId: string, id: string): Promise<Lesso
  * strictly better than a lost lesson edit.
  */
 export async function bumpCourseContentVersion(courseId: string): Promise<void> {
+  // Every lesson and section write lands here, so this is also where the public cache of the
+  // course's content is cleared (src/lib/public-cache.ts). The course tag is cleared even if the
+  // bump itself fails: the lesson edit DID happen, and must not hide behind a stale cache. The
+  // catalog tag (the course row, which carries content_version) needs the tenant from the bump.
+  let tenantId: string | null = null;
   try {
-    await db
+    const [row] = await db
       .update(courses)
       .set({ contentVersion: sql`${courses.contentVersion} + 1`, updatedAt: new Date() })
-      .where(eq(courses.id, courseId));
+      .where(eq(courses.id, courseId))
+      .returning({ tenantId: courses.tenantId });
+    tenantId = row?.tenantId ?? null;
   } catch {
     // swallow: see above
   }
+  if (tenantId) expireCourse(tenantId, courseId);
+  else expireCacheTags([CACHE_TAGS.course(courseId)]);
 }
 
 export async function createLesson(
@@ -387,6 +460,8 @@ export async function ensureUsername(userId: string, email: string): Promise<str
     .insert(userProfiles)
     .values({ userId, username: candidate })
     .onConflictDoUpdate({ target: userProfiles.userId, set: { username: candidate } });
+  // A username is half of every course URL; the cached route index must pick up the new one.
+  expireProfiles();
   return candidate;
 }
 

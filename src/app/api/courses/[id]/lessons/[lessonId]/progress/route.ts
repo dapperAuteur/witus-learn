@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { apiContext, auditorReadOnlyBlock, canEditCourse, errorJson, json } from "@/lib/api";
-import { getLessonById, listLessons } from "@/db/queries/authoring";
+import { getLessonById, listLessonSummaries } from "@/db/queries/authoring";
 import { getCompletedLessonIds, upsertProgress } from "@/db/queries/progress";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { lessonAccess } from "@/lib/gating";
@@ -27,7 +27,7 @@ export async function POST(req: Request, { params }: Params) {
   if (!lesson || lesson.courseId !== id) return errorJson("Not found", 404);
 
   const isEditor = await canEditCourse(session, sdb.tenantId, course);
-  const all = await listLessons(id);
+  const all = await listLessonSummaries(id);
   const ordered = (isEditor ? all : all.filter((l) => l.isPublished)).map((l) => l.id);
   const completed = new Set(await getCompletedLessonIds(learner.id, id));
   const enrolled = await isEnrolled(learner.id, id);

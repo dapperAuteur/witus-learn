@@ -8,7 +8,7 @@ import { getActiveLearner } from "@/lib/active-learner";
 import { listManagedChildren } from "@/db/queries/family";
 import { countIncomingPings } from "@/db/queries/contact";
 import { listCategories } from "@/db/queries/catalog";
-import { tenantHasMapData } from "@/db/queries/map";
+import { cachedMapDataExists } from "@/lib/public-cache";
 import { VETTING_QUEUE } from "@/lib/admin-nav";
 import { SignOutButton } from "./sign-out-button";
 import { ThemeToggle } from "./theme-toggle";
@@ -43,7 +43,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   const hasCivics = categories.some((c) => c.name === "Civics");
   const hasLanguages = categories.some((c) => c.name === "Languages");
   // The Commodity Map shows for any school that HAS map data (flag is only a force-hide override).
-  const showMap = flags.commodityMap !== false && (await tenantHasMapData(tenant.id));
+  const showMap = flags.commodityMap !== false && (await cachedMapDataExists(tenant.id));
 
   // Family Model B "studying as" switcher: only rendered for a parent with ≥1 managed
   // child. The active learner is re-verified server-side on every request (never trusted

@@ -101,6 +101,51 @@ export async function listCourses(tenantId: string, opts: CatalogQuery = {}): Pr
     .orderBy(orderBy);
 }
 
+/**
+ * Slugs of this tenant's published courses: the same rows `listCourses(tenantId)` returns, one
+ * column instead of all of them. For callers that only ask "is this course live here?" (the
+ * cross-course entity checks on the lesson page and the catalog search).
+ */
+export async function listPublishedCourseSlugs(tenantId: string): Promise<string[]> {
+  const rows = await db
+    .select({ slug: courses.slug })
+    .from(courses)
+    .where(and(eq(courses.tenantId, tenantId), eq(courses.isPublished, true), isNotNull(courses.slug)));
+  return rows.map((r) => r.slug as string);
+}
+
+export interface CourseRoute {
+  id: string;
+  /** The instructor's username, the first half of /{username}/{slug}. */
+  username: string;
+  slug: string;
+}
+
+/**
+ * Every pretty URL in this tenant, as (username, slug) → course id. Small (three short columns per
+ * course) and bounded by the catalog, so it can be cached per tenant and a course page resolved
+ * from it without a per-URL cache entry for every path a bot invents. Drafts and private courses
+ * are included: the view gate, not this index, decides who may see them.
+ */
+export async function listCourseRoutes(tenantId: string): Promise<CourseRoute[]> {
+  const rows = await db
+    .select({ id: courses.id, username: userProfiles.username, slug: courses.slug })
+    .from(courses)
+    .innerJoin(userProfiles, eq(userProfiles.userId, courses.instructorId))
+    .where(and(eq(courses.tenantId, tenantId), isNotNull(courses.slug), isNotNull(userProfiles.username)));
+  return rows.map((r) => ({ id: r.id, username: r.username as string, slug: r.slug as string }));
+}
+
+/**
+ * Resolve /{username}/{slug} against the route index with getCourseBySlug's matching rules:
+ * `user_profiles.username` is citext (case-insensitive) and `courses.slug` is text (exact). A slug
+ * shared by two instructors is told apart by the username, as the unique index guarantees.
+ */
+export function findCourseRoute(routes: readonly CourseRoute[], username: string, slug: string): CourseRoute | null {
+  const user = username.toLowerCase();
+  return routes.find((r) => r.slug === slug && r.username.toLowerCase() === user) ?? null;
+}
+
 /** By-id read filtered to the tenant: a foreign id returns null → the caller 404s. */
 export async function getCourseById(tenantId: string, id: string): Promise<Course | null> {
   const rows = await db

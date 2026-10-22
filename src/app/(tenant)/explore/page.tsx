@@ -4,15 +4,16 @@ import { notFound } from "next/navigation";
 import { requireTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { ogImageUrl } from "@/lib/og";
-import { listBelts, listCommodities, tenantHasMapData } from "@/db/queries/map";
 import {
-  countPublicCourses,
-  getCurriculumStats,
-  getEpisodeFacts,
-  getExploreCopy,
-  getMostCitedCourse,
-  summarizeMap,
-} from "@/db/queries/explore";
+  cachedBelts,
+  cachedCommodities,
+  cachedCountPublicCourses,
+  cachedCurriculumStats,
+  cachedEpisodeFacts,
+  cachedMapDataExists,
+  cachedMostCitedCourse,
+} from "@/lib/public-cache";
+import { getExploreCopy, summarizeMap } from "@/db/queries/explore";
 import { type MapPin } from "@/components/commodity-map";
 import { type MapBelt } from "@/components/growing-belts-map";
 import { MapTabs } from "@/components/map-tabs";
@@ -49,12 +50,12 @@ function plural(n: number, singular: string, pluralForm?: string): string {
 
 export async function generateMetadata(): Promise<Metadata> {
   const tenant = await requireTenant();
-  if (tenant.flags.commodityMap === false || !(await tenantHasMapData(tenant.id))) {
+  if (tenant.flags.commodityMap === false || !(await cachedMapDataExists(tenant.id))) {
     return { title: "Explore" };
   }
 
   const [commodities, copy] = await Promise.all([
-    listCommodities(tenant.id),
+    cachedCommodities(tenant.id),
     getExploreCopy(tenant),
   ]);
   const map = summarizeMap(commodities, []);
@@ -82,24 +83,24 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function ExplorePage() {
   const tenant = await requireTenant();
-  if (tenant.flags.commodityMap === false || !(await tenantHasMapData(tenant.id))) notFound();
+  if (tenant.flags.commodityMap === false || !(await cachedMapDataExists(tenant.id))) notFound();
 
   const [rows, beltRows, copy, stats] = await Promise.all([
-    listCommodities(tenant.id),
-    listBelts(tenant.id),
+    cachedCommodities(tenant.id),
+    cachedBelts(tenant.id),
     getExploreCopy(tenant),
-    getCurriculumStats(tenant.id),
+    cachedCurriculumStats(tenant.id),
   ]);
 
   // How many pins actually open a full course — tenant-scoped, so a pin somehow pointing
   // at a foreign course contributes nothing rather than inflating the number.
   const courseIds = rows.map((c) => c.courseId).filter((id): id is string => !!id);
   const [pinCourses, citedCourse, episodeFacts] = await Promise.all([
-    countPublicCourses(tenant.id, courseIds),
-    getMostCitedCourse(tenant.id),
+    cachedCountPublicCourses(tenant.id, courseIds),
+    cachedMostCitedCourse(tenant.id),
     // Per-episode lesson/source counts, so clicking a pin can reveal what the episode actually
     // contains instead of throwing the visitor into the course. Tenant-scoped (see the query).
-    getEpisodeFacts(tenant.id, courseIds),
+    cachedEpisodeFacts(tenant.id, courseIds),
   ]);
 
   const map = summarizeMap(rows, beltRows);

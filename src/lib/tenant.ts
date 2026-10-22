@@ -2,9 +2,9 @@ import "server-only";
 import { cache } from "react";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
-import { eq } from "drizzle-orm";
-import { db } from "@/db/client";
-import { tenantDomains, tenants } from "@/db/schema";
+import type { tenants } from "@/db/schema";
+import { lookupTenantByHost } from "@/db/queries/tenant-lookup";
+import { cachedTenantByHost } from "@/lib/public-cache";
 import { env, hasDatabase } from "./env";
 import { normalizeHost } from "./tenant-util";
 
@@ -20,14 +20,20 @@ export async function getTenantByHost(rawHost: string | null | undefined): Promi
   const host = normalizeHost(rawHost);
   if (!host || !hasDatabase) return null;
 
-  const rows = await db
-    .select({ tenant: tenants })
-    .from(tenantDomains)
-    .innerJoin(tenants, eq(tenantDomains.tenantId, tenants.id))
-    .where(eq(tenantDomains.host, host))
-    .limit(1);
+  const tenant = await lookupTenantByHost(host);
+  if (!tenant || !tenant.isActive) return null;
+  return tenant;
+}
 
-  const tenant = rows[0]?.tenant ?? null;
+/**
+ * getTenantByHost through the cross-request data cache (tag `tenants`, cleared by every tenant,
+ * domain and activation write). Request scope only: unstable_cache throws outside one, so code
+ * that may run elsewhere (the magic-link sender, auth hooks) keeps the plain lookup above.
+ */
+export async function getTenantByHostCached(rawHost: string | null | undefined): Promise<TenantRecord | null> {
+  const host = normalizeHost(rawHost);
+  if (!host || !hasDatabase) return null;
+  const tenant = await cachedTenantByHost(host);
   if (!tenant || !tenant.isActive) return null;
   return tenant;
 }
@@ -40,7 +46,7 @@ export async function getTenantByHost(rawHost: string | null | undefined): Promi
 export const resolveTenant = cache(async (): Promise<TenantRecord | null> => {
   const h = await headers();
   const host = env.DEV_TENANT_HOST || h.get("x-forwarded-host") || h.get("host");
-  return getTenantByHost(host);
+  return getTenantByHostCached(host);
 });
 
 /** Tenant or 404. Unknown host must never fall back to a default brand's content. */

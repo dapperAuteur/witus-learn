@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import type { Metadata } from "next";
 import { ogImageUrl } from "@/lib/og";
 import { getScopedDb } from "@/db/scoped";
+import { cachedCategories, cachedListCourses, cachedPublishedCourseSlugs } from "@/lib/public-cache";
 import { getSession, getMembership, isPlatformOwner } from "@/lib/session";
 import { resolveTenant } from "@/lib/tenant";
 import { isWitusBrandedHost } from "@/lib/witus-host";
@@ -56,8 +57,10 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
   const isEditor = owner || ["instructor", "brand_admin"].includes(membership);
 
   const [rawCourses, categories, promotions] = await Promise.all([
-    sdb.listCourses({ q: sp.q, category: sp.category, sort, includeUnpublished: isEditor }),
-    sdb.listCategories(),
+    // Cached unless the shape is per-visitor (a search or an editor's unpublished view), in which case
+    // cachedListCourses reads the database directly. See src/lib/public-cache.ts.
+    cachedListCourses(sdb.tenantId, { q: sp.q, category: sp.category, sort, includeUnpublished: isEditor }),
+    cachedCategories(sdb.tenantId),
     // Active codeless promotions for THIS tenant only; each card resolves its own price from them.
     sdb.listActivePromotions(),
   ]);
@@ -68,7 +71,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
   const matchedEntities = sp.q ? matchEntities(sp.q) : [];
   let entityResults: { slug: string; name: string; kind: string; count: number }[] = [];
   if (matchedEntities.length > 0) {
-    const published = new Set((await sdb.listCourses({})).map((c) => c.slug));
+    const published = new Set(await cachedPublishedCourseSlugs(sdb.tenantId));
     entityResults = matchedEntities
       .map((e) => ({ slug: e.slug, name: e.name, kind: e.kind, count: e.courses.filter((l) => published.has(l.courseSlug)).length }))
       .filter((e) => e.count >= 2);

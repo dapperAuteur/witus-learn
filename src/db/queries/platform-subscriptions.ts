@@ -3,6 +3,7 @@ import { eq } from "drizzle-orm";
 import { db } from "@/db/client";
 import { platformSubscriptions, type PlatformSubscription } from "@/db/schema/billing";
 import { tenants } from "@/db/schema/tenancy";
+import { expireTenants } from "@/lib/cache-tags";
 
 // Per-school platform billing (plans/51). One row per school; each carries its own negotiated price,
 // recurring or lifetime. NOT tenant-scoped by a request host: this is a platform-owner surface that
@@ -109,6 +110,7 @@ export async function activatePlatformSubscription(opts: {
     })
     .where(eq(platformSubscriptions.tenantId, opts.tenantId));
   await db.update(tenants).set({ isActive: true }).where(eq(tenants.id, opts.tenantId));
+  expireTenants();
 }
 
 /** Webhook: a school's recurring subscription changed (active, past_due, or canceled). Lifetime rows
@@ -143,4 +145,6 @@ export async function setPlatformSubscriptionStatusByTenantId(
  *  its learners; reactivating brings it back. Idempotent (setting the same value is a no-op rewrite). */
 export async function setTenantActive(tenantId: string, active: boolean): Promise<void> {
   await db.update(tenants).set({ isActive: active }).where(eq(tenants.id, tenantId));
+  // A suspended school must stop resolving at once, not when its cached tenant row expires.
+  expireTenants();
 }

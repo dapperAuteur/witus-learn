@@ -9,7 +9,7 @@ import { CourseCard } from "@/components/course-card";
 import { ShareButton } from "@/components/share-button";
 import { LearnerDashboardView } from "@/components/learner-dashboard";
 import { ComingSoon } from "@/components/coming-soon";
-import { tenantHasMapData } from "@/db/queries/map";
+import { cachedCategories, cachedListCourses, cachedMapDataExists } from "@/lib/public-cache";
 import { getUsernames } from "@/db/queries/authoring";
 import { coursePagePath } from "@/lib/course-href";
 
@@ -27,7 +27,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
   if (tenant.flags.comingSoon) return <ComingSoon tenant={tenant} />;
 
   // The Commodity Map shows for any school that HAS map data (the flag is only a force-hide override).
-  const showMap = tenant.flags.commodityMap !== false && (await tenantHasMapData(tenant.id));
+  const showMap = tenant.flags.commodityMap !== false && (await cachedMapDataExists(tenant.id));
 
   // Logged-in learner → mastery dashboard (unless they asked for the catalog).
   const session = await getSession();
@@ -52,8 +52,9 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
 
   // Active codeless promotions for THIS tenant, resolved per card below. One query for the page.
   const [courses, categories, promotions] = await Promise.all([
-    sdb.listCourses(),
-    sdb.listCategories(),
+    // Public catalog rows, the same for every visitor: cross-request cached (src/lib/public-cache.ts).
+    cachedListCourses(sdb.tenantId),
+    cachedCategories(sdb.tenantId),
     sdb.listActivePromotions(),
   ]);
   const featured = courses.filter((c) => c.isFeatured);

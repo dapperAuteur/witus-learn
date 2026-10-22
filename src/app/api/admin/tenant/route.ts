@@ -4,6 +4,7 @@ import { apiContext, errorJson, isTenantAdmin } from "@/lib/api";
 import { db } from "@/db/client";
 import { tenants } from "@/db/schema";
 import { applyThemePatch, HEX_COLOR as HEX, ThemePatchSchema } from "@/lib/theme-settings";
+import { expireTenants } from "@/lib/cache-tags";
 
 const Schema = z.object({
   name: z.string().min(1).max(120).optional(),
@@ -60,6 +61,9 @@ export async function PATCH(req: Request) {
       updatedAt: new Date(),
     })
     .where(eq(tenants.id, sdb.tenantId));
+  // Every request reads its tenant through the cross-request cache; the new name/theme/flags must
+  // show on the next page view, not an hour later.
+  expireTenants();
 
   return Response.json({ ok: true });
 }
