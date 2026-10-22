@@ -61,7 +61,8 @@ import type { AuthoredCourse } from "./authored-course";
 // ── Source helpers ────────────────────────────────────────────────────────────────────────────────
 const READ = "Retrieved October 21, 2026, from";
 
-// Rental houses and the peer-to-peer platform
+// Rental houses and the peer-to-peer platform. ShareGrid help articles carry an update date; APA 7
+// letters same-year works in date order (titles break a tie on the same day).
 const RH_CINEMA = `Rental House by Roberts Camera. (n.d.-a). *Cinema cameras* [Rental page]. ${READ} https://rentalhouseindy.com/rentals/cameras/cinema-cameras`;
 const RH_GIMBALS = `Rental House by Roberts Camera. (n.d.-b). *Gimbals, stabilizers, and sliders* [Rental page]. ${READ} https://rentalhouseindy.com/rentals/camera-supports/gimbals-stabilizers-and-sliders`;
 const RH_POLICIES = `Rental House by Roberts Camera. (n.d.-c). *Policies*. ${READ} https://rentalhouseindy.com/policies`;
@@ -71,17 +72,17 @@ const LR_LENSCAP = `Lensrentals. (n.d.-a). *Lenscap*. ${READ} https://www.lensre
 const LR_FX3A = `Lensrentals. (n.d.-b). *Rent a Sony FX3 A (body only)*. ${READ} https://www.lensrentals.com/rent/sony-fx3-a-body-only`;
 const LR_BOLT = `Lensrentals. (n.d.-c). *Rent a Teradek Bolt 6 LT 750 3G-SDI/HDMI kit (V-mount)*. ${READ} https://www.lensrentals.com/rent/teradek-bolt-6-lt-750-3g-sdi-hdmi-kit-v-mount`;
 const SG = "https://support.sharegrid.com/en/articles/";
-const SG_COMPARE = `ShareGrid. (n.d.-a). *Compare ShareGrid damage waiver and insurance options*. ${READ} ${SG}733937-compare-sharegrid-damage-waiver-and-insurance-options`;
-const SG_COVERAGE = `ShareGrid. (n.d.-b). *Coverage guidelines for owners on ShareGrid*. ${READ} ${SG}733956-coverage-guidelines-for-owners-on-sharegrid`;
-const SG_SHOOT_DAYS = `ShareGrid. (n.d.-c). *How ShareGrid calculates shoot days and pricing (local pickup)*. ${READ} ${SG}748910-how-sharegrid-calculates-shoot-days-and-pricing-local-pickup`;
-const SG_BEST_MATCH = `ShareGrid. (n.d.-d). *How the "Best Match" search filter ranks your listings*. ${READ} ${SG}733951-how-the-best-match-search-filter-ranks-your-listings`;
-const SG_MISSING = `ShareGrid. (n.d.-e). *Missing rental items policy*. ${READ} ${SG}6005236-missing-rental-items-policy`;
-const SG_DAMAGE = `ShareGrid. (n.d.-f). *Navigating equipment damage and missing items for ShareGrid owners*. ${READ} ${SG}733935-navigating-equipment-damage-and-missing-items-for-sharegrid-owners`;
-const SG_ID = `ShareGrid. (n.d.-g). *Owner guide: Verifying renter ID at local pickup*. ${READ} ${SG}733945-owner-guide-verifying-renter-id-at-local-pickup`;
-const SG_GUARANTEE = `ShareGrid. (n.d.-h). *ShareGrid owner guarantee*. ${READ} ${SG}3282176-sharegrid-owner-guarantee`;
-const SG_TIPS = `ShareGrid. (n.d.-i). *Tips for rental owners on ShareGrid*. ${READ} ${SG}733934-tips-for-rental-owners-on-sharegrid`;
-const SG_FEES = `ShareGrid. (n.d.-j). *Understanding ShareGrid fees*. ${READ} ${SG}733957-understanding-sharegrid-fees`;
-const SG_THEFT = `ShareGrid. (n.d.-k). *Understanding ShareGrid's damage + theft option*. ${READ} ${SG}733952-understanding-sharegrid-s-damage-theft-option`;
+const SG_COMPARE = `ShareGrid. (2026b, January 29). *Compare ShareGrid damage waiver and insurance options*. ${SG}733937-compare-sharegrid-damage-waiver-and-insurance-options`;
+const SG_COVERAGE = `ShareGrid. (2026f, June 2). *Coverage guidelines for owners on ShareGrid*. ${SG}733956-coverage-guidelines-for-owners-on-sharegrid`;
+const SG_SHOOT_DAYS = `ShareGrid. (2026h, July 17). *How ShareGrid calculates shoot days and pricing (local pickup)*. ${SG}748910-how-sharegrid-calculates-shoot-days-and-pricing-local-pickup`;
+const SG_BEST_MATCH = `ShareGrid. (2025a, August 13). *How the "Best Match" search filter ranks your listings*. ${SG}733951-how-the-best-match-search-filter-ranks-your-listings`;
+const SG_MISSING = `ShareGrid. (2026e, February 20). *Missing rental items policy*. ${SG}6005236-missing-rental-items-policy`;
+const SG_DAMAGE = `ShareGrid. (2025b, August 13). *Navigating equipment damage and missing items for ShareGrid owners*. ${SG}733935-navigating-equipment-damage-and-missing-items-for-sharegrid-owners`;
+const SG_ID = `ShareGrid. (2026a, January 15). *Owner guide: Verifying renter ID at local pickup*. ${SG}733945-owner-guide-verifying-renter-id-at-local-pickup`;
+const SG_GUARANTEE = `ShareGrid. (2026g, June 2). *ShareGrid owner guarantee*. ${SG}3282176-sharegrid-owner-guarantee`;
+const SG_TIPS = `ShareGrid. (2026c, January 30). *Tips for rental owners on ShareGrid*. ${SG}733934-tips-for-rental-owners-on-sharegrid`;
+const SG_FEES = `ShareGrid. (2025c, August 13). *Understanding ShareGrid fees*. ${SG}733957-understanding-sharegrid-fees`;
+const SG_THEFT = `ShareGrid. (2026d, January 30). *Understanding ShareGrid's damage + theft option*. ${SG}733952-understanding-sharegrid-s-damage-theft-option`;
 const KITSPLIT_2023 =
   "KitSplit. (2023, January 15). *KitSplit | Quality gear rentals. Guaranteed.* [Home page, archived by the Internet Archive]. https://web.archive.org/web/20230115110658/https://kitsplit.com/";
 const KITSPLIT = `KitSplit. (n.d.). *KitSplit* [Home page]. ${READ} https://kitsplit.com/`;
@@ -152,7 +153,7 @@ export const RENTING_OUT_PRODUCTION_GEAR_COURSE: AuthoredCourse = {
 
 **Three kinds of business.** Gear reaches a production in three common ways.
 
-1. **The rental house.** A regional rental house publishes a price list on its website. On October 21, 2026, it listed a Sony FX3 cinema camera with its XLR top handle at $125 for one day and $562.50 for one week. Its policy page sets the terms: a renter must be at least 21 and show a valid government ID and a credit card, and a reservation that includes items of $3,000 or more needs a certificate of insurance for rented equipment. Lensrentals, a rental house that publishes its prices by rental length, listed the newer FX3 A body at $155 for 3 days and $222 for 7 days.
+1. **The rental house.** A regional rental house publishes a price list on its website. On October 21, 2026, it listed a Sony FX3 cinema camera with its XLR top handle at $125 for one day and $562.50 for one week. Its policy page sets the terms: a renter must be at least 21 and show a valid government ID and a credit card, and a reservation that includes items of $3,000 or more needs a certificate of insurance for rented equipment. Lensrentals, a rental house that publishes its prices by rental length, listed a Sony FX3 A body at $155 for 3 days and $222 for 7 days.
 2. **The peer-to-peer platform.** On ShareGrid, owners list their own gear and other members rent it; its help pages call the listings "the marketplace". It charges owners a "Fixed 15% service fee". Lesson 12 works through what that fee leaves you.
 3. **The owner-operator.** You are hired to operate, and the client pays you separately for bringing your own kit. One published rate guide calls this "kit rental" and gives a norm for it that lesson 13 tests against real price lists.
 
@@ -635,7 +636,389 @@ So on a major sports show, the wireless path is set by the show. That is the cas
       },
     },
 
-    // @@SECTIONS-3-8@@
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3: Acquiring gear
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "new-or-used",
+      title: "8 · New or used",
+      section: "3 · Acquiring gear",
+      recallContent: [
+        {
+          prompt: "By this course's arithmetic, about how many weekly rentals of a Bolt 6 LT kit cost as much as buying the set?",
+          answer: "About 12 ($2,390 ÷ $203 = 11.8).",
+        },
+        {
+          prompt: "Under 47 C.F.R. § 74.600, who may hold a license for a TV broadcast auxiliary station?",
+          answer: "Only a television broadcast station, a Class A TV station, a television broadcast network-entity, a low power TV station, or a TV translator station; an individual crew member is none of those.",
+        },
+      ],
+      body: `**Two ways to buy the same job.** A body that rents for the same price earns the same money whether you paid full price for it or less. What you paid decides how many rentals it takes to earn it back. That makes the new-or-used choice a money question first.
+
+**New, from a retailer's page.** On October 21, 2026, a camera retailer listed the Sony FX3A body at $4,298. Its box list: the body, an XLR handle unit, an NP-FZ100 battery, a BC-ZD1 charger, an accessory shoe kit, a body cap, an accessory shoe cap and a handle shoe cap.
+
+**Used, from a dealer's page.** The same day, MPB, a used-gear dealer, showed 11 used Sony FX3 bodies available, priced from $3,549 to $3,929. The FX3 is a different model from the FX3A. Each of the eight listings it displayed read "Cosmetic condition: Excellent" and "Standard 6 month warranty". All eight included an NP-FZ100 battery, the FX3 battery door and the XLR handle unit. The rest varied by listing: some had original packaging or a manual, some a USB cable, one a third-party charger in place of Sony's, and two added third-party parts such as a cage or a top plate.
+
+**The arithmetic, shown.** This course's own working, comparing the two pages:
+
+- $4,298 − $3,929 = $369, and $4,298 − $3,549 = $749.
+- At the regional house's $125 day rate for an FX3, $749 is about 6 billed days ($749 ÷ $125 = 6.0).
+
+So the used body saved, at most, about six days of rent at that price. The comparison is between two different models, so it measures money only. Whether renters in your market will pay the same for each is the demand question of lesson 4.
+
+**Five checks before you buy used.** These are this course's advice, each tied to a page you can read:
+
+1. **Match the listing to your package.** The dealer's listings differ in what is in the box. Price the missing pieces, such as a charger, before comparing.
+2. **Write down the warranty.** The used listings said six months. Know when it ends.
+3. **Reset it.** Sony's help guide says that if a camera "is transferred to you or you borrow the camera: initialize the camera or cancel the linkage with Creators' Cloud on the camera."
+4. **Check the software.** Sony's Version screen shows the body's firmware and, with a compatible lens attached, the lens's (lesson 6).
+5. **Record it.** Serial number, invoice and photos go into the asset record the day it arrives (lesson 9).
+
+**When new may be worth it.** This course's reasoning: a longer warranty, a full box and a known history are worth something to a rental owner, because the item will go out to strangers. If the used price saves only a few days of rent, those things may be worth more than the saving. If it saves weeks, used may win. Either way, decide with the numbers written down.
+
+:::reveal What did MPB show for used FX3 bodies on October 21, 2026? ||| 11 available, priced from $3,549 to $3,929.
+
+:::reveal What warranty did each displayed used FX3 listing state? ||| "Standard 6 month warranty".
+
+:::reveal What does Sony's help guide tell you to do when a camera is transferred to you? ||| Initialize the camera or cancel its linkage with Creators' Cloud on the camera.
+
+## Sources
+- ${FOCUS_FX3A} Locator: price line and "What's in the box".
+- ${MPB_FX3} Locator: results header and the eight listings' condition, warranty and "includes" lines.
+- ${RH_FX3} Locator: "1 Day" price line.
+- ${SONY_LENDING} Locator: "Notes on using the cloud service (Creators' Cloud)", the transfer instructions.
+- ${SONY_VERSION} Locator: the first two sentences.`,
+    },
+    {
+      slug: "the-asset-record",
+      title: "9 · Serial numbers, receipts and the asset record",
+      section: "3 · Acquiring gear",
+      recallContent: [
+        {
+          prompt: "By this course's arithmetic, what was the most a used FX3 saved against a new FX3A on October 21, 2026, and what is that in days of rent at $125?",
+          answer: "$749 ($4,298 − $3,549), about 6 billed days at $125.",
+        },
+        {
+          prompt: "Name three of the five checks this course suggests before buying used.",
+          answer: "Any three of: match the listing to your package; write down the warranty; reset the camera; check the firmware; record serial number, invoice and photos.",
+        },
+      ],
+      body: `**Three readers, one set of facts.** Three parties may one day ask what you own, when you got it and what it is worth: the IRS, your insurer, and a rental platform's guarantee. They ask for nearly the same facts. Keeping one record that answers all three is the cheapest protection this course teaches.
+
+**What the IRS says asset records should show.** IRS Publication 583 says of business assets: "You need records to figure the annual depreciation and the gain or loss when you sell the assets." It lists what the records should show:
+
+- When and how you acquired the asset, and the purchase price.
+- The cost of any improvements.
+- The section 179 deduction taken, and deductions taken for depreciation (section 7 explains both).
+- Deductions taken for casualty losses, "such as losses resulting from fires or storms."
+- How you used the asset.
+- When and how you disposed of it, the selling price, and the expenses of sale.
+
+It names documents that may show this, including "Purchase and sales invoices" and "Canceled checks". And it says how long to keep them: "Keep records relating to property until the period of limitations expires for the year in which you dispose of the property in a taxable disposition." For a camera, that can be years after you sell it.
+
+**What an insurer's guide asks for.** The Insurance Information Institute's guide to a home inventory says to describe each item and "note where you bought it, the make and model, what you paid". It says serial numbers are "usually found on the back or bottom of major appliances and electronic equipment" and are "a useful reference". It says to "Store sales receipts, purchase contracts, and appraisals with your list", and to make a photo record labeled with "what's pictured, where you bought it, the make or model". The guide is written for a household. This course applies the same habits to rental gear.
+
+**What a platform asks for.** ShareGrid's Owner Guarantee tells owners to "Set the Replacement Value accurately for each of your rental Listings. ShareGrid will only pay for an item up to the listed Replacement Value." It adds: "Make sure all items in a package are mentioned in the Listing. If they're not, they may not be protected by the ShareGrid Owner Guarantee."
+
+**One record that answers all three.** This course suggests one row per item, with these fields:
+
+| Field | Who asks for it |
+|---|---|
+| Make, model and serial number | Insurer, platform |
+| Date bought, seller, price paid, invoice | IRS, insurer |
+| Photos on arrival, labeled | Insurer, platform |
+| Replacement value today, with the date you checked it | Platform, insurer |
+| What ships with it (charger, cables, case) | Platform |
+| Firmware version | You, at each check-out |
+| Business and personal days of use | IRS (lesson 23) |
+| Date sold or retired, price, costs of sale | IRS |
+
+Update the replacement value when prices move. A value set the day you bought the item can be wrong a year later, and the guarantee pays only up to the value listed.
+
+:::reveal According to IRS Publication 583, how long should you keep records about a business asset? ||| Until the period of limitations expires for the year in which you dispose of the property in a taxable disposition.
+
+:::reveal Where does the Insurance Information Institute say serial numbers are usually found? ||| On the back or bottom of major appliances and electronic equipment.
+
+:::reveal What does ShareGrid say happens to package items not mentioned in a listing? ||| They may not be protected by the ShareGrid Owner Guarantee.
+
+## Sources
+- ${IRS_P583} Locator: "Supporting Documents", "Assets" (the list of what records should show and the documents that show it); "How Long To Keep Records", "Assets".
+- ${III_INVENTORY} Locator: "Start your home inventory now" (basic information, serial numbers, proof of value); "Use technology to make your home inventory easier" (photos).
+- ${SG_GUARANTEE} Locator: "Eligibility", first two items.`,
+    },
+    {
+      slug: "kits-that-rent-together",
+      title: "10 · Kits that rent together",
+      section: "3 · Acquiring gear",
+      recallContent: [
+        {
+          prompt: "Name four things IRS Publication 583 says asset records should show.",
+          answer: "Any four of: when and how you acquired the asset; purchase price; cost of improvements; section 179 deduction taken; depreciation taken; casualty losses taken; how you used it; when and how you disposed of it; selling price; expenses of sale.",
+        },
+        {
+          prompt: "What does ShareGrid say it will pay, at most, for an unreturned item under its Owner Guarantee?",
+          answer: "Up to the listed Replacement Value, which the owner must set accurately.",
+        },
+      ],
+      body: `**Renters book something that works.** A production does not want a camera body. It wants pictures by call time. Rental houses price and name packages to match:
+
+- Lensrentals' FX3 A rental lists seven items in the box: the body, a body cap, a strap, an NP-FZ100 battery, a BC-ZD1 charger, a 3-foot Thunderbolt 4 USB-C cable and a USB charger.
+- The regional rental house lists a "Sony Cinema Line FX3 w/ XLR Top Handle", a "DJI RS4 Pro Combo Kit", a "Hollyland PyroTX and RX 7\" Monitor Kit" and a "RED Komodo-X Camera Package". The names themselves say these go out as sets.
+
+**The part that breaks a booking.** Lensrentals' Bolt 6 LT 750 kit lists a transmitter, a receiver, seven antennas, a D-Tap power cable, a 2-pin LEMO AC adapter, mounts, two V-Mount plates and more, then says: "Batteries are not included and must be rented separately." This course's reasoning: whatever you leave out, the renter must find somewhere else. A renter who has to shop twice for one job may book the whole job from someone who supplies it all.
+
+**Build the kit list from the job backward.** This course suggests a method, not a rule. List what the job needs to make a usable picture, in order:
+
+1. Capture: the body, a lens, and the media it records to.
+2. Power: batteries, a charger, and any cable that powers it from a larger battery.
+3. Seeing the picture: a monitor or a wireless link, if the job needs one.
+4. Holding it: the handle, a cage, a gimbal or a tripod plate.
+5. Connecting it: the cables each piece needs.
+6. Carrying it: a case that fits all of the above.
+
+Mark each line **included**, **add-on at a price**, or **renter supplies**, and put that list in the listing.
+
+**Describe and photograph exactly that.** ShareGrid's tips for owners say: "Clearly describe your gear and any special notes the renter should be aware of" and "Ensure your photos are accurate and show your gear clearly." A clear list also protects you. ShareGrid's guarantee covers only package items "mentioned in the Listing", and its missing-items policy says "Renters are accountable for returning all rented gear" and that a renter "may be charged the full replacement cost (including tax and shipping)" for an item that cannot be returned. You can only claim for what you can show went out.
+
+**Media cards carry other people's work.** Sony's help guide warns that "Executing [Format] or [Delete] on the camera or a computer may not completely delete the data on the memory card" and recommends deleting data "completely using data deletion software" before lending a card. If your kit includes cards, lesson 19 builds that into the turnaround.
+
+:::reveal What did Lensrentals' Bolt 6 LT kit listing say about batteries? ||| "Batteries are not included and must be rented separately."
+
+:::reveal Name the six groups in this course's kit-list method. ||| Capture, power, seeing the picture, holding it, connecting it, and carrying it.
+
+:::reveal What does Sony's help guide say about formatting a memory card before lending it? ||| Formatting or deleting may not completely delete the data; it recommends data deletion software.
+
+## Sources
+- ${LR_FX3A} Locator: "What's included" list.
+- ${RH_CINEMA} Locator: item names.
+- ${RH_GIMBALS} Locator: item name.
+- ${RH_WIRELESS} Locator: item names.
+- ${LR_BOLT} Locator: included-items list and the batteries note.
+- ${SG_TIPS} Locator: "Create a Comprehensive Description" and "Upload High-Quality Photos".
+- ${SG_GUARANTEE} Locator: "Eligibility", second item.
+- ${SG_MISSING} Locator: first two paragraphs.
+- ${SONY_LENDING} Locator: "Notes on lending, transferring, or discarding a memory card to others".`,
+    },
+    // @@QUIZ-3@@
+
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4: Pricing
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "reading-a-price-list",
+      title: "11 · Reading a published price list",
+      section: "4 · Pricing",
+      recallContent: [
+        {
+          prompt: "What did Lensrentals list as included with its FX3 A body rental?",
+          answer: "The body, a body cap, a strap, an NP-FZ100 battery, a BC-ZD1 charger, a 3-foot Thunderbolt 4 USB-C cable and a USB charger.",
+        },
+        {
+          prompt: "Why does this course say leaving power or media out of a package can cost a booking?",
+          answer: "The renter must find the missing pieces somewhere else, and a renter who has to shop twice may book the whole job from someone who supplies it all.",
+        },
+      ],
+      body: `**Prices are published, so read them.** Rental houses publish their prices, and a peer-to-peer platform publishes its rules for counting days. Together they tell you what a renter near you already pays, and how a "week" or a "weekend" is counted. Every price below was read on October 21, 2026.
+
+**One house's day and week, side by side.** This course divided each week price by its day price:
+
+| Item at the regional rental house | Day | Week | Week ÷ day |
+|---|---|---|---|
+| Sony FX3 with XLR top handle | $125 | $562.50 | 4.5 |
+| Sony FX30 with XLR top handle | $75 | $335 | 4.47 |
+| Canon EOS C70 | $100 | $450 | 4.5 |
+| RED Komodo-X package | $300 | $1,200 | 4.0 |
+| DJI RS4 Pro Combo Kit | $75 | $250 | 3.33 |
+| Hollyland Pyro 7-inch kit | $75 | $325 | 4.33 |
+
+Its weekend rate, for a Friday start and a Monday end, is "1.5 times the day rate" for most items.
+
+**A house that prices by length.** Lensrentals does not quote a day rate. Its FX3 A body costs $155 for 3 days, $222 for 7 days, $389 for 14 days and $655 for 30 days. This course's arithmetic per day: about $51.67 at 3 days, $31.71 at 7, $27.79 at 14 and $21.83 at 30. The longer the rental, the less each day costs.
+
+**A platform that counts days for you.** ShareGrid caps a full week at 3 shoot days and a month at 10, and counts Saturday and Sunday as one (lesson 5).
+
+**A guide's rule of thumb.** The Rate Guide says a weekly kit rate is "typically set at 3×" the daily rate.
+
+**What the four sources say together.** This course's reading: a "week" costs anywhere from 3 to 4.5 days' rent, depending on who sets the price. A "weekend" costs 1 day on the platform and 1.5 days at the house. There is no single market rule, so when you set yours (lesson 14), say it in writing.
+
+**What a price list leaves out.** The regional house's FX3 page shows two prices and no list of what comes with the camera; Lensrentals' FX3 A page lists seven items. Before you compare your price with a house's, find out what its price includes. A lower price for less gear is not a lower price.
+
+:::reveal At the regional house, how many day rates did a week of the Sony FX3 with handle cost? ||| 4.5 ($562.50 ÷ $125).
+
+:::reveal By this course's arithmetic, what did one day of a 30-day Lensrentals FX3 A rental cost? ||| About $21.83 ($655 ÷ 30).
+
+:::reveal What does this course conclude a "week" costs across the four sources? ||| Anywhere from 3 to 4.5 days' rent, depending on who sets the price.
+
+## Sources
+- ${RH_CINEMA} Locator: the five camera listings, "1 Day" and "1 Week".
+- ${RH_GIMBALS} Locator: the one listing.
+- ${RH_WIRELESS} Locator: the Hollyland listing.
+- ${RH_POLICIES} Locator: weekend pricing paragraph.
+- ${RH_FX3} Locator: the whole page (two prices, no list of contents).
+- ${LR_FX3A} Locator: rental price table and "What's included".
+- ${SG_SHOOT_DAYS} Locator: "Full week" and "Full month" rules.
+- ${RATE_GUIDE} Locator: the kit rental rates paragraph.`,
+    },
+    {
+      slug: "platform-fees",
+      title: "12 · Platform fees: what reaches you",
+      section: "4 · Pricing",
+      recallContent: [
+        {
+          prompt: "At the regional rental house, what was the weekend rate for most items?",
+          answer: "1.5 times the day rate, for a Friday start and a Monday end.",
+        },
+        {
+          prompt: "Across the regional house, Lensrentals, ShareGrid and The Rate Guide, how many days' rent does a week cost?",
+          answer: "Anywhere from 3 to 4.5, depending on who sets the price.",
+        },
+      ],
+      body: `**Your listed price is not your income.** A platform takes a fee, the renter pays a fee on top, and the days billed are fewer than the days the gear is away. Work out what reaches you before you set a price.
+
+**ShareGrid's fees, as its page states them.** Under "Rentals":
+
+- Owner fee: "Fixed 15% service fee."
+- Renter fee: "Dynamic community fee, typically 10%, displayed during checkout." The page adds that it "may vary based on pickup schedule, coverage option, and booking lead time."
+- "The community fee may not be refundable if the renter cancels a confirmed rental."
+- The fees cover "ID verification, coverage verification, security, customer service, feature improvements, and dispute mitigation."
+
+Under "Buy & Sell", which matters when you retire gear (lesson 22): "A 5% fee applies to all seller transactions", and buyers paying by credit card pay "2.45% + $0.30".
+
+**A worked example.** The numbers are assumptions chosen to show the method, not a rate to use. This course assumes the 15 percent is taken from the rental price; confirm that on your own payout statement.
+
+| Step | Amount |
+|---|---|
+| Your listed day rate (assumption) | $100 |
+| Renter keeps the gear 7 days; ShareGrid bills 3 shoot days | $300 |
+| Owner fee, 15 percent | $45 |
+| Reaches you | $255 |
+| Per day the gear was away (7 days) | about $36.43 |
+| Renter's community fee, typically 10 percent | about $30 more for the renter |
+
+The same gear, booked for one shoot day with pickup and return days free, would earn $85 for three calendar days away. Either way, the number that pays for the gear is what reaches you per billed day, minus your upkeep and time (section 7).
+
+**What renters already pay for protection at a rental house.** Lensrentals' FX3 A page adds an optional fee for its Lenscap protection: $21 on the $155 three-day rental, or $32 for Lenscap+ (lesson 16 explains what they are). A renter comparing your listing with a rental house is comparing totals, not day rates.
+
+**What the fee buys you.** ShareGrid says its fees pay for ID and coverage verification, security and dispute handling. Section 5 shows what those are worth, and what they do not cover.
+
+:::reveal What owner fee does ShareGrid charge on rentals? ||| A "Fixed 15% service fee."
+
+:::reveal In this lesson's example, what reaches the owner from a 7-day rental billed at 3 days of $100? ||| $255 ($300 less the 15 percent fee of $45), about $36.43 per day away.
+
+:::reveal What did Lensrentals charge for Lenscap on a $155 three-day FX3 A rental? ||| $21 (or $32 for Lenscap+).
+
+## Sources
+- ${SG_FEES} Locator: "Rentals" (owner fee, renter fee and its variation), "Important Note", the fee-purpose sentence, and "Buy & Sell".
+- ${SG_SHOOT_DAYS} Locator: "Full week" rule and the pickup and return days.
+- ${LR_FX3A} Locator: rental price table, 3-day row, Lenscap and Lenscap+ columns.`,
+    },
+    {
+      slug: "kit-fees",
+      title: "13 · Kit fees: why a percentage rule misleads",
+      section: "4 · Pricing",
+      recallContent: [
+        {
+          prompt: "What renter fee does ShareGrid's page describe?",
+          answer: "A \"Dynamic community fee, typically 10%, displayed during checkout\", which may vary with pickup schedule, coverage option and booking lead time.",
+        },
+        {
+          prompt: "In lesson 12's example, why is the owner's income per day away lower than the listed day rate?",
+          answer: "The platform takes 15 percent and a 7-day rental bills only 3 shoot days, so $255 reaches the owner for 7 days away, about $36.43 a day.",
+        },
+      ],
+      body: `**The rule.** The Rate Guide, updated August 2026, says "The industry norm for kit rental is" 10 to 15 percent "of the replacement value of the equipment per day." Its examples: a $5,000 gimbal at $500 to $750 a day, and a full Steadicam rig with a $15,000 replacement value at $1,500 to $2,250 a day. It also says kit rentals are separate line items on the production budget, not built into the operating rate. That last point matches this course (lesson 3). The percentage is what this lesson tests.
+
+**Test it against the price lists.** This course's arithmetic, using prices read on October 21, 2026:
+
+| Item | Price new | Rule: 10 to 15 percent a day | What a renter could pay instead |
+|---|---|---|---|
+| Sony FX3A body | $4,298 (retailer) | $429.80 to $644.70 a day | $125 a day for an FX3 with handle at the regional house; $155 for 3 days at Lensrentals |
+| Teradek Bolt 6 LT set | $2,390 (maker) | $239 to $358.50 a day | $142 for 3 days at Lensrentals |
+
+By this arithmetic, the rule's day rate for the camera is 3.4 to 5.2 times the regional house's day rate for an FX3 ($429.80 ÷ $125 and $644.70 ÷ $125). For the wireless set, the rule asks for more in one day than Lensrentals charges for three.
+
+**Why it misleads.** This course's reasoning: a percentage of replacement value describes your cost, not the client's choice. A client who can rent the same item from a rental house will compare. A rule that ignores the price list prices you out of the jobs where the client checks, and teaches you to expect income the market may not pay. This course could not test whether clients pay the rule's rates, so it treats the rental house's price as the figure a client can check, and the guide's rule as a claim.
+
+**What a kit fee does buy the client.** The regional house asks a renter to show a certificate of insurance for items of $3,000 or more, and may hold up to $1,000 on a credit card. A client who pays your kit fee skips the pickup, the return, the certificate and the hold, and gets gear prepped by the person who will run it. That convenience is real, by this course's reading, but it has a ceiling: the client can still rent the gear and hire you to run it.
+
+**How to write it on an invoice.** Keep the kit fee on its own line, apart from your day rate. The Rate Guide says so, and the IRS instructions quoted in lesson 3 ask a payer to split a machine's rent from its operator's charge.
+
+:::reveal What does The Rate Guide give as the industry norm for kit rental? ||| 10 to 15 percent of the replacement value of the equipment per day.
+
+:::reveal By this course's arithmetic, what day rate does the rule give for a $4,298 FX3A, against the regional house's $125? ||| $429.80 to $644.70, which is 3.4 to 5.2 times the house's day rate.
+
+:::reveal Why does this course say a percentage of replacement value misleads? ||| It describes your cost, not the client's choice; a client who can rent the same item for less from a rental house will compare.
+
+## Sources
+- ${RATE_GUIDE} Locator: the kit rental rates paragraph and its examples.
+- ${FOCUS_FX3A} Locator: price line.
+- ${TERADEK_B6} Locator: price line.
+- ${RH_FX3} Locator: "1 Day" price line.
+- ${LR_FX3A} Locator: rental price table, 3-day row.
+- ${LR_BOLT} Locator: rental price list, 3-day row.
+- ${RH_POLICIES} Locator: insurance requirement and the credit card authorization paragraph.
+- ${IRS_1099} Locator: "Box 1. Rents", the machine rentals paragraph.`,
+    },
+    {
+      slug: "your-rate-sheet",
+      title: "14 · Build your own rate sheet",
+      section: "4 · Pricing",
+      recallContent: [
+        {
+          prompt: "By this course's arithmetic, how does the 10 to 15 percent rule's day rate for a Bolt 6 LT set compare with Lensrentals' price?",
+          answer: "The rule gives $239 to $358.50 a day, more than Lensrentals' $142 for three days.",
+        },
+        {
+          prompt: "What does a client who pays a kit fee skip, compared with renting from the regional house?",
+          answer: "The pickup, the return, the certificate of insurance and the credit card hold; and the gear arrives prepped by the person who will run it.",
+        },
+      ],
+      body: `**An exercise, with a worked sample.** Build a one-page rate sheet for the gear you own or plan to buy. It turns the last three lessons into numbers you can defend to a client and to yourself.
+
+**Step 1: date it.** Write "Rates as of" and the date at the top. Every price on it will change; the date tells you when to look again.
+
+**Step 2: one row per item or package.** For each, fill in:
+
+- What it is, and what is included (lesson 10).
+- Replacement value: what it would cost new today, with the source and the date (lesson 9).
+- The market: a regional house's day and week price; a house that prices by length, at 3 and 7 days; and a comparable platform listing, if there is one (lesson 11).
+
+**Step 3: your prices, with your rules in words.** A day rate. A weekend rule (one day, like the platform, or 1.5 days, like the regional house). A week rule (3 days, 4.5 days, or your own). Write the rule, not just the number, so a renter can predict the bill.
+
+**Step 4: what reaches you.** Subtract the platform's fee (lesson 12). If you rent direct, subtract card fees and your time instead.
+
+**Step 5: your kit fee when you operate.** On its own line, priced against what the client could pay a rental house for the same package (lesson 13).
+
+**Step 6: your terms.** What you require before gear leaves: ID, a deposit or card hold, insurance or a waiver. Section 5 covers each.
+
+**A worked sample.** Every price for "your" gear below is an assumption to show the method, not advice.
+
+| | Market (October 21, 2026) | Your price (assumption) | Reaches you |
+|---|---|---|---|
+| FX3-class body with handle, battery, charger | Regional house $125 a day, $562.50 a week; FX3 A at Lensrentals $155 for 3 days | Platform: $100 a day; weekend counts 1 day; week counts 3 days | $85 a billed day after the 15 percent fee |
+| Same, with you operating | Same | Kit fee $110 a day, its own invoice line | $110, less your prep time and upkeep |
+
+**What a platform rewards.** ShareGrid ranks listings partly on "Fair Market Pricing", which it explains as "Set competitive and reasonable rental prices to attract renters and improve your ranking." A rate sheet built from the market is how you show that.
+
+**When to review it.** This course suggests two triggers: a fixed date (every three months, say), and any time a newer model of something you own appears on a rental house's list (lesson 6).
+
+:::reveal Why does this lesson tell you to write your weekend and week rules in words, not just numbers? ||| So a renter can predict the bill; the market has no single rule (a weekend is 1 day on the platform and 1.5 at the regional house).
+
+:::reveal In the worked sample, what reaches the owner from a $100 platform day? ||| $85 a billed day, after the 15 percent owner fee.
+
+:::reveal What does ShareGrid's "Fair Market Pricing" factor tell owners to do? ||| "Set competitive and reasonable rental prices to attract renters and improve your ranking."
+
+## Sources
+- ${RH_FX3} Locator: price lines.
+- ${RH_POLICIES} Locator: weekend pricing paragraph.
+- ${LR_FX3A} Locator: rental price table, 3-day row.
+- ${SG_SHOOT_DAYS} Locator: weekend and "Full week" rules.
+- ${SG_FEES} Locator: "Rentals", owner fee.
+- ${SG_BEST_MATCH} Locator: "Fair Market Pricing".`,
+    },
+    // @@QUIZ-4@@
+
+    // @@SECTIONS-5-8@@
 
     // @@FINAL@@
   ],
