@@ -3407,8 +3407,8 @@ async function main() {
   // CREW-05, approved by BAM 2026-10-21 (cloud-briefs/crew-05/00-approved-brief.md): how a game's video,
   // audio and data leave the arena over a league arena network, with the NBA's High-Speed Arena Network
   // as the cited worked example and no team or venue named. Public, held for a qualified reviewer.
-  // Research tier 2: fiber and laser safety, heights. Sections 1 to 4 are written; sections 5 to 7 and
-  // the final quiz follow.
+  // Research tier 2: fiber and laser safety, heights. All seven sections and the final quiz are written
+  // (sections 5 to 7 on 2026-10-22).
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
