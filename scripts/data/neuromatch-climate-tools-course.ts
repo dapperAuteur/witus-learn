@@ -139,9 +139,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "What does this course say it is, in relation to Neuromatch's own climate course?",
             options: [
-              "A companion, not a substitute",
-              "An abridged official version of the same curriculum, produced with Neuromatch's review",
-              "A replacement that covers the same ten days in a compressed reading format",
+              "A companion that teaches the concepts their notebooks assume, not a substitute",
+              "An abridged official version of the same curriculum",
+              "A replacement covering the same ten days in compressed form",
               "A preparatory programme run in partnership with the organisation that publishes the coursebook",
             ],
             correctIndex: 0,
@@ -152,9 +152,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "How many days does the published syllabus of Neuromatch's climate course list, and over what span?",
             options: [
-              "Ten days across two weeks",
+              "Ten days across two weeks, ending with a project day",
               "Fifteen days across three weeks, with the third week reserved entirely for group projects",
-              "Eight days across two weeks, with two days set aside for optional catch-up sessions",
+              "Eight days across two weeks",
               "Twenty days across four weeks, split between a taught phase and a supervised research phase",
             ],
             correctIndex: 0,
@@ -179,9 +179,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What does this course identify as the source of most public confusion about climate data?",
             options: [
               "Confusion about what kind of object a number is",
-              "Widespread unfamiliarity with the differential equations that govern atmospheric motion",
-              "Disagreement among researchers about whether the greenhouse effect operates as described",
-              "The absence of any agreed international standard for archiving climate measurements",
+              "Unfamiliarity with fluid dynamics",
+              "Doubts about the greenhouse effect",
+              "No standard for archiving data",
             ],
             correctIndex: 0,
             explanation:
@@ -192,8 +192,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Which four kinds of object does lesson 1's table distinguish?",
             options: [
               "Observation, reanalysis, model run, scenario projection",
-              "Measurement, estimate, forecast and prediction, as those terms are used in operational meteorology",
-              "Raw data, quality-controlled data, gridded data and published data, in order of processing",
+              "Measurement, estimate, forecast, prediction",
+              "Raw, checked, gridded and published data",
               "Station record, satellite record, proxy record and instrument record, by measuring technology",
             ],
             correctIndex: 0,
@@ -207,7 +207,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
               "A weather model steered by observations",
               "A statistical interpolation between station records with no physical model involved at any stage",
               "An instrument reading corrected for the known biases of the instrument that produced it",
-              "A simulation of the climate system given a set of assumed future emissions",
+              "A run under assumed emissions",
             ],
             correctIndex: 0,
             explanation:
@@ -217,10 +217,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "Under which licence does Neuromatch publish this course content?",
             options: [
-              "CC BY 4.0",
-              "Creative Commons Attribution NonCommercial 4.0, which bars any commercial reuse",
-              "Creative Commons Attribution ShareAlike 4.0, which requires derivatives under the same licence",
-              "A bespoke academic licence permitting classroom use only with written permission",
+              "CC BY 4.0, with no NonCommercial or ShareAlike clause",
+              "CC BY-NC 4.0, which bars commercial reuse",
+              "CC BY-SA 4.0, a share-alike license",
+              "A bespoke classroom-only academic license",
             ],
             correctIndex: 0,
             explanation:
@@ -230,9 +230,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "What does CC BY 4.0 require of somebody who adapts the material?",
             options: [
-              "Credit, a licence link, and a note of changes",
-              "Written permission from the original authors before any adapted version may be published",
-              "That the adapted version be given away at no charge and never used in a paid course",
+              "Credit, a link to the license, and an indication of any changes made",
+              "Written permission from the original authors",
+              "That the adaptation be given away free",
               "That the adapted version be submitted back to the original project for review before release",
             ],
             correctIndex: 0,
@@ -259,7 +259,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
               "The order and grouping of topics",
               "Selected explanatory passages, rewritten in different words but following their sentence structure",
               "The notebook exercises, converted from Python code into prose descriptions of each step",
-              "Their quiz questions, reworded so that the answers remain the same but the prompts differ",
+              "Their quiz questions",
             ],
             correctIndex: 0,
             explanation:
@@ -283,9 +283,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Why does lesson 1 say it leaves out climate policy and the economics of mitigation?",
             options: [
               "They are separate subjects with their own literatures",
-              "Because the licence under which the source material is published forbids policy commentary",
-              "Because those topics are covered in the second week of the course this one companions",
-              "Because no primary sources on those subjects could be retrieved during authoring",
+              "The license forbids policy commentary",
+              "The original covers them in week two",
+              "No primary sources on them were found",
             ],
             correctIndex: 0,
             explanation:
@@ -296,8 +296,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What relationship does this course state it has with Neuromatch?",
             options: [
               "None; it is independent and unreviewed",
-              "An informal affiliation under which the organisation reviews content before publication",
-              "A licensing agreement that permits it to describe itself as an official companion",
+              "An informal affiliation",
+              "A licensing agreement",
               "A partnership in which teaching assistants from the original course check the material",
             ],
             correctIndex: 0,
@@ -311,7 +311,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
               "The projects, pods and machine-learning day",
               "The distinction between observations and reanalysis, which is treated as too advanced for a companion",
               "The treatment of grids and resolution, which is left entirely to the original coursebook",
-              "The discussion of what a scenario is, on the grounds that scenarios are a policy topic",
+              "Scenarios, as a policy topic",
             ],
             correctIndex: 0,
             explanation:
@@ -322,9 +322,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What does lesson 1 mean by calling this a companion course?",
             options: [
               "It succeeds when you leave it and read the original",
-              "It is designed to be studied at the same time as the original course, week by week in parallel",
-              "It is one of a pair of courses that must be completed together to earn a single certificate",
-              "It accompanies a set of notebooks that are distributed alongside it as downloadable files",
+              "It is studied week by week in parallel",
+              "It is half of a two-course certificate",
+              "It ships with downloadable notebooks",
             ],
             correctIndex: 0,
             explanation:
@@ -335,8 +335,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Why does lesson 1 draw the boundary of the course in its very first lesson?",
             options: [
               "Because a false promise wastes your time twice",
-              "Because the licence requires that the scope of an adaptation be declared before any content appears",
-              "Because learners who know the scope in advance score measurably higher on the final assessment",
+              "Because the license requires it",
+              "Because it raises final scores",
               "Because the original coursebook opens with an equivalent scope statement that this one mirrors",
             ],
             correctIndex: 0,
@@ -349,7 +349,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "A model run whose future inputs were chosen",
               "An extrapolation of the observed trend forward using a statistical model fitted to the record",
-              "A poll of expert judgement about the most likely path of future greenhouse gas emissions",
+              "A poll of expert judgment",
               "A reanalysis extended past the present using the most recent year of assimilated observations",
             ],
             correctIndex: 0,
@@ -375,8 +375,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "Because errors in the starting state grow",
               "Because the observing network is only dense enough to constrain the atmosphere for about that long",
-              "Because forecast models are rerun on a fourteen-day cycle and older runs are discarded",
-              "Because greenhouse gas concentrations begin to affect the forecast beyond that horizon",
+              "Because of a 14-day rerun cycle",
+              "Because CO2 takes over then",
             ],
             correctIndex: 0,
             explanation:
@@ -386,10 +386,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "For a forecast of this coming week, what does the working meteorologist quoted in lesson 2 say about carbon dioxide?",
             options: [
-              "Its concentration does not matter",
-              "It must be prescribed hourly because radiative heating drives the forecast at that timescale",
-              "It is the single largest source of error in operational forecasts beyond about five days",
-              "It matters only in winter, when the longwave contribution to the surface budget is largest",
+              "Its concentration does not matter for that week's forecast",
+              "It must be prescribed hourly",
+              "It is the largest error source after day five",
+              "It matters only in winter",
             ],
             correctIndex: 0,
             explanation:
@@ -413,9 +413,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "How does NOAA's Climate.gov summarise the difference between weather and climate?",
             options: [
               "Weather is exact conditions, climate is average conditions",
-              "Weather is measured by instruments while climate is calculated entirely from computer models",
-              "Weather is what a forecaster predicts and climate is what a policy maker decides to plan for",
-              "Weather concerns the lower atmosphere and climate concerns the whole depth of the atmosphere",
+              "Weather is measured; climate is only modeled",
+              "Weather is forecast; climate is planned for",
+              "Weather is near the ground; climate is aloft",
             ],
             correctIndex: 0,
             explanation:
@@ -439,8 +439,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What is the limit of the analogy between climate projection and predicting the average behaviour of a population?",
             options: [
               "Climate includes variability and extremes, not just averages",
-              "Populations can be surveyed directly while the future climate cannot be measured in advance",
-              "The analogy holds only for temperature and breaks down entirely for any other variable",
+              "Populations can be surveyed directly",
+              "It holds only for temperature",
               "Population statistics are exact while climate statistics carry an irreducible measurement error",
             ],
             correctIndex: 0,
@@ -451,9 +451,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "How long is a WMO climatological standard normal?",
             options: [
-              "Thirty years",
+              "Thirty consecutive years, such as 1991 to 2020",
               "Fifty years, chosen to span two full cycles of the Atlantic Multidecadal Oscillation",
-              "Twenty years, revised every five years as new observations become available",
+              "Twenty years",
               "One hundred years, matching the length of the longest continuous instrumental records",
             ],
             correctIndex: 0,
@@ -464,10 +464,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "Which fixed period does WMO retain as the reference for long-term climate-change assessment?",
             options: [
-              "1961 to 1990",
-              "1850 to 1900, taken as the closest available approximation to pre-industrial conditions",
-              "1991 to 2020, which is also the current rolling standard normal for operational use",
-              "1951 to 1980, matching the base period used by NASA's surface temperature analysis",
+              "1961 to 1990, kept fixed while the normal rolls forward",
+              "1850 to 1900, the pre-industrial proxy",
+              "1991 to 2020, the current rolling normal",
+              "1951 to 1980, NASA's base period",
             ],
             correctIndex: 0,
             explanation:
@@ -480,7 +480,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
               "Conditional: given these inputs, this happens",
               "Probabilistic: each outcome is published with a likelihood attached that sums to one across scenarios",
               "Deterministic: a single trajectory that the system will follow if the physics is correctly represented",
-              "Diagnostic: a description of the present state from which the future is extrapolated statistically",
+              "Diagnostic: an extrapolation",
             ],
             correctIndex: 0,
             explanation:
@@ -504,9 +504,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Lesson 2 says a line ending today may be one of two things. Which two?",
             options: [
               "An observation or a model run reproducing the past",
-              "A forecast issued yesterday or a nowcast produced from radar within the last hour",
-              "A raw station series or the same series before homogenisation was applied to it",
-              "A regional average or a global average, depending on the area the figure covers",
+              "A forecast or a radar nowcast",
+              "A raw or a homogenized station series",
+              "A regional or a global average",
             ],
             correctIndex: 0,
             explanation:
@@ -517,9 +517,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What does the term predictability horizon mean in lesson 2?",
             options: [
               "When initial-state errors have grown enough to ruin a forecast",
-              "The furthest year for which a scenario has been extended by the modelling groups that produced it",
+              "The last year a scenario was extended to",
               "The point at which a model's resolution becomes too coarse to represent the weather system of interest",
-              "The lead time at which greenhouse gas concentrations begin to dominate the forecast signal",
+              "The lead time at which greenhouse gases dominate",
             ],
             correctIndex: 0,
             explanation:
@@ -531,7 +531,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "Because the boundaries themselves are uncertain",
               "Because chaos in the atmosphere accumulates over decades until the projection loses all skill",
-              "Because the physical equations governing the climate system are not yet fully known",
+              "Because the equations are unknown",
               "Because observations of the present state are too sparse to initialise a run of that length",
             ],
             correctIndex: 0,
@@ -542,10 +542,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "Lesson 1 lists a reason not to describe this course as a preparation programme. What is that reason?",
             options: [
-              "It was written for BAM's own learning",
-              "Preparation programmes are prohibited by the terms under which the source material is licensed",
-              "The organisation that publishes the coursebook accepts no applicants who have taken outside courses",
-              "The material here covers only the second week of the original syllabus and so cannot prepare anyone",
+              "It was written for BAM's own learning, with no exam coaching",
+              "The source license prohibits them",
+              "The publisher bars outside-course applicants",
+              "It covers only the second week of the original",
             ],
             correctIndex: 0,
             explanation:
@@ -557,8 +557,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "The coursebook and the content repository",
               "A digital object identifier minted for the syllabus by the organisation that published it",
-              "The registration page for the next scheduled run of the original course",
-              "A mirror of the notebooks hosted alongside this course for offline reading",
+              "A registration page",
+              "A local mirror of the notebooks",
             ],
             correctIndex: 0,
             explanation:
@@ -570,7 +570,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "Nothing in a model run was measured",
               "Model runs are produced at a finer spatial resolution than any observing network can achieve",
-              "Model runs are published later than observations and so cover a different span of years",
+              "Model runs appear later",
               "Model runs are stored in a different file format that cannot be compared with observations",
             ],
             correctIndex: 0,
@@ -582,9 +582,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "In lesson 1's table, what can an observation tell you that the other objects cannot?",
             options: [
               "What actually happened where somebody measured",
-              "What the whole global field looked like at every hour, without any gaps in coverage",
-              "What would have happened in the absence of human influence on the climate system",
-              "What the climate will do under a specified pathway of future greenhouse gas concentrations",
+              "The whole field with no gaps",
+              "The world without human influence",
+              "The climate under a future pathway",
             ],
             correctIndex: 0,
             explanation:
@@ -607,10 +607,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "What kind of course does lesson 2 say you are reading when a figure's line stops next Tuesday?",
             options: [
-              "You are looking at a forecast",
+              "You are looking at a forecast, from an initial-value problem",
               "You are looking at a scenario projection truncated for display purposes at the current date",
               "You are looking at a reanalysis, which is the only product updated to within a week of the present",
-              "You are looking at an observation, since no model produces output at daily resolution",
+              "You are looking at an observation",
             ],
             correctIndex: 0,
             explanation:
@@ -622,8 +622,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "It limits forecasts regardless of model quality",
               "It affects regional forecasts but averages out entirely at the global scale within a day or two",
-              "It was introduced into forecasting only when models became fine enough to resolve convection",
-              "It can be removed by running many forecasts and averaging them into a single trajectory",
+              "It began with fine-scale models",
+              "Averaging many runs removes it",
             ],
             correctIndex: 0,
             explanation:
@@ -634,9 +634,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Lesson 2 gives a reason the population analogy is not a weaker version of an individual prediction. What is it?",
             options: [
               "It is a different statement, not a hedged one",
-              "It is derived from a larger sample and therefore carries a smaller confidence interval",
-              "It applies only over periods long enough for the individual fluctuations to cancel exactly",
-              "It is the same statement expressed with the uncertainty made explicit rather than hidden",
+              "It rests on a larger sample",
+              "It needs fluctuations to cancel",
+              "It is the same claim, made explicit",
             ],
             correctIndex: 0,
             explanation:
@@ -648,7 +648,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "The latest 30-year period ending in a year ending in zero",
               "A new period chosen by each national meteorological service according to its own record length",
-              "The most recent 30 years of continuous record at each individual observing station",
+              "Each station's latest 30 years",
               "A period recalculated annually so that it always ends with the most recent complete year",
             ],
             correctIndex: 0,
@@ -661,8 +661,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "The one on anomalies, baselines and trends",
               "The one on grids, resolution and parameterisation, where averaging over cells is introduced",
-              "The one on datasets and documentation, where the file metadata standards are described",
-              "The one on uncertainty, scenarios and attribution, where ensemble spread is decomposed",
+              "The one on datasets",
+              "The one on uncertainty",
             ],
             correctIndex: 0,
             explanation:
@@ -686,7 +686,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Lesson 1 says every factual claim in this course is cited to something other than Neuromatch. Why?",
             options: [
               "So the claims stand on their own sources",
-              "Because the licence forbids citing the original materials as evidence for any factual statement",
+              "Because the license forbids it",
               "Because the original coursebook contains no citations that could be reused in a different course",
               "Because attribution to the original would imply that the organisation had reviewed the claims",
             ],
@@ -712,9 +712,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What does lesson 2 identify as the largest boundary condition on a climate projection?",
             options: [
               "How much greenhouse gas humans emit",
-              "The rate at which the sun's output varies over the eleven-year solar cycle",
-              "The depth of the ocean mixed layer, which sets how quickly heat is taken up",
-              "The albedo of the land surface, which changes with agriculture and urban growth",
+              "Solar cycle variability",
+              "Ocean mixed-layer depth",
+              "Land surface albedo",
             ],
             correctIndex: 0,
             explanation:
@@ -725,9 +725,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "How does lesson 1 describe the relationship between this course and hands-on work?",
             options: [
               "This is the map; notebooks are the territory",
-              "The notebooks are optional enrichment for learners who want to go beyond the concepts taught here",
+              "The notebooks are optional extras",
               "The concepts here replace the need for hands-on work for anyone who is not writing code professionally",
-              "The hands-on work is deferred to a second course that continues from where this one stops",
+              "Hands-on work comes in a sequel",
             ],
             correctIndex: 0,
             explanation:
@@ -737,10 +737,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "What does lesson 2 say a climate projection is asking about, if not the weather on a date?",
             options: [
-              "The statistics of the weather",
+              "The statistics of the weather, including its extremes",
               "The single most likely sequence of daily conditions consistent with the physics",
               "The date on which a given threshold of warming will first be crossed at a specific place",
-              "The behaviour of the atmosphere given a perfectly measured present state",
+              "The weather given a perfect start",
             ],
             correctIndex: 0,
             explanation:
@@ -750,10 +750,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "Which of these correctly pairs a problem type with what it depends on?",
             options: [
-              "Initial-value, the measured starting state",
-              "Boundary-value, the accuracy with which today's atmosphere was observed at the start of the run",
-              "Initial-value, the greenhouse gas concentrations prescribed over the length of the integration",
-              "Boundary-value, the resolution of the grid on which the model integrates its equations",
+              "Initial-value, the measured starting state of the atmosphere",
+              "Boundary-value, today's observed state",
+              "Initial-value, the prescribed greenhouse gases",
+              "Boundary-value, the grid resolution",
             ],
             correctIndex: 0,
             explanation:
@@ -764,9 +764,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Why does lesson 1 say a course that pretends to be the real thing wastes your time twice?",
             options: [
               "Once taking it, once discovering the gap",
-              "Once in fees paid to the imitation and once in fees paid again to the original course",
+              "Two sets of course fees",
               "Once for the learner and once for the teaching assistant who has to correct the misunderstandings",
-              "Once when the material is out of date and once when it has to be relearned from primary sources",
+              "Once outdated, once relearned",
             ],
             correctIndex: 0,
             explanation:
@@ -778,7 +778,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "A weather model steered by observations over the past",
               "An archive of station records that has been quality controlled and gridded onto a regular mesh",
-              "A rerun of a climate model with the observed forcings applied over the industrial period",
+              "A climate rerun with observed forcings",
               "A blend of satellite retrievals produced without any dynamical model in the processing chain",
             ],
             correctIndex: 0,
@@ -880,9 +880,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "How does NOAA's Geophysical Fluid Dynamics Laboratory define a global climate model?",
             options: [
               "A mathematical representation of the major climate system components and their interactions",
-              "A statistical model fitted to the observed record and extrapolated forward under assumed forcings",
-              "A library of parameterisations calibrated separately for each region of the globe and then merged",
-              "An archive of simulations produced by many groups and combined into a single best estimate",
+              "A statistical model fitted to the observed record",
+              "A library of regionally calibrated parameterizations",
+              "An archive of simulations merged into one best estimate",
             ],
             correctIndex: 0,
             explanation:
@@ -895,7 +895,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
               "Divides it into a three-dimensional grid of cells",
               "Reduces it to a set of zonal averages, one for each band of latitude, to save computer time",
               "Represents it as a spectrum of waves with no spatial structure below the largest scales",
-              "Treats it as a single well-mixed box whose properties are updated at each time step",
+              "A single well-mixed box",
             ],
             correctIndex: 0,
             explanation:
@@ -918,10 +918,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "Roughly how many kilometres is one degree of latitude?",
             options: [
-              "About 111",
-              "About 60, which is the same distance as one nautical mile multiplied by sixty",
-              "About 250, though the figure varies with the model's vertical coordinate system",
-              "About 40, which is the polar circumference divided by one thousand",
+              "About 111, the meridional circumference divided by 360",
+              "About 60, like sixty nautical miles",
+              "About 250, varying with the model",
+              "About 40, the polar circumference over 1,000",
             ],
             correctIndex: 0,
             explanation:
@@ -933,8 +933,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "Degrees of longitude shrink towards the poles",
               "Degrees of latitude shrink towards the poles while degrees of longitude stay constant everywhere",
-              "Modelling groups deliberately refine the grid over land and coarsen it over the open ocean",
-              "The grid is stretched over regions of complex terrain to resolve mountains more accurately",
+              "Groups refine the grid over land",
+              "The grid is stretched over mountains",
             ],
             correctIndex: 0,
             explanation:
@@ -945,7 +945,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What resolution does HighResMIP ask for in its high-resolution configuration?",
             options: [
               "At least 50 km in the atmosphere and a quarter degree in the ocean",
-              "At least 10 km in the atmosphere and one twelfth of a degree in the ocean, matching operational forecasting",
+              "At least 10 km atmosphere, 1/12 degree ocean",
               "At least 100 km in the atmosphere and one degree in the ocean, matching the standard CMIP6 configuration",
               "At least 4 km in the atmosphere, fine enough to resolve individual convective cells without parameterisation",
             ],
@@ -958,9 +958,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What can you infer about ordinary CMIP resolution from HighResMIP's definition of high resolution?",
             options: [
               "Standard configurations are coarser than 50 km",
-              "Standard configurations already resolve tropical cyclones and ocean eddies without further refinement",
-              "Standard configurations vary so widely that no general statement about their resolution is possible",
-              "Standard configurations run at exactly 50 km, and HighResMIP simply repeats the same experiments",
+              "Standard runs already resolve eddies",
+              "Standard runs vary too widely to say",
+              "Standard runs use exactly 50 km",
             ],
             correctIndex: 0,
             explanation:
@@ -985,8 +985,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "It multiplies the cells by four and usually shortens the time step",
               "It requires the entire parameterisation suite to be rewritten from first principles for the new scale",
-              "It doubles the storage needed for output while leaving the computational cost unchanged",
-              "It forces the model to be rerun from a new set of initial conditions for every existing experiment",
+              "It doubles storage but not cost",
+              "It forces new initial conditions",
             ],
             correctIndex: 0,
             explanation:
@@ -999,7 +999,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
               "Mountains, coastlines, ocean eddies and tropical cyclones",
               "The radiative properties of greenhouse gases, which are smoothed out at coarse resolution",
               "The long-term response of the deep ocean, which only appears in models finer than 50 kilometres",
-              "The correct global energy balance, which coarse models are unable to conserve at all",
+              "The correct global energy balance",
             ],
             correctIndex: 0,
             explanation:
@@ -1010,9 +1010,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Does finer resolution automatically make a model more accurate?",
             options: [
               "No, because approximated processes are often still approximated",
-              "Yes, because every process becomes explicitly resolved once the cells fall below 50 kilometres",
-              "Yes, because accuracy is defined as the match between the model grid and the observing network",
-              "No, because finer models are always run for fewer years and so have less reliable statistics",
+              "Yes, every process is resolved below 50 km",
+              "Yes, by definition of accuracy",
+              "No, because finer runs are always shorter",
             ],
             correctIndex: 0,
             explanation:
@@ -1049,9 +1049,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What does lesson 3 say resolution competes with for computer time?",
             options: [
               "More ensemble members or more simulated years",
-              "The number of variables the model is able to output at each time step of the integration",
+              "The number of output variables",
               "The accuracy of the radiation scheme, which must be simplified whenever the grid is refined",
-              "The length of the spin-up phase, which grows in proportion to the number of grid cells",
+              "The length of the spin-up",
             ],
             correctIndex: 0,
             explanation:
@@ -1062,7 +1062,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Which statement about ERA5's span is correct?",
             options: [
               "It runs from 1940 to the present",
-              "It begins in 1850, matching the start of the CMIP6 historical simulations",
+              "It begins in 1850",
               "It begins in 1979, the first year of continuous satellite coverage, and is not extended earlier",
               "It covers only the most recent thirty years, matching the current WMO standard normal",
             ],
@@ -1074,10 +1074,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "What kind of statement is \"the model says it will be 22 degrees in my town on that day\"?",
             options: [
-              "A misuse of a cell average",
-              "A legitimate reading, provided the model resolution is finer than 50 kilometres",
-              "A legitimate reading, provided the value has been bias corrected against a nearby station",
-              "A statement about a reanalysis rather than about a model, since only reanalyses give daily values",
+              "A misuse of a cell average, which covers the whole box",
+              "Fine, if the model is finer than 50 km",
+              "Fine, if bias corrected to a station",
+              "A reanalysis statement, not a model one",
             ],
             correctIndex: 0,
             explanation:
@@ -1088,7 +1088,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Why does lesson 3 say the grid determines what a model can possibly know?",
             options: [
               "Because nothing smaller than a cell is represented directly",
-              "Because the grid fixes the set of variables the model is permitted to output",
+              "Because the grid fixes the output variables",
               "Because the grid is chosen to match the density of the observing network at the time of the run",
               "Because the grid determines which parameterisation schemes are physically valid to use",
             ],
@@ -1102,8 +1102,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "Atmosphere, land surface, ocean, sea ice",
               "Radiation, convection, boundary layer and cloud microphysics, being the four main parameterisations",
-              "Temperature, pressure, humidity and wind, being the four prognostic variables of the dynamical core",
-              "Observation, assimilation, integration and diagnosis, being the four stages of a model run",
+              "Four prognostic variables",
+              "Four stages of a model run",
             ],
             correctIndex: 0,
             explanation:
@@ -1115,8 +1115,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "Larger than grid scale and based on bedrock scientific principles",
               "Any process for which observational data exist in sufficient quantity to constrain the model directly",
-              "Any process included in the model's output fields rather than held only in its internal state",
-              "Any process whose behaviour has been validated against a higher-resolution reference simulation",
+              "Any process in the output fields",
+              "Any process validated at higher resolution",
             ],
             correctIndex: 0,
             explanation:
@@ -1126,10 +1126,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "Which of these is a parameterised process in a global climate model?",
             options: [
-              "Individual thunderstorms",
+              "Individual thunderstorms, far smaller than a cell",
               "The large-scale circulation of the atmosphere between the tropics and the mid-latitudes",
               "The seasonal cycle of incoming solar radiation, which is computed from the orbit",
-              "The transport of heat by the major ocean currents across an entire basin",
+              "Basin-scale ocean heat transport",
             ],
             correctIndex: 0,
             explanation:
@@ -1140,9 +1140,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What does a parameterisation actually do?",
             options: [
               "Infers sub-grid behaviour from cell-average quantities",
-              "Interpolates values from a finer reference simulation onto the coarser grid being run",
-              "Substitutes observed values for the model's own wherever suitable measurements exist",
-              "Averages the results of many small-scale simulations run separately inside each cell",
+              "Interpolates from a finer simulation",
+              "Substitutes observed values",
+              "Averages small simulations in each cell",
             ],
             correctIndex: 0,
             explanation:
@@ -1154,7 +1154,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "Different groups make the rules differently",
               "Different groups run their models at deliberately different resolutions to sample the uncertainty",
-              "Different groups use different observational datasets to initialise their historical simulations",
+              "Different initialization datasets",
               "Different groups apply different scenarios, so the spread reflects the range of emissions assumed",
             ],
             correctIndex: 0,
@@ -1179,8 +1179,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What constrained ranges does the emergent-constraint study cited in lesson 4 report for the CMIP6 generation?",
             options: [
               "Transient response 1.3 to 2.1 K and sensitivity 1.9 to 3.4 K",
-              "Transient response 0.5 to 1.0 K and sensitivity 1.0 to 1.5 K, both far below earlier assessments",
-              "Transient response 2.5 to 4.0 K and sensitivity 4.5 to 6.0 K, both above earlier assessments",
+              "Transient 0.5 to 1.0 K, sensitivity 1.0 to 1.5 K",
+              "Transient 2.5 to 4.0 K, sensitivity 4.5 to 6.0 K",
               "Transient response 1.0 to 3.0 K and sensitivity 3.0 to 6.0 K, spanning the full unconstrained ensemble",
             ],
             correctIndex: 0,
@@ -1192,9 +1192,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What do Nijsse, Cox and Williamson conclude about the highest-sensitivity models?",
             options: [
               "They do not appear consistent with warming since 1975",
-              "They reproduce the observed warming better than the rest of the ensemble once aerosols are accounted for",
-              "They should be excluded from every assessment, a recommendation the paper makes explicitly",
-              "They differ from the rest of the ensemble only in their ocean components rather than their clouds",
+              "They fit observed warming best",
+              "They should be excluded everywhere",
+              "They differ only in their oceans",
             ],
             correctIndex: 0,
             explanation:
@@ -1207,7 +1207,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
               "Models that share code and ancestry are not independent",
               "Models submitted late to an intercomparison receive less scrutiny than those submitted early",
               "Models run at different resolutions cannot be compared until they are interpolated to a common grid",
-              "Models produced by larger institutions contribute more ensemble members than smaller ones",
+              "Larger institutions submit more members",
             ],
             correctIndex: 0,
             explanation:
@@ -1218,9 +1218,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What caution do Sanderson, Wehner and Knutti report about their own weighting scheme?",
             options: [
               "Its influence on projected temperature and precipitation is moderate",
-              "It cannot be applied to precipitation at all, because no skill metric for precipitation is agreed",
+              "It cannot be applied to precipitation",
               "It reverses the sign of the projected change in several regions when applied to the full ensemble",
-              "It requires a reference dataset that does not exist for any variable other than surface temperature",
+              "It needs a reference that does not exist",
             ],
             correctIndex: 0,
             explanation:
@@ -1233,7 +1233,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
               "Adjusting model output to match observed statistics before use",
               "Removing the systematic error introduced by a model's numerical time-stepping scheme",
               "Recalibrating the observations against the model wherever the model has more complete coverage",
-              "Weighting each model in an ensemble by how closely it reproduces the observed record",
+              "Weighting models by their skill",
             ],
             correctIndex: 0,
             explanation:
@@ -1257,9 +1257,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Besides hiding uncertainty, what damage do Ehret and colleagues say bias correction does?",
             options: [
               "It alters field consistency and violates conservation principles",
-              "It removes the seasonal cycle along with the bias, leaving a series that cannot be used for extremes",
-              "It shifts the timing of the model's internal variability so that ensemble members no longer align",
-              "It introduces spurious trends by anchoring the corrected series to the observational baseline period",
+              "It removes the seasonal cycle",
+              "It misaligns internal variability",
+              "It introduces spurious trends",
             ],
             correctIndex: 0,
             explanation:
@@ -1270,8 +1270,8 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Lesson 4 says bias correction is used constantly despite the published objection. Why?",
             options: [
               "Impacts models need inputs that look like the real world",
-              "Because the objection applies only to precipitation and not to the temperature fields most studies use",
-              "Because the alternative, running models at higher resolution, is forbidden by the CMIP6 protocol",
+              "The objection covers only precipitation",
+              "CMIP6 forbids higher resolution",
               "Because assessment reports require every submitted projection to be bias corrected before inclusion",
             ],
             correctIndex: 0,
@@ -1284,7 +1284,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             options: [
               "The warming that follows a doubling of carbon dioxide",
               "The rate at which a model's surface temperature drifts when it is run with no forcing at all",
-              "The fraction of emitted carbon dioxide that remains in the atmosphere after a century",
+              "The airborne fraction of CO2",
               "The temperature difference between the coarsest and finest configurations of the same model",
             ],
             correctIndex: 0,
@@ -1295,10 +1295,10 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
           {
             prompt: "Which of these is the reason clouds matter so much for climate sensitivity?",
             options: [
-              "Cloud feedbacks dominate the spread",
-              "Clouds are the only component of the climate system that no model attempts to represent at all",
-              "Clouds are measured so precisely from satellites that models are tightly constrained by them",
-              "Clouds are resolved explicitly in every CMIP6 model, so differences arise from the grid rather than the physics",
+              "Cloud feedbacks dominate the spread between models",
+              "No model represents clouds at all",
+              "Satellites constrain them tightly",
+              "CMIP6 models resolve clouds explicitly",
             ],
             correctIndex: 0,
             explanation:
@@ -1322,9 +1322,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Why does lesson 4 present the weighting question as contested rather than settled?",
             options: [
               "Neither position is fringe and the evidence cuts both ways",
-              "Because the two published positions were later withdrawn by their authors after further analysis",
+              "Both positions were later withdrawn",
               "Because no assessment has ever adopted either approach, so the argument has no practical consequence",
-              "Because the disagreement is about whether warming is happening rather than about how to combine models",
+              "The dispute is over whether warming is real",
             ],
             correctIndex: 0,
             explanation:
@@ -1337,7 +1337,7 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
               "The range has been narrowed without physical justification",
               "The range cannot be computed at all once a correction has been applied to the underlying fields",
               "The range will always be too wide, because bias correction adds its own error to every member",
-              "The range applies only to the observational period and cannot be extended into the future",
+              "The range covers only the past",
             ],
             correctIndex: 0,
             explanation:
@@ -1348,9 +1348,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "What is model uncertainty, in the sense lesson 4 uses?",
             options: [
               "Disagreement between models about the response to a forcing",
-              "The random error introduced by the finite precision of the numbers a computer stores",
-              "The uncertainty in the observations used to evaluate a model after it has been run",
-              "The spread between runs of a single model started from different initial conditions",
+              "Rounding error in computer arithmetic",
+              "Uncertainty in evaluation observations",
+              "Spread from different initial conditions",
             ],
             correctIndex: 0,
             explanation:
@@ -1361,9 +1361,9 @@ NOAA's own answer to the objection puts the distinction in one sentence: "weathe
             prompt: "Which statement best captures why knowing what is simulated and what is parameterised matters?",
             options: [
               "It explains why well-built models still disagree",
-              "It determines which variables a model is allowed to publish to the CMIP archive",
+              "It sets what a model may publish",
               "It tells you which parts of a model were validated against observations before release",
-              "It fixes the resolution at which the model must be run for its results to be valid",
+              "It fixes the required resolution",
             ],
             correctIndex: 0,
             explanation:
@@ -1488,8 +1488,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "An instrument reading plus its history",
               "A number recorded by a calibrated instrument and archived without any subsequent alteration",
-              "Any value that can be checked against a second independent instrument at the same location",
-              "A measurement taken at a site that has not moved since the record began",
+              "Any doubly checked value",
+              "An unmoved site's reading",
             ],
             correctIndex: 0,
             explanation:
@@ -1501,7 +1501,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Removing non-climatic steps and drifts from a record",
               "Averaging several nearby stations into a single series to reduce random measurement error",
-              "Converting all stations in a network onto a common set of units and a common time zone",
+              "Converting stations to common units",
               "Interpolating a station record onto a regular grid so that it can be compared with model output",
             ],
             correctIndex: 0,
@@ -1513,9 +1513,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which of these puts an artefact into a station record that has nothing to do with climate?",
             options: [
               "The observer changing the time of day they read the thermometer",
-              "A run of unusually warm years driven by the El Nino Southern Oscillation",
-              "A gradual increase in the global concentration of carbon dioxide over the record",
-              "A volcanic eruption that cools the surface for two or three years afterwards",
+              "A warm run driven by El Nino",
+              "Rising global CO2 over the record",
+              "A cooling volcanic eruption",
             ],
             correctIndex: 0,
             explanation:
@@ -1540,8 +1540,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Non-infilled and statistically infilled",
               "As an ensemble mean and as a single best-estimate realisation, with no other versions offered",
-              "As a land-only product and an ocean-only product, which users combine themselves",
-              "As a monthly product and a daily product, derived from the same underlying station data",
+              "As land-only and ocean-only",
+              "As monthly and daily products",
             ],
             correctIndex: 0,
             explanation:
@@ -1552,7 +1552,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What do HadCRUT5's 200 realisations sample?",
             options: [
               "Uncertainties in the methods used to build the dataset",
-              "The internal variability of the climate system over the period the dataset covers",
+              "Internal climate variability",
               "The differences between the several models used to interpolate across data-sparse regions",
               "The spread between the three major global temperature records currently in publication",
             ],
@@ -1578,9 +1578,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which adjustments does RSS describe applying to the satellite record?",
             options: [
               "Diurnal drift, Earth incidence angle, and intercalibration",
-              "Cloud screening, aerosol removal and surface emissivity correction, in that order",
-              "Orbital decay, solar contamination and instrument ageing, each corrected once per decade",
-              "Latitude weighting, seasonal detrending and removal of the El Nino signal",
+              "Cloud screening and aerosol removal",
+              "Orbital decay and instrument aging",
+              "Latitude weighting and El Nino removal",
             ],
             correctIndex: 0,
             explanation:
@@ -1616,8 +1616,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What is an observation good for, that no other object in the taxonomy can supply?",
             options: [
-              "It can falsify a model",
-              "It provides a complete global field with no gaps at any point in the record",
+              "It can falsify a model, since it records what happened",
+              "A complete gap-free global field",
               "It tells you what would have happened without human influence on the climate",
               "It gives values for variables that were never measured, by physical consistency",
             ],
@@ -1631,8 +1631,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "A complete field everywhere at every hour",
               "Any information about the period before satellites were launched into polar orbit",
-              "A quantity expressed as an anomaly rather than as an absolute value",
-              "A record of any variable other than surface air temperature",
+              "Any anomaly values",
+              "Non-temperature variables",
             ],
             correctIndex: 0,
             explanation:
@@ -1643,9 +1643,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What is a realisation, in the dataset sense used in lesson 5?",
             options: [
               "One member of an ensemble of plausible versions of the dataset",
-              "A single station's record before it has been merged into the gridded product",
-              "The version of a dataset published in a given year, superseded by the next release",
-              "A model simulation used to fill the gaps in an observational archive",
+              "A single station's unmerged record",
+              "One year's release of a dataset",
+              "A model run filling the gaps",
             ],
             correctIndex: 0,
             explanation:
@@ -1658,7 +1658,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "Almost nothing in a climate dataset is unprocessed",
               "Because raw files are archived only in binary formats that most users cannot open",
               "Because the raw values are proprietary and are never released by the agencies that hold them",
-              "Because raw readings are discarded once a homogenised version has been published",
+              "Because raw readings are discarded",
             ],
             correctIndex: 0,
             explanation:
@@ -1683,8 +1683,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "The orbit drifting so the satellite samples a different local time",
               "The daily cycle of surface heating, which is removed so that only the trend remains",
-              "The difference between ascending and descending passes over the same location",
-              "The changing angle of the sun, which alters the radiance the instrument receives",
+              "Ascending versus descending passes",
+              "The changing angle of the sun",
             ],
             correctIndex: 0,
             explanation:
@@ -1695,9 +1695,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "How does lesson 5 characterise the relationship between an observation and its adjustments?",
             options: [
               "The adjustments are part of what the number is",
-              "The adjustments are a separate product that users may apply or ignore as they prefer",
-              "The adjustments are applied only to satellite data and never to surface station records",
-              "The adjustments are performed once at publication and never revisited in later versions",
+              "They are optional extras",
+              "They apply only to satellite data",
+              "They are never revisited",
             ],
             correctIndex: 0,
             explanation:
@@ -1708,7 +1708,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 5 say infilling deserves to be a separate published version rather than the default?",
             options: [
               "Because it adds uncertainty from the reconstruction itself",
-              "Because it is computationally expensive and cannot be recomputed for every release",
+              "Because it is too expensive",
               "Because it can only be applied over land, leaving the ocean inconsistent with the land field",
               "Because it requires a climate model, which would turn the dataset into a reanalysis",
             ],
@@ -1721,9 +1721,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "How does Copernicus define a climate reanalysis?",
             options: [
               "Past observations combined with models to give consistent time series",
-              "A statistical reconstruction of the past built entirely from station and satellite records",
+              "A statistical reconstruction from records alone",
               "A rerun of a climate model over the historical period using observed greenhouse gas concentrations",
-              "A quality-controlled archive of every observation ever taken, gridded onto a common mesh",
+              "A gridded archive of every observation",
             ],
             correctIndex: 0,
             explanation:
@@ -1734,9 +1734,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does ECMWF say a reanalysis is the best fit to?",
             options: [
               "Both the forecast and the observations, given their uncertainties",
-              "The observations alone, with the model used only to interpolate between them",
-              "The model climatology, with observations used only to check the result afterwards",
-              "The previous generation of reanalysis, so that the two records remain comparable",
+              "The observations alone",
+              "The model climatology",
+              "The previous reanalysis",
             ],
             correctIndex: 0,
             explanation:
@@ -1747,7 +1747,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why is the forecasting system held fixed across a reanalysis?",
             options: [
               "So model upgrades do not put steps into the record",
-              "So the system can be run faster than real time and cover several decades in a single job",
+              "So it runs faster than real time",
               "So the reanalysis can be compared directly against the operational forecasts of the same period",
               "So the same code can be used by every centre producing a reanalysis of the same period",
             ],
@@ -1761,8 +1761,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "It has a value everywhere, with no gaps",
               "It is produced by the same agencies that operate the observing networks it draws on",
-              "It is published in the same file format as the station records it assimilates",
-              "It reports only variables that were directly measured, and omits the rest",
+              "It uses the same file format",
+              "It omits unmeasured variables",
             ],
             correctIndex: 0,
             explanation:
@@ -1772,10 +1772,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What is the value in a reanalysis at a place where no observations existed?",
             options: [
-              "The model's own",
-              "A spatial interpolation between the nearest observations, with no model involved",
-              "A gap, flagged with a fill value, exactly as in a non-infilled observational dataset",
-              "A climatological average for that location, taken from an earlier reference period",
+              "The model's own, produced by physics rather than an instrument",
+              "An interpolation between observations",
+              "A gap flagged with a fill value",
+              "A climatological average",
             ],
             correctIndex: 0,
             explanation:
@@ -1799,7 +1799,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Where does ECMWF say reanalysis uncertainty is largest?",
             options: [
               "Further back in time and in data-sparse locations",
-              "In the most recent years, where quality control has not yet been completed",
+              "In the most recent years",
               "Over the oceans in every period, because sea surface observations are never assimilated",
               "At the model's top levels, where the physics is least constrained by any observation",
             ],
@@ -1812,9 +1812,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does a long trend computed from a reanalysis deserve extra suspicion?",
             options: [
               "Observing system changes can put steps into it",
-              "Because reanalyses are produced only at monthly resolution, which is too coarse for trends",
-              "Because reanalyses assimilate model output rather than observations after the satellite era",
-              "Because reanalyses are re-run every few years, so no trend is stable between releases",
+              "Reanalyses are only monthly",
+              "They assimilate model output",
+              "They are re-run every few years",
             ],
             correctIndex: 0,
             explanation:
@@ -1838,9 +1838,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which of Parker's four candidates did she argue matters most?",
             options: [
               "How well the uncertainty can be characterised",
-              "The reliance on forecasts, since a reanalysis is built from short model forecasts throughout",
+              "The reliance on forecasts",
               "The role of inference, since every observation also involves inference from an instrument reading",
-              "The ill-posed inverse problem, since that is unique to reanalysis among the two",
+              "The ill-posed inverse problem",
             ],
             correctIndex: 0,
             explanation:
@@ -1852,7 +1852,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Use it when you need a complete consistent field and say that you did",
               "Use it in place of observations wherever the observational record has any gaps at all",
-              "Use it only for the satellite era, and switch to station records for anything earlier",
+              "Use it only for the satellite era",
               "Use it as the reference against which model output is judged, since it is observationally constrained",
             ],
             correctIndex: 0,
@@ -1877,9 +1877,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What is data assimilation?",
             options: [
               "Pulling a running model towards the available observations at each step",
-              "Merging several observational datasets into one archive with a common quality control",
-              "Adjusting model output after a run so that its statistics match the observed record",
-              "Selecting which observations to publish, based on how well they agree with the model",
+              "Merging observational datasets into one",
+              "Correcting output to match observed statistics",
+              "Publishing only observations that fit the model",
             ],
             correctIndex: 0,
             explanation:
@@ -1891,8 +1891,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "It is a reanalysis, so it contains model values where observations are absent",
               "It is an observational dataset produced by merging satellite and station records without a model",
-              "It is a CMIP6 model run driven by observed forcings over the industrial period",
-              "It is a scenario projection extended backwards to cover the historical period",
+              "It is a CMIP6 run with observed forcings",
+              "It is a scenario projection run backwards",
             ],
             correctIndex: 0,
             explanation:
@@ -1902,8 +1902,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "A colleague evaluates a climate model by comparing it against ERA5. What is the objection?",
             options: [
-              "ERA5 contains a model of its own",
-              "ERA5 covers too short a period to evaluate a model over the industrial era",
+              "ERA5 contains a model of its own, so it cannot be the arbiter",
+              "ERA5 covers too short a period",
               "ERA5 is published at a resolution too fine to compare with a climate model directly",
               "ERA5 uses a different calendar, so the seasons cannot be aligned between the two",
             ],
@@ -1916,9 +1916,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does lesson 6 identify as the price a reanalysis charges for its completeness?",
             options: [
               "Model-derived values wherever observations are absent",
-              "A delay of several years before any given month becomes available to users",
-              "A restriction to a small set of variables that were directly assimilated",
-              "A coarse grid, far coarser than the observing network can support",
+              "A delay of several years",
+              "Only directly assimilated variables",
+              "A grid coarser than the network",
             ],
             correctIndex: 0,
             explanation:
@@ -1931,7 +1931,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "A shift in which instruments existed, such as a new satellite",
               "A change in the model used to assimilate the observations partway through a reanalysis",
               "A change in the grid onto which the observations are interpolated before assimilation",
-              "A revision to the units or calendar used in the archive holding the observations",
+              "A revision to units or calendar",
             ],
             correctIndex: 0,
             explanation:
@@ -1942,9 +1942,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 6 call reanalysis the most frequently misdescribed object in climate data?",
             options: [
               "It is complete like data and constructed like a model",
-              "It is published under a licence that most users misread as permitting redistribution",
+              "Its license is widely misread",
               "It is named after a process that no longer resembles what is actually done to produce it",
-              "It is the only product whose documentation is written for specialists rather than users",
+              "Its documentation is for specialists",
             ],
             correctIndex: 0,
             explanation:
@@ -1955,9 +1955,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does a fixed forecast system remove from a reanalysis record, and what does it not remove?",
             options: [
               "It removes model upgrades but not observing system changes",
-              "It removes observing system changes but not model upgrades, which continue between releases",
-              "It removes both, which is why a reanalysis trend is more reliable than a station trend",
-              "It removes neither, and the fixing is done purely to make the run reproducible",
+              "It removes observing changes, not upgrades",
+              "It removes both",
+              "It removes neither",
             ],
             correctIndex: 0,
             explanation:
@@ -1981,8 +1981,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does the ability to run a simulation under conditions that never happened make possible?",
             options: [
               "Asking what would have occurred without the extra carbon dioxide",
-              "Predicting the exact date on which a regional threshold will be crossed",
-              "Replacing observations in regions where the instrumental network is too sparse",
+              "Predicting the exact crossing date",
+              "Replacing sparse observations",
               "Eliminating internal variability from the projection, leaving only the forced signal",
             ],
             correctIndex: 0,
@@ -1996,7 +1996,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "The arrangement under which modelling groups run the same experiments",
               "A single global climate model maintained collectively by the world's modelling centres",
               "The archive of observations against which all climate models are formally evaluated",
-              "The committee that sets the emission scenarios used in international assessments",
+              "The committee that sets scenarios",
             ],
             correctIndex: 0,
             explanation:
@@ -2007,9 +2007,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does the CMIP6 acronym DECK stand for?",
             options: [
               "Diagnostic, Evaluation and Characterization of Klima",
-              "Data, Experiments, Calibration and Knowledge, the four pillars of the intercomparison",
-              "Dynamic Earth Climate Kernel, the shared numerical core used by participating models",
-              "Distributed Evaluation of Coupled Kinetics, the protocol for comparing ocean components",
+              "Data, Experiments, Calibration, Knowledge",
+              "Dynamic Earth Climate Kernel",
+              "Distributed Evaluation of Coupled Kinetics",
             ],
             correctIndex: 0,
             explanation:
@@ -2021,8 +2021,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "The DECK, a historical simulation, and endorsed intercomparison projects",
               "An observational archive, a model archive and a scenario archive, held at separate centres",
-              "A control run, a doubling experiment and a scenario run, performed by each group in turn",
-              "A design phase, a simulation phase and an assessment phase, run on a six-year cycle",
+              "A control, a doubling and a scenario run",
+              "Design, simulation and assessment phases",
             ],
             correctIndex: 0,
             explanation:
@@ -2035,7 +2035,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "The Earth System Grid Federation",
               "The Copernicus Climate Data Store, which is also the sole distributor of ERA5",
               "The World Data Centre for Paleoclimatology, alongside the proxy archives",
-              "Direct download from each modelling centre's own institutional repository",
+              "Each center's website",
             ],
             correctIndex: 0,
             explanation:
@@ -2045,10 +2045,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What does a CMIP historical simulation reproduce?",
             options: [
-              "The statistics of the observed climate",
-              "The observed sequence of years, so it can be scored against the record year by year",
-              "The observed weather, at daily resolution, over the whole industrial period",
-              "The observed pattern of internal variability, including the timing of each El Nino",
+              "The statistics of the observed climate, not its sequence of years",
+              "The observed sequence of years, scorable by year",
+              "The observed daily weather",
+              "The timing of each observed El Nino",
             ],
             correctIndex: 0,
             explanation:
@@ -2059,7 +2059,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why do a model's El Ninos not fall in the years the real ones fell?",
             options: [
               "Their timing is internal and depends on the run's starting state",
-              "Because the model's calendar differs from the real one, shifting events by several months",
+              "Because the model's calendar differs",
               "Because the observed forcings are applied as annual averages, which smooths the timing out",
               "Because El Nino is a parameterised process rather than a simulated one in most models",
             ],
@@ -2073,8 +2073,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Realization, initialization, physics, forcing",
               "Resolution, institution, phase and frequency, in the order they appear in the filename",
-              "Run, iteration, project and file, being the four levels of the directory structure",
-              "Region, interval, parameter and format, being the four facets used in archive search",
+              "Run, iteration, project, file",
+              "Region, interval, parameter, format",
             ],
             correctIndex: 0,
             explanation:
@@ -2097,10 +2097,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "In Section 3's table, what can a model run tell you that an observation cannot?",
             options: [
-              "Counterfactuals",
-              "What happened at a specific place on a specific date in the past",
-              "The uncertainty in the instrument that produced a given measurement",
-              "The complete field of a variable that was never simulated at all",
+              "Counterfactuals, and the statistics of a climate",
+              "What happened on a past date",
+              "Instrument uncertainty",
+              "A field never simulated",
             ],
             correctIndex: 0,
             explanation:
@@ -2110,10 +2110,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "In Section 3's table, what can a scenario projection not tell you?",
             options: [
-              "What will actually happen",
+              "What will actually happen, since its output is conditional",
               "The consequence of the assumption the scenario encodes for the climate system",
               "How a model responds to a specified pathway of greenhouse gas concentrations",
-              "The difference between two pathways run through the same model",
+              "The difference between two pathways",
             ],
             correctIndex: 0,
             explanation:
@@ -2124,9 +2124,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "In Section 3's table, what is the thing a reanalysis specifically cannot be trusted for?",
             options: [
               "A long trend across observing system changes",
-              "A consistent gridded field of several variables at once",
+              "A consistent gridded field",
               "A value in a region where dense observations were assimilated",
-              "An hourly time series over the most recent decade",
+              "A recent hourly series",
             ],
             correctIndex: 0,
             explanation:
@@ -2137,9 +2137,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does lesson 7 say almost every argument about climate data really is?",
             options: [
               "An argument where somebody swapped one row of the table for another",
-              "An argument about whether the underlying physics of the greenhouse effect is correct",
-              "An argument about which statistical test should be applied to a short record",
-              "An argument about which institution's version of a dataset should be treated as canonical",
+              "An argument about the greenhouse physics",
+              "An argument about statistical tests",
+              "An argument over which dataset is canonical",
             ],
             correctIndex: 0,
             explanation:
@@ -2151,7 +2151,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "A historical run is not a year-by-year hindcast",
               "A historical run cannot be plotted against observations at all, because the units differ",
-              "A historical run covers a different period, so the two series never overlap",
+              "A historical run covers another period",
               "A historical run is a scenario projection and so has no observed counterpart",
             ],
             correctIndex: 0,
@@ -2176,8 +2176,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which pairing of object and source of its number is correct?",
             options: [
               "Observation, an instrument that was adjusted and homogenised",
-              "Reanalysis, an instrument reading with no model in the processing chain",
-              "Model run, a measurement taken at the resolution of the model grid",
+              "Reanalysis, a reading with no model",
+              "Model run, a measurement on the grid",
               "Scenario projection, an extrapolation of the observed trend with no model involved",
             ],
             correctIndex: 0,
@@ -2189,9 +2189,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 7 open by saying that nothing in a model run was measured?",
             options: [
               "To set up why that is a strength rather than a defect",
-              "To argue that model output should not be used in assessments without observational support",
-              "To explain why model output is distributed separately from observational archives",
-              "To justify bias correcting model output before it is used for any purpose",
+              "To argue against unsupported model use",
+              "To explain separate distribution",
+              "To justify bias correction",
             ],
             correctIndex: 0,
             explanation:
@@ -2301,10 +2301,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What does lesson 8 say you actually need to know about dataset names?",
             options: [
-              "Which family a name belongs to",
+              "Which family a name belongs to, since that decides what the number is",
               "The version history of each dataset, so that a result can be reproduced years later",
               "The institution that maintains it, since that determines which licence applies to its use",
-              "The exact number of stations feeding each product, since that fixes its spatial coverage",
+              "Each product's exact station count",
             ],
             correctIndex: 0,
             explanation:
@@ -2315,9 +2315,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does NASA's GISTEMP combine?",
             options: [
               "GHCN version 4 station data with ERSST version 5 ocean data",
-              "The CRUTEM5 land record with the HadSST4 sea surface record, as HadCRUT5 does",
-              "Satellite microwave soundings with radiosonde profiles from the global upper-air network",
-              "Reanalysis output with proxy reconstructions to extend the record before the instrumental era",
+              "CRUTEM5 land with HadSST4 sea surface data",
+              "Satellite soundings with radiosondes",
+              "Reanalysis output with proxy records",
             ],
             correctIndex: 0,
             explanation:
@@ -2342,8 +2342,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "CRUTEM5 land data with HadSST4 sea surface data",
               "GHCN version 4 station data with ERSST version 5 ocean data, as GISTEMP does",
-              "A kriged land field with an interpolated version of an earlier sea surface dataset",
-              "Reanalysis fields with satellite retrievals over the ocean and stations over land",
+              "A kriged land field and older SST",
+              "Reanalysis fields with satellite data",
             ],
             correctIndex: 0,
             explanation:
@@ -2367,7 +2367,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does Berkeley Earth report about including the rapid warming above Arctic sea ice?",
             options: [
               "It suggests the global average rose an additional 0.1 °C over the last 100 years",
-              "It suggests the global average rose an additional 0.5 °C over the last 50 years",
+              "An additional 0.5 °C over 50 years",
               "It makes no measurable difference to the global average, only to the Arctic regional series",
               "It reduces the global average by about 0.2 °C, because the Arctic was previously over-weighted",
             ],
@@ -2379,10 +2379,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "Which dataset does lesson 8 name as the default choice when you need a complete gridded field?",
             options: [
-              "ERA5",
-              "HadCRUT5, in its statistically infilled version, which also has no gaps",
-              "The CMIP6 multi-model mean, since averaging many models fills every region",
-              "The NOAA paleoclimatology archive, which covers the longest period of any product",
+              "ERA5, a reanalysis with model values in its gaps",
+              "HadCRUT5, infilled version",
+              "The CMIP6 multi-model mean",
+              "The NOAA paleoclimatology archive",
             ],
             correctIndex: 0,
             explanation:
@@ -2394,8 +2394,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Shortest records and most sensitive to processing choices",
               "Longest records and least sensitive to processing choices, since orbit is precisely known",
-              "Complete global coverage with no adjustment needed, because a satellite sees everywhere",
-              "Direct temperature measurement, without inference from any other measured quantity",
+              "Complete coverage with no adjustment",
+              "Direct temperature measurement",
             ],
             correctIndex: 0,
             explanation:
@@ -2406,7 +2406,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What kinds of proxy does NOAA's paleoclimatology archive hold?",
             options: [
               "Tree rings, ice cores, corals, stalagmites, sediments",
-              "Radiosondes, buoys, ships, aircraft reports and surface stations",
+              "Radiosondes, buoys, ships, aircraft",
               "Satellite radiances, ground-based lidar and aircraft-mounted spectrometers",
               "Model runs extended backwards to cover the period before instruments existed",
             ],
@@ -2419,9 +2419,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 8 call a proxy record indirect?",
             options: [
               "Something was measured and a climate variable inferred through a calibration",
-              "The record was collected by an institution other than the one that published it",
-              "The record is stored as a summary statistic rather than as the underlying measurements",
-              "The record covers a region adjacent to the one it is used to describe",
+              "Another institution published it",
+              "It is stored as a summary statistic",
+              "It covers an adjacent region",
             ],
             correctIndex: 0,
             explanation:
@@ -2458,9 +2458,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "According to lesson 8, what is the commonest way a climate figure misleads without containing a false number?",
             options: [
               "Mixing two families in one line without labelling the join",
-              "Plotting the y-axis on a logarithmic scale without saying so in the caption",
+              "An unlabeled logarithmic axis",
               "Using a colour scale that cannot be read by a person with colour blindness",
-              "Reporting a value to more significant figures than the underlying data supports",
+              "Too many significant figures",
             ],
             correctIndex: 0,
             explanation:
@@ -2471,9 +2471,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 8 caution against reading agreement between the long temperature records as strong confirmation?",
             options: [
               "They draw on overlapping station and sea surface data",
-              "They are all produced by the same institution using a single processing chain",
-              "They all report against the same baseline, so their agreement is guaranteed by construction",
-              "They are all derived from reanalysis output rather than from independent measurements",
+              "They come from one institution",
+              "They share the same baseline",
+              "They all derive from reanalysis",
             ],
             correctIndex: 0,
             explanation:
@@ -2483,10 +2483,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "You want to state that a particular month was the warmest on record at a particular place. Which family do you need?",
             options: [
-              "Observations",
-              "A reanalysis, because it provides a value for every location including that one",
-              "Model output, because a model can be run for exactly that location and month",
-              "A scenario projection, because it covers the period in which the month falls",
+              "Observations, since the claim is that something happened there",
+              "A reanalysis, which covers everywhere",
+              "Model output for that place and month",
+              "A scenario projection",
             ],
             correctIndex: 0,
             explanation:
@@ -2496,9 +2496,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "You need a physically consistent field of several variables at once over the whole globe. Which family?",
             options: [
-              "A reanalysis, stated as such",
+              "A reanalysis, stated as such because the gaps came from a model",
               "Observations, infilled statistically wherever the network is too sparse to give a value",
-              "A proxy reconstruction, because only proxies cover every region without gaps",
+              "A proxy reconstruction",
               "A scenario projection for the historical period, run at the finest available resolution",
             ],
             correctIndex: 0,
@@ -2524,7 +2524,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "The file includes information about the data it contains",
               "The file can be read without any software library, because it is stored as plain text",
-              "The file rejects any value that falls outside the range declared for its variable",
+              "The file rejects out-of-range values",
               "The file contains a copy of the code that produced it, so results can be reproduced",
             ],
             correctIndex: 0,
@@ -2537,8 +2537,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "A standard description of what each variable represents",
               "Compression, so that large gridded datasets can be transferred more quickly",
-              "Access control, so that datasets can be published with per-user permissions",
-              "A checksum, so that a corrupted download can be detected before analysis",
+              "Per-user access control",
+              "A checksum for downloads",
             ],
             correctIndex: 0,
             explanation:
@@ -2562,9 +2562,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 9 warn that a filename is not a precise statement of the variable?",
             options: [
               "Several distinct quantities are all called temperature in conversation",
-              "Filenames are truncated by most archives to a fixed number of characters",
-              "Filenames are assigned by the download client rather than by the data provider",
-              "Filenames use a controlled vocabulary that differs between modelling centres",
+              "Archives truncate filenames",
+              "The download client assigns them",
+              "Centers use different vocabularies",
             ],
             correctIndex: 0,
             explanation:
@@ -2576,8 +2576,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "It is often a flux in kilograms per square metre per second",
               "It is often stored in inches rather than millimetres in datasets of American origin",
-              "It is often cumulative since the start of the run rather than per time step",
-              "It is often reported as a probability of exceedance rather than as a depth",
+              "It is often cumulative over the run",
+              "It is often an exceedance probability",
             ],
             correctIndex: 0,
             explanation:
@@ -2590,7 +2590,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "None to an anomaly, 273 to an absolute value",
               "273 to an anomaly and none to an absolute value, which is the reverse of the usual intuition",
               "A factor of about 1.8, the same as the conversion between Celsius and Fahrenheit",
-              "None at all, since both scales use the same size of degree and the same zero point",
+              "None at all, same zero point",
             ],
             correctIndex: 0,
             explanation:
@@ -2601,9 +2601,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which calendars does lesson 9 warn that climate models use?",
             options: [
               "360-day and no-leap calendars, as well as the real one",
-              "The Julian calendar for runs before 1900 and the Gregorian calendar afterwards",
-              "A calendar of 365.25 days, with the quarter day distributed evenly across all months",
-              "A calendar defined per experiment, so that every CMIP6 run uses a different one",
+              "Julian before 1900, Gregorian after",
+              "A 365.25-day calendar",
+              "A different calendar per experiment",
             ],
             correctIndex: 0,
             explanation:
@@ -2614,8 +2614,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "You plot a global field and the Pacific appears to be cut in half. What is the likely cause?",
             options: [
               "The file uses a different longitude convention",
-              "The file uses a 360-day calendar, which shifts the dateline by several degrees",
-              "The file has missing values over the ocean that have been plotted as zero",
+              "A 360-day calendar",
+              "Ocean fill values plotted as zero",
               "The file has been area weighted, which distorts the appearance near the equator",
             ],
             correctIndex: 0,
@@ -2629,7 +2629,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "The flag value is averaged in as though it were data",
               "The averaging routine raises an error and refuses to produce a result at all",
               "The fill values are ignored automatically by every standard analysis library",
-              "The result is unaffected, because fill values are stored outside the data array",
+              "The result is unaffected",
             ],
             correctIndex: 0,
             explanation:
@@ -2640,9 +2640,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 9 insist you record the dataset version?",
             options: [
               "A result that cannot name its version cannot be reproduced",
-              "Because older versions are deleted from the archive once a new one is released",
-              "Because the licence terms change between versions of most climate datasets",
-              "Because only the latest version carries CF-compliant metadata for its variables",
+              "Old versions get deleted",
+              "License terms change by version",
+              "Only the latest is CF-compliant",
             ],
             correctIndex: 0,
             explanation:
@@ -2665,10 +2665,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "In xarray's demonstration, how does the weighted global mean temperature compare with the unweighted one?",
             options: [
-              "The weighted mean is higher",
-              "The weighted mean is lower, because polar cells are given greater influence once corrected",
-              "The two are identical to within rounding error, which is why weighting is often skipped",
-              "The weighted mean is higher in winter and lower in summer, averaging out over a year",
+              "The weighted mean is higher, since cold polar cells count less",
+              "The weighted mean is lower",
+              "The two are identical",
+              "Higher in winter, lower in summer",
             ],
             correctIndex: 0,
             explanation:
@@ -2679,9 +2679,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "How does lesson 9 characterise an unweighted global mean?",
             options: [
               "An answer to a different question",
-              "A slightly less precise version of the weighted mean, acceptable for exploratory work",
+              "A rougher weighted mean",
               "An error that most analysis libraries detect and correct automatically before returning a value",
-              "A valid alternative, provided the grid is finer than about one degree",
+              "A valid alternative",
             ],
             correctIndex: 0,
             explanation:
@@ -2691,10 +2691,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "Which of these is one of the CMIP6 controlled vocabulary files named in lesson 9?",
             options: [
-              "CMIP6_experiment_id.json",
-              "CMIP6_uncertainty_range.json, which lists the permitted confidence intervals for each variable",
-              "CMIP6_baseline_period.json, which fixes the reference period every model must report against",
-              "CMIP6_bias_correction.json, which records which correction method was applied to each file",
+              "CMIP6_experiment_id.json, listing permitted experiments",
+              "CMIP6_uncertainty_range.json",
+              "CMIP6_baseline_period.json",
+              "CMIP6_bias_correction.json",
             ],
             correctIndex: 0,
             explanation:
@@ -2705,9 +2705,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What is a controlled vocabulary, in the CMIP6 sense?",
             options: [
               "The published list of permitted values for a metadata field",
-              "A glossary of technical terms maintained alongside the coursebook for new users",
+              "A glossary for new users",
               "The set of variable names a model is required to output for a given experiment",
-              "A restriction on who may publish data to the archive, enforced by the federation",
+              "A restriction on who may publish",
             ],
             correctIndex: 0,
             explanation:
@@ -2730,10 +2730,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "A model file uses a 360-day calendar and you average it against a real-calendar observational record. What goes wrong?",
             options: [
-              "The seasons quietly misalign",
+              "The seasons quietly misalign, with no error raised",
               "The averaging fails outright, because the two series have different numbers of points",
               "The units become inconsistent, since a 360-day year implies a different time unit",
-              "The anomaly baseline shifts, adding a constant offset to the whole series",
+              "The anomaly baseline shifts",
             ],
             correctIndex: 0,
             explanation:
@@ -2743,10 +2743,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "Who maintains netCDF, according to lesson 9?",
             options: [
-              "The Unidata Program Center",
+              "The Unidata Program Center, part of NSF NCAR",
               "The World Climate Research Programme, alongside the CMIP controlled vocabularies",
-              "ECMWF, which also produces the ERA5 reanalysis distributed in that format",
-              "The Creative Commons organisation, under the same licence as the coursebook",
+              "ECMWF, the ERA5 producer",
+              "The Creative Commons organization",
             ],
             correctIndex: 0,
             explanation:
@@ -2758,7 +2758,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "It can be read by computers that store numbers differently",
               "It can be opened without any software, because it is stored as human-readable text",
-              "It runs identically on any operating system, because it embeds its own reader",
+              "It embeds its own reader",
               "It can be processed without loading the whole file into memory at once",
             ],
             correctIndex: 0,
@@ -2770,9 +2770,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which claim about the three long surface temperature records does lesson 8 support?",
             options: [
               "They are built differently on purpose",
-              "They are built identically, so that any difference between them signals a processing error",
-              "They are built from disjoint station networks, which makes their agreement strong evidence",
-              "They are built by a single consortium and released together on a common schedule",
+              "They are built identically",
+              "They use disjoint networks",
+              "One consortium builds them",
             ],
             correctIndex: 0,
             explanation:
@@ -2783,9 +2783,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "You are told a temperature anomaly without a reference period. What does lesson 8 imply you should do?",
             options: [
               "Find the baseline before interpreting it",
-              "Assume the pre-industrial baseline, which is the convention in most published work",
+              "Assume pre-industrial",
               "Assume the current WMO standard normal, which is the default for operational products",
-              "Treat the number as wrong, since a complete anomaly always carries its own baseline",
+              "Treat the number as wrong",
             ],
             correctIndex: 0,
             explanation:
@@ -2798,7 +2798,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "Model output, never a measurement",
               "A reanalysis, because it assimilates the observed forcings applied to the run",
               "An observation, because the historical experiment is driven by observed conditions",
-              "A proxy record, because it reconstructs the climate rather than measuring it",
+              "A proxy reconstruction",
             ],
             correctIndex: 0,
             explanation:
@@ -2821,10 +2821,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What does lesson 9 say is the commonest beginner error with a self-describing file?",
             options: [
-              "Not asking it what it holds",
-              "Opening it with a library that does not support the version the file was written in",
-              "Loading the entire file into memory when only a small subset was needed",
-              "Writing to it in place rather than producing a new file for derived results",
+              "Not asking it what it holds before plotting",
+              "Using an outdated library",
+              "Loading the whole file",
+              "Writing to it in place",
             ],
             correctIndex: 0,
             explanation:
@@ -2835,9 +2835,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 8 say you should name the assumption when reporting a scenario result?",
             options: [
               "Because the result is a consequence of that assumption",
-              "Because the licence covering the scenario dataset requires the pathway to be cited",
+              "Because the license requires it",
               "Because scenarios are revised between CMIP phases and the older names are ambiguous",
-              "Because assessments will not accept a result whose scenario is not stated",
+              "Because assessments demand it",
             ],
             correctIndex: 0,
             explanation:
@@ -2926,9 +2926,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does lesson 10 say a working discipline for climate numbers looks like?",
             options: [
               "Quote the reference period alongside the number",
-              "Quote the number only after checking it against a second independent dataset",
+              "Quote it only after a second check",
               "Quote the number to no more than two significant figures to avoid false precision",
-              "Quote the institution that produced it so a reader can judge the method",
+              "Quote the producing institution",
             ],
             correctIndex: 0,
             explanation:
@@ -2941,7 +2941,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "The anomaly is the better-measured quantity",
               "Because absolute values are considered proprietary by the agencies that collect them",
               "Because international agreements require climate reporting in relative terms",
-              "Because absolute values change with the units chosen while anomalies do not",
+              "Units affect absolute values",
             ],
             correctIndex: 0,
             explanation:
@@ -2952,9 +2952,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What property of temperature anomalies makes them easier to estimate than absolute temperatures?",
             options: [
               "They are correlated over hundreds of kilometres",
-              "They are measured by a separate and more accurate class of instrument",
-              "They are recorded more frequently, giving a larger sample at each location",
-              "They are unaffected by station moves, so no homogenisation is required",
+              "A more accurate class of instrument",
+              "They are recorded more often",
+              "They are immune to station moves",
             ],
             correctIndex: 0,
             explanation:
@@ -2967,7 +2967,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "They encounter difficulties that create large uncertainties",
               "They cannot be computed at all without a climate model to fill the unmeasured regions",
               "They are only valid for regions with at least one station per grid box in every year",
-              "They must be recomputed each time the base period is changed, unlike anomalies",
+              "They change with the base period",
             ],
             correctIndex: 0,
             explanation:
@@ -2991,9 +2991,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does shifting the reference period do to a temperature curve?",
             options: [
               "Slides the whole curve up or down",
-              "Changes its slope, which is why baselines must be standardised before trends are compared",
+              "Changes its slope",
               "Changes the year-to-year variability, since the reference period is subtracted year by year",
-              "Has no effect at all, since anomalies are independent of the reference period entirely",
+              "Has no effect at all",
             ],
             correctIndex: 0,
             explanation:
@@ -3016,9 +3016,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "Which reference period does HadCRUT5 report against?",
             options: [
-              "1961 to 1990",
+              "1961 to 1990, unlike GISTEMP's 1951 to 1980",
               "1951 to 1980, matching NASA's surface temperature analysis for easier comparison",
-              "1991 to 2020, matching the current WMO rolling standard normal",
+              "1991 to 2020",
               "1850 to 1900, matching the period used for pre-industrial comparisons in policy",
             ],
             correctIndex: 0,
@@ -3029,10 +3029,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What is the WMO's current rolling standard normal period?",
             options: [
-              "1991 to 2020",
-              "1961 to 1990, which is also retained as the fixed long-term reference",
-              "1981 to 2010, which has not yet been superseded by a later period",
-              "1901 to 2000, covering the twentieth century as a single reference",
+              "1991 to 2020, the latest 30 years ending in zero",
+              "1961 to 1990, the fixed reference",
+              "1981 to 2010, not yet superseded",
+              "1901 to 2000",
             ],
             correctIndex: 0,
             explanation:
@@ -3044,8 +3044,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Models carry absolute biases in their own mean climate",
               "Because models produce only differences and never absolute values in the first place",
-              "Because the CMIP protocol forbids the publication of absolute model temperatures",
-              "Because absolute model output cannot be stored at the precision the archive requires",
+              "CMIP forbids absolute values",
+              "Absolute values exceed archive precision",
             ],
             correctIndex: 0,
             explanation:
@@ -3056,9 +3056,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which comparison does lesson 10 say you should refuse?",
             options: [
               "A model's absolute temperature against a thermometer record",
-              "A model's anomaly against an observed anomaly on a common baseline",
-              "Two observational datasets re-baselined onto the same reference period",
-              "Two members of the same model's ensemble plotted against each other",
+              "A model anomaly versus an observed anomaly",
+              "Two re-baselined observational datasets",
+              "Two members of one model's ensemble",
             ],
             correctIndex: 0,
             explanation:
@@ -3070,7 +3070,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Re-baseline both onto a common period and say which",
               "Convert both to absolute values, since anomalies from different sources cannot be combined",
-              "Interpolate both onto the finer of the two grids so that the cells match exactly",
+              "Interpolate both onto the finer grid",
               "Apply a bias correction to whichever of the two differs most from the multi-model mean",
             ],
             correctIndex: 0,
@@ -3083,8 +3083,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Shifting a series onto a different reference period",
               "Recomputing a series from raw station data using a newer homogenisation method",
-              "Correcting a model's output so that its absolute values match observations",
-              "Extending a reference period forward as new years of data become available",
+              "Bias correcting a model",
+              "Extending a reference period",
             ],
             correctIndex: 0,
             explanation:
@@ -3095,9 +3095,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What is a model's absolute bias, in the sense lesson 10 uses?",
             options: [
               "The offset between its own mean climate and the observed one",
-              "The systematic error introduced by its numerical time-stepping scheme",
-              "The difference between its projection and the multi-model mean of the ensemble",
-              "The amount by which its trend departs from the observed trend over the same period",
+              "Its time-stepping error",
+              "Its gap from the multi-model mean",
+              "Its trend departure from observations",
             ],
             correctIndex: 0,
             explanation:
@@ -3109,7 +3109,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Quote its reference period in the same breath",
               "Quote the number to at most two significant figures, since more is spurious precision",
-              "Quote the institution that published it, since methods differ between institutions",
+              "Quote the publishing institution",
               "Quote the trend rather than the level, since only trends are baseline independent",
             ],
             correctIndex: 0,
@@ -3135,8 +3135,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "The climate system rearranging heat rather than gaining or losing it",
               "Random measurement error in the individual thermometers making up the network",
-              "Changes in the number of reporting stations from one year to the next",
-              "Revisions to the homogenisation applied when each new version is published",
+              "Changes in station count",
+              "Homogenization revisions",
             ],
             correctIndex: 0,
             explanation:
@@ -3147,9 +3147,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 11 decline to print a figure for how much the El Nino Southern Oscillation shifts the global mean?",
             options: [
               "No primary source for it could be retrieved",
-              "Because the figure varies so much between datasets that no single value is meaningful",
-              "Because the shift is too small to matter for any trend computed over a decade or more",
-              "Because the figure is disputed between the groups that produce the temperature records",
+              "It varies by dataset",
+              "The shift is too small to matter",
+              "The figure is disputed",
             ],
             correctIndex: 0,
             explanation:
@@ -3162,7 +3162,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "The interval was chosen because its trend was low",
               "The interval was too long, so it averaged over two separate regimes of the climate system",
               "The interval used a dataset that had since been superseded by a newer version",
-              "The interval was measured from a reanalysis rather than from observations",
+              "The interval used a reanalysis",
             ],
             correctIndex: 0,
             explanation:
@@ -3172,10 +3172,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What was the second target of Rahmstorf, Foster and Cahill's critique?",
             options: [
-              "Fitting broken trend lines",
+              "Fitting broken trend lines, which inflates significance",
               "Using annual rather than monthly data, which discards most of the available information",
               "Comparing surface records against satellite records without adjusting for the different layers",
-              "Reporting a trend without an uncertainty interval attached to it",
+              "Omitting trend uncertainty",
             ],
             correctIndex: 0,
             explanation:
@@ -3186,9 +3186,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Does the objection to a chosen start date apply only to claims that warming has slowed?",
             options: [
               "No, the rule is about method rather than direction",
-              "Yes, because only a low trend can be produced by selecting an interval after the fact",
-              "Yes, because accelerating trends are tested by a different statistical procedure",
-              "No, but it applies with much less force to claims that warming has accelerated",
+              "Yes, only a low trend can be selected",
+              "Yes, acceleration uses another test",
+              "No, but it is weaker for acceleration",
             ],
             correctIndex: 0,
             explanation:
@@ -3199,8 +3199,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "How does lesson 11 answer the question of how long a trend window needs to be?",
             options: [
               "It depends on the variable, the region and the size of the variability",
-              "Exactly thirty years, matching the WMO climatological standard normal in every case",
-              "At least a century, since shorter periods are never statistically meaningful",
+              "Exactly thirty years",
+              "At least a century",
               "Ten years, provided the record is taken from a homogenised observational dataset",
             ],
             correctIndex: 0,
@@ -3212,7 +3212,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does RSS state about the rate at which the troposphere has warmed relative to model expectation?",
             options: [
               "Not quite as fast as most climate models predict",
-              "Faster than every model in the current generation of the intercomparison",
+              "Faster than every model",
               "At exactly the rate the multi-model mean gives, within the stated uncertainty",
               "In the opposite direction to the models, which is the central unresolved discrepancy",
             ],
@@ -3225,9 +3225,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which of the four explanations RSS offers for the model and observation difference does lesson 11 highlight?",
             options: [
               "The two drew different sequences of internal variability",
-              "The satellite instrument has a calibration error that has not yet been corrected",
-              "The models were run under a scenario that did not match the observed forcings",
-              "The comparison was made over a period too short for any conclusion to be drawn",
+              "An uncorrected satellite calibration error",
+              "A mismatched model scenario",
+              "Too short a comparison period",
             ],
             correctIndex: 0,
             explanation:
@@ -3238,9 +3238,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does lesson 11 say about a model and the real world disagreeing over a period?",
             options: [
               "It is a finding rather than an embarrassment",
-              "It always indicates an error in the model that must be corrected before the run is used",
+              "It always means a model error",
               "It always indicates an error in the observations, since the physics is well established",
-              "It cannot happen if the model is driven with the observed forcings for that period",
+              "It cannot happen",
             ],
             correctIndex: 0,
             explanation:
@@ -3264,9 +3264,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What is a selection effect, in the sense lesson 11 uses it?",
             options: [
               "Choosing an interval for its result then testing that result as if it were chosen in advance",
-              "Choosing a dataset because it has the best spatial coverage for the region of interest",
+              "Choosing a dataset for its coverage",
               "Choosing to publish only results that reach a conventional significance threshold",
-              "Choosing which stations to include in a network on the basis of their record length",
+              "Choosing stations by record length",
             ],
             correctIndex: 0,
             explanation:
@@ -3278,7 +3278,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "A fit that allows the slope to change at a point",
               "A trend computed over a record with a gap in the middle of the period",
-              "A trend whose sign reverses when a different dataset is substituted",
+              "A trend that flips with dataset",
               "A trend that fails a significance test at the conventional threshold",
             ],
             correctIndex: 0,
@@ -3290,9 +3290,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does a trend starting in a strong El Nino year come out shallow?",
             options: [
               "The record starts from an unusually high point",
-              "The El Nino suppresses warming for several years afterwards through ocean heat uptake",
-              "The El Nino introduces a discontinuity that breaks the linear fit at that point",
-              "The El Nino is removed by homogenisation, leaving a gap at the start of the record",
+              "El Nino suppresses later warming",
+              "El Nino breaks the linear fit",
+              "Homogenization removes the El Nino",
             ],
             correctIndex: 0,
             explanation:
@@ -3304,8 +3304,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "An observation and a simulation on the same axis with no label",
               "Two observational datasets with the same reference period and the same coverage",
-              "Two members of a single model's ensemble over the same period",
-              "A trend and its uncertainty interval computed from the same series",
+              "Two members of one ensemble",
+              "A trend and its own uncertainty",
             ],
             correctIndex: 0,
             explanation:
@@ -3317,7 +3317,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Its variability is larger relative to the signal",
               "Precipitation gauges are less accurate than thermometers by roughly an order of magnitude",
-              "Precipitation records began later, so fewer years are available for any window",
+              "Precipitation records began later",
               "Precipitation is a parameterised variable in models and so cannot be trended at all",
             ],
             correctIndex: 0,
@@ -3328,10 +3328,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What does lesson 11 say happens when you draw a conclusion from too short a window?",
             options: [
-              "You draw a conclusion about the noise",
-              "You draw a conclusion that is correct but with a wider confidence interval than usual",
-              "You draw a conclusion that applies only to the region the record covers",
-              "You draw no conclusion, because standard software refuses to fit a short trend",
+              "You draw a conclusion about the noise, not the forced signal",
+              "You draw a correct but wider conclusion",
+              "You draw a purely regional conclusion",
+              "You draw none, as software refuses",
             ],
             correctIndex: 0,
             explanation:
@@ -3342,9 +3342,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which statement about anomalies and levels is correct?",
             options: [
               "The trend is baseline independent, the level is not",
-              "Both the trend and the level are baseline independent, which is why anomalies are used",
+              "Both are baseline independent",
               "The level is baseline independent, the trend is not, which is why baselines are standardised",
-              "Neither is baseline independent, so all comparisons require a common reference period",
+              "Neither is baseline independent",
             ],
             correctIndex: 0,
             explanation:
@@ -3368,9 +3368,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 10 say the choice to use anomalies is not merely presentational?",
             options: [
               "The anomaly is genuinely better constrained by a sparse network",
-              "Because publication standards in the field require anomalies rather than absolute values",
-              "Because absolute values would reveal the identity of individual reporting stations",
-              "Because anomalies compress better and so are cheaper to distribute at global scale",
+              "Publication standards require it",
+              "Absolute values reveal stations",
+              "Anomalies compress better",
             ],
             correctIndex: 0,
             explanation:
@@ -3394,8 +3394,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does lesson 11 mean by calling the forced signal and internal variability separable in principle?",
             options: [
               "Over a long enough window the signal dominates the fluctuation",
-              "The two can be separated in any single record by applying a standard filter",
-              "The two are measured by different instruments and archived separately",
+              "A standard filter separates them",
+              "Different instruments measure them",
               "The two are separated by the homogenisation applied before a dataset is published",
             ],
             correctIndex: 0,
@@ -3408,7 +3408,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Re-baseline to a common period, then compare",
               "Compare first, then attribute any offset between them to methodological differences",
-              "Convert both to absolute values, then compare, then convert back to anomalies",
+              "Convert to absolute values first",
               "Fit a trend to each, then subtract the trends to remove the baseline difference",
             ],
             correctIndex: 0,
@@ -3419,10 +3419,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What does lesson 11 say about the direction of the selection-effect objection?",
             options: [
-              "It is not a partisan tool",
-              "It applies only to analyses published outside the peer-reviewed literature",
-              "It applies only to intervals shorter than the thirty-year climatological normal",
-              "It applies only when the dataset used has since been revised or superseded",
+              "It is not a partisan tool, since it cuts both ways",
+              "It applies only outside peer review",
+              "It applies only below thirty years",
+              "It applies only to revised datasets",
             ],
             correctIndex: 0,
             explanation:
@@ -3434,8 +3434,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "The span of years an anomaly is measured from",
               "The lowest value in the record, against which all later values are indexed",
-              "The period over which a model is spun up before its output becomes usable",
-              "The reference dataset a model is bias corrected against before use",
+              "A model's spin-up period",
+              "A bias-correction reference",
             ],
             correctIndex: 0,
             explanation:
@@ -3562,7 +3562,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "They behave differently with lead time and spatial scale",
               "They are measured by three different communities using three different instruments",
-              "They are reported separately by convention in every assessment published so far",
+              "They are reported separately by convention",
               "They can each be eliminated by a different technique, given enough computer time",
             ],
             correctIndex: 0,
@@ -3575,8 +3575,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Which of the two methods produced it",
               "Which journal published it and whether the analysis was peer reviewed",
-              "Which model was used and at what horizontal resolution it was run",
-              "Which agency funded the analysis and how quickly it was released",
+              "Which model was used",
+              "Which agency funded it",
             ],
             correctIndex: 0,
             explanation:
@@ -3587,9 +3587,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Into which three sources did Hawkins and Sutton separate the uncertainty in regional climate projections?",
             options: [
               "Internal variability, model uncertainty, scenario uncertainty",
-              "Measurement error, sampling error and structural error, as defined in metrology",
-              "Initial conditions, boundary conditions and numerical error, the three stages of a run",
-              "Observation, reanalysis and simulation, matching the object taxonomy of Section 3",
+              "Measurement, sampling and structural error",
+              "Initial, boundary and numerical error",
+              "Observation, reanalysis and simulation",
             ],
             correctIndex: 0,
             explanation:
@@ -3601,7 +3601,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Model uncertainty and internal variability",
               "Scenario uncertainty alone, since emissions diverge immediately after the present day",
-              "Measurement uncertainty in the observations used to initialise the projections",
+              "Initialization measurement error",
               "Numerical error in the models, which accumulates fastest in the first decades of a run",
             ],
             correctIndex: 0,
@@ -3613,9 +3613,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "When and where does internal variability matter most?",
             options: [
               "At short lead times and small spatial scales",
-              "At long lead times and global scale, where it accumulates over the century",
-              "Uniformly across all lead times and scales, which is why it is treated as a constant",
-              "Only in the tropics, where the El Nino Southern Oscillation originates",
+              "At long lead times, globally",
+              "Uniformly at all scales",
+              "Only in the tropics",
             ],
             correctIndex: 0,
             explanation:
@@ -3639,9 +3639,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 12 say scenario uncertainty is not uncertainty about the climate?",
             options: [
               "It is uncertainty about what humans will emit",
-              "It is uncertainty about which model was used to run the scenario in question",
+              "It is about which model ran it",
               "It is uncertainty about the observations used to define the scenario's starting point",
-              "It is uncertainty about how the scenario should be labelled in the archive",
+              "It is about archive labels",
             ],
             correctIndex: 0,
             explanation:
@@ -3665,9 +3665,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "How do Maher, Milinski and Ludwig define a single-model initial-condition large ensemble?",
             options: [
               "Simulations from different initial conditions with one model and identical forcing",
-              "Simulations from one initial condition run through several models with identical forcing",
-              "Simulations from one model under several different scenarios of future emissions",
-              "Simulations from several models each initialised from its own preferred observational dataset",
+              "One initial condition run through several models",
+              "One model under several emission scenarios",
+              "Several models, each from its own dataset",
             ],
             correctIndex: 0,
             explanation:
@@ -3679,8 +3679,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Reading a large ensemble's spread as scientific uncertainty",
               "Reading a multi-model ensemble as a sample of possible future climates weighted by likelihood",
-              "Reading a scenario ensemble as a set of runs from a single model",
-              "Reading a historical ensemble as a forecast of the coming decade",
+              "Reading a scenario ensemble as one model's runs",
+              "Reading a historical run as a forecast",
             ],
             correctIndex: 0,
             explanation:
@@ -3690,10 +3690,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What did Tebaldi and colleagues report about the dominant source of uncertainty in the CMIP6 scenario runs?",
             options: [
-              "Model structural differences",
+              "Model structural differences, more than scenario choice",
               "Scenario differences, which exceed intermodel spread across almost every region analysed",
               "Internal variability, which dominates through to the end of the century at all scales",
-              "Observational uncertainty in the historical period used to evaluate the runs",
+              "Historical observational uncertainty",
             ],
             correctIndex: 0,
             explanation:
@@ -3716,10 +3716,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "On what two grounds does the Sanderson, Wehner and Knutti scheme weight models?",
             options: [
-              "Skill and independence",
-              "Resolution and vintage, so that newer and finer models count for more",
-              "Institutional size and archive completeness, so that fuller submissions count for more",
-              "Agreement with the ensemble mean and stability across scenarios",
+              "Skill and independence, which partly cancel",
+              "Resolution and vintage",
+              "Institutional size",
+              "Agreement with the ensemble mean",
             ],
             correctIndex: 0,
             explanation:
@@ -3729,10 +3729,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What did Sanderson, Wehner and Knutti find about how much their weighting changed projections?",
             options: [
-              "The influence was moderate",
+              "The influence was moderate, as skill and uniqueness offset",
               "The influence reversed the sign of the projected change over most land regions",
               "The influence roughly doubled the projected warming by the end of the century",
-              "The influence could not be measured, because no unweighted baseline was available",
+              "The influence could not be measured",
             ],
             correctIndex: 0,
             explanation:
@@ -3744,8 +3744,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Constraining the ensemble against observed warming",
               "Increasing the resolution of the models before the ensemble is assembled",
-              "Removing models whose ocean components share a common ancestor",
-              "Averaging over more scenarios so that scenario uncertainty is reduced",
+              "Removing related ocean models",
+              "Averaging over more scenarios",
             ],
             correctIndex: 0,
             explanation:
@@ -3768,10 +3768,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "Which uncertainty grows fastest as the projection horizon lengthens?",
             options: [
-              "Scenario uncertainty",
-              "Internal variability, which accumulates over the century as fluctuations compound",
-              "Observational uncertainty, since fewer measurements exist for later periods",
-              "Numerical error, which grows with the number of time steps integrated",
+              "Scenario uncertainty, as the pathways diverge",
+              "Internal variability",
+              "Observational uncertainty",
+              "Numerical error",
             ],
             correctIndex: 0,
             explanation:
@@ -3783,7 +3783,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "A single-model initial-condition large ensemble",
               "A multi-model ensemble, since more models give a better sample of natural variability",
-              "A scenario ensemble, since scenarios span the range of possible futures",
+              "A scenario ensemble",
               "A reanalysis ensemble, since only observations can bound natural variability",
             ],
             correctIndex: 0,
@@ -3794,10 +3794,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "You want to know how much structural disagreement there is about a projected change. Which ensemble?",
             options: [
-              "A multi-model ensemble",
-              "A large ensemble of one model, since it isolates the response from the noise",
+              "A multi-model ensemble on a fixed experiment",
+              "A large ensemble of one model",
               "A single run from the model with the best hindcast skill over the historical period",
-              "A reanalysis, since it constrains the model against observations at every step",
+              "A reanalysis",
             ],
             correctIndex: 0,
             explanation:
@@ -3808,9 +3808,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which statement about the reducibility of the three uncertainties does lesson 12 support?",
             options: [
               "Model uncertainty and internal variability are in principle reducible by science",
-              "All three are equally reducible, given enough computer time and observational effort",
+              "All three are equally reducible",
               "None of the three can be reduced, which is why projections are always presented as ranges",
-              "Only scenario uncertainty is reducible, by narrowing the set of pathways considered",
+              "Only scenario uncertainty is reducible",
             ],
             correctIndex: 0,
             explanation:
@@ -3821,9 +3821,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does lesson 12 say about treating the three uncertainties as one thing?",
             options: [
               "It produces most of the bad arguments about trusting models",
-              "It is a reasonable simplification for anyone not running the models themselves",
-              "It is required by assessment convention, which reports a single combined range",
-              "It is unavoidable, because the three cannot be separated in any published output",
+              "A fine simplification for non-modelers",
+              "Assessment convention requires it",
+              "It is unavoidable",
             ],
             correctIndex: 0,
             explanation:
@@ -3849,7 +3849,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "It is the formal reason a short window measures the noise",
               "It replaces that advice, since the decomposition applies only to projections and not to records",
               "It contradicts that advice, since internal variability turns out to be small at short lead times",
-              "It is unrelated, since the decomposition concerns models and the advice concerns observations",
+              "It is unrelated to window length",
             ],
             correctIndex: 0,
             explanation:
@@ -3859,10 +3859,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What is a scenario, in one sentence?",
             options: [
-              "An input to a climate model",
+              "An input to a climate model, not an output",
               "An output of a climate model, produced once the physics has been integrated forward",
-              "A forecast of emissions produced by economic models and endorsed by governments",
-              "A reconstruction of past emissions used to drive the historical simulations",
+              "A forecast of emissions",
+              "A past-emissions reconstruction",
             ],
             correctIndex: 0,
             explanation:
@@ -3873,9 +3873,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What is a Representative Concentration Pathway named for?",
             options: [
               "The radiative forcing it reaches in 2100",
-              "The concentration of carbon dioxide in parts per million it reaches in 2050",
-              "The order in which the pathways were published by the modelling community",
-              "The temperature rise in degrees it produces by the end of the century",
+              "Its 2050 CO2 concentration",
+              "Its publication order",
+              "Its 2100 temperature rise",
             ],
             correctIndex: 0,
             explanation:
@@ -3887,8 +3887,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "The forcing level in watts per square metre in 2100",
               "The warming in degrees Celsius reached by the end of the century",
-              "The version number of the socioeconomic pathway being used",
-              "The number of models that ran that particular experiment",
+              "The pathway's version number",
+              "The number of models that ran it",
             ],
             correctIndex: 0,
             explanation:
@@ -3900,7 +3900,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "A storyline about how the world develops",
               "A concentration pathway defined purely by its radiative forcing in 2100",
-              "A ranking of emission pathways by their assessed probability of occurring",
+              "A probability ranking",
               "An agreed policy target adopted by the parties to an international treaty",
             ],
             correctIndex: 0,
@@ -3911,10 +3911,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "Which are the four ScenarioMIP Tier 1 scenarios?",
             options: [
-              "SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5",
-              "SSP1-1.9, SSP1-2.6, SSP4-3.4 and SSP4-6.0, the four lowest forcing pathways available",
-              "RCP2.6, RCP4.5, RCP6.0 and RCP8.5, carried over unchanged from the previous phase",
-              "SSP5-8.5 alone, with the other pathways relegated to a second and optional tier",
+              "SSP1-2.6, SSP2-4.5, SSP3-7.0 and SSP5-8.5, the priority set",
+              "SSP1-1.9, SSP1-2.6, SSP4-3.4, SSP4-6.0",
+              "RCP2.6, RCP4.5, RCP6.0, RCP8.5",
+              "SSP5-8.5 alone",
             ],
             correctIndex: 0,
             explanation:
@@ -3925,7 +3925,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which of these is in the published SSP concentration set described by Meinshausen and colleagues?",
             options: [
               "SSP5-3.4-OS, an overshoot pathway",
-              "SSP6-9.5, the highest forcing pathway, added after the others were published",
+              "SSP6-9.5, a top pathway",
               "SSP0-1.0, a pathway assuming emissions cease immediately in the year of publication",
               "SSP2-2.0, a pathway aligned with the lower of the two Paris Agreement targets",
             ],
@@ -3952,8 +3952,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "It is the best match to midcentury under current and stated policies",
               "It should be retired entirely, because cumulative emissions have fallen well below it",
-              "It is a physically impossible pathway that no carbon cycle model can reproduce",
-              "It is indistinguishable from RCP4.5 before 2050 and so adds nothing to an analysis",
+              "It is physically impossible",
+              "It matches RCP4.5 before 2050",
             ],
             correctIndex: 0,
             explanation:
@@ -3977,9 +3977,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "In their reply, what do Schwalm and colleagues say matters for driving a climate model?",
             options: [
               "Total atmospheric carbon dioxide, not which sector it came from",
-              "The socioeconomic storyline attached to the pathway rather than the concentration itself",
-              "The rate of emissions in the final decade of the century rather than the cumulative total",
-              "The regional distribution of emissions rather than the global total",
+              "The storyline, not the concentration",
+              "The final-decade emission rate",
+              "Regional distribution, not the total",
             ],
             correctIndex: 0,
             explanation:
@@ -3989,10 +3989,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "How did van Vuuren and colleagues characterise RCP8.5 among baseline scenarios?",
             options: [
-              "Around the ninetieth percentile",
-              "As the median of the baseline scenarios available at the time it was designed",
+              "Around the ninetieth percentile of baseline scenarios",
+              "As the median baseline scenario",
               "As the lowest of the four pathways that could be reconciled with observed emissions",
-              "As the only pathway consistent with continued expansion of coal use",
+              "As the only coal-expansion pathway",
             ],
             correctIndex: 0,
             explanation:
@@ -4044,7 +4044,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "More evenly spaced and reaching lower 2100 forcing levels",
               "Less evenly spaced and reaching higher forcing levels, to widen the range explored",
               "Identical in forcing but differing only in the socioeconomic storyline attached",
-              "Fewer in number, with the low end of the range removed as implausible",
+              "Fewer, without the low end",
             ],
             correctIndex: 0,
             explanation:
@@ -4082,8 +4082,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "One names the scenario and one does not",
               "One reports a model result and one reports an observation from the same period",
-              "One uses a global average and one uses a regional average",
-              "One is expressed as an anomaly and one as an absolute value",
+              "Global versus regional average",
+              "Anomaly versus absolute value",
             ],
             correctIndex: 0,
             explanation:
@@ -4133,9 +4133,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which limit does the attribution protocol name for itself?",
             options: [
               "A real change in probability may not yet have emerged from the noise",
-              "The method cannot be applied to heat events, only to rainfall and drought",
-              "The method requires at least a century of homogenised observations for every event",
-              "The method assumes the climate has already reached a new equilibrium state",
+              "It cannot handle heat events",
+              "It needs a century of data per event",
+              "It assumes a new equilibrium",
             ],
             correctIndex: 0,
             explanation:
@@ -4197,10 +4197,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What does the National Academies report say warming does to extremely hot days and nights?",
             options: [
-              "It increases their likelihood",
-              "It leaves their likelihood unchanged while increasing their duration",
+              "It increases their likelihood of occurring",
+              "No change in likelihood",
               "It reduces their likelihood in most regions while increasing it in the tropics",
-              "It makes them impossible to attribute, because the temperature distribution is not stationary",
+              "It makes them unattributable",
             ],
             correctIndex: 0,
             explanation:
@@ -4211,9 +4211,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which kind of extreme event does lesson 14 say has the shortest chain of reasoning behind an attribution?",
             options: [
               "One that is essentially a shift in the temperature distribution",
-              "One whose character depends on where the circulation happened to put a weather system",
-              "One with no historical precedent anywhere in the observational record",
-              "One affecting a single grid cell of a coarse-resolution model",
+              "One set by where the circulation put it",
+              "One without historical precedent",
+              "One in a single coarse grid cell",
             ],
             correctIndex: 0,
             explanation:
@@ -4226,7 +4226,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "What kind of object is each line",
               "Which journal the figure appeared in and whether it was peer reviewed",
               "Whether the colour scale is perceptually uniform and colourblind safe",
-              "Whether the underlying data have been made publicly available",
+              "Whether data are open",
             ],
             correctIndex: 0,
             explanation:
@@ -4237,9 +4237,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What three things could a shaded band around a projection be?",
             options: [
               "Model spread, ensemble percentiles, or observational uncertainty",
-              "Confidence, credibility or tolerance intervals, as defined in statistics",
-              "Minimum, mean and maximum of the runs, plotted as a single filled region",
-              "Scenario range, model range and calendar range, combined into one band",
+              "Confidence, credibility or tolerance intervals",
+              "Minimum, mean and maximum of the runs",
+              "Scenario, model and calendar ranges",
             ],
             correctIndex: 0,
             explanation:
@@ -4250,9 +4250,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What is the error in reading a spaghetti plot as a distribution of outcomes?",
             options: [
               "No probability attaches to any single strand",
-              "The strands are drawn from different models, so they cannot be plotted together",
+              "The strands mix models",
               "The strands use different reference periods, so their vertical positions are arbitrary",
-              "The strands are smoothed differently, so the apparent spread is an artefact",
+              "The smoothing differs",
             ],
             correctIndex: 0,
             explanation:
@@ -4263,9 +4263,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which comparison does lesson 14's checklist tell you to refuse outright?",
             options: [
               "A model's absolute value plotted against a thermometer record",
-              "Two model runs from the same experiment plotted on a common baseline",
+              "Two same-experiment runs, one baseline",
               "An observational series plotted against a reanalysis with both labelled",
-              "A projection plotted alongside the historical run that precedes it",
+              "A projection after its historical run",
             ],
             correctIndex: 0,
             explanation:
@@ -4291,7 +4291,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "Open the coursebook and do the notebooks",
               "Re-read this course from the beginning with the taxonomy in mind",
               "Download a reanalysis and compute a global trend before reading anything further",
-              "Wait until a later course extends the material into hands-on work",
+              "Wait for a sequel course",
             ],
             correctIndex: 0,
             explanation:
@@ -4302,9 +4302,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does event attribution require a model rather than only observations?",
             options: [
               "The counterfactual climate has to be simulated",
-              "Observations of extreme events are too sparse to compute any probability at all",
-              "Observational records are not homogenised finely enough for single events",
-              "A model is needed to convert the event into the units the protocol requires",
+              "Extreme events are too sparse",
+              "Records are too coarsely homogenized",
+              "The protocol needs unit conversion",
             ],
             correctIndex: 0,
             explanation:
@@ -4317,7 +4317,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "Vulnerability and exposure analysis, and communication",
               "A cost-benefit analysis of the adaptation options available in the affected region",
               "A legal assessment of liability for the damage the event caused",
-              "A forecast of when a comparable event is next expected to occur",
+              "A forecast of the next such event",
             ],
             correctIndex: 0,
             explanation:
@@ -4330,7 +4330,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "Aerosols, irrigation and surface roughness changes",
               "Station relocation, instrument replacement and changes in observing time",
               "Calendar convention, longitude convention and fill value choice",
-              "Model resolution, ensemble size and the choice of scenario",
+              "Resolution, ensemble size, scenario",
             ],
             correctIndex: 0,
             explanation:
@@ -4341,9 +4341,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does lesson 14 say about the two attribution methods, following van Garderen, Feser and Shepherd?",
             options: [
               "They are complementary and both should be used",
-              "The storyline method supersedes the probabilistic one for all event types",
-              "The probabilistic method should be used for every event, with storylines reserved for teaching",
-              "They give identical answers, so the choice between them is presentational",
+              "Storylines supersede probability",
+              "Use probability for everything",
+              "They give identical answers",
             ],
             correctIndex: 0,
             explanation:
@@ -4367,9 +4367,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which is a correct reading of a projection figure, given lesson 14's checklist?",
             options: [
               "This is what the model does under the named scenario",
-              "This is what will happen, since the figure was produced by a physical model",
+              "This is what will happen",
               "This is the most likely of the available futures, since it is the central pathway",
-              "This is an observation extended forward, so it carries observational uncertainty",
+              "This is an extended observation",
             ],
             correctIndex: 0,
             explanation:
@@ -4393,9 +4393,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does lesson 13 open by calling a scenario an input rather than an output?",
             options: [
               "Because forgetting that is what turns a projection into a prediction",
-              "Because the scenario files are stored in a separate archive from the model output",
-              "Because scenarios are chosen after the model runs are complete, during analysis",
-              "Because scenarios are produced by observation rather than by simulation",
+              "Scenario files are archived apart",
+              "Scenarios are chosen after the runs",
+              "Scenarios come from observation",
             ],
             correctIndex: 0,
             explanation:
@@ -4407,7 +4407,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "It reflects how many runs were performed",
               "It reflects the probability of the outcomes in that part of the range",
-              "It reflects the resolution at which each contributing model was run",
+              "It reflects model resolution",
               "It reflects the length of the reference period used to baseline the runs",
             ],
             correctIndex: 0,
@@ -4432,9 +4432,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does lesson 13 say the published scenario set exists to do?",
             options: [
               "Span a range of assumptions so each consequence can be computed",
-              "Rank the possible futures from most to least likely for use in planning",
+              "Rank futures by likelihood",
               "Provide a single central estimate around which uncertainty can be quantified",
-              "Represent the policy commitments that governments have already made",
+              "Represent existing policy commitments",
             ],
             correctIndex: 0,
             explanation:
@@ -4457,8 +4457,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "A chart shows one line for 1940 to 2024 and another for 2024 to 2100. What are the two objects most likely to be?",
             options: [
               "A reanalysis or observation, then a scenario projection",
-              "Two observational datasets, one historical and one extended into the future",
-              "Two reanalyses, one for the past and one produced ahead of time for the future",
+              "Two observational datasets",
+              "Two reanalyses, past and future",
               "A model run for the past and a second model run under the same observed forcings",
             ],
             correctIndex: 0,
@@ -4469,10 +4469,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "Which object in the four-object table can supply a counterfactual?",
             options: [
-              "A model run",
-              "A reanalysis, because it is constrained by observations at every assimilation step",
-              "An observation, because it records what actually happened at the measured location",
-              "A proxy reconstruction, because it covers the period before human influence began",
+              "A model run, since it can simulate what never happened",
+              "A reanalysis, constrained by observations",
+              "An observation of what happened",
+              "A pre-industrial proxy reconstruction",
             ],
             correctIndex: 0,
             explanation:
@@ -4485,7 +4485,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "CC BY 4.0, with no NonCommercial clause",
               "CC BY-NC 4.0, with a NonCommercial clause that bars use in any paid course",
               "CC BY-SA 4.0, with a ShareAlike clause requiring derivatives under the same terms",
-              "A bespoke licence limited to non-profit educational institutions",
+              "A bespoke non-profit license",
             ],
             correctIndex: 0,
             explanation:
@@ -4508,10 +4508,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "How long is a WMO climatological standard normal, and which fixed period is retained for long-term assessment?",
             options: [
-              "Thirty years, with 1961 to 1990 retained",
-              "Fifty years, with 1901 to 1950 retained as the earliest complete reference",
-              "Twenty years, with 1981 to 2000 retained for consistency with earlier reports",
-              "One hundred years, with 1850 to 1950 retained as the pre-industrial reference",
+              "Thirty years, with 1961 to 1990 retained as fixed",
+              "Fifty years, with 1901 to 1950",
+              "Twenty years, with 1981 to 2000",
+              "A century, with 1850 to 1950",
             ],
             correctIndex: 0,
             explanation:
@@ -4534,10 +4534,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What does HighResMIP's target of at least 50 km in the atmosphere imply about standard CMIP configurations?",
             options: [
-              "They are coarser than that",
+              "They are coarser than that, or no project would be needed",
               "They are finer than that, and HighResMIP exists to test coarser versions for cost savings",
-              "They are the same, and HighResMIP simply repeats the standard experiments for longer",
-              "They vary so widely that no comparison with the HighResMIP target is meaningful",
+              "They are the same",
+              "They vary too widely to compare",
             ],
             correctIndex: 0,
             explanation:
@@ -4548,8 +4548,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which distinction does GFDL draw between the two kinds of process in a climate model?",
             options: [
               "Larger than grid scale and physically based, versus smaller and stood in for",
-              "Fast and slow, according to the time step at which each is updated during a run",
-              "Atmospheric and oceanic, according to which component of the model computes them",
+              "Fast and slow processes",
+              "Atmospheric versus oceanic",
               "Diagnosed and prognosed, according to whether the model carries the variable in its state",
             ],
             correctIndex: 0,
@@ -4563,7 +4563,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "It hides uncertainty rather than reducing it",
               "It is too computationally costly to apply across a full multi-model ensemble",
               "It can only be applied to variables with a complete observational record",
-              "It removes the forced trend along with the systematic error",
+              "It removes the forced trend",
             ],
             correctIndex: 0,
             explanation:
@@ -4574,9 +4574,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What is homogenisation, and why is a published temperature series not a transcript?",
             options: [
               "Removing non-climatic steps and drifts, which is a scientific procedure",
-              "Averaging nearby stations together, which is a purely arithmetic operation",
-              "Converting all readings to a common unit, which changes no value in substance",
-              "Excluding stations with incomplete records, which leaves only the raw survivors",
+              "Averaging nearby stations, purely arithmetic",
+              "Converting to a common unit",
+              "Excluding incomplete stations",
             ],
             correctIndex: 0,
             explanation:
@@ -4602,7 +4602,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "Both the forecast and the observations, given their uncertainties",
               "The observations alone, since the model contributes nothing to the final analysis",
               "The model climatology, with observations used only for verification afterwards",
-              "The previous reanalysis, so that successive generations remain directly comparable",
+              "The previous reanalysis",
             ],
             correctIndex: 0,
             explanation:
@@ -4613,8 +4613,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why is a long trend from a reanalysis less trustworthy than the same trend from a homogenised station record?",
             options: [
               "The observing system changed even though the model was held fixed",
-              "The reanalysis covers a shorter period than the station record in every case",
-              "The reanalysis is published at monthly resolution, which is too coarse for trends",
+              "It always covers a shorter period",
+              "The reanalysis is only monthly",
               "The reanalysis is bias corrected against the station record, which makes it circular",
             ],
             correctIndex: 0,
@@ -4626,9 +4626,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What did Wendy Parker argue is the most significant difference between reanalyses and observations?",
             options: [
               "How well the uncertainty can be characterised",
-              "The reliance on forecasts, which is unique to reanalysis among the two",
-              "The role of inference, which is absent from observation entirely",
-              "The spatial resolution, since reanalyses are always finer than observing networks",
+              "The reliance on forecasts",
+              "The role of inference",
+              "Spatial resolution",
             ],
             correctIndex: 0,
             explanation:
@@ -4640,7 +4640,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "It reproduces the statistics of the climate, not its sequence",
               "It uses a different calendar, so its years do not align with the observed ones",
-              "It is run at a resolution too coarse to resolve any individual year",
+              "It is too coarse to resolve years",
               "It is driven by assumed rather than observed forcings over the period",
             ],
             correctIndex: 0,
@@ -4652,9 +4652,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What do the r, i, p and f indices of a CMIP6 variant label stand for?",
             options: [
               "Realization, initialization, physics, forcing",
-              "Resolution, institution, phase, frequency, as they appear in the directory path",
-              "Region, interval, parameter, format, as used by the archive's search facets",
-              "Run, iteration, project, file, as used in the modelling group's internal bookkeeping",
+              "Resolution, institution, phase, frequency",
+              "Region, interval, parameter, format",
+              "Run, iteration, project, file",
             ],
             correctIndex: 0,
             explanation:
@@ -4664,10 +4664,10 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "Which reference periods do GISTEMP and HadCRUT5 use?",
             options: [
-              "1951 to 1980 and 1961 to 1990",
-              "1961 to 1990 and 1991 to 2020, matching the WMO fixed and rolling normals",
-              "1850 to 1900 for both, matching the convention used for pre-industrial comparisons",
-              "1991 to 2020 and 1981 to 2010, each matching the normal current at its release",
+              "1951 to 1980 for GISTEMP and 1961 to 1990 for HadCRUT5",
+              "1961 to 1990 and 1991 to 2020",
+              "1850 to 1900 for both",
+              "1991 to 2020 and 1981 to 2010",
             ],
             correctIndex: 0,
             explanation:
@@ -4679,7 +4679,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "About 0.1 °C over the last 100 years",
               "About 1.0 °C over the last 50 years, which is the largest such adjustment published",
-              "About 0.01 °C over the whole record, which is below the noise level of the series",
+              "About 0.01 °C",
               "None; the inclusion changes only the Arctic regional series and not the global mean",
             ],
             correctIndex: 0,
@@ -4691,8 +4691,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does self-describing mean for a netCDF file?",
             options: [
               "The file includes information about the data it contains",
-              "The file can be read as plain text without any software library at all",
-              "The file records the code that produced it so results can be reproduced",
+              "The file is plain text",
+              "The file records its own code",
               "The file validates its own values against the range declared for each variable",
             ],
             correctIndex: 0,
@@ -4704,9 +4704,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Precipitation arrives in kilograms per square metre per second. What conversion do you need?",
             options: [
               "A factor of 86400 to reach millimetres per day",
-              "A factor of 1000 to reach millimetres per day, since a kilogram is a thousand grams",
-              "A factor of 3600 to reach millimetres per day, since an hour has that many seconds",
-              "No conversion, since the units are already equivalent to millimetres per day",
+              "A factor of 1000",
+              "A factor of 3600",
+              "No conversion at all",
             ],
             correctIndex: 0,
             explanation:
@@ -4719,7 +4719,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "Weight by the cosine of the latitude",
               "Interpolate the field onto a grid of equal-area cells before averaging over them",
               "Convert the field from anomalies to absolute values so the mean is physically meaningful",
-              "Remove the seasonal cycle so that the mean is not dominated by the annual variation",
+              "Remove the seasonal cycle",
             ],
             correctIndex: 0,
             explanation:
@@ -4730,9 +4730,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Which of these is a model calendar you may meet in a climate file?",
             options: [
               "A 360-day calendar of twelve 30-day months",
-              "A 366-day calendar in which every year is treated as a leap year",
+              "A 366-day all-leap calendar",
               "A 100-day calendar used to compress long integrations into fewer time steps",
-              "A calendar aligned to the solar cycle rather than to the Earth's orbit",
+              "A solar-cycle calendar",
             ],
             correctIndex: 0,
             explanation:
@@ -4756,9 +4756,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "Why does NASA compute global means from station anomalies rather than from absolute temperatures?",
             options: [
               "Absolute regional means carry large uncertainties",
-              "Absolute values are proprietary and cannot be redistributed by the analysis centre",
-              "Absolute values would require a model to fill the gaps between stations",
-              "Absolute values change with the units chosen while anomalies do not",
+              "Absolute values are proprietary",
+              "Absolute values need a model",
+              "Units affect absolute values",
             ],
             correctIndex: 0,
             explanation:
@@ -4771,7 +4771,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "The interval was selected for its low trend",
               "The interval used a dataset that has since been superseded by a newer version",
               "The interval was measured from a reanalysis rather than from station observations",
-              "The interval was too long, so it averaged over two distinct regimes",
+              "The interval was too long",
             ],
             correctIndex: 0,
             explanation:
@@ -4796,8 +4796,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Internal variability, model uncertainty, scenario uncertainty",
               "Instrument error, sampling error and structural error, as defined in metrology",
-              "Initial conditions, boundary conditions and numerical error",
-              "Observation, reanalysis and simulation, matching the object taxonomy",
+              "Initial, boundary and numerical error",
+              "Observation, reanalysis, simulation",
             ],
             correctIndex: 0,
             explanation:
@@ -4821,9 +4821,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "In the label SSP3-7.0, what is the 7.0?",
             options: [
               "The 2100 forcing level in watts per square metre",
-              "The projected warming in degrees Celsius by the end of the century",
-              "The version of the socioeconomic pathway used in that experiment",
-              "The number of models that submitted runs for that pathway",
+              "The warming in degrees by 2100",
+              "The pathway's version number",
+              "The number of models that ran it",
             ],
             correctIndex: 0,
             explanation:
@@ -4835,7 +4835,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5",
               "SSP1-1.9, SSP1-2.6, SSP2-4.5 and SSP4-3.4, the four lowest forcing pathways",
-              "RCP2.6, RCP4.5, RCP6.0 and RCP8.5, carried forward from the previous phase unchanged",
+              "The four RCPs, unchanged",
               "SSP5-8.5, SSP5-3.4-OS, SSP4-6.0 and SSP3-7.0-LowNTCF, the four variant pathways",
             ],
             correctIndex: 0,
@@ -4859,9 +4859,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
           {
             prompt: "What did van Vuuren and colleagues say about RCP8.5 as a no-climate-policy reference?",
             options: [
-              "It cannot be used as one",
+              "It cannot be used as one, sitting near the 90th percentile",
               "It is the only pathway that can properly serve as one, which is why it is so widely used",
-              "It can be used as one only for the period before 2050 and not beyond",
+              "Only before 2050",
               "It can be used as one provided the socioeconomic storyline is also specified",
             ],
             correctIndex: 0,
@@ -4874,8 +4874,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "The event's probability now over its probability without human influence",
               "The proportion of model runs in which the event occurs at all",
-              "The ratio of the event's severity to the worst comparable event on record",
-              "The share of the observed warming attributable to human activity",
+              "Its severity over the record event's",
+              "The human share of warming",
             ],
             correctIndex: 0,
             explanation:
@@ -4914,7 +4914,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
               "Each strand is one run with no probability attached",
               "The strands together form a probability distribution over future outcomes",
               "The strands are ordered by likelihood, with the central one the most probable",
-              "The strands represent observational uncertainty rather than model runs",
+              "They show observational uncertainty",
             ],
             correctIndex: 0,
             explanation:
@@ -4926,8 +4926,8 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "Treat it as incomplete and find the baseline",
               "Assume the pre-industrial baseline, which is the most common convention in reporting",
-              "Assume the current WMO rolling normal, which is the operational default",
-              "Discard it, since a number without a baseline is necessarily wrong",
+              "Assume the WMO rolling normal",
+              "Discard it as wrong",
             ],
             correctIndex: 0,
             explanation:
@@ -4951,9 +4951,9 @@ Read that table again in a fortnight. Almost every argument you will see about c
             prompt: "What does a reanalysis put where there were no observations, and what follows from that?",
             options: [
               "The model's own value, so it is not a measurement there",
-              "A gap flagged with a fill value, so the field is incomplete in those regions",
-              "An interpolation between neighbouring observations, with no model involved",
-              "A climatological average, so the field carries no information about that year",
+              "A flagged gap, so the field is incomplete",
+              "An interpolation, with no model",
+              "A climatological average",
             ],
             correctIndex: 0,
             explanation:
@@ -4965,7 +4965,7 @@ Read that table again in a fortnight. Almost every argument you will see about c
             options: [
               "To the coursebook and its notebooks",
               "To a second course that continues into hands-on work from where this one stops",
-              "To the primary literature, starting with the papers cited in Section 6",
+              "To the primary literature",
               "To the dataset archives, to download a reanalysis before reading anything more",
             ],
             correctIndex: 0,
