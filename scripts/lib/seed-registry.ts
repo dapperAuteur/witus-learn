@@ -144,10 +144,7 @@ function schoolResolver(src: string, consts: Map<string, string>): (name: string
       /\b(?:const|let)\s+(?:\[\s*([A-Za-z_$][\w$]*)\s*\]|([A-Za-z_$][\w$]*))\s*(?::[^=;]*)?=(?![=>])([^;]*)/g,
     ),
   ];
-  const { closeOf, openAt } = blocks(
-    src,
-    decls.map((m) => m.index ?? 0),
-  );
+  const { closeOf, openAt } = blocks(src, decls.map((m) => m.index ?? 0));
   const bindings = new Map<string, Binding[]>();
   const bind = (name: string, b: Binding) => bindings.set(name, [...(bindings.get(name) ?? []), b]);
   for (const m of decls) {
@@ -194,7 +191,6 @@ function schoolResolver(src: string, consts: Map<string, string>): (name: string
  *  the whole file would run past the end of one call into the next. `src` is there so the tests can
  *  hand it a fabricated seeder; everything else lets it read `file`. */
 export function extractSeedEntries(file: string, src: string = readFileSync(file, "utf8")): SeedEntry[] {
-
   // Module-level string consts, because seed-sommelier.ts writes `seriesSlug: SERIES_SLUG`.
   // Resolving the identifier matters: treating it as absent would report every course in that
   // series as uncoded, and a guard built on this would pass on a real mistake.
