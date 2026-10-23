@@ -850,7 +850,9 @@ pnpm seed:languages  # Spanish/French/Portuguese/Italian → Learn.WitUS
 pnpm seed:health     # health/fitness courses (NASM CPT/CES/CNC, Read Your Body's Data,
                      #   ECS Foundations/Fitness) → Learn.WitUS (see scripts/seed-health.ts TARGET_SLUG)
 pnpm seed:speedway   # ElementaryMBA: Speedway docuseries (Indy 500), Intro to Robotics & STEAM,
-                     #   Young Makers: AI for Kids (F3), and AI for Entrepreneurs (F4)
+                     #   Young Makers: AI for Kids (F3), and AI for Entrepreneurs (F4), plus the
+                     #   seven business-formation courses shared whole from Learn.WitUS
+                     #   (run after seed:courses)
 pnpm seed:langchain  # 3 LangGraph/LangChain courses → Learn.WitUS (AI & Technology);
                      #   auto-discovers scripts/data/langchain/<repo>/ (course.json + lessons)
 pnpm seed:demo       # demo account (brand_admin on Acme) + baseline enrollments, needs

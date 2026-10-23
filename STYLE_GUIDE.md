@@ -127,6 +127,15 @@ Every customer-facing surface must pass before it can merge:
   ([src/lib/cert-disclaimer.ts](src/lib/cert-disclaimer.ts)) in the same branch that ships it, so
   "not affiliated with X" is a page fact the landing page renders, never prose an author forgets
   (the NASM-prep family shipped with zero-to-inconsistent disclaimers; the registry ends that).
+- **A school whose name could read as a credential registers a `SCHOOL_DISCLAIMERS` entry**
+  ([src/lib/school-disclaimer.ts](src/lib/school-disclaimer.ts)), keyed by tenant slug. It renders on
+  the school's front page, in its footer on every page, and on the certificate page and email.
+  ElementaryMBA is the first: "MBA" names a degree the school does not grant.
+- **A course shown on a second school as a series preview registers a `SERIES_PREVIEWS` entry**
+  ([src/lib/series-previews.ts](src/lib/series-previews.ts)), so its landing page and last lesson say
+  "This series continues on <home school>". Only a series' first course may be a preview
+  (`schoolShareViolations` in `scripts/lib/seed-registry.ts`); the seven courses shared whole to
+  ElementaryMBA are not previews and never go in that registry.
 - No fabricated characters: real, cited figures or second-person address.
 - No "AI tells": no em/en dashes (use commas/periods/parentheses/colons), no ornate filler.
   Four things keep their dashes, because changing them would be an error, not a style fix:
