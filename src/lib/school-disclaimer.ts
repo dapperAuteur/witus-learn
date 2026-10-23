@@ -5,8 +5,9 @@
 // remembers or forgets.
 //
 // Where it renders: the school's front page (all three states: coming soon, learner dashboard,
-// catalog), its footer on every page (SiteFooter and EcosystemFooter), the chromeless embed view, and
-// every completion artifact (the /verify certificate page and the certificate email).
+// catalog), its footer on every page (SiteFooter and EcosystemFooter), the chromeless embed view,
+// every completion artifact (the /verify certificate page and the certificate email), the /login page,
+// and every /api/v1 response as `schoolDisclaimer`. Not on /kids (BAM, 2026-10-23).
 //
 // Edit copy here ONLY; never paraphrase it at a call site.
 

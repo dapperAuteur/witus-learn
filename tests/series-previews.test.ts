@@ -41,10 +41,13 @@ describe("seriesContinuation", () => {
     });
   });
 
-  it("hides the link while the home school is coming soon, inactive, or has no primary host", () => {
-    expect(seriesContinuation(preview, { ...open, comingSoon: true })?.href).toBeNull();
-    expect(seriesContinuation(preview, { ...open, isActive: false })?.href).toBeNull();
-    expect(seriesContinuation(preview, { ...open, primaryHost: null })?.href).toBeNull();
+  it("hides the whole line while the home school is coming soon or inactive (BAM, 2026-10-23)", () => {
+    expect(seriesContinuation(preview, { ...open, comingSoon: true })).toBeNull();
+    expect(seriesContinuation(preview, { ...open, isActive: false })).toBeNull();
+  });
+
+  it("names a live home school without a link when it has no primary host", () => {
+    expect(seriesContinuation(preview, { ...open, primaryHost: null })).toEqual({ schoolName: "ElementaryMBA", href: null });
   });
 
   it("renders nothing for a home school that does not exist", () => {

@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import { resolveTenant } from "@/lib/tenant";
+import { SchoolDisclaimerNotice } from "@/components/school-disclaimer-notice";
 import { brandName } from "@/lib/branding";
 import { tenantUsesWitusSso } from "@/lib/witus-host";
 import { hasDemoLogin, witusSilentSsoEndpoint } from "@/lib/env";
@@ -80,6 +81,8 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
               I&apos;m a student
             </Link>
           </p>
+          {/* The school-name disclaimer reaches sign-in too (BAM, 2026-10-23); /kids stays without it. */}
+          {tenant ? <SchoolDisclaimerNotice tenantSlug={tenant.slug} variant="footer" /> : null}
         </div>
       </div>
     </main>
