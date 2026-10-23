@@ -4,6 +4,7 @@ import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { sendEmail } from "@/lib/mailer";
 import { env } from "@/lib/env";
+import { schoolDisclaimerFor } from "@/lib/school-disclaimer";
 
 // Per-tenant completion certificate email. The sender + brand come from the
 // tenant row, so a BVC certificate never says Learn.WitUS / CentenarianOS.
@@ -18,12 +19,17 @@ export async function sendCompletionEmail(opts: {
   const brand = brandName(opts.tenant);
   const verifyUrl = `${opts.siteUrl}/verify/${opts.token}`;
   const who = opts.studentName ? `${opts.studentName}, ` : "";
+  // A certificate is a completion artifact, so a school whose name could read as a degree says what
+  // it is not (src/lib/school-disclaimer.ts), here as on the /verify page.
+  const schoolNote = schoolDisclaimerFor(opts.tenant.slug);
   await sendEmail({
     to: opts.to,
     from: opts.tenant.email.from,
     replyTo: opts.tenant.email.replyTo,
     subject: `Your ${brand} certificate: ${opts.course.title}`,
-    text: `${who}congratulations on completing "${opts.course.title}" with ${brand}.\n\nVerify your certificate:\n${verifyUrl}\n`,
+    text:
+      `${who}congratulations on completing "${opts.course.title}" with ${brand}.\n\nVerify your certificate:\n${verifyUrl}\n` +
+      (schoolNote ? `\n${schoolNote.text}\n` : ""),
     // `/verify/<token>` is PUBLIC by design (a stranger is meant to be able to open it and check
     // the certificate), so it survives the Inbox mirror's redaction — see email-redact.ts.
     kind: "certificate",

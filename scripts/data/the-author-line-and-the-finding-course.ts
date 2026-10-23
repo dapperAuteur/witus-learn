@@ -240,9 +240,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "In what order do the two 1959 notes to the Académie des sciences list their three authors?",
             options: [
               "Lejeune, Gautier, Turpin",
-              "Turpin, Lejeune, Gautier, with the head of the department placed first as the Comptes rendus required",
-              "Gautier, Lejeune, Turpin, with the person responsible for the cell cultures placed first on both notes",
-              "Lejeune, Turpin, Gautier, the order the same three people used in the Bulletin de l'Académie nationale de médecine",
+              "Turpin, Lejeune, Gautier",
+              "Gautier, Lejeune, Turpin",
+              "Lejeune, Turpin, Gautier",
             ],
             correctIndex: 0,
             explanation:
@@ -253,9 +253,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does the Fondation Jérôme Lejeune say the FIRST position in that author line indicates?",
             options: [
               "The discoverer",
-              "The person who drafted the note, with scientific priority recorded separately in the academy's minutes",
-              "The youngest member of the team, a courtesy the Académie des sciences applied to communications in 1959",
-              "The author who obtained the funding for the work reported in the communication",
+              "The note's drafter",
+              "The youngest member",
+              "The funding holder",
             ],
             correctIndex: 0,
             explanation:
@@ -266,9 +266,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does that same statement say the LAST position indicates?",
             options: [
               "The head of the team",
-              "The author who did the least work, which is why Marthe Gautier moved there in April 1959",
-              "The person who submitted the communication to the academy on the team's behalf",
-              "The author responsible for answering questions from readers after publication",
+              "The least active author",
+              "The submitting author",
+              "The corresponding author",
             ],
             correctIndex: 0,
             explanation:
@@ -279,9 +279,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does the Foundation say the positions BETWEEN first and last indicate?",
             options: [
               "Contributors to the discovery",
-              "Authors whose institution paid part of the publication charge for the communication",
-              "Technicians and assistants, listed as a courtesy without any claim to the result",
-              "Authors who saw the manuscript but did not agree with all of its conclusions",
+              "Authors who paid publication charges",
+              "Courtesy listings with no claim",
+              "Authors who disagreed with it",
             ],
             correctIndex: 0,
             explanation:
@@ -292,9 +292,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Which journal published the two 1959 notes?",
             options: [
               "The Comptes rendus of the Académie des sciences",
-              "The Bulletin de l'Académie nationale de médecine, whose volume 143 carried the team's third paper that April",
-              "Médecine/Sciences, which published the fiftieth anniversary article about the discovery in 2009",
-              "The American Journal of Human Genetics, which printed the William Allan Memorial Award address in 1970",
+              "The Bulletin de l'Académie nationale de médecine",
+              "Médecine/Sciences, which printed the 2009 article",
+              "The American Journal of Human Genetics",
             ],
             correctIndex: 0,
             explanation:
@@ -305,9 +305,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Which volume and issue carried the note of 26 January 1959?",
             options: [
               "Volume 248, issue 4",
-              "Volume 248, issue 11, which carried the team's second note of 16 March 1959",
-              "Volume 143, issues 11 and 12, which carried the team's paper in the Bulletin de l'Académie nationale de médecine",
-              "Volume 25, issue 3, the issue of Médecine/Sciences that carried the 2009 anniversary article",
+              "Volume 248, issue 11",
+              "Volume 143, issues 11 and 12",
+              "Volume 25, issue 3",
             ],
             correctIndex: 0,
             explanation:
@@ -317,10 +317,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "What are the square-bracketed English titles on the PubMed records of the 1959 notes?",
             options: [
-              "The index's own translations",
-              "Titles the authors supplied in English alongside the French ones when the notes were submitted",
-              "Titles added by the Fondation Jérôme Lejeune when it made the papers available to historians",
-              "Working titles from the laboratory notebook, bracketed because the notes were never formally titled",
+              "The index's own translations of the French titles",
+              "Titles the authors supplied in English",
+              "Titles added by the Fondation Jérôme Lejeune",
+              "Working titles from the laboratory notebook",
             ],
             correctIndex: 0,
             explanation:
@@ -331,9 +331,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Which 1959 paper by these three authors places Marthe Gautier's name LAST?",
             options: [
               "The Bulletin de l'Académie nationale de médecine paper",
-              "The note of 26 January 1959, whose index record also spells her surname with an extra h",
-              "The note of 16 March 1959 on somatic chromosomes from nine children",
-              "None of them, because Turpin fixed the signature order once and it never varied afterwards",
+              "The note of 26 January 1959",
+              "The note of 16 March 1959 on nine children",
+              "None of them, since the order never varied",
             ],
             correctIndex: 0,
             explanation:
@@ -344,9 +344,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What date does the index give the team's paper in the Bulletin de l'Académie nationale de médecine?",
             options: [
               "7 to 14 April 1959",
-              "26 January 1959, the same date as the team's first communication to the Académie des sciences",
-              "16 March 1959, the date of the second communication on nine children",
-              "22 May 1958, the date the Foundation gives for the entry in the laboratory notebook",
+              "26 January 1959",
+              "16 March 1959",
+              "22 May 1958",
             ],
             correctIndex: 0,
             explanation:
@@ -357,9 +357,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does the third 1959 record show about author order, according to this course?",
             options: [
               "It is not fixed for a team",
-              "That the Foundation's stated convention also governs that paper, which would make her the head of the team",
-              "That Marthe Gautier had been demoted inside Turpin's department between March and April 1959",
-              "That the two academies used opposite conventions, one putting the discoverer first and one putting the discoverer last",
+              "It follows the Foundation's rule",
+              "Gautier had been demoted",
+              "The two academies used opposite rules",
             ],
             correctIndex: 0,
             explanation:
@@ -369,10 +369,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "What does this course say the third paper's author order does NOT show?",
             options: [
-              "Who did what",
-              "That an author line is a convention rather than a fact about the laboratory",
-              "That the same three people published on the same subject three times in 1959",
-              "That the Foundation's stated convention applies only to the two Académie des sciences notes",
+              "Who did what in the laboratory",
+              "That author lines are conventions",
+              "Three 1959 papers on one subject",
+              "That the convention covers only the notes",
             ],
             correctIndex: 0,
             explanation:
@@ -383,9 +383,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Where does the Fondation Jérôme Lejeune say all three authors worked?",
             options: [
               "The Trousseau hospital",
-              "The Institut Pasteur in Paris, where Turpin had built a cytogenetics laboratory before the war",
-              "The Hôtel-Dieu, where the Académie des sciences housed the team's cell cultures from 1955 onward",
-              "The Académie nationale de médecine, which maintained a shared laboratory for members presenting papers",
+              "The Institut Pasteur in Paris",
+              "The Hôtel-Dieu in Paris",
+              "The Académie nationale de médecine",
             ],
             correctIndex: 0,
             explanation:
@@ -396,9 +396,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "How does this course describe a position in an author line?",
             options: [
               "A convention applied by somebody",
-              "A legal record of priority, enforceable by the academy that accepted the communication",
-              "A measurement of effort, proportional to the hours each author spent on the work",
-              "An accident of typesetting, since the academies alphabetised names before printing them",
+              "A legal record of priority",
+              "A measurement of effort",
+              "An accident of typesetting",
             ],
             correctIndex: 0,
             explanation:
@@ -409,9 +409,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Which of these is NOT one of the four kinds of document this course reads?",
             options: [
               "A laboratory notebook",
-              "An institutional ethics opinion, which is the document the 2014 stage of this case turns on",
-              "The honours that followed the papers, including a prize awarded to one man in 1962",
-              "A contesting party's published case, together with the documents it says support that case",
+              "An ethics opinion",
+              "The honours awarded",
+              "A contesting party's case",
             ],
             correctIndex: 0,
             explanation:
@@ -422,9 +422,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Why does this course say a written-down convention is useful?",
             options: [
               "It can be tested",
-              "It settles priority disputes on its own, which is why journals publish their conventions",
-              "It proves the head of a department approved a paper before it was submitted",
-              "It binds the academy, which will refuse any communication whose signature order breaks it",
+              "It settles priority",
+              "It proves head approval",
+              "It binds the academy",
             ],
             correctIndex: 0,
             explanation:
@@ -435,9 +435,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What language are the two 1959 notes printed in?",
             options: [
               "French",
-              "English, with French summaries supplied separately for the Académie des sciences record",
-              "Latin, which the Comptes rendus still required for cytological communications in 1959",
-              "French and English in parallel columns, as the Comptes rendus printed work intended for foreign readers",
+              "English",
+              "Latin",
+              "Bilingual",
             ],
             correctIndex: 0,
             explanation:
@@ -448,9 +448,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "About how many weeks separate the two 1959 notes to the Académie des sciences?",
             options: [
               "About seven",
-              "About thirty, which is the gap between the January note and the team's Bulletin de l'Académie nationale de médecine paper",
-              "About fifty, because the second note was presented in the closing session of 1959",
-              "None, because both notes were read to the Académie des sciences in the same January session",
+              "About thirty",
+              "About fifty",
+              "None at all",
             ],
             correctIndex: 0,
             explanation:
@@ -460,10 +460,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "What claim does this course explicitly refuse to draw from the third paper's author order?",
             options: [
-              "That it settles the discovery",
-              "That position in an author line is a convention rather than a measurement",
-              "That the same three people published three times on the subject in 1959",
-              "That the Foundation stated its convention in a press release of 29 September 2014",
+              "That it settles who made the discovery",
+              "That position is a convention",
+              "That three papers appeared in 1959",
+              "That the Foundation stated a convention",
             ],
             correctIndex: 0,
             explanation:
@@ -473,10 +473,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "What does the Foundation's press release of 29 September 2014 do with the signature order?",
             options: [
-              "It states the convention",
-              "It concedes that the order carries no meaning and rests the whole case on the laboratory notebook",
-              "It asks the Académie des sciences to correct the order printed on the two 1959 notes",
-              "It reports that Turpin drew the order at random after the academy refused an alphabetical listing",
+              "It states the convention behind it",
+              "It concedes the order means nothing",
+              "It asks the academy to correct it",
+              "It says Turpin drew it at random",
             ],
             correctIndex: 0,
             explanation:
@@ -487,9 +487,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does this course say is usually not written down anywhere about an author order?",
             options: [
               "The reason for it",
-              "The names, which appear only in the index record and not on the printed paper",
-              "The date, which the academy records separately in its weekly minutes",
-              "The convention, which is why no party to this dispute has ever stated one",
+              "The names",
+              "The date",
+              "The convention",
             ],
             correctIndex: 0,
             explanation:
@@ -500,9 +500,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does this course say each of its four kinds of document can do?",
             options: [
               "Carry something, but not everything",
-              "Settle the dispute on its own, provided it is read in the original language",
-              "Replace the others, since an ethics opinion supersedes an author line and a prize",
-              "Confirm each other, since all four were produced by institutions with the same records",
+              "Settle the dispute on its own",
+              "Replace the other three",
+              "Confirm each of the others",
             ],
             correctIndex: 0,
             explanation:
@@ -513,9 +513,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What material does the first 1959 note's title name?",
             options: [
               "Tissue cultures",
-              "Blood samples drawn from nine children and their parents at the Trousseau hospital",
-              "Photographs of chromosome preparations made outside the laboratory",
-              "Post-mortem tissue, which is why the note reports a count rather than a karyotype",
+              "Fresh blood samples",
+              "Chromosome photographs",
+              "Post-mortem tissue",
             ],
             correctIndex: 0,
             explanation:
@@ -526,9 +526,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does the second 1959 note's title say was studied?",
             options: [
               "Somatic chromosomes",
-              "Sex chromosomes, compared between the nine children and a control group of adults",
-              "Cell cultures grown from skin biopsies taken in Boston during a 1955 fellowship",
-              "Photographs of chromosome preparations, taken outside the laboratory for the purpose",
+              "Sex chromosomes",
+              "Boston skin cultures",
+              "Chromosome photographs",
             ],
             correctIndex: 0,
             explanation:
@@ -539,9 +539,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "How many children does the second 1959 note's title name?",
             options: [
               "Nine",
-              "Forty seven, matching the chromosome count the note reported in each of them",
-              "Forty six, the number of children in the control group used for comparison",
-              "Three, which the Foundation says was the minimum Lejeune wanted before publishing",
+              "Forty seven",
+              "Forty six",
+              "Three",
             ],
             correctIndex: 0,
             explanation:
@@ -552,9 +552,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Where does the Inserm opinion say Marthe Gautier spent a year's fellowship from September 1955?",
             options: [
               "Boston",
-              "Montreal, at the congress where Lejeune later presented the team's results to an international audience",
-              "Baltimore, in the laboratory that supplied the team's staining protocol for chromosome work",
-              "Stockholm, where she was offered a post in a cell-culture laboratory she declined",
+              "Montreal",
+              "Baltimore",
+              "Stockholm",
             ],
             correctIndex: 0,
             explanation:
@@ -565,9 +565,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does the Inserm opinion say Raymond Turpin made her responsible for?",
             options: [
               "Developing cell cultures",
-              "Photographing the slide preparations, a task the laboratory could not otherwise carry out",
-              "Recruiting the nine children whose cells the second 1959 note reported on",
-              "Writing the two communications to the Académie des sciences on the team's behalf",
+              "Photographing the slides",
+              "Recruiting the nine children",
+              "Writing the two communications",
             ],
             correctIndex: 0,
             explanation:
@@ -578,9 +578,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "How many chromosomes does the Inserm opinion say were found in the affected cells?",
             options: [
               "47",
-              "46, the same count as the controls, which is why a photograph was needed to settle it",
-              "23, the number of pairs in an ordinary human body cell",
-              "21, after the chromosome later identified as the extra one",
+              "46",
+              "23",
+              "21",
             ],
             correctIndex: 0,
             explanation:
@@ -591,9 +591,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "How many chromosomes does the Inserm opinion say the CONTROLS had?",
             options: [
               "46",
-              "47, which is why the result was reported as a difference in shape rather than in number",
-              "45, which is what made the extra chromosome visible without a photograph",
-              "The opinion gives no control count, which is one of the gaps the Foundation objects to",
+              "47",
+              "45",
+              "None",
             ],
             correctIndex: 0,
             explanation:
@@ -604,9 +604,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What piece of equipment does the Inserm opinion say the laboratory did not have?",
             options: [
               "A photomicroscope",
-              "A centrifuge, without which the cultured cells could not be separated for counting",
-              "An incubator, which is why the cultures had to be grown at another hospital",
-              "A microscope powerful enough to resolve individual chromosomes in a stained preparation",
+              "A centrifuge",
+              "An incubator",
+              "A powerful microscope",
             ],
             correctIndex: 0,
             explanation:
@@ -617,9 +617,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "According to the Inserm opinion, who had the slide preparations entrusted to him to have photographs made?",
             options: [
               "Lejeune",
-              "Turpin, as head of the department in which all three of them worked",
-              "The Académie des sciences, which photographed communications before printing them",
-              "A commercial laboratory in Boston, which returned the plates for the second note",
+              "Turpin",
+              "The academy",
+              "A Boston lab",
             ],
             correctIndex: 0,
             explanation:
@@ -630,9 +630,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Where does the Inserm opinion say those photographs then served Lejeune?",
             options: [
               "At conferences and in the media",
-              "In the two communications to the Académie des sciences, which printed them as plates",
-              "In his laboratory notebook, where they are pasted beside the entry of 22 May 1958",
-              "In the Kennedy Foundation's file, which is how the 1962 prize came to be awarded",
+              "In the two Académie notes",
+              "In his laboratory notebook",
+              "In the Kennedy Foundation's file",
             ],
             correctIndex: 0,
             explanation:
@@ -642,10 +642,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "Why does this course say a photograph of a slide mattered so much?",
             options: [
-              "Others can check it",
-              "It was required by the Académie des sciences before a communication could be accepted",
-              "It preserved the preparation, which otherwise degraded within a few days of staining",
-              "It established the date of the observation, which a notebook entry alone could not do",
+              "Other people can count it for themselves",
+              "The academy required it",
+              "It preserved the preparation",
+              "It dated the observation",
             ],
             correctIndex: 0,
             explanation:
@@ -656,9 +656,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "How does this course describe the whole scientific claim the 1959 notes made?",
             options: [
               "A number",
-              "A mechanism, explaining how an extra chromosome produces the features the children had",
-              "A treatment, which is why the work attracted a prize from a foundation three years later",
-              "A photograph, which is why possession of the plates became the centre of the dispute",
+              "A mechanism",
+              "A treatment",
+              "A photograph",
             ],
             correctIndex: 0,
             explanation:
@@ -669,9 +669,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Which term do the 1959 titles use for the children, which this course quotes only inside titles and quotations?",
             options: [
               "Mongolien",
-              "Trisomie 21, which both parties to the dispute used throughout their 2014 documents",
-              "Down syndrome, translated into French from the English clinical literature of the period",
-              "Chromosome surnuméraire, which HAL later used as a keyword for the 2014 opinion",
+              "Trisomie 21",
+              "Down syndrome",
+              "Trisomique",
             ],
             correctIndex: 0,
             explanation:
@@ -682,9 +682,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What did both parties to the 2014 dispute do with that period term when they had to repeat it?",
             options: [
               "Put it in quotation marks",
-              "Replaced it with trisomy 21 in every quotation, including quotations of the 1959 titles",
-              "Kept it without comment, since it was still the standard clinical term in France in 2014",
-              "Left it out entirely and referred only to the children by case number",
+              "Replaced it with trisomy 21",
+              "Kept it without comment",
+              "Left it out entirely",
             ],
             correctIndex: 0,
             explanation:
@@ -695,9 +695,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "How does this course handle the nine children in the 1959 study?",
             options: [
               "It leaves them unnamed",
-              "It names them from the Foundation's archive album, where the 1959 case list is reproduced",
-              "It gives their ages and case numbers from the table of results in the second note",
-              "It names them only in the final assessment, where the study is described in full",
+              "It names them from the archive",
+              "It gives their case numbers",
+              "It names them at the end",
             ],
             correctIndex: 0,
             explanation:
@@ -707,10 +707,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "What is a control, in the sense this lesson uses it?",
             options: [
-              "Cells without the condition",
-              "A second count of the same slide, made by a different person to check the first",
-              "A photograph kept by the laboratory so a count can be audited later",
-              "A child enrolled in the study whose parents withheld consent for publication",
+              "Cells from people without the condition",
+              "A second count of the same slide",
+              "A photograph kept for audit",
+              "A child withheld from publication",
             ],
             correctIndex: 0,
             explanation:
@@ -721,9 +721,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What are somatic chromosomes?",
             options: [
               "The chromosomes of body cells",
-              "The chromosomes that determine sex, counted separately from the other twenty two pairs",
-              "The chromosomes visible only in cultured cells, as distinct from those in fresh tissue",
-              "The extra chromosomes found in the nine children, named after the somatic cell line they came from",
+              "The chromosomes that determine sex",
+              "Chromosomes seen only in cultures",
+              "The extra chromosomes in the children",
             ],
             correctIndex: 0,
             explanation:
@@ -733,10 +733,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "Which document does this course rely on for the Boston fellowship and the count of 47 against 46?",
             options: [
-              "The Inserm ethics opinion",
-              "The printed 1959 note of 26 January, read from the Gallica scan of volume 248",
-              "The Foundation's 2018 English dossier, which sets out the same sequence in translation",
-              "Her own 2009 anniversary article in Médecine/Sciences, read in full for this course",
+              "The Inserm ethics committee's 2014 opinion",
+              "The printed note of 26 January 1959",
+              "The Foundation's 2018 English dossier",
+              "Her 2009 article in Médecine/Sciences",
             ],
             correctIndex: 0,
             explanation:
@@ -747,9 +747,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does this course say happened to the two halves of the laboratory's photography problem?",
             options: [
               "They ended in different hands",
-              "They were resolved when the Académie des sciences supplied a photomicroscope in 1958",
-              "They were recorded in the laboratory notebook and settled before the first note appeared",
-              "They were never separated, because one person both prepared and photographed the slides",
+              "They were resolved in 1958",
+              "They were settled in the notebook",
+              "They were never separated",
             ],
             correctIndex: 0,
             explanation:
@@ -760,9 +760,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Which of these does this course NOT claim to quote?",
             options: [
               "The printed 1959 papers",
-              "The Inserm ethics committee's 2014 opinion, whose French sentences it quotes and translates",
-              "The Fondation Jérôme Lejeune's press release of 29 September 2014",
-              "Inserm's own published listing of its ethics committee's notes",
+              "The 2014 Inserm opinion",
+              "The Foundation's 2014 press release",
+              "Inserm's ethics listing page",
             ],
             correctIndex: 0,
             explanation:
@@ -773,9 +773,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "How does the PubMed record of the note of 26 January 1959 spell her surname?",
             options: [
               "Gauthier",
-              "Gautier, the same spelling the record of the March note carries",
-              "Gaultier, a third spelling that appears only in the Bulletin de l'Académie nationale de médecine record",
-              "Gauthiez, which is how Inserm's own listing page spells it in the heading above the document title",
+              "Gautier",
+              "Gaultier",
+              "Gauthiez",
             ],
             correctIndex: 0,
             explanation:
@@ -786,9 +786,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "How does the PubMed record of the note of 16 March 1959 spell her surname?",
             options: [
               "Gautier",
-              "Gauthier, the same spelling that appears on the record of the January note",
-              "It gives both spellings, one in the author line and one in the translated title",
-              "It omits her name entirely, which is the error the Inserm opinion refers to",
+              "Gauthier",
+              "Both ways",
+              "Neither",
             ],
             correctIndex: 0,
             explanation:
@@ -799,9 +799,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does the Inserm opinion say about how the first communication handled her name?",
             options: [
               "It carried errors",
-              "It omitted her name, which the second communication corrected in March 1959",
-              "It placed her name last, which the Foundation says marks the head of the team",
-              "It spelled her name correctly, and the error was introduced later by the index",
+              "It omitted her name",
+              "It placed her last",
+              "It had no errors",
             ],
             correctIndex: 0,
             explanation:
@@ -812,9 +812,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "In which position does the Inserm opinion say her name appears on the first communication?",
             options: [
               "Second",
-              "Third, behind Turpin, which is the order of the team's April paper that year",
-              "First, which the Foundation says would mark her as the discoverer",
-              "The opinion does not say, which is one of the gaps the Foundation objects to",
+              "Third",
+              "First",
+              "Not stated",
             ],
             correctIndex: 0,
             explanation:
@@ -825,9 +825,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What stopped this course from reading the printed 1959 page?",
             options: [
               "A captcha on Gallica",
-              "The volume has never been digitised, so only a paper copy in Paris exists",
-              "The Foundation holds the only surviving offprints and releases them to historians on request",
-              "The Académie des sciences restricts its Comptes rendus for seventy five years after publication",
+              "It was never digitised",
+              "Foundation-held offprints",
+              "An academy embargo",
             ],
             correctIndex: 0,
             explanation:
@@ -838,9 +838,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What is Gallica?",
             options: [
               "The BnF digital library",
-              "The open archive where the Inserm ethics committee deposits its opinions under a CC BY licence",
-              "The Foundation's photo album of archive documents, published one image at a time",
-              "The National Library of Medicine's index of biomedical papers, which supplies the 1959 records",
+              "The Inserm open archive",
+              "The Foundation's photo album",
+              "The NLM's biomedical index",
             ],
             correctIndex: 0,
             explanation:
@@ -851,9 +851,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Which two different failures does this lesson insist on distinguishing?",
             options: [
               "A printed error and an indexer's error",
-              "A misspelling and a mistranslation, since the English titles are in square brackets",
-              "An error in the first note and an error in the second, which carry different author orders",
-              "An error by the academy and an error by the Foundation, which spell her name differently",
+              "A misspelling and a mistranslation",
+              "An error in each of the two notes",
+              "An academy error and a Foundation error",
             ],
             correctIndex: 0,
             explanation:
@@ -864,9 +864,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does Inserm's own listing page do with her surname?",
             options: [
               "It spells it both ways",
-              "It spells it Gautier in the heading and in the document title, correcting the 1959 error",
-              "It avoids the surname entirely and refers to the opinion by its HAL identifier",
-              "It spells it Gauthier throughout, matching the index record of the January 1959 note",
+              "It spells it Gautier",
+              "It avoids the surname",
+              "It spells it Gauthier",
             ],
             correctIndex: 0,
             explanation:
@@ -877,9 +877,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "How does the HEADING of that entry on Inserm's listing page spell her surname?",
             options: [
               "Gauthier",
-              "Gautier, which is the spelling the document title underneath it also uses",
-              "Both ways, one in the French heading and one in the English translation beside it",
-              "Neither, because the heading refers only to the rules of publication and names nobody",
+              "Gautier",
+              "Both ways",
+              "Neither",
             ],
             correctIndex: 0,
             explanation:
@@ -890,9 +890,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "How often does the Foundation's 21 page English dossier spell her surname with an h?",
             options: [
               "Once",
-              "Never, since it spells her Gautier consistently throughout its argument and annexes",
-              "Throughout, matching the spelling on the index record of the January 1959 note",
-              "Twice, once in its introduction and once in the caption of its third annex",
+              "Never",
+              "Throughout",
+              "Twice",
             ],
             correctIndex: 0,
             explanation:
@@ -902,10 +902,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "Why does this lesson say a misspelling in an index record costs a scientist something?",
             options: [
-              "The paper is not found",
-              "It voids the author's claim to priority, which academies record by exact spelling",
-              "It prevents the paper from being cited, since citation software rejects mismatched names",
-              "It forces the journal to print a correction, which resets the paper's publication date",
+              "A search under the correct spelling misses the paper",
+              "It voids the claim to priority",
+              "It prevents the paper being cited",
+              "It forces a printed correction",
             ],
             correctIndex: 0,
             explanation:
@@ -916,9 +916,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does this course call the smallest unit of credit there is?",
             options: [
               "The name on the paper",
-              "The position that name occupies in the author line of the paper",
-              "The acknowledgement, which is where contributions too small to be authorship are recorded",
-              "The citation, which is how one paper credits the work of another",
+              "Its author-line position",
+              "The acknowledgement",
+              "The citation",
             ],
             correctIndex: 0,
             explanation:
@@ -929,9 +929,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What is filed in this catalog for the unchecked printed page of 1959?",
             options: [
               "A research check",
-              "A correction notice, sent to the Académie des sciences for its next session",
-              "A citation record, marked verified once the Gallica captcha has been cleared",
-              "Nothing, because the index records are enough to settle what the page says",
+              "A correction notice",
+              "A citation record",
+              "Nothing at all",
             ],
             correctIndex: 0,
             explanation:
@@ -941,10 +941,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "What exactly IS verified about the misspelling?",
             options: [
-              "The two index spellings",
-              "The spelling printed on the first page of the note of 26 January 1959",
-              "That the error was introduced by the Académie des sciences typesetter in 1959",
-              "That the error was introduced by the National Library of Medicine's indexer in the 1960s",
+              "The two index spellings, January and March",
+              "The spelling on the printed page",
+              "That the academy's typesetter erred",
+              "That the NLM indexer erred in the 1960s",
             ],
             correctIndex: 0,
             explanation:
@@ -955,9 +955,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What is a saisine, in the sense used in the title of the Inserm opinion?",
             options: [
               "A referral to a committee",
-              "A formal correction to a published paper, filed with the journal that printed it",
-              "A seizure of laboratory records by a court, as happened in Bordeaux in 2014",
-              "An opinion issued by an academy on a question of scientific priority",
+              "A formal correction to a paper",
+              "A court seizure of records",
+              "An academy's opinion on priority",
             ],
             correctIndex: 0,
             explanation:
@@ -968,9 +968,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What is an indexer, in the sense this lesson uses it?",
             options: [
               "Who creates a database record",
-              "The editor who assigns an article its volume, issue and page numbers before printing",
-              "The librarian who decides which journals a national collection will scan and host",
-              "The author who supplies keywords to the database when a paper is deposited",
+              "The editor who assigns page numbers",
+              "The librarian who chooses what to scan",
+              "The author who supplies keywords",
             ],
             correctIndex: 0,
             explanation:
@@ -981,9 +981,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Which of the two 1959 index records carries the correct spelling of her surname?",
             options: [
               "The March one",
-              "The January one, which is also the note the Inserm opinion says carried errors",
-              "Both, since the difference is a display convention rather than a spelling",
-              "Neither, since the index spells her Gauthier on both notes of that year",
+              "The January one",
+              "Both of them",
+              "Neither one",
             ],
             correctIndex: 0,
             explanation:
@@ -994,9 +994,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does this course refuse to say about the printed 1959 page?",
             options: [
               "How it spells her name",
-              "That the Académie des sciences published two notes on chromosomes in volume 248",
-              "That the Inserm opinion describes the first communication as carrying errors",
-              "That the papers were printed in French rather than in English",
+              "That volume 248 has two notes",
+              "That Inserm reports errors",
+              "That the papers are in French",
             ],
             correctIndex: 0,
             explanation:
@@ -1007,9 +1007,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does the Inserm opinion's phrase avec des erreurs leave open?",
             options: [
               "What the errors were",
-              "Whether her name appeared on the first communication at all",
-              "Whether the communication was published in January or in March of 1959",
-              "Whether the opinion was written by the ethics committee or by the researchers who referred the question",
+              "Whether her name appeared",
+              "Which month it was published",
+              "Who wrote the opinion",
             ],
             correctIndex: 0,
             explanation:
@@ -1020,9 +1020,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Which spelling appears in the TITLE of the Inserm opinion itself?",
             options: [
               "Gautier",
-              "Gauthier, matching the heading Inserm's listing page places above it",
-              "Both, since the title names her twice and spells her differently each time",
-              "Neither, because the title refers only to a collective of researchers and a discovery",
+              "Gauthier",
+              "Both ways",
+              "Neither",
             ],
             correctIndex: 0,
             explanation:
@@ -1033,9 +1033,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "Which pages of volume 248 carry the note of 16 March 1959?",
             options: [
               "1721 to 1722",
-              "602 to 603, which are the pages of the team's first note of 26 January that year",
-              "256 to 265, the pages of the team's paper in the Bulletin de l'Académie nationale de médecine",
-              "311 to 315, the pages of the fiftieth anniversary article published in 2009",
+              "602 to 603",
+              "256 to 265",
+              "311 to 315",
             ],
             correctIndex: 0,
             explanation:
@@ -1045,10 +1045,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "What does this course say a rule somebody has written down allows a reader to do?",
             options: [
-              "Hold it against the record",
-              "Enforce it against the academy that published the communication",
-              "Reconstruct who did the work, since the rule assigns each position a task",
-              "Date the discovery, since the rule fixes when each author joined the project",
+              "Hold it against the record and see where it holds",
+              "Enforce it against the academy",
+              "Reconstruct who did the work",
+              "Date the discovery",
             ],
             correctIndex: 0,
             explanation:
@@ -1059,9 +1059,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What did the Inserm opinion say she was offered during her year in the United States?",
             options: [
               "Work in a cell-culture laboratory",
-              "A photomicroscope, which she was unable to bring back to France with her",
-              "A post at the laboratory that first established the human chromosome count",
-              "Co-authorship on an American paper about chromosomes in cultured cells",
+              "A photomicroscope to take home",
+              "A post in a chromosome-count laboratory",
+              "Co-authorship on an American paper",
             ],
             correctIndex: 0,
             explanation:
@@ -1072,9 +1072,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does this course say a count that only one person has seen amounts to?",
             options: [
               "A claim",
-              "A finding, provided the person who made it recorded it in a dated notebook",
-              "A discovery, since priority in chromosome work runs from the date of observation",
-              "An error, because a single count cannot be distinguished from a miscount",
+              "A finding",
+              "A discovery",
+              "An error",
             ],
             correctIndex: 0,
             explanation:
@@ -1085,9 +1085,9 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
             prompt: "What does this course say has to be right before any larger unit of credit can work?",
             options: [
               "The name on the paper",
-              "The order the names appear in, since position carries the claim to the discovery",
-              "The date of the communication, since priority runs from the date of publication",
-              "The journal's index record, which academies correct on request from an author",
+              "The order of the names",
+              "The communication's date",
+              "The prize citation",
             ],
             correctIndex: 0,
             explanation:
@@ -1097,10 +1097,10 @@ Lejeune, J., Gautier, M., & Turpin, R. (1959b). [Study of somatic chromosomes fr
           {
             prompt: "What did this course do about the printed 1959 page it could not open?",
             options: [
-              "Said so and narrowed the claim",
-              "Used the Foundation's 2018 dossier as a substitute description of the printed page",
-              "Inferred the printed spelling from the index record of the January note",
-              "Left the misspelling out of the course entirely, since it could not be confirmed",
+              "Said so, narrowed the claim and filed a check",
+              "Used the 2018 dossier instead",
+              "Inferred it from the index record",
+              "Left the misspelling out",
             ],
             correctIndex: 0,
             explanation:
@@ -1216,10 +1216,10 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
           {
             prompt: "Who received the Kennedy Prize in 1962?",
             options: [
-              "Lejeune",
-              "Turpin, as head of the department in which the 1959 work had been done",
-              "Lejeune and Gautier jointly, with the research half of the award going to the laboratory",
-              "The Trousseau team as a body, which then divided the personal half three ways",
+              "Jérôme Lejeune alone",
+              "Raymond Turpin",
+              "Lejeune and Gautier",
+              "The Trousseau team",
             ],
             correctIndex: 0,
             explanation:
@@ -1230,9 +1230,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does the Fondation Jérôme Lejeune say the 1962 Kennedy Prize was awarded for?",
             options: [
               "All of his work",
-              "The discovery of the extra chromosome specifically, as the announcing letter set out",
-              "His clinical practice with patients, with the research half funding a separate project",
-              "The photographs of the chromosome preparations he had shown at international conferences",
+              "The extra chromosome",
+              "His clinical practice",
+              "His photographs",
             ],
             correctIndex: 0,
             explanation:
@@ -1243,9 +1243,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "How does the Foundation say the 1962 award came about?",
             options: [
               "A survey among his colleagues",
-              "A nomination submitted by Raymond Turpin on behalf of the whole Trousseau team",
-              "A reading of the two 1959 communications by the Kennedy Foundation's scientific board",
-              "A recommendation from the Académie des sciences following the second communication",
+              "A nomination by Raymond Turpin",
+              "A reading by the scientific board",
+              "An academy recommendation",
             ],
             correctIndex: 0,
             explanation:
@@ -1256,9 +1256,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Where does the Foundation say Lejeune was while that survey was conducted?",
             options: [
               "Abroad",
-              "At the Trousseau hospital, where the visiting team interviewed him directly",
-              "In Boston, at the laboratory where the cell-culture technique had been learned",
-              "In San Francisco, at the meeting that later gave him a second award",
+              "At Trousseau",
+              "In Boston",
+              "In San Francisco",
             ],
             correctIndex: 0,
             explanation:
@@ -1269,9 +1269,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "How much does the Foundation report was given for his personal use?",
             options: [
               "8,333 dollars",
-              "25,000 dollars, which the letter described as an exclusive grant for a research program",
-              "33,333 dollars, the two halves of the award taken together",
-              "The Foundation gives no figure, which is one of the gaps the Inserm opinion notes",
+              "25,000 dollars",
+              "33,333 dollars",
+              "No figure given",
             ],
             correctIndex: 0,
             explanation:
@@ -1282,9 +1282,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does the Foundation report the 25,000 dollars was designated as?",
             options: [
               "A research grant",
-              "A personal award, matching the smaller sum announced in the same letter",
-              "An endowment for the chair of fundamental genetics he later held",
-              "A payment to the Trousseau hospital for the laboratory's running costs",
+              "A personal award",
+              "A chair endowment",
+              "Hospital running costs",
             ],
             correctIndex: 0,
             explanation:
@@ -1295,9 +1295,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What is the Foundation's stated reference for the prize figures?",
             options: [
               "A transcript of a letter",
-              "The Kennedy Foundation's published citation for the 1962 award",
-              "The minutes of the Académie des sciences session at which the award was announced",
-              "A photograph of the letter, posted in the Foundation's online album of archive documents",
+              "The Kennedy Foundation's citation",
+              "The academy's session minutes",
+              "A photograph of the letter",
             ],
             correctIndex: 0,
             explanation:
@@ -1307,10 +1307,10 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
           {
             prompt: "Why does this course print no date for the letter announcing the prize?",
             options: [
-              "The date format is ambiguous",
-              "The Foundation supplies no date at all for the announcing letter",
-              "The letter is undated, which is why the Foundation dates it from the survey instead",
-              "The date conflicts with the Inserm opinion, which places the award in 1963",
+              "The date format is ambiguous: 4/12/1962",
+              "The Foundation gives no date",
+              "The letter is undated",
+              "It conflicts with Inserm's date",
             ],
             correctIndex: 0,
             explanation:
@@ -1321,9 +1321,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Which of these did this course NOT fetch about the 1962 award?",
             options: [
               "The Kennedy Foundation's own record",
-              "The Foundation's 2018 English dossier, which answers the prize question under a heading of its own",
-              "The Inserm opinion's sentence regretting that names were missing from various honours",
-              "The Foundation's press release of 29 September 2014, read in full in French",
+              "The Foundation's 2018 English dossier",
+              "The Inserm opinion's honours sentence",
+              "The 2014 Foundation press release",
             ],
             correctIndex: 0,
             explanation:
@@ -1334,9 +1334,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say the Foundation's answer about the prize does?",
             options: [
               "Reframes the charge",
-              "Denies that Lejeune received the Kennedy Prize in 1962 at all",
-              "Concedes that the prize was for the discovery and should have been shared",
-              "Refers the question to the Kennedy Foundation without answering it",
+              "Denies he received it",
+              "Concedes the point",
+              "Refers it elsewhere",
             ],
             correctIndex: 0,
             explanation:
@@ -1347,9 +1347,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Which method does the catalog course What the Citation Records teach?",
             options: [
               "Sorting a prize page into three documents",
-              "Counting how many times a laureate's name appears in an institution's archive",
-              "Comparing the wording of two ethics opinions written by the same committee",
-              "Reading a laboratory notebook against the published paper that followed it",
+              "Counting a laureate's archive mentions",
+              "Comparing two ethics opinions",
+              "Reading a notebook against a paper",
             ],
             correctIndex: 0,
             explanation:
@@ -1360,9 +1360,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Why can that method not be applied to the 1962 prize here?",
             options: [
               "There is no prize page in hand",
-              "The method works only on prizes awarded by a national academy rather than a foundation",
-              "The prize had two halves, and the method assumes a single undivided award",
-              "The award predates the period the method was designed for",
+              "It works only for academy prizes",
+              "The prize had two halves",
+              "The award predates the method",
             ],
             correctIndex: 0,
             explanation:
@@ -1372,10 +1372,10 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
           {
             prompt: "What does this course say is the honest move when an awarding body's record is not in hand?",
             options: [
-              "Label the interested account",
-              "Treat the defending party's account as the record until something better appears",
-              "Leave the award out of the course entirely, since nothing about it can be checked",
-              "Reconstruct the citation from what the recipient's later honours said about the work",
+              "Label the interested account and keep looking",
+              "Treat the defender's account as record",
+              "Leave the award out entirely",
+              "Reconstruct the citation",
             ],
             correctIndex: 0,
             explanation:
@@ -1386,9 +1386,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course mean by an interested account?",
             options: [
               "A stakeholder's description",
-              "An account written long after the events it describes, from memory rather than documents",
-              "An account published in a language other than the one the events happened in",
-              "An account that names its sources but does not reproduce them in full",
+              "An account written from memory",
+              "An account in another language",
+              "An account that withholds its sources",
             ],
             correctIndex: 0,
             explanation:
@@ -1399,9 +1399,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What are the two halves of the 1962 prize, as the Foundation reports it?",
             options: [
               "Personal and research",
-              "A medal and a citation, presented at separate ceremonies in Paris and Washington",
-              "A cash award and a chair, the second of which he took up in 1965",
-              "A prize to him and a matching prize to the Trousseau department",
+              "A medal and a citation",
+              "A cash award and a chair",
+              "Him and his department",
             ],
             correctIndex: 0,
             explanation:
@@ -1412,9 +1412,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say the research half of a prize funds?",
             options: [
               "The next paper",
-              "The repayment of costs already incurred on the work being honoured",
-              "The awarding body's own follow-up study of the recipient's results",
-              "A share for each co-author of the work the prize was given for",
+              "Costs already incurred",
+              "A follow-up study",
+              "Co-authors' shares",
             ],
             correctIndex: 0,
             explanation:
@@ -1425,9 +1425,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What is filed in this catalog for the unfetched Kennedy Foundation record, citation and recipient list?",
             options: [
               "A research check",
-              "A citation record, marked verified from the Foundation's transcript",
-              "A correction notice to the Fondation Jérôme Lejeune",
-              "Nothing, because the Foundation's account covers all three",
+              "A citation record",
+              "A correction notice",
+              "Nothing at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1438,9 +1438,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What do both parties to the dispute agree about the 1962 prize?",
             options: [
               "He received it alone",
-              "That it was awarded specifically for the discovery of the extra chromosome",
-              "That the Académie des sciences nominated him for it after the second note",
-              "That its citation named Raymond Turpin and Marthe Gautier as contributors",
+              "It was for the discovery",
+              "The academy nominated him",
+              "Its citation named Gautier",
             ],
             correctIndex: 0,
             explanation:
@@ -1451,9 +1451,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Which side of this dispute supplies the explanation of how the 1962 award came about?",
             options: [
               "The side defending him",
-              "The Inserm ethics committee, whose opinion sets out the award procedure in an annex",
-              "The Académie des sciences, in the minutes of its session of 26 January 1959",
-              "Neither, because no party to the dispute mentions the 1962 award",
+              "The Inserm ethics committee",
+              "The Académie des sciences",
+              "Neither side",
             ],
             correctIndex: 0,
             explanation:
@@ -1464,9 +1464,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What is a citation, in the prize sense this course uses?",
             options: [
               "The body's own sentence about the award",
-              "A reference to an earlier paper, printed in the reference list of a later one",
-              "The formal referral of a question to an ethics committee for an opinion",
-              "The letter announcing an award to its recipient, with the sums attached",
+              "A reference to an earlier paper",
+              "A referral to an ethics committee",
+              "The letter announcing the award",
             ],
             correctIndex: 0,
             explanation:
@@ -1477,9 +1477,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say a transcript carries that the original does not?",
             options: [
               "The copier's reading",
-              "The date of the original, which a transcript is required to supply",
-              "A translation into the reader's language, which the original lacks",
-              "An institutional seal certifying that the copy is complete",
+              "The original's date",
+              "A translation",
+              "A certifying seal",
             ],
             correctIndex: 0,
             explanation:
@@ -1490,9 +1490,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Which award does the 1970 journal record describe being presented?",
             options: [
               "The William Allan Memorial Award",
-              "The Kennedy Prize, which had been awarded seven years earlier in Paris",
-              "The Nobel Prize in Physiology or Medicine, which the Foundation says the team lost",
-              "A medal from the French genetics community, presented privately the following day",
+              "The Kennedy Prize of 1962",
+              "The Nobel Prize in Physiology or Medicine",
+              "A French genetics medal",
             ],
             correctIndex: 0,
             explanation:
@@ -1503,9 +1503,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "At whose annual meeting was the 1969 award presented?",
             options: [
               "The American Society of Human Genetics",
-              "The Académie nationale de médecine, which had published the team's third 1959 paper",
-              "The Joseph P. Kennedy Foundation, which had given him a prize seven years before",
-              "The Assises de génétique humaine et médicale, the French genetics meeting",
+              "The Académie nationale de médecine",
+              "The Joseph P. Kennedy Foundation",
+              "The Assises de génétique humaine et médicale",
             ],
             correctIndex: 0,
             explanation:
@@ -1516,9 +1516,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "In which city was the 1969 award presented?",
             options: [
               "San Francisco",
-              "Bordeaux, at the French genetics meeting where a medal was to be presented in 2014",
-              "Montreal, at the congress where the team's results were presented internationally",
-              "Boston, where the cell-culture technique behind the 1959 work had been learned",
+              "Bordeaux",
+              "Montreal",
+              "Boston",
             ],
             correctIndex: 0,
             explanation:
@@ -1529,9 +1529,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What date does that record give for the 1969 presentation?",
             options: [
               "3 October 1969",
-              "22 May 1958, the date the Foundation gives for the laboratory notebook entry",
-              "27 October 1958, the date of the Turpin letter the Foundation offers to historians",
-              "14 September 2014, the date the Foundation gives for the opinion's publication",
+              "22 May 1958",
+              "27 October 1958",
+              "14 September 2014",
             ],
             correctIndex: 0,
             explanation:
@@ -1542,9 +1542,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Which journal printed the 1969 presentation address?",
             options: [
               "The American Journal of Human Genetics",
-              "The Comptes rendus of the Académie des sciences, which had carried the 1959 notes",
-              "Médecine/Sciences, which carried the fiftieth anniversary article in 2009",
-              "The Bulletin de l'Académie nationale de médecine, in its volume for that year",
+              "The Comptes rendus of the Académie des sciences",
+              "Médecine/Sciences",
+              "The Bulletin de l'Académie nationale de médecine",
             ],
             correctIndex: 0,
             explanation:
@@ -1555,9 +1555,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Why did this course not read the 1969 presentation address itself?",
             options: [
               "It is a scan, not open access",
-              "It was never printed, and survives only as a summary in the society's minutes",
-              "It is held by the Fondation Jérôme Lejeune and released only to historians",
-              "It is behind the same captcha that blocked the 1959 volume on Gallica",
+              "It was never printed",
+              "The Foundation holds it",
+              "It is behind a Gallica captcha",
             ],
             correctIndex: 0,
             explanation:
@@ -1568,9 +1568,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What four things does this course say the index record of the 1969 award establishes?",
             options: [
               "An award, a recipient, a body and a date",
-              "The reasons for the award, its wording, its omissions and its value",
-              "Who nominated him, who seconded it, who voted and what the vote was",
-              "The award's name, its founder, its endowment and its previous recipients",
+              "Reasons, wording, omissions and value",
+              "Nominator, seconder, voters and the vote",
+              "Name, founder, endowment and past winners",
             ],
             correctIndex: 0,
             explanation:
@@ -1581,9 +1581,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say that index record establishes NOTHING about?",
             options: [
               "Reasons and wording",
-              "The name of the society that presented the award that October",
-              "The date and place at which the award was presented",
-              "The identity of the person to whom the award went",
+              "The presenting society",
+              "The date and place",
+              "The recipient's identity",
             ],
             correctIndex: 0,
             explanation:
@@ -1594,9 +1594,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say a researcher does by treating the title of the address as though it were the speech?",
             options: [
               "Invents a source",
-              "Saves time without losing anything, since a presentation address restates its own title",
-              "Cites the record correctly, since a title is a summary of the text beneath it",
-              "Commits a small error of emphasis that a later reader can easily correct",
+              "Loses nothing",
+              "Cites it correctly",
+              "Makes a minor slip",
             ],
             correctIndex: 0,
             explanation:
@@ -1607,9 +1607,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say a researcher loses by discarding the record because the speech is paywalled?",
             options: [
               "Four facts that were free",
-              "Nothing, since a bibliographic record adds no information to a paywalled article",
-              "The ability to cite the journal, which requires access to the full text",
-              "The award's date, which appears only inside the printed address",
+              "Nothing, since records add nothing",
+              "The right to cite the journal",
+              "The award's date",
             ],
             correctIndex: 0,
             explanation:
@@ -1620,9 +1620,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What word does the Inserm opinion use for the honours the names were missing from?",
             options: [
               "Various",
-              "Two, naming the Kennedy Prize and the William Allan Memorial Award explicitly",
-              "American, distinguishing the foreign awards from the French ones",
-              "Posthumous, since the opinion is concerned with awards made after 1994",
+              "Two",
+              "American",
+              "Posthumous",
             ],
             correctIndex: 0,
             explanation:
@@ -1633,9 +1633,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "How many honours does this course name and date?",
             options: [
               "Two",
-              "Various, following the Inserm opinion's own wording rather than counting them",
-              "None, because neither awarding body's own record was fetched",
-              "Three, counting the medal a French genetics meeting was to present in 2014",
+              "Various",
+              "None",
+              "Three",
             ],
             correctIndex: 0,
             explanation:
@@ -1646,9 +1646,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say about honours to Marthe Gautier in the documents it read?",
             options: [
               "None appears before 2014",
-              "Several appear, beginning with a French academy award in the year after the notes",
-              "The documents are silent on honours to anyone, including Lejeune",
-              "One appears, the research half of the 1962 prize, which went to the laboratory",
+              "Several, starting in 1960",
+              "None to anyone, even Lejeune",
+              "One, a share of the 1962 prize",
             ],
             correctIndex: 0,
             explanation:
@@ -1659,9 +1659,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say that absence is a statement about?",
             options: [
               "The documents it read",
-              "Her career, which the documents establish contained no honours before 2014",
-              "The French genetics community, which the documents show ignored her work",
-              "The Inserm opinion, which the documents show failed to list any award to her",
+              "Her whole career",
+              "French geneticists",
+              "The Inserm opinion alone",
             ],
             correctIndex: 0,
             explanation:
@@ -1672,9 +1672,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What is a presentation address?",
             options: [
               "The speech at a handover",
-              "The written citation an awarding body prints beside a recipient's name",
-              "The recipient's own reply, published by the society alongside its citation",
-              "A letter announcing an award, sent to the recipient before the ceremony",
+              "The written prize citation",
+              "The recipient's own reply",
+              "A letter announcing an award",
             ],
             correctIndex: 0,
             explanation:
@@ -1685,9 +1685,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does not open access mean, in the sense this lesson uses it?",
             options: [
               "A reader cannot open it",
-              "An item that has never been digitised and exists only on paper",
-              "An item whose bibliographic record has been withheld by the publisher",
-              "An item released only to researchers who apply to the holding institution",
+              "It was never digitised",
+              "Its record is withheld",
+              "Only applicants may see it",
             ],
             correctIndex: 0,
             explanation:
@@ -1697,10 +1697,10 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
           {
             prompt: "What does this lesson say thin evidence is not the same as?",
             options: [
-              "None",
-              "Strong evidence, which is why a bibliographic record cannot be cited",
-              "Secondary evidence, which is what a scanned article always becomes",
-              "Contested evidence, which is what every document in this case is",
+              "No evidence at all",
+              "Weak evidence",
+              "Partial evidence",
+              "Limited evidence",
             ],
             correctIndex: 0,
             explanation:
@@ -1711,9 +1711,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does the Inserm opinion's second finding say about Lejeune's part in making the discovery known internationally?",
             options: [
               "Doubtless very significant",
-              "Unlikely to have been preponderant, the same phrase it uses about the discovery itself",
-              "Impossible to assess from the documents available to the committee",
-              "Limited to the two communications of January and March 1959",
+              "Unlikely to be preponderant",
+              "Impossible to assess",
+              "Limited to the 1959 notes",
             ],
             correctIndex: 0,
             explanation:
@@ -1724,9 +1724,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does the opinion add immediately after calling his part in promotion very significant?",
             options: [
               "That it differs from the discovery",
-              "That it is the reason the 1962 prize named him alone",
-              "That the committee could not determine who made the discovery itself",
-              "That the other two authors shared equally in the promotion of the result",
+              "That it explains the 1962 prize",
+              "That the discoverer is unknown",
+              "That all three shared it equally",
             ],
             correctIndex: 0,
             explanation:
@@ -1737,9 +1737,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Why did the slide preparations leave the laboratory, according to the Inserm opinion?",
             options: [
               "It could not photograph them",
-              "They were sent to Boston for confirmation by the laboratory that taught the technique",
-              "They were deposited with the Académie des sciences as evidence for the communication",
-              "They were seized under a court authorisation obtained by an outside party",
+              "To be confirmed in Boston",
+              "As evidence for the Académie",
+              "They were seized by court order",
             ],
             correctIndex: 0,
             explanation:
@@ -1750,9 +1750,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Where does the Inserm opinion say the resulting photographs then served Lejeune?",
             options: [
               "Conferences and media appearances",
-              "The two 1959 communications, which printed them as supporting plates",
-              "The 1962 prize application, which the Kennedy Foundation assessed from the images",
-              "His laboratory notebook, where the opinion says they are pasted beside the counts",
+              "As plates in the 1959 notes",
+              "In the 1962 prize application",
+              "Pasted in his laboratory notebook",
             ],
             correctIndex: 0,
             explanation:
@@ -1763,9 +1763,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course call the portable form of the evidence in 1958?",
             options: [
               "The photograph",
-              "The slide, which could be carried to a congress in a case and shown under a microscope",
-              "The culture, which could be divided and sent to other laboratories for counting",
-              "The notebook, which recorded each count with its date",
+              "The slide",
+              "The culture",
+              "The notebook",
             ],
             correctIndex: 0,
             explanation:
@@ -1776,9 +1776,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "How does this course present the point about who holds the portable form of the evidence?",
             options: [
               "As a fact about this case",
-              "As a general law about how laboratories distribute credit among their members",
-              "As the Foundation's position, which the Inserm opinion rejects",
-              "As an inference from the 1962 prize, which the course cannot otherwise explain",
+              "As a general law of laboratories",
+              "As the Foundation's position",
+              "As an inference from the prize",
             ],
             correctIndex: 0,
             explanation:
@@ -1789,9 +1789,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does the opinion's third finding call the technical approach?",
             options: [
               "A condition of the discovery",
-              "A contribution that does not constitute the essence of the discovery",
-              "A matter for the department head rather than for the committee",
-              "An achievement that belongs to the Boston laboratory that taught it",
+              "Not the essence of the discovery",
+              "A matter for the department head",
+              "An achievement of the Boston lab",
             ],
             correctIndex: 0,
             explanation:
@@ -1802,9 +1802,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does the French possessive leurs show in the opinion's third finding?",
             options: [
               "More than one name",
-              "That the names belonged to the institution rather than to individuals",
-              "That the finding is quoting the researchers who referred the question",
-              "That the committee was speaking about its own members' names",
+              "Institutional names",
+              "The referrers' names",
+              "Committee members' names",
             ],
             correctIndex: 0,
             explanation:
@@ -1815,9 +1815,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Where does the opinion regret the names were not systematically associated with the discovery?",
             options: [
               "In communication and in honours",
-              "In the index records of the two 1959 communications and in the printed papers",
-              "In the laboratory notebook and in the correspondence between the team members",
-              "In the French press and in the international scientific literature",
+              "In the index records and papers",
+              "In the notebook and the letters",
+              "In the press and the literature",
             ],
             correctIndex: 0,
             explanation:
@@ -1828,9 +1828,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "How does the Foundation's right of reply of 26 September 2014 describe what the opinion found?",
             options: [
               "Essential contributions by two people",
-              "A finding that Marthe Gautier alone made the discovery of the extra chromosome",
-              "A finding that no member of the team could be credited with the discovery",
-              "A finding that the committee declined to reach any conclusion at all",
+              "That Marthe Gautier alone discovered it",
+              "That no team member can be credited",
+              "That the committee reached no conclusion",
             ],
             correctIndex: 0,
             explanation:
@@ -1841,9 +1841,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Why does this course treat that quotation as a strong check on its reading of the opinion?",
             options: [
               "It comes from a hostile party",
-              "It is the only quotation of the opinion available in English translation",
-              "It was published before the opinion itself, so it cannot have been copied from it",
-              "It appears in a document deposited under an open licence in a public archive",
+              "It is the only English translation",
+              "It predates the opinion itself",
+              "It is in an openly licensed archive",
             ],
             correctIndex: 0,
             explanation:
@@ -1854,9 +1854,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does the opinion's finding about promotion NOT say, according to this course?",
             options: [
               "That anyone took anything",
-              "That making a discovery known is different from making it",
-              "That his part in the international promotion was very significant",
-              "That the laboratory had no photomicroscope of its own",
+              "That promotion is not discovery",
+              "That his part was significant",
+              "That it had no photomicroscope",
             ],
             correctIndex: 0,
             explanation:
@@ -1867,9 +1867,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say the Inserm opinion records?",
             options: [
               "Positions, not intentions",
-              "The committee's assessment of each author's honesty in later accounts",
-              "The reasons the 1962 and 1969 awarding bodies gave for naming one man",
-              "The contents of the laboratory notebook, read page by page",
+              "Each author's honesty",
+              "The awarding bodies' reasons",
+              "The notebook, page by page",
             ],
             correctIndex: 0,
             explanation:
@@ -1879,10 +1879,10 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
           {
             prompt: "Which existing lesson in this catalog does this course name as the general version of the promotion point?",
             options: [
-              "Credit is a second event",
-              "Who counts as an author, and who gets thanked, which sets out the authorship criteria",
-              "Who corrects a record, and with what, which lists the correction instruments",
-              "Malone, Walker, and a story that ran uphill, which works a live dispute",
+              "Credit is a second event, which separates the crediting from the work",
+              "Who counts as an author, and who gets thanked",
+              "Who corrects a record, and with what",
+              "Malone, Walker, and a story that ran uphill",
             ],
             correctIndex: 0,
             explanation:
@@ -1893,9 +1893,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say it adds to that existing lesson?",
             options: [
               "An institution that wrote it down",
-              "A prize citation that names the participants in the second event",
-              "A correction published by the journal that printed the original paper",
-              "A laboratory notebook showing when each of the two events happened",
+              "A prize citation naming the parties",
+              "A correction by the original journal",
+              "A notebook dating each of the events",
             ],
             correctIndex: 0,
             explanation:
@@ -1906,9 +1906,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course mean by unfriendly corroboration?",
             options: [
               "A hostile party quoting the document",
-              "Two witnesses who dislike each other giving the same account of an event",
-              "A committee confirming a finding it had previously rejected",
-              "An archive releasing a document it had held back from historians",
+              "Rival witnesses giving one account",
+              "A committee reversing its own finding",
+              "An archive releasing withheld papers",
             ],
             correctIndex: 0,
             explanation:
@@ -1919,9 +1919,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say about the two acts the opinion separates?",
             options: [
               "One person can do either or both",
-              "Only the person who produces a result is entitled to promote it",
-              "Promotion is always the more visible act, so it always wins the credit",
-              "An institution must choose between them when it awards an honour",
+              "Only the producer may promote it",
+              "Promotion always wins the credit",
+              "An honour must choose between them",
             ],
             correctIndex: 0,
             explanation:
@@ -1932,9 +1932,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course say happens when an interested account is treated as the record?",
             options: [
               "A party's version becomes the history",
-              "The account gains the authority of the institution it describes, which is usually harmless",
-              "The account can no longer be corrected, because archives refuse duplicate submissions",
-              "Nothing, provided the account is accurate about the facts it reports",
+              "It gains the institution's authority",
+              "The account can no longer be corrected",
+              "Nothing, if the account is accurate",
             ],
             correctIndex: 0,
             explanation:
@@ -1945,9 +1945,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "How does the Foundation's 2018 dossier handle the question of the 1962 prize?",
             options: [
               "It gives it a heading of its own",
-              "It mentions the prize only in passing, in the introduction to the whole document",
-              "It refers the reader to the Kennedy Foundation's own published citation for the award",
-              "It declines to discuss the award, on the ground that the dispute is about the discovery",
+              "It mentions it only in passing",
+              "It defers to the Kennedy citation",
+              "It declines to discuss the award",
             ],
             correctIndex: 0,
             explanation:
@@ -1958,9 +1958,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What does this course print about what the 1962 prize was formally for?",
             options: [
               "Only what the defending party says",
-              "The awarding body's citation, quoted from its published record of that year",
-              "Nothing at all, since the question cannot be answered from any available source",
-              "The Inserm opinion's account, which sets out the purpose of each honour it discusses",
+              "The awarding body's own citation",
+              "Nothing, as no source answers it",
+              "The Inserm opinion's account of it",
             ],
             correctIndex: 0,
             explanation:
@@ -1970,10 +1970,10 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
           {
             prompt: "Who wrote the printed 1969 presentation address?",
             options: [
-              "Knudson",
-              "Lejeune himself, as the recipient's reply printed beside the society's citation",
-              "The Fondation Jérôme Lejeune, which reprinted it in its 2018 dossier",
-              "The Inserm ethics committee, which quotes it in the annex to its 2014 opinion",
+              "A. G. Knudson Jr.",
+              "Jérôme Lejeune",
+              "Raymond Turpin",
+              "Marthe Gautier",
             ],
             correctIndex: 0,
             explanation:
@@ -1984,9 +1984,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "Which pages of the journal carry the 1969 presentation address?",
             options: [
               "119 to 120",
-              "602 to 603, which is where the first 1959 note appears in the Comptes rendus",
-              "1721 to 1722, which is where the second 1959 note appears in the same volume",
-              "256 to 265, the pages of the team's paper in the Bulletin de l'Académie nationale de médecine",
+              "602 to 603",
+              "1721 to 1722",
+              "256 to 265",
             ],
             correctIndex: 0,
             explanation:
@@ -1996,10 +1996,10 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
           {
             prompt: "What does the Inserm opinion's third finding say about Marthe Gautier's role?",
             options: [
-              "It calls it key",
-              "It calls it a technical contribution that does not touch the essence of the discovery",
-              "It declines to assess it, referring the question back to the researchers who raised it",
-              "It calls it preponderant, which is the word it uses about Lejeune's part as well",
+              "It calls it a key role",
+              "It calls it minor",
+              "It declines to assess it",
+              "It calls it preponderant",
             ],
             correctIndex: 0,
             explanation:
@@ -2010,9 +2010,9 @@ Fondation Jérôme Lejeune. (2014a, September 26). *Trisomie 21, la Fondation J�
             prompt: "What did the laboratory's lack of a photomicroscope force, according to the Inserm opinion?",
             options: [
               "Sending the slides out",
-              "Abandoning the control group, since no comparison images could be made",
-              "Publishing the first note without any author line, which was corrected in March",
-              "Repeating every count three times, which is why the work took until 1959",
+              "Dropping the control group",
+              "An unsigned first note",
+              "Repeating every count",
             ],
             correctIndex: 0,
             explanation:
@@ -2142,10 +2142,10 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
           {
             prompt: "What does Inserm say may happen to a note issued by its ethics committee?",
             options: [
-              "It may evolve",
-              "It becomes binding on the institute once published, and cannot afterwards be altered",
-              "It is withdrawn automatically if the party it concerns files a right of reply",
-              "It is reviewed by the Académie des sciences before being deposited in the archive",
+              "It may evolve with new contributions",
+              "It becomes binding and unalterable",
+              "It is withdrawn if a reply is filed",
+              "The Académie must review it first",
             ],
             correctIndex: 0,
             explanation:
@@ -2156,9 +2156,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "By what two routes can a question reach the Inserm ethics committee?",
             options: [
               "Referral or its own initiative",
-              "A court order or a request from the journal that published the disputed paper",
-              "A vote of the institute's researchers or an instruction from the ministry",
-              "A complaint from a named individual or an appeal against an earlier note",
+              "A court order or a journal request",
+              "A staff vote or a ministry order",
+              "A personal complaint or an appeal",
             ],
             correctIndex: 0,
             explanation:
@@ -2169,9 +2169,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Who referred the Marthe Gautier question, according to the opinion's own title?",
             options: [
               "A collective of researchers",
-              "The Académie des sciences, which had published both of the 1959 communications",
-              "The Fondation Jérôme Lejeune, which asked for the record to be examined",
-              "The French ministry of research, following coverage in the national press",
+              "The Académie des sciences",
+              "The Fondation Jérôme Lejeune",
+              "The French research ministry",
             ],
             correctIndex: 0,
             explanation:
@@ -2182,9 +2182,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What is an avis, in the French administrative sense used here?",
             options: [
               "An opinion, not a judgment",
-              "A binding ruling that the institute's researchers are obliged to follow",
-              "A formal complaint lodged with a committee by a named party",
-              "A published correction to an article, issued by the journal that printed it",
+              "A binding ruling on researchers",
+              "A formal complaint by a party",
+              "A journal's published correction",
             ],
             correctIndex: 0,
             explanation:
@@ -2195,9 +2195,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What is autosaisine?",
             options: [
               "A committee taking up a question itself",
-              "A researcher withdrawing a referral after the committee has begun work on it",
-              "An institution reviewing its own published opinions on a fixed cycle",
-              "The automatic deposit of a committee's notes into the national open archive",
+              "A researcher withdrawing a referral",
+              "A fixed-cycle review of its own opinions",
+              "Automatic deposit of notes in an archive",
             ],
             correctIndex: 0,
             explanation:
@@ -2208,9 +2208,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Under what identifier is the 2014 opinion deposited?",
             options: [
               "inserm-02110704",
-              "PMID 13629913, which is the index record of the first 1959 communication",
-              "PMC1706525, which is the archived copy of the 1969 presentation address",
-              "bpt6k32002, which is the Gallica identifier for the 1959 volume",
+              "PMID 13629913",
+              "PMC1706525",
+              "bpt6k32002",
             ],
             correctIndex: 0,
             explanation:
@@ -2221,9 +2221,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "In which archive is the opinion deposited?",
             options: [
               "HAL",
-              "Gallica, the digital library of the Bibliothèque nationale de France",
-              "PubMed Central, the archive that holds the 1969 presentation address",
-              "The Fondation Jérôme Lejeune's online album of archive documents",
+              "Gallica",
+              "PMC",
+              "arXiv",
             ],
             correctIndex: 0,
             explanation:
@@ -2234,9 +2234,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "When was the opinion deposited in that archive?",
             options: [
               "25 April 2019",
-              "September 2014, in the same month the committee issued it",
-              "3 October 1969, the date the second honour was presented in San Francisco",
-              "26 September 2014, the day the Foundation published its right of reply",
+              "September 2014",
+              "3 October 1969",
+              "26 September 2014",
             ],
             correctIndex: 0,
             explanation:
@@ -2247,9 +2247,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Under what licence is the opinion deposited?",
             options: [
               "CC BY 4.0",
-              "All rights reserved, with copying permitted only for private study",
-              "A licence restricting reuse to researchers affiliated with a French institution",
-              "No licence at all, which is why this course quotes it only in short extracts",
+              "CC BY-NC 4.0",
+              "No licence",
+              "CC BY-ND 4.0",
             ],
             correctIndex: 0,
             explanation:
@@ -2260,9 +2260,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does that licence permit a reader to do?",
             options: [
               "Copy and redistribute it with credit",
-              "Read it on the archive's own site, without downloading or sharing a copy",
-              "Quote up to a stated word limit for the purpose of criticism or review",
-              "Translate it, but not reproduce the French original in any form",
+              "Read it online without sharing a copy",
+              "Quote it up to a stated word limit",
+              "Translate it but not reproduce it",
             ],
             correctIndex: 0,
             explanation:
@@ -2273,9 +2273,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Which of the depositor's keywords names what this case is about?",
             options: [
               "Ordre des auteurs",
-              "Prix Kennedy, naming the honour awarded three years after the notes",
-              "Culture cellulaire, naming the technique brought back from the United States",
-              "Photomicroscope, naming the instrument the laboratory did not have",
+              "Prix Kennedy",
+              "Culture cellulaire",
+              "Photomicroscope",
             ],
             correctIndex: 0,
             explanation:
@@ -2286,9 +2286,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What language is the 2014 opinion written in?",
             options: [
               "French",
-              "English, which is why both parties quote it in English without translating",
-              "French and English in parallel, as HAL requires for deposited opinions",
-              "English, with a French summary attached as an annex",
+              "English",
+              "Bilingual",
+              "German",
             ],
             correctIndex: 0,
             explanation:
@@ -2299,9 +2299,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Which body is recorded as producing the 2014 opinion?",
             options: [
               "The Inserm Ethics Committee",
-              "The collective of researchers who referred the question to the institute",
-              "Aviesan, the French alliance of life sciences and health research bodies",
-              "The Académie nationale de médecine, acting on a referral from Inserm",
+              "The referring collective",
+              "Aviesan, the research alliance",
+              "The Académie de médecine",
             ],
             correctIndex: 0,
             explanation:
@@ -2312,9 +2312,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "How does an ethics-committee opinion differ from a prize citation in who writes it?",
             options: [
               "A body that gave nothing writes it",
-              "A body that gave the award writes both, which is why the two can be read the same way",
-              "The recipient writes it, in the form of acceptance remarks published by the body",
-              "A journal editor writes it, as part of the correction record attached to a paper",
+              "The awarding body writes both",
+              "The recipient writes it as remarks",
+              "A journal's editor writes both",
             ],
             correctIndex: 0,
             explanation:
@@ -2324,10 +2324,10 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
           {
             prompt: "How does an ethics-committee opinion differ from a prize citation in permanence?",
             options: [
-              "It may be revised",
-              "It expires after a fixed period, unlike a citation, which stands indefinitely",
-              "It is sealed for a term of years, unlike a citation, which is published at once",
-              "It cannot be revised at all, unlike a citation, which awarding bodies routinely update",
+              "It may be revised, as Inserm says",
+              "It expires after a fixed period",
+              "It is sealed for a term of years",
+              "It can never be revised at all",
             ],
             correctIndex: 0,
             explanation:
@@ -2338,9 +2338,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Why does this course exist as a course rather than as a section of the prize-citation course?",
             options: [
               "The instruments differ",
-              "Because the material is too long to fit inside an existing private course",
-              "Because the 1959 notes are in French and the other course reads English sources only",
-              "Because the other course is public and this material must stay private",
+              "The material is too long",
+              "The notes are in French",
+              "The other course is public",
             ],
             correctIndex: 0,
             explanation:
@@ -2351,9 +2351,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this course say about the reading skills taught by the prize-citation course?",
             options: [
               "They transfer only partly",
-              "They transfer completely, since any institutional document can be read the same way",
-              "They do not transfer at all, which is why this course begins from first principles",
-              "They transfer only to documents published under an open licence",
+              "They transfer completely",
+              "They do not transfer at all",
+              "Only to openly licensed texts",
             ],
             correctIndex: 0,
             explanation:
@@ -2364,9 +2364,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What research does Inserm say its ethics committee considers?",
             options: [
               "Research carried out at the institute",
-              "All French biomedical research, whoever carries it out and wherever it is published",
-              "Historical questions referred to it by learned academies",
-              "Research funded by the state, including work done at private foundations",
+              "All French biomedical research anywhere",
+              "Historical questions from academies",
+              "All state-funded research, anywhere",
             ],
             correctIndex: 0,
             explanation:
@@ -2377,9 +2377,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this course say is unusual about the central document of this dispute?",
             options: [
               "It is free to redistribute",
-              "It was written by a body with formal power to amend the 1959 author line",
-              "It was published simultaneously in French and in English translation",
-              "It was signed by every member of the committee that produced it",
+              "It can amend the author line",
+              "It was issued in two languages",
+              "Every committee member signed it",
             ],
             correctIndex: 0,
             explanation:
@@ -2390,9 +2390,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What is HAL?",
             options: [
               "The French open archive",
-              "The Inserm ethics committee's internal register of referrals",
-              "The index that supplies the author lines of the 1959 communications",
-              "The Bibliothèque nationale de France's collection of scanned periodicals",
+              "Inserm's referral register",
+              "The index of the 1959 notes",
+              "The BnF's scanned periodicals",
             ],
             correctIndex: 0,
             explanation:
@@ -2403,9 +2403,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What is a prize citation meant to be, in the contrast this lesson draws?",
             options: [
               "Permanent",
-              "Provisional, pending the laureate's own account of the work in a lecture",
-              "Private, released only to the recipient and the awarding body's members",
-              "Contested, since a citation is written to invite challenge from other claimants",
+              "Provisional",
+              "Private",
+              "Contested",
             ],
             correctIndex: 0,
             explanation:
@@ -2416,9 +2416,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Which keyword sits first in the archive record's list?",
             options: [
               "Trisomie 21",
-              "Ordre des auteurs, which is the keyword this course singles out",
-              "Comité d'éthique, naming the body that produced the opinion",
-              "Marthe Gautier, since the opinion is named for the case",
+              "Ordre des auteurs",
+              "Comité d'éthique",
+              "Marthe Gautier",
             ],
             correctIndex: 0,
             explanation:
@@ -2429,9 +2429,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this course say the force and the limits of an ethics opinion both come from?",
             options: [
               "What kind of document it is",
-              "The seniority of the committee members who signed it",
-              "The number of documents cited in its footnotes",
-              "The institution's willingness to defend it in court",
+              "The signatories' seniority",
+              "How many sources it cites",
+              "Whether it is defended in court",
             ],
             correctIndex: 0,
             explanation:
@@ -2442,9 +2442,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the opinion's FIRST finding say about Lejeune's part in the discovery?",
             options: [
               "Unlikely to have been preponderant",
-              "Certainly not preponderant, given the context at the time of the discovery",
-              "Doubtless very significant, which is the phrase it uses about the discovery itself",
-              "Impossible to assess, since no contemporary document survives",
+              "Certainly not preponderant at the time",
+              "Doubtless very significant in itself",
+              "Impossible to assess from the record",
             ],
             correctIndex: 0,
             explanation:
@@ -2455,9 +2455,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What kind of statement is the first finding making?",
             options: [
               "One about likelihood",
-              "A finding of fact, reached on the balance of the documents before the committee",
-              "A recommendation, addressed to the institutions that awarded the honours",
-              "A quotation from the referral, reproduced without the committee endorsing it",
+              "A finding of fact",
+              "A recommendation",
+              "An unendorsed quote",
             ],
             correctIndex: 0,
             explanation:
@@ -2468,9 +2468,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the first finding NOT say?",
             options: [
               "That his part was not preponderant",
-              "That his part was unlikely to have been preponderant, given the context at the time",
-              "That the conclusion holds unless her cell-culture training is given no credit",
-              "That her training was acquired in the United States",
+              "That it was unlikely to be preponderant",
+              "That it depends on her training",
+              "That she trained in the United States",
             ],
             correctIndex: 0,
             explanation:
@@ -2481,9 +2481,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What condition does the first finding attach to itself?",
             options: [
               "Unless her training is discounted",
-              "Unless the laboratory notebook is admitted as evidence by the committee",
-              "Unless the Foundation supplies the correspondence it holds for historians",
-              "Unless a further referral is made by the same collective of researchers",
+              "Unless the notebook is admitted",
+              "Unless the letters are supplied",
+              "Unless a further referral is made",
             ],
             correctIndex: 0,
             explanation:
@@ -2494,9 +2494,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Where does the first finding say her cell-culture training was acquired?",
             options: [
               "The United States",
-              "At the Trousseau hospital, under Raymond Turpin's direction after 1957",
-              "At an American laboratory in Paris, which is why the technique reached the team",
-              "The finding does not say, which the Foundation lists among its objections",
+              "The Trousseau hospital",
+              "An American lab in Paris",
+              "The finding does not say",
             ],
             correctIndex: 0,
             explanation:
@@ -2506,10 +2506,10 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
           {
             prompt: "What does this course say is the most common thing that happens to the first finding in retelling?",
             options: [
-              "The hedge is dropped",
-              "The condition about cell-culture training is repeated but the conclusion is left out",
-              "It is attributed to the Foundation rather than to the ethics committee",
-              "Its date is given as 2009 rather than 2014, following the anniversary article",
+              "The word unlikely is dropped",
+              "The conclusion is left out of it",
+              "It is credited to the Foundation",
+              "Its date is given as 2009",
             ],
             correctIndex: 0,
             explanation:
@@ -2520,9 +2520,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What happens to the hedge when both sides render the first finding in English?",
             options: [
               "It survives intact",
-              "The Foundation strengthens it and the committee's supporters weaken it",
-              "It disappears, which is why this course quotes only the French",
-              "It becomes a conditional, which the French original does not contain",
+              "It is made stronger",
+              "It disappears entirely",
+              "It turns conditional",
             ],
             correctIndex: 0,
             explanation:
@@ -2533,9 +2533,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the SECOND finding say about his part in making the discovery known internationally?",
             options: [
               "Doubtless very significant",
-              "Unlikely to have been preponderant, the phrase the first finding uses",
-              "Confined to the two communications of January and March 1959",
-              "Shared equally with the other two authors named on the notes",
+              "Unlikely to be preponderant",
+              "Confined to the 1959 notes",
+              "Shared equally with the others",
             ],
             correctIndex: 0,
             explanation:
@@ -2546,9 +2546,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the third finding call the technical approach?",
             options: [
               "A condition of the discovery",
-              "The essence of the discovery, which is the phrase the Foundation disputes",
-              "A contribution that any competent laboratory could have supplied",
-              "A matter outside the committee's remit, referred back to the researchers",
+              "The essence of the discovery",
+              "Something any lab could supply",
+              "Outside the committee's remit",
             ],
             correctIndex: 0,
             explanation:
@@ -2559,9 +2559,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the third finding call regrettable?",
             options: [
               "Two names missing from the honours",
-              "That the first communication misspelled Marthe Gautier's surname in second position",
-              "That the laboratory had no photomicroscope of its own in 1958",
-              "That the referral reached the committee only fifty five years after the notes",
+              "The misspelling of Gautier's name",
+              "The lack of a photomicroscope",
+              "The long delay before the referral",
             ],
             correctIndex: 0,
             explanation:
@@ -2572,9 +2572,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the FOURTH finding say about present-day campaigning carried on in Lejeune's name?",
             options: [
               "It commits only those doing it",
-              "It is a legitimate extension of the work reported in the 1959 communications",
-              "It disqualifies him from being credited with any part of the discovery",
-              "It falls outside the committee's remit and is therefore not addressed at all",
+              "It continues the 1959 work",
+              "It disqualifies him from credit",
+              "It is not addressed at all",
             ],
             correctIndex: 0,
             explanation:
@@ -2585,9 +2585,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "How does the Fondation Jérôme Lejeune read the purpose of the referral and the opinion?",
             options: [
               "As a wish to damage a reputation",
-              "As a fair examination of the record that reached the wrong conclusion on one point",
-              "As an attempt by Inserm to claim the discovery for its own researchers",
-              "As a routine application of the authorship rules set out in the annex",
+              "As a fair but partly wrong review",
+              "As Inserm claiming the discovery",
+              "As a routine authorship check",
             ],
             correctIndex: 0,
             explanation:
@@ -2598,9 +2598,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Whose phrase is la vie humaine menacée par l'avortement, as quoted in this course?",
             options: [
               "The Foundation's",
-              "The Inserm ethics committee's, in the fourth of its five findings",
-              "The collective of researchers who referred the question in 2014",
-              "The Académie nationale de médecine's, in its 1959 report of the discovery",
+              "The committee's",
+              "The collective's",
+              "The Académie's",
             ],
             correctIndex: 0,
             explanation:
@@ -2610,10 +2610,10 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
           {
             prompt: "What position does this course take on the politics named in the fourth finding?",
             options: [
-              "None",
-              "The committee's, since its opinion is the strongest document in the case",
-              "The Foundation's, since it is the party with documents in the dispute",
-              "A middle position, weighing both parties' reasons against each other",
+              "None, it argues neither",
+              "The committee's position",
+              "The Foundation's position",
+              "A position between the two",
             ],
             correctIndex: 0,
             explanation:
@@ -2624,9 +2624,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Why does this course name the politics at all?",
             options: [
               "The dispute is otherwise unintelligible",
-              "Because the 1959 communications discuss prenatal testing in their conclusions",
-              "Because the Inserm opinion's first finding rests on them",
-              "Because the 1962 and 1969 honours were awarded on those grounds",
+              "The 1959 notes discuss prenatal testing",
+              "The opinion's first finding rests on them",
+              "The 1962 and 1969 honours rested on them",
             ],
             correctIndex: 0,
             explanation:
@@ -2637,9 +2637,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What is the Foundation's stated position on the cell-culture technique?",
             options: [
               "Not the essence of the discovery",
-              "The essence of the discovery, which is why it credits her in every document",
-              "Irrelevant, since the counting could have been done without cultured cells",
-              "An American technique that no French laboratory could have obtained otherwise",
+              "The essence of the discovery",
+              "Irrelevant to the chromosome count",
+              "Obtainable only from America",
             ],
             correctIndex: 0,
             explanation:
@@ -2650,9 +2650,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this course conclude from the fact that both sides argue about the weight of the technique?",
             options: [
               "Both read the document carefully",
-              "That the dispute is really about the 1962 prize rather than about the 1959 notes",
-              "That the committee wrote its first finding in order to provoke the Foundation",
-              "That neither side has read the other's published statements",
+              "It is really about the 1962 prize",
+              "The finding was meant to provoke",
+              "Neither read the other's statements",
             ],
             correctIndex: 0,
             explanation:
@@ -2663,9 +2663,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What is the FIFTH finding about?",
             options: [
               "Authorship today",
-              "The award of the Kennedy Prize in 1962 and the honours that followed it",
-              "The referral itself, and whether the committee should have accepted it",
-              "The laboratory notebook, and whether it settles who counted first",
+              "The 1962 Kennedy Prize",
+              "The referral itself",
+              "The laboratory notebook",
             ],
             correctIndex: 0,
             explanation:
@@ -2676,9 +2676,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What is a conditional finding, as this lesson uses the term?",
             options: [
               "A conclusion stated with an unless",
-              "A conclusion the committee may revise once new contributions arrive",
-              "A conclusion reached by a majority rather than by the whole committee",
-              "A conclusion stated in the alternative, so that either version may be quoted",
+              "A conclusion revisable on new input",
+              "A conclusion reached by a majority",
+              "A conclusion stated in the alternative",
             ],
             correctIndex: 0,
             explanation:
@@ -2689,9 +2689,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this course say a reader does by repeating the first finding as a flat statement?",
             options: [
               "Hardens a probability into a fact",
-              "Translates the French accurately into ordinary English usage",
-              "Follows the Foundation's own rendering of the same sentence",
-              "Applies the condition the finding attaches to itself",
+              "Translates the French accurately",
+              "Follows the Foundation's rendering",
+              "Applies the finding's own condition",
             ],
             correctIndex: 0,
             explanation:
@@ -2702,9 +2702,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the second finding distinguish his significant part from?",
             options: [
               "The discovery itself",
-              "The publication of the two communications in the Comptes rendus",
-              "The technical work of preparing and staining the slides",
-              "The award of the honours that followed in 1962 and 1969",
+              "The two communications",
+              "Staining the slides",
+              "The 1962 and 1969 honours",
             ],
             correctIndex: 0,
             explanation:
@@ -2715,9 +2715,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this lesson mean by fencing off?",
             options: [
               "Saying a subject is outside the decision",
-              "Refusing to name a party to a dispute in a published document",
-              "Publishing a finding without the evidence that supports it",
-              "Deferring a question to a later note that may evolve",
+              "Refusing to name a party to a dispute",
+              "Publishing a finding without evidence",
+              "Deferring a question to a later note",
             ],
             correctIndex: 0,
             explanation:
@@ -2728,9 +2728,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "How does Inserm's own website title the note about this case?",
             options: [
               "A note on the rules of publication",
-              "A note on the discovery of the extra chromosome in 1959",
-              "A note on the award of honours in French medical research",
-              "A note on the conduct of a named researcher at the Trousseau hospital",
+              "A note on the 1959 extra chromosome",
+              "A note on honours in French research",
+              "A note on a named Trousseau researcher",
             ],
             correctIndex: 0,
             explanation:
@@ -2741,9 +2741,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Which of these is one of the three Aviesan authorship conditions the annex sets out?",
             options: [
               "A substantial role in the work",
-              "Holding the position of head of the department in which the work was carried out",
-              "Being named in the acknowledgements of an earlier paper on the same subject",
-              "Providing the funding under which the reported work was carried out",
+              "Heading the department concerned",
+              "Being thanked in an earlier paper",
+              "Providing the funding for the work",
             ],
             correctIndex: 0,
             explanation:
@@ -2754,9 +2754,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Which of these is ALSO one of those three conditions?",
             options: [
               "Approving the final version",
-              "Supervising the researcher who carried out the experimental work",
-              "Presenting the results at an international conference after publication",
-              "Depositing the underlying data in a publicly accessible archive",
+              "Supervising the researcher",
+              "Presenting it at a conference",
+              "Depositing the underlying data",
             ],
             correctIndex: 0,
             explanation:
@@ -2767,9 +2767,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What kind of bodies does the annex cite for those conditions?",
             options: [
               "International editors' organisations",
-              "National academies of medicine in France, Britain and the United States",
-              "Funding agencies, whose grant conditions set the authorship rules",
-              "Courts that have ruled on authorship disputes in scientific publishing",
+              "National academies in three countries",
+              "Funding agencies and their grants",
+              "Courts that have ruled on authorship",
             ],
             correctIndex: 0,
             explanation:
@@ -2780,9 +2780,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the annex call the case?",
             options: [
               "L'affaire Marthe Gautier",
-              "La controverse de la trisomie 21, matching the Foundation's own press release",
-              "La saisine du collectif de chercheurs, naming the referral rather than the person",
-              "L'affaire Marthe Gauthier, matching the heading on Inserm's listing page",
+              "La controverse trisomie 21",
+              "La saisine du collectif",
+              "L'affaire Marthe Gauthier",
             ],
             correctIndex: 0,
             explanation:
@@ -2793,9 +2793,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Which existing lesson in this catalog already teaches the editors' authorship criteria?",
             options: [
               "Who counts as an author, and who gets thanked",
-              "Credit is a second event, which sets out author order as a format",
-              "Who corrects a record, and with what, which lists the correction instruments",
-              "Three documents on one page, which sorts a prize page into its parts",
+              "Credit is a second event",
+              "Who corrects a record, and with what",
+              "Three documents on one page",
             ],
             correctIndex: 0,
             explanation:
@@ -2806,9 +2806,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this course say the annex is about?",
             options: [
               "How authorship should be handled now",
-              "How authorship was handled in French laboratories in the late 1950s",
-              "Whether the 1959 author line satisfied the criteria it sets out",
-              "Whether the committee itself met the criteria in publishing its opinion",
+              "How authorship was handled in the 1950s",
+              "Whether the 1959 line met the criteria",
+              "Whether the committee met the criteria",
             ],
             correctIndex: 0,
             explanation:
@@ -2819,9 +2819,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What would applying the annex's criteria to the 1959 author line be?",
             options: [
               "An anachronism",
-              "A correction, since the criteria are the instrument that amends an author line",
-              "A citation, since the criteria are published by international editors' bodies",
-              "A referral, since only a committee may apply the criteria to a past paper",
+              "A correction",
+              "A citation",
+              "A referral",
             ],
             correctIndex: 0,
             explanation:
@@ -2832,9 +2832,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the opinion cite in support of its narrative of events?",
             options: [
               "Nothing",
-              "The laboratory notebook, quoted from the entry of 22 May 1958",
-              "The correspondence between Turpin, Lejeune and Gautier from 1957 and 1958",
-              "The printed text of both 1959 communications, reproduced in an annex",
+              "The notebook",
+              "The letters",
+              "The 1959 texts",
             ],
             correctIndex: 0,
             explanation:
@@ -2845,9 +2845,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the Foundation say the committee preferred to established and documented facts?",
             options: [
               "Her rereading and recollections",
-              "The testimony of the collective of researchers who made the referral",
-              "The published index records of the three 1959 papers",
-              "The authorship criteria set out in the annex to its own opinion",
+              "The referring collective's testimony",
+              "The index records of the 1959 papers",
+              "The criteria in its own annex",
             ],
             correctIndex: 0,
             explanation:
@@ -2858,9 +2858,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What is left of that complaint when its heat is removed?",
             options: [
               "A sourcing objection",
-              "An accusation of bad faith against the members of the committee",
-              "A claim that the committee had no authority to consider the referral",
-              "A request that the opinion be withdrawn from the open archive",
+              "An accusation of bad faith",
+              "A denial of its authority",
+              "A withdrawal request",
             ],
             correctIndex: 0,
             explanation:
@@ -2871,9 +2871,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "In what form does the Foundation publish the documents it cites?",
             options: [
               "Photographs and descriptions",
-              "Full transcriptions, deposited alongside the opinion in the open archive",
-              "Certified copies, released to any reader who applies in writing",
-              "Facsimile reprints bound into its 2018 English dossier",
+              "Full transcriptions in HAL",
+              "Certified copies on request",
+              "Facsimiles in its 2018 dossier",
             ],
             correctIndex: 0,
             explanation:
@@ -2884,9 +2884,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this course say neither party to the dispute hands a reader?",
             options: [
               "A workable evidence base",
-              "A statement of its own position in its own words",
-              "A translation of its documents into English",
-              "A named person who will answer questions about the record",
+              "A statement of its position",
+              "English translations of it",
+              "A named contact person",
             ],
             correctIndex: 0,
             explanation:
@@ -2897,9 +2897,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Why does this course say that state of affairs is not a scandal?",
             options: [
               "It is how such disputes normally look",
-              "Because both parties are under no obligation to publish anything at all",
-              "Because the index records supply everything a reader needs",
-              "Because the opinion's open licence makes the other documents unnecessary",
+              "Neither party must publish anything",
+              "The index records supply everything",
+              "The open licence makes the rest moot",
             ],
             correctIndex: 0,
             explanation:
@@ -2910,9 +2910,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Which lesson in this catalog lists the instruments that actually correct a record?",
             options: [
               "Who corrects a record, and with what",
-              "Who counts as an author, and who gets thanked, which sets out the editors' criteria",
-              "Credit is a second event, which treats the crediting as separate from the work",
-              "Format caps, and what they explain, which counts the seats on a prize",
+              "Who counts as an author, and who gets thanked",
+              "Credit is a second event",
+              "Format caps, and what they explain",
             ],
             correctIndex: 0,
             explanation:
@@ -2923,9 +2923,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this course say about an ethics-committee opinion and that list of correction instruments?",
             options: [
               "It is not on the list",
-              "It heads the list, since an institution outranks a journal in correcting a record",
-              "It replaces the list, since an opinion can order any of those instruments used",
-              "It is on the list, but only for papers published by the institute itself",
+              "It heads the list",
+              "It replaces the list",
+              "Partly on the list",
             ],
             correctIndex: 0,
             explanation:
@@ -2936,9 +2936,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does an ethics-committee opinion do instead of correcting a record?",
             options: [
               "Puts an institution's name behind a reading",
-              "Refers the record to the journal that published the disputed paper",
-              "Obliges the awarding bodies to reconsider the honours they gave",
-              "Requires the parties to deposit their documents in a public archive",
+              "Refers the record to the original journal",
+              "Obliges the awarding bodies to reconsider",
+              "Requires the parties to deposit documents",
             ],
             correctIndex: 0,
             explanation:
@@ -2949,9 +2949,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "Which two things does this lesson say should never be confused?",
             options: [
               "Real force and formal power",
-              "An opinion and an annex, which serve different purposes in the same document",
-              "A referral and an autosaisine, which reach a committee by different routes",
-              "A narrative and a finding, which appear in different parts of the opinion",
+              "An opinion and an annex",
+              "A referral and an autosaisine",
+              "A narrative and a finding",
             ],
             correctIndex: 0,
             explanation:
@@ -2962,9 +2962,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What is a sourcing objection?",
             options: [
               "A narrative not saying what it rests on",
-              "A claim that a document's sources are too old to be relied on",
-              "A complaint that a document quotes its sources at excessive length",
-              "A refusal to accept a source published by an interested party",
+              "A claim that its sources are too old",
+              "A complaint that it quotes at length",
+              "Refusing a source from an interested party",
             ],
             correctIndex: 0,
             explanation:
@@ -2975,9 +2975,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What is Aviesan?",
             options: [
               "A French research alliance",
-              "The Inserm ethics committee's standing working group on publication",
-              "The international body that publishes the medical journal editors' criteria",
-              "The French national open archive in which the opinion is deposited",
+              "An Inserm working group",
+              "The editors' criteria body",
+              "The French open archive",
             ],
             correctIndex: 0,
             explanation:
@@ -2988,9 +2988,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this course add to the existing lesson on authorship criteria?",
             options: [
               "An institution reaching for them",
-              "A correction to the criteria, which the annex restates incorrectly",
-              "A demonstration that the criteria applied to author lines in 1959",
-              "A translation of the criteria into French for the first time",
+              "A correction to the criteria",
+              "Proof they applied to 1959 lines",
+              "Their first French translation",
             ],
             correctIndex: 0,
             explanation:
@@ -3001,9 +3001,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does the opinion's first finding say about the context at the time of the discovery?",
             options: [
               "It weighs on the conclusion",
-              "It is irrelevant, since authorship criteria apply equally in every period",
-              "It was not considered, because no contemporary document was available",
-              "It was raised by the Foundation rather than by the committee",
+              "It is irrelevant to authorship",
+              "It was not considered at all",
+              "Only the Foundation raised it",
             ],
             correctIndex: 0,
             explanation:
@@ -3014,9 +3014,9 @@ Inserm. (n.d.). *Notes du Comité d'éthique en réponse aux saisines*. https://
             prompt: "What does this course say a reader is asked to accept the opinion's narrative on?",
             options: [
               "The committee's authority",
-              "The documents reproduced in its annex, which readers may check for themselves",
-              "The agreement of both parties, who quote the same sentences",
-              "The open licence under which the document is deposited",
+              "The documents in its annex",
+              "The agreement of both parties",
+              "The open licence it carries",
             ],
             correctIndex: 0,
             explanation:
@@ -3169,9 +3169,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which organisation contests the Inserm ethics committee's 2014 opinion?",
             options: [
               "The Fondation Jérôme Lejeune",
-              "Aviesan, whose authorship conditions the opinion's annex restates",
-              "The Académie des sciences, which published the two 1959 communications",
-              "The collective of researchers whose referral produced the opinion",
+              "Aviesan",
+              "The Académie des sciences",
+              "The collective of researchers behind the referral",
             ],
             correctIndex: 0,
             explanation:
@@ -3182,9 +3182,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Why does this course name the contesting party in full?",
             options: [
               "It is the most checkable thing here",
-              "Because French media law obliges a publication to name the party it reports on",
-              "Because the Inserm opinion requires that any objector be identified by name",
-              "Because the Foundation asked to be named in any account of the dispute",
+              "French media law requires it",
+              "The Inserm opinion requires it",
+              "The Foundation asked to be named",
             ],
             correctIndex: 0,
             explanation:
@@ -3195,9 +3195,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "How many of the Foundation's texts did this course fetch and read in full?",
             options: [
               "Three",
-              "One, the 21 page English dossier of September 2018",
-              "Seven, one for each of the archive documents listed in the dossier's annexes",
-              "None, because all of its published statements are behind a paywall",
+              "One",
+              "Seven",
+              "None",
             ],
             correctIndex: 0,
             explanation:
@@ -3208,9 +3208,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What date does the Foundation's right of reply carry?",
             options: [
               "26 September 2014",
-              "29 September 2014, which is the date of its press release signed by Lucien Israël",
-              "14 September 2014, which is when the Foundation says the opinion was made public",
-              "September 2018, which is the date of its English dossier",
+              "29 September 2014",
+              "14 September 2014",
+              "September 2018",
             ],
             correctIndex: 0,
             explanation:
@@ -3221,9 +3221,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Who signed the Foundation's press release of 29 September 2014?",
             options: [
               "Professeur Lucien Israël",
-              "The members of the Inserm ethics committee, jointly with the Foundation",
-              "Raymond Turpin, as the surviving head of the department at Trousseau",
-              "The collective of researchers who had referred the question that year",
+              "Raymond Turpin",
+              "The Inserm ethics committee",
+              "The referring collective of researchers",
             ],
             correctIndex: 0,
             explanation:
@@ -3234,9 +3234,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "How long is the Foundation's English dossier of September 2018?",
             options: [
               "21 pages",
-              "Seven pages, the same length as the Inserm ethics committee's opinion",
-              "Two pages, one for each of the 1959 communications it discusses",
-              "Over a hundred pages, including full transcriptions of the archive documents",
+              "Seven pages",
+              "Two pages",
+              "Over a hundred pages",
             ],
             correctIndex: 0,
             explanation:
@@ -3246,10 +3246,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "Who does the Foundation say asked Lejeune to sign the January 1959 paper first?",
             options: [
-              "Turpin",
-              "Marthe Gautier, who was travelling when the note was submitted",
-              "The Académie des sciences, following its convention for communications",
-              "The Kennedy Foundation, whose visiting team had surveyed his colleagues",
+              "Raymond Turpin, head of the department",
+              "Marthe Gautier",
+              "The Académie des sciences",
+              "The Kennedy Foundation",
             ],
             correctIndex: 0,
             explanation:
@@ -3260,9 +3260,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does the Foundation say Lejeune never did?",
             options: [
               "Attribute the discovery to himself",
-              "Acknowledge Marthe Gautier's part in the work, in public or in private",
-              "Accept an honour for the discovery, including the Kennedy Prize of 1962",
-              "Publish on the subject before the two 1959 communications appeared",
+              "Acknowledge Marthe Gautier's part",
+              "Accept the Kennedy Prize of 1962",
+              "Publish on the subject before 1959",
             ],
             correctIndex: 0,
             explanation:
@@ -3273,9 +3273,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does the Foundation say the contribution of the cell-culture technique is NOT?",
             options: [
               "The essence of the discovery",
-              "A contribution worth acknowledging, which is why Lejeune never mentioned it",
-              "An American technique, since the method was already in use in French laboratories",
-              "A condition of the discovery, which is the phrase the Inserm opinion uses",
+              "A contribution worth acknowledging",
+              "An American technique",
+              "A condition of the discovery",
             ],
             correctIndex: 0,
             explanation:
@@ -3286,9 +3286,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "How does the Foundation define a discoverer?",
             options: [
               "The one who carried the hypothesis",
-              "The one who first saw the result, whoever else later explained what it meant",
-              "The person whose name the head of a department places first on a publication",
-              "The author who meets the three authorship conditions set out in the opinion's annex",
+              "The first person to see the result",
+              "The author meeting the annex's three conditions",
+              "Whoever is named first on the paper",
             ],
             correctIndex: 0,
             explanation:
@@ -3299,9 +3299,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What analogy does the Foundation's 2018 dossier use for the discovery?",
             options: [
               "Columbus and a sailor",
-              "A photograph and the slide it was made from, one portable and one not",
-              "A prize citation and the author line of the paper behind it",
-              "An author line and the index record that reproduces it",
+              "A photograph and a slide",
+              "A prize citation and a paper",
+              "An author line and an index record",
             ],
             correctIndex: 0,
             explanation:
@@ -3312,9 +3312,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which verb from the Inserm opinion does the 2018 dossier quote back at it?",
             options: [
               "Observe",
-              "Discover, which the opinion applies to Marthe Gautier throughout its narrative",
-              "Establish, which the opinion uses about the link to intellectual disability",
-              "Promote, which the opinion applies to Lejeune in its second finding",
+              "Discover",
+              "Establish",
+              "Promote",
             ],
             correctIndex: 0,
             explanation:
@@ -3325,9 +3325,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which step of the neighbouring course's reading method concerns the crediting verb?",
             options: [
               "Its second step",
-              "Its fifth step, which is about naming who contests what and then stopping",
-              "Its first step, which sorts a prize page into its component documents",
-              "Its fourth step, which insists that a count be printed with its counting rule",
+              "Its fifth step",
+              "Its first step",
+              "Its fourth step",
             ],
             correctIndex: 0,
             explanation:
@@ -3337,10 +3337,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What does this course say a mature credit dispute looks like?",
             options: [
-              "Both sides arguing over one verb",
-              "One side publishing documents while the other refuses to respond at all",
-              "Two parties agreeing on the meaning of the words and disputing the dates",
-              "An institution correcting a record that neither party had noticed",
+              "Both parties arguing over one crediting verb",
+              "One side publishing, the other silent",
+              "Agreement on words, dispute over dates",
+              "An institution correcting a record",
             ],
             correctIndex: 0,
             explanation:
@@ -3351,9 +3351,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which two definitions does this lesson set side by side?",
             options: [
               "A discoverer and an author",
-              "A discovery and an observation, as the two 1959 titles use them",
-              "A referral and an opinion, as Inserm's own page distinguishes them",
-              "A citation and an acknowledgement, as prize pages print them",
+              "A discovery and an observation",
+              "A referral and an opinion",
+              "A citation and an acknowledgement",
             ],
             correctIndex: 0,
             explanation:
@@ -3363,10 +3363,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "Which of those two definitions does this course say is wrong?",
             options: [
-              "Neither",
-              "The Foundation's, because it was written to defend a particular person",
-              "The annex's, because it applies a modern standard to a 1959 paper",
-              "Both, because a discovery cannot be defined by rule at all",
+              "Neither of them",
+              "The Foundation's",
+              "The annex's",
+              "Both of them",
             ],
             correctIndex: 0,
             explanation:
@@ -3376,10 +3376,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What question does the Foundation's definition of a discoverer answer?",
             options: [
-              "Who earns the title",
-              "Whose name belongs on the author line of a published paper",
-              "Which contributions a journal requires to be acknowledged",
-              "How an institution should correct a record it considers wrong",
+              "Who earns the title of discoverer",
+              "Whose name belongs on a paper",
+              "What a journal must acknowledge",
+              "How a record should be corrected",
             ],
             correctIndex: 0,
             explanation:
@@ -3390,9 +3390,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What is a right of reply?",
             options: [
               "A published response to a damaging statement",
-              "A court authorisation to record what is said at a public meeting",
-              "A formal referral of a question to an institution's ethics committee",
-              "A correction issued by a journal at an author's request",
+              "A court authorisation to record a public meeting",
+              "A formal referral to an ethics committee",
+              "A correction a journal issues at an author's request",
             ],
             correctIndex: 0,
             explanation:
@@ -3402,10 +3402,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What does this course say about writing analogies into an argument?",
             options: [
-              "They can be tested",
-              "They settle a definition, which is why the dossier uses one",
-              "They have no place in a document about scientific credit",
-              "They are the only way to define a word like discoverer",
+              "They can be tested, case against case",
+              "They settle a definition outright",
+              "They have no place in a scientific argument",
+              "They are the only way to define discoverer",
             ],
             correctIndex: 0,
             explanation:
@@ -3416,9 +3416,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course mean by reported speech?",
             options: [
               "Writing a claim as a claim",
-              "Quoting a document only in the language it was written in",
-              "Reproducing a party's statement without naming the party",
-              "Summarising a long document in the course's own words",
+              "Quoting in the original language",
+              "Quoting a party without naming it",
+              "Summarising in the course's words",
             ],
             correctIndex: 0,
             explanation:
@@ -3429,9 +3429,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does the Foundation say Turpin's request to sign first did?",
             options: [
               "Named the discoverer for history",
-              "Recorded the order in which the three authors had joined the project",
-              "Complied with a rule the Académie des sciences applied to all communications",
-              "Left the question of the discovery open, to be settled by later papers",
+              "Recorded the order of joining",
+              "Followed an Académie rule",
+              "Left the question of discovery open",
             ],
             correctIndex: 0,
             explanation:
@@ -3441,10 +3441,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What does the Foundation do that the Inserm opinion does not?",
             options: [
-              "Name its evidence",
-              "Quote the two 1959 communications in the language they were printed in",
-              "Publish under a licence permitting any reader to redistribute the text",
-              "State a hedge and a condition alongside each of its conclusions",
+              "Name the evidence it relies on",
+              "Quote the 1959 notes in French",
+              "Publish under an open licence",
+              "Hedge each of its conclusions",
             ],
             correctIndex: 0,
             explanation:
@@ -3455,9 +3455,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "From what date does the Foundation say the laboratory notebook was kept?",
             options: [
               "10 July 1957",
-              "22 May 1958, which is the entry it says records the count of 47",
-              "27 October 1958, the date of the Turpin letter it offers to historians",
-              "5 November 1958, the date of the letter thanking her for excellent preparations",
+              "22 May 1958",
+              "27 October 1958",
+              "5 November 1958",
             ],
             correctIndex: 0,
             explanation:
@@ -3468,9 +3468,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which notebook entry does the Foundation say records a count of 47 chromosomes?",
             options: [
               "22 May 1958",
-              "10 July 1957, the date from which it says the notebook was kept",
-              "16 January 1959, ten days before the first communication appeared",
-              "10 March 1965, the date of the inaugural lecture it quotes",
+              "10 July 1957",
+              "16 January 1959",
+              "10 March 1965",
             ],
             correctIndex: 0,
             explanation:
@@ -3481,9 +3481,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does the Foundation say the Turpin letter reports?",
             options: [
               "She was still counting 46",
-              "That Lejeune had been asked to sign the coming communication first",
-              "That the laboratory had at last obtained a photomicroscope of its own",
-              "That the Académie des sciences had accepted the first communication",
+              "Lejeune was to sign first",
+              "The lab had a photomicroscope",
+              "The Académie accepted the note",
             ],
             correctIndex: 0,
             explanation:
@@ -3494,9 +3494,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "How does the Foundation describe its holding of the Turpin letter?",
             options: [
               "At the disposal of historians",
-              "Deposited in the French national open archive under a Creative Commons licence",
-              "Sealed until the parties to the dispute have agreed on its interpretation",
-              "Reproduced in full as text in the body of its 2018 English dossier",
+              "Deposited in an open archive",
+              "Sealed until the parties agree",
+              "Reproduced in full in the dossier",
             ],
             correctIndex: 0,
             explanation:
@@ -3507,9 +3507,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does the Foundation say Lejeune's letter of 5 November 1958 thanked her for?",
             options: [
               "Excellent preparations",
-              "Her agreement that he should sign the coming communication first",
-              "The photographs she had arranged to have made of the slides",
-              "Her correction of the count from 46 to 47 chromosomes",
+              "Agreeing he would sign first",
+              "Arranging the photographs",
+              "Correcting the count to 47",
             ],
             correctIndex: 0,
             explanation:
@@ -3520,9 +3520,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What date does the Foundation give for the inaugural lecture it quotes?",
             options: [
               "10 March 1965",
-              "3 October 1969, the date of the award presented in San Francisco",
-              "26 January 1959, the date of the first communication",
-              "14 September 2014, the date it gives for the opinion's publication",
+              "3 October 1969",
+              "26 January 1959",
+              "14 September 2014",
             ],
             correctIndex: 0,
             explanation:
@@ -3533,9 +3533,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which two qualities does the Foundation say the 1965 lecture credited her with?",
             options: [
               "Skill and tenacity",
-              "Precision and speed, over the months during which the counts were made",
-              "Independence and originality, which it says the opinion overlooks",
-              "Discretion and loyalty, in the years after the discovery was published",
+              "Precision and speed",
+              "Originality and drive",
+              "Discretion and loyalty",
             ],
             correctIndex: 0,
             explanation:
@@ -3546,9 +3546,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "How does the Foundation publish the documents it cites?",
             options: [
               "As photographs in an album",
-              "As transcriptions in the body of its 2018 dossier, with provenance for each",
-              "As certified copies sent to any reader who applies in writing",
-              "As deposits in the same open archive that holds the Inserm opinion",
+              "As transcriptions in the dossier",
+              "As certified copies on request",
+              "As deposits in an open archive",
             ],
             correctIndex: 0,
             explanation:
@@ -3558,10 +3558,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "How many of the Foundation's document images did this course open?",
             options: [
-              "None",
-              "All of them, which is how the discrepancy in the letter's date was found",
-              "The notebook page only, which is the centre of the case about who counted first",
-              "The 1965 lecture extract only, because it is the one that credits her",
+              "None of them",
+              "All of them",
+              "The notebook page",
+              "The lecture extract",
             ],
             correctIndex: 0,
             explanation:
@@ -3572,9 +3572,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What date does the body text of the 2018 dossier give for the Turpin letter?",
             options: [
               "27 October 1958",
-              "17 October 1958, which is the date printed on the caption of its third annex",
-              "22 May 1958, the date of the notebook entry recording the count",
-              "20 October 1958, the date of a letter from Gautier to Lejeune",
+              "17 October 1958",
+              "22 May 1958",
+              "20 October 1958",
             ],
             correctIndex: 0,
             explanation:
@@ -3585,9 +3585,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What date does the caption of the dossier's third annex give for that same letter?",
             options: [
               "17 October 1958",
-              "27 October 1958, which is the date the body text gives twice",
-              "5 November 1958, the date of the letter thanking her for her preparations",
-              "No date at all, which is why the body text has to supply one",
+              "27 October 1958",
+              "5 November 1958",
+              "No date at all",
             ],
             correctIndex: 0,
             explanation:
@@ -3598,9 +3598,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which of the two dates does this course use when reporting the Foundation's claim, and why?",
             options: [
               "The body text's, given twice",
-              "The caption's, because a caption sits next to the document it labels",
-              "Neither, because the course refuses to date a document it has not read",
-              "Both, printed together wherever the letter is mentioned",
+              "The caption's, beside the document",
+              "Neither, as it is unread",
+              "Both, printed together",
             ],
             correctIndex: 0,
             explanation:
@@ -3611,9 +3611,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What rule does this lesson draw from the Foundation's archive?",
             options: [
               "Offering is not publishing",
-              "A document published as an image is more reliable than a transcription",
-              "An interested party's evidence should be discounted until independently confirmed",
-              "A party that names its evidence has thereby proved its case",
+              "An image beats a transcription",
+              "Discount an interested party",
+              "Naming evidence proves a case",
             ],
             correctIndex: 0,
             explanation:
@@ -3624,9 +3624,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course say a party that lists its evidence has done?",
             options: [
               "More than one that lists none",
-              "Enough to shift the burden of proof onto the other side of the dispute",
-              "Less than one that publishes a narrative without citations",
-              "Nothing, unless the documents are deposited under an open licence",
+              "Enough to shift the burden of proof",
+              "Less than an uncited narrative",
+              "Nothing, without an open licence",
             ],
             correctIndex: 0,
             explanation:
@@ -3637,9 +3637,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does the French press release say about Lejeune's age relative to Marthe Gautier's?",
             options: [
               "He was the younger",
-              "He was the elder, which is why he was asked to sign first",
-              "They were the same age, both having been born in 1925",
-              "It gives no ages, which is why the English version supplies them",
+              "He was the elder",
+              "They were the same age",
+              "It gives no ages",
             ],
             correctIndex: 0,
             explanation:
@@ -3650,9 +3650,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "How does the 2018 English version render that same point?",
             options: [
               "As her youngest son",
-              "As her junior colleague in the department at Trousseau",
-              "As her senior by several years in the university hierarchy",
-              "It leaves the point out, which is why the course quotes the French",
+              "As her junior colleague",
+              "As her senior by years",
+              "It leaves the point out",
             ],
             correctIndex: 0,
             explanation:
@@ -3663,9 +3663,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which version does this course quote where the French and English differ?",
             options: [
               "The French",
-              "The English, since the course and its learners read English",
-              "Both, printed side by side wherever a difference appears",
-              "Neither, since a document that contradicts itself cannot be quoted",
+              "The English",
+              "Both together",
+              "Neither",
             ],
             correctIndex: 0,
             explanation:
@@ -3676,9 +3676,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this lesson mean by provenance?",
             options: [
               "Where a document came from",
-              "The age of a document, measured from the date it was written",
-              "The institution that currently owns the physical original",
-              "The language a document was originally composed in",
+              "The age of a document",
+              "Who owns the physical original",
+              "A document's original language",
             ],
             correctIndex: 0,
             explanation:
@@ -3689,9 +3689,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course call a mismatch between a document's description and its label?",
             options: [
               "A caption discrepancy",
-              "A sourcing objection, which is what the Foundation makes against the opinion",
-              "An anachronism, which is applying a later standard to an earlier event",
-              "A hedge, which is wording that limits how strong a claim is",
+              "A sourcing objection",
+              "An anachronism",
+              "A hedged claim",
             ],
             correctIndex: 0,
             explanation:
@@ -3702,9 +3702,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Why does this course write the Foundation's evidence in reported speech?",
             options: [
               "It has read none of the documents",
-              "Because the Foundation objects to being quoted directly in secondary accounts",
-              "Because the documents are in French and the course is written in English",
-              "Because the Inserm opinion disputes each of them individually",
+              "The Foundation objects to quotation",
+              "The documents are in French",
+              "Inserm disputes each of them",
             ],
             correctIndex: 0,
             explanation:
@@ -3715,9 +3715,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What was the Bordeaux meeting of early 2014 to present Marthe Gautier with?",
             options: [
               "A medal",
-              "The Kennedy Prize, fifty two years after it had gone to Lejeune",
-              "An honorary chair at the Académie nationale de médecine",
-              "A corrected author line for the first of the two 1959 communications",
+              "The Kennedy Prize",
+              "An honorary chair",
+              "A corrected author line",
             ],
             correctIndex: 0,
             explanation:
@@ -3728,9 +3728,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Who does the Foundation say it arranged to record her words?",
             options: [
               "A bailiff",
-              "A journalist, who was to publish a transcript afterwards",
-              "A member of its own staff, sent to the meeting to take notes",
-              "The meeting's organisers, at the Foundation's written request",
+              "A journalist",
+              "A staff member",
+              "The organisers",
             ],
             correctIndex: 0,
             explanation:
@@ -3741,9 +3741,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Under what authority does the Foundation say that recording was arranged?",
             options: [
               "A court authorisation",
-              "The meeting organisers' standing permission to record all sessions",
-              "A provision of French media law governing rights of reply",
-              "An agreement with Inserm reached before the opinion was published",
+              "The organisers' permission",
+              "French media law",
+              "An agreement with Inserm",
             ],
             correctIndex: 0,
             explanation:
@@ -3754,9 +3754,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What stated reason does the Foundation give for the recording?",
             options: [
               "To defend a reputation against defamation",
-              "To obtain a record of the talk for its archive of documents on the discovery",
-              "To supply the Inserm ethics committee with evidence for its referral",
-              "To allow the meeting's organisers to publish an accurate transcript",
+              "To keep a record of the talk for its archive",
+              "To give the ethics committee evidence",
+              "To let the organisers publish a transcript",
             ],
             correctIndex: 0,
             explanation:
@@ -3767,9 +3767,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What month does the Foundation say it learned she was going to speak?",
             options: [
               "February 2014",
-              "January 2014, which is when a podcast transcript places the meeting",
-              "September 2014, when the opinion was published",
-              "March 2009, when the anniversary article appeared",
+              "January 2014",
+              "September 2014",
+              "March 2009",
             ],
             correctIndex: 0,
             explanation:
@@ -3780,9 +3780,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does that February 2014 date actually date, read precisely?",
             options: [
               "The Foundation's learning",
-              "The meeting in Bordeaux at which the medal was to be presented",
-              "The court's grant of the authorisation to record",
-              "The publication of the opinion the Foundation was responding to",
+              "The Bordeaux meeting itself",
+              "The court's authorisation",
+              "The opinion's publication",
             ],
             correctIndex: 0,
             explanation:
@@ -3793,9 +3793,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which meeting does the Foundation name as the one she was to address?",
             options: [
               "The Assises de génétique humaine et médicale",
-              "The annual meeting of the American Society of Human Genetics",
-              "A session of the Académie des sciences in Paris",
-              "An Inserm ethics committee hearing on the referral",
+              "The American Society of Human Genetics meeting",
+              "A session of the Académie des sciences",
+              "A hearing of the Inserm ethics committee",
             ],
             correctIndex: 0,
             explanation:
@@ -3806,9 +3806,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Why does this course call the bailiff episode unusually well evidenced?",
             options: [
               "The party that did it says so",
-              "Because a court record of the authorisation was fetched and read",
-              "Because both parties published identical accounts of the same week",
-              "Because a contemporary news report of February 2014 was obtained",
+              "A court record was read",
+              "Both parties published one account",
+              "A February 2014 report was obtained",
             ],
             correctIndex: 0,
             explanation:
@@ -3819,9 +3819,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which month does the Scientific American podcast transcript place the Bordeaux meeting in?",
             options: [
               "January 2014",
-              "February 2014, which is the month the Foundation's own sentence names",
-              "September 2014, the month the opinion was made public",
-              "March 2013, when an earlier interview was given",
+              "February 2014",
+              "September 2014",
+              "March 2013",
             ],
             correctIndex: 0,
             explanation:
@@ -3832,9 +3832,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "How many bailiffs does the podcast transcript report?",
             options: [
               "Two",
-              "One, sent with a mandate to record the speech and depart",
-              "Four, two for the hotel and two for the conference hall",
-              "None, since the transcript says the recording was made by the organisers",
+              "One",
+              "Four",
+              "None",
             ],
             correctIndex: 0,
             explanation:
@@ -3845,9 +3845,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "At what hour does the transcript say the bailiffs were waiting?",
             options: [
               "Seven in the morning",
-              "Immediately before the talk, in the hall where it was to be given",
-              "The previous evening, at the meeting's opening reception",
-              "The following day, when the medal was presented privately",
+              "Just before the talk",
+              "The previous evening",
+              "The following day",
             ],
             correctIndex: 0,
             explanation:
@@ -3857,10 +3857,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What does the transcript say happened to her talk?",
             options: [
-              "It was cancelled",
-              "It went ahead and was recorded by the bailiffs as they had been authorised to do",
-              "It was moved to a closed session from which the bailiffs were excluded",
-              "It was replaced by a reading of the Inserm ethics committee's opinion",
+              "It was cancelled by the organisers",
+              "It went ahead and was recorded",
+              "It moved to a closed session",
+              "It was replaced by a reading",
             ],
             correctIndex: 0,
             explanation:
@@ -3871,9 +3871,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "When does the transcript say the medal was presented?",
             options: [
               "The following day",
-              "At the session for which it had been scheduled, after the talk was cancelled",
-              "Not at all, because the organisers withdrew it once the bailiffs arrived",
-              "In September 2014, after the Inserm opinion was published",
+              "At its scheduled session",
+              "Not at all",
+              "In September 2014",
             ],
             correctIndex: 0,
             explanation:
@@ -3884,9 +3884,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Why could this course not settle the date of the Bordeaux meeting?",
             options: [
               "The 2014 news report was refused",
-              "Because no contemporary report of the meeting was ever published",
-              "Because the Foundation declined to confirm the date when asked",
-              "Because the meeting's own programme is no longer available online",
+              "No report was ever published",
+              "The Foundation would not confirm",
+              "The programme is offline",
             ],
             correctIndex: 0,
             explanation:
@@ -3897,9 +3897,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What wording does this course use for the date of the Bordeaux meeting?",
             options: [
               "Early 2014",
-              "January 2014, following the podcast transcript",
-              "February 2014, following the Foundation's press release",
-              "No date at all, since the two sources disagree",
+              "January 2014",
+              "February 2014",
+              "No date at all",
             ],
             correctIndex: 0,
             explanation:
@@ -3910,9 +3910,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course take from the podcast transcript?",
             options: [
               "The sequence of events",
-              "The words of the people the transcript interviews, quoted in full",
-              "Its account of what her 2009 article argued, quoted as her position",
-              "Nothing, because a podcast transcript is not a usable source",
+              "Its interviewees' words",
+              "Her 2009 article's argument",
+              "Nothing at all",
             ],
             correctIndex: 0,
             explanation:
@@ -3923,9 +3923,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Whom does the podcast transcript name that this course deliberately leaves out?",
             options: [
               "Organisers, a commentator and a relative",
-              "The members of the Inserm ethics committee who signed the opinion",
-              "The collective of researchers who referred the question in 2014",
-              "The bailiffs, whose names appear on the court authorisation",
+              "The members of the Inserm ethics committee",
+              "The collective that made the referral",
+              "The bailiffs named in the authorisation",
             ],
             correctIndex: 0,
             explanation:
@@ -3936,9 +3936,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does the podcast transcript say the bailiffs did to the story?",
             options: [
               "Made it widely known",
-              "Ended it, since she never spoke about the discovery again afterwards",
-              "Settled it, by producing a record of what she actually said",
-              "Delayed it, until the Inserm opinion appeared later that year",
+              "Ended it for good",
+              "Settled it with a record",
+              "Delayed it until the opinion",
             ],
             correctIndex: 0,
             explanation:
@@ -3949,9 +3949,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What do the Foundation's texts say instead about the aftermath of that week?",
             options: [
               "That its intuition was right",
-              "That the recording was never used, because nothing defamatory was said",
-              "That the organisers apologised for cancelling the talk",
-              "That the medal should not have been awarded at all",
+              "That the recording went unused",
+              "That the organisers apologised",
+              "That the medal was undeserved",
             ],
             correctIndex: 0,
             explanation:
@@ -3962,9 +3962,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What is a huissier?",
             options: [
               "A French judicial officer",
-              "A court-appointed expert who assesses scientific evidence in a dispute",
-              "A clerk of a learned academy who records what is said at its sessions",
-              "A lawyer instructed to bring a defamation action on a client's behalf",
+              "A court-appointed expert",
+              "A clerk of a learned academy",
+              "A defamation lawyer",
             ],
             correctIndex: 0,
             explanation:
@@ -3974,10 +3974,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What is the question this course says everybody argues about?",
             options: [
-              "Who first counted 47",
-              "Whether the Kennedy Prize should have been shared three ways in 1962",
-              "Whether the surname was misspelled by the academy or by the indexer",
-              "Whether an ethics committee may issue an opinion on a historical dispute",
+              "Who first counted 47 chromosomes",
+              "Whether the 1962 prize should be shared",
+              "Who misspelled the surname",
+              "Whether the committee could rule",
             ],
             correctIndex: 0,
             explanation:
@@ -3987,10 +3987,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What does this course conclude about who first counted 47 chromosomes?",
             options: [
-              "It does not know",
-              "That Lejeune did, on the evidence of the notebook entry of 22 May 1958",
-              "That she did, on the evidence of the Inserm ethics committee's first finding",
-              "That the question is meaningless, since counting is not discovering",
+              "It does not know, and says why",
+              "Lejeune did, per the notebook",
+              "She did, per the first finding",
+              "The question is meaningless",
             ],
             correctIndex: 0,
             explanation:
@@ -4001,9 +4001,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Where was Marthe Gautier's own account of the discovery published?",
             options: [
               "Médecine/Sciences in 2009",
-              "The Comptes rendus of the Académie des sciences, alongside the 1959 notes",
-              "The Fondation Jérôme Lejeune's 2018 dossier, which reproduces it in full",
-              "The Inserm ethics committee's 2014 opinion, as an annex",
+              "The Comptes rendus, in 1959",
+              "The Foundation's 2018 dossier",
+              "An annex to the 2014 opinion",
             ],
             correctIndex: 0,
             explanation:
@@ -4014,9 +4014,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which pages carry her 2009 article?",
             options: [
               "311 to 315",
-              "602 to 603, the pages of the first 1959 communication",
-              "119 to 120, the pages of the 1969 presentation address",
-              "256 to 265, the pages of the team's April 1959 paper",
+              "602 to 603",
+              "119 to 120",
+              "256 to 265",
             ],
             correctIndex: 0,
             explanation:
@@ -4027,9 +4027,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Why has this course not read her 2009 article?",
             options: [
               "The full text returns an error",
-              "Because it is in French and the course reads only English sources",
-              "Because the Foundation holds the rights and has refused permission",
-              "Because the journal withdrew it after the 2014 opinion was published",
+              "It is written in French",
+              "The Foundation refused permission",
+              "The journal withdrew it",
             ],
             correctIndex: 0,
             explanation:
@@ -4040,9 +4040,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "To whom does every characterisation of her 2009 account in this course belong?",
             options: [
               "Whoever made it",
-              "To the course, which has read the article and summarises it",
-              "To the Inserm ethics committee, whose narrative rests on it",
-              "To nobody, since the course omits all characterisations of it",
+              "To the course itself",
+              "To the Inserm committee",
+              "To nobody",
             ],
             correctIndex: 0,
             explanation:
@@ -4052,10 +4052,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "Which of these does this course explicitly NOT say?",
             options: [
-              "That Lejeune took anything",
-              "That the two 1959 notes carry three names in one order",
-              "That an ethics opinion corrects no record",
-              "That the Foundation names the documents it relies on",
+              "That Lejeune took anything from her",
+              "That both notes share one order",
+              "That an opinion corrects no record",
+              "That the Foundation names its evidence",
             ],
             correctIndex: 0,
             explanation:
@@ -4066,9 +4066,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course say about whether the Inserm committee was right?",
             options: [
               "It says neither",
-              "That it was right, since its opinion is the strongest document in the case",
-              "That it was wrong, since it cites no document for its narrative",
-              "That the question is settled by the Foundation's right of reply",
+              "That it was right",
+              "That it was wrong",
+              "The reply settles it",
             ],
             correctIndex: 0,
             explanation:
@@ -4079,9 +4079,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course say it HAS established about the 1959 author lines?",
             options: [
               "Two orders in one year",
-              "That the order on the January note was corrected in March",
-              "That Turpin chose the order without consulting the other two",
-              "That the Académie des sciences imposed the order on all communications",
+              "The order was later corrected",
+              "Turpin chose the order alone",
+              "The Académie imposed the order",
             ],
             correctIndex: 0,
             explanation:
@@ -4092,9 +4092,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course say it has established about the honours?",
             options: [
               "Two, each in one man's name",
-              "That both were awarded specifically for the 1959 discovery",
-              "That neither awarding body published a citation for its award",
-              "That the Inserm opinion lists every honour it considers regrettable",
+              "Both were for the discovery",
+              "Neither body published a citation",
+              "The opinion lists every honour",
             ],
             correctIndex: 0,
             explanation:
@@ -4105,9 +4105,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What would settle the question of the printed 1959 misspelling?",
             options: [
               "The Gallica scan past its captcha",
-              "The Foundation's archive album, which reproduces the printed communication",
-              "The Inserm opinion, which states what the errors were",
-              "The index record of the March note, which spells the name correctly",
+              "The Foundation's archive album",
+              "The Inserm opinion's account",
+              "The March note's index record",
             ],
             correctIndex: 0,
             explanation:
@@ -4118,9 +4118,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What would settle the question of who counted first?",
             options: [
               "The documents as legible text, plus her article",
-              "A further opinion from the Inserm ethics committee on the same referral",
-              "The Kennedy Foundation's record of the 1962 award",
-              "The presentation address for the 1969 William Allan Memorial Award",
+              "A further opinion from the Inserm committee",
+              "The Kennedy Foundation's 1962 award record",
+              "The presentation address for the 1969 award",
             ],
             correctIndex: 0,
             explanation:
@@ -4131,9 +4131,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What would settle what the 1962 prize was formally awarded for?",
             options: [
               "The awarding body's own record",
-              "The Foundation's transcript of the letter announcing the award",
-              "The Inserm opinion's sentence about the award of various honours",
-              "The presentation address printed in an American journal in 1970",
+              "The Foundation's letter transcript",
+              "The Inserm opinion's sentence",
+              "The 1970 presentation address",
             ],
             correctIndex: 0,
             explanation:
@@ -4144,9 +4144,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What would settle what was said at the 1969 award?",
             options: [
               "The presentation address",
-              "The bibliographic record of that address, which this course already has",
-              "The Inserm opinion, which discusses the honours in its third finding",
-              "The Foundation's 2018 dossier, which quotes the address at length",
+              "Its bibliographic record",
+              "The Inserm opinion",
+              "The Foundation's dossier",
             ],
             correctIndex: 0,
             explanation:
@@ -4157,9 +4157,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What would settle the date of the Bordeaux meeting?",
             options: [
               "The February 2014 news report",
-              "The Foundation's press release, which dates the whole episode precisely",
-              "The podcast transcript, which places the meeting in January 2014",
-              "The court authorisation, which carries the date the recording was permitted",
+              "The Foundation's press release",
+              "The podcast transcript",
+              "The court authorisation",
             ],
             correctIndex: 0,
             explanation:
@@ -4170,9 +4170,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course say a properly written open question looks like?",
             options: [
               "A specific document in a specific place",
-              "A summary of what each party claims, with the stronger claim marked",
-              "A statement that the evidence is inconclusive, with no further detail",
-              "A list of the people who could be asked to resolve it",
+              "Each party's claims, the stronger marked",
+              "A statement that evidence is inconclusive",
+              "A list of people who could resolve it",
             ],
             correctIndex: 0,
             explanation:
@@ -4196,9 +4196,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which catalog course sets an author line against a prize in the case of Esther Lederberg?",
             options: [
               "The Paper and the Prize",
-              "What the Citation Records, which works prize pages as three documents",
-              "Who Gets Named, which supplies the general apparatus of credit",
-              "Who Built the Blood Bank, which corrects a flattering story",
+              "What the Citation Records",
+              "Who Gets Named",
+              "Who Built the Blood Bank",
             ],
             correctIndex: 0,
             explanation:
@@ -4209,9 +4209,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course call its conclusion?",
             options: [
               "Saying which statements the documents support",
-              "Deciding between the parties on the balance of the evidence",
-              "Deferring the whole question to a future opinion of the committee",
-              "Accepting the account of whichever party published first",
+              "Deciding between the parties on the evidence",
+              "Deferring to a future committee opinion",
+              "Accepting whichever party published first",
             ],
             correctIndex: 0,
             explanation:
@@ -4222,9 +4222,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What temptation does this course name in a live dispute?",
             options: [
               "To decide, because it feels like finishing",
-              "To publish before the other party can respond",
-              "To quote only the documents that support one reading",
-              "To name no party, so that nobody can object",
+              "To publish before the other side responds",
+              "To quote only the documents for one reading",
+              "To name no party, so nobody can object",
             ],
             correctIndex: 0,
             explanation:
@@ -4248,9 +4248,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this lesson call an explicit list of what a course claims and refuses to claim?",
             options: [
               "An accounting",
-              "A provenance chain, which records how each document reached the reader",
-              "A verdict, which is a decision between the parties to a dispute",
-              "A hedge, which is wording that limits how strong a claim is",
+              "A provenance chain",
+              "A verdict",
+              "A hedge",
             ],
             correctIndex: 0,
             explanation:
@@ -4261,9 +4261,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course say a provenance chain decides?",
             options: [
               "How much weight an image can carry",
-              "Whether a document may be quoted in a course at all",
-              "Which party to a dispute a document belongs to",
-              "Whether a translation may be trusted against its original",
+              "Whether a document may be quoted",
+              "Which party a document belongs to",
+              "Whether a translation can be trusted",
             ],
             correctIndex: 0,
             explanation:
@@ -4289,9 +4289,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which of these is a fact about the 1959 record rather than an interpretation of it?",
             options: [
               "Two notes carry three names in one order",
-              "The first name marks the discoverer, which is what the signature convention indicates",
-              "The last name marks the head of the team, so Turpin signed last by right",
-              "The middle name marks a contributor whose part was technical rather than scientific",
+              "The first name marks the discoverer",
+              "The last name marks the head of the team",
+              "The middle name marks a technical contributor",
             ],
             correctIndex: 0,
             explanation:
@@ -4302,9 +4302,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What is the strongest reason this course gives for treating author order as a convention?",
             options: [
               "Three people, two orders, one year",
-              "That the Académie des sciences published no rule about signature order",
-              "That the Inserm opinion declines to interpret the order at all",
-              "That the index records of the two notes disagree about the spelling",
+              "The Académie published no order rule",
+              "The Inserm opinion declines to interpret it",
+              "The index records disagree on spelling",
             ],
             correctIndex: 0,
             explanation:
@@ -4315,9 +4315,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Whose statement of the signature convention does this course test against the record?",
             options: [
               "The Foundation's",
-              "The Inserm ethics committee's, in the annex to its 2014 opinion",
-              "The Académie des sciences', in its rules for communications",
-              "The International Committee of Medical Journal Editors', in its criteria",
+              "The Inserm committee's",
+              "The Académie's",
+              "The Kennedy Foundation's",
             ],
             correctIndex: 0,
             explanation:
@@ -4327,10 +4327,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What was the published claim of the 1959 notes, reduced to its smallest form?",
             options: [
-              "Forty seven against forty six",
-              "That an extra chromosome causes the features of the condition",
-              "That cultured cells can be used to count human chromosomes at all",
-              "That nine children shared a single inherited chromosomal anomaly",
+              "Forty seven chromosomes against forty six",
+              "An extra chromosome causes the condition",
+              "Cultured cells can count chromosomes at all",
+              "Nine children share an inherited anomaly",
             ],
             correctIndex: 0,
             explanation:
@@ -4341,9 +4341,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What did the laboratory's missing equipment change about who could show the evidence?",
             options: [
               "Only the photograph travelled",
-              "Nothing, because the slides could be carried to a conference in a case",
-              "Everything, because without a photograph the result could not be published",
-              "Only the timing, because the photographs delayed the first communication",
+              "Nothing, slides travel in a case",
+              "Everything, publication was blocked",
+              "Only the timing of the first note",
             ],
             correctIndex: 0,
             explanation:
@@ -4354,9 +4354,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "How does this course handle the period term used for the condition in 1959?",
             options: [
               "Quoted only inside sources",
-              "Replaced everywhere with trisomy 21, including inside quotations and titles",
-              "Used in the course's own voice, since it is the term the sources use",
-              "Omitted entirely, with the titles paraphrased to avoid it",
+              "Replaced everywhere, even in titles",
+              "Used in the course's own voice",
+              "Omitted, with titles paraphrased",
             ],
             correctIndex: 0,
             explanation:
@@ -4367,9 +4367,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which spelling error is verified in this course, and where?",
             options: [
               "In the January index record",
-              "On the printed first page of the note of 26 January 1959",
-              "In the title of the Inserm ethics committee's 2014 opinion",
-              "In the author line of the team's April 1959 paper",
+              "On the printed January page",
+              "In the Foundation's press release",
+              "In the April paper's author line",
             ],
             correctIndex: 0,
             explanation:
@@ -4380,9 +4380,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does an index misspelling break?",
             options: [
               "The link between a paper and a name",
-              "The author's legal claim to priority in the discovery reported",
-              "The journal's obligation to print a correction in a later issue",
-              "The chronological order in which a database lists an author's work",
+              "The author's legal claim to priority",
+              "The journal's duty to print a correction",
+              "The order a database lists an author's work",
             ],
             correctIndex: 0,
             explanation:
@@ -4393,9 +4393,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What did this course do when it could not open the printed 1959 page?",
             options: [
               "Narrowed the claim and filed a check",
-              "Reconstructed the printed spelling from the index record of the January note",
-              "Left the misspelling out of the course as unverifiable",
-              "Used the Foundation's 2018 dossier as a description of the printed page",
+              "Reconstructed the spelling from the index",
+              "Left the misspelling out entirely",
+              "Relied on the Foundation's dossier",
             ],
             correctIndex: 0,
             explanation:
@@ -4406,9 +4406,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "In how many documents does this course find her surname spelled with an h?",
             options: [
               "Three",
-              "One, the PubMed record of the note of 26 January 1959",
-              "None, since every document in the case spells it Gautier",
-              "Two, both of them published by the Fondation Jérôme Lejeune",
+              "One",
+              "None",
+              "Two",
             ],
             correctIndex: 0,
             explanation:
@@ -4418,10 +4418,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What is the only source this course has for what the 1962 prize was formally awarded for?",
             options: [
-              "The Foundation",
-              "The Kennedy Foundation's published citation for that year",
-              "The Inserm ethics committee's third finding, which lists the honours",
-              "The presentation address printed in an American journal in 1970",
+              "The Fondation Jérôme Lejeune",
+              "The Kennedy Foundation's citation",
+              "The Inserm opinion's third finding",
+              "The 1970 presentation address",
             ],
             correctIndex: 0,
             explanation:
@@ -4432,8 +4432,8 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does a missing prize citation prevent a reader from doing?",
             options: [
               "Reading the page as three documents",
-              "Establishing that the prize was awarded at all in that year",
-              "Discovering how much money the award carried",
+              "Establishing that the prize was given",
+              "Discovering the sum the award carried",
               "Naming the body that gave the award",
             ],
             correctIndex: 0,
@@ -4445,9 +4445,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does the Foundation say about the relation between the 1962 prize and the discovery?",
             options: [
               "It was for all his work",
-              "It was for the discovery alone, which is why it named one person",
-              "It was for his clinical practice, and the discovery was not considered",
-              "It was shared, with a portion reserved for the Trousseau laboratory",
+              "It was for the discovery alone",
+              "It was for clinical practice",
+              "It was shared with the lab",
             ],
             correctIndex: 0,
             explanation:
@@ -4458,9 +4458,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What is the evidentiary value of a bibliographic record, according to this course?",
             options: [
               "Thin and real",
-              "None, unless the article it describes can also be read",
-              "Complete, since a title summarises the text beneath it",
-              "Variable, depending on which database supplies the record",
+              "None at all",
+              "Complete",
+              "Variable",
             ],
             correctIndex: 0,
             explanation:
@@ -4471,9 +4471,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which body presented the 1969 award named in this course?",
             options: [
               "The American Society of Human Genetics",
-              "The Joseph P. Kennedy Foundation, which had given a prize seven years earlier",
-              "The Académie nationale de médecine, at a session in Paris",
-              "Inserm, whose ethics committee later examined the credit question",
+              "The Joseph P. Kennedy Foundation",
+              "The Académie nationale de médecine",
+              "Inserm, through its ethics committee",
             ],
             correctIndex: 0,
             explanation:
@@ -4483,10 +4483,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "Why does this course name only two honours?",
             options: [
-              "It checked only two",
-              "Because the Inserm opinion lists exactly two in its third finding",
-              "Because the Foundation acknowledges only two in its 2018 dossier",
-              "Because no further honours were awarded before the 2014 referral",
+              "It checked and dated only two",
+              "The opinion lists exactly two",
+              "The Foundation admits only two",
+              "No others were ever awarded",
             ],
             correctIndex: 0,
             explanation:
@@ -4497,9 +4497,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which two acts does the Inserm opinion explicitly separate?",
             options: [
               "Promoting and producing",
-              "Counting and photographing, which were done by different members of the team",
-              "Publishing and indexing, which is where the spelling error arose",
-              "Referring and deciding, which its own procedure keeps apart",
+              "Counting and photographing",
+              "Publishing and indexing",
+              "Referring and deciding",
             ],
             correctIndex: 0,
             explanation:
@@ -4510,9 +4510,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "How many names does the opinion's regret about the honours cover?",
             options: [
               "Two",
-              "One, since only Marthe Gautier's contribution was referred to the committee",
-              "Three, all of the authors named on the two 1959 communications",
-              "None, since the finding speaks of honours in general rather than of names",
+              "One",
+              "Three",
+              "None",
             ],
             correctIndex: 0,
             explanation:
@@ -4522,10 +4522,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What does this course refuse to infer from the fact that Lejeune carried the photographs?",
             options: [
-              "A motive",
-              "That the laboratory had no photomicroscope of its own",
-              "That the photographs were used at conferences and in the media",
-              "That making a result known differs from producing it",
+              "A motive or intention",
+              "A missing photomicroscope",
+              "Use at conferences",
+              "Promoting versus producing",
             ],
             correctIndex: 0,
             explanation:
@@ -4535,10 +4535,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What does Inserm say about the durability of its ethics committee's notes?",
             options: [
-              "They may evolve",
-              "They are final once published, and can be replaced only by a new referral",
-              "They are withdrawn if the party concerned exercises a right of reply",
-              "They are sealed for twenty five years before being deposited in the archive",
+              "They may evolve with new contributions",
+              "They are final once published online",
+              "They are withdrawn after a right of reply",
+              "They are sealed for twenty five years",
             ],
             correctIndex: 0,
             explanation:
@@ -4549,9 +4549,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Why is the licence on the 2014 opinion worth noticing?",
             options: [
               "Any reader can redistribute it",
-              "Because it forbids quotation of more than a few sentences at a time",
-              "Because it restricts reuse to researchers at French institutions",
-              "Because it expires five years after deposit in the archive",
+              "It forbids long quotation",
+              "It limits reuse to French researchers",
+              "It expires after five years",
             ],
             correctIndex: 0,
             explanation:
@@ -4562,9 +4562,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Who put the question about Marthe Gautier's contribution to the Inserm ethics committee?",
             options: [
               "A collective of researchers",
-              "The Fondation Jérôme Lejeune, seeking a ruling on the signature order",
-              "The Académie des sciences, which had published the two communications",
-              "The committee itself, acting on its power to take up questions unprompted",
+              "The Fondation Jérôme Lejeune",
+              "The Académie des sciences",
+              "The committee itself, unprompted",
             ],
             correctIndex: 0,
             explanation:
@@ -4575,9 +4575,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which word in the opinion's first finding do retellings usually drop?",
             options: [
               "Unlikely",
-              "Preponderant, which is the term the finding turns on",
-              "Context, which frames the whole conclusion",
-              "Training, which is what the condition attaches to",
+              "Preponderant",
+              "Context",
+              "Training",
             ],
             correctIndex: 0,
             explanation:
@@ -4588,9 +4588,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What is the opinion's first finding conditional on?",
             options: [
               "The weight given to the technique",
-              "The publication of the laboratory notebook by the Foundation",
-              "The committee receiving further contributions after publication",
-              "The agreement of the Académie des sciences with its conclusion",
+              "Publication of the notebook",
+              "Further contributions arriving",
+              "The Académie des sciences agreeing",
             ],
             correctIndex: 0,
             explanation:
@@ -4600,10 +4600,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "How often does this course discuss the politics named in the opinion's fourth finding?",
             options: [
-              "Once",
-              "Throughout, since the dispute cannot be understood any other way",
-              "Never, because they are outside the subject of the course",
-              "In every section, weighing each party's position against the other",
+              "Once, without argument",
+              "Throughout the course",
+              "Never, as off the subject",
+              "In every single section",
             ],
             correctIndex: 0,
             explanation:
@@ -4614,9 +4614,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course call the strongest objection to the 2014 opinion?",
             options: [
               "It cites no documents",
-              "That the committee had no authority to consider a historical question",
-              "That its findings are hedged and conditional rather than definite",
-              "That it was deposited in an archive five years after it was written",
+              "It lacked authority",
+              "Its findings are hedged",
+              "It was deposited late",
             ],
             correctIndex: 0,
             explanation:
@@ -4627,9 +4627,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does an ethics-committee opinion have, and what does it lack?",
             options: [
               "Force without formal power",
-              "Formal power without any practical force over how a record is read",
-              "Both, which is why it appears among the correction instruments",
-              "Neither, which is why this course treats it as a secondary source",
+              "Formal power without force",
+              "Both, as a correction tool",
+              "Neither, as a secondary source",
             ],
             correctIndex: 0,
             explanation:
@@ -4640,9 +4640,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Why does an opinion about a 1959 paper carry an annex on present-day authorship criteria?",
             options: [
               "The referral asked about publication rules",
-              "Because the committee applied the modern criteria to the 1959 author line",
-              "Because the criteria were already in force when the notes were published",
-              "Because the Foundation requested that the criteria be set out in full",
+              "The committee applied them to the 1959 notes",
+              "The criteria were already in force in 1959",
+              "The Foundation asked for them in full",
             ],
             correctIndex: 0,
             explanation:
@@ -4653,9 +4653,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which single word are the two parties to this dispute fighting over?",
             options: [
               "Observe",
-              "Preponderant, which appears in the opinion's first finding",
-              "Regrettable, which appears in the opinion's third finding",
-              "Contributor, which appears in the Foundation's signature convention",
+              "Preponderant",
+              "Regrettable",
+              "Contributor",
             ],
             correctIndex: 0,
             explanation:
@@ -4666,9 +4666,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course say the two definitions in play are doing?",
             options: [
               "Answering different questions",
-              "Contradicting each other, so that one of them must be wrong",
-              "Restating the same rule in French and in English",
-              "Applying the same criteria to two different papers",
+              "Contradicting each other",
+              "Restating one rule in two languages",
+              "Applying one test to two papers",
             ],
             correctIndex: 0,
             explanation:
@@ -4679,9 +4679,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Which texts of the contesting party did this course read in full?",
             options: [
               "Two 2014 texts and a 2018 dossier",
-              "The archive album of document photographs linked from the dossier",
-              "The laboratory notebook and the Turpin letter it offers to historians",
-              "Its right of reply only, since the other texts repeat it",
+              "The archive album of photographs",
+              "The notebook and the Turpin letter",
+              "Its 2014 right of reply only",
             ],
             correctIndex: 0,
             explanation:
@@ -4692,9 +4692,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What is the difference between the two parties' sourcing failures?",
             options: [
               "One cites nothing, one publishes images",
-              "One writes in French and the other only in English translation",
-              "One is an institution and the other is a private foundation",
-              "There is no difference, since neither party published any document",
+              "One is in French, one in translation",
+              "One is an institution, one a foundation",
+              "None, neither published any document",
             ],
             correctIndex: 0,
             explanation:
@@ -4705,9 +4705,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What internal inconsistency did this course find in the Foundation's 2018 dossier?",
             options: [
               "Two dates for one letter",
-              "Two different spellings of Jérôme Lejeune's own surname",
-              "Two accounts of who asked Lejeune to sign the first paper",
-              "Two different sums given for the personal half of the 1962 prize",
+              "Two spellings of Lejeune",
+              "Two accounts of who asked",
+              "Two sums for the 1962 prize",
             ],
             correctIndex: 0,
             explanation:
@@ -4718,9 +4718,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Why does this course quote the French text where the French and English versions differ?",
             options: [
               "The translation adds sentences",
-              "Because the English version is shorter and omits the argument",
-              "Because French is the language of the 1959 communications",
-              "Because the Foundation publishes only the French version officially",
+              "The English omits the argument",
+              "French is the 1959 language",
+              "Only the French is official",
             ],
             correctIndex: 0,
             explanation:
@@ -4731,9 +4731,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "Why is the bailiff episode not in dispute between the parties?",
             options: [
               "The party that acted reports it",
-              "Because a court record of the authorisation has been published",
-              "Because both parties agree on the date the meeting took place",
-              "Because the recording itself was later released to the press",
+              "A court record has been published",
+              "Both agree on the meeting's date",
+              "The recording was released",
             ],
             correctIndex: 0,
             explanation:
@@ -4743,10 +4743,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "What stays open about the Bordeaux meeting in this course?",
             options: [
-              "Its date",
-              "Whether a bailiff was sent to record what was said",
-              "Whether a court had authorised the recording",
-              "Which organisation arranged for the recording to be made",
+              "The date of the meeting",
+              "Whether a bailiff was sent",
+              "Whether a court authorised it",
+              "Who arranged the recording",
             ],
             correctIndex: 0,
             explanation:
@@ -4757,9 +4757,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course take from the podcast transcript, and what does it leave?",
             options: [
               "Events, not people",
-              "People, not events, since the transcript's interviews are its strongest part",
-              "Both, since the transcript is the only account of that week",
-              "Neither, since a podcast transcript cannot be cited in a course",
+              "People, not events",
+              "Both events and people",
+              "Neither of the two",
             ],
             correctIndex: 0,
             explanation:
@@ -4769,10 +4769,10 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
           {
             prompt: "Which question does this course say none of the documents it can read will settle?",
             options: [
-              "Who counted first",
-              "Which order the three names appear in on the two 1959 notes",
-              "Whether a second honour was presented in San Francisco in 1969",
-              "Whether the Inserm opinion cites documents for its narrative",
+              "Who first counted 47 chromosomes",
+              "The name order on the two 1959 notes",
+              "Whether a 1969 honour was given",
+              "Whether the opinion cites documents",
             ],
             correctIndex: 0,
             explanation:
@@ -4783,9 +4783,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course offer in place of a verdict?",
             options: [
               "A list of what the documents support",
-              "The reading the stronger party's documents support",
-              "A judgment suspended until the Foundation opens its archive",
-              "A summary of each party's position, with no findings of its own",
+              "The stronger party's reading",
+              "A judgment held until the archive opens",
+              "Each party's position, no findings",
             ],
             correctIndex: 0,
             explanation:
@@ -4796,9 +4796,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does a properly written open question name, according to this course?",
             options: [
               "The document that would close it",
-              "The party whose account it would confirm",
-              "The date by which it should be resolved",
-              "The reason each party has for leaving it open",
+              "The party whose account it confirms",
+              "The date by which it should close",
+              "Each party's reason to leave it open",
             ],
             correctIndex: 0,
             explanation:
@@ -4809,9 +4809,9 @@ Gautier, M. (2009). [Fiftieth anniversary of the trisomy 21: Return on a discove
             prompt: "What does this course say is the temptation in a live dispute?",
             options: [
               "To decide, because it feels like finishing",
-              "To publish nothing until every document has been read",
-              "To name no party, so that nobody can object to the account",
-              "To quote both sides at equal length whatever the evidence shows",
+              "To publish nothing until all is read",
+              "To name no party, so nobody objects",
+              "To quote both sides at equal length",
             ],
             correctIndex: 0,
             explanation:

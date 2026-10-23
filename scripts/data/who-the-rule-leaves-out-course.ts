@@ -262,9 +262,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What shape do all three cases in this course share?",
             options: [
               "A general rule removed one person from a record",
-              "A colleague signed his own name to work that a woman had finished on her own",
-              "A court decided that an employer owned the work of everyone it employed",
-              "A government office lost the paperwork that would have recorded the second maker",
+              "A colleague put his own name on a woman's work",
+              "A court ruled that an employer owned all staff work",
+              "An office lost the paperwork naming the second maker",
             ],
             correctIndex: 0,
             explanation:
@@ -275,9 +275,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is the difference between the three cases that this course is built on?",
             options: [
               "The paper each rule left behind",
-              "The seniority of the person who applied it, since one was a chairman and one a manager",
-              "The decade, because one rule dated from the 1940s and the other from the 1970s",
-              "Whether the woman kept working afterwards, since one stayed and one was dismissed",
+              "The rank of whoever applied it",
+              "The decade each rule dates from",
+              "Whether the woman kept working",
             ],
             correctIndex: 0,
             explanation:
@@ -288,9 +288,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What job did Delia Derbyshire hold at the BBC when she made the Doctor Who theme?",
             options: [
               "Studio manager",
-              "Staff composer in the BBC's music department, on a contract that assigned her copyrights",
-              "Freelance arranger, hired for the theme and paid a single fee for the recording",
-              "Senior engineer in charge of the Radiophonic Workshop's equipment and its maintenance",
+              "Staff composer",
+              "Freelance arranger",
+              "Senior engineer",
             ],
             correctIndex: 0,
             explanation:
@@ -300,10 +300,10 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
           {
             prompt: "How did Ron Grainer's theme reach the Radiophonic Workshop?",
             options: [
-              "On one sheet of manuscript, sent from Portugal",
-              "As a full orchestral score delivered in person by the composer at a session in Maida Vale",
-              "As a tape recording of a band playing it, which the Workshop was asked to copy exactly",
-              "As a set of written instructions with no notation at all, later reconstructed by the staff",
+              "On one sheet of A4 manuscript, sent from his home in Portugal",
+              "As a full orchestral score delivered in person",
+              "As a tape of a band playing it, to be copied",
+              "As written instructions with no notation at all",
             ],
             correctIndex: 0,
             explanation:
@@ -314,9 +314,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which phrase does Mark Ayres use for what Grainer left the Workshop to do?",
             options: [
               "Get on with it",
-              "Reproduce the score exactly as written, note for note, without any further invention",
-              "Provide a demonstration tape that a band of session players could then perform live",
-              "Supply the special effects only, while the melody was recorded by conventional means",
+              "Copy it exactly",
+              "Make a demo tape",
+              "Add the effects only",
             ],
             correctIndex: 0,
             explanation:
@@ -327,9 +327,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Who assisted Derbyshire on the original version of the theme, and when was it made?",
             options: [
               "Dick Mills, in August 1963",
-              "Brian Hodgson, in November 1963, in the fortnight before the first episode was broadcast",
-              "Desmond Briscoe, in 1962, during her first weeks on attachment to the Workshop",
-              "Daphne Oram, in 1958, when the Workshop was first set up at the Maida Vale studios",
+              "Brian Hodgson, in November 1963",
+              "Desmond Briscoe, in 1962",
+              "Daphne Oram, in 1958",
             ],
             correctIndex: 0,
             explanation:
@@ -340,9 +340,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did Derbyshire build the sounds of the theme from?",
             options: [
               "Oscillators, filtered noise and cut tape",
-              "A synthesiser keyboard whose presets were chosen to imitate an orchestra of strings",
-              "Recordings of an orchestra, slowed down and layered until the instruments were unrecognisable",
-              "A library of ready-made effects held by the Workshop and assembled into a new order",
+              "A synthesiser keyboard with orchestral presets",
+              "Slowed-down orchestral recordings, layered",
+              "A library of ready-made Workshop effects",
             ],
             correctIndex: 0,
             explanation:
@@ -353,9 +353,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "According to Winter, what did Derbyshire and Mills receive at the time for the theme?",
             options: [
               "No individual credit and no royalties",
-              "A single one-off payment each, agreed with the composer in place of a share of royalties",
-              "A printed credit in the listings magazine but none on screen, and a small royalty share",
-              "Full screen credit as arrangers, with the royalties remaining entirely with the composer",
+              "A one-off payment each, in place of royalties",
+              "A listings credit and a small royalty share",
+              "Screen credit as arrangers, but no royalties",
             ],
             correctIndex: 0,
             explanation:
@@ -366,9 +366,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "In her own words, what did Derbyshire say happened to Grainer's offer of half the royalties?",
             options: [
               "The BBC would not allow it",
-              "She turned it down herself, because she did not want to be paid twice for the same work",
-              "The music publisher refused to register a second name against the composition",
-              "It was paid for two years and then stopped when the theme was re-recorded in stereo",
+              "She turned it down herself",
+              "The publisher refused it",
+              "It stopped after two years",
             ],
             correctIndex: 0,
             explanation:
@@ -379,9 +379,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What has nobody produced in the sixty years since the theme was made?",
             options: [
               "The BBC credit rule in writing",
-              "A recording of the original 1963 version, which was wiped by the BBC along with the tapes",
-              "Any contemporary press coverage of the Workshop, which was closed to journalists",
-              "A single colleague willing to say publicly that she had built the sounds herself",
+              "The original 1963 recording",
+              "Press coverage of the Workshop",
+              "A colleague who backs her account",
             ],
             correctIndex: 0,
             explanation:
@@ -392,9 +392,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What was Ruby Payne-Scott's work, and where?",
             options: [
               "Radiophysics, at the Radiophysics Laboratory in Sydney",
-              "Broadcast engineering, at the Australian Broadcasting Commission's Sydney studios",
-              "Meteorology, at a government weather bureau that shared premises with the university",
-              "University teaching in mathematics, with research carried out during vacations only",
+              "Broadcast engineering, at the ABC in Sydney",
+              "Meteorology, at a government weather bureau",
+              "Mathematics teaching, at a Sydney university",
             ],
             correctIndex: 0,
             explanation:
@@ -405,9 +405,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the National Archives of Australia record about Payne-Scott and Joan Freeman in June 1941?",
             options: [
               "They were the laboratory's first women physicists",
-              "They were the first women in Australia to be granted a physics degree by any university",
-              "They were the first women appointed to the Council of Scientific and Industrial Research",
-              "They were the first women physicists in the world to work on radar for a government",
+              "They were Australia's first women physics graduates",
+              "They were the first women appointed to CSIR",
+              "They were the world's first women radar physicists",
             ],
             correctIndex: 0,
             explanation:
@@ -418,9 +418,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "On what date did the Chairman of CSIRO write the letter this course reads?",
             options: [
               "3 March 1950",
-              "20 February 1950, the same day she sent the written objection that he was answering",
-              "3 August 1945, the day the Superannuation Act amendment received assent",
-              "17 July 1951, the month she resigned before the birth of her first child",
+              "20 February 1950",
+              "3 August 1945",
+              "17 July 1951",
             ],
             correctIndex: 0,
             explanation:
@@ -431,9 +431,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did the regulation quoted in the Chairman's letter say happened to a female officer on marriage?",
             options: [
               "She was deemed to have retired",
-              "She was moved to half pay for a probationary year and then reviewed by the Council",
-              "She was required to give three months' notice before the date of the wedding",
-              "She was barred from any further promotion but kept her permanent appointment",
+              "She was moved to half pay",
+              "She had to give three months' notice",
+              "She was barred from promotion",
             ],
             correctIndex: 0,
             explanation:
@@ -444,9 +444,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did the clause of the Superannuation Act quoted in the letter deem a female officer to have done?",
             options: [
               "Resigned from the date of her marriage",
-              "Forfeited the employer's contributions while keeping her own, with interest, until age sixty",
-              "Transferred her entitlement to her husband, unless she gave written notice otherwise",
-              "Suspended her membership of the scheme until such time as she returned to duty",
+              "Forfeited the employer's contributions",
+              "Transferred her entitlement to her husband",
+              "Suspended her membership of the scheme",
             ],
             correctIndex: 0,
             explanation:
@@ -456,10 +456,10 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
           {
             prompt: "Why can a learner read the Payne-Scott rule in about four minutes?",
             options: [
-              "A national archive prints the whole letter",
-              "The regulation was reprinted on the front page of a Sydney newspaper during the dispute",
-              "Her employer published the rule in a staff handbook that libraries still hold in quantity",
-              "A court judgment quoted the rule in full and the judgment is available in every law library",
+              "A national archive prints the whole letter on a page for students",
+              "A Sydney newspaper reprinted the regulation",
+              "Her employer's staff handbook printed it",
+              "A court judgment quoted the rule in full",
             ],
             correctIndex: 0,
             explanation:
@@ -470,9 +470,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which of the three cases in this course also has a whole course of its own?",
             options: [
               "Zitkala-Šá's, in Whose Name Is on the Score",
-              "Delia Derbyshire's, in a course about the BBC Radiophonic Workshop and its credits",
-              "Ruby Payne-Scott's, in a course about the Australian marriage bar and the public service",
-              "None of them, because each of the three is taught only in this course",
+              "Delia Derbyshire's, in a course on the Workshop",
+              "Ruby Payne-Scott's, in a course on the marriage bar",
+              "None of them; each is taught only here",
             ],
             correctIndex: 0,
             explanation:
@@ -483,9 +483,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does Section 4 of this course do with Zitkala-Šá's case?",
             options: [
               "Teaches it as an instrument, and points at the other course",
-              "Reproduces that course's lessons, so a learner need not read the other course at all",
-              "Treats it as disproved, since a register records the claimant rather than the author",
-              "Uses it as the final assessment, with questions drawn from that course's own lessons",
+              "Reproduces that course's lessons in full here",
+              "Treats it as disproved by the register",
+              "Uses it as the course's final assessment",
             ],
             correctIndex: 0,
             explanation:
@@ -496,9 +496,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is the first rule this course states about the BBC?",
             options: [
               "No lesson says it had a written credit policy",
-              "No lesson may quote any BBC document at all, because the corporation's archives are closed",
-              "No lesson may name any BBC employee other than Derbyshire, to protect their privacy",
-              "No lesson may discuss royalties, because the contracts behind them have never been seen",
+              "No lesson may quote any BBC document at all",
+              "No lesson may name any other BBC employee",
+              "No lesson may discuss royalties at all",
             ],
             correctIndex: 0,
             explanation:
@@ -509,9 +509,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "How does this course handle CBC Radio's sentence that she was not credited because of BBC rules at the time?",
             options: [
               "It attributes the claim to CBC",
-              "It repeats the sentence as established fact, since a national broadcaster checked it first",
-              "It leaves the sentence out entirely, because a radio programme is never a usable source",
-              "It treats the sentence as evidence that the rule was published in the BBC's annual report",
+              "It repeats it as established fact",
+              "It leaves the sentence out entirely",
+              "It cites it as the BBC's written rule",
             ],
             correctIndex: 0,
             explanation:
@@ -522,9 +522,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What are the three things this course says instead of asserting a written BBC policy?",
             options: [
               "A publication, a failed request, and her own account",
-              "A contract, a rights registration and a payment record, all three held at Caversham",
-              "Three interviews given by colleagues after her death, each describing the same refusal",
-              "A press release, a union agreement and a schedule of fees agreed with the musicians' union",
+              "A contract, a rights registration and a payment record",
+              "Three colleagues' interviews describing the refusal",
+              "A press release, a union agreement and a fee schedule",
             ],
             correctIndex: 0,
             explanation:
@@ -535,9 +535,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is the second rule this course states, about Payne-Scott?",
             options: [
               "Her own letter is not quoted",
-              "Her scientific results are not described, because the papers behind them were classified",
-              "Her employer is never named, because the organisation still exists under that name",
-              "Her marriage is not mentioned, because it was a private matter and not an employment one",
+              "Her results are not described",
+              "Her employer is never named",
+              "Her marriage is not mentioned",
             ],
             correctIndex: 0,
             explanation:
@@ -548,9 +548,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "In the vocabulary of this course, what is an instrument?",
             options: [
               "A document a credit or a rule is written on",
-              "A device for making sound, such as the oscillators used to build the theme in 1963",
-              "A formal complaint made to an employer about the way a rule has been applied",
-              "The government office that keeps the official record of who made a published work",
+              "A device for making sound, such as an oscillator",
+              "A formal complaint made about a rule",
+              "The office that registers who made a work",
             ],
             correctIndex: 0,
             explanation:
@@ -561,9 +561,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the word realisation mean in the Radiophonic Workshop's vocabulary?",
             options: [
               "Turning a written composition into finished sound",
-              "Publishing a finished recording commercially, in the way the theme was released in 1964",
-              "Deciding which member of staff will be credited on a programme before it is broadcast",
-              "Recovering usable tape from old programmes so that it can be recorded over again",
+              "Releasing a finished recording commercially",
+              "Deciding which staff member gets the on-screen credit",
+              "Recovering old tape so it can be reused",
             ],
             correctIndex: 0,
             explanation:
@@ -574,9 +574,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "In the Australian regulation and statute quoted here, what does deemed mean?",
             options: [
               "Treated by law as though it had happened",
-              "Suspected by an employer, and therefore subject to an investigation before any action",
-              "Recommended by a minister, but left to the employer to apply case by case",
-              "Recorded in a personnel file, whether or not the officer agreed with the entry",
+              "Suspected by an employer, pending investigation",
+              "Recommended by a minister, applied case by case",
+              "Recorded in a personnel file, agreed or not",
             ],
             correctIndex: 0,
             explanation:
@@ -587,9 +587,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Where does this course say the word instrument comes from?",
             options: [
               "The catalog course Whose Name Is on the Score",
-              "The 1909 Copyright Act, which uses it for any document that transfers a right in writing",
-              "BBC Engineering Monograph No. 51, which uses it for the equipment in the Workshop",
-              "The National Archives of Australia, whose teaching page uses it for a personnel file",
+              "The 1909 Copyright Act, for transfer documents",
+              "BBC Engineering Monograph No. 51",
+              "The National Archives of Australia's teaching page",
             ],
             correctIndex: 0,
             explanation:
@@ -600,9 +600,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "According to the table in lesson 2, where does an employer's practice live?",
             options: [
               "Nowhere, or in a file nobody has read",
-              "In the published staff regulations, which is why it can be quoted at an employee",
-              "In the minutes of the board that approved it, which are released after thirty years",
-              "In the contract of employment signed by every member of staff on appointment",
+              "In the published staff regulations",
+              "In the board minutes that approved it",
+              "In every staff contract of employment",
             ],
             correctIndex: 0,
             explanation:
@@ -613,9 +613,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What can a statute or regulation NOT record?",
             options: [
               "Whether it was applied fairly in one case",
-              "The words of the requirement it imposes, which have to be reconstructed from practice",
-              "The date on which it took effect, which is always left to the department to determine",
-              "The class of person it applies to, which is why each case has to be argued separately",
+              "The words of the requirement it imposes",
+              "The date on which it took effect",
+              "The class of person it applies to",
             ],
             correctIndex: 0,
             explanation:
@@ -626,9 +626,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What can a public register NOT record?",
             options: [
               "Who actually did the work",
-              "The date of filing, which is entered later by a clerk and often left blank",
-              "The name of the person claiming the right, which the form does not ask for",
-              "Whether the work was published, which is recorded only in the printed catalogue",
+              "The date of filing",
+              "The name of the claimant",
+              "The title of the work",
             ],
             correctIndex: 0,
             explanation:
@@ -639,9 +639,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is the first of the four kinds of evidence for a practice nobody wrote down?",
             options: [
               "A document that shows its effect",
-              "A sworn statement from a colleague describing the moment the rule was explained to them",
-              "A reference to the rule in a later court case about a different employer entirely",
-              "A pattern in the pay records showing that one group was paid less than another",
+              "A colleague's sworn statement",
+              "A mention in a later court case",
+              "A pattern in the pay records",
             ],
             correctIndex: 0,
             explanation:
@@ -652,9 +652,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Why does a failed request count as evidence for a practice?",
             options: [
               "You only ask permission to break a rule",
-              "Because a request is always granted unless the employer has a written policy against it",
-              "Because the person asking was senior enough to change the rule if it had been informal",
-              "Because the request was refused in writing, which is how the practice was recorded",
+              "Because requests are always granted otherwise",
+              "Because the asker was senior enough to change it",
+              "Because the refusal was put in writing",
             ],
             correctIndex: 0,
             explanation:
@@ -678,9 +678,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does lesson 2 say follows from the fact that the practice bent at least twice?",
             options: [
               "It was a practice rather than a law",
-              "It was never real, since a rule that is broken twice was never being enforced at all",
-              "It applied only to television, since the exceptions were both radio productions",
-              "It was aimed at Derbyshire alone, since the exceptions named her male colleagues",
+              "It was never actually enforced",
+              "It applied only to television",
+              "It was aimed at Derbyshire alone",
             ],
             correctIndex: 0,
             explanation:
@@ -691,9 +691,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which lesson in Who Gets Named sets the three tests this course borrows?",
             options: [
               "A mechanism, not a villain",
-              "Who counts as an author, and who gets thanked, which separates authors from acknowledgements",
-              "Five ways a name disappears, which sorts the mechanisms by the evidence each leaves",
-              "The credited unit is a firm, which shows how a company name replaces a person's name",
+              "Who counts as an author, and who gets thanked",
+              "Five ways a name disappears",
+              "The credited unit is a firm",
             ],
             correctIndex: 0,
             explanation:
@@ -704,9 +704,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What evidence would show the BBC non-crediting was NOT a general practice?",
             options: [
               "Workshop staff routinely named in the credits",
-              "A single Radio Times billing naming a member of staff on one documentary in the 1960s",
-              "Any BBC memo of the period in which a member of staff asked to be credited by name",
-              "Evidence that the composer of the theme received royalties while the Workshop did not",
+              "A single Radio Times billing naming one staff member",
+              "Any memo in which staff asked to be credited",
+              "Royalties paid to the composer but not the Workshop",
             ],
             correctIndex: 0,
             explanation:
@@ -717,9 +717,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What evidence would show it was a decision about Derbyshire rather than a convention?",
             options: [
               "Her named colleagues printed while she was not",
-              "A memo in which a manager praises her work but does not recommend her for promotion",
-              "The fact that the composer of the theme was named on screen and she was not",
-              "Coverage in the newspapers that named her, since that shows her name could be printed",
+              "A memo praising her but not recommending promotion",
+              "The composer named on screen while she was not",
+              "Newspaper coverage that named her",
             ],
             correctIndex: 0,
             explanation:
@@ -730,9 +730,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What makes the Payne-Scott instrument the easy one, in lesson 2's phrase?",
             options: [
               "The rule can be quoted rather than inferred",
-              "The employer admitted in the letter that the rule was unfair and should be changed soon",
-              "The rule was reported in the press at the time, so several independent accounts exist",
-              "The file contains both sides of the correspondence, so nothing has to be reconstructed",
+              "The employer admitted the rule was unfair",
+              "The rule was reported in the press at the time",
+              "The file holds both sides of the correspondence",
             ],
             correctIndex: 0,
             explanation:
@@ -743,9 +743,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does lesson 2 say the blindness of each instrument is?",
             options: [
               "A property you must know to use it",
-              "A flaw introduced by the clerk who filled the form in, and correctable by a later filing",
-              "Proof that the document was drafted to conceal something the employer knew",
-              "A reason to prefer testimony, which is the only source that can answer every question",
+              "A flaw a later filing can correct",
+              "Proof the document hides something",
+              "A reason to prefer testimony",
             ],
             correctIndex: 0,
             explanation:
@@ -756,9 +756,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "In this course's vocabulary, what is a convention?",
             options: [
               "A practice applied to everyone in a category",
-              "A meeting at which an industry agrees the credit rules that its members will follow",
-              "A clause in a contract that assigns a worker's output to the employer automatically",
-              "A rule written into a statute and therefore enforceable in a court by the employee",
+              "An industry meeting that agrees credit rules",
+              "A contract clause assigning output to the employer",
+              "A rule written into a statute",
             ],
             correctIndex: 0,
             explanation:
@@ -769,9 +769,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does falsifiable mean as lesson 2 uses it?",
             options: [
               "Stated so that some evidence would show it wrong",
-              "Written in a way that allows an archivist to check the reference against the catalogue",
-              "Proved false already, and kept in the course only as an example of a bad claim",
-              "Supported by at least two independent sources, so that one error cannot carry it",
+              "Checkable by an archivist against the catalogue",
+              "Already proved false, kept as a bad example",
+              "Supported by two independent sources",
             ],
             correctIndex: 0,
             explanation:
@@ -782,9 +782,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does this course mean by a footprint?",
             options: [
               "The mark a rule leaves in the documents it shaped",
-              "The list of archive files in which a researcher has looked for a rule without finding it",
-              "The number of people affected by a practice during the years it was in force",
-              "A handwritten note added to a document later, recording who made a decision",
+              "The list of archive files searched without success",
+              "The number of people a practice affected",
+              "A later handwritten note recording a decision",
             ],
             correctIndex: 0,
             explanation:
@@ -795,9 +795,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What are the listings, as this course uses the word?",
             options: [
               "The printed programme magazine",
-              "The index of holdings kept by an archive, which tells a researcher what is in each file",
-              "The roll of staff employed by a department in a given year, kept for pension purposes",
-              "The catalogue of sounds kept by the Workshop so that effects could be found again",
+              "An archive's index of holdings",
+              "A department's annual staff roll",
+              "The Workshop's catalogue of sounds",
             ],
             correctIndex: 0,
             explanation:
@@ -808,9 +808,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Why does lesson 1 say the interesting question is not who to blame?",
             options: [
               "The rule, not the person, did the removing",
-              "Because the officials involved were themselves later punished by their own employers",
-              "Because both women said in public that they did not blame the men who applied the rules",
-              "Because the documents do not name the officials, so no individual can be identified",
+              "The officials were later punished",
+              "Both women said they blamed no one",
+              "The documents do not name the officials",
             ],
             correctIndex: 0,
             explanation:
@@ -821,9 +821,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which unit did Derbyshire work in at the BBC?",
             options: [
               "The Radiophonic Workshop",
-              "The Gramophone Library, which held the recordings that drama productions borrowed from",
-              "The Music Department, which commissioned scores from composers outside the corporation",
-              "The Engineering Division's research department at Kingswood Warren, outside London",
+              "The Gramophone Library",
+              "The Music Department",
+              "The Engineering Division",
             ],
             correctIndex: 0,
             explanation:
@@ -834,9 +834,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the Chairman's letter attach to the Superannuation Act clause it quotes?",
             options: [
               "The Act number and the date of assent",
-              "The name of the minister who signed it and the file number of the departmental copy",
-              "A note that the clause had been challenged and was awaiting amendment in Parliament",
-              "A printed extract from the regulations, stamped by the Public Service Board that year",
+              "The signing minister's name and file number",
+              "A note that the clause was under challenge",
+              "A stamped extract from the regulations",
             ],
             correctIndex: 0,
             explanation:
@@ -847,9 +847,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which of these is NOT one of the four kinds of evidence lesson 2 lists for an unwritten practice?",
             options: [
               "A statute quoting the practice",
-              "A document that shows the effect of the practice on what was printed",
-              "Testimony from the person the practice affected, in her own words",
-              "The occasions on which the practice bent and somebody was named after all",
+              "A document that shows its effect",
+              "Testimony from the person it affected",
+              "Occasions when the practice bent",
             ],
             correctIndex: 0,
             explanation:
@@ -860,9 +860,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did the Chairman's letter say the Minister could do about the marriage rule?",
             options: [
               "Certify special circumstances",
-              "Waive the rule permanently for any officer whose work was of national importance",
-              "Refer the case to the Public Service Board for a decision within three months",
-              "Convert the officer's appointment to a temporary one without loss of superannuation",
+              "Waive the rule permanently",
+              "Refer it to the Public Service Board",
+              "Make the appointment temporary",
             ],
             correctIndex: 0,
             explanation:
@@ -873,9 +873,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "How does lesson 1 describe the BBC's printed account of the Workshop?",
             options: [
               "It names no worker",
-              "It names every member of staff in an appendix, with their job grades beside them",
-              "It names only the women, because they were the ones journalists asked about",
-              "It refuses to describe the work at all, on the grounds that the methods were confidential",
+              "It names everyone",
+              "It names only women",
+              "It describes no work",
             ],
             correctIndex: 0,
             explanation:
@@ -886,9 +886,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Who was Grainer, in the sources this course uses?",
             options: [
               "The composer credited with the theme",
-              "The producer who commissioned the programme and chose the Workshop to make its music",
-              "The Workshop manager who decided which members of staff would be named on screen",
-              "The engineer who built the oscillators the theme was made on, in the Workshop itself",
+              "The producer who commissioned the programme",
+              "The Workshop manager who set the credits",
+              "The engineer who built the oscillators",
             ],
             correctIndex: 0,
             explanation:
@@ -899,9 +899,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did Derbyshire say she was earning when the royalty offer was made?",
             options: [
               "An assistant studio manager's salary",
-              "A freelance fee for each production, paid at the rate agreed with the musicians' union",
-              "A composer's retainer, paid quarterly, with a bonus for any work used more than once",
-              "Nothing at all, because she was working on the theme in her own time after hours",
+              "A freelance fee for each production",
+              "A quarterly composer's retainer",
+              "Nothing, as she worked in her own time",
             ],
             correctIndex: 0,
             explanation:
@@ -912,9 +912,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What kind of page prints the Payne-Scott letter?",
             options: [
               "A national archive's page for students",
-              "A university's digital library of scanned manuscripts, available to registered readers",
-              "A newspaper's archive of its own reporting on the Commonwealth Public Service",
-              "A campaign website collecting documents about discrimination against married women",
+              "A university's digital manuscript library",
+              "A newspaper's archive of its own reporting",
+              "A campaign website on the marriage bar",
             ],
             correctIndex: 0,
             explanation:
@@ -925,9 +925,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does lesson 1 say the course does with a sentence attributed to Payne-Scott in other accounts?",
             options: [
               "It is not printed here at all",
-              "It is printed with a note that the archive has not yet digitised the letter it came from",
-              "It is printed as a paraphrase, in the course's own words rather than as a quotation",
-              "It is printed in the final assessment only, as an example of a claim a learner should doubt",
+              "It is printed with an archive note",
+              "It is printed as a paraphrase",
+              "It appears in the final assessment only",
             ],
             correctIndex: 0,
             explanation:
@@ -938,9 +938,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which pair of words describes what the rules in this course did to these women?",
             options: [
               "Removed them from a record",
-              "Punished them for a breach of contract that each had knowingly committed at work",
-              "Promoted them into roles where their own work would be credited to a department",
-              "Transferred their rights to an employer who then licensed the work commercially",
+              "Punished them for breach of contract",
+              "Promoted them out of credit",
+              "Transferred their rights to an employer",
             ],
             correctIndex: 0,
             explanation:
@@ -951,9 +951,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "How does lesson 2 describe the relationship between this course and Who Gets Named lesson 2?",
             options: [
               "That lesson gives the frame, this course is the practice",
-              "This course replaces it, because its three tests were written before the archives were read",
-              "This course disagrees with it, since a mechanism always has a villain behind it somewhere",
-              "That lesson is the assessment for this one, and its questions are pooled into the final here",
+              "This course replaces it, as its tests predate the archives",
+              "This course disagrees with it about villains",
+              "That lesson is the assessment for this one",
             ],
             correctIndex: 0,
             explanation:
@@ -964,9 +964,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "In the table in lesson 2, what does a public register record?",
             options: [
               "Who filed, who claimed, and when",
-              "The share of the work done by each of the people named on the form as its authors",
-              "The correspondence between an employer and an officer about the terms of employment",
-              "The effects of a practice on the documents that an organisation printed at the time",
+              "Each named person's share of the work",
+              "An employer's letters to an officer",
+              "A practice's effects on printed documents",
             ],
             correctIndex: 0,
             explanation:
@@ -977,9 +977,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does lesson 1 say about the men who applied these rules?",
             options: [
               "None was a villain in a story",
-              "Both were later found by an inquiry to have exceeded the authority they actually held",
-              "Both refused in writing to change the rule when a colleague asked them to",
-              "Neither knew that the rule existed until the woman concerned drew it to their attention",
+              "Both exceeded their authority",
+              "Both refused in writing to change it",
+              "Neither knew the rule existed",
             ],
             correctIndex: 0,
             explanation:
@@ -989,10 +989,10 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
           {
             prompt: "Which of these does this course refuse to build out of two true facts?",
             options: [
-              "A refusal scene nobody described",
-              "A comparison between two employers in different countries and different decades",
-              "A claim that a practice existed, since practices leave no documents of their own",
-              "A description of the equipment the theme was made on, which no document records",
+              "A refusal scene that no document describes",
+              "A comparison of two employers",
+              "A claim that a practice existed",
+              "A description of the theme's equipment",
             ],
             correctIndex: 0,
             explanation:
@@ -1003,9 +1003,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Who filed the copyright registration for The Sun Dance Opera, and when?",
             options: [
               "William F. Hanson, on 12 December 1912",
-              "Zitkala-Šá, on 5 December 1921, when she registered a book of her own with the same office",
-              "The Uintah Academy in Vernal, Utah, on behalf of both collaborators, in February 1913",
-              "Brigham Young University, in 1935, when the opera was revived on its campus",
+              "Zitkala-Šá, on 5 December 1921",
+              "The Uintah Academy, Vernal, Utah, in February 1913",
+              "Brigham Young University, in 1935",
             ],
             correctIndex: 0,
             explanation:
@@ -1016,9 +1016,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the Copyright Office's own account say about her and the records?",
             options: [
               "She does not appear on the copyright records for the work",
-              "She appears as the author while Hanson appears as the claimant, which is the usual split",
-              "She appears on the renewal card filed in 1929 but not on the original registration",
-              "She appears in the printed catalogue of copyright entries but not on the card itself",
+              "She appears as the author, with Hanson as the claimant",
+              "She appears on the 1929 renewal card but not the original",
+              "She appears in the printed catalogue but not on the card",
             ],
             correctIndex: 0,
             explanation:
@@ -1029,9 +1029,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "How many rules does this course state at the front, and why are they stated there?",
             options: [
               "Four, because they are rules and not gaps",
-              "Two, because the other two apply only to the section about the opera",
-              "Six, one for each of the instruments and one for each of the three women",
-              "None, because a course should be judged by what it says rather than by its promises",
+              "Two, since two apply only to the opera",
+              "Six, one per instrument and one per woman",
+              "None, as a course is judged by what it says",
             ],
             correctIndex: 0,
             explanation:
@@ -1042,9 +1042,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is the third rule this course keeps?",
             options: [
               "It never describes the Sun Dance ceremony",
-              "It never names anyone who is still alive, including the scholars whose work it cites",
-              "It never quotes a newspaper, because press accounts of the period are unreliable",
-              "It never uses a source that cannot be opened online by the learner reading the lesson",
+              "It never names anyone still living",
+              "It never quotes a newspaper of the period",
+              "It never uses a source the learner can't open",
             ],
             correctIndex: 0,
             explanation:
@@ -1055,9 +1055,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is the fourth rule this course keeps?",
             options: [
               "It never says how much of the work was whose",
-              "It never compares one woman's treatment with another's, since the injuries differ",
-              "It never quotes a secondary source where a primary source exists in an archive",
-              "It never states a date that appears in only one of the sources it has read",
+              "It never compares one woman's case with another's",
+              "It never quotes a secondary source",
+              "It never states a date found in only one source",
             ],
             correctIndex: 0,
             explanation:
@@ -1068,9 +1068,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Whose reason does lesson 1 give for the rule about the ceremony?",
             options: [
               "Hafen's",
-              "The Copyright Office's, in the post about the registration cards",
-              "The National Park Service's, in its page about Zitkala-Šá",
-              "Smith's, in her article about the opera and its collaboration",
+              "Smith's",
+              "Hanson's",
+              "Winter's",
             ],
             correctIndex: 0,
             explanation:
@@ -1081,9 +1081,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "In how many grades of paper does this course say the same mechanism arrives?",
             options: [
               "Three",
-              "Two, since the register and the statute are both public documents of the same kind",
-              "One, since every credit dispute eventually ends up in a government record",
-              "Five, one for each document type named in the table in lesson 2",
+              "Two",
+              "One",
+              "Five",
             ],
             correctIndex: 0,
             explanation:
@@ -1094,9 +1094,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which three things does lesson 1 say Whose Name Is on the Score adds?",
             options: [
               "Five cards as images, the 1909 Act, and the 1913 newspapers",
-              "The BBC archive files, the Australian personnel file, and the copyright register",
-              "A biography of each collaborator, a musical analysis, and a performance history",
-              "Interviews with the family, the university's archive, and the surviving scores",
+              "BBC files, an Australian personnel file, and the register",
+              "Biographies, a musical analysis, and a performance history",
+              "Family interviews, a university archive, and the scores",
             ],
             correctIndex: 0,
             explanation:
@@ -1107,9 +1107,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What was Zitkala-Šá, in the terms lesson 1 uses?",
             options: [
               "A Yankton Dakota writer and musician",
-              "A studio manager employed by a broadcaster to realise other people's compositions",
-              "A radiophysicist employed by a government laboratory on classified research",
-              "A music teacher in Vernal, Utah, who taught at the Uintah Academy there",
+              "A studio manager at a broadcaster",
+              "A radiophysicist at a government lab",
+              "A music teacher in Vernal, Utah",
             ],
             correctIndex: 0,
             explanation:
@@ -1120,9 +1120,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Where does lesson 2 say the three instruments are taught in this course?",
             options: [
               "One section each, with the register in Section 4",
-              "All three in Section 1, with the later sections giving only the biographies",
-              "Two in this course and the third only in another course in the catalog",
-              "In the final assessment, which is where the comparison is finally made",
+              "All three in Section 1, then only biographies",
+              "Two here and the third in another course",
+              "In the final assessment, where they are compared",
             ],
             correctIndex: 0,
             explanation:
@@ -1307,9 +1307,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "How does Ayres describe what the Radiophonic Workshop was set up as?",
             options: [
               "A service department within a broadcasting organisation",
-              "An experimental studio funded by a grant, free to publish music under its own name",
-              "A record label owned by the corporation and run for profit alongside its programmes",
-              "A training school for engineers, whose output was never intended for broadcast at all",
+              "An experimental studio publishing under its own name",
+              "A record label run for profit by the corporation",
+              "A training school whose output was never broadcast",
             ],
             correctIndex: 0,
             explanation:
@@ -1320,9 +1320,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What word does Ayres put in quotation marks for the Workshop's staff?",
             options: [
               "Assistants",
-              "Composers, because the corporation refused to let them describe themselves that way",
-              "Technicians, because the job was classified under the Engineering Division's grades",
-              "Realisers, a term the BBC coined for the people who turned a score into sound",
+              "Composers",
+              "Technicians",
+              "Realisers",
             ],
             correctIndex: 0,
             explanation:
@@ -1333,9 +1333,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "According to Derbyshire, what was the only way into the Workshop?",
             options: [
               "To be a trainee studio manager",
-              "To be recommended by a producer who had already used the Workshop on a production",
-              "To pass the Engineering Division's entrance examination and then request a transfer",
-              "To be hired as a freelance composer and then offered a staff post after two years",
+              "To be recommended by a producer",
+              "To pass an engineering examination",
+              "To start as a freelance composer",
             ],
             correctIndex: 0,
             explanation:
@@ -1346,9 +1346,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What did Derbyshire say the BBC made quite clear about composers?",
             options: [
               "That it did not employ them",
-              "That it employed them only on annual contracts renewed by the Music Department",
-              "That it paid them from a separate budget which the Workshop was not allowed to use",
-              "That it credited them on screen only when they were members of a recognised society",
+              "That it hired them yearly",
+              "That it paid them separately",
+              "That it credited them on screen",
             ],
             correctIndex: 0,
             explanation:
@@ -1359,9 +1359,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Asked what she was doing if not music, how did Derbyshire answer?",
             options: [
               "It was abstract electronic sound, organised",
-              "It was sound effects work, no different from the spot effects made live in a studio",
-              "It was engineering, because the machines decided what the finished result would be",
-              "It was arrangement rather than composition, which is why the credit went elsewhere",
+              "It was sound effects, like live spot effects",
+              "It was engineering, decided by the machines",
+              "It was arrangement rather than composition",
             ],
             correctIndex: 0,
             explanation:
@@ -1372,9 +1372,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What phrase does Winter record Brian Hodgson using for the Workshop's work?",
             options: [
               "Other people's babies",
-              "The back room of the drama department, where nothing was ever finished on its own terms",
-              "An orchestra without a conductor, in which every player was also the instrument maker",
-              "A factory for noises, which is how the corporation's accountants saw the unit's output",
+              "The back room of drama",
+              "A conductorless orchestra",
+              "A factory for noises",
             ],
             correctIndex: 0,
             explanation:
@@ -1385,9 +1385,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "On the arrangement lesson 3 describes, who holds the composer's royalty?",
             options: [
               "The commissioned composer",
-              "The employer, which collects it centrally and distributes it among the Workshop staff",
-              "The producer of the programme, who commissioned the theme in the first place",
-              "Whoever is named in the listings magazine for that particular production",
+              "The employer, for its staff",
+              "The programme's producer",
+              "Whoever the listings name",
             ],
             correctIndex: 0,
             explanation:
@@ -1398,9 +1398,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does lesson 3 say the job arrangement does NOT explain?",
             options: [
               "Why her name could not appear in any form",
-              "Why the composer was paid royalties while the staff were paid a salary instead",
-              "Why the Workshop was attached to drama rather than to the Music Department",
-              "Why the BBC used staff at all rather than hiring musicians for each production",
+              "Why the composer got royalties, not a salary",
+              "Why the Workshop was attached to drama",
+              "Why the BBC used staff, not hired musicians",
             ],
             correctIndex: 0,
             explanation:
@@ -1411,9 +1411,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What date does Hodgson's obituary give for her joining the BBC?",
             options: [
               "1960",
-              "1958, the year the Radiophonic Workshop itself was officially set up at Maida Vale",
-              "1963, a few months before the theme was made in the August of that year",
-              "1966, the year she was placed in charge of the Workshop during Briscoe's leave",
+              "1958",
+              "1963",
+              "1966",
             ],
             correctIndex: 0,
             explanation:
@@ -1424,9 +1424,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What years does Butler give for Derbyshire being based at the Radiophonic Workshop?",
             options: [
               "1962 until 1973",
-              "1960 until 1975, covering the whole of her employment by the corporation in London",
-              "1958 until 1970, from the founding of the unit to the arrival of the synthesiser",
-              "1963 until 1980, matching the years her arrangement was used in the programme",
+              "1960 until 1975",
+              "1958 until 1970",
+              "1963 until 1980",
             ],
             correctIndex: 0,
             explanation:
@@ -1437,9 +1437,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is wrong with the Manchester archive's sentence about how she reached the BBC?",
             options: [
               "It folds two separate events into one",
-              "It gives the wrong unit, naming the Music Department rather than the Radiophonic Workshop",
-              "It gives her job title as composer, which the corporation never used for its staff",
-              "It omits the Workshop entirely, describing her only as a trainee studio manager",
+              "It names the Music Department instead",
+              "It gives her job title as composer",
+              "It leaves out the Workshop entirely",
             ],
             correctIndex: 0,
             explanation:
@@ -1450,9 +1450,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Why does lesson 3 call that compression a good specimen to study?",
             options: [
               "Nothing much turns on the date",
-              "Because the archive later corrected it, which shows how a record is repaired over time",
-              "Because it is the only error anyone has found in that archive's published description",
-              "Because the compression favours the employer, which is how most credit errors work",
+              "The archive later corrected it",
+              "It is the archive's only known error",
+              "It favours the employer",
             ],
             correctIndex: 0,
             explanation:
@@ -1463,9 +1463,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What did Verity Lambert ask for, in Ayres's account of the brief for the theme?",
             options: [
               "Something familiar yet different, with a beat",
-              "A piece for orchestra and tape that could be re-recorded each season by a new arranger",
-              "A short fanfare no longer than fifteen seconds, to sit under the programme's title card",
-              "A theme built entirely from recordings of machinery, to match the science fiction setting",
+              "Orchestra and tape, re-recorded each season",
+              "A fanfare under fifteen seconds long",
+              "A theme built from recordings of machinery",
             ],
             correctIndex: 0,
             explanation:
@@ -1476,9 +1476,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "How does Ayres describe the composition Grainer supplied?",
             options: [
               "In essence just a bass line and a swooping melody",
-              "A fully orchestrated score with parts written out for each section of a studio orchestra",
-              "A set of graphic instructions on logarithmic graph paper rather than conventional notation",
-              "A piano reduction with chord symbols, to be arranged by whoever recorded it",
+              "A fully orchestrated score with written-out parts",
+              "Graphic instructions on logarithmic graph paper",
+              "A piano reduction with chord symbols",
             ],
             correctIndex: 0,
             explanation:
@@ -1489,9 +1489,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "How did the BBC's own 1964 information sheet describe the making of the theme?",
             options: [
               "Constructed note by note, with infinite patience",
-              "Improvised in the studio over several sessions by the staff of the Radiophonic Workshop",
-              "Performed by a small ensemble and then treated electronically to disguise the instruments",
-              "Assembled from the Workshop's library of existing sounds, which saved considerable time",
+              "Improvised in the studio over several sessions",
+              "Played by an ensemble, then treated electronically",
+              "Assembled from the Workshop's library of sounds",
             ],
             correctIndex: 0,
             explanation:
@@ -1502,9 +1502,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What kind of markings did the BBC's 1964 information sheet say the score carried?",
             options: [
               "Abstract indications such as clouds and wind bubble",
-              "Frequencies in cycles per second for every note, so that each could be tuned exactly",
-              "Tape speeds and splice points, written above the stave in the composer's own hand",
-              "No markings at all beyond the notes, which is why the realisation took so long",
+              "Frequencies in cycles per second for every note",
+              "Tape speeds and splice points above the stave",
+              "No markings at all beyond the notes",
             ],
             correctIndex: 0,
             explanation:
@@ -1515,9 +1515,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "In this course's vocabulary, what is a service department?",
             options: [
               "A unit that makes things for other departments' productions",
-              "A department that maintains equipment used by the rest of an organisation's staff",
-              "A section of a broadcaster that deals with correspondence from the listening public",
-              "A unit whose output is published under its own name rather than a programme's",
+              "A department that maintains the organisation's equipment",
+              "A section that answers listeners' letters",
+              "A unit that publishes work under its own name",
             ],
             correctIndex: 0,
             explanation:
@@ -1528,9 +1528,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What was an attachment at the BBC, as lesson 3 uses the word?",
             options: [
               "A temporary transfer to another unit",
-              "A note added to a personnel file recording an employee's request for promotion",
-              "A contract clause assigning to the corporation any work made on its premises",
-              "A second job held alongside the first, with the pay of both added together",
+              "A note on a file requesting promotion",
+              "A clause assigning work made on premises",
+              "A second job held alongside the first",
             ],
             correctIndex: 0,
             explanation:
@@ -1541,9 +1541,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What two facts does lesson 3 tell you to hold together at the end?",
             options: [
               "The employer praised the work and named nobody",
-              "The composer was in Portugal and the realiser was in London, so they never met at all",
-              "The theme was made in August and broadcast in November, so the work took three months",
-              "The BBC paid a salary and the publisher paid a royalty, so two organisations were involved",
+              "The composer and realiser never met",
+              "The theme took three months to make",
+              "Two organisations paid the people involved",
             ],
             correctIndex: 0,
             explanation:
@@ -1554,9 +1554,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Who assisted on the original version of the theme, according to Ayres?",
             options: [
               "Dick Mills",
-              "John Baker, who worked on the Workshop's rhythmic pieces during the same period",
-              "Daphne Oram, who had co-founded the Workshop and returned for the recording",
-              "Brian Hodgson, who was then making the sound effects for the same programme",
+              "John Baker",
+              "Daphne Oram",
+              "Brian Hodgson",
             ],
             correctIndex: 0,
             explanation:
@@ -1567,9 +1567,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is the full title and number of the BBC publication read in lesson 4?",
             options: [
               "Radiophonics in the BBC, Engineering Monograph No. 51",
-              "The BBC Radiophonic Workshop: The First 25 Years, published by BBC Publications",
-              "Studio Engineering for Sound Broadcasting, in the BBC's training manual series",
-              "Radiophonic Music, an annual report of the Engineering Division for 1963",
+              "The BBC Radiophonic Workshop: The First 25 Years",
+              "Studio Engineering for Sound Broadcasting",
+              "Radiophonic Music, an Engineering Division report",
             ],
             correctIndex: 0,
             explanation:
@@ -1580,9 +1580,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "When was BBC Engineering Monograph No. 51 published?",
             options: [
               "November 1963",
-              "March 1958, when the Radiophonic Workshop was officially set up at Maida Vale",
-              "January 1965, a year after the first Dalek serial had made the programme popular",
-              "June 1964, the same month as the Esslin memo about credits in the Radio Times",
+              "March 1958",
+              "January 1965",
+              "June 1964",
             ],
             correctIndex: 0,
             explanation:
@@ -1592,10 +1592,10 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
           {
             prompt: "What does this course say the monograph is NOT?",
             options: [
-              "A statement of policy",
-              "A document written by anyone who worked in the Radiophonic Workshop itself",
-              "A publication the BBC ever sold to the public, since it was for internal use only",
-              "A reliable description of the equipment, since it was written by an outside journalist",
+              "A statement of credit policy",
+              "A Workshop insider's account",
+              "A publication sold to the public",
+              "A technical account of equipment",
             ],
             correctIndex: 0,
             explanation:
@@ -1606,9 +1606,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "In the monograph's statement of the Workshop's function, who is the author?",
             options: [
               "The writer of the drama",
-              "The member of staff who builds the sounds for a particular production",
-              "The producer, who commissions the sounds and approves them before transmission",
-              "The Engineer-in-Charge, who signs off the finished tape before it is broadcast",
+              "The staff sound-maker",
+              "The commissioning producer",
+              "The Engineer-in-Charge",
             ],
             correctIndex: 0,
             explanation:
@@ -1619,9 +1619,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "How does the monograph describe the making of the sounds in section 5.1?",
             options: [
               "A deliberate creative and interpretative process",
-              "A routine assembly of library material, carried out to a producer's written instructions",
-              "An engineering task in which the equipment settings determine the finished result",
-              "A rehearsal process shared with the actors, so that the sounds fit the performance",
+              "A routine assembly of library material",
+              "An engineering task set by the equipment",
+              "A rehearsal process shared with actors",
             ],
             correctIndex: 0,
             explanation:
@@ -1632,9 +1632,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "How large was the Workshop's staff, according to the monograph?",
             options: [
               "Six",
-              "Twelve, which is why the unit was split across two adjacent rooms at Maida Vale",
-              "Three, one for each of the services that the unit supplied with radiophonic sound",
-              "Twenty-four, counting the tape reclaimers who worked in the room next door",
+              "Twelve",
+              "Three",
+              "Ten",
             ],
             correctIndex: 0,
             explanation:
@@ -1645,9 +1645,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Which two departments supplied the Workshop's staff?",
             options: [
               "Central Programme Operations and Engineering Division",
-              "The Drama Department and the Music Department, in equal numbers under one manager",
-              "The Gramophone Library and Television Enterprises, which shared the running costs",
-              "The Engineering Division alone, which is why every member held an engineering grade",
+              "The Drama Department and the Music Department",
+              "The Gramophone Library and Television Enterprises",
+              "The Engineering Division alone",
             ],
             correctIndex: 0,
             explanation:
@@ -1658,9 +1658,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What phrase does the monograph use for what the Workshop's staff must above all be?",
             options: [
               "Creative and ingenious",
-              "Punctual and accurate, since a drama studio cannot wait for a tape to be finished",
-              "Qualified in electronics, which the corporation tested before any appointment was made",
-              "Experienced in orchestral music, so that a composer's intentions could be understood",
+              "Punctual and accurate",
+              "Qualified in electronics",
+              "Versed in orchestral music",
             ],
             correctIndex: 0,
             explanation:
@@ -1671,9 +1671,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does the monograph's conclusions section call the Workshop's people?",
             options: [
               "The technicians and programme staff",
-              "The composers and arrangers working in this new field of electronic music",
-              "The artists of the corporation, whose work would outlast the programmes it served",
-              "The assistants, a term Ayres also uses when describing the unit's staffing",
+              "The composers and arrangers",
+              "The artists of the corporation",
+              "The assistants, as Ayres calls them",
             ],
             correctIndex: 0,
             explanation:
@@ -1684,9 +1684,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Who is named in the monograph's acknowledgment?",
             options: [
               "D. G. Young and Desmond Briscoe",
-              "Delia Derbyshire and Dick Mills, for help with the section on the eight-track recorder",
-              "Verity Lambert and Ron Grainer, for permission to describe the theme's construction",
-              "Daphne Oram and Maddalena Fagandini, as the unit's two founding studio managers",
+              "Delia Derbyshire and Dick Mills",
+              "Verity Lambert and Ron Grainer",
+              "Daphne Oram and Maddalena Fagandini",
             ],
             correctIndex: 0,
             explanation:
@@ -1697,9 +1697,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "In the monograph's appendix of programmes, who gets attributed?",
             options: [
               "The dramatists",
-              "The producers of each programme, listed beside the service that broadcast it",
-              "The members of staff who made the sounds for each listed production",
-              "Nobody at all, since the appendix gives only titles, types and services",
+              "The producers",
+              "The sound staff",
+              "Nobody at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1710,9 +1710,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Why is Doctor Who missing from the monograph's appendix?",
             options: [
               "The monograph predates the first broadcast",
-              "The programme's music was made by an outside composer, so the Workshop did not list it",
-              "Television programmes were excluded from the appendix, which covered radio only",
-              "The BBC had decided not to publicise the theme until the single had been released",
+              "Its music came from an outside composer",
+              "The appendix covered radio only",
+              "The BBC was holding back publicity",
             ],
             correctIndex: 0,
             explanation:
@@ -1723,9 +1723,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Which machine appears in both the monograph and Derbyshire's interview?",
             options: [
               "The Leevers-Rich eight-track recorder",
-              "The Oramics machine, which drew waveforms onto strips of film for the operator",
-              "The Jason valve oscillators, which the monograph describes in its section on equipment",
-              "The gunfire effects generator, which she used for the bass line of the theme",
+              "The Oramics film-drawing machine",
+              "The Jason valve oscillators",
+              "The gunfire effects generator",
             ],
             correctIndex: 0,
             explanation:
@@ -1736,9 +1736,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is the lesson of the Leevers-Rich comparison?",
             options: [
               "The document names the equipment, not the operator",
-              "The document is unreliable, because the operator disagreed with its technical description",
-              "The operator's account is unreliable, because she was describing it thirty years later",
-              "The machine was not in use in 1963, so neither account can describe the theme's making",
+              "The document is unreliable on the technical detail",
+              "The operator's late account is unreliable",
+              "The machine was not in use in 1963",
             ],
             correctIndex: 0,
             explanation:
@@ -1749,9 +1749,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What exercise does lesson 4 set?",
             options: [
               "Read the monograph for who is not named",
-              "Count the number of programmes in the appendix and compare it with the Workshop's records",
-              "Compare the monograph's equipment list with the inventory held at the written archives",
-              "Translate the monograph's technical sections into plain language for a general reader",
+              "Count the programmes in the appendix",
+              "Compare the equipment list with the inventory",
+              "Rewrite the technical sections plainly",
             ],
             correctIndex: 0,
             explanation:
@@ -1762,9 +1762,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is an acknowledgment, as lesson 4 distinguishes it?",
             options: [
               "A thank-you for help, not a credit for the work",
-              "A formal record that an employer has received a complaint from a member of staff",
-              "The line on a broadcast that names the department responsible for the sound",
-              "A payment made in place of a credit when the credit itself cannot be given",
+              "A record that an employer received a complaint",
+              "A broadcast line naming the responsible department",
+              "A payment made in place of a credit",
             ],
             correctIndex: 0,
             explanation:
@@ -1775,9 +1775,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is a grade, in the vocabulary of lesson 4?",
             options: [
               "A job category a document can name instead of a person",
-              "A mark given to a recording by the Engineering Division before it was broadcast",
-              "The seniority level at which an employee is entitled to appear in the credits",
-              "The classification of a programme by service, as in Home, Third or Television",
+              "A mark given to a recording before broadcast",
+              "The seniority needed to appear in credits",
+              "A programme's classification by service",
             ],
             correctIndex: 0,
             explanation:
@@ -1788,9 +1788,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "How much did the monograph cost when it was published?",
             options: [
               "Five shillings",
-              "Nothing, because it was an internal document circulated only within the corporation",
-              "One pound, which was also the price of the annual subscription to the series",
-              "Half a crown, the standard price for the BBC's engineering training supplements",
+              "Free of charge",
+              "One pound",
+              "Half a crown",
             ],
             correctIndex: 0,
             explanation:
@@ -1801,9 +1801,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "In Hodgson's obituary, what was Grainer's response when he heard the result?",
             options: [
               "Did I really write that?",
-              "He asked for the tape to be remade with live players over the electronic parts",
-              "He said nothing at the session and wrote to the producer the following week",
-              "He asked which of the Workshop's staff had been assigned to the recording",
+              "Remake it with live players",
+              "He wrote to the producer later",
+              "He asked who had recorded it",
             ],
             correctIndex: 0,
             explanation:
@@ -1814,9 +1814,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does Hodgson's obituary say about the BBC and the Workshop at that time?",
             options: [
               "It preferred to keep them anonymous and uncredited",
-              "It had a written policy forbidding any member of staff from being named on air",
-              "It allowed names in the Radio Times but never in the on-screen closing credits",
-              "It credited the unit as a whole because the staff themselves had asked for that",
+              "It had a written policy forbidding names on air",
+              "It allowed Radio Times names but no screen credits",
+              "It credited the unit at the staff's request",
             ],
             correctIndex: 0,
             explanation:
@@ -1827,9 +1827,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Which hedge does Ayres use before the anecdote?",
             options: [
               "The story goes",
-              "It is well documented that, which he then supports with a reference to the BBC archives",
-              "Delia told me herself, which makes his version a first-hand account of her account",
-              "According to the Radio Times of the week the programme began broadcasting",
+              "It is documented",
+              "Delia told me",
+              "As the papers said",
             ],
             correctIndex: 0,
             explanation:
@@ -1840,9 +1840,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What phrase does Ayres use for what happened to the royalty suggestion?",
             options: [
               "For various reasons this was not possible",
-              "The corporation refused it in writing, in a memo held at the written archives centre",
-              "The publisher declined to register a second name against the composition",
-              "It was agreed and then reversed when the theme was released as a single in 1964",
+              "The corporation refused it in writing",
+              "The publisher declined a second name",
+              "It was agreed and later reversed",
             ],
             correctIndex: 0,
             explanation:
@@ -1853,9 +1853,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "How does NPR introduce the anecdote?",
             options: [
               "Legend has it",
-              "Archival records at the BBC show that, which is followed by a file reference",
-              "Derbyshire wrote in her diary that, quoting the Manchester archive's juvenile papers",
-              "As the composer later told an interviewer, in a recording now held in Manchester",
+              "Records show",
+              "She wrote that",
+              "He later said",
             ],
             correctIndex: 0,
             explanation:
@@ -1866,9 +1866,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What small error in the NPR piece does lesson 5 point out?",
             options: [
               "The composer's first name is misspelled",
-              "The year of the first broadcast is given as 1964 rather than November 1963",
-              "The theme is described as the first electronic music ever heard by the British public",
-              "Dick Mills is named as the person who made the theme rather than as the assistant",
+              "The first broadcast is dated 1964",
+              "The theme is called the first electronic music",
+              "Dick Mills is named as the theme's maker",
             ],
             correctIndex: 0,
             explanation:
@@ -1879,9 +1879,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "In her own account, what did Derbyshire say Grainer had expected to do with the score?",
             options: [
               "Hire a band to play it",
-              "Record it himself in Portugal and send the finished tape to the Workshop for editing",
-              "Have the Workshop create the sounds and then add an orchestra over the top of them",
-              "Sell it to a publisher first and only then offer it to the programme's producer",
+              "Record it himself",
+              "Add an orchestra over it",
+              "Sell it to a publisher",
             ],
             correctIndex: 0,
             explanation:
@@ -1892,9 +1892,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is absent from Derbyshire's own telling of the theme's making?",
             options: [
               "The Did I write that? exchange",
-              "Any mention of the royalties, which she discussed only in a later interview in 1999",
-              "The name of the composer, whom she never referred to in any recorded interview",
-              "Any description of the equipment, which she said she could no longer remember",
+              "Any mention of the royalties",
+              "Any mention of Ron Grainer",
+              "Any account of the equipment",
             ],
             correctIndex: 0,
             explanation:
@@ -1905,9 +1905,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Which machine did Derbyshire say she used for most of the theme?",
             options: [
               "The Jason valve oscillators",
-              "The Leevers-Rich eight-track recorder, which allowed the parts to be layered at once",
-              "The Muirhead oscillator, which was accurate enough to tune the bass line precisely",
-              "A Hammond organ, which stood in the room alongside an old upright piano",
+              "The Leevers-Rich tape recorder",
+              "The Muirhead oscillator",
+              "A Hammond organ and a piano",
             ],
             correctIndex: 0,
             explanation:
@@ -1918,9 +1918,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does Butler's sentence about Grainer fuse together?",
             options: [
               "An offer of royalties and a rule about credit",
-              "Two different interviews given by Derbyshire, one in 1999 and one in 2000",
-              "The composer's view and the producer's view of who should have been named",
-              "A BBC information sheet and a newspaper article published three weeks apart",
+              "Two Derbyshire interviews, from 1999 and 2000",
+              "The composer's view and the producer's view",
+              "A BBC information sheet and a newspaper article",
             ],
             correctIndex: 0,
             explanation:
@@ -1931,9 +1931,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is Butler's cited source for that sentence?",
             options: [
               "The Jo Hutton interview",
-              "A memo from Desmond Briscoe held at the BBC Written Archives Centre in Caversham",
-              "Mark Ayres's article about the history of the theme, cited at his note 33",
-              "An interview with the composer given shortly before his death in the 1980s",
+              "A memo from Desmond Briscoe",
+              "Mark Ayres's article",
+              "An interview with Grainer",
             ],
             correctIndex: 0,
             explanation:
@@ -1944,9 +1944,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does the phrase he was overruled add that no document supports?",
             options: [
               "A scene in which somebody refuses him",
-              "A date, since no source says when the offer of royalties was made or withdrawn",
-              "A name, since the official who made the decision is identified in the same sentence",
-              "A motive, since it suggests the corporation wanted to keep the royalties for itself",
+              "A date for the offer of royalties",
+              "The name of the official who refused",
+              "A motive of keeping the royalties",
             ],
             correctIndex: 0,
             explanation:
@@ -1957,9 +1957,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Which catalog lesson gives the method rule that lesson 5 applies?",
             options: [
               "Who Made the Record, lesson 11",
-              "Who Gets the Credit, lesson 17, which corrects five claims that do not survive checking",
-              "The Name on the Door, lesson 1, on the credited unit being a firm rather than a person",
-              "Whose Name Is on the Score, lesson 2, on the class and the claimant under a statute",
+              "Who Gets the Credit, lesson 17",
+              "The Name on the Door, lesson 1",
+              "Whose Name Is on the Score, lesson 2",
             ],
             correctIndex: 0,
             explanation:
@@ -1969,10 +1969,10 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
           {
             prompt: "What did the Daily Mirror of 7 December 1963 do with Derbyshire's name?",
             options: [
-              "It did not mention her",
-              "It printed it alongside the composer's, which is the earliest credit anyone has found",
-              "It printed it incorrectly, giving her as a member of the Engineering Division",
-              "It printed it only in a caption under a photograph of the Workshop's equipment",
+              "It did not mention her, stressing the producer",
+              "It printed it alongside the composer's",
+              "It gave her as an Engineering Division member",
+              "It printed it under a photograph of the studio",
             ],
             correctIndex: 0,
             explanation:
@@ -1983,9 +1983,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is a telling, in the vocabulary of lesson 5?",
             options: [
               "One person's version, with a date and a teller",
-              "A document produced at the time of an event by somebody who witnessed it",
-              "An account that has been checked against at least one other independent source",
-              "The first published version of a story, from which all later versions descend",
+              "A document made at the time by a witness",
+              "An account checked against another source",
+              "The first published version of a story",
             ],
             correctIndex: 0,
             explanation:
@@ -1996,9 +1996,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does a hedge do to a claim, and what happens when it is dropped?",
             options: [
               "It marks the claim as unestablished, and dropping it asserts more",
-              "It weakens a source's authority, so a careful writer removes it before quoting",
-              "It identifies the person who made the claim, so dropping it removes the attribution",
-              "It signals that a document exists but could not be reached by the writer",
+              "It weakens a source's authority, so careful writers remove it first",
+              "It names who made the claim, so dropping it removes the attribution",
+              "It signals an unreachable document, and dropping it hides the gap",
             ],
             correctIndex: 0,
             explanation:
@@ -2009,9 +2009,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Why does lesson 5 say a scene needs a witness or a document?",
             options: [
               "A narrated moment with dialogue needs a source",
-              "Because a scene is always disputed by the people who took part in it afterwards",
-              "Because dialogue cannot be remembered accurately after more than a few days",
-              "Because a scene is a literary device and has no place in a history course at all",
+              "Because the people in a scene always dispute it",
+              "Because dialogue fades from memory within days",
+              "Because scenes are literary devices, not history",
             ],
             correctIndex: 0,
             explanation:
@@ -2022,9 +2022,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Who wrote the memo of 30 June 1964, and what was his post?",
             options: [
               "Martin Esslin, Head of Drama (Sound)",
-              "Desmond Briscoe, the manager of the Radiophonic Workshop, writing to his own Head",
-              "Verity Lambert, the producer of the programme, writing to the Head of Drama",
-              "F. C. Brooker, Engineer-in-Charge, London (Sound), who had written the monograph",
+              "Desmond Briscoe, Workshop manager",
+              "Verity Lambert, the programme's producer",
+              "F. C. Brooker, Engineer-in-Charge",
             ],
             correctIndex: 0,
             explanation:
@@ -2035,9 +2035,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What did Esslin write that he wished were possible?",
             options: [
               "That the contributors' names be mentioned in the credits",
-              "That the Workshop be given a budget of its own to commission original compositions",
-              "That the staff be transferred out of the Engineering Division into the Drama Department",
-              "That the production be repeated so that a wider audience could hear the sound work",
+              "That the Workshop get its own budget for compositions",
+              "That the staff be moved from Engineering into Drama",
+              "That the production be repeated for a wider audience",
             ],
             correctIndex: 0,
             explanation:
@@ -2048,9 +2048,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What archive reference does Butler give for the Esslin memo?",
             options: [
               "Delia Derbyshire Archive, Manchester, DD332",
-              "BBC Written Archives Centre, Caversham, R97/9/1, the Workshop's administration file",
-              "BBC Written Archives Centre, Caversham, T5/1, 702/1, the Naked Sun production files",
-              "University of York, White Rose eTheses, appendix 4 of the Winter thesis",
+              "BBC Written Archives Centre, Caversham, R97/9/1",
+              "BBC Written Archives Centre, Caversham, T5/1",
+              "White Rose eTheses, York, appendix 4",
             ],
             correctIndex: 0,
             explanation:
@@ -2060,10 +2060,10 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
           {
             prompt: "What does the Esslin memo NOT prove?",
             options: [
-              "That a written rule existed",
-              "That a Head of Department wanted the names printed in the listings and on air",
-              "That the alternative left to him was to record his view in an internal memo",
-              "That Derbyshire and John Harrison had worked on the production called The Tower",
+              "That a written rule against credits existed",
+              "That a Head wanted the names printed",
+              "That his fallback was an internal memo",
+              "That Derbyshire worked on The Tower",
             ],
             correctIndex: 0,
             explanation:
@@ -2073,10 +2073,10 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
           {
             prompt: "How does Butler characterise Briscoe's part in the non-crediting?",
             options: [
-              "A case of following orders",
-              "A deliberate campaign to keep his staff anonymous so that he alone would be known",
-              "An oversight that he corrected as soon as a Head of Department complained to him",
-              "A decision forced on him by the musicians' union, which objected to staff credits",
+              "A case of Briscoe following orders",
+              "A deliberate campaign of anonymity",
+              "An oversight he corrected on complaint",
+              "A decision forced by the musicians' union",
             ],
             correctIndex: 0,
             explanation:
@@ -2087,9 +2087,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does Butler warn against when writing about Briscoe?",
             options: [
               "Constructing a convenient strawman",
-              "Relying on the BBC Written Archives, which he says are incomplete for these years",
-              "Quoting Derbyshire's later interviews, which he says are unreliable about dates",
-              "Treating the Workshop as a single unit, since its staff disagreed among themselves",
+              "Relying on the BBC Written Archives",
+              "Quoting Derbyshire's later interviews",
+              "Treating the Workshop as one unit",
             ],
             correctIndex: 0,
             explanation:
@@ -2100,9 +2100,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What happened when Briscoe went on extended leave in 1966?",
             options: [
               "Derbyshire was placed in charge",
-              "The Workshop was closed for six months and its productions were made by outside composers",
-              "The Engineering Division took over the unit and its studio managers were reassigned",
-              "Dick Mills was promoted to Senior Studio Manager and ran it until Briscoe returned",
+              "The Workshop was closed for six months",
+              "The Engineering Division took over",
+              "Dick Mills ran the unit in his place",
             ],
             correctIndex: 0,
             explanation:
@@ -2113,9 +2113,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What benefit of the doubt did Derbyshire offer Briscoe in 2000?",
             options: [
               "That he was protecting them by keeping their names secret",
-              "That he had never been told by his own superiors that staff could be credited at all",
-              "That he had asked for credits twice and been refused twice by the Head of Drama",
-              "That he had intended to credit the Workshop as a unit rather than its individuals",
+              "That he had never been told staff could be credited",
+              "That he had asked twice for credits and been refused",
+              "That he meant to credit the unit, not individuals",
             ],
             correctIndex: 0,
             explanation:
@@ -2125,10 +2125,10 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
           {
             prompt: "For which programme was Derbyshire credited in the Radio Times, according to Winter?",
             options: [
-              "The Blue Veiled Men",
-              "The Naked Sun, an episode of Out of the Unknown broadcast in 1969",
-              "The Tower, the radio production that prompted the Esslin memo of June 1964",
-              "Giants of Steam, the railway documentary that the Workshop had scored earlier",
+              "The Blue Veiled Men (The World About Us)",
+              "The Naked Sun (Out of the Unknown)",
+              "The Tower (a radio production)",
+              "Giants of Steam (a railway film)",
             ],
             correctIndex: 0,
             explanation:
@@ -2139,9 +2139,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What happened over credits after the 1969 production of The Naked Sun?",
             options: [
               "Other Heads asked for their supervisors to be credited",
-              "The BBC changed the policy so that all Workshop staff were named from that year on",
-              "Briscoe wrote to the producer demanding a credit for Derbyshire and was refused",
-              "The programme was cancelled before transmission, so no credits were printed at all",
+              "The BBC began naming all Workshop staff that year",
+              "Briscoe demanded a credit for Derbyshire and was refused",
+              "The programme was cancelled before transmission",
             ],
             correctIndex: 0,
             explanation:
@@ -2151,10 +2151,10 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
           {
             prompt: "Which archive files does Butler cite for the Naked Sun credit requests?",
             options: [
-              "BBC WAC T5/1, 702/1",
-              "Delia Derbyshire Archive, Manchester, DD333, the BBC information sheet about the theme",
-              "BBC WAC R97/25/1, the Radiophonic Workshop scrapbooks of press clippings",
-              "BBC WAC N15/17/1, the script and press release material for Time On Our Hands",
+              "BBC WAC T5/1, 702/1 (Naked Sun files)",
+              "Delia Derbyshire Archive, DD333",
+              "BBC WAC R97/25/1 (press scrapbooks)",
+              "BBC WAC N15/17/1 (Time On Our Hands)",
             ],
             correctIndex: 0,
             explanation:
@@ -2165,9 +2165,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What did the press do with Derbyshire's name in 1965?",
             options: [
               "Several papers covered her work by name",
-              "They referred to the Workshop only, following the wording of the BBC's information sheet",
-              "They named her once and were asked by the corporation not to do so again",
-              "They named her colleagues but not her, which is why the 1965 coverage is useful",
+              "They named only the Workshop, as the BBC did",
+              "They named her once, then were asked to stop",
+              "They named her colleagues but not her",
             ],
             correctIndex: 0,
             explanation:
@@ -2178,9 +2178,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Why does the 1965 press coverage make the course's claim more precise?",
             options: [
               "The unnamed instruments were the ones the BBC controlled",
-              "It shows the practice had already ended by the middle of the decade",
-              "It shows she was named everywhere except in the newspapers her employer owned",
-              "It shows the Workshop's staff were free to speak to the press without permission",
+              "It shows the practice had ended by the mid-1960s",
+              "It shows she was named except in papers the BBC owned",
+              "It shows Workshop staff could talk to the press freely",
             ],
             correctIndex: 0,
             explanation:
@@ -2190,10 +2190,10 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
           {
             prompt: "What did Briscoe complain about to Barry Letts in January 1974?",
             options: [
-              "That his staff got only a name drop",
-              "That the Radio Times had credited Derbyshire without asking his permission first",
-              "That the tenth anniversary special had been made without consulting the Workshop",
-              "That the programme's composer was being paid more than the Workshop's whole budget",
+              "That his staff got only a name drop in the Radio Times",
+              "That the Radio Times credited Derbyshire unasked",
+              "That the composer earned more than the Workshop's budget",
+              "That the programme had dropped the Workshop's theme",
             ],
             correctIndex: 0,
             explanation:
@@ -2204,9 +2204,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is the irony lesson 6 points out about the 1974 complaint?",
             options: [
               "The man who had not lobbied in 1969 was lobbying now",
-              "The complaint was sent to the wrong department and never reached the magazine",
-              "The magazine had already printed the Workshop's names in the previous week's issue",
-              "Briscoe had himself written the information sheet that omitted Derbyshire in 1964",
+              "The complaint went to the wrong department and was lost",
+              "The magazine had named the staff the week before",
+              "Briscoe had written the sheet omitting Derbyshire in 1964",
             ],
             correctIndex: 0,
             explanation:
@@ -2217,9 +2217,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does Butler call the 1973 Legend of Hell House credit?",
             options: [
               "A strange reversal",
-              "The first correction, since it was the first time her name appeared on a screen",
-              "A clerical error by the film's producers, corrected in later prints of the film",
-              "The moment the BBC's practice changed, since she was still its employee that year",
+              "The first correction",
+              "A clerical error",
+              "A change of practice",
             ],
             correctIndex: 0,
             explanation:
@@ -2230,9 +2230,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Who does Butler say made most of the music for The Legend of Hell House?",
             options: [
               "Hodgson, with an uncredited Dudley Simpson",
-              "Derbyshire alone, working from a score supplied by the film's director",
-              "The BBC Radiophonic Workshop as a unit, which was credited on the film itself",
-              "Dick Mills, who had assisted on the theme a decade earlier and was credited for it",
+              "Derbyshire alone, from the director's score",
+              "The Radiophonic Workshop as a credited unit",
+              "Dick Mills, credited alongside Derbyshire",
             ],
             correctIndex: 0,
             explanation:
@@ -2243,9 +2243,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is a memo, in the vocabulary of lesson 6?",
             options: [
               "An internal written note within an organisation",
-              "A notice circulated to the public explaining how a programme was made",
-              "A minute of a meeting, signed by everyone present and kept in the corporate register",
-              "A note attached to a personnel file recording a complaint against an employee",
+              "A public notice explaining how a programme was made",
+              "A signed minute of a meeting, kept in a register",
+              "A note on a personnel file recording a complaint",
             ],
             correctIndex: 0,
             explanation:
@@ -2256,9 +2256,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What is a billing, as lesson 6 uses the word?",
             options: [
               "The printed entry for a programme in the listings magazine",
-              "The invoice a freelance composer sends for a commissioned piece of music",
-              "The order in which names appear in a closing credit sequence on television",
-              "The schedule of fees agreed between a broadcaster and a performers' union",
+              "The invoice a freelance composer sends for a commission",
+              "The order of names in a television closing credit sequence",
+              "The fee schedule agreed between a broadcaster and a union",
             ],
             correctIndex: 0,
             explanation:
@@ -2269,9 +2269,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "In lesson 6's vocabulary, what is a reversal?",
             options: [
               "A credit arriving for work the person did not do",
-              "A decision by an employer to withdraw a credit that had already been printed",
-              "A correction made after somebody's death, which cannot reach the original record",
-              "The moment a practice ends and the organisation begins naming its staff",
+              "An employer withdrawing a credit already printed",
+              "A correction made after somebody's death",
+              "The moment an organisation begins naming its staff",
             ],
             correctIndex: 0,
             explanation:
@@ -2282,9 +2282,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does lesson 6 say is the next best evidence when a rule cannot be read?",
             options: [
               "Somebody senior trying to break it and failing",
-              "A later account written by a historian who has read the organisation's whole archive",
-              "The absence of any counter-example in the years the rule is supposed to have applied",
-              "A statement by the organisation, issued decades later, admitting that the rule existed",
+              "A later historian's account of the whole archive",
+              "The absence of any counter-example in those years",
+              "A statement issued decades later admitting the rule",
             ],
             correctIndex: 0,
             explanation:
@@ -2295,9 +2295,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What did Esslin say about the contribution compared with the producer's?",
             options: [
               "At least of equal importance",
-              "More important than the producer's, which is why he asked for a separate caption",
-              "Secondary to the producer's, but deserving of a mention in the listings magazine",
-              "Impossible to compare, since the two roles were paid from different budgets",
+              "More important than the producer's",
+              "Secondary, but worth a listing",
+              "Impossible to compare",
             ],
             correctIndex: 0,
             explanation:
@@ -2307,10 +2307,10 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
           {
             prompt: "Which production prompted the Esslin memo?",
             options: [
-              "The Tower",
-              "The Naked Sun, an episode of the science fiction anthology Out of the Unknown",
-              "Doctor Who, in the weeks after the theme was first broadcast in November 1963",
-              "The Blue Veiled Men, the documentary for which she was credited in the listings",
+              "The Tower, a radio production",
+              "The Naked Sun, a television play",
+              "Doctor Who, in late 1963",
+              "The Blue Veiled Men",
             ],
             correctIndex: 0,
             explanation:
@@ -2321,9 +2321,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What did the BBC's 1964 information sheet heading say about the theme?",
             options: [
               "Title music by Ron Grainer with the BBC Radiophonic Workshop",
-              "Title music by Ron Grainer and Delia Derbyshire of the BBC Radiophonic Workshop",
-              "Title music realised by the BBC Radiophonic Workshop from a score by Ron Grainer",
-              "Special sound by the BBC Radiophonic Workshop, with music by Ron Grainer",
+              "Title music by Ron Grainer and Delia Derbyshire",
+              "Title music realised by the Workshop from Grainer's score",
+              "Special sound by the Radiophonic Workshop, music by Grainer",
             ],
             correctIndex: 0,
             explanation:
@@ -2334,9 +2334,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does the word with rather than and do in that heading?",
             options: [
               "It joins a composer to a unit, not to a person",
-              "It shows that the Workshop was paid separately from the composer for the recording",
-              "It records that the unit performed the piece rather than realising it electronically",
-              "It marks the Workshop as the copyright owner of the finished recording",
+              "It shows the Workshop was paid separately",
+              "It records that the unit performed the piece live",
+              "It marks the Workshop as the copyright owner",
             ],
             correctIndex: 0,
             explanation:
@@ -2347,9 +2347,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Who catalogued at the Workshop and later deposited Derbyshire's archive?",
             options: [
               "Mark Ayres",
-              "David Butler, the historian who published the article about her and Doctor Who",
-              "Teresa Winter, whose doctoral thesis worked through the BBC Written Archives",
-              "Desmond Briscoe, who had managed the unit until the middle of the 1970s",
+              "David Butler",
+              "Teresa Winter",
+              "Desmond Briscoe",
             ],
             correctIndex: 0,
             explanation:
@@ -2360,9 +2360,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does lesson 4 say a learner can do with the monograph today?",
             options: [
               "Download it free and check every sentence",
-              "Request it from the BBC Written Archives Centre with two weeks' notice",
-              "Read it only in a reading room, since the series was never digitised",
-              "Buy a reprint from the corporation, which still sells the engineering series",
+              "Request it from Caversham with two weeks' notice",
+              "Read it only on paper, since it was never digitised",
+              "Buy a reprint from the BBC's engineering series",
             ],
             correctIndex: 0,
             explanation:
@@ -2373,9 +2373,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What did Derbyshire say the staff received in place of a credit?",
             options: [
               "A free Radio Times",
-              "A bonus payment at the end of each financial year, divided equally among the staff",
-              "A mention in the corporation's internal newsletter when a programme did well",
-              "A copy of the finished tape, which they were allowed to keep for their own use",
+              "A yearly bonus payment",
+              "A newsletter mention",
+              "A copy of the finished tape",
             ],
             correctIndex: 0,
             explanation:
@@ -2386,9 +2386,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "Which of these does lesson 5 treat as the strongest class of evidence available on the royalty question?",
             options: [
               "Testimony from the person the offer was made to",
-              "A colleague's obituary written forty years later from memory of the same event",
-              "A peer-reviewed article summarising the colleague's account in a single sentence",
-              "A national broadcaster's feature written for the fiftieth anniversary of the programme",
+              "A colleague's obituary written forty years later",
+              "A peer-reviewed article's one-sentence summary",
+              "A broadcaster's fiftieth-anniversary feature",
             ],
             correctIndex: 0,
             explanation:
@@ -2399,9 +2399,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does lesson 6 say a practice that bends tells you?",
             options: [
               "That it is a practice and not a law",
-              "That it was never enforced, and that the anonymity was the staff's own preference",
-              "That it applied only to television credits and never to the listings magazine",
-              "That the manager who applied it was acting outside the authority he had been given",
+              "That it was never enforced at all",
+              "That it applied only to television",
+              "That the manager exceeded his authority",
             ],
             correctIndex: 0,
             explanation:
@@ -2412,9 +2412,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What does the monograph say the Workshop's function is NOT?",
             options: [
               "To create musical compositions as such",
-              "To provide sound effects, which were made live in the drama studios instead",
-              "To work for television, since the unit had been set up for radio drama alone",
-              "To keep a library of its material, which was destroyed after each production",
+              "To provide sound effects for drama",
+              "To work for television as well as radio",
+              "To keep a library of its material",
             ],
             correctIndex: 0,
             explanation:
@@ -2438,9 +2438,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What did the monograph's summary say the end product almost invariably was?",
             options: [
               "A tape recording",
-              "A live performance in a drama studio, cued by the producer during transmission",
-              "A gramophone disc, pressed by the corporation for use in later productions",
-              "A written score, handed to the drama department for an orchestra to perform",
+              "A live performance",
+              "A gramophone disc",
+              "A written score",
             ],
             correctIndex: 0,
             explanation:
@@ -2451,9 +2451,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What kind of source is Hodgson's obituary of Derbyshire?",
             options: [
               "First-hand testimony by a colleague",
-              "A BBC document, since the corporation approved obituaries of its former staff",
-              "A secondary summary, since it was written from the Manchester archive's papers",
-              "An anonymous account, since obituaries in that newspaper carried no byline",
+              "A BBC document approved by the corporation",
+              "A secondary summary from archive papers",
+              "An anonymous, unsigned account",
             ],
             correctIndex: 0,
             explanation:
@@ -2464,9 +2464,9 @@ Winter, T. (2015). *Delia Derbyshire: Sound and music for the BBC Radiophonic Wo
             prompt: "What did the Workshop keep a library of, and why?",
             options: [
               "Its finished sounds, for archive purposes",
-              "The scores of every composer it had worked with, so that royalties could be calculated",
-              "Recordings of each member of staff at work, used to train new arrivals to the unit",
-              "Copies of the Radio Times billings for every programme the unit had contributed to",
+              "Composers' scores, for calculating royalties",
+              "Recordings of staff at work, for training",
+              "Radio Times billings, for its own records",
             ],
             correctIndex: 0,
             explanation:
@@ -2604,9 +2604,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Why does this course quote the Chairman rather than her reply?",
             options: [
               "Only his letter has been read",
-              "Her reply was destroyed when the file was closed",
-              "Her reply repeats his wording, so quoting both would be redundant",
-              "The archive releases employer letters but withholds employee ones",
+              "Her reply was destroyed",
+              "Her reply repeats his wording",
+              "Her reply is withheld by the archive",
             ],
             correctIndex: 0,
             explanation:
@@ -2618,9 +2618,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is the archival citation for the letter read in Section 3?",
             options: [
               "A8520, PH/PAY/002",
-              "R97/11/2, the Radiophonic Workshop General file held at Caversham for 1953 to 1973",
-              "DD332, the memo about The Tower held in the Delia Derbyshire Archive in Manchester",
-              "A6119, 167, the security file listed by the archive under a different series",
+              "R97/11/2, Caversham",
+              "DD332, Manchester",
+              "A6119, item 167",
             ],
             correctIndex: 0,
             explanation:
@@ -2631,9 +2631,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "How is the letter of 3 March 1950 marked and signed?",
             options: [
               "Marked PERSONAL and signed CHAIRMAN",
-              "Marked CONFIDENTIAL and signed by the Secretary of the Public Service Board",
-              "Marked URGENT and signed by the Chief of the Radiophysics Laboratory in Sydney",
-              "Unmarked and unsigned, which is why the archive identifies the author from the file",
+              "Marked CONFIDENTIAL and signed SECRETARY",
+              "Marked URGENT and signed CHIEF",
+              "Unmarked, and signed with a full name",
             ],
             correctIndex: 0,
             explanation:
@@ -2644,9 +2644,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "How is the letter addressed?",
             options: [
               "To Miss R. Payne-Scott at the Radiophysics Laboratory",
-              "To Mrs R. Payne-Scott at her home address in Sydney, marked for her attention only",
-              "To the Chief of the Radiophysics Laboratory, for onward transmission to the officer",
-              "To the Secretary of the Public Service Board, with a copy to the officer concerned",
+              "To Mrs R. Payne-Scott at her home address in Sydney",
+              "To the Chief of the Radiophysics Laboratory for her",
+              "To the Public Service Board's Secretary, copied to her",
             ],
             correctIndex: 0,
             explanation:
@@ -2657,9 +2657,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the archive say the letter is responding to?",
             options: [
               "Her written objection about married women",
-              "A request from her for leave of absence before the birth of her first child",
-              "A complaint made by her Chief about the standard of her laboratory work",
-              "An application she made for a permanent appointment after a period as a temporary",
+              "A request for leave before her first child",
+              "A complaint by her Chief about her work",
+              "Her application for a permanent appointment",
             ],
             correctIndex: 0,
             explanation:
@@ -2670,9 +2670,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the letter say about married women in the Acts constituting CSIR and CSIRO?",
             options: [
               "Neither Act mentions them at all",
-              "Both Acts require a married woman to obtain the Minister's consent before continuing",
-              "The earlier Act bars them and the later one is silent, which is why the old terms applied",
-              "Both Acts leave the question to the Public Service Board rather than to the Council",
+              "Both Acts require the Minister's consent",
+              "The earlier Act bars them",
+              "Both defer to the Public Service Board",
             ],
             correctIndex: 0,
             explanation:
@@ -2683,9 +2683,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which clause of the earlier Act does the letter cite as the source of the power?",
             options: [
               "Section 14A(2)",
-              "Section 5, which lists the classes of officer the Council was permitted to employ",
-              "Section 44, which required an instrument of transfer to be recorded within three months",
-              "Section 15 of Act 15 of 1945, which dealt with superannuation for female officers",
+              "Section 5",
+              "Section 44",
+              "Section 9A",
             ],
             correctIndex: 0,
             explanation:
@@ -2696,9 +2696,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did the regulation say happened to a female officer upon her marriage?",
             options: [
               "She was deemed to have retired from the service",
-              "She was required to apply in writing within one month for permission to continue",
-              "She was transferred to the temporary staff automatically, keeping her superannuation",
-              "She was given six months in which to decide whether to resign or to seek an exemption",
+              "She had to apply within a month to continue",
+              "She moved to temporary staff automatically",
+              "She had six months to resign or seek exemption",
             ],
             correctIndex: 0,
             explanation:
@@ -2709,9 +2709,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Where does the letter say the regulation came from?",
             options: [
               "A similar regulation under the Public Service Act",
-              "A determination made by the Council in the year the laboratory was established",
-              "A wartime instruction that had never been withdrawn after the war ended",
-              "A decision of the Minister, taken on the recommendation of the Public Service Board",
+              "A Council determination when the laboratory opened",
+              "A wartime instruction never withdrawn after the war",
+              "A Minister's decision on the Board's recommendation",
             ],
             correctIndex: 0,
             explanation:
@@ -2722,9 +2722,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which Act carried the superannuation clause the letter quotes?",
             options: [
               "Act 15 of 1945",
-              "The Act constituting CSIRO, passed in 1949 when CSIR was reorganised",
-              "The Public Service Act, in the form it took after the amendment of November 1966",
-              "The Act constituting CSIR, under which the marriage regulation was prescribed",
+              "The CSIRO Act of 1949",
+              "The Public Service Act",
+              "The CSIR Act",
             ],
             correctIndex: 0,
             explanation:
@@ -2735,9 +2735,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did the Chairman say about the Superannuation Act clause?",
             options: [
               "There is no ground for equivocation or varying interpretation",
-              "That it had been criticised in Parliament and would probably be amended within the year",
-              "That the Council could set it aside if the Minister certified special circumstances",
-              "That it applied only to officers who had joined the scheme before the war",
+              "That it had been criticised in Parliament and would be amended",
+              "That the Council could set it aside on a ministerial certificate",
+              "That it applied only to officers who joined before the war",
             ],
             correctIndex: 0,
             explanation:
@@ -2748,9 +2748,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is the general lesson of step three in lesson 7?",
             options: [
               "The rule lived in a regulation, not in the Act",
-              "The rule was never written down, which is why the Chairman had to explain it by letter",
-              "The rule was made by the Minister personally and applied case by case",
-              "The rule had lapsed by 1950 and was applied to her in error by Head Office",
+              "The rule was made by the Minister, case by case",
+              "The rule had lapsed by 1950 and was misapplied",
+              "The rule was unwritten, so it had to be explained",
             ],
             correctIndex: 0,
             explanation:
@@ -2761,9 +2761,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the letter say about CSIRO's terms and conditions in March 1950?",
             options: [
               "It was carrying on under the old CSIR terms",
-              "It had completed new terms which the Public Service Board had already approved",
-              "It had suspended all terms pending the outcome of her own objection to them",
-              "It had adopted the Public Service Act's terms in full when CSIR became CSIRO",
+              "Its new terms had been approved by the Board",
+              "It had suspended all terms pending her objection",
+              "It had adopted the Public Service Act's terms",
             ],
             correctIndex: 0,
             explanation:
@@ -2774,9 +2774,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "When was the Public Service Act amended so that women were no longer required to resign on marriage?",
             options: [
               "November 1966",
-              "August 1945, when the superannuation provision quoted in the letter received assent",
-              "March 1950, in the months after this correspondence reached the Chairman",
-              "July 1951, the month in which she resigned before the birth of her first child",
+              "August 1945",
+              "March 1950",
+              "July 1951",
             ],
             correctIndex: 0,
             explanation:
@@ -2787,9 +2787,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the archive say married women in the public service were obliged to accept?",
             options: [
               "Temporary positions with poor prospects",
-              "A reduction in salary of one quarter, applied from the date of the marriage itself",
-              "A transfer to a different department, chosen by the Public Service Board",
-              "A written undertaking to resign as soon as a permanent officer could replace them",
+              "A salary cut of one quarter on marriage",
+              "A transfer chosen by the Public Service Board",
+              "An undertaking to resign when replaced",
             ],
             correctIndex: 0,
             explanation:
@@ -2800,9 +2800,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "In this course's vocabulary, what is a regulation?",
             options: [
               "A rule made under a power granted by an Act",
-              "A decision by a court about how an Act should be applied in a particular case",
-              "An internal instruction circulated to managers but never published anywhere",
-              "A clause of an Act that applies only to one class of employee",
+              "A court's decision on how an Act applies",
+              "An unpublished internal instruction to managers",
+              "A clause of an Act for one class of employee",
             ],
             correctIndex: 0,
             explanation:
@@ -2813,9 +2813,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is a permanent officer, as lesson 7 uses the term?",
             options: [
               "A public servant with tenure and superannuation",
-              "An officer appointed for life, who cannot be dismissed for any reason whatever",
-              "An employee whose post is funded from a recurrent rather than a project budget",
-              "A member of staff who has completed a probationary period of at least five years",
+              "An officer appointed for life, never dismissible",
+              "An employee funded from a recurrent budget",
+              "Staff who have served a five-year probation",
             ],
             correctIndex: 0,
             explanation:
@@ -2826,9 +2826,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does assent mean in lesson 7's vocabulary?",
             options: [
               "The moment a bill becomes an Act",
-              "The Minister's agreement that an officer's employment is desirable despite her marriage",
-              "The Council's approval of a regulation proposed by its own Executive",
-              "An officer's written acceptance of the terms on which she is employed",
+              "A Minister's approval of employment",
+              "The Council's approval of a regulation",
+              "An officer's acceptance of her terms",
             ],
             correctIndex: 0,
             explanation:
@@ -2839,9 +2839,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Why does lesson 7 say this document is the opposite experience to Section 2?",
             options: [
               "The rule is quoted rather than inferred",
-              "The employer is defending its practice rather than explaining it to a member of staff",
-              "The document is secondary rather than primary, since the archive wrote the summary",
-              "The rule is about pay rather than about whose name appears on a piece of work",
+              "The employer defends rather than explains",
+              "The document is secondary, not primary",
+              "The rule concerns pay, not names on work",
             ],
             correctIndex: 0,
             explanation:
@@ -2851,10 +2851,10 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
           {
             prompt: "Which organisation's head office created the file this letter sits in?",
             options: [
-              "CSIRO Head Office",
-              "The Public Service Board, which kept the personnel files of all Commonwealth officers",
-              "The Radiophysics Laboratory, which held its own staff records at the university",
-              "The Australian Security Intelligence Organisation, whose file the archive also holds",
+              "CSIRO Head Office, in 1950",
+              "The Public Service Board",
+              "The Radiophysics Laboratory",
+              "ASIO, the security service",
             ],
             correctIndex: 0,
             explanation:
@@ -2865,9 +2865,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did the Chairman say would happen if everyone acted as he understood her to think proper?",
             options: [
               "The administration would be greatly complicated",
-              "The Minister would be forced to withdraw the exception for special circumstances",
-              "The organisation would lose its most experienced officers within a single year",
-              "Parliament would have to amend the Superannuation Act to close the gap",
+              "The Minister would withdraw the exception",
+              "It would lose its most experienced officers",
+              "Parliament would have to amend the Superannuation Act",
             ],
             correctIndex: 0,
             explanation:
@@ -2878,9 +2878,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "How does the Chairman introduce his disagreement with her stated view?",
             options: [
               "There can, of course, be two opinions on that point",
-              "By quoting the regulation again, since he says it answers the question by itself",
-              "By referring her to the Public Service Board, which had jurisdiction over the dispute",
-              "By declining to discuss the question, on the ground that it was not a matter for him",
+              "By quoting the regulation again as a full answer",
+              "By referring her to the Public Service Board",
+              "By declining to discuss the question at all",
             ],
             correctIndex: 0,
             explanation:
@@ -2891,9 +2891,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which specific piece of evidence about her does the Chairman cite in the letter?",
             options: [
               "A bank account opened in her married name",
-              "A wedding announcement printed in a Sydney newspaper in the previous December",
-              "A statement by her Chief that the marriage had been known in the Division for years",
-              "A form completed by her in which the married state was mentioned and then withdrawn",
+              "A wedding notice in a Sydney newspaper",
+              "A statement by her Chief about the marriage",
+              "A colleague's report of the wedding",
             ],
             correctIndex: 0,
             explanation:
@@ -2904,9 +2904,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the Chairman say about who knew of the marriage?",
             options: [
               "His office did not know, and he doubts her Chief did",
-              "Her Chief had reported it to Head Office as soon as he learned of it in 1949",
-              "The Division's clerical officers had recorded it on a form which Head Office received",
-              "The Public Service Board had been notified but had not passed the notice on",
+              "Her Chief reported it to Head Office in 1949",
+              "Division clerks recorded it on a form Head Office got",
+              "The Public Service Board knew but did not pass it on",
             ],
             correctIndex: 0,
             explanation:
@@ -2917,9 +2917,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "How does the Chairman propose to settle the matter at the end of the letter?",
             options: [
               "She should tell him the date of her marriage",
-              "She should apply to the Minister for a certificate of special circumstances",
-              "She should resign at once and reapply for a temporary post in the same laboratory",
-              "She should put her objection in writing to the Public Service Board instead",
+              "She should seek a Minister's certificate",
+              "She should resign and reapply as a temporary",
+              "She should write to the Public Service Board",
             ],
             correctIndex: 0,
             explanation:
@@ -2930,9 +2930,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is missing from the page that prints the Chairman's letter?",
             options: [
               "Her letter of 20 February 1950",
-              "The regulation itself, which the Chairman describes but does not quote in the letter",
-              "The date, which the archive supplies from the file rather than from the document",
-              "The signature, which was cut from the page before the file reached the archive",
+              "The regulation's own wording",
+              "The date of the letter",
+              "The Chairman's signature",
             ],
             correctIndex: 0,
             explanation:
@@ -2943,9 +2943,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does this course do every time it uses the Chairman's account of her argument?",
             options: [
               "It says that he is the one summarising her",
-              "It rewrites the summary in her voice, so that the learner hears her side of the dispute",
-              "It prints the sentence other accounts attribute to her, with a note about its source",
-              "It leaves the summary out, since a paraphrase by the other side proves nothing at all",
+              "It rewrites the summary in her own voice",
+              "It prints the sentence others attribute to her",
+              "It leaves the summary out entirely",
             ],
             correctIndex: 0,
             explanation:
@@ -2956,9 +2956,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the archive's page say she did for six years?",
             options: [
               "Kept the marriage from her employer",
-              "Worked as a temporary officer while applying repeatedly for a permanent post",
-              "Corresponded with Head Office about the regulation before the Chairman replied",
-              "Taught at a school in Sydney while continuing her research in her own time",
+              "Worked as a temporary officer",
+              "Wrote to Head Office about the rule",
+              "Taught at a school in Sydney",
             ],
             correctIndex: 0,
             explanation:
@@ -2969,9 +2969,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What happened to her employment after the marriage became known in 1950?",
             options: [
               "She was reinstated on a temporary basis",
-              "She was dismissed outright and never worked for the organisation again after that year",
-              "She was granted a ministerial certificate of special circumstances and kept her post",
-              "She was transferred to another division of the organisation at the same grade",
+              "She was dismissed outright for good",
+              "She kept her post by ministerial certificate",
+              "She moved to another division at her grade",
             ],
             correctIndex: 0,
             explanation:
@@ -2982,9 +2982,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What wrinkle does lesson 8 point out in the archive's own summary?",
             options: [
               "It calls the 1951 departure a resignation from a permanent position",
-              "It gives two different dates for the letter, one in the transcript and one in the note",
-              "It names two different chairmen, one in the note and one in the educational value text",
-              "It says she never returned to CSIRO and then describes work she did there afterwards",
+              "It gives two dates for the letter, one in the transcript, one in the note",
+              "It names two different chairmen, in the note and in the teaching text",
+              "It says she never returned, then describes her later work there",
             ],
             correctIndex: 0,
             explanation:
@@ -2995,9 +2995,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "How does this course treat the ASIO material mentioned on the archive's page?",
             options: [
               "One sentence, and the file itself was not read",
-              "As a second case study, with its own lesson about security files and their contents",
-              "As the explanation for the employment decision, since the two happened in the same years",
-              "It is left out entirely, because a security file is not a record about employment",
+              "As a second case study with its own lesson",
+              "As the explanation for the employment decision",
+              "It is left out entirely as irrelevant",
             ],
             correctIndex: 0,
             explanation:
@@ -3021,9 +3021,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "In lesson 8's vocabulary, what is a paraphrase?",
             options: [
               "Somebody else's restatement of a person's words",
-              "A summary written by an archivist to explain a document to students reading it",
-              "A translation of a document into modern language, keeping the original meaning",
-              "A quotation with the hedges removed, which is how compressions usually begin",
+              "An archivist's summary written for students",
+              "A translation of a document into modern language",
+              "A quotation with the hedges removed from it",
             ],
             correctIndex: 0,
             explanation:
@@ -3034,9 +3034,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Whose word is regularising, in this correspondence?",
             options: [
               "The Chairman's",
-              "The archive's, used in its note to describe what the letter was trying to achieve",
-              "Payne-Scott's, quoted by the Chairman from her letter of 20 February 1950",
-              "The Public Service Board's, quoted by the Chairman from the regulation itself",
+              "The archive's",
+              "Payne-Scott's",
+              "The Board's",
             ],
             correctIndex: 0,
             explanation:
@@ -3047,9 +3047,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does this course put on a research list rather than into a lesson?",
             options: [
               "Whether her own letter survives and what it says",
-              "Whether the Chairman had authority to apply the regulation to a superannuated officer",
-              "Whether the marriage rule was ever applied to a male officer in comparable circumstances",
-              "Whether the archive's transcript is accurate, since the original was not seen",
+              "Whether the Chairman had authority to apply the rule",
+              "Whether the rule ever applied to a male officer",
+              "Whether the archive's transcript is accurate",
             ],
             correctIndex: 0,
             explanation:
@@ -3060,9 +3060,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does lesson 9 say plainly about Payne-Scott's case?",
             options: [
               "Nobody took her name off a piece of work",
-              "Her results were published by a colleague who added his own name to them later",
-              "Her name was removed from the laboratory's list of staff after the marriage was known",
-              "Her employer credited the laboratory as a unit rather than naming its researchers",
+              "A colleague published her results as his own",
+              "Her name was struck off the staff list",
+              "The laboratory was credited, not its researchers",
             ],
             correctIndex: 0,
             explanation:
@@ -3073,9 +3073,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "In lesson 9's table, what was the category in the Derbyshire case?",
             options: [
               "Staff of a service department",
-              "Married female officer, which is the category in the other case as well",
-              "Freelance composers working for the corporation on a commission basis",
-              "Women employed anywhere in the corporation during the 1960s",
+              "Married female officers",
+              "Freelance composers on commission",
+              "Women employed by the corporation",
             ],
             correctIndex: 0,
             explanation:
@@ -3086,9 +3086,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "In lesson 9's table, who applied the rule in each case?",
             options: [
               "A manager following a practice, and a chairman quoting a regulation",
-              "A producer choosing the credits, and a minister certifying special circumstances",
-              "An engineer preparing a publication, and a clerk completing a personnel form",
-              "A head of drama asking for names, and a public service board refusing them",
+              "A producer choosing credits, and a minister certifying circumstances",
+              "An engineer preparing a publication, and a clerk filing a form",
+              "A head of drama asking for names, and a public service board refusing",
             ],
             correctIndex: 0,
             explanation:
@@ -3099,9 +3099,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did each rule remove the woman from?",
             options: [
               "The credits and listings, and permanent staff and superannuation",
-              "A royalty payment in both cases, one from a publisher and one from a pension fund",
-              "A professional society in one case and a government department in the other",
-              "The public record in both cases, since neither woman was named in any document",
+              "A royalty payment in both cases, from a publisher and a pension fund",
+              "A professional society in one case and a department in the other",
+              "The public record in both, since neither was named in any document",
             ],
             correctIndex: 0,
             explanation:
@@ -3111,10 +3111,10 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
           {
             prompt: "What does lesson 9's bottom row compare?",
             options: [
-              "What could be recovered later",
-              "Which employer kept the better archive of its own decisions about the two women",
-              "Which rule was older, since one dated from the 1940s and the other was never dated",
-              "Which woman objected in writing, and whether the objection was answered",
+              "What could be recovered later, and what could not",
+              "Which employer kept the better archive of its decisions",
+              "Which rule was older, and which was never dated",
+              "Which woman objected in writing, and was answered",
             ],
             correctIndex: 0,
             explanation:
@@ -3125,9 +3125,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the 1966 amendment do for Payne-Scott?",
             options: [
               "Nothing, because it changes the rule going forward",
-              "It restored her superannuation entitlements from the date of her marriage in the 1940s",
-              "It reinstated every woman who had been forced to resign since the war ended",
-              "It required CSIRO to write to her and apologise for applying the old regulation",
+              "It restored her superannuation from her marriage date",
+              "It reinstated every woman forced out since the war",
+              "It made CSIRO write to her with an apology",
             ],
             correctIndex: 0,
             explanation:
@@ -3137,10 +3137,10 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
           {
             prompt: "Which lesson in Who Gets the Credit does the Payne-Scott file complicate?",
             options: [
-              "Five ways a name disappears",
-              "Working inside the corporation, on employee work converted into a corporate identity",
-              "Five claims that do not survive checking, which corrects a famous story about a death",
-              "Who counts as an author, and who gets thanked, on the difference between the two",
+              "Five ways a name disappears, lesson 3",
+              "Working inside the corporation, lesson 10",
+              "Five claims that do not survive checking",
+              "Who counts as an author, and who gets thanked",
             ],
             correctIndex: 0,
             explanation:
@@ -3151,9 +3151,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did that lesson treat as the rare case where a barrier was written down?",
             options: [
               "An 1858 legal opinion",
-              "A 1909 statute setting out the classes in which a work could be registered",
-              "A 1945 superannuation provision about officers who marry after its commencement",
-              "A 1963 engineering monograph naming the grades that staffed a broadcasting unit",
+              "A 1909 copyright statute",
+              "A 1945 superannuation clause",
+              "A 1963 engineering monograph",
             ],
             correctIndex: 0,
             explanation:
@@ -3164,9 +3164,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Why does lesson 9 say a document like this is worth more than its contents?",
             options: [
               "It is the only way to see a mechanism that usually leaves nothing",
-              "It proves the employer acted unlawfully, which no other document in the file does",
-              "It carries an archival citation, which makes every claim built on it checkable",
-              "It was written for students, so it explains the rule more clearly than a statute would",
+              "It proves the employer broke the law, which no other paper does",
+              "It carries an archival citation, so every claim on it is checkable",
+              "It was written for students, so it explains the rule more clearly",
             ],
             correctIndex: 0,
             explanation:
@@ -3177,9 +3177,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What can the record show about the cost of the rule to Payne-Scott?",
             options: [
               "The removal, the temporary status and the resignation",
-              "The salary she lost between 1950 and 1966, which the file records year by year",
-              "The papers she would have published had she remained on the permanent staff",
-              "The promotion she had been recommended for in the year the marriage became known",
+              "The salary she lost from 1950 to 1966, year by year",
+              "The papers she would have published on permanent staff",
+              "The promotion she was recommended for that same year",
             ],
             correctIndex: 0,
             explanation:
@@ -3190,9 +3190,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the archive say about her work in the 1950s?",
             options: [
               "She was part of a team measuring radio emissions from the Sun and stars",
-              "She built the first radio telescope in the southern hemisphere at a site near Sydney",
-              "She led the laboratory's radar programme after the war and trained its new recruits",
-              "She published the first Australian papers on the physics of the upper atmosphere",
+              "She built the first radio telescope in the southern hemisphere",
+              "She led the laboratory's radar programme and trained its recruits",
+              "She published the first Australian papers on the upper atmosphere",
             ],
             correctIndex: 0,
             explanation:
@@ -3203,9 +3203,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Why does this course say so little about the content of her science?",
             options: [
               "Her scientific papers were not read for it",
-              "Because her research was classified and the papers have never been released",
-              "Because the credit question does not depend on what any of her papers contained",
-              "Because the archive's summary contradicts the published histories of the laboratory",
+              "Her research was classified and never released",
+              "The archive's summary contradicts the histories",
+              "Her papers were lost when she resigned in 1951",
             ],
             correctIndex: 0,
             explanation:
@@ -3216,9 +3216,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is lesson 9's honest summary of the two cases?",
             options: [
               "The paperwork was in order in both",
-              "Both employers broke their own rules and were never held to account for it",
-              "Both women were robbed of a byline by a colleague who took the work as his own",
-              "Both cases were settled later, one by a credit and one by a change in the law",
+              "Both employers broke their own rules",
+              "Both women lost a byline to a colleague",
+              "Both cases were later settled in full",
             ],
             correctIndex: 0,
             explanation:
@@ -3229,9 +3229,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is an employment bar, as lesson 9 defines it?",
             options: [
               "A rule preventing a category of person from holding a job",
-              "A clause preventing an employee from working for a competitor after leaving",
-              "A rule about whose name appears on work made by a team of employees",
-              "A period during which a former officer may not be re-employed by the same body",
+              "A clause stopping an ex-employee working for a competitor",
+              "A rule about whose name appears on work made by a team",
+              "A period in which a former officer may not be re-employed",
             ],
             correctIndex: 0,
             explanation:
@@ -3242,9 +3242,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Why does this catalog insist on naming the mechanism?",
             options: [
               "Because stolen covers several different things",
-              "Because a mechanism can be sued over, while a story about a villain cannot",
-              "Because archives catalogue their holdings by mechanism rather than by person",
-              "Because the word credit means different things in music, science and architecture",
+              "Because a mechanism can be sued over, a story cannot",
+              "Because archives catalogue by mechanism, not person",
+              "Because credit means different things in each field",
             ],
             correctIndex: 0,
             explanation:
@@ -3255,9 +3255,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does prospective mean in lesson 9's vocabulary?",
             options: [
               "Forward-looking, returning nothing to earlier cases",
-              "Applying to every officer of a department, whatever their length of service",
-              "Written in advance of the conduct it governs, so that nobody can be surprised by it",
-              "Subject to a minister's certificate, which can be granted or withheld case by case",
+              "Applying to every officer, whatever their service",
+              "Applying only to officers appointed before a set date",
+              "Subject to a minister's case-by-case certificate",
             ],
             correctIndex: 0,
             explanation:
@@ -3268,9 +3268,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What is tenure, as this course uses the word?",
             options: [
               "Permanence in a post, with its entitlements",
-              "The length of time an officer has served, which decides seniority within a grade",
-              "A fixed term of appointment, renewable by the Council with the Minister's approval",
-              "The right of an employee to be named on work produced by their department",
+              "The length of an officer's service in a grade",
+              "A fixed, renewable term of appointment",
+              "The right to be named on a department's work",
             ],
             correctIndex: 0,
             explanation:
@@ -3281,9 +3281,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which two words describe what the Chairman's letter does that no BBC document does?",
             options: [
               "Quotes the rule",
-              "Names the woman, since the BBC documents of the period name nobody at all",
-              "Records a refusal, since the BBC documents record only requests that were granted",
-              "Dates the practice, since nobody knows when the BBC convention began or ended",
+              "Names the woman",
+              "Records a refusal",
+              "Dates the practice",
             ],
             correctIndex: 0,
             explanation:
@@ -3294,9 +3294,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What would a researcher who read only the CSIR and CSIRO Acts conclude?",
             options: [
               "That neither Act mentions married women",
-              "That the marriage rule was invalid, since no Act authorised it",
-              "That the rule applied only to officers in the superannuation scheme",
-              "That the Minister had to approve every appointment of a woman personally",
+              "That the marriage rule was invalid",
+              "That the rule covered only the pension scheme",
+              "That the Minister approved each woman's post",
             ],
             correctIndex: 0,
             explanation:
@@ -3307,9 +3307,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which exception did the marriage regulation contain?",
             options: [
               "A ministerial certificate of special circumstances",
-              "An exemption for officers with more than ten years' service in the same division",
-              "A right of appeal to the Public Service Board within one month of the marriage",
-              "A discretion for the Chief of a Division to retain an officer he considered essential",
+              "An exemption after ten years' service in a division",
+              "A right of appeal to the Board within one month",
+              "A Chief's discretion to keep an essential officer",
             ],
             correctIndex: 0,
             explanation:
@@ -3320,9 +3320,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the letter show about where the marriage rule had come from?",
             options: [
               "It was copied from the wider public service",
-              "It was written specifically for the Radiophysics Laboratory during the war",
-              "It was imposed by the Public Service Board after CSIR became CSIRO in 1949",
-              "It originated in the Superannuation Act and was later extended to employment",
+              "It was written for the Radiophysics Laboratory",
+              "The Board imposed it after CSIR became CSIRO",
+              "It began in the Superannuation Act and spread",
             ],
             correctIndex: 0,
             explanation:
@@ -3333,9 +3333,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What kind of document is a personnel file, in this course's vocabulary?",
             options: [
               "An employer's file about one employee",
-              "A public register that anyone may search for the terms of a person's employment",
-              "A collection of an employee's own papers, deposited by her family after her death",
-              "A summary prepared by an archive when a government department is wound up",
+              "A public register of employment terms",
+              "An employee's own papers, given by family",
+              "An archive's summary of a closed department",
             ],
             correctIndex: 0,
             explanation:
@@ -3346,9 +3346,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did Payne-Scott and Joan Freeman become in June 1941?",
             options: [
               "The laboratory's first women physicists",
-              "The first women admitted to the Commonwealth's superannuation scheme as officers",
-              "The first two women to be granted permanent appointments anywhere in CSIR",
-              "The first Australian physicists to work on radar, which had until then been British work",
+              "The first women in the superannuation scheme",
+              "The first women to lead a CSIR division",
+              "The first Australian physicists on radar",
             ],
             correctIndex: 0,
             explanation:
@@ -3359,9 +3359,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "When did CSIR become CSIRO, according to the archive's page?",
             options: [
               "1949",
-              "1941, when the Radiophysics Laboratory was established at the University of Sydney",
-              "1945, in the same Act that carried the superannuation provision quoted in the letter",
-              "1966, when the Public Service Act was amended to end the marriage requirement",
+              "1941",
+              "1945",
+              "1966",
             ],
             correctIndex: 0,
             explanation:
@@ -3372,9 +3372,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does lesson 8 say a file actually is?",
             options: [
               "Whatever somebody kept",
-              "A complete record of a dispute, since public servants were required to file every letter",
-              "A neutral account, since the archive checks both sides before it transcribes a document",
-              "The employer's case, prepared for a hearing that in this instance never took place",
+              "A complete record of a dispute",
+              "A neutral, two-sided account",
+              "The employer's prepared case",
             ],
             correctIndex: 0,
             explanation:
@@ -3385,9 +3385,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the imbalance in this file mirror, in the course's larger argument?",
             options: [
               "One side's paper survives and the other's does not",
-              "One employer kept records and the other destroyed them when the unit closed",
-              "One country's archives are open to the public and the other's are closed",
-              "One rule was applied by a man and the other by a committee of officials",
+              "One employer kept records and the other destroyed them",
+              "One country's archives are open, the other's closed",
+              "One rule was applied by a man, the other by a committee",
             ],
             correctIndex: 0,
             explanation:
@@ -3398,9 +3398,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does lesson 8 say about the politeness of the Chairman's letter?",
             options: [
               "The form of the document is part of what makes it teachable",
-              "It proves that he disagreed privately with the rule he was applying to her",
-              "It shows the letter was drafted by a clerk rather than by the Chairman himself",
-              "It means the letter cannot be read as an enforcement of the regulation at all",
+              "It proves he privately disagreed with the rule he applied",
+              "It shows a clerk drafted it, not the Chairman himself",
+              "It means the letter cannot be read as enforcing the rule",
             ],
             correctIndex: 0,
             explanation:
@@ -3410,10 +3410,10 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
           {
             prompt: "Why does lesson 9 begin by stating the obvious difference?",
             options: [
-              "Blurring it would weaken the course",
-              "Because a reader who has taken the other courses will already expect a stolen byline",
-              "Because the archive's own summary describes it as a case of stolen credit",
-              "Because the difference is the only thing the two cases have in common",
+              "Blurring the two injuries would weaken the course",
+              "Readers of the other courses expect a stolen byline",
+              "The archive's summary calls it a case of stolen credit",
+              "The difference is all the two cases have in common",
             ],
             correctIndex: 0,
             explanation:
@@ -3424,9 +3424,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did each case leave on paper, in lesson 9's table?",
             options: [
               "Documents that name nobody, and a letter that quotes the rule",
-              "A signed contract in each case, one with a broadcaster and one with a government body",
-              "A set of press clippings in one case and a scientific bibliography in the other",
-              "Nothing in either case, which is why both had to be reconstructed from testimony",
+              "A signed employment contract in each case, kept by the employer",
+              "Press clippings in one, and a scientific bibliography in the other",
+              "Nothing in either, so both were rebuilt from later testimony",
             ],
             correctIndex: 0,
             explanation:
@@ -3437,9 +3437,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "How long does the archive say ASIO listed her as a person of interest?",
             options: [
               "From 1948 to 1959",
-              "From 1941 to 1945, during the classified defence research at the laboratory",
-              "From 1950 to 1966, the years between the marriage rule and its amendment",
-              "For the whole of her employment by CSIR and CSIRO, from 1941 until 1951",
+              "From 1941 to 1945",
+              "From 1950 to 1966",
+              "From 1941 to 1951",
             ],
             correctIndex: 0,
             explanation:
@@ -3450,9 +3450,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does lesson 8 say a government's files about a person contain?",
             options: [
               "Several separate interests, kept for separate reasons",
-              "A single narrative, assembled by the department that employed the person",
-              "Only what the person themselves submitted, since nothing else is retained",
-              "The complete record of a career, which is why such files settle biographical questions",
+              "A single narrative assembled by the employing department",
+              "Only what the person themselves submitted to it",
+              "The complete record of a career, settling any question",
             ],
             correctIndex: 0,
             explanation:
@@ -3463,9 +3463,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "Which phrase from the letter shows the employer treating her employment as the thing out of order?",
             options: [
               "Regularising the whole affair",
-              "No ground for equivocation or varying interpretation, which describes the statute",
-              "Special circumstances which made her employment desirable, from the regulation",
-              "Relying on their discretion and good sense, which describes the other officers",
+              "No ground for equivocation",
+              "Special circumstances",
+              "Relying on their discretion",
             ],
             correctIndex: 0,
             explanation:
@@ -3476,9 +3476,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What does the archive say happened after 1951?",
             options: [
               "She never returned to CSIRO",
-              "She was reinstated as a permanent officer once the Public Service Act was amended",
-              "She continued her research at the laboratory on a part-time temporary basis",
-              "She was awarded compensation for the entitlements lost when she was forced to retire",
+              "She was made permanent after 1966",
+              "She stayed on part-time",
+              "She was paid compensation",
             ],
             correctIndex: 0,
             explanation:
@@ -3489,9 +3489,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What kind of page is the source for the whole of Section 3?",
             options: [
               "A national archive's learning resource, with a full transcript",
-              "A scholarly article about women in Australian science, published in a journal",
-              "An obituary written by a colleague who had worked at the same laboratory",
-              "A government report into discrimination in the Commonwealth Public Service",
+              "A scholarly journal article about women in Australian science",
+              "An obituary by a colleague from the same laboratory",
+              "A government report into discrimination in the public service",
             ],
             correctIndex: 0,
             explanation:
@@ -3502,9 +3502,9 @@ National Archives of Australia. (n.d.). *Rules for married women working at CSIR
             prompt: "What did the Chairman ask her to supply about the form she had mentioned?",
             options: [
               "Details of it, and to whom and when it was submitted",
-              "A signed copy of it, certified by her Chief at the Radiophysics Laboratory",
-              "An explanation of why she had completed it before notifying Head Office",
-              "Confirmation that it had been destroyed, since Head Office had no record of it",
+              "A copy certified by her Chief at the laboratory",
+              "Why she had completed it before notifying Head Office",
+              "Confirmation that her copy had been destroyed",
             ],
             correctIndex: 0,
             explanation:
@@ -3611,9 +3611,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "How does lesson 10 describe what a public register is?",
             options: [
               "A government office where a private person makes an entry",
-              "An employer's internal file about the work its staff have produced in a given year",
-              "A published list of rules that an industry has agreed to apply to its members",
-              "A catalogue of works held by a library, compiled by its own staff from the shelves",
+              "An employer's internal file about the work its staff produced",
+              "A published list of rules an industry applies to its members",
+              "A library catalogue of works, compiled by its own staff",
             ],
             correctIndex: 0,
             explanation:
@@ -3624,9 +3624,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "Where and when was The Sun Dance Opera first produced?",
             options: [
               "Vernal, Utah, in February 1913",
-              "New York City, in 1938, by a light opera guild a few months after her death",
-              "Provo, Utah, in 1935, when the opera was revived at Brigham Young University",
-              "Washington, D.C., in 1921, at a hall hired by a national Indian organisation",
+              "New York City, in December 1938",
+              "Provo, Utah, in February 1935",
+              "Washington, D.C., in May 1921",
             ],
             correctIndex: 0,
             explanation:
@@ -3637,9 +3637,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "Who made the opera?",
             options: [
               "Zitkala-Šá and William F. Hanson",
-              "Zitkala-Šá alone, with Hanson acting only as her copyist and publisher",
-              "William F. Hanson alone, using melodies collected by an anthropologist",
-              "A committee at Brigham Young University, which later owned the copyright",
+              "Zitkala-Šá alone, with Hanson as copyist",
+              "William F. Hanson, working alone",
+              "A committee at Brigham Young University",
             ],
             correctIndex: 0,
             explanation:
@@ -3650,9 +3650,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "On what date was the piano-vocal score deposited with the Copyright Office?",
             options: [
               "12 December 1912",
-              "1 February 1913, in the week the opera first opened at Orpheus Hall",
-              "5 December 1921, the day she registered a book of her own with the office",
-              "15 January 1929, when a renewal was filed under section 24 of the 1909 Act",
+              "1 February 1913",
+              "5 December 1921",
+              "15 January 1929",
             ],
             correctIndex: 0,
             explanation:
@@ -3663,9 +3663,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What is the typed heading on the 1912 registration card?",
             options: [
               "Hanson (WM.F.)",
-              "Bonnin (Gertrude) and Hanson (WM.F.), joint claimants of a dramatico-musical work",
-              "Sun Dance Opera Company, Vernal, Utah, as proprietor of the unpublished score",
-              "Uintah Academy, Vernal, Utah, which employed the music teacher at the time",
+              "Bonnin (Gertrude)",
+              "Sun Dance Opera Co.",
+              "Uintah Academy, Vernal",
             ],
             correctIndex: 0,
             explanation:
@@ -3676,9 +3676,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What kind of work does the 1912 form say is being registered?",
             options: [
               "A dramatic composition not reproduced for sale",
-              "A book, published and offered for sale by a Boston publishing house",
-              "A musical arrangement of traditional melodies collected on a reservation",
-              "A periodical contribution, registered in the class the Act reserved for magazines",
+              "A book, published and offered for sale in Boston",
+              "A musical arrangement of traditional melodies",
+              "A contribution to a periodical, in the magazine class",
             ],
             correctIndex: 0,
             explanation:
@@ -3689,9 +3689,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What name appears against copyright claimant on the card?",
             options: [
               "Wm F Hanson, Vernal Utah",
-              "Gertrude Bonnin, of the Uintah and Ouray reservation, Utah",
-              "Ginn and Company, Boston, which had published her earlier book",
-              "Brigham Young University, Provo, Utah, to which the copyright was later assigned",
+              "Gertrude Bonnin, Utah",
+              "Ginn and Company, Boston",
+              "Brigham Young University",
             ],
             correctIndex: 0,
             explanation:
@@ -3702,9 +3702,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What does the Copyright Office's own post say about her and the records?",
             options: [
               "She does not appear on the copyright records for the work",
-              "She appears as author on the back of the card but not as claimant on the front",
-              "She was refused registration when she applied separately in the following year",
-              "She assigned her interest before the registration, which is why she is not named",
+              "She appears as author on the back but not as claimant",
+              "She was refused registration when she applied separately",
+              "She assigned her interest before the registration was made",
             ],
             correctIndex: 0,
             explanation:
@@ -3715,9 +3715,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What two questions does a 1909-Act application ask?",
             options: [
               "Who the author is, and who the claimant is",
-              "Who wrote the words, and who wrote the music, so that shares can be recorded",
-              "Who filed the form, and who paid the fee that accompanied the deposit",
-              "Who owns the work now, and who will own it when the first term expires",
+              "Who wrote the words, and who wrote the music",
+              "Who filed the form, and who paid the fee",
+              "Who owns the work now, and who owns it later",
             ],
             correctIndex: 0,
             explanation:
@@ -3728,9 +3728,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What does a card that receives one name in both blanks tell you?",
             options: [
               "One of two things, and not which",
-              "That the person named wrote the whole of the work without any collaborator",
-              "That the office checked the claim and found no other author to record",
-              "That the other collaborator had already assigned away every interest they held",
+              "That the named person wrote all of it",
+              "That the office found no other author",
+              "That any co-author had assigned away",
             ],
             correctIndex: 0,
             explanation:
@@ -3741,9 +3741,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What is the first rule this section keeps?",
             options: [
               "It never describes the Sun Dance ceremony",
-              "It never names the collaborator who filed the registration card",
-              "It never quotes a secondary source about the opera's first production",
-              "It never mentions the opera at all, since the credit record is the subject",
+              "It never names the collaborator who filed",
+              "It never quotes a secondary source on the opera",
+              "It never mentions the opera at all",
             ],
             correctIndex: 0,
             explanation:
@@ -3754,9 +3754,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "Why does lesson 10 say that rule is a rule and not a gap?",
             options: [
               "The credit question needs the paperwork, not the ceremony",
-              "Because no source describes the ceremony, so nothing could be written about it",
-              "Because the ceremony was not part of the opera, which used a different subject",
-              "Because the archive that holds the score has forbidden any description of it",
+              "No source describes the ceremony, so nothing could be said",
+              "The ceremony was not part of the opera's subject at all",
+              "The archive holding the score has forbidden describing it",
             ],
             correctIndex: 0,
             explanation:
@@ -3767,9 +3767,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What is the second rule this section keeps?",
             options: [
               "It never says how much of the opera was hers",
-              "It never quotes the registration card, since the image is hard to read",
-              "It never names Hanson, because the course is about the record and not the man",
-              "It never cites a federal source, because one of them contradicts itself",
+              "It never quotes the registration card at all",
+              "It never names Hanson, as the record is the subject",
+              "It never cites a federal source on the opera",
             ],
             correctIndex: 0,
             explanation:
@@ -3780,9 +3780,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What was deposited with the Copyright Office in December 1912?",
             options: [
               "A piano-vocal score",
-              "A full orchestral score, with parts for every instrument used in the production",
-              "A libretto only, since the music had not yet been written down at that date",
-              "A photograph of the first production, as evidence that the work existed",
+              "A full orchestral score",
+              "A libretto only",
+              "A production photograph",
             ],
             correctIndex: 0,
             explanation:
@@ -3793,9 +3793,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "Where was Zitkala-Šá born, and when?",
             options: [
               "On the Yankton Indian Reservation, on 22 February 1876",
-              "In Vernal, Utah, in 1876, where the opera was later first produced",
-              "In Washington, D.C., in 1876, where she later registered a book of her own",
-              "On the Uintah and Ouray reservation, in 1886, where she lived as an adult",
+              "In Vernal, Utah, in 1876, where the opera was first produced",
+              "In Washington, D.C., in 1876, where she registered a book",
+              "On the Uintah and Ouray reservation, on 22 February 1886",
             ],
             correctIndex: 0,
             explanation:
@@ -3806,9 +3806,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "How do the sources describe William F. Hanson?",
             options: [
               "A local music teacher",
-              "A professional opera composer with works already staged in New York",
-              "An anthropologist employed to record music on the reservation",
-              "A clerk in the Copyright Office who filed registrations on behalf of others",
+              "A professional opera composer",
+              "An anthropologist",
+              "A Copyright Office clerk",
             ],
             correctIndex: 0,
             explanation:
@@ -3819,9 +3819,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What does the card establish beyond argument?",
             options: [
               "Who filed, what was claimed, and on what date",
-              "Who wrote the music, and who wrote the words that go with it",
-              "That the collaboration had already ended by December 1912",
-              "That the Copyright Office accepted one claimant after refusing another",
+              "Who wrote the music, and who wrote the words",
+              "That the collaboration had ended by December 1912",
+              "That the office had refused a second claimant",
             ],
             correctIndex: 0,
             explanation:
@@ -3832,9 +3832,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What is a deposit, in lesson 10's vocabulary?",
             options: [
               "The copy of a work filed as part of registering it",
-              "A sum of money lodged with the Copyright Office against the cost of a dispute",
-              "A collection of papers placed with an archive on permanent loan by their owner",
-              "The entry made in the printed catalogue of copyright entries for a given year",
+              "A sum of money lodged against the cost of a dispute",
+              "Papers placed with an archive on permanent loan",
+              "The entry in the printed catalogue of copyright entries",
             ],
             correctIndex: 0,
             explanation:
@@ -3845,9 +3845,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What did the newspapers of 1913 do that the register did not?",
             options: [
               "They acknowledged her role in the early productions",
-              "They printed the text of the registration card so that readers could check it",
-              "They named Hanson alone, which is where the later accounts took their wording from",
-              "They reported the assignment of a half interest in the opera to her",
+              "They printed the text of the registration card",
+              "They named Hanson alone, as the later accounts did",
+              "They reported the assignment of a half interest to her",
             ],
             correctIndex: 0,
             explanation:
@@ -3858,9 +3858,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What does Smith quote as a Musical America headline from the premiere coverage?",
             options: [
               "Braves Aid in Indian Opera at Utah Presentation",
-              "Utah Music Teacher Registers Opera With Copyright Office in Washington",
-              "Sun Dance Opera Opens Three Nights to Full Houses in Eastern Utah",
-              "Composer and Collaborator Divide an Undivided Half Interest in New Work",
+              "Utah Music Teacher Registers Opera in Washington",
+              "Sun Dance Opera Opens to Full Houses in Utah",
+              "Composer and Collaborator Divide Half Interest",
             ],
             correctIndex: 0,
             explanation:
@@ -3871,9 +3871,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What split does lesson 11 say the 1913 press coverage shares with Section 2?",
             options: [
               "The papers named her while the official record did not",
-              "The papers were wrong about the facts while the official record was right",
-              "The papers named nobody while the official record named everybody involved",
-              "The papers named the producer while the official record named the composer",
+              "The papers were wrong while the official record was right",
+              "The papers named nobody while the record named everybody",
+              "The papers named the producer, the record the composer",
             ],
             correctIndex: 0,
             explanation:
@@ -3884,9 +3884,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What did Hanson sign a month after the first production?",
             options: [
               "An assignment of an undivided half interest",
-              "A contract with a New York light opera guild for a Broadway production",
-              "A transfer of the copyright to Brigham Young University, where he later taught",
-              "A renewal of the registration, filed within the term the 1909 Act allowed",
+              "A contract with a New York light opera guild",
+              "A transfer of copyright to Brigham Young",
+              "A renewal of the registration under the 1909 Act",
             ],
             correctIndex: 0,
             explanation:
@@ -3897,9 +3897,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What happened to that assignment afterwards?",
             options: [
               "It was never recorded in the Copyright Office",
-              "It was recorded within three months, as section 44 of the Act required",
-              "It was cancelled by a later agreement between the two collaborators",
-              "It was lodged with a court in Uintah County and has since been lost",
+              "It was recorded within three months, under section 44",
+              "It was cancelled by a later agreement between them",
+              "It was lodged with a Uintah County court and lost",
             ],
             correctIndex: 0,
             explanation:
@@ -3910,9 +3910,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What did section 42 of the 1909 Act require for an assignment?",
             options: [
               "An instrument in writing signed by the proprietor",
-              "A filing with the Copyright Office within three calendar months of the transfer",
-              "The consent of every author named on the original registration form",
-              "A payment of the statutory fee and the deposit of a further copy of the work",
+              "A filing with the Copyright Office within three months",
+              "The consent of every author named on the registration",
+              "A payment of the statutory fee and a further deposit",
             ],
             correctIndex: 0,
             explanation:
@@ -3923,9 +3923,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What did section 44 say about an assignment that was not recorded in time?",
             options: [
               "It was void against a later purchaser who had recorded",
-              "It was void entirely, so the transfer never took effect between the parties",
-              "It could be recorded later on payment of a penalty set by the Register",
-              "It remained valid for three years and then lapsed automatically",
+              "It was void entirely, so the transfer never took effect",
+              "It could be recorded later on payment of a penalty",
+              "It remained valid for three years and then lapsed",
             ],
             correctIndex: 0,
             explanation:
@@ -3936,7 +3936,7 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What did section 46 allow once an assignment had been recorded?",
             options: [
               "The assignee could substitute their name in the statutory notice",
-              "The assignor could withdraw the work from the register within thirty days",
+              "The assignor could withdraw the work from the register in 30 days",
               "The Copyright Office could issue a corrected card naming both parties",
               "The assignee could file a fresh registration in their own name alone",
             ],
@@ -3949,9 +3949,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What does lesson 11 say recording buys?",
             options: [
               "Visibility",
-              "Ownership, since an unrecorded transfer never passes any right at all",
-              "A defence against infringement by anyone who has not searched the register",
-              "A renewal term, which could otherwise not be claimed when the first term ended",
+              "Ownership",
+              "A renewal term",
+              "Royalties",
             ],
             correctIndex: 0,
             explanation:
@@ -3962,9 +3962,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What does Hafen record about the title page of the opera?",
             options: [
               "His name alone appears on it",
-              "Both names appear on it, which is why the registration card is so surprising",
-              "Neither name appears on it, since the score was never formally published",
-              "Her name appears on it in a hand that was added many years later",
+              "Both names appear on it",
+              "Neither name appears on it",
+              "Her name alone appears on it",
             ],
             correctIndex: 0,
             explanation:
@@ -3975,9 +3975,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What does Hafen say Hanson's memoir does?",
             options: [
               "It acknowledges her as coauthor and collaborator",
-              "It denies that she had any part in the work beyond playing melodies to him",
-              "It reprints the assignment, which is how scholars know the document existed",
-              "It explains why the assignment was never recorded in Washington",
+              "It denies she had any part beyond playing melodies",
+              "It reprints the assignment of the half interest",
+              "It explains why the assignment was never recorded",
             ],
             correctIndex: 0,
             explanation:
@@ -3988,9 +3988,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "When did the New York production take place, relative to her death?",
             options: [
               "Months after it, in 1938",
-              "Two years before it, while she was still president of a national organisation",
-              "In the same week, which is why the programme carried a dedication to her",
-              "A decade after it, when the opera was revived for a new audience",
+              "Two years before it, in 1936",
+              "In the same week, in 1938",
+              "A decade after it, in 1948",
             ],
             correctIndex: 0,
             explanation:
@@ -4001,8 +4001,8 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What did Hanson add to the score much later?",
             options: [
               "Zitkala Sa and W. F. Hanson, after the title, in a shaky hand",
-              "A printed dedication naming her as the source of the melodies in the second act",
-              "A note explaining that the assignment had never been recorded in Washington",
+              "A printed dedication naming her as the source of the melodies",
+              "A note explaining that the assignment had never been recorded",
               "A second signature, witnessed by a notary in Uintah County, Utah",
             ],
             correctIndex: 0,
@@ -4014,9 +4014,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What claim does a federal web page make that lesson 11 refuses to repeat?",
             options: [
               "That she wrote the libretto and songs",
-              "That she was never told the work had been registered in one name",
-              "That the assignment was recorded and the record has since been lost",
-              "That the opera was performed on Broadway during her lifetime",
+              "That she was never told of the registration",
+              "That the recorded assignment was later lost",
+              "That it played on Broadway in her lifetime",
             ],
             correctIndex: 0,
             explanation:
@@ -4027,9 +4027,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "Why does lesson 11 say the card does not support that claim?",
             options: [
               "It names one man in both blanks",
-              "It names both collaborators, which contradicts any claim about a single author",
-              "It records a deposit only, without asking who wrote any part of the work",
-              "It was filled in by a clerk who never saw either of the collaborators",
+              "It names both collaborators",
+              "It records a deposit only",
+              "A clerk who never met them filled it in",
             ],
             correctIndex: 0,
             explanation:
@@ -4040,9 +4040,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What does Smith say about one 1913 account of the collaboration?",
             options: [
               "Several pieces of evidence tend to contradict it",
-              "It is the only contemporary account and is therefore the most reliable one",
-              "It was written by one of the collaborators and cannot be used as evidence",
-              "It was printed in a newspaper that has not survived in any archive",
+              "It is the only contemporary account, hence reliable",
+              "It was written by a collaborator and cannot be used",
+              "It was printed in a newspaper that has not survived",
             ],
             correctIndex: 0,
             explanation:
@@ -4053,8 +4053,8 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What inconsistency does lesson 11 point out on the federal page?",
             options: [
               "It gives her death as 1938 in one place and 1928 in another",
-              "It gives two different birthplaces, one in Utah and one in South Dakota",
-              "It names two different collaborators for the opera in the same paragraph",
+              "It gives two birthplaces, one in Utah and one in South Dakota",
+              "It names two collaborators for the opera in the same paragraph",
               "It dates the first production to 1912 and the registration to 1913",
             ],
             correctIndex: 0,
@@ -4066,8 +4066,8 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What does Whose Name Is on the Score add that Section 4 does not?",
             options: [
               "All five cards, the 1909 Act section by section, and the 1913 press",
-              "The ceremony and the staging, which that course describes and this one does not",
-              "An account of how much of the opera each collaborator wrote, settled from the scores",
+              "The ceremony and its staging, which this course does not describe",
+              "An account of how much each collaborator wrote, settled from the scores",
               "Interviews with descendants of both collaborators, recorded for that course",
             ],
             correctIndex: 0,
@@ -4079,8 +4079,8 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What is an undivided half interest?",
             options: [
               "A share of the whole right rather than of part of the work",
-              "A half share in the royalties only, leaving the credit with the registered claimant",
-              "A right to perform the work in one state, with the other half reserved elsewhere",
+              "A half share in the royalties, credit staying with the claimant",
+              "A right to perform the work in one state, the other half elsewhere",
               "A claim to half of the deposit copies held by the Copyright Office",
             ],
             correctIndex: 0,
@@ -4092,9 +4092,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What is the statutory notice, in lesson 11's vocabulary?",
             options: [
               "The copyright line printed on the work itself",
-              "The letter the Copyright Office sends to confirm that a registration is complete",
-              "A public advertisement that an assignment has been made between two parties",
-              "The entry in the printed catalogue of copyright entries for that year",
+              "The office's letter confirming a registration",
+              "A public advertisement of an assignment",
+              "The entry in the printed catalogue for that year",
             ],
             correctIndex: 0,
             explanation:
@@ -4105,9 +4105,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What is recording, as distinct from assignment?",
             options: [
               "Filing the transfer with the Copyright Office",
-              "Making the transfer in writing and having it witnessed by a notary",
-              "Registering the work for a second time in the new owner's name",
-              "Printing the new owner's name on every copy offered for sale",
+              "Making the transfer in writing before a notary",
+              "Registering the work again in the new owner's name",
+              "Printing the new owner's name on every copy sold",
             ],
             correctIndex: 0,
             explanation:
@@ -4118,9 +4118,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What is the smallest reach of any instrument in this course?",
             options: [
               "A handwritten line in an archived score",
-              "A registration card, which only the Copyright Office ever reads",
-              "An internal memo, which stays inside the organisation that wrote it",
-              "A newspaper billing, which is read once and thrown away the same week",
+              "A registration card, read only by the office",
+              "An internal memo that never leaves its office",
+              "A newspaper billing, read once and thrown away",
             ],
             correctIndex: 0,
             explanation:
@@ -4131,9 +4131,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What did the 1912 card's cash stamp record?",
             options: [
               "The same date as the receipt of the copy",
-              "The fee paid for recording an assignment of a half interest in the work",
-              "The date of the first production, which the office entered from a newspaper",
-              "The renewal term, which began twenty-eight years after the original filing",
+              "The fee for recording an assignment",
+              "The date of the first production",
+              "The date the renewal term would begin",
             ],
             correctIndex: 0,
             explanation:
@@ -4144,9 +4144,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "Under which Act was the 1912 registration made?",
             options: [
               "The Act of March 4, 1909",
-              "The Act of 1976, which replaced the earlier registration system entirely",
-              "The Superannuation Act of 1945, which governed federal employees' entitlements",
-              "The Public Service Act, as amended in November 1966",
+              "The Copyright Act of 1976",
+              "The Superannuation Act of 1945",
+              "The Public Service Act, 1966",
             ],
             correctIndex: 0,
             explanation:
@@ -4157,9 +4157,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "Who could search the register entry today?",
             options: [
               "Any stranger",
-              "Only the parties to the registration and their legal representatives",
-              "Only researchers with a reader's ticket for the Library of Congress",
-              "Nobody, because cards of that period were destroyed after the term expired",
+              "Only the parties",
+              "Only researchers",
+              "Nobody at all",
             ],
             correctIndex: 0,
             explanation:
@@ -4170,9 +4170,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "Which instrument in this course was filed by a private person rather than kept by an institution?",
             options: [
               "The copyright registration",
-              "The BBC engineering monograph, which an employee wrote and the corporation sold",
-              "The personnel file, which the employee's own letters were added to",
-              "The memo of June 1964, which a Head of Department wrote and sent",
+              "The BBC engineering monograph",
+              "The personnel file",
+              "The memo of June 1964",
             ],
             correctIndex: 0,
             explanation:
@@ -4182,10 +4182,10 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
           {
             prompt: "What does lesson 11 say happened to the press coverage and the register from the start?",
             options: [
-              "They disagreed",
-              "They agreed, and the later accounts departed from both of them",
-              "The register was corrected to match the press within the following year",
-              "The press repeated the register's wording, which is why she was not named",
+              "They disagreed from the start",
+              "They agreed with each other at first",
+              "The register was corrected to match",
+              "The press repeated the register",
             ],
             correctIndex: 0,
             explanation:
@@ -4196,9 +4196,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "In what county was the assignment notarised?",
             options: [
               "Uintah County, Utah",
-              "Salt Lake County, Utah, where the notary's office was then located",
-              "The District of Columbia, at the Copyright Office itself",
-              "Utah County, Utah, where Brigham Young University stands",
+              "Salt Lake County, Utah",
+              "The District of Columbia",
+              "Utah County, Utah",
             ],
             correctIndex: 0,
             explanation:
@@ -4209,9 +4209,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "Where did Hanson later assign the copyright, according to Hafen?",
             options: [
               "To Brigham Young University",
-              "To the New York light opera guild that staged the 1938 production",
-              "To his collaborator's estate, after her death in 1938",
-              "To the Copyright Office, which holds it on behalf of the public",
+              "To the New York light opera guild",
+              "To his collaborator's estate",
+              "To the Copyright Office",
             ],
             correctIndex: 0,
             explanation:
@@ -4222,9 +4222,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "When was the opera revived at Brigham Young University?",
             options: [
               "1935",
-              "1913, in the same season as the first production in Vernal",
-              "1921, the year she registered a book of her own in Washington",
-              "1969, the year of the composer's death",
+              "1913",
+              "1921",
+              "1969",
             ],
             correctIndex: 0,
             explanation:
@@ -4235,9 +4235,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What kind of claim is sole proprietorship?",
             options: [
               "A claim to hold the whole right in the work",
-              "A statement that one person performed the whole of the work on stage",
-              "A declaration that a work has never been published or offered for sale",
-              "An application to renew a registration in the last year of its first term",
+              "A claim that one person performed the whole work",
+              "A declaration that a work has never been published",
+              "An application to renew a registration",
             ],
             correctIndex: 0,
             explanation:
@@ -4248,9 +4248,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "What does Section 4 teach, in the course's own description of it?",
             options: [
               "The register as an instrument, set beside the other two",
-              "The whole of the case, so that the standalone course need not be read",
-              "The music of the opera, analysed act by act from the surviving scores",
-              "The biography of Zitkala-Šá, from her first book to her death in 1938",
+              "The whole case, so the standalone course need not be read",
+              "The music of the opera, analysed act by act from the scores",
+              "The biography of Zitkala-Šá, from her first book to 1938",
             ],
             correctIndex: 0,
             explanation:
@@ -4261,9 +4261,9 @@ Smith, C. P. (2001). An operatic skeleton on the western frontier: Zitkala-Sa, W
             prompt: "Which of these does the register record?",
             options: [
               "The date a claim was filed",
-              "The share of the work done by each collaborator on the piece",
-              "Whether the claimant had any agreement with anyone else about the work",
-              "Whether a work was performed, and how often, after the registration was made",
+              "Each collaborator's share",
+              "Any agreements about the work",
+              "How often the work was performed",
             ],
             correctIndex: 0,
             explanation:
@@ -4448,9 +4448,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What makes the three cases comparable, given that one is a marriage bar and one is a copyright registration?",
             options: [
               "Each is a rule that left a different kind of paper",
-              "Each woman worked in broadcasting at some point in her career",
-              "Each rule was overturned by the same court within a decade",
-              "Each employer later issued a public apology naming the woman",
+              "Each woman worked in broadcasting at some point",
+              "Each rule was overturned by one court within a decade",
+              "Each employer later publicly apologised to the woman",
             ],
             correctIndex: 0,
             explanation:
@@ -4462,9 +4462,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is the sentence lesson 12 says the whole course exists for?",
             options: [
               "One rule was written, one never was, and one named somebody else",
-              "Two employers in two countries decided independently to remove a woman from a record",
-              "A credit is a document, and a document can always be corrected once it is found",
-              "Every rule that applies to everybody is applied hardest to the person least able to object",
+              "Two employers in two countries removed a woman from a record",
+              "A credit is a document, and a document can always be corrected",
+              "A rule for everybody falls hardest on whoever can least object",
             ],
             correctIndex: 0,
             explanation:
@@ -4475,9 +4475,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What wrong conclusion does lesson 12 remove first?",
             options: [
               "That the written rule was the crueller one",
-              "That the unwritten practice was invented later by people writing about it",
-              "That the two women would have known about each other's cases at the time",
-              "That an employer needs a written rule before it can remove somebody from a record",
+              "That the unwritten practice was invented later",
+              "That the two women knew of each other's cases",
+              "That removal needs a written rule first",
             ],
             correctIndex: 0,
             explanation:
@@ -4488,9 +4488,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 12 say the writing of a rule changes?",
             options: [
               "What a later reader can know",
-              "Whether the rule can be challenged, since an unwritten rule cannot be appealed against",
-              "How severe the rule is, because a written rule has to be applied to everybody equally",
-              "Who applies it, since a written rule is applied by a clerk and an unwritten one by a manager",
+              "Whether the rule can be challenged",
+              "How severe the rule is",
+              "Who applies the rule in practice",
             ],
             correctIndex: 0,
             explanation:
@@ -4501,9 +4501,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "In the drift chain, how did Derbyshire herself describe the non-crediting in 2000?",
             options: [
               "The boss wouldn't let anybody have any sort of credit",
-              "The corporation had a policy forbidding any member of the Workshop to be named",
-              "The rules of the BBC at that time did not permit staff to receive screen credits",
-              "The standard practice was for individual staff not to receive printed credit",
+              "The corporation had a policy forbidding Workshop names",
+              "The BBC's rules at that time did not permit screen credits",
+              "The standard practice was for staff not to receive credit",
             ],
             correctIndex: 0,
             explanation:
@@ -4514,9 +4514,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "How did Hodgson describe it in 2001?",
             options: [
               "The BBC preferred to keep them anonymous and uncredited",
-              "The BBC forbade any credit to a member of the Workshop, in a rule issued in 1958",
-              "The manager of the Workshop personally decided who would be named on each production",
-              "The corporation's contracts with its staff assigned all credit to the department",
+              "The BBC forbade Workshop credits in a rule issued in 1958",
+              "The Workshop's manager personally decided who was named",
+              "Staff contracts assigned all credit to the department",
             ],
             correctIndex: 0,
             explanation:
@@ -4527,9 +4527,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which two nouns does Butler use in the same 2014 article?",
             options: [
               "Standard practice, and standard policy",
-              "Convention, and contract, describing the same arrangement from two directions",
-              "Rule, and regulation, in the sentences about the Esslin memo and its failure",
-              "Custom, and instruction, one for radio and one for television credits",
+              "Convention, and contractual arrangement",
+              "Standing rule, and staff regulation",
+              "House custom, and standing instruction",
             ],
             correctIndex: 0,
             explanation:
@@ -4540,9 +4540,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What phrase does Butler use in the 2019 article?",
             options: [
               "In keeping with BBC policy at the time",
-              "Under the terms of the corporation's standing instruction to its heads of department",
-              "As required by the agreement between the corporation and the musicians' union",
-              "Because of a decision taken when the Workshop was founded in the late 1950s",
+              "Under the corporation's standing instruction",
+              "As required by the musicians' union agreement",
+              "Because of a decision taken in the late 1950s",
             ],
             correctIndex: 0,
             explanation:
@@ -4554,7 +4554,7 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             options: [
               "A broadcaster's flat statement about BBC rules, with no reference",
               "A historian's footnote pointing to an archive file number at Caversham",
-              "An internal memo in which a Head of Department asks for names to be printed",
+              "A Head of Department's memo asking for the names to be printed",
               "A BBC publication that describes the work and names nobody who did it",
             ],
             correctIndex: 0,
@@ -4566,9 +4566,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 12 say about the writers in the drift chain?",
             options: [
               "None of them is lying",
-              "Each one knew the document existed and chose not to cite it",
-              "Each one relied on the one before without reading any primary source at all",
-              "The scholars are reliable and the journalists are not, which is the pattern to expect",
+              "Each hid a known document",
+              "Each one invented the rule",
+              "Only the journalists err",
             ],
             correctIndex: 0,
             explanation:
@@ -4579,9 +4579,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is the first of the three moves lesson 12 teaches?",
             options: [
               "Name who asserts the claim",
-              "Search the archive catalogue for any file whose title mentions credits or crediting",
-              "Ask the organisation directly, in writing, whether such a rule ever existed",
-              "Compare the claim with what other organisations did in the same period",
+              "Search the archive catalogue",
+              "Ask the organisation directly",
+              "Compare other organisations",
             ],
             correctIndex: 0,
             explanation:
@@ -4592,9 +4592,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is the second move?",
             options: [
               "Say what document would settle it, and where it would be",
-              "Print the strongest version of the claim, so that somebody is provoked into correcting it",
-              "Drop the claim until a document turns up, and say nothing about the practice at all",
-              "Treat the earliest account as correct, since it is closest in time to the events",
+              "Print the strongest version so that somebody corrects it",
+              "Drop the claim until a document turns up, and say nothing",
+              "Treat the earliest account as correct, as closest to events",
             ],
             correctIndex: 0,
             explanation:
@@ -4605,9 +4605,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which BBC archive files does lesson 12 name as the place a credits instruction would sit?",
             options: [
               "R97/9/1 and R97/11/1-2",
-              "T5/1, 702/1, the production files for a 1969 episode of Out of the Unknown",
-              "N15/17/1, the script and press material for a 1963 documentary about the future",
-              "R97/25/1, the Radiophonic Workshop scrapbooks of press clippings and letters",
+              "T5/1, 702/1 (Out of the Unknown)",
+              "N15/17/1, a 1963 documentary",
+              "R97/25/1, the scrapbooks",
             ],
             correctIndex: 0,
             explanation:
@@ -4618,9 +4618,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is the third move?",
             options: [
               "Say what the papers do show, in their own words",
-              "Repeat the claim with a hedge attached, so that the reader can judge it for themselves",
-              "Cite the most recent account, since later writers have seen more of the archive",
-              "Explain why the document is missing, which is usually because the file was destroyed",
+              "Repeat the claim with a hedge attached for the reader",
+              "Cite the most recent account, as the best informed",
+              "Explain why the document is missing or destroyed",
             ],
             correctIndex: 0,
             explanation:
@@ -4631,9 +4631,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which unread book do two scholars point to for the credit question?",
             options: [
               "Niebur's Special Sound",
-              "Briscoe's history of the Radiophonic Workshop's first twenty-five years",
-              "Winter's doctoral thesis, which both Butler and the Manchester archive cite",
-              "The BBC Handbook for 1964, which the corporation published annually",
+              "Briscoe's Workshop history",
+              "Winter's doctoral thesis",
+              "The BBC Handbook for 1964",
             ],
             correctIndex: 0,
             explanation:
@@ -4644,9 +4644,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does this course do about that unread book?",
             options: [
               "Names it as unread",
-              "Quotes the page that Winter cites, on the strength of her citation of it",
-              "Ignores it, since a book that could not be obtained cannot affect the argument",
-              "Treats its existence as evidence that the rule was written down somewhere",
+              "Quotes Winter's cited page",
+              "Ignores it entirely",
+              "Treats it as proof",
             ],
             correctIndex: 0,
             explanation:
@@ -4657,9 +4657,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is drift, in lesson 12's vocabulary?",
             options: [
               "A claim hardening as it passes between accounts",
-              "The movement of a document between archives as institutions merge or close",
-              "The gradual loss of detail in a story told repeatedly by the same person",
-              "The difference between what a rule says and how an organisation applies it",
+              "A document moving between archives over time",
+              "Detail lost in a story one person tells repeatedly",
+              "The gap between a rule's words and how it is applied",
             ],
             correctIndex: 0,
             explanation:
@@ -4670,9 +4670,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is an attribution chain?",
             options: [
               "The sequence of who said what, kept intact",
-              "The list of people credited on a production, in the order the credits appear",
-              "The path a document takes from its creator to the archive that now holds it",
-              "The series of permissions needed before an employer may name an employee publicly",
+              "The order of names in a production's credits",
+              "The path a document takes from creator to archive",
+              "The permissions needed before naming an employee",
             ],
             correctIndex: 0,
             explanation:
@@ -4683,9 +4683,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is a finding aid?",
             options: [
               "An archive's list of its files",
-              "A note left in a file by a previous researcher, recording what they were looking for",
-              "A published index of every document an organisation has ever created",
-              "A reference number assigned to a document when it is first transcribed",
+              "A note left by a previous researcher",
+              "An index of every document ever made",
+              "A transcription reference number",
             ],
             correctIndex: 0,
             explanation:
@@ -4696,9 +4696,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which course goes deeper into the register case than this one does?",
             options: [
               "Whose Name Is on the Score",
-              "Who Gets the Credit, whose third lesson sorts the mechanisms by the evidence each leaves",
-              "Who Made the Record, which supplies the method rule about manufacturing a confrontation",
-              "Who Built the Blood Bank, which takes a flattering story apart without taking the person down",
+              "Who Gets the Credit",
+              "Who Made the Record",
+              "Who Built the Blood Bank",
             ],
             correctIndex: 0,
             explanation:
@@ -4709,9 +4709,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is the first property of a register in lesson 13?",
             options: [
               "It is filed by a claimant rather than kept by an employer",
-              "It is checked by a government officer before any entry is accepted as accurate",
-              "It is corrected automatically whenever a later document contradicts an entry",
-              "It is closed to the public for a fixed period after the entry is first made",
+              "It is checked by a government officer before acceptance",
+              "It is corrected automatically when a later document disagrees",
+              "It is closed to the public for a fixed period after entry",
             ],
             correctIndex: 0,
             explanation:
@@ -4722,9 +4722,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which two questions does a registration form of that period separate?",
             options: [
               "Who the author is, and who the claimant is",
-              "Who wrote the work, and who performed it at its first public presentation",
-              "Who filed the form, and who paid the fee that accompanied the filing",
-              "Who owns the work now, and who will own it when the first term expires",
+              "Who wrote the work, and who first performed it",
+              "Who filed the form, and who paid the fee",
+              "Who owns the work now, and who owns it later",
             ],
             correctIndex: 0,
             explanation:
@@ -4735,9 +4735,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does one name in every blank on a registration form prove?",
             options: [
               "That one person filled the form in",
-              "That one person made the work, since the form is a sworn statement of authorship",
-              "That the other collaborator had assigned their rights before the filing was made",
-              "That the office checked the claim and found no competing claimant on the register",
+              "That one person made the whole work",
+              "That any co-author had already assigned",
+              "That the office found no rival claimant",
             ],
             correctIndex: 0,
             explanation:
@@ -4748,9 +4748,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "In lesson 13's table, where does a statute live and who can read it?",
             options: [
               "In published law, and anyone",
-              "In a government office, and only the parties to the case it decided",
-              "In an employer's internal file, and only its officers and their successors",
-              "Nowhere readable, which is what it shares with an employer's practice",
+              "In a court office, and the parties",
+              "In staff files, and only officers",
+              "Nowhere readable, and nobody",
             ],
             correctIndex: 0,
             explanation:
@@ -4761,9 +4761,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does an employer's practice record, in lesson 13's table?",
             options: [
               "Only its effects",
-              "Exactly what it requires, in words that can be quoted back at an employee",
-              "Who filed a claim and when, which is why it survives in a government office",
-              "Nothing at all, which is why the practice claim cannot be tested in any way",
+              "Exactly what it requires",
+              "Who filed and when",
+              "Nothing at all",
             ],
             correctIndex: 0,
             explanation:
@@ -4774,9 +4774,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does the bottom row of lesson 13's table say a correction reaches?",
             options: [
               "Later credits, later cases and later entries only",
-              "The original record in each case, once the correcting document is filed beside it",
-              "Everything from the date of the original entry onwards, but nothing before it",
-              "Nothing at all, since none of the three instruments admits a correction of any kind",
+              "The original record, once a correction is filed beside it",
+              "Everything from the original entry onwards",
+              "Nothing, since none of the three admits correction",
             ],
             correctIndex: 0,
             explanation:
@@ -4787,9 +4787,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 13 say is the sharpest contrast in the course?",
             options: [
               "Two instruments can be read by anyone, and the third by nobody",
-              "Two instruments are held by governments, and the third by a private employer",
-              "Two instruments record the making, and the third records only the claim",
-              "Two instruments can be corrected, and the third cannot be corrected at all",
+              "Two instruments are held by governments, and the third by an employer",
+              "Two instruments record the making, and the third only the claim",
+              "Two instruments can be corrected, and the third cannot at all",
             ],
             correctIndex: 0,
             explanation:
@@ -4800,9 +4800,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does accumulation mean in lesson 13's vocabulary?",
             options: [
               "New entries are added and old ones stay",
-              "An archive grows until it can no longer be searched by a single researcher",
-              "A claim gathers support each time another writer repeats it in print",
-              "A credit sequence lengthens as more people are added to a production",
+              "An archive outgrows a single researcher",
+              "A claim gains support each time it is repeated",
+              "A credit sequence lengthens as people are added",
             ],
             correctIndex: 0,
             explanation:
@@ -4813,9 +4813,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Why does lesson 13 say one case is not enough?",
             options: [
               "One case teaches a story; three instruments teach a shape",
-              "Because a comparison of two is always decided by which one the reader met first",
-              "Because the third instrument is the only one that records who did the work",
-              "Because a register is the instrument most learners will actually have to use",
+              "A comparison of two is decided by which one came first",
+              "The third instrument alone records who did the work",
+              "A register is the instrument most learners will use",
             ],
             correctIndex: 0,
             explanation:
@@ -4826,9 +4826,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "On what date did the closing credits name Delia Derbyshire?",
             options: [
               "23 November 2013",
-              "23 November 1963, when the first episode of the programme was broadcast",
-              "28 November 2017, the week the honorary doctorate was conferred at Coventry",
-              "3 July 2001, the day of her death, when the programme was off the air",
+              "23 November 1963",
+              "28 November 2017",
+              "3 July 2001",
             ],
             correctIndex: 0,
             explanation:
@@ -4839,9 +4839,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What did the 2013 credit say, in its exact words?",
             options: [
               "Original theme arranged by Delia Derbyshire",
-              "Original theme composed by Ron Grainer and Delia Derbyshire of the Radiophonic Workshop",
-              "Theme music realised by Delia Derbyshire for the BBC Radiophonic Workshop in 1963",
-              "With thanks to Delia Derbyshire, who created the original theme fifty years ago",
+              "Original theme composed by Grainer and Derbyshire",
+              "Theme music realised by Delia Derbyshire",
+              "With thanks to Delia Derbyshire for the theme",
             ],
             correctIndex: 0,
             explanation:
@@ -4852,9 +4852,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which university awarded her an honorary doctorate in November 2017?",
             options: [
               "Coventry University",
-              "The University of Manchester, which holds her papers and tapes in its library",
-              "The University of York, where a doctoral thesis about her work was completed",
-              "Girton College, Cambridge, where she had read music and mathematics as a student",
+              "University of Manchester",
+              "The University of York",
+              "Girton College, Cambridge",
             ],
             correctIndex: 0,
             explanation:
@@ -4865,9 +4865,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "How did Ayres put the employer's side of the credit question to CBC?",
             options: [
               "She was a BBC employee, so she was employed to do this work",
-              "The corporation had a written rule and Briscoe had no choice but to apply it to her",
-              "Nobody at the BBC realised at the time that the theme would become so well known",
-              "The composer's publisher objected to a second name appearing beside his own",
+              "The BBC had a written rule and Briscoe had to apply it to her",
+              "Nobody at the BBC realised the theme would become so famous",
+              "The composer's publisher objected to a second name beside his",
             ],
             correctIndex: 0,
             explanation:
@@ -4878,9 +4878,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Where are Derbyshire's papers and tapes held?",
             options: [
               "The University of Manchester, as GB 133 DDA",
-              "The BBC Written Archives Centre, alongside the corporation's Workshop files",
-              "The British Library, which holds the BBC Sound Archive and its recordings",
-              "The University of York, with the thesis that was written from them",
+              "The BBC Written Archives Centre, Caversham",
+              "The British Library, with the BBC Sound Archive",
+              "The University of York, with the thesis",
             ],
             correctIndex: 0,
             explanation:
@@ -4891,9 +4891,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "How many audio tape recordings does the Manchester collection include?",
             options: [
               "267",
-              "Twelve, one for each of the Jason valve oscillators the Workshop kept in room twelve",
-              "Around fifty, which is all that survived the BBC's practice of reclaiming used tape",
-              "None, because the sound recordings remained with the corporation when she left",
+              "Twelve",
+              "About fifty",
+              "None",
             ],
             correctIndex: 0,
             explanation:
@@ -4904,9 +4904,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Why does lesson 14 call the archive the most durable of the three corrections?",
             options: [
               "A credit names; an archive lets somebody check",
-              "Because an archive cannot be withdrawn, while a credit can be cut from a later repeat",
-              "Because the archive holds the BBC's own files as well as her personal papers",
-              "Because a deposit is legally permanent, while an honorary degree is symbolic",
+              "An archive cannot be withdrawn; a credit can be cut",
+              "The archive holds the BBC's own files too",
+              "A deposit is legally permanent; a degree is symbolic",
             ],
             correctIndex: 0,
             explanation:
@@ -4917,9 +4917,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is the Payne-Scott Award, according to the archive?",
             options: [
               "Support for researchers returning after career breaks",
-              "A scholarship for women beginning a doctorate in radio astronomy in Australia",
-              "A medal awarded by CSIRO for the best paper published by one of its divisions",
-              "A fund compensating public servants who were required to resign on marriage",
+              "A scholarship for women starting radio astronomy doctorates",
+              "A CSIRO medal for the best paper by one of its divisions",
+              "A fund compensating public servants forced out on marriage",
             ],
             correctIndex: 0,
             explanation:
@@ -4930,9 +4930,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "In lesson 14's table, what does the 2013 screen credit not reach?",
             options: [
               "The 1963 broadcast and every one in between",
-              "Any broadcast after 2013, since the credit applied to that special only",
-              "The listings magazine, which printed its own credits independently of the BBC",
-              "The composer's royalty, which was unaffected because the credit named an arranger",
+              "Any broadcast after the 2013 special",
+              "The listings magazine's own printed credits",
+              "The composer's royalty, since it named an arranger",
             ],
             correctIndex: 0,
             explanation:
@@ -4943,9 +4943,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "In lesson 14's table, what does the 1966 amendment not reach?",
             options: [
               "The post lost in 1950, or the years after it",
-              "Women employed by the Commonwealth after the date of the amendment",
-              "The superannuation scheme, which was amended separately in the same year",
-              "Any officer who had already left the service, whether married or unmarried",
+              "Women employed by the Commonwealth afterwards",
+              "The superannuation scheme, amended separately",
+              "Unmarried women still in the service in 1966",
             ],
             correctIndex: 0,
             explanation:
@@ -4956,9 +4956,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does the Manchester archive reach, in lesson 14's table?",
             options: [
               "What future researchers can check",
-              "The credits of every production she worked on, which the archive has now corrected",
-              "The royalties, since the deposit included the paperwork needed to claim them",
-              "The public record of her standing, which is what an honorary degree reaches",
+              "The credits on her old productions",
+              "The royalties owed to her",
+              "The public record of her standing",
             ],
             correctIndex: 0,
             explanation:
@@ -4969,9 +4969,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which catalog lesson teaches the same rule about corrections in another field?",
             options: [
               "Who Signs the Print, lesson 22",
-              "Who Gets Named, lesson 13, on authors and acknowledged contributors",
-              "The Name on the Door, lesson 1, on the credited unit being a firm",
-              "Who Made the Record, lesson 12, on the editor's cut and who decides it",
+              "Who Gets Named, lesson 13",
+              "The Name on the Door, lesson 1",
+              "Who Made the Record, lesson 12",
             ],
             correctIndex: 0,
             explanation:
@@ -4982,9 +4982,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is the first open question lesson 14 lists?",
             options: [
               "A BBC document stating the credit rule in its own words",
-              "Whether Derbyshire was paid anything at all for the theme beyond her salary",
-              "Whether the Workshop's staff ever asked collectively to be credited on air",
-              "Which member of staff first suggested that the theme be released as a single",
+              "Whether Derbyshire was paid for the theme beyond salary",
+              "Whether Workshop staff ever asked to be credited on air",
+              "Who first suggested releasing the theme as a single",
             ],
             correctIndex: 0,
             explanation:
@@ -4995,9 +4995,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 14 say about the royalty question?",
             options: [
               "No contract, rights record or memo has been found",
-              "The publisher's records show the offer was made and withdrawn within the year",
-              "The BBC's own files record a request and its refusal, but the file is closed",
-              "Derbyshire's archive contains her correspondence about it with the composer",
+              "The publisher's records show an offer made and withdrawn",
+              "BBC files record a request and refusal, but are closed",
+              "Her archive holds her letters about it to the composer",
             ],
             correctIndex: 0,
             explanation:
@@ -5008,9 +5008,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is verified about the wording of the BBC's 1964 information sheet?",
             options: [
               "Its heading names Grainer with the BBC Radiophonic Workshop",
-              "It names Derbyshire as the realiser in a footnote at the end of the document",
-              "It was printed in the listings magazine in the week the single was released",
-              "It was written by Desmond Briscoe, whose name appears at the foot of the sheet",
+              "It names Derbyshire as the realiser in a closing footnote",
+              "It was printed in the listings magazine the week of the single",
+              "It was written by Desmond Briscoe, who signed at the foot",
             ],
             correctIndex: 0,
             explanation:
@@ -5021,9 +5021,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Why is the on-screen credit as broadcast in November 1963 still an open question here?",
             options: [
               "The BBC's schedule archive could not be reached",
-              "Because no recording of the first episode survives in any archive anywhere",
-              "Because the credits were read aloud by an announcer rather than printed on screen",
-              "Because the BBC has never released the credit list for that programme's first season",
+              "No recording of the first episode survives anywhere",
+              "The credits were read aloud rather than shown on screen",
+              "The BBC never released that season's credit list",
             ],
             correctIndex: 0,
             explanation:
@@ -5034,9 +5034,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 14 say to do about Payne-Scott's own letter?",
             options: [
               "Read the item, not the reply that paraphrases it",
-              "Treat the Chairman's summary as her position, since no other version survives",
-              "Quote the sentence other accounts attribute to her, with a note about the source",
-              "Assume it has been lost, since the archive's page prints only the reply",
+              "Treat the Chairman's summary as her position",
+              "Quote the sentence other accounts attribute to her",
+              "Assume it is lost, since only the reply is printed",
             ],
             correctIndex: 0,
             explanation:
@@ -5046,10 +5046,10 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
           {
             prompt: "What is the fifth open question?",
             options: [
-              "Her ASIO file reference",
-              "Whether the marriage regulation was ever applied to any other named officer",
-              "Whether the Minister ever certified special circumstances for a married woman",
-              "Whether her resignation letter of July 1951 survives in the personnel file",
+              "Her ASIO file reference, cited but unverified",
+              "Whether the marriage rule was applied to others",
+              "Whether the Minister certified special circumstances",
+              "Whether her July 1951 resignation letter survives",
             ],
             correctIndex: 0,
             explanation:
@@ -5060,9 +5060,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What question does this course teach a learner to ask, in place of asking whether somebody was robbed?",
             options: [
               "What instrument was this written on, and what can it record",
-              "Who benefited from the arrangement, and what did they gain that the other lost",
-              "Which of the two people involved has the better documented account of events",
-              "Whether the organisation would make the same decision today, and why not",
+              "Who benefited from the arrangement, and what did they gain",
+              "Which of the two people has the better documented account",
+              "Whether the organisation would make the same decision today",
             ],
             correctIndex: 0,
             explanation:
@@ -5073,9 +5073,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is a prospective correction?",
             options: [
               "A change that applies from now on",
-              "A correction agreed in advance, before the record that needs it has been made",
-              "A change applied to every copy of a record, including the copies already distributed",
-              "An amendment that takes effect from the date of the original entry rather than today",
+              "A correction agreed in advance",
+              "A change applied to every existing copy",
+              "A change backdated to the first entry",
             ],
             correctIndex: 0,
             explanation:
@@ -5086,9 +5086,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is a permanent loan, in lesson 14's vocabulary?",
             options: [
               "A deposit kept and serviced without being owned outright",
-              "A gift of papers to an institution, which then owns them and may dispose of them",
-              "A loan of papers for a fixed exhibition period, after which they return to the owner",
-              "An arrangement by which an archive buys a collection in instalments over many years",
+              "A gift of papers that the institution then owns outright",
+              "A loan for a fixed exhibition period, then returned",
+              "A purchase of a collection in instalments over many years",
             ],
             correctIndex: 0,
             explanation:
@@ -5099,9 +5099,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is an honorary doctorate?",
             options: [
               "A degree awarded in recognition rather than for examined work",
-              "A doctorate awarded on the basis of published work rather than a submitted thesis",
-              "A degree conferred by a university on one of its own former members of staff",
-              "An award made only to living recipients, which is why hers was accepted in 2017",
+              "A doctorate awarded for published work rather than a thesis",
+              "A degree conferred by a university on its own former staff",
+              "An award made only to living recipients, never after death",
             ],
             correctIndex: 0,
             explanation:
@@ -5112,9 +5112,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which three instruments does the last paragraph of the course name?",
             options: [
               "A practice, a statute, and a register",
-              "A memo, a monograph and an obituary, which are the three kinds of source used here",
-              "A credit, a royalty and a pension, which are the three things the rules removed",
-              "An archive, an amendment and an award, which are the three corrections described",
+              "A memo, a monograph and an obituary",
+              "A credit, a royalty and a pension",
+              "An archive, an amendment and an award",
             ],
             correctIndex: 0,
             explanation:
@@ -5124,10 +5124,10 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
           {
             prompt: "What does lesson 14 say the endings of both stories have in common?",
             options: [
-              "They are partial",
-              "They arrived in the same decade, once attitudes to women's work had changed",
-              "They were made by the organisations that had applied the rules in the first place",
-              "They were prompted by researchers who found the documents this course reads",
+              "They are partial, each leaving something untouched",
+              "They arrived in the same decade, as attitudes changed",
+              "They were made by the organisations that applied the rules",
+              "They were prompted by researchers who found the documents",
             ],
             correctIndex: 0,
             explanation:
@@ -5138,9 +5138,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "In which year did Derbyshire die?",
             options: [
               "2001",
-              "2013, the year of the anniversary special that credited her arrangement on screen",
-              "1973, when she left the BBC and stopped working at the Radiophonic Workshop",
-              "2017, shortly before the honorary doctorate was conferred at Coventry",
+              "2013",
+              "1973",
+              "2017",
             ],
             correctIndex: 0,
             explanation:
@@ -5151,9 +5151,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Who deposited the Derbyshire collection, and with whose help?",
             options: [
               "Mark Ayres, with the aid of Dr David Butler",
-              "The BBC, which transferred the papers when the Radiophonic Workshop closed",
-              "Brian Hodgson, who had worked beside her and wrote her obituary in 2001",
-              "The University of York, after the thesis about her work had been completed",
+              "The BBC, when the Radiophonic Workshop closed",
+              "Brian Hodgson, who wrote her obituary in 2001",
+              "The University of York, after a thesis on her",
             ],
             correctIndex: 0,
             explanation:
@@ -5164,9 +5164,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Where are the BBC's own papers about the Workshop held?",
             options: [
               "At the BBC Written Archives Centre",
-              "At the University of Manchester, alongside the Derbyshire collection",
-              "At the British Library, with the BBC Sound Archive recordings",
-              "At Maida Vale, in the studio centre where the Workshop itself was housed",
+              "At the University of Manchester",
+              "At the British Library in London",
+              "At the Maida Vale studio centre",
             ],
             correctIndex: 0,
             explanation:
@@ -5177,9 +5177,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 12 say about the relationship between the two rules and their severity?",
             options: [
               "Visibility and severity are different things",
-              "The unwritten rule was worse, because it could not be challenged by anyone affected",
-              "The written rule was worse, because it removed a career rather than a credit line",
-              "Both were equally severe, since both ended with the woman leaving her employer",
+              "The unwritten rule was worse, being unchallengeable",
+              "The written rule was worse, as it removed a career",
+              "Both were equally severe, since both women left",
             ],
             correctIndex: 0,
             explanation:
@@ -5190,9 +5190,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What kind of claim does lesson 12 say the papers actually support?",
             options: [
               "A smaller claim than there was a rule",
-              "A larger claim, since three separate sources describe the same policy independently",
-              "No claim at all, since without a document nothing whatever can be said",
-              "The same claim, stated more cautiously so that a reader can discount it",
+              "A larger claim, backed by three sources",
+              "No claim at all without a document",
+              "The same claim, stated more cautiously",
             ],
             correctIndex: 0,
             explanation:
@@ -5203,9 +5203,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Why does lesson 13 say a correction is another entry rather than an erasure?",
             options: [
               "Because records accumulate",
-              "Because archives are forbidden by law to remove a document once it has been accessioned",
-              "Because the organisation that made the record no longer exists to correct it",
-              "Because the original entry is always the one a court would rely on in a dispute",
+              "Because the law forbids removal",
+              "Because the maker no longer exists",
+              "Because courts use the original",
             ],
             correctIndex: 0,
             explanation:
@@ -5216,9 +5216,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 14 say the honorary doctorate reaches?",
             options: [
               "The public record of her standing",
-              "Her employment record at the BBC, which the university asked to have amended",
-              "The royalties, since an honorary degree carries a stipend paid to the estate",
-              "The credits of the programmes she worked on, which were reissued afterwards",
+              "Her employment record at the BBC",
+              "The royalties, via a stipend",
+              "The credits of her programmes",
             ],
             correctIndex: 0,
             explanation:
@@ -5229,9 +5229,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does this course call the list of things it could not settle?",
             options: [
               "Open questions, each with an address",
-              "Unverified claims, which are printed in the lessons with a warning attached",
-              "Contested facts, since the sources disagree about each of the five items",
-              "Future research, which is left to whoever teaches the course after this version",
+              "Unverified claims, printed with a warning",
+              "Contested facts, where the sources disagree",
+              "Future research, left to later teachers",
             ],
             correctIndex: 0,
             explanation:
@@ -5242,9 +5242,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does a statute or regulation fail to record, in lesson 13's table?",
             options: [
               "How it was applied",
-              "What it requires, which has to be inferred from the cases it was used in",
-              "When it came into force, which is recorded only in the department's own files",
-              "Who it applies to, which is why each officer had to ask the Minister individually",
+              "What it requires",
+              "When it came into force",
+              "Who it applies to",
             ],
             correctIndex: 0,
             explanation:
@@ -5255,9 +5255,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which property of a register does lesson 13 say matters to a stranger fifty years later?",
             options: [
               "It is public and searchable by anyone",
-              "It is indexed by the name of the author rather than by the name of the claimant",
-              "It is checked by an official before an entry is accepted onto the register",
-              "It is closed until the term of the right recorded in it has finally expired",
+              "It is indexed by author rather than claimant",
+              "It is checked by an official before entry",
+              "It is closed until the right has expired",
             ],
             correctIndex: 0,
             explanation:
@@ -5268,9 +5268,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 12 say each writer reaches for when a practice has no text?",
             options: [
               "A noun",
-              "A date, which is why the accounts disagree about when the practice began",
-              "A villain, which is why Briscoe's name appears in most retellings of the story",
-              "A number, since the size of the Workshop's staff is the only firm fact available",
+              "A date",
+              "A villain",
+              "A number",
             ],
             correctIndex: 0,
             explanation:
@@ -5281,9 +5281,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which files did Winter's and Butler's own citations make it possible to name?",
             options: [
               "The Caversham files where a credits instruction would sit",
-              "The Manchester file containing the 1964 BBC information sheet about the theme",
+              "The Manchester file holding the 1964 information sheet",
               "The production files for the 1963 documentary Time On Our Hands",
-              "The scrapbooks in which the Workshop kept its press clippings and listeners' letters",
+              "The scrapbooks of the Workshop's press clippings and letters",
             ],
             correctIndex: 0,
             explanation:
@@ -5294,9 +5294,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 14 say about the year the amendment came and the year she left?",
             options: [
               "She left in 1951 and the amendment came in 1966",
-              "She left in 1966, in the same year the Public Service Act was finally amended",
-              "She left in 1950 and returned as a temporary officer after the amendment",
-              "She left in 1959, the year her security file was closed by the intelligence organisation",
+              "She left in 1966, the year the Act was amended",
+              "She left in 1950 and returned after the amendment",
+              "She left in 1959, when her security file was closed",
             ],
             correctIndex: 0,
             explanation:
@@ -5307,9 +5307,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What was the name of the anniversary special that carried the 2013 credit?",
             options: [
               "The Day of the Doctor",
-              "The Naked Sun, which had been broadcast in 1969 and was repeated for the anniversary",
-              "The Tower, the radio production that prompted the Esslin memo in 1964",
-              "An Adventure in Space and Time, which dramatised the making of the programme",
+              "The Naked Sun, a 1969 play",
+              "The Tower, a radio play",
+              "The Five Doctors",
             ],
             correctIndex: 0,
             explanation:
@@ -5320,9 +5320,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 13 collect before its comparison table?",
             options: [
               "What Section 4 showed about the register as an instrument",
-              "The four registration cards, reproduced so that a learner can read them again here",
-              "The open questions from the other course, so that they can be answered in this one",
-              "A summary of the other course's argument, in a single closing paragraph",
+              "The four registration cards, reproduced for rereading",
+              "The open questions from the other course, to answer here",
+              "A summary of the other course's argument in one paragraph",
             ],
             correctIndex: 0,
             explanation:
@@ -5333,9 +5333,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What kind of evidence does lesson 12 say the papers give for the BBC practice?",
             options: [
               "Effects, a failed request, and testimony",
-              "A signed instruction, a dated memo and a published staff handbook",
-              "Three independent accounts by historians who each worked the same archive",
-              "A contract, a rights registration and a payment record, all held at Caversham",
+              "A signed instruction and a staff handbook",
+              "Three independent historians' archive accounts",
+              "A contract, a rights record and a payslip",
             ],
             correctIndex: 0,
             explanation:
@@ -5346,9 +5346,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "In lesson 14's table, what does the Payne-Scott Award not reach?",
             options: [
               "The career the rule interrupted",
-              "Researchers returning to their field after a break to care for family",
-              "The annual lecture given by a leading female scientist in her name",
-              "Anything at all, since the award was established long after her death",
+              "Researchers back from career breaks",
+              "The annual lecture given in her name",
+              "Anything at all, being posthumous",
             ],
             correctIndex: 0,
             explanation:
@@ -5359,9 +5359,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 14 say an archive keeps that a corrected credit does not?",
             options: [
               "Both the record and the correction",
-              "The names of everyone who worked on a production, including the uncredited",
-              "The employer's reasons for not crediting staff at the time it was deciding",
-              "A copy of every broadcast, so that the original credits can be checked",
+              "The names of everyone, credited or not",
+              "The employer's reasons at the time",
+              "A copy of every broadcast made",
             ],
             correctIndex: 0,
             explanation:
@@ -5372,9 +5372,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which instrument does lesson 13 say separates the author from the claimant?",
             options: [
               "A public register",
-              "An employer's practice, which distinguishes staff from commissioned composers",
-              "A statute, which defines both terms before applying either of them",
-              "None of them, which is why authorship disputes can never be settled on paper",
+              "An employer's practice",
+              "A statute or regulation",
+              "None of the three",
             ],
             correctIndex: 0,
             explanation:
@@ -5385,9 +5385,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 12 say a learner with a library card is one step from?",
             options: [
               "Finding out whether the rule is quoted in Niebur's book",
-              "Reading the BBC's Caversham files, which are open to anyone who asks for them",
-              "Obtaining the contract between the composer and the corporation for the theme",
-              "Settling the wording of the on-screen credit broadcast in November 1963",
+              "Reading the BBC's Caversham files, open to anyone",
+              "Obtaining the composer's contract with the corporation",
+              "Settling the wording of the 1963 on-screen credit",
             ],
             correctIndex: 0,
             explanation:
@@ -5398,9 +5398,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 13 say is the method of this course?",
             options: [
               "Comparison",
-              "Biography, told through the documents each woman left behind her",
-              "Correction, since each section ends by putting a name back into a record",
-              "Advocacy, since the course argues for credits to be given retrospectively",
+              "Biography",
+              "Correction",
+              "Advocacy",
             ],
             correctIndex: 0,
             explanation:
@@ -5424,9 +5424,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Why does lesson 12 say the third grade is the hardest to hold?",
             options: [
               "The statute itself was neither hidden nor unjust on its face",
-              "Because the register entry was made in error and later corrected by the office",
-              "Because the form was filled in by a clerk rather than by either collaborator",
-              "Because nobody has read the statute, which is what makes the case so hard to check",
+              "The register entry was made in error and later corrected",
+              "The form was filled in by a clerk, not a collaborator",
+              "Nobody has read the statute, so the case is hard to check",
             ],
             correctIndex: 0,
             explanation:
@@ -5437,9 +5437,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What did Hanson add to the score much later, and what did it not reach?",
             options: [
               "A handwritten line, which never reached the register",
-              "A second registration, which was filed after the first production had closed",
-              "A printed dedication, which appeared in every copy of the published score",
-              "A notarised assignment, which was recorded in the Copyright Office that year",
+              "A second registration, filed after the first production",
+              "A printed dedication, in every copy of the published score",
+              "A notarised assignment, recorded in the Copyright Office",
             ],
             correctIndex: 0,
             explanation:
@@ -5450,9 +5450,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What correction came from the office that keeps the register?",
             options: [
               "A published account saying she does not appear on the records",
-              "An amended card, issued in 2021, naming both collaborators as co-authors",
-              "A note attached to the original entry recording the unrecorded assignment",
-              "A new registration filed by the office on her behalf a century after the first",
+              "An amended card, issued in 2021, naming both as co-authors",
+              "A note attached to the original entry recording the assignment",
+              "A new registration filed on her behalf a century later",
             ],
             correctIndex: 0,
             explanation:
@@ -5463,9 +5463,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "In lesson 14's table, what does the Copyright Office post not reach?",
             options: [
               "The entry on the card, which is unchanged",
-              "Researchers, who would have to visit Washington to read the original record",
-              "The 1913 newspapers, which had already named her at the time of the premiere",
-              "The opera's title page, which the office reprinted with both names in 2021",
+              "Researchers, who must travel to Washington",
+              "The 1913 newspapers, which already named her",
+              "The opera's title page, reprinted in 2021",
             ],
             correctIndex: 0,
             explanation:
@@ -5476,9 +5476,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is the sixth open question in lesson 14's list?",
             options: [
               "The register case's own open questions, listed in the other course",
-              "Whether the Copyright Office will amend the 1912 entry now that it has been questioned",
-              "Whether Hanson's memoir names her as coauthor, which no scholar has yet checked",
-              "Whether the 1913 newspapers survive in any archive that can be searched today",
+              "Whether the Copyright Office will ever amend the 1912 card entry",
+              "Whether Hanson's memoir names her as coauthor, as yet unchecked",
+              "Whether the 1913 newspapers survive in any searchable archive",
             ],
             correctIndex: 0,
             explanation:
@@ -5490,7 +5490,7 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             options: [
               "A practice you cannot read, a statute you can, and a register anyone can search",
               "Three women, three employers, and three men who each took the credit for himself",
-              "A credit, a doctorate and an archive, which are the three corrections this course found",
+              "A credit, a doctorate and an archive, the three corrections found here",
               "Two rules that were written down and one that was invented by later writers",
             ],
             correctIndex: 0,
@@ -5502,9 +5502,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which two cases does lesson 14 say are taught only in this course?",
             options: [
               "Derbyshire's and Payne-Scott's",
-              "Zitkala-Šá's and Derbyshire's, since the Australian case is taught in a civics course",
-              "Payne-Scott's and Zitkala-Šá's, since the BBC case appears in three other courses",
-              "None of them, since each of the three has a course of its own in this catalog",
+              "Zitkala-Šá's and Derbyshire's",
+              "Payne-Scott's and Zitkala-Šá's",
+              "None; each has a course of its own",
             ],
             correctIndex: 0,
             explanation:
@@ -5515,9 +5515,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 13 say Section 4 read, and what does the other course read?",
             options: [
               "One card here; all five cards there",
-              "The statute here; the newspapers there, with the cards divided between them",
-              "The newspapers here; the assignment there, which this course could not obtain",
-              "Nothing here, since Section 4 describes the register without reading any document",
+              "The statute here; the newspapers there",
+              "The newspapers here; the assignment there",
+              "Nothing here; every card there",
             ],
             correctIndex: 0,
             explanation:
@@ -5528,9 +5528,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which rules does lesson 13 say the other course keeps as well?",
             options: [
               "The two Section 4 keeps, about the ceremony and about shares",
-              "The rule about the BBC, since both courses describe the same credit practice",
-              "The rule about quoting Payne-Scott, since both courses use the same archive page",
-              "None, because that course was written before these rules were agreed",
+              "The rule about the BBC, since both describe the same practice",
+              "The rule about quoting Payne-Scott, from the same archive page",
+              "None, because that course was written before these rules",
             ],
             correctIndex: 0,
             explanation:
@@ -5541,9 +5541,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "In lesson 12's account, what removed Zitkala-Šá from the record?",
             options: [
               "An ordinary use of an ordinary rule",
-              "A change in the law, made after the opera had already been registered once",
-              "A refusal by the Copyright Office to accept a form naming two authors",
-              "A decision by a court that one collaborator held the whole of the copyright",
+              "A change in the law after registration",
+              "A refusal of a form naming two authors",
+              "A court ruling for one collaborator",
             ],
             correctIndex: 0,
             explanation:
@@ -5555,8 +5555,8 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             options: [
               "What the institution says changed; the entry did not",
               "The entry was amended; the title page of the score was not",
-              "The register was digitised; the cards themselves were not made public",
-              "The assignment was finally recorded; the original registration was not withdrawn",
+              "The register was digitised; the cards were not made public",
+              "The assignment was recorded; the entry was not withdrawn",
             ],
             correctIndex: 0,
             explanation:
@@ -5567,9 +5567,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "How many grades of paper does lesson 12 now distinguish?",
             options: [
               "Three",
-              "Two, since a register entry is simply a statute being applied in practice",
-              "Four, counting the press coverage that named two of the three women",
-              "One, since every rule ends up written somewhere if a researcher looks long enough",
+              "Two",
+              "Four",
+              "One",
             ],
             correctIndex: 0,
             explanation:
@@ -5580,9 +5580,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does the handwritten line reach, in lesson 14's table?",
             options: [
               "Whoever opens that box",
-              "Every later performance of the opera, since the score was used for each one",
-              "The register, once the archive that holds the score reported it to the office",
-              "Nobody at all, since the addition was made after the collaborator had died",
+              "Every later performance",
+              "The register, once reported",
+              "Nobody: the collaborator died",
             ],
             correctIndex: 0,
             explanation:
@@ -5593,9 +5593,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does this course do with the other course's open questions?",
             options: [
               "Names them and leaves them there",
-              "Answers them, using the sources gathered for this course's own sections",
-              "Treats them as settled, since the standalone course was written first",
-              "Adds them to its own research list so that both courses can close them together",
+              "Answers them from its own sources",
+              "Treats them as already settled",
+              "Adds them to its own research list",
             ],
             correctIndex: 0,
             explanation:
@@ -5621,9 +5621,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is this course about?",
             options: [
               "What each rule left on paper",
-              "Two women who were robbed of credit by colleagues who signed their work",
-              "The making of an electronic theme tune, described sound by sound from the tapes",
-              "The history of women's employment in broadcasting and in government science",
+              "Two women robbed by their colleagues",
+              "How an electronic theme was made",
+              "Women's employment in broadcasting",
             ],
             correctIndex: 0,
             explanation:
@@ -5634,9 +5634,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What rules does this course state at the front?",
             options: [
               "No BBC policy, no quotation from her letter, no ceremony, no shares",
-              "No living person is named, and no claim is made about anyone's motives at any point",
-              "No secondary source is used, and no claim rests on a single document anywhere",
-              "No credit dispute is described, and no employer is named in any lesson of the course",
+              "No living person is named, and no claim about anyone's motives",
+              "No secondary source, and no claim resting on a single document",
+              "No credit dispute described, and no employer named in any lesson",
             ],
             correctIndex: 0,
             explanation:
@@ -5647,8 +5647,8 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which three instruments does this course compare?",
             options: [
               "An employer's practice, a statute, and a public register",
-              "A screen credit, a listings billing and a commercial record label",
-              "A memo, a monograph and an obituary, one for each of the three cases",
+              "A screen credit, a listings billing and a record label",
+              "A memo, a monograph and an obituary, one per case",
               "A personnel file, a security file and a scientific bibliography",
             ],
             correctIndex: 0,
@@ -5660,9 +5660,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which catalog course goes deeper into the register case than this one does?",
             options: [
               "Whose Name Is on the Score",
-              "Who Gets Named, whose second lesson supplies the mechanism frame used here",
-              "Who Built the Blood Bank, which reads a researcher's own dissertation",
-              "The Name on the Door, which follows the credited unit in architecture",
+              "Who Gets Named, lesson 2",
+              "Who Built the Blood Bank",
+              "The Name on the Door",
             ],
             correctIndex: 0,
             explanation:
@@ -5673,9 +5673,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What job did Derbyshire hold when she made the theme, and what was the Workshop?",
             options: [
               "Studio manager, in a service department for drama",
-              "Staff composer, in the corporation's music department at Maida Vale",
-              "Freelance arranger, engaged for the production by the programme's producer",
-              "Senior engineer, supplied to the unit by the corporation's Engineering Division",
+              "Staff composer, in the music department at Maida Vale",
+              "Freelance arranger, engaged by the programme's producer",
+              "Senior engineer, from the Engineering Division",
             ],
             correctIndex: 0,
             explanation:
@@ -5686,9 +5686,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What did the BBC make quite clear about composers, according to Derbyshire?",
             options: [
               "That it did not employ them",
-              "That it credited them only when they held a contract with the music department",
-              "That it paid them royalties which staff members were not entitled to share",
-              "That it preferred them to work with the Workshop rather than with an orchestra",
+              "That it credited contracted ones",
+              "That it would credit them",
+              "That they should use the Workshop",
             ],
             correctIndex: 0,
             explanation:
@@ -5699,9 +5699,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is BBC Engineering Monograph No. 51, and what does it not contain?",
             options: [
               "The BBC's printed account of the Workshop, naming no maker",
-              "An internal instruction about credits, which was never circulated outside the BBC",
-              "A catalogue of the Workshop's sounds, without the names of the programmes they served",
-              "A staff list for the Workshop, without the grades any of them held",
+              "An internal instruction about credits, never circulated",
+              "A catalogue of the Workshop's sounds, without programme names",
+              "A staff list for the Workshop, without anyone's grade",
             ],
             correctIndex: 0,
             explanation:
@@ -5712,9 +5712,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Who does the monograph call the author?",
             options: [
               "The writer of the drama",
-              "The member of staff who builds the sounds for the production",
-              "The producer, who approves the sounds before they are transmitted",
-              "The Engineer-in-Charge, whose name appears on the monograph's title page",
+              "The maker of the sounds",
+              "The producer of the programme",
+              "The Engineer-in-Charge",
             ],
             correctIndex: 0,
             explanation:
@@ -5725,9 +5725,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Why is Doctor Who absent from the monograph's appendix?",
             options: [
               "The monograph predates the first broadcast",
-              "The theme was made by an outside composer, so the Workshop did not claim it",
-              "The appendix covered radio productions only, and the programme was television",
-              "The BBC removed it from the list before publication to avoid publicising the theme",
+              "An outside composer made the theme",
+              "The appendix covered radio productions only",
+              "The BBC removed it before publication",
             ],
             correctIndex: 0,
             explanation:
@@ -5738,9 +5738,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Whose telling of the Grainer anecdote lacks the famous exchange?",
             options: [
               "Derbyshire's own",
-              "Hodgson's, in the obituary he wrote for her in 2001",
-              "Ayres's, in his history of the theme on his own website",
-              "NPR's, in the feature published in October 2017",
+              "Hodgson's obituary",
+              "Ayres's history",
+              "NPR's 2017 feature",
             ],
             correctIndex: 0,
             explanation:
@@ -5751,9 +5751,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does Butler's sentence about Grainer seeking a share of the credit and royalties do?",
             options: [
               "It fuses two separate claims from one source",
-              "It quotes a BBC memo that records the request and the refusal together",
-              "It corrects the earlier accounts by separating the credit from the royalties",
-              "It reports a scene that the composer described in an interview before his death",
+              "It quotes a BBC memo recording the request",
+              "It corrects earlier accounts on royalties",
+              "It reports a scene the composer described",
             ],
             correctIndex: 0,
             explanation:
@@ -5764,9 +5764,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What has never been found, on either research pass, about the royalty story?",
             options: [
               "Anything written or said by Ron Grainer himself",
-              "Any account by Derbyshire of what she was offered and what became of it",
+              "Any account by Derbyshire of the royalty offer",
               "Any mention of the theme in the press during the 1960s",
-              "Any record that the theme was released commercially as a single",
+              "Any record that the theme was released as a single",
             ],
             correctIndex: 0,
             explanation:
@@ -5777,9 +5777,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What did Esslin's memo of 30 June 1964 ask for?",
             options: [
               "That the contributors' names be mentioned in the credits",
-              "That the Workshop be given a budget to commission its own compositions",
-              "That the production be repeated so more listeners could hear the sound work",
-              "That Derbyshire be promoted to a grade that carried an automatic credit",
+              "That the Workshop get a budget for its own compositions",
+              "That the production be repeated for more listeners",
+              "That Derbyshire be promoted to a grade with a credit",
             ],
             correctIndex: 0,
             explanation:
@@ -5792,7 +5792,7 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
               "It proves a request failed; it does not prove a written rule",
               "It proves a written rule existed; it does not prove who wrote it",
               "It proves Briscoe refused the request; it does not prove why",
-              "It proves the BBC changed its practice in 1964; it does not say when",
+              "It proves a change of practice in 1964; it does not say when",
             ],
             correctIndex: 0,
             explanation:
@@ -5803,9 +5803,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Name one occasion on which the BBC credit practice bent.",
             options: [
               "The Radio Times billing for The Blue Veiled Men",
-              "The on-screen credits of the first Doctor Who serial in November 1963",
-              "The BBC information sheet about the theme, prepared in 1964",
-              "The Radio Times tenth-anniversary special about the programme in January 1974",
+              "The on-screen credits of the first serial in 1963",
+              "The BBC information sheet about the theme, 1964",
+              "The Radio Times tenth-anniversary special of 1974",
             ],
             correctIndex: 0,
             explanation:
@@ -5816,9 +5816,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What happened after the 1969 production of The Naked Sun?",
             options: [
               "Other Heads asked for their supervisors to be credited",
-              "The corporation announced that Workshop staff would be credited from then on",
-              "Derbyshire wrote to the Head of Drama asking for a credit and was refused",
-              "The Radio Times printed the Workshop's staff names for the first time",
+              "The corporation began crediting Workshop staff by name",
+              "Derbyshire wrote asking for a credit and was refused",
+              "The Radio Times printed Workshop staff names at last",
             ],
             correctIndex: 0,
             explanation:
@@ -5829,9 +5829,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What did the 1965 press coverage show?",
             options: [
               "She was neither unknown nor hidden",
-              "The BBC had begun crediting Workshop staff in its own programmes",
-              "Journalists were barred from naming the corporation's staff members",
-              "Her colleagues were named while she was not, in every paper that covered the unit",
+              "The BBC had begun crediting the Workshop",
+              "Journalists were barred from naming staff",
+              "Her colleagues were named but she was not",
             ],
             correctIndex: 0,
             explanation:
@@ -5842,9 +5842,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What was the 1950 letter to Payne-Scott, and who signed it?",
             options: [
               "A personal letter from the Chairman of CSIRO",
-              "A formal notice of dismissal from the Public Service Board, signed by its secretary",
-              "A memorandum from the Chief of the Radiophysics Laboratory to Head Office",
-              "A circular sent to every married woman on the organisation's permanent staff",
+              "A dismissal notice from the Public Service Board",
+              "A memorandum from the Radiophysics Chief",
+              "A circular to every married woman on staff",
             ],
             correctIndex: 0,
             explanation:
@@ -5855,9 +5855,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Where did the marriage rule actually live?",
             options: [
               "In a regulation made under a clause of the Act",
-              "In the Act constituting CSIR, which named married women in its employment section",
-              "In the Superannuation Act alone, which is why it touched only pensions",
-              "In an unwritten convention, which the Chairman described from memory in his letter",
+              "In the Act constituting CSIR, naming married women",
+              "In the Superannuation Act alone, touching pensions",
+              "In an unwritten convention recalled by the Chairman",
             ],
             correctIndex: 0,
             explanation:
@@ -5881,9 +5881,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "When did the Public Service Act amendment end the requirement to resign on marriage?",
             options: [
               "November 1966",
-              "August 1945, when the superannuation provision received assent",
-              "March 1950, shortly after this correspondence was exchanged",
-              "July 1951, when Payne-Scott resigned from the organisation",
+              "August 1945",
+              "March 1950",
+              "July 1951",
             ],
             correctIndex: 0,
             explanation:
@@ -5894,9 +5894,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Why does this course quote the Chairman quoting Payne-Scott?",
             options: [
               "Her own letter is not on the page that prints his",
-              "Because her letter was destroyed before the file reached the national archive",
-              "Because her letter is held privately and the family has not released it",
-              "Because the archive's transcript of her letter is too damaged to read",
+              "Her letter was destroyed before reaching the archive",
+              "Her letter is held privately by the family",
+              "The archive's transcript of her letter is unreadable",
             ],
             correctIndex: 0,
             explanation:
@@ -5907,9 +5907,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What did the Chairman propose as the simplest way of regularising the affair?",
             options: [
               "That she tell him the date of her marriage",
-              "That she apply to the Minister for a certificate of special circumstances",
-              "That she resign at once and be re-employed as a temporary officer",
-              "That she withdraw her objection and the matter be treated as closed",
+              "That she apply to the Minister for a certificate",
+              "That she resign and be re-employed as temporary",
+              "That she withdraw her written objection",
             ],
             correctIndex: 0,
             explanation:
@@ -5920,7 +5920,7 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What three questions does the course say to ask of any archived correspondence?",
             options: [
               "Whose paper is this, whose is missing, and is the missing side quoted through it",
-              "Who created it, who catalogued it, and when was it opened to the public",
+              "Who created it, who catalogued it, and when was it first opened to the public",
               "Is it signed, is it dated, and does it carry an archival reference number",
               "Who benefits from it, who is harmed by it, and who kept it for that reason",
             ],
@@ -5933,9 +5933,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Why is Payne-Scott's case in a course about credit at all?",
             options: [
               "It is the same mechanism, written down instead of inferred",
-              "Because her name was left off the papers her laboratory published in the 1950s",
-              "Because the laboratory was credited as a unit in the way the Workshop was",
-              "Because she and Derbyshire were removed from records by the same employer",
+              "Her name was left off her laboratory's published papers",
+              "The laboratory was credited as a unit, like the Workshop",
+              "She and Derbyshire were removed by the same employer",
             ],
             correctIndex: 0,
             explanation:
@@ -5946,9 +5946,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which claim in Who Gets the Credit does her file complicate?",
             options: [
               "That being barred by law leaves no document",
-              "That an employer always keeps a written record of why a name was omitted",
-              "That a patent assignment moves an invention from a person to a company",
-              "That a credit correction can be made retrospectively once evidence is found",
+              "That employers record why a name is omitted",
+              "That an assignment moves an invention to a company",
+              "That credit can be corrected retrospectively",
             ],
             correctIndex: 0,
             explanation:
@@ -5959,9 +5959,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does lesson 12 say the writing of a rule does NOT change?",
             options: [
               "The outcome for the person it is applied to",
-              "What a later reader is able to know about the organisation's reasoning",
-              "Whether a historian can quote the rule rather than describing it",
-              "Whether the rule can be traced to the statute that authorised it",
+              "What a later reader can know of the reasoning",
+              "Whether a historian can quote the rule",
+              "Whether the rule can be traced to its statute",
             ],
             correctIndex: 0,
             explanation:
@@ -5972,9 +5972,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What happens to a practice with no text, as accounts of it multiply?",
             options: [
               "The nouns harden from preference to policy to rules",
-              "The claim is dropped, because no writer will assert what cannot be cited",
-              "The earliest account is repeated verbatim by everyone who follows it",
-              "Each writer adds a hedge, so the claim weakens as it travels",
+              "The claim is dropped, since nobody can cite it",
+              "The earliest account is repeated verbatim by all",
+              "Each writer adds a hedge, so the claim weakens",
             ],
             correctIndex: 0,
             explanation:
@@ -5998,9 +5998,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which two BBC file references does the course name as the place to look?",
             options: [
               "R97/9/1 and R97/11/1-2",
-              "DD332 and DD333, the memo and the information sheet held in Manchester",
-              "T5/1, 702/1 and N15/17/1, two production files at Caversham",
-              "R97/25/1 and R97/25/2, the Workshop's scrapbooks of press clippings",
+              "DD332 and DD333",
+              "T5/1, 702/1 and N15/17/1",
+              "R97/25/1 and R97/25/2",
             ],
             correctIndex: 0,
             explanation:
@@ -6011,9 +6011,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which unread book would most likely settle the rule question?",
             options: [
               "Niebur's Special Sound",
-              "Briscoe's own account of the Workshop's first twenty-five years",
-              "Winter's thesis, which is open access and was read for this course",
-              "The BBC Handbook for 1964, a public relations annual",
+              "Briscoe's First 25 Years",
+              "Winter's thesis",
+              "The BBC Handbook for 1964",
             ],
             correctIndex: 0,
             explanation:
@@ -6024,9 +6024,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What can a public register not record?",
             options: [
               "Who actually did the work",
-              "The date on which a claim was filed with the office",
-              "The name of the person claiming to hold the right",
-              "Whether the claimant and the author are the same person",
+              "The date a claim was filed",
+              "The name of the claimant",
+              "Who the named author is",
             ],
             correctIndex: 0,
             explanation:
@@ -6037,9 +6037,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does the comparison table say about corrections to all three instruments?",
             options: [
               "None of them reaches backwards",
-              "Only the register admits a correction, because entries can be amended there",
-              "All three reach backwards once the correcting document is filed beside the first",
-              "Only the statute reaches backwards, because an amendment restores lost entitlements",
+              "Only the register, by amendment",
+              "All three, once a correction is filed",
+              "Only the statute, by amendment",
             ],
             correctIndex: 0,
             explanation:
@@ -6050,9 +6050,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What did the closing credits of 23 November 2013 say?",
             options: [
               "Original theme arranged by Delia Derbyshire",
-              "Theme music by Ron Grainer with the BBC Radiophonic Workshop",
-              "Original theme realised by Delia Derbyshire and Dick Mills",
-              "In memory of Delia Derbyshire, who created the original theme",
+              "Theme music by Ron Grainer and the Workshop",
+              "Original theme realised by Derbyshire and Mills",
+              "In memory of Delia Derbyshire, its creator",
             ],
             correctIndex: 0,
             explanation:
@@ -6063,9 +6063,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which correction does the course call the most durable, and why?",
             options: [
               "The Manchester archive, because it lets somebody check",
-              "The honorary doctorate, because a university's record cannot be withdrawn",
+              "The honorary doctorate, which cannot be withdrawn",
               "The 2013 screen credit, because every later repeat carries it",
-              "The 1966 amendment, because it removed the rule from the statute book",
+              "The 1966 amendment, which removed the statutory rule",
             ],
             correctIndex: 0,
             explanation:
@@ -6076,9 +6076,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is the CSIRO award named for Payne-Scott for?",
             options: [
               "Researchers returning after career breaks",
-              "The best paper published by a woman in Australian physics each year",
-              "Students beginning doctoral work in radio astronomy in Australia",
-              "Officers who were required to resign on marriage before the 1966 amendment",
+              "The best paper by a woman in Australian physics",
+              "Students starting doctorates in radio astronomy",
+              "Officers who resigned on marriage before 1966",
             ],
             correctIndex: 0,
             explanation:
@@ -6091,7 +6091,7 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
               "What instrument was this written on, and what can it record",
               "Who gained from the arrangement, and what did the other person lose",
               "Was the rule fair, and would the same organisation apply it today",
-              "Which account of the story is the earliest, and is it the most reliable",
+              "Which account is the earliest, and is it the most reliable",
             ],
             correctIndex: 0,
             explanation:
@@ -6102,9 +6102,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What is a compression, as this course uses the word?",
             options: [
               "Two separate facts folded into one sentence",
-              "A shortened quotation, with the middle removed and marked by an ellipsis",
-              "A summary of a long document written by an archivist for students",
-              "A rule stated in fewer words than the statute that authorises it",
+              "A shortened quotation with an ellipsis",
+              "An archivist's summary of a long document",
+              "A rule stated in fewer words than its statute",
             ],
             correctIndex: 0,
             explanation:
@@ -6115,9 +6115,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What would show that the BBC non-crediting was a decision about Derbyshire rather than a convention?",
             options: [
               "Her named colleagues being printed while she was not",
-              "Any evidence that she asked for a credit and was refused in writing",
-              "The composer receiving royalties while the Workshop staff received none",
-              "Press coverage that named her, since it shows her name could be printed",
+              "Evidence that she asked for a credit and was refused",
+              "The composer getting royalties while staff got none",
+              "Press coverage naming her, showing it could be printed",
             ],
             correctIndex: 0,
             explanation:
@@ -6128,9 +6128,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "How many people does the monograph describe on the Workshop's staff, and how many does it name?",
             options: [
               "Six described, none named",
-              "Six described, two named in the acknowledgment for their work on the sounds",
-              "Twelve described, five named on a list at the end of the document",
-              "Three described, all named, since only the studio managers made the sounds",
+              "Six described, two named",
+              "Twelve described, five named",
+              "Three described, all named",
             ],
             correctIndex: 0,
             explanation:
@@ -6141,9 +6141,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What did Derbyshire say the Workshop staff got instead of a credit?",
             options: [
               "A free Radio Times",
-              "An annual bonus divided equally between the members of the unit",
-              "A credit in the corporation's internal newsletter when a programme did well",
-              "A copy of the master tape, which they were allowed to keep for themselves",
+              "An annual bonus",
+              "A newsletter credit",
+              "A copy of the master tape",
             ],
             correctIndex: 0,
             explanation:
@@ -6154,9 +6154,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What does this course refuse to build out of two documented facts?",
             options: [
               "A refusal scene no document describes",
-              "A comparison between an employment bar and a missing screen credit",
-              "A claim that a practice existed at the BBC during the 1960s",
-              "An account of how the theme was made from oscillators and tape",
+              "A comparison of a bar and a missing credit",
+              "A claim that a practice existed at the BBC",
+              "An account of how the theme was made",
             ],
             correctIndex: 0,
             explanation:
@@ -6167,9 +6167,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Who is named on the 1912 registration card for The Sun Dance Opera?",
             options: [
               "William F. Hanson, as claimant and as author",
-              "Zitkala-Šá as author and William F. Hanson as claimant, which is the usual split",
-              "Both collaborators, as joint authors of a dramatico-musical composition",
-              "The Uintah Academy in Vernal, Utah, as the proprietor of the unpublished score",
+              "Zitkala-Šá as author, Hanson as claimant",
+              "Both collaborators, as joint authors",
+              "The Uintah Academy, as proprietor of the score",
             ],
             correctIndex: 0,
             explanation:
@@ -6180,9 +6180,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What happened to the half interest Hanson signed over a month after the first production?",
             options: [
               "It was notarised and never recorded",
-              "It was recorded within three months, as the 1909 Act required of an assignment",
-              "It was withdrawn when the opera was revived at a university in 1935",
-              "It was replaced by a later agreement that gave her a share of the royalties",
+              "It was recorded within three months",
+              "It was withdrawn at the 1935 revival",
+              "It was replaced by a royalty agreement",
             ],
             correctIndex: 0,
             explanation:
@@ -6193,9 +6193,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What claim about the opera does this course refuse to repeat?",
             options: [
               "That she wrote the libretto and songs",
-              "That the registration card names one man in both of its name blanks",
-              "That the newspapers of 1913 acknowledged her part in the early productions",
-              "That the assignment of a half interest was notarised in Uintah County",
+              "That the card names one man in both blanks",
+              "That the 1913 papers acknowledged her part",
+              "That the half interest was notarised",
             ],
             correctIndex: 0,
             explanation:
@@ -6206,9 +6206,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What are the two rules Section 4 keeps?",
             options: [
               "No ceremony, and no authorship shares",
-              "No secondary sources, and no quotation from any newspaper of the period",
-              "No living people named, and no claims about copyright law after 1976",
-              "No speculation about motive, and no reliance on a source read in an archive copy",
+              "No secondary sources, and no newspaper quotes",
+              "No living people, and no post-1976 law",
+              "No motive speculation, and no archive copies",
             ],
             correctIndex: 0,
             explanation:
@@ -6219,9 +6219,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "What did the press of 1913 and the register do differently?",
             options: [
               "The press acknowledged her; the register did not",
-              "The press named nobody while the register named both collaborators",
-              "The press corrected the register, which was amended the following year",
-              "The press reported the assignment, which the register had already recorded",
+              "The press named nobody; the register named both",
+              "The press corrected the register, amended a year later",
+              "The press reported the assignment the register held",
             ],
             correctIndex: 0,
             explanation:
@@ -6232,9 +6232,9 @@ University of Manchester Library. (n.d.). *Papers of Delia Derbyshire* (GB 133 D
             prompt: "Which correction in this course has the smallest reach?",
             options: [
               "A line added by hand to an archived score",
-              "A screen credit added to an anniversary broadcast fifty years later",
-              "An honorary doctorate conferred sixteen years after the recipient's death",
-              "An amendment to a statute that ends a rule for everybody employed afterwards",
+              "A screen credit on an anniversary broadcast",
+              "An honorary doctorate conferred posthumously",
+              "An amendment to a statute ending a rule",
             ],
             correctIndex: 0,
             explanation:

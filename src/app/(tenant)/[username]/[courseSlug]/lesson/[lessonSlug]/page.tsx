@@ -6,6 +6,7 @@ import { lessonAccess, type LessonLockReason } from "@/lib/gating";
 import { LessonPlayer } from "@/components/lesson-player";
 import { LessonViewPing } from "@/components/lesson-view-ping";
 import { MarkCompleteButton } from "@/components/mark-complete-button";
+import { SeriesContinuesNotice } from "@/components/series-continues-notice";
 import { RecallPlayer } from "@/components/recall-player";
 import { ProgressBar } from "@/components/progress-bits";
 import { CurriculumFeedback } from "@/components/curriculum-feedback";
@@ -576,6 +577,10 @@ export default async function LessonPage({ params }: Params) {
       {access.open && view.session ? (
         <CurriculumFeedback courseId={view.course.id} lessonId={lesson.id} />
       ) : null}
+
+          {/* After the last lesson of a course this school shows only as a series preview: where the
+              rest of the series lives. Renders nothing for every other course. */}
+          {next ? null : <SeriesContinuesNotice tenantSlug={view.tenant.slug} courseSlug={view.course.slug} />}
 
           <nav className="mt-10 flex items-center justify-between gap-3 border-t border-neutral-200 pt-5 dark:border-neutral-800">
             {prev ? (

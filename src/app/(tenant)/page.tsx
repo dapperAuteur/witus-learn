@@ -9,6 +9,7 @@ import { CourseCard } from "@/components/course-card";
 import { ShareButton } from "@/components/share-button";
 import { LearnerDashboardView } from "@/components/learner-dashboard";
 import { ComingSoon } from "@/components/coming-soon";
+import { SchoolDisclaimerNotice } from "@/components/school-disclaimer-notice";
 import { cachedCategories, cachedListCourses, cachedMapDataExists } from "@/lib/public-cache";
 import { getUsernames } from "@/db/queries/authoring";
 import { coursePagePath } from "@/lib/course-href";
@@ -38,14 +39,19 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
       const name = session.user.name?.trim().split(/\s+/)[0] || "there";
       const leaderboard = gamification === "full" ? await getWeeklyLeaderboard(tenant.id) : [];
       return (
-        <LearnerDashboardView
-          data={data}
-          name={name}
-          gamification={gamification}
-          leaderboard={leaderboard}
-          userId={session.user.id}
-          commodityMap={showMap}
-        />
+        <>
+          <LearnerDashboardView
+            data={data}
+            name={name}
+            gamification={gamification}
+            leaderboard={leaderboard}
+            userId={session.user.id}
+            commodityMap={showMap}
+          />
+          <div className="mx-auto max-w-5xl px-4">
+            <SchoolDisclaimerNotice tenantSlug={tenant.slug} />
+          </div>
+        </>
       );
     }
   }
@@ -84,6 +90,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
             ← Your learning
           </Link>
         ) : null}
+        <SchoolDisclaimerNotice tenantSlug={tenant.slug} />
       </header>
 
       {/* 0) Value landing for signed-out visitors: lead with why to learn here (cited, standards-aligned,

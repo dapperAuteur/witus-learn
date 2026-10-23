@@ -1758,8 +1758,8 @@ async function main() {
   // approved by BAM 2026-10-14. Series "Tools That Think" (analog tools that work without electricity):
   // TOOLS-01 map and compass and TOOLS-03 surveying are registered in their own branches. Multiple-choice
   // quizzes only, because a slide-rule reading is approximate and typed answers grade by exact match.
-  // Learn.WitUS only for now: BAM also asked for an ElementaryMBA copy (STEAM), which needs a change to
-  // tests/seed-registry.test.ts (one slug per seed script today) and waits on his OK.
+  // Learn.WitUS only. BAM had asked for an ElementaryMBA copy (STEAM), but his sharing rule (2026-10-23)
+  // gives that school only the seven courses in FULL_SHARE_TO_ELEMENTARY_MBA, so none is seeded.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -2186,76 +2186,223 @@ async function main() {
     // ownership/transfer, governance), and reading the formation documents as primary sources is the
     // skill. It is the general case of which What They Built is a worked example, and it says plainly,
     // repeatedly, that it is not legal or tax advice. First of 7 planned path courses.
-    { slug: "what-a-business-entity-is", course: WHAT_A_BUSINESS_ENTITY_IS_COURSE, category: "Civics" },
+    // Both paths carry series fields (BAM, 2026-10-23): the business path is ENTITY-01 to ENTITY-06
+    // with the capstone as ENTITY-99, the government path is POWER-01 to POWER-08 with POWER-99. The
+    // two paths are interleaved below in the order they shipped; seriesOrder is the reading order.
+    {
+      slug: "what-a-business-entity-is",
+      course: WHAT_A_BUSINESS_ENTITY_IS_COURSE,
+      category: "Civics",
+      seriesSlug: "how-a-business-is-formed",
+      seriesTitle: "How a Business Is Formed",
+      seriesOrder: 1,
+      seriesCode: "ENTITY",
+      seriesPosition: "01",
+    },
     // "Financing Without Access" is course 4 of the "How a Business Is Formed" path (plans/46): the
     // bridge course, historical and global. Fraternal benefit societies, industrial/burial insurance,
     // building and loan associations, ROSCAs worldwide (susu/tanda/chit fund/tontine), and finance
     // without interest (Islamic finance). Through-line: when the capital system excludes you, you
     // invent an entity. The general case of What They Built's fraternal-orders-and-building-loans.
-    { slug: "financing-without-access", course: FINANCING_WITHOUT_ACCESS_COURSE, category: "Civics" },
+    {
+      slug: "financing-without-access",
+      course: FINANCING_WITHOUT_ACCESS_COURSE,
+      category: "Civics",
+      seriesSlug: "how-a-business-is-formed",
+      seriesTitle: "How a Business Is Formed",
+      seriesOrder: 4,
+      seriesCode: "ENTITY",
+      seriesPosition: "04",
+    },
     // "The US Forms" is course 2 of the business path (plans/46, Path B): the US entity forms read
     // through the four decisions, with the S-corp taught as a tax ELECTION not an entity type.
-    { slug: "us-business-forms", course: US_BUSINESS_FORMS_COURSE, category: "Civics" },
+    {
+      slug: "us-business-forms",
+      course: US_BUSINESS_FORMS_COURSE,
+      category: "Civics",
+      seriesSlug: "how-a-business-is-formed",
+      seriesTitle: "How a Business Is Formed",
+      seriesOrder: 2,
+      seriesCode: "ENTITY",
+      seriesPosition: "02",
+    },
     // "The Middle Layer" is course 4 of the government path (plans/46, Path A): states/provinces/regions,
     // on the federalism-vs-devolution distinction (entrenched co-sovereigns vs powers granted by statute).
-    { slug: "the-middle-layer", course: THE_MIDDLE_LAYER_COURSE, category: "Civics" },
+    {
+      slug: "the-middle-layer",
+      course: THE_MIDDLE_LAYER_COURSE,
+      category: "Civics",
+      seriesSlug: "who-has-the-power-path",
+      seriesTitle: "Who Has the Power?",
+      seriesOrder: 4,
+      seriesCode: "POWER",
+      seriesPosition: "04",
+    },
     // "Who Has the Power to Do This?" is course 1 (the method course) of the "Who Has the Power?" path
     // (plans/46, Path A): given any government action, find the body, its enabling authority, the
     // document that grants it, and who can overturn it. It is the general case of which the route
     // series is fourteen worked examples (find the instrument, then its source), teaches Dillon's Rule
     // vs home rule and the special-district layer, and introduces tribal nations as a SEPARATE
     // sovereign, not a rung on the ladder. First of 9 planned path courses.
-    { slug: "who-has-the-power", course: WHO_HAS_THE_POWER_COURSE, category: "Civics" },
+    {
+      slug: "who-has-the-power",
+      course: WHO_HAS_THE_POWER_COURSE,
+      category: "Civics",
+      seriesSlug: "who-has-the-power-path",
+      seriesTitle: "Who Has the Power?",
+      seriesOrder: 1,
+      seriesCode: "POWER",
+      seriesPosition: "01",
+    },
     // "The Local Layer" is course 5 of the "Who Has the Power?" path (plans/46, Path A): the level of
     // government most adults were never taught. Dillon's Rule developed, the municipal forms
     // (mayor-council, council-manager, commission), special districts (which outnumber cities and
     // whose elections nobody votes in), town meeting, and Unigov as the "creatures of the state" case.
-    { slug: "the-local-layer", course: THE_LOCAL_LAYER_COURSE, category: "Civics" },
+    {
+      slug: "the-local-layer",
+      course: THE_LOCAL_LAYER_COURSE,
+      category: "Civics",
+      seriesSlug: "who-has-the-power-path",
+      seriesTitle: "Who Has the Power?",
+      seriesOrder: 5,
+      seriesCode: "POWER",
+      seriesPosition: "05",
+    },
     // "Forms of Government, Honestly" is course 2 of the government path (plans/46, Path A): the
     // classical forms, then the load-bearing skill of reading a classification critically, because
     // V-Dem, Polity, Freedom House, and the EIU rank the same countries differently on published
     // methodologies. Asserts no country's current index score; the capstone reads two live reports.
-    { slug: "forms-of-government", course: FORMS_OF_GOVERNMENT_COURSE, category: "Civics" },
+    {
+      slug: "forms-of-government",
+      course: FORMS_OF_GOVERNMENT_COURSE,
+      category: "Civics",
+      seriesSlug: "who-has-the-power-path",
+      seriesTitle: "Who Has the Power?",
+      seriesOrder: 2,
+      seriesCode: "POWER",
+      seriesPosition: "02",
+    },
     // "How Countries Constitute Themselves" is course 3 of the government path (plans/46, Path A):
     // presidential/parliamentary/semi-presidential, written vs uncodified, federal vs unitary, and the
     // four routes by which constitutions get made (US 1787, Germany 1949, Japan 1947, South Africa 1996).
-    { slug: "how-countries-constitute", course: HOW_COUNTRIES_CONSTITUTE_COURSE, category: "Civics" },
+    {
+      slug: "how-countries-constitute",
+      course: HOW_COUNTRIES_CONSTITUTE_COURSE,
+      category: "Civics",
+      seriesSlug: "who-has-the-power-path",
+      seriesTitle: "Who Has the Power?",
+      seriesOrder: 3,
+      seriesCode: "POWER",
+      seriesPosition: "03",
+    },
     // "Cooperatives" is course 3 of the business path (plans/46, Path B): worker/consumer/producer/
     // housing/purchasing co-ops on the one-member-one-vote difference, the Rochdale Principles,
     // Mondragon, rural electric co-ops, and the credit union that Financing Without Access handed here.
-    { slug: "cooperatives", course: COOPERATIVES_COURSE, category: "Civics" },
+    {
+      slug: "cooperatives",
+      course: COOPERATIVES_COURSE,
+      category: "Civics",
+      seriesSlug: "how-a-business-is-formed",
+      seriesTitle: "How a Business Is Formed",
+      seriesOrder: 3,
+      seriesCode: "ENTITY",
+      seriesPosition: "03",
+    },
     // "How Other Countries Form Businesses" is course 5 of the business path (plans/46, Path B): the
     // four decisions applied to the UK, Germany (with Mitbestimmung), France, Japan, the Nordics, China
     // (SOEs and the VIE contractual structure), and India; the American set of forms is not universal.
-    { slug: "foreign-business-forms", course: FOREIGN_BUSINESS_FORMS_COURSE, category: "Civics" },
+    {
+      slug: "foreign-business-forms",
+      course: FOREIGN_BUSINESS_FORMS_COURSE,
+      category: "Civics",
+      seriesSlug: "how-a-business-is-formed",
+      seriesTitle: "How a Business Is Formed",
+      seriesOrder: 5,
+      seriesCode: "ENTITY",
+      seriesPosition: "05",
+    },
     // "Tribal Nations and Indigenous Governance" is course 6 of the government path (plans/46, Path A):
     // sovereignty as PRE-EXISTING not delegated (a separate sovereign, not a rung), treaties as supreme
     // law, IRA 1934 vs traditional governance (the Haudenosaunee held with care), Public Law 280,
     // McGirt, and Alaska Native corporations. Follows plans/46's care rules: teaches that/whose/why,
     // reproduces no ceremonial or restricted detail, leads with nations' own words and Indigenous scholars.
-    { slug: "tribal-nations-governance", course: TRIBAL_NATIONS_GOVERNANCE_COURSE, category: "Civics" },
+    {
+      slug: "tribal-nations-governance",
+      course: TRIBAL_NATIONS_GOVERNANCE_COURSE,
+      category: "Civics",
+      seriesSlug: "who-has-the-power-path",
+      seriesTitle: "Who Has the Power?",
+      seriesOrder: 6,
+      seriesCode: "POWER",
+      seriesPosition: "06",
+    },
     // "Governments Without States" is course 7 of the government path (plans/46, Path A): the EU as its
     // own legal order, the UN and AU, unrecognised/contested states (Montevideo, recognition theories,
     // taught neutrally), and self-governing communities (HOAs, co-ops, unions, mutual aid), the hand-off
     // to the business path.
-    { slug: "governments-without-states", course: GOVERNMENTS_WITHOUT_STATES_COURSE, category: "Civics" },
+    {
+      slug: "governments-without-states",
+      course: GOVERNMENTS_WITHOUT_STATES_COURSE,
+      category: "Civics",
+      seriesSlug: "who-has-the-power-path",
+      seriesTitle: "Who Has the Power?",
+      seriesOrder: 7,
+      seriesCode: "POWER",
+      seriesPosition: "07",
+    },
     // "How Power Changes Hands" is course 8 of the government path (plans/46, Path A): election systems
     // as machines that turn identical votes into different winners (FPTP, party-list PR, ranked choice,
     // mixed-member), then power changing hands outside elections (coups, revolutions, negotiated
     // transitions, term limits). The worked example is labelled hypothetical; real results cited precisely.
-    { slug: "how-power-changes-hands", course: HOW_POWER_CHANGES_HANDS_COURSE, category: "Civics" },
+    {
+      slug: "how-power-changes-hands",
+      course: HOW_POWER_CHANGES_HANDS_COURSE,
+      category: "Civics",
+      seriesSlug: "who-has-the-power-path",
+      seriesTitle: "Who Has the Power?",
+      seriesOrder: 8,
+      seriesCode: "POWER",
+      seriesPosition: "08",
+    },
     // "Governance: Who Actually Decides" is course 6 of the business path (plans/46, Path B): decision #4
     // taken deep. Boards, shareholders vs stakeholders, fiduciary duty (care/loyalty, business judgment
     // rule), dual-class shares, the German two-tier board, and one-share-one-vote vs one-member-one-vote.
-    { slug: "business-governance", course: BUSINESS_GOVERNANCE_COURSE, category: "Civics" },
+    {
+      slug: "business-governance",
+      course: BUSINESS_GOVERNANCE_COURSE,
+      category: "Civics",
+      seriesSlug: "how-a-business-is-formed",
+      seriesTitle: "How a Business Is Formed",
+      seriesOrder: 6,
+      seriesCode: "ENTITY",
+      seriesPosition: "06",
+    },
     // "Map Your Own Stack" is course 9, the CAPSTONE, of the government path (plans/46, Path A): the
     // learner documents every government with authority over their block from the primary record (most
     // find six to twelve and are surprised by half), synthesizing the whole path. Completes Path A (9/9).
-    { slug: "map-your-own-stack", course: MAP_YOUR_OWN_STACK_COURSE, category: "Civics" },
+    {
+      slug: "map-your-own-stack",
+      course: MAP_YOUR_OWN_STACK_COURSE,
+      category: "Civics",
+      seriesSlug: "who-has-the-power-path",
+      seriesTitle: "Who Has the Power?",
+      seriesOrder: 9,
+      seriesCode: "POWER",
+      seriesPosition: "99",
+    },
     // "Choose a Form and Defend It" is course 7, the CAPSTONE, of the business path (plans/46, Path B):
     // real scenarios, pick a form and defend it against the four decisions AND a named alternative,
     // not legal advice (stated in the assignment itself). Completes Path B (7/7).
-    { slug: "choose-a-form-capstone", course: CHOOSE_A_FORM_CAPSTONE_COURSE, category: "Civics" },
+    {
+      slug: "choose-a-form-capstone",
+      course: CHOOSE_A_FORM_CAPSTONE_COURSE,
+      category: "Civics",
+      seriesSlug: "how-a-business-is-formed",
+      seriesTitle: "How a Business Is Formed",
+      seriesOrder: 7,
+      seriesCode: "ENTITY",
+      seriesPosition: "99",
+    },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:

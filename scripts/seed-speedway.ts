@@ -18,6 +18,13 @@ import { AI_E2_OPERATIONS_COURSE } from "./data/ai-e2-operations-course";
 import { AI_E3_CUSTOMER_RESEARCH_COURSE } from "./data/ai-e3-customer-research-course";
 import { AI_E4_PRODUCT_SERVICE_COURSE } from "./data/ai-e4-product-service-course";
 import { AI_E5_FINANCE_ANALYTICS_CAPSTONE_COURSE } from "./data/ai-e5-finance-analytics-capstone-course";
+import { WHAT_A_BUSINESS_ENTITY_IS_COURSE } from "./data/what-a-business-entity-is-course";
+import { US_BUSINESS_FORMS_COURSE } from "./data/us-business-forms-course";
+import { COOPERATIVES_COURSE } from "./data/cooperatives-course";
+import { FINANCING_WITHOUT_ACCESS_COURSE } from "./data/financing-without-access-course";
+import { FOREIGN_BUSINESS_FORMS_COURSE } from "./data/foreign-business-forms-course";
+import { BUSINESS_GOVERNANCE_COURSE } from "./data/business-governance-course";
+import { CHOOSE_A_FORM_CAPSTONE_COURSE } from "./data/choose-a-form-capstone-course";
 
 // Seeds the ElementaryMBA school's authored courses: the "Speedway: The Greatest Spectacle
 // in Learning" docuseries (migrated from CentOS), the cited, kid-friendly "Intro to Robotics
@@ -181,6 +188,49 @@ async function main() {
     });
   }
 
+  // The two business shelves from the ElementaryMBA plan (proposals.ts, key
+  // elementary-mba-emba-curriculum-plan, section 6). "How a Business Is Formed" holds the seven
+  // business-formation courses shared whole from Learn.WitUS; "Business Core" holds the FIRM series
+  // once it is written, and is created now so the shelf exists before its first course does.
+  for (const { name, sortOrder } of [
+    { name: "How a Business Is Formed", sortOrder: 5 },
+    { name: "Business Core", sortOrder: 6 },
+  ]) {
+    await db.insert(schema.courseCategories).values({ tenantId, name, sortOrder }).onConflictDoNothing();
+  }
+
+  // Share the business-formation path from Learn.WitUS, the way seed-bvc-real.ts shares BVC Season 1:
+  // same content, its own course rows, enrollment and progress on this school. These seven, and only
+  // these, go to ElementaryMBA whole (FULL_SHARE_TO_ELEMENTARY_MBA in scripts/lib/seed-registry.ts,
+  // BAM 2026-10-23); every other course reaches a second school only as a series' first course. The
+  // series fields repeat Learn.WitUS's so the copy keeps its ENTITY codes and its /series page here.
+  // Each entry carries its own series fields because the registry reads them from the entry, not the
+  // call. The call's tenantId is this script's TARGET_SLUG lookup, which is what lets the registry read
+  // the school; a lookup by a loop variable (seed-bvc-real.ts's shape) reads as unknown and fails.
+  for (const { slug, course, seriesSlug, seriesCode, seriesOrder, seriesPosition } of [
+    { slug: "what-a-business-entity-is", course: WHAT_A_BUSINESS_ENTITY_IS_COURSE, seriesSlug: "how-a-business-is-formed", seriesCode: "ENTITY", seriesOrder: 1, seriesPosition: "01" },
+    { slug: "us-business-forms", course: US_BUSINESS_FORMS_COURSE, seriesSlug: "how-a-business-is-formed", seriesCode: "ENTITY", seriesOrder: 2, seriesPosition: "02" },
+    { slug: "cooperatives", course: COOPERATIVES_COURSE, seriesSlug: "how-a-business-is-formed", seriesCode: "ENTITY", seriesOrder: 3, seriesPosition: "03" },
+    { slug: "financing-without-access", course: FINANCING_WITHOUT_ACCESS_COURSE, seriesSlug: "how-a-business-is-formed", seriesCode: "ENTITY", seriesOrder: 4, seriesPosition: "04" },
+    { slug: "foreign-business-forms", course: FOREIGN_BUSINESS_FORMS_COURSE, seriesSlug: "how-a-business-is-formed", seriesCode: "ENTITY", seriesOrder: 5, seriesPosition: "05" },
+    { slug: "business-governance", course: BUSINESS_GOVERNANCE_COURSE, seriesSlug: "how-a-business-is-formed", seriesCode: "ENTITY", seriesOrder: 6, seriesPosition: "06" },
+    { slug: "choose-a-form-capstone", course: CHOOSE_A_FORM_CAPSTONE_COURSE, seriesSlug: "how-a-business-is-formed", seriesCode: "ENTITY", seriesOrder: 7, seriesPosition: "99" },
+  ]) {
+    await seedAuthoredCourse(db, {
+      tenantId,
+      instructorId,
+      slug,
+      course,
+      category: "How a Business Is Formed",
+      navigationMode: "linear",
+      seriesSlug,
+      seriesTitle: "How a Business Is Formed",
+      seriesOrder,
+      seriesCode,
+      seriesPosition,
+    });
+  }
+
   const speedwayQuizzes = SPEEDWAY_COURSE.lessons.filter((l) => l.quiz).length;
   const roboticsQuizzes = ROBOTICS_STEAM_COURSE.lessons.filter((l) => l.quiz).length;
   const youngMakersQuizzes = AI_YOUNG_MAKERS_COURSE.lessons.filter((l) => l.quiz).length;
@@ -190,7 +240,8 @@ async function main() {
     `Done. Seeded on "${TARGET_SLUG}": Speedway (${SPEEDWAY_COURSE.lessons.length} lessons, ${speedwayQuizzes} quizzes); ` +
       `Intro to Robotics & STEAM (${ROBOTICS_STEAM_COURSE.lessons.length} lessons, ${roboticsQuizzes} quizzes); ` +
       `Young Makers: AI for Kids (${AI_YOUNG_MAKERS_COURSE.lessons.length} lessons, ${youngMakersQuizzes} quizzes); ` +
-      `AI for Entrepreneurs (${AI_ENTREPRENEURS_COURSE.lessons.length} lessons, ${entrepreneursQuizzes} quizzes).`,
+      `AI for Entrepreneurs (${AI_ENTREPRENEURS_COURSE.lessons.length} lessons, ${entrepreneursQuizzes} quizzes); ` +
+      `the 7-course business-formation path shared from Learn.WitUS.`,
   );
 }
 

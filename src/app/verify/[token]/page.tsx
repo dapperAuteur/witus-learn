@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { requireTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { getCompletionByToken } from "@/db/queries/enrollment";
+import { SchoolDisclaimerNotice } from "@/components/school-disclaimer-notice";
 
 export const metadata: Metadata = { title: "Certificate verification" };
 
@@ -39,6 +40,7 @@ export default async function VerifyPage({ params }: { params: Promise<{ token: 
         course on {date}.
       </p>
       <p className="text-xs text-neutral-400">Verification token: {token}</p>
+      <SchoolDisclaimerNotice tenantSlug={tenant.slug} />
     </main>
   );
 }
