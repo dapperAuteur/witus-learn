@@ -200,10 +200,10 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "What did the habilitation carry?",
             options: [
-              "The venia legendi",
-              "A salaried chair in the faculty, awarded by the Prussian ministry on the faculty's nomination",
-              "The doctorate, which a candidate took before being allowed to enrol as a student of mathematics",
-              "A seat on the academic senate, from which a lecturer voted on other candidates' applications",
+              "The venia legendi, the permission to lecture",
+              "A salaried chair in the faculty",
+              "The doctorate",
+              "A seat on the academic senate",
             ],
             correctIndex: 0,
             explanation:
@@ -226,10 +226,10 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "Who wrote to Felix Klein on 27 December 1918 that withholding the venia legendi from Noether was a great injustice?",
             options: [
-              "Albert Einstein",
+              "Albert Einstein, on receiving her new work",
               "Constantin Carathéodory, repeating in a letter the report he had written in August 1915",
-              "Ernst Osterath, the curator who had forwarded the 1915 application with a negative comment",
-              "Edmund Landau, who as dean had chaired the faculty meeting of 18 November 1915",
+              "Ernst Osterath",
+              "Edmund Landau",
             ],
             correctIndex: 0,
             explanation:
@@ -242,7 +242,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "The venia legendi is being withheld from her",
               "That the venia legendi had been granted to her on condition that she teach without any payment",
               "That the venia legendi had been transferred from her to Hilbert by order of the Prussian ministry",
-              "That the venia legendi had ceased to exist as a qualification at Prussian universities after 1908",
+              "That it had ceased to exist",
             ],
             correctIndex: 0,
             explanation:
@@ -253,8 +253,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "How does Tollmien's account of the file record the outcome of June 1919?",
             options: [
               "Unanimously admitted as a Privatdozentin",
-              "Admitted by a majority of one after the faculty divided seventeen to fourteen on the question",
-              "Admitted provisionally, subject to a further trial lecture to be given the following semester",
+              "Admitted by a majority of one",
+              "Admitted provisionally",
               "Admitted to a salaried chair in mathematics on the joint recommendation of Klein and Hilbert",
             ],
             correctIndex: 0,
@@ -268,7 +268,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "Nobody in the record claims her mathematics",
               "Because Hilbert published the lectures afterwards under a joint author line naming them both",
               "Because the catalogue printed her name in smaller type beside his rather than omitting it",
-              "Because the ministry paid her the fees collected from students for the courses she taught",
+              "The ministry paid her the fees",
             ],
             correctIndex: 0,
             explanation:
@@ -279,9 +279,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "According to the record, what did Hilbert do on Noether's behalf?",
             options: [
               "Wrote to the minister and met him in person",
-              "Resigned his own chair in protest when the ministry refused the exemption in November 1917",
-              "Printed a correction in the following semester's catalogue naming her as the course's teacher",
-              "Voted against his own faculty's request in order to force a second vote of the whole faculty",
+              "Resigned his chair",
+              "Printed a correction",
+              "Voted against the request",
             ],
             correctIndex: 0,
             explanation:
@@ -292,8 +292,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What question does Who Gets Named lesson 17 ask of a gap in a record?",
             options: [
               "What would have had to happen for this record to exist?",
-              "How many comparable records from the same institution and period have survived elsewhere?",
-              "Which archivist decided which papers the institution would accession, and in which year?",
+              "How many comparable records survive?",
+              "Which archivist accessioned the papers?",
               "Would a reader in the period have expected to find this person named in this document?",
             ],
             correctIndex: 0,
@@ -331,9 +331,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did each entry in the Göttingen course catalogue give?",
             options: [
               "Subject, teacher, days and hours, and a fee word",
-              "Subject, teacher, the room number, and the number of students enrolled in the previous term",
-              "Subject, teacher, the faculty it belonged to, and the examination it prepared candidates for",
-              "Subject, teacher, the textbook set for the course, and the fee payable to the university chest",
+              "Subject, teacher, and room number",
+              "Subject, teacher, and examination",
+              "Subject, teacher, and textbook",
             ],
             correctIndex: 0,
             explanation:
@@ -371,7 +371,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             options: [
               "A rule deciding in advance who may be named",
               "An institution's practice of asking each contributor whether they wish to be credited by name",
-              "A journal's policy on the order in which the authors of a joint paper are listed on it",
+              "A journal's author-order policy",
               "A rule requiring a named supervisor to approve any work published by a junior colleague",
             ],
             correctIndex: 0,
@@ -395,9 +395,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "What is the date of the Prussian decree barring women from the habilitation?",
             options: [
-              "29 May 1908",
-              "19 November 1915, the date the popular version gives for a special departmental vote",
-              "5 November 1917, the date the minister wrote refusing to authorise any exemptions",
+              "29 May 1908, after the 1907 survey",
+              "19 November 1915",
+              "5 November 1917",
               "29 October 1915, the date the faculty commission voted to seek an exemption for Noether",
             ],
             correctIndex: 0,
@@ -408,9 +408,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "What did the decree of 29 May 1908 say?",
             options: [
-              "Women could not habilitate",
-              "Women could habilitate only with the written consent of the university's own academic senate",
-              "Women could habilitate in the philosophical faculty but not in mathematics or the sciences",
+              "Women could not be admitted to the habilitation",
+              "Women needed the senate's consent",
+              "Women could habilitate in arts only",
               "Women could lecture at a Prussian university only as the named assistant of a full professor",
             ],
             correctIndex: 0,
@@ -421,9 +421,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "What was the scope of the 1908 decree?",
             options: [
-              "Prussian universities",
-              "Göttingen alone, which is why Noether's supporters urged her to try at Frankfurt instead",
-              "The mathematics and science departments only, leaving the other faculties free to decide",
+              "The universities of Prussia",
+              "Göttingen alone",
+              "The sciences only",
               "Every German university, inside Prussia and outside it, from the date of its publication",
             ],
             correctIndex: 0,
@@ -435,7 +435,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What could a faculty do about a candidate the 1908 decree barred?",
             options: [
               "Ask the ministry for an exemption",
-              "Admit her locally and inform the ministry afterwards, as several faculties are recorded doing",
+              "Admit her locally",
               "Appeal to the academic senate, which held the power to set aside a ministry decree in one case",
               "Register her as a Privatdozentin at a second university where the decree did not apply",
             ],
@@ -461,9 +461,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "The popular version says an academic senate refused Noether. What do the sources read for this course show?",
             options: [
               "Neither Tollmien nor Ihringer mentions a senate",
-              "Tollmien quotes the senate's minutes at length in her account of the surviving archive file",
-              "Ihringer names the senate members who voted against her in the session of November 1915",
-              "Both sources record the senate's refusal but disagree about the month in which it was given",
+              "Tollmien quotes the senate's minutes",
+              "Ihringer names the senate's members",
+              "Both record the senate's refusal",
             ],
             correctIndex: 0,
             explanation:
@@ -474,9 +474,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did the 1908 decree not govern?",
             options: [
               "Doing, teaching or publishing mathematics",
-              "Admission to the habilitation at any of the universities of the Kingdom of Prussia",
+              "Admission to the habilitation",
               "Whether a woman's name could be printed in the catalogue as a course's own teacher",
-              "Whether a woman could be admitted to the venia legendi without a ministry exemption",
+              "Admission to the venia legendi",
             ],
             correctIndex: 0,
             explanation:
@@ -487,9 +487,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Why does a system-wide rule leave a pattern rather than a single absence?",
             options: [
               "It applies to every case in advance",
-              "Because ministries kept duplicate copies of every decree in the archive of each university",
-              "Because a faculty had to record in its minutes each occasion on which the rule was applied",
-              "Because the rule took effect only once a named official had invoked it against a candidate",
+              "Every decree was copied",
+              "Faculties minuted each use",
+              "Officials had to invoke it",
             ],
             correctIndex: 0,
             explanation:
@@ -500,7 +500,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Why is the effect of such a rule easy to misread if you have not found the rule itself?",
             options: [
               "It looks like one person's absence",
-              "Because a decree is usually written in language too technical for a general reader to follow",
+              "Its text is too technical",
               "Because the rule's text is normally filed with the ministry rather than with the university",
               "Because the same absence could equally have been produced by a fire or a lost box of papers",
             ],
@@ -525,9 +525,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "Over roughly what period did the habilitation process run?",
             options: [
-              "1915 to 1919",
-              "From the ministry's survey of the professors in 1907 to the decree of 29 May 1908",
-              "From the first catalogue entry in the winter of 1916/17 to the last one in the summer of 1919",
+              "From July 1915 to June 1919",
+              "1907 to 1908",
+              "1916 to 1919",
               "From Hilbert's letter to the minister in December 1915 to the refusal of November 1917",
             ],
             correctIndex: 0,
@@ -538,10 +538,10 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "What is the fixed point that all three habilitation attempts ran into?",
             options: [
-              "The 1908 decree",
-              "Hartmann's referee report, the only one of the eight to speak decidedly against her",
-              "The faculty's tied vote of fourteen to fourteen at the meeting of 18 November 1915",
-              "The curator's cover note, which the ministry treated as the university's real position",
+              "The 1908 decree barring women",
+              "Hartmann's report",
+              "The tied vote",
+              "The curator's note",
             ],
             correctIndex: 0,
             explanation:
@@ -553,7 +553,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             options: [
               "Spoke to the Göttingen Mathematical Society",
               "Submitted her written application to habilitate to the philosophical faculty at Göttingen",
-              "Gave the trial lecture on questions of module theory that completed her habilitation",
+              "Applied to habilitate",
               "Wrote to the Prussian minister asking for an exemption from the decree of 29 May 1908",
             ],
             correctIndex: 0,
@@ -577,10 +577,10 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "What reason for applying does Tollmien's account of the file record?",
             options: [
-              "Klein and Hilbert suggested it",
-              "That she had been offered a post at Frankfurt and wished to keep her position at Göttingen",
-              "That the ministry had privately indicated it would look favourably on a first test case",
-              "That her father's illness had left the family dependent on what she could earn by lecturing",
+              "Klein and Hilbert suggested she apply",
+              "An offer from Frankfurt",
+              "A hint from the ministry",
+              "Her father's illness",
             ],
             correctIndex: 0,
             explanation:
@@ -591,9 +591,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Which stage of a habilitation came first?",
             options: [
               "Written reports from referees",
-              "A vote of the whole faculty, which then referred the case to its specialist commission",
-              "The trial lecture, on which the referees based the written reports they then submitted",
-              "The curator's cover note, which opened the file the faculty afterwards deliberated on",
+              "A whole-faculty vote",
+              "The trial lecture",
+              "The curator's note",
             ],
             correctIndex: 0,
             explanation:
@@ -603,10 +603,10 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "Which officer forwarded the faculty's request to the ministry?",
             options: [
-              "The curator",
-              "The dean of the philosophical faculty, who signed it on the faculty's behalf",
+              "The university curator",
+              "The dean",
               "The chair of the commission that had voted to seek the exemption in October 1915",
-              "The rector, who transmitted all faculty business to the ministry through the senate",
+              "The rector",
             ],
             correctIndex: 0,
             explanation:
@@ -618,7 +618,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             options: [
               "A demand for a vote of the whole faculty",
               "The immediate despatch of the request to the ministry over the dean's own signature",
-              "A second round of referee reports, this time from outside the University of Göttingen",
+              "A second round of reports",
               "A public defence of the candidate's thesis before the assembled philosophical faculty",
             ],
             correctIndex: 0,
@@ -631,7 +631,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             options: [
               "Each stage produced dated paper",
               "Because the University of Göttingen published the faculty's minutes in the course catalogue",
-              "Because the ministry's decrees were printed annually and distributed to every faculty member",
+              "Decrees were printed",
               "Because the candidate was entitled to a written copy of every document filed in her case",
             ],
             correctIndex: 0,
@@ -643,9 +643,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "How does a retelling of a case like this typically go wrong?",
             options: [
               "It compresses the stages into one meeting",
-              "It attributes the decision to the candidate's own supervisor rather than to the faculty",
-              "It quotes the referee reports accurately but leaves out the names of the men who wrote them",
-              "It gives the correct sequence of stages but assigns each of them to the following year",
+              "It blames the supervisor",
+              "It omits the referees' names",
+              "It shifts each stage a year",
             ],
             correctIndex: 0,
             explanation:
@@ -656,9 +656,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What three questions does lesson 3 tell you to ask of a claim about this case?",
             options: [
               "Which stage, which document, what date",
-              "Who benefits from the claim, who first published it, and who has repeated it since then",
+              "Who benefits from it",
               "Whether it is plausible, whether it is flattering, and whether it contradicts another source",
-              "Which archive holds the paper, who catalogued it, and whether the catalogue is online",
+              "Which archive holds it",
             ],
             correctIndex: 0,
             explanation:
@@ -669,7 +669,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What follows if a claim cannot answer those three questions?",
             options: [
               "You are carrying it on trust, not evidence",
-              "The claim can be treated as refuted until somebody produces a document that supports it",
+              "The claim is refuted",
               "The claim should be repeated with a hedge such as \"it is said\" and left in the account",
               "The claim is probably a compression of two separate true claims about different stages",
             ],
@@ -681,9 +681,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "What date ended the first habilitation attempt?",
             options: [
-              "5 November 1917",
-              "9 December 1915, when the curator forwarded the request with a negative comment attached",
-              "18 November 1915, when the whole faculty voted and then tied on the question of a refusal",
+              "5 November 1917, the minister's refusal",
+              "9 December 1915",
+              "18 November 1915",
               "20 June 1917, when the ministry wrote to Göttingen about the offer from Frankfurt",
             ],
             correctIndex: 0,
@@ -708,9 +708,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did Noether begin doing in the winter of 1916, while the application was still unanswered?",
             options: [
               "Teaching the courses announced under Hilbert's name",
-              "Preparing the trial lecture on module theory that she would deliver to the faculty in 1919",
-              "Lecturing at Frankfurt, where the Prussian decree of 1908 did not bind the philosophical faculty",
-              "Sitting on the faculty commission that had voted in October 1915 to seek her exemption",
+              "Preparing her trial lecture",
+              "Lecturing at Frankfurt",
+              "Sitting on the commission",
             ],
             correctIndex: 0,
             explanation:
@@ -721,7 +721,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "How does lesson 1 describe the Göttingen course catalogue as a kind of document?",
             options: [
               "An ordinary administrative document",
-              "A ceremonial publication issued once a year to mark the opening of the academic session",
+              "A ceremonial publication",
               "A confidential record kept by the faculty and not circulated outside the university",
               "A legal instrument through which the Prussian ministry appointed each semester's teachers",
             ],
@@ -747,7 +747,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did a doctorate alone not entitle a person to do in Prussia?",
             options: [
               "Be named as a course's teacher",
-              "Publish research in the proceedings of a scientific society without a sponsor",
+              "Publish research",
               "Supervise a seminar in a subject in which they had already been examined",
               "Apply for a salaried chair at any of the Prussian universities in the same faculty",
             ],
@@ -773,8 +773,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "How does lesson 1 introduce Emmy Noether herself?",
             options: [
               "In one line, with a birth date",
-              "With a full biographical sketch, so that the documents can be read against her career",
-              "Through the reports her referees wrote about her in the summer of 1915 at Göttingen",
+              "With a full biography",
+              "Through her referees",
               "Through the two theorems that carry her name, which the course then works backwards from",
             ],
             correctIndex: 0,
@@ -798,9 +798,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "What kind of instrument was the 1908 bar on women habilitating?",
             options: [
-              "A ministry decree",
-              "A statute of the University of Göttingen, adopted by its senate and approved in Berlin",
-              "A resolution of the Prussian philosophical faculties, adopted at a joint conference",
+              "A decree of the Prussian ministry",
+              "A university statute",
+              "A faculty resolution",
               "A clause in the general regulations governing the award of doctorates in Prussia",
             ],
             correctIndex: 0,
@@ -812,7 +812,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did the 1907 survey ask the professors about?",
             options: [
               "Admitting women to the habilitation",
-              "Whether the habilitation should require a trial lecture as well as a written thesis",
+              "Trial lectures",
               "Whether a Privatdozent should be paid from university funds rather than student fees",
               "Whether the philosophical faculty should be divided into two separate departments",
             ],
@@ -825,9 +825,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Why does lesson 2 say a rule of this shape is unusually easy to check?",
             options: [
               "It is dated and applies to a whole system",
-              "Because the ministry published the names of everyone refused under it each year",
-              "Because a decree could only take effect once a university had adopted it locally",
-              "Because its text was reprinted in every course catalogue for the following decade",
+              "Refusals were published",
+              "Universities adopted it locally",
+              "Catalogues reprinted it",
             ],
             correctIndex: 0,
             explanation:
@@ -851,8 +851,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What can a reader who has both the gap and the decree say?",
             options: [
               "The record is complete, and the rule is what it recorded",
-              "That the absence was deliberate and that the faculty intended to conceal her role",
-              "That the record was altered afterwards to remove a name that had once been printed",
+              "That the absence was deliberate",
+              "That the record was altered",
               "That a second, unpublished list of teaching staff must have existed alongside the index",
             ],
             correctIndex: 0,
@@ -903,9 +903,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What does lesson 3 say the record does contain that is genuinely outrageous?",
             options: [
               "A written statement by seven faculty members",
-              "A remark made by the curator when he forwarded the request to Berlin that December",
-              "A clause of the 1908 decree setting out the ministry's reasons for barring women",
-              "A passage in the minister's refusal of 1917 describing the hardship as unavoidable",
+              "A remark by the curator",
+              "A clause of the decree",
+              "A passage in the refusal",
             ],
             correctIndex: 0,
             explanation:
@@ -916,7 +916,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Where in the procedure does that outrageous document sit?",
             options: [
               "Not at the stage where the decision was taken",
-              "At the final stage, immediately before the ministry issued its refusal in November 1917",
+              "At the final stage",
               "At the first stage, among the eight referee reports filed in July and August 1915",
               "At the stage the curator controlled, which is why it travelled with the request",
             ],
@@ -941,9 +941,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "How far did the first attempt get before it failed?",
             options: [
-              "To the ministry",
-              "To the commission, which declined to recommend that an exemption be sought at all",
-              "To the departmental vote, which the other department then refused to accept",
+              "All the way to the ministry",
+              "To the commission",
+              "To the department",
               "To the trial lecture, after which the faculty declined to admit her as a Privatdozentin",
             ],
             correctIndex: 0,
@@ -957,7 +957,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "Every argument about any particular woman",
               "Which faculties a woman might be examined in, leaving the habilitation itself open",
               "Which universities in the German empire the ministry's authority extended over",
-              "How long a candidate had to wait after the doctorate before applying to habilitate",
+              "How long candidates waited",
             ],
             correctIndex: 0,
             explanation:
@@ -1143,7 +1143,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "Between 21 July and 8 August 1915",
               "Between 29 October and 18 November 1915, in the weeks of the commission and faculty votes",
               "Between 9 December 1915 and 5 November 1917, while the ministry was considering the request",
-              "Between 18 January and 4 June 1919, during the third and successful habilitation attempt",
+              "During the 1919 attempt",
             ],
             correctIndex: 0,
             explanation:
@@ -1182,7 +1182,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "One of the few exceptions",
               "A candidate whose work was equal to that of any Privatdozent then lecturing at Göttingen",
               "A mathematician whose admission the faculty should seek without asking for any exemption",
-              "The first woman whose case the ministry would be obliged to decide on its merits alone",
+              "A test case",
             ],
             correctIndex: 0,
             explanation:
@@ -1208,7 +1208,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "That the rule itself is right",
               "That the candidate's published work has not yet been assessed by qualified referees",
               "That the decision belongs to the faculty rather than to the ministry that made the rule",
-              "That the candidate should be admitted on probation and reassessed after two semesters",
+              "A probation period",
             ],
             correctIndex: 0,
             explanation:
@@ -1219,9 +1219,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What jobs argument does Ihringer paraphrase from Hartmann's report?",
             options: [
               "Women should not hold jobs returning soldiers could fill",
-              "That a woman admitted to the habilitation would be unable to find students willing to enrol",
-              "That an unsalaried lecturer could not support herself, so the post would go to the wealthy",
-              "That the university could not afford another lecturer in mathematics during the war years",
+              "That she would find no students",
+              "That she could not support herself",
+              "That the war left no budget",
             ],
             correctIndex: 0,
             explanation:
@@ -1232,8 +1232,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Why does this course not print the famous quotation about what returning soldiers would think of being taught by a woman?",
             options: [
               "It is in neither Tollmien's account nor MacTutor",
-              "Because its wording differs between the German original and the published English translation",
-              "Because the faculty member who said it cannot now be identified from the surviving minutes",
+              "Its wording differs in translation",
+              "Its speaker cannot be identified",
               "Because it was said at the meeting of 18 November 1915 rather than written in a report",
             ],
             correctIndex: 0,
@@ -1247,7 +1247,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "Not among those competent to judge the work",
               "That the mathematicians were divided and the decision therefore fell to the wider faculty",
               "That the referees deferred to the ministry rather than expressing a view of their own",
-              "That opposition was strongest among those who had read her published papers closely",
+              "Among those who read her papers",
             ],
             correctIndex: 0,
             explanation:
@@ -1258,9 +1258,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did the faculty commission decide on 29 October 1915?",
             options: [
               "To seek an exemption from the ministry",
-              "To postpone the application until the ministry had clarified the scope of the 1908 decree",
-              "To ask for a second set of referee reports from professors at other Prussian universities",
-              "To recommend that Noether be allowed to lecture under a professor's name without applying",
+              "To postpone the application",
+              "To seek more reports",
+              "To let her lecture unnamed",
             ],
             correctIndex: 0,
             explanation:
@@ -1284,8 +1284,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "How did the mathematics and science department vote on 6 November 1915?",
             options: [
               "Ten for, seven against, two abstaining",
-              "Seventeen for and fourteen against, with a single member recorded as abstaining",
-              "Fourteen for and fourteen against, with the dean's vote settling the resulting tie",
+              "Seventeen to fourteen",
+              "Fourteen to fourteen",
               "Ten for and six against, the tally by which the exemption text was later approved",
             ],
             correctIndex: 0,
@@ -1299,7 +1299,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "Mathematics and science",
               "History and philology, which had demanded that the whole faculty vote on the question",
               "The whole philosophical faculty, sitting together with the dean, Edmund Landau, presiding",
-              "The commission of referees, meeting for the second time since the reports were filed",
+              "The commission",
             ],
             correctIndex: 0,
             explanation:
@@ -1310,9 +1310,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What pattern do the successive 1915 votes show?",
             options: [
               "The margin worsens away from the mathematicians",
-              "The margin improves each time the question is put to a larger and more senior body",
-              "The margin stays identical at every stage, which is why the case took two years to decide",
-              "The margin cannot be compared, because only one of the three bodies recorded its tally",
+              "The margin improves",
+              "The margin stays identical",
+              "The margins cannot be compared",
             ],
             correctIndex: 0,
             explanation:
@@ -1322,9 +1322,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "What error does Tollmien's page contain in the date of the departmental vote?",
             options: [
-              "It prints the year as 2015",
-              "It gives the day as the sixteenth rather than the sixth of November in that year",
-              "It gives the month as December, which conflicts with the curator's letter of that month",
+              "It prints the year as 2015, not 1915",
+              "It gives the wrong day",
+              "It gives the wrong month",
               "It gives two different dates for the same vote in two places on the same page",
             ],
             correctIndex: 0,
@@ -1335,10 +1335,10 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "Which source settles the date of the departmental vote against Tollmien's typing error?",
             options: [
-              "Ihringer's translation",
-              "The Göttingen course catalogue for the winter semester of 1916/17, digitised by the library",
-              "The University of Göttingen's page on historical figures in its mathematics department",
-              "MacTutor's biography of Noether, which gives a full chronology of the November 1915 votes",
+              "Ihringer's English translation",
+              "The 1916/17 catalogue",
+              "Göttingen's web page",
+              "MacTutor",
             ],
             correctIndex: 0,
             explanation:
@@ -1362,7 +1362,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What is the practical method lesson 5 recommends for catching a slip in a careful source?",
             options: [
               "Read a second source alongside it",
-              "Prefer the source published most recently, since later work corrects what came before it",
+              "Prefer the newest source",
               "Prefer the source written in the original language of the documents it is describing",
               "Discount any statement in the source that is not accompanied by an archive reference",
             ],
@@ -1375,8 +1375,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Where does Section 3 put the same cross-checking method to work?",
             options: [
               "On two transcriptions that differ from the scans",
-              "On the minority report, by comparing Ihringer's translation with Tollmien's German original",
-              "On the minister's refusal of 1917, by comparing the ministry's copy with the university's",
+              "On the minority report",
+              "On the minister's refusal",
               "On the referee reports, by comparing the dated seven with Hilbert's undated eighth",
             ],
             correctIndex: 0,
@@ -1388,9 +1388,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did the historical and philological department do on 10 November 1915?",
             options: [
               "Demanded a vote of the whole faculty",
-              "Voted ten to seven with two abstentions against seeking an exemption for Noether",
-              "Filed the minority report signed by seven of its members against the habilitation",
-              "Asked the curator to forward its own objection to the ministry alongside the request",
+              "Voted against an exemption",
+              "Filed the minority report",
+              "Wrote to the curator",
             ],
             correctIndex: 0,
             explanation:
@@ -1414,8 +1414,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What was the first question put to the faculty on 18 November 1915?",
             options: [
               "Who was against admitting a woman under all circumstances",
-              "Whether to recommend to the ministry that Noether's application be refused outright",
-              "Whether the text of the exemption request should be approved and sent to the curator",
+              "Whether to recommend refusal",
+              "Whether to approve the exemption text",
               "Whether the historical and philological department was entitled to demand a full vote",
             ],
             correctIndex: 0,
@@ -1429,7 +1429,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "Seventeen to fourteen, one abstaining",
               "Fourteen to fourteen, with the dean's own vote then settling the question against a refusal",
               "Ten to seven with two abstentions, the same tally as the departmental vote of 6 November",
-              "Ten to six, the tally by which the text of the exemption request was afterwards approved",
+              "Ten to six",
             ],
             correctIndex: 0,
             explanation:
@@ -1440,9 +1440,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What was the second question put to the faculty that day?",
             options: [
               "Whether to recommend that the ministry refuse",
-              "Whether a woman should be admitted to the habilitation at Prussian universities generally",
-              "Whether to ask the curator to withhold his negative comment from the forwarded request",
-              "Whether to invite Noether to give a trial lecture before the faculty reached its decision",
+              "Whether women should habilitate",
+              "Whether to silence the curator",
+              "Whether to hear a trial lecture",
             ],
             correctIndex: 0,
             explanation:
@@ -1455,7 +1455,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "Tied fourteen to fourteen, so no recommendation was made",
               "Carried seventeen to fourteen, so a recommendation to refuse went forward to the ministry",
               "Lost ten to seven with two abstentions, so the request was returned to the commission",
-              "Carried unanimously, so the faculty recommended that the ministry grant the exemption",
+              "Carried unanimously",
             ],
             correctIndex: 0,
             explanation:
@@ -1466,8 +1466,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Whose vote settled the tie of 18 November 1915?",
             options: [
               "The dean's, Edmund Landau",
-              "The curator's, Ernst Osterath, who attended the meeting as the ministry's representative",
-              "Hilbert's, who had written one of the eight referee reports on the candidate that summer",
+              "The curator's",
+              "Hilbert's",
               "Hartmann's, the one referee who had spoken decidedly against the habilitation in July",
             ],
             correctIndex: 0,
@@ -1505,9 +1505,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did the historical and philological department decide on 18 November 1915?",
             options: [
               "To take no further steps against her",
-              "To file the minority report signed by seven of its own members with the faculty's request",
-              "To ask the ministry directly to confirm that the 1908 decree admitted of no exceptions",
-              "To demand a second vote of the whole faculty once the referee reports had been recirculated",
+              "To file the minority report",
+              "To write to the ministry",
+              "To demand a second vote",
             ],
             correctIndex: 0,
             explanation:
@@ -1531,8 +1531,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What is the status of the minority report in this record?",
             options: [
               "Evidence of belief, not of what the faculty did",
-              "The formal ground on which the Prussian ministry refused the exemption two years later",
-              "The document the curator attached to the request when he forwarded it that December",
+              "The ministry's formal ground",
+              "The curator's attachment",
               "The faculty's official answer to the question the other department had demanded be put",
             ],
             correctIndex: 0,
@@ -1556,10 +1556,10 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "What did Hilbert do on 4 December 1915?",
             options: [
-              "Wrote to the minister",
+              "Wrote to the Prussian minister",
               "Announced Noether's first course under his own name in the catalogue for the winter semester",
               "Filed his undated referee report with the commission considering the habilitation request",
-              "Travelled to Berlin with Debye and Voigt to put the case to the minister in person",
+              "Went to Berlin",
             ],
             correctIndex: 0,
             explanation:
@@ -1570,9 +1570,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did Ernst Osterath do on 9 December 1915?",
             options: [
               "Forwarded the request with a negative comment",
-              "Voted against the exemption request at the meeting of the whole philosophical faculty",
-              "Wrote the minority report that seven faculty members signed against the habilitation",
-              "Returned the request to the faculty for a second vote before it could go to the ministry",
+              "Voted against the request",
+              "Wrote the minority report",
+              "Sent it back for a second vote",
             ],
             correctIndex: 0,
             explanation:
@@ -1595,9 +1595,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "Who went with Hilbert to see the minister, probably in 1916?",
             options: [
-              "Debye and Voigt",
-              "Klein and Landau, the two referees who had described her as an exception in their reports",
-              "Osterath and Hartmann, the curator and the one referee who had opposed the application",
+              "Peter Debye and Woldemar Voigt",
+              "Klein and Landau",
+              "Osterath and Hartmann",
               "Carathéodory and Runge, who had both filed reports in the window of July and August 1915",
             ],
             correctIndex: 0,
@@ -1609,7 +1609,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did the ministry undertake after that meeting?",
             options: [
               "To raise no objection to other ways of enabling her collaboration",
-              "To grant an exemption from the 1908 decree once the war with France had been concluded",
+              "To grant an exemption after the war",
               "To allow her to habilitate at Frankfurt, where the Prussian decree would not have applied",
               "To pay her from university funds for the courses she taught under another professor's name",
             ],
@@ -1622,9 +1622,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What does that undertaking tell you about the catalogue entries of 1916 to 1919?",
             options: [
               "They were the ministry's own preferred alternative",
-              "They were a device the faculty adopted without the ministry's knowledge or agreement",
-              "They were a breach of the 1908 decree that the ministry later penalised the university for",
-              "They were drafted by the curator, which is why his comment was attached to the request",
+              "A device hidden from the ministry",
+              "A breach of the decree",
+              "The curator's own drafting",
             ],
             correctIndex: 0,
             explanation:
@@ -1635,8 +1635,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did the ministry write to Göttingen on 20 June 1917 about Frankfurt?",
             options: [
               "That Göttingen would not lose her to Frankfurt",
-              "That Frankfurt had been authorised to admit her as a Privatdozentin from the following term",
-              "That the 1908 decree did not extend to Frankfurt and the question was therefore local",
+              "That Frankfurt would admit her",
+              "That the bar was local",
               "That any application made at Frankfurt would be decided on the candidate's merits alone",
             ],
             correctIndex: 0,
@@ -1661,7 +1661,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What was the first paper stage the 1915 application produced?",
             options: [
               "Written assessments by named professors",
-              "A résumé of the candidate's publications, compiled by the dean for the commission",
+              "A résumé of publications",
               "A transcript of the talk she had given to the Göttingen Mathematical Society in July",
               "A note from the curator recording that an application had been received at the university",
             ],
@@ -1687,9 +1687,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What does lesson 4 say the popular version gets wrong about the faculty?",
             options: [
               "That the men who read her work wanted her refused",
-              "That the faculty was entitled to admit her without asking the ministry for anything",
-              "That the faculty met only once, when in fact it voted on two separate occasions",
-              "That the faculty's minority report was signed by a majority of its members",
+              "That no ministry approval was needed",
+              "That the faculty met only once",
+              "That most members signed the report",
             ],
             correctIndex: 0,
             explanation:
@@ -1726,7 +1726,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Why does lesson 4 insist that Hartmann's jobs argument was not a faculty statement?",
             options: [
               "It is one referee writing in his own report",
-              "Because the report was filed after the commission had already voted that October",
+              "It was filed too late",
               "Because the faculty voted to strike the passage from the file before forwarding it",
               "Because Ihringer translates it from a draft that the referee later withdrew",
             ],
@@ -1739,8 +1739,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What is the difference between a paraphrase and a quotation, as this course marks it?",
             options: [
               "A paraphrase is somebody else's summary",
-              "A paraphrase is a translation of a passage whose original language is unavailable",
-              "A paraphrase is a shortened quotation with the omitted words marked by an ellipsis",
+              "A translation",
+              "A shortened quotation",
               "A paraphrase is a statement supported by a source that the writer has not itself read",
             ],
             correctIndex: 0,
@@ -1751,8 +1751,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "How does MacTutor bear on the soldier quotation?",
             options: [
-              "It does not carry it",
-              "It carries it and attributes it to the meeting of the whole faculty in November 1915",
+              "It does not carry it at all",
+              "It carries it",
               "It carries it in German and gives a different English wording from Ihringer's",
               "It carries it with a note that the remark has never been traced to a document",
             ],
@@ -1765,9 +1765,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did the commission's vote of 29 October 1915 turn into a decision?",
             options: [
               "The eight-to-one shape of the reports",
-              "The ten to seven division that the wider department would record a week afterwards",
-              "The tie of fourteen to fourteen that the whole faculty reached in November",
-              "The ministry's undertaking to raise no objection to other ways of proceeding",
+              "The ten to seven division",
+              "The fourteen-all tie",
+              "The ministry's undertaking",
             ],
             correctIndex: 0,
             explanation:
@@ -1792,8 +1792,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             options: [
               "Opposition grew with distance from the mathematics",
               "That the commission had been chosen from the candidate's own supporters in the faculty",
-              "That two referees changed their minds between filing their reports and voting",
-              "That the department included members who had not been sent the referee reports",
+              "That two referees changed sides",
+              "That some never saw the reports",
             ],
             correctIndex: 0,
             explanation:
@@ -1804,7 +1804,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What does lesson 5 say about trusting or distrusting a source as a whole?",
             options: [
               "A source is not a person you judge that way",
-              "A source with one demonstrable error should be set aside in favour of another",
+              "Set it aside after one error",
               "A source should be trusted entirely in its own field and distrusted outside it",
               "A source should be trusted where it agrees with the reference works and not elsewhere",
             ],
@@ -1817,9 +1817,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Why does lesson 5 stop on a typing error at all?",
             options: [
               "For what it teaches about using any source",
-              "Because the wrong year has been repeated by later writers and needs correcting in print",
-              "Because it casts doubt on the other dates Tollmien gives for the autumn of 1915",
-              "Because the correct date cannot be established from any other source now available",
+              "Later writers repeated it",
+              "It casts doubt on other dates",
+              "No other source has the date",
             ],
             correctIndex: 0,
             explanation:
@@ -1844,8 +1844,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             options: [
               "The commission and the mathematics and science department",
               "The commission and the historical and philological department, in that order",
-              "The mathematics and science department and the academic senate of the university",
-              "The referees, sitting as a body, and the commission that reviewed their reports",
+              "Mathematics and the academic senate",
+              "The referees and the commission",
             ],
             correctIndex: 0,
             explanation:
@@ -1856,9 +1856,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Which department demanded the full faculty vote, and which had just voted in her favour?",
             options: [
               "History and philology demanded it; mathematics and science had voted for her",
-              "Mathematics and science demanded it, having lost its own vote a few days earlier",
-              "The commission demanded it, the two departments having divided equally on the question",
-              "The curator demanded it on the ministry's behalf before the request could be forwarded",
+              "Mathematics and science demanded it",
+              "The commission demanded it",
+              "The curator demanded it",
             ],
             correctIndex: 0,
             explanation:
@@ -1884,7 +1884,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "What the faculty believed, not what it did",
               "What the faculty did, without recording how many members held the contrary view",
               "How the mathematics and science department had voted twelve days earlier",
-              "How the ministry would rule, since the faculty's view was normally decisive",
+              "How the ministry would rule",
             ],
             correctIndex: 0,
             explanation:
@@ -1895,9 +1895,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What would have happened if the second vote of 18 November had carried?",
             options: [
               "A recommendation to refuse would have gone to the ministry",
-              "The faculty would have withdrawn the application before it reached Berlin at all",
-              "The historical and philological department would have been obliged to vote again",
-              "The candidate would have been refused by the faculty without reference to the ministry",
+              "The application would be withdrawn",
+              "History and philology would vote again",
+              "She would be refused outright",
             ],
             correctIndex: 0,
             explanation:
@@ -1908,8 +1908,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What did the faculty approve, and by what margin, on 18 November 1915?",
             options: [
               "The exemption text, ten to six",
-              "The minority report, by seven votes to none against, its signatories abstaining",
-              "The referral of the case to the curator, by seventeen votes to fourteen",
+              "The minority report",
+              "The curator referral",
               "The demand for a further vote of the whole faculty, by fourteen votes to fourteen",
             ],
             correctIndex: 0,
@@ -1934,7 +1934,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "Why is it useful that the minority report exists at all?",
             options: [
               "Beliefs that are written and signed can be checked",
-              "Because it names the seven men, which allows their later careers to be traced",
+              "It names the seven men",
               "Because the ministry relied on it when it refused the exemption two years afterwards",
               "Because it is the only document in the file that mentions the candidate by name",
             ],
@@ -1947,9 +1947,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What is the relation between the two votes of 18 November 1915?",
             options: [
               "A majority opposed in principle could not act on it",
-              "The second vote simply repeated the first, which is why the tallies are so similar",
-              "The first vote decided the case and the second recorded the dissenters' objection",
-              "The second vote was taken among a smaller body after most members had withdrawn",
+              "The second repeated the first",
+              "The first decided the case",
+              "The second had a smaller body",
             ],
             correctIndex: 0,
             explanation:
@@ -1960,9 +1960,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What part of the story does lesson 7 say almost never gets told?",
             options: [
               "What happened after the faculty voted",
-              "What the referees wrote in the reports they filed in July and August 1915",
+              "What the referees wrote",
               "What the minority report said about women and uninterrupted teaching",
-              "What Noether herself wrote in the application she submitted in July 1915",
+              "What Noether wrote",
             ],
             correctIndex: 0,
             explanation:
@@ -1988,7 +1988,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "The ministry's undertaking about other ways of proceeding",
               "The minority report of the seven faculty members filed in November 1915",
               "The curator's negative comment on the request he forwarded that December",
-              "Einstein's letter to Klein at the end of December three years later",
+              "Einstein's letter to Klein",
             ],
             correctIndex: 0,
             explanation:
@@ -1999,9 +1999,9 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What does the compromise tell you about the catalogue entries?",
             options: [
               "They were not a trick played on the ministry",
-              "They were drafted by the ministry and sent to Göttingen for the catalogue's printer",
-              "They were reviewed by the curator each semester before the catalogue went to press",
-              "They were a breach of the undertaking, since it covered research and not teaching",
+              "Drafted by the ministry",
+              "Vetted by the curator",
+              "A breach of the undertaking",
             ],
             correctIndex: 0,
             explanation:
@@ -2025,8 +2025,8 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
             prompt: "What policy does the Frankfurt letter of June 1917 reveal?",
             options: [
               "The bar was not local, so moving would not have helped",
-              "That Frankfurt had been given permission to admit women ahead of the other universities",
-              "That the ministry intended to grant the Göttingen exemption within the year",
+              "Frankfurt could admit women first",
+              "A Göttingen exemption was near",
               "That the curator had been instructed to block any transfer of the candidate",
             ],
             correctIndex: 0,
@@ -2040,7 +2040,7 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
               "That hardship in an individual case may be unavoidable",
               "That the candidate's mathematical standing had been established beyond any doubt",
               "That the decree of 1908 had been intended to admit exceptions in special cases",
-              "That the faculty's request had the support of a clear majority of its members",
+              "That most of the faculty backed her",
             ],
             correctIndex: 0,
             explanation:
@@ -2050,10 +2050,10 @@ Tollmien, C. (n.d.-a). *Habilitation*. Emmy Noether: Göttingen 1915 bis 1919. h
           {
             prompt: "How does the minister's answer meet Landau's and Carathéodory's reports?",
             options: [
-              "It denies that exceptions exist",
-              "It accepts that she is an exception but holds that the faculty had asked too late",
-              "It sets their assessments aside as coming from members of her own department",
-              "It asks for further reports from referees outside the University of Göttingen",
+              "It denies that any exception can be made",
+              "It says she applied too late",
+              "It discounts them as partisan",
+              "It asks for outside reports",
             ],
             correctIndex: 0,
             explanation:
@@ -2289,9 +2289,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What is the document at the centre of this course?",
             options: [
               "Göttingen's printed list of lectures",
-              "The minutes of the philosophical faculty meetings held during the autumn of 1915",
-              "The Prussian ministry's file of correspondence about women and the habilitation",
-              "The register of doctoral degrees awarded by the University of Göttingen before 1920",
+              "The faculty minutes",
+              "The ministry's file",
+              "The doctoral register",
             ],
             correctIndex: 0,
             explanation:
@@ -2302,7 +2302,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Why does this course link to the scans rather than reproducing the page images?",
             options: [
               "The library requires prior written permission to republish",
-              "Because the page images are too faint to be legible once they have been reduced in size",
+              "The images are too faint",
               "Because the library charges a licensing fee for each image reproduced in a paid course",
               "Because the library has not yet digitised the volumes for the semesters in question",
             ],
@@ -2315,9 +2315,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What general lesson does the library's reuse condition illustrate?",
             options: [
               "Free to read is not free to republish",
-              "A digitised document has less evidential weight than the paper original it was made from",
+              "Scans weigh less than paper",
               "A library's terms bind only commercial users, so a course may reproduce what it likes",
-              "Permission to quote a document in words also covers reproducing its page images",
+              "Quoting covers reproducing",
             ],
             correctIndex: 0,
             explanation:
@@ -2341,9 +2341,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What does the bracketed figure at the end of a catalogue entry do?",
             options: [
               "It numbers the course for the staff index",
-              "It records how many students had enrolled for the course in the previous semester",
-              "It gives the fee in marks payable by each student who enrolled in the course that term",
-              "It identifies the page of the catalogue on which the teacher's own index entry appears",
+              "It records last term's enrolment",
+              "It gives the fee in marks",
+              "It gives an index page",
             ],
             correctIndex: 0,
             explanation:
@@ -2354,7 +2354,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What does the catalogue entry record about a course?",
             options: [
               "Who was permitted to be named as its teacher",
-              "Which member of the faculty had actually prepared and delivered each of its meetings",
+              "Who delivered each meeting",
               "Which professor the philosophical faculty had voted to place in charge of the seminar",
               "Which lecturer the Prussian ministry had approved for that subject in that semester",
             ],
@@ -2367,9 +2367,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Whose courses in the same catalogue also carry the word \"gratis\"?",
             options: [
               "Klein's, Landau's, Carathéodory's and Hilbert's",
-              "Only those seminars in which a professor was assisted by an unhabilitated colleague",
+              "Only assisted seminars",
               "Only the courses given in the mathematics and physics seminar rather than the lecture list",
-              "Only those courses that the university offered to students who had been mobilised for war",
+              "Only courses for mobilised students",
             ],
             correctIndex: 0,
             explanation:
@@ -2393,9 +2393,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What does this course say about whether Noether was paid for the teaching of 1916 to 1919?",
             options: [
               "The sources read do not settle it",
-              "That she was paid from the fees collected for the one course marked privatim in 1918/19",
-              "That she was unpaid throughout, as the word gratis on six of the seven entries shows",
-              "That she was paid a fixed allowance by Hilbert out of his own salary as a professor",
+              "Paid from privatim fees",
+              "Unpaid throughout",
+              "Paid by Hilbert",
             ],
             correctIndex: 0,
             explanation:
@@ -2406,8 +2406,8 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Why does this course decline to define the fee word \"privatissime\"?",
             options: [
               "No source read for it defines the Göttingen fee words",
-              "Because the word appears only once in the run and a single instance proves nothing",
-              "Because its meaning changed between the winter of 1917/18 and the summer of 1919",
+              "It appears only once",
+              "Its meaning changed",
               "Because the library's terms forbid quoting the catalogue's own explanatory front matter",
             ],
             correctIndex: 0,
@@ -2431,10 +2431,10 @@ A reminder from lesson 8: the images are free to read and not free to republish,
           {
             prompt: "What was the subject of the winter 1916/17 course?",
             options: [
-              "Invariant theory",
-              "Partial differential and integral equations, the subject of entry 166 two years later",
-              "Lectures on mathematical principles, the subject announced in the winter of 1917/18",
-              "Questions of module theory, the subject of the trial lecture she gave in June 1919",
+              "Invariant theory (Invariantentheorie)",
+              "Integral equations",
+              "Mathematical principles",
+              "Module theory",
             ],
             correctIndex: 0,
             explanation:
@@ -2447,7 +2447,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
               "An address at the Göttingen library",
               "An address at the University of St Andrews, which hosts the MacTutor archive of the scans",
               "An address at the Prussian state archive, which holds the original habilitation file",
-              "No address at all, which is why this course was unable to ask for permission to reproduce",
+              "No address at all",
             ],
             correctIndex: 0,
             explanation:
@@ -2458,8 +2458,8 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "How many entries, over how many semesters, make up the catalogue run?",
             options: [
               "Seven entries over six semesters",
-              "Eight entries over eight semesters, one for each term from 1915/16 to the summer of 1919",
-              "Six entries over six semesters, one in each term from the winter of 1916/17 onwards",
+              "Eight over eight",
+              "Six over six",
               "Seven entries over seven semesters, the last of them in the autumn intermediate term",
             ],
             correctIndex: 0,
@@ -2497,9 +2497,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What does the negative check on the winter 1915/16 and summer 1916 listings establish?",
             options: [
               "That the run is six semesters, not longer",
-              "That the catalogue for those semesters was printed without a mathematics section at all",
-              "That Hilbert taught no seminar in either semester, so there was nothing to attach her to",
-              "That her name appears in those semesters under a different spelling than the later ones",
+              "That no mathematics was printed",
+              "That Hilbert taught no seminar",
+              "That she was listed as Nöther",
             ],
             correctIndex: 0,
             explanation:
@@ -2510,7 +2510,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "How does the catalogue spell her name across the run?",
             options: [
               "Inconsistently, ending with her full first name",
-              "Consistently as Nöther, with the umlaut, in every one of the seven entries in the run",
+              "Consistently as Nöther",
               "Consistently as Noether, spelled out, from the winter of 1916/17 to the summer of 1919",
               "As Nöther while the habilitation was pending and as Noether after it was refused in 1917",
             ],
@@ -2523,8 +2523,8 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What makes entry 166 different from the other six?",
             options: [
               "It sits in the lecture list and reads privatim",
-              "It names her before Hilbert, which is the only entry in the run to reverse the order",
-              "It is the only entry in the run that omits the phrase about support altogether",
+              "It names her before Hilbert",
+              "It omits the support phrase",
               "It is the only entry that gives a room number as well as the days and the hours",
             ],
             correctIndex: 0,
@@ -2548,10 +2548,10 @@ A reminder from lesson 8: the images are free to read and not free to republish,
           {
             prompt: "What weekday does the scan give for the summer 1918 course?",
             options: [
-              "Donnerstag",
-              "Montag, which is also the day Tollmien's published list gives for the same course",
+              "Donnerstag (Thursday)",
+              "Montag",
               "Montag und Donnerstag, the two days printed on the winter 1918/19 lecture entry",
-              "Mittwoch und Sonnabend, the days printed on the first course she announced in her own name",
+              "Sonnabend",
             ],
             correctIndex: 0,
             explanation:
@@ -2575,9 +2575,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What else does Tollmien's transcription drop from the winter 1916/17 entry?",
             options: [
               "The initial E. and the weekday",
-              "The course number in brackets and the fee word printed at the end of the entry",
-              "The subject of the course and the professor's title, leaving only the two surnames",
-              "The phrase about support, which is the part of the entry that carries her name at all",
+              "The course number",
+              "The subject and title",
+              "The support phrase",
             ],
             correctIndex: 0,
             explanation:
@@ -2602,7 +2602,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             options: [
               "A reader need not choose between two transcriptions",
               "That a digitised copy carries the same legal reuse permissions as a quotation in words",
-              "That a scan is easier to read than the printed original, which has usually darkened",
+              "Scans are easier to read",
               "That a library's digitisation is itself a transcription and so inherits the same risks",
             ],
             correctIndex: 0,
@@ -2614,9 +2614,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Why does lesson 9 insist that noting Tollmien's divergences is not an attack on her?",
             options: [
               "Her documentary work is why the course can be written",
-              "Because the divergences were introduced by her publisher rather than by her own reading",
-              "Because she transcribed from a different printing of the catalogue than the digitised one",
-              "Because a transcription is not intended to be exact and is judged by other standards",
+              "Her publisher introduced them",
+              "She used a different printing",
+              "Transcriptions need not be exact",
             ],
             correctIndex: 0,
             explanation:
@@ -2627,9 +2627,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What is the heading of the second list at the back of each catalogue?",
             options: [
               "The alphabetical list of teaching staff",
-              "The mathematical and physical seminar, with the courses offered in it that semester",
+              "The mathematical seminar",
               "The list of lectures of the Georg August University at Göttingen for the semester",
-              "The register of students enrolled in each course, arranged by faculty and by subject",
+              "The student register",
             ],
             correctIndex: 0,
             explanation:
@@ -2640,7 +2640,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What do the numbers at the end of Hilbert's index entry show?",
             options: [
               "That course 190 is filed under his name",
-              "That he had been assigned three rooms in the mathematics building for that semester",
+              "Three rooms assigned to him",
               "That three of his courses had been approved by the ministry for the coming semester",
               "That three separate lecturers were supporting him across the courses he announced",
             ],
@@ -2653,9 +2653,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Why does this course omit Hilbert's street address and telephone number when quoting his index line?",
             options: [
               "They are not what the line is quoted for",
-              "Because the library's terms forbid quoting any personal detail from a digitised page",
-              "Because the page image is too faint at that point for the digits to be read reliably",
-              "Because the address given in the index is known to be out of date for that semester",
+              "The library forbids it",
+              "The digits are illegible",
+              "The address is out of date",
             ],
             correctIndex: 0,
             explanation:
@@ -2667,8 +2667,8 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             options: [
               "Nelson, Nieschmidt and Nolte, with no entry for her",
               "An entry for her with no course numbers beside it, unlike the entries for the professors",
-              "A cross-reference directing the reader to look under Hilbert for her courses instead",
-              "An entry under the spelling Nöther, which is why later readers have failed to find her",
+              "A cross-reference to Hilbert",
+              "An entry under Nöther",
             ],
             correctIndex: 0,
             explanation:
@@ -2679,7 +2679,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Which two non-professorial teachers does the same index list?",
             options: [
               "A dance master and a drawing teacher",
-              "A librarian and a laboratory assistant, both attached to the mathematics seminar",
+              "A librarian and a clerk",
               "A fencing master and a riding master, listed at the end of the alphabetical sequence",
               "A music director and a language teacher, both employed by the university that year",
             ],
@@ -2692,9 +2692,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What does the presence of the dance master in the index prove about the criterion for appearing in it?",
             options: [
               "It was being nameable as teaching, not holding a chair",
-              "It was being paid a salary by the university, which Noether was not during these years",
-              "It was holding the venia legendi, which the dance master had obtained by examination",
-              "It was being resident in Göttingen, which the index records by printing each address",
+              "Being salaried",
+              "Holding the venia legendi",
+              "Living in Göttingen",
             ],
             correctIndex: 0,
             explanation:
@@ -2705,7 +2705,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What limit does lesson 10 state about its own checking?",
             options: [
               "Only the winter 1916/17 index was read",
-              "Only the seminar sections were read, and not the main lecture lists of any semester",
+              "Only the seminars were read",
               "Only Tollmien's transcription was consulted, and not the page images themselves",
               "Only the odd-numbered semesters were checked, because the library's scans were incomplete",
             ],
@@ -2718,8 +2718,8 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Why does an omission from the index travel further than an omission from an entry?",
             options: [
               "The index is the tool people search",
-              "Because the index was reprinted each year while the entries were set fresh each semester",
-              "Because the index was circulated to other universities while the entries were not",
+              "It was reprinted",
+              "It was sent abroad",
               "Because an index entry carried a teacher's address and so proved their residence in the city",
             ],
             correctIndex: 0,
@@ -2743,10 +2743,10 @@ A reminder from lesson 8: the images are free to read and not free to republish,
           {
             prompt: "What does the exercise in lesson 11 ask a learner to do when the page and lesson 9 disagree?",
             options: [
-              "Trust the page and tell us",
-              "Record both readings and treat the published transcription as the more reliable of the two",
-              "Check a third transcription and follow whichever reading two of the three sources agree on",
-              "Assume the scan has been misfiled by the library and look for the same page in another volume",
+              "Trust the page and tell the course",
+              "Record both readings",
+              "Ask a third source",
+              "Look in another volume",
             ],
             correctIndex: 0,
             explanation:
@@ -2783,7 +2783,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Which two pages does the exercise name to start from?",
             options: [
               "Page 15 in winter 1916/17 and page 16 in summer 1919",
-              "Page 29 and page 31 of the winter 1916/17 volume, which carry the staff index entries",
+              "Pages 29 and 31 of winter 1916/17",
               "Pages 14 and 15 of the winter 1915/16 volume, where the negative check was carried out",
               "Page 14 of the winter 1918/19 volume, which carries both of that semester's entries",
             ],
@@ -2796,9 +2796,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Why does the exercise send the learner to the library's site instead of showing the image?",
             options: [
               "The images are free to read and not free to republish",
-              "Because the library's viewer allows a reader to magnify the print more than a course page could",
+              "The viewer magnifies better",
               "Because the course cannot be certain the scans it consulted were of the correct semester",
-              "Because a learner who has navigated the archive will remember the entry better afterwards",
+              "Navigating aids memory",
             ],
             correctIndex: 0,
             explanation:
@@ -2835,9 +2835,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What can anyone do with the whole of Section 3, on the library's terms?",
             options: [
               "Check it against the page images",
-              "Reproduce the page images in a classroom handout without asking the library first",
-              "Download the volumes and republish them electronically for non-commercial teaching",
-              "Request a printed copy of any page free of charge from the library's reading room",
+              "Use them in handouts",
+              "Republish them online",
+              "Get free printed copies",
             ],
             correctIndex: 0,
             explanation:
@@ -2849,7 +2849,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             options: [
               "The person permitted to be named as teacher",
               "The professor whose department was responsible for the subject that semester",
-              "The member of the faculty who would examine students at the end of the course",
+              "The examiner",
               "The senior of the two people teaching, where a course was shared between them",
             ],
             correctIndex: 0,
@@ -2887,8 +2887,8 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What does the course do about the meaning of the Göttingen fee categories?",
             options: [
               "It shows what it can and says what it cannot",
-              "It supplies the standard definitions from a handbook of German university practice",
-              "It infers each definition from the pattern of courses on which the word appears",
+              "It cites a handbook",
+              "It infers from patterns",
               "It leaves the words untranslated and does not discuss their meaning at any point",
             ],
             correctIndex: 0,
@@ -2900,9 +2900,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Where does the heading for the winter 1916/17 seminar entries appear?",
             options: [
               "On the page before the entry itself",
-              "In the staff index at the back of the volume, beside each teacher's course numbers",
-              "In the bracketed number at the end of each entry, which encodes the section",
-              "On the cover of the volume, which lists the seminars offered that semester",
+              "In the staff index",
+              "In the bracketed number",
+              "On the volume's cover",
             ],
             correctIndex: 0,
             explanation:
@@ -2913,7 +2913,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Which of Noether's entries is the earliest in the run?",
             options: [
               "Invariant theory, winter 1916/17",
-              "Lectures on algebra, summer 1917, which carries the same days and hours as the first",
+              "Algebra, summer 1917",
               "Exercises on differential equations, summer 1918, entry number 191 in that volume",
               "Partial differential and integral equations, winter 1918/19, entry number 166",
             ],
@@ -2926,8 +2926,8 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Which entry closes the run, and what is its subject?",
             options: [
               "Summer 1919, integral equations",
-              "Winter 1918/19, exercises on differential equations, entry number 172 in that volume",
-              "Summer 1918, exercises on differential equations, printed on page 15 of that volume",
+              "Winter 1918/19",
+              "Summer 1918, exercises",
               "Winter 1917/18, lectures on mathematical principles, marked privatissime und gratis",
             ],
             correctIndex: 0,
@@ -2952,9 +2952,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What pattern do the days and hours of the seminar entries follow?",
             options: [
               "Mostly Monday, in the late afternoon",
-              "Mostly Thursday, with a single Monday entry in the summer semester of 1918",
-              "Two days a week throughout, which is why the run covers seven entries in six semesters",
-              "A different day in each semester, with no two entries sharing the same hours",
+              "Mostly Thursday",
+              "Two days a week",
+              "A different day each term",
             ],
             correctIndex: 0,
             explanation:
@@ -2965,7 +2965,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "Which pages did the negative check read?",
             options: [
               "Pages 14 and 15 of two earlier volumes",
-              "Page 29 and page 31 of the winter 1916/17 volume, which carry the staff index",
+              "Pages 29 and 31",
               "Page 16 of the summer 1919 volume, which carries the last entry of the whole run",
               "The full mathematics listing of every volume from 1911 to 1920 in the digitised run",
             ],
@@ -2978,9 +2978,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What does lesson 9 say a second copy of a document is?",
             options: [
               "A new opportunity for it to change",
-              "A safeguard against loss, which is why archives keep duplicates of important papers",
+              "A safeguard against loss",
               "A check on the first, since two copies made independently rarely contain the same error",
-              "A substitute for the original, which need not then be consulted by later readers",
+              "A substitute",
             ],
             correctIndex: 0,
             explanation:
@@ -3004,9 +3004,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What kind of document is the staff index, in the terms lesson 10 uses?",
             options: [
               "The catalogue's searchable half",
-              "A supplement printed separately and bound into the volume by the library afterwards",
-              "A register of the university's employees, compiled by the curator's office each year",
-              "An index of subjects rather than of people, arranged by the faculty offering them",
+              "A separate supplement",
+              "An employee register",
+              "A subject index",
             ],
             correctIndex: 0,
             explanation:
@@ -3029,9 +3029,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
           {
             prompt: "Between which two names would Noether's index entry have fallen?",
             options: [
-              "Nieschmidt and Nolte",
+              "Nieschmidt and Nolte, on page 31",
               "Nelson and Nieschmidt, the first two names printed in that part of the sequence",
-              "Nolte and Peters, the latter being the drawing teacher listed on the same page",
+              "Nolte and Peters",
               "Höltzcke and Nelson, which is where the sequence breaks on the previous page",
             ],
             correctIndex: 0,
@@ -3043,8 +3043,8 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What is absent from the index in her place?",
             options: [
               "Any entry or cross-reference at all",
-              "An entry with her name and no course numbers, unlike the entries for the professors",
-              "A note directing the reader to look under Hilbert for the courses she supported",
+              "A name with no numbers",
+              "A note pointing to Hilbert",
               "A line recording her doctorate without recording any teaching she was doing",
             ],
             correctIndex: 0,
@@ -3069,9 +3069,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
             prompt: "What does lesson 10 say a learner who checks another semester's index has found?",
             options: [
               "Something this course does not have",
-              "A confirmation of the winter 1916/17 pattern, which the course assumes held throughout",
-              "An error in the course, since only one index was ever printed for the whole run",
-              "A duplicate of the entries already transcribed, the indexes being reprinted unchanged",
+              "A confirmation",
+              "An error in the course",
+              "A duplicate",
             ],
             correctIndex: 0,
             explanation:
@@ -3097,7 +3097,7 @@ A reminder from lesson 8: the images are free to read and not free to republish,
               "From the page in front of them",
               "From lesson 9, checking the page only where the two seem to be in conflict",
               "From Tollmien's published list, which is the transcription most accounts rely on",
-              "From memory, since the drill is testing recall of the entries rather than reading",
+              "From memory",
             ],
             correctIndex: 0,
             explanation:
@@ -3120,9 +3120,9 @@ A reminder from lesson 8: the images are free to read and not free to republish,
           {
             prompt: "Which occupation does the exercise ask a learner to find in the staff index?",
             options: [
-              "The dance master's",
-              "The curator's, whose office is listed at the head of the alphabetical sequence",
-              "The librarian's, listed among the staff attached to the mathematics seminar",
+              "The dance master's (Tanzmeister)",
+              "The curator's",
+              "The librarian's",
               "The professor of physics, whose courses appear beside Hilbert's in the same index",
             ],
             correctIndex: 0,
@@ -3272,9 +3272,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
           {
             prompt: "To whom did Einstein write about the venia legendi being withheld from Noether?",
             options: [
-              "Felix Klein",
-              "David Hilbert, whose name stood on the catalogue entries for her courses at the time",
-              "Ernst Osterath, the curator who had forwarded the 1915 request with a negative comment",
+              "Felix Klein, at Göttingen",
+              "David Hilbert",
+              "Ernst Osterath",
               "The Prussian minister himself, repeating the appeal Hilbert had made three years earlier",
             ],
             correctIndex: 0,
@@ -3299,9 +3299,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What does Einstein's word choice claim that a missing index entry cannot?",
             options: [
               "That somebody is holding something back",
-              "That the faculty at Göttingen had acted improperly in its votes of November 1915",
-              "That her work had been assessed by referees and found to meet the required standard",
-              "That the Prussian decree of 1908 had been applied to her case in error by the ministry",
+              "That the faculty erred",
+              "That her work passed review",
+              "That the decree was misapplied",
             ],
             correctIndex: 0,
             explanation:
@@ -3325,7 +3325,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What does the date of Einstein's letter show about the injustice he described?",
             options: [
               "It still looked like one from outside Göttingen",
-              "That the ministry had reopened the case after the refusal of November the previous year",
+              "That the ministry reopened the case",
               "That the faculty had asked him to intervene with the ministry on the candidate's behalf",
               "That the arrangement in the catalogue had only just begun and was not yet widely known",
             ],
@@ -3339,8 +3339,8 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             options: [
               "\"The new work of Miss Noether\", unnamed",
               "\"Invariante Variationsprobleme\", which he names in the letter and discusses at length",
-              "Her doctoral dissertation, which he had read in preparation for writing to Klein",
-              "The lectures she was then giving under Hilbert's name in the winter semester of 1918/19",
+              "Her doctoral dissertation",
+              "Her current lectures",
             ],
             correctIndex: 0,
             explanation:
@@ -3364,7 +3364,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "Why does this course mark the identification of \"the new work\" as an inference?",
             options: [
               "The letter names no paper",
-              "Because two of Noether's papers appeared in the second half of 1918 and either could fit",
+              "Two papers fit",
               "Because Tollmien's transcription of the letter is known to differ from the original text",
               "Because Einstein's correspondence of that year survives only in a later published edition",
             ],
@@ -3390,9 +3390,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What does this course say about why the ministry's position changed between 1917 and 1919?",
             options: [
               "No document read for the course answers it",
-              "That the decree of 1908 had been formally repealed in the interval by the new government",
-              "That Hilbert's second meeting with the minister in 1918 secured a private undertaking",
-              "That Einstein's letter to Klein was forwarded to Berlin and changed the ministry's view",
+              "The decree was repealed",
+              "Hilbert's 1918 meeting",
+              "Einstein's letter",
             ],
             correctIndex: 0,
             explanation:
@@ -3416,8 +3416,8 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What is an inference, as this course uses the word?",
             options: [
               "A conclusion drawn from evidence, not stated by it",
-              "A claim supported by two independent sources that agree in every material respect",
-              "A statement quoted from a document whose original has not itself been examined",
+              "A claim two sources agree on",
+              "An unexamined quotation",
               "A reading of a document that a later historian has published and others have repeated",
             ],
             correctIndex: 0,
@@ -3441,9 +3441,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
           {
             prompt: "When did the department vote on the third application?",
             options: [
-              "31 January 1919",
-              "6 November 1915, the date of the departmental vote on the first application to habilitate",
-              "28 May 1919, the date of the colloquium that preceded the trial lecture that June",
+              "31 January 1919, thirteen days later",
+              "6 November 1915",
+              "28 May 1919",
               "11 May 1919, the date on which the ministry's letter was received at Göttingen",
             ],
             correctIndex: 0,
@@ -3454,10 +3454,10 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
           {
             prompt: "When did the request go forward to the ministry in 1919?",
             options: [
-              "15 February 1919",
-              "9 December 1915, when the curator forwarded the first request with a negative comment",
-              "26 November 1915, the date written on the first application sent to the Prussian ministry",
-              "8 May 1919, when the ministry stated that it had no objection to the habilitation",
+              "15 February 1919, four weeks after the application",
+              "9 December 1915",
+              "26 November 1915",
+              "8 May 1919",
             ],
             correctIndex: 0,
             explanation:
@@ -3468,7 +3468,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What did the ministry say on 8 May 1919, and when did Göttingen receive it?",
             options: [
               "No objection, received on 11 May",
-              "That an exemption from the 1908 decree had been granted, received on 28 May",
+              "An exemption, on 28 May",
               "That the question could only be decided as a matter of principle, received on 11 May",
               "That the faculty should proceed to a colloquium and a trial lecture, received on 4 June",
             ],
@@ -3480,10 +3480,10 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
           {
             prompt: "How long did the ministry take to answer the first request?",
             options: [
-              "Nearly two years",
+              "Nearly two years, until November 1917",
               "Under three months, the same as the interval between the 1919 request and its answer",
-              "Four weeks, which is why the curator's negative comment is thought to have been decisive",
-              "Fourteen months, the same as the interval between the refusal and the third application",
+              "Four weeks",
+              "Fourteen months",
             ],
             correctIndex: 0,
             explanation:
@@ -3507,9 +3507,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What is the speed of the third attempt evidence of?",
             options: [
               "The obstacle had been outside the university",
-              "That the faculty had reversed its own view of the candidate's mathematical standing",
-              "That the procedure had been simplified after the war to clear a backlog of applications",
-              "That the curator's office had been abolished, removing the stage that caused the delay",
+              "The faculty changed its view",
+              "The procedure was simplified",
+              "The curator's office was abolished",
             ],
             correctIndex: 0,
             explanation:
@@ -3520,7 +3520,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What is the speed of the third attempt NOT evidence of, according to lesson 13?",
             options: [
               "A change of mind about her mathematics",
-              "A change in the ministry's willingness to allow the habilitation to proceed at Göttingen",
+              "A change at the ministry",
               "A difference between the 1915 procedure and the procedure followed four years later",
               "The removal of the curator's power to attach a comment to a request being forwarded",
             ],
@@ -3533,9 +3533,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What does the 1919 record carry, and what does it not?",
             options: [
               "Dates and outcomes, not reasons",
-              "Reasons and outcomes, but no reliable dates for any stage after the February request",
-              "A full account of the ministry's deliberations, transcribed by Tollmien from the file",
-              "Only the faculty's own minutes, the ministry's side of the correspondence being lost",
+              "Reasons and outcomes",
+              "Full deliberations",
+              "Faculty minutes only",
             ],
             correctIndex: 0,
             explanation:
@@ -3571,10 +3571,10 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
           {
             prompt: "What was the date of the colloquium?",
             options: [
-              "28 May 1919",
-              "4 June 1919, the date on which she delivered the trial lecture on module theory",
-              "8 May 1919, the date on which the ministry stated that it had no objection to proceed",
-              "31 January 1919, the date the department voted on the third application it had received",
+              "28 May 1919, a week before the trial lecture",
+              "4 June 1919",
+              "8 May 1919",
+              "31 January 1919",
             ],
             correctIndex: 0,
             explanation:
@@ -3586,7 +3586,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             options: [
               "Questions of module theory",
               "Invariant variational problems, the subject of the paper Klein had presented in 1918",
-              "Invariant theory, the subject of the first course she taught under Hilbert's name",
+              "Invariant theory",
               "Partial differential and integral equations, the subject of catalogue entry 166",
             ],
             correctIndex: 0,
@@ -3598,9 +3598,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "In what terms does Tollmien's account record the decision that followed the trial lecture?",
             options: [
               "Unanimously admitted as a Privatdozentin for mathematics",
-              "Admitted by a majority of the faculty, the minority report of 1915 being formally withdrawn",
-              "Admitted on the ministry's instruction, the faculty's own vote being dispensed with",
-              "Admitted provisionally, with a review to follow at the end of her first full semester",
+              "Admitted by a majority",
+              "Admitted on instruction",
+              "Admitted provisionally",
             ],
             correctIndex: 0,
             explanation:
@@ -3613,7 +3613,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
               "Both the heroic and the villainous readings",
               "The claim that the ministry rather than the faculty had been the obstacle throughout",
               "The claim that the 1915 faculty contained members opposed to her in principle",
-              "The claim that the procedure in 1919 was the same procedure as the one used in 1915",
+              "The same-procedure claim",
             ],
             correctIndex: 0,
             explanation:
@@ -3624,8 +3624,8 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "In which semester did the catalogue first announce a course in Noether's own name?",
             options: [
               "The autumn intermediate semester of 1919",
-              "The summer semester of 1919, which closes the run of entries taught under Hilbert's name",
-              "The winter semester of 1918/19, the semester that carries two entries rather than one",
+              "Summer 1919",
+              "Winter 1918/19",
               "The winter semester of 1919/20, once the trial lecture of June had been formally minuted",
             ],
             correctIndex: 0,
@@ -3650,7 +3650,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "Why does the autumn 1919 catalogue line sit at a different evidential level from the seven earlier entries?",
             options: [
               "It is a transcription, not a page image read",
-              "Because the volume was printed after the reform of the catalogue's format later that year",
+              "Its format was reformed",
               "Because two published transcriptions of it disagree about the days and hours it gives",
               "Because the course number it carries is missing from the staff index of the same volume",
             ],
@@ -3663,9 +3663,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What is missing from the autumn 1919 line that had been in every earlier entry?",
             options: [
               "The phrase about support, and any professor at all",
-              "The fee word, which the catalogue stopped printing on courses given by a Privatdozent",
-              "The days and hours, which the autumn intermediate semester left to be arranged later",
-              "The subject of the course, which that semester's catalogue listed in a separate column",
+              "The fee word",
+              "The days and hours",
+              "The subject",
             ],
             correctIndex: 0,
             explanation:
@@ -3688,10 +3688,10 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
           {
             prompt: "What had changed between November 1915 and June 1919, on this record?",
             options: [
-              "The answer from Berlin",
-              "The mathematics, which by 1919 had made her reputation secure among the referees",
+              "The answer that came from Berlin",
+              "The mathematics",
               "The composition of the faculty, seventeen of whose members had left in the interval",
-              "The procedure, which by 1919 no longer required a vote of the whole faculty at all",
+              "The procedure",
             ],
             correctIndex: 0,
             explanation:
@@ -3702,9 +3702,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What does the phrase \"evidential level\" mean in this course?",
             options: [
               "How directly a statement rests on its document",
-              "How many independent sources have published the same statement about a document",
-              "How recently a document was digitised and made available for a reader to consult",
-              "How well a document's claims agree with the other documents held in the same file",
+              "How often it is published",
+              "How recently it was digitised",
+              "How well it agrees with its file",
             ],
             correctIndex: 0,
             explanation:
@@ -3715,7 +3715,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What does lesson 14 say the catalogues of 1916 to 1919 had been saying?",
             options: [
               "Who was allowed to be named",
-              "Who had been appointed to each chair in mathematics by the Prussian ministry",
+              "Who held chairs",
               "Which courses the faculty had approved for the examination requirements of that year",
               "Which of the university's teachers were being paid from the students' own fees",
             ],
@@ -3728,9 +3728,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What kind of body does lesson 14 say the 1919 faculty vote shows a faculty to be?",
             options: [
               "One that follows the rule above it",
-              "One that decides a candidate's case on the referee reports it has commissioned",
-              "One whose votes of principle determine what it will actually do in a particular case",
-              "One that can set aside a ministry decree once its members have changed their minds",
+              "One led by its referees",
+              "One led by its polls",
+              "One above any decree",
             ],
             correctIndex: 0,
             explanation:
@@ -3754,9 +3754,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "Which days did the autumn 1919 course run on, in Tollmien's transcription?",
             options: [
               "Wednesday and Saturday",
-              "Monday and Thursday, as the winter 1918/19 lecture course numbered 166 had run",
+              "Monday only",
               "Monday only, as five of the seven entries taught under Hilbert's name had run",
-              "Thursday only, as the summer 1918 exercises class had run on the page image",
+              "Thursday only",
             ],
             correctIndex: 0,
             explanation:
@@ -3768,7 +3768,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             options: [
               "The minister had refused the exemption",
               "The faculty had voted for the second time on whether to recommend a refusal",
-              "Klein had presented her paper to the Göttingen scientific society that summer",
+              "Klein had presented her paper",
               "The catalogue had announced the first course under Hilbert's name with her support",
             ],
             correctIndex: 0,
@@ -3779,9 +3779,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
           {
             prompt: "What does Einstein's letter show about how the arrangement looked from outside Göttingen?",
             options: [
-              "Still like an injustice",
-              "Like a sensible compromise that had solved the practical problem for both parties",
-              "Like a temporary measure that everyone expected the ministry to end within months",
+              "Still like an injustice, a year on",
+              "Like a compromise",
+              "Like a stopgap",
               "Like an arrangement nobody outside the faculty had heard of or understood",
             ],
             correctIndex: 0,
@@ -3793,8 +3793,8 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What changed in Germany during the fourteen months this course leaves unexplained?",
             options: [
               "The state, and the government the ministry answered to",
-              "The decree of 1908, which was repealed in the last months of the war",
-              "The composition of the Göttingen faculty, which turned over almost entirely",
+              "The decree of 1908",
+              "The faculty's composition",
               "The habilitation procedure, which was shortened by the removal of a stage",
             ],
             correctIndex: 0,
@@ -3808,7 +3808,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
               "It delayed it by nearly five months and arrived against it",
               "It returned the request to the faculty for a further vote before forwarding it",
               "It replaced the faculty's text with a version of the curator's own drafting",
-              "It sent the request to the academic senate before it went on to the ministry",
+              "It went to the senate",
             ],
             correctIndex: 0,
             explanation:
@@ -3832,8 +3832,8 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "What should a reader ask of anyone who explains confidently why the ministry changed its position?",
             options: [
               "Which source they are relying on",
-              "Whether they have read the German original rather than an English translation of it",
-              "Whether the explanation is consistent with the faculty's own votes of November 1915",
+              "If they read German",
+              "If it fits the votes",
               "Whether they have counted the catalogue entries for themselves on the page images",
             ],
             correctIndex: 0,
@@ -3845,9 +3845,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "Which three stages of the third attempt fell inside four weeks of each other?",
             options: [
               "The application, the departmental vote and the request",
-              "The colloquium, the trial lecture and the faculty's unanimous admission of her",
-              "The ministry's letter, its receipt at Göttingen and the colloquium that followed",
-              "The referee reports, the commission's vote and the vote of the whole faculty",
+              "The colloquium, lecture and admission",
+              "The letter, receipt and colloquium",
+              "The reports and the two votes",
             ],
             correctIndex: 0,
             explanation:
@@ -3870,9 +3870,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
           {
             prompt: "What comes first in the autumn 1919 catalogue line, as in every entry before it?",
             options: [
-              "The subject",
-              "The teacher's name, which in this entry is hers rather than a professor's",
-              "The fee word, which the catalogue moved to the front of the entry that semester",
+              "The subject of the course",
+              "The teacher",
+              "The fee word",
               "The days and the hours, which in this entry are Wednesday and Saturday",
             ],
             correctIndex: 0,
@@ -3885,7 +3885,7 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             options: [
               "Both flattering readings of the faculty",
               "Concluding that the ministry rather than the faculty had held the case up throughout",
-              "Assuming that the trial lecture had been a formality arranged in advance",
+              "A rigged trial lecture",
               "Believing that the catalogue entries had ended before the habilitation was granted",
             ],
             correctIndex: 0,
@@ -3897,9 +3897,9 @@ Tollmien, C. (n.d.-b). *Noethers Vorlesungen*. Emmy Noether. https://www.emmy-no
             prompt: "Why was the autumn 1919 scan not read for this course?",
             options: [
               "The library's manifest for it returned a server error",
-              "Because the library has not digitised the volumes for the academic year 1919/20",
-              "Because the volume is held under terms that do not permit even reading it online",
-              "Because the entry had already been checked against a second published transcription",
+              "Not yet digitised",
+              "Reading is not permitted",
+              "Already cross-checked",
             ],
             correctIndex: 0,
             explanation:
@@ -4064,9 +4064,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What is a symmetry, as lesson 15 defines it?",
             options: [
               "A change that leaves something else the same",
-              "A quantity in a system that comes out of a process exactly as it went into it",
-              "A pair of results that hold together, so that proving one of them proves the other",
-              "A property of an equation that allows the same solution to be reached by two routes",
+              "A conserved quantity",
+              "A pair of linked results",
+              "A property of an equation",
             ],
             correctIndex: 0,
             explanation:
@@ -4078,7 +4078,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             options: [
               "A statement that a quantity does not change",
               "A statement that a system returns to its starting configuration after a fixed interval",
-              "A statement that two different measurements of the same system must agree exactly",
+              "That two measurements agree",
               "A statement that a transformation can be undone by applying its inverse afterwards",
             ],
             correctIndex: 0,
@@ -4090,8 +4090,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does Tollmien's account say \"Invariante Variationsprobleme\" established?",
             options: [
               "A connection between symmetry and conservation theorems",
-              "A method for solving variational problems that had resisted every earlier approach",
-              "A proof that energy is conserved in the general theory of relativity as Einstein stated it",
+              "A method for variational problems",
+              "A proof of energy conservation",
               "A classification of the symmetries a physical system can have, with the two Noether types",
             ],
             correctIndex: 0,
@@ -4116,9 +4116,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "Why does lesson 15 decline to state either theorem precisely?",
             options: [
               "Its sources describe the result rather than state it",
-              "Because the app cannot display mathematical notation, so any statement would be unreadable",
-              "Because the precise statement is disputed between the paper's original and later versions",
-              "Because a precise statement would require the learner to have studied variational calculus",
+              "The app cannot show notation",
+              "The statement is disputed",
+              "It needs variational calculus",
             ],
             correctIndex: 0,
             explanation:
@@ -4129,7 +4129,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does lesson 15 say a course does to a theorem when it paraphrases one it has not read?",
             options: [
               "The same thing a retelling does to a biography",
-              "It makes the result accessible at the cost of a precision most readers will not miss",
+              "It makes it accessible",
               "It creates a version that later writers will cite in preference to the original paper",
               "It commits the error the Göttingen catalogue committed when it printed the support line",
             ],
@@ -4155,8 +4155,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "Which two kinds of statement had been separate before the 1918 paper?",
             options: [
               "Statements about form and about quantity",
-              "Statements about physics and about pure mathematics, which the paper brought together",
-              "Statements about invariants and about the variational problems they arise in naturally",
+              "Physics and pure mathematics",
+              "Invariants and variations",
               "Statements proved by construction and statements proved by reduction to the absurd",
             ],
             correctIndex: 0,
@@ -4167,10 +4167,10 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
           {
             prompt: "Where does lesson 15 tell a reader who wants the precise statement to go?",
             options: [
-              "To the published paper",
-              "To Ihringer's translation, which sets out both theorems in English for a general reader",
-              "To MacTutor's biography, which gives the statement alongside the catalogue entry",
-              "To the trial lecture on module theory, which Tollmien's account summarises in full",
+              "To the published paper itself",
+              "To Ihringer",
+              "To MacTutor",
+              "To the trial lecture",
             ],
             correctIndex: 0,
             explanation:
@@ -4194,8 +4194,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "In which publication did \"Invariante Variationsprobleme\" appear?",
             options: [
               "The Göttingen society's Nachrichten",
-              "The Mathematische Annalen, edited at Göttingen by Klein and Hilbert during those years",
-              "The proceedings of the Göttingen Mathematical Society, to which she had spoken in 1915",
+              "Mathematische Annalen",
+              "The Society's proceedings",
               "The Prussian academy's reports, where Einstein had published on relativity three years earlier",
             ],
             correctIndex: 0,
@@ -4234,7 +4234,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             options: [
               "That it was her habilitation thesis",
               "That it connected theorems about symmetry with theorems about conservation as Tollmien says",
-              "That Klein presented it to the Göttingen scientific society in the summer of that year",
+              "That Klein presented it",
               "That Einstein had received a new work of hers by the end of December of the same year",
             ],
             correctIndex: 0,
@@ -4245,10 +4245,10 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
           {
             prompt: "What do the sources give instead of that link?",
             options: [
-              "A sequence of dates",
-              "A statement from the faculty file naming the work submitted with the third application",
-              "Two conflicting accounts, one naming the 1918 paper and the other the module theory lecture",
-              "A note by Klein explaining which of her papers he had put before the society that July",
+              "A sequence of dates, from July 1918 to June 1919",
+              "A statement from the file",
+              "Two conflicting accounts",
+              "A note by Klein",
             ],
             correctIndex: 0,
             explanation:
@@ -4259,8 +4259,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What piece of evidence points mildly against the habilitation-thesis claim?",
             options: [
               "The trial lecture was on module theory",
-              "The paper was presented by Klein rather than submitted by Noether to the faculty herself",
-              "The paper appeared in the society's proceedings rather than in a mathematical journal",
+              "Klein presented the paper",
+              "It appeared in proceedings",
               "The third application is dated before the paper was published in its final printed form",
             ],
             correctIndex: 0,
@@ -4272,9 +4272,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "Why does lesson 16 say the habit matters more than the fact?",
             options: [
               "It is how the four errors got into circulation",
-              "Because the formal status of a habilitation thesis carries no consequence for a modern reader",
-              "Because the paper's importance to physics does not depend on its role in her career",
-              "Because a course that admits an open question will be trusted on its closed ones",
+              "Formal status no longer matters",
+              "Physics ignores her career",
+              "Admitting gaps earns trust",
             ],
             correctIndex: 0,
             explanation:
@@ -4286,7 +4286,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             options: [
               "The habilitation file itself",
               "The catalogue for the autumn intermediate semester of 1919, once the library's scan loads",
-              "Einstein's letter to Klein, in the full text rather than the sentence Tollmien quotes",
+              "Einstein's letter",
               "The Nachrichten volume's own index, which records how each paper reached the society",
             ],
             correctIndex: 0,
@@ -4310,10 +4310,10 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
           {
             prompt: "What does lesson 16 say a learner loses by not knowing the paper's formal status?",
             options: [
-              "Almost nothing",
-              "The ability to explain why the 1919 attempt succeeded where the first two had failed",
+              "Almost nothing of importance",
+              "Why 1919 worked",
               "The connection between her mathematics and the catalogue entries of the same years",
-              "The date on which the third application was submitted to the philosophical faculty",
+              "An application date",
             ],
             correctIndex: 0,
             explanation:
@@ -4324,7 +4324,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What title was Noether given in 1922?",
             options: [
               "Außerordentlicher Professor",
-              "Privatdozentin für Mathematik, which she had already been admitted as three years earlier",
+              "Privatdozentin",
               "Geheimer Regierungsrat, the title printed beside Hilbert's name in the staff index",
               "Ordentlicher Professor, with a chair and a salary attached on the faculty's nomination",
             ],
@@ -4350,9 +4350,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What figures does Ihringer give for 1924?",
             options: [
               "Her income 3000 marks, Bernays 4000",
-              "Her income 4000 marks against Paul Bernays's 3000, which is the reverse of the usual claim",
-              "Her income 3000 marks against the 5000 paid to a full professor in the same faculty",
-              "No figures at all for her, and 4000 marks for Paul Bernays in the same department",
+              "Hers 4000, Bernays 3000",
+              "Hers 3000, others 5000",
+              "Bernays 4000, none for her",
             ],
             correctIndex: 0,
             explanation:
@@ -4363,7 +4363,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does this course refuse to add to the 1924 comparison?",
             options: [
               "What the figures covered or how they were made up",
-              "The name of the colleague whose income is set beside hers in Ihringer's account",
+              "Bernays's name",
               "The year to which the two figures belong, which Ihringer's account leaves unstated",
               "The currency of the figures, which in the inflation of the period is genuinely unclear",
             ],
@@ -4376,8 +4376,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does a title without a salary do to a record?",
             options: [
               "It makes the question look resolved",
-              "It removes the person from the record entirely, since only salaried posts were listed",
-              "It creates a duplicate entry, one for the title and one for the post actually held",
+              "It removes the person",
+              "It duplicates the entry",
               "It transfers the record of the work to the professor who nominated her for the title",
             ],
             correctIndex: 0,
@@ -4389,8 +4389,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does lesson 17 call the most portable idea in this course?",
             options: [
               "A record carries the honour and drops the condition",
-              "A permission rule decides who may be named before anybody has done any of the work",
-              "An index omission travels further than an omission from the body of the same document",
+              "Permission rules precede the work",
+              "An index omission travels further",
               "A transcription is a report of a document and not the document that it reports on",
             ],
             correctIndex: 0,
@@ -4402,9 +4402,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "Which question about 1916 to 1919 does lesson 17 leave open?",
             options: [
               "What Noether was paid, if anything",
-              "Which of the seven catalogue entries she actually taught, as against merely supported",
-              "Whether Hilbert attended the seminars announced under his name during those semesters",
-              "How many students enrolled in the courses she taught under the support formula",
+              "Which entries she taught",
+              "Whether Hilbert attended",
+              "How many enrolled",
             ],
             correctIndex: 0,
             explanation:
@@ -4417,7 +4417,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
               "It settled who could be named, not what she was paid",
               "It settled her salary but left her title unchanged until the award of 1922",
               "It settled both, which is why Ihringer's figures for 1924 show her earning a full income",
-              "It settled neither, since the ministry's objection was withdrawn only for that semester",
+              "It settled neither",
             ],
             correctIndex: 0,
             explanation:
@@ -4428,9 +4428,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "Who is Paul Bernays, in this lesson?",
             options: [
               "The colleague whose 1924 income is set beside hers",
-              "The referee whose report of August 1915 spoke decidedly against her habilitation",
-              "The curator who forwarded the faculty's 1915 request with a comment of his own",
-              "The dean whose vote settled the tie at the faculty meeting of 18 November 1915",
+              "A referee who opposed her",
+              "The curator in 1915",
+              "The dean who broke the tie",
             ],
             correctIndex: 0,
             explanation:
@@ -4466,9 +4466,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
           {
             prompt: "When did Noether emigrate, and to where?",
             options: [
-              "October 1933, to Bryn Mawr",
-              "April 1933, to Frankfurt, where the Prussian decree had not applied to her in 1917",
-              "June 1919, to Bryn Mawr, immediately after the trial lecture completed her habilitation",
+              "October 1933, to Bryn Mawr College",
+              "April 1933, to Frankfurt",
+              "June 1919, to Bryn Mawr",
               "March 1935, to Pennsylvania, a month before her death in the spring of that year",
             ],
             correctIndex: 0,
@@ -4493,7 +4493,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does this course say it does not have for 1933?",
             options: [
               "The document that ended her position",
-              "The date of the law, which Ihringer's account gives only as the spring of that year",
+              "The date of the law",
               "Any account of her emigration, which is reconstructed here from the Bryn Mawr records",
               "The name of the official who signed the order removing her from the faculty at Göttingen",
             ],
@@ -4519,8 +4519,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What would a reader conclude from the 1916/17 catalogue alone?",
             options: [
               "That Hilbert taught and a Miss Dr. Nöther helped",
-              "That the seminar had two teachers of equal standing, listed in order of seniority",
-              "That the course was taught by a lecturer whose name the catalogue had abbreviated",
+              "Two equal teachers",
+              "An abbreviated lecturer",
               "That the seminar had been cancelled and replaced by a course under another teacher",
             ],
             correctIndex: 0,
@@ -4532,9 +4532,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "Where does the correction to the catalogue's account come from?",
             options: [
               "The decree, the reports, the tallies and the refusal",
-              "A later edition of the catalogue, which restored her name to the entries retrospectively",
-              "The staff index of a subsequent semester, in which her own entry finally appears",
-              "Reading the catalogue entry more carefully, since the support line names her plainly",
+              "A later catalogue edition",
+              "A later staff index",
+              "A closer reading",
             ],
             correctIndex: 0,
             explanation:
@@ -4547,7 +4547,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
               "Find the rule that decided the record's shape",
               "Compare every transcription against the page image before quoting either of them",
               "Prefer a primary document to a secondary account whenever the two are in conflict",
-              "Date every stage of a procedure before drawing any conclusion about its outcome",
+              "Date every stage first",
             ],
             correctIndex: 0,
             explanation:
@@ -4584,9 +4584,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "Which two examples does lesson 15 give for a symmetry?",
             options: [
               "A turned square, and a moved experiment",
-              "A conserved quantity of energy, and a conserved quantity of momentum",
-              "A solved variational problem, and an invariant of an algebraic transformation",
-              "A repeated measurement, and a second measurement made by a different observer",
+              "Energy and momentum",
+              "A variational problem",
+              "A repeated measurement",
             ],
             correctIndex: 0,
             explanation:
@@ -4611,7 +4611,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             options: [
               "They were separate",
               "They were known to be connected, but no proof of the connection had been published",
-              "They were the same statement in two notations, which the paper showed to be equivalent",
+              "Identical",
               "They were both derived from the same principle, which the paper then generalised",
             ],
             correctIndex: 0,
@@ -4623,9 +4623,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does lesson 15 say a precise statement of a theorem is?",
             options: [
               "A mathematical object",
-              "A summary that any careful reader can reconstruct from a description of the result",
+              "A summary",
               "A translation problem, since the original was written in German for a German audience",
-              "A matter of convention that varies between the paper and the textbooks that followed it",
+              "A convention",
             ],
             correctIndex: 0,
             explanation:
@@ -4636,9 +4636,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does lesson 15 say about the years in which the 1918 paper was produced?",
             options: [
               "The catalogue was naming someone else as her courses' teacher",
-              "She had already been admitted as a Privatdozentin and was teaching in her own name",
-              "She had left Göttingen for Frankfurt, where the Prussian decree did not apply",
-              "The habilitation file had been closed and no further application was pending",
+              "She was a Privatdozentin",
+              "She had left for Frankfurt",
+              "The file had been closed",
             ],
             correctIndex: 0,
             explanation:
@@ -4649,7 +4649,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does this course say about the relation between describing a result and stating it?",
             options: [
               "Describing is what its sources support",
-              "Stating is always preferable, and a course should reproduce the original notation",
+              "Stating is always better",
               "Describing is a simplification that a reader can convert back into a statement",
               "Stating is unnecessary, because a description conveys the same information in words",
             ],
@@ -4676,8 +4676,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             options: [
               "The mathematical and physical class",
               "The historical and philological class, which corresponded to the other faculty department",
-              "The general class, in which papers of interest to more than one discipline appeared",
-              "The class of the royal academy at Berlin, to which the society forwarded its proceedings",
+              "The general class",
+              "The Berlin academy's class",
             ],
             correctIndex: 0,
             explanation:
@@ -4688,7 +4688,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "Why does lesson 16 call the habilitation-thesis claim attractive?",
             options: [
               "It closes the story neatly",
-              "Because it is the only account that explains why the third application succeeded",
+              "It explains 1919",
               "Because it is supported by Einstein's letter, which names the work in question",
               "Because it makes the trial lecture unnecessary, which the record also suggests",
             ],
@@ -4701,8 +4701,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What four dated facts does lesson 16 put in place of the claim?",
             options: [
               "The presentation, the letter, the application and the trial lecture",
-              "The referee reports, the commission vote, the faculty vote and the ministry's refusal",
-              "The decree, the first application, the compromise and the catalogue's first entry",
+              "The reports and the votes",
+              "The decree and the compromise",
               "The colloquium, the trial lecture, the admission and the first course in her own name",
             ],
             correctIndex: 0,
@@ -4727,9 +4727,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does the record settle about the paper, whatever its formal status?",
             options: [
               "That it exists, is dated, and was presented by a named professor",
-              "That it was written during the six semesters she taught under Hilbert's name",
-              "That it was the work Einstein had in hand when he wrote to Klein that December",
-              "That it persuaded the ministry to withdraw its objection in the spring of 1919",
+              "That she wrote it while teaching",
+              "That Einstein had it in hand",
+              "That it moved the ministry",
             ],
             correctIndex: 0,
             explanation:
@@ -4753,7 +4753,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What is the one clean fact about the 1922 title?",
             options: [
               "A professorial title, with no salary attached",
-              "A professorial title carrying the same income as an ordinary chair at Göttingen",
+              "A title with a full chair's income",
               "A professorial title granted by the ministry rather than by the faculty itself",
               "A professorial title that the faculty had been seeking for her since 1915",
             ],
@@ -4766,9 +4766,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What kind of figures does Ihringer give for 1924?",
             options: [
               "Incomes, for two people in the same place",
-              "Salaries, drawn by two members of the faculty from the same university fund",
-              "Fees, collected from the students enrolled in each of their courses that year",
-              "Pensions, payable to two retired members of the philosophical faculty",
+              "Salaries",
+              "Fees",
+              "Pensions",
             ],
             correctIndex: 0,
             explanation:
@@ -4780,8 +4780,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             options: [
               "That the question had been resolved",
               "That she was still teaching under another professor's name in the catalogue",
-              "That her position was unpaid, since the list recorded the terms of each appointment",
-              "That she held no post at Göttingen, the title not carrying a place in the list",
+              "That she was unpaid",
+              "That she held no post",
             ],
             correctIndex: 0,
             explanation:
@@ -4805,9 +4805,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "How does lesson 17 describe the relation between the 1922 title and the catalogue line?",
             options: [
               "The same mechanism, one step further on",
-              "Two unrelated arrangements, the first made by the faculty and the second by the ministry",
-              "A correction, the title having been granted to make up for the years of the support line",
-              "A reversal, the title recording what the catalogue line had concealed for six semesters",
+              "Two unrelated arrangements",
+              "A correction",
+              "A reversal",
             ],
             correctIndex: 0,
             explanation:
@@ -4820,7 +4820,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
               "It has fewer documents for it",
               "Because the events fall outside the period the course's title refers to",
               "Because another course in the catalog already covers the years after 1933",
-              "Because the sources for the period are in German and have not been translated",
+              "It is untranslated",
             ],
             correctIndex: 0,
             explanation:
@@ -4830,9 +4830,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
           {
             prompt: "Where is Bryn Mawr?",
             options: [
-              "Pennsylvania",
-              "Frankfurt, where the ministry had assured Göttingen it would not lose her in 1917",
-              "Erlangen, the city in which she had been born in the spring of 1882",
+              "Pennsylvania, in the United States",
+              "Frankfurt",
+              "Erlangen",
               "Göttingen, where she continued to teach privately after leaving the university",
             ],
             correctIndex: 0,
@@ -4871,7 +4871,7 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             options: [
               "That Hilbert taught and a Miss Dr. Nöther helped",
               "That the seminar had no teacher of record and was run by the department as a whole",
-              "That a woman had been admitted to teach at Göttingen in the winter of 1916",
+              "That a woman was admitted",
               "That the course had been announced but not given, the support line marking a substitute",
             ],
             correctIndex: 0,
@@ -4883,9 +4883,9 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What five kinds of document does lesson 18 say produce the correction?",
             options: [
               "The decree, the reports, the tallies, the cover note and the refusal",
-              "The seven catalogue entries, read in sequence across the six semesters of the run",
-              "The staff indexes of all six semesters, compared with each other entry by entry",
-              "Einstein's letter, Tollmien's list, Ihringer's translation and two reference pages",
+              "The seven entries in sequence",
+              "All six staff indexes",
+              "Einstein's letter and Tollmien's list",
             ],
             correctIndex: 0,
             explanation:
@@ -4896,8 +4896,8 @@ Ihringer, F. (2019, June 1). *Emmy Noether's habilitation*. https://math.ihringe
             prompt: "What does the method of this course tell you to do where a record looks thin?",
             options: [
               "Ask what rule decided its shape",
-              "Assume that the missing material has been lost rather than never recorded",
-              "Look for a second copy of the same record in another institution's archive",
+              "Assume it was lost",
+              "Look for a second copy",
               "Treat the thinness as evidence that the events described did not occur",
             ],
             correctIndex: 0,
@@ -5095,7 +5095,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             options: [
               "Winter 1916/17 to summer 1919",
               "Winter 1915/16 to summer 1919, beginning in the semester after her first application",
-              "Summer 1916 to winter 1919/20, ending when she was admitted as a Privatdozentin",
+              "From summer 1916",
               "Winter 1916/17 to winter 1918/19, ending before the ministry withdrew its objection",
             ],
             correctIndex: 0,
@@ -5107,9 +5107,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What kind of check fixes the start of the run?",
             options: [
               "A negative check on the earlier semesters",
-              "A comparison of the two published transcriptions with each other rather than with the scans",
-              "A reading of the staff index, which lists each teacher's course numbers by semester",
-              "A count of the entries found, which by itself establishes both ends of the span",
+              "Comparing two transcriptions",
+              "Reading the staff index",
+              "A count of the entries",
             ],
             correctIndex: 0,
             explanation:
@@ -5120,9 +5120,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Why is \"four years\" an easy error for an outsider to make?",
             options: [
               "A winter semester carries two calendar years",
-              "Because the German academic year began in the autumn rather than in the following January",
+              "The year began in autumn",
               "Because the catalogue printed each semester's entries in the volume for the previous year",
-              "Because the run contains seven entries, and an entry is easily mistaken for a semester",
+              "Entries look like semesters",
             ],
             correctIndex: 0,
             explanation:
@@ -5135,7 +5135,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
               "It makes the arrangement sound entrenched",
               "It places the first entry before the ministry's compromise, which reverses cause and effect",
               "It makes the trial lecture of June 1919 fall in the middle of the run rather than after it",
-              "It implies a seventh semester for which no catalogue entry has ever been produced",
+              "It implies a seventh semester",
             ],
             correctIndex: 0,
             explanation:
@@ -5172,9 +5172,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What marks the end of the run?",
             options: [
               "The next catalogue names her as teacher",
-              "The ministry's letter of 8 May 1919 stating that it had no objection to her habilitation",
-              "The faculty's unanimous vote after the trial lecture on 4 June 1919 at Göttingen",
-              "The end of the winter semester of 1918/19, after which no further entries were printed",
+              "The ministry's letter of May",
+              "The unanimous vote of June",
+              "The end of winter 1918/19",
             ],
             correctIndex: 0,
             explanation:
@@ -5211,8 +5211,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What four things does the false version do to the record of November 1915?",
             options: [
               "Keeps the department, moves the date, invents a vote, reverses the outcome",
-              "Invents a department, invents a date, invents a vote, and invents an outcome as well",
-              "Keeps the date and the tally but attaches them to the wrong department entirely",
+              "Invents everything",
+              "Moves the department",
               "Merges the two faculty votes of 18 November into a single vote with a single tally",
             ],
             correctIndex: 0,
@@ -5224,7 +5224,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What is a reassembly error?",
             options: [
               "A false claim built from real elements",
-              "A claim invented whole by a writer who had no access to any of the documents",
+              "A wholly invented claim",
               "A claim that was true of one case and has been transferred to a similar case",
               "A claim whose date is right but whose participants have been confused with each other",
             ],
@@ -5237,9 +5237,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "In the record, what did the department the popular version blames actually do that same day?",
             options: [
               "It decided to take no further steps against her",
-              "It recorded a formal protest against the faculty's refusal to recommend a refusal",
-              "To hold a special vote of its own members the following day on the same question",
-              "To ask the curator to add a comment of his own to the request going to Berlin",
+              "It recorded a protest",
+              "It held a special vote",
+              "It asked the curator to comment",
             ],
             correctIndex: 0,
             explanation:
@@ -5250,7 +5250,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Which three things actually blocked the first habilitation attempt?",
             options: [
               "The 1908 decree, the cover note, the 1917 refusal",
-              "The three faculty votes of 29 October, 6 November and 18 November 1915 taken together",
+              "The three faculty votes",
               "The minority report, the departmental vote of 6 November, and Hartmann's referee report",
               "The curator's cover note, the minority report, and the tie at the faculty meeting",
             ],
@@ -5276,9 +5276,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "In what order did the four recorded meetings of autumn 1915 occur?",
             options: [
               "Commission, department, demand, full faculty",
-              "Full faculty, commission, department, and then the demand for a second faculty vote",
+              "The full faculty first",
               "Department, commission, full faculty, and then the demand from the other department",
-              "Demand, commission, department, and finally the vote of the whole faculty in November",
+              "The demand first",
             ],
             correctIndex: 0,
             explanation:
@@ -5288,10 +5288,10 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
           {
             prompt: "What does a third version of the story say refused Noether?",
             options: [
-              "The academic senate",
-              "The mathematics and science department, by ten votes to seven with two abstentions",
+              "The academic senate of the university",
+              "The mathematics department",
               "The commission of referees, on the strength of Hartmann's written report in August 1915",
-              "The curator, acting on his own authority before the request could reach the ministry",
+              "The curator",
             ],
             correctIndex: 0,
             explanation:
@@ -5302,9 +5302,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does the record show in place of a senate refusal?",
             options: [
               "The department asked the ministry, which refused",
-              "The senate referred the question to the ministry, which upheld the senate's own decision",
-              "The faculty voted to refuse and the ministry merely confirmed what the faculty had decided",
-              "The curator refused on the ministry's behalf, and the ministry never saw the request",
+              "The senate referred it on",
+              "The faculty voted to refuse",
+              "The curator refused it",
             ],
             correctIndex: 0,
             explanation:
@@ -5329,7 +5329,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             options: [
               "It turns it into a trick on his colleagues",
               "It makes it an act the faculty had voted to authorise at its meeting of 18 November",
-              "It makes it a breach of the ministry's decree for which the university could be penalised",
+              "It makes it a breach",
               "It removes his part in it entirely, since a senate would have named the teacher itself",
             ],
             correctIndex: 0,
@@ -5341,9 +5341,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What general lesson does lesson 21 draw about stories that name institutions?",
             options: [
               "Check which institution is named",
-              "Prefer the account that names the more senior of the two bodies said to have decided",
-              "Treat any named institution as shorthand for the individuals who sat on it at the time",
-              "Assume the university rather than the state, since universities kept fuller records",
+              "Prefer the senior body",
+              "Read bodies as people",
+              "Assume the university",
             ],
             correctIndex: 0,
             explanation:
@@ -5354,9 +5354,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "On what ground did the ministry refuse, in its own words?",
             options: [
               "The question could only be decided on principle",
-              "That the faculty's own vote had shown the university to be too divided to proceed",
+              "That the faculty was divided",
               "That the candidate's teaching under another name already met the practical need",
-              "That an exemption would require the consent of every other Prussian university",
+              "That an exemption needed consent",
             ],
             correctIndex: 0,
             explanation:
@@ -5367,8 +5367,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Why does the ministry version explain the outcome of 1919 better than the senate version?",
             options: [
               "The answer arrived from Berlin, not from Göttingen",
-              "Because the senate was dissolved in the political changes at the end of the war",
-              "Because the faculty voted unanimously in 1919, which a senate could have overruled",
+              "The senate was dissolved",
+              "The faculty voted unanimously",
               "Because the third application was addressed to the ministry rather than to the university",
             ],
             correctIndex: 0,
@@ -5381,7 +5381,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             options: [
               "That Noether taught for nothing",
               "That the catalogue was concealing her involvement from the Prussian ministry in Berlin",
-              "That her courses were open to members of the public as well as to enrolled students",
+              "That it was public",
               "That Hilbert rather than Noether collected the fees paid by the students who enrolled",
             ],
             correctIndex: 0,
@@ -5393,9 +5393,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Why does the gratis argument fail?",
             options: [
               "The word is on other professors' courses too",
-              "Because the word appears only on the seminar entries and not on the lecture courses",
-              "Because the catalogue used it only for courses given during the war years of 1916 to 1918",
-              "Because the word was added by the printer and does not appear in the faculty's own copy",
+              "It is on seminars only",
+              "It was used only in wartime",
+              "The printer added it",
             ],
             correctIndex: 0,
             explanation:
@@ -5419,8 +5419,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What is a format error, as lesson 22 defines it?",
             options: [
               "Mistaking one field of a document for another",
-              "Quoting a document accurately but attributing it to the wrong year or the wrong volume",
-              "Reading a transcription in place of the page image it was made from",
+              "Misdating a quotation",
+              "Reading a transcription",
               "Applying a modern category to a historical document that did not use that category",
             ],
             correctIndex: 0,
@@ -5432,9 +5432,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What field does the catalogue have, and what field does it lack?",
             options: [
               "A field for the student's cost, none for the teacher's pay",
-              "A field for the teacher's rank, none for the subject the course actually covered",
-              "A field for the days and hours, none for the room in which the course was held",
-              "A field for the course number, none for the department the course belonged to",
+              "A field for rank, none for subject",
+              "A field for hours, none for room",
+              "A field for number, none for department",
             ],
             correctIndex: 0,
             explanation:
@@ -5458,7 +5458,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "How does MacTutor's English rendering of \"gratis\" help settle this?",
             options: [
               "It points at what students paid",
-              "It translates the word as unsalaried, which makes the claim about her pay explicit",
+              "It says unsalaried",
               "It notes that the word appears on every course in the mathematics listing that year",
               "It gives the word untranslated, which shows that its meaning was already disputed",
             ],
@@ -5471,9 +5471,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Why does lesson 22 call this the most interesting of the four errors?",
             options: [
               "The reader making it did go and look",
-              "Because it is the only one of the four that no published source has ever repeated",
+              "No source repeats it",
               "Because it is the only one that the catalogue itself can be made to support",
-              "Because it concerns money, which is the part of the record that matters most",
+              "Money matters most",
             ],
             correctIndex: 0,
             explanation:
@@ -5484,9 +5484,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "How does Ihringer's translation present the remark about a university and a swimming pool?",
             options: [
               "As something Hilbert almost surely said",
-              "As a verbatim transcription from the minutes of the faculty meeting of 18 November 1915",
-              "As a remark reported by Noether herself in a letter written many years afterwards",
-              "As an anecdote he repeats while noting that no source for it has ever been produced",
+              "As a verbatim transcription",
+              "As Noether's own report",
+              "As an untraced anecdote",
             ],
             correctIndex: 0,
             explanation:
@@ -5511,7 +5511,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             options: [
               "Prints both positions and no verdict",
               "Prints it as fact, since a university's own historians are the best available authority",
-              "Leaves it out entirely, on the ground that a contested claim has no place in a lesson",
+              "Leaves it out",
               "Prints the German wording and lets the learner judge the reliability of the phrasing",
             ],
             correctIndex: 0,
@@ -5523,9 +5523,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does the University of Göttingen's page state plainly about Hilbert and the lectures?",
             options: [
               "That he announced them under his own name",
-              "That he petitioned the ministry twice and was refused on both occasions before 1919",
-              "That he shared the teaching of the seminars equally with Noether across the six semesters",
-              "That he was reprimanded by the curator for the arrangement in the winter of 1916/17",
+              "That he petitioned twice",
+              "That he shared the teaching",
+              "That the curator reprimanded him",
             ],
             correctIndex: 0,
             explanation:
@@ -5536,8 +5536,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What is the difference lesson 23 draws about Hilbert's arrangement?",
             options: [
               "Circumventing a refusal is not taking up an offered alternative",
-              "Announcing a course under his name is not the same as teaching it himself in the seminar",
-              "Obtaining an undertaking in person is not the same as obtaining one in writing",
+              "Announcing is not teaching",
+              "In person is not in writing",
               "A refusal by the curator is not the same thing as a refusal by the ministry itself",
             ],
             correctIndex: 0,
@@ -5550,7 +5550,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             options: [
               "A permission rule, dated 29 May 1908",
               "The completeness of the University of Göttingen's own archive for the years 1916 to 1919",
-              "Whether Noether actually taught the seminars announced under Hilbert's name at all",
+              "Whether she taught at all",
               "The reliability of the catalogue's printing, which omitted several teachers that year",
             ],
             correctIndex: 0,
@@ -5575,9 +5575,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Where did the correction to this record come from?",
             options: [
               "The ministry changing its answer",
-              "The catalogue's authors revising the entries once the habilitation had been completed",
-              "A later historian identifying the courses and publishing a corrected list of them",
-              "The staff index of the following year, which added her name retrospectively to 1916",
+              "The catalogue's authors",
+              "A later historian",
+              "A later staff index",
             ],
             correctIndex: 0,
             explanation:
@@ -5615,7 +5615,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             options: [
               "Winter 1915/16 and summer 1916",
               "Summer 1919 and the autumn intermediate semester that followed it that year",
-              "Winter 1917/18 and summer 1918, the two semesters in the middle of the run",
+              "The middle two semesters",
               "Winter 1919/20 and summer 1920, to confirm that no further entries appeared",
             ],
             correctIndex: 0,
@@ -5627,9 +5627,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Why does a count of found entries not by itself give you a span?",
             options: [
               "You have not checked what lies beyond them",
-              "Because a semester may contain more than one entry, as the winter of 1918/19 does",
-              "Because an entry may have been printed in a semester in which the course was not given",
-              "Because the catalogue was printed before the semester began and could be changed later",
+              "One semester can hold two",
+              "Some courses were not given",
+              "The catalogue could change",
             ],
             correctIndex: 0,
             explanation:
@@ -5653,7 +5653,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does the extra year do to Hilbert's compromise of probably 1916?",
             options: [
               "It makes an improvisation look like a policy",
-              "It moves it before the refusal, which reverses the order of the two documents",
+              "It moves it before the refusal",
               "It removes it from the story, since a four-year run needs no ministerial undertaking",
               "It attaches it to the ministry rather than to Hilbert, who negotiated it in person",
             ],
@@ -5665,9 +5665,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
           {
             prompt: "Why does lesson 19 say this error survives?",
             options: [
-              "It costs little on its own",
-              "Because the catalogue volumes for the earlier semesters have never been digitised",
-              "Because both published transcriptions of the entries give the run as four years",
+              "It costs little on its own, so nobody corrects it",
+              "No scans exist",
+              "Transcriptions say so",
               "Because no reference work states the length of the run in semesters at all",
             ],
             correctIndex: 0,
@@ -5679,9 +5679,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What is the general rule lesson 19 draws about durations?",
             options: [
               "A duration is a claim needing evidence at both ends",
-              "A duration should always be stated in the unit the source itself uses, not converted",
-              "A duration is the least important detail of a story and can safely be approximated",
-              "A duration should be given as a range whenever the sources disagree about either end",
+              "Keep the source's unit",
+              "It can be approximated",
+              "Give a range",
             ],
             correctIndex: 0,
             explanation:
@@ -5694,7 +5694,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
               "The next catalogue announces a course under her name",
               "The ministry's letter of 8 May 1919, after which the arrangement was no longer needed",
               "The faculty's unanimous vote of June 1919 admitting her as a Privatdozentin",
-              "The refusal of November 1917, after which Hilbert stopped announcing her courses",
+              "The refusal of 1917",
             ],
             correctIndex: 0,
             explanation:
@@ -5705,8 +5705,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Which body does the popular version put the 19 November vote in?",
             options: [
               "The historical and philological department",
-              "The mathematics and science department, which had voted for her on 6 November",
-              "The commission of referees, which had voted for her at the end of October",
+              "The mathematics department",
+              "The commission",
               "The academic senate, which the same version blames for the eventual refusal",
             ],
             correctIndex: 0,
@@ -5733,7 +5733,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
               "Tollmien, Ihringer and MacTutor",
               "Tollmien, the University of Göttingen's page, and the catalogue's own staff index",
               "Ihringer, MacTutor and the Nachrichten volume that published her 1918 paper",
-              "The catalogue scans, the University of Göttingen's page and Einstein's letter to Klein",
+              "The scans and a letter",
             ],
             correctIndex: 0,
             explanation:
@@ -5744,9 +5744,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What happened at the real meeting of 10 November 1915?",
             options: [
               "A full faculty vote was demanded",
-              "The whole faculty voted twice, first on principle and then on whether to recommend a refusal",
-              "The mathematics and science department voted ten for, seven against, two abstaining",
-              "The commission recommended that an exemption be sought from the Prussian ministry",
+              "Two faculty votes",
+              "A ten to seven vote",
+              "A commission vote",
             ],
             correctIndex: 0,
             explanation:
@@ -5770,8 +5770,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Which of the three real obstacles was an administrative act nobody voted on?",
             options: [
               "The curator's cover note",
-              "The decree of 29 May 1908, which the ministry issued after consulting the professors",
-              "The minister's refusal of 5 November 1917, written in reply to the faculty's request",
+              "The 1908 decree",
+              "The refusal",
               "The minority report, which seven members of the faculty signed that November",
             ],
             correctIndex: 0,
@@ -5796,9 +5796,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Why is a reassembly error harder to dislodge than an invention?",
             options: [
               "Its pieces are all things a reader recognises",
-              "Because it is usually published before the correct account and so gets there first",
-              "Because the invented element is always the smallest detail in the whole claim",
-              "Because a correction has to disprove each of its elements separately to succeed",
+              "It is published first",
+              "Its invention is small",
+              "Each piece needs disproof",
             ],
             correctIndex: 0,
             explanation:
@@ -5811,7 +5811,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
               "Because she was a woman",
               "Because the faculty had divided so evenly that the ministry refused to intervene",
               "Because her published work was held to fall short of the standard for a habilitation",
-              "Because the war made it impossible to appoint any new Privatdozent that year",
+              "The war",
             ],
             correctIndex: 0,
             explanation:
@@ -5822,7 +5822,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What did the department actually ask the ministry for?",
             options: [
               "An exemption from a ministry decree",
-              "Permission to appoint her as an assistant to the mathematics and physics seminar",
+              "An assistant's post",
               "A ruling on whether the 1908 decree applied to a candidate already holding a doctorate",
               "Confirmation that the faculty was entitled to decide the question for itself",
             ],
@@ -5834,9 +5834,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
           {
             prompt: "In the senate version, what is the remedy the story implies?",
             options: [
-              "Better colleagues",
-              "A change in the decree, which only the Prussian ministry could have made",
-              "An appeal by the candidate to a higher body within the university's own structure",
+              "Better colleagues at Göttingen",
+              "A new decree",
+              "An appeal",
               "A transfer to a university outside Prussia, where the rule did not bind the faculty",
             ],
             correctIndex: 0,
@@ -5848,9 +5848,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does the senate version get wrong about the sympathetic parties?",
             options: [
               "It makes Hilbert's arrangement a trick on his colleagues",
-              "It makes the referees hostile when seven of the eight had supported the application",
-              "It makes Landau the author of the refusal when he was the dean who prevented one",
-              "It makes Klein a bystander when he had suggested the application in the first place",
+              "It makes the referees hostile",
+              "It blames Landau",
+              "It sidelines Klein",
             ],
             correctIndex: 0,
             explanation:
@@ -5862,8 +5862,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             options: [
               "The university refused her, and the state refused her",
               "The faculty voted against her, and the faculty declined to recommend a refusal",
-              "She was not named, and she was not teaching the courses announced under his name",
-              "The decree barred her, and the minister declined to authorise an exception",
+              "Not named, and not teaching",
+              "Barred, and refused an exception",
             ],
             correctIndex: 0,
             explanation:
@@ -5887,9 +5887,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Which bodies at Göttingen had in fact voted in Noether's favour by the end of 1915?",
             options: [
               "The commission and the mathematics and science department",
-              "The academic senate and the historical and philological department, in that order",
-              "The curator's office and the commission, the faculty as a whole having declined",
-              "The whole faculty, unanimously, and the historical and philological department",
+              "The academic senate",
+              "The curator's office",
+              "The whole faculty, unanimously",
             ],
             correctIndex: 0,
             explanation:
@@ -5900,7 +5900,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Which four professors' courses does lesson 22 name as also carrying \"gratis\"?",
             options: [
               "Klein, Landau, Carathéodory and Hilbert",
-              "Klein, Runge, Debye and Voigt, four of the eight referees of the summer of 1915",
+              "Klein, Runge, Debye and Voigt",
               "Hilbert, Hartmann, Osterath and Bernays, whose names appear elsewhere in this course",
               "Landau, Carathéodory, Hartmann and Runge, the four referees who wrote at length",
             ],
@@ -5913,8 +5913,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What would the gratis argument have to say about entry 166?",
             options: [
               "Something about her pay, and nobody has said what",
-              "That the entry belongs to a different teacher, since its fee word does not match",
-              "That the entry was printed in error, which is why one transcription omits it",
+              "That it is another teacher's",
+              "That it was a misprint",
               "That the entry records a course she did not in fact teach that semester",
             ],
             correctIndex: 0,
@@ -5951,8 +5951,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
           {
             prompt: "How does lesson 22 say the open question about her pay should be improved?",
             options: [
-              "Find a pay record",
-              "Compare the fee words across every professor's entry in the same volume",
+              "Find a pay record for her",
+              "Count fee words",
               "Ask the library for permission to reproduce the pages so more readers can check",
               "Count how many of the seven entries carry each of the three fee categories",
             ],
@@ -5965,9 +5965,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Which is the better answer about Noether's pay, in this course's terms?",
             options: [
               "The worse-sounding one that the evidence supports",
-              "The one that fits the rest of the story, since a rule that barred her would also unpay her",
-              "The one most sources repeat, since agreement among independent accounts is evidence",
-              "The one a reader can check on the page, even if the page was not built to answer it",
+              "The one that fits the story",
+              "The one most sources repeat",
+              "The one checkable on the page",
             ],
             correctIndex: 0,
             explanation:
@@ -5978,8 +5978,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does Ihringer's hedge on the swimming pool remark consist of?",
             options: [
               "The words \"almost surely\"",
-              "A footnote recording that Tollmien could not trace the remark to any document",
-              "A note that the German wording survives in two forms that differ in a single word",
+              "A footnote",
+              "A wording note",
               "A statement that the remark is reported only by writers who were not present",
             ],
             correctIndex: 0,
@@ -6018,7 +6018,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             options: [
               "Umging, meaning got around",
               "Verweigerte, meaning refused, which describes the ministry rather than Hilbert",
-              "Vorenthielt, meaning withheld, which is Einstein's verb from December 1918",
+              "Vorenthielt",
               "Zugelassen, meaning admitted, which is the word Tollmien uses of the 1919 decision",
             ],
             correctIndex: 0,
@@ -6043,8 +6043,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does the Matilda effect describe, in the course this one links to?",
             options: [
               "A woman's credit routing to a man",
-              "An institution correcting a record long after the people involved have died",
-              "A rule that decides who may be named before any of the work has been done",
+              "A late correction",
+              "A naming rule",
               "The tendency of a better-known name to attract citations away from a lesser-known one",
             ],
             correctIndex: 0,
@@ -6056,9 +6056,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Why do a permission rule and a Matilda-effect case call for different remedies?",
             options: [
               "One is an appetite and the other is a rule",
-              "One concerns teaching and the other concerns publication, which are governed separately",
-              "One can be corrected by the institution and the other only by a later historian",
-              "One leaves a documentary trail and the other leaves no record of any kind",
+              "Teaching versus publication",
+              "Who can correct each",
+              "Only one leaves a trail",
             ],
             correctIndex: 0,
             explanation:
@@ -6070,7 +6070,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             options: [
               "It keeps the pleasure and loses a false certainty",
               "It keeps the detail and loses the name of the person supposed to have said it",
-              "It keeps the source and loses the wording, which no account agrees on",
+              "It keeps the source",
               "It keeps the argument and loses the anecdote, which was never evidence anyway",
             ],
             correctIndex: 0,
@@ -6110,9 +6110,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Which single document decided, in advance, that Noether could not be named as a course's teacher?",
             options: [
               "The Prussian decree of 29 May 1908",
-              "The minority report signed by seven members of the philosophical faculty in November 1915",
-              "The curator's cover note of 9 December 1915, which travelled with the faculty's request",
-              "The minister's letter of 5 November 1917 refusing to authorise any exception in her case",
+              "The minority report",
+              "The curator's cover note",
+              "The minister's letter",
             ],
             correctIndex: 0,
             explanation:
@@ -6123,7 +6123,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What is the one-sentence difference between this case and a case of credit being taken?",
             options: [
               "A rule decided the naming before anyone worked",
-              "The work was published under two names rather than under the name of a single author",
+              "It was published jointly",
               "The credit was corrected within a few years, which a case of theft would have resisted",
               "The person whose name appeared had also contributed substantially to the same courses",
             ],
@@ -6149,8 +6149,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What preceded the decree of 1908?",
             options: [
               "A ministry survey of professors in 1907",
-              "A test case at Göttingen in which a woman's application had been refused by the faculty",
-              "A ruling by the academic senates of the Prussian universities acting in concert",
+              "A Göttingen test case",
+              "A ruling by the senates",
               "A petition from the philosophical faculties asking the ministry to settle the question",
             ],
             correctIndex: 0,
@@ -6175,9 +6175,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What three questions does this course tell you to ask of any claim about the case?",
             options: [
               "Which stage, which document, what date",
-              "Who said it, who repeated it, and who has ever tried to check whether it was true",
-              "Which archive, which catalogue number, and whether the document has been digitised",
-              "Whether it is plausible, whether it is flattering, and whether another source agrees",
+              "Who said it, who repeated it",
+              "Which archive, which number",
+              "Is it plausible or flattering",
             ],
             correctIndex: 0,
             explanation:
@@ -6188,7 +6188,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What was the balance of the eight referee reports of 1915?",
             options: [
               "Seven for, one against",
-              "Four for and four against, which is why the commission had to vote in October",
+              "Four and four",
               "Six for, one against and one undated and therefore not counted in the tally at all",
               "Five for and three against, the three being the referees outside mathematics",
             ],
@@ -6202,8 +6202,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             options: [
               "Both argued she was an exception",
               "Both declined to comment on the candidate's sex and confined themselves to the mathematics",
-              "Both were undated, which is why Tollmien's account does not place them in the sequence",
-              "Both were withdrawn before the commission voted at the end of October 1915",
+              "Both were undated",
+              "Both were withdrawn",
             ],
             correctIndex: 0,
             explanation:
@@ -6227,9 +6227,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does the typing error on Tollmien's page teach?",
             options: [
               "A source is a set of statements, each checkable",
-              "That a secondary source should never be relied on where a primary document survives",
-              "That a historian's transcription is less reliable than a reference work's summary",
-              "That dates in German sources should always be read in the day-month-year order",
+              "Never rely on secondary sources",
+              "Transcriptions are less reliable",
+              "Read dates day-month-year",
             ],
             correctIndex: 0,
             explanation:
@@ -6240,7 +6240,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What were the two questions the whole faculty voted on in November 1915?",
             options: [
               "Opposition in principle, and whether to recommend a refusal",
-              "Whether to admit her, and whether to ask the ministry to change the decree of 1908",
+              "Admission, and a new decree",
               "Whether the other department could demand a vote, and whether to hold one at all",
               "Whether to approve the exemption text, and whether to send it through the curator",
             ],
@@ -6253,9 +6253,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What is the difference between a vote of opinion and a vote of consequence in this record?",
             options: [
               "Only the second decided what left the room",
-              "Only the second was recorded in the minutes the university's archive has preserved",
+              "Only the second was minuted",
               "Only the second required a majority of the whole faculty rather than of those present",
-              "Only the second was reported to the ministry, the first being an internal matter",
+              "Only the second went to Berlin",
             ],
             correctIndex: 0,
             explanation:
@@ -6279,9 +6279,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What authority does the catalogue arrangement of 1916 to 1919 actually rest on?",
             options: [
               "The ministry's undertaking after Hilbert's visit",
-              "The faculty's vote of 18 November 1915 approving the text of the exemption request",
-              "The curator's discretion to authorise teaching arrangements within the university",
-              "A provision of the 1908 decree permitting a professor to be assisted by a doctor",
+              "The faculty's vote of 1915",
+              "The curator's discretion",
+              "A clause of the 1908 decree",
             ],
             correctIndex: 0,
             explanation:
@@ -6292,7 +6292,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What are the six fields of a Göttingen catalogue entry?",
             options: [
               "Subject, teacher, support line, day and hours, fee word, number",
-              "Subject, teacher, faculty, examination prepared for, room number and enrolment figure",
+              "Subject, teacher, faculty, room",
               "Subject, teacher, textbook, day and hours, fee payable and the department's own code",
               "Subject, teacher, the assistant's name, the term, the fee word and the lecture hall",
             ],
@@ -6305,8 +6305,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Why does this course link to the GDZ scans instead of showing them?",
             options: [
               "Republishing needs the library's written permission",
-              "Because the library's viewer displays the pages at a higher resolution than a course page",
-              "Because the scans are held under a licence that expires at the end of each academic year",
+              "The viewer is sharper",
+              "The licence expires yearly",
               "Because a link cannot be misread, whereas a reproduced image can be cropped misleadingly",
             ],
             correctIndex: 0,
@@ -6344,9 +6344,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does the winter 1916/17 staff index show?",
             options: [
               "Course 190 under Hilbert, and no Noether entry",
-              "An entry for Noether with no courses listed beside it, unlike the entries for professors",
-              "Course 190 under both names, with a cross-reference from one entry to the other",
-              "No entry for either of them, the mathematics seminar being indexed as a whole",
+              "A Noether entry with no courses",
+              "Course 190 under both names",
+              "No entry for either",
             ],
             correctIndex: 0,
             explanation:
@@ -6357,7 +6357,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What do the dance master and the drawing teacher in the index establish?",
             options: [
               "The test was being nameable, not rank",
-              "That the index covered every person paid by the university in any capacity that year",
+              "Every paid person was listed",
               "That the catalogue was compiled by an administrator without reference to the faculties",
               "That teachers without a doctorate were listed separately from those who held one",
             ],
@@ -6369,10 +6369,10 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
           {
             prompt: "What does the exercise in Section 3 ask a learner to do if the page disagrees with the lesson?",
             options: [
-              "Trust the page and tell us",
-              "Record both readings and note which published transcription each of them agrees with",
-              "Check whether the library has replaced the scan with a corrected image since the reading",
-              "Prefer the lesson, since its transcription was checked against two independent sources",
+              "Trust the page and tell the course",
+              "Record both readings",
+              "Check for a new scan",
+              "Prefer the lesson",
             ],
             correctIndex: 0,
             explanation:
@@ -6396,8 +6396,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does this course refuse to explain about the years between the refusal and the third application?",
             options: [
               "What changed inside the ministry",
-              "Why Noether continued to teach under Hilbert's name after the refusal of November 1917",
-              "Why Einstein wrote to Klein rather than to Hilbert, who was closer to the case",
+              "Why she kept teaching",
+              "Why he wrote to Klein",
               "Why the faculty waited fourteen months before submitting a further application",
             ],
             correctIndex: 0,
@@ -6411,7 +6411,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
               "Nearly two years, then under three months",
               "Under three months in both cases, the delay in 1915 having been inside the university",
               "Fourteen months, then three days, which is the time the letter took in the post",
-              "Four weeks, then nearly two years, the second request being the one that was delayed",
+              "Four weeks, then two years",
             ],
             correctIndex: 0,
             explanation:
@@ -6422,9 +6422,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does the speed of the third attempt locate?",
             options: [
               "The obstacle, outside the university",
-              "A change in the faculty's assessment of the candidate's mathematical standing",
-              "A simplification of the habilitation procedure introduced after the war ended",
-              "The removal of the curator's power to comment on a request being forwarded",
+              "A change of mind",
+              "A simpler procedure",
+              "The curator's lost power",
             ],
             correctIndex: 0,
             explanation:
@@ -6435,8 +6435,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What happened on 4 June 1919, and what followed it?",
             options: [
               "The trial lecture, then unanimous admission",
-              "The colloquium, followed a week later by the trial lecture on invariant variational problems",
-              "The ministry's statement of no objection, received at Göttingen three days afterwards",
+              "The colloquium",
+              "The ministry's statement",
               "The publication of the first catalogue entry announcing a course in her own name",
             ],
             correctIndex: 0,
@@ -6450,7 +6450,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
               "A professor, and the phrase about support",
               "The fee word, which the catalogue no longer printed for a course given by a Privatdozentin",
               "The days and the hours, which that semester's catalogue left to be settled separately",
-              "The course number, which the staff index of that volume supplies in its place",
+              "The course number",
             ],
             correctIndex: 0,
             explanation:
@@ -6461,9 +6461,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What does Tollmien's account say the 1918 paper established?",
             options: [
               "A connection between symmetry and conservation theorems",
-              "A method for solving variational problems in the general theory of relativity",
-              "A proof that a conserved quantity exists in every physical system without exception",
-              "A classification of invariants, which later became the foundation of abstract algebra",
+              "A method for relativity",
+              "A universal conserved quantity",
+              "A classification of invariants",
             ],
             correctIndex: 0,
             explanation:
@@ -6487,8 +6487,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What claim about the 1918 paper does this course decline to assert?",
             options: [
               "That it served as her habilitation thesis",
-              "That Klein presented it to the Göttingen scientific society on 26 July of that year",
-              "That it appeared in the society's Nachrichten on pages 235 to 257 of volume 37",
+              "That Klein presented it",
+              "That it was in volume 37",
               "That it connected theorems about symmetry with theorems about conservation",
             ],
             correctIndex: 0,
@@ -6500,9 +6500,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What habit does lesson 16 warn against, and what does it link that habit to?",
             options: [
               "Promoting a sequence into a fact, as in the four errors",
-              "Quoting a translation in place of an original, as Ihringer's readers are apt to do",
-              "Citing a page range without having opened the volume the range refers to",
-              "Relying on a single historian for a whole account, as this course does for 1915",
+              "Quoting a translation",
+              "Citing unopened volumes",
+              "Relying on one historian",
             ],
             correctIndex: 0,
             explanation:
@@ -6528,7 +6528,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
               "A record carries the honour and drops the condition",
               "A permission rule is not a theft, and the two call for different remedies entirely",
               "An index omission travels further than an omission from the body of a document",
-              "A duration is a claim, and a claim needs evidence at both of its ends",
+              "A duration is a claim",
             ],
             correctIndex: 0,
             explanation:
@@ -6565,8 +6565,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Where does the correction to the catalogue's account of 1916 come from?",
             options: [
               "The other documents, read beside it",
-              "A closer reading of the entry itself, whose support line names her plainly enough",
-              "The staff index of a later semester, once her own entry finally appears in it",
+              "A closer reading",
+              "A later staff index",
               "Tollmien's transcription, which restores the details the printed entry omitted",
             ],
             correctIndex: 0,
@@ -6578,9 +6578,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "How long did the run of entries last, and what is the popular version's error?",
             options: [
               "Six semesters; the popular version adds a year",
-              "Four years; the popular version understates it by a full academic year of teaching",
-              "Six semesters; the popular version places them all before the refusal of 1917",
-              "Three semesters; the popular version doubles the length of the whole arrangement",
+              "Four years; it understates",
+              "Six semesters; all before 1917",
+              "Three semesters; it doubles",
             ],
             correctIndex: 0,
             explanation:
@@ -6591,7 +6591,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What is wrong with the claim that a departmental vote on 19 November 1915 blocked the habilitation?",
             options: [
               "The date is in no source, and that department stood down",
-              "The vote took place, but a day earlier and with the opposite tally to the one reported",
+              "The vote was a day earlier",
               "The department named is correct, but the vote concerned the exemption text rather than her",
               "The vote was taken by the whole faculty, not by a department, and it was not about her",
             ],
@@ -6617,8 +6617,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "Why does it matter whether a ministry or a senate refused her?",
             options: [
               "The two imply different remedies",
-              "The two would have decided in different years, which changes the length of the run",
-              "The two kept their records in different archives, which changes what survives today",
+              "Different years",
+              "Different archives",
               "The two would have applied different rules, only one of which is still documented",
             ],
             correctIndex: 0,
@@ -6632,7 +6632,7 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
               "What the teacher was paid",
               "What a student was charged for attending a course in the mathematics seminar",
               "Whether a course was open to the public as well as to the university's own students",
-              "Whether a course counted towards the requirements of any university examination",
+              "Exam credit",
             ],
             correctIndex: 0,
             explanation:
@@ -6643,9 +6643,9 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "How does this course handle the remark about a university and a swimming pool?",
             options: [
               "It names both positions and reaches no verdict",
-              "It prints it as fact, on the authority of the University of Göttingen's own historians",
-              "It omits it, on the ground that a contested anecdote has no place in a cited course",
-              "It prints the German wording so that a reader can weigh the phrasing for themselves",
+              "It prints it as fact",
+              "It omits it",
+              "It prints the German",
             ],
             correctIndex: 0,
             explanation:
@@ -6656,8 +6656,8 @@ University of Göttingen. (n.d.). *Historische Persönlichkeiten Göttingens in 
             prompt: "What is the transferable move this course ends on?",
             options: [
               "Find the rule that decided the record's shape",
-              "Compare every published transcription against the page image before quoting either",
-              "Assume an absence is evidence of suppression until a document shows otherwise",
+              "Compare transcriptions",
+              "Assume suppression",
               "Date each stage of a procedure before drawing a conclusion about its outcome",
             ],
             correctIndex: 0,
