@@ -53,7 +53,7 @@ describe("seed registry", () => {
     expect(broken.map((v) => v.detail)).toEqual([]);
   });
 
-  it("puts a slug on a second school only when it is position 01 of its series", () => {
+  it("shares across schools only as the sharing rule allows", () => {
     const broken = schoolShareViolations(entries).filter((v) => v.rule === "preview-only");
     expect(broken.map((v) => v.detail)).toEqual([]);
   });
@@ -61,7 +61,7 @@ describe("seed registry", () => {
 
 // The rule itself, on fabricated entries: today's catalog shares nothing, so the catalog tests above
 // would pass with any rule at all. These prove each half fails when it should.
-describe("preview rule (schoolShareViolations)", () => {
+describe("sharing rule (schoolShareViolations)", () => {
   type Reg = Pick<SeedEntry, "file" | "slug" | "school" | "seriesPosition">;
   const reg = (slug: string, school: string | null, seriesPosition: string | null = null): Reg => ({
     file: `scripts/seed-${school ?? "unknown"}.ts`,
@@ -69,39 +69,59 @@ describe("preview rule (schoolShareViolations)", () => {
     school,
     seriesPosition,
   });
+  const firm = (slug: string, school: string, position: string | null) => reg(slug, school, position);
   const rules = (regs: Reg[]) => schoolShareViolations(regs).map((v) => `${v.rule}:${v.slug}`);
 
   it("passes distinct slugs, and a series' first course previewed on a second school", () => {
     expect(rules([reg("a", "learn-witus"), reg("b", "learn-witus"), reg("c", "elementary-mba")])).toEqual([]);
-    expect(rules([reg("firm-01", "elementary-mba", "01"), reg("firm-01", "learn-witus", "01")])).toEqual([]);
+    expect(rules([firm("firm-01", "elementary-mba", "01"), firm("firm-01", "learn-witus", "01")])).toEqual([]);
     // The preview copy may carry no series fields: the series need not exist on the previewing school.
-    expect(rules([reg("firm-01", "elementary-mba", "01"), reg("firm-01", "learn-witus")])).toEqual([]);
+    expect(rules([firm("firm-01", "elementary-mba", "01"), firm("firm-01", "learn-witus", null)])).toEqual([]);
+  });
+
+  it("lets the seven listed business courses sit on Learn.WitUS and ElementaryMBA at any position", () => {
+    expect(rules([reg("cooperatives", "learn-witus", "03"), reg("cooperatives", "elementary-mba", "03")])).toEqual([]);
+    expect(rules([reg("choose-a-form-capstone", "learn-witus", "99"), reg("choose-a-form-capstone", "elementary-mba")])).toEqual([]);
+  });
+
+  it("does not let any other Learn.WitUS course onto ElementaryMBA in full", () => {
+    expect(rules([reg("the-slide-rule", "learn-witus", "02"), reg("the-slide-rule", "elementary-mba", "02")])).toEqual([
+      "preview-only:the-slide-rule",
+    ]);
+    // A listed course is still only for those two schools.
+    expect(rules([reg("cooperatives", "learn-witus", "03"), reg("cooperatives", "better-vice-club", "03")])).toEqual([
+      "preview-only:cooperatives",
+    ]);
   });
 
   it("fails a slug registered twice on one school, even a series' first course", () => {
     expect(rules([reg("a", "learn-witus"), reg("a", "learn-witus")])).toEqual(["once-per-school:a"]);
-    expect(rules([reg("firm-01", "learn-witus", "01"), reg("firm-01", "learn-witus", "01")])).toEqual([
+    expect(rules([firm("firm-01", "learn-witus", "01"), firm("firm-01", "learn-witus", "01")])).toEqual([
       "once-per-school:firm-01",
     ]);
   });
 
   it("fails a course on two schools that is not position 01", () => {
-    expect(rules([reg("firm-02", "elementary-mba", "02"), reg("firm-02", "learn-witus", "02")])).toEqual([
+    expect(rules([firm("firm-02", "elementary-mba", "02"), firm("firm-02", "learn-witus", "02")])).toEqual([
       "preview-only:firm-02",
     ]);
-    expect(rules([reg("no-series", "elementary-mba"), reg("no-series", "learn-witus")])).toEqual([
-      "preview-only:no-series",
-    ]);
     // Two registrations that disagree on the position are two courses under one slug.
-    expect(rules([reg("x", "elementary-mba", "01"), reg("x", "learn-witus", "03")])).toEqual(["preview-only:x"]);
+    expect(rules([firm("x", "elementary-mba", "01"), firm("x", "learn-witus", "03")])).toEqual(["preview-only:x"]);
     // The start ("00") and a track's first course ("A1") are not position 01.
-    expect(rules([reg("y", "elementary-mba", "00"), reg("y", "learn-witus", "00")])).toEqual(["preview-only:y"]);
-    expect(rules([reg("t", "elementary-mba", "A1"), reg("t", "learn-witus")])).toEqual(["preview-only:t"]);
+    expect(rules([firm("y", "elementary-mba", "00"), firm("y", "learn-witus", "00")])).toEqual(["preview-only:y"]);
+    expect(rules([firm("t", "elementary-mba", "A1"), firm("t", "learn-witus", null)])).toEqual(["preview-only:t"]);
   });
 
-  it("fails a series' first course on three schools", () => {
+  it("holds any other pair of schools to the preview rule", () => {
+    expect(rules([reg("p", "learn-witus", "02"), reg("p", "better-vice-club", "02")])).toEqual([
+      "preview-only:p",
+    ]);
+    expect(rules([reg("q", "better-vice-club"), reg("q", "elementary-mba")])).toEqual(["preview-only:q"]);
+  });
+
+  it("fails a course on three schools", () => {
     expect(
-      rules([reg("z", "elementary-mba", "01"), reg("z", "learn-witus", "01"), reg("z", "better-vice-club", "01")]),
+      rules([firm("z", "elementary-mba", "01"), firm("z", "learn-witus", "01"), firm("z", "better-vice-club", "01")]),
     ).toEqual(["preview-only:z"]);
   });
 

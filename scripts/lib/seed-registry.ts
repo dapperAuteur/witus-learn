@@ -364,11 +364,29 @@ export interface ShareViolation {
 }
 
 /**
- * BAM's preview rule (2026-10-23, witus-learn task 346 item 2): a course may appear on more than one
- * school only as a PREVIEW. Within a school every slug is unique. Across schools a slug may sit on at
- * most two, and only when it is position 01 of its series, so Learn.WitUS can show the first course
- * of an ElementaryMBA series and link to the rest (or the other way round), and nobody can copy a
- * whole series across by accident.
+ * The only courses Learn.WitUS gives ElementaryMBA in full: the seven business-formation courses the
+ * ElementaryMBA plan proposed sharing (BAM, 2026-10-23: "ElementaryMBA doesn't get previews, it gets
+ * all of them", then "not all Learn.WitUS courses, just the business courses that were in the
+ * original proposal"). Adding a slug here is a decision for BAM, not a fix for a failing test.
+ */
+export const FULL_SHARE_TO_ELEMENTARY_MBA: ReadonlySet<string> = new Set([
+  "what-a-business-entity-is",
+  "us-business-forms",
+  "cooperatives",
+  "financing-without-access",
+  "foreign-business-forms",
+  "business-governance",
+  "choose-a-form-capstone",
+]);
+
+/**
+ * BAM's sharing rule (2026-10-23, witus-learn task 346 item 2, refined the same day). Within a school
+ * every slug is unique. Across schools a slug may sit on at most two, and:
+ *   - the seven courses in `FULL_SHARE_TO_ELEMENTARY_MBA` may sit on Learn.WitUS and ElementaryMBA at
+ *     any position;
+ *   - every other course may appear on a second school only as a PREVIEW: position 01 of its series,
+ *     linking to the rest (so Learn.WitUS shows FIRM-01 and points to ElementaryMBA for FIRM-02 on).
+ * So nobody can copy a whole series across by accident.
  *
  * "Position 01" means at least one registration says `seriesPosition: "01"` and none says anything
  * else. The preview copy may carry no series fields at all, because the series may not exist on the
@@ -421,6 +439,7 @@ export function schoolShareViolations(
       });
       continue;
     }
+    if (FULL_SHARE_TO_ELEMENTARY_MBA.has(slug) && schools.has("learn-witus") && schools.has("elementary-mba")) continue;
     const positions = regs.map((r) => r.position);
     if (!positions.includes("01") || positions.some((p) => p != null && p !== "01")) {
       out.push({
