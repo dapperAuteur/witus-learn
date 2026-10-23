@@ -181,7 +181,18 @@ async function main() {
     });
   }
 
-  const speedwayQuizzes = SPEEDWAY_COURSE.lessons.filter((l) => l.quiz).length;
+  // The two business shelves from the ElementaryMBA plan (proposals.ts, key
+  // elementary-mba-emba-curriculum-plan, section 6). "How a Business Is Formed" holds the seven
+  // business-formation courses shared whole from Learn.WitUS; "Business Core" holds the FIRM series
+  // once it is written, and is created now so the shelf exists before its first course does.
+  for (const { name, sortOrder } of [
+    { name: "How a Business Is Formed", sortOrder: 5 },
+    { name: "Business Core", sortOrder: 6 },
+  ]) {
+    await db.insert(schema.courseCategories).values({ tenantId, name, sortOrder }).onConflictDoNothing();
+  }
+
+  const speedwayQuizzes =SPEEDWAY_COURSE.lessons.filter((l) => l.quiz).length;
   const roboticsQuizzes = ROBOTICS_STEAM_COURSE.lessons.filter((l) => l.quiz).length;
   const youngMakersQuizzes = AI_YOUNG_MAKERS_COURSE.lessons.filter((l) => l.quiz).length;
   const entrepreneursQuizzes = AI_ENTREPRENEURS_COURSE.lessons.filter((l) => l.quiz).length;
