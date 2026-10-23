@@ -90,9 +90,9 @@ import type { AuthoredCourse } from "./authored-course";
 // every lesson; flush-left single-line `:::reveal q ||| a`; a `## Vocabulary` block of 3-6
 // lesson-specific terms; APA 7 `## Sources`; a quiz per teaching section (pool 48, serving 5,
 // passing 80, shuffled) plus a final pooling 41 and serving 10, placed LAST; every question carries
-// `explanation` + `sourceLessonSlug`. Correct options are written SHORT and distractors long and
-// specifically wrong, so check-longest-option passes by construction. No em dashes anywhere a
-// learner reads.
+// `explanation` + `sourceLessonSlug`. Option lengths are balanced so the correct answer is as often
+// long as short (`check-longest-option`, `check-shortest-option` and `check-length-balance` all
+// pass), with distractors specifically wrong. No em dashes anywhere a learner reads.
 export const THE_PARTNER_AND_THE_PRIZE_COURSE: AuthoredCourse = {
   title: "The Partner and the Prize: Denise Scott Brown, One Firm, and a Citation That Named Her",
   description:
@@ -214,10 +214,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "How does this course describe a prize naming a laureate and a partnership having partners?",
             options: [
-              "Two different questions",
-              "Two descriptions of the same underlying fact about who did the work",
-              "Two formats that must always produce the same list of names",
-              "Two decisions taken by the same body at different moments",
+              "Two different questions, both answered on one page",
+              "Two descriptions of one fact",
+              "Two formats that must match",
+              "Two decisions by one body",
             ],
             correctIndex: 0,
             explanation:
@@ -227,10 +227,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What does the order of words in the sentence introducing her show?",
             options: [
-              "What the writer treated as primary",
+              "What the writer treated as the primary fact about her",
               "Which of her four occupations the prize considered most relevant",
-              "The sequence in which the jury learned the facts about the firm",
-              "The order in which the names appear on the firm's own letterhead",
+              "The order the jury learned the facts",
+              "The order of the firm's letterhead",
             ],
             correctIndex: 0,
             explanation:
@@ -292,10 +292,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What phrase does the 1991 jury citation use for Denise Scott Brown?",
             options: [
-              "His talented partner",
-              "An associate of the office who contributed to the theoretical writings only",
-              "A co-laureate of the prize, named alongside him in the award itself",
-              "The junior member of a practice whose direction he alone established",
+              "His talented partner, Denise Scott Brown",
+              "An associate of the office",
+              "A co-laureate of the prize",
+              "A junior member",
             ],
             correctIndex: 0,
             explanation:
@@ -306,7 +306,7 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "According to the jury citation, what did that complemented understanding of urban context result in?",
             options: [
               "Changing the course of architecture",
-              "The founding of a new school of planning inside a university department",
+              "A new school of planning",
               "A series of prizes awarded to the firm rather than to any individual",
               "A revision of the rules by which the prize itself selects its laureates",
             ],
@@ -318,9 +318,9 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What makes the 1991 laureate page unusual as evidence in a credit question?",
             options: [
-              "Both halves sit on one page",
-              "It was written years afterwards by a historian with access to the jury's minutes",
-              "It contradicts itself, naming two laureates in one place and one in another",
+              "Both halves sit on one page published by the prize",
+              "A historian wrote it from jury minutes",
+              "It names two laureates in two places",
               "It was published by a newspaper rather than by the body that made the decision",
             ],
             correctIndex: 0,
@@ -332,9 +332,9 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "Which claim does this course explicitly refuse to make?",
             options: [
               "That the jury judged his work wrongly",
-              "That the prize named one laureate in 1991 rather than two",
-              "That the citation mentions Denise Scott Brown by name at all",
-              "That a firm partnership and a prize answer different questions",
+              "That one laureate was named",
+              "That the citation names her",
+              "That firm and prize differ",
             ],
             correctIndex: 0,
             explanation:
@@ -344,9 +344,9 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What does this course say about what the 1991 jury discussed?",
             options: [
-              "No source it read says",
+              "No source it read says what was discussed",
               "The jury's minutes were published in full alongside the citation that year",
-              "A member of the jury later described the discussion in a signed article",
+              "A juror later described it",
               "The 2013 letter reconstructs the discussion paragraph by paragraph",
             ],
             correctIndex: 0,
@@ -357,10 +357,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "Which course in this catalog teaches how a building comes to be credited to a firm?",
             options: [
-              "The Name on the Door",
-              "Who Signs the Print, whose subject is printmaking rather than buildings",
+              "The Name on the Door, lesson 1",
+              "Who Signs the Print",
               "The Paper and the Prize, whose subject is a scientific publication",
-              "Who Gets Named, which covers the general frame and no architecture at all",
+              "Who Gets Named",
             ],
             correctIndex: 0,
             explanation:
@@ -371,9 +371,9 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "Which four kinds of document does this course read closely?",
             options: [
               "A citation, an account, a letter, a rule",
-              "A contract, a building permit, a planning application and a court judgement",
-              "A newspaper report, a memoir, a photograph and an oral history recording",
-              "A patent, a licence, a professional register and an insurance schedule",
+              "A contract, a permit, a deed",
+              "A memoir, a photo, an interview",
+              "A patent, a register, a policy",
             ],
             correctIndex: 0,
             explanation:
@@ -386,7 +386,7 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
               "Architecture's highest award",
               "The only award in the profession open to practices as well as individuals",
               "The oldest continuously awarded honour in the history of the discipline",
-              "An award given for a single building rather than for a body of work",
+              "Its oldest award",
             ],
             correctIndex: 0,
             explanation:
@@ -397,8 +397,8 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "How does the 1991 announcement describe how Venturi identified himself?",
             options: [
               "As a Philadelphia architect",
-              "As a theorist first and a practising architect only second",
-              "As a planner whose work belongs to the discipline of urban design",
+              "As a theorist",
+              "As a planner",
               "As the head of a partnership rather than as an individual designer",
             ],
             correctIndex: 0,
@@ -409,10 +409,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What does the course mean by calling the single-name award the record rather than a gap?",
             options: [
-              "The documents are complete",
-              "That the missing pages of the jury's file were recovered and published later",
-              "That a correction was issued by the prize and added to the same page",
-              "That no institution has ever published anything about the 1991 decision",
+              "The documents are complete, with nothing hidden",
+              "Lost jury pages were later found",
+              "The prize issued a correction",
+              "Nothing was ever published on 1991",
             ],
             correctIndex: 0,
             explanation:
@@ -422,9 +422,9 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What is the risk of reconstructing a jury's deliberation from its citation?",
             options: [
-              "It invents the evidence",
-              "It takes longer than reading the citation and produces the same conclusion",
-              "It is permitted only when the jury has published a dissenting opinion",
+              "It invents a record that does not exist",
+              "It takes longer, same result",
+              "It needs a dissent first",
               "It makes the citation unusable for any other purpose afterwards",
             ],
             correctIndex: 0,
@@ -435,10 +435,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What should a learner be able to do with any of these documents by the end of the course?",
             options: [
-              "Say what it establishes",
+              "Say what it establishes and what it merely asserts",
               "Estimate how many people signed the petition in the month it was launched",
               "Recite the full membership of every Pritzker jury since the prize began",
-              "Predict which architects will receive the award in coming years",
+              "Predict future laureates",
             ],
             correctIndex: 0,
             explanation:
@@ -474,10 +474,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "Which of the three words the 1991 page uses for Scott Brown is a checkable claim about a business?",
             options: [
-              "Partner in the firm",
-              "Wife, which is the first description the page offers of her",
-              "Collaborator in the evolution of architectural theory and design",
-              "Educator, which appears in the list of her four occupations",
+              "Partner in the firm since 1969",
+              "Wife",
+              "Collaborator",
+              "Educator",
             ],
             correctIndex: 0,
             explanation:
@@ -501,8 +501,8 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "Which of the three words is an evaluative claim rather than a record?",
             options: [
               "Collaborator in a theory",
-              "Partner in the firm since 1969, which is dated to a specific year",
-              "Wife, which describes a legal relationship registered by a public authority",
+              "Partner",
+              "Wife",
               "Architect, which is a title regulated by a licensing board in every state",
             ],
             correctIndex: 0,
@@ -515,7 +515,7 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             options: [
               "Venturi, Scott Brown and Izenour",
               "Venturi, Scott Brown and Rauch, matching an earlier version of the firm name",
-              "Venturi alone, with the other contributors named only in the acknowledgements",
+              "Venturi alone",
               "Scott Brown and Izenour, with Venturi credited as the editor of the volume",
             ],
             correctIndex: 0,
@@ -539,10 +539,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What does a three-name book credit beside a one-name prize on the same page demonstrate?",
             options: [
-              "Formats differ in purpose",
-              "That the prize jury had not read the book before reaching its decision",
-              "That the publisher and the prize disagreed about who did the design work",
-              "That one of the two credits must contain a factual error requiring correction",
+              "Formats differ in purpose, not in who did the work",
+              "The jury had not read the book",
+              "Publisher and prize disagreed",
+              "One of the two credits is wrong",
             ],
             correctIndex: 0,
             explanation:
@@ -553,8 +553,8 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "How does The Cultural Landscape Foundation describe the firm's principals?",
             options: [
               "Venturi and Scott Brown",
-              "A rotating group of senior associates with no single named head",
-              "Venturi alone, with Scott Brown described as a consulting planner",
+              "No named head",
+              "Venturi alone",
               "The surviving partners of a practice that has since been dissolved",
             ],
             correctIndex: 0,
@@ -566,9 +566,9 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "What does The Cultural Landscape Foundation say the firm was formerly known as?",
             options: [
               "Venturi, Rauch and Scott Brown",
-              "Venturi and Associates, before any partner's name was added to it",
-              "The Philadelphia Planning Office, before it became an architectural practice",
-              "Scott Brown, Izenour and Venturi, in the order the book credits run",
+              "Venturi and Partners",
+              "Philadelphia Planning",
+              "Izenour and Venturi",
             ],
             correctIndex: 0,
             explanation:
@@ -579,8 +579,8 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "Why does this course decline to print the years in which the firm's name changed?",
             options: [
               "The archive page would not open",
-              "Because the firm has asked that its earlier names not be repeated anywhere",
-              "Because the dates are disputed between two institutions that both published them",
+              "The firm forbade it",
+              "The dates are disputed",
               "Because the name changes happened after the period this course covers",
             ],
             correctIndex: 0,
@@ -592,7 +592,7 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "What question is a firm name built to answer?",
             options: [
               "Who owns and who is liable",
-              "Which individual drew the largest share of a given building's design",
+              "Who drew the most",
               "Which employees were present in the office when a commission was won",
               "Whom a jury of outside experts considers the most accomplished designer",
             ],
@@ -617,10 +617,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What question is a jury citation built to answer?",
             options: [
-              "Why the jury chose",
-              "How many votes each candidate received in the final round of selection",
-              "Which of the candidates the jury considered and then set aside",
-              "What the prize's founding purpose said at the time it was established",
+              "Why the jury chose, stated as published reasons",
+              "How many votes each candidate got",
+              "Which candidates were set aside",
+              "What the founding purpose said",
             ],
             correctIndex: 0,
             explanation:
@@ -630,9 +630,9 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What should you establish about a credit line before reading it for content?",
             options: [
-              "Which question it answers",
-              "How many people were working in the office during the year it was issued",
-              "Whether the person named has received other awards for the same work",
+              "Which question its format was built to answer",
+              "How many worked in the office",
+              "Whether the person won other awards",
               "Whether the institution issuing it still exists in its original form",
             ],
             correctIndex: 0,
@@ -646,7 +646,7 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
               "When the format was meant to hold it",
               "Whenever the person left out can show they worked on the project at all",
               "Whenever a later institution issues a different credit for the same work",
-              "Whenever the omission was noticed by more than one published critic",
+              "Whenever critics noticed",
             ],
             correctIndex: 0,
             explanation:
@@ -656,10 +656,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What kind of evidence could confirm or refute the claim that she was a partner from 1969?",
             options: [
-              "A firm's own records",
-              "The recollection of a critic who reviewed the practice's work at the time",
-              "The order in which names appear on the jacket of a published book",
-              "The wording of a prize citation written more than twenty years afterwards",
+              "A firm's own records of the ownership stake",
+              "A critic's recollection",
+              "A book jacket's name order",
+              "A later prize citation",
             ],
             correctIndex: 0,
             explanation:
@@ -683,8 +683,8 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "What is the difference between a registry and a prize?",
             options: [
               "A registry records, a prize chooses",
-              "A registry is published annually while a prize may be awarded at any time",
-              "A registry is compiled by a government and a prize by a private foundation",
+              "A registry is annual",
+              "A registry is governmental",
               "A registry lists buildings and a prize lists only the people who financed them",
             ],
             correctIndex: 0,
@@ -709,7 +709,7 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "Which phrase in the current purpose wording permits more than one name?",
             options: [
               "Architect or architects",
-              "Whose built work, which covers everything a practice has completed together",
+              "Built work",
               "Generally acknowledged, which allows the jury to follow published opinion",
               "Total body of work, which is the standard the 2013 letter names",
             ],
@@ -721,10 +721,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "Why does this course refuse to claim that the purpose wording was the same in 1991?",
             options: [
-              "It did not read the 1991 text",
-              "Because the prize has confirmed that the wording was rewritten in the 1990s",
-              "Because the current page carries a note saying the wording changed in 2002",
-              "Because two institutions publish different versions of the same sentence",
+              "It did not read the text in force in 1991",
+              "The prize says it was rewritten",
+              "A note dates the change to 2002",
+              "Two bodies publish two versions",
             ],
             correctIndex: 0,
             explanation:
@@ -737,7 +737,7 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
               "The Paper and the Prize, lesson 5",
               "The Name on the Door, lesson 1, on the credited unit being a firm",
               "Who Signs the Print, lesson 22, on two corrections that actually happened",
-              "Who Gets Named, lesson 9, on the second mechanism a historian identified",
+              "Who Gets Named, lesson 9",
             ],
             correctIndex: 0,
             explanation:
@@ -747,10 +747,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What is the narrower and answerable question this course asks about 1991?",
             options: [
-              "What determined the number of names",
-              "Whether the jury had access to the firm's ownership documents that year",
-              "Whether the citation was written before or after the laureate was chosen",
-              "Whether the prize should be abolished and replaced with a firm-level award",
+              "What determined that 1991 carried only one name",
+              "Whether the jury saw ownership papers",
+              "Whether the citation came first",
+              "Whether to abolish the prize",
             ],
             correctIndex: 0,
             explanation:
@@ -761,8 +761,8 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "Which question does this course say cannot be settled from documents?",
             options: [
               "Whether she was good enough",
-              "Whether the prize's current purpose wording permits more than one name",
-              "Whether the 2013 jury chair signed the refusal letter on behalf of a jury",
+              "If two may win",
+              "Who signed in 2013",
               "Whether the prize has ever named more than one laureate in a single year",
             ],
             correctIndex: 0,
@@ -786,9 +786,9 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "Why does this case test that remedy?",
             options: [
-              "She did own the firm",
+              "She did own the firm, as a partner since 1969",
               "Because the firm never carried the name of more than one of its partners",
-              "Because the practice was dissolved before the prize was announced",
+              "The practice dissolved first",
               "Because the remedy was proposed only after the 2013 petition was written",
             ],
             correctIndex: 0,
@@ -800,9 +800,9 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
             prompt: "Why did owning the firm not settle what the prize would name?",
             options: [
               "A prize is not a property record",
-              "Because the prize requires proof of ownership filed before the closing date",
-              "Because ownership stakes are confidential and juries cannot obtain them",
-              "Because the firm's ownership changed in the year the prize was decided",
+              "It needed filed proof",
+              "Stakes are confidential",
+              "The owners changed",
             ],
             correctIndex: 0,
             explanation:
@@ -812,9 +812,9 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What is the two-directional error lesson 3 warns about?",
             options: [
-              "Treating a prize as proof",
-              "Assuming a jury citation was written by somebody outside the jury",
-              "Reading a firm name as a list of everyone employed by the practice",
+              "Treating a prize, or its absence, as proof",
+              "Thinking outsiders wrote it",
+              "Reading a firm name as staff list",
               "Confusing a book credit with the order in which chapters were drafted",
             ],
             correctIndex: 0,
@@ -825,10 +825,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "A credit line is evidence about what?",
             options: [
-              "The thing it records",
+              "The thing it was designed to record",
               "Everything that happened inside the practice during the year it was issued",
               "The relative standing of the people named and the people left out",
-              "The quality of the work, as judged by the profession as a whole",
+              "The quality of the work",
             ],
             correctIndex: 0,
             explanation:
@@ -864,10 +864,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "Who decides how many names an award can carry?",
             options: [
-              "The granting body",
-              "The candidates, who may request a joint award when they apply together",
-              "The professional institute that licenses architects in the relevant country",
-              "The press, by convention, following whichever wording it prints first",
+              "The institution that grants the award",
+              "The candidates themselves",
+              "The licensing institute",
+              "The press, by convention",
             ],
             correctIndex: 0,
             explanation:
@@ -877,10 +877,10 @@ Pritzker Architecture Prize. (n.d.-d). *About the prize*. The Hyatt Foundation. 
           {
             prompt: "What does lesson 3 mean by a registry?",
             options: [
-              "A record of what happened",
-              "A published list of everyone licensed to practise in a given jurisdiction",
+              "A record that tries to capture what happened",
+              "A list of licensed practitioners",
               "A catalogue of buildings maintained by the institution that commissioned them",
-              "An index of prize citations kept by the body that awards them",
+              "An index of citations",
             ],
             correctIndex: 0,
             explanation:
@@ -1004,10 +1004,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "How long did she delay publication of the article she wrote in 1975?",
             options: [
-              "More than a decade",
-              "A few months, while the collection she contributed to was assembled",
-              "Two years, until the firm had completed the project she describes",
-              "She did not delay it, since it appeared in the year it was written",
+              "More than a decade, from 1975 to 1989",
+              "A few months",
+              "Two years",
+              "She did not delay it",
             ],
             correctIndex: 0,
             explanation:
@@ -1018,8 +1018,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does lesson 7 say the information sheet is an example of?",
             options: [
               "A procedure, not a grievance",
-              "A contract binding every publisher that receives a copy of it",
-              "A complaint made to a professional body about a misattribution",
+              "A binding contract",
+              "A formal complaint",
               "A correction issued after a credit line had already been printed",
             ],
             correctIndex: 0,
@@ -1046,7 +1046,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "The Alliance of Women in Architecture, New York",
               "The American Institute of Architects at its annual convention in Detroit",
               "The Harvard Graduate School of Design, at a lunch honouring women",
-              "The Pritzker jury, in a submission made on behalf of the firm",
+              "The Pritzker jury, by submission",
             ],
             correctIndex: 0,
             explanation:
@@ -1082,10 +1082,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "In which collection did the essay first appear?",
             options: [
-              "Architecture: A Place for Women",
-              "Learning from Las Vegas, the book the prize's own page describes",
-              "Complexity and Contradiction in Architecture, the 1966 theoretical work",
-              "Pioneering Women of American Architecture, a later biographical project",
+              "Architecture: A Place for Women (1989)",
+              "Learning from Las Vegas",
+              "Complexity and Contradiction",
+              "Pioneering Women",
             ],
             correctIndex: 0,
             explanation:
@@ -1095,10 +1095,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "Who edited the collection in which the essay first appeared?",
             options: [
-              "Berkeley and McQuaid",
-              "Venturi and Izenour, who are credited on the earlier Las Vegas book",
+              "Berkeley and McQuaid, per the source note",
+              "Venturi and Izenour",
               "The editors of the Japanese journal that printed the disputed attribution",
-              "The publisher Praeger, in the interview series she describes elsewhere",
+              "The publisher Praeger",
             ],
             correctIndex: 0,
             explanation:
@@ -1108,8 +1108,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "Where does the source note say the essay was reprinted in 2009?",
             options: [
-              "AA Words Four: Having Words",
-              "Architecture and Urbanism, the Japanese journal named in the essay",
+              "AA Words Four: Having Words, pages 79 to 89",
+              "Architecture and Urbanism",
               "The proceedings of the Alliance of Women in Architecture talk series",
               "A Smithsonian Institution Press anthology of postwar planning essays",
             ],
@@ -1122,9 +1122,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which reprint of the essay did this course read?",
             options: [
               "The one published by MAS Context",
-              "A scanned copy of the 1975 typescript held in a university archive",
-              "The Smithsonian Institution Press first edition of the 1989 collection",
-              "An abridged version printed by a trade magazine in June 2013",
+              "The 1975 typescript",
+              "The 1989 first edition",
+              "A 2013 trade magazine",
             ],
             correctIndex: 0,
             explanation:
@@ -1135,8 +1135,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why does she say she decided not to publish the article when she wrote it?",
             options: [
               "She judged the reception would be hostile",
-              "Because her firm's partners asked her to withdraw it before it went to press",
-              "Because the journal that had commissioned it declined to run the piece",
+              "Her partners asked her to",
+              "The journal declined it",
               "Because she intended to expand it into a book and never found the time",
             ],
             correctIndex: 0,
@@ -1149,7 +1149,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "Her career and her firm's prospects",
               "The standing of the Alliance of Women in Architecture among practitioners",
-              "The sales of the books the firm had already published with a trade press",
+              "The firm's book sales",
               "The chances of the collection finding an academic publisher at all",
             ],
             correctIndex: 0,
@@ -1160,10 +1160,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What is the 1975 essay direct evidence of?",
             options: [
-              "Her own judgement of the risk",
-              "The decisions taken by publishers about her name in the years that followed",
-              "The reception her ideas would in fact have met had she published them",
-              "The reasons the 1991 jury gave for naming a single laureate",
+              "Her own judgement of the risk of publishing",
+              "Publishers' later decisions",
+              "The reception she would have met",
+              "The 1991 jury's reasons",
             ],
             correctIndex: 0,
             explanation:
@@ -1174,8 +1174,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What is the essay not evidence of?",
             options: [
               "That the cost would have been paid",
-              "That she wrote the article in 1975 and published it fourteen years later",
-              "That she considered the professional risk serious enough to act on",
+              "That she wrote it in 1975",
+              "That she judged it risky",
               "That the essay describes a practice she called the star system",
             ],
             correctIndex: 0,
@@ -1187,9 +1187,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does this course mean by testimony?",
             options: [
               "A first-hand account by an interested party",
-              "A statement given under oath before a tribunal with the power to compel it",
-              "A neutral finding published by an institution with no stake in the outcome",
-              "A summary of events assembled by a historian long after they happened",
+              "Sworn evidence before a tribunal",
+              "A neutral institutional finding",
+              "A historian's later summary",
             ],
             correctIndex: 0,
             explanation:
@@ -1202,7 +1202,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "That she wrote it, and what it says",
               "That every publisher named in it acted with an intent to exclude her",
               "That the profession as a whole would have punished her for publishing",
-              "That the 1991 jury had read it before reaching its decision",
+              "That the jury had read it",
             ],
             correctIndex: 0,
             explanation:
@@ -1213,9 +1213,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does this course decline to treat the essay as establishing?",
             options: [
               "That each episode happened as told",
-              "That the essay was first published in a 1989 collection of essays",
-              "That the author describes a practice she names the star system",
-              "That she delayed publication by more than a decade",
+              "That it appeared in 1989",
+              "That it names a system",
+              "That she delayed a decade",
             ],
             correctIndex: 0,
             explanation:
@@ -1225,9 +1225,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "Why does the chronology of the essay matter to this course?",
             options: [
-              "It predates the 1991 prize",
-              "Because it was written after the petition and so responds directly to it",
-              "Because it was published in the same month the jury announced its choice",
+              "It was written and published before the 1991 prize",
+              "It answers the petition",
+              "It came out with the prize",
               "Because the firm was renamed in the year the essay finally appeared",
             ],
             correctIndex: 0,
@@ -1266,8 +1266,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "Architecture and Urbanism",
               "Architectural Record, the American trade magazine that covered the petition",
-              "MAS Context, which later reprinted the essay in full",
-              "AA Words Four, the collection that carried the 2009 reprint",
+              "MAS Context",
+              "AA Words Four",
             ],
             correctIndex: 0,
             explanation:
@@ -1277,10 +1277,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What does she say about the Crosstown Community itself?",
             options: [
-              "It was her work",
+              "That it was her own work",
               "That it was a joint project on which the two partners spent equal time",
               "That it was designed by an associate and credited to the firm as a whole",
-              "That it was never built and so should not have been discussed at all",
+              "It went unbuilt",
             ],
             correctIndex: 0,
             explanation:
@@ -1329,10 +1329,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What does she say happened after the complaint about the jacket?",
             options: [
-              "Praeger added her name",
-              "The publisher withdrew the volume and reissued it under a different title",
-              "The publisher refused and the jacket was printed without her name",
-              "The firm bought the remaining stock and reprinted the jacket itself",
+              "Praeger added her name to the dust jacket",
+              "The volume was reissued",
+              "Praeger refused outright",
+              "The firm reprinted the jacket",
             ],
             correctIndex: 0,
             explanation:
@@ -1345,7 +1345,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "That it would spoil the cover design",
               "That the interviews inside the book had been conducted with him alone",
               "That the book was already printed and could not economically be changed",
-              "That the series had a standing rule against listing more than eight names",
+              "An eight-name series rule",
             ],
             correctIndex: 0,
             explanation:
@@ -1356,9 +1356,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does she say the inside flap of that book still said?",
             options: [
               "Eight architects, and the men behind",
-              "That the volume collected the work of a single Philadelphia practice",
-              "That the interviews had been edited by the architects themselves",
-              "That the list of contributors was provisional and subject to correction",
+              "One Philadelphia practice",
+              "Edited by the architects",
+              "Provisional contributors",
             ],
             correctIndex: 0,
             explanation:
@@ -1381,9 +1381,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What does the Praeger episode illustrate about corrections?",
             options: [
-              "A partial correction",
-              "That a publisher will always refuse a request to change a printed book",
-              "That a complaint about a credit line is never acted on in practice",
+              "A partial correction that missed the flap copy",
+              "Publishers always refuse changes",
+              "Complaints are never acted on",
               "That corrections are more effective when made by an outside institution",
             ],
             correctIndex: 0,
@@ -1394,10 +1394,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "Who made the attribution decisions in the two episodes she records?",
             options: [
-              "A journal and a publisher",
-              "The firm's own partners, applying the practice's internal credit policy",
-              "The prize jury, in the citation it published for that year's laureate",
-              "A licensing board, which recorded who was architect of record",
+              "A journal and a publisher, outside the firm",
+              "The firm's own partners",
+              "The prize jury",
+              "A licensing board",
             ],
             correctIndex: 0,
             explanation:
@@ -1408,7 +1408,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does lesson 6 say neither episode is?",
             options: [
               "An accusation against the firm",
-              "A claim that can be checked against a published artefact by a reader",
+              "A checkable claim",
               "An example of a credit decision made outside the practice itself",
               "A case in which a complaint produced at least a partial correction",
             ],
@@ -1421,9 +1421,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "How would a reader verify the journal episode for themselves?",
             options: [
               "Read the issue and the book",
-              "Ask the firm to supply its internal file on the project in question",
+              "Ask the firm",
               "Compare the prize citation of 1991 with the jury citation of 2013",
-              "Consult the licensing board's record of who was architect of record",
+              "Ask the board",
             ],
             correctIndex: 0,
             explanation:
@@ -1433,10 +1433,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What did this course do about verifying the two episodes?",
             options: [
-              "It did not verify them",
-              "It obtained both artefacts and confirmed each detail against them",
-              "It asked the publisher to confirm the wording of the flap copy",
-              "It relied on a second author who had examined the same journal issue",
+              "It did not verify them, and labels them her account",
+              "It confirmed both against the artefacts",
+              "It asked the publisher to confirm",
+              "It relied on a second author",
             ],
             correctIndex: 0,
             explanation:
@@ -1447,7 +1447,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does this course mean by laundering testimony?",
             options: [
               "Dropping the attribution",
-              "Quoting a source at greater length than the argument actually requires",
+              "Over-quoting",
               "Correcting an obvious typographical error before quoting a passage",
               "Citing a reprint rather than the first printed edition of a text",
             ],
@@ -1460,9 +1460,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why is testimony that names artefacts more useful than a general complaint?",
             options: [
               "Someone else can go and read them",
-              "Because a named artefact makes the account more persuasive to a jury",
-              "Because it shows the writer kept records at the time of the events",
-              "Because publishers are obliged to preserve anything a critic has named",
+              "It persuades a jury more",
+              "She kept records then",
+              "Publishers must keep it",
             ],
             correctIndex: 0,
             explanation:
@@ -1485,9 +1485,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What does she say the office handed out to avoid misattributions?",
             options: [
-              "An information sheet",
-              "A signed contract binding every publisher who covered the firm's work",
-              "A press release issued whenever a project reached completion",
+              "An information sheet on preferred attribution",
+              "A signed publisher contract",
+              "A press release per project",
               "A list of approved critics permitted to write about the practice",
             ],
             correctIndex: 0,
@@ -1512,7 +1512,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "According to that sheet, how was the writing to be credited?",
             options: [
               "To whoever signed it",
-              "To the firm, on the same basis as the built work it described",
+              "To the firm",
               "To the journal that commissioned and first published the piece",
               "To both partners jointly, regardless of who had drafted the text",
             ],
@@ -1538,9 +1538,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why does the course print the garbled word rather than repairing it?",
             options: [
               "Silent fixes let inventions into a record",
-              "Because copyright rules forbid altering a single word of a quoted passage",
-              "Because the author has asked that the reprint be quoted exactly as issued",
-              "Because the correct word cannot be guessed from the surrounding sentence",
+              "Copyright forbids any alteration",
+              "The author asked for it",
+              "The right word cannot be guessed",
             ],
             correctIndex: 0,
             explanation:
@@ -1552,8 +1552,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "The firm that writes it",
               "Every publication that reports on the firm's completed projects",
-              "Any prize jury considering the firm's work for an award",
-              "The critics whose reviews the firm agrees to cooperate with",
+              "Any prize jury",
+              "Its critics",
             ],
             correctIndex: 0,
             explanation:
@@ -1564,7 +1564,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which parties does lesson 7 say an attribution policy cannot bind?",
             options: [
               "Critics, journals, publishers and juries",
-              "The employees of the practice that issued the policy in the first place",
+              "The practice's own employees",
               "The partners who signed the policy and circulated it to the press",
               "Anyone who has been sent a copy of the sheet and acknowledged it",
             ],
@@ -1590,8 +1590,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which lesson in the public architecture course establishes that the credited unit is a firm?",
             options: [
               "The Name on the Door, lesson 1",
-              "Who Signs the Print, lesson 22, on two corrections that actually happened",
-              "Who Gets Named, lesson 21, on who corrects a record and with what",
+              "Who Signs the Print",
+              "Who Gets Named",
               "The Paper and the Prize, lesson 5, on the paper and the prize",
             ],
             correctIndex: 0,
@@ -1615,10 +1615,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What is missing from that sentence about being manufactured into a guru?",
             options: [
-              "A named subject",
-              "A date, without which the episode cannot be placed in the chronology",
-              "A citation, since the sentence appears in the reprint without attribution",
-              "An object, since the sentence never says what he was manufactured into",
+              "A named subject: who did the manufacturing",
+              "A date for the episode",
+              "A citation",
+              "An object",
             ],
             correctIndex: 0,
             explanation:
@@ -1628,9 +1628,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What rule does this course follow about motive?",
             options: [
-              "Say what the record shows",
-              "Prefer the explanation that the largest number of published sources agree on",
-              "Attribute a motive whenever the pattern of events makes one obvious",
+              "Say what the record shows, not a motive",
+              "Follow the most sources",
+              "Attribute obvious motives",
               "Report the motive the person affected believed was at work",
             ],
             correctIndex: 0,
@@ -1644,7 +1644,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "Publications printing one name",
               "A coordinated decision by several institutions to promote one of the partners",
               "A firm policy that deliberately routed public credit to a single partner",
-              "A jury that considered and rejected the possibility of a joint award",
+              "A jury's rejection",
             ],
             correctIndex: 0,
             explanation:
@@ -1655,9 +1655,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does lesson 7 mean by editorial control?",
             options: [
               "The power over what gets printed",
-              "The right of an author to approve changes before a piece is published",
-              "The authority of a professional body to discipline its own members",
-              "The ability of a firm to withhold images from a publication",
+              "Author approval rights",
+              "Professional discipline",
+              "Withholding images",
             ],
             correctIndex: 0,
             explanation:
@@ -1667,9 +1667,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What does this course mean by fidelity to a source?",
             options: [
-              "Quoting it as it stands",
-              "Quoting only from first editions rather than from later reprints",
-              "Citing every source in the same bibliographic style throughout",
+              "Quoting it as it stands, errors flagged",
+              "First editions only",
+              "One citation style",
               "Preferring the source closest in time to the events described",
             ],
             correctIndex: 0,
@@ -1680,10 +1680,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What does the information sheet show about the common advice to write credits down in advance?",
             options: [
-              "It reaches only the firm",
-              "That it works whenever the document is circulated widely enough in advance",
-              "That it is unnecessary once a practice is named after both of its partners",
-              "That it binds a prize jury from the moment the jury receives a copy",
+              "It reaches only the firm, not those who print credits",
+              "It works if circulated widely enough",
+              "Two-partner names make it unnecessary",
+              "It binds a jury once received",
             ],
             correctIndex: 0,
             explanation:
@@ -1826,9 +1826,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What pair of judgements does lesson 9 ask you to hold together about the petition?",
             options: [
-              "Effective and weak",
+              "Effective as an instrument, weak as proof",
               "Accurate and incomplete, since it stated only part of the record",
-              "Popular and unlawful, since a jury cannot be petitioned at all",
+              "Popular and unlawful",
               "Early and late, since it came both too soon and too long afterwards",
             ],
             correctIndex: 0,
@@ -1840,9 +1840,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "Why does lesson 10 call a written reply from a jury unusual?",
             options: [
               "Most institutions say nothing",
-              "Because juries are forbidden by their own rules from corresponding",
-              "Because a written reply commits an institution to reopening the file",
-              "Because the reply must be approved by every previous jury chair",
+              "Rules forbid replies",
+              "It reopens the file",
+              "All chairs sign off",
             ],
             correctIndex: 0,
             explanation:
@@ -1853,8 +1853,8 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What does lesson 11 mean by an available defence?",
             options: [
               "A reason that could have been given and was not",
-              "A rule an institution must cite whenever it refuses a request",
-              "An argument the petitioners failed to anticipate in their letter",
+              "A rule cited in every refusal",
+              "An unanticipated argument",
               "A precedent the institution has relied on in a previous year",
             ],
             correctIndex: 0,
@@ -1868,7 +1868,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
               "The Harvard Graduate School of Design",
               "The University of Pennsylvania school of architecture, where the firm was based",
               "The Architectural Association in London, which had hosted the interview",
-              "Yale University, whose press had published the firm's earlier writings",
+              "Yale University",
             ],
             correctIndex: 0,
             explanation:
@@ -1878,10 +1878,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What does Architectural Record give as the trigger for the petition?",
             options: [
-              "A videotaped interview",
-              "The publication of her 1975 essay in a widely read collection",
-              "A newspaper obituary that credited the firm's work to one partner",
-              "A decision by the prize to revise its published purpose statement",
+              "A videotaped interview with Scott Brown",
+              "Her 1975 essay's publication",
+              "A newspaper obituary",
+              "A revised purpose statement",
             ],
             correctIndex: 0,
             explanation:
@@ -1918,9 +1918,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What is the petition's title?",
             options: [
               "Recognize Denise Scott Brown for the 1991 Prize",
-              "Award the Pritzker Architecture Prize to partnerships rather than individuals",
-              "Rewrite the eligibility rules of architecture's highest annual honour",
-              "Honour the women of architecture with a medal of their own",
+              "Award the prize to partnerships",
+              "Rewrite the eligibility rules",
+              "A medal for the women of architecture",
             ],
             correctIndex: 0,
             explanation:
@@ -1970,8 +1970,8 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "Why does this course attach a date to every signature figure it prints?",
             options: [
               "The total is a moving number",
-              "Because Change.org requires that any quoted total carry a timestamp",
-              "Because the different sources disagree about which total is correct",
+              "Change.org rules",
+              "Sources disagree",
               "Because the petition closed on a date that must accompany the count",
             ],
             correctIndex: 0,
@@ -1996,7 +1996,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "Which laureates does the April 2013 report name as signatories?",
             options: [
               "Venturi, Hadid, Koolhaas, Herzog and de Meuron",
-              "Bunshaft, Niemeyer, Sejima, Nishizawa and Vassal, from the multi-name years",
+              "Bunshaft, Niemeyer and Sejima",
               "Farrell, McNamara, Aranda, Pigem and Vilalta, from the later partnerships",
               "Lacaton, Vassal, Herzog, de Meuron and Palumbo, the last of them as chair",
             ],
@@ -2008,10 +2008,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What is notable about the 1991 laureate appearing on that list?",
             options: [
-              "He signed about his own prize",
-              "He was the only signatory who had never been awarded the prize himself",
-              "He signed on behalf of the firm rather than in a personal capacity",
-              "He withdrew his signature once the jury published its written reply",
+              "He signed a petition asking that his own prize be shared",
+              "He was the only signatory without the prize",
+              "He signed for the firm, not personally",
+              "He later withdrew his signature",
             ],
             correctIndex: 0,
             explanation:
@@ -2022,8 +2022,8 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What comment does the April 2013 report quote from the 1991 laureate on signing?",
             options: [
               "That she is his inspiring and equal partner",
-              "That the jury of 1991 had been given incomplete information about the firm",
-              "That the prize should in future be awarded to practices rather than people",
+              "The 1991 jury was misinformed",
+              "Practices should win, not people",
               "That he had asked the prize to add her name at the time of the award",
             ],
             correctIndex: 0,
@@ -2034,10 +2034,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Why does this course print five laureate signatories rather than a larger figure?",
             options: [
-              "Five is the figure it read",
-              "Because only five of the signatories were still living at the time of writing",
-              "Because the petition page lists exactly five laureates among its supporters",
-              "Because the jury's letter names five laureates and no others",
+              "Five is the figure it read, as of April 2013",
+              "Only five were still living",
+              "The page lists exactly five",
+              "The jury's letter names five",
             ],
             correctIndex: 0,
             explanation:
@@ -2048,7 +2048,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What is a petition evidence of?",
             options: [
               "That people signed a page",
-              "That the claim printed at the top of the page has been independently checked",
+              "That it is true",
               "That the institution addressed has accepted the request being made",
               "That a majority of the relevant profession holds the view expressed",
             ],
@@ -2060,9 +2060,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What is a petition not evidence of?",
             options: [
-              "That its claim is true",
-              "That a number of people were willing to add their names to a request",
-              "That the subject attracted public attention in the year it was launched",
+              "That the claim it makes is true",
+              "That people signed it",
+              "That it drew attention",
               "That an institution was asked, in public, to revisit an old decision",
             ],
             correctIndex: 0,
@@ -2073,10 +2073,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "In what sense does this course say the petition worked?",
             options: [
-              "It produced a written answer",
-              "It caused the prize to add a second name to the 1991 award",
-              "It changed the published eligibility wording of the prize itself",
-              "It persuaded a majority of living laureates to add their signatures",
+              "It produced a written answer from the jury",
+              "It added a second name to 1991",
+              "It changed the purpose wording",
+              "It won over most living laureates",
             ],
             correctIndex: 0,
             explanation:
@@ -2087,7 +2087,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What does lesson 9 say about an institution that reversed a decision because a signature count grew large enough?",
             options: [
               "It would be a worse institution",
-              "It would be following the ordinary practice of professional bodies",
+              "It would be ordinary",
               "It would be applying the standard the letter itself names",
               "It would be correcting an error that the record had already established",
             ],
@@ -2125,9 +2125,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Who signed the 2013 letter?",
             options: [
-              "Lord Peter Palumbo",
-              "J. Carter Brown, who had chaired the jury that met in 1991",
-              "Bill Lacy, listed as secretary to the jury on the 1991 citation page",
+              "Lord Peter Palumbo of the 2013 jury",
+              "J. Carter Brown",
+              "Bill Lacy",
               "Ada Louise Huxtable, the critic named among the 1991 jurors",
             ],
             correctIndex: 0,
@@ -2139,9 +2139,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "In what capacity does the signature block say he wrote?",
             options: [
               "Chair, on behalf of the jury",
-              "As an individual juror expressing a personal view on the request",
-              "As secretary to the jury, recording a decision taken by its members",
-              "As a trustee of the foundation that funds and administers the prize",
+              "An individual juror",
+              "Jury secretary",
+              "A trustee",
             ],
             correctIndex: 0,
             explanation:
@@ -2178,9 +2178,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What is the stated ground of the refusal?",
             options: [
               "A later jury cannot reopen an earlier one",
-              "That the prize may not under its rules name more than one person in a year",
+              "The rules cap it at one name",
               "That her built work had not yet been assessed by any jury of the prize",
-              "That the request arrived after the closing date for that year's cycle",
+              "The request was too late",
             ],
             correctIndex: 0,
             explanation:
@@ -2190,9 +2190,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What does the letter say about her eligibility going forward?",
             options: [
-              "She remains eligible",
+              "She remains eligible for the award",
               "That eligibility would require a fresh nomination from a national institute",
-              "That she is ineligible because the firm's work has already been honoured",
+              "She is now ineligible",
               "That the question of eligibility is one the jury declines to address",
             ],
             correctIndex: 0,
@@ -2204,9 +2204,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What standard does the letter name for the award?",
             options: [
               "An architect's total body of built work",
-              "The influence a body of theoretical writing has had on the profession",
-              "The number of completed commissions attributed to the individual alone",
-              "The judgement of the profession as expressed through its institutes",
+              "Influence of her writing",
+              "Solo completed commissions",
+              "The profession's judgement",
             ],
             correctIndex: 0,
             explanation:
@@ -2218,7 +2218,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             options: [
               "Discussions may reflect cultural biases",
               "That the 1991 jury reached the wrong decision on the evidence before it",
-              "That the prize's rules ought to be rewritten to permit joint awards",
+              "That the rules need rewriting",
               "That a previous jury failed to consider her contribution at all",
             ],
             correctIndex: 0,
@@ -2230,9 +2230,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What does the letter say the jury does where such bias occurs?",
             options: [
               "Takes such matters into account",
-              "Refers the question to the trustees of the foundation for a ruling",
+              "Refers it to trustees",
               "Reopens the file of the year in which the bias is alleged to have operated",
-              "Publishes a statement identifying the decision that was affected",
+              "Publishes a statement",
             ],
             correctIndex: 0,
             explanation:
@@ -2255,10 +2255,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Why does lesson 10 call a stated ground a gift to a reader?",
             options: [
-              "It can be examined",
-              "Because an institution that gives a reason is obliged to act on it later",
-              "Because a stated reason must be approved by the body's full membership",
-              "Because it commits the institution to reopening the matter if asked again",
+              "It can be examined against the facts",
+              "It obliges later action",
+              "Full membership approves it",
+              "It commits to reopening",
             ],
             correctIndex: 0,
             explanation:
@@ -2269,7 +2269,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "Why does this course quote only short excerpts of the letter?",
             options: [
               "It does not reproduce the letter whole",
-              "Because the reproduction it read is missing several of the paragraphs",
+              "Paragraphs are missing",
               "Because the letter's author has restricted quotation to single sentences",
               "Because the full text adds nothing that the excerpts do not already carry",
             ],
@@ -2295,8 +2295,8 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What is the skill in reading a document for what it does not contain?",
             options: [
               "Noticing defences that were not mounted",
-              "Counting the paragraphs and comparing them with the length of the request",
-              "Identifying which sections the publisher chose to leave out of a reproduction",
+              "Counting paragraphs",
+              "Finding cut sections",
               "Establishing which questions the petitioners forgot to put in writing",
             ],
             correctIndex: 0,
@@ -2308,9 +2308,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What is the trap that comes with that skill?",
             options: [
               "Treating silence as agreement",
-              "Reading a reproduction rather than the original document itself",
-              "Quoting a passage at greater length than the argument requires",
-              "Assuming the author of a letter also wrote the decision it refers to",
+              "Using a reproduction",
+              "Over-long quotation",
+              "Wrong authorship",
             ],
             correctIndex: 0,
             explanation:
@@ -2320,10 +2320,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Which of these does the 2013 letter not say?",
             options: [
-              "That she did not do the work",
+              "That she did not do the work at all",
               "That a later jury cannot reopen the decision of an earlier jury",
-              "That she remains eligible for the award in future years",
-              "That discussions may reflect biases underplaying a woman's role",
+              "That she remains eligible",
+              "That bias may occur",
             ],
             correctIndex: 0,
             explanation:
@@ -2334,7 +2334,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "How does the letter describe her career?",
             options: [
               "Long and distinguished",
-              "Promising, with the prospect of significant work still ahead of her",
+              "Promising",
               "Inseparable from that of her partner and impossible to assess alone",
               "Primarily theoretical rather than grounded in completed buildings",
             ],
@@ -2347,9 +2347,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "Which rule does the 2013 letter never mention?",
             options: [
               "Any cap on the number of names",
-              "The principle that a later jury does not revisit an earlier jury's work",
-              "The standard that the award rests on a total body of built work",
-              "The jury's obligation to weigh cultural bias where it appears",
+              "Finality of juries",
+              "A built-work standard",
+              "Weighing bias",
             ],
             correctIndex: 0,
             explanation:
@@ -2360,7 +2360,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "Why would a refusal letter be the natural place to name a rule capping the number of laureates?",
             options: [
               "It is the defence the request calls for",
-              "Because prize rules must be restated in full whenever a request is denied",
+              "Rules must be restated",
               "Because a petition is not valid unless the governing rule is quoted back",
               "Because the chair is required to list every rule the jury considered",
             ],
@@ -2372,9 +2372,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What does the letter say about the earlier jury's deliberation?",
             options: [
-              "Nothing at all",
-              "That the earlier jury considered a joint award and decided against it",
-              "That the earlier jury's minutes have been reviewed and found sound",
+              "Nothing at all; it declines to look inside",
+              "It considered a joint award",
+              "Its minutes were found sound",
               "That the earlier jury acted on incomplete information about the firm",
             ],
             correctIndex: 0,
@@ -2385,10 +2385,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What does the letter offer in place of a retroactive award?",
             options: [
-              "Continued eligibility",
-              "A separate honour created specifically to recognise collaborative practice",
-              "A statement to be added to the published citation of the earlier year",
-              "A review of the decision by an independent panel outside the jury",
+              "Continued eligibility for the same award",
+              "A new collaborative award",
+              "A note on the 1991 citation",
+              "An independent review panel",
             ],
             correctIndex: 0,
             explanation:
@@ -2400,7 +2400,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             options: [
               "The letter answered one request",
               "The reproduction may have omitted paragraphs present in the original",
-              "The chair wrote personally and could not speak for the whole jury",
+              "The chair spoke alone",
               "The letter was written before the petition had finished gathering names",
             ],
             correctIndex: 0,
@@ -2412,8 +2412,8 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What do the omissions actually establish?",
             options: [
               "That finality was the only stated ground",
-              "That the institution privately accepted the substance of the petition",
-              "That the jury had no rule available to it that could have been cited",
+              "Private acceptance",
+              "No rule could be cited",
               "That the earlier jury acted without considering the firm's partnership",
             ],
             correctIndex: 0,
@@ -2425,9 +2425,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What is an argument from silence?",
             options: [
               "An inference from what is absent",
-              "A refusal issued without any accompanying statement of reasons",
-              "A decision an institution declines to publish in any form at all",
-              "A quotation broken off before the end of the sentence being quoted",
+              "A reasonless refusal",
+              "An unpublished decision",
+              "A broken-off quotation",
             ],
             correctIndex: 0,
             explanation:
@@ -2438,8 +2438,8 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What separates a fair reading of a document from an unfair one?",
             options: [
               "What the author is committed to",
-              "Whether the reader agrees with the outcome the document announces",
-              "Whether the reading was made from an original or from a reproduction",
+              "Agreeing with it",
+              "Original or copy",
               "How many independent sources the reader consulted before deciding",
             ],
             correctIndex: 0,
@@ -2450,10 +2450,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Which lesson elsewhere in this catalog works through what it takes to correct a record?",
             options: [
-              "Who Gets Named, lesson 21",
+              "Who Gets Named, lesson 21, on corrections",
               "The Name on the Door, lesson 1, on the credited unit being a firm",
               "The Paper and the Prize, lesson 5, on a paper and a prize disagreeing",
-              "Who Signs the Print, lesson 2, on what a signature certifies",
+              "Who Signs the Print, lesson 2",
             ],
             correctIndex: 0,
             explanation:
@@ -2578,9 +2578,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What does lesson 13 mean by unprecedented in kind?",
             options: [
               "Never done in that form before",
-              "Done before, but not within the lifetime of the current jury",
-              "Done so rarely that an institution may treat it as impossible",
-              "Recorded in the list but never explained in any citation",
+              "Done, but long ago",
+              "Too rare to matter",
+              "Never explained",
             ],
             correctIndex: 0,
             explanation:
@@ -2590,8 +2590,8 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What does lesson 14 call a position that grants a general problem while refusing a specific remedy?",
             options: [
-              "A coherent refusal",
-              "An argument from silence, since the remedy is never named",
+              "A coherent refusal, with no third option",
+              "An argument from silence",
               "A provisional opinion, since the position may be revised later",
               "An additive correction, since the format grows by one",
             ],
@@ -2616,10 +2616,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Which two names does the list carry for 1988?",
             options: [
-              "Bunshaft and Niemeyer",
+              "Gordon Bunshaft and Oscar Niemeyer",
               "Herzog and de Meuron, the Swiss partners honoured for their joint practice",
-              "Sejima and Nishizawa, the partners of a Japanese office",
-              "Farrell and McNamara, the partners of an Irish practice",
+              "Sejima and Nishizawa",
+              "Farrell and McNamara",
             ],
             correctIndex: 0,
             explanation:
@@ -2629,9 +2629,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Which pair does the list carry for 2001?",
             options: [
-              "Herzog and de Meuron",
+              "Jacques Herzog and Pierre de Meuron",
               "Bunshaft and Niemeyer, who appear on the list for an earlier year",
-              "Lacaton and Vassal, whose joint award comes two decades later",
+              "Lacaton and Vassal",
               "Aranda and Pigem, two of a three-person partnership honoured later",
             ],
             correctIndex: 0,
@@ -2642,10 +2642,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Which pair does the list carry for 2010?",
             options: [
-              "Sejima and Nishizawa",
-              "Farrell and McNamara, who are named on the list for a later year",
-              "Herzog and de Meuron, who are named on the list for an earlier year",
-              "Venturi and Scott Brown, who received a joint medal from another body",
+              "Kazuyo Sejima and Ryue Nishizawa",
+              "Farrell and McNamara",
+              "Herzog and de Meuron",
+              "Venturi and Scott Brown",
             ],
             correctIndex: 0,
             explanation:
@@ -2668,9 +2668,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Which pair does the list carry for 2020?",
             options: [
-              "Farrell and McNamara",
-              "Lacaton and Vassal, whose joint award falls in the following year",
-              "Sejima and Nishizawa, whose joint award falls a decade earlier",
+              "Yvonne Farrell and Shelley McNamara",
+              "Lacaton and Vassal",
+              "Sejima and Nishizawa",
               "Bunshaft and Niemeyer, the two names carried in a much earlier year",
             ],
             correctIndex: 0,
@@ -2681,10 +2681,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Which pair does the list carry for 2021?",
             options: [
-              "Lacaton and Vassal",
-              "Farrell and McNamara, who are named on the list for the year before",
-              "Aranda and Vilalta, two of the three names carried in an earlier year",
-              "Herzog and de Meuron, whose joint award falls twenty years earlier",
+              "Anne Lacaton and Jean-Philippe Vassal",
+              "Farrell and McNamara",
+              "Aranda and Vilalta",
+              "Herzog and de Meuron",
             ],
             correctIndex: 0,
             explanation:
@@ -2696,7 +2696,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             options: [
               "Two people named separately",
               "It names a practice rather than any individual architect at all",
-              "It names three people, where the later years name only two",
+              "It names three",
               "It carries no citation, unlike every other year on the list",
             ],
             correctIndex: 0,
@@ -2721,9 +2721,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What does the laureate list rule out?",
             options: [
               "A structural inability to name two",
-              "The possibility that any jury ever considered a partnership award",
+              "A jury's deliberations",
               "The claim that the prize has a published list of past laureates",
-              "The suggestion that the prize's purpose statement has ever been revised",
+              "Revisions of the purpose",
             ],
             correctIndex: 0,
             explanation:
@@ -2733,10 +2733,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What does the laureate list fail to establish?",
             options: [
-              "Anything about 1991 itself",
-              "That the prize has named more than one laureate in a single year",
-              "That partnerships appear repeatedly among the later laureates",
-              "That the list is published by the prize on its own website",
+              "Anything about 1991 itself or its jury",
+              "That multi-name years exist",
+              "That partnerships recur",
+              "That the prize publishes it",
             ],
             correctIndex: 0,
             explanation:
@@ -2749,7 +2749,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
               "That the 1991 jury rejected a two-name option",
               "That the prize has named more than one laureate in six separate years",
               "That the current purpose wording permits more than one name",
-              "That 1988 named two people separately rather than as a partnership",
+              "That 1988 named two separately",
             ],
             correctIndex: 0,
             explanation:
@@ -2760,9 +2760,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "Which phrase from the prize's current purpose statement points the same way as the list?",
             options: [
               "A living architect or architects",
-              "Whose built work demonstrates the qualities being sought",
-              "Generally acknowledged as architecture's highest award",
-              "An architect's total body of built work",
+              "Whose built work",
+              "Generally acknowledged",
+              "Total body of work",
             ],
             correctIndex: 0,
             explanation:
@@ -2773,9 +2773,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What does lesson 13 say the point of the exercise is?",
             options: [
               "The method, not the verdict",
-              "Establishing that the 1991 decision was made in error",
+              "Proving an error",
               "Showing that the prize has changed its rules since the 1990s",
-              "Counting how many partnerships the prize has honoured to date",
+              "Counting partners",
             ],
             correctIndex: 0,
             explanation:
@@ -2824,10 +2824,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Which architecture critic is listed among the 1991 jurors?",
             options: [
-              "Ada Louise Huxtable",
-              "Vanessa Quirk, who later published the text of the 2013 letter",
-              "Laura Mirviss, who reported on the petition's organisers in April 2013",
-              "Denise Scott Brown, named on the same page as a partner in the firm",
+              "Ada Louise Huxtable, a 1991 juror",
+              "Vanessa Quirk",
+              "Laura Mirviss",
+              "Denise Scott Brown",
             ],
             correctIndex: 0,
             explanation:
@@ -2851,7 +2851,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What does the letter itself say about juries over time?",
             options: [
               "They are made up of different individuals",
-              "They are drawn from a standing panel whose membership rarely changes",
+              "A standing panel",
               "They are bound by the published reasoning of every previous jury",
               "They meet jointly with past juries whenever a decision is questioned",
             ],
@@ -2863,10 +2863,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "How does lesson 14 describe the relationship between the body that refused and the body that decided?",
             options: [
-              "A later group of people",
-              "The same individuals meeting again more than twenty years afterwards",
-              "A supervisory panel with authority to review the earlier decision",
-              "Two halves of one standing committee that never fully disbands",
+              "A later group sharing a name and a purpose",
+              "The same people, meeting again",
+              "A supervisory review panel",
+              "One standing committee",
             ],
             correctIndex: 0,
             explanation:
@@ -2889,9 +2889,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What does an award without finality have instead of decisions?",
             options: [
-              "Provisional opinions",
-              "A permanent record that every later panel is required to endorse",
-              "A published dissent attached to each of its past selections",
+              "Provisional opinions, contingent on future panels",
+              "A permanent endorsed record",
+              "A dissent for each choice",
               "A single standing judgement issued once and never revisited",
             ],
             correctIndex: 0,
@@ -2903,7 +2903,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What is the cost of an absolute rule of finality?",
             options: [
               "A class of error stays uncorrectable",
-              "Decisions take longer, because each one must be exhaustively documented",
+              "Slower decisions",
               "Juries become reluctant to publish citations explaining their choices",
               "The institution loses the ability to change its rules for the future",
             ],
@@ -2928,10 +2928,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "How does the letter treat the general problem of bias?",
             options: [
-              "It acknowledges it",
-              "It denies that such bias has ever affected a decision of this prize",
-              "It refers the question to an outside body for independent assessment",
-              "It promises to reopen any year in which bias can be demonstrated",
+              "It acknowledges it as a general matter",
+              "It denies it ever happened",
+              "It refers it outside",
+              "It promises to reopen",
             ],
             correctIndex: 0,
             explanation:
@@ -2955,8 +2955,8 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What does this course mean by prospective revision?",
             options: [
               "Changing a rule going forward",
-              "Reopening a past decision once the relevant jury has been reconstituted",
-              "Publishing a correction alongside the original announcement",
+              "Reopening the past",
+              "A printed correction",
               "Awarding the same honour a second time to a different recipient",
             ],
             correctIndex: 0,
@@ -2969,7 +2969,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             options: [
               "Courts and standards bodies",
               "Publishers and journals, which never revise a printed attribution",
-              "Licensing boards, which cannot withdraw a certificate once issued",
+              "Licensing boards",
               "Petition platforms, which close a campaign once it has been answered",
             ],
             correctIndex: 0,
@@ -2981,9 +2981,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What standard does the 2013 letter name for the award?",
             options: [
               "An architect's total body of built work",
-              "The originality of the theoretical writing an architect has published",
-              "The judgement of previous laureates polled ahead of each decision",
-              "The number of buildings completed in the year under consideration",
+              "Originality of theory",
+              "A poll of past laureates",
+              "Buildings completed that year",
             ],
             correctIndex: 0,
             explanation:
@@ -2994,9 +2994,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "Why does that standard raise a difficulty for a partner in a firm?",
             options: [
               "Deciding which buildings are whose",
-              "Because partnerships are ineligible for the award under its published rules",
+              "Firms are ineligible",
               "Because a firm's output is never recorded in any form a jury can read",
-              "Because a partner's work is credited to the client rather than the practice",
+              "Credit goes to the client",
             ],
             correctIndex: 0,
             explanation:
@@ -3009,7 +3009,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
               "Name one, or name the partnership",
               "Award the prize to the firm, or withhold it until the firm dissolves",
               "Assess the partners jointly, or refer the question to a national institute",
-              "Split the award between two years, or defer it to a later cycle",
+              "Split it over two years",
             ],
             correctIndex: 0,
             explanation:
@@ -3019,10 +3019,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What does the approach of naming one person require a jury to ask?",
             options: [
-              "Who among the partners",
-              "How many buildings the practice completed in a given decade",
-              "Whether the partnership was registered before the work began",
-              "Which partner signed the drawings submitted for permit",
+              "Who among the partners is being honoured",
+              "How many buildings were built",
+              "When the firm was registered",
+              "Who signed the permit drawings",
             ],
             correctIndex: 0,
             explanation:
@@ -3045,10 +3045,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What does this course say about how the standard is applied to partnerships?",
             options: [
-              "Nothing it read explains it",
-              "That the prize applies it by assessing each partner's projects separately",
+              "Nothing it read explains the application",
+              "Each partner is assessed apart",
               "That the letter sets out a method for dividing joint work between partners",
-              "That the laureate list records how each partnership was assessed",
+              "The list records it",
             ],
             correctIndex: 0,
             explanation:
@@ -3059,7 +3059,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "Which two documents does lesson 15 hand the learner instead of an answer?",
             options: [
               "The letter and the list",
-              "The 1975 essay and the publisher's dust jacket described inside it",
+              "The 1975 essay",
               "The petition page and the trade magazine's report on its organisers",
               "The firm's information sheet and the Japanese journal article",
             ],
@@ -3072,9 +3072,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What question do those two documents raise between them?",
             options: [
               "Whether the standard describes a measurement or a problem",
-              "Whether the prize should be awarded annually or at longer intervals",
-              "Whether the jury's membership should be published before it decides",
-              "Whether a petition can oblige an institution to answer in writing",
+              "Whether the prize should run less often",
+              "Whether to publish the jury in advance",
+              "Whether a petition obliges a reply",
             ],
             correctIndex: 0,
             explanation:
@@ -3085,9 +3085,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What does this course say it cannot tell you about the years after 2013?",
             options: [
               "Whether any jury acted on the eligibility",
-              "Whether the prize continued to name more than one laureate in some years",
+              "If later years named two",
               "Whether the published purpose statement was worded as it is today",
-              "Whether the 2013 letter was ever reproduced by a second publication",
+              "Whether a second outlet ran it",
             ],
             correctIndex: 0,
             explanation:
@@ -3097,10 +3097,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What does this course do with a question its sources cannot settle?",
             options: [
-              "Files it as open",
-              "Reports the most widely repeated answer with a note of caution",
-              "Removes the subject entirely so no partial account is taught",
-              "Infers the answer from the pattern the other documents establish",
+              "Files it as open, with what would settle it",
+              "Reports the most repeated answer",
+              "Removes the subject",
+              "Infers it from the pattern",
             ],
             correctIndex: 0,
             explanation:
@@ -3110,9 +3110,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What discipline does lesson 15 say it is teaching?",
             options: [
-              "Ending on a question",
+              "Ending on a question, not an answer",
               "Reconciling two sources that disagree about the same event",
-              "Quoting a document in full rather than in short excerpts",
+              "Quoting documents in full",
               "Counting how often a claim appears across independent sources",
             ],
             correctIndex: 0,
@@ -3123,10 +3123,10 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "Why would a course that answered this question be worse?",
             options: [
-              "It would be less true",
-              "It would take longer to read than the documents themselves",
-              "It would repeat material the public architecture course already covers",
-              "It would rely on a reproduction rather than an original document",
+              "It would be more satisfying and less true",
+              "It would take longer to read",
+              "It would repeat another course",
+              "It would rest on a reproduction",
             ],
             correctIndex: 0,
             explanation:
@@ -3136,9 +3136,9 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
           {
             prompt: "What is an open question, as this course uses the term?",
             options: [
-              "One stated but not answered",
-              "One that every source consulted answers in a different way",
-              "One the institution concerned has declined to respond to in writing",
+              "One stated and filed, but not guessed at",
+              "One sources split on",
+              "One never answered in writing",
               "One that cannot be settled by any document that has ever existed",
             ],
             correctIndex: 0,
@@ -3150,7 +3150,7 @@ Quirk, V. (2013, June 16). *Pritzker rejects petition for Denise Scott Brown's r
             prompt: "What does this course mean by a measurement problem?",
             options: [
               "A question about attribution",
-              "A dispute about the dimensions recorded on a set of drawings",
+              "A drawing dispute",
               "A disagreement between two sources about the same published figure",
               "A count that changes after publication and so needs a date",
             ],
@@ -3283,7 +3283,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "Merging two events into one summary",
               "Shortening a quotation so that only its unambiguous part remains",
               "Reducing a long citation to the name of the issuing institution",
-              "Awarding two honours to the same recipients in a single year",
+              "Two medals in one year",
             ],
             correctIndex: 0,
             explanation:
@@ -3294,9 +3294,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What standard does this course accept for calling something settled?",
             options: [
               "A document from the deciding institution",
-              "Agreement between at least three independent secondary accounts",
+              "Three secondary accounts agree",
               "A claim repeated consistently across published retellings",
-              "A statement by a participant who was present at the time",
+              "A participant's statement",
             ],
             correctIndex: 0,
             explanation:
@@ -3307,7 +3307,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does the ledger say about the firm's name?",
             options: [
               "It changed, and the years are not printed",
-              "It never carried the name of more than one of its partners",
+              "It never held two names",
               "It changed in two years that the course states precisely",
               "It is the one fact the course could not find any source for",
             ],
@@ -3320,9 +3320,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "How does the AIA's own rule describe who may receive its Gold Medal?",
             options: [
               "A single individual or two individuals",
-              "Any practice whose partners have worked together for at least two decades",
-              "One living architect chosen from nominations made by the institute's chapters",
-              "Up to three individuals whose joint work has been completed in one country",
+              "Any long-standing practice",
+              "One living architect only",
+              "Up to three individuals",
             ],
             correctIndex: 0,
             explanation:
@@ -3333,9 +3333,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does the AIA rule say about whether a recipient must be alive?",
             options: [
               "Either, living or deceased",
-              "Only a living architect may be honoured, as with some other major awards",
+              "Living only",
               "A deceased architect qualifies only when honoured alongside a living partner",
-              "The rule is silent, leaving the question to the discretion of the jury",
+              "It is silent",
             ],
             correctIndex: 0,
             explanation:
@@ -3348,7 +3348,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "Collaborative efforts over time",
               "That both hold equal ownership stakes in the practice being honoured",
               "That both be licensed in the same jurisdiction at the time of the award",
-              "That both have been nominated separately in a previous award cycle",
+              "Prior nominations",
             ],
             correctIndex: 0,
             explanation:
@@ -3372,9 +3372,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which lesson elsewhere in this catalog already teaches that rule as an additive correction?",
             options: [
               "The Name on the Door, lesson 22",
-              "Who Gets Named, lesson 9, on the second mechanism a historian identified",
+              "Who Gets Named",
               "The Paper and the Prize, lesson 5, on a paper and a prize disagreeing",
-              "Who Signs the Print, lesson 2, on what a signature certifies",
+              "Who Signs the Print",
             ],
             correctIndex: 0,
             explanation:
@@ -3386,7 +3386,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "What the medal stood beside",
               "The date on which the two-person rule was first adopted by the institute",
-              "The names of the jurors who selected the recipients for that year",
+              "The jurors' names",
               "The number of nominations the institute received in that award cycle",
             ],
             correctIndex: 0,
@@ -3397,10 +3397,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What does this course say about a connection between the 2016 medal and the 1991 prize?",
             options: [
-              "No document connects them",
-              "The institute stated that its award answered the earlier decision",
+              "No document read here connects them",
+              "The AIA said so",
               "The petition organisers confirmed that their campaign produced the medal",
-              "Both bodies published a joint statement explaining the sequence",
+              "A joint statement",
             ],
             correctIndex: 0,
             explanation:
@@ -3411,9 +3411,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What is the honest version of the claim about 2016?",
             options: [
               "A correction happened in the award system",
-              "The 1991 prize was corrected by a later decision of another institution",
-              "The petition succeeded three years after it was formally refused",
-              "The profession reversed a judgement that a jury had made in error",
+              "The 1991 prize was corrected",
+              "The petition later succeeded",
+              "The profession reversed a jury",
             ],
             correctIndex: 0,
             explanation:
@@ -3425,7 +3425,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "A documented connection between events",
               "A sequence in which one event happens before another in time",
-              "A pattern that repeats often enough to be treated as a rule",
+              "A repeating pattern",
               "A conclusion several independent commentators have reached",
             ],
             correctIndex: 0,
@@ -3450,9 +3450,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "How did that report describe the 2016 Royal Gold Medal recipient?",
             options: [
               "The first woman to win it independent of a partner",
-              "The first architect from outside Britain to receive the honour",
-              "The first recipient to have also signed the 2013 petition",
-              "The first person honoured jointly with a business partner",
+              "The first non-British recipient",
+              "The first petition signatory to win",
+              "The first named with a business partner",
             ],
             correctIndex: 0,
             explanation:
@@ -3463,8 +3463,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why does lesson 17 bother undoing the confusion between the two 2016 medals?",
             options: [
               "A small error invites dismissal",
-              "Because the two institutes have asked for the record to be clarified",
-              "Because the Royal Gold Medal is the more prestigious of the two honours",
+              "The institutes asked",
+              "One medal is grander",
               "Because the joint medal would otherwise appear to have been awarded twice",
             ],
             correctIndex: 0,
@@ -3477,7 +3477,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "A format that grows to hold more names",
               "A retraction issued alongside the original published announcement",
-              "A second award made to the same recipient in a later year",
+              "A second award",
               "A statement of regret published without any change to the record",
             ],
             correctIndex: 0,
@@ -3489,8 +3489,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What is a prospective correction?",
             options: [
               "One that applies going forward",
-              "One issued before the decision it corrects has been announced",
-              "One that reopens a past decision once new evidence is produced",
+              "One issued in advance",
+              "One reopening a case",
               "One made by the same body that made the original decision",
             ],
             correctIndex: 0,
@@ -3554,9 +3554,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "When did she write her account of architectural attribution, and when was it published?",
             options: [
               "Written in 1975, published in 1989",
-              "Written in 1989 and published immediately in a Smithsonian collection",
-              "Written in 1991 in response to the award and published two years later",
-              "Written in 2013 for the petition and published by a trade magazine",
+              "Written and printed 1989",
+              "Written in 1991, after it",
+              "Written for the petition",
             ],
             correctIndex: 0,
             explanation:
@@ -3582,7 +3582,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "The finality of past juries",
               "A published rule limiting the award to one person in any year",
               "An assessment that her built work did not meet the standard",
-              "The absence of a nomination submitted through the proper channel",
+              "No nomination",
             ],
             correctIndex: 0,
             explanation:
@@ -3606,9 +3606,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What did the 2013 letter concede?",
             options: [
               "That discussions can reflect cultural biases",
-              "That the earlier jury had reached the wrong conclusion on the evidence",
+              "That the 1991 jury was wrong",
               "That the prize's format had prevented a joint award in earlier years",
-              "That petitions of sufficient size oblige a jury to reconsider",
+              "That big petitions oblige it",
             ],
             correctIndex: 0,
             explanation:
@@ -3620,7 +3620,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "Six years carry more than one name",
               "That every partnership honoured since 2001 was named in full",
-              "That the prize named two people for the first time in 2016",
+              "Two first named in 2016",
               "That single-name years ceased after the petition was refused",
             ],
             correctIndex: 0,
@@ -3632,9 +3632,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which of these does nothing read for this course settle?",
             options: [
               "What the 1991 jury discussed",
-              "That the prize named one laureate for the year in question",
-              "That a petition asked the prize to recognise her for that year",
-              "That the AIA's rule admits two individuals for its Gold Medal",
+              "One laureate named",
+              "The petition's ask",
+              "The AIA's rule",
             ],
             correctIndex: 0,
             explanation:
@@ -3645,9 +3645,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which wording does this course treat as unestablished?",
             options: [
               "The purpose statement in force in 1991",
-              "The eligibility sentence published by the AIA for its Gold Medal",
+              "The AIA's eligibility rule",
               "The sentence in the 2013 letter about reopening a previous jury",
-              "The sentence on the 1991 page dating her partnership to 1969",
+              "The 1969 partnership sentence",
             ],
             correctIndex: 0,
             explanation:
@@ -3660,7 +3660,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "How it applies to a partner",
               "Whether the letter names a standard for the award at all",
               "Whether built work or written work weighs more heavily with juries",
-              "Whether the standard was introduced before or after 1991",
+              "Its date of origin",
             ],
             correctIndex: 0,
             explanation:
@@ -3671,8 +3671,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which lesson elsewhere states that a correction does not reissue the past?",
             options: [
               "Who Signs the Print, lesson 22",
-              "The Name on the Door, lesson 1, on the credited unit being a firm",
-              "Who Gets Named, lesson 9, on a second mechanism in scientific credit",
+              "The Name on the Door",
+              "Who Gets Named",
               "The Paper and the Prize, lesson 5, on the paper and the prize",
             ],
             correctIndex: 0,
@@ -3683,9 +3683,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What does this course call the fix that remains when no institutional correction is available?",
             options: [
-              "The reader's correction",
-              "A retroactive award, granted once the original jury reconvenes",
-              "A public campaign, sustained until the institution changes its mind",
+              "The correction a reader performs",
+              "A retroactive award",
+              "A public campaign",
               "An additive correction, made by enlarging the original format",
             ],
             correctIndex: 0,
@@ -3698,7 +3698,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "It is the one actually available",
               "Because it obliges the institution to publish a further statement",
-              "Because it carries the same standing as a reissued award",
+              "It equals a reissue",
               "Because it prevents any future jury from repeating the decision",
             ],
             correctIndex: 0,
@@ -3710,9 +3710,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why does this course make no statement about whether she is living?",
             options: [
               "No source it read settles it",
-              "Because the subject's current status is irrelevant to every lesson",
-              "Because the institutions cited have asked that it not be reported",
-              "Because the course covers only events before the year 2000",
+              "It is irrelevant",
+              "Institutions asked",
+              "Pre-2000 scope only",
             ],
             correctIndex: 0,
             explanation:
@@ -3723,8 +3723,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which common telling does the ledger name as tested and refused?",
             options: [
               "That she declined to attend the ceremony",
-              "That the jury citation of that year mentioned her by name",
-              "That the firm carried her name for part of its history",
+              "That the citation named her",
+              "That the firm bore her name",
               "That a petition gathered more than seventeen thousand signatures",
             ],
             correctIndex: 0,
@@ -3736,7 +3736,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why does the course leave out the years in which the firm's name changed?",
             options: [
               "Only search summaries remain",
-              "Because the firm's own records contradict the published accounts",
+              "The firm disagrees",
               "Because the changes fall outside the period the course covers",
               "Because two institutions publish incompatible versions of the dates",
             ],
@@ -3762,9 +3762,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which of these is left out of the course as summary-only material?",
             options: [
               "The date the petition was written",
-              "The date of the letter as the reproduction gives it",
-              "The signature total reported in June 2013",
-              "The title under which the petition was posted",
+              "The letter's date",
+              "The June 2013 total",
+              "The petition's title",
             ],
             correctIndex: 0,
             explanation:
@@ -3775,9 +3775,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why does the unread 1991 purpose wording get special attention in the ledger?",
             options: [
               "It is load-bearing in section 4",
-              "Because the prize has since removed the statement from its website",
-              "Because two versions of the sentence are published side by side",
-              "Because the 2013 letter quotes it and the course does not",
+              "It was removed online",
+              "Two versions coexist",
+              "The letter quotes it",
             ],
             correctIndex: 0,
             explanation:
@@ -3801,9 +3801,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why does the ledger call this case unusually legible?",
             options: [
               "Several institutions published their own records",
-              "Because the partnership kept a complete archive open to any researcher",
+              "A complete open firm archive",
               "Because the events are recent enough for participants to be interviewed",
-              "Because only one institution was involved from beginning to end",
+              "Only one institution was involved",
             ],
             correctIndex: 0,
             explanation:
@@ -3827,9 +3827,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What three questions does the course leave you with about any prize?",
             options: [
               "What was named, what was allowed, who could change it",
-              "Who nominated the winner, who funded the award, who attended the ceremony",
-              "How old the prize is, how much it pays, and how often it is given",
-              "Which jury sat, which candidates lost, and which critics objected",
+              "Who nominated, who funded, who attended",
+              "How old, how rich, how often",
+              "Which jury, which losers, which critics",
             ],
             correctIndex: 0,
             explanation:
@@ -3854,7 +3854,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "An account of what was refused",
               "A list of every source consulted during the writing of a course",
-              "A record of the dates on which each document was published",
+              "A list of dates",
               "A summary of the arguments the course expects readers to reject",
             ],
             correctIndex: 0,
@@ -3866,9 +3866,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What is a load-bearing claim?",
             options: [
               "One an argument depends on",
-              "One that appears in more than one lesson of the same course",
-              "One published by the institution that made the decision",
-              "One a reader is most likely to remember after finishing",
+              "A repeated one",
+              "An official one",
+              "A memorable one",
             ],
             correctIndex: 0,
             explanation:
@@ -3879,8 +3879,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why does the ledger say each of its items is a decision rather than an oversight?",
             options: [
               "Each was tested and then left out",
-              "Because every item was removed at the request of a named reviewer",
-              "Because the items were never researched in the first place",
+              "A reviewer asked for it",
+              "None was researched",
               "Because each will be added once the course is made public",
             ],
             correctIndex: 0,
@@ -3892,9 +3892,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does this course mean by a legible case?",
             options: [
               "One that left enough published record",
-              "One in which every participant is still available to be interviewed",
-              "One whose documents are written in plain and accessible language",
-              "One that a single institution has summarised in an official history",
+              "One with living witnesses",
+              "One in plain language",
+              "One with an official history",
             ],
             correctIndex: 0,
             explanation:
@@ -3920,9 +3920,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which two documents make this credit question unusually easy to teach?",
             options: [
               "The 1991 laureate page and its jury citation",
-              "A newspaper obituary and a later biography written from family papers",
-              "A licensing board record and a set of stamped construction drawings",
-              "A court judgement and the transcript of the hearing that produced it",
+              "An obituary and a biography",
+              "A board record and drawings",
+              "A judgement and a transcript",
             ],
             correctIndex: 0,
             explanation:
@@ -3946,8 +3946,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What should a reader be able to say about any document by the end of the course?",
             options: [
               "What it establishes, asserts, and omits",
-              "Which institution is most likely to have produced it and in what decade",
-              "How many people were involved in the decision it records",
+              "Its likely issuer and decade",
+              "How many people decided",
               "Whether its author would have wished it published at the time",
             ],
             correctIndex: 0,
@@ -3960,7 +3960,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "Partner in the firm since 1969",
               "Collaborator in the evolution of architectural theory and design",
-              "Wife of the architect named as that year's laureate",
+              "Wife of the laureate",
               "Educator, listed among the four occupations the page gives",
             ],
             correctIndex: 0,
@@ -3972,8 +3972,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What do a three-name book credit and a one-name prize on one page establish together?",
             options: [
               "That formats answer different questions",
-              "That the publisher and the prize disagreed about who did the work",
-              "That the jury had not read the book before it made its decision",
+              "That the two credits conflict",
+              "That the jury skipped the book",
               "That at least one of the two credits contains a factual error",
             ],
             correctIndex: 0,
@@ -3986,7 +3986,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "Which question the format answers",
               "Whether the institution that issued it still exists today",
-              "How many other credits the same work has received elsewhere",
+              "Other credits received",
               "Whether anyone named in it has objected to its wording",
             ],
             correctIndex: 0,
@@ -3998,9 +3998,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "How does a registry differ from a prize?",
             options: [
               "A registry records, a prize chooses",
-              "A registry is annual and a prize may be awarded at any interval",
-              "A registry covers buildings and a prize covers only people",
-              "A registry is public and a prize is decided behind closed doors",
+              "Annual versus any time",
+              "Buildings versus people",
+              "Public versus private",
             ],
             correctIndex: 0,
             explanation:
@@ -4011,8 +4011,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why does owning a firm not settle what a prize will name?",
             options: [
               "A prize is not a property record",
-              "Because prize juries are barred from considering ownership documents",
-              "Because a firm's ownership is confidential and cannot be verified",
+              "Juries cannot see deeds",
+              "Ownership is secret",
               "Because ownership changes too often for a jury to rely on it",
             ],
             correctIndex: 0,
@@ -4026,7 +4026,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "Her judgement of the risk, not the risk itself",
               "The reception her ideas met, and not the date she wrote them",
               "The decisions publishers took, and not her own view of them",
-              "The reasons the jury gave, and not the reasons it held",
+              "The jury's reasons, not its views",
             ],
             correctIndex: 0,
             explanation:
@@ -4036,10 +4036,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "Why does the chronology of that essay matter?",
             options: [
-              "It predates the 1991 prize",
-              "It was written in the same month the petition was launched",
-              "It was published after the 2013 letter had been received",
-              "It was drafted while the jury for that year was sitting",
+              "It was written and published before the 1991 prize",
+              "It was written as the petition began",
+              "It followed the 2013 letter",
+              "It was drafted while the jury sat",
             ],
             correctIndex: 0,
             explanation:
@@ -4050,8 +4050,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What is testimony, in this course's sense?",
             options: [
               "A first-hand account by an interested party",
-              "A statement sworn before a body with power to compel the truth",
-              "A finding published by an institution with no stake in the result",
+              "A sworn statement",
+              "A neutral institution's finding",
               "A reconstruction assembled by a historian from surviving papers",
             ],
             correctIndex: 0,
@@ -4064,7 +4064,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "It names artefacts a reader can find",
               "It was confirmed by the publishers concerned at the time",
-              "It appeared in a peer-reviewed architectural journal",
+              "Peer-reviewed publication",
               "It was repeated by several independent critics afterwards",
             ],
             correctIndex: 0,
@@ -4076,8 +4076,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does the dust-jacket episode show about corrections?",
             options: [
               "A partial correction leaves part uncorrected",
-              "A publisher never acts on a complaint about a credit line",
-              "A correction always restores the record to its accurate state",
+              "Publishers never act on complaints",
+              "Corrections always restore it",
               "A correction made quickly is more effective than a slow one",
             ],
             correctIndex: 0,
@@ -4117,7 +4117,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "Silent repairs let inventions into a record",
               "Because the reprint's publisher forbids any alteration when quoting",
               "Because the intended word cannot be inferred from the sentence",
-              "Because the error changes the meaning of the passage entirely",
+              "The meaning changes entirely",
             ],
             correctIndex: 0,
             explanation:
@@ -4180,9 +4180,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What ground does the 2013 letter give for refusing?",
             options: [
               "A later jury cannot reopen an earlier one",
-              "A published rule limits the award to one person in any year",
+              "A one-person rule",
               "Her built work had not been assessed against the standard",
-              "The request was made outside the prize's nomination window",
+              "A missed nomination window",
             ],
             correctIndex: 0,
             explanation:
@@ -4208,7 +4208,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "A reproduction published by a third party",
               "The original, obtained from the institution that wrote it",
               "A transcript taken down as the letter was read aloud",
-              "A summary prepared by the petition's organisers",
+              "A summary by the organisers",
             ],
             correctIndex: 0,
             explanation:
@@ -4219,9 +4219,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What is the trap in reading a document for its silences?",
             options: [
               "Treating silence as agreement",
-              "Overlooking a paragraph the reproduction happens to omit",
-              "Assuming the letter's author also made the original decision",
-              "Quoting more of the document than the argument needs",
+              "Missing a paragraph",
+              "Confusing authors",
+              "Over-quoting",
             ],
             correctIndex: 0,
             explanation:
@@ -4232,8 +4232,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What do the letter's omissions actually establish?",
             options: [
               "Finality was the only stated ground",
-              "The institution privately accepted the substance of the petition",
-              "No rule capping the number of laureates has ever existed",
+              "Private acceptance",
+              "No cap ever existed",
               "The earlier jury never considered the partnership at all",
             ],
             correctIndex: 0,
@@ -4244,10 +4244,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "Which defence, available to any body that believes it, does the letter not mount?",
             options: [
-              "That she did not do the work",
-              "That a later jury cannot reopen an earlier jury's decision",
-              "That she remains eligible for the award in future years",
-              "That bias can underplay a woman's role in creative work",
+              "That she did not do the work at all",
+              "That juries are final",
+              "That she remains eligible",
+              "That bias may occur",
             ],
             correctIndex: 0,
             explanation:
@@ -4259,7 +4259,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "That the format cannot hold two names",
               "That any jury ever considered honouring a partnership",
-              "That the prize has published a list of its past laureates",
+              "That the list exists",
               "That the purpose statement has been revised since 1991",
             ],
             correctIndex: 0,
@@ -4271,9 +4271,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does that list fail to establish?",
             options: [
               "What any particular jury considered",
-              "That more than one laureate has been named in some years",
-              "That partnerships appear among the prize's later laureates",
-              "That the list is published by the prize on its own site",
+              "That some years name two",
+              "That partnerships appear",
+              "That the prize issues it",
             ],
             correctIndex: 0,
             explanation:
@@ -4284,8 +4284,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What is the transferable method in checking the prize's list?",
             options: [
               "Test a stated ground against the institution's own record",
-              "Count how many awards an institution has given since it began",
-              "Compare the coverage two trade magazines gave the same event",
+              "Count an institution's awards",
+              "Compare two magazines' coverage",
               "Ask the institution to confirm its published rules in writing",
             ],
             correctIndex: 0,
@@ -4299,7 +4299,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
               "They are different groups of people",
               "They share a chairman who served across both decades",
               "They are drawn from one standing panel that rarely changes",
-              "They met jointly to consider the petition in 2013",
+              "They met jointly in 2013",
             ],
             correctIndex: 0,
             explanation:
@@ -4310,9 +4310,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What does a rule of finality protect, and what does it cost?",
             options: [
               "It protects stability and costs correctability",
-              "It protects the jury's privacy and costs the institution its reputation",
-              "It protects past laureates and costs future candidates their eligibility",
-              "It protects the format and costs the institution its published rules",
+              "It guards privacy and costs prestige",
+              "It guards laureates and costs rivals",
+              "It guards the format and costs rules",
             ],
             correctIndex: 0,
             explanation:
@@ -4322,10 +4322,10 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
           {
             prompt: "What does the standard of an individual's total body of built work raise for a partner?",
             options: [
-              "A measurement problem",
+              "A measurement problem inside the assessment",
               "A conflict of interest between the two partners of a practice",
               "A requirement to be licensed in more than one jurisdiction",
-              "A need for the firm to nominate one partner formally",
+              "A formal nomination by the firm",
             ],
             correctIndex: 0,
             explanation:
@@ -4349,9 +4349,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Under the AIA's rule, who may receive its Gold Medal?",
             options: [
               "One or two individuals, living or deceased",
-              "Any practice whose partners have collaborated for two decades",
-              "A single living architect nominated by a chapter of the institute",
-              "Up to three individuals whose work was completed in one country",
+              "Long-collaborating practices",
+              "One living chapter nominee",
+              "Up to three individuals",
             ],
             correctIndex: 0,
             explanation:
@@ -4363,8 +4363,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             options: [
               "No document connects the two decisions",
               "Because the medal was awarded by the same body that made the earlier decision",
-              "Because the medal was refused by one of the two recipients",
-              "Because the earlier prize had already been formally withdrawn",
+              "The medal was refused",
+              "The prize was withdrawn",
             ],
             correctIndex: 0,
             explanation:
@@ -4388,9 +4388,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What is the difference between a retroactive and a prospective correction?",
             options: [
               "One changes the past, the other changes the future",
-              "One is made by an institution and the other by an individual",
-              "One is published and the other is recorded only internally",
-              "One requires a petition and the other requires a court order",
+              "One is institutional, one individual",
+              "One is published, one internal",
+              "One needs a petition, one a court",
             ],
             correctIndex: 0,
             explanation:
@@ -4401,7 +4401,7 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "What correction remains when an institution will not reopen and another's rule cannot reach back?",
             options: [
               "The one a reader performs",
-              "An appeal to the body that funds the award",
+              "An appeal",
               "A second petition, submitted in a later year",
               "A published statement of regret from the original jury",
             ],
@@ -4414,9 +4414,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Which of these does the record settle?",
             options: [
               "That the 2013 chair refused in writing",
-              "That the 1991 jury weighed and rejected a two-name award",
-              "That the AIA acted in response to the earlier refusal",
-              "That the prize's purpose was worded identically in 1991",
+              "That 1991 rejected two names",
+              "That the AIA was responding",
+              "That the 1991 purpose matched",
             ],
             correctIndex: 0,
             explanation:
@@ -4427,8 +4427,8 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why does the course print five laureate signatories rather than a larger circulating figure?",
             options: [
               "Five is the figure it read, with a date",
-              "Because only five of the signatories were living at the time",
-              "Because the petition page lists exactly five laureates",
+              "Only five were living",
+              "The page lists five",
               "Because the 2013 letter names five laureates and no others",
             ],
             correctIndex: 0,
@@ -4440,9 +4440,9 @@ Scott Brown, D. (1989). Room at the top? Sexism and the star system in architect
             prompt: "Why should this course not be read as a survey of the problem?",
             options: [
               "It is an unusually legible case",
-              "It covers only the decisions of a single institution",
-              "It relies entirely on one author's published testimony",
-              "It was written before most of the relevant records were released",
+              "Only one institution",
+              "It rests on testimony",
+              "Records came later",
             ],
             correctIndex: 0,
             explanation:

@@ -66,8 +66,9 @@ import type { AuthoredCourse } from "./authored-course";
 // `:::reveal q ||| a`; a `## Vocabulary` block; an APA 7 `## Sources` block; one quiz per teaching
 // section (pool sized to audit-course's density target, serving 5, passing 80, shuffled) plus a
 // final pooling 41 and serving 10, placed LAST; every question carries `explanation` and
-// `sourceLessonSlug`. Correct options are SHORT and distractors long and specifically wrong, so
-// check-longest-option passes by construction. No em dashes anywhere a learner reads.
+// `sourceLessonSlug`. Option lengths are balanced so the correct answer is as often long as short
+// (`check-longest-option`, `check-shortest-option` and `check-length-balance` all pass), and every
+// distractor stays specifically wrong. No em dashes anywhere a learner reads.
 export const SOUL_TRAIN_THE_BUSINESS_COURSE: AuthoredCourse = {
   title: "Soul Train: Who Paid, Who Owned, Who Got Paid",
   description:
@@ -203,10 +204,10 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
           {
             prompt: "What does this course ask about Soul Train instead of asking about the music?",
             options: [
-              "Who paid and who owned it",
-              "Which performances drew the largest studio audience during the show's first two seasons",
-              "How the dance steps spread from Chicago to the rest of the country after 1971",
-              "Which records climbed the charts fastest in the weeks after an artist appeared",
+              "Who paid for the first tape, who owned it, who sold its time, who was owed",
+              "Which acts drew the largest studio crowds",
+              "How the dance steps spread after 1971",
+              "Which records climbed the charts fastest",
             ],
             correctIndex: 0,
             explanation:
@@ -217,9 +218,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "On what date did Soul Train begin its national run?",
             options: [
               "2 October 1971",
-              "17 August 1970, the date the local Chicago edition first went out over channel 26",
-              "10 March 1973, the Saturday the competing network programme first went to air",
-              "25 March 2006, the date the programme's last national episode was distributed",
+              "17 August 1970",
+              "10 March 1973",
+              "25 March 2006",
             ],
             correctIndex: 0,
             explanation:
@@ -230,7 +231,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What kind of station carried the show first in Chicago?",
             options: [
               "An ultra high frequency station",
-              "A network owned and operated station that cleared the programme for the whole Midwest",
+              "A network station",
               "A very high frequency station whose signal reached every county in northern Illinois",
               "A public television station licensed to a Chicago university and funded by subscribers",
             ],
@@ -242,9 +243,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
           {
             prompt: "Roughly how many markets did the show reach by 1974, according to the 1974 Billboard special section?",
             options: [
-              "About 100",
-              "About seven, the same cities that carried the programme on its first national broadcast",
-              "About 25, the target list the syndicator drew up before the national launch began",
+              "About 100 markets",
+              "About 7",
+              "About 25",
               "About 200, a figure the sponsor's own memoir gives for the programme's eventual reach",
             ],
             correctIndex: 0,
@@ -269,9 +270,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Until what year did Soul Train stay on the air, according to Variety?",
             options: [
               "2006",
-              "1993, the last year its creator appeared on camera as the programme's host",
-              "2016, when a division of a large media company bought the brand and the library",
-              "1985, when a new distributor took over the syndication of the programme",
+              "1993",
+              "2016",
+              "1985",
             ],
             correctIndex: 0,
             explanation:
@@ -282,9 +283,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What did Don Cornelius sell in 2008?",
             options: [
               "The brand, the rights and the library",
-              "Only the right to use the programme's name on live events and consumer products",
-              "Only the unaired footage, keeping every episode that had already been broadcast",
-              "A minority stake in his production company, keeping control of the programme itself",
+              "Only the name rights",
+              "Only the unaired footage",
+              "A minority stake",
             ],
             correctIndex: 0,
             explanation:
@@ -296,7 +297,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             options: [
               "Johnson Products Company",
               "Johnson Publishing Company, the Chicago firm that published Ebony and Jet magazines",
-              "Sears, Roebuck, which had backed the programme's first local run out of Chicago",
+              "Sears, Roebuck",
               "Black Entertainment Television, whose parent company later bought the franchise",
             ],
             correctIndex: 0,
@@ -321,9 +322,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What is Robert L. Johnson's connection to this story?",
             options: [
               "He co-founded BET",
-              "He introduced Johnson Products to the programme through his Chicago advertising agency",
-              "He was the merchandise manager who committed Sears money to the first local run",
-              "He published the magazines in which the sponsor ran its print advertising campaigns",
+              "He hosted the show",
+              "He worked for Sears",
+              "He published Jet",
             ],
             correctIndex: 0,
             explanation:
@@ -347,9 +348,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Why does the New York Times obituary of George E. Johnson stop to name the other two Johnsons?",
             options: [
               "Readers keep confusing them",
-              "Because the three companies had signed a joint marketing agreement the obituary describes",
-              "Because a court had ordered the paper to print a correction about the three firms",
-              "Because the three men had shared a board seat at the same Chicago bank for decades",
+              "A joint venture",
+              "A court order",
+              "A shared board",
             ],
             correctIndex: 0,
             explanation:
@@ -360,9 +361,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Which two Johnson Products brands does this lesson name?",
             options: [
               "Ultra Sheen and Afro Sheen",
-              "Ebony and Jet, the two magazines the company was best known for publishing",
+              "Ebony and Jet",
               "Gentle Treatment and Creme of Nature, the two relaxers its rivals sold against it",
-              "Fashion Fair and Ebony Fashion Fair, the cosmetics and fashion lines of the same era",
+              "Fashion Fair",
             ],
             correctIndex: 0,
             explanation:
@@ -373,7 +374,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What did the sponsor buy in Ebony and Jet?",
             options: [
               "Print advertising",
-              "A controlling interest in the publisher, which it held until the middle of the 1970s",
+              "A stake",
               "The rights to reprint its own television commercials as photographic picture stories",
               "Exclusive distribution of both magazines through its network of barbershop accounts",
             ],
@@ -386,9 +387,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What footage, advertisements or photographs from Soul Train does this course reproduce?",
             options: [
               "None",
-              "Only the opening title sequence, which the course argues has passed into the public domain",
-              "Every Afro Sheen commercial named in the lessons, reproduced under an educational licence",
-              "A selection of studio photographs, reprinted with the permission of the current rights holder",
+              "Title cards",
+              "Commercials",
+              "Photographs",
             ],
             correctIndex: 0,
             explanation:
@@ -399,8 +400,8 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Why does the course link to free scans instead of reprinting the trade pages?",
             options: [
               "The pages belong to somebody",
-              "Because the scans are higher resolution than anything the course could typeset itself",
-              "Because the archive that hosts them forbids any quotation of their contents at all",
+              "Scans are sharper",
+              "Quotation is banned",
               "Because the original print runs were destroyed and only the scans now survive",
             ],
             correctIndex: 0,
@@ -412,9 +413,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "In this course's vocabulary, what is a sponsor?",
             options: [
               "A buyer of a show's advertising time",
-              "A station that agrees to carry a syndicated programme in its own local market",
-              "A company that produces a programme and then sells it to individual stations",
-              "An agency that books talent for a programme and takes a commission on each booking",
+              "A station carrying it",
+              "The show's producer",
+              "A talent agency",
             ],
             correctIndex: 0,
             explanation:
@@ -425,7 +426,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What is syndication, as this course defines it?",
             options: [
               "Selling a show station by station",
-              "Selling a programme to one of the three national networks for a fixed licence fee",
+              "A network sale",
               "Pooling the advertising budgets of several sponsors to pay for a single programme",
               "Licensing a programme's format abroad so local producers can remake it themselves",
             ],
@@ -451,8 +452,8 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What is a trade paper?",
             options: [
               "A weekly published for an industry",
-              "A newspaper section carrying the stock tables and company results for general readers",
-              "A magazine produced by a company about itself and mailed free to its own customers",
+              "A stock-table page",
+              "A company newsletter",
               "A government bulletin recording licences, permits and regulatory filings each week",
             ],
             correctIndex: 0,
@@ -464,9 +465,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Which document from 2024 does this lesson say is still open?",
             options: [
               "A federal complaint",
-              "A Federal Trade Commission consent order against the programme's original sponsor",
-              "An appeal filed by the sponsor against a labelling requirement on its relaxer products",
-              "A licensing agreement between the current owner and the stations that still carry reruns",
+              "An FTC order",
+              "A labelling appeal",
+              "A rerun licence",
             ],
             correctIndex: 0,
             explanation:
@@ -477,9 +478,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "How many kinds of source does this course distinguish?",
             options: [
               "Three",
-              "Two, dividing everything into primary documents and unreliable secondary retellings",
-              "Five, one for each decade of the programme's history from the 1970s to the 2010s",
-              "Four, adding oral history to the document, the participant account and the reference work",
+              "Two",
+              "Five",
+              "Four",
             ],
             correctIndex: 0,
             explanation:
@@ -492,7 +493,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
               "A page printed at the time",
               "A page printed by someone who took part in the events and signed their name to it",
               "An encyclopedia entry written close enough to the events to still be reliable",
-              "Any document held by an archive rather than by one of the people involved",
+              "Any archived file",
             ],
             correctIndex: 0,
             explanation:
@@ -503,9 +504,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What does this lesson say a contemporaneous document cannot do?",
             options: [
               "Shape a future it has not seen",
-              "Contain an error, since anything printed at the time was checked before publication",
-              "Report a rumour, since trade papers of the period printed only confirmed information",
-              "Disagree with another paper printed in the same month about the same events",
+              "Contain an error",
+              "Report a rumour",
+              "Disagree with a rival",
             ],
             correctIndex: 0,
             explanation:
@@ -529,8 +530,8 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What surrounds the text of the 1974 Billboard special section?",
             options: [
               "Paid congratulatory advertisements",
-              "Unsold house advertisements the magazine ran to fill the pages of a thin issue",
-              "Classified listings from stations looking to buy syndicated programming that season",
+              "House ads",
+              "Classified listings",
               "A reprint of the Federal Communications Commission's rules on syndicated programming",
             ],
             correctIndex: 0,
@@ -542,9 +543,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "How should a reader treat the 1974 Billboard special section?",
             options: [
               "As Cornelius's own account",
-              "As the most independent reporting available on the programme's first three years",
-              "As a government record, since trade papers filed their contents with regulators",
-              "As worthless, since a page paid for by a subject can contain nothing checkable",
+              "As neutral news",
+              "As a state record",
+              "As worthless",
             ],
             correctIndex: 0,
             explanation:
@@ -555,9 +556,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Who published a 2025 memoir used as a source in this course?",
             options: [
               "George E. Johnson",
-              "Don Cornelius, whose manuscript was completed by a collaborator after his death",
-              "Dick Griffey, the programme's talent coordinator and its creator's business partner",
-              "Robert L. Johnson, writing about the founding of Black Entertainment Television",
+              "Don Cornelius",
+              "Dick Griffey",
+              "Robert L. Johnson",
             ],
             correctIndex: 0,
             explanation:
@@ -568,9 +569,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "How long after the sponsorship began was the sponsor's memoir published?",
             options: [
               "Fifty-four years",
-              "Five years, which is why the lesson treats it as close to a contemporaneous record",
-              "Twenty years, placing it midway between the events and the present day",
-              "Eighty years, which is why it survives only as a manuscript rather than a printed book",
+              "Five years",
+              "Twenty years",
+              "Eighty years",
             ],
             correctIndex: 0,
             explanation:
@@ -583,7 +584,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
               "His first-person account of the deal",
               "Establishing the exact dates of every filing in the company's regulatory history",
               "Settling the disagreements between the two trade papers that covered the 1973 rival",
-              "Providing an independent check on what the 1974 Billboard special section says",
+              "An independent check",
             ],
             correctIndex: 0,
             explanation:
@@ -594,9 +595,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What is a reference work, in this lesson's taxonomy?",
             options: [
               "A summary of other people's reporting",
-              "A document created at the time of the events by an institution rather than a person",
-              "A first-person account written under oath and filed with a court or a regulator",
-              "A collection of primary documents reprinted in full with an editor's introduction",
+              "An institution's record",
+              "Sworn testimony",
+              "A documents reader",
             ],
             correctIndex: 0,
             explanation:
@@ -607,9 +608,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What is a reference work good for, according to this lesson?",
             options: [
               "A chronology",
-              "A quotation, since its editors check wording more carefully than a newspaper does",
-              "A financial figure, since its sources are company filings rather than press reports",
-              "A settled judgment about cause, since its authors have read everything on the subject",
+              "A quotation",
+              "A financial figure",
+              "A settled cause",
             ],
             correctIndex: 0,
             explanation:
@@ -633,9 +634,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What is one documented error in the Contemporary Black Biography entry on Don Cornelius?",
             options: [
               "It puts a singer in the wrong group",
-              "It gives the wrong date for the programme's first national broadcast in October 1971",
-              "It names the wrong company as the programme's national sponsor from 1971 onward",
-              "It reverses the roles of the creator and the sponsor in the founding of the show",
+              "The wrong launch date",
+              "The wrong sponsor",
+              "Reversed founding roles",
             ],
             correctIndex: 0,
             explanation:
@@ -646,7 +647,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What does the Contemporary Black Biography entry do with the year of the Soul Train Music Awards?",
             options: [
               "It gives two different years",
-              "It omits the awards entirely, which is why later accounts disagree about their origin",
+              "It omits them",
               "It dates them to the same year as the programme's national launch in October 1971",
               "It credits their creation to the syndicator rather than to the programme's creator",
             ],
@@ -658,9 +659,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
           {
             prompt: "What is wrong with the Contemporary Black Biography entry's citation of Billboard?",
             options: [
-              "The issue date is wrong",
-              "It cites a magazine that had ceased publication years before the issue it names",
-              "It attributes the article to the wrong reporter, who worked for a rival weekly",
+              "It cites 24 August 1972 for the 26 August issue",
+              "It cites a defunct magazine",
+              "It names the wrong reporter",
               "It gives a page number from a different year's special section on the same subject",
             ],
             correctIndex: 0,
@@ -685,9 +686,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What does it mean to upgrade a claim?",
             options: [
               "Go to the primary document",
-              "Find a second secondary source that repeats the same claim in the same wording",
-              "Raise its confidence level after it has been repeated by enough separate outlets",
-              "Rewrite it in stronger language once you are satisfied that it is probably true",
+              "Find an echo",
+              "Count repetitions",
+              "Word it strongly",
             ],
             correctIndex: 0,
             explanation:
@@ -698,8 +699,8 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What does this course do when a participant's memory of a court case and the court's opinion disagree?",
             options: [
               "Prints both and names each",
-              "Prefers the memory, since the participant was in the room and the court was not",
-              "Prefers the court and leaves the participant's version out of the lesson entirely",
+              "Trusts the memory",
+              "Drops the memory",
               "Averages the two accounts into a single version that neither source would object to",
             ],
             correctIndex: 0,
@@ -711,9 +712,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What does the course do when two trade papers printed different facts in the same month?",
             options: [
               "Prints both",
-              "Chooses the paper with the larger circulation and drops the other account",
-              "Treats the disagreement as proof that neither report can be used at all",
-              "Waits for a reference work to decide which of the two was correct",
+              "Picks one",
+              "Drops both",
+              "Defers it",
             ],
             correctIndex: 0,
             explanation:
@@ -725,7 +726,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             options: [
               "The teller has a stake in the telling",
               "Because participant accounts are legally required to carry an attribution when quoted",
-              "Because they are always less accurate than any encyclopedia entry on the same events",
+              "It is less accurate",
               "Because the course only uses participant accounts for material no document covers",
             ],
             correctIndex: 0,
@@ -737,9 +738,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Which source hedges its first claim with the words \"what was said to be\"?",
             options: [
               "The New York Times",
-              "NBC News, in its obituary of the sponsor published in the same month",
-              "Time magazine, in its 1980 article on the company's falling market share",
-              "Black Enterprise, in its list of great moments in Black business",
+              "NBC News",
+              "Time",
+              "NPR",
             ],
             correctIndex: 0,
             explanation:
@@ -763,9 +764,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Which two dates does the sponsor's memoir separate?",
             options: [
               "1969 and 1971",
-              "1954 and 1957, the founding of the company and the launch of its second brand",
-              "1971 and 1972, the national launch of the show and the sponsor's second share offering",
-              "1975 and 1977, the consent agreement and the federal appeals court's decision",
+              "1954 and 1957",
+              "1971 and 1972",
+              "1975 and 1977",
             ],
             correctIndex: 0,
             explanation:
@@ -776,8 +777,8 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What does the sponsor's memoir date to 10 December 1969?",
             options: [
               "A first public trading of its shares",
-              "The listing of the company's shares on the American Stock Exchange in New York",
-              "The first broadcast of the company's hour-long television variety special",
+              "The Amex listing",
+              "A TV special",
               "The day the company first bought advertising time inside a national programme",
             ],
             correctIndex: 0,
@@ -789,9 +790,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What does the sponsor's memoir date to January 1971?",
             options: [
               "The American Stock Exchange listing",
-              "The first public trading of the company's shares to outside investors",
-              "The first broadcast of Soul Train as a nationally syndicated programme",
-              "The introduction of Afro Sheen as a brand separate from Ultra Sheen",
+              "The first public trading",
+              "The national launch",
+              "Afro Sheen's launch",
             ],
             correctIndex: 0,
             explanation:
@@ -802,7 +803,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "If the memoir is right about those two dates, what follows for the competing first claims?",
             options: [
               "Both can be true at once",
-              "One of them must be false, since only one company can hold a given first",
+              "One is false",
               "Neither can be checked, since no document records either of the two events",
               "The earlier claim cancels the later one, which is why the 1971 date is usually dropped",
             ],
@@ -828,7 +829,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Which source calls the sponsor \"the first Black-controlled company to sponsor a national television program\"?",
             options: [
               "The New York Times",
-              "NPR, in its report on the death of the programme's creator in February 2012",
+              "NPR",
               "The Encyclopedia of Television, in its entry on the programme itself",
               "Block Club Chicago, in its 2025 article on the origins of Afro Sheen",
             ],
@@ -854,9 +855,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Which source calls Soul Train \"the first black-oriented music variety show ever offered on American television\"?",
             options: [
               "The Encyclopedia of Television",
-              "NPR, in the report it published on the day of the creator's death",
-              "Black Enterprise, in its article on the 1993 sale of the sponsor's company",
-              "Variety, in its report of the franchise purchase announced in April 2016",
+              "NPR",
+              "Black Enterprise",
+              "Variety",
             ],
             correctIndex: 0,
             explanation:
@@ -869,7 +870,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
               "Block Club Chicago",
               "The Encyclopedia of Television, in its survey entry on the programme",
               "The New York Times, in its 2026 obituary of the programme's national sponsor",
-              "Time magazine, in its 1980 report on the Black hair-care business",
+              "Time",
             ],
             correctIndex: 0,
             explanation:
@@ -880,9 +881,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Which source uses the wording \"the first nationally syndicated program sponsored by a black company\"?",
             options: [
               "Black Enterprise",
-              "NPR, in its 2012 report on the death of the programme's creator",
-              "The Encyclopedia of Television, in its entry on first-run syndication",
-              "The New York Times, in its obituary of the sponsor published in July 2026",
+              "NPR",
+              "Time",
+              "Variety",
             ],
             correctIndex: 0,
             explanation:
@@ -893,8 +894,8 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What is a qualifier?",
             options: [
               "The limiting words inside a claim",
-              "The name of the person or publication that first put a claim into print",
-              "The evidence a source offers in support of a claim it has just made",
+              "A claim's author",
+              "Its evidence",
               "A second claim added to make the first one sound more impressive",
             ],
             correctIndex: 0,
@@ -906,9 +907,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Why does a superlative get repeated, according to this lesson?",
             options: [
               "It is a marketing asset",
-              "Because reference works require one superlative in every biographical entry",
-              "Because a first claim is easier to verify than a claim about ordinary events",
-              "Because newspapers are obliged to repeat a claim once a company has published it",
+              "Encyclopedias demand it",
+              "It is easy to verify",
+              "Papers must repeat it",
             ],
             correctIndex: 0,
             explanation:
@@ -919,8 +920,8 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What tends to happen to a superlative each time it is repeated?",
             options: [
               "It loses a qualifier",
-              "It gains a citation, since each repetition adds the name of a new source",
-              "It is narrowed, because each repeater adds a limitation the last one omitted",
+              "It is cited",
+              "It narrows",
               "It is checked, because a claim cannot be repeated without first being verified",
             ],
             correctIndex: 0,
@@ -958,9 +959,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What does this course never do with a superlative?",
             options: [
               "Print it bare",
-              "Quote it, since any first claim is unverifiable and therefore unusable in a lesson",
-              "Compare it to another source's wording, since that would confuse a learner",
-              "Include it in an assessment, since a claim about a first cannot be graded",
+              "Quote it",
+              "Compare it",
+              "Grade it",
             ],
             correctIndex: 0,
             explanation:
@@ -971,9 +972,9 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "What is scope, in this lesson's vocabulary?",
             options: [
               "The exact set a claim covers",
-              "The number of separate sources that have repeated the same claim over time",
-              "The geographic area a television signal reaches from a single transmitter",
-              "The range of years over which a company held a particular market position",
+              "A repeat count",
+              "A signal's reach",
+              "A range of years",
             ],
             correctIndex: 0,
             explanation:
@@ -984,7 +985,7 @@ Yenigun, S. (2012, February 1). Soul Train creator Don Cornelius dies at 75. NPR
             prompt: "Which later claim does this lesson say a later section takes apart?",
             options: [
               "That Magic Johnson bought Soul Train",
-              "That the programme was the longest-running syndicated show in television history",
+              "That it ran longest",
               "That the sponsor's hair relaxer was the first to carry a warning about its ingredients",
               "That the network rival of 1973 was cancelled after a public protest to its broadcaster",
             ],
@@ -1122,9 +1123,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "At which Chicago radio station did Don Cornelius work before television?",
             options: [
               "WVON",
-              "WGCI, the station where the programme's announcer later spent part of his career",
-              "WCIU, the ultra high frequency outlet that first carried the local programme",
-              "KGFJ, the Los Angeles station whose disc jockey hosted the 1973 network rival",
+              "WGCI",
+              "WCIU",
+              "KGFJ",
             ],
             correctIndex: 0,
             explanation:
@@ -1136,7 +1137,7 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             options: [
               "The Voice of the Negro",
               "The Voice of the Nation, a name chosen when the station changed owners in the 1960s",
-              "Westside Variety and Only News, the format the station carried before it changed hands",
+              "Westside News",
               "The Voice of the North, a reference to the destination of the Great Migration",
             ],
             correctIndex: 0,
@@ -1148,9 +1149,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What year do the sources give for Cornelius joining WVON?",
             options: [
               "1966 or 1967",
-              "1970, the same year the local television programme first went to air in Chicago",
-              "1971, the year the programme began its national run without a network",
-              "1954, the year the company that later sponsored the programme was founded",
+              "1970",
+              "1971",
+              "1954",
             ],
             correctIndex: 0,
             explanation:
@@ -1161,9 +1162,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "Who was Cornelius's superior and mentor at the radio station?",
             options: [
               "Roy Wood",
-              "George O'Hare, the merchandise manager who committed the first advertising money",
-              "Dick Griffey, who became the programme's talent coordinator and his business partner",
-              "Buster Jones, the disc jockey who went on to host a competing network programme",
+              "George O'Hare",
+              "Dick Griffey",
+              "Buster Jones",
             ],
             correctIndex: 0,
             explanation:
@@ -1174,9 +1175,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What did Roy Wood do that gave Cornelius his television opening?",
             options: [
               "He moved to the television station",
-              "He bought advertising time on the station and insisted Cornelius be given a programme",
-              "He sold the station a format he had developed and hired Cornelius to present it",
-              "He introduced Cornelius to the hair-care company that became the national sponsor",
+              "He bought time for him",
+              "He sold it a format",
+              "He found the sponsor",
             ],
             correctIndex: 0,
             explanation:
@@ -1202,7 +1203,7 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
               "Less revenue, so less to lose",
               "Higher advertising rates, because scarcity of reach raised the price of each spot",
               "A guaranteed network payment, which insulated the station from its own ratings",
-              "An obligation to carry public affairs programming in place of entertainment",
+              "Public-affairs rules",
             ],
             correctIndex: 0,
             explanation:
@@ -1212,9 +1213,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
           {
             prompt: "What did having fewer network obligations give WCIU?",
             options: [
-              "Genuinely open hours",
-              "A larger share of the national advertising money spent in the Chicago market",
-              "The right to sell its programmes on to stations in other cities",
+              "Genuinely open hours in its schedule",
+              "More national ad money",
+              "Rights to resell its shows",
               "Access to the network film libraries that filled most independent schedules",
             ],
             correctIndex: 0,
@@ -1226,9 +1227,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "How did a programme for a Black Chicago audience fit WCIU's position?",
             options: [
               "It matched the station's stated aim",
-              "It filled a quota the Federal Communications Commission imposed on the station",
-              "It was the only kind of programme the station was licensed to broadcast",
-              "It replaced a network programme the station had lost earlier that season",
+              "It met an FCC quota",
+              "It was all it could air",
+              "It replaced a lost show",
             ],
             correctIndex: 0,
             explanation:
@@ -1252,9 +1253,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "In what form did the Chicago programme air, according to the sponsor's memoir?",
             options: [
               "Black and white",
-              "In colour, taped four episodes at a time on a single weekend each month",
-              "Live, with no recording made of any episode from the local Chicago run",
-              "On film, which the station shipped to other cities after each Chicago broadcast",
+              "In colour",
+              "Live, unrecorded",
+              "On shipped film",
             ],
             correctIndex: 0,
             explanation:
@@ -1265,8 +1266,8 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What is the cheapest thing a station can give a new programme?",
             options: [
               "An hour nobody is paying for",
-              "A share of the revenue from the advertising it sells during network programmes",
-              "A production crew drawn from the staff it already employs for its news operation",
+              "A revenue share",
+              "Its news crew",
               "A guarantee that the programme will be carried for a full season regardless of ratings",
             ],
             correctIndex: 0,
@@ -1278,9 +1279,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What is the cheapest thing a producer can give a new programme?",
             options: [
               "His own labour",
-              "A percentage of the profits the programme has not yet earned",
-              "The studio equipment he has bought outright rather than rented",
-              "The performers' fees, which a producer can defer until the show is sold",
+              "A profit share",
+              "His own equipment",
+              "Deferred fees",
             ],
             correctIndex: 0,
             explanation:
@@ -1291,9 +1292,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What is inventory, in broadcasting?",
             options: [
               "The advertising time a station has to sell",
-              "The recorded episodes a station keeps in its own film and tape library",
-              "The equipment a station owns, counted for tax and insurance purposes",
-              "The list of programmes a station has contracted to carry in a coming season",
+              "Its tape library",
+              "Its taxable equipment",
+              "Its contracted programmes",
             ],
             correctIndex: 0,
             explanation:
@@ -1317,9 +1318,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What is moonlighting?",
             options: [
               "Working a second job",
-              "Producing a programme overnight when studio rates are at their lowest",
-              "Selling advertising time on a station where you are not formally employed",
-              "Taking unpaid leave from one employer in order to start a business",
+              "Producing overnight",
+              "Freelance ad sales",
+              "Taking unpaid leave",
             ],
             correctIndex: 0,
             explanation:
@@ -1331,7 +1332,7 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             options: [
               "Why the programme existed at all",
               "Which dances the studio audience performed in any given week of the run",
-              "How the programme's music was selected and who chose the performers",
+              "Who chose the music",
               "Why the programme was recorded in black and white rather than in colour",
             ],
             correctIndex: 0,
@@ -1344,8 +1345,8 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             options: [
               "Ultra high frequency",
               "Very high frequency, whose transmitters were restricted to lower power that year",
-              "Neither, because by 1970 all receivers tuned both bands equally well",
-              "The cable channels, which in 1970 carried only distant network signals",
+              "Neither",
+              "Cable",
             ],
             correctIndex: 0,
             explanation:
@@ -1356,9 +1357,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What did WCIU give Cornelius in exchange for him producing the pilot at his own expense?",
             options: [
               "Studio space",
-              "A weekly fee against the advertising it expected to sell during the programme",
-              "A guarantee of thirteen weeks on the air regardless of how the pilot performed",
-              "The right to sell the programme to stations in other cities once it had proved itself",
+              "A weekly fee",
+              "Thirteen weeks",
+              "Resale rights",
             ],
             correctIndex: 0,
             explanation:
@@ -1369,9 +1370,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "Under that trade with WCIU, who paid the pilot's expenses?",
             options: [
               "Cornelius",
-              "Sears, through the merchandise manager who later bought advertising time",
-              "The station, which recovered the cost from the advertising it sold afterward",
-              "Johnson Products, which was already the programme's national sponsor by then",
+              "Sears",
+              "The station",
+              "The sponsor",
             ],
             correctIndex: 0,
             explanation:
@@ -1395,9 +1396,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "Who was George O'Hare?",
             options: [
               "A Sears merchandise manager",
-              "The general manager of the Chicago station that first carried the programme",
-              "The account executive who introduced the sponsor to the programme in 1971",
-              "The talent coordinator who booked the performers for the national episodes",
+              "WCIU's manager",
+              "An ad agency man",
+              "The talent booker",
             ],
             correctIndex: 0,
             explanation:
@@ -1408,9 +1409,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "How many Sears stores did George O'Hare's group cover?",
             options: [
               "Five",
-              "Twenty-five, the same number as the syndicator's first list of target markets",
-              "Nine, one in each of the cities that carried the programme at its national launch",
-              "One hundred, matching the number of markets the show reached by 1974",
+              "Twenty-five",
+              "Nine",
+              "One hundred",
             ],
             correctIndex: 0,
             explanation:
@@ -1423,7 +1424,7 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
               "In Chicago's inner city",
               "Spread across the nine markets that carried the programme when it went national",
               "In the suburbs ringing Chicago, where the chain's largest outlets were concentrated",
-              "In Los Angeles, close to the studio where the national episodes were taped",
+              "In Los Angeles",
             ],
             correctIndex: 0,
             explanation:
@@ -1434,9 +1435,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "How much of the cost of airing the show did the Sears commitment cover?",
             options: [
               "Only a fraction",
-              "All of it, which is why the programme is often described as a Sears production",
-              "About half, with the producer covering the balance out of his radio salary",
-              "None, because the commitment was made in merchandise rather than in money",
+              "All of it",
+              "About half",
+              "None of it",
             ],
             correctIndex: 0,
             explanation:
@@ -1447,9 +1448,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What did Sears use its time on the programme to advertise?",
             options: [
               "Phonographs",
-              "Hair-care products, which were the category the national sponsor later occupied",
-              "Television sets, aimed at households that did not yet receive the UHF band",
-              "Its catalogue credit accounts, which the chain was promoting heavily that year",
+              "Hair care",
+              "Television sets",
+              "Credit accounts",
             ],
             correctIndex: 0,
             explanation:
@@ -1473,8 +1474,8 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "Which three roles did Cornelius fill without pay in those weeks?",
             options: [
               "Host, producer and salesman",
-              "Host, camera operator and editor, working alone in the station's studio",
-              "Producer, talent coordinator and syndicator for the stations outside Chicago",
+              "Host and editor",
+              "Booker, syndicator",
               "Host, station manager and advertising director for the whole of channel 26",
             ],
             correctIndex: 0,
@@ -1486,9 +1487,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "Why does this course treat unpaid founder labour as a form of financing?",
             options: [
               "It funds the business out of his wages",
-              "Because unpaid work can be claimed against tax as an investment in the company",
-              "Because a station counts unpaid labour as part of the advertising it has sold",
-              "Because the wages are recorded as a loan the business must later repay",
+              "It is tax-deductible",
+              "Stations count it as sales",
+              "It is booked as a loan",
             ],
             correctIndex: 0,
             explanation:
@@ -1512,8 +1513,8 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "How should the reference work's list of local sponsors be treated?",
             options: [
               "As a starting point",
-              "As a complete roster, since the entry was compiled from the station's own records",
-              "As unusable, since a reference work may not be cited for any factual claim",
+              "As final",
+              "As useless",
               "As more reliable than the trade press, which did not cover local advertising",
             ],
             correctIndex: 0,
@@ -1527,7 +1528,7 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
               "Both, as parts of one arrangement",
               "Only the version in which the producer financed everything out of his own pocket",
               "Only the version in which the retail chain underwrote the programme's costs",
-              "Neither, because no source records how the local programme was paid for",
+              "Neither",
             ],
             correctIndex: 0,
             explanation:
@@ -1538,9 +1539,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What is a pilot?",
             options: [
               "A test episode",
-              "The first episode of a programme's second season, used to relaunch it",
-              "An episode made for a sponsor's internal use and never intended for broadcast",
-              "A programme carried by one station under an agreement to share its costs",
+              "A season opener",
+              "A rerun",
+              "A shared feed",
             ],
             correctIndex: 0,
             explanation:
@@ -1551,9 +1552,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What does it mean to be paid in kind?",
             options: [
               "Paid in goods or services",
-              "Paid later, once the business has earned enough revenue to cover the debt",
-              "Paid in shares of the company rather than in cash or in goods",
-              "Paid by a third party on behalf of the person who owes the money",
+              "Paid later",
+              "Paid in shares",
+              "Paid by another",
             ],
             correctIndex: 0,
             explanation:
@@ -1564,9 +1565,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "Whose account is the description of George O'Hare and the Sears commitment?",
             options: [
               "Cornelius's own",
-              "The Federal Trade Commission's, from its investigation of the programme's sponsor",
-              "A Sears corporate history published by the retailer in the mid-1970s",
-              "An independent reporter's, filed for Billboard's news pages in 1970",
+              "The FTC's",
+              "Sears's own",
+              "A reporter's",
             ],
             correctIndex: 0,
             explanation:
@@ -1590,8 +1591,8 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What does this lesson say a sponsor who covers a fraction of a cost still is?",
             options: [
               "The difference between airing and not",
-              "A minority owner of the programme, in proportion to the share of costs covered",
-              "Legally entitled to approve the programme's content under broadcasting practice",
+              "A minority owner",
+              "Its content censor",
               "Irrelevant, since a fraction of a cost cannot keep a programme on the air",
             ],
             correctIndex: 0,
@@ -1603,9 +1604,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "Who told George E. Johnson about the programme, according to his memoir?",
             options: [
               "An account executive at his agency",
-              "The general manager of channel 26, who called on him to sell advertising time",
-              "A distributor in Detroit who had seen the programme while travelling in Chicago",
-              "The programme's talent coordinator, who was looking for a national sponsor",
+              "Channel 26's manager",
+              "A Detroit distributor",
+              "The talent coordinator",
             ],
             correctIndex: 0,
             explanation:
@@ -1616,9 +1617,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "On what day of the week does the memoir say Johnson watched a taping at the station?",
             options: [
               "A Thursday",
-              "A Saturday, when the studio was closed and the crew worked on overtime rates",
-              "A Sunday, the day the programme was recorded for broadcast the following week",
-              "A Monday, before the week's schedule of programmes had been finalised",
+              "A Saturday",
+              "A Sunday",
+              "A Monday",
             ],
             correctIndex: 0,
             explanation:
@@ -1630,7 +1631,7 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             options: [
               "The energy of the room",
               "A host capable of carrying an hour of programming without a studio audience",
-              "Advertising time, since the station had already sold every available spot",
+              "Ad time",
               "Music rights, which the station had not cleared for broadcast outside Chicago",
             ],
             correctIndex: 0,
@@ -1655,9 +1656,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "Who hosted the colour pilot described in the memoir?",
             options: [
               "Cornelius",
-              "Redd Foxx, who had starred in the sponsor's earlier hour-long television special",
-              "Buster Jones, the disc jockey who later hosted the 1973 network rival",
-              "Roy Wood, the radio mentor who had brought Cornelius to the television station",
+              "Redd Foxx",
+              "Buster Jones",
+              "Roy Wood",
             ],
             correctIndex: 0,
             explanation:
@@ -1668,9 +1669,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What decision does the memoir say followed the colour pilot?",
             options: [
               "That the company would sponsor the show",
-              "That the company would buy the programme outright from its creator",
-              "That the company would produce a rival programme of its own for syndication",
-              "That the company would wait a further year before committing any money",
+              "To buy the show outright",
+              "To make a rival show",
+              "To wait another year",
             ],
             correctIndex: 0,
             explanation:
@@ -1681,8 +1682,8 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "Why do the two accounts of who paid for a Soul Train pilot not contradict each other?",
             options: [
               "They describe two different pilots",
-              "Because the memoir is a later recollection and the trade press account is wrong",
-              "Because the station repaid the producer once the sponsor's money arrived",
+              "The memoir is wrong",
+              "The station repaid him",
               "Because both accounts describe the same payment, made jointly by two parties",
             ],
             correctIndex: 0,
@@ -1695,7 +1696,7 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             options: [
               "Calling both of them the pilot",
               "The fact that the two sources were published fifty-one years apart from each other",
-              "A difference of one year in the date each source gives for the same event",
+              "A one-year gap",
               "The trade paper's refusal to name the sponsor that paid for the colour test",
             ],
             correctIndex: 0,
@@ -1720,9 +1721,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What name does the sponsor's memoir give for that same agency?",
             options: [
               "Allen, Anderson, Niefeld & Paley",
-              "Niefeld, Paley & Kuhn, which is also the name the 1974 trade section uses",
-              "Bozell & Jacobs, the firm the agency is said to have merged into later",
-              "Vince Cullers Advertising, which handled the company's Afro Sheen account",
+              "Niefeld, Paley & Kuhn",
+              "Bozell & Jacobs",
+              "Vince Cullers",
             ],
             correctIndex: 0,
             explanation:
@@ -1733,9 +1734,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What does the memoir call the account executive who made the introduction?",
             options: [
               "Tom Kuehn",
-              "Tom Burrell, who later founded the Black-owned agency that took over the account",
-              "Vince Cullers, who had created the company's first consumer advertisement",
-              "George O'Hare, the Sears manager who had committed the first advertising money",
+              "Tom Burrell",
+              "Vince Cullers",
+              "George O'Hare",
             ],
             correctIndex: 0,
             explanation:
@@ -1746,8 +1747,8 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What does this course do about the two different agency names?",
             options: [
               "Prints both and files the question",
-              "Adopts the memoir's version, since the sponsor knew his own agency's name",
-              "Adopts the trade paper's version and leaves the memoir's name out entirely",
+              "Adopts the memoir's",
+              "Adopts the trade paper's",
               "Treats the difference as proof that neither source can be relied upon",
             ],
             correctIndex: 0,
@@ -1759,9 +1760,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What did Billboard report in 1972 that the sponsor had financed before Soul Train?",
             options: [
               "Two hour-long specials",
-              "A weekly half-hour programme carried by nine stations in the Midwest",
-              "A national radio series broadcast from Chicago five afternoons a week",
-              "A series of cinema advertisements shown before films in Black neighbourhoods",
+              "A weekly show",
+              "Radio shows",
+              "Cinema ads",
             ],
             correctIndex: 0,
             explanation:
@@ -1772,9 +1773,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "How does Billboard print the title of those specials?",
             options: [
               "And Beautiful",
-              "Soul Unlimited, which is the title of the network rival that appeared in 1973",
-              "The Sound of Philadelphia, after the theme the programme later adopted",
-              "Watu Wazuri, the phrase used in the sponsor's print advertising campaign",
+              "Soul Unlimited",
+              "The Sound of Philadelphia",
+              "Watu Wazuri",
             ],
             correctIndex: 0,
             explanation:
@@ -1786,7 +1787,7 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             options: [
               "More than $300,000",
               "More than a million dollars, the same figure Billboard gives for the 1972 airtime",
-              "About $100,000, the amount the memoir gives for each later Los Angeles taping",
+              "$100,000",
               "About $12 million, which is the company's stated sales figure for 1971",
             ],
             correctIndex: 0,
@@ -1798,9 +1799,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "In how many markets does the memoir say the second special ran?",
             options: [
               "25",
-              "Seven, the number of cities that carried Soul Train at its national launch",
-              "100, the number of markets the programme reached by 1974",
-              "200, the eventual reach the memoir gives for the programme itself",
+              "Seven",
+              "100",
+              "200",
             ],
             correctIndex: 0,
             explanation:
@@ -1811,8 +1812,8 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What did Johnson say retailers would not do when he advertised on those specials?",
             options: [
               "Order extra stock in advance",
-              "Accept his advertising posters for display in the windows of their shops",
-              "Sell his products at the prices the company printed on its own packaging",
+              "Display his posters",
+              "Keep his prices",
               "Allow his salesmen into the stores to count the stock on the shelves",
             ],
             correctIndex: 0,
@@ -1824,9 +1825,9 @@ Sippel, J. (1972, August 26). "Soul Train's" 45-mkt. $1 mil backing. *Billboard*
             prompt: "What does this lesson say the sponsor was really buying when he backed the programme?",
             options: [
               "A lever on retailers",
-              "A share of the programme's future syndication revenue in every market it reached",
-              "Editorial control over which performers appeared on the programme each week",
-              "An audience measurement he could sell on to other advertisers in the category",
+              "A syndication cut",
+              "Control of bookings",
+              "Ratings data to sell",
             ],
             correctIndex: 0,
             explanation:
@@ -1986,9 +1987,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How does the Encyclopedia of Television define first-run syndication?",
             options: [
               "Made to be sold to programmers other than the networks",
-              "A programme sold to stations only after a network has finished running it",
-              "A programme produced by a network and then licensed to stations outside its affiliates",
-              "A programme whose advertising is sold nationally while its airtime is sold locally",
+              "A rerun sold after network play",
+              "A network show licensed to non-affiliates",
+              "National ads, local airtime",
             ],
             correctIndex: 0,
             explanation:
@@ -2012,9 +2013,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How many deals does a network sale take to reach the country?",
             options: [
               "One",
-              "One for each of the network's affiliated stations in every individual market",
-              "Two, one with the network and one with the advertiser who sponsors the programme",
-              "Twenty-five, the number of markets a national launch was expected to cover",
+              "Dozens",
+              "Two",
+              "Twenty-five",
             ],
             correctIndex: 0,
             explanation:
@@ -2025,9 +2026,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How many deals does first-run syndication take to reach the country?",
             options: [
               "One per market, repeatedly",
-              "One, with a syndicator who then guarantees national coverage in a single contract",
-              "Three, one with each of the national networks that agrees to carry the programme",
-              "None, because a syndicated programme is distributed free to any station that wants it",
+              "One, nationally",
+              "Three",
+              "None",
             ],
             correctIndex: 0,
             explanation:
@@ -2040,7 +2041,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "The producer's side, market by market",
               "The network, which assigns the programme a slot across its affiliated stations",
               "The advertiser, which buys the time directly from each station in the line-up",
-              "The regulator, which allocates hours among competing syndicated programmes",
+              "The regulator",
             ],
             correctIndex: 0,
             explanation:
@@ -2051,8 +2052,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "In first-run syndication, who usually pays for production?",
             options: [
               "The producer or the sponsor",
-              "The network, which recovers the cost from the advertising it sells nationally",
-              "The stations, which share the cost in proportion to the size of their markets",
+              "The network",
+              "The stations",
               "The syndicator, which is repaid out of the programme's later licence fees",
             ],
             correctIndex: 0,
@@ -2064,9 +2065,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Who usually owns a programme made for a network?",
             options: [
               "The network",
-              "The producer, who licenses each broadcast to the network for a fixed fee",
-              "The sponsor, in proportion to the share of production costs it has covered",
-              "The affiliated stations, jointly, for as long as they continue to carry it",
+              "The producer",
+              "The sponsor",
+              "The affiliates",
             ],
             correctIndex: 0,
             explanation:
@@ -2090,9 +2091,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How quickly can a network end a programme it carries?",
             options: [
               "In one decision",
-              "Only at the end of a season, and only after consulting its affiliated stations",
-              "One market at a time, as each affiliate decides whether to keep carrying it",
-              "Never, once a full season has been ordered and paid for in advance",
+              "At season's end",
+              "Market by market",
+              "Never, once ordered",
             ],
             correctIndex: 0,
             explanation:
@@ -2103,9 +2104,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Where did Cornelius say control lies, in the 1974 Billboard section?",
             options: [
               "With the decision-makers behind the scenes",
-              "With the audience, whose viewing habits decide which programmes survive a season",
-              "With the sponsor, because the advertiser funds the programme and can withdraw",
-              "With the syndicator, because it chooses which stations are offered the programme",
+              "With the audience",
+              "With the sponsor",
+              "With the syndicator",
             ],
             correctIndex: 0,
             explanation:
@@ -2116,8 +2117,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What did Cornelius say in 1974 about prime time programmes on the networks?",
             options: [
               "Not one was produced by a Black man or woman",
-              "That every one of them was produced by the network rather than an outside company",
-              "That none of them had a Black performer under contract as a regular cast member",
+              "Every one was network-made",
+              "None had a Black regular",
               "That all of them were sold on barter terms to the stations that carried them",
             ],
             correctIndex: 0,
@@ -2144,7 +2145,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "They would not carry it",
               "That two of them offered terms he judged unacceptable to the programme's creator",
               "That the programme was carried for a season before the network dropped it",
-              "That he never approached them, because the sponsor had already done so",
+              "He never asked",
             ],
             correctIndex: 0,
             explanation:
@@ -2155,9 +2156,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the sponsor's memoir say about approaching the three networks?",
             options: [
               "All three turned the programme down",
-              "That he never approached them, because syndication was always the plan",
-              "That one of them offered a slot the programme's creator declined to accept",
-              "That the networks agreed but wanted the sponsor's name removed from the show",
+              "He never approached them",
+              "One offered a slot",
+              "They wanted no sponsor",
             ],
             correctIndex: 0,
             explanation:
@@ -2194,8 +2195,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the 1974 section's phrase about stations refusing \"regardless of the compensation being offered by the syndicator\" imply?",
             options: [
               "That money was moving toward stations",
-              "That stations were paying the syndicator a licence fee for each episode carried",
-              "That the sponsor was paying stations directly rather than through the syndicator",
+              "Stations paid fees",
+              "The sponsor paid directly",
               "That the syndicator had no money and was offering only the programme itself",
             ],
             correctIndex: 0,
@@ -2208,7 +2209,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "A station contracted to carry a network's schedule",
               "A firm that sells a syndicated programme to stations in exchange for a commission",
-              "An advertiser that has bought all the commercial time in a single programme",
+              "A sole-sponsor advertiser",
               "A second station owned by the same company as an existing one in another market",
             ],
             correctIndex: 0,
@@ -2220,9 +2221,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What is compensation, in this lesson's vocabulary?",
             options: [
               "Money paid to a station to carry a programme",
-              "The fee an advertiser pays for a single slot inside a syndicated programme",
-              "A payment a producer makes to performers who appear without a separate fee",
-              "The refund a sponsor receives when a station fails to air a scheduled programme",
+              "An advertiser's slot fee",
+              "A performer's payment",
+              "A sponsor's refund",
             ],
             correctIndex: 0,
             explanation:
@@ -2233,9 +2234,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "On what date did the national Soul Train begin?",
             options: [
               "2 October 1971",
-              "17 August 1970, the date usually given for the local Chicago programme's debut",
-              "10 December 1969, the date the memoir gives for the sponsor's first share trading",
-              "10 March 1973, the first broadcast of the competing network programme",
+              "17 August 1970",
+              "10 December 1969",
+              "10 March 1973",
             ],
             correctIndex: 0,
             explanation:
@@ -2246,9 +2247,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How many stations carried the programme on its first national broadcast?",
             options: [
               "Seven",
-              "Nine, which is the number the sponsor's memoir gives for the launch line-up",
-              "Twenty-five, the number of markets the syndicator had targeted in advance",
-              "Thirty, the figure Billboard reported for the line-up in August 1972",
+              "Nine",
+              "Twenty-five",
+              "Thirty",
             ],
             correctIndex: 0,
             explanation:
@@ -2259,9 +2260,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How many markets had the syndicator targeted for the national launch?",
             options: [
               "Twenty-five",
-              "Seven, the same number that actually carried the first national broadcast",
-              "One hundred, the figure the programme reached about three years later",
-              "Forty-five, the number printed in a Billboard headline in August 1972",
+              "Seven",
+              "One hundred",
+              "Forty-five",
             ],
             correctIndex: 0,
             explanation:
@@ -2272,9 +2273,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Which Bay Area city appears on the 1974 trade section's launch list?",
             options: [
               "San Francisco",
-              "Oakland, which is the city the sponsor's 2025 memoir names instead",
-              "San Jose, added when the line-up expanded during the programme's first year",
-              "Sacramento, the only northern California market on the original target list",
+              "Oakland",
+              "San Jose",
+              "Sacramento",
             ],
             correctIndex: 0,
             explanation:
@@ -2285,9 +2286,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Where was the national programme taped?",
             options: [
               "Metromedia Studios in Hollywood",
-              "WCIU's studio in Chicago's Financial Exchange Building, where the local show was made",
-              "A network facility in New York, rented by the syndicator for one weekend a month",
-              "Tribune Entertainment's Chicago studios, which also handled its distribution",
+              "WCIU's Chicago studio",
+              "A New York facility",
+              "Tribune's studios",
             ],
             correctIndex: 0,
             explanation:
@@ -2298,9 +2299,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How many episodes were taped in each session?",
             options: [
               "Four",
-              "One, recorded on the same weekday each week throughout the production year",
-              "Thirteen, a full quarter of a season recorded in a single continuous block",
-              "Two, one for broadcast and one held in reserve in case of a scheduling change",
+              "One",
+              "Thirteen",
+              "Two",
             ],
             correctIndex: 0,
             explanation:
@@ -2311,8 +2312,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How often were those taping sessions held?",
             options: [
               "One weekend a month",
-              "Every weekend, producing four episodes a week for the syndicated line-up",
-              "Twice a year, in blocks long enough to record an entire season at once",
+              "Weekly",
+              "Biannually",
               "Whenever a sponsor confirmed the funding for the next group of episodes",
             ],
             correctIndex: 0,
@@ -2326,7 +2327,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "The studio was closed at weekends",
               "Because the episodes overran, forcing the crew to work beyond scheduled hours",
               "Because the crew was hired from a different city and paid travelling time",
-              "Because the sponsor insisted on recording each episode more than once",
+              "Retakes were required",
             ],
             correctIndex: 0,
             explanation:
@@ -2337,9 +2338,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What figure does the memoir give for the cost of each taping session?",
             options: [
               "More than $100,000",
-              "More than $300,000, which is the figure it gives for the first hour-long special",
-              "About $12 million, which is its figure for the sponsor's sales in one year",
-              "Over a million dollars, which is Billboard's figure for a year of airtime",
+              "More than $300,000",
+              "About $12 million",
+              "Over $1 million",
             ],
             correctIndex: 0,
             explanation:
@@ -2350,9 +2351,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How many cities are on the memoir's launch line-up?",
             options: [
               "Nine",
-              "Seven, the same number the 1974 trade section gives for the first broadcast",
-              "Twenty-five, matching the syndicator's original list of target markets",
-              "Two hundred, the eventual reach the memoir gives elsewhere for the programme",
+              "Seven",
+              "Twenty-five",
+              "Two hundred",
             ],
             correctIndex: 0,
             explanation:
@@ -2363,9 +2364,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Which city is the one real disagreement between the two launch lists?",
             options: [
               "St. Louis",
-              "Chicago, because no source records the programme airing there before 1971",
-              "Detroit, which appears on the memoir's list but not on the trade section's",
-              "Houston, which the trade section lists and the memoir leaves out",
+              "Chicago",
+              "Detroit",
+              "Houston",
             ],
             correctIndex: 0,
             explanation:
@@ -2376,9 +2377,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Why might Chicago appear on one launch list and not the other?",
             options: [
               "It already had the programme",
-              "Because the Chicago station dropped the programme shortly before the national launch",
-              "Because the trade section counted only markets where the sponsor bought time",
-              "Because the memoir confused the local station with one in another market",
+              "Chicago dropped it",
+              "Sponsor-only counts",
+              "The memoir erred",
             ],
             correctIndex: 0,
             explanation:
@@ -2390,7 +2391,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "No open time periods",
               "That the programme's sponsor was a competitor of an advertiser they already carried",
-              "That the syndicator would not guarantee a full season of episodes in advance",
+              "Short runs",
               "That the programme was produced in black and white and they broadcast in colour",
             ],
             correctIndex: 0,
@@ -2402,9 +2403,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How many markets did the programme reach within about eight months of the national launch?",
             options: [
               "25",
-              "Seven, the number that carried the first national broadcast in October 1971",
-              "45, the figure printed in a Billboard headline in August 1972",
-              "100, the number the 1974 section gives for the programme's reach that year",
+              "Seven",
+              "45",
+              "100",
             ],
             correctIndex: 0,
             explanation:
@@ -2415,8 +2416,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What market figure does the text of the August 1972 Billboard story give?",
             options: [
               "Over 30, with 40 expected",
-              "Exactly 45, which is also the number printed in the story's own headline",
-              "Seven, unchanged since the national launch the previous October",
+              "Exactly 45",
+              "Seven",
               "About 100, which is the figure the 1974 special section repeats",
             ],
             correctIndex: 0,
@@ -2428,9 +2429,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What market figure appears in the headline of that same August 1972 story?",
             options: [
               "45",
-              "30, the same number the body of the story gives for the current line-up",
-              "25, the number of markets the syndicator had originally targeted",
-              "100, the reach the programme would not reach for another two years",
+              "30",
+              "25",
+              "100",
             ],
             correctIndex: 0,
             explanation:
@@ -2441,9 +2442,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Why does the lesson say a headline figure and a story's text can differ?",
             options: [
               "A headline is written by someone else and rounds up",
-              "Because headlines are printed before the reporting is finished and cannot be corrected",
-              "Because a headline gives a projection while the text always gives a historical figure",
-              "Because the two numbers count different things, one markets and one stations",
+              "Headlines go to press first",
+              "Headlines give projections",
+              "They count different things",
             ],
             correctIndex: 0,
             explanation:
@@ -2454,9 +2455,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Which city outside the mainland United States had the programme by January 1973?",
             options: [
               "San Juan",
-              "Kingston, where a Caribbean station added it during the programme's second year",
-              "Honolulu, reached when the syndicator extended the line-up across the Pacific",
-              "Toronto, the first market outside the United States to carry the programme",
+              "Kingston",
+              "Honolulu",
+              "Toronto",
             ],
             correctIndex: 0,
             explanation:
@@ -2467,9 +2468,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Which firm does Billboard name as the programme's syndicator in August 1972?",
             options: [
               "Media Affiliates",
-              "Bozell & Jacobs, which appears in a Broadcasting trade listing a year afterward",
+              "Bozell & Jacobs",
               "Tribune Entertainment, which took the role as exclusive distributor from 1985",
-              "Metromedia, the company whose Hollywood studios recorded the national episodes",
+              "Metromedia",
             ],
             correctIndex: 0,
             explanation:
@@ -2493,9 +2494,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Which firm does Broadcasting list against Soul Train on 30 July 1973?",
             options: [
               "Bozell & Jacobs",
-              "Media Affiliates, the Omaha firm Billboard had named the previous August",
-              "Don Cornelius Productions, which by then handled its own syndication",
-              "Metromedia, which had moved from producing the programme to distributing it",
+              "Media Affiliates",
+              "Cornelius's firm",
+              "Metromedia",
             ],
             correctIndex: 0,
             explanation:
@@ -2508,7 +2509,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "Tribune Entertainment",
               "Bozell & Jacobs, which had been named in the trade listings from 1973 onward",
               "Media Affiliates, restored to the role after a decade under other management",
-              "Black Entertainment Television, which also began airing the awards show",
+              "BET",
             ],
             correctIndex: 0,
             explanation:
@@ -2532,8 +2533,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Why is the appearance of the name Bozell & Jacobs in the 1973 syndication listing worth noticing?",
             options: [
               "It is also named as the agency's merger partner",
-              "Because it is the firm that produced the competing network programme that year",
-              "Because it was the advertising agency that created the sponsor's Afro Sheen campaign",
+              "It produced the rival show",
+              "It made the Afro Sheen ads",
               "Because it later bought the programme's library and sold it on at a profit",
             ],
             correctIndex: 0,
@@ -2545,9 +2546,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What did Johnson Products sponsor fully, according to Billboard in August 1972?",
             options: [
               "The first half-hour",
-              "The whole hour, leaving the programme's creator with no advertising to sell",
-              "The second half-hour, with the retail chain taking the first half of the programme",
-              "Three minutes of each episode, with the creator selling the remaining three",
+              "The whole hour",
+              "The second half-hour",
+              "Three minutes each",
             ],
             correctIndex: 0,
             explanation:
@@ -2560,7 +2561,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "Weekly spots in the second half-hour",
               "Full sponsorship of the second half-hour, matching the hair-care company's deal",
               "A one-off package of advertising covering the programme's national launch only",
-              "Nothing, having ended its involvement when the programme left Chicago",
+              "Nothing",
             ],
             correctIndex: 0,
             explanation:
@@ -2584,9 +2585,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What did Johnson say about that advertising expenditure in 1972?",
             options: [
               "It was the largest ever for his firm",
-              "That it would be recovered within a single quarter of increased retail sales",
-              "That it was smaller than the sum he had spent on his two earlier specials",
-              "That it had been matched dollar for dollar by the programme's syndicator",
+              "It would repay in a quarter",
+              "Less than the specials",
+              "The syndicator matched it",
             ],
             correctIndex: 0,
             explanation:
@@ -2597,8 +2598,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How does the sponsor's memoir describe the division of advertising time?",
             options: [
               "Three minutes each",
-              "By half-hours, matching the description Billboard printed in August 1972",
-              "As a single block of six minutes bought entirely by the hair-care company",
+              "By halves",
+              "All six",
               "As time sold separately by each station in the syndicated line-up",
             ],
             correctIndex: 0,
@@ -2610,9 +2611,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Who sold the other three minutes, according to the memoir?",
             options: [
               "Cornelius",
-              "The syndicator, which kept the proceeds as its fee for placing the programme",
-              "Sears, which retained the second half of the programme's advertising time",
-              "Each station, which sold the remaining time locally and kept the revenue",
+              "The syndicator",
+              "Sears Roebuck",
+              "Each station",
             ],
             correctIndex: 0,
             explanation:
@@ -2636,8 +2637,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What was George E. Johnson's stated argument for why television became affordable for his firm?",
             options: [
               "The audience was concentrated",
-              "That the programme's production costs were shared with a second national sponsor",
-              "That syndicated airtime cost less per viewer than network airtime of the same length",
+              "A second sponsor",
+              "Cheaper per viewer",
               "That the programme reached more households than any network variety show",
             ],
             correctIndex: 0,
@@ -2650,7 +2651,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "A misspelling in the printed page",
               "A word the course has substituted for one that could not be read in the scan",
-              "A passage the reporter paraphrased rather than quoting directly",
+              "A paraphrase",
               "A sentence that was later corrected by the magazine in a subsequent issue",
             ],
             correctIndex: 0,
@@ -2662,9 +2663,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What is a spot, in advertising?",
             options: [
               "A single advertising slot",
-              "The whole block of commercial time available inside one programme",
-              "A station's position in the ratings for a particular time period",
-              "A programme's regular place in a station's weekly schedule",
+              "A whole ad block",
+              "A ratings rank",
+              "A schedule slot",
             ],
             correctIndex: 0,
             explanation:
@@ -2675,8 +2676,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What is full sponsorship?",
             options: [
               "One advertiser buying all the time in a segment",
-              "An advertiser paying the whole cost of producing a programme as well as airing it",
-              "A sponsor that also owns a share of the programme it advertises in",
+              "Paying production too",
+              "A part-owner sponsor",
               "An arrangement in which a sponsor's name appears in the programme's title",
             ],
             correctIndex: 0,
@@ -2688,9 +2689,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What do the sources read for this course establish about what the syndicators earned?",
             options: [
               "Nothing",
-              "That they took a fixed commission of fifteen percent on every station sale",
-              "That they were paid in advertising time rather than in money",
-              "That their fee was covered entirely by the programme's national sponsor",
+              "15 percent",
+              "Airtime",
+              "Sponsor-paid",
             ],
             correctIndex: 0,
             explanation:
@@ -2878,9 +2879,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Where did George E. Johnson work before founding his own company?",
             options: [
               "Fuller Products",
-              "Johnson Publishing Company, where he worked in the magazine advertising department",
-              "Sears, Roebuck, as a merchandise manager for a group of Chicago stores",
-              "Revlon, in the laboratory that developed its permanent wave treatments",
+              "Johnson Publishing",
+              "Sears, Roebuck",
+              "Revlon's laboratory",
             ],
             correctIndex: 0,
             explanation:
@@ -2891,9 +2892,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What product did Johnson develop in the Fuller Products laboratory?",
             options: [
               "Ultra Wave",
-              "Ultra Sheen, which the company he later founded introduced in 1957",
-              "Afro Sheen, the brand created when the Afro hairstyle became popular",
-              "Creme of Nature, the relaxer a rival company marketed from the 1970s",
+              "Ultra Sheen",
+              "Afro Sheen",
+              "Creme of Nature",
             ],
             correctIndex: 0,
             explanation:
@@ -2904,9 +2905,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What kind of product was Ultra Wave?",
             options: [
               "A relaxer for men",
-              "A conditioning spray for natural hair, aimed at customers wearing an Afro",
-              "A shampoo sold only through the professional barbershop trade in Chicago",
-              "A facial cosmetic line developed for customers the mainstream brands ignored",
+              "An Afro spray",
+              "A barbershop shampoo",
+              "A facial cosmetic",
             ],
             correctIndex: 0,
             explanation:
@@ -2930,9 +2931,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "How much was the starting money Johnson borrowed?",
             options: [
               "$250",
-              "$500, the full amount deposited when the company opened its first bank account",
-              "$2,500, borrowed against the value of the company's first product formula",
-              "$7 million, the sum the memoir says the first share offering raised",
+              "$500",
+              "$2,500",
+              "$7 million",
             ],
             correctIndex: 0,
             explanation:
@@ -2943,9 +2944,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What kind of lender do two of the three accounts of the starting loan name?",
             options: [
               "A finance or loan company",
-              "A bank, which is the description the New York Times obituary gives",
-              "A relative, who lent the money against the value of the family's furniture",
-              "A supplier, who extended credit against the first order of ingredients",
+              "A bank",
+              "A relative",
+              "A supplier",
             ],
             correctIndex: 0,
             explanation:
@@ -2969,8 +2970,8 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Why does the kind of lender matter in this story?",
             options: [
               "It says something different about access to capital",
-              "Because a bank loan would have been repayable over a longer period than a company loan",
-              "Because only a bank loan would have had to be disclosed when the company sold shares",
+              "A bank loan runs longer",
+              "Only bank loans are disclosed",
               "Because the lender's name determines who owned a share of the new business",
             ],
             correctIndex: 0,
@@ -2982,9 +2983,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What happened at the first lender's branch, in both the New York Times account and the memoir?",
             options: [
               "He was refused",
-              "He was granted the loan but at a rate he considered too high to accept",
-              "He was offered a larger sum on condition that a partner guaranteed it",
-              "He was told to return once the company had made its first sale",
+              "The rate was too high",
+              "He needed a guarantor",
+              "He was told to wait",
             ],
             correctIndex: 0,
             explanation:
@@ -2995,7 +2996,7 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Which detail of the second loan appears in the New York Times account but not in the memoir passage read for this course?",
             options: [
               "That he said it was for a vacation",
-              "That the lender was a finance company rather than a bank",
+              "A finance-company lender",
               "That he had done business with the same firm before applying",
               "That his business partner contributed the other half of the money",
             ],
@@ -3008,9 +3009,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Who supplied the other half of the $500, according to the memoir?",
             options: [
               "His barber partner",
-              "His wife, out of the savings the couple had set aside for a house",
-              "The finance company, which lent the full amount in a single transaction",
-              "A distributor in Detroit, who advanced the money against future orders",
+              "His wife's savings",
+              "The finance company",
+              "A Detroit distributor",
             ],
             correctIndex: 0,
             explanation:
@@ -3021,9 +3022,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "When was Ultra Sheen introduced?",
             options: [
               "1957",
-              "1954, the same year the company itself was founded in Chicago",
-              "1967, the first year for which the Encyclopedia of Chicago gives a sales figure",
-              "1971, the year the company began sponsoring a national television programme",
+              "1954",
+              "1967",
+              "1971",
             ],
             correctIndex: 0,
             explanation:
@@ -3034,9 +3035,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What prompted the company to create Afro Sheen?",
             options: [
               "The Afro's popularity",
-              "A Federal Trade Commission requirement that it stop selling chemical relaxers",
-              "The loss of its professional barbershop trade to a competitor in Atlanta",
-              "A request from the television programme it was preparing to sponsor",
+              "An FTC order",
+              "Lost barbers",
+              "A TV request",
             ],
             correctIndex: 0,
             explanation:
@@ -3047,8 +3048,8 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What did Johnson later acknowledge about the first Afro Sheen reformulation?",
             options: [
               "It worked poorly on long, curly hair",
-              "That it had been copied from a formula developed by a rival Chicago company",
-              "That it had to be withdrawn after a regulator objected to one of its ingredients",
+              "It was copied",
+              "A regulator pulled it",
               "That it was sold at a loss for its first two years on the market",
             ],
             correctIndex: 0,
@@ -3073,9 +3074,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Roughly how many people did the company employ in Chicago?",
             options: [
               "About 500",
-              "About 25, which is why its advertising had to do the work a sales force could not",
-              "About 5,000, making it the largest private employer on Chicago's South Side",
-              "About 100, one for each market the programme reached by 1974",
+              "About 25",
+              "About 5,000",
+              "About 100",
             ],
             correctIndex: 0,
             explanation:
@@ -3112,9 +3113,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What does the tag line \"Watu Wazuri\" mean?",
             options: [
               "Beautiful people",
-              "Black is beautiful, translated into Swahili for the campaign's print advertisements",
-              "Our own hair, a phrase used in the company's barbershop posters",
-              "Love, peace and soul, the sign-off the programme's host used on air",
+              "Black is beautiful",
+              "Our own hair",
+              "Love, peace and soul",
             ],
             correctIndex: 0,
             explanation:
@@ -3125,9 +3126,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Where does Block Club Chicago report the Afro Sheen commercials played?",
             options: [
               "In Soul Train's commercial breaks",
-              "Only in cinemas, before films shown in Black neighbourhoods across the Midwest",
-              "During network evening news broadcasts, which reached the widest national audience",
-              "On radio stations in the nine markets where the programme had cleared time",
+              "Only in cinemas",
+              "On network news",
+              "On local radio",
             ],
             correctIndex: 0,
             explanation:
@@ -3138,9 +3139,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "To which agency does the memoir say the account moved in the early 1970s?",
             options: [
               "Burrell McBain",
-              "Vince Cullers Advertising, which had held the account since the middle of the 1950s",
-              "Bozell & Jacobs, the firm named in the trade listings as the programme's syndicator",
-              "Allen, Anderson, Niefeld & Paley, the mainstream firm that made the introduction",
+              "Vince Cullers",
+              "Bozell & Jacobs",
+              "Niefeld & Paley",
             ],
             correctIndex: 0,
             explanation:
@@ -3152,7 +3153,7 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             options: [
               "A client's business at an agency",
               "The ledger an agency keeps of the advertising time it has bought for a client",
-              "A single campaign, which ends when the advertisements stop running",
+              "One campaign",
               "The commission an agency earns on the media it places for a client",
             ],
             correctIndex: 0,
@@ -3164,9 +3165,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What did Billboard report in August 1972 about the sponsor's commitment to the programme?",
             options: [
               "Over a million dollars of time in twelve months",
-              "That it had bought the programme outright from its creator for an undisclosed sum",
-              "That it had reduced its commitment after the first year of national syndication",
-              "That it was paying the stations directly rather than buying through the syndicator",
+              "It bought the show outright",
+              "It cut its commitment",
+              "It paid stations directly",
             ],
             correctIndex: 0,
             explanation:
@@ -3177,9 +3178,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Who does the memoir say approached the company in the late 1960s?",
             options: [
               "Investment bankers",
-              "The Federal Trade Commission, opening the inquiry that led to the consent order",
-              "A television syndicator looking for a sponsor for a new programme",
-              "Revlon, seeking to buy the company before entering the market itself",
+              "FTC investigators",
+              "A syndicator",
+              "Revlon's buyers",
             ],
             correctIndex: 0,
             explanation:
@@ -3190,8 +3191,8 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What does the memoir date to 10 December 1969?",
             options: [
               "The first public trading of its shares",
-              "The listing of the company's shares on the American Stock Exchange",
-              "The second share offering, which the memoir places in January 1972",
+              "The Amex listing",
+              "The second offering",
               "The first broadcast of the company's hour-long television variety special",
             ],
             correctIndex: 0,
@@ -3203,9 +3204,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "At what price does the memoir say the shares opened on that first day?",
             options: [
               "$19",
-              "$35, which is the price the memoir gives for the second offering in January 1972",
-              "$70, the price it reports the shares reached within six months of the second offering",
-              "$2.50, the price it gives for the shares at the end of the 1980s",
+              "$35",
+              "$70",
+              "$2.50",
             ],
             correctIndex: 0,
             explanation:
@@ -3216,9 +3217,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "How much does the memoir say the first offering raised?",
             options: [
               "More than $7 million",
-              "More than a million dollars, the figure Billboard gives for a year of airtime",
-              "About $10.2 million, which the memoir gives as the company's sales for 1969",
-              "About $67 million, the figure reported for the sale of the company in 1993",
+              "Over $1 million",
+              "About $10.2 million",
+              "About $67 million",
             ],
             correctIndex: 0,
             explanation:
@@ -3231,7 +3232,7 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
               "The American Stock Exchange listing",
               "The first public trading of the company's shares to outside investors",
               "The start of the company's sponsorship of the national programme",
-              "The second offering of a further 15 percent of the company",
+              "The second offering",
             ],
             correctIndex: 0,
             explanation:
@@ -3255,9 +3256,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What does the memoir say happened in January 1972?",
             options: [
               "A second offering of a further 15 percent",
-              "The company's first public trading, a little over a year after the Amex listing",
-              "The Federal Trade Commission opened its inquiry into the company's relaxers",
-              "The company ended its profit-sharing plan at the insistence of its investors",
+              "Its first public trading",
+              "The FTC opened an inquiry",
+              "Profit-sharing ended",
             ],
             correctIndex: 0,
             explanation:
@@ -3268,9 +3269,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "At what price does the memoir say the second offering opened?",
             options: [
               "$35",
-              "$19, the price it gives for the first day of public trading in December 1969",
-              "$22, the price it recalls for the close of that same first day",
-              "$33.50, the price on the souvenir ticker tape from the exchange listing",
+              "$19",
+              "$22",
+              "$33.50",
             ],
             correctIndex: 0,
             explanation:
@@ -3281,9 +3282,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What share of the company does the memoir say the family kept after the second offering?",
             options: [
               "70 percent",
-              "85 percent, the share held after the first offering of 15 percent in 1969",
-              "51 percent, the minimum needed to retain control of a publicly traded company",
-              "100 percent, since the offerings sold only non-voting shares to outsiders",
+              "85 percent",
+              "51 percent",
+              "100 percent",
             ],
             correctIndex: 0,
             explanation:
@@ -3294,9 +3295,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What did the bankers want the company to end before it sold shares?",
             options: [
               "The profit-sharing plan",
-              "Its advertising in Black-owned magazines, which they considered too narrow a market",
-              "Its practice of selling directly to barbers rather than through retail distributors",
-              "Its television sponsorship, on the ground that it committed too much cash",
+              "Magazine ads",
+              "Barber sales",
+              "Its TV deal",
             ],
             correctIndex: 0,
             explanation:
@@ -3308,7 +3309,7 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             options: [
               "15 percent before taxes",
               "30 percent of net profits, matching the share of the company sold to the public",
-              "5 percent of sales, paid as an annual bonus rather than as a share of profit",
+              "A sales bonus",
               "70 percent, the same proportion of the company the family retained",
             ],
             correctIndex: 0,
@@ -3320,9 +3321,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Where does the memoir say the profit-sharing plan was disclosed?",
             options: [
               "In the prospectus",
-              "In the company's advertising, as part of its appeal to Black consumers",
+              "In ads",
               "In a letter sent to employees rather than in any document filed publicly",
-              "Nowhere, because the plan was ended before the shares were offered",
+              "Nowhere",
             ],
             correctIndex: 0,
             explanation:
@@ -3346,9 +3347,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What salary does the memoir say was set for Johnson at the time of the offering?",
             options: [
               "$200,000",
-              "$400,000, which the memoir gives as a salary paid at the end of the 1980s",
-              "Nothing, because he continued to take no salary after the company went public",
-              "$150,000, the figure it gives for the company's department heads",
+              "$400,000",
+              "Nothing",
+              "$150,000",
             ],
             correctIndex: 0,
             explanation:
@@ -3359,9 +3360,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What sales figure does the memoir give for 1970?",
             options: [
               "$11.2 million",
-              "$12.6 million, which is the figure the New York Times gives for the same year",
-              "$10.2 million, which the memoir gives for 1969 rather than for 1970",
-              "$17 million, the starting figure in the sponsor's signed 1974 statement",
+              "$12.6 million",
+              "$10.2 million",
+              "$17 million",
             ],
             correctIndex: 0,
             explanation:
@@ -3372,9 +3373,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What sales figure does the New York Times give for 1970?",
             options: [
               "$12.6 million",
-              "$11.2 million, which is the figure the sponsor's own memoir gives for that year",
-              "$37 million, the figure the memoir gives for the company's sales in 1975",
-              "$4 million, the figure the Encyclopedia of Chicago gives for 1967",
+              "$11.2 million",
+              "$37 million",
+              "$4 million",
             ],
             correctIndex: 0,
             explanation:
@@ -3385,9 +3386,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What does Johnson's signed statement in the 1974 Billboard section claim about sales?",
             options: [
               "They almost doubled in two years",
-              "That they trebled in the first year of the sponsorship alone",
-              "That they would have fallen without the programme's advertising",
-              "That the programme accounted for exactly half of the company's growth",
+              "They trebled in a year",
+              "They would have fallen",
+              "Half came from the show",
             ],
             correctIndex: 0,
             explanation:
@@ -3411,9 +3412,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What does that signed statement actually establish?",
             options: [
               "Timing, not cause",
-              "That the programme produced the growth, since no other advertising ran in those years",
-              "That the company's growth would have been faster without the sponsorship",
-              "Nothing at all, since a company cannot report its own sales figures",
+              "That it caused growth",
+              "Slower growth",
+              "Nothing at all",
             ],
             correctIndex: 0,
             explanation:
@@ -3424,8 +3425,8 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What is a prospectus?",
             options: [
               "A filed document describing an offering to investors",
-              "A regulator's order setting out what a company must put on its product labels",
-              "A trade paper's annual survey of the companies advertising in a given category",
+              "A labelling order",
+              "A trade survey",
               "The internal plan a company writes before deciding whether to sell shares",
             ],
             correctIndex: 0,
@@ -3437,9 +3438,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Which court decided Johnson Products Co. v. Federal Trade Commission?",
             options: [
               "The Seventh Circuit",
-              "The Ninth Circuit, sitting in Detroit, as the sponsor's memoir describes it",
-              "The Federal Trade Commission itself, acting as the reviewing body for its own order",
-              "The Supreme Court of the United States, on appeal from a Chicago district court",
+              "The Ninth Circuit",
+              "The Commission itself",
+              "The Supreme Court",
             ],
             correctIndex: 0,
             explanation:
@@ -3450,9 +3451,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "On what date was that appeal decided?",
             options: [
               "16 February 1977",
-              "10 February 1976, the date the Commission entered its order against the company",
-              "15 June 1975, the date the memoir gives for the news broadcast it describes",
-              "9 June 1975, the date the company executed the consent agreement",
+              "10 February 1976",
+              "15 June 1975",
+              "9 June 1975",
             ],
             correctIndex: 0,
             explanation:
@@ -3463,9 +3464,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What is the published citation of that opinion?",
             options: [
               "549 F.2d 35",
-              "Docket C-2788, which is the Commission's own identifier for the matter",
-              "1:24-cv-00335, the number of the federal case discussed in section 7",
-              "The opinion was never published, which is why accounts of it differ",
+              "Docket C-2788",
+              "1:24-cv-00335",
+              "It was unpublished",
             ],
             correctIndex: 0,
             explanation:
@@ -3476,9 +3477,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "When did the company execute the consent agreement, according to the opinion?",
             options: [
               "9 June 1975",
-              "19 November 1975, which is when the Commission accepted the agreement",
-              "19 January 1976, which is when the company asked to withdraw from it",
-              "10 February 1976, which is when the Commission entered its final order",
+              "19 November 1975",
+              "19 January 1976",
+              "10 February 1976",
             ],
             correctIndex: 0,
             explanation:
@@ -3489,9 +3490,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "When did the Commission accept the consent agreement?",
             options: [
               "19 November 1975",
-              "9 June 1975, the same day the company signed and delivered the agreement",
-              "16 February 1977, the day the appeal was decided against the Commission's position",
-              "15 June 1975, the date the memoir gives for a network news broadcast about it",
+              "9 June 1975",
+              "16 February 1977",
+              "15 June 1975",
             ],
             correctIndex: 0,
             explanation:
@@ -3515,9 +3516,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What reason did the company give for wanting to withdraw?",
             options: [
               "Delay in agreements with the rest of the industry",
-              "That the warning required was scientifically inaccurate for its own formulation",
-              "That the Commission had opened the inquiry from an office outside its region",
-              "That the cost of relabelling exceeded the value of the products affected",
+              "The warning was inaccurate",
+              "An out-of-region inquiry",
+              "Relabelling cost too much",
             ],
             correctIndex: 0,
             explanation:
@@ -3528,9 +3529,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Under what docket number did the Commission enter its order?",
             options: [
               "C-2788",
-              "549 F.2d 35, which is the citation of the court of appeals opinion instead",
-              "1:24-cv-00335, which belongs to a federal case filed decades later",
-              "The order carried no docket number, being a consent matter rather than a contested one",
+              "549 F.2d 35",
+              "1:24-cv-00335",
+              "No number",
             ],
             correctIndex: 0,
             explanation:
@@ -3542,7 +3543,7 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             options: [
               "Make warnings on its hair relaxer products",
               "Withdraw its relaxer products from sale until the formulation had been changed",
-              "Stop advertising its relaxer products on television for a period of two years",
+              "Stop TV ads",
               "Pay a penalty calculated as a share of the revenue from the products concerned",
             ],
             correctIndex: 0,
@@ -3554,8 +3555,8 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "How did the later order against Revlon compare, according to the opinion?",
             options: [
               "It was less restrictive",
-              "It was identical, which is what the company had asked the Commission for",
-              "It was more restrictive, covering cosmetics as well as hair-care products",
+              "Identical",
+              "Stricter",
               "There was no order against Revlon at any point in the proceedings",
             ],
             correctIndex: 0,
@@ -3580,9 +3581,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What did the court find about the record before it?",
             options: [
               "Too thin to judge abuse of discretion",
-              "Sufficient to decide every question the company had raised on appeal",
-              "Improperly assembled, so the whole proceeding had to begin again",
-              "Complete on the facts but silent on the law, so it certified the question upward",
+              "Sufficient on every point",
+              "Improperly assembled",
+              "Certified it upward",
             ],
             correctIndex: 0,
             explanation:
@@ -3593,9 +3594,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What did the court do about enforcement of the order?",
             options: [
               "Stayed it",
-              "Enforced it immediately, requiring the warnings to appear within thirty days",
-              "Set it aside permanently, leaving the company under no labelling obligation",
-              "Transferred enforcement to the Commission's Seattle office, which had begun the inquiry",
+              "Enforced it",
+              "Set it aside",
+              "Transferred it",
             ],
             correctIndex: 0,
             explanation:
@@ -3608,7 +3609,7 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
               "The Ninth Circuit, in Detroit",
               "The Seventh Circuit, in Chicago, which is the court named in the published opinion",
               "The Federal Trade Commission's own administrative law division",
-              "The Supreme Court of Illinois, sitting in Springfield",
+              "Illinois's top court",
             ],
             correctIndex: 0,
             explanation:
@@ -3619,9 +3620,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Where does the Seventh Circuit sit?",
             options: [
               "Chicago",
-              "Detroit, which is the city the sponsor's memoir names for the court",
-              "San Francisco, where the circuit the memoir names actually sits",
-              "Seattle, where the Commission office that opened the inquiry was located",
+              "Detroit",
+              "San Francisco",
+              "Seattle",
             ],
             correctIndex: 0,
             explanation:
@@ -3632,9 +3633,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What does the memoir say the product label had to read?",
             options: [
               "This product contains lye",
-              "Warning: may cause irritation to the scalp and injury to the eyes",
+              "May irritate",
               "Contains sodium hydroxide, the wording the Commission's order itself used",
-              "For professional use only, to be applied by a licensed cosmetologist",
+              "For salon use",
             ],
             correctIndex: 0,
             explanation:
@@ -3645,9 +3646,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "How does the memoir say Johnson first learned of the Commission's decision?",
             options: [
               "From an evening news broadcast",
-              "From a letter sent by the Commission's Seattle office to the company's president",
-              "From his own lawyer, who had been informed by the Commission that morning",
-              "From a competitor's sales representative calling on one of his distributors",
+              "A Commission letter",
+              "His own lawyer",
+              "A rival's salesman",
             ],
             correctIndex: 0,
             explanation:
@@ -3671,9 +3672,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Why is the memoir's broadcast date notable when set against the opinion?",
             options: [
               "The agreement was executed six days earlier",
-              "Because the broadcast took place before the Commission had opened its inquiry",
-              "Because the opinion says the company was notified by letter on the same day",
-              "Because no network news programme was broadcast on that date that year",
+              "It preceded the inquiry",
+              "A letter came that day",
+              "No newscast aired that day",
             ],
             correctIndex: 0,
             explanation:
@@ -3685,7 +3686,7 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             options: [
               "A win that required Revlon to match the warning",
               "A defeat, after which the company complied with the order as originally entered",
-              "A settlement in which the Commission withdrew its order entirely",
+              "A settlement",
               "A dismissal on the ground that the company had signed the agreement voluntarily",
             ],
             correctIndex: 0,
@@ -3697,8 +3698,8 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What does this course do with the two accounts of the case?",
             options: [
               "Prints both with their sources",
-              "Adopts the opinion and leaves the memoir's version out of the lesson",
-              "Adopts the memoir, because its author was present and the court was not",
+              "Adopts the opinion",
+              "Adopts the memoir",
               "Presents a combined version that removes the points of disagreement",
             ],
             correctIndex: 0,
@@ -3723,9 +3724,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Why does this lesson refuse to average the three market-share figures?",
             options: [
               "They measure different markets and dates",
-              "Because averaging percentages is never mathematically valid in any circumstance",
-              "Because two of the three sources have been withdrawn by their publishers",
-              "Because the company never published any market-share figures of its own",
+              "Averaging is never valid",
+              "Two were withdrawn",
+              "No company figures exist",
             ],
             correctIndex: 0,
             explanation:
@@ -3736,9 +3737,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What is a remand?",
             options: [
               "A case sent back for further proceedings",
-              "An order pausing enforcement while a separate question is resolved",
+              "An enforcement pause",
               "A settlement in which a company accepts an order without a finding against it",
-              "The identifier a regulator assigns to a matter it has opened",
+              "A docket number",
             ],
             correctIndex: 0,
             explanation:
@@ -3751,7 +3752,7 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
               "A settlement without the regulator proving its case",
               "A court order issued after a full trial on the merits of a regulator's complaint",
               "A private contract between two competing companies about how they will advertise",
-              "A regulator's promise not to investigate a company for a fixed period of years",
+              "A no-investigation pledge",
             ],
             correctIndex: 0,
             explanation:
@@ -3762,9 +3763,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "In what year did the divorce that changed control of Johnson Products take place?",
             options: [
               "1989",
-              "1993, the year the company was sold to a pharmaceutical group",
-              "1977, the year the court of appeals decided the regulatory case",
-              "1987, the year the founder's son became the company's president",
+              "1993",
+              "1977",
+              "1987",
             ],
             correctIndex: 0,
             explanation:
@@ -3775,9 +3776,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Who gained control of the company after that divorce?",
             options: [
               "Joan Johnson",
-              "The founder's eldest son, who had been made president of the company two years earlier",
-              "Ivax Corporation, which bought a controlling stake as part of the settlement",
-              "The company's outside investors, who by then held a majority of the shares",
+              "His eldest son",
+              "Ivax Corporation",
+              "Outside investors",
             ],
             correctIndex: 0,
             explanation:
@@ -3801,9 +3802,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Who bought Johnson Products in 1993?",
             options: [
               "Ivax",
-              "Carson Inc., which acquired two of its brands five years afterward",
-              "L'Oreal, which acquired the brands directly from the founding family",
-              "Procter & Gamble, which the New York Times names as the 1993 buyer",
+              "Carson Inc.",
+              "L'Oreal",
+              "P&G",
             ],
             correctIndex: 0,
             explanation:
@@ -3814,9 +3815,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What figure does the New York Times give for the 1993 sale?",
             options: [
               "About $32 million",
-              "$67 million, which is the figure Black Enterprise gives for the same transaction",
-              "Over $23 million, the annualised sales figure reported for the unit in 2009",
-              "About $30 million, the sales figure in the sponsor's signed 1974 statement",
+              "$67 million",
+              "Over $23 million",
+              "About $30 million",
             ],
             correctIndex: 0,
             explanation:
@@ -3827,9 +3828,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "How does the memoir reconcile the two figures reported for the 1993 sale?",
             options: [
               "One is the deal, one is a seller's share",
-              "By showing that the lower figure was an early offer later raised to the higher one",
-              "By explaining that the difference is the value of the shares rather than the cash",
-              "It does not, and simply repeats the higher of the two published figures",
+              "An offer raised later",
+              "Shares versus cash",
+              "It does not",
             ],
             correctIndex: 0,
             explanation:
@@ -3840,9 +3841,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What does Black Enterprise report an Operation PUSH official called for after the 1993 sale?",
             options: [
               "A boycott",
-              "A federal investigation into the terms on which the company was sold",
-              "A new tax on transactions transferring Black-owned firms to other owners",
-              "A public share offering to keep the company in community ownership",
+              "An inquiry",
+              "A new tax",
+              "A share offer",
             ],
             correctIndex: 0,
             explanation:
@@ -3853,9 +3854,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Which company acquired the Gentle Treatment and Ultra Sheen brands in 1998?",
             options: [
               "Carson Inc.",
-              "Wella AG, which acquired them at the end of 2000 rather than in 1998",
-              "Ivax, which had bought the whole company five years earlier",
-              "Procter & Gamble, which the New York Times names as the eventual buyer in 2004",
+              "Wella AG",
+              "Ivax",
+              "L'Oreal",
             ],
             correctIndex: 0,
             explanation:
@@ -3866,7 +3867,7 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What did the Justice Department require when L'Oreal bought Carson in 2000?",
             options: [
               "A divestiture of two brands",
-              "That the Chicago plant stay open for at least a further five years",
+              "A plant pledge",
               "That the combined company keep its African American management team in place",
               "That the price be reduced to reflect the competitive harm the deal would cause",
             ],
@@ -3879,9 +3880,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What share of retail relaxer-kit sales did the two divested brands represent?",
             options: [
               "About 14 percent",
-              "About 50 percent, which is the share the deal as proposed would have given the buyer",
-              "About 40 percent, the company's own share of the relaxer market in the late 1970s",
-              "About 85 percent, the share the memoir says the company once held",
+              "About 50 percent",
+              "About 40 percent",
+              "About 85 percent",
             ],
             correctIndex: 0,
             explanation:
@@ -3892,9 +3893,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Who agreed in December 2000 to buy those brands and the Johnson Products name?",
             options: [
               "Wella AG",
-              "Carson Inc., which had held the brands since acquiring them in 1998",
-              "Procter & Gamble, buying directly from L'Oreal rather than through an intermediary",
-              "Ivax, buying back the brands it had sold two years earlier",
+              "Carson Inc.",
+              "P&G",
+              "Ivax",
             ],
             correctIndex: 0,
             explanation:
@@ -3905,9 +3906,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "For how long did L'Oreal agree to keep making the products at the Chicago plant?",
             options: [
               "Up to 12 months",
-              "Up to five years, under a supply agreement covering the whole divested range",
-              "Indefinitely, since the buyer had no manufacturing capacity of its own",
-              "Not at all, because production moved with the brands on the day of the sale",
+              "Up to five years",
+              "Indefinitely",
+              "Not at all",
             ],
             correctIndex: 0,
             explanation:
@@ -3918,9 +3919,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What is the evidential status of Procter & Gamble's 2003 route to Johnson Products in this course?",
             options: [
               "Reported, not documented here",
-              "Verified from the company's own filings, which were read for this course",
-              "Contradicted by the Justice Department release and therefore not used at all",
-              "Confirmed by the sponsor's memoir, which gives the same date and route",
+              "Verified in filings",
+              "Contradicted, unused",
+              "Memoir-confirmed",
             ],
             correctIndex: 0,
             explanation:
@@ -3931,8 +3932,8 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Who led the management team that bought the Johnson Products unit in 2009?",
             options: [
               "Two former Pro-Line executives",
-              "Members of the founding family, buying the business back after sixteen years",
-              "The management of Wella, which had held the brands since the end of 2000",
+              "The founding family",
+              "Wella's managers",
               "An investor group assembled by the company's original advertising agency",
             ],
             correctIndex: 0,
@@ -3944,9 +3945,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What annualised sales figure was reported for the Johnson Products unit in 2009?",
             options: [
               "Over $23 million",
-              "About $40 million, the figure the Encyclopedia of Chicago gives for 1976",
-              "About $67 million, the figure reported for the whole 1993 transaction",
-              "About $12 million, the figure the memoir gives for the company's sales in 1971",
+              "About $40 million",
+              "About $67 million",
+              "About $12 million",
             ],
             correctIndex: 0,
             explanation:
@@ -3959,7 +3960,7 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
               "Ivax sold to L'Oreal in 1997",
               "Ivax sold to Carson Inc. in 1998, which L'Oreal then bought in 2000",
               "Ivax sold directly to Wella, which held the brands until Procter & Gamble bought it",
-              "Ivax kept the brands until the management buyout of 2009",
+              "Ivax kept them",
             ],
             correctIndex: 0,
             explanation:
@@ -3970,9 +3971,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Which company do the Justice Department and L'Oreal documents place between Ivax and L'Oreal?",
             options: [
               "Carson Inc.",
-              "Wella AG, which those documents place before rather than after L'Oreal",
-              "Procter & Gamble, which the New York Times names as the eventual owner",
-              "Revlon, which had entered the relaxer market in the early 1970s",
+              "Wella AG",
+              "P&G",
+              "Revlon",
             ],
             correctIndex: 0,
             explanation:
@@ -3983,9 +3984,9 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "Why does this course not use the New York Times line that Ivax sold the company to Procter & Gamble in 2004?",
             options: [
               "Two primary documents contradict it",
-              "Because the Times later published a correction retracting that sentence",
-              "Because the memoir gives a different date for the same transaction",
-              "Because the course does not cite newspaper obituaries for any business fact",
+              "The Times retracted it",
+              "The memoir disagrees",
+              "Obituaries are not cited",
             ],
             correctIndex: 0,
             explanation:
@@ -4009,8 +4010,8 @@ U.S. Department of Justice. (2000, July 31). *Justice Department requires L'Orea
             prompt: "What is a divestiture?",
             options: [
               "A sale a company is required to make",
-              "A voluntary decision to close a division rather than sell it to a competitor",
-              "The transfer of a brand name without the business that produced it",
+              "A voluntary closure",
+              "A stock swap",
               "A purchase paid for in the buyer's shares rather than in cash",
             ],
             correctIndex: 0,
@@ -4144,9 +4145,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What was Don Cornelius Productions?",
             options: [
               "The programme's production company",
-              "The firm that syndicated the programme to stations from 1972 onward",
-              "The merchandising wing that sold clothing carrying the programme's name",
-              "The record label the programme's talent coordinator founded in 1975",
+              "Its syndicator",
+              "Its clothing line",
+              "A record label",
             ],
             correctIndex: 0,
             explanation:
@@ -4157,9 +4158,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What was Soul Train Products, Inc.?",
             options: [
               "A merchandising wing",
-              "The production company that made the programme's national episodes in Hollywood",
-              "The label that released records by artists who had appeared on the programme",
-              "The company that bought the brand and the library in 2008",
+              "The production company",
+              "A record label",
+              "The 2008 buyer",
             ],
             correctIndex: 0,
             explanation:
@@ -4170,9 +4171,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Where was the Soul Train Club?",
             options: [
               "In San Francisco",
-              "In Chicago, close to the station that had carried the local programme",
-              "In Los Angeles, next to the studio where the national episodes were taped",
-              "In New York, where most of the record labels had their head offices",
+              "In Chicago",
+              "In Los Angeles",
+              "In New York",
             ],
             correctIndex: 0,
             explanation:
@@ -4183,9 +4184,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How does the 1974 section describe the club's finances?",
             options: [
               "Breaking even",
-              "Highly profitable, returning more than the programme itself in its first full year",
-              "Losing money, which is why it closed before the section went to press",
-              "Not discussed at all, since the section printed no financial detail",
+              "Highly profitable",
+              "Losing money",
+              "Not discussed",
             ],
             correctIndex: 0,
             explanation:
@@ -4196,9 +4197,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "In what year was Soul Train Records founded?",
             options: [
               "1975",
-              "1971, at the same time the programme began its national syndicated run",
-              "1987, the same year the programme's awards show was launched",
-              "1985, when a new distributor took over syndication of the programme",
+              "1971",
+              "1987",
+              "1985",
             ],
             correctIndex: 0,
             explanation:
@@ -4235,9 +4236,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What role did Dick Griffey hold on the programme?",
             options: [
               "Talent coordinator",
-              "Executive producer, credited on every national episode from 1971 onward",
-              "Syndicator, responsible for clearing the programme in individual markets",
-              "Account executive at the sponsor's advertising agency in Chicago",
+              "Executive producer",
+              "Syndicator",
+              "Account executive",
             ],
             correctIndex: 0,
             explanation:
@@ -4248,9 +4249,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How does Griffey describe his relationship with Cornelius in the 1974 section?",
             options: [
               "As his business partner",
-              "As his employee, working under contract to the production company",
-              "As a supplier, booking acts for a fee on each episode he filled",
-              "As a competitor, since he was building a rival programme of his own",
+              "As an employee",
+              "As a supplier",
+              "As a rival",
             ],
             correctIndex: 0,
             explanation:
@@ -4261,8 +4262,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the reference work say happened to Soul Train Records?",
             options: [
               "It folded after three years",
-              "It was sold to RCA, which continued releasing records under the same name",
-              "It became the foundation of the programme's later awards show",
+              "Sold to RCA",
+              "Became the awards",
               "It was absorbed into the production company when the programme moved distributors",
             ],
             correctIndex: 0,
@@ -4276,7 +4277,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "It is reported rather than established",
               "Because the label is outside the period this course covers",
               "Because two primary documents give conflicting years for the same event",
-              "Because naming it would identify a private individual by name",
+              "It names a private person",
             ],
             correctIndex: 0,
             explanation:
@@ -4287,9 +4288,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Why does a television programme build businesses around itself?",
             options: [
               "An hour holds a fixed amount of advertising",
-              "Because regulators cap the revenue a single programme is permitted to earn",
-              "Because a syndicator takes a share of advertising revenue but not of other income",
-              "Because sponsors require a programme to diversify before renewing a contract",
+              "Regulators cap its revenue",
+              "Syndicators share only ads",
+              "Sponsors demand it",
             ],
             correctIndex: 0,
             explanation:
@@ -4313,9 +4314,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What habit does this lesson recommend when you read that somebody built an empire?",
             options: [
               "Ask for the list",
-              "Compare the claim against the size of competitors in the same industry",
-              "Look for the year the word empire was first used about that person",
-              "Treat the claim as a superlative and discard it entirely",
+              "Compare rivals",
+              "Date the word",
+              "Discard it",
             ],
             correctIndex: 0,
             explanation:
@@ -4326,9 +4327,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the trade record say about what these businesses earned?",
             options: [
               "Almost nothing",
-              "That together they earned more than the programme's advertising revenue by 1974",
-              "That each one returned a profit within its first two years of trading",
-              "That the merchandising wing was the most profitable of the group",
+              "More than ads",
+              "Early profits",
+              "Merchandise led",
             ],
             correctIndex: 0,
             explanation:
@@ -4340,8 +4341,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "Motown, Stax, Columbia, Atlantic, Mercury and UA",
               "CBS, A&M, London, Sussex, Buddah and Curtom, the labels in the 1974 tribute pages",
-              "RCA and Roulette, the two companies with distribution ties to the programme",
-              "Essence and Ebony, the magazines that advertised alongside the record companies",
+              "RCA and Roulette",
+              "Essence and Ebony",
             ],
             correctIndex: 0,
             explanation:
@@ -4352,9 +4353,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What did Cornelius say in 1974 about national television for many Black acts?",
             options: [
               "Soul Train was their only chance at it",
-              "That the networks had begun booking them regularly by the middle of the decade",
-              "That local stations gave them more exposure than any national programme could",
-              "That record labels preferred radio and declined television appearances",
+              "Networks booked them often",
+              "Local TV gave them more",
+              "Labels preferred radio",
             ],
             correctIndex: 0,
             explanation:
@@ -4380,7 +4381,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "It included spots on the programme",
               "That the label had bought a full half-hour of the programme's advertising time",
               "That the label had withdrawn its artists from the programme over a fee dispute",
-              "That the label was launching a competing programme for the following season",
+              "A rival show",
             ],
             correctIndex: 0,
             explanation:
@@ -4391,9 +4392,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What did Billboard report in July 1973 about Adam VIII, Ltd.?",
             options: [
               "It ran an eight-track series on the programme",
-              "That it had acquired a stake in the programme's merchandising company",
-              "That it was distributing the programme to stations in eight additional markets",
-              "That it had signed the programme's dancers to a recording contract",
+              "It bought into the merchandise",
+              "It syndicated the show",
+              "It signed the dancers",
             ],
             correctIndex: 0,
             explanation:
@@ -4404,8 +4405,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What kind of advertisements did record labels buy in the 1974 special section?",
             options: [
               "Congratulatory advertisements",
-              "Classified listings offering artists for booking on future episodes",
-              "Coupons redeemable against records at shops in the programme's markets",
+              "Classified listings",
+              "Record coupons",
               "Recruitment notices seeking promotion staff in the programme's markets",
             ],
             correctIndex: 0,
@@ -4430,9 +4431,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What readership figure did that Essence advertisement use?",
             options: [
               "3,277,000",
-              "1,100, the number of hours of archival footage sold with the brand in 2008",
-              "3,000,000 exactly, rounded for use in advertising to the record trade",
-              "500,000, the circulation the magazine reported at its founding in 1970",
+              "1,100",
+              "3,000,000",
+              "500,000",
             ],
             correctIndex: 0,
             explanation:
@@ -4443,9 +4444,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the Essence advertisement show about the 1974 special section?",
             options: [
               "It was a trade floor as well as a tribute",
-              "That the magazine had a financial interest in the programme itself",
-              "That the section was produced independently of the programme's owners",
-              "That record companies were refusing to advertise in Black-owned magazines",
+              "Essence had a stake",
+              "It was independent",
+              "Labels shunned Black media",
             ],
             correctIndex: 0,
             explanation:
@@ -4456,9 +4457,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the sponsor's memoir say happened when he approached Motown before the national launch?",
             options: [
               "Its founder declined",
-              "Its founder agreed immediately and supplied the acts for the first four episodes",
+              "It agreed",
               "Its founder offered to co-produce the programme in exchange for a share",
-              "The company refused to receive him and he never met anyone there",
+              "No meeting",
             ],
             correctIndex: 0,
             explanation:
@@ -4471,7 +4472,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "The programme had no track record",
               "That the label's artists were already committed to a competing network programme",
               "That the programme's sponsor was a competitor of one of the label's own advertisers",
-              "That the label objected to a hair-care company sponsoring a music programme",
+              "A hair-care objection",
             ],
             correctIndex: 0,
             explanation:
@@ -4482,9 +4483,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the memoir say the sponsor did about performers for the first episode?",
             options: [
               "He hired and paid one himself",
-              "He postponed the launch until a label agreed to supply acts",
-              "He used only the studio dancers, with recorded music and no live performance",
-              "He asked the station to provide performers from its own local programmes",
+              "He delayed launch",
+              "Dancers only",
+              "Station performers",
             ],
             correctIndex: 0,
             explanation:
@@ -4508,8 +4509,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What did Motown do in the September 1974 special section?",
             options: [
               "Bought a congratulatory advertisement",
-              "Published a statement declining any association with the programme",
-              "Announced a distribution deal with the programme's own record label",
+              "Disowned the show",
+              "A label distribution deal",
               "Purchased a stake in the programme's merchandising company",
             ],
             correctIndex: 0,
@@ -4521,9 +4522,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the Motown sequence illustrate about quoting a business decision?",
             options: [
               "A decision has a date",
-              "That later statements always cancel earlier ones on the same subject",
-              "That a refusal recorded in a memoir cannot be checked against any document",
-              "That participants change their accounts once a venture becomes successful",
+              "Later cancels earlier",
+              "Memoirs are uncheckable",
+              "Success rewrites memory",
             ],
             correctIndex: 0,
             explanation:
@@ -4536,7 +4537,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "A paid page of praise aimed at the industry reading it",
               "A free notice a magazine prints when one of its advertisers reaches a milestone",
               "An advertisement placed by a programme to thank the stations that carry it",
-              "A discount offered to advertisers who renew for a second year",
+              "A renewal discount",
             ],
             correctIndex: 0,
             explanation:
@@ -4547,9 +4548,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What did Gladys Knight & the Pips write in the 1974 special section?",
             options: [
               "That it had helped build their career",
-              "That they had been paid a standard union fee for each appearance they made",
-              "That they had appeared more often than any other act on the programme",
-              "That they had declined other television offers in order to appear on it",
+              "They got a union fee",
+              "They appeared most often",
+              "They declined other offers",
             ],
             correctIndex: 0,
             explanation:
@@ -4573,8 +4574,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the Television Academy essay report about the programme's dancers?",
             options: [
               "Many were themselves aspiring performers",
-              "That all of them were paid a weekly retainer by the production company",
-              "That they were selected by the sponsor rather than by the production staff",
+              "All were on retainer",
+              "The sponsor chose them",
               "That none of them went on to careers in entertainment after leaving the show",
             ],
             correctIndex: 0,
@@ -4586,9 +4587,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Why does this course report the Television Academy essay without quoting it?",
             options: [
               "It was read only through a summarising tool",
-              "Because the essay is still in copyright and cannot be quoted at any length",
-              "Because its author was employed by the programme and is not independent",
-              "Because the course quotes only sources published before 1980",
+              "Copyright bars any quotation",
+              "Its author worked for the show",
+              "Only pre-1980 sources are quoted",
             ],
             correctIndex: 0,
             explanation:
@@ -4601,7 +4602,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "Two secondary sources disagree",
               "Because naming the group would identify a private individual by name",
               "Because the group's own records are sealed under a confidentiality agreement",
-              "Because the fact is irrelevant to a course about the programme's business",
+              "It is irrelevant",
             ],
             correctIndex: 0,
             explanation:
@@ -4612,9 +4613,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What billings figure does the reference work give for Vince Cullers Advertising by 1973?",
             options: [
               "$2.5 million",
-              "$2.5 billion, which would have made it the largest agency in the United States",
-              "Over a million dollars, the figure Billboard gives for a year of the sponsor's airtime",
-              "$200,000, the salary the memoir says was set for the sponsor's own post",
+              "$2.5 billion",
+              "Over $1 million",
+              "$200,000",
             ],
             correctIndex: 0,
             explanation:
@@ -4625,9 +4626,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What are billings, in advertising?",
             options: [
               "The value of advertising an agency places for clients",
-              "The fees an agency charges its clients for creative work each year",
+              "Its creative fees",
               "The profit an agency reports after paying for the media it has bought",
-              "The amount a client owes an agency at the end of a campaign",
+              "A client's end-of-campaign debt",
             ],
             correctIndex: 0,
             explanation:
@@ -4651,9 +4652,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the reference work say about Operation PUSH and the programme?",
             options: [
               "It was regularly boosted on the show",
-              "That it bought advertising time on the programme every week from 1972",
-              "That it owned a minority share of the programme's production company",
-              "That it organised a protest against the programme's national sponsor",
+              "It bought weekly ad time",
+              "It owned a minority share",
+              "It protested the sponsor",
             ],
             correctIndex: 0,
             explanation:
@@ -4664,8 +4665,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Why does this lesson count airtime given to an organisation as a business fact?",
             options: [
               "It is a transfer of value",
-              "Because charitable airtime is deductible against a broadcaster's tax liability",
-              "Because regulators required every syndicated programme to carry public service time",
+              "It is deductible",
+              "It was mandated",
               "Because the organisation paid for the time at a discounted rate",
             ],
             correctIndex: 0,
@@ -4679,7 +4680,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "The syndicators', Cornelius's and Griffey's earnings",
               "The sponsor's sales, the programme's ratings and the number of markets it reached",
               "The cost of each taping, the price of a spot and the size of the studio audience",
-              "The club's revenue, the label's sales and the merchandising arm's profit",
+              "The club, label and merchandise revenues",
             ],
             correctIndex: 0,
             explanation:
@@ -4690,9 +4691,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "From which side is the programme's revenue documented?",
             options: [
               "The buyer's side",
-              "The seller's side, through the production company's own annual accounts",
-              "Both sides equally, through the trade press and the company filings together",
-              "Neither, since no figure of any kind survives from the period",
+              "The seller's side",
+              "Both sides equally",
+              "Neither side",
             ],
             correctIndex: 0,
             explanation:
@@ -4703,9 +4704,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does it mean that a transaction is documented from one side only?",
             options: [
               "Half the picture is missing",
-              "That the transaction did not actually take place as described",
-              "That the missing side can be calculated from the side that survives",
-              "That the surviving record is unreliable and should not be used",
+              "It never happened",
+              "It can be inferred",
+              "It is unreliable",
             ],
             correctIndex: 0,
             explanation:
@@ -4729,8 +4730,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What is a distribution deal, for a record label?",
             options: [
               "A larger company handles getting its records into shops",
-              "An agreement to sell the label outright once it reaches a set level of sales",
-              "A contract under which a label supplies artists to a television programme",
+              "A planned sale",
+              "Supplying TV acts",
               "An arrangement in which a label pays a retailer for shelf position",
             ],
             correctIndex: 0,
@@ -4742,9 +4743,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What is exposure, as this section treats it?",
             options: [
               "Appearances that build an audience, exchanged as value",
-              "The share of a programme's viewers who belong to an advertiser's target group",
-              "The risk a sponsor takes when it funds an unproven programme",
-              "The number of markets in which a programme has cleared time",
+              "An advertiser's target share",
+              "A sponsor's risk",
+              "A markets count",
             ],
             correctIndex: 0,
             explanation:
@@ -4756,7 +4757,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "It is a claim made by the seller",
               "It counts households rather than individual readers of a publication",
-              "It is audited annually by the publication's own advertising agency",
+              "It is audited",
               "It can only be published once a magazine has been in print for five years",
             ],
             correctIndex: 0,
@@ -4769,8 +4770,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "The evidence for it is participants' own statements",
               "That it is confirmed by contract records held by the production company",
-              "That it is contradicted by the recording industry's own sales data",
-              "That no source of any kind makes the claim about anyone",
+              "Sales data contradict it",
+              "No source makes it",
             ],
             correctIndex: 0,
             explanation:
@@ -4794,9 +4795,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the reference work give as Don Cornelius Productions' address?",
             options: [
               "An address on Sunset Boulevard",
-              "The station's Chicago studio in the Financial Exchange Building",
-              "The Metromedia lot where the national episodes were recorded",
-              "A post office box in Omaha, shared with the programme's syndicator",
+              "WCIU's Chicago studio",
+              "The Metromedia lot",
+              "An Omaha post box",
             ],
             correctIndex: 0,
             explanation:
@@ -4807,9 +4808,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "In which year was Don Cornelius Productions sold?",
             options: [
               "2008",
-              "2016, when the brand and library were bought by a cable network division",
-              "2011, when investors took a stake in the parent company that held the library",
-              "1987, the year the programme's awards show was launched",
+              "2016",
+              "2011",
+              "1987",
             ],
             correctIndex: 0,
             explanation:
@@ -4822,7 +4823,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "A claim about whether a business made money",
               "A regulator's certification that a company's accounts are accurate",
               "A projection of what a business expects to earn in a coming year",
-              "A public statement of how much revenue a business collected",
+              "A revenue figure",
             ],
             correctIndex: 0,
             explanation:
@@ -4833,9 +4834,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Which firm is named in this course as holding the sponsor's account before Bozell & Jacobs?",
             options: [
               "Niefeld, Paley & Kuhn",
-              "Burrell McBain, the Black-owned agency the memoir says took the account later",
-              "Vince Cullers Advertising, which the memoir credits with naming Afro Sheen",
-              "Media Affiliates, the Omaha firm that syndicated the programme in 1972",
+              "Burrell McBain",
+              "Vince Cullers",
+              "Media Affiliates",
             ],
             correctIndex: 0,
             explanation:
@@ -4981,9 +4982,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "On what date did the network's soul programme first go to air?",
             options: [
               "Saturday 10 March 1973",
-              "Saturday 24 March 1973, the date most later retellings give for the premiere",
-              "Saturday 5 May 1973, the date a Billboard caption gives for a coming broadcast",
-              "Saturday 12 May 1973, the date of the trade column objecting to the programme",
+              "Saturday 24 March 1973",
+              "Saturday 5 May 1973",
+              "Saturday 12 May 1973",
             ],
             correctIndex: 0,
             explanation:
@@ -4994,9 +4995,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How is the first broadcast date established?",
             options: [
               "Two trade papers reported it independently",
-              "By a network press release reprinted in the trade papers of the following week",
-              "By a reference work citing a magazine article published in June that year",
-              "By the recollection of the programme's host, given many years afterward",
+              "A reprinted network release",
+              "A reference work's citation",
+              "The host's later recollection",
             ],
             correctIndex: 0,
             explanation:
@@ -5007,9 +5008,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Who hosted the network programme?",
             options: [
               "Buster Jones",
-              "Dick Clark, who also hosted the established programme it alternated with",
-              "Don Cornelius, hired by the network after the syndicated show was refused",
-              "Ronnie Dyson, who appeared as a performer during one of the tapings",
+              "Dick Clark",
+              "Don Cornelius",
+              "Ronnie Dyson",
             ],
             correctIndex: 0,
             explanation:
@@ -5020,9 +5021,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Where did the host work as a disc jockey?",
             options: [
               "KGFJ",
-              "WVON in Chicago, the station where the syndicated programme's creator had worked",
-              "WCIU, the Chicago television station that carried the local programme",
-              "WAPA, the San Juan station that added the syndicated programme in 1973",
+              "WVON",
+              "WCIU",
+              "WAPA",
             ],
             correctIndex: 0,
             explanation:
@@ -5033,9 +5034,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What is notable about how the March 1973 Billboard story refers to the programme?",
             options: [
               "It gives no title",
-              "It gives a title that no later source ever repeats in print",
-              "It calls it by the name of the established programme it alternated with",
-              "It refers to it only by the name of its host rather than by any title",
+              "A one-off title",
+              "The incumbent's name",
+              "Only the host's name",
             ],
             correctIndex: 0,
             explanation:
@@ -5046,8 +5047,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Where does the title Soul Unlimited first appear in the sources read for this course?",
             options: [
               "In a Billboard photograph caption",
-              "In the March 1973 Billboard news story about the first broadcast",
-              "In the May 1973 Record World column objecting to the programme",
+              "The March news story",
+              "The May column",
               "In a reference work published many years after the programme ended",
             ],
             correctIndex: 0,
@@ -5059,9 +5060,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What date does the April 1973 Billboard caption give for a coming broadcast?",
             options: [
               "5 May",
-              "10 March, the date of the programme's first broadcast that year",
-              "12 May, the date of the trade column objecting to the programme",
-              "7 June, the date of the magazine article a reference work later cited",
+              "10 March",
+              "12 May",
+              "7 June",
             ],
             correctIndex: 0,
             explanation:
@@ -5074,7 +5075,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "Alternated it with an established programme",
               "Gave it a new hour of its own on a weekday afternoon across the country",
               "Placed it in prime time, opposite the syndicated programme in most markets",
-              "Offered it to affiliates as an optional programme they could clear or decline",
+              "An optional feed",
             ],
             correctIndex: 0,
             explanation:
@@ -5086,7 +5087,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "It needs no new hour or clearances",
               "Because advertisers pay a premium for programmes that share a time period",
-              "Because production costs are shared between the two alternating programmes",
+              "Shared production",
               "Because regulators required networks to rotate programmes in every Saturday slot",
             ],
             correctIndex: 0,
@@ -5111,8 +5112,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does this lesson say about the later retelling that puts the premiere in the second half of March?",
             options: [
               "That date is at most the second broadcast",
-              "That it is correct, and the trade papers printed the wrong day of the month",
-              "That it refers to a different programme with a similar name on another network",
+              "It is correct",
+              "A different programme",
               "That it cannot be checked, because no contemporaneous record survives",
             ],
             correctIndex: 0,
@@ -5124,9 +5125,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What is a slot, in this section's vocabulary?",
             options: [
               "A fixed position in a schedule",
-              "The advertising time available for sale inside a single programme",
-              "The agreement by which a station carries a syndicated programme",
-              "The market in which a programme has cleared time for broadcast",
+              "Its ad inventory",
+              "A carriage deal",
+              "A cleared market",
             ],
             correctIndex: 0,
             explanation:
@@ -5138,7 +5139,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "The one already holding a time period",
               "The programme with the highest ratings in a given market that season",
-              "A programme produced by the network rather than by an outside company",
+              "A network-made show",
               "The first programme a station clears when it joins a syndicated line-up",
             ],
             correctIndex: 0,
@@ -5150,9 +5151,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How often did Billboard say the network programme would run?",
             options: [
               "Once per month",
-              "Every two weeks, which is what Record World's account implies instead",
-              "Every Saturday, replacing the established programme entirely",
-              "Four times a year, as an occasional special rather than a series",
+              "Every two weeks",
+              "Every Saturday",
+              "Quarterly",
             ],
             correctIndex: 0,
             explanation:
@@ -5176,8 +5177,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Who does Billboard credit as the programme's producer?",
             options: [
               "Super Soul Productions",
-              "Dick Clark, whom Record World and a later reference work both name instead",
-              "The network's own programming department in Los Angeles",
+              "Dick Clark",
+              "The network",
               "Don Cornelius Productions, under a co-production agreement",
             ],
             correctIndex: 0,
@@ -5202,9 +5203,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What would reconcile the two accounts of who produced the programme?",
             options: [
               "If the company were connected to Clark",
-              "If the two papers had been describing two different programmes entirely",
-              "If the host had produced the programme himself under a company name",
-              "Nothing could, because a company and a person cannot both be credited",
+              "Two different programmes",
+              "The host produced it",
+              "Nothing could",
             ],
             correctIndex: 0,
             explanation:
@@ -5215,9 +5216,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Who wrote the May 1973 Record World column objecting to the programme?",
             options: [
               "Dede Dabney",
-              "Buster Jones, the programme's own host, writing in his own defence",
-              "Don Cornelius, in a signed statement placed in the trade press",
-              "Jesse Jackson, in a letter the magazine printed in its correspondence pages",
+              "Buster Jones",
+              "Don Cornelius",
+              "Jesse Jackson",
             ],
             correctIndex: 0,
             explanation:
@@ -5228,7 +5229,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What did that column say about the hiring of the programme's host?",
             options: [
               "That it looked like playing Black against Black",
-              "That the host had been underpaid relative to others in the same role",
+              "He was underpaid",
               "That the host had been hired away from the syndicated programme's staff",
               "That the host was unqualified, having never worked in television before",
             ],
@@ -5241,9 +5242,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What ratings claim does the May 1973 column pass on?",
             options: [
               "That the established programme's ratings had fallen",
-              "That the new network programme had outrated the syndicated one in its first month",
-              "That the syndicated programme had lost half its audience since the rival appeared",
-              "That the network had refused to release any ratings for the new programme",
+              "The rival had outrated it",
+              "It had lost half its audience",
+              "No ratings were released",
             ],
             correctIndex: 0,
             explanation:
@@ -5254,8 +5255,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the word \"allegedly\" do in that ratings claim?",
             options: [
               "Marks it as unverified by the columnist",
-              "Signals that the figures came from the network's own research department",
-              "Indicates that the claim had been disputed in print by another columnist",
+              "Network-sourced figures",
+              "A disputed claim",
               "Shows that the column is quoting a named source rather than paraphrasing",
             ],
             correctIndex: 0,
@@ -5282,7 +5283,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "Reporting, judging and passing on a hedged claim",
               "Reporting, measuring audience share and naming a source for each figure",
               "Interviewing, editorialising and printing a correction to an earlier story",
-              "Advertising, reviewing and announcing a forthcoming broadcast date",
+              "Advertising and reviewing",
             ],
             correctIndex: 0,
             explanation:
@@ -5293,9 +5294,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does the May 1973 column establish?",
             options: [
               "That a controversy existed in the trade press",
-              "That the network intended to damage the syndicated programme",
-              "That the audience had begun leaving the established programme",
-              "That the new programme was cancelled as a result of the objection",
+              "Network intent to harm",
+              "Audience flight",
+              "The show's cancellation",
             ],
             correctIndex: 0,
             explanation:
@@ -5306,7 +5307,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Which three trade papers were text-searched for the brief behind this course?",
             options: [
               "Billboard, Broadcasting and Record World",
-              "Billboard, Jet and Rolling Stone, covering the whole of 1973",
+              "Billboard, Jet, Rolling Stone",
               "Variety, Broadcasting and the Hollywood Reporter, for the same eight months",
               "Ebony, Essence and Black Enterprise, the magazines the sponsor advertised in",
             ],
@@ -5345,8 +5346,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Why is an absence in a scanned text search not evidence of a cause?",
             options: [
               "A scan can garble a word and a paper prints selectively",
-              "Because scanning technology cannot read magazine text from before 1980",
-              "Because the searched papers had no reporters covering network television",
+              "Pre-1980 text is unreadable",
+              "No one covered networks",
               "Because absences are only meaningful when a database is complete to the page",
             ],
             correctIndex: 0,
@@ -5371,9 +5372,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How many layers of reporting stand between this course and Jesse Jackson's reported 1973 remarks?",
             options: [
               "Three",
-              "One, since the course quotes the magazine article directly from its own pages",
-              "None, since the remarks were made in a document the course reproduces",
-              "Two, since the reference work quotes him without an intermediate source",
+              "One",
+              "None",
+              "Two",
             ],
             correctIndex: 0,
             explanation:
@@ -5386,7 +5387,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "That the syndicated show had outrated the established one",
               "That the two programmes had drawn almost identical audiences all season",
               "That the network programme had beaten both of the others in its first month",
-              "That no ratings had been published for any of the programmes involved",
+              "No ratings were published",
             ],
             correctIndex: 0,
             explanation:
@@ -5398,7 +5399,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "Clark dropped it after discussions with Cornelius",
               "The network cancelled it after a formal protest from a civil rights organisation",
-              "It ran its full contracted season and was simply not renewed for a second",
+              "It ran out its season",
               "Its host resigned, and no replacement could be found before the autumn schedule",
             ],
             correctIndex: 0,
@@ -5410,9 +5411,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What words does the sponsor's memoir use before describing a threatened boycott of the network?",
             options: [
               "Rumor has it",
-              "The record shows, introducing a document he had read himself",
-              "I was told by the network, naming an executive as his source",
-              "As I witnessed, placing himself in the room when it was discussed",
+              "The record shows",
+              "I was told",
+              "As I witnessed",
             ],
             correctIndex: 0,
             explanation:
@@ -5423,8 +5424,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Why does this lesson value a self-flagged rumour?",
             options: [
               "The teller marks it as unverified",
-              "Because a participant's rumour is more likely to be true than a published report",
-              "Because it can be cited without attribution once the teller has hedged it",
+              "It is likelier true",
+              "It needs no attribution",
               "Because a flagged rumour counts as evidence when no document survives",
             ],
             correctIndex: 0,
@@ -5436,9 +5437,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does Clarence Avant's 1974 account in the special section describe?",
             options: [
               "Trying to get the networks to carry Soul Train",
-              "A meeting with the network about the rival programme in the spring of 1973",
-              "The negotiation that ended the rival programme after two months on air",
-              "His own role in producing the rival programme for the network",
+              "A spring 1973 network meeting",
+              "Ending the rival show",
+              "Producing the rival show",
             ],
             correctIndex: 0,
             explanation:
@@ -5450,7 +5451,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "It was not viewed for this course",
               "Because a documentary is never an acceptable source for a business claim",
-              "Because it contradicts his own contemporaneous statement from 1974",
+              "It contradicts him",
               "Because the film is no longer available and cannot be checked by a learner",
             ],
             correctIndex: 0,
@@ -5462,9 +5463,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "Which magazine issue does this lesson name as the first thing that would settle the question?",
             options: [
               "Rolling Stone of 7 June 1973",
-              "Billboard of 17 March 1973, which reported the programme's first broadcast",
-              "Record World of 12 May 1973, which carried the trade-press objection",
-              "Billboard of 28 September 1974, the special section about the syndicated show",
+              "Billboard of 17 March 1973",
+              "Record World of 12 May 1973",
+              "Billboard of 28 September 1974",
             ],
             correctIndex: 0,
             explanation:
@@ -5475,9 +5476,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What three things does this lesson say would settle why the rival programme ended?",
             options: [
               "The June 1973 magazine, the June 1973 Jet issues, and a last air date",
-              "A network press release, a ratings report and an interview with the host",
-              "The programme's production budget, its episode count and its advertising rates",
-              "A court filing, a regulator's decision and a trade association ruling",
+              "A press release, ratings and the host",
+              "Budget, episode count and ad rates",
+              "A court, a regulator and a trade body",
             ],
             correctIndex: 0,
             explanation:
@@ -5488,9 +5489,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What is the honest sentence this section ends on?",
             options: [
               "The programme began, drew an objection, and stopped, and why is unknown",
-              "The programme was cancelled after a boycott threat from civil rights leaders",
-              "The programme ended when its host left to return to radio in Los Angeles",
-              "The programme was never actually broadcast beyond its first two episodes",
+              "A boycott threat ended it",
+              "Its host went back to radio",
+              "It aired only twice",
             ],
             correctIndex: 0,
             explanation:
@@ -5503,7 +5504,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "The sequence of sources between a reader and an original statement",
               "The list of people a journalist interviewed while preparing an article",
               "A publisher's record of who holds the rights to reprint a given article",
-              "The order in which a claim was reported by competing publications",
+              "The order rivals reported it",
             ],
             correctIndex: 0,
             explanation:
@@ -5514,9 +5515,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does this course mean by an open question?",
             options: [
               "One it declines to answer, naming what would answer it",
-              "One that no source has ever addressed in print in any form",
-              "One whose answer depends on a judgment rather than on evidence",
-              "One a learner is asked to answer from their own reasoning",
+              "One no source has addressed",
+              "One settled by judgment",
+              "One left to the learner",
             ],
             correctIndex: 0,
             explanation:
@@ -5540,8 +5541,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What is caption evidence?",
             options: [
               "A fact established by a photograph's caption",
-              "A quotation printed beneath an advertisement rather than in an article",
-              "A correction a magazine prints under a photograph in a later issue",
+              "A quote under an ad",
+              "A photo correction",
               "The credit line naming the photographer who supplied an image",
             ],
             correctIndex: 0,
@@ -5553,9 +5554,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What is a corporate producer, as this section uses the term?",
             options: [
               "The company credited with making a programme",
-              "An executive employed by a network to oversee outside productions",
-              "The sponsor that funds a programme and takes a credit for doing so",
-              "The firm that sells a completed programme to individual stations",
+              "A network overseer",
+              "A credited sponsor",
+              "The syndicator",
             ],
             correctIndex: 0,
             explanation:
@@ -5568,7 +5569,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "The writer's opinion that one programme was better",
               "A ratings comparison drawn from the industry's published audience figures",
               "A side-by-side listing of the two programmes' production budgets",
-              "A survey of readers asking which of the two they preferred",
+              "A reader survey",
             ],
             correctIndex: 0,
             explanation:
@@ -5593,8 +5594,8 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             options: [
               "Gladys Knight and the Pips, Eddie Kendricks and others",
               "The dancers from the syndicated programme, recruited for the network show",
-              "No performers at all, since the story concerned only the schedule",
-              "Only the host, with music supplied from recordings rather than in person",
+              "No performers",
+              "Only the host",
             ],
             correctIndex: 0,
             explanation:
@@ -5605,9 +5606,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "How far ahead had the network programme been taped, according to Billboard in March 1973?",
             options: [
               "Three months",
-              "One week, with each episode recorded shortly before it was broadcast",
-              "A full year, so that the whole season existed before the first broadcast",
-              "Not at all, because the programme was transmitted live each time",
+              "One week",
+              "A full year",
+              "Not at all",
             ],
             correctIndex: 0,
             explanation:
@@ -5620,7 +5621,7 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
               "It shows how far the commitment already ran",
               "Because a taped programme cannot be cancelled once recording has finished",
               "Because it proves the network intended a full season of at least thirty episodes",
-              "Because advance taping was unusual for any programme of that period",
+              "Advance taping was rare",
             ],
             correctIndex: 0,
             explanation:
@@ -5631,9 +5632,9 @@ Wankoff, J. (n.d.). Cornelius, Don 1936-. In *Contemporary Black Biography*. Enc
             prompt: "What does this section keep separate from the question of why the rival programme ended?",
             options: [
               "Network intent and audience behaviour",
-              "The programme's title and the name of its host",
-              "The date of the first broadcast and the name of the producer",
-              "The identity of the columnist and the magazine she wrote for",
+              "The title and the host",
+              "The date and the producer",
+              "The columnist's identity",
             ],
             correctIndex: 0,
             explanation:
@@ -5810,9 +5811,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Until what year was Don Cornelius the programme's on-air host?",
             options: [
               "1993",
-              "2006, the year the programme stopped producing new national episodes",
-              "2008, the year he sold the brand, the rights and the library",
-              "1985, the year a new distributor took over syndication of the programme",
+              "2006",
+              "2008",
+              "1985",
             ],
             correctIndex: 0,
             explanation:
@@ -5823,9 +5824,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What was the state of the programme by 2008?",
             options: [
               "It was no longer making new episodes",
-              "It was still producing a weekly edition carried in about a hundred markets",
-              "It had moved to a cable network and was producing new episodes there",
-              "It had been off the air for more than twenty years",
+              "Still weekly in 100 markets",
+              "New episodes on cable",
+              "Off air for twenty years",
             ],
             correctIndex: 0,
             explanation:
@@ -5836,9 +5837,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "How many hours of archival footage were included in the 2008 sale?",
             options: [
               "About 1,100",
-              "About 100, one for each market the programme reached in 1974",
-              "About 40, matching the number of television specials in the library",
-              "About 1,000, which is the figure a 2016 report gives for vintage episodes",
+              "About 100",
+              "About 40",
+              "About 1,000",
             ],
             correctIndex: 0,
             explanation:
@@ -5850,8 +5851,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "MadVision Entertainment",
               "InterMedia Partners, which backed the buyer rather than making the purchase itself",
-              "Vibe Holdings, which held the brand at the time of the 2011 investment",
-              "BET Networks, which acquired the franchise eight years afterward",
+              "Vibe Holdings",
+              "BET Networks",
             ],
             correctIndex: 0,
             explanation:
@@ -5862,9 +5863,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Which private-equity firm backed the 2008 buyer?",
             options: [
               "InterMedia Partners",
-              "The Yucaipa Companies, which appears in the 2011 investment and the 2016 sale",
-              "Magic Johnson Enterprises, which invested in the parent company in 2011",
-              "Viacom, whose BET division bought the franchise in 2016",
+              "Yucaipa Companies",
+              "Magic Johnson Enterprises",
+              "Viacom's BET division",
             ],
             correctIndex: 0,
             explanation:
@@ -5875,7 +5876,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "How was Kenard Gibbs described in the 2008 report?",
             options: [
               "As the group publisher of Ebony and Jet",
-              "As the chairman of the private-equity firm backing the purchase",
+              "A private-equity chairman",
               "As the programme's long-serving talent coordinator and business partner",
               "As an executive of the network division that later bought the franchise",
             ],
@@ -5901,9 +5902,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Which three distinct things did the 2008 transaction transfer?",
             options: [
               "The brand, the production rights and the library",
-              "The production company, its studio lease and its staff contracts",
-              "The awards show, the merchandising arm and the record label",
-              "The syndication contracts, the advertising inventory and the station line-up",
+              "The company, studio lease and staff",
+              "The awards, merchandise and label",
+              "Contracts, inventory and line-up",
             ],
             correctIndex: 0,
             explanation:
@@ -5914,8 +5915,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Why was there anything left for Cornelius to sell in 2008?",
             options: [
               "Syndication left the programme in his hands",
-              "Because the network that carried it returned the rights when the run ended",
-              "Because the sponsor had transferred its share of the programme to him in 1980",
+              "The network returned the rights",
+              "The sponsor transferred its share",
               "Because copyright in a television programme reverts to its host after fifty years",
             ],
             correctIndex: 0,
@@ -5941,7 +5942,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "No source read here establishes it",
               "Because the sale was announced in two stages and May is only the first of them",
-              "Because the report used here was published in May and contradicts itself",
+              "The report contradicts it",
               "Because the exact month of a transaction is never material to a business history",
             ],
             correctIndex: 0,
@@ -5953,9 +5954,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "On what date did Don Cornelius die?",
             options: [
               "1 February 2012",
-              "2 February 2012, the date of the CNN report collecting tributes to him",
-              "22 February 2012, the date of a trade report about a possible revival",
-              "4 April 2016, the date the franchise purchase was announced",
+              "2 February 2012",
+              "22 February 2012",
+              "4 April 2016",
             ],
             correctIndex: 0,
             explanation:
@@ -5966,9 +5967,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is intellectual property, as this lesson uses the term?",
             options: [
               "Rights in a name, a recording or a format",
-              "The physical tapes and films a production company keeps in storage",
-              "A company's accumulated knowledge of how to make a particular programme",
-              "The contracts binding performers to appear on a programme",
+              "The stored tapes and films",
+              "Production know-how",
+              "Performer contracts",
             ],
             correctIndex: 0,
             explanation:
@@ -5980,8 +5981,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "Firms buying assets with pooled capital, often to sell on",
               "Shares in a company that are held by its founders rather than the public",
-              "The portion of a company's value not covered by its outstanding debt",
-              "An investment made by an individual rather than by an institution",
+              "Value net of debt",
+              "An individual's investment",
             ],
             correctIndex: 0,
             explanation:
@@ -6005,9 +6006,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What was Vibe Holdings, in relation to Soul Train?",
             options: [
               "The parent company",
-              "The syndicator that placed the programme with stations after 1985",
-              "The production company Cornelius had sold in 2008",
-              "The private-equity firm that had backed the 2008 purchase",
+              "The syndicator",
+              "Cornelius's company",
+              "The 2008 backer",
             ],
             correctIndex: 0,
             explanation:
@@ -6020,7 +6021,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
               "It was named and remained",
               "It sold its whole position to the incoming investors and withdrew",
               "It was not mentioned, which is why the transaction is often misdescribed",
-              "It became a minority holder in a newly created company",
+              "A minority stake",
             ],
             correctIndex: 0,
             explanation:
@@ -6031,8 +6032,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What role did Magic Johnson take in 2011?",
             options: [
               "Chairman of Vibe Holdings",
-              "Chief executive of Soul Train, replacing the incumbent named in the release",
-              "Sole owner of the Soul Train brand and its archival library",
+              "Soul Train's CEO",
+              "Sole owner",
               "Executive producer of a revived weekly edition of the programme",
             ],
             correctIndex: 0,
@@ -6044,9 +6045,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Who remained Soul Train's chief executive after the 2011 investment?",
             options: [
               "Kenard Gibbs",
-              "Magic Johnson, who took the role along with the chairmanship of the parent",
-              "Ron Burkle, whose firm was one of the incoming investors",
-              "Don Cornelius, who returned to the company he had sold in 2008",
+              "Magic Johnson",
+              "Ron Burkle",
+              "Don Cornelius",
             ],
             correctIndex: 0,
             explanation:
@@ -6070,9 +6071,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "In what three ways is the sentence \"in 2011 Magic Johnson bought Soul Train\" wrong?",
             options: [
               "Bought, Soul Train, and the implication the old owner left",
-              "The year, the name of the investor and the name of the company involved",
-              "It understates the price, the stake acquired and the scope of the assets",
-              "It confuses the 2011 investment with the 2008 sale by the programme's creator",
+              "The year, the investor, the company",
+              "The price, the stake, the assets",
+              "It confuses 2011 with 2008",
             ],
             correctIndex: 0,
             explanation:
@@ -6098,7 +6099,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
               "The 2016 sellers only make sense if 2011 was an investment",
               "Because misdescribing an investment as a purchase is actionable under securities law",
               "Because the investors would otherwise be liable for the later claims against the brand",
-              "Because the price of the 2011 transaction can be derived from the 2016 one",
+              "2011's price derives from 2016's",
             ],
             correctIndex: 0,
             explanation:
@@ -6109,8 +6110,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Who sold the Soul Train franchise in 2016?",
             options: [
               "InterMedia Partners and the Yucaipa Companies",
-              "Magic Johnson Enterprises, which had acquired it outright five years earlier",
-              "MadVision Entertainment, which had bought it from its creator in 2008",
+              "Magic Johnson Enterprises",
+              "MadVision Entertainment",
               "Don Cornelius Productions, which had retained the library after 2008",
             ],
             correctIndex: 0,
@@ -6122,9 +6123,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Who bought the franchise in 2016?",
             options: [
               "BET Networks, a division of Viacom",
-              "Vibe Holdings, the parent company named in the 2011 announcement",
-              "Tribune Entertainment, which had distributed the programme from 1985",
-              "Paramount Global, under the name it uses in the 2024 federal case",
+              "Vibe Holdings",
+              "Tribune Entertainment",
+              "Paramount Global",
             ],
             correctIndex: 0,
             explanation:
@@ -6135,9 +6136,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "On what date was the 2016 purchase announced?",
             options: [
               "4 April 2016",
-              "7 April 2016, the date that appears on a later trade article about the deal",
-              "9 February 2011, the date of the investment in the parent company",
-              "19 June 2008, the date of the report on the previous sale",
+              "7 April 2016",
+              "9 February 2011",
+              "19 June 2008",
             ],
             correctIndex: 0,
             explanation:
@@ -6149,7 +6150,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "The publication date of a later article",
               "The date the transaction formally completed after the earlier announcement",
-              "The date the seller's board approved the sale of the franchise",
+              "The board approval date",
               "The date the buyer first disclosed the price it had agreed to pay",
             ],
             correctIndex: 0,
@@ -6161,9 +6162,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "How does Music Business Worldwide describe the library acquired in 2016?",
             options: [
               "Over 1,100 television episodes and 40 specials",
-              "About 1,100 hours of archival footage, the figure used in the 2008 report",
-              "More than 1,000 vintage episodes, which is Variety's description instead",
-              "Every episode broadcast between 1971 and 1993, when the original host left",
+              "About 1,100 hours of footage",
+              "More than 1,000 vintage episodes",
+              "Every episode from 1971 to 1993",
             ],
             correctIndex: 0,
             explanation:
@@ -6175,8 +6176,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "More than 1,000 vintage episodes",
               "Over 1,100 episodes and 40 specials, the wording another outlet uses",
-              "About 1,100 hours, the measure used in the 2008 report",
-              "A complete run of every programme made since the local Chicago launch",
+              "About 1,100 hours",
+              "Every episode ever made",
             ],
             correctIndex: 0,
             explanation:
@@ -6200,9 +6201,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What earlier part of this course does BET's 2016 description echo?",
             options: [
               "The 1970s cluster of businesses around the show",
-              "The 1972 division of the programme's hour between two advertisers",
-              "The 1973 network response of alternating a rival into an existing slot",
-              "The 1971 refusal of all three networks to carry the programme",
+              "The 1972 split of the hour",
+              "The 1973 network rival",
+              "The 1971 network refusals",
             ],
             correctIndex: 0,
             explanation:
@@ -6213,9 +6214,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Since what year had BET been airing the Soul Train Awards before the purchase?",
             options: [
               "2009",
-              "1987, the year the awards show was launched by the programme's creator",
-              "2011, the year investors took a stake in the parent company",
-              "2016, the same year it bought the franchise outright",
+              "1987",
+              "2011",
+              "2016",
             ],
             correctIndex: 0,
             explanation:
@@ -6226,7 +6227,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is a parent company?",
             options: [
               "A company that owns another",
-              "The original company from which a brand was first launched",
+              "The original firm",
               "A holding vehicle created only to sell a business on to a third party",
               "The company that produces a programme, as distinct from the one that sells it",
             ],
@@ -6239,9 +6240,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is ancillary revenue?",
             options: [
               "Income from events, products and licensing",
-              "The share of advertising revenue a syndicator keeps after paying stations",
+              "A syndicator's cut",
               "Money a buyer sets aside to cover claims arising after a sale completes",
-              "The interest earned on the proceeds of a sale before they are distributed",
+              "Interest on proceeds",
             ],
             correctIndex: 0,
             explanation:
@@ -6252,9 +6253,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Which question does the open-case lesson ask that the rest of the course does not?",
             options: [
               "Who is still owed something after a sale",
-              "Which buyer paid the highest price for the brand over four decades",
-              "Whether a syndicated programme can ever be as profitable as a network one",
-              "How a regulator decides whether a media sale should be permitted",
+              "Which buyer paid most",
+              "Whether syndication pays",
+              "How regulators approve sales",
             ],
             correctIndex: 0,
             explanation:
@@ -6278,8 +6279,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What was Joe Cobb's profession?",
             options: [
               "A Chicago radio broadcaster",
-              "A television producer who worked on the programme's national episodes",
-              "An advertising executive at the agency that handled the sponsor's account",
+              "A TV producer",
+              "An ad executive",
               "A record company executive who supplied performers to the programme",
             ],
             correctIndex: 0,
@@ -6291,9 +6292,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Which two Chicago stations are named in his career?",
             options: [
               "WVON and WGCI",
-              "WCIU and WAPA, the two television stations that carried the programme",
-              "KGFJ and WCIU, the stations the 1973 material names",
-              "WVON and KGFJ, one in Chicago and one in Los Angeles",
+              "WCIU and WAPA",
+              "KGFJ and WCIU",
+              "WVON and KGFJ",
             ],
             correctIndex: 0,
             explanation:
@@ -6304,9 +6305,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What does Cobb say he created for the programme?",
             options: [
               "The spoken call at the top of the show",
-              "The animated opening sequence that ran before each episode",
-              "The theme music recorded for the programme in 1974",
-              "The scramble board segment used in the studio each week",
+              "The animated opening",
+              "The 1974 theme music",
+              "The scramble board",
             ],
             correctIndex: 0,
             explanation:
@@ -6317,9 +6318,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "In what year does he say royalty payments stopped?",
             options: [
               "2008",
-              "2012, the year of the programme creator's death",
-              "2016, the year the franchise was acquired by a network division",
-              "2024, the year he filed his complaint in federal court",
+              "2012",
+              "2016",
+              "2024",
             ],
             correctIndex: 0,
             explanation:
@@ -6330,9 +6331,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What buyout figure does the Chicago Crusader report he was offered?",
             options: [
               "Less than $15,000",
-              "At least $75,000, the amount named in the complaint he later filed",
-              "About $30 million, the figure reported for an earlier sale of a company",
-              "Nothing at all, since no offer of any kind was ever made",
+              "At least $75,000",
+              "About $30 million",
+              "Nothing at all",
             ],
             correctIndex: 0,
             explanation:
@@ -6343,9 +6344,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is the case number of the federal action?",
             options: [
               "1:24-cv-00335",
-              "549 F.2d 35, the citation of the 1977 appeal involving the programme's sponsor",
-              "Docket C-2788, the identifier of the 1976 regulatory order",
-              "The case has no number, having been filed under seal",
+              "549 F.2d 35",
+              "Docket C-2788",
+              "Filed under seal",
             ],
             correctIndex: 0,
             explanation:
@@ -6356,9 +6357,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "When was the case filed?",
             options: [
               "12 January 2024",
-              "26 January 2024, the date of the news report describing the filing",
-              "16 May 2025, the date of an order recorded on the docket",
-              "5 January 2026, the date of the last docket entry read for this course",
+              "26 January 2024",
+              "16 May 2025",
+              "5 January 2026",
             ],
             correctIndex: 0,
             explanation:
@@ -6369,8 +6370,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "In which court was the case filed?",
             options: [
               "The Northern District of Illinois",
-              "The Seventh Circuit Court of Appeals, which decided the sponsor's case in 1977",
-              "The Ninth Circuit, sitting in Detroit, as a memoir describes a different case",
+              "The Seventh Circuit",
+              "The Ninth Circuit",
               "A California state court, close to where the programme was recorded",
             ],
             correctIndex: 0,
@@ -6382,9 +6383,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Which three defendants are named?",
             options: [
               "Paramount Global, CBS Entertainment Group and BET",
-              "InterMedia Partners, the Yucaipa Companies and Vibe Holdings",
-              "MadVision Entertainment, Tribune Entertainment and Media Affiliates",
-              "Johnson Products, Bozell & Jacobs and Metromedia",
+              "InterMedia, Yucaipa and Vibe",
+              "MadVision, Tribune and Media Affiliates",
+              "Johnson Products, Bozell, Metromedia",
             ],
             correctIndex: 0,
             explanation:
@@ -6395,9 +6396,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What minimum amount does the complaint seek?",
             options: [
               "At least $75,000",
-              "Less than $15,000, the figure reported as an earlier buyout offer",
-              "About $30 million, matching an earlier valuation of a different business",
-              "No specific amount, leaving damages entirely to the court",
+              "Less than $15,000",
+              "About $30 million",
+              "No set amount",
             ],
             correctIndex: 0,
             explanation:
@@ -6408,7 +6409,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What does the docket show for January 2025?",
             options: [
               "A referral for a settlement conference",
-              "A final judgment entered in favour of the defendants",
+              "A final judgment",
               "A voluntary dismissal of the complaint by the plaintiff",
               "The filing of the original complaint in the district court",
             ],
@@ -6434,9 +6435,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is the outcome of the case, as of the last docket entry read for this course?",
             options: [
               "Unknown",
-              "Decided for the plaintiff, with damages still to be assessed",
-              "Dismissed, with the plaintiff ordered to pay the defendants' costs",
-              "Settled confidentially, with the terms sealed by the court",
+              "Plaintiff won",
+              "Dismissed",
+              "Settled",
             ],
             correctIndex: 0,
             explanation:
@@ -6447,9 +6448,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What did WBEZ report about the defendants?",
             options: [
               "They could not be reached for comment",
-              "That they had denied every allegation in a written statement",
-              "That they had offered to settle before the complaint was filed",
-              "That they had agreed to resume payments while the case proceeds",
+              "They denied everything",
+              "They offered to settle",
+              "They resumed payments",
             ],
             correctIndex: 0,
             explanation:
@@ -6460,7 +6461,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Why does this case belong in a course about a programme's business?",
             options: [
               "It asks whether a sale carries an obligation to a contributor",
-              "Because the damages sought would exceed the value of the original sale",
+              "Damages exceed the sale",
               "Because it will determine who owns the programme's library going forward",
               "Because the plaintiff was an owner of the programme at the time of its sale",
             ],
@@ -6486,8 +6487,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is an allegation?",
             options: [
               "A claim in a legal proceeding that has not been proved",
-              "A finding a court has made after hearing evidence from both sides",
-              "A statement made to a journalist rather than filed in a court",
+              "A court's finding",
+              "A remark to a journalist",
               "An accusation that a regulator rather than a private party has made",
             ],
             correctIndex: 0,
@@ -6499,9 +6500,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is a docket?",
             options: [
               "The court's numbered record of everything filed in a case",
-              "The judge's written explanation of the reasoning behind a decision",
-              "The list of cases a court expects to hear in a coming term",
-              "A summary of a case prepared by one party for the other",
+              "A judge's reasoning",
+              "A term's hearing list",
+              "One party's summary",
             ],
             correctIndex: 0,
             explanation:
@@ -6514,7 +6515,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
               "An unresolved case has no final judgment or dismissal",
               "There is none, since a case with no judgment has effectively been lost",
               "An unresolved case has been decided but not yet made public",
-              "A lost case can be refiled, while an unresolved one cannot",
+              "Only a lost case can be refiled",
             ],
             correctIndex: 0,
             explanation:
@@ -6525,8 +6526,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is this course's rule about chronology and influence?",
             options: [
               "Chronology is not influence",
-              "Chronology establishes influence whenever the two events share an industry",
-              "Influence can be assumed when enough people assert it independently",
+              "Order proves cause",
+              "Volume proves it",
               "Chronology is the only kind of evidence an influence claim can rest on",
             ],
             correctIndex: 0,
@@ -6538,9 +6539,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What did a search made specifically for it fail to find about BET?",
             options: [
               "Any statement by its founders that Soul Train inspired it",
-              "Any record of the price BET paid for the franchise in 2016",
-              "Any confirmation that BET aired the Soul Train Awards before 2016",
-              "Any statement by BET describing what it intended to do with the brand",
+              "The 2016 price",
+              "Awards airings before 2016",
+              "BET's plans for the brand",
             ],
             correctIndex: 0,
             explanation:
@@ -6551,9 +6552,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Who made the 1 February 2012 statement about BET owing much of its success to Cornelius?",
             options: [
               "Debra L. Lee",
-              "Robert L. Johnson, who co-founded the network in 1980",
-              "Sheila Johnson, who is also described as a co-founder of the network",
-              "Quincy Jones, who described himself as a business partner of Cornelius",
+              "Robert L. Johnson",
+              "Sheila Johnson",
+              "Quincy Jones",
             ],
             correctIndex: 0,
             explanation:
@@ -6577,8 +6578,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What do Robert L. Johnson's reported 2012 remarks actually say?",
             options: [
               "Praise for Cornelius, with no claim about BET",
-              "That Soul Train was the direct model for the network he founded",
-              "That he had tried to buy the programme before starting his own network",
+              "Soul Train was BET's model",
+              "He tried to buy the show",
               "That the programme's syndication strategy shaped the network's business plan",
             ],
             correctIndex: 0,
@@ -6590,9 +6591,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Why is the job title given for Robert L. Johnson in that 2012 report doubtful?",
             options: [
               "Someone else held it at the time",
-              "Because the report does not name the network he was said to lead",
-              "Because he had retired from the industry more than a decade earlier",
-              "Because the report gives two different titles in the same paragraph",
+              "No network is named",
+              "He had long retired",
+              "Two titles are given",
             ],
             correctIndex: 0,
             explanation:
@@ -6603,9 +6604,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is the documented link between Soul Train and BET?",
             options: [
               "Ownership",
-              "A founding agreement signed when the network launched in 1980",
-              "A shared production company that made programmes for both",
-              "A licensing deal under which the programme supplied BET with content from 1971",
+              "A founding pact",
+              "A shared producer",
+              "A licensing deal",
             ],
             correctIndex: 0,
             explanation:
@@ -6617,7 +6618,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "A chronology statement",
               "A measurement of the two programmes' relative audiences",
-              "A legal claim about who originated a television format",
+              "A legal claim",
               "An account of a business relationship between the two companies",
             ],
             correctIndex: 0,
@@ -6629,8 +6630,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is checkably wrong with the Encyclopedia of Television's list of programmes said to have inherited Soul Train's approach?",
             options: [
               "One of them began broadcasting long before Soul Train",
-              "None of the three programmes it names ever existed under those titles",
-              "All three of them were produced by the same company as Soul Train",
+              "None ever existed",
+              "All shared a producer",
               "Two of the three were cancelled before Soul Train went national",
             ],
             correctIndex: 0,
@@ -6655,9 +6656,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What did Quincy Jones call Cornelius, according to CNN in 2012?",
             options: [
               "His friend, colleague and business partner",
-              "The man who had bought his record label in the middle of the 1970s",
-              "The producer of every television special he had made in that decade",
-              "A rival whose programme had taken artists away from his own projects",
+              "Buyer of his label",
+              "Producer of his specials",
+              "A rival taking his artists",
             ],
             correctIndex: 0,
             explanation:
@@ -6682,7 +6683,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "It records regard rather than measuring effect",
               "It carries more weight than a contemporaneous document about the same events",
-              "It is inadmissible in any account, because it is always exaggerated",
+              "It is always inadmissible",
               "It establishes a business relationship between the speaker and the subject",
             ],
             correctIndex: 0,
@@ -6694,9 +6695,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What kind of evidence does this lesson say a documented ownership link is, compared with an influence claim?",
             options: [
               "It is documented, where influence is not",
-              "It is weaker, because a purchase says nothing about a company's origins",
-              "It is identical, since buying a brand proves it shaped the buyer",
-              "It is irrelevant, because ownership came decades after the claims were made",
+              "It is weaker",
+              "It is identical",
+              "It is irrelevant",
             ],
             correctIndex: 0,
             explanation:
@@ -6707,8 +6708,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is a speaking position?",
             options: [
               "The role a person holds when they make a statement",
-              "The physical setting in which a statement was recorded or written",
-              "The order in which competing statements were made about an event",
+              "The physical setting",
+              "The order of statements",
               "The audience a statement was intended to reach when it was made",
             ],
             correctIndex: 0,
@@ -6746,9 +6747,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "How does this lesson classify Tavis Smiley's 2012 remark?",
             options: [
               "As a statement by a named speaker, not proof of cause",
-              "As a measurement of the programme's cultural reach in its own time",
-              "As a business record, since he had worked with the programme's owners",
-              "As a correction to the claims the other speakers had made that week",
+              "A measure of cultural reach",
+              "A business record",
+              "A correction to the others",
             ],
             correctIndex: 0,
             explanation:
@@ -6774,9 +6775,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Which question organises this whole course?",
             options: [
               "Who paid, who owned, who got paid",
-              "Which performances and dances mattered most across the programme's run",
-              "How a syndicated programme should be scheduled to win a time period",
-              "Whether the programme deserved the awards and honours it received",
+              "Which dances mattered",
+              "How to win a time slot",
+              "Which awards it deserved",
             ],
             correctIndex: 0,
             explanation:
@@ -6787,9 +6788,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What relationship connects the three men named Johnson in this course?",
             options: [
               "None",
-              "They were partners in a single Chicago holding company from the late 1960s",
-              "Two were brothers and the third married into the same family",
-              "All three sat on the board of the same Chicago bank",
+              "Partners",
+              "Brothers",
+              "Board ties",
             ],
             correctIndex: 0,
             explanation:
@@ -6802,7 +6803,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
               "As the creator's own account and his partners' tributes",
               "As the most independent reporting available on the programme's first years",
               "As a government filing, since trade papers registered their contents",
-              "As a reference work, summarising other publications of the period",
+              "As a reference work",
             ],
             correctIndex: 0,
             explanation:
@@ -6813,9 +6814,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What happens to a superlative each time it is repeated?",
             options: [
               "It tends to lose a qualifier",
-              "It gains a citation naming the source that repeated it last",
+              "It gains a citation",
               "It becomes narrower, as each repeater adds a further limitation",
-              "It is verified, because no claim can be repeated without checking",
+              "It is verified",
             ],
             correctIndex: 0,
             explanation:
@@ -6828,7 +6829,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
               "Its weaker signal meant less revenue and less to lose",
               "Because regulators subsidised programming aimed at particular communities",
               "Because it was contractually required to carry a quota of local productions",
-              "Because a network paid it to fill the hour with any available programme",
+              "A network paid it",
             ],
             correctIndex: 0,
             explanation:
@@ -6852,9 +6853,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "How much of the cost of airing the local show did the Sears commitment cover?",
             options: [
               "Only a fraction",
-              "All of it, which is why the chain is often called the programme's founder",
-              "Rather more than half, with the producer covering the remainder",
-              "None, because the commitment was made in merchandise rather than money",
+              "All of it",
+              "More than half",
+              "None of it",
             ],
             correctIndex: 0,
             explanation:
@@ -6865,9 +6866,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "How long did Cornelius work on the local programme without a salary?",
             options: [
               "Ten weeks",
-              "Two years, until the national sponsorship money began arriving",
-              "Ten months, from the local launch to the first national broadcast",
-              "Three weeks, after which the station put him on its payroll",
+              "Two years",
+              "Ten months",
+              "Three weeks",
             ],
             correctIndex: 0,
             explanation:
@@ -6880,7 +6881,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
               "They describe two different pilots",
               "Because the later account was written by someone who was not present",
               "Because the station reimbursed the producer once the sponsor arrived",
-              "Because the two payments were made jointly under one agreement",
+              "A joint payment",
             ],
             correctIndex: 0,
             explanation:
@@ -6891,8 +6892,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What did the sponsor say he learned from his two hour-long specials before Soul Train?",
             options: [
               "Retailers would not stock ahead of the broadcast",
-              "That television audiences preferred comedy to music programming",
-              "That syndicated time cost more per viewer than network time did",
+              "Audiences preferred comedy",
+              "Syndication cost more",
               "That his products sold better in print advertising than on television",
             ],
             correctIndex: 0,
@@ -6904,9 +6905,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What makes a programme first-run syndicated?",
             options: [
               "It is made to be sold to programmers other than the networks",
-              "It is sold to stations only after a network has finished with it",
-              "It is produced by a network and licensed outside its own affiliates",
-              "Its advertising is sold nationally while its time is sold locally",
+              "It is sold after a network run",
+              "A network licenses it outward",
+              "National ads, local airtime",
             ],
             correctIndex: 0,
             explanation:
@@ -6931,7 +6932,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "With the decision-makers behind the scenes",
               "With the audience, whose viewing decides which programmes survive",
-              "With the sponsor, which can withdraw its money at any time",
+              "With the sponsor",
               "With the syndicator, which chooses which stations are offered a show",
             ],
             correctIndex: 0,
@@ -6943,9 +6944,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "How many stations carried the national programme on 2 October 1971, and out of how many targeted?",
             options: [
               "Seven out of twenty-five",
-              "Nine out of twenty-five, counting the Chicago station that already had it",
-              "Twenty-five out of a hundred markets the syndicator hoped to reach",
-              "Thirty out of forty-five, the figures in a Billboard headline the next year",
+              "Nine out of twenty-five",
+              "Twenty-five of a hundred",
+              "Thirty out of forty-five",
             ],
             correctIndex: 0,
             explanation:
@@ -6956,9 +6957,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What reason did stations give for refusing the programme in 1971?",
             options: [
               "No open time periods",
-              "That its sponsor competed with an advertiser they already carried",
+              "A rival ad",
               "That no syndicator would guarantee a full season of episodes",
-              "That the programme was produced in black and white",
+              "Monochrome",
             ],
             correctIndex: 0,
             explanation:
@@ -6969,9 +6970,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What lesson does the August 1972 Billboard headline teach about reading trade press?",
             options: [
               "Read the body, because a headline rounds up",
-              "Trust the headline, because it is written after the story is filed",
-              "Ignore the story, because a headline error invalidates the reporting",
-              "Average the two figures, since neither is reliable on its own",
+              "Trust the headline",
+              "Ignore the story",
+              "Average the two figures",
             ],
             correctIndex: 0,
             explanation:
@@ -6995,9 +6996,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What was George E. Johnson's economic argument for buying time on the programme?",
             options: [
               "The audience was concentrated, so television became affordable",
-              "The airtime was cheaper than network time of the same length",
-              "The programme reached more households than any network variety show",
-              "The production costs were shared with a second national sponsor",
+              "Cheaper airtime",
+              "Wider reach than networks",
+              "Shared production costs",
             ],
             correctIndex: 0,
             explanation:
@@ -7010,7 +7011,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
               "One divides it by half-hour, the other by minutes",
               "One names the sponsor and the other names the syndicator as the buyer",
               "One covers the local run and the other the national syndicated run",
-              "One gives a price per spot and the other a total annual commitment",
+              "Spot price versus annual total",
             ],
             correctIndex: 0,
             explanation:
@@ -7021,9 +7022,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What do the three accounts of the sponsor's $250 of starting money disagree about?",
             options: [
               "What kind of lender supplied it",
-              "The year the company was founded in Chicago",
-              "Whether the money was ever repaid to the lender",
-              "How much of the total the founder himself contributed",
+              "The founding year",
+              "Whether it was repaid",
+              "His own contribution",
             ],
             correctIndex: 0,
             explanation:
@@ -7047,9 +7048,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Which two events does the sponsor's memoir separate that retellings usually merge?",
             options: [
               "A first public trading in 1969 and the Amex listing in 1971",
-              "The founding of the company in 1954 and the launch of Ultra Sheen in 1957",
-              "The start of the sponsorship in 1971 and its end in 1980",
-              "The consent agreement of 1975 and the court decision of 1977",
+              "Founding and Ultra Sheen",
+              "Sponsorship's start and end",
+              "The consent agreement of 1975 and the court of appeals decision of 1977",
             ],
             correctIndex: 0,
             explanation:
@@ -7060,9 +7061,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What does the sponsor's signed 1974 statement about doubling sales establish?",
             options: [
               "Timing, not cause",
-              "That the programme produced the growth in those two years",
-              "That the growth would have happened without the programme",
-              "Nothing, since a company may not report its own sales figures",
+              "The show caused it",
+              "Growth regardless",
+              "Nothing at all",
             ],
             correctIndex: 0,
             explanation:
@@ -7074,7 +7075,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "The Seventh Circuit, which stayed enforcement and remanded",
               "The Ninth Circuit, which ordered a competitor to carry the same warning",
-              "The Supreme Court, which set the Commission's order aside entirely",
+              "The Supreme Court",
               "The Commission itself, reviewing its own order on the company's request",
             ],
             correctIndex: 0,
@@ -7086,9 +7087,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "On what four points do the court opinion and the memoir differ about the regulatory case?",
             options: [
               "The court, the sequence, the outcome and what happened to Revlon",
-              "The date of the order, the docket number, the product and the regulator",
-              "The company's name, the lawyer's name, the year and the city",
-              "The warning's wording, the penalty, the appeal date and the judge",
+              "Order date, docket, product, regulator",
+              "Company, lawyer, year and city",
+              "Wording, penalty, appeal date, judge",
             ],
             correctIndex: 0,
             explanation:
@@ -7099,9 +7100,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Why does this course print both the court opinion and the memoir's different account?",
             options: [
               "They are different kinds of evidence and naming both teaches more",
-              "Because the court's own record of its decision is known to be unreliable",
-              "Because a participant's memory outranks a document about his own case",
-              "Because the two accounts agree on everything except a single date",
+              "The court record is unreliable",
+              "Memory outranks documents",
+              "They differ on one date",
             ],
             correctIndex: 0,
             explanation:
@@ -7112,8 +7113,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "How does the memoir reconcile the $67 million and $32 million figures for the 1993 sale?",
             options: [
               "One is the whole deal, the other one seller's share",
-              "One is in cash and the other in the buyer's shares",
-              "One is the asking price and the other the price finally agreed",
+              "Cash versus shares",
+              "Asking versus agreed price",
               "One includes the brands and the other only the operating company",
             ],
             correctIndex: 0,
@@ -7125,9 +7126,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Why does this course not use the New York Times line that Ivax sold the company to Procter & Gamble in 2004?",
             options: [
               "Two primary documents describe a different route",
-              "Because the Times published a correction withdrawing that sentence",
-              "Because the memoir gives a different year for the same transaction",
-              "Because obituaries are never cited for business facts in this course",
+              "The Times retracted it",
+              "The memoir dates it differently",
+              "Obituaries are never cited",
             ],
             correctIndex: 0,
             explanation:
@@ -7152,7 +7153,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "As suppliers of talent and as buyers of advertising",
               "As owners of the programme and as distributors of its library",
-              "As syndicators in some markets and as sponsors in others",
+              "As syndicators and sponsors",
               "As producers of the programme and as competitors to its awards show",
             ],
             correctIndex: 0,
@@ -7164,9 +7165,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What does the Motown sequence in this course illustrate?",
             options: [
               "A business decision has a date",
-              "That a refusal recorded in a memoir can never be checked",
-              "That participants revise their accounts once a venture succeeds",
-              "That later statements always cancel earlier ones on the same subject",
+              "It cannot be checked",
+              "Accounts get revised",
+              "Later cancels earlier",
             ],
             correctIndex: 0,
             explanation:
@@ -7177,8 +7178,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Which three figures does this course say a business history would most want, and cannot supply?",
             options: [
               "The syndicators' earnings, Cornelius's and Griffey's",
-              "The programme's ratings, its production budget and its advertising rates",
-              "The 2008 price, the 2011 investment and the 2016 price",
+              "Ratings, budget, ad rates",
+              "The three sale prices",
               "The sponsor's sales, its market share and its advertising spend",
             ],
             correctIndex: 0,
@@ -7191,7 +7192,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "10 March 1973, reported independently by two trade papers",
               "24 March 1973, the date most later retellings give for the premiere",
-              "5 May 1973, the date given in a Billboard photograph caption",
+              "5 May 1973",
               "7 June 1973, the date of the magazine article a reference work cites",
             ],
             correctIndex: 0,
@@ -7203,9 +7204,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Why was alternating a rival into an existing slot the cheapest possible network response?",
             options: [
               "It needs no new hour, clearances or franchise",
-              "Because two alternating programmes share their production costs",
-              "Because advertisers pay a premium for a shared time period",
-              "Because affiliates are paid less for an alternating programme",
+              "Shared production costs",
+              "Advertisers pay a premium",
+              "Affiliates are paid less",
             ],
             correctIndex: 0,
             explanation:
@@ -7216,8 +7217,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What does the word \"allegedly\" do in the May 1973 trade column's ratings claim?",
             options: [
               "Marks it as unverified by the columnist",
-              "Shows that the figures came from the network's research department",
-              "Signals that another columnist had already disputed the claim",
+              "Network research figures",
+              "Already disputed",
               "Indicates the column is quoting a named source rather than paraphrasing",
             ],
             correctIndex: 0,
@@ -7229,7 +7230,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What does this course say about why the 1973 network programme ended?",
             options: [
               "It does not know, and names what would settle it",
-              "That a threatened boycott of the network forced its cancellation",
+              "A boycott threat",
               "That it was dropped after private discussions between two producers",
               "That the network cancelled it once its ratings fell below the incumbent's",
             ],
@@ -7242,9 +7243,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "Why was there anything left for Cornelius to sell in 2008?",
             options: [
               "Syndication had left the programme in his hands",
-              "Because the network that carried it returned the rights when it ended",
-              "Because the sponsor gave him its half of the programme in 1980",
-              "Because television copyrights revert to a host after fifty years",
+              "The network returned the rights",
+              "The sponsor gave him its half",
+              "Copyright reverted to the host",
             ],
             correctIndex: 0,
             explanation:
@@ -7256,8 +7257,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             options: [
               "It was an investment, in the parent, and the owner stayed",
               "It was a year later, by a different investor, and for a different brand",
-              "It was a loan, to the syndicator, and it was never completed",
-              "It confuses the 2011 event with the 2008 sale by the creator",
+              "A loan, to the syndicator, never done",
+              "It confuses 2011 with 2008",
             ],
             correctIndex: 0,
             explanation:
@@ -7268,9 +7269,9 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "On what date was BET's purchase of the franchise announced?",
             options: [
               "4 April 2016",
-              "7 April 2016, which is the publication date of a later trade article",
-              "9 February 2011, the date of the investment in the parent company",
-              "19 June 2008, the date of the report on the earlier sale",
+              "7 April 2016",
+              "9 February 2011",
+              "19 June 2008",
             ],
             correctIndex: 0,
             explanation:
@@ -7294,7 +7295,7 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What did a search made specifically for it fail to find about Soul Train and BET?",
             options: [
               "Any founder's statement that Soul Train inspired BET",
-              "Any record that BET aired the Soul Train Awards before 2016",
+              "Awards airings before 2016",
               "Any confirmation that BET's parent completed the 2016 purchase",
               "Any description by BET of what it planned to do with the brand",
             ],
@@ -7307,8 +7308,8 @@ VOA Learning English. (2012, February 9). *Remembering Soul Train creator Don Co
             prompt: "What is this course's rule about chronology and influence?",
             options: [
               "Chronology is not influence",
-              "Chronology proves influence when both parties are in one industry",
-              "Influence follows from chronology once enough people assert it",
+              "Order proves cause",
+              "Volume proves it",
               "Chronology is the only admissible evidence for an influence claim",
             ],
             correctIndex: 0,

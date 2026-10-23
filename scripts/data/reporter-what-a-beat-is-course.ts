@@ -128,7 +128,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a beat tell a reporter, as opposed to what an assignment tells them?",
             options: [
-              "What to know",
+              "What to know, a responsibility that does not lapse when you file the piece",
               "Which editor holds the budget line for the piece and when it is due to the desk",
               "How many pieces the newsroom expects to publish from the subject each month",
               "Which competing outlets are already covering the same institutions this quarter",
@@ -141,7 +141,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "In this course, what is the actual product of a beat?",
             options: [
-              "The accumulation",
+              "The accumulation, the running history from which individual stories are withdrawn",
               "The count of published pieces attributable to the subject over a fiscal year",
               "The relationship with the agency's communications office and its release schedule",
               "The single enterprise investigation the beat is expected to yield annually",
@@ -154,10 +154,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why can a reporter without accumulated history not tell news from routine?",
             options: [
-              "No baseline",
-              "Because newsroom archives are usually paywalled and searching them costs time on deadline",
+              "Because it has no baseline, so a change cannot be told apart from a constant",
+              "Because newsroom archives are paywalled and searching them costs time on deadline",
               "Because agencies deliberately time announcements for when experienced reporters are away",
-              "Because press releases are written to be indistinguishable from independently reported news",
+              "Because press releases are written to look like independently reported news",
             ],
             correctIndex: 0,
             explanation:
@@ -167,10 +167,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the second value the lesson gives for accumulated beat knowledge?",
             options: [
-              "Speed",
-              "Access to embargoed documents ahead of the general press distribution list",
+              "Speed, because on deadline you already know who the deputy director is",
+              "Access to embargoed documents",
               "A reduced need to seek comment, because the pattern already establishes the point",
-              "The ability to publish without an editor reviewing the piece before it goes out",
+              "Publishing without an editor's review",
             ],
             correctIndex: 0,
             explanation:
@@ -180,7 +180,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson name as the third value of accumulation?",
             options: [
-              "Sources who take your call",
+              "Sources who take your call, because you are a known quantity rather than a stranger",
               "A standing invitation to the agency's quarterly background briefings for regular press",
               "The right to attend closed sessions that are otherwise exempt from open meetings law",
               "Editorial authority to set the newsroom's coverage priorities for the subject area",
@@ -193,7 +193,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What can a parachuted reporter NOT do that a beat reporter can?",
             options: [
-              "Notice",
+              "Notice a change, since telling a change from a constant requires a baseline",
               "Interview the officials at the center of the situation they were sent to cover",
               "Produce work of professional quality about an unfamiliar subject on a deadline",
               "Read the primary documents that govern the institution they are writing about",
@@ -206,9 +206,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the disclosure about Free Press Indiana appear in the first lesson?",
             options: [
-              "The track teaches disclosure",
-              "Because Free Press Indiana reviewed the course outline before it was written and asked for it",
-              "Because the organization sponsors the track and the sponsorship must be labeled as advertising",
+              "Because the track teaches disclosure, so it names the author's own stake first",
+              "Because Free Press Indiana reviewed the course outline and asked for it",
+              "Because the organization sponsors the track and it must be labeled as advertising",
               "Because the job posting is reproduced in full later in the course under a licensing agreement",
             ],
             correctIndex: 0,
@@ -219,7 +219,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which organization is the author a Documenter for, and what is it?",
             options: [
-              "Mirror Indy, a Free Press Indiana newsroom",
+              "Mirror Indy, the Free Press Indiana newsroom that runs the Indianapolis Documenters program",
               "Free Press Indiana directly, as a contracted reporter on the women and girls beat",
               "The Indiana Youth Institute, which publishes the annual Girl Report cited in this track",
               "The Society of Professional Journalists, whose ethics code the disclosure quotes",
@@ -232,9 +232,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is a vague disclosure worse than a specific one?",
             options: [
-              "A reader cannot check it",
-              "It takes up space in a lesson that would be better spent on the reporting method itself",
-              "Editors are required to reject any disclosure that does not name a legal entity",
+              "A reader cannot check it, which makes it decoration rather than disclosure",
+              "It takes up space better spent on the reporting method",
+              "Editors must reject any disclosure that names no legal entity",
               "It implies the relationship is larger and more commercially significant than it really is",
             ],
             correctIndex: 0,
@@ -245,10 +245,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the disclosure say Free Press Indiana has done regarding this course?",
             options: [
-              "Nothing",
-              "Reviewed the curriculum and confirmed that it matches the newsroom's own training standards",
-              "Agreed to consider graduates of the track for future openings on its reporting staff",
-              "Licensed its job posting to the course for use as an instructional document",
+              "Nothing; neither it nor Mirror Indy reviewed, endorsed, or sponsored this course",
+              "Reviewed the curriculum against its own training standards",
+              "Agreed to consider the track's graduates for openings",
+              "Licensed its job posting to the course",
             ],
             correctIndex: 0,
             explanation:
@@ -258,7 +258,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How does the lesson describe the cost side of holding a beat?",
             options: [
-              "Time on things that never become stories",
+              "Time spent on things that never become stories, like meetings that produce nothing",
               "Travel and lodging expenses that most newsrooms will no longer reimburse in advance",
               "The legal exposure created by maintaining files on named individuals over several years",
               "Reduced byline count because editors reassign beat reporters during breaking news",
@@ -271,7 +271,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "A beat has no what, unlike a story?",
             options: [
-              "An end",
+              "An end; a beat's responsibility does not lapse when the reporter files",
               "A named editor responsible for approving what does and does not get published",
               "A requirement to seek comment from the subject before the piece is filed",
               "Any obligation to disclose the reporter's relationships to the institutions covered",
@@ -284,7 +284,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which example does the lesson give of an accumulation item worth tracking?",
             options: [
-              "A number the agency stopped publishing",
+              "A number the agency stopped publishing, like the one the lesson dates to 2023",
               "The number of unique visitors each published piece attracted in its first week online",
               "The share of the newsroom's advertising revenue attributable to the subject area",
               "The reading level of the agency's public communications as scored by a style tool",
@@ -297,10 +297,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a beat, in one phrase?",
             options: [
-              "A territory you hold",
-              "A rotating assignment desk shared among reporters according to newsroom staffing needs",
-              "A contractual specialization that determines a reporter's pay grade and title",
-              "A subject area assigned by an editor for the duration of one enterprise project",
+              "A territory you hold over time, rather than a story you are assigned",
+              "A rotating assignment desk shared by reporters",
+              "A contractual specialization that sets pay grade",
+              "A subject assigned for one enterprise project",
             ],
             correctIndex: 0,
             explanation:
@@ -310,7 +310,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which four inventories make up a beat map?",
             options: [
-              "Institutions, documents, people, calendar",
+              "Institutions, documents, people, and the calendar, each maintained after it is built",
               "Competitors, advertisers, subscribers, and the newsroom's own analytics dashboards",
               "Statutes, regulations, court rulings, and the attorney general's advisory opinions",
               "Sources, quotes, photographs, and the archived audio from every interview conducted",
@@ -323,7 +323,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "In the institution inventory, whom do you write down?",
             options: [
-              "Whoever has authority to act",
+              "Whoever has authority to actually do the thing, not who talks about it most",
               "Whichever body issues the most press releases about the subject in a typical month",
               "The officials most willing to be quoted by name when a reporter calls on deadline",
               "The agencies whose public information officers respond fastest to routine questions",
@@ -336,10 +336,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the point of the document inventory?",
             options: [
-              "Knowing what exists",
-              "Reading every scheduled publication each body produces before the reporting year begins",
-              "Building a searchable archive of every record the beat's institutions have ever released",
-              "Establishing which documents the newsroom's lawyers have cleared for publication",
+              "Knowing what exists, so you know which document would answer a question",
+              "Reading every scheduled publication before the year begins",
+              "Building an archive of every record ever released",
+              "Establishing which documents counsel has cleared",
             ],
             correctIndex: 0,
             explanation:
@@ -349,7 +349,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which three groups of people does the lesson say reporters routinely miss?",
             options: [
-              "Former employees, affected people, compilers",
+              "Former employees, people the institution acts upon, and the staff who compile numbers",
               "Elected officials, agency directors, and the communications staff who handle their media",
               "Union leaders, contractors, and the lobbyists registered to work the subject area",
               "Academic experts, think tank analysts, and national correspondents covering the topic",
@@ -362,7 +362,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the lesson single out the staff who compile published numbers?",
             options: [
-              "They know which figures are soft",
+              "They assemble the published figures, and so they know which of them are soft",
               "They control the release schedule and can be persuaded to publish a data set early",
               "They are legally required to answer questions from the press about methodology",
               "They are usually excluded from the confidentiality agreements senior staff sign",
@@ -375,7 +375,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a beat calendar convert a reporter from, and to?",
             options: [
-              "Reactive to early",
+              "From reactive to early, reporting in the four weeks before a document exists",
               "Generalist to specialist, by restricting the range of subjects an editor may assign",
               "Freelance to staff, by demonstrating a predictable volume of publishable work",
               "Print to digital, by aligning output with the times readers are most active online",
@@ -388,7 +388,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these is named as an entry on a beat calendar?",
             options: [
-              "Contract renewals",
+              "Contract renewals, which recur on a schedule like budget season and testing windows",
               "The publication dates of competing outlets' weekly newsletters on the same subject",
               "Quarterly performance reviews conducted internally by the reporter's own newsroom",
               "The rotation schedule for which reporter is on call for overnight breaking news",
@@ -401,10 +401,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Where does the lesson say a beat calendar legally starts?",
             options: [
-              "Meeting notice requirements",
-              "The state administrative code's schedule for publishing proposed rules in a register",
-              "The federal fiscal calendar, which sets when agencies must submit budget requests",
-              "A newsroom's own editorial calendar, negotiated with the desk at the start of a quarter",
+              "Meeting notice requirements, since public bodies must give advance notice",
+              "The state register's schedule for publishing proposed rules",
+              "The federal fiscal calendar for agency budget requests",
+              "The newsroom's own editorial calendar for the quarter",
             ],
             correctIndex: 0,
             explanation:
@@ -414,10 +414,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which resource does the lesson point to for the fifty-state open government picture?",
             options: [
-              "The RCFP Open Government Guide",
-              "The Society of Professional Journalists' annual survey of state transparency rankings",
-              "The National Conference of State Legislatures' database of public meeting statutes",
-              "The federal Office of Government Information Services' state compliance reports",
+              "The Reporters Committee for Freedom of the Press Open Government Guide",
+              "The SPJ's annual survey of state transparency rankings",
+              "The NCSL database of state public meeting statutes",
+              "The federal OGIS reports on state compliance",
             ],
             correctIndex: 0,
             explanation:
@@ -427,7 +427,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which documents does the beat map's document inventory include?",
             options: [
-              "Bid documents behind contracts",
+              "Contracts and the bid documents behind them, along with audits and inspection reports",
               "Internal newsroom style guides governing how the subject area should be described",
               "Draft stories filed by other reporters covering adjacent subjects at the same outlet",
               "Personal notes and recordings the reporter made at meetings during the prior year",
@@ -440,10 +440,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How long does the lesson say building each of the four inventories takes?",
             options: [
-              "An afternoon",
+              "An afternoon each, after which the inventory is maintained forever",
               "A full reporting quarter, because each one depends on records requests being answered",
-              "The first year on the beat, since the inventories cannot be built before sources trust you",
-              "Two weeks of desk research per inventory, following a newsroom onboarding checklist",
+              "The first year, once sources trust you",
+              "Two weeks of desk research per inventory",
             ],
             correctIndex: 0,
             explanation:
@@ -453,10 +453,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How long is a beat memo, and who is it written for?",
             options: [
-              "Two pages, for yourself and an editor",
-              "A ten-page planning document submitted annually to the newsroom's leadership team",
+              "Two pages, written for yourself and then shared with an editor",
+              "A ten-page annual plan for leadership",
               "A one-line entry in the newsroom's content management system alongside the beat name",
-              "A public-facing page on the outlet's website describing what the beat will cover",
+              "A public page describing the beat",
             ],
             correctIndex: 0,
             explanation:
@@ -466,10 +466,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which line does the lesson call the most load bearing in a beat memo?",
             options: [
-              "What is out of scope",
-              "The list of institutions with formal authority over the subject at every level of government",
-              "The measurement plan describing how coverage will be assessed at the end of the year",
-              "The named communities the reporter commits to being accountable to over the year",
+              "The out-of-scope sentence, saying what the beat does not cover and who does",
+              "The list of institutions with formal authority over the subject",
+              "The measurement plan for assessing coverage at year end",
+              "The named communities the reporter will be accountable to",
             ],
             correctIndex: 0,
             explanation:
@@ -479,10 +479,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How many year questions does the lesson recommend a beat memo carry?",
             options: [
-              "Three or four",
-              "One for each institution on the beat map, so that no body goes uncovered in a year",
-              "Between ten and fifteen, so the reporter always has a fallback when a line goes cold",
-              "As many as the editor assigns during the annual planning cycle for the desk",
+              "Three or four, chosen because they are consequential and answerable",
+              "One for each institution on the beat map",
+              "Between ten and fifteen, as fallbacks when a line goes cold",
+              "As many as the editor assigns each year",
             ],
             correctIndex: 0,
             explanation:
@@ -492,7 +492,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What separates a beat question from a topic?",
             options: [
-              "It implies a document, a denominator, and a person",
+              "It implies a specific document, a denominator, and a person who has to answer",
               "It has been approved in advance by an editor with authority over the desk's budget",
               "It can be answered inside a single news cycle without any records request being filed",
               "It names an institution rather than a community, which keeps the reporting checkable",
@@ -505,10 +505,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is wrong with writing that a beat is accountable to the community?",
             options: [
-              "It is not a name",
-              "It exceeds the reporter's authority, since accountability belongs to the newsroom as a whole",
-              "It creates a legal obligation the outlet's counsel would have to review before publication",
-              "It duplicates the out-of-scope sentence, which already establishes the beat's boundaries",
+              "It names no one, and a named community is checkable while a good intention is not",
+              "It exceeds the reporter's authority, which belongs to the newsroom",
+              "It creates a legal obligation counsel would have to review",
+              "It duplicates the out-of-scope sentence",
             ],
             correctIndex: 0,
             explanation:
@@ -518,7 +518,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How often does the lesson say a beat memo should be revised?",
             options: [
-              "Twice a year",
+              "Twice a year, since a memo never reopened describes a beat that no longer exists",
               "Once at the start of each calendar year, matching the newsroom's budget planning cycle",
               "Only when the editor assigns a new subject area or the beat's boundaries formally change",
               "Every month, alongside the reporter's regular output review with the desk",
@@ -531,7 +531,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson call it when a year question turns out to be unanswerable?",
             options: [
-              "Information",
+              "Information rather than failure, to be admitted at the twice-yearly revision",
               "A planning failure that should be corrected before the next memo is shared with an editor",
               "A sign that the beat map's document inventory was built from the wrong institutions",
               "Grounds for narrowing the beat's scope so the remaining questions can still be met",
@@ -544,7 +544,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say a beat becomes when it has no stated boundary?",
             options: [
-              "General assignment with a nameplate",
+              "General assignment with a nameplate, because every beat expands under pressure",
               "An investigative unit, because unbounded reporting naturally drifts toward enterprise work",
               "A specialty desk that competes with other desks for the same institutional sources",
               "A rotating assignment shared with whichever reporter has capacity that week",
@@ -557,7 +557,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the beat memo's measurement section ask?",
             options: [
-              "Whether the beat was covered or merely attended",
+              "Whether, twelve months on, the beat was covered rather than merely attended",
               "How many pieces were published and what audience each of them reached online",
               "Whether the reporter met the deadlines the desk set at the start of the year",
               "How the beat's output compared with competing outlets covering the same institutions",
@@ -570,7 +570,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the Free Press Indiana posting ask for, as the beat memo lesson cites it?",
             options: [
-              "Relationships built on equal trust",
+              "Relationships built on equal trust, with travel across the state as part of the job",
               "Five publishable enterprise investigations per year from communities outside the metros",
               "Fluency in statistical software sufficient to reanalyze state administrative data sets",
               "Prior experience covering state government from inside the capitol press corps",
@@ -583,7 +583,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a women and girls beat that never leaves the state capital actually cover?",
             options: [
-              "Institutions that talk about women and girls",
+              "Institutions that talk about women and girls, rather than women and girls themselves",
               "The legislative session, which is where most policy affecting the subject is decided",
               "Statewide data, which is compiled centrally and therefore reported centrally",
               "The advocacy sector, which is the only source of consistent comment on the subject",
@@ -596,9 +596,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the beat memo turn a job title into?",
             options: [
-              "A beat",
+              "A beat, with a stated scope, year questions, inventories, and named communities",
               "A promotion, by documenting the reporter's specialization for a future performance review",
-              "A contract, by committing the newsroom to fund travel and records fees for the year",
+              "A contract committing the newsroom to fund travel and records fees",
               "A public commitment, by publishing the coverage plan where readers can hold it to account",
             ],
             correctIndex: 0,
@@ -609,9 +609,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which body does the lesson list as touching a schools beat through the levy?",
             options: [
-              "The county council",
+              "The county council, listed with the district board, state board, and union",
               "The federal Department of Education, which conditions formula funding on local compliance",
-              "The state attorney general, who reviews district contracts above a statutory threshold",
+              "The state attorney general, who reviews large district contracts",
               "The regional accreditation body, which sets the standards districts must meet to operate",
             ],
             correctIndex: 0,
@@ -622,7 +622,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the SPJ code figure in the first lesson of this course?",
             options: [
-              "It asks journalists to disclose unavoidable conflicts",
+              "It asks journalists to avoid conflicts real or perceived and disclose unavoidable ones",
               "It requires every published piece to carry a list of the reporter's paid outside work",
               "It defines the boundary between a beat reporter's duties and an editor's duties",
               "It sets the minimum number of independent sources required before publication",
@@ -635,9 +635,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these does the lesson describe as a withdrawal rather than the product?",
             options: [
-              "An individual story",
+              "An individual story, drawn out of the accumulated history the beat keeps",
               "The maintained document inventory, which is rebuilt from scratch each reporting year",
-              "The beat calendar, which is consumed by the newsroom's planning desk rather than the reporter",
+              "The beat calendar, which the planning desk consumes rather than the reporter",
               "The out-of-scope sentence, which is spent whenever an editor needs a hole filled",
             ],
             correctIndex: 0,
@@ -648,9 +648,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the first homework of any beat that touches government?",
             options: [
-              "Find your own state's chapter",
-              "Introduce yourself to every public information officer named in the agency directory",
-              "File a records request with each institution on the map to test its response time",
+              "Find your own state's chapter of the RCFP fifty-state open government guide",
+              "Introduce yourself to every public information officer",
+              "File a test records request with each institution",
               "Attend one meeting of every public body on the institution inventory within the first month",
             ],
             correctIndex: 0,
@@ -661,7 +661,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "In the beat memo, what does the scope sentence have to include besides the subject?",
             options: [
-              "What is deliberately out",
+              "What is deliberately left out of the beat, and here is who does cover it",
               "The number of stories the reporter commits to filing from the subject each month",
               "The names of the editors who will review each piece before it reaches publication",
               "The travel budget required to reach the communities the beat is accountable to",
@@ -674,8 +674,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say a beat reporter does with a five-year capital plan?",
             options: [
-              "Reads it for one line",
-              "Summarizes it for readers each time the governing body adopts a revised version",
+              "Reads the whole thing for the one line that matters to the beat",
+              "Summarizes it for readers whenever it is revised",
               "Files a records request for the working papers behind each projection it contains",
               "Compares it against neighboring jurisdictions to establish whether spending is unusual",
             ],
@@ -687,7 +687,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the document inventory NOT require a reporter to do?",
             options: [
-              "Read all of it",
+              "Read all of it; the inventory exists to know what is there",
               "Record where each scheduled publication lands once it has been released",
               "Include filings made to bodies outside the beat's own institutions",
               "Update the list when an institution changes what it publishes",
@@ -700,7 +700,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which group on a beat map is described as free to speak?",
             options: [
-              "Former employees",
+              "Former employees, the people who used to work there",
               "Technical staff, because compiling published figures is a non-policy function",
               "Elected officials, because their statements are privileged while in office",
               "People the institution acts upon, because they have no employment relationship with it",
@@ -713,10 +713,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What form do the four inventories take inside the beat memo?",
             options: [
-              "Lists",
+              "Lists, carried over from the lesson 2 beat map",
               "Narrative sections explaining why each institution matters to the year questions",
               "A single diagram showing how each body's authority connects to the others",
-              "Appendices held separately, so the memo itself stays to two pages",
+              "Appendices held separately from the memo",
             ],
             correctIndex: 0,
             explanation:
@@ -726,7 +726,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a beat calendar let a reporter begin four weeks before a document exists?",
             options: [
-              "Reporting",
+              "Reporting, rather than starting in the four hours after it is out",
               "Editing, since the piece can be drafted once the release date is known",
               "Negotiating an embargo with the body that will publish the document",
               "Filing a records request for the draft version circulating internally",
@@ -860,7 +860,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What defines community listening as this course uses the term?",
             options: [
-              "No story, no deadline, no ask",
+              "No story, no deadline, and nothing to ask for; you go where people already gather",
               "A structured focus group run to test which of several story ideas readers prefer",
               "A round of interviews with community leaders conducted before a project launches",
               "An open call for tips published so residents can send the newsroom their concerns",
@@ -873,10 +873,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a reporter collecting during community listening?",
             options: [
-              "The agenda",
-              "Contact details for people willing to be interviewed on the record at a later date",
-              "Enough usable quotes to fill the human element of a story already assigned",
-              "Documents that residents have obtained from the institutions on the beat map",
+              "The agenda: what people raise unprompted, in what order, and with what heat",
+              "Contact details for later on-the-record interviews",
+              "Usable quotes for a story already assigned",
+              "Documents residents obtained from the institutions",
             ],
             correctIndex: 0,
             explanation:
@@ -886,9 +886,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How does listening differ in direction from interviewing?",
             options: [
-              "The story comes out of it",
+              "The story comes out of what you hear, instead of being selected in advance",
               "It is recorded rather than written down, so the material can be verified afterward",
-              "It happens on the source's schedule rather than the newsroom's, which interviews never do",
+              "It happens on the source's schedule, which interviews never do",
               "It is conducted by an editor rather than the reporter who will write the eventual piece",
             ],
             correctIndex: 0,
@@ -912,9 +912,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How many adults gave feedback to the 2025 Indiana Girl Report?",
             options: [
-              "130",
+              "130 adults from across the state",
               "About 4,000, surveyed by telephone using a sampling frame weighted to the state population",
-              "Only the report's named advisory board members, whose affiliations are listed inside",
+              "Only the advisory board",
               "None, because the report deliberately restricted its qualitative work to girls themselves",
             ],
             correctIndex: 0,
@@ -925,10 +925,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What can 91 listening sessions support as evidence?",
             options: [
-              "Themes",
-              "The share of Indiana girls who report difficulty making or maintaining friendships",
-              "A comparison of outcomes between girls in urban counties and girls in rural ones",
-              "A trend line showing whether a condition improved or worsened since the prior year",
+              "Themes that no state data set contains, such as social connection",
+              "The share of Indiana girls who struggle with friendships",
+              "An urban versus rural comparison of girls' outcomes",
+              "A trend line since the prior year",
             ],
             correctIndex: 0,
             explanation:
@@ -938,10 +938,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What mistake does a reporter make by dismissing listening-session findings because they are not a survey?",
             options: [
-              "Discarding the only account of what was raised",
+              "Throwing away the only account of what girls actually raised",
               "Violating the publisher's citation terms, which require the qualitative work to be reported",
-              "Confusing a probability sample with a census, which are different sampling designs",
-              "Assuming administrative data has no margin of error, when in fact every table does",
+              "Confusing a probability sample with a census",
+              "Assuming administrative data has no margin of error",
             ],
             correctIndex: 0,
             explanation:
@@ -951,7 +951,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the default record status of something heard in a listening setting?",
             options: [
-              "Not on the record",
+              "Not on the record; using it means a separate conversation opened there and then",
               "On background, meaning it may be used without naming the individual who said it",
               "On the record, because the gathering was open to any member of the public",
               "Embargoed until the reporter's outlet publishes its next piece on the subject",
@@ -977,9 +977,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say a reporter should do about identifying themselves while listening?",
             options: [
-              "Say who you are every time",
+              "Say who you are and where you work, every time, without being asked",
               "Identify yourself only if asked, so that the conversation is not distorted by your presence",
-              "Introduce yourself to the organizers, who can then inform attendees on your behalf",
+              "Introduce yourself to the organizers, who tell attendees",
               "Wear visible press credentials, which satisfies the disclosure obligation without interrupting",
             ],
             correctIndex: 0,
@@ -990,10 +990,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a newsroom that only interviews end up producing?",
             options: [
-              "The stories it already thought of",
-              "Coverage that is more accurate but less representative of the communities it serves",
-              "Work that is faster to produce but harder to defend against a legal challenge",
-              "A source list dominated by people who decline to be identified by name",
+              "Confirmation of the stories it already thought of, rather than new ones",
+              "More accurate but less representative coverage",
+              "Faster work that is harder to defend legally",
+              "A source list dominated by unnamed people",
             ],
             correctIndex: 0,
             explanation:
@@ -1003,7 +1003,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which places does the lesson name as listening settings?",
             options: [
-              "A shift change, a church basement, a resource fair",
+              "A parent group, a shift change, a church basement, a county extension office",
               "Press conferences, agency briefings, and the public comment period of board meetings",
               "Newsroom-hosted town halls advertised to subscribers through the outlet's newsletter",
               "Online forums and comment sections where residents discuss the beat's institutions",
@@ -1016,10 +1016,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What produced the pattern of the same few people being quoted repeatedly?",
             options: [
-              "Small conveniences adding up",
-              "A deliberate editorial policy favoring named officials over unnamed private citizens",
+              "Small conveniences adding up to a pattern nobody chose",
+              "A deliberate policy favoring named officials",
               "Legal caution, since quoting private individuals raises the outlet's defamation exposure",
-              "Reader demand, measured by which sources generate the most engagement per story",
+              "Reader demand, measured by engagement",
             ],
             correctIndex: 0,
             explanation:
@@ -1029,9 +1029,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does business-hours availability skew a beat's sources?",
             options: [
-              "Hourly workers cannot talk then",
-              "Because agencies deliberately schedule announcements to conflict with community meetings",
-              "Because most public records offices close before the end of a reporter's working day",
+              "Because that is when reporters work and when hourly workers cannot talk",
+              "Because agencies schedule announcements to clash with community meetings",
+              "Because records offices close early",
               "Because editors set filing deadlines that make afternoon interviews impossible to use",
             ],
             correctIndex: 0,
@@ -1055,10 +1055,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report say about presenting data free from gender bias?",
             options: [
-              "It is not yet possible",
-              "That its own tables achieve it, which is why the report can be cited without qualification",
-              "That the problem is specific to Indiana and is being resolved by a state data initiative",
-              "That gender bias affects survey research but not administrative records collections",
+              "That despite its efforts, it is not yet possible to present data free from it",
+              "That its own tables achieve it",
+              "That the problem is specific to Indiana",
+              "That it affects surveys but not administrative records",
             ],
             correctIndex: 0,
             explanation:
@@ -1068,10 +1068,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How does the report say its limitations should be viewed?",
             options: [
-              "As an additional data point",
+              "As an additional data point, not a reason to dismiss the data",
               "As grounds for treating every figure in the document as provisional until reconfirmed",
               "As a disclaimer required by the funders rather than a substantive finding about the data",
-              "As a reason to prefer the qualitative listening sessions over the statewide tables",
+              "As a reason to prefer the listening sessions",
             ],
             correctIndex: 0,
             explanation:
@@ -1081,7 +1081,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What follows for a table built from an undercounted collection?",
             options: [
-              "It inherits the undercount",
+              "It inherits the undercount, as does every other table built from that collection",
               "Its margin of error widens, but the point estimate itself remains unbiased",
               "It becomes unusable, and a reporter should not cite any figure derived from it",
               "The publisher must footnote the gap, so a reader will always be warned in the table",
@@ -1107,10 +1107,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What threshold does the quote audit flag?",
             options: [
-              "Affected people under a quarter",
-              "Any single source appearing in more than three published pieces in the same month",
-              "More than half of all quotes coming from sources inside the state capital",
-              "Fewer than two independent sources appearing in any individual published story",
+              "Affected people making up under a quarter of everyone quoted that month",
+              "Any source quoted in over three pieces a month",
+              "Over half of quotes from inside the state capital",
+              "Fewer than two sources in any single story",
             ],
             correctIndex: 0,
             explanation:
@@ -1120,7 +1120,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is scheduling around a source's availability not merely a courtesy?",
             options: [
-              "It decides whether they are in the beat at all",
+              "It is the difference between a beat that includes them and a beat that does not",
               "It reduces the outlet's exposure if the source later disputes how they were approached",
               "It is required by the SPJ code, which sets minimum standards for source accommodation",
               "It shortens the interview, since sources speak more efficiently outside working hours",
@@ -1133,8 +1133,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the quote audit explicitly NOT a rule about?",
             options: [
-              "Every individual story",
-              "The number of sources required before an allegation can responsibly be published",
+              "Every individual story; it governs the distribution across a month of work",
+              "The sources needed to publish an allegation",
               "Whether an unnamed source may be used when a named one is available instead",
               "How many times a single official may be quoted across a reporting year",
             ],
@@ -1159,7 +1159,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What phrase from the Free Press Indiana posting does lesson 7 take literally?",
             options: [
-              "Relationships built on equal trust",
+              "Someone relentless about building relationships built on equal trust",
               "Quick-turn dailies balanced against long-form enterprise projects across the state",
               "Five years of experience covering communities outside metropolitan areas",
               "Social and video literacy sufficient to publish directly to platform audiences",
@@ -1172,10 +1172,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How does the lesson describe the extractive pattern?",
             options: [
-              "Appear when it is bad, publish, disappear",
-              "Quoting the same officials repeatedly because they are the easiest sources to reach",
-              "Publishing without seeking comment from the people an institution's decisions affect",
-              "Relying on advocacy organizations to introduce every source inside a community",
+              "Appear when something bad happens, collect, publish, and not be seen again",
+              "Quoting the easiest officials over and over",
+              "Publishing without seeking comment from those affected",
+              "Relying on advocates to introduce every source",
             ],
             correctIndex: 0,
             explanation:
@@ -1185,10 +1185,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the tell that a reporter has become extractive toward a place?",
             options: [
-              "Visits and stories are the same number",
-              "More than half the sources quoted from that place decline to be named in print",
+              "The number of visits there is close to the number of stories from there",
+              "Most sources from there decline to be named",
               "The outlet receives more complaints from that place than from the rest of the beat",
-              "Residents refer the reporter to a spokesperson instead of speaking directly",
+              "Residents refer you to a spokesperson",
             ],
             correctIndex: 0,
             explanation:
@@ -1198,8 +1198,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these does equal trust require, per the lesson?",
             options: [
-              "Come back when nothing is wrong",
-              "Give the community a chance to review the piece before it is published",
+              "Come back to the place when nothing is wrong",
+              "Give it copy approval",
               "Withhold publication of anything a source later regrets having said on the record",
               "Route all future contact through whichever organizer first introduced you",
             ],
@@ -1211,9 +1211,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a community learn when it appears in your work only at its worst?",
             options: [
-              "What you think it is",
+              "Exactly what you think it is, judged by when it appears in your work",
               "That the outlet's editors decide coverage without input from the reporters on the beat",
-              "That good news is handled by a different desk with different standards of proof",
+              "That a different desk handles good news",
               "That negative coverage attracts more readers, which is what the outlet is optimizing for",
             ],
             correctIndex: 0,
@@ -1237,10 +1237,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is predictability a better offer to a source than sympathy?",
             options: [
-              "It survives a story they hate",
-              "It can be written into a signed agreement, which makes it enforceable if breached",
-              "It reduces the number of follow-up questions a source must answer before publication",
-              "It transfers responsibility for the piece from the reporter to the newsroom's editors",
+              "It survives a story the source hates, because they can forecast how you will behave",
+              "It can be written into an enforceable agreement",
+              "It means fewer follow-up questions for the source",
+              "It moves responsibility to the editors",
             ],
             correctIndex: 0,
             explanation:
@@ -1250,8 +1250,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "When returning to a source after a piece they experienced as a betrayal, what comes first?",
             options: [
-              "Asking what it cost them",
-              "Explaining the editorial reasoning and the standards the piece was held to before filing",
+              "Asking what it cost them, rather than opening with a defense of the piece",
+              "Explaining the editorial reasoning behind the piece",
               "Offering a follow-up story that presents their side of the events at greater length",
               "Requesting that they put any objection in writing so the desk can review it formally",
             ],
@@ -1263,10 +1263,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson call the only currency journalism has that a reader can verify?",
             options: [
-              "A correction",
-              "A named source, whose existence and statements a reader can independently confirm",
+              "A correction, made publicly and promptly when the reporter was wrong",
+              "A named source",
               "A linked primary document, published alongside the story for readers to inspect",
-              "A byline, which attaches an accountable person to every published claim",
+              "A byline",
             ],
             correctIndex: 0,
             explanation:
@@ -1276,10 +1276,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the lesson treat equal trust as a professional skill rather than a virtue?",
             options: [
-              "A beat runs on sources who still speak to you in year three",
-              "Because newsroom ethics codes make it a condition of continued employment",
-              "Because sources who trust a reporter grant interviews faster, shortening the reporting cycle",
-              "Because it reduces the likelihood of a defamation claim from a person named in a story",
+              "A beat runs on sources who will still speak to you in year three",
+              "Ethics codes make it a condition of employment",
+              "Trusting sources grant interviews faster",
+              "It lowers the risk of a defamation claim",
             ],
             correctIndex: 0,
             explanation:
@@ -1289,7 +1289,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which two reasons does the lesson give for a source experiencing a piece as betrayal?",
             options: [
-              "You were wrong, or accurate reporting hurt",
+              "Either you were wrong, or your reporting was accurate and the accuracy hurt",
               "The story was cut for space, or a headline written by someone else misrepresented it",
               "The publication date moved, or a competing outlet published the same material first",
               "A quote was paraphrased, or the source's title was rendered incorrectly in print",
@@ -1302,10 +1302,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say a reporter should be able to offer after publication?",
             options: [
-              "A phone number that reaches a person",
+              "A phone number that reaches a person when they call afterward",
               "A written summary of every editorial decision made about the source's contribution",
               "An opportunity to record a response for the outlet's social and video channels",
-              "A commitment to revisit the subject within a fixed number of weeks",
+              "A promise to revisit within weeks",
             ],
             correctIndex: 0,
             explanation:
@@ -1328,10 +1328,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What new question does the Indiana Girl Report say it went into 2025 with?",
             options: [
-              "Social connection",
+              "Social connection, a theme the listening sessions could surface",
               "Whether state administrative data undercounts girls relative to boys across all domains",
-              "How county-level differences in provider ratios affect girls' access to mental health care",
-              "Whether the prior year's recommendations had been adopted by Indiana school districts",
+              "County provider ratios for mental health",
+              "Whether districts adopted prior recommendations",
             ],
             correctIndex: 0,
             explanation:
@@ -1341,10 +1341,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say happens to the protected listening block on a bad week?",
             options: [
-              "It gets cut first",
-              "It expands, because a week with no filed stories leaves more time for community work",
-              "It moves to the following week, which is why beats stay current despite deadline pressure",
-              "It is reassigned to a colleague so the beat keeps a presence in the community",
+              "It is the first thing cut, which is the reason beats go stale",
+              "It expands to fill the slack",
+              "It moves to the following week",
+              "It is handed to a colleague",
             ],
             correctIndex: 0,
             explanation:
@@ -1354,7 +1354,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the next step after a quote audit shows a group you have never quoted?",
             options: [
-              "Put one on the calendar",
+              "Put one of those groups on the calendar, rather than waiting for a story",
               "File a records request seeking the institution's own contact list for that population",
               "Ask an advocacy organization to nominate a representative who can speak for the group",
               "Add a standing note to the beat memo explaining why the group is hard to reach",
@@ -1367,9 +1367,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Whose access cost does the lesson describe as part of the job?",
             options: [
-              "An official's",
+              "An official's, since talking to reporters is part of the job",
               "A shift worker's, because employers are required to permit media interviews during hours",
-              "An advocate's, since organizations exist specifically to speak to the press",
+              "An advocate's",
               "An expert's, because academic institutions credit media engagement in promotion reviews",
             ],
             correctIndex: 0,
@@ -1393,10 +1393,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What did the 2025 Indiana Girl Report pair its listening sessions with?",
             options: [
-              "Statewide data",
-              "A telephone poll weighted to match the age and race distribution of Indiana girls",
-              "Interviews with every school district superintendent who agreed to participate",
-              "A literature review of peer-reviewed research on adolescent social connection",
+              "Statewide administrative data, alongside feedback from 130 adults",
+              "A weighted telephone poll of girls",
+              "Interviews with district superintendents",
+              "A review of peer-reviewed research",
             ],
             correctIndex: 0,
             explanation:
@@ -1406,10 +1406,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a reporter explicitly NOT doing during community listening?",
             options: [
-              "Collecting quotes",
+              "Collecting quotes; what you collect instead is the agenda",
               "Identifying themselves, since disclosure would change what the room is willing to say",
-              "Taking notes, since a written record makes the setting feel like an interview",
-              "Attending, since listening is done through intermediaries who already have trust",
+              "Taking notes of any kind",
+              "Attending in person",
             ],
             correctIndex: 0,
             explanation:
@@ -1419,7 +1419,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What has a reporter done if they treat 91 listening sessions as a survey?",
             options: [
-              "Misread it",
+              "Misread it, since listening sessions are not a probability sample of girls",
               "Applied the correct method, since the sessions were run across the whole state",
               "Overcorrected, since qualitative work is more reliable than administrative data",
               "Followed the report's own guidance, which presents the sessions as representative",
@@ -1432,8 +1432,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does business-hours availability shape who appears in coverage?",
             options: [
-              "It is when reporters work",
-              "Because public bodies schedule their meetings to overlap with the working day",
+              "It is when reporters work and when hourly workers cannot",
+              "Because meetings overlap the working day",
               "Because records offices close before most reporters finish their filing for the day",
               "Because editors will not approve overtime for interviews conducted after hours",
             ],
@@ -1445,10 +1445,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is an access cost?",
             options: [
-              "What talking to a reporter costs the source",
-              "The fee an agency charges for producing the records a story depends on",
-              "The travel a reporter must fund to reach communities outside the metros",
-              "The time an outlet spends verifying an account before it can be published",
+              "What talking to a reporter costs a source: time, risk, sometimes a job",
+              "An agency's fee for producing records",
+              "Travel to reach communities outside the metros",
+              "Time spent verifying an account",
             ],
             correctIndex: 0,
             explanation:
@@ -1471,7 +1471,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about a beat that narrows to whoever is easiest?",
             options: [
-              "The audit is the only reliable defense",
+              "The twenty-minute monthly audit is the only reliable defense against it",
               "It is unavoidable in a newsroom that expects daily filing from a single reporter",
               "It corrects itself once the reporter has held the beat for more than a year",
               "It is a legal risk, because relying on official sources invites a claim of bias",
@@ -1484,10 +1484,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does equal trust require telling people before they speak?",
             options: [
-              "What will happen to what they say",
+              "What you are doing and what will happen to what they say",
               "Which editor will make the final decision about whether their words are published",
-              "How long the outlet retains recordings and notes from the conversation",
-              "Whether the piece will be published before or after the institution responds",
+              "How long recordings are retained",
+              "Whether the institution responds first",
             ],
             correctIndex: 0,
             explanation:
@@ -1497,10 +1497,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How should the good outcome on a beat be covered?",
             options: [
-              "With the same seriousness as the bad one",
-              "Sparingly, because positive coverage reads as promotional and costs the outlet credibility",
-              "Through a separate feature desk, so accountability reporting is not confused with it",
-              "Only when a community requests it, so the outlet is not seen to be choosing favorites",
+              "With the same seriousness the reporter gives a bad outcome",
+              "Sparingly, since it reads as promotional",
+              "Through a separate feature desk",
+              "Only when a community requests it",
             ],
             correctIndex: 0,
             explanation:
@@ -1510,8 +1510,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does an extractive pattern teach a community?",
             options: [
-              "That journalists arrive to take",
-              "That the outlet lacks the staffing to cover the area consistently over time",
+              "That journalists arrive only to take something from it",
+              "That the outlet is short-staffed",
               "That coverage decisions are made by editors rather than by the reporter they know",
               "That the reporter is inexperienced and will be replaced within a year or two",
             ],
@@ -1523,7 +1523,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is equal trust, if it is not agreement?",
             options: [
-              "Predictability",
+              "Predictability: people can forecast how you will behave, even after a story they hate",
               "Neutrality, meaning the reporter takes no position on any dispute inside the community",
               "Reciprocity, meaning the community receives coverage in proportion to its cooperation",
               "Confidentiality, meaning no source is named without their explicit written consent",
@@ -1645,10 +1645,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which sources does the lesson say matter most on a beat?",
             options: [
-              "The ones you talked to for two years first",
-              "The officials authorized to speak, because their statements can be quoted without risk",
-              "The advocates who track the subject full time and can supply context on deadline",
-              "The former employees who left the institution and are free of any duty of confidence",
+              "The ones you were talking to for two years before they had anything to tell you",
+              "The officials authorized to speak on the record",
+              "The full-time advocates who supply context",
+              "The former employees free of any duty of confidence",
             ],
             correctIndex: 0,
             explanation:
@@ -1658,10 +1658,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these is one of the three conditions for a source calling with something serious?",
             options: [
-              "They can reach you quickly",
-              "They have already been quoted in your outlet at least once in the past year",
+              "They can reach you quickly when the thing happens",
+              "They were quoted by you before",
               "They have confirmed that your newsroom will not identify them under any circumstances",
-              "They believe your outlet reaches the audience whose reaction they want to provoke",
+              "They want to provoke a reaction",
             ],
             correctIndex: 0,
             explanation:
@@ -1671,9 +1671,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What field turns keeping sources into a task rather than an intention?",
             options: [
-              "A next-contact date",
+              "A next-contact date beside each name on the rolling list",
               "A tag recording which of the beat's institutions each contact currently works for",
-              "A note describing the ground rules agreed at the most recent conversation",
+              "A note on the latest ground rules",
               "A rating of how reliable the source's previous information turned out to be",
             ],
             correctIndex: 0,
@@ -1684,7 +1684,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is contact that asks for nothing?",
             options: [
-              "Outreach with no request attached",
+              "Outreach with no request attached, like a note when they are quoted well elsewhere",
               "An interview conducted without recording, so the source is not committed to anything",
               "A message sent through an intermediary who already has a relationship with the source",
               "A standing invitation for the source to contact the reporter whenever they choose",
@@ -1710,10 +1710,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How should a reporter introduce themselves to unauthorized mid-level staff?",
             options: [
-              "Say you are not asking them to say anything",
-              "Explain that any information they provide will be attributed to an unnamed official",
-              "Ask a colleague inside the institution to vouch for you before making contact",
-              "Request a formal interview through the agency's communications office first",
+              "Be explicit that you are not asking them to say anything, then leave",
+              "Explain they will be quoted as an unnamed official",
+              "Ask an insider to vouch for you first",
+              "Request an interview through the press office",
             ],
             correctIndex: 0,
             explanation:
@@ -1723,9 +1723,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is wrong with treating a kept source as a friend?",
             options: [
-              "You will publish something they dislike",
-              "It creates a conflict of interest that the outlet's ethics policy requires you to disclose",
-              "It makes the source less likely to provide documents, since friends avoid legal risk",
+              "You will publish something they dislike, and a friendship may not survive it",
+              "It is a conflict of interest you must disclose",
+              "Friends avoid legal risk, so they give fewer documents",
               "It obliges you to give them advance notice of every piece that mentions their institution",
             ],
             correctIndex: 0,
@@ -1736,8 +1736,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say to do when a source goes quiet?",
             options: [
-              "Ask once and accept the answer",
-              "Escalate through a colleague who still has contact, to find out what changed",
+              "Ask once, plainly, and accept the answer you get",
+              "Escalate through a colleague",
               "Stop all contact permanently, since a silent source has withdrawn consent to be approached",
               "Publish a correction to whichever story preceded the silence, as a gesture of good faith",
             ],
@@ -1749,7 +1749,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the rule about a source and the published story?",
             options: [
-              "Never let them find out from the story",
+              "Never let them find out from the story; anything that names them, they hear from you first",
               "Never share the publication date, because a source may alert the institution in advance",
               "Never quote a source in a piece they have not been given an opportunity to review",
               "Never publish a name without written consent recorded before the interview began",
@@ -1775,10 +1775,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "When are ground rules agreed?",
             options: [
-              "Before the information is given",
-              "At the end of the interview, once both parties know what was actually discussed",
-              "In writing after the conversation, so there is a record of what each term covered",
-              "By the editor before publication, since attribution is an editing decision",
+              "Before the information is given, and defined out loud every time",
+              "At the end of the interview",
+              "In writing after the conversation",
+              "By the editor before publication",
             ],
             correctIndex: 0,
             explanation:
@@ -1788,10 +1788,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does on the record mean, as the lesson defines it?",
             options: [
-              "Usable with name and title",
+              "Usable with name and title, the default you state at the start",
               "Usable only after the source has confirmed the exact quotations that will appear",
-              "Usable in summary form, but not as direct quotation without further permission",
-              "Usable by the reporter but not by other journalists at the same outlet",
+              "Usable in summary form only",
+              "Usable only inside the outlet",
             ],
             correctIndex: 0,
             explanation:
@@ -1801,9 +1801,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What must be agreed in advance for an on-background attribution?",
             options: [
-              "The exact wording of the description",
+              "The exact wording of how you will describe the source",
               "Which editor at the outlet will be told the source's real name before publication",
-              "How long the material may be held before the outlet is free to publish it",
+              "How long to hold the material",
               "Whether the source will confirm the same information on the record if asked later",
             ],
             correctIndex: 0,
@@ -1814,7 +1814,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is deep background?",
             options: [
-              "Usable with no attribution",
+              "Usable as your own knowledge, with no attribution of any kind to the source",
               "Unusable material provided only to steer a reporter toward a document held elsewhere",
               "Material usable once a second source has independently confirmed the same account",
               "Information that may be published only after the source has left their position",
@@ -1840,10 +1840,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a source doing when they say afterward that a remark was off the record?",
             options: [
-              "Asking a favor",
-              "Invoking an agreement that was implied by the professional context of the conversation",
-              "Exercising a right that most state shield laws grant to any interviewee",
-              "Withdrawing consent, which obliges the reporter to remove the material",
+              "Asking a favor, which you may grant or decline, not invoking an agreement",
+              "Invoking an implied professional agreement",
+              "Exercising a right under state shield laws",
+              "Withdrawing consent to the material's use",
             ],
             correctIndex: 0,
             explanation:
@@ -1853,9 +1853,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What happens if a source believes they can reclassify remarks after the fact?",
             options: [
-              "Eventually they reclassify the one that matters",
-              "The reporter becomes legally liable for any material published against the source's wishes",
-              "The outlet must issue a clarification noting that attribution was disputed",
+              "Eventually they reclassify the one sentence your story depends on",
+              "The reporter becomes legally liable",
+              "The outlet must issue a clarification",
               "The relationship becomes stronger, because the source learns the reporter is flexible",
             ],
             correctIndex: 0,
@@ -1866,9 +1866,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "In Cohen v. Cowles Media Co., what happened to the source?",
             options: [
-              "He was named and lost his job",
+              "He was named by the papers and lost his job",
               "He was subpoenaed and jailed for refusing to identify who supplied him the documents",
-              "He won an injunction preventing publication of the documents he had provided",
+              "He won an injunction",
               "He was granted anonymity by the court after the newspaper attempted to name him",
             ],
             correctIndex: 0,
@@ -1879,7 +1879,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What did the Supreme Court hold in Cohen v. Cowles Media Co.?",
             options: [
-              "The First Amendment does not bar the claim",
+              "That the First Amendment does not bar a promissory estoppel claim against the press",
               "That a promise of confidentiality is unenforceable because it restrains editorial judgment",
               "That newsroom promises bind the individual reporter but never the publishing company",
               "That state shield statutes preempt any civil claim arising from a broken promise",
@@ -1892,10 +1892,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What practical step does the Cohen case argue for when promising confidentiality?",
             options: [
-              "Tell the source who else will know their name",
-              "Obtain the promise in writing so that the terms are enforceable against the employer",
-              "Route the promise through the outlet's counsel before the interview takes place",
-              "Refuse to make any promise until a second source has confirmed the information",
+              "Tell the source who else in your newsroom will know their name",
+              "Get the promise in writing",
+              "Clear it with counsel first",
+              "Wait for a second source",
             ],
             correctIndex: 0,
             explanation:
@@ -1918,10 +1918,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does off the record NOT govern?",
             options: [
-              "Whether you can be compelled",
-              "Whether the material may be shared with an editor inside the same newsroom",
+              "Whether you can be compelled to reveal what you heard",
+              "Sharing with an editor in the newsroom",
               "Whether the reporter may use the information to frame later questions to officials",
-              "Whether a second reporter at the outlet is bound by the same agreement",
+              "Whether a colleague is bound",
             ],
             correctIndex: 0,
             explanation:
@@ -1931,10 +1931,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What three questions form the motive check?",
             options: [
-              "Why them, why now, what it costs them",
+              "Why are they telling me, why now, and what happens to them if I publish",
               "Who else has it, when it was created, and whether the original still exists on file",
               "What it proves, what it does not prove, and which document would settle the difference",
-              "Who benefits, who is harmed, and whether either party has sued the outlet before",
+              "Who benefits and who is harmed",
             ],
             correctIndex: 0,
             explanation:
@@ -1944,10 +1944,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about a self-interested source?",
             options: [
-              "Most useful information comes from one",
-              "Their material should be treated as unreliable until an official confirms it on the record",
-              "They must be identified in the story by name, so readers can weigh the interest themselves",
-              "Their motive should be kept out of the piece unless it is directly relevant to the finding",
+              "Most useful information arrives from someone who benefits, so it is normal",
+              "Treat their material as unreliable until an official confirms it",
+              "Identify them by name so readers can weigh the interest",
+              "Keep their motive out of the piece unless it is relevant",
             ],
             correctIndex: 0,
             explanation:
@@ -1957,10 +1957,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the other side test?",
             options: [
-              "Would I run this from the opposite party",
+              "Would I run this if the same document came from the other side",
               "Would a reasonable reader reach the same conclusion from the document without my framing",
               "Would the institution's own auditor accept the document as authentic evidence",
-              "Would a second newsroom independently choose to publish the same material",
+              "Would another newsroom run it",
             ],
             correctIndex: 0,
             explanation:
@@ -1970,10 +1970,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why must a disclosed motive go into the story?",
             options: [
-              "Readers can weigh what you disclose",
-              "Because the SPJ code makes source motives a mandatory element of every published piece",
+              "Readers can weigh a motive you disclose but not one you hide",
+              "The SPJ code requires it",
               "Because omitting it exposes the outlet to a claim from the party the source opposes",
-              "Because it protects the reporter from being accused of coordinating with the source",
+              "It prevents claims of coordination",
             ],
             correctIndex: 0,
             explanation:
@@ -1996,7 +1996,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these counts as independent corroboration?",
             options: [
-              "An official response",
+              "An official response, independent of the source who supplied the document",
               "A second document supplied by the same person from the same internal file",
               "A colleague at the outlet who has heard the same account from the same source",
               "The leaker restating the account consistently across two separate conversations",
@@ -2009,10 +2009,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say to decide before sensitive material arrives?",
             options: [
-              "What you keep, where, and for how long",
-              "Which lawyer the outlet will retain if the material triggers a legal challenge",
-              "Whether the story will run, so that the source is not left waiting on an answer",
-              "How the material will be described in the piece if the source is later identified",
+              "What you will keep, where it will live, and for how long you will hold it",
+              "Which lawyer the outlet will retain",
+              "Whether the story will run",
+              "How the material will be described",
             ],
             correctIndex: 0,
             explanation:
@@ -2022,8 +2022,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What must a reporter tell sources about their employer's systems?",
             options: [
-              "They are not yours",
-              "That messages are retained for a fixed period and then permanently destroyed",
+              "That those systems are not yours to protect",
+              "That messages expire",
               "That the outlet's counsel reviews all stored source material before publication",
               "That a source's identity is protected by the same privilege that covers attorneys",
             ],
@@ -2035,10 +2035,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the costliest pattern described in the source-hygiene lesson?",
             options: [
-              "Becoming one faction's outlet",
+              "Becoming one faction's reliable outlet without noticing",
               "Publishing a document before its authenticity has been established by a second party",
-              "Storing sensitive files on personal devices that the newsroom cannot secure or audit",
-              "Promising confidentiality to a source whose information turns out to be false",
+              "Storing files on personal devices",
+              "Promising confidentiality to a false source",
             ],
             correctIndex: 0,
             explanation:
@@ -2061,10 +2061,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson prefer over writing a source's name down carefully?",
             options: [
-              "Not writing it down",
-              "Encrypting the file that contains it, using a key the employer does not hold",
-              "Recording it in a paper notebook rather than any system connected to a network",
-              "Using an agreed code name that only the reporter and the editor can resolve",
+              "Not writing the name down at all, rather than recording it carefully",
+              "Encrypting the file",
+              "Using a paper notebook",
+              "Using an agreed code name",
             ],
             correctIndex: 0,
             explanation:
@@ -2074,7 +2074,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What example does the lesson give of a document that is accurate and also a move?",
             options: [
-              "One arriving before a contract vote from a rival vendor",
+              "One arriving three weeks before a contract vote, from a competitor of the incumbent",
               "An audit released by the agency itself on the afternoon before a public holiday",
               "A leaked draft policy circulated to reporters by an advocacy group during a session",
               "A settlement agreement obtained through a records request filed months earlier",
@@ -2087,10 +2087,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say ends beats, alongside careless handling of material?",
             options: [
-              "Being used without examining the motive",
+              "Being used by a source whose motive you never examined",
               "Publishing a correction that names a source who had been promised confidentiality",
               "Missing deadlines often enough that the desk reassigns the subject to another reporter",
-              "Covering an institution the reporter has a personal financial relationship with",
+              "Covering an institution you have money in",
             ],
             correctIndex: 0,
             explanation:
@@ -2102,8 +2102,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             options: [
               "I will report what I find and tell you before it runs",
               "I will let you review any passage in which you are quoted before the piece is filed",
-              "I will not publish anything about your institution without contacting you first",
-              "I will keep your name out of anything you would prefer not to be associated with",
+              "I will contact you before every story",
+              "I will keep your name out of it",
             ],
             correctIndex: 0,
             explanation:
@@ -2113,10 +2113,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which of the four ground-rule terms is the stated default?",
             options: [
-              "On the record",
-              "On background, since a source who has not agreed otherwise should not be exposed",
-              "Off the record, until the reporter and source explicitly negotiate something usable",
-              "Deep background, because it protects both parties while the relationship is new",
+              "On the record, which you state at the top of the conversation",
+              "On background",
+              "Off the record",
+              "Deep background",
             ],
             correctIndex: 0,
             explanation:
@@ -2126,7 +2126,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the lesson insist the ground-rule terms be defined out loud?",
             options: [
-              "The words mean different things to different people",
+              "The words mean different things to different people, so each is spelled out",
               "Because a verbal statement is legally binding in a way that a written one is not",
               "Because sources routinely record interviews and the definition protects the reporter",
               "Because editors require a recorded statement of terms before approving anonymity",
@@ -2139,10 +2139,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Where does the lesson say a reporter should record which kind of corroboration they obtained?",
             options: [
-              "In the notes",
+              "In your notes, saying which kind it was",
               "In the published piece, so readers can assess the strength of each confirmation",
               "In the newsroom's legal file, which is the only record protected from disclosure",
-              "In the beat memo, alongside the year questions the material helps answer",
+              "In the beat memo",
             ],
             correctIndex: 0,
             explanation:
@@ -2165,10 +2165,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How often is the rolling contact list worked through?",
             options: [
-              "Every month",
+              "Every month, with a next-contact date beside each name",
               "Every week, which is what makes the fifteen minutes a week add up over a year",
-              "Every quarter, timed to the institution's reporting and budget cycle",
-              "Whenever a story requires a source the reporter has not spoken to recently",
+              "Every quarter",
+              "Whenever a story needs one",
             ],
             correctIndex: 0,
             explanation:
@@ -2178,10 +2178,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does continuing to press a source who has gone quiet produce?",
             options: [
-              "A permanent silence",
-              "An explanation, which is why persistence is the correct response to an unanswered call",
-              "A formal complaint to the outlet, which the newsroom is then obliged to investigate",
-              "A referral to the institution's communications office, which handles all further contact",
+              "A permanent silence, and everyone they talk to learns what you are like",
+              "An explanation",
+              "A formal complaint to the outlet",
+              "A referral to the press office",
             ],
             correctIndex: 0,
             explanation:
@@ -2191,7 +2191,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which reasons does the lesson give for a source going quiet?",
             options: [
-              "They got burned, or their employer noticed",
+              "They got burned, their employer noticed, or your last piece hurt them more than you knew",
               "They have moved to a role that prohibits contact with the press under agency policy",
               "They are waiting for the outlet to publish a correction on an unrelated earlier story",
               "They have been advised by counsel not to speak while litigation is pending",
@@ -2220,7 +2220,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
               "Everything is on the record unless we agree otherwise",
               "Tell me now if there is anything you would prefer I did not publish about this",
               "I will send you the passages that quote you before the piece is filed for editing",
-              "Nothing you say will be attributed to you unless you tell me it can be",
+              "Nothing you say is attributable",
             ],
             correctIndex: 0,
             explanation:
@@ -2230,10 +2230,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "In Cohen v. Cowles Media Co., who overrode the promise the reporters had made?",
             options: [
-              "The editors",
+              "The papers' editors, who published his name",
               "A court, which ordered the newspapers to identify the source of the documents",
-              "The source himself, who agreed to be named once the documents were verified",
-              "The publisher's counsel, who determined the promise was unenforceable",
+              "The source himself",
+              "The publisher's counsel",
             ],
             correctIndex: 0,
             explanation:
@@ -2256,10 +2256,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a handling plan?",
             options: [
-              "A decision made before sensitive material arrives",
-              "The newsroom's written procedure for verifying documents received from anonymous sources",
-              "A legal agreement setting out which employees may access a story's source files",
-              "An index of every document a reporter has downloaded during a reporting project",
+              "A decision made before sensitive material arrives about what is kept and where",
+              "The newsroom's verification procedure",
+              "A legal agreement on file access",
+              "An index of downloaded documents",
             ],
             correctIndex: 0,
             explanation:
@@ -2269,7 +2269,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which systems does the lesson name as reachable by someone other than the reporter?",
             options: [
-              "Employer-administered cloud drives",
+              "Cloud drives your employer administers, along with chat logs and calendar entries",
               "Encrypted messaging applications installed on a reporter's personal phone",
               "Paper notebooks stored at the reporter's home rather than in the newsroom",
               "Voice recordings that were never transferred off the recording device",
@@ -2282,10 +2282,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about the note in your phone?",
             options: [
-              "It is source material",
+              "It is source material, and part of knowing where yours lives",
               "It is protected, because personal devices fall outside an employer's retention policy",
               "It should be the primary store, because it is the only system a reporter controls",
-              "It is exempt from a handling plan, because it holds no documents",
+              "It holds no documents",
             ],
             correctIndex: 0,
             explanation:
@@ -2405,10 +2405,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How do emerging issues usually first appear on a beat?",
             options: [
-              "As small changes in routine documents",
-              "Through a tip from a source inside the institution who wants the matter made public",
-              "In the minutes of a closed session that a public body later has to release",
-              "As a spike in public comment at meetings held during the institution's budget cycle",
+              "As small changes in routine documents, which is why the beat map exists",
+              "Through a tip from an inside source",
+              "In released closed-session minutes",
+              "As a spike in public comment",
             ],
             correctIndex: 0,
             explanation:
@@ -2418,10 +2418,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a consent calendar?",
             options: [
-              "Items approved in one vote without discussion",
+              "Routine items approved in a single vote without any discussion",
               "The published schedule of meetings a public body must hold during its fiscal year",
-              "The list of items a board has agreed to defer to a future meeting for further study",
-              "A record of items on which individual members have declared a conflict of interest",
+              "Items deferred to a future meeting",
+              "Items with a declared conflict of interest",
             ],
             correctIndex: 0,
             explanation:
@@ -2434,7 +2434,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
               "An item tabled three meetings running",
               "A meeting rescheduled from its usual weekday to accommodate a member's travel",
               "A public comment period that runs longer than the time allotted in the agenda",
-              "A vote that splits along the same lines as the previous three votes taken",
+              "A split vote",
             ],
             correctIndex: 0,
             explanation:
@@ -2444,9 +2444,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the lesson call budget comparison the highest-yield hour on most beats?",
             options: [
-              "It is where intent is stated in numbers",
+              "Budgets are the only document where an institution states its intent in numbers",
               "Because budget documents are the only records agencies are required to publish online",
-              "Because auditors have already verified the figures, so no independent confirmation is needed",
+              "Because auditors have verified the figures, so no confirmation is needed",
               "Because budget votes are the only agenda items that cannot be placed on a consent calendar",
             ],
             correctIndex: 0,
@@ -2470,10 +2470,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why are filings useful as a signal family?",
             options: [
-              "They were made for another purpose",
-              "They are published faster than any other class of government record on most beats",
-              "They carry legal penalties for inaccuracy, which makes them more reliable than budgets",
-              "They are indexed centrally, so a reporter can search every institution at once",
+              "They were made for another purpose entirely, so nobody has shaped them for you",
+              "They are published faster than other records",
+              "They carry legal penalties for inaccuracy",
+              "They are indexed centrally",
             ],
             correctIndex: 0,
             explanation:
@@ -2483,10 +2483,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which personnel change does the lesson flag as an early warning?",
             options: [
-              "Clustered departures",
-              "A hiring freeze announced publicly at the start of a fiscal year",
+              "Clustered departures, especially quick ones",
+              "A hiring freeze",
               "The retirement of a long-serving official who announced their plans in advance",
-              "A reorganization that renames departments without changing reporting lines",
+              "A department reorganization",
             ],
             correctIndex: 0,
             explanation:
@@ -2499,7 +2499,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
               "Noticing an absence requires having watched the presence",
               "Institutions are not required to announce when they stop publishing a data series",
               "Dropped indicators are usually replaced by a similar measure under a different name",
-              "Public comment periods are advertised in legal notices that few reporters read",
+              "Notices run in legal columns",
             ],
             correctIndex: 0,
             explanation:
@@ -2509,7 +2509,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a reporter do with a signal?",
             options: [
-              "Write a note with the date, document, and question",
+              "Write a note in the beat file with the date, the document, and the one question",
               "Call the institution for comment, which establishes whether the change is newsworthy",
               "Publish a short item, since routine changes are of interest to the beat's regular readers",
               "File a records request for the underlying decision before the trail goes cold",
@@ -2535,10 +2535,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a beat file?",
             options: [
-              "The working memory of a beat",
-              "The archive of every published story a reporter has filed from the subject area",
-              "The newsroom's shared record of which reporter covers which institution",
-              "The legal file in which source agreements and confidentiality promises are recorded",
+              "The working memory of a beat, kept where it can be searched and handed over",
+              "An archive of every published story",
+              "The newsroom's assignment record",
+              "The legal file of source agreements",
             ],
             correctIndex: 0,
             explanation:
@@ -2548,10 +2548,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which four parts make up a beat file?",
             options: [
-              "Signal log, chronology, contacts, documents",
-              "Story drafts, editor notes, published clips, and reader correspondence about the beat",
+              "A signal log, a sourced chronology, contacts, and downloaded documents",
+              "Drafts, editor notes, clips, and reader mail",
               "Budget spreadsheets, meeting recordings, transcripts, and photographs from assignments",
-              "Records requests, appeal letters, agency responses, and the fee waivers granted",
+              "Records requests, appeals, responses, fee waivers",
             ],
             correctIndex: 0,
             explanation:
@@ -2562,7 +2562,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             prompt: "Why does the beat file keep downloaded copies of documents?",
             options: [
               "Agency websites reorganize and links die",
-              "Because records law requires a requester to retain what was released to them",
+              "Records law requires it",
               "Because a downloaded copy carries metadata that proves when the document was created",
               "Because the newsroom's archive system cannot index documents held on external sites",
             ],
@@ -2574,7 +2574,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What separates a beat file from a pile, per the lesson?",
             options: [
-              "Every entry names where it came from",
+              "Every entry names where it came from: the document, the page, and the date",
               "Every entry has been checked by a second reporter before it is added to the log",
               "Every entry is tagged to one of the four inventories on the beat map",
               "Every entry is dated and then deleted after twelve months to limit legal exposure",
@@ -2600,10 +2600,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the first of the three tests that turn a pattern into a story?",
             options: [
-              "Recurrence",
-              "Consequence, because a pattern with no identifiable harm is not worth a reporter's time",
-              "Provability, because nothing else matters if the material cannot be put on the record",
-              "Novelty, because a pattern already covered elsewhere cannot be reported again",
+              "Recurrence: has it appeared more than twice, in more than one place",
+              "Consequence",
+              "Provability",
+              "Novelty",
             ],
             correctIndex: 0,
             explanation:
@@ -2613,10 +2613,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the consequence test ask?",
             options: [
-              "Who is affected and how, in one sentence",
+              "Who is affected and how, in one sentence, without hedging",
               "Whether the institution has a legal obligation that the pattern shows it is breaching",
-              "How many people are affected, expressed as a share of the relevant population",
-              "Whether an editor will allocate space to the story once the reporting is finished",
+              "How many are affected, as a share",
+              "Whether an editor will give it space",
             ],
             correctIndex: 0,
             explanation:
@@ -2626,10 +2626,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a pattern that fails the provability test?",
             options: [
-              "A records request and two phone calls",
+              "A records request and two phone calls, not a story yet",
               "A story that should be published with the uncertainty disclosed to readers up front",
               "A note that should be deleted from the signal log so it does not mislead a successor",
-              "A tip that should be handed to an investigative desk with more time to pursue it",
+              "A tip for the investigative desk",
             ],
             correctIndex: 0,
             explanation:
@@ -2639,7 +2639,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How often does the lesson say to read the signal log from the top?",
             options: [
-              "Once a month",
+              "Once a month, as a scheduled task, reading your own signal log from the top",
               "Once a week, alongside the protected listening block described earlier in the course",
               "Once a quarter, timed to the institution's budget and reporting cycle",
               "Only when starting a new enterprise project, so the review is not wasted",
@@ -2665,10 +2665,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is a portable beat file a professional obligation?",
             options: [
-              "The next reporter otherwise starts at zero",
-              "Because employment agreements typically assign ownership of reporting notes to the outlet",
-              "Because a file held only by one person cannot be produced if a court orders disclosure",
-              "Because editors need access to verify the sourcing behind any published claim",
+              "Otherwise the next reporter starts at zero and the community loses continuity",
+              "Employment agreements assign notes to the outlet",
+              "Courts can order a file produced",
+              "Editors need to verify the sourcing",
             ],
             correctIndex: 0,
             explanation:
@@ -2678,9 +2678,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What are the two modes of work a beat produces?",
             options: [
-              "Quick-turn and enterprise",
-              "Reported pieces and analysis, distinguished by whether the reporter's judgment is visible",
-              "Breaking news and features, distinguished by whether the piece is time-sensitive",
+              "Same-day quick-turn work and weeks-long enterprise work",
+              "Reported pieces and analysis",
+              "Breaking news and features",
               "Original reporting and aggregation, distinguished by who gathered the underlying facts",
             ],
             correctIndex: 0,
@@ -2692,7 +2692,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             prompt: "What is enterprise work, as the lesson defines it?",
             options: [
               "Work that would not exist unless you made it",
-              "Any story longer than a set word count that the desk schedules in advance",
+              "Any story over a set word count",
               "Reporting that requires a records request, as opposed to reporting done by interview",
               "A project assigned to more than one reporter and supported by a dedicated editor",
             ],
@@ -2704,7 +2704,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does enterprise time get spent on quick-turn work?",
             options: [
-              "Only quick-turn has a deadline and a visible cost",
+              "Only quick-turn carries a deadline and a visible cost, until enterprise publishes",
               "Because editors evaluate reporters on published volume rather than on originated stories",
               "Because enterprise reporting cannot proceed until records requests are answered",
               "Because quick-turn stories reach larger audiences and therefore justify the hours",
@@ -2717,10 +2717,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which blocks does the lesson say a week should protect?",
             options: [
-              "One enterprise, one listening, monthly file review",
-              "Two enterprise blocks and a daily hour for reading the beat's incoming documents",
-              "One block per institution on the beat map, rotated through across the month",
-              "A full day of enterprise, which is the minimum that produces publishable progress",
+              "One enterprise block, one listening block, and a monthly hour of file review",
+              "Two enterprise blocks and a daily reading hour",
+              "One block per institution, rotated",
+              "A full day of enterprise each week",
             ],
             correctIndex: 0,
             explanation:
@@ -2730,9 +2730,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What should every quick-turn piece deposit into the accumulation?",
             options: [
-              "A signal, a name, and a document",
-              "A published clip, a headline, and a note of the audience the piece reached",
-              "A correction log entry, a source agreement, and a record of the ground rules used",
+              "A signal for the file, a name for the contacts, a document for the folder",
+              "A clip and its audience numbers",
+              "A correction log entry",
               "A budget line, an agenda item, and a court docket number from the same institution",
             ],
             correctIndex: 0,
@@ -2746,7 +2746,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
               "What it will show and what it will not",
               "How many weeks the reporting will take and what it will cost the desk in travel",
               "Which competing outlet is working the same subject and how far along they appear to be",
-              "Which sources have already agreed to speak on the record about the finding",
+              "Who is on record",
             ],
             correctIndex: 0,
             explanation:
@@ -2756,7 +2756,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does an enterprise piece publish about its own limits?",
             options: [
-              "What could not be confirmed",
+              "What could not be confirmed, as the same discipline applied to sourcing",
               "The number of sources who declined to comment and the reasons each gave",
               "The records requests that were denied and the appeals still pending at publication",
               "An estimate of how much of the underlying data set remains unavailable to the public",
@@ -2769,10 +2769,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say the capstone of this track asks for?",
             options: [
-              "One quick-turn story and one enterprise pitch",
-              "A published portfolio of five clips from a beat held for at least six months",
-              "A full enterprise investigation with documents, data, and named on-record sources",
-              "A beat memo and a signal log covering a full year of accumulated reporting",
+              "One quick-turn story and one enterprise pitch on a beat you choose",
+              "A five-clip portfolio",
+              "A full enterprise investigation",
+              "A beat memo and a year of signal log",
             ],
             correctIndex: 0,
             explanation:
@@ -2783,9 +2783,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             prompt: "Which subjects does the lesson list as the rest of the track?",
             options: [
               "Records, reports, interviews, verification, law, solutions, pitching",
-              "Photography, audio production, video editing, and social platform distribution",
+              "Photography, audio, and video",
               "Copy editing, headline writing, search optimization, and newsletter formatting",
-              "Media law, media history, media economics, and the ethics of ownership",
+              "Media history and media economics",
             ],
             correctIndex: 0,
             explanation:
@@ -2795,9 +2795,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about treating the two modes as separate budgets?",
             options: [
-              "A well-held beat does not",
+              "A well-held beat does not treat them as separate",
               "It is necessary, because enterprise and quick-turn require different editorial approval",
-              "It is the only way to guarantee that enterprise hours survive a busy news cycle",
+              "It guarantees enterprise",
               "It is standard practice at newsrooms that staff separate investigative and daily desks",
             ],
             correctIndex: 0,
@@ -2808,7 +2808,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a chronology with sources attached let a reporter do?",
             options: [
-              "Write background in two minutes",
+              "Write the background paragraphs of a story in two minutes instead of forty",
               "Establish a legal record of when each fact became known to the newsroom",
               "Prove to an editor that a pattern recurred often enough to justify enterprise time",
               "Hand a complete narrative to a successor without needing to explain the beat",
@@ -2821,10 +2821,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is quick-turn work?",
             options: [
-              "Same-day or next-day reporting",
-              "Any piece produced without a records request, since requests take weeks to answer",
-              "Reporting filed directly to social and video platforms rather than to the main outlet",
-              "Coverage of scheduled events, as distinct from coverage of unscheduled incidents",
+              "Same-day or next-day work: the vote, the report release, the incident, the response",
+              "Any piece produced without a records request",
+              "Reporting filed straight to social platforms",
+              "Coverage of scheduled events only",
             ],
             correctIndex: 0,
             explanation:
@@ -2834,10 +2834,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What kind of entry does the signal log hold?",
             options: [
-              "Date, document, question",
+              "The date, the document, and the question it raises",
               "A summary of the change and the reporter's assessment of whether it is newsworthy",
-              "The name of the official responsible and their response when contacted for comment",
-              "A link to the source material and a tag identifying which year question it serves",
+              "The responsible official",
+              "A link and a year-question tag",
             ],
             correctIndex: 0,
             explanation:
@@ -2847,8 +2847,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about an interim who has been interim for eighteen months?",
             options: [
-              "It is a people signal",
-              "It is a records issue, since acting appointments must be renewed in writing",
+              "It is a people signal, like a long-unfilled vacancy",
+              "A records issue",
               "It is a money signal, because interim salaries are drawn from a different fund",
               "It is a silence signal, because the permanent appointment was never announced",
             ],
@@ -2873,10 +2873,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What happens to signals without a written record, per the lesson?",
             options: [
-              "They are forgotten inside a month",
-              "They are captured anyway, because anything important recurs often enough to be noticed",
-              "They are preserved in published stories, which serve as the beat's durable memory",
-              "They accumulate in the reporter's contact list as questions raised with sources",
+              "They are forgotten inside a month, and the accumulation exists only in your head",
+              "They are captured anyway because they recur",
+              "Published stories preserve them",
+              "They collect in the contact list",
             ],
             correctIndex: 0,
             explanation:
@@ -2886,10 +2886,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about who owns a beat file?",
             options: [
-              "Check the employer's policy before you need to",
-              "The reporter always owns notes, which is settled in every state by common law",
+              "Check your employer's policy and know the answer before you need it",
+              "The reporter always owns notes",
               "The outlet always owns them, which is why portability is a courtesy rather than a duty",
-              "Ownership is irrelevant, because a file has no value outside the beat it documents",
+              "Ownership is irrelevant",
             ],
             correctIndex: 0,
             explanation:
@@ -2900,7 +2900,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             prompt: "Which of these is described as the last public step before something happens?",
             options: [
               "An item moved to the consent calendar",
-              "A budget amendment introduced at the final meeting of a fiscal year",
+              "A late budget amendment",
               "A personnel action taken in executive session and recorded only in the minutes",
               "A public comment period closing without any comments having been submitted",
             ],
@@ -2912,7 +2912,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How does the lesson describe the difficulty of holding protected time?",
             options: [
-              "Harder than it sounds",
+              "Harder than it sounds, though one enterprise and one listening block is not much time",
               "Impossible in a newsroom that expects daily filing, which is why beats need two reporters",
               "Straightforward once an editor has approved the schedule at the start of a quarter",
               "A matter of personal discipline rather than structure, since calendars cannot be enforced",
@@ -2925,10 +2925,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say most signals do?",
             options: [
-              "Go nowhere",
-              "Recur within a quarter, which is why the log is reviewed on a monthly cycle",
-              "Produce a quick-turn item, since a documented change is newsworthy on its own",
-              "Require a records request before the reporter can judge whether they matter",
+              "Go nowhere; the ones that recur are the ones to work",
+              "Recur within a quarter",
+              "Produce a quick-turn item",
+              "Require a records request",
             ],
             correctIndex: 0,
             explanation:
@@ -2938,9 +2938,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What makes budgets distinctive among an institution's documents?",
             options: [
-              "Intent stated in numbers",
-              "They are the only records subject to independent audit before they are published",
-              "They must be approved in open session, so the deliberation is always on the record",
+              "The only document where an institution must state its intent in numbers",
+              "They are always audited first",
+              "They must be approved in open session",
               "They are revised continuously, so the current version always reflects present policy",
             ],
             correctIndex: 0,
@@ -2953,7 +2953,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             options: [
               "It cannot be searched, handed over, or defended",
               "It fades faster than a written record, which is why chronologies are kept for a year",
-              "It exposes the outlet if a court orders the reporter to produce their notes",
+              "It exposes the outlet to subpoenas",
               "It prevents an editor from assigning the beat to a second reporter during a busy week",
             ],
             correctIndex: 0,
@@ -2964,7 +2964,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How many protected blocks does the lesson's week shape contain?",
             options: [
-              "Two weekly and one monthly",
+              "Two weekly blocks, enterprise and listening, plus a monthly hour of file review",
               "Three weekly: enterprise, listening, and a standing review of the signal log",
               "One weekly, since only enterprise time needs defending against quick-turn work",
               "Four, one for each of the inventories that make up the beat map",
@@ -2977,10 +2977,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How does the lesson characterize publishing what you could not confirm?",
             options: [
-              "A discipline, not a weakness",
-              "A legal precaution that limits the outlet's exposure if a claim is later disputed",
-              "An editing decision, taken by the desk rather than the reporter who did the work",
-              "An optional appendix, useful in enterprise work but out of place in quick-turn pieces",
+              "A discipline, the same one applied to sourcing, rather than an admission of weakness",
+              "A legal precaution",
+              "An editing decision for the desk",
+              "An optional appendix",
             ],
             correctIndex: 0,
             explanation:
@@ -3015,10 +3015,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "A beat tells you what to know. What does an assignment tell you?",
             options: [
-              "What to produce",
-              "Which institutions on the beat map hold authority over the subject you are covering",
-              "How long the accumulated history of the subject must be before you may write",
-              "Which ground rules the source has agreed to before the interview begins",
+              "What to produce, and the job ends once you file it",
+              "Which institutions hold authority",
+              "How much history you need first",
+              "Which ground rules apply",
             ],
             correctIndex: 0,
             explanation:
@@ -3028,10 +3028,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the product of a beat, and what are the stories?",
             options: [
-              "The accumulation, and withdrawals from it",
-              "The published archive, and the raw notes that support each piece within it",
+              "The accumulation is the product; stories are withdrawals from it",
+              "The archive, and the notes behind it",
               "The source list, and the interviews conducted to keep each relationship current",
-              "The beat memo, and the quarterly revisions that keep its scope honest",
+              "The beat memo, and its revisions",
             ],
             correctIndex: 0,
             explanation:
@@ -3041,10 +3041,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course carry a disclosure in its first lesson?",
             options: [
-              "The track teaches disclosure",
+              "Because the track teaches disclosure",
               "Because the author was required to declare outside work under the outlet's ethics policy",
               "Because the Indiana Girl Report's reuse terms require an affiliation statement",
-              "Because the Free Press Indiana posting is quoted at length under fair use",
+              "Fair use requires it",
             ],
             correctIndex: 0,
             explanation:
@@ -3054,7 +3054,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which four inventories make up a beat map?",
             options: [
-              "Institutions, documents, people, calendar",
+              "Institutions, documents, people, and calendar, each built in an afternoon",
               "Budgets, contracts, dockets, and filings, grouped by the body that produces each one",
               "Officials, advocates, experts, and affected people, grouped by source category",
               "Agendas, minutes, audits, and inspections, ordered by how often each is published",
@@ -3080,10 +3080,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does a beat map include the staff who compile published numbers?",
             options: [
-              "They know which figures are soft",
-              "They control when a data set is released and can be asked to accelerate publication",
-              "They are exempt from the confidentiality rules that bind policy staff at the same agency",
-              "They are the only staff a records request can compel to produce underlying files",
+              "They assemble the published figures, so they know which ones are soft",
+              "They control when data is released",
+              "They are exempt from confidentiality rules",
+              "Only they can be compelled by records requests",
             ],
             correctIndex: 0,
             explanation:
@@ -3093,9 +3093,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a beat calendar do for a reporter?",
             options: [
-              "Turns reactive into early",
-              "Guarantees that no public meeting on the beat goes uncovered during the year",
-              "Documents the reporter's attendance for the newsroom's annual performance review",
+              "It turns a reporter from reactive to early",
+              "It covers every meeting",
+              "It logs attendance",
               "Ensures the beat's institutions publish their records within statutory deadlines",
             ],
             correctIndex: 0,
@@ -3106,10 +3106,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which line in a beat memo does the course call the most load bearing?",
             options: [
-              "What is out of scope",
+              "The sentence stating what is out of scope",
               "The measurement plan that defines what counts as adequate coverage at year end",
               "The list of year questions, which is where the enterprise stories come from",
-              "The named communities the reporter commits to covering during the year",
+              "The named communities",
             ],
             correctIndex: 0,
             explanation:
@@ -3119,7 +3119,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What distinguishes a beat question from a topic?",
             options: [
-              "It implies a document, a denominator, and a person",
+              "It implies a document, a denominator, and a person who has to answer",
               "It concerns a single institution rather than the whole subject area",
               "It can be answered within one news cycle without a records request",
               "It has been agreed with an editor before the reporting year begins",
@@ -3145,10 +3145,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is community listening?",
             options: [
-              "Time with no story, deadline, or ask",
-              "A series of interviews conducted before a project's reporting formally begins",
-              "A public forum hosted by the outlet to gather reader concerns about a subject",
-              "Attendance at every public meeting held by institutions on the beat map",
+              "Time where people already gather, with no story, deadline, or ask attached",
+              "Interviews before a project begins",
+              "A forum the outlet hosts for readers",
+              "Attending every public meeting",
             ],
             correctIndex: 0,
             explanation:
@@ -3158,10 +3158,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "How many listening sessions with girls did the 2025 Indiana Girl Report run?",
             options: [
-              "91",
+              "91 sessions, alongside feedback from 130 adults",
               "About 300, one in each Indiana school district that agreed to participate",
-              "None, since the report is compiled from secondary administrative data only",
-              "Around 1,500, sampled to be representative of Indiana girls statewide",
+              "None at all",
+              "Around 1,500, statewide",
             ],
             correctIndex: 0,
             explanation:
@@ -3171,8 +3171,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What can listening sessions support, and what can they not?",
             options: [
-              "Themes, not shares",
-              "Trends over time, but not comparisons between different regions of a state",
+              "Themes no data set contains, but not shares of a population",
+              "Trends, but not regional comparisons",
               "Individual accounts, but not any conclusion about what a population experiences",
               "Official positions, but nothing about how policy is experienced by affected people",
             ],
@@ -3184,7 +3184,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the default record status of remarks heard while listening?",
             options: [
-              "Not on the record",
+              "Not on the record; using a remark is a separate conversation opened there",
               "On background, since the setting is public but the speakers are private individuals",
               "On the record, provided the reporter identified themselves when they arrived",
               "Off the record only for minors, and on the record for every adult present",
@@ -3210,10 +3210,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the 2025 Indiana Girl Report say on page 27 about its own data?",
             options: [
-              "It is not yet free from gender bias",
-              "That the figures were independently verified by the state agencies that supplied them",
-              "That the sample sizes are too small for county-level comparison to be meaningful",
-              "That the report should not be cited without written permission from the publishers",
+              "That it is not yet possible to present data free from gender bias",
+              "That state agencies verified the figures",
+              "That county samples are too small",
+              "That citing it needs written permission",
             ],
             correctIndex: 0,
             explanation:
@@ -3223,9 +3223,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What happens to every table built from an undercounted collection?",
             options: [
-              "It inherits the undercount",
-              "It gains a wider confidence interval that the publisher is obliged to report",
-              "It becomes unusable and should be excluded from any reporting on the subject",
+              "It inherits the same undercount as the collection",
+              "Its confidence interval widens",
+              "It becomes unusable",
               "It is corrected by weighting, which is standard practice for administrative data",
             ],
             correctIndex: 0,
@@ -3236,8 +3236,8 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the monthly quote audit count?",
             options: [
-              "Officials, advocates, experts, affected",
-              "Total sources per story, to check that no piece relies on a single account",
+              "Officials, advocates, experts, and affected people quoted that month",
+              "Total sources per story",
               "Named versus unnamed sources, to track the outlet's use of anonymity over time",
               "Sources by institution, to check that no single agency dominates the coverage",
             ],
@@ -3251,7 +3251,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             options: [
               "Visits and stories are the same number",
               "Sources begin routing the reporter through an official spokesperson before speaking",
-              "The outlet receives complaints about accuracy from more than one person in the community",
+              "The outlet gets accuracy complaints from the community",
               "Community members ask to review quotations before the piece is published",
             ],
             correctIndex: 0,
@@ -3275,10 +3275,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is predictability a stronger offer than sympathy?",
             options: [
-              "It survives a story they hate",
-              "It can be documented in writing, which makes it enforceable if the reporter breaches it",
-              "It shortens the time needed to secure an interview during a breaking situation",
-              "It transfers accountability for the piece from the reporter to the editing desk",
+              "It survives a story the source hates, since they can still forecast your behavior",
+              "It can be made enforceable in writing",
+              "It speeds up interviews",
+              "It shifts accountability to the desk",
             ],
             correctIndex: 0,
             explanation:
@@ -3288,10 +3288,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson call the only currency journalism has that a reader can verify?",
             options: [
-              "A correction",
-              "An on-record source, whose statements a reader can independently check",
+              "A correction, published promptly when you were wrong",
+              "An on-record source",
               "A published document, linked so readers can read the primary material themselves",
-              "A disclosure, which tells readers what interests the reporter holds",
+              "A disclosure",
             ],
             correctIndex: 0,
             explanation:
@@ -3303,7 +3303,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
             options: [
               "They know you, have watched you, can reach you",
               "They trust the outlet, have read your recent work, and believe the story will change policy",
-              "They have legal protection, employer permission, and a documented record of the events",
+              "Legal protection",
               "They have been quoted before, have a stake in the outcome, and want the matter public",
             ],
             correctIndex: 0,
@@ -3314,7 +3314,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Which source category does the course say reporters neglect worst?",
             options: [
-              "Mid-level staff",
+              "Mid-level staff who are not authorized to speak but know how decisions were made",
               "Former officials, whose recollections are treated as too dated to be reliable",
               "Advocacy organizations, which reporters avoid to keep coverage neutral",
               "Vendors and contractors, whose commercial interests complicate attribution",
@@ -3327,10 +3327,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the rule about a source and the story that names them?",
             options: [
-              "Never let them find out from the story",
-              "Never name a source who was first approached during an unrelated listening session",
-              "Never publish a name without a second source confirming the same account",
-              "Never contact a source in advance, because it gives the institution time to respond",
+              "Never let them find out from the story; they hear it from you first",
+              "Never name a source met while listening",
+              "Never publish a name without a second source",
+              "Never contact a source in advance",
             ],
             correctIndex: 0,
             explanation:
@@ -3340,10 +3340,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is on background, as this course defines it?",
             options: [
-              "Usable, attributed to an agreed description",
+              "Usable, attributed to a role description agreed in advance",
               "Usable only as the reporter's own knowledge, with no attribution of any kind",
-              "Unpublishable, and used only to steer the reporting toward obtainable material",
-              "Usable after a fixed embargo period agreed with the source in advance",
+              "Unpublishable, used only to steer reporting",
+              "Usable after an agreed embargo",
             ],
             correctIndex: 0,
             explanation:
@@ -3353,9 +3353,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a source doing when they declare a past remark off the record?",
             options: [
-              "Asking a favor",
+              "Asking a favor, not invoking an agreement",
               "Invoking a right that state shield statutes grant to any person interviewed",
-              "Withdrawing consent, which obliges the reporter to strike the material",
+              "Withdrawing consent",
               "Renegotiating terms, which requires the editor's approval to accept or refuse",
             ],
             correctIndex: 0,
@@ -3366,7 +3366,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What did the Supreme Court decide in Cohen v. Cowles Media Co.?",
             options: [
-              "The First Amendment does not bar the claim",
+              "That the First Amendment does not bar a promissory estoppel claim against the press",
               "That a source who is named after a promise of anonymity has no remedy in state law",
               "That reporters, but not their employers, may be held to promises of confidentiality",
               "That confidentiality promises are enforceable only when they are made in writing",
@@ -3392,10 +3392,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What three questions make up the motive check?",
             options: [
-              "Why them, why now, what it costs them",
-              "What it proves, who disputes it, and which document would settle the dispute",
-              "Who else has the material, when they got it, and whether they have published it",
-              "Whether it is true, whether it is new, and whether anyone is harmed by publication",
+              "Why is this person telling me, why now, and what happens to them if I publish",
+              "What it proves and who disputes it",
+              "Who else has it, and since when",
+              "Is it true, is it new, is it harmful",
             ],
             correctIndex: 0,
             explanation:
@@ -3405,9 +3405,9 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "A leaker supplies a document and someone to confirm it. How many sources is that?",
             options: [
-              "One",
-              "Two, since the confirming person is a separate individual with separate knowledge",
-              "Two, provided the confirming person agrees to be quoted on the record",
+              "One, because both come from the same interest",
+              "Two, as separate people",
+              "Two, if on the record",
               "Three, because the document itself is independent evidence of the same claim",
             ],
             correctIndex: 0,
@@ -3421,7 +3421,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
               "Would I run this from the opposing party",
               "Would the institution's lawyers accept the document as authentic if challenged",
               "Would a second newsroom reach the same conclusion from the same material",
-              "Would the source stand behind the material if their name were published",
+              "Would the source be named",
             ],
             correctIndex: 0,
             explanation:
@@ -3431,7 +3431,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the costliest source pattern named in the course?",
             options: [
-              "Becoming one faction's outlet",
+              "Becoming one faction's outlet while losing every source in the other",
               "Relying on documents without ever speaking to the people they describe",
               "Promising confidentiality more often than the newsroom's policy permits",
               "Publishing material from a source whose motive was disclosed to readers",
@@ -3444,10 +3444,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does an item moving to the consent calendar signal?",
             options: [
-              "It is being treated as settled",
-              "It has been withdrawn from consideration until a later meeting of the same body",
-              "It requires a supermajority, which is why it is separated from the regular agenda",
-              "It was added after the notice deadline and so cannot be discussed publicly",
+              "It is being treated as settled, approved in one vote without discussion",
+              "It has been withdrawn until a later meeting",
+              "It requires a supermajority vote",
+              "It was added after the notice deadline",
             ],
             correctIndex: 0,
             explanation:
@@ -3457,10 +3457,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is silence the hardest signal family to see?",
             options: [
-              "An absence is only visible against a presence",
+              "An absence is only visible to someone who watched the presence",
               "Institutions are legally permitted to stop publishing any voluntary data series",
-              "Dropped indicators are usually replaced under a new name in the same dashboard",
-              "Comment periods are advertised in legal notices that reporters rarely receive",
+              "Indicators get renamed",
+              "Comment notices go unread",
             ],
             correctIndex: 0,
             explanation:
@@ -3470,10 +3470,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a reporter do with a signal?",
             options: [
-              "Log it: date, document, question",
+              "Log it in the beat file: date, document, question",
               "Request comment, since the institution's response determines whether it is newsworthy",
               "File a records request immediately, before the underlying decision trail goes cold",
-              "Publish a brief item, because beat readers value early notice of routine changes",
+              "Publish a brief item",
             ],
             correctIndex: 0,
             explanation:
@@ -3483,7 +3483,7 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What separates a beat file from a pile?",
             options: [
-              "Every entry names its source",
+              "Every entry names where it came from: the document, the page, and the date",
               "Every entry has been verified against a second document before it is recorded",
               "Every entry is reviewed by an editor during the newsroom's monthly planning session",
               "Every entry is tagged to one of the year questions in the reporter's beat memo",
@@ -3509,10 +3509,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does enterprise work lose to quick-turn work without a structure?",
             options: [
-              "Only quick-turn has a deadline",
-              "Because enterprise reporting depends on records that arrive on the agency's schedule",
-              "Because editors judge reporters on volume, which quick-turn work produces faster",
-              "Because enterprise work requires travel budgets that most desks no longer approve",
+              "Only quick-turn has a deadline and a visible cost for missing it",
+              "Enterprise waits on agency records",
+              "Editors judge reporters on volume",
+              "Travel budgets are rarely approved",
             ],
             correctIndex: 0,
             explanation:
@@ -3522,10 +3522,10 @@ export const REPORTER_WHAT_A_BEAT_IS_COURSE: AuthoredCourse = {
           {
             prompt: "What should each quick-turn piece deposit into the accumulation?",
             options: [
-              "A signal, a name, a document",
+              "A signal for the file, a name for the list, a document for the folder",
               "A clip, a headline, and the audience figures the piece generated in its first week",
-              "A correction record, a ground-rules note, and a list of sources who declined",
-              "A budget line, a docket number, and a copy of the agenda it was drawn from",
+              "A correction record",
+              "A budget line and docket number",
             ],
             correctIndex: 0,
             explanation:

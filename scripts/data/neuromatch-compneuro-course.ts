@@ -538,7 +538,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "How long does Neuromatch's own course page say its Computational Neuroscience course runs?",
             options: [
               "Three weeks, every July",
-              "Five weeks each summer, opened by a two-week asynchronous preparation block",
+              "Five weeks",
               "Ten days in July, followed by a self-paced project term running into September",
               "A full academic semester, delivered asynchronously with weekly synchronous check-ins",
             ],
@@ -550,10 +550,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What daily commitment does Neuromatch state for that course?",
             options: [
-              "Three hours a day on weekday evenings, with optional weekend project sessions",
-              "Eight hours a day, five days a week",
-              "Twenty hours a week, spread however the student prefers across all seven days",
-              "Four hours a day for six days a week, with Sundays reserved for pod meetings",
+              "Three hours on weekday evenings",
+              "Eight hours a day, five days a week, as a full-time effort",
+              "Twenty hours a week, spread as preferred",
+              "Four hours a day, six days a week",
             ],
             correctIndex: 1,
             explanation:
@@ -563,10 +563,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "How does Neuromatch's open-education page size the published Computational Neuroscience coursebook?",
             options: [
-              "Roughly forty hours of reading, excluding the optional tutorial notebooks",
+              "Roughly forty hours of reading",
               "Five partial days of content, the same figure they give for Open Science 101",
-              "Fifteen full days of instruction",
-              "Ten full days of instruction, the same figure they give for NeuroAI",
+              "Fifteen full days of instruction, plus bonus materials",
+              "Ten full days of instruction, as for NeuroAI",
             ],
             correctIndex: 2,
             explanation:
@@ -590,9 +590,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is a pod in Neuromatch's course format?",
             options: [
               "About fifteen students and one teaching assistant",
-              "A cohort of roughly a hundred students sharing one lecturer and a discussion forum",
-              "A pair of students assigned to co-author a single project under a mentor's supervision",
-              "A regional chapter that meets in person at a partner university for the three weeks",
+              "A cohort of roughly a hundred students",
+              "A pair of students sharing one project",
+              "A regional chapter meeting in person",
             ],
             correctIndex: 0,
             explanation:
@@ -616,8 +616,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Under which licence does Neuromatch publish its course content?",
             options: [
               "CC BY-NC-SA 4.0, which bars commercial reuse and requires the same licence downstream",
-              "The MIT licence, applied uniformly to the prose and the software elements alike",
-              "CC BY 4.0",
+              "The MIT licence",
+              "CC BY 4.0, which permits commercial reuse with attribution",
               "A bespoke academic-use licence requiring written permission for any adaptation",
             ],
             correctIndex: 2,
@@ -628,10 +628,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Neuromatch's attribution guidance asks a reuser who modifies the material to do one extra thing. What?",
             options: [
-              "Submit the modified version back to their content repository for review",
+              "Submit it back for review",
               "Obtain written approval from the course lead before publishing the adaptation",
-              "Remove all Neuromatch branding and rename the derived course entirely",
-              "Indicate what you changed",
+              "Remove all Neuromatch branding",
+              "Indicate what you changed from the original",
             ],
             correctIndex: 3,
             explanation:
@@ -641,10 +641,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What does Neuromatch's guidance say about the status of external reuses of their material?",
             options: [
-              "They are not reviewed or endorsed",
-              "They are reviewed annually by a curriculum committee before being listed publicly",
-              "They become officially endorsed once an attribution notice has been filed with Neuromatch",
-              "They are permitted only for non-profit educational institutions and registered charities",
+              "They are not reviewed or endorsed by Neuromatch",
+              "They are reviewed annually",
+              "They become officially endorsed",
+              "They are limited to non-profits",
             ],
             correctIndex: 0,
             explanation:
@@ -670,7 +670,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Several tutorial notebooks, rewritten as prose but keeping their worked examples",
               "Its quiz questions, rewritten from the self-check cells inside the coursebook",
               "The order and grouping of topics",
-              "The figures from the model-fitting and dimensionality-reduction days",
+              "Its figures",
             ],
             correctIndex: 2,
             explanation:
@@ -680,10 +680,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Which Neuromatch module is deliberately absent from this course?",
             options: [
-              "Causality",
-              "Model fitting, on the grounds that the linear algebra section already covers it",
+              "Causality, which is absent by design",
+              "Model fitting",
               "Dimensionality reduction, which is left to the deep learning companion course instead",
-              "Biological neuron models, which are treated only in the Neuromatch prerequisites",
+              "Biological neuron models",
             ],
             correctIndex: 0,
             explanation:
@@ -693,9 +693,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Which source repository does this course link to in order to satisfy the licence?",
             options: [
-              "A mirror of the coursebook hosted on the Learn.WitUS content server",
-              "The Neuromatch student portal, which requires a registered account to browse",
-              "The Creative Commons directory of openly licensed neuroscience curricula",
+              "A mirror on the Learn.WitUS server",
+              "The Neuromatch student portal",
+              "The Creative Commons directory",
               "The NeuromatchAcademy course-content repository",
             ],
             correctIndex: 3,
@@ -707,7 +707,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does lesson 1 say a companion course that pretends to be the real thing wastes your time twice?",
             options: [
               "You lose the hours, then hit the gap",
-              "Because you end up paying for two courses when one properly scoped course would do",
+              "You pay for two courses",
               "Because the reading duplicates material that the prerequisite refresher days already cover",
               "Because the certificate such a course issues is not recognised by the original provider",
             ],
@@ -719,10 +719,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Lesson 1 says that when a tutorial tells you to project onto the first two principal components, you should already know what?",
             options: [
-              "That two components are always enough to summarise a population recording",
+              "That two components always suffice",
               "That the projection recovers whichever stimulus variable the experimenter manipulated",
               "That they are eigenvectors of a covariance matrix",
-              "That the components are chosen to maximise decoding accuracy on held-out trials",
+              "That they maximise decoding accuracy",
             ],
             correctIndex: 2,
             explanation:
@@ -732,10 +732,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Which metaphor does lesson 1 use for the relation between this course and Neuromatch's notebooks?",
             options: [
-              "A rehearsal and the performance that follows it in front of an audience",
-              "The map and the territory",
-              "A translation and the original text it was rendered from",
-              "A scaffold that is taken down once the building can stand on its own",
+              "A rehearsal and the performance",
+              "This course as the map, their notebooks as the territory",
+              "A translation and its original",
+              "A scaffold and the finished building",
             ],
             correctIndex: 1,
             explanation:
@@ -760,7 +760,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "A primary source of its own",
               "A cross-reference to the corresponding tutorial notebook in Neuromatch's coursebook",
-              "A confidence rating assigned by the author on a published five-point scale",
+              "A confidence score",
               "An endorsement from a researcher working in the relevant subfield of neuroscience",
             ],
             correctIndex: 0,
@@ -771,9 +771,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "On what basis does Neuromatch classify models as what, how or why models?",
             options: [
-              "The mathematical toolkit each one is built and fitted with",
-              "The question asked",
-              "The scale of the system modelled, from ion channel to circuit to behaviour",
+              "The mathematical toolkit used",
+              "The question the model is built to answer",
+              "The scale of the system modelled",
               "Whether the model is fitted to data or derived from theoretical first principles",
             ],
             correctIndex: 1,
@@ -784,10 +784,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "A tuning curve relating a cell's firing rate to bar orientation is which kind of model?",
             options: [
-              "A how model, because it explains the circuit producing orientation selectivity",
-              "A why model, because it derives selectivity from a coding efficiency principle",
-              "An implementational model in Marr's sense, because it concerns cortical machinery",
-              "A what model",
+              "A how model, since it explains the circuit",
+              "A why model, since it derives selectivity",
+              "An implementational model in Marr's sense",
+              "A what model, since it describes without claiming mechanism",
             ],
             correctIndex: 3,
             explanation:
@@ -800,7 +800,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "The Hodgkin-Huxley equations",
               "The orientation tuning curves Hubel and Wiesel measured in cat visual cortex",
               "The sparse coding model Olshausen and Field trained on natural image patches",
-              "The drift-diffusion account of reaction times in two-alternative forced choice",
+              "Drift-diffusion",
             ],
             correctIndex: 0,
             explanation:
@@ -810,10 +810,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What did Olshausen and Field's 1996 model do, and what came out of it?",
             options: [
-              "It classified images by category and produced centre-surround retinal filters",
+              "It classified images, yielding centre-surround filters",
               "It encoded natural images sparsely and produced oriented filters",
-              "It reconstructed images from noisy input and produced a bank of unoriented blob detectors",
-              "It predicted the next frame of a movie and produced direction-selective motion filters",
+              "It denoised images and produced blob detectors",
+              "It predicted movie frames and produced motion filters",
             ],
             correctIndex: 1,
             explanation:
@@ -824,8 +824,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is sparse coding described as a why model?",
             options: [
               "It measures what cells do across many stimuli without proposing any mechanism at all",
-              "It builds the circuit from the known anatomy and physiology of visual cortex",
-              "It fits its parameters to recorded spike trains and reports the best-fitting values",
+              "It builds the circuit from known anatomy",
+              "It fits its parameters to spike trains",
               "It starts from a principle and derives what should follow",
             ],
             correctIndex: 3,
@@ -836,10 +836,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Which three-way division of models do Dayan and Abbott use?",
             options: [
-              "Descriptive, mechanistic, interpretive",
-              "Computational, algorithmic and implementational, following Marr's original scheme",
-              "Biophysical, statistical and normative, in the order the field developed them",
-              "Encoding, decoding and generative, following the direction of the inference",
+              "Descriptive, mechanistic and interpretive models",
+              "Marr's three levels of analysis",
+              "Biophysical, statistical, normative",
+              "Encoding, decoding, generative",
             ],
             correctIndex: 0,
             explanation:
@@ -852,7 +852,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Descriptive, mechanistic and interpretive, the same triad under different names",
               "Molecular, cellular and systems, matching the scale of the biology described",
               "Computational, algorithmic, implementational",
-              "What, how and why, which Neuromatch took over directly from his book",
+              "What, how and why",
             ],
             correctIndex: 2,
             explanation:
@@ -875,9 +875,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What did Hubel and Wiesel describe in the cat's visual cortex in 1962?",
             options: [
-              "Sparse population codes whose basis functions were localised and bandpass",
+              "Sparse population codes",
               "Voltage-dependent sodium and potassium conductances underlying the action potential",
-              "A ring of stable states representing the animal's current head direction",
+              "Head-direction cells",
               "Orientation-selective receptive fields",
             ],
             correctIndex: 3,
@@ -888,10 +888,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Why does the lesson say a what model can survive being wrong about mechanism?",
             options: [
-              "It makes no claim about mechanism",
-              "Because its parameters are refitted whenever a new mechanism is proposed for it",
-              "Because it is stated in words rather than in equations that could be falsified",
-              "Because it describes only the average across a population rather than single cells",
+              "It makes no claim about mechanism in the first place",
+              "It is refitted for each new mechanism",
+              "It is stated in words, not equations",
+              "It describes only population averages",
             ],
             correctIndex: 0,
             explanation:
@@ -916,8 +916,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "No, a regression is always a what model, because all it can do is describe",
               "No, a regression is always a how model, because it posits a linear mechanism",
-              "Only when it is fitted by maximum likelihood rather than by least squares",
-              "Yes, depending on the question asked",
+              "Only under maximum likelihood",
+              "Yes, depending on the question it is used to answer",
             ],
             correctIndex: 3,
             explanation:
@@ -928,8 +928,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "In Dayan and Abbott's scheme, what does an interpretive model do?",
             options: [
               "It asks what the system is for",
-              "It summarises large amounts of recorded data compactly and accurately",
-              "It derives circuit behaviour from measured anatomy and physiology",
+              "It summarises data",
+              "It models the anatomy",
               "It converts a mechanistic model into a form that can be fitted to recorded data",
             ],
             correctIndex: 0,
@@ -940,10 +940,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Two models of the same neuron disagree completely. What does the lesson say you should ask first?",
             options: [
-              "Which one has more free parameters and therefore more explanatory power",
-              "Which one was published more recently in a higher-impact journal",
+              "Which has more parameters",
+              "Which is more recent",
               "What question each was built to answer",
-              "Which one uses a more biologically detailed description of the ion channels",
+              "Which has more channel detail",
             ],
             correctIndex: 2,
             explanation:
@@ -967,9 +967,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is it a strong result that sparse coding produced filters resembling simple-cell receptive fields?",
             options: [
               "Because a why model landed on an independently measured what model",
-              "Because it showed that natural images can be compressed more efficiently than was thought",
-              "Because it proved that visual cortex implements the specific algorithm the model used",
-              "Because it fit the recorded spike trains of simple cells better than any earlier model had",
+              "Because it showed images compress well",
+              "Because it proved cortex runs that algorithm",
+              "Because it fit simple-cell spike trains best",
             ],
             correctIndex: 0,
             explanation:
@@ -980,9 +980,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "A researcher claims their model is realistic because it includes more biological detail. What does the lesson say the honest question is instead?",
             options: [
               "Whether the discarded details are irrelevant to the question asked",
-              "Whether the extra detail improves the fit to held-out data by a statistically reliable margin",
+              "Whether it fits held-out data better",
               "Whether every parameter in the model has been measured directly in the animal being modelled",
-              "Whether the model can be simulated fast enough to run the full experiment in reasonable time",
+              "Whether it simulates fast enough",
             ],
             correctIndex: 0,
             explanation:
@@ -994,7 +994,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "A conductance-based description of how a spike is generated at the membrane",
               "A description of firing rate as a function of stimulus orientation",
-              "A derivation of receptive field shape from a principle of coding efficiency",
+              "A receptive field derived from coding efficiency",
               "A recurrent network whose stable states are proposed to store learned memories",
             ],
             correctIndex: 1,
@@ -1006,9 +1006,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Neuromatch's stated taxonomy includes an emphasis that the lesson repeats. What is it?",
             options: [
               "That the toolkit does not determine the category",
-              "That why models are more scientifically valuable than what or how models are",
-              "That every model should be built at the lowest biologically plausible level of detail",
-              "That the categories were taken directly from Marr and mean exactly what his levels mean",
+              "That why models are most valuable",
+              "That more detail is always better",
+              "That the categories are Marr's levels",
             ],
             correctIndex: 0,
             explanation:
@@ -1019,8 +1019,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does the lesson identify as the founding example of a description that survived every later mechanistic account?",
             options: [
               "Hubel and Wiesel's orientation-selective receptive fields",
-              "Hodgkin and Huxley's four coupled equations for the squid giant axon membrane",
-              "Hopfield's energy function for a recurrent network storing multiple patterns",
+              "Hodgkin and Huxley's equations",
+              "Hopfield's energy function",
               "Wilson and Cowan's coupled equations for excitatory and inhibitory populations",
             ],
             correctIndex: 0,
@@ -1033,7 +1033,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "The principle predicts a form, which is then compared with measurement",
               "The data are used to fit the principle's free parameters before any comparison is possible",
-              "The principle is inferred from the data by regression and then restated as a theory",
+              "The principle is inferred by regression",
               "The data are only used to select among why models that all fit the measurements equally",
             ],
             correctIndex: 0,
@@ -1045,9 +1045,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Which statement about the Hodgkin-Huxley model does the lesson make in its role as an example of a how model?",
             options: [
               "It reproduces the spike rather than assuming it",
-              "It describes firing rate as a smooth function of injected current across the whole range",
-              "It was derived from a principle of energy efficiency in axonal signalling",
-              "It applies only to mammalian cortical neurons and not to invertebrate preparations",
+              "It describes firing rate only",
+              "It derives from energy efficiency",
+              "It applies only to mammals",
             ],
             correctIndex: 0,
             explanation:
@@ -1069,10 +1069,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Which two ionic conductances does the Hodgkin-Huxley model represent explicitly?",
             options: [
-              "Sodium and potassium",
-              "Calcium and chloride, which between them set the resting potential of the axon",
-              "Sodium and calcium, which together carry the rising phase of the action potential",
-              "Potassium and chloride, whose combined leak sets the membrane time constant",
+              "Sodium and potassium, each voltage-dependent with its own gating",
+              "Calcium and chloride",
+              "Sodium and calcium",
+              "Potassium and chloride",
             ],
             correctIndex: 0,
             explanation:
@@ -1097,7 +1097,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "It separates charge, and ion channels let charge leak across it",
               "Because the axon carries current along its length while the dendrites store it at the tips",
-              "Because myelin insulates the axon while the nodes of Ranvier conduct between segments",
+              "Because myelin insulates the axon",
               "Because the sodium pump stores energy chemically and releases it as a current on demand",
             ],
             correctIndex: 0,
@@ -1108,9 +1108,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What preparation did Hodgkin and Huxley work on?",
             options: [
-              "The rat hippocampal slice, which allows stable intracellular recording for hours",
-              "The squid giant axon",
-              "The frog neuromuscular junction, where transmitter release can be measured directly",
+              "The rat hippocampal slice",
+              "The squid giant axon, under voltage clamp",
+              "The frog neuromuscular junction",
               "The cat lateral geniculate nucleus, recorded while the animal viewed drifting gratings",
             ],
             correctIndex: 1,
@@ -1121,9 +1121,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "How many coupled differential equations does the Hodgkin-Huxley model comprise, and what do they describe?",
             options: [
-              "Two, one for the membrane potential and one for a combined recovery variable",
-              "Six, one per ion species plus one for the membrane and one for temperature",
-              "One, giving membrane potential directly as a function of the injected current",
+              "Two, for voltage and a recovery variable",
+              "Six, one per ion species",
+              "One, for the membrane potential",
               "Four, one for the membrane potential and three for gating variables",
             ],
             correctIndex: 3,
@@ -1147,7 +1147,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "In the leaky integrate-and-fire model, what happens when the membrane potential reaches threshold?",
             options: [
-              "The sodium conductance opens and the model computes the spike waveform explicitly",
+              "The spike waveform is computed",
               "A spike is recorded and the voltage is reset",
               "The membrane time constant shortens until the input current stops driving the cell",
               "The model switches to a second set of equations describing the repolarisation phase",
@@ -1161,9 +1161,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Whose 1907 work is the ancestor of the leaky integrate-and-fire model, and how did it reach English-speaking readers a century later?",
             options: [
               "Lapicque's, translated by Brunel and van Rossum",
-              "Adrian's, republished with commentary in a centenary issue of the Journal of Physiology",
-              "Sherrington's, summarised in the introduction to a modern textbook on neural dynamics",
-              "Cajal's, reissued in a bilingual edition prepared by the Spanish Society for Neuroscience",
+              "Adrian's, in a centenary reissue",
+              "Sherrington's, via a modern textbook",
+              "Cajal's, in a bilingual edition",
             ],
             correctIndex: 0,
             explanation:
@@ -1173,9 +1173,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What does Neuromatch use the leaky integrate-and-fire model to teach in its Python workshop days?",
             options: [
-              "Python itself, from scratch",
-              "The numerical stability of stiff differential equation solvers under large time steps",
-              "The statistics of interspike interval distributions in awake behaving animals",
+              "Coding in Python itself, from scratch",
+              "Stiff equation solvers",
+              "Spike-interval statistics",
               "The difference between encoding and decoding models in a population recording",
             ],
             correctIndex: 0,
@@ -1201,7 +1201,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "It represents no individual ion channels",
               "Because it treats the membrane as purely capacitive with no conductance at all",
-              "Because it models only populations of neurons rather than any individual cell",
+              "It models only populations",
               "Because its threshold is fitted to data rather than derived from membrane biophysics",
             ],
             correctIndex: 0,
@@ -1213,9 +1213,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did FitzHugh, and independently Nagumo, Arimoto and Yoshizawa, contribute?",
             options: [
               "A two-variable reduction of the Hodgkin-Huxley system",
-              "A stochastic version of the Hodgkin-Huxley model with individually simulated channels",
+              "A stochastic Hodgkin-Huxley model",
               "The first intracellular recordings of action potentials from mammalian cortical neurons",
-              "A proof that the Hodgkin-Huxley equations have a unique solution for any input current",
+              "A uniqueness proof for the equations",
             ],
             correctIndex: 0,
             explanation:
@@ -1226,9 +1226,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does reducing a neuron model to two variables actually buy you?",
             options: [
               "A state space you can draw and reason about geometrically",
-              "A closed-form solution for the membrane potential at any future time",
-              "A guarantee that the reduced model fits recorded spike trains better than the full one",
-              "The ability to represent dendritic filtering that the four-variable model leaves out",
+              "A closed-form solution for the voltage",
+              "A better fit than the full model",
+              "Dendritic filtering the full model lacks",
             ],
             correctIndex: 0,
             explanation:
@@ -1254,7 +1254,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Whether what it discarded matters for your question",
               "Whether it includes enough of the underlying biophysics to be called realistic",
               "Whether it can be simulated quickly enough to run a full behavioural experiment",
-              "Whether its parameters have all been measured in the species being modelled",
+              "Whether its parameters were all measured",
             ],
             correctIndex: 0,
             explanation:
@@ -1264,10 +1264,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What is a point neuron?",
             options: [
-              "A model with no spatial extent",
-              "A model that emits spikes only at discrete, evenly spaced points in simulated time",
+              "A model with no spatial extent, so no dendrites",
+              "A model with evenly spaced spikes",
               "A model of a single neuron rather than of a population of interconnected cells",
-              "A model whose parameters are set from one recorded cell rather than from an average",
+              "A model fitted to one recorded cell",
             ],
             correctIndex: 0,
             explanation:
@@ -1277,10 +1277,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What does the membrane time constant equal?",
             options: [
-              "Membrane resistance times capacitance",
-              "The reciprocal of the peak sodium conductance during the rising phase of a spike",
-              "The interval between threshold crossing and the return of the voltage to rest",
-              "The ratio of the injected current to the resulting steady-state membrane potential",
+              "Membrane resistance times membrane capacitance",
+              "One over the sodium conductance",
+              "The time from threshold back to rest",
+              "Current divided by steady voltage",
             ],
             correctIndex: 0,
             explanation:
@@ -1293,7 +1293,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "A leak pulling it toward rest, and the input current",
               "A sodium conductance driving it up and a potassium conductance driving it down",
               "A capacitive charging term and an explicit refractory conductance that follows each spike",
-              "A stochastic diffusion term and a deterministic drift term set by the stimulus",
+              "A diffusion term and a drift term",
             ],
             correctIndex: 0,
             explanation:
@@ -1305,8 +1305,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "None of the models in this lesson, because all of them are point neurons",
               "The leaky integrate-and-fire model, by shortening the membrane time constant for distal inputs",
-              "The Izhikevich model, whose second variable represents dendritic filtering directly",
-              "The FitzHugh-Nagumo model, whose two variables are the soma and the dendrite",
+              "The Izhikevich model",
+              "The FitzHugh-Nagumo model",
             ],
             correctIndex: 0,
             explanation:
@@ -1317,9 +1317,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the lesson describe the reset rule as not being physics?",
             options: [
               "It is a stipulation standing in for omitted machinery",
-              "Because it violates conservation of charge across the membrane during the spike",
-              "Because the reset voltage is chosen to match the data rather than measured in a cell",
-              "Because no real neuron ever returns to exactly the same voltage after a spike",
+              "It violates charge conservation",
+              "Its reset voltage is fitted to data",
+              "No neuron resets to the same voltage",
             ],
             correctIndex: 0,
             explanation:
@@ -1332,7 +1332,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Hodgkin-Huxley represents voltage-dependent gating variables",
               "Integrate-and-fire represents the sodium and potassium conductances separately from the leak",
               "FitzHugh-Nagumo represents the spatial spread of current along the axon over distance",
-              "Izhikevich represents the individual stochastic opening of each membrane channel",
+              "Izhikevich represents each channel opening",
             ],
             correctIndex: 0,
             explanation:
@@ -1343,8 +1343,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Adaptation and refractoriness are on the list of things the leaky integrate-and-fire model omits. What does the lesson say about that?",
             options: [
               "They can be added by hand if you need them",
-              "They are impossible to represent in any point-neuron model whatever you add to it",
-              "They emerge automatically once the input current exceeds the firing threshold",
+              "They cannot be represented",
+              "They emerge automatically",
               "They are already present, because the reset itself acts as an absolute refractory period",
             ],
             correctIndex: 0,
@@ -1368,10 +1368,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Why does the lesson call a firing rate a construct rather than a measurement?",
             options: [
-              "You observe spikes and choose a window",
-              "Because rates are always estimated from model fits rather than from recorded data",
-              "Because the electrode measures voltage rather than current and so cannot report a rate",
-              "Because rates only exist for populations, never for individual neurons in isolation",
+              "You observe spikes, then choose a counting window",
+              "Rates always come from model fits",
+              "Electrodes measure voltage, not rate",
+              "Rates exist only for populations",
             ],
             correctIndex: 0,
             explanation:
@@ -1382,7 +1382,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is a peristimulus time histogram?",
             options: [
               "A trial-averaged spike count in successive time bins",
-              "A histogram of the intervals between successive spikes recorded in one long trial",
+              "A histogram of interspike intervals",
               "The distribution of spike counts across neurons at a single moment in one trial",
               "A plot of firing rate against stimulus intensity, averaged over a population of cells",
             ],
@@ -1409,8 +1409,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Spike-count variance divided by spike-count mean",
               "The standard deviation of the interspike intervals divided by their arithmetic mean",
-              "The ratio of evoked firing rate to spontaneous firing rate in the same neuron",
-              "The proportion of trials on which a neuron fires at least one spike to a given stimulus",
+              "Evoked rate over spontaneous rate",
+              "The proportion of trials with a spike",
             ],
             correctIndex: 0,
             explanation:
@@ -1420,10 +1420,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What distribution do the intervals between spikes follow for a Poisson process?",
             options: [
-              "Exponential",
-              "Gaussian, with a mean equal to the reciprocal of the firing rate and small variance",
-              "Uniform between zero and twice the mean interval, which is what makes it maximally random",
-              "Gamma with shape parameter two, which is why cortical firing looks slightly regularised",
+              "Exponential, with standard deviation equal to the mean",
+              "Gaussian around the mean interval",
+              "Uniform up to twice the mean",
+              "Gamma with shape parameter two",
             ],
             correctIndex: 0,
             explanation:
@@ -1435,7 +1435,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Cortical firing is too irregular for simple integration of many random inputs",
               "Cortical firing is too regular to be produced by any stochastic synaptic process at all",
-              "Interspike interval distributions in cortex are too heavy-tailed to be fitted by a gamma model",
+              "Interval distributions are too heavy-tailed",
               "Spike counts in cortex have a Fano factor far below one, which no point process can produce",
             ],
             correctIndex: 0,
@@ -1447,8 +1447,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "How did Shadlen and Newsome answer that objection in 1998?",
             options: [
               "Balanced excitation and inhibition leave the cell driven by fluctuations",
-              "They showed that cortical neurons receive far fewer independent inputs than had been assumed",
-              "They argued that the recordings were contaminated by spikes from neighbouring cells",
+              "Cortical cells receive fewer inputs",
+              "The recordings were contaminated",
               "They replaced the integrate-and-fire model with a conductance-based model of the same cell",
             ],
             correctIndex: 0,
@@ -1460,9 +1460,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Which sources of neural noise does the review by Faisal, Selen and Wolpert identify?",
             options: [
               "Stochastic channel gating and probabilistic vesicle release",
-              "Thermal drift in the recording amplifier and movement of the electrode in the tissue",
-              "Rounding error accumulated during the numerical integration of neuron models",
-              "Trial-to-trial changes in the experimenter's stimulus presentation timing",
+              "Amplifier drift and electrode movement",
+              "Numerical rounding error",
+              "Stimulus timing jitter",
             ],
             correctIndex: 0,
             explanation:
@@ -1486,7 +1486,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is a point process?",
             options: [
               "A probabilistic description of a sequence of event times",
-              "A model of a neuron that has no spatial extent and therefore no dendritic structure",
+              "A neuron model with no spatial extent",
               "A method of estimating firing rate by counting spikes in a sliding window of fixed width",
               "A statistical test for whether two spike trains were generated by the same underlying rate",
             ],
@@ -1499,8 +1499,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the choice of counting window matter so much for a firing rate estimate?",
             options: [
               "The estimate depends entirely on the width you chose",
-              "Because a window shorter than the refractory period cannot contain more than one spike",
-              "Because windows must be aligned to stimulus onset or the estimate becomes biased upward",
+              "Short windows hold only one spike",
+              "Windows must align to stimulus onset",
               "Because the Poisson assumption only holds for windows longer than the membrane time constant",
             ],
             correctIndex: 0,
@@ -1512,9 +1512,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "A cell's interspike intervals have a coefficient of variation close to one. What does that suggest?",
             options: [
               "Firing close to Poisson, so quite irregular",
-              "Firing that is highly regular, close to a metronome with a fixed interval between spikes",
-              "That the cell is bursting, with tight clusters of spikes separated by long silences",
-              "That the recording contains spikes from at least two cells that have not been separated",
+              "Metronome-like firing",
+              "That the cell is bursting",
+              "Spikes from two unsorted cells",
             ],
             correctIndex: 0,
             explanation:
@@ -1539,7 +1539,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Fluctuations in the input rather than its mean",
               "A slow depolarising ramp produced by the accumulation of unbalanced excitation over time",
-              "Periodic synchronised volleys arriving from a shared presynaptic population",
+              "Synchronised presynaptic volleys",
               "The gradual failure of inhibitory synapses over the course of a sustained stimulus",
             ],
             correctIndex: 0,
@@ -1551,9 +1551,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the lesson introduce the noise model two sections before it is needed?",
             options: [
               "Fitting spike counts requires choosing a noise model first",
-              "Because the Poisson process is the only distribution the course will use anywhere else",
+              "Poisson is the only distribution used",
               "Because the variability has to be removed by trial averaging before any model can be fitted",
-              "Because the Fano factor is the standard measure of goodness of fit for an encoding model",
+              "The Fano factor measures goodness of fit",
             ],
             correctIndex: 0,
             explanation:
@@ -1564,9 +1564,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does it mean to say the spikes in a Poisson process are independent?",
             options: [
               "One spike makes the next neither more nor less likely",
-              "That each spike is generated by a different presynaptic input acting alone",
-              "That the spike times are uncorrelated across trials but correlated within a single trial",
-              "That the process has no absolute refractory period, so two spikes can coincide exactly",
+              "Each spike has its own presynaptic input",
+              "Uncorrelated across trials only",
+              "That it has no refractory period",
             ],
             correctIndex: 0,
             explanation:
@@ -1579,7 +1579,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "A pure Poisson process at a fixed rate",
               "Any contribution from balanced excitation and inhibition to the cell's input",
               "The use of a generalized linear model to fit the cell's responses to a stimulus",
-              "Bursting, since bursts always reduce spike-count variance relative to the mean",
+              "Bursting of any kind",
             ],
             correctIndex: 0,
             explanation:
@@ -1590,9 +1590,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Which statement about the relationship between spikes and rates does the lesson emphasise?",
             options: [
               "Models are written about rates while data arrives as spikes",
-              "Rates and spike trains carry exactly the same information once the window is chosen well",
+              "Rates and spikes carry the same information",
               "Spike trains are the model and rates are the measurement, which is why rates are primary",
-              "A rate can be measured directly from a single trial without any averaging or binning",
+              "A rate can be read from a single trial",
             ],
             correctIndex: 0,
             explanation:
@@ -1603,9 +1603,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is the shape of an individual action potential of little interest for coding?",
             options: [
               "Action potentials are close to stereotyped",
-              "Because extracellular recording cannot resolve the waveform accurately enough to use it",
-              "Because the waveform varies so much between trials that it carries only noise",
-              "Because the waveform depends on the electrode position rather than on the cell's state",
+              "The waveform cannot be resolved",
+              "The waveform is pure noise",
+              "It reflects electrode position",
             ],
             correctIndex: 0,
             explanation:
@@ -1641,9 +1641,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does it mean for a set of vectors to form a basis for a space?",
             options: [
               "Every vector in the space is a unique combination of them",
-              "Every vector in the space is orthogonal to at least one of them and parallel to none",
-              "They are the eigenvectors of the covariance matrix computed from the recorded data",
-              "There are more of them than the dimension of the space, so nothing is left uncovered",
+              "Every vector is orthogonal to one of them",
+              "The eigenvectors of the data covariance",
+              "There are more of them than dimensions",
             ],
             correctIndex: 0,
             explanation:
@@ -1667,7 +1667,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Which four areas of mathematics does Neuromatch name as its entry bar for the Computational Neuroscience course?",
             options: [
               "Linear algebra, probability, basic statistics, and calculus",
-              "Real analysis, measure theory, stochastic processes, and functional analysis",
+              "Real analysis and measure theory",
               "Discrete mathematics, graph theory, information theory, and numerical optimisation",
               "Differential geometry, topology, group theory, and partial differential equations",
             ],
@@ -1692,10 +1692,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "In a data matrix with one row per neuron and one column per time bin, what is a single column?",
             options: [
-              "The population state at one instant",
-              "One neuron's entire firing rate time course across the whole recording session",
+              "The population state at one instant in time",
+              "One neuron's whole time course",
               "The average activity of all neurons across the whole recording, one value per neuron",
-              "The covariance between every pair of neurons, evaluated at a single moment in time",
+              "Pairwise covariances at one moment",
             ],
             correctIndex: 0,
             explanation:
@@ -1719,9 +1719,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is a linear decoder that reads a behavioural variable off a population, in matrix terms?",
             options: [
               "A vector of weights multiplying the population vector",
-              "The inverse of the covariance matrix applied to the difference between two population means",
-              "An eigenvector of the data matrix scaled by the corresponding eigenvalue",
-              "A projection onto the subspace spanned by the slowest principal components of the data",
+              "An inverse covariance matrix",
+              "A scaled eigenvector of the data",
+              "A projection onto slow components",
             ],
             correctIndex: 0,
             explanation:
@@ -1734,7 +1734,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "The number of linearly independent directions in it",
               "The number of rows it has, which for a recording is the number of neurons involved",
               "The largest eigenvalue of the matrix, expressed as a fraction of the sum of all of them",
-              "The number of nonzero entries it contains, divided by the total number of entries",
+              "The count of nonzero entries",
             ],
             correctIndex: 0,
             explanation:
@@ -1745,8 +1745,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "A 200-neuron recording produces an activity matrix of rank 3. What follows?",
             options: [
               "A three-dimensional signal is wearing 200 coordinates",
-              "Only three of the 200 neurons are active and the remaining 197 are silent throughout",
-              "The recording lasted only three time bins, so no more directions could be present",
+              "Only three neurons are active",
+              "The recording lasted three time bins",
               "Three neurons are perfectly correlated with each other and the rest are independent",
             ],
             correctIndex: 0,
@@ -1757,10 +1757,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "When does a square matrix have no inverse?",
             options: [
-              "When its determinant is zero",
-              "When it has more rows than columns, so the system it represents is overdetermined",
-              "When any of its entries is zero, since a zero entry breaks the elimination procedure",
-              "When its eigenvalues are complex rather than real, so no real inverse can exist",
+              "When its determinant is zero, as its columns are dependent",
+              "When it has more rows than columns",
+              "When any entry is zero",
+              "When its eigenvalues are complex",
             ],
             correctIndex: 0,
             explanation:
@@ -1772,7 +1772,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "The matrix that has to be inverted becomes singular",
               "Because the residuals become correlated with each other, violating the independence assumption",
-              "Because the number of parameters then exceeds the number of observations available",
+              "There are more parameters than data",
               "Because collinear predictors produce negative variance estimates, which have no meaning",
             ],
             correctIndex: 0,
@@ -1797,9 +1797,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "In principal component analysis, what are the principal axes?",
             options: [
               "The eigenvectors of the covariance matrix",
-              "The rows of the data matrix with the largest total variance across time bins",
+              "The highest-variance rows",
               "The directions along which the data have the smallest variance, so noise is removed first",
-              "The axes chosen to maximise the correlation between the data and the stimulus variable",
+              "Stimulus-aligned axes",
             ],
             correctIndex: 0,
             explanation:
@@ -1810,9 +1810,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why do principal components come out at right angles to each other?",
             options: [
               "A covariance matrix is symmetric, so its eigenvectors are orthogonal",
-              "Because the algorithm rotates each new component by ninety degrees from the previous one",
-              "Because the data are whitened before the decomposition, which forces orthogonality",
-              "Because the number of components is always chosen to equal the number of variables",
+              "The algorithm rotates each by ninety degrees",
+              "The data are whitened first",
+              "The component count equals the variable count",
             ],
             correctIndex: 0,
             explanation:
@@ -1823,7 +1823,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "For a linear system whose rate of change is a matrix times its state, what does an eigenvalue with a negative real part mean?",
             options: [
               "That component of the state decays",
-              "That component of the state grows without bound as time increases",
+              "It grows without bound",
               "The system oscillates at a frequency set by the size of that negative number",
               "The system has no fixed point at all, so no long-run behaviour can be described",
             ],
@@ -1835,10 +1835,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What does an imaginary part in an eigenvalue of a dynamics matrix indicate?",
             options: [
-              "Rotation",
-              "An unstable fixed point that repels every nearby trajectory in every direction",
-              "That the matrix is singular and therefore that the system has no unique trajectory",
-              "That the system's state is complex-valued and therefore not physically realisable",
+              "Rotation, added on top of growth or decay",
+              "An unstable fixed point",
+              "A singular matrix",
+              "A state that is not physical",
             ],
             correctIndex: 0,
             explanation:
@@ -1849,9 +1849,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What practical habit does the lesson recommend for avoiding shape errors?",
             options: [
               "Write the expected shape beside every line",
-              "Convert every matrix to a square matrix before performing any multiplication",
+              "Make every matrix square",
               "Always transpose the data matrix so that neurons run along the columns instead",
-              "Use only square matrices in analysis code, padding with zeros where necessary",
+              "Pad matrices with zeros",
             ],
             correctIndex: 0,
             explanation:
@@ -1874,8 +1874,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Two hundred simultaneously recorded neurons define a space of what dimension?",
             options: [
-              "Two hundred",
-              "Two, since a population is conventionally visualised in the plane of its top components",
+              "Two hundred, one axis per neuron",
+              "Two",
               "The number of time bins in the recording, since each bin contributes one dimension",
               "The rank of the covariance matrix, which is always smaller than the neuron count",
             ],
@@ -1888,9 +1888,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the lesson say the prerequisites list on its own reads like a syllabus rather than a reason?",
             options: [
               "It names topics without saying what each is for",
-              "Because it omits the probability and statistics that the course actually depends on most",
-              "Because it lists topics in an order that does not match the order the course teaches them",
-              "Because it is aimed at students with a physics background rather than a biology one",
+              "It omits probability and statistics",
+              "Its order differs from the course's",
+              "It assumes a physics background",
             ],
             correctIndex: 0,
             explanation:
@@ -1903,7 +1903,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "The pairwise covariances between the variables",
               "The pairwise correlations, each already normalised to lie between minus one and one",
               "The eigenvalues of the data matrix arranged along its main diagonal in decreasing order",
-              "The residuals left after fitting the best linear model to each variable in turn",
+              "Regression residuals",
             ],
             correctIndex: 0,
             explanation:
@@ -1914,8 +1914,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Where does the lesson say eigenvalue decomposition earns its place a second time, besides principal component analysis?",
             options: [
               "Deciding the behaviour of a linear dynamical system",
-              "Inverting the covariance matrix when computing an optimal linear decoder from data",
-              "Choosing the number of latent variables to retain in a factor analysis of a recording",
+              "Inverting the covariance matrix",
+              "Choosing how many latent factors to keep",
               "Testing whether two populations of neurons are statistically distinguishable from each other",
             ],
             correctIndex: 0,
@@ -1940,9 +1940,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Which statement about matrix multiplication as a weighted sum is correct?",
             options: [
               "Each output entry is a weighted sum of one row and one column",
-              "Each output entry is the product of the corresponding entries of the two matrices",
-              "Each output entry is the largest of the products formed from the matching row and column",
-              "Each output entry is the average of the row entries and the column entries combined",
+              "Each entry is a product of matching entries",
+              "Each entry is a row-column maximum",
+              "Each entry averages a row and a column",
             ],
             correctIndex: 0,
             explanation:
@@ -1955,7 +1955,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Means and variances, and the normal distribution",
               "Hypothesis testing, confidence intervals, and the analysis of variance for factorial designs",
               "Bayesian model comparison, marginal likelihoods, and Markov chain Monte Carlo sampling",
-              "Nonparametric rank tests, bootstrapping, and correction for multiple comparisons",
+              "Nonparametric rank tests",
             ],
             correctIndex: 0,
             explanation:
@@ -1966,9 +1966,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is the variance of a random variable?",
             options: [
               "The average squared distance from the mean",
-              "The largest distance between any two observed values of the variable in a sample",
+              "The sample range",
               "The difference between the highest and the lowest value the variable can take",
-              "The average absolute distance from the median, which is why it is always positive",
+              "Mean distance from the median",
             ],
             correctIndex: 0,
             explanation:
@@ -1992,9 +1992,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the normal distribution matter more than other distributions in this material?",
             options: [
               "It is fully determined by its mean and variance",
-              "Because it is the only distribution for which a maximum likelihood estimate can be computed",
-              "Because neural firing rates are normally distributed whenever enough trials are collected",
-              "Because it is the only distribution whose samples can be generated on a computer exactly",
+              "Only it allows maximum likelihood",
+              "Firing rates are always normal",
+              "Only it can be sampled exactly",
             ],
             correctIndex: 0,
             explanation:
@@ -2004,8 +2004,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "When independent normal variables are added, what happens to their variances?",
             options: [
-              "They add",
-              "They multiply, which is why sums of many variables have very large spread",
+              "They add, though standard deviations do not",
+              "They multiply",
               "They average, so the sum is no more variable than the most variable component",
               "The largest one dominates and the others make no measurable contribution at all",
             ],
@@ -2057,9 +2057,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is fitting a model a calculus problem?",
             options: [
               "At a smooth minimum the derivative is zero",
-              "Because the model's predictions have to be integrated over the whole stimulus space first",
+              "Predictions need integrating",
               "Because every loss function used in practice is defined as an integral over the data",
-              "Because parameters are continuous, and only calculus can handle continuous quantities",
+              "Parameters are continuous",
             ],
             correctIndex: 0,
             explanation:
@@ -2070,9 +2070,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does a differential equation give you?",
             options: [
               "A rule for how fast the state changes given the current state",
-              "The value of the state at any chosen future time, computed directly from the parameters",
-              "The steady state the system will eventually settle into, whatever it started from",
-              "The probability distribution over states after a long time has passed",
+              "The state at any chosen future time",
+              "The eventual steady state",
+              "The long-run distribution over states",
             ],
             correctIndex: 0,
             explanation:
@@ -2085,7 +2085,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "About 63 percent of the way",
               "All the way, since the time constant is defined as the time to reach the steady state",
               "About 95 percent of the way, which is why two time constants are usually enough",
-              "Exactly half of the way, which is why the quantity is also called the half-life",
+              "Half of the way",
             ],
             correctIndex: 0,
             explanation:
@@ -2096,9 +2096,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does Euler's method say?",
             options: [
               "Next state equals current state plus step size times current rate of change",
-              "Next state equals the average of the current state and the predicted steady state value",
+              "Next state is the average of state and steady state",
               "Next state equals current state times one minus the step size divided by the time constant",
-              "Next state is obtained by solving the differential equation exactly over each interval",
+              "The equation is solved exactly per interval",
             ],
             correctIndex: 0,
             explanation:
@@ -2109,9 +2109,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What happens if the step size in a numerical simulation is too large?",
             options: [
               "The simulation becomes inaccurate or unstable",
-              "The simulation runs more slowly, because more correction steps are needed per interval",
-              "The simulated neuron fires at a lower rate but is otherwise unaffected by the change",
-              "The differential equation is solved exactly but on a coarser grid of output times",
+              "It runs more slowly",
+              "The neuron fires at a lower rate",
+              "It is exact but on a coarser grid",
             ],
             correctIndex: 0,
             explanation:
@@ -2148,7 +2148,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does the lesson identify as the most common error in this material?",
             options: [
               "Confusing a likelihood with a distribution over parameters",
-              "Confusing the mean of a distribution with the mode of the same distribution",
+              "Confusing the mean with the mode",
               "Confusing the variance of a sample with the variance of the population it came from",
               "Confusing a differential equation with a difference equation on a discrete time grid",
             ],
@@ -2160,10 +2160,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Reading Bayes' rule from right to left, what do you have?",
             options: [
-              "A generative model",
+              "A generative model of the observation",
               "A hypothesis test comparing two competing accounts of the same observation",
-              "A decision rule that selects the state with the highest prior probability",
-              "A regression of the observed data onto the unobserved state variable",
+              "A decision rule",
+              "A regression",
             ],
             correctIndex: 0,
             explanation:
@@ -2174,9 +2174,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is the standard deviation usually reported rather than the variance?",
             options: [
               "It is in the same units as the quantity itself",
-              "Because it is always smaller and therefore makes results look more precise than they are",
-              "Because variances cannot be compared between two datasets of different sizes",
-              "Because the standard deviation is unbiased while the variance is not",
+              "It is always smaller",
+              "Variances cannot be compared",
+              "It is unbiased, unlike the variance",
             ],
             correctIndex: 0,
             explanation:
@@ -2189,7 +2189,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "An ordinary differential equation",
               "A conditional probability, relating the voltage to the input current stochastically",
               "An eigenvalue decomposition of the matrix describing the cell's channel kinetics",
-              "A definite integral of the input current over the whole duration of the trial",
+              "A definite integral",
             ],
             correctIndex: 0,
             explanation:
@@ -2200,9 +2200,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "The lesson says combining independent estimates never makes you less certain. Which quantity is behind that?",
             options: [
               "Precision, because precisions add",
-              "The mean, because averaging two means always produces a value between them",
+              "The mean, by averaging",
               "The variance, because variances add whenever independent quantities are combined",
-              "The standard deviation, because it grows only as the square root of the sample size",
+              "The standard deviation",
             ],
             correctIndex: 0,
             explanation:
@@ -2224,10 +2224,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What does fitting a model mean?",
             options: [
-              "Choosing parameters by a stated criterion",
-              "Selecting the model family that best represents the biology of the system studied",
-              "Collecting enough data that the parameters can be measured rather than estimated",
-              "Adjusting the data until the model's predictions match the observed measurements",
+              "Choosing parameter values by a stated criterion",
+              "Selecting the best model family",
+              "Measuring the parameters directly",
+              "Adjusting the data to the model",
             ],
             correctIndex: 0,
             explanation:
@@ -2253,7 +2253,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "It requires inverting a matrix built from the predictors",
               "Because the residuals have to be projected onto the eigenvectors of the covariance matrix",
               "Because it is derived by taking the rank of the data matrix and subtracting the parameters",
-              "Because the predictors must first be orthogonalised using a determinant calculation",
+              "Predictors are orthogonalised by determinant",
             ],
             correctIndex: 0,
             explanation:
@@ -2265,8 +2265,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "The parameters that make the observed data most probable",
               "The parameters most probable given the data, after weighting by a prior distribution",
-              "The model family whose predictions have the smallest average error on new data",
-              "The parameters that minimise the number of assumptions the model has to make",
+              "The family with smallest error",
+              "The fewest-assumption parameters",
             ],
             correctIndex: 0,
             explanation:
@@ -2277,9 +2277,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is the log of the likelihood maximised rather than the likelihood itself?",
             options: [
               "To avoid underflow and to turn products into sums",
-              "Because the logarithm removes the dependence on the number of observations in the sample",
-              "Because only the logarithm of a likelihood can be compared between different model families",
-              "Because taking logarithms makes the maximum easier to find by removing local optima",
+              "It removes dependence on sample size",
+              "Only log-likelihoods can be compared",
+              "It removes local optima",
             ],
             correctIndex: 0,
             explanation:
@@ -2304,7 +2304,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "It is a Gaussian noise assumption under a different name",
               "Because it always underestimates the uncertainty attached to the fitted parameters",
-              "Because it can only be applied to models that are linear in their input variables",
+              "It only works for linear models",
               "Because it requires the predictors to be uncorrelated, which is rarely the case in practice",
             ],
             correctIndex: 0,
@@ -2316,8 +2316,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does a best fit assert?",
             options: [
               "Best within the chosen family, under the assumed noise model",
-              "That the fitted parameters correspond to measurable quantities in the real system",
-              "That no other model of any kind could account for these data more accurately",
+              "Parameters match measurable quantities",
+              "No other model could do better",
               "That the model would generalise to a new dataset drawn from the same experiment",
             ],
             correctIndex: 0,
@@ -2329,9 +2329,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is a fitted parameter without an uncertainty described as half an answer?",
             options: [
               "You cannot tell a real difference from noise",
-              "Because the parameter cannot be compared with values published by other laboratories",
-              "Because the fitting procedure is not reproducible without the uncertainty being reported",
-              "Because uncertainty is required to compute the model's predictions on new data",
+              "It cannot be compared across labs",
+              "The fit is not reproducible",
+              "Predictions need the uncertainty",
             ],
             correctIndex: 0,
             explanation:
@@ -2344,7 +2344,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Resample the data with replacement, refit, and look at the spread",
               "Fit the model repeatedly from different random starting points and keep the best result",
               "Split the data into training and test halves and report the difference between them",
-              "Add simulated noise to the predictions and see how much the fit deteriorates",
+              "Add noise and watch the fit degrade",
             ],
             correctIndex: 0,
             explanation:
@@ -2355,9 +2355,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Neuromatch's model-fitting day runs two tutorials in a particular order. What does that order illustrate?",
             options: [
               "Squared error first, then the likelihood view of the same regression",
-              "Cross-validation first, then the bias-variance decomposition that explains it",
+              "Cross-validation, then bias-variance",
               "Generalized linear models first, then ordinary regression as a special case of them",
-              "Bootstrapping first, then the closed-form solution it is used to check",
+              "Bootstrapping, then the closed form",
             ],
             correctIndex: 0,
             explanation:
@@ -2381,9 +2381,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is a residual?",
             options: [
               "The difference between an observation and the model's prediction for it",
-              "The part of the model's prediction that cannot be attributed to any single parameter",
-              "The variance left in the data after the largest principal component has been removed",
-              "The difference between the fitted parameter and its true value in the generating process",
+              "The unattributed part of a prediction",
+              "Variance left after the top component",
+              "The error in a fitted parameter",
             ],
             correctIndex: 0,
             explanation:
@@ -2396,7 +2396,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Whether the family was right and whether it means anything mechanistically",
               "Whether the sample size was large enough for the fit to be statistically significant",
               "Whether the parameters were fitted by least squares rather than maximum likelihood",
-              "Whether the residuals were computed before or after the data were normalised",
+              "Whether residuals came before normalising",
             ],
             correctIndex: 0,
             explanation:
@@ -2419,10 +2419,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What happens to the location of the maximum when you take the logarithm of a likelihood?",
             options: [
-              "It stays in the same place",
+              "It stays in the same place, as log is monotonic",
               "It shifts toward smaller parameter values because the logarithm compresses large numbers",
-              "It becomes unique even when the original likelihood had several equal maxima",
-              "It changes only if the likelihood takes values below one somewhere in the range",
+              "It becomes unique",
+              "It changes if values fall below one",
             ],
             correctIndex: 0,
             explanation:
@@ -2433,9 +2433,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Which of these is a real alternative criterion to squared error that the lesson mentions?",
             options: [
               "Maximum likelihood under a different noise model",
-              "Maximising the number of observations that fall inside the model's confidence band",
-              "Minimising the number of free parameters regardless of how badly the model then fits",
-              "Choosing parameters so that the mean residual is exactly zero across the dataset",
+              "Maximising points inside the band",
+              "Minimising free parameters alone",
+              "Making the mean residual zero",
             ],
             correctIndex: 0,
             explanation:
@@ -2446,7 +2446,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why would two predictors that are nearly identical cause trouble in a regression?",
             options: [
               "The fit becomes non-unique because the matrix is near-singular",
-              "Because the model would need twice as many observations to estimate them both",
+              "Twice the data would be needed",
               "Because the residuals would become correlated with each other across observations",
               "Because the likelihood would then have several distinct local maxima to choose between",
             ],
@@ -2459,9 +2459,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is the practical reason a product of thousands of probabilities is avoided in code?",
             options: [
               "It underflows to zero in floating-point arithmetic",
-              "It takes far longer to compute than the equivalent sum of logarithms would take",
+              "It is slower to compute",
               "It cannot be differentiated analytically, so no gradient method could be applied to it",
-              "It produces a different maximum from the sum of logarithms, so the answers disagree",
+              "It moves the maximum",
             ],
             correctIndex: 0,
             explanation:
@@ -2485,9 +2485,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the lesson say the criterion is the part people forget they chose?",
             options: [
               "Squared error is used by default without stating its noise assumption",
-              "Because most software reports the criterion only in the documentation rather than in the output",
-              "Because the criterion is usually chosen by a supervisor rather than by the analyst",
-              "Because changing the criterion never changes the fitted parameters in practice",
+              "Software hides the criterion",
+              "A supervisor usually chooses it",
+              "The criterion never changes the fit",
             ],
             correctIndex: 0,
             explanation:
@@ -2512,7 +2512,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Linear filter, positive nonlinearity, Poisson spiking",
               "Poisson spiking, linear filter, and then a Gaussian smoothing of the resulting rate",
-              "Whitening, principal component projection, and logistic regression on the components",
+              "Whitening, PCA, logistic regression",
               "Convolution, rectification, and cross-validation against a held-out stimulus set",
             ],
             correctIndex: 0,
@@ -2523,10 +2523,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What is the spike-triggered average?",
             options: [
-              "The mean stimulus preceding a spike",
+              "The mean stimulus in the window preceding a spike",
               "The mean firing rate averaged across all trials at each moment after stimulus onset",
-              "The average interval between spikes, computed across the whole recording session",
-              "The average response of a population of neurons to a single stimulus presentation",
+              "The mean interspike interval",
+              "A population's mean response",
             ],
             correctIndex: 0,
             explanation:
@@ -2537,9 +2537,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did Paninski show about cascade point-process encoding models?",
             options: [
               "The likelihood has no non-global local maxima",
-              "That they cannot be fitted reliably unless the stimulus is white noise with equal power",
-              "That their parameters are only identifiable when at least two neurons are fitted jointly",
-              "That maximum likelihood fitting of them is equivalent to the spike-triggered average",
+              "They need equal-power white noise",
+              "Two neurons must be fitted jointly",
+              "It is the spike-triggered average",
             ],
             correctIndex: 0,
             explanation:
@@ -2564,7 +2564,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Coupling filters between cells",
               "A second nonlinearity applied after the Poisson stage to model refractoriness explicitly",
-              "A recurrent network layer that allowed the model to hold information across trials",
+              "A recurrent layer",
               "A Bayesian prior over receptive field shapes estimated from a separate population",
             ],
             correctIndex: 0,
@@ -2576,8 +2576,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "As a model gains parameters, what happens to training error and to error on unseen data?",
             options: [
               "Training error falls throughout, unseen error falls then rises",
-              "Both fall throughout, which is why more parameters are always preferable in practice",
-              "Both rise throughout, because extra parameters add variance without adding structure",
+              "Both fall throughout",
+              "Both rise throughout",
               "Training error rises while unseen error falls, which is the definition of regularisation",
             ],
             correctIndex: 0,
@@ -2588,10 +2588,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What are the three parts of the bias-variance decomposition?",
             options: [
-              "Bias, variance, and irreducible noise",
-              "Bias, variance, and the number of parameters the model class contains",
-              "Training error, validation error, and the gap between the two curves",
-              "Systematic error, random error, and the error introduced by numerical rounding",
+              "Bias, variance, and irreducible noise in the data",
+              "Bias, variance, and parameter count",
+              "Training error, validation error, gap",
+              "Systematic, random, and rounding error",
             ],
             correctIndex: 0,
             explanation:
@@ -2617,7 +2617,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "The held-out data are held out before you look at them",
               "The number of folds is chosen in advance and reported alongside the final score",
               "The same random seed is used for every split so the result can be reproduced exactly",
-              "The training and test sets are made exactly equal in size so neither dominates",
+              "Equal-sized train and test sets",
             ],
             correctIndex: 0,
             explanation:
@@ -2641,8 +2641,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is the second neural-data trap the lesson names for decoders?",
             options: [
               "Many neurons and few trials inflate accuracy on incidental structure",
-              "Decoders cannot be fitted at all when the number of neurons exceeds the number of trials",
-              "Decoding accuracy is always higher than encoding accuracy on the same dataset",
+              "Decoders cannot be fitted at all",
+              "Decoding beats encoding accuracy",
               "Decoders require the stimulus to be discrete, so continuous variables must be binned first",
             ],
             correctIndex: 0,
@@ -2654,9 +2654,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does Akaike's information criterion do?",
             options: [
               "Penalises the maximised log-likelihood by the number of parameters",
-              "Estimates the probability that each candidate model is the true generating process",
-              "Measures the correlation between predicted and observed values on held-out trials",
-              "Selects the model whose residuals are closest to normally distributed",
+              "Estimates each model's probability of truth",
+              "Measures held-out correlation",
+              "Selects the most normal residuals",
             ],
             correctIndex: 0,
             explanation:
@@ -2682,7 +2682,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Counts are non-negative integers with mean-dependent variance",
               "Because the Poisson distribution has fewer parameters and therefore fits more quickly",
               "Because Poisson noise makes the log-likelihood concave regardless of the nonlinearity",
-              "Because Gaussian noise would require the stimulus to be Gaussian as well",
+              "Gaussian noise needs a Gaussian stimulus",
             ],
             correctIndex: 0,
             explanation:
@@ -2692,10 +2692,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What does the linear filter in a cascade encoding model correspond to?",
             options: [
-              "The neuron's receptive field",
+              "The neuron's receptive field in space and time",
               "The refractory period, expressed as a suppression of firing immediately after a spike",
-              "The coupling between one neuron and the rest of the recorded population",
-              "The baseline firing rate observed in the absence of any stimulus at all",
+              "Coupling to the population",
+              "The baseline firing rate",
             ],
             correctIndex: 0,
             explanation:
@@ -2706,9 +2706,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "A decoder achieves high accuracy on a population recording. What does that establish?",
             options: [
               "That the information is present in the recorded population",
-              "That downstream areas read the population out using the same weights the decoder learned",
-              "That the encoding model for those neurons must also fit their responses well",
-              "That the variable decoded is the one the population evolved to represent",
+              "Downstream areas use the same weights",
+              "The encoding model must fit well",
+              "It is the variable the population evolved for",
             ],
             correctIndex: 0,
             explanation:
@@ -2720,7 +2720,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Fitting the noise in the training data",
               "Using more parameters than the number of observations in the dataset being fitted",
-              "Reporting a result that fails to replicate in an independent laboratory",
+              "A failure to replicate",
               "Choosing a nonlinear model when a linear one would have described the data adequately",
             ],
             correctIndex: 0,
@@ -2732,9 +2732,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does k-fold cross-validation do with the held-out block?",
             options: [
               "Rotates it so every point is scored once by a model that never saw it",
-              "Keeps it fixed throughout, so the same points always serve as the test set",
+              "Keeps it fixed throughout",
               "Discards it after the first fold and refits on the whole dataset for the final model",
-              "Uses it to select the model family before any parameters are estimated at all",
+              "Uses it to pick the model family",
             ],
             correctIndex: 0,
             explanation:
@@ -2745,9 +2745,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is the generalized linear model family described as chosen for a mathematical reason rather than a conservative one?",
             options: [
               "Its likelihood shape rules out local maxima",
-              "Because it is the only family that can represent a nonlinear stimulus response function",
-              "Because it requires fewer parameters than any competing model of the same responses",
-              "Because it is the only family for which cross-validation is theoretically justified",
+              "Only it can be nonlinear",
+              "It needs fewer parameters",
+              "Only it justifies cross-validation",
             ],
             correctIndex: 0,
             explanation:
@@ -2771,7 +2771,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What kind of structure did the coupled population model capture that a single-cell model could not?",
             options: [
               "Correlated firing across cells",
-              "The absolute latency of each cell's response relative to stimulus onset",
+              "Response latency",
               "The dependence of each cell's receptive field on the animal's behavioural state",
               "The slow drift in firing rate over the course of a long recording session",
             ],
@@ -2785,8 +2785,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "The class is too rigid to represent the true relationship",
               "The class has so many parameters that it fits a different curve for every sample drawn",
-              "The training data contain more noise than the test data do",
-              "The parameters are fitted by maximum likelihood rather than by least squares",
+              "Noisier training than test data",
+              "Fitting by maximum likelihood",
             ],
             correctIndex: 0,
             explanation:
@@ -2797,9 +2797,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is the generalisation claim a cross-validated score supports?",
             options: [
               "A statement about data the model has not seen",
-              "A statement about the true parameter values in the system that generated the data",
-              "A statement that the model family contains the correct mechanistic account",
-              "A statement about how well the model fits the trials it was actually fitted on",
+              "The true parameter values",
+              "A correct mechanism",
+              "Fit on the training trials",
             ],
             correctIndex: 0,
             explanation:
@@ -2822,9 +2822,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Which two textbooks does the lesson cite for the dynamical systems material?",
             options: [
               "Izhikevich (2007) and Strogatz (2015)",
-              "Dayan and Abbott (2001) and Gerstner and colleagues (2014), the two neuroscience texts",
-              "Murphy (2012) and Marr (1982), for machine learning and for levels of description",
-              "Rieke and colleagues (1997) and Hopfield (1982), for coding and for memory",
+              "Dayan and Abbott, Gerstner",
+              "Murphy (2012) and Marr (1982)",
+              "Rieke and Hopfield",
             ],
             correctIndex: 0,
             explanation:
@@ -2837,7 +2837,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Circular, so the attractor is a ring",
               "Bounded but not circular, so the attractor is a line segment with two stable endpoints",
               "Discrete, so the attractor is a finite set of isolated stable points, one per heading",
-              "Unbounded, so the attractor is an infinite line with no repeating structure at all",
+              "Unbounded, so a line",
             ],
             correctIndex: 0,
             explanation:
@@ -2848,9 +2848,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "How does rank, from the linear algebra lesson, relate to dimensionality reduction?",
             options: [
               "Rank counts the independent directions a reduction is looking for",
-              "Rank sets the maximum number of trials that can be included in the analysis",
+              "Rank caps the number of trials",
               "Rank is the number of neurons that must be recorded before a reduction is valid",
-              "Rank measures how much variance the first principal component explains overall",
+              "Rank measures first-component variance",
             ],
             correctIndex: 0,
             explanation:
@@ -2874,9 +2874,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is the state space of a dynamical system?",
             options: [
               "The set of all possible states the system can occupy",
-              "The set of stable fixed points the system can settle into over long times",
-              "The range of parameter values over which the system's behaviour stays qualitatively fixed",
-              "The sequence of states the system actually visits during one particular simulation",
+              "The set of stable fixed points",
+              "The parameter range of fixed behaviour",
+              "The states visited in one simulation",
             ],
             correctIndex: 0,
             explanation:
@@ -2889,7 +2889,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Nobody can look at a 200-dimensional trajectory",
               "Reducing the data speeds up the fitting of encoding models by several orders of magnitude",
               "Recording equipment cannot store the full activity of a large population for long sessions",
-              "Statistical tests are invalid when the number of variables exceeds the number of trials",
+              "Statistical tests become invalid",
             ],
             correctIndex: 0,
             explanation:
@@ -2912,9 +2912,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What is the first step before computing principal components?",
             options: [
-              "Centre the data",
-              "Sort the neurons by their mean firing rate so the largest contributors come first",
-              "Bin the spikes at exactly the same width used for the peristimulus time histogram",
+              "Centre the data by subtracting each neuron's mean",
+              "Sort neurons by firing rate",
+              "Bin spikes at the PSTH width",
               "Discard any neuron whose firing rate varies less than a fixed threshold across trials",
             ],
             correctIndex: 0,
@@ -2939,9 +2939,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did Churchland and colleagues report about motor cortex during reaching?",
             options: [
               "A rotational structure in the population trajectory",
-              "That single-neuron tuning to reach direction fully explained the population's behaviour",
-              "That the population activity collapsed to a single dimension just before movement onset",
-              "That population activity was indistinguishable from a random walk during preparation",
+              "Tuning fully explained the population",
+              "Activity collapsed to one dimension",
+              "Activity resembled a random walk",
             ],
             correctIndex: 0,
             explanation:
@@ -2991,7 +2991,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the lesson say a simple task can only ever produce a low-dimensional answer?",
             options: [
               "The dimensionality found is a property of the dataset, not of cortex",
-              "Because simple tasks are typically run with fewer neurons recorded simultaneously",
+              "Fewer neurons are recorded",
               "Because principal component analysis caps the number of components at the number of conditions",
               "Because the variance explained by later components is always statistically insignificant",
             ],
@@ -3016,9 +3016,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What does the eigenvalue attached to a principal component tell you?",
             options: [
-              "The variance along that direction",
-              "The number of neurons that contribute non-zero weight to that component",
-              "The statistical significance of that component against a shuffled baseline",
+              "The variance of the data along that direction",
+              "How many neurons contribute",
+              "Its significance against shuffles",
               "The correlation between that component and the stimulus variable being studied",
             ],
             correctIndex: 0,
@@ -3043,9 +3043,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does unsupervised mean in this context?",
             options: [
               "Fitted without reference to any target variable",
-              "Fitted without any human choosing the number of components to keep",
-              "Fitted on data from an animal performing no task, so there is no stimulus to reference",
-              "Fitted without cross-validation, since there is no prediction to evaluate",
+              "No human chose the component count",
+              "Fitted with no task running",
+              "Fitted without cross-validation",
             ],
             correctIndex: 0,
             explanation:
@@ -3055,10 +3055,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Where does Neuromatch's dimensionality reduction day end, according to the lesson?",
             options: [
-              "On nonlinear methods",
+              "On nonlinear dimensionality reduction methods",
               "On a comparison between principal components and independent components analysis",
               "On the use of dimensionality reduction as a preprocessing step for decoding",
-              "On the relationship between rank and the number of trials in the recording",
+              "On rank and trial count",
             ],
             correctIndex: 0,
             explanation:
@@ -3069,9 +3069,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "A researcher reports that their population is two-dimensional. What should you ask?",
             options: [
               "What task and what recording produced that number",
-              "Whether the two components were computed before or after the data were centred",
+              "Whether the data were centred",
               "Whether the second component explained more than five percent of the variance",
-              "Whether the neurons were recorded simultaneously or across separate sessions",
+              "Whether recording was simultaneous",
             ],
             correctIndex: 0,
             explanation:
@@ -3082,9 +3082,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does curvature in the data inflate the apparent number of components?",
             options: [
               "A linear projection needs extra axes to approximate a curved surface",
-              "Because curvature increases the total variance and therefore the eigenvalues",
-              "Because curved data violate the assumption that the covariance matrix is symmetric",
-              "Because nonlinear structure makes the eigenvalues complex rather than real",
+              "Curvature raises the total variance",
+              "Curved data break covariance symmetry",
+              "Curvature makes eigenvalues complex",
             ],
             correctIndex: 0,
             explanation:
@@ -3097,7 +3097,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "The power law, so it was not inherited from the image statistics",
               "The rotational structure, so it was not an artefact of the trial averaging",
               "The dimensionality estimate, so it did not depend on the number of neurons recorded",
-              "The correlation between components, so the components were not truly orthogonal",
+              "The correlation between components",
             ],
             correctIndex: 0,
             explanation:
@@ -3122,8 +3122,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Ask for it directly with a supervised method",
               "Take the first principal component, which by construction maximises that prediction",
-              "Take the last principal component, since the largest ones capture noise and drift",
-              "Average the components weighted by their eigenvalues to form a combined direction",
+              "Take the last principal component",
+              "Average the weighted components",
             ],
             correctIndex: 0,
             explanation:
@@ -3134,9 +3134,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does the term variance explained refer to?",
             options: [
               "A component's eigenvalue as a share of the total variance",
-              "The proportion of trials on which the model predicted the correct behavioural response",
-              "The amount of firing rate variability removed by subtracting the population mean",
-              "The reduction in prediction error when a component is added to a decoding model",
+              "The share of correctly predicted trials",
+              "Variability removed by mean-subtraction",
+              "Error reduction in a decoder",
             ],
             correctIndex: 0,
             explanation:
@@ -3149,7 +3149,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Vyas, Golub, Sussillo and Shenoy",
               "Softky and Koch, whose exchange with Shadlen and Newsome framed the debate",
               "Knill and Pouget, whose Bayesian brain review covers population coding generally",
-              "Faisal, Selen and Wolpert, whose noise review covers population variability",
+              "Faisal and colleagues",
             ],
             correctIndex: 0,
             explanation:
@@ -3160,9 +3160,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is a dynamical system?",
             options: [
               "A state plus a rule for how the state changes",
-              "A system whose parameters change over the course of an experiment",
+              "A system with drifting parameters",
               "A network of neurons connected recurrently rather than in a feedforward chain",
-              "Any model whose behaviour cannot be predicted without numerical simulation",
+              "Any model needing simulation",
             ],
             correctIndex: 0,
             explanation:
@@ -3173,9 +3173,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is a fixed point?",
             options: [
               "A state at which the rate of change is zero",
-              "The state the system occupies at the start of every trial before any input arrives",
-              "A state the system can never leave once it has entered it, whatever the input",
-              "The point in the state space where the trajectory crosses itself exactly once",
+              "The state at the start of a trial",
+              "A state that can never be left",
+              "A self-crossing point",
             ],
             correctIndex: 0,
             explanation:
@@ -3200,7 +3200,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "A plane can be drawn, so the geometry can be seen",
               "Two variables are enough to reproduce every firing pattern real neurons display",
-              "Two-variable systems are the only ones with closed-form analytical solutions",
+              "Only they have closed-form solutions",
               "Two variables minimise the number of parameters that have to be fitted to data",
             ],
             correctIndex: 0,
@@ -3238,8 +3238,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did Wilson and Cowan write equations for?",
             options: [
               "Coupled excitatory and inhibitory population activity",
-              "The gating kinetics of sodium and potassium channels in a single cortical neuron",
-              "The propagation of an action potential along a myelinated axon over distance",
+              "Sodium and potassium gating kinetics",
+              "Myelinated axon conduction",
               "The trial-to-trial variability of spike counts in a population of sensory neurons",
             ],
             correctIndex: 0,
@@ -3251,9 +3251,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did Amari extend the rate-model idea to?",
             options: [
               "Continuous neural fields with lateral inhibition",
-              "Spiking networks with sparse random connectivity and balanced input",
-              "Networks whose synaptic weights change according to a spike-timing rule",
-              "Populations of neurons whose firing rates follow a Poisson distribution exactly",
+              "Sparse, balanced spiking networks",
+              "Spike-timing plasticity rules",
+              "Exactly Poisson populations",
             ],
             correctIndex: 0,
             explanation:
@@ -3266,7 +3266,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "A set of states the system falls into from a neighbourhood",
               "The state with the highest firing rate anywhere in the network's repertoire",
               "A stimulus that reliably drives a population into a particular activity pattern",
-              "The direction in state space along which perturbations grow most quickly",
+              "The fastest-growing direction",
             ],
             correctIndex: 0,
             explanation:
@@ -3276,10 +3276,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What is the computational function of a Hopfield network?",
             options: [
-              "Content-addressable memory",
-              "Sequence generation, producing an ordered chain of patterns from a single cue",
+              "Content-addressable memory for stored patterns",
+              "Sequence generation",
               "Path integration, converting velocity signals into an estimate of current position",
-              "Evidence accumulation, summing noisy inputs until a decision threshold is crossed",
+              "Evidence accumulation",
             ],
             correctIndex: 0,
             explanation:
@@ -3315,10 +3315,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What did Zhang propose in 1996 for head direction?",
             options: [
-              "A ring of stable states",
-              "A line of stable states running from zero to three hundred and sixty degrees",
-              "A Hopfield network storing a discrete set of remembered compass headings",
-              "A drift-diffusion process accumulating vestibular evidence toward a decision bound",
+              "A ring of stable states, closing on itself",
+              "A line of stable states",
+              "A Hopfield network of headings",
+              "A drift-diffusion process",
             ],
             correctIndex: 0,
             explanation:
@@ -3329,7 +3329,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did Burak and Fiete analyse as a continuous attractor?",
             options: [
               "Grid cell firing as path integration",
-              "The storage of episodic memories in a recurrent hippocampal network",
+              "Episodic memory storage",
               "The maintenance of eye position by the oculomotor integrator over long fixations",
               "The propagation of activity bumps across primary visual cortex during stimulation",
             ],
@@ -3355,8 +3355,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did Sompolinsky, Crisanti and Sommers show about randomly connected networks?",
             options: [
               "Above a coupling strength they can be chaotic rather than convergent",
-              "That they always converge to a single fixed point regardless of the coupling strength",
-              "That their firing rates follow a power law distribution across the population",
+              "They always converge to one point",
+              "Their rates follow a power law",
               "That they can store a number of patterns proportional to the number of neurons",
             ],
             correctIndex: 0,
@@ -3381,9 +3381,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is the asynchronous irregular state?",
             options: [
               "Neurons firing irregularly and without population-wide synchrony",
-              "Neurons firing regularly but at different phases, so the population average looks flat",
-              "A network in which excitation and inhibition are entirely uncoupled from each other",
-              "A transient regime that occurs only during the first moments after stimulus onset",
+              "Regular firing at staggered phases",
+              "Uncoupled excitation and inhibition",
+              "A transient after stimulus onset",
             ],
             correctIndex: 0,
             explanation:
@@ -3395,7 +3395,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "The curve on which one variable stops changing",
               "The trajectory a system follows when it starts exactly at a fixed point",
-              "The boundary separating two basins of attraction in the state space",
+              "A basin boundary",
               "The set of states from which the system diverges to infinity rather than settling",
             ],
             correctIndex: 0,
@@ -3483,9 +3483,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What does an ideal observer base its estimate on?",
             options: [
-              "The posterior",
-              "The likelihood alone, since the prior would bias an otherwise unbiased estimate",
-              "The prior alone, since the measurement is noisy and therefore not to be trusted",
+              "The posterior, combining prior and likelihood",
+              "The likelihood alone",
+              "The prior alone",
               "The measurement itself, corrected afterwards for any known systematic error",
             ],
             correctIndex: 0,
@@ -3499,7 +3499,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Writing code that fails and then fixing it",
               "Reading the primary sources behind each claim until the terminology becomes automatic",
               "Repeating the assessments until every question can be answered without hesitation",
-              "Discussing the material with a pod of other learners and a teaching assistant",
+              "Joining a study pod",
             ],
             correctIndex: 0,
             explanation:
@@ -3510,9 +3510,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Who proved that the sequential probability ratio test is optimal, and in what year?",
             options: [
               "Wald and Wolfowitz, in 1948",
-              "Wald alone, in the 1945 paper that introduced the test in the first place",
-              "Stone, in the 1960 paper that brought the test into choice reaction time",
-              "Bogacz and colleagues, in the 2006 analysis of two-alternative decision models",
+              "Wald, in 1945",
+              "Stone, in 1960",
+              "Bogacz, in 2006",
             ],
             correctIndex: 0,
             explanation:
@@ -3536,9 +3536,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "In the drift-diffusion model, what determines which of the two answers the observer gives?",
             options: [
               "Which bound the accumulated evidence reaches first",
-              "Which alternative had the higher average evidence over the whole stimulus duration",
+              "The higher average evidence",
               "Whether the accumulated evidence is positive or negative at a fixed response deadline",
-              "Which alternative the starting point was closer to when the stimulus first appeared",
+              "The nearer starting point",
             ],
             correctIndex: 0,
             explanation:
@@ -3564,7 +3564,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Add up noisy evidence and commit when the total reaches a bound",
               "Compare the current sensory sample with a stored template and respond if they match",
               "Wait a fixed interval, then choose whichever alternative has more accumulated support",
-              "Sample one alternative at random and accept it unless the evidence contradicts it",
+              "Sample one alternative at random",
             ],
             correctIndex: 0,
             explanation:
@@ -3574,10 +3574,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "In the drift-diffusion model, what does the drift rate represent?",
             options: [
-              "The quality of the evidence",
-              "The amount of evidence required before the observer is willing to commit",
-              "The time taken by sensory encoding and by executing the motor response",
-              "Any prior bias the observer holds toward one of the two alternatives",
+              "The quality of the evidence, setting the accumulation rate",
+              "The evidence required to commit",
+              "Encoding and motor time",
+              "A prior bias to one alternative",
             ],
             correctIndex: 0,
             explanation:
@@ -3589,8 +3589,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "How much evidence is demanded before committing",
               "The rate at which evidence accumulates once the stimulus has been encoded",
-              "The proportion of trials on which the observer responds before any evidence arrives",
-              "The variability of the evidence signal from one moment to the next within a trial",
+              "Responses before any evidence",
+              "Moment-to-moment evidence noise",
             ],
             correctIndex: 0,
             explanation:
@@ -3602,7 +3602,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Sensory encoding and motor execution",
               "The time spent accumulating evidence before the first bound is approached",
-              "The delay caused by the observer's prior bias toward one alternative",
+              "The observer's prior bias",
               "The trials on which the observer failed to respond within the allowed window",
             ],
             correctIndex: 0,
@@ -3629,7 +3629,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "The sequential probability ratio test",
               "A proof that reaction times in two-choice tasks follow a log-normal distribution",
               "A recurrent circuit model in which slow excitation implements evidence accumulation",
-              "A decision rule that ignores the prior whenever the evidence is strong enough",
+              "A prior-ignoring rule",
             ],
             correctIndex: 0,
             explanation:
@@ -3653,8 +3653,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did Bogacz and colleagues contribute in 2006?",
             options: [
               "A formal analysis of the relations among two-alternative decision models",
-              "The first recordings from parietal cortex during a reaction-time discrimination task",
-              "A demonstration that dopamine encodes a reward prediction error during choices",
+              "The first parietal recordings",
+              "Dopamine as prediction error",
               "An implementation of evidence accumulation in a spiking network of excitatory cells",
             ],
             correctIndex: 0,
@@ -3679,9 +3679,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did Roitman and Shadlen find in parietal cortex in 2002?",
             options: [
               "Firing rates ramping at a rate that scaled with motion strength",
-              "Firing rates that dropped to baseline immediately before the animal responded",
-              "Firing rates that encoded the reward magnitude rather than the sensory evidence",
-              "Firing rates that were identical on correct and error trials at every moment",
+              "Rates dropping to baseline",
+              "Rates encoding reward size",
+              "Rates identical on all trials",
             ],
             correctIndex: 0,
             explanation:
@@ -3705,7 +3705,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Which caveat does the lesson attach to the whole drift-diffusion literature?",
             options: [
               "Fitting reaction-time distributions well does not prove the mechanism",
-              "The model applies only to visual motion and not to any other kind of evidence",
+              "It applies only to visual motion",
               "The parameters cannot be estimated from behavioural data without neural recordings",
               "The model cannot account for errors, only for correct responses and their timing",
             ],
@@ -3718,8 +3718,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "How can a ramping trial-averaged firing rate arise without any ramp on single trials?",
             options: [
               "Steps occurring at different times average into a ramp",
-              "Slow drift in the electrode position produces a spurious upward trend across trials",
-              "Poisson variability in the spike counts always produces an apparent upward slope",
+              "Electrode drift across trials",
+              "Poisson variability alone",
               "The peristimulus histogram is normalised in a way that introduces a positive bias",
             ],
             correctIndex: 0,
@@ -3769,10 +3769,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "An observer becomes slower and more accurate. Which parameter change does the model attribute that to?",
             options: [
-              "Wider boundary separation",
+              "Wider boundary separation, demanding more evidence",
               "A higher drift rate, since better evidence produces both slower and more accurate choices",
               "A longer non-decision time, since sensory encoding has become more thorough",
-              "A starting point shifted further from the correct alternative's bound",
+              "A shifted starting point",
             ],
             correctIndex: 0,
             explanation:
@@ -3783,9 +3783,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does Britten and colleagues' 1992 paper add to the 1989 result?",
             options: [
               "A systematic comparison of neuronal and psychophysical performance",
-              "A recording from parietal rather than motion-sensitive cortex during the same task",
-              "A circuit model showing how the comparison could be implemented in cortex",
-              "A demonstration that the effect disappears when the animal is not rewarded",
+              "A recording from parietal cortex",
+              "A circuit model of the comparison",
+              "Loss of the effect without reward",
             ],
             correctIndex: 0,
             explanation:
@@ -3808,10 +3808,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "In what year and in what context did Ratcliff introduce the diffusion model?",
             options: [
-              "1978, for memory retrieval",
-              "1998, for the modelling of two-choice reaction times in perceptual tasks",
-              "2002, for the interpretation of parietal recordings in monkeys",
-              "2008, in a review consolidating three decades of two-choice modelling",
+              "1978, as a theory of memory retrieval",
+              "1998, for perceptual choices",
+              "2002, for parietal data",
+              "2008, in a review",
             ],
             correctIndex: 0,
             explanation:
@@ -3824,7 +3824,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "The model is the continuous-time counterpart of the test",
               "The test is a special case of the model that applies only when errors are impossible",
               "They are unrelated procedures that happen to produce similar reaction-time predictions",
-              "The test was derived from the model after the neural recordings were published",
+              "The test was derived from the model",
             ],
             correctIndex: 0,
             explanation:
@@ -3835,8 +3835,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is perception described as inference in this section?",
             options: [
               "The world state is not observed, only noisy ambiguous measurements of it",
-              "Because perception requires conscious reasoning about what the stimulus might be",
-              "Because sensory receptors compute probabilities directly rather than firing rates",
+              "Perception requires conscious reasoning",
+              "Receptors compute probabilities",
               "Because every percept is the output of a learned decision rule rather than a measurement",
             ],
             correctIndex: 0,
@@ -3848,9 +3848,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "In the Gaussian case, what is the posterior's precision?",
             options: [
               "The sum of the prior and likelihood precisions",
-              "The average of the prior and likelihood precisions, weighted by their means",
-              "The smaller of the two precisions, since the weakest source limits the estimate",
-              "The product of the two precisions, divided by the difference between the means",
+              "The mean-weighted average",
+              "The smaller of the two precisions",
+              "The product over the mean difference",
             ],
             correctIndex: 0,
             explanation:
@@ -3863,7 +3863,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "A precision-weighted average of the two means",
               "The mean of whichever source has the larger variance, since it carries more information",
               "The arithmetic average of the prior mean and the measurement, regardless of reliability",
-              "The measurement, with the prior affecting only the width of the posterior",
+              "The measurement alone",
             ],
             correctIndex: 0,
             explanation:
@@ -3887,9 +3887,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is the Ernst and Banks result described as unusually clean?",
             options: [
               "The prediction was quantitative and made in advance",
-              "Because the experiment was run on a very large number of participants",
+              "It had a very large sample",
               "Because it required no assumptions about the distribution of the measurement noise",
-              "Because it was replicated in a different sensory modality by the same authors",
+              "It replicated in another modality",
             ],
             correctIndex: 0,
             explanation:
@@ -3913,9 +3913,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did Weiss, Simoncelli and Adelson explain in 2002?",
             options: [
               "A family of motion illusions as the output of an optimal estimator",
-              "The optimal combination of visual and haptic cues in a height judgement task",
-              "The variability of cortical firing as the result of balanced excitation and inhibition",
-              "The accumulation of sensory evidence toward a decision threshold in parietal cortex",
+              "Optimal visual-haptic combination",
+              "Irregular cortical firing",
+              "Parietal evidence accumulation",
             ],
             correctIndex: 0,
             explanation:
@@ -3928,7 +3928,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "A broader likelihood lets the slow-speed prior pull the estimate further",
               "Because low contrast reduces the firing rates of motion-sensitive neurons proportionally",
               "Because the visual system samples low-contrast stimuli for a shorter time before deciding",
-              "Because the prior over speeds shifts toward zero when contrast is reduced",
+              "The speed prior shifts with contrast",
             ],
             correctIndex: 0,
             explanation:
@@ -3939,9 +3939,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "How does the lesson describe motion illusions in this framework?",
             options: [
               "As what an optimal estimator with that prior is supposed to do",
-              "As a failure of the visual system that a better-designed estimator would avoid",
+              "As a design failure",
               "As evidence that perception is not Bayesian, since an optimal observer would not err",
-              "As artefacts of the laboratory displays rather than features of natural vision",
+              "As laboratory artefacts",
             ],
             correctIndex: 0,
             explanation:
@@ -3967,7 +3967,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "A freely fitted prior and likelihood can accommodate a great deal",
               "Bayesian models cannot be compared with non-Bayesian models on the same data",
               "Bayesian models require far more trials per participant than other model families",
-              "Bayesian models can only be applied when the stimulus distribution is Gaussian",
+              "They need Gaussian stimuli",
             ],
             correctIndex: 0,
             explanation:
@@ -3977,10 +3977,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What is the first question to ask about a claim that behaviour is Bayes-optimal?",
             options: [
-              "Where the prior came from",
-              "Whether the participants were told the distribution of the stimulus in advance",
+              "Where the prior came from, imposed or fitted",
+              "Whether participants were told",
               "Whether the likelihood was assumed to be Gaussian rather than measured directly",
-              "Whether the result was replicated in a second independent group of participants",
+              "Whether it was replicated",
             ],
             correctIndex: 0,
             explanation:
@@ -4004,9 +4004,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does combining independent estimates never make an observer less certain?",
             options: [
               "Precisions add, and a precision cannot be negative",
-              "Because the estimate with the smaller variance is always the one adopted",
-              "Because averaging two numbers always produces a value between them",
-              "Because independent measurements cannot disagree by more than their combined error",
+              "The smaller-variance estimate wins",
+              "Averages lie between their inputs",
+              "Measurements cannot disagree much",
             ],
             correctIndex: 0,
             explanation:
@@ -4019,7 +4019,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Körding and Wolpert's displacement distribution",
               "Weiss, Simoncelli and Adelson's slow-speed prior over image motion",
               "Knill and Pouget's account of uncertainty in neural coding and computation",
-              "Ernst and Banks's measurement of visual and haptic reliability",
+              "Ernst and Banks's study",
             ],
             correctIndex: 0,
             explanation:
@@ -4043,8 +4043,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What happens to the weight given to a sensory channel when that channel is degraded?",
             options: [
               "It falls, in proportion to the loss of reliability",
-              "It rises, because the observer compensates by attending to it more closely",
-              "It stays the same, because weights are learned over long experience and change slowly",
+              "It rises",
+              "It stays the same",
               "It falls to zero, because an unreliable channel is excluded from the estimate entirely",
             ],
             correctIndex: 0,
@@ -4083,7 +4083,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Many, including some that represent no probability at all",
               "Exactly one, which is why optimality implies a specific neural implementation",
-              "Two, corresponding to sampling-based and parametric probabilistic codes",
+              "Two probabilistic codes",
               "None that are biologically plausible given the noise levels measured in cortex",
             ],
             correctIndex: 0,
@@ -4134,9 +4134,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What did Schultz, Dayan and Montague report about midbrain dopamine in 1997?",
             options: [
               "Responses that behave like a reward prediction error",
-              "Responses that scale with the physical magnitude of the reward delivered",
+              "Scaling with reward size",
               "Responses that predict the animal's reaction time on the following trial",
-              "Responses that accumulate toward a threshold during the decision period",
+              "Ramping to a threshold",
             ],
             correctIndex: 0,
             explanation:
@@ -4147,9 +4147,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "How does the closing lesson describe optimal control relative to inference?",
             options: [
               "The question shifts from estimating the world to acting on it",
-              "It is the same problem with the prior and the likelihood exchanged",
-              "It replaces the posterior with a point estimate to make the computation tractable",
-              "It applies only to motor tasks, whereas inference applies only to perception",
+              "Prior and likelihood swap roles",
+              "It uses a point estimate",
+              "It applies only to motor tasks",
             ],
             correctIndex: 0,
             explanation:
@@ -4160,7 +4160,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What does the causality module ask, according to the closing lesson?",
             options: [
               "When a correlation licenses a causal claim",
-              "How to fit a causal model to spike counts using maximum likelihood",
+              "Fitting causal models to counts",
               "Whether neural activity causes behaviour or merely accompanies it in time",
               "How to estimate the direction of information flow between two brain areas",
             ],
@@ -4174,8 +4174,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Two Python workshops, then linear algebra, then calculus, then statistics",
               "Statistics first, then calculus, then linear algebra, then the two Python workshops",
-              "Linear algebra and calculus together, then Python, then statistics last of all",
-              "Whichever order suits you, since the refreshers are entirely independent of each other",
+              "Linear algebra and calculus first",
+              "Whichever order suits you",
             ],
             correctIndex: 0,
             explanation:
@@ -4212,9 +4212,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What role does the closing lesson assign to deep networks in Neuromatch's curriculum?",
             options: [
               "Encoding models, and a proposed framework for neuroscience",
-              "A replacement for generalized linear models in all fitting applications",
-              "A method of dimensionality reduction that supersedes principal component analysis",
-              "A simulation tool for generating synthetic spike trains to test analyses on",
+              "A full replacement for GLMs",
+              "A successor to PCA",
+              "A spike-train simulator",
             ],
             correctIndex: 0,
             explanation:
@@ -4225,9 +4225,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is an instrumental variable, as the closing lesson's vocabulary defines it?",
             options: [
               "A variable influencing a cause but not the outcome directly",
-              "A variable measured to control for confounding in a regression analysis",
+              "A confounding control",
               "A variable the experimenter manipulates directly in a randomised intervention",
-              "A variable that mediates the effect of the cause on the outcome",
+              "A mediator of the effect",
             ],
             correctIndex: 0,
             explanation:
@@ -4240,7 +4240,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "The difference between reward received and reward expected",
               "The difference between the reward delivered and the maximum reward available",
               "The probability that the chosen action was the one with the highest expected value",
-              "The variance of the reward across repetitions of the same action",
+              "Reward variance",
             ],
             correctIndex: 0,
             explanation:
@@ -4264,9 +4264,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the closing lesson list what it left out rather than simply ending?",
             options: [
               "So you know what you are walking into rather than discovering it later",
-              "Because the omitted topics are the ones most likely to appear in an assessment",
-              "Because Neuromatch requires derived courses to enumerate their omissions",
-              "Because the omitted topics were removed for licensing reasons rather than by choice",
+              "They are likely to be assessed",
+              "Neuromatch requires it",
+              "Licensing forced the omissions",
             ],
             correctIndex: 0,
             explanation:
@@ -4289,8 +4289,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What does the closing lesson say about the coursebook's availability?",
             options: [
-              "It is open and free",
-              "It requires a registered student account on the Neuromatch portal to read",
+              "It is open and free, under CC BY 4.0",
+              "It needs an account",
               "It is available only during the three weeks the course is running each July",
               "It is free for the tutorials but paid for the project templates and datasets",
             ],
@@ -4320,7 +4320,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "It is a companion, and their course is fifteen full days of instruction",
               "Nothing, since the topics covered here match their published module list exactly",
               "Only the causality module would be missing, and it can be read separately in an afternoon",
-              "The certificate this course issues is not recognised, but the content is equivalent",
+              "The certificate is not recognised",
             ],
             correctIndex: 0,
             explanation:
@@ -4330,10 +4330,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "A course reuses Neuromatch material, credits them, links the source and links the licence, but says nothing about its own edits. What is missing?",
             options: [
-              "A statement of what was changed",
-              "A licence fee payment, which CC BY 4.0 requires for commercial reuse",
+              "A statement of what was changed from the original",
+              "A licence fee payment",
               "Written permission from Neuromatch, which their guidance requires before adaptation",
-              "A NonCommercial notice, since CC BY 4.0 forbids charging for derived works",
+              "A NonCommercial notice",
             ],
             correctIndex: 0,
             explanation:
@@ -4344,9 +4344,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Which statement about this course's relationship to Neuromatch is accurate?",
             options: [
               "Independent, and neither reviewed nor endorsed by them",
-              "Officially endorsed, once the required attribution notice was filed with them",
-              "Produced under contract to Neuromatch as a preparatory companion for their students",
-              "Reviewed by Neuromatch for accuracy but not formally affiliated with the Academy",
+              "Officially endorsed by them",
+              "Produced under contract to them",
+              "Reviewed by them for accuracy",
             ],
             correctIndex: 0,
             explanation:
@@ -4357,7 +4357,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "You are asked whether a model of a neuron is realistic. What does this course say the better question is?",
             options: [
               "Whether what it left out matters for the question asked",
-              "Whether every parameter has been measured in the same species and preparation",
+              "Whether every parameter was measured",
               "Whether it reproduces the action potential waveform as well as Hodgkin-Huxley does",
               "Whether it has been fitted to data using maximum likelihood rather than least squares",
             ],
@@ -4384,8 +4384,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "They are three descriptions of one system",
               "They are three categories of model, distinguished by the question each one asks",
-              "They rank models by how much biological detail each one preserves",
-              "They apply only to vision, which is the domain his book was written about",
+              "They rank biological detail",
+              "They apply only to vision",
             ],
             correctIndex: 0,
             explanation:
@@ -4395,10 +4395,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Why can Hodgkin and Huxley's model be wrong in an interesting way, in the lesson's phrasing?",
             options: [
-              "It makes claims about parts",
-              "Because it was fitted to a single preparation and may not generalise to other species",
-              "Because it has four equations, so there are four places an error could hide",
-              "Because it describes only the average behaviour of many cells rather than one",
+              "It makes claims about parts that an experiment can contradict",
+              "It was fitted to one preparation",
+              "It has four equations",
+              "It describes only average cells",
             ],
             correctIndex: 0,
             explanation:
@@ -4424,7 +4424,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Izhikevich's two-variable model",
               "The full Hodgkin-Huxley system, since it reproduces every firing pattern exactly",
               "A multi-compartment cable model, which captures dendritic contributions to bursting",
-              "A Wilson-Cowan rate model, which describes populations rather than single cells",
+              "A Wilson-Cowan model",
             ],
             correctIndex: 0,
             explanation:
@@ -4434,10 +4434,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "What is asserted rather than produced in a leaky integrate-and-fire neuron?",
             options: [
-              "The spike itself",
+              "The spike itself, by threshold and reset",
               "The membrane time constant, which is imposed rather than derived from resistance and capacitance",
-              "The input current, which is set by the experimenter rather than by the network",
-              "The resting potential, which the leak drives the voltage toward over time",
+              "The input current",
+              "The resting potential",
             ],
             correctIndex: 0,
             explanation:
@@ -4461,9 +4461,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the course introduce the Poisson process before it introduces model fitting?",
             options: [
               "Fitting spike counts requires stating what you believe the noise to be",
-              "Because the Poisson distribution is the only one whose likelihood is concave",
-              "Because trial averaging must be justified before any fitting can be attempted",
-              "Because the Fano factor is the standard goodness-of-fit statistic for encoding models",
+              "Only the Poisson likelihood is concave",
+              "Trial averaging must be justified",
+              "The Fano factor measures fit",
             ],
             correctIndex: 0,
             explanation:
@@ -4488,7 +4488,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "That the inner dimensions of the two matrices agree",
               "That the data have been centred before the multiplication is attempted",
-              "That the covariance matrix has been inverted rather than transposed",
+              "That the covariance was inverted",
               "That the number of trials exceeds the number of neurons in the recording",
             ],
             correctIndex: 0,
@@ -4500,9 +4500,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Two predictors in a regression are almost perfectly correlated. What is the consequence?",
             options: [
               "The matrix to invert is near-singular and the fit is unstable",
-              "The residuals become correlated, which biases the estimate of the noise variance",
+              "The residuals become correlated",
               "The likelihood acquires several local maxima that gradient methods may get stuck in",
-              "The model overfits, because two predictors carry the information of one",
+              "The model overfits",
             ],
             correctIndex: 0,
             explanation:
@@ -4526,9 +4526,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "A recording of 300 neurons has an activity matrix of rank 5. What can you conclude?",
             options: [
               "Its variation lies in a five-dimensional subspace",
-              "Only five of the neurons carry any signal and the rest are recording noise",
-              "The recording contains only five distinct stimulus conditions",
-              "The covariance matrix has exactly five nonzero entries on its diagonal",
+              "Only five neurons carry signal",
+              "There were five stimulus conditions",
+              "Five nonzero diagonal covariances",
             ],
             correctIndex: 0,
             explanation:
@@ -4541,7 +4541,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "That describes a posterior, which needs a prior",
               "There is no error, since a likelihood is a probability distribution over parameters",
               "The error is only in the wording, since the two quantities are always proportional",
-              "That describes a prior, which is what you hold before seeing the data",
+              "That describes a prior",
             ],
             correctIndex: 0,
             explanation:
@@ -4565,8 +4565,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "A simulation of a neuron model produces oscillations that vanish when the step size is halved. What happened?",
             options: [
               "A numerical artefact of the integration step",
-              "A genuine bifurcation that the finer simulation moved past",
-              "A rounding error in the computation of the membrane time constant",
+              "A genuine bifurcation",
+              "A rounding error",
               "An instability in the model's threshold-and-reset rule at high firing rates",
             ],
             correctIndex: 0,
@@ -4578,9 +4578,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the course introduce precision alongside variance?",
             options: [
               "Precisions add when independent estimates are combined",
-              "Because precision is the quantity reported in the neuroscience literature by convention",
-              "Because precision has the same units as the measured quantity while variance does not",
-              "Because precision is required to convert spike counts into firing rates correctly",
+              "It is the literature's convention",
+              "It shares the quantity's units",
+              "It converts counts to rates",
             ],
             correctIndex: 0,
             explanation:
@@ -4592,7 +4592,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Independent Gaussian noise of constant variance",
               "Nothing, because least squares is a purely geometric criterion with no probability attached",
-              "Poisson noise, which is the default for count data in most software packages",
+              "Poisson noise",
               "That the residuals are uncorrelated with each other but may have any distribution",
             ],
             correctIndex: 0,
@@ -4603,10 +4603,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Two estimates of the same parameter differ by a factor of two. What do you need before you can call that a difference?",
             options: [
-              "An uncertainty on each estimate",
-              "A larger dataset, since a factor of two is never reliable in small samples",
+              "An uncertainty on each estimate, such as a bootstrap spread",
+              "A larger dataset",
               "A likelihood ratio test comparing the two models that produced the estimates",
-              "A cross-validated score for each model on the same held-out data",
+              "A cross-validated score",
             ],
             correctIndex: 0,
             explanation:
@@ -4617,9 +4617,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is a best fit not evidence that the model family was the right one?",
             options: [
               "It is a comparison among parameters, not among families",
-              "Because best fit is defined only up to the numerical tolerance of the optimiser used",
-              "Because families can only be compared using an information criterion, never a fit",
-              "Because the fit was computed on training data and families must be compared on test data",
+              "Best fit depends on tolerance",
+              "Families need an information criterion",
+              "Families must be compared on test data",
             ],
             correctIndex: 0,
             explanation:
@@ -4645,7 +4645,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
               "Counts are non-negative integers with mean-dependent variance",
               "Counts cannot be predicted from a stimulus without a nonlinear filter stage first",
               "Counts are correlated across neighbouring time bins, which regression cannot handle",
-              "Counts must be converted to rates before any statistical model can be applied",
+              "Counts must first become rates",
             ],
             correctIndex: 0,
             explanation:
@@ -4656,9 +4656,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the field default to generalized linear models rather than something more expressive?",
             options: [
               "The likelihood has no local maxima, so fitting is reliable",
-              "Because more expressive models cannot represent a receptive field at all",
+              "Others cannot represent receptive fields",
               "Because generalized linear models always predict held-out data better in practice",
-              "Because they require no choice of nonlinearity, which removes an arbitrary decision",
+              "They need no choice of nonlinearity",
             ],
             correctIndex: 0,
             explanation:
@@ -4669,9 +4669,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "A decoder trained on 400 neurons and 40 trials reports 95 percent accuracy on the training set. What should you say?",
             options: [
               "Report the held-out score, because that number is uninformative",
-              "That the population clearly represents the decoded variable very strongly",
-              "That the model must be underfitting, since accuracy is below one hundred percent",
-              "That the result is fine as long as the decoder used a linear rather than nonlinear readout",
+              "That the population represents it strongly",
+              "That the model is underfitting",
+              "That a linear readout makes it fine",
             ],
             correctIndex: 0,
             explanation:
@@ -4696,7 +4696,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Whether the likelihood gained pays for the parameter added",
               "Whether the new parameter is statistically significant at the conventional threshold",
-              "Whether the improvement survives when the data are resampled with replacement",
+              "Whether it survives resampling",
               "Whether the parameter has a plausible biological interpretation in the system studied",
             ],
             correctIndex: 0,
@@ -4708,9 +4708,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "A paper reports that a population is three-dimensional in a task with three conditions. What is the concern?",
             options: [
               "A simple task can only produce a low-dimensional answer",
-              "Three dimensions is too few for any principal component analysis to be meaningful",
+              "Three dimensions is too few for PCA",
               "The components should have been computed on single trials rather than trial averages",
-              "The eigenvalues were probably not tested against a shuffled control distribution",
+              "No shuffled control was used",
             ],
             correctIndex: 0,
             explanation:
@@ -4734,9 +4734,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "You want the population direction most predictive of reach speed. Why is the first principal component the wrong tool?",
             options: [
               "It is unsupervised and finds variance, not your variable",
-              "It is computed on centred data, so it cannot represent an absolute speed",
-              "It is orthogonal to every other component, which prevents it from being predictive",
-              "It requires more trials than neurons, which population recordings rarely provide",
+              "It cannot represent absolute speed",
+              "Orthogonality stops it predicting",
+              "It needs more trials than neurons",
             ],
             correctIndex: 0,
             explanation:
@@ -4772,10 +4772,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "A model of head direction should use which structure?",
             options: [
-              "A ring of stable states",
+              "A ring of stable states, as heading is circular",
               "A single point attractor, since the animal faces one direction at a time",
               "A line of stable states running between the two extremes of the range",
-              "A chaotic regime, which allows the representation to explore all directions",
+              "A chaotic regime",
             ],
             correctIndex: 0,
             explanation:
@@ -4799,8 +4799,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why does the lesson say that a recurrent network settling into a stable state is not automatic?",
             options: [
               "Random networks can be chaotic above a coupling strength",
-              "Because recurrent networks always oscillate unless inhibition is added deliberately",
-              "Because settling requires the connectivity matrix to be symmetric, which is rare",
+              "Recurrent networks always oscillate",
+              "It needs symmetric connectivity",
               "Because spiking networks cannot have fixed points, only continuous attractors",
             ],
             correctIndex: 0,
@@ -4825,9 +4825,9 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is a model that fits reaction-time distributions well still not proof of a mechanism?",
             options: [
               "Several accumulation schemes produce similar distributions",
-              "Because reaction times are too variable for any model to be distinguished from another",
-              "Because the model has four parameters, which is too few to constrain a mechanism",
-              "Because the fit is computed on the same data used to estimate the parameters",
+              "Reaction times are too variable",
+              "Four parameters are too few",
+              "The fit reuses the training data",
             ],
             correctIndex: 0,
             explanation:
@@ -4838,7 +4838,7 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "What is the connection between Wald's sequential test and the psychology of decisions?",
             options: [
               "The drift-diffusion model is its continuous-time counterpart",
-              "Wald's test was derived from reaction-time data collected in the 1940s",
+              "It came from 1940s reaction times",
               "The test predicts firing rates in parietal cortex directly without free parameters",
               "The test applies only when the two alternatives are equally probable in advance",
             ],
@@ -4877,8 +4877,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             prompt: "Why is a systematic perceptual error compatible with optimal inference?",
             options: [
               "A prior pulls the estimate in a predictable direction",
-              "Because optimal inference minimises error only on average across all stimuli",
-              "Because the likelihood is always biased by the noise in the sensory receptors",
+              "It minimises error only on average",
+              "The likelihood is always biased",
               "Because optimality applies to the decision rule but not to the perceptual estimate",
             ],
             correctIndex: 0,
@@ -4889,10 +4889,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Showing that behaviour is near-optimal establishes a claim at which of Marr's levels?",
             options: [
-              "The computational level",
-              "The algorithmic level, since optimality specifies the steps performed",
-              "The implementational level, since it constrains which circuits are possible",
-              "All three at once, which is what makes optimality results so powerful",
+              "The computational level, about the problem solved",
+              "The algorithmic level",
+              "The implementational level",
+              "All three levels at once",
             ],
             correctIndex: 0,
             explanation:
@@ -4902,10 +4902,10 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
           {
             prompt: "Which topic would you have to go to Neuromatch's own material for?",
             options: [
-              "The Kalman filter",
+              "The Kalman filter, which this course leaves out",
               "The bias-variance trade-off, which this course leaves to their model fitting day",
               "The leaky integrate-and-fire neuron, which is only covered in their Python workshops",
-              "Principal component analysis, which this course mentions without explaining",
+              "Principal component analysis",
             ],
             correctIndex: 0,
             explanation:
@@ -4930,8 +4930,8 @@ Neuromatch publishes its course content under the **Creative Commons Attribution
             options: [
               "Temporal-difference learning theory to recorded physiology",
               "Attractor network theory to the maintenance of working memory in prefrontal cortex",
-              "Bayesian inference to the combination of visual and haptic sensory cues",
-              "Evidence accumulation to the ramping of firing rates in parietal cortex",
+              "Bayesian inference to cue combination",
+              "Accumulation to parietal ramps",
             ],
             correctIndex: 0,
             explanation:
