@@ -300,7 +300,7 @@ export const WELL_MENTAL_WELLBEING_COURSE: AuthoredCourse = {
             prompt: "State the functional test as this pillar depends on it.",
             options: [
               "If a licensing board read a transcript of this session, what would they see me doing?",
-              "Would a reasonable client understand this as coaching rather than as therapy?",
+              "Would a reasonable client, reading the intake form, understand this session as coaching rather than as therapy?",
               "Does my certification's scope document explicitly permit this activity?",
               "Have I documented the client's consent to work in this territory?",
             ],
@@ -313,7 +313,7 @@ export const WELL_MENTAL_WELLBEING_COURSE: AuthoredCourse = {
             prompt: "Give the three-question practical version of the functional test.",
             options: [
               "Client-set goal or symptom relief? Present or past? Would this appear in a psychotherapy manual?",
-              "Is the client in crisis? Are they in treatment elsewhere? Have they consented to this work?",
+              "Is the client in crisis right now? Are they in treatment elsewhere? Have they consented in writing to this work?",
               "Am I qualified? Is this within my certification? Would a colleague do the same?",
               "Is the emotion proportionate? Is it recurring? Is the client distressed by it?",
             ],
@@ -351,7 +351,7 @@ export const WELL_MENTAL_WELLBEING_COURSE: AuthoredCourse = {
           {
             prompt: "What does 'present and future focus' preserve?",
             options: [
-              "The distinguishability of coaching from therapy: from where a client is toward what they want",
+              "The distinguishability of coaching from therapy",
               "The client's motivation, which past-focused work tends to undermine",
               "The efficiency of sessions, which historical exploration would lengthen",
               "The coach's neutrality, which discussing the past would compromise",
@@ -393,7 +393,7 @@ export const WELL_MENTAL_WELLBEING_COURSE: AuthoredCourse = {
               "Working through a client's childhood experiences to resolve their present anxiety",
               "Asking what the dread before a Monday is made of",
               "Teaching a breathing practice to a client who reports feeling wound up",
-              "Helping a client articulate what matters to them and align behavior with it",
+              "Helping a client articulate what matters to them and then align their weekly behavior with it",
             ],
             correctIndex: 0,
             explanation:
@@ -416,9 +416,9 @@ export const WELL_MENTAL_WELLBEING_COURSE: AuthoredCourse = {
           {
             prompt: "What is a 'condition-named service'?",
             options: [
-              "Marketing coaching by a diagnosis, implying treatment and attracting clients who need care",
+              "Marketing coaching by a diagnosis, implying you treat it",
               "A coaching service designed for a specific clinical population under supervision",
-              "A service whose name describes the outcome rather than the method",
+              "A service whose name describes the outcome it delivers rather than the method",
               "A coaching offering restricted to clients with a particular diagnosis",
             ],
             correctIndex: 0,
@@ -442,21 +442,21 @@ export const WELL_MENTAL_WELLBEING_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What is 'working with emotion versus treating it'?",
-            options: ["Exploring feelings as they bear on goals, not remediating a condition","Acknowledging emotion versus inviting it deliberately","Surface discussion versus exploring deeper meaning","Responding with reflection versus responding with technique"],
+            options: ["Exploring feelings as they bear on goals, not remediating a condition","Acknowledging emotion when it arises, as distinct from inviting it in deliberately","Surface discussion versus exploring deeper meaning","Responding to emotion with reflection, as distinct from responding with technique"],
             correctIndex: 0,
             explanation: "Depth of feeling is not the discriminator. Direction of travel is.",
             sourceLessonSlug: "the-hardest-boundary",
           },
           {
             prompt: "What is 'skills training' as distinct from treatment?",
-            options: ["Teaching a self-regulation technique as a tool, not as treatment for a condition","Teaching techniques not validated in clinical populations","Instruction delivered in groups rather than one to one","Teaching a client to apply a technique unaided"],
+            options: ["Teaching a self-regulation technique as a tool, not as treatment for a condition","Teaching techniques that have not yet been validated in any clinical population, only in volunteers","Instruction delivered in a group format rather than one to one, with a fixed session curriculum","Teaching a client to apply a technique unaided"],
             correctIndex: 0,
             explanation: "The difference is framing and population, not technique. The techniques come from the same research lineage as clinical interventions.",
             sourceLessonSlug: "what-a-coach-may-do",
           },
           {
             prompt: "What is 'values clarification', and what does it feed?",
-            options: ["Articulating what matters so behaviour can anchor to it; it feeds autonomy support","Identifying which values a client is failing to live by; it feeds accountability","Ranking values by importance; it feeds goal selection","Comparing stated and revealed values; it feeds insight"],
+            options: ["Articulating what matters so behaviour can anchor to it; it feeds autonomy support","Finding the values a client fails to live by; it feeds accountability","Ranking a client's core values in order of importance; it feeds goal selection and session priorities","Comparing stated values against revealed ones in a client's calendar; it feeds insight into avoidance"],
             correctIndex: 0,
             explanation: "Coaching's oldest durable move, and a change anchored to a real value is a change with its own engine.",
             sourceLessonSlug: "what-a-coach-may-do",
@@ -470,42 +470,42 @@ export const WELL_MENTAL_WELLBEING_COURSE: AuthoredCourse = {
           },
           {
             prompt: "What makes emotional exploration coaching rather than therapy?",
-            options: ["The destination is the behaviour and the goal, not the diagnosis or the origin","The emotion is discussed briefly rather than centrally","The client raises it rather than the coach","The coach reflects rather than interprets"],
+            options: ["The destination is the behaviour and the goal, not the diagnosis or the origin","The emotion is discussed only briefly in the session, rather than being made its central focus","The client raises the emotion first, rather than the coach introducing it into the conversation","The coach reflects the emotion back rather than interpreting what it means or where it came from"],
             correctIndex: 0,
             explanation: "Asking what comes up when a client imagines saying no at work is emotional territory and squarely coaching, because of where it is headed.",
             sourceLessonSlug: "what-a-coach-may-do",
           },
           {
             prompt: "What is 'scope creep', and why is it likely here?",
-            options: ["Gradual drift from coaching into treatment; the transition is invisible in the moment","Expanding services beyond the original offering over time","A client's growing expectation the coach handles more","Sessions running longer as rapport builds"],
+            options: ["Gradual drift from coaching into treatment; the transition is invisible in the moment","Expanding a coach's menu of services beyond the original offering over time, as the business grows","A client's growing expectation that the coach will handle more and more areas of their life each month","Sessions running longer as rapport builds"],
             correctIndex: 0,
             explanation: "Nothing about a thoughtful question announces itself as treatment, which is what makes invisibility the specific risk.",
             sourceLessonSlug: "the-hardest-boundary",
           },
           {
             prompt: "A client's mood lifts after stress coaching. What is the trap?",
-            options: ["Concluding you treat mood, should market it, and may take the next diagnosis","Attributing improvement to coaching when it may have resolved alone","Failing to document it for a clinician's later use","Continuing past the point the goal was achieved"],
+            options: ["Concluding you treat mood, should market it, and may take the next diagnosis","Attributing the improvement to coaching when it may well have resolved on its own anyway","Failing to document the improvement in detail for a clinician who may later need the history","Continuing the coaching past the point where the client's stated goal was already achieved"],
             correctIndex: 0,
             explanation: "Nothing improper happened, and it is common because behaviour change affects mood. One person's improvement is not an indication.",
             sourceLessonSlug: "the-gray-zones",
           },
           {
             prompt: "What is a 'condition-named service'?",
-            options: ["Marketing coaching by a diagnosis, implying treatment and attracting clients who need care","A service designed for a clinical population under supervision","A service named for its outcome rather than its method","An offering restricted to clients with one diagnosis"],
+            options: ["Marketing coaching by a diagnosis, implying treatment","A service designed for a clinical population under a clinician's supervision","A service named for the outcome it promises rather than the method it uses","An offering restricted to clients who hold one particular diagnosis"],
             correctIndex: 0,
             explanation: "The name does the harm before any session happens, by shaping who buys it and what they think they are buying.",
             sourceLessonSlug: "the-gray-zones",
           },
           {
             prompt: "What is 'symptom relief versus goal pursuit'?",
-            options: ["The orientation difference that separates treatment from coaching in a transcript","Short-term versus long-term outcomes in an engagement","What a client asks for versus what they need","Addressing a problem versus building toward a positive"],
+            options: ["The orientation difference that separates treatment from coaching in a transcript","The distinction between short-term and long-term outcomes across the length of a coaching engagement","The gap between what a client asks for in a session and what they actually need from the coaching","Addressing a problem versus building toward a positive"],
             correctIndex: 0,
             explanation: "It is the first of the three practical questions, and the one that shows up most clearly if someone else reads the session.",
             sourceLessonSlug: "the-gray-zones",
           },
           {
             prompt: "Which is the clearest out-of-scope act on this pillar?",
-            options: ["Working through childhood experiences to resolve present anxiety","Asking what the dread before a Monday is made of","Teaching a breathing practice to a wound-up client","Helping a client articulate what matters and align behaviour"],
+            options: ["Working through childhood experiences to resolve present anxiety","Asking what the dread before a Monday is made of","Teaching a paced-breathing practice to a client who reports feeling wound up before work","Helping a client articulate what matters to them and align their weekly behavior with it"],
             correctIndex: 0,
             explanation: "Excavating the past to remediate a condition fails all three practical-test questions at once.",
             sourceLessonSlug: "the-gray-zones",
@@ -519,35 +519,35 @@ export const WELL_MENTAL_WELLBEING_COURSE: AuthoredCourse = {
           },
           {
             prompt: "Why is this pillar worth doing despite the boundary risk?",
-            options: ["Stress, mood, and connection are where most adherence failures originate","Clients request this work more than the physical pillars","It has the strongest randomized evidence in the program","It is the only pillar addressing multi-decade outcomes"],
+            options: ["Stress, mood, and connection are where most adherence failures originate","Clients request this work far more often than they request work on the physical pillars","It has the strongest base of randomized controlled trials of any pillar in the program","It is the only pillar in the program addressing outcomes that matter over a multi-decade horizon"],
             correctIndex: 0,
             explanation: "The client who cannot sustain the walking habit is usually not short of information about walking.",
             sourceLessonSlug: "the-hardest-boundary",
           },
           {
             prompt: "What is the honesty commitment specific to this course?",
-            options: ["The mindfulness literature is the most oversold evidence a wellness coach will meet","Mental-health claims carry legal exposure requiring citation","Clients here are unusually vulnerable to overclaiming","The evidence is weaker here, so claims are provisional"],
+            options: ["The mindfulness literature is the most oversold evidence a wellness coach will meet","Mental-health claims carry legal exposure, so every statement a coach makes must be citable to a trial","Clients on this pillar are unusually vulnerable to overclaiming by practitioners and marketers","The evidence is weaker here, so claims are provisional"],
             correctIndex: 0,
             explanation: "A coach repeating inflated mindfulness claims loses the credibility they need for the parts that genuinely hold up.",
             sourceLessonSlug: "the-hardest-boundary",
           },
           {
             prompt: "State the functional test as this pillar depends on it.",
-            options: ["If a licensing board read a transcript, what would they see me doing?","Would a reasonable client understand this as coaching?","Does my certification's scope explicitly permit this?","Have I documented consent to work in this territory?"],
+            options: ["If a licensing board read a transcript, what would they see me doing?","Would a reasonable client understand this session as coaching rather than as therapy?","Does my certification body's published scope document explicitly permit this activity?","Have I documented the client's written consent to work in this emotional territory?"],
             correctIndex: 0,
             explanation: "Deep emotional processing labeled coaching can be assessed as psychotherapy practice. The question is never what you call it.",
             sourceLessonSlug: "the-gray-zones",
           },
           {
             prompt: "What may a coach share with a client about mindfulness techniques?",
-            options: ["Teach them as self-regulation tools to a non-clinical client","Deliver a structured programme as treatment for a diagnosis","Adapt a clinical protocol for a coaching format","Deliver them only where a clinician has approved"],
+            options: ["Teach them as self-regulation tools to a non-clinical client","Deliver a structured eight-week program as treatment for a client's diagnosed disorder","Adapt a clinical protocol for a coaching format","Deliver them only where a clinician has approved"],
             correctIndex: 0,
             explanation: "The technique is identical to the clinical version, which is why population, framing, and claim have to carry the distinction.",
             sourceLessonSlug: "what-a-coach-may-do",
           },
           {
             prompt: "A prospective client wants anxiety coaching while awaiting therapy. What do you do?",
-            options: ["Offer what is genuinely yours, say it is not treatment, keep the appointment","Decline, since working with someone awaiting therapy risks substituting","Accept as described, since clinical care is already arranged","Offer a reduced-scope version until therapy begins"],
+            options: ["Offer what is genuinely yours, say it is not treatment, keep the appointment","Decline outright, since working with someone who is awaiting therapy risks substituting for it","Accept the work as described, since appropriate clinical care is already arranged for them","Offer a reduced-scope version until therapy begins"],
             correctIndex: 0,
             explanation: "Do not sell a service named for their condition and do not become the substitute for care they are queued for.",
             sourceLessonSlug: "the-gray-zones",
@@ -749,7 +749,7 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
           {
             prompt: "Restricting to trials with ACTIVE controls, Goyal and colleagues found that meditation programmes were:",
             options: [
-              "Not shown to be better than any active treatment including drugs, exercise, and other behavioral therapies",
+              "Not shown to be better than any active treatment",
               "Superior to every active comparator tested across all measured outcomes",
               "Inferior to every active comparator, with harm signals in several trials",
               "Untestable, because too few active-controlled trials existed to pool",
@@ -776,9 +776,9 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
             prompt: "A client dislikes meditation and asks whether they have to do it. The evidence-based answer is:",
             options: [
               "No, because other active approaches have not been shown to be worse, so pick what they will practise",
-              "Yes, because mindfulness is the only intervention with high-confidence evidence",
+              "Yes, because mindfulness is the only intervention with high-confidence evidence, so skipping it means accepting a weaker option",
               "Yes, but only ten minutes daily rather than the standard programme dose",
-              "No, because mindfulness has been shown to be ineffective in every population",
+              "No, because mindfulness has been shown to be ineffective in every population studied, including the community adults in the pooled trials",
             ],
             correctIndex: 0,
             explanation:
@@ -789,9 +789,9 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
             prompt: "Why does this course still recommend offering mindfulness?",
             options: [
               "Zero cost, no equipment, negligible risk, a real effect versus nothing, and it is a durable skill",
-              "Because its effect size exceeds every other intervention in the program",
+              "Because its pooled effect size exceeds that of every other intervention in the program, exercise and sleep work included",
               "Because coaching bodies require mindfulness instruction in every engagement",
-              "Because it substitutes effectively for therapy in clients awaiting treatment",
+              "Because it substitutes effectively for therapy in clients awaiting treatment, which keeps them engaged until a slot opens",
             ],
             correctIndex: 0,
             explanation:
@@ -879,7 +879,7 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
           {
             prompt: "What showed MODERATE evidence of improvement in Goyal?",
             options: [
-              "Anxiety (0.38 at eight weeks, 0.22 at three to six months), depression (0.30, 0.23), and pain (0.33)",
+              "Anxiety, depression, and pain, at about 0.22 to 0.38",
               "Stress, distress, and mental-health-related quality of life, at similar magnitudes",
               "Positive mood, attention, and sleep, each at small but consistent effect sizes",
               "Anxiety and depression only, with pain showing insufficient evidence",
@@ -947,7 +947,7 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
               "A graded judgment separate from effect size: bias risk, precision, directness, consistency",
               "The magnitude of the pooled effect across the included trials",
               "The number of trials contributing to a given outcome's estimate",
-              "The statistical significance of the pooled result for each outcome",
+              "The statistical significance of the pooled result for each outcome, judged at the conventional 0.05 threshold",
             ],
             correctIndex: 0,
             explanation:
@@ -983,7 +983,7 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
           {
             prompt: "How did Britton and colleagues measure meditation-related side effects?",
             options: [
-              "A 44-item structured interview administered by an independent assessor to 96 people",
+              "A 44-item structured interview by an independent assessor",
               "A self-report questionnaire completed by 96 people at programme end",
               "Spontaneous adverse-event reports collected across 13 randomized trials",
               "A clinical interview conducted by the programme instructors themselves",
@@ -1009,9 +1009,9 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
           {
             prompt: "What proportion had LASTING bad effects, and what were they associated with?",
             options: [
-              "6 to 14 percent, associated with signs of dysregulated arousal: hyperarousal and dissociation",
+              "6 to 14 percent, tied to hyperarousal and dissociation",
               "37 percent, associated with pre-existing anxiety and depressive symptoms",
-              "58 percent, associated with longer daily practice durations",
+              "58 percent, associated with longer daily practice durations and retreat attendance",
               "83 percent, associated with the structured nature of the eight-week programme",
             ],
             correctIndex: 0,
@@ -1116,7 +1116,7 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
               "That a wandering attention IS the practice, not a failure of it; it prevents the week-two quit",
               "That benefits accumulate slowly; it prevents disappointment at the first month",
               "That difficult experiences can occur; it prevents alarm if they do",
-              "That mindfulness is no better than exercise; it prevents unrealistic expectations",
+              "That mindfulness is no better than exercise for most outcomes; it prevents unrealistic expectations about the practice",
             ],
             correctIndex: 0,
             explanation:
@@ -1139,7 +1139,7 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
           {
             prompt: "What is 'expectation setting' in this lesson's sense?",
             options: [
-              "Stating an honest effect size in advance, which protects retention better than enthusiasm",
+              "Stating an honest effect size in advance",
               "Agreeing measurable outcomes with the client before the practice begins",
               "Describing what the client should notice during a session of practice",
               "Establishing how long the client will trial the practice before reviewing it",
@@ -1154,7 +1154,7 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
             options: [
               "They measure different comparisons: against passive controls, and against other real interventions",
               "The first is more recent and higher quality, so it supersedes the second",
-              "The first measured distress and the second measured anxiety, so they do not overlap",
+              "The first measured distress and the second measured anxiety and depression, so the two findings do not overlap at all",
               "The first included non-clinical settings only, so it does not generalize",
             ],
             correctIndex: 0,
@@ -1166,8 +1166,8 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
             prompt: "A client reports feeling agitated and detached after two weeks of daily meditation. What does lesson 6 direct?",
             options: [
               "Treat hyperarousal and dissociation as stop signals, and route to lesson 3's functional test",
-              "Reassure them that difficult experiences are a normal part of deepening practice",
-              "Reduce the daily dose and continue, monitoring whether the symptoms resolve",
+              "Reassure them that difficult experiences are a normal part of deepening practice and encourage them to continue daily",
+              "Reduce the daily dose and continue, monitoring over the next two weeks whether the symptoms resolve on their own",
               "Switch them to a guided rather than silent practice to reduce the intensity",
             ],
             correctIndex: 0,
@@ -1190,28 +1190,28 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
           },
           {
             prompt: "What is a 'passive control'?",
-            options: ["A group receiving nothing, leaving expectation and attention inside the effect","A group receiving a reduced dose of the intervention","A group receiving the intervention after the trial","A group measured without researcher contact"],
+            options: ["A group receiving nothing, leaving expectation and attention inside the effect","A comparison group receiving a reduced dose of the same intervention over the same weeks","A group receiving the intervention after the trial","A group whose outcomes are measured without any contact from the researchers at any point"],
             correctIndex: 0,
             explanation: "The same point WELL-04's control-group lesson made: a waitlist controls for time and little else.",
             sourceLessonSlug: "mindfulness-vs-passive",
           },
           {
             prompt: "What is 'effect modification', and what happened when Galante tested it?",
-            options: ["Whether an intervention works differently for different people; no clear modification found","Whether an effect changes over time; it decayed by six months","Whether the effect differs by trial quality; higher-quality trials showed more","Whether the outcome measure changes the estimate; it did substantially"],
+            options: ["Whether an intervention works differently for different people; no clear modification found","Whether an effect changes over time; it decayed by six months","Whether the effect differs by trial quality; the higher-quality, pre-registered trials showed larger benefits","Whether the choice of outcome measure changes the estimate; it did, substantially, across the pooled trials"],
             correctIndex: 0,
             explanation: "Baseline distress, gender, age, education, and dispositional mindfulness were all tested.",
             sourceLessonSlug: "mindfulness-vs-passive",
           },
           {
             prompt: "What is 'psychological distress' as the primary outcome?",
-            options: ["The composite of unpleasant mental and emotional experience, including anxiety and depression","A validated diagnostic threshold for common mental disorders","Self-reported stress specifically, excluding mood symptoms","The clinician-rated severity of a presenting complaint"],
+            options: ["The composite of unpleasant mental and emotional experience, including anxiety and depression","A validated diagnostic threshold for common mental disorders, applied by a trained interviewer at intake","Self-reported stress specifically, excluding mood symptoms","The clinician-rated severity of a presenting complaint"],
             correctIndex: 0,
             explanation: "A composite, which is why it can move in a non-clinical population without anyone having a diagnosis.",
             sourceLessonSlug: "mindfulness-vs-passive",
           },
           {
             prompt: "What did Goyal find at moderate evidence, and at what magnitudes?",
-            options: ["Anxiety 0.38 falling to 0.22, depression 0.30 falling to 0.23, pain 0.33","Anxiety 0.30, depression 0.38, pain 0.22, all sustained","Stress 0.38, distress 0.30, quality of life 0.33","Anxiety and depression only, both at 0.33"],
+            options: ["Anxiety 0.38 falling to 0.22, depression 0.30 falling to 0.23, pain 0.33","Anxiety 0.30, depression 0.38, pain 0.22, all sustained at the three-to-six-month follow-up","Stress 0.38, distress 0.30, and mental-health quality of life 0.33, at both time points","Anxiety and depression only, both at 0.33, with pain showing insufficient evidence"],
             correctIndex: 0,
             explanation: "Stress, distress, and mental-health-related quality of life showed LOW evidence of improvement, a separate and weaker category.",
             sourceLessonSlug: "mindfulness-vs-active",
@@ -1225,49 +1225,49 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
           },
           {
             prompt: "What did Goyal find for positive mood, attention, substance use, eating, sleep, and weight?",
-            options: ["Low evidence of no effect, or insufficient evidence of any effect","Moderate evidence of small improvements across all six","Low evidence of improvement at magnitudes below anxiety","These outcomes were not assessed"],
+            options: ["Low evidence of no effect, or insufficient evidence of any effect","Moderate evidence of small improvements across all six outcomes at eight weeks","Low evidence of improvement, at magnitudes below those reported for anxiety","These outcomes were never assessed in any of the included randomized trials"],
             correctIndex: 0,
             explanation: "Two different verdicts, both negative. Neither supports recommending mindfulness for those outcomes.",
             sourceLessonSlug: "mindfulness-vs-active",
           },
           {
             prompt: "What is 'strength of evidence' as distinct from effect size?",
-            options: ["A graded judgment on bias risk, precision, directness, and consistency","The magnitude of the pooled effect","The number of trials contributing an estimate","The statistical significance of the result"],
+            options: ["A graded judgment on bias risk, precision, directness, and consistency","The magnitude of the pooled effect","The number of trials contributing an estimate for each outcome, weighted by sample size","The statistical significance of the result"],
             correctIndex: 0,
             explanation: "Independent of how big the effect is, which is why 0.33 can carry moderate evidence while another outcome carries none.",
             sourceLessonSlug: "mindfulness-vs-active",
           },
           {
             prompt: "What is 'practise-ability', and why does it decide?",
-            options: ["The one someone sustains beats the one they abandon, when options are equivalent","How easily a technique can be taught in one session","The proportion of clients completing a full course","Whether a practice needs equipment or supervision"],
+            options: ["The one someone sustains beats the one they abandon, when options are equivalent","How easily a technique can be taught to a brand-new client within a single coaching session","The proportion of clients completing a full course","Whether a practice can be done without any equipment, a trained teacher, or clinical supervision"],
             correctIndex: 0,
             explanation: "It decides precisely because the active-controlled evidence found the options roughly equivalent. If nothing is better, sustainability decides.",
             sourceLessonSlug: "mindfulness-vs-active",
           },
           {
             prompt: "How did Britton's team measure side effects?",
-            options: ["A 44-item structured interview by an independent assessor, in 96 people","A self-report questionnaire at programme end","Spontaneous adverse-event reports across 13 trials","A clinical interview by the programme instructors"],
+            options: ["A 44-item structured interview by an independent assessor, in 96 people","A self-report questionnaire that 96 participants completed at the end of the program","Spontaneous adverse-event reports pooled across 13 randomized trials of meditation","A clinical interview conducted by the program's own meditation instructors at follow-up"],
             correctIndex: 0,
             explanation: "The Meditation Experiences Interview, after an eight-week MBCT programme. The method matters enormously to the rates.",
             sourceLessonSlug: "offering-it-anyway",
           },
           {
             prompt: "What proportion had lasting bad effects, and what were they tied to?",
-            options: ["6 to 14 percent, tied to hyperarousal and dissociation","37 percent, tied to pre-existing anxiety","58 percent, tied to longer daily practice","83 percent, tied to the programme's structure"],
+            options: ["6 to 14 percent, tied to hyperarousal and dissociation","37 percent, tied to pre-existing anxiety","58 percent, tied to longer daily practice","83 percent, tied to the structured nature of the eight-week program"],
             correctIndex: 0,
             explanation: "The narrowest and most serious category, and those two signs are what the lesson names as stop-and-route signals.",
             sourceLessonSlug: "offering-it-anyway",
           },
           {
             prompt: "What two qualifiers must attach to the Britton figures?",
-            options: ["An eight-week clinical programme in 96 people, and rates depend on a 44-item instrument","A single site, and an unusually distressed sample","Self-report only, and assessment at programme end alone","Side effects rather than adverse events, which differ"],
+            options: ["An eight-week clinical programme in 96 people, and rates depend on a 44-item instrument","A single site, and an unusually distressed sample","Self-report only, and the assessment took place once at program end rather than at any later follow-up","Side effects rather than adverse events, which differ"],
             correctIndex: 0,
             explanation: "Not a prevalence estimate for someone doing five minutes on a phone app. What it establishes is that the honest floor is not zero.",
             sourceLessonSlug: "offering-it-anyway",
           },
           {
             prompt: "What is 'structured elicitation'?",
-            options: ["Measuring adverse effects by asking every item rather than awaiting spontaneous report","Delivering an intervention to a fixed protocol","Interviewing at predetermined intervals","Using validated instruments rather than open questions"],
+            options: ["Measuring adverse effects by asking every item rather than awaiting spontaneous report","Delivering an intervention to a fixed, manualized protocol so every participant receives the same sessions","Interviewing at predetermined intervals","Using validated, published instruments rather than open-ended questions to assess every trial outcome"],
             correctIndex: 0,
             explanation: "It is why these rates look higher than the field assumed, and why the coaching instruction is to ask rather than wait.",
             sourceLessonSlug: "offering-it-anyway",
@@ -1281,21 +1281,21 @@ Britton, W. B., Lindahl, J. R., Cooper, D. J., Canby, N. K., & Palitsky, R. (202
           },
           {
             prompt: "What does the course say about mindfulness dose?",
-            options: ["Evidence is mixed, so no minute-count is given; use the habit rules","Ten minutes daily is the established minimum effective dose","Longer practice reliably buys more, so dose should rise","Dose is irrelevant if timing is consistent"],
+            options: ["Evidence is mixed, so no minute-count is given; use the habit rules","Ten minutes daily is the minimum effective dose established across the pooled trials","Longer practice reliably buys more benefit, so the daily dose should rise over time","Dose is irrelevant provided the practice happens at the same consistent time each day"],
             correctIndex: 0,
             explanation: "Pick a dose the client will repeat, anchor it, define the minimum, pre-negotiate the miss. Inventing a minute-count is what the dossier rule forbids.",
             sourceLessonSlug: "offering-it-anyway",
           },
           {
             prompt: "What separates teaching mindfulness as a skill from delivering it as treatment?",
-            options: ["The population, the framing, and the claim; not the technique","The duration and whether it follows a manual","Whether the coach has teacher training","Whether the client has a diagnosed condition"],
+            options: ["The population, the framing, and the claim; not the technique","The duration and whether it follows a manual","Whether the coach has completed a formal mindfulness teacher-training certification","Whether the client has a diagnosed condition"],
             correctIndex: 0,
             explanation: "The technique is identical, which is precisely why the other three factors have to carry the distinction.",
             sourceLessonSlug: "offering-it-anyway",
           },
           {
             prompt: "A client reports agitation and detachment after two weeks of daily meditation.",
-            options: ["Treat hyperarousal and dissociation as stop signals; route to the functional test","Reassure them difficult experiences accompany deepening practice","Reduce the dose and continue, monitoring for resolution","Switch to guided rather than silent practice"],
+            options: ["Treat hyperarousal and dissociation as stop signals; route to the functional test","Reassure them that difficult experiences are a normal part of deepening practice, and continue","Reduce the daily dose and continue, monitoring whether the symptoms resolve over the next two weeks","Switch to guided rather than silent practice"],
             correctIndex: 0,
             explanation: "Those two signs were specifically associated with lasting bad effects, and they are not evidence the client is practising wrong.",
             sourceLessonSlug: "offering-it-anyway",
@@ -1408,7 +1408,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           {
             prompt: "The 2010 meta-analysis of 148 studies found that stronger social relationships carried:",
             options: [
-              "An odds ratio of 1.50 for survival, consistent across age, sex, and baseline health",
+              "An odds ratio of 1.50 for survival",
               "An odds ratio of 1.05, a small effect confined to older participants",
               "A benefit that disappeared after adjusting for baseline health status",
               "An effect present only in studies with follow-up beyond twenty years",
@@ -1434,7 +1434,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           {
             prompt: "How does this course state the magnitude of the social-connection finding?",
             options: [
-              "As comparable with well-established mortality risk factors, which is the authors' own framing",
+              "As comparable with well-established mortality risk factors",
               "As definitively greater than the mortality impact of smoking fifteen cigarettes daily",
               "As larger than any other modifiable risk factor yet identified in epidemiology",
               "As too small to justify addressing within a health-coaching engagement",
@@ -1500,9 +1500,9 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "The psychometric verdict on PERMA is that:",
             options: [
               "Its elements are heavily inter-correlated and largely reflect one general well-being factor",
-              "Its five elements are independently validated and separately manipulable",
+              "Its five elements are independently validated and separately manipulable, as the original model predicted",
               "The framework has been refuted and should not be used in coaching",
-              "It measures well-being more precisely than any alternative instrument",
+              "It measures well-being more precisely than any alternative instrument now used in applied positive psychology",
             ],
             correctIndex: 0,
             explanation:
@@ -1539,7 +1539,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "Which measure of social connection showed the STRONGEST association?",
             options: [
               "Complex measures of social integration, at odds ratio 1.91 (1.63 to 2.23)",
-              "Living alone versus with others, at odds ratio 1.19 (0.99 to 1.44)",
+              "Living alone versus with others, at odds ratio 1.19 (0.99 to 1.44), the strongest single indicator",
               "Self-reported loneliness, at odds ratio 1.50 (1.42 to 1.59)",
               "Frequency of contact with family members, at odds ratio 1.91",
             ],
@@ -1577,7 +1577,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           {
             prompt: "Why does this finding belong in a health-coaching program?",
             options: [
-              "Entirely coachable, no license needed, costs nothing, and outside what a trainer would ever address",
+              "Entirely coachable, needs no license, costs nothing",
               "It is the only mortality finding with randomized evidence behind it",
               "Clients raise it more often than any other concern in coaching sessions",
               "It is the finding certifying bodies weight most heavily in their content outlines",
@@ -1630,8 +1630,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What did the age finding show, and why does it matter here?",
             options: [
               "Social deficits were MORE predictive in samples averaging under 65; mid-life is where coaching lands hardest",
-              "Social deficits were more predictive in older samples, confirming this is an ageing concern",
-              "Age did not modify the association, so the finding applies equally across the lifespan",
+              "Social deficits were more predictive in older samples, confirming that connection is mainly a concern for retirement-age clients",
+              "Age did not modify the association, so the finding applies equally across the lifespan, from young adults through to the very old",
               "The association strengthened progressively with age across all included samples",
             ],
             correctIndex: 0,
@@ -1657,7 +1657,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             options: [
               "It is the strongest measure in the 2010 data and is simply a recurring thing with the same people",
               "It requires no initiative from the client beyond attending",
-              "It produces contact of higher quality than one-to-one relationships",
+              "It produces contact of higher quality than one-to-one relationships, which is why the 2010 data ranked it first",
               "It substitutes for close relationships when those are unavailable",
             ],
             correctIndex: 0,
@@ -1668,10 +1668,10 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           {
             prompt: "What is NOT coachable in this domain?",
             options: [
-              "Loneliness with hopelessness, worthlessness, or withdrawal from previously valued activity",
+              "Loneliness with hopelessness, worthlessness, or withdrawal",
               "Loneliness that has persisted for more than six months without improvement",
-              "Loneliness in clients who live alone and have no local family",
-              "Loneliness reported by clients currently in psychotherapy elsewhere",
+              "Loneliness in clients who live alone and have no family living nearby to call on",
+              "Loneliness reported by clients who are currently in psychotherapy with someone else",
             ],
             correctIndex: 0,
             explanation:
@@ -1682,8 +1682,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "A client has a packed social calendar and feels profoundly unseen. Is that a smaller problem than isolation?",
             options: [
               "No; objective and subjective measures carried comparable risk in the 2015 analysis",
-              "Yes; objective isolation carries measurably higher mortality risk",
-              "It cannot be judged without assessing the quality of their relationships",
+              "Yes; objective isolation carries measurably higher mortality risk than the feeling of being unseen",
+              "It cannot be judged without first formally assessing the quality of each of their close relationships",
               "Yes, unless the feeling persists for more than three months",
             ],
             correctIndex: 0,
@@ -1694,7 +1694,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           {
             prompt: "What is 'confound-adjusted'?",
             options: [
-              "Effect estimates calculated after statistically controlling for baseline health, age, and socioeconomic status",
+              "Estimates after statistically controlling for confounders",
               "Estimates from studies that randomized participants, removing confounding by design",
               "Estimates restricted to studies where confounders were measured but not adjusted",
               "Estimates recalculated after excluding participants with pre-existing conditions",
@@ -1736,7 +1736,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
               "The elements are heavily inter-correlated and load substantially on a single general well-being factor",
               "The five elements separate cleanly, supporting the model's structure",
               "Three of the five elements are distinguishable and two are not",
-              "The factor structure varies by country, preventing any general conclusion",
+              "The factor structure varies so much by country and language that no general conclusion about PERMA can be drawn",
             ],
             correctIndex: 0,
             explanation:
@@ -1746,7 +1746,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           {
             prompt: "What is the honest verdict on PERMA?",
             options: [
-              "A good map and a contested theory: use it as conversational structure, not as validated architecture",
+              "A good map and a contested theory",
               "A validated framework whose questionnaire should be administered at intake",
               "A discredited model that should be replaced by better-evidenced alternatives",
               "A theoretical framework with no practical application in coaching contexts",
@@ -1787,8 +1787,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             options: [
               "A single underlying dimension explaining much of the shared variance across subscales",
               "The average score across all five PERMA subscales combined",
-              "A factor common to all well-being questionnaires regardless of model",
-              "The proportion of variance a model explains in an outcome measure",
+              "A factor common to all well-being questionnaires regardless of the model they were built to measure",
+              "The proportion of variance a model explains in an outcome measure, reported as an R-squared value",
             ],
             correctIndex: 0,
             explanation:
@@ -1798,7 +1798,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           {
             prompt: "What is 'descriptive vocabulary versus causal model'?",
             options: [
-              "Language that helps a conversation, versus a validated account of how parts produce the whole",
+              "Conversational language versus a validated causal account",
               "Terminology used with clients, versus terminology used between professionals",
               "A framework's observable elements, versus the mechanisms connecting them",
               "Qualitative description of a client's state, versus quantitative measurement of it",
@@ -1838,7 +1838,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "A client asks whether they should worry about connection now or later in life. What does the evidence support?",
             options: [
               "Now: social deficits were more predictive of death in samples averaging under 65",
-              "Later: the association strengthens with age as networks naturally contract",
+              "Later: the association strengthens with age as networks naturally contract after retirement and bereavement",
               "Neither; the association was constant across age groups studied",
               "Now, but only for clients who already live alone",
             ],
@@ -1878,7 +1878,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             options: [
               "The subjective experience of unwanted disconnection, carrying risk comparable to objective isolation",
               "A milder form of social isolation, carrying proportionally lower risk",
-              "Isolation accompanied by distress, which is what makes it clinically relevant",
+              "Isolation accompanied by distress, which is what makes it clinically relevant and outside the scope of coaching",
               "The absence of close relationships, as distinct from the absence of contact",
             ],
             correctIndex: 0,
@@ -1890,9 +1890,9 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "Which is the better opening question about a client's social life?",
             options: [
               "'Who do you see in a normal week, and in what capacities?'",
-              "'Do you live alone, or with other people?'",
+              "'Do you live alone at the moment, or do you share your home with other people?'",
               "'How often do you feel lonely?'",
-              "'How many close friends would you say you have?'",
+              "'How many close friends would you say you have that you could call at 2 a.m.?'",
             ],
             correctIndex: 0,
             explanation:
@@ -1901,7 +1901,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           },
           {
             prompt: "What is 'social integration' as this course defines it?",
-            options: ["The complexity of a social life across roles, memberships, and contact types","How strongly a person feels they belong in their community","The number of people someone has regular contact with","How much a person's relationships overlap"],
+            options: ["The complexity of a social life across roles, memberships, and contact types","How strongly a person feels that they belong in their local community and neighborhood","The total number of different people someone has regular contact with in an average week","How much a person's relationships overlap with one another, as in a tightly knit circle"],
             correctIndex: 0,
             explanation: "Complexity, not quantity or feeling. It is the measure most strongly associated with survival, at 1.91.",
             sourceLessonSlug: "social-relationships-and-survival",
@@ -1915,14 +1915,14 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           },
           {
             prompt: "What is 'confound-adjusted'?",
-            options: ["Estimates calculated after statistically controlling for baseline health, age, and status","Estimates from randomized studies where design removes confounding","Estimates from studies measuring but not adjusting for confounders","Estimates excluding participants with pre-existing conditions"],
+            options: ["Estimates calculated after statistically controlling for baseline health, age, and status","Estimates drawn only from randomized studies, where the design itself removes confounding before any analysis","Estimates from studies measuring but not adjusting for confounders","Estimates excluding participants with pre-existing conditions"],
             correctIndex: 0,
             explanation: "Statistical control rather than randomization, which is why the 2015 figures are lower than the 2010 headline.",
             sourceLessonSlug: "isolation-and-loneliness",
           },
           {
             prompt: "What is a 'general factor' in the PERMA critique?",
-            options: ["A single underlying dimension explaining much of the shared variance across subscales","The average score across all five subscales","A factor common to all well-being questionnaires","The variance a model explains in an outcome"],
+            options: ["A single underlying dimension explaining much of the shared variance across subscales","The average score across all five PERMA subscales, weighted by the number of items each subscale contains","A factor common to all well-being questionnaires, whatever theoretical model they were built to measure","The variance a model explains in an outcome"],
             correctIndex: 0,
             explanation: "It is what PERMA's subscales largely reflect, which is the psychometric finding qualifying the five-pillars claim.",
             sourceLessonSlug: "perma-as-vocabulary",
@@ -2058,7 +2058,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
               "It is not a reason to avoid the question; crisis-support practice is built on asking clearly",
               "It is well founded, which is why the question should be asked only by clinicians",
               "It applies to indirect questions but not to direct ones",
-              "It is why the question should be asked only when other signs are present",
+              "It is why the question should be asked only when other warning signs are present, such as giving away possessions",
             ],
             correctIndex: 0,
             explanation:
@@ -2082,8 +2082,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What does the coach seek to understand?",
             options: [
               "What is happening, how long, are they thinking about acting, is there a plan, is there access to means",
-              "Whether the client has a psychiatric diagnosis and is currently in treatment",
-              "What triggered the current episode and how it relates to their coaching goals",
+              "Whether the client has a psychiatric diagnosis and is currently in treatment, so that the coach can judge the severity of what is happening",
+              "What triggered the current episode and how it relates to their coaching goals, so the plan can be adjusted around it",
               "Whether the client has disclosed this to anyone else previously",
             ],
             correctIndex: 0,
@@ -2095,7 +2095,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What is the 988 Suicide and Crisis Lifeline, and what does it offer?",
             options: [
               "The US crisis resource by call, text, or chat, with Deaf and Hard of Hearing and Spanish-language services",
-              "A US referral line that connects callers to local mental-health providers during business hours",
+              "A US referral line that connects callers with local mental-health providers, open during weekday business hours only, by phone",
               "A national helpline available by telephone only, with 24-hour clinician staffing",
               "An emergency dispatch service that sends responders to the caller's location",
             ],
@@ -2109,8 +2109,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             options: [
               "Look up their jurisdiction's line now, before it is needed, and publish it in their materials",
               "Use 988 as a fallback, since it accepts international contacts",
-              "Direct clients to emergency services, since crisis lines vary by country",
-              "Ask the client to identify their local resource during the conversation",
+              "Direct clients to emergency services instead, since crisis lines vary too much by country to recommend one",
+              "Ask the client to identify their local resource during the conversation, since they know their area best",
             ],
             correctIndex: 0,
             explanation:
@@ -2121,7 +2121,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What does 'least invasive first' mean here, and what overrides it?",
             options: [
               "Support the person to secure their own safety; emergency services escalate when risk is imminent and they cannot act",
-              "Try the crisis line before contacting anyone else; emergency services follow if the line is unavailable",
+              "Try the crisis line before contacting anyone else at all; emergency services follow only if the line is busy or unavailable at the time",
               "Avoid involving others without consent; consent is overridden only by a clinician's instruction",
               "Begin with the least alarming intervention; escalate only if the client requests it",
             ],
@@ -2147,8 +2147,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What belongs in intake materials, and why?",
             options: [
               "That you are not an emergency service and what to do in crisis; it makes the later conversation possible",
-              "A list of local mental-health providers the client can contact independently",
-              "A clause requiring disclosure of any psychiatric history before coaching begins",
+              "A list of local mental-health providers the client can contact independently, so the coach never has to make a referral",
+              "A clause requiring disclosure of any psychiatric history before coaching begins, so risk can be screened at the door",
               "A waiver limiting the coach's liability in the event of a crisis",
             ],
             correctIndex: 0,
@@ -2161,7 +2161,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             options: [
               "What you observed, the client's own words as closely as recalled, what you did, who you contacted, what was agreed",
               "Your assessment of the client's risk level and the reasoning behind it",
-              "A summary of the session with the disclosure noted as a significant event",
+              "A full narrative summary of the session with the disclosure noted as a significant event, plus your own assessment of the client's risk",
               "The client's account of events, reviewed and approved by them afterwards",
             ],
             correctIndex: 0,
@@ -2226,8 +2226,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             options: [
               "Be clear they have not damaged the relationship, and equally clear the clinical work belongs elsewhere",
               "Maintain contact while declining to discuss the disclosure further",
-              "Continue coaching while the clinician manages the clinical presentation",
-              "Keep the client engaged until a clinician has formally accepted the referral",
+              "Continue coaching on the original goals while the clinician manages the clinical presentation in parallel sessions",
+              "Keep the client engaged in regular coaching sessions until a clinician has formally accepted the referral in writing",
             ],
             correctIndex: 0,
             explanation:
@@ -2251,7 +2251,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What is 'professional infrastructure' on this pillar?",
             options: [
               "Supervision, peer consultation, or your own therapy, which let a coach keep doing this work well",
-              "The referral network and documentation systems a coaching practice requires",
+              "The referral network and documentation systems a coaching practice requires before it accepts any emotional-domain clients",
               "The insurance and legal protections appropriate to emotional-domain work",
               "The written policies governing crisis response and client communication",
             ],
@@ -2316,9 +2316,9 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "Which signals mark the moment it stops being coaching?",
             options: [
               "The same material returning unresolved, feeling disproportionate to the goal, a client asking for treatment",
-              "Any display of strong emotion during a session, regardless of context",
+              "Any display of strong emotion during a session, regardless of context, since tears or anger always signal a clinical need",
               "The client's reluctance to return to the session's original agenda",
-              "The coach's own discomfort with the direction the conversation is taking",
+              "The coach's own discomfort with the direction the conversation is taking, which is the most reliable early-warning signal",
             ],
             correctIndex: 0,
             explanation:
@@ -2343,7 +2343,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             options: [
               "The movement, eating, and sleep plans all run through a person, and a coach who cannot be present is coaching a spreadsheet",
               "It allows a coach to work with clients who have mental-health histories",
-              "It is what distinguishes a wellness coach from a personal trainer professionally",
+              "It is what professionally distinguishes a wellness coach from a personal trainer, and it is the main competency every certification exam weights",
               "It enables the coach to identify clients requiring referral more accurately",
             ],
             correctIndex: 0,
@@ -2355,8 +2355,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "A client discloses suicidal thoughts, connects with 988 in session, and emails two days later asking to resume nutrition goals. What do you do?",
             options: [
               "Confirm they are connected to ongoing care, not just that one call, and make resumption conditional on it",
-              "Resume as requested, since the crisis was handled and the client is asking",
-              "Decline to continue, since the disclosure has moved the work outside your scope",
+              "Resume as requested, since the crisis was handled in session through 988 and the client is the one asking to continue",
+              "Decline to continue for good, since the disclosure has permanently moved all further work with this client outside your scope",
               "Resume, but shift the focus to stress and sleep rather than nutrition",
             ],
             correctIndex: 0,
@@ -2368,7 +2368,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What is 'conditional resumption'?",
             options: [
               "Restarting ordinary coaching only once the client is connected to appropriate care, and saying so explicitly",
-              "Resuming coaching with a reduced scope until the clinician confirms it is appropriate",
+              "Resuming coaching with a reduced scope, limited to sleep and movement, until the treating clinician confirms it is appropriate",
               "Restarting after a fixed interval agreed with the client at the time of disclosure",
               "Resuming only those goals the client raises themselves after the episode",
             ],
@@ -2381,8 +2381,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What is 'factual documentation'?",
             options: [
               "An objective record of observations, statements, actions, and referrals, excluding interpretation or diagnosis",
-              "A record signed by both coach and client confirming the account is accurate",
-              "Documentation using only the client's own words, without the coach's observations",
+              "A record signed by both coach and client confirming the account is accurate, kept in duplicate so each party holds a copy",
+              "Documentation using only the client's own words, verbatim, without any of the coach's observations, actions, or referrals",
               "A structured record following a standard clinical documentation format",
             ],
             correctIndex: 0,
@@ -2445,14 +2445,14 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           },
           {
             prompt: "What does the 988 Lifeline offer?",
-            options: ["Call, text, or chat, with Deaf and Hard of Hearing and Spanish-language services","Telephone contact only, staffed by clinicians 24 hours","Referral to local providers during business hours","Emergency dispatch to the caller's location"],
+            options: ["Call, text, or chat, with Deaf and Hard of Hearing and Spanish-language services","Telephone contact only, staffed by licensed clinicians 24 hours a day, every day of the year","Referral to local mental-health providers in the caller's area during weekday business hours","Emergency dispatch of police or paramedics to the caller's own location after every contact"],
             correctIndex: 0,
             explanation: "Knowing the modes matters because a client who will not call may text.",
             sourceLessonSlug: "the-crisis-conversation",
           },
           {
             prompt: "What should a coach outside the United States do?",
-            options: ["Look up their jurisdiction's line before it is needed and publish it","Use 988, which accepts international contacts","Direct clients to emergency services, since lines vary","Ask the client to find their local resource"],
+            options: ["Look up their jurisdiction's line before it is needed and publish it","Use 988 for every client, since the US line accepts international calls and texts","Direct clients to local emergency services, since crisis lines vary by country","Ask the client to find their local resource"],
             correctIndex: 0,
             explanation: "Do not rely on a number recited in a course. Looking it up mid-crisis is the failure this prevents.",
             sourceLessonSlug: "the-crisis-conversation",
@@ -2466,7 +2466,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           },
           {
             prompt: "What belongs in intake materials, and why?",
-            options: ["That you are not an emergency service and what to do in crisis; it makes the later conversation possible","A list of local providers the client can contact","A clause requiring disclosure of psychiatric history","A waiver limiting liability in a crisis"],
+            options: ["That you are not an emergency service and what to do in crisis; it makes the later conversation possible","A list of local providers the client can contact","A clause requiring disclosure of any psychiatric history before the first session, so that risk can be screened at the door","A waiver limiting liability in a crisis"],
             correctIndex: 0,
             explanation: "One paragraph, set at the start. Establishing the frame before a crisis is what lets the conversation happen at all.",
             sourceLessonSlug: "the-crisis-conversation",
@@ -2480,7 +2480,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           },
           {
             prompt: "What is 'conditional resumption'?",
-            options: ["Restarting coaching only once the client is connected to care, and saying so explicitly","Resuming with reduced scope until a clinician confirms","Restarting after a fixed agreed interval","Resuming only the goals the client raises themselves"],
+            options: ["Restarting coaching only once the client is connected to care, and saying so explicitly","Resuming with a reduced scope, limited to sleep and movement, until a treating clinician confirms it is appropriate","Restarting after a fixed agreed interval","Resuming only the goals the client raises themselves"],
             correctIndex: 0,
             explanation: "The 'saying so explicitly' half matters as much as the condition. A silent pause reads as withdrawal, which is the abandonment failure.",
             sourceLessonSlug: "after-the-crisis",
@@ -2508,7 +2508,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           },
           {
             prompt: "Why is the referral conversation easier mid-engagement than in a crisis?",
-            options: ["It is often the same conversation arriving earlier, with the client calm","A calm client accepts referral without feeling rejected","There is more time to find an appropriate provider","It avoids the documentation a crisis triggers"],
+            options: ["It is often the same conversation arriving earlier, with the client calm","A calm client always accepts a referral without feeling rejected or abandoned by the coach","There is more time to research and find an appropriate provider with a short waitlist","It avoids the documentation a crisis triggers"],
             correctIndex: 0,
             explanation: "Doing it while a client is calm and mid-engagement is far easier, and it is the same conversation you would otherwise have under pressure.",
             sourceLessonSlug: "emotion-in-ordinary-sessions",
@@ -2535,7 +2535,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           {
             prompt: "The practical coaching-versus-therapy distinction in an emotional moment is:",
             options: [
-              "Direction of travel: toward the client's goal, rather than into the origins of a symptom",
+              "Direction of travel: toward the client's goal",
               "Depth of feeling: coaching stops as soon as a client becomes tearful",
               "Session length: therapeutic work requires fifty-minute appointments",
               "Whether the coach has completed training in the technique being used",
@@ -2561,7 +2561,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
           {
             prompt: "Restricted to active-controlled trials, meditation programmes were found to be:",
             options: [
-              "Not better than any active treatment, including drugs, exercise, and other behavioral therapies",
+              "Not better than any active treatment",
               "Superior to medication but not to exercise across the pooled outcomes",
               "Superior to all comparators for sleep, weight, and attention outcomes",
               "Harmful relative to active comparators in a minority of trials",
@@ -2575,8 +2575,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "Taken together, the passive-control and active-control findings mean mindfulness is best described as:",
             options: [
               "A decent option among several, with real benefit versus nothing and no demonstrated superiority",
-              "The most effective psychosocial intervention currently available",
-              "An intervention with no evidence base worth mentioning to clients",
+              "The most effective psychosocial intervention currently available, outperforming exercise and medication alike",
+              "An intervention with no evidence base worth mentioning to clients, since the pooled effects vanish under scrutiny",
               "Effective only for people with prior meditation experience",
             ],
             correctIndex: 0,
@@ -2640,7 +2640,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "PERMA should be presented to a client as:",
             options: [
               "A useful vocabulary for finding neglected domains, not a validated five-pillar architecture",
-              "Five empirically independent components that can each be raised separately",
+              "Five empirically independent components that can each be measured and raised separately, as the model claims",
               "A measurement instrument that reveals more than a conversation would",
               "A refuted framework with no remaining use in coaching practice",
             ],
@@ -2666,8 +2666,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "The escalation ordering taught in this course is:",
             options: [
               "Least invasive first, escalating to emergency services when risk is imminent and the person cannot act safely",
-              "Emergency services immediately in every case where suicide is mentioned",
-              "Never involve emergency services, since that would breach confidentiality",
+              "Emergency services immediately in every case where suicide is mentioned, whatever the person says about their own safety or plans",
+              "Never involve emergency services at all, since that would breach the confidentiality a coaching agreement promises the client",
               "Refer to the client's own therapist and take no further action",
             ],
             correctIndex: 0,
@@ -2742,8 +2742,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What is 'holding a client', and why is it the quietest harm?",
             options: [
               "Retaining someone needing clinical care nobody is arranging; it feels good to both",
-              "Keeping a client past the point where coaching work has concluded",
-              "Taking responsibility for a client's emotional state between sessions",
+              "Keeping a client on past the point where the coaching work has concluded, to protect the coach's income",
+              "Taking on responsibility for a client's emotional state between sessions, including late-night messages",
               "Continuing with a client whose goals have stopped progressing",
             ],
             correctIndex: 0,
@@ -2754,9 +2754,9 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "Give the three-question practical version of the functional test.",
             options: [
               "Client goal or symptom relief? Present or past? Would it appear in a therapy manual?",
-              "Is the client in crisis? In treatment elsewhere? Have they consented?",
-              "Am I qualified? Is this in my certification? Would a colleague do the same?",
-              "Is the emotion proportionate? Recurring? Distressing to the client?",
+              "Is the client in crisis right now? Are they in treatment elsewhere? Have they consented in writing?",
+              "Am I qualified? Is this within my certification's scope? Would a colleague do the same in my place?",
+              "Is the emotion proportionate to the event? Is it recurring weekly? Is the client distressed by it?",
             ],
             correctIndex: 0,
             explanation: "Two answers pointing the wrong way means stop and refer, whatever the service is called.",
@@ -2790,7 +2790,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What did Galante test for effect modification, and find?",
             options: [
               "Baseline distress, gender, age, education, dispositional mindfulness; none modified it",
-              "Baseline distress and age; both modified the effect substantially",
+              "Baseline distress and age; both modified the effect substantially, with older and more distressed people gaining most",
               "Programme length and instructor experience; instructor experience modified it",
               "Gender and education only; neither modified the effect",
             ],
@@ -2814,9 +2814,9 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "How do the two mindfulness findings fit together?",
             options: [
               "Against nothing, a real modest effect; against anything else real, no shown advantage",
-              "They conflict, and the higher-quality IPD result supersedes the other",
+              "They conflict, and the higher-quality individual-participant-data result supersedes the older review entirely",
               "They address different outcomes, so they do not overlap",
-              "The older one is superseded by the newer in current practice",
+              "The older review is superseded by the newer one in current practice, since it pooled far fewer trials",
             ],
             correctIndex: 0,
             explanation: "Both true, not in conflict. They describe a decent psychosocial option rather than a superior one, which is the claim clients keep doing.",
@@ -2826,7 +2826,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What did Britton's structured interview find?",
             options: [
               "83 percent a side effect; 58 percent negative valence; 37 percent functional; 6-14 percent lasting",
-              "58 percent reported a side effect; 37 percent negative valence; 8-25 percent lasting",
+              "58 percent reported a side effect; 37 percent had negative valence; 8 to 25 percent reported lasting bad effects",
               "37 percent reported a side effect, with none lasting beyond a month",
               "83 percent reported benefit, with 6-14 percent reporting no change",
             ],
@@ -2850,8 +2850,8 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What three things change in practice because of Britton?",
             options: [
               "Say difficult experiences can occur; ask afterwards; treat hyperarousal as a stop signal",
-              "Screen before offering; limit dose to five minutes; require clinician clearance",
-              "Stop offering it to anyone with a mental-health history; document instruction",
+              "Screen every client before offering it; limit the dose to five minutes; require written clinician clearance",
+              "Stop offering it to anyone with a mental-health history; document every instruction given in detail",
               "Offer only guided practice; avoid silent meditation; refer at any distress",
             ],
             correctIndex: 0,
@@ -2970,7 +2970,7 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What is the immediate goal after a disclosure, and what is the ordering of responses?",
             options: [
               "Connection and understanding, not assessment; least invasive first, escalating on imminent risk",
-              "Risk assessment first, then the least invasive appropriate response",
+              "Risk assessment first, using a scored screening tool, then the least invasive appropriate response chosen from its result",
               "Safety planning documented before the session ends",
               "Contacting emergency services while the client remains present",
             ],
@@ -2982,9 +2982,9 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
             prompt: "What goes into the record after a crisis disclosure, and what stays out?",
             options: [
               "In: observations, their words, actions, contacts, agreements. Out: interpretation, diagnosis",
-              "In: your risk assessment and reasoning. Out: the client's own words, for privacy",
-              "In: a session summary noting the disclosure. Out: names of anyone contacted",
-              "In: the client's account, reviewed by them. Out: your own observations",
+              "In: your risk assessment and the reasoning behind it. Out: the client's own words, paraphrased for privacy",
+              "In: a full session summary noting the disclosure. Out: the names of anyone you contacted, for confidentiality",
+              "In: the client's own account, reviewed and approved by them. Out: your own observations of the session",
             ],
             correctIndex: 0,
             explanation: "Written immediately, while it is fresh. Documenting a diagnosis you are not qualified to make creates a false record that follows the client.",
