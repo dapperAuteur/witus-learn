@@ -75,7 +75,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/how-the-trades-work-course.ts": 1.00,
   "scripts/data/how-we-know-whats-out-there-course.ts": 1.00,
   "scripts/data/keeping-a-house-course.ts": 1.00,
-  "scripts/data/knots-course.ts": 1.00,
   "scripts/data/naacp-learned-to-win-course.ts": 0.90,
   "scripts/data/photography-credit-course.ts": 1.00,
   "scripts/data/read-the-plan-and-the-code-course.ts": 1.00,
@@ -84,7 +83,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/shirley-graham-course.ts": 0.95,
   "scripts/data/survival-course.ts": 1.00,
   "scripts/data/taxes-and-filing-course.ts": 1.00,
-  "scripts/data/the-author-line-and-the-finding-course.ts": 1.00,
   "scripts/data/the-mark-and-the-star-course.ts": 0.90,
   "scripts/data/the-match-course.ts": 0.97,
   "scripts/data/the-river-and-the-watershed-course.ts": 0.85,
@@ -95,10 +93,8 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/who-gets-nominated-course.ts": 0.81,
   "scripts/data/who-may-teach-course.ts": 1.00,
   "scripts/data/who-signs-the-print-course.ts": 1.00,
-  "scripts/data/who-the-rule-leaves-out-course.ts": 1.00,
   "scripts/data/who-were-the-computers-course.ts": 1.00,
   "scripts/data/whose-name-is-on-the-score-course.ts": 1.00,
-  "scripts/data/whose-names-the-payroll-kept-course.ts": 1.00,
 };
 
 function trackedFiles(): string[] {

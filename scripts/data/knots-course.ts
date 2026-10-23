@@ -248,10 +248,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a rope's lay?",
             options: [
-              "The number of individual yarns spun into each of its strands",
+              "The number of yarns in each strand",
               "The direction of its final twist",
-              "The angle it can bend through before the fibers begin to crush",
-              "The length of rope hanging free below the last load-bearing knot",
+              "The angle it can bend before crushing",
+              "The free length below the last knot",
             ],
             correctIndex: 1,
             explanation:
@@ -261,10 +261,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Which fiber does the lesson pick when the rope has to absorb a shock load?",
             options: [
-              "Polyester, because it holds its length under a sudden strain",
-              "Polypropylene, because it floats and sheds water instantly",
-              "Nylon",
-              "Cotton, because its soft fibers crush and cushion the impact",
+              "Polyester, because it holds its length",
+              "Polypropylene, because it floats",
+              "Nylon, because it stretches",
+              "Cotton, because it crushes soft",
             ],
             correctIndex: 2,
             explanation:
@@ -274,9 +274,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Which rope construction are the classic splices in this course made for?",
             options: [
-              "Braided rope with a load-bearing core inside a woven sheath",
-              "Double-braid dock line with a polyester cover over a nylon core",
-              "Hollow-braid polypropylene of the kind used for floating throw lines",
+              "Braided rope with a core",
+              "Double-braid dock line",
+              "Hollow-braid polypropylene",
               "Laid three-strand rope",
             ],
             correctIndex: 3,
@@ -288,9 +288,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "In a knot description, which part are you told NOT to move while tying?",
             options: [
               "The standing part",
-              "The working end you actively weave through the knot",
-              "The bight you form and hold open in your other hand",
-              "The round turn you take before any hitches are added",
+              "The working end",
+              "The bight you hold open",
+              "The round turn",
             ],
             correctIndex: 0,
             explanation:
@@ -300,10 +300,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What turns a bight into a loop?",
             options: [
-              "Pulling it tight enough to deform the strands of the lay",
+              "Pulling it tight",
               "The rope crossing itself",
-              "Passing the working end through it for a second time",
-              "Wrapping it once completely around a spar or a ring",
+              "Passing the end through it twice",
+              "Wrapping it around a spar",
             ],
             correctIndex: 1,
             explanation:
@@ -313,10 +313,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a round turn do before the knot on top of it is loaded at all?",
             options: [
-              "It doubles the rope's diameter where it passes through the ring",
-              "It locks the working end against the standing part permanently",
-              "It takes friction load first",
-              "It reverses the lay so the rope cannot unlay under tension",
+              "It doubles the rope's diameter where it meets the ring",
+              "It locks the working end permanently",
+              "It takes the friction load before the knot does",
+              "It reverses the lay so it cannot unlay",
             ],
             correctIndex: 2,
             explanation:
@@ -326,9 +326,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "When you coil a right-laid rope, what do you feed into each loop?",
             options: [
-              "An alternating over-under reversal on every second loop",
-              "A half-hitch locking each loop against the one before it",
-              "A full turn against the lay so the coil hangs perfectly flat",
+              "An over-under reversal",
+              "A half-hitch on each loop",
+              "A full turn against the lay",
               "A slight clockwise twist",
             ],
             correctIndex: 3,
@@ -340,9 +340,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What does the lesson name as the number-one killer of working rope?",
             options: [
               "Abrasion",
-              "Ultraviolet light from long storage in direct sunlight",
-              "Mildew growing inside a natural rope that was put away wet",
-              "Shock loading that stretches the fibers past their elastic limit",
+              "Sunlight",
+              "Mildew",
+              "Shock loading",
             ],
             correctIndex: 0,
             explanation:
@@ -352,10 +352,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these should stop you trusting a rope with a load?",
             options: [
-              "A right-handed lay that spirals clockwise along its length",
+              "A right-handed lay",
               "Glazing on the surface",
-              "A coil that was made with a clockwise twist in every loop",
-              "A whipping of small twine binding the cut end of the rope",
+              "A clockwise-twisted coil",
+              "A whipped cut end",
             ],
             correctIndex: 1,
             explanation:
@@ -508,9 +508,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What shape do you make first when tying an overhand knot?",
             options: [
               "A crossed loop",
-              "An open U-shaped bight that does not cross itself anywhere",
-              "A full round turn around the object being secured",
-              "Two parallel bights laid side by side and seized together",
+              "An open U-shaped bight",
+              "A full round turn",
+              "Two parallel seized bights",
             ],
             correctIndex: 0,
             explanation:
@@ -520,10 +520,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is the overhand a poor permanent stopper on a busy line?",
             options: [
-              "It slips through a block more easily than a bare rope end does",
-              "It jams under load",
-              "It unties itself whenever the line goes slack and is shaken",
-              "It adds so much bulk that it will not pass a fairlead at all",
+              "It slips through a block easily",
+              "It jams hard under load",
+              "It unties itself when slack",
+              "It is too bulky for a fairlead",
             ],
             correctIndex: 1,
             explanation:
@@ -533,10 +533,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What use does Verrill give the overhand knot during splicing work?",
             options: [
-              "Holding the marline-spike in place while the tucks are made",
-              "Marking how many rounds of tucks the splice still needs",
+              "Holding the marline-spike in place",
+              "Marking rounds of tucks still needed",
               "Keeping a strand end from unlaying",
-              "Joining the two ropes before their strands are married together",
+              "Joining the two ropes before marrying",
             ],
             correctIndex: 2,
             explanation:
@@ -546,10 +546,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the key advantage of the figure-eight stopper?",
             options: [
-              "It is smaller and flatter than any other stopper knot",
-              "It grips the rope hard enough to work as an adjustable hitch",
-              "It can join two ropes of different diameters under a full load",
-              "It does not jam",
+              "It is the smallest, flattest stopper",
+              "It grips like an adjustable hitch",
+              "It joins ropes of different diameters",
+              "It does not jam, so it unties easily",
             ],
             correctIndex: 3,
             explanation:
@@ -560,9 +560,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "After crossing the end over the standing part, where does the end go next in a figure-eight?",
             options: [
               "Behind the standing part",
-              "Straight down through the loop you have just formed",
-              "Around the standing part twice before any tuck is made",
-              "Under the standing part and back out the side it entered",
+              "Straight down through the loop",
+              "Twice around the standing part",
+              "Under the standing part and out",
             ],
             correctIndex: 0,
             explanation:
@@ -572,10 +572,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What job does a stopper knot do?",
             options: [
-              "It joins two separate ropes so they carry one load end to end",
+              "It joins two ropes end to end",
               "It blocks the end from running out",
-              "It binds a bundle closed so the wrapping cannot work loose",
-              "It makes a fixed loop you can drop over a piling or a post",
+              "It binds a bundle closed",
+              "It makes a fixed loop to drop over a post",
             ],
             correctIndex: 1,
             explanation:
@@ -585,10 +585,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the square (reef) knot's proper job?",
             options: [
-              "Joining two separate ropes that will be loaded end to end",
-              "Making a fixed loop at the end of a line for a mooring",
-              "Binding",
-              "Attaching a rope to a smooth spar so that it will not roll off",
+              "Joining two ropes loaded end to end",
+              "Making a fixed loop for a mooring",
+              "Binding two ends of one rope around an object",
+              "Holding a rope on a smooth spar",
             ],
             correctIndex: 2,
             explanation:
@@ -598,9 +598,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "In a correctly tied square knot, where does each end finish?",
             options: [
-              "Crossing over the top of the knot at a right angle to it",
-              "Tucked under the last two turns and then trimmed off short",
-              "On the opposite side of the knot from its own standing part",
+              "Crossing the top at a right angle",
+              "Tucked under the last two turns",
+              "Opposite its own standing part",
               "Alongside its own standing part",
             ],
             correctIndex: 3,
@@ -612,9 +612,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What is the reef version of the square knot, and why tie it that way?",
             options: [
               "A slipped version, to cast it off fast",
-              "A doubled version, so it holds in ropes of very different sizes",
-              "A seized version, so the ends cannot capsize under a shock load",
-              "A tucked version, so the knot can be buried inside a whipping",
+              "A doubled version, for unequal ropes",
+              "A seized version, so it cannot capsize",
+              "A tucked version, to bury in a whipping",
             ],
             correctIndex: 0,
             explanation:
@@ -624,10 +624,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What tying sequence produces a granny instead of a square knot?",
             options: [
-              "Passing the left end over and under the right, then reversing",
+              "Left over, then right over",
               "Right over, then right over again",
-              "Taking a round turn around the object before the first crossing",
-              "Threading one end through the other's loop twice in a row",
+              "A round turn before the first crossing",
+              "Threading one end through twice",
             ],
             correctIndex: 1,
             explanation:
@@ -637,10 +637,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What happens to a granny knot under load?",
             options: [
-              "It capsizes into a correctly formed square knot and then holds",
-              "It holds tighter than a square knot but cuts into the rope",
-              "It slips, or it jams",
-              "It rolls along the standing part until it meets an obstruction",
+              "It capsizes into a square knot",
+              "It holds but cuts the rope",
+              "It slips loose or jams",
+              "It rolls along the standing part",
             ],
             correctIndex: 2,
             explanation:
@@ -651,9 +651,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "How do you spot a granny by eye?",
             options: [
               "The whole knot looks twisted",
-              "The two standing parts leave the knot exactly parallel to each other",
-              "The ends are buried inside the knot and cannot be seen at all",
-              "One rope wraps the other three or more times before the tuck",
+              "The standing parts leave parallel",
+              "The ends are buried out of sight",
+              "One rope wraps the other three times",
             ],
             correctIndex: 0,
             explanation:
@@ -780,10 +780,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does Verrill call the bowline the king of knots?",
             options: [
-              "It never slips or jams",
-              "It is the fastest knot to tie one-handed under heavy tension",
-              "It is the only loop that works in braided and laid rope alike",
-              "It cinches down on the object and so cannot shake itself loose",
+              "It never slips, jams, or fails, yet unties easily",
+              "It is the fastest one-handed knot",
+              "It is the only loop for braided rope",
+              "It cinches down on the object and cannot shake loose",
             ],
             correctIndex: 0,
             explanation:
@@ -793,10 +793,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "In the rabbit mnemonic, where does the rabbit go after coming up out of the hole?",
             options: [
-              "Straight back down through the same hole it just came out of",
+              "Straight back down the same hole",
               "Around the standing part",
-              "Through the large loop and then under its own standing part",
-              "Around the object twice before returning toward the small loop",
+              "Through the large loop and back under",
+              "Around the object twice",
             ],
             correctIndex: 1,
             explanation:
@@ -806,10 +806,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the bowline lesson tell you to do about tying it under heavy tension?",
             options: [
-              "Take a round turn first so the friction carries the strain",
-              "Double the rope and tie it on a bight so it cannot capsize",
+              "Take a round turn first to carry the strain",
+              "Tie it doubled on a bight",
               "Set the loop before loading",
-              "Add a third tuck through the small loop to keep it from rolling",
+              "Add a third tuck through the loop",
             ],
             correctIndex: 2,
             explanation:
@@ -819,9 +819,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What makes a running bowline run?",
             options: [
-              "The end is tucked back through the small loop a second time",
-              "The knot is tied with a slipped bight so it can be spilled fast",
-              "The bowline is tied around a ring instead of around the object",
+              "The end is tucked back through the small loop twice",
+              "It is tied with a slipped bight",
+              "It is tied around a ring",
               "Its loop encircles its own standing part",
             ],
             correctIndex: 3,
@@ -832,10 +832,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Where must a running bowline never be used?",
             options: [
-              "Around a person",
-              "On a floating line thrown across a stretch of moving water",
-              "On any rope thicker than the object it is being tied around",
-              "Where the load will be released and reapplied several times",
+              "Around a person, as a lifting sling",
+              "Across moving water",
+              "On thick rope",
+              "On repeated loads",
             ],
             correctIndex: 0,
             explanation:
@@ -845,10 +845,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "You need a loop that stays the same size no matter how hard it is pulled. What do you tie?",
             options: [
-              "A timber hitch dogged three or more times around its own part",
+              "A timber hitch dogged three times",
               "A plain bowline",
-              "A clove hitch backed up with a half-hitch on the standing part",
-              "A short splice worked into the standing part with three tucks",
+              "A clove hitch backed with a half-hitch",
+              "A short splice in the standing part",
             ],
             correctIndex: 1,
             explanation:
@@ -858,10 +858,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the figure-eight loop trade away compared with a bowline?",
             options: [
-              "Its strength under a shock load applied off the loop's axis",
-              "The ability to be tied at any point along the standing part",
+              "Shock strength",
+              "Mid-line tying",
               "Easy untying",
-              "Its resistance to shaking loose whenever the line goes slack",
+              "Security when slack",
             ],
             correctIndex: 2,
             explanation:
@@ -872,9 +872,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "Why is the figure-eight loop the standard climbing tie-in?",
             options: [
               "It is easy to inspect",
-              "It is the only loop that can be untied after holding a hard fall",
-              "It uses less rope than any other loop of the same diameter",
-              "It tightens progressively so the harness cannot work loose",
+              "It unties after a hard fall",
+              "It uses the least rope",
+              "It tightens progressively",
             ],
             correctIndex: 0,
             explanation:
@@ -884,9 +884,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "How should the two strands lie inside a dressed figure-eight on a bight?",
             options: [
-              "Crossed once at the throat so the knot cannot roll open",
-              "Twisted around each other for the whole length of the knot",
-              "One strand buried under the other where it leaves the knot",
+              "Crossed once at the throat of the knot",
+              "Twisted around each other throughout",
+              "One strand buried under the other",
               "Neatly parallel, never crossed",
             ],
             correctIndex: 3,
@@ -1046,10 +1046,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "How many turns around the spar does a clove hitch take?",
             options: [
-              "Two",
-              "One, with the end tucked back under itself and then trimmed",
-              "Three or more, dogged around the standing part as you go",
-              "As many as it takes for friction alone to hold the whole load",
+              "Two turns",
+              "One turn",
+              "Three or more turns",
+              "Five turns",
             ],
             correctIndex: 0,
             explanation:
@@ -1059,10 +1059,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the clove hitch's main weakness?",
             options: [
-              "It jams so hard under load that it has to be cut off the spar",
+              "It jams and must be cut off",
               "It can roll and work loose",
-              "It cannot be tied anywhere except at the very end of a rope",
-              "It weakens the rope more than any other knot in this course",
+              "It only ties at a rope's end",
+              "It weakens rope the most",
             ],
             correctIndex: 1,
             explanation:
@@ -1072,10 +1072,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Where does the clove hitch appear in lashing work?",
             options: [
-              "As the frapping turns that clamp the two spars tightly together",
-              "As the wrapping turns laid side by side around both of the spars",
+              "As the frapping turns",
+              "As the wrapping turns",
               "At the start and the finish",
-              "As a backup knot tied on the standing part after the last tuck",
+              "As a backup on the standing part",
             ],
             correctIndex: 2,
             explanation:
@@ -1085,9 +1085,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Why take a round turn before tying two half-hitches?",
             options: [
-              "It doubles the rope so the hitches grip a larger surface area",
-              "It stops the rope from unlaying where it crosses the metal ring",
-              "It lets you adjust the tension after the hitches are already tied",
+              "It doubles the gripping surface",
+              "It stops the lay opening at the ring",
+              "It lets you adjust tension later",
               "Friction takes the load first",
             ],
             correctIndex: 3,
@@ -1099,9 +1099,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What do two half-hitches tied the same way actually form?",
             options: [
               "A clove hitch on the standing part",
-              "A slipped square knot around the object that is being secured",
-              "A pair of overhand knots that jam back to back like a bend does",
-              "A rolling friction hitch that can slide to set the tension",
+              "A slipped square knot around the object",
+              "A pair of jammed overhand knots",
+              "A rolling friction hitch",
             ],
             correctIndex: 0,
             explanation:
@@ -1111,10 +1111,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Verrill says hitches made this way will hold in what manner?",
             options: [
-              "Only while the pull stays in one unchanging direction",
+              "Only while the pull stays steady",
               "Forever, without loosening",
-              "Until the rope is wet, at which point they have to be retied",
-              "Well enough for a temporary tie but never for a mooring line",
+              "Until the rope gets wet",
+              "Only well enough for temporary use",
             ],
             correctIndex: 1,
             explanation:
@@ -1124,10 +1124,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a timber hitch do the moment the load comes off?",
             options: [
-              "It jams tight and has to be worked loose with a marline-spike",
-              "It rolls along the spar toward the hauling end of the rope",
+              "It jams tight",
+              "It rolls up the spar",
               "It falls apart",
-              "It holds exactly as firmly as it did while it was under tension",
+              "It holds as firmly",
             ],
             correctIndex: 2,
             explanation:
@@ -1137,9 +1137,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "How many times should the end be dogged around its own part in a timber hitch?",
             options: [
-              "Once, with the tail tucked under the standing part to lock it",
-              "Twice, in opposite directions so the turns cannot unwind at all",
-              "As many as will fit between the loop and the end of the spar",
+              "Once",
+              "Twice",
+              "As many as will fit",
               "Three or more",
             ],
             correctIndex: 3,
@@ -1151,9 +1151,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What do you add to steer a long spar level while hoisting it?",
             options: [
               "A half-hitch farther along",
-              "A second timber hitch dogged at the opposite end of the spar",
-              "A seizing of small stuff binding the rope to the spar's middle",
-              "A running bowline cinched down over the hauling end of the rope",
+              "A second timber hitch",
+              "A seizing at the middle",
+              "A running bowline on the end",
             ],
             correctIndex: 0,
             explanation:
@@ -1163,10 +1163,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What can a taut-line hitch do that two half-hitches cannot?",
             options: [
-              "Join two ropes of different diameters end to end under a load",
-              "Adjust the tension",
-              "Hold a load that reverses direction without any backup knot",
-              "Finish a rope end so that it can never fray or unlay again",
+              "Join ropes of different sizes",
+              "Adjust the tension by sliding along the standing part",
+              "Hold a reversing load unbacked",
+              "Stop a rope end from fraying",
             ],
             correctIndex: 1,
             explanation:
@@ -1176,10 +1176,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "How many turns does the taut-line hitch take around the standing part?",
             options: [
-              "Two, both taken on the far side of the loop from the anchor",
-              "Five or more, laid neatly beside one another like a seizing",
+              "Two",
+              "Five",
               "Three",
-              "One for each inch of adjustment range you expect to need",
+              "Seven",
             ],
             correctIndex: 2,
             explanation:
@@ -1190,9 +1190,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "Where can a taut-line hitch let you down?",
             options: [
               "On slick synthetic rope",
-              "On natural fiber rope, where its turns bind and will not slide",
-              "On any line shorter than the distance to the nearest anchor",
-              "On a guy line that has to hold one steady, unchanging tension",
+              "On natural fiber rope",
+              "On a very short line",
+              "On a guy line holding steady tension",
             ],
             correctIndex: 0,
             explanation:
@@ -1318,10 +1318,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Which rope forms the bight in a sheet bend?",
             options: [
-              "The thinner one, so the thick rope can be threaded through it",
+              "The thinner one",
               "The thicker one",
-              "Whichever rope will carry the greater share of the total load",
-              "Both of them, each forming a bight that interlocks with the other",
+              "The loaded one",
+              "Both of them",
             ],
             correctIndex: 1,
             explanation:
@@ -1331,9 +1331,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Where should the two short ends finish on a properly tied sheet bend?",
             options: [
-              "On opposite sides, so the knot cannot capsize under a load",
-              "Buried under the standing parts where they cannot be seen",
-              "Pointing back along their own standing parts and then seized",
+              "On opposite sides",
+              "Under the standing parts",
+              "Seized to their parts",
               "On the same side",
             ],
             correctIndex: 3,
@@ -1345,9 +1345,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What is the plain sheet bend's weakness?",
             options: [
               "It can work loose when unloaded",
-              "It slips as soon as the two ropes are of the same thickness",
-              "It jams permanently once it has taken any serious strain at all",
-              "It cuts into the thinner of the two ropes where they cross",
+              "It slips in equal-thickness rope",
+              "It jams after any serious strain",
+              "It cuts the thinner rope",
             ],
             correctIndex: 0,
             explanation:
@@ -1357,10 +1357,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the double sheet bend add to the plain one?",
             options: [
-              "An overhand knot in each tail to stop it pulling back through",
-              "A seizing of small stuff binding the two standing parts together",
+              "An overhand in each tail",
+              "A seizing on the standing parts",
               "A second wrap around the bight",
-              "A round turn taken around both ropes before the first tuck",
+              "A round turn around both ropes",
             ],
             correctIndex: 2,
             explanation:
@@ -1371,9 +1371,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "When is the extra bulk of a double sheet bend worth it?",
             options: [
               "In slick or very unequal rope",
-              "Whenever both ropes are natural fiber and already grip well",
-              "Whenever the join has to be untied quickly and then retied",
-              "Whenever the join will run through a block under a heavy load",
+              "In grippy natural-fiber rope",
+              "Where it must untie quickly",
+              "Where it runs through a block",
             ],
             correctIndex: 0,
             explanation:
@@ -1383,9 +1383,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Where in the sequence does the extra wrap of a double sheet bend go?",
             options: [
-              "After the tails have been drawn snug and dressed down flat",
-              "Around the thin rope's own standing part instead of the bight",
-              "Between the two legs of the bight, the way a frapping turn goes",
+              "After the tails are dressed",
+              "Around the thin standing part",
+              "Between the legs of the bight",
               "Before the final tuck",
             ],
             correctIndex: 3,
@@ -1397,9 +1397,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What is each half of a fisherman's knot?",
             options: [
               "An overhand knot",
-              "A half-hitch taken around the object and then its own part",
-              "A figure-eight tied on a bight of the opposite rope's end",
-              "A clove hitch tied around the other rope's standing part",
+              "A half-hitch",
+              "A figure-eight",
+              "A clove hitch",
             ],
             correctIndex: 0,
             explanation:
@@ -1409,10 +1409,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Around what does each overhand knot in a fisherman's knot get tied?",
             options: [
-              "Its own standing part, so each knot is independent of the other",
-              "Both standing parts at once, so the knots cannot slide apart",
+              "Its own standing part",
+              "Both standing parts at once",
               "The other rope's standing part",
-              "A bight formed in the thicker of the two lines being joined",
+              "A bight in the thicker line",
             ],
             correctIndex: 2,
             explanation:
@@ -1422,10 +1422,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Where is a fisherman's knot a poor choice?",
             options: [
-              "In small-diameter cord, where a sheet bend would be fiddly",
+              "In small-diameter cord",
               "In thick, stiff rope",
-              "In fishing line, where the two ends must be joined securely",
-              "In twine, where the join has to stay put in slick, thin line",
+              "In fishing line",
+              "In thin twine",
             ],
             correctIndex: 1,
             explanation:
@@ -1518,9 +1518,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a whipping stop a rope end from doing?",
             options: [
-              "Slipping back through the block that the line was rove through",
-              "Absorbing water and then rotting from the inside outward",
-              "Stretching under load until the splice loses its shape",
+              "Slipping through a block",
+              "Absorbing water and rotting",
+              "Stretching under load",
               "Fraying and unlaying",
             ],
             correctIndex: 3,
@@ -1532,9 +1532,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "How is the common whipping locked off at the end?",
             options: [
               "A buried loop drags the end under",
-              "A square knot tied in the two tails and then pulled down flat",
-              "A clove hitch taken around the rope over the last few turns",
-              "A drop of heat sealing the twine against the rope's own fibers",
+              "A square knot in the two tails",
+              "A clove hitch over the last turns",
+              "A drop of heat sealing the twine",
             ],
             correctIndex: 0,
             explanation:
@@ -1544,10 +1544,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "How long should a whipping be?",
             options: [
-              "Exactly one inch, measured back from the cut end of the rope",
+              "Exactly one inch from the cut end",
               "About as long as the rope is wide",
-              "Long enough to cover the three tucks of the splice beneath it",
-              "Half the rope's diameter, so that it adds no bulk at the end",
+              "Long enough to cover the splice",
+              "Half the rope's diameter",
             ],
             correctIndex: 1,
             explanation:
@@ -1557,10 +1557,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Why prefer a whipping to a melted end on synthetic rope?",
             options: [
-              "It is the only finish that keeps the strands from stretching",
-              "It seals the fibers so water cannot travel up inside the rope",
-              "It outlasts a melted end",
-              "It lets the end pass a block that a melted end would jam in",
+              "It alone stops the strands stretching",
+              "It seals out water from inside the rope",
+              "It outlasts a melted end and will not crack off",
+              "It passes blocks a melted end jams in",
             ],
             correctIndex: 2,
             explanation:
@@ -1570,9 +1570,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a seizing bind together?",
             options: [
-              "Two rope ends butted together so they carry the load in line",
-              "The three strands of one rope after they have been unlaid",
-              "A rope and the spar it is being made fast to, permanently",
+              "Two rope ends butted in line",
+              "The three strands of an unlaid rope",
+              "A rope and its spar, permanently",
               "Two parts lying side by side",
             ],
             correctIndex: 3,
@@ -1584,9 +1584,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What are the frapping turns in a seizing?",
             options: [
               "Turns taken around the round turns",
-              "The first turns laid neatly beside each other along both ropes",
-              "The tucks that bury the twine's end beneath the finished seizing",
-              "The wraps that trap the starting tail before the seizing begins",
+              "The first turns laid along both ropes",
+              "The tucks that bury the twine's end",
+              "The wraps that trap the starting tail",
             ],
             correctIndex: 0,
             explanation:
@@ -1596,10 +1596,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What happens if you skip the frapping turns?",
             options: [
-              "The two ropes jam together so hard that they cannot be parted",
+              "The ropes jam together",
               "The seizing slips",
-              "The twine cuts through the outer fibers of both ropes at once",
-              "The round turns overlap instead of lying neatly side by side",
+              "The twine cuts the fibers",
+              "The ropes fray at the ends",
             ],
             correctIndex: 1,
             explanation:
@@ -1609,10 +1609,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What job must you never give a seizing?",
             options: [
-              "Making a permanent eye by binding a loop's two legs together",
-              "Holding two ropes together so that they share a single load",
+              "Making a permanent eye",
+              "Binding two ropes to share a load",
               "Joining ropes end to end",
-              "Binding the throat of a hook or the neck of a finished splice",
+              "Binding the throat of a hook",
             ],
             correctIndex: 2,
             explanation:
@@ -1740,10 +1740,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "How many rounds of tucks does an eye splice need at a minimum?",
             options: [
-              "One, provided the strand tips are whipped before they are cut",
-              "Two, plus a seizing across the throat where the eye closes up",
-              "Three",
-              "Six, halving the strands after each pair of completed rounds",
+              "One round",
+              "Two rounds",
+              "Three rounds",
+              "Six rounds",
             ],
             correctIndex: 2,
             explanation:
@@ -1754,9 +1754,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "Which way do you tuck the strands of a splice?",
             options: [
               "Against the lay",
-              "With the lay, so the tucks tighten as the rope is twisted up",
-              "Straight through the middle of the rope between the strands",
-              "Alternating with and against the lay on each successive round",
+              "With the lay",
+              "Through the middle",
+              "Alternating each round",
             ],
             correctIndex: 0,
             explanation:
@@ -1766,9 +1766,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Why taper a splice by halving the strands before the last tucks?",
             options: [
-              "So the strands cannot pull out under a sudden shock load",
-              "So the eye can be opened and closed around a larger fitting",
-              "So the splice will pass through a block sized for the bare rope",
+              "So the strands cannot pull out",
+              "So the eye fits a larger fitting",
+              "So it is stronger than the rope",
               "So it is smooth and does not snag",
             ],
             correctIndex: 3,
@@ -1779,10 +1779,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the drawback of a short splice?",
             options: [
-              "It thickens the rope",
-              "It is weaker than any of the bends taught in this course",
-              "It can only be made between ropes of two different diameters",
-              "It pulls apart the moment the load comes off the finished join",
+              "It thickens the rope, so it will not run through a block",
+              "It is weaker than any bend",
+              "It only joins unequal ropes",
+              "It pulls apart when unloaded",
             ],
             correctIndex: 0,
             explanation:
@@ -1792,10 +1792,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What does it mean to marry two ropes?",
             options: [
-              "Seizing their standing parts together with turns of small stuff",
+              "Seizing their standing parts",
               "Interlacing their unlaid strands",
-              "Tucking each strand under one and over the next, against the lay",
-              "Whipping both ends so no strand can unlay while you work",
+              "Tucking each strand against the lay",
+              "Whipping both ends first",
             ],
             correctIndex: 1,
             explanation:
@@ -1805,9 +1805,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Where must you not use a short splice?",
             options: [
-              "On dock lines and standing rigging that stay permanently rove",
-              "On three-strand laid rope whose ends have already been whipped",
-              "Where maximum strength matters more than anything else does",
+              "On permanently rove dock lines",
+              "On whipped three-strand rope",
+              "Where maximum strength matters",
               "Where the rope runs through a block",
             ],
             correctIndex: 3,
@@ -1818,10 +1818,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Which knot starts a back splice?",
             options: [
-              "An overhand knot tied in all three strands together at once",
-              "A clove hitch taken around the rope below the unlaid strands",
+              "An overhand knot",
+              "A clove hitch",
               "A crown knot",
-              "A figure-eight tied on a bight of the standing part's strands",
+              "A figure-eight",
             ],
             correctIndex: 2,
             explanation:
@@ -1832,9 +1832,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What does the crown knot do to the three strands?",
             options: [
               "Points them back down the rope",
-              "Locks them so they can be trimmed with no further tucks needed",
-              "Splits each of them in half ready for the tapering tucks to come",
-              "Binds them against the standing part the way a seizing would",
+              "Locks them so no tucks are needed",
+              "Splits each one in half",
+              "Binds them like a seizing",
             ],
             correctIndex: 0,
             explanation:
@@ -1846,8 +1846,8 @@ export const KNOTS_COURSE: AuthoredCourse = {
             options: [
               "On a hand-line, where the crown gives a knob to grip",
               "When the end must pass through a hole",
-              "On a lanyard whose end is handled constantly and needs wear",
-              "Whenever no twine is available to whip the end with instead",
+              "On a constantly handled lanyard",
+              "When no twine is available to whip",
             ],
             correctIndex: 1,
             explanation:
@@ -2065,10 +2065,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Which knot starts and finishes a square lashing?",
             options: [
-              "A round turn followed by two half-hitches on the standing part",
-              "A timber hitch dogged three times around its own standing part",
+              "Two half-hitches",
+              "A timber hitch",
               "A clove hitch",
-              "A bowline dropped over the free end of the spar being lashed",
+              "A bowline",
             ],
             correctIndex: 2,
             explanation:
@@ -2079,9 +2079,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What clamps a square lashing solid?",
             options: [
               "The frapping turns",
-              "The three to five wrapping turns pulled tight in a square pattern",
-              "The clove hitch tied onto the second spar at the very end",
-              "A seizing taken across the crossing point before you start work",
+              "The wrapping turns",
+              "The final clove hitch",
+              "A seizing at the crossing",
             ],
             correctIndex: 0,
             explanation:
@@ -2091,9 +2091,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Which lashing binds two parallel spars that are then opened into an A-frame?",
             options: [
-              "A diagonal lashing, which pulls together spars that spring apart",
-              "A square lashing, used where two spars cross at right angles",
-              "A frapped seizing taken around both spars and then heaved tight",
+              "A diagonal lashing",
+              "A square lashing",
+              "A frapped seizing",
               "A shear lashing",
             ],
             correctIndex: 3,
@@ -2104,10 +2104,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the core idea behind a rope tie-down?",
             options: [
-              "Enough mechanical advantage to crush the load down into the deck",
+              "Crushing mechanical advantage",
               "Friction plus a releasable tie",
-              "A single unbroken run of rope with no knots anywhere along it",
-              "Rated hardware at every anchor point along the whole of the run",
+              "One unbroken run with no knots",
+              "Rated hardware at every anchor",
             ],
             correctIndex: 1,
             explanation:
@@ -2118,9 +2118,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "Which knot does the tie-down sequence use to anchor the first end?",
             options: [
               "Round turn and two half-hitches",
-              "A taut-line hitch, so the anchor end can be re-tensioned later",
-              "A clove hitch, because it is the fastest hitch to tie on a rail",
-              "A sheet bend joining the rope to a becket on the anchor point",
+              "A taut-line hitch for re-tensioning",
+              "A clove hitch, the fastest on a rail",
+              "A sheet bend to a becket",
             ],
             correctIndex: 0,
             explanation:
@@ -2130,10 +2130,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Why add a guarding half-hitch where a line crosses an edge?",
             options: [
-              "So the rope's lay cannot open up and let grit inside the strands",
-              "So the tension can be released from either end of the whole run",
+              "So grit cannot open the lay",
+              "So either end can be released",
               "So the line cannot creep",
-              "So the edge carries the load instead of the anchor knot doing it",
+              "So the edge carries the load",
             ],
             correctIndex: 2,
             explanation:
@@ -2144,9 +2144,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What must you never do with a line in moving water?",
             options: [
               "Tie yourself rigidly into it",
-              "Throw it before the person in the water has signaled they are ready",
-              "Belay it from a braced position on the bank above the swimmer",
-              "Use a floating polypropylene line rather than a nylon one",
+              "Throw it before they signal",
+              "Belay it from a braced position",
+              "Use a floating polypropylene line",
             ],
             correctIndex: 0,
             explanation:
@@ -2156,9 +2156,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is a fixed loop preferred over a running noose near a person?",
             options: [
-              "It is faster to untie once the person has been pulled clear",
-              "It floats higher in the water where a swimmer can see it coming",
-              "It is the only loop that can be thrown accurately at a distance",
+              "It is faster to untie afterward",
+              "It floats higher in the water",
+              "It throws more accurately",
               "It cannot tighten on them",
             ],
             correctIndex: 3,
@@ -2169,10 +2169,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about improvising a hauling system?",
             options: [
-              "It is safe as long as the anchors are doubled and backed up",
+              "It is safe as long as the anchors are doubled",
               "It is a trained skill, not improvised",
-              "It is the one rescue task a text lesson can fully prepare you for",
-              "It needs no rated gear while the load stays under a person's weight",
+              "A text lesson fully prepares you",
+              "Light loads need no rated gear",
             ],
             correctIndex: 1,
             explanation:
@@ -2182,9 +2182,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the daily craft of a broadcast utility technician?",
             options: [
-              "Flying lighting trusses on motors above a seated audience",
-              "Calculating load limits for the shackles holding a speaker array",
-              "Certifying a venue's rigging points before the show loads in",
+              "Flying lighting trusses on motors",
+              "Calculating shackle load limits",
+              "Certifying venue rigging points",
               "Dressing and securing cable",
             ],
             correctIndex: 3,
@@ -2196,9 +2196,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "What does the lesson call the single most important professional skill in this work?",
             options: [
               "Knowing your limits",
-              "Tying every hitch in the course faster than anyone else on crew",
-              "Owning your own rated slings, shackles, and load-testing gear",
-              "Reading a truss load chart without needing any supervision",
+              "Tying hitches the fastest",
+              "Owning rated slings",
+              "Reading truss load charts",
             ],
             correctIndex: 0,
             explanation:
@@ -2208,10 +2208,10 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "What does coiling cable over-under achieve on a broadcast crew?",
             options: [
-              "It shortens the coil so more cable fits into the same road case",
+              "More cable fits in a road case",
               "The cable lays flat and pays out clean",
-              "It keeps the connectors dry when the coil is stored outdoors",
-              "It lets one person carry twice the weight of cable at a time",
+              "The connectors stay dry outdoors",
+              "One person can carry twice the cable at a time",
             ],
             correctIndex: 1,
             explanation:
