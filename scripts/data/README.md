@@ -29,23 +29,23 @@
 
 ### Civics
 
-- [`business-governance`](./business-governance-course.ts) Governance: Who Actually Decides
-- [`choose-a-form-capstone`](./choose-a-form-capstone-course.ts) Capstone: Choose a Form and Defend It
+- [`business-governance`](./business-governance-course.ts) Governance: Who Actually Decides · ENTITY-06 (how-a-business-is-formed)
+- [`choose-a-form-capstone`](./choose-a-form-capstone-course.ts) Capstone: Choose a Form and Defend It · ENTITY-99 (how-a-business-is-formed)
 - [`citizenship-naturalization`](./citizenship-naturalization-course.ts) Citizenship & Naturalization Basics
-- [`cooperatives`](./cooperatives-course.ts) Cooperatives
-- [`financing-without-access`](./financing-without-access-course.ts) Financing Without Access
-- [`foreign-business-forms`](./foreign-business-forms-course.ts) How Other Countries Form Businesses
-- [`forms-of-government`](./forms-of-government-course.ts) Forms of Government, Honestly
-- [`governments-without-states`](./governments-without-states-course.ts) Governments Without States
+- [`cooperatives`](./cooperatives-course.ts) Cooperatives · ENTITY-03 (how-a-business-is-formed)
+- [`financing-without-access`](./financing-without-access-course.ts) Financing Without Access · ENTITY-04 (how-a-business-is-formed)
+- [`foreign-business-forms`](./foreign-business-forms-course.ts) How Other Countries Form Businesses · ENTITY-05 (how-a-business-is-formed)
+- [`forms-of-government`](./forms-of-government-course.ts) Forms of Government, Honestly · POWER-02 (who-has-the-power-path)
+- [`governments-without-states`](./governments-without-states-course.ts) Governments Without States · POWER-07 (who-has-the-power-path)
 - [`help-a-campaign`](./help-a-campaign-course.ts) How to Help a Campaign: A Practical, Non-Partisan Guide
 - [`how-a-bill-becomes-law`](./how-a-bill-becomes-law-course.ts) How a Bill Becomes Law (Federal): From Idea to Public Law
-- [`how-countries-constitute`](./how-countries-constitute-course.ts) How Countries Constitute Themselves
-- [`how-power-changes-hands`](./how-power-changes-hands-course.ts) How Power Changes Hands
+- [`how-countries-constitute`](./how-countries-constitute-course.ts) How Countries Constitute Themselves · POWER-03 (who-has-the-power-path)
+- [`how-power-changes-hands`](./how-power-changes-hands-course.ts) How Power Changes Hands · POWER-08 (who-has-the-power-path)
 - [`how-to-run-for-office`](./how-to-run-course.ts) How to Run for Office: A Practical, Non-Partisan Guide
 - [`jury-duty-courts`](./jury-duty-courts-course.ts) Jury Duty & the Courts (the citizen's side)
 - [`know-your-rights`](./know-your-rights-course.ts) The Bill of Rights: Know Your Rights
 - [`know-your-rights-at-work`](./know-your-rights-at-work-course.ts) Know Your Rights at Work
-- [`map-your-own-stack`](./map-your-own-stack-course.ts) Capstone: Map Your Own Stack
+- [`map-your-own-stack`](./map-your-own-stack-course.ts) Capstone: Map Your Own Stack · POWER-99 (who-has-the-power-path)
 - [`reading-a-land-description`](./reading-a-land-description-course.ts) Reading a Land Description: The Grid, the Deed and Indiana · TOOLS-04 (tools-that-think) · also in: Science & Math, Money & Property
 - [`spotting-misleading-marketing`](./spotting-misleading-marketing-course.ts) Spotting Misleading Marketing
 - [`state-civics-ak`](./state-civics-ak-course.ts) Alaska Civics: How Your State Government Works
@@ -103,17 +103,17 @@
 - [`supreme-court-judicial-branch`](./supreme-court-judicial-branch-course.ts) The Supreme Court & the Judicial Branch
 - [`territories-and-representation`](./territories-course.ts) Not a State
 - [`the-county-committee`](./the-county-committee-course.ts) The County Committee · WARRANT-02 (land-warrant)
-- [`the-local-layer`](./the-local-layer-course.ts) The Local Layer
+- [`the-local-layer`](./the-local-layer-course.ts) The Local Layer · POWER-05 (who-has-the-power-path)
 - [`the-match`](./the-match-course.ts) The Match · WARRANT-01 (land-warrant)
-- [`the-middle-layer`](./the-middle-layer-course.ts) The Middle Layer: States, Provinces, and Regions
-- [`tribal-nations-governance`](./tribal-nations-governance-course.ts) Tribal Nations and Indigenous Governance
-- [`us-business-forms`](./us-business-forms-course.ts) The US Forms: Sole Prop to Corporation
+- [`the-middle-layer`](./the-middle-layer-course.ts) The Middle Layer: States, Provinces, and Regions · POWER-04 (who-has-the-power-path)
+- [`tribal-nations-governance`](./tribal-nations-governance-course.ts) Tribal Nations and Indigenous Governance · POWER-06 (who-has-the-power-path)
+- [`us-business-forms`](./us-business-forms-course.ts) The US Forms: Sole Prop to Corporation · ENTITY-02 (how-a-business-is-formed)
 - [`us-civics-101`](./civics-101-course.ts) US Civics 101: How American Government Works
 - [`us-constitution-101`](./us-constitution-course.ts) US Constitution 101: The Document That Builds the Government
 - [`us-state-local-government`](./us-state-local-gov-course.ts) US, State & Local Government: Who Does What
 - [`voting-elections-101`](./voting-elections-101-course.ts) Voting & Elections 101
-- [`what-a-business-entity-is`](./what-a-business-entity-is-course.ts) What a Business Entity Actually Is
-- [`who-has-the-power`](./who-has-the-power-course.ts) Who Has the Power to Do This?
+- [`what-a-business-entity-is`](./what-a-business-entity-is-course.ts) What a Business Entity Actually Is · ENTITY-01 (how-a-business-is-formed)
+- [`who-has-the-power`](./who-has-the-power-course.ts) Who Has the Power to Do This? · POWER-01 (who-has-the-power-path)
 - [`keeping-a-house`](./keeping-a-house-course.ts) Keeping a House: Hazards, Checks, and Where an Amateur Has to Stop · series the-house-you-live-in · private · listed here as an extra category; primary: Money & Property
 - [`painted-in-court`](./painted-in-court-course.ts) Painted in Court: The Keane Verdict, the Appeal, and What a Court Can Repair · series credit · private · listed here as an extra category; primary: Culture & History
 
