@@ -36,21 +36,12 @@ const TENANTS: { slug: string; label: string }[] = [
   { slug: "acme-academy", label: "Acme Academy (the isolation-test school)" },
 ];
 
-/**
- * Which school each seed script seeds. A seed script that registers courses and is missing here stops
- * the generator, so a new seeder cannot silently leave its courses out of the index.
- */
-const SEED_TENANT: Record<string, string> = {
-  "scripts/seed-courses.ts": "learn-witus",
-  "scripts/seed-faa.ts": "learn-witus",
-  "scripts/seed-health.ts": "learn-witus",
-  "scripts/seed-well.ts": "learn-witus",
-  "scripts/seed-neuromatch.ts": "learn-witus",
-  "scripts/seed-langchain.ts": "learn-witus",
-  "scripts/seed-languages.ts": "learn-witus",
-  "scripts/seed-sommelier.ts": "better-vice-club",
-  "scripts/seed-speedway.ts": "elementary-mba",
-};
+// Which school a course is listed under comes from the registry (`SeedEntry.school`, read from the
+// call's own tenantId), not from a per-file table as it used to. A table could hold one school per
+// seed script, so a preview of a series' first course seeded from the same script onto a second
+// school would have been listed twice under the first school and stopped the generator as a
+// duplicate. A course whose school the registry cannot read stops the generator instead, so a new
+// seeder still cannot leave its courses out of the index unnoticed.
 
 /** Seed scripts whose courses come from data this index deliberately does not read. */
 const NOT_INDEXED_SEEDERS = new Set(["scripts/seed-bvc-real.ts"]);
@@ -96,10 +87,10 @@ function moduleFile(modulePath: string | null): string | null {
 }
 
 function fromRegistry(e: SeedEntry): Row {
-  const tenant = SEED_TENANT[e.file];
+  const tenant = e.school;
   if (!tenant) {
     throw new Error(
-      `${e.file} registers "${e.slug}" but has no school in SEED_TENANT (scripts/gen-course-index.ts). Add it.`,
+      `${e.file} registers "${e.slug}" but the registry cannot tell which school (scripts/lib/seed-registry.ts).`,
     );
   }
   const file = moduleFile(e.modulePath);
@@ -251,11 +242,11 @@ function line(r: Row, alsoFrom?: string): string {
 
 function build(): string {
   const registry = allSeedEntries();
-  const unmapped = [...new Set(registry.map((e) => e.file))].filter(
-    (f) => !SEED_TENANT[f] && !NOT_INDEXED_SEEDERS.has(f),
-  );
-  if (unmapped.length) {
-    throw new Error(`Seed scripts with courses but no school in SEED_TENANT: ${unmapped.join(", ")}`);
+  const unplaced = registry.filter((e) => !e.school && !NOT_INDEXED_SEEDERS.has(e.file));
+  if (unplaced.length) {
+    throw new Error(
+      `Registered courses whose school the registry cannot read: ${unplaced.map((e) => `${e.file}:${e.slug}`).join(", ")}`,
+    );
   }
   const rows = [
     ...registry.filter((e) => !NOT_INDEXED_SEEDERS.has(e.file)).map(fromRegistry),
