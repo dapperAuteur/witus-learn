@@ -4,6 +4,7 @@ import { requireTenant } from "@/lib/tenant";
 import { getSiteUrl } from "@/lib/site-url";
 import { getPublishedCourseWithLessons } from "@/db/queries/api-v1";
 import { DISCLAIMER_SHORT } from "@/lib/disclaimer";
+import { SchoolDisclaimerNotice } from "@/components/school-disclaimer-notice";
 
 export const metadata: Metadata = { robots: { index: false, follow: false } };
 
@@ -78,6 +79,7 @@ export default async function EmbedCoursePage({ params }: Params) {
       <p className="mt-8 border-t border-neutral-200 pt-4 text-xs text-neutral-400 dark:border-neutral-800 dark:text-neutral-600">
         {DISCLAIMER_SHORT}
       </p>
+      <SchoolDisclaimerNotice tenantSlug={tenant.slug} variant="footer" />
     </main>
   );
 }

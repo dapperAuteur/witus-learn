@@ -1,6 +1,7 @@
 import { brandName } from "@/lib/branding";
 import type { TenantRecord } from "@/lib/tenant";
 import { LeadCapture } from "@/components/lead-capture";
+import { SchoolDisclaimerNotice } from "@/components/school-disclaimer-notice";
 
 // Branded "launching soon" landing for pre-launch schools (tenant.flags.comingSoon).
 // Server-resolved branding, so the holding page already wears the brand's colors.
@@ -22,6 +23,7 @@ export function ComingSoon({ tenant }: { tenant: TenantRecord }) {
         This school is being prepared. Check back soon.
       </p>
       <LeadCapture source="coming-soon" label="Notify me" />
+      <SchoolDisclaimerNotice tenantSlug={tenant.slug} />
     </main>
   );
 }
