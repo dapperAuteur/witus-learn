@@ -93,7 +93,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/who-gets-nominated-course.ts": 0.81,
   "scripts/data/who-may-teach-course.ts": 1.00,
   "scripts/data/who-signs-the-print-course.ts": 1.00,
-  "scripts/data/who-the-rule-leaves-out-course.ts": 1.00,
   "scripts/data/who-were-the-computers-course.ts": 1.00,
   "scripts/data/whose-name-is-on-the-score-course.ts": 1.00,
   "scripts/data/whose-names-the-payroll-kept-course.ts": 1.00,
