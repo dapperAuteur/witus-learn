@@ -97,7 +97,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/whose-name-is-on-the-score-course.ts": 1.00,
   "scripts/data/whose-names-the-payroll-kept-course.ts": 1.00,
   "scripts/data/writing-poems-and-songs-course.ts": 1.00,
-  "scripts/data/written-by-himself-course.ts": 1.00,
 };
 
 function trackedFiles(): string[] {
