@@ -1758,8 +1758,8 @@ async function main() {
   // approved by BAM 2026-10-14. Series "Tools That Think" (analog tools that work without electricity):
   // TOOLS-01 map and compass and TOOLS-03 surveying are registered in their own branches. Multiple-choice
   // quizzes only, because a slide-rule reading is approximate and typed answers grade by exact match.
-  // Learn.WitUS only for now: BAM also asked for an ElementaryMBA copy (STEAM), which needs a change to
-  // tests/seed-registry.test.ts (one slug per seed script today) and waits on his OK.
+  // Learn.WitUS only. BAM had asked for an ElementaryMBA copy (STEAM), but his sharing rule (2026-10-23)
+  // gives that school only the seven courses in FULL_SHARE_TO_ELEMENTARY_MBA, so none is seeded.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,

@@ -29,8 +29,10 @@ import type { AuthoredCourse } from "./authored-course";
 // VISIBILITY: PUBLIC and free, HELD ("Coming soon") until BAM records the demonstrations the P lessons
 // call for. BAM has not yet chosen his soroban (brief question 1), so lesson 4 is written to help him
 // choose. The publishHoldReason in scripts/seed-courses.ts says so. Registered on Learn.WitUS only
-// (Science & Math, also Culture & History). BAM approved an ElementaryMBA copy (STEAM, brief question
-// 3), which needs tests/seed-registry.test.ts to allow one slug per school and waits on that change.
+// (Science & Math, also Culture & History), and it stays there. BAM had approved an ElementaryMBA copy
+// (STEAM, brief question 3), but his sharing rule (2026-10-23) gives that school only the seven
+// business-formation courses in FULL_SHARE_TO_ELEMENTARY_MBA (scripts/lib/seed-registry.ts), and any
+// other course only as a preview of its series' first course.
 //
 // LESSON NUMBERS differ from the brief's outline by two from lesson 15 on: BAM's added square-root and
 // cube-root lessons are 15 and 16, inside section 3, so the brief's lesson 24 (the abacus in schools,

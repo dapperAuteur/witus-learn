@@ -66,8 +66,9 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Pickworth (1920), Cullimore (1920), Lipka (1918), the 1964 federal handbook or the FAA's pilot handbook, or
   is plain arithmetic. Claims 8.EE.A.3, 8.EE.A.4,
   HSF-BF.B.5, HSN-Q.A.3 and MP5; four research checks filed. Public and free, held for BAM's demonstrations
-  in the lessons marked P (3 to 7, 10 to 13, 15, 22 and 25). Not yet: the ElementaryMBA copy (needs his OK on
-  a seed-registry test change), STAGED_COURSES (after seeding), and the E6B lesson in an aviation course.
+  in the lessons marked P (3 to 7, 10 to 13, 15, 22 and 25). No ElementaryMBA copy: BAM's sharing rule of
+  2026-10-23 gives that school only the seven business-formation courses (see the ElementaryMBA entry under
+  Schools). Not yet: STAGED_COURSES (after seeding), and the E6B lesson in an aviation course.
 - 🔧 **Map and Compass: Finding Your Way on Land, TOOLS-01** (\`feat/course-map-and-compass\`, no migration; after
   merge run \`pnpm seed:courses:prod\`). BAM approved the brief on 2026-10-14 and opened a new series, Tools That
   Think (analog tools that work without electricity). Survival, also Rivers & Expeditions; public and free.
