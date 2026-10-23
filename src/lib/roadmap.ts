@@ -66,8 +66,9 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Pickworth (1920), Cullimore (1920), Lipka (1918), the 1964 federal handbook or the FAA's pilot handbook, or
   is plain arithmetic. Claims 8.EE.A.3, 8.EE.A.4,
   HSF-BF.B.5, HSN-Q.A.3 and MP5; four research checks filed. Public and free, held for BAM's demonstrations
-  in the lessons marked P (3 to 7, 10 to 13, 15, 22 and 25). Not yet: the ElementaryMBA copy (needs his OK on
-  a seed-registry test change), STAGED_COURSES (after seeding), and the E6B lesson in an aviation course.
+  in the lessons marked P (3 to 7, 10 to 13, 15, 22 and 25). No ElementaryMBA copy: BAM's sharing rule of
+  2026-10-23 gives that school only the seven business-formation courses (see the ElementaryMBA entry under
+  Schools). Not yet: STAGED_COURSES (after seeding), and the E6B lesson in an aviation course.
 - 🔧 **Map and Compass: Finding Your Way on Land, TOOLS-01** (\`feat/course-map-and-compass\`, no migration; after
   merge run \`pnpm seed:courses:prod\`). BAM approved the brief on 2026-10-14 and opened a new series, Tools That
   Think (analog tools that work without electricity). Survival, also Rivers & Expeditions; public and free.
@@ -2998,6 +2999,23 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   ecosystemSso, firstParty) stay deliberately owner-only, never tenant self-serve.
 - ⚪ **Schools: Trade School + ElementaryMBA stay separate, bridged**: ElementaryMBA's HS end graduates
   into Trade School via a learning path (not merged).
+- 🔧 **ElementaryMBA: one school, three tiers** (\`chore/emba-phase-0\`, no migration; after merge run
+  \`pnpm seed:courses:prod\` then \`pnpm seed:speedway:prod\`). The plan is
+  \`elementary-mba-emba-curriculum-plan\` in the future-work proposals. The school stays \`comingSoon\` until
+  its courses are vetted.
+  - **Foundations** (seeded): the kids' and teen ladders already on the school (STEAM, AI for Kids, the AI
+    for Entrepreneurs E-ladder, Speedway), plus ✅ **How a Business Is Formed**: the seven
+    business-formation courses shared whole from Learn.WitUS (ENTITY-01 to ENTITY-06, capstone ENTITY-99),
+    the only Learn.WitUS courses ElementaryMBA gets in full (BAM, 2026-10-23;
+    \`FULL_SHARE_TO_ELEMENTARY_MBA\` in \`scripts/lib/seed-registry.ts\`, enforced by its test).
+  - **Business Core** (⚪ backlog, no course written): the FIRM series, FIRM-01 *Read the Statements*
+    (financial accounting from a real 10-K) to FIRM-10, then FIRM-99. Its category shelf exists now.
+    FIRM-01 will also appear on Learn.WitUS as a preview, saying "This series continues on ElementaryMBA"
+    (\`src/lib/series-previews.ts\`; the link stays hidden while the school is coming soon).
+  - **Professional** (⚪ backlog): \`harvard-ed-l-d\` once it moves, and anything of that register later,
+    on a shelf not named for any university.
+  - ✅ **School-name disclaimer** (\`src/lib/school-disclaimer.ts\`): "not a degree, not a university, not
+    accredited", on the front page, in the footer of every page, and on the certificate page and email.
 - ⚪ **Documentarian program** (BVC): a course *family* teaching **trusted, cited documentation**, built
   from BAM's **Ghana trip** as the live case study. Shape: a shared **Foundations & Trust core** (ethics,
   consent, sourcing, representation) → a **standalone Archives & Records** course → a **medium ladder**

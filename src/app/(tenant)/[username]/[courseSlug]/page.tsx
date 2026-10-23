@@ -49,6 +49,7 @@ import { CourseNotesPanel } from "@/components/course-notes-panel";
 import { ComingSoonCourseFace } from "@/components/coming-soon-course";
 import { UnvettedDisclosure } from "@/components/unvetted-disclosure";
 import { CertAffiliationNotice } from "@/components/cert-affiliation-notice";
+import { SeriesContinuesNotice } from "@/components/series-continues-notice";
 import { isOpenWhileUnvetted, isUnvetted } from "@/lib/vetting";
 import { civicsBackLink } from "@/lib/civics-nav";
 import { isPlatformOwner } from "@/lib/session";
@@ -408,6 +409,8 @@ export default async function CourseBySlugPage({ params }: Params) {
       {isOpenWhileUnvetted(course) ? <UnvettedDisclosure /> : null}
 
       <CertAffiliationNotice courseSlug={course.slug} />
+
+      <SeriesContinuesNotice tenantSlug={view.tenant.slug} courseSlug={course.slug} />
 
       {ownerNeedsToVet ? <VetCourseCta courseId={course.id} courseTitle={course.title} /> : null}
 

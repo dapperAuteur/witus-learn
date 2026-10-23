@@ -148,7 +148,7 @@ export const RELEASE_FOLLOW_UPS: ReleaseFollowUp[] = [
     kind: "blog-post",
     title: "Publish The Slide Rule post",
     detail:
-      "After #138 and after `fixing-one-quiz-tell-created-its-opposite` (#64) is live: it links to both. Re-check task 80's step 4 list on the day, including whether the ElementaryMBA copy was approved.",
+      "After #138 and after `fixing-one-quiz-tell-created-its-opposite` (#64) is live: it links to both. Re-check task 80's step 4 list on the day, and drop any mention of an ElementaryMBA copy: BAM's 2026-10-23 sharing rule keeps the course on Learn.WitUS only.",
     blogPost: {
       blog: "bam",
       slug: "logarithms-you-can-hold",

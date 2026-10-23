@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  FULL_SHARE_TO_ELEMENTARY_MBA,
   allSeedEntries,
   extractSeedEntries,
   schoolShareViolations,
@@ -57,10 +58,22 @@ describe("seed registry", () => {
     const broken = schoolShareViolations(entries).filter((v) => v.rule === "preview-only");
     expect(broken.map((v) => v.detail)).toEqual([]);
   });
+
+  // The seven business-formation courses are shared whole (scripts/seed-speedway.ts), and nothing
+  // else from Learn.WitUS is: a course added to ElementaryMBA by hand fails here by name.
+  it("puts exactly the seven listed business courses on both Learn.WitUS and ElementaryMBA", () => {
+    const schoolsOf = (slug: string) => new Set(entries.filter((e) => e.slug === slug).map((e) => e.school));
+    for (const slug of FULL_SHARE_TO_ELEMENTARY_MBA) {
+      expect([...schoolsOf(slug)].sort(), slug).toEqual(["elementary-mba", "learn-witus"]);
+    }
+    const lw = new Set(entries.filter((e) => e.school === "learn-witus").map((e) => e.slug));
+    const onBoth = entries.filter((e) => e.school === "elementary-mba" && lw.has(e.slug)).map((e) => e.slug);
+    expect(onBoth.sort()).toEqual([...FULL_SHARE_TO_ELEMENTARY_MBA].sort());
+  });
 });
 
-// The rule itself, on fabricated entries: today's catalog shares nothing, so the catalog tests above
-// would pass with any rule at all. These prove each half fails when it should.
+// The rule itself, on fabricated entries: today's catalog shares only the seven business courses, so
+// the catalog tests above would pass with a much looser rule. These prove each half fails when it should.
 describe("sharing rule (schoolShareViolations)", () => {
   type Reg = Pick<SeedEntry, "file" | "slug" | "school" | "seriesPosition">;
   const reg = (slug: string, school: string | null, seriesPosition: string | null = null): Reg => ({

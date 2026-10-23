@@ -21,9 +21,10 @@ import type { AuthoredCourse } from "./authored-course";
 //
 // VISIBILITY: PUBLIC and free, HELD ("Coming soon") until BAM records the demonstrations the P
 // lessons call for on a Mannheim-type rule. The publishHoldReason in scripts/seed-courses.ts says so.
-// Registered on Learn.WitUS only (Science & Math, also Culture & History). BAM asked for a second copy
-// on the ElementaryMBA school (category STEAM); that needs tests/seed-registry.test.ts to allow one
-// slug per school instead of one per seed script, and waits on his OK.
+// Registered on Learn.WitUS only (Science & Math, also Culture & History), and it stays there. BAM had
+// asked for a copy on ElementaryMBA (STEAM), but his sharing rule (2026-10-23) gives that school only
+// the seven business-formation courses in FULL_SHARE_TO_ELEMENTARY_MBA (scripts/lib/seed-registry.ts),
+// and any other course only as a preview of its series' first course, which TOOLS-02 is not.
 //
 // MARKED LESSONS. Each starts its body with a "> **Before release:**" line (parsed by the seeder).
 //   P (BAM's demonstration): 3, 4, 5, 6, 7, 10, 11, 12, 13, 15, 22, 25. Every P lesson still teaches

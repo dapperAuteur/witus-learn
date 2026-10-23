@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { DISCLAIMER_SHORT } from "@/lib/disclaimer";
+import { SchoolDisclaimerNotice } from "@/components/school-disclaimer-notice";
 
 // Per-tenant footer. Legal links come from tenants.legal — no cross-app footer
 // ("your account also works on …"); each brand stands alone.
@@ -59,6 +60,7 @@ export function SiteFooter({ tenant }: { tenant: TenantRecord }) {
         {/* WCAG AA 4.5:1 for 12px text: neutral-500 on white = 4.74:1, dark neutral-400
             on the #0a0a0a page bg = 7.66:1. The old -400/-600 pair sat at ~2.6:1. */}
         <p className="text-xs text-neutral-600 dark:text-neutral-400">{DISCLAIMER_SHORT}</p>
+        <SchoolDisclaimerNotice tenantSlug={tenant.slug} variant="footer" />
       </div>
     </footer>
   );
