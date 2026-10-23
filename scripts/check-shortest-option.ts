@@ -48,7 +48,6 @@ const DRIFT = 0.03;
  */
 const GRANDFATHERED: Record<string, number> = {
   "scripts/data/acting-course.ts": 1.00,
-  "scripts/data/ai-l1-advanced-prompting-course.ts": 1.00,
   "scripts/data/ai-l2-detecting-ai-course.ts": 1.00,
   "scripts/data/banking-and-the-unbanked-course.ts": 1.00,
   "scripts/data/cash-flow-timing-course.ts": 1.00,
