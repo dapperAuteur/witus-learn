@@ -199,7 +199,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does this course say, in lesson 1, that it will not teach you to do?",
             options: [
-              "Frame a wall",
+              "Frame a wall, a craft learned with tools under supervision",
               "Recognise a load-bearing wall from the pattern of the joists above it",
               "Read a wall section drawing and name the layers it shows",
               "Ask a building department which code edition governs your house",
@@ -212,7 +212,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why is the limit stated in lesson 1 rather than as a closing disclaimer?",
             options: [
-              "A closing disclaimer goes unread",
+              "Because the limit changes what the course is for, so it must shape how the rest is read",
               "Because the publisher requires a warning to appear before any paid content is shown",
               "Because a limit stated late would invalidate the quiz scores recorded earlier in the course",
               "Because the first lesson is the only one an instructor is permitted to edit later",
@@ -225,7 +225,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the Navy's own training manual say about self-study courses like itself?",
             options: [
-              "It is only one part",
+              "That it is only one part, beside practical experience, schools and selected reading",
               "That it replaces supervised instruction for any sailor who scores above the passing mark",
               "That it certifies the reader as qualified to supervise light-frame construction work",
               "That practical experience is useful but no longer necessary once the text is mastered",
@@ -238,7 +238,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say is the first thing knowledge of the parts actually buys a learner?",
             options: [
-              "The names",
+              "The names, since anonymous parts cannot be discussed, priced or inspected",
               "A defensible opinion about whether a contractor's price for the work is fair",
               "The ability to estimate how much lumber a given floor frame will need",
               "Standing to challenge an inspector's finding at a permit hearing",
@@ -251,7 +251,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which of these does the course refuse to give anywhere in its lessons?",
             options: [
-              "A header size",
+              "A header size, or any span, beam size or fastener schedule",
               "The name of the member that sits directly on top of the foundation wall",
               "The reason a footing is wider than the wall standing on it",
               "The direction in which wood shrinks most as it dries",
@@ -264,7 +264,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What credential does finishing this course earn?",
             options: [
-              "None",
+              "None: it is private study, and it earns no card and no certificate",
               "A certificate accepted as evidence of pre-apprenticeship training by most trade programs",
               "Credit toward the classroom hours required for a residential contractor's licence",
               "A card recognised on jobsites as proof of basic construction safety training",
@@ -277,7 +277,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say about the Construction Training course at John Boner Neighborhood Centers?",
             options: [
-              "It substitutes for none of it",
+              "It substitutes for none of it; private study sits beside that training",
               "That it covers the same modules in the same order and can be taken instead",
               "That completing this course shortens the hours required by that program",
               "That this course was written as the assigned reading for that program",
@@ -290,7 +290,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the course treat a remembered number as worse than no number?",
             options: [
-              "It loses its conditions",
+              "Because remembered alone it loses the species, grade, spacing and load it came with",
               "Because learners tend to transpose digits when recalling measurements under pressure",
               "Because building departments refuse to discuss any figure a homeowner quotes from memory",
               "Because the tables that produce such numbers are revised every single year",
@@ -303,7 +303,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does every sizing question in this course end?",
             options: [
-              "The drawings and the building department",
+              "The drawings for that house and the building department that holds its code",
               "In the appendix of the Wood Handbook, which tabulates the values for each species",
               "With the supplier, whose lumber grade stamp settles what the member can carry",
               "With the manufacturer of the fasteners used to make the connection",
@@ -316,7 +316,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a load path?",
             options: [
-              "A weight's route to the ground",
+              "The route a weight takes through the building on its way to the ground",
               "The sequence in which a crew installs framing members on a given day",
               "The maximum weight a single framing member is permitted to carry",
               "The corridor kept clear on a site so material can be moved to where it is needed",
@@ -329,7 +329,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What makes construction light-frame rather than heavy?",
             options: [
-              "Many small repeated members",
+              "Many small repeated wood members rather than a few heavy ones",
               "The use of engineered products rather than lumber sawn directly from a log",
               "A total building weight below the threshold at which a permit becomes necessary",
               "Framing assembled on the ground and lifted into place rather than built in position",
@@ -342,7 +342,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "According to lesson 1, what happens to a part that has no name?",
             options: [
-              "It cannot be discussed",
+              "It cannot be discussed, priced, inspected or argued about by anyone",
               "It is left out of the drawings, since only named members are scheduled",
               "It is treated as non-structural by default until an engineer says otherwise",
               "It cannot be ordered, because suppliers price only members with standard names",
@@ -355,7 +355,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the course say knowing the build sequence is worth something?",
             options: [
-              "You know what is about to be hidden",
+              "Because you know which parts are about to be hidden while looking is still possible",
               "Because the sequence determines which trade is legally responsible for a defect",
               "Because a permit is issued one stage at a time and expires between stages",
               "Because materials must be ordered in the same order the work is performed",
@@ -368,7 +368,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a building department?",
             options: [
-              "The local permit and inspection office",
+              "The local government office that reviews plans, issues permits and inspects work",
               "The state agency that writes the model code later adopted by cities",
               "The trade association that certifies residential contractors in a given region",
               "The office within a construction firm that prepares drawings for submission",
@@ -381,7 +381,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does this course inspect?",
             options: [
-              "Nothing",
+              "Nothing, since inspection is an act of authority this course does not have",
               "Any photographs a learner uploads of their own framing, through the instructor tools",
               "The drawings a learner submits, which are reviewed before the final quiz unlocks",
               "Work completed by learners who have passed every section quiz at eighty percent",
@@ -394,7 +394,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What kind of document is the Builder 3 & 2 manual quoted in lesson 1?",
             options: [
-              "A Navy training manual",
+              "A US Navy nonresident training course released for public distribution",
               "A commercial framing textbook whose publisher granted permission for this course",
               "A federal building code covering residential construction on military installations",
               "A contractor's field guide written by a trade association for its members",
@@ -407,7 +407,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In the Navy preface quoted in lesson 1, what sits alongside practical experience as also necessary?",
             options: [
-              "Schools and selected reading",
+              "Schools, selected reading and the reader's own desire to succeed",
               "Supervised apprenticeship hours logged with a licensed journeyman over two years",
               "Annual refresher testing administered by the reader's own command",
               "Membership of a trade organisation that maintains the reader's certification",
@@ -420,7 +420,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How does lesson 1 describe the honest offer this course makes?",
             options: [
-              "Knowledge, not skill",
+              "Knowledge, not skill: what reading can actually deliver, said plainly",
               "Skill in the parts of framing that can be practised without tools or material",
               "Enough supervised practice to make a first attempt at a small structure safe",
               "A qualification in reading drawings, separate from any framing ability",
@@ -433,7 +433,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Who owns the numbers for one specific house?",
             options: [
-              "Its drawings",
+              "Its drawings, since sizes, spacings and details are drawn for that one building",
               "The building department, which keeps the authoritative copy of every dimension",
               "The lumber supplier, whose grade stamps determine what each member may carry",
               "The homeowner, who may change any dimension that is not load bearing",
@@ -446,7 +446,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Who owns the minimums for a jurisdiction?",
             options: [
-              "The adopted code",
+              "The adopted code: the edition a state or city put into law, with local amendments",
               "The model code publisher, whose latest edition applies as soon as it is issued",
               "The state licensing board that examines and registers residential contractors",
               "The insurer of the building, whose underwriting rules set the floor",
@@ -459,7 +459,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Who owns the numbers that apply to one manufactured product?",
             options: [
-              "Its manufacturer",
+              "Its manufacturer, through the rating printed on it and the instructions in the box",
               "The retailer, who is responsible for confirming the product suits the intended use",
               "The designer of the building, who selects products and therefore warrants them",
               "The testing laboratory that issued the product's original certification",
@@ -472,7 +472,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Who owns the answer to anything unusual, such as removing a wall?",
             options: [
-              "A qualified designer",
+              "A qualified designer, since it is an engineering question for that building",
               "The contractor performing the work, who accepts liability by doing it",
               "The building department, which will design a solution on request",
               "The original builder of the house, who holds the structural calculations",
@@ -485,7 +485,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "According to the Navy manual, what determines header size?",
             options: [
-              "The opening and the load above",
+              "The width of the opening and the weight bearing down from the floor above",
               "The thickness of the wall, since a header must match the width of the studs",
               "The species of lumber available on site when the wall is framed",
               "The height of the ceiling, because a taller wall concentrates more weight",
@@ -498,7 +498,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does the Navy manual say the type and size of header is shown?",
             options: [
-              "In the blueprints",
+              "In the blueprints, which are drawn for that one particular house",
               "In the manufacturer's literature supplied with the window or door unit",
               "In the specifications, which govern the drawings wherever they disagree",
               "On the grade stamp of the lumber selected for the opening",
@@ -511,7 +511,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What three things does the Navy manual say the foundation plan usually specifies about floor joists?",
             options: [
-              "Size, spacing and direction",
+              "Their size, the spacing between them, and their direction of travel",
               "Species, grade and moisture content at the time of installation",
               "Manufacturer, fastener type and the order of installation",
               "Depth, camber and the permitted deflection under a full live load",
@@ -524,7 +524,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the Navy manual say dictates the method of fastening a sill plate to a foundation?",
             options: [
-              "Location and building codes",
+              "The location and its building codes, with the job specifications consulted first",
               "The weight of the structure above, calculated by the framing crew before layout",
               "The season, because anchors set in cold weather behave differently",
               "The foundation contractor, who chooses the method when the concrete is poured",
@@ -537,7 +537,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What kind of housing does the federal standard at 24 CFR part 3280 govern?",
             options: [
-              "Manufactured homes",
+              "Manufactured homes, built to HUD's federal construction standard",
               "Every one- and two-family dwelling built anywhere in the United States",
               "Houses financed with a federally insured mortgage, whoever built them",
               "Site-built houses in states that have adopted no code of their own",
@@ -550,7 +550,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is unusual about 24 CFR part 3280 compared with the model building codes?",
             options: [
-              "It is free to read",
+              "It is a complete building standard that is free and public domain",
               "It is revised continuously rather than republished as dated editions",
               "It applies without any state having to adopt it into law first",
               "It is written by a trade association rather than by a government agency",
@@ -563,7 +563,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why can a course not hold a span figure for a learner?",
             options: [
-              "Too many conditions change it",
+              "Because species, grade, spacing, loads and the code edition all move the answer",
               "Because span tables are copyrighted and may not be reproduced in teaching material",
               "Because spans are measured differently in every state, so no figure transfers",
               "Because the figure changes each time a house settles onto its foundation",
@@ -576,7 +576,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which course in this series teaches a learner to find the code edition governing their own house?",
             options: [
-              "Reading the Plan and the Code",
+              "Reading the Plan and the Code, the companion course in this same series",
               "Construction Math, which teaches the arithmetic needed to apply a code table",
               "Construction Safety, which teaches the federal standards that govern a jobsite",
               "This course, in its final section on reading a wall section drawing",
@@ -589,7 +589,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is an adopted code?",
             options: [
-              "The edition made law locally",
+              "A specific code edition put into law locally, with any local amendments",
               "A model code that a publisher has updated and released for general use",
               "Any code an architect has chosen to design a particular building against",
               "The set of rules an inspector applies based on their own professional judgment",
@@ -602,7 +602,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What are the specifications in a construction document set?",
             options: [
-              "The written half",
+              "The written half, governing materials and workmanship beside the drawings",
               "The list of every dimension too small to letter on the drawings themselves",
               "The manufacturer's instructions collected and bound with the drawings",
               "The permit conditions a building department attaches when it approves a plan",
@@ -615,7 +615,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a schedule on a drawing set?",
             options: [
-              "A table of repeated items",
+              "A table listing each repeated item, such as doors, with its sizes",
               "The calendar showing which trade works in which week of the project",
               "The order in which inspections must be requested as work proceeds",
               "The list of drawings included in the set, with their revision dates",
@@ -628,7 +628,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What must this course say every time it cites 24 CFR part 3280?",
             options: [
-              "That it covers manufactured homes",
+              "That it governs manufactured homes rather than site-built houses",
               "That the section quoted has not been amended since the date it was read",
               "That the reader should confirm the quotation against a printed copy",
               "That it was written by the Department of Energy rather than by HUD",
@@ -641,7 +641,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How many separate times does lesson 2 show the Navy manual handing a sizing question back to the drawings or the code?",
             options: [
-              "Three",
+              "Three: for headers, for floor joists and for fastening the sill plate",
               "Once, in a single footnote about header sizes in load-bearing walls",
               "Seven, one for each structural member the manual describes in that chapter",
               "Never directly, which is why the lesson has to infer it from context",
@@ -654,7 +654,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What single question does lesson 2 teach a learner to ask of any number met in a house?",
             options: [
-              "Who owns this number?",
+              "Who owns this number: the drawings, the code, a maker or a designer?",
               "Is this number a minimum, a maximum or a typical value in ordinary practice?",
               "How old is this number, and has the figure been revised since it was written?",
               "Would a different material give a better result at the same price?",
@@ -667,7 +667,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What spreads a building's load onto the soil?",
             options: [
-              "The footing",
+              "The footing, which spreads the load over a larger area of ground",
               "The sill plate, which distributes weight evenly along the top of the foundation",
               "The subfloor, which ties the joists together into one stiff platform",
               "The girder, which collects the floor load and carries it to the walls",
@@ -680,7 +680,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which is the lowest wooden member of the frame?",
             options: [
-              "The sill plate",
+              "The sill plate, which rests on and is anchored to the foundation",
               "The rim joist, which closes the ends of the floor joists all the way around",
               "The sole plate, which every stud in the exterior wall stands on",
               "The subfloor, which is laid before any wall is raised",
@@ -693,7 +693,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What else is a sill plate called?",
             options: [
-              "The mud sill",
+              "The mud sill, a name the Navy manual records for the same member",
               "The band plate, because it runs as a continuous band around the foundation",
               "The base rail, a term the drawings use where the wall meets concrete",
               "The starter plate, since it is the first member set on the job",
@@ -706,7 +706,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which member closes the ends of the floor joists?",
             options: [
-              "The rim joist",
+              "The rim joist, which runs along the outside walls at the joist ends",
               "The girder, which catches the joists where they would otherwise be too long",
               "The sole plate, which sits on the subfloor once the floor is complete",
               "The bridging, which is fitted between the joists partway along their length",
@@ -719,7 +719,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which set of words all name the same board?",
             options: [
-              "Rim, header and band joist",
+              "Rim, header and band joist, three regional names for the same board",
               "Girder, beam and bridging, which are used interchangeably on drawings",
               "Stud, cripple and trimmer, which differ only in where they are installed",
               "Sheathing, subfloor and underlayment, which are the same panel in three places",
@@ -732,7 +732,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What catches floor joists that would otherwise have to reach wall to wall?",
             options: [
-              "A girder",
+              "A girder, also called a beam, giving them support partway across",
               "A rim joist, which runs across the middle of the building at right angles",
               "Bridging, which stiffens the joists enough to double what they can span",
               "The subfloor, which spreads the load between joists once it is nailed down",
@@ -745,7 +745,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What carries a girder's load down to the footing?",
             options: [
-              "Posts",
+              "Posts of wood or steel, sized by the loads they carry from above",
               "Studs, which continue below the floor line to reach the foundation",
               "The rim joist, which transfers the girder load out to the foundation walls",
               "Bridging, which distributes the load sideways to the nearest bearing wall",
@@ -758,7 +758,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the sheet material nailed over the floor joists called?",
             options: [
-              "The subfloor",
+              "The subfloor, also called rough flooring, which stiffens the floor unit",
               "The underlayment, which is fixed directly to the joists before anything else",
               "The decking, a term reserved for the panels laid over a roof frame",
               "The diaphragm, which is the name used for any panel in a floor",
@@ -771,7 +771,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the plate at the bottom of a framed wall called?",
             options: [
-              "The sole plate",
+              "The sole plate, also called the bottom plate, which sits on the subfloor",
               "The sill plate, the same member that sits on the foundation below",
               "The base chord, matching the bottom chord of a roof truss above",
               "The ledger, which is fastened to the subfloor before the studs are set",
@@ -784,7 +784,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which wall plate is normally doubled?",
             options: [
-              "The top plate",
+              "The top plate, doubled to tie the walls together at the corners",
               "The sole plate, so that the wall has a level base on an uneven subfloor",
               "The sill plate, so the anchor bolts have enough wood to hold against",
               "Both plates equally, since the wall is symmetrical top to bottom",
@@ -797,7 +797,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which studs carry the ends of a header?",
             options: [
-              "Jack studs",
+              "Jack studs, which run from the sole plate to the header's underside",
               "King studs, which run unbroken from the sole plate to the top plate",
               "Cripple studs, which are cut short to fit above the header",
               "Corner posts, which are built up wherever one wall meets another",
@@ -810,7 +810,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is another name for a jack stud?",
             options: [
-              "A trimmer",
+              "A trimmer stud, the same stick known by its other common name",
               "A cripple, used where the stud is shorter than a full-height member",
               "A king stud, which is the same member described from the other side",
               "A post, since it carries a concentrated load rather than a shared one",
@@ -823,7 +823,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which studs run full height on each side of a rough opening?",
             options: [
-              "King studs",
+              "King studs, which run plate to plate with the jacks nailed to them",
               "Jack studs, which stop at the underside of the header they support",
               "Cripple studs, which run from the header up to the double top plate",
               "Corner posts, which are only built where two walls meet at an angle",
@@ -836,7 +836,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What are the short studs above a header or below a rough window sill called?",
             options: [
-              "Cripples",
+              "Cripple studs, which pass the load down from the plate above",
               "Jacks, because they are jacked into place after the header is set",
               "Blocks, which is the general name for any short piece between studs",
               "Ribbands, which are let into the studs to carry short members",
@@ -849,7 +849,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What are the three kinds of member that make up a roof truss?",
             options: [
-              "Top chord, bottom chord and webs",
+              "The top chords, the bottom chord, and the webs running between them",
               "Rafter, ceiling joist and collar tie, renamed once they are joined by gussets",
               "King post, queen post and strut, which appear in every truss shape",
               "Purlin, ridge and hip, which together form the frame the covering sits on",
@@ -862,7 +862,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What goes on immediately over the rafters or truss top chords?",
             options: [
-              "Roof sheathing",
+              "Roof sheathing, with underlayment and then the covering above it",
               "The cladding, which is the general name for any outer covering on a house",
               "The water-resistive barrier, which is always the first layer above framing",
               "The ceiling, which is fixed to the underside of the same members",
@@ -875,7 +875,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is cladding?",
             options: [
-              "The outermost wall finish",
+              "The outermost wall finish, such as siding, stucco or brick veneer",
               "The structural panel fixed to the studs to keep the wall from leaning",
               "The sheet or coating whose job is to stop and drain water",
               "The insulation placed between the studs of an exterior wall",
@@ -888,7 +888,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "When two names for the same part disagree, which one does this course say wins?",
             options: [
-              "The drawing's word",
+              "The drawing's word, since the inspector and supplier will use it on that job",
               "The oldest term, since the trade's traditional names are the most precise",
               "The supplier's term, because that is the name the material is ordered under",
               "The regional term used where the house stands, whatever the drawings say",
@@ -1013,7 +1013,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is dead load?",
             options: [
-              "The weight of the structure itself",
+              "The weight of the structure itself, constant once the house is finished",
               "The weight a structure carried before it was last altered or extended",
               "The portion of a load that a member carries without any deflection at all",
               "The weight of material stored on site and not yet built into the house",
@@ -1026,7 +1026,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is live load?",
             options: [
-              "The weight of movable things",
+              "The total weight of movable things the structure supports at one instant",
               "The load a house carries only while it is under construction and unfinished",
               "Any load that changes the shape of a member without breaking it",
               "The weight of the building's mechanical equipment while it is running",
@@ -1039,7 +1039,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which three words in the manual's definition of live load matter most?",
             options: [
-              "At a particular instant",
+              "At a particular instant, because design must allow for the bad instant",
               "Over the building's life, because live load is averaged across many years",
               "Under normal conditions, because unusual conditions are excluded entirely",
               "By the occupant only, because contents belonging to others are not counted",
@@ -1052,7 +1052,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In the floor-framing chapter, what is given as the dead load of a floor?",
             options: [
-              "The floor's own material",
+              "The weight of the material used for the floor unit itself",
               "The furniture that is never moved, since it behaves as if it were permanent",
               "The joists alone, with the subfloor counted separately as live load",
               "Half the weight of the walls standing on the floor above it",
@@ -1065,7 +1065,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why is a roof in a snowy region not the same roof as an identical one further south?",
             options: [
-              "Snow and ice add load",
+              "Because the roof must be sturdy enough to carry the weight of snow and ice",
               "Because cold weather makes framing lumber more brittle and less able to bend",
               "Because roof coverings are manufactured to different thicknesses by region",
               "Because a steeper pitch is required wherever the winter is longer",
@@ -1078,7 +1078,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In what three directions does a house have to resist load?",
             options: [
-              "Down, sideways and up",
+              "Down from gravity, sideways from wind and earthquakes, and up from wind",
               "Down and sideways only, since nothing in a house is ever pulled upward",
               "Along each of the building's two axes, plus rotation about the centre",
               "Inward from all four walls, plus downward from the roof structure",
@@ -1091,7 +1091,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does HUD's manufactured home standard say may NOT be counted as resisting wind overturning?",
             options: [
-              "Roof snow and floor live loads",
+              "Roof snow and floor live loads, since furniture may not count as ballast",
               "The dead weight of the roof covering, because it may be blown off first",
               "Any load carried by a member that is also resisting a horizontal force",
               "The weight of the foundation, which is treated as part of the ground",
@@ -1104,7 +1104,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is uplift?",
             options: [
-              "Wind lifting a roof",
+              "Wind pulling upward over a roof instead of only pushing on the house",
               "The upward spring of a floor joist once a heavy load is removed from it",
               "The rise of a foundation when saturated clay soil swells beneath it",
               "The lifting of a wall into position once it has been framed on the subfloor",
@@ -1117,7 +1117,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is overturning?",
             options: [
-              "A sideways force tipping a building",
+              "A sideways force tipping a building, resisted by its weight and anchorage",
               "The rotation of a joist about its own length when it is not braced",
               "The collapse of a wall inward when the roof above it is removed",
               "The reversal of a load path when an upper storey is added later",
@@ -1130,7 +1130,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What kind of load does an earthquake put into a building?",
             options: [
-              "A horizontal one",
+              "A horizontal one, pushing the building's own mass sideways",
               "A purely vertical one, since the ground drops away beneath the foundation",
               "A load on the roof only, because the upper storeys sway the furthest",
               "A load on the interior partitions, which move independently of the shell",
@@ -1143,7 +1143,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the course call a new stone counter a structural event?",
             options: [
-              "It adds dead load",
+              "Because it adds dead load that everything below it now has to carry",
               "Because its weight is counted as live load until it is permanently fixed",
               "Because it changes the direction in which the floor joists must run",
               "Because it requires a permit in every jurisdiction in the United States",
@@ -1156,7 +1156,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which part of a house does wind load most obviously try to remove?",
             options: [
-              "The roof",
+              "The roof, which wind lifts rather than presses down onto the walls",
               "The foundation, which is pushed sideways off its footing by the pressure",
               "The interior partitions, which have nothing holding them down",
               "The subfloor, which lifts once air pressure builds inside the crawl space",
@@ -1169,7 +1169,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What kind of building does the standard quoted about wind overturning actually govern?",
             options: [
-              "Manufactured homes",
+              "Manufactured homes, under HUD's standard at 24 CFR part 3280",
               "Any dwelling built after the standard's effective date in 1976",
               "Houses in coastal counties designated as high-wind zones",
               "Both manufactured and site-built homes, since the physics is identical",
@@ -1182,7 +1182,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "According to lesson 4, which loads are the ones houses actually fail under?",
             options: [
-              "The sideways and upward ones",
+              "The sideways and upward ones, which sections 5, 6 and 8 cover",
               "Dead loads, because they act continuously for the whole life of the house",
               "Live loads, because occupants routinely exceed what the floor was designed for",
               "Snow loads, because they are the only load that arrives without warning",
@@ -1195,7 +1195,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which of these is a dead load?",
             options: [
-              "The drywall",
+              "The drywall fixed to the wall and ceiling framing of a room",
               "A bookcase standing against an interior wall in a spare bedroom",
               "Rainwater ponding on a flat roof after a storm drain blocks",
               "A crowd of guests standing together on a deck during a party",
@@ -1208,7 +1208,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say a live load figure really represents?",
             options: [
-              "A guess about a worst afternoon",
+              "A judgment about a worst afternoon rather than about a typical one",
               "A measurement taken in similar houses and averaged across a full year",
               "The heaviest load the floor carried during its first year in service",
               "A figure the occupant agrees to in writing when the house is sold",
@@ -1221,7 +1221,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does seismic load mean in this course's vocabulary?",
             options: [
-              "Earthquake force through the foundation",
+              "Earthquake force: shaking ground makes the building's mass push sideways",
               "The vibration a house experiences from heavy traffic on a nearby road",
               "The settling of a building into soft ground over its first decade",
               "The force released when a heavily loaded member finally cracks",
@@ -1234,7 +1234,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the course introduce load types before naming the load path?",
             options: [
-              "Different loads act differently",
+              "Because a house answers each kind of load, down, sideways or up, separately",
               "Because the vocabulary section of the course is arranged alphabetically",
               "Because live load has to be calculated before dead load can be estimated",
               "Because the drawings list loads before they show any structural member",
@@ -1247,7 +1247,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the alternating rhythm of a load path through a house?",
             options: [
-              "Horizontal, then vertical, repeating",
+              "Horizontal, then vertical, repeating: something spans, then something stands",
               "Heavy members at the top and progressively lighter ones lower down",
               "Wood, then steel, then concrete, in the order each material was invented",
               "Sheathing, then framing, then finish, repeated at every level",
@@ -1260,7 +1260,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "According to the Navy manual, what is the ultimate support for every load in a structure?",
             options: [
-              "The earth",
+              "The earth itself, which carries what the footings deliver to it",
               "The foundation walls, which are designed never to move under any load",
               "The footings, which are the last engineered element in the path",
               "The sill plate, which is where all the framing loads finally meet",
@@ -1273,7 +1273,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In the walked load path, what do rafters bear on at the outside wall?",
             options: [
-              "The top plate",
+              "The top plate, which hands the load down to the studs below it",
               "The sole plate, which is the wall member closest to the roof structure",
               "The rim joist, which runs continuously around the top of the building",
               "The ceiling joists, which carry the rafters at their lower ends",
@@ -1286,7 +1286,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the subfloor span between?",
             options: [
-              "Floor joists",
+              "The floor joists, strengthening the floor unit as one platform",
               "The girders, with the joists carrying only the finish floor above them",
               "The sole plates of the walls on either side of a room",
               "The sill plates, which support it directly at the perimeter",
@@ -1299,7 +1299,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In the load path, what does a girder do for the floor joists?",
             options: [
-              "Catches them partway across",
+              "Gives them an intermediate support partway across the building",
               "Ties their ends together so they cannot roll or tip under load",
               "Spreads their load sideways into the sheathing of the walls below",
               "Replaces them entirely wherever a room is wider than usual",
@@ -1312,7 +1312,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does a roof truss put the load it carries?",
             options: [
-              "On two outside walls",
+              "On the two outside walls it rests on, which carry its load down",
               "On the ridge board, which then distributes it along the length of the house",
               "On the interior partitions beneath it, in proportion to their length",
               "Evenly across every wall the truss passes over, inside and out",
@@ -1325,7 +1325,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the word integrated mean in HUD's requirement that a home be a completely integrated structure?",
             options: [
-              "Members and connections act as one",
+              "The members and connections act as one system that transmits the loads",
               "Every component is manufactured by a single approved supplier",
               "The structure and the mechanical systems are installed at the same stage",
               "The building is designed by one person rather than by several trades",
@@ -1338,7 +1338,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "About how many handovers does the course count in the load path it walks?",
             options: [
-              "About a dozen",
+              "About a dozen, and every one is a connection somebody made",
               "Exactly four, one at each of the building's structural levels",
               "Two, since the roof and the floor are the only real transfers",
               "Hundreds, one at every nail in the framing",
@@ -1351,7 +1351,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does bear mean as a verb in framing?",
             options: [
-              "To rest on and pass load into",
+              "To rest on a support and pass load into it, as a joist does",
               "To resist a sideways force without moving out of plumb",
               "To carry a load along a member's length rather than across it",
               "To hold two members together against a pulling-apart force",
@@ -1364,7 +1364,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which member closes the ends of the floor joists along the outside walls?",
             options: [
-              "The rim joist",
+              "The rim joist, also called the header joist or band joist",
               "The sill plate, which runs under the joists at the same perimeter",
               "The sole plate of the wall standing directly above the joists",
               "The girder, which runs around the perimeter of the floor frame",
@@ -1377,7 +1377,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does a trussed house often have large open interior spaces?",
             options: [
-              "The trusses span wall to wall",
+              "Because the trusses span wall to wall and need no support in the middle",
               "Because trusses are shallower than rafters and leave more headroom",
               "Because a trussed roof weighs less, so fewer interior walls are needed",
               "Because interior walls in trussed houses are built after the roof is on",
@@ -1390,7 +1390,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does span mean in this course's vocabulary?",
             options: [
-              "What a member does between supports",
+              "What a member does between supports, and also the distance it covers",
               "The total width of a building measured across its outside walls only",
               "The distance a load travels through a structure before reaching the soil",
               "The gap left between two panels so they can expand without buckling",
@@ -1403,7 +1403,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In the load path, what carries a girder down to the foundation?",
             options: [
-              "Posts",
+              "Posts of wood or steel, sized according to the loads they carry",
               "Studs, which continue below the floor line inside the foundation wall",
               "The sill plate, which runs beneath the girder for its whole length",
               "Bridging, which transfers the girder load out to the perimeter walls",
@@ -1416,7 +1416,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What sits between the sole plate of a wall and the floor joists below it?",
             options: [
-              "The subfloor",
+              "The subfloor, on which the walls are laid out, framed and raised",
               "The sill plate, which is laid over the joists before the walls are framed",
               "Nothing, because the sole plate is nailed directly to the joist tops",
               "The rim joist, which runs under every wall in the building",
@@ -1429,7 +1429,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say happens to the weight of the roof material?",
             options: [
-              "It is transferred to the soil",
+              "It is transferred through every joining member down to the soil",
               "It is carried by the ridge board and resolved at the gable ends",
               "It is balanced by the uplift of wind over the same surface",
               "It is shared equally between the roof structure and the ceiling below",
@@ -1442,7 +1442,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does lesson 5 say every arrow in the load path deserves attention?",
             options: [
-              "Each one is a joint",
+              "Because each one is a joint, a connection somebody had to make",
               "Because each arrow represents a member that could be undersized",
               "Because the drawings number the arrows for the inspector to check",
               "Because a load doubles each time it passes from one member to another",
@@ -1455,7 +1455,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does load bearing describe?",
             options: [
-              "What rests on a wall",
+              "What rests on the wall, not how the wall happens to look",
               "The thickness and material of the wall being examined",
               "Whether a wall was built at the same time as the rest of the house",
               "Whether a wall is drawn with a heavier line on the floor plan",
@@ -1468,7 +1468,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the Navy manual say a bearing partition supports?",
             options: [
-              "The ends of joists above",
+              "The ends of the floor or ceiling joists above it",
               "Only the finish ceiling material fixed to its underside",
               "The wall directly above it on the next storey, and nothing else",
               "The roof covering, wherever the partition reaches the underside of the sheathing",
@@ -1481,7 +1481,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say about a partition running in the same direction as the joists?",
             options: [
-              "It carries little weight from above",
+              "It carries little weight from the floor or ceiling above it",
               "It must always be removed before any remodelling can begin",
               "It carries exactly half the load of a bearing partition of the same length",
               "It is never framed with a double top plate, which makes it easy to identify",
@@ -1494,7 +1494,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the one clue an ordinary person can often read for themselves?",
             options: [
-              "The direction of the joists",
+              "The direction of the joists, often visible in a basement or attic",
               "The thickness of the wall, since bearing walls are built heavier",
               "The presence of a door, because openings are only cut in nonbearing walls",
               "Whether the wall reaches all the way to the exterior sheathing",
@@ -1507,7 +1507,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a doubled joist under a wall that runs parallel to the joists tell you?",
             options: [
-              "The builder expected that wall",
+              "That the builder expected that wall and doubled the joists to carry it",
               "That the joists beneath were damaged and had to be reinforced later",
               "That the wall is definitely nonbearing, since the doubling replaces it",
               "That the floor above carries an unusually heavy finish material",
@@ -1520,7 +1520,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What exactly do roof trusses remove the need for, according to the manual?",
             options: [
-              "Interior bearing partitions",
+              "Interior bearing partitions, since trusses are self-supporting",
               "Any connection between the roof structure and the walls below it",
               "Ceiling joists, which trusses make unnecessary at every level of a house",
               "Exterior wall bracing, since a trussed roof braces the whole building",
@@ -1533,7 +1533,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the truss fact not settle whether an interior wall can go?",
             options: [
-              "A floor above may still bear on it",
+              "Because a floor above may still bear on it, and the truss fact covers only the roof",
               "Because trusses are only self-supporting for the first ten years of service",
               "Because trussed roofs are rebuilt as rafters whenever a wall is removed",
               "Because a truss transfers half its load to the interior walls it crosses",
@@ -1546,7 +1546,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Besides carrying weight, what else can a wall be doing that removing it would undo?",
             options: [
-              "Bracing the house sideways",
+              "Bracing the house sideways and holding it square against wind",
               "Sealing the floor against air movement from the crawl space below",
               "Carrying the electrical grounding path for the whole building",
               "Holding the ceiling drywall flat across the middle of the span",
@@ -1559,7 +1559,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the course's answer to can I take this wall out?",
             options: [
-              "Have someone qualified look, and pull a permit",
+              "Have someone qualified look at that building, and pull a permit",
               "Check whether the joists above run parallel to it, and proceed if they do",
               "Remove it in stages, watching the ceiling for cracks as you go",
               "Replace it with a beam of the same length before removing anything",
@@ -1572,7 +1572,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a point load?",
             options: [
-              "A load concentrated at one spot",
+              "A load concentrated at one spot, such as the foot of a post",
               "A load applied at the exact centre of a member's span",
               "The largest load a member will carry before it visibly deflects",
               "A load transferred through a single fastener rather than through several",
@@ -1585,7 +1585,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How does the manual classify girders?",
             options: [
-              "Bearing or nonbearing",
+              "As bearing or nonbearing, by whether a wall sits above them",
               "Primary or secondary, according to how much of the floor they carry",
               "Solid or built up, which determines what loads they may support",
               "Interior or exterior, depending on which wall they run between",
@@ -1598,7 +1598,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a bearing girder support that a nonbearing girder does not?",
             options: [
-              "A wall framed above it",
+              "A wall framed directly above it, on top of the floor's own loads",
               "The live load of the floor, which a nonbearing girder never carries",
               "The dead load of the floor unit, which sits only on bearing members",
               "The foundation wall at each of its two ends",
@@ -1611,7 +1611,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why can you not settle the question by looking at a wall's appearance?",
             options: [
-              "Bearing is about what rests on it",
+              "Because bearing is about what rests on a wall, not about its finish",
               "Because finishes are applied identically whatever the wall is doing",
               "Because bearing walls are deliberately disguised during construction",
               "Because the drawings never distinguish between the two kinds of wall",
@@ -1624,7 +1624,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say about cutting a hole through a joist, truss or beam to run a pipe?",
             options: [
-              "Same answer: qualified person and permit",
+              "The same answer as removing a wall: a qualified person and a permit",
               "It is acceptable anywhere within the middle third of the member's length",
               "It is acceptable in a joist but never in a beam, whatever the size",
               "It is a finishing decision rather than a structural one",
@@ -1637,7 +1637,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a self-supporting member, in the sense the manual uses for trusses?",
             options: [
-              "One that spans wall to wall",
+              "One that spans wall to wall with no support needed in between",
               "One that carries its own weight but none of the roof covering above it",
               "One that needs no fasteners because its joints are cut to interlock",
               "One that can be installed by a single worker without assistance",
@@ -1650,7 +1650,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which of these is the strongest reason the clue about joist direction cannot be acted on alone?",
             options: [
-              "What is above the ceiling is hidden",
+              "Because what sits above the ceiling, such as a post or girder end, is hidden",
               "Because joists are rarely laid in a consistent direction in any one house",
               "Because joist direction changes as a house settles over its first decade",
               "Because the drawings show joist direction only for the ground floor",
@@ -1663,7 +1663,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which phrase does the course use for the moment when a load passes from one member to the next?",
             options: [
-              "A handover",
+              "A handover, with each one a connection somebody made",
               "A transfer coefficient, which is the proportion of load that actually moves",
               "A bearing surface, meaning the area where the two members touch",
               "A load junction, which is the term the drawings use at each level",
@@ -1676,7 +1676,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the roof covering itself rest on?",
             options: [
-              "Roof sheathing",
+              "Roof sheathing, which spans between the rafters or top chords",
               "The rafters directly, with sheathing used only on trussed roofs",
               "The top plate, which continues out over the eaves to support it",
               "The underlayment, which is a structural layer beneath the covering",
@@ -1689,7 +1689,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which two loads does the DOE guide say a continuous load path must carry to the ground?",
             options: [
-              "Vertical and horizontal",
+              "Vertical loads and horizontal loads, such as uplift and seismic force",
               "Dead and live, which together make up the total design load",
               "Snow and wind, the two loads that vary most by region",
               "Static and dynamic, according to whether the load moves during use",
@@ -1702,7 +1702,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What makes adding a second layer of roofing a structural question?",
             options: [
-              "It permanently increases dead load",
+              "It permanently increases the dead load everything below has to carry",
               "It changes the pitch of the roof and therefore how snow slides off it",
               "It shifts the load path from the rafters onto the ridge board",
               "It converts part of the roof's live load into dead load",
@@ -1715,7 +1715,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where in a house can an ordinary person most easily see which way the joists run?",
             options: [
-              "An unfinished basement or attic",
+              "An unfinished basement or attic, where the framing was never covered",
               "Through the floor registers, which are always cut parallel to the joists",
               "At the front door, where the threshold exposes the framing beneath",
               "In the loft hatch surround, which is framed square to the joists",
@@ -1728,7 +1728,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say is the failure mode behind its caution about removing walls?",
             options: [
-              "A ceiling coming down",
+              "A ceiling coming down onto the room where you were standing",
               "A slow sag that shows up as cracked paint over several seasons",
               "A permit violation discovered when the house is later sold",
               "An insurance claim refused because the work was undocumented",
@@ -1860,7 +1860,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the Wood Handbook mean by calling wood orthotropic?",
             options: [
-              "Three axes, three sets of properties",
+              "That it has independent properties along three axes, like three materials in one",
               "That its strength rises and falls with the season in which the tree was felled",
               "That it behaves as a single uniform material once it has been kiln dried",
               "That its properties differ between heartwood and sapwood in the same log",
@@ -1873,7 +1873,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which axis runs parallel to the fibres of a piece of wood?",
             options: [
-              "The longitudinal axis",
+              "The longitudinal axis, which is the direction of the grain",
               "The radial axis, which runs outward from the centre of the log",
               "The tangential axis, which follows the curve of the growth rings",
               "The transverse axis, which runs across the face of a sawn board",
@@ -1886,7 +1886,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which axis is normal to the growth rings?",
             options: [
-              "The radial axis",
+              "The radial axis, perpendicular to the grain and to the rings",
               "The longitudinal axis, which is perpendicular to every ring it crosses",
               "The tangential axis, which meets each ring at a right angle",
               "The shear axis, which is defined separately for each species",
@@ -1899,7 +1899,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does modulus of rupture reflect?",
             options: [
-              "Load-carrying capacity in bending",
+              "The maximum load-carrying capacity of a member in bending",
               "The moisture content at which a member will fail under its own weight",
               "The force needed to pull two fastened members apart along the grain",
               "The amount a member deflects before it returns to its original shape",
@@ -1912,7 +1912,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How is compressive stress perpendicular to grain reported, and why?",
             options: [
-              "At the proportional limit",
+              "At the proportional limit, since it has no clearly defined ultimate stress",
               "As an average of three tests, because single results vary too widely to use",
               "As a percentage of the compressive strength parallel to the grain",
               "Only for softwoods, because hardwoods do not compress measurably",
@@ -1925,7 +1925,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which four strength properties does the handbook name as most commonly reported for design?",
             options: [
-              "Bending, two compressions and shear",
+              "Bending, compression parallel and perpendicular to grain, and shear",
               "Hardness, toughness, stiffness and density, measured on clear specimens",
               "Tension, torsion, fatigue and creep, measured over a full service life",
               "Uplift, racking, bearing and deflection, measured in finished assemblies",
@@ -1938,7 +1938,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In which direction is a stud carrying its load?",
             options: [
-              "Along the grain",
+              "Along the grain, compressed lengthwise where wood performs best",
               "Across the grain, which is why studs are set with the wide face outward",
               "Tangentially, following the curve of the growth rings in the piece",
               "In shear, because the load arrives at an angle from the plate above",
@@ -1951,7 +1951,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In which direction is the plate under a stud being loaded?",
             options: [
-              "Across the grain",
+              "Across the grain, where the wood compresses rather than breaking",
               "Along the grain, since the plate runs continuously through the wall",
               "In bending, because the plate spans between the studs above it",
               "In tension, because the studs pull upward on it under wind uplift",
@@ -1964,7 +1964,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How does the course label its reading of what the plate-and-stud difference means for a house?",
             options: [
-              "Its own reading, not the handbook's",
+              "As its own reading, an inference the handbook does not state itself",
               "A finding the handbook states directly in its chapter on fasteners",
               "A requirement drawn from the federal standard for manufactured homes",
               "A rule of thumb the Navy manual gives for light-frame construction",
@@ -1977,7 +1977,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why can this course teach from the Wood Handbook at all?",
             options: [
-              "Federal works carry no copyright",
+              "Because federal government works carry no copyright under 17 U.S.C. 105",
               "Because the Forest Products Laboratory licenses it for educational use on request",
               "Because a handbook of measured data is not considered a creative work",
               "Because the course quotes less than the amount permitted by fair use",
@@ -1990,7 +1990,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say is worth more than the facts in this section?",
             options: [
-              "Checking the source yourself",
+              "The habit of checking the free primary source yourself",
               "Memorising the shrinkage values for the species common in your region",
               "Learning the three axes in the order the handbook lists them",
               "Being able to name the handbook's editor and report number on demand",
@@ -2003,7 +2003,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is shear, as the handbook uses the term for wood?",
             options: [
-              "Internal slipping along the grain",
+              "Internal slipping of one part upon another along the grain",
               "The splitting of a board at its end as it dries in service",
               "The crushing of fibres where a concentrated load lands",
               "The bending of a member beyond the point where it can return",
@@ -2016,7 +2016,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a proportional limit?",
             options: [
-              "Where deformation stops tracking load",
+              "The point beyond which deformation stops tracking the load",
               "The maximum load a member may carry under the adopted building code",
               "The ratio of a member's depth to its width in a structural design",
               "The share of a total load that one member in a group carries",
@@ -2029,7 +2029,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How long is the Wood Handbook this course cites?",
             options: [
-              "543 pages",
+              "543 pages, published by the Forest Products Laboratory in 2021",
               "About 80 pages, since it covers only the properties needed for framing",
               "Roughly 1,200 pages across three separately published volumes",
               "24 pages, which is the length of the chapter on moisture relations",
@@ -2042,7 +2042,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does grain mean in this course's vocabulary?",
             options: [
-              "The direction of the fibres",
+              "The direction of the fibres, which is the longitudinal axis",
               "The visible pattern of colour on the face of a finished board",
               "The size of the wood cells, which varies with growing conditions",
               "The angle at which a log was sawn to produce a given piece",
@@ -2055,7 +2055,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What makes steel different from wood in the way it carries load?",
             options: [
-              "Direction does not change its behaviour",
+              "Steel behaves the same whatever direction a load comes from",
               "Steel carries load only in tension, while wood carries load only in compression",
               "Steel members never need to be connected to the structure around them",
               "Steel is unaffected by temperature, while wood expands when warmed",
@@ -2068,7 +2068,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which agency publishes the Wood Handbook?",
             options: [
-              "The USDA Forest Service",
+              "The USDA Forest Service, through its Forest Products Laboratory",
               "The Department of Housing and Urban Development, through its research office",
               "The Department of Energy, through a national laboratory",
               "The Department of Commerce, through the standards it maintains for lumber",
@@ -2081,7 +2081,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why is a heavily loaded post not simply landed on whatever is underneath it?",
             options: [
-              "The material below is loaded across the grain",
+              "Because the material below it is loaded across the grain, where it compresses",
               "Because a post must always be fastened with bolts rather than nails",
               "Because the post would otherwise split along its own length under load",
               "Because posts are not permitted to bear on wood members of any kind",
@@ -2094,7 +2094,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does hygroscopic mean?",
             options: [
-              "It takes moisture from the air",
+              "It takes on moisture from the air around it for the life of the house",
               "It resists water absorption unless the surface coating is damaged",
               "It releases moisture only when heated above the boiling point of water",
               "It holds a constant moisture content once the material has been dried",
@@ -2107,7 +2107,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is moisture content measured against?",
             options: [
-              "The ovendry mass of the wood",
+              "The ovendry mass of the wood, expressed as a percentage",
               "The mass of the piece as delivered to the jobsite",
               "The volume of the piece, expressed as water per cubic foot",
               "The mass of an identical piece of the same species at equilibrium",
@@ -2120,7 +2120,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How can green lumber have a moisture content above 100 percent?",
             options: [
-              "The denominator is the dry wood",
+              "Because the measurement divides the water by the mass of the dry wood",
               "Because bark and sap are included in the measurement of a green piece",
               "Because the figure is a volume ratio rather than a mass ratio",
               "Because the reading is taken before the piece has been weighed at all",
@@ -2133,7 +2133,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the fiber saturation point?",
             options: [
-              "Cell walls saturated, cavities empty",
+              "Cell walls fully saturated with bound water while the cavities hold none",
               "The moisture content at which wood begins to decay regardless of species",
               "The point at which no further water can be added to a piece of wood",
               "The moisture content lumber must reach before it may be graded as dry",
@@ -2146,7 +2146,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What average does the handbook give for the point below which most wood properties start to change?",
             options: [
-              "About 30 percent",
+              "About 30 percent, a practical average that varies by species and piece",
               "About 19 percent, matching the definition of dry lumber in the standard",
               "About 12 percent, matching the recommended value for exterior use",
               "About 50 percent, halfway between green and ovendry condition",
@@ -2159,7 +2159,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is equilibrium moisture content?",
             options: [
-              "Neither gaining nor losing moisture",
+              "The level at which wood neither gains nor loses moisture in its surroundings",
               "The average moisture content of a species measured across its whole range",
               "The moisture content lumber is kiln dried to before it leaves the mill",
               "The moisture content at which wood stops shrinking permanently",
@@ -2172,7 +2172,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In which direction does wood shrink most?",
             options: [
-              "Tangentially",
+              "Tangentially, in the direction of the annual growth rings",
               "Longitudinally, which is why long members shorten noticeably as they dry",
               "Radially, because shrinkage follows the path water takes out of the log",
               "Equally in all three directions, since the cell walls shrink uniformly",
@@ -2185,7 +2185,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What ratio does the handbook give between tangential and radial shrinkage?",
             options: [
-              "Tangential is about twice radial",
+              "Tangential shrinkage is about twice the radial shrinkage",
               "They are approximately equal in softwoods and differ only in hardwoods",
               "Radial is about three times tangential in most commercial species",
               "The ratio depends entirely on how quickly the piece was dried",
@@ -2198,7 +2198,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is average longitudinal shrinkage from green to ovendry for most species?",
             options: [
-              "Between 0.1 and 0.2 percent",
+              "Between 0.1 and 0.2 percent, small enough to ignore in most framing",
               "Between 2 and 3 percent, which is why long members must be cut oversize",
               "Between 4 and 5 percent, similar to radial shrinkage in most species",
               "Zero, because wood does not change length along the grain at all",
@@ -2211,7 +2211,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What tangential shrinkage does the handbook list for coast Douglas-fir, green to ovendry?",
             options: [
-              "7.6 percent",
+              "7.6 percent, roughly double its radial figure of 4.8 percent",
               "12.4 percent, which is the figure given for its volumetric shrinkage",
               "4.8 percent, which is the figure given for its radial shrinkage",
               "19 percent, matching the maximum moisture content for dry lumber",
@@ -2224,7 +2224,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What caution does the lesson attach to the published shrinkage values?",
             options: [
-              "They come from small clear specimens",
+              "They come from small clear specimens, not the stick in your wall",
               "They were measured before 1950 and have not been checked since",
               "They apply only to lumber dried in a kiln rather than air dried",
               "They are averages across all species rather than values for one",
@@ -2237,7 +2237,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the handbook advise about the moisture content of wood at installation?",
             options: [
-              "Install it near its service value",
+              "Install it near the moisture content it will see in service",
               "Install it as dry as possible, since drier wood always performs better",
               "Install it green, so that it dries in place and tightens the joints",
               "Install it at the same value everywhere in the United States",
@@ -2250,7 +2250,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What recommended installation value does the handbook give for interior woodwork and flooring in most of the United States?",
             options: [
-              "About 8 percent",
+              "About 8 percent, with about 12 percent recommended for exterior work",
               "About 19 percent, which is the maximum for lumber graded as dry",
               "About 30 percent, just below the fiber saturation point",
               "About 12 percent, the same figure recommended for exterior use",
@@ -2263,7 +2263,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What maximum moisture content defines dry lumber in the American Softwood Lumber Standard?",
             options: [
-              "19 percent",
+              "19 percent, which sits above the recommended installation values",
               "8 percent, matching the recommended value for interior installation",
               "30 percent, the average fiber saturation point for wood",
               "12 percent, matching the recommended value for exterior installation",
@@ -2276,7 +2276,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Above the fiber saturation point, what happens to wood's dimensions as moisture changes?",
             options: [
-              "They stay stable",
+              "They stay stable, because the movement starts only below that point",
               "They change faster than below it, because more water is moving",
               "They shrink steadily until the wood reaches its ovendry condition",
               "They swell without limit until the cell walls rupture",
@@ -2289,7 +2289,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why is equilibrium moisture content described as a moving target?",
             options: [
-              "Temperature and humidity change",
+              "It follows the temperature and humidity, which change with the seasons",
               "Because the wood's species characteristics alter as it ages in place",
               "Because the ovendry mass of the wood falls slowly over many years",
               "Because measurement instruments drift and must be recalibrated often",
@@ -2302,7 +2302,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What word describes a material that behaves differently in different directions?",
             options: [
-              "Anisotropic",
+              "Anisotropic, a word the handbook uses about shrinkage",
               "Hygroscopic, which specifically describes directional moisture uptake",
               "Orthogonal, meaning its axes meet at right angles to one another",
               "Heterogeneous, meaning it is made of more than one substance",
@@ -2315,7 +2315,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the Wood Handbook say may be needed as members of a built-up assembly shrink?",
             options: [
-              "Tightening the fastenings",
+              "Occasionally tightening the bolts or other fastenings to keep full bearing",
               "Replacing the connectors entirely once the members reach service moisture",
               "Adding a second row of members alongside the originals",
               "Sealing the assembly so that no further moisture change is possible",
@@ -2328,7 +2328,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which everyday consequences does the handbook list for shrinking and swelling?",
             options: [
-              "Warping, checking and splitting",
+              "Warping, checking and splitting, with gaps in flooring",
               "Decay, insect attack and fungal staining of the exposed surfaces",
               "Loss of strength, loss of stiffness and eventual collapse under load",
               "Corrosion of fasteners and staining of the finish around them",
@@ -2341,7 +2341,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say about a gap that opens between floorboards in winter and closes in summer?",
             options: [
-              "It is the wood behaving normally",
+              "It is the wood following the humidity, which is normal and reversible",
               "It is a sign the subfloor beneath has begun to fail and needs inspection",
               "It means the floor was installed above its recommended moisture content",
               "It indicates a leak somewhere in the building's water-resistive barrier",
@@ -2354,7 +2354,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What are bow, crook and twist?",
             options: [
-              "Three ways a board distorts",
+              "Three ways a board distorts: along its face, its edge, and its length",
               "Three grades of lumber, ranked by the number of knots permitted",
               "Three cuts made when a rafter is laid out with a framing square",
               "Three kinds of bracing used to keep a framed wall square",
@@ -2367,7 +2367,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is reaction wood?",
             options: [
-              "Wood formed in a leaning tree",
+              "Wood formed in a leaning tree, such as softwood compression wood",
               "Wood that has already been dried once and then rewetted in service",
               "Wood taken from the outermost rings, where growth was fastest",
               "Wood treated with preservative, which reacts with moisture differently",
@@ -2380,7 +2380,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why is a floor joist installed with its crown turned up?",
             options: [
-              "The floor's weight will flatten it",
+              "Because the weight of the floor will settle it and straighten it out",
               "Because water will then run off the joist rather than pooling on it",
               "Because the crown marks the face the subfloor must be nailed to",
               "Because a joist is stronger when its bow faces the load",
@@ -2393,7 +2393,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What must be allowed for where wood joists meet a steel beam?",
             options: [
-              "The wood shrinks and the steel does not",
+              "The wood joists shrink while the steel beam stays the same size",
               "The steel expands in summer while the wood stays the same size",
               "The wood is stronger than the steel and will crush it over time",
               "The two materials cannot be fastened together at all",
@@ -2406,7 +2406,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why are sheathing panels not laid up tight against each other?",
             options: [
-              "To leave room for swelling",
+              "To leave room for swelling if moisture enters the joints",
               "To let an inspector see the framing behind them before they are covered",
               "To reduce the number of fasteners needed along each panel edge",
               "To let air move behind the panels and dry the framing out",
@@ -2419,7 +2419,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is checking?",
             options: [
-              "Shallow splitting along the grain",
+              "Shallow splitting along the grain as wood shrinks and swells",
               "The routine inspection of framing before it is covered by finishes",
               "The crushing of fibres beneath a concentrated load",
               "The bowing of a panel between its supports under its own weight",
@@ -2432,7 +2432,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "When movement in a house is seasonal and reverses each year, what is the first suspect?",
             options: [
-              "Wood moisture",
+              "The moisture in the wood, following the humidity around it",
               "Foundation settlement, which follows the same annual weather cycle",
               "A failed connection, which opens under load and closes when unloaded",
               "Thermal expansion of the framing as temperatures rise and fall",
@@ -2445,7 +2445,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What kind of movement does the course say is NOT a wood-moisture question?",
             options: [
-              "Movement that keeps going one way",
+              "Movement that goes one way and keeps going or never comes back",
               "Movement visible only in the coldest month of the year",
               "Movement that appears in flooring rather than in framing",
               "Movement small enough to measure only with an instrument",
@@ -2458,7 +2458,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a crown on a piece of framing lumber?",
             options: [
-              "A slight bow along its edge",
+              "A slight bow along its edge, turned up when it is used as a joist",
               "The stamped mark showing the grade and mill of origin",
               "The rounded corner left by the planer at the mill",
               "The end of the piece cut from nearest the top of the tree",
@@ -2471,7 +2471,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the shrinkage of a built-up assembly do to its connections?",
             options: [
-              "It loosens the bearing between parts",
+              "It loosens the bearing between the parts it holds together",
               "It tightens them, because shrinking members grip fasteners harder",
               "It has no effect, because connectors are sized to allow for movement",
               "It transfers load from the fasteners to the wood itself",
@@ -2484,7 +2484,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where can you see bow, crook and twist without visiting a jobsite?",
             options: [
-              "In a stack of lumber at a supplier",
+              "In any stack of framing lumber at a supplier",
               "Only under laboratory conditions, using measuring equipment",
               "In finished framing, once the drywall has been removed",
               "In kiln-dried lumber only, since green lumber stays straight",
@@ -2497,7 +2497,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the lesson say shrinkage changes besides dimensions?",
             options: [
-              "How firmly parts press together",
+              "How firmly the parts of a connection press together",
               "The species of the wood, as the cell structure gradually alters",
               "The direction in which the grain runs through a member",
               "The load a member was originally designed to carry",
@@ -2510,7 +2510,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How much can reaction wood and juvenile wood shrink along the grain, green to ovendry?",
             options: [
-              "Up to 2 percent",
+              "Up to 2 percent, ten to twenty times the normal figure",
               "Up to 12 percent, matching the volumetric shrinkage of Douglas-fir",
               "Up to 30 percent, the average fiber saturation point",
               "Up to 0.2 percent, the same as normal wood",
@@ -2523,7 +2523,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What do the small gaps between sheathing panels on a house under construction indicate?",
             options: [
-              "Deliberate allowance for movement",
+              "A deliberate allowance for the panels to swell with moisture",
               "Panels cut short to save material on a tight budget",
               "Framing that is out of square, leaving the panels unable to meet",
               "A stage of work that will be corrected before the cladding goes on",
@@ -2536,7 +2536,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which lesson's material explains why a door can stick in one season and not another?",
             options: [
-              "The moisture and movement lesson",
+              "The moisture and movement lesson, on seasonal equilibrium moisture",
               "The lesson on load paths, because doors sit in bearing walls",
               "The lesson on connections, because hinges loosen under repeated use",
               "The lesson on the parts list, because door names vary by region",
@@ -2549,7 +2549,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which single fact explains most of the surprising things a house does?",
             options: [
-              "Wood behaves differently in each direction",
+              "Wood behaves differently depending on the direction of the load",
               "Nails hold better in some species of framing lumber than in others",
               "Houses are built by many trades working in sequence",
               "Building codes change between editions and between jurisdictions",
@@ -2673,7 +2673,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does this course give no footing dimension for a particular house?",
             options: [
-              "The size depends on the load above and the soil below",
+              "Its size depends on the load above it and on the soil below it",
               "Footing sizes are trade secrets held by concrete suppliers",
               "Footings are poured to whatever depth the excavator reaches that day",
               "The dimension is fixed nationally, so printing it would add nothing",
@@ -2686,7 +2686,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a foundation wall do that a footing does not?",
             options: [
-              "Carry the load down past the surface and hold back the earth beside it",
+              "Carry the load down and hold back the earth beside it",
               "Spread the load across a wider area of soil",
               "Keep the floor frame level while the concrete cures",
               "Transfer the roof load sideways into the ground",
@@ -2699,7 +2699,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is soil-bearing capacity?",
             options: [
-              "How much load the earth can support",
+              "How much load the earth can support, which varies with the type of soil",
               "The depth of soil that must be removed before a footing can be poured",
               "The weight of soil bearing against the outside of a foundation wall",
               "The proportion of a building's weight carried by the soil rather than by rock",
@@ -2712,7 +2712,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a soil of a given bearing capacity do with a wide footing that it cannot do with a narrow one?",
             options: [
-              "Bear a heavier load",
+              "Bear a heavier load, because the load is spread over more area",
               "Resist the sideways push of wind against the walls above",
               "Keep the foundation dry by holding water further from the concrete",
               "Allow the footing to be poured at a shallower depth",
@@ -2725,7 +2725,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does this course give no footing dimension?",
             options: [
-              "It depends on the load and the soil",
+              "Because it depends on the load above and the soil below, both site facts",
               "Because footing sizes are standardised nationally and so need no explanation",
               "Because footings are poured by a separate trade the course does not cover",
               "Because the dimension is set by the width of the excavator's bucket",
@@ -2738,7 +2738,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the superstructure of a building?",
             options: [
-              "The part above ground level",
+              "The portion of the building above ground, paired with the substructure",
               "The framing, as distinct from the finishes applied to it",
               "The part carrying the roof, as distinct from the part carrying the floors",
               "The structure added when a house is extended upward",
@@ -2751,7 +2751,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual call the parts of the substructure that distribute building loads to the ground?",
             options: [
-              "Foundations",
+              "Foundations, with footings at their base to spread the loads further",
               "Bearing partitions, since they carry load down to the substructure",
               "Piers, which is the general term for anything below ground level",
               "Grade beams, which run between the points where the loads land",
@@ -2764,7 +2764,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say footings prevent?",
             options: [
-              "The structure sinking into the ground",
+              "The structure sinking down into the ground beneath it",
               "Water reaching the underside of the floor frame in a crawl space",
               "Frost forming against the outside face of the foundation wall",
               "The foundation wall from cracking as the concrete cures",
@@ -2777,7 +2777,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why must footings be placed below the frost line?",
             options: [
-              "Freezing and thawing lift and drop soil",
+              "Because freezing and thawing lift and then drop soil that holds water",
               "Because concrete cannot cure properly at temperatures near freezing",
               "Because soil below the frost line is always denser and stronger",
               "Because water pipes are routed above the frost line and must be cleared",
@@ -2790,7 +2790,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How many times does the Navy manual state the frost line rule in the chapters this course read?",
             options: [
-              "Twice, in two different chapters",
+              "Twice, once about foundation walls and once about footings",
               "Once, as a footnote in the chapter on foundation forms",
               "Never, which is why the course infers it from the design of cold-climate houses",
               "In every chapter, since it governs all concrete work",
@@ -2803,7 +2803,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Who holds the answer to how deep the frost line is where you live?",
             options: [
-              "The local building department",
+              "The local building department, since frost depth is a local fact",
               "The Forest Products Laboratory, which publishes frost depths by county",
               "The concrete supplier, who sets the depth by the mix being delivered",
               "The manufacturer of the foundation forms being used on the job",
@@ -2816,7 +2816,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How is the bottom of most footings formed?",
             options: [
-              "Cast directly against the earth",
+              "Cast directly against the earth, with only the sides in forms",
               "Poured onto a bed of compacted gravel laid inside a steel form",
               "Cast in a reusable form and lowered into the trench once cured",
               "Poured over a layer of insulation that protects it from frost",
@@ -2829,7 +2829,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say is at the bottom of every load path?",
             options: [
-              "Soil",
+              "Soil, the ultimate support of the earth under the concrete",
               "The footing, which is the last element designed by anyone",
               "The foundation wall, which distributes the load along its length",
               "Bedrock, which every foundation eventually reaches",
@@ -2842,7 +2842,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the condition of a footing trench bottom deserve attention before concrete arrives?",
             options: [
-              "The concrete takes its shape",
+              "Because the concrete takes the shape of whatever was dug for it",
               "Because the trench must be dry before any inspection can be requested",
               "Because the forms cannot be removed afterwards if the bottom is uneven",
               "Because the depth cannot be measured once concrete has been poured",
@@ -2855,7 +2855,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which of these is a fact about one site rather than a general rule?",
             options: [
-              "The bearing capacity of the soil",
+              "The bearing capacity of the soil, which varies from place to place",
               "That a footing spreads load over a larger area than the wall above",
               "That water expands when it freezes",
               "That the substructure is the part below ground level",
@@ -2868,7 +2868,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What happens to the pressure on the ground when a footing is made wider, with the load unchanged?",
             options: [
-              "It falls",
+              "It falls, because the same weight is spread over more area",
               "It rises, because the footing itself adds more weight than it spreads",
               "It stays the same, since the load has not changed",
               "It becomes uneven, concentrating at the edges of the footing",
@@ -2881,7 +2881,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the substructure?",
             options: [
-              "The part below ground level",
+              "The portion of the building below ground level, where the foundations are",
               "The framing that supports the finish floor from underneath",
               "The temporary works that hold a building up during construction",
               "The lowest storey of a building, whether below ground or not",
@@ -2894,7 +2894,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a frost line?",
             options: [
-              "The depth the ground freezes locally",
+              "The depth to which the ground freezes in a given place",
               "The line on a drawing showing where insulation must begin",
               "The latitude north of which basements are required by code",
               "The height above which exterior wood must be treated against frost",
@@ -2907,7 +2907,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why can a house not be designed without knowing where it will be built?",
             options: [
-              "Soil and frost both vary by place",
+              "Because soil bearing capacity and frost depth both vary by place",
               "Because the drawings must name the county for the permit to be valid",
               "Because material costs differ enough to change the structural design",
               "Because the direction of the sun determines the direction of the joists",
@@ -2920,7 +2920,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In the manual's terms, what is the relationship between a foundation and a footing?",
             options: [
-              "The footing is at the base of the foundation",
+              "The footing is installed at the base of the foundation",
               "They are two names for the same element in a light-frame house",
               "The foundation sits on the footing only where the soil is weak",
               "The footing is the wall and the foundation is the slab inside it",
@@ -2933,7 +2933,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What three things do American houses commonly do above the footing?",
             options: [
-              "Basement, crawl space or slab",
+              "Hold a basement, a crawl space, or a concrete slab on grade",
               "Pier, raft or pile, depending on the depth of stable soil",
               "Block, poured concrete or stone, depending on the region",
               "Insulated, uninsulated or ventilated, depending on the climate",
@@ -2946,7 +2946,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the course call the wood-to-concrete joint the most interesting one in the building?",
             options: [
-              "Two unlike materials meet there",
+              "Because two unlike materials meet there, wood and concrete",
               "Because it is the only joint an inspector is required to examine",
               "Because it carries more load than any other joint in the house",
               "Because it is the last joint made before the building is finished",
@@ -2959,7 +2959,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say the sill plate provides?",
             options: [
-              "A nailing base",
+              "A nailing base for the joists or the studs that rest directly over it",
               "A waterproof seal between the foundation and the framing above it",
               "The last opportunity to level the building before walls are raised",
               "A thermal break separating cold concrete from warm framing",
@@ -2972,7 +2972,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does the manual say the length of an anchor bolt is found?",
             options: [
-              "In the specifications",
+              "In the specifications, while the drawings show spacing",
               "On the drawings, alongside the spacing and location of each bolt",
               "On the bolt itself, stamped on the head before it leaves the factory",
               "In the manufacturer's literature for the sill plate material",
@@ -2985,7 +2985,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a sill sealer do?",
             options: [
-              "Fills irregularities and stops drafts",
+              "Compresses to fill irregularities, stopping drafts and heat loss",
               "Bonds the sill plate chemically to the top of the foundation wall",
               "Raises the sill plate clear of any water standing on the foundation",
               "Prevents the anchor bolts from corroding where they pass through wood",
@@ -2998,7 +2998,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does a sill plate need something compressible underneath it at all?",
             options: [
-              "A concrete wall is never perfectly flat",
+              "Because a concrete wall is never perfectly flat on top",
               "Because the plate must be free to slide during an earthquake",
               "Because wood swells against concrete and needs room to move",
               "Because the anchor bolts would otherwise be over-tightened",
@@ -3011,7 +3011,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a termite shield, as the manual describes it?",
             options: [
-              "Sheet metal under the sill",
+              "A sheet metal shield under the sill with its edges bent down",
               "A chemical barrier sprayed onto the soil before the slab is poured",
               "A gap deliberately left between the sill plate and the foundation",
               "A treated timber laid between the foundation and the framing",
@@ -3024,7 +3024,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the manual call for clearance between the floor framing and the ground in a crawl space?",
             options: [
-              "To protect the wood",
+              "To protect the wood by keeping it up off the ground",
               "To leave room for ductwork and plumbing to be installed later",
               "To allow the building inspector to move through the space freely",
               "To give the joists somewhere to deflect under a heavy load",
@@ -3037,7 +3037,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does this course not print the crawl space clearance figures the manual gives?",
             options: [
-              "The adopted code governs them locally",
+              "Because the adopted code where you live governs those figures",
               "Because they were measured in metric units and cannot be converted",
               "Because the manual withdrew them in a later errata sheet",
               "Because they apply only to military buildings, not to houses",
@@ -3050,7 +3050,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual call for around a girder end sitting in a concrete pocket?",
             options: [
-              "An air space",
+              "An air space around the sides and end, with the end treated",
               "A steel bearing plate to spread the load into the wall",
               "A continuous bead of sealant to keep water out of the pocket",
               "Insulation, to stop the cold of the wall reaching the beam",
@@ -3063,7 +3063,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How are wall bottom plates fixed where the ground floor is a concrete slab?",
             options: [
-              "Bolted or power driven into the slab",
+              "Bolted to the slab or nailed with a powder-actuated driver",
               "Nailed into the subfloor, which is laid over the slab first",
               "Glued to the slab with construction adhesive and left to cure",
               "Held only by the weight of the wall and the framing above it",
@@ -3076,7 +3076,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is notable about the timing of anchor bolts in a slab?",
             options: [
-              "They are set while the concrete is wet",
+              "They are set while the concrete is being poured, hours before framing",
               "They are drilled in after the slab has cured for twenty-eight days",
               "They are installed only after the walls have been framed and measured",
               "They are set by the framing crew rather than the concrete crew",
@@ -3089,7 +3089,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a crawl space?",
             options: [
-              "A shallow space under the floor frame",
+              "A shallow space under the floor frame, tall enough to crawl through",
               "The gap between the top of a foundation wall and the sill plate",
               "An unfinished basement with a ceiling height below eight feet",
               "The space inside a wall cavity left open for services",
@@ -3102,7 +3102,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is slab on grade?",
             options: [
-              "A concrete floor poured on the ground",
+              "A concrete floor poured on the ground, with no framed floor beneath",
               "A concrete floor poured over a framed floor for added mass",
               "A sloping slab poured to drain water away from the building",
               "A slab whose thickness varies with the grade of concrete used",
@@ -3115,7 +3115,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is another common name for an anchor bolt, and why?",
             options: [
-              "A j-bolt, for its shape",
+              "A j-bolt, because its hooked shape keys it into the concrete",
               "A stud bolt, because it aligns with the studs above",
               "A rag bolt, because of the wrapping used when it is set",
               "A sill bolt, because it passes through the sill plate",
@@ -3128,7 +3128,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which of these details at the wood-to-concrete joint is about drying rather than strength?",
             options: [
-              "The air space around a girder end",
+              "The air space left around a girder end",
               "The anchor bolts that tie the sill plate down",
               "The clearance between the sill plate and the outside face of the wall",
               "The bolting of bottom plates to a slab",
@@ -3141,7 +3141,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does a cold-climate house often have a basement?",
             options: [
-              "The foundation must go deep anyway",
+              "Because its foundation must reach below frost depth anyway",
               "Because a basement is required wherever the ground freezes at all",
               "Because a slab cannot be poured in a climate with hard winters",
               "Because basements are warmer than crawl spaces in every climate",
@@ -3154,7 +3154,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which four elements does the manual say floor framing consists of?",
             options: [
-              "Posts, girders, joists and subfloor",
+              "Posts, girders, joists and the subfloor",
               "Sill plate, rim joist, bridging and finish floor",
               "Footings, foundation walls, joists and sheathing",
               "Trimmers, headers, tail joists and blocking",
@@ -3167,7 +3167,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the course say a floor that is out of level hands its problems upward?",
             options: [
-              "Everything above is built on it",
+              "Because the walls above are laid out and raised on top of it",
               "Because walls are built oversize and then trimmed to suit the floor",
               "Because an unlevel floor drains water toward the exterior walls",
               "Because the subfloor cannot be nailed down to an uneven frame",
@@ -3180,7 +3180,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a box sill?",
             options: [
-              "Sill plate plus header joist",
+              "A sill plate and header joist anchored to the foundation wall",
               "A boxed-in girder pocket cast into the top of a foundation wall",
               "A sill plate doubled and boxed with blocking at each corner",
               "The closed box formed by the subfloor and the joists beneath it",
@@ -3193,7 +3193,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say header joists prevent the common joists from doing?",
             options: [
-              "Rolling or tipping",
+              "Rolling over or tipping onto their sides under load",
               "Shrinking across their depth as they dry in place",
               "Deflecting under the weight of the wall above them",
               "Sliding along the sill plate when the house is loaded by wind",
@@ -3206,7 +3206,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which of these is NOT one of the ways the manual describes joists meeting a girder?",
             options: [
-              "Welded to a plate on the girder",
+              "Welded to a steel plate on top of the girder",
               "Lapped over the girder, with the ends overlapping one another",
               "Butted over the girder and cleated together across the joint",
               "Hung from the side of the girder in joist hangers",
@@ -3219,7 +3219,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does bridging do, according to the manual?",
             options: [
-              "Holds joists in line and shares load",
+              "It holds the joists in line and helps distribute the floor's load",
               "Carries the subfloor where panels do not break over a joist",
               "Stiffens the joists enough to increase the distance they may span",
               "Seals the space between joists against air moving through the floor",
@@ -3232,7 +3232,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say happens when joists are cut for a floor opening?",
             options: [
-              "Strength is lost at the opening",
+              "The floor loses strength at the opening unless it is framed to restore it",
               "The floor becomes stiffer, because the opening reduces the span",
               "The remaining joists must be replaced with heavier material",
               "The opening must be positioned over a bearing wall below",
@@ -3245,7 +3245,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which member carries the cut joists at a floor opening?",
             options: [
-              "The header",
+              "The header, which is carried in turn by doubled trimmer joists",
               "The tail joist, which runs from the opening to the nearest wall",
               "The bridging, which is doubled around any opening in a floor",
               "The rim joist, which is extended inward to reach the opening",
@@ -3258,7 +3258,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a trimmer joist?",
             options: [
-              "The doubled joist beside an opening",
+              "The doubled full-length joist at the side of an opening",
               "A joist trimmed to length on site to fit an irregular space",
               "The joist that carries the finish trim around a stairwell",
               "A shortened joist running from a header to its support",
@@ -3271,7 +3271,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a tail joist?",
             options: [
-              "A shortened joist running to a header",
+              "A shortened joist running from a header to a wall or girder",
               "The last joist at the end of a run, which is always doubled",
               "The joist that cantilevers past the outside wall to form an overhang",
               "The joist at the tail of a stair, carrying its lowest riser",
@@ -3284,7 +3284,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the subfloor do besides carry the finish floor?",
             options: [
-              "Strengthens the whole floor unit",
+              "It strengthens the entire floor unit and takes the walls raised onto it",
               "Levels the frame by making up for variations between joists",
               "Seals the floor against air movement from below",
               "Carries the ceiling finish of the storey underneath",
@@ -3297,7 +3297,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How are subfloor panels oriented relative to the joists?",
             options: [
-              "Outer plies at right angles to them",
+              "With the outer plies at right angles to the joists",
               "Outer plies parallel to them, so the panel edges land on joist centres",
               "At forty-five degrees, so the panels also brace the floor",
               "In whatever direction leaves the fewest cuts on that floor",
@@ -3310,7 +3310,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a panel index mark such as 32/16 tell you?",
             options: [
-              "Maximum support spacings",
+              "The maximum support spacings for roof and floor use",
               "The panel's thickness in thirty-seconds of an inch, front and back",
               "The number of plies and the grade of the outer veneer",
               "The load in pounds per square foot the panel may carry",
@@ -3323,7 +3323,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Even after reading a panel's index mark, what still decides which panel is used?",
             options: [
-              "The drawings",
+              "The drawings and the adopted code for that house",
               "The supplier, who stocks whichever rating is available that week",
               "The framing crew, who judge it from the joist spacing on site",
               "The index mark itself, which is the governing authority",
@@ -3336,7 +3336,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why are the end joints of adjacent subfloor panels staggered?",
             options: [
-              "So joints break over different joists",
+              "So that the joints break over different joists",
               "So that the panels can be cut from full sheets without waste",
               "So that water entering one joint cannot reach the next",
               "So that the panels expand in opposite directions as they swell",
@@ -3349,7 +3349,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where can you see for yourself how the joists in a house meet their girder?",
             options: [
-              "From an unfinished basement",
+              "From an unfinished basement below the floor",
               "Only by lifting the finish floor in the room above",
               "On the permit, which records the arrangement used",
               "In the attic, where the same arrangement is repeated",
@@ -3362,7 +3362,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the rim joist contribute to the wall above it?",
             options: [
-              "It helps support it",
+              "It helps support that wall as well as keeping the joists from tipping",
               "Nothing, because the wall bears entirely on the subfloor",
               "It carries the whole wall, since the joists end short of the perimeter",
               "It insulates the wall from the cold of the foundation below",
@@ -3487,7 +3487,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say studs run between?",
             options: [
-              "The top and bottom plates",
+              "The top and bottom plates, as the uprights of the wall",
               "The subfloor and the ceiling joists directly above them",
               "The sill plate and the rafters, in a single unbroken length",
               "The corner posts at each end of the wall",
@@ -3500,7 +3500,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does OC mean in a framing layout?",
             options: [
-              "On center",
+              "On center, measured from the centre of one member to the next",
               "Outside corner, the point layouts are measured from",
               "Overall clearance, the space left between adjacent members",
               "Original centreline, the line a wall was first set out on",
@@ -3513,7 +3513,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What stud spacings does the manual say job specifications sometimes call for besides the usual one?",
             options: [
-              "Twelve and twenty-four inches",
+              "Twelve and twenty-four inches, beside the usual sixteen",
               "Eight and thirty-two inches, matching common panel dimensions",
               "Fourteen and eighteen inches, depending on the species of lumber",
               "Any spacing the framing crew finds convenient on the day",
@@ -3526,7 +3526,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why is stud spacing described as a module?",
             options: [
-              "Panel edges land on stud centres",
+              "Because standard panel edges are set to land on stud centres",
               "Because every wall must contain a whole number of studs",
               "Because the spacing repeats at every storey of the building",
               "Because modules are the unit in which lumber is ordered",
@@ -3539,7 +3539,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say a double top plate does for the upper section of a wall?",
             options: [
-              "Strengthens it",
+              "Strengthens it and ties the walls together at the corners",
               "Levels it, correcting for variation in the lengths of the studs",
               "Seals it, closing the cavity against air moving into the attic",
               "Insulates it, reducing heat loss at the top of the wall",
@@ -3552,7 +3552,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why do the plates tie an entire wall together?",
             options: [
-              "Every vertical member is nailed into them",
+              "Because every vertical member in the wall is nailed into them",
               "Because they are the only members that run the full length of a wall",
               "Because they are doubled, and a doubled member cannot come apart",
               "Because they are fastened to the foundation at both ends",
@@ -3565,7 +3565,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where in a multistorey building does the manual say heavier structural lumber is required?",
             options: [
-              "At the lower levels",
+              "At the lower levels, which carry the floors above them",
               "At the upper levels, which are most exposed to wind",
               "At the corners, where two walls meet and loads concentrate",
               "Around every opening, whatever the storey",
@@ -3578,7 +3578,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a corner post?",
             options: [
-              "A built-up assembly where walls meet",
+              "A built-up assembly of studs where two walls meet",
               "The single heaviest stud in a wall, placed at its end",
               "A steel post set at the corner of a foundation wall",
               "The post that carries the girder nearest a corner of the building",
@@ -3591,7 +3591,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What do fire stops in a wall do?",
             options: [
-              "Slow fire travel inside the wall",
+              "Slow the travel of fire up through the stud cavity",
               "Prevent a fire in one room from reaching the room next to it",
               "Hold the insulation in place so the cavity is not left empty",
               "Support the drywall at the midpoint of a tall wall",
@@ -3604,7 +3604,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What decides the stud spacing for a real wall in a real house?",
             options: [
-              "The drawings and the adopted code",
+              "The drawings and the adopted code for that house",
               "The width of the sheathing panels being delivered that week",
               "The framing crew's judgment about how heavy the wall will be",
               "The species of lumber, since stronger species allow wider spacing",
@@ -3617,7 +3617,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What everyday image does the lesson use for a framed wall?",
             options: [
-              "A ladder lying on its side",
+              "A ladder lying on its side, with plates as the rails",
               "A bookcase, with shelves between two uprights",
               "A gate, held square by a single diagonal member",
               "A honeycomb, repeating one cell across a plane",
@@ -3630,7 +3630,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a fire block?",
             options: [
-              "Another name for a fire stop",
+              "Another name for a fire stop, nailed between studs",
               "A masonry unit used where framing meets a chimney",
               "A treated stud required beside every opening in an exterior wall",
               "A section of wall built without any cavity at all",
@@ -3643,7 +3643,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which member collects the load from above before it reaches the studs?",
             options: [
-              "The top plate",
+              "The top plate, which collects, spreads and ties",
               "The rim joist, which sits over the wall at each floor level",
               "The corner post, which distributes load along the wall",
               "The sheathing, which carries load down its own plane",
@@ -3656,7 +3656,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What must be framed into a wall wherever a door or window is planned?",
             options: [
-              "A rough opening",
+              "A rough opening sized for the frame and its clearance",
               "A structural panel, which replaces the studs that were removed",
               "A doubled stud on each side, with no member across the top",
               "A lintel cast in concrete above the opening",
@@ -3669,7 +3669,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say a header must be strong enough to do?",
             options: [
-              "Carry the weight bearing on that part of the wall",
+              "Carry the weight that bears on that part of the wall",
               "Resist the wind pressure acting on the glass in the opening",
               "Hold the window frame square for the life of the building",
               "Span the whole wall, not just the opening within it",
@@ -3682,7 +3682,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where do trimmer studs fit?",
             options: [
-              "Between the sole plate and the header",
+              "Between the sole plate and the underside of the header",
               "Between the header and the double top plate above it",
               "Between the rough sill and the sole plate beneath a window",
               "Between the king studs and the sheathing on the outside face",
@@ -3695,7 +3695,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What do cripple studs above a door opening do?",
             options: [
-              "Carry weight from the top plate to the header",
+              "Carry weight from the top plate down onto the header",
               "Hold the header in position until the drywall is fixed",
               "Provide fire blocking in the cavity above the opening",
               "Support the ceiling joists that land over the opening",
@@ -3708,7 +3708,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a rough window sill support?",
             options: [
-              "The finished window and its frame",
+              "The finished window unit and its frame",
               "The cripple studs above the header on the same opening",
               "The header, which bears on it at each end",
               "The sheathing where it crosses the opening",
@@ -3721,7 +3721,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What two variables determine header size, according to the manual?",
             options: [
-              "Opening width and load above",
+              "The width of the opening and the load bearing above it",
               "Wall height and the species of lumber used for the studs",
               "Window weight and the number of cripples above the header",
               "Building age and the edition of the code in force",
@@ -3734,7 +3734,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does the manual say the type and size of header is shown?",
             options: [
-              "In the blueprints",
+              "In the blueprints, drawn for that one building",
               "In the window manufacturer's installation instructions",
               "On the wall plate, marked during layout by the framing crew",
               "In the adopted code, which tabulates it by opening width",
@@ -3747,7 +3747,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What observable pattern does the manual note about the tops of openings in a house?",
             options: [
-              "They usually line up",
+              "They usually line up, with headers set at one height",
               "They rise slightly toward the centre of each wall",
               "They are set at different heights for doors and for windows",
               "They vary between floors, being higher on the ground floor",
@@ -3760,7 +3760,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why is a rough opening larger than the window unit that fills it?",
             options: [
-              "To allow for the frame and shim clearance",
+              "To allow for the window's frame and the shim clearance",
               "To allow the window to be replaced later without cutting studs",
               "To let air circulate around the unit and dry any water that enters",
               "To leave room for the header to deflect under load",
@@ -3773,7 +3773,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which studs hold the header assembly in the plane of the wall?",
             options: [
-              "The king studs",
+              "The king studs, which run full height beside the opening",
               "The cripple studs above and below the opening",
               "The trimmer studs directly under the header ends",
               "The corner posts at each end of the wall",
@@ -3786,7 +3786,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What happens to the load the cut studs were carrying when an opening is framed?",
             options: [
-              "It routes around the hole",
+              "It routes around the hole by way of the header and trimmers",
               "It disappears, since the opening removes the weight above it",
               "It is carried by the sheathing, which bridges the gap",
               "It transfers to the two walls at either end of the one with the hole",
@@ -3799,7 +3799,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does the manual say rough opening dimensions are sometimes already written down for you?",
             options: [
-              "In the door and window schedule",
+              "In the door and window schedule of the blueprints",
               "On the header itself, stamped by the supplier",
               "In the specifications, under general workmanship",
               "On the permit issued by the building department",
@@ -3812,7 +3812,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is another name for a trimmer stud?",
             options: [
-              "A jack stud",
+              "A jack stud, a name used for the same member",
               "A king stud, seen from the inside of the opening",
               "A cripple stud, because both are shorter than full height",
               "A sill stud, because it lands on the rough sill",
@@ -3825,7 +3825,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is racking?",
             options: [
-              "A rectangle folding into a parallelogram",
+              "A rectangle of framing folding into a parallelogram",
               "The crushing of a plate where a heavily loaded stud lands on it",
               "The lifting of a wall off its plate under wind uplift",
               "The bowing of a stud sideways between the plates",
@@ -3838,7 +3838,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What geometric shape cannot change without changing the length of a side?",
             options: [
-              "A triangle",
+              "A triangle, which is why a diagonal brace works",
               "A rectangle, provided its corners are firmly nailed",
               "A parallelogram, once its diagonals are equal",
               "Any shape with an even number of sides",
@@ -3851,7 +3851,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say diagonal bracing is necessary for?",
             options: [
-              "The lateral strength of a wall",
+              "The lateral strength of a wall against sideways force",
               "Keeping the studs evenly spaced while the wall is raised",
               "Carrying the load of the roof down to the foundation",
               "Holding the sheathing panels flat against the framing",
@@ -3864,7 +3864,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a let-in brace?",
             options: [
-              "A diagonal notched into the studs",
+              "A diagonal notched flush into the faces of the studs",
               "A diagonal nailed to the face of the studs without any notching",
               "Short diagonal pieces fitted between adjacent studs",
               "A steel strap let into the sheathing on the outside face",
@@ -3877,7 +3877,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which method does the manual call the strongest type of diagonal bracing?",
             options: [
-              "Diagonal sheathing",
+              "Diagonal sheathing, with boards run at an angle across the studs",
               "Let-in bracing, because the notch locks the brace into each stud",
               "Cut-in bracing, because each short piece acts independently",
               "Metal strapping run corner to corner on both faces",
@@ -3890,7 +3890,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say about other bracing methods when panel sheathing is used?",
             options: [
-              "They may be omitted",
+              "They may be omitted, since the panels add strength",
               "They must be doubled, because panels add weight without strength",
               "They must be installed first and the panels laid over them",
               "They are required only on the two longest walls of the building",
@@ -3903,7 +3903,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a structural panel do to a folding rectangle of studs?",
             options: [
-              "Makes it behave as one stiff plane",
+              "Makes it behave as one stiff plane across many studs",
               "Adds weight that holds the wall down against uplift",
               "Transfers the sideways load into the studs one at a time",
               "Protects it from weather so the joints do not loosen",
@@ -3916,7 +3916,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How does a framing crew check that a wall is square before raising it?",
             options: [
-              "Measure both diagonals",
+              "Measure both diagonals and check that they are equal",
               "Measure the height at each end and compare the two",
               "Check each corner separately with a builder's square",
               "Sight along the top plate from one end of the wall",
@@ -3929,7 +3929,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say wall sheathing generally does NOT include?",
             options: [
-              "The finished surface",
+              "The finished surface, such as siding or stucco",
               "The structural function, which belongs to the bracing instead",
               "Any panel product, since sheathing means boards",
               "The layer that keeps water out of the wall",
@@ -3942,7 +3942,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the course say a wall can matter even when it carries almost no weight?",
             options: [
-              "It may be bracing the building",
+              "Because it may be bracing the building against sideways force",
               "Because it supports the drywall of the ceiling above it",
               "Because every wall is required to be shown on the drawings",
               "Because removing it would leave the floor joists unsupported",
@@ -3955,7 +3955,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is lateral strength?",
             options: [
-              "Resistance to sideways force",
+              "Resistance to sideways force, a separate question from weight",
               "The strength of a member measured across its width rather than its depth",
               "The strength a wall gains from the walls that meet it at corners",
               "The load a wall can carry before its studs buckle",
@@ -3968,7 +3968,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is cut-in bracing?",
             options: [
-              "Short diagonal pieces between studs",
+              "Short diagonal pieces toenailed between the studs",
               "A continuous diagonal notched into the face of the studs",
               "A brace cut into the sheathing after the wall is raised",
               "Blocking cut in at the midpoint of every stud cavity",
@@ -3981,7 +3981,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which of these is the structural layer on the outside of a stud wall?",
             options: [
-              "The sheathing",
+              "The sheathing, which braces the wall against racking",
               "The siding, which is fixed directly to the studs",
               "The housewrap, which holds the panels tight to the framing",
               "The brick veneer, which carries part of the wall's load",
@@ -3994,7 +3994,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the course call racking the biggest gap in most people's picture of a house?",
             options: [
-              "Sideways failure is invisible in the mental model",
+              "Because most people picture weight coming down and nothing pushing sideways",
               "Because most people have never seen a house under construction",
               "Because racking is a recent addition to building science",
               "Because the word is used differently in every region",
@@ -4007,7 +4007,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In which order does the manual present bracing methods?",
             options: [
-              "Ascending effectiveness",
+              "In ascending effectiveness, ending with panels",
               "Chronological, from the oldest method to the newest",
               "By cost, from the cheapest method to the most expensive",
               "By region, from northern practice to southern practice",
@@ -4020,7 +4020,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is diagonal sheathing?",
             options: [
-              "Boards run at an angle across the studs",
+              "Boards run at an angle across the studs, each one a brace",
               "Panels cut into triangles and fitted at each corner of a wall",
               "Sheathing installed on the diagonal walls of a bay window",
               "A single board nailed corner to corner over the finished sheathing",
@@ -4033,7 +4033,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual note about a wall covered with structural sheathing nailed according to the specifications?",
             options: [
-              "It does not require bracing",
+              "It does not require the usual bracing at wall ends",
               "It must still receive a let-in brace at each end",
               "It needs blocking behind every panel edge without exception",
               "It counts as a finished wall and needs no further covering",
@@ -4046,7 +4046,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why can a wall rack without any member breaking?",
             options: [
-              "The corners can change angle",
+              "The corners can change angle while every side keeps its length",
               "Because the studs bend elastically and then return to shape",
               "Because the nails stretch before the wood begins to fail",
               "Because the sole plate slides on the subfloor beneath it",
@@ -4059,7 +4059,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which two jobs does lesson 15 ask you to keep separate?",
             options: [
-              "Bearing and bracing",
+              "Bearing weight and bracing against sideways force",
               "Framing and finishing, which different trades perform",
               "Dead load and live load, which are calculated differently",
               "Structure and insulation, which occupy the same cavity",
@@ -4072,7 +4072,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why are the plates said to be doing more than holding studs in place?",
             options: [
-              "They carry and distribute load too",
+              "Because they also carry and distribute the load from above",
               "Because they are the members that anchor the wall to the foundation",
               "Because they are cut from heavier lumber than the studs",
               "Because they run continuously through door openings",
@@ -4085,7 +4085,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does this course say about which walls in one specific house are doing the bracing?",
             options: [
-              "A course cannot answer that",
+              "A course cannot answer that question for one building",
               "That the walls running north to south always brace the building",
               "That any wall with sheathing on both faces is a bracing wall",
               "That interior walls never contribute to bracing",
@@ -4098,7 +4098,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a structural panel?",
             options: [
-              "A sheet product used where strength is needed",
+              "A sheet product such as plywood used where strength is needed",
               "Any sheet of material fixed to the outside of a framed wall",
               "A prefabricated wall section delivered complete to a jobsite",
               "A panel rated by its resistance to fire rather than to load",
@@ -4111,7 +4111,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which lesson's warning does the sheathing lesson complete?",
             options: [
-              "The one about removing a wall",
+              "The one in lesson 6 about removing a wall",
               "The one about who owns the numbers in a house",
               "The one about how wood moves with moisture",
               "The one about what a footing does",
@@ -4236,7 +4236,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What three jobs does the manual give a roof?",
             options: [
-              "Shed water, carry weight, resist wind",
+              "Shed water, bear extra weight and withstand high winds",
               "Insulate, ventilate and drain, in that order of importance",
               "Cover the walls, carry the ceiling and support the chimney",
               "Reflect heat, hold snow and channel it to the gutters",
@@ -4249,7 +4249,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which roof shape does the manual call the strongest, and why?",
             options: [
-              "The hip, braced by four hip rafters",
+              "The hip, braced by four hip rafters running up to the ridge",
               "The gable, because a single ridge carries the load of both slopes",
               "The shed, because one slope means fewer joints to fail",
               "The intersecting, because the valleys stiffen the whole frame",
@@ -4262,7 +4262,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a gable roof?",
             options: [
-              "A ridge at the centre, sloping two ways",
+              "A roof with a ridge at the centre, sloping two ways",
               "A roof with four sloping sides meeting at hips",
               "A roof with a single slope, held up by walls of different heights",
               "Two roofs meeting at a valley formed where they intersect",
@@ -4275,7 +4275,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a shed roof?",
             options: [
-              "A roof with one slope",
+              "A roof with a single slope, also called a lean-to roof",
               "A roof covering an outbuilding rather than a dwelling",
               "A roof whose covering is designed to be replaced in one piece",
               "A roof supported entirely by trusses rather than rafters",
@@ -4288,7 +4288,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How does the manual define rafters by analogy?",
             options: [
-              "What joists are to a floor and studs to a wall",
+              "What joists are to a floor and what studs are to a wall",
               "What sheathing is to a wall and subfloor is to a floor",
               "What a girder is to a floor and a header is to an opening",
               "What bridging is to joists and blocking is to studs",
@@ -4301,7 +4301,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say the rafters really are, structurally?",
             options: [
-              "Parts of both wall and roof",
+              "Parts of both the wall and the roof, linking the two",
               "Parts of the roof only, connected to the wall by the top plate",
               "A separate system that rests on the walls without being joined to them",
               "An extension of the ceiling frame, turned up at an angle",
@@ -4327,7 +4327,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say is replacing the term pitch?",
             options: [
-              "Cut",
+              "Cut, written as rise over a run of twelve, such as 6/12",
               "Grade, borrowed from the terminology of site levelling",
               "Slope ratio, expressed as a decimal fraction",
               "Rise factor, written as a percentage of the span",
@@ -4340,7 +4340,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a common rafter?",
             options: [
-              "One running from plate to ridge",
+              "One running the full distance from the plate to the ridge",
               "One running diagonally from a corner of the building to the ridge",
               "One running from the plate to a hip rafter without reaching the ridge",
               "One that appears in every roof shape, whatever its angle",
@@ -4353,7 +4353,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What do a pair of sloping rafters do to the walls besides press down on them?",
             options: [
-              "Push them apart",
+              "Push them apart, unless something ties the walls together",
               "Pull them inward, because the ridge draws the rafter tops together",
               "Twist them, because the load arrives at an angle to the plate",
               "Nothing, because the load of a sloped roof is entirely vertical",
@@ -4366,7 +4366,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual's own figure caption call the ceiling frame?",
             options: [
-              "Tying exterior walls together",
+              "Tying the exterior walls together",
               "Supporting the finish ceiling material",
               "Dividing the attic from the living space",
               "Carrying the load of the roof to the interior partitions",
@@ -4379,7 +4379,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does nailing a ceiling joist to the heel of the rafter as well as to the plate do?",
             options: [
-              "Strengthens the tie between the outside walls",
+              "Strengthens the tie between the two outside walls",
               "Stops the ceiling from sagging in the middle of the span",
               "Transfers the roof load into the interior partitions below",
               "Holds the rafter plumb while the sheathing is applied",
@@ -4392,7 +4392,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a collar tie?",
             options: [
-              "A horizontal member joining opposing rafters",
+              "A horizontal member joining a pair of opposing rafters",
               "The metal strap that ties a rafter down to the top plate",
               "The board that closes the gap between rafters at the ridge",
               "The trim piece that finishes the joint at the top of a wall",
@@ -4405,7 +4405,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What happens in a building where the ceiling joists do not run parallel to the rafters?",
             options: [
-              "Extra members are added to tie the walls",
+              "Extra members running with the rafters are added to tie the walls",
               "The rafters must be increased in size to make up the difference",
               "The roof must be built as a hip rather than as a gable",
               "The ceiling is hung from the rafters instead of spanning the walls",
@@ -4418,7 +4418,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is total rise?",
             options: [
-              "Top plate to the top of the ridge",
+              "The vertical distance from the top plate to the ridge",
               "The height of the wall from the subfloor to the top plate",
               "The sloping distance from the eave to the ridge",
               "The height of the attic space at its centre line",
@@ -4444,7 +4444,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is an intersecting roof?",
             options: [
-              "Two roof sections meeting at a valley",
+              "Two roof sections meeting at a valley, often at ninety degrees",
               "A roof crossing over another building at a different level",
               "A roof whose rafters intersect the ceiling joists at an angle",
               "A roof interrupted by a chimney or a dormer",
@@ -4457,7 +4457,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which three members make up a roof truss?",
             options: [
-              "Top chord, bottom chord and webs",
+              "Top chords, a bottom chord, and webs between them",
               "Rafter, collar tie and ceiling joist, joined by gussets",
               "Ridge, hip and valley members, meeting at the peak",
               "Plate, post and brace, assembled into a triangle",
@@ -4470,7 +4470,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What connects truss members at their joints?",
             options: [
-              "Gussets",
+              "Gussets of boards, plywood or metal fastened at each joint",
               "Mortise and tenon joints cut into each member",
               "Steel bolts passing through both members at every joint",
               "Nothing beyond nails driven at an angle through the members",
@@ -4483,7 +4483,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say about the nail holes in a metal gusset plate?",
             options: [
-              "They are prepunched",
+              "They are prepunched in flat pieces of galvanized steel",
               "They are drilled on site to match each particular joint",
               "They are punched by the nail itself as it is driven",
               "They are omitted, because the plate is welded rather than nailed",
@@ -4496,7 +4496,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What can a truss do that a simple rafter cannot?",
             options: [
-              "Span far without intermediate support",
+              "Span a long way without any intermediate support beneath it",
               "Carry a heavier roof covering for the same depth of member",
               "Be adjusted on site to suit an irregular building",
               "Resist wind uplift without any connection to the wall",
@@ -4509,7 +4509,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What state is every part of a truss in?",
             options: [
-              "Tension or compression",
+              "Tension or compression, balanced against each other",
               "Bending, distributed evenly across all the members",
               "Shear, resolved at the gusset plates",
               "Rest, until a live load is applied to the roof",
@@ -4522,7 +4522,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which truss member is in tension, holding the top chords from spreading?",
             options: [
-              "The bottom chord",
+              "The bottom chord, which also acts as the ceiling joist",
               "The short web members near the peak of the truss",
               "The gusset plate at the apex, which pulls the chords together",
               "The top chord itself, which is stretched along its length",
@@ -4535,7 +4535,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What happens if the bottom chord of a truss can no longer hold the top chords from spreading?",
             options: [
-              "The peak can drop",
+              "The peak of the truss can drop, since nothing holds the top chords",
               "The truss pushes outward on the walls and nothing else changes",
               "The webs take over the tension and the truss is unaffected",
               "The roof covering cracks but the frame remains stable",
@@ -4548,7 +4548,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the rule about cutting, notching or drilling a truss member?",
             options: [
-              "Do not do it",
+              "Do not do it; it is a question for the truss designer",
               "It is acceptable in the web members but never in the chords",
               "It is acceptable anywhere if the hole is smaller than a quarter of the depth",
               "It is acceptable once the roof covering has been removed",
@@ -4561,7 +4561,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which truss member is most likely to be mistaken for an ordinary ceiling joist?",
             options: [
-              "The bottom chord",
+              "The bottom chord, which acts as one",
               "A short web member running vertically at the centre",
               "The top chord where it passes over the wall plate",
               "The gusset plate at the heel of the truss",
@@ -4574,7 +4574,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say truss design takes into account?",
             options: [
-              "Snow, wind, roof weight and slope",
+              "Snow load, wind load, the weight of the roof, and its slope",
               "The species of lumber and the humidity of the factory",
               "The preferences of the builder and the budget for the roof",
               "The span alone, since all other factors are covered by safety margins",
@@ -4587,7 +4587,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a flatter roof slope do to the stresses in a truss?",
             options: [
-              "Increases them",
+              "Increases them, so larger members and connections are needed",
               "Decreases them, because less of the load acts along the chords",
               "Leaves them unchanged, since total load does not depend on slope",
               "Shifts them from the chords to the gusset plates",
@@ -4600,7 +4600,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does a truss roof send the entire load it carries?",
             options: [
-              "Down through the outside walls to the foundation",
+              "Down through the two outside walls and on to the foundation below",
               "Into the ridge, which distributes it along the length of the house",
               "Into the ceiling frame, which spreads it across the interior walls",
               "Into the gusset plates, which are sized to hold the whole load",
@@ -4613,7 +4613,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the course call this the cheapest piece of knowledge in it?",
             options: [
-              "Knowing not to cut a truss costs nothing",
+              "Because knowing not to cut a truss costs nothing to learn",
               "Because trusses are the least expensive way to frame a roof",
               "Because a truss can be replaced more cheaply than a rafter roof",
               "Because the manual's truss chapter is the shortest in the book",
@@ -4626,7 +4626,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Who can answer a question about changing something on a truss?",
             options: [
-              "The truss designer and the building department",
+              "The truss designer and the building department, and nobody else",
               "Any framing contractor with experience of trussed roofs",
               "The manufacturer of the gusset plates used in the truss",
               "The homeowner, provided the change is above the ceiling line",
@@ -4639,7 +4639,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What are the three truss shapes the manual names as most common in light framing?",
             options: [
-              "King post, W-type and scissors",
+              "King post, W-type or fink, and scissors",
               "Gable, hip and shed, matching the three roof shapes",
               "Open web, closed web and solid, by the type of infill",
               "Parallel chord, arched and cantilevered",
@@ -4652,7 +4652,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What do the web members of a truss do?",
             options: [
-              "Brace the chords at chosen points",
+              "Brace the chords at the points chosen in the design",
               "Carry the roof covering between the top chords",
               "Hold the truss upright during erection and are then removed",
               "Join one truss to the next along the length of the roof",
@@ -4665,7 +4665,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is compression, in the manual's words?",
             options: [
-              "A pushing-together force",
+              "A pushing-together force, the opposite of tension",
               "A twisting force applied about the length of a member",
               "The force that results when a member is bent past its limit",
               "The weight a member carries when it is loaded from above",
@@ -4678,7 +4678,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How does HUD's manufactured home standard treat roof load across the country?",
             options: [
-              "By zone, heaviest in the north",
+              "By zone, with heavier design roof loads in the north",
               "As a single national figure applied to every home",
               "By the age of the home rather than by its location",
               "As a matter for the manufacturer to determine case by case",
@@ -4704,7 +4704,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does roof slope do besides shed water?",
             options: [
-              "Changes the stresses in the structure",
+              "Changes the stresses in the structure below it",
               "Determines the type of underlayment the code will allow",
               "Sets the direction in which the rafters must run",
               "Fixes the height of the walls beneath it",
@@ -4717,7 +4717,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does an overhang at the eaves do?",
             options: [
-              "Throws water clear of the wall",
+              "Throws water clear and protects the wall below",
               "Adds weight at the perimeter to resist wind uplift",
               "Provides the ventilation opening for the attic",
               "Carries the gutter, which is its only structural purpose",
@@ -4756,7 +4756,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How many basic purposes does the manual give for roofing felt?",
             options: [
-              "Three",
+              "Three, beginning with keeping the deck dry",
               "One, which is to keep water out of the building",
               "Five, one for each stage of the roofing process",
               "Two, both of them about water",
@@ -4769,7 +4769,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What kind of material does the manual say roof underlayment should be?",
             options: [
-              "One with low vapour resistance",
+              "One with low vapour resistance, such as felt",
               "The most waterproof material available for the price",
               "A rigid board rather than a flexible sheet",
               "A reflective foil, to reduce heat gain in the attic",
@@ -4782,7 +4782,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What goes wrong when a vapour-barrier material is used as roof underlayment?",
             options: [
-              "Moisture or frost accumulates under it",
+              "Moisture or frost accumulates between it and the sheathing",
               "It tears under the weight of the shingles above it",
               "It prevents the shingles from bonding to the deck",
               "It traps heat and shortens the life of the covering",
@@ -4795,7 +4795,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What general lesson does the underlayment warning teach about a building's layers?",
             options: [
-              "Each layer has its own job",
+              "Each layer has its own job, and it belongs in its own place",
               "Layers should be ranked from least to most waterproof going outward",
               "The outermost layer does all the work and the rest are backup",
               "More layers always give better protection than fewer",
@@ -4808,7 +4808,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a wind zone?",
             options: [
-              "A geographic division setting wind loading",
+              "A geographic division that sets the wind loading",
               "The area of a roof most exposed to prevailing winds",
               "The clearance kept around a building for wind to pass",
               "A rating given to a roof covering by its manufacturer",
@@ -4821,7 +4821,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does a learner find the loads their own roof must carry?",
             options: [
-              "In the code their jurisdiction adopted",
+              "In the code that their own jurisdiction has adopted for roof loads",
               "In the HUD standard, which applies to every home in the country",
               "On the truss drawings, which are filed with the property deed",
               "In the Wood Handbook, which tabulates loads by species",
@@ -4834,7 +4834,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is underlayment?",
             options: [
-              "The sheet layer between sheathing and covering",
+              "The sheet layer between the sheathing and the covering",
               "The insulation laid over the ceiling of the top storey",
               "The board fixed under the rafters to carry the ceiling",
               "The membrane laid under a concrete slab before it is poured",
@@ -4847,7 +4847,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which part of a house is loaded from above by weather and pulled at from above by wind?",
             options: [
-              "The roof",
+              "The roof, which carries downward load and resists uplift",
               "The foundation, which resists both through its anchorage",
               "The exterior walls, which take the full force of both",
               "The floor frame, which carries everything above it",
@@ -4860,7 +4860,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a truss have that a rafter roof does not?",
             options: [
-              "An engineered design for one building",
+              "An engineered design made for one building in one place",
               "A covering that is fixed directly to the chords without sheathing",
               "A connection to the interior partitions that share its load",
               "A slope chosen on site to suit the building's proportions",
@@ -4873,7 +4873,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does a trussed roof not need help from the middle of the house?",
             options: [
-              "It rests on the two outside walls",
+              "It rests on the two outside walls, which carry its load",
               "Because its chords are made of heavier material than rafters",
               "Because the gusset plates carry load across the whole span",
               "Because the ceiling below shares the load with it",
@@ -4886,7 +4886,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the ridge of a roof?",
             options: [
-              "The horizontal line at the top",
+              "The horizontal line at the very top where slopes meet",
               "The line where two slopes meet at an inside corner",
               "The edge of the roof over the gable end wall",
               "The highest course of roof covering, which laps both slopes",
@@ -4899,7 +4899,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which statement about a truss's bottom chord is true?",
             options: [
-              "It is in tension and acts as a ceiling joist",
+              "It is in tension and also does the job of a ceiling joist",
               "It is in compression and carries the weight of the roof covering",
               "It is decorative and carries no load once the roof is finished",
               "It may be cut where a duct needs to pass through it",
@@ -4912,7 +4912,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say about the difference between a rafter roof and a trussed roof for someone planning a change?",
             options: [
-              "They behave differently and matter enormously",
+              "They behave differently, and that matters enormously",
               "They are structurally identical once the ceiling is finished",
               "A trussed roof is easier to alter because the parts are lighter",
               "A rafter roof cannot be altered at all, while a truss can",
@@ -4925,7 +4925,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say roof trusses save?",
             options: [
-              "Material and on-site labour",
+              "Material and on-site labour, and some of the doubling in framing below",
               "Height, because a truss is shallower than the rafters it replaces",
               "Weight, because the chords are thinner than rafters of the same span",
               "Inspections, because a factory-made assembly needs no site approval",
@@ -4938,7 +4938,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "In a rafter roof, what is doing the job that a truss's bottom chord does?",
             options: [
-              "The ceiling joist",
+              "The ceiling joist, which ties the rafter feet together",
               "The ridge board, which holds the rafter tops in line",
               "The top plate, which resists the outward push by itself",
               "The collar tie alone, whatever the ceiling below is made of",
@@ -5065,7 +5065,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How many separate jobs does the outside of a wall have, according to section 7?",
             options: [
-              "Four",
+              "Four, from keeping water out to slowing the flow of heat",
               "One, which is keeping water out, performed by several materials at once",
               "Two, structure and weather protection, divided between sheathing and cladding",
               "Six, one for each material in a typical wall assembly",
@@ -5078,7 +5078,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does a wall need layers rather than one very good material?",
             options: [
-              "One material rarely does more than two jobs",
+              "Because one material is rarely good at more than one or two of the jobs",
               "Because layers are cheaper than a single high-performance product",
               "Because codes require a minimum number of separate materials",
               "Because each trade installs its own material in sequence",
@@ -5091,7 +5091,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where is the water vapour in a house generated?",
             options: [
-              "Inside, by the occupants",
+              "Inside the house, by the people living there, cooking and washing",
               "Outside, and it is driven in by wind pressure on the walls",
               "In the wall cavity, where warm and cold air meet",
               "In the attic, and it then moves down into the living space",
@@ -5104,7 +5104,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How does water vapour move through a wall?",
             options: [
-              "Through the materials themselves",
+              "Through the wall materials themselves, which are permeable",
               "Only through gaps and holes left by careless work",
               "Only when liquid water has already entered the assembly",
               "Only downward, following gravity through the cavity",
@@ -5117,7 +5117,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What can happen when vapour passes through wall and ceiling materials in cold weather?",
             options: [
-              "It condenses inside the cavity",
+              "It condenses inside the cavity, risking decay of framing",
               "It freezes on the inside face of the drywall where it is visible",
               "It escapes harmlessly through the cladding to the outside air",
               "It raises the indoor humidity until the occupants notice it",
@@ -5130,7 +5130,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "On which side of a wall does a vapour barrier belong?",
             options: [
-              "The warm side",
+              "The warm side, where the vapour comes from",
               "The cold side, where the vapour is heading",
               "The outside, under the cladding, where it also sheds water",
               "Either side, provided it is continuous",
@@ -5143,7 +5143,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does the manual say a vapour barrier belongs in an attic?",
             options: [
-              "Below the insulation",
+              "Below the insulation, on the warm side",
               "Above the insulation, where it can shed any roof leak",
               "At the ridge, where warm air collects",
               "At the eaves, alongside the ventilation openings",
@@ -5156,7 +5156,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say about the insulating value of an empty stud space?",
             options: [
-              "Air spaces resist heat, but filled spaces do far better",
+              "Air spaces resist heat, but filled spaces resist far more",
               "An empty cavity insulates as well as a filled one if it is sealed",
               "An empty cavity has no insulating value whatsoever",
               "An empty cavity performs better, because still air is the best insulator",
@@ -5169,7 +5169,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a control layer?",
             options: [
-              "A layer responsible for one job",
+              "A layer responsible for one job, such as water or air",
               "The layer an inspector checks before the wall is closed up",
               "The layer that controls the position of all the others",
               "The structural layer, which controls how the wall carries load",
@@ -5182,7 +5182,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What shape does HUD's vapour retarder rule have, even without its numbers?",
             options: [
-              "Tight inside, open outside",
+              "Tight on the inside, with the outer layers left open to dry",
               "Tight on both faces, with a sealed cavity between them",
               "Open inside, tight outside, so vapour is stopped at the cladding",
               "Identical in every climate zone in the country",
@@ -5195,7 +5195,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What kind of homes does 24 CFR 3280.504 govern?",
             options: [
-              "Manufactured homes",
+              "Manufactured homes, under HUD's standard",
               "Every home in states that have adopted an energy code",
               "Homes in cold climate zones only",
               "New site-built homes, but not existing ones",
@@ -5208,7 +5208,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does permeable mean in this section?",
             options: [
-              "Letting vapour pass through the material",
+              "Letting water vapour pass through the material itself",
               "Letting liquid water run through a gap in an assembly",
               "Allowing air to move freely through a cavity",
               "Absorbing moisture and holding it in the material",
@@ -5221,7 +5221,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is condensation, as this section uses the word?",
             options: [
-              "Water forming on a cold surface",
+              "Water forming as moist air meets a cold surface",
               "Vapour leaking through a hole in the air barrier",
               "The absorption of moisture into a porous material",
               "The swelling of wood as it takes up humidity",
@@ -5234,7 +5234,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say about cladding and water?",
             options: [
-              "It is not waterproof",
+              "It is not waterproof, and the wall behind assumes some water gets past",
               "It is the only waterproof layer, and everything behind it stays dry",
               "It keeps out rain but not wind-driven rain",
               "It is waterproof when new and fails only as it ages",
@@ -5247,7 +5247,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the DOE guide say happens to water that leaks through the cladding?",
             options: [
-              "It drains down a water-resistant surface",
+              "It drains down a water-resistant surface and out",
               "It evaporates in the cavity before it can reach the framing",
               "It is absorbed by the sheathing and released slowly",
               "It is carried into the wall cavity and out through weep holes in the studs",
@@ -5260,7 +5260,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What two things does the DOE guide say a wall water barrier does?",
             options: [
-              "Blocks moisture and provides a drainage path",
+              "Blocks moisture and provides a path to drain it",
               "Stops water and stops air, in a single continuous layer",
               "Sheds rain and reflects heat away from the structure",
               "Seals the wall and allows the cladding to be fixed through it",
@@ -5273,7 +5273,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How must the layers of a drainage plane be installed?",
             options: [
-              "Overlapping, not underlapping",
+              "Overlapping like shingles, each upper piece over the one below",
               "Butted edge to edge and sealed with tape at every joint",
               "With the lower layers over the upper ones to resist wind uplift",
               "In a single unbroken sheet with no joints anywhere",
@@ -5286,7 +5286,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a sheet of drainage plane material installed the wrong way round?",
             options: [
-              "A funnel pointing inward",
+              "A funnel pointing into the wall",
               "A vapour barrier on the cold side of the wall",
               "A thermal bridge through the insulation",
               "An air leak at the top of the wall",
@@ -5299,7 +5299,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How does the Navy manual define flashing?",
             options: [
-              "Formed pieces protecting against water seepage",
+              "Formed pieces of sheet metal protecting against water seepage",
               "A sealant applied at joints where two materials meet",
               "The trim that covers the joint between roof and wall",
               "A drainage channel formed in the sheathing at each opening",
@@ -5312,7 +5312,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What two properties does the manual require of flashing?",
             options: [
-              "Watertight and water shedding",
+              "It must be watertight and also water shedding",
               "Corrosion resistant and paintable",
               "Rigid and continuous across the whole wall",
               "Permeable to vapour and impermeable to liquid",
@@ -5325,7 +5325,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How must drainage plane materials meet exterior wall flashings?",
             options: [
-              "Lapped over them",
+              "Lapped over them, so water is directed away",
               "Tucked behind them, so the flashing sheds onto the cladding",
               "Butted to them and sealed with a compatible tape",
               "Kept clear of them, so each drains independently",
@@ -5338,7 +5338,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does this course not print the DOE guide's drainage gap dimensions?",
             options: [
-              "Yours come from your own code",
+              "Your own figures come from your jurisdiction's adopted code",
               "Because the guide has withdrawn them in a later revision",
               "Because gaps differ between manufacturers rather than jurisdictions",
               "Because the guide gives them only for commercial buildings",
@@ -5351,7 +5351,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is brick veneer doing on a house?",
             options: [
-              "Finishing the wall, not holding it up",
+              "Finishing the wall over the sheathing, not holding it up",
               "Carrying the floor loads down to the foundation",
               "Bracing the wall against racking in place of sheathing",
               "Serving as the drainage plane for the wall behind it",
@@ -5364,7 +5364,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does a metal drip edge at a roof edge do?",
             options: [
-              "Makes water drip clear of the construction",
+              "Makes water drip free of the cornice construction below",
               "Holds the underlayment down until shingles are laid",
               "Stops wind lifting the first course of shingles",
               "Carries meltwater along the eave to the downspout",
@@ -5377,7 +5377,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What happens at an eave in snow country to create an ice dam?",
             options: [
-              "Melting snow refreezes there",
+              "Melting snow refreezes at the eave line and backs water up",
               "Snow accumulates faster at the edge than at the ridge",
               "Gutters freeze first and force water back up the slope",
               "Wind drives snow under the covering and it melts inside",
@@ -5416,7 +5416,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say the two verbs block and drain are meant to correct?",
             options: [
-              "The idea that stopping water is enough",
+              "The idea that stopping water is enough on its own",
               "The idea that cladding is the only weather layer",
               "The idea that flashing is only needed at the roof",
               "The idea that water always enters from above",
@@ -5429,7 +5429,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why do air, vapour and heat get taught together?",
             options: [
-              "Moving air carries heat and vapour with it",
+              "Because moving air carries heat and vapour along with it",
               "Because the same product controls all three in modern walls",
               "Because all three are measured in the same units",
               "Because the code treats them as a single requirement",
@@ -5442,7 +5442,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which detail from earlier in the course turns out to be an air-sealing detail?",
             options: [
-              "The sill sealer",
+              "The sill sealer under the sill plate",
               "The termite shield under the sill plate",
               "The air space around a girder end in its pocket",
               "The gap between sheathing panels",
@@ -5455,7 +5455,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual call applying wall-height rolls of plastic film over studs, plates and headers?",
             options: [
-              "Enveloping",
+              "Enveloping, used when a positive seal over the insulation is wanted",
               "Wrapping, the term also used for the exterior water barrier",
               "Sealing, which is the general name for any continuous membrane",
               "Lining, because the film lines the inside face of the wall",
@@ -5468,7 +5468,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why do outlet boxes in exterior walls get special attention?",
             options: [
-              "Air and vapour concentrate at holes",
+              "Because air and vapour loss concentrates at holes in the barrier",
               "Because electrical codes require them to be sealed against fire",
               "Because they interrupt the insulation more than anything else does",
               "Because they are the only penetrations an inspector can see",
@@ -5481,7 +5481,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which way should a faced batt of insulation be installed?",
             options: [
-              "Covering sheet facing the warm side",
+              "With its covering sheet facing the warm side",
               "Covering sheet facing the cold side, toward the sheathing",
               "Either way, since the facing is only there for handling",
               "With the facing removed before the batt is fitted",
@@ -5494,7 +5494,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which five classes of insulation does the manual list?",
             options: [
-              "Flexible, loose fill, reflective, rigid and miscellaneous",
+              "Flexible, loose fill, reflective, rigid, miscellaneous",
               "Batt, board, spray, blown and reflective foil",
               "Mineral, vegetable, plastic, metallic and composite",
               "Wall, floor, ceiling, roof and foundation grades",
@@ -5507,7 +5507,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does the manual say loose fill is well suited?",
             options: [
-              "Ceiling joists in unheated attics",
+              "Between ceiling joists in unheated attics",
               "Between the studs of a new exterior wall before drywall",
               "Under a concrete slab before it is poured",
               "In the cavity behind brick veneer",
@@ -5520,7 +5520,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What warning does the manual attach to blowing insulation into an existing uninsulated house?",
             options: [
-              "Provide a vapour barrier, such as a paint coating",
+              "Provide a vapour barrier, such as a suitable paint coating",
               "Remove the existing plaster first so the fill can be inspected",
               "Blow it only in summer, when the walls are driest",
               "Use reflective insulation instead, because fill settles",
@@ -5533,7 +5533,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why is adding insulation to an old wall a building science decision?",
             options: [
-              "It changes where vapour will condense",
+              "Because it changes where in the wall vapour will condense",
               "Because older framing cannot carry the extra weight",
               "Because the wall must be rewired at the same time",
               "Because insulation reduces the wall's racking resistance",
@@ -5546,7 +5546,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How does HUD's standard express the minimum ventilation for an attic or roof cavity?",
             options: [
-              "As a fraction of the cavity's floor area",
+              "As a fraction of the cavity's floor area, spread high and low",
               "As a fixed number of vents per side of the building",
               "As a volume of air changed per hour by a fan",
               "As a percentage of the roof's surface area",
@@ -5559,7 +5559,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does distributing attic vents high and low achieve?",
             options: [
-              "Air moves through and carries moisture out",
+              "Air moves through the attic and carries moisture out",
               "Snow is prevented from entering the upper openings",
               "The attic stays at the same temperature as the living space",
               "Insulation is held in place by the pressure difference",
@@ -5572,7 +5572,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the summary sentence for section 7?",
             options: [
-              "Keep water out, stop air, control vapour, slow heat, and let it dry",
+              "Keep water out, stop air, control vapour, slow heat, let it dry",
               "Use the most waterproof material available in every position",
               "Seal the assembly completely so nothing can enter it at all",
               "Insulate first and let the other three jobs follow from it",
@@ -5585,7 +5585,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is an air barrier?",
             options: [
-              "The layer stopping air moving through the assembly",
+              "The layer stopping air from moving through the assembly",
               "The gap that allows air to circulate behind the cladding",
               "The film installed to stop vapour diffusing through materials",
               "The insulation, which traps air in small pockets",
@@ -5598,7 +5598,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course mean by drying, in the context of an assembly?",
             options: [
-              "Its ability to release moisture that gets in",
+              "Its ability to release whatever moisture does get in",
               "The period after construction before the finishes are applied",
               "The seasoning of lumber before it is built into a wall",
               "The evaporation of water from a freshly poured slab",
@@ -5611,7 +5611,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does HUD's standard allow for wall cavities as an alternative to a vapour barrier?",
             options: [
-              "Ventilation that dissipates condensation",
+              "Ventilation that dissipates any condensation in the cavity",
               "A double layer of insulation with no facing at all",
               "A sealed cavity with no openings of any kind",
               "An exterior cladding rated as fully waterproof",
@@ -5624,7 +5624,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which job does liquid water get in this section, compared with air, vapour and heat?",
             options: [
-              "Its own separate layer",
+              "Its own separate layer, the drainage plane and flashings",
               "The same layer as vapour, since both are water",
               "No layer of its own, because cladding handles it",
               "A layer shared with the thermal control layer",
@@ -5650,7 +5650,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which earlier lesson does section 7 say it was already explaining?",
             options: [
-              "The roof underlayment warning",
+              "The warning about vapour-barrier roof underlayment",
               "The lesson on how wood shrinks across the grain",
               "The lesson on soil-bearing capacity and footings",
               "The lesson on racking and sheathing",
@@ -5663,7 +5663,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which of these is a vapour-barrier material the manual names?",
             options: [
-              "Aluminium foil",
+              "Aluminium foil, as one of several barrier materials",
               "Asphalt-saturated felt, which is used as roof underlayment",
               "Oriented strand board, when installed with sealed joints",
               "Loose fill insulation, when packed tightly enough",
@@ -5676,7 +5676,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the manual say about paint as a vapour barrier?",
             options: [
-              "It cannot substitute for membrane types",
+              "It cannot substitute for the membrane types",
               "It is the preferred method in all new construction",
               "It works only on the exterior face of a wall",
               "It has no effect on vapour movement at all",
@@ -5689,7 +5689,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say an ice dam really is?",
             options: [
-              "A heat problem presenting as a water problem",
+              "A heat problem presenting itself as a water problem",
               "A structural problem caused by snow load at the eave",
               "A flashing problem caused by a missing drip edge",
               "A ventilation problem with no connection to insulation",
@@ -5702,7 +5702,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which statement matches the manual's view of building materials and vapour?",
             options: [
-              "Most are permeable to it",
+              "Most of them are permeable to it",
               "Most block it completely once painted",
               "Only insulation allows it to pass",
               "It passes only where two materials meet",
@@ -5715,7 +5715,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which agency funds the Building America Solution Center guides this course cites?",
             options: [
-              "The Department of Energy",
+              "The Department of Energy, which funds them",
               "The Department of Housing and Urban Development",
               "The Forest Products Laboratory",
               "The Federal Emergency Management Agency",
@@ -5728,7 +5728,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say about ranking a building's layers from less to more waterproof?",
             options: [
-              "The ranking is the wrong idea",
+              "The ranking itself is the wrong idea for layers",
               "It is correct, provided the most waterproof layer is outermost",
               "It applies to roofs but not to walls",
               "It applies only where no insulation is installed",
@@ -5754,7 +5754,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where would you look for the ventilation and vapour rules that actually govern your own house?",
             options: [
-              "Your jurisdiction's adopted code",
+              "The code your jurisdiction has adopted",
               "The HUD standard cited in this section",
               "The Navy manual, which states the national minimum",
               "The insulation manufacturer's packaging",
@@ -5854,7 +5854,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the term continuous load path describe?",
             options: [
-              "The condition required to resist all loads",
+              "The condition required to resist all loads, all the way down",
               "The route taken by workers moving material through a site",
               "A load that acts continuously rather than intermittently",
               "The sequence in which structural members are installed",
@@ -5867,7 +5867,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where does the DOE guide say the weakest link in a load path tends to be?",
             options: [
-              "At the connections",
+              "At the connections between major building assemblies",
               "In the middle of the longest spanning member",
               "At the foundation, which carries the accumulated load",
               "In the roof, which is the most exposed assembly",
@@ -5880,7 +5880,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What happens when one connection in a load path fails?",
             options: [
-              "An alternative load path forms",
+              "An alternative load path forms that nobody designed",
               "The load stops at the failure and goes no further",
               "The remaining connections share the load equally between them",
               "The building settles onto the next member and stabilises",
@@ -5893,7 +5893,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the word progressive mean in progressive failure?",
             options: [
-              "The failure spreads rather than stopping",
+              "The failure spreads from one part to the next rather than stopping",
               "The failure happens slowly enough to be noticed and repaired",
               "The failure moves upward from the foundation to the roof",
               "The failure is limited to one storey at a time",
@@ -5906,7 +5906,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which of these is one of the critical connections the DOE guide names?",
             options: [
-              "Roof to wall",
+              "Roof to wall, where rafters meet the wall",
               "Stud to stud within a single framed wall",
               "Joist to bridging at the centre of a span",
               "Cladding to sheathing on an exterior wall",
@@ -5919,7 +5919,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is the DOE guide's list of critical connections, compared with lesson 5?",
             options: [
-              "The same path written as joints",
+              "The same path written as the joints between parts",
               "A different path that applies only in high-wind regions",
               "A subset covering only the roof structure",
               "An ordering of connections by how often they are inspected",
@@ -5932,7 +5932,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does HUD's standard require roof framing to be fastened to?",
             options: [
-              "The wall framing",
+              "The wall framing, with the walls fastened to the floor",
               "The ceiling joists, which then transfer the load to the walls",
               "The chassis directly, bypassing the wall framing",
               "The roof sheathing, which carries the connection to the wall",
@@ -5958,7 +5958,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What must support, anchoring or foundation systems resist, per HUD's windstorm section?",
             options: [
-              "Overturning and lateral movement",
+              "Overturning and lateral movement of the whole building",
               "Settlement and frost heave in the supporting soil",
               "Decay and insect attack at the ground contact",
               "Expansion and contraction of the chassis",
@@ -5971,7 +5971,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why is uplift the hard case for a connection?",
             options: [
-              "Resting on something does not resist a pull",
+              "Because resting on something does not resist a pull upward",
               "Because uplift acts faster than any other load on a building",
               "Because uplift is not considered in the design of ordinary houses",
               "Because uplift acts only on the roof and nowhere else",
@@ -5984,7 +5984,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the Navy manual say about framing anchors at cantilevered joists?",
             options: [
-              "Strongly recommended and often required",
+              "Strongly recommended and often required by the specifications",
               "Optional in every case, since nailing is sufficient",
               "Prohibited, because they interfere with the joist hangers",
               "Required only where the cantilever exceeds two storeys",
@@ -5997,7 +5997,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Where else does the Navy manual describe metal anchors being used?",
             options: [
-              "To strengthen framed floor openings",
+              "To strengthen the framing around floor openings",
               "To fix the sheathing panels to the wall studs",
               "To join the top plates of two intersecting walls",
               "To hold the ridge board in position during erection",
@@ -6010,7 +6010,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How can a connection weaken with nobody touching it?",
             options: [
-              "Members shrink and bearing is lost",
+              "The members shrink and full bearing at the joint is lost",
               "Fasteners rust through in a matter of months",
               "The load on the building rises steadily as it ages",
               "The wood grows around the fastener and pushes it out",
@@ -6023,7 +6023,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is a framing anchor?",
             options: [
-              "A metal connector between framing members",
+              "A metal connector fixed between framing members",
               "The bolt that ties the sill plate to the foundation",
               "A brace holding a wall plumb until the sheathing is fixed",
               "The strap that holds insulation in a stud cavity",
@@ -6036,7 +6036,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is sliding, in the sense HUD's standard uses?",
             options: [
-              "Horizontal movement relative to the support",
+              "Horizontal movement of a home relative to its support",
               "The slipping of a joist along the plate it rests on",
               "The movement of sheathing panels relative to one another",
               "The settlement of a foundation into soft soil",
@@ -6049,7 +6049,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say this lesson is about, compared with everything before it?",
             options: [
-              "The gaps between members",
+              "The gaps between members, where the trouble is",
               "The materials members are made from",
               "The order in which members are installed",
               "The cost of members and their fasteners",
@@ -6062,7 +6062,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which assembly connection appears in the DOE list but not in the load path of lesson 5?",
             options: [
-              "Chimney to roof member",
+              "Chimney to roof member, a heavy element on the roof",
               "Wall to foundation, which lesson 5 leaves out",
               "Roof sheathing to framing, which lesson 5 leaves out",
               "Wall above to wall below, which lesson 5 leaves out",
@@ -6075,7 +6075,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What kind of building does the HUD language quoted in this lesson govern?",
             options: [
-              "Manufactured homes",
+              "Manufactured homes, under HUD's standard at 24 CFR 3280",
               "Any building over two storeys in a designated wind zone",
               "Homes built with metal connectors rather than nails",
               "Site-built houses in states without an adopted code",
@@ -6088,7 +6088,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does a joist resting on a plate stay there under ordinary conditions?",
             options: [
-              "Gravity holds the joint closed",
+              "Because gravity holds the joint closed under its own weight",
               "Because friction between wood surfaces resists any movement",
               "Because the plate is wider than the joist it carries",
               "Because the sheathing nailed across it prevents any lift",
@@ -6101,7 +6101,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What makes a load path continuous?",
             options: [
-              "Every handover is strong enough",
+              "Every handover between members is strong enough",
               "Every member is made of the same material",
               "The path runs in a straight line from roof to footing",
               "No member is longer than the one below it",
@@ -6114,7 +6114,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Above what moisture content does the Wood Handbook say serious decay occurs?",
             options: [
-              "The fiber saturation point",
+              "The fiber saturation point, averaging about 30 percent",
               "Twenty percent, which is the definition of air-dry wood",
               "Nineteen percent, the maximum for lumber graded as dry",
               "Any level, provided decay fungi are already present",
@@ -6127,7 +6127,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Will water vapour in humid air, by itself, wet wood enough for serious decay?",
             options: [
-              "No, though it can support some mould",
+              "No, though it can permit some mould fungi to develop",
               "Yes, over a long enough period in any climate",
               "Yes, but only in wood that has never been dried",
               "No, and it cannot support mould either",
@@ -6140,7 +6140,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which three contacts does the handbook say do bring previously dried wood to the fiber saturation point?",
             options: [
-              "Rain, condensation and wet ground",
+              "Rain, condensation, and contact with wet ground",
               "Snow, ice and frost forming on the surface",
               "Plumbing leaks, roof leaks and window leaks",
               "Humidity, temperature swings and poor ventilation",
@@ -6153,7 +6153,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What moisture content does the handbook give for fully air-dried wood?",
             options: [
-              "Not exceeding 20 percent",
+              "Not exceeding 20 percent, a reasonable safety margin",
               "Not exceeding 8 percent, the recommended interior value",
               "About 30 percent, the average fiber saturation point",
               "Between 40 and 60 percent, depending on the season",
@@ -6166,7 +6166,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the handbook say happens to existing decay in wood that is kept air dry?",
             options: [
-              "It will not progress",
+              "It will not progress any further while the wood stays dry",
               "It continues slowly but at a reduced rate",
               "It spreads faster, because the fungus seeks moisture elsewhere",
               "It becomes impossible to detect without laboratory testing",
@@ -6179,7 +6179,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does the course say the details of sections 4 and 7 really are?",
             options: [
-              "The structural strategy",
+              "The structural strategy for keeping wood dry",
               "Finish details that improve comfort and appearance",
               "Optional upgrades that go beyond the code minimum",
               "Requirements that apply only in humid climates",
@@ -6192,7 +6192,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does keeping a member dry preserve its structural performance?",
             options: [
-              "It keeps the properties the designer assumed",
+              "It keeps the member the one that was designed, with the properties assumed",
               "Because dry wood is permanently stronger than wet wood of any species",
               "Because dryness prevents the member from shrinking at all",
               "Because a dry member needs no connections to the rest of the frame",
@@ -6205,7 +6205,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "How does the Wood Handbook treat insects relative to fungi?",
             options: [
-              "In the same chapter on biodeterioration",
+              "In the same chapter on biodeterioration as fungi",
               "In a separate volume dealing with pest control",
               "As a subject outside the scope of an engineering handbook",
               "As a problem only for wood already weakened by decay",
@@ -6231,7 +6231,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What does this course say an ordinary person can usefully do about decay?",
             options: [
-              "Look, and name what they see accurately",
+              "Look, and name what they see accurately to someone who can act",
               "Repair the affected members before the damage spreads",
               "Treat the wood with preservative to stop the fungus",
               "Increase the ventilation until the moisture content falls",
@@ -6244,7 +6244,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Which of these is one of the things the lesson suggests looking for?",
             options: [
-              "Wood touching soil",
+              "Wood touching the soil, one of the three routes to decay",
               "Nail heads showing through the drywall of an interior wall",
               "Doors that stick in one season and not another",
               "Panel gaps between sheets of exterior sheathing",
@@ -6257,7 +6257,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does a crawl space clearance filled with soil or stored boxes matter?",
             options: [
-              "It brings wood toward ground contact and stops drying",
+              "It brings the wood toward ground contact and stops it drying",
               "It makes the space harder for an inspector to enter",
               "It adds dead load the floor frame was not designed for",
               "It blocks the path of plumbing and duct runs",
@@ -6270,7 +6270,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why is an air space around a girder end packed with insulation a problem?",
             options: [
-              "The end can no longer dry",
+              "The girder end can no longer dry, which is why the space was left",
               "The insulation will be crushed by the girder under load",
               "The girder will expand and crack the surrounding masonry",
               "The insulation blocks the required ventilation to the attic",
@@ -6283,7 +6283,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is mould, in the distinction this lesson draws?",
             options: [
-              "Fungi that grow below the decay threshold",
+              "Fungi that can grow below the threshold for serious decay",
               "The early stage of the same fungus that later causes decay",
               "A staining organism that never affects wood at all",
               "A form of decay that only affects treated wood",
@@ -6296,7 +6296,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What do decay fungi consume?",
             options: [
-              "The structural chemical components of wood",
+              "The structural chemical components of the wood",
               "The preservative treatment applied to the surface",
               "The moisture in the wood, drying it as they grow",
               "The fasteners and connectors at a joint",
@@ -6309,7 +6309,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "What is preservative treatment for?",
             options: [
-              "Wood that cannot be kept reliably dry",
+              "Wood that cannot be kept reliably dry, such as a girder end",
               "Wood that will be exposed to sunlight for long periods",
               "Wood used in structural members carrying heavy loads",
               "Wood installed above its recommended moisture content",
@@ -6335,7 +6335,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "Why does the course call the handbook's decay paragraph its most useful one?",
             options: [
-              "It gives both the mechanism and the defence",
+              "It gives both the mechanism of decay and the defence",
               "Because it is the shortest paragraph in the handbook",
               "Because it applies to every species without exception",
               "Because it replaces the need to read anything else",
@@ -6348,7 +6348,7 @@ Naval Education and Training Professional Development and Technology Center. (19
           {
             prompt: "A gutter discharging against a wall belongs to which of the three routes to the threshold?",
             options: [
-              "Rain reaching the wood",
+              "Rain reaching the wood as liquid water",
               "Condensation forming inside the assembly",
               "Contact with wet ground beneath the foundation",
               "None, because a gutter is outside the assembly",
@@ -6601,7 +6601,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does knowing the order of a build tell an ordinary person?",
             options: [
-              "When looking is still possible",
+              "When looking at each part is still possible",
               "Which trade is responsible if something later goes wrong",
               "How long each stage of the work should take",
               "Which stages require a permit and which do not",
@@ -6614,7 +6614,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the manual say framing begins after?",
             options: [
-              "Completion of the foundation",
+              "Completion of the foundation work",
               "Delivery of the roof trusses to the site",
               "Approval of the drawings by the building department",
               "Installation of the underground plumbing",
@@ -6627,7 +6627,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the manual say wall construction begins after?",
             options: [
-              "The subfloor is nailed in place",
+              "The subfloor is nailed in place, so walls are raised onto it",
               "The floor joists are set but before the subfloor goes down",
               "The roof framing is complete and the building is closed in",
               "The girders and posts are permanently anchored",
@@ -6640,7 +6640,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "When does the manual say roof underlayment should be applied?",
             options: [
-              "As soon as the sheathing is complete",
+              "As soon as the roof sheathing has been completed",
               "After the shingles have been laid, as a secondary layer",
               "Only once the exterior walls have been clad",
               "At the same time as the interior finish work begins",
@@ -6653,7 +6653,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the pour bury?",
             options: [
-              "The trench bottom",
+              "The trench bottom the concrete is cast against",
               "The anchor bolts, which are drilled in afterwards",
               "The sill sealer, which is placed before the concrete",
               "The footing forms, which are left in place permanently",
@@ -6666,7 +6666,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Which decision about a slab is made while the concrete is still wet?",
             options: [
-              "Where the anchor bolts go",
+              "Where the anchor bolts go into the slab",
               "Where the interior partitions will be framed",
               "How thick the finished floor covering will be",
               "Which direction the ceiling joists above will run",
@@ -6679,7 +6679,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Why does the course call a basement the best window into a house?",
             options: [
-              "The floor framing stays visible from below",
+              "Because the floor framing stays visible from below",
               "Because foundations crack there first and show problems early",
               "Because every service in the house passes through it",
               "Because the drawings are usually stored there",
@@ -6692,7 +6692,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the drywall bury?",
             options: [
-              "The whole wall cavity",
+              "The whole wall cavity, with its bracing and services",
               "Only the insulation, since the framing stays partly visible",
               "The sheathing and the drainage plane on the outside face",
               "The headers, but not the bracing or the fire stops",
@@ -6705,7 +6705,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Which covering step does the course single out as mattering most?",
             options: [
-              "The cladding",
+              "The cladding, which buries the water layers",
               "The roof covering, because a roof leak does the most damage",
               "The subfloor, because it hides the whole floor frame",
               "The interior finish, because it is the last one",
@@ -6718,7 +6718,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Once the siding is on, what is the only evidence of how the water layers were lapped?",
             options: [
-              "The damage they fail to prevent",
+              "The damage they fail to prevent in the years that follow",
               "The permit record filed with the building department",
               "The manufacturer's warranty on the cladding product",
               "The thickness of the wall measured at a window opening",
@@ -6731,7 +6731,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "When are temporary braces removed from a framed wall?",
             options: [
-              "After the whole building's framing and sheathing are complete",
+              "Once the whole building is framed and sheathed",
               "As soon as the wall has been plumbed and aligned",
               "Once the roof structure has been set on the walls",
               "When the interior partitions are framed against it",
@@ -6744,7 +6744,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the course say an ordinary person should do at the useful moments in a build?",
             options: [
-              "Look, photograph and ask",
+              "Look, take photographs, and ask questions",
               "Inspect the work and record any defects formally",
               "Supervise the trade performing that stage",
               "Withhold payment until the stage has been verified",
@@ -6770,7 +6770,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does close in mean?",
             options: [
-              "An assembly is covered and its inside is inaccessible",
+              "Covered, with its inside no longer accessible",
               "The building is fully enclosed against weather",
               "The final inspection has been requested",
               "The framing has been drawn tight and squared",
@@ -6796,7 +6796,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Which drawing does the manual say gives the location of a wall?",
             options: [
-              "The floor plan",
+              "The floor plan, which gives the horizontal plate layout",
               "The wall section, which shows both position and height",
               "The foundation plan, which locates everything above it",
               "The elevation, which shows each wall face",
@@ -6809,7 +6809,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What question does a section answer that a plan does not?",
             options: [
-              "How high, and what is on top of what",
+              "How high things are, and what is on top of what",
               "Which materials the specifications require",
               "Where each wall sits relative to the property line",
               "How many of each component the job needs",
@@ -6822,7 +6822,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What is the first pass in the course's method for reading a wall section?",
             options: [
-              "Find the ground line and the footing",
+              "Find the ground line and the footing below it",
               "Identify the insulation and its thickness",
               "Count the number of layers shown in the wall",
               "Locate the notes and read them before the drawing",
@@ -6848,7 +6848,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What question does the third pass ask of every non-structural layer?",
             options: [
-              "Which of the four jobs is it doing?",
+              "Which of the four control jobs is it doing?",
               "How much does this layer cost per square foot?",
               "Which manufacturer supplies this product?",
               "How long will this layer last before replacement?",
@@ -6900,7 +6900,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What is a detail, in a drawing set?",
             options: [
-              "An enlarged drawing of one junction",
+              "An enlarged drawing of a single junction",
               "A note describing a material requirement",
               "A dimension given to a finer tolerance than the rest",
               "The part of a section showing finishes only",
@@ -6913,7 +6913,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What makes a wall section worth learning to read?",
             options: [
-              "Most of this course becomes visible on paper",
+              "Most of this course becomes visible on one sheet",
               "It is the only drawing a building department will accept",
               "It replaces the need for the specifications",
               "It shows the exact cost of the wall assembly",
@@ -6939,7 +6939,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the exercise say makes a good question to a building department?",
             options: [
-              "It names a junction and is answerable",
+              "It names a junction and can actually be answered",
               "It is short enough to ask over the telephone",
               "It asks whether the wall as built is acceptable",
               "It quotes the section number the questioner believes applies",
@@ -6965,7 +6965,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the exercise ask a learner to do with their question afterwards?",
             options: [
-              "Keep it for the companion course",
+              "Keep it for the companion course on the code",
               "Send it to the building department immediately",
               "Post it publicly so others can answer it",
               "Answer it themselves using the sources in this course",
@@ -6978,7 +6978,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "In the exercise, which part spreads the load onto the soil?",
             options: [
-              "The footing",
+              "The footing, the first item at the bottom of the stack",
               "The sill plate, which distributes it along the foundation wall",
               "The subfloor, which spreads it between the joists",
               "The drainage plane, which keeps the soil dry",
@@ -6991,7 +6991,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Which of these is an accepted alternative name for a rim joist in the exercise?",
             options: [
-              "Band joist",
+              "Band joist, or header joist, for the same member",
               "Tail joist, which runs to a header at an opening",
               "Trimmer joist, which is doubled at the side of an opening",
               "Stub joist, which is shortened where framing changes direction",
@@ -7004,7 +7004,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Which truss member does the exercise ask you to name as being in tension?",
             options: [
-              "The bottom chord",
+              "The bottom chord, which acts as a ceiling joist",
               "The top chord, which is stretched along the slope",
               "A web member near the centre of the truss",
               "The gusset plate at the peak",
@@ -7030,7 +7030,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What kind of drawing does the exercise ask a learner to find for half two?",
             options: [
-              "A wall section for a real building",
+              "A wall section for a real building they can see",
               "A floor plan of any house, drawn to any scale",
               "A photograph of a wall under construction",
               "An elevation showing the finished exterior",
@@ -7043,7 +7043,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What is the superstructure, in the exercise's terms?",
             options: [
-              "The part above ground level",
+              "The portion of the building above ground level",
               "The part of the frame above the first floor",
               "The roof structure and everything it carries",
               "The structural layers, as opposed to the control layers",
@@ -7056,7 +7056,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Which layer does the exercise describe as catching leaked water and draining it back out?",
             options: [
-              "The drainage plane",
+              "The drainage plane, whose layers lap over the flashings",
               "The sheathing, which is treated to shed water",
               "The cladding, which is the primary water barrier",
               "The vapour barrier, which stops water on the warm side",
@@ -7095,7 +7095,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the roof covering bury?",
             options: [
-              "The deck and the underlayment",
+              "The roof deck and the underlayment over it",
               "The rafters, which remain visible from the attic",
               "The flashing, which is installed over the covering",
               "The ceiling insulation below it",
@@ -7108,7 +7108,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What is a sheet, in a drawing set?",
             options: [
-              "One page, referenced by number from the others",
+              "One page, referenced by number from others",
               "A single structural panel shown on a drawing",
               "The schedule listing every door and window",
               "The cover page carrying the permit stamp",
@@ -7121,7 +7121,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Which chapter order does the course point out is itself a sequence?",
             options: [
-              "The Navy manual's own chapters",
+              "The chapter order of the Navy manual itself",
               "The order of the sections in this course",
               "The order of the sheets in a drawing set",
               "The order of the inspections in a permit",
@@ -7134,7 +7134,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the course say a photograph of an open wall is worth?",
             options: [
-              "A great deal ten years later",
+              "A great deal, ten years later on",
               "Nothing, unless an inspector took it",
               "The same as a written inspection report",
               "Only what the person who took it can remember about it",
@@ -7188,7 +7188,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Who owns the minimum requirements that apply in a given place?",
             options: [
-              "The adopted code",
+              "The code adopted there, with any local amendments",
               "The drawings for the building in question",
               "The manufacturer of the products used",
               "The contractor performing the work",
@@ -7201,7 +7201,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What must this course say every time it cites 24 CFR part 3280?",
             options: [
-              "That it governs manufactured homes",
+              "That it governs manufactured homes, not site-built ones",
               "That the text may have been amended since it was read",
               "That it applies only in states without their own code",
               "That it was written by the Department of Energy",
@@ -7227,7 +7227,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What is the lowest wooden member of a house frame?",
             options: [
-              "The sill plate",
+              "The sill plate, also called the mud sill",
               "The sole plate of the ground floor wall",
               "The rim joist at the perimeter",
               "The subfloor, which is laid first",
@@ -7240,7 +7240,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What distinguishes dead load from live load?",
             options: [
-              "Dead load is the building itself",
+              "Dead load is the weight of the building itself",
               "Dead load acts downward and live load acts sideways",
               "Dead load is calculated and live load is measured",
               "Dead load applies only after construction stops",
@@ -7253,7 +7253,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Why may floor live load not be counted as resisting wind overturning?",
             options: [
-              "The furniture may not be there",
+              "Because the furniture and people may not be there",
               "Because live load acts in the same direction as the wind",
               "Because overturning is resisted only by the foundation",
               "Because live load is already counted in the roof calculation",
@@ -7266,7 +7266,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What is the repeating rhythm of a load path?",
             options: [
-              "Horizontal member, then vertical member",
+              "Horizontal, then vertical, repeating",
               "Heavy member, then light member",
               "Structure, then control layer, then finish",
               "Wood, then steel, then concrete",
@@ -7279,7 +7279,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Where does a roof truss deliver the load it carries?",
             options: [
-              "To the two outside walls",
+              "To the two outside walls it rests on",
               "To the ridge, and then along the building",
               "To the interior partitions it crosses",
               "To the ceiling frame below it",
@@ -7292,7 +7292,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What single clue suggests a wall may be load bearing?",
             options: [
-              "Joists above run into it end on",
+              "The joists above run into it end on",
               "It is thicker than the walls around it",
               "It has no openings cut through it",
               "It runs the full length of the house",
@@ -7318,7 +7318,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does orthotropic mean, applied to wood?",
             options: [
-              "Different properties on three axes",
+              "Different properties along each of three axes",
               "Equal strength in every direction once dried",
               "Stronger in tension than in compression",
               "Properties that change with temperature",
@@ -7331,7 +7331,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Why is compressive stress perpendicular to grain reported at the proportional limit?",
             options: [
-              "There is no clearly defined ultimate stress",
+              "Because there is no clearly defined ultimate stress",
               "Because testing beyond that point is impractical",
               "Because the value is only used for design, not for research",
               "Because the wood fails suddenly beyond that point",
@@ -7344,7 +7344,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "In which direction does wood shrink most?",
             options: [
-              "Tangentially",
+              "Tangentially, along the growth rings",
               "Longitudinally, along the grain",
               "Radially, across the growth rings",
               "Equally in all directions",
@@ -7370,7 +7370,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Why is a floor joist set with its crown turned up?",
             options: [
-              "The floor's weight flattens it",
+              "Because the floor's weight will settle it flat",
               "So water drains off the joist during construction",
               "So the crown marks the nailing face for the subfloor",
               "Because a bowed member is stronger that way round",
@@ -7383,7 +7383,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does seasonal, reversible movement in a house usually indicate?",
             options: [
-              "Wood responding to moisture",
+              "Wood responding to changes in moisture",
               "A connection loosening under repeated load",
               "Foundation settlement following the weather",
               "Thermal expansion of the framing",
@@ -7396,7 +7396,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Why is a footing wider than the wall it carries?",
             options: [
-              "To spread the load over more soil",
+              "To spread the load over a larger area of soil",
               "To give the wall forms something to sit on",
               "To keep water away from the base of the wall",
               "To allow for future additions to the building",
@@ -7409,7 +7409,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Why must footings reach below the frost line?",
             options: [
-              "Freezing and thawing move the soil",
+              "Because freezing and thawing move wet soil",
               "Because concrete cures poorly in cold ground",
               "Because soil below that depth is always rock",
               "Because pipes run above that depth",
@@ -7422,7 +7422,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Where does the manual say the length of an anchor bolt is found?",
             options: [
-              "In the specifications",
+              "In the specifications for the job",
               "On the drawings, with the spacing and location",
               "On the bolt head, stamped at the factory",
               "In the adopted code for that jurisdiction",
@@ -7435,7 +7435,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Why does a girder end in a masonry pocket need an air space?",
             options: [
-              "So the wood can dry",
+              "So that the end of the wood can dry out",
               "So the girder can expand and contract freely",
               "So the wall can move independently of the floor",
               "So an inspector can see the bearing surface",
@@ -7448,7 +7448,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does bridging between floor joists do?",
             options: [
-              "Holds them in line and shares load",
+              "Holds the joists in line and shares the load",
               "Increases the distance the joists may span",
               "Seals the floor against air from below",
               "Carries the subfloor between the joists",
@@ -7461,7 +7461,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What must be done when joists are cut to form a floor opening?",
             options: [
-              "Frame it to restore the lost strength",
+              "Frame the opening to restore the lost strength",
               "Replace the remaining joists with heavier material",
               "Position the opening over a bearing wall",
               "Nothing, because the opening reduces the load",
@@ -7474,7 +7474,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Why is stud spacing a module?",
             options: [
-              "So panel edges land on stud centres",
+              "So standard panel edges land on stud centres",
               "So each wall contains a whole number of studs",
               "So the studs share the load equally",
               "So the spacing matches the joists below",
@@ -7487,7 +7487,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What three things does the manual credit the wall plates with?",
             options: [
-              "Carrying load, strengthening the wall, tying it together",
+              "Carrying load, strengthening the wall, tying it",
               "Levelling, squaring and plumbing the wall",
               "Holding insulation, blocking fire and carrying wiring",
               "Locating studs, marking openings and fixing sheathing",
@@ -7500,7 +7500,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What determines header size, according to the manual?",
             options: [
-              "The opening width and the load above",
+              "The width of the opening and the load above it",
               "The height of the wall and its stud spacing",
               "The weight of the window unit installed in it",
               "The species and grade of the framing lumber",
@@ -7513,7 +7513,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What carries a header's load down to the sole plate?",
             options: [
-              "The jack studs",
+              "The jack studs, also called trimmers",
               "The king studs beside the opening",
               "The cripple studs above the header",
               "The sheathing across the opening",
@@ -7539,7 +7539,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the manual say about other bracing when panel sheathing is used?",
             options: [
-              "It may be omitted",
+              "It may be omitted, since panels add strength",
               "It must be doubled to match the panel strength",
               "It must be installed before the panels go on",
               "It is required only at the building corners",
@@ -7552,7 +7552,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Besides holding up a ceiling, what does a ceiling joist do in a rafter roof?",
             options: [
-              "Ties the outside walls together",
+              "Ties the two outside walls together",
               "Carries the weight of the roof covering",
               "Braces the walls against racking",
               "Supports the collar ties above it",
@@ -7578,7 +7578,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Who can answer a question about altering a roof truss?",
             options: [
-              "The truss designer and the building department",
+              "Its designer and the building department",
               "Any experienced framing contractor",
               "The gusset plate manufacturer",
               "The homeowner, above the ceiling line",
@@ -7591,7 +7591,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Why does the manual warn against a waterproof paper as roof underlayment?",
             options: [
-              "Moisture accumulates under it",
+              "Moisture or frost accumulates under it",
               "It tears under the weight of the shingles",
               "It stops the shingles bonding to the deck",
               "It voids the covering manufacturer's warranty",
@@ -7617,7 +7617,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "On which side of a wall does a vapour barrier belong?",
             options: [
-              "The warm side",
+              "The warm side, where vapour comes from",
               "The cold side, toward the sheathing",
               "Directly behind the cladding",
               "Either side, if it is continuous",
@@ -7643,7 +7643,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "How must the layers of a drainage plane be lapped?",
             options: [
-              "Each upper layer over the one below",
+              "Each upper layer lapped over the one below",
               "Each upper layer tucked behind the one below",
               "Butt jointed and taped at every seam",
               "In a single sheet with no laps at all",
@@ -7656,7 +7656,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "Which way should a faced batt of insulation be installed?",
             options: [
-              "Facing toward the warm side",
+              "With the facing toward the warm side",
               "Facing toward the sheathing",
               "Facing whichever way suits the fixing tabs",
               "With the facing stripped off first",
@@ -7669,7 +7669,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the DOE guide say tends to be the weakest link in a load path?",
             options: [
-              "The connections between assemblies",
+              "The connections between building assemblies",
               "The longest spanning member",
               "The foundation under the heaviest wall",
               "The roof, as the most exposed element",
@@ -7695,7 +7695,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "According to the Wood Handbook, what stops decay already present in wood?",
             options: [
-              "Keeping the wood air dry",
+              "Keeping the wood air dry from then on",
               "Removing the affected member entirely",
               "Raising the temperature of the assembly",
               "Sealing the wood surface with paint",
@@ -7708,7 +7708,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does this course say the drainage and clearance details really are?",
             options: [
-              "The structural strategy",
+              "The structural strategy against decay",
               "Comfort and finish improvements",
               "Optional upgrades beyond code",
               "Requirements limited to humid climates",
@@ -7734,7 +7734,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What is the fourth pass in reading a wall section?",
             options: [
-              "Listing what the drawing does not say",
+              "Listing what the drawing does not say, as questions",
               "Checking every dimension for arithmetic errors",
               "Identifying the trades responsible for each layer",
               "Comparing the section against the elevations",
@@ -7747,7 +7747,7 @@ U.S. Department of Energy. (n.d.-b). *Drainage plane behind exterior wall claddi
           {
             prompt: "What does the course call the end product of the whole exercise?",
             options: [
-              "A well-formed question",
+              "A well-formed question about one junction",
               "A completed wall section drawing",
               "A list of defects found in a building",
               "A decision about whether a wall can be removed",
