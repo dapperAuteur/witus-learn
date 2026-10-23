@@ -477,6 +477,16 @@
 - [`ai-e5-finance-analytics-capstone`](./ai-e5-finance-analytics-capstone-course.ts) AI Finance & Analytics for Founders (Capstone)
 - [`ai-for-entrepreneurs`](./ai-entrepreneurs-course.ts) AI for Entrepreneurs
 
+### How a Business Is Formed
+
+- [`business-governance`](./business-governance-course.ts) Governance: Who Actually Decides · ENTITY-06 (how-a-business-is-formed)
+- [`choose-a-form-capstone`](./choose-a-form-capstone-course.ts) Capstone: Choose a Form and Defend It · ENTITY-99 (how-a-business-is-formed)
+- [`cooperatives`](./cooperatives-course.ts) Cooperatives · ENTITY-03 (how-a-business-is-formed)
+- [`financing-without-access`](./financing-without-access-course.ts) Financing Without Access · ENTITY-04 (how-a-business-is-formed)
+- [`foreign-business-forms`](./foreign-business-forms-course.ts) How Other Countries Form Businesses · ENTITY-05 (how-a-business-is-formed)
+- [`us-business-forms`](./us-business-forms-course.ts) The US Forms: Sole Prop to Corporation · ENTITY-02 (how-a-business-is-formed)
+- [`what-a-business-entity-is`](./what-a-business-entity-is-course.ts) What a Business Entity Actually Is · ENTITY-01 (how-a-business-is-formed)
+
 ## Acme Academy (the isolation-test school)
 
 ### General
